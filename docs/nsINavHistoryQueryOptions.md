@@ -1,0 +1,231 @@
+---
+layout: default
+---
+
+# nsINavHistoryQueryOptions #
+
+This object represents the global options for executing a query.
+
+
+## SORT_BY_NONE ##
+
+You can ask for the results to be pre-sorted. Since the DB has indices
+of many items, it can produce sorted results almost for free. These should
+be self-explanatory.
+
+Note: re-sorting is slower, as is sorting by title or when you have a
+host name.
+
+For bookmark items, SORT_BY_NONE means sort by the natural bookmark order.
+
+
+## SORT_BY_TITLE_ASCENDING ##
+
+## SORT_BY_TITLE_DESCENDING ##
+
+## SORT_BY_DATE_ASCENDING ##
+
+## SORT_BY_DATE_DESCENDING ##
+
+## SORT_BY_URI_ASCENDING ##
+
+## SORT_BY_URI_DESCENDING ##
+
+## SORT_BY_VISITCOUNT_ASCENDING ##
+
+## SORT_BY_VISITCOUNT_DESCENDING ##
+
+## SORT_BY_KEYWORD_ASCENDING ##
+
+## SORT_BY_KEYWORD_DESCENDING ##
+
+## SORT_BY_DATEADDED_ASCENDING ##
+
+## SORT_BY_DATEADDED_DESCENDING ##
+
+## SORT_BY_LASTMODIFIED_ASCENDING ##
+
+## SORT_BY_LASTMODIFIED_DESCENDING ##
+
+## SORT_BY_TAGS_ASCENDING ##
+
+## SORT_BY_TAGS_DESCENDING ##
+
+## SORT_BY_ANNOTATION_ASCENDING ##
+
+## SORT_BY_ANNOTATION_DESCENDING ##
+
+## SORT_BY_FRECENCY_ASCENDING ##
+
+## SORT_BY_FRECENCY_DESCENDING ##
+
+## RESULTS_AS_URI ##
+
+"URI" results, one for each URI visited in the range. Individual result
+nodes will be of type "URI".
+
+
+## RESULTS_AS_VISIT ##
+
+"Visit" results, with one for each time a page was visited (this will
+often give you multiple results for one URI). Individual result nodes will
+have type "Visit"
+
+@note This result type is only supported by QUERY_TYPE_HISTORY.
+
+
+## RESULTS_AS_FULL_VISIT ##
+
+This is identical to RESULT_TYPE_VISIT except that individual result nodes
+will have type "FullVisit".  This is used for the attributes that are not
+commonly accessed to save space in the common case (the lists can be very
+long).
+
+@note Not yet implemented. See bug 409662.
+@note This result type is only supported by QUERY_TYPE_HISTORY.
+
+
+## RESULTS_AS_DATE_QUERY ##
+
+This returns query nodes for each predefined date range where we 
+had visits. The node contains information how to load its content:
+- visits for the given date range will be loaded.
+
+@note This result type is only supported by QUERY_TYPE_HISTORY.
+
+
+## RESULTS_AS_SITE_QUERY ##
+
+This returns nsINavHistoryQueryResultNode nodes for each site where we 
+have visits. The node contains information how to load its content:
+- last visit for each url in the given host will be loaded.
+
+@note This result type is only supported by QUERY_TYPE_HISTORY.
+
+
+## RESULTS_AS_DATE_SITE_QUERY ##
+
+This returns nsINavHistoryQueryResultNode nodes for each day where we 
+have visits. The node contains information how to load its content:
+- list of hosts visited in the given period will be loaded.
+
+@note This result type is only supported by QUERY_TYPE_HISTORY.
+
+
+## RESULTS_AS_TAG_QUERY ##
+
+This returns nsINavHistoryQueryResultNode nodes for each tag.
+The node contains information how to load its content:
+- list of bookmarks with the given tag will be loaded.
+
+@note Setting this resultType will force queryType to QUERY_TYPE_BOOKMARKS.
+
+
+## RESULTS_AS_TAG_CONTENTS ##
+
+This is a container with an URI result type that contains the last
+modified bookmarks for the given tag.
+Tag folder id must be defined in the query.
+
+@note Setting this resultType will force queryType to QUERY_TYPE_BOOKMARKS.
+
+
+## sortingMode ##
+
+The sorting mode to be used for this query.
+mode is one of SORT_BY_*
+
+
+## sortingAnnotation ##
+
+The annotation to use in SORT_BY_ANNOTATION_* sorting modes.
+
+
+## resultType ##
+
+Sets the result type. One of RESULT_TYPE_* which includes how URIs are
+represented.
+
+
+## excludeItems ##
+
+This option excludes all URIs and separators from a bookmarks query.
+This would be used if you just wanted a list of bookmark folders and
+queries (such as the left pane of the places page).
+Defaults to false.
+
+
+## excludeQueries ##
+
+Set to true to exclude queries ("place:" URIs) from the query results.
+Simple folder queries (bookmark folder symlinks) will still be included.
+Defaults to false.
+
+
+## excludeReadOnlyFolders ##
+
+DO NOT USE THIS API. IT'LL BE REMOVED IN BUG 1072833.
+
+Set to true to exclude live bookmarks from the query results.
+
+
+## expandQueries ##
+
+When set, allows items with "place:" URIs to appear as containers,
+with the container's contents filled in from the stored query.
+If not set, these will appear as normal items. Doesn't do anything if
+excludeQueries is set. Defaults to false.
+
+Note that this has no effect on folder links, which are place: URIs
+returned by nsINavBookmarkService.GetFolderURI. These are always expanded
+and will appear as bookmark folders.
+
+
+## includeHidden ##
+
+Some pages in history are marked "hidden" and thus don't appear by default
+in queries.  These include automatic framed visits and redirects.  Setting
+this attribute will return all pages, even hidden ones.  Does nothing for
+bookmark queries. Defaults to false.
+
+
+## maxResults ##
+
+This is the maximum number of results that you want. The query is exeucted,
+the results are sorted, and then the top 'maxResults' results are taken
+and returned. Set to 0 (the default) to get all results.
+
+THIS DOES NOT WORK IN CONJUNCTION WITH SORTING BY TITLE. This is because
+sorting by title requires us to sort after using locale-sensetive sorting
+(as opposed to letting the database do it for us).
+
+Instead, we get the result ordered by date, pick the maxResult most recent
+ones, and THEN sort by title.
+
+
+## QUERY_TYPE_HISTORY ##
+
+## QUERY_TYPE_BOOKMARKS ##
+
+## QUERY_TYPE_UNIFIED ##
+
+## queryType ##
+
+The type of search to use when querying the DB; This attribute is only
+honored by query nodes. It is silently ignored for simple folder queries.
+
+
+## asyncEnabled ##
+
+When this is true, the root container node generated by these options and
+its descendant containers will be opened asynchronously if they support it.
+This is false by default.
+
+@note Currently only bookmark folder containers support being opened
+      asynchronously.
+
+
+## clone ##
+
+Creates a new options item with the same parameters of this one.
+

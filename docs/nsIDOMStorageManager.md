@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+# nsIDOMStorageManager #
+
+General purpose interface that has two implementations, for localStorage
+resp. sessionStorage with "@mozilla.org/dom/localStorage-manager;1" resp.
+"@mozilla.org/dom/sessionStorage-manager;1" contract IDs.
+
+
+## precacheStorage ##
+
+This starts async preloading of a storage cache for scope
+defined by the principal.
+
+
+## createStorage ##
+
+Returns instance of DOM storage object for given principal.
+A new object is always returned and it is ensured there is
+a storage for the scope created.
+
+@param aWindow
+   The parent window.
+@param aPrincipal
+   Principal to bound storage to.
+@param aDocumentURI
+   URL of the demanding document, used for DOM storage event only.
+@param aPrivate
+   Whether the demanding document is running in Private Browsing mode or not.
+
+
+## getStorage ##
+
+Returns instance of DOM storage object for given principal.
+If there is no storage managed for the scope, then null is returned and
+no object is created.  Otherwise, an object (new) for the existing storage
+scope is returned.
+
+@param aWindow
+   The parent window.
+@param aPrincipal
+   Principal to bound storage to.
+@param aPrivate
+   Whether the demanding document is running in Private Browsing mode or not.
+
+
+## cloneStorage ##
+
+Clones given storage into this storage manager.
+
+@param aStorageToCloneFrom
+   The storage to copy all items from into this manager.  Manager will then
+   return a new and independent object that contains snapshot of data from
+   the moment this method was called.  Modification to this new object will
+   not affect the original storage content we cloned from and vice versa.
+
+
+## checkStorage ##
+
+Returns true if the storage belongs to the given principal and is managed
+(i.e. has been created and is cached) by this storage manager.
+
+@param aPrincipal
+   Principal to check the storage against.
+@param aStorage
+   The storage object to examine.
+
+@result
+   true when the storage object is bound with the principal and is managed
+        by this storage manager.
+   false otherwise
+
+
+## getLocalStorageForPrincipal ##
+
+@deprecated
+
+Returns instance of localStorage object for aURI's origin.
+This method ensures there is always only a single instance
+for a single origin.
+
+Currently just forwards to the createStorage method of this
+interface.
+
+Extension developers are strongly encouraged to use getStorage
+or createStorage method instead.
+

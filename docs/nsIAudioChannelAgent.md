@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+# nsIAudioChannelAgent #
+
+This interface provides an agent for gecko components to participate
+in the audio channel service. Gecko components are responsible for
+  1. Indicating what channel type they are using (via the init() member
+     function).
+  2. Before playing, checking the playable status of the channel.
+  3. Notifying the agent when they start/stop using this channel.
+  4. Notifying the agent of changes to the visibility of the component using
+     this channel.
+
+The agent will invoke a callback to notify Gecko components of
+  1. Changes to the playable status of this channel.
+
+
+## AUDIO_AGENT_CHANNEL_NORMAL ##
+
+## AUDIO_AGENT_CHANNEL_CONTENT ##
+
+## AUDIO_AGENT_CHANNEL_NOTIFICATION ##
+
+## AUDIO_AGENT_CHANNEL_ALARM ##
+
+## AUDIO_AGENT_CHANNEL_TELEPHONY ##
+
+## AUDIO_AGENT_CHANNEL_RINGER ##
+
+## AUDIO_AGENT_CHANNEL_PUBLICNOTIFICATION ##
+
+## AUDIO_AGENT_CHANNEL_ERROR ##
+
+## AUDIO_AGENT_STATE_NORMAL ##
+
+## AUDIO_AGENT_STATE_MUTED ##
+
+## AUDIO_AGENT_STATE_FADED ##
+
+## audioChannelType ##
+
+Before init() is called, this returns AUDIO_AGENT_CHANNEL_ERROR.
+
+
+## init ##
+
+Initialize the agent with a channel type.
+Note: This function should only be called once.
+
+@param window
+   The window
+@param channelType
+   Audio Channel Type listed as above
+@param callback
+   1. Once the playable status changes, agent uses this callback function
+      to notify Gecko component.
+   2. The callback is allowed to be null. Ex: telephony doesn't need to
+      listen change of the playable status.
+   3. The AudioChannelAgent keeps a strong reference to the callback
+      object.
+
+
+## initWithWeakCallback ##
+
+This method is just like init(), except the audio channel agent keeps a
+weak reference to the callback object.
+
+In order for this to work, |callback| must implement
+nsISupportsWeakReference.
+
+
+## initWithVideo ##
+
+This method is just like init(), and specify the channel is associated
+with video.
+
+@param weak
+   true if weak reference should be hold.
+
+
+## startPlaying ##
+
+Notify the agent that we want to start playing.
+Note: Gecko component SHOULD call this function first then start to
+         play audio stream only when return value is true.
+
+
+@return
+   normal state: the agent has registered with audio channel service and
+         the component should start playback.
+   muted state: the agent has registered with audio channel service but
+         the component should not start playback.
+   faded state: the agent has registered with audio channel service the
+         component should start playback as well as reducing the volume.
+
+
+## stopPlaying ##
+
+Notify the agent we no longer want to play.
+
+Note : even if startPlaying() returned false, the agent would still be
+       registered with the audio channel service and receive callbacks for status changes.
+       So stopPlaying must still eventually be called to unregister the agent with the
+       channel service.
+
+
+## setVisibilityState ##
+
+Notify the agent of the visibility state of the window using this agent.
+@param visible
+   True if the window associated with the agent is visible.
+
+
+## windowVolume ##
+
+Retrieve the volume from the window.
+

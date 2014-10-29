@@ -1,0 +1,306 @@
+---
+layout: default
+---
+
+# nsIContentPrefService2 #
+
+Content Preferences
+
+Content preferences allow the application to associate arbitrary data, or
+"preferences", with specific domains, or web "content".  Specifically, a
+content preference is a structure with three values: a domain with which the
+preference is associated, a name that identifies the preference within its
+domain, and a value.  (See nsIContentPref below.)
+
+For example, if you want to remember the user's preference for a certain zoom
+level on www.mozilla.org pages, you might store a preference whose domain is
+"www.mozilla.org", whose name is "zoomLevel", and whose value is the numeric
+zoom level.
+
+A preference need not have a domain, and in that case the preference is
+called a "global" preference.  This interface doesn't impart any special
+significance to global preferences; they're simply name-value pairs that
+aren't associated with any particular domain.  As a consumer of this
+interface, you might choose to let a global preference override all non-
+global preferences of the same name, for example, for whatever definition of
+"override" is appropriate for your use case.
+
+
+Domain Parameters
+
+Many methods of this interface accept a "domain" parameter.  Domains may be
+specified either exactly, like "example.com", or as full URLs, like
+"http://example.com/foo/bar".  In the latter case the API extracts the full
+domain from the URL, so if you specify "http://foo.bar.example.com/baz", the
+domain is taken to be "foo.bar.example.com", not "example.com".
+
+
+Private-Browsing Context Parameters
+
+Many methods also accept a "context" parameter.  This parameter relates to
+private browsing and determines the kind of storage that a method uses,
+either the usual permanent storage or temporary storage set aside for private
+browsing sessions.
+
+Pass null to unconditionally use permanent storage.  Pass an nsILoadContext
+to use storage appropriate to the context's usePrivateBrowsing attribute: if
+usePrivateBrowsing is true, temporary private-browsing storage is used, and
+otherwise permanent storage is used.  A context can be obtained from the
+window or channel whose content pertains to the preferences being modified or
+retrieved.
+
+
+Callbacks
+
+The methods of callback objects are always called asynchronously.
+
+Observers are called after callbacks are called, but they are called in the
+same turn of the event loop as callbacks.
+
+See nsIContentPrefCallback2 below for more information about callbacks.
+
+
+## getByName ##
+
+Gets all the preferences with the given name.
+
+@param name      The preferences' name.
+@param context   The private-browsing context, if any.
+@param callback  handleResult is called once for each preference unless
+                 no such preferences exist, in which case handleResult
+                 is not called at all.
+
+
+## getByDomainAndName ##
+
+Gets the preference with the given domain and name.
+
+@param domain    The preference's domain.
+@param name      The preference's name.
+@param context   The private-browsing context, if any.
+@param callback  handleResult is called once unless no such preference
+                 exists, in which case handleResult is not called at all.
+
+
+## getBySubdomainAndName ##
+
+Gets all preferences with the given name whose domains are either the same
+as or subdomains of the given domain.
+
+@param domain    The preferences' domain.
+@param name      The preferences' name.
+@param context   The private-browsing context, if any.
+@param callback  handleResult is called once for each preference.  If no
+                 such preferences exist, handleResult is not called at all.
+
+
+## getGlobal ##
+
+Gets the preference with no domain and the given name.
+
+@param name      The preference's name.
+@param context   The private-browsing context, if any.
+@param callback  handleResult is called once unless no such preference
+                 exists, in which case handleResult is not called at all.
+
+
+## getCachedByDomainAndName ##
+
+Synchronously retrieves from the in-memory cache the preference with the
+given domain and name.
+
+In addition to caching preference values, the cache also keeps track of
+preferences that are known not to exist.  If the preference is known not to
+exist, the value attribute of the returned object will be undefined
+(nsIDataType::VTYPE_VOID).
+
+If the preference is neither cached nor known not to exist, then null is
+returned, and get() must be called to determine whether the preference
+exists.
+
+@param domain   The preference's domain.
+@param name     The preference's name.
+@param context  The private-browsing context, if any.
+@return         The preference, or null if no such preference is known to
+                exist.
+
+
+## getCachedBySubdomainAndName ##
+
+Synchronously retrieves from the in-memory cache all preferences with the
+given name whose domains are either the same as or subdomains of the given
+domain.
+
+The preferences are returned in an array through the out-parameter.  If a
+preference for a particular subdomain is known not to exist, then an object
+corresponding to that preference will be present in the array, and, as with
+getCachedByDomainAndName, its value attribute will be undefined.
+
+@param domain   The preferences' domain.
+@param name     The preferences' name.
+@param context  The private-browsing context, if any.
+@param len      The length of the returned array.
+@param prefs    The array of preferences.
+
+
+## getCachedGlobal ##
+
+Synchronously retrieves from the in-memory cache the preference with no
+domain and the given name.
+
+As with getCachedByDomainAndName, if the preference is cached then it is
+returned; if the preference is known not to exist, then the value attribute
+of the returned object will be undefined; if the preference is neither
+cached nor known not to exist, then null is returned.
+
+@param name     The preference's name.
+@param context  The private-browsing context, if any.
+@return         The preference, or null if no such preference is known to
+                exist.
+
+
+## set ##
+
+Sets a preference.
+
+@param domain    The preference's domain.
+@param name      The preference's name.
+@param value     The preference's value.
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the preference has been
+                 stored.
+
+
+## setGlobal ##
+
+Sets a preference with no domain.
+
+@param name      The preference's name.
+@param value     The preference's value.
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the preference has been
+                 stored.
+
+
+## removeByDomainAndName ##
+
+Removes the preference with the given domain and name.
+
+@param domain    The preference's domain.
+@param name      The preference's name.
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the operation completes.
+
+
+## removeBySubdomainAndName ##
+
+Removes all the preferences with the given name whose domains are either
+the same as or subdomains of the given domain.
+
+@param domain    The preferences' domain.
+@param name      The preferences' name.
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the operation completes.
+
+
+## removeGlobal ##
+
+Removes the preference with no domain and the given name.
+
+@param name      The preference's name.
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the operation completes.
+
+
+## removeByDomain ##
+
+Removes all preferences with the given domain.
+
+@param domain    The preferences' domain.
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the operation completes.
+
+
+## removeBySubdomain ##
+
+Removes all preferences whose domains are either the same as or subdomains
+of the given domain.
+
+@param domain    The preferences' domain.
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the operation completes.
+
+
+## removeByName ##
+
+Removes all preferences with the given name regardless of domain, including
+global preferences with the given name.
+
+@param name      The preferences' name.
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the operation completes.
+
+
+## removeAllDomains ##
+
+Removes all non-global preferences -- in other words, all preferences that
+have a domain.
+
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the operation completes.
+
+
+## removeAllDomainsSince ##
+
+Removes all non-global preferences created after and including |since|.
+
+@param since     Timestamp in milliseconds.
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the operation completes.
+
+
+## removeAllGlobals ##
+
+Removes all global preferences -- in other words, all preferences that have
+no domain.
+
+@param context   The private-browsing context, if any.
+@param callback  handleCompletion is called when the operation completes.
+
+
+## addObserverForName ##
+
+Registers an observer that will be notified whenever a preference with the
+given name is set or removed.
+
+When a set or remove method is called, observers are called after the set
+or removal completes and after the method's callback is called, and they
+are called in the same turn of the event loop as the callback.
+
+The service holds a strong reference to the observer, so the observer must
+be removed later to avoid leaking it.
+
+@param name      The name of the preferences to observe.  Pass null to
+                 observe all preference changes regardless of name.
+@param observer  The observer.
+
+
+## removeObserverForName ##
+
+Unregisters an observer for the given name.
+
+@param name      The name for which the observer was registered.  Pass null
+                 if the observer was added with a null name.
+@param observer  The observer.
+
+
+## extractDomain ##
+
+Extracts and returns the domain from the given string representation of a
+URI.  This is how the API extracts domains from URIs passed to it.
+
+@param str  The string representation of a URI, like
+            "http://example.com/foo/bar".
+@return     If the given string is a valid URI, the domain of that URI is
+            returned.  Otherwise, the string itself is returned.
+

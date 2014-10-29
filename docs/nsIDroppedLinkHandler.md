@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+# nsIDroppedLinkHandler #
+
+## canDropLink ##
+
+Determines if a link being dragged can be dropped and returns true if so.
+aEvent should be a dragenter or dragover event.
+
+If aAllowSameDocument is false, drops are only allowed if the document
+of the source of the drag is different from the destination. This check
+includes any parent, sibling and child frames in the same content tree.
+If true, the source is not checked.
+
+
+## dropLink ##
+
+Given a drop event aEvent, determines the link being dragged and returns
+it. If a uri is returned the caller can, for instance, load it. If null
+is returned, there is no valid link to be dropped.
+
+A NS_ERROR_DOM_SECURITY_ERR error will be thrown and the event cancelled if
+the receiving target should not load the uri for security reasons. This
+will occur if any of the following conditions are true:
+ - the source of the drag initiated a link for dragging that
+   it itself cannot access. This prevents a source document from tricking
+   the user into a dragging a chrome url, for example.
+ - aDisallowInherit is true, and the URI being dropped would inherit the
+   current document's security context (URI_INHERITS_SECURITY_CONTEXT).
+
+aName is filled in with the link title if it exists, or an empty string
+otherwise.
+

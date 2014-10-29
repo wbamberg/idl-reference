@@ -1,0 +1,7 @@
+---
+layout: default
+---
+
+# nsISharingHandlerApp #
+
+## share ##

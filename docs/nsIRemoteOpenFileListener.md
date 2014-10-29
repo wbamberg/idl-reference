@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+# nsIRemoteOpenFileListener #
+
+nsIRemoteOpenFileListener: passed to RemoteOpenFileChild::AsyncRemoteFileOpen.
+
+Interface for notifying when the file has been opened and is available in
+child.
+
+
+## onRemoteFileOpenComplete ##
+
+Called when result of opening RemoteOpenFileChild:AsyncRemoteFileOpen()
+is available in child.
+
+@param aOpenStatus: nsresult from opening file in parent.  If NS_OK,
+then a following call to RemoteOpenFileChild::OpenNSPRFileDesc that
+passes the same flags as were passed to
+RemoteOpenFileChild::AsyncRemoteFileOpen is guaranteed to succeed.  If
+!NS_OK or if different flags were passed, the call will fail.
+

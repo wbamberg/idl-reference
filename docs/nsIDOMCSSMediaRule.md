@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+# nsIDOMCSSMediaRule #
+
+Interface for @media rules in the CSS OM.
+
+
+## media ##

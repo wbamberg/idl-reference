@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+# nsIScriptError #
+
+## errorFlag ##
+ pseudo-flag for default case */
+
+## warningFlag ##
+ message is warning */
+
+## exceptionFlag ##
+ exception was thrown for this case - exception-aware hosts can ignore */
+
+## strictFlag ##
+ error or warning is due to strict option */
+
+## errorMessage ##
+
+The error message without any context/line number information.
+
+@note nsIConsoleMessage.message will return the error formatted
+      with file/line information.
+
+
+## sourceName ##
+
+## sourceLine ##
+
+## lineNumber ##
+
+## columnNumber ##
+
+## flags ##
+
+## category ##
+
+Categories I know about -
+XUL javascript
+content javascript (both of these from nsDocShell, currently)
+system javascript (errors in JS components and other system JS)
+
+
+## outerWindowID ##
+
+## innerWindowID ##
+
+## isFromPrivateWindow ##
+
+## init ##
+
+## initWithWindowID ##

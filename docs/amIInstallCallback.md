@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+# amIInstallCallback #
+
+A callback function used to notify webpages when a requested install has
+ended.
+
+NOTE: This is *not* the same as InstallListener.
+
+
+## onInstallEnded ##
+
+Called when an install completes or fails.
+
+@param  aUrl
+        The url of the add-on being installed
+@param  aStatus
+        0 if the install was successful or negative if not
+
