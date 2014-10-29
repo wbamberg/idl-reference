@@ -4,7 +4,7 @@ import md
 
 from xpidl import xpidl
 
-index = md.createFile("../docs/index.md")
+index = md.createFile("../index.md")
 
 def writeDoccomments(doccomments, output):
     for doccomment in doccomments:
@@ -21,7 +21,8 @@ def writeDoccomments(doccomments, output):
 
 def writeInterface(interface):
     name = interface.name
-    md.writeMDLink(name, name, index)
+    md.writeMDLink(name, "docs/" + name, index)
+    md.writeLineBreak(index)
     output = md.createFile("../docs/" + name + ".md")
     md.writeH1(name, output)
     if hasattr(interface, "doccomments"):
