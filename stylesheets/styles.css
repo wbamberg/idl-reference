@@ -224,6 +224,11 @@ footer {
   }
 }
 
+.multi-column {
+  column-count: 3;
+  column-gap: 20px;
+}
+
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
@@ -240,6 +245,11 @@ footer {
   pre, code {
     word-wrap:normal;
   }
+
+  .multi-column {
+    column-count: 3;
+    column-gap: 20px;
+  }
 }
 
 @media print, screen and (max-width: 480px) {
@@ -250,6 +260,10 @@ footer {
   header ul {
     display:none;
   }
+
+  .multi-column {
+    column-count: 1;
+    column-gap: 20px;
 }
 
 @media print {
