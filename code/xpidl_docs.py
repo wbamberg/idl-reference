@@ -4,7 +4,7 @@ import md
 
 from xpidl import xpidl
 
-index = md.createFile("../index.md")
+index = md.createFile("../index.md", "default_index")
 
 def writeDoccomments(doccomments, output):
     for doccomment in doccomments:

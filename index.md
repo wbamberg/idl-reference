@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_index
 ---
 [nsIAccessible](docs/nsIAccessible.html)
 
