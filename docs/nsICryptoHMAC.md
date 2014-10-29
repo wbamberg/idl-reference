@@ -8,26 +8,9 @@ nsICryptoHMAC
 This interface provides HMAC signature algorithms.
 
 
-## MD2 ##
+## Methods ##
 
-Hashing Algorithms.  These values are to be used by the
-|init| method to indicate which hashing function to
-use.  These values map onto the values defined in
-mozilla/security/nss/lib/softoken/pkcs11t.h and are 
-switched to CKM_*_HMAC constant.
-
-
-## MD5 ##
-
-## SHA1 ##
-
-## SHA256 ##
-
-## SHA384 ##
-
-## SHA512 ##
-
-## init ##
+### init ###
 
 Initialize the hashing object. This method may be
 called multiple times with different algorithm types.
@@ -51,7 +34,7 @@ NOTE: This method must be called before any other method
        on this interface is called.
 
 
-## update ##
+### update ###
 
 @param aData a buffer to calculate the hash over
 
@@ -61,7 +44,7 @@ NOTE: This method must be called before any other method
         called.
 
 
-## updateFromStream ##
+### updateFromStream ###
 
 Calculates and updates a new hash based on a given data stream.
 
@@ -79,7 +62,7 @@ Calculates and updates a new hash based on a given data stream.
 
 
 
-## finish ##
+### finish ###
 
 Completes this HMAC object and produces the actual HMAC diegest data.
 
@@ -98,9 +81,30 @@ NOTE: This method may be called any time after |init|
       pre-init state.
 
 
-## reset ##
+### reset ###
 
 Reinitialize HMAC context to be reused with the same
 settings (the key and hash algorithm) but on different 
 set of data.
 
+
+## Constants ##
+
+### MD2 ###
+
+Hashing Algorithms.  These values are to be used by the
+|init| method to indicate which hashing function to
+use.  These values map onto the values defined in
+mozilla/security/nss/lib/softoken/pkcs11t.h and are 
+switched to CKM_*_HMAC constant.
+
+
+### MD5 ###
+
+### SHA1 ###
+
+### SHA256 ###
+
+### SHA384 ###
+
+### SHA512 ###

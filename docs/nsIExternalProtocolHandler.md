@@ -4,7 +4,9 @@ layout: default
 
 # nsIExternalProtocolHandler #
 
-## externalAppExistsForScheme ##
+## Methods ##
+
+### externalAppExistsForScheme ###
 
 This method checks if the external handler exists for a given scheme.
 

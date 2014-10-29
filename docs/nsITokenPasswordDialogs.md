@@ -9,11 +9,13 @@ nsITokenPasswordDialogs
  on a PKCS11 token.
 
 
-## setPassword ##
+## Methods ##
+
+### setPassword ###
 
 setPassword - sets the password/PIN on the named token.
   The canceled output value should be set to TRUE when
   the user (or implementation) cancels the operation.
 
 
-## getPassword ##
+### getPassword ###

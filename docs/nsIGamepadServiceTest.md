@@ -4,14 +4,18 @@ layout: default
 
 # nsIGamepadServiceTest #
 
-## NO_MAPPING ##
+## Methods ##
 
-## STANDARD_MAPPING ##
+### addGamepad ###
 
-## addGamepad ##
+### removeGamepad ###
 
-## removeGamepad ##
+### newButtonEvent ###
 
-## newButtonEvent ##
+### newAxisMoveEvent ###
 
-## newAxisMoveEvent ##
+## Constants ##
+
+### NO_MAPPING ###
+
+### STANDARD_MAPPING ###

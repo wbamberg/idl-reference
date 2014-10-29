@@ -14,14 +14,16 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## aLink ##
+## Attributes ##
 
-## background ##
+### aLink ###
 
-## bgColor ##
+### background ###
 
-## link ##
+### bgColor ###
 
-## text ##
+### link ###
 
-## vLink ##
+### text ###
+
+### vLink ###

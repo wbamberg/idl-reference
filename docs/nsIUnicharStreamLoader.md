@@ -13,7 +13,9 @@ as the listener. The context argument in the asyncOpen() call will be
 passed to the onStreamComplete() callback.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initializes the unichar stream loader
 
@@ -21,13 +23,15 @@ Initializes the unichar stream loader
                  the load is complete
 
 
-## channel ##
+## Attributes ##
+
+### channel ###
 
 The channel attribute is only valid inside the onDetermineCharset
 and onStreamComplete callbacks.  Otherwise it will be null.
 
 
-## charset ##
+### charset ###
 
 The charset that onDetermineCharset returned, if that's been
 called.

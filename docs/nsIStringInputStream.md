@@ -10,7 +10,9 @@ Provides scriptable and specialized C++-only methods for initializing a
 nsIInputStream implementation with a simple character array.
 
 
-## setData ##
+## Methods ##
+
+### setData ###
 
 SetData - assign data to the input stream (copied on assignment).
 
@@ -26,7 +28,7 @@ the data string will be seen as a terminator when the data is converted
 from a JS string to a C++ character array.
 
 
-## adoptData ##
+### adoptData ###
 
 NOTE: the following methods are designed to give C++ code added control
 over the ownership and lifetime of the stream data.  Use with care :-)
@@ -40,7 +42,7 @@ the input stream is destroyed.
 @param dataLen   - stream data length (-1 if length should be computed)
 
 
-## shareData ##
+### shareData ###
 
 ShareData - assign data to the input stream.  the input stream references
 the given data buffer until the input stream is destroyed.  the given

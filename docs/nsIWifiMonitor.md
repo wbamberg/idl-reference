@@ -4,6 +4,8 @@ layout: default
 
 # nsIWifiMonitor #
 
-## startWatching ##
+## Methods ##
 
-## stopWatching ##
+### startWatching ###
+
+### stopWatching ###

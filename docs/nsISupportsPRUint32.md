@@ -7,6 +7,10 @@ layout: default
 Scriptable storage for unsigned 32-bit integers
 
 
-## data ##
+## Methods ##
 
-## toString ##
+### toString ###
+
+## Attributes ##
+
+### data ###

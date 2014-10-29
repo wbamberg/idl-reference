@@ -4,4 +4,6 @@ layout: default
 
 # nsIUsageCallback #
 
-## onUsageResult ##
+## Methods ##
+
+### onUsageResult ###

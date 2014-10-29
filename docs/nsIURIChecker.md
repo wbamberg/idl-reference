@@ -12,7 +12,9 @@ protocol specific methods to verify the URI (e.g., use of HEAD request
 for HTTP URIs).
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initializes the URI checker.  After this method is called, it is valid
 to further configure the URI checker by calling its nsIRequest methods.
@@ -23,12 +25,7 @@ In the case of the HTTP protocol, only a HEAD request will be issued.
        The URI to be checked.
 
 
-## baseChannel ##
-
-Returns the base channel that will be used to verify the URI.
-
-
-## asyncCheck ##
+### asyncCheck ###
 
 Begin asynchronous checking URI for validity.  Notification will be
 asynchronous through the nsIRequestObserver callback interface.  When
@@ -50,4 +47,11 @@ Our interpretations of the nsIRequestObserver status codes:
 @param aContext
        A closure that will be passed back to the nsIRequestObserver
        methods.
+
+
+## Attributes ##
+
+### baseChannel ###
+
+Returns the base channel that will be used to verify the URI.
 

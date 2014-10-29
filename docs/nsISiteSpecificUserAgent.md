@@ -7,7 +7,9 @@ layout: default
 nsISiteSpecificUserAgent provides you with site/window-specific User Agent strings.
 
 
-## getUserAgentForURIAndWindow ##
+## Methods ##
+
+### getUserAgentForURIAndWindow ###
 
 Get the User Agent string for a given URI.
 

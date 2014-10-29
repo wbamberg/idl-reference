@@ -4,7 +4,9 @@ layout: default
 
 # nsISimpleTest #
 
-## add ##
+## Methods ##
+
+### add ###
 
 This interface adds two numbers together and returns the result.
 

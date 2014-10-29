@@ -17,24 +17,9 @@ will access methods of the nsIHelperAppLauncher passed in to show()
 in order to cause a "save to disk" or "open using" action.
 
 
-## REASON_CANTHANDLE ##
+## Methods ##
 
-This request is passed to the helper app dialog because Gecko can not
-handle content of this type.
-
-
-## REASON_SERVERREQUEST ##
-
-The server requested external handling.
-
-
-## REASON_TYPESNIFFED ##
-
-Gecko detected that the type sent by the server (e.g. text/plain) does
-not match the actual type.
-
-
-## show ##
+### show ###
 
 Show confirmation dialog for launching application (or "save to
 disk") for content specified by aLauncher.
@@ -49,7 +34,7 @@ disk") for content specified by aLauncher.
        REASON_CANTHANDLE.
 
 
-## promptForSaveToFile ##
+### promptForSaveToFile ###
 
 Invoke a save-to-file dialog instead of the full fledged helper app dialog.
 Returns the a nsIFile for the file name/location selected.
@@ -71,7 +56,7 @@ Returns the a nsIFile for the file name/location selected.
                                should be used.
 
 
-## promptForSaveToFileAsync ##
+### promptForSaveToFileAsync ###
 
 Async invoke a save-to-file dialog instead of the full fledged helper app
 dialog. When the file is chosen (or the dialog is closed), the callback
@@ -90,4 +75,23 @@ selected file.
        Set to true to force prompting the user for thet file
        name/location, otherwise perferences may control if the user is
        prompted.
+
+
+## Constants ##
+
+### REASON_CANTHANDLE ###
+
+This request is passed to the helper app dialog because Gecko can not
+handle content of this type.
+
+
+### REASON_SERVERREQUEST ###
+
+The server requested external handling.
+
+
+### REASON_TYPESNIFFED ###
+
+Gecko detected that the type sent by the server (e.g. text/plain) does
+not match the actual type.
 

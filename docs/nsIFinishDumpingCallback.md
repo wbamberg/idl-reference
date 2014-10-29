@@ -4,4 +4,6 @@ layout: default
 
 # nsIFinishDumpingCallback #
 
-## callback ##
+## Methods ##
+
+### callback ###

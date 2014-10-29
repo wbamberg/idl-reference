@@ -4,7 +4,9 @@ layout: default
 
 # nsIUnicodeNormalizer #
 
-## NormalizeUnicodeNFD ##
+## Methods ##
+
+### NormalizeUnicodeNFD ###
 
 Normalize Unicode (NFD, NFC, NFKD, NFKC).
 
@@ -19,8 +21,8 @@ Reference: Unicode Standard, TR15, Unicode Normalization Forms
 @return             NS_OK for success, 
 
 
-## NormalizeUnicodeNFC ##
+### NormalizeUnicodeNFC ###
 
-## NormalizeUnicodeNFKD ##
+### NormalizeUnicodeNFKD ###
 
-## NormalizeUnicodeNFKC ##
+### NormalizeUnicodeNFKC ###

@@ -4,12 +4,16 @@ layout: default
 
 # nsIAppOfflineInfo #
 
-## appId ##
+## Attributes ##
 
-## ONLINE ##
+### appId ###
 
-## OFFLINE ##
+### mode ###
 
-## WIFI_ONLY ##
+## Constants ##
 
-## mode ##
+### ONLINE ###
+
+### OFFLINE ###
+
+### WIFI_ONLY ###

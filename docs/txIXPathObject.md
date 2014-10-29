@@ -4,4 +4,6 @@ layout: default
 
 # txIXPathObject #
 
-## getResult ##
+## Methods ##
+
+### getResult ###

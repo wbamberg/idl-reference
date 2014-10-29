@@ -10,31 +10,9 @@ It supports initialization from a relative path and provides
 some customization on how URLs are normalized.
 
 
-## URLTYPE_STANDARD ##
+## Methods ##
 
-blah:foo/bar    => blah://foo/bar
-blah:/foo/bar   => blah:///foo/bar
-blah://foo/bar  => blah://foo/bar
-blah:///foo/bar => blah:///foo/bar
-
-
-## URLTYPE_AUTHORITY ##
-
-blah:foo/bar    => blah://foo/bar
-blah:/foo/bar   => blah://foo/bar
-blah://foo/bar  => blah://foo/bar
-blah:///foo/bar => blah://foo/bar
-
-
-## URLTYPE_NO_AUTHORITY ##
-
-blah:foo/bar    => blah:///foo/bar
-blah:/foo/bar   => blah:///foo/bar
-blah://foo/bar  => blah://foo/bar
-blah:///foo/bar => blah:///foo/bar
-
-
-## init ##
+### init ###
 
 Initialize a standard URL.
 
@@ -54,4 +32,30 @@ Initialize a standard URL.
 @param aBaseURI       - if null, aSpec must specify an absolute URI.
                         otherwise, aSpec will be resolved relative
                         to aBaseURI.
+
+
+## Constants ##
+
+### URLTYPE_STANDARD ###
+
+blah:foo/bar    => blah://foo/bar
+blah:/foo/bar   => blah:///foo/bar
+blah://foo/bar  => blah://foo/bar
+blah:///foo/bar => blah:///foo/bar
+
+
+### URLTYPE_AUTHORITY ###
+
+blah:foo/bar    => blah://foo/bar
+blah:/foo/bar   => blah://foo/bar
+blah://foo/bar  => blah://foo/bar
+blah:///foo/bar => blah://foo/bar
+
+
+### URLTYPE_NO_AUTHORITY ###
+
+blah:foo/bar    => blah:///foo/bar
+blah:/foo/bar   => blah:///foo/bar
+blah://foo/bar  => blah://foo/bar
+blah:///foo/bar => blah:///foo/bar
 

@@ -4,4 +4,6 @@ layout: default
 
 # ScriptableOK #
 
-## method1 ##
+## Methods ##
+
+### method1 ###

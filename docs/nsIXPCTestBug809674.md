@@ -4,4 +4,6 @@ layout: default
 
 # nsIXPCTestBug809674 #
 
-## jsvalProperty ##
+## Attributes ##
+
+### jsvalProperty ###

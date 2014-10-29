@@ -7,7 +7,9 @@ layout: default
 nsISocketProvider
 
 
-## newSocket ##
+## Methods ##
+
+### newSocket ###
 
 newSocket
 
@@ -30,7 +32,7 @@ newSocket
        object typically implements nsITransportSecurityInfo.
 
 
-## addToSocket ##
+### addToSocket ###
 
 addToSocket
 
@@ -42,7 +44,9 @@ Parameters are the same as newSocket with the exception of aFileDesc,
 which is an in-param instead.
 
 
-## PROXY_RESOLVES_HOST ##
+## Constants ##
+
+### PROXY_RESOLVES_HOST ###
 
 PROXY_RESOLVES_HOST
 
@@ -52,7 +56,7 @@ interface will be used instead of the address structure passed for a
 later connect et al. request.
 
 
-## ANONYMOUS_CONNECT ##
+### ANONYMOUS_CONNECT ###
 
 When setting this flag, the socket will not apply any
 credentials when establishing a connection. For example,
@@ -60,7 +64,7 @@ an SSL connection would not send any client-certificates
 if this flag is set.
 
 
-## NO_PERMANENT_STORAGE ##
+### NO_PERMANENT_STORAGE ###
 
 If set, indicates that the connection was initiated from a source
 defined as being private in the sense of Private Browsing. Generally,

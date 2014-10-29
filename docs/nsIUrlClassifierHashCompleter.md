@@ -13,7 +13,9 @@ This is only ever used for testing and should absolutely be deleted (I
 think).
 
 
-## complete ##
+## Methods ##
+
+### complete ###
 
 Request a completed hash from the given gethash url.
 

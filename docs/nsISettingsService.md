@@ -4,4 +4,6 @@ layout: default
 
 # nsISettingsService #
 
-## createLock ##
+## Methods ##
+
+### createLock ###

@@ -4,6 +4,8 @@ layout: default
 
 # nsICertTreeItem #
 
-## cert ##
+## Attributes ##
 
-## hostPort ##
+### cert ###
+
+### hostPort ###

@@ -8,7 +8,9 @@ A service providing native implementations of some of the features
 of OS.File.
 
 
-## read ##
+## Methods ##
+
+### read ###
 
 Implementation of OS.File.read
 

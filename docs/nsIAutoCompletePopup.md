@@ -4,18 +4,22 @@ layout: default
 
 # nsIAutoCompletePopup #
 
-## input ##
+## Methods ##
 
-## overrideValue ##
+### openAutocompletePopup ###
 
-## selectedIndex ##
+### closePopup ###
 
-## popupOpen ##
+### invalidate ###
 
-## openAutocompletePopup ##
+### selectBy ###
 
-## closePopup ##
+## Attributes ##
 
-## invalidate ##
+### input ###
 
-## selectBy ##
+### overrideValue ###
+
+### selectedIndex ###
+
+### popupOpen ###

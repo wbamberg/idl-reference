@@ -7,7 +7,9 @@ layout: default
 Fired when an attribute of an accessible changes.
 
 
-## changedAttribute ##
+## Attributes ##
+
+### changedAttribute ###
 
 Return the accessible attribute that changed.
 

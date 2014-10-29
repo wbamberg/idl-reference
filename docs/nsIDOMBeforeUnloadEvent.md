@@ -13,7 +13,9 @@ http://msdn.microsoft.com/library/default.asp?url=/workshop/author/dhtml/referen
 
 
 
-## returnValue ##
+## Attributes ##
+
+### returnValue ###
 
 Attribute used to pass back a return value from a beforeunload
 handler

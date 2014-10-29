@@ -18,7 +18,9 @@ Java client fetches content from a HTTP site that the user
 has already logged into.
 
 
-## getAuthIdentity ##
+## Methods ##
+
+### getAuthIdentity ###
 
 Lookup auth identity.
 
@@ -50,7 +52,7 @@ Lookup auth identity.
        app/mozbrowser is in use for this request
 
 
-## setAuthIdentity ##
+### setAuthIdentity ###
 
 Store auth identity.
 
@@ -82,7 +84,7 @@ Store auth identity.
        app/mozbrowser is in use for this request
 
 
-## clearAll ##
+### clearAll ###
 
 Clear all auth cache.
 

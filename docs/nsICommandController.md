@@ -4,6 +4,8 @@ layout: default
 
 # nsICommandController #
 
-## getCommandStateWithParams ##
+## Methods ##
 
-## doCommandWithParams ##
+### getCommandStateWithParams ###
+
+### doCommandWithParams ###

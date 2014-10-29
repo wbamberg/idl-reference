@@ -4,7 +4,9 @@ layout: default
 
 # nsILoginManagerPrompter #
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize the prompter. Must be called before using other interfaces.
 
@@ -15,7 +17,7 @@ Initialize the prompter. Must be called before using other interfaces.
        is being used, topmost opener in some cases).
 
 
-## setE10sData ##
+### setE10sData ###
 
 If the caller knows which browser this prompter is being created for,
 they can call this function to avoid having to calculate it from the
@@ -24,7 +26,7 @@ window passed to init.
 @param aBrowser the <browser> to use for this prompter.
 
 
-## promptToSavePassword ##
+### promptToSavePassword ###
 
 Ask the user if they want to save a login (Yes, Never, Not Now)
 
@@ -32,7 +34,7 @@ Ask the user if they want to save a login (Yes, Never, Not Now)
        The login to be saved.
 
 
-## promptToChangePassword ##
+### promptToChangePassword ###
 
 Ask the user if they want to change a login's password. If the
 user consents, modifyLogin() will be called.
@@ -43,7 +45,7 @@ user consents, modifyLogin() will be called.
        The new login.
 
 
-## promptToChangePasswordWithUsernames ##
+### promptToChangePasswordWithUsernames ###
 
 Ask the user if they want to change the password for one of
 multiple logins, when the caller can't determine exactly which

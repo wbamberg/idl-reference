@@ -18,109 +18,115 @@ loads.  Inactive caches will be removed from the cache when they are
 no longer referenced.
 
 
-## initAsHandle ##
+## Methods ##
+
+### initAsHandle ###
 
 Init this application cache instance to just hold the group ID and
 the client ID to work just as a handle to the real cache. Used on
 content process to simplify the application cache code.
 
 
-## ITEM_MANIFEST ##
-
-Entries in an application cache can be marked as one or more of
-the following types.
-
-
-## ITEM_EXPLICIT ##
-
-## ITEM_IMPLICIT ##
-
-## ITEM_DYNAMIC ##
-
-## ITEM_FOREIGN ##
-
-## ITEM_FALLBACK ##
-
-## ITEM_OPPORTUNISTIC ##
-
-## manifestURI ##
-
-URI of the manfiest specifying this application cache.
-/
-
-## groupID ##
-
-The group ID for this cache group.  It is an internally generated string
-and cannot be used as manifest URL spec.
-/
-
-## clientID ##
-
-The client ID for this application cache.  Clients can open a
-session with nsICacheService::createSession() using this client
-ID and a storage policy of STORE_OFFLINE to access this cache.
-
-
-## active ##
-
-TRUE if the cache is the active cache for this group.
-
-
-## usage ##
-
-The disk usage of the application cache, in bytes.
-
-
-## activate ##
+### activate ###
 
 Makes this cache the active application cache for this group.
 Future loads associated with this group will come from this
 cache.  Other caches from this cache group will be deactivated.
 
 
-## discard ##
+### discard ###
 
 Discard this application cache.  Removes all cached resources
 for this cache.  If this is the active application cache for the
 group, the group will be removed.
 
 
-## markEntry ##
+### markEntry ###
 
 Adds item types to a given entry.
 
 
-## unmarkEntry ##
+### unmarkEntry ###
 
 Removes types from a given entry.  If the resulting entry has
 no types left, the entry is removed.
 
 
-## getTypes ##
+### getTypes ###
 
 Gets the types for a given entry.
 
 
-## gatherEntries ##
+### gatherEntries ###
 
 Returns any entries in the application cache whose type matches
 one or more of the bits in typeBits.
 
 
-## addNamespaces ##
+### addNamespaces ###
 
 Add a set of namespace entries to the application cache.
 @param namespaces
        An nsIArray of nsIApplicationCacheNamespace entries.
 
 
-## getMatchingNamespace ##
+### getMatchingNamespace ###
 
 Get the most specific namespace matching a given key.
 
 
-## profileDirectory ##
+## Attributes ##
+
+### manifestURI ###
+
+URI of the manfiest specifying this application cache.
+/
+
+### groupID ###
+
+The group ID for this cache group.  It is an internally generated string
+and cannot be used as manifest URL spec.
+/
+
+### clientID ###
+
+The client ID for this application cache.  Clients can open a
+session with nsICacheService::createSession() using this client
+ID and a storage policy of STORE_OFFLINE to access this cache.
+
+
+### active ###
+
+TRUE if the cache is the active cache for this group.
+
+
+### usage ###
+
+The disk usage of the application cache, in bytes.
+
+
+### profileDirectory ###
 
 If set, this offline cache is placed in a different directory
 than the current application profile.
 
+
+## Constants ##
+
+### ITEM_MANIFEST ###
+
+Entries in an application cache can be marked as one or more of
+the following types.
+
+
+### ITEM_EXPLICIT ###
+
+### ITEM_IMPLICIT ###
+
+### ITEM_DYNAMIC ###
+
+### ITEM_FOREIGN ###
+
+### ITEM_FALLBACK ###
+
+### ITEM_OPPORTUNISTIC ###

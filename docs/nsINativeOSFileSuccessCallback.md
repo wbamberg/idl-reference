@@ -7,4 +7,6 @@ layout: default
 A callback invoked in case of success.
 
 
-## complete ##
+## Methods ##
+
+### complete ###

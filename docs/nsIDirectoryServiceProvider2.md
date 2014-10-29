@@ -10,7 +10,9 @@ An extension of nsIDirectoryServiceProvider which allows
 multiple files to be returned for the given key.
 
 
-## getFiles ##
+## Methods ##
+
+### getFiles ###
 
 getFiles
 

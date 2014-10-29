@@ -9,7 +9,9 @@ nsIDirectoryServiceProvider
 Used by Directory Service to get file locations.
 
 
-## getFile ##
+## Methods ##
+
+### getFile ###
 
 getFile
 

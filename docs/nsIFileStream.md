@@ -7,7 +7,9 @@ layout: default
 A stream that allows you to read from a file or stream to a file.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 @param file          file to read from or stream to
 @param ioFlags       file open flags listed in prio.h (see
@@ -19,7 +21,9 @@ A stream that allows you to read from a file or stream to a file.
        (see enumerations in the class)
 
 
-## DEFER_OPEN ##
+## Constants ##
+
+### DEFER_OPEN ###
 
 See the same constant in nsIFileInputStream. The deferred open will
 be performed when one of the following is called:

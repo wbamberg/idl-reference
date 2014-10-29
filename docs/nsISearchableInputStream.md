@@ -8,7 +8,9 @@ XXX this interface doesn't really belong in here.  It is here because
 currently nsPipeInputStream is the only implementation of this interface.
 
 
-## search ##
+## Methods ##
+
+### search ###
 
 Searches for a string in the input stream. Since the stream has a notion
 of EOF, it is possible that the string may at some time be in the 

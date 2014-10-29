@@ -4,22 +4,26 @@ layout: default
 
 # inISearchProcess #
 
-## isActive ##
+## Methods ##
 
-## resultCount ##
+### searchSync ###
 
-## holdResults ##
+### searchAsync ###
 
-## searchSync ##
+### searchStop ###
 
-## searchAsync ##
+### searchStep ###
 
-## searchStop ##
+### getStringResultAt ###
 
-## searchStep ##
+### getIntResultAt ###
 
-## getStringResultAt ##
+### getUIntResultAt ###
 
-## getIntResultAt ##
+## Attributes ##
 
-## getUIntResultAt ##
+### isActive ###
+
+### resultCount ###
+
+### holdResults ###

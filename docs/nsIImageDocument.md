@@ -4,18 +4,22 @@ layout: default
 
 # nsIImageDocument #
 
-## imageResizingEnabled ##
+## Methods ##
 
-## imageIsOverflowing ##
+### shrinkToFit ###
 
-## imageIsResized ##
+### restoreImage ###
 
-## imageRequest ##
+### restoreImageTo ###
 
-## shrinkToFit ##
+### toggleImageSize ###
 
-## restoreImage ##
+## Attributes ##
 
-## restoreImageTo ##
+### imageResizingEnabled ###
 
-## toggleImageSize ##
+### imageIsOverflowing ###
+
+### imageIsResized ###
+
+### imageRequest ###

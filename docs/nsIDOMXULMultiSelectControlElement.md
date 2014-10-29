@@ -4,30 +4,34 @@ layout: default
 
 # nsIDOMXULMultiSelectControlElement #
 
-## selType ##
+## Methods ##
 
-## currentItem ##
+### addItemToSelection ###
 
-## currentIndex ##
+### removeItemFromSelection ###
 
-## selectedItems ##
+### toggleItemSelection ###
 
-## addItemToSelection ##
+### selectItem ###
 
-## removeItemFromSelection ##
+### selectItemRange ###
 
-## toggleItemSelection ##
+### selectAll ###
 
-## selectItem ##
+### invertSelection ###
 
-## selectItemRange ##
+### clearSelection ###
 
-## selectAll ##
+### getSelectedItem ###
 
-## invertSelection ##
+## Attributes ##
 
-## clearSelection ##
+### selType ###
 
-## selectedCount ##
+### currentItem ###
 
-## getSelectedItem ##
+### currentIndex ###
+
+### selectedItems ###
+
+### selectedCount ###

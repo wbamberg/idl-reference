@@ -9,13 +9,17 @@ amIWebInstallListener to communicate with the running application and allow
 it to warn the user about blocked installs and start the installs running.
 
 
-## originator ##
+## Methods ##
 
-## originatingURI ##
-
-## installs ##
-
-## install ##
+### install ###
 
 Starts all installs.
 
+
+## Attributes ##
+
+### originator ###
+
+### originatingURI ###
+
+### installs ###

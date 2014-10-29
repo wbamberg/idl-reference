@@ -4,8 +4,10 @@ layout: default
 
 # nsIFormFillController #
 
-## attachToBrowser ##
+## Methods ##
 
-## detachFromBrowser ##
+### attachToBrowser ###
 
-## markAsLoginManagerField ##
+### detachFromBrowser ###
+
+### markAsLoginManagerField ###

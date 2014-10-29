@@ -4,7 +4,9 @@ layout: default
 
 # nsIFontEnumerator #
 
-## EnumerateAllFonts ##
+## Methods ##
+
+### EnumerateAllFonts ###
 
 Return a sorted array of the names of all installed fonts.
 
@@ -13,7 +15,7 @@ Return a sorted array of the names of all installed fonts.
 @return void
 
 
-## EnumerateFonts ##
+### EnumerateFonts ###
 
 Return a sorted array of names of fonts that support the given language
 group and are suitable for use as the given CSS generic font.
@@ -25,26 +27,26 @@ group and are suitable for use as the given CSS generic font.
 @return void
 
 
-## HaveFontFor ##
+### HaveFontFor ###
 
 @param  aLangGroup language group
 @return bool do we have a font for this language group
 
 
-## getDefaultFont ##
+### getDefaultFont ###
 
 @param  aLangGroup language group
 @param  aGeneric CSS generic font
 @return suggested default font for this language group and generic family
 
 
-## updateFontList ##
+### updateFontList ###
 
 update the global font list
 return true if font list is changed
 
 
-## getStandardFamilyName ##
+### getStandardFamilyName ###
 
 get the standard family name on the system from given family
 @param  aName family name which may be alias

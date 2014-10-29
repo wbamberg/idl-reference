@@ -4,42 +4,44 @@ layout: default
 
 # nsISupportsArray #
 
-## Equals ##
+## Methods ##
 
-## IndexOf ##
+### Equals ###
 
-## IndexOfStartingAt ##
+### IndexOf ###
 
-## LastIndexOf ##
+### IndexOfStartingAt ###
 
-## GetIndexOf ##
+### LastIndexOf ###
 
-## GetIndexOfStartingAt ##
+### GetIndexOf ###
 
-## GetLastIndexOf ##
+### GetIndexOfStartingAt ###
 
-## InsertElementAt ##
+### GetLastIndexOf ###
 
-## ReplaceElementAt ##
+### InsertElementAt ###
 
-## RemoveElementAt ##
+### ReplaceElementAt ###
 
-## RemoveLastElement ##
+### RemoveElementAt ###
 
-## DeleteLastElement ##
+### RemoveLastElement ###
 
-## DeleteElementAt ##
+### DeleteLastElement ###
 
-## AppendElements ##
+### DeleteElementAt ###
 
-## Compact ##
+### AppendElements ###
 
-## clone ##
+### Compact ###
 
-## MoveElement ##
+### clone ###
 
-## InsertElementsAt ##
+### MoveElement ###
 
-## RemoveElementsAt ##
+### InsertElementsAt ###
 
-## SizeTo ##
+### RemoveElementsAt ###
+
+### SizeTo ###

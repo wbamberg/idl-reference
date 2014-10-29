@@ -33,41 +33,9 @@ Finish method must be called to complete the operation.
          thread.
 
 
-## observer ##
+## Methods ##
 
-This observer receives notifications when the target file name changes and
-when the operation completes, successfully or not.
-
-@remarks A strong reference to the observer is held.  Notification events
-         are dispatched to the thread that created the object that
-         implements nsIBackgroundFileSaver.
-
-
-## signatureInfo ##
-
-An nsIArray of nsIX509CertList, representing a chain of X.509 signatures on
-the downloaded file. Each list may belong to a different signer and contain
-certificates all the way up to the root.
-
-@throws NS_ERROR_NOT_AVAILABLE
-        In case this is called before the onSaveComplete method has been
-        called to notify success, or enableSignatureInfo has not been
-        called.
-
-
-## sha256Hash ##
-
-The SHA-256 hash, in raw bytes, associated with the data that was saved.
-
-In case the enableAppend method has been called, the hash computation
-includes the contents of the existing file, if any.
-
-@throws NS_ERROR_NOT_AVAILABLE
-        In case the enableSha256 method has not been called, or before the
-        onSaveComplete method has been called to notify success.
-
-
-## enableSignatureInfo ##
+### enableSignatureInfo ###
 
 Instructs the component to compute the signatureInfo of the target file,
 and make it available in the signatureInfo property.
@@ -76,7 +44,7 @@ and make it available in the signatureInfo property.
          setTarget.
 
 
-## enableSha256 ##
+### enableSha256 ###
 
 Instructs the component to compute the SHA-256 hash of the target file, and
 make it available in the sha256Hash property.
@@ -85,7 +53,7 @@ make it available in the sha256Hash property.
          setTarget.
 
 
-## enableAppend ##
+### enableAppend ###
 
 Instructs the component to append data to the initial target file, that
 will be specified by the first call to the setTarget method, instead of
@@ -97,7 +65,7 @@ If the initial target file does not exist, this method has no effect.
          setTarget.
 
 
-## setTarget ##
+### setTarget ###
 
 Sets the name of the output file to be written.  The target can be changed
 after data has already been fed, in which case the existing file will be
@@ -122,7 +90,7 @@ fails.  Failure is notified asynchronously through the observer.
        generally set for downloads that use temporary ".part" files.
 
 
-## finish ##
+### finish ###
 
 Terminates access to the output file, then notifies the observer with the
 specified status code.  A failure code will force the operation to be
@@ -141,4 +109,40 @@ renamed even if all the data has been fed.
        be canceled, and is notified to the observer.  If the operation
        fails meanwhile for other reasons, or the observer has been already
        notified of completion, this status code is ignored.
+
+
+## Attributes ##
+
+### observer ###
+
+This observer receives notifications when the target file name changes and
+when the operation completes, successfully or not.
+
+@remarks A strong reference to the observer is held.  Notification events
+         are dispatched to the thread that created the object that
+         implements nsIBackgroundFileSaver.
+
+
+### signatureInfo ###
+
+An nsIArray of nsIX509CertList, representing a chain of X.509 signatures on
+the downloaded file. Each list may belong to a different signer and contain
+certificates all the way up to the root.
+
+@throws NS_ERROR_NOT_AVAILABLE
+        In case this is called before the onSaveComplete method has been
+        called to notify success, or enableSignatureInfo has not been
+        called.
+
+
+### sha256Hash ###
+
+The SHA-256 hash, in raw bytes, associated with the data that was saved.
+
+In case the enableAppend method has been called, the hash computation
+includes the contents of the existing file, if any.
+
+@throws NS_ERROR_NOT_AVAILABLE
+        In case the enableSha256 method has not been called, or before the
+        onSaveComplete method has been called to notify success.
 

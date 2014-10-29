@@ -7,7 +7,9 @@ layout: default
 Implement this interface to visit http headers.
 
 
-## visitHeader ##
+## Methods ##
+
+### visitHeader ###
 
 Called by the nsIHttpChannel implementation when visiting request and
 response headers.

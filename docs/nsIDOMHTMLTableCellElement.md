@@ -14,32 +14,34 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## cellIndex ##
+## Attributes ##
 
-## abbr ##
+### cellIndex ###
 
-## align ##
+### abbr ###
 
-## axis ##
+### align ###
 
-## bgColor ##
+### axis ###
 
-## ch ##
+### bgColor ###
 
-## chOff ##
+### ch ###
 
-## colSpan ##
+### chOff ###
 
-## headers ##
+### colSpan ###
 
-## height ##
+### headers ###
 
-## noWrap ##
+### height ###
 
-## rowSpan ##
+### noWrap ###
 
-## scope ##
+### rowSpan ###
 
-## vAlign ##
+### scope ###
 
-## width ##
+### vAlign ###
+
+### width ###

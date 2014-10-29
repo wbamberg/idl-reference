@@ -7,6 +7,10 @@ layout: default
 The nsIDocShellFile    
 
 
-## printable ##
+## Methods ##
 
-## print ##
+### print ###
+
+## Attributes ##
+
+### printable ###

@@ -4,10 +4,14 @@ layout: default
 
 # nsIXPConnectWrappedJS #
 
-## InterfaceInfo ##
+## Methods ##
 
-## InterfaceIID ##
+### debugDump ###
 
-## debugDump ##
+### aggregatedQueryInterface ###
 
-## aggregatedQueryInterface ##
+## Attributes ##
+
+### InterfaceInfo ###
+
+### InterfaceIID ###

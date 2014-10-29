@@ -4,7 +4,9 @@ layout: default
 
 # nsIRilMobileMessageDatabaseCallback #
 
-## notify ##
+## Methods ##
+
+### notify ###
 
 |aDomMessage|: the nsIDOMMoz{Mms,Sms}Message
 

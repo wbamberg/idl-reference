@@ -8,7 +8,9 @@ nsIURLParser specifies the interface to an URL parser that attempts to
 follow the definitions of RFC 2396.
 
 
-## parseURL ##
+## Methods ##
+
+### parseURL ###
 
 The string to parse in the following methods may be given as a null
 terminated string, in which case the length argument should be -1.
@@ -27,7 +29,7 @@ an authority section (hostname, etc.), and a path.
 spec = <scheme>://<authority><path>
 
 
-## parseAuthority ##
+### parseAuthority ###
 
 ParseAuthority breaks the authority string up into its 4 components:
 username, password, hostname, and hostport.
@@ -35,17 +37,17 @@ username, password, hostname, and hostport.
 auth = <username>:<password>@<hostname>:<port>
 
 
-## parseUserInfo ##
+### parseUserInfo ###
 
 userinfo = <username>:<password>
 
 
-## parseServerInfo ##
+### parseServerInfo ###
 
 serverinfo = <hostname>:<port>
 
 
-## parsePath ##
+### parsePath ###
 
 ParsePath breaks the path string up into its 3 major components: a file path,
 a query string, and a reference string.
@@ -53,7 +55,7 @@ a query string, and a reference string.
 path = <filepath>?<query>#<ref>
 
 
-## parseFilePath ##
+### parseFilePath ###
 
 ParseFilePath breaks the file path string up into: the directory portion,
 file base name, and file extension.
@@ -61,7 +63,7 @@ file base name, and file extension.
 filepath = <directory><basename>.<extension>
 
 
-## parseFileName ##
+### parseFileName ###
 
 filename = <basename>.<extension>
 

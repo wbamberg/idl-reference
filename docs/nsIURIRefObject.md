@@ -10,19 +10,19 @@ relative or absolute.
 Used by the editor but not dependant on it.
 
 
-## node ##
+## Methods ##
 
-## Reset ##
+### Reset ###
 
 Go back to the beginning of the attribute list.
 
 
-## GetNextURI ##
+### GetNextURI ###
 
 Return the next rewritable URI.
 
 
-## RewriteAllURIs ##
+### RewriteAllURIs ###
 
 Go back to the beginning of the attribute list
 
@@ -30,3 +30,7 @@ Go back to the beginning of the attribute list
 @param aNewPat  New pattern to be replaced, e.g. http://mypage.aol.com/
 @param aMakeRel Rewrite links as relative vs. absolute
 
+
+## Attributes ##
+
+### node ###

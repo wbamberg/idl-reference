@@ -4,7 +4,9 @@ layout: default
 
 # nsIZipReaderCache #
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initializes a new zip reader cache. 
 @param cacheSize - the number of released entries to maintain before
@@ -13,7 +15,7 @@ Initializes a new zip reader cache.
   for those otherwise unused entries)
 
 
-## getZip ##
+### getZip ###
 
 Returns a (possibly shared) nsIZipReader for an nsIFile.
 
@@ -26,19 +28,19 @@ returned.
       will return the closed zip reader.
 
 
-## isCached ##
+### isCached ###
 
 returns true if this zipreader already has this file cached
 
 
-## getInnerZip ##
+### getInnerZip ###
 
 Returns a (possibly shared) nsIZipReader for a zip inside another zip
 
 See getZip
 
 
-## setMustCacheFd ##
+### setMustCacheFd ###
 
 Whether to keep NSPR file descriptor for newly opened files in the cache.
 When aMustCacheFd is enabled and a file is given, the file will be flushed
@@ -46,7 +48,7 @@ from the cache if its file descriptor was not cached.
 Note: currently not supported on Windows platform.
 
 
-## getFd ##
+### getFd ###
 
 Returns the cached NSPR file descriptor of the file.
 Note: currently not supported on Windows platform.

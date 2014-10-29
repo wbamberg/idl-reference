@@ -9,17 +9,19 @@ required to implement these, although it could be helpful to use the
 cancel method for shutting down the speech resources.
 
 
-## onPause ##
+## Methods ##
+
+### onPause ###
 
 The user or application has paused the speech.
 
 
-## onResume ##
+### onResume ###
 
 The user or application has resumed the speech.
 
 
-## onCancel ##
+### onCancel ###
 
 The user or application has canceled the speech.
 

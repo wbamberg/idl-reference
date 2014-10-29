@@ -4,18 +4,22 @@ layout: default
 
 # nsIDOMNodeIterator #
 
-## root ##
+## Methods ##
 
-## whatToShow ##
+### nextNode ###
 
-## filter ##
+### previousNode ###
 
-## nextNode ##
+### detach ###
 
-## previousNode ##
+## Attributes ##
 
-## detach ##
+### root ###
 
-## referenceNode ##
+### whatToShow ###
 
-## pointerBeforeReferenceNode ##
+### filter ###
+
+### referenceNode ###
+
+### pointerBeforeReferenceNode ###

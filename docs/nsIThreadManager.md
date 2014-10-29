@@ -7,13 +7,9 @@ layout: default
 An interface for creating and locating nsIThread instances.
 
 
-## DEFAULT_STACK_SIZE ##
+## Methods ##
 
-Default number of bytes reserved for a thread's stack, if no stack size
-is specified in newThread(). 0 means use platform default.
-
-
-## newThread ##
+### newThread ###
 
 Create a new thread (a global, user PRThread).
 
@@ -26,7 +22,7 @@ Create a new thread (a global, user PRThread).
   The newly created nsIThread object.
 
 
-## getThreadFromPRThread ##
+### getThreadFromPRThread ###
 
 Get the nsIThread object (if any) corresponding to the given PRThread.
 This method returns null if there is no corresponding nsIThread.
@@ -39,20 +35,30 @@ This method returns null if there is no corresponding nsIThread.
   such nsIThread exists.
 
 
-## mainThread ##
+## Attributes ##
+
+### mainThread ###
 
 Get the main thread.
 
 
-## currentThread ##
+### currentThread ###
 
 Get the current thread.  If the calling thread does not already have a
 nsIThread associated with it, then a new nsIThread will be created and
 associated with the current PRThread.
 
 
-## isMainThread ##
+### isMainThread ###
 
 This attribute is true if the calling thread is the main thread of the
 application process.
+
+
+## Constants ##
+
+### DEFAULT_STACK_SIZE ###
+
+Default number of bytes reserved for a thread's stack, if no stack size
+is specified in newThread(). 0 means use platform default.
 

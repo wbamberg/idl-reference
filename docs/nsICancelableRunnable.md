@@ -8,7 +8,9 @@ Represents a task which can be dispatched to a thread for execution and
 which can be cancelled if necessary.
 
 
-## cancel ##
+## Methods ##
+
+### cancel ###
 
 Cancels a pending task.  If the task has already been executed this will
 be a no-op.  Calling this method twice is considered an error.

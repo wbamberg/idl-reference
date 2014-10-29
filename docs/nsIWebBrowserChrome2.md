@@ -7,7 +7,9 @@ layout: default
 nsIWebBrowserChrome2 is an extension to nsIWebBrowserChrome.
 
 
-## setStatusWithContext ##
+## Methods ##
+
+### setStatusWithContext ###
 
 Called when the status text in the chrome needs to be updated.  This
 method may be called instead of nsIWebBrowserChrome::SetStatus.  An

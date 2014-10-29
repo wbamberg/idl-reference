@@ -12,7 +12,9 @@ or the provider does not provide a window, the window watcher will proceed
 to actually open a new window.
 
 
-## provideWindow ##
+## Methods ##
+
+### provideWindow ###
 
 A method to request that this provider provide a window.  The window
 returned need not to have the right name or parent set on it; setting

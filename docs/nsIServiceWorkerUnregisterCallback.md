@@ -4,6 +4,8 @@ layout: default
 
 # nsIServiceWorkerUnregisterCallback #
 
-## UnregisterSucceeded ##
+## Methods ##
 
-## UnregisterFailed ##
+### UnregisterSucceeded ###
+
+### UnregisterFailed ###

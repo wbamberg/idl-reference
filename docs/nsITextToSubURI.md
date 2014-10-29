@@ -4,11 +4,13 @@ layout: default
 
 # nsITextToSubURI #
 
-## ConvertAndEscape ##
+## Methods ##
 
-## UnEscapeAndConvert ##
+### ConvertAndEscape ###
 
-## unEscapeURIForUI ##
+### UnEscapeAndConvert ###
+
+### unEscapeURIForUI ###
 
 Unescapes the given URI fragment (for UI purpose only)
 Note: 
@@ -25,7 +27,7 @@ Note:
 @return Unescaped aURIFragment  converted to unicode
 
 
-## unEscapeNonAsciiURI ##
+### unEscapeNonAsciiURI ###
 
 Unescapes only non ASCII characters in the given URI fragment 
 note: this method assumes the URI as UTF-8 and fallbacks to the given 

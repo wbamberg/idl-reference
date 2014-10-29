@@ -7,7 +7,9 @@ layout: default
 A literal node in the graph, whose value is a date
 
 
-## Value ##
+## Attributes ##
+
+### Value ###
 
 The date value of the literal
 

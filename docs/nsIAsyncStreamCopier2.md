@@ -4,7 +4,9 @@ layout: default
 
 # nsIAsyncStreamCopier2 #
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize the stream copier.
 
@@ -32,7 +34,7 @@ be automatically added to the sink.
        the desired behavior).
 
 
-## asyncCopy ##
+### asyncCopy ###
 
 asyncCopy triggers the start of the copy.  The observer will be notified
 when the copy completes.

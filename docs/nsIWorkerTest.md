@@ -4,8 +4,12 @@ layout: default
 
 # nsIWorkerTest #
 
-## postMessage ##
+## Methods ##
 
-## terminate ##
+### postMessage ###
 
-## callback ##
+### terminate ###
+
+## Attributes ##
+
+### callback ###

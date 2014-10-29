@@ -7,19 +7,21 @@ layout: default
  Interface provides the request type and its access.
 
 
-## type ##
+## Attributes ##
+
+### type ###
 
  The type of the permission request, such as
  "geolocation".
 
 
-## access ##
+### access ###
 
  The access of the permission request, such as
  "read".
 
 
-## options ##
+### options ###
 
 The array of available options.
 

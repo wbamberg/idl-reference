@@ -5,7 +5,9 @@ layout: default
 # nsIXPConnect #
 ***********************************************************************/
 
-## initClassesWithNewWrappedGlobal ##
+## Methods ##
+
+### initClassesWithNewWrappedGlobal ###
 
 Creates a new global object using the given aCOMObj as the global
 object. The object will be set up according to the flags (defined
@@ -22,13 +24,7 @@ classes when asked by the JS engine.
 @param aOptions JSAPI-specific options for the new compartment.
 
 
-## INIT_JS_STANDARD_CLASSES ##
-
-## DONT_FIRE_ONNEWGLOBALHOOK ##
-
-## OMIT_COMPONENTS_OBJECT ##
-
-## wrapNative ##
+### wrapNative ###
 
 wrapNative will create a new JSObject or return an existing one.
 
@@ -62,7 +58,7 @@ Returns:
       NS_ERROR_FAILURE
 
 
-## wrapNativeToJSVal ##
+### wrapNativeToJSVal ###
 
 Same as wrapNative, but it returns the JSObject in aVal. C++ callers
 must ensure that aVal is rooted.
@@ -77,7 +73,7 @@ is required to push it if the top of the context stack is not equal to
 aJSContext.
 
 
-## wrapJS ##
+### wrapJS ###
 
 wrapJS will yield a new or previously existing xpcom interface pointer
 to represent the JSObject passed in.
@@ -102,36 +98,32 @@ Returns:
       NS_ERROR_FAILURE
 
 
-## jSValToVariant ##
+### jSValToVariant ###
 
 Wraps the given jsval in a nsIVariant and returns the new variant.
 
 
-## getWrappedNativeOfJSObject ##
+### getWrappedNativeOfJSObject ###
 
 This only succeeds if the JSObject is a nsIXPConnectWrappedNative.
 A new wrapper is *never* constructed.
 
 
-## getNativeOfWrapper ##
+### getNativeOfWrapper ###
 
-## createStackFrameLocation ##
+### createStackFrameLocation ###
 
-## getCurrentJSContext ##
+### getCurrentJSContext ###
 
-## getSafeJSContext ##
+### getSafeJSContext ###
 
-## CurrentJSStack ##
+### debugDump ###
 
-## CurrentNativeCallContext ##
+### debugDumpObject ###
 
-## debugDump ##
+### debugDumpJSStack ###
 
-## debugDumpObject ##
-
-## debugDumpJSStack ##
-
-## wrapJSAggregatedToNative ##
+### wrapJSAggregatedToNative ###
 
 wrapJSAggregatedToNative is just like wrapJS except it is used in cases
 where the JSObject is also aggregated to some native xpcom Object.
@@ -147,25 +139,25 @@ Returns:
       NS_ERROR_FAILURE
 
 
-## getWrappedNativeOfNativeObject ##
+### getWrappedNativeOfNativeObject ###
 
 This only succeeds if the native object is already wrapped by xpconnect.
 A new wrapper is *never* constructed.
 
 
-## setFunctionThisTranslator ##
+### setFunctionThisTranslator ###
 
-## reparentWrappedNativeIfFound ##
+### reparentWrappedNativeIfFound ###
 
-## rescueOrphansInScope ##
+### rescueOrphansInScope ###
 
-## getWrappedNativePrototype ##
+### getWrappedNativePrototype ###
 
-## variantToJS ##
+### variantToJS ###
 
-## JSToVariant ##
+### JSToVariant ###
 
-## createSandbox ##
+### createSandbox ###
 
 Create a sandbox for evaluating code in isolation using
 evalInSandboxObject().
@@ -175,7 +167,7 @@ evalInSandboxObject().
                  to use when evaluating code in this sandbox.
 
 
-## evalInSandboxObject ##
+### evalInSandboxObject ###
 
 Evaluate script in a sandbox, completely isolated from all
 other running scripts.
@@ -192,7 +184,7 @@ other running scripts.
         to this method.
 
 
-## setReportAllJSExceptions ##
+### setReportAllJSExceptions ###
 
 Whether or not XPConnect should report all JS exceptions when returning
 from JS into C++. False by default, although any value set in the
@@ -200,28 +192,42 @@ MOZ_REPORT_ALL_JS_EXCEPTIONS environment variable will override the value
 passed here.
 
 
-## GarbageCollect ##
+### GarbageCollect ###
 
 Trigger a JS garbage collection.
 Use a js::gcreason::Reason from jsfriendapi.h for the kind.
 
 
-## NotifyDidPaint ##
+### NotifyDidPaint ###
 
 Signals a good place to do an incremental GC slice, because the
 browser is drawing a frame.
 
 
-## holdObject ##
+### holdObject ###
 
 Creates a JS object holder around aObject that will hold the object
 alive for as long as the holder stays alive.
 
 
-## writeScript ##
+### writeScript ###
 
-## readScript ##
+### readScript ###
 
-## writeFunction ##
+### writeFunction ###
 
-## readFunction ##
+### readFunction ###
+
+## Attributes ##
+
+### CurrentJSStack ###
+
+### CurrentNativeCallContext ###
+
+## Constants ##
+
+### INIT_JS_STANDARD_CLASSES ###
+
+### DONT_FIRE_ONNEWGLOBALHOOK ###
+
+### OMIT_COMPONENTS_OBJECT ###

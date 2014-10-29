@@ -7,4 +7,6 @@ layout: default
 Interface for a class that manages updates of the url classifier database.
 
 
-## handleEvent ##
+## Methods ##
+
+### handleEvent ###

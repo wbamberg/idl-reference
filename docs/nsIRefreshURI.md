@@ -4,7 +4,9 @@ layout: default
 
 # nsIRefreshURI #
 
-## refreshURI ##
+## Methods ##
+
+### refreshURI ###
 
 Load a uri after waiting for aMillis milliseconds. If the docshell
 is busy loading a page currently, the refresh request will be
@@ -17,7 +19,7 @@ queued and executed when the current load finishes.
 @param aMetaRefresh Flag to indicate if this is a Meta refresh.
 
 
-## forceRefreshURI ##
+### forceRefreshURI ###
 
 Loads a URI immediately as if it were a refresh.
 
@@ -27,7 +29,7 @@ Loads a URI immediately as if it were a refresh.
 @param aMetaRefresh Flag to indicate if this is a meta refresh.
 
 
-## setupRefreshURI ##
+### setupRefreshURI ###
 
 Checks the passed in channel to see if there is a refresh header, 
 if there is, will setup a timer to refresh the uri found
@@ -41,7 +43,7 @@ header was found and successfully setup.
 @param aChannel The channel to be parsed. 
 
 
-## setupRefreshURIFromHeader ##
+### setupRefreshURIFromHeader ###
 
 Parses the passed in header string and sets up a refreshURI if
 a "refresh" header is found. If docshell is busy loading a page 
@@ -53,12 +55,14 @@ the current page finishes loading.
 @param aHeader  The meta refresh header string.
 
 
-## cancelRefreshURITimers ##
+### cancelRefreshURITimers ###
 
 Cancels all timer loads.
 
 
-## refreshPending ##
+## Attributes ##
+
+### refreshPending ###
 
 True when there are pending refreshes, false otherwise.
 

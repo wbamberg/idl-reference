@@ -4,7 +4,9 @@ layout: default
 
 # imgIOnloadBlocker #
 
-## blockOnload ##
+## Methods ##
+
+### blockOnload ###
 
 blockOnload
 Called when it is appropriate to block onload for the given imgIRequest.
@@ -13,7 +15,7 @@ Called when it is appropriate to block onload for the given imgIRequest.
        The request that should block onload.
 
 
-## unblockOnload ##
+### unblockOnload ###
 
 unblockOnload
 Called when it is appropriate to unblock onload for the given

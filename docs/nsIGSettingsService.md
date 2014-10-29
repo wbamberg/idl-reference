@@ -4,4 +4,6 @@ layout: default
 
 # nsIGSettingsService #
 
-## getCollectionForSchema ##
+## Methods ##
+
+### getCollectionForSchema ###

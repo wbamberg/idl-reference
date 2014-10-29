@@ -4,17 +4,9 @@ layout: default
 
 # nsIFind #
 
-## findBackwards ##
+## Methods ##
 
-## caseSensitive ##
-
-## wordBreaker ##
-
-Use "find entire words" mode by setting to a word breaker
-or null, to disable "entire words" mode.
-
-
-## Find ##
+### Find ###
 
 Find some text in the current context. The implementation is
 responsible for performing the find and highlighting the text.
@@ -28,4 +20,16 @@ responsible for performing the find and highlighting the text.
                     If not collapsed, we'll end at
                     end (forward) or start (backward).
 @retval             A range spanning the match that was found (or null).
+
+
+## Attributes ##
+
+### findBackwards ###
+
+### caseSensitive ###
+
+### wordBreaker ###
+
+Use "find entire words" mode by setting to a word breaker
+or null, to disable "entire words" mode.
 

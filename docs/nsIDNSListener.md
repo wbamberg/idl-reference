@@ -7,7 +7,9 @@ layout: default
 nsIDNSListener
 
 
-## onLookupComplete ##
+## Methods ##
+
+### onLookupComplete ###
 
 called when an asynchronous host lookup completes.
 

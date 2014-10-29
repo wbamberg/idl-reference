@@ -17,14 +17,16 @@ is not possible.
 @see nsIStreamConverter
 
 
-## canConvert ##
+## Methods ##
+
+### canConvert ###
 
 Tests whether conversion between the two specified types is possible.
 This is cheaper than calling convert()/asyncConvertData(); it is not
 necessary to call this function before calling one of those, though.
 
 
-## convert ##
+### convert ###
 
 <b>SYNCHRONOUS VERSION</b>
 Converts a stream of one type, to a stream of another type.
@@ -43,7 +45,7 @@ Use this method when you have a stream you want to convert.
                      until it is used.
 
 
-## asyncConvertData ##
+### asyncConvertData ###
 
 <b>ASYNCHRONOUS VERSION</b>
 Retrieves a nsIStreamListener that receives the original/raw data via its

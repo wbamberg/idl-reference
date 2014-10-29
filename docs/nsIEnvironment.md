@@ -8,7 +8,9 @@ Scriptable access to the current process environment.
 
 
 
-## set ##
+## Methods ##
+
+### set ###
 
 Set the value of an environment variable.
 
@@ -16,7 +18,7 @@ Set the value of an environment variable.
 @param aValue  the value to set.
 
 
-## get ##
+### get ###
 
 Get the value of an environment variable.
 
@@ -28,7 +30,7 @@ Get the value of an environment variable.
                or not.
 
 
-## exists ##
+### exists ###
 
 Check the existence of an environment variable.
 This method checks whether an environment variable is present in

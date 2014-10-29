@@ -12,17 +12,9 @@ for that interval (or longer), and receive an 'active' notification when the
 user starts using their computer again.
 
 
-## idleTime ##
+## Methods ##
 
-The amount of time in milliseconds that has passed
-since the last user activity.
-
-If we do not have a valid idle time to report, 0 is returned
-(this can happen if the user never interacted with the browser
-at all, and if we are also unable to poll for idle time manually).
-
-
-## addIdleObserver ##
+### addIdleObserver ###
 
 Add an observer to be notified when the user idles for some period of
 time, and when they get back from that.
@@ -47,7 +39,7 @@ of the polling interval in that implementation.
 Current implementations use a delay of 5 seconds.
 
 
-## removeIdleObserver ##
+### removeIdleObserver ###
 
 Remove an observer registered with addIdleObserver.
 @param observer the observer that needs to be removed.
@@ -56,4 +48,16 @@ Remove an observer registered with addIdleObserver.
 Removing an observer will remove it once, for the idle time you specify. 
 If you have added an observer multiple times, you will need to remove it
 just as many times.
+
+
+## Attributes ##
+
+### idleTime ###
+
+The amount of time in milliseconds that has passed
+since the last user activity.
+
+If we do not have a valid idle time to report, 0 is returned
+(this can happen if the user never interacted with the browser
+at all, and if we are also unable to poll for idle time manually).
 

@@ -4,7 +4,9 @@ layout: default
 
 # mozILivemarkCallback #
 
-## onCompletion ##
+## Methods ##
+
+### onCompletion ###
 
 Invoked when a livemark is added, removed or retrieved.
 

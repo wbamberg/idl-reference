@@ -7,7 +7,9 @@ layout: default
 A mechanism to report a broken SSL connection. The recipient should NOT block.
 
 
-## notifySSLError ##
+## Methods ##
+
+### notifySSLError ###
 
  @param socketInfo A network communication context that can be used to obtain more information
                    about the active connection.

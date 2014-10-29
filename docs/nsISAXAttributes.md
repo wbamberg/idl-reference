@@ -22,7 +22,9 @@ is set to true (it is false by default).
 The order of attributes in the list is unspecified.
 
 
-## getIndexFromName ##
+## Methods ##
+
+### getIndexFromName ###
 
 Look up the index of an attribute by Namespace name.
 @param uri The Namespace URI, or the empty string
@@ -32,7 +34,7 @@ Look up the index of an attribute by Namespace name.
         if it does not appear in the list.
 
 
-## getIndexFromQName ##
+### getIndexFromQName ###
 
 Look up the index of an attribute by XML qualified name.
 @param qName The qualified name.
@@ -40,22 +42,14 @@ Look up the index of an attribute by XML qualified name.
         if it does not appear in the list.
 
 
-## length ##
-
-Return the number of attributes in the list. Once you know the
-number of attributes, you can iterate through the list.
-
-@return The number of attributes in the list.
-
-
-## getLocalName ##
+### getLocalName ###
 
 Look up an attribute's local name by index.
 @param index The attribute index (zero-based).
 @return The local name, or null if the index is out of range.
 
 
-## getQName ##
+### getQName ###
 
 Look up an attribute's XML qualified name by index.
 @param index The attribute index (zero-based).
@@ -63,7 +57,7 @@ Look up an attribute's XML qualified name by index.
         available, or null if the index is out of range.
 
 
-## getType ##
+### getType ###
 
 Look up an attribute's type by index. The attribute type is one
 of the strings "CDATA", "ID", "IDREF", "IDREFS", "NMTOKEN",
@@ -80,7 +74,7 @@ notation, the parser will report the type as "NMTOKEN".
         out of range.
 
 
-## getTypeFromName ##
+### getTypeFromName ###
 
 Look up an attribute's type by Namespace name.
 @param uri The Namespace URI, or the empty string
@@ -90,7 +84,7 @@ Look up an attribute's type by Namespace name.
         is not in the list.
 
 
-## getTypeFromQName ##
+### getTypeFromQName ###
 
 Look up an attribute's type by XML qualified name.
 @param qName The qualified name.
@@ -98,7 +92,7 @@ Look up an attribute's type by XML qualified name.
         is not in the list.
 
 
-## getURI ##
+### getURI ###
 
 Look up an attribute's Namespace URI by index.
 @param index The attribute index (zero-based).
@@ -106,7 +100,7 @@ Look up an attribute's Namespace URI by index.
         or null if the index is out of range.
 
 
-## getValue ##
+### getValue ###
 
 Look up an attribute's value by index.  If the attribute value is
 a list of tokens (IDREFS, ENTITIES, or NMTOKENS), the tokens will
@@ -118,7 +112,7 @@ a single space.
         out of range.
 
 
-## getValueFromName ##
+### getValueFromName ###
 
 Look up an attribute's value by Namespace name.  If the attribute
 value is a list of tokens (IDREFS, ENTITIES, or NMTOKENS), the
@@ -132,7 +126,7 @@ separated by a single space.
         not in the list.
 
 
-## getValueFromQName ##
+### getValueFromQName ###
 
 Look up an attribute's value by XML qualified (prefixed) name.
 If the attribute value is a list of tokens (IDREFS, ENTITIES, or
@@ -142,4 +136,14 @@ with each token separated by a single space.
 @param qName The qualified (prefixed) name.
 @return The attribute's value as a string, or null if the attribute is
         not in the list.
+
+
+## Attributes ##
+
+### length ###
+
+Return the number of attributes in the list. Once you know the
+number of attributes, you can iterate through the list.
+
+@return The number of attributes in the list.
 

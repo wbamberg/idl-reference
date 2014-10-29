@@ -12,7 +12,18 @@ If you wish to use AsyncShutdown, you will need to implement this
 interface (and only this interface).
 
 
-## name ##
+## Methods ##
+
+### blockShutdown ###
+
+Inform the blocker that the stage of shutdown has started.
+Shutdown will NOT proceed until `aBarrierClient.removeBlocker(this)`
+has been called.
+
+
+## Attributes ##
+
+### name ###
 
 The *unique* name of the blocker.
 
@@ -24,14 +35,7 @@ e.g.
 This attribute is uploaded as part of crash reports.
 
 
-## blockShutdown ##
-
-Inform the blocker that the stage of shutdown has started.
-Shutdown will NOT proceed until `aBarrierClient.removeBlocker(this)`
-has been called.
-
-
-## state ##
+### state ###
 
 The current state of the blocker.
 

@@ -4,4 +4,6 @@ layout: default
 
 # nsICommandHandlerInit #
 
-## window ##
+## Attributes ##
+
+### window ###

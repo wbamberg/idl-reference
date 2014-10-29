@@ -13,7 +13,9 @@ MIMEInfo objects are generally retrieved from the MIME Service
 @see nsIMIMEService
 
 
-## getFileExtensions ##
+## Methods ##
+
+### getFileExtensions ###
 
 Gives you an array of file types associated with this type.
 
@@ -21,12 +23,12 @@ Gives you an array of file types associated with this type.
 @return Array of extensions.
 
 
-## setFileExtensions ##
+### setFileExtensions ###
 
 Set File Extensions. Input is a comma delimited list of extensions.
 
 
-## extensionExists ##
+### extensionExists ###
 
 Returns whether or not the given extension is
 associated with this MIME info.
@@ -34,29 +36,12 @@ associated with this MIME info.
 @return TRUE if the association exists. 
 
 
-## appendExtension ##
+### appendExtension ###
 
 Append a given extension to the set of extensions
 
 
-## primaryExtension ##
-
-Returns the first extension association in
-the internal set of extensions.
-
-@return The first extension.
-
-
-## MIMEType ##
-
-The MIME type of this MIMEInfo.
-
-@return String representing the MIME type.
-
-@deprecated  use nsIHandlerInfo::type instead.
-
-
-## equals ##
+### equals ###
 
 Returns whether or not these two nsIMIMEInfos are logically
 equivalent.
@@ -64,18 +49,7 @@ equivalent.
 @returns PR_TRUE if the two are considered equal
 
 
-## possibleLocalHandlers ##
- 
-Returns a list of nsILocalHandlerApp objects containing
-handlers associated with this mimeinfo. Implemented per 
-platform using information in this object to generate the
-best list. Typically used for an "open with" style user 
-option.
-
-@return nsIArray of nsILocalHandlerApp
-
-
-## launchWithFile ##
+### launchWithFile ###
 
 Launches the application with the specified file, in a way that
 depends on the value of preferredAction. preferredAction must be
@@ -85,4 +59,34 @@ useHelperApp or useSystemDefault.
 
 @throw NS_ERROR_INVALID_ARG if action is not valid for this function.
 Other exceptions may be thrown.
+
+
+## Attributes ##
+
+### primaryExtension ###
+
+Returns the first extension association in
+the internal set of extensions.
+
+@return The first extension.
+
+
+### MIMEType ###
+
+The MIME type of this MIMEInfo.
+
+@return String representing the MIME type.
+
+@deprecated  use nsIHandlerInfo::type instead.
+
+
+### possibleLocalHandlers ###
+ 
+Returns a list of nsILocalHandlerApp objects containing
+handlers associated with this mimeinfo. Implemented per 
+platform using information in this object to generate the
+best list. Typically used for an "open with" style user 
+option.
+
+@return nsIArray of nsILocalHandlerApp
 

@@ -14,7 +14,9 @@ change notifications.  For generic notifications, you should implement
 nsIDocumentObserver.
 
 
-## WillCreateNode ##
+## Methods ##
+
+### WillCreateNode ###
  
 Called before the editor creates a node.
 @param aTag      The tag name of the DOM Node to create.
@@ -24,7 +26,7 @@ Called before the editor creates a node.
                  any number > number of current children = last child
 
 
-## DidCreateNode ##
+### DidCreateNode ###
  
 Called after the editor creates a node.
 @param aTag      The tag name of the DOM Node to create.
@@ -36,7 +38,7 @@ Called after the editor creates a node.
 @param aResult   The result of the create node operation.
 
 
-## WillInsertNode ##
+### WillInsertNode ###
  
 Called before the editor inserts a node.
 @param aNode     The DOM Node to insert.
@@ -46,7 +48,7 @@ Called before the editor inserts a node.
                  any number > number of current children = last child
 
 
-## DidInsertNode ##
+### DidInsertNode ###
  
 Called after the editor inserts a node.
 @param aNode     The DOM Node to insert.
@@ -57,20 +59,20 @@ Called after the editor inserts a node.
 @param aResult   The result of the insert node operation.
 
 
-## WillDeleteNode ##
+### WillDeleteNode ###
  
 Called before the editor deletes a node.
 @param aChild    The node to delete
 
 
-## DidDeleteNode ##
+### DidDeleteNode ###
  
 Called after the editor deletes a node.
 @param aChild    The node to delete
 @param aResult   The result of the delete node operation.
 
 
-## WillSplitNode ##
+### WillSplitNode ###
  
 Called before the editor splits a node.
 @param aExistingRightNode   the node to split.  It will become the new node's next sibling.
@@ -78,7 +80,7 @@ Called before the editor splits a node.
 @param aNewLeftNode         [OUT] the new node resulting from the split, becomes aExistingRightNode's previous sibling.
 
 
-## DidSplitNode ##
+### DidSplitNode ###
  
 Called after the editor splits a node.
 @param aExistingRightNode   the node to split.  It will become the new node's next sibling.
@@ -86,7 +88,7 @@ Called after the editor splits a node.
 @param aNewLeftNode         [OUT] the new node resulting from the split, becomes aExistingRightNode's previous sibling.
 
 
-## WillJoinNodes ##
+### WillJoinNodes ###
  
 Called before the editor joins 2 nodes.
 @param aLeftNode   This node will be merged into the right node
@@ -96,7 +98,7 @@ Called before the editor joins 2 nodes.
 @param aParent     The parent of aRightNode
 
 
-## DidJoinNodes ##
+### DidJoinNodes ###
  
 Called after the editor joins 2 nodes.
 @param aLeftNode   This node will be merged into the right node
@@ -107,7 +109,7 @@ Called after the editor joins 2 nodes.
 @param aResult     The result of the join operation.
 
 
-## WillInsertText ##
+### WillInsertText ###
  
 Called before the editor inserts text.
 @param aTextNode   This node getting inserted text
@@ -115,7 +117,7 @@ Called before the editor inserts text.
 @param aString     The string that gets inserted.
 
 
-## DidInsertText ##
+### DidInsertText ###
  
 Called after the editor inserts text.
 @param aTextNode   This node getting inserted text
@@ -124,7 +126,7 @@ Called after the editor inserts text.
 @param aResult     The result of the insert text operation.
 
 
-## WillDeleteText ##
+### WillDeleteText ###
  
 Called before the editor deletes text.
 @param aTextNode   This node getting text deleted
@@ -132,7 +134,7 @@ Called before the editor deletes text.
 @param aLength     The amount of text to delete.
 
 
-## DidDeleteText ##
+### DidDeleteText ###
  
 Called before the editor deletes text.
 @param aTextNode   This node getting text deleted
@@ -141,13 +143,13 @@ Called before the editor deletes text.
 @param aResult     The result of the delete text operation.
 
 
-## WillDeleteSelection ##
+### WillDeleteSelection ###
  
 Called before the editor deletes the selection.
 @param aSelection   The selection to be deleted
 
 
-## DidDeleteSelection ##
+### DidDeleteSelection ###
  
 Called after the editor deletes the selection.
 @param aSelection   The selection, after deletion

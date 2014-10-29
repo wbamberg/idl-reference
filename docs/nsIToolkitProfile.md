@@ -9,23 +9,9 @@ A interface representing a profile.
       EVEN THINK ABOUT IMPLEMENTING THIS IN JAVASCRIPT!
 
 
-## rootDir ##
+## Methods ##
 
-The location of the profile directory.
-
-
-## localDir ##
-
-The location of the profile local directory, which may be the same as
-the root directory.  See nsIProfileLock::localDirectory.
-
-
-## name ##
-
-The name of the profile.
-
-
-## remove ##
+### remove ###
 
 Removes the profile from the registry of profiles.
 
@@ -34,7 +20,7 @@ Removes the profile from the registry of profiles.
        removed in addition.
 
 
-## lock ##
+### lock ###
 
 Lock this profile using platform-specific locking methods.
 
@@ -45,4 +31,22 @@ Lock this profile using platform-specific locking methods.
 @return An interface which holds a profile lock as long as you reference
         it.
 @throws NS_ERROR_FILE_ACCESS_DENIED if the profile was already locked.
+
+
+## Attributes ##
+
+### rootDir ###
+
+The location of the profile directory.
+
+
+### localDir ###
+
+The location of the profile local directory, which may be the same as
+the root directory.  See nsIProfileLock::localDirectory.
+
+
+### name ###
+
+The name of the profile.
 

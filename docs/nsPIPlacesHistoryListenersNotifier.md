@@ -11,7 +11,9 @@ code that is not part of core.
 @note See also: nsINavHistoryObserver
 
 
-## notifyOnPageExpired ##
+## Methods ##
+
+### notifyOnPageExpired ###
 
 Calls onDeleteVisits and onDeleteURI notifications on registered listeners
 with the history service.

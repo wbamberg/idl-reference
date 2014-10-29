@@ -8,7 +8,9 @@ Starting in Windows 7, applications can display an overlay on the icon in
 the taskbar. This class wraps around the native functionality to do this.
 
 
-## setOverlayIcon ##
+## Methods ##
+
+### setOverlayIcon ###
 
 Sets the overlay icon and its corresponding alt text.
 

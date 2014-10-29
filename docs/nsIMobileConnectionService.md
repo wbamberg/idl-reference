@@ -4,6 +4,10 @@ layout: default
 
 # nsIMobileConnectionService #
 
-## numItems ##
+## Methods ##
 
-## getItemByServiceId ##
+### getItemByServiceId ###
+
+## Attributes ##
+
+### numItems ###

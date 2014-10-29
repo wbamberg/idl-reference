@@ -19,6 +19,15 @@ def writeDoccomments(doccomments, output):
                 line = line[2:]
             output.write(line + "\n")
 
+
+def writeMembers(name, members, output):
+    if len(members) > 0:
+        md.writeH2(name, output)
+        for member in members:
+            md.writeH3(member.name, output)
+            if hasattr(member, "doccomments"):
+                writeDoccomments(member.doccomments, output)
+
 def writeInterface(interface):
     name = interface.name
     md.writeMDLink(name, "docs/" + name, index)
@@ -27,12 +36,14 @@ def writeInterface(interface):
     md.writeH1(name, output)
     if hasattr(interface, "doccomments"):
         writeDoccomments(interface.doccomments, output)
-    for member in interface.members:
-        if member.kind == "cdata":
-            continue
-        md.writeH2(member.name, output)
-        if hasattr(member, "doccomments"):
-            writeDoccomments(member.doccomments, output)
+
+    constants = [member for member in interface.members if member.kind == "const"]
+    methods = [member for member in interface.members if member.kind == "method"]
+    attributes = [member for member in interface.members if member.kind == "attribute"]
+
+    writeMembers("Methods", methods, output)
+    writeMembers("Attributes", attributes, output)
+    writeMembers("Constants", constants, output)
 
 def writeIdlFile(index, filename):
     try:

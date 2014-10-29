@@ -4,8 +4,10 @@ layout: default
 
 # nsISupports #
 
-## QueryInterface ##
+## Methods ##
 
-## AddRef ##
+### QueryInterface ###
 
-## Release ##
+### AddRef ###
+
+### Release ###

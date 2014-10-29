@@ -4,39 +4,41 @@ layout: default
 
 # nsIIccInfo #
 
-## iccType ##
+## Attributes ##
+
+### iccType ###
 
 Integrated Circuit Card Type.
 
 Possible values: null(unknown), "sim", "usim", "csim", ruim".
 
 
-## iccid ##
+### iccid ###
 
 Integrated Circuit Card Identifier.
 
 
-## mcc ##
+### mcc ###
 
 Mobile Country Code (MCC) of the subscriber's home network.
 
 
-## mnc ##
+### mnc ###
 
 Mobile Network Code (MNC) of the subscriber's home network.
 
 
-## spn ##
+### spn ###
 
 Service Provider Name (SPN) of the subscriber's home network.
 
 
-## isDisplayNetworkNameRequired ##
+### isDisplayNetworkNameRequired ###
 
 Network name must be a part of displayed carrier name.
 
 
-## isDisplaySpnRequired ##
+### isDisplaySpnRequired ###
 
 Service provider name must be a part of displayed carrier name.
 

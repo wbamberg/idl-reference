@@ -14,18 +14,22 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## length ##
+## Methods ##
 
-## item ##
+### item ###
 
-## namedItem ##
+### namedItem ###
 
-## selectedIndex ##
+### setOption ###
 
-## setOption ##
+### add ###
 
-## select ##
+### remove ###
 
-## add ##
+## Attributes ##
 
-## remove ##
+### length ###
+
+### selectedIndex ###
+
+### select ###

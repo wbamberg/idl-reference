@@ -4,34 +4,9 @@ layout: default
 
 # nsIPermissionManager #
 
-## UNKNOWN_ACTION ##
+## Methods ##
 
-Predefined return values for the testPermission method and for
-the permission param of the add method
-NOTE: UNKNOWN_ACTION (0) is reserved to represent the
-default permission when no entry is found for a host, and
-should not be used by consumers to indicate otherwise.
-
-
-## ALLOW_ACTION ##
-
-## DENY_ACTION ##
-
-## PROMPT_ACTION ##
-
-## EXPIRE_NEVER ##
-
-Predefined expiration types for permissions.  Permissions can be permanent
-(never expire), expire at the end of the session, or expire at a specified
-time. Permissions that expire at the end of a session may also have a
-specified expiration time.
-
-
-## EXPIRE_SESSION ##
-
-## EXPIRE_TIME ##
-
-## add ##
+### add ###
 
 Add permission information for a given URI and permission type. This
 operation will cause the type string to be registered if it does not
@@ -58,7 +33,7 @@ will be modified.
                    should be forgotten (milliseconds since Jan 1 1970 0:00:00). 
 
 
-## addFromPrincipal ##
+### addFromPrincipal ###
 
 Add permission information for a given principal.
 It is internally calling the other add() method using the nsIURI from the
@@ -67,7 +42,7 @@ Passing a system principal will be a no-op because they will always be
 granted permissions.
 
 
-## remove ##
+### remove ###
 
 Remove permission information for a given host string and permission type.
 The host string represents the exact entry in the permission list (such as
@@ -80,7 +55,7 @@ to.
               add() method.
 
 
-## removeFromPrincipal ##
+### removeFromPrincipal ###
 
 Remove permission information for a given principal.
 This is internally calling remove() with the host from the principal's URI.
@@ -88,17 +63,17 @@ Passing system principal will be a no-op because we never add them to the
 database.
 
 
-## removeAll ##
+### removeAll ###
 
 Clear permission information for all websites.
 
 
-## removeAllSince ##
+### removeAllSince ###
 
 Clear all permission information added since the specified time.
 
 
-## testPermission ##
+### testPermission ###
 
 Test whether a website has permission to perform the given action.
 @param uri     the uri to be tested
@@ -107,20 +82,20 @@ Test whether a website has permission to perform the given action.
                there is no stored permission for this uri and / or type.
 
 
-## testPermissionFromPrincipal ##
+### testPermissionFromPrincipal ###
 
 Test whether the principal has the permission to perform a given action.
 System principals will always have permissions granted.
 
 
-## testPermissionFromWindow ##
+### testPermissionFromWindow ###
 
 Test whether the principal associated with the window's document has the
 permission to perform a given action.  System principals will always
 have permissions granted.
 
 
-## testExactPermission ##
+### testExactPermission ###
 
 Test whether a website has permission to perform the given action.
 This requires an exact hostname match, subdomains are not a match.
@@ -130,13 +105,13 @@ This requires an exact hostname match, subdomains are not a match.
                there is no stored permission for this uri and / or type.
 
 
-## testExactPermissionFromPrincipal ##
+### testExactPermissionFromPrincipal ###
 
 See testExactPermission() above.
 System principals will always have permissions granted.
 
 
-## testExactPermanentPermission ##
+### testExactPermanentPermission ###
 
 Test whether a website has permission to perform the given action
 ignoring active sessions.
@@ -148,7 +123,7 @@ System principals will always have permissions granted.
                  there is no stored permission for this uri and / or type.
 
 
-## getPermissionObject ##
+### getPermissionObject ###
 
 Get the permission object associated with the given principal and action.
 @param principal The principal
@@ -163,7 +138,7 @@ Get the permission object associated with the given principal and action.
 @note This method will always return null for the system principal.
 
 
-## addrefAppId ##
+### addrefAppId ###
 
 Increment or decrement our "refcount" of an app id.
 
@@ -172,16 +147,9 @@ refcount goes to 0, we clear the permissions given to the app which are
 set to expire at the end of its session.
 
 
-## releaseAppId ##
+### releaseAppId ###
 
-## enumerator ##
-
-Allows enumeration of all stored permissions
-@return an nsISimpleEnumerator interface that allows access to
-        nsIPermission objects
-
-
-## removePermissionsForApp ##
+### removePermissionsForApp ###
 
 Remove all permissions associated with a given app id.
 @param aAppId       The appId of the app
@@ -189,7 +157,7 @@ Remove all permissions associated with a given app id.
                     a browser element (true) or all permissions (false).
 
 
-## updateExpireTime ##
+### updateExpireTime ###
 
 If the current permission is set to expire, reset the expiration time. If
 there is no permission or the current permission does not expire, this
@@ -204,3 +172,41 @@ method will silently return.
                           Jan 1 1970 0:00:00), if it is currently
                           EXPIRE_TIME.
 
+
+## Attributes ##
+
+### enumerator ###
+
+Allows enumeration of all stored permissions
+@return an nsISimpleEnumerator interface that allows access to
+        nsIPermission objects
+
+
+## Constants ##
+
+### UNKNOWN_ACTION ###
+
+Predefined return values for the testPermission method and for
+the permission param of the add method
+NOTE: UNKNOWN_ACTION (0) is reserved to represent the
+default permission when no entry is found for a host, and
+should not be used by consumers to indicate otherwise.
+
+
+### ALLOW_ACTION ###
+
+### DENY_ACTION ###
+
+### PROMPT_ACTION ###
+
+### EXPIRE_NEVER ###
+
+Predefined expiration types for permissions.  Permissions can be permanent
+(never expire), expire at the end of the session, or expire at a specified
+time. Permissions that expire at the end of a session may also have a
+specified expiration time.
+
+
+### EXPIRE_SESSION ###
+
+### EXPIRE_TIME ###

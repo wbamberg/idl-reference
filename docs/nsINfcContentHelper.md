@@ -4,25 +4,23 @@ layout: default
 
 # nsINfcContentHelper #
 
-## NFC_EVENT_PEER_READY ##
+## Methods ##
 
-## NFC_EVENT_PEER_LOST ##
+### init ###
 
-## init ##
+### checkSessionToken ###
 
-## checkSessionToken ##
+### readNDEF ###
 
-## readNDEF ##
+### writeNDEF ###
 
-## writeNDEF ##
+### makeReadOnlyNDEF ###
 
-## makeReadOnlyNDEF ##
+### connect ###
 
-## connect ##
+### close ###
 
-## close ##
-
-## sendFile ##
+### sendFile ###
 
 Initiate Send file operation
 
@@ -41,14 +39,14 @@ Returns DOMRequest, if initiation of send file operation is successful
 then 'onsuccess' is called else 'onerror'
 
 
-## registerEventTarget ##
+### registerEventTarget ###
 
 Register the event target.
 
 @param target  An instance of the nsINfcDOMEventTarget.
 
 
-## registerTargetForPeerReady ##
+### registerTargetForPeerReady ###
 
 Register the given application id with Chrome process
 
@@ -59,7 +57,7 @@ Register the given application id with Chrome process
        Application ID to be registered
 
 
-## unregisterTargetForPeerReady ##
+### unregisterTargetForPeerReady ###
 
 Unregister the given application id with Chrome process
 
@@ -70,7 +68,7 @@ Unregister the given application id with Chrome process
        Application ID to be registered
 
 
-## checkP2PRegistration ##
+### checkP2PRegistration ###
 
 Checks if the given application's id is a registered peer target (with the Chrome process)
 
@@ -83,7 +81,7 @@ Checks if the given application's id is a registered peer target (with the Chrom
 Returns DOMRequest, if appId is registered then 'onsuccess' is called else 'onerror'
 
 
-## notifyUserAcceptedP2P ##
+### notifyUserAcceptedP2P ###
 
 Notify the Chrome process that user has accepted to share nfc message on P2P UI
 
@@ -94,7 +92,7 @@ Notify the Chrome process that user has accepted to share nfc message on P2P UI
        Application ID that is capable of handling NFC_EVENT_PEER_READY event
 
 
-## notifySendFileStatus ##
+### notifySendFileStatus ###
 
 Notify the status of sendFile operation to Chrome process
 
@@ -108,17 +106,23 @@ Notify the status of sendFile operation to Chrome process
        Request ID of SendFile DOM Request
 
 
-## startPoll ##
+### startPoll ###
 
 Power on the NFC hardware and start polling for NFC tags or devices.
 
 
-## stopPoll ##
+### stopPoll ###
 
 Stop polling for NFC tags or devices. i.e. enter low power mode.
 
 
-## powerOff ##
+### powerOff ###
 
 Power off the NFC hardware.
 
+
+## Constants ##
+
+### NFC_EVENT_PEER_READY ###
+
+### NFC_EVENT_PEER_LOST ###

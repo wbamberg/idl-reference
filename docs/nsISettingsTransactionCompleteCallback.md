@@ -4,6 +4,8 @@ layout: default
 
 # nsISettingsTransactionCompleteCallback #
 
-## handle ##
+## Methods ##
 
-## handleAbort ##
+### handle ###
+
+### handleAbort ###

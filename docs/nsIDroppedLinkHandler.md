@@ -4,7 +4,9 @@ layout: default
 
 # nsIDroppedLinkHandler #
 
-## canDropLink ##
+## Methods ##
+
+### canDropLink ###
 
 Determines if a link being dragged can be dropped and returns true if so.
 aEvent should be a dragenter or dragover event.
@@ -15,7 +17,7 @@ includes any parent, sibling and child frames in the same content tree.
 If true, the source is not checked.
 
 
-## dropLink ##
+### dropLink ###
 
 Given a drop event aEvent, determines the link being dragged and returns
 it. If a uri is returned the caller can, for instance, load it. If null

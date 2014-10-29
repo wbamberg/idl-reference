@@ -14,20 +14,22 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## disabled ##
+## Attributes ##
 
-## charset ##
+### disabled ###
 
-## href ##
+### charset ###
 
-## hreflang ##
+### href ###
 
-## media ##
+### hreflang ###
 
-## rel ##
+### media ###
 
-## rev ##
+### rel ###
 
-## target ##
+### rev ###
 
-## type ##
+### target ###
+
+### type ###

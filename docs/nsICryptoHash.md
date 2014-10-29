@@ -8,25 +8,9 @@ nsICryptoHash
 This interface provides crytographic hashing algorithms.
 
 
-## MD2 ##
+## Methods ##
 
-Hashing Algorithms.  These values are to be used by the
-|init| method to indicate which hashing function to
-use.  These values map directly onto the values defined
-in mozilla/security/nss/lib/cryptohi/hasht.h.
-
-
-## MD5 ##
-
-## SHA1 ##
-
-## SHA256 ##
-
-## SHA384 ##
-
-## SHA512 ##
-
-## init ##
+### init ###
 
 Initialize the hashing object. This method may be
 called multiple times with different algorithm types.
@@ -42,7 +26,7 @@ NOTE: This method or initWithString must be called
       before any other method on this interface is called.
 
 
-## initWithString ##
+### initWithString ###
 
 Initialize the hashing object. This method may be
 called multiple times with different algorithm types.
@@ -56,7 +40,7 @@ NOTE: This method or init must be called before any
       other method on this interface is called.
 
 
-## update ##
+### update ###
 
 @param aData a buffer to calculate the hash over
 
@@ -66,7 +50,7 @@ NOTE: This method or init must be called before any
         called.
 
 
-## updateFromStream ##
+### updateFromStream ###
 
 Calculates and updates a new hash based on a given data stream.
 
@@ -84,7 +68,7 @@ Calculates and updates a new hash based on a given data stream.
 
 
 
-## finish ##
+### finish ###
 
 Completes this hash object and produces the actual hash data.
 
@@ -102,3 +86,23 @@ NOTE: This method may be called any time after |init|
       is called.  This call resets the object to its
       pre-init state.
 
+
+## Constants ##
+
+### MD2 ###
+
+Hashing Algorithms.  These values are to be used by the
+|init| method to indicate which hashing function to
+use.  These values map directly onto the values defined
+in mozilla/security/nss/lib/cryptohi/hasht.h.
+
+
+### MD5 ###
+
+### SHA1 ###
+
+### SHA256 ###
+
+### SHA384 ###
+
+### SHA512 ###

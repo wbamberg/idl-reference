@@ -7,6 +7,10 @@ layout: default
 Scriptable storage for ASCII strings
 
 
-## data ##
+## Methods ##
 
-## toString ##
+### toString ###
+
+## Attributes ##
+
+### data ###

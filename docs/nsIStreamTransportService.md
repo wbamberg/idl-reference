@@ -11,7 +11,9 @@ into a fully asynchronous stream that can be read/written without
 blocking the main thread.
 
 
-## createInputTransport ##
+## Methods ##
+
+### createInputTransport ###
 
 CreateInputTransport
 
@@ -32,7 +34,7 @@ CreateInputTransport
 @return nsITransport instance.
 
 
-## createOutputTransport ##
+### createOutputTransport ###
 
 CreateOutputTransport
 

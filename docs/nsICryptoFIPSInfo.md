@@ -4,4 +4,6 @@ layout: default
 
 # nsICryptoFIPSInfo #
 
-## isFIPSModeActive ##
+## Attributes ##
+
+### isFIPSModeActive ###

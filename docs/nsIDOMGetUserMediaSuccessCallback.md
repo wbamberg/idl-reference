@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMGetUserMediaSuccessCallback #
 
-## onSuccess ##
+## Methods ##
+
+### onSuccess ###

@@ -13,7 +13,9 @@ layout: default
 
 
 
-## assertion ##
+## Methods ##
+
+### assertion ###
 
 Show an assertion and trigger nsIDebug.break().
 
@@ -24,7 +26,7 @@ Show an assertion and trigger nsIDebug.break().
 
 
 
-## warning ##
+### warning ###
 
 Show a warning.
 
@@ -33,7 +35,7 @@ Show a warning.
 @param aLine line number of assertion
 
 
-## break ##
+### break ###
 
 Request to break into a debugger.
 
@@ -41,7 +43,7 @@ Request to break into a debugger.
 @param aLine line number of break request
 
 
-## abort ##
+### abort ###
 
 Request the process to trigger a fatal abort.
 

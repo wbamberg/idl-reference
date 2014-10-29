@@ -4,24 +4,28 @@ layout: default
 
 # nsIDOMTreeWalker #
 
-## root ##
+## Methods ##
 
-## whatToShow ##
+### parentNode ###
 
-## filter ##
+### firstChild ###
 
-## currentNode ##
+### lastChild ###
 
-## parentNode ##
+### previousSibling ###
 
-## firstChild ##
+### nextSibling ###
 
-## lastChild ##
+### previousNode ###
 
-## previousSibling ##
+### nextNode ###
 
-## nextSibling ##
+## Attributes ##
 
-## previousNode ##
+### root ###
 
-## nextNode ##
+### whatToShow ###
+
+### filter ###
+
+### currentNode ###

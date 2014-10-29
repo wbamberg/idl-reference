@@ -4,12 +4,14 @@ layout: default
 
 # nsIProperty #
 
-## name ##
+## Attributes ##
+
+### name ###
 
 Get the name of the property.
 
 
-## value ##
+### value ###
 
 Get the value of the property.
 

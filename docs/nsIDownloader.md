@@ -13,7 +13,9 @@ The resulting file is valid from the time the downloader completes until
 the last reference to the downloader is released.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize this downloader
 

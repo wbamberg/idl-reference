@@ -4,7 +4,9 @@ layout: default
 
 # nsISecurityEventSink #
 
-## onSecurityChange ##
+## Methods ##
+
+### onSecurityChange ###
 
 Fired when a security change occurs due to page transitions,
 or end document load. This interface should be called by

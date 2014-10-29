@@ -4,66 +4,70 @@ layout: default
 
 # nsITimedChannel #
 
-## timingEnabled ##
+## Methods ##
 
-## redirectCount ##
+### timingAllowCheck ###
 
-## channelCreation ##
+## Attributes ##
 
-## asyncOpen ##
+### timingEnabled ###
 
-## domainLookupStart ##
+### redirectCount ###
 
-## domainLookupEnd ##
+### channelCreation ###
 
-## connectStart ##
+### asyncOpen ###
 
-## connectEnd ##
+### domainLookupStart ###
 
-## requestStart ##
+### domainLookupEnd ###
 
-## responseStart ##
+### connectStart ###
 
-## responseEnd ##
+### connectEnd ###
 
-## redirectStart ##
+### requestStart ###
 
-## redirectEnd ##
+### responseStart ###
 
-## initiatorType ##
+### responseEnd ###
 
-## allRedirectsSameOrigin ##
+### redirectStart ###
 
-## allRedirectsPassTimingAllowCheck ##
+### redirectEnd ###
 
-## timingAllowCheck ##
+### initiatorType ###
 
-## cacheReadStart ##
+### allRedirectsSameOrigin ###
 
-## cacheReadEnd ##
+### allRedirectsPassTimingAllowCheck ###
 
-## channelCreationTime ##
+### cacheReadStart ###
 
-## asyncOpenTime ##
+### cacheReadEnd ###
 
-## domainLookupStartTime ##
+### channelCreationTime ###
 
-## domainLookupEndTime ##
+### asyncOpenTime ###
 
-## connectStartTime ##
+### domainLookupStartTime ###
 
-## connectEndTime ##
+### domainLookupEndTime ###
 
-## requestStartTime ##
+### connectStartTime ###
 
-## responseStartTime ##
+### connectEndTime ###
 
-## responseEndTime ##
+### requestStartTime ###
 
-## cacheReadStartTime ##
+### responseStartTime ###
 
-## cacheReadEndTime ##
+### responseEndTime ###
 
-## redirectStartTime ##
+### cacheReadStartTime ###
 
-## redirectEndTime ##
+### cacheReadEndTime ###
+
+### redirectStartTime ###
+
+### redirectEndTime ###

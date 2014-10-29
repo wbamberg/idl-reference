@@ -4,4 +4,6 @@ layout: default
 
 # nsIVolumeMountLock #
 
-## unlock ##
+## Methods ##
+
+### unlock ###

@@ -7,7 +7,9 @@ layout: default
 An output stream that lets you stream to a file.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 @param file          file to write to
 @param ioFlags       file open flags listed in prio.h (see
@@ -20,7 +22,9 @@ An output stream that lets you stream to a file.
        (currently none supported)
 
 
-## DEFER_OPEN ##
+## Constants ##
+
+### DEFER_OPEN ###
 
 See the same constant in nsIFileInputStream. The deferred open will
 be performed when one of the following is called:

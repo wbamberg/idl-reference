@@ -4,58 +4,60 @@ layout: default
 
 # nsIDataType #
 
-## VTYPE_INT8 ##
+## Constants ##
 
-## VTYPE_INT16 ##
+### VTYPE_INT8 ###
 
-## VTYPE_INT32 ##
+### VTYPE_INT16 ###
 
-## VTYPE_INT64 ##
+### VTYPE_INT32 ###
 
-## VTYPE_UINT8 ##
+### VTYPE_INT64 ###
 
-## VTYPE_UINT16 ##
+### VTYPE_UINT8 ###
 
-## VTYPE_UINT32 ##
+### VTYPE_UINT16 ###
 
-## VTYPE_UINT64 ##
+### VTYPE_UINT32 ###
 
-## VTYPE_FLOAT ##
+### VTYPE_UINT64 ###
 
-## VTYPE_DOUBLE ##
+### VTYPE_FLOAT ###
 
-## VTYPE_BOOL ##
+### VTYPE_DOUBLE ###
 
-## VTYPE_CHAR ##
+### VTYPE_BOOL ###
 
-## VTYPE_WCHAR ##
+### VTYPE_CHAR ###
 
-## VTYPE_VOID ##
+### VTYPE_WCHAR ###
 
-## VTYPE_ID ##
+### VTYPE_VOID ###
 
-## VTYPE_DOMSTRING ##
+### VTYPE_ID ###
 
-## VTYPE_CHAR_STR ##
+### VTYPE_DOMSTRING ###
 
-## VTYPE_WCHAR_STR ##
+### VTYPE_CHAR_STR ###
 
-## VTYPE_INTERFACE ##
+### VTYPE_WCHAR_STR ###
 
-## VTYPE_INTERFACE_IS ##
+### VTYPE_INTERFACE ###
 
-## VTYPE_ARRAY ##
+### VTYPE_INTERFACE_IS ###
 
-## VTYPE_STRING_SIZE_IS ##
+### VTYPE_ARRAY ###
 
-## VTYPE_WSTRING_SIZE_IS ##
+### VTYPE_STRING_SIZE_IS ###
 
-## VTYPE_UTF8STRING ##
+### VTYPE_WSTRING_SIZE_IS ###
 
-## VTYPE_CSTRING ##
+### VTYPE_UTF8STRING ###
 
-## VTYPE_ASTRING ##
+### VTYPE_CSTRING ###
 
-## VTYPE_EMPTY_ARRAY ##
+### VTYPE_ASTRING ###
 
-## VTYPE_EMPTY ##
+### VTYPE_EMPTY_ARRAY ###
+
+### VTYPE_EMPTY ###

@@ -4,16 +4,18 @@ layout: default
 
 # nsIXPCTestObjectReadWrite #
 
-## stringProperty ##
+## Attributes ##
 
-## booleanProperty ##
+### stringProperty ###
 
-## shortProperty ##
+### booleanProperty ###
 
-## longProperty ##
+### shortProperty ###
 
-## floatProperty ##
+### longProperty ###
 
-## charProperty ##
+### floatProperty ###
 
-## timeProperty ##
+### charProperty ###
+
+### timeProperty ###

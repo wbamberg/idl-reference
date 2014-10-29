@@ -4,4 +4,6 @@ layout: default
 
 # nsIAppNotificationService #
 
-## showAppNotification ##
+## Methods ##
+
+### showAppNotification ###

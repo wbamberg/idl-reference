@@ -4,14 +4,16 @@ layout: default
 
 # nsIDOMClientRect #
 
-## left ##
+## Attributes ##
 
-## top ##
+### left ###
 
-## right ##
+### top ###
 
-## bottom ##
+### right ###
 
-## width ##
+### bottom ###
 
-## height ##
+### width ###
+
+### height ###

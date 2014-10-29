@@ -15,7 +15,9 @@ errors.
 @threadsafe
 
 
-## close ##
+## Methods ##
+
+### close ###
 
 Closes a database connection.  Callers must finalize all statements created
 for this connection prior to calling this method.  It is illegal to use
@@ -28,7 +30,7 @@ connection.
         If is called on a thread other than the one that opened it.
 
 
-## clone ##
+### clone ###
 
 Clones a database connection and makes the clone read only if needed.
 
@@ -57,48 +59,7 @@ Clones a database connection and makes the clone read only if needed.
 
 
 
-## defaultPageSize ##
-
-The default size for SQLite database pages used by mozStorage for new
-databases.
-
-
-## connectionReady ##
-
-Indicates if the connection is open and ready to use.  This will be false
-if the connection failed to open, or it has been closed.
-
-
-## lastInsertRowID ##
-
-lastInsertRowID returns the row ID from the last INSERT
-operation.
-
-
-## affectedRows ##
-
-affectedRows returns the number of database rows that were changed or
-inserted or deleted by last operation.
-
-
-## lastError ##
-
-The last error SQLite error code.
-
-
-## lastErrorString ##
-
-The last SQLite error as a string (in english, straight from the
-sqlite library).
-
-
-## schemaVersion ##
-
-The schema version of the database.  This should not be used until the 
-database is ready.  The schema will be reported as zero if it is not set.
-
-
-## createStatement ##
+### createStatement ###
 
 Create a mozIStorageStatement for the given SQL expression.  The
 expression may use ? to indicate sequential numbered arguments,
@@ -110,14 +71,14 @@ $var to indicate named arguments.
 @return a new mozIStorageStatement
 
 
-## executeSimpleSQL ##
+### executeSimpleSQL ###
 
 Execute a SQL expression, expecting no arguments.
 
 @param aSQLStatement  The SQL statement to execute
 
 
-## tableExists ##
+### tableExists ###
 
 Check if the given table exists.
 
@@ -126,7 +87,7 @@ Check if the given table exists.
 @return TRUE if table exists, FALSE otherwise.
 
 
-## indexExists ##
+### indexExists ###
 
 Check if the given index exists.
 
@@ -134,43 +95,29 @@ Check if the given index exists.
 @return TRUE if the index exists, FALSE otherwise.
 
 
-## transactionInProgress ##
-
-Returns true if a transaction is active on this connection.
-
-
-## beginTransaction ##
+### beginTransaction ###
 
 Begin a new transaction.  sqlite default transactions are deferred.
 If a transaction is active, throws an error.
 
 
-## TRANSACTION_DEFERRED ##
+### beginTransactionAs ###
 
-Begins a new transaction with the given type.
-
-
-## TRANSACTION_IMMEDIATE ##
-
-## TRANSACTION_EXCLUSIVE ##
-
-## beginTransactionAs ##
-
-## commitTransaction ##
+### commitTransaction ###
 
 Commits the current transaction.  If no transaction is active,
 @throws NS_ERROR_UNEXPECTED.
 @throws NS_ERROR_NOT_INITIALIZED.
 
 
-## rollbackTransaction ##
+### rollbackTransaction ###
 
 Rolls back the current transaction.  If no transaction is active,
 @throws NS_ERROR_UNEXPECTED.
 @throws NS_ERROR_NOT_INITIALIZED.
 
 
-## createTable ##
+### createTable ###
 
 Create the table with the given name and schema.
 
@@ -190,7 +137,7 @@ the same as what is specified, but that doesn't happen currently.)
         reason.
 
 
-## setGrowthIncrement ##
+### setGrowthIncrement ###
 
 Controls SQLITE_FCNTL_CHUNK_SIZE setting in sqlite. This helps avoid fragmentation
 by growing/shrinking the database file in SQLITE_FCNTL_CHUNK_SIZE increments. To
@@ -206,7 +153,7 @@ on mobile devices or if less than 500MiB of space is left available.
         If the system is short on storage space.
 
 
-## enableModule ##
+### enableModule ###
 
 Enable a predefined virtual table implementation.
 
@@ -216,3 +163,62 @@ Enable a predefined virtual table implementation.
 @throws NS_ERROR_FAILURE
         For unknown module names.
 
+
+## Attributes ##
+
+### defaultPageSize ###
+
+The default size for SQLite database pages used by mozStorage for new
+databases.
+
+
+### connectionReady ###
+
+Indicates if the connection is open and ready to use.  This will be false
+if the connection failed to open, or it has been closed.
+
+
+### lastInsertRowID ###
+
+lastInsertRowID returns the row ID from the last INSERT
+operation.
+
+
+### affectedRows ###
+
+affectedRows returns the number of database rows that were changed or
+inserted or deleted by last operation.
+
+
+### lastError ###
+
+The last error SQLite error code.
+
+
+### lastErrorString ###
+
+The last SQLite error as a string (in english, straight from the
+sqlite library).
+
+
+### schemaVersion ###
+
+The schema version of the database.  This should not be used until the 
+database is ready.  The schema will be reported as zero if it is not set.
+
+
+### transactionInProgress ###
+
+Returns true if a transaction is active on this connection.
+
+
+## Constants ##
+
+### TRANSACTION_DEFERRED ###
+
+Begins a new transaction with the given type.
+
+
+### TRANSACTION_IMMEDIATE ###
+
+### TRANSACTION_EXCLUSIVE ###

@@ -13,26 +13,9 @@ the interface the controller is attached to, only certain methods/attributes
 are required to be implemented.
 
 
-## width ##
+## Methods ##
 
-The width of the preview image. This value is allowed to change at any
-time. See drawPreview for more information.
-
-
-## height ##
-
-The height of the preview image. This value is allowed to change at any
-time.  See drawPreview for more information.
-
-
-## thumbnailAspectRatio ##
-
-The aspect ratio of the thumbnail - this does not need to match the ratio
-of the preview. This value is allowed to change at any time. See
-drawThumbnail for more information.
-
-
-## drawPreview ##
+### drawPreview ###
 
 Invoked by nsITaskbarPreview when it needs to render the preview. The
 context is attached to a surface with the controller's width and height
@@ -43,7 +26,7 @@ Note that the context is not attached to a canvas element.
 @param ctx Canvas drawing context
 
 
-## drawThumbnail ##
+### drawThumbnail ###
 
 Invoked by the taskbar preview when it needs to draw the thumbnail in the
 taskbar's application preview window.
@@ -58,12 +41,12 @@ Also note that the context is not attached to a canvas element.
 @param height The height of the surface backing the drawing context
 
 
-## onClose ##
+### onClose ###
 
 Invoked when the user presses the close button on the tab preview.
 
 
-## onActivate ##
+### onActivate ###
 
 Invoked when the user clicks on the tab preview.
 
@@ -71,10 +54,31 @@ Invoked when the user clicks on the tab preview.
         be activated, false if activation is not accepted.
 
 
-## onClick ##
+### onClick ###
 
 Invoked when one of the buttons on the window preview's toolbar is pressed.
 
 @param button The button that was pressed. This can be compared with the
               buttons returned by nsITaskbarWindowPreview.getButton.
+
+
+## Attributes ##
+
+### width ###
+
+The width of the preview image. This value is allowed to change at any
+time. See drawPreview for more information.
+
+
+### height ###
+
+The height of the preview image. This value is allowed to change at any
+time.  See drawPreview for more information.
+
+
+### thumbnailAspectRatio ###
+
+The aspect ratio of the thumbnail - this does not need to match the ratio
+of the preview. This value is allowed to change at any time. See
+drawThumbnail for more information.
 

@@ -12,7 +12,9 @@ way to notify registered listeners and a way to enumerate registered client
 listeners.
 
 
-## addObserver ##
+## Methods ##
+
+### addObserver ###
 
 AddObserver
 
@@ -28,7 +30,7 @@ topic.
                    returned.
 
 
-## removeObserver ##
+### removeObserver ###
 
 removeObserver
 
@@ -40,7 +42,7 @@ topic.
 @param aTopic     : The notification topic or subject.
 
 
-## notifyObservers ##
+### notifyObservers ###
 
 notifyObservers
 
@@ -51,7 +53,7 @@ Notifies all registered listeners of the given topic.
 @param someData : Notification specific wide string.
 
 
-## enumerateObservers ##
+### enumerateObservers ###
 
 enumerateObservers
 

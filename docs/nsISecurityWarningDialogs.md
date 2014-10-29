@@ -8,7 +8,9 @@ Functions that display warnings for transitions between secure
 and insecure pages, posts to insecure servers etc.
 
 
-## confirmPostToInsecureFromSecure ##
+## Methods ##
+
+### confirmPostToInsecureFromSecure ###
 
  Inform the user: Although the currently displayed
  page was loaded using a secure connection, and the UI probably

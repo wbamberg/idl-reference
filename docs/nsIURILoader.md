@@ -24,23 +24,9 @@ or helper app. Or it may hand the url off to an OS registered
 application. 
 
 
-## IS_CONTENT_PREFERRED ##
+## Methods ##
 
-@name Flags for opening URIs.
-
-
-Should the content be displayed in a container that prefers the
-content-type, or will any container do.
-
-
-## DONT_RETARGET ##
-
-If this flag is set, only the listener of the specified window context will
-be considered for content handling; if it refuses the load, an error will
-be indicated.
-
-
-## registerContentListener ##
+### registerContentListener ###
 
 As applications such as messenger and the browser are instantiated,
 they register content listener's with the uri dispatcher corresponding
@@ -56,9 +42,9 @@ the content types the registered content listener cares about.
 @see the nsIURILoader class description
 
 
-## unRegisterContentListener ##
+### unRegisterContentListener ###
 
-## openURI ##
+### openURI ###
 
 OpenURI requires the following parameters.....
 @param aChannel
@@ -77,7 +63,7 @@ OpenURI requires the following parameters.....
        <b>Must not be null!</b>
 
 
-## openChannel ##
+### openChannel ###
 
 Loads data from a channel. This differs from openURI in that the channel
 may already be opened, and that it returns a stream listener into which the
@@ -114,7 +100,25 @@ NS_ERROR_WONT_HANDLE_CONTENT.
        <b>Must not be null!</b>
 
 
-## stop ##
+### stop ###
 
 Stops an in progress load
+
+
+## Constants ##
+
+### IS_CONTENT_PREFERRED ###
+
+@name Flags for opening URIs.
+
+
+Should the content be displayed in a container that prefers the
+content-type, or will any container do.
+
+
+### DONT_RETARGET ###
+
+If this flag is set, only the listener of the specified window context will
+be considered for content handling; if it refuses the load, an error will
+be indicated.
 

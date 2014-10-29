@@ -4,6 +4,8 @@ layout: default
 
 # nsIDiskSpaceWatcher #
 
-## isDiskFull ##
+## Attributes ##
 
-## freeSpace ##
+### isDiskFull ###
+
+### freeSpace ###

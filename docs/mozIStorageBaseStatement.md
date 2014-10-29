@@ -10,7 +10,9 @@ The base interface for both pure asynchronous storage statements
 purposes.
 
 
-## finalize ##
+## Methods ##
+
+### finalize ###
 
 Finalizes a statement so you can successfully close a database connection.
 Once a statement has been finalized it can no longer be used for any
@@ -29,7 +31,7 @@ involving the statement.  However, you do need to use asyncClose instead of
 close on the connection if any statements have been used asynchronously.
 
 
-## bindUTF8StringParameter ##
+### bindUTF8StringParameter ###
 
 Bind the given value at the given numeric index.
 
@@ -43,21 +45,21 @@ Bind the given value at the given numeric index.
 @{
 
 
-## bindStringParameter ##
+### bindStringParameter ###
 
-## bindDoubleParameter ##
+### bindDoubleParameter ###
 
-## bindInt32Parameter ##
+### bindInt32Parameter ###
 
-## bindInt64Parameter ##
+### bindInt64Parameter ###
 
-## bindNullParameter ##
+### bindNullParameter ###
 
-## bindBlobParameter ##
+### bindBlobParameter ###
 
-## bindAdoptedBlobParameter ##
+### bindAdoptedBlobParameter ###
 
-## bindParameters ##
+### bindParameters ###
 @}*/
 
 Binds the array of parameters to the statement.  When executeAsync is
@@ -69,7 +71,7 @@ called, all the parameters in aParameters are bound and then executed.
 @note This is only works on statements being used asynchronously.
 
 
-## newBindingParamsArray ##
+### newBindingParamsArray ###
 
 Creates a new mozIStorageBindingParamsArray that can be used to bind
 multiple sets of data to a statement with bindParameters.
@@ -80,7 +82,7 @@ multiple sets of data to a statement with bindParameters.
 @note This is only useful for statements being used asynchronously.
 
 
-## executeAsync ##
+### executeAsync ###
 
 Execute a query asynchronously using any currently bound parameters.  This
 statement can be reused immediately, and reset does not need to be called.
@@ -94,31 +96,7 @@ statement can be reused immediately, and reset does not need to be called.
 @return an object that can be used to cancel the statements execution.
 
 
-## MOZ_STORAGE_STATEMENT_INVALID ##
-
-The statement is not usable, either because it failed to initialize or
-was explicitly finalized.
-
-
-## MOZ_STORAGE_STATEMENT_READY ##
-
-The statement is usable.
-
-
-## MOZ_STORAGE_STATEMENT_EXECUTING ##
-
-Indicates that the statement is executing and the row getters may be used.
-
-@note This is only relevant for mozIStorageStatement instances being used
-      in a synchronous fashion.
-
-
-## state ##
-
-Find out whether the statement is usable (has not been finalized).
-
-
-## escapeStringForLIKE ##
+### escapeStringForLIKE ###
 
 Escape a string for SQL LIKE search.
 
@@ -133,4 +111,32 @@ Escape a string for SQL LIKE search.
         (%, _ and the escape char are escaped with the escape char)
         For example, we will convert "foo/bar_baz%20cheese" 
         into "foo//bar/_baz/%20cheese" (if the escape char is '/').
+
+
+## Attributes ##
+
+### state ###
+
+Find out whether the statement is usable (has not been finalized).
+
+
+## Constants ##
+
+### MOZ_STORAGE_STATEMENT_INVALID ###
+
+The statement is not usable, either because it failed to initialize or
+was explicitly finalized.
+
+
+### MOZ_STORAGE_STATEMENT_READY ###
+
+The statement is usable.
+
+
+### MOZ_STORAGE_STATEMENT_EXECUTING ###
+
+Indicates that the statement is executing and the row getters may be used.
+
+@note This is only relevant for mozIStorageStatement instances being used
+      in a synchronous fashion.
 

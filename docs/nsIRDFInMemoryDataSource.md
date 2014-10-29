@@ -4,4 +4,6 @@ layout: default
 
 # nsIRDFInMemoryDataSource #
 
-## EnsureFastContainment ##
+## Methods ##
+
+### EnsureFastContainment ###

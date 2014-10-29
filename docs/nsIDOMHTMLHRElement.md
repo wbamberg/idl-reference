@@ -14,12 +14,14 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## align ##
+## Attributes ##
 
-## noShade ##
+### align ###
 
-## size ##
+### noShade ###
 
-## width ##
+### size ###
 
-## color ##
+### width ###
+
+### color ###

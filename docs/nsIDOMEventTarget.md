@@ -4,7 +4,9 @@ layout: default
 
 # nsIDOMEventTarget #
 
-## addEventListener ##
+## Methods ##
+
+### addEventListener ###
 
 This method allows the registration of event listeners on the event target.
 If an EventListener is added to an EventTarget while it is processing an
@@ -35,7 +37,7 @@ removeEventListener method.
                         they're trusted
 
 
-## addSystemEventListener ##
+### addSystemEventListener ###
 
 addSystemEventListener() adds an event listener of aType to the system
 group.  Typically, core code should use system group for listening to
@@ -53,7 +55,7 @@ stopPropagation() of the event.
 @return                 NS_OK if succeed.  Otherwise, NS_ERROR_*.
 
 
-## removeEventListener ##
+### removeEventListener ###
 
 This method allows the removal of event listeners from the event 
 target. If an EventListener is removed from an EventTarget while it 
@@ -75,13 +77,13 @@ currently registered EventListener on the EventTarget has no effect.
                     listener, and vice versa.
 
 
-## removeSystemEventListener ##
+### removeSystemEventListener ###
 
 removeSystemEventListener() should be used if you have used
 addSystemEventListener().
 
 
-## dispatchEvent ##
+### dispatchEvent ###
 
 This method allows the dispatch of events into the implementations 
 event model. Events dispatched in this manner will have the same 
@@ -101,7 +103,7 @@ dispatchEvent is called.
              exception.
 
 
-## GetTargetForDOMEvent ##
+### GetTargetForDOMEvent ###
 
 Returns the nsIDOMEventTarget object which should be used as the target
 of DOMEvents.
@@ -109,7 +111,7 @@ Usually |this| is returned, but for example global object returns
 the outer object.
 
 
-## GetTargetForEventTargetChain ##
+### GetTargetForEventTargetChain ###
 
 Returns the nsIDOMEventTarget object which should be used as the target
 of the event and when constructing event target chain.
@@ -117,7 +119,7 @@ Usually |this| is returned, but for example global object returns
 the inner object.
 
 
-## PreHandleEvent ##
+### PreHandleEvent ###
 
 Called before the capture phase of the event flow.
 This is used to create the event target chain and implementations
@@ -134,13 +136,13 @@ the latter one is the possible parent object for the event target chain.
 @note Only EventDispatcher should call this method.
 
 
-## WillHandleEvent ##
+### WillHandleEvent ###
 
 If EventChainPreVisitor.mWantsWillHandleEvent is set PR_TRUE,
 called just before possible event handlers on this object will be called.
 
 
-## PostHandleEvent ##
+### PostHandleEvent ###
 
 Called after the bubble phase of the system event group.
 The default handling of the event should happen here.
@@ -150,7 +152,7 @@ The default handling of the event should happen here.
 @note Only EventDispatcher should call this method.
 
 
-## DispatchDOMEvent ##
+### DispatchDOMEvent ###
 
 Dispatch an event.
 @param aEvent the event that is being dispatched.
@@ -169,14 +171,14 @@ for dispatching, otherwise aEvent is used.
             have been converted to use nsIDOMEventTarget::dispatchEvent.
 
 
-## GetContextForEventHandlers ##
+### GetContextForEventHandlers ###
 
 Get the script context in which the event handlers should be run.
 May return null.
 @note Caller *must* check the value of aRv.
 
 
-## GetJSContextForEventHandlers ##
+### GetJSContextForEventHandlers ###
 
 If the method above returns null, but a success code, this method
 is called.

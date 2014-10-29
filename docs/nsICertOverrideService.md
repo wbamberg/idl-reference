@@ -9,22 +9,9 @@ This represents the global list of triples
 that the user wants to accept without further warnings. 
 
 
-## ERROR_UNTRUSTED ##
+## Methods ##
 
- Override Untrusted
-
-
-## ERROR_MISMATCH ##
-
- Override hostname Mismatch
-
-
-## ERROR_TIME ##
-
- Override Time error
-
-
-## rememberValidityOverride ##
+### rememberValidityOverride ###
 
  The given cert should always be accepted for the given hostname:port,
  regardless of errors verifying the cert.
@@ -39,7 +26,7 @@ that the user wants to accept without further warnings.
  @param aOverrideBits The errors we want to be overriden
 
 
-## hasMatchingOverride ##
+### hasMatchingOverride ###
 
  The given cert should always be accepted for the given hostname:port,
  regardless of errors verifying the cert.
@@ -56,7 +43,7 @@ that the user wants to accept without further warnings.
          that matches the given certificate
 
 
-## getValidityOverride ##
+### getValidityOverride ###
 
  Retrieve the stored override for the given hostname:port.
 
@@ -71,7 +58,7 @@ that the user wants to accept without further warnings.
          and aFingerprint is currently on file
 
 
-## clearValidityOverride ##
+### clearValidityOverride ###
 
  Remove a override for the given hostname:port.
 
@@ -82,7 +69,7 @@ that the user wants to accept without further warnings.
               then all temporary certificates should be cleared.
 
 
-## getAllOverrideHostsWithPorts ##
+### getAllOverrideHostsWithPorts ###
 
  Obtain the full list of hostname:port for which overrides are known.
 
@@ -90,11 +77,28 @@ that the user wants to accept without further warnings.
  @param aHostsWithPortsArray The array of host:port entries returned
 
 
-## isCertUsedForOverrides ##
+### isCertUsedForOverrides ###
 
  Is the given cert used in rules?
 
  @param aCert The cert we're looking for
  @return how many override entries are currently on file
          for the given certificate
+
+
+## Constants ##
+
+### ERROR_UNTRUSTED ###
+
+ Override Untrusted
+
+
+### ERROR_MISMATCH ###
+
+ Override hostname Mismatch
+
+
+### ERROR_TIME ###
+
+ Override Time error
 

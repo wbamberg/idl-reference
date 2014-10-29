@@ -11,11 +11,9 @@ imgILoader interface
 @see imagelib2
 
 
-## LOAD_CORS_ANONYMOUS ##
+## Methods ##
 
-## LOAD_CORS_USE_CREDENTIALS ##
-
-## loadImageXPCOM ##
+### loadImageXPCOM ###
 
 Start the load and decode of an image.
 @param aURI the URI to load
@@ -39,7 +37,7 @@ make sure to Cancel() the resulting request before the observer
 goes away.
 
 
-## loadImageWithChannelXPCOM ##
+### loadImageWithChannelXPCOM ###
 
 Start the load and decode of an image.
 @param aChannel the channel to load the image from.  This must
@@ -57,3 +55,9 @@ libpr0n does NOT keep a strong ref to the observer; this prevents
 reference cycles.  This means that callers of loadImageWithChannel should
 make sure to Cancel() the resulting request before the observer goes away.
 
+
+## Constants ##
+
+### LOAD_CORS_ANONYMOUS ###
+
+### LOAD_CORS_USE_CREDENTIALS ###

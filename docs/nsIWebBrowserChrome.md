@@ -8,11 +8,9 @@ nsIWebBrowserChrome corresponds to the top-level, outermost window
 containing an embedded Gecko web browser.
 
 
-## STATUS_SCRIPT ##
+## Methods ##
 
-## STATUS_LINK ##
-
-## setStatus ##
+### setStatus ###
 
 Called when the status text in the chrome needs to be updated.
 @param statusType indicates what is setting the text
@@ -20,7 +18,43 @@ Called when the status text in the chrome needs to be updated.
               no status.
 
 
-## webBrowser ##
+### destroyBrowserWindow ###
+
+Asks the implementer to destroy the window associated with this
+WebBrowser object.
+
+
+### sizeBrowserTo ###
+
+Tells the chrome to size itself such that the browser will be the 
+specified size.
+@param aCX new width of the browser
+@param aCY new height of the browser
+
+
+### showAsModal ###
+
+Shows the window as a modal window.
+@return (the function error code) the status value specified by
+        in exitModalEventLoop.
+
+
+### isWindowModal ###
+
+Is the window modal (that is, currently executing a modal loop)?
+@return true if it's a modal window
+
+
+### exitModalEventLoop ###
+
+Exit a modal event loop if we're in one. The implementation
+should also exit out of the loop if the window is destroyed.
+@param aStatus - the result code to return from showAsModal
+
+
+## Attributes ##
+
+### webBrowser ###
 
 The currently loaded WebBrowser.  The browser chrome may be
 told to set the WebBrowser object to a new object by setting this
@@ -30,106 +64,78 @@ as if it had created the WebBrowser itself.  This includes positioning
 setting up listeners etc.
 
 
-## CHROME_DEFAULT ##
-
-Definitions for the chrome flags
-
-
-## CHROME_WINDOW_BORDERS ##
-
-## CHROME_WINDOW_CLOSE ##
-
-## CHROME_WINDOW_RESIZE ##
-
-## CHROME_MENUBAR ##
-
-## CHROME_TOOLBAR ##
-
-## CHROME_LOCATIONBAR ##
-
-## CHROME_STATUSBAR ##
-
-## CHROME_PERSONAL_TOOLBAR ##
-
-## CHROME_SCROLLBARS ##
-
-## CHROME_TITLEBAR ##
-
-## CHROME_EXTRA ##
-
-## CHROME_WITH_SIZE ##
-
-## CHROME_WITH_POSITION ##
-
-## CHROME_WINDOW_MIN ##
-
-## CHROME_WINDOW_POPUP ##
-
-## CHROME_PRIVATE_WINDOW ##
-
-## CHROME_NON_PRIVATE_WINDOW ##
-
-## CHROME_PRIVATE_LIFETIME ##
-
-## CHROME_MODAL_CONTENT_WINDOW ##
-
-## CHROME_REMOTE_WINDOW ##
-
-## CHROME_MAC_SUPPRESS_ANIMATION ##
-
-## CHROME_WINDOW_RAISED ##
-
-## CHROME_WINDOW_LOWERED ##
-
-## CHROME_CENTER_SCREEN ##
-
-## CHROME_DEPENDENT ##
-
-## CHROME_MODAL ##
-
-## CHROME_OPENAS_DIALOG ##
-
-## CHROME_OPENAS_CHROME ##
-
-## CHROME_ALL ##
-
-## chromeFlags ##
+### chromeFlags ###
 
 The chrome flags for this browser chrome. The implementation should
 reflect the value of this attribute by hiding or showing its chrome
 appropriately.
 
 
-## destroyBrowserWindow ##
+## Constants ##
 
-Asks the implementer to destroy the window associated with this
-WebBrowser object.
+### STATUS_SCRIPT ###
 
+### STATUS_LINK ###
 
-## sizeBrowserTo ##
+### CHROME_DEFAULT ###
 
-Tells the chrome to size itself such that the browser will be the 
-specified size.
-@param aCX new width of the browser
-@param aCY new height of the browser
+Definitions for the chrome flags
 
 
-## showAsModal ##
+### CHROME_WINDOW_BORDERS ###
 
-Shows the window as a modal window.
-@return (the function error code) the status value specified by
-        in exitModalEventLoop.
+### CHROME_WINDOW_CLOSE ###
 
+### CHROME_WINDOW_RESIZE ###
 
-## isWindowModal ##
+### CHROME_MENUBAR ###
 
-Is the window modal (that is, currently executing a modal loop)?
-@return true if it's a modal window
+### CHROME_TOOLBAR ###
 
+### CHROME_LOCATIONBAR ###
 
-## exitModalEventLoop ##
+### CHROME_STATUSBAR ###
 
-Exit a modal event loop if we're in one. The implementation
-should also exit out of the loop if the window is destroyed.
-@param aStatus - the result code to return from showAsModal
+### CHROME_PERSONAL_TOOLBAR ###
 
+### CHROME_SCROLLBARS ###
+
+### CHROME_TITLEBAR ###
+
+### CHROME_EXTRA ###
+
+### CHROME_WITH_SIZE ###
+
+### CHROME_WITH_POSITION ###
+
+### CHROME_WINDOW_MIN ###
+
+### CHROME_WINDOW_POPUP ###
+
+### CHROME_PRIVATE_WINDOW ###
+
+### CHROME_NON_PRIVATE_WINDOW ###
+
+### CHROME_PRIVATE_LIFETIME ###
+
+### CHROME_MODAL_CONTENT_WINDOW ###
+
+### CHROME_REMOTE_WINDOW ###
+
+### CHROME_MAC_SUPPRESS_ANIMATION ###
+
+### CHROME_WINDOW_RAISED ###
+
+### CHROME_WINDOW_LOWERED ###
+
+### CHROME_CENTER_SCREEN ###
+
+### CHROME_DEPENDENT ###
+
+### CHROME_MODAL ###
+
+### CHROME_OPENAS_DIALOG ###
+
+### CHROME_OPENAS_CHROME ###
+
+### CHROME_ALL ###

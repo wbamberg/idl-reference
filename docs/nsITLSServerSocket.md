@@ -4,15 +4,9 @@ layout: default
 
 # nsITLSServerSocket #
 
-## serverCert ##
+## Methods ##
 
-serverCert
-
-The server's certificate that is presented to the client during the TLS
-handshake.  This is required to be set before calling |asyncListen|.
-
-
-## setSessionCache ##
+### setSessionCache ###
 
 setSessionCache
 
@@ -21,7 +15,7 @@ should be set before calling |asyncListen| if you wish to change the
 default.
 
 
-## setSessionTickets ##
+### setSessionTickets ###
 
 setSessionTickets
 
@@ -30,20 +24,7 @@ should be set before calling |asyncListen| if you wish to change the
 default.
 
 
-## REQUEST_NEVER ##
-
-Values for setRequestClientCertificate
-
-
-## REQUEST_FIRST_HANDSHAKE ##
-
-## REQUEST_ALWAYS ##
-
-## REQUIRE_FIRST_HANDSHAKE ##
-
-## REQUIRE_ALWAYS ##
-
-## setRequestClientCertificate ##
+### setRequestClientCertificate ###
 
 setRequestClientCertificate
 
@@ -52,3 +33,28 @@ from the client.  Defaults to REQUEST_NEVER.  See the possible options
 above.  This should be set before calling |asyncListen| if you wish to
 change the default.
 
+
+## Attributes ##
+
+### serverCert ###
+
+serverCert
+
+The server's certificate that is presented to the client during the TLS
+handshake.  This is required to be set before calling |asyncListen|.
+
+
+## Constants ##
+
+### REQUEST_NEVER ###
+
+Values for setRequestClientCertificate
+
+
+### REQUEST_FIRST_HANDSHAKE ###
+
+### REQUEST_ALWAYS ###
+
+### REQUIRE_FIRST_HANDSHAKE ###
+
+### REQUIRE_ALWAYS ###

@@ -4,26 +4,30 @@ layout: default
 
 # nsIDOMDeviceStorage #
 
-## onchange ##
+## Methods ##
 
-## add ##
+### add ###
 
-## addNamed ##
+### addNamed ###
 
-## get ##
+### get ###
 
-## getEditable ##
+### getEditable ###
 
-## delete ##
+### delete ###
 
-## freeSpace ##
+### freeSpace ###
 
-## usedSpace ##
+### usedSpace ###
 
-## available ##
+### available ###
 
-## storageName ##
+### createFileDescriptor ###
 
-## default ##
+## Attributes ##
 
-## createFileDescriptor ##
+### onchange ###
+
+### storageName ###
+
+### default ###

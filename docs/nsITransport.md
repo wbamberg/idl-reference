@@ -19,14 +19,9 @@ socket transport, these events can include status about the connection.
 See nsISocketTransport for more info about socket transport specifics.
 
 
-## OPEN_BLOCKING ##
+## Methods ##
 
-Open flags.
-
-
-## OPEN_UNBUFFERED ##
-
-## openInputStream ##
+### openInputStream ###
 
 Open an input stream on this transport.
 
@@ -59,7 +54,7 @@ OPEN_UNBUFFERED
        maximum number of buffer segments (pass 0 to use default value).
 
 
-## openOutputStream ##
+### openOutputStream ###
 
 Open an output stream on this transport.
 
@@ -92,7 +87,7 @@ OPEN_UNBUFFERED
        maximum number of buffer segments (pass 0 to use default value).
 
 
-## close ##
+### close ###
 
 Close the transport and any open streams.
 
@@ -100,7 +95,7 @@ Close the transport and any open streams.
        the reason for closing the stream.
 
 
-## setEventSink ##
+### setEventSink ###
 
 Set the transport event sink.
 
@@ -112,7 +107,16 @@ Set the transport event sink.
        any thread.
 
 
-## STATUS_READING ##
+## Constants ##
+
+### OPEN_BLOCKING ###
+
+Open flags.
+
+
+### OPEN_UNBUFFERED ###
+
+### STATUS_READING ###
 
 Generic nsITransportEventSink status codes.  nsITransport
 implementations may override these status codes with their own more
@@ -123,4 +127,4 @@ the NS_NET_STATUS_* constants defined below, which have a type of
 nsresult.
 
 
-## STATUS_WRITING ##
+### STATUS_WRITING ###

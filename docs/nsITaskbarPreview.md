@@ -11,7 +11,17 @@ cannot be instantiated directly.
 
 
 
-## controller ##
+## Methods ##
+
+### invalidate ###
+
+Invalidates the taskbar's cached image of this preview, forcing a redraw
+if necessary
+
+
+## Attributes ##
+
+### controller ###
 
 The controller for this preview. A controller is required to provide
 the behavior and appearance of the taskbar previews. It is responsible for
@@ -27,14 +37,14 @@ The controller is not allowed to be null.
 @see nsITaskbarPreviewController
 
 
-## tooltip ##
+### tooltip ###
 
 The tooltip displayed above the preview when the user hovers over it
 
 Default: an empty string
 
 
-## visible ##
+### visible ###
 
 Whether or not the preview is visible.
 
@@ -47,14 +57,8 @@ For window previews, this operation is very cheap.
 Default: false
 
 
-## active ##
+### active ###
 
 Gets/sets whether or not the preview is marked active (selected) in the
 taskbar.
-
-
-## invalidate ##
-
-Invalidates the taskbar's cached image of this preview, forcing a redraw
-if necessary
 

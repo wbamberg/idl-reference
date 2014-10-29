@@ -4,4 +4,6 @@ layout: default
 
 # nsIOpenSignedAppFileCallback #
 
-## openSignedAppFileFinished ##
+## Methods ##
+
+### openSignedAppFileFinished ###

@@ -19,48 +19,9 @@ particular variable may be retrieved using the getBindingFor and
 getBindingObjectFor methods.
 
 
-## isContainer ##
+## Methods ##
 
-True if the result represents a container.
-
-
-## isEmpty ##
-
-True if the result represents an empty container.
-
-
-## mayProcessChildren ##
-
-True if the template builder may use this result as the reference point
-for additional recursive processing of the template. The template builder
-will reprocess the template using this result as the reference point and
-generate output content that is expected to be inserted as children of the
-output generated for this result. If false, child content is not
-processed. This property identifies only the default handling and may be
-overriden by syntax used in the template.
-
-
-## id ##
-
-ID of the result. The DOM element created for this result, if any, will
-have its id attribute set to this value. The id must be unique for a
-query.
-
-
-## resource ##
-
-Resource for the result, which may be null. If set, the resource uri
-must be the same as the ID property.
-
-
-## type ##
-
-The type of the object. The predefined value 'separator' may be used
-for separators. Other values may be used for application specific
-purposes.
-
-
-## getBindingFor ##
+### getBindingFor ###
 
 Get the string representation of the value of a variable for this
 result. This string will be used in the action body from a template as
@@ -74,7 +35,7 @@ name, thus aVar should be ?name and not simply name.
 @return the value for the variable or a null string if it has no value
 
 
-## getBindingObjectFor ##
+### getBindingObjectFor ###
 
 Get an object value for a variable such as ?name for this result. 
 
@@ -87,7 +48,7 @@ convenience when sorting results.
 @return the value for the variable or null if it has no value
 
 
-## ruleMatched ##
+### ruleMatched ###
 
 Indicate that a particular rule of a query has matched and that output
 will be generated for it. Both the query as compiled by the query
@@ -100,8 +61,51 @@ the <query> element that was used to compile the query.
 @param aRuleNode the rule node that matched
 
 
-## hasBeenRemoved ##
+### hasBeenRemoved ###
 
 Indicate that the output for a result has beeen removed and that the
 result is no longer being used by the builder.
+
+
+## Attributes ##
+
+### isContainer ###
+
+True if the result represents a container.
+
+
+### isEmpty ###
+
+True if the result represents an empty container.
+
+
+### mayProcessChildren ###
+
+True if the template builder may use this result as the reference point
+for additional recursive processing of the template. The template builder
+will reprocess the template using this result as the reference point and
+generate output content that is expected to be inserted as children of the
+output generated for this result. If false, child content is not
+processed. This property identifies only the default handling and may be
+overriden by syntax used in the template.
+
+
+### id ###
+
+ID of the result. The DOM element created for this result, if any, will
+have its id attribute set to this value. The id must be unique for a
+query.
+
+
+### resource ###
+
+Resource for the result, which may be null. If set, the resource uri
+must be the same as the ID property.
+
+
+### type ###
+
+The type of the object. The predefined value 'separator' may be used
+for separators. Other values may be used for application specific
+purposes.
 

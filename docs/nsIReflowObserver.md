@@ -4,7 +4,9 @@ layout: default
 
 # nsIReflowObserver #
 
-## reflow ##
+## Methods ##
+
+### reflow ###
 
 Called when an uninterruptible reflow has occurred.
 
@@ -14,7 +16,7 @@ Called when an uninterruptible reflow has occurred.
              navigationStart (accurate to 1/1000 of a ms)
 
 
-## reflowInterruptible ##
+### reflowInterruptible ###
 
 Called when an interruptible reflow has occurred.
 

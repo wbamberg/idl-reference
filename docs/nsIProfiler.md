@@ -4,27 +4,29 @@ layout: default
 
 # nsIProfiler #
 
-## StartProfiler ##
+## Methods ##
 
-## StopProfiler ##
+### StartProfiler ###
 
-## IsPaused ##
+### StopProfiler ###
 
-## PauseSampling ##
+### IsPaused ###
 
-## ResumeSampling ##
+### PauseSampling ###
 
-## AddMarker ##
+### ResumeSampling ###
 
-## GetProfile ##
+### AddMarker ###
 
-## getProfileData ##
+### GetProfile ###
 
-## IsActive ##
+### getProfileData ###
 
-## GetFeatures ##
+### IsActive ###
 
-## getSharedLibraryInformation ##
+### GetFeatures ###
+
+### getSharedLibraryInformation ###
 
 Returns a JSON string of an array of shared library objects.
 Every object has three properties: start, end, and name.

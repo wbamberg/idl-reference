@@ -4,8 +4,10 @@ layout: default
 
 # nsICurrentCharsetListener #
 
-## SetCurrentCharset ##
+## Methods ##
 
-## SetCurrentMailCharset ##
+### SetCurrentCharset ###
 
-## SetCurrentComposerCharset ##
+### SetCurrentMailCharset ###
+
+### SetCurrentComposerCharset ###

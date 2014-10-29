@@ -8,20 +8,64 @@ nsIWebBrowserPrint corresponds to the main interface
 for printing an embedded Gecko web browser window/document
 
 
-## PRINTPREVIEW_GOTO_PAGENUM ##
+## Methods ##
 
-PrintPreview Navigation Constants
+### print ###
+
+Print the specified DOM window
+
+@param aThePrintSettings - Printer Settings for the print job, if aThePrintSettings is null
+                           then the global PS will be used.
+@param aWPListener - is updated during the print
+@return void
 
 
-## PRINTPREVIEW_PREV_PAGE ##
+### printPreview ###
 
-## PRINTPREVIEW_NEXT_PAGE ##
+Print Preview the specified DOM window
 
-## PRINTPREVIEW_HOME ##
+@param aThePrintSettings - Printer Settings for the print preview, if aThePrintSettings is null
+                           then the global PS will be used.
+@param aChildDOMWin - DOM Window to be print previewed.
+@param aWPListener - is updated during the printpreview
+@return void
 
-## PRINTPREVIEW_END ##
 
-## globalPrintSettings ##
+### printPreviewNavigate ###
+
+Print Preview - Navigates within the window
+
+@param aNavType - navigation enum
+@param aPageNum - page num to navigate to when aNavType = ePrintPreviewGoToPageNum
+@return void
+
+
+### cancel ###
+
+Cancels the current print 
+@return void
+
+
+### enumerateDocumentNames ###
+
+Returns an array of the names of all documents names (Title or URL)
+and sub-documents. This will return a single item if the attr "isFramesetDocument" is false
+and may return any number of items is "isFramesetDocument" is true
+
+@param  aCount - returns number of printers returned
+@param  aResult - returns array of names
+@return void
+
+
+### exitPrintPreview ###
+
+This exists PrintPreview mode and returns browser window to galley mode
+@return void
+
+
+## Attributes ##
+
+### globalPrintSettings ###
 
 Returns a "global" PrintSettings object 
 Creates a new the first time, if one doesn't exist.
@@ -31,7 +75,7 @@ Then returns the same object each time after that.
 Initializes the globalPrintSettings from the default printer
 
 
-## currentPrintSettings ##
+### currentPrintSettings ###
 
 Returns a pointer to the PrintSettings object that
 that was passed into either "print" or "print preview"
@@ -40,7 +84,7 @@ This enables any consumers of the interface to have access
 to the "current" PrintSetting at later points in the execution
 
 
-## currentChildDOMWindow ##
+### currentChildDOMWindow ###
 
 Returns a pointer to the current child DOMWindow
 that is being print previewed. (FrameSet Frames)
@@ -52,90 +96,52 @@ This enables any consumers of the interface to have access
 to the "current" child DOMWindow at later points in the execution
 
 
-## doingPrint ##
+### doingPrint ###
 
 Returns whether it is in Print mode
 
 
-## doingPrintPreview ##
+### doingPrintPreview ###
 
 Returns whether it is in Print Preview mode
 
 
-## isFramesetDocument ##
+### isFramesetDocument ###
 
 This returns whether the current document is a frameset document
 
 
-## isFramesetFrameSelected ##
+### isFramesetFrameSelected ###
 
 This returns whether the current document is a frameset document
 
 
-## isIFrameSelected ##
+### isIFrameSelected ###
 
 This returns whether there is an IFrame selected
 
 
-## isRangeSelection ##
+### isRangeSelection ###
 
 This returns whether there is a "range" selection
 
 
-## printPreviewNumPages ##
+### printPreviewNumPages ###
 
 This returns the total number of pages for the Print Preview
 
 
-## print ##
+## Constants ##
 
-Print the specified DOM window
+### PRINTPREVIEW_GOTO_PAGENUM ###
 
-@param aThePrintSettings - Printer Settings for the print job, if aThePrintSettings is null
-                           then the global PS will be used.
-@param aWPListener - is updated during the print
-@return void
+PrintPreview Navigation Constants
 
 
-## printPreview ##
+### PRINTPREVIEW_PREV_PAGE ###
 
-Print Preview the specified DOM window
+### PRINTPREVIEW_NEXT_PAGE ###
 
-@param aThePrintSettings - Printer Settings for the print preview, if aThePrintSettings is null
-                           then the global PS will be used.
-@param aChildDOMWin - DOM Window to be print previewed.
-@param aWPListener - is updated during the printpreview
-@return void
+### PRINTPREVIEW_HOME ###
 
-
-## printPreviewNavigate ##
-
-Print Preview - Navigates within the window
-
-@param aNavType - navigation enum
-@param aPageNum - page num to navigate to when aNavType = ePrintPreviewGoToPageNum
-@return void
-
-
-## cancel ##
-
-Cancels the current print 
-@return void
-
-
-## enumerateDocumentNames ##
-
-Returns an array of the names of all documents names (Title or URL)
-and sub-documents. This will return a single item if the attr "isFramesetDocument" is false
-and may return any number of items is "isFramesetDocument" is true
-
-@param  aCount - returns number of printers returned
-@param  aResult - returns array of names
-@return void
-
-
-## exitPrintPreview ##
-
-This exists PrintPreview mode and returns browser window to galley mode
-@return void
-
+### PRINTPREVIEW_END ###

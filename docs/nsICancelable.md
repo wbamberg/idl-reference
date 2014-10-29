@@ -7,7 +7,9 @@ layout: default
 This interface provides a means to cancel an operation that is in progress.
 
 
-## cancel ##
+## Methods ##
+
+### cancel ###
 
 Call this method to request that this object abort whatever operation it
 may be performing.

@@ -4,7 +4,9 @@ layout: default
 
 # nsIMIMEHeaderParam #
 
-## getParameter ##
+## Methods ##
+
+### getParameter ###
  
 Given the value of a single header field  (such as
 Content-Disposition and Content-Type) and the name of a parameter
@@ -53,13 +55,13 @@ code.
 @return the value of <code>aParamName</code> in Unichar(UTF-16).
 
 
-## getParameterHTTP ##
+### getParameterHTTP ###
 
 Like getParameter, but disabling encodings and workarounds specific to
 MIME (as opposed to HTTP).
 
 
-## decodeRFC5987Param ##
+### decodeRFC5987Param ###
  
 Given the value of a header field parameter using the encoding
 defined in RFC 5987, decode the value into a Unicode string, and extract
@@ -81,7 +83,7 @@ should use this function.
 @return the decoded parameter value.
 
 
-## getParameterInternal ##
+### getParameterInternal ###
  
 Given the value of a single header field  (such as
 Content-Disposition and Content-Type) and the name of a parameter
@@ -111,7 +113,7 @@ Otherwise, this method would have been made static.
                     RFC 2231 decoding but without charset conversion.
 
 
-## decodeRFC2047Header ##
+### decodeRFC2047Header ###
  
 Given a header value, decodes RFC 2047-style encoding and
 returns the decoded header value in UTF-8 if either it's
@@ -136,7 +138,7 @@ char * Mime_DecodeMimeHeader(char *header_val, const char *charset,
 @return                 decoded header value
 
 
-## decodeParameter ##
+### decodeParameter ###
  
 Given a header parameter, decodes RFC 2047 style encoding (if it's 
 not obtained from RFC 2231 encoding),  converts it to

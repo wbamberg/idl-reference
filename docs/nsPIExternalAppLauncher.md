@@ -8,14 +8,16 @@ This is a private interface shared between external app handlers and the platfor
 external helper app service
 
 
-## deleteTemporaryFileOnExit ##
+## Methods ##
+
+### deleteTemporaryFileOnExit ###
 
 mscott --> eventually I should move this into a new service so other
 consumers can add temporary files they want deleted on exit.
 @param aTemporaryFile A temporary file we should delete on exit.
 
 
-## deleteTemporaryPrivateFileWhenPossible ##
+### deleteTemporaryPrivateFileWhenPossible ###
 
 Delete a temporary file created inside private browsing mode when
 the private browsing mode has ended.

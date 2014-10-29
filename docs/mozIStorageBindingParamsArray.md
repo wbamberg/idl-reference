@@ -4,7 +4,9 @@ layout: default
 
 # mozIStorageBindingParamsArray #
 
-## newBindingParams ##
+## Methods ##
+
+### newBindingParams ###
 
 Creates a new mozIStorageBindingParams object that can be added to this
 array.
@@ -13,7 +15,7 @@ array.
         parameters that need to be bound.
 
 
-## addParams ##
+### addParams ###
 
 Adds the parameters to the end of this array.
 
@@ -21,7 +23,9 @@ Adds the parameters to the end of this array.
        The parameters to add to this array.
 
 
-## length ##
+## Attributes ##
+
+### length ###
 
 The number of mozIStorageBindingParams this object contains.
 

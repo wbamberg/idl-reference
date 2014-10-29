@@ -4,7 +4,9 @@ layout: default
 
 # nsICacheStorageConsumptionObserver #
 
-## onNetworkCacheDiskConsumption ##
+## Methods ##
+
+### onNetworkCacheDiskConsumption ###
 
 Callback invoked to answer asyncGetDiskConsumption call. Always triggered
 on the main thread.

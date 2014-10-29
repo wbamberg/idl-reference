@@ -18,7 +18,9 @@ property, it should return a replacement property descriptor for it. If not,
 it should return null.
 
 
-## interpose ##
+## Methods ##
+
+### interpose ###
 
 Returns a replacement property descriptor for a browser object.
 

@@ -15,56 +15,60 @@ For more information on this interface please see
 http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#domexception
 
 
-## INDEX_SIZE_ERR ##
+## Attributes ##
 
-## DOMSTRING_SIZE_ERR ##
+### code ###
 
-## HIERARCHY_REQUEST_ERR ##
+## Constants ##
 
-## WRONG_DOCUMENT_ERR ##
+### INDEX_SIZE_ERR ###
 
-## INVALID_CHARACTER_ERR ##
+### DOMSTRING_SIZE_ERR ###
 
-## NO_DATA_ALLOWED_ERR ##
+### HIERARCHY_REQUEST_ERR ###
 
-## NO_MODIFICATION_ALLOWED_ERR ##
+### WRONG_DOCUMENT_ERR ###
 
-## NOT_FOUND_ERR ##
+### INVALID_CHARACTER_ERR ###
 
-## NOT_SUPPORTED_ERR ##
+### NO_DATA_ALLOWED_ERR ###
 
-## INUSE_ATTRIBUTE_ERR ##
+### NO_MODIFICATION_ALLOWED_ERR ###
 
-## INVALID_STATE_ERR ##
+### NOT_FOUND_ERR ###
 
-## SYNTAX_ERR ##
+### NOT_SUPPORTED_ERR ###
 
-## INVALID_MODIFICATION_ERR ##
+### INUSE_ATTRIBUTE_ERR ###
 
-## NAMESPACE_ERR ##
+### INVALID_STATE_ERR ###
 
-## INVALID_ACCESS_ERR ##
+### SYNTAX_ERR ###
 
-## VALIDATION_ERR ##
+### INVALID_MODIFICATION_ERR ###
 
-## TYPE_MISMATCH_ERR ##
+### NAMESPACE_ERR ###
 
-## SECURITY_ERR ##
+### INVALID_ACCESS_ERR ###
 
-## NETWORK_ERR ##
+### VALIDATION_ERR ###
 
-## ABORT_ERR ##
+### TYPE_MISMATCH_ERR ###
 
-## URL_MISMATCH_ERR ##
+### SECURITY_ERR ###
 
-## QUOTA_EXCEEDED_ERR ##
+### NETWORK_ERR ###
 
-## TIMEOUT_ERR ##
+### ABORT_ERR ###
 
-## INVALID_NODE_TYPE_ERR ##
+### URL_MISMATCH_ERR ###
 
-## DATA_CLONE_ERR ##
+### QUOTA_EXCEEDED_ERR ###
 
-## INVALID_POINTER_ERR ##
+### TIMEOUT_ERR ###
 
-## code ##
+### INVALID_NODE_TYPE_ERR ###
+
+### DATA_CLONE_ERR ###
+
+### INVALID_POINTER_ERR ###

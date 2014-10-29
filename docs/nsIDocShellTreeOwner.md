@@ -4,9 +4,11 @@ layout: default
 
 # nsIDocShellTreeOwner #
 
-## findItemWithName ##
+## Methods ##
 
-## contentShellAdded ##
+### findItemWithName ###
+
+### contentShellAdded ###
 
 Called when a content shell is added to the docshell tree.  This is
 _only_ called for "root" content shells (that is, ones whose parent is a
@@ -20,7 +22,7 @@ chrome shell).
 		undefined. Don't rely on this for anything.
 
 
-## contentShellRemoved ##
+### contentShellRemoved ###
 
 Called when a content shell is removed from the docshell tree.  This is
 _only_ called for "root" content shells (that is, ones whose parent is a
@@ -30,12 +32,14 @@ contentShellRemoved should just do nothing.
 @param aContentShell the shell being removed.
 
 
-## primaryContentShell ##
+### sizeShellTo ###
 
-## sizeShellTo ##
+### setPersistence ###
 
-## setPersistence ##
+### getPersistence ###
 
-## getPersistence ##
+## Attributes ##
 
-## targetableShellCount ##
+### primaryContentShell ###
+
+### targetableShellCount ###

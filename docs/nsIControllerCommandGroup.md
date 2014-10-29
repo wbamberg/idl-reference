@@ -4,12 +4,14 @@ layout: default
 
 # nsIControllerCommandGroup #
 
-## addCommandToGroup ##
+## Methods ##
 
-## removeCommandFromGroup ##
+### addCommandToGroup ###
 
-## isCommandInGroup ##
+### removeCommandFromGroup ###
 
-## getGroupsEnumerator ##
+### isCommandInGroup ###
 
-## getEnumeratorForGroup ##
+### getGroupsEnumerator ###
+
+### getEnumeratorForGroup ###

@@ -4,4 +4,6 @@ layout: default
 
 # nsISlowScriptDebugCallback #
 
-## handleSlowScriptDebug ##
+## Methods ##
+
+### handleSlowScriptDebug ###

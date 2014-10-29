@@ -4,4 +4,6 @@ layout: default
 
 # nsIXPCException #
 
-## initialize ##
+## Methods ##
+
+### initialize ###

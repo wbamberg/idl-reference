@@ -17,7 +17,9 @@ A user of a service may keep references to particular services indefinitely
 and only must call Release when it shuts down.
 
 
-## getService ##
+## Methods ##
+
+### getService ###
 
 getServiceByContractID
 
@@ -30,9 +32,9 @@ interface aIID.  This may result in the instance being created.
 @param result : resulting service 
 
 
-## getServiceByContractID ##
+### getServiceByContractID ###
 
-## isServiceInstantiated ##
+### isServiceInstantiated ###
 
 isServiceInstantiated
 
@@ -47,4 +49,4 @@ been created, or throw otherwise
 @throws NS_NOINTERFACE if the IID given isn't supported by the object
 
 
-## isServiceInstantiatedByContractID ##
+### isServiceInstantiatedByContractID ###

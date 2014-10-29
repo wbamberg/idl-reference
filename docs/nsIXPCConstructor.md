@@ -8,8 +8,10 @@ interface of object returned by Components.Constructor
 (additional interesting stuff only reflected into JavaScript)
 
 
-## classID ##
+## Attributes ##
 
-## interfaceID ##
+### classID ###
 
-## initializer ##
+### interfaceID ###
+
+### initializer ###

@@ -7,36 +7,30 @@ layout: default
 An nsIFeed represents a single Atom or RSS feed.
 
 
-## subtitle ##
+## Attributes ##
+
+### subtitle ###
  
 Uses description, subtitle, and extensions
 to generate a summary. 
 
 
-## TYPE_FEED ##
-
-## TYPE_AUDIO ##
-
-## TYPE_IMAGE ##
-
-## TYPE_VIDEO ##
-
-## type ##
+### type ###
 
 The type of feed. For example, a podcast would be TYPE_AUDIO.
 
 
-## enclosureCount ##
+### enclosureCount ###
 
 The total number of enclosures found in the feed.
 
 
-## items ##
+### items ###
 
 The items or entries in feed.
 
 
-## cloud ##
+### cloud ###
 
 No one really knows what cloud is for.
 
@@ -44,18 +38,18 @@ It supposedly enables some sort of interaction with an XML-RPC or
 SOAP service.
 
 
-## generator ##
+### generator ###
 
 Information about the software that produced the feed.
 
 
-## image ##
+### image ###
 
 An image url and some metadata (as defined by RSS2).
 
 
 
-## textInput ##
+### textInput ###
 
 No one really knows what textInput is for.
 
@@ -64,7 +58,7 @@ See
 for more details.
 
 
-## skipDays ##
+### skipDays ###
 
 Days to skip fetching. This field was supposed to designate
 intervals for feed fetching. It's not generally implemented. For
@@ -72,9 +66,19 @@ example, if this array contained "Monday", aggregators should not
 fetch the feed on Mondays.
 
 
-## skipHours ##
+### skipHours ###
 
 Hours to skip fetching. This field was supposed to designate
 intervals for feed fetching. It's not generally implemented. See
 <http://blogs.law.harvard.edu/tech/rss> for more information.
 
+
+## Constants ##
+
+### TYPE_FEED ###
+
+### TYPE_AUDIO ###
+
+### TYPE_IMAGE ###
+
+### TYPE_VIDEO ###

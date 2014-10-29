@@ -4,10 +4,16 @@ layout: default
 
 # nsIDOMMouseScrollEvent #
 
-## HORIZONTAL_AXIS ##
+## Methods ##
 
-## VERTICAL_AXIS ##
+### initMouseScrollEvent ###
 
-## axis ##
+## Attributes ##
 
-## initMouseScrollEvent ##
+### axis ###
+
+## Constants ##
+
+### HORIZONTAL_AXIS ###
+
+### VERTICAL_AXIS ###

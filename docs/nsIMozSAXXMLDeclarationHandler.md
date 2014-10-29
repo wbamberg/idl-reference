@@ -4,4 +4,6 @@ layout: default
 
 # nsIMozSAXXMLDeclarationHandler #
 
-## handleXMLDeclaration ##
+## Methods ##
+
+### handleXMLDeclaration ###

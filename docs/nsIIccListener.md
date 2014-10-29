@@ -4,10 +4,12 @@ layout: default
 
 # nsIIccListener #
 
-## notifyStkCommand ##
+## Methods ##
 
-## notifyStkSessionEnd ##
+### notifyStkCommand ###
 
-## notifyCardStateChanged ##
+### notifyStkSessionEnd ###
 
-## notifyIccInfoChanged ##
+### notifyCardStateChanged ###
+
+### notifyIccInfoChanged ###

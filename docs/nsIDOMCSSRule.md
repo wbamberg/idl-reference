@@ -11,42 +11,48 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Style
 
 
-## UNKNOWN_RULE ##
+## Methods ##
 
-## STYLE_RULE ##
+### getCSSRule ###
 
-## CHARSET_RULE ##
+## Attributes ##
 
-## IMPORT_RULE ##
+### type ###
 
-## MEDIA_RULE ##
+### cssText ###
 
-## FONT_FACE_RULE ##
+### parentStyleSheet ###
 
-## PAGE_RULE ##
+### parentRule ###
 
-## KEYFRAMES_RULE ##
+## Constants ##
 
-## KEYFRAME_RULE ##
+### UNKNOWN_RULE ###
 
-## MOZ_KEYFRAMES_RULE ##
+### STYLE_RULE ###
 
-## MOZ_KEYFRAME_RULE ##
+### CHARSET_RULE ###
 
-## NAMESPACE_RULE ##
+### IMPORT_RULE ###
 
-## COUNTER_STYLE_RULE ##
+### MEDIA_RULE ###
 
-## SUPPORTS_RULE ##
+### FONT_FACE_RULE ###
 
-## FONT_FEATURE_VALUES_RULE ##
+### PAGE_RULE ###
 
-## type ##
+### KEYFRAMES_RULE ###
 
-## cssText ##
+### KEYFRAME_RULE ###
 
-## parentStyleSheet ##
+### MOZ_KEYFRAMES_RULE ###
 
-## parentRule ##
+### MOZ_KEYFRAME_RULE ###
 
-## getCSSRule ##
+### NAMESPACE_RULE ###
+
+### COUNTER_STYLE_RULE ###
+
+### SUPPORTS_RULE ###
+
+### FONT_FEATURE_VALUES_RULE ###

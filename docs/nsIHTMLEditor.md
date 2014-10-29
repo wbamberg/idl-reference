@@ -4,15 +4,9 @@ layout: default
 
 # nsIHTMLEditor #
 
-## eLeft ##
+## Methods ##
 
-## eCenter ##
-
-## eRight ##
-
-## eJustify ##
-
-## addDefaultProperty ##
+### addDefaultProperty ###
 
 AddDefaultProperty() registers a default style property with the editor
 
@@ -25,7 +19,7 @@ AddDefaultProperty() registers a default style property with the editor
                             aValue="0x00FFFF"
 
 
-## removeDefaultProperty ##
+### removeDefaultProperty ###
 
 RemoveDefaultProperty() unregisters a default style property with the editor
 
@@ -38,13 +32,13 @@ RemoveDefaultProperty() unregisters a default style property with the editor
                             aValue="0x00FFFF"
 
 
-## removeAllDefaultProperties ##
+### removeAllDefaultProperties ###
 
 RemoveAllDefaultProperties() unregisters all default style properties with the editor
 
 
 
-## setInlineProperty ##
+### setInlineProperty ###
 
 SetInlineProperty() sets the aggregate properties on the current selection
 
@@ -58,7 +52,7 @@ SetInlineProperty() sets the aggregate properties on the current selection
                             aValue="0x00FFFF"
 
 
-## getInlineProperty ##
+### getInlineProperty ###
 
 getInlineProperty() gets aggregate properties of the current selection.
 All object in the current selection are scanned and their attributes are
@@ -80,15 +74,15 @@ represented in a list of Property object.
                          selection have the property
 
 
-## getInlinePropertyWithAttrValue ##
+### getInlinePropertyWithAttrValue ###
 
-## removeAllInlineProperties ##
+### removeAllInlineProperties ###
 
 removeAllInlineProperties() deletes all the inline properties from all 
 text in the current selection.
 
 
-## removeInlineProperty ##
+### removeInlineProperty ###
 
 removeInlineProperty() deletes the properties from all text in the current
 selection.  If aProperty is not set on the selection, nothing is done.
@@ -107,21 +101,21 @@ selection.  If aProperty is not set on the selection, nothing is done.
                    are to be removed from the selection.
 
 
-## increaseFontSize ##
+### increaseFontSize ###
 
  Increase font size for text in selection by 1 HTML unit
  All existing text is scanned for existing <FONT SIZE> attributes
  so they will be incremented instead of inserting new <FONT> tag
 
 
-## decreaseFontSize ##
+### decreaseFontSize ###
 
  Decrease font size for text in selection by 1 HTML unit
  All existing text is scanned for existing <FONT SIZE> attributes
  so they will be decreased instead of inserting new <FONT> tag
 
 
-## nodeIsBlock ##
+### nodeIsBlock ###
 
 Tests if a node is a BLOCK element according the the HTML 4.0 DTD.
   This does NOT consider CSS effect on display type
@@ -129,20 +123,20 @@ Tests if a node is a BLOCK element according the the HTML 4.0 DTD.
 @param aNode      the node to test
 
 
-## insertHTML ##
+### insertHTML ###
 
 Insert some HTML source at the current location
 
 @param aInputString   the string to be inserted
 
 
-## pasteNoFormatting ##
+### pasteNoFormatting ###
  
 Paste the text in the OS clipboard at the cursor position, replacing
 the selected text (if any), but strip out any HTML styles and formatting
 
 
-## rebuildDocumentFromSource ##
+### rebuildDocumentFromSource ###
  
  Rebuild the entire document from source HTML
  Needed to be able to edit HEAD and other outside-of-BODY content
@@ -150,7 +144,7 @@ the selected text (if any), but strip out any HTML styles and formatting
  @param aSourceString   HTML source string of the entire new document
 
 
-## insertHTMLWithContext ##
+### insertHTMLWithContext ###
 
 Insert some HTML source, interpreting
 the string argument according to the given context.
@@ -166,7 +160,7 @@ the string argument according to the given context.
 @param aCollapseSelection  used with aDestNode during drag&drop
 
 
-## insertElementAtSelection ##
+### insertElementAtSelection ###
  
 Insert an element, which may have child nodes, at the selection
 Used primarily to insert a new element for various insert element dialogs,
@@ -180,12 +174,12 @@ Used primarily to insert a new element for various insert element dialogs,
     Named Anchors, which insert before the selection
 
 
-## setDocumentTitle ##
+### setDocumentTitle ###
  
   Set the documents title.
 
 
-## updateBaseURL ##
+### updateBaseURL ###
  
   Set the BaseURL for the document to the current URL
     but only if the page doesn't have a <base> tag
@@ -194,14 +188,14 @@ Used primarily to insert a new element for various insert element dialogs,
   This is used as base for relativizing link and image urls
 
 
-## selectElement ##
+### selectElement ###
  
 Set the selection at the suppled element
 
 @param aElement   An element in the document
 
 
-## setCaretAfterElement ##
+### setCaretAfterElement ###
  
 Create a collapsed selection just after aElement
 
@@ -215,13 +209,13 @@ The selection is set to parent-of-aElement with an
 @param aElement  An element in the document
 
 
-## setParagraphFormat ##
+### setParagraphFormat ###
 
 SetParagraphFormat       Insert a block paragraph tag around selection
 @param aParagraphFormat  "p", "h1" to "h6", "address", "pre", or "blockquote"
 
 
-## getParagraphState ##
+### getParagraphState ###
 
 getParagraphState returns what block tag paragraph format is in
 the selection.
@@ -229,7 +223,7 @@ the selection.
 @return           Name of block tag. "" is returned for none.
 
 
-## getFontFaceState ##
+### getFontFaceState ###
  
 getFontFaceState returns what font face is in the selection.
 @param aMixed    True if there is more than one font face
@@ -237,28 +231,28 @@ getFontFaceState returns what font face is in the selection.
                  tt tag.  "" is returned for none.
 
 
-## getFontColorState ##
+### getFontColorState ###
  
 getFontColorState returns what font face is in the selection.
 @param aMixed     True if there is more than one font color
 @return           Color string. "" is returned for none.
 
 
-## getBackgroundColorState ##
+### getBackgroundColorState ###
  
 getFontColorState returns what font face is in the selection.
 @param aMixed     True if there is more than one font color
 @return           Color string. "" is returned for none.
 
 
-## getHighlightColorState ##
+### getHighlightColorState ###
  
 getHighlightColorState returns what the highlight color of the selection.
 @param aMixed     True if there is more than one font color
 @return           Color string. "" is returned for none.
 
 
-## getListState ##
+### getListState ###
  
 getListState returns what list type is in the selection.
 @param aMixed    True if there is more than one type of list, or
@@ -269,7 +263,7 @@ getListState returns what list type is in the selection.
 @param aDL       true if a "dl" list is selected.
 
 
-## getListItemState ##
+### getListItemState ###
  
 getListItemState returns what list item type is in the selection.
 @param aMixed    True if there is more than one type of list item, or
@@ -279,7 +273,7 @@ getListItemState returns what list item type is in the selection.
 @param aDD       true if "dd" list items are selected.
 
 
-## getAlignment ##
+### getAlignment ###
  
 getAlignment     returns what alignment is in the selection.
 @param aMixed    True if there is more than one type of list item, or
@@ -288,37 +282,37 @@ getAlignment     returns what alignment is in the selection.
                  (left/center/right)
 
 
-## getIndentState ##
+### getIndentState ###
 
 Document me!
 
 
 
-## makeOrChangeList ##
+### makeOrChangeList ###
 
 Document me!
 
 
 
-## removeList ##
+### removeList ###
 
 Document me!
 
 
 
-## indent ##
+### indent ###
 
 Document me!
 
 
 
-## align ##
+### align ###
 
 Document me!
 
 
 
-## getElementOrParentByTagName ##
+### getElementOrParentByTagName ###
  
 Return the input node or a parent matching the given aTagName,
   starting the search at the supplied node.
@@ -340,7 +334,7 @@ An example of use is for testing if a node is in a table cell
                 (passes NS_SUCCEEDED macro)
 
 
-## getSelectedElement ##
+### getSelectedElement ###
  
 Return an element only if it is the only node selected,
    such as an image, horizontal rule, etc.
@@ -361,17 +355,17 @@ The exception is a link, which is more like a text attribute:
                  (passes NS_SUCCEEDED macro)
 
 
-## getHeadContentsAsHTML ##
+### getHeadContentsAsHTML ###
  
 Output the contents of the <HEAD> section as text/HTML format
 
 
-## replaceHeadContentsWithHTML ##
+### replaceHeadContentsWithHTML ###
  
 Replace all children of <HEAD> with string of HTML source
 
 
-## createElementWithDefaults ##
+### createElementWithDefaults ###
  
 Return a new element with default attribute values
 
@@ -390,21 +384,21 @@ Used primarily to supply new element for various insert element dialogs
 @return          The new element created.
 
 
-## insertLinkAroundSelection ##
+### insertLinkAroundSelection ###
  
 Insert an link element as the parent of the current selection
 
 @param aElement   An "A" element with a non-empty "href" attribute
 
 
-## setBackgroundColor ##
+### setBackgroundColor ###
  
 Set the value of the "bgcolor" attribute on the document's <body> element
 
 @param aColor  The HTML color string, such as "#ffccff" or "yellow"
 
 
-## setBodyAttribute ##
+### setBodyAttribute ###
  
 Set an attribute on the document's <body> element
    such as text, link, background colors
@@ -415,7 +409,7 @@ Set an attribute on the document's <body> element
 @param aValue  The value of the attribute
 
 
-## getLinkedObjects ##
+### getLinkedObjects ###
 
 Find all the nodes in the document which contain references
 to outside URIs (e.g. a href, img src, script src, etc.)
@@ -424,27 +418,19 @@ The objects in the array will be type nsIURIRefObject.
 @return aNodeList    the linked nodes found
 
 
-## isCSSEnabled ##
- 
-A boolean which is true is the HTMLEditor has been instantiated
-with CSS knowledge and if the CSS pref is currently checked
-
-@return    true if CSS handled and enabled
-
-
-## addInsertionListener ##
+### addInsertionListener ###
 
 Add listener for insertion override
 @param inFilter  function which callers want called during insertion
 
 
-## removeInsertionListener ##
+### removeInsertionListener ###
 
 Remove listener for insertion override
 @param inFilter  function which callers do not want called during insertion
 
 
-## createAnonymousElement ##
+### createAnonymousElement ###
 
 Returns an anonymous nsDOMElement of type aTag,
 child of aParentNode. If aIsCreatedHidden is true, the class
@@ -461,22 +447,43 @@ the empty string, it becomes the value of the attribute "_moz_anonclass"
                              element
 
 
-## getSelectionContainer ##
+### getSelectionContainer ###
 
 returns the deepest container of the selection
 @return a DOM Element
 
 
-## checkSelectionStateForAnonymousButtons ##
+### checkSelectionStateForAnonymousButtons ###
 
 Checks if the anonymous nodes created by the HTML editor have to be
 refreshed or hidden depending on a possible new state of the selection
 @param aSelection [IN] a selection
 
 
-## isAnonymousElement ##
+### isAnonymousElement ###
 
-## returnInParagraphCreatesNewParagraph ##
+### breakIsVisible ###
+
+Checks whether a BR node is visible to the user.
+
+
+### GetActiveEditingHost ###
+
+Get an active editor's editing host in DOM window.  If this editor isn't
+active in the DOM window, this returns NULL.
+
+
+## Attributes ##
+
+### isCSSEnabled ###
+ 
+A boolean which is true is the HTMLEditor has been instantiated
+with CSS knowledge and if the CSS pref is currently checked
+
+@return    true if CSS handled and enabled
+
+
+### returnInParagraphCreatesNewParagraph ###
 
 A boolean indicating if a return key pressed in a paragraph creates
 another paragraph or just inserts a <br> at the caret
@@ -484,13 +491,12 @@ another paragraph or just inserts a <br> at the caret
 @return    true if CR in a paragraph creates a new paragraph
 
 
-## breakIsVisible ##
+## Constants ##
 
-Checks whether a BR node is visible to the user.
+### eLeft ###
 
+### eCenter ###
 
-## GetActiveEditingHost ##
+### eRight ###
 
-Get an active editor's editing host in DOM window.  If this editor isn't
-active in the DOM window, this returns NULL.
-
+### eJustify ###

@@ -14,24 +14,26 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## align ##
+## Attributes ##
 
-## alt ##
+### align ###
 
-## archive ##
+### alt ###
 
-## code ##
+### archive ###
 
-## codeBase ##
+### code ###
 
-## height ##
+### codeBase ###
 
-## hspace ##
+### height ###
 
-## name ##
+### hspace ###
 
-## object ##
+### name ###
 
-## vspace ##
+### object ###
 
-## width ##
+### vspace ###
+
+### width ###

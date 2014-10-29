@@ -15,20 +15,18 @@ changing the priority of an object may be disallowed (resulting in an
 exception being thrown) or may simply be ignored.
 
 
-## PRIORITY_HIGHEST ##
+## Methods ##
 
-Typical priority values.
+### adjustPriority ###
+
+This method adjusts the priority attribute by a given delta.  It helps
+reduce the amount of coding required to increment or decrement the value
+of the priority attribute.
 
 
-## PRIORITY_HIGH ##
+## Attributes ##
 
-## PRIORITY_NORMAL ##
-
-## PRIORITY_LOW ##
-
-## PRIORITY_LOWEST ##
-
-## priority ##
+### priority ###
 
 This attribute may be modified to change the priority of this object.  The
 implementation of this interface is free to truncate a given priority
@@ -37,9 +35,17 @@ initialized to PRIORITY_NORMAL, but implementations may choose to assign a
 different initial value.
 
 
-## adjustPriority ##
+## Constants ##
 
-This method adjusts the priority attribute by a given delta.  It helps
-reduce the amount of coding required to increment or decrement the value
-of the priority attribute.
+### PRIORITY_HIGHEST ###
 
+Typical priority values.
+
+
+### PRIORITY_HIGH ###
+
+### PRIORITY_NORMAL ###
+
+### PRIORITY_LOW ###
+
+### PRIORITY_LOWEST ###

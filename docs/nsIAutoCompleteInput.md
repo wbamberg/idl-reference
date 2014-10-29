@@ -4,52 +4,56 @@ layout: default
 
 # nsIAutoCompleteInput #
 
-## popup ##
+## Methods ##
 
-## controller ##
+### getSearchAt ###
 
-## popupOpen ##
+### selectTextRange ###
 
-## disableAutoComplete ##
+### onSearchBegin ###
 
-## completeDefaultIndex ##
+### onSearchComplete ###
 
-## completeSelectedIndex ##
+### onTextEntered ###
 
-## forceComplete ##
+### onTextReverted ###
 
-## minResultsForPopup ##
+## Attributes ##
 
-## maxRows ##
+### popup ###
 
-## showCommentColumn ##
+### controller ###
 
-## showImageColumn ##
+### popupOpen ###
 
-## timeout ##
+### disableAutoComplete ###
 
-## searchParam ##
+### completeDefaultIndex ###
 
-## searchCount ##
+### completeSelectedIndex ###
 
-## getSearchAt ##
+### forceComplete ###
 
-## textValue ##
+### minResultsForPopup ###
 
-## selectionStart ##
+### maxRows ###
 
-## selectionEnd ##
+### showCommentColumn ###
 
-## selectTextRange ##
+### showImageColumn ###
 
-## onSearchBegin ##
+### timeout ###
 
-## onSearchComplete ##
+### searchParam ###
 
-## onTextEntered ##
+### searchCount ###
 
-## onTextReverted ##
+### textValue ###
 
-## consumeRollupEvent ##
+### selectionStart ###
 
-## inPrivateContext ##
+### selectionEnd ###
+
+### consumeRollupEvent ###
+
+### inPrivateContext ###

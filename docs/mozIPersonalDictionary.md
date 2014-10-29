@@ -7,47 +7,44 @@ layout: default
 This interface represents a Personal Dictionary.
 
 
-## load ##
+## Methods ##
+
+### load ###
 
 Load the dictionary
 
 
-## save ##
+### save ###
 
 Save the dictionary
 
 
-## wordList ##
-
-Get the (lexicographically sorted) list of words
-
-
-## check ##
+### check ###
 
 Check a unicode string
 
 
-## addWord ##
+### addWord ###
 
 Add a word to the personal dictionary
 
 
-## removeWord ##
+### removeWord ###
 
 Remove a word from the personal dictionary
 
 
-## ignoreWord ##
+### ignoreWord ###
 
 Add a word to the ignore all list
 
 
-## endSession ##
+### endSession ###
 
 Clear the ignore list
 
 
-## addCorrection ##
+### addCorrection ###
  
 These three functions are here in case we want to store previous 
 misspellings and return them at the head of the misspell list.
@@ -56,12 +53,19 @@ misspellings and return them at the head of the misspell list.
 Add a misspelling to the list of corrections
 
 
-## removeCorrection ##
+### removeCorrection ###
 
 Remove a misspelling from the list of corrections
 
 
-## getCorrection ##
+### getCorrection ###
 
 Get a list of previous corrections for the word
+
+
+## Attributes ##
+
+### wordList ###
+
+Get the (lexicographically sorted) list of words
 

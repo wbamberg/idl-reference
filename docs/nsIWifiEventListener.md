@@ -4,6 +4,8 @@ layout: default
 
 # nsIWifiEventListener #
 
-## onWaitEvent ##
+## Methods ##
 
-## onCommand ##
+### onWaitEvent ###
+
+### onCommand ###

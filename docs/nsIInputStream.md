@@ -18,14 +18,16 @@ the case that a blocking input stream should be implemented using thread-
 safe AddRef and Release.
 
 
-## close ##
+## Methods ##
+
+### close ###
  
 Close the stream.  This method causes subsequent calls to Read and
 ReadSegments to return 0 bytes read to indicate end-of-file.  Any
 subsequent calls to Available should throw NS_BASE_STREAM_CLOSED.
 
 
-## available ##
+### available ###
 
 Determine number of bytes available in the stream.  A non-blocking
 stream that does not yet have any data to read should return 0 bytes
@@ -47,7 +49,7 @@ implementations automatically close when eof is reached; some do not).
   condition
 
 
-## read ##
+### read ###
  
 Read data from the stream.
 
@@ -64,7 +66,7 @@ Read data from the stream.
 NOTE: this method should not throw NS_BASE_STREAM_CLOSED.
 
 
-## readSegments ##
+### readSegments ###
 
 Low-level read method that provides access to the stream's underlying
 buffer.  The writer function may be called multiple times for segmented
@@ -90,7 +92,7 @@ buffer (e.g., socket input stream).
 NOTE: this method should not throw NS_BASE_STREAM_CLOSED.
 
 
-## isNonBlocking ##
+### isNonBlocking ###
 
 @return true if stream is non-blocking
 

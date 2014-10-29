@@ -9,7 +9,9 @@ universally unique identifiers, ideally using any platform-native
 method for generating UUIDs.
 
 
-## generateUUID ##
+## Methods ##
+
+### generateUUID ###
 
 Obtains a new UUID using appropriate platform-specific methods to
 obtain a nsID that can be considered to be globally unique.
@@ -20,7 +22,7 @@ obtain a nsID that can be considered to be globally unique.
 an underlying source of randomness is not available)
 
 
-## generateUUIDInPlace ##
+### generateUUIDInPlace ###
 
 Obtain a new UUID like the generateUUID method, but place it in
 the provided nsID pointer instead of allocating a new nsID.

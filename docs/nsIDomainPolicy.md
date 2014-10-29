@@ -4,12 +4,16 @@ layout: default
 
 # nsIDomainPolicy #
 
-## blacklist ##
+## Methods ##
 
-## superBlacklist ##
+### deactivate ###
 
-## whitelist ##
+## Attributes ##
 
-## superWhitelist ##
+### blacklist ###
 
-## deactivate ##
+### superBlacklist ###
+
+### whitelist ###
+
+### superWhitelist ###

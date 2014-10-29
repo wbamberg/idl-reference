@@ -7,6 +7,10 @@ layout: default
 Scriptable storage for 64-bit integers
 
 
-## data ##
+## Methods ##
 
-## toString ##
+### toString ###
+
+## Attributes ##
+
+### data ###

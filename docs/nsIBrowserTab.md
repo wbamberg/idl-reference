@@ -4,6 +4,8 @@ layout: default
 
 # nsIBrowserTab #
 
-## window ##
+## Attributes ##
 
-## scale ##
+### window ###
+
+### scale ###

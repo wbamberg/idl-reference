@@ -4,7 +4,9 @@ layout: default
 
 # nsIBackgroundFileSaverObserver #
 
-## onTargetChange ##
+## Methods ##
+
+### onTargetChange ###
 
 Called when the name of the output file has been determined.  This function
 may be called more than once if the target file is renamed while saving.
@@ -15,7 +17,7 @@ may be called more than once if the target file is renamed while saving.
        Name of the file that is being written.
 
 
-## onSaveComplete ##
+### onSaveComplete ###
 
 Called when the operation completed, and the target file has been closed.
 If the operation succeeded, the target file is ready to be used, otherwise

@@ -4,12 +4,9 @@ layout: default
 
 # nsIRDFDataSource #
 
-## URI ##
- The "URI" of the data source. This used by the RDF service's
-|GetDataSource()| method to cache datasources.
+## Methods ##
 
-
-## GetSource ##
+### GetSource ###
  Find an RDF resource that points to a given node over the
 specified arc & truth value
 
@@ -17,13 +14,13 @@ specified arc & truth value
 to the target with the specified property.
 
 
-## GetSources ##
+### GetSources ###
 
 Find all RDF resources that point to a given node over the
 specified arc & truth value
 
 
-## GetTarget ##
+### GetTarget ###
 
 Find a child of that is related to the source by the given arc
 arc and truth value
@@ -32,23 +29,23 @@ arc and truth value
 source via the specified property.
 
 
-## GetTargets ##
+### GetTargets ###
 
 Find all children of that are related to the source by the given arc
 arc and truth value.
 
 
-## Assert ##
+### Assert ###
 
 Add an assertion to the graph.
 
 
-## Unassert ##
+### Unassert ###
 
 Remove an assertion from the graph.
 
 
-## Change ##
+### Change ###
 
 Change an assertion from
 
@@ -59,7 +56,7 @@ to
   [aSource]--[aProperty]-->[aNewTarget]
 
 
-## Move ##
+### Move ###
 
 'Move' an assertion from
 
@@ -70,68 +67,68 @@ to
   [aNewSource]--[aProperty]-->[aTarget]
 
 
-## HasAssertion ##
+### HasAssertion ###
 
 Query whether an assertion exists in this graph.
 
 
-## AddObserver ##
+### AddObserver ###
 
 Add an observer to this data source. If the datasource
 supports observers, the datasource source should hold a strong
 reference to the observer.
 
 
-## RemoveObserver ##
+### RemoveObserver ###
 
 Remove an observer from this data source.
 
 
-## ArcLabelsIn ##
+### ArcLabelsIn ###
 
 Get a cursor to iterate over all the arcs that point into a node.
 
 
-## ArcLabelsOut ##
+### ArcLabelsOut ###
 
 Get a cursor to iterate over all the arcs that originate in
 a resource.
 
 
-## GetAllResources ##
+### GetAllResources ###
 
 Retrieve all of the resources that the data source currently
 refers to.
 
 
-## IsCommandEnabled ##
+### IsCommandEnabled ###
 
 Returns whether a given command is enabled for a set of sources. 
 
 
-## DoCommand ##
+### DoCommand ###
 
 Perform the specified command on set of sources.
 
 
-## GetAllCmds ##
+### GetAllCmds ###
 
 Returns the set of all commands defined for a given source.
 
 
-## hasArcIn ##
+### hasArcIn ###
 
 Returns true if the specified node is pointed to by the specified arc.
 Equivalent to enumerating ArcLabelsIn and comparing for the specified arc.
 
 
-## hasArcOut ##
+### hasArcOut ###
 
 Returns true if the specified node has the specified outward arc.
 Equivalent to enumerating ArcLabelsOut and comparing for the specified arc.
 
 
-## beginUpdateBatch ##
+### beginUpdateBatch ###
 
 Notify observers that the datasource is about to send several
 notifications at once.
@@ -139,8 +136,15 @@ This must be followed by calling endUpdateBatch(), otherwise
 viewers will get out of sync.
 
 
-## endUpdateBatch ##
+### endUpdateBatch ###
 
 Notify observers that the datasource has completed issuing
 a notification group.
+
+
+## Attributes ##
+
+### URI ###
+ The "URI" of the data source. This used by the RDF service's
+|GetDataSource()| method to cache datasources.
 

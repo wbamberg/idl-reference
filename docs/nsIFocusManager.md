@@ -32,35 +32,9 @@ drawn around the document.
 Blur and focus events do not bubble as per the W3C DOM Events spec.
 
 
-## activeWindow ##
+## Methods ##
 
-The most active (frontmost) window, or null if no window that is part of
-the application is active. Setting the activeWindow raises it, and
-focuses the current child window's current element, if any. Setting this
-to null or to a non-top-level window throws an NS_ERROR_INVALID_ARG
-exception.
-
-
-## focusedWindow ##
-
-The child window within the activeWindow that is focused. This will
-always be activeWindow, a child window of activeWindow or null if no
-child window is focused. Setting the focusedWindow changes the focused
-window and raises the toplevel window it is in. If the current focus
-within the new focusedWindow is a frame element, then the focusedWindow
-will actually be set to the child window and the current element within
-that set as the focused element. This process repeats downwards until a
-non-frame element is found.
-
-
-## focusedElement ##
-
-The element that is currently focused. This will always be an element
-within the document loaded in focusedWindow or null if no element in that
-document is focused.
-
-
-## getLastFocusMethod ##
+### getLastFocusMethod ###
 
 Returns the method that was used to focus the element in window. This
 will either be 0, FLAG_BYMOUSE or FLAG_BYKEY. If window is null, then
@@ -69,13 +43,13 @@ of retrieving the method that was used to focus the currently focused
 element.
 
 
-## setFocus ##
+### setFocus ###
 
 Changes the focused element reference within the window containing
 aElement to aElement.
 
 
-## moveFocus ##
+### moveFocus ###
 
 Move the focus to another element. If aStartElement is specified, then
 movement is done relative to aStartElement. If aStartElement is null,
@@ -94,7 +68,7 @@ the focus is not changed.
 Returns the element that was focused.
 
 
-## clearFocus ##
+### clearFocus ###
 
 Clears the focused element within aWindow. If the current focusedWindow
 is a descendant of aWindow, sets the current focusedWindow to aWindow.
@@ -102,7 +76,7 @@ is a descendant of aWindow, sets the current focusedWindow to aWindow.
 @throws NS_ERROR_INVALID_ARG if aWindow is null
 
 
-## getFocusedElementForWindow ##
+### getFocusedElementForWindow ###
 
 Returns the currently focused element within aWindow. If aWindow is equal
 to the current value of focusedWindow, then the returned element will be
@@ -121,24 +95,92 @@ element is focused.
 @throws NS_ERROR_INVALID_ARG if aWindow is null
 
 
-## moveCaretToFocus ##
+### moveCaretToFocus ###
 
 Moves the selection caret within aWindow to the current focus.
 
 
-## elementIsFocusable ##
+### elementIsFocusable ###
 
 Check if given element is focusable.
 
 
-## FLAG_RAISE ##
+### windowRaised ###
 
-## FLAG_NOSCROLL ##
+Called when a window has been raised.
+
+
+### windowLowered ###
+
+Called when a window has been lowered.
+
+
+### windowShown ###
+
+Called when a new document in a window is shown.
+
+If aNeedsFocus is true, then focus events are expected to be fired on the
+window if this window is in the focused window chain.
+
+
+### windowHidden ###
+
+Called when a document in a window has been hidden or otherwise can no
+longer accept focus.
+
+
+### fireDelayedEvents ###
+
+Fire any events that have been delayed due to synchronized actions.
+
+
+### focusPlugin ###
+
+Indicate that a plugin wishes to take the focus. This is similar to a
+normal focus except that the widget focus is not changed. Updating the
+widget focus state is the responsibility of the caller.
+
+
+## Attributes ##
+
+### activeWindow ###
+
+The most active (frontmost) window, or null if no window that is part of
+the application is active. Setting the activeWindow raises it, and
+focuses the current child window's current element, if any. Setting this
+to null or to a non-top-level window throws an NS_ERROR_INVALID_ARG
+exception.
+
+
+### focusedWindow ###
+
+The child window within the activeWindow that is focused. This will
+always be activeWindow, a child window of activeWindow or null if no
+child window is focused. Setting the focusedWindow changes the focused
+window and raises the toplevel window it is in. If the current focus
+within the new focusedWindow is a frame element, then the focusedWindow
+will actually be set to the child window and the current element within
+that set as the focused element. This process repeats downwards until a
+non-frame element is found.
+
+
+### focusedElement ###
+
+The element that is currently focused. This will always be an element
+within the document loaded in focusedWindow or null if no element in that
+document is focused.
+
+
+## Constants ##
+
+### FLAG_RAISE ###
+
+### FLAG_NOSCROLL ###
 
 Do not scroll the element to focus into view
 
 
-## FLAG_NOSWITCHFRAME ##
+### FLAG_NOSWITCHFRAME ###
 
 If attempting to change focus in a window that is not focused, do not
 switch focus to that window. Instead, just update the focus within that
@@ -147,7 +189,7 @@ effect if a child window is focused and an attempt is made to adjust the
 focus in an ancestor, as the frame must be switched in this case.
 
 
-## FLAG_NOPARENTFRAME ##
+### FLAG_NOPARENTFRAME ###
 
 This flag is only used when passed to moveFocus. If set, focus is never
 moved to the parent frame of the starting element's document, instead
@@ -155,20 +197,20 @@ iterating around to the beginning of that document again. Child frames
 are navigated as normal.
 
 
-## FLAG_BYMOUSE ##
+### FLAG_BYMOUSE ###
 
 Focus is changing due to a mouse operation, for instance the mouse was
 clicked on an element.
 
 
-## FLAG_BYKEY ##
+### FLAG_BYKEY ###
 
 Focus is changing due to a key operation, for instance pressing the tab
 key. This flag would normally be passed when MOVEFOCUS_FORWARD or
 MOVEFOCUS_BACKWARD is used.
 
 
-## FLAG_BYMOVEFOCUS ##
+### FLAG_BYMOVEFOCUS ###
 
 Focus is changing due to a call to MoveFocus. This flag will be implied
 when MoveFocus is called except when one of the other mechanisms (mouse
@@ -176,70 +218,34 @@ or key) is specified, or when the type is MOVEFOCUS_ROOT or
 MOVEFOCUS_CARET.
 
 
-## FLAG_SHOWRING ##
+### FLAG_SHOWRING ###
 
 Always show the focus ring or other indicator of focus, regardless of
 other state.
 
 
-## MOVEFOCUS_FORWARD ##
+### MOVEFOCUS_FORWARD ###
  move focus forward one element, used when pressing TAB */
 
-## MOVEFOCUS_BACKWARD ##
+### MOVEFOCUS_BACKWARD ###
  move focus backward one element, used when pressing Shift+TAB */
 
-## MOVEFOCUS_FORWARDDOC ##
+### MOVEFOCUS_FORWARDDOC ###
  move focus forward to the next frame document, used when pressing F6 */
 
-## MOVEFOCUS_BACKWARDDOC ##
+### MOVEFOCUS_BACKWARDDOC ###
  move focus forward to the previous frame document, used when pressing Shift+F6 */
 
-## MOVEFOCUS_FIRST ##
+### MOVEFOCUS_FIRST ###
  move focus to the first focusable element */
 
-## MOVEFOCUS_LAST ##
+### MOVEFOCUS_LAST ###
  move focus to the last focusable element */
 
-## MOVEFOCUS_ROOT ##
+### MOVEFOCUS_ROOT ###
  move focus to the root element in the document */
 
-## MOVEFOCUS_CARET ##
+### MOVEFOCUS_CARET ###
  move focus to a link at the position of the caret. This is a special value used to
  focus links as the caret moves over them in caret browsing mode.
-
-
-## windowRaised ##
-
-Called when a window has been raised.
-
-
-## windowLowered ##
-
-Called when a window has been lowered.
-
-
-## windowShown ##
-
-Called when a new document in a window is shown.
-
-If aNeedsFocus is true, then focus events are expected to be fired on the
-window if this window is in the focused window chain.
-
-
-## windowHidden ##
-
-Called when a document in a window has been hidden or otherwise can no
-longer accept focus.
-
-
-## fireDelayedEvents ##
-
-Fire any events that have been delayed due to synchronized actions.
-
-
-## focusPlugin ##
-
-Indicate that a plugin wishes to take the focus. This is similar to a
-normal focus except that the widget focus is not changed. Updating the
-widget focus state is the responsibility of the caller.
 

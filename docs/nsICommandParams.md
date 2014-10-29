@@ -4,44 +4,48 @@ layout: default
 
 # nsICommandParams #
 
-## eNoType ##
+## Methods ##
 
-## eBooleanType ##
+### getValueType ###
 
-## eLongType ##
+### getBooleanValue ###
 
-## eDoubleType ##
+### getLongValue ###
 
-## eWStringType ##
+### getDoubleValue ###
 
-## eISupportsType ##
+### getStringValue ###
 
-## eStringType ##
+### getCStringValue ###
 
-## getValueType ##
+### getISupportsValue ###
 
-## getBooleanValue ##
+### setBooleanValue ###
 
-## getLongValue ##
+### setLongValue ###
 
-## getDoubleValue ##
+### setDoubleValue ###
 
-## getStringValue ##
+### setStringValue ###
 
-## getCStringValue ##
+### setCStringValue ###
 
-## getISupportsValue ##
+### setISupportsValue ###
 
-## setBooleanValue ##
+### removeValue ###
 
-## setLongValue ##
+## Constants ##
 
-## setDoubleValue ##
+### eNoType ###
 
-## setStringValue ##
+### eBooleanType ###
 
-## setCStringValue ##
+### eLongType ###
 
-## setISupportsValue ##
+### eDoubleType ###
 
-## removeValue ##
+### eWStringType ###
+
+### eISupportsType ###
+
+### eStringType ###

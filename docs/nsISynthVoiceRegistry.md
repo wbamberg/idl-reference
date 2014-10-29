@@ -4,7 +4,9 @@ layout: default
 
 # nsISynthVoiceRegistry #
 
-## addVoice ##
+## Methods ##
+
+### addVoice ###
 
 Register a speech synthesis voice.
 
@@ -15,7 +17,7 @@ Register a speech synthesis voice.
 @param aLocalService true if service does not require network.
 
 
-## removeVoice ##
+### removeVoice ###
 
 Remove a speech synthesis voice.
 
@@ -23,7 +25,7 @@ Remove a speech synthesis voice.
 @param aUri     a unique identifier of an existing voice.
 
 
-## setDefaultVoice ##
+### setDefaultVoice ###
 
 Set a voice as default.
 
@@ -31,14 +33,16 @@ Set a voice as default.
 @param aIsDefault true if this voice should be toggled as default.
 
 
-## voiceCount ##
+### getVoice ###
 
-## getVoice ##
+### isDefaultVoice ###
 
-## isDefaultVoice ##
+### isLocalVoice ###
 
-## isLocalVoice ##
+### getVoiceLang ###
 
-## getVoiceLang ##
+### getVoiceName ###
 
-## getVoiceName ##
+## Attributes ##
+
+### voiceCount ###

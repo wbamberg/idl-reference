@@ -9,47 +9,9 @@ history items.  Bookmarks consist of a set of user-customizable
 folders.  A URI in history can be contained in one or more such folders.
 
 
-## placesRoot ##
+## Methods ##
 
-The item ID of the Places root.
-
-
-## bookmarksMenuFolder ##
-
-The item ID of the bookmarks menu folder.
-
-
-## tagsFolder ##
-
-The item ID of the top-level folder that contain the tag "folders".
-
-
-## unfiledBookmarksFolder ##
-
-The item ID of the unfiled-bookmarks folder.
-
-
-## toolbarFolder ##
-
-The item ID of the personal toolbar folder.
-
-
-## DEFAULT_INDEX ##
-
-This value should be used for APIs that allow passing in an index
-where an index is not known, or not required to be specified.
-e.g.: When appending an item to a folder.
-
-
-## TYPE_BOOKMARK ##
-
-## TYPE_FOLDER ##
-
-## TYPE_SEPARATOR ##
-
-## TYPE_DYNAMIC_CONTAINER ##
-
-## insertBookmark ##
+### insertBookmark ###
 
 Inserts a child bookmark into the given folder.
 
@@ -72,14 +34,14 @@ Inserts a child bookmark into the given folder.
  @throws if aGuid is malformed.
 
 
-## removeItem ##
+### removeItem ###
 
 Removes a child item. Used to delete a bookmark or separator.
  @param aItemId
         The child item to remove
 
 
-## createFolder ##
+### createFolder ###
 
 Creates a new child folder and inserts it under the given parent.
  @param aParentFolder
@@ -96,7 +58,7 @@ Creates a new child folder and inserts it under the given parent.
  @throws if aGuid is malformed.
 
 
-## getRemoveFolderTransaction ##
+### getRemoveFolderTransaction ###
 
 Gets an undo-able transaction for removing a folder from the bookmarks
 tree.
@@ -114,7 +76,7 @@ specific IDs (potentially dangerous if abused by other code!) in the
 public API.
 
 
-## removeFolderChildren ##
+### removeFolderChildren ###
 
 Convenience function for container services.  Removes
 all children of the given folder.
@@ -122,7 +84,7 @@ all children of the given folder.
         The id of the folder to remove children from.
 
 
-## moveItem ##
+### moveItem ###
 
 Moves an item to a different container, preserving its contents.
  @param aItemId
@@ -137,7 +99,7 @@ removal of the original item. If you want to move from index X to
 index Y > X you must use moveItem(id, folder, Y + 1)
 
 
-## insertSeparator ##
+### insertSeparator ###
 
 Inserts a bookmark separator into the given folder at the given index.
 The separator can be removed using removeChildAt().
@@ -153,7 +115,7 @@ The separator can be removed using removeChildAt().
  @throws if aGuid is malformed.
 
 
-## getIdForItemAt ##
+### getIdForItemAt ###
 
 Get the itemId given the containing folder and the index.
  @param aParentId
@@ -164,7 +126,7 @@ Get the itemId given the containing folder and the index.
  @return The ID of the found item, -1 if the item does not exists.
 
 
-## setItemTitle ##
+### setItemTitle ###
 
 Set the title for an item.
  @param aItemId
@@ -175,7 +137,7 @@ Set the title for an item.
  @note  aTitle will be truncated to TITLE_LENGTH_MAX.
 
 
-## getItemTitle ##
+### getItemTitle ###
 
 Get the title for an item.
 
@@ -186,17 +148,17 @@ If no item title is available it will return a void string (null in JS).
  @return The title of the item.
 
 
-## setItemDateAdded ##
+### setItemDateAdded ###
 
 Set the date added time for an item.
 
 
-## getItemDateAdded ##
+### getItemDateAdded ###
 
 Get the date added time for an item.
 
 
-## setItemLastModified ##
+### setItemLastModified ###
 
 Set the last modified time for an item.
 
@@ -206,7 +168,7 @@ Set the last modified time for an item.
        the corresponding itemChanged notification instead.
 
 
-## getItemLastModified ##
+### getItemLastModified ###
 
 Get the last modified time for an item.
 
@@ -214,17 +176,17 @@ Get the last modified time for an item.
        dateAdded.
 
 
-## getBookmarkURI ##
+### getBookmarkURI ###
 
 Get the URI for a bookmark item.
 
 
-## getItemIndex ##
+### getItemIndex ###
 
 Get the index for an item.
 
 
-## setItemIndex ##
+### setItemIndex ###
 
 Changes the index for a item. This method does not change the indices of
 any other items in the same folder, so ensure that the new index does not
@@ -241,19 +203,19 @@ WARNING: This is API is intended for scenarios such as folder sorting,
  @throws If aNewIndex is out of bounds.
 
 
-## getItemType ##
+### getItemType ###
 
 Get an item's type (bookmark, separator, folder).
 The type is one of the TYPE_* constants defined above.
 
 
-## isBookmarked ##
+### isBookmarked ###
 
 Returns true if the given URI is in any bookmark folder. If you want the
 results to be redirect-aware, use getBookmarkedURIFor()
 
 
-## getBookmarkedURIFor ##
+### getBookmarkedURIFor ###
 
 Used to see if the given URI is bookmarked, or any page that redirected to
 it is bookmarked. For example, if I bookmark "mozilla.org" by manually
@@ -268,24 +230,24 @@ If there is no bookmarked page found, it will return NULL.
       redirection (1 -> 2 -> aURI).
 
 
-## changeBookmarkURI ##
+### changeBookmarkURI ###
 
 Change the bookmarked URI for a bookmark.
 This changes which "place" the bookmark points at,
 which means all annotations, etc are carried along.
 
 
-## getFolderIdForItem ##
+### getFolderIdForItem ###
 
 Get the parent folder's id for an item.
 
 
-## getBookmarkIdsForURI ##
+### getBookmarkIdsForURI ###
 
 Returns the list of bookmark ids that contain the given URI.
 
 
-## setKeywordForBookmark ##
+### setKeywordForBookmark ###
 
 Associates the given keyword with the given bookmark.
 
@@ -293,25 +255,25 @@ Use an empty keyword to clear the keyword associated with the URI.
 In both of these cases, succeeds but does nothing if the URL/keyword is not found.
 
 
-## getKeywordForURI ##
+### getKeywordForURI ###
 
 Retrieves the keyword for the given URI. Will be void string
 (null in JS) if no such keyword is found.
 
 
-## getKeywordForBookmark ##
+### getKeywordForBookmark ###
 
 Retrieves the keyword for the given bookmark. Will be void string
 (null in JS) if no such keyword is found.
 
 
-## getURIForKeyword ##
+### getURIForKeyword ###
 
 Returns the URI associated with the given keyword. Empty if no such
 keyword is found.
 
 
-## addObserver ##
+### addObserver ###
 
 Adds a bookmark observer. If ownsWeak is false, the bookmark service will
 keep an owning reference to the observer.  If ownsWeak is true, then
@@ -319,17 +281,17 @@ aObserver must implement nsISupportsWeakReference, and the bookmark
 service will keep a weak reference to the observer.
 
 
-## removeObserver ##
+### removeObserver ###
 
 Removes a bookmark observer.
 
 
-## getObservers ##
+### getObservers ###
 
 Gets an array of registered nsINavBookmarkObserver objects.
 
 
-## runInBatchMode ##
+### runInBatchMode ###
 
 Runs the passed callback inside of a database transaction.
 Use this when a lot of things are about to change, for example
@@ -342,3 +304,47 @@ nsINavBookmarkObserver.onBeginUpdateBatch/onEndUpdateBatch.
 @param aUserData
        Opaque parameter passed to nsINavBookmarksBatchCallback
 
+
+## Attributes ##
+
+### placesRoot ###
+
+The item ID of the Places root.
+
+
+### bookmarksMenuFolder ###
+
+The item ID of the bookmarks menu folder.
+
+
+### tagsFolder ###
+
+The item ID of the top-level folder that contain the tag "folders".
+
+
+### unfiledBookmarksFolder ###
+
+The item ID of the unfiled-bookmarks folder.
+
+
+### toolbarFolder ###
+
+The item ID of the personal toolbar folder.
+
+
+## Constants ##
+
+### DEFAULT_INDEX ###
+
+This value should be used for APIs that allow passing in an index
+where an index is not known, or not required to be specified.
+e.g.: When appending an item to a folder.
+
+
+### TYPE_BOOKMARK ###
+
+### TYPE_FOLDER ###
+
+### TYPE_SEPARATOR ###
+
+### TYPE_DYNAMIC_CONTAINER ###

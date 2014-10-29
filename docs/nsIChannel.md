@@ -18,105 +18,9 @@ response headers to be retrieved for the corresponding http transaction.
 This interface must be used only from the XPCOM main thread.
 
 
-## originalURI ##
+## Methods ##
 
-The original URI used to construct the channel. This is used in
-the case of a redirect or URI "resolution" (e.g. resolving a
-resource: URI to a file: URI) so that the original pre-redirect
-URI can still be obtained.  This is never null.  Attempts to
-set it to null must throw.
-
-NOTE: this is distinctly different from the http Referer (referring URI),
-which is typically the page that contained the original URI (accessible
-from nsIHttpChannel).
-
-
-## URI ##
-
-The URI corresponding to the channel.  Its value is immutable.
-
-
-## owner ##
-
-The owner, corresponding to the entity that is responsible for this
-channel.  Used by the security manager to grant or deny privileges to
-mobile code loaded from this channel.
-
-NOTE: this is a strong reference to the owner, so if the owner is also
-holding a strong reference to the channel, care must be taken to 
-explicitly drop its reference to the channel.
-
-
-## notificationCallbacks ##
-
-The notification callbacks for the channel.  This is set by clients, who
-wish to provide a means to receive progress, status and protocol-specific 
-notifications.  If this value is NULL, the channel implementation may use
-the notification callbacks from its load group.  The channel may also
-query the notification callbacks from its load group if its notification
-callbacks do not supply the requested interface.
-
-Interfaces commonly requested include: nsIProgressEventSink, nsIPrompt,
-and nsIAuthPrompt/nsIAuthPrompt2.
-
-When the channel is done, it must not continue holding references to
-this object.
-
-NOTE: A channel implementation should take care when "caching" an
-interface pointer queried from its notification callbacks.  If the
-notification callbacks are changed, then a cached interface pointer may
-become invalid and may therefore need to be re-queried.
-
-
-## securityInfo ##
-
-Transport-level security information (if any) corresponding to the channel.
-
-
-## contentType ##
-
-The MIME type of the channel's content if available. 
-
-NOTE: the content type can often be wrongly specified (e.g., wrong file
-extension, wrong MIME type, wrong document type stored on a server, etc.),
-and the caller most likely wants to verify with the actual data.
-
-Setting contentType before the channel has been opened provides a hint
-to the channel as to what the MIME type is.  The channel may ignore this
-hint in deciding on the actual MIME type that it will report.
-
-Setting contentType after onStartRequest has been fired or after open()
-is called will override the type determined by the channel.
-
-Setting contentType between the time that asyncOpen() is called and the
-time when onStartRequest is fired has undefined behavior at this time.
-
-The value of the contentType attribute is a lowercase string.  A value
-assigned to this attribute will be parsed and normalized as follows:
- 1- any parameters (delimited with a ';') will be stripped.
- 2- if a charset parameter is given, then its value will replace the
-    the contentCharset attribute of the channel.
- 3- the stripped contentType will be lowercased.
-Any implementation of nsIChannel must follow these rules.
-
-
-## contentCharset ##
-
-The character set of the channel's content if available and if applicable.
-This attribute only applies to textual data.
-
-The value of the contentCharset attribute is a mixedcase string.
-
-
-## contentLength ##
-
-The length of the data associated with the channel if available.  A value
-of -1 indicates that the content length is unknown. Note that this is a
-64-bit value and obsoletes the "content-length" property used on some
-channels.
-
-
-## open ##
+### open ###
 
 Synchronously open the channel.
 
@@ -132,7 +36,7 @@ NOTE: Implementations should throw NS_ERROR_IN_PROGRESS if the channel
 is reopened.
 
 
-## asyncOpen ##
+### asyncOpen ###
 
 Asynchronously open this channel.  Data is fed to the specified stream
 listener as it becomes available.  The stream listener's methods are
@@ -165,7 +69,159 @@ channel is reopened.
 @see nsIChannelEventSink for onChannelRedirect
 
 
-## LOAD_DOCUMENT_URI ##
+## Attributes ##
+
+### originalURI ###
+
+The original URI used to construct the channel. This is used in
+the case of a redirect or URI "resolution" (e.g. resolving a
+resource: URI to a file: URI) so that the original pre-redirect
+URI can still be obtained.  This is never null.  Attempts to
+set it to null must throw.
+
+NOTE: this is distinctly different from the http Referer (referring URI),
+which is typically the page that contained the original URI (accessible
+from nsIHttpChannel).
+
+
+### URI ###
+
+The URI corresponding to the channel.  Its value is immutable.
+
+
+### owner ###
+
+The owner, corresponding to the entity that is responsible for this
+channel.  Used by the security manager to grant or deny privileges to
+mobile code loaded from this channel.
+
+NOTE: this is a strong reference to the owner, so if the owner is also
+holding a strong reference to the channel, care must be taken to 
+explicitly drop its reference to the channel.
+
+
+### notificationCallbacks ###
+
+The notification callbacks for the channel.  This is set by clients, who
+wish to provide a means to receive progress, status and protocol-specific 
+notifications.  If this value is NULL, the channel implementation may use
+the notification callbacks from its load group.  The channel may also
+query the notification callbacks from its load group if its notification
+callbacks do not supply the requested interface.
+
+Interfaces commonly requested include: nsIProgressEventSink, nsIPrompt,
+and nsIAuthPrompt/nsIAuthPrompt2.
+
+When the channel is done, it must not continue holding references to
+this object.
+
+NOTE: A channel implementation should take care when "caching" an
+interface pointer queried from its notification callbacks.  If the
+notification callbacks are changed, then a cached interface pointer may
+become invalid and may therefore need to be re-queried.
+
+
+### securityInfo ###
+
+Transport-level security information (if any) corresponding to the channel.
+
+
+### contentType ###
+
+The MIME type of the channel's content if available. 
+
+NOTE: the content type can often be wrongly specified (e.g., wrong file
+extension, wrong MIME type, wrong document type stored on a server, etc.),
+and the caller most likely wants to verify with the actual data.
+
+Setting contentType before the channel has been opened provides a hint
+to the channel as to what the MIME type is.  The channel may ignore this
+hint in deciding on the actual MIME type that it will report.
+
+Setting contentType after onStartRequest has been fired or after open()
+is called will override the type determined by the channel.
+
+Setting contentType between the time that asyncOpen() is called and the
+time when onStartRequest is fired has undefined behavior at this time.
+
+The value of the contentType attribute is a lowercase string.  A value
+assigned to this attribute will be parsed and normalized as follows:
+ 1- any parameters (delimited with a ';') will be stripped.
+ 2- if a charset parameter is given, then its value will replace the
+    the contentCharset attribute of the channel.
+ 3- the stripped contentType will be lowercased.
+Any implementation of nsIChannel must follow these rules.
+
+
+### contentCharset ###
+
+The character set of the channel's content if available and if applicable.
+This attribute only applies to textual data.
+
+The value of the contentCharset attribute is a mixedcase string.
+
+
+### contentLength ###
+
+The length of the data associated with the channel if available.  A value
+of -1 indicates that the content length is unknown. Note that this is a
+64-bit value and obsoletes the "content-length" property used on some
+channels.
+
+
+### contentDisposition ###
+
+Access to the type implied or stated by the Content-Disposition header
+if available and if applicable. This allows determining inline versus
+attachment.
+
+Setting contentDisposition provides a hint to the channel about the
+disposition.  If a normal Content-Disposition header is present its
+value will always be used.  If it is missing the hinted value will
+be used if set.
+
+Implementations should throw NS_ERROR_NOT_AVAILABLE if the header either
+doesn't exist for this type of channel or is empty, and return
+DISPOSITION_ATTACHMENT if an invalid/noncompliant value is present.
+
+
+### contentDispositionFilename ###
+
+Access to the filename portion of the Content-Disposition header if
+available and if applicable. This allows getting the preferred filename
+without having to parse it out yourself.
+
+Setting contentDispositionFilename provides a hint to the channel about
+the disposition.  If a normal Content-Disposition header is present its
+value will always be used.  If it is missing the hinted value will be
+used if set.
+
+Implementations should throw NS_ERROR_NOT_AVAILABLE if the header doesn't
+exist for this type of channel, if the header is empty, if the header
+doesn't contain a filename portion, or the value of the filename
+attribute is empty/missing.
+
+
+### contentDispositionHeader ###
+
+Access to the raw Content-Disposition header if available and applicable.
+
+Implementations should throw NS_ERROR_NOT_AVAILABLE if the header either
+doesn't exist for this type of channel or is empty.
+
+@deprecated Use contentDisposition/contentDispositionFilename instead.
+
+
+### loadInfo ###
+
+The nsILoadInfo for this load.  This is immutable for the
+lifetime of the load and should be passed through across
+redirects and the like.
+
+
+## Constants ##
+
+### LOAD_DOCUMENT_URI ###
 **********************************************************************
 Channel specific load flags:
 
@@ -177,13 +233,13 @@ Set (e.g., by the docshell) to indicate whether or not the channel
 corresponds to a document URI.
 
 
-## LOAD_RETARGETED_DOCUMENT_URI ##
+### LOAD_RETARGETED_DOCUMENT_URI ###
  
 If the end consumer for this load has been retargeted after discovering 
 its content, this flag will be set:
 
 
-## LOAD_REPLACE ##
+### LOAD_REPLACE ###
 
 This flag is set to indicate that this channel is replacing another
 channel.  This means that:
@@ -202,19 +258,19 @@ onStopRequest with another onStartRequest/onStopRequest pair, each pair
 for a different request).
 
 
-## LOAD_INITIAL_DOCUMENT_URI ##
+### LOAD_INITIAL_DOCUMENT_URI ###
 
 Set (e.g., by the docshell) to indicate whether or not the channel
 corresponds to an initial document URI load (e.g., link click).
 
 
-## LOAD_TARGETED ##
+### LOAD_TARGETED ###
 
 Set (e.g., by the URILoader) to indicate whether or not the end consumer
 for this load has been determined.
 
 
-## LOAD_CALL_CONTENT_SNIFFERS ##
+### LOAD_CALL_CONTENT_SNIFFERS ###
 
 If this flag is set, the channel should call the content sniffers as
 described in nsNetCID.h about NS_CONTENT_SNIFFER_CATEGORY.
@@ -223,20 +279,20 @@ Note: Channels may ignore this flag; however, new channel implementations
 should only do so with good reason.
 
 
-## LOAD_CLASSIFY_URI ##
+### LOAD_CLASSIFY_URI ###
 
 This flag tells the channel to use URI classifier service to check
 the URI when opening the channel.
 
 
-## LOAD_MEDIA_SNIFFER_OVERRIDES_CONTENT_TYPE ##
+### LOAD_MEDIA_SNIFFER_OVERRIDES_CONTENT_TYPE ###
 
 If this flag is set, the media-type content sniffer will be allowed
 to override any server-set content-type. Otherwise it will only
 be allowed to override "no content type" and application/octet-stream.
 
 
-## LOAD_EXPLICIT_CREDENTIALS ##
+### LOAD_EXPLICIT_CREDENTIALS ###
 
 Set to let explicitely provided credentials be used over credentials
 we have cached previously. In some situations like form login using HTTP
@@ -247,56 +303,6 @@ will leave original credentials in the cache and there is then no way
 to override them for the same user name.
 
 
-## contentDisposition ##
+### DISPOSITION_INLINE ###
 
-Access to the type implied or stated by the Content-Disposition header
-if available and if applicable. This allows determining inline versus
-attachment.
-
-Setting contentDisposition provides a hint to the channel about the
-disposition.  If a normal Content-Disposition header is present its
-value will always be used.  If it is missing the hinted value will
-be used if set.
-
-Implementations should throw NS_ERROR_NOT_AVAILABLE if the header either
-doesn't exist for this type of channel or is empty, and return
-DISPOSITION_ATTACHMENT if an invalid/noncompliant value is present.
-
-
-## DISPOSITION_INLINE ##
-
-## DISPOSITION_ATTACHMENT ##
-
-## contentDispositionFilename ##
-
-Access to the filename portion of the Content-Disposition header if
-available and if applicable. This allows getting the preferred filename
-without having to parse it out yourself.
-
-Setting contentDispositionFilename provides a hint to the channel about
-the disposition.  If a normal Content-Disposition header is present its
-value will always be used.  If it is missing the hinted value will be
-used if set.
-
-Implementations should throw NS_ERROR_NOT_AVAILABLE if the header doesn't
-exist for this type of channel, if the header is empty, if the header
-doesn't contain a filename portion, or the value of the filename
-attribute is empty/missing.
-
-
-## contentDispositionHeader ##
-
-Access to the raw Content-Disposition header if available and applicable.
-
-Implementations should throw NS_ERROR_NOT_AVAILABLE if the header either
-doesn't exist for this type of channel or is empty.
-
-@deprecated Use contentDisposition/contentDispositionFilename instead.
-
-
-## loadInfo ##
-
-The nsILoadInfo for this load.  This is immutable for the
-lifetime of the load and should be passed through across
-redirects and the like.
-
+### DISPOSITION_ATTACHMENT ###

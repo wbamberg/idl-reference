@@ -4,7 +4,9 @@ layout: default
 
 # nsIDOMCryptoDialogs #
 
-## ConfirmKeyEscrow ##
+## Methods ##
+
+### ConfirmKeyEscrow ###
 
 This method is used to warn the user the web site is
 trying to escrow the generated private key.  This 

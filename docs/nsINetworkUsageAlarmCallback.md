@@ -4,4 +4,6 @@ layout: default
 
 # nsINetworkUsageAlarmCallback #
 
-## networkUsageAlarmResult ##
+## Methods ##
+
+### networkUsageAlarmResult ###

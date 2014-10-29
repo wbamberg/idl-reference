@@ -4,4 +4,6 @@ layout: default
 
 # nsISSLStatusProvider #
 
-## SSLStatus ##
+## Attributes ##
+
+### SSLStatus ###

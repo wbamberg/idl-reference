@@ -4,22 +4,24 @@ layout: default
 
 # nsIAccessibleVirtualCursorChangeEvent #
 
-## oldAccessible ##
+## Attributes ##
+
+### oldAccessible ###
 
 Previous object pointed at by virtual cursor. null if none.
 
 
-## oldStartOffset ##
+### oldStartOffset ###
 
 Previous start offset of pivot. -1 if none.
 
 
-## oldEndOffset ##
+### oldEndOffset ###
 
 Previous end offset of pivot. -1 if none.
 
 
-## reason ##
+### reason ###
 
 Reason for virtual cursor move.
 

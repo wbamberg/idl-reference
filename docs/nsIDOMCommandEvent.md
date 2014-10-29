@@ -4,6 +4,10 @@ layout: default
 
 # nsIDOMCommandEvent #
 
-## command ##
+## Methods ##
 
-## initCommandEvent ##
+### initCommandEvent ###
+
+## Attributes ##
+
+### command ###

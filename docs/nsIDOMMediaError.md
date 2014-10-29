@@ -4,12 +4,16 @@ layout: default
 
 # nsIDOMMediaError #
 
-## MEDIA_ERR_ABORTED ##
+## Attributes ##
 
-## MEDIA_ERR_NETWORK ##
+### code ###
 
-## MEDIA_ERR_DECODE ##
+## Constants ##
 
-## MEDIA_ERR_SRC_NOT_SUPPORTED ##
+### MEDIA_ERR_ABORTED ###
 
-## code ##
+### MEDIA_ERR_NETWORK ###
+
+### MEDIA_ERR_DECODE ###
+
+### MEDIA_ERR_SRC_NOT_SUPPORTED ###

@@ -11,55 +11,9 @@ happen to be a browser chrome window will simply have no access to any such
 interface.
 
 
-## OPEN_DEFAULTWINDOW ##
+## Methods ##
 
-Values for openURI's aWhere parameter.
-
-
-Do whatever the default is based on application state, user preferences,
-and the value of the aContext parameter to openURI.
-
-
-## OPEN_CURRENTWINDOW ##
-
-Open in the "current window".  If aOpener is provided, this should be the
-top window in aOpener's window hierarchy, but exact behavior is
-application-dependent.  If aOpener is not provided, it's up to the
-application to decide what constitutes a "current window".
-
-
-## OPEN_NEWWINDOW ##
-
-Open in a new window.
-
-
-## OPEN_NEWTAB ##
-
-Open in a new content tab in the toplevel browser window corresponding to
-this nsIBrowserDOMWindow.
-
-
-## OPEN_SWITCHTAB ##
-
-Open in an existing content tab based on the URI. If a match can't be
-found, revert to OPEN_NEWTAB behavior.
-
-
-## OPEN_EXTERNAL ##
-
-Values for openURI's aContext parameter.  These affect the behavior of
-OPEN_DEFAULTWINDOW.
-
-
-external link (load request from another application, xremote, etc).
-
-
-## OPEN_NEW ##
-
-internal open new window
-
-
-## openURI ##
+### openURI ###
 
 Load a URI
 
@@ -73,16 +27,66 @@ Load a URI
 @return the window into which the URI was opened.
 
 
-## openURIInFrame ##
+### openURIInFrame ###
 
 As above, but return the nsIFrameLoaderOwner for the new window.
 // XXXbz is this the right API? Do we really need the opener here?
 // See bug 537428
 
 
-## isTabContentWindow ##
+### isTabContentWindow ###
 
 @param  aWindow the window to test.
 @return whether the window is the main content window for any
         currently open tab in this toplevel browser window.
+
+
+## Constants ##
+
+### OPEN_DEFAULTWINDOW ###
+
+Values for openURI's aWhere parameter.
+
+
+Do whatever the default is based on application state, user preferences,
+and the value of the aContext parameter to openURI.
+
+
+### OPEN_CURRENTWINDOW ###
+
+Open in the "current window".  If aOpener is provided, this should be the
+top window in aOpener's window hierarchy, but exact behavior is
+application-dependent.  If aOpener is not provided, it's up to the
+application to decide what constitutes a "current window".
+
+
+### OPEN_NEWWINDOW ###
+
+Open in a new window.
+
+
+### OPEN_NEWTAB ###
+
+Open in a new content tab in the toplevel browser window corresponding to
+this nsIBrowserDOMWindow.
+
+
+### OPEN_SWITCHTAB ###
+
+Open in an existing content tab based on the URI. If a match can't be
+found, revert to OPEN_NEWTAB behavior.
+
+
+### OPEN_EXTERNAL ###
+
+Values for openURI's aContext parameter.  These affect the behavior of
+OPEN_DEFAULTWINDOW.
+
+
+external link (load request from another application, xremote, etc).
+
+
+### OPEN_NEW ###
+
+internal open new window
 

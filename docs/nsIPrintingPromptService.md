@@ -4,7 +4,9 @@ layout: default
 
 # nsIPrintingPromptService #
 
-## showPrintDialog ##
+## Methods ##
+
+### showPrintDialog ###
 
  This service enables embedders to implement their own Print and Progress Dialogs.
  Each platform has a "base" or "basckstop" implementation of the service. The 
@@ -86,7 +88,7 @@ layout: default
 
 
 
-## showProgress ##
+### showProgress ###
 
  Shows the print progress dialog
 
@@ -103,7 +105,7 @@ layout: default
                        For Print Preview Progress there is intermediate progress
 
 
-## showPageSetup ##
+### showPageSetup ###
 
  Shows the print progress dialog
 
@@ -114,7 +116,7 @@ layout: default
                For example, some platforms may implement an "Apply" button (not required)
 
 
-## showPrinterProperties ##
+### showPrinterProperties ###
 
  Sometimes platforms need to bring up a special properties dialog for showing
  print specific properties. Although the PrintSettings has a place to set the 

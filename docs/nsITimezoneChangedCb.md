@@ -4,4 +4,6 @@ layout: default
 
 # nsITimezoneChangedCb #
 
-## onTimezoneChanged ##
+## Methods ##
+
+### onTimezoneChanged ###

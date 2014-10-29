@@ -7,4 +7,6 @@ layout: default
 Interface representing a callback that receives an array of extIExtensions
 
 
-## callback ##
+## Methods ##
+
+### callback ###

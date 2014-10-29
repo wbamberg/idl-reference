@@ -7,4 +7,6 @@ layout: default
 Interface for @media rules in the CSS OM.
 
 
-## media ##
+## Attributes ##
+
+### media ###

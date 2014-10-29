@@ -4,7 +4,9 @@ layout: default
 
 # nsIDOMMozWakeLockListener #
 
-## callback ##
+## Methods ##
+
+### callback ###
 
 The callback will be called when a lock topic changes its lock
 state.

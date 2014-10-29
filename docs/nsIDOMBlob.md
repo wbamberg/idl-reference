@@ -4,18 +4,22 @@ layout: default
 
 # nsIDOMBlob #
 
-## size ##
+## Methods ##
 
-## type ##
+### slice ###
 
-## internalStream ##
+### getFileId ###
 
-## slice ##
+### addFileInfo ###
 
-## getFileId ##
+### getFileInfo ###
 
-## addFileInfo ##
+### isMemoryFile ###
 
-## getFileInfo ##
+## Attributes ##
 
-## isMemoryFile ##
+### size ###
+
+### type ###
+
+### internalStream ###

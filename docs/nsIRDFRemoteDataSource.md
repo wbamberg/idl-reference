@@ -7,13 +7,9 @@ layout: default
 A datasource that may load asynchronously
 
 
-## loaded ##
+## Methods ##
 
-This value is <code>true</code> when the datasource has
-fully loaded itself.
-
-
-## Init ##
+### Init ###
 
 Specify the URI for the data source: this is the prefix
 that will be used to register the data source in the
@@ -21,7 +17,7 @@ data source registry.
 @param aURI the URI to load
 
 
-## Refresh ##
+### Refresh ###
 
 Refresh the remote datasource, re-loading its contents
 from the URI.
@@ -30,10 +26,18 @@ from the URI.
 until the datasource has completely reloaded.
 
 
-## Flush ##
+### Flush ###
 
 Request that a data source write its contents out to 
 permanent storage, if applicable.
 
 
-## FlushTo ##
+### FlushTo ###
+
+## Attributes ##
+
+### loaded ###
+
+This value is <code>true</code> when the datasource has
+fully loaded itself.
+

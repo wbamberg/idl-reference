@@ -4,7 +4,9 @@ layout: default
 
 # nsIRedirectHistory #
 
-## redirects ##
+## Attributes ##
+
+### redirects ###
 
 An array of nsIPrincipal that store the redirects associated with this
 channel. This array is filled whether or not the channel has ever been

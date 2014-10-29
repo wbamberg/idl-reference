@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMGlobalObjectConstructor #
 
-## constructor ##
+## Methods ##
+
+### constructor ###

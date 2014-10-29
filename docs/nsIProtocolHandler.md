@@ -7,24 +7,9 @@ layout: default
 nsIProtocolHandler
 
 
-## scheme ##
+## Methods ##
 
-The scheme of this protocol (e.g., "file").
-
-
-## defaultPort ##
- 
-The default port is the port that this protocol normally uses.
-If a port does not make sense for the protocol (e.g., "about:")
-then -1 will be returned.
-
-
-## protocolFlags ##
-
-Returns the protocol specific flags (see flag definitions below).  
-
-
-## newURI ##
+### newURI ###
 
 Makes a URI object that is suitable for loading by this protocol,
 where the URI string is given as an UTF-8 string.  The caller may
@@ -51,18 +36,18 @@ server.)
                         URI aBaseURI will simply be ignored.
 
 
-## newChannel2 ##
+### newChannel2 ###
 
 Constructs a new channel from the given URI for this protocol handler and
 sets the loadInfo for the constructed channel.
 
 
-## newChannel ##
+### newChannel ###
 
 Constructs a new channel from the given URI for this protocol handler.
 
 
-## allowPort ##
+### allowPort ###
 
 Allows a protocol to override blacklisted ports.
 
@@ -73,7 +58,28 @@ port number is encountered, this function will be called to ask if the
 protocol handler wants to override the ban.  
 
 
-## URI_STD ##
+## Attributes ##
+
+### scheme ###
+
+The scheme of this protocol (e.g., "file").
+
+
+### defaultPort ###
+ 
+The default port is the port that this protocol normally uses.
+If a port does not make sense for the protocol (e.g., "about:")
+then -1 will be returned.
+
+
+### protocolFlags ###
+
+Returns the protocol specific flags (see flag definitions below).  
+
+
+## Constants ##
+
+### URI_STD ###
 **********************************************************************
 Constants for the protocol flags (the first is the default mask, the
 others are deviations):
@@ -85,17 +91,17 @@ standard full URI with authority component and concept of relative
 URIs (http, ftp, ...)
 
 
-## URI_NORELATIVE ##
+### URI_NORELATIVE ###
 
 no concept of relative URIs (about, javascript, finger, ...)
 
 
-## URI_NOAUTH ##
+### URI_NOAUTH ###
 
 no authority component (file, ...)
 
 
-## ALLOWS_PROXY ##
+### ALLOWS_PROXY ###
 
 This protocol handler can be proxied via a proxy (socks or http)
 (e.g., irc, smtp, http, etc.).  If the protocol supports transparent
@@ -108,7 +114,7 @@ flag (see below).
 @see nsIProxiedProtocolHandler
 
 
-## ALLOWS_PROXY_HTTP ##
+### ALLOWS_PROXY_HTTP ###
 
 This protocol handler can be proxied using a http proxy (e.g., http,
 ftp, etc.).  nsIIOService::newChannelFromURI will feed URIs from this
@@ -116,14 +122,14 @@ protocol handler to the HTTP protocol handler instead.  This flag is
 ignored if ALLOWS_PROXY is not set.
 
 
-## URI_INHERITS_SECURITY_CONTEXT ##
+### URI_INHERITS_SECURITY_CONTEXT ###
 
 The URIs for this protocol have no inherent security context, so
 documents loaded via this protocol should inherit the security context
 from the document that loads them.
 
 
-## URI_FORBIDS_AUTOMATIC_DOCUMENT_REPLACEMENT ##
+### URI_FORBIDS_AUTOMATIC_DOCUMENT_REPLACEMENT ###
 
 "Automatic" loads that would replace the document (e.g. <meta> refresh,
 certain types of XLinks, possibly other loads that the application
@@ -138,7 +144,7 @@ shows highly untrusted content in a viewing area that the user expects
 to have a lot of control over, such as an e-mail reader.
 
 
-## URI_LOADABLE_BY_ANYONE ##
+### URI_LOADABLE_BY_ANYONE ###
 
 +-------------------------------------------------------------------+
 |                                                                   |
@@ -163,7 +169,7 @@ website should be allowed to trigger a load of a URI for this protocol.
 Web-safe protocols like "http" should set this flag.
 
 
-## URI_DANGEROUS_TO_LOAD ##
+### URI_DANGEROUS_TO_LOAD ###
 
 The URIs for this protocol are UNSAFE if loaded by untrusted (web)
 content and may only be loaded by privileged code (for example, code
@@ -171,7 +177,7 @@ which has the system principal).  Various internal protocols should set
 this flag.
 
 
-## URI_IS_UI_RESOURCE ##
+### URI_IS_UI_RESOURCE ###
 
 The URIs for this protocol point to resources that are part of the
 application's user interface.  There are cases when such resources may
@@ -181,7 +187,7 @@ URI_LOADABLE_BY_ANYONE.  See the documentation for
 nsIScriptSecurityManager::CheckLoadURI.
 
 
-## URI_IS_LOCAL_FILE ##
+### URI_IS_LOCAL_FILE ###
 
 Loading of URIs for this protocol from other origins should only be
 allowed if those origins should have access to the local filesystem.
@@ -190,57 +196,57 @@ access.  Protocols like "file" that point to local data should set this
 flag.
 
 
-## URI_LOADABLE_BY_SUBSUMERS ##
+### URI_LOADABLE_BY_SUBSUMERS ###
 
 The URIs for this protocol can be loaded only by callers with a
 principal that subsumes this uri. For example, privileged code and
 websites that are same origin as this uri.
 
 
-## URI_DOES_NOT_RETURN_DATA ##
+### URI_DOES_NOT_RETURN_DATA ###
 
 Channels using this protocol never call OnDataAvailable
 on the listener passed to AsyncOpen and they therefore
 do not return any data that we can use.
 
 
-## URI_IS_LOCAL_RESOURCE ##
+### URI_IS_LOCAL_RESOURCE ###
 
 URIs for this protocol are considered to be local resources.  This could
 be a local file (URI_IS_LOCAL_FILE), a UI resource (URI_IS_UI_RESOURCE),
 or something else that would not hit the network.
 
 
-## URI_OPENING_EXECUTES_SCRIPT ##
+### URI_OPENING_EXECUTES_SCRIPT ###
 
 URIs for this protocol execute script when they are opened.
 
 
-## URI_NON_PERSISTABLE ##
+### URI_NON_PERSISTABLE ###
 
 Loading channels from this protocol has side-effects that make
 it unsuitable for saving to a local file.
 
 
-## URI_FORBIDS_COOKIE_ACCESS ##
+### URI_FORBIDS_COOKIE_ACCESS ###
 
 This protocol handler forbids accessing cookies e.g. for mail related
 protocols.
 
 
-## URI_CROSS_ORIGIN_NEEDS_WEBAPPS_PERM ##
+### URI_CROSS_ORIGIN_NEEDS_WEBAPPS_PERM ###
 
 URIs for this protocol require the webapps permission on the principal
 when opening URIs for a different domain. See bug#773886
 
 
-## URI_SYNC_LOAD_IS_OK ##
+### URI_SYNC_LOAD_IS_OK ###
 
 Channels for this protocol don't need to spin the event loop to handle
 Open() and reads on the resulting stream.
 
 
-## URI_SAFE_TO_LOAD_IN_SECURE_CONTEXT ##
+### URI_SAFE_TO_LOAD_IN_SECURE_CONTEXT ###
 
 URI is secure to load in an https page and should not be blocked
 by nsMixedContentBlocker

@@ -4,93 +4,69 @@ layout: default
 
 # inIDOMUtils #
 
-## getAllStyleSheets ##
+## Methods ##
 
-## getCSSStyleRules ##
+### getAllStyleSheets ###
 
-## getRuleLine ##
+### getCSSStyleRules ###
 
-## getRuleColumn ##
+### getRuleLine ###
 
-## getSelectorCount ##
+### getRuleColumn ###
 
-## getSelectorText ##
+### getSelectorCount ###
 
-## getSpecificity ##
+### getSelectorText ###
 
-## selectorMatchesElement ##
+### getSpecificity ###
 
-## isInheritedProperty ##
+### selectorMatchesElement ###
 
-## EXCLUDE_SHORTHANDS ##
+### isInheritedProperty ###
 
-## INCLUDE_ALIASES ##
+### getCSSPropertyNames ###
 
-## getCSSPropertyNames ##
+### getCSSValuesForProperty ###
 
-## getCSSValuesForProperty ##
+### colorNameToRGB ###
 
-## colorNameToRGB ##
+### rgbToColorName ###
 
-## rgbToColorName ##
+### colorToRGBA ###
 
-## colorToRGBA ##
+### isValidCSSColor ###
 
-## isValidCSSColor ##
+### cssPropertyIsValid ###
 
-## cssPropertyIsValid ##
+### getSubpropertiesForCSSProperty ###
 
-## getSubpropertiesForCSSProperty ##
+### cssPropertyIsShorthand ###
 
-## cssPropertyIsShorthand ##
+### cssPropertySupportsType ###
 
-## TYPE_LENGTH ##
+### isIgnorableWhitespace ###
 
-## TYPE_PERCENTAGE ##
+### getParentForNode ###
 
-## TYPE_COLOR ##
+### getChildrenForNode ###
 
-## TYPE_URL ##
+### getBindingURLs ###
 
-## TYPE_ANGLE ##
+### getContentState ###
 
-## TYPE_FREQUENCY ##
+### setContentState ###
 
-## TYPE_TIME ##
+### getUsedFontFaces ###
 
-## TYPE_GRADIENT ##
+### addPseudoClassLock ###
 
-## TYPE_TIMING_FUNCTION ##
+### removePseudoClassLock ###
 
-## TYPE_IMAGE_RECT ##
+### hasPseudoClassLock ###
 
-## TYPE_NUMBER ##
+### clearPseudoClassLocks ###
 
-## cssPropertySupportsType ##
-
-## isIgnorableWhitespace ##
-
-## getParentForNode ##
-
-## getChildrenForNode ##
-
-## getBindingURLs ##
-
-## getContentState ##
-
-## setContentState ##
-
-## getUsedFontFaces ##
-
-## addPseudoClassLock ##
-
-## removePseudoClassLock ##
-
-## hasPseudoClassLock ##
-
-## clearPseudoClassLocks ##
-
-## parseStyleSheet ##
+### parseStyleSheet ###
 
 Parse CSS and update the style sheet in place.
 
@@ -99,10 +75,38 @@ Parse CSS and update the style sheet in place.
        The new source string for the style sheet.
 
 
-## scrollElementIntoView ##
+### scrollElementIntoView ###
 
 Scroll an element completely into view, if possible.
 This is similar to ensureElementIsVisible but for all ancestors.
 
 @param DOMElement aElement
 
+
+## Constants ##
+
+### EXCLUDE_SHORTHANDS ###
+
+### INCLUDE_ALIASES ###
+
+### TYPE_LENGTH ###
+
+### TYPE_PERCENTAGE ###
+
+### TYPE_COLOR ###
+
+### TYPE_URL ###
+
+### TYPE_ANGLE ###
+
+### TYPE_FREQUENCY ###
+
+### TYPE_TIME ###
+
+### TYPE_GRADIENT ###
+
+### TYPE_TIMING_FUNCTION ###
+
+### TYPE_IMAGE_RECT ###
+
+### TYPE_NUMBER ###

@@ -15,49 +15,51 @@ as this is traditional network order.
 @See nsIBinaryInputStream
 
 
-## setOutputStream ##
+## Methods ##
 
-## writeBoolean ##
+### setOutputStream ###
+
+### writeBoolean ###
 
 Write a boolean as an 8-bit char to the stream.
 
 
-## write8 ##
+### write8 ###
 
-## write16 ##
+### write16 ###
 
-## write32 ##
+### write32 ###
 
-## write64 ##
+### write64 ###
 
-## writeFloat ##
+### writeFloat ###
 
-## writeDouble ##
+### writeDouble ###
 
-## writeStringZ ##
+### writeStringZ ###
 
 Write an 8-bit pascal style string to the stream.
 32-bit length field, followed by length 8-bit chars.
 
 
-## writeWStringZ ##
+### writeWStringZ ###
 
 Write a 16-bit pascal style string to the stream.
 32-bit length field, followed by length PRUnichars.
 
 
-## writeUtf8Z ##
+### writeUtf8Z ###
 
 Write an 8-bit pascal style string (UTF8-encoded) to the stream.
 32-bit length field, followed by length 8-bit chars.
 
 
-## writeBytes ##
+### writeBytes ###
 
 Write an opaque byte array to the stream.
 
 
-## writeByteArray ##
+### writeByteArray ###
 
 Write an opaque byte array to the stream.
 

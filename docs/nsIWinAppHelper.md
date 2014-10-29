@@ -11,4 +11,6 @@ a special process that gets created with elevated privileges.
                    future releases.
 
 
-## userCanElevate ##
+## Attributes ##
+
+### userCanElevate ###

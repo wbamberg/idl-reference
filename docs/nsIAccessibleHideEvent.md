@@ -7,17 +7,19 @@ layout: default
 Fired when a accessible and its subtree are removed from the tree.
 
 
-## targetParent ##
+## Attributes ##
+
+### targetParent ###
 
 Return an accessible that was a parent of the target.
 
 
-## targetNextSibling ##
+### targetNextSibling ###
 
 Return an accessible that was a next sibling of the target
 
 
-## targetPrevSibling ##
+### targetPrevSibling ###
 
 Return an accessible that was a parent of the target
 

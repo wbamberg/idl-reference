@@ -4,7 +4,9 @@ layout: default
 
 # nsIIMEPicker #
 
-## show ##
+## Methods ##
+
+### show ###
 
 Show IME Picker dialog.
 

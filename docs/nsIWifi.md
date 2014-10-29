@@ -4,12 +4,14 @@ layout: default
 
 # nsIWifi #
 
-## shutdown ##
+## Methods ##
+
+### shutdown ###
 
 Shutdown the wifi system.
 
 
-## getWifiScanResults ##
+### getWifiScanResults ###
 
 Returns the list of currently available networks as well as the list of
 currently configured networks.

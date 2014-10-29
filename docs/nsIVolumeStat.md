@@ -4,6 +4,8 @@ layout: default
 
 # nsIVolumeStat #
 
-## totalBytes ##
+## Attributes ##
 
-## freeBytes ##
+### totalBytes ###
+
+### freeBytes ###

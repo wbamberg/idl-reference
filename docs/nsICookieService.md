@@ -66,10 +66,12 @@ subject:  an nsIURI interface pointer representing the URI that attempted
 data   :  the referrer, or "?" if unknown
 
 
-## getCookieString ##
+## Methods ##
 
-## getCookieStringFromHttp ##
+### getCookieString ###
 
-## setCookieString ##
+### getCookieStringFromHttp ###
 
-## setCookieStringFromHttp ##
+### setCookieString ###
+
+### setCookieStringFromHttp ###

@@ -4,8 +4,10 @@ layout: default
 
 # nsIDocumentStateListener #
 
-## NotifyDocumentCreated ##
+## Methods ##
 
-## NotifyDocumentWillBeDestroyed ##
+### NotifyDocumentCreated ###
 
-## NotifyDocumentStateChanged ##
+### NotifyDocumentWillBeDestroyed ###
+
+### NotifyDocumentStateChanged ###

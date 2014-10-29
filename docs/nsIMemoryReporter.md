@@ -4,18 +4,22 @@ layout: default
 
 # nsIMemoryReporter #
 
-## collectReports ##
+## Methods ##
 
-## KIND_NONHEAP ##
+### collectReports ###
 
-## KIND_HEAP ##
+## Constants ##
 
-## KIND_OTHER ##
+### KIND_NONHEAP ###
 
-## UNITS_BYTES ##
+### KIND_HEAP ###
 
-## UNITS_COUNT ##
+### KIND_OTHER ###
 
-## UNITS_COUNT_CUMULATIVE ##
+### UNITS_BYTES ###
 
-## UNITS_PERCENTAGE ##
+### UNITS_COUNT ###
+
+### UNITS_COUNT_CUMULATIVE ###
+
+### UNITS_PERCENTAGE ###

@@ -4,8 +4,10 @@ layout: default
 
 # txIEXSLTRegExFunctions #
 
-## match ##
+## Methods ##
 
-## replace ##
+### match ###
 
-## test ##
+### replace ###
+
+### test ###

@@ -13,7 +13,9 @@ produced for objects that implement this interface.
 @see nsSupportsWeakReference
 
 
-## GetWeakReference ##
+## Methods ##
+
+### GetWeakReference ###
 
 |GetWeakReference| produces an appropriate instance of |nsIWeakReference|.
 As with all good XPCOM `getters', you own the resulting interface and should

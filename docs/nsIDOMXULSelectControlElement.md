@@ -4,20 +4,24 @@ layout: default
 
 # nsIDOMXULSelectControlElement #
 
-## selectedItem ##
+## Methods ##
 
-## selectedIndex ##
+### appendItem ###
 
-## value ##
+### insertItemAt ###
 
-## appendItem ##
+### removeItemAt ###
 
-## insertItemAt ##
+### getIndexOfItem ###
 
-## removeItemAt ##
+### getItemAtIndex ###
 
-## itemCount ##
+## Attributes ##
 
-## getIndexOfItem ##
+### selectedItem ###
 
-## getItemAtIndex ##
+### selectedIndex ###
+
+### value ###
+
+### itemCount ###

@@ -9,7 +9,9 @@ multiple annotations, it can be represented by multiple
 mozIAnnotatedResult(s).
 
 
-## guid ##
+## Attributes ##
+
+### guid ###
 
 The globally unique identifier of the place with this annotation.
 
@@ -17,12 +19,12 @@ The globally unique identifier of the place with this annotation.
       of the page.
 
 
-## uri ##
+### uri ###
 
 The URI of the place with this annotation, if available, null otherwise.
 
 
-## itemId ##
+### itemId ###
 
 The bookmark id of the place with this annotation, if available,
 -1 otherwise.
@@ -31,12 +33,12 @@ The bookmark id of the place with this annotation, if available,
       that this annotation is relative to the page, not to the bookmark.
 
 
-## annotationName ##
+### annotationName ###
 
 Name of the annotation.
 
 
-## annotationValue ##
+### annotationValue ###
 
 Value of the annotation.
 

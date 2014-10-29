@@ -4,14 +4,16 @@ layout: default
 
 # nsIInterfaceInfoManager #
 
-## getInfoForIID ##
+## Methods ##
 
-## getInfoForName ##
+### getInfoForIID ###
 
-## getIIDForName ##
+### getInfoForName ###
 
-## getNameForIID ##
+### getIIDForName ###
 
-## autoRegisterInterfaces ##
+### getNameForIID ###
 
-## enumerateInterfacesWhoseNamesStartWith ##
+### autoRegisterInterfaces ###
+
+### enumerateInterfacesWhoseNamesStartWith ###

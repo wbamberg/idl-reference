@@ -4,6 +4,8 @@ layout: default
 
 # nsIAutoCompleteSearch #
 
-## startSearch ##
+## Methods ##
 
-## stopSearch ##
+### startSearch ###
+
+### stopSearch ###

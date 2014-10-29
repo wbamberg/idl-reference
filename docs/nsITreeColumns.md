@@ -4,54 +4,58 @@ layout: default
 
 # nsITreeColumns #
 
-## tree ##
+## Methods ##
 
-The tree widget for these columns.
-
-
-## count ##
-
-The number of columns.
-
-
-## length ##
-
-An alias for count (for the benefit of scripts which treat this as an
-array).
-
-
-## getFirstColumn ##
+### getFirstColumn ###
 
 Get the first/last column.
 
 
-## getLastColumn ##
+### getLastColumn ###
 
-## getPrimaryColumn ##
+### getPrimaryColumn ###
 
 Attribute based column getters.
 
 
-## getSortedColumn ##
+### getSortedColumn ###
 
-## getKeyColumn ##
+### getKeyColumn ###
 
-## getColumnFor ##
+### getColumnFor ###
 
 Get the column for the given element.
 
 
-## getNamedColumn ##
+### getNamedColumn ###
 
 Parametric column getters.
 
 
-## getColumnAt ##
+### getColumnAt ###
 
-## invalidateColumns ##
+### invalidateColumns ###
 
 This method is called whenever a treecol is added or removed and
 the column cache needs to be rebuilt.
 
 
-## restoreNaturalOrder ##
+### restoreNaturalOrder ###
+
+## Attributes ##
+
+### tree ###
+
+The tree widget for these columns.
+
+
+### count ###
+
+The number of columns.
+
+
+### length ###
+
+An alias for count (for the benefit of scripts which treat this as an
+array).
+

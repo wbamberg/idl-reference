@@ -4,36 +4,40 @@ layout: default
 
 # nsIBoxObject #
 
-## element ##
+## Methods ##
 
-## x ##
+### getPropertyAsSupports ###
 
-## y ##
+### setPropertyAsSupports ###
 
-## screenX ##
+### getProperty ###
 
-## screenY ##
+### setProperty ###
 
-## width ##
+### removeProperty ###
 
-## height ##
+## Attributes ##
 
-## getPropertyAsSupports ##
+### element ###
 
-## setPropertyAsSupports ##
+### x ###
 
-## getProperty ##
+### y ###
 
-## setProperty ##
+### screenX ###
 
-## removeProperty ##
+### screenY ###
 
-## parentBox ##
+### width ###
 
-## firstChild ##
+### height ###
 
-## lastChild ##
+### parentBox ###
 
-## nextSibling ##
+### firstChild ###
 
-## previousSibling ##
+### lastChild ###
+
+### nextSibling ###
+
+### previousSibling ###

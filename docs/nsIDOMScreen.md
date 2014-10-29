@@ -4,27 +4,29 @@ layout: default
 
 # nsIDOMScreen #
 
-## top ##
+## Attributes ##
 
-## left ##
+### top ###
 
-## width ##
+### left ###
 
-## height ##
+### width ###
 
-## pixelDepth ##
+### height ###
 
-## colorDepth ##
+### pixelDepth ###
 
-## availWidth ##
+### colorDepth ###
 
-## availHeight ##
+### availWidth ###
 
-## availLeft ##
+### availHeight ###
 
-## availTop ##
+### availLeft ###
 
-## mozOrientation ##
+### availTop ###
+
+### mozOrientation ###
 
 Returns the current screen orientation.
 Can be: landscape-primary, landscape-secondary,

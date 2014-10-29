@@ -11,51 +11,20 @@ implementation of this interface for non-Windows systems, for testing and
 development purposes only.
 
 
-## supported ##
+## Methods ##
 
-Determine if the current device has the hardware capabilities to run
-in metro mode.
-
-
-## immersive ##
-
-Determine if the current browser is running in the metro immersive
-environment.
-
-
-## activationURI ##
-
-Determine the activation URI
-
-
-## previousExecutionState ##
-
-Determine the previous execution state. The possible values of this
-attribute are exactly those values in the
-Windows::ApplicationModel::Activation enumeration.
-
-
-## updatePending ##
-
-Helper for our restart logic up in the about flyout. We set this
-right before we restart for an update so that MetroAppShell can
-communicate this to the ceh.
-
-
-## foreground ##
-
-## showSettingsFlyout ##
+### showSettingsFlyout ###
 
 Show the settings flyout
 
 
-## launchInDesktop ##
+### launchInDesktop ###
 
 Launches the specified application with the specified arguments and
 switches to Desktop mode if in metro mode.
 
 
-## showNativeToast ##
+### showNativeToast ###
 
 Displays a native Windows 8 toast.
 
@@ -63,7 +32,7 @@ Displays a native Windows 8 toast.
                If using Metro mode, it can be null string.
 
 
-## pinTileAsync ##
+### pinTileAsync ###
 
 Secondary tiles are a Windows 8 specific feature for pinning new tiles
 to the start screen.   Tiles can later be activated whether the browser is
@@ -82,7 +51,7 @@ Pins a new tile to the Windows 8 start screen.
 @param aSmallTileImage An image for the small tile view
 
 
-## unpinTileAsync ##
+### unpinTileAsync ###
 
 Unpins a tile from the Windows 8 start screen.
 
@@ -90,7 +59,7 @@ Unpins a tile from the Windows 8 start screen.
                ID must only contain valid filesystem characters
 
 
-## isTilePinned ##
+### isTilePinned ###
 
 Determines if a tile is pinned to the Windows 8 start screen.
 
@@ -99,26 +68,7 @@ Determines if a tile is pinned to the Windows 8 start screen.
 @return true if the tile is pinned
 
 
-## keyboardVisible ##
-
-Soft keyboard attributes. Used in unison with shown/hidden observer
-events sent via FrameworkView.
-
-keyboardVisible - returns true if the soft keyboard is currently
-displayed, false otherwise.
-keyboardX, keyboardY, keyboardWidth, keyboardHeight - occlude rect
-of the keyboard when displayed in device independent pixels.
-
-
-## keyboardX ##
-
-## keyboardY ##
-
-## keyboardWidth ##
-
-## keyboardHeight ##
-
-## addSettingsPanelEntry ##
+### addSettingsPanelEntry ###
 
 Settings panel links. addSettingsPanelEntry adds an entry to
 the settings flyout panel that the user can invoke.
@@ -129,7 +79,7 @@ ShowPanel api. Example: 'prefs-container'
 "metro-settings-entry-selected" notification when the entry is clicked
 
 
-## swapMouseButton ##
+### swapMouseButton ###
 
 Change the value of the "switch primary and secondary buttons" preference.
 See the Windows SwapMouseButton API docs for details.
@@ -138,3 +88,57 @@ Included here for use in automated tests (see bug 839460).
 @param aSwap true to enable the preference, false to disable it.
 @return original value of the preference.
 
+
+## Attributes ##
+
+### supported ###
+
+Determine if the current device has the hardware capabilities to run
+in metro mode.
+
+
+### immersive ###
+
+Determine if the current browser is running in the metro immersive
+environment.
+
+
+### activationURI ###
+
+Determine the activation URI
+
+
+### previousExecutionState ###
+
+Determine the previous execution state. The possible values of this
+attribute are exactly those values in the
+Windows::ApplicationModel::Activation enumeration.
+
+
+### updatePending ###
+
+Helper for our restart logic up in the about flyout. We set this
+right before we restart for an update so that MetroAppShell can
+communicate this to the ceh.
+
+
+### foreground ###
+
+### keyboardVisible ###
+
+Soft keyboard attributes. Used in unison with shown/hidden observer
+events sent via FrameworkView.
+
+keyboardVisible - returns true if the soft keyboard is currently
+displayed, false otherwise.
+keyboardX, keyboardY, keyboardWidth, keyboardHeight - occlude rect
+of the keyboard when displayed in device independent pixels.
+
+
+### keyboardX ###
+
+### keyboardY ###
+
+### keyboardWidth ###
+
+### keyboardHeight ###

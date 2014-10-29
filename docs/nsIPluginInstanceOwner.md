@@ -4,76 +4,80 @@ layout: default
 
 # nsIPluginInstanceOwner #
 
-## setInstance ##
+## Methods ##
+
+### setInstance ###
 
 Let the owner know what its instance is
 
 
-## getInstance ##
+### getInstance ###
 
 Get the instance associated with this owner.
 
 
-## getWindow ##
+### getWindow ###
 
 Get a handle to the window structure of the owner.
 This pointer cannot be made persistent by the caller.
 
 
-## mode ##
-
-Get the display mode for the plugin instance.
-
-
-## createWidget ##
+### createWidget ###
 
 Create a place for the plugin to live in the owner's
 environment. this may or may not create a window
 depending on the windowless state of the plugin instance.
 
 
-## showStatus ##
+### showStatus ###
 
 Show a status message in the host environment.
 
 
-## document ##
-
-Get the associated document.
-
-
-## invalidateRect ##
+### invalidateRect ###
 
 Invalidate the rectangle
 
 
-## invalidateRegion ##
+### invalidateRegion ###
 
 Invalidate the region
 
 
-## redrawPlugin ##
+### redrawPlugin ###
 
 Have the plugin recomposited.
 
 
-## getNetscapeWindow ##
+### getNetscapeWindow ###
 
 Get NetscapeWindow, corresponds to NPNVnetscapeWindow
 
 
-## setEventModel ##
+### setEventModel ###
 
 Show native context menu
 
 
-## callSetWindow ##
+### callSetWindow ###
 
 Call NPP_SetWindow on the plugin.
 
 
-## getContentsScaleFactor ##
+### getContentsScaleFactor ###
 
 Get the contents scale factor for the screen the plugin is
 drawn on.
+
+
+## Attributes ##
+
+### mode ###
+
+Get the display mode for the plugin instance.
+
+
+### document ###
+
+Get the associated document.
 

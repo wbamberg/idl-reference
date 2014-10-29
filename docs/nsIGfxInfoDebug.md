@@ -4,10 +4,12 @@ layout: default
 
 # nsIGfxInfoDebug #
 
-## spoofVendorID ##
+## Methods ##
 
-## spoofDeviceID ##
+### spoofVendorID ###
 
-## spoofDriverVersion ##
+### spoofDeviceID ###
 
-## spoofOSVersion ##
+### spoofDriverVersion ###
+
+### spoofOSVersion ###

@@ -4,35 +4,39 @@ layout: default
 
 # nsIDOMLocation #
 
-## hash ##
+## Methods ##
+
+### reload ###
+
+### replace ###
+
+### assign ###
+
+### toString ###
+
+### valueOf ###
+
+## Attributes ##
+
+### hash ###
 
 These properties refer to the current location of the document.
 This will correspond to the URI shown in the location bar, which
 can be different from the documentURI of the document.
 
 
-## host ##
+### host ###
 
-## hostname ##
+### hostname ###
 
-## href ##
+### href ###
 
-## pathname ##
+### pathname ###
 
-## port ##
+### port ###
 
-## protocol ##
+### protocol ###
 
-## search ##
+### search ###
 
-## origin ##
-
-## reload ##
-
-## replace ##
-
-## assign ##
-
-## toString ##
-
-## valueOf ##
+### origin ###

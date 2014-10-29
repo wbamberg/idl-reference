@@ -4,8 +4,10 @@ layout: default
 
 # nsINetworkWorker #
 
-## start ##
+## Methods ##
 
-## shutdown ##
+### start ###
 
-## postMessage ##
+### shutdown ###
+
+### postMessage ###

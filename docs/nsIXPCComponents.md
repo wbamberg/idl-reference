@@ -4,24 +4,28 @@ layout: default
 
 # nsIXPCComponents #
 
-## classes ##
+## Methods ##
 
-## classesByID ##
+### reportError ###
 
-## stack ##
+## Attributes ##
 
-## manager ##
+### classes ###
 
-## utils ##
+### classesByID ###
 
-## ID ##
+### stack ###
 
-## Exception ##
+### manager ###
 
-## Constructor ##
+### utils ###
 
-## lastResult ##
+### ID ###
 
-## returnCode ##
+### Exception ###
 
-## reportError ##
+### Constructor ###
+
+### lastResult ###
+
+### returnCode ###

@@ -4,7 +4,9 @@ layout: default
 
 # nsIContentHandler #
 
-## handleContent ##
+## Methods ##
+
+### handleContent ###
 
 Tells the content handler to take over handling the content. If this
 function succeeds, the URI Loader will leave this request alone, ignoring

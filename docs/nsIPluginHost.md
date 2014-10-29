@@ -4,23 +4,21 @@ layout: default
 
 # nsIPluginHost #
 
-## reloadPlugins ##
+## Methods ##
+
+### reloadPlugins ###
 
 Causes the plugins directory to be searched again for new plugin 
 libraries.
 
 
-## getPluginTags ##
+### getPluginTags ###
 
-## FLAG_CLEAR_ALL ##
+### clearSiteData ###
 
-## FLAG_CLEAR_CACHE ##
+### siteHasData ###
 
-## clearSiteData ##
-
-## siteHasData ##
-
-## registerPlayPreviewMimeType ##
+### registerPlayPreviewMimeType ###
 
 Registers the play preview plugin mode for specific mime type
 
@@ -31,13 +29,13 @@ presence in the address bar.
 @param redirectURL: specifies url for the overlay iframe
 
 
-## unregisterPlayPreviewMimeType ##
+### unregisterPlayPreviewMimeType ###
 
-## getPlayPreviewInfo ##
+### getPlayPreviewInfo ###
 
-## getPermissionStringForType ##
+### getPermissionStringForType ###
 
-## getPluginTagForType ##
+### getPluginTagForType ###
 
 Get the nsIPluginTag for this MIME type. This method works with both
 enabled and disabled/blocklisted plugins, but an enabled plugin will
@@ -47,12 +45,18 @@ always be returned if available.
         type.
 
 
-## getStateForType ##
+### getStateForType ###
 
 Get the nsIPluginTag state for this MIME type.
 
 
-## getBlocklistStateForType ##
+### getBlocklistStateForType ###
 
 Get the blocklist state for a MIME type.
 
+
+## Constants ##
+
+### FLAG_CLEAR_ALL ###
+
+### FLAG_CLEAR_CACHE ###

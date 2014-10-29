@@ -4,29 +4,9 @@ layout: default
 
 # nsIEditingSession #
 
-## eEditorOK ##
+## Methods ##
 
- Error codes when we fail to create an editor
- is placed in attribute editorStatus
-
-
-## eEditorCreationInProgress ##
-
-## eEditorErrorCantEditMimeType ##
-
-## eEditorErrorFileNotFound ##
-
-## eEditorErrorCantEditFramesets ##
-
-## eEditorErrorUnknown ##
-
-## editorStatus ##
-
- Status after editor creation and document loading
- Value is one of the above error codes
-
-
-## makeWindowEditable ##
+### makeWindowEditable ###
 
  Make this window editable
  @param aWindow nsIDOMWindow, the window the embedder needs to make editable
@@ -38,7 +18,7 @@ layout: default
  @param aInteractive if PR_FALSE turn off scripting and plugins
 
 
-## windowIsEditable ##
+### windowIsEditable ###
 
  Test whether a specific window has had its editable flag set; it may have an editor
  now, or will get one after the uri load.
@@ -47,47 +27,73 @@ layout: default
  for this content.
 
 
-## getEditorForWindow ##
+### getEditorForWindow ###
 
  Get the editor for this window. May return null
 
 
-## setupEditorOnWindow ##
+### setupEditorOnWindow ###
  
  Setup editor and related support objects
 
 
-## tearDownEditorOnWindow ##
+### tearDownEditorOnWindow ###
  
   Destroy editor and related support objects
 
 
-## setEditorOnControllers ##
+### setEditorOnControllers ###
 
-## disableJSAndPlugins ##
+### disableJSAndPlugins ###
 
 Disable scripts and plugins in aWindow.
 
 
-## restoreJSAndPlugins ##
+### restoreJSAndPlugins ###
 
 Restore JS and plugins (enable/disable them) according to the state they
 were before the last call to disableJSAndPlugins.
 
 
-## detachFromWindow ##
+### detachFromWindow ###
 
 Removes all the editor's controllers/listeners etc and makes the window
 uneditable.
 
 
-## reattachToWindow ##
+### reattachToWindow ###
 
 Undos detachFromWindow(), reattaches this editing session/editor
 to the window.
 
 
-## jsAndPluginsDisabled ##
+## Attributes ##
+
+### editorStatus ###
+
+ Status after editor creation and document loading
+ Value is one of the above error codes
+
+
+### jsAndPluginsDisabled ###
 
 Whether this session has disabled JS and plugins.
 
+
+## Constants ##
+
+### eEditorOK ###
+
+ Error codes when we fail to create an editor
+ is placed in attribute editorStatus
+
+
+### eEditorCreationInProgress ###
+
+### eEditorErrorCantEditMimeType ###
+
+### eEditorErrorFileNotFound ###
+
+### eEditorErrorCantEditFramesets ###
+
+### eEditorErrorUnknown ###

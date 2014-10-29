@@ -4,6 +4,8 @@ layout: default
 
 # nsIIdentityCryptoService #
 
-## generateKeyPair ##
+## Methods ##
 
-## base64UrlEncode ##
+### generateKeyPair ###
+
+### base64UrlEncode ###

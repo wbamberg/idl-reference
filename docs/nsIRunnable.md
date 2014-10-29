@@ -7,7 +7,9 @@ layout: default
 Represents a task which can be dispatched to a thread for execution.
 
 
-## run ##
+## Methods ##
+
+### run ###
 
 The function implementing the task to be run.
 

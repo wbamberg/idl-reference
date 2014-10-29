@@ -13,7 +13,9 @@ be called, and activate() called again when the top level window is
 reactivated for the browser's focus memory to work correctly.
 
 
-## activate ##
+## Methods ##
+
+### activate ###
 
 MANDATORY
 activate() is a mandatory call that must be made to the browser
@@ -27,7 +29,7 @@ If you fail to make this call, mozilla focus memory will not work
 correctly.
 
 
-## deactivate ##
+### deactivate ###
 
 MANDATORY
 deactivate() is a mandatory call that must be made to the browser
@@ -41,25 +43,27 @@ If you fail to make this call, mozilla focus memory will not work
 correctly.
 
 
-## setFocusAtFirstElement ##
+### setFocusAtFirstElement ###
 
 Give the first element focus within mozilla
 (i.e. TAB was pressed and focus should enter mozilla)
 
 
-## setFocusAtLastElement ##
+### setFocusAtLastElement ###
 
 Give the last element focus within mozilla
 (i.e. SHIFT-TAB was pressed and focus should enter mozilla)
 
 
-## focusedWindow ##
+## Attributes ##
+
+### focusedWindow ###
 
 The currently focused nsDOMWindow when the browser is active,
 or the last focused nsDOMWindow when the browser is inactive.
 
 
-## focusedElement ##
+### focusedElement ###
 
 The currently focused nsDOMElement when the browser is active,
 or the last focused nsDOMElement when the browser is inactive.

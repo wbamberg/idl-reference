@@ -7,29 +7,31 @@ layout: default
 Enumeration of Programming Languages
 
 
-## UNKNOWN ##
+## Constants ##
+
+### UNKNOWN ###
 
 Identifiers for programming languages.
 
 
-## CPLUSPLUS ##
+### CPLUSPLUS ###
 
-## JAVASCRIPT ##
+### JAVASCRIPT ###
 
-## PYTHON ##
+### PYTHON ###
 
-## PERL ##
+### PERL ###
 
-## JAVA ##
+### JAVA ###
 
-## ZX81_BASIC ##
+### ZX81_BASIC ###
 
-## JAVASCRIPT2 ##
+### JAVASCRIPT2 ###
 
-## RUBY ##
+### RUBY ###
 
-## PHP ##
+### PHP ###
 
-## TCL ##
+### TCL ###
 
-## MAX ##
+### MAX ###

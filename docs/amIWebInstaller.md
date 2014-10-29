@@ -7,7 +7,9 @@ layout: default
 This interface is used to allow webpages to start installing add-ons.
 
 
-## isInstallEnabled ##
+## Methods ##
+
+### isInstallEnabled ###
 
 Checks if installation is enabled for a webpage.
 
@@ -18,7 +20,7 @@ Checks if installation is enabled for a webpage.
 @return true if installation is enabled
 
 
-## installAddonsFromWebpage ##
+### installAddonsFromWebpage ###
 
 Installs an array of add-ons at the request of a webpage
 

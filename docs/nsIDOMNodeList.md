@@ -13,6 +13,10 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Core/
 
 
-## item ##
+## Methods ##
 
-## length ##
+### item ###
+
+## Attributes ##
+
+### length ###

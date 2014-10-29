@@ -8,38 +8,28 @@ An nsIRDFResource is an object that has unique identity in the
 RDF data model. The object's identity is determined by its URI.
 
 
-## Value ##
+## Methods ##
 
-The single-byte string value of the resource.
-@note THIS IS OBSOLETE. C++ should use GetValueConst and script
-      should use .valueUTF8
-
-
-## ValueUTF8 ##
-
-The UTF-8 URI of the resource.
-
-
-## GetValueConst ##
+### GetValueConst ###
 
 An unscriptable version used to avoid a string copy. Meant
 for use as a performance optimization. The string is encoded
 in UTF-8.
 
 
-## Init ##
+### Init ###
 
 This method is called by the nsIRDFService after constructing
 a resource object to initialize its URI. You would not normally
 call this method directly
 
 
-## EqualsString ##
+### EqualsString ###
 
 Determine if the resource has the given URI.
 
 
-## GetDelegate ##
+### GetDelegate ###
 
 Retrieve the "delegate" object for this resource. A resource
 may have several delegate objects, each of whose lifetimes is
@@ -62,11 +52,25 @@ is, an object that supports nsIRDFDelegateFactory. The delegate
 factory will be used to construct the delegate object.
 
 
-## ReleaseDelegate ##
+### ReleaseDelegate ###
 
 Force a delegate to be "unbound" from the resource.
 
 Normally, a delegate object's lifetime will be identical to
 that of the resource to which it is bound; this method allows a
 delegate to unlink itself from an RDF resource prematurely.
+
+
+## Attributes ##
+
+### Value ###
+
+The single-byte string value of the resource.
+@note THIS IS OBSOLETE. C++ should use GetValueConst and script
+      should use .valueUTF8
+
+
+### ValueUTF8 ###
+
+The UTF-8 URI of the resource.
 

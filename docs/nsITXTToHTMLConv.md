@@ -4,7 +4,9 @@ layout: default
 
 # nsITXTToHTMLConv #
 
-## setTitle ##
+## Methods ##
+
+### setTitle ###
 
 @param text: Title to set for the HTML document.  Only applicable if
              preFormatHTML(true) is called.
@@ -12,7 +14,7 @@ layout: default
              from the plain text document.
 
 
-## preFormatHTML ##
+### preFormatHTML ###
 
 @param value: true to use an HTML header and footer on the document,
               false to omit it.

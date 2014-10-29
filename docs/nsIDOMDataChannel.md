@@ -4,30 +4,34 @@ layout: default
 
 # nsIDOMDataChannel #
 
-## label ##
+## Methods ##
 
-## protocol ##
+### close ###
 
-## reliable ##
+## Attributes ##
 
-## ordered ##
+### label ###
 
-## readyState ##
+### protocol ###
 
-## bufferedAmount ##
+### reliable ###
 
-## id ##
+### ordered ###
 
-## stream ##
+### readyState ###
 
-## onopen ##
+### bufferedAmount ###
 
-## onerror ##
+### id ###
 
-## onclose ##
+### stream ###
 
-## onmessage ##
+### onopen ###
 
-## binaryType ##
+### onerror ###
 
-## close ##
+### onclose ###
+
+### onmessage ###
+
+### binaryType ###

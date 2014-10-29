@@ -14,11 +14,13 @@ The component must have the contract id defined below so that nsNavigator
 can invoke it. 
 
 
-## registerContentHandler ##
+## Methods ##
+
+### registerContentHandler ###
 
 See documentation in Navigator.webidl
 The additional contentWindow param for both methods represents the dom
 content window from which the method has been called.
 
 
-## registerProtocolHandler ##
+### registerProtocolHandler ###

@@ -4,7 +4,9 @@ layout: default
 
 # nsISetDnsCallback #
 
-## setDnsResult ##
+## Methods ##
+
+### setDnsResult ###
 
 Callback function used to report the result of setting DNS server.
 

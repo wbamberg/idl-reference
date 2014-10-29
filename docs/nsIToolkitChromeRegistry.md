@@ -4,7 +4,9 @@ layout: default
 
 # nsIToolkitChromeRegistry #
 
-## checkForOSAccessibility ##
+## Methods ##
+
+### checkForOSAccessibility ###
 
 If the OS has a "high-visibility" or "disabled-friendly" theme set,
 we want to force mozilla into the classic theme, which (for the most part
@@ -14,7 +16,7 @@ not the case in some embedding situations. Embedders have to manually
 call this method during the startup process.
 
 
-## getLocalesForPackage ##
+### getLocalesForPackage ###
 
 Get a list of locales available for the specified package.
 

@@ -4,6 +4,8 @@ layout: default
 
 # nsIPKIParamBlock #
 
-## setISupportAtIndex ##
+## Methods ##
 
-## getISupportAtIndex ##
+### setISupportAtIndex ###
+
+### getISupportAtIndex ###

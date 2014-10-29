@@ -7,7 +7,9 @@ layout: default
 nsIWebBrowserChrome3 is an extension to nsIWebBrowserChrome2.
 
 
-## onBeforeLinkTraversal ##
+## Methods ##
+
+### onBeforeLinkTraversal ###
 
 Determines the appropriate target for a link.
 
@@ -23,7 +25,7 @@ Determines the appropriate target for a link.
          Otherwise returns originalTarget.
 
 
-## shouldLoadURI ##
+### shouldLoadURI ###
 
 Determines whether a load should continue.
 

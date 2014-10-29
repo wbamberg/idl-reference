@@ -4,6 +4,8 @@ layout: default
 
 # nsIFormSubmitObserver #
 
-## notify ##
+## Methods ##
 
-## notifyInvalidSubmit ##
+### notify ###
+
+### notifyInvalidSubmit ###

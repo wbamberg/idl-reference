@@ -4,50 +4,33 @@ layout: default
 
 # nsIDOMChromeWindow #
 
-## STATE_MAXIMIZED ##
+## Methods ##
 
-## STATE_MINIMIZED ##
+### getAttention ###
 
-## STATE_NORMAL ##
+### getAttentionWithCycleCount ###
 
-## STATE_FULLSCREEN ##
+### setCursor ###
 
-## windowState ##
+### maximize ###
 
-## browserDOMWindow ##
+### minimize ###
 
-browserDOMWindow provides access to yet another layer of
-utility functions implemented by chrome script. It will be null
-for DOMWindows not corresponding to browsers.
+### restore ###
 
-
-## getAttention ##
-
-## getAttentionWithCycleCount ##
-
-## setCursor ##
-
-## maximize ##
-
-## minimize ##
-
-## restore ##
-
-## notifyDefaultButtonLoaded ##
+### notifyDefaultButtonLoaded ###
 
 Notify a default button is loaded on a dialog or a wizard.
 defaultButton is the default button.
 
 
-## messageManager ##
-
-## getGroupMessageManager ##
+### getGroupMessageManager ###
 
 Returns the message manager identified by the given group name that
 manages all frame loaders belonging to that group.
 
 
-## beginWindowMove ##
+### beginWindowMove ###
 
 On some operating systems, we must allow the window manager to
 handle window dragging. This function tells the window manager to
@@ -59,3 +42,26 @@ The optional panel argument should be set when moving a panel.
 Returns NS_ERROR_NOT_IMPLEMENTED (and thus throws in JS) if the OS
 doesn't support this.
 
+
+## Attributes ##
+
+### windowState ###
+
+### browserDOMWindow ###
+
+browserDOMWindow provides access to yet another layer of
+utility functions implemented by chrome script. It will be null
+for DOMWindows not corresponding to browsers.
+
+
+### messageManager ###
+
+## Constants ##
+
+### STATE_MAXIMIZED ###
+
+### STATE_MINIMIZED ###
+
+### STATE_NORMAL ###
+
+### STATE_FULLSCREEN ###

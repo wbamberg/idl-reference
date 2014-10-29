@@ -8,43 +8,47 @@ Interface for accessing a single preference. The data is not cached.
 All reads access the current state of the preference.
 
 
-## name ##
+## Methods ##
+
+### reset ###
+
+Resets a preference back to its default values.
+
+
+## Attributes ##
+
+### name ###
 
 The name of the preference.
 
 
-## type ##
+### type ###
 
 A string representing the type of preference (String, Boolean, or Number).
 
 
-## value ##
+### value ###
 
 Get/Set the value of the preference.
 
 
-## locked ##
+### locked ###
 
 Get the locked state of the preference. Set to a boolean value to (un)lock it.
 
 
-## modified ##
+### modified ###
 
 Check if a preference has been modified by the user, or not.
 
 
-## branch ##
+### branch ###
 
 The preference branch that contains this preference.
 
 
-## events ##
+### events ###
 
 The events object for this preference.
 supports: "change"
-
-
-## reset ##
-
-Resets a preference back to its default values.
 

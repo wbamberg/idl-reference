@@ -4,40 +4,46 @@ layout: default
 
 # nsITreeColumn #
 
-## element ##
+## Methods ##
 
-## columns ##
+### getIdConst ###
 
-## x ##
+### getNext ###
 
-## width ##
+### getPrevious ###
 
-## id ##
+### invalidate ###
 
-## getIdConst ##
+## Attributes ##
 
-## atom ##
+### element ###
 
-## index ##
+### columns ###
 
-## primary ##
+### x ###
 
-## cycler ##
+### width ###
 
-## editable ##
+### id ###
 
-## selectable ##
+### atom ###
 
-## TYPE_TEXT ##
+### index ###
 
-## TYPE_CHECKBOX ##
+### primary ###
 
-## TYPE_PROGRESSMETER ##
+### cycler ###
 
-## type ##
+### editable ###
 
-## getNext ##
+### selectable ###
 
-## getPrevious ##
+### type ###
 
-## invalidate ##
+## Constants ##
+
+### TYPE_TEXT ###
+
+### TYPE_CHECKBOX ###
+
+### TYPE_PROGRESSMETER ###

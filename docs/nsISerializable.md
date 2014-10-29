@@ -4,7 +4,9 @@ layout: default
 
 # nsISerializable #
 
-## read ##
+## Methods ##
+
+### read ###
 
 Initialize the object implementing nsISerializable, which must have
 been freshly constructed via CreateInstance.  All data members that
@@ -12,7 +14,7 @@ can't be set to default values must have been serialized by write,
 and should be read from aInputStream in the same order by this method.
 
 
-## write ##
+### write ###
 
 Serialize the object implementing nsISerializable to aOutputStream, by
 writing each data member that must be recovered later to reconstitute

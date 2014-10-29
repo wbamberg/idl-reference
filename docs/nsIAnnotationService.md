@@ -4,34 +4,9 @@ layout: default
 
 # nsIAnnotationService #
 
-## EXPIRE_SESSION ##
+## Methods ##
 
-Valid values for aExpiration, which sets the expiration policy for your
-annotation. The times for the days, weeks and months policies are
-measured since the last visit date of the page in question. These 
-will not expire so long as the user keeps visiting the page from time
-to time.
-
-
-## EXPIRE_WEEKS ##
-
-## EXPIRE_MONTHS ##
-
-## EXPIRE_NEVER ##
-
-## EXPIRE_WITH_HISTORY ##
-
-## EXPIRE_DAYS ##
-
-## TYPE_INT32 ##
-
-## TYPE_DOUBLE ##
-
-## TYPE_STRING ##
-
-## TYPE_INT64 ##
-
-## setPageAnnotation ##
+### setPageAnnotation ###
 
 Sets an annotation, overwriting any previous annotation with the same
 URL/name. IT IS YOUR JOB TO NAMESPACE YOUR ANNOTATION NAMES.
@@ -66,16 +41,16 @@ Only C++ consumers may use the type-specific methods.
 @throws NS_ERROR_ILLEGAL_VALUE if the page or the bookmark doesn't exist.
 
 
-## setItemAnnotation ##
+### setItemAnnotation ###
 
-## setPageAnnotationString ##
+### setPageAnnotationString ###
 
 @throws NS_ERROR_ILLEGAL_VALUE if the page or the bookmark doesn't exist.
 
 
-## setItemAnnotationString ##
+### setItemAnnotationString ###
 
-## setPageAnnotationInt32 ##
+### setPageAnnotationInt32 ###
 
 Sets an annotation just like setAnnotationString, but takes an Int32 as
 input.
@@ -83,9 +58,9 @@ input.
 @throws NS_ERROR_ILLEGAL_VALUE if the page or the bookmark doesn't exist.
 
 
-## setItemAnnotationInt32 ##
+### setItemAnnotationInt32 ###
 
-## setPageAnnotationInt64 ##
+### setPageAnnotationInt64 ###
 
 Sets an annotation just like setAnnotationString, but takes an Int64 as
 input.
@@ -93,9 +68,9 @@ input.
 @throws NS_ERROR_ILLEGAL_VALUE if the page or the bookmark doesn't exist.
 
 
-## setItemAnnotationInt64 ##
+### setItemAnnotationInt64 ###
 
-## setPageAnnotationDouble ##
+### setPageAnnotationDouble ###
 
 Sets an annotation just like setAnnotationString, but takes a double as
 input.
@@ -103,9 +78,9 @@ input.
 @throws NS_ERROR_ILLEGAL_VALUE if the page or the bookmark doesn't exist.
 
 
-## setItemAnnotationDouble ##
+### setItemAnnotationDouble ###
 
-## getPageAnnotation ##
+### getPageAnnotation ###
 
 Retrieves the value of a given annotation. Throws an error if the
 annotation does not exist. C++ consumers may use the type-specific
@@ -115,37 +90,37 @@ The type-specific methods throw if the given annotation is set in
 a different type.
 
 
-## getItemAnnotation ##
+### getItemAnnotation ###
 
-## getPageAnnotationString ##
-
-@see getPageAnnotation
-
-
-## getItemAnnotationString ##
-
-## getPageAnnotationInt32 ##
+### getPageAnnotationString ###
 
 @see getPageAnnotation
 
 
-## getItemAnnotationInt32 ##
+### getItemAnnotationString ###
 
-## getPageAnnotationInt64 ##
-
-@see getPageAnnotation
-
-
-## getItemAnnotationInt64 ##
-
-## getPageAnnotationDouble ##
+### getPageAnnotationInt32 ###
 
 @see getPageAnnotation
 
 
-## getItemAnnotationDouble ##
+### getItemAnnotationInt32 ###
 
-## getPageAnnotationInfo ##
+### getPageAnnotationInt64 ###
+
+@see getPageAnnotation
+
+
+### getItemAnnotationInt64 ###
+
+### getPageAnnotationDouble ###
+
+@see getPageAnnotation
+
+
+### getItemAnnotationDouble ###
+
+### getPageAnnotationInfo ###
 
 Retrieves info about an existing annotation.
 
@@ -157,9 +132,9 @@ example JS:
   // now you can use 'exp.value' and 'flags.value'
 
 
-## getItemAnnotationInfo ##
+### getItemAnnotationInfo ###
 
-## getPageAnnotationType ##
+### getPageAnnotationType ###
 
 Retrieves the type of an existing annotation
 Use getAnnotationInfo if you need this along with the mime-type etc.
@@ -172,16 +147,16 @@ Use getAnnotationInfo if you need this along with the mime-type etc.
 @throws if the annotation is not set
 
 
-## getItemAnnotationType ##
+### getItemAnnotationType ###
 
-## getPagesWithAnnotation ##
+### getPagesWithAnnotation ###
 
 Returns a list of all URIs having a given annotation.
 
 
-## getItemsWithAnnotation ##
+### getItemsWithAnnotation ###
 
-## getAnnotationsWithName ##
+### getAnnotationsWithName ###
 
 Returns a list of mozIAnnotation(s), having a given annotation name.
 
@@ -190,7 +165,7 @@ Returns a list of mozIAnnotation(s), having a given annotation name.
 @return list of mozIAnnotation objects.
 
 
-## getPageAnnotationNames ##
+### getPageAnnotationNames ###
 
 Get the names of all annotations for this URI.
 
@@ -198,33 +173,33 @@ example JS:
   var annotations = annotator.getPageAnnotations(myURI, {});
 
 
-## getItemAnnotationNames ##
+### getItemAnnotationNames ###
 
-## pageHasAnnotation ##
+### pageHasAnnotation ###
 
 Test for annotation existence.
 
 
-## itemHasAnnotation ##
+### itemHasAnnotation ###
 
-## removePageAnnotation ##
+### removePageAnnotation ###
 
 Removes a specific annotation. Succeeds even if the annotation is
 not found.
 
 
-## removeItemAnnotation ##
+### removeItemAnnotation ###
 
-## removePageAnnotations ##
+### removePageAnnotations ###
 
 Removes all annotations for the given page/item.
 We may want some other similar functions to get annotations with given
 flags (once we have flags defined).
 
 
-## removeItemAnnotations ##
+### removeItemAnnotations ###
 
-## copyPageAnnotations ##
+### copyPageAnnotations ###
 
 Copies all annotations from the source to the destination URI/item. If
 the destination already has an annotation with the same name as one on
@@ -235,15 +210,44 @@ All the source annotations will stay as-is. If you don't want them
 any more, use removePageAnnotations on that URI.
 
 
-## copyItemAnnotations ##
+### copyItemAnnotations ###
 
-## addObserver ##
+### addObserver ###
 
 Adds an annotation observer. The annotation service will keep an owning
 reference to the observer object.
 
 
-## removeObserver ##
+### removeObserver ###
 
 Removes an annotaton observer previously registered by addObserver.
 
+
+## Constants ##
+
+### EXPIRE_SESSION ###
+
+Valid values for aExpiration, which sets the expiration policy for your
+annotation. The times for the days, weeks and months policies are
+measured since the last visit date of the page in question. These 
+will not expire so long as the user keeps visiting the page from time
+to time.
+
+
+### EXPIRE_WEEKS ###
+
+### EXPIRE_MONTHS ###
+
+### EXPIRE_NEVER ###
+
+### EXPIRE_WITH_HISTORY ###
+
+### EXPIRE_DAYS ###
+
+### TYPE_INT32 ###
+
+### TYPE_DOUBLE ###
+
+### TYPE_STRING ###
+
+### TYPE_INT64 ###

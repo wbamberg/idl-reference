@@ -4,12 +4,14 @@ layout: default
 
 # nsIGonkVoicemailService #
 
-## notifyStatusChanged ##
+## Methods ##
+
+### notifyStatusChanged ###
 
 Called when a voicemail notification has been received by the network.
 
 
-## notifyInfoChanged ##
+### notifyInfoChanged ###
 
 Called when other voicemail attributes changed.
 

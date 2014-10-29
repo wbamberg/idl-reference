@@ -11,8 +11,12 @@ http://www.w3.org/TR/SMIL/smil-timing.html#Events-TimeEvent
 http://www.w3.org/TR/SVG/animate.html#InterfaceTimeEvent
 
 
-## detail ##
+## Methods ##
 
-## view ##
+### initTimeEvent ###
 
-## initTimeEvent ##
+## Attributes ##
+
+### detail ###
+
+### view ###

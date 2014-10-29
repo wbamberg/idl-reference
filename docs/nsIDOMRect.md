@@ -4,10 +4,12 @@ layout: default
 
 # nsIDOMRect #
 
-## top ##
+## Attributes ##
 
-## right ##
+### top ###
 
-## bottom ##
+### right ###
 
-## left ##
+### bottom ###
+
+### left ###

@@ -9,8 +9,12 @@ ingoing and outgoing. The child must specify the name of a recognized filter
 in order to create a UDP socket.
 
 
-## SF_INCOMING ##
+## Methods ##
 
-## SF_OUTGOING ##
+### filterPacket ###
 
-## filterPacket ##
+## Constants ##
+
+### SF_INCOMING ###
+
+### SF_OUTGOING ###

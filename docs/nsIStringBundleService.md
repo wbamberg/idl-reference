@@ -4,11 +4,13 @@ layout: default
 
 # nsIStringBundleService #
 
-## createBundle ##
+## Methods ##
 
-## createExtensibleBundle ##
+### createBundle ###
 
-## formatStatusMessage ##
+### createExtensibleBundle ###
+
+### formatStatusMessage ###
 
 Formats a message string from a status code and status arguments.
 @param aStatus - The status code. This is mapped into a string ID and
@@ -18,7 +20,7 @@ Formats a message string from a status code and status arguments.
 @return the formatted message
 
 
-## flushBundles ##
+### flushBundles ###
 
 flushes the string bundle cache - useful when the locale changes or
 when we need to get some extra memory back

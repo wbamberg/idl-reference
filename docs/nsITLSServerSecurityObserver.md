@@ -4,7 +4,9 @@ layout: default
 
 # nsITLSServerSecurityObserver #
 
-## onHandshakeDone ##
+## Methods ##
+
+### onHandshakeDone ###
 
 onHandsakeDone
 

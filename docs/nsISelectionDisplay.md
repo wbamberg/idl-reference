@@ -4,14 +4,18 @@ layout: default
 
 # nsISelectionDisplay #
 
-## DISPLAY_TEXT ##
+## Methods ##
 
-## DISPLAY_IMAGES ##
+### setSelectionFlags ###
 
-## DISPLAY_FRAMES ##
+### getSelectionFlags ###
 
-## DISPLAY_ALL ##
+## Constants ##
 
-## setSelectionFlags ##
+### DISPLAY_TEXT ###
 
-## getSelectionFlags ##
+### DISPLAY_IMAGES ###
+
+### DISPLAY_FRAMES ###
+
+### DISPLAY_ALL ###

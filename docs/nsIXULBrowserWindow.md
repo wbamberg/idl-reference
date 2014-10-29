@@ -9,23 +9,25 @@ internals of the browser area to tell the containing xul window to update
 its ui. 
 
 
-## setJSStatus ##
+## Methods ##
+
+### setJSStatus ###
 
 Sets the status according to JS' version of status.
 
 
-## setOverLink ##
+### setOverLink ###
 
 Tells the object implementing this function what link we are currently
 over.
 
 
-## onBeforeLinkTraversal ##
+### onBeforeLinkTraversal ###
 
 Determines the appropriate target for a link.
 
 
-## shouldLoadURI ##
+### shouldLoadURI ###
 
 Determines whether a load should continue.
 
@@ -37,9 +39,9 @@ Determines whether a load should continue.
        The referrer of the load.
 
 
-## showTooltip ##
+### showTooltip ###
 
 Show/hide a tooltip (when the user mouses over a link, say).
 
 
-## hideTooltip ##
+### hideTooltip ###

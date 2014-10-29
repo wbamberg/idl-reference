@@ -4,6 +4,8 @@ layout: default
 
 # nsINetworkStatsServiceProxy #
 
-## saveAppStats ##
+## Methods ##
 
-## saveServiceStats ##
+### saveAppStats ###
+
+### saveServiceStats ###

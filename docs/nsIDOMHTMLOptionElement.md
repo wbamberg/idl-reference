@@ -14,18 +14,20 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## disabled ##
+## Attributes ##
 
-## form ##
+### disabled ###
 
-## label ##
+### form ###
 
-## defaultSelected ##
+### label ###
 
-## selected ##
+### defaultSelected ###
 
-## value ##
+### selected ###
 
-## text ##
+### value ###
 
-## index ##
+### text ###
+
+### index ###

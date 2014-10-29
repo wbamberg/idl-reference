@@ -7,17 +7,19 @@ layout: default
  An nsIFeedPerson represents an author or contributor of a feed.
 
 
-## name ##
+## Attributes ##
+
+### name ###
 
 The name of the person.
 
 
-## email ##
+### email ###
 
 An email address associated with the person.
 
 
-## uri ##
+### uri ###
 
 A URI associated with the person (e.g. a homepage).
 

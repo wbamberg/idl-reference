@@ -24,7 +24,9 @@ about that requirement.
 setWindowCreator.
 
 
-## openWindow ##
+## Methods ##
+
+### openWindow ###
  Create a new window. It will automatically be added to our list
 (via addWindow()).
 @param aParent parent window, if any. Null if no parent.  If it is
@@ -52,7 +54,7 @@ however.
 via nsIObserverService if the window did not already exist.
 
 
-## registerNotification ##
+### registerNotification ###
  Clients of this service can register themselves to be notified
 when a window is opened or closed (added to or removed from this
 service). This method adds an aObserver to the list of objects
@@ -68,7 +70,7 @@ aTopic   a wstring, either "domwindowopened" or "domwindowclosed".
 someData not used.
 
 
-## unregisterNotification ##
+### unregisterNotification ###
  Clients of this service can register themselves to be notified
 when a window is opened or closed (added to or removed from this
 service). This method removes an aObserver from the list of objects
@@ -76,37 +78,37 @@ to be notified.
 @param aObserver the observer to be removed.
 
 
-## getWindowEnumerator ##
+### getWindowEnumerator ###
  Get an iterator for currently open windows in the order they were opened,
 guaranteeing that each will be visited exactly once.
 @return an enumerator which will itself return nsISupports objects which
 can be QIed to an nsIDOMWindow
 
 
-## getNewPrompter ##
+### getNewPrompter ###
  Return a newly created nsIPrompt implementation.
 @param aParent the parent window used for posing alerts. can be null.
 @return a new nsIPrompt object
 
 
-## getNewAuthPrompter ##
+### getNewAuthPrompter ###
  Return a newly created nsIAuthPrompt implementation.
 @param aParent the parent window used for posing alerts. can be null.
 @return a new nsIAuthPrompt object
 
 
-## setWindowCreator ##
+### setWindowCreator ###
  Set the window creator callback. It must be filled in by the app.
 openWindow will use it to create new windows.
 @param creator the callback. if null, the callback will be cleared
 and window creation capabilities lost.
 
 
-## hasWindowCreator ##
+### hasWindowCreator ###
  Returns true if a window creator callback has been set, false otherwise.
 
 
-## getChromeForWindow ##
+### getChromeForWindow ###
  Retrieve the chrome window mapped to the given DOM window. Window
 Watcher keeps a list of all top-level DOM windows currently open,
 along with their corresponding chrome interfaces. Since DOM Windows
@@ -116,7 +118,7 @@ this method will do that.
 @return the corresponding chrome window
 
 
-## getWindowByName ##
+### getWindowByName ###
 
 Retrieve an existing window (or frame).
 @param aTargetName the window name
@@ -129,7 +131,9 @@ frame with the given window name. Make sure you understand the
 security implications of this before using this method!
 
 
-## activeWindow ##
+## Attributes ##
+
+### activeWindow ###
  The Watcher serves as a global storage facility for the current active
 (frontmost non-floating-palette-type) window, storing and returning
 it on demand. Users must keep this attribute current, including after

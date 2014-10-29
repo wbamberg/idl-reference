@@ -10,19 +10,21 @@ the actual channel. nsIInterceptedChannel is expected to be implemented by objec
 which do not implement nsIChannel.
 
 
-## resetInterception ##
+## Methods ##
+
+### resetInterception ###
 
 Instruct a channel that has been intercepted to continue with the original
 network request.
 
 
-## synthesizeHeader ##
+### synthesizeHeader ###
 
 Attach a header name/value pair to the forthcoming synthesized response.
 Overwrites any existing header value.
 
 
-## finishSynthesizedResponse ##
+### finishSynthesizedResponse ###
 
 Instruct a channel that has been intercepted that a response has been
 synthesized and can now be read. No further header modification is allowed

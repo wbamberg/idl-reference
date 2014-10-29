@@ -4,15 +4,9 @@ layout: default
 
 # mozITXTToHTMLConv #
 
-## kEntities ##
+## Methods ##
 
-## kURLs ##
-
-## kGlyphSubstitution ##
-
-## kStructPhrase ##
-
-## scanTXT ##
+### scanTXT ###
 
 @param text: plain text to scan. May be a line, paragraph (recommended)
 or just a substring.<p>
@@ -24,7 +18,7 @@ Scan(a + b, o)
 appropriate.
 
 
-## scanHTML ##
+### scanHTML ###
 
 Adds additional formatting to user edited text, that the user was too lazy
 or "unknowledged" (DELETEME: is that a word?) to make.
@@ -43,7 +37,7 @@ Scan(a + b, o)
 @result      Additional HTML tags are inserted where appropriate.
 
 
-## citeLevelTXT ##
+### citeLevelTXT ###
 
 @param line: line in original msg, possibly starting starting with
 txt quote tags like ">"
@@ -55,7 +49,7 @@ Initial value must be 0, unless line is not real line.
 nested quotes.
 
 
-## findURLInPlaintext ##
+### findURLInPlaintext ###
  
 @param a wide string to scan for the presence of a URL.
 @param aLength --> the length of the buffer to be scanned
@@ -64,3 +58,13 @@ nested quotes.
 aStartPos --> index into the start of a url (-1 if no url found)
 aEndPos --> index of the last character in the url (-1 if no url found)
 
+
+## Constants ##
+
+### kEntities ###
+
+### kURLs ###
+
+### kGlyphSubstitution ###
+
+### kStructPhrase ###

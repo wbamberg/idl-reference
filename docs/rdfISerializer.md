@@ -9,7 +9,9 @@ Interface used to serialize RDF.
 @status PLASMA
 
 
-## serialize ##
+## Methods ##
+
+### serialize ###
 
 Synchronously serialize the given datasource to the outputstream.
 

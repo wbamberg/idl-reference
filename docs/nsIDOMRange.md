@@ -10,73 +10,79 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Traversal-Range/
 
 
-## startContainer ##
+## Methods ##
 
-## startOffset ##
+### setStart ###
 
-## endContainer ##
+### setEnd ###
 
-## endOffset ##
+### setStartBefore ###
 
-## collapsed ##
+### setStartAfter ###
 
-## commonAncestorContainer ##
+### setEndBefore ###
 
-## setStart ##
+### setEndAfter ###
 
-## setEnd ##
+### collapse ###
 
-## setStartBefore ##
+### selectNode ###
 
-## setStartAfter ##
+### selectNodeContents ###
 
-## setEndBefore ##
+### compareBoundaryPoints ###
 
-## setEndAfter ##
+### deleteContents ###
 
-## collapse ##
+### extractContents ###
 
-## selectNode ##
+### cloneContents ###
 
-## selectNodeContents ##
+### insertNode ###
 
-## START_TO_START ##
+### surroundContents ###
 
-## START_TO_END ##
+### cloneRange ###
 
-## END_TO_END ##
+### toString ###
 
-## END_TO_START ##
+### detach ###
 
-## compareBoundaryPoints ##
+### createContextualFragment ###
 
-## deleteContents ##
+### isPointInRange ###
 
-## extractContents ##
+### comparePoint ###
 
-## cloneContents ##
-
-## insertNode ##
-
-## surroundContents ##
-
-## cloneRange ##
-
-## toString ##
-
-## detach ##
-
-## createContextualFragment ##
-
-## isPointInRange ##
-
-## comparePoint ##
-
-## intersectsNode ##
+### intersectsNode ###
 
 Returns whether the range intersects node.
 
 
-## getClientRects ##
+### getClientRects ###
 
-## getBoundingClientRect ##
+### getBoundingClientRect ###
+
+## Attributes ##
+
+### startContainer ###
+
+### startOffset ###
+
+### endContainer ###
+
+### endOffset ###
+
+### collapsed ###
+
+### commonAncestorContainer ###
+
+## Constants ##
+
+### START_TO_START ###
+
+### START_TO_END ###
+
+### END_TO_END ###
+
+### END_TO_START ###

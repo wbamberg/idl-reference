@@ -4,7 +4,9 @@ layout: default
 
 # nsIControllerContext #
 
-## init ##
+## Methods ##
+
+### init ###
 
  Init the controller, optionally passing a controller
  command table.
@@ -15,7 +17,7 @@ layout: default
                       a new, empty table.
 
 
-## setCommandContext ##
+### setCommandContext ###
  
  Set a context on this controller, which is passed
  to commands to give them some context when they execute.

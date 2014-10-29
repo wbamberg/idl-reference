@@ -4,160 +4,17 @@ layout: default
 
 # nsIMobileConnection #
 
-## ICC_SERVICE_CLASS_NONE ##
+## Methods ##
 
-## ICC_SERVICE_CLASS_VOICE ##
-
-## ICC_SERVICE_CLASS_DATA ##
-
-## ICC_SERVICE_CLASS_FAX ##
-
-## ICC_SERVICE_CLASS_SMS ##
-
-## ICC_SERVICE_CLASS_DATA_SYNC ##
-
-## ICC_SERVICE_CLASS_DATA_ASYNC ##
-
-## ICC_SERVICE_CLASS_PACKET ##
-
-## ICC_SERVICE_CLASS_PAD ##
-
-## ICC_SERVICE_CLASS_MAX ##
-
-## CALL_FORWARD_ACTION_UNKNOWN ##
-
-Call forwarding action.
-
-@see 3GPP TS 27.007 7.11 "mode".
-
-
-## CALL_FORWARD_ACTION_DISABLE ##
-
-## CALL_FORWARD_ACTION_ENABLE ##
-
-## CALL_FORWARD_ACTION_QUERY_STATUS ##
-
-## CALL_FORWARD_ACTION_REGISTRATION ##
-
-## CALL_FORWARD_ACTION_ERASURE ##
-
-## CALL_FORWARD_REASON_UNKNOWN ##
-
-Call forwarding reason.
-
-@see 3GPP TS 27.007 7.11 "reason".
-
-
-## CALL_FORWARD_REASON_UNCONDITIONAL ##
-
-## CALL_FORWARD_REASON_MOBILE_BUSY ##
-
-## CALL_FORWARD_REASON_NO_REPLY ##
-
-## CALL_FORWARD_REASON_NOT_REACHABLE ##
-
-## CALL_FORWARD_REASON_ALL_CALL_FORWARDING ##
-
-## CALL_FORWARD_REASON_ALL_CONDITIONAL_CALL_FORWARDING ##
-
-## CALL_BARRING_PROGRAM_UNKNOWN ##
-
-Call barring program.
-
-
-## CALL_BARRING_PROGRAM_ALL_OUTGOING ##
-
-## CALL_BARRING_PROGRAM_OUTGOING_INTERNATIONAL ##
-
-## CALL_BARRING_PROGRAM_OUTGOING_INTERNATIONAL_EXCEPT_HOME ##
-
-## CALL_BARRING_PROGRAM_ALL_INCOMING ##
-
-## CALL_BARRING_PROGRAM_INCOMING_ROAMING ##
-
-## CLIR_DEFAULT ##
-
-Calling line identification restriction constants.
-
-@see 3GPP TS 27.007 7.7 Defined values.
-
-
-## CLIR_INVOCATION ##
-
-## CLIR_SUPPRESSION ##
-
-## NETWORK_SELECTION_MODE_UNKNOWN ##
-
-Network selection mode.
-
-
-## NETWORK_SELECTION_MODE_AUTOMATIC ##
-
-## NETWORK_SELECTION_MODE_MANUAL ##
-
-## MOBILE_RADIO_STATE_UNKNOWN ##
-
-Mobile Radio State.
-
-
-## MOBILE_RADIO_STATE_ENABLING ##
-
-## MOBILE_RADIO_STATE_ENABLED ##
-
-## MOBILE_RADIO_STATE_DISABLING ##
-
-## MOBILE_RADIO_STATE_DISABLED ##
-
-## serviceId ##
-
-## registerListener ##
+### registerListener ###
 
 Called when any one who is interested in receiving unsolicited messages
 from this nsIMobileConnection instance.
 
 
-## unregisterListener ##
+### unregisterListener ###
 
-## lastKnownNetwork ##
-
-String of format '<mcc>-<mnc>'. When changed, listener method
-'notifyLastKnownNetworkChanged' is called.
-
-
-## lastKnownHomeNetwork ##
-
-String of format '<mcc>-<mnc>[-<spn>]'. When changed, listener method
-'notifyLastKnownHomeNetworkChanged' is called.
-
-
-## voice ##
-
-Connection information about the voice.
-
-
-## data ##
-
-Connection information about the data.
-
-
-## iccId ##
-
-The integrated circuit card identifier of the SIM.
-
-
-## networkSelectionMode ##
-
-The selection mode of the voice and data networks. One of the
-nsIMobileConnection.NETWORK_SELECTION_MODE_* values.
-
-
-## radioState ##
-
-Current radio state. One of the nsIMobileConnection.MOBILE_RADIO_STATE_*
-values.
-
-
-## getSupportedNetworkTypes ##
+### getSupportedNetworkTypes ###
 
 The network types supported by this radio.
 
@@ -165,7 +22,7 @@ The network types supported by this radio.
         Possible values: 'gsm', 'wcdma', 'cdma', 'evdo', 'lte'.
 
 
-## getNetworks ##
+### getNetworks ###
 
 Search for available networks.
 
@@ -180,7 +37,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## selectNetwork ##
+### selectNetwork ###
 
 Manually selects the passed in network, overriding the radio's current
 selection.
@@ -197,7 +54,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## selectNetworkAutomatically ##
+### selectNetworkAutomatically ###
 
 Tell the radio to automatically select a network.
 
@@ -211,7 +68,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## setPreferredNetworkType ##
+### setPreferredNetworkType ###
 
 Set preferred network type.
 
@@ -231,7 +88,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.
 
 
-## getPreferredNetworkType ##
+### getPreferredNetworkType ###
 
 Query current preferred network type.
 
@@ -249,7 +106,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## setRoamingPreference ##
+### setRoamingPreference ###
 
 Set roaming preference.
 
@@ -266,7 +123,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.
 
 
-## getRoamingPreference ##
+### getRoamingPreference ###
 
 Query current roaming preference.
 
@@ -282,7 +139,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## setVoicePrivacyMode ##
+### setVoicePrivacyMode ###
 
 Set voice privacy preference.
 
@@ -300,7 +157,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## getVoicePrivacyMode ##
+### getVoicePrivacyMode ###
 
 Query current voice privacy mode.
 
@@ -315,7 +172,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## sendMMI ##
+### sendMMI ###
 
 Send a MMI message.
 
@@ -331,7 +188,7 @@ result will contain the information about the mmi operation.
 Otherwise, the notifyError() will be called.
 
 
-## cancelMMI ##
+### cancelMMI ###
 
 Cancel the current MMI request if one exists.
 
@@ -344,7 +201,7 @@ result will contain the information about the mmi operation.
 Otherwise, the notifyError() will be called.
 
 
-## getCallForwarding ##
+### getCallForwarding ###
 
 Queries current call forwarding options.
 
@@ -363,7 +220,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.
 
 
-## setCallForwarding ##
+### setCallForwarding ###
 
 Configures call forwarding options.
 
@@ -388,7 +245,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.
 
 
-## getCallBarring ##
+### getCallBarring ###
 
 Queries current call barring status.
 
@@ -410,7 +267,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.
 
 
-## setCallBarring ##
+### setCallBarring ###
 
 Configures call barring option.
 
@@ -432,7 +289,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.
 
 
-## changeCallBarringPassword ##
+### changeCallBarringPassword ###
 
 Change call barring facility password.
 
@@ -450,7 +307,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.
 
 
-## setCallWaiting ##
+### setCallWaiting ###
 
 Configures call waiting options.
 
@@ -466,7 +323,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## getCallWaiting ##
+### getCallWaiting ###
 
 Queries current call waiting options.
 
@@ -481,7 +338,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## setCallingLineIdRestriction ##
+### setCallingLineIdRestriction ###
 
 Enables or disables the presentation of the calling line identity (CLI) to
 the called party when originating a call.
@@ -498,7 +355,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.
 
 
-## getCallingLineIdRestriction ##
+### getCallingLineIdRestriction ###
 
 Queries current CLIR status.
 
@@ -514,7 +371,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## exitEmergencyCbMode ##
+### exitEmergencyCbMode ###
 
 Exit emergency callback mode.
 
@@ -528,7 +385,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.
 
 
-## setRadioEnabled ##
+### setRadioEnabled ###
 
 Set radio enabled/disabled.
 
@@ -548,7 +405,7 @@ Note: Request is not available when radioState is null, 'enabling', or
 'InvalidStateError' error.
 
 
-## getNeighboringCellIds ##
+### getNeighboringCellIds ###
 
 Request neighboring cell ids in GSM/UMTS network.
 
@@ -557,7 +414,7 @@ Request neighboring cell ids in GSM/UMTS network.
        for details.
 
 
-## getCellInfoList ##
+### getCellInfoList ###
 
 Request all of the current cell information known to the radio, including
 neighboring cells.
@@ -566,3 +423,152 @@ neighboring cells.
        Called when request is finished. See nsICellInfoListCallback
        for details.
 
+
+## Attributes ##
+
+### serviceId ###
+
+### lastKnownNetwork ###
+
+String of format '<mcc>-<mnc>'. When changed, listener method
+'notifyLastKnownNetworkChanged' is called.
+
+
+### lastKnownHomeNetwork ###
+
+String of format '<mcc>-<mnc>[-<spn>]'. When changed, listener method
+'notifyLastKnownHomeNetworkChanged' is called.
+
+
+### voice ###
+
+Connection information about the voice.
+
+
+### data ###
+
+Connection information about the data.
+
+
+### iccId ###
+
+The integrated circuit card identifier of the SIM.
+
+
+### networkSelectionMode ###
+
+The selection mode of the voice and data networks. One of the
+nsIMobileConnection.NETWORK_SELECTION_MODE_* values.
+
+
+### radioState ###
+
+Current radio state. One of the nsIMobileConnection.MOBILE_RADIO_STATE_*
+values.
+
+
+## Constants ##
+
+### ICC_SERVICE_CLASS_NONE ###
+
+### ICC_SERVICE_CLASS_VOICE ###
+
+### ICC_SERVICE_CLASS_DATA ###
+
+### ICC_SERVICE_CLASS_FAX ###
+
+### ICC_SERVICE_CLASS_SMS ###
+
+### ICC_SERVICE_CLASS_DATA_SYNC ###
+
+### ICC_SERVICE_CLASS_DATA_ASYNC ###
+
+### ICC_SERVICE_CLASS_PACKET ###
+
+### ICC_SERVICE_CLASS_PAD ###
+
+### ICC_SERVICE_CLASS_MAX ###
+
+### CALL_FORWARD_ACTION_UNKNOWN ###
+
+Call forwarding action.
+
+@see 3GPP TS 27.007 7.11 "mode".
+
+
+### CALL_FORWARD_ACTION_DISABLE ###
+
+### CALL_FORWARD_ACTION_ENABLE ###
+
+### CALL_FORWARD_ACTION_QUERY_STATUS ###
+
+### CALL_FORWARD_ACTION_REGISTRATION ###
+
+### CALL_FORWARD_ACTION_ERASURE ###
+
+### CALL_FORWARD_REASON_UNKNOWN ###
+
+Call forwarding reason.
+
+@see 3GPP TS 27.007 7.11 "reason".
+
+
+### CALL_FORWARD_REASON_UNCONDITIONAL ###
+
+### CALL_FORWARD_REASON_MOBILE_BUSY ###
+
+### CALL_FORWARD_REASON_NO_REPLY ###
+
+### CALL_FORWARD_REASON_NOT_REACHABLE ###
+
+### CALL_FORWARD_REASON_ALL_CALL_FORWARDING ###
+
+### CALL_FORWARD_REASON_ALL_CONDITIONAL_CALL_FORWARDING ###
+
+### CALL_BARRING_PROGRAM_UNKNOWN ###
+
+Call barring program.
+
+
+### CALL_BARRING_PROGRAM_ALL_OUTGOING ###
+
+### CALL_BARRING_PROGRAM_OUTGOING_INTERNATIONAL ###
+
+### CALL_BARRING_PROGRAM_OUTGOING_INTERNATIONAL_EXCEPT_HOME ###
+
+### CALL_BARRING_PROGRAM_ALL_INCOMING ###
+
+### CALL_BARRING_PROGRAM_INCOMING_ROAMING ###
+
+### CLIR_DEFAULT ###
+
+Calling line identification restriction constants.
+
+@see 3GPP TS 27.007 7.7 Defined values.
+
+
+### CLIR_INVOCATION ###
+
+### CLIR_SUPPRESSION ###
+
+### NETWORK_SELECTION_MODE_UNKNOWN ###
+
+Network selection mode.
+
+
+### NETWORK_SELECTION_MODE_AUTOMATIC ###
+
+### NETWORK_SELECTION_MODE_MANUAL ###
+
+### MOBILE_RADIO_STATE_UNKNOWN ###
+
+Mobile Radio State.
+
+
+### MOBILE_RADIO_STATE_ENABLING ###
+
+### MOBILE_RADIO_STATE_ENABLED ###
+
+### MOBILE_RADIO_STATE_DISABLING ###
+
+### MOBILE_RADIO_STATE_DISABLED ###

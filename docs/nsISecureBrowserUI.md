@@ -4,8 +4,12 @@ layout: default
 
 # nsISecureBrowserUI #
 
-## init ##
+## Methods ##
 
-## setDocShell ##
+### init ###
 
-## state ##
+### setDocShell ###
+
+## Attributes ##
+
+### state ###

@@ -7,7 +7,9 @@ layout: default
 An interface describing an object that knows how to check for updates.
 
 
-## checkForUpdates ##
+## Methods ##
+
+### checkForUpdates ###
 
 Checks for available updates, notifying a listener of the results.
 @param   listener
@@ -22,7 +24,16 @@ Checks for available updates, notifying a listener of the results.
          the app.update.enabled preference.
 
 
-## CURRENT_CHECK ##
+### stopChecking ###
+
+Ends any pending update check.
+@param   duration
+         A value representing the set of checks to stop doing.
+
+
+## Constants ##
+
+### CURRENT_CHECK ###
 
 Constants for the |stopChecking| function that tell the Checker how long
 to stop checking:
@@ -33,13 +44,6 @@ ANY_CHECKS:        Stops all checking, any session from now on
                    (disables update checking preferences)
 
 
-## CURRENT_SESSION ##
+### CURRENT_SESSION ###
 
-## ANY_CHECKS ##
-
-## stopChecking ##
-
-Ends any pending update check.
-@param   duration
-         A value representing the set of checks to stop doing.
-
+### ANY_CHECKS ###

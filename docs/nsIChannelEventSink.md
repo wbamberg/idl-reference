@@ -12,32 +12,9 @@ notificationCallbacks.
 These methods are called before onStartRequest.
 
 
-## REDIRECT_TEMPORARY ##
+## Methods ##
 
-This is a temporary redirect. New requests for this resource should
-continue to use the URI of the old channel.
-
-The new URI may be identical to the old one.
-
-
-## REDIRECT_PERMANENT ##
-
-This is a permanent redirect. New requests for this resource should use
-the URI of the new channel (This might be an HTTP 301 reponse).
-If this flag is not set, this is a temporary redirect.
-
-The new URI may be identical to the old one.
-
-
-## REDIRECT_INTERNAL ##
-
-This is an internal redirect, i.e. it was not initiated by the remote
-server, but is specific to the channel implementation.
-
-The new URI may be identical to the old one.
-
-
-## asyncOnChannelRedirect ##
+### asyncOnChannelRedirect ###
 
 Called when a redirect occurs. This may happen due to an HTTP 3xx status
 code. The purpose of this method is to notify the sink that a redirect
@@ -79,4 +56,31 @@ callback must be done if this method throws!
 
 @throw <any> Throwing an exception will cause the redirect to be
        cancelled
+
+
+## Constants ##
+
+### REDIRECT_TEMPORARY ###
+
+This is a temporary redirect. New requests for this resource should
+continue to use the URI of the old channel.
+
+The new URI may be identical to the old one.
+
+
+### REDIRECT_PERMANENT ###
+
+This is a permanent redirect. New requests for this resource should use
+the URI of the new channel (This might be an HTTP 301 reponse).
+If this flag is not set, this is a temporary redirect.
+
+The new URI may be identical to the old one.
+
+
+### REDIRECT_INTERNAL ###
+
+This is an internal redirect, i.e. it was not initiated by the remote
+server, but is specific to the channel implementation.
+
+The new URI may be identical to the old one.
 

@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMXPathEvaluator #
 
-## evaluate ##
+## Methods ##
+
+### evaluate ###

@@ -11,7 +11,9 @@ Migrate application settings from an outside source.
 @obtainable service, contractid("@mozilla.org/toolkit/profile-migrator;1")
 
 
-## migrate ##
+## Methods ##
+
+### migrate ###
 
 Migrate data from an outside source, if possible.  Does nothing
 otherwise.

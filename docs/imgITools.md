@@ -4,7 +4,9 @@ layout: default
 
 # imgITools #
 
-## decodeImage ##
+## Methods ##
+
+### decodeImage ###
 
 decodeImage
 Caller provides an input stream and mimetype. We read from the stream
@@ -17,7 +19,7 @@ the resulting imgIContainer.
        Type of image in the stream.
 
 
-## decodeImageData ##
+### decodeImageData ###
 
 decodeImageData
 Caller provides an input stream and mimetype. We read from the stream
@@ -37,7 +39,7 @@ new code should use |decodeImage|.
        |null|.
 
 
-## encodeImage ##
+### encodeImage ###
 
 encodeImage
 Caller provides an image container, and the mime type it should be
@@ -51,7 +53,7 @@ encoded to. We return an input stream for the encoded image data.
        Encoder-specific output options.
 
 
-## encodeScaledImage ##
+### encodeScaledImage ###
 
 encodeScaledImage
 Caller provides an image container, and the mime type it should be
@@ -69,7 +71,7 @@ The encoded image is scaled to the specified dimensions.
        Encoder-specific output options.
 
 
-## getImgLoaderForDocument ##
+### getImgLoaderForDocument ###
 
 getImgLoaderForDocument
 Retrieve an image loader that reflects the privacy status of the given
@@ -79,7 +81,7 @@ document.
        A document. Must not be null.
 
 
-## getImgCacheForDocument ##
+### getImgCacheForDocument ###
 
 getImgLoaderForDocument
 Retrieve an image cache that reflects the privacy status of the given
@@ -91,7 +93,7 @@ document.
        the current context in which a cache is desired.
 
 
-## encodeCroppedImage ##
+### encodeCroppedImage ###
 
 encodeCroppedImage
 Caller provides an image container, and the mime type it should be
@@ -113,7 +115,7 @@ The given offset and size must not exceed the image bounds.
        Encoder-specific output options.
 
 
-## createScriptedObserver ##
+### createScriptedObserver ###
 
 Create a wrapper around a scripted notification observer (ordinarily
 imgINotificationObserver cannot be implemented from scripts).

@@ -7,6 +7,8 @@ layout: default
 A callback interface for handling asynchronous response.
 
 
-## notifySuccess ##
+## Methods ##
 
-## notifyError ##
+### notifySuccess ###
+
+### notifyError ###

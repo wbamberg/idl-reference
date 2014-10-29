@@ -4,20 +4,22 @@ layout: default
 
 # nsIEditorSpellCheck #
 
-## checkCurrentDictionary ##
+## Methods ##
+
+### checkCurrentDictionary ###
 
 Call this on any change in installed dictionaries to ensure that the spell
 checker is not using a current dictionary which is no longer available.
 If the current dictionary is no longer available, then pick another one.
 
 
-## canSpellCheck ##
+### canSpellCheck ###
 
 Returns true if we can enable spellchecking. If there are no available
 dictionaries, this will return false.
 
 
-## InitSpellChecker ##
+### InitSpellChecker ###
 
 Turns on the spell checker for the given editor. enableSelectionChecking
 set means that we only want to check the current selection in the editor,
@@ -27,7 +29,7 @@ matter.  Initialization is asynchronous and is not complete until the given
 callback is called.
 
 
-## GetNextMisspelledWord ##
+### GetNextMisspelledWord ###
 
 When interactively spell checking the document, this will return the
 value of the next word that is misspelled. This also computes the
@@ -36,7 +38,7 @@ suggestions which you can get by calling GetSuggestedWord.
 @see nsISpellChecker::GetNextMisspelledWord
 
 
-## GetSuggestedWord ##
+### GetSuggestedWord ###
 
 Used to get suggestions for the last word that was checked and found to
 be misspelled. The first call will give you the first (best) suggestion.
@@ -47,7 +49,7 @@ to build a list. When there are no more suggestions, an empty string
 @see nsISpellChecker::GetSuggestedWord
 
 
-## CheckCurrentWord ##
+### CheckCurrentWord ###
 
 Check a given word. In spite of the name, this function checks the word
 you give it, returning true if the word is misspelled. If the word is
@@ -57,19 +59,19 @@ GetSuggestedWord().
 @see nsISpellChecker::CheckCurrentWord
 
 
-## ReplaceWord ##
+### ReplaceWord ###
 
 Use when modally checking the document to replace a word.
 
 @see nsISpellChecker::CheckCurrentWord
 
 
-## IgnoreWordAllOccurrences ##
+### IgnoreWordAllOccurrences ###
 
 @see nsISpellChecker::IgnoreAll
 
 
-## GetPersonalDictionary ##
+### GetPersonalDictionary ###
 
 Fills an internal list of words added to the personal dictionary. These
 words can be retrieved using GetPersonalDictionaryWord()
@@ -78,28 +80,28 @@ words can be retrieved using GetPersonalDictionaryWord()
 @see GetPersonalDictionaryWord
 
 
-## GetPersonalDictionaryWord ##
+### GetPersonalDictionaryWord ###
 
 Used after you call GetPersonalDictionary() to iterate through all the
 words added to the personal dictionary. Will return the empty string when
 there are no more words.
 
 
-## AddWordToDictionary ##
+### AddWordToDictionary ###
 
 Adds a word to the current personal dictionary.
 
 @see nsISpellChecker::AddWordToDictionary
 
 
-## RemoveWordFromDictionary ##
+### RemoveWordFromDictionary ###
 
 Removes a word from the current personal dictionary.
 
 @see nsISpellChecker::RemoveWordFromPersonalDictionary
 
 
-## GetDictionaryList ##
+### GetDictionaryList ###
 
 Retrieves a list of the currently available dictionaries. The strings will
 typically be language IDs, like "en-US".
@@ -107,17 +109,17 @@ typically be language IDs, like "en-US".
 @see mozISpellCheckingEngine::GetDictionaryList
 
 
-## GetCurrentDictionary ##
+### GetCurrentDictionary ###
 
 @see nsISpellChecker::GetCurrentDictionary
 
 
-## SetCurrentDictionary ##
+### SetCurrentDictionary ###
 
 @see nsISpellChecker::SetCurrentDictionary
 
 
-## UninitSpellChecker ##
+### UninitSpellChecker ###
 
 Call this to free up the spell checking object. It will also save the
 current selected language as the default for future use.
@@ -127,7 +129,7 @@ call this function to clear the cached spell check object, and no
 preference saving will happen.
 
 
-## setFilter ##
+### setFilter ###
 
 Used to filter the content (for example, to skip blockquotes in email from
 spellchecking. Call this before calling InitSpellChecker; calling it
@@ -136,7 +138,7 @@ after initialization will have no effect.
 @see nsITextServicesDocument::setFilter
 
 
-## CheckCurrentWordNoSuggest ##
+### CheckCurrentWordNoSuggest ###
 
 Like CheckCurrentWord, checks the word you give it, returning true if it's
 misspelled. This is faster than CheckCurrentWord because it does not
@@ -147,7 +149,7 @@ calls to CheckCurrentWord, so there may be suggestions, but they will be
 invalid.
 
 
-## UpdateCurrentDictionary ##
+### UpdateCurrentDictionary ###
 
 Update the dictionary in use to be sure it corresponds to what the editor
 needs.  The update is asynchronous and is not complete until the given

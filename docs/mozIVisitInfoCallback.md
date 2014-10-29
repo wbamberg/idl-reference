@@ -8,7 +8,9 @@ Shared Callback interface for mozIAsyncHistory methods. The semantics
 for each method are detailed in mozIAsyncHistory.
 
 
-## handleError ##
+## Methods ##
+
+### handleError ###
 
 Called when the given place could not be processed.
 
@@ -18,7 +20,7 @@ Called when the given place could not be processed.
        The information that was given to the caller for the place.
 
 
-## handleResult ##
+### handleResult ###
 
 Called for each place processed successfully.
 
@@ -26,7 +28,7 @@ Called for each place processed successfully.
        The current info stored for the place.
 
 
-## handleCompletion ##
+### handleCompletion ###
 
 Called when all records were processed.
 

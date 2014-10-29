@@ -4,25 +4,9 @@ layout: default
 
 # nsIOfflineCacheUpdateObserver #
 
-## STATE_ERROR ##
+## Methods ##
 
-## STATE_CHECKING ##
-
-## STATE_NOUPDATE ##
-
-## STATE_OBSOLETE ##
-
-## STATE_DOWNLOADING ##
-
-## STATE_ITEMSTARTED ##
-
-## STATE_ITEMCOMPLETED ##
-
-## STATE_ITEMPROGRESS ##
-
-## STATE_FINISHED ##
-
-## updateStateChanged ##
+### updateStateChanged ###
 
 aUpdate has changed its state.
 
@@ -32,7 +16,7 @@ aUpdate has changed its state.
        See enumeration above
 
 
-## applicationCacheAvailable ##
+### applicationCacheAvailable ###
 
 Informs the observer about an application being available to associate.
 
@@ -40,3 +24,23 @@ Informs the observer about an application being available to associate.
        The application cache instance that has been created or found by the 
        update to associate with
 
+
+## Constants ##
+
+### STATE_ERROR ###
+
+### STATE_CHECKING ###
+
+### STATE_NOUPDATE ###
+
+### STATE_OBSOLETE ###
+
+### STATE_DOWNLOADING ###
+
+### STATE_ITEMSTARTED ###
+
+### STATE_ITEMCOMPLETED ###
+
+### STATE_ITEMPROGRESS ###
+
+### STATE_FINISHED ###

@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMCSSCharsetRule #
 
-## encoding ##
+## Attributes ##
+
+### encoding ###

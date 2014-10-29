@@ -14,6 +14,8 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## areas ##
+## Attributes ##
 
-## name ##
+### areas ###
+
+### name ###

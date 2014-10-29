@@ -15,7 +15,9 @@ content and a well defined set of other domains, without the risk of
 leaking out a system principal to the content. See: Bug 734891
 
 
-## whiteList ##
+## Attributes ##
+
+### whiteList ###
 
 An array of principals that the expanded principal subsumes.
 Note: this list is not reference counted, it is shared, so

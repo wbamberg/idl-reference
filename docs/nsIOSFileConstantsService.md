@@ -4,7 +4,9 @@ layout: default
 
 # nsIOSFileConstantsService #
 
-## init ##
+## Methods ##
+
+### init ###
 
 Inject module OS.Constants in the environment.
 

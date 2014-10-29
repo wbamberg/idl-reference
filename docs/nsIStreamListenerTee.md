@@ -8,7 +8,9 @@ As data "flows" into a stream listener tee, it is copied to the output stream
 and then forwarded to the real listener.
 
 
-## init ##
+## Methods ##
+
+### init ###
  
 Initalize the tee.
 
@@ -26,7 +28,7 @@ Initalize the tee.
    the original listener (listener parameter) are privileged 
 
 
-## initAsync ##
+### initAsync ###
  
 Initalize the tee like above, but with the extra parameter to make it
 possible to copy the output asynchronously

@@ -4,6 +4,10 @@ layout: default
 
 # nsIMediaManagerService #
 
-## activeMediaCaptureWindows ##
+## Methods ##
 
-## mediaCaptureWindowState ##
+### mediaCaptureWindowState ###
+
+## Attributes ##
+
+### activeMediaCaptureWindows ###

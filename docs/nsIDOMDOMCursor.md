@@ -4,6 +4,10 @@ layout: default
 
 # nsIDOMDOMCursor #
 
-## done ##
+## Methods ##
 
-## continue ##
+### continue ###
+
+## Attributes ##
+
+### done ###

@@ -4,20 +4,24 @@ layout: default
 
 # imgINotificationObserver #
 
-## SIZE_AVAILABLE ##
+## Methods ##
 
-## FRAME_UPDATE ##
+### notify ###
 
-## FRAME_COMPLETE ##
+## Constants ##
 
-## LOAD_COMPLETE ##
+### SIZE_AVAILABLE ###
 
-## DECODE_COMPLETE ##
+### FRAME_UPDATE ###
 
-## DISCARD ##
+### FRAME_COMPLETE ###
 
-## UNLOCKED_DRAW ##
+### LOAD_COMPLETE ###
 
-## IS_ANIMATED ##
+### DECODE_COMPLETE ###
 
-## notify ##
+### DISCARD ###
+
+### UNLOCKED_DRAW ###
+
+### IS_ANIMATED ###

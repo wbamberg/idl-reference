@@ -4,7 +4,9 @@ layout: default
 
 # nsISearchEngine #
 
-## getSubmission ##
+## Methods ##
+
+### getSubmission ###
 
 Gets a nsISearchSubmission object that contains information about what to
 send to the search engine, including the URI and postData, if applicable.
@@ -27,7 +29,7 @@ send to the search engine, including the URI and postData, if applicable.
          obtained for the given responseType, returns null.
 
 
-## addParam ##
+### addParam ###
 
 Adds a parameter to the search engine's submission data. This should only
 be called on engines created via addEngineWithDetails.
@@ -50,7 +52,7 @@ be called on engines created via addEngineWithDetails.
 @throws NS_ERROR_INVALID_ARG if name or value are null.
 
 
-## supportsResponseType ##
+### supportsResponseType ###
 
 Determines whether the engine can return responses in the given
 MIME type.  Returns true if the engine spec has a URL with the
@@ -60,7 +62,7 @@ given responseType, false otherwise.
        The MIME type to check for
 
 
-## getIconURLBySize ##
+### getIconURLBySize ###
 
 Returns a string with the URL to an engine's icon matching both width and
 height. Returns null if icon with specified dimensions is not found.
@@ -71,7 +73,7 @@ height. Returns null if icon with specified dimensions is not found.
        Height of the requested icon.
 
 
-## getIcons ##
+### getIcons ###
 
 Gets an array of all available icons. Each entry is an object with
 width, height and url properties. width and height are numeric and
@@ -79,7 +81,7 @@ represent the icon's dimensions. url is a string with the URL for
 the icon.
 
 
-## speculativeConnect ##
+### speculativeConnect ###
 
 Opens a speculative connection to the engine's search URI
 (and suggest URI, if different) to reduce request latency
@@ -92,65 +94,7 @@ Opens a speculative connection to the engine's search URI
         elemeents
 
 
-## TYPE_MOZSEARCH ##
-
-Supported search engine types.
-
-
-## TYPE_SHERLOCK ##
-
-## TYPE_OPENSEARCH ##
-
-## DATA_XML ##
-
-Supported search engine data types.
-
-
-## DATA_TEXT ##
-
-## alias ##
-
-An optional shortcut alias for the engine.
-When non-null, this is a unique identifier.
-
-
-## description ##
-
-A text description describing the engine.
-
-
-## hidden ##
-
-Whether the engine should be hidden from the user.
-
-
-## iconURI ##
-
-A nsIURI corresponding to the engine's icon, stored locally. May be null.
-
-
-## name ##
-
-The display name of the search engine. This is a unique identifier.
-
-
-## searchForm ##
-
-A URL string pointing to the engine's search form.
-
-
-## type ##
-
-The search engine type.
-
-
-## identifier ##
-
-An optional unique identifier for this search engine within the context of
-the distribution, as provided by the distributing entity.
-
-
-## getResultDomain ##
+### getResultDomain ###
 
 Gets a string representing the hostname from which search results for a
 given responseType are returned, minus the leading "www." (if present).
@@ -162,3 +106,65 @@ but will default to host from the <Url>'s template otherwise.
 
 @return the resultDomain for the given responseType.
 
+
+## Attributes ##
+
+### alias ###
+
+An optional shortcut alias for the engine.
+When non-null, this is a unique identifier.
+
+
+### description ###
+
+A text description describing the engine.
+
+
+### hidden ###
+
+Whether the engine should be hidden from the user.
+
+
+### iconURI ###
+
+A nsIURI corresponding to the engine's icon, stored locally. May be null.
+
+
+### name ###
+
+The display name of the search engine. This is a unique identifier.
+
+
+### searchForm ###
+
+A URL string pointing to the engine's search form.
+
+
+### type ###
+
+The search engine type.
+
+
+### identifier ###
+
+An optional unique identifier for this search engine within the context of
+the distribution, as provided by the distributing entity.
+
+
+## Constants ##
+
+### TYPE_MOZSEARCH ###
+
+Supported search engine types.
+
+
+### TYPE_SHERLOCK ###
+
+### TYPE_OPENSEARCH ###
+
+### DATA_XML ###
+
+Supported search engine data types.
+
+
+### DATA_TEXT ###

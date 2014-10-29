@@ -14,40 +14,42 @@ little-endian platforms.
 @See nsIBinaryOutputStream
 
 
-## setInputStream ##
+## Methods ##
 
-## readBoolean ##
+### setInputStream ###
+
+### readBoolean ###
 
 Read 8-bits from the stream.
 
 @return that byte to be treated as a boolean.
 
 
-## read8 ##
+### read8 ###
 
-## read16 ##
+### read16 ###
 
-## read32 ##
+### read32 ###
 
-## read64 ##
+### read64 ###
 
-## readFloat ##
+### readFloat ###
 
-## readDouble ##
+### readDouble ###
 
-## readCString ##
+### readCString ###
 
 Read an 8-bit pascal style string from the stream.
 32-bit length field, followed by length 8-bit chars.
 
 
-## readString ##
+### readString ###
 
 Read an 16-bit pascal style string from the stream.
 32-bit length field, followed by length PRUnichars.
 
 
-## readBytes ##
+### readBytes ###
 
 Read an opaque byte array from the stream.
 
@@ -56,7 +58,7 @@ Read an opaque byte array from the stream.
 @throws NS_ERROR_FAILURE if it can't read aLength bytes
 
 
-## readByteArray ##
+### readByteArray ###
 
 Read an opaque byte array from the stream, storing the results
 as an array of PRUint8s.
@@ -66,7 +68,7 @@ as an array of PRUint8s.
 @throws NS_ERROR_FAILURE if it can't read aLength bytes
 
 
-## readArrayBuffer ##
+### readArrayBuffer ###
 
 Read opaque bytes from the stream, storing the results in an ArrayBuffer.
 

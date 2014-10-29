@@ -4,7 +4,9 @@ layout: default
 
 # mozIStorageCompletionCallback #
 
-## complete ##
+## Methods ##
+
+### complete ###
 
 Indicates that the event this callback was passed in for has completed.
 

@@ -4,4 +4,6 @@ layout: default
 
 # nsITrashAppCallback #
 
-## trashAppFinished ##
+## Methods ##
+
+### trashAppFinished ###

@@ -8,4 +8,6 @@ Every JS module exports a single NSGetFactory symbol which is converted into thi
 functional interface type.
 
 
-## get ##
+## Methods ##
+
+### get ###

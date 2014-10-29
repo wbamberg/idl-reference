@@ -7,7 +7,9 @@ layout: default
 Simplified PrintSettings for Windows interface 
 
 
-## deviceName ##
+## Attributes ##
+
+### deviceName ###
 
 Data Members
 
@@ -22,6 +24,6 @@ via the "m_pd" data member of the CPrintDialog
 in MFC.
 
 
-## driverName ##
+### driverName ###
 
-## devMode ##
+### devMode ###

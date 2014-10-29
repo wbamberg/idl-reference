@@ -4,4 +4,6 @@ layout: default
 
 # nsIXPCTestInterfaceC #
 
-## someInteger ##
+## Attributes ##
+
+### someInteger ###

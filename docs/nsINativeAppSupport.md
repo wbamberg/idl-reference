@@ -4,14 +4,16 @@ layout: default
 
 # nsINativeAppSupport #
 
-## start ##
+## Methods ##
 
-## enable ##
+### start ###
 
-## stop ##
+### enable ###
 
-## quit ##
+### stop ###
 
-## onLastWindowClosing ##
+### quit ###
 
-## ReOpen ##
+### onLastWindowClosing ###
+
+### ReOpen ###

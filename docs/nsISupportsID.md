@@ -7,6 +7,10 @@ layout: default
 Scriptable storage for nsID structures
 
 
-## data ##
+## Methods ##
 
-## toString ##
+### toString ###
+
+## Attributes ##
+
+### data ###

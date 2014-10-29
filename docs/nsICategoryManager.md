@@ -4,7 +4,9 @@ layout: default
 
 # nsICategoryManager #
 
-## getCategoryEntry ##
+## Methods ##
+
+### getCategoryEntry ###
 
 Get the value for the given category's entry.
 @param aCategory The name of the category ("protocol")
@@ -12,7 +14,7 @@ Get the value for the given category's entry.
 @return The value.
 
 
-## addCategoryEntry ##
+### addCategoryEntry ###
 
 Add an entry to a category.
 @param aCategory The name of the category ("protocol")
@@ -23,7 +25,7 @@ Add an entry to a category.
 @return Previous entry, if any
 
 
-## deleteCategoryEntry ##
+### deleteCategoryEntry ###
 
 Delete an entry from the category.
 @param aCategory The name of the category ("protocol")
@@ -31,13 +33,13 @@ Delete an entry from the category.
 @param aPersist Delete persistent data from registry, if present?
 
 
-## deleteCategory ##
+### deleteCategory ###
 
 Delete a category and all entries.
 @param aCategory The category to be deleted.
 
 
-## enumerateCategory ##
+### enumerateCategory ###
 
 Enumerate the entries in a category.
 @param aCategory The category to be enumerated.
@@ -45,7 +47,7 @@ Enumerate the entries in a category.
         nsISupportsCString.
 
 
-## enumerateCategories ##
+### enumerateCategories ###
 
 Enumerate all existing categories
 @param aCategory The category to be enumerated.

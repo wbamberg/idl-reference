@@ -10,94 +10,100 @@ boolean to PR_TRUE before making the call.  Implementations may skip writing
 to *_retval unless they want to return PR_FALSE.
 
 
-## WANT_PRECREATE ##
+## Methods ##
 
-## WANT_CREATE ##
+### getScriptableFlags ###
 
-## WANT_POSTCREATE ##
+### preCreate ###
 
-## WANT_ADDPROPERTY ##
+### create ###
 
-## WANT_DELPROPERTY ##
+### postCreate ###
 
-## WANT_GETPROPERTY ##
+### postTransplant ###
 
-## WANT_SETPROPERTY ##
+### addProperty ###
 
-## WANT_ENUMERATE ##
+### delProperty ###
 
-## WANT_NEWENUMERATE ##
+### getProperty ###
 
-## WANT_NEWRESOLVE ##
+### setProperty ###
 
-## WANT_CONVERT ##
+### enumerate ###
 
-## WANT_FINALIZE ##
+### newEnumerate ###
 
-## WANT_CALL ##
+### newResolve ###
 
-## WANT_CONSTRUCT ##
+### convert ###
 
-## WANT_HASINSTANCE ##
+### finalize ###
 
-## USE_JSSTUB_FOR_ADDPROPERTY ##
+### call ###
 
-## USE_JSSTUB_FOR_DELPROPERTY ##
+### construct ###
 
-## USE_JSSTUB_FOR_SETPROPERTY ##
+### hasInstance ###
 
-## DONT_ENUM_STATIC_PROPS ##
+### postCreatePrototype ###
 
-## DONT_ENUM_QUERY_INTERFACE ##
+## Attributes ##
 
-## DONT_ASK_INSTANCE_FOR_SCRIPTABLE ##
+### className ###
 
-## CLASSINFO_INTERFACES_ONLY ##
+## Constants ##
 
-## ALLOW_PROP_MODS_DURING_RESOLVE ##
+### WANT_PRECREATE ###
 
-## ALLOW_PROP_MODS_TO_PROTOTYPE ##
+### WANT_CREATE ###
 
-## IS_GLOBAL_OBJECT ##
+### WANT_POSTCREATE ###
 
-## DONT_REFLECT_INTERFACE_NAMES ##
+### WANT_ADDPROPERTY ###
 
-## RESERVED ##
+### WANT_DELPROPERTY ###
 
-## className ##
+### WANT_GETPROPERTY ###
 
-## getScriptableFlags ##
+### WANT_SETPROPERTY ###
 
-## preCreate ##
+### WANT_ENUMERATE ###
 
-## create ##
+### WANT_NEWENUMERATE ###
 
-## postCreate ##
+### WANT_NEWRESOLVE ###
 
-## postTransplant ##
+### WANT_CONVERT ###
 
-## addProperty ##
+### WANT_FINALIZE ###
 
-## delProperty ##
+### WANT_CALL ###
 
-## getProperty ##
+### WANT_CONSTRUCT ###
 
-## setProperty ##
+### WANT_HASINSTANCE ###
 
-## enumerate ##
+### USE_JSSTUB_FOR_ADDPROPERTY ###
 
-## newEnumerate ##
+### USE_JSSTUB_FOR_DELPROPERTY ###
 
-## newResolve ##
+### USE_JSSTUB_FOR_SETPROPERTY ###
 
-## convert ##
+### DONT_ENUM_STATIC_PROPS ###
 
-## finalize ##
+### DONT_ENUM_QUERY_INTERFACE ###
 
-## call ##
+### DONT_ASK_INSTANCE_FOR_SCRIPTABLE ###
 
-## construct ##
+### CLASSINFO_INTERFACES_ONLY ###
 
-## hasInstance ##
+### ALLOW_PROP_MODS_DURING_RESOLVE ###
 
-## postCreatePrototype ##
+### ALLOW_PROP_MODS_TO_PROTOTYPE ###
+
+### IS_GLOBAL_OBJECT ###
+
+### DONT_REFLECT_INTERFACE_NAMES ###
+
+### RESERVED ###

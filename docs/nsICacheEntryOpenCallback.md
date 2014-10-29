@@ -4,31 +4,9 @@ layout: default
 
 # nsICacheEntryOpenCallback #
 
-## ENTRY_WANTED ##
+## Methods ##
 
-State of the entry determined by onCacheEntryCheck.
-
-ENTRY_WANTED - the consumer is interested in the entry, we will pass it.
-RECHECK_AFTER_WRITE_FINISHED - the consumer cannot use the entry while data is
-   still being written and wants to check it again after the current write is
-   finished. This actually prevents concurrent read/write and is used with
-   non-resumable HTTP responses.
-ENTRY_NEEDS_REVALIDATION - entry needs to be revalidated first with origin server,
-   this means the loading channel will decide whether to use the entry content
-   as is after it gets a positive response from the server about validity of the
-   content ; when a new content needs to be loaded from the server, the loading
-   channel opens a new entry with OPEN_TRUNCATE flag which dooms the one
-   this check has been made for.
-ENTRY_NOT_WANTED - the consumer is not interested in the entry, we will not pass it.
-
-
-## RECHECK_AFTER_WRITE_FINISHED ##
-
-## ENTRY_NEEDS_REVALIDATION ##
-
-## ENTRY_NOT_WANTED ##
-
-## onCacheEntryCheck ##
+### onCacheEntryCheck ###
 
 Callback to perform any validity checks before the entry should be used.
 Called before onCacheEntryAvailable callback, depending on the result it
@@ -51,7 +29,7 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
    State of the entry, see the constants just above.
 
 
-## onCacheEntryAvailable ##
+### onCacheEntryAvailable ###
 
 Callback giving actual result of asyncOpenURI.  It may give consumer the cache 
 entry or a failure result when it's not possible to open it from some reason.
@@ -81,3 +59,29 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
    - there is not enough disk space to create new entries
    - cache entry was not found in a given application cache
 
+
+## Constants ##
+
+### ENTRY_WANTED ###
+
+State of the entry determined by onCacheEntryCheck.
+
+ENTRY_WANTED - the consumer is interested in the entry, we will pass it.
+RECHECK_AFTER_WRITE_FINISHED - the consumer cannot use the entry while data is
+   still being written and wants to check it again after the current write is
+   finished. This actually prevents concurrent read/write and is used with
+   non-resumable HTTP responses.
+ENTRY_NEEDS_REVALIDATION - entry needs to be revalidated first with origin server,
+   this means the loading channel will decide whether to use the entry content
+   as is after it gets a positive response from the server about validity of the
+   content ; when a new content needs to be loaded from the server, the loading
+   channel opens a new entry with OPEN_TRUNCATE flag which dooms the one
+   this check has been made for.
+ENTRY_NOT_WANTED - the consumer is not interested in the entry, we will not pass it.
+
+
+### RECHECK_AFTER_WRITE_FINISHED ###
+
+### ENTRY_NEEDS_REVALIDATION ###
+
+### ENTRY_NOT_WANTED ###

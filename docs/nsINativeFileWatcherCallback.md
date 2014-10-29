@@ -8,7 +8,9 @@ The interface for the callback invoked when a change on a watched
 resource is detected.
 
 
-## changed ##
+## Methods ##
+
+### changed ###
 
 @param resourcePath
        The path of the changed resource. If there were too many changes,

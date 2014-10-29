@@ -4,6 +4,8 @@ layout: default
 
 # nsIAutoCompleteObserver #
 
-## onSearchResult ##
+## Methods ##
 
-## onUpdateSearchResult ##
+### onSearchResult ###
+
+### onUpdateSearchResult ###

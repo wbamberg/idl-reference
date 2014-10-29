@@ -7,13 +7,9 @@ layout: default
 Interface representing a simple storage system
 
 
-## events ##
+## Methods ##
 
-The events object for the storage
-supports: "change"
-
-
-## has ##
+### has ###
 
 Determines if a storage item exists with the given name.
 @param   aName
@@ -22,7 +18,7 @@ Determines if a storage item exists with the given name.
          false otherwise.
 
 
-## set ##
+### set ###
 
 Sets the value of a storage item with the given name.
 @param   aName
@@ -31,7 +27,7 @@ Sets the value of a storage item with the given name.
          The value to assign to the item
 
 
-## get ##
+### get ###
 
 Gets the value of a storage item with the given name. Returns a
 default value if the item does not exist.
@@ -41,4 +37,12 @@ default value if the item does not exist.
          The value to return if no item exists with the given name
 @returns value of the item or the given default value if no item
          exists with the given name.
+
+
+## Attributes ##
+
+### events ###
+
+The events object for the storage
+supports: "change"
 

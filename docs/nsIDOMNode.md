@@ -12,100 +12,106 @@ For more information on this interface please see
 http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html
 
 
-## ELEMENT_NODE ##
+## Methods ##
 
-## ATTRIBUTE_NODE ##
+### insertBefore ###
 
-## TEXT_NODE ##
+### replaceChild ###
 
-## CDATA_SECTION_NODE ##
+### removeChild ###
 
-## ENTITY_REFERENCE_NODE ##
+### appendChild ###
 
-## ENTITY_NODE ##
+### hasChildNodes ###
 
-## PROCESSING_INSTRUCTION_NODE ##
+### cloneNode ###
 
-## COMMENT_NODE ##
+### normalize ###
 
-## DOCUMENT_NODE ##
+### compareDocumentPosition ###
 
-## DOCUMENT_TYPE_NODE ##
+### lookupPrefix ###
 
-## DOCUMENT_FRAGMENT_NODE ##
+### isDefaultNamespace ###
 
-## NOTATION_NODE ##
+### lookupNamespaceURI ###
 
-## nodeName ##
+### isEqualNode ###
 
-## nodeValue ##
+### setUserData ###
 
-## nodeType ##
+### getUserData ###
 
-## parentNode ##
+### contains ###
 
-## parentElement ##
+## Attributes ##
 
-## childNodes ##
+### nodeName ###
 
-## firstChild ##
+### nodeValue ###
 
-## lastChild ##
+### nodeType ###
 
-## previousSibling ##
+### parentNode ###
 
-## nextSibling ##
+### parentElement ###
 
-## ownerDocument ##
+### childNodes ###
 
-## insertBefore ##
+### firstChild ###
 
-## replaceChild ##
+### lastChild ###
 
-## removeChild ##
+### previousSibling ###
 
-## appendChild ##
+### nextSibling ###
 
-## hasChildNodes ##
+### ownerDocument ###
 
-## cloneNode ##
+### namespaceURI ###
 
-## normalize ##
+### prefix ###
 
-## namespaceURI ##
+### localName ###
 
-## prefix ##
+### baseURI ###
 
-## localName ##
+### textContent ###
 
-## baseURI ##
+## Constants ##
 
-## DOCUMENT_POSITION_DISCONNECTED ##
+### ELEMENT_NODE ###
 
-## DOCUMENT_POSITION_PRECEDING ##
+### ATTRIBUTE_NODE ###
 
-## DOCUMENT_POSITION_FOLLOWING ##
+### TEXT_NODE ###
 
-## DOCUMENT_POSITION_CONTAINS ##
+### CDATA_SECTION_NODE ###
 
-## DOCUMENT_POSITION_CONTAINED_BY ##
+### ENTITY_REFERENCE_NODE ###
 
-## DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC ##
+### ENTITY_NODE ###
 
-## compareDocumentPosition ##
+### PROCESSING_INSTRUCTION_NODE ###
 
-## textContent ##
+### COMMENT_NODE ###
 
-## lookupPrefix ##
+### DOCUMENT_NODE ###
 
-## isDefaultNamespace ##
+### DOCUMENT_TYPE_NODE ###
 
-## lookupNamespaceURI ##
+### DOCUMENT_FRAGMENT_NODE ###
 
-## isEqualNode ##
+### NOTATION_NODE ###
 
-## setUserData ##
+### DOCUMENT_POSITION_DISCONNECTED ###
 
-## getUserData ##
+### DOCUMENT_POSITION_PRECEDING ###
 
-## contains ##
+### DOCUMENT_POSITION_FOLLOWING ###
+
+### DOCUMENT_POSITION_CONTAINS ###
+
+### DOCUMENT_POSITION_CONTAINED_BY ###
+
+### DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC ###

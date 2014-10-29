@@ -4,36 +4,42 @@ layout: default
 
 # nsIDOMFileReader #
 
-## readAsArrayBuffer ##
+## Methods ##
 
-## readAsBinaryString ##
+### readAsArrayBuffer ###
 
-## readAsText ##
+### readAsBinaryString ###
 
-## readAsDataURL ##
+### readAsText ###
 
-## abort ##
+### readAsDataURL ###
 
-## EMPTY ##
+### abort ###
 
-## LOADING ##
+## Attributes ##
 
-## DONE ##
+### readyState ###
 
-## readyState ##
+### result ###
 
-## result ##
+### error ###
 
-## error ##
+### onloadstart ###
 
-## onloadstart ##
+### onprogress ###
 
-## onprogress ##
+### onload ###
 
-## onload ##
+### onabort ###
 
-## onabort ##
+### onerror ###
 
-## onerror ##
+### onloadend ###
 
-## onloadend ##
+## Constants ##
+
+### EMPTY ###
+
+### LOADING ###
+
+### DONE ###

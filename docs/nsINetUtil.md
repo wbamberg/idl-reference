@@ -7,7 +7,9 @@ layout: default
 nsINetUtil provides various network-related utility methods.
 
 
-## parseContentType ##
+## Methods ##
+
+### parseContentType ###
 
 Parse a content-type header and return the content type and
 charset (if any).
@@ -19,7 +21,7 @@ charset (if any).
 @return the MIME type specified in the header, in lower-case.
 
 
-## protocolHasFlags ##
+### protocolHasFlags ###
 
 Test whether the given URI's handler has the given protocol flags.
 
@@ -30,7 +32,7 @@ Test whether the given URI's handler has the given protocol flags.
         in aFlags.
 
 
-## URIChainHasFlags ##
+### URIChainHasFlags ###
 
 Test whether the protocol handler for this URI or that for any of
 its inner URIs has the given protocol flags.  This will QI aURI to
@@ -43,7 +45,7 @@ nsINestedURI and walk the nested URI chain.
         in aFlags.
 
 
-## toImmutableURI ##
+### toImmutableURI ###
 
 Take aURI and produce an immutable version of it for the caller.  If aURI
 is immutable this will be aURI itself; otherwise this will be a clone,
@@ -51,87 +53,19 @@ marked immutable if possible.  Passing null to this method is allowed; in
 that case it will return null.
 
 
-## newSimpleNestedURI ##
+### newSimpleNestedURI ###
 
 Create a simple nested URI using the result of
 toImmutableURI on the passed-in aURI which may not be null.
 Note: The return URI will not have had its spec set yet.
 
 
-## ESCAPE_ALL ##
- Escape every character with its %XX-escaped equivalent */
-
-## ESCAPE_XALPHAS ##
- Leave alphanumeric characters intact and %XX-escape all others */
-
-## ESCAPE_XPALPHAS ##
- Leave alphanumeric characters intact, convert spaces to '+',
-%XX-escape all others */
-
-## ESCAPE_URL_PATH ##
- Leave alphanumeric characters and forward slashes intact,
-%XX-escape all others */
-
-## escapeString ##
+### escapeString ###
 
 escape a string with %00-style escaping
 
 
-## ESCAPE_URL_SCHEME ##
- %XX-escape URL scheme */
-
-## ESCAPE_URL_USERNAME ##
- %XX-escape username in the URL */
-
-## ESCAPE_URL_PASSWORD ##
- %XX-escape password in the URL */
-
-## ESCAPE_URL_HOST ##
- %XX-escape URL host */
-
-## ESCAPE_URL_DIRECTORY ##
- %XX-escape URL directory */
-
-## ESCAPE_URL_FILE_BASENAME ##
- %XX-escape file basename in the URL */
-
-## ESCAPE_URL_FILE_EXTENSION ##
- %XX-escape file extension in the URL */
-
-## ESCAPE_URL_PARAM ##
- %XX-escape URL parameters */
-
-## ESCAPE_URL_QUERY ##
- %XX-escape URL query */
-
-## ESCAPE_URL_REF ##
- %XX-escape URL ref */
-
-## ESCAPE_URL_FILEPATH ##
- %XX-escape URL path - same as escaping directory, basename and extension */
-
-## ESCAPE_URL_MINIMAL ##
- %XX-escape scheme, username, password, host, path, params, query and ref */
-
-## ESCAPE_URL_FORCED ##
- Force %XX-escaping of already escaped sequences */
-
-## ESCAPE_URL_ONLY_ASCII ##
- Skip non-ascii octets, %XX-escape all others */
-
-## ESCAPE_URL_ONLY_NONASCII ##
- 
-Skip graphic octets (0x20-0x7E) when escaping
-Skips all ASCII octets (0x00-0x7F) when unescaping 
-
-
-## ESCAPE_URL_COLON ##
- Force %XX-escape of colon */
-
-## ESCAPE_URL_SKIP_CONTROL ##
- Skip C0 and DEL from unescaping */
-
-## escapeURL ##
+### escapeURL ###
 
 %XX-Escape invalid chars in a URL segment. 
 
@@ -142,7 +76,7 @@ Skips all ASCII octets (0x00-0x7F) when unescaping
 
 
 
-## unescapeString ##
+### unescapeString ###
 
 Expands URL escape sequences
 
@@ -153,7 +87,7 @@ Expands URL escape sequences
 @return unescaped string
 
 
-## extractCharsetFromContentType ##
+### extractCharsetFromContentType ###
 
 Extract the charset parameter location and value from a content-type
 header.
@@ -176,3 +110,73 @@ header.
 cases when parseContentType would claim to have a charset, if the type
 that won out does not have a charset parameter specified.
 
+
+## Constants ##
+
+### ESCAPE_ALL ###
+ Escape every character with its %XX-escaped equivalent */
+
+### ESCAPE_XALPHAS ###
+ Leave alphanumeric characters intact and %XX-escape all others */
+
+### ESCAPE_XPALPHAS ###
+ Leave alphanumeric characters intact, convert spaces to '+',
+%XX-escape all others */
+
+### ESCAPE_URL_PATH ###
+ Leave alphanumeric characters and forward slashes intact,
+%XX-escape all others */
+
+### ESCAPE_URL_SCHEME ###
+ %XX-escape URL scheme */
+
+### ESCAPE_URL_USERNAME ###
+ %XX-escape username in the URL */
+
+### ESCAPE_URL_PASSWORD ###
+ %XX-escape password in the URL */
+
+### ESCAPE_URL_HOST ###
+ %XX-escape URL host */
+
+### ESCAPE_URL_DIRECTORY ###
+ %XX-escape URL directory */
+
+### ESCAPE_URL_FILE_BASENAME ###
+ %XX-escape file basename in the URL */
+
+### ESCAPE_URL_FILE_EXTENSION ###
+ %XX-escape file extension in the URL */
+
+### ESCAPE_URL_PARAM ###
+ %XX-escape URL parameters */
+
+### ESCAPE_URL_QUERY ###
+ %XX-escape URL query */
+
+### ESCAPE_URL_REF ###
+ %XX-escape URL ref */
+
+### ESCAPE_URL_FILEPATH ###
+ %XX-escape URL path - same as escaping directory, basename and extension */
+
+### ESCAPE_URL_MINIMAL ###
+ %XX-escape scheme, username, password, host, path, params, query and ref */
+
+### ESCAPE_URL_FORCED ###
+ Force %XX-escaping of already escaped sequences */
+
+### ESCAPE_URL_ONLY_ASCII ###
+ Skip non-ascii octets, %XX-escape all others */
+
+### ESCAPE_URL_ONLY_NONASCII ###
+ 
+Skip graphic octets (0x20-0x7E) when escaping
+Skips all ASCII octets (0x00-0x7F) when unescaping 
+
+
+### ESCAPE_URL_COLON ###
+ Force %XX-escape of colon */
+
+### ESCAPE_URL_SKIP_CONTROL ###
+ Skip C0 and DEL from unescaping */

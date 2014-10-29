@@ -8,7 +8,9 @@ The external URL handler service is used for finding
 platform-specific applications for handling particular URLs.
 
 
-## getURLHandlerInfoFromOS ##
+## Methods ##
+
+### getURLHandlerInfoFromOS ###
 
 Given a URL, looks up the handler info from the OS. This should be
 overridden by each OS's implementation.

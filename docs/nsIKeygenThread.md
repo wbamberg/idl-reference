@@ -9,7 +9,9 @@ nsIKeygenThread
  to be used by the dialog displaying status information.
 
 
-## startKeyGeneration ##
+## Methods ##
+
+### startKeyGeneration ###
 
 startKeyGeneration - run the thread
   A user interface using this interface needs to
@@ -24,7 +26,7 @@ startKeyGeneration - run the thread
   and subject.
 
 
-## userCanceled ##
+### userCanceled ###
 
 userCanceled - notify the thread
   If the user canceled, the thread is no longer allowed to

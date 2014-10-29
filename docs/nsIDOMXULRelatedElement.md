@@ -4,7 +4,9 @@ layout: default
 
 # nsIDOMXULRelatedElement #
 
-## getRelatedElement ##
+## Methods ##
+
+### getRelatedElement ###
 
 Retrun an element associated with the given element. It's implemented
 by container elements having relation between their items. For example,

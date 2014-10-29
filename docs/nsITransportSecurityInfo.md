@@ -4,11 +4,13 @@ layout: default
 
 # nsITransportSecurityInfo #
 
-## securityState ##
+## Attributes ##
 
-## errorMessage ##
+### securityState ###
 
-## failedCertChain ##
+### errorMessage ###
+
+### failedCertChain ###
 
 If certificate verification failed, this will be the peer certificate
 chain provided in the handshake, so it can be used for error reporting.

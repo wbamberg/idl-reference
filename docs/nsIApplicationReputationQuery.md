@@ -9,16 +9,18 @@ downloaded file. nsIApplicationReputationService.Start() may only be called
 once with a single query.
 
 
-## sourceURI ##
+## Attributes ##
 
-## referrerURI ##
+### sourceURI ###
 
-## suggestedFileName ##
+### referrerURI ###
 
-## fileSize ##
+### suggestedFileName ###
 
-## sha256Hash ##
+### fileSize ###
 
-## signatureInfo ##
+### sha256Hash ###
 
-## redirects ##
+### signatureInfo ###
+
+### redirects ###

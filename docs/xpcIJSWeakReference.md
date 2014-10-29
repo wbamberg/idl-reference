@@ -4,7 +4,9 @@ layout: default
 
 # xpcIJSWeakReference #
 
-## get ##
+## Methods ##
+
+### get ###
 
 To be called from JS only.
 

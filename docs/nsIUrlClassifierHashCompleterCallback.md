@@ -7,7 +7,9 @@ layout: default
 This interface is implemented by nsIUrlClassifierHashCompleter clients.
 
 
-## completion ##
+## Methods ##
+
+### completion ###
 
 A complete hash has been found that matches the partial hash.
 This method may be called 0-n times for a given
@@ -21,7 +23,7 @@ nsIUrlClassifierCompleter::complete() call.
        The database chunk that this hash belongs to.
 
 
-## completionFinished ##
+### completionFinished ###
 
 The completion is complete.  This method is called once per
 nsIUrlClassifierCompleter::complete() call, after all completion()

@@ -4,6 +4,8 @@ layout: default
 
 # nsIDeletedMessageInfo #
 
-## deletedMessageIds ##
+## Attributes ##
 
-## deletedThreadIds ##
+### deletedMessageIds ###
+
+### deletedThreadIds ###

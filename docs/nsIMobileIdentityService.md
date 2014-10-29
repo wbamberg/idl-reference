@@ -4,4 +4,6 @@ layout: default
 
 # nsIMobileIdentityService #
 
-## getMobileIdAssertion ##
+## Methods ##
+
+### getMobileIdAssertion ###

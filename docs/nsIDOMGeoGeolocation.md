@@ -4,8 +4,10 @@ layout: default
 
 # nsIDOMGeoGeolocation #
 
-## watchPosition ##
+## Methods ##
 
-## getCurrentPosition ##
+### watchPosition ###
 
-## clearWatch ##
+### getCurrentPosition ###
+
+### clearWatch ###

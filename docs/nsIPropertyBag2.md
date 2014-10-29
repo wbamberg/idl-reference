@@ -4,36 +4,38 @@ layout: default
 
 # nsIPropertyBag2 #
 
-## getPropertyAsInt32 ##
+## Methods ##
 
-## getPropertyAsUint32 ##
+### getPropertyAsInt32 ###
 
-## getPropertyAsInt64 ##
+### getPropertyAsUint32 ###
 
-## getPropertyAsUint64 ##
+### getPropertyAsInt64 ###
 
-## getPropertyAsDouble ##
+### getPropertyAsUint64 ###
 
-## getPropertyAsAString ##
+### getPropertyAsDouble ###
 
-## getPropertyAsACString ##
+### getPropertyAsAString ###
 
-## getPropertyAsAUTF8String ##
+### getPropertyAsACString ###
 
-## getPropertyAsBool ##
+### getPropertyAsAUTF8String ###
 
-## getPropertyAsInterface ##
+### getPropertyAsBool ###
+
+### getPropertyAsInterface ###
 
 This method returns null if the value exists, but is null.
 
 
-## get ##
+### get ###
 
 This method returns null if the value does not exist,
 or exists but is null.
 
 
-## hasKey ##
+### hasKey ###
 
 Check for the existence of a key.
 

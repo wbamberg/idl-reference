@@ -4,30 +4,34 @@ layout: default
 
 # nsIInlineSpellChecker #
 
-## spellChecker ##
+## Methods ##
 
-## init ##
+### init ###
 
-## cleanup ##
+### cleanup ###
 
-## enableRealTimeSpell ##
+### spellCheckAfterEditorChange ###
 
-## spellCheckAfterEditorChange ##
+### spellCheckRange ###
 
-## spellCheckRange ##
+### getMisspelledWord ###
 
-## getMisspelledWord ##
+### replaceWord ###
 
-## replaceWord ##
+### addWordToDictionary ###
 
-## addWordToDictionary ##
+### removeWordFromDictionary ###
 
-## removeWordFromDictionary ##
+### ignoreWord ###
 
-## ignoreWord ##
+### ignoreWords ###
 
-## ignoreWords ##
+### updateCurrentDictionary ###
 
-## updateCurrentDictionary ##
+## Attributes ##
 
-## spellCheckPending ##
+### spellChecker ###
+
+### enableRealTimeSpell ###
+
+### spellCheckPending ###

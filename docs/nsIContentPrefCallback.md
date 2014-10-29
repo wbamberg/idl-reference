@@ -4,4 +4,6 @@ layout: default
 
 # nsIContentPrefCallback #
 
-## onResult ##
+## Methods ##
+
+### onResult ###

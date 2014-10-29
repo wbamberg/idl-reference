@@ -4,4 +4,6 @@ layout: default
 
 # nsIUrlClassifierCallback #
 
-## handleEvent ##
+## Methods ##
+
+### handleEvent ###

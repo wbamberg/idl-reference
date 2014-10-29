@@ -4,10 +4,14 @@ layout: default
 
 # nsICookiePromptService #
 
-## DENY_COOKIE ##
+## Methods ##
 
-## ACCEPT_COOKIE ##
+### cookieDialog ###
 
-## ACCEPT_SESSION_COOKIE ##
+## Constants ##
 
-## cookieDialog ##
+### DENY_COOKIE ###
+
+### ACCEPT_COOKIE ###
+
+### ACCEPT_SESSION_COOKIE ###

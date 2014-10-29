@@ -8,7 +8,9 @@ Utility functions for determining whether a given URI, channel, or window
 hierarchy is third party with respect to a known URI.
 
 
-## isThirdPartyURI ##
+## Methods ##
+
+### isThirdPartyURI ###
 
 isThirdPartyURI
 
@@ -30,7 +32,7 @@ respect to "http://images.google.com/", but "http://mail.yahoo.com/" and
         and is not a file:// URI.
 
 
-## isThirdPartyWindow ##
+### isThirdPartyWindow ###
 
 isThirdPartyWindow
 
@@ -70,7 +72,7 @@ a URI of "http://mozilla.com", the result will be true.
 @see isThirdPartyURI
 
 
-## isThirdPartyChannel ##
+### isThirdPartyChannel ###
 
 isThirdPartyChannel
 
@@ -116,7 +118,7 @@ a URI of "http://mozilla.com", the result will be true.
 @see isThirdPartyWindow
 
 
-## getBaseDomain ##
+### getBaseDomain ###
 
 getBaseDomain
 
@@ -134,7 +136,7 @@ special cases elided above.
 @return the base domain.
 
 
-## getURIFromWindow ##
+### getURIFromWindow ###
 
 getURIFromWindow
 
@@ -142,7 +144,7 @@ Returns the URI associated with the script object principal for the
 window.
 
 
-## getTopWindowForChannel ##
+### getTopWindowForChannel ###
 
 getTopWindowForChannel
 

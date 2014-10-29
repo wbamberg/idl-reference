@@ -9,7 +9,9 @@ filled using a single output stream.  One or more independent input streams
 can be created to read the data from the buffer non-destructively.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 
 Initialize the stream, setting up the amount of space that will be
@@ -22,7 +24,7 @@ allocated for the stream's backing-store.
        than or equal to this value. Passing UINT32_MAX is safe.
 
 
-## getOutputStream ##
+### getOutputStream ###
 
 Get a reference to the one and only output stream for this instance.
 The zero-based startPosition argument is used is used to set the initial
@@ -31,14 +33,16 @@ current buffer length.  Calling this method has the side-effect of
 truncating the internal buffer to startPosition bytes.
 
 
-## newInputStream ##
+### newInputStream ###
 
 Create a new input stream to read data (written by the singleton output
 stream) from the internal buffer.  Multiple, independent input streams
 can be created.
 
 
-## length ##
+## Attributes ##
+
+### length ###
  
 The length attribute indicates the total number of bytes stored in the
 nsIStorageStream internal buffer, regardless of any consumption by input
@@ -48,7 +52,7 @@ stream is in use.
 
 @See #writeInProgress */
 
-## writeInProgress ##
+### writeInProgress ###
 
 True, when output stream has not yet been Close'ed
 

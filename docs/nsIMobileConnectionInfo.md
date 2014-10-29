@@ -4,7 +4,9 @@ layout: default
 
 # nsIMobileConnectionInfo #
 
-## state ##
+## Attributes ##
+
+### state ###
 
 State of the connection.
 
@@ -12,7 +14,7 @@ Possible values: 'notSearching', 'searching', 'denied', 'registered' or
                  null (unknown).
 
 
-## connected ##
+### connected ###
 
 Indicates whether the connection is ready.
 
@@ -21,7 +23,7 @@ Note: The meaning of "connection ready" for data and voice are different.
       - Voice: voice is registered to network or not.
 
 
-## emergencyCallsOnly ##
+### emergencyCallsOnly ###
 
 Indicates whether only emergency calls are possible.
 
@@ -29,18 +31,18 @@ This flag is only relevant to voice connections and when 'connected' is
 false.
 
 
-## roaming ##
+### roaming ###
 
 Indicates whether the connection is going through a foreign operator
 (roaming) or not.
 
 
-## network ##
+### network ###
 
 Network operator information.
 
 
-## type ##
+### type ###
 
 Type of connection.
 
@@ -49,18 +51,18 @@ Possible values: 'gsm', 'gprs', 'edge', 'umts', 'hsdpa', 'hsupa', 'hspa',
                  'evdob', 'ehrpd', 'lte' or null (unknown).
 
 
-## signalStrength ##
+### signalStrength ###
 
 Signal strength in dBm, or null if no service is available.
 
 
-## relSignalStrength ##
+### relSignalStrength ###
 
 Signal strength, represented linearly as a number between 0 (weakest
 signal) and 100 (full signal).
 
 
-## cell ##
+### cell ###
 
 Cell location information.
 

@@ -4,7 +4,9 @@ layout: default
 
 # nsIMobileIdentityUIGlue #
 
-## startFlow ##
+## Methods ##
+
+### startFlow ###
 
 Request the creation of a Mobile ID UI flow.
 
@@ -25,7 +27,7 @@ be returned as result of the Promise or a single string containing an error
 in case of rejection.
 
 
-## verificationCodePrompt ##
+### verificationCodePrompt ###
 
 Will prompt the user to enter a code used to verify a phone number.
 This will only be called if an external phone number is selected in
@@ -44,27 +46,29 @@ verification code introduced through the UI or an error in case of
 rejection of the promise.
 
 
-## verify ##
+### verify ###
 
 Notify the UI about the start of the verification process.
 
 
-## error ##
+### error ###
 
 Notify the UI about an error in the verification process.
 
 
-## verified ##
+### verified ###
 
 Notify the UI about the succesful phone number verification.
 
 
-## oncancel ##
+## Attributes ##
+
+### oncancel ###
 
 Callback to be called when the user cancels the verification flow via UI.
 
 
-## onresendcode ##
+### onresendcode ###
 
 Callback to be called when the user requests a resend of a verification
 code.

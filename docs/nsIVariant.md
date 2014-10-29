@@ -11,56 +11,60 @@ that refer to this interface. But we mark all the methods and attributes
 JS type anyway.
 
 
-## dataType ##
+## Methods ##
 
-## getAsInt8 ##
+### getAsInt8 ###
 
-## getAsInt16 ##
+### getAsInt16 ###
 
-## getAsInt32 ##
+### getAsInt32 ###
 
-## getAsInt64 ##
+### getAsInt64 ###
 
-## getAsUint8 ##
+### getAsUint8 ###
 
-## getAsUint16 ##
+### getAsUint16 ###
 
-## getAsUint32 ##
+### getAsUint32 ###
 
-## getAsUint64 ##
+### getAsUint64 ###
 
-## getAsFloat ##
+### getAsFloat ###
 
-## getAsDouble ##
+### getAsDouble ###
 
-## getAsBool ##
+### getAsBool ###
 
-## getAsChar ##
+### getAsChar ###
 
-## getAsWChar ##
+### getAsWChar ###
 
-## getAsID ##
+### getAsID ###
 
-## getAsAString ##
+### getAsAString ###
 
-## getAsDOMString ##
+### getAsDOMString ###
 
-## getAsACString ##
+### getAsACString ###
 
-## getAsAUTF8String ##
+### getAsAUTF8String ###
 
-## getAsString ##
+### getAsString ###
 
-## getAsWString ##
+### getAsWString ###
 
-## getAsISupports ##
+### getAsISupports ###
 
-## getAsJSVal ##
+### getAsJSVal ###
 
-## getAsInterface ##
+### getAsInterface ###
 
-## getAsArray ##
+### getAsArray ###
 
-## getAsStringWithSize ##
+### getAsStringWithSize ###
 
-## getAsWStringWithSize ##
+### getAsWStringWithSize ###
+
+## Attributes ##
+
+### dataType ###

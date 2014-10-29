@@ -4,7 +4,9 @@ layout: default
 
 # nsIIdleServiceInternal #
 
-## resetIdleTimeOut ##
+## Methods ##
+
+### resetIdleTimeOut ###
 
 "Resets the idle time to the value specified."
 

@@ -4,14 +4,16 @@ layout: default
 
 # nsICommandManager #
 
-## addCommandObserver ##
+## Methods ##
 
-## removeCommandObserver ##
+### addCommandObserver ###
 
-## isCommandSupported ##
+### removeCommandObserver ###
 
-## isCommandEnabled ##
+### isCommandSupported ###
 
-## getCommandState ##
+### isCommandEnabled ###
 
-## doCommand ##
+### getCommandState ###
+
+### doCommand ###

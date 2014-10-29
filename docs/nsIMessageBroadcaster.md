@@ -11,7 +11,9 @@ manager will broadcast the message to all frame message managers
 within its window.
 
 
-## broadcastAsyncMessage ##
+## Methods ##
+
+### broadcastAsyncMessage ###
 
 Like |sendAsyncMessage()|, but also broadcasts this message to
 all "child" message managers of this message manager.  See long
@@ -21,12 +23,14 @@ WARNING: broadcasting messages can be very expensive and leak
 sensitive data.  Use with extreme caution.
 
 
-## childCount ##
-
-Number of subordinate message managers.
-
-
-## getChildAt ##
+### getChildAt ###
 
 Return a single subordinate message manager.
+
+
+## Attributes ##
+
+### childCount ###
+
+Number of subordinate message managers.
 

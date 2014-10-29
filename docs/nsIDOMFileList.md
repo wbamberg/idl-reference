@@ -4,6 +4,10 @@ layout: default
 
 # nsIDOMFileList #
 
-## length ##
+## Methods ##
 
-## item ##
+### item ###
+
+## Attributes ##
+
+### length ###

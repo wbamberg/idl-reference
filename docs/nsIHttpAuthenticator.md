@@ -15,7 +15,9 @@ where <auth-scheme> is the lower-cased value of the authentication scheme
 found in the server challenge per the rules of RFC 2617.
 
 
-## challengeReceived ##
+## Methods ##
+
+### challengeReceived ###
 
 Upon receipt of a server challenge, this function is called to determine
 whether or not the current user identity has been rejected.  If true,
@@ -41,7 +43,7 @@ return value will be ignored, and user prompting will be suppressed.
        revised identity.
 
 
-## generateCredentials ##
+### generateCredentials ###
 
 Called to generate the authentication credentials for a particular
 server/proxy challenge.  This is the value that will be sent back
@@ -79,7 +81,16 @@ authenticator sets the REUSABLE_CHALLENGE flag.
        authenticator may return one of the generate flags bellow.
 
 
-## USING_INTERNAL_IDENTITY ##
+## Attributes ##
+
+### authFlags ###
+
+Flags defining various properties of the authenticator.
+
+
+## Constants ##
+
+### USING_INTERNAL_IDENTITY ###
 
 Generate flags
 
@@ -90,12 +101,7 @@ the returned identity because it might not be valid and would overwrite
 the cached identity.  See bug 542318 comment 32.
 
 
-## authFlags ##
-
-Flags defining various properties of the authenticator.
-
-
-## REQUEST_BASED ##
+### REQUEST_BASED ###
 
 A request based authentication scheme only authenticates an individual
 request (or a set of requests under the same authentication domain as
@@ -103,7 +109,7 @@ defined by RFC 2617).  BASIC and DIGEST are request based authentication
 schemes.
 
 
-## CONNECTION_BASED ##
+### CONNECTION_BASED ###
 
 A connection based authentication scheme authenticates an individual
 connection.  Multiple requests may be issued over the connection without
@@ -112,7 +118,7 @@ schemes can associate state with the connection being authenticated via
 the aContinuationState parameter (see generateCredentials).
 
 
-## REUSABLE_CREDENTIALS ##
+### REUSABLE_CREDENTIALS ###
 
 The credentials returned from generateCredentials may be reused with any
 other URLs within "the protection space" as defined by RFC 2617 section
@@ -121,26 +127,26 @@ for each request within the protection space.  REUSABLE_CREDENTIALS
 implies REUSABLE_CHALLENGE.
 
 
-## REUSABLE_CHALLENGE ##
+### REUSABLE_CHALLENGE ###
 
 A challenge may be reused to later generate credentials in anticipation
 of a duplicate server challenge for URLs within "the protection space"
 as defined by RFC 2617 section 1.2.
 
 
-## IDENTITY_IGNORED ##
+### IDENTITY_IGNORED ###
 
 This flag indicates that the identity of the user is not required by
 this authentication scheme.
 
 
-## IDENTITY_INCLUDES_DOMAIN ##
+### IDENTITY_INCLUDES_DOMAIN ###
 
 This flag indicates that the identity of the user includes a domain
 attribute that the user must supply.
 
 
-## IDENTITY_ENCRYPTED ##
+### IDENTITY_ENCRYPTED ###
 
 This flag indicates that the identity will be sent encrypted. It does
 not make sense to combine this flag with IDENTITY_IGNORED.

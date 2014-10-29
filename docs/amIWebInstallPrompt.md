@@ -9,7 +9,9 @@ amIWebInstallInfo to display a confirmation UI to the user before running
 installs.
 
 
-## confirm ##
+## Methods ##
+
+### confirm ###
 
 Get a confirmation that the user wants to start the installs.
 

@@ -13,20 +13,22 @@ Internal gecko usage is accomplished by calling get_Interface on a
 docshell.
 
 
-## addClipboardDragDropHooks ##
+## Methods ##
+
+### addClipboardDragDropHooks ###
 
 Add a hook to list.
 @param aHooks  implementation of hooks
 
 
-## removeClipboardDragDropHooks ##
+### removeClipboardDragDropHooks ###
 
 Remove a hook from list (note if this implementation is not present
 in the list then removal will be ignored).
 @param aHooks  implementation of hooks
 
 
-## getHookEnumerator ##
+### getHookEnumerator ###
 
 Gets an enumerator for all hooks which have been added.
 @return nsISimpleEnumerator for nsIClipboardDragDropHooks

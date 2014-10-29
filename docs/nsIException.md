@@ -4,22 +4,26 @@ layout: default
 
 # nsIException #
 
-## message ##
+## Methods ##
 
-## result ##
+### toString ###
 
-## name ##
+## Attributes ##
 
-## filename ##
+### message ###
 
-## lineNumber ##
+### result ###
 
-## columnNumber ##
+### name ###
 
-## location ##
+### filename ###
 
-## inner ##
+### lineNumber ###
 
-## data ##
+### columnNumber ###
 
-## toString ##
+### location ###
+
+### inner ###
+
+### data ###

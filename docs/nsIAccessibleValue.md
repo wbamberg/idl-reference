@@ -4,10 +4,12 @@ layout: default
 
 # nsIAccessibleValue #
 
-## maximumValue ##
+## Attributes ##
 
-## minimumValue ##
+### maximumValue ###
 
-## currentValue ##
+### minimumValue ###
 
-## minimumIncrement ##
+### currentValue ###
+
+### minimumIncrement ###

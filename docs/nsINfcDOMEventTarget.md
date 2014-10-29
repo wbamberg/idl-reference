@@ -4,7 +4,9 @@ layout: default
 
 # nsINfcDOMEventTarget #
 
-## notifyPeerReady ##
+## Methods ##
+
+### notifyPeerReady ###
 
 Callback function used to notify peerready.
 
@@ -12,7 +14,7 @@ Callback function used to notify peerready.
        SessionToken received from Chrome process
 
 
-## notifyPeerLost ##
+### notifyPeerLost ###
 
 Callback function used to notify peerlost.
 

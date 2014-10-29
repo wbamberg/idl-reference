@@ -7,7 +7,9 @@ layout: default
 Represents an HTTP response, as described in RFC 2616, section 6.
 
 
-## setStatusLine ##
+## Methods ##
+
+### setStatusLine ###
 
 Sets the status line for this.  If this method is never called on this, the
 status line defaults to "HTTP/", followed by the server's default HTTP
@@ -30,7 +32,7 @@ version (e.g. "1.1"), followed by " 200 OK".
   this
 
 
-## setHeader ##
+### setHeader ###
 
 Sets the specified header in this.
 
@@ -55,24 +57,7 @@ Sets the specified header in this.
   this
 
 
-## bodyOutputStream ##
-
-A stream to which data appearing in the body of this response (or in the
-totality of the response if seizePower() is called) should be written.
-After this response has been designated as being processed asynchronously,
-or after seizePower() has been called on this, subsequent writes will no
-longer be buffered and will be written to the underlying transport without
-delaying until the entire response is constructed.  Write-through may or
-may not be synchronous in the implementation, and in any case particular
-behavior may not be observable to the HTTP client as intermediate buffers
-both in the server socket and in the client may delay written data; be
-prepared for delays at any time.
-
-@throws NS_ERROR_NOT_AVAILABLE
-  if accessed after this response is fully constructed
-
-
-## write ##
+### write ###
 
 Writes a string to the response's output stream.  This method is merely a
 convenient shorthand for writing the same data to bodyOutputStream
@@ -84,7 +69,7 @@ directly.
   if called after this response has been fully constructed
 
 
-## processAsync ##
+### processAsync ###
 
 Signals that this response is being constructed asynchronously.  Requests
 are typically completely constructed during nsIHttpRequestHandler.handle;
@@ -103,7 +88,7 @@ finish() is called.
   if seizePower() has been called on this
 
 
-## seizePower ##
+### seizePower ###
 
 Seizes complete control of this response (and its connection) from the
 server, allowing raw and unfettered access to data being sent in the HTTP
@@ -126,7 +111,7 @@ is not enough to simply call close() on bodyOutputStream.
   if finish() has been called on this
 
 
-## finish ##
+### finish ###
 
 Signals that construction of this response is complete and that it may be
 sent over the network to the client, or if seizePower() has been called
@@ -136,4 +121,23 @@ seizePower() has been called.  This method is idempotent.
 
 @throws NS_ERROR_UNEXPECTED
   if processAsync() or seizePower() has not already been properly called
+
+
+## Attributes ##
+
+### bodyOutputStream ###
+
+A stream to which data appearing in the body of this response (or in the
+totality of the response if seizePower() is called) should be written.
+After this response has been designated as being processed asynchronously,
+or after seizePower() has been called on this, subsequent writes will no
+longer be buffered and will be written to the underlying transport without
+delaying until the entire response is constructed.  Write-through may or
+may not be synchronous in the implementation, and in any case particular
+behavior may not be observable to the HTTP client as intermediate buffers
+both in the server socket and in the client may delay written data; be
+prepared for delays at any time.
+
+@throws NS_ERROR_NOT_AVAILABLE
+  if accessed after this response is fully constructed
 

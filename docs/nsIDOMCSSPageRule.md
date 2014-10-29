@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMCSSPageRule #
 
-## style ##
+## Attributes ##
+
+### style ###

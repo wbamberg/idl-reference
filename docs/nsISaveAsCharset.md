@@ -4,36 +4,42 @@ layout: default
 
 # nsISaveAsCharset #
 
-## mask_Fallback ##
+## Methods ##
 
-## mask_Entity ##
+### Init ###
 
-## mask_CharsetFallback ##
+### Convert ###
 
-## attr_FallbackNone ##
+## Attributes ##
 
-## attr_FallbackQuestionMark ##
+### charset ###
 
-## attr_FallbackEscapeU ##
+## Constants ##
 
-## attr_FallbackDecimalNCR ##
+### mask_Fallback ###
 
-## attr_FallbackHexNCR ##
+### mask_Entity ###
 
-## attr_EntityNone ##
+### mask_CharsetFallback ###
 
-## attr_EntityBeforeCharsetConv ##
+### attr_FallbackNone ###
 
-## attr_EntityAfterCharsetConv ##
+### attr_FallbackQuestionMark ###
 
-## attr_CharsetFallback ##
+### attr_FallbackEscapeU ###
 
-## attr_plainTextDefault ##
+### attr_FallbackDecimalNCR ###
 
-## attr_htmlTextDefault ##
+### attr_FallbackHexNCR ###
 
-## charset ##
+### attr_EntityNone ###
 
-## Init ##
+### attr_EntityBeforeCharsetConv ###
 
-## Convert ##
+### attr_EntityAfterCharsetConv ###
+
+### attr_CharsetFallback ###
+
+### attr_plainTextDefault ###
+
+### attr_htmlTextDefault ###

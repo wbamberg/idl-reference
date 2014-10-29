@@ -4,12 +4,14 @@ layout: default
 
 # nsIShellService #
 
-## switchTask ##
+## Methods ##
+
+### switchTask ###
 
 This method displays a UI to switch to (or launch) a different task
 
 
-## createShortcut ##
+### createShortcut ###
 
 This method creates a shortcut on a desktop or homescreen that opens in
 the our application.

@@ -11,7 +11,9 @@ a nsIURIContentListener for each of its content windows with the uri
 dispatcher service. 
 
 
-## onStartURIOpen ##
+## Methods ##
+
+### onStartURIOpen ###
 
 Gives the original content listener first crack at stopping a load before
 it happens.
@@ -22,7 +24,7 @@ it happens.
               <code>true</code> if the open should be aborted.
 
 
-## doContent ##
+### doContent ###
 
 Notifies the content listener to hook up an nsIStreamListener capable of
 consuming the data stream.
@@ -46,7 +48,7 @@ consuming the data stream.
                             returned streamlistener's methods. 
 
 
-## isPreferred ##
+### isPreferred ###
 
 When given a uri to dispatch, if the URI is specified as 'preferred 
 content' then the uri loader tries to find a preferred content handler
@@ -72,7 +74,7 @@ between isPreferred and canHandleContent.
                             <code>false<code> otherwise.
 
 
-## canHandleContent ##
+### canHandleContent ###
 
 When given a uri to dispatch, if the URI is not specified as 'preferred
 content' then the uri loader calls canHandleContent to see if the content
@@ -99,13 +101,15 @@ application content listener that sits at the top of the docshell
 hierarchy.
 
 
-## loadCookie ##
+## Attributes ##
+
+### loadCookie ###
 
 The load context associated with a particular content listener.
 The URI Loader stores and accesses this value as needed.
 
 
-## parentContentListener ##
+### parentContentListener ###
 
 The parent content listener if this particular listener is part of a chain
 of content listeners (i.e. a docshell!)

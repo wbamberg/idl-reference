@@ -4,11 +4,9 @@ layout: default
 
 # nsIFaviconService #
 
-## FAVICON_LOAD_PRIVATE ##
+## Methods ##
 
-## FAVICON_LOAD_NON_PRIVATE ##
-
-## getFaviconLinkForIcon ##
+### getFaviconLinkForIcon ###
 
 For a given icon URI, this will return a URI that will result in the image.
 In most cases, this is an annotation URI.  For chrome URIs, this will do
@@ -32,7 +30,7 @@ For invalid chrome URIs, you'll get a broken image.
         output will be the same as the input.
 
 
-## expireAllFavicons ##
+### expireAllFavicons ###
 
 Expire all known favicons from the database.
 
@@ -41,7 +39,7 @@ Expire all known favicons from the database.
       dispatched through observer's service.
 
 
-## addFailedFavicon ##
+### addFailedFavicon ###
 
 Adds a given favicon's URI to the failed favicon cache.
 
@@ -53,7 +51,7 @@ fetching an icon.
        The URI of an icon in the favicon service.
 
 
-## removeFailedFavicon ##
+### removeFailedFavicon ###
 
 Removes the given favicon from the failed favicon cache.  If the icon is
 not in the cache, it will silently succeed.
@@ -62,7 +60,7 @@ not in the cache, it will silently succeed.
        The URI of an icon in the favicon service.
 
 
-## isFailedFavicon ##
+### isFailedFavicon ###
 
 Checks to see if a favicon is in the failed favicon cache.
 A positive return value means the icon is in the failed cache and you
@@ -75,7 +73,15 @@ page on a site that doesn't have a favicon.
        The URI of an icon in the favicon service.
 
 
-## defaultFavicon ##
+## Attributes ##
+
+### defaultFavicon ###
 
 The default favicon URI
 
+
+## Constants ##
+
+### FAVICON_LOAD_PRIVATE ###
+
+### FAVICON_LOAD_NON_PRIVATE ###

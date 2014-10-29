@@ -10,44 +10,48 @@ This interface is a unicode encoder for use by scripts
 @author          Makoto Kato [m_kato@ga2.so-net.ne.jp]
 
 
-## ConvertFromUnicode ##
+## Methods ##
+
+### ConvertFromUnicode ###
 
 Converts the data from Unicode to one Charset.
 Returns the converted string. After converting, Finish should be called
 and its return value appended to this return value.
 
 
-## Finish ##
+### Finish ###
 
 Returns the terminator string.
 Should be called after ConvertFromUnicode() and appended to that
 function's return value.
 
 
-## ConvertToUnicode ##
+### ConvertToUnicode ###
 
 Converts the data from one Charset to Unicode.
 
 
-## convertFromByteArray ##
+### convertFromByteArray ###
 
 Converts an array of bytes to a unicode string.
 
 
-## convertToByteArray ##
+### convertToByteArray ###
 
 Convert a unicode string to an array of bytes. Finish does not need to be
 called.
 
 
-## convertToInputStream ##
+### convertToInputStream ###
 
 Converts a unicode string to an input stream. The bytes in the stream are
 encoded according to the charset attribute.
 The returned stream will be nonblocking.
 
 
-## charset ##
+## Attributes ##
+
+### charset ###
 
 Current character set.
 
@@ -55,7 +59,7 @@ Current character set.
        The requested charset is not supported.
 
 
-## isInternal ##
+### isInternal ###
 
 Internal use
 

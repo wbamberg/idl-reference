@@ -8,19 +8,9 @@ This represents a service to access and manipulate
 X.509 certificates stored in a database.
 
 
-## UNTRUSTED ##
+## Methods ##
 
- Constants that define which usages a certificate
- is trusted for.
-
-
-## TRUSTED_SSL ##
-
-## TRUSTED_EMAIL ##
-
-## TRUSTED_OBJSIGN ##
-
-## findCertByNickname ##
+### findCertByNickname ###
 
  Given a nickname and optionally a token,
  locate the matching certificate.
@@ -34,7 +24,7 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.
 
 
-## findCertByDBKey ##
+### findCertByDBKey ###
 
  Will find a certificate based on its dbkey
  retrieved by getting the dbKey attribute of
@@ -47,7 +37,7 @@ X.509 certificates stored in a database.
                Can be null to mean any token.
 
 
-## findCertNicknames ##
+### findCertNicknames ###
 
  Obtain a list of certificate nicknames from the database.
  What the name is depends on type:
@@ -63,7 +53,7 @@ X.509 certificates stored in a database.
  @param certNameList The returned array of certificate nicknames.
 
 
-## findEmailEncryptionCert ##
+### findEmailEncryptionCert ###
 
  Find user's own email encryption certificate by nickname.
 
@@ -73,7 +63,7 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.
 
 
-## findEmailSigningCert ##
+### findEmailSigningCert ###
 
  Find user's own email signing certificate by nickname.
 
@@ -83,7 +73,7 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.
 
 
-## findCertByEmailAddress ##
+### findCertByEmailAddress ###
 
  Find a certificate by email address.
 
@@ -96,7 +86,7 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.
 
 
-## importCertificates ##
+### importCertificates ###
 
  Use this to import a stream sent down as a mime type into
  the certificate database on the default token.
@@ -108,7 +98,7 @@ X.509 certificates stored in a database.
  @param ctx A UI context.
 
 
-## importEmailCertificate ##
+### importEmailCertificate ###
 
  Import another person's email certificate into the database.
 
@@ -117,7 +107,7 @@ X.509 certificates stored in a database.
  @param ctx A UI context.
 
 
-## importServerCertificate ##
+### importServerCertificate ###
 
  Import a server machine's certificate into the database.
 
@@ -126,7 +116,7 @@ X.509 certificates stored in a database.
  @param ctx A UI context.
 
 
-## importUserCertificate ##
+### importUserCertificate ###
 
  Import a personal certificate into the database, assuming
  the database already contains the private key for this certificate.
@@ -136,14 +126,14 @@ X.509 certificates stored in a database.
  @param ctx A UI context.
 
 
-## deleteCertificate ##
+### deleteCertificate ###
 
  Delete a certificate stored in the database.
 
  @param aCert Delete this certificate.
 
 
-## setCertTrust ##
+### setCertTrust ###
 
  Modify the trust that is stored and associated to a certificate within
  a database. Separate trust is stored for
@@ -156,7 +146,7 @@ X.509 certificates stored in a database.
               See the trust constants defined within this interface.
 
 
-## setCertTrustFromString ##
+### setCertTrustFromString ###
 
 @param cert        The certificate for which to modify trust.
 @param trustString decoded by CERT_DecodeTrustString. 3 comma separated
@@ -164,7 +154,7 @@ X.509 certificates stored in a database.
                    trust.
 
 
-## isCertTrusted ##
+### isCertTrusted ###
 
  Query whether a certificate is trusted for a particular use.
 
@@ -176,7 +166,7 @@ X.509 certificates stored in a database.
  @return Returns true if the certificate is trusted for the given use.
 
 
-## importCertsFromFile ##
+### importCertsFromFile ###
 
  Import certificate(s) from file
 
@@ -189,7 +179,7 @@ X.509 certificates stored in a database.
               be imported. See type constants in nsIX509Cert.
 
 
-## importPKCS12File ##
+### importPKCS12File ###
 
  Import a PKCS#12 file containing cert(s) and key(s) into the database.
 
@@ -200,7 +190,7 @@ X.509 certificates stored in a database.
               to be imported.
 
 
-## exportPKCS12File ##
+### exportPKCS12File ###
 
  Export a set of certs and keys from the database to a PKCS#12 file.
 
@@ -213,45 +203,13 @@ X.509 certificates stored in a database.
  @param aCerts The array of all certificates to be exported.
 
 
-## constructX509FromBase64 ##
+### constructX509FromBase64 ###
 
-## constructX509 ##
+### constructX509 ###
 
-## AppMarketplaceProdPublicRoot ##
+### openSignedAppFileAsync ###
 
- Verifies the signature on the given JAR file to verify that it has a
- valid signature.  To be considered valid, there must be exactly one
- signature on the JAR file and that signature must have signed every
- entry. Further, the signature must come from a certificate that
- is trusted for code signing.
-
- On success, NS_OK, a nsIZipReader, and the trusted certificate that
- signed the JAR are returned.
-
- On failure, an error code is returned.
-
- This method returns a nsIZipReader, instead of taking an nsIZipReader
- as input, to encourage users of the API to verify the signature as the
- first step in opening the JAR.
-
-
-## AppMarketplaceProdReviewersRoot ##
-
-## AppMarketplaceDevPublicRoot ##
-
-## AppMarketplaceDevReviewersRoot ##
-
-## AppMarketplaceStageRoot ##
-
-## AppXPCShellRoot ##
-
-## TrustedHostedAppPublicRoot ##
-
-## TrustedHostedAppTestRoot ##
-
-## openSignedAppFileAsync ##
-
-## verifySignedManifestAsync ##
+### verifySignedManifestAsync ###
 
 Given streams containing a signature and a manifest file, verifies
 that the signature is valid for the manifest. The signature must
@@ -264,13 +222,9 @@ was issued by the given trusted root.
  On failure, an error code is returned.
 
 
-## addCert ##
+### addCert ###
 
-## FLAG_LOCAL_ONLY ##
-
-## FLAG_MUST_BE_EV ##
-
-## verifyCertNow ##
+### verifyCertNow ###
  Warning: This interface is inteded to use only for testing only as:
    1. It can create IO on the main thread.
    2. It is in constant change, so in/out can change at any release.
@@ -289,8 +243,58 @@ was issued by the given trusted root.
          failure
 
 
-## clearOCSPCache ##
+### clearOCSPCache ###
 
-## addCertFromBase64 ##
+### addCertFromBase64 ###
 
-## getCerts ##
+### getCerts ###
+
+## Constants ##
+
+### UNTRUSTED ###
+
+ Constants that define which usages a certificate
+ is trusted for.
+
+
+### TRUSTED_SSL ###
+
+### TRUSTED_EMAIL ###
+
+### TRUSTED_OBJSIGN ###
+
+### AppMarketplaceProdPublicRoot ###
+
+ Verifies the signature on the given JAR file to verify that it has a
+ valid signature.  To be considered valid, there must be exactly one
+ signature on the JAR file and that signature must have signed every
+ entry. Further, the signature must come from a certificate that
+ is trusted for code signing.
+
+ On success, NS_OK, a nsIZipReader, and the trusted certificate that
+ signed the JAR are returned.
+
+ On failure, an error code is returned.
+
+ This method returns a nsIZipReader, instead of taking an nsIZipReader
+ as input, to encourage users of the API to verify the signature as the
+ first step in opening the JAR.
+
+
+### AppMarketplaceProdReviewersRoot ###
+
+### AppMarketplaceDevPublicRoot ###
+
+### AppMarketplaceDevReviewersRoot ###
+
+### AppMarketplaceStageRoot ###
+
+### AppXPCShellRoot ###
+
+### TrustedHostedAppPublicRoot ###
+
+### TrustedHostedAppTestRoot ###
+
+### FLAG_LOCAL_ONLY ###
+
+### FLAG_MUST_BE_EV ###

@@ -4,13 +4,15 @@ layout: default
 
 # nsIEventListenerService #
 
-## getListenerInfoFor ##
+## Methods ##
+
+### getListenerInfoFor ###
 
 Returns an array of nsIEventListenerInfo objects.
 If aEventTarget doesn't have any listeners, this returns null.
 
 
-## getEventTargetChainFor ##
+### getEventTargetChainFor ###
 
 Returns an array of event targets.
 aEventTarget will be at index 0.
@@ -20,21 +22,21 @@ dispatching an event to aEventTarget
       event target chain than what this methods returns.
 
 
-## hasListenersFor ##
+### hasListenersFor ###
 
 Returns true if a event target has any listener for the given type.
 
 
-## addSystemEventListener ##
+### addSystemEventListener ###
 
 Add a system-group eventlistener to a event target.
 
 
-## removeSystemEventListener ##
+### removeSystemEventListener ###
 
 Remove a system-group eventlistener from a event target.
 
 
-## addListenerForAllEvents ##
+### addListenerForAllEvents ###
 
-## removeListenerForAllEvents ##
+### removeListenerForAllEvents ###

@@ -4,20 +4,22 @@ layout: default
 
 # nsIDOMXULSelectControlItemElement #
 
-## disabled ##
+## Attributes ##
 
-## crop ##
+### disabled ###
 
-## image ##
+### crop ###
 
-## label ##
+### image ###
 
-## accessKey ##
+### label ###
 
-## command ##
+### accessKey ###
 
-## value ##
+### command ###
 
-## selected ##
+### value ###
 
-## control ##
+### selected ###
+
+### control ###

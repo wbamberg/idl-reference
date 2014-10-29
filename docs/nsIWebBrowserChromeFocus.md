@@ -9,12 +9,14 @@ nsIEmbeddingSiteWindow. It represents the focus up-calls from mozilla
 to the embedding chrome. See mozilla bug #70224 for gratuitous info.
 
 
-## focusNextElement ##
+## Methods ##
+
+### focusNextElement ###
 
 Set the focus at the next focusable element in the chrome.
 
 
-## focusPrevElement ##
+### focusPrevElement ###
 
 Set the focus at the previous focusable element in the chrome.
 

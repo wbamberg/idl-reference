@@ -4,8 +4,10 @@ layout: default
 
 # nsIEngineeringMode #
 
-## getValue ##
+## Methods ##
 
-## setValue ##
+### getValue ###
 
-## setMessageHandler ##
+### setValue ###
+
+### setMessageHandler ###

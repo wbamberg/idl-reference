@@ -4,35 +4,9 @@ layout: default
 
 # nsIAccessibleText #
 
-## TEXT_OFFSET_END_OF_TEXT ##
+## Methods ##
 
-## TEXT_OFFSET_CARET ##
-
-## BOUNDARY_CHAR ##
-
-## BOUNDARY_WORD_START ##
-
-## BOUNDARY_WORD_END ##
-
-## BOUNDARY_SENTENCE_START ##
-
-## BOUNDARY_SENTENCE_END ##
-
-## BOUNDARY_LINE_START ##
-
-## BOUNDARY_LINE_END ##
-
-## caretOffset ##
-
-The current current caret offset.
-If set < 0 then caret will be placed  at the end of the text
-
-
-## characterCount ##
-
-## selectionCount ##
-
-## getText ##
+### getText ###
 
 String methods may need to return multibyte-encoded strings,
 since some locales can't be encoded using 16-bit chars.
@@ -40,19 +14,19 @@ So the methods below might return UTF-16 strings, or they could
 return "string" values which are UTF-8.
 
 
-## getTextAfterOffset ##
+### getTextAfterOffset ###
 
-## getTextAtOffset ##
+### getTextAtOffset ###
 
-## getTextBeforeOffset ##
+### getTextBeforeOffset ###
 
-## getCharacterAtOffset ##
+### getCharacterAtOffset ###
 
 It would be better to return an unsigned long here,
 to allow unicode chars > 16 bits
 
 
-## getTextAttributes ##
+### getTextAttributes ###
 
 Get the accessible start/end offsets around the given offset,
 return the text attributes for this range of text.
@@ -64,12 +38,7 @@ return the text attributes for this range of text.
 @param  rangeEndOffset    [out] end offset of the range of text
 
 
-## defaultTextAttributes ##
-
-Return the text attributes that apply to the entire accessible.
-
-
-## getCharacterExtents ##
+### getCharacterExtents ###
 
 Returns the bounding box of the specified position.
 
@@ -95,9 +64,9 @@ not degenerate.
                    nsIAccessibleCoordinateType).
 
 
-## getRangeExtents ##
+### getRangeExtents ###
 
-## getOffsetAtPoint ##
+### getOffsetAtPoint ###
 
 Get the text offset at the given point, or return -1
 if no character exists at that point
@@ -113,18 +82,18 @@ if no character exists at that point
                  the point.
 
 
-## getSelectionBounds ##
+### getSelectionBounds ###
 
-## setSelectionBounds ##
+### setSelectionBounds ###
 
 Set the bounds for the given selection range
 
 
-## addSelection ##
+### addSelection ###
 
-## removeSelection ##
+### removeSelection ###
 
-## scrollSubstringTo ##
+### scrollSubstringTo ###
 
 Makes a specific part of string visible on screen.
 
@@ -136,7 +105,7 @@ Makes a specific part of string visible on screen.
                    available constants)
 
 
-## scrollSubstringToPoint ##
+### scrollSubstringToPoint ###
 
 Moves the top left of a substring to a specified location.
 
@@ -150,30 +119,67 @@ Moves the top left of a substring to a specified location.
 @param y               defines the y coordinate
 
 
-## enclosingRange ##
+### getRangeByChild ###
+
+Return a range containing the given accessible.
+
+
+### getRangeAtPoint ###
+
+Return a range containing an accessible at the given point.
+
+
+## Attributes ##
+
+### caretOffset ###
+
+The current current caret offset.
+If set < 0 then caret will be placed  at the end of the text
+
+
+### characterCount ###
+
+### selectionCount ###
+
+### defaultTextAttributes ###
+
+Return the text attributes that apply to the entire accessible.
+
+
+### enclosingRange ###
 
 Return a range that encloses this text control or otherwise the document
 this text accessible belongs to.
 
 
-## selectionRanges ##
+### selectionRanges ###
 
 Return an array of disjoint ranges for selected text within the text control
 or otherwise the document this accessible belongs to.
 
 
-## visibleRanges ##
+### visibleRanges ###
 
 Return an array of disjoint ranges of visible text within the text control
 or otherwise the document this accessible belongs to.
 
 
-## getRangeByChild ##
+## Constants ##
 
-Return a range containing the given accessible.
+### TEXT_OFFSET_END_OF_TEXT ###
 
+### TEXT_OFFSET_CARET ###
 
-## getRangeAtPoint ##
+### BOUNDARY_CHAR ###
 
-Return a range containing an accessible at the given point.
+### BOUNDARY_WORD_START ###
 
+### BOUNDARY_WORD_END ###
+
+### BOUNDARY_SENTENCE_START ###
+
+### BOUNDARY_SENTENCE_END ###
+
+### BOUNDARY_LINE_START ###
+
+### BOUNDARY_LINE_END ###

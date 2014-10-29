@@ -7,7 +7,9 @@ layout: default
 An input stream that allows you to read from a slice of a file.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize with a file and new start/end positions. Both start and
 start+length must be smaller than the size of the file. Not doing so

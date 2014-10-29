@@ -4,7 +4,9 @@ layout: default
 
 # nsICollationFactory #
 
-## CreateCollation ##
+## Methods ##
+
+### CreateCollation ###
 
 Create the collation for a given locale.
 

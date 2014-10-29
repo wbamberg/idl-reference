@@ -4,12 +4,16 @@ layout: default
 
 # nsIDOMGeoPositionError #
 
-## PERMISSION_DENIED ##
+## Attributes ##
 
-## POSITION_UNAVAILABLE ##
+### code ###
 
-## TIMEOUT ##
+### message ###
 
-## code ##
+## Constants ##
 
-## message ##
+### PERMISSION_DENIED ###
+
+### POSITION_UNAVAILABLE ###
+
+### TIMEOUT ###

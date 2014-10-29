@@ -32,7 +32,9 @@ references to the pipe's input and output end.  In which case, the pipe is
 automatically closed when the respective pipe ends are released.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 initialize this pipe
 
@@ -50,12 +52,14 @@ initialize this pipe
        parameter is a finite value.
 
 
-## inputStream ##
+## Attributes ##
+
+### inputStream ###
 
 The pipe's input end, which also implements nsISearchableInputStream.
 
 
-## outputStream ##
+### outputStream ###
 
 The pipe's output end.
 

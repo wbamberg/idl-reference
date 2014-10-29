@@ -10,7 +10,9 @@ operations into a logical whole while still leaving them separate
 for the purposes of cancellation and status events.
 
 
-## parentLoadGroup ##
+## Attributes ##
+
+### parentLoadGroup ###
 
 The parent of this load group. It is stored with
 a nsIWeakReference/nsWeakPtr so there is no requirement for the
@@ -18,12 +20,12 @@ parentLoadGroup to out live the child, nor will the child keep a
 reference count on the parent.
 
 
-## childLoadGroup ##
+### childLoadGroup ###
 
 The nsILoadGroup associated with this nsILoadGroupChild
 
 
-## rootLoadGroup ##
+### rootLoadGroup ###
 
 The rootLoadGroup is the recursive parent of this
 load group where parent is defined as parentlLoadGroup if set

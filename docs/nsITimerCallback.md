@@ -4,7 +4,9 @@ layout: default
 
 # nsITimerCallback #
 
-## notify ##
+## Methods ##
+
+### notify ###
 
 @param aTimer the timer which has expired
 

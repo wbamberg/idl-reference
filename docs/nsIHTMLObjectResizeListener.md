@@ -4,14 +4,16 @@ layout: default
 
 # nsIHTMLObjectResizeListener #
 
-## onStartResizing ##
+## Methods ##
+
+### onStartResizing ###
 
 Listener's callback called by the editor when the user
 starts resizing an element
 @param aElement [IN] the element
 
 
-## onEndResizing ##
+### onEndResizing ###
 
 Listener's callback called by the editor when the user
 has finalized the resizing of an element

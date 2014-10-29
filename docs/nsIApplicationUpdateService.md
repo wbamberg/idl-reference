@@ -9,18 +9,15 @@ background update checks and provides utilities for selecting and
 downloading update patches.
 
 
-## checkForBackgroundUpdates ##
+## Methods ##
+
+### checkForBackgroundUpdates ###
 
 Checks for available updates in the background using the listener provided
 by the application update service for background checks.
 
 
-## backgroundChecker ##
-
-The Update Checker used for background update checking.
-
-
-## selectUpdate ##
+### selectUpdate ###
 
 Selects the best update to install from a list of available updates.
 @param   updates
@@ -29,7 +26,7 @@ Selects the best update to install from a list of available updates.
          The length of the |updates| array
 
 
-## addDownloadListener ##
+### addDownloadListener ###
 
 Adds a listener that receives progress and state information about the
 update that is currently being downloaded, e.g. to update a user
@@ -40,7 +37,7 @@ interface.
          progress information as the update is downloaded.
 
 
-## removeDownloadListener ##
+### removeDownloadListener ###
 
 Removes a listener that is receiving progress and state information
 about the update that is currently being downloaded.
@@ -48,12 +45,12 @@ about the update that is currently being downloaded.
          The listener object to remove.
 
 
-## downloadUpdate ##
+### downloadUpdate ###
 
 
 
 
-## applyOsUpdate ##
+### applyOsUpdate ###
 
 Apply the OS update which has been downloaded and staged as applied.
 @param   update 
@@ -61,30 +58,37 @@ Apply the OS update which has been downloaded and staged as applied.
 @throws  if the update object is not an OS update.
 
 
-## getUpdatesDirectory ##
+### getUpdatesDirectory ###
 
 Get the Active Updates directory
 @returns An nsIFile for the active updates directory.
 
 
-## pauseDownload ##
+### pauseDownload ###
 
 Pauses the active update download process
 
 
-## isDownloading ##
+## Attributes ##
+
+### backgroundChecker ###
+
+The Update Checker used for background update checking.
+
+
+### isDownloading ###
 
 Whether or not there is an download happening at the moment.
 
 
-## canCheckForUpdates ##
+### canCheckForUpdates ###
 
 Whether or not the Update Service can check for updates. This is a function
 of whether or not application update is disabled by the application and the
 platform the application is running on.
 
 
-## canApplyUpdates ##
+### canApplyUpdates ###
 
 Whether or not the Update Service can download and install updates.
 On Windows, this is a function of whether or not the maintenance service
@@ -93,7 +97,7 @@ this depends on whether the current user has write access to the install
 directory.
 
 
-## isOtherInstanceHandlingUpdates ##
+### isOtherInstanceHandlingUpdates ###
 
 Whether or not a different instance is handling updates of this
 installation.  This currently only ever returns true on Windows
@@ -102,7 +106,7 @@ and Desktop browsers are open.  Only one of the instances will actually
 handle updates for the installation.
 
 
-## canStageUpdates ##
+### canStageUpdates ###
 
 Whether the Update Service is able to stage updates.
 

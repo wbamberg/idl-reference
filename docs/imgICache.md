@@ -11,7 +11,9 @@ imgICache interface
 @see imagelib2
 
 
-## clearCache ##
+## Methods ##
+
+### clearCache ###
 
 Evict images from the cache.
 
@@ -19,7 +21,7 @@ Evict images from the cache.
               If FALSE, evict everything except chrome images.
 
 
-## removeEntry ##
+### removeEntry ###
 
 Evict images from the cache.
 
@@ -27,7 +29,7 @@ Evict images from the cache.
 @throws NS_ERROR_NOT_AVAILABLE if \a uri was unable to be removed from the cache.
 
 
-## findEntryProperties ##
+### findEntryProperties ###
 
 Find Properties
 Used to get properties such as 'type' and 'content-disposition'
@@ -42,7 +44,7 @@ Hopefully this will be removed with bug 805119
 @returns NULL if the URL was not found in the cache
 
 
-## respectPrivacyNotifications ##
+### respectPrivacyNotifications ###
 
 Make this cache instance respect private browsing notifications. This entails clearing
 the chrome and content caches whenever the last-pb-context-exited notification is

@@ -4,4 +4,6 @@ layout: default
 
 # nsIAlarmFiredCb #
 
-## onAlarmFired ##
+## Methods ##
+
+### onAlarmFired ###

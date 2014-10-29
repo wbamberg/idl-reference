@@ -4,12 +4,9 @@ layout: default
 
 # nsIDOMOfflineResourceList #
 
-## mozItems ##
+## Methods ##
 
-Get the list of dynamically-managed entries.
-
-
-## mozHasItem ##
+### mozHasItem ###
 
 Check that an entry exists in the list of dynamically-managed entries.
 
@@ -17,21 +14,14 @@ Check that an entry exists in the list of dynamically-managed entries.
        The resource to check.
 
 
-## mozLength ##
-
-Get the number of dynamically-managed entries.
-@status DEPRECATED
-        Clients should use the "items" attribute.
-
-
-## mozItem ##
+### mozItem ###
 
 Get the URI of a dynamically-managed entry.
 @status DEPRECATED
         Clients should use the "items" attribute.
 
 
-## mozAdd ##
+### mozAdd ###
 
 Add an item to the list of dynamically-managed entries.  The resource
 will be fetched into the application cache.
@@ -40,7 +30,7 @@ will be fetched into the application cache.
        The resource to add.
 
 
-## mozRemove ##
+### mozRemove ###
 
 Remove an item from the list of dynamically-managed entries.  If this
 was the last reference to a URI in the application cache, the cache
@@ -50,46 +40,62 @@ entry will be removed.
        The resource to remove.
 
 
-## UNCACHED ##
-
-State of the application cache this object is associated with.
-
-
-## IDLE ##
-
-## CHECKING ##
-
-## DOWNLOADING ##
-
-## UPDATEREADY ##
-
-## OBSOLETE ##
-
-## status ##
-
-## update ##
+### update ###
 
 Begin the application update process on the associated application cache.
 
 
-## swapCache ##
+### swapCache ###
 
 Swap in the newest version of the application cache, or disassociate
 from the cache if the cache group is obsolete.
 
 
-## onchecking ##
+## Attributes ##
 
-## onerror ##
+### mozItems ###
 
-## onnoupdate ##
+Get the list of dynamically-managed entries.
 
-## ondownloading ##
 
-## onprogress ##
+### mozLength ###
 
-## onupdateready ##
+Get the number of dynamically-managed entries.
+@status DEPRECATED
+        Clients should use the "items" attribute.
 
-## oncached ##
 
-## onobsolete ##
+### status ###
+
+### onchecking ###
+
+### onerror ###
+
+### onnoupdate ###
+
+### ondownloading ###
+
+### onprogress ###
+
+### onupdateready ###
+
+### oncached ###
+
+### onobsolete ###
+
+## Constants ##
+
+### UNCACHED ###
+
+State of the application cache this object is associated with.
+
+
+### IDLE ###
+
+### CHECKING ###
+
+### DOWNLOADING ###
+
+### UPDATEREADY ###
+
+### OBSOLETE ###

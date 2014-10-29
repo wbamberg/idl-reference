@@ -8,7 +8,9 @@ An interface for verifying that a given string of data was signed by the
 private key matching the given public key.
 
 
-## verifyData ##
+## Methods ##
+
+### verifyData ###
 
 Verifies that the data matches the data that was used to generate the
 signature.
@@ -20,10 +22,12 @@ signature.
 @returns true if the signature matches the data, false if not.
 
 
-## VERIFY_OK ##
+### verifySignature ###
 
-## VERIFY_ERROR_UNKNOWN_ISSUER ##
+## Constants ##
 
-## VERIFY_ERROR_OTHER ##
+### VERIFY_OK ###
 
-## verifySignature ##
+### VERIFY_ERROR_UNKNOWN_ISSUER ###
+
+### VERIFY_ERROR_OTHER ###

@@ -4,6 +4,10 @@ layout: default
 
 # nsIDOMFontFaceList #
 
-## item ##
+## Methods ##
 
-## length ##
+### item ###
+
+## Attributes ##
+
+### length ###

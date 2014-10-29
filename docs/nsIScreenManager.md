@@ -4,14 +4,18 @@ layout: default
 
 # nsIScreenManager #
 
-## screenForRect ##
+## Methods ##
 
-## screenForId ##
+### screenForRect ###
 
-## primaryScreen ##
+### screenForId ###
 
-## numberOfScreens ##
+### screenForNativeWidget ###
 
-## systemDefaultScale ##
+## Attributes ##
 
-## screenForNativeWidget ##
+### primaryScreen ###
+
+### numberOfScreens ###
+
+### systemDefaultScale ###

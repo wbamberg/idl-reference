@@ -4,7 +4,9 @@ layout: default
 
 # nsIRDFXMLParser #
 
-## parseAsync ##
+## Methods ##
+
+### parseAsync ###
 
 Create a stream listener that can be used to asynchronously
 parse RDF/XML.
@@ -14,7 +16,7 @@ parse RDF/XML.
 @return an nsIStreamListener object to handle the data
 
 
-## parseString ##
+### parseString ###
 
 Parse a string of RDF/XML
 @param aSink the RDF datasource that will receive the data

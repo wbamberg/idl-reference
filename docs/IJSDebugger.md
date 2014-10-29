@@ -9,7 +9,9 @@ Do not use this interface. Instead, write:
     addDebuggerToGlobal(global);
 
 
-## addClass ##
+## Methods ##
+
+### addClass ###
 
 Define the global Debugger constructor on a given global.
 

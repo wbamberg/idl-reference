@@ -14,7 +14,9 @@ This interface is available by the time the |onSocketAttached| is called,
 which is the first time the TLS server consumer is notified of a new client.
 
 
-## setSecurityObserver ##
+## Methods ##
+
+### setSecurityObserver ###
 
 setSecurityObserver
 
@@ -22,14 +24,16 @@ Set the security observer to be notified when the TLS handshake has
 completed.
 
 
-## serverSocket ##
+## Attributes ##
+
+### serverSocket ###
 
 serverSocket
 
 The nsITLSServerSocket instance that accepted this client connection.
 
 
-## status ##
+### status ###
 
 status
 

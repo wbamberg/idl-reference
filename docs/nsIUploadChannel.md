@@ -11,7 +11,9 @@ notion of uploading a data stream.  The upload stream may only be set
 prior to the invocation of asyncOpen on the channel.
 
 
-## setUploadStream ##
+## Methods ##
+
+### setUploadStream ###
 
 Sets a stream to be uploaded by this channel.
 
@@ -41,7 +43,9 @@ for the aContentType parameter (see below).
        determined by calling the stream's |available| method.
 
 
-## uploadStream ##
+## Attributes ##
+
+### uploadStream ###
 
 Get the stream (to be) uploaded by this channel.
 

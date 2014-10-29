@@ -45,7 +45,9 @@ observer has been asked to flush because a malloc() or
 realloc() has failed.
 
 
-## alloc ##
+## Methods ##
+
+### alloc ###
 
 Allocates a block of memory of a particular size. If the memory 
 cannot be allocated (because of an out-of-memory condition), the
@@ -55,7 +57,7 @@ process aborts.
 @result the block of memory
 
 
-## realloc ##
+### realloc ###
 
 Reallocates a block of memory to a new size.
 
@@ -70,7 +72,7 @@ If the allocation succeeds, ptr is freed and a pointer to the
 new block returned.  If the allocation fails, the process aborts.
 
 
-## free ##
+### free ###
 
 Frees a block of memory. Null is a permissible value, in which case
 nothing happens. 
@@ -78,7 +80,7 @@ nothing happens.
 @param ptr - the block of memory to free
 
 
-## heapMinimize ##
+### heapMinimize ###
 
 Attempts to shrink the heap.
 @param immediate - if true, heap minimization will occur
@@ -89,7 +91,7 @@ Attempts to shrink the heap.
   was not on the application's main thread.
 
 
-## isLowMemory ##
+### isLowMemory ###
 
 This predicate can be used to determine if we're in a low-memory
 situation (what constitutes low-memory is platform dependent). This
@@ -98,7 +100,7 @@ can be used to trigger the memory pressure observers.
 DEPRECATED - Always returns false.  See bug 592308.
 
 
-## isLowMemoryPlatform ##
+### isLowMemoryPlatform ###
 
 This predicate can be used to determine if the platform is a "low-memory"
 platform. Callers may use this to dynamically tune their behaviour

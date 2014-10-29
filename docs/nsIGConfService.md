@@ -4,26 +4,28 @@ layout: default
 
 # nsIGConfService #
 
-## getBool ##
+## Methods ##
 
-## getString ##
+### getBool ###
 
-## getInt ##
+### getString ###
 
-## getFloat ##
+### getInt ###
 
-## getStringList ##
+### getFloat ###
 
-## setBool ##
+### getStringList ###
 
-## setString ##
+### setBool ###
 
-## setInt ##
+### setString ###
 
-## setFloat ##
+### setInt ###
 
-## getAppForProtocol ##
+### setFloat ###
 
-## handlerRequiresTerminal ##
+### getAppForProtocol ###
 
-## setAppForProtocol ##
+### handlerRequiresTerminal ###
+
+### setAppForProtocol ###

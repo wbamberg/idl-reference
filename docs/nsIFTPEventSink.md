@@ -9,7 +9,9 @@ channel.  It allows a consumer to receive a log of the FTP control
 connection conversation.
 
 
-## OnFTPControlLog ##
+## Methods ##
+
+### OnFTPControlLog ###
 
 XXX document this method!  (see bug 328915)
 

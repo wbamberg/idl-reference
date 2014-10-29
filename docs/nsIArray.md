@@ -28,14 +28,9 @@ null is a valid entry in the array, and as such any nsISupports
 parameters may be null, except where noted.
 
 
-## length ##
+## Methods ##
 
-length
-
-number of elements in the array.
-
-
-## queryElementAt ##
+### queryElementAt ###
 
 queryElementAt()
 
@@ -54,7 +49,7 @@ this method, but exceptions are thrown in other circumstances
 
 
 
-## indexOf ##
+### indexOf ###
 
 indexOf()
 
@@ -71,11 +66,20 @@ is not found.
 @throws NS_ERROR_FAILURE if the element was not in the array.
 
 
-## enumerate ##
+### enumerate ###
 
 enumerate the array
 
 @returns a new enumerator positioned at the start of the array
 @throws NS_ERROR_FAILURE if the array is empty (to make it easy
         to detect errors), or NS_ERROR_OUT_OF_MEMORY if out of memory.
+
+
+## Attributes ##
+
+### length ###
+
+length
+
+number of elements in the array.
 

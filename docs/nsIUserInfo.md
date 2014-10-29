@@ -4,10 +4,12 @@ layout: default
 
 # nsIUserInfo #
 
-## fullname ##
+## Attributes ##
 
-## emailAddress ##
+### fullname ###
 
-## username ##
+### emailAddress ###
 
-## domain ##
+### username ###
+
+### domain ###

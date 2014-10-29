@@ -4,4 +4,6 @@ layout: default
 
 # ScriptableWithNotXPCOMBase #
 
-## method3 ##
+## Methods ##
+
+### method3 ###

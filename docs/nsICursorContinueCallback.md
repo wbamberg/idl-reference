@@ -4,4 +4,6 @@ layout: default
 
 # nsICursorContinueCallback #
 
-## handleContinue ##
+## Methods ##
+
+### handleContinue ###

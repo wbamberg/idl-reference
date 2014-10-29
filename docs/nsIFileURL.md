@@ -9,7 +9,9 @@ an URL.  The URL scheme need not be file:, since other local protocols may
 map URLs to files (e.g., resource:).
 
 
-## file ##
+## Attributes ##
+
+### file ###
 
 Get/Set nsIFile corresponding to this URL.
 

@@ -4,6 +4,8 @@ layout: default
 
 # nsIASN1Tree #
 
-## loadASN1Structure ##
+## Methods ##
 
-## getDisplayData ##
+### loadASN1Structure ###
+
+### getDisplayData ###

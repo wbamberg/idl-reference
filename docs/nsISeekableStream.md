@@ -4,13 +4,9 @@ layout: default
 
 # nsISeekableStream #
 
-## NS_SEEK_SET ##
+## Methods ##
 
-## NS_SEEK_CUR ##
-
-## NS_SEEK_END ##
-
-## seek ##
+### seek ###
 
  seek
 
@@ -29,7 +25,7 @@ layout: default
   @throws NS_BASE_STREAM_CLOSED if called on a closed stream.
 
 
-## tell ##
+### tell ###
 
  tell
 
@@ -39,7 +35,7 @@ layout: default
   @throws NS_BASE_STREAM_CLOSED if called on a closed stream.
 
 
-## setEOF ##
+### setEOF ###
 
  setEOF
 
@@ -47,3 +43,11 @@ layout: default
 
   @throws NS_BASE_STREAM_CLOSED if called on a closed stream.
 
+
+## Constants ##
+
+### NS_SEEK_SET ###
+
+### NS_SEEK_CUR ###
+
+### NS_SEEK_END ###

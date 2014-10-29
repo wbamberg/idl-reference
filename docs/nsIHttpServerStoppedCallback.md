@@ -9,5 +9,7 @@ closure, in-flight requests all fully served and responded to) of an HTTP
 server may be received.
 
 
-## onStopped ##
+## Methods ##
+
+### onStopped ###
  Called when the corresponding server has been fully stopped. */

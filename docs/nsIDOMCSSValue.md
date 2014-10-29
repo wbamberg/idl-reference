@@ -11,14 +11,18 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Style
 
 
-## CSS_INHERIT ##
+## Attributes ##
 
-## CSS_PRIMITIVE_VALUE ##
+### cssText ###
 
-## CSS_VALUE_LIST ##
+### cssValueType ###
 
-## CSS_CUSTOM ##
+## Constants ##
 
-## cssText ##
+### CSS_INHERIT ###
 
-## cssValueType ##
+### CSS_PRIMITIVE_VALUE ###
+
+### CSS_VALUE_LIST ###
+
+### CSS_CUSTOM ###

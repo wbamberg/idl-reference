@@ -4,6 +4,8 @@ layout: default
 
 # nsIWorkerTestCallback #
 
-## onmessage ##
+## Methods ##
 
-## onerror ##
+### onmessage ###
+
+### onerror ###

@@ -7,7 +7,9 @@ layout: default
 Provides access to particual cache storages of the network URI cache.
 
 
-## memoryCacheStorage ##
+## Methods ##
+
+### memoryCacheStorage ###
 
 Get storage where entries will only remain in memory, never written
 to the disk.
@@ -22,7 +24,7 @@ OPEN_READONLY open flag has no effect on this behavior.
    respects separate storage for private browsing.
 
 
-## diskCacheStorage ##
+### diskCacheStorage ###
 
 Get storage where entries will be written to disk when not forbidden by
 response headers.
@@ -32,7 +34,7 @@ response headers.
    be first to check on to find entries in.
 
 
-## appCacheStorage ##
+### appCacheStorage ###
 
 Get storage for a specified application cache obtained using some different
 mechanism.
@@ -44,41 +46,18 @@ mechanism.
    work with offline cache as a whole.
 
 
-## clear ##
+### clear ###
 
 Evict the whole cache.
 
 
-## PURGE_DISK_DATA_ONLY ##
-
-Purge only data of disk backed entries.  Metadata are left for
-performance purposes.
-
-
-## PURGE_DISK_ALL ##
-
-Purge whole disk backed entries from memory.  Disk files will
-be left unattended.
-
-
-## PURGE_EVERYTHING ##
-
-Purge all entries we keep in memory, including memory-storage
-entries.  This may be dangerous to use.
-
-
-## purgeFromMemory ##
+### purgeFromMemory ###
 
 Purges data we keep warmed in memory.  Use for tests and for
 saving memory.
 
 
-## ioTarget ##
-
-I/O thread target to use for any operations on disk
-
-
-## asyncGetDiskConsumption ##
+### asyncGetDiskConsumption ###
 
 Asynchronously determine how many bytes of the disk space the cache takes.
 @see nsICacheStorageConsumptionObserver
@@ -86,4 +65,31 @@ Asynchronously determine how many bytes of the disk space the cache takes.
    A mandatory (weak referred) observer.  Documented at
    nsICacheStorageConsumptionObserver.
    NOTE: the observer MUST implement nsISupportsWeakReference.
+
+
+## Attributes ##
+
+### ioTarget ###
+
+I/O thread target to use for any operations on disk
+
+
+## Constants ##
+
+### PURGE_DISK_DATA_ONLY ###
+
+Purge only data of disk backed entries.  Metadata are left for
+performance purposes.
+
+
+### PURGE_DISK_ALL ###
+
+Purge whole disk backed entries from memory.  Disk files will
+be left unattended.
+
+
+### PURGE_EVERYTHING ###
+
+Purge all entries we keep in memory, including memory-storage
+entries.  This may be dangerous to use.
 

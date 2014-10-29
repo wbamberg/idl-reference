@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMFormData #
 
-## append ##
+## Methods ##
+
+### append ###

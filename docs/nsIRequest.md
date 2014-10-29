@@ -7,12 +7,9 @@ layout: default
 nsIRequest
 
 
-## name ##
+## Methods ##
 
-The name of the request.  Often this is the URI of the request.
-
-
-## isPending ##
+### isPending ###
 
 Indicates whether the request is pending. nsIRequest::isPending is
 true when there is an outstanding asynchronous event that will make
@@ -29,12 +26,7 @@ Requests can become pending multiple times during their lifetime.
 @note Suspended requests are still considered pending.
 
 
-## status ##
-
-The error status associated with the request.
-
-
-## cancel ##
+### cancel ###
 
 Cancels the current request.  This will close any open input or
 output streams and terminate any async requests.  Users should 
@@ -57,7 +49,7 @@ be a success code such as NS_OK.  In general, aStatus should be
 a failure code.
 
 
-## suspend ##
+### suspend ###
 
 Suspends the current request.  This may have the effect of closing
 any underlying transport (in order to free up resources), although
@@ -73,21 +65,33 @@ general, callers should be capable of handling events even after
 suspending a request.
 
 
-## resume ##
+### resume ###
 
 Resumes the current request.  This may have the effect of re-opening
 any underlying transport and will resume the delivery of data to 
 any open streams.
 
 
-## loadGroup ##
+## Attributes ##
+
+### name ###
+
+The name of the request.  Often this is the URI of the request.
+
+
+### status ###
+
+The error status associated with the request.
+
+
+### loadGroup ###
 
 The load group of this request.  While pending, the request is a 
 member of the load group.  It is the responsibility of the request
 to implement this policy.
 
 
-## loadFlags ##
+### loadFlags ###
 
 The load flags of this request.  Bits 0-15 are reserved.
 
@@ -95,12 +99,14 @@ When added to a load group, this request's load flags are merged with
 the load flags of the load group.
 
 
-## LOAD_REQUESTMASK ##
+## Constants ##
+
+### LOAD_REQUESTMASK ###
 
 Mask defining the bits reserved for nsIRequest LoadFlags
 
 
-## LOAD_NORMAL ##
+### LOAD_NORMAL ###
 **********************************************************************
 Listed below are the various load flags which may be or'd together.
 
@@ -108,14 +114,14 @@ Listed below are the various load flags which may be or'd together.
 No special load flags:
 
 
-## LOAD_BACKGROUND ##
+### LOAD_BACKGROUND ###
 
 Do not deliver status notifications to the nsIProgressEventSink and
 do not block the loadgroup from completing (should this load belong to one).
 Note: Progress notifications will still be delivered.
 
 
-## INHIBIT_PIPELINE ##
+### INHIBIT_PIPELINE ###
 **********************************************************************
 The following flags control the flow of data into the cache.
 
@@ -125,20 +131,20 @@ The following flags control the flow of data into the cache.
  while to load and may cause head of line blocking problems.
 
 
-## INHIBIT_CACHING ##
+### INHIBIT_CACHING ###
 
 This flag prevents caching of any kind.  It does not, however, prevent
 cached content from being used to satisfy this request.
 
 
-## INHIBIT_PERSISTENT_CACHING ##
+### INHIBIT_PERSISTENT_CACHING ###
 
 This flag prevents caching on disk (or other persistent media), which
 may be needed to preserve privacy.  For HTTPS, this flag is set auto-
 matically.
 
 
-## LOAD_BYPASS_CACHE ##
+### LOAD_BYPASS_CACHE ###
 **********************************************************************
 The following flags control what happens when the cache contains data
 that could perhaps satisfy this request.  They are listed in descending
@@ -149,7 +155,7 @@ Force an end-to-end download of content data from the origin server.
 This flag is used for a shift-reload.
 
 
-## LOAD_FROM_CACHE ##
+### LOAD_FROM_CACHE ###
 
 Attempt to force a load from the cache, bypassing ALL validation logic
 (note: this is stronger than VALIDATE_NEVER, which still validates for
@@ -164,7 +170,7 @@ normal browsing as it may likely violate reasonable assumptions made by
 the server and confuse users.
 
 
-## VALIDATE_ALWAYS ##
+### VALIDATE_ALWAYS ###
 
 The following flags control the frequency of cached content validation
 when neither LOAD_BYPASS_CACHE or LOAD_FROM_CACHE are set.  By default,
@@ -190,18 +196,18 @@ NOTE TO IMPLEMENTORS:
   incorrect and potentially undesirable side-effects.
 
 
-## VALIDATE_NEVER ##
+### VALIDATE_NEVER ###
 
-## VALIDATE_ONCE_PER_SESSION ##
+### VALIDATE_ONCE_PER_SESSION ###
 
-## LOAD_ANONYMOUS ##
+### LOAD_ANONYMOUS ###
 
 When set, this flag indicates that no user-specific data should be added
 to the request when opened. This means that things like authorization
 tokens or cookie headers should not be added.
 
 
-## LOAD_FRESH_CONNECTION ##
+### LOAD_FRESH_CONNECTION ###
 
 When set, this flag indicates that caches of network connections,
 particularly HTTP persistent connections, should not be used.

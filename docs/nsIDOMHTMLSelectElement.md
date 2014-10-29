@@ -4,46 +4,50 @@ layout: default
 
 # nsIDOMHTMLSelectElement #
 
-## autofocus ##
+## Methods ##
 
-## disabled ##
+### item ###
 
-## form ##
+### namedItem ###
 
-## multiple ##
+### add ###
 
-## name ##
+### remove ###
 
-## size ##
+### checkValidity ###
 
-## type ##
+### setCustomValidity ###
 
-## options ##
+## Attributes ##
 
-## length ##
+### autofocus ###
 
-## item ##
+### disabled ###
 
-## namedItem ##
+### form ###
 
-## add ##
+### multiple ###
 
-## remove ##
+### name ###
 
-## selectedOptions ##
+### size ###
 
-## selectedIndex ##
+### type ###
 
-## value ##
+### options ###
 
-## willValidate ##
+### length ###
 
-## validity ##
+### selectedOptions ###
 
-## validationMessage ##
+### selectedIndex ###
 
-## checkValidity ##
+### value ###
 
-## setCustomValidity ##
+### willValidate ###
 
-## required ##
+### validity ###
+
+### validationMessage ###
+
+### required ###

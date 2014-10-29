@@ -14,35 +14,9 @@ it in the nsIWebNavigation object.
 This interface is accessible from javascript.
 
 
-## count ##
+## Methods ##
 
-A readonly property of the interface that returns 
-the number of toplevel documents currently available
-in session history.
-
-
-## index ##
-
-A readonly property of the interface that returns 
-the index of the current document in session history.
-
-
-## requestedIndex ##
-
-A readonly property of the interface that returns 
-the index of the last document that started to load and
-didn't finished yet. When document finishes the loading
-value -1 is returned.
-
-
-## maxLength ##
-
-A read/write property of the interface, used to Get/Set
-the maximum number of toplevel documents, session history 
-can hold for each instance. 
-
-
-## getEntryAtIndex ##
+### getEntryAtIndex ###
 
 Called to obtain handle to the history entry at a
 given index.
@@ -59,7 +33,7 @@ given index.
                          history entry for the given index.
 
 
-## PurgeHistory ##
+### PurgeHistory ###
 
 Called to purge older documents from history.
 Documents can be removed from session history for various 
@@ -77,7 +51,7 @@ prior page loads etc...
                          
 
 
-## addSHistoryListener ##
+### addSHistoryListener ###
 
 Called to register a listener for the session history component.
 Listeners are notified when pages are loaded or purged from history.
@@ -92,7 +66,7 @@ Listeners are notified when pages are loaded or purged from history.
 @see nsSupportsWeakReference
 
 
-## removeSHistoryListener ##
+### removeSHistoryListener ###
 
 Called to remove a listener for the session history component.
 Listeners are notified when pages are loaded from history.
@@ -106,7 +80,51 @@ Listeners are notified when pages are loaded from history.
 @see nsSupportsWeakReference
 
 
-## SHistoryEnumerator ##
+### reloadCurrentEntry ###
+
+### getIndexOfEntry ###
+
+Called to obtain the index to a given history entry.
+
+@param aEntry            The entry to obtain the index of.
+
+@return                  <code>NS_OK</code> index for the history entry
+                         is obtained successfully.
+                         <code>NS_ERROR_FAILURE</code> Error in obtaining
+                         index for the given history entry.
+
+
+## Attributes ##
+
+### count ###
+
+A readonly property of the interface that returns 
+the number of toplevel documents currently available
+in session history.
+
+
+### index ###
+
+A readonly property of the interface that returns 
+the index of the current document in session history.
+
+
+### requestedIndex ###
+
+A readonly property of the interface that returns 
+the index of the last document that started to load and
+didn't finished yet. When document finishes the loading
+value -1 is returned.
+
+
+### maxLength ###
+
+A read/write property of the interface, used to Get/Set
+the maximum number of toplevel documents, session history 
+can hold for each instance. 
+
+
+### SHistoryEnumerator ###
 
 Called to obtain a enumerator for all the  documents stored in 
 session history. The enumerator object thus returned by this method
@@ -127,18 +145,4 @@ can be traversed using nsISimpleEnumerator.
 @see nsISHEntry
 @see QueryInterface()
 @see do_QueryInterface()
-
-
-## reloadCurrentEntry ##
-
-## getIndexOfEntry ##
-
-Called to obtain the index to a given history entry.
-
-@param aEntry            The entry to obtain the index of.
-
-@return                  <code>NS_OK</code> index for the history entry
-                         is obtained successfully.
-                         <code>NS_ERROR_FAILURE</code> Error in obtaining
-                         index for the given history entry.
 

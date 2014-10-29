@@ -4,4 +4,6 @@ layout: default
 
 # nsIFetchTelemetryDataCallback #
 
-## complete ##
+## Methods ##
+
+### complete ###

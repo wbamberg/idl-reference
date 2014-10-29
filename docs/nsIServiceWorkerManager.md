@@ -4,7 +4,9 @@ layout: default
 
 # nsIServiceWorkerManager #
 
-## register ##
+## Methods ##
+
+### register ###
 
 Registers a ServiceWorker with script loaded from `aScriptURI` to act as
 the ServiceWorker for aScope.  Requires a valid entry settings object on
@@ -14,25 +16,25 @@ a window.
 Returns a Promise.
 
 
-## unregister ##
+### unregister ###
 
 Unregister an existing ServiceWorker registration for `aScope`.
 It keeps aCallback alive until the operation is concluded.
 
 
-## getRegistrations ##
+### getRegistrations ###
 
-## getRegistration ##
+### getRegistration ###
 
-## getReadyPromise ##
+### getReadyPromise ###
 
-## removeReadyPromise ##
+### removeReadyPromise ###
 
-## AddRegistrationEventListener ##
+### AddRegistrationEventListener ###
 
-## RemoveRegistrationEventListener ##
+### RemoveRegistrationEventListener ###
 
-## MaybeStartControlling ##
+### MaybeStartControlling ###
 
 Call this to request that document `aDoc` be controlled by a ServiceWorker
 if a registration exists for it's scope.
@@ -40,19 +42,19 @@ if a registration exists for it's scope.
 This MUST only be called once per document!
 
 
-## MaybeStopControlling ##
+### MaybeStopControlling ###
 
 Documents that have called MaybeStartControlling() should call this when
 they are destroyed. This function may be called multiple times, and is
 idempotent.
 
 
-## GetInstalling ##
+### GetInstalling ###
 
-## GetWaiting ##
+### GetWaiting ###
 
-## GetActive ##
+### GetActive ###
 
-## GetDocumentController ##
+### GetDocumentController ###
 
-## getScopeForUrl ##
+### getScopeForUrl ###

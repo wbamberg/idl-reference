@@ -4,10 +4,12 @@ layout: default
 
 # nsIUDPSocketInternal #
 
-## callListenerOpened ##
+## Methods ##
 
-## callListenerClosed ##
+### callListenerOpened ###
 
-## callListenerReceivedData ##
+### callListenerClosed ###
 
-## callListenerError ##
+### callListenerReceivedData ###
+
+### callListenerError ###

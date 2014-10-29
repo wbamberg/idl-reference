@@ -8,7 +8,9 @@ nsIClientAuthDialog
 Provides UI for SSL client-auth dialogs.
 
 
-## ChooseCertificate ##
+## Methods ##
+
+### ChooseCertificate ###
 
 display
   UI shown when a user is asked to do SSL client auth.

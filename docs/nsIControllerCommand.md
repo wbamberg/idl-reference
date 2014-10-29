@@ -10,7 +10,9 @@ A generic command interface. You can register an nsIControllerCommand
 with the nsIControllerCommandTable.
 
 
-## isCommandEnabled ##
+## Methods ##
+
+### isCommandEnabled ###
 
 Returns true if the command is currently enabled. An nsIControllerCommand
 can implement more than one commands; say, a group of related commands
@@ -24,9 +26,9 @@ passed to each method.
                  The contents of this cookie are implementation-defined.
 
 
-## getCommandStateParams ##
+### getCommandStateParams ###
 
-## doCommand ##
+### doCommand ###
 
 Execute the name command.
 
@@ -37,4 +39,4 @@ Execute the name command.
                  The contents of this cookie are implementation-defined.
 
 
-## doCommandParams ##
+### doCommandParams ###

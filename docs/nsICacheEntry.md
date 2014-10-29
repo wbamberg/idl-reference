@@ -4,50 +4,15 @@ layout: default
 
 # nsICacheEntry #
 
-## NO_EXPIRATION_TIME ##
+## Methods ##
 
-Placeholder for the initial value of expiration time.
-
-
-## key ##
-
-Get the key identifying the cache entry.
-
-
-## persistent ##
-
-Whether the entry is memory/only or persisted to disk.
-Note: private browsing entries are reported as persistent for consistency
-while are not actually persisted to disk.
-
-
-## fetchCount ##
-
-Get the number of times the cache entry has been opened.
-
-
-## lastFetched ##
-
-Get the last time the cache entry was opened (in seconds since the Epoch).
-
-
-## lastModified ##
-
-Get the last time the cache entry was modified (in seconds since the Epoch).
-
-
-## expirationTime ##
-
-Get the expiration time of the cache entry (in seconds since the Epoch).
-
-
-## setExpirationTime ##
+### setExpirationTime ###
 
 Set the time at which the cache entry should be considered invalid (in
 seconds since the Epoch).
 
 
-## forceValidFor ##
+### forceValidFor ###
 
 This method is intended to override the per-spec cache validation
 decisions for a duration specified in seconds. The current state can
@@ -62,14 +27,7 @@ entries grows to take up more space than the cache size allows.
        overridden before it returns to normal
 
 
-## isForcedValid ##
-
-The state variable for whether this entry is currently forced valid.
-Defaults to false for normal cache validation behavior, and will return
-true if the number of seconds set by forceValidFor() has yet to be reached.
-
-
-## openInputStream ##
+### openInputStream ###
 
 Open blocking input stream to cache data.  Use the stream transport
 service to asynchronously read this stream on a background thread.
@@ -82,7 +40,7 @@ The returned stream MAY implement nsISeekableStream.
 @return non-blocking, buffered input stream.
 
 
-## openOutputStream ##
+### openOutputStream ###
 
 Open non-blocking output stream to cache data.  The returned stream
 MAY implement nsISeekableStream.
@@ -97,42 +55,23 @@ truncated to the specified offset.
 @return blocking, buffered output stream.
 
 
-## predictedDataSize ##
-
-Stores the Content-Length specified in the HTTP header for this
-entry. Checked before we write to the cache entry, to prevent ever
-taking up space in the cache for an entry that we know up front
-is going to have to be evicted anyway. See bug 588507.
-
-
-## securityInfo ##
-
-Get/set security info on the cache entry for this descriptor.
-
-
-## storageDataSize ##
-
-Get the size of the cache entry data, as stored. This may differ
-from the entry's dataSize, if the entry is compressed.
-
-
-## asyncDoom ##
+### asyncDoom ###
 
 Asynchronously doom an entry. Listener will be notified about the status
 of the operation. Null may be passed if caller doesn't care about the
 result.
 
 
-## getMetaDataElement ##
+### getMetaDataElement ###
 
 Methods for accessing meta data.  Meta data is a table of key/value
 string pairs.  The strings do not have to conform to any particular
 charset, but they must be null terminated.
 
 
-## setMetaDataElement ##
+### setMetaDataElement ###
 
-## visitMetaData ##
+### visitMetaData ###
 
 Obtain the list of metadata keys this entry keeps.
 
@@ -142,7 +81,7 @@ if the values need to be processed somehow, it's better to cache them
 and process outside the callback.
 
 
-## metaDataReady ##
+### metaDataReady ###
 
 Claims that all metadata on this entry are up-to-date and this entry
 now can be delivered to other waiting consumers.
@@ -150,7 +89,7 @@ now can be delivered to other waiting consumers.
 We need such method since metadata must be delivered synchronously.
 
 
-## setValid ##
+### setValid ###
 
 Called by consumer upon 304/206 response from the server.  This marks
 the entry content as positively revalidated.
@@ -158,7 +97,7 @@ Consumer uses this method after the consumer has returned ENTRY_NEEDS_REVALIDATI
 result from onCacheEntryCheck and after successfull revalidation with the server.
 
 
-## recreate ##
+### recreate ###
 
 Doom this entry and open a new, empty, entry for write.  Consumer has
 to exchange the entry this method is called on for the newly created.
@@ -174,14 +113,7 @@ Used on 200 responses to conditional requests.
      recreated for write
 
 
-## dataSize ##
-
-Returns the length of data this entry holds.
-@throws
-   NS_ERROR_IN_PROGRESS when the write is still in progress.
-
-
-## close ##
+### close ###
 ************************************************************************
 The following methods might be added to some nsICacheEntryInternal
 interface since we want to remove them as soon as the old cache backend is
@@ -197,7 +129,7 @@ In the new backend: this method is no-op
 In the old backend: this method delegates to nsICacheEntryDescriptor.close()
 
 
-## markValid ##
+### markValid ###
 
 @deprecated
 FOR BACKWARD COMPATIBILITY ONLY
@@ -205,14 +137,14 @@ Marks the entry as valid so that others can use it and get only readonly
 access when the entry is held by the 1st writer.
 
 
-## maybeMarkValid ##
+### maybeMarkValid ###
 
 @deprecated
 FOR BACKWARD COMPATIBILITY ONLY
 Marks the entry as valid when write access is acquired.
 
 
-## hasWriteAccess ##
+### hasWriteAccess ###
 
 @deprecated
 FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK
@@ -222,4 +154,78 @@ FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK
 @returns
    true when write access is acquired for this entry,
    false otherwise
+
+
+## Attributes ##
+
+### key ###
+
+Get the key identifying the cache entry.
+
+
+### persistent ###
+
+Whether the entry is memory/only or persisted to disk.
+Note: private browsing entries are reported as persistent for consistency
+while are not actually persisted to disk.
+
+
+### fetchCount ###
+
+Get the number of times the cache entry has been opened.
+
+
+### lastFetched ###
+
+Get the last time the cache entry was opened (in seconds since the Epoch).
+
+
+### lastModified ###
+
+Get the last time the cache entry was modified (in seconds since the Epoch).
+
+
+### expirationTime ###
+
+Get the expiration time of the cache entry (in seconds since the Epoch).
+
+
+### isForcedValid ###
+
+The state variable for whether this entry is currently forced valid.
+Defaults to false for normal cache validation behavior, and will return
+true if the number of seconds set by forceValidFor() has yet to be reached.
+
+
+### predictedDataSize ###
+
+Stores the Content-Length specified in the HTTP header for this
+entry. Checked before we write to the cache entry, to prevent ever
+taking up space in the cache for an entry that we know up front
+is going to have to be evicted anyway. See bug 588507.
+
+
+### securityInfo ###
+
+Get/set security info on the cache entry for this descriptor.
+
+
+### storageDataSize ###
+
+Get the size of the cache entry data, as stored. This may differ
+from the entry's dataSize, if the entry is compressed.
+
+
+### dataSize ###
+
+Returns the length of data this entry holds.
+@throws
+   NS_ERROR_IN_PROGRESS when the write is still in progress.
+
+
+## Constants ##
+
+### NO_EXPIRATION_TIME ###
+
+Placeholder for the initial value of expiration time.
 

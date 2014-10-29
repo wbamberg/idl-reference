@@ -7,7 +7,9 @@ layout: default
 helper service for common uses of nsIClipboard.
 
 
-## copyStringToClipboard ##
+## Methods ##
+
+### copyStringToClipboard ###
 
 copy string to given clipboard
 
@@ -17,7 +19,7 @@ copy string to given clipboard
        (eg. kSelectionClipboard -- see nsIClipboard.idl)
 
 
-## copyString ##
+### copyString ###
 
 copy string to (default) clipboard
 

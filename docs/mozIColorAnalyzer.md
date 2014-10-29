@@ -4,7 +4,9 @@ layout: default
 
 # mozIColorAnalyzer #
 
-## findRepresentativeColor ##
+## Methods ##
+
+### findRepresentativeColor ###
 
 Given an image URI, find the most representative color for that image
 based on the frequency of each color.  Preference is given to colors that

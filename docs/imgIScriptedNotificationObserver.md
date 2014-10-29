@@ -4,16 +4,18 @@ layout: default
 
 # imgIScriptedNotificationObserver #
 
-## sizeAvailable ##
+## Methods ##
 
-## frameUpdate ##
+### sizeAvailable ###
 
-## frameComplete ##
+### frameUpdate ###
 
-## loadComplete ##
+### frameComplete ###
 
-## decodeComplete ##
+### loadComplete ###
 
-## discard ##
+### decodeComplete ###
 
-## isAnimated ##
+### discard ###
+
+### isAnimated ###

@@ -10,6 +10,10 @@ The rest are truly primitive and are passed by value
 Scriptable storage for booleans
 
 
-## data ##
+## Methods ##
 
-## toString ##
+### toString ###
+
+## Attributes ##
+
+### data ###

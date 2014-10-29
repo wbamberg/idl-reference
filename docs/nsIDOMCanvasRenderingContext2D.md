@@ -12,12 +12,14 @@ be referenced directly via a canvas context 2d rather than this interface,
 and that should be preferred in new code. 
 
 
-## DRAWWINDOW_DRAW_CARET ##
+## Constants ##
 
-## DRAWWINDOW_DO_NOT_FLUSH ##
+### DRAWWINDOW_DRAW_CARET ###
 
-## DRAWWINDOW_DRAW_VIEW ##
+### DRAWWINDOW_DO_NOT_FLUSH ###
 
-## DRAWWINDOW_USE_WIDGET_LAYERS ##
+### DRAWWINDOW_DRAW_VIEW ###
 
-## DRAWWINDOW_ASYNC_DECODE_IMAGES ##
+### DRAWWINDOW_USE_WIDGET_LAYERS ###
+
+### DRAWWINDOW_ASYNC_DECODE_IMAGES ###

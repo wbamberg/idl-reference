@@ -4,6 +4,8 @@ layout: default
 
 # nsIJSCID #
 
-## createInstance ##
+## Methods ##
 
-## getService ##
+### createInstance ###
+
+### getService ###

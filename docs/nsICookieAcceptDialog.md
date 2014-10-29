@@ -4,12 +4,14 @@ layout: default
 
 # nsICookieAcceptDialog #
 
-## ACCEPT_COOKIE ##
+## Constants ##
 
-## REMEMBER_DECISION ##
+### ACCEPT_COOKIE ###
 
-## HOSTNAME ##
+### REMEMBER_DECISION ###
 
-## COOKIESFROMHOST ##
+### HOSTNAME ###
 
-## CHANGINGCOOKIE ##
+### COOKIESFROMHOST ###
+
+### CHANGINGCOOKIE ###

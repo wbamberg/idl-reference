@@ -7,58 +7,60 @@ layout: default
 Metadata of the media stream.
 
 
-## frameType ##
+## Attributes ##
+
+### frameType ###
 
 Frame type.
 
 
-## totalTracks ##
+### totalTracks ###
 
 The total tracks for the given media stream session.
 
 
-## mimeType ##
+### mimeType ###
 
 The mime type of the track.
 
 
-## width ##
+### width ###
 
 The width of the resolution.
 
 
-## height ##
+### height ###
 
 The height of the resolution.
 
 
-## duration ##
+### duration ###
 
 The duration of the media stream.
 
 
-## sampleRate ##
+### sampleRate ###
 
 The sample rate of the media stream.
 
 
-## timeStamp ##
+### timeStamp ###
 
 The timestamp indicates the stream absolute position
 relative to the beginning of the presentation.
 
 
-## channelCount ##
+### channelCount ###
 
 The total number of audio channels in the media stream.
 
 
-## esdsData ##
+### esdsData ###
 
 The AAC audio codec specific data.
 
 
-## avccData ##
+### avccData ###
 
 The AVCC format extradata of H.264 stream.
 

@@ -4,10 +4,12 @@ layout: default
 
 # nsIDOMSVGElement #
 
-## ownerSVGElement ##
+## Attributes ##
 
-## viewportElement ##
+### ownerSVGElement ###
 
-## className ##
+### viewportElement ###
 
-## style ##
+### className ###
+
+### style ###

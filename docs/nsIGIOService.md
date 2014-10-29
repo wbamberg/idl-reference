@@ -4,20 +4,22 @@ layout: default
 
 # nsIGIOService #
 
-## getMimeTypeFromExtension ##
+## Methods ##
+
+### getMimeTypeFromExtension ###
 MIME registry methods ***/
 
-## getAppForURIScheme ##
+### getAppForURIScheme ###
 
-## getAppForMimeType ##
+### getAppForMimeType ###
 
-## createAppFromCommand ##
+### createAppFromCommand ###
 
-## getDescriptionForMimeType ##
+### getDescriptionForMimeType ###
 
-## showURI ##
+### showURI ###
 Misc. methods ***/
 
-## showURIForInput ##
+### showURIForInput ###
 
-## orgFreedesktopFileManager1ShowItems ##
+### orgFreedesktopFileManager1ShowItems ###

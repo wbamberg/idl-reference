@@ -64,34 +64,38 @@ while the cycle collector is running. To analyze cycle collection data in JS:
   work, and the JS code is simply consuming recorded data.
 
 
-## allTraces ##
+## Methods ##
 
-## wantAllTraces ##
+### allTraces ###
 
-## disableLog ##
+### begin ###
 
-## logSink ##
+### noteRefCountedObject ###
 
-## wantAfterProcessing ##
+### noteGCedObject ###
 
-## begin ##
+### noteEdge ###
 
-## noteRefCountedObject ##
+### noteWeakMapEntry ###
 
-## noteGCedObject ##
+### noteIncrementalRoot ###
 
-## noteEdge ##
+### beginResults ###
 
-## noteWeakMapEntry ##
+### describeRoot ###
 
-## noteIncrementalRoot ##
+### describeGarbage ###
 
-## beginResults ##
+### end ###
 
-## describeRoot ##
+### processNext ###
 
-## describeGarbage ##
+## Attributes ##
 
-## end ##
+### wantAllTraces ###
 
-## processNext ##
+### disableLog ###
+
+### logSink ###
+
+### wantAfterProcessing ###

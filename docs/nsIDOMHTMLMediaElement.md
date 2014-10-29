@@ -13,86 +13,92 @@ http://www.whatwg.org/specs/web-apps/current-work/#htmlmediaelement
 @status UNDER_DEVELOPMENT
 
 
-## error ##
+## Methods ##
 
-## src ##
+### load ###
 
-## currentSrc ##
+### canPlayType ###
 
-## NETWORK_EMPTY ##
+### play ###
 
-## NETWORK_IDLE ##
+### pause ###
 
-## NETWORK_LOADING ##
+### mozGetMetadata ###
 
-## NETWORK_NO_SOURCE ##
+### isVideo ###
 
-## networkState ##
+## Attributes ##
 
-## preload ##
+### error ###
 
-## buffered ##
+### src ###
 
-## load ##
+### currentSrc ###
 
-## canPlayType ##
+### networkState ###
 
-## HAVE_NOTHING ##
+### preload ###
 
-## HAVE_METADATA ##
+### buffered ###
 
-## HAVE_CURRENT_DATA ##
+### readyState ###
 
-## HAVE_FUTURE_DATA ##
+### seeking ###
 
-## HAVE_ENOUGH_DATA ##
+### currentTime ###
 
-## readyState ##
+### duration ###
 
-## seeking ##
+### paused ###
 
-## currentTime ##
+### defaultPlaybackRate ###
 
-## duration ##
+### playbackRate ###
 
-## paused ##
+### mozPreservesPitch ###
 
-## defaultPlaybackRate ##
+### played ###
 
-## playbackRate ##
+### seekable ###
 
-## mozPreservesPitch ##
+### ended ###
 
-## played ##
+### mozAutoplayEnabled ###
 
-## seekable ##
+### autoplay ###
 
-## ended ##
+### loop ###
 
-## mozAutoplayEnabled ##
+### controls ###
 
-## autoplay ##
+### volume ###
 
-## loop ##
+### muted ###
 
-## play ##
+### defaultMuted ###
 
-## pause ##
+### mozAudioCaptured ###
 
-## controls ##
+### mozFragmentEnd ###
 
-## volume ##
+### mozAudioChannelType ###
 
-## muted ##
+## Constants ##
 
-## defaultMuted ##
+### NETWORK_EMPTY ###
 
-## mozAudioCaptured ##
+### NETWORK_IDLE ###
 
-## mozGetMetadata ##
+### NETWORK_LOADING ###
 
-## mozFragmentEnd ##
+### NETWORK_NO_SOURCE ###
 
-## mozAudioChannelType ##
+### HAVE_NOTHING ###
 
-## isVideo ##
+### HAVE_METADATA ###
+
+### HAVE_CURRENT_DATA ###
+
+### HAVE_FUTURE_DATA ###
+
+### HAVE_ENOUGH_DATA ###

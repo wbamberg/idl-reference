@@ -4,7 +4,9 @@ layout: default
 
 # nsIApplicationReputationService #
 
-## queryReputation ##
+## Methods ##
+
+### queryReputation ###
 
 Start querying the application reputation service.
 

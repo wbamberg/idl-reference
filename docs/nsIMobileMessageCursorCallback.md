@@ -4,8 +4,10 @@ layout: default
 
 # nsIMobileMessageCursorCallback #
 
-## notifyCursorError ##
+## Methods ##
 
-## notifyCursorResult ##
+### notifyCursorError ###
 
-## notifyCursorDone ##
+### notifyCursorResult ###
+
+### notifyCursorDone ###

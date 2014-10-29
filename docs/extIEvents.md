@@ -7,7 +7,9 @@ layout: default
 Interface for supporting custom events.
 
 
-## addListener ##
+## Methods ##
+
+### addListener ###
 
 Adds an event listener to the list. If multiple identical event listeners
 are registered on the same event target with the same parameters the
@@ -21,7 +23,7 @@ removed with the removeListener method.
          The reference to a listener
 
 
-## removeListener ##
+### removeListener ###
 
 Removes an event listener from the list. Calling remove
 with arguments which do not identify any currently registered

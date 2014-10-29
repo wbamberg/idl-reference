@@ -4,7 +4,9 @@ layout: default
 
 # nsIRDFXMLSource #
 
-## Serialize ##
+## Methods ##
+
+### Serialize ###
 
 Serialize the contents of the datasource to aStream.
 @param aStream the output stream the will receive the

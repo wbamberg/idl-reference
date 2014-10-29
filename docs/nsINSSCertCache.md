@@ -4,10 +4,12 @@ layout: default
 
 # nsINSSCertCache #
 
-## cacheAllCerts ##
+## Methods ##
 
-## cacheCertList ##
+### cacheAllCerts ###
 
-## getX509CachedCerts ##
+### cacheCertList ###
 
-## getCachedCerts ##
+### getX509CachedCerts ###
+
+### getCachedCerts ###

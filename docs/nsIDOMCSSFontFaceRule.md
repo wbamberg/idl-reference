@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMCSSFontFaceRule #
 
-## style ##
+## Attributes ##
+
+### style ###

@@ -9,4 +9,6 @@ Native treeselections implement it, and we use this to check whether a
 treeselection is native (and therefore suitable for use by untrusted content).
 
 
-## ensureNative ##
+## Methods ##
+
+### ensureNative ###

@@ -8,24 +8,26 @@ The application cache service manages the set of application cache
 groups.
 
 
-## buildGroupID ##
+## Methods ##
+
+### buildGroupID ###
 
 Create group string identifying cache group according the manifest
 URL and the given load context.
 
 
-## buildGroupIDForApp ##
+### buildGroupIDForApp ###
 
 Same as buildGroupID method, just doesn't require load context.
 
 
-## createApplicationCache ##
+### createApplicationCache ###
 
 Create a new, empty application cache for the given cache
 group.
 
 
-## createCustomApplicationCache ##
+### createCustomApplicationCache ###
 
 Create a new, empty application cache for the given cache
 group residing in a custom directory with a custom quota.
@@ -39,22 +41,22 @@ group residing in a custom directory with a custom quota.
    Optional override of the default quota.
 
 
-## getApplicationCache ##
+### getApplicationCache ###
 
 Get an application cache object for the given client ID.
 
 
-## getActiveCache ##
+### getActiveCache ###
 
 Get the currently active cache object for a cache group.
 
 
-## deactivateGroup ##
+### deactivateGroup ###
 
 Deactivate the currently-active cache object for a cache group.
 
 
-## discardByAppId ##
+### discardByAppId ###
 
 Deletes some or all of an application's cache entries.  
 
@@ -68,12 +70,12 @@ Deletes some or all of an application's cache entries.
    deleted (this is used for application uninstallation).
 
 
-## chooseApplicationCache ##
+### chooseApplicationCache ###
 
 Try to find the best application cache to serve a resource.
 
 
-## cacheOpportunistically ##
+### cacheOpportunistically ###
 
 Flags the key as being opportunistically cached.
 
@@ -87,12 +89,12 @@ this is not currently implemented.
        The cache entry key.
 
 
-## getGroups ##
+### getGroups ###
 
 Get the list of application cache groups.
 
 
-## getGroupsTimeOrdered ##
+### getGroupsTimeOrdered ###
 
 Get the list of application cache groups in the order of
 activating time.

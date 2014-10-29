@@ -4,9 +4,11 @@ layout: default
 
 # nsITokenDialogs #
 
-## ChooseToken ##
+## Methods ##
 
-## displayProtectedAuth ##
+### ChooseToken ###
+
+### displayProtectedAuth ###
 
 displayProtectedAuth - displays notification dialog to the user 
 that he is expected to authenticate to the token using its

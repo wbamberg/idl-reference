@@ -11,44 +11,9 @@ the inspection of the resulting HTTP response status and headers when they
 become available.
 
 
-## requestMethod ##
-**********************************************************************
-REQUEST CONFIGURATION
+## Methods ##
 
-Modifying request parameters after asyncOpen has been called is an error.
-
-
-Set/get the HTTP request method (default is "GET").  Both setter and
-getter are case sensitive.
-
-This attribute may only be set before the channel is opened.
-
-NOTE: The data for a "POST" or "PUT" request can be configured via
-nsIUploadChannel; however, after setting the upload data, it may be
-necessary to set the request method explicitly.  The documentation
-for nsIUploadChannel has further details.
-
-@throws NS_ERROR_IN_PROGRESS if set after the channel has been opened.
-
-
-## referrer ##
-
-Get/set the HTTP referrer URI.  This is the address (URI) of the
-resource from which this channel's URI was obtained (see RFC2616 section
-14.36).
-
-This attribute may only be set before the channel is opened.
-
-NOTE: The channel may silently refuse to set the Referer header if the
-URI does not pass certain security checks (e.g., a "https://" URL will
-never be sent as the referrer for a plaintext HTTP request).  The
-implementation is not required to throw an exception when the referrer
-URI is rejected.
-
-@throws NS_ERROR_IN_PROGRESS if set after the channel has been opened.
-
-
-## getRequestHeader ##
+### getRequestHeader ###
 
 Get the value of a particular request header.
 
@@ -60,7 +25,7 @@ Get the value of a particular request header.
 @throws NS_ERROR_NOT_AVAILABLE if the header is not set.
 
 
-## setRequestHeader ##
+### setRequestHeader ###
 
 Set the value of a particular request header.
 
@@ -89,7 +54,7 @@ If aValue is empty and aMerge is false, the header will be cleared.
         opened.
 
 
-## visitRequestHeaders ##
+### visitRequestHeaders ###
 
 Call this method to visit all request headers.  Calling setRequestHeader
 while visiting request headers has undefined behavior.  Don't do it!
@@ -98,91 +63,7 @@ while visiting request headers has undefined behavior.  Don't do it!
        the header visitor instance.
 
 
-## allowPipelining ##
-
-This attribute is a hint to the channel to indicate whether or not
-the underlying HTTP transaction should be allowed to be pipelined
-with other transactions.  This should be set to FALSE, for example,
-if the application knows that the corresponding document is likely
-to be very large.
-
-This attribute is true by default, though other factors may prevent
-pipelining.
-
-This attribute may only be set before the channel is opened.
-
-@throws NS_ERROR_FAILURE if set after the channel has been opened.
-
-
-## allowSTS ##
-
-This attribute of the channel indicates whether or not
-the underlying HTTP transaction should be honor stored Strict Transport
-Security directives for its principal. It defaults to true. Using
-OCSP to bootstrap the HTTPs is the likely use case for setting it to
-false.
-
-This attribute may only be set before the channel is opened.
-
-@throws NS_ERROR_IN_PROGRESS or NS_ERROR_ALREADY_OPENED
-        if called after the channel has been opened.
-
-
-## redirectionLimit ##
-
-This attribute specifies the number of redirects this channel is allowed
-to make.  If zero, the channel will fail to redirect and will generate
-a NS_ERROR_REDIRECT_LOOP failure status.
-
-NOTE: An HTTP redirect results in a new channel being created.  If the
-new channel supports nsIHttpChannel, then it will be assigned a value
-to its |redirectionLimit| attribute one less than the value of the
-redirected channel's |redirectionLimit| attribute.  The initial value
-for this attribute may be a configurable preference (depending on the
-implementation).
-
-
-## responseStatus ##
-**********************************************************************
-RESPONSE INFO
-
-Accessing response info before the onStartRequest event is an error.
-
-
-Get the HTTP response code (e.g., 200).
-
-@throws NS_ERROR_NOT_AVAILABLE if called before the response
-        has been received (before onStartRequest).
-
-
-## responseStatusText ##
-
-Get the HTTP response status text (e.g., "OK").
-
-NOTE: This returns the raw (possibly 8-bit) text from the server.  There
-are no assumptions made about the charset of the returned text.  You
-have been warned!
-
-@throws NS_ERROR_NOT_AVAILABLE if called before the response
-        has been received (before onStartRequest).
-
-
-## requestSucceeded ##
-
-Returns true if the HTTP response code indicates success.  The value of
-nsIRequest::status will be NS_OK even when processing a 404 response
-because a 404 response may include a message body that (in some cases)
-should be shown to the user.
-
-Use this attribute to distinguish server error pages from normal pages,
-instead of comparing the response status manually against the set of
-valid response codes, if that is required by your application.
-
-@throws NS_ERROR_NOT_AVAILABLE if called before the response
-        has been received (before onStartRequest).
-
-
-## getResponseHeader ##
+### getResponseHeader ###
 
 Get the value of a particular response header.
 
@@ -197,7 +78,7 @@ Get the value of a particular response header.
         not set in the response.
 
 
-## setResponseHeader ##
+### setResponseHeader ###
 
 Set the value of a particular response header.
 
@@ -226,7 +107,7 @@ If aValue is empty and aMerge is false, the header will be cleared.
         header is not allowed.
 
 
-## visitResponseHeaders ##
+### visitResponseHeaders ###
 
 Call this method to visit all response headers.  Calling
 setResponseHeader while visiting response headers has undefined
@@ -239,7 +120,7 @@ behavior.  Don't do it!
         has been received (before onStartRequest).
 
 
-## isNoStoreResponse ##
+### isNoStoreResponse ###
 
 Returns true if the server sent a "Cache-Control: no-store" response
 header.
@@ -248,7 +129,7 @@ header.
         has been received (before onStartRequest).
 
 
-## isNoCacheResponse ##
+### isNoCacheResponse ###
 
 Returns true if the server sent the equivalent of a "Cache-control:
 no-cache" response header.  Equivalent response headers include:
@@ -259,7 +140,7 @@ in the past relative to the value of the "Date" header.
         has been received (before onStartRequest).
 
 
-## redirectTo ##
+### redirectTo ###
 
 Instructs the channel to immediately redirect to a new destination.
 Can only be called on channels not yet opened.
@@ -269,4 +150,127 @@ caller to call it wins.
 
 @throws NS_ERROR_ALREADY_OPENED if called after the channel
         has been opened.
+
+
+## Attributes ##
+
+### requestMethod ###
+**********************************************************************
+REQUEST CONFIGURATION
+
+Modifying request parameters after asyncOpen has been called is an error.
+
+
+Set/get the HTTP request method (default is "GET").  Both setter and
+getter are case sensitive.
+
+This attribute may only be set before the channel is opened.
+
+NOTE: The data for a "POST" or "PUT" request can be configured via
+nsIUploadChannel; however, after setting the upload data, it may be
+necessary to set the request method explicitly.  The documentation
+for nsIUploadChannel has further details.
+
+@throws NS_ERROR_IN_PROGRESS if set after the channel has been opened.
+
+
+### referrer ###
+
+Get/set the HTTP referrer URI.  This is the address (URI) of the
+resource from which this channel's URI was obtained (see RFC2616 section
+14.36).
+
+This attribute may only be set before the channel is opened.
+
+NOTE: The channel may silently refuse to set the Referer header if the
+URI does not pass certain security checks (e.g., a "https://" URL will
+never be sent as the referrer for a plaintext HTTP request).  The
+implementation is not required to throw an exception when the referrer
+URI is rejected.
+
+@throws NS_ERROR_IN_PROGRESS if set after the channel has been opened.
+
+
+### allowPipelining ###
+
+This attribute is a hint to the channel to indicate whether or not
+the underlying HTTP transaction should be allowed to be pipelined
+with other transactions.  This should be set to FALSE, for example,
+if the application knows that the corresponding document is likely
+to be very large.
+
+This attribute is true by default, though other factors may prevent
+pipelining.
+
+This attribute may only be set before the channel is opened.
+
+@throws NS_ERROR_FAILURE if set after the channel has been opened.
+
+
+### allowSTS ###
+
+This attribute of the channel indicates whether or not
+the underlying HTTP transaction should be honor stored Strict Transport
+Security directives for its principal. It defaults to true. Using
+OCSP to bootstrap the HTTPs is the likely use case for setting it to
+false.
+
+This attribute may only be set before the channel is opened.
+
+@throws NS_ERROR_IN_PROGRESS or NS_ERROR_ALREADY_OPENED
+        if called after the channel has been opened.
+
+
+### redirectionLimit ###
+
+This attribute specifies the number of redirects this channel is allowed
+to make.  If zero, the channel will fail to redirect and will generate
+a NS_ERROR_REDIRECT_LOOP failure status.
+
+NOTE: An HTTP redirect results in a new channel being created.  If the
+new channel supports nsIHttpChannel, then it will be assigned a value
+to its |redirectionLimit| attribute one less than the value of the
+redirected channel's |redirectionLimit| attribute.  The initial value
+for this attribute may be a configurable preference (depending on the
+implementation).
+
+
+### responseStatus ###
+**********************************************************************
+RESPONSE INFO
+
+Accessing response info before the onStartRequest event is an error.
+
+
+Get the HTTP response code (e.g., 200).
+
+@throws NS_ERROR_NOT_AVAILABLE if called before the response
+        has been received (before onStartRequest).
+
+
+### responseStatusText ###
+
+Get the HTTP response status text (e.g., "OK").
+
+NOTE: This returns the raw (possibly 8-bit) text from the server.  There
+are no assumptions made about the charset of the returned text.  You
+have been warned!
+
+@throws NS_ERROR_NOT_AVAILABLE if called before the response
+        has been received (before onStartRequest).
+
+
+### requestSucceeded ###
+
+Returns true if the HTTP response code indicates success.  The value of
+nsIRequest::status will be NS_OK even when processing a 404 response
+because a 404 response may include a message body that (in some cases)
+should be shown to the user.
+
+Use this attribute to distinguish server error pages from normal pages,
+instead of comparing the response status manually against the set of
+valid response codes, if that is required by your application.
+
+@throws NS_ERROR_NOT_AVAILABLE if called before the response
+        has been received (before onStartRequest).
 

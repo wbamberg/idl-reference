@@ -14,28 +14,9 @@ background images as well as various utilities.
 @see nsIContextMenuInfo
 
 
-## CONTEXT_NONE ##
- Flag. No context. */
+## Methods ##
 
-## CONTEXT_LINK ##
- Flag. Context is a link element. */
-
-## CONTEXT_IMAGE ##
- Flag. Context is an image element. */
-
-## CONTEXT_DOCUMENT ##
- Flag. Context is the whole document. */
-
-## CONTEXT_TEXT ##
- Flag. Context is a text area element. */
-
-## CONTEXT_INPUT ##
- Flag. Context is an input element. */
-
-## CONTEXT_BACKGROUND_IMAGE ##
- Flag. Context is a background image. */
-
-## onShowContextMenu ##
+### onShowContextMenu ###
 
 Called when the browser receives a context menu event (e.g. user is right-mouse
 clicking somewhere on the document). The combination of flags, along with the
@@ -60,3 +41,26 @@ CONTEXT_BACKGROUND_IMAGE       <HTML> with background image
 
 @see nsIContextMenuInfo
 
+
+## Constants ##
+
+### CONTEXT_NONE ###
+ Flag. No context. */
+
+### CONTEXT_LINK ###
+ Flag. Context is a link element. */
+
+### CONTEXT_IMAGE ###
+ Flag. Context is an image element. */
+
+### CONTEXT_DOCUMENT ###
+ Flag. Context is the whole document. */
+
+### CONTEXT_TEXT ###
+ Flag. Context is a text area element. */
+
+### CONTEXT_INPUT ###
+ Flag. Context is an input element. */
+
+### CONTEXT_BACKGROUND_IMAGE ###
+ Flag. Context is a background image. */

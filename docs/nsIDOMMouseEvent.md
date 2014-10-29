@@ -11,52 +11,58 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Events/
 
 
-## screenX ##
+## Methods ##
 
-## screenY ##
+### initMouseEvent ###
 
-## mozMovementX ##
+### initNSMouseEvent ###
 
-## mozMovementY ##
+### getModifierState ###
 
-## clientX ##
+## Attributes ##
 
-## clientY ##
+### screenX ###
 
-## ctrlKey ##
+### screenY ###
 
-## shiftKey ##
+### mozMovementX ###
 
-## altKey ##
+### mozMovementY ###
 
-## metaKey ##
+### clientX ###
 
-## button ##
+### clientY ###
 
-## buttons ##
+### ctrlKey ###
 
-## relatedTarget ##
+### shiftKey ###
 
-## initMouseEvent ##
+### altKey ###
 
-## mozPressure ##
+### metaKey ###
 
-## MOZ_SOURCE_UNKNOWN ##
+### button ###
 
-## MOZ_SOURCE_MOUSE ##
+### buttons ###
 
-## MOZ_SOURCE_PEN ##
+### relatedTarget ###
 
-## MOZ_SOURCE_ERASER ##
+### mozPressure ###
 
-## MOZ_SOURCE_CURSOR ##
+### mozInputSource ###
 
-## MOZ_SOURCE_TOUCH ##
+## Constants ##
 
-## MOZ_SOURCE_KEYBOARD ##
+### MOZ_SOURCE_UNKNOWN ###
 
-## mozInputSource ##
+### MOZ_SOURCE_MOUSE ###
 
-## initNSMouseEvent ##
+### MOZ_SOURCE_PEN ###
 
-## getModifierState ##
+### MOZ_SOURCE_ERASER ###
+
+### MOZ_SOURCE_CURSOR ###
+
+### MOZ_SOURCE_TOUCH ###
+
+### MOZ_SOURCE_KEYBOARD ###

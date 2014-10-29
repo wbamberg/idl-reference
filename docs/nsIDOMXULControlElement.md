@@ -4,6 +4,8 @@ layout: default
 
 # nsIDOMXULControlElement #
 
-## disabled ##
+## Attributes ##
 
-## tabIndex ##
+### disabled ###
+
+### tabIndex ###

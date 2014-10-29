@@ -8,37 +8,16 @@ mozIStorageValueArray wraps an array of SQL values, such as a single database
 row.
 
 
-## VALUE_TYPE_NULL ##
+## Methods ##
 
-These type values are returned by getTypeOfIndex
-to indicate what type of value is present at
-a given column.
-
-
-## VALUE_TYPE_INTEGER ##
-
-## VALUE_TYPE_FLOAT ##
-
-## VALUE_TYPE_TEXT ##
-
-## VALUE_TYPE_BLOB ##
-
-## numEntries ##
-
-numEntries
-
-number of entries in the array (each corresponding to a column
-in the database row)
-
-
-## getTypeOfIndex ##
+### getTypeOfIndex ###
 
 Returns the type of the value at the given column index;
 one of VALUE_TYPE_NULL, VALUE_TYPE_INTEGER, VALUE_TYPE_FLOAT,
 VALUE_TYPE_TEXT, VALUE_TYPE_BLOB.
 
 
-## getInt32 ##
+### getInt32 ###
 
 Obtain a value for the given entry (column) index.
 Due to SQLite's type conversion rules, any of these are valid
@@ -52,23 +31,50 @@ string with IsVoid set to distinguish it from an explicitly set empty
 string.
 
 
-## getInt64 ##
+### getInt64 ###
 
-## getDouble ##
+### getDouble ###
 
-## getUTF8String ##
+### getUTF8String ###
 
-## getString ##
+### getString ###
 
-## getBlob ##
+### getBlob ###
 
-## getIsNull ##
+### getIsNull ###
 
-## getSharedUTF8String ##
+### getSharedUTF8String ###
 
 Returns a shared string pointer
 
 
-## getSharedString ##
+### getSharedString ###
 
-## getSharedBlob ##
+### getSharedBlob ###
+
+## Attributes ##
+
+### numEntries ###
+
+numEntries
+
+number of entries in the array (each corresponding to a column
+in the database row)
+
+
+## Constants ##
+
+### VALUE_TYPE_NULL ###
+
+These type values are returned by getTypeOfIndex
+to indicate what type of value is present at
+a given column.
+
+
+### VALUE_TYPE_INTEGER ###
+
+### VALUE_TYPE_FLOAT ###
+
+### VALUE_TYPE_TEXT ###
+
+### VALUE_TYPE_BLOB ###

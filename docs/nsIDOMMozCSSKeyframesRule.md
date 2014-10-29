@@ -4,12 +4,16 @@ layout: default
 
 # nsIDOMMozCSSKeyframesRule #
 
-## name ##
+## Methods ##
 
-## cssRules ##
+### appendRule ###
 
-## appendRule ##
+### deleteRule ###
 
-## deleteRule ##
+### findRule ###
 
-## findRule ##
+## Attributes ##
+
+### name ###
+
+### cssRules ###

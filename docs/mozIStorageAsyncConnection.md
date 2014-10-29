@@ -11,7 +11,9 @@ database from the main thread, including creating prepared
 statements, executing SQL, and examining database errors.
 
 
-## asyncClose ##
+## Methods ##
+
+### asyncClose ###
 
 Close this database connection, allowing all pending statements
 to complete first.
@@ -26,7 +28,7 @@ to complete first.
         If is called on a thread other than the one that opened it.
 
 
-## asyncClone ##
+### asyncClone ###
 
 Clone a database and make the clone read only if needed.
 
@@ -62,13 +64,7 @@ Clone a database and make the clone read only if needed.
        - wal_autocheckpoint
 
 
-## databaseFile ##
-
-The current database nsIFile.  Null if the database
-connection refers to an in-memory database.
-
-
-## createAsyncStatement ##
+### createAsyncStatement ###
 
 Create an asynchronous statement for the given SQL. An
 asynchronous statement can only be used to dispatch asynchronous
@@ -85,7 +81,7 @@ $var to indicate named arguments.
 @note The statement is created lazily on first execution.
 
 
-## executeAsync ##
+### executeAsync ###
 
 Execute an array of statements created with this connection using
 any currently bound parameters. When the array contains multiple
@@ -107,7 +103,7 @@ reset does not need to be called.
        re-entrant since they can be called on multiple threads.
 
 
-## executeSimpleSQLAsync ##
+### executeSimpleSQLAsync ###
 
 Execute asynchronously an SQL expression, expecting no arguments.
 
@@ -119,7 +115,7 @@ Execute asynchronously an SQL expression, expecting no arguments.
 @return an object that can be used to cancel the statement execution.
 
 
-## createFunction ##
+### createFunction ###
 
 Create a new SQL function.  If you use your connection on multiple threads,
 your function needs to be threadsafe, or it should only be called on one
@@ -135,7 +131,7 @@ thread.
        in question.
 
 
-## createAggregateFunction ##
+### createAggregateFunction ###
 
 Create a new SQL aggregate function.  If you use your connection on
 multiple threads, your function needs to be threadsafe, or it should only
@@ -151,7 +147,7 @@ be called on one thread.
        function in question.
 
 
-## removeFunction ##
+### removeFunction ###
 
 Delete custom SQL function (simple or aggregate one).
 
@@ -159,7 +155,7 @@ Delete custom SQL function (simple or aggregate one).
        The name of function to remove.
 
 
-## setProgressHandler ##
+### setProgressHandler ###
 
 Sets a progress handler. Only one handler can be registered at a time.
 If you need more than one, you need to chain them yourself.  This progress
@@ -174,9 +170,17 @@ one thread.
 @return previous registered handler.
 
 
-## removeProgressHandler ##
+### removeProgressHandler ###
 
 Remove a progress handler.
 
 @return previous registered handler.
+
+
+## Attributes ##
+
+### databaseFile ###
+
+The current database nsIFile.  Null if the database
+connection refers to an in-memory database.
 

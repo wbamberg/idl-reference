@@ -4,4 +4,6 @@ layout: default
 
 # NetDashboardCallback #
 
-## onDashboardDataAvailable ##
+## Methods ##
+
+### onDashboardDataAvailable ###

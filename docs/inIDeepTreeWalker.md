@@ -4,32 +4,36 @@ layout: default
 
 # inIDeepTreeWalker #
 
-## showAnonymousContent ##
+## Methods ##
 
-## showSubDocuments ##
+### init ###
 
-## showDocumentsAsNodes ##
+### parentNode ###
 
-## init ##
+### firstChild ###
 
-## root ##
+### lastChild ###
 
-## whatToShow ##
+### previousSibling ###
 
-## filter ##
+### nextSibling ###
 
-## currentNode ##
+### previousNode ###
 
-## parentNode ##
+### nextNode ###
 
-## firstChild ##
+## Attributes ##
 
-## lastChild ##
+### showAnonymousContent ###
 
-## previousSibling ##
+### showSubDocuments ###
 
-## nextSibling ##
+### showDocumentsAsNodes ###
 
-## previousNode ##
+### root ###
 
-## nextNode ##
+### whatToShow ###
+
+### filter ###
+
+### currentNode ###

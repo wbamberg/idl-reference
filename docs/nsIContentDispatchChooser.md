@@ -8,13 +8,9 @@ This is used to ask a user what they would like to do with a given piece of
 content.
 
 
-## REASON_CANNOT_HANDLE ##
+## Methods ##
 
-This request is passed to the helper app dialog because Gecko can not
-handle content of this type.
-
-
-## ask ##
+### ask ###
 
 Asks the user what to do with the content.
 
@@ -30,4 +26,12 @@ Asks the user what to do with the content.
        The URI of the resource that we are asking about.
 @param aReason
        The reason why we are asking (see above).
+
+
+## Constants ##
+
+### REASON_CANNOT_HANDLE ###
+
+This request is passed to the helper app dialog because Gecko can not
+handle content of this type.
 

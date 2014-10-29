@@ -7,7 +7,9 @@ layout: default
 This interface provides notification of syntax-level events.
 
 
-## handleStartDTD ##
+## Methods ##
+
+### handleStartDTD ###
 
 Called at the beginning of the DTD, before any entity or notation
 events.
@@ -18,7 +20,7 @@ events.
               or null if none was declared.
 
 
-## handleStartNamespaceDecl ##
+### handleStartNamespaceDecl ###
 
 Called when a prefix mapping starts to be in-scope, before any
 startElement events.
@@ -28,7 +30,7 @@ startElement events.
 @param aUri The Namespace URI the prefix is mapped to.
 
 
-## handleEndNamespaceDecl ##
+### handleEndNamespaceDecl ###
 
 Called when a prefix mapping is no longer in-scope, after any
 endElement events.
@@ -36,7 +38,7 @@ endElement events.
                when a default mapping scope ends.
 
 
-## handleNotationDecl ##
+### handleNotationDecl ###
 
 This is called for a declaration of notation.  The base argument is
 whatever was set by XML_SetBase. aNotationName will never be
@@ -46,7 +48,7 @@ null. The other arguments can be.
 @param aPubId The notation's pubilc identifier, or null if none was given.
 
 
-## handleUnparsedEntityDecl ##
+### handleUnparsedEntityDecl ###
 
 This is called for a declaration of an unparsed (NDATA) entity.
 aName, aSysid and aNotationName arguments will never be

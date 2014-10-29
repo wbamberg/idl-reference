@@ -7,6 +7,10 @@ layout: default
 Scriptable storage for doubles
 
 
-## data ##
+## Methods ##
 
-## toString ##
+### toString ###
+
+## Attributes ##
+
+### data ###

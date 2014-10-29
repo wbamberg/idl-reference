@@ -4,7 +4,9 @@ layout: default
 
 # nsIAlertsService #
 
-## showAlertNotification ##
+## Methods ##
+
+### showAlertNotification ###
 
 Displays a sliding notification window.
 
@@ -46,7 +48,7 @@ method:
       "alertfinished" notification immediately.
 
 
-## closeAlert ##
+### closeAlert ###
 
 Close alerts created by the service.
 

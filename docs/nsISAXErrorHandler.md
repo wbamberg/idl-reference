@@ -18,7 +18,9 @@ be registered.
 
 
 
-## error ##
+## Methods ##
+
+### error ###
 
 Receive notification of a recoverable error.
 
@@ -42,7 +44,7 @@ well.
 @param error The error message.
 
 
-## fatalError ##
+### fatalError ###
 
 Receive notification of a non-recoverable error.
 
@@ -68,7 +70,7 @@ other events once this method has been invoked.
 @param error The error message.
 
 
-## ignorableWarning ##
+### ignorableWarning ###
 
 Receive notification of a warning.
 

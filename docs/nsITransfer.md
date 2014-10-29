@@ -4,7 +4,9 @@ layout: default
 
 # nsITransfer #
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initializes the transfer with certain properties.  This function must
 be called prior to accessing any properties on this interface.
@@ -42,8 +44,8 @@ be called prior to accessing any properties on this interface.
                   a source that desires privacy.
 
 
-## setSha256Hash ##
+### setSha256Hash ###
 
-## setSignatureInfo ##
+### setSignatureInfo ###
 
-## setRedirects ##
+### setRedirects ###

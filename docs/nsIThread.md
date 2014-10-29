@@ -13,13 +13,9 @@ can receive nsIRunnable objects (events) to be processed on the thread.
 See nsIThreadManager for the API used to create and locate threads.
 
 
-## PRThread ##
+## Methods ##
 
-@returns
-  The NSPR thread object corresponding to this nsIThread.
-
-
-## shutdown ##
+### shutdown ###
 
 Shutdown the thread.  This method prevents further dispatch of events to
 the thread, and it causes any pending events to run to completion before
@@ -39,7 +35,7 @@ events to the thread.
   on the thread object.
 
 
-## hasPendingEvents ##
+### hasPendingEvents ###
 
 This method may be called to determine if there are any events ready to be
 processed.  It may only be called when this thread is the current thread.
@@ -57,7 +53,7 @@ means that there were no pending events when this method was called.
   not the current thread.
 
 
-## processNextEvent ##
+### processNextEvent ###
 
 Process the next event.  If there are no pending events, then this method
 may wait -- depending on the value of the mayWait parameter -- until an
@@ -74,4 +70,12 @@ only be called if this thread is the current thread.
 @throws NS_ERROR_UNEXPECTED
   Indicates that this method was erroneously called when this thread was
   not the current thread.
+
+
+## Attributes ##
+
+### PRThread ###
+
+@returns
+  The NSPR thread object corresponding to this nsIThread.
 

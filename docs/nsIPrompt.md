@@ -4,54 +4,58 @@ layout: default
 
 # nsIPrompt #
 
-## alert ##
+## Methods ##
 
-## alertCheck ##
+### alert ###
 
-## confirm ##
+### alertCheck ###
 
-## confirmCheck ##
+### confirm ###
 
-## BUTTON_POS_0 ##
+### confirmCheck ###
 
-## BUTTON_POS_1 ##
+### confirmEx ###
 
-## BUTTON_POS_2 ##
+### prompt ###
 
-## BUTTON_TITLE_OK ##
+### promptPassword ###
 
-## BUTTON_TITLE_CANCEL ##
+### promptUsernameAndPassword ###
 
-## BUTTON_TITLE_YES ##
+### select ###
 
-## BUTTON_TITLE_NO ##
+## Constants ##
 
-## BUTTON_TITLE_SAVE ##
+### BUTTON_POS_0 ###
 
-## BUTTON_TITLE_DONT_SAVE ##
+### BUTTON_POS_1 ###
 
-## BUTTON_TITLE_REVERT ##
+### BUTTON_POS_2 ###
 
-## BUTTON_TITLE_IS_STRING ##
+### BUTTON_TITLE_OK ###
 
-## BUTTON_POS_0_DEFAULT ##
+### BUTTON_TITLE_CANCEL ###
 
-## BUTTON_POS_1_DEFAULT ##
+### BUTTON_TITLE_YES ###
 
-## BUTTON_POS_2_DEFAULT ##
+### BUTTON_TITLE_NO ###
 
-## BUTTON_DELAY_ENABLE ##
+### BUTTON_TITLE_SAVE ###
 
-## STD_OK_CANCEL_BUTTONS ##
+### BUTTON_TITLE_DONT_SAVE ###
 
-## STD_YES_NO_BUTTONS ##
+### BUTTON_TITLE_REVERT ###
 
-## confirmEx ##
+### BUTTON_TITLE_IS_STRING ###
 
-## prompt ##
+### BUTTON_POS_0_DEFAULT ###
 
-## promptPassword ##
+### BUTTON_POS_1_DEFAULT ###
 
-## promptUsernameAndPassword ##
+### BUTTON_POS_2_DEFAULT ###
 
-## select ##
+### BUTTON_DELAY_ENABLE ###
+
+### STD_OK_CANCEL_BUTTONS ###
+
+### STD_YES_NO_BUTTONS ###

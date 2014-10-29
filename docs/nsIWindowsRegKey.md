@@ -11,91 +11,15 @@ interface represents a single key in the registry.
 This interface is highly Win32 specific.
 
 
-## ROOT_KEY_CLASSES_ROOT ##
+## Methods ##
 
-Root keys.  The values for these keys correspond to the values from
-WinReg.h in the MS Platform SDK.  The ROOT_KEY_ prefix corresponds to the
-HKEY_ prefix in the MS Platform SDK.
-
-This interface is not restricted to using only these root keys.
-
-
-## ROOT_KEY_CURRENT_USER ##
-
-## ROOT_KEY_LOCAL_MACHINE ##
-
-## ACCESS_BASIC ##
-
-Values for the mode parameter passed to the open and create methods.
-The values defined here correspond to the REGSAM values defined in
-WinNT.h in the MS Platform SDK, where ACCESS_ is replaced with KEY_.
-
-This interface is not restricted to using only these access types.
-
-
-## ACCESS_QUERY_VALUE ##
-
-## ACCESS_SET_VALUE ##
-
-## ACCESS_CREATE_SUB_KEY ##
-
-## ACCESS_ENUMERATE_SUB_KEYS ##
-
-## ACCESS_NOTIFY ##
-
-## ACCESS_READ ##
-
-## ACCESS_WRITE ##
-
-## ACCESS_ALL ##
-
-## WOW64_32 ##
-
-## WOW64_64 ##
-
-## TYPE_NONE ##
-
-Values for the type of a registry value.  The numeric values of these
-constants are taken directly from WinNT.h in the MS Platform SDK.
-The Microsoft documentation should be consulted for the exact meaning of
-these value types.
-
-This interface is somewhat restricted to using only these value types.
-There is no method that is directly equivalent to RegQueryValueEx or
-RegSetValueEx.  In particular, this interface does not support the
-REG_MULTI_SZ and REG_EXPAND_SZ value types.  It is still possible to
-enumerate values that have other types (i.e., getValueType may return a
-type not defined below).
-
-
-## TYPE_STRING ##
-
-## TYPE_BINARY ##
-
-## TYPE_INT ##
-
-## TYPE_INT64 ##
-
-## key ##
-
-This attribute exposes the native HKEY and is available to provide C++
-consumers with the flexibility of making other Windows registry API calls
-that are not exposed via this interface.
-
-It is possible to initialize this object by setting an HKEY on it.  In
-that case, it is the responsibility of the consumer setting the HKEY to
-ensure that it is a valid HKEY.
-
-WARNING: Setting the key does not close the old key.
-
-
-## close ##
+### close ###
 
 This method closes the key.  If the key is already closed, then this
 method does nothing.
 
 
-## open ##
+### open ###
 
 This method opens an existing key.  This method fails if the key
 does not exist.
@@ -113,7 +37,7 @@ Windows, that usage should probably be avoided in favor of openChild.
        above.
 
 
-## create ##
+### create ###
 
 This method opens an existing key or creates a new key.
 
@@ -130,7 +54,7 @@ Windows, that usage should probably be avoided in favor of createChild.
        above.
 
 
-## openChild ##
+### openChild ###
 
 This method opens a subkey relative to this key.  This method fails if the
 key does not exist.
@@ -138,19 +62,14 @@ key does not exist.
 @return nsIWindowsRegKey for the newly opened subkey.
 
 
-## createChild ##
+### createChild ###
 
 This method opens or creates a subkey relative to this key.
 
 @return nsIWindowsRegKey for the newly opened or created subkey.
 
 
-## childCount ##
-
-This attribute returns the number of child keys.
-
-
-## getChildName ##
+### getChildName ###
 
 This method returns the name of the n'th child key.
 
@@ -158,7 +77,7 @@ This method returns the name of the n'th child key.
        The index of the requested child key.
 
 
-## hasChild ##
+### hasChild ###
 
 This method checks to see if the key has a child by the given name.
 
@@ -166,12 +85,7 @@ This method checks to see if the key has a child by the given name.
        The name of the requested child key.
 
 
-## valueCount ##
-
-This attribute returns the number of values under this key.
-
-
-## getValueName ##
+### getValueName ###
 
 This method returns the name of the n'th value under this key.
 
@@ -179,7 +93,7 @@ This method returns the name of the n'th value under this key.
        The index of the requested value.
 
 
-## hasValue ##
+### hasValue ###
 
 This method checks to see if the key has a value by the given name.
 
@@ -187,7 +101,7 @@ This method checks to see if the key has a value by the given name.
        The name of the requested value.
 
 
-## removeChild ##
+### removeChild ###
 
 This method removes a child key and all of its values.  This method will
 fail if the key has any children of its own. 
@@ -196,7 +110,7 @@ fail if the key has any children of its own.
        The relative path from this key to the key to be removed.
 
 
-## removeValue ##
+### removeValue ###
 
 This method removes the value with the given name.
 
@@ -204,7 +118,7 @@ This method removes the value with the given name.
        The name of the value to be removed.
 
 
-## getValueType ##
+### getValueType ###
 
 This method returns the type of the value with the given name.  The return
 value is one of the "TYPE_" constants defined above.
@@ -213,7 +127,7 @@ value is one of the "TYPE_" constants defined above.
        The name of the value to query.
 
 
-## readStringValue ##
+### readStringValue ###
 
 This method reads the string contents of the named value as a Unicode
 string.
@@ -223,7 +137,7 @@ string.
        string to request the key's default value.
 
 
-## readIntValue ##
+### readIntValue ###
 
 This method reads the integer contents of the named value.
 
@@ -231,7 +145,7 @@ This method reads the integer contents of the named value.
        The name of the value to query.
 
 
-## readInt64Value ##
+### readInt64Value ###
 
 This method reads the 64-bit integer contents of the named value.
 
@@ -239,7 +153,7 @@ This method reads the 64-bit integer contents of the named value.
        The name of the value to query.
 
 
-## readBinaryValue ##
+### readBinaryValue ###
 
 This method reads the binary contents of the named value under this key.
 
@@ -251,7 +165,7 @@ treated as an ISO-Latin-1 character string, which it is not).
        The name of the value to query.
 
 
-## writeStringValue ##
+### writeStringValue ###
 
 This method writes the unicode string contents of the named value.  The
 value will be created if it does not already exist.
@@ -263,7 +177,7 @@ value will be created if it does not already exist.
        The data for the value to modify.
 
 
-## writeIntValue ##
+### writeIntValue ###
 
 This method writes the integer contents of the named value.  The value
 will be created if it does not already exist.
@@ -274,7 +188,7 @@ will be created if it does not already exist.
        The data for the value to modify.
 
 
-## writeInt64Value ##
+### writeInt64Value ###
 
 This method writes the 64-bit integer contents of the named value.  The
 value will be created if it does not already exist.
@@ -285,7 +199,7 @@ value will be created if it does not already exist.
        The data for the value to modify.
 
 
-## writeBinaryValue ##
+### writeBinaryValue ###
 
 This method writes the binary contents of the named value.  The value will
 be created if it does not already exist.
@@ -303,7 +217,7 @@ occur.
        The data for the value to modify.
 
 
-## startWatching ##
+### startWatching ###
 
 This method starts watching the key to see if any of its values have
 changed.  The key must have been opened with mode including ACCESS_NOTIFY.
@@ -314,20 +228,112 @@ watched.  Otherwise, only this key is watched.
        Indicates whether or not to also watch child keys.
 
 
-## stopWatching ##
+### stopWatching ###
 
 This method stops any watching of the key initiated by a call to
 startWatching.  This method does nothing if the key is not being watched.
 
 
-## isWatching ##
+### isWatching ###
 
 This method returns true if the key is being watched for changes (i.e.,
 if startWatching() was called).
 
 
-## hasChanged ##
+### hasChanged ###
 
 This method returns true if the key has changed and false otherwise.
 This method will always return false if startWatching was not called.
 
+
+## Attributes ##
+
+### key ###
+
+This attribute exposes the native HKEY and is available to provide C++
+consumers with the flexibility of making other Windows registry API calls
+that are not exposed via this interface.
+
+It is possible to initialize this object by setting an HKEY on it.  In
+that case, it is the responsibility of the consumer setting the HKEY to
+ensure that it is a valid HKEY.
+
+WARNING: Setting the key does not close the old key.
+
+
+### childCount ###
+
+This attribute returns the number of child keys.
+
+
+### valueCount ###
+
+This attribute returns the number of values under this key.
+
+
+## Constants ##
+
+### ROOT_KEY_CLASSES_ROOT ###
+
+Root keys.  The values for these keys correspond to the values from
+WinReg.h in the MS Platform SDK.  The ROOT_KEY_ prefix corresponds to the
+HKEY_ prefix in the MS Platform SDK.
+
+This interface is not restricted to using only these root keys.
+
+
+### ROOT_KEY_CURRENT_USER ###
+
+### ROOT_KEY_LOCAL_MACHINE ###
+
+### ACCESS_BASIC ###
+
+Values for the mode parameter passed to the open and create methods.
+The values defined here correspond to the REGSAM values defined in
+WinNT.h in the MS Platform SDK, where ACCESS_ is replaced with KEY_.
+
+This interface is not restricted to using only these access types.
+
+
+### ACCESS_QUERY_VALUE ###
+
+### ACCESS_SET_VALUE ###
+
+### ACCESS_CREATE_SUB_KEY ###
+
+### ACCESS_ENUMERATE_SUB_KEYS ###
+
+### ACCESS_NOTIFY ###
+
+### ACCESS_READ ###
+
+### ACCESS_WRITE ###
+
+### ACCESS_ALL ###
+
+### WOW64_32 ###
+
+### WOW64_64 ###
+
+### TYPE_NONE ###
+
+Values for the type of a registry value.  The numeric values of these
+constants are taken directly from WinNT.h in the MS Platform SDK.
+The Microsoft documentation should be consulted for the exact meaning of
+these value types.
+
+This interface is somewhat restricted to using only these value types.
+There is no method that is directly equivalent to RegQueryValueEx or
+RegSetValueEx.  In particular, this interface does not support the
+REG_MULTI_SZ and REG_EXPAND_SZ value types.  It is still possible to
+enumerate values that have other types (i.e., getValueType may return a
+type not defined below).
+
+
+### TYPE_STRING ###
+
+### TYPE_BINARY ###
+
+### TYPE_INT ###
+
+### TYPE_INT64 ###

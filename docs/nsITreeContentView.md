@@ -4,12 +4,14 @@ layout: default
 
 # nsITreeContentView #
 
-## getItemAtIndex ##
+## Methods ##
+
+### getItemAtIndex ###
 
 Retrieve the content item associated with the specified index.
 
 
-## getIndexOfItem ##
+### getIndexOfItem ###
 
 Retrieve the index associated with the specified content item.
 

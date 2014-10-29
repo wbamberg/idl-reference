@@ -4,16 +4,18 @@ layout: default
 
 # nsIUrlClassifierPrefixSet #
 
-## init ##
+## Methods ##
 
-## setPrefixes ##
+### init ###
 
-## getPrefixes ##
+### setPrefixes ###
 
-## contains ##
+### getPrefixes ###
 
-## isEmpty ##
+### contains ###
 
-## loadFromFile ##
+### isEmpty ###
 
-## storeToFile ##
+### loadFromFile ###
+
+### storeToFile ###

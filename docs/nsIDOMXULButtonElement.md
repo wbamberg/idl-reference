@@ -4,22 +4,26 @@ layout: default
 
 # nsIDOMXULButtonElement #
 
-## CHECKSTATE_UNCHECKED ##
+## Attributes ##
 
-## CHECKSTATE_CHECKED ##
+### type ###
 
-## CHECKSTATE_MIXED ##
+### dlgType ###
 
-## type ##
+### open ###
 
-## dlgType ##
+### checked ###
 
-## open ##
+### checkState ###
 
-## checked ##
+### autoCheck ###
 
-## checkState ##
+### group ###
 
-## autoCheck ##
+## Constants ##
 
-## group ##
+### CHECKSTATE_UNCHECKED ###
+
+### CHECKSTATE_CHECKED ###
+
+### CHECKSTATE_MIXED ###

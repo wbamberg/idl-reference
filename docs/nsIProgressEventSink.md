@@ -23,7 +23,9 @@ NOTE: This interface is actually not specific to channels and may be used
 with other implementations of nsIRequest.
 
 
-## onProgress ##
+## Methods ##
+
+### onProgress ###
 
 Called to notify the event sink that progress has occurred for the
 given request.
@@ -41,7 +43,7 @@ given request.
        transfered (or 0xFFFFFFFFFFFFFFFF if total is unknown).
 
 
-## onStatus ##
+### onStatus ###
 
 Called to notify the event sink with a status message for the given
 request.

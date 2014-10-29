@@ -4,6 +4,8 @@ layout: default
 
 # nsIDOMCSSStyleRule #
 
-## selectorText ##
+## Attributes ##
 
-## style ##
+### selectorText ###
+
+### style ###

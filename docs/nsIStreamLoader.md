@@ -15,7 +15,9 @@ callback.
 XXX define behaviour for sizes >4 GB
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize this stream loader, and start loading the data.
 
@@ -23,12 +25,14 @@ Initialize this stream loader, and start loading the data.
        An observer that will be notified when the data is complete.
 
 
-## numBytesRead ##
+## Attributes ##
+
+### numBytesRead ###
 
 Gets the number of bytes read so far.
 
 
-## request ##
+### request ###
 
 Gets the request that loaded this file.
 null after the request has finished loading.

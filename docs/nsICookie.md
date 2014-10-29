@@ -4,37 +4,39 @@ layout: default
 
 # nsICookie #
 
-## name ##
+## Attributes ##
+
+### name ###
 
 the name of the cookie
 
 
-## value ##
+### value ###
 
 the cookie value
 
 
-## isDomain ##
+### isDomain ###
 
 true if the cookie is a domain cookie, false otherwise
 
 
-## host ##
+### host ###
 
 the host (possibly fully qualified) of the cookie
 
 
-## path ##
+### path ###
 
 the path pertaining to the cookie
 
 
-## isSecure ##
+### isSecure ###
 
 true if the cookie was transmitted over ssl, false otherwise
 
 
-## expires ##
+### expires ###
 
 @DEPRECATED use nsICookie2.expiry and nsICookie2.isSession instead.
 
@@ -43,34 +45,36 @@ expires = 0 represents a session cookie.
 expires = 1 represents an expiration time earlier than Jan 1, 1970.
 
 
-## STATUS_UNKNOWN ##
+### status ###
+
+### policy ###
+
+## Constants ##
+
+### STATUS_UNKNOWN ###
 
 @DEPRECATED status implementation will return STATUS_UNKNOWN in all cases.
 
 
-## STATUS_ACCEPTED ##
+### STATUS_ACCEPTED ###
 
-## STATUS_DOWNGRADED ##
+### STATUS_DOWNGRADED ###
 
-## STATUS_FLAGGED ##
+### STATUS_FLAGGED ###
 
-## STATUS_REJECTED ##
+### STATUS_REJECTED ###
 
-## status ##
-
-## POLICY_UNKNOWN ##
+### POLICY_UNKNOWN ###
 
 @DEPRECATED policy implementation will return POLICY_UNKNOWN in all cases.
 
 
-## POLICY_NONE ##
+### POLICY_NONE ###
 
-## POLICY_NO_CONSENT ##
+### POLICY_NO_CONSENT ###
 
-## POLICY_IMPLICIT_CONSENT ##
+### POLICY_IMPLICIT_CONSENT ###
 
-## POLICY_EXPLICIT_CONSENT ##
+### POLICY_EXPLICIT_CONSENT ###
 
-## POLICY_NO_II ##
-
-## policy ##
+### POLICY_NO_II ###

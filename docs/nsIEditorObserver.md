@@ -11,18 +11,20 @@ when the editor has completed a user action.
 
 
 
-## EditAction ##
+## Methods ##
+
+### EditAction ###
  
 Called after the editor completes a user action.
 
 
-## BeforeEditAction ##
+### BeforeEditAction ###
 
 Called when editor starts to handle a user action.  I.e., This must be
 called before the first DOM change.
 
 
-## CancelEditAction ##
+### CancelEditAction ###
 
 Called after BeforeEditAction() is called but EditorAction() won't be
 called.

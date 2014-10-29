@@ -4,7 +4,9 @@ layout: default
 
 # nsIWifiOperationModeCallback #
 
-## wifiOperationModeResult ##
+## Methods ##
+
+### wifiOperationModeResult ###
 
 Callback function used to report result to WifiManager.
 

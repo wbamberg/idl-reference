@@ -4,7 +4,9 @@ layout: default
 
 # nsICrashService #
 
-## addCrash ##
+## Methods ##
+
+### addCrash ###
 
 Records the occurrence of a crash.
 
@@ -16,14 +18,16 @@ Records the occurrence of a crash.
        Crash ID. Likely a UUID.
 
 
-## PROCESS_TYPE_MAIN ##
+## Constants ##
 
-## PROCESS_TYPE_CONTENT ##
+### PROCESS_TYPE_MAIN ###
 
-## PROCESS_TYPE_PLUGIN ##
+### PROCESS_TYPE_CONTENT ###
 
-## PROCESS_TYPE_GMPLUGIN ##
+### PROCESS_TYPE_PLUGIN ###
 
-## CRASH_TYPE_CRASH ##
+### PROCESS_TYPE_GMPLUGIN ###
 
-## CRASH_TYPE_HANG ##
+### CRASH_TYPE_CRASH ###
+
+### CRASH_TYPE_HANG ###

@@ -12,43 +12,9 @@ however, except for their being removed when the corresponding server stops
 they have no special importance.
 
 
-## primaryScheme ##
+## Methods ##
 
-The primary scheme at which the corresponding server is located, defaulting
-to 'http'.  This name will be the value of nsIHttpRequest.scheme for
-HTTP/1.0 requests.
-
-This value is always set when the corresponding server is running.  If the
-server is not running, this value is set only if it has been set to a
-non-default name using setPrimary.  In this case reading this value will
-throw NS_ERROR_NOT_INITIALIZED.
-
-
-## primaryHost ##
-
-The primary name by which the corresponding server is known, defaulting to
-'localhost'.  This name will be the value of nsIHttpRequest.host for
-HTTP/1.0 requests.
-
-This value is always set when the corresponding server is running.  If the
-server is not running, this value is set only if it has been set to a
-non-default name using setPrimary.  In this case reading this value will
-throw NS_ERROR_NOT_INITIALIZED.
-
-
-## primaryPort ##
-
-The primary port on which the corresponding server runs, defaulting to the
-associated server's port.  This name will be the value of
-nsIHttpRequest.port for HTTP/1.0 requests.
-
-This value is always set when the corresponding server is running.  If the
-server is not running, this value is set only if it has been set to a
-non-default name using setPrimary.  In this case reading this value will
-throw NS_ERROR_NOT_INITIALIZED.
-
-
-## add ##
+### add ###
 
 Adds a location at which this server may be accessed.
 
@@ -57,7 +23,7 @@ Adds a location at which this server may be accessed.
   into RFC 2616 from RFC 2396, or if port is not a valid port number
 
 
-## remove ##
+### remove ###
 
 Removes this name from the list of names by which the corresponding server
 is known.  If name is also the primary name for the server, the primary
@@ -70,7 +36,7 @@ name reverts to 'http://127.0.0.1' with the associated server's port.
   true if the given name was a name for this server, false otherwise
 
 
-## has ##
+### has ###
 
 Returns true if the given name is in this, false otherwise.
 
@@ -79,7 +45,7 @@ Returns true if the given name is in this, false otherwise.
   into RFC 2616 from RFC 2396, or if port is not a valid port number
 
 
-## getScheme ##
+### getScheme ###
 
 Returns the scheme for the name with the given host and port, if one is
 present; otherwise returns the empty string.
@@ -89,7 +55,7 @@ present; otherwise returns the empty string.
   RFC 2396, or if port is not a valid port number
 
 
-## setPrimary ##
+### setPrimary ###
 
 Designates the given name as the primary name in this and adds it to this
 if it is not already present.
@@ -97,4 +63,42 @@ if it is not already present.
 @throws NS_ERROR_ILLEGAL_VALUE
   if scheme or host do not match the scheme or host productions imported
   into RFC 2616 from RFC 2396, or if port is not a valid port number
+
+
+## Attributes ##
+
+### primaryScheme ###
+
+The primary scheme at which the corresponding server is located, defaulting
+to 'http'.  This name will be the value of nsIHttpRequest.scheme for
+HTTP/1.0 requests.
+
+This value is always set when the corresponding server is running.  If the
+server is not running, this value is set only if it has been set to a
+non-default name using setPrimary.  In this case reading this value will
+throw NS_ERROR_NOT_INITIALIZED.
+
+
+### primaryHost ###
+
+The primary name by which the corresponding server is known, defaulting to
+'localhost'.  This name will be the value of nsIHttpRequest.host for
+HTTP/1.0 requests.
+
+This value is always set when the corresponding server is running.  If the
+server is not running, this value is set only if it has been set to a
+non-default name using setPrimary.  In this case reading this value will
+throw NS_ERROR_NOT_INITIALIZED.
+
+
+### primaryPort ###
+
+The primary port on which the corresponding server runs, defaulting to the
+associated server's port.  This name will be the value of
+nsIHttpRequest.port for HTTP/1.0 requests.
+
+This value is always set when the corresponding server is running.  If the
+server is not running, this value is set only if it has been set to a
+non-default name using setPrimary.  In this case reading this value will
+throw NS_ERROR_NOT_INITIALIZED.
 

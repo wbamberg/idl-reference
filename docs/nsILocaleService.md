@@ -8,7 +8,9 @@ The Locale service interface. This is a singleton object, and should be
 obtained from the <tt>nsServiceManager</tt>.
 
 
-## newLocale ##
+## Methods ##
+
+### newLocale ###
 
 Create a new nsILocale from a locale string.
 
@@ -17,14 +19,14 @@ Create a new nsILocale from a locale string.
 @return A nsILocale representing the given locale.
 
 
-## getSystemLocale ##
+### getSystemLocale ###
 
 Get the user preference for locale from the operating system.
 
 @return User's OS setting for preferred locale.
 
 
-## getApplicationLocale ##
+### getApplicationLocale ###
 
 Get the user preference for locale from the operating system.
 
@@ -35,7 +37,7 @@ similar to getSystemLocale.
 @return User's OS setting for preferred locale.
 
 
-## getLocaleFromAcceptLanguage ##
+### getLocaleFromAcceptLanguage ###
 
 Get the most preferred locale from a list of locale preferences.
 
@@ -46,7 +48,7 @@ Get the most preferred locale from a list of locale preferences.
         parameter.
 
 
-## getLocaleComponentForUserAgent ##
+### getLocaleComponentForUserAgent ###
 
 Get the user preference for locale from the operating system.
 

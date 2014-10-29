@@ -8,32 +8,36 @@ We expose Gecko-internal helpers related to "web apps" through this
 sub-interface.
 
 
-## hasPermission ##
+## Methods ##
 
-## hasWidgetPage ##
+### hasPermission ###
+
+### hasWidgetPage ###
 
  Return true if this app can be a widget and
  its |widgetPages| contains |page|
 
 
-## appStatus ##
+## Attributes ##
 
-## id ##
+### appStatus ###
 
-## origin ##
+### id ###
 
-## manifestURL ##
+### origin ###
 
-## localId ##
+### manifestURL ###
 
-## basePath ##
+### localId ###
 
-## name ##
+### basePath ###
 
-## csp ##
+### name ###
 
-## storeID ##
+### csp ###
 
-## storeVersion ##
+### storeID ###
 
-## role ##
+### storeVersion ###
+
+### role ###

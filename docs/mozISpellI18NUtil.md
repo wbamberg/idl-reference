@@ -7,28 +7,34 @@ layout: default
 This interface contains various I18N related code used in various places by the spell checker.
 
 
-## kCheck ##
+## Methods ##
 
-## kSuggest ##
-
-## language ##
-
-The language being used to check spelling
-
-
-## getRootForm ##
+### getRootForm ###
 
 Given a word return a list of possible root forms of that word
 
 
-## fromRootForm ##
+### fromRootForm ###
 
 Given a word return a list of possible root forms of that word
 
 
-## findNextWord ##
+### findNextWord ###
 
 Given a unicode string and an offset, find the beginning and end of the
 next word. begin and end are -1 if there are no words remaining in the 
 string. This should really be folded into the Line/WordBreaker.
 
+
+## Attributes ##
+
+### language ###
+
+The language being used to check spelling
+
+
+## Constants ##
+
+### kCheck ###
+
+### kSuggest ###

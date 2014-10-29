@@ -4,87 +4,93 @@ layout: default
 
 # nsIAutoCompleteResult #
 
-## RESULT_IGNORED ##
+## Methods ##
 
-Possible values for the searchResult attribute
+### getValueAt ###
+
+Get the value of the result at the given index
 
 
-## RESULT_FAILURE ##
+### getLabelAt ###
 
-## RESULT_NOMATCH ##
+This returns the string that is displayed in the dropdown
 
-## RESULT_SUCCESS ##
 
-## RESULT_NOMATCH_ONGOING ##
+### getCommentAt ###
 
-## RESULT_SUCCESS_ONGOING ##
+Get the comment of the result at the given index
 
-## searchString ##
+
+### getStyleAt ###
+
+Get the style hint for the result at the given index
+
+
+### getImageAt ###
+
+Get the image of the result at the given index
+
+
+### getFinalCompleteValueAt ###
+
+Get the final value that should be completed when the user confirms
+the match at the given index.
+
+
+### removeValueAt ###
+
+Remove the value at the given index from the autocomplete results.
+If removeFromDb is set to true, the value should be removed from
+persistent storage as well.
+
+
+## Attributes ##
+
+### searchString ###
 
 The original search string
 
 
-## searchResult ##
+### searchResult ###
 
 The result of the search
 
 
-## defaultIndex ##
+### defaultIndex ###
 
 Index of the default item that should be entered if none is selected
 
 
-## errorDescription ##
+### errorDescription ###
 
 A string describing the cause of a search failure
 
 
-## matchCount ##
+### matchCount ###
 
 The number of matches
 
 
-## typeAheadResult ##
+### typeAheadResult ###
 
 If true, the results will not be displayed in the popup. However,
 if a default index is specified, the default item will still be
 completed in the input.
 
 
-## getValueAt ##
+## Constants ##
 
-Get the value of the result at the given index
+### RESULT_IGNORED ###
 
-
-## getLabelAt ##
-
-This returns the string that is displayed in the dropdown
+Possible values for the searchResult attribute
 
 
-## getCommentAt ##
+### RESULT_FAILURE ###
 
-Get the comment of the result at the given index
+### RESULT_NOMATCH ###
 
+### RESULT_SUCCESS ###
 
-## getStyleAt ##
+### RESULT_NOMATCH_ONGOING ###
 
-Get the style hint for the result at the given index
-
-
-## getImageAt ##
-
-Get the image of the result at the given index
-
-
-## getFinalCompleteValueAt ##
-
-Get the final value that should be completed when the user confirms
-the match at the given index.
-
-
-## removeValueAt ##
-
-Remove the value at the given index from the autocomplete results.
-If removeFromDb is set to true, the value should be removed from
-persistent storage as well.
-
+### RESULT_SUCCESS_ONGOING ###

@@ -4,10 +4,14 @@ layout: default
 
 # nsIMmsService #
 
-## mmsDefaultServiceId ##
+## Methods ##
 
-## send ##
+### send ###
 
-## retrieve ##
+### retrieve ###
 
-## sendReadReport ##
+### sendReadReport ###
+
+## Attributes ##
+
+### mmsDefaultServiceId ###

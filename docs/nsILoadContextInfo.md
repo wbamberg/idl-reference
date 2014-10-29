@@ -10,26 +10,30 @@ It shall be used where nsILoadContext cannot be used or is not
 available.
 
 
-## isPrivate ##
+## Attributes ##
+
+### isPrivate ###
 
 Whether the context is in a Private Browsing mode
 
 
-## NO_APP_ID ##
+### appId ###
 
-Whether the context belongs under an App
-
-
-## UNKNOWN_APP_ID ##
-
-## appId ##
-
-## isInBrowserElement ##
+### isInBrowserElement ###
 
 Whether the context is in a browser tag
 
 
-## isAnonymous ##
+### isAnonymous ###
 
 Whether the load is initiated as anonymous
 
+
+## Constants ##
+
+### NO_APP_ID ###
+
+Whether the context belongs under an App
+
+
+### UNKNOWN_APP_ID ###

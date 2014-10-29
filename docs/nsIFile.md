@@ -29,17 +29,9 @@ be safely passed to javascript via xpconnect.  Therefore, the "native
 methods" are not scriptable.
 
 
-## NORMAL_FILE_TYPE ##
+## Methods ##
 
- Create Types
-
- NORMAL_FILE_TYPE - A normal file.
- DIRECTORY_TYPE   - A directory/folder.
-
-
-## DIRECTORY_TYPE ##
-
-## append ##
+### append ###
 
  append[Native]
 
@@ -52,14 +44,14 @@ methods" are not scriptable.
       filesystem charset.
 
 
-## appendNative ##
+### appendNative ###
 
-## normalize ##
+### normalize ###
 
  Normalize the pathName (e.g. removing .. and . components on Unix).
 
 
-## create ##
+### create ###
 
  create
 
@@ -81,16 +73,7 @@ methods" are not scriptable.
       permissions.
 
 
-## leafName ##
-
- Accessor to the leaf name of the file itself.      
- For the |nativeLeafName| method, the nativeLeafName must 
- be in the native filesystem charset.
-
-
-## nativeLeafName ##
-
-## copyTo ##
+### copyTo ###
 
  copyTo[Native]
 
@@ -119,9 +102,9 @@ methods" are not scriptable.
       which case the current leaf name will be used.
 
 
-## CopyToNative ##
+### CopyToNative ###
 
-## copyToFollowingLinks ##
+### copyToFollowingLinks ###
 
  copyToFollowingLinks[Native]
 
@@ -132,9 +115,9 @@ methods" are not scriptable.
  native filesystem charset.
 
 
-## copyToFollowingLinksNative ##
+### copyToFollowingLinksNative ###
 
-## moveTo ##
+### moveTo ###
 
  moveTo[Native]
 
@@ -168,9 +151,9 @@ methods" are not scriptable.
       which case the current leaf name will be used.
 
 
-## moveToNative ##
+### moveToNative ###
 
-## renameTo ##
+### renameTo ###
 
  renameTo
 
@@ -180,7 +163,7 @@ methods" are not scriptable.
  This object will still point to the old location after renaming.
 
 
-## remove ##
+### remove ###
 
  This will try to delete this file.  The 'recursive' flag
  must be PR_TRUE to delete directories which are not empty.
@@ -188,87 +171,28 @@ methods" are not scriptable.
  This will not resolve any symlinks.
 
 
-## permissions ##
+### exists ###
 
- Attributes of nsIFile.
+### isWritable ###
 
+### isReadable ###
 
-## permissionsOfLink ##
+### isExecutable ###
 
-## lastModifiedTime ##
+### isHidden ###
 
- File Times are to be in milliseconds from
- midnight (00:00:00), January 1, 1970 Greenwich Mean
- Time (GMT).
+### isDirectory ###
 
+### isFile ###
 
-## lastModifiedTimeOfLink ##
+### isSymlink ###
 
-## fileSize ##
-
- WARNING!  On the Mac, getting/setting the file size with nsIFile
- only deals with the size of the data fork.  If you need to
- know the size of the combined data and resource forks use the
- GetFileSizeWithResFork() method defined on nsILocalFileMac.
-
-
-## fileSizeOfLink ##
-
-## target ##
-
- target & path
-
- Accessor to the string path.  The native version of these
- strings are not guaranteed to be a usable path to pass to
- NSPR or the C stdlib.  There are problems that affect
- platforms on which a path does not fully specify a file
- because two volumes can have the same name (e.g., mac).
- This is solved by holding "private", native data in the
- nsIFile implementation.  This native data is lost when
- you convert to a string.
-
-     DO NOT PASS TO USE WITH NSPR OR STDLIB!
-
- target
-     Find out what the symlink points at.  Will give error
-     (NS_ERROR_FILE_INVALID_PATH) if not a symlink.
-
- path
-     Find out what the nsIFile points at.
-
- Note that the ACString attributes are returned in the 
- native filesystem charset.
-
-
-
-## nativeTarget ##
-
-## path ##
-
-## nativePath ##
-
-## exists ##
-
-## isWritable ##
-
-## isReadable ##
-
-## isExecutable ##
-
-## isHidden ##
-
-## isDirectory ##
-
-## isFile ##
-
-## isSymlink ##
-
-## isSpecial ##
+### isSpecial ###
 
 Not a regular file, not a directory, not a symlink.
 
 
-## createUnique ##
+### createUnique ###
 
  createUnique
  
@@ -295,7 +219,7 @@ Not a regular file, not a directory, not a symlink.
       permissions.
 
 
-## clone ##
+### clone ###
 
 clone()
 
@@ -308,32 +232,18 @@ exact location of the |this| nsIFile.
 
 
 
-## equals ##
+### equals ###
 
  Will determine if the inFile equals this.
 
 
-## contains ##
+### contains ###
 
  Will determine if inFile is a descendant of this file.
  This routine looks in subdirectories too.
 
 
-## parent ##
-
- Parent will be null when this is at the top of the volume.
-
-
-## directoryEntries ##
-
- Returns an enumeration of the elements in a directory. Each
- element in the enumeration is an nsIFile.
-
-  @throws NS_ERROR_FILE_NOT_DIRECTORY if the current nsIFile does
-          not specify a directory.
-
-
-## initWithPath ##
+### initWithPath ###
 
  initWith[Native]Path
 
@@ -348,9 +258,9 @@ exact location of the |this| nsIFile.
       filesystem charset.
 
 
-## initWithNativePath ##
+### initWithNativePath ###
 
-## initWithFile ##
+### initWithFile ###
 
  initWithFile
 
@@ -360,30 +270,7 @@ exact location of the |this| nsIFile.
       the file this becomes equivalent to
 
 
-## followLinks ##
-
- followLinks
-
- This attribute will determine if the nsLocalFile will auto
- resolve symbolic links.  By default, this value will be false
- on all non unix systems.  On unix, this attribute is effectively
- a noop.  
-
-
-## OS_READAHEAD ##
-
-Flag for openNSPRFileDesc(), to hint to the OS that the file will be
-read sequentially with agressive readahead.
-
-
-## DELETE_ON_CLOSE ##
-
-Flag for openNSPRFileDesc(). Deprecated and unreliable!
-Instead use NS_OpenAnonymousTemporaryFile() to create a temporary
-file which will be deleted upon close!
-
-
-## openNSPRFileDesc ##
+### openNSPRFileDesc ###
 
 Return the result of PR_Open on the file.  The caller is
 responsible for calling PR_Close on the result.
@@ -396,21 +283,19 @@ Instead use NS_OpenAnonymousTemporaryFile() to create a temporary
 file which will be deleted upon close.
 
 
-## openANSIFileDesc ##
+### openANSIFileDesc ###
 
 Return the result of fopen on the file.  The caller is
 responsible for calling fclose on the result.
 
 
-## load ##
+### load ###
 
 Return the result of PR_LoadLibrary on the file.  The caller is
 responsible for calling PR_UnloadLibrary on the result.
 
 
-## diskSpaceAvailable ##
-
-## appendRelativePath ##
+### appendRelativePath ###
 
  appendRelative[Native]Path
 
@@ -423,18 +308,9 @@ responsible for calling PR_UnloadLibrary on the result.
       must be in the native filesystem charset.
 
 
-## appendRelativeNativePath ##
+### appendRelativeNativePath ###
 
-## persistentDescriptor ##
-
- Accessor to a null terminated string which will specify
- the file in a persistent manner for disk storage.
-
- The character set of this attribute is undefined.  DO NOT TRY TO
- INTERPRET IT AS HUMAN READABLE TEXT!
-
-
-## reveal ##
+### reveal ###
  
  reveal
 
@@ -444,7 +320,7 @@ responsible for calling PR_UnloadLibrary on the result.
  This routine must be called on the main. 
 
 
-## launch ##
+### launch ###
  
  launch
 
@@ -455,7 +331,7 @@ responsible for calling PR_UnloadLibrary on the result.
  main thread. 
 
 
-## getRelativeDescriptor ##
+### getRelativeDescriptor ###
 
  getRelativeDescriptor
 
@@ -470,7 +346,7 @@ responsible for calling PR_UnloadLibrary on the result.
       There is no defined result if this param is null.
 
 
-## setRelativeDescriptor ##
+### setRelativeDescriptor ###
 
  setRelativeDescriptor
 
@@ -481,4 +357,134 @@ responsible for calling PR_UnloadLibrary on the result.
       the file to which the descriptor is relative
   @param relative
       the relative descriptor obtained from getRelativeDescriptor
+
+
+## Attributes ##
+
+### leafName ###
+
+ Accessor to the leaf name of the file itself.      
+ For the |nativeLeafName| method, the nativeLeafName must 
+ be in the native filesystem charset.
+
+
+### nativeLeafName ###
+
+### permissions ###
+
+ Attributes of nsIFile.
+
+
+### permissionsOfLink ###
+
+### lastModifiedTime ###
+
+ File Times are to be in milliseconds from
+ midnight (00:00:00), January 1, 1970 Greenwich Mean
+ Time (GMT).
+
+
+### lastModifiedTimeOfLink ###
+
+### fileSize ###
+
+ WARNING!  On the Mac, getting/setting the file size with nsIFile
+ only deals with the size of the data fork.  If you need to
+ know the size of the combined data and resource forks use the
+ GetFileSizeWithResFork() method defined on nsILocalFileMac.
+
+
+### fileSizeOfLink ###
+
+### target ###
+
+ target & path
+
+ Accessor to the string path.  The native version of these
+ strings are not guaranteed to be a usable path to pass to
+ NSPR or the C stdlib.  There are problems that affect
+ platforms on which a path does not fully specify a file
+ because two volumes can have the same name (e.g., mac).
+ This is solved by holding "private", native data in the
+ nsIFile implementation.  This native data is lost when
+ you convert to a string.
+
+     DO NOT PASS TO USE WITH NSPR OR STDLIB!
+
+ target
+     Find out what the symlink points at.  Will give error
+     (NS_ERROR_FILE_INVALID_PATH) if not a symlink.
+
+ path
+     Find out what the nsIFile points at.
+
+ Note that the ACString attributes are returned in the 
+ native filesystem charset.
+
+
+
+### nativeTarget ###
+
+### path ###
+
+### nativePath ###
+
+### parent ###
+
+ Parent will be null when this is at the top of the volume.
+
+
+### directoryEntries ###
+
+ Returns an enumeration of the elements in a directory. Each
+ element in the enumeration is an nsIFile.
+
+  @throws NS_ERROR_FILE_NOT_DIRECTORY if the current nsIFile does
+          not specify a directory.
+
+
+### followLinks ###
+
+ followLinks
+
+ This attribute will determine if the nsLocalFile will auto
+ resolve symbolic links.  By default, this value will be false
+ on all non unix systems.  On unix, this attribute is effectively
+ a noop.  
+
+
+### diskSpaceAvailable ###
+
+### persistentDescriptor ###
+
+ Accessor to a null terminated string which will specify
+ the file in a persistent manner for disk storage.
+
+ The character set of this attribute is undefined.  DO NOT TRY TO
+ INTERPRET IT AS HUMAN READABLE TEXT!
+
+
+## Constants ##
+
+### NORMAL_FILE_TYPE ###
+
+ Create Types
+
+ NORMAL_FILE_TYPE - A normal file.
+ DIRECTORY_TYPE   - A directory/folder.
+
+
+### DIRECTORY_TYPE ###
+
+### OS_READAHEAD ###
+
+Flag for openNSPRFileDesc(), to hint to the OS that the file will be
+read sequentially with agressive readahead.
+
+
+### DELETE_ON_CLOSE ###
+
+Flag for openNSPRFileDesc(). Deprecated and unreliable!
+Instead use NS_OpenAnonymousTemporaryFile() to create a temporary
+file which will be deleted upon close!
 

@@ -4,7 +4,9 @@ layout: default
 
 # nsIFilePickerShownCallback #
 
-## done ##
+## Methods ##
+
+### done ###
 
 Callback which is called when a filepicker is shown and a result
 is returned.

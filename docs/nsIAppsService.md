@@ -4,16 +4,18 @@ layout: default
 
 # nsIAppsService #
 
-## getAppByManifestURL ##
+## Methods ##
 
-## getManifestFor ##
+### getAppByManifestURL ###
+
+### getManifestFor ###
 
 Returns a Promise for the manifest for a given manifestURL.
 This is only supported in the parent process: the promise will be rejected
 in content processes.
 
 
-## getAppLocalIdByManifestURL ##
+### getAppLocalIdByManifestURL ###
 
 Returns the |localId| of the app associated with the |manifestURL| passed
 in parameter.
@@ -21,45 +23,45 @@ Returns nsIScriptSecurityManager::NO_APP_ID if |manifestURL| isn't a valid
 installed manifest URL.
 
 
-## getAppByLocalId ##
+### getAppByLocalId ###
 
 Returns the application associated to this localId.
 
 
-## getManifestURLByLocalId ##
+### getManifestURLByLocalId ###
 
 Returns the manifest URL associated to this localId.
 
 
-## getManifestCSPByLocalId ##
+### getManifestCSPByLocalId ###
 
 Returns the manifest CSP associated to this localId.
 
 
-## getDefaultCSPByLocalId ##
+### getDefaultCSPByLocalId ###
 
 Returns the default CSP associated to this localId.
 
 
-## getCoreAppsBasePath ##
+### getCoreAppsBasePath ###
 
 Returns the basepath for core apps
 
 
-## getWebAppsBasePath ##
+### getWebAppsBasePath ###
 
 Returns the basepath for regular packaged apps
 
 
-## getAppInfo ##
+### getAppInfo ###
 
-## getRedirect ##
+### getRedirect ###
 
 Returns a URI to redirect to when we get a redirection to 'uri'.
 Returns null if no redirection is declared for this uri.
 
 
-## getAppLocalIdByStoreId ##
+### getAppLocalIdByStoreId ###
 
 Returns the localId if the app was installed from a store
 

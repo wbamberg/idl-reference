@@ -4,6 +4,8 @@ layout: default
 
 # nsISettingsServiceCallback #
 
-## handle ##
+## Methods ##
 
-## handleError ##
+### handle ###
+
+### handleError ###

@@ -4,11 +4,9 @@ layout: default
 
 # nsILoginManagerCrypto #
 
-## ENCTYPE_BASE64 ##
+## Methods ##
 
-## ENCTYPE_SDR ##
-
-## encrypt ##
+### encrypt ###
 
 encrypt
 
@@ -24,7 +22,7 @@ purpose encryption/decryption.
 Can throw if the user cancels entry of their master password.
 
 
-## decrypt ##
+### decrypt ###
 
 decrypt
 
@@ -38,14 +36,16 @@ cipherText value can not be successfully decrypted (eg, if it was
 encrypted with some other key).
 
 
-## uiBusy ##
+## Attributes ##
+
+### uiBusy ###
 
 uiBusy
 
 True when a master password prompt is being displayed.
 
 
-## isLoggedIn ##
+### isLoggedIn ###
 
 isLoggedIn
 
@@ -54,9 +54,15 @@ not logged in, performing a crypto operation will result in a master
 password prompt.
 
 
-## defaultEncType ##
+### defaultEncType ###
 
 defaultEncType
 
 Default encryption type used by an implementation of this interface.
 
+
+## Constants ##
+
+### ENCTYPE_BASE64 ###
+
+### ENCTYPE_SDR ###

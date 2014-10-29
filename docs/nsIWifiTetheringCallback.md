@@ -4,7 +4,9 @@ layout: default
 
 # nsIWifiTetheringCallback #
 
-## wifiTetheringEnabledChange ##
+## Methods ##
+
+### wifiTetheringEnabledChange ###
 
 Callback function used to report status to WifiManager.
 

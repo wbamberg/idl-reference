@@ -4,9 +4,11 @@ layout: default
 
 # nsIProcessChecker #
 
-## killChild ##
+## Methods ##
 
-## assertPermission ##
+### killChild ###
+
+### assertPermission ###
 
 Return true if the "remote" process has |aPermission|.  This is
 intended to be used by JS implementations of cross-process DOM
@@ -27,7 +29,7 @@ Note: If the remote content process does *not* have |aPermission|,
 it will be killed as a precaution.
 
 
-## assertContainApp ##
+### assertContainApp ###
 
 Return true if the "remote" process has |aManifestURL|.  This is
 intended to be used by JS implementations of cross-process DOM
@@ -48,9 +50,9 @@ Note: If the remote content process does *not* contain |aManifestURL|,
 it will be killed as a precaution.
 
 
-## assertAppHasPermission ##
+### assertAppHasPermission ###
 
-## assertAppHasStatus ##
+### assertAppHasStatus ###
 
 Return true if the "remote" process' principal has an appStatus equal to
 |aStatus|.

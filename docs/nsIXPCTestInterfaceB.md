@@ -4,4 +4,6 @@ layout: default
 
 # nsIXPCTestInterfaceB #
 
-## name ##
+## Attributes ##
+
+### name ###

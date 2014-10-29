@@ -9,15 +9,26 @@ permission to perform a privileged operation such as
 geolocation.
 
 
-## types ##
+## Methods ##
+
+### cancel ###
+
+allow or cancel the request
+
+
+### allow ###
+
+## Attributes ##
+
+### types ###
 
  The array will include the request types. Elements of this array are
  nsIContentPermissionType object.
 
 
-## principal ##
+### principal ###
 
-## window ##
+### window ###
 
  The window or element that the permission request was
  originated in.  Typically the element will be non-null
@@ -25,11 +36,4 @@ geolocation.
  element can be null but not both.
 
 
-## element ##
-
-## cancel ##
-
-allow or cancel the request
-
-
-## allow ##
+### element ###

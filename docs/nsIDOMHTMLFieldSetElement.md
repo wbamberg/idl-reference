@@ -4,22 +4,26 @@ layout: default
 
 # nsIDOMHTMLFieldSetElement #
 
-## disabled ##
+## Methods ##
 
-## form ##
+### checkValidity ###
 
-## name ##
+### setCustomValidity ###
 
-## type ##
+## Attributes ##
 
-## elements ##
+### disabled ###
 
-## willValidate ##
+### form ###
 
-## validity ##
+### name ###
 
-## validationMessage ##
+### type ###
 
-## checkValidity ##
+### elements ###
 
-## setCustomValidity ##
+### willValidate ###
+
+### validity ###
+
+### validationMessage ###

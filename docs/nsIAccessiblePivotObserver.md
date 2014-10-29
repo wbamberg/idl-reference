@@ -7,7 +7,9 @@ layout: default
 An observer interface for pivot changes.
 
 
-## onPivotChanged ##
+## Methods ##
+
+### onPivotChanged ###
 
 Called when the pivot changes.
 

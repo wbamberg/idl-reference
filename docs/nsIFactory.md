@@ -8,7 +8,9 @@ A class factory allows the creation of nsISupports derived
 components without specifying a concrete base class.  
 
 
-## createInstance ##
+## Methods ##
+
+### createInstance ###
 
 Creates an instance of a component.
 
@@ -24,7 +26,7 @@ Creates an instance of a component.
         NS_ERROR* - Method failure.
 
 
-## lockFactory ##
+### lockFactory ###
 
 LockFactory provides the client a way to keep the component
 in memory until it is finished with it. The client can call

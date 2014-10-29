@@ -8,7 +8,9 @@ Represents one locale, which can be used for things like sorting text strings
 and formatting numbers, dates and times.
 
 
-## getCategory ##
+## Methods ##
+
+### getCategory ###
 
 Get the locale code for a given category.
 

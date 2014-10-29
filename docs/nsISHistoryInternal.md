@@ -4,7 +4,9 @@ layout: default
 
 # nsISHistoryInternal #
 
-## addEntry ##
+## Methods ##
+
+### addEntry ###
 
 Add a new Entry to the History List
 @param aEntry - The entry to add
@@ -13,29 +15,19 @@ in the list.  If false, this means that when new entries are added
 this element will not appear in the session history list.
 
 
-## rootTransaction ##
-
-Get the root transaction
-
-
-## rootDocShell ##
-
-The toplevel docshell object to which this SHistory object belongs to.
-
-
-## updateIndex ##
+### updateIndex ###
  
 Update the index maintained by sessionHistory
 
 
-## replaceEntry ##
+### replaceEntry ###
 
 Replace the nsISHEntry at a particular index
 @param aIndex - The index at which the entry should be replaced
 @param aReplaceEntry - The replacement entry for the index.
 
 
-## notifyOnHistoryReload ##
+### notifyOnHistoryReload ###
 
 Notifies all registered session history listeners about an impending
 reload.
@@ -47,7 +39,7 @@ reload.
 @return              Whether the operation can proceed.
 
 
-## evictOutOfRangeContentViewers ##
+### evictOutOfRangeContentViewers ###
 
 Evict content viewers which don't lie in the "safe" range around aIndex.
 In practice, this should leave us with no more than gHistoryMaxViewers
@@ -61,19 +53,31 @@ not greater than our global max; if it is, evict viewers as appropriate.
   history was navigated to.
 
 
-## evictExpiredContentViewerForEntry ##
+### evictExpiredContentViewerForEntry ###
 
 Evict the content viewer associated with a bfcache entry
 that has timed out.
 
 
-## evictAllContentViewers ##
+### evictAllContentViewers ###
 
 Evict all the content viewers in this session history
 
 
-## RemoveEntries ##
+### RemoveEntries ###
 
 Removes entries from the history if their docshellID is in
 aIDs array.
+
+
+## Attributes ##
+
+### rootTransaction ###
+
+Get the root transaction
+
+
+### rootDocShell ###
+
+The toplevel docshell object to which this SHistory object belongs to.
 

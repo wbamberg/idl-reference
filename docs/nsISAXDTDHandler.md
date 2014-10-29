@@ -24,7 +24,9 @@ startElement event. (If the LexicalHandler is used, these events
 must also be reported before the endDTD event.)
 
 
-## notationDecl ##
+## Methods ##
+
+### notationDecl ###
 
 Receive notification of a notation declaration event.
 
@@ -48,7 +50,7 @@ reported before any unparsed entities that use it.
                  given.
 
 
-## unparsedEntityDecl ##
+### unparsedEntityDecl ###
 
 Receive notification of an unparsed entity declaration event.
 

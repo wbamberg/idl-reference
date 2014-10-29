@@ -4,24 +4,26 @@ layout: default
 
 # nsITCPSocketInternal #
 
-## callListenerError ##
+## Methods ##
 
-## callListenerData ##
+### callListenerError ###
 
-## callListenerArrayBuffer ##
+### callListenerData ###
 
-## callListenerVoid ##
+### callListenerArrayBuffer ###
 
-## updateReadyState ##
+### callListenerVoid ###
 
-## updateBufferedAmount ##
+### updateReadyState ###
 
-## createAcceptedParent ##
+### updateBufferedAmount ###
 
-## createAcceptedChild ##
+### createAcceptedParent ###
 
-## setAppId ##
+### createAcceptedChild ###
 
-## setOnUpdateBufferedAmountHandler ##
+### setAppId ###
 
-## onRecvSendFromChild ##
+### setOnUpdateBufferedAmountHandler ###
+
+### onRecvSendFromChild ###

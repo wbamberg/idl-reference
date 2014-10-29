@@ -4,4 +4,6 @@ layout: default
 
 # nsINetworkStatsServiceProxyCallback #
 
-## notify ##
+## Methods ##
+
+### notify ###

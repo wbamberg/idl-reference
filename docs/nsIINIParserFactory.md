@@ -4,7 +4,9 @@ layout: default
 
 # nsIINIParserFactory #
 
-## createINIParser ##
+## Methods ##
+
+### createINIParser ###
 
 Create an iniparser instance from a local file.
 

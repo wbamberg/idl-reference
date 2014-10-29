@@ -17,7 +17,9 @@ A service's speak method could be implemented in two ways:
    sendAudio(). The utterance is terminated with an empty sendAudio().
 
 
-## speak ##
+## Methods ##
+
+### speak ###
 
 Speak the given text using the voice identified byu the given uri. See
 W3C Speech API spec for information about pitch and rate.
@@ -31,8 +33,12 @@ https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#utterance-attribut
                 data back to browser.
 
 
-## SERVICETYPE_DIRECT_AUDIO ##
+## Attributes ##
 
-## SERVICETYPE_INDIRECT_AUDIO ##
+### serviceType ###
 
-## serviceType ##
+## Constants ##
+
+### SERVICETYPE_DIRECT_AUDIO ###
+
+### SERVICETYPE_INDIRECT_AUDIO ###

@@ -8,12 +8,9 @@ Interface representing a collection of annotations associated
 with a bookmark or bookmark folder.
 
 
-## names ##
+## Methods ##
 
-Array of the annotation names associated with the owning item
-
-
-## has ##
+### has ###
 
 Determines if an annotation exists with the given name.
 @param   aName
@@ -22,7 +19,7 @@ Determines if an annotation exists with the given name.
          false otherwise.
 
 
-## get ##
+### get ###
 
 Gets the value of an annotation with the given name.
 @param   aName
@@ -31,7 +28,7 @@ Gets the value of an annotation with the given name.
          string, boolean and number.
 
 
-## set ##
+### set ###
 
 Sets the value of an annotation with the given name.
 @param   aName
@@ -44,9 +41,16 @@ Sets the value of an annotation with the given name.
          See nsIAnnotationService.
 
 
-## remove ##
+### remove ###
 
 Removes the named annotation from the owner item.
 @param   aName
          The name of annotation.
+
+
+## Attributes ##
+
+### names ###
+
+Array of the annotation names associated with the owning item
 

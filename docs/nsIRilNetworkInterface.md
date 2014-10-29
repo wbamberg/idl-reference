@@ -4,12 +4,14 @@ layout: default
 
 # nsIRilNetworkInterface #
 
-## serviceId ##
+## Attributes ##
 
-## iccId ##
+### serviceId ###
 
-## mmsc ##
+### iccId ###
 
-## mmsProxy ##
+### mmsc ###
 
-## mmsPort ##
+### mmsProxy ###
+
+### mmsPort ###

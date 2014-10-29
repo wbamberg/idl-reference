@@ -4,21 +4,9 @@ layout: default
 
 # nsIWinTaskbar #
 
-## available ##
+## Methods ##
 
-Returns true if the operating system supports Win7+ taskbar features.
-This property acts as a replacement for in-place os version checking.
-
-
-## defaultGroupId ##
-
-Returns the default application user model identity the application
-registers with the system. This id is used by the taskbar in grouping
-windows and in associating pinned shortcuts with running instances and
-jump lists.
-
-
-## createTaskbarTabPreview ##
+### createTaskbarTabPreview ###
 
 Taskbar window and tab preview management
 
@@ -28,7 +16,7 @@ is used to find the toplevel window. See the documentation for
 nsITaskbarTabPreview for more information.
 
 
-## getTaskbarWindowPreview ##
+### getTaskbarWindowPreview ###
 
 Gets the taskbar preview for a window. The docshell is used to find the
 toplevel window. See the documentation for nsITaskbarTabPreview for more
@@ -37,7 +25,7 @@ information.
 Note: to implement custom drawing or buttons, a controller is required.
 
 
-## getTaskbarProgress ##
+### getTaskbarProgress ###
 
 Taskbar icon progress indicator
 
@@ -47,7 +35,7 @@ toplevel window. See the documentation for nsITaskbarProgress for more
 information.
 
 
-## getOverlayIconController ##
+### getOverlayIconController ###
 
 Taskbar icon overlay
 
@@ -57,7 +45,7 @@ to find the toplevel window. See the documentation in
 nsITaskbarOverlayIconController for more details.
 
 
-## createJumpListBuilder ##
+### createJumpListBuilder ###
 
 Taskbar and start menu jump list management
 
@@ -72,7 +60,7 @@ within an application.
 currently building a list.
 
 
-## setGroupIdForWindow ##
+### setGroupIdForWindow ###
 
 Application window taskbar group settings
 
@@ -97,7 +85,7 @@ associated with a widget.
 @throw NS_ERROR_UNEXPECTED for general failures.
 
 
-## prepareFullScreen ##
+### prepareFullScreen ###
 
 Notify the taskbar that a window is about to enter full screen mode.
 
@@ -109,7 +97,7 @@ it is not notified when full screen operations start and end.
 @throw NS_ERROR_NOT_AVAILABLE if the taskbar cannot be obtained.
 
 
-## prepareFullScreenHWND ##
+### prepareFullScreenHWND ###
 
 Notify the taskbar that a window identified by its HWND is about to enter
 full screen mode.
@@ -120,4 +108,20 @@ it is not notified when full screen operations start and end.
 @throw NS_ERROR_INVALID_ARG if the window is not a valid top level window
 @throw NS_ERROR_UNEXPECTED for general failures.
 @throw NS_ERROR_NOT_AVAILABLE if the taskbar cannot be obtained.
+
+
+## Attributes ##
+
+### available ###
+
+Returns true if the operating system supports Win7+ taskbar features.
+This property acts as a replacement for in-place os version checking.
+
+
+### defaultGroupId ###
+
+Returns the default application user model identity the application
+registers with the system. This id is used by the taskbar in grouping
+windows and in associating pinned shortcuts with running instances and
+jump lists.
 

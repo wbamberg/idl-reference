@@ -4,7 +4,9 @@ layout: default
 
 # nsIDOMMozBrowserFrame #
 
-## mozbrowser ##
+## Attributes ##
+
+### mozbrowser ###
 
 <iframe> element may have the mozbrowser attribute.
 

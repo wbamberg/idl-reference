@@ -12,13 +12,15 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Core/
 
 
-## hasFeature ##
+## Methods ##
 
-## createDocumentType ##
+### hasFeature ###
 
-## createDocument ##
+### createDocumentType ###
 
-## createHTMLDocument ##
+### createDocument ###
+
+### createHTMLDocument ###
 
 Returns an HTML document with a basic DOM already constructed and with an
 appropriate title element.

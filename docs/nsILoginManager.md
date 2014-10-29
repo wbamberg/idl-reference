@@ -4,17 +4,9 @@ layout: default
 
 # nsILoginManager #
 
-## initializationPromise ##
+## Methods ##
 
-This promise is resolved when initialization is complete, and is rejected
-in case initialization failed.  This includes the initial loading of the
-login data as well as any migration from previous versions.
-
-Calling any method of nsILoginManager before this promise is resolved
-might trigger the synchronous initialization fallback.
-
-
-## addLogin ##
+### addLogin ###
 
 Store a new login in the login manager.
 
@@ -26,7 +18,7 @@ created. However, if the caller specifies non-default values, they will
 be used instead.
 
 
-## removeLogin ##
+### removeLogin ###
 
 Remove a login from the login manager.
 
@@ -37,7 +29,7 @@ The specified login must exactly match a stored login. However, the
 values of any nsILoginMetaInfo properties are ignored.
 
 
-## modifyLogin ##
+### modifyLogin ###
 
 Modify an existing login in the login manager.
 
@@ -58,7 +50,7 @@ If the propertybag contains an item named "timesUsedIncrement", the
 login's timesUsed property will be incremented by the item's value.
 
 
-## removeAllLogins ##
+### removeAllLogins ###
 
 Remove all logins known to login manager.
 
@@ -68,7 +60,7 @@ login first (which might require knowing the master password).
 
 
 
-## getAllLogins ##
+### getAllLogins ###
 
 Fetch all logins in the login manager. An array is always returned;
 if there are no logins the array is empty.
@@ -84,7 +76,7 @@ NOTE: This can be called from JS as:
       (|logins| is an array).
 
 
-## getAllDisabledHosts ##
+### getAllDisabledHosts ###
 
 Obtain a list of all hosts for which password saving is disabled.
 
@@ -99,7 +91,7 @@ NOTE: This can be called from JS as:
       var logins = pwmgr.getDisabledAllLogins();
 
 
-## getLoginSavingEnabled ##
+### getLoginSavingEnabled ###
 
 Check to see if saving logins has been disabled for a host.
 
@@ -108,7 +100,7 @@ Check to see if saving logins has been disabled for a host.
        URL format, without a pathname. For example: "http://foo.com".
 
 
-## setLoginSavingEnabled ##
+### setLoginSavingEnabled ###
 
 Disable (or enable) storing logins for the specified host. When
 disabled, the login manager will not prompt to store logins for
@@ -122,7 +114,7 @@ that host. Existing logins are not affected.
        disabled (false)
 
 
-## findLogins ##
+### findLogins ###
 
 Search for logins matching the specified criteria. Called when looking
 for logins that might be applicable to a form or authentication request.
@@ -154,7 +146,7 @@ NOTE: This can be called from JS as:
 
 
 
-## countLogins ##
+### countLogins ###
 
 Search for logins matching the specified criteria, as with
 findLogins(). This interface only returns the number of matching
@@ -176,7 +168,7 @@ password to decrypt the logins.
        realm, specify null.
 
 
-## autoCompleteSearchAsync ##
+### autoCompleteSearchAsync ###
 
 Generate results for a userfield autocomplete menu.
 
@@ -185,7 +177,7 @@ NOTE: This interface is provided for use only by the FormFillController,
       probably be callback registered through the FFC.
 
 
-## fillForm ##
+### fillForm ###
 
 Fill a form with login information if we have it. This method will fill
 aForm regardless of the signon.autofillForms preference.
@@ -195,7 +187,7 @@ aForm regardless of the signon.autofillForms preference.
 @return Promise that is resolved with whether or not the form was filled.
 
 
-## searchLogins ##
+### searchLogins ###
 
 Search for logins in the login manager. An array is always returned;
 if there are no logins the array is empty.
@@ -216,12 +208,24 @@ NOTE: This can be called from JS as:
       (|logins| is an array).
 
 
-## uiBusy ##
+## Attributes ##
+
+### initializationPromise ###
+
+This promise is resolved when initialization is complete, and is rejected
+in case initialization failed.  This includes the initial loading of the
+login data as well as any migration from previous versions.
+
+Calling any method of nsILoginManager before this promise is resolved
+might trigger the synchronous initialization fallback.
+
+
+### uiBusy ###
 
 True when a master password prompt is being displayed.
 
 
-## isLoggedIn ##
+### isLoggedIn ###
 
 True when the master password has already been entered, and so a caller
 can ask for decrypted logins without triggering a prompt.

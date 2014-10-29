@@ -7,24 +7,9 @@ layout: default
 A load group maintains a collection of nsIRequest objects. 
 
 
-## groupObserver ##
+## Methods ##
 
-The group observer is notified when requests are added to and removed
-from this load group.  The groupObserver is weak referenced.
-
-
-## defaultLoadRequest ##
-
-Accesses the default load request for the group.  Each time a number
-of requests are added to a group, the defaultLoadRequest may be set
-to indicate that all of the requests are related to a base request.
-
-The load group inherits its load flags from the default load request.
-If the default load request is NULL, then the group's load flags are
-not changed.
-
-
-## addRequest ##
+### addRequest ###
 
 Adds a new request to the group.  This will cause the default load
 flags to be applied to the request.  If this is a foreground
@@ -35,7 +20,7 @@ request is null, then the load group will inherit its load flags from
 the request.
 
 
-## removeRequest ##
+### removeRequest ###
 
 Removes a request from the group.  If this is a foreground request
 then the groupObserver's onStopRequest will be called.
@@ -44,30 +29,49 @@ By the time this call ends, aRequest will have been removed from the
 loadgroup, even if this function throws an exception.
 
 
-## requests ##
+## Attributes ##
+
+### groupObserver ###
+
+The group observer is notified when requests are added to and removed
+from this load group.  The groupObserver is weak referenced.
+
+
+### defaultLoadRequest ###
+
+Accesses the default load request for the group.  Each time a number
+of requests are added to a group, the defaultLoadRequest may be set
+to indicate that all of the requests are related to a base request.
+
+The load group inherits its load flags from the default load request.
+If the default load request is NULL, then the group's load flags are
+not changed.
+
+
+### requests ###
 
 Returns the requests contained directly in this group.
 Enumerator element type: nsIRequest.
 
 
-## activeCount ##
+### activeCount ###
 
 Returns the count of "active" requests (ie. requests without the
 LOAD_BACKGROUND bit set).
 
 
-## notificationCallbacks ##
+### notificationCallbacks ###
 
 Notification callbacks for the load group.
 
 
-## connectionInfo ##
+### connectionInfo ###
 
 Connection information for managing things like js/css
 connection blocking, and per-tab connection grouping
 
 
-## defaultLoadFlags ##
+### defaultLoadFlags ###
 
 The set of load flags that will be added to all new requests added to
 this group. Any existing requests in the load group are not modified,

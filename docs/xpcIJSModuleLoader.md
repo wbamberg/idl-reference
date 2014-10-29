@@ -4,7 +4,9 @@ layout: default
 
 # xpcIJSModuleLoader #
 
-## import ##
+## Methods ##
+
+### import ###
 
 To be called from JavaScript only.
 
@@ -36,14 +38,14 @@ specified target object and the global object returned as above.
 (This comment is duplicated to nsIXPCComponents_Utils.)
 
 
-## importInto ##
+### importInto ###
 
 Imports the JS module at aResourceURI to the JS object
 'targetObj' (if != null) as described for importModule() and
 returns the module's global object.
 
 
-## unload ##
+### unload ###
 
 Unloads the JS module at aResourceURI. Existing references to the module
 will continue to work but any subsequent import of the module will
@@ -51,7 +53,7 @@ reload it and give new reference. If the JS module hasn't yet been imported
 then this method will do nothing.
 
 
-## isModuleLoaded ##
+### isModuleLoaded ###
 
 Returns true if the js file located at 'registryLocation' location has
 been loaded previously via the import method above. Returns false

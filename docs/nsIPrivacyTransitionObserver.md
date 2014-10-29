@@ -4,4 +4,6 @@ layout: default
 
 # nsIPrivacyTransitionObserver #
 
-## privateModeChanged ##
+## Methods ##
+
+### privateModeChanged ###

@@ -33,7 +33,9 @@ NOTE: Will be split into two interfaces soon: one for onProcessNextEvent and
       onDispatchedEvent.
 
 
-## onDispatchedEvent ##
+## Methods ##
+
+### onDispatchedEvent ###
 
 This method is called after an event has been dispatched to the thread.
 This method may be called from any thread. 
@@ -42,7 +44,7 @@ This method may be called from any thread.
   The thread where the event is being dispatched.
 
 
-## onProcessNextEvent ##
+### onProcessNextEvent ###
 
 This method is called when nsIThread::ProcessNextEvent is called.  It does
 not guarantee that an event is actually going to be processed.  This method
@@ -58,7 +60,7 @@ is only called on the target thread.
   addition to the current call.
 
 
-## afterProcessNextEvent ##
+### afterProcessNextEvent ###
 
 This method is called (from nsIThread::ProcessNextEvent) after an event
 is processed.  It does not guarantee that an event was actually processed

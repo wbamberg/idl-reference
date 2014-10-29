@@ -4,6 +4,10 @@ layout: default
 
 # nsIDOMCustomEvent #
 
-## detail ##
+## Methods ##
 
-## initCustomEvent ##
+### initCustomEvent ###
+
+## Attributes ##
+
+### detail ###

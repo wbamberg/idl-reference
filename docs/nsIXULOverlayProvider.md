@@ -8,7 +8,9 @@ The chrome registry implements this interface to give overlays
 to the gecko XUL engine.
 
 
-## getXULOverlays ##
+## Methods ##
+
+### getXULOverlays ###
 
 Get the XUL overlays for a particular chrome URI.
 
@@ -16,7 +18,7 @@ Get the XUL overlays for a particular chrome URI.
 @return      An enumerator of nsIURI for the overlays of this URI 
 
 
-## getStyleOverlays ##
+### getStyleOverlays ###
 
 Get the style overlays for a particular chrome URI.
 

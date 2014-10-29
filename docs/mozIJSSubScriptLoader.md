@@ -4,7 +4,9 @@ layout: default
 
 # mozIJSSubScriptLoader #
 
-## loadSubScript ##
+## Methods ##
+
+### loadSubScript ###
 
 This method should only be called from JS!
 In JS, the signature looks like:
@@ -19,7 +21,7 @@ rv loadSubScript (url [, obj] [, charset]);
 @retval rv the value returned by the sub-script
 
 
-## loadSubScriptWithOptions ##
+### loadSubScriptWithOptions ###
 
 This method should only be called from JS!
 In JS, the signature looks like:
@@ -33,4 +35,4 @@ rv = loadSubScript (url, optionsObject)
 @retval rv the value returned by the sub-script
 
 
-## precompileScript ##
+### precompileScript ###

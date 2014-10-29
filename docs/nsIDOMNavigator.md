@@ -4,28 +4,30 @@ layout: default
 
 # nsIDOMNavigator #
 
-## appCodeName ##
+## Attributes ##
 
-## appName ##
+### appCodeName ###
 
-## appVersion ##
+### appName ###
 
-## language ##
+### appVersion ###
 
-## platform ##
+### language ###
 
-## oscpu ##
+### platform ###
 
-## vendor ##
+### oscpu ###
 
-## vendorSub ##
+### vendor ###
 
-## product ##
+### vendorSub ###
 
-## productSub ##
+### product ###
 
-## userAgent ##
+### productSub ###
 
-## buildID ##
+### userAgent ###
 
-## doNotTrack ##
+### buildID ###
+
+### doNotTrack ###

@@ -4,8 +4,10 @@ layout: default
 
 # nsIKeyObjectFactory #
 
-## lookupKeyByName ##
+## Methods ##
 
-## unwrapKey ##
+### lookupKeyByName ###
 
-## keyFromString ##
+### unwrapKey ###
+
+### keyFromString ###

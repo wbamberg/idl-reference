@@ -8,16 +8,18 @@ The nsIDOMHTMLMenuItemElement interface is the interface to a HTML
 <menuitem> element.
 
 
-## type ##
+## Attributes ##
 
-## label ##
+### type ###
 
-## icon ##
+### label ###
 
-## disabled ##
+### icon ###
 
-## defaultChecked ##
+### disabled ###
 
-## checked ##
+### defaultChecked ###
 
-## radiogroup ##
+### checked ###
+
+### radiogroup ###

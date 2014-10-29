@@ -34,7 +34,9 @@ tell the user to "Press OK to proceed."  Instead, such a prompt might be
 rewritten to ask the user: "Would you like to proceed?"
 
 
-## alert ##
+## Methods ##
+
+### alert ###
 
 Puts up an alert dialog with an OK button.
 
@@ -46,7 +48,7 @@ Puts up an alert dialog with an OK button.
        Text to appear in the body of the dialog.
 
 
-## alertCheck ##
+### alertCheck ###
 
 Puts up an alert dialog with an OK button and a labeled checkbox.
 
@@ -63,7 +65,7 @@ Puts up an alert dialog with an OK button and a labeled checkbox.
        is called and the final checked state after this method returns.
 
 
-## confirm ##
+### confirm ###
 
 Puts up a dialog with OK and Cancel buttons.
 
@@ -77,7 +79,7 @@ Puts up a dialog with OK and Cancel buttons.
 @return true for OK, false for Cancel
 
 
-## confirmCheck ##
+### confirmCheck ###
 
 Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
 
@@ -96,70 +98,7 @@ Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
 @return true for OK, false for Cancel
 
 
-## BUTTON_POS_0 ##
-
-Button Flags
-
-The following flags are combined to form the aButtonFlags parameter passed
-to confirmEx.  See confirmEx for more information on how the flags may be
-combined.
-
-
-Button Position Flags
-
-
-## BUTTON_POS_1 ##
-
-## BUTTON_POS_2 ##
-
-## BUTTON_TITLE_OK ##
-
-Button Title Flags (used to set the labels of buttons in the prompt)
-
-
-## BUTTON_TITLE_CANCEL ##
-
-## BUTTON_TITLE_YES ##
-
-## BUTTON_TITLE_NO ##
-
-## BUTTON_TITLE_SAVE ##
-
-## BUTTON_TITLE_DONT_SAVE ##
-
-## BUTTON_TITLE_REVERT ##
-
-## BUTTON_TITLE_IS_STRING ##
-
-## BUTTON_POS_0_DEFAULT ##
-
-Button Default Flags (used to select which button is the default one)
-
-
-## BUTTON_POS_1_DEFAULT ##
-
-## BUTTON_POS_2_DEFAULT ##
-
-## BUTTON_DELAY_ENABLE ##
-
-Causes the buttons to be initially disabled.  They are enabled after a
-timeout expires.  The implementation may interpret this loosely as the
-intent is to ensure that the user does not click through a security dialog
-too quickly.  Strictly speaking, the implementation could choose to ignore
-this flag.
-
-
-## STD_OK_CANCEL_BUTTONS ##
-
-Selects the standard set of OK/Cancel buttons.
-
-
-## STD_YES_NO_BUTTONS ##
-
-Selects the standard set of Yes/No buttons.
-
-
-## confirmEx ##
+### confirmEx ###
 
 Puts up a dialog with up to 3 buttons and an optional, labeled checkbox.
 
@@ -204,7 +143,7 @@ In general, aButtonFlags is constructed per the following example:
 where "AAA" and "BBB" correspond to one of the button titles.
 
 
-## prompt ##
+### prompt ###
 
 Puts up a dialog with an edit field and an optional, labeled checkbox.
 
@@ -228,7 +167,7 @@ Puts up a dialog with an edit field and an optional, labeled checkbox.
 @return true for OK, false for Cancel.
 
 
-## promptUsernameAndPassword ##
+### promptUsernameAndPassword ###
 
 Puts up a dialog with an edit field, a password field, and an optional,
 labeled checkbox.
@@ -258,7 +197,7 @@ labeled checkbox.
 @return true for OK, false for Cancel.
 
 
-## promptPassword ##
+### promptPassword ###
 
 Puts up a dialog with a password field and an optional, labeled checkbox.
 
@@ -282,7 +221,7 @@ Puts up a dialog with a password field and an optional, labeled checkbox.
 @return true for OK, false for Cancel.
 
 
-## select ##
+### select ###
 
 Puts up a dialog box which has a list box of strings from which the user
 may make a single selection.
@@ -302,4 +241,69 @@ may make a single selection.
        method returns true.
 
 @return true for OK, false for Cancel.
+
+
+## Constants ##
+
+### BUTTON_POS_0 ###
+
+Button Flags
+
+The following flags are combined to form the aButtonFlags parameter passed
+to confirmEx.  See confirmEx for more information on how the flags may be
+combined.
+
+
+Button Position Flags
+
+
+### BUTTON_POS_1 ###
+
+### BUTTON_POS_2 ###
+
+### BUTTON_TITLE_OK ###
+
+Button Title Flags (used to set the labels of buttons in the prompt)
+
+
+### BUTTON_TITLE_CANCEL ###
+
+### BUTTON_TITLE_YES ###
+
+### BUTTON_TITLE_NO ###
+
+### BUTTON_TITLE_SAVE ###
+
+### BUTTON_TITLE_DONT_SAVE ###
+
+### BUTTON_TITLE_REVERT ###
+
+### BUTTON_TITLE_IS_STRING ###
+
+### BUTTON_POS_0_DEFAULT ###
+
+Button Default Flags (used to select which button is the default one)
+
+
+### BUTTON_POS_1_DEFAULT ###
+
+### BUTTON_POS_2_DEFAULT ###
+
+### BUTTON_DELAY_ENABLE ###
+
+Causes the buttons to be initially disabled.  They are enabled after a
+timeout expires.  The implementation may interpret this loosely as the
+intent is to ensure that the user does not click through a security dialog
+too quickly.  Strictly speaking, the implementation could choose to ignore
+this flag.
+
+
+### STD_OK_CANCEL_BUTTONS ###
+
+Selects the standard set of OK/Cancel buttons.
+
+
+### STD_YES_NO_BUTTONS ###
+
+Selects the standard set of Yes/No buttons.
 

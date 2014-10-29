@@ -13,65 +13,9 @@ handlers for document processing, and to initiate a document
 parse.
 
 
-## baseURI ##
+## Methods ##
 
-The base URI.
-
-
-## contentHandler ##
-
-If the application does not register a content handler, all
-content events reported by the SAX parser will be silently
-ignored.
-
-Applications may register a new or different handler in the
-middle of a parse, and the SAX parser must begin using the new
-handler immediately.
-
-
-## dtdHandler ##
-
-If the application does not register a DTD handler, all DTD
-events reported by the SAX parser will be silently ignored.
-
-Applications may register a new or different handler in the
-middle of a parse, and the SAX parser must begin using the new
-handler immediately.
-
-
-## errorHandler ##
-
-If the application does not register an error handler, all
-error events reported by the SAX parser will be silently ignored;
-however, normal processing may not continue.  It is highly
-recommended that all SAX applications implement an error handler
-to avoid unexpected bugs.
-
-Applications may register a new or different handler in the
-middle of a parse, and the SAX parser must begin using the new
-handler immediately.
-
-
-## declarationHandler ##
-
-A handler for the (optional) XML declaration of a document.
-<?xml version='1.0'?>
-
-@note This is not part of the SAX standard.
-
-
-## lexicalHandler ##
-
-If the application does not register a lexical handler, all
-lexical events (e.g. startDTD) reported by the SAX parser will be
-silently ignored.
-
-Applications may register a new or different handler in the
-middle of a parse, and the SAX parser must begin using the new
-handler immediately.
-
-
-## setFeature ##
+### setFeature ###
 
 Set the value of a feature flag.
 
@@ -93,7 +37,7 @@ http://xml.org/sax/features/namespace-prefixes .  All other
 features will result in a NOT_IMPLEMENTED exception.
 
 
-## getFeature ##
+### getFeature ###
 
 Look up the value of a feature flag.
 
@@ -114,7 +58,7 @@ http://xml.org/sax/features/namespace-prefixes .  All other
 features will result in a NOT_IMPLEMENTED exception.
 
 
-## setProperty ##
+### setProperty ###
 
 Set the value of a property. NOT CURRENTLY IMPLEMENTED.
 
@@ -134,7 +78,7 @@ extended handlers.
 @param value Turn the feature on/off.
 
 
-## getProperty ##
+### getProperty ###
 
 Look up the value of a property. NOT CURRENTLY IMPLEMENTED.
 
@@ -155,7 +99,7 @@ using names built on their own URIs.
 @return The current value of the property.
 
 
-## parseFromString ##
+### parseFromString ###
 
 
 @param str The UTF16 string to be parsed
@@ -163,7 +107,7 @@ using names built on their own URIs.
 
 
 
-## parseFromStream ##
+### parseFromStream ###
 
 
 @param stream The byte stream whose contents are parsed
@@ -175,7 +119,7 @@ using names built on their own URIs.
 
 
 
-## parseAsync ##
+### parseAsync ###
 
 Begin an asynchronous parse. This method initializes the parser,
 and must be called before any nsIStreamListener methods. It is
@@ -185,4 +129,64 @@ one of the other parse methods.
 
 @param observer The nsIRequestObserver to notify upon start or stop.
                 Can be NULL.
+
+
+## Attributes ##
+
+### baseURI ###
+
+The base URI.
+
+
+### contentHandler ###
+
+If the application does not register a content handler, all
+content events reported by the SAX parser will be silently
+ignored.
+
+Applications may register a new or different handler in the
+middle of a parse, and the SAX parser must begin using the new
+handler immediately.
+
+
+### dtdHandler ###
+
+If the application does not register a DTD handler, all DTD
+events reported by the SAX parser will be silently ignored.
+
+Applications may register a new or different handler in the
+middle of a parse, and the SAX parser must begin using the new
+handler immediately.
+
+
+### errorHandler ###
+
+If the application does not register an error handler, all
+error events reported by the SAX parser will be silently ignored;
+however, normal processing may not continue.  It is highly
+recommended that all SAX applications implement an error handler
+to avoid unexpected bugs.
+
+Applications may register a new or different handler in the
+middle of a parse, and the SAX parser must begin using the new
+handler immediately.
+
+
+### declarationHandler ###
+
+A handler for the (optional) XML declaration of a document.
+<?xml version='1.0'?>
+
+@note This is not part of the SAX standard.
+
+
+### lexicalHandler ###
+
+If the application does not register a lexical handler, all
+lexical events (e.g. startDTD) reported by the SAX parser will be
+silently ignored.
+
+Applications may register a new or different handler in the
+middle of a parse, and the SAX parser must begin using the new
+handler immediately.
 

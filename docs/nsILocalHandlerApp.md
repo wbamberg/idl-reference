@@ -7,22 +7,14 @@ layout: default
 nsILocalHandlerApp is a local OS-level executable
 
 
-## executable ##
+## Methods ##
 
-Pointer to the executable file used to handle content
-
-
-## parameterCount ##
-
-Returns the current number of command line parameters.
-
-
-## clearParameters ##
+### clearParameters ###
 
 Clears the current list of command line parameters.
 
 
-## appendParameter ##
+### appendParameter ###
 
 Appends a command line parameter to the command line
 parameter list.
@@ -30,7 +22,7 @@ parameter list.
 @param param the parameter to add.
 
 
-## getParameter ##
+### getParameter ###
 
 Retrieves a specific command line parameter.
 
@@ -41,7 +33,7 @@ Retrieves a specific command line parameter.
 @throw NS_ERROR_INVALID_ARG if the index is out of range.
 
 
-## parameterExists ##
+### parameterExists ###
 
 Checks to see if a parameter exists in the command line
 parameter list.
@@ -49,4 +41,16 @@ parameter list.
 @param param the parameter to search for.
 
 @return TRUE if the parameter exists in the current list. 
+
+
+## Attributes ##
+
+### executable ###
+
+Pointer to the executable file used to handle content
+
+
+### parameterCount ###
+
+Returns the current number of command line parameters.
 

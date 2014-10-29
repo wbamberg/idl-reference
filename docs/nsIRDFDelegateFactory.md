@@ -12,7 +12,9 @@ The factory will be invoked to create delegate objects from
 nsIRDFResource::GetDelegate().
 
 
-## CreateDelegate ##
+## Methods ##
+
+### CreateDelegate ###
 
 Create a delegate for the specified RDF resource.
 

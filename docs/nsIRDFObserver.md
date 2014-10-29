@@ -4,7 +4,9 @@ layout: default
 
 # nsIRDFObserver #
 
-## onAssert ##
+## Methods ##
+
+### onAssert ###
 
 This method is called whenever a new assertion is made
 in the data source
@@ -15,7 +17,7 @@ in the data source
 @param aTarget the object of the assertion
 
 
-## onUnassert ##
+### onUnassert ###
 
 This method is called whenever an assertion is removed
 from the data source
@@ -26,7 +28,7 @@ from the data source
 @param aTarget the object of the assertion
 
 
-## onChange ##
+### onChange ###
 
 This method is called when the object of an assertion
 changes from one value to another.
@@ -38,7 +40,7 @@ changes from one value to another.
 @param aNewTarget the new object of the assertion
 
 
-## onMove ##
+### onMove ###
 
 This method is called when the subject of an assertion
 changes from one value to another.
@@ -50,7 +52,7 @@ changes from one value to another.
 @param aTarget the object of the assertion
 
 
-## onBeginUpdateBatch ##
+### onBeginUpdateBatch ###
 
 This method is called when a datasource is about to
 send several notifications at once. The observer can
@@ -61,7 +63,7 @@ the group of notifications has completed.
   be issuing the notifications.
 
 
-## onEndUpdateBatch ##
+### onEndUpdateBatch ###
 
 This method is called when a datasource has completed
 issuing a notification group.

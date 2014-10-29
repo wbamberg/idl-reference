@@ -11,4 +11,6 @@ though there is discussion as to whether we need the nsresult,
 we keep it so we can track deeper crypto errors.
 
 
-## generateKeyPairFinished ##
+## Methods ##
+
+### generateKeyPairFinished ###

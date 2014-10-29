@@ -4,19 +4,9 @@ layout: default
 
 # nsIDownloadManagerUI #
 
-## REASON_USER_INTERACTED ##
+## Methods ##
 
-The reason that should be passed when the user requests to show the
-download manager's UI.
-
-
-## REASON_NEW_DOWNLOAD ##
-
-The reason that should be passed to the show method when we are displaying
-the UI because a new download is being added to it.
-
-
-## show ##
+### show ###
 
 Shows the Download Manager's UI to the user.
 
@@ -33,14 +23,30 @@ Shows the Download Manager's UI to the user.
        should only display private downloads in the UI, if possible.
 
 
-## visible ##
-
-Indicates if the UI is visible or not.
-
-
-## getAttention ##
+### getAttention ###
 
 Brings attention to the UI if it is already visible
 
 @throws NS_ERROR_UNEXPECTED if the UI is not visible.
+
+
+## Attributes ##
+
+### visible ###
+
+Indicates if the UI is visible or not.
+
+
+## Constants ##
+
+### REASON_USER_INTERACTED ###
+
+The reason that should be passed when the user requests to show the
+download manager's UI.
+
+
+### REASON_NEW_DOWNLOAD ###
+
+The reason that should be passed to the show method when we are displaying
+the UI because a new download is being added to it.
 

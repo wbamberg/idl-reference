@@ -4,6 +4,8 @@ layout: default
 
 # nsIDOMXULLabelElement #
 
-## accessKey ##
+## Attributes ##
 
-## control ##
+### accessKey ###
+
+### control ###

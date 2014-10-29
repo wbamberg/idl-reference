@@ -8,7 +8,9 @@ XBL controls can implement this interface to provide own implementation of
 accessible properties.
 
 
-## accessibleName ##
+## Attributes ##
+
+### accessibleName ###
 
 Return accessible name.
 

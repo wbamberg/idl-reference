@@ -11,7 +11,9 @@ Canceling a background download does not cause the file on disk to be
 deleted.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize the incremental download object.  If the destination file
 already exists, then only the remaining portion of the file will be
@@ -43,42 +45,7 @@ accidentally running "blah.exe" before it is a complete file.
        part of the file in one chunk.
 
 
-## URI ##
-
-The URI being fetched.
-
-
-## finalURI ##
-
-The URI being fetched after any redirects have been followed.  This
-attribute is set just prior to calling OnStartRequest on the observer
-passed to the start method.
-
-
-## destination ##
-
-The file where the download is being written.
-
-
-## totalSize ##
-
-The total number of bytes for the requested file.  This attribute is set
-just prior to calling OnStartRequest on the observer passed to the start
-method.
-
-This attribute has a value of -1 if the total size is unknown.
-
-
-## currentSize ##
-
-The current number of bytes downloaded so far.  This attribute is set just
-prior to calling OnStartRequest on the observer passed to the start
-method.
-
-This attribute has a value of -1 if the current size is unknown.
-
-
-## start ##
+### start ###
 
 Start the incremental download.
 
@@ -94,4 +61,41 @@ Start the incremental download.
        nsIAuthPrompt implementation if needed by the channel, for example.
 @param ctxt
        User defined object forwarded to the observer's methods.
+
+
+## Attributes ##
+
+### URI ###
+
+The URI being fetched.
+
+
+### finalURI ###
+
+The URI being fetched after any redirects have been followed.  This
+attribute is set just prior to calling OnStartRequest on the observer
+passed to the start method.
+
+
+### destination ###
+
+The file where the download is being written.
+
+
+### totalSize ###
+
+The total number of bytes for the requested file.  This attribute is set
+just prior to calling OnStartRequest on the observer passed to the start
+method.
+
+This attribute has a value of -1 if the total size is unknown.
+
+
+### currentSize ###
+
+The current number of bytes downloaded so far.  This attribute is set just
+prior to calling OnStartRequest on the observer passed to the start
+method.
+
+This attribute has a value of -1 if the current size is unknown.
 

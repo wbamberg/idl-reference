@@ -4,20 +4,24 @@ layout: default
 
 # nsIKeyObject #
 
-## SYM_KEY ##
+## Methods ##
 
-## PRIVATE_KEY ##
+### initKey ###
 
-## PUBLIC_KEY ##
+### getKeyObj ###
 
-## RC4 ##
+### getType ###
 
-## AES_CBC ##
+## Constants ##
 
-## HMAC ##
+### SYM_KEY ###
 
-## initKey ##
+### PRIVATE_KEY ###
 
-## getKeyObj ##
+### PUBLIC_KEY ###
 
-## getType ##
+### RC4 ###
+
+### AES_CBC ###
+
+### HMAC ###

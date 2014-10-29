@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMXULImageElement #
 
-## src ##
+## Attributes ##
+
+### src ###

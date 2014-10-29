@@ -4,16 +4,18 @@ layout: default
 
 # nsIXPCTestObjectReadOnly #
 
-## strReadOnly ##
+## Attributes ##
 
-## boolReadOnly ##
+### strReadOnly ###
 
-## shortReadOnly ##
+### boolReadOnly ###
 
-## longReadOnly ##
+### shortReadOnly ###
 
-## floatReadOnly ##
+### longReadOnly ###
 
-## charReadOnly ##
+### floatReadOnly ###
 
-## timeReadOnly ##
+### charReadOnly ###
+
+### timeReadOnly ###

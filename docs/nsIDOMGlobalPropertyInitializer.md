@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMGlobalPropertyInitializer #
 
-## init ##
+## Methods ##
+
+### init ###

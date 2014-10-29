@@ -4,7 +4,9 @@ layout: default
 
 # nsIBrowserSearchService #
 
-## init ##
+## Methods ##
+
+### init ###
 
 Start asynchronous initialization.
 
@@ -15,21 +17,7 @@ call to this method. The callback is always invoked asynchronously.
 @param aObserver An optional object observing the end of initialization.
 
 
-## isInitialized ##
-
-Determine whether initialization has been completed.
-
-Clients of the service can use this attribute to quickly determine whether
-initialization is complete, and decide to trigger some immediate treatment,
-to launch asynchronous initialization or to bailout.
-
-Note that this attribute does not indicate that initialization has succeeded.
-
-@return |true| if the search service is now initialized, |false| if
-initialization has not been triggered yet.
-
-
-## addEngine ##
+### addEngine ###
 
 Adds a new search engine from the file at the supplied URI, optionally
 asking the user for confirmation first.  If a confirmation dialog is
@@ -63,7 +51,7 @@ right away.
         file cannot be successfully loaded.
 
 
-## addEngineWithDetails ##
+### addEngineWithDetails ###
 
 Adds a new search engine, without asking the user for confirmation and
 without starting to use it right away.
@@ -94,14 +82,14 @@ without starting to use it right away.
        Optional: The correct extensionID if called by an add-on.
 
 
-## restoreDefaultEngines ##
+### restoreDefaultEngines ###
 
 Un-hides all engines installed in the directory corresponding to
 the directory service's NS_APP_SEARCH_DIR key. (i.e. the set of
 engines returned by getDefaultEngines)
 
 
-## getEngineByAlias ##
+### getEngineByAlias ###
 
 Returns an engine with the specified alias.
 
@@ -111,7 +99,7 @@ Returns an engine with the specified alias.
          exist.
 
 
-## getEngineByName ##
+### getEngineByName ###
 
 Returns an engine with the specified name.
 
@@ -121,14 +109,14 @@ Returns an engine with the specified name.
          exist.
 
 
-## getEngines ##
+### getEngines ###
 
 Returns an array of all installed search engines.
 
 @returns an array of nsISearchEngine objects.
 
 
-## getVisibleEngines ##
+### getVisibleEngines ###
 
 Returns an array of all installed search engines whose hidden attribute is
 false.
@@ -136,7 +124,7 @@ false.
 @returns an array of nsISearchEngine objects.
 
 
-## getDefaultEngines ##
+### getDefaultEngines ###
 
 Returns an array of all default search engines. This includes all loaded
 engines that aren't in the user's profile directory
@@ -145,7 +133,7 @@ engines that aren't in the user's profile directory
 @returns an array of nsISearchEngine objects.
 
 
-## moveEngine ##
+### moveEngine ###
 
 Moves a visible search engine.
 
@@ -158,7 +146,7 @@ Moves a visible search engine.
         hidden.
 
 
-## removeEngine ##
+### removeEngine ###
 
 Removes the search engine. If the search engine is installed in a global
 location, this will just hide the engine. If the engine is in the user's
@@ -168,19 +156,7 @@ profile directory, it will be removed from disk.
         The engine to remove.
 
 
-## defaultEngine ##
-
-The default search engine. Returns the first visible engine if the default
-engine is hidden. May be null if there are no visible search engines.
-
-
-## currentEngine ##
-
-The currently active search engine. May be null if there are no visible
-search engines.
-
-
-## parseSubmissionURL ##
+### parseSubmissionURL ###
 
 Determines if the provided URL represents results from a search engine, and
 provides details about the match.
@@ -194,4 +170,32 @@ string, but other parameters are ignored.
 @param url
        String containing the URL to parse, for example
        "https://www.google.com/search?q=terms".
+
+
+## Attributes ##
+
+### isInitialized ###
+
+Determine whether initialization has been completed.
+
+Clients of the service can use this attribute to quickly determine whether
+initialization is complete, and decide to trigger some immediate treatment,
+to launch asynchronous initialization or to bailout.
+
+Note that this attribute does not indicate that initialization has succeeded.
+
+@return |true| if the search service is now initialized, |false| if
+initialization has not been triggered yet.
+
+
+### defaultEngine ###
+
+The default search engine. Returns the first visible engine if the default
+engine is hidden. May be null if there are no visible search engines.
+
+
+### currentEngine ###
+
+The currently active search engine. May be null if there are no visible
+search engines.
 

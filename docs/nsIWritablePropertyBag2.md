@@ -4,22 +4,24 @@ layout: default
 
 # nsIWritablePropertyBag2 #
 
-## setPropertyAsInt32 ##
+## Methods ##
 
-## setPropertyAsUint32 ##
+### setPropertyAsInt32 ###
 
-## setPropertyAsInt64 ##
+### setPropertyAsUint32 ###
 
-## setPropertyAsUint64 ##
+### setPropertyAsInt64 ###
 
-## setPropertyAsDouble ##
+### setPropertyAsUint64 ###
 
-## setPropertyAsAString ##
+### setPropertyAsDouble ###
 
-## setPropertyAsACString ##
+### setPropertyAsAString ###
 
-## setPropertyAsAUTF8String ##
+### setPropertyAsACString ###
 
-## setPropertyAsBool ##
+### setPropertyAsAUTF8String ###
 
-## setPropertyAsInterface ##
+### setPropertyAsBool ###
+
+### setPropertyAsInterface ###

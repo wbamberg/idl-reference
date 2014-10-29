@@ -4,10 +4,12 @@ layout: default
 
 # nsIDOMNSEvent #
 
-## ALT_MASK ##
+## Constants ##
 
-## CONTROL_MASK ##
+### ALT_MASK ###
 
-## SHIFT_MASK ##
+### CONTROL_MASK ###
 
-## META_MASK ##
+### SHIFT_MASK ###
+
+### META_MASK ###

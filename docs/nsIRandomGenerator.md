@@ -9,7 +9,9 @@ Interface used to generate random data.
 @threadsafe
 
 
-## generateRandomBytes ##
+## Methods ##
+
+### generateRandomBytes ###
 
 Generates the specified amount of random bytes.
 

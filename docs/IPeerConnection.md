@@ -4,62 +4,64 @@ layout: default
 
 # IPeerConnection #
 
-## kHintAudio ##
+## Constants ##
 
-## kHintVideo ##
+### kHintAudio ###
 
-## kActionNone ##
+### kHintVideo ###
 
-## kActionOffer ##
+### kActionNone ###
 
-## kActionAnswer ##
+### kActionOffer ###
 
-## kActionPRAnswer ##
+### kActionAnswer ###
 
-## kIceGathering ##
+### kActionPRAnswer ###
 
-## kIceWaiting ##
+### kIceGathering ###
 
-## kIceChecking ##
+### kIceWaiting ###
 
-## kIceConnected ##
+### kIceChecking ###
 
-## kIceFailed ##
+### kIceConnected ###
 
-## kNew ##
+### kIceFailed ###
 
-## kNegotiating ##
+### kNew ###
 
-## kActive ##
+### kNegotiating ###
 
-## kClosing ##
+### kActive ###
 
-## kClosed ##
+### kClosing ###
 
-## kDataChannelReliable ##
+### kClosed ###
 
-## kDataChannelPartialReliableRexmit ##
+### kDataChannelReliable ###
 
-## kDataChannelPartialReliableTimed ##
+### kDataChannelPartialReliableRexmit ###
 
-## kNoError ##
+### kDataChannelPartialReliableTimed ###
 
-## kInvalidConstraintsType ##
+### kNoError ###
 
-## kInvalidCandidateType ##
+### kInvalidConstraintsType ###
 
-## kInvalidMediastreamTrack ##
+### kInvalidCandidateType ###
 
-## kInvalidState ##
+### kInvalidMediastreamTrack ###
 
-## kInvalidSessionDescription ##
+### kInvalidState ###
 
-## kIncompatibleSessionDescription ##
+### kInvalidSessionDescription ###
 
-## kIncompatibleConstraints ##
+### kIncompatibleSessionDescription ###
 
-## kIncompatibleMediaStreamTrack ##
+### kIncompatibleConstraints ###
 
-## kInternalError ##
+### kIncompatibleMediaStreamTrack ###
 
-## kMaxErrorType ##
+### kInternalError ###
+
+### kMaxErrorType ###

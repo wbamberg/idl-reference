@@ -4,16 +4,20 @@ layout: default
 
 # nsIDOMHTMLCanvasElement #
 
-## width ##
+## Methods ##
 
-## height ##
+### toDataURL ###
 
-## mozOpaque ##
+### mozGetAsFile ###
 
-## toDataURL ##
+### MozGetIPCContext ###
 
-## mozGetAsFile ##
+### mozFetchAsStream ###
 
-## MozGetIPCContext ##
+## Attributes ##
 
-## mozFetchAsStream ##
+### width ###
+
+### height ###
+
+### mozOpaque ###

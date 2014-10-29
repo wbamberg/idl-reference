@@ -4,20 +4,24 @@ layout: default
 
 # nsIJSRuntimeService #
 
-## runtime ##
+## Methods ##
 
-## registerGCCallback ##
+### registerGCCallback ###
 
 Register additional GC callback which will run after the
 standard XPConnect callback.
 
 
-## unregisterGCCallback ##
+### unregisterGCCallback ###
 
-## registerContextCallback ##
+### registerContextCallback ###
 
 Register additional context callback which will run after the
 standard XPConnect callback.
 
 
-## unregisterContextCallback ##
+### unregisterContextCallback ###
+
+## Attributes ##
+
+### runtime ###

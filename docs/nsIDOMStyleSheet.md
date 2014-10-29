@@ -11,16 +11,18 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Style
 
 
-## type ##
+## Attributes ##
 
-## disabled ##
+### type ###
 
-## ownerNode ##
+### disabled ###
 
-## parentStyleSheet ##
+### ownerNode ###
 
-## href ##
+### parentStyleSheet ###
 
-## title ##
+### href ###
 
-## media ##
+### title ###
+
+### media ###

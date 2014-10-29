@@ -4,15 +4,17 @@ layout: default
 
 # nsIX509CertList #
 
-## addCert ##
+## Methods ##
 
-## deleteCert ##
+### addCert ###
 
-## getEnumerator ##
+### deleteCert ###
 
-## getRawCertList ##
+### getEnumerator ###
 
-## equals ##
+### getRawCertList ###
+
+### equals ###
 
 Test whether two certificate list instances represent the same
 certificate list.

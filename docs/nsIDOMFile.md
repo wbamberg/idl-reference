@@ -4,14 +4,16 @@ layout: default
 
 # nsIDOMFile #
 
-## name ##
+## Attributes ##
 
-## path ##
+### name ###
 
-## lastModifiedDate ##
+### path ###
 
-## mozFullPath ##
+### lastModifiedDate ###
 
-## mozFullPathInternal ##
+### mozFullPath ###
 
-## mozLastModifiedDate ##
+### mozFullPathInternal ###
+
+### mozLastModifiedDate ###

@@ -11,30 +11,36 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Events/
 
 
-## view ##
+## Methods ##
 
-## detail ##
+### initUIEvent ###
 
-## initUIEvent ##
+## Attributes ##
 
-## SCROLL_PAGE_UP ##
+### view ###
 
-## SCROLL_PAGE_DOWN ##
+### detail ###
 
-## layerX ##
+### layerX ###
 
-## layerY ##
+### layerY ###
 
-## pageX ##
+### pageX ###
 
-## pageY ##
+### pageY ###
 
-## which ##
+### which ###
 
-## rangeParent ##
+### rangeParent ###
 
-## rangeOffset ##
+### rangeOffset ###
 
-## cancelBubble ##
+### cancelBubble ###
 
-## isChar ##
+### isChar ###
+
+## Constants ##
+
+### SCROLL_PAGE_UP ###
+
+### SCROLL_PAGE_DOWN ###

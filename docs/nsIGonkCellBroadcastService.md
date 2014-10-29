@@ -4,7 +4,9 @@ layout: default
 
 # nsIGonkCellBroadcastService #
 
-## notifyMessageReceived ##
+## Methods ##
+
+### notifyMessageReceived ###
 
 Called when a cellbroadcast message has been received by the network.
 

@@ -4,4 +4,6 @@ layout: default
 
 # nsISystemMessagesWrapper #
 
-## wrapMessage ##
+## Methods ##
+
+### wrapMessage ###

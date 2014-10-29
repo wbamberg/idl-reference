@@ -4,4 +4,6 @@ layout: default
 
 # nsIVerifySignedManifestCallback #
 
-## verifySignedManifestFinished ##
+## Methods ##
+
+### verifySignedManifestFinished ###

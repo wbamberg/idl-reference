@@ -4,6 +4,10 @@ layout: default
 
 # nsIDOMClientRectList #
 
-## length ##
+## Methods ##
 
-## item ##
+### item ###
+
+## Attributes ##
+
+### length ###

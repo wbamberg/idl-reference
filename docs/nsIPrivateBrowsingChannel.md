@@ -10,7 +10,9 @@ privacy state of the channel.
 This interface must be used only from the XPCOM main thread.
 
 
-## setPrivate ##
+## Methods ##
+
+### setPrivate ###
 
 Determine whether the channel is tied to a private browsing window.
 
@@ -33,7 +35,11 @@ or notificationCallbacks are set after setPrivate has been called.
 @param aPrivate whether the channel should be opened in private mode.
 
 
-## isChannelPrivate ##
+### isPrivateModeOverriden ###
+
+## Attributes ##
+
+### isChannelPrivate ###
 
 States whether the channel is in private browsing mode. This may either
 happen because the channel is opened from a private mode context or
@@ -41,5 +47,3 @@ when the mode is explicitly set with ::setPrivate().
 
 This attribute is equivalent to NS_UsePrivateBrowsing(), but scriptable.
 
-
-## isPrivateModeOverriden ##

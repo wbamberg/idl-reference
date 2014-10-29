@@ -4,43 +4,45 @@ layout: default
 
 # mozILivemarkInfo #
 
-## id ##
+## Attributes ##
+
+### id ###
 
 Id of the bookmarks folder representing this livemark.
 
 
-## guid ##
+### guid ###
 
 The globally unique identifier of this livemark.
 
 
-## title ##
+### title ###
 
 Title of this livemark.
 
 
-## parentId ##
+### parentId ###
 
 Id of the bookmarks parent folder containing this livemark.
 
 
-## index ##
+### index ###
 
 The position of this livemark in the bookmarks parent folder.
 
 
-## lastModified ##
+### lastModified ###
 
 Time this livemark's details were last modified.  Doesn't track changes to
 the livemark contents.
 
 
-## feedURI ##
+### feedURI ###
 
 The URI of the syndication feed associated with this livemark.
 
 
-## siteURI ##
+### siteURI ###
 
 The URI of the website associated with this livemark.
 

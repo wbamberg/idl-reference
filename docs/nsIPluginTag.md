@@ -4,42 +4,48 @@ layout: default
 
 # nsIPluginTag #
 
-## STATE_DISABLED ##
+## Methods ##
 
-## STATE_CLICKTOPLAY ##
+### getMimeTypes ###
 
-## STATE_ENABLED ##
+### getMimeDescriptions ###
 
-## description ##
+### getExtensions ###
 
-## filename ##
+## Attributes ##
 
-## fullpath ##
+### description ###
 
-## version ##
+### filename ###
 
-## name ##
+### fullpath ###
 
-## blocklisted ##
+### version ###
+
+### name ###
+
+### blocklisted ###
 
 true only if this plugin is "hardblocked" and cannot be enabled.
 
 
-## isEnabledStateLocked ##
+### isEnabledStateLocked ###
 
 true if the state is non-default and locked, false otherwise.
 
 
-## disabled ##
+### disabled ###
 
-## clicktoplay ##
+### clicktoplay ###
 
-## enabledState ##
+### enabledState ###
 
-## lastModifiedTime ##
+### lastModifiedTime ###
 
-## getMimeTypes ##
+## Constants ##
 
-## getMimeDescriptions ##
+### STATE_DISABLED ###
 
-## getExtensions ##
+### STATE_CLICKTOPLAY ###
+
+### STATE_ENABLED ###

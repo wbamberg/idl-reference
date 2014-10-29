@@ -12,135 +12,27 @@ HTML frameset document or if the document contains iframe elements.
 @see <http://www.whatwg.org/html/#window>
 
 
-## window ##
+## Methods ##
 
-## self ##
+### close ###
 
-## document ##
+### stop ###
 
-Accessor for the document in this window.
+### focus ###
 
+### blur ###
 
-## name ##
+### alert ###
 
-Set/Get the name of this window.
+### confirm ###
 
-This attribute is "replaceable" in JavaScript
+### prompt ###
 
+### print ###
 
-## location ##
+### showModalDialog ###
 
-## history ##
-
-## locationbar ##
-
-## menubar ##
-
-## personalbar ##
-
-## scrollbars ##
-
-Accessor for the object that controls whether or not scrollbars
-are shown in this window.
-
-This attribute is "replaceable" in JavaScript
-
-
-## statusbar ##
-
-## toolbar ##
-
-## status ##
-
-## close ##
-
-## stop ##
-
-## focus ##
-
-## blur ##
-
-## length ##
-
-## top ##
-
-|top| gets the root of the window hierarchy.
-
-This function does not cross chrome-content boundaries, so if this
-window's parent is of a different type, |top| will return this window.
-
-When script reads the top property, we run GetScriptableTop, which
-will not cross an <iframe mozbrowser> boundary.
-
-In contrast, C++ calls to GetTop are forwarded to GetRealTop, which
-ignores <iframe mozbrowser> boundaries.
-
-This property is "replaceable" in JavaScript.
-
-
-## realTop ##
-
-You shouldn't need to call this function directly; call GetTop instead.
-
-
-## parent ##
-
-|parent| gets this window's parent window.  If this window has no parent,
-we return the window itself.
-
-This property does not cross chrome-content boundaries, so if this
-window's parent is of a different type, we return the window itself as its
-parent.
-
-When script reads the property (or when C++ calls ScriptableTop), this
-property does not cross <iframe mozbrowser> boundaries.  In contrast, when
-C++ calls GetParent, we ignore the mozbrowser attribute.
-
-
-## realParent ##
-
-You shouldn't need to read this property directly; call GetParent instead.
-
-
-## opener ##
-
-## openerWindow ##
-
-## frameElement ##
-
-|frameElement| gets this window's <iframe> or <frame> element, if it has
-one.
-
-When script reads this property (or when C++ calls
-ScriptableFrameElement), we return |null| if the window is inside an
-<iframe mozbrowser>.  In contrast, when C++ calls GetFrameElement, we
-ignore the mozbrowser attribute.
-
-
-## realFrameElement ##
-
-You shouldn't need to read this property directly; call GetFrameElement
-instead.
-
-
-## navigator ##
-
-## applicationCache ##
-
-Get the application cache object for this window.
-
-
-## alert ##
-
-## confirm ##
-
-## prompt ##
-
-## print ##
-
-## showModalDialog ##
-
-## postMessage ##
+### postMessage ###
 
 Implements a safe message-passing system which can cross same-origin
 boundaries.
@@ -159,161 +51,67 @@ location of the other).
 @see <http://www.whatwg.org/html/#dom-window-postmessage>
 
 
-## atob ##
+### atob ###
 
-## btoa ##
+### btoa ###
 
-## sessionStorage ##
-
-Session storage for the current browsing context.
-This attribute is a DOMStorage
-
-
-## localStorage ##
-
-Local storage for the current browsing context.
-This attribute is a DOMStorage
-
-
-## indexedDB ##
-
-## mozIndexedDB ##
-
-## getSelection ##
+### getSelection ###
 
 Method for accessing this window's selection object.
 
 
-## matchMedia ##
+### matchMedia ###
 
-## screen ##
+### scroll ###
 
-## innerWidth ##
-
-## innerHeight ##
-
-## scrollX ##
-
-Accessor for the current x scroll position in this window in
-pixels.
-
-This attribute is "replaceable" in JavaScript
-
-
-## pageXOffset ##
-
-## scrollY ##
-
-Accessor for the current y scroll position in this window in
-pixels.
-
-This attribute is "replaceable" in JavaScript
-
-
-## pageYOffset ##
-
-## scroll ##
-
-## scrollTo ##
+### scrollTo ###
 
 Method for scrolling this window to an absolute pixel offset.
 
 
-## scrollBy ##
+### scrollBy ###
 
 Method for scrolling this window to a pixel offset relative to
 the current scroll position.
 
 
-## screenX ##
-
-## screenY ##
-
-## outerWidth ##
-
-## outerHeight ##
-
-## getComputedStyle ##
+### getComputedStyle ###
 
 @see <http://dev.w3.org/csswg/cssom/#dom-window-getcomputedstyle>
 
 
-## getDefaultComputedStyle ##
+### getDefaultComputedStyle ###
 
-## windowRoot ##
-
-Get the window root for this window. This is useful for hooking
-up event listeners to this window and every other window nested
-in the window root.
-
-
-## frames ##
-
-Accessor for the child windows in this window.
-
-
-## textZoom ##
-
-Set/Get the document scale factor as a multiplier on the default
-size. When setting this attribute, a NS_ERROR_NOT_IMPLEMENTED
-error may be returned by implementations not supporting
-zoom. Implementations not supporting zoom should return 1.0 all
-the time for the Get operation. 1.0 is equals normal size,
-i.e. no zoom.
-
-
-## scrollByLines ##
+### scrollByLines ###
 
 Method for scrolling this window by a number of lines.
 
 
-## scrollByPages ##
+### scrollByPages ###
 
 Method for scrolling this window by a number of pages.
 
 
-## sizeToContent ##
+### sizeToContent ###
 
 Method for sizing this window to the content in the window.
 
 
-## content ##
+### back ###
 
-## prompter ##
+### forward ###
 
-## closed ##
+### home ###
 
-## crypto ##
+### moveTo ###
 
-## controllers ##
+### moveBy ###
 
-## mozInnerScreenX ##
+### resizeTo ###
 
-## mozInnerScreenY ##
+### resizeBy ###
 
-## devicePixelRatio ##
-
-## scrollMaxX ##
-
-## scrollMaxY ##
-
-## fullScreen ##
-
-## back ##
-
-## forward ##
-
-## home ##
-
-## moveTo ##
-
-## moveBy ##
-
-## resizeTo ##
-
-## resizeBy ##
-
-## open ##
+### open ###
 
 Open a new window with this one as the parent.  This method will
 NOT examine the JS stack for purposes of determining a caller.
@@ -322,7 +120,7 @@ name and the default character set on the newly opened window
 will just be the default character set of this window.
 
 
-## openDialog ##
+### openDialog ###
 
 This method works like open except that aExtraArgument gets
 converted into the array window.arguments in JS, if
@@ -332,40 +130,246 @@ nsISupports (nsISupportsPrimitives) types are converted to native
 JS types when possible.
 
 
-## updateCommands ##
+### updateCommands ###
 
-## find ##
+### find ###
 
-## mozPaintCount ##
-
-Returns the number of times this document for this window has
-been painted to the screen.
-
-
-## mozRequestAnimationFrame ##
+### mozRequestAnimationFrame ###
 
 Request a refresh of this browser window.
 
 @see <http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/RequestAnimationFrame/Overview.html>
 
 
-## requestAnimationFrame ##
+### requestAnimationFrame ###
 
-## mozCancelAnimationFrame ##
+### mozCancelAnimationFrame ###
 
 Cancel a refresh callback.
 
 
-## mozCancelRequestAnimationFrame ##
+### mozCancelRequestAnimationFrame ###
 
-## cancelAnimationFrame ##
+### cancelAnimationFrame ###
 
-## mozAnimationStartTime ##
+## Attributes ##
+
+### window ###
+
+### self ###
+
+### document ###
+
+Accessor for the document in this window.
+
+
+### name ###
+
+Set/Get the name of this window.
+
+This attribute is "replaceable" in JavaScript
+
+
+### location ###
+
+### history ###
+
+### locationbar ###
+
+### menubar ###
+
+### personalbar ###
+
+### scrollbars ###
+
+Accessor for the object that controls whether or not scrollbars
+are shown in this window.
+
+This attribute is "replaceable" in JavaScript
+
+
+### statusbar ###
+
+### toolbar ###
+
+### status ###
+
+### length ###
+
+### top ###
+
+|top| gets the root of the window hierarchy.
+
+This function does not cross chrome-content boundaries, so if this
+window's parent is of a different type, |top| will return this window.
+
+When script reads the top property, we run GetScriptableTop, which
+will not cross an <iframe mozbrowser> boundary.
+
+In contrast, C++ calls to GetTop are forwarded to GetRealTop, which
+ignores <iframe mozbrowser> boundaries.
+
+This property is "replaceable" in JavaScript.
+
+
+### realTop ###
+
+You shouldn't need to call this function directly; call GetTop instead.
+
+
+### parent ###
+
+|parent| gets this window's parent window.  If this window has no parent,
+we return the window itself.
+
+This property does not cross chrome-content boundaries, so if this
+window's parent is of a different type, we return the window itself as its
+parent.
+
+When script reads the property (or when C++ calls ScriptableTop), this
+property does not cross <iframe mozbrowser> boundaries.  In contrast, when
+C++ calls GetParent, we ignore the mozbrowser attribute.
+
+
+### realParent ###
+
+You shouldn't need to read this property directly; call GetParent instead.
+
+
+### opener ###
+
+### openerWindow ###
+
+### frameElement ###
+
+|frameElement| gets this window's <iframe> or <frame> element, if it has
+one.
+
+When script reads this property (or when C++ calls
+ScriptableFrameElement), we return |null| if the window is inside an
+<iframe mozbrowser>.  In contrast, when C++ calls GetFrameElement, we
+ignore the mozbrowser attribute.
+
+
+### realFrameElement ###
+
+You shouldn't need to read this property directly; call GetFrameElement
+instead.
+
+
+### navigator ###
+
+### applicationCache ###
+
+Get the application cache object for this window.
+
+
+### sessionStorage ###
+
+Session storage for the current browsing context.
+This attribute is a DOMStorage
+
+
+### localStorage ###
+
+Local storage for the current browsing context.
+This attribute is a DOMStorage
+
+
+### indexedDB ###
+
+### mozIndexedDB ###
+
+### screen ###
+
+### innerWidth ###
+
+### innerHeight ###
+
+### scrollX ###
+
+Accessor for the current x scroll position in this window in
+pixels.
+
+This attribute is "replaceable" in JavaScript
+
+
+### pageXOffset ###
+
+### scrollY ###
+
+Accessor for the current y scroll position in this window in
+pixels.
+
+This attribute is "replaceable" in JavaScript
+
+
+### pageYOffset ###
+
+### screenX ###
+
+### screenY ###
+
+### outerWidth ###
+
+### outerHeight ###
+
+### windowRoot ###
+
+Get the window root for this window. This is useful for hooking
+up event listeners to this window and every other window nested
+in the window root.
+
+
+### frames ###
+
+Accessor for the child windows in this window.
+
+
+### textZoom ###
+
+Set/Get the document scale factor as a multiplier on the default
+size. When setting this attribute, a NS_ERROR_NOT_IMPLEMENTED
+error may be returned by implementations not supporting
+zoom. Implementations not supporting zoom should return 1.0 all
+the time for the Get operation. 1.0 is equals normal size,
+i.e. no zoom.
+
+
+### content ###
+
+### prompter ###
+
+### closed ###
+
+### crypto ###
+
+### controllers ###
+
+### mozInnerScreenX ###
+
+### mozInnerScreenY ###
+
+### devicePixelRatio ###
+
+### scrollMaxX ###
+
+### scrollMaxY ###
+
+### fullScreen ###
+
+### mozPaintCount ###
+
+Returns the number of times this document for this window has
+been painted to the screen.
+
+
+### mozAnimationStartTime ###
 
 The current animation start time in milliseconds since the epoch.
 
 
-## console ##
+### console ###
 
 Console API
 

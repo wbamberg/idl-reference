@@ -7,7 +7,9 @@ layout: default
 nsIDirectoryService
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 init
 
@@ -15,7 +17,7 @@ Must be called. Used internally by XPCOM initialization.
 
 
 
-## registerProvider ##
+### registerProvider ###
 
 registerProvider
 
@@ -27,7 +29,7 @@ Register a provider with the service.
 
 
 
-## unregisterProvider ##
+### unregisterProvider ###
 
 unregisterProvider
 

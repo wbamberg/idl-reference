@@ -4,6 +4,8 @@ layout: default
 
 # nsISettingsServiceLock #
 
-## set ##
+## Methods ##
 
-## get ##
+### set ###
+
+### get ###

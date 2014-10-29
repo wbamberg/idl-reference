@@ -10,18 +10,20 @@ The nsISessionStore API operates mostly on browser windows and the browser
 tabs contained in them.
 
 
-## getBrowserState ##
+## Methods ##
+
+### getBrowserState ###
 
 Get the current browsing state.
 @returns a JSON string representing the session state.
 
 
-## getClosedTabCount ##
+### getClosedTabCount ###
 
 Get the number of restore-able tabs for a browser window
 
 
-## getClosedTabs ##
+### getClosedTabs ###
 
 Get closed tab data
 
@@ -29,20 +31,20 @@ Get closed tab data
 @returns a JS array of closed tabs.
 
 
-## undoCloseTab ##
+### undoCloseTab ###
 
 @param aWindow is the browser window to reopen a closed tab in.
 @param aCloseTabData is the data of the tab to be restored.
 @returns a reference to the reopened tab.
 
 
-## forgetClosedTab ##
+### forgetClosedTab ###
 
 @param aWindow is the browser window associated with the closed tab.
 @param aIndex  is the index of the closed tab to be removed (FIFO ordered).
 
 
-## getTabValue ##
+### getTabValue ###
 
 @param aTab is the browser tab to get the value for.
 @param aKey is the value's name.
@@ -50,27 +52,27 @@ Get closed tab data
 @returns A string value or an empty string if none is set.
 
 
-## setTabValue ##
+### setTabValue ###
 
 @param aTab         is the browser tab to set the value for.
 @param aKey         is the value's name.
 @param aStringValue is the value itself (use JSON.stringify/parse before setting JS objects).
 
 
-## deleteTabValue ##
+### deleteTabValue ###
 
 @param aTab is the browser tab to get the value for.
 @param aKey is the value's name.
 
 
-## restoreLastSession ##
+### restoreLastSession ###
 
 Restores the previous browser session using a fast, lightweight strategy
 @param aSessionString The session string to restore from. If null, the
                       backup session file is read from.
 
 
-## removeWindow ##
+### removeWindow ###
 
 Removes a window from the current session history. Data from this window
 won't be saved when its closed.

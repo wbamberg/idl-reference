@@ -9,16 +9,9 @@ nsIServerSocket
 An interface to a server socket that can accept incoming connections.
 
 
-## LoopbackOnly ##
+## Methods ##
 
-@name Server Socket Flags
-These flags define various socket options.
-@{
-
-
-## KeepWhenOffline ##
-
-## init ##
+### init ###
  @} */
 
 init
@@ -39,7 +32,7 @@ This method initializes a server socket.
        Pass -1 to use the default value.
 
 
-## initSpecialConnection ##
+### initSpecialConnection ###
 
 initSpecialConnection
 
@@ -57,7 +50,7 @@ that socket not get terminated if Gecko is set offline.
        Pass -1 to use the default value.
 
 
-## initWithAddress ##
+### initWithAddress ###
 
 initWithAddress
 
@@ -72,7 +65,7 @@ local address (and hence a particular local network interface).
        Pass -1 to use the default value.
 
 
-## initWithFilename ##
+### initWithFilename ###
 
 initWithFilename
 
@@ -126,7 +119,7 @@ always applied, so creating sockets in appropriately protected
 directories should be secure on both old and new systems.
 
 
-## close ##
+### close ###
 
 close
 
@@ -136,7 +129,7 @@ created from this server socket).  This will cause the onStopListening
 event to asynchronously fire with a status of NS_BINDING_ABORTED.
 
 
-## asyncListen ##
+### asyncListen ###
 
 asyncListen
 
@@ -153,12 +146,7 @@ transport (nsISocketTransport).  See below for more details.
        The listener to be notified when client connections are accepted.
 
 
-## port ##
-
-Returns the port of this server socket.
-
-
-## getAddress ##
+### getAddress ###
 
 Returns the address to which this server socket is bound.  Since a
 server socket may be bound to multiple network devices, this address
@@ -168,3 +156,21 @@ indicate a server socket bound to all network devices.  Therefore,
 this method cannot be used to determine the IP address of the local
 system.  See nsIDNSService::myHostName if this is what you need.
 
+
+## Attributes ##
+
+### port ###
+
+Returns the port of this server socket.
+
+
+## Constants ##
+
+### LoopbackOnly ###
+
+@name Server Socket Flags
+These flags define various socket options.
+@{
+
+
+### KeepWhenOffline ###

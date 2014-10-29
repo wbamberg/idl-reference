@@ -4,7 +4,9 @@ layout: default
 
 # nsIProxiedProtocolHandler #
 
-## newProxiedChannel2 ##
+## Methods ##
+
+### newProxiedChannel2 ###
  Create a new channel with the given proxyInfo
 
 @param uri the channel uri
@@ -21,7 +23,7 @@ layout: default
        a ws:// uri.
 
 
-## newProxiedChannel ##
+### newProxiedChannel ###
  Create a new channel with the given proxyInfo
 
 @param uri the channel uri

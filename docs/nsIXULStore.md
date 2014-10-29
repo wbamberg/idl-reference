@@ -11,7 +11,9 @@ window location, toolbars that are open and nodes that are open and closed in a 
 The data is serialized to [profile directory]/xulstore.json
 
 
-## setValue ##
+## Methods ##
+
+### setValue ###
 
 Sets a value in the store.
 
@@ -21,7 +23,7 @@ Sets a value in the store.
 @param value - value of the attribute
 
 
-## hasValue ##
+### hasValue ###
 
 Returns true if the store contains a value for attr.
 
@@ -30,7 +32,7 @@ Returns true if the store contains a value for attr.
 @param attr - attribute
 
 
-## getValue ##
+### getValue ###
 
 Retrieves a value in the store, or an empty string if it does not exist.
 
@@ -41,7 +43,7 @@ Retrieves a value in the store, or an empty string if it does not exist.
 @returns the value of the attribute
 
 
-## removeValue ##
+### removeValue ###
 
 Removes a value in the store.
 
@@ -50,7 +52,7 @@ Removes a value in the store.
 @param attr - attribute to remove
 
 
-## getIDsEnumerator ##
+### getIDsEnumerator ###
 
 Iterates over all of the ids associated with a given document uri that
 have stored data.
@@ -58,7 +60,7 @@ have stored data.
 @param doc - document URI
 
 
-## getAttributeEnumerator ##
+### getAttributeEnumerator ###
 
 Iterates over all of the attributes associated with a given document uri
 and id that have stored data.

@@ -4,4 +4,6 @@ layout: default
 
 # nsISystemMessageGlue #
 
-## openApp ##
+## Methods ##
+
+### openApp ###

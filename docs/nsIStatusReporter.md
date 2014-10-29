@@ -4,8 +4,10 @@ layout: default
 
 # nsIStatusReporter #
 
-## name ##
+## Attributes ##
 
-## process ##
+### name ###
 
-## description ##
+### process ###
+
+### description ###

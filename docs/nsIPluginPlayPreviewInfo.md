@@ -4,8 +4,10 @@ layout: default
 
 # nsIPluginPlayPreviewInfo #
 
-## mimeType ##
+## Attributes ##
 
-## ignoreCTP ##
+### mimeType ###
 
-## redirectURL ##
+### ignoreCTP ###
+
+### redirectURL ###

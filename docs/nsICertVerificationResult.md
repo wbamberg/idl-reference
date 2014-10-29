@@ -4,7 +4,9 @@ layout: default
 
 # nsICertVerificationResult #
 
-## getUsagesArrayResult ##
+## Methods ##
+
+### getUsagesArrayResult ###
 
  This interface reflects a container of
  verification results. Call will not block.

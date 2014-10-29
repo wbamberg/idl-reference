@@ -4,10 +4,12 @@ layout: default
 
 # nsIMobileMessageService #
 
-## createSmsMessage ##
+## Methods ##
 
-## createMmsMessage ##
+### createSmsMessage ###
 
-## createThread ##
+### createMmsMessage ###
 
-## createDeletedMessageInfo ##
+### createThread ###
+
+### createDeletedMessageInfo ###

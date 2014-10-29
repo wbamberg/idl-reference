@@ -110,45 +110,9 @@ to provide any support for updating results after they have been generated.
 See http://wiki.mozilla.org/XUL:Templates_Plan for details about templates.
 
 
-## root ##
+## Methods ##
 
-The root node in the DOM to which this builder is attached.
-
-
-## datasource ##
-
-The opaque datasource object that is used for the template. This object
-is created by the getDataSource method of the query processor. May be
-null if the datasource has not been loaded yet. Set this attribute to
-use a different datasource and rebuild the template.
-
-For an RDF datasource, this will be the same as the database. For XML
-this will be the nsIDOMNode for the datasource document or node for
-an inline reference (such as #name). Other query processors may use
-other types for the datasource.
-
-
-## database ##
-
-The composite datasource that the template builder observes
-and uses to create content. This is used only for RDF queries and is
-maintained for backwards compatibility. It will be the same object as
-the datasource property. For non-RDF queries, it will always be null.
-
-
-## rootResult ##
-
-The virtual result representing the starting reference point,
-determined by calling the query processor's translateRef method
-with the root node's ref attribute as an argument.
-
-
-## queryProcessor ##
-
-The query processor used to generate results.
-
-
-## rebuild ##
+### rebuild ###
 
 Force the template builder to rebuild its content. All existing content
 will be removed first. The query processor's done() method will be
@@ -157,7 +121,7 @@ when the content is to be regenerated.
 
 
 
-## refresh ##
+### refresh ###
 
 Reload any of our RDF datasources that support nsIRDFRemoteDatasource. 
 
@@ -166,7 +130,7 @@ Reload any of our RDF datasources that support nsIRDFRemoteDatasource.
       this will no longer be necessary.
 
 
-## addResult ##
+### addResult ###
 
 Inform the template builder that a new result is available. The builder
 will add this result to the set of results. The query node that the
@@ -183,7 +147,7 @@ matches.
 @throws NS_ERROR_NULL_POINTER if aResult or aQueryNode are null
 
 
-## removeResult ##
+### removeResult ###
 
 Inform the template builder that a result no longer applies. The builder
 will call the remove content generated for the result, if any. If a different
@@ -195,7 +159,7 @@ method will have no effect if the result isn't known to the builder.
 @throws NS_ERROR_NULL_POINTER if aResult is null
 
 
-## replaceResult ##
+### replaceResult ###
 
 Inform the template builder that one result should be replaced with
 another. Both the old result (aOldResult) and the new result
@@ -213,7 +177,7 @@ removeResult for the old result and addResult for the new result.
         NS_ERROR_INVALID_ARG if the ids don't match
 
 
-## resultBindingChanged ##
+### resultBindingChanged ###
 
 Inform the template builder that one or more of the optional bindings
 for a result has changed. In this case, the rules are not reapplied as
@@ -225,7 +189,7 @@ resynchronize any variables that are referenced in the action body.
 @throws NS_ERROR_NULL_POINTER if aResult is null
 
 
-## getResultForId ##
+### getResultForId ###
 
 Return the result for a given id. Only one such result is returned and
 is always the result with that id associated with the active match.
@@ -234,7 +198,7 @@ This method will return null is there is no result for the id.
 @param aId the id to return the result for
 
 
-## getResultForContent ##
+### getResultForContent ###
 
 Retrieve the result corresponding to a generated element, or null is
 there isn't one.
@@ -242,7 +206,7 @@ there isn't one.
 @param aContent element to result the result of
 
 
-## hasGeneratedContent ##
+### hasGeneratedContent ###
 
 Returns true if the node has content generated for it. This method is
 intended to be called only by the RDF query processor. If aTag is set,
@@ -253,7 +217,7 @@ for builders that don't generate real DOM content.
 @param aTag tag that must match
 
 
-## addRuleFilter ##
+### addRuleFilter ###
 
 Adds a rule filter for a given rule, which may be used for specialized
 rule filtering. Any existing filter on the rule is removed. The default
@@ -266,7 +230,7 @@ rejected.
 @param aFilter the filter to add
 
 
-## init ##
+### init ###
 
 Called to initialize a XUL content builder on a particular root
 element. This element presumably has a ``datasources''
@@ -274,7 +238,7 @@ attribute, which the builder will parse to set up the template
 builder's datasources.
 
 
-## createContents ##
+### createContents ###
 
 Invoked lazily by a XUL element that needs its child content built.
 If aForceCreation is true, then the contents of an element will be
@@ -282,13 +246,53 @@ generated even if it is closed. If false, the element will only
 generate its contents if it is open. This behaviour is used with menus.
 
 
-## addListener ##
+### addListener ###
 
 Add a listener to this template builder. The template builder
 holds a strong reference to the listener.
 
 
-## removeListener ##
+### removeListener ###
 
 Remove a listener from this template builder.
+
+
+## Attributes ##
+
+### root ###
+
+The root node in the DOM to which this builder is attached.
+
+
+### datasource ###
+
+The opaque datasource object that is used for the template. This object
+is created by the getDataSource method of the query processor. May be
+null if the datasource has not been loaded yet. Set this attribute to
+use a different datasource and rebuild the template.
+
+For an RDF datasource, this will be the same as the database. For XML
+this will be the nsIDOMNode for the datasource document or node for
+an inline reference (such as #name). Other query processors may use
+other types for the datasource.
+
+
+### database ###
+
+The composite datasource that the template builder observes
+and uses to create content. This is used only for RDF queries and is
+maintained for backwards compatibility. It will be the same object as
+the datasource property. For non-RDF queries, it will always be null.
+
+
+### rootResult ###
+
+The virtual result representing the starting reference point,
+determined by calling the query processor's translateRef method
+with the root node's ref attribute as an argument.
+
+
+### queryProcessor ###
+
+The query processor used to generate results.
 

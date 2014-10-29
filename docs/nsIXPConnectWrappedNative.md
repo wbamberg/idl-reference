@@ -4,17 +4,21 @@ layout: default
 
 # nsIXPConnectWrappedNative #
 
-## Native ##
+## Methods ##
 
-## JSObjectPrototype ##
-
-## FindInterfaceWithMember ##
+### FindInterfaceWithMember ###
 
 These are here as an aid to nsIXPCScriptable implementors
 
 
-## FindInterfaceWithName ##
+### FindInterfaceWithName ###
 
-## HasNativeMember ##
+### HasNativeMember ###
 
-## debugDump ##
+### debugDump ###
+
+## Attributes ##
+
+### Native ###
+
+### JSObjectPrototype ###

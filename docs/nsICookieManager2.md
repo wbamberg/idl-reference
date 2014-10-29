@@ -7,7 +7,9 @@ layout: default
 Additions to the frozen nsICookieManager
 
 
-## add ##
+## Methods ##
+
+### add ###
 
 Add a cookie. nsICookieService is the normal way to do this. This
 method is something of a backdoor.
@@ -41,7 +43,7 @@ method is something of a backdoor.
        in this way, the more restrictive of the two will take effect.
 
 
-## cookieExists ##
+### cookieExists ###
 
 Find whether a given cookie already exists.
 
@@ -52,7 +54,7 @@ Find whether a given cookie already exists.
         fields of aCookie
 
 
-## countCookiesFromHost ##
+### countCookiesFromHost ###
 
 Count how many cookies exist within the base domain of 'aHost'.
 Thus, for a host "weather.yahoo.com", the base domain would be "yahoo.com",
@@ -67,7 +69,7 @@ counted.
 @return the number of cookies found.
 
 
-## getCookiesFromHost ##
+### getCookiesFromHost ###
 
 Returns an enumerator of cookies that exist within the base domain of
 'aHost'. Thus, for a host "weather.yahoo.com", the base domain would be
@@ -84,7 +86,7 @@ subdomains would be returned.
 @see countCookiesFromHost
 
 
-## importCookies ##
+### importCookies ###
 
 Import an old-style cookie file. Imported cookies will be added to the
 existing database. If the database contains any cookies the same as those
@@ -93,7 +95,7 @@ being imported (i.e. domain, name, and path match), they will be replaced.
 @param aCookieFile the file to import, usually cookies.txt
 
 
-## getCookiesForApp ##
+### getCookiesForApp ###
 
 Returns an enumerator of all cookies that are related to a specific app.
 
@@ -105,7 +107,7 @@ This method assumes that appId is a valid app id. It should not be a
 special value like UNKNOWN_APP_ID or NO_APP_ID.
 
 
-## removeCookiesForApp ##
+### removeCookiesForApp ###
 
 Remove all the cookies associated with the app with the id aAppId.
 

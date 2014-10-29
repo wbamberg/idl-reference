@@ -9,7 +9,9 @@ nsIBlocklistService to display a confirmation UI to the user before blocking
 extensions/plugins.
 
 
-## prompt ##
+## Methods ##
+
+### prompt ###
 
 Prompt the user about newly blocked addons. The prompt is then resposible
 for soft-blocking any addons that need to be afterwards

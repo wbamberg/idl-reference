@@ -4,14 +4,16 @@ layout: default
 
 # nsICertTree #
 
-## loadCerts ##
+## Methods ##
 
-## loadCertsFromCache ##
+### loadCerts ###
 
-## getCert ##
+### loadCertsFromCache ###
 
-## getTreeItem ##
+### getCert ###
 
-## isHostPortOverride ##
+### getTreeItem ###
 
-## deleteEntryObject ##
+### isHostPortOverride ###
+
+### deleteEntryObject ###

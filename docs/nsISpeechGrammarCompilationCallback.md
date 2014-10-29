@@ -4,4 +4,6 @@ layout: default
 
 # nsISpeechGrammarCompilationCallback #
 
-## grammarCompilationEnd ##
+## Methods ##
+
+### grammarCompilationEnd ###

@@ -11,7 +11,9 @@ format of the <input type='color'> value as described in the HTML
 specifications.
 
 
-## update ##
+## Methods ##
+
+### update ###
 
 Callback called when the color picker requests a color update.
 This callback can not be called after done() was called.
@@ -22,7 +24,7 @@ changed.
                top of this file.
 
 
-## done ##
+### done ###
 
 Callback called when the color picker is dismissed.
 When this callback is used, the color might have changed or could stay the

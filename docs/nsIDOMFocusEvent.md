@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMFocusEvent #
 
-## relatedTarget ##
+## Attributes ##
+
+### relatedTarget ###

@@ -4,7 +4,9 @@ layout: default
 
 # nsIContentURIGrouper #
 
-## group ##
+## Methods ##
+
+### group ###
 
 Determine the group to which the URI belongs.
 

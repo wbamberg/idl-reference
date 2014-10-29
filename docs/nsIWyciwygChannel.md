@@ -10,29 +10,31 @@ document.write(). This interface provides methods that will
 help layout save dynamic pages in cache for future retrievals.
 
 
-## writeToCacheEntry ##
+## Methods ##
+
+### writeToCacheEntry ###
 
 Append data to the cache entry; opens the cache entry if necessary.
 
 
-## closeCacheEntry ##
+### closeCacheEntry ###
 
 Close the cache entry; subsequent writes have undefined behavior.
 
 
-## setSecurityInfo ##
+### setSecurityInfo ###
 
 Set the wyciwyg channels security info
 
 
-## setCharsetAndSource ##
+### setCharsetAndSource ###
 
 Store and read a charset and charset source on the wyciwyg channel.  These
 are opaque values to the channel; consumers who set them should know what
 they mean.
 
 
-## getCharsetAndSource ##
+### getCharsetAndSource ###
 
 The return value is the charset.  Throws if either the charset or the
 source cannot be retrieved.  This is guaranteed to return a nonzero source

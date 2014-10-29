@@ -14,18 +14,20 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## src ##
+## Attributes ##
 
-## async ##
+### src ###
 
-## defer ##
+### async ###
 
-## type ##
+### defer ###
 
-## charset ##
+### type ###
 
-## text ##
+### charset ###
 
-## htmlFor ##
+### text ###
 
-## event ##
+### htmlFor ###
+
+### event ###

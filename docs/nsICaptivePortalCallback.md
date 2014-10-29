@@ -4,12 +4,14 @@ layout: default
 
 # nsICaptivePortalCallback #
 
-## prepare ##
+## Methods ##
+
+### prepare ###
 
 Preparation for network interface before captive portal detection started.
 
 
-## complete ##
+### complete ###
 
 Invoke callbacks after captive portal detection finished.
 

@@ -7,7 +7,9 @@ layout: default
 To be implemented by @mozilla.org/dom/activities/ui-glue;1
 
 
-## chooseActivity ##
+## Methods ##
+
+### chooseActivity ###
 
 This method is called even if the size of {@code activities} is 0 so that the callee can
 decide whether or not to defer the request to an alternate activity system.

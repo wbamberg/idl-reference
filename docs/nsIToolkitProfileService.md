@@ -4,33 +4,9 @@ layout: default
 
 # nsIToolkitProfileService #
 
-## startWithLastProfile ##
+## Methods ##
 
-## startOffline ##
-
-## profiles ##
-
-## selectedProfile ##
-
-The currently selected profile (the one used or about to be used by the
-browser).
-
-
-## defaultProfile ##
-
-The default profile (the one used or about to be used by the
-browser if no other profile is specified at runtime). This is the profile
-marked with Default=1 in profiles.ini and is usually the same as
-selectedProfile, except on Developer Edition.
-
-Developer Edition uses a profile named "dev-edition-default" as the
-default profile (which it creates if it doesn't exist), unless a special
-empty file named "ignore-dev-edition-profile" is present next to
-profiles.ini. In that case Developer Edition behaves the same as any
-other build of Firefox.
-
-
-## getProfileByName ##
+### getProfileByName ###
 
 Get a profile by name. This is mainly for use by the -P
 commandline flag.
@@ -38,13 +14,13 @@ commandline flag.
 @param aName The profile name to find.
 
 
-## lockProfilePath ##
+### lockProfilePath ###
 
 Lock an arbitrary path as a profile. If the path does not exist, it
 will be created and the defaults copied from the application directory.
 
 
-## createProfile ##
+### createProfile ###
 
 Create a new profile.
 
@@ -58,7 +34,7 @@ profile directory is located.
        The profile name.
 
 
-## createDefaultProfileForApp ##
+### createDefaultProfileForApp ###
 
 Create the default profile for an application.
 
@@ -84,13 +60,41 @@ new profile directory.
 @return The created profile.
 
 
-## profileCount ##
+### flush ###
+
+Flush the profiles list file.
+
+
+## Attributes ##
+
+### startWithLastProfile ###
+
+### startOffline ###
+
+### profiles ###
+
+### selectedProfile ###
+
+The currently selected profile (the one used or about to be used by the
+browser).
+
+
+### defaultProfile ###
+
+The default profile (the one used or about to be used by the
+browser if no other profile is specified at runtime). This is the profile
+marked with Default=1 in profiles.ini and is usually the same as
+selectedProfile, except on Developer Edition.
+
+Developer Edition uses a profile named "dev-edition-default" as the
+default profile (which it creates if it doesn't exist), unless a special
+empty file named "ignore-dev-edition-profile" is present next to
+profiles.ini. In that case Developer Edition behaves the same as any
+other build of Firefox.
+
+
+### profileCount ###
 
 Returns the number of profiles.
 @return 0, 1, or 2. More than 2 profiles will always return 2.
-
-
-## flush ##
-
-Flush the profiles list file.
 

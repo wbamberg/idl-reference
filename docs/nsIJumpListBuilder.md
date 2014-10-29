@@ -4,7 +4,89 @@ layout: default
 
 # nsIJumpListBuilder #
 
-## JUMPLIST_CATEGORY_TASKS ##
+## Methods ##
+
+### initListBuild ###
+
+Initializes a jump list build and returns a list of items the user removed
+since the last time a jump list was committed. Removed items can become state
+after initListBuild is called, lists should be built in single-shot fasion.
+
+@param removedItems
+       A list of items that were removed by the user since the last commit.
+
+@returns true if the operation completed successfully.
+
+
+### addListToBuild ###
+
+Adds a list and if required, a set of items for the list.
+
+@param aCatType
+       The type of list to add.
+@param items
+       An array of nsIJumpListItem items to add to the list.
+@param catName
+       For custom lists, the title of the list.
+
+@returns true if the operation completed successfully.
+
+@throw NS_ERROR_INVALID_ARG if incorrect parameters are passed for
+a particular category or item type.
+@throw NS_ERROR_ILLEGAL_VALUE if an item is added that was removed
+since the last commit.
+@throw NS_ERROR_UNEXPECTED on internal errors.
+
+
+### abortListBuild ###
+
+Aborts and clears the current jump list build.
+
+
+### commitListBuild ###
+
+Commits the current jump list build to the Taskbar.
+
+@returns true if the operation completed successfully.
+
+
+### deleteActiveList ###
+
+Deletes any currently applied taskbar jump list for this application.
+Common uses would be the enabling of a privacy mode and uninstallation.
+
+@returns true if the operation completed successfully.
+
+@throw NS_ERROR_UNEXPECTED on internal errors.
+
+
+## Attributes ##
+
+### available ###
+
+Indicates whether jump list taskbar features are supported by the current
+host.
+
+
+### isListCommitted ###
+
+JumpList management
+
+@throw NS_ERROR_NOT_AVAILABLE on all calls if taskbar functionality
+is not supported by the operating system.
+
+
+Indicates if a commit has already occurred in this session.
+
+
+### maxListItems ###
+
+The maximum number of jump list items the current desktop can support.
+
+
+## Constants ##
+
+### JUMPLIST_CATEGORY_TASKS ###
 
 JumpLists
 
@@ -45,7 +127,7 @@ change often, if at all - similar to an application menu.
 Tasks are given the highest priority of all lists when space is limited.
 
 
-## JUMPLIST_CATEGORY_RECENT ##
+### JUMPLIST_CATEGORY_RECENT ###
 
 Recent or Frequent list
 
@@ -55,88 +137,12 @@ or frequent lists should keep document use tracking up to date by calling
 the SHAddToRecentDocs shell api.
 
 
-## JUMPLIST_CATEGORY_FREQUENT ##
+### JUMPLIST_CATEGORY_FREQUENT ###
 
-## JUMPLIST_CATEGORY_CUSTOMLIST ##
+### JUMPLIST_CATEGORY_CUSTOMLIST ###
 
 Custom Lists
 
 Custom lists can be made up of tasks, links, and separators. The title of
 of the list is passed through the optional string parameter of addBuildList.
-
-
-## available ##
-
-Indicates whether jump list taskbar features are supported by the current
-host.
-
-
-## isListCommitted ##
-
-JumpList management
-
-@throw NS_ERROR_NOT_AVAILABLE on all calls if taskbar functionality
-is not supported by the operating system.
-
-
-Indicates if a commit has already occurred in this session.
-
-
-## maxListItems ##
-
-The maximum number of jump list items the current desktop can support.
-
-
-## initListBuild ##
-
-Initializes a jump list build and returns a list of items the user removed
-since the last time a jump list was committed. Removed items can become state
-after initListBuild is called, lists should be built in single-shot fasion.
-
-@param removedItems
-       A list of items that were removed by the user since the last commit.
-
-@returns true if the operation completed successfully.
-
-
-## addListToBuild ##
-
-Adds a list and if required, a set of items for the list.
-
-@param aCatType
-       The type of list to add.
-@param items
-       An array of nsIJumpListItem items to add to the list.
-@param catName
-       For custom lists, the title of the list.
-
-@returns true if the operation completed successfully.
-
-@throw NS_ERROR_INVALID_ARG if incorrect parameters are passed for
-a particular category or item type.
-@throw NS_ERROR_ILLEGAL_VALUE if an item is added that was removed
-since the last commit.
-@throw NS_ERROR_UNEXPECTED on internal errors.
-
-
-## abortListBuild ##
-
-Aborts and clears the current jump list build.
-
-
-## commitListBuild ##
-
-Commits the current jump list build to the Taskbar.
-
-@returns true if the operation completed successfully.
-
-
-## deleteActiveList ##
-
-Deletes any currently applied taskbar jump list for this application.
-Common uses would be the enabling of a privacy mode and uninstallation.
-
-@returns true if the operation completed successfully.
-
-@throw NS_ERROR_UNEXPECTED on internal errors.
 

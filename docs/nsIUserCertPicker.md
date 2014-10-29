@@ -4,4 +4,6 @@ layout: default
 
 # nsIUserCertPicker #
 
-## pickByUsage ##
+## Methods ##
+
+### pickByUsage ###

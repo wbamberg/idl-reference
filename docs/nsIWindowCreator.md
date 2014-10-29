@@ -4,7 +4,9 @@ layout: default
 
 # nsIWindowCreator #
 
-## createChromeWindow ##
+## Methods ##
+
+### createChromeWindow ###
  Create a new window. Gecko will/may call this method, if made
 available to it, to create new windows.
 @param parent parent window, if any. null if not. the newly created

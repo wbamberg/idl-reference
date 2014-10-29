@@ -8,7 +8,30 @@ An nsIRDFCompositeDataSource composes individual data sources, providing
 the illusion of a single, coherent RDF graph.
 
 
-## allowNegativeAssertions ##
+## Methods ##
+
+### AddDataSource ###
+
+Add a datasource the the composite data source.
+@param aDataSource the datasource to add to composite
+
+
+### RemoveDataSource ###
+
+Remove a datasource from the composite data source.
+@param aDataSource the datasource to remove from the composite
+
+
+### GetDataSources ###
+
+Retrieve the datasources in the composite data source.
+@return an nsISimpleEnumerator that will enumerate each
+of the datasources in the composite
+
+
+## Attributes ##
+
+### allowNegativeAssertions ###
 
 
 Set this value to <code>true</code> if the composite datasource
@@ -22,7 +45,7 @@ composite datasource to perform some query optimizations.
 By default, this value is <code>true</true>.
 
 
-## coalesceDuplicateArcs ##
+### coalesceDuplicateArcs ###
 
 Set to <code>true</code> if the composite datasource should
 take care to coalesce duplicate arcs when returning values from
@@ -33,23 +56,4 @@ bother to check for duplicates. This allows the composite
 datasource to more efficiently answer queries.
 
 By default, this value is <code>true</code>.
-
-
-## AddDataSource ##
-
-Add a datasource the the composite data source.
-@param aDataSource the datasource to add to composite
-
-
-## RemoveDataSource ##
-
-Remove a datasource from the composite data source.
-@param aDataSource the datasource to remove from the composite
-
-
-## GetDataSources ##
-
-Retrieve the datasources in the composite data source.
-@return an nsISimpleEnumerator that will enumerate each
-of the datasources in the composite
 

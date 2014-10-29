@@ -4,12 +4,14 @@ layout: default
 
 # nsIAndroidDisplayport #
 
-## left ##
+## Attributes ##
 
-## top ##
+### left ###
 
-## right ##
+### top ###
 
-## bottom ##
+### right ###
 
-## resolution ##
+### bottom ###
+
+### resolution ###

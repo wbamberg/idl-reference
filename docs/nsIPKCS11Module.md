@@ -4,10 +4,14 @@ layout: default
 
 # nsIPKCS11Module #
 
-## name ##
+## Methods ##
 
-## libName ##
+### findSlotByName ###
 
-## findSlotByName ##
+### listSlots ###
 
-## listSlots ##
+## Attributes ##
+
+### name ###
+
+### libName ###

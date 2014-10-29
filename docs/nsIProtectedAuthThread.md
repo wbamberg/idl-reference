@@ -9,7 +9,9 @@ nsIProtectedAuthThread
  a token with CKF_PROTECTED_AUTHENTICATION_PATH set.
 
 
-## login ##
+## Methods ##
+
+### login ###
 
 login - run the thread
   A user interface implementing this interface needs to
@@ -22,12 +24,14 @@ login - run the thread
   and null data and subject.
 
 
-## slot ##
-
-The PKCS11 slot
-
-
-## getTokenName ##
+### getTokenName ###
 
 Gets token to be logged in name.
+
+
+## Attributes ##
+
+### slot ###
+
+The PKCS11 slot
 

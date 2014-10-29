@@ -4,7 +4,9 @@ layout: default
 
 # nsILocalCertCallback #
 
-## handleResult ##
+## Methods ##
+
+### handleResult ###
 
 Called with the result of the removeCert operation above.
 

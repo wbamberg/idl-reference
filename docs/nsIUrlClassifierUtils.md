@@ -4,7 +4,9 @@ layout: default
 
 # nsIUrlClassifierUtils #
 
-## getKeyForURI ##
+## Methods ##
+
+### getKeyForURI ###
 
 Get the lookup string for a given URI.  This normalizes the hostname,
 url-decodes the string, and strips off the protocol.

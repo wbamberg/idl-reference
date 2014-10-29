@@ -10,7 +10,9 @@ lookup to provide a set of possible results, which the main thread
 may need to expand using an nsIUrlClassifierCompleter.
 
 
-## lookupComplete ##
+## Methods ##
+
+### lookupComplete ###
 
 The lookup process is complete.
 

@@ -4,12 +4,16 @@ layout: default
 
 # nsIAndroidBridge #
 
-## handleGeckoMessage ##
+## Methods ##
 
-## browserApp ##
+### handleGeckoMessage ###
 
-## getDisplayPort ##
+### getDisplayPort ###
 
-## contentDocumentChanged ##
+### contentDocumentChanged ###
 
-## isContentDocumentDisplayed ##
+### isContentDocumentDisplayed ###
+
+## Attributes ##
+
+### browserApp ###

@@ -4,7 +4,9 @@ layout: default
 
 # nsIFaviconDataCallback #
 
-## onComplete ##
+## Methods ##
+
+### onComplete ###
 
 Called when the required favicon's information is available.
 

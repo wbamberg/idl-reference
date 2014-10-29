@@ -4,14 +4,16 @@ layout: default
 
 # nsIRDFXMLSerializer #
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize the serializer with the specified datasource.
 @param aDataSource the datasource from which data will be
   serialized
 
 
-## addNameSpace ##
+### addNameSpace ###
 
 Add the specified namespace to the serializer.
 @param aPrefix the attribute namespace prefix

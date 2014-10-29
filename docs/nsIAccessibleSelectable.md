@@ -7,37 +7,29 @@ layout: default
 An accessibility interface for selectable widgets.
 
 
-## selectedItems ##
+## Methods ##
 
-Return an nsIArray of selected items within the widget.
-
-
-## selectedItemCount ##
-
-Return the number of currently selected items.
-
-
-## getSelectedItemAt ##
+### getSelectedItemAt ###
 
 Return a nth selected item within the widget.
 
 
-## isItemSelected ##
+### isItemSelected ###
 
 Return true if the given item is selected.
 
 
-## addItemToSelection ##
+### addItemToSelection ###
 
 Adds the specified item to the widget's selection.
 
 
-## removeItemFromSelection ##
+### removeItemFromSelection ###
 
 Removes the specified item from the widget's selection.
 
 
-## selectAll ##
+### selectAll ###
 
 Select all items.
 
@@ -45,7 +37,19 @@ Select all items.
         otherwise true.
 
 
-## unselectAll ##
+### unselectAll ###
 
 Unselect all items.
+
+
+## Attributes ##
+
+### selectedItems ###
+
+Return an nsIArray of selected items within the widget.
+
+
+### selectedItemCount ###
+
+Return the number of currently selected items.
 

@@ -4,7 +4,9 @@ layout: default
 
 # nsIAutoCompleteSimpleResultListener #
 
-## onValueRemoved ##
+## Methods ##
+
+### onValueRemoved ###
 
 Dispatched after a value is removed from the result.
 @param aResult

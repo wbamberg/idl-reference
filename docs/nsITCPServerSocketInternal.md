@@ -12,7 +12,9 @@ These interfaces are for calling each method from the server socket object
 on the parent and child side for an IPC protocol implementation.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialization after creating a TCP server socket object.
 
@@ -20,7 +22,7 @@ Initialization after creating a TCP server socket object.
        An object to create ArrayBuffer for this window. See Bug 831107.
 
 
-## listen ##
+### listen ###
  
 Listen on a port
 
@@ -40,12 +42,12 @@ Listen on a port
        Pass -1 to use the default value.
 
 
-## callListenerAccept ##
+### callListenerAccept ###
 
 Listener for receiving an accepted socket.
 
 
-## callListenerError ##
+### callListenerError ###
 
 Listener for handling an error caused in chrome process.
 

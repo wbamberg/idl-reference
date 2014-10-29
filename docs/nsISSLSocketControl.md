@@ -4,82 +4,88 @@ layout: default
 
 # nsISSLSocketControl #
 
-## notificationCallbacks ##
+## Methods ##
 
-## proxyStartSSL ##
+### proxyStartSSL ###
 
-## StartTLS ##
+### StartTLS ###
 
-## setNPNList ##
+### setNPNList ###
 
-## negotiatedNPN ##
+### joinConnection ###
 
-## joinConnection ##
+### isAcceptableForHost ###
 
-## isAcceptableForHost ##
+## Attributes ##
 
-## KEAUsed ##
+### notificationCallbacks ###
 
-## KEAExpected ##
+### negotiatedNPN ###
 
-## KEAKeyBits ##
+### KEAUsed ###
 
-## KEY_EXCHANGE_UNKNOWN ##
+### KEAExpected ###
 
-## providerFlags ##
+### KEAKeyBits ###
 
-## SSL_VERSION_3 ##
+### providerFlags ###
 
-## TLS_VERSION_1 ##
+### SSLVersionUsed ###
 
-## TLS_VERSION_1_1 ##
+### SSLVersionOffered ###
 
-## TLS_VERSION_1_2 ##
+### MACAlgorithmUsed ###
 
-## SSL_VERSION_UNKNOWN ##
-
-## SSLVersionUsed ##
-
-## SSLVersionOffered ##
-
-## SSL_MAC_UNKNOWN ##
-
-## SSL_MAC_NULL ##
-
-## SSL_MAC_MD5 ##
-
-## SSL_MAC_SHA ##
-
-## SSL_HMAC_MD5 ##
-
-## SSL_HMAC_SHA ##
-
-## SSL_HMAC_SHA256 ##
-
-## SSL_MAC_AEAD ##
-
-## MACAlgorithmUsed ##
-
-## clientCert ##
+### clientCert ###
 
 If set before the server requests a client cert (assuming it does so at
 all), then this cert will be presented to the server, instead of asking
 the user or searching the set of rememebered user cert decisions.
 
 
-## authenticationName ##
+### authenticationName ###
 
 If you wish to verify the host certificate using a different name than
 was used for the tcp connection, but without using proxy semantics, you
 can set authenticationName and authenticationPort
 
 
-## authenticationPort ##
+### authenticationPort ###
 
-## bypassAuthentication ##
+### bypassAuthentication ###
 
 set bypassAuthentication to true if the server certificate checks should
 not be enforced. This is to enable non-secure transport over TLS.
 
 
-## failedVerification ##
+### failedVerification ###
+
+## Constants ##
+
+### KEY_EXCHANGE_UNKNOWN ###
+
+### SSL_VERSION_3 ###
+
+### TLS_VERSION_1 ###
+
+### TLS_VERSION_1_1 ###
+
+### TLS_VERSION_1_2 ###
+
+### SSL_VERSION_UNKNOWN ###
+
+### SSL_MAC_UNKNOWN ###
+
+### SSL_MAC_NULL ###
+
+### SSL_MAC_MD5 ###
+
+### SSL_MAC_SHA ###
+
+### SSL_HMAC_MD5 ###
+
+### SSL_HMAC_SHA ###
+
+### SSL_HMAC_SHA256 ###
+
+### SSL_MAC_AEAD ###

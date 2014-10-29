@@ -4,7 +4,9 @@ layout: default
 
 # nsIResumableChannel #
 
-## resumeAt ##
+## Methods ##
+
+### resumeAt ###
 
 Prepare this channel for resuming. The request will not start until
 asyncOpen or open is called. Calling resumeAt after open or asyncOpen
@@ -25,7 +27,9 @@ In both of these cases, no OnDataAvailable will be called, and
  OnStopRequest will immediately follow with the same status code.
 
 
-## entityID ##
+## Attributes ##
+
+### entityID ###
 
 The entity id for this URI. Available after OnStartRequest.
 @throw NS_ERROR_NOT_RESUMABLE if this load is not resumable.

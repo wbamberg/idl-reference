@@ -8,7 +8,9 @@ Utilities for running nested event loops, asking them to return, and
 keeping track of which ones are still running.
 
 
-## enterNestedEventLoop ##
+## Methods ##
+
+### enterNestedEventLoop ###
 
 Process the current thread's event queue, calling event handlers until
 a call to exitNestedEventLoop, below, asks us to return.
@@ -37,7 +39,7 @@ finished processing the current event.
                    number of enterNestedEventLoop calls to return.)
 
 
-## exitNestedEventLoop ##
+### exitNestedEventLoop ###
 
 Stop the youngest running enterNestedEventLoop call, asking it to return
 once it has finished processing the current event.
@@ -58,13 +60,15 @@ another running loop.
 @throws NS_ERROR_FAILURE if there are no running enterNestedEventLoop calls.
 
 
-## eventLoopNestLevel ##
+## Attributes ##
+
+### eventLoopNestLevel ###
 
 The number of running enterNestedEventLoop calls on the stack.
 This count does not include stopped enterNestedEventLoop calls.
 
 
-## lastNestRequestor ##
+### lastNestRequestor ###
 
 The |requestor| value that was passed to the youngest running
 enterNestedEventLoop call.

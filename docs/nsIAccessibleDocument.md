@@ -14,52 +14,56 @@ the root node of a document or you can get one from
 nsIAccessible::GetDocument().
 
 
-## URL ##
+## Methods ##
+
+### getChildDocumentAt ###
+
+Return the child document accessible at the given index.
+
+
+## Attributes ##
+
+### URL ###
 
 The URL of the document
 
 
-## title ##
+### title ###
 
 The title of the document, as specified in the document.
 
 
-## mimeType ##
+### mimeType ###
 
 The mime type of the document
 
 
-## docType ##
+### docType ###
 
 The doc type of the document, as specified in the document.
 
 
-## DOMDocument ##
+### DOMDocument ###
 
 The nsIDOMDocument interface associated with this document.
 
 
-## window ##
+### window ###
 
 The nsIDOMWindow that the document resides in.
 
 
-## parentDocument ##
+### parentDocument ###
 
 Return the parent document accessible.
 
 
-## childDocumentCount ##
+### childDocumentCount ###
 
 Return the count of child document accessibles.
 
 
-## virtualCursor ##
+### virtualCursor ###
 
 The virtual cursor pivot this document manages.
-
-
-## getChildDocumentAt ##
-
-Return the child document accessible at the given index.
 

@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMGetUserMediaErrorCallback #
 
-## onError ##
+## Methods ##
+
+### onError ###

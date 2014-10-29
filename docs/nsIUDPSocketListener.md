@@ -14,7 +14,9 @@ nsISocketTransport::GetHost, which returns a string representation of the
 client's IP address (NOTE: this may be an IPv4 or IPv6 string literal).
 
 
-## onPacketReceived ##
+## Methods ##
+
+### onPacketReceived ###
 
 onPacketReceived
 
@@ -26,7 +28,7 @@ This method is called when a client sends an UDP packet.
        The message.
 
 
-## onStopListening ##
+### onStopListening ###
 
 onStopListening
 

@@ -4,17 +4,21 @@ layout: default
 
 # nsIEditorIMESupport #
 
-## forceCompositionEnd ##
+## Methods ##
+
+### forceCompositionEnd ###
 
 forceCompositionEnd() force the composition end
 
 
-## getPreferredIMEState ##
+### getPreferredIMEState ###
 
 Get preferred IME status of current widget.
 
 
-## composing ##
+## Attributes ##
+
+### composing ###
 
 whether this editor has active IME transaction
 

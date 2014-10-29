@@ -4,14 +4,18 @@ layout: default
 
 # nsIAndroidBrowserApp #
 
-## selectedTab ##
+## Methods ##
 
-## getBrowserTab ##
+### getBrowserTab ###
 
-## getPreferences ##
+### getPreferences ###
 
-## observePreferences ##
+### observePreferences ###
 
-## removePreferenceObservers ##
+### removePreferenceObservers ###
 
-## getUITelemetryObserver ##
+### getUITelemetryObserver ###
+
+## Attributes ##
+
+### selectedTab ###

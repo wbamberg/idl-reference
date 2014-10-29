@@ -60,7 +60,55 @@ we will need to add additional checks there for all intermediate IIDs, until
 nsPrincipal is fixed to serialize its URIs as nsISupports (bug 662693).
 
 
-## spec ##
+## Methods ##
+
+### equals ###
+********************************************************************
+An URI supports the following methods:
+
+
+URI equivalence test (not a strict string comparison).
+
+eg. http://foo.com:80/ == http://foo.com/
+
+
+### schemeIs ###
+
+An optimization to do scheme checks without requiring the users of nsIURI
+to GetScheme, thereby saving extra allocating and freeing. Returns true if
+the schemes match (case ignored).
+
+
+### clone ###
+
+Clones the current URI.
+
+
+### resolve ###
+
+This method resolves a relative string into an absolute URI string,
+using this URI as the base. 
+
+NOTE: some implementations may have no concept of a relative URI.
+
+
+### equalsExceptRef ###
+
+URI equivalence test (not a strict string comparison), ignoring
+the value of the .ref member.
+
+eg. http://foo.com/# == http://foo.com/
+    http://foo.com/#aaa == http://foo.com/#bbb
+
+
+### cloneIgnoringRef ###
+
+Clones the current URI, clearing the 'ref' attribute in the clone.
+
+
+## Attributes ##
+
+### spec ###
 ********************************************************************
 The URI is broken down into the following principal components:
 
@@ -77,7 +125,7 @@ information on setting the spec attribute is undefined.
 Some characters may be escaped.
 
 
-## prePath ##
+### prePath ###
 
 The prePath (eg. scheme://user:password@host:port) returns the string
 before the path.  This is useful for authentication or managing sessions.
@@ -85,7 +133,7 @@ before the path.  This is useful for authentication or managing sessions.
 Some characters may be escaped.
 
 
-## scheme ##
+### scheme ###
 
 The Scheme is the protocol to which this URI refers.  The scheme is
 restricted to the US-ASCII charset per RFC2396.  Setting this is
@@ -93,14 +141,14 @@ highly discouraged outside of a protocol handler implementation, since
 that will generally lead to incorrect results.
 
 
-## userPass ##
+### userPass ###
 
 The username:password (or username only if value doesn't contain a ':')
 
 Some characters may be escaped.
 
 
-## username ##
+### username ###
 
 The optional username and password, assuming the preHost consists of
 username:password.
@@ -108,16 +156,16 @@ username:password.
 Some characters may be escaped.
 
 
-## password ##
+### password ###
 
-## hostPort ##
+### hostPort ###
 
 The host:port (or simply the host, if port == -1).
 
 Characters are NOT escaped.
 
 
-## host ##
+### host ###
 
 The host is the internet domain name to which this URI refers.  It could
 be an IPv4 (or IPv6) address literal.  If supported, it could be a
@@ -126,13 +174,13 @@ non-ASCII internationalized domain name.
 Characters are NOT escaped.
 
 
-## port ##
+### port ###
 
 A port value of -1 corresponds to the protocol's default port (eg. -1
 implies port 80 for http URIs).
 
 
-## path ##
+### path ###
 
 The path, typically including at least a leading '/' (but may also be
 empty, depending on the protocol).
@@ -140,37 +188,7 @@ empty, depending on the protocol).
 Some characters may be escaped.
 
 
-## equals ##
-********************************************************************
-An URI supports the following methods:
-
-
-URI equivalence test (not a strict string comparison).
-
-eg. http://foo.com:80/ == http://foo.com/
-
-
-## schemeIs ##
-
-An optimization to do scheme checks without requiring the users of nsIURI
-to GetScheme, thereby saving extra allocating and freeing. Returns true if
-the schemes match (case ignored).
-
-
-## clone ##
-
-Clones the current URI.
-
-
-## resolve ##
-
-This method resolves a relative string into an absolute URI string,
-using this URI as the base. 
-
-NOTE: some implementations may have no concept of a relative URI.
-
-
-## asciiSpec ##
+### asciiSpec ###
 ********************************************************************
 Additional attributes:
 
@@ -180,14 +198,14 @@ the IDNA draft spec.  Other parts are URL-escaped per the rules of
 RFC2396.  The result is strictly ASCII.
 
 
-## asciiHost ##
+### asciiHost ###
 
 The URI host with an ASCII compatible encoding.  Follows the IDNA
 draft spec for converting internationalized domain names (UTF-8) to
 ASCII for compatibility with existing internet infrasture.
 
 
-## originCharset ##
+### originCharset ###
 
 The charset of the document from which this URI originated.  An empty
 value implies UTF-8.
@@ -198,7 +216,7 @@ Otherwise, the URI components may contain unescaped multibyte UTF-8
 characters.
 
 
-## ref ##
+### ref ###
 ********************************************************************
 Additional attribute & methods added for .ref support:
 
@@ -209,26 +227,12 @@ If there isn't one, an empty string is returned.
 Some characters may be escaped.
 
 
-## equalsExceptRef ##
-
-URI equivalence test (not a strict string comparison), ignoring
-the value of the .ref member.
-
-eg. http://foo.com/# == http://foo.com/
-    http://foo.com/#aaa == http://foo.com/#bbb
-
-
-## cloneIgnoringRef ##
-
-Clones the current URI, clearing the 'ref' attribute in the clone.
-
-
-## specIgnoringRef ##
+### specIgnoringRef ###
 
 returns a string for the current URI with the ref element cleared.
 
 
-## hasRef ##
+### hasRef ###
 
 Returns if there is a reference portion (the part after the "#") of the URI.
 

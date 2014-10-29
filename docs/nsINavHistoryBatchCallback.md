@@ -7,4 +7,6 @@ layout: default
 @see runInBatchMode of nsINavHistoryService/nsINavBookmarksService
 
 
-## runBatched ##
+## Methods ##
+
+### runBatched ###

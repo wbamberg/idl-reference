@@ -9,16 +9,20 @@ nsICycleCollectorListener.  As this interface is also called while
 the cycle collector is running, it cannot be implemented in JS.
 
 
-## open ##
+## Methods ##
 
-## closeGCLog ##
+### open ###
 
-## closeCCLog ##
+### closeGCLog ###
 
-## filenameIdentifier ##
+### closeCCLog ###
 
-## processIdentifier ##
+## Attributes ##
 
-## gcLog ##
+### filenameIdentifier ###
 
-## ccLog ##
+### processIdentifier ###
+
+### gcLog ###
+
+### ccLog ###

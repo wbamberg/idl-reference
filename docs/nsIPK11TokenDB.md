@@ -13,8 +13,10 @@ Threading: ??
 nsIPK11TokenDB - Manages PK11 Tokens
 
 
-## getInternalKeyToken ##
+## Methods ##
 
-## findTokenByName ##
+### getInternalKeyToken ###
 
-## listTokens ##
+### findTokenByName ###
+
+### listTokens ###

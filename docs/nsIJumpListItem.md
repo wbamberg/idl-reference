@@ -13,20 +13,9 @@ and add support to addListBuild & removed items processing.
 
 
 
-## JUMPLIST_ITEM_EMPTY ##
+## Methods ##
 
-## JUMPLIST_ITEM_SEPARATOR ##
-
-## JUMPLIST_ITEM_LINK ##
-
-## JUMPLIST_ITEM_SHORTCUT ##
-
-## type ##
-
-Retrieves the jump list item type.
-
-
-## equals ##
+### equals ###
 
 Compare this item to another.
 
@@ -37,3 +26,20 @@ separator: type
 link: type, uri, title
 shortcut: type, handler app
 
+
+## Attributes ##
+
+### type ###
+
+Retrieves the jump list item type.
+
+
+## Constants ##
+
+### JUMPLIST_ITEM_EMPTY ###
+
+### JUMPLIST_ITEM_SEPARATOR ###
+
+### JUMPLIST_ITEM_LINK ###
+
+### JUMPLIST_ITEM_SHORTCUT ###

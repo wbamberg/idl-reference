@@ -7,20 +7,22 @@ layout: default
 Information on the validity period of a X.509 certificate.
 
 
-## notBefore ##
+## Attributes ##
+
+### notBefore ###
 
  The earliest point in time where
  a certificate is valid.
 
 
-## notBeforeLocalTime ##
+### notBeforeLocalTime ###
 
  "notBefore" attribute formatted as a time string
  according to the environment locale,
  according to the environment time zone.
 
 
-## notBeforeLocalDay ##
+### notBeforeLocalDay ###
 
  The day portion of "notBefore" 
  formatted as a time string
@@ -28,27 +30,27 @@ Information on the validity period of a X.509 certificate.
  according to the environment time zone.
 
 
-## notBeforeGMT ##
+### notBeforeGMT ###
 
  "notBefore" attribute formatted as a string
  according to the environment locale,
  displayed as GMT / UTC.
 
 
-## notAfter ##
+### notAfter ###
 
  The latest point in time where
  a certificate is valid.
 
 
-## notAfterLocalTime ##
+### notAfterLocalTime ###
 
  "notAfter" attribute formatted as a time string
  according to the environment locale,
  according to the environment time zone.
 
 
-## notAfterLocalDay ##
+### notAfterLocalDay ###
 
  The day portion of "notAfter" 
  formatted as a time string
@@ -56,7 +58,7 @@ Information on the validity period of a X.509 certificate.
  according to the environment time zone.
 
 
-## notAfterGMT ##
+### notAfterGMT ###
 
  "notAfter" attribute formatted as a time string
  according to the environment locale,

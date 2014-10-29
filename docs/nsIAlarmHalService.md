@@ -4,8 +4,10 @@ layout: default
 
 # nsIAlarmHalService #
 
-## setAlarm ##
+## Methods ##
 
-## setAlarmFiredCb ##
+### setAlarm ###
 
-## setTimezoneChangedCb ##
+### setAlarmFiredCb ###
+
+### setTimezoneChangedCb ###

@@ -14,40 +14,60 @@ that the front end and other application services can use to learn more
 about what is going on.
 
 
-## type ##
+## Methods ##
+
+### getPatchAt ###
+
+Retrieves a patch.
+@param   index
+         The index of the patch to retrieve.
+@returns The nsIUpdatePatch at the specified index.
+
+
+### serialize ###
+
+Serializes this update object into a DOM Element
+@param   updates
+         The document to serialize into
+@returns The DOM Element created by the serialization process
+
+
+## Attributes ##
+
+### type ###
 
 The type of update:
   "major"  A major new version of the Application
   "minor"  A minor update to the Application (e.g. security update)
 
 
-## name ##
+### name ###
 
 The name of the update, or "<Application Name> <Update Version>"
 
 
-## displayVersion ##
+### displayVersion ###
 
 The string to display in the user interface for the version. If you want
 a real version number use appVersion.
 
 
-## appVersion ##
+### appVersion ###
 
 The Application version of this update.
 
 
-## platformVersion ##
+### platformVersion ###
 
 The Toolkit version of this update.
 
 
-## previousAppVersion ##
+### previousAppVersion ###
 
 The Application version prior to the application being updated.
 
 
-## buildID ##
+### buildID ###
 
 The Build ID of this update. Used to determine a particular build, down
 to the hour, minute and second of its creation. This allows the system
@@ -55,7 +75,7 @@ to differentiate between several nightly builds with the same |version|
 for example.
 
 
-## detailsURL ##
+### detailsURL ###
 
 The URL to a page which offers details about the content of this
 update. Ideally, this page is not the release notes but some other page
@@ -63,13 +83,13 @@ that summarizes the differences between this update and the previous,
 which also links to the release notes.
 
 
-## billboardURL ##
+### billboardURL ###
 
 The URL to a page that is typically localized to display in the update
 prompt.
 
 
-## licenseURL ##
+### licenseURL ###
 
 The URL to a HTML fragment that contains a license for this update. If
 this is specified, the user is shown the license file after they choose
@@ -77,78 +97,78 @@ to install the update and they must agree to it before the download
 commences.
 
 
-## serviceURL ##
+### serviceURL ###
 
 The URL to the Update Service that supplied this update.
 
 
-## channel ##
+### channel ###
 
 The channel used to retrieve this update from the Update Service.
 
 
-## showPrompt ##
+### showPrompt ###
 
 Whether to show the update prompt which requires user confirmation when an
 update is found during a background update check. This overrides the
 default setting to download the update in the background.
 
 
-## showNeverForVersion ##
+### showNeverForVersion ###
 
 Whether to show the "No Thanks" button in the update prompt. This allows
 the user to never receive a notification for that specific update version
 again.
 
 
-## unsupported ##
+### unsupported ###
 
 Whether the update is no longer supported on this system.
 
 
-## promptWaitTime ##
+### promptWaitTime ###
 
 Allows overriding the default amount of time in seconds before prompting the
 user to apply an update. If not specified, the value of
 app.update.promptWaitTime will be used.
 
 
-## isCompleteUpdate ##
+### isCompleteUpdate ###
 
 Whether or not the update being downloaded is a complete replacement of
 the user's existing installation or a patch representing the difference
 between the new version and the previous version.
 
 
-## isSecurityUpdate ##
+### isSecurityUpdate ###
 
 Whether or not the update is a security update or not. If this is true,
 then we present more serious sounding user interface messages to the
 user.
 
 
-## isOSUpdate ##
+### isOSUpdate ###
 
 Whether or not the update being downloaded is an OS update. This is
 generally only possible in Gonk right now.
 
 
-## installDate ##
+### installDate ###
 
 When the update was installed.
 
 
-## statusText ##
+### statusText ###
 
 A message associated with this update, if any.
 
 
-## selectedPatch ##
+### selectedPatch ###
 
 The currently selected patch for this update.
 
 
-## state ##
+### state ###
 
 The state of the selected patch:
   "downloading"        The update is being downloaded.
@@ -163,7 +183,7 @@ The state of the selected patch:
   "failed"             The update failed to be applied.
 
 
-## errorCode ##
+### errorCode ###
 
 A numeric error code that conveys additional information about the state
 of a failed update or failed certificate attribute check during an update
@@ -174,23 +194,7 @@ TODO: Define typical error codes (for now, see updater/errors.h and the
       CERT_ATTR_CHECK_FAILED_* values in nsUpdateService.js)
 
 
-## patchCount ##
+### patchCount ###
 
 The number of patches supplied by this update.
-
-
-## getPatchAt ##
-
-Retrieves a patch.
-@param   index
-         The index of the patch to retrieve.
-@returns The nsIUpdatePatch at the specified index.
-
-
-## serialize ##
-
-Serializes this update object into a DOM Element
-@param   updates
-         The document to serialize into
-@returns The DOM Element created by the serialization process
 

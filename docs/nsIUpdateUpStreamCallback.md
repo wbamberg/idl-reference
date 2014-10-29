@@ -4,7 +4,9 @@ layout: default
 
 # nsIUpdateUpStreamCallback #
 
-## updateUpStreamResult ##
+## Methods ##
+
+### updateUpStreamResult ###
 
 Callback function used to report the result of updating upstream.
 

@@ -37,49 +37,51 @@ Legal parameter value pairs are listed below:
   Description: The mime type we want an icon for. This is ignored by stock images.
 
 
-## iconURL ##
+## Attributes ##
+
+### iconURL ###
 
 iconFile
 
 the file URL contained within this moz-icon url, or null.
 
 
-## imageSize ##
+### imageSize ###
 
 imageSize
 
 The image area in square pixels, defaulting to 16 if unspecified.
 
 
-## stockIcon ##
+### stockIcon ###
 
 stockIcon
 
 The stock icon name requested from the OS.
 
 
-## iconSize ##
+### iconSize ###
 
 iconSize
 
 The stock icon size requested from the OS.
 
 
-## iconState ##
+### iconState ###
 
 iconState
 
 The stock icon state requested from the OS.
 
 
-## contentType ##
+### contentType ###
 
 contentType
 
 A valid mime type, or the empty string.
 
 
-## fileExtension ##
+### fileExtension ###
 
 fileExtension
 

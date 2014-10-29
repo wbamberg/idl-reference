@@ -4,8 +4,10 @@ layout: default
 
 # nsITabSource #
 
-## getTabToStream ##
+## Methods ##
 
-## notifyStreamStart ##
+### getTabToStream ###
 
-## notifyStreamStop ##
+### notifyStreamStart ###
+
+### notifyStreamStop ###

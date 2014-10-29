@@ -4,7 +4,9 @@ layout: default
 
 # nsIContentFilter #
 
-## notifyOfInsertion ##
+## Methods ##
+
+### notifyOfInsertion ###
 
 This notification occurs in an editor during these events:
    * open of document (once rendered in window but before editable)

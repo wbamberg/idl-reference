@@ -20,7 +20,9 @@ instructions, and/or subelements) will appear, in order, between
 the startElement event and the corresponding endElement event.
 
 
-## startDocument ##
+## Methods ##
+
+### startDocument ###
 
 Receive notification of the beginning of a document.
 
@@ -28,7 +30,7 @@ The SAX parser will invoke this method only once, before any
 other event callbacks.
 
 
-## endDocument ##
+### endDocument ###
 
 Receive notification of the end of a document.
 
@@ -45,7 +47,7 @@ invoke this method until it has either abandoned parsing (because
 of an unrecoverable error) or reached the end of input.
 
 
-## startElement ##
+### startElement ###
 
 Receive notification of the beginning of an element.
 
@@ -96,7 +98,7 @@ optional).
        startElement returns is undefined
 
 
-## endElement ##
+### endElement ###
 
 Receive notification of the end of an element.
 
@@ -117,7 +119,7 @@ For information on the names, see startElement.
        empty string if qualified names are not available
 
 
-## characters ##
+### characters ###
 
 Receive notification of character data.
 
@@ -135,7 +137,7 @@ content using the ignorableWhitespace method rather than this one
 @param value the characters from the XML document
 
 
-## processingInstruction ##
+### processingInstruction ###
 
 Receive notification of a processing instruction.
 
@@ -153,7 +155,7 @@ this method.
        whitespace separating it from the target
 
 
-## ignorableWhitespace ##
+### ignorableWhitespace ###
 
 Receive notification of ignorable whitespace in element content.
 
@@ -171,7 +173,7 @@ external entity, so that the Locator provides useful information.
 @param whitespace the characters from the XML document
 
 
-## startPrefixMapping ##
+### startPrefixMapping ###
 
 Begin the scope of a prefix-URI Namespace mapping.
 
@@ -203,7 +205,7 @@ There should never be start/endPrefixMapping events for the
 @param uri The Namespace URI the prefix is mapped to.
 
 
-## endPrefixMapping ##
+### endPrefixMapping ###
 
 End the scope of a prefix-URI mapping.
 

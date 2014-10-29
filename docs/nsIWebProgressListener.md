@@ -11,7 +11,123 @@ nsIWebProgress instances.  nsIWebProgress.idl describes the parent-child
 relationship of nsIWebProgress instances.
 
 
-## STATE_START ##
+## Methods ##
+
+### onStateChange ###
+
+Notification indicating the state has changed for one of the requests
+associated with aWebProgress.
+
+@param aWebProgress
+       The nsIWebProgress instance that fired the notification
+@param aRequest
+       The nsIRequest that has changed state.
+@param aStateFlags
+       Flags indicating the new state.  This value is a combination of one
+       of the State Transition Flags and one or more of the State Type
+       Flags defined above.  Any undefined bits are reserved for future
+       use.
+@param aStatus
+       Error status code associated with the state change.  This parameter
+       should be ignored unless aStateFlags includes the STATE_STOP bit.
+       The status code indicates success or failure of the request
+       associated with the state change.  NOTE: aStatus may be a success
+       code even for server generated errors, such as the HTTP 404 error.
+       In such cases, the request itself should be queried for extended
+       error information (e.g., for HTTP requests see nsIHttpChannel).
+
+
+### onProgressChange ###
+
+Notification that the progress has changed for one of the requests
+associated with aWebProgress.  Progress totals are reset to zero when all
+requests in aWebProgress complete (corresponding to onStateChange being
+called with aStateFlags including the STATE_STOP and STATE_IS_WINDOW
+flags).
+
+@param aWebProgress
+       The nsIWebProgress instance that fired the notification.
+@param aRequest
+       The nsIRequest that has new progress.
+@param aCurSelfProgress
+       The current progress for aRequest.
+@param aMaxSelfProgress
+       The maximum progress for aRequest.
+@param aCurTotalProgress
+       The current progress for all requests associated with aWebProgress.
+@param aMaxTotalProgress
+       The total progress for all requests associated with aWebProgress.
+
+NOTE: If any progress value is unknown, or if its value would exceed the
+maximum value of type long, then its value is replaced with -1.
+
+NOTE: If the object also implements nsIWebProgressListener2 and the caller
+knows about that interface, this function will not be called. Instead,
+nsIWebProgressListener2::onProgressChange64 will be called.
+
+
+### onLocationChange ###
+
+Called when the location of the window being watched changes.  This is not
+when a load is requested, but rather once it is verified that the load is
+going to occur in the given window.  For instance, a load that starts in a
+window might send progress and status messages for the new site, but it
+will not send the onLocationChange until we are sure that we are loading
+this new page here.
+
+@param aWebProgress
+       The nsIWebProgress instance that fired the notification.
+@param aRequest
+       The associated nsIRequest.  This may be null in some cases.
+@param aLocation
+       The URI of the location that is being loaded.
+@param aFlags
+       This is a value which explains the situation or the reason why
+       the location has changed.
+
+
+### onStatusChange ###
+
+Notification that the status of a request has changed.  The status message
+is intended to be displayed to the user (e.g., in the status bar of the
+browser).
+
+@param aWebProgress
+       The nsIWebProgress instance that fired the notification.
+@param aRequest
+       The nsIRequest that has new status.
+@param aStatus
+       This value is not an error code.  Instead, it is a numeric value
+       that indicates the current status of the request.  This interface
+       does not define the set of possible status codes.  NOTE: Some
+       status values are defined by nsITransport and nsISocketTransport.
+@param aMessage
+       Localized text corresponding to aStatus.
+
+
+### onSecurityChange ###
+
+Notification called for security progress.  This method will be called on
+security transitions (eg HTTP -> HTTPS, HTTPS -> HTTP, FOO -> HTTPS) and
+after document load completion.  It might also be called if an error
+occurs during network loading.
+
+@param aWebProgress
+       The nsIWebProgress instance that fired the notification.
+@param aRequest
+       The nsIRequest that has new security state.
+@param aState
+       A value composed of the Security State Flags and the Security
+       Strength Flags listed above.  Any undefined bits are reserved for
+       future use.
+
+NOTE: These notifications will only occur if a security package is
+installed.
+
+
+## Constants ##
+
+### STATE_START ###
 
 State Transition Flags
 
@@ -49,15 +165,15 @@ STATE_STOP
   to onStateChange indicates the final status of the request.
 
 
-## STATE_REDIRECTING ##
+### STATE_REDIRECTING ###
 
-## STATE_TRANSFERRING ##
+### STATE_TRANSFERRING ###
 
-## STATE_NEGOTIATING ##
+### STATE_NEGOTIATING ###
 
-## STATE_STOP ##
+### STATE_STOP ###
 
-## STATE_IS_REQUEST ##
+### STATE_IS_REQUEST ###
 
 State Type Flags
 
@@ -119,13 +235,13 @@ STATE_IS_WINDOW
   to partition the work that occurs when a document request completes.
 
 
-## STATE_IS_DOCUMENT ##
+### STATE_IS_DOCUMENT ###
 
-## STATE_IS_NETWORK ##
+### STATE_IS_NETWORK ###
 
-## STATE_IS_WINDOW ##
+### STATE_IS_WINDOW ###
 
-## STATE_RESTORING ##
+### STATE_RESTORING ###
 
 State Modifier Flags
 
@@ -141,7 +257,7 @@ STATE_RESTORING
   when it was originally loaded will still be present.
 
 
-## STATE_IS_INSECURE ##
+### STATE_IS_INSECURE ###
 
 State Security Flags
 
@@ -163,11 +279,11 @@ STATE_IS_SECURE
   STATE_SECURE_HIGH, STATE_SECURE_MED, or STATE_SECURE_LOW.
 
 
-## STATE_IS_BROKEN ##
+### STATE_IS_BROKEN ###
 
-## STATE_IS_SECURE ##
+### STATE_IS_SECURE ###
 
-## STATE_BLOCKED_MIXED_ACTIVE_CONTENT ##
+### STATE_BLOCKED_MIXED_ACTIVE_CONTENT ###
 
 Mixed active content flags
 
@@ -181,9 +297,9 @@ STATE_LOADED_MIXED_ACTIVE_CONTENT
   Mixed active content has been loaded. State should be STATE_IS_BROKEN.
 
 
-## STATE_LOADED_MIXED_ACTIVE_CONTENT ##
+### STATE_LOADED_MIXED_ACTIVE_CONTENT ###
 
-## STATE_BLOCKED_MIXED_DISPLAY_CONTENT ##
+### STATE_BLOCKED_MIXED_DISPLAY_CONTENT ###
 
 Mixed display content flags
 
@@ -197,9 +313,9 @@ STATE_LOADED_MIXED_DISPLAY_CONTENT
   Mixed display content has been loaded. State should be STATE_IS_BROKEN.
 
 
-## STATE_LOADED_MIXED_DISPLAY_CONTENT ##
+### STATE_LOADED_MIXED_DISPLAY_CONTENT ###
 
-## STATE_BLOCKED_TRACKING_CONTENT ##
+### STATE_BLOCKED_TRACKING_CONTENT ###
 
 Tracking content flags
 
@@ -213,9 +329,9 @@ STATE_LOADED_TRACKING_CONTENT
   Tracking content has been loaded.
 
 
-## STATE_LOADED_TRACKING_CONTENT ##
+### STATE_LOADED_TRACKING_CONTENT ###
 
-## STATE_SECURE_HIGH ##
+### STATE_SECURE_HIGH ###
 
 Security Strength Flags
 
@@ -238,11 +354,11 @@ STATE_SECURE_LOW
   This flag indicates a low degree of security.
 
 
-## STATE_SECURE_MED ##
+### STATE_SECURE_MED ###
 
-## STATE_SECURE_LOW ##
+### STATE_SECURE_LOW ###
 
-## STATE_IDENTITY_EV_TOPLEVEL ##
+### STATE_IDENTITY_EV_TOPLEVEL ###
 
 State bits for EV == Extended Validation == High Assurance
 
@@ -254,60 +370,7 @@ STATE_IDENTITY_EV_TOPLEVEL
   NOTE: Available since Gecko 1.9
 
 
-## onStateChange ##
-
-Notification indicating the state has changed for one of the requests
-associated with aWebProgress.
-
-@param aWebProgress
-       The nsIWebProgress instance that fired the notification
-@param aRequest
-       The nsIRequest that has changed state.
-@param aStateFlags
-       Flags indicating the new state.  This value is a combination of one
-       of the State Transition Flags and one or more of the State Type
-       Flags defined above.  Any undefined bits are reserved for future
-       use.
-@param aStatus
-       Error status code associated with the state change.  This parameter
-       should be ignored unless aStateFlags includes the STATE_STOP bit.
-       The status code indicates success or failure of the request
-       associated with the state change.  NOTE: aStatus may be a success
-       code even for server generated errors, such as the HTTP 404 error.
-       In such cases, the request itself should be queried for extended
-       error information (e.g., for HTTP requests see nsIHttpChannel).
-
-
-## onProgressChange ##
-
-Notification that the progress has changed for one of the requests
-associated with aWebProgress.  Progress totals are reset to zero when all
-requests in aWebProgress complete (corresponding to onStateChange being
-called with aStateFlags including the STATE_STOP and STATE_IS_WINDOW
-flags).
-
-@param aWebProgress
-       The nsIWebProgress instance that fired the notification.
-@param aRequest
-       The nsIRequest that has new progress.
-@param aCurSelfProgress
-       The current progress for aRequest.
-@param aMaxSelfProgress
-       The maximum progress for aRequest.
-@param aCurTotalProgress
-       The current progress for all requests associated with aWebProgress.
-@param aMaxTotalProgress
-       The total progress for all requests associated with aWebProgress.
-
-NOTE: If any progress value is unknown, or if its value would exceed the
-maximum value of type long, then its value is replaced with -1.
-
-NOTE: If the object also implements nsIWebProgressListener2 and the caller
-knows about that interface, this function will not be called. Instead,
-nsIWebProgressListener2::onProgressChange64 will be called.
-
-
-## LOCATION_CHANGE_SAME_DOCUMENT ##
+### LOCATION_CHANGE_SAME_DOCUMENT ###
 
 Flags for onLocationChange
 
@@ -331,63 +394,4 @@ LOCATION_CHANGE_ERROR_PAGE
   document. In this case, it should set LOCATION_CHANGE_SAME_DOCUMENT.
 
 
-## LOCATION_CHANGE_ERROR_PAGE ##
-
-## onLocationChange ##
-
-Called when the location of the window being watched changes.  This is not
-when a load is requested, but rather once it is verified that the load is
-going to occur in the given window.  For instance, a load that starts in a
-window might send progress and status messages for the new site, but it
-will not send the onLocationChange until we are sure that we are loading
-this new page here.
-
-@param aWebProgress
-       The nsIWebProgress instance that fired the notification.
-@param aRequest
-       The associated nsIRequest.  This may be null in some cases.
-@param aLocation
-       The URI of the location that is being loaded.
-@param aFlags
-       This is a value which explains the situation or the reason why
-       the location has changed.
-
-
-## onStatusChange ##
-
-Notification that the status of a request has changed.  The status message
-is intended to be displayed to the user (e.g., in the status bar of the
-browser).
-
-@param aWebProgress
-       The nsIWebProgress instance that fired the notification.
-@param aRequest
-       The nsIRequest that has new status.
-@param aStatus
-       This value is not an error code.  Instead, it is a numeric value
-       that indicates the current status of the request.  This interface
-       does not define the set of possible status codes.  NOTE: Some
-       status values are defined by nsITransport and nsISocketTransport.
-@param aMessage
-       Localized text corresponding to aStatus.
-
-
-## onSecurityChange ##
-
-Notification called for security progress.  This method will be called on
-security transitions (eg HTTP -> HTTPS, HTTPS -> HTTP, FOO -> HTTPS) and
-after document load completion.  It might also be called if an error
-occurs during network loading.
-
-@param aWebProgress
-       The nsIWebProgress instance that fired the notification.
-@param aRequest
-       The nsIRequest that has new security state.
-@param aState
-       A value composed of the Security State Flags and the Security
-       Strength Flags listed above.  Any undefined bits are reserved for
-       future use.
-
-NOTE: These notifications will only occur if a security package is
-installed.
-
+### LOCATION_CHANGE_ERROR_PAGE ###

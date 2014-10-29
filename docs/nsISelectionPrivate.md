@@ -4,74 +4,48 @@ layout: default
 
 # nsISelectionPrivate #
 
-## ENDOFPRECEDINGLINE ##
+## Methods ##
 
-## STARTOFNEXTLINE ##
+### startBatchChanges ###
 
-## interlinePosition ##
+### endBatchChanges ###
 
-## ancestorLimiter ##
+### toStringWithFormat ###
 
-## startBatchChanges ##
+### addSelectionListener ###
 
-## endBatchChanges ##
+### removeSelectionListener ###
 
-## toStringWithFormat ##
-
-## addSelectionListener ##
-
-## removeSelectionListener ##
-
-## TABLESELECTION_NONE ##
-
-## TABLESELECTION_CELL ##
-
-## TABLESELECTION_ROW ##
-
-## TABLESELECTION_COLUMN ##
-
-## TABLESELECTION_TABLE ##
-
-## TABLESELECTION_ALLCELLS ##
-
-## getTableSelectionType ##
+### getTableSelectionType ###
  Test if supplied range points to a single table element:
    Result is one of above constants. "None" means
    a table element isn't selected.
 
 
-## canCacheFrameOffset ##
+### getCachedFrameOffset ###
 
-## getCachedFrameOffset ##
-
-## setTextRangeStyle ##
+### setTextRangeStyle ###
 
 Set the painting style for the range. The range must be a range in
 the selection. The textRangeStyle will be used by text frame
 when it is painting the selection.
 
 
-## getSelectionDirection ##
+### getSelectionDirection ###
 
 Get the direction of the selection.
 
 
-## setSelectionDirection ##
+### setSelectionDirection ###
 
-## type ##
-
-Returns the type of the selection (see nsISelectionController for
-available constants).
-
-
-## GetRangesForInterval ##
+### GetRangesForInterval ###
 
 Return array of ranges intersecting with the given DOM interval.
 
 
-## GetRangesForIntervalArray ##
+### GetRangesForIntervalArray ###
 
-## scrollIntoView ##
+### scrollIntoView ###
 
 Scrolls a region of the selection, so that it is visible in
 the scrolled view.
@@ -86,7 +60,7 @@ the scrolled view.
 @param aHPercent - how to align the frame horizontally.
 
 
-## scrollIntoViewInternal ##
+### scrollIntoViewInternal ###
 
 Scrolls a region of the selection, so that it is visible in
 the scrolled view.
@@ -103,9 +77,41 @@ the scrolled view.
                    See nsIPresShell.h:ScrollAxis for details.
 
 
-## selectionLanguageChange ##
+### selectionLanguageChange ###
 
 Modifies the cursor Bidi level after a change in keyboard direction
 @param langRTL is PR_TRUE if the new language is right-to-left or
                PR_FALSE if the new language is left-to-right.
 
+
+## Attributes ##
+
+### interlinePosition ###
+
+### ancestorLimiter ###
+
+### canCacheFrameOffset ###
+
+### type ###
+
+Returns the type of the selection (see nsISelectionController for
+available constants).
+
+
+## Constants ##
+
+### ENDOFPRECEDINGLINE ###
+
+### STARTOFNEXTLINE ###
+
+### TABLESELECTION_NONE ###
+
+### TABLESELECTION_CELL ###
+
+### TABLESELECTION_ROW ###
+
+### TABLESELECTION_COLUMN ###
+
+### TABLESELECTION_TABLE ###
+
+### TABLESELECTION_ALLCELLS ###

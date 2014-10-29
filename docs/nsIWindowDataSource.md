@@ -4,7 +4,9 @@ layout: default
 
 # nsIWindowDataSource #
 
-## getWindowForResource ##
+## Methods ##
+
+### getWindowForResource ###
 
 for the given resource name, return the window
 

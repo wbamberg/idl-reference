@@ -7,7 +7,9 @@ layout: default
 Handle WAP Push notifications.
 
 
-## receiveWapPush ##
+## Methods ##
+
+### receiveWapPush ###
 
 Receive WAP Push message.
 

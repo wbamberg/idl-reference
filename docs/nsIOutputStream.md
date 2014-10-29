@@ -18,7 +18,9 @@ generally the case that a blocking output stream should be implemented using
 thread- safe AddRef and Release.
 
 
-## close ##
+## Methods ##
+
+### close ###
  
 Close the stream. Forces the output stream to flush any buffered data.
 
@@ -26,7 +28,7 @@ Close the stream. Forces the output stream to flush any buffered data.
   the calling thread (non-blocking mode only)
 
 
-## flush ##
+### flush ###
 
 Flush the stream.
 
@@ -34,7 +36,7 @@ Flush the stream.
   the calling thread (non-blocking mode only)
 
 
-## write ##
+### write ###
 
 Write data into the stream.
 
@@ -48,7 +50,7 @@ Write data into the stream.
 @throws <other-error> on failure
 
 
-## writeFrom ##
+### writeFrom ###
 
 Writes data into the stream from an input stream.
 
@@ -69,7 +71,7 @@ facility, a separate char* buffer would need to be used in order to call
 the output stream's other Write method.
 
 
-## writeSegments ##
+### writeSegments ###
 
 Low-level write method that has access to the stream's underlying buffer.
 The reader function may be called multiple times for segmented buffers.
@@ -93,7 +95,7 @@ NOTE: this function may be unimplemented if a stream has no underlying
 buffer (e.g., socket output stream).
 
 
-## isNonBlocking ##
+### isNonBlocking ###
 
 @return true if stream is non-blocking
 

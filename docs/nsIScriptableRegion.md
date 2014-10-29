@@ -4,9 +4,11 @@ layout: default
 
 # nsIScriptableRegion #
 
-## init ##
+## Methods ##
 
-## setToRegion ##
+### init ###
+
+### setToRegion ###
 
 copy operator equivalent that takes another region
 
@@ -15,7 +17,7 @@ copy operator equivalent that takes another region
 
 /
 
-## setToRect ##
+### setToRect ###
 
 copy operator equivalent that takes a rect
 
@@ -27,7 +29,7 @@ copy operator equivalent that takes a rect
 
 /
 
-## intersectRegion ##
+### intersectRegion ###
 
 destructively intersect another region with this one
 
@@ -36,7 +38,7 @@ destructively intersect another region with this one
 
 /
 
-## intersectRect ##
+### intersectRect ###
 
 destructively intersect a rect with this region
 
@@ -48,7 +50,7 @@ destructively intersect a rect with this region
 
 /
 
-## unionRegion ##
+### unionRegion ###
 
 destructively union another region with this one
 
@@ -57,7 +59,7 @@ destructively union another region with this one
 
 /
 
-## unionRect ##
+### unionRect ###
 
 destructively union a rect with this region
 
@@ -69,7 +71,7 @@ destructively union a rect with this region
 
 /
 
-## subtractRegion ##
+### subtractRegion ###
 
 destructively subtract another region with this one
 
@@ -78,7 +80,7 @@ destructively subtract another region with this one
 
 /
 
-## subtractRect ##
+### subtractRect ###
 
 destructively subtract a rect from this region
 
@@ -90,7 +92,7 @@ destructively subtract a rect from this region
 
 /
 
-## isEmpty ##
+### isEmpty ###
 
 is this region empty? i.e. does it contain any pixels
 
@@ -99,7 +101,7 @@ is this region empty? i.e. does it contain any pixels
 
 /
 
-## isEqualRegion ##
+### isEqualRegion ###
 
 == operator equivalent i.e. do the regions contain exactly
 the same pixels
@@ -109,7 +111,7 @@ the same pixels
 
 /
 
-## getBoundingBox ##
+### getBoundingBox ###
 
 returns the bounding box of the region i.e. the smallest
 rectangle that completely contains the region.        
@@ -122,7 +124,7 @@ rectangle that completely contains the region.
 
 /
 
-## offset ##
+### offset ###
 
 offsets the region in x and y
 
@@ -132,14 +134,14 @@ offsets the region in x and y
 
 /
 
-## getRects ##
+### getRects ###
 
 @return null if there are no rects,
 @return flat array of rects,ie [x1,y1,width1,height1,x2...].
 The result will contain bogus data if values don't fit in 31 bit
 /
 
-## containsRect ##
+### containsRect ###
 
 does the region intersect the rectangle?
 
@@ -148,4 +150,6 @@ does the region intersect the rectangle?
 
 /
 
-## region ##
+## Attributes ##
+
+### region ###

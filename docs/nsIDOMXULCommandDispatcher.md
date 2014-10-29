@@ -4,24 +4,28 @@ layout: default
 
 # nsIDOMXULCommandDispatcher #
 
-## focusedElement ##
+## Methods ##
 
-## focusedWindow ##
+### addCommandUpdater ###
 
-## addCommandUpdater ##
+### removeCommandUpdater ###
 
-## removeCommandUpdater ##
+### updateCommands ###
 
-## updateCommands ##
+### getControllerForCommand ###
 
-## getControllerForCommand ##
+### getControllers ###
 
-## getControllers ##
+### advanceFocus ###
 
-## advanceFocus ##
+### rewindFocus ###
 
-## rewindFocus ##
+### advanceFocusIntoSubtree ###
 
-## advanceFocusIntoSubtree ##
+## Attributes ##
 
-## suppressFocusScroll ##
+### focusedElement ###
+
+### focusedWindow ###
+
+### suppressFocusScroll ###

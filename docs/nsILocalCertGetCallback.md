@@ -4,7 +4,9 @@ layout: default
 
 # nsILocalCertGetCallback #
 
-## handleCert ##
+## Methods ##
+
+### handleCert ###
 
 Called with the result of the getOrCreateCert operation above.
 

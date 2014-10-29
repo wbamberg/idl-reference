@@ -8,23 +8,9 @@ The XPCOM thread object implements this interface, which allows a consumer
 to observe dispatch activity on the thread.
 
 
-## observer ##
+## Methods ##
 
-Get/set the current thread observer (may be null).  This attribute may be
-read from any thread, but must only be set on the thread corresponding to
-this thread object.  The observer will be released on the thread
-corresponding to this thread object after all other events have been
-processed during a call to Shutdown.
-
-
-## recursionDepth ##
-
-The current recursion depth, 0 when no events are running, 1 when a single
-event is running, and higher when nested events are running. Must only be
-called on the target thread.
-
-
-## addObserver ##
+### addObserver ###
 
 Add an observer that will *only* receive onProcessNextEvent,
 beforeProcessNextEvent. and afterProcessNextEvent callbacks. Always called
@@ -34,13 +20,13 @@ afterProcessNextEvent may be called first depending on whether or not the
 observer is added in a nested loop). Holds a strong ref.
 
 
-## removeObserver ##
+### removeObserver ###
 
 Remove an observer added via the addObserver call. Once removed the
 observer will never be called again by the thread.
 
 
-## pushEventQueue ##
+### pushEventQueue ###
 
 This method causes any events currently enqueued on the thread to be
 suppressed until PopEventQueue is called, and any event dispatched to this
@@ -53,11 +39,29 @@ events for the innermost event queue. Must only be called on the target
 thread.
 
 
-## popEventQueue ##
+### popEventQueue ###
 
 Revert a call to PushEventQueue. When an event queue is popped, any events
 remaining in the queue are appended to the elder queue. This also causes
 the nsIEventTarget returned from PushEventQueue to stop dispatching events.
 Must only be called on the target thread, and with the innermost event
 queue.
+
+
+## Attributes ##
+
+### observer ###
+
+Get/set the current thread observer (may be null).  This attribute may be
+read from any thread, but must only be set on the thread corresponding to
+this thread object.  The observer will be released on the thread
+corresponding to this thread object after all other events have been
+processed during a call to Shutdown.
+
+
+### recursionDepth ###
+
+The current recursion depth, 0 when no events are running, 1 when a single
+event is running, and higher when nested events are running. Must only be
+called on the target thread.
 

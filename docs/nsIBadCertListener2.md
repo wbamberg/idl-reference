@@ -9,7 +9,9 @@ Can be used to obtain the SSL handshake status of a connection
 that will be canceled because of improper cert status.
 
 
-## notifyCertProblem ##
+## Methods ##
+
+### notifyCertProblem ###
 
  @param socketInfo A network communication context that can be used to obtain more information
                    about the active connection.

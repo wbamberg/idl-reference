@@ -4,4 +4,6 @@ layout: default
 
 # nsIXHRSendable #
 
-## getSendInfo ##
+## Methods ##
+
+### getSendInfo ###

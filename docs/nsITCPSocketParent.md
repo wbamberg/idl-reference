@@ -4,14 +4,18 @@ layout: default
 
 # nsITCPSocketParent #
 
-## initJS ##
+## Methods ##
 
-## sendEvent ##
+### initJS ###
 
-## setSocketAndIntermediary ##
+### sendEvent ###
 
-## sendUpdateBufferedAmount ##
+### setSocketAndIntermediary ###
 
-## host ##
+### sendUpdateBufferedAmount ###
 
-## port ##
+## Attributes ##
+
+### host ###
+
+### port ###

@@ -4,16 +4,18 @@ layout: default
 
 # nsIDOMGeoPositionCoords #
 
-## latitude ##
+## Attributes ##
 
-## longitude ##
+### latitude ###
 
-## altitude ##
+### longitude ###
 
-## accuracy ##
+### altitude ###
 
-## altitudeAccuracy ##
+### accuracy ###
 
-## heading ##
+### altitudeAccuracy ###
 
-## speed ##
+### heading ###
+
+### speed ###

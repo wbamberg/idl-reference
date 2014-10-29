@@ -14,14 +14,16 @@ service key. The path has the same syntax across all platforms.
 
 
 
-## file ##
+## Attributes ##
+
+### file ###
 
 file
 
 The file whose location is stored or retrieved.
 
 
-## relativeToKey ##
+### relativeToKey ###
 
 relativeToKey
 

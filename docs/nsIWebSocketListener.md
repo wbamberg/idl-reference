@@ -8,7 +8,9 @@ nsIWebSocketListener: passed to nsIWebSocketChannel::AsyncOpen. Receives
 websocket traffic events as they arrive.
 
 
-## onStart ##
+## Methods ##
+
+### onStart ###
 
 Called to signify the establishment of the message stream.
 
@@ -21,7 +23,7 @@ OnStart will be called before any other calls to this API.
 @param aContext user defined context
 
 
-## onStop ##
+### onStop ###
 
 Called to signify the completion of the message stream.
 OnStop is the final notification the listener will receive and it
@@ -35,7 +37,7 @@ nsIWebSocketChannel::Close() has not been called.
 @param aStatusCode reason for stopping (NS_OK if completed successfully)
 
 
-## onMessageAvailable ##
+### onMessageAvailable ###
 
 Called to deliver text message.
 
@@ -43,7 +45,7 @@ Called to deliver text message.
 @param aMsg the message data
 
 
-## onBinaryMessageAvailable ##
+### onBinaryMessageAvailable ###
 
 Called to deliver binary message.
 
@@ -51,7 +53,7 @@ Called to deliver binary message.
 @param aMsg the message data
 
 
-## onAcknowledge ##
+### onAcknowledge ###
 
 Called to acknowledge message sent via sendMsg() or sendBinaryMsg.
 
@@ -59,7 +61,7 @@ Called to acknowledge message sent via sendMsg() or sendBinaryMsg.
 @param aSize number of bytes placed in OS send buffer
 
 
-## onServerClose ##
+### onServerClose ###
 
 Called to inform receipt of WebSocket Close message from server.
 In the case of errors onStop() can be called without ever

@@ -9,12 +9,9 @@ This allows reading unicode strings from a stream, automatically converting
 the bytes from a selected character encoding.
 
 
-## DEFAULT_REPLACEMENT_CHARACTER ##
+## Methods ##
 
-Default replacement char value, U+FFFD REPLACEMENT CHARACTER.
-
-
-## init ##
+### init ###
 
 Initialize this stream.
 @param aStream 
@@ -29,4 +26,11 @@ Initialize this stream.
        with. The standard replacement character is U+FFFD.
        A value of 0x0000 will cause an exception to be thrown if unknown
        byte sequences are encountered in the stream.
+
+
+## Constants ##
+
+### DEFAULT_REPLACEMENT_CHARACTER ###
+
+Default replacement char value, U+FFFD REPLACEMENT CHARACTER.
 

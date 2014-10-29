@@ -4,16 +4,20 @@ layout: default
 
 # inISearchObserver #
 
-## IN_SUCCESS ##
+## Methods ##
 
-## IN_INTERRUPTED ##
+### onSearchStart ###
 
-## IN_ERROR ##
+### onSearchResult ###
 
-## onSearchStart ##
+### onSearchEnd ###
 
-## onSearchResult ##
+### onSearchError ###
 
-## onSearchEnd ##
+## Constants ##
 
-## onSearchError ##
+### IN_SUCCESS ###
+
+### IN_INTERRUPTED ###
+
+### IN_ERROR ###

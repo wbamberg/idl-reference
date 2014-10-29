@@ -4,7 +4,9 @@ layout: default
 
 # nsIDOMTCPSocket #
 
-## open ##
+## Methods ##
+
+### open ###
 
 Create and return a socket object which will attempt to connect to
 the given host and port.
@@ -23,7 +25,7 @@ the given host and port.
 @return The new TCPSocket instance.
 
 
-## listen ##
+### listen ###
 
 Listen on a port
 
@@ -42,49 +44,28 @@ Listen on a port
 @return The new TCPServerSocket instance.
 
 
-## upgradeToSecure ##
+### upgradeToSecure ###
 
 Enable secure on channel.
 
 
-## host ##
-
-The host of this socket object.
-
-
-## port ##
-
-The port of this socket object.
-
-
-## ssl ##
-
-True if this socket object is an SSL socket.
-
-
-## bufferedAmount ##
-
-The number of bytes which have previously been buffered by calls to
-send on this socket.
-
-
-## suspend ##
+### suspend ###
 
 Pause reading incoming data and invocations of the ondata handler until
 resume is called.
 
 
-## resume ##
+### resume ###
 
 Resume reading incoming data and invoking ondata as usual.
 
 
-## close ##
+### close ###
 
 Close the socket.
 
 
-## send ##
+### send ###
 
 Write data to the socket.
 
@@ -111,13 +92,36 @@ Write data to the socket.
         calls to send.
 
 
-## readyState ##
+## Attributes ##
+
+### host ###
+
+The host of this socket object.
+
+
+### port ###
+
+The port of this socket object.
+
+
+### ssl ###
+
+True if this socket object is an SSL socket.
+
+
+### bufferedAmount ###
+
+The number of bytes which have previously been buffered by calls to
+send on this socket.
+
+
+### readyState ###
 
 The readyState attribute indicates which state the socket is currently
 in. The state will be either "connecting", "open", "closing", or "closed".
 
 
-## binaryType ##
+### binaryType ###
 
 The binaryType attribute indicates which mode this socket uses for
 sending and receiving data. If the binaryType: "arraybuffer" option
@@ -125,14 +129,14 @@ was passed to the open method that created this socket, binaryType
 will be "arraybuffer". Otherwise, it will be "string".
 
 
-## onopen ##
+### onopen ###
 
 The onopen event handler is called when the connection to the server
 has been established. If the connection is refused, onerror will be
 called, instead.
 
 
-## ondrain ##
+### ondrain ###
 
 After send has buffered more than 64k of data, it returns false to
 indicate that the client should pause before sending more data, to
@@ -143,7 +147,7 @@ ondrain will be called once the previously-buffered data has been written
 to the network, at which point the client can resume calling send again.
 
 
-## ondata ##
+### ondata ###
 
 The ondata handler will be called repeatedly and asynchronously after
 onopen has been called, every time some data was available from the server
@@ -156,7 +160,7 @@ callbacks, by calling the socket's suspend() method. Further invocations
 of ondata will be paused until resume() is called.
 
 
-## onerror ##
+### onerror ###
 
 The onerror handler will be called when there is an error. The data
 attribute of the event passed to the onerror handler will have a
@@ -167,7 +171,7 @@ and onclose will not be called. If onerror is called after onopen,
 the connection was lost, and onclose will be called after onerror.
 
 
-## onclose ##
+### onclose ###
 
 The onclose handler is called once the underlying network socket
 has been closed, either by the server, or by the client calling

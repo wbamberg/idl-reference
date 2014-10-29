@@ -4,18 +4,24 @@ layout: default
 
 # nsIDOMWheelEvent #
 
-## DOM_DELTA_PIXEL ##
+## Methods ##
 
-## DOM_DELTA_LINE ##
+### initWheelEvent ###
 
-## DOM_DELTA_PAGE ##
+## Attributes ##
 
-## deltaX ##
+### deltaX ###
 
-## deltaY ##
+### deltaY ###
 
-## deltaZ ##
+### deltaZ ###
 
-## deltaMode ##
+### deltaMode ###
 
-## initWheelEvent ##
+## Constants ##
+
+### DOM_DELTA_PIXEL ###
+
+### DOM_DELTA_LINE ###
+
+### DOM_DELTA_PAGE ###

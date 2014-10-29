@@ -4,44 +4,48 @@ layout: default
 
 # nsIAccessibleTableCell #
 
-## table ##
+## Methods ##
+
+### isSelected ###
+
+Return a boolean value indicating whether this cell is selected.
+
+
+## Attributes ##
+
+### table ###
 
 Return host table accessible.
 
 
-## columnIndex ##
+### columnIndex ###
 
 Return column index of this cell.
 
 
-## rowIndex ##
+### rowIndex ###
 
 Return row index of this cell.
 
 
-## columnExtent ##
+### columnExtent ###
 
 Return the number of columns occupied by this cell. The result differs
 from 1 if the specified cell spans multiple columns.
 
 
-## rowExtent ##
+### rowExtent ###
 
 Return the number of rows occupied by this accessible cell. The result
 differs from 1 if the specified cell spans multiple rows.
 
 
-## columnHeaderCells ##
+### columnHeaderCells ###
 
 Return an array of column header cells for this cell.
 
 
-## rowHeaderCells ##
+### rowHeaderCells ###
 
 Return an array of row header cells for this cell.
-
-
-## isSelected ##
-
-Return a boolean value indicating whether this cell is selected.
 

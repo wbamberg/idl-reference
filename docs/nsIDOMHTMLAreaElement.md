@@ -14,34 +14,38 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## alt ##
+## Methods ##
 
-## coords ##
+### toString ###
 
-## shape ##
+## Attributes ##
 
-## href ##
+### alt ###
 
-## target ##
+### coords ###
 
-## ping ##
+### shape ###
 
-## download ##
+### href ###
 
-## protocol ##
+### target ###
 
-## host ##
+### ping ###
 
-## hostname ##
+### download ###
 
-## port ##
+### protocol ###
 
-## pathname ##
+### host ###
 
-## search ##
+### hostname ###
 
-## hash ##
+### port ###
 
-## noHref ##
+### pathname ###
 
-## toString ##
+### search ###
+
+### hash ###
+
+### noHref ###

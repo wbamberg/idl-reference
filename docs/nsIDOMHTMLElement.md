@@ -15,71 +15,75 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## title ##
+## Methods ##
 
-## lang ##
+### click ###
 
-## dir ##
+### focus ###
 
-## dataset ##
+### blur ###
 
-## itemScope ##
+### insertAdjacentHTML ###
 
-## itemType ##
+### scrollIntoView ###
 
-## itemId ##
+## Attributes ##
 
-## properties ##
+### title ###
 
-## itemValue ##
+### lang ###
 
-## itemProp ##
+### dir ###
 
-## itemRef ##
+### dataset ###
 
-## hidden ##
+### itemScope ###
+
+### itemType ###
+
+### itemId ###
+
+### properties ###
+
+### itemValue ###
+
+### itemProp ###
+
+### itemRef ###
+
+### hidden ###
 
 Indicates that the element is not yet, or is no longer, relevant.
 
 See <http://www.whatwg.org/html5/#the-hidden-attribute>.
 
 
-## click ##
+### tabIndex ###
 
-## tabIndex ##
+### accessKey ###
 
-## focus ##
+### accessKeyLabel ###
 
-## blur ##
+### draggable ###
 
-## accessKey ##
+### contentEditable ###
 
-## accessKeyLabel ##
+### isContentEditable ###
 
-## draggable ##
+### contextMenu ###
 
-## contentEditable ##
+### spellcheck ###
 
-## isContentEditable ##
+### innerHTML ###
 
-## contextMenu ##
+### outerHTML ###
 
-## spellcheck ##
+### offsetParent ###
 
-## innerHTML ##
+### offsetTop ###
 
-## outerHTML ##
+### offsetLeft ###
 
-## insertAdjacentHTML ##
+### offsetWidth ###
 
-## scrollIntoView ##
-
-## offsetParent ##
-
-## offsetTop ##
-
-## offsetLeft ##
-
-## offsetWidth ##
-
-## offsetHeight ##
+### offsetHeight ###

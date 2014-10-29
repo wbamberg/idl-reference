@@ -4,14 +4,16 @@ layout: default
 
 # nsIPrintStatusFeedback #
 
-## showStatusString ##
+## Methods ##
 
-## startMeteors ##
+### showStatusString ###
 
-## stopMeteors ##
+### startMeteors ###
 
-## showProgress ##
+### stopMeteors ###
 
-## setDocShell ##
+### showProgress ###
 
-## closeWindow ##
+### setDocShell ###
+
+### closeWindow ###

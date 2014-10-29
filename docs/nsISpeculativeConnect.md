@@ -4,7 +4,9 @@ layout: default
 
 # nsISpeculativeConnect #
 
-## speculativeConnect ##
+## Methods ##
+
+### speculativeConnect ###
 
 Called as a hint to indicate a new transaction for the URI is likely coming
 soon. The implementer may use this information to start a TCP

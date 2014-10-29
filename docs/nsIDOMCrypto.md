@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMCrypto #
 
-## init ##
+## Methods ##
+
+### init ###

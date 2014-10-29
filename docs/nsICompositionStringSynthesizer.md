@@ -8,32 +8,26 @@ Stores composition clauses information and caret information for synthesizing
 composition string.
 
 
-## setString ##
+## Methods ##
+
+### setString ###
 
 Set composition string or committed string.
 
 
-## ATTR_RAWINPUT ##
-
-## ATTR_SELECTEDRAWTEXT ##
-
-## ATTR_CONVERTEDTEXT ##
-
-## ATTR_SELECTEDCONVERTEDTEXT ##
-
-## appendClause ##
+### appendClause ###
 
 Append a clause.
 
 TODO: Should be able to specify custom clause style.
 
 
-## setCaret ##
+### setCaret ###
 
 Set caret information.
 
 
-## dispatchEvent ##
+### dispatchEvent ###
 
 Synthesize composition string with given information by dispatching
 a proper event.
@@ -45,3 +39,13 @@ error.
 After dispatching event, this clears all the information about the
 composition string. So, you can reuse this instance.
 
+
+## Constants ##
+
+### ATTR_RAWINPUT ###
+
+### ATTR_SELECTEDRAWTEXT ###
+
+### ATTR_CONVERTEDTEXT ###
+
+### ATTR_SELECTEDCONVERTEDTEXT ###

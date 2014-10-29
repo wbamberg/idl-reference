@@ -4,17 +4,19 @@ layout: default
 
 # nsIINIParser #
 
-## getSections ##
+## Methods ##
+
+### getSections ###
 
 Enumerates the [section]s available in the INI file.
 
 
-## getKeys ##
+### getKeys ###
 
 Enumerates the keys available within a section.
 
 
-## getString ##
+### getString ###
 
 Get the value of a string for a particular section and key.
 

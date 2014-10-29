@@ -8,7 +8,9 @@ Abstract unicode character input stream
 @see nsIInputStream
 
 
-## read ##
+## Methods ##
+
+### read ###
 
 Reads into a caller-provided character array.
 
@@ -19,7 +21,7 @@ Reads into a caller-provided character array.
 @note To read more than 2^32 characters, call this method multiple times.
 
 
-## readSegments ##
+### readSegments ###
 
 Low-level read method that has access to the stream's underlying buffer.
 The writer function may be called multiple times for segmented buffers.
@@ -42,14 +44,14 @@ NOTE: this function may be unimplemented if a stream has no underlying
 buffer
 
 
-## readString ##
+### readString ###
 
 Read into a string object.
 @param aCount The number of characters that should be read
 @return The number of characters that were read.
 
 
-## close ##
+### close ###
 
 Close the stream and free associated resources. This also closes the
 underlying stream, if any.

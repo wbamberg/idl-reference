@@ -7,7 +7,9 @@ layout: default
 Callback invoked once all blockers of a barrier have been removed.
 
 
-## done ##
+## Methods ##
+
+### done ###
 
 The operation has been completed.
 

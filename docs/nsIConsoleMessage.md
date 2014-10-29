@@ -9,21 +9,18 @@ provide an object that can be qi'ed to provide more specific
 message information.
 
 
-## debug ##
- Log level constants. */
+## Methods ##
 
-## info ##
+### toString ###
 
-## warn ##
+## Attributes ##
 
-## error ##
-
-## logLevel ##
+### logLevel ###
 
 The log level of this message.
 
 
-## timeStamp ##
+### timeStamp ###
 
 The time (in milliseconds from the Epoch) that the message instance
 was initialised.
@@ -31,6 +28,15 @@ The timestamp is initialized as JS_now/1000 so that it can be
 compared to Date.now in Javascript.
 
 
-## message ##
+### message ###
 
-## toString ##
+## Constants ##
+
+### debug ###
+ Log level constants. */
+
+### info ###
+
+### warn ###
+
+### error ###

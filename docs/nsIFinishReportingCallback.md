@@ -4,4 +4,6 @@ layout: default
 
 # nsIFinishReportingCallback #
 
-## callback ##
+## Methods ##
+
+### callback ###

@@ -10,7 +10,9 @@ Used for triggering when a HTTP/2 push is received.
 
 
 
-## onPush ##
+## Methods ##
+
+### onPush ###
 
 When provided as a notificationCallback to an httpChannel, this.onPush()
 will be invoked when there is a >= Http2 push to that

@@ -9,24 +9,28 @@ nsIUDPMessage
 This interface is used to encapsulate an incomming UDP message
 
 
-## fromAddr ##
+## Methods ##
+
+### getDataAsTArray ###
+
+## Attributes ##
+
+### fromAddr ###
 
 Address of the source of the message
 
 
-## data ##
+### data ###
 
 Data of the message
 
 
-## outputStream ##
+### outputStream ###
 
 Stream to send a response
 
 
-## rawData ##
+### rawData ###
 
 Raw Data of the message
 
-
-## getDataAsTArray ##

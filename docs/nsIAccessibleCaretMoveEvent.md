@@ -7,7 +7,9 @@ layout: default
 Fired when the caret changes position in text.
 
 
-## caretOffset ##
+## Attributes ##
+
+### caretOffset ###
 
 Return caret offset.
 

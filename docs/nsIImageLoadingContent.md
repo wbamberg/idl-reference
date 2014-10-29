@@ -28,36 +28,9 @@ Please make sure to update the MozImageLoadingContent WebIDL
 interface to mirror this interface when changing it.
 
 
-## UNKNOWN_REQUEST ##
+## Methods ##
 
-Request types.  Image loading content nodes attempt to do atomic
-image changes when the image url is changed.  This means that
-when the url changes the new image load will start, but the old
-image will remain the "current" request until the new image is
-fully loaded.  At that point, the old "current" request will be
-discarded and the "pending" request will become "current".
-
-
-## CURRENT_REQUEST ##
-
-## PENDING_REQUEST ##
-
-## loadingEnabled ##
-
-loadingEnabled is used to enable and disable loading in
-situations where loading images is unwanted.  Note that enabling
-loading will *not* automatically trigger an image load.
-
-
-## imageBlockingStatus ##
-
-Returns the image blocking status (@see nsIContentPolicy).  This
-will always be an nsIContentPolicy REJECT_* status for cases when
-the image was blocked.  This status always refers to the
-CURRENT_REQUEST load.
-
-
-## addObserver ##
+### addObserver ###
 
 Used to register an image decoder observer.  Typically, this will
 be a proxy for a frame that wants to paint the image.
@@ -70,14 +43,14 @@ current and pending, will be passed through.
 @throws NS_ERROR_OUT_OF_MEMORY
 
 
-## removeObserver ##
+### removeObserver ###
 
 Used to unregister an image decoder observer.
 
 @param aObserver the observer to unregister
 
 
-## getRequest ##
+### getRequest ###
 
 Accessor to get the image requests
 
@@ -90,19 +63,19 @@ is thrown)
 known
 
 
-## frameCreated ##
+### frameCreated ###
 
 Used to notify the image loading content node that a frame has been
 created.
 
 
-## frameDestroyed ##
+### frameDestroyed ###
 
 Used to notify the image loading content node that a frame has been
 destroyed.
 
 
-## getRequestType ##
+### getRequestType ###
 
 Used to find out what type of request one is dealing with (eg
 which request got passed through to the imgINotificationObserver
@@ -115,14 +88,7 @@ interface of an observer)
 @throws NS_ERROR_UNEXPECTED if aRequest is not known
 
 
-## currentURI ##
-
-Gets the URI of the current request, if available.
-Otherwise, returns the last URI that this content tried to load, or
-null if there haven't been any such attempts.
-
-
-## loadImageWithChannel ##
+### loadImageWithChannel ###
 
 loadImageWithChannel allows data from an existing channel to be
 used as the image data for this content node.
@@ -136,7 +102,7 @@ used as the image data for this content node.
 @throws NS_ERROR_NULL_POINTER if aChannel is null
 
 
-## forceReload ##
+### forceReload ###
 
 forceReload forces reloading of the image pointed to by currentURI
 
@@ -144,27 +110,67 @@ forceReload forces reloading of the image pointed to by currentURI
 @throws NS_ERROR_NOT_AVAILABLE if there is no current URI to reload
 
 
-## forceImageState ##
+### forceImageState ###
 
 Enables/disables image state forcing. When |aForce| is PR_TRUE, we force
 nsImageLoadingContent::ImageState() to return |aState|. Call again with |aForce|
 as PR_FALSE to revert ImageState() to its original behaviour.
 
 
-## naturalWidth ##
-
-The intrinsic size and width of this content. May differ from actual image
-size due to things like responsive image density.
-
-
-## naturalHeight ##
-
-## IncrementVisibleCount ##
+### IncrementVisibleCount ###
 
 A visible count is stored, if it is non-zero then this image is considered
 visible. These methods increment, decrement, or return the visible coount.
 
 
-## DecrementVisibleCount ##
+### DecrementVisibleCount ###
 
-## GetVisibleCount ##
+### GetVisibleCount ###
+
+## Attributes ##
+
+### loadingEnabled ###
+
+loadingEnabled is used to enable and disable loading in
+situations where loading images is unwanted.  Note that enabling
+loading will *not* automatically trigger an image load.
+
+
+### imageBlockingStatus ###
+
+Returns the image blocking status (@see nsIContentPolicy).  This
+will always be an nsIContentPolicy REJECT_* status for cases when
+the image was blocked.  This status always refers to the
+CURRENT_REQUEST load.
+
+
+### currentURI ###
+
+Gets the URI of the current request, if available.
+Otherwise, returns the last URI that this content tried to load, or
+null if there haven't been any such attempts.
+
+
+### naturalWidth ###
+
+The intrinsic size and width of this content. May differ from actual image
+size due to things like responsive image density.
+
+
+### naturalHeight ###
+
+## Constants ##
+
+### UNKNOWN_REQUEST ###
+
+Request types.  Image loading content nodes attempt to do atomic
+image changes when the image url is changed.  This means that
+when the url changes the new image load will start, but the old
+image will remain the "current" request until the new image is
+fully loaded.  At that point, the old "current" request will be
+discarded and the "pending" request will become "current".
+
+
+### CURRENT_REQUEST ###
+
+### PENDING_REQUEST ###

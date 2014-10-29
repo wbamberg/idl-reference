@@ -4,6 +4,10 @@ layout: default
 
 # nsISystemMessagesConfigurator #
 
-## mustShowRunningApp ##
+## Methods ##
 
-## shouldDispatch ##
+### shouldDispatch ###
+
+## Attributes ##
+
+### mustShowRunningApp ###

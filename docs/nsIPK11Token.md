@@ -4,52 +4,58 @@ layout: default
 
 # nsIPK11Token #
 
-## ASK_EVERY_TIME ##
+## Methods ##
 
-## ASK_FIRST_TIME ##
+### isLoggedIn ###
 
-## ASK_EXPIRE_TIME ##
+### login ###
 
-## tokenName ##
+### logoutSimple ###
 
-## tokenLabel ##
+### logoutAndDropAuthenticatedResources ###
 
-## tokenManID ##
+### reset ###
 
-## tokenHWVersion ##
+### checkPassword ###
 
-## tokenFWVersion ##
+### initPassword ###
 
-## tokenSerialNumber ##
+### changePassword ###
 
-## isLoggedIn ##
+### getAskPasswordTimes ###
 
-## login ##
+### getAskPasswordTimeout ###
 
-## logoutSimple ##
+### setAskPasswordDefaults ###
 
-## logoutAndDropAuthenticatedResources ##
+### isHardwareToken ###
 
-## reset ##
+### needsLogin ###
 
-## minimumPasswordLength ##
+### isFriendly ###
 
-## needsUserInit ##
+## Attributes ##
 
-## checkPassword ##
+### tokenName ###
 
-## initPassword ##
+### tokenLabel ###
 
-## changePassword ##
+### tokenManID ###
 
-## getAskPasswordTimes ##
+### tokenHWVersion ###
 
-## getAskPasswordTimeout ##
+### tokenFWVersion ###
 
-## setAskPasswordDefaults ##
+### tokenSerialNumber ###
 
-## isHardwareToken ##
+### minimumPasswordLength ###
 
-## needsLogin ##
+### needsUserInit ###
 
-## isFriendly ##
+## Constants ##
+
+### ASK_EVERY_TIME ###
+
+### ASK_FIRST_TIME ###
+
+### ASK_EXPIRE_TIME ###

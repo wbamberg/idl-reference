@@ -9,7 +9,26 @@ supports scrolling.  This is a generic interface without concern for the
 type of content that may be inside.
 
 
-## ScrollOrientation_X ##
+## Methods ##
+
+### getDefaultScrollbarPreferences ###
+
+Get or set the default scrollbar state for all documents in
+this shell.
+
+
+### setDefaultScrollbarPreferences ###
+
+### getScrollbarVisibility ###
+
+Get information about whether the vertical and horizontal scrollbars are
+currently visible.  If you are only interested in one of the visibility
+settings pass nullptr in for the one you aren't interested in.
+
+
+## Constants ##
+
+### ScrollOrientation_X ###
 
 Constants declaring the two scroll orientations a scrollbar can be in.
 ScrollOrientation_X - Horizontal scrolling.  When passing this
@@ -20,9 +39,9 @@ ScrollOrientation_Y - Vertical scrolling.  When passing this
         vertical scrollbar.
 
 
-## ScrollOrientation_Y ##
+### ScrollOrientation_Y ###
 
-## Scrollbar_Auto ##
+### Scrollbar_Auto ###
 
 Constants declaring the states of the scrollbars.
 ScrollPref_Auto - bars visible only when needed.
@@ -30,21 +49,6 @@ ScrollPref_Never - bars never visible, even when scrolling still possible.
 ScrollPref_Always - bars always visible, even when scrolling is not possible
 
 
-## Scrollbar_Never ##
+### Scrollbar_Never ###
 
-## Scrollbar_Always ##
-
-## getDefaultScrollbarPreferences ##
-
-Get or set the default scrollbar state for all documents in
-this shell.
-
-
-## setDefaultScrollbarPreferences ##
-
-## getScrollbarVisibility ##
-
-Get information about whether the vertical and horizontal scrollbars are
-currently visible.  If you are only interested in one of the visibility
-settings pass nullptr in for the one you aren't interested in.
-
+### Scrollbar_Always ###

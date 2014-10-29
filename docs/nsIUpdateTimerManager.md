@@ -9,7 +9,9 @@ duration (e.g. 1-7 or more days, weeks or months) timers to be registered
 and then fired.
 
 
-## registerTimer ##
+## Methods ##
+
+### registerTimer ###
 
 Register an interval with the timer manager. The timer manager
 periodically checks to see if the interval has expired and if it has

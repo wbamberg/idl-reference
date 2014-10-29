@@ -10,12 +10,14 @@ the socket that was associated with the event, the type of event,
 and the data associated with the event (if any).
 
 
-## target ##
+## Attributes ##
+
+### target ###
 
 The socket object which produced this event.
 
 
-## type ##
+### type ###
 
 The type of this event. One of:
 
@@ -26,7 +28,7 @@ drain
 close
 
 
-## data ##
+### data ###
 
 The data related to this event, if any. In the ondata callback,
 data will be the bytes read from the network; if the binaryType

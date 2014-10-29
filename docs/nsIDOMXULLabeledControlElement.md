@@ -4,12 +4,14 @@ layout: default
 
 # nsIDOMXULLabeledControlElement #
 
-## crop ##
+## Attributes ##
 
-## image ##
+### crop ###
 
-## label ##
+### image ###
 
-## accessKey ##
+### label ###
 
-## command ##
+### accessKey ###
+
+### command ###

@@ -4,8 +4,12 @@ layout: default
 
 # nsIDataStore #
 
-## init ##
+## Methods ##
 
-## exposedObject ##
+### init ###
 
-## retrieveRevisionId ##
+### retrieveRevisionId ###
+
+## Attributes ##
+
+### exposedObject ###

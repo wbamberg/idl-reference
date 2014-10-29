@@ -4,61 +4,15 @@ layout: default
 
 # nsITelemetry #
 
-## HISTOGRAM_EXPONENTIAL ##
+## Methods ##
 
-Histogram types:
-HISTOGRAM_EXPONENTIAL - buckets increase exponentially
-HISTOGRAM_LINEAR - buckets increase linearly
-HISTOGRAM_BOOLEAN - For storing 0/1 values
-HISTOGRAM_FLAG - For storing a single value; its count is always == 1.
-HISTOGRAM_COUNT - For storing counter values without bucketing.
-
-
-## HISTOGRAM_LINEAR ##
-
-## HISTOGRAM_BOOLEAN ##
-
-## HISTOGRAM_FLAG ##
-
-## HISTOGRAM_COUNT ##
-
-## histogramSnapshots ##
-
-## lastShutdownDuration ##
-
-The amount of time, in milliseconds, that the last session took
-to shutdown.  Reads as 0 to indicate failure.
-
-
-## failedProfileLockCount ##
-
-The number of failed profile lock attempts that have occurred prior to 
-successfully locking the profile
-
-
-## slowSQL ##
-
-## debugSlowSQL ##
-
-## maximalNumberOfConcurrentThreads ##
-
-A number representing the highest number of concurrent threads
-reached during this session.
-
-
-## chromeHangs ##
-
-## threadHangStats ##
-
-## lateWrites ##
-
-## registeredHistograms ##
+### registeredHistograms ###
 
 Returns an array whose values are the names of histograms defined
 in Histograms.json.
 
 
-## newHistogram ##
+### newHistogram ###
  
 Create and return a histogram.  Parameters:
 
@@ -74,7 +28,7 @@ The returned object has the following functions:
   clear() - Zeros out the histogram's buckets and sum
 
 
-## histogramFrom ##
+### histogramFrom ###
 
 Create a histogram using the current state of an existing histogram.  The
 existing histogram must be registered in TelemetryHistograms.h.
@@ -84,24 +38,14 @@ existing histogram must be registered in TelemetryHistograms.h.
 The returned object has the same functions as a histogram returned from newHistogram.
 
 
-## getHistogramById ##
+### getHistogramById ###
 
 Same as newHistogram above, but for histograms registered in TelemetryHistograms.h.
 
 @param id - unique identifier from TelemetryHistograms.h
 
 
-## canRecord ##
-
-Set this to false to disable gathering of telemetry statistics.
-
-
-## canSend ##
-
-A flag indicating whether Telemetry can submit official results.
-
-
-## registerAddonHistogram ##
+### registerAddonHistogram ###
  Addon telemetry hooks */
 
 Register a histogram for an addon.  Throws an error if the
@@ -116,7 +60,7 @@ histogram name has been registered previously.
        HISTOGRAM_BOOLEAN or HISTOGRAM_COUNT
 
 
-## getAddonHistogram ##
+### getAddonHistogram ###
 
 Return a histogram previously registered via
 registerAddonHistogram.  Throws an error if the id/name combo has
@@ -129,14 +73,70 @@ The returned object has the same functions as a histogram returned
 from newHistogram.
 
 
-## unregisterAddonHistograms ##
+### unregisterAddonHistograms ###
 
 Delete all histograms associated with the given addon id.
 
 @param addon_id - Unique ID of the addon
 
 
-## addonHistogramSnapshots ##
+### asyncFetchTelemetryData ###
+
+Read data from the previous run. After the callback is called, the last
+shutdown time is available in lastShutdownDuration and any late
+writes in lateWrites.
+
+
+### msSinceProcessStart ###
+
+Return the number of seconds since process start using monotonic
+timestamps (unaffected by system clock changes).
+@throws NS_ERROR_NOT_AVAILABLE if TimeStamp doesn't have the data.
+
+
+## Attributes ##
+
+### histogramSnapshots ###
+
+### lastShutdownDuration ###
+
+The amount of time, in milliseconds, that the last session took
+to shutdown.  Reads as 0 to indicate failure.
+
+
+### failedProfileLockCount ###
+
+The number of failed profile lock attempts that have occurred prior to 
+successfully locking the profile
+
+
+### slowSQL ###
+
+### debugSlowSQL ###
+
+### maximalNumberOfConcurrentThreads ###
+
+A number representing the highest number of concurrent threads
+reached during this session.
+
+
+### chromeHangs ###
+
+### threadHangStats ###
+
+### lateWrites ###
+
+### canRecord ###
+
+Set this to false to disable gathering of telemetry statistics.
+
+
+### canSend ###
+
+A flag indicating whether Telemetry can submit official results.
+
+
+### addonHistogramSnapshots ###
 
 An object containing a snapshot from all of the currently
 registered addon histograms.
@@ -147,14 +147,7 @@ addon's histograms and whose corresponding values are as in
 histogramSnapshots.
 
 
-## asyncFetchTelemetryData ##
-
-Read data from the previous run. After the callback is called, the last
-shutdown time is available in lastShutdownDuration and any late
-writes in lateWrites.
-
-
-## fileIOReports ##
+### fileIOReports ###
 
 Get statistics of file IO reports, null, if not recorded.
 
@@ -165,9 +158,22 @@ Each stage's entry is either null or an array with the layout
 [total_time, #creates, #reads, #writes, #fsyncs, #stats]
 
 
-## msSinceProcessStart ##
+## Constants ##
 
-Return the number of seconds since process start using monotonic
-timestamps (unaffected by system clock changes).
-@throws NS_ERROR_NOT_AVAILABLE if TimeStamp doesn't have the data.
+### HISTOGRAM_EXPONENTIAL ###
 
+Histogram types:
+HISTOGRAM_EXPONENTIAL - buckets increase exponentially
+HISTOGRAM_LINEAR - buckets increase linearly
+HISTOGRAM_BOOLEAN - For storing 0/1 values
+HISTOGRAM_FLAG - For storing a single value; its count is always == 1.
+HISTOGRAM_COUNT - For storing counter values without bucketing.
+
+
+### HISTOGRAM_LINEAR ###
+
+### HISTOGRAM_BOOLEAN ###
+
+### HISTOGRAM_FLAG ###
+
+### HISTOGRAM_COUNT ###

@@ -4,32 +4,34 @@ layout: default
 
 # mozIPlaceInfo #
 
-## placeId ##
+## Attributes ##
+
+### placeId ###
 
 The machine-local (internal) id of the place.
 
 
-## guid ##
+### guid ###
 
 The globally unique id of the place.
 
 
-## uri ##
+### uri ###
 
 The URI of the place.
 
 
-## title ##
+### title ###
 
 The title associated with the place.
 
 
-## frecency ##
+### frecency ###
 
 The frecency of the place.
 
 
-## visits ##
+### visits ###
 
 An array of mozIVisitInfo objects for the place.
 

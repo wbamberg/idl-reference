@@ -4,7 +4,9 @@ layout: default
 
 # nsITelephonyListener #
 
-## callStateChanged ##
+## Methods ##
+
+### callStateChanged ###
 
 Notified when a telephony call changes state.
 
@@ -38,7 +40,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        Indicates whether this call be be added into a conference.
 
 
-## conferenceCallStateChanged ##
+### conferenceCallStateChanged ###
 
 Called when participants of a conference call have been updated, and the
 conference call state changes.
@@ -49,13 +51,13 @@ conference call state changes.
        nsITelephonyService::CALL_STATE_CONNECTED.
 
 
-## enumerateCallStateComplete ##
+### enumerateCallStateComplete ###
 
 Called when enumeration asked by nsITelephonyService::enumerateCalls
 is completed.
 
 
-## enumerateCallState ##
+### enumerateCallState ###
 
 Called when nsITelephonyService is asked to enumerate the current
 telephony call state (nsITelephonyService::enumerateCalls). This is
@@ -89,7 +91,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        Indicates whether this call be be added into a conference.
 
 
-## supplementaryServiceNotification ##
+### supplementaryServiceNotification ###
 
 Notify when RIL receives supplementary service notification.
 
@@ -101,7 +103,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        One of the nsITelephonyService::NOTIFICATION_* values.
 
 
-## notifyError ##
+### notifyError ###
 
 Called when RIL error occurs.
 
@@ -113,7 +115,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        Error from RIL.
 
 
-## notifyCdmaCallWaiting ##
+### notifyCdmaCallWaiting ###
 
 Called when a waiting call comes in CDMA networks.
 
@@ -131,7 +133,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        One of the nsITelephonyProvider::CALL_PRESENTATION_* values.
 
 
-## notifyConferenceError ##
+### notifyConferenceError ###
 
 Called when RIL error occurs to creating or separating a conference call.
 

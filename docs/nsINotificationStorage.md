@@ -7,7 +7,9 @@ layout: default
 Interface for notification persistence layer.
 
 
-## put ##
+## Methods ##
+
+### put ###
 
 Add/replace a notification to the persistence layer.
 
@@ -26,7 +28,7 @@ Add/replace a notification to the persistence layer.
                   whether there is a tag defined.
 
 
-## get ##
+### get ###
 
 Retrieve a list of notifications.
 
@@ -36,7 +38,7 @@ Retrieve a list of notifications.
                  returning notifications objects
 
 
-## delete ##
+### delete ###
 
 Remove a notification from storage.
 

@@ -4,14 +4,18 @@ layout: default
 
 # nsIDOMXULCheckboxElement #
 
-## CHECKSTATE_UNCHECKED ##
+## Attributes ##
 
-## CHECKSTATE_CHECKED ##
+### checked ###
 
-## CHECKSTATE_MIXED ##
+### checkState ###
 
-## checked ##
+### autoCheck ###
 
-## checkState ##
+## Constants ##
 
-## autoCheck ##
+### CHECKSTATE_UNCHECKED ###
+
+### CHECKSTATE_CHECKED ###
+
+### CHECKSTATE_MIXED ###

@@ -4,4 +4,6 @@ layout: default
 
 # nsPIEditorTransaction #
 
-## txnDescription ##
+## Attributes ##
+
+### txnDescription ###

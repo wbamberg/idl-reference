@@ -8,18 +8,22 @@ This is a temporary, non-standard interface, to ease the transition to a
 world where Attr no longer inherits from Node.
 
 
-## getNamedItem ##
+## Methods ##
 
-## setNamedItem ##
+### getNamedItem ###
 
-## removeNamedItem ##
+### setNamedItem ###
 
-## item ##
+### removeNamedItem ###
 
-## length ##
+### item ###
 
-## getNamedItemNS ##
+### getNamedItemNS ###
 
-## setNamedItemNS ##
+### setNamedItemNS ###
 
-## removeNamedItemNS ##
+### removeNamedItemNS ###
+
+## Attributes ##
+
+### length ###

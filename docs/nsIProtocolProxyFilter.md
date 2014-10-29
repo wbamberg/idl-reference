@@ -9,7 +9,9 @@ URI.  Use nsIProtocolProxyService::registerFilter to hook up instances of
 this interface.
 
 
-## applyFilter ##
+## Methods ##
+
+### applyFilter ###
 
 This method is called to apply proxy filter rules for the given URI
 and proxy object (or list of proxy objects).

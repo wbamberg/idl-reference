@@ -10,7 +10,9 @@ messages that are only delivered to its one parent-process message
 manager.
 
 
-## sendAsyncMessage ##
+## Methods ##
+
+### sendAsyncMessage ###
 
 Send |messageName| and |obj| to the "other side" of this message
 manager.  This invokes listeners who registered for

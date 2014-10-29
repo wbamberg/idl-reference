@@ -4,22 +4,26 @@ layout: default
 
 # nsIStackFrame #
 
-## language ##
+## Methods ##
 
-## languageName ##
+### toString ###
 
-## filename ##
+## Attributes ##
 
-## name ##
+### language ###
 
-## lineNumber ##
+### languageName ###
 
-## columnNumber ##
+### filename ###
 
-## sourceLine ##
+### name ###
 
-## caller ##
+### lineNumber ###
 
-## formattedStack ##
+### columnNumber ###
 
-## toString ##
+### sourceLine ###
+
+### caller ###
+
+### formattedStack ###

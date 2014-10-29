@@ -4,18 +4,20 @@ layout: default
 
 # nsIDOMRequestService #
 
-## createRequest ##
+## Methods ##
 
-## createCursor ##
+### createRequest ###
 
-## fireSuccess ##
+### createCursor ###
 
-## fireError ##
+### fireSuccess ###
 
-## fireDetailedError ##
+### fireError ###
 
-## fireSuccessAsync ##
+### fireDetailedError ###
 
-## fireErrorAsync ##
+### fireSuccessAsync ###
 
-## fireDone ##
+### fireErrorAsync ###
+
+### fireDone ###

@@ -4,27 +4,29 @@ layout: default
 
 # nsIMetroUIUtils #
 
-## currentPageURI ##
+## Attributes ##
+
+### currentPageURI ###
 
 Obtains the current page URI
 
 
-## currentPageTitle ##
+### currentPageTitle ###
 
 Obtains the current page title
 
 
-## hasSelectedContent ##
+### hasSelectedContent ###
 
 Determines if the browser has selected content
 
 
-## shareText ##
+### shareText ###
 
 Determines the text that should be shared
 
 
-## shareHTML ##
+### shareHTML ###
 
 Determines the HTML that should be shared
 

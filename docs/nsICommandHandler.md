@@ -4,6 +4,8 @@ layout: default
 
 # nsICommandHandler #
 
-## exec ##
+## Methods ##
 
-## query ##
+### exec ###
+
+### query ###

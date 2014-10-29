@@ -4,12 +4,14 @@ layout: default
 
 # nsIDOMDOMRequest #
 
-## readyState ##
+## Attributes ##
 
-## result ##
+### readyState ###
 
-## error ##
+### result ###
 
-## onsuccess ##
+### error ###
 
-## onerror ##
+### onsuccess ###
+
+### onerror ###

@@ -8,7 +8,9 @@ The external helper app service is used for finding and launching
 platform specific external applications for a given mime content type.
 
 
-## doContent ##
+## Methods ##
+
+### doContent ###
 
 Binds an external helper application to a stream listener. The caller
 should pump data into the returned stream listener. When the OnStopRequest
@@ -27,7 +29,7 @@ with this data.
 @return A nsIStreamListener which the caller should pump the data into.
 
 
-## applyDecodingForExtension ##
+### applyDecodingForExtension ###
 
 Returns true if data from a URL with this extension combination
 is to be decoded from aEncodingType prior to saving or passing

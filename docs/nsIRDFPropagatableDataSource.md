@@ -8,7 +8,9 @@ An nsIRDFPropagatableDataSource provides an ability to suppress
 synchronization notifications.
 
 
-## propagateChanges ##
+## Attributes ##
+
+### propagateChanges ###
 
 Set this value to <code>true</code> to enable synchronization
 notifications.

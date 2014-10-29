@@ -4,11 +4,9 @@ layout: default
 
 # nsISearchInstallCallback #
 
-## ERROR_UNKNOWN_FAILURE ##
+## Methods ##
 
-## ERROR_DUPLICATE_ENGINE ##
-
-## onSuccess ##
+### onSuccess ###
 
 Called to indicate that the engine addition process succeeded.
 
@@ -16,7 +14,7 @@ Called to indicate that the engine addition process succeeded.
        The nsISearchEngine object that was added (will not be null).
 
 
-## onError ##
+### onError ###
 
 Called to indicate that the engine addition process failed.
 
@@ -24,3 +22,9 @@ Called to indicate that the engine addition process failed.
        One of the ERROR_* values described above indicating the cause of
        the failure.
 
+
+## Constants ##
+
+### ERROR_UNKNOWN_FAILURE ###
+
+### ERROR_DUPLICATE_ENGINE ###

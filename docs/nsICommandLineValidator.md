@@ -21,7 +21,9 @@ command-line-validator m-irc          @mozilla.org/chatzilla/clh;1
 
 
 
-## validate ##
+## Methods ##
+
+### validate ###
 
 Process the command-line validators in the proper order, calling
 "validate()" on each.

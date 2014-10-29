@@ -17,7 +17,9 @@ behaviour, and to explicitly set the frame to search,
 QueryInterface to nsIWebBrowserFindInFrames.
 
 
-## findNext ##
+## Methods ##
+
+### findNext ###
 
 findNext
 
@@ -28,14 +30,16 @@ search string is empty.
 @return  Whether an occurrence was found
 
 
-## searchString ##
+## Attributes ##
+
+### searchString ###
 
 searchString
 
 The string to search for. This must be non-empty to search.
 
 
-## findBackwards ##
+### findBackwards ###
 
 findBackwards
 
@@ -43,7 +47,7 @@ Whether to find backwards (towards the beginning of the document).
 Default is false (search forward).
 
 
-## wrapFind ##
+### wrapFind ###
 
 wrapFind
 
@@ -53,21 +57,21 @@ beginning). Works correctly when searching backwards. Default is
 false.
 
 
-## entireWord ##
+### entireWord ###
 
 entireWord
 
 Whether to match entire words only. Default is false.
 
 
-## matchCase ##
+### matchCase ###
 
 matchCase
 
 Whether to match case (case sensitive) when searching. Default is false.
 
 
-## searchFrames ##
+### searchFrames ###
 
 searchFrames
 

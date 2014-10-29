@@ -4,7 +4,9 @@ layout: default
 
 # nsIFinalizationWitnessService #
 
-## make ##
+## Methods ##
+
+### make ###
 
 Create a new Finalization Witness.
 

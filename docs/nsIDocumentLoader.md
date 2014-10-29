@@ -11,10 +11,14 @@ nsIWebProgressListener notifications.
 XXXbz this interface should go away, we think...
 
 
-## stop ##
+## Methods ##
 
-## container ##
+### stop ###
 
-## loadGroup ##
+## Attributes ##
 
-## documentChannel ##
+### container ###
+
+### loadGroup ###
+
+### documentChannel ###

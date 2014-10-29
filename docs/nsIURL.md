@@ -18,73 +18,9 @@ http://host/directory/fileBaseName.fileExtension#ref
                        filePath
 
 
-## filePath ##
-*********************************************************************
-The URL path is broken down into the following principal components:
+## Methods ##
 
-
-Returns a path including the directory and file portions of a
-URL.  For example, the filePath of "http://host/foo/bar.html#baz"
-is "/foo/bar.html".
-
-Some characters may be escaped.
-
-
-## query ##
-
-Returns the query portion (the part after the "?") of the URL.
-If there isn't one, an empty string is returned.
-
-Some characters may be escaped.
-
-
-## directory ##
-*********************************************************************
-The URL filepath is broken down into the following sub-components:
-
-
-Returns the directory portion of a URL.  If the URL denotes a path to a
-directory and not a file, e.g. http://host/foo/bar/, then the Directory
-attribute accesses the complete /foo/bar/ portion, and the FileName is
-the empty string. If the trailing slash is omitted, then the Directory
-is /foo/ and the file is bar (i.e. this is a syntactic, not a semantic
-breakdown of the Path).  And hence don't rely on this for something to
-be a definitely be a file. But you can get just the leading directory
-portion for sure.
-
-Some characters may be escaped.
-
-
-## fileName ##
-
-Returns the file name portion of a URL.  If the URL denotes a path to a
-directory and not a file, e.g. http://host/foo/bar/, then the Directory
-attribute accesses the complete /foo/bar/ portion, and the FileName is
-the empty string. Note that this is purely based on searching for the
-last trailing slash. And hence don't rely on this to be a definite file. 
-
-Some characters may be escaped.
-
-
-## fileBaseName ##
-*********************************************************************
-The URL filename is broken down even further:
-
-
-Returns the file basename portion of a filename in a url.
-
-Some characters may be escaped.
-
-
-## fileExtension ##
-
-Returns the file extension portion of a filename in a url.  If a file
-extension does not exist, the empty string is returned.
-
-Some characters may be escaped.
-
-
-## getCommonBaseSpec ##
+### getCommonBaseSpec ###
 
 This method takes a uri and compares the two.  The common uri portion
 is returned as a string.  The minimum common uri portion is the 
@@ -107,7 +43,7 @@ Examples:
 9) file:///a/b/c.html      file:///d/e/c.html        file:///
 
 
-## getRelativeSpec ##
+### getRelativeSpec ###
 
 This method tries to create a string which specifies the location of the
 argument relative to |this|.  If the argument and |this| are equal, the
@@ -121,4 +57,72 @@ Examples:
 3) http://foo.com/bar/     http://foo.com:80/bar/    ""
 4) http://foo.com/         http://foo.com/a.htm#b    a.html#b
 5) http://foo.com/a/b/     http://foo.com/c          ../../c
+
+
+## Attributes ##
+
+### filePath ###
+*********************************************************************
+The URL path is broken down into the following principal components:
+
+
+Returns a path including the directory and file portions of a
+URL.  For example, the filePath of "http://host/foo/bar.html#baz"
+is "/foo/bar.html".
+
+Some characters may be escaped.
+
+
+### query ###
+
+Returns the query portion (the part after the "?") of the URL.
+If there isn't one, an empty string is returned.
+
+Some characters may be escaped.
+
+
+### directory ###
+*********************************************************************
+The URL filepath is broken down into the following sub-components:
+
+
+Returns the directory portion of a URL.  If the URL denotes a path to a
+directory and not a file, e.g. http://host/foo/bar/, then the Directory
+attribute accesses the complete /foo/bar/ portion, and the FileName is
+the empty string. If the trailing slash is omitted, then the Directory
+is /foo/ and the file is bar (i.e. this is a syntactic, not a semantic
+breakdown of the Path).  And hence don't rely on this for something to
+be a definitely be a file. But you can get just the leading directory
+portion for sure.
+
+Some characters may be escaped.
+
+
+### fileName ###
+
+Returns the file name portion of a URL.  If the URL denotes a path to a
+directory and not a file, e.g. http://host/foo/bar/, then the Directory
+attribute accesses the complete /foo/bar/ portion, and the FileName is
+the empty string. Note that this is purely based on searching for the
+last trailing slash. And hence don't rely on this to be a definite file. 
+
+Some characters may be escaped.
+
+
+### fileBaseName ###
+*********************************************************************
+The URL filename is broken down even further:
+
+
+Returns the file basename portion of a filename in a url.
+
+Some characters may be escaped.
+
+
+### fileExtension ###
+
+Returns the file extension portion of a filename in a url.  If a file
+extension does not exist, the empty string is returned.
+
+Some characters may be escaped.
 

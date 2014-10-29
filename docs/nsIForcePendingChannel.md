@@ -8,7 +8,9 @@ nsIForcePending interface exposes a function that enables overwriting of the nor
 behavior for the channel's IsPending(), forcing 'true' to be returned.
 
 
-## forcePending ##
+## Methods ##
+
+### forcePending ###
 
 forcePending(true) overrides the normal behavior for the 
 channel's IsPending(), forcing 'true' to be returned. A call to

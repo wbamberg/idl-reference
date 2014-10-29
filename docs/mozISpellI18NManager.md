@@ -8,7 +8,9 @@ This interface contains various I18N related code used in various places
 by the spell checker.
 
 
-## getUtil ##
+## Methods ##
+
+### getUtil ###
 
 Get a mozISpellI18NUtil interface that best matches the given language.
 

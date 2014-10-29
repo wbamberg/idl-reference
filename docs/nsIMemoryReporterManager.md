@@ -4,72 +4,76 @@ layout: default
 
 # nsIMemoryReporterManager #
 
-## init ##
+## Methods ##
 
-## registerStrongReporter ##
+### init ###
 
-## registerWeakReporter ##
+### registerStrongReporter ###
 
-## unregisterStrongReporter ##
+### registerWeakReporter ###
 
-## unregisterWeakReporter ##
+### unregisterStrongReporter ###
 
-## blockRegistrationAndHideExistingReporters ##
+### unregisterWeakReporter ###
 
-## unblockRegistrationAndRestoreOriginalReporters ##
+### blockRegistrationAndHideExistingReporters ###
 
-## registerStrongReporterEvenIfBlocked ##
+### unblockRegistrationAndRestoreOriginalReporters ###
 
-## getReports ##
+### registerStrongReporterEvenIfBlocked ###
 
-## getReportsExtended ##
+### getReports ###
 
-## getReportsForThisProcess ##
+### getReportsExtended ###
 
-## getReportsForThisProcessExtended ##
+### getReportsForThisProcess ###
 
-## explicit ##
+### getReportsForThisProcessExtended ###
 
-## vsize ##
+### minimizeMemoryUsage ###
 
-## vsizeMaxContiguous ##
+### sizeOfTab ###
 
-## resident ##
+## Attributes ##
 
-## residentFast ##
+### explicit ###
 
-## residentUnique ##
+### vsize ###
 
-## heapAllocated ##
+### vsizeMaxContiguous ###
 
-## heapOverheadRatio ##
+### resident ###
 
-## JSMainRuntimeGCHeap ##
+### residentFast ###
 
-## JSMainRuntimeTemporaryPeak ##
+### residentUnique ###
 
-## JSMainRuntimeCompartmentsSystem ##
+### heapAllocated ###
 
-## JSMainRuntimeCompartmentsUser ##
+### heapOverheadRatio ###
 
-## imagesContentUsedUncompressed ##
+### JSMainRuntimeGCHeap ###
 
-## storageSQLite ##
+### JSMainRuntimeTemporaryPeak ###
 
-## lowMemoryEventsVirtual ##
+### JSMainRuntimeCompartmentsSystem ###
 
-## lowMemoryEventsPhysical ##
+### JSMainRuntimeCompartmentsUser ###
 
-## ghostWindows ##
+### imagesContentUsedUncompressed ###
 
-## pageFaultsHard ##
+### storageSQLite ###
 
-## hasMozMallocUsableSize ##
+### lowMemoryEventsVirtual ###
 
-## isDMDEnabled ##
+### lowMemoryEventsPhysical ###
 
-## isDMDRunning ##
+### ghostWindows ###
 
-## minimizeMemoryUsage ##
+### pageFaultsHard ###
 
-## sizeOfTab ##
+### hasMozMallocUsableSize ###
+
+### isDMDEnabled ###
+
+### isDMDRunning ###

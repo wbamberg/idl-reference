@@ -4,7 +4,9 @@ layout: default
 
 # nsIScriptLoaderObserver #
 
-## scriptAvailable ##
+## Methods ##
+
+### scriptAvailable ###
 
 The script is available for evaluation. For inline scripts, this
 method will be called synchronously. For externally loaded scripts,
@@ -21,7 +23,7 @@ this method will be called when the load completes.
        if it is a loaded script).
 
 
-## scriptEvaluated ##
+### scriptEvaluated ###
 
 The script has been evaluated.
 

@@ -8,17 +8,19 @@ Interface for the native event system layer.  This interface is designed
 to be used on the main application thread only.
 
 
-## run ##
+## Methods ##
+
+### run ###
 
 Enter an event loop.  Don't leave until exit() is called.
 
 
-## exit ##
+### exit ###
 
 Exit the handle event loop
 
 
-## favorPerformanceHint ##
+### favorPerformanceHint ###
 
 Give hint to native event queue notification mechanism. If the native
 platform needs to tradeoff performance vs. native event starvation this
@@ -35,7 +37,7 @@ PR_FALSE. It is the amount of time in milliseconds to wait before the
 PR_FALSE actually takes effect.
 
 
-## suspendNative ##
+### suspendNative ###
 
 Suspends the use of additional platform-specific methods (besides the
 nsIAppShell->run() event loop) to run Gecko events on the main
@@ -51,19 +53,14 @@ if a plugin or library is temporarily processing events on a nested
 event loop).
 
 
-## resumeNative ##
+### resumeNative ###
 
 Resumes the use of additional platform-specific methods to run Gecko
 events on the main application thread.  Calls to suspendNative() and
 resumeNative() may be nested.  On some platforms this will be a no-op.
 
 
-## eventloopNestingLevel ##
-
-The current event loop nesting level.
-
-
-## runInStableState ##
+### runInStableState ###
 
 Allows running of a "synchronous section", in the form of an nsIRunnable
 once the event loop has reached a "stable state". We've reached a stable
@@ -74,9 +71,16 @@ finishes. If called multiple times per task/event, all the runnables will
 be executed, in the order in which runInStableState() was called.
 
 
-## runBeforeNextEvent ##
+### runBeforeNextEvent ###
 
 Run the given runnable before the next iteration of the event loop (this
 includes native events too). If a nested loop is spawned within the current
 event then the runnable will not be run until that loop has terminated.
+
+
+## Attributes ##
+
+### eventloopNestingLevel ###
+
+The current event loop nesting level.
 

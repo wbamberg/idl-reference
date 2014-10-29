@@ -9,37 +9,9 @@ Gecko with the means to call up to the host to resize the window,
 hide or show it and set/get its title.
 
 
-## DIM_FLAGS_POSITION ##
+## Methods ##
 
-Flag indicates that position of the top left corner of the outer area
-is required/specified.
-
-@see setDimensions
-@see getDimensions
-
-
-## DIM_FLAGS_SIZE_INNER ##
-
-Flag indicates that the size of the inner area is required/specified.
-
-@note The inner and outer flags are mutually exclusive and it is
-      invalid to combine them.
-
-@see setDimensions
-@see getDimensions
-@see DIM_FLAGS_SIZE_OUTER
-
-
-## DIM_FLAGS_SIZE_OUTER ##
-
-Flag indicates that the size of the outer area is required/specified.
-
-@see setDimensions
-@see getDimensions
-@see DIM_FLAGS_SIZE_INNER
-
-
-## setDimensions ##
+### setDimensions ###
 
 Sets the dimensions for the window; the position & size. The
 flags to indicate what the caller wants to set and whether the size
@@ -65,7 +37,7 @@ surrounding chrome, window frame, title bar, and so on.
 @see DIM_FLAGS_SIZE_INNER
 
 
-## getDimensions ##
+### getDimensions ###
 
 Gets the dimensions of the window. The caller may pass
 <CODE>nullptr</CODE> for any value it is uninterested in receiving.
@@ -82,22 +54,29 @@ Gets the dimensions of the window. The caller may pass
 @see DIM_FLAGS_SIZE_INNER
 
 
-## setFocus ##
+### setFocus ###
 
 Give the window focus.
 
 
-## visibility ##
+### blur ###
+
+Blur the window. This should unfocus the window and send an onblur event.
+
+
+## Attributes ##
+
+### visibility ###
 
 Visibility of the window.
 
 
-## title ##
+### title ###
 
 Title of the window.
 
 
-## siteWindow ##
+### siteWindow ###
 
 Native window for the site's window. The implementor should copy the
 native window object into the address supplied by the caller. The
@@ -111,7 +90,34 @@ and OS specific as follows:
 </ul>
 
 
-## blur ##
+## Constants ##
 
-Blur the window. This should unfocus the window and send an onblur event.
+### DIM_FLAGS_POSITION ###
+
+Flag indicates that position of the top left corner of the outer area
+is required/specified.
+
+@see setDimensions
+@see getDimensions
+
+
+### DIM_FLAGS_SIZE_INNER ###
+
+Flag indicates that the size of the inner area is required/specified.
+
+@note The inner and outer flags are mutually exclusive and it is
+      invalid to combine them.
+
+@see setDimensions
+@see getDimensions
+@see DIM_FLAGS_SIZE_OUTER
+
+
+### DIM_FLAGS_SIZE_OUTER ###
+
+Flag indicates that the size of the outer area is required/specified.
+
+@see setDimensions
+@see getDimensions
+@see DIM_FLAGS_SIZE_INNER
 

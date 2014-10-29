@@ -7,55 +7,9 @@ layout: default
 A representation of the data included in an HTTP request.
 
 
-## method ##
+## Methods ##
 
-The request type for this request (see RFC 2616, section 5.1.1).
-
-
-## scheme ##
-
-The scheme of the requested path, usually 'http' but might possibly be
-'https' if some form of SSL tunneling is in use.  Note that this value
-cannot be accurately determined unless the incoming request used the
-absolute-path form of the request line; it defaults to 'http', so only
-if it is something else can you be entirely certain it's correct.
-
-
-## host ##
-
-The host of the data being requested (e.g. "localhost" for the
-http://localhost:8080/file resource).  Note that the relevant port on the
-host is specified in this.port.  This value is in the ASCII character
-encoding.
-
-
-## port ##
-
-The port on the server on which the request was received.
-
-
-## path ##
-
-The requested path, without any query string (e.g. "/dir/file.txt").  It is
-guaranteed to begin with a "/".  The individual components in this string
-are URL-encoded.
-
-
-## queryString ##
-
-The URL-encoded query string associated with this request, not including
-the initial "?", or "" if no query string was present.
-
-
-## httpVersion ##
-
-A string containing the HTTP version of the request (i.e., "1.1").  Leading
-zeros for either component of the version will be omitted.  (In other
-words, if the request contains the version "1.01", this attribute will be
-"1.1"; see RFC 2616, section 3.1.)
-
-
-## getHeader ##
+### getHeader ###
 
 Returns the value for the header in this request specified by fieldName.
 
@@ -75,7 +29,7 @@ Returns the value for the header in this request specified by fieldName.
   if the given header does not exist in this
 
 
-## hasHeader ##
+### hasHeader ###
 
 Returns true if a header with the given field name exists in this, false
 otherwise.
@@ -88,14 +42,64 @@ otherwise.
   if fieldName does not constitute a valid header field name
 
 
-## headers ##
+## Attributes ##
+
+### method ###
+
+The request type for this request (see RFC 2616, section 5.1.1).
+
+
+### scheme ###
+
+The scheme of the requested path, usually 'http' but might possibly be
+'https' if some form of SSL tunneling is in use.  Note that this value
+cannot be accurately determined unless the incoming request used the
+absolute-path form of the request line; it defaults to 'http', so only
+if it is something else can you be entirely certain it's correct.
+
+
+### host ###
+
+The host of the data being requested (e.g. "localhost" for the
+http://localhost:8080/file resource).  Note that the relevant port on the
+host is specified in this.port.  This value is in the ASCII character
+encoding.
+
+
+### port ###
+
+The port on the server on which the request was received.
+
+
+### path ###
+
+The requested path, without any query string (e.g. "/dir/file.txt").  It is
+guaranteed to begin with a "/".  The individual components in this string
+are URL-encoded.
+
+
+### queryString ###
+
+The URL-encoded query string associated with this request, not including
+the initial "?", or "" if no query string was present.
+
+
+### httpVersion ###
+
+A string containing the HTTP version of the request (i.e., "1.1").  Leading
+zeros for either component of the version will be omitted.  (In other
+words, if the request contains the version "1.01", this attribute will be
+"1.1"; see RFC 2616, section 3.1.)
+
+
+### headers ###
 
 An nsISimpleEnumerator of nsISupportsStrings over the names of the headers
 in this request.  The header field names in the enumerator may not
 necessarily have the same case as they do in the request itself.
 
 
-## bodyInputStream ##
+### bodyInputStream ###
 
 A stream from which data appearing in the body of this request can be read.
 

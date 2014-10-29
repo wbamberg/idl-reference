@@ -4,7 +4,9 @@ layout: default
 
 # nsIViewSourceChannel #
 
-## originalContentType ##
+## Attributes ##
+
+### originalContentType ###
 
 The actual (MIME) content type of the data.
 
@@ -16,12 +18,12 @@ However, callers interested in finding out or setting the
 actual content type can utilize this attribute.
 
 
-## isSrcdocChannel ##
+### isSrcdocChannel ###
 
 Whether the channel was created to view the source of a srcdoc document.
 
 
-## baseURI ##
+### baseURI ###
 
 Set to indicate the base URI.  If this channel is a srcdoc channel, it
 returns the base URI provided by the embedded channel.  It is used to

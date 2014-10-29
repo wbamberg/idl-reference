@@ -7,7 +7,9 @@ layout: default
 @deprecated Please use nsIContentPrefService2 instead.
 
 
-## getPref ##
+## Methods ##
+
+### getPref ###
 
 Get a pref.
 
@@ -38,7 +40,7 @@ We have a whitelist of values that can be read in such a way.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string
 
 
-## setPref ##
+### setPref ###
 
 Set a pref.
 
@@ -60,7 +62,7 @@ We have a whitelist of values that can be set in such a way.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string
 
 
-## hasPref ##
+### hasPref ###
 
 Check whether or not a pref exists.
 
@@ -78,7 +80,7 @@ Check whether or not a pref exists.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string
 
 
-## hasCachedPref ##
+### hasCachedPref ###
 
 Check whether or not the value of a pref (or its non-existance) is cached.
 
@@ -96,7 +98,7 @@ Check whether or not the value of a pref (or its non-existance) is cached.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string
 
 
-## removePref ##
+### removePref ###
 
 Remove a pref.
 
@@ -114,7 +116,7 @@ Remove a pref.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string
 
 
-## removeGroupedPrefs ##
+### removeGroupedPrefs ###
 
 Remove all grouped prefs.  Useful for removing references to the sites
 the user has visited when the user clears their private data.
@@ -126,7 +128,7 @@ the user has visited when the user clears their private data.
                       window or channel.
 
 
-## removePrefsByName ##
+### removePrefsByName ###
 
 Remove all prefs with the given name.
 
@@ -139,7 +141,7 @@ Remove all prefs with the given name.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string
 
 
-## getPrefs ##
+### getPrefs ###
 
 Get the prefs that apply to the given site.
 
@@ -157,7 +159,7 @@ Get the prefs that apply to the given site.
 @throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null
 
 
-## getPrefsByName ##
+### getPrefsByName ###
 
 Get the prefs with the given name.
 
@@ -172,7 +174,7 @@ Get the prefs with the given name.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string
 
 
-## addObserver ##
+### addObserver ###
 
 Add an observer.
 
@@ -181,7 +183,7 @@ Add an observer.
 @param    aObserver   the observer to add
 
 
-## removeObserver ##
+### removeObserver ###
 
 Remove an observer.
 
@@ -190,14 +192,16 @@ Remove an observer.
 @param    aObserver   the observer to remove
 
 
-## grouper ##
+## Attributes ##
+
+### grouper ###
 
 The component that the service uses to determine the groups to which
 URIs belong.  By default this is the "hostname grouper", which groups
 URIs by full hostname (a.k.a. site).
 
 
-## DBConnection ##
+### DBConnection ###
 
 The database connection to the content preferences database.
 Useful for accessing and manipulating preferences in ways that are caller-

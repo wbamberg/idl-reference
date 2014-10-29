@@ -7,18 +7,22 @@ layout: default
 This interface provides a keypair and signing interface for Identity functionality
 
 
-## keyType ##
+## Methods ##
 
-## hexRSAPublicKeyExponent ##
+### sign ###
 
-## hexRSAPublicKeyModulus ##
+## Attributes ##
 
-## hexDSAPrime ##
+### keyType ###
 
-## hexDSASubPrime ##
+### hexRSAPublicKeyExponent ###
 
-## hexDSAGenerator ##
+### hexRSAPublicKeyModulus ###
 
-## hexDSAPublicValue ##
+### hexDSAPrime ###
 
-## sign ##
+### hexDSASubPrime ###
+
+### hexDSAGenerator ###
+
+### hexDSAPublicValue ###

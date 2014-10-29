@@ -10,6 +10,8 @@ about the resulting user interface.
 @status INCOMPLETE do not freeze before fixing bug 228207
 
 
-## promptAuth ##
+## Methods ##
 
-## asyncPromptAuth ##
+### promptAuth ###
+
+### asyncPromptAuth ###

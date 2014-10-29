@@ -4,47 +4,51 @@ layout: default
 
 # nsICacheEntryInfo #
 
-## clientID ##
+## Methods ##
+
+### isStreamBased ###
+
+Find out whether or not the cache entry is stream based.
+
+
+## Attributes ##
+
+### clientID ###
 
 Get the client id associated with this cache entry.
 
 
-## deviceID ##
+### deviceID ###
 
 Get the id for the device that stores this cache entry.
 
 
-## key ##
+### key ###
 
 Get the key identifying the cache entry.
 
 
-## fetchCount ##
+### fetchCount ###
 
 Get the number of times the cache entry has been opened.
 
 
-## lastFetched ##
+### lastFetched ###
 
 Get the last time the cache entry was opened (in seconds since the Epoch).
 
 
-## lastModified ##
+### lastModified ###
 
 Get the last time the cache entry was modified (in seconds since the Epoch).
 
 
-## expirationTime ##
+### expirationTime ###
 
 Get the expiration time of the cache entry (in seconds since the Epoch).
 
 
-## dataSize ##
+### dataSize ###
 
 Get the cache entry data size.
-
-
-## isStreamBased ##
-
-Find out whether or not the cache entry is stream based.
 

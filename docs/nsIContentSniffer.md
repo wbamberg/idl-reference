@@ -8,7 +8,9 @@ Content sniffer interface. Components implementing this interface can
 determine a MIME type from a chunk of bytes.
 
 
-## getMIMETypeFromContent ##
+## Methods ##
+
+### getMIMETypeFromContent ###
 
 Given a chunk of data, determines a MIME type. Information from the given
 request may be used in order to make a better decision.

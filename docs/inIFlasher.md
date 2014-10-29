@@ -9,13 +9,9 @@ This class will be removed in gecko v33. See comments below for alternatives.
 @status DEPRECATED - see comments below.
 
 
-## color ##
+## Methods ##
 
-## invert ##
-
-## thickness ##
-
-## drawElementOutline ##
+### drawElementOutline ###
 
 This function now does nothing at all. Use the :-moz-devtools-highlighted
 pseudo-class instead. For example, see the "HIGHLIGHTED_PSEUDO_CLASS" and
@@ -25,17 +21,25 @@ https://hg.mozilla.org/dom-inspector/file/tip/resources/content/Flasher.js
 @status DEPRECATED
 
 
-## repaintElement ##
+### repaintElement ###
 
 This function now does nothing at all.
 
 @status DEPRECATED
 
 
-## scrollElementIntoView ##
+### scrollElementIntoView ###
 
 As of gecko v33 you should use inIDOMUtils::scrollElementIntoView instead
 of this function.
 
 @status DEPRECATED
 
+
+## Attributes ##
+
+### color ###
+
+### invert ###
+
+### thickness ###

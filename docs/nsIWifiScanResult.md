@@ -4,23 +4,27 @@ layout: default
 
 # nsIWifiScanResult #
 
-## ssid ##
+## Attributes ##
 
-## bssid ##
+### ssid ###
 
-## WPA_PSK ##
+### bssid ###
 
-## WPA_EAP ##
+### capabilities ###
 
-## WEP ##
-
-## capabilities ##
-
-## signalStrength ##
+### signalStrength ###
 
 Strength of the signal to network.
 
 
-## relSignalStrength ##
+### relSignalStrength ###
 
-## connected ##
+### connected ###
+
+## Constants ##
+
+### WPA_PSK ###
+
+### WPA_EAP ###
+
+### WEP ###

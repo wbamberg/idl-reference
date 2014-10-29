@@ -75,4 +75,6 @@ b) One might ask why 'foo' should not just implement an interface through
  the interface id is that of nsIXPCWrappedJSObjectGetter.
 
 
-## neverCalled ##
+## Attributes ##
+
+### neverCalled ###

@@ -10,7 +10,9 @@ Interface for notifying when the file has been opened and is available in
 child.
 
 
-## onRemoteFileOpenComplete ##
+## Methods ##
+
+### onRemoteFileOpenComplete ###
 
 Called when result of opening RemoteOpenFileChild:AsyncRemoteFileOpen()
 is available in child.

@@ -4,42 +4,44 @@ layout: default
 
 # nsISecretDecoderRing #
 
-## encrypt ##
+## Methods ##
+
+### encrypt ###
 
 Encrypt a buffer - callable only from C++.
 
 @return The length of the data in the output buffer.
 
 
-## decrypt ##
+### decrypt ###
 
 Decrypt a buffer - callable only from C++.
 
 @return The length of the data in the output buffer.
 
 
-## encryptString ##
+### encryptString ###
 
 Encrypt nul-terminated string to BASE64 output.
 
 
-## decryptString ##
+### decryptString ###
 
 Decrypt BASE64 input to nul-terminated string output.  There is
 no check for embedded nul values in the decrypted output.
 
 
-## changePassword ##
+### changePassword ###
 
 Prompt the user to change the password on the SDR key.
 
 
-## logout ##
+### logout ###
 
 Logout of the security device that protects the SDR key.
 
 
-## logoutAndTeardown ##
+### logoutAndTeardown ###
 
 Logout of the security device that protects the SDR key and tear
 down authenticated objects.

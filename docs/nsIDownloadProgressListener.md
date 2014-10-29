@@ -4,13 +4,9 @@ layout: default
 
 # nsIDownloadProgressListener #
 
-## document ##
+## Methods ##
 
-document
-The document of the download manager frontend.
-
-
-## onDownloadStateChange ##
+### onDownloadStateChange ###
 
 Dispatched whenever the state of the download changes.
 
@@ -19,8 +15,16 @@ Dispatched whenever the state of the download changes.
 @see nsIDownloadManager for download states.
 
 
-## onStateChange ##
+### onStateChange ###
 
-## onProgressChange ##
+### onProgressChange ###
 
-## onSecurityChange ##
+### onSecurityChange ###
+
+## Attributes ##
+
+### document ###
+
+document
+The document of the download manager frontend.
+

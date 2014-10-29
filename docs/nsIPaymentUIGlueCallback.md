@@ -4,4 +4,6 @@ layout: default
 
 # nsIPaymentUIGlueCallback #
 
-## onresult ##
+## Methods ##
+
+### onresult ###

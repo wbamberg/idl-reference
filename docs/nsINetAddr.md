@@ -10,13 +10,22 @@ This interface represents a native NetAddr struct in a readonly
 interface.
 
 
-## family ##
+## Methods ##
+
+### getNetAddr ###
+
+@return the underlying NetAddr struct.
+
+
+## Attributes ##
+
+### family ###
 
 @return the address family of the network address, which corresponds to
 one of the FAMILY_ constants.
 
 
-## address ##
+### address ###
 
 @return Either the IP address (FAMILY_INET, FAMILY_INET6) or the path
 (FAMILY_LOCAL) in string form. IP addresses are in the format produced by
@@ -26,7 +35,7 @@ Note: Paths for FAMILY_LOCAL may have length limitations which are
 implementation dependent and not documented as part of this interface.
 
 
-## port ##
+### port ###
 
 @return the port number for a FAMILY_INET or FAMILY_INET6 address.
 
@@ -34,7 +43,7 @@ implementation dependent and not documented as part of this interface.
 FAMILY_INET6.
 
 
-## flow ##
+### flow ###
 
 @return the flow label for a FAMILY_INET6 address. 
 
@@ -43,7 +52,7 @@ FAMILY_INET6.
 @throws NS_ERROR_NOT_AVAILABLE if the address family is not FAMILY_INET6
 
 
-## scope ##
+### scope ###
 
 @return the address scope of a FAMILY_INET6 address.  
 
@@ -52,24 +61,21 @@ FAMILY_INET6.
 @throws NS_ERROR_NOT_AVAILABLE if the address family is not FAMILY_INET6
 
 
-## isV4Mapped ##
+### isV4Mapped ###
 
 @return whether a FAMILY_INET6 address is mapped from FAMILY_INET.
 
 @throws NS_ERROR_NOT_AVAILABLE if the address family is not FAMILY_INET6
 
 
-## FAMILY_INET ##
+## Constants ##
+
+### FAMILY_INET ###
 
 Network address families. These correspond to all the network address
 families supported by the NetAddr struct.
 
 
-## FAMILY_INET6 ##
+### FAMILY_INET6 ###
 
-## FAMILY_LOCAL ##
-
-## getNetAddr ##
-
-@return the underlying NetAddr struct.
-
+### FAMILY_LOCAL ###

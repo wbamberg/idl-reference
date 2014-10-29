@@ -4,26 +4,30 @@ layout: default
 
 # nsIEntityConverter #
 
-## entityNone ##
+## Methods ##
 
-## html40Latin1 ##
+### ConvertUTF32ToEntity ###
 
-## html40Symbols ##
+### ConvertToEntity ###
 
-## html40Special ##
+### ConvertToEntities ###
 
-## transliterate ##
+## Constants ##
 
-## mathml20 ##
+### entityNone ###
 
-## html32 ##
+### html40Latin1 ###
 
-## html40 ##
+### html40Symbols ###
 
-## entityW3C ##
+### html40Special ###
 
-## ConvertUTF32ToEntity ##
+### transliterate ###
 
-## ConvertToEntity ##
+### mathml20 ###
 
-## ConvertToEntities ##
+### html32 ###
+
+### html40 ###
+
+### entityW3C ###

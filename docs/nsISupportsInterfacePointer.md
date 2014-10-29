@@ -7,8 +7,12 @@ layout: default
 Scriptable storage for other XPCOM objects
 
 
-## data ##
+## Methods ##
 
-## dataIID ##
+### toString ###
 
-## toString ##
+## Attributes ##
+
+### data ###
+
+### dataIID ###

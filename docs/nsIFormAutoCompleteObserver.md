@@ -4,4 +4,6 @@ layout: default
 
 # nsIFormAutoCompleteObserver #
 
-## onSearchCompletion ##
+## Methods ##
+
+### onSearchCompletion ###

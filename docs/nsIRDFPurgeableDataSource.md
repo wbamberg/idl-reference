@@ -4,6 +4,8 @@ layout: default
 
 # nsIRDFPurgeableDataSource #
 
-## Mark ##
+## Methods ##
 
-## Sweep ##
+### Mark ###
+
+### Sweep ###

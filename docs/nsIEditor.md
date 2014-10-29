@@ -4,32 +4,14 @@ layout: default
 
 # nsIEditor #
 
-## eNone ##
+## Methods ##
 
-## eNext ##
-
-## ePrevious ##
-
-## eNextWord ##
-
-## ePreviousWord ##
-
-## eToBeginningOfLine ##
-
-## eToEndOfLine ##
-
-## eStrip ##
-
-## eNoStrip ##
-
-## selection ##
-
-## finalizeSelection ##
+### finalizeSelection ###
 
 Finalizes selection and caret for the editor.
 
 
-## init ##
+### init ###
 
 Init is to tell the implementation of nsIEditor to begin its services
 @param aDoc          The dom document interface being observed
@@ -42,17 +24,17 @@ Init is to tell the implementation of nsIEditor to begin its services
                      of the editor.
 
 
-## setAttributeOrEquivalent ##
+### setAttributeOrEquivalent ###
 
-## removeAttributeOrEquivalent ##
+### removeAttributeOrEquivalent ###
 
-## postCreate ##
+### postCreate ###
 
 postCreate should be called after Init, and is the time that the editor
 tells its documentStateObservers that the document has been created.
 
 
-## preDestroy ##
+### preDestroy ###
 
 preDestroy is called before the editor goes away, and gives the editor a
 chance to tell its documentStateObservers that the document is going away.
@@ -61,35 +43,7 @@ are being destroyed (so there is no need to modify any nsISelections,
 nor is it safe to do so)
 
 
-## flags ##
- edit flags for this editor.  May be set at any time. */
-
-## contentsMIMEType ##
-
-the MimeType of the document
-
-
-## isDocumentEditable ##
- Returns true if we have a document that is not marked read-only */
-
-## isSelectionEditable ##
- Returns true if the current selection anchor is editable */
-
-## document ##
-
-the DOM Document this editor is associated with, refcounted.
-
-
-## rootElement ##
- the body element, i.e. the root of the editable document.
-
-
-## selectionController ##
-
-the selection controller for the current presentation, refcounted.
-
-
-## deleteSelection ##
+### deleteSelection ###
  
 DeleteSelection removes all nodes in the current selection.
 @param aDir  if eNext, delete to the right (for example, the DEL key)
@@ -100,38 +54,25 @@ DeleteSelection removes all nodes in the current selection.
                      about to insert text or similar right after.
 
 
-## documentIsEmpty ##
- Returns true if the document has no *meaningful* content */
-
-## documentModified ##
- Returns true if the document is modifed and needs saving */
-
-## documentCharacterSet ##
- Sets the current 'Save' document character set */
-
-## resetModificationCount ##
+### resetModificationCount ###
  to be used ONLY when we need to override the doc's modification
 state (such as when it's saved).
 
 
-## getModificationCount ##
+### getModificationCount ###
  Gets the modification count of the document we are editing.
 @return the modification count of the document being edited.
         Zero means unchanged.
 
 
-## incrementModificationCount ##
+### incrementModificationCount ###
  called each time we modify the document.
 Increments the modification count of the document.
 @param  aModCount  the number of modifications by which
                    to increase or decrease the count
 
 
-## transactionManager ##
- transactionManager Get the transaction manager the editor is using.
-
-
-## doTransaction ##
+### doTransaction ###
  doTransaction() fires a transaction.
 It is provided here so clients can create their own transactions.
 If a transaction manager is present, it is used.  
@@ -140,7 +81,7 @@ Otherwise, the transaction is just executed directly.
 @param aTxn the transaction to execute
 
 
-## enableUndo ##
+### enableUndo ###
  turn the undo system on or off
 @param aEnable  if PR_TRUE, the undo system is turned on if available
                 if PR_FALSE the undo system is turned off if it
@@ -150,17 +91,7 @@ Otherwise, the transaction is just executed directly.
                 if aEnable is PR_FALSE, returns NS_OK.
 
 
-## numberOfUndoItems ##
-
-The number of items on the undo stack.
-
-
-## numberOfRedoItems ##
-
-The number of items on the redo stack.
-
-
-## undo ##
+### undo ###
  undo reverses the effects of the last Do operation,
 if Undo is enabled in the editor.
 It is provided here so clients need no knowledge of whether
@@ -172,14 +103,14 @@ error NS_ERROR_NOT_AVAILABLE is returned.
 
 
 
-## canUndo ##
+### canUndo ###
  returns state information about the undo system.
 @param aIsEnabled [OUT] PR_TRUE if undo is enabled
 @param aCanUndo   [OUT] PR_TRUE if at least one transaction is
                         currently ready to be undone.
 
 
-## redo ##
+### redo ###
  redo reverses the effects of the last Undo operation
 It is provided here so clients need no knowledge of whether
 the editor has a transaction manager or not.
@@ -191,14 +122,14 @@ error NS_ERROR_NOT_AVAILABLE is returned.
 
 
 
-## canRedo ##
+### canRedo ###
  returns state information about the redo system.
 @param aIsEnabled [OUT] PR_TRUE if redo is enabled
 @param aCanRedo   [OUT] PR_TRUE if at least one transaction is
 currently ready to be redone.
 
 
-## beginTransaction ##
+### beginTransaction ###
  beginTransaction is a signal from the caller to the editor that
 the caller will execute multiple updates to the content tree
 that should be treated as a single logical operation,
@@ -210,7 +141,7 @@ Calls to beginTransaction can be nested, as long as endTransaction
 is called once per beginUpdate.
 
 
-## endTransaction ##
+### endTransaction ###
  endTransaction is a signal to the editor that the caller is
 finished updating the content model.<br>
 beginUpdate must be called before endTransaction is called.<br>
@@ -218,13 +149,13 @@ Calls to beginTransaction can be nested, as long as endTransaction
 is called once per beginTransaction.
 
 
-## beginPlaceHolderTransaction ##
+### beginPlaceHolderTransaction ###
 
-## endPlaceHolderTransaction ##
+### endPlaceHolderTransaction ###
 
-## shouldTxnSetSelection ##
+### shouldTxnSetSelection ###
 
-## setShouldTxnSetSelection ##
+### setShouldTxnSetSelection ###
  Set the flag that prevents insertElementTxn from changing the selection
 @param   should  Set false to suppress changing the selection;
                  i.e., before using InsertElement() to insert
@@ -234,7 +165,7 @@ WARNING: You must be very careful to reset back to PR_TRUE after
          for further editing.
 
 
-## getInlineSpellChecker ##
+### getInlineSpellChecker ###
  Returns the inline spell checker associated with this object. The spell
 checker is lazily created, so this function may create the object for
 you during this call.
@@ -244,74 +175,74 @@ you during this call.
                     WILL RETURN NULL.
 
 
-## syncRealTimeSpell ##
+### syncRealTimeSpell ###
  Resyncs spellchecking state (enabled/disabled).  This should be called
 when anything that affects spellchecking state changes, such as the
 spellcheck attribute value.
 
 
-## setSpellcheckUserOverride ##
+### setSpellcheckUserOverride ###
  Called when the user manually overrides the spellchecking state for this
 editor.
 @param  enable  The new state of spellchecking in this editor, as
                 requested by the user.
 
 
-## cut ##
+### cut ###
  cut the currently selected text, putting it into the OS clipboard
 What if no text is selected?
 What about mixed selections?
 What are the clipboard formats?
 
 
-## canCut ##
+### canCut ###
  Can we cut? True if the doc is modifiable, and we have a non-
 collapsed selection.
 
 
-## copy ##
+### copy ###
  copy the currently selected text, putting it into the OS clipboard
 What if no text is selected?
 What about mixed selections?
 What are the clipboard formats?
 
 
-## canCopy ##
+### canCopy ###
  Can we copy? True if we have a non-collapsed selection.
 
 
-## paste ##
+### paste ###
  paste the text in the OS clipboard at the cursor position, replacing
 the selected text (if any)
 
 
-## pasteTransferable ##
+### pasteTransferable ###
  Paste the text in |aTransferable| at the cursor position, replacing the
 selected text (if any).
 
 
-## canPaste ##
+### canPaste ###
  Can we paste? True if the doc is modifiable, and we have
 pasteable data in the clipboard.
 
 
-## canPasteTransferable ##
+### canPasteTransferable ###
  Can we paste |aTransferable| or, if |aTransferable| is null, will a call
 to pasteTransferable later possibly succeed if given an instance of
 nsITransferable then? True if the doc is modifiable, and, if
 |aTransfeable| is non-null, we have pasteable data in |aTransfeable|.
 
 
-## selectAll ##
+### selectAll ###
  sets the document selection to the entire contents of the document */
 
-## beginningOfDocument ##
+### beginningOfDocument ###
  sets the document selection to the beginning of the document */
 
-## endOfDocument ##
+### endOfDocument ###
  sets the document selection to the end of the document */
 
-## setAttribute ##
+### setAttribute ###
 
 setAttribute() sets the attribute of aElement.
 No checking is done to see if aAttribute is a legal attribute of the node,
@@ -322,7 +253,7 @@ or if aValue is a legal value of aAttribute.
 @param aValue      the value to set aAttribute to
 
 
-## getAttributeValue ##
+### getAttributeValue ###
 
 getAttributeValue() retrieves the attribute's value for aElement.
 
@@ -334,7 +265,7 @@ getAttributeValue() retrieves the attribute's value for aElement.
                      PR_FALSE if it is not.
 
 
-## removeAttribute ##
+### removeAttribute ###
 
 removeAttribute() deletes aAttribute from the attribute list of aElement.
 If aAttribute is not an attribute of aElement, nothing is done.
@@ -343,7 +274,7 @@ If aAttribute is not an attribute of aElement, nothing is done.
 @param aAttribute    the string representation of the attribute to get
 
 
-## cloneAttribute ##
+### cloneAttribute ###
 
 cloneAttribute() copies the attribute from the source node to
 the destination node and delete those not in the source.
@@ -357,7 +288,7 @@ The supplied nodes MUST BE ELEMENTS (most callers are working with nodes)
                                  element
 
 
-## cloneAttributes ##
+### cloneAttributes ###
 
 cloneAttributes() is similar to nsIDOMNode::cloneNode(),
   it assures the attribute nodes of the destination are identical
@@ -370,7 +301,7 @@ The supplied nodes MUST BE ELEMENTS (most callers are working with nodes)
 @param aSourceNode   the source element to copy attributes from
 
 
-## createNode ##
+### createNode ###
  
 createNode instantiates a new element of type aTag and inserts it
 into aParent at aPosition.
@@ -380,7 +311,7 @@ into aParent at aPosition.
 @return          The node created.  Caller must release aNewNode.
 
 
-## insertNode ##
+### insertNode ###
  
 insertNode inserts aNode into aParent at aPosition.
 No checking is done to verify the legality of the insertion.
@@ -392,7 +323,7 @@ That is the responsibility of the caller.
                  any number > number of current children = last child
 
 
-## splitNode ##
+### splitNode ###
  
 splitNode() creates a new node identical to an existing node,
 and split the contents between the two nodes
@@ -404,7 +335,7 @@ and split the contents between the two nodes
                             becomes aExistingRightNode's previous sibling.
 
 
-## joinNodes ##
+### joinNodes ###
  
 joinNodes() takes 2 nodes and merge their content|children.
 @param aLeftNode     The left node.  It will be deleted.
@@ -416,74 +347,149 @@ joinNodes() takes 2 nodes and merge their content|children.
                      merged only with another text node.
 
 
-## deleteNode ##
+### deleteNode ###
  
 deleteNode removes aChild from aParent.
 @param aChild    The node to delete
 
 
-## outputsMozDirty ##
+### outputsMozDirty ###
 
 Returns true if markNodeDirty() has any effect.  Returns false if
 markNodeDirty() is a no-op.
 
 
-## markNodeDirty ##
+### markNodeDirty ###
  
 markNodeDirty() sets a special dirty attribute on the node.
 Usually this will be called immediately after creating a new node.
 @param aNode      The node for which to insert formatting.
 
 
-## switchTextDirection ##
+### switchTextDirection ###
  
 Switches the editor element direction; from "Left-to-Right" to
 "Right-to-Left", and vice versa.
 
 
-## outputToString ##
+### outputToString ###
 
 Output methods:
 aFormatType is a mime type, like text/plain.
 
 
-## outputToStream ##
+### outputToStream ###
 
-## addEditorObserver ##
+### addEditorObserver ###
  add an EditorObserver to the editors list of observers. */
 
-## removeEditorObserver ##
+### removeEditorObserver ###
  Remove an EditorObserver from the editor's list of observers. */
 
-## addEditActionListener ##
+### addEditActionListener ###
  add an EditActionListener to the editors list of listeners. */
 
-## removeEditActionListener ##
+### removeEditActionListener ###
  Remove an EditActionListener from the editor's list of listeners. */
 
-## addDocumentStateListener ##
+### addDocumentStateListener ###
  Add a DocumentStateListener to the editors list of doc state listeners. */
 
-## removeDocumentStateListener ##
+### removeDocumentStateListener ###
  Remove a DocumentStateListener to the editors list of doc state listeners. */
 
-## dumpContentTree ##
+### dumpContentTree ###
 
 And a debug method -- show us what the tree looks like right now
 
 
-## debugDumpContent ##
+### debugDumpContent ###
  Dumps a text representation of the content tree to standard out */
 
-## debugUnitTests ##
+### debugUnitTests ###
 
-## isModifiableNode ##
+### isModifiableNode ###
 
-## suppressDispatchingInputEvent ##
+## Attributes ##
 
-## isInEditAction ##
+### selection ###
+
+### flags ###
+ edit flags for this editor.  May be set at any time. */
+
+### contentsMIMEType ###
+
+the MimeType of the document
+
+
+### isDocumentEditable ###
+ Returns true if we have a document that is not marked read-only */
+
+### isSelectionEditable ###
+ Returns true if the current selection anchor is editable */
+
+### document ###
+
+the DOM Document this editor is associated with, refcounted.
+
+
+### rootElement ###
+ the body element, i.e. the root of the editable document.
+
+
+### selectionController ###
+
+the selection controller for the current presentation, refcounted.
+
+
+### documentIsEmpty ###
+ Returns true if the document has no *meaningful* content */
+
+### documentModified ###
+ Returns true if the document is modifed and needs saving */
+
+### documentCharacterSet ###
+ Sets the current 'Save' document character set */
+
+### transactionManager ###
+ transactionManager Get the transaction manager the editor is using.
+
+
+### numberOfUndoItems ###
+
+The number of items on the undo stack.
+
+
+### numberOfRedoItems ###
+
+The number of items on the redo stack.
+
+
+### suppressDispatchingInputEvent ###
+
+### isInEditAction ###
 
 True if an edit action is being handled (in other words, between calls of
 nsIEditorObserver::BeforeEditAction() and nsIEditorObserver::EditAction()
 or nsIEditorObserver::CancelEditAction().  Otherwise, false.
 
+
+## Constants ##
+
+### eNone ###
+
+### eNext ###
+
+### ePrevious ###
+
+### eNextWord ###
+
+### ePreviousWord ###
+
+### eToBeginningOfLine ###
+
+### eToEndOfLine ###
+
+### eStrip ###
+
+### eNoStrip ###

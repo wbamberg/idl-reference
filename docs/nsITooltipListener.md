@@ -13,7 +13,9 @@ for.
 @see nsITooltipTextProvider
 
 
-## onShowTooltip ##
+## Methods ##
+
+### onShowTooltip ###
 
 Called when a tooltip should be displayed.
 
@@ -30,7 +32,7 @@ corner of the browser area.
 @return <code>NS_OK</code> if the tooltip was displayed.
 
 
-## onHideTooltip ##
+### onHideTooltip ###
 
 Called when the tooltip should be hidden, either because the pointer
 has moved or the tooltip has timed out.

@@ -4,34 +4,38 @@ layout: default
 
 # nsIDOMHTMLButtonElement #
 
-## autofocus ##
+## Methods ##
 
-## disabled ##
+### checkValidity ###
 
-## form ##
+### setCustomValidity ###
 
-## formAction ##
+## Attributes ##
 
-## formEnctype ##
+### autofocus ###
 
-## formMethod ##
+### disabled ###
 
-## formNoValidate ##
+### form ###
 
-## formTarget ##
+### formAction ###
 
-## name ##
+### formEnctype ###
 
-## type ##
+### formMethod ###
 
-## value ##
+### formNoValidate ###
 
-## willValidate ##
+### formTarget ###
 
-## validity ##
+### name ###
 
-## validationMessage ##
+### type ###
 
-## checkValidity ##
+### value ###
 
-## setCustomValidity ##
+### willValidate ###
+
+### validity ###
+
+### validationMessage ###

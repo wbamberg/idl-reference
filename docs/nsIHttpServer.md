@@ -7,7 +7,9 @@ layout: default
 An interface which represents an HTTP server.
 
 
-## start ##
+## Methods ##
+
+### start ###
 
 Starts up this server, listening upon the given port.
 
@@ -26,7 +28,7 @@ Starts up this server, listening upon the given port.
   called.
 
 
-## stop ##
+### stop ###
 
 Shuts down this server if it is running (including the period of time after
 stop() has been called but before the provided callback has been called).
@@ -40,7 +42,7 @@ stop() has been called but before the provided callback has been called).
   if this server is not running
 
 
-## registerFile ##
+### registerFile ###
 
 Associates the local file represented by the string file with all requests
 which match request.
@@ -53,7 +55,7 @@ which match request.
   might exist; this file must exist for the lifetime of the server
 
 
-## registerPathHandler ##
+### registerPathHandler ###
 
 Registers a custom path handler.
 
@@ -71,7 +73,7 @@ Registers a custom path handler.
   if path does not begin with a "/"
 
 
-## registerPrefixHandler ##
+### registerPrefixHandler ###
 
 Registers a custom prefix handler.
 
@@ -89,7 +91,7 @@ Registers a custom prefix handler.
   if path does not begin with a "/" or does not end with a "/"
 
 
-## registerErrorHandler ##
+### registerErrorHandler ###
 
 Registers a custom error page handler.
 
@@ -108,7 +110,7 @@ Registers a custom error page handler.
   If the error handler handles HTTP 500 and throws, behavior is undefined.
 
 
-## registerDirectory ##
+### registerDirectory ###
 
 Maps all requests to paths beneath path to the corresponding file beneath
 dir.
@@ -127,7 +129,7 @@ dir.
   does not begin with and end with a forward slash
 
 
-## registerContentType ##
+### registerContentType ###
 
 Associates files with the given extension with the given Content-Type when
 served by this server, in the absence of any file-specific information
@@ -148,7 +150,7 @@ mapping, if one is present.
   generate this string from trusted data risk security vulnerabilities.
 
 
-## setIndexHandler ##
+### setIndexHandler ###
 
 Sets the handler used to display the contents of a directory if
 the directory contains no index page.
@@ -163,43 +165,45 @@ the directory contains no index page.
   handler, under the key "directory".
 
 
-## identity ##
- Represents the locations at which this server is reachable. */
-
-## getState ##
+### getState ###
 
 Retrieves the string associated with the given key in this, for the given
 path's saved state.  All keys are initially associated with the empty
 string.
 
 
-## setState ##
+### setState ###
 
 Sets the string associated with the given key in this, for the given path's
 saved state.
 
 
-## getSharedState ##
+### getSharedState ###
 
 Retrieves the string associated with the given key in this, in
 entire-server saved state.  All keys are initially associated with the
 empty string.
 
 
-## setSharedState ##
+### setSharedState ###
 
 Sets the string associated with the given key in this, in entire-server
 saved state.
 
 
-## getObjectState ##
+### getObjectState ###
 
 Retrieves the object associated with the given key in this in
 object-valued saved state.  All keys are initially associated with null.
 
 
-## setObjectState ##
+### setObjectState ###
 
 Sets the object associated with the given key in this in object-valued
 saved state.  The value may be null.
 
+
+## Attributes ##
+
+### identity ###
+ Represents the locations at which this server is reachable. */

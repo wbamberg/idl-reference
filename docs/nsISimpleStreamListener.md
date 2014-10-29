@@ -8,7 +8,9 @@ A simple stream listener can be used with AsyncRead to supply data to
 a output stream.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize the simple stream listener.
 

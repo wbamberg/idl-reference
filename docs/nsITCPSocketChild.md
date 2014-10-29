@@ -4,19 +4,21 @@ layout: default
 
 # nsITCPSocketChild #
 
-## sendOpen ##
+## Methods ##
 
-## sendSend ##
+### sendOpen ###
 
-## sendResume ##
+### sendSend ###
 
-## sendSuspend ##
+### sendResume ###
 
-## sendClose ##
+### sendSuspend ###
 
-## sendStartTLS ##
+### sendClose ###
 
-## setSocketAndWindow ##
+### sendStartTLS ###
+
+### setSocketAndWindow ###
 
 Initialize the TCP socket on the child side for IPC. It is called from the child side,
 which is generated in receiving a notification of accepting any open request
@@ -31,6 +33,8 @@ as well as in the single process model.
        as "jsval" for deserialization.
 
 
-## host ##
+## Attributes ##
 
-## port ##
+### host ###
+
+### port ###

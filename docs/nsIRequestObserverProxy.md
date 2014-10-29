@@ -12,7 +12,9 @@ This interface only provides the initialization needed after construction.
 Otherwise, these objects are used simply as nsIRequestObserver's.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initializes an nsIRequestObserverProxy.
 

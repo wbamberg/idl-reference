@@ -4,6 +4,8 @@ layout: default
 
 # nsIWorkerDebugger #
 
-## isClosed ##
+## Attributes ##
 
-## url ##
+### isClosed ###
+
+### url ###

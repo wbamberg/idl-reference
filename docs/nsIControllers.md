@@ -4,20 +4,22 @@ layout: default
 
 # nsIControllers #
 
-## getControllerForCommand ##
+## Methods ##
 
-## insertControllerAt ##
+### getControllerForCommand ###
 
-## removeControllerAt ##
+### insertControllerAt ###
 
-## getControllerAt ##
+### removeControllerAt ###
 
-## appendController ##
+### getControllerAt ###
 
-## removeController ##
+### appendController ###
 
-## getControllerId ##
+### removeController ###
 
-## getControllerById ##
+### getControllerId ###
 
-## getControllerCount ##
+### getControllerById ###
+
+### getControllerCount ###

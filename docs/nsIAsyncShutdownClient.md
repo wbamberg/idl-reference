@@ -7,12 +7,9 @@ layout: default
 A client for a nsIAsyncShutdownBarrier.
 
 
-## name ##
+## Methods ##
 
-The name of the barrier.
-
-
-## addBlocker ##
+### addBlocker ###
 
 Add a blocker.
 
@@ -33,7 +30,7 @@ removed, each  by a call to `removeBlocker`.
 empty when called from C++.
 
 
-## removeBlocker ##
+### removeBlocker ###
 
 Remove a blocker.
 
@@ -42,7 +39,14 @@ Remove a blocker.
 removed already.
 
 
-## jsclient ##
+## Attributes ##
+
+### name ###
+
+The name of the barrier.
+
+
+### jsclient ###
 
 The JS implementation of the client.
 

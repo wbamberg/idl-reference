@@ -4,12 +4,16 @@ layout: default
 
 # txINodeSet #
 
-## item ##
+## Methods ##
 
-## itemAsNumber ##
+### item ###
 
-## itemAsString ##
+### itemAsNumber ###
 
-## length ##
+### itemAsString ###
 
-## add ##
+### add ###
+
+## Attributes ##
+
+### length ###

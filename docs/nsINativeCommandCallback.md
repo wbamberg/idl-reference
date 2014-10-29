@@ -4,7 +4,9 @@ layout: default
 
 # nsINativeCommandCallback #
 
-## nativeCommandResult ##
+## Methods ##
+
+### nativeCommandResult ###
 
 Callback function used to report the result of a network native command.
 

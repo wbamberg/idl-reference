@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMGeoPositionErrorCallback #
 
-## handleEvent ##
+## Methods ##
+
+### handleEvent ###

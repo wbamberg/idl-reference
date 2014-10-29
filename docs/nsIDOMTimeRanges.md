@@ -4,8 +4,12 @@ layout: default
 
 # nsIDOMTimeRanges #
 
-## length ##
+## Methods ##
 
-## start ##
+### start ###
 
-## end ##
+### end ###
+
+## Attributes ##
+
+### length ###

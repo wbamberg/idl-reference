@@ -9,48 +9,9 @@ Don't use this from within Gecko--use nsContentUtils, nsTreeSanitizer, etc.
 directly instead.
 
 
-## SanitizerAllowComments ##
+## Methods ##
 
-Flag for sanitizer: Allow comment nodes.
-
-
-## SanitizerAllowStyle ##
-
-Flag for sanitizer: Allow <style> and style="" (with contents sanitized
-in case of -moz-binding). Note! If -moz-binding is absent, properties
-that might be XSS risks in other Web engines are preserved!
-
-
-## SanitizerCidEmbedsOnly ##
-
-Flag for sanitizer: Only allow cid: URLs for embedded content.
-
-At present, sanitizing CSS backgrounds, etc., is not supported, so setting 
-this together with SanitizerAllowStyle doesn't make sense.
-
-At present, sanitizing CSS syntax in SVG presentational attributes is not
-supported, so this option flattens out SVG.
-
-
-## SanitizerDropNonCSSPresentation ##
-
-Flag for sanitizer: Drop non-CSS presentational HTML elements and 
-attributes, such as <font>, <center> and bgcolor="".
-
-
-## SanitizerDropForms ##
-
-Flag for sanitizer: Drop forms and form controls (excluding 
-fieldset/legend).
-
-
-## SanitizerDropMedia ##
-
-Flag for sanitizer: Drop <img>, <video>, <audio> and <source> and flatten
-out SVG.
-
-
-## sanitize ##
+### sanitize ###
 
 Parses a string into an HTML document, sanitizes the document and 
 returns the result serialized to a string.
@@ -85,7 +46,7 @@ may still be XSS dangerous if loaded into a non-Gecko Web engine!
 @param flags sanitization option flags defined above
 
 
-## convertToPlainText ##
+### convertToPlainText ###
 
 Convert HTML to plain text.
 
@@ -95,7 +56,7 @@ Convert HTML to plain text.
 @param wrapCol number of characters per line; 0 for no auto-wrapping
 
 
-## parseFragment ##
+### parseFragment ###
 
 Parses markup into a sanitized document fragment.
 
@@ -104,4 +65,47 @@ Parses markup into a sanitized document fragment.
 @param isXML true if |fragment| is XML and false if HTML
 @param baseURI the base URL for this fragment
 @param element the context node for the fragment parsing algorithm
+
+
+## Constants ##
+
+### SanitizerAllowComments ###
+
+Flag for sanitizer: Allow comment nodes.
+
+
+### SanitizerAllowStyle ###
+
+Flag for sanitizer: Allow <style> and style="" (with contents sanitized
+in case of -moz-binding). Note! If -moz-binding is absent, properties
+that might be XSS risks in other Web engines are preserved!
+
+
+### SanitizerCidEmbedsOnly ###
+
+Flag for sanitizer: Only allow cid: URLs for embedded content.
+
+At present, sanitizing CSS backgrounds, etc., is not supported, so setting 
+this together with SanitizerAllowStyle doesn't make sense.
+
+At present, sanitizing CSS syntax in SVG presentational attributes is not
+supported, so this option flattens out SVG.
+
+
+### SanitizerDropNonCSSPresentation ###
+
+Flag for sanitizer: Drop non-CSS presentational HTML elements and 
+attributes, such as <font>, <center> and bgcolor="".
+
+
+### SanitizerDropForms ###
+
+Flag for sanitizer: Drop forms and form controls (excluding 
+fieldset/legend).
+
+
+### SanitizerDropMedia ###
+
+Flag for sanitizer: Drop <img>, <video>, <audio> and <source> and flatten
+out SVG.
 

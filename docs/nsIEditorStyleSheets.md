@@ -4,7 +4,9 @@ layout: default
 
 # nsIEditorStyleSheets #
 
-## replaceStyleSheet ##
+## Methods ##
+
+### replaceStyleSheet ###
  Load and apply the style sheet, specified by aURL, to the
 editor's document, replacing the last style sheet added (if any).
 This is always asynchronous, and may cause network I/O.
@@ -12,7 +14,7 @@ This is always asynchronous, and may cause network I/O.
 @param aURL The style sheet to be loaded and applied.
 
 
-## addStyleSheet ##
+### addStyleSheet ###
  Add the given style sheet to the editor's document,
 on top of any that are already there.
 This is always asynchronous, and may cause network I/O.
@@ -20,7 +22,7 @@ This is always asynchronous, and may cause network I/O.
 @param aURL The style sheet to be loaded and applied.
 
 
-## replaceOverrideStyleSheet ##
+### replaceOverrideStyleSheet ###
  Load and apply the override style sheet, specified by aURL, to the
 editor's document, replacing the last override style sheet added (if any).
 This is always synchronous, so aURL should be a local file with only
@@ -33,7 +35,7 @@ especially replaceStyleSheet.
 @param aURL The style sheet to be loaded and applied.
 
 
-## addOverrideStyleSheet ##
+### addOverrideStyleSheet ###
  Load and apply an override style sheet, specified by aURL, to
 the editor's document, on top of any that are already there.
 This is always synchronous, so the same caveats about local files and no
@@ -42,21 +44,21 @@ non-local @import as replaceOverrideStyleSheet apply here, too.
 @param aURL The style sheet to be loaded and applied.
 
 
-## removeStyleSheet ##
+### removeStyleSheet ###
  Remove the given style sheet from the editor's document
 This is always synchronous
 
 @param aURL The style sheet to be removed
 
 
-## removeOverrideStyleSheet ##
+### removeOverrideStyleSheet ###
  Remove the given override style sheet from the editor's document
 This is always synchronous
 
 @param aURL The style sheet to be removed.
 
 
-## enableStyleSheet ##
+### enableStyleSheet ###
  Enable or disable the given style sheet from the editor's document
 This is always synchronous
 
@@ -64,14 +66,14 @@ This is always synchronous
 @param aEnable true to enable, or false to disable the style sheet
 
 
-## getStyleSheetForURL ##
+### getStyleSheetForURL ###
  Get the CSSStyleSheet associated with the given URL.
 
 @param aURL         The style sheet's URL
 @return             the style sheet
 
 
-## getURLForStyleSheet ##
+### getURLForStyleSheet ###
  Get the URL associated with the given CSSStyleSheet.
 
 @param aStyleSheet  The style sheet

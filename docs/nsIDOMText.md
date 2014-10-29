@@ -11,9 +11,13 @@ For more information on this interface please see
 http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html
 
 
-## splitText ##
+## Methods ##
 
-## wholeText ##
+### splitText ###
+
+## Attributes ##
+
+### wholeText ###
 
 The concatenation of all logically adjacent text nodes with this text
 node, where "logically adjacent" consists of all text nodes which can be

@@ -7,7 +7,9 @@ layout: default
 The nsIModule interface.
 
 
-## getClassObject ##
+## Methods ##
+
+### getClassObject ###
  
 Object Instance Creation
 
@@ -21,7 +23,7 @@ query to a nsIClassInfo.
 
 
 
-## registerSelf ##
+### registerSelf ###
 
 One time registration callback
 
@@ -34,7 +36,7 @@ called so that any setup registration can be preformed.
 @param aType     : Loader Type being used to load this module 
 
 
-## unregisterSelf ##
+### unregisterSelf ###
 
 One time unregistration callback
 
@@ -47,7 +49,7 @@ called so that any unregistration can be preformed
 
 
 
-## canUnload ##
+### canUnload ###
  
 Module load management
 

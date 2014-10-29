@@ -4,7 +4,9 @@ layout: default
 
 # nsITransportEventSink #
 
-## onTransportStatus ##
+## Methods ##
+
+### onTransportStatus ###
 
 Transport status notification.
 

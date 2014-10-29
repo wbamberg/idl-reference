@@ -11,10 +11,14 @@ that runs in a scope with an nsExpandedPrincipal. The second interface
 includes members that are only exposed to chrome.
 
 
-## interfaces ##
+## Methods ##
 
-## interfacesByID ##
+### isSuccessCode ###
 
-## results ##
+## Attributes ##
 
-## isSuccessCode ##
+### interfaces ###
+
+### interfacesByID ###
+
+### results ###

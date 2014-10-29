@@ -13,7 +13,9 @@ the current architecture (e.g., sizeof(double) for RISCy CPUs).  malloc(3)
 satisfies this requirement.
 
 
-## getBuffer ##
+## Methods ##
+
+### getBuffer ###
 
 Get access to a contiguous, aligned run of bytes in the stream's buffer.
 Exactly one successful getBuffer call must occur before a putBuffer call
@@ -42,7 +44,7 @@ accesses before the fill or flush point is reached.
    after the current position that satisfies (A & aAlignMask) == 0.
 
 
-## putBuffer ##
+### putBuffer ###
 
 Relinquish access to the stream's buffer, filling if at end of an input
 buffer, flushing if completing an output buffer.  After a getBuffer call
@@ -57,16 +59,18 @@ that returns non-null, putBuffer must be called.
    returned aBuffer.
 
 
-## disableBuffering ##
+### disableBuffering ###
 
 Disable and enable buffering on the stream implementing this interface.
 DisableBuffering flushes an output stream's buffer, and invalidates an
 input stream's buffer.
 
 
-## enableBuffering ##
+### enableBuffering ###
 
-## unbufferedStream ##
+## Attributes ##
+
+### unbufferedStream ###
 
 The underlying, unbuffered input or output stream.
 

@@ -4,28 +4,30 @@ layout: default
 
 # nsIAndroidViewport #
 
-## x ##
+## Attributes ##
 
-## y ##
+### x ###
 
-## width ##
+### y ###
 
-## height ##
+### width ###
 
-## pageLeft ##
+### height ###
 
-## pageTop ##
+### pageLeft ###
 
-## pageRight ##
+### pageTop ###
 
-## pageBottom ##
+### pageRight ###
 
-## cssPageLeft ##
+### pageBottom ###
 
-## cssPageTop ##
+### cssPageLeft ###
 
-## cssPageRight ##
+### cssPageTop ###
 
-## cssPageBottom ##
+### cssPageRight ###
 
-## zoom ##
+### cssPageBottom ###
+
+### zoom ###

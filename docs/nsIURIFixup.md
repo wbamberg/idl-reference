@@ -7,33 +7,9 @@ layout: default
 Interface implemented by objects capable of fixing up strings into URIs
 
 
-## FIXUP_FLAG_NONE ##
- No fixup flags. */
+## Methods ##
 
-## FIXUP_FLAG_ALLOW_KEYWORD_LOOKUP ##
-
-Allow the fixup to use a keyword lookup service to complete the URI.
-The fixup object implementer should honour this flag and only perform
-any lengthy keyword (or search) operation if it is set.
-
-
-## FIXUP_FLAGS_MAKE_ALTERNATE_URI ##
-
-Tell the fixup to make an alternate URI from the input URI, for example
-to turn foo into www.foo.com.
-
-
-## FIXUP_FLAG_REQUIRE_WHITELISTED_HOST ##
-
-For an input that may be just a domain with only 1 level (eg, "mozilla"),
-require that the host be whitelisted.
-
-Overridden by FIXUP_FLAG_ALLOW_KEYWORD_LOOKUP.
-
-
-## FIXUP_FLAG_FIX_SCHEME_TYPOS ##
-
-## createExposableURI ##
+### createExposableURI ###
 
 Converts an internal URI (e.g. a wyciwyg URI) into one which we can
 expose to the user, for example on the URL bar.
@@ -45,7 +21,7 @@ expose to the user, for example on the URL bar.
         for the URI scheme.
 
 
-## createFixupURI ##
+### createFixupURI ###
 
 Converts the specified string into a URI, first attempting
 to correct any errors in the syntax or other vagaries. Returns
@@ -57,7 +33,7 @@ a wellformed URI or nullptr if it can't.
                    URI (see nsISearchSubmission).
 
 
-## getFixupURIInfo ##
+### getFixupURIInfo ###
 
 Same as createFixupURI, but returns information about what it corrected
 (e.g. whether we could rescue the URI or "just" generated a keyword
@@ -69,7 +45,7 @@ search URI instead).
                    URI (see nsISearchSubmission).
 
 
-## keywordToURI ##
+### keywordToURI ###
 
 Converts the specified keyword string into a URI.  Note that it's the
 caller's responsibility to check whether keywords are enabled and
@@ -82,3 +58,31 @@ whether aKeyword is a sensible keyword.
 @throws NS_ERROR_FAILURE if the resulting URI requires submission of POST
         data and aPostData is null.
 
+
+## Constants ##
+
+### FIXUP_FLAG_NONE ###
+ No fixup flags. */
+
+### FIXUP_FLAG_ALLOW_KEYWORD_LOOKUP ###
+
+Allow the fixup to use a keyword lookup service to complete the URI.
+The fixup object implementer should honour this flag and only perform
+any lengthy keyword (or search) operation if it is set.
+
+
+### FIXUP_FLAGS_MAKE_ALTERNATE_URI ###
+
+Tell the fixup to make an alternate URI from the input URI, for example
+to turn foo into www.foo.com.
+
+
+### FIXUP_FLAG_REQUIRE_WHITELISTED_HOST ###
+
+For an input that may be just a domain with only 1 level (eg, "mozilla"),
+require that the host be whitelisted.
+
+Overridden by FIXUP_FLAG_ALLOW_KEYWORD_LOOKUP.
+
+
+### FIXUP_FLAG_FIX_SCHEME_TYPOS ###

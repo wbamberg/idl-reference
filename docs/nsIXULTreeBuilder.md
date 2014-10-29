@@ -4,28 +4,30 @@ layout: default
 
 # nsIXULTreeBuilder #
 
-## getResourceAtIndex ##
+## Methods ##
+
+### getResourceAtIndex ###
 
 Retrieve the RDF resource associated with the specified row.
 
 
-## getIndexOfResource ##
+### getIndexOfResource ###
 
 Retrieve the index associated with specified RDF resource.
 
 
-## addObserver ##
+### addObserver ###
  
 Add a Tree Builder Observer to handle Tree View 
 methods that the base builder does not implement. 
 
 
-## removeObserver ##
+### removeObserver ###
  
 Remove an Tree Builder Observer.
 
 
-## sort ##
+### sort ###
  
 Sort the contents of the tree using the specified column.
 

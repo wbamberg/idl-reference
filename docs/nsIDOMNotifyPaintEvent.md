@@ -9,7 +9,9 @@ event, which fires at a window when painting has happened in
 that window.
 
 
-## clientRects ##
+## Attributes ##
+
+### clientRects ###
 
 Get a list of rectangles which are affected. The rectangles are in CSS pixels
 relative to the viewport origin.
@@ -18,7 +20,7 @@ caused by the current document is reported; in particular, painting in subdocume
 is not reported.
 
 
-## boundingClientRect ##
+### boundingClientRect ###
 
 Get the bounding box of the rectangles which are affected. The rectangle
 is in CSS pixels relative to the viewport origin.
@@ -27,4 +29,4 @@ caused by the current document is reported; in particular, painting in subdocume
 is not reported.
 
 
-## paintRequests ##
+### paintRequests ###

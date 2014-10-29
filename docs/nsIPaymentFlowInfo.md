@@ -4,8 +4,10 @@ layout: default
 
 # nsIPaymentFlowInfo #
 
-## uri ##
+## Attributes ##
 
-## jwt ##
+### uri ###
 
-## requestMethod ##
+### jwt ###
+
+### requestMethod ###

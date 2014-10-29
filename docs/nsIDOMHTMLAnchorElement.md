@@ -14,47 +14,51 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## href ##
+## Methods ##
 
-## target ##
+### toString ###
 
-## ping ##
+## Attributes ##
 
-## download ##
+### href ###
 
-## rel ##
+### target ###
 
-## hreflang ##
+### ping ###
 
-## type ##
+### download ###
 
-## text ##
+### rel ###
+
+### hreflang ###
+
+### type ###
+
+### text ###
 
 An alias for the textContent attribute.
 
 
-## protocol ##
+### protocol ###
 
-## host ##
+### host ###
 
-## hostname ##
+### hostname ###
 
-## port ##
+### port ###
 
-## pathname ##
+### pathname ###
 
-## search ##
+### search ###
 
-## hash ##
+### hash ###
 
-## charset ##
+### charset ###
 
-## coords ##
+### coords ###
 
-## name ##
+### name ###
 
-## rev ##
+### rev ###
 
-## shape ##
-
-## toString ##
+### shape ###

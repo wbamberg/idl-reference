@@ -4,4 +4,6 @@ layout: default
 
 # nsINfcEventListener #
 
-## onEvent ##
+## Methods ##
+
+### onEvent ###

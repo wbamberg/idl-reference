@@ -7,31 +7,9 @@ layout: default
 The result of a history/bookmark query.
 
 
-## sortingMode ##
+## Methods ##
 
-Sorts all nodes recursively by the given parameter, one of
-nsINavHistoryQueryOptions.SORT_BY_*  This will update the corresponding
-options for this result, so that re-using the current options/queries will
-always give you the current view.
-
-
-## sortingAnnotation ##
-
-The annotation to use in SORT_BY_ANNOTATION_* sorting modes, set this
-before setting the sortingMode attribute.
-
-
-## suppressNotifications ##
-
-Whether or not notifications on result changes are suppressed.
-Initially set to false.
-
-Use this to avoid flickering and to improve performance when you
-do temporary changes to the result structure (e.g. when searching for a
-node recursively).
-
-
-## addObserver ##
+### addObserver ###
 
 Adds an observer for changes done in the result.
 
@@ -46,7 +24,7 @@ Adds an observer for changes done in the result.
 @see nsINavHistoryResultObserver
 
 
-## removeObserver ##
+### removeObserver ###
 
 Removes an observer that was added by addObserver.
 
@@ -54,7 +32,33 @@ Removes an observer that was added by addObserver.
        a result observer that was added by addObserver.
 
 
-## root ##
+## Attributes ##
+
+### sortingMode ###
+
+Sorts all nodes recursively by the given parameter, one of
+nsINavHistoryQueryOptions.SORT_BY_*  This will update the corresponding
+options for this result, so that re-using the current options/queries will
+always give you the current view.
+
+
+### sortingAnnotation ###
+
+The annotation to use in SORT_BY_ANNOTATION_* sorting modes, set this
+before setting the sortingMode attribute.
+
+
+### suppressNotifications ###
+
+Whether or not notifications on result changes are suppressed.
+Initially set to false.
+
+Use this to avoid flickering and to improve performance when you
+do temporary changes to the result structure (e.g. when searching for a
+node recursively).
+
+
+### root ###
 
 This is the root of the results. Remember that you need to open all
 containers for their contents to be valid.

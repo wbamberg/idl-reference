@@ -4,10 +4,12 @@ layout: default
 
 # nsIDashboardEventNotifier #
 
-## addHost ##
+## Methods ##
 
-## removeHost ##
+### addHost ###
 
-## newMsgSent ##
+### removeHost ###
 
-## newMsgReceived ##
+### newMsgSent ###
+
+### newMsgReceived ###

@@ -4,20 +4,24 @@ layout: default
 
 # nsICollation #
 
-## kCollationStrengthDefault ##
+## Methods ##
 
-## kCollationCaseInsensitiveAscii ##
+### initialize ###
 
-## kCollationAccentInsenstive ##
+### compareString ###
 
-## kCollationCaseSensitive ##
+### allocateRawSortKey ###
 
-## kCollationCaseInSensitive ##
+### compareRawSortKey ###
 
-## initialize ##
+## Constants ##
 
-## compareString ##
+### kCollationStrengthDefault ###
 
-## allocateRawSortKey ##
+### kCollationCaseInsensitiveAscii ###
 
-## compareRawSortKey ##
+### kCollationAccentInsenstive ###
+
+### kCollationCaseSensitive ###
+
+### kCollationCaseInSensitive ###

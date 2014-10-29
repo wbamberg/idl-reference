@@ -4,26 +4,32 @@ layout: default
 
 # nsIGIOMimeApp #
 
-## EXPECTS_URIS ##
+## Methods ##
 
-## EXPECTS_PATHS ##
+### launch ###
 
-## EXPECTS_URIS_FOR_NON_FILES ##
+### setAsDefaultForMimeType ###
 
-## id ##
+### setAsDefaultForFileExtensions ###
 
-## name ##
+### setAsDefaultForURIScheme ###
 
-## command ##
+## Attributes ##
 
-## expectsURIs ##
+### id ###
 
-## supportedURISchemes ##
+### name ###
 
-## launch ##
+### command ###
 
-## setAsDefaultForMimeType ##
+### expectsURIs ###
 
-## setAsDefaultForFileExtensions ##
+### supportedURISchemes ###
 
-## setAsDefaultForURIScheme ##
+## Constants ##
+
+### EXPECTS_URIS ###
+
+### EXPECTS_PATHS ###
+
+### EXPECTS_URIS_FOR_NON_FILES ###

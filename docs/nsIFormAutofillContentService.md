@@ -17,7 +17,9 @@ for the chrome process.
          process, where most of the processing is located.
 
 
-## requestAutocomplete ##
+## Methods ##
+
+### requestAutocomplete ###
 
 Invoked by the requestAutocomplete method of the DOM Form object.
 

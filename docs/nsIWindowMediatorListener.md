@@ -4,8 +4,10 @@ layout: default
 
 # nsIWindowMediatorListener #
 
-## onWindowTitleChange ##
+## Methods ##
 
-## onOpenWindow ##
+### onWindowTitleChange ###
 
-## onCloseWindow ##
+### onOpenWindow ###
+
+### onCloseWindow ###

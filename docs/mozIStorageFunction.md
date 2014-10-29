@@ -17,7 +17,9 @@ These functions can be called from triggers, too.
 
 
 
-## onFunctionCall ##
+## Methods ##
+
+### onFunctionCall ###
 
 onFunctionCall is called when execution of a custom
 function should occur.

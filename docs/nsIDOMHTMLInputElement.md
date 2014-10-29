@@ -14,114 +14,118 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## accept ##
+## Methods ##
 
-## alt ##
+### stepDown ###
 
-## autocomplete ##
+### stepUp ###
 
-## autofocus ##
+### checkValidity ###
 
-## defaultChecked ##
+### setCustomValidity ###
 
-## checked ##
+### select ###
 
-## disabled ##
+### setSelectionRange ###
 
-## form ##
+### mozGetFileNameArray ###
 
-## formAction ##
+### mozSetFileNameArray ###
 
-## formEnctype ##
-
-## formMethod ##
-
-## formNoValidate ##
-
-## formTarget ##
-
-## files ##
-
-## height ##
-
-## indeterminate ##
-
-## inputMode ##
-
-## list ##
-
-## max ##
-
-## maxLength ##
-
-## min ##
-
-## multiple ##
-
-## name ##
-
-## pattern ##
-
-## placeholder ##
-
-## readOnly ##
-
-## required ##
-
-## step ##
-
-## align ##
-
-## size ##
-
-## width ##
-
-## src ##
-
-## type ##
-
-## defaultValue ##
-
-## value ##
-
-## valueAsNumber ##
-
-## stepDown ##
-
-## stepUp ##
-
-## willValidate ##
-
-## validity ##
-
-## validationMessage ##
-
-## checkValidity ##
-
-## setCustomValidity ##
-
-## select ##
-
-## selectionStart ##
-
-## selectionEnd ##
-
-## setSelectionRange ##
-
-## selectionDirection ##
-
-## useMap ##
-
-## controllers ##
-
-## textLength ##
-
-## mozGetFileNameArray ##
-
-## mozSetFileNameArray ##
-
-## mozIsTextField ##
+### mozIsTextField ###
 
 This non-standard method prevents to check types manually to know if the
 element is a text field.
 
+
+## Attributes ##
+
+### accept ###
+
+### alt ###
+
+### autocomplete ###
+
+### autofocus ###
+
+### defaultChecked ###
+
+### checked ###
+
+### disabled ###
+
+### form ###
+
+### formAction ###
+
+### formEnctype ###
+
+### formMethod ###
+
+### formNoValidate ###
+
+### formTarget ###
+
+### files ###
+
+### height ###
+
+### indeterminate ###
+
+### inputMode ###
+
+### list ###
+
+### max ###
+
+### maxLength ###
+
+### min ###
+
+### multiple ###
+
+### name ###
+
+### pattern ###
+
+### placeholder ###
+
+### readOnly ###
+
+### required ###
+
+### step ###
+
+### align ###
+
+### size ###
+
+### width ###
+
+### src ###
+
+### type ###
+
+### defaultValue ###
+
+### value ###
+
+### valueAsNumber ###
+
+### willValidate ###
+
+### validity ###
+
+### validationMessage ###
+
+### selectionStart ###
+
+### selectionEnd ###
+
+### selectionDirection ###
+
+### useMap ###
+
+### controllers ###
+
+### textLength ###

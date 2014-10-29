@@ -4,8 +4,12 @@ layout: default
 
 # nsIDOMCompositionEvent #
 
-## data ##
+## Methods ##
 
-## locale ##
+### initCompositionEvent ###
 
-## initCompositionEvent ##
+## Attributes ##
+
+### data ###
+
+### locale ###

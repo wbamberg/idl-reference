@@ -7,7 +7,9 @@ layout: default
 A generic application shortcut with command line support.
 
 
-## app ##
+## Attributes ##
+
+### app ###
 
 Set or get the handler app for this shortcut item.
 
@@ -20,7 +22,7 @@ not be found on  the system.
 @see faviconPageUri
 
 
-## iconIndex ##
+### iconIndex ###
 
 Set or get the icon displayed with the jump list item.
 
@@ -30,7 +32,7 @@ executable which may be used as the jump list icon.
 @see faviconPageUri
 
 
-## faviconPageUri ##
+### faviconPageUri ###
 
 Set or get the URI of a page whose favicon may be used as the icon.
 

@@ -4,7 +4,9 @@ layout: default
 
 # nsIFrameScriptLoader #
 
-## loadFrameScript ##
+## Methods ##
+
+### loadFrameScript ###
 
 Load a script in the (remote) frame. aURL must be the absolute URL.
 data: URLs are also supported. For example data:,dump("foo\n");
@@ -13,12 +15,12 @@ remote frame becomes available. Otherwise the script will be loaded
 only if the frame is already available.
 
 
-## removeDelayedFrameScript ##
+### removeDelayedFrameScript ###
 
 Removes aURL from the list of scripts which support delayed load.
 
 
-## getDelayedFrameScripts ##
+### getDelayedFrameScripts ###
 
 Returns all delayed scripts that will be loaded once a (remote)
 frame becomes available. The return value is a list of pairs

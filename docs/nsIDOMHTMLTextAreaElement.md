@@ -14,58 +14,62 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## autofocus ##
+## Methods ##
 
-## cols ##
+### checkValidity ###
 
-## disabled ##
+### setCustomValidity ###
 
-## form ##
+### select ###
 
-## maxLength ##
+### setSelectionRange ###
 
-## name ##
+## Attributes ##
 
-## placeholder ##
+### autofocus ###
 
-## readOnly ##
+### cols ###
 
-## required ##
+### disabled ###
 
-## rows ##
+### form ###
 
-## wrap ##
+### maxLength ###
+
+### name ###
+
+### placeholder ###
+
+### readOnly ###
+
+### required ###
+
+### rows ###
+
+### wrap ###
 
 Reflects the wrap content attribute. Possible values are "soft", "hard" and
 "off". "soft" is the default.
 
 
-## type ##
+### type ###
 
-## defaultValue ##
+### defaultValue ###
 
-## value ##
+### value ###
 
-## textLength ##
+### textLength ###
 
-## willValidate ##
+### willValidate ###
 
-## validity ##
+### validity ###
 
-## validationMessage ##
+### validationMessage ###
 
-## checkValidity ##
+### selectionStart ###
 
-## setCustomValidity ##
+### selectionEnd ###
 
-## select ##
+### selectionDirection ###
 
-## selectionStart ##
-
-## selectionEnd ##
-
-## setSelectionRange ##
-
-## selectionDirection ##
-
-## controllers ##
+### controllers ###

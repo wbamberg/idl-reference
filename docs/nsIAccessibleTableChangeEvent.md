@@ -4,12 +4,14 @@ layout: default
 
 # nsIAccessibleTableChangeEvent #
 
-## rowOrColIndex ##
+## Attributes ##
+
+### rowOrColIndex ###
 
 Return the row or column index.
 
 
-## RowsOrColsCount ##
+### RowsOrColsCount ###
 
 Return the number of rows or cols
 

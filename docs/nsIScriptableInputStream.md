@@ -8,19 +8,21 @@ nsIScriptableInputStream provides scriptable access to an nsIInputStream
 instance.
 
 
-## close ##
+## Methods ##
+
+### close ###
  
 Closes the stream. 
 
 
-## init ##
+### init ###
 
 Wrap the given nsIInputStream with this nsIScriptableInputStream. 
 
 @param aInputStream parameter providing the stream to wrap 
 
 
-## available ##
+### available ###
 
 Return the number of bytes currently available in the stream 
 
@@ -29,7 +31,7 @@ Return the number of bytes currently available in the stream
 @throws NS_BASE_STREAM_CLOSED if called after the stream has been closed
 
 
-## read ##
+### read ###
 
 Read data from the stream.
 
@@ -44,7 +46,7 @@ a truncated string.
 @throws NS_ERROR_NOT_INITIALIZED if init was not called
 
 
-## readBytes ##
+### readBytes ###
 
 Read data from the stream, including NULL bytes.
 

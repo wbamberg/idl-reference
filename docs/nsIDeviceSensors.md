@@ -4,13 +4,15 @@ layout: default
 
 # nsIDeviceSensors #
 
-## hasWindowListener ##
+## Methods ##
+
+### hasWindowListener ###
 
 Returns true if the given window has any listeners of the given type
 
 
-## addWindowListener ##
+### addWindowListener ###
 
-## removeWindowListener ##
+### removeWindowListener ###
 
-## removeWindowAsListener ##
+### removeWindowAsListener ###

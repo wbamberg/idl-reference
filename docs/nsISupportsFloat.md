@@ -7,6 +7,10 @@ layout: default
 Scriptable storage for floating point numbers
 
 
-## data ##
+## Methods ##
 
-## toString ##
+### toString ###
+
+## Attributes ##
+
+### data ###

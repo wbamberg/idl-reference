@@ -4,14 +4,18 @@ layout: default
 
 # nsIHapticFeedback #
 
-## ShortPress ##
+## Methods ##
 
-## LongPress ##
-
-## performSimpleAction ##
+### performSimpleAction ###
 
 Perform haptic feedback
 
 @param isLongPress
        indicate whether feedback is for a long press (vs. short press)
 
+
+## Constants ##
+
+### ShortPress ###
+
+### LongPress ###

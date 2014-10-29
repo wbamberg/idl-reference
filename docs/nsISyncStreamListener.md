@@ -4,7 +4,9 @@ layout: default
 
 # nsISyncStreamListener #
 
-## inputStream ##
+## Attributes ##
+
+### inputStream ###
 
 Returns an input stream that when read will fetch data delivered to the
 sync stream listener.  The nsIInputStream implementation will wait for

@@ -4,8 +4,10 @@ layout: default
 
 # nsINfcService #
 
-## start ##
+## Methods ##
 
-## shutdown ##
+### start ###
 
-## sendCommand ##
+### shutdown ###
+
+### sendCommand ###

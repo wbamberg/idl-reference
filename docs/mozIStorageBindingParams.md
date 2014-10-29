@@ -4,7 +4,9 @@ layout: default
 
 # mozIStorageBindingParams #
 
-## bindByName ##
+## Methods ##
+
+### bindByName ###
 
 Binds aValue to the parameter with the name aName.
 
@@ -14,23 +16,23 @@ Binds aValue to the parameter with the name aName.
        The value to bind.
 
 
-## bindUTF8StringByName ##
+### bindUTF8StringByName ###
 
-## bindStringByName ##
+### bindStringByName ###
 
-## bindDoubleByName ##
+### bindDoubleByName ###
 
-## bindInt32ByName ##
+### bindInt32ByName ###
 
-## bindInt64ByName ##
+### bindInt64ByName ###
 
-## bindNullByName ##
+### bindNullByName ###
 
-## bindBlobByName ##
+### bindBlobByName ###
 
-## bindAdoptedBlobByName ##
+### bindAdoptedBlobByName ###
 
-## bindByIndex ##
+### bindByIndex ###
 
 Binds aValue to the parameter with the index aIndex.
 
@@ -40,18 +42,18 @@ Binds aValue to the parameter with the index aIndex.
        The value to bind.
 
 
-## bindUTF8StringByIndex ##
+### bindUTF8StringByIndex ###
 
-## bindStringByIndex ##
+### bindStringByIndex ###
 
-## bindDoubleByIndex ##
+### bindDoubleByIndex ###
 
-## bindInt32ByIndex ##
+### bindInt32ByIndex ###
 
-## bindInt64ByIndex ##
+### bindInt64ByIndex ###
 
-## bindNullByIndex ##
+### bindNullByIndex ###
 
-## bindBlobByIndex ##
+### bindBlobByIndex ###
 
-## bindAdoptedBlobByIndex ##
+### bindAdoptedBlobByIndex ###

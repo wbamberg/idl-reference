@@ -4,13 +4,15 @@ layout: default
 
 # nsIDOMDocumentXBL #
 
-## getAnonymousNodes ##
+## Methods ##
+
+### getAnonymousNodes ###
 
 See the MDC documentation for what these methods do.
 
 
-## getAnonymousElementByAttribute ##
+### getAnonymousElementByAttribute ###
 
-## getBindingParent ##
+### getBindingParent ###
 
-## loadBindingDocument ##
+### loadBindingDocument ###

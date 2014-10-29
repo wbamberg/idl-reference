@@ -4,16 +4,18 @@ layout: default
 
 # nsIDOMMozMobileMessageThread #
 
-## id ##
+## Attributes ##
 
-## lastMessageSubject ##
+### id ###
 
-## body ##
+### lastMessageSubject ###
 
-## unreadCount ##
+### body ###
 
-## participants ##
+### unreadCount ###
 
-## timestamp ##
+### participants ###
 
-## lastMessageType ##
+### timestamp ###
+
+### lastMessageType ###

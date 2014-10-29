@@ -10,7 +10,9 @@ constructed with.
 @see nsIProxiedProtocolHandler
 
 
-## proxyInfo ##
+## Attributes ##
+
+### proxyInfo ###
 
 Gets the proxy info the channel was constructed with. null or a
 proxyInfo with type "direct" mean no proxy.

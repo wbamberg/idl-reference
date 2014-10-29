@@ -12,18 +12,20 @@ This service will eventually get replaced by extending xpidl to allow errors to 
 (http://bugzilla.mozilla.org/show_bug.cgi?id=13423).
 
 
-## registerErrorStringBundle ##
+## Methods ##
+
+### registerErrorStringBundle ###
 
 Registers a string bundle URL for an error module. Error modules are obtained from
 nsresult code with NS_ERROR_GET_MODULE.
 
 
-## unregisterErrorStringBundle ##
+### unregisterErrorStringBundle ###
 
 Unregisters a string bundle URL for an error module.
 
 
-## getErrorStringBundle ##
+### getErrorStringBundle ###
 
 Retrieves a string bundle URL for an error module.
 

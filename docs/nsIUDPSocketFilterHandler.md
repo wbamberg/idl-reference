@@ -7,4 +7,6 @@ layout: default
 Factory of a specified filter.
 
 
-## newFilter ##
+## Methods ##
+
+### newFilter ###

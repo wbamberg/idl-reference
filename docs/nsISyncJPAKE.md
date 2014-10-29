@@ -4,7 +4,9 @@ layout: default
 
 # nsISyncJPAKE #
 
-## round1 ##
+## Methods ##
+
+### round1 ###
 
 Perform first round of the JPAKE exchange.
 
@@ -26,7 +28,7 @@ Perform first round of the JPAKE exchange.
        Schnorr signature value r2 = v2 - x2 * h, in hex representation.
 
 
-## round2 ##
+### round2 ###
 
 Perform second round of the JPAKE exchange.
 
@@ -57,7 +59,7 @@ Perform second round of the JPAKE exchange.
        Schnorr signature value ra = va - xa * h, in hex representation.
 
 
-## final ##
+### final ###
 
 Perform the final step of the JPAKE exchange. This will compute
 the key and expand the key to two keys, an AES256 encryption key

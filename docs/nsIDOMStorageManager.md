@@ -9,13 +9,15 @@ resp. sessionStorage with "@mozilla.org/dom/localStorage-manager;1" resp.
 "@mozilla.org/dom/sessionStorage-manager;1" contract IDs.
 
 
-## precacheStorage ##
+## Methods ##
+
+### precacheStorage ###
 
 This starts async preloading of a storage cache for scope
 defined by the principal.
 
 
-## createStorage ##
+### createStorage ###
 
 Returns instance of DOM storage object for given principal.
 A new object is always returned and it is ensured there is
@@ -31,7 +33,7 @@ a storage for the scope created.
    Whether the demanding document is running in Private Browsing mode or not.
 
 
-## getStorage ##
+### getStorage ###
 
 Returns instance of DOM storage object for given principal.
 If there is no storage managed for the scope, then null is returned and
@@ -46,7 +48,7 @@ scope is returned.
    Whether the demanding document is running in Private Browsing mode or not.
 
 
-## cloneStorage ##
+### cloneStorage ###
 
 Clones given storage into this storage manager.
 
@@ -57,7 +59,7 @@ Clones given storage into this storage manager.
    not affect the original storage content we cloned from and vice versa.
 
 
-## checkStorage ##
+### checkStorage ###
 
 Returns true if the storage belongs to the given principal and is managed
 (i.e. has been created and is cached) by this storage manager.
@@ -73,7 +75,7 @@ Returns true if the storage belongs to the given principal and is managed
    false otherwise
 
 
-## getLocalStorageForPrincipal ##
+### getLocalStorageForPrincipal ###
 
 @deprecated
 

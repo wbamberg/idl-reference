@@ -4,7 +4,9 @@ layout: default
 
 # nsIUsbTetheringCallback #
 
-## usbTetheringEnabledChange ##
+## Methods ##
+
+### usbTetheringEnabledChange ###
 
 Callback function used to report status of enabling usb tethering.
 

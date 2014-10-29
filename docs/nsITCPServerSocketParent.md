@@ -9,7 +9,9 @@ to talk to the parent IPC actor.
 It is used in the server socket implementation on the parent side.
 
 
-## sendCallbackAccept ##
+## Methods ##
+
+### sendCallbackAccept ###
 
 Trigger a callback in the content process when the socket accepts any request.
 
@@ -17,7 +19,7 @@ Trigger a callback in the content process when the socket accepts any request.
        The socket generated in accepting any open request on the parent side.
 
 
-## sendCallbackError ##
+### sendCallbackError ###
 
 Trigger a callback in the content process when an error occurs.
 

@@ -4,45 +4,47 @@ layout: default
 
 # nsIDOMMozMmsMessage #
 
-## type ##
+## Attributes ##
+
+### type ###
 
 |type| is always "mms".
 
 
-## id ##
+### id ###
 
-## threadId ##
+### threadId ###
 
-## iccId ##
+### iccId ###
 
 Integrated Circuit Card Identifier.
 
 Will be null if ICC is not available.
 
 
-## delivery ##
+### delivery ###
 
 Should be "not-downloaded", "received", "sending", "sent" or "error".
 
 
-## deliveryInfo ##
+### deliveryInfo ###
 
-## sender ##
+### sender ###
 
-## receivers ##
+### receivers ###
 
-## timestamp ##
+### timestamp ###
 
-## sentTimestamp ##
+### sentTimestamp ###
 
-## read ##
+### read ###
 
-## subject ##
+### subject ###
 
-## smil ##
+### smil ###
 
-## attachments ##
+### attachments ###
 
-## expiryDate ##
+### expiryDate ###
 
-## readReportRequested ##
+### readReportRequested ###

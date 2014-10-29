@@ -4,7 +4,9 @@ layout: default
 
 # nsIDownloadManagerResult #
 
-## handleResult ##
+## Methods ##
+
+### handleResult ###
 
 Process an asynchronous result from getDownloadByGUID.
 

@@ -25,7 +25,9 @@ command-line-handler y-final        @mozilla.org/browser/clh-final;1
       without thinking about this!
 
 
-## handle ##
+## Methods ##
+
+### handle ###
 
 Process a command line. If this handler finds arguments that it
 understands, it should perform the appropriate actions (such as opening
@@ -36,7 +38,9 @@ a window), and remove the arguments from the command-line array.
        All other exceptions are silently ignored.
 
 
-## helpInfo ##
+## Attributes ##
+
+### helpInfo ###
 
 When the app is launched with the --help argument, this attribute
 is retrieved and displayed to the user (on stdout). The text should

@@ -7,20 +7,24 @@ layout: default
 imgIEncoder interface
 
 
-## INPUT_FORMAT_RGB ##
+## Methods ##
 
-## INPUT_FORMAT_RGBA ##
+### initFromData ###
 
-## INPUT_FORMAT_HOSTARGB ##
+### startImageEncode ###
 
-## initFromData ##
+### addImageFrame ###
 
-## startImageEncode ##
+### endImageEncode ###
 
-## addImageFrame ##
+### getImageBufferUsed ###
 
-## endImageEncode ##
+### getImageBuffer ###
 
-## getImageBufferUsed ##
+## Constants ##
 
-## getImageBuffer ##
+### INPUT_FORMAT_RGB ###
+
+### INPUT_FORMAT_RGBA ###
+
+### INPUT_FORMAT_HOSTARGB ###

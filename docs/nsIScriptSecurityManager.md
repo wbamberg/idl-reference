@@ -4,7 +4,9 @@ layout: default
 
 # nsIScriptSecurityManager #
 
-## canCreateWrapper ##
+## Methods ##
+
+### canCreateWrapper ###
 
 For each of these hooks returning NS_OK means 'let the action continue'.
 Returning an error code means 'veto the action'. XPConnect will return
@@ -13,11 +15,11 @@ interface is responsible for setting a JS exception into the JSContext
 if that is appropriate.
 
 
-## canCreateInstance ##
+### canCreateInstance ###
 
-## canGetService ##
+### canGetService ###
 
-## checkLoadURIFromScript ##
+### checkLoadURIFromScript ###
 
 Check that the script currently running in context "cx" can load "uri".
 
@@ -28,24 +30,7 @@ should be denied.
 @param uri the URI that is being loaded
 
 
-## STANDARD ##
-
-Default CheckLoadURI permissions
-
-
-## LOAD_IS_AUTOMATIC_DOCUMENT_REPLACEMENT ##
-
-## ALLOW_CHROME ##
-
-## DISALLOW_INHERIT_PRINCIPAL ##
-
-## DISALLOW_SCRIPT_OR_DATA ##
-
-## DISALLOW_SCRIPT ##
-
-## DONT_REPORT_ERRORS ##
-
-## checkLoadURIWithPrincipal ##
+### checkLoadURIWithPrincipal ###
 
 Check that content with principal aPrincipal can load "uri".
 
@@ -57,7 +42,7 @@ should be denied.
 @param flags the permission set, see above
 
 
-## checkLoadURIStrWithPrincipal ##
+### checkLoadURIStrWithPrincipal ###
 
 Similar to checkLoadURIWithPrincipal but there are two differences:
 
@@ -68,24 +53,24 @@ load as well); if any of the versions of this URI is not allowed, this
 function will return error code NS_ERROR_DOM_BAD_URI.
 
 
-## scriptAllowed ##
+### scriptAllowed ###
 
 Return true if scripts may be executed in the scope of the given global.
 
 
-## getSystemPrincipal ##
+### getSystemPrincipal ###
 
 Return the all-powerful system principal.
 
 
-## getSimpleCodebasePrincipal ##
+### getSimpleCodebasePrincipal ###
 
 Return a principal that has the same origin as aURI.
 This principals should not be used for any data/permission check, it will
 have appId = UNKNOWN_APP_ID.
 
 
-## getAppCodebasePrincipal ##
+### getAppCodebasePrincipal ###
 
 Returns a principal that has the given information.
 @param appId is the app id of the principal. It can't be UNKNOWN_APP_ID.
@@ -93,41 +78,41 @@ Returns a principal that has the given information.
 inside a mozbrowser frame.
 
 
-## getLoadContextCodebasePrincipal ##
+### getLoadContextCodebasePrincipal ###
 
 Returns a principal that has the appId and inMozBrowser of the load
 context.
 @param loadContext to get appId/inMozBrowser from.
 
 
-## getDocShellCodebasePrincipal ##
+### getDocShellCodebasePrincipal ###
 
 Returns a principal that has the appId and inMozBrowser of the docshell
 inside a mozbrowser frame.
 @param docShell to get appId/inMozBrowser from.
 
 
-## getNoAppCodebasePrincipal ##
+### getNoAppCodebasePrincipal ###
 
 Returns a principal with that has the same origin as uri and is not part
 of an appliction.
 The returned principal will have appId = NO_APP_ID.
 
 
-## getCodebasePrincipal ##
+### getCodebasePrincipal ###
 
 Legacy name for getNoAppCodebasePrincipal.
 
 @deprecated use getNoAppCodebasePrincipal instead.
 
 
-## checkSameOrigin ##
+### checkSameOrigin ###
 
 Returns OK if aJSContext and target have the same "origin"
 (scheme, host, and port).
 
 
-## checkSameOriginURI ##
+### checkSameOriginURI ###
 
 Returns OK if aSourceURI and target have the same "origin"
 (scheme, host, and port).
@@ -135,33 +120,27 @@ ReportError flag suppresses error reports for functions that
 don't need reporting.
 
 
-## getChannelResultPrincipal ##
+### getChannelResultPrincipal ###
 
 Get the principal for the given channel.  This will typically be the
 channel owner if there is one, and the codebase principal for the
 channel's URI otherwise.  aChannel must not be null.
 
 
-## getChannelURIPrincipal ##
+### getChannelURIPrincipal ###
 
 Get the codebase principal for the channel's URI.
 aChannel must not be null.
 
 
-## isSystemPrincipal ##
+### isSystemPrincipal ###
 
 Check whether a given principal is a system principal.  This allows us
 to avoid handing back the system principal to script while allowing
 script to check whether a given principal is system.
 
 
-## NO_APP_ID ##
-
-## UNKNOWN_APP_ID ##
-
-## SAFEBROWSING_APP_ID ##
-
-## getJarPrefix ##
+### getJarPrefix ###
 
 Returns the jar prefix for the app.
 appId can be NO_APP_ID or a valid app id. appId should not be
@@ -169,7 +148,7 @@ UNKNOWN_APP_ID.
 inMozBrowser has to be true if the app is inside a mozbrowser iframe.
 
 
-## activateDomainPolicy ##
+### activateDomainPolicy ###
 
 Per-domain controls to enable and disable script. This system is designed
 to be used by at most one consumer, and enforces this with its semantics.
@@ -182,9 +161,7 @@ domainPolicyActive becomes false again, and a new consumer may acquire
 control of the system by invoking activateDomainPolicy().
 
 
-## domainPolicyActive ##
-
-## policyAllowsScript ##
+### policyAllowsScript ###
 
 Query mechanism for the above policy.
 
@@ -192,3 +169,32 @@ If domainPolicyEnabled is false, this simply returns the current value
 of javascript.enabled. Otherwise, it returns the same value, but taking
 the various blacklist/whitelist exceptions into account.
 
+
+## Attributes ##
+
+### domainPolicyActive ###
+
+## Constants ##
+
+### STANDARD ###
+
+Default CheckLoadURI permissions
+
+
+### LOAD_IS_AUTOMATIC_DOCUMENT_REPLACEMENT ###
+
+### ALLOW_CHROME ###
+
+### DISALLOW_INHERIT_PRINCIPAL ###
+
+### DISALLOW_SCRIPT_OR_DATA ###
+
+### DISALLOW_SCRIPT ###
+
+### DONT_REPORT_ERRORS ###
+
+### NO_APP_ID ###
+
+### UNKNOWN_APP_ID ###
+
+### SAFEBROWSING_APP_ID ###

@@ -4,4 +4,6 @@ layout: default
 
 # nsIInProcessContentFrameMessageManager #
 
-## getOwnerContent ##
+## Methods ##
+
+### getOwnerContent ###

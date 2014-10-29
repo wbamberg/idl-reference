@@ -4,18 +4,9 @@ layout: default
 
 # mozILivemark #
 
-## STATUS_READY ##
+## Methods ##
 
-## STATUS_LOADING ##
-
-## STATUS_FAILED ##
-
-## status ##
-
-Status of this livemark.  One of the STATUS_* constants above.
-
-
-## reload ##
+### reload ###
 
 Reload livemark contents if they are expired or if forced to do so.
 
@@ -27,7 +18,7 @@ Reload livemark contents if they are expired or if forced to do so.
       registerForUpdates.
 
 
-## getNodesForContainer ##
+### getNodesForContainer ###
 
 Returns an array of nsINavHistoryResultNode objects, representing children
 of this livemark.  The nodes will have aContainerNode as parent.
@@ -37,7 +28,7 @@ of this livemark.  The nodes will have aContainerNode as parent.
        parent of the livemark nodes.
 
 
-## registerForUpdates ##
+### registerForUpdates ###
 
 Registers a container node for updates on this livemark.
 When the livemark contents change, an invalidateContainer(aContainerNode)
@@ -51,7 +42,7 @@ request is sent to aResultObserver.
        to the livemark contents.
 
 
-## unregisterForUpdates ##
+### unregisterForUpdates ###
 
 Unregisters a previously registered container node.
 
@@ -63,3 +54,18 @@ Unregisters a previously registered container node.
       to free up the associated resources.  A good time to do so is when
       the container gets closed.
 
+
+## Attributes ##
+
+### status ###
+
+Status of this livemark.  One of the STATUS_* constants above.
+
+
+## Constants ##
+
+### STATUS_READY ###
+
+### STATUS_LOADING ###
+
+### STATUS_FAILED ###

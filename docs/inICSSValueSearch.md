@@ -4,14 +4,18 @@ layout: default
 
 # inICSSValueSearch #
 
-## document ##
+## Methods ##
 
-## baseURL ##
+### addPropertyCriteria ###
 
-## returnRelativeURLs ##
+## Attributes ##
 
-## normalizeChromeURLs ##
+### document ###
 
-## addPropertyCriteria ##
+### baseURL ###
 
-## textCriteria ##
+### returnRelativeURLs ###
+
+### normalizeChromeURLs ###
+
+### textCriteria ###

@@ -30,12 +30,14 @@ The methods are a subset of those in nsICycleCollectorListener; see the
 descriptions there.
 
 
-## noteRefCountedObject ##
+## Methods ##
 
-## noteGCedObject ##
+### noteRefCountedObject ###
 
-## noteEdge ##
+### noteGCedObject ###
 
-## describeRoot ##
+### noteEdge ###
 
-## describeGarbage ##
+### describeRoot ###
+
+### describeGarbage ###

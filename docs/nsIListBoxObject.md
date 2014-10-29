@@ -4,8 +4,10 @@ layout: default
 
 # nsIListBoxObject #
 
-## getRowCount ##
+## Methods ##
 
-## getItemAtIndex ##
+### getRowCount ###
 
-## getIndexOfItem ##
+### getItemAtIndex ###
+
+### getIndexOfItem ###

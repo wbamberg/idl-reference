@@ -4,7 +4,9 @@ layout: default
 
 # nsIComponentRegistrar #
 
-## autoRegister ##
+## Methods ##
+
+### autoRegister ###
 
 autoRegister
 
@@ -15,7 +17,7 @@ these files. Registration lasts for this run only, and is not cached.
       is no longer supported.
 
 
-## autoUnregister ##
+### autoUnregister ###
 
 autoUnregister
 @status OBSOLETE: This method is no longer implemented, but preserved
@@ -23,7 +25,7 @@ autoUnregister
                   Mozilla 1.9.2.
 
 
-## registerFactory ##
+### registerFactory ###
 
 registerFactory
 
@@ -38,7 +40,7 @@ Register a factory with a given ContractID, CID and Class Name.
                      with a previously registered CID.
 
 
-## unregisterFactory ##
+### unregisterFactory ###
 
 unregisterFactory
 
@@ -51,7 +53,7 @@ Unregister a factory associated with CID aClass.
 @throws NS_ERROR* Method failure.
 
 
-## registerFactoryLocation ##
+### registerFactoryLocation ###
 
 registerFactoryLocation
 @status OBSOLETE: This method is no longer implemented, but preserved
@@ -59,7 +61,7 @@ registerFactoryLocation
                   Mozilla 1.9.2.
 
 
-## unregisterFactoryLocation ##
+### unregisterFactoryLocation ###
 
 unregisterFactoryLocation
 @status OBSOLETE: This method is no longer implemented, but preserved
@@ -67,7 +69,7 @@ unregisterFactoryLocation
                   Mozilla 1.9.2.
 
 
-## isCIDRegistered ##
+### isCIDRegistered ###
 
 isCIDRegistered
 
@@ -78,7 +80,7 @@ Returns true if a factory is registered for the CID.
                 false otherwise.
 
 
-## isContractIDRegistered ##
+### isContractIDRegistered ###
 
 isContractIDRegistered
 
@@ -89,7 +91,7 @@ Returns true if a factory is registered for the contract id.
                 false otherwise.
 
 
-## enumerateCIDs ##
+### enumerateCIDs ###
 
 enumerateCIDs
 
@@ -100,7 +102,7 @@ Enumerate the list of all registered CIDs.
           can obtain the actual CID.
 
 
-## enumerateContractIDs ##
+### enumerateContractIDs ###
 
 enumerateContractIDs
 
@@ -112,7 +114,7 @@ Enumerate the list of all registered ContractIDs.
           Contract ID string.
 
 
-## CIDToContractID ##
+### CIDToContractID ###
 
 CIDToContractID
 @status OBSOLETE: This method is no longer implemented, but preserved
@@ -120,7 +122,7 @@ CIDToContractID
                   Mozilla 1.9.2.
 
 
-## contractIDToCID ##
+### contractIDToCID ###
 
 contractIDToCID
 

@@ -5,4 +5,6 @@ layout: default
 # nsIXPCFunctionThisTranslator #
 ***********************************************************************/
 
-## TranslateThis ##
+## Methods ##
+
+### TranslateThis ###

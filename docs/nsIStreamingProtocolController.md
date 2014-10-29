@@ -7,13 +7,15 @@ layout: default
 Media stream controller API: control and retrieve meta data from media stream.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Preprare the URI before we can start the connection.
 @param aUri The URI of the media stream.
 
 
-## asyncOpen ##
+### asyncOpen ###
 
 Asynchronously open this controller.  Data is fed to the specified
 media stream listener as it becomes available. If asyncOpen returns
@@ -23,23 +25,25 @@ until it has called onStopRequest on aListener.
 @param aListener The nsIStreamingProtocolListener implementation
 
 
-## getTrackMetaData ##
+### getTrackMetaData ###
 
-## play ##
+### play ###
 
-## pause ##
+### pause ###
 
-## resume ##
+### resume ###
 
-## suspend ##
+### suspend ###
 
-## seek ##
+### seek ###
 
-## stop ##
+### stop ###
 
-## playbackEnded ##
+### playbackEnded ###
 
-## totalTracks ##
+## Attributes ##
+
+### totalTracks ###
 
 Total number of audio/video tracks.
 

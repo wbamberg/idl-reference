@@ -4,14 +4,16 @@ layout: default
 
 # nsIGnomeVFSService #
 
-## getMimeTypeFromExtension ##
+## Methods ##
+
+### getMimeTypeFromExtension ###
 MIME registry methods ***/
 
-## getAppForMimeType ##
+### getAppForMimeType ###
 
-## getDescriptionForMimeType ##
+### getDescriptionForMimeType ###
 
-## showURI ##
+### showURI ###
 Misc. methods ***/
 
-## showURIForInput ##
+### showURIForInput ###

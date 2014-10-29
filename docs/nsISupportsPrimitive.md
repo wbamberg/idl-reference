@@ -10,38 +10,42 @@ These first three are pointer types and do data copying
 using the nsIMemory. Be careful!
 
 
-## TYPE_ID ##
+## Attributes ##
 
-## TYPE_CSTRING ##
+### type ###
 
-## TYPE_STRING ##
+## Constants ##
 
-## TYPE_PRBOOL ##
+### TYPE_ID ###
 
-## TYPE_PRUINT8 ##
+### TYPE_CSTRING ###
 
-## TYPE_PRUINT16 ##
+### TYPE_STRING ###
 
-## TYPE_PRUINT32 ##
+### TYPE_PRBOOL ###
 
-## TYPE_PRUINT64 ##
+### TYPE_PRUINT8 ###
 
-## TYPE_PRTIME ##
+### TYPE_PRUINT16 ###
 
-## TYPE_CHAR ##
+### TYPE_PRUINT32 ###
 
-## TYPE_PRINT16 ##
+### TYPE_PRUINT64 ###
 
-## TYPE_PRINT32 ##
+### TYPE_PRTIME ###
 
-## TYPE_PRINT64 ##
+### TYPE_CHAR ###
 
-## TYPE_FLOAT ##
+### TYPE_PRINT16 ###
 
-## TYPE_DOUBLE ##
+### TYPE_PRINT32 ###
 
-## TYPE_VOID ##
+### TYPE_PRINT64 ###
 
-## TYPE_INTERFACE_POINTER ##
+### TYPE_FLOAT ###
 
-## type ##
+### TYPE_DOUBLE ###
+
+### TYPE_VOID ###
+
+### TYPE_INTERFACE_POINTER ###

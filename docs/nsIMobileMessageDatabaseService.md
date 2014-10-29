@@ -4,12 +4,14 @@ layout: default
 
 # nsIMobileMessageDatabaseService #
 
-## getMessage ##
+## Methods ##
 
-## deleteMessage ##
+### getMessage ###
 
-## createMessageCursor ##
+### deleteMessage ###
 
-## markMessageRead ##
+### createMessageCursor ###
 
-## createThreadCursor ##
+### markMessageRead ###
+
+### createThreadCursor ###

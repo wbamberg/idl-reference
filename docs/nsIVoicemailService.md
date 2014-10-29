@@ -8,15 +8,19 @@ XPCOM component (in the content process) that provides the voicemail
 information.
 
 
-## numItems ##
+## Methods ##
 
-## getItemByServiceId ##
+### getItemByServiceId ###
 
-## getDefaultItem ##
+### getDefaultItem ###
 
-## registerListener ##
+### registerListener ###
 
 Called when any one who is interested in receiving unsolicited messages.
 
 
-## unregisterListener ##
+### unregisterListener ###
+
+## Attributes ##
+
+### numItems ###

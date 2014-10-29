@@ -7,12 +7,14 @@ layout: default
 @status UNDER_DEVELOPMENT
 
 
-## columns ##
+## Attributes ##
 
-## view ##
+### columns ###
 
-## body ##
+### view ###
 
-## editable ##
+### body ###
 
-## inputField ##
+### editable ###
+
+### inputField ###

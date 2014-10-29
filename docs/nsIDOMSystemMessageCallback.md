@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMSystemMessageCallback #
 
-## handleMessage ##
+## Methods ##
+
+### handleMessage ###

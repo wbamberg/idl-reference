@@ -4,7 +4,9 @@ layout: default
 
 # nsILocalFileMac #
 
-## initWithCFURL ##
+## Methods ##
+
+### initWithCFURL ###
 
 initWithCFURL
 
@@ -17,7 +19,7 @@ NOTE: If the path of the CFURL is /a/b/c, at least a/b must exist beforehand.
 
 
 
-## initWithFSRef ##
+### initWithFSRef ###
 
 initWithFSRef
 
@@ -29,7 +31,7 @@ NOTE: Supported only for XP_MACOSX
 
 
 
-## getCFURL ##
+### getCFURL ###
 
 getCFURL
 
@@ -47,7 +49,7 @@ NOTE: Supported only for XP_MACOSX
  
 
 
-## getFSRef ##
+### getFSRef ###
 
 getFSRef
 
@@ -64,7 +66,7 @@ NOTE: Supported only for XP_MACOSX
  
 
 
-## getFSSpec ##
+### getFSSpec ###
 
 getFSSpec
 
@@ -79,27 +81,7 @@ the unresolved alias file.
  
 
 
-## fileSizeWithResFork ##
-
-fileSizeWithResFork
-
-Returns the combined size of both the data fork and the resource
-fork (if present) rather than just the size of the data fork
-as returned by GetFileSize()
-
-
-
-## fileType ##
-
-fileType, creator
-
-File type and creator attributes
-
-
-
-## fileCreator ##
-
-## launchWithDoc ##
+### launchWithDoc ###
 
 launchWithDoc
 
@@ -110,7 +92,7 @@ Launch the application that this file points to with a document.
 
 
 
-## openDocWithApp ##
+### openDocWithApp ###
 
 openDocWithApp
 
@@ -123,7 +105,7 @@ Open the document that this file points to with the given application.
 
 
 
-## isPackage ##
+### isPackage ###
 
 isPackage
 
@@ -131,7 +113,29 @@ returns true if a directory is determined to be a package under Mac OS 9/X
 
 
 
-## bundleDisplayName ##
+## Attributes ##
+
+### fileSizeWithResFork ###
+
+fileSizeWithResFork
+
+Returns the combined size of both the data fork and the resource
+fork (if present) rather than just the size of the data fork
+as returned by GetFileSize()
+
+
+
+### fileType ###
+
+fileType, creator
+
+File type and creator attributes
+
+
+
+### fileCreator ###
+
+### bundleDisplayName ###
 
 bundleDisplayName
 
@@ -139,14 +143,14 @@ returns the display name of the application bundle (usually the human
 readable name of the application)
 
 
-## bundleIdentifier ##
+### bundleIdentifier ###
 
 bundleIdentifier
 
 returns the identifier of the bundle
 
 
-## bundleContentsLastModifiedTime ##
+### bundleContentsLastModifiedTime ###
 
 Last modified time of a bundle's contents (as opposed to its package
 directory).  Our convention is to make the bundle's Info.plist file

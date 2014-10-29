@@ -66,7 +66,9 @@ nsIRDFDataSource or a DOM node, and will always be the same one in between
 calls to initializeForBuilding and done.
 
 
-## getDatasource ##
+## Methods ##
+
+### getDatasource ###
 
 Retrieve the datasource to use for the query processor. The list of
 datasources in a template is specified using the datasources attribute as
@@ -97,7 +99,7 @@ the data is available.
 @returns a datasource object
 
 
-## initializeForBuilding ##
+### initializeForBuilding ###
 
 Initialize for query generation. This will be called before the rules are
 processed and whenever the template is rebuilt. This method must be
@@ -112,7 +114,7 @@ translateRef.
         NS_ERROR_UNEXPECTED if generateResults has already been called.
 
 
-## done ##
+### done ###
 
 Called when the template builder is being destroyed so that the query
 processor can clean up any state. The query processor should remove as
@@ -120,7 +122,7 @@ much state as possible, such as results or references to the builder.
 This method will also be called when the template is going to be rebuilt.
 
 
-## compileQuery ##
+### compileQuery ###
 
 Compile a query from a node. The result of this function will later be
 passed to generateResults for result generation. If null is returned,
@@ -147,7 +149,7 @@ indicate what variable is expected to contain the results.
 @returns a compiled query object
 
 
-## generateResults ##
+### generateResults ###
 
 Generate the results of a query and return them in an enumerator. The
 enumerator must contain nsIXULTemplateResult objects. If there are no
@@ -170,7 +172,7 @@ typically with different values for aRef.
 @throws NS_ERROR_INVALID_ARG if aQuery is invalid
 
 
-## addBinding ##
+### addBinding ###
 
 Add a variable binding for a particular rule. A binding allows an
 additional variable to be set for a result, outside of those defined
@@ -202,7 +204,7 @@ the syntax '+2' to mean add two to the reference.
 @param aExpr expression used to compute the value to assign
 
 
-## translateRef ##
+### translateRef ###
 
 Translate a ref attribute string into a result. This is used as the
 reference point by the template builder when generating the first level
@@ -221,7 +223,7 @@ translate the reference.
 @return the translated ref
 
 
-## compareResults ##
+### compareResults ###
 
 Compare two results to determine their order, used when sorting results.
 This method should return -1 when the left result is less than the right,

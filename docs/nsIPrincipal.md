@@ -4,43 +4,21 @@ layout: default
 
 # nsIPrincipal #
 
-## equals ##
+## Methods ##
+
+### equals ###
 
 Returns whether the other principal is equivalent to this principal.
 Principals are considered equal if they are the same principal, or
 they have the same origin.
 
 
-## equalsConsideringDomain ##
+### equalsConsideringDomain ###
 
 Like equals, but takes document.domain changes into account.
 
 
-## hashValue ##
-
-Returns a hash value for the principal.
-
-
-## URI ##
-
-The codebase URI to which this principal pertains.  This is
-generally the document URI.
-
-
-## domain ##
-
-The domain URI to which this principal pertains.
-This is congruent with HTMLDocument.domain, and may be null.
-Setting this has no effect on the URI.
-
-
-## origin ##
-
-The origin of this principal's codebase URI.
-An origin is defined as: scheme + host + port.
-
-
-## subsumes ##
+### subsumes ###
 
 Returns whether the other principal is equal to or weaker than this
 principal. Principals are equal if they are the same object or they
@@ -56,13 +34,13 @@ privileged, security context) is not equal to any other principal
 anything but itself.
 
 
-## subsumesConsideringDomain ##
+### subsumesConsideringDomain ###
 
 Same as the previous method, subsumes(), but takes document.domain into
 account.
 
 
-## checkMayLoad ##
+### checkMayLoad ###
 
 Checks whether this principal is allowed to load the network resource
 located at the given URI under the same-origin policy. This means that
@@ -90,12 +68,38 @@ NOTE: The 'domain' attribute has no effect on the behaviour of this
 @throws NS_ERROR_DOM_BAD_URI if the load is not allowed.
 
 
-## csp ##
+## Attributes ##
+
+### hashValue ###
+
+Returns a hash value for the principal.
+
+
+### URI ###
+
+The codebase URI to which this principal pertains.  This is
+generally the document URI.
+
+
+### domain ###
+
+The domain URI to which this principal pertains.
+This is congruent with HTMLDocument.domain, and may be null.
+Setting this has no effect on the URI.
+
+
+### origin ###
+
+The origin of this principal's codebase URI.
+An origin is defined as: scheme + host + port.
+
+
+### csp ###
 
 A Content Security Policy associated with this principal.
 
 
-## jarPrefix ##
+### jarPrefix ###
 
 Returns the jar prefix of the principal.
 The jar prefix is a string that can be used to isolate data or
@@ -110,22 +114,14 @@ The jarPrefix is intended to be an opaque identifier. It is currently
 it might be crypto-hashed at some point.
 
 
-## baseDomain ##
+### baseDomain ###
 
 The base domain of the codebase URI to which this principal pertains
 (generally the document URI), handling null principals and
 non-hierarchical schemes correctly.
 
 
-## APP_STATUS_NOT_INSTALLED ##
-
-## APP_STATUS_INSTALLED ##
-
-## APP_STATUS_PRIVILEGED ##
-
-## APP_STATUS_CERTIFIED ##
-
-## appStatus ##
+### appStatus ###
 
 Gets the principal's app status, which indicates whether the principal
 corresponds to "app code", and if it does, how privileged that code is.
@@ -147,7 +143,7 @@ app code?", you must check appStatus; checking appId != NO_APP_ID is not
 sufficient.
 
 
-## appId ##
+### appId ###
 
 Gets the id of the app this principal is inside.  If this principal is
 not inside an app, returns nsIScriptSecurityManager::NO_APP_ID.
@@ -168,21 +164,31 @@ If you're doing a security check based on appId, you must check
 appStatus as well.
 
 
-## isInBrowserElement ##
+### isInBrowserElement ###
 
 Returns true iff the principal is inside a browser element.  (<iframe
 mozbrowser mozapp> does not count as a browser element.)
 
 
-## unknownAppId ##
+### unknownAppId ###
 
 Returns true if this principal has an unknown appId. This shouldn't
 generally be used. We only expose it due to not providing the correct
 appId everywhere where we construct principals.
 
 
-## isNullPrincipal ##
+### isNullPrincipal ###
 
 Returns true iff this principal is a null principal (corresponding to an
 unknown, hence assumed minimally privileged, security context).
 
+
+## Constants ##
+
+### APP_STATUS_NOT_INSTALLED ###
+
+### APP_STATUS_INSTALLED ###
+
+### APP_STATUS_PRIVILEGED ###
+
+### APP_STATUS_CERTIFIED ###

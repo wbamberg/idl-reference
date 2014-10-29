@@ -4,7 +4,9 @@ layout: default
 
 # nsILocalCertService #
 
-## getOrCreateCert ##
+## Methods ##
+
+### getOrCreateCert ###
 
 Get or create a new self-signed X.509 cert to represent this device over a
 secure transport, like TLS.
@@ -17,7 +19,7 @@ with the nickname supplied here, it is removed and a new one is made.
 @param cb       Callback to be notified with the result
 
 
-## removeCert ##
+### removeCert ###
 
 Remove a X.509 cert with the given nickname.
 
@@ -25,7 +27,9 @@ Remove a X.509 cert with the given nickname.
 @param cb       Callback to be notified with the result
 
 
-## loginPromptRequired ##
+## Attributes ##
+
+### loginPromptRequired ###
 
 Whether calling |getOrCreateCert| or |removeCert| will trigger a login
 prompt to be displayed.  Generally this happens if the user has set a

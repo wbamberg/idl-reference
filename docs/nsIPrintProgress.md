@@ -4,16 +4,20 @@ layout: default
 
 # nsIPrintProgress #
 
-## openProgressDialog ##
+## Methods ##
 
-## closeProgressDialog ##
+### openProgressDialog ###
 
-## registerListener ##
+### closeProgressDialog ###
 
-## unregisterListener ##
+### registerListener ###
 
-## doneIniting ##
+### unregisterListener ###
 
-## getPrompter ##
+### doneIniting ###
 
-## processCanceledByUser ##
+### getPrompter ###
+
+## Attributes ##
+
+### processCanceledByUser ###

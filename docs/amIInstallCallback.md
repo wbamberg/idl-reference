@@ -10,7 +10,9 @@ ended.
 NOTE: This is *not* the same as InstallListener.
 
 
-## onInstallEnded ##
+## Methods ##
+
+### onInstallEnded ###
 
 Called when an install completes or fails.
 

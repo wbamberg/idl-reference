@@ -4,50 +4,56 @@ layout: default
 
 # nsIAutoCompleteController #
 
-## STATUS_NONE ##
+## Methods ##
 
-## STATUS_SEARCHING ##
+### startSearch ###
 
-## STATUS_COMPLETE_NO_MATCH ##
+### stopSearch ###
 
-## STATUS_COMPLETE_MATCH ##
+### handleText ###
 
-## input ##
+### handleEnter ###
 
-## searchStatus ##
+### handleEscape ###
 
-## matchCount ##
+### handleStartComposition ###
 
-## startSearch ##
+### handleEndComposition ###
 
-## stopSearch ##
+### handleTab ###
 
-## handleText ##
+### handleKeyNavigation ###
 
-## handleEnter ##
+### handleDelete ###
 
-## handleEscape ##
+### getValueAt ###
 
-## handleStartComposition ##
+### getLabelAt ###
 
-## handleEndComposition ##
+### getCommentAt ###
 
-## handleTab ##
+### getStyleAt ###
 
-## handleKeyNavigation ##
+### getImageAt ###
 
-## handleDelete ##
+### getFinalCompleteValueAt ###
 
-## getValueAt ##
+## Attributes ##
 
-## getLabelAt ##
+### input ###
 
-## getCommentAt ##
+### searchStatus ###
 
-## getStyleAt ##
+### matchCount ###
 
-## getImageAt ##
+### searchString ###
 
-## getFinalCompleteValueAt ##
+## Constants ##
 
-## searchString ##
+### STATUS_NONE ###
+
+### STATUS_SEARCHING ###
+
+### STATUS_COMPLETE_NO_MATCH ###
+
+### STATUS_COMPLETE_MATCH ###

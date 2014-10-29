@@ -4,7 +4,9 @@ layout: default
 
 # nsIStreamLoaderObserver #
 
-## onStreamComplete ##
+## Methods ##
+
+### onStreamComplete ###
 
 Called when the entire stream has been loaded.
 

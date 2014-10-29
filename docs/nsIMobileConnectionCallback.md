@@ -4,32 +4,34 @@ layout: default
 
 # nsIMobileConnectionCallback #
 
-## notifySuccess ##
+## Methods ##
+
+### notifySuccess ###
 
 notify*Success*() will be called, when request is succeed.
 
 
-## notifySuccessWithString ##
+### notifySuccessWithString ###
 
-## notifySuccessWithBoolean ##
+### notifySuccessWithBoolean ###
 
-## notifyGetNetworksSuccess ##
+### notifyGetNetworksSuccess ###
 
-## notifySendCancelMmiSuccess ##
+### notifySendCancelMmiSuccess ###
 
-## notifySendCancelMmiSuccessWithInteger ##
+### notifySendCancelMmiSuccessWithInteger ###
 
-## notifySendCancelMmiSuccessWithStrings ##
+### notifySendCancelMmiSuccessWithStrings ###
 
-## notifySendCancelMmiSuccessWithCallForwardingOptions ##
+### notifySendCancelMmiSuccessWithCallForwardingOptions ###
 
-## notifyGetCallForwardingSuccess ##
+### notifyGetCallForwardingSuccess ###
 
-## notifyGetCallBarringSuccess ##
+### notifyGetCallBarringSuccess ###
 
-## notifyGetClirStatusSuccess ##
+### notifyGetClirStatusSuccess ###
 
-## notifyError ##
+### notifyError ###
 
 notifyError() will be called, when request is failed.
 

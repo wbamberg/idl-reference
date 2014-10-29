@@ -4,4 +4,6 @@ layout: default
 
 # nsIGetUserMediaDevicesSuccessCallback #
 
-## onSuccess ##
+## Methods ##
+
+### onSuccess ###

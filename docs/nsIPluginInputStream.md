@@ -7,9 +7,11 @@ layout: default
 The nsIPluginInputStream interface ...
 
 
-## getLastModified ##
+## Methods ##
+
+### getLastModified ###
 
  Corresponds to NPStream's lastmodified field.)
 
 
-## requestRead ##
+### requestRead ###

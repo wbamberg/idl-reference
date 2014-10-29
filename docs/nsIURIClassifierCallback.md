@@ -7,7 +7,9 @@ layout: default
 Callback function for nsIURIClassifier lookups.
 
 
-## onClassifyComplete ##
+## Methods ##
+
+### onClassifyComplete ###
 
 Called by the URI classifier service when it is done checking a URI.
 

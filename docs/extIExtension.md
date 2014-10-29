@@ -7,43 +7,45 @@ layout: default
 Interface representing an extension
 
 
-## id ##
+## Attributes ##
+
+### id ###
 
 The id of the extension.
 
 
-## name ##
+### name ###
 
 The name of the extension.
 
 
-## enabled ##
+### enabled ###
 
 Check if the extension is currently enabled, or not.
 
 
-## version ##
+### version ###
 
 The version number of the extension.
 
 
-## firstRun ##
+### firstRun ###
 
 Indicates whether this is the extension's first run after install
 
 
-## prefs ##
+### prefs ###
 
 The preferences object for the extension. Defaults to the
 "extensions.<extensionid>." branch.
 
 
-## storage ##
+### storage ###
 
 The storage object for the extension.
 
 
-## events ##
+### events ###
 
 The events object for the extension.
 supports: "uninstall"

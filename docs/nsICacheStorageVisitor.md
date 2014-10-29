@@ -4,14 +4,16 @@ layout: default
 
 # nsICacheStorageVisitor #
 
-## onCacheStorageInfo ##
+## Methods ##
+
+### onCacheStorageInfo ###
 
 
 
-## onCacheEntryInfo ##
+### onCacheEntryInfo ###
 
 
 
-## onCacheEntryVisitCompleted ##
+### onCacheEntryVisitCompleted ###
 
 

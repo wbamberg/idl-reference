@@ -14,41 +14,9 @@ load its items one by one, sending itemCompleted() to any registered
 observers.
 
 
-## status ##
+## Methods ##
 
-Fetch the status of the running update.  This will return a value
-defined in nsIDOMOfflineResourceList.
-
-
-## partial ##
-
-TRUE if the update is being used to add specific resources.
-FALSE if the complete cache update process is happening.
-
-
-## isUpgrade ##
-
-TRUE if this is an upgrade attempt, FALSE if it is a new cache
-attempt.
-
-
-## updateDomain ##
-
-The domain being updated, and the domain that will own any URIs added
-with this update.
-
-
-## manifestURI ##
-
-The manifest for the offline application being updated.
-
-
-## succeeded ##
-
-TRUE if the cache update completed successfully.
-
-
-## init ##
+### init ###
 
 Initialize the update.
 
@@ -58,7 +26,7 @@ Initialize the update.
        The page that is requesting the update.
 
 
-## initPartial ##
+### initPartial ###
 
 Initialize the update for partial processing. 
 
@@ -73,7 +41,7 @@ Initialize the update for partial processing.
        when this information is unknown.
 
 
-## initForUpdateCheck ##
+### initForUpdateCheck ###
 
 Initialize the update to only check whether there is an update
 to the manifest available (if it has actually changed on the server).
@@ -93,7 +61,7 @@ to the manifest available (if it has actually changed on the server).
        update available (the manifest has not changed on the server).
 
 
-## addDynamicURI ##
+### addDynamicURI ###
 
 Add a dynamic URI to the offline cache as part of the update.
 
@@ -101,13 +69,13 @@ Add a dynamic URI to the offline cache as part of the update.
        The URI to add.
 
 
-## schedule ##
+### schedule ###
 
 Add the update to the offline update queue.  An offline-cache-update-added
 event will be sent to the observer service.
 
 
-## addObserver ##
+### addObserver ###
 
 Observe loads that are added to the update.
 
@@ -118,7 +86,7 @@ Observe loads that are added to the update.
        observer, FALSE for a strong reference.
 
 
-## removeObserver ##
+### removeObserver ###
 
 Remove an observer from the update.
 
@@ -126,14 +94,50 @@ Remove an observer from the update.
        the observer to remove.
 
 
-## cancel ##
+### cancel ###
 
 Cancel the update when still in progress. This stops all running resource
 downloads and discards the downloaded cache version. Throws when update
 has already finished and made the new cache version active.
 
 
-## byteProgress ##
+## Attributes ##
+
+### status ###
+
+Fetch the status of the running update.  This will return a value
+defined in nsIDOMOfflineResourceList.
+
+
+### partial ###
+
+TRUE if the update is being used to add specific resources.
+FALSE if the complete cache update process is happening.
+
+
+### isUpgrade ###
+
+TRUE if this is an upgrade attempt, FALSE if it is a new cache
+attempt.
+
+
+### updateDomain ###
+
+The domain being updated, and the domain that will own any URIs added
+with this update.
+
+
+### manifestURI ###
+
+The manifest for the offline application being updated.
+
+
+### succeeded ###
+
+TRUE if the cache update completed successfully.
+
+
+### byteProgress ###
 
 Return the number of bytes downloaded so far
 

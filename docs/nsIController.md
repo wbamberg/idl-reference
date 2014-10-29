@@ -4,10 +4,12 @@ layout: default
 
 # nsIController #
 
-## isCommandEnabled ##
+## Methods ##
 
-## supportsCommand ##
+### isCommandEnabled ###
 
-## doCommand ##
+### supportsCommand ###
 
-## onEvent ##
+### doCommand ###
+
+### onEvent ###

@@ -4,7 +4,9 @@ layout: default
 
 # nsICellBroadcastListener #
 
-## notifyMessageReceived ##
+## Methods ##
+
+### notifyMessageReceived ###
 
 Called when a Cell Broadcast message has been received by the network.
 

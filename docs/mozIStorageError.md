@@ -4,133 +4,137 @@ layout: default
 
 # mozIStorageError #
 
-## ERROR ##
+## Attributes ##
+
+### result ###
+
+Indicates what type of error occurred.
+
+
+### message ###
+
+An error string the gives more details, if available.
+
+
+## Constants ##
+
+### ERROR ###
 
 General SQL error or missing database.
 
 
-## INTERNAL ##
+### INTERNAL ###
 
 Internal logic error.
 
 
-## PERM ##
+### PERM ###
 
 Access permission denied.
 
 
-## ABORT ##
+### ABORT ###
 
 A callback routine requested an abort.
 
 
-## BUSY ##
+### BUSY ###
 
 The database file is locked.
 
 
-## LOCKED ##
+### LOCKED ###
 
 A table in the database is locked.
 
 
-## NOMEM ##
+### NOMEM ###
 
 An allocation failed.
 
 
-## READONLY ##
+### READONLY ###
 
 Attempt to write to a readonly database.
 
 
-## INTERRUPT ##
+### INTERRUPT ###
 
 Operation was terminated by an interrupt.
 
 
-## IOERR ##
+### IOERR ###
 
 Some kind of disk I/O error occurred.
 
 
-## CORRUPT ##
+### CORRUPT ###
 
 The database disk image is malformed.
 
 
-## FULL ##
+### FULL ###
 
 An insertion failed because the database is full.
 
 
-## CANTOPEN ##
+### CANTOPEN ###
 
 Unable to open the database file.
 
 
-## EMPTY ##
+### EMPTY ###
 
 The database is empty.
 
 
-## SCHEMA ##
+### SCHEMA ###
 
 The database scheme changed.
 
 
-## TOOBIG ##
+### TOOBIG ###
 
 A string or blob exceeds the size limit.
 
 
-## CONSTRAINT ##
+### CONSTRAINT ###
 
 Abort due to a constraint violation.
 
 
-## MISMATCH ##
+### MISMATCH ###
 
 Data type mismatch.
 
 
-## MISUSE ##
+### MISUSE ###
 
 Library used incorrectly.
 
 
-## NOLFS ##
+### NOLFS ###
 
 Uses OS features not supported on the host system.
 
 
-## AUTH ##
+### AUTH ###
 
 Authorization denied.
 
 
-## FORMAT ##
+### FORMAT ###
 
 Auxiliary database format error.
 
 
-## RANGE ##
+### RANGE ###
 
 Attempt to bind a parameter using an out-of-range index or nonexistent
 named parameter name.
 
 
-## NOTADB ##
+### NOTADB ###
 
 File opened that is not a database file.
-
-
-## result ##
-
-Indicates what type of error occurred.
-
-
-## message ##
-
-An error string the gives more details, if available.
 

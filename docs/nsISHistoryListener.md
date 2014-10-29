@@ -17,7 +17,9 @@ A session history listener can be registered on a particular nsISHistory
 instance via the nsISHistory::addSHistoryListener() method.
 
 
-## OnHistoryNewEntry ##
+## Methods ##
+
+### OnHistoryNewEntry ###
 
 Called when a new document is added to session history. New documents are
 added to session history by docshell when new pages are loaded in a frame
@@ -26,7 +28,7 @@ or content area, for example via nsIWebNavigation::loadURI()
 @param aNewURI     The URI of the document to be added to session history.
 
 
-## OnHistoryGoBack ##
+### OnHistoryGoBack ###
 
 Called when navigating to a previous session history entry, for example
 due to a nsIWebNavigation::goBack() call.
@@ -35,7 +37,7 @@ due to a nsIWebNavigation::goBack() call.
 @return            Whether the operation can proceed.
 
 
-## OnHistoryGoForward ##
+### OnHistoryGoForward ###
 
 Called when navigating to a next session history entry, for example
 due to a nsIWebNavigation::goForward() call.
@@ -44,7 +46,7 @@ due to a nsIWebNavigation::goForward() call.
 @return              Whether the operation can proceed.
 
 
-## OnHistoryReload ##
+### OnHistoryReload ###
  
 Called when the current document is reloaded, for example due to a
 nsIWebNavigation::reload() call.
@@ -58,7 +60,7 @@ nsIWebNavigation::reload() call.
 @see  nsIWebNavigation
 
 
-## OnHistoryGotoIndex ##
+### OnHistoryGotoIndex ###
 
 Called when navigating to a session history entry by index, for example,
 when nsIWebNavigation::gotoIndex() is called.
@@ -68,7 +70,7 @@ when nsIWebNavigation::gotoIndex() is called.
 @return              Whether the operation can proceed.
 
 
-## OnHistoryPurge ##
+### OnHistoryPurge ###
 
 Called when entries are removed from session history. Entries can be
 removed from session history for various reasons, for example to control
@@ -81,7 +83,7 @@ To purge documents from session history call nsISHistory::PurgeHistory()
 @return              Whether the operation can proceed.
 
 
-## OnHistoryReplaceEntry ##
+### OnHistoryReplaceEntry ###
 
 Called when an entry is replaced in the session history. Entries are
 replaced when navigating away from non-persistent history entries (such as

@@ -4,12 +4,14 @@ layout: default
 
 # nsIXSLTException #
 
-## styleNode ##
+## Attributes ##
+
+### styleNode ###
 
 The node in the stylesheet that triggered the exception.
 
 
-## sourceNode ##
+### sourceNode ###
 
 The context node, may be null
 

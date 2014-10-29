@@ -7,17 +7,19 @@ layout: default
  An nsIFeedGenerator represents the software used to create a feed.
 
 
-## agent ##
+## Attributes ##
+
+### agent ###
 
 The name of the software.
 
 
-## version ##
+### version ###
 
 The version of the software.
 
 
-## uri ##
+### uri ###
 
 A URI associated with the software.
 

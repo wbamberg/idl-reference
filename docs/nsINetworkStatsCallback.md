@@ -4,4 +4,6 @@ layout: default
 
 # nsINetworkStatsCallback #
 
-## networkStatsAvailable ##
+## Methods ##
+
+### networkStatsAvailable ###

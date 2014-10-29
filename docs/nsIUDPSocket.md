@@ -9,7 +9,9 @@ nsIUDPSocket
 An interface to a UDP socket that can accept incoming connections.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 init
 
@@ -28,7 +30,7 @@ This method initializes a UDP socket.
        already in use. Default is true.
 
 
-## initWithAddress ##
+### initWithAddress ###
 
 initWithAddress
 
@@ -42,7 +44,7 @@ local address (and hence a particular local network interface).
        already in use. Default is true.
 
 
-## close ##
+### close ###
 
 close
 
@@ -52,7 +54,7 @@ created from this UDP socket).  This will cause the onStopListening
 event to asynchronously fire with a status of NS_BINDING_ABORTED.
 
 
-## asyncListen ##
+### asyncListen ###
 
 asyncListen
 
@@ -69,17 +71,7 @@ transport (nsISocketTransport).  See below for more details.
        The listener to be notified when client connections are accepted.
 
 
-## localAddr ##
-
-Returns the local address of this UDP socket
-
-
-## port ##
-
-Returns the port of this UDP socket.
-
-
-## getAddress ##
+### getAddress ###
 
 Returns the address to which this UDP socket is bound.  Since a
 UDP socket may be bound to multiple network devices, this address
@@ -90,7 +82,7 @@ this method cannot be used to determine the IP address of the local
 system.  See nsIDNSService::myHostName if this is what you need.
 
 
-## send ##
+### send ###
 
 send
 
@@ -104,7 +96,7 @@ DNS lookup will be triggered.
 @return number of bytes written. (0 or dataLength)
 
 
-## sendWithAddr ##
+### sendWithAddr ###
 
 sendWithAddr
 
@@ -116,7 +108,7 @@ Send out the datagram to specified remote host and port.
 @return number of bytes written. (0 or dataLength)
 
 
-## sendWithAddress ##
+### sendWithAddress ###
 
 sendWithAddress
 
@@ -128,7 +120,7 @@ Send out the datagram to specified remote address and port.
 @return number of bytes written. (0 or dataLength)
 
 
-## sendBinaryStream ##
+### sendBinaryStream ###
 
 sendBinaryStream
 
@@ -139,7 +131,7 @@ Send out the datagram to specified remote address and port.
 @param stream The input stream to be sent. This must be a buffered stream implementation.
 
 
-## sendBinaryStreamWithAddress ##
+### sendBinaryStreamWithAddress ###
 
 sendBinaryStreamWithAddress
 
@@ -149,7 +141,7 @@ Send out the datagram to specified remote address and port.
 @param stream The input stream to be sent. This must be a buffered stream implementation.
 
 
-## joinMulticast ##
+### joinMulticast ###
 
 joinMulticast
 
@@ -164,9 +156,9 @@ receive future datagrams addressed to the group.
        or only the primary interface.
 
 
-## joinMulticastAddr ##
+### joinMulticastAddr ###
 
-## leaveMulticast ##
+### leaveMulticast ###
 
 leaveMulticast
 
@@ -181,9 +173,21 @@ receive future datagrams addressed to the group.
        interfaces or only the primary interface.
 
 
-## leaveMulticastAddr ##
+### leaveMulticastAddr ###
 
-## multicastLoopback ##
+## Attributes ##
+
+### localAddr ###
+
+Returns the local address of this UDP socket
+
+
+### port ###
+
+Returns the port of this UDP socket.
+
+
+### multicastLoopback ###
 
 multicastLoopback
 
@@ -193,7 +197,7 @@ to true.
 Note: This is currently write-only.
 
 
-## multicastInterface ##
+### multicastInterface ###
 
 multicastInterface
 
@@ -201,7 +205,7 @@ The interface that should be used for sending future multicast datagrams.
 Note: This is currently write-only.
 
 
-## multicastInterfaceAddr ##
+### multicastInterfaceAddr ###
 
 multicastInterfaceAddr
 

@@ -4,18 +4,22 @@ layout: default
 
 # nsIBidiKeyboard #
 
-## reset ##
+## Methods ##
+
+### reset ###
 
 Inspects the installed keyboards and resets the bidi keyboard state
 
 
-## isLangRTL ##
+### isLangRTL ###
 
 Determines if the current keyboard language is right-to-left
 @throws NS_ERROR_FAILURE if no right-to-left keyboards are installed
 
 
-## haveBidiKeyboards ##
+## Attributes ##
+
+### haveBidiKeyboards ###
 
 Determines whether the system has at least one keyboard of each direction
 installed.

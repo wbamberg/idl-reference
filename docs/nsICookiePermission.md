@@ -7,28 +7,9 @@ layout: default
 An interface to test for cookie permissions
 
 
-## ACCESS_DEFAULT ##
+## Methods ##
 
-nsCookieAccess values
-
-
-## ACCESS_ALLOW ##
-
-## ACCESS_DENY ##
-
-## ACCESS_SESSION ##
-
-additional values for nsCookieAccess which may not match
-nsIPermissionManager. Keep 3-7 available to allow nsIPermissionManager to
-add values without colliding. ACCESS_SESSION is not directly returned by
-any methods on this interface.
-
-
-## ACCESS_ALLOW_FIRST_PARTY_ONLY ##
-
-## ACCESS_LIMIT_THIRD_PARTY ##
-
-## setAccess ##
+### setAccess ###
 
 setAccess
 
@@ -42,7 +23,7 @@ the same host name).
        the new cookie access for the URI.
 
 
-## canAccess ##
+### canAccess ###
 
 canAccess
 
@@ -59,7 +40,7 @@ access the cookie database, either to set or get cookies.
         ACCESS_ALLOW_FIRST_PARTY_ONLY
 
 
-## canSetCookie ##
+### canSetCookie ###
 
 canSetCookie
 
@@ -87,3 +68,26 @@ downgrade a cookie to session-only if it fails to meet certain criteria.
 
 @return true if the cookie can be set.
 
+
+## Constants ##
+
+### ACCESS_DEFAULT ###
+
+nsCookieAccess values
+
+
+### ACCESS_ALLOW ###
+
+### ACCESS_DENY ###
+
+### ACCESS_SESSION ###
+
+additional values for nsCookieAccess which may not match
+nsIPermissionManager. Keep 3-7 available to allow nsIPermissionManager to
+add values without colliding. ACCESS_SESSION is not directly returned by
+any methods on this interface.
+
+
+### ACCESS_ALLOW_FIRST_PARTY_ONLY ###
+
+### ACCESS_LIMIT_THIRD_PARTY ###

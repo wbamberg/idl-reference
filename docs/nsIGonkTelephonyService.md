@@ -4,20 +4,22 @@ layout: default
 
 # nsIGonkTelephonyService #
 
-## notifyAudioStateChanged ##
+## Methods ##
 
-## notifyCallDisconnected ##
+### notifyAudioStateChanged ###
 
-## notifyCallRing ##
+### notifyCallDisconnected ###
 
-## notifyCallStateChanged ##
+### notifyCallRing ###
 
-## notifyCdmaCallWaiting ##
+### notifyCallStateChanged ###
 
-## notifySupplementaryService ##
+### notifyCdmaCallWaiting ###
 
-## notifyConferenceCallStateChanged ##
+### notifySupplementaryService ###
 
-## notifyUssdReceived ##
+### notifyConferenceCallStateChanged ###
 
-## dialMMI ##
+### notifyUssdReceived ###
+
+### dialMMI ###

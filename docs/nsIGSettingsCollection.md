@@ -4,16 +4,18 @@ layout: default
 
 # nsIGSettingsCollection #
 
-## setString ##
+## Methods ##
 
-## setBoolean ##
+### setString ###
 
-## setInt ##
+### setBoolean ###
 
-## getString ##
+### setInt ###
 
-## getBoolean ##
+### getString ###
 
-## getInt ##
+### getBoolean ###
 
-## getStringList ##
+### getInt ###
+
+### getStringList ###

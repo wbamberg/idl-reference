@@ -10,7 +10,9 @@ dialog when add-ons are ready to install and uses the observer service to
 notify when installations are blocked.
 
 
-## onWebInstallDisabled ##
+## Methods ##
+
+### onWebInstallDisabled ###
 
 Called when installation by websites is currently disabled.
 
@@ -24,7 +26,7 @@ Called when installation by websites is currently disabled.
         The number of AddonInstalls
 
 
-## onWebInstallBlocked ##
+### onWebInstallBlocked ###
 
 Called when the website is not allowed to directly prompt the user to
 install add-ons.
@@ -40,7 +42,7 @@ install add-ons.
 @return true if the caller should start the installs
 
 
-## onWebInstallRequested ##
+### onWebInstallRequested ###
 
 Called when a website wants to ask the user to install add-ons.
 

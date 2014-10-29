@@ -4,8 +4,10 @@ layout: default
 
 # nsIPaymentUIGlue #
 
-## confirmPaymentRequest ##
+## Methods ##
 
-## showPaymentFlow ##
+### confirmPaymentRequest ###
 
-## cleanup ##
+### showPaymentFlow ###
+
+### cleanup ###

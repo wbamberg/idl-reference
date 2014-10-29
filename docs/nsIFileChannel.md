@@ -7,4 +7,6 @@ layout: default
 nsIFileChannel
 
 
-## file ##
+## Attributes ##
+
+### file ###

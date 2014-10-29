@@ -4,18 +4,22 @@ layout: default
 
 # nsIPKCS11ModuleDB #
 
-## getInternal ##
+## Methods ##
 
-## getInternalFIPS ##
+### getInternal ###
 
-## findModuleByName ##
+### getInternalFIPS ###
 
-## findSlotByName ##
+### findModuleByName ###
 
-## listModules ##
+### findSlotByName ###
 
-## canToggleFIPS ##
+### listModules ###
 
-## toggleFIPSMode ##
+### toggleFIPSMode ###
 
-## isFIPSEnabled ##
+## Attributes ##
+
+### canToggleFIPS ###
+
+### isFIPSEnabled ###

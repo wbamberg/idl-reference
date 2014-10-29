@@ -7,8 +7,12 @@ layout: default
 This interface lets you evict a document from the back/forward cache.
 
 
-## RemoveFromBFCacheSync ##
+## Methods ##
 
-## RemoveFromBFCacheAsync ##
+### RemoveFromBFCacheSync ###
 
-## ID ##
+### RemoveFromBFCacheAsync ###
+
+## Attributes ##
+
+### ID ###

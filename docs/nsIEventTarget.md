@@ -4,7 +4,9 @@ layout: default
 
 # nsIEventTarget #
 
-## dispatch ##
+## Methods ##
+
+### dispatch ###
 
 Dispatch an event to this event target.  This function may be called from
 any thread, and it may be called re-entrantly.
@@ -22,24 +24,7 @@ any thread, and it may be called re-entrantly.
 events, so this event would never run and has not been dispatched. 
 
 
-## DISPATCH_NORMAL ##
-
-This flag specifies the default mode of event dispatch, whereby the event
-is simply queued for later processing.  When this flag is specified,
-dispatch returns immediately after the event is queued.
-
-
-## DISPATCH_SYNC ##
-
-This flag specifies the synchronous mode of event dispatch, in which the
-dispatch method does not return until the event has been processed.
-
-NOTE: passing this flag to dispatch may have the side-effect of causing
-other events on the current thread to be processed while waiting for the
-given event to be processed.
-
-
-## isOnCurrentThread ##
+### isOnCurrentThread ###
 
 Check to see if this event target is associated with the current thread.
 
@@ -47,4 +32,23 @@ Check to see if this event target is associated with the current thread.
   A boolean value that if "true" indicates that events dispatched to this
   event target will run on the current thread (i.e., the thread calling
   this method).
+
+
+## Constants ##
+
+### DISPATCH_NORMAL ###
+
+This flag specifies the default mode of event dispatch, whereby the event
+is simply queued for later processing.  When this flag is specified,
+dispatch returns immediately after the event is queued.
+
+
+### DISPATCH_SYNC ###
+
+This flag specifies the synchronous mode of event dispatch, in which the
+dispatch method does not return until the event has been processed.
+
+NOTE: passing this flag to dispatch may have the side-effect of causing
+other events on the current thread to be processed while waiting for the
+given event to be processed.
 

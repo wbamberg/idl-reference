@@ -4,19 +4,9 @@ layout: default
 
 # nsIBlocklistService #
 
-## STATE_NOT_BLOCKED ##
+## Methods ##
 
-## STATE_SOFTBLOCKED ##
-
-## STATE_BLOCKED ##
-
-## STATE_OUTDATED ##
-
-## STATE_VULNERABLE_UPDATE_AVAILABLE ##
-
-## STATE_VULNERABLE_NO_UPDATE ##
-
-## isAddonBlocklisted ##
+### isAddonBlocklisted ###
 
 Determine if an item is blocklisted
 @param   addon
@@ -33,7 +23,7 @@ Determine if an item is blocklisted
          application or this version of the toolkit, false, otherwise.
 
 
-## getAddonBlocklistState ##
+### getAddonBlocklistState ###
 
 Determine the blocklist state of an add-on
 @param   id
@@ -49,7 +39,7 @@ Determine the blocklist state of an add-on
 @returns The STATE constant.
 
 
-## getPluginBlocklistState ##
+### getPluginBlocklistState ###
 
 Determine the blocklist state of a plugin
 @param   plugin
@@ -65,7 +55,7 @@ Determine the blocklist state of a plugin
 @returns The STATE constant.
 
 
-## getAddonBlocklistURL ##
+### getAddonBlocklistURL ###
 
 Determine the blocklist web page of an add-on.
 @param   addon
@@ -73,7 +63,7 @@ Determine the blocklist web page of an add-on.
 @returns The URL of the description page.
 
 
-## getPluginBlocklistURL ##
+### getPluginBlocklistURL ###
 
 Determine the blocklist web page of a plugin.
 @param   plugin
@@ -81,7 +71,7 @@ Determine the blocklist web page of a plugin.
 @returns The URL of the description page.
 
 
-## getPluginInfoURL ##
+### getPluginInfoURL ###
 
 Determine the blocklist infoURL of a plugin.
 @param   plugin
@@ -89,3 +79,17 @@ Determine the blocklist infoURL of a plugin.
 @returns The preferred URL to present the user, or |null| if
          it is not available.
 
+
+## Constants ##
+
+### STATE_NOT_BLOCKED ###
+
+### STATE_SOFTBLOCKED ###
+
+### STATE_BLOCKED ###
+
+### STATE_OUTDATED ###
+
+### STATE_VULNERABLE_UPDATE_AVAILABLE ###
+
+### STATE_VULNERABLE_NO_UPDATE ###

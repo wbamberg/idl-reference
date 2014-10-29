@@ -8,47 +8,9 @@ nsIProtocolProxyService provides methods to access information about
 various network proxies.
 
 
-## RESOLVE_PREFER_SOCKS_PROXY ##
- Flag 1 << 0 is unused **/
+## Methods ##
 
-When the proxy configuration is manual this flag may be passed to the
-resolve and asyncResolve methods to request to prefer the SOCKS proxy
-to HTTP ones.
-
-
-## RESOLVE_IGNORE_URI_SCHEME ##
-
-When the proxy configuration is manual this flag may be passed to the
-resolve and asyncResolve methods to request to not analyze the uri's
-scheme specific proxy. When this flag is set the main HTTP proxy is the
-preferred one.
-
-NOTE: if RESOLVE_PREFER_SOCKS_PROXY is set then the SOCKS proxy is
-      the preferred one.
-
-NOTE: if RESOLVE_PREFER_HTTPS_PROXY is set then the HTTPS proxy
-      is the preferred one.
-
-
-## RESOLVE_PREFER_HTTPS_PROXY ##
-
-When the proxy configuration is manual this flag may be passed to the
-resolve and asyncResolve methods to request to prefer the HTTPS proxy
-to the others HTTP ones.
-
-NOTE: RESOLVE_PREFER_SOCKS_PROXY takes precedence over this flag.
-
-NOTE: This flag implies RESOLVE_IGNORE_URI_SCHEME.
-
-
-## RESOLVE_ALWAYS_TUNNEL ##
-
-When the proxy configuration is manual this flag may be passed to the
-resolve and asyncResolve methods to that all methods will be tunneled via
-CONNECT through the http proxy.
-
-
-## asyncResolve ##
+### asyncResolve ###
 
 This method returns via callback a nsIProxyInfo instance that identifies
 a proxy to be used for loading the given URI.  Otherwise, this method returns
@@ -82,7 +44,7 @@ also supports nsIProxiedProtocolHandler.
 @see nsIProxiedProtocolHandler::newProxiedChannel 
 
 
-## newProxyInfo ##
+### newProxyInfo ###
 
 This method may be called to construct a nsIProxyInfo instance from
 the given parameters.  This method may be useful in conjunction with
@@ -117,7 +79,7 @@ a SOCKS connection.
        parameter may be null.
 
 
-## getFailoverForProxy ##
+### getFailoverForProxy ###
 
 If the proxy identified by aProxyInfo is unavailable for some reason,
 this method may be called to access an alternate proxy that may be used
@@ -135,7 +97,7 @@ from resolve/asyncResolve as well as from getFailoverForProxy.
 @throw NS_ERROR_NOT_AVAILABLE if there is no alternate proxy available.
 
 
-## registerFilter ##
+### registerFilter ###
 
 This method may be used to register a proxy filter instance.  Each proxy
 filter is registered with an associated position that determines the
@@ -170,7 +132,7 @@ this method make their position value configurable at runtime (perhaps
 via the preferences service).
 
 
-## unregisterFilter ##
+### unregisterFilter ###
 
 This method may be used to unregister a proxy filter instance.  All
 filters will be automatically unregistered at XPCOM shutdown.
@@ -179,21 +141,65 @@ filters will be automatically unregistered at XPCOM shutdown.
        The nsIProtocolProxyFilter instance to be unregistered.
 
 
-## PROXYCONFIG_DIRECT ##
+## Attributes ##
+
+### proxyConfigType ###
+
+This attribute specifies the current type of proxy configuration.
+
+
+## Constants ##
+
+### RESOLVE_PREFER_SOCKS_PROXY ###
+ Flag 1 << 0 is unused **/
+
+When the proxy configuration is manual this flag may be passed to the
+resolve and asyncResolve methods to request to prefer the SOCKS proxy
+to HTTP ones.
+
+
+### RESOLVE_IGNORE_URI_SCHEME ###
+
+When the proxy configuration is manual this flag may be passed to the
+resolve and asyncResolve methods to request to not analyze the uri's
+scheme specific proxy. When this flag is set the main HTTP proxy is the
+preferred one.
+
+NOTE: if RESOLVE_PREFER_SOCKS_PROXY is set then the SOCKS proxy is
+      the preferred one.
+
+NOTE: if RESOLVE_PREFER_HTTPS_PROXY is set then the HTTPS proxy
+      is the preferred one.
+
+
+### RESOLVE_PREFER_HTTPS_PROXY ###
+
+When the proxy configuration is manual this flag may be passed to the
+resolve and asyncResolve methods to request to prefer the HTTPS proxy
+to the others HTTP ones.
+
+NOTE: RESOLVE_PREFER_SOCKS_PROXY takes precedence over this flag.
+
+NOTE: This flag implies RESOLVE_IGNORE_URI_SCHEME.
+
+
+### RESOLVE_ALWAYS_TUNNEL ###
+
+When the proxy configuration is manual this flag may be passed to the
+resolve and asyncResolve methods to that all methods will be tunneled via
+CONNECT through the http proxy.
+
+
+### PROXYCONFIG_DIRECT ###
 
 These values correspond to the possible integer values for the
 network.proxy.type preference.
 
 
-## PROXYCONFIG_MANUAL ##
+### PROXYCONFIG_MANUAL ###
 
-## PROXYCONFIG_PAC ##
+### PROXYCONFIG_PAC ###
 
-## PROXYCONFIG_WPAD ##
+### PROXYCONFIG_WPAD ###
 
-## PROXYCONFIG_SYSTEM ##
-
-## proxyConfigType ##
-
-This attribute specifies the current type of proxy configuration.
-
+### PROXYCONFIG_SYSTEM ###

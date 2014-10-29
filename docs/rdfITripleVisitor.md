@@ -11,7 +11,9 @@ aObject and aTruthValue are ignored.
 @status PLASMA
 
 
-## visit ##
+## Methods ##
+
+### visit ###
 
 Callback function for returning query results.
 

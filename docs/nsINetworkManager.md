@@ -7,7 +7,9 @@ layout: default
 Manage network interfaces.
 
 
-## registerNetworkInterface ##
+## Methods ##
+
+### registerNetworkInterface ###
 
 Register the given network interface with the network manager.
 
@@ -20,7 +22,7 @@ Throws if there's already an interface registered with the same network id.
        Network interface to register.
 
 
-## updateNetworkInterface ##
+### updateNetworkInterface ###
 
 Update the routes and DNSes according the state of the given network.
 
@@ -34,7 +36,7 @@ registered.
        Network interface to update.
 
 
-## unregisterNetworkInterface ##
+### unregisterNetworkInterface ###
 
 Unregister the given network interface from the network manager.
 
@@ -48,33 +50,7 @@ registered.
        Network interface to unregister.
 
 
-## networkInterfaces ##
-
-Object containing all known network connections, keyed by their
-network id. Network id is composed of a sub-id + '-' + network
-type. For mobile network types, sub-id is 'ril' + service id; for
-non-mobile network types, sub-id is always 'device'.
-
-
-## preferredNetworkType ##
-
-The preferred network type. One of the
-nsINetworkInterface::NETWORK_TYPE_* constants.
-
-This attribute is used for setting default route to favor
-interfaces with given type.  This can be overriden by calling
-overrideDefaultRoute().
-
-
-## active ##
-
-The network interface handling all data traffic.
-
-When this changes, the 'network-active-changed' observer
-notification is dispatched.
-
-
-## overrideActive ##
+### overrideActive ###
 
 Override the default behaviour for preferredNetworkType and route
 all network traffic through the the specified interface.
@@ -87,7 +63,7 @@ the 'network-active-changed' observer notification.
        a previous override is canceled.
 
 
-## setWifiTethering ##
+### setWifiTethering ###
 
 Enable or disable Wifi Tethering
 
@@ -101,7 +77,7 @@ Enable or disable Wifi Tethering
        Callback function used to report status to WifiManager.
 
 
-## addHostRoute ##
+### addHostRoute ###
 
 Add host route to the specified network into routing table.
 
@@ -115,7 +91,7 @@ Add host route to the specified network into routing table.
         resolved if added; rejected, otherwise.
 
 
-## removeHostRoute ##
+### removeHostRoute ###
 
 Remove host route to the specified network from routing table.
 
@@ -127,4 +103,32 @@ Remove host route to the specified network from routing table.
 
 @return a Promise
         resolved if removed; rejected, otherwise.
+
+
+## Attributes ##
+
+### networkInterfaces ###
+
+Object containing all known network connections, keyed by their
+network id. Network id is composed of a sub-id + '-' + network
+type. For mobile network types, sub-id is 'ril' + service id; for
+non-mobile network types, sub-id is always 'device'.
+
+
+### preferredNetworkType ###
+
+The preferred network type. One of the
+nsINetworkInterface::NETWORK_TYPE_* constants.
+
+This attribute is used for setting default route to favor
+interfaces with given type.  This can be overriden by calling
+overrideDefaultRoute().
+
+
+### active ###
+
+The network interface handling all data traffic.
+
+When this changes, the 'network-active-changed' observer
+notification is dispatched.
 

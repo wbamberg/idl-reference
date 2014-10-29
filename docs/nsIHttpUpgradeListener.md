@@ -7,4 +7,6 @@ layout: default
 The callback interface for nsIHttpChannelInternal::HTTPUpgrade()
 
 
-## onTransportAvailable ##
+## Methods ##
+
+### onTransportAvailable ###

@@ -4,24 +4,28 @@ layout: default
 
 # nsIUDPSocketChild #
 
-## localPort ##
+## Methods ##
 
-## localAddress ##
+### bind ###
 
-## filterName ##
+### send ###
 
-## bind ##
+### sendWithAddr ###
 
-## send ##
+### sendWithAddress ###
 
-## sendWithAddr ##
+### sendBinaryStream ###
 
-## sendWithAddress ##
+### close ###
 
-## sendBinaryStream ##
+### joinMulticast ###
 
-## close ##
+### leaveMulticast ###
 
-## joinMulticast ##
+## Attributes ##
 
-## leaveMulticast ##
+### localPort ###
+
+### localAddress ###
+
+### filterName ###

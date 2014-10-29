@@ -14,44 +14,46 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## alt ##
+## Attributes ##
 
-## src ##
+### alt ###
 
-## srcset ##
+### src ###
 
-## sizes ##
+### srcset ###
 
-## useMap ##
+### sizes ###
 
-## isMap ##
+### useMap ###
 
-## width ##
+### isMap ###
 
-## height ##
+### width ###
 
-## naturalWidth ##
+### height ###
 
-## naturalHeight ##
+### naturalWidth ###
 
-## complete ##
+### naturalHeight ###
 
-## name ##
+### complete ###
 
-## align ##
+### name ###
 
-## border ##
+### align ###
 
-## hspace ##
+### border ###
 
-## longDesc ##
+### hspace ###
 
-## vspace ##
+### longDesc ###
 
-## lowsrc ##
+### vspace ###
 
-## currentSrc ##
+### lowsrc ###
 
-## x ##
+### currentSrc ###
 
-## y ##
+### x ###
+
+### y ###

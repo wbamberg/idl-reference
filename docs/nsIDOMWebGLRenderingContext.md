@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMWebGLRenderingContext #
 
-## mozGetUnderlyingParamString ##
+## Methods ##
+
+### mozGetUnderlyingParamString ###

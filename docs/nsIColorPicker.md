@@ -4,7 +4,9 @@ layout: default
 
 # nsIColorPicker #
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize the color picker widget. The color picker will not be shown until
 open() is called.
@@ -23,7 +25,7 @@ also assert.
                          of this file.
 
 
-## open ##
+### open ###
 
 Opens the color dialog asynchrounously.
 The results are provided via the callback object.

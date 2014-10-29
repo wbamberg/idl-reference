@@ -9,48 +9,52 @@ can be performed on it.  This is not to be a complete windowing interface
 but rather a common set that nearly all windowed objects support.    
 
 
-## initWindow ##
+## Methods ##
 
-## create ##
+### initWindow ###
 
-## destroy ##
+### create ###
 
-## setPosition ##
+### destroy ###
 
-## getPosition ##
+### setPosition ###
 
-## setSize ##
+### getPosition ###
 
-## getSize ##
+### setSize ###
 
-## setPositionAndSize ##
+### getSize ###
 
-## getPositionAndSize ##
+### setPositionAndSize ###
 
-## repaint ##
+### getPositionAndSize ###
+
+### repaint ###
  
 Tell the window to repaint itself
 @param aForce - if true, repaint immediately
                 if false, the window may defer repainting as it sees fit.
 
 
-## parentWidget ##
-
-## parentNativeWindow ##
-
-## nativeHandle ##
-
-## visibility ##
-
-## enabled ##
-
-## mainWidget ##
-
-## unscaledDevicePixelsPerCSSPixel ##
-
-## setFocus ##
+### setFocus ###
 
 Give the window focus.
 
 
-## title ##
+## Attributes ##
+
+### parentWidget ###
+
+### parentNativeWindow ###
+
+### nativeHandle ###
+
+### visibility ###
+
+### enabled ###
+
+### mainWidget ###
+
+### unscaledDevicePixelsPerCSSPixel ###
+
+### title ###

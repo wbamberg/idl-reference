@@ -4,24 +4,26 @@ layout: default
 
 # nsIDOMCSSCounterStyleRule #
 
-## name ##
+## Attributes ##
 
-## system ##
+### name ###
 
-## symbols ##
+### system ###
 
-## additiveSymbols ##
+### symbols ###
 
-## negative ##
+### additiveSymbols ###
 
-## prefix ##
+### negative ###
 
-## suffix ##
+### prefix ###
 
-## range ##
+### suffix ###
 
-## pad ##
+### range ###
 
-## speakAs ##
+### pad ###
 
-## fallback ##
+### speakAs ###
+
+### fallback ###

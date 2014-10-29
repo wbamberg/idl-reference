@@ -11,20 +11,24 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Style
 
 
-## cssText ##
+## Methods ##
 
-## getPropertyValue ##
+### getPropertyValue ###
 
-## getPropertyCSSValue ##
+### getPropertyCSSValue ###
 
-## removeProperty ##
+### removeProperty ###
 
-## getPropertyPriority ##
+### getPropertyPriority ###
 
-## setProperty ##
+### setProperty ###
 
-## length ##
+### item ###
 
-## item ##
+## Attributes ##
 
-## parentRule ##
+### cssText ###
+
+### length ###
+
+### parentRule ###

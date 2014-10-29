@@ -8,38 +8,42 @@ A series of hooks into non-IDL-ized layout code to allow all the
 layout debugging functions to be used from chrome.
 
 
-## init ##
+## Methods ##
 
-## newURILoaded ##
+### init ###
 
-## visualDebugging ##
+### newURILoaded ###
 
-## visualEventDebugging ##
+### dumpWebShells ###
 
-## paintFlashing ##
+### dumpContent ###
 
-## paintDumping ##
+### dumpFrames ###
 
-## invalidateDumping ##
+### dumpViews ###
 
-## eventDumping ##
+### dumpStyleSheets ###
 
-## motionEventDumping ##
+### dumpStyleContexts ###
 
-## crossingEventDumping ##
+### dumpReflowStats ###
 
-## reflowCounts ##
+## Attributes ##
 
-## dumpWebShells ##
+### visualDebugging ###
 
-## dumpContent ##
+### visualEventDebugging ###
 
-## dumpFrames ##
+### paintFlashing ###
 
-## dumpViews ##
+### paintDumping ###
 
-## dumpStyleSheets ##
+### invalidateDumping ###
 
-## dumpStyleContexts ##
+### eventDumping ###
 
-## dumpReflowStats ##
+### motionEventDumping ###
+
+### crossingEventDumping ###
+
+### reflowCounts ###

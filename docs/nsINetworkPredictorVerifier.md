@@ -4,14 +4,16 @@ layout: default
 
 # nsINetworkPredictorVerifier #
 
-## onPredictPreconnect ##
+## Methods ##
+
+### onPredictPreconnect ###
 
 Callback for when we do a predictive preconnect
 
 @param uri - The URI that was preconnected to
 
 
-## onPredictDNS ##
+### onPredictDNS ###
 
 Callback for when we do a predictive DNS lookup
 

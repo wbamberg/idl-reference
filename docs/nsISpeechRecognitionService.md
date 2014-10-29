@@ -4,12 +4,14 @@ layout: default
 
 # nsISpeechRecognitionService #
 
-## initialize ##
+## Methods ##
 
-## processAudioSegment ##
+### initialize ###
 
-## validateAndSetGrammarList ##
+### processAudioSegment ###
 
-## soundEnd ##
+### validateAndSetGrammarList ###
 
-## abort ##
+### soundEnd ###
+
+### abort ###

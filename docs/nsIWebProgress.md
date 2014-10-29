@@ -21,7 +21,69 @@ notifications from any nsIWebProgress instances that are children of that
 nsIWebProgress instance.
 
 
-## NOTIFY_STATE_REQUEST ##
+## Methods ##
+
+### addProgressListener ###
+
+Registers a listener to receive web progress events.
+
+@param aListener
+       The listener interface to be called when a progress event occurs.
+       This object must also implement nsISupportsWeakReference.
+@param aNotifyMask
+       The types of notifications to receive.
+
+@throw NS_ERROR_INVALID_ARG
+       Indicates that aListener was either null or that it does not
+       support weak references.
+@throw NS_ERROR_FAILURE
+       Indicates that aListener was already registered.
+
+
+### removeProgressListener ###
+
+Removes a previously registered listener of progress events.
+
+@param aListener
+       The listener interface previously registered with a call to
+       addProgressListener.
+
+@throw NS_ERROR_FAILURE
+       Indicates that aListener was not registered.
+
+
+## Attributes ##
+
+### DOMWindow ###
+
+The DOM window associated with this nsIWebProgress instance.
+
+@throw NS_ERROR_FAILURE
+       Indicates that there is no associated DOM window.
+
+
+### DOMWindowID ###
+
+### isTopLevel ###
+
+Indicates whether DOMWindow.top == DOMWindow.
+
+
+### isLoadingDocument ###
+
+Indicates whether or not a document is currently being loaded
+in the context of this nsIWebProgress instance.
+
+
+### loadType ###
+
+Contains a load type as specified by the load* constants in
+nsIDocShellLoadInfo.idl.
+
+
+## Constants ##
+
+### NOTIFY_STATE_REQUEST ###
 
 The following flags may be combined to form the aNotifyMask parameter for
 the addProgressListener method.  They limit the set of events that are
@@ -51,15 +113,15 @@ NOTIFY_STATE_ALL
   Receive all onStateChange events.
 
 
-## NOTIFY_STATE_DOCUMENT ##
+### NOTIFY_STATE_DOCUMENT ###
 
-## NOTIFY_STATE_NETWORK ##
+### NOTIFY_STATE_NETWORK ###
 
-## NOTIFY_STATE_WINDOW ##
+### NOTIFY_STATE_WINDOW ###
 
-## NOTIFY_STATE_ALL ##
+### NOTIFY_STATE_ALL ###
 
-## NOTIFY_PROGRESS ##
+### NOTIFY_PROGRESS ###
 
 These flags indicate the other events to observe, corresponding to the
 other four methods defined on nsIWebProgressListener.
@@ -81,71 +143,15 @@ NOTIFY_REFRESH
   This is defined on nsIWebProgressListener2.
 
 
-## NOTIFY_STATUS ##
+### NOTIFY_STATUS ###
 
-## NOTIFY_SECURITY ##
+### NOTIFY_SECURITY ###
 
-## NOTIFY_LOCATION ##
+### NOTIFY_LOCATION ###
 
-## NOTIFY_REFRESH ##
+### NOTIFY_REFRESH ###
 
-## NOTIFY_ALL ##
+### NOTIFY_ALL ###
 
 This flag enables all notifications.
-
-
-## addProgressListener ##
-
-Registers a listener to receive web progress events.
-
-@param aListener
-       The listener interface to be called when a progress event occurs.
-       This object must also implement nsISupportsWeakReference.
-@param aNotifyMask
-       The types of notifications to receive.
-
-@throw NS_ERROR_INVALID_ARG
-       Indicates that aListener was either null or that it does not
-       support weak references.
-@throw NS_ERROR_FAILURE
-       Indicates that aListener was already registered.
-
-
-## removeProgressListener ##
-
-Removes a previously registered listener of progress events.
-
-@param aListener
-       The listener interface previously registered with a call to
-       addProgressListener.
-
-@throw NS_ERROR_FAILURE
-       Indicates that aListener was not registered.
-
-
-## DOMWindow ##
-
-The DOM window associated with this nsIWebProgress instance.
-
-@throw NS_ERROR_FAILURE
-       Indicates that there is no associated DOM window.
-
-
-## DOMWindowID ##
-
-## isTopLevel ##
-
-Indicates whether DOMWindow.top == DOMWindow.
-
-
-## isLoadingDocument ##
-
-Indicates whether or not a document is currently being loaded
-in the context of this nsIWebProgress instance.
-
-
-## loadType ##
-
-Contains a load type as specified by the load* constants in
-nsIDocShellLoadInfo.idl.
 

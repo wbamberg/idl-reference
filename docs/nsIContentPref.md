@@ -4,8 +4,10 @@ layout: default
 
 # nsIContentPref #
 
-## domain ##
+## Attributes ##
 
-## name ##
+### domain ###
 
-## value ##
+### name ###
+
+### value ###

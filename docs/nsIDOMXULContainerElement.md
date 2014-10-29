@@ -4,7 +4,9 @@ layout: default
 
 # nsIDOMXULContainerElement #
 
-## appendItem ##
+## Methods ##
+
+### appendItem ###
 
 Creates an item for the given label and value and appends it to the
 container.
@@ -13,7 +15,7 @@ container.
 @param aValue - the value of the new item
 
 
-## insertItemAt ##
+### insertItemAt ###
 
 Creates an item for the given label and value and inserts it into the
 container at the specified position.
@@ -23,29 +25,31 @@ container at the specified position.
 @param aValue - the value of the new item
 
 
-## removeItemAt ##
+### removeItemAt ###
 
 Removes an item from the container.
 
 @param aIndex - index of the item to remove
 
 
-## itemCount ##
-
-Returns a count of items in the container.
-
-
-## getIndexOfItem ##
+### getIndexOfItem ###
 
 Returns the index of an item or -1 if the item is not in the container.
 
 @param aItem - the item to determine the index of
 
 
-## getItemAtIndex ##
+### getItemAtIndex ###
 
 Returns the item at a given index or null if the item is not is the
 container.
 
 @param aIndex - the index of the item to return
+
+
+## Attributes ##
+
+### itemCount ###
+
+Returns a count of items in the container.
 

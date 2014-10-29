@@ -4,4 +4,6 @@ layout: default
 
 # nsISlowScriptDebug #
 
-## activationHandler ##
+## Attributes ##
+
+### activationHandler ###

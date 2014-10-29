@@ -4,7 +4,9 @@ layout: default
 
 # nsIHandlerService #
 
-## enumerate ##
+## Methods ##
+
+### enumerate ###
 
 Retrieve a list of all handlers in the datastore.  This list is not
 guaranteed to be in any particular order, and callers should not assume
@@ -13,7 +15,7 @@ it will remain in the same order in the future.
 @returns a list of all handlers in the datastore
 
 
-## fillHandlerInfo ##
+### fillHandlerInfo ###
 
 Fill a handler info object with information from the datastore.
 
@@ -58,7 +60,7 @@ check exists() before calling fillHandlerInfo(), to prevent spamming the
 console with XPCOM exception errors.
 
 
-## store ##
+### store ###
 
 Save the preferred action, preferred handler, possible handlers, and
 always ask properties of the given handler info object to the datastore.
@@ -70,7 +72,7 @@ the default value nsIHandlerInfo::useHelperApp.
 @param aHandlerInfo  the handler info object
 
 
-## exists ##
+### exists ###
 
 Whether or not a record for the given handler info object exists
 in the datastore. If the datastore is corrupt (or some other error
@@ -81,7 +83,7 @@ is caught in the implementation), false will be returned.
 @returns whether or not a record exists
 
 
-## remove ##
+### remove ###
 
 Remove the given handler info object from the datastore.  Deletes all
 records associated with the object, including the preferred handler, info,
@@ -91,7 +93,7 @@ Otherwise, it does nothing and does not return an error.
 @param aHandlerInfo  the handler info object
 
 
-## getTypeFromExtension ##
+### getTypeFromExtension ###
 
 Get the MIME type mapped to the given file extension in the datastore.
 

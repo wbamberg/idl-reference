@@ -4,6 +4,8 @@ layout: default
 
 # nsIFxAccountsUIGlue #
 
-## signInFlow ##
+## Methods ##
 
-## refreshAuthentication ##
+### signInFlow ###
+
+### refreshAuthentication ###

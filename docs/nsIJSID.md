@@ -4,16 +4,20 @@ layout: default
 
 # nsIJSID #
 
-## name ##
+## Methods ##
 
-## number ##
+### equals ###
 
-## valid ##
+### toString ###
 
-## equals ##
+### initialize ###
 
-## toString ##
+### getID ###
 
-## initialize ##
+## Attributes ##
 
-## getID ##
+### name ###
+
+### number ###
+
+### valid ###

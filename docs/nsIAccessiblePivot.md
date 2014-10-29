@@ -10,54 +10,9 @@ provides traversal methods to move the pivot to next/prev state that complies
 to a given rule.
 
 
-## CHAR_BOUNDARY ##
+## Methods ##
 
-## WORD_BOUNDARY ##
-
-## LINE_BOUNDARY ##
-
-## ATTRIBUTE_RANGE_BOUNDARY ##
-
-## REASON_NONE ##
-
-## REASON_NEXT ##
-
-## REASON_PREV ##
-
-## REASON_FIRST ##
-
-## REASON_LAST ##
-
-## REASON_TEXT ##
-
-## REASON_POINT ##
-
-## position ##
-
-The accessible the pivot is currently pointed at.
-
-
-## root ##
-
-The root of the subtree in which the pivot traverses.
-
-
-## modalRoot ##
-
-The temporary modal root to which traversal is limited to.
-
-
-## startOffset ##
-
-The start offset of the text range the pivot points at, otherwise -1.
-
-
-## endOffset ##
-
-The end offset of the text range the pivot points at, otherwise -1.
-
-
-## setTextRange ##
+### setTextRange ###
 
 Set the pivot's text range in a text accessible.
 
@@ -71,7 +26,7 @@ Set the pivot's text range in a text accessible.
   character count.
 
 
-## moveNext ##
+### moveNext ###
 
 Move pivot to next object, from current position or given anchor,
 complying to given traversal rule.
@@ -85,7 +40,7 @@ complying to given traversal rule.
 @return true on success, false if there are no new nodes to traverse to.
 
 
-## movePrevious ##
+### movePrevious ###
 
 Move pivot to previous object, from current position or given anchor,
 complying to given traversal rule.
@@ -99,7 +54,7 @@ complying to given traversal rule.
 @return true on success, false if there are no new nodes to traverse to.
 
 
-## moveFirst ##
+### moveFirst ###
 
 Move pivot to first object in subtree complying to given traversal rule.
 
@@ -109,7 +64,7 @@ Move pivot to first object in subtree complying to given traversal rule.
 @return true on success, false if there are no new nodes to traverse to.
 
 
-## moveLast ##
+### moveLast ###
 
 Move pivot to last object in subtree complying to given traversal rule.
 
@@ -118,7 +73,7 @@ Move pivot to last object in subtree complying to given traversal rule.
                           (default is true).
 
 
-## moveNextByText ##
+### moveNextByText ###
 
 Move pivot to next text range.
 
@@ -129,7 +84,7 @@ Move pivot to next text range.
 @return true on success, false if there are is no more text.
 
 
-## movePreviousByText ##
+### movePreviousByText ###
 
 Move pivot to previous text range.
 
@@ -140,7 +95,7 @@ Move pivot to previous text range.
 @return true on success, false if there are is no more text.
 
 
-## moveToPoint ##
+### moveToPoint ###
 
 Move pivot to given coordinate in screen pixels.
 
@@ -154,16 +109,67 @@ Move pivot to given coordinate in screen pixels.
 @return true on success, false if the pivot has not been moved.
 
 
-## addObserver ##
+### addObserver ###
 
 Add an observer for pivot changes.
 
 @param aObserver [in] the observer object to be notified of pivot changes.
 
 
-## removeObserver ##
+### removeObserver ###
 
 Remove an observer for pivot changes.
 
 @param aObserver [in] the observer object to remove from being notified.
 
+
+## Attributes ##
+
+### position ###
+
+The accessible the pivot is currently pointed at.
+
+
+### root ###
+
+The root of the subtree in which the pivot traverses.
+
+
+### modalRoot ###
+
+The temporary modal root to which traversal is limited to.
+
+
+### startOffset ###
+
+The start offset of the text range the pivot points at, otherwise -1.
+
+
+### endOffset ###
+
+The end offset of the text range the pivot points at, otherwise -1.
+
+
+## Constants ##
+
+### CHAR_BOUNDARY ###
+
+### WORD_BOUNDARY ###
+
+### LINE_BOUNDARY ###
+
+### ATTRIBUTE_RANGE_BOUNDARY ###
+
+### REASON_NONE ###
+
+### REASON_NEXT ###
+
+### REASON_PREV ###
+
+### REASON_FIRST ###
+
+### REASON_LAST ###
+
+### REASON_TEXT ###
+
+### REASON_POINT ###

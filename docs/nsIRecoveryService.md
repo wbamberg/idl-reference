@@ -4,17 +4,9 @@ layout: default
 
 # nsIRecoveryService #
 
-## FOTA_UPDATE_UNKNOWN ##
+## Methods ##
 
-Possible values of fotaStatus.result. These should stay in sync with
-librecovery/librecovery.h
-
-
-## FOTA_UPDATE_FAIL ##
-
-## FOTA_UPDATE_SUCCESS ##
-
-## factoryReset ##
+### factoryReset ###
 
 Uses recovery to wipe the data and cache partitions. If this call is
 successful, the device should reboot before the function call ever returns.
@@ -22,7 +14,7 @@ successful, the device should reboot before the function call ever returns.
 @throws NS_ERROR_FAILURE when rebooting into recovery fails for some reason.
 
 
-## installFotaUpdate ##
+### installFotaUpdate ###
 
 Use recovery to install an OTA update.zip. If this call is
 successful, the device should reboot before the function call ever returns.
@@ -30,8 +22,20 @@ successful, the device should reboot before the function call ever returns.
 @throws NS_ERROR_FAILURE when rebooting into recovery fails for some reason.
 
 
-## getFotaUpdateStatus ##
+### getFotaUpdateStatus ###
 
 @return The status of the last FOTA update. One of FOTA_UPDATE_UNKNOWN,
         FOTA_UPDATE_FAIL, FOTA_UPDATE_SUCCESS.
 
+
+## Constants ##
+
+### FOTA_UPDATE_UNKNOWN ###
+
+Possible values of fotaStatus.result. These should stay in sync with
+librecovery/librecovery.h
+
+
+### FOTA_UPDATE_FAIL ###
+
+### FOTA_UPDATE_SUCCESS ###

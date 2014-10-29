@@ -14,30 +14,34 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## acceptCharset ##
+## Methods ##
 
-## action ##
+### submit ###
 
-## autocomplete ##
+### reset ###
 
-## enctype ##
+### checkValidity ###
 
-## encoding ##
+## Attributes ##
 
-## method ##
+### acceptCharset ###
 
-## name ##
+### action ###
 
-## noValidate ##
+### autocomplete ###
 
-## target ##
+### enctype ###
 
-## elements ##
+### encoding ###
 
-## length ##
+### method ###
 
-## submit ##
+### name ###
 
-## reset ##
+### noValidate ###
 
-## checkValidity ##
+### target ###
+
+### elements ###
+
+### length ###

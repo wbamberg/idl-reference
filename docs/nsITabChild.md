@@ -4,8 +4,12 @@ layout: default
 
 # nsITabChild #
 
-## messageManager ##
+## Methods ##
 
-## webBrowserChrome ##
+### sendRequestFocus ###
 
-## sendRequestFocus ##
+## Attributes ##
+
+### messageManager ###
+
+### webBrowserChrome ###

@@ -10,7 +10,9 @@ internal state of imgContainers. This lets us test
 things like animation.
 
 
-## framesNotified ##
+## Attributes ##
+
+### framesNotified ###
 
 The # of frames this imgContainer has been notified about.
 That is equal to the # of times the animation timer has

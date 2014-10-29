@@ -4,7 +4,9 @@ layout: default
 
 # nsIProperties #
 
-## get ##
+## Methods ##
+
+### get ###
 
 Gets a property with a given name. 
 
@@ -13,24 +15,24 @@ Gets a property with a given name.
 given iid.
 
 
-## set ##
+### set ###
 
 Sets a property with a given name to a given value. 
 
 
-## has ##
+### has ###
 
 Returns true if the property with the given name exists.
 
 
-## undefine ##
+### undefine ###
 
 Undefines a property.
 @throws NS_ERROR_FAILURE if a property with that name doesn't
 already exist.
 
 
-## getKeys ##
+### getKeys ###
 
  Returns an array of the keys.
 

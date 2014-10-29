@@ -9,7 +9,9 @@ downloading the whole update and then updating the sqlite database, we
 update tables as the data is streaming in.
 
 
-## downloadUpdates ##
+## Methods ##
+
+### downloadUpdates ###
 
 Try to download updates from updateUrl. If an update is already in
 progress, queues the requested update. This is used in nsIUrlListManager

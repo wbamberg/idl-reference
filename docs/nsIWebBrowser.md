@@ -11,7 +11,9 @@ to register any listeners. The interface may also be used at runtime
 to obtain the content DOM window and from that the rest of the DOM.
 
 
-## addWebBrowserListener ##
+## Methods ##
+
+### addWebBrowserListener ###
 
 Registers a listener of the type specified by the iid to receive
 callbacks. The browser stores a weak reference to the listener
@@ -42,7 +44,7 @@ the IID is that of the interface.
         specified by the IID.
 
 
-## removeWebBrowserListener ##
+### removeWebBrowserListener ###
 
 Removes a previously registered listener.
 
@@ -58,7 +60,9 @@ Removes a previously registered listener.
 @see nsIWeakReference
 
 
-## containerWindow ##
+## Attributes ##
+
+### containerWindow ###
 
 The chrome object associated with the browser instance. The embedder
 must create one chrome object for <I>each</I> browser object
@@ -97,7 +101,7 @@ object. If the implementation does this, it must also implement
 @see nsIWebProgressListener
 
 
-## parentURIContentListener ##
+### parentURIContentListener ###
 
 URI content listener parent. The embedder may set this property to
 their own implementation if they intend to override or prevent
@@ -114,7 +118,7 @@ how certain kinds of content are loaded.
 @see nsIURIContentListener
 
 
-## contentDOMWindow ##
+### contentDOMWindow ###
 
 The top-level DOM window. The embedder may walk the entire
 DOM starting from this value.
@@ -122,7 +126,7 @@ DOM starting from this value.
 @see nsIDOMWindow
 
 
-## isActive ##
+### isActive ###
 
 Whether this web browser is active. Active means that it's visible
 enough that we want to avoid certain optimizations like discarding

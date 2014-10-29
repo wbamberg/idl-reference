@@ -4,4 +4,6 @@ layout: default
 
 # nsPIPromptService #
 
-## doDialog ##
+## Methods ##
+
+### doDialog ###

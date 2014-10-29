@@ -10,25 +10,9 @@ nsINetworkPredictor - learn about pages users visit, and allow us to take
                       be used on the main thread.
 
 
-## PREDICT_LINK ##
+## Methods ##
 
-Prediction reasons
-
-PREDICT_LINK - we are being asked to take predictive action because
-the user is hovering over a link.
-
-PREDICT_LOAD - we are being asked to take predictive action because
-the user has initiated a pageload.
-
-PREDICT_STARTUP - we are being asked to take predictive action
-because the browser is starting up.
-
-
-## PREDICT_LOAD ##
-
-## PREDICT_STARTUP ##
-
-## predict ##
+### predict ###
 
 Start taking predictive actions
 
@@ -57,15 +41,7 @@ asked to take actions.
   normal operation.
 
 
-## LEARN_LOAD_TOPLEVEL ##
-
-## LEARN_LOAD_SUBRESOURCE ##
-
-## LEARN_LOAD_REDIRECT ##
-
-## LEARN_STARTUP ##
-
-## learn ##
+### learn ###
 
 Add to our compendium of knowledge
 
@@ -89,7 +65,7 @@ smarter next time we predict something.
   learning about.
 
 
-## reset ##
+### reset ###
 
 Clear out all our learned knowledge
 
@@ -97,8 +73,36 @@ This removes everything from our database so that any predictions begun
 after this completes will start from a blank slate.
 
 
-## prepareForDnsTest ##
+### prepareForDnsTest ###
 
 @deprecated THIS API IS FOR TESTING ONLY. IF YOU DON'T KNOW WHAT IT DOES,
 DON'T USE IT
 
+
+## Constants ##
+
+### PREDICT_LINK ###
+
+Prediction reasons
+
+PREDICT_LINK - we are being asked to take predictive action because
+the user is hovering over a link.
+
+PREDICT_LOAD - we are being asked to take predictive action because
+the user has initiated a pageload.
+
+PREDICT_STARTUP - we are being asked to take predictive action
+because the browser is starting up.
+
+
+### PREDICT_LOAD ###
+
+### PREDICT_STARTUP ###
+
+### LEARN_LOAD_TOPLEVEL ###
+
+### LEARN_LOAD_SUBRESOURCE ###
+
+### LEARN_LOAD_REDIRECT ###
+
+### LEARN_STARTUP ###

@@ -7,7 +7,9 @@ layout: default
 A service that allows registering shutdown-time dependencies.
 
 
-## makeBarrier ##
+## Methods ##
+
+### makeBarrier ###
 
 Create a new barrier.
 
@@ -19,27 +21,29 @@ e.g.
 This attribute is uploaded as part of crash reports.
 
 
-## profileBeforeChange ##
+## Attributes ##
+
+### profileBeforeChange ###
 
 Barrier for notification profile-before-change.
 
 
-## profileChangeTeardown ##
+### profileChangeTeardown ###
 
 Barrier for notification profile-change-teardown.
 
 
-## sendTelemetry ##
+### sendTelemetry ###
 
 Barrier for notification profile-before-change2.
 
 
-## webWorkersShutdown ##
+### webWorkersShutdown ###
 
 Barrier for notification web-workers-shutdown.
 
 
-## xpcomThreadsShutdown ##
+### xpcomThreadsShutdown ###
 
 Barrier for notification xpcom-threads-shutdown.
 

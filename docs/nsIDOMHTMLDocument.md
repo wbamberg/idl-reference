@@ -4,77 +4,81 @@ layout: default
 
 # nsIDOMHTMLDocument #
 
-## domain ##
+## Methods ##
 
-## cookie ##
+### getElementsByName ###
 
-## head ##
+### getItems ###
 
-## body ##
+### open ###
 
-## images ##
+### close ###
 
-## embeds ##
+### write ###
 
-## plugins ##
+### writeln ###
 
-## links ##
+### execCommand ###
 
-## forms ##
+### queryCommandEnabled ###
 
-## scripts ##
+### queryCommandIndeterm ###
 
-## getElementsByName ##
+### queryCommandState ###
 
-## getItems ##
+### queryCommandSupported ###
 
-## open ##
+### queryCommandValue ###
 
-## close ##
+### clear ###
 
-## write ##
+### getSelection ###
 
-## writeln ##
-
-## designMode ##
-
-Midas additions
-
-
-## execCommand ##
-
-## queryCommandEnabled ##
-
-## queryCommandIndeterm ##
-
-## queryCommandState ##
-
-## queryCommandSupported ##
-
-## queryCommandValue ##
-
-## fgColor ##
-
-## bgColor ##
-
-## linkColor ##
-
-## vlinkColor ##
-
-## alinkColor ##
-
-## anchors ##
-
-## applets ##
-
-## clear ##
-
-## getSelection ##
-
-## captureEvents ##
+### captureEvents ###
 
 @deprecated These are old Netscape 4 methods. Do not use,
             the implementation is no-op.
 
 
-## releaseEvents ##
+### releaseEvents ###
+
+## Attributes ##
+
+### domain ###
+
+### cookie ###
+
+### head ###
+
+### body ###
+
+### images ###
+
+### embeds ###
+
+### plugins ###
+
+### links ###
+
+### forms ###
+
+### scripts ###
+
+### designMode ###
+
+Midas additions
+
+
+### fgColor ###
+
+### bgColor ###
+
+### linkColor ###
+
+### vlinkColor ###
+
+### alinkColor ###
+
+### anchors ###
+
+### applets ###

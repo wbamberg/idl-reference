@@ -10,12 +10,9 @@ Applications may indicate progress on their Dock icon. Only one such
 progress indicator is available to the entire application.
 
 
-## dockMenu ##
+## Methods ##
 
-Menu to use for application-specific dock menu items.
-
-
-## activateApplication ##
+### activateApplication ###
 
 Activate the application. This should be used by an application to
 activate itself when a dock menu is selected as selection of a dock menu
@@ -26,7 +23,14 @@ item does not automatically activate the application.
        application activates regardless. 
 
 
-## badgeText ##
+## Attributes ##
+
+### dockMenu ###
+
+Menu to use for application-specific dock menu items.
+
+
+### badgeText ###
 
 Text used to badge the dock tile.
 

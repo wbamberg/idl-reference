@@ -4,4 +4,6 @@ layout: default
 
 # nsIAutoConfig #
 
-## configURL ##
+## Attributes ##
+
+### configURL ###

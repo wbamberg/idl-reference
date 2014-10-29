@@ -4,8 +4,12 @@ layout: default
 
 # nsIIdleObserver #
 
-## time ##
+## Methods ##
 
-## onidle ##
+### onidle ###
 
-## onactive ##
+### onactive ###
+
+## Attributes ##
+
+### time ###

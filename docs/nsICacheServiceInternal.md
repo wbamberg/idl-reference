@@ -4,7 +4,9 @@ layout: default
 
 # nsICacheServiceInternal #
 
-## lockHeldTime ##
+## Attributes ##
+
+### lockHeldTime ###
 
 This is an internal interface. It changes so frequently that it probably
 went away while you were reading this.

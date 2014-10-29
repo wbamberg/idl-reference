@@ -8,7 +8,9 @@ Interface to allow the content process server socket to reach the IPC bridge.
 It is used in the server socket implementation on the child side.
 
 
-## listen ##
+## Methods ##
+
+### listen ###
 
 Tell the chrome process to listen on the port with the given parameters.
 
@@ -23,7 +25,7 @@ Tell the chrome process to listen on the port with the given parameters.
        "arraybuffer" to use UInt8 array instances or "string" to use String.
 
 
-## close ##
+### close ###
 
 Tell the chrome process to close the server socket.
 

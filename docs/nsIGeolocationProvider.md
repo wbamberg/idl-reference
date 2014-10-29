@@ -10,25 +10,27 @@ startup is called, any geo location change should call
 callback.update().
 
 
-## startup ##
+## Methods ##
+
+### startup ###
 
 Start up the provider.  This is called before any other
 method.  may be called multiple times.
 
 
-## watch ##
+### watch ###
 
 watch
 When a location change is observed, notify the callback.
 
 
-## shutdown ##
+### shutdown ###
 
 shutdown
 Shuts down the location device.
 
 
-## setHighAccuracy ##
+### setHighAccuracy ###
 
 hint to provide to use any amount of power to provide a better result
 

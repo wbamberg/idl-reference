@@ -19,13 +19,15 @@ request, checkForSuperfluousAuth MAY be called, and disconnect MUST be
 called.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initializes the http authentication support for the channel.
 Implementations must hold a weak reference of the channel.
 
 
-## processAuthentication ##
+### processAuthentication ###
 
 Upon receipt of a server challenge, this function is called to determine
 the credentials to send.
@@ -46,18 +48,18 @@ the credentials to send.
                               until disconnect be called.
 
 
-## addAuthorizationHeaders ##
+### addAuthorizationHeaders ###
 
 Add credentials from the http auth cache.
 
 
-## checkForSuperfluousAuth ##
+### checkForSuperfluousAuth ###
 
 Check if an unnecessary(and maybe malicious) url authentication has been
 provided.
 
 
-## disconnect ##
+### disconnect ###
 
 Cancel pending user auth prompts and release the callback and channel
 weak references.

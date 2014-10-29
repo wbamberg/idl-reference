@@ -4,6 +4,8 @@ layout: default
 
 # nsIWorkerDebuggerManagerListener #
 
-## onRegister ##
+## Methods ##
 
-## onUnregister ##
+### onRegister ###
+
+### onUnregister ###

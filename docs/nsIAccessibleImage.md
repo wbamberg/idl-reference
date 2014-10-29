@@ -4,7 +4,9 @@ layout: default
 
 # nsIAccessibleImage #
 
-## getImagePosition ##
+## Methods ##
+
+### getImagePosition ###
 
 Returns the coordinates of the image.
 
@@ -14,7 +16,7 @@ Returns the coordinates of the image.
 @param y          the y coordinate
 
 
-## getImageSize ##
+### getImageSize ###
 
 Returns the size of the image.
 

@@ -4,7 +4,9 @@ layout: default
 
 # nsIMobileCallForwardingOptions #
 
-## active ##
+## Attributes ##
+
+### active ###
 
 Call forwarding rule status.
 
@@ -17,30 +19,30 @@ Note: Unused for setting call forwarding options. It reports
 @see 3GPP TS 27.007 7.11 "status".
 
 
-## action ##
+### action ###
 
 Indicates what to do with the rule. It shall be one of the
 nsIMobileConnection.CALL_FORWARD_ACTION_* values.
 
 
-## reason ##
+### reason ###
 
 Indicates the reason the call is being forwarded. It shall be one of the
 nsIMobileConnection.CALL_FORWARD_REASON_* values.
 
 
-## number ##
+### number ###
 
 Phone number of forwarding address.
 
 
-## timeSeconds ##
+### timeSeconds ###
 
 When "no reply" is enabled or queried, this gives the time in
 seconds to wait before call is forwarded.
 
 
-## serviceClass ##
+### serviceClass ###
 
 Service for which the call forward is set up. It should be one of the
 nsIMobileConnection.ICC_SERVICE_CLASS_* values.

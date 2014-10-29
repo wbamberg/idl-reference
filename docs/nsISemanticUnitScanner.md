@@ -8,7 +8,9 @@ Provides a language independent way to break UNICODE
 text into meaningful semantic units (e.g. words).
 
 
-## start ##
+## Methods ##
+
+### start ###
 
 start()
 
@@ -20,7 +22,7 @@ used to determine the language(s) of the processed text.
                     encoded in (can be NULL)
 
 
-## next ##
+### next ###
 
 next()
 Get the begin / end offset of the next unit in the current text

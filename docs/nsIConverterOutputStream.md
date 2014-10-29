@@ -8,7 +8,9 @@ This interface allows writing strings to a stream, doing automatic
 character encoding conversion.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize this stream. Must be called before any other method on this
 interface, or you will crash. The output stream passed to this method

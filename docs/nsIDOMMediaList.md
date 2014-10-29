@@ -11,12 +11,16 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Style
 
 
-## mediaText ##
+## Methods ##
 
-## length ##
+### item ###
 
-## item ##
+### deleteMedium ###
 
-## deleteMedium ##
+### appendMedium ###
 
-## appendMedium ##
+## Attributes ##
+
+### mediaText ###
+
+### length ###

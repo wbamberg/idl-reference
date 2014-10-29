@@ -8,12 +8,21 @@ Hold on to a profile lock. Once you release the last reference to this
 interface, the profile lock is released.
 
 
-## directory ##
+## Methods ##
+
+### unlock ###
+
+Unlock the profile.
+
+
+## Attributes ##
+
+### directory ###
 
 The main profile directory.
 
 
-## localDirectory ##
+### localDirectory ###
 
 A directory corresponding to the main profile directory that exists for
 the purpose of storing data on the local filesystem, including cache
@@ -23,12 +32,7 @@ files or other data files that may not represent critical user data.
 In some cases, this directory may just be the main profile directory.
 
 
-## replacedLockTime ##
+### replacedLockTime ###
 
 The timestamp of an existing profile lock at lock time.
-
-
-## unlock ##
-
-Unlock the profile.
 

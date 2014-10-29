@@ -4,12 +4,14 @@ layout: default
 
 # nsIDataStoreService #
 
-## installDataStore ##
+## Methods ##
 
-## installAccessDataStore ##
+### installDataStore ###
 
-## getDataStores ##
+### installAccessDataStore ###
 
-## getAppManifestURLsForDataStore ##
+### getDataStores ###
 
-## checkPermission ##
+### getAppManifestURLsForDataStore ###
+
+### checkPermission ###

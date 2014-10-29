@@ -32,7 +32,9 @@ Although not required by this interface, it is recommended that
 numbers remain within the limits of a signed char, i.e. -127 to 128.
 
 
-## compare ##
+## Methods ##
+
+### compare ###
 
 Compare two version strings
 @param   A   The first version

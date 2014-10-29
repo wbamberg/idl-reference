@@ -8,12 +8,9 @@ The multiplex stream concatenates a list of input streams into a single
 stream.
 
 
-## count ##
+## Methods ##
 
-Number of streams in this multiplex-stream
-
-
-## appendStream ##
+### appendStream ###
 
 Appends a stream to the end of the streams. The cursor of the stream
 should be located at the beginning of the stream if the implementation
@@ -21,7 +18,7 @@ of this nsIMultiplexInputStream also is used as an nsISeekableStream.
 @param stream  stream to append
 
 
-## insertStream ##
+### insertStream ###
 
 Insert a stream at specified index.  If the cursor of this stream is at
 the beginning of the stream at index, the cursor will be placed at the
@@ -33,7 +30,7 @@ used as an nsISeekableStream.
 @param index   index to insert stream at, must be <= count
 
 
-## removeStream ##
+### removeStream ###
 
 Remove stream at specified index. If this stream is the one currently
 being read the readcursor is moved to the beginning of the next
@@ -41,9 +38,16 @@ stream
 @param index   remove stream at this index, must be < count
 
 
-## getStream ##
+### getStream ###
 
 Get stream at specified index.
 @param index   return stream at this index, must be < count
 @return        stream at specified index
+
+
+## Attributes ##
+
+### count ###
+
+Number of streams in this multiplex-stream
 

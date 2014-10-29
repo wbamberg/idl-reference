@@ -7,55 +7,59 @@ layout: default
 Interface representing a bookmark item.
 
 
-## id ##
+## Methods ##
+
+### remove ###
+
+Removes the item from the parent folder. Used to
+delete a bookmark or separator
+
+
+## Attributes ##
+
+### id ###
 
 The id of the bookmark.
 
 
-## title ##
+### title ###
 
 The title of the bookmark.
 
 
-## uri ##
+### uri ###
 
 The uri of the bookmark.
 
 
-## description ##
+### description ###
 
 The description of the bookmark.
 
 
-## keyword ##
+### keyword ###
 
 The keyword associated with the bookmark.
 
 
-## type ##
+### type ###
 
 The type of the bookmark.
 values: "bookmark", "separator"
 
 
-## parent ##
+### parent ###
 
 The parent folder of the bookmark.
 
 
-## annotations ##
+### annotations ###
 
 The annotations object for the bookmark.
 
 
-## events ##
+### events ###
 
 The events object for the bookmark.
 supports: "remove", "change", "visit", "move"
-
-
-## remove ##
-
-Removes the item from the parent folder. Used to
-delete a bookmark or separator
 

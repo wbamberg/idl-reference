@@ -10,7 +10,9 @@ Provides scriptable methods for initializing a nsIInputStream
 implementation with an ArrayBuffer.
 
 
-## setData ##
+## Methods ##
+
+### setData ###
 
 SetData - assign an ArrayBuffer to the input stream.
 

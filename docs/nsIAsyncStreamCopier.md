@@ -4,7 +4,9 @@ layout: default
 
 # nsIAsyncStreamCopier #
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize the stream copier.
 
@@ -34,7 +36,7 @@ whether your streams are buffered, you should use nsIAsyncStreamCopier2
 instead.
 
 
-## asyncCopy ##
+### asyncCopy ###
 
 asyncCopy triggers the start of the copy.  The observer will be notified
 when the copy completes.

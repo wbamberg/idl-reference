@@ -4,7 +4,9 @@ layout: default
 
 # mozIAsyncLivemarks #
 
-## addLivemark ##
+## Methods ##
+
+### addLivemark ###
 
 Creates a new livemark
 
@@ -22,7 +24,7 @@ Creates a new livemark
             won't return a promise.
 
 
-## removeLivemark ##
+### removeLivemark ###
 
 Removes an existing livemark.
 
@@ -40,7 +42,7 @@ Removes an existing livemark.
             won't return a promise.
 
 
-## getLivemark ##
+### getLivemark ###
 
 Gets an existing livemark.
 
@@ -59,7 +61,7 @@ Gets an existing livemark.
             won't return a promise.
 
 
-## reloadLivemarks ##
+### reloadLivemarks ###
 
 Reloads all livemarks if they are expired or if forced to do so.
 

@@ -4,6 +4,10 @@ layout: default
 
 # nsIDOMClipboardEvent #
 
-## clipboardData ##
+## Methods ##
 
-## initClipboardEvent ##
+### initClipboardEvent ###
+
+## Attributes ##
+
+### clipboardData ###

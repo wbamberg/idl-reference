@@ -11,19 +11,21 @@ DANGER! If you are in the middle of a batch transaction, there may be a
 database transaction active. You can still access the DB, but be careful.
 
 
-## onBeginUpdateBatch ##
+## Methods ##
+
+### onBeginUpdateBatch ###
 
 Notifies you that a bunch of things are about to change, don't do any
 heavy-duty processing until onEndUpdateBatch is called.
 
 
-## onEndUpdateBatch ##
+### onEndUpdateBatch ###
 
 Notifies you that we are done doing a bunch of things and you should go
 ahead and update UI, etc.
 
 
-## onVisit ##
+### onVisit ###
 
 Called when a resource is visited. This is called the first time a
 resource (page, image, etc.) is seen as well as every subsequent time.
@@ -42,7 +44,7 @@ includeHidden is set). Many observers can ignore _EMBED notifications
 @param aHidden         Whether the visited page is marked as hidden.
 
 
-## onTitleChanged ##
+### onTitleChanged ###
 
 Called whenever either the "real" title or the custom title of the page
 changed. BOTH TITLES ARE ALWAYS INCLUDED in this notification, even though
@@ -64,7 +66,7 @@ empty string in either case).
        The unique ID associated with the page.
 
 
-## onFrecencyChanged ##
+### onFrecencyChanged ###
 
 Called when an individual page's frecency has changed.
 
@@ -84,24 +86,14 @@ once.  Use onManyFrecenciesChanged to detect such changes.
        The page's last visit date.
 
 
-## onManyFrecenciesChanged ##
+### onManyFrecenciesChanged ###
 
 Called when the frecencies of many pages have changed at once.
 
 onFrecencyChanged is not called for each of those pages.
 
 
-## REASON_DELETED ##
-
-Removed by the user.
-
-
-## REASON_EXPIRED ##
-
-Removed by automatic expiration.
-
-
-## onDeleteURI ##
+### onDeleteURI ###
 
 This page and all of its visits are being deleted. Note: the page may not
 necessarily have actually existed for this function to be called.
@@ -120,18 +112,12 @@ way around this.
        Indicates the reason for the removal.  see REASON_* constants.
 
 
-## onClearHistory ##
+### onClearHistory ###
 
 Notification that all of history is being deleted.
 
 
-## ATTRIBUTE_FAVICON ##
-
-onPageChanged attribute indicating that favicon has been updated.
-aNewValue parameter will be set to the new favicon URI string.
-
-
-## onPageChanged ##
+### onPageChanged ###
 
 An attribute of this page changed.
 
@@ -145,7 +131,7 @@ An attribute of this page changed.
        The unique ID associated with the page.
 
 
-## onDeleteVisits ##
+### onDeleteVisits ###
 
 Called when some visits of an history entry are expired.
 
@@ -166,4 +152,22 @@ Called when some visits of an history entry are expired.
 @param aTransitionType
        If it's a valid TRANSITION_* value, all visits of the specified type
        have been removed.
+
+
+## Constants ##
+
+### REASON_DELETED ###
+
+Removed by the user.
+
+
+### REASON_EXPIRED ###
+
+Removed by automatic expiration.
+
+
+### ATTRIBUTE_FAVICON ###
+
+onPageChanged attribute indicating that favicon has been updated.
+aNewValue parameter will be set to the new favicon URI string.
 

@@ -7,4 +7,6 @@ layout: default
 interface for callback to be passed to Cu.schedulePreciseGC
 
 
-## callback ##
+## Methods ##
+
+### callback ###

@@ -4,14 +4,16 @@ layout: default
 
 # nsIDOMXULMenuListElement #
 
-## editable ##
+## Attributes ##
 
-## open ##
+### editable ###
 
-## label ##
+### open ###
 
-## crop ##
+### label ###
 
-## image ##
+### crop ###
 
-## inputField ##
+### image ###
+
+### inputField ###

@@ -7,23 +7,9 @@ layout: default
 Network link status monitoring service.
 
 
-## LINK_TYPE_UNKNOWN ##
+## Attributes ##
 
-## LINK_TYPE_ETHERNET ##
-
-## LINK_TYPE_USB ##
-
-## LINK_TYPE_WIFI ##
-
-## LINK_TYPE_WIMAX ##
-
-## LINK_TYPE_2G ##
-
-## LINK_TYPE_3G ##
-
-## LINK_TYPE_4G ##
-
-## isLinkUp ##
+### isLinkUp ###
 
 This is set to true when the system is believed to have a usable
 network connection.
@@ -36,12 +22,30 @@ If the link status is not currently known, we generally assume that
 it is up.
 
 
-## linkStatusKnown ##
+### linkStatusKnown ###
 
 This is set to true when we believe that isLinkUp is accurate.
 
 
-## linkType ##
+### linkType ###
 
 The type of network connection.
 
+
+## Constants ##
+
+### LINK_TYPE_UNKNOWN ###
+
+### LINK_TYPE_ETHERNET ###
+
+### LINK_TYPE_USB ###
+
+### LINK_TYPE_WIFI ###
+
+### LINK_TYPE_WIMAX ###
+
+### LINK_TYPE_2G ###
+
+### LINK_TYPE_3G ###
+
+### LINK_TYPE_4G ###

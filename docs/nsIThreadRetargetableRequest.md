@@ -10,7 +10,9 @@ Should be implemented by requests that support retargeting delivery of
 data off the main thread.
 
 
-## retargetDeliveryTo ##
+## Methods ##
+
+### retargetDeliveryTo ###
 
 Called to retarget delivery of OnDataAvailable to another thread. Should
 only be called before AsyncOpen for nsIWebsocketChannels, or during

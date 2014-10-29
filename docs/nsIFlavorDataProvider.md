@@ -4,7 +4,9 @@ layout: default
 
 # nsIFlavorDataProvider #
 
-## getFlavorData ##
+## Methods ##
+
+### getFlavorData ###
 
 Retrieve the data from this data provider.
 

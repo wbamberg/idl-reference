@@ -4,59 +4,63 @@ layout: default
 
 # nsIInterfaceInfo #
 
-## name ##
+## Methods ##
 
-## InterfaceIID ##
+### isScriptable ###
 
-## isScriptable ##
+### isBuiltinClass ###
 
-## isBuiltinClass ##
-
-## parent ##
-
-## methodCount ##
-
-These include counts for parent (and all ancestors).
-
-
-## constantCount ##
-
-## getMethodInfo ##
+### getMethodInfo ###
 
 These include methods and constants for parent (and all ancestors).
 
 These do *not* make copies ***explicit bending of XPCOM rules***.
 
 
-## getMethodInfoForName ##
+### getMethodInfoForName ###
 
-## getConstant ##
+### getConstant ###
 
-## getInfoForParam ##
+### getInfoForParam ###
 
 Get the interface information or iid associated with a param of some
 method in this interface.
 
 
-## getIIDForParam ##
+### getIIDForParam ###
 
-## getTypeForParam ##
+### getTypeForParam ###
 
 These do *not* make copies ***explicit bending of XPCOM rules***.
 
 
-## getSizeIsArgNumberForParam ##
+### getSizeIsArgNumberForParam ###
 
-## getInterfaceIsArgNumberForParam ##
+### getInterfaceIsArgNumberForParam ###
 
-## isIID ##
+### isIID ###
 
-## getNameShared ##
+### getNameShared ###
 
-## getIIDShared ##
+### getIIDShared ###
 
-## isFunction ##
+### isFunction ###
 
-## hasAncestor ##
+### hasAncestor ###
 
-## getIIDForParamNoAlloc ##
+### getIIDForParamNoAlloc ###
+
+## Attributes ##
+
+### name ###
+
+### InterfaceIID ###
+
+### parent ###
+
+### methodCount ###
+
+These include counts for parent (and all ancestors).
+
+
+### constantCount ###

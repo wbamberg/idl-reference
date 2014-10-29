@@ -4,32 +4,36 @@ layout: default
 
 # nsISSLStatus #
 
-## serverCert ##
+## Attributes ##
 
-## cipherName ##
+### serverCert ###
 
-## keyLength ##
+### cipherName ###
 
-## secretKeyLength ##
+### keyLength ###
 
-## SSL_VERSION_3 ##
+### secretKeyLength ###
 
-## TLS_VERSION_1 ##
+### protocolVersion ###
 
-## TLS_VERSION_1_1 ##
+### isDomainMismatch ###
 
-## TLS_VERSION_1_2 ##
+### isNotValidAtThisTime ###
 
-## protocolVersion ##
+### isUntrusted ###
 
-## isDomainMismatch ##
-
-## isNotValidAtThisTime ##
-
-## isUntrusted ##
-
-## isExtendedValidation ##
+### isExtendedValidation ###
 
 True only if (and after) serverCert was successfully validated as
 Extended Validation (EV).
 
+
+## Constants ##
+
+### SSL_VERSION_3 ###
+
+### TLS_VERSION_1 ###
+
+### TLS_VERSION_1_1 ###
+
+### TLS_VERSION_1_2 ###

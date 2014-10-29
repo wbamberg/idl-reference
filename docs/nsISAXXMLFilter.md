@@ -12,7 +12,9 @@ XML document or database.  Filters can modify a stream of events as
 they pass on to the final application.
 
 
-## parent ##
+## Attributes ##
+
+### parent ###
 
 The parent reader.
 

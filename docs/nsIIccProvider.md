@@ -7,128 +7,132 @@ layout: default
 XPCOM component (in the content process) that provides the ICC information.
 
 
-## CARD_STATE_UNKNOWN ##
+## Methods ##
 
-## CARD_STATE_READY ##
-
-## CARD_STATE_PIN_REQUIRED ##
-
-## CARD_STATE_PUK_REQUIRED ##
-
-## CARD_STATE_PERMANENT_BLOCKED ##
-
-## CARD_STATE_PERSONALIZATION_IN_PROGRESS ##
-
-## CARD_STATE_PERSONALIZATION_READY ##
-
-## CARD_STATE_NETWORK_LOCKED ##
-
-## CARD_STATE_NETWORK_SUBSET_LOCKED ##
-
-## CARD_STATE_CORPORATE_LOCKED ##
-
-## CARD_STATE_SERVICE_PROVIDER_LOCKED ##
-
-## CARD_STATE_SIM_LOCKED ##
-
-## CARD_STATE_NETWORK_PUK_REQUIRED ##
-
-## CARD_STATE_NETWORK_SUBSET_PUK_REQUIRED ##
-
-## CARD_STATE_CORPORATE_PUK_REQUIRED ##
-
-## CARD_STATE_SERVICE_PROVIDER_PUK_REQUIRED ##
-
-## CARD_STATE_SIM_PUK_REQUIRED ##
-
-## CARD_STATE_NETWORK1_LOCKED ##
-
-## CARD_STATE_NETWORK2_LOCKED ##
-
-## CARD_STATE_HRPD_NETWORK_LOCKED ##
-
-## CARD_STATE_RUIM_CORPORATE_LOCKED ##
-
-## CARD_STATE_RUIM_SERVICE_PROVIDER_LOCKED ##
-
-## CARD_STATE_RUIM_LOCKED ##
-
-## CARD_STATE_NETWORK1_PUK_REQUIRED ##
-
-## CARD_STATE_NETWORK2_PUK_REQUIRED ##
-
-## CARD_STATE_HRPD_NETWORK_PUK_REQUIRED ##
-
-## CARD_STATE_RUIM_CORPORATE_PUK_REQUIRED ##
-
-## CARD_STATE_RUIM_SERVICE_PROVIDER_PUK_REQUIRED ##
-
-## CARD_STATE_RUIM_PUK_REQUIRED ##
-
-## CARD_STATE_ILLEGAL ##
-
-## CARD_STATE_UNDETECTED ##
-
-## registerIccMsg ##
+### registerIccMsg ###
 
 Called when a content process registers receiving unsolicited messages from
 RadioInterfaceLayer in the chrome process. Only a content process that has
 the 'mobileconnection' permission is allowed to register.
 
 
-## unregisterIccMsg ##
+### unregisterIccMsg ###
 
-## getIccInfo ##
+### getIccInfo ###
 
 UICC Information
 
 
-## getCardState ##
+### getCardState ###
 
 Card State
 
 One of the nsIIccProvider.CARD_STATE_* values.
 
 
-## sendStkResponse ##
+### sendStkResponse ###
 
 STK interfaces.
 
 
-## sendStkMenuSelection ##
+### sendStkMenuSelection ###
 
-## sendStkTimerExpiration ##
+### sendStkTimerExpiration ###
 
-## sendStkEventDownload ##
+### sendStkEventDownload ###
 
-## getCardLockState ##
+### getCardLockState ###
 
 Card lock interfaces.
 
 
-## unlockCardLock ##
+### unlockCardLock ###
 
-## setCardLock ##
+### setCardLock ###
 
-## getCardLockRetryCount ##
+### getCardLockRetryCount ###
 
-## readContacts ##
+### readContacts ###
 
 Phonebook interfaces.
 
 
-## updateContact ##
+### updateContact ###
 
-## iccOpenChannel ##
+### iccOpenChannel ###
 
 Secure Card Icc communication channel
 
 
-## iccExchangeAPDU ##
+### iccExchangeAPDU ###
 
-## iccCloseChannel ##
+### iccCloseChannel ###
 
-## matchMvno ##
+### matchMvno ###
 
 Helpers
 
+
+## Constants ##
+
+### CARD_STATE_UNKNOWN ###
+
+### CARD_STATE_READY ###
+
+### CARD_STATE_PIN_REQUIRED ###
+
+### CARD_STATE_PUK_REQUIRED ###
+
+### CARD_STATE_PERMANENT_BLOCKED ###
+
+### CARD_STATE_PERSONALIZATION_IN_PROGRESS ###
+
+### CARD_STATE_PERSONALIZATION_READY ###
+
+### CARD_STATE_NETWORK_LOCKED ###
+
+### CARD_STATE_NETWORK_SUBSET_LOCKED ###
+
+### CARD_STATE_CORPORATE_LOCKED ###
+
+### CARD_STATE_SERVICE_PROVIDER_LOCKED ###
+
+### CARD_STATE_SIM_LOCKED ###
+
+### CARD_STATE_NETWORK_PUK_REQUIRED ###
+
+### CARD_STATE_NETWORK_SUBSET_PUK_REQUIRED ###
+
+### CARD_STATE_CORPORATE_PUK_REQUIRED ###
+
+### CARD_STATE_SERVICE_PROVIDER_PUK_REQUIRED ###
+
+### CARD_STATE_SIM_PUK_REQUIRED ###
+
+### CARD_STATE_NETWORK1_LOCKED ###
+
+### CARD_STATE_NETWORK2_LOCKED ###
+
+### CARD_STATE_HRPD_NETWORK_LOCKED ###
+
+### CARD_STATE_RUIM_CORPORATE_LOCKED ###
+
+### CARD_STATE_RUIM_SERVICE_PROVIDER_LOCKED ###
+
+### CARD_STATE_RUIM_LOCKED ###
+
+### CARD_STATE_NETWORK1_PUK_REQUIRED ###
+
+### CARD_STATE_NETWORK2_PUK_REQUIRED ###
+
+### CARD_STATE_HRPD_NETWORK_PUK_REQUIRED ###
+
+### CARD_STATE_RUIM_CORPORATE_PUK_REQUIRED ###
+
+### CARD_STATE_RUIM_SERVICE_PROVIDER_PUK_REQUIRED ###
+
+### CARD_STATE_RUIM_PUK_REQUIRED ###
+
+### CARD_STATE_ILLEGAL ###
+
+### CARD_STATE_UNDETECTED ###

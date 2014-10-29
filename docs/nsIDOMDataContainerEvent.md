@@ -4,7 +4,9 @@ layout: default
 
 # nsIDOMDataContainerEvent #
 
-## getData ##
+## Methods ##
+
+### getData ###
 
 Return the data associated with the given key.
 
@@ -12,7 +14,7 @@ Return the data associated with the given key.
 @return      the data associated with the key
 
 
-## setData ##
+### setData ###
 
 Set the data for the given key.
 

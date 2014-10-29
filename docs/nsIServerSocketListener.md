@@ -14,7 +14,9 @@ nsISocketTransport::GetHost, which returns a string representation of the
 client's IP address (NOTE: this may be an IPv4 or IPv6 string literal).
 
 
-## onSocketAccepted ##
+## Methods ##
+
+### onSocketAccepted ###
 
 onSocketAccepted
 
@@ -26,7 +28,7 @@ This method is called when a client connection is accepted.
        The connected socket transport.
 
 
-## onStopListening ##
+### onStopListening ###
 
 onStopListening
 

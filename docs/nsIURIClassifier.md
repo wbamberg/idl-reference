@@ -8,7 +8,9 @@ The URI classifier service checks a URI against lists of phishing
 and malware sites.
 
 
-## classify ##
+## Methods ##
+
+### classify ###
 
 Classify a Principal using its URI.
 

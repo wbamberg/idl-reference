@@ -4,7 +4,9 @@ layout: default
 
 # nsIApplicationReputationCallback #
 
-## onComplete ##
+## Methods ##
+
+### onComplete ###
 
 Callback for the result of the application reputation query.
 @param aStatus

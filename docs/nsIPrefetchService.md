@@ -4,7 +4,9 @@ layout: default
 
 # nsIPrefetchService #
 
-## prefetchURI ##
+## Methods ##
+
+### prefetchURI ###
 
 Enqueue a request to prefetch the specified URI.
 
@@ -15,7 +17,7 @@ Enqueue a request to prefetch the specified URI.
 @param aExplicit the link element has an explicit prefetch link type
 
 
-## enumerateQueue ##
+### enumerateQueue ###
 
 Enumerate the items in the prefetch queue.
 

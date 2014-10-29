@@ -4,30 +4,36 @@ layout: default
 
 # nsIDOMXULPopupElement #
 
-## BEFORE_START ##
+## Methods ##
 
-## BEFORE_END ##
+### showPopup ###
 
-## AFTER_START ##
+### hidePopup ###
 
-## AFTER_END ##
+## Attributes ##
 
-## START_BEFORE ##
+### position ###
 
-## START_AFTER ##
+## Constants ##
 
-## END_BEFORE ##
+### BEFORE_START ###
 
-## END_AFTER ##
+### BEFORE_END ###
 
-## OVERLAP ##
+### AFTER_START ###
 
-## AT_POINTER ##
+### AFTER_END ###
 
-## AFTER_POINTER ##
+### START_BEFORE ###
 
-## position ##
+### START_AFTER ###
 
-## showPopup ##
+### END_BEFORE ###
 
-## hidePopup ##
+### END_AFTER ###
+
+### OVERLAP ###
+
+### AT_POINTER ###
+
+### AFTER_POINTER ###

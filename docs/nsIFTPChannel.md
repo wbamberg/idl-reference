@@ -7,4 +7,6 @@ layout: default
 This interface may be used to determine if a channel is a FTP channel.
 
 
-## lastModifiedTime ##
+## Attributes ##
+
+### lastModifiedTime ###

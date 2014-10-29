@@ -4,7 +4,9 @@ layout: default
 
 # nsIDownloadObserver #
 
-## onDownloadComplete ##
+## Methods ##
+
+### onDownloadComplete ###
 
 Called to signal a download that has completed.
 

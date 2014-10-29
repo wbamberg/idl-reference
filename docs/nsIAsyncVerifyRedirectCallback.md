@@ -4,7 +4,9 @@ layout: default
 
 # nsIAsyncVerifyRedirectCallback #
 
-## onRedirectVerifyCallback ##
+## Methods ##
+
+### onRedirectVerifyCallback ###
 
 Complement to nsIChannelEventSink asynchronous callback. The result of
 the redirect decision is passed through this callback.

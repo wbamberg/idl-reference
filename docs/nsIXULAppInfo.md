@@ -8,24 +8,26 @@ A scriptable interface to the nsXULAppAPI structure. See nsXULAppAPI.h for
 a detailed description of each attribute.
 
 
-## vendor ##
+## Attributes ##
+
+### vendor ###
 
 @see nsXREAppData.vendor
 @returns an empty string if nsXREAppData.vendor is not set.
 
 
-## name ##
+### name ###
 
 @see nsXREAppData.name
 
 
-## ID ##
+### ID ###
 
 @see nsXREAppData.ID
 @returns an empty string if nsXREAppData.ID is not set.
 
 
-## version ##
+### version ###
 
 The version of the XUL application. It is different than the
 version of the XULRunner platform. Be careful about which one you want.
@@ -34,24 +36,24 @@ version of the XULRunner platform. Be careful about which one you want.
 @returns an empty string if nsXREAppData.version is not set.
 
 
-## appBuildID ##
+### appBuildID ###
 
 The build ID/date of the application. For xulrunner applications,
 this will be different than the build ID of the platform. Be careful
 about which one you want.
 
 
-## platformVersion ##
+### platformVersion ###
 
 The version of the XULRunner platform.
 
 
-## platformBuildID ##
+### platformBuildID ###
 
 The build ID/date of gecko and the XULRunner platform.
 
 
-## UAName ##
+### UAName ###
 
 @see nsXREAppData.UAName
 @returns an empty string if nsXREAppData.UAName is not set.

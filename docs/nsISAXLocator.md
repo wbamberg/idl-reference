@@ -12,7 +12,9 @@ receive unpredictable results if it attempts to use the locator at
 any other time, or after parsing completes.
 
 
-## columnNumber ##
+## Attributes ##
+
+### columnNumber ###
 
 Return the column number where the current document event ends.
 
@@ -35,7 +37,7 @@ event.  The first column in each line is column 1.
 @return The column number, or -1 if none is available.
 
 
-## lineNumber ##
+### lineNumber ###
 
 Return the line number where the current document event ends.
 Lines are delimited by line ends, which are defined in the XML
@@ -59,7 +61,7 @@ event.  The first line is line 1.
 @return The line number, or -1 if none is available.
 
 
-## publicId ##
+### publicId ###
 
 Return the public identifier for the current document event.
 
@@ -71,7 +73,7 @@ the event appears.
         null if none is available.
 
 
-## systemId ##
+### systemId ###
 
 Return the system identifier for the current document event.
 

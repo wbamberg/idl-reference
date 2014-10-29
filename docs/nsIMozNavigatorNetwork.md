@@ -4,4 +4,6 @@ layout: default
 
 # nsIMozNavigatorNetwork #
 
-## properties ##
+## Attributes ##
+
+### properties ###

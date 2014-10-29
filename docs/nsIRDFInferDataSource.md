@@ -11,7 +11,9 @@ Infer engines have contract IDs in the form of
 "@mozilla.org/rdf/infer-datasource;1?engine="
 
 
-## baseDataSource ##
+## Attributes ##
+
+### baseDataSource ###
 
 
 The wrapped datasource.

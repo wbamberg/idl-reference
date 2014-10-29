@@ -9,45 +9,9 @@ in-mem+on-disk, in-mem+on-disk+app-cache or just a specific
 app-cache storage.
 
 
-## OPEN_NORMALLY ##
+## Methods ##
 
-Placeholder for specifying "no special flags" during open.
-
-
-## OPEN_TRUNCATE ##
-
-Rewrite any existing data when opening a URL.
-
-
-## OPEN_READONLY ##
-
-Only open an existing entry.  Don't create a new one.
-
-
-## OPEN_PRIORITY ##
-
-Use for first-paint blocking loads.
-
-
-## OPEN_BYPASS_IF_BUSY ##
-
-Bypass the cache load when write is still in progress.
-
-
-## CHECK_MULTITHREADED ##
-
-Perform the cache entry check (onCacheEntryCheck invocation) on any thread 
-for optimal perfomance optimization.  If this flag is not specified it is
-ensured that onCacheEntryCheck is called on the same thread as respective 
-asyncOpen has been called.
-
-
-## OPEN_SECRETLY ##
-
-Don't automatically update any 'last used' metadata of the entry.
-
-
-## asyncOpenURI ##
+### asyncOpenURI ###
 
 Asynchronously opens a cache entry for the specified URI.
 Result is fetched asynchronously via the callback.
@@ -72,7 +36,7 @@ Result is fetched asynchronously via the callback.
    IMPORTANT: The callback may be called sooner the method returns.
 
 
-## openTruncate ##
+### openTruncate ###
 
 Immediately opens a new and empty cache entry in the storage, any existing
 entries are immediately doomed.  This is similar to the recreate() method
@@ -86,7 +50,7 @@ the new entry via a callback.
 @param aIdExtension @see asyncOpenURI
 
 
-## exists ##
+### exists ###
 
 Synchronously check on existance of an entry.  In case of disk entries
 this uses information from the cache index.  When the index data are not
@@ -95,19 +59,59 @@ The same error may throw any storage implementation that cannot determine
 entry state without blocking the caller.
 
 
-## asyncDoomURI ##
+### asyncDoomURI ###
 
 Asynchronously removes an entry belonging to the URI from the cache.
 
 
-## asyncEvictStorage ##
+### asyncEvictStorage ###
 
 Asynchronously removes all cached entries under this storage.
 NOTE: Disk storage also evicts memory storage.
 
 
-## asyncVisitStorage ##
+### asyncVisitStorage ###
 
 Visits the storage and its entries.
 NOTE: Disk storage also visits memory storage.
+
+
+## Constants ##
+
+### OPEN_NORMALLY ###
+
+Placeholder for specifying "no special flags" during open.
+
+
+### OPEN_TRUNCATE ###
+
+Rewrite any existing data when opening a URL.
+
+
+### OPEN_READONLY ###
+
+Only open an existing entry.  Don't create a new one.
+
+
+### OPEN_PRIORITY ###
+
+Use for first-paint blocking loads.
+
+
+### OPEN_BYPASS_IF_BUSY ###
+
+Bypass the cache load when write is still in progress.
+
+
+### CHECK_MULTITHREADED ###
+
+Perform the cache entry check (onCacheEntryCheck invocation) on any thread 
+for optimal perfomance optimization.  If this flag is not specified it is
+ensured that onCacheEntryCheck is called on the same thread as respective 
+asyncOpen has been called.
+
+
+### OPEN_SECRETLY ###
+
+Don't automatically update any 'last used' metadata of the entry.
 

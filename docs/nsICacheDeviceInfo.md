@@ -4,28 +4,30 @@ layout: default
 
 # nsICacheDeviceInfo #
 
-## description ##
+## Attributes ##
+
+### description ###
 
 Get a human readable description of the cache device.
 
 
-## usageReport ##
+### usageReport ###
 
 Get a usage report, statistics, miscellaneous data about
 the cache device.
 
 
-## entryCount ##
+### entryCount ###
 
 Get the number of stored cache entries.
 
 
-## totalSize ##
+### totalSize ###
 
 Get the total size of the stored cache entries.
 
 
-## maximumSize ##
+### maximumSize ###
 
 Get the upper limit of the size of the data the cache can store.
 

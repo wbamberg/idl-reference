@@ -8,7 +8,9 @@ This interface extends the nsISAXAttributes interface with
 manipulators so that the list can be modified or reused.
 
 
-## addAttribute ##
+## Methods ##
+
+### addAttribute ###
 
 Add an attribute to the end of the list.
 
@@ -27,19 +29,19 @@ the responsibility of the application.
 @param value The attribute value.
 
 
-## clear ##
+### clear ###
 
 Clear the attribute list for reuse.
 
 
-## removeAttribute ##
+### removeAttribute ###
 
 Remove an attribute from the list.
 
 @param index The index of the attribute (zero-based).
 
 
-## setAttributes ##
+### setAttributes ###
 
 Set the attributes list. This method will clear any attributes in
 the list before adding the attributes from the argument.
@@ -48,7 +50,7 @@ the list before adding the attributes from the argument.
                   list with.
 
 
-## setAttribute ##
+### setAttribute ###
 
 Set an attribute in the list.
 
@@ -68,7 +70,7 @@ of the application.
 @param value The attribute value.
 
 
-## setLocalName ##
+### setLocalName ###
 
 Set the local name of a specific attribute.
 
@@ -77,7 +79,7 @@ Set the local name of a specific attribute.
        string for none.
 
 
-## setQName ##
+### setQName ###
 
 Set the qualified name of a specific attribute.
 
@@ -86,7 +88,7 @@ Set the qualified name of a specific attribute.
        string for none.
 
 
-## setType ##
+### setType ###
 
 Set the type of a specific attribute.
 
@@ -94,7 +96,7 @@ Set the type of a specific attribute.
 @param type The attribute's type.
 
 
-## setURI ##
+### setURI ###
 
 Set the Namespace URI of a specific attribute.
 
@@ -103,7 +105,7 @@ Set the Namespace URI of a specific attribute.
        string for none.
 
 
-## setValue ##
+### setValue ###
 
 Set the value of a specific attribute.
 

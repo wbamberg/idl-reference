@@ -4,7 +4,9 @@ layout: default
 
 # nsIGlobalHistory2 #
 
-## addURI ##
+## Methods ##
+
+### addURI ###
 
 Add a URI to global history
 
@@ -21,7 +23,7 @@ Add a URI to global history
        referrer.
 
 
-## isVisited ##
+### isVisited ###
 
 Checks to see whether the given URI is in history.
 
@@ -29,7 +31,7 @@ Checks to see whether the given URI is in history.
 @return true if a URI has been visited
 
 
-## setPageTitle ##
+### setPageTitle ###
 
 Set the page title for the given uri. URIs that are not already in
 global history will not be added.

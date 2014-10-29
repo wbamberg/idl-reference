@@ -4,7 +4,9 @@ layout: default
 
 # mozIDownloadPlatform #
 
-## downloadDone ##
+## Methods ##
+
+### downloadDone ###
 
 Perform platform specific operations when a download is done.
 
@@ -30,20 +32,7 @@ Perform platform specific operations when a download is done.
 @return none
 
 
-## ZONE_MY_COMPUTER ##
-
-Security Zone constants. Used by mapUrlToZone().
-
-
-## ZONE_INTRANET ##
-
-## ZONE_TRUSTED ##
-
-## ZONE_INTERNET ##
-
-## ZONE_RESTRICTED ##
-
-## mapUrlToZone ##
+### mapUrlToZone ###
 
 Proxy for IInternetSecurityManager::MapUrlToZone().
 
@@ -53,3 +42,18 @@ Proxy for IInternetSecurityManager::MapUrlToZone().
        URI of the download
 @return Security Zone corresponding to aURL.
 
+
+## Constants ##
+
+### ZONE_MY_COMPUTER ###
+
+Security Zone constants. Used by mapUrlToZone().
+
+
+### ZONE_INTRANET ###
+
+### ZONE_TRUSTED ###
+
+### ZONE_INTERNET ###
+
+### ZONE_RESTRICTED ###

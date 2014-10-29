@@ -4,60 +4,62 @@ layout: default
 
 # nsIXPCTestParams #
 
-## testBoolean ##
+## Methods ##
 
-## testOctet ##
+### testBoolean ###
 
-## testShort ##
+### testOctet ###
 
-## testLong ##
+### testShort ###
 
-## testLongLong ##
+### testLong ###
 
-## testUnsignedShort ##
+### testLongLong ###
 
-## testUnsignedLong ##
+### testUnsignedShort ###
 
-## testUnsignedLongLong ##
+### testUnsignedLong ###
 
-## testFloat ##
+### testUnsignedLongLong ###
 
-## testDouble ##
+### testFloat ###
 
-## testChar ##
+### testDouble ###
 
-## testString ##
+### testChar ###
 
-## testWchar ##
+### testString ###
 
-## testWstring ##
+### testWchar ###
 
-## testDOMString ##
+### testWstring ###
 
-## testAString ##
+### testDOMString ###
 
-## testAUTF8String ##
+### testAString ###
 
-## testACString ##
+### testAUTF8String ###
 
-## testJsval ##
+### testACString ###
 
-## testShortArray ##
+### testJsval ###
 
-## testDoubleArray ##
+### testShortArray ###
 
-## testStringArray ##
+### testDoubleArray ###
 
-## testWstringArray ##
+### testStringArray ###
 
-## testInterfaceArray ##
+### testWstringArray ###
 
-## testSizedString ##
+### testInterfaceArray ###
 
-## testSizedWstring ##
+### testSizedString ###
 
-## testInterfaceIs ##
+### testSizedWstring ###
 
-## testInterfaceIsArray ##
+### testInterfaceIs ###
 
-## testOutAString ##
+### testInterfaceIsArray ###
+
+### testOutAString ###

@@ -11,22 +11,24 @@ For more information on this interface please see
 http://www.whatwg.org/specs/web-apps/current-work/#validitystate
 
 
-## valueMissing ##
+## Attributes ##
 
-## typeMismatch ##
+### valueMissing ###
 
-## patternMismatch ##
+### typeMismatch ###
 
-## tooLong ##
+### patternMismatch ###
 
-## rangeUnderflow ##
+### tooLong ###
 
-## rangeOverflow ##
+### rangeUnderflow ###
 
-## stepMismatch ##
+### rangeOverflow ###
 
-## badInput ##
+### stepMismatch ###
 
-## customError ##
+### badInput ###
 
-## valid ##
+### customError ###
+
+### valid ###

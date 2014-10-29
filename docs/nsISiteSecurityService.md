@@ -4,13 +4,9 @@ layout: default
 
 # nsISiteSecurityService #
 
-## HEADER_HSTS ##
+## Methods ##
 
-## HEADER_HPKP ##
-
-## HEADER_OMS ##
-
-## processHeader ##
+### processHeader ###
 
 Parses a given HTTP header and records the results internally.
 Currently two header types are supported: HSTS (aka STS) and HPKP
@@ -37,13 +33,13 @@ in future HTTPS connections.
                          if there are unrecognized tokens in the header.
 
 
-## unsafeProcessHeader ##
+### unsafeProcessHeader ###
 
 Same as processHeader but without checking for the security properties
 of the connection. Use ONLY for testing.
 
 
-## removeState ##
+### removeState ###
 
 Given a header type, removes state relating to that header of a host,
 including the includeSubdomains state that would affect subdomains.
@@ -55,7 +51,7 @@ host.
                  NO_PERMANENT_STORAGE
 
 
-## isSecureHost ##
+### isSecureHost ###
 
 See isSecureURI
 
@@ -65,13 +61,13 @@ See isSecureURI
                  NO_PERMANENT_STORAGE
 
 
-## shouldIgnoreHeaders ##
+### shouldIgnoreHeaders ###
 
 Checks if the given security info is for a host with a broken
 transport layer (certificate errors like invalid CN).
 
 
-## isSecureURI ##
+### isSecureURI ###
 
 Checks whether or not the URI's hostname has a given security state set.
 For example, for HSTS:
@@ -87,12 +83,12 @@ such as path and port.
                  NO_PERMANENT_STORAGE
 
 
-## clearAll ##
+### clearAll ###
 
 Removes all security state by resetting to factory-original settings.
 
 
-## getKeyPinsForHostname ##
+### getKeyPinsForHostname ###
 
 Returns an array of sha256-hashed key pins for the given domain, if any.
 If these pins also apply to subdomains of the given domain,
@@ -107,7 +103,7 @@ mozilla::pkix::Time which uses internally seconds since 0 AD.
        given domain
 
 
-## setKeyPins ##
+### setKeyPins ###
 
 Set public-key pins for a host. The resulting pins will be permanent
 and visible from private and non-private contexts. These pins replace
@@ -119,3 +115,11 @@ any already set by this mechanism or those built-in to Gecko.
 @param aPinCount number of keys being pinnned
 @param aSha256Pins array of hashed key fingerprints (SHA-256, base64)
 
+
+## Constants ##
+
+### HEADER_HSTS ###
+
+### HEADER_HPKP ###
+
+### HEADER_OMS ###

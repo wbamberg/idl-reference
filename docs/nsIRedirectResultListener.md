@@ -4,7 +4,9 @@ layout: default
 
 # nsIRedirectResultListener #
 
-## onRedirectResult ##
+## Methods ##
+
+### onRedirectResult ###
 
  When an HTTP redirect has been processed (either successfully or not)
  nsIHttpChannel will call this function if its callbacks implement this

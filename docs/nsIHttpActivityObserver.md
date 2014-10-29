@@ -10,7 +10,9 @@ This interface provides a way for http activities to be reported
 to observers.
 
 
-## observeActivity ##
+## Methods ##
+
+### observeActivity ###
 
 observe activity from the http transport
 
@@ -43,7 +45,9 @@ observe activity from the http transport
        this activity
 
 
-## isActive ##
+## Attributes ##
+
+### isActive ###
 
 This attribute is true when this interface is active and should
 observe http activities. When false, observeActivity() should not
@@ -51,18 +55,20 @@ be called. It is present for compatibility reasons and should be
 implemented only by nsHttpActivityDistributor.
 
 
-## ACTIVITY_TYPE_SOCKET_TRANSPORT ##
+## Constants ##
 
-## ACTIVITY_TYPE_HTTP_TRANSACTION ##
+### ACTIVITY_TYPE_SOCKET_TRANSPORT ###
 
-## ACTIVITY_SUBTYPE_REQUEST_HEADER ##
+### ACTIVITY_TYPE_HTTP_TRANSACTION ###
 
-## ACTIVITY_SUBTYPE_REQUEST_BODY_SENT ##
+### ACTIVITY_SUBTYPE_REQUEST_HEADER ###
 
-## ACTIVITY_SUBTYPE_RESPONSE_START ##
+### ACTIVITY_SUBTYPE_REQUEST_BODY_SENT ###
 
-## ACTIVITY_SUBTYPE_RESPONSE_HEADER ##
+### ACTIVITY_SUBTYPE_RESPONSE_START ###
 
-## ACTIVITY_SUBTYPE_RESPONSE_COMPLETE ##
+### ACTIVITY_SUBTYPE_RESPONSE_HEADER ###
 
-## ACTIVITY_SUBTYPE_TRANSACTION_CLOSE ##
+### ACTIVITY_SUBTYPE_RESPONSE_COMPLETE ###
+
+### ACTIVITY_SUBTYPE_TRANSACTION_CLOSE ###

@@ -7,7 +7,9 @@ layout: default
 A literal node in the graph, whose value is an integer
 
 
-## Value ##
+## Attributes ##
+
+### Value ###
 
 The integer value of the literal
 

@@ -4,7 +4,9 @@ layout: default
 
 # nsIInputListAutoComplete #
 
-## autoCompleteSearch ##
+## Methods ##
+
+### autoCompleteSearch ###
 
 Generate results for a form input autocomplete menu.
 

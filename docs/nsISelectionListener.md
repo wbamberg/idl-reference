@@ -4,20 +4,24 @@ layout: default
 
 # nsISelectionListener #
 
-## NO_REASON ##
+## Methods ##
 
-## DRAG_REASON ##
+### notifySelectionChanged ###
 
-## MOUSEDOWN_REASON ##
+## Constants ##
 
-## MOUSEUP_REASON ##
+### NO_REASON ###
 
-## KEYPRESS_REASON ##
+### DRAG_REASON ###
 
-## SELECTALL_REASON ##
+### MOUSEDOWN_REASON ###
 
-## COLLAPSETOSTART_REASON ##
+### MOUSEUP_REASON ###
 
-## COLLAPSETOEND_REASON ##
+### KEYPRESS_REASON ###
 
-## notifySelectionChanged ##
+### SELECTALL_REASON ###
+
+### COLLAPSETOSTART_REASON ###
+
+### COLLAPSETOEND_REASON ###

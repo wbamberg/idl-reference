@@ -4,7 +4,9 @@ layout: default
 
 # nsIAlertsProgressListener #
 
-## onProgress ##
+## Methods ##
+
+### onProgress ###
 
 Called to notify the alert service that progress has occurred for the
 given notification previously displayed with showAlertNotification().
@@ -19,7 +21,7 @@ given notification previously displayed with showAlertNotification().
                     the percentage will be displayed.
 
 
-## onCancel ##
+### onCancel ###
 
 Called to cancel and hide the given notification previously displayed
 with showAlertNotification().

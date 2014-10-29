@@ -5,4 +5,6 @@ layout: default
 # nsIXPConnectJSObjectHolder #
 ***********************************************************************/
 
-## GetJSObject ##
+## Methods ##
+
+### GetJSObject ###

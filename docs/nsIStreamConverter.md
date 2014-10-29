@@ -46,7 +46,9 @@ file):
 @see nsIStreamConverterService
 
 
-## convert ##
+## Methods ##
+
+### convert ###
 
 <b>SYNCRONOUS VERSION</b>
 Converts a stream of one type, to a stream of another type.
@@ -64,7 +66,7 @@ Use this method when you have a stream you want to convert.
                      buffering the converted data until it is used.
 
 
-## asyncConvertData ##
+### asyncConvertData ###
 
 <b>ASYNCRONOUS VERSION</b>
 Converts data arriving via the converter's nsIStreamListener::OnDataAvailable() 

@@ -10,13 +10,17 @@ This interface provides methods to initialize an input stream channel.
 The input stream channel serves as a data pump for an input stream.
 
 
-## setURI ##
+## Methods ##
+
+### setURI ###
 
 Sets the URI for this channel.  This must be called before the
 channel is opened, and it may only be called once.
 
 
-## contentStream ##
+## Attributes ##
+
+### contentStream ###
 
 Get/set the content stream
 
@@ -32,7 +36,7 @@ only be set once.
 has been opened.
 
 
-## srcdocData ##
+### srcdocData ###
 
 Get/set the srcdoc data string.  When the input stream channel is 
 created to load a srcdoc iframe, this is set to hold the value of the
@@ -45,12 +49,12 @@ Changing the value of this attribute will not otherwise affect the
 functionality of the channel or input stream.
 
 
-## isSrcdocChannel ##
+### isSrcdocChannel ###
 
 Returns true if srcdocData has been set within the channel.
 
 
-## baseURI ##
+### baseURI ###
 
 The base URI to be used for the channel.  Used when the base URI cannot
 be inferred by other means, for example when this is a srcdoc channel.

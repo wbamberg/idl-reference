@@ -8,7 +8,9 @@ nsICertPickDialogs
 Provides generic UI for choosing a certificate
 
 
-## PickCertificate ##
+## Methods ##
+
+### PickCertificate ###
 
 PickCertificate
   General purpose certificate prompter

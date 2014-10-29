@@ -4,10 +4,12 @@ layout: default
 
 # nsIWifiAccessPoint #
 
-## mac ##
+## Attributes ##
 
-## ssid ##
+### mac ###
 
-## rawSSID ##
+### ssid ###
 
-## signal ##
+### rawSSID ###
+
+### signal ###

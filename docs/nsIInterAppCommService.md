@@ -14,4 +14,6 @@ messages from and interacting with the content processes.
 [1] https://wiki.mozilla.org/WebAPI/Inter_App_Communication_Alt_proposal
 
 
-## registerConnection ##
+## Methods ##
+
+### registerConnection ###

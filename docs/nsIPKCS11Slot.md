@@ -4,30 +4,36 @@ layout: default
 
 # nsIPKCS11Slot #
 
-## name ##
+## Methods ##
 
-## desc ##
+### getToken ###
 
-## manID ##
+## Attributes ##
 
-## HWVersion ##
+### name ###
 
-## FWVersion ##
+### desc ###
 
-## SLOT_DISABLED ##
+### manID ###
 
-## SLOT_NOT_PRESENT ##
+### HWVersion ###
 
-## SLOT_UNINITIALIZED ##
+### FWVersion ###
 
-## SLOT_NOT_LOGGED_IN ##
+### status ###
 
-## SLOT_LOGGED_IN ##
+### tokenName ###
 
-## SLOT_READY ##
+## Constants ##
 
-## status ##
+### SLOT_DISABLED ###
 
-## getToken ##
+### SLOT_NOT_PRESENT ###
 
-## tokenName ##
+### SLOT_UNINITIALIZED ###
+
+### SLOT_NOT_LOGGED_IN ###
+
+### SLOT_LOGGED_IN ###
+
+### SLOT_READY ###

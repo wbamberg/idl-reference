@@ -4,20 +4,22 @@ layout: default
 
 # nsIProcess #
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialises the process with an executable to be run. Call the run method
 to run the executable.
 @param executable The executable to run.
 
 
-## kill ##
+### kill ###
 
 Kills the running process. After exiting the process will either have
 been killed or a failure will have been returned.
 
 
-## run ##
+### run ###
 
 Executes the file this object was initialized with
 @param blocking   Whether to wait until the process terminates before
@@ -27,7 +29,7 @@ returning or not.
 @param count      The length of the args array.
 
 
-## runAsync ##
+### runAsync ###
 
 Executes the file this object was initialized with optionally calling
 an observer after the process has finished running.
@@ -41,7 +43,7 @@ an observer after the process has finished running.
 @param holdWeak   Whether to use a weak reference to hold the observer.
 
 
-## runw ##
+### runw ###
 
 Executes the file this object was initialized with
 @param blocking   Whether to wait until the process terminates before
@@ -50,7 +52,7 @@ returning or not.
 @param count      The length of the args array.
 
 
-## runwAsync ##
+### runwAsync ###
 
 Executes the file this object was initialized with optionally calling
 an observer after the process has finished running.
@@ -63,20 +65,22 @@ an observer after the process has finished running.
 @param holdWeak   Whether to use a weak reference to hold the observer.
 
 
-## pid ##
+## Attributes ##
+
+### pid ###
 
 The process identifier of the currently running process. This will only
 be available after the process has started and may not be available on
 some platforms.
 
 
-## exitValue ##
+### exitValue ###
 
 The exit value of the process. This is only valid after the process has
 exited.
 
 
-## isRunning ##
+### isRunning ###
 
 Returns whether the process is currently running or not.
 

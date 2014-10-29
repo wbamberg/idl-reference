@@ -11,23 +11,9 @@ Please see https://developer.mozilla.org/en/mozIStorageVacuumParticipant for
 more information.
 
 
-## expectedDatabasePageSize ##
+## Methods ##
 
-The expected page size in bytes for the database.  The vacuum manager will
-try to correct the page size during idle based on this value.
-
-@note If the database is using the WAL journal mode, the page size won't
-       be changed to the requested value.  See bug 634374.
-@note Valid page size values are powers of 2 between 512 and 65536.
-      The suggested value is mozIStorageConnection::defaultPageSize.
-
-
-## databaseConnection ##
-
-Connection to the database file to be vacuumed.
-
-
-## onBeginVacuum ##
+### onBeginVacuum ###
 
 Notifies when a vacuum operation begins.  Listeners should avoid using the
 database till onEndVacuum is received.
@@ -41,10 +27,28 @@ database till onEndVacuum is received.
       data argument being either "vacuum-begin" or "vacuum-end".
 
 
-## onEndVacuum ##
+### onEndVacuum ###
 
 Notifies when a vacuum operation ends.
 
 @param aSucceeded
        reports if the vacuum succeeded or failed.
+
+
+## Attributes ##
+
+### expectedDatabasePageSize ###
+
+The expected page size in bytes for the database.  The vacuum manager will
+try to correct the page size during idle based on this value.
+
+@note If the database is using the WAL journal mode, the page size won't
+       be changed to the requested value.  See bug 634374.
+@note Valid page size values are powers of 2 between 512 and 65536.
+      The suggested value is mozIStorageConnection::defaultPageSize.
+
+
+### databaseConnection ###
+
+Connection to the database file to be vacuumed.
 

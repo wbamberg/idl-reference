@@ -4,78 +4,82 @@ layout: default
 
 # nsIDOMXULElement #
 
-## align ##
+## Methods ##
 
-## dir ##
+### focus ###
 
-## flex ##
+### blur ###
 
-## flexGroup ##
+### click ###
 
-## ordinal ##
+### doCommand ###
 
-## orient ##
+### getElementsByAttribute ###
 
-## pack ##
+### getElementsByAttributeNS ###
 
-## hidden ##
+## Attributes ##
 
-## collapsed ##
+### align ###
 
-## observes ##
+### dir ###
 
-## menu ##
+### flex ###
 
-## contextMenu ##
+### flexGroup ###
 
-## tooltip ##
+### ordinal ###
 
-## width ##
+### orient ###
 
-## height ##
+### pack ###
 
-## minWidth ##
+### hidden ###
 
-## minHeight ##
+### collapsed ###
 
-## maxWidth ##
+### observes ###
 
-## maxHeight ##
+### menu ###
 
-## persist ##
+### contextMenu ###
 
-## left ##
+### tooltip ###
 
-## top ##
+### width ###
 
-## datasources ##
+### height ###
 
-## ref ##
+### minWidth ###
 
-## tooltipText ##
+### minHeight ###
 
-## statusText ##
+### maxWidth ###
 
-## allowEvents ##
+### maxHeight ###
 
-## database ##
+### persist ###
 
-## builder ##
+### left ###
 
-## resource ##
+### top ###
 
-## controllers ##
+### datasources ###
 
-## boxObject ##
+### ref ###
 
-## focus ##
+### tooltipText ###
 
-## blur ##
+### statusText ###
 
-## click ##
+### allowEvents ###
 
-## doCommand ##
+### database ###
 
-## getElementsByAttribute ##
+### builder ###
 
-## getElementsByAttributeNS ##
+### resource ###
+
+### controllers ###
+
+### boxObject ###

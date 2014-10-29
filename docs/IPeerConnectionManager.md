@@ -4,4 +4,6 @@ layout: default
 
 # IPeerConnectionManager #
 
-## hasActivePeerConnection ##
+## Methods ##
+
+### hasActivePeerConnection ###

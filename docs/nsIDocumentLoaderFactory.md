@@ -11,11 +11,13 @@ The value of the entry is the contractid of the component.
 The component is a service, so use GetService, not CreateInstance to get it.
 
 
-## createInstance ##
+## Methods ##
 
-## createInstanceForDocument ##
+### createInstance ###
 
-## createBlankDocument ##
+### createInstanceForDocument ###
+
+### createBlankDocument ###
 
 Create a blank document using the given loadgroup and given
 principal.  aPrincipal is allowed to be null, in which case the

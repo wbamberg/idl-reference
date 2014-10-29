@@ -11,14 +11,16 @@ For more information on this interface, please see
 http://www.whatwg.org/specs/web-apps/current-work/#the-embed-element
 
 
-## align ##
+## Attributes ##
 
-## height ##
+### align ###
 
-## name ##
+### height ###
 
-## src ##
+### name ###
 
-## type ##
+### src ###
 
-## width ##
+### type ###
+
+### width ###

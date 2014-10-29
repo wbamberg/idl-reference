@@ -4,13 +4,9 @@ layout: default
 
 # nsIClipboard #
 
-## kSelectionClipboard ##
+## Methods ##
 
-## kGlobalClipboard ##
-
-## kFindClipboard ##
-
-## setData ##
+### setData ###
 
 Given a transferable, set the data on the native clipboard
 
@@ -20,7 +16,7 @@ Given a transferable, set the data on the native clipboard
 @result NS_Ok if no errors
 
 
-## getData ##
+### getData ###
 
 Given a transferable, get the clipboard data.
 
@@ -29,7 +25,7 @@ Given a transferable, get the clipboard data.
 @result NS_Ok if no errors
 
 
-## emptyClipboard ##
+### emptyClipboard ###
 
 This empties the clipboard and notifies the clipboard owner.
 This empties the "logical" clipboard. It does not clear the native clipboard.
@@ -38,7 +34,7 @@ This empties the "logical" clipboard. It does not clear the native clipboard.
 @result NS_OK if successful.
 
 
-## hasDataMatchingFlavors ##
+### hasDataMatchingFlavors ###
 
 This provides a way to give correct UI feedback about, for instance, a paste 
 should be allowed. It does _NOT_ actually retreive the data and should be a very
@@ -52,7 +48,7 @@ any of the flavors in the given list.
 @result NS_OK if successful.
 
 
-## supportsSelectionClipboard ##
+### supportsSelectionClipboard ###
 
 Allows clients to determine if the implementation supports the concept of a 
 separate clipboard for selection.
@@ -61,10 +57,18 @@ separate clipboard for selection.
 @result NS_OK if successful.
 
 
-## supportsFindClipboard ##
+### supportsFindClipboard ###
 
 Allows clients to determine if the implementation supports the concept of a
 separate clipboard for find search strings.
 
 @result NS_OK if successful.
 
+
+## Constants ##
+
+### kSelectionClipboard ###
+
+### kGlobalClipboard ###
+
+### kFindClipboard ###

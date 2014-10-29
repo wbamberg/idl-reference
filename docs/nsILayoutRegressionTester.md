@@ -4,7 +4,15 @@ layout: default
 
 # nsILayoutRegressionTester #
 
-## DUMP_FLAGS_MASK_DEFAULT ##
+## Methods ##
+
+### dumpFrameModel ###
+
+### compareFrameModels ###
+
+## Constants ##
+
+### DUMP_FLAGS_MASK_DEFAULT ###
 
 Dumps the content of a window
 @param aWindowToDump       the window to dump (may be an iframe etc)
@@ -16,17 +24,15 @@ truncated. If nil, write to stdout.
 whether the page was still loading, or whether some other error happened.
 
 
-## DUMP_FLAGS_MASK_PRINT_MODE ##
+### DUMP_FLAGS_MASK_PRINT_MODE ###
 
-## DUMP_RESULT_COMPLETED ##
+### DUMP_RESULT_COMPLETED ###
 
-## DUMP_RESULT_LOADING ##
+### DUMP_RESULT_LOADING ###
 
-## DUMP_RESULT_ERROR ##
+### DUMP_RESULT_ERROR ###
 
-## dumpFrameModel ##
-
-## COMPARE_FLAGS_VERBOSE ##
+### COMPARE_FLAGS_VERBOSE ###
 
 Compares the contents of frame model files
 @param aBaseFile           the baseline file, opened with read permissions
@@ -35,6 +41,4 @@ Compares the contents of frame model files
 @param aResult             result of the comparison: zero if the files are same, non-zero if different
 
 
-## COMPARE_FLAGS_BRIEF ##
-
-## compareFrameModels ##
+### COMPARE_FLAGS_BRIEF ###

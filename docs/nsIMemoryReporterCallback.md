@@ -4,4 +4,6 @@ layout: default
 
 # nsIMemoryReporterCallback #
 
-## callback ##
+## Methods ##
+
+### callback ###

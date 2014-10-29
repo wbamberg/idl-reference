@@ -7,7 +7,9 @@ layout: default
 ...
 
 
-## getElement ##
+## Methods ##
+
+### getElement ###
 
 Retrieve (and |AddRef()|) the element this iterator currently points to.
 
@@ -17,7 +19,7 @@ useful range of the underlying container or sequence.
 @result a new reference to the element this iterator currently points to (if any)
 
 
-## putElement ##
+### putElement ###
 
 Put |anElementToPut| into the underlying container or sequence at the position currently pointed to by this iterator.
 The iterator and the underlying container or sequence cooperate to |Release()|
@@ -29,17 +31,17 @@ useful range of the underlying container or sequence.
 @param anElementToPut the element to place into the underlying container or sequence
 
 
-## stepForward ##
+### stepForward ###
 
 Advance this iterator to the next position in the underlying container or sequence.
 
 
-## stepBackward ##
+### stepBackward ###
 
 Move this iterator to the previous position in the underlying container or sequence.
 
 
-## isEqualTo ##
+### isEqualTo ###
 
 Test if |anotherIterator| points to the same position in the underlying container or sequence.
 
@@ -49,7 +51,7 @@ The result is undefined if |anotherIterator| was not created by or for the same 
 @result true if |anotherIterator| points to the same position in the underlying container or sequence
 
 
-## clone ##
+### clone ###
 
 Create a new iterator pointing to the same position in the underlying container or sequence to which this iterator currently points.
 The returned iterator is suitable for use in a subsequent call to |isEqualTo()| against this iterator.

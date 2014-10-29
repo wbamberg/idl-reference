@@ -4,6 +4,8 @@ layout: default
 
 # nsIDOMMozCSSKeyframeRule #
 
-## keyText ##
+## Attributes ##
 
-## style ##
+### keyText ###
+
+### style ###

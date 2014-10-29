@@ -4,4 +4,6 @@ layout: default
 
 # nsIEditorSpellCheckCallback #
 
-## editorSpellCheckDone ##
+## Methods ##
+
+### editorSpellCheckDone ###

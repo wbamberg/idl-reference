@@ -4,12 +4,16 @@ layout: default
 
 # nsIDOMScrollAreaEvent #
 
-## x ##
+## Methods ##
 
-## y ##
+### initScrollAreaEvent ###
 
-## width ##
+## Attributes ##
 
-## height ##
+### x ###
 
-## initScrollAreaEvent ##
+### y ###
+
+### width ###
+
+### height ###

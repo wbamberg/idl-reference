@@ -7,14 +7,16 @@ layout: default
 Listener for a JS WebVTT parser (vtt.js).
 
 
-## onCue ##
+## Methods ##
+
+### onCue ###
 
 Is called when the WebVTTParser successfully parses a WebVTT cue.
 
 @param cue An object representing the data of a parsed WebVTT cue.
 
 
-## onRegion ##
+### onRegion ###
 
 Is called when the WebVTT parser successfully parses a WebVTT region.
 
@@ -22,7 +24,7 @@ Is called when the WebVTT parser successfully parses a WebVTT region.
               WebVTT region.
 
 
-## onParsingError ##
+### onParsingError ###
 
 Is called when the WebVTT parser encounters a parsing error.
 

@@ -4,6 +4,8 @@ layout: default
 
 # nsIWifiListener #
 
-## onChange ##
+## Methods ##
 
-## onError ##
+### onChange ###
+
+### onError ###

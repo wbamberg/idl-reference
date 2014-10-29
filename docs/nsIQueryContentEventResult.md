@@ -9,20 +9,22 @@ Whether other properties can be used or not depends on the event.
 See nsIDOMWindowUtils.idl, which properites can be used was documented.
 
 
-## offset ##
+## Attributes ##
 
-## reversed ##
+### offset ###
 
-## left ##
+### reversed ###
 
-## top ##
+### left ###
 
-## width ##
+### top ###
 
-## height ##
+### width ###
 
-## text ##
+### height ###
 
-## succeeded ##
+### text ###
 
-## notFound ##
+### succeeded ###
+
+### notFound ###

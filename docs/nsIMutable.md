@@ -8,7 +8,9 @@ nsIMutable defines an interface to be implemented by objects which
 can be made immutable.
 
 
-## mutable ##
+## Attributes ##
+
+### mutable ###
 
 Control whether or not this object can be modified.  If the flag is
 false, no modification is allowed.  Once the flag has been set to false,

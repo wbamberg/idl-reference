@@ -4,8 +4,10 @@ layout: default
 
 # nsIUITelemetryObserver #
 
-## startSession ##
+## Methods ##
 
-## stopSession ##
+### startSession ###
 
-## addEvent ##
+### stopSession ###
+
+### addEvent ###

@@ -8,7 +8,9 @@ mozIProgressHandler is to be implemented by storage consumers that
 wish to receive callbacks during the request execution.
 
 
-## onProgress ##
+## Methods ##
+
+### onProgress ###
 
 onProgress is invoked periodically during long running calls.
 

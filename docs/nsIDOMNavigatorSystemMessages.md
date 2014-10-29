@@ -4,6 +4,8 @@ layout: default
 
 # nsIDOMNavigatorSystemMessages #
 
-## mozSetMessageHandler ##
+## Methods ##
 
-## mozHasPendingMessage ##
+### mozSetMessageHandler ###
+
+### mozHasPendingMessage ###

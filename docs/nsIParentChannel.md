@@ -7,12 +7,14 @@ layout: default
 Implemented by chrome side of IPC protocols.
 
 
-## setParentListener ##
+## Methods ##
+
+### setParentListener ###
 
 Called to set the HttpChannelParentListener object (optional).
 
 
-## delete ##
+### delete ###
 
 Called to invoke deletion of the IPC protocol.
 

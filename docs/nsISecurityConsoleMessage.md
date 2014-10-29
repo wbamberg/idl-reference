@@ -4,6 +4,8 @@ layout: default
 
 # nsISecurityConsoleMessage #
 
-## tag ##
+## Attributes ##
 
-## category ##
+### tag ###
+
+### category ###

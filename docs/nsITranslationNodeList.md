@@ -4,8 +4,12 @@ layout: default
 
 # nsITranslationNodeList #
 
-## length ##
+## Methods ##
 
-## item ##
+### item ###
 
-## isTranslationRootAtIndex ##
+### isTranslationRootAtIndex ###
+
+## Attributes ##
+
+### length ###

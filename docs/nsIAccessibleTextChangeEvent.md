@@ -7,22 +7,24 @@ layout: default
 Fired when an accessible's text changes.
 
 
-## start ##
+## Attributes ##
+
+### start ###
 
 Returns offset of changed text in accessible.
 
 
-## length ##
+### length ###
 
 Returns length of changed text.
 
 
-## isInserted ##
+### isInserted ###
 
 Returns true if text was inserted, otherwise false.
 
 
-## modifiedText ##
+### modifiedText ###
 
 The inserted or removed text
 

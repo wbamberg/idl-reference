@@ -9,4 +9,6 @@ nsIGeneratingKeypairInfoDialogs
  while generating a key pair.
 
 
-## displayGeneratingKeypairInfo ##
+## Methods ##
+
+### displayGeneratingKeypairInfo ###

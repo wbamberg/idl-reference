@@ -17,34 +17,9 @@ The agent will invoke a callback to notify Gecko components of
   1. Changes to the playable status of this channel.
 
 
-## AUDIO_AGENT_CHANNEL_NORMAL ##
+## Methods ##
 
-## AUDIO_AGENT_CHANNEL_CONTENT ##
-
-## AUDIO_AGENT_CHANNEL_NOTIFICATION ##
-
-## AUDIO_AGENT_CHANNEL_ALARM ##
-
-## AUDIO_AGENT_CHANNEL_TELEPHONY ##
-
-## AUDIO_AGENT_CHANNEL_RINGER ##
-
-## AUDIO_AGENT_CHANNEL_PUBLICNOTIFICATION ##
-
-## AUDIO_AGENT_CHANNEL_ERROR ##
-
-## AUDIO_AGENT_STATE_NORMAL ##
-
-## AUDIO_AGENT_STATE_MUTED ##
-
-## AUDIO_AGENT_STATE_FADED ##
-
-## audioChannelType ##
-
-Before init() is called, this returns AUDIO_AGENT_CHANNEL_ERROR.
-
-
-## init ##
+### init ###
 
 Initialize the agent with a channel type.
 Note: This function should only be called once.
@@ -62,7 +37,7 @@ Note: This function should only be called once.
       object.
 
 
-## initWithWeakCallback ##
+### initWithWeakCallback ###
 
 This method is just like init(), except the audio channel agent keeps a
 weak reference to the callback object.
@@ -71,7 +46,7 @@ In order for this to work, |callback| must implement
 nsISupportsWeakReference.
 
 
-## initWithVideo ##
+### initWithVideo ###
 
 This method is just like init(), and specify the channel is associated
 with video.
@@ -80,7 +55,7 @@ with video.
    true if weak reference should be hold.
 
 
-## startPlaying ##
+### startPlaying ###
 
 Notify the agent that we want to start playing.
 Note: Gecko component SHOULD call this function first then start to
@@ -96,7 +71,7 @@ Note: Gecko component SHOULD call this function first then start to
          component should start playback as well as reducing the volume.
 
 
-## stopPlaying ##
+### stopPlaying ###
 
 Notify the agent we no longer want to play.
 
@@ -106,14 +81,45 @@ Note : even if startPlaying() returned false, the agent would still be
        channel service.
 
 
-## setVisibilityState ##
+### setVisibilityState ###
 
 Notify the agent of the visibility state of the window using this agent.
 @param visible
    True if the window associated with the agent is visible.
 
 
-## windowVolume ##
+## Attributes ##
+
+### audioChannelType ###
+
+Before init() is called, this returns AUDIO_AGENT_CHANNEL_ERROR.
+
+
+### windowVolume ###
 
 Retrieve the volume from the window.
 
+
+## Constants ##
+
+### AUDIO_AGENT_CHANNEL_NORMAL ###
+
+### AUDIO_AGENT_CHANNEL_CONTENT ###
+
+### AUDIO_AGENT_CHANNEL_NOTIFICATION ###
+
+### AUDIO_AGENT_CHANNEL_ALARM ###
+
+### AUDIO_AGENT_CHANNEL_TELEPHONY ###
+
+### AUDIO_AGENT_CHANNEL_RINGER ###
+
+### AUDIO_AGENT_CHANNEL_PUBLICNOTIFICATION ###
+
+### AUDIO_AGENT_CHANNEL_ERROR ###
+
+### AUDIO_AGENT_STATE_NORMAL ###
+
+### AUDIO_AGENT_STATE_MUTED ###
+
+### AUDIO_AGENT_STATE_FADED ###

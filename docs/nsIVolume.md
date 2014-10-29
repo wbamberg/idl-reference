@@ -4,52 +4,58 @@ layout: default
 
 # nsIVolume #
 
-## STATE_INIT ##
+## Methods ##
 
-## STATE_NOMEDIA ##
+### getStats ###
 
-## STATE_IDLE ##
+### format ###
 
-## STATE_PENDING ##
+### mount ###
 
-## STATE_CHECKING ##
+### unmount ###
 
-## STATE_MOUNTED ##
+## Attributes ##
 
-## STATE_UNMOUNTING ##
+### name ###
 
-## STATE_FORMATTING ##
+### mountPoint ###
 
-## STATE_SHARED ##
+### state ###
 
-## STATE_SHAREDMNT ##
+### mountGeneration ###
 
-## name ##
+### mountLockName ###
 
-## mountPoint ##
+### isMountLocked ###
 
-## state ##
+### isMediaPresent ###
 
-## mountGeneration ##
+### isSharing ###
 
-## mountLockName ##
+### isFormatting ###
 
-## isMountLocked ##
+### isUnmounting ###
 
-## isMediaPresent ##
+### isFake ###
 
-## isSharing ##
+## Constants ##
 
-## isFormatting ##
+### STATE_INIT ###
 
-## isUnmounting ##
+### STATE_NOMEDIA ###
 
-## getStats ##
+### STATE_IDLE ###
 
-## format ##
+### STATE_PENDING ###
 
-## mount ##
+### STATE_CHECKING ###
 
-## unmount ##
+### STATE_MOUNTED ###
 
-## isFake ##
+### STATE_UNMOUNTING ###
+
+### STATE_FORMATTING ###
+
+### STATE_SHARED ###
+
+### STATE_SHAREDMNT ###

@@ -4,7 +4,9 @@ layout: default
 
 # mozIAsyncHistory #
 
-## getPlacesInfo ##
+## Methods ##
+
+### getPlacesInfo ###
 
 Gets the available information for the given array of places, each
 identified by either nsIURI or places GUID (string).
@@ -30,7 +32,7 @@ called for it with NS_ERROR_NOT_AVAILABLE result code.
         - Not providing at least one valid GUID or URI. 
 
 
-## updatePlaces ##
+### updatePlaces ###
 
 Adds a set of visits for one or more mozIPlaceInfo objects, and updates
 each mozIPlaceInfo's title or guid.
@@ -55,7 +57,7 @@ aCallback.handleResult is called for each visit added.
         - Providing an invalid transitionType for a mozIVisitInfo.
 
 
-## isURIVisited ##
+### isURIVisited ###
 
 Checks if a given URI has been visited.
 

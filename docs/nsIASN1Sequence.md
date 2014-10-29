@@ -27,19 +27,21 @@ in a human user interface, like in a tree widget
 where open/close state of nodes must be remembered.
 
 
-## ASN1Objects ##
+## Attributes ##
+
+### ASN1Objects ###
 
  The array of objects stored in the sequence.
 
 
-## isValidContainer ##
+### isValidContainer ###
 
  Whether the node at this position in the ASN.1 data structure
  sequence contains sub elements understood by the
  application.
 
 
-## isExpanded ##
+### isExpanded ###
 
  Whether the contained objects should be shown or hidden.
  A UI implementation can use this flag to store the current

@@ -4,17 +4,9 @@ layout: default
 
 # nsIDragService #
 
-## DRAGDROP_ACTION_NONE ##
+## Methods ##
 
-## DRAGDROP_ACTION_COPY ##
-
-## DRAGDROP_ACTION_MOVE ##
-
-## DRAGDROP_ACTION_LINK ##
-
-## DRAGDROP_ACTION_UNINITIALIZED ##
-
-## invokeDragSession ##
+### invokeDragSession ###
 
 Starts a modal drag session with an array of transaferables 
 
@@ -24,7 +16,7 @@ Starts a modal drag session with an array of transaferables
 @param  aActionType - specified which of copy/move/link are allowed
 
 
-## invokeDragSessionWithImage ##
+### invokeDragSessionWithImage ###
 
 Starts a modal drag session using an image. The first four arguments are
 the same as invokeDragSession.
@@ -51,25 +43,25 @@ The aDragEvent must be supplied as the current screen coordinates of the
 event are needed to calculate the image location.
 
 
-## invokeDragSessionWithSelection ##
+### invokeDragSessionWithSelection ###
 
 Start a modal drag session using the selection as the drag image.
 The aDragEvent must be supplied as the current screen coordinates of the
 event are needed to calculate the image location.
 
 
-## getCurrentSession ##
+### getCurrentSession ###
 
 Returns the current Drag Session  
 
 
-## startDragSession ##
+### startDragSession ###
 
 Tells the Drag Service to start a drag session. This is called when
 an external drag occurs
 
 
-## endDragSession ##
+### endDragSession ###
 
 Tells the Drag Service to end a drag session. This is called when
 an external drag occurs
@@ -78,17 +70,29 @@ If aDoneDrag is true, the drag has finished, otherwise the drag has
 just left the window.
 
 
-## fireDragEventAtSource ##
+### fireDragEventAtSource ###
 
 Fire a drag event at the source of the drag
 
 
-## suppress ##
+### suppress ###
 
 Increase/decrease dragging suppress level by one.
 If level is greater than one, dragging is disabled.
 
 
-## unsuppress ##
+### unsuppress ###
 
-## dragMoved ##
+### dragMoved ###
+
+## Constants ##
+
+### DRAGDROP_ACTION_NONE ###
+
+### DRAGDROP_ACTION_COPY ###
+
+### DRAGDROP_ACTION_MOVE ###
+
+### DRAGDROP_ACTION_LINK ###
+
+### DRAGDROP_ACTION_UNINITIALIZED ###

@@ -4,4 +4,6 @@ layout: default
 
 # nsIRDFNode #
 
-## EqualsNode ##
+## Methods ##
+
+### EqualsNode ###

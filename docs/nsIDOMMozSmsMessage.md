@@ -4,28 +4,30 @@ layout: default
 
 # nsIDOMMozSmsMessage #
 
-## type ##
+## Attributes ##
+
+### type ###
 
 |type| is always "sms".
 
 
-## id ##
+### id ###
 
-## threadId ##
+### threadId ###
 
-## iccId ##
+### iccId ###
 
 Integrated Circuit Card Identifier.
 
 Will be null if ICC is not available.
 
 
-## delivery ##
+### delivery ###
 
 Should be "received", "sending", "sent" or "error".
 
 
-## deliveryStatus ##
+### deliveryStatus ###
 
 Possible delivery status values for above delivery states are:
 
@@ -37,21 +39,21 @@ Possible delivery status values for above delivery states are:
 "error"   : "error"
 
 
-## sender ##
+### sender ###
 
-## receiver ##
+### receiver ###
 
-## body ##
+### body ###
 
-## messageClass ##
+### messageClass ###
 
 Should be "normal", "class-0", "class-1", "class-2" or "class-3".
 
 
-## timestamp ##
+### timestamp ###
 
-## sentTimestamp ##
+### sentTimestamp ###
 
-## deliveryTimestamp ##
+### deliveryTimestamp ###
 
-## read ##
+### read ###

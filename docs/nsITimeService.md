@@ -4,4 +4,6 @@ layout: default
 
 # nsITimeService #
 
-## set ##
+## Methods ##
+
+### set ###

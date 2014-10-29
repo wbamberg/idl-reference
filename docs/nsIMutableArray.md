@@ -19,7 +19,9 @@ Any of these methods may throw NS_ERROR_OUT_OF_MEMORY when the
 array must grow to complete the call, but the allocation fails.
 
 
-## appendElement ##
+## Methods ##
+
+### appendElement ###
 
 appendElement()
 
@@ -33,7 +35,7 @@ Append an element at the end of the array.
                          nsIWeakReference.
 
 
-## removeElementAt ##
+### removeElementAt ###
 
 removeElementAt()
 
@@ -46,7 +48,7 @@ first, then call removeElementAt().
 
 
 
-## insertElementAt ##
+### insertElementAt ###
 
 insertElementAt()
 
@@ -69,7 +71,7 @@ position, up by one.
                          nsIWeakReference.
 
 
-## replaceElementAt ##
+### replaceElementAt ###
 
 replaceElementAt()
 
@@ -94,7 +96,7 @@ Replace the element at the given position.
                          nsIWeakReference.
 
 
-## clear ##
+### clear ###
 
 clear()
 

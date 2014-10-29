@@ -4,33 +4,18 @@ layout: default
 
 # nsIOfflineCacheUpdateService #
 
-## ALLOW_NO_WARN ##
+## Methods ##
 
-Constants for the offline-app permission.
+### getUpdate ###
 
-XXX: This isn't a great place for this, but it's really the only
-private offline-app-related interface
-
-
-Allow the domain to use offline APIs, and don't warn about excessive
-usage.
-
-
-## numUpdates ##
-
-Access to the list of cache updates that have been scheduled.
-
-
-## getUpdate ##
-
-## scheduleUpdate ##
+### scheduleUpdate ###
 
 Schedule a cache update for a given offline manifest.  If an
 existing update is scheduled or running, that update will be returned.
 Otherwise a new update will be scheduled.
 
 
-## scheduleAppUpdate ##
+### scheduleAppUpdate ###
 
 Schedule a cache update for a given offline manifest using app cache
 bound to the given appID+inBrowser flag.  If an existing update is
@@ -38,13 +23,13 @@ scheduled or running, that update will be returned. Otherwise a new
 update will be scheduled.
 
 
-## scheduleOnDocumentStop ##
+### scheduleOnDocumentStop ###
 
 Schedule a cache update for a manifest when the document finishes
 loading.
 
 
-## checkForUpdate ##
+### checkForUpdate ###
 
 Schedule a check to see if an update is available.
 
@@ -57,7 +42,7 @@ For arguments see nsIOfflineCacheUpdate.initForUpdateCheck() method
 description.
 
 
-## offlineAppAllowed ##
+### offlineAppAllowed ###
 
 Checks whether a principal should have access to the offline
 cache.
@@ -69,7 +54,7 @@ cache.
        the pref service will be used.
 
 
-## offlineAppAllowedForURI ##
+### offlineAppAllowedForURI ###
 
 Checks whether a document at the given URI should have access
 to the offline cache.
@@ -81,9 +66,30 @@ to the offline cache.
        the pref service will be used.
 
 
-## allowOfflineApp ##
+### allowOfflineApp ###
 
 Sets the "offline-app" permission for the principal.
 In the single process model calls directly on permission manager.
 In the multi process model dispatches to the parent process.
+
+
+## Attributes ##
+
+### numUpdates ###
+
+Access to the list of cache updates that have been scheduled.
+
+
+## Constants ##
+
+### ALLOW_NO_WARN ###
+
+Constants for the offline-app permission.
+
+XXX: This isn't a great place for this, but it's really the only
+private offline-app-related interface
+
+
+Allow the domain to use offline APIs, and don't warn about excessive
+usage.
 

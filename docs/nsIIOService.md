@@ -13,7 +13,9 @@ as a convenience to the programmer and in some cases to improve performance
 by eliminating intermediate data structures and interfaces.
 
 
-## getProtocolHandler ##
+## Methods ##
+
+### getProtocolHandler ###
 
 Returns a protocol handler for a given URI scheme.
 
@@ -21,7 +23,7 @@ Returns a protocol handler for a given URI scheme.
 @return reference to corresponding nsIProtocolHandler
 
 
-## getProtocolFlags ##
+### getProtocolFlags ###
 
 Returns the protocol flags for a given scheme.
 
@@ -29,7 +31,7 @@ Returns the protocol flags for a given scheme.
 @return value of corresponding nsIProtocolHandler::protocolFlags
 
 
-## newURI ##
+### newURI ###
 
 This method constructs a new URI by determining the scheme of the
 URI spec, and then delegating the construction of the URI to the
@@ -39,7 +41,7 @@ the resulting URI object to obtain a more specific type of URI.
 @see nsIProtocolHandler::newURI
 
 
-## newFileURI ##
+### newFileURI ###
 
 This method constructs a new URI from a nsIFile.
 
@@ -51,7 +53,7 @@ callers to specify whether this is a file or directory by
 splitting this  into newDirURI() and newActualFileURI().
 
 
-## newChannelFromURI2 ##
+### newChannelFromURI2 ###
 
 Creates a channel for a given URI.
 
@@ -59,7 +61,7 @@ Creates a channel for a given URI.
 @return reference to the new nsIChannel object
 
 
-## newChannelFromURI ##
+### newChannelFromURI ###
 
 Creates a channel for a given URI.
 
@@ -67,28 +69,17 @@ Creates a channel for a given URI.
 @return reference to the new nsIChannel object
 
 
-## newChannel2 ##
+### newChannel2 ###
 
 Equivalent to newChannelFromURI(newURI(...))
 
 
-## newChannel ##
+### newChannel ###
 
 Equivalent to newChannelFromURI(newURI(...))
 
 
-## offline ##
-
-Returns true if networking is in "offline" mode. When in offline mode, 
-attempts to access the network will fail (although this does not 
-necessarily correlate with whether there is actually a network 
-available -- that's hard to detect without causing the dialer to 
-come up).
-
-Changing this fires observer notifications ... see below.
-
-
-## setAppOffline ##
+### setAppOffline ###
 
 Set whether network appears to be offline for network connections from
 a given appID.
@@ -98,7 +89,7 @@ notification, which is also sent to child processes containing this appId.
 'state' must one of nsIAppOfflineInfo::{ONLINE|OFFLINE|WIFI_ONLY}.
 
 
-## isAppOffline ##
+### isAppOffline ###
 
 Returns true if given appId is currently not allowed to make network
 connections. It will return true if the app is in the wifi-only state
@@ -106,13 +97,13 @@ and we are currently on a 3G connection.
 The returned value does not depend on the offline state of the browser.
 
 
-## getAppOfflineState ##
+### getAppOfflineState ###
 
 Returns the state of the app with the given appId.
 returns nsIAppOfflineInfo::{ONLINE,OFFLINE,WIFI_ONLY}
 
 
-## allowPort ##
+### allowPort ###
 
 Checks if a port number is banned. This involves consulting a list of
 unsafe ports, corresponding to network services that may be easily
@@ -125,7 +116,7 @@ ensuring reasonable, default protection.
 @see nsIProtocolHandler::allowPort
 
 
-## extractScheme ##
+### extractScheme ###
 
 Utility to extract the scheme from a URL string, consistently and
 according to spec (see RFC 2396).
@@ -138,4 +129,17 @@ is provided purely as an optimization.
 @return URL scheme
 
 @throws NS_ERROR_MALFORMED_URI if URL string is not of the right form.
+
+
+## Attributes ##
+
+### offline ###
+
+Returns true if networking is in "offline" mode. When in offline mode, 
+attempts to access the network will fail (although this does not 
+necessarily correlate with whether there is actually a network 
+available -- that's hard to detect without causing the dialer to 
+come up).
+
+Changing this fires observer notifications ... see below.
 

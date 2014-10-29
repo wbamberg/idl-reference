@@ -4,7 +4,9 @@ layout: default
 
 # nsIComponentManager #
 
-## getClassObject ##
+## Methods ##
+
+### getClassObject ###
 
 getClassObject
 
@@ -14,7 +16,7 @@ CID aClass
 @param aClass The classid of the factory that is being requested
 
 
-## getClassObjectByContractID ##
+### getClassObjectByContractID ###
 
 getClassObjectByContractID
 
@@ -24,7 +26,7 @@ CID aClass
 @param aClass The classid of the factory that is being requested
 
 
-## createInstance ##
+### createInstance ###
 
 createInstance
 
@@ -35,7 +37,7 @@ Create an instance of the CID aClass and return the interface aIID.
 @param aIID : IID of interface requested
 
 
-## createInstanceByContractID ##
+### createInstanceByContractID ###
 
 createInstanceByContractID
 
@@ -47,7 +49,7 @@ interface aIID.
 @param aIID : IID of interface requested
 
 
-## addBootstrappedManifestLocation ##
+### addBootstrappedManifestLocation ###
 
 addBootstrappedManifestLocation
 
@@ -57,7 +59,7 @@ Adds a bootstrapped manifest location on runtime.
                    or an XPI with it on the root.
 
 
-## removeBootstrappedManifestLocation ##
+### removeBootstrappedManifestLocation ###
 
 removeBootstrappedManifestLocation
 
@@ -67,7 +69,7 @@ Removes a bootstrapped manifest location on runtime.
                    or an XPI with it on the root.
 
 
-## getManifestLocations ##
+### getManifestLocations ###
 
 getManifestLocations
 

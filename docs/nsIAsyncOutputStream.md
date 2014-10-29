@@ -16,7 +16,9 @@ necessary that a non-blocking nsIOutputStream implementation also implement
 nsIAsyncOutputStream.
 
 
-## closeWithStatus ##
+## Methods ##
+
+### closeWithStatus ###
 
 This method closes the stream and sets its internal status.  If the 
 stream is already closed, then this method is ignored.  Once the stream
@@ -36,7 +38,7 @@ greatly simplifies working with pipes in some cases.
        it has been closed.
 
 
-## asyncWait ##
+### asyncWait ###
 
 Asynchronously wait for the stream to be writable or closed.  The
 notification is one-shot, meaning that each asyncWait call will result
@@ -69,7 +71,9 @@ event will be dispatched when the stream becomes writable or closed.
        target.
 
 
-## WAIT_CLOSURE_ONLY ##
+## Constants ##
+
+### WAIT_CLOSURE_ONLY ###
 
 If passed to asyncWait, this flag overrides the default behavior,
 causing the OnOutputStreamReady notification to be suppressed until the

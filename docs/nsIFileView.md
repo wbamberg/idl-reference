@@ -4,24 +4,30 @@ layout: default
 
 # nsIFileView #
 
-## sortName ##
+## Methods ##
 
-## sortSize ##
+### sort ###
 
-## sortDate ##
+### setDirectory ###
 
-## showHiddenFiles ##
+### setFilter ###
 
-## showOnlyDirectories ##
+## Attributes ##
 
-## sortType ##
+### showHiddenFiles ###
 
-## reverseSort ##
+### showOnlyDirectories ###
 
-## sort ##
+### sortType ###
 
-## setDirectory ##
+### reverseSort ###
 
-## setFilter ##
+### selectedFiles ###
 
-## selectedFiles ##
+## Constants ##
+
+### sortName ###
+
+### sortSize ###
+
+### sortDate ###

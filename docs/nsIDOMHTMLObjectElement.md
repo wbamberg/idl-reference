@@ -4,48 +4,52 @@ layout: default
 
 # nsIDOMHTMLObjectElement #
 
-## form ##
+## Methods ##
 
-## code ##
+### checkValidity ###
 
-## align ##
+### setCustomValidity ###
 
-## archive ##
+## Attributes ##
 
-## border ##
+### form ###
 
-## codeBase ##
+### code ###
 
-## codeType ##
+### align ###
 
-## data ##
+### archive ###
 
-## declare ##
+### border ###
 
-## height ##
+### codeBase ###
 
-## hspace ##
+### codeType ###
 
-## name ##
+### data ###
 
-## standby ##
+### declare ###
 
-## type ##
+### height ###
 
-## useMap ##
+### hspace ###
 
-## vspace ##
+### name ###
 
-## width ##
+### standby ###
 
-## contentDocument ##
+### type ###
 
-## willValidate ##
+### useMap ###
 
-## validity ##
+### vspace ###
 
-## validationMessage ##
+### width ###
 
-## checkValidity ##
+### contentDocument ###
 
-## setCustomValidity ##
+### willValidate ###
+
+### validity ###
+
+### validationMessage ###

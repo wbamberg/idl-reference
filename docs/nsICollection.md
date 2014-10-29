@@ -4,18 +4,20 @@ layout: default
 
 # nsICollection #
 
-## Count ##
+## Methods ##
 
-## GetElementAt ##
+### Count ###
 
-## QueryElementAt ##
+### GetElementAt ###
 
-## SetElementAt ##
+### QueryElementAt ###
 
-## AppendElement ##
+### SetElementAt ###
 
-## RemoveElement ##
+### AppendElement ###
 
-## Enumerate ##
+### RemoveElement ###
 
-## Clear ##
+### Enumerate ###
+
+### Clear ###

@@ -4,13 +4,9 @@ layout: default
 
 # nsIStyleSheetService #
 
-## AGENT_SHEET ##
+## Methods ##
 
-## USER_SHEET ##
-
-## AUTHOR_SHEET ##
-
-## loadAndRegisterSheet ##
+### loadAndRegisterSheet ###
 
 Synchronously loads a style sheet from |sheetURI| and adds it to the list
 of user or agent style sheets.
@@ -29,21 +25,29 @@ Sheets added via this API take effect on all documents, including
 already-loaded ones, immediately.
 
 
-## sheetRegistered ##
+### sheetRegistered ###
 
 Returns true if a style sheet at |sheetURI| has previously been
 added to the list of style sheets specified by |type|.
 
 
-## preloadSheet ##
+### preloadSheet ###
 
 Synchronously loads a style sheet from |sheetURI| and returns the
 new style sheet object. Can be used with nsIDOMWindowUtils.addSheet.
 
 
-## unregisterSheet ##
+### unregisterSheet ###
 
 Remove the style sheet at |sheetURI| from the list of style sheets
 specified by |type|.  The removal takes effect immediately, even for
 already-loaded documents.
 
+
+## Constants ##
+
+### AGENT_SHEET ###
+
+### USER_SHEET ###
+
+### AUTHOR_SHEET ###

@@ -4,8 +4,10 @@ layout: default
 
 # nsISystemMessagesInternal #
 
-## sendMessage ##
+## Methods ##
 
-## broadcastMessage ##
+### sendMessage ###
 
-## registerPage ##
+### broadcastMessage ###
+
+### registerPage ###

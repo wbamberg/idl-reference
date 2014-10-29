@@ -8,7 +8,9 @@ This interface serves as a closure for nsIProtocolProxyService's
 asyncResolve method.
 
 
-## onProxyAvailable ##
+## Methods ##
+
+### onProxyAvailable ###
 
 This method is called when proxy info is available or when an error
 in the proxy resolution occurs.

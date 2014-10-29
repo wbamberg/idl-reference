@@ -8,7 +8,9 @@ nsICache is a namespace for various cache constants.  It does not represent
 an actual object.
 
 
-## ACCESS_NONE ##
+## Constants ##
+
+### ACCESS_NONE ###
 
 Access Modes
 
@@ -80,13 +82,13 @@ access only) to a new cache entry.
 
 
 
-## ACCESS_READ ##
+### ACCESS_READ ###
 
-## ACCESS_WRITE ##
+### ACCESS_WRITE ###
 
-## ACCESS_READ_WRITE ##
+### ACCESS_READ_WRITE ###
 
-## STORE_ANYWHERE ##
+### STORE_ANYWHERE ###
 
 Storage Policy
 
@@ -105,22 +107,22 @@ STORE_OFFLINE         - Requires the cache entry to reside in persistent,
                         reliable storage for offline use.
 
 
-## STORE_IN_MEMORY ##
+### STORE_IN_MEMORY ###
 
-## STORE_ON_DISK ##
+### STORE_ON_DISK ###
 
-## STORE_OFFLINE ##
+### STORE_OFFLINE ###
 
-## NOT_STREAM_BASED ##
+### NOT_STREAM_BASED ###
 
 All entries for a cache session are stored as streams of data or
 as objects.  These constant my be used to specify the type of entries
 when calling nsICacheService::CreateSession().
 
 
-## STREAM_BASED ##
+### STREAM_BASED ###
 
-## NON_BLOCKING ##
+### NON_BLOCKING ###
 
 The synchronous OpenCacheEntry() may be blocking or non-blocking.  If a cache entry is
 waiting to be validated by another cache descriptor (so no new cache descriptors for that
@@ -131,9 +133,9 @@ entry will be created and returned.  If the cache entry was doomed, then a descr
 will be created for a new cache entry for the key. 
 
 
-## BLOCKING ##
+### BLOCKING ###
 
-## NO_EXPIRATION_TIME ##
+### NO_EXPIRATION_TIME ###
 
 Constant meaning no expiration time.
 

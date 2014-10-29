@@ -8,7 +8,9 @@ A channel implementing this interface allows diverting from an
 nsIStreamListener in the child process to one in the parent.
 
 
-## divertToParent ##
+## Methods ##
+
+### divertToParent ###
 
 CHILD ONLY.
 Called by Necko client in child process during OnStartRequest to divert

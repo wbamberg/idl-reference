@@ -4,8 +4,12 @@ layout: default
 
 # nsIAssociatedContentSecurity #
 
-## countSubRequestsBrokenSecurity ##
+## Methods ##
 
-## countSubRequestsNoSecurity ##
+### flush ###
 
-## flush ##
+## Attributes ##
+
+### countSubRequestsBrokenSecurity ###
+
+### countSubRequestsNoSecurity ###

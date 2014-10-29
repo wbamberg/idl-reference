@@ -14,7 +14,9 @@ Only one filter may apply to each rule within the template and may be
 assigned using the template builder's addRuleFilter method.
 
 
-## match ##
+## Methods ##
+
+### match ###
 
 Evaluate a result and return true if the result is accepted by this
 filter, or false if it is rejected. Accepted results will have output

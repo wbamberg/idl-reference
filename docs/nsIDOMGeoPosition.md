@@ -4,6 +4,8 @@ layout: default
 
 # nsIDOMGeoPosition #
 
-## timestamp ##
+## Attributes ##
 
-## coords ##
+### timestamp ###
+
+### coords ###

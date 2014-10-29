@@ -7,18 +7,20 @@ layout: default
 Interface for managing and accessing the applications systems
 
 
-## bookmarks ##
+## Attributes ##
+
+### bookmarks ###
 
 The root bookmarks object for the application.
 Contains all the bookmark roots in the system.
 
 
-## windows ##
+### windows ###
 
 An array of browser windows within the application.
 
 
-## activeWindow ##
+### activeWindow ###
 
 The currently active browser window.
 

@@ -4,13 +4,9 @@ layout: default
 
 # nsIAuthPrompt #
 
-## SAVE_PASSWORD_NEVER ##
+## Methods ##
 
-## SAVE_PASSWORD_FOR_SESSION ##
-
-## SAVE_PASSWORD_PERMANENTLY ##
-
-## prompt ##
+### prompt ###
 
 Puts up a text input dialog with OK and Cancel buttons.
 Note: prompt uses separate args for the "in" and "out" values of the
@@ -26,7 +22,7 @@ Note: prompt uses separate args for the "in" and "out" values of the
 @return true for OK, false for Cancel
 
 
-## promptUsernameAndPassword ##
+### promptUsernameAndPassword ###
 
 Puts up a username/password dialog with OK and Cancel buttons.
 Puts up a password dialog with OK and Cancel buttons.
@@ -41,7 +37,7 @@ Puts up a password dialog with OK and Cancel buttons.
 @return true for OK, false for Cancel
 
 
-## promptPassword ##
+### promptPassword ###
 
 Puts up a password dialog with OK and Cancel buttons.
 @param  dialogText    The title for the dialog.
@@ -59,3 +55,11 @@ Puts up a password dialog with OK and Cancel buttons.
                       selected.
 @return true for OK, false for Cancel
 
+
+## Constants ##
+
+### SAVE_PASSWORD_NEVER ###
+
+### SAVE_PASSWORD_FOR_SESSION ###
+
+### SAVE_PASSWORD_PERMANENTLY ###

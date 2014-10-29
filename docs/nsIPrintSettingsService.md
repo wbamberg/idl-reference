@@ -4,37 +4,9 @@ layout: default
 
 # nsIPrintSettingsService #
 
-## globalPrintSettings ##
+## Methods ##
 
-Returns a "global" PrintSettings object 
-Creates a new the first time, if one doesn't exist.
-
-Then returns the same object each time after that.
-
-Initializes the globalPrintSettings from the default printer
-
-
-## newPrintSettings ##
-
-Returns a new, unique PrintSettings object each time.
-
-For example, if each browser was to have its own unique
-PrintSettings, then each browser window would call this to
-create its own unique PrintSettings object.
-
-If each browse window was to use the same PrintSettings object
-then it should use "globalPrintSettings"
-
-Initializes the newPrintSettings from the default printer
-
-
-
-## defaultPrinterName ##
-
-The name of the last printer used, or else the system default printer.
-
-
-## initPrintSettingsFromPrinter ##
+### initPrintSettingsFromPrinter ###
 
 Initializes certain settings from the native printer into the PrintSettings
 if aPrinterName is null then it uses the default printer name if it can
@@ -44,7 +16,7 @@ These settings include, but are not limited to:
   Number of Copies
 
 
-## initPrintSettingsFromPrefs ##
+### initPrintSettingsFromPrefs ###
 
 Reads PrintSettings values from Prefs,
 the values to be read are indicated by the "flags" arg.
@@ -67,7 +39,7 @@ Items not read:
 
 
 
-## savePrintSettingsToPrefs ##
+### savePrintSettingsToPrefs ###
 
 Writes PrintSettings values to Prefs, 
 the values to be written are indicated by the "flags" arg.
@@ -85,4 +57,36 @@ Items not written:
   docURL, howToEnableFrameUI, isCancelled, printFrameTypeUsage
   printFrameType, printSilent, shrinkToFit, numCopies
 
+
+
+## Attributes ##
+
+### globalPrintSettings ###
+
+Returns a "global" PrintSettings object 
+Creates a new the first time, if one doesn't exist.
+
+Then returns the same object each time after that.
+
+Initializes the globalPrintSettings from the default printer
+
+
+### newPrintSettings ###
+
+Returns a new, unique PrintSettings object each time.
+
+For example, if each browser was to have its own unique
+PrintSettings, then each browser window would call this to
+create its own unique PrintSettings object.
+
+If each browse window was to use the same PrintSettings object
+then it should use "globalPrintSettings"
+
+Initializes the newPrintSettings from the default printer
+
+
+
+### defaultPrinterName ###
+
+The name of the last printer used, or else the system default printer.
 

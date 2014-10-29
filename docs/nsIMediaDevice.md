@@ -4,12 +4,14 @@ layout: default
 
 # nsIMediaDevice #
 
-## type ##
+## Attributes ##
 
-## name ##
+### type ###
 
-## id ##
+### name ###
 
-## facingMode ##
+### id ###
 
-## mediaSource ##
+### facingMode ###
+
+### mediaSource ###

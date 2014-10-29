@@ -7,7 +7,9 @@ layout: default
 Callback for asynchronous initialization of nsIBrowserSearchService
 
 
-## onInitComplete ##
+## Methods ##
+
+### onInitComplete ###
 
 Called once initialization of the browser search service is complete.
 

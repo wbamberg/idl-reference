@@ -4,7 +4,9 @@ layout: default
 
 # mozIStorageRow #
 
-## getResultByIndex ##
+## Methods ##
+
+### getResultByIndex ###
 
 Obtains the result of a given column specified by aIndex.
 
@@ -13,7 +15,7 @@ Obtains the result of a given column specified by aIndex.
 @returns the result of the specified column.
 
 
-## getResultByName ##
+### getResultByName ###
 
 Obtains the result of a given column specified by aName.
 

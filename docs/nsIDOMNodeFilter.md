@@ -4,36 +4,40 @@ layout: default
 
 # nsIDOMNodeFilter #
 
-## FILTER_ACCEPT ##
+## Methods ##
 
-## FILTER_REJECT ##
+### acceptNode ###
 
-## FILTER_SKIP ##
+## Constants ##
 
-## SHOW_ALL ##
+### FILTER_ACCEPT ###
 
-## SHOW_ELEMENT ##
+### FILTER_REJECT ###
 
-## SHOW_ATTRIBUTE ##
+### FILTER_SKIP ###
 
-## SHOW_TEXT ##
+### SHOW_ALL ###
 
-## SHOW_CDATA_SECTION ##
+### SHOW_ELEMENT ###
 
-## SHOW_ENTITY_REFERENCE ##
+### SHOW_ATTRIBUTE ###
 
-## SHOW_ENTITY ##
+### SHOW_TEXT ###
 
-## SHOW_PROCESSING_INSTRUCTION ##
+### SHOW_CDATA_SECTION ###
 
-## SHOW_COMMENT ##
+### SHOW_ENTITY_REFERENCE ###
 
-## SHOW_DOCUMENT ##
+### SHOW_ENTITY ###
 
-## SHOW_DOCUMENT_TYPE ##
+### SHOW_PROCESSING_INSTRUCTION ###
 
-## SHOW_DOCUMENT_FRAGMENT ##
+### SHOW_COMMENT ###
 
-## SHOW_NOTATION ##
+### SHOW_DOCUMENT ###
 
-## acceptNode ##
+### SHOW_DOCUMENT_TYPE ###
+
+### SHOW_DOCUMENT_FRAGMENT ###
+
+### SHOW_NOTATION ###

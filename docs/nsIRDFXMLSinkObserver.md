@@ -8,31 +8,33 @@ An observer that is notified as progress is made on the load
 of an RDF/XML document in an <code>nsIRDFXMLSink</code>.
 
 
-## onBeginLoad ##
+## Methods ##
+
+### onBeginLoad ###
 
 Called when the load begins.
 @param aSink the RDF/XML sink on which the load is beginning.
 
 
-## onInterrupt ##
+### onInterrupt ###
 
 Called when the load is suspended (e.g., for network quantization).
 @param aSink the RDF/XML sink that is being interrupted.
 
 
-## onResume ##
+### onResume ###
 
 Called when a suspended load is resuming.
 @param aSink the RDF/XML sink that is resuming.
 
 
-## onEndLoad ##
+### onEndLoad ###
 
 Called when an RDF/XML load completes successfully.
 @param aSink the RDF/XML sink that has finished loading.
 
 
-## onError ##
+### onError ###
 
 Called when an error occurs during the load
 @param aSink the RDF/XML sink in which the error occurred

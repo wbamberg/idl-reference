@@ -7,4 +7,6 @@ layout: default
 Media stream controller Service API.
 
 
-## create ##
+## Methods ##
+
+### create ###

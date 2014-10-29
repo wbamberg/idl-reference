@@ -11,4 +11,6 @@ nsIDNSService.AsyncResolve, so we have access to original listener for
 comparison purposes.
 
 
-## originalListener ##
+## Attributes ##
+
+### originalListener ###

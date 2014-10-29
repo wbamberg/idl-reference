@@ -4,65 +4,67 @@ layout: default
 
 # nsIRDFContainerUtils #
 
-## IsOrdinalProperty ##
+## Methods ##
+
+### IsOrdinalProperty ###
 
 Returns 'true' if the property is an RDF ordinal property.
 
 
-## IndexToOrdinalResource ##
+### IndexToOrdinalResource ###
 
 Convert the specified index to an ordinal property.
 
 
-## OrdinalResourceToIndex ##
+### OrdinalResourceToIndex ###
 
 Convert the specified ordinal property into an index
 
 
-## IsContainer ##
+### IsContainer ###
 
 Return 'true' if the specified resource is a container
 
 
-## IsEmpty ##
+### IsEmpty ###
 
 Return 'true' if the specified resource is a container and it is empty
 
 
-## IsBag ##
+### IsBag ###
 
 Return 'true' if the specified resource is a bag
 
 
-## IsSeq ##
+### IsSeq ###
 
 Return 'true' if the specified resource is a sequence
 
 
-## IsAlt ##
+### IsAlt ###
 
 Return 'true' if the specified resource is an alternation
 
 
-## MakeBag ##
+### MakeBag ###
 
 Decorates the specified resource appropriately to make it
 usable as an empty bag in the specified data source.
 
 
-## MakeSeq ##
+### MakeSeq ###
 
 Decorates the specified resource appropriately to make it
 usable as an empty sequence in the specified data source.
 
 
-## MakeAlt ##
+### MakeAlt ###
 
 Decorates the specified resource appropriately to make it
 usable as an empty alternation in the specified data source.
 
 
-## indexOf ##
+### indexOf ###
 
 Retrieve the index of element in the container. Returns -1 if
 the element is not in the container.

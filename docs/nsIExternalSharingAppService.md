@@ -4,6 +4,8 @@ layout: default
 
 # nsIExternalSharingAppService #
 
-## shareWithDefault ##
+## Methods ##
 
-## getSharingApps ##
+### shareWithDefault ###
+
+### getSharingApps ###

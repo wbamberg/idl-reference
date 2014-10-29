@@ -4,10 +4,12 @@ layout: default
 
 # nsITCPSocketIntermediary #
 
-## open ##
+## Methods ##
 
-## listen ##
+### open ###
 
-## onRecvSendString ##
+### listen ###
 
-## onRecvSendArrayBuffer ##
+### onRecvSendString ###
+
+### onRecvSendArrayBuffer ###

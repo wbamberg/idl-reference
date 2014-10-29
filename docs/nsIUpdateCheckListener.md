@@ -9,7 +9,9 @@ check operation. This object is notified as the check continues, finishes
 and if it has an error.
 
 
-## onCheckComplete ##
+## Methods ##
+
+### onCheckComplete ###
 
 The update check was completed.
 @param   request
@@ -20,7 +22,7 @@ The update check was completed.
          The size of the |updates| array.
 
 
-## onError ##
+### onError ###
 
 An error occurred while loading the remote update service file.
 @param   request

@@ -4,7 +4,9 @@ layout: default
 
 # nsIContentPrefObserver #
 
-## onContentPrefSet ##
+## Methods ##
+
+### onContentPrefSet ###
 
 Called when a content pref is set to a different value.
 
@@ -14,7 +16,7 @@ Called when a content pref is set to a different value.
 @param    aValue      the new value of the pref
 
 
-## onContentPrefRemoved ##
+### onContentPrefRemoved ###
 
 Called when a content pref is removed.
 

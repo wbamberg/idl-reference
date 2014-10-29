@@ -4,20 +4,26 @@ layout: default
 
 # nsIDOMMutationEvent #
 
-## MODIFICATION ##
+## Methods ##
 
-## ADDITION ##
+### initMutationEvent ###
 
-## REMOVAL ##
+## Attributes ##
 
-## relatedNode ##
+### relatedNode ###
 
-## prevValue ##
+### prevValue ###
 
-## newValue ##
+### newValue ###
 
-## attrName ##
+### attrName ###
 
-## attrChange ##
+### attrChange ###
 
-## initMutationEvent ##
+## Constants ##
+
+### MODIFICATION ###
+
+### ADDITION ###
+
+### REMOVAL ###

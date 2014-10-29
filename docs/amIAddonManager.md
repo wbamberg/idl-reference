@@ -8,7 +8,9 @@ A service to make some AddonManager functionality available to C++ callers.
 Javascript callers should still use AddonManager.jsm directly.
 
 
-## mapURIToAddonID ##
+## Methods ##
+
+### mapURIToAddonID ###
 
 Synchronously map a URI to the corresponding Addon ID.
 

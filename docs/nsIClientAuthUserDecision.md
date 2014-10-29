@@ -4,4 +4,6 @@ layout: default
 
 # nsIClientAuthUserDecision #
 
-## rememberClientAuthCertificate ##
+## Attributes ##
+
+### rememberClientAuthCertificate ###

@@ -8,7 +8,9 @@ Interface provides a way for the application to handle
 the UI prompts associated with geo position.
 
 
-## prompt ##
+## Methods ##
+
+### prompt ###
 
 Called when a request has been made to access
 privileged content apis

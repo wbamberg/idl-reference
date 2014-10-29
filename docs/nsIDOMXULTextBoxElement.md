@@ -4,22 +4,26 @@ layout: default
 
 # nsIDOMXULTextBoxElement #
 
-## inputField ##
+## Methods ##
 
-## textLength ##
+### select ###
 
-## maxLength ##
+### setSelectionRange ###
 
-## size ##
+## Attributes ##
 
-## selectionStart ##
+### inputField ###
 
-## selectionEnd ##
+### textLength ###
 
-## value ##
+### maxLength ###
 
-## type ##
+### size ###
 
-## select ##
+### selectionStart ###
 
-## setSelectionRange ##
+### selectionEnd ###
+
+### value ###
+
+### type ###

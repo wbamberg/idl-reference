@@ -4,7 +4,9 @@ layout: default
 
 # mozIRepresentativeColorCallback #
 
-## onComplete ##
+## Methods ##
+
+### onComplete ###
 
 Will be called when color analysis finishes.
 

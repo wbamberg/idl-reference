@@ -16,42 +16,39 @@ autocomplete matches.
 @deprecated use FormHistory.jsm instead.
 
 
-## hasEntries ##
+## Methods ##
 
-Returns true if the form history has any entries.
-
-
-## addEntry ##
+### addEntry ###
 
 Adds a name and value pair to the form history.
 
 
-## removeEntry ##
+### removeEntry ###
 
 Removes a name and value pair from the form history.
 
 
-## removeEntriesForName ##
+### removeEntriesForName ###
 
 Removes all entries that are paired with a name.
 
 
-## removeAllEntries ##
+### removeAllEntries ###
 
 Removes all entries in the entire form history.
 
 
-## nameExists ##
+### nameExists ###
 
 Returns true if there is no entry that is paired with a name.
 
 
-## entryExists ##
+### entryExists ###
 
 Gets whether a name and value pair exists in the form history.
 
 
-## removeEntriesByTimeframe ##
+### removeEntriesByTimeframe ###
 
 Removes entries that were created between the specified times.
 
@@ -61,7 +58,14 @@ Removes entries that were created between the specified times.
        The end of the timeframe, in microseconds
 
 
-## DBConnection ##
+## Attributes ##
+
+### hasEntries ###
+
+Returns true if the form history has any entries.
+
+
+### DBConnection ###
 
 Returns the underlying DB connection the form history module is using.
 

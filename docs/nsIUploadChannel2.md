@@ -4,7 +4,9 @@ layout: default
 
 # nsIUploadChannel2 #
 
-## explicitSetUploadStream ##
+## Methods ##
+
+### explicitSetUploadStream ###
 
 Sets a stream to be uploaded by this channel with the specified
 Content-Type and Content-Length header values.
@@ -29,7 +31,9 @@ Most implementations of this interface require that the stream:
        True if the stream already contains headers for the HTTP request.
 
 
-## uploadStreamHasHeaders ##
+## Attributes ##
+
+### uploadStreamHasHeaders ###
 
 Value of aStreamHasHeaders from the last successful call to
 explicitSetUploadStream.  TRUE indicates the attached upload stream

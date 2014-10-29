@@ -30,35 +30,9 @@ entries within them, however it is possible that some zip programs may
 experience problems what that.
 
 
-## COMPRESSION_NONE ##
+## Methods ##
 
-Some predefined compression levels
-
-
-## COMPRESSION_FASTEST ##
-
-## COMPRESSION_DEFAULT ##
-
-## COMPRESSION_BEST ##
-
-## comment ##
-
-Gets or sets the comment associated with the open zip file.
-
-@throws NS_ERROR_NOT_INITIALIZED if no zip file has been opened
-
-
-## inQueue ##
-
-Indicates that operations on the background queue are being performed.
-
-
-## file ##
-
-The file that the zipwriter is writing to.
-
-
-## open ##
+### open ###
 
 Opens a zip file.
 
@@ -74,7 +48,7 @@ Opens a zip file.
  or unsupported form)
 
 
-## getEntry ##
+### getEntry ###
 
 Returns a nsIZipEntry describing a specified zip entry or null if there
 is no such entry in the zip file
@@ -82,14 +56,14 @@ is no such entry in the zip file
 @param aZipEntry the path of the entry
 
 
-## hasEntry ##
+### hasEntry ###
 
 Checks whether the zipfile contains an entry specified by zipEntry.
 
 @param aZipEntry the path of the entry
 
 
-## addEntryDirectory ##
+### addEntryDirectory ###
 
 Adds a new directory entry to the zip file. If aZipEntry does not end with
 "/" then it will be added.
@@ -105,7 +79,7 @@ Adds a new directory entry to the zip file. If aZipEntry does not end with
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress
 
 
-## addEntryFile ##
+### addEntryFile ###
 
 Adds a new file or directory to the zip file. If the specified file is
 a directory then this will be equivalent to a call to
@@ -123,7 +97,7 @@ addEntryDirectory(aZipEntry, aFile.lastModifiedTime, aQueue)
 @throws NS_ERROR_FILE_NOT_FOUND if file does not exist
 
 
-## addEntryChannel ##
+### addEntryChannel ###
 
 Adds data from a channel to the zip file. If the operation is performed
 on the queue then the channel will be opened asynchronously, otherwise
@@ -141,7 +115,7 @@ the channel must support being opened synchronously.
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress
 
 
-## addEntryStream ##
+### addEntryStream ###
 
 Adds data from an input stream to the zip file.
 
@@ -157,7 +131,7 @@ Adds data from an input stream to the zip file.
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress
 
 
-## removeEntry ##
+### removeEntry ###
 
 Removes an existing entry from the zip file.
 
@@ -171,7 +145,7 @@ Removes an existing entry from the zip file.
 @throws <other-error> on failure to update the zip file
 
 
-## processQueue ##
+### processQueue ###
 
 Processes all queued items until complete or some error occurs. The
 observer will be notified when the first operation starts and when the
@@ -185,7 +159,7 @@ continue.
 @throws NS_ERROR_IN_PROGRESS if the queue is already in progress
 
 
-## close ##
+### close ###
 
 Closes the zip file.
 
@@ -194,7 +168,7 @@ Closes the zip file.
 @throws <other-error> on failure to complete the zip file
 
 
-## alignStoredFiles ##
+### alignStoredFiles ###
 
 Make all stored(uncompressed) files align to given alignment size.
 
@@ -204,3 +178,35 @@ must be power of 2.
 @throws NS_ERROR_INVALID_ARG if aAlignSize is invalid
 @throws <other-error> on failure to update the zip file
 
+
+## Attributes ##
+
+### comment ###
+
+Gets or sets the comment associated with the open zip file.
+
+@throws NS_ERROR_NOT_INITIALIZED if no zip file has been opened
+
+
+### inQueue ###
+
+Indicates that operations on the background queue are being performed.
+
+
+### file ###
+
+The file that the zipwriter is writing to.
+
+
+## Constants ##
+
+### COMPRESSION_NONE ###
+
+Some predefined compression levels
+
+
+### COMPRESSION_FASTEST ###
+
+### COMPRESSION_DEFAULT ###
+
+### COMPRESSION_BEST ###

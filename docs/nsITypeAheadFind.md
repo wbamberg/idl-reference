@@ -5,41 +5,47 @@ layout: default
 # nsITypeAheadFind #
 ************************** nsTypeAheadFind ******************************/
 
-## init ##
+## Methods ##
+
+### init ###
 ************************** Initializer ******************************/
 
-## find ##
+### find ###
 ************************* Core functions ****************************/
 
-## findAgain ##
+### findAgain ###
 
-## getFoundRange ##
+### getFoundRange ###
 
-## setDocShell ##
+### setDocShell ###
 ************************ Helper functions ***************************/
 
-## setSelectionModeAndRepaint ##
+### setSelectionModeAndRepaint ###
 
-## collapseSelection ##
+### collapseSelection ###
 
-## isRangeVisible ##
+### isRangeVisible ###
 
-## searchString ##
+## Attributes ##
+
+### searchString ###
 *************************** Attributes ******************************/
 
-## caseSensitive ##
+### caseSensitive ###
 
-## foundLink ##
+### foundLink ###
 
-## foundEditable ##
+### foundEditable ###
 
-## currentWindow ##
+### currentWindow ###
 
-## FIND_FOUND ##
+## Constants ##
+
+### FIND_FOUND ###
 *************************** Constants *******************************/
 
-## FIND_NOTFOUND ##
+### FIND_NOTFOUND ###
 
-## FIND_WRAPPED ##
+### FIND_WRAPPED ###
 
-## FIND_PENDING ##
+### FIND_PENDING ###

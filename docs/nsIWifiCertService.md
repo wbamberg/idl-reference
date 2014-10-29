@@ -4,15 +4,13 @@ layout: default
 
 # nsIWifiCertService #
 
-## WIFI_CERT_USAGE_FLAG_SERVER ##
+## Methods ##
 
-## WIFI_CERT_USAGE_FLAG_USER ##
+### start ###
 
-## start ##
+### shutdown ###
 
-## shutdown ##
-
-## importCert ##
+### importCert ###
 
 Import a certificate file.
 
@@ -26,7 +24,7 @@ Import a certificate file.
        User assigned nickname for imported certificate.
 
 
-## deleteCert ##
+### deleteCert ###
 
 Delete an imported certificate file
 
@@ -35,3 +33,9 @@ Delete an imported certificate file
 @param certNickname
        Certificate nickname to delete.
 
+
+## Constants ##
+
+### WIFI_CERT_USAGE_FLAG_SERVER ###
+
+### WIFI_CERT_USAGE_FLAG_USER ###

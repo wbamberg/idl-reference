@@ -11,12 +11,9 @@ the hypertext.
 Current implementation assumes every embedded object is a link.
 
 
-## linkCount ##
+## Methods ##
 
-Return the number of links contained within this hypertext object.
-
-
-## getLinkAt ##
+### getLinkAt ###
 
 Return link accessible at the given index.
 
@@ -25,7 +22,7 @@ Return link accessible at the given index.
 @return       link accessible or null if there is no link at that index
 
 
-## getLinkIndex ##
+### getLinkIndex ###
 
 Return index of the given link.
 
@@ -35,4 +32,11 @@ Return index of the given link.
                hypertext accessible
 
 
-## getLinkIndexAtOffset ##
+### getLinkIndexAtOffset ###
+
+## Attributes ##
+
+### linkCount ###
+
+Return the number of links contained within this hypertext object.
+

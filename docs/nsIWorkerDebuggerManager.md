@@ -4,8 +4,10 @@ layout: default
 
 # nsIWorkerDebuggerManager #
 
-## getWorkerDebuggerEnumerator ##
+## Methods ##
 
-## addListener ##
+### getWorkerDebuggerEnumerator ###
 
-## removeListener ##
+### addListener ###
+
+### removeListener ###

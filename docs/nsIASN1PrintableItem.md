@@ -4,6 +4,8 @@ layout: default
 
 # nsIASN1PrintableItem #
 
-## setData ##
+## Methods ##
 
-## getData ##
+### setData ###
+
+### getData ###

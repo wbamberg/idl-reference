@@ -8,12 +8,9 @@ An nsIFeedProcessor parses feeds, triggering callbacks based on
 their contents.
 
 
-## listener ##
+## Methods ##
 
-The listener that will respond to feed events. 
-
-
-## parseFromStream ##
+### parseFromStream ###
 
 Parse a feed from an nsIInputStream.
 
@@ -21,7 +18,7 @@ Parse a feed from an nsIInputStream.
 @param uri The base URI.
 
 
-## parseFromString ##
+### parseFromString ###
 
 Parse a feed from a string.
 
@@ -29,7 +26,7 @@ Parse a feed from a string.
 @param uri The base URI.
 
 
-## parseAsync ##
+### parseAsync ###
 
 Parse a feed asynchronously. The caller must then call the
 nsIFeedProcessor's nsIStreamListener methods to drive the
@@ -39,4 +36,11 @@ parse.
 @param requestObserver The observer to notify on start/stop. This
                        argument can be null.
 @param uri The base URI.
+
+
+## Attributes ##
+
+### listener ###
+
+The listener that will respond to feed events. 
 

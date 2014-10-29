@@ -15,25 +15,9 @@ menu event, the browser will call this interface if present.
 @see nsIDOMEvent
 
 
-## CONTEXT_NONE ##
- Flag. No context. */
+## Methods ##
 
-## CONTEXT_LINK ##
- Flag. Context is a link element. */
-
-## CONTEXT_IMAGE ##
- Flag. Context is an image element. */
-
-## CONTEXT_DOCUMENT ##
- Flag. Context is the whole document. */
-
-## CONTEXT_TEXT ##
- Flag. Context is a text area element. */
-
-## CONTEXT_INPUT ##
- Flag. Context is an input element. */
-
-## onShowContextMenu ##
+### onShowContextMenu ###
 
 Called when the browser receives a context menu event (e.g. user is right-mouse
 clicking somewhere on the document). The combination of flags, event and node
@@ -59,3 +43,23 @@ possible.
 
 @return <CODE>NS_OK</CODE> always.
 
+
+## Constants ##
+
+### CONTEXT_NONE ###
+ Flag. No context. */
+
+### CONTEXT_LINK ###
+ Flag. Context is a link element. */
+
+### CONTEXT_IMAGE ###
+ Flag. Context is an image element. */
+
+### CONTEXT_DOCUMENT ###
+ Flag. Context is the whole document. */
+
+### CONTEXT_TEXT ###
+ Flag. Context is a text area element. */
+
+### CONTEXT_INPUT ###
+ Flag. Context is an input element. */

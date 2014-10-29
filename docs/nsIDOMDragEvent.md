@@ -4,6 +4,10 @@ layout: default
 
 # nsIDOMDragEvent #
 
-## dataTransfer ##
+## Methods ##
 
-## initDragEvent ##
+### initDragEvent ###
+
+## Attributes ##
+
+### dataTransfer ###

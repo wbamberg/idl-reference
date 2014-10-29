@@ -9,7 +9,9 @@ is a log of various events that are monitored by a custom code
 instrumentation around the mozilla code base.
 
 
-## start ##
+## Methods ##
+
+### start ###
 
 Start the logging now.  No affect if already started.
 Current backlog is deleted by this call otherwise.
@@ -19,12 +21,12 @@ Current backlog is deleted by this call otherwise.
    when their age is more then value of this argument.
 
 
-## stop ##
+### stop ###
 
 Stop the logging now.  Backlog is kept in memory.
 
 
-## snapshot ##
+### snapshot ###
 
 Obtain the log.  This can be called whenever you want.
 

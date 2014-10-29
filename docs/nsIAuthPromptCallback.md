@@ -10,7 +10,9 @@ returns successfully. They MUST NOT call any method on this interface before
 promptPasswordAsync returns.
 
 
-## onAuthAvailable ##
+## Methods ##
+
+### onAuthAvailable ###
 
 Authentication information is available.
 
@@ -23,7 +25,7 @@ Authentication information is available.
 @note  Any exceptions thrown from this method should be ignored.
 
 
-## onAuthCancelled ##
+### onAuthCancelled ###
 
 Notification that the prompt was cancelled.
 

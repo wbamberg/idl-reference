@@ -10,37 +10,39 @@ auto complete results are needed that can be pre-generated and filled into
 an array.
 
 
-## setSearchString ##
+## Methods ##
+
+### setSearchString ###
 
 A writer for the readonly attribute 'searchString' which should contain
 the string that the user typed.
 
 
-## setErrorDescription ##
+### setErrorDescription ###
 
 A writer for the readonly attribute 'errorDescription'.
 
 
-## setDefaultIndex ##
+### setDefaultIndex ###
 
 A writer for the readonly attribute 'defaultIndex' which should contain
 the index of the list that will be selected by default (normally 0).
 
 
-## setSearchResult ##
+### setSearchResult ###
 
 A writer for the readonly attribute 'searchResult' which should contain
 one of the constants nsIAutoCompleteResult.RESULT_* indicating the success
 of the search.
 
 
-## setTypeAheadResult ##
+### setTypeAheadResult ###
 
 A writer for the readonly attribute 'typeAheadResult', typically set
 because a result is only intended for type-ahead completion.
 
 
-## appendMatch ##
+### appendMatch ###
 
 Appends a match consisting of the given value, comment, image, style and
 the value to use for defaultIndex completion.
@@ -57,7 +59,7 @@ the value to use for defaultIndex completion.
        provided, aValue will be used.
 
 
-## setListener ##
+### setListener ###
 
 Sets a listener for changes in the result.
 

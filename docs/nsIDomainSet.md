@@ -4,12 +4,14 @@ layout: default
 
 # nsIDomainSet #
 
-## add ##
+## Methods ##
 
-## remove ##
+### add ###
 
-## clear ##
+### remove ###
 
-## contains ##
+### clear ###
 
-## containsSuperDomain ##
+### contains ###
+
+### containsSuperDomain ###

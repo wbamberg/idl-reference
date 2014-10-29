@@ -10,7 +10,9 @@ An instance of this interface can be used to serialize a DOM document
 or any DOM subtree.
 
 
-## serializeToString ##
+## Methods ##
+
+### serializeToString ###
 
 The subtree rooted by the specified element is serialized to
 a string.
@@ -20,7 +22,7 @@ a string.
 @returns The serialized subtree in the form of a Unicode string
 
 
-## serializeToStream ##
+### serializeToStream ###
 
 The subtree rooted by the specified element is serialized to
 a byte stream using the character set specified.

@@ -10,7 +10,9 @@ The interface can be retrieved by calling QI to the interface
 which implements the phonetic interface.
 
 
-## phonetic ##
+## Attributes ##
+
+### phonetic ###
 
 phonetic get the phonetic value of the input text
 

@@ -11,18 +11,22 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Core/
 
 
-## data ##
+## Methods ##
 
-## length ##
+### substringData ###
 
-## substringData ##
+### appendData ###
 
-## appendData ##
+### insertData ###
 
-## insertData ##
+### deleteData ###
 
-## deleteData ##
+### replaceData ###
 
-## replaceData ##
+### remove ###
 
-## remove ##
+## Attributes ##
+
+### data ###
+
+### length ###

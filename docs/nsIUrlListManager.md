@@ -4,12 +4,14 @@ layout: default
 
 # nsIUrlListManager #
 
-## getGethashUrl ##
+## Methods ##
+
+### getGethashUrl ###
 
 Get the gethash url for this table
 
 
-## registerTable ##
+### registerTable ###
 
 Add a table to the list of tables we are managing. The name is a
 string of the format provider_name-semantic_type-table_type.  For
@@ -20,23 +22,23 @@ string of the format provider_name-semantic_type-table_type.  For
 @param gethashUrl The URL from which to fetch hash completions.
 
 
-## enableUpdate ##
+### enableUpdate ###
 
 Turn on update checking for a table. I.e., during the next server
 check, download updates for this table.
 
 
-## disableUpdate ##
+### disableUpdate ###
 
 Turn off update checking for a table.
 
 
-## maybeToggleUpdateChecking ##
+### maybeToggleUpdateChecking ###
 
 Toggle update checking, if necessary.
 
 
-## safeLookup ##
+### safeLookup ###
 
 Lookup a key.  Should not raise exceptions.  Calls the callback
 function with a comma-separated list of tables to which the key

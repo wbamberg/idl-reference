@@ -4,8 +4,12 @@ layout: default
 
 # nsITabParent #
 
-## injectTouchEvent ##
+## Methods ##
 
-## useAsyncPanZoom ##
+### injectTouchEvent ###
 
-## setIsDocShellActive ##
+### setIsDocShellActive ###
+
+## Attributes ##
+
+### useAsyncPanZoom ###

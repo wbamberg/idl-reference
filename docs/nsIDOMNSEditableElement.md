@@ -12,6 +12,10 @@ Web IDL interfaces to mirror this interface when changing it.
 
 
 
-## editor ##
+## Methods ##
 
-## setUserInput ##
+### setUserInput ###
+
+## Attributes ##
+
+### editor ###

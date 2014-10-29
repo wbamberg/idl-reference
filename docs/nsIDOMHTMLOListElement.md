@@ -14,10 +14,12 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## compact ##
+## Attributes ##
 
-## reversed ##
+### compact ###
 
-## start ##
+### reversed ###
 
-## type ##
+### start ###
+
+### type ###

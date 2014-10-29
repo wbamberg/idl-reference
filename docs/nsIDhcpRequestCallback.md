@@ -4,7 +4,9 @@ layout: default
 
 # nsIDhcpRequestCallback #
 
-## dhcpRequestResult ##
+## Methods ##
+
+### dhcpRequestResult ###
 
 Callback function used to report the result of DHCP client request.
 

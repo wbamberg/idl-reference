@@ -14,7 +14,9 @@ This interface provides:
      is insufficient (e.g., HTTP form submission).
 
 
-## cacheToken ##
+## Attributes ##
+
+### cacheToken ###
 
 Set/get the cache token... uniquely identifies the data in the cache.
 Holding a reference to this token prevents the cached data from being
@@ -30,7 +32,7 @@ The cache token can be QI'd to a nsICacheEntryInfo if more detail
 about the cache entry is needed (e.g., expiration time).
 
 
-## offlineCacheToken ##
+### offlineCacheToken ###
 
 The same as above but accessing the offline app cache token if there
 is any.
@@ -39,7 +41,7 @@ is any.
      NS_ERROR_NOT_AVAILABLE when there is not offline cache token
 
 
-## cacheKey ##
+### cacheKey ###
 
 Set/get the cache key... uniquely identifies the data in the cache
 for this channel.  Holding a reference to this key does NOT prevent
@@ -58,7 +60,7 @@ sufficient to locate the same cache entry.  Setting a NULL cache key
 is likewise valid.
 
 
-## cacheOnlyMetadata ##
+### cacheOnlyMetadata ###
 
 Instructs the channel to only store the metadata of the entry, and not
 the content. When reading an existing entry, this automatically sets
@@ -66,7 +68,9 @@ LOAD_ONLY_IF_MODIFIED flag.
 Must be called before asyncOpen().
 
 
-## LOAD_NO_NETWORK_IO ##
+## Constants ##
+
+### LOAD_NO_NETWORK_IO ###
 **********************************************************************
 Caching channel specific load flags:
 
@@ -84,7 +88,7 @@ this flag fails the load if validation is required while
 LOAD_ONLY_FROM_CACHE skips validation where possible.
 
 
-## LOAD_CHECK_OFFLINE_CACHE ##
+### LOAD_CHECK_OFFLINE_CACHE ###
 
 This load flag causes the offline cache to be checked when fetching
 a request.  It will be set automatically if the browser is offline.
@@ -92,20 +96,20 @@ a request.  It will be set automatically if the browser is offline.
 This flag will not be transferred through a redirect.
 
 
-## LOAD_BYPASS_LOCAL_CACHE ##
+### LOAD_BYPASS_LOCAL_CACHE ###
 
 This load flag causes the local cache to be skipped when fetching a
 request.  Unlike LOAD_BYPASS_CACHE, it does not force an end-to-end load
 (i.e., it does not affect proxy caches).
 
 
-## LOAD_BYPASS_LOCAL_CACHE_IF_BUSY ##
+### LOAD_BYPASS_LOCAL_CACHE_IF_BUSY ###
 
 This load flag causes the local cache to be skipped if the request
 would otherwise block waiting to access the cache.
 
 
-## LOAD_ONLY_FROM_CACHE ##
+### LOAD_ONLY_FROM_CACHE ###
 
 This load flag inhibits fetching from the net if the data in the cache
 has been evicted.  An error of NS_ERROR_DOCUMENT_NOT_CACHED will be sent
@@ -113,7 +117,7 @@ to the listener's onStopRequest in this case.  This flag is set
 automatically when the application is offline.
 
 
-## LOAD_ONLY_IF_MODIFIED ##
+### LOAD_ONLY_IF_MODIFIED ###
 
 This load flag controls what happens when a document would be loaded
 from the cache to satisfy a call to AsyncOpen.  If this attribute is

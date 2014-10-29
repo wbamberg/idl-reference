@@ -4,6 +4,8 @@ layout: default
 
 # nsIDOMCSSFontFeatureValuesRule #
 
-## fontFamily ##
+## Attributes ##
 
-## valueText ##
+### fontFamily ###
+
+### valueText ###

@@ -4,4 +4,6 @@ layout: default
 
 # nsINetworkEventListener #
 
-## onEvent ##
+## Methods ##
+
+### onEvent ###

@@ -4,6 +4,8 @@ layout: default
 
 # nsPICommandUpdater #
 
-## init ##
+## Methods ##
 
-## commandStatusChanged ##
+### init ###
+
+### commandStatusChanged ###

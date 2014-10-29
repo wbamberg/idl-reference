@@ -20,24 +20,9 @@ question will be restricted in the following ways:
   execution will be forced to happen in a sandbox.
 
 
-## NO_EXECUTION ##
+## Attributes ##
 
-Possible ways of executing the program.
-
-
-Don't execute at all.
-
-
-## EXECUTE_NORMAL ##
-
-There used to be an EXECUTE_IN_SANDBOX = 1 value.  It has been removed, but
-we're not changing the value of EXECUTE_NORMAL to avoid breaking compat.
-
-
-Execute against the target environment if the principals allow it.
-
-
-## executionPolicy ##
+### executionPolicy ###
 
 Whether and how the program represented by this channel is to be executed.
 The default value if this property has never been set on this channel MUST
@@ -46,7 +31,7 @@ be either EXECUTE_IN_SANDBOX or NO_EXECUTION.
 @throws NS_ERROR_INVALID_ARG when set to an unrecognized value.
 
 
-## executeAsync ##
+### executeAsync ###
 
 Control whether the program should be executed synchronosly when
 the channel's AsyncOpen method is called or whether it should be
@@ -58,4 +43,23 @@ The default value of this property is TRUE.
 
 Setting this property after asyncOpen has been called on the
 channel has no effect.
+
+
+## Constants ##
+
+### NO_EXECUTION ###
+
+Possible ways of executing the program.
+
+
+Don't execute at all.
+
+
+### EXECUTE_NORMAL ###
+
+There used to be an EXECUTE_IN_SANDBOX = 1 value.  It has been removed, but
+we're not changing the value of EXECUTE_NORMAL to avoid breaking compat.
+
+
+Execute against the target environment if the principals allow it.
 

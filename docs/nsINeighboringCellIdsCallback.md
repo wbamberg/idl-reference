@@ -4,12 +4,14 @@ layout: default
 
 # nsINeighboringCellIdsCallback #
 
-## notifyGetNeighboringCellIds ##
+## Methods ##
+
+### notifyGetNeighboringCellIds ###
 
 result is an array of nsINeighboringCellInfo.
 
 
-## notifyGetNeighboringCellIdsFailed ##
+### notifyGetNeighboringCellIdsFailed ###
 
 Callback function with error message.
 

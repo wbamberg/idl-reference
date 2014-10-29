@@ -4,7 +4,9 @@ layout: default
 
 # mozIVisitedStatusCallback #
 
-## isVisited ##
+## Methods ##
+
+### isVisited ###
 
 Notifies whether a certain URI has been visited.
 

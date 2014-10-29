@@ -11,68 +11,74 @@ For more information on this interface please see
 http://www.w3.org/TR/DOM-Level-2-Style
 
 
-## CSS_UNKNOWN ##
+## Methods ##
 
-## CSS_NUMBER ##
+### setFloatValue ###
 
-## CSS_PERCENTAGE ##
+### getFloatValue ###
 
-## CSS_EMS ##
+### setStringValue ###
 
-## CSS_EXS ##
+### getStringValue ###
 
-## CSS_PX ##
+### getCounterValue ###
 
-## CSS_CM ##
+### getRectValue ###
 
-## CSS_MM ##
+## Attributes ##
 
-## CSS_IN ##
+### primitiveType ###
 
-## CSS_PT ##
+## Constants ##
 
-## CSS_PC ##
+### CSS_UNKNOWN ###
 
-## CSS_DEG ##
+### CSS_NUMBER ###
 
-## CSS_RAD ##
+### CSS_PERCENTAGE ###
 
-## CSS_GRAD ##
+### CSS_EMS ###
 
-## CSS_MS ##
+### CSS_EXS ###
 
-## CSS_S ##
+### CSS_PX ###
 
-## CSS_HZ ##
+### CSS_CM ###
 
-## CSS_KHZ ##
+### CSS_MM ###
 
-## CSS_DIMENSION ##
+### CSS_IN ###
 
-## CSS_STRING ##
+### CSS_PT ###
 
-## CSS_URI ##
+### CSS_PC ###
 
-## CSS_IDENT ##
+### CSS_DEG ###
 
-## CSS_ATTR ##
+### CSS_RAD ###
 
-## CSS_COUNTER ##
+### CSS_GRAD ###
 
-## CSS_RECT ##
+### CSS_MS ###
 
-## CSS_RGBCOLOR ##
+### CSS_S ###
 
-## primitiveType ##
+### CSS_HZ ###
 
-## setFloatValue ##
+### CSS_KHZ ###
 
-## getFloatValue ##
+### CSS_DIMENSION ###
 
-## setStringValue ##
+### CSS_STRING ###
 
-## getStringValue ##
+### CSS_URI ###
 
-## getCounterValue ##
+### CSS_IDENT ###
 
-## getRectValue ##
+### CSS_ATTR ###
+
+### CSS_COUNTER ###
+
+### CSS_RECT ###
+
+### CSS_RGBCOLOR ###

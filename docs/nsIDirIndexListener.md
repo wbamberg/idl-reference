@@ -9,7 +9,9 @@ from a protocol. They can then be transformed into an output format
 (such as rdf, html, etc)
 
 
-## onIndexAvailable ##
+## Methods ##
+
+### onIndexAvailable ###
 
 Called for each directory entry
 
@@ -18,7 +20,7 @@ Called for each directory entry
 @param index - new index to add
 
 
-## onInformationAvailable ##
+### onInformationAvailable ###
 
 Called for each information line
 

@@ -4,4 +4,6 @@ layout: default
 
 # nsINavigatorPayment #
 
-## pay ##
+## Methods ##
+
+### pay ###

@@ -4,12 +4,16 @@ layout: default
 
 # nsPIWidgetCocoa #
 
-## SendSetZLevelEvent ##
+## Methods ##
 
-## GetChildSheet ##
+### SendSetZLevelEvent ###
 
-## GetRealParent ##
+### GetChildSheet ###
 
-## sheetWindowParent ##
+### GetRealParent ###
 
-## isSheet ##
+## Attributes ##
+
+### sheetWindowParent ###
+
+### isSheet ###

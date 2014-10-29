@@ -4,7 +4,9 @@ layout: default
 
 # nsISetDhcpServerCallback #
 
-## dhcpServerResult ##
+## Methods ##
+
+### dhcpServerResult ###
 
 Callback function used to report the DHCP server set result
 

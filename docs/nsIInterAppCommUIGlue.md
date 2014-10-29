@@ -7,7 +7,9 @@ layout: default
 To be implemented by @mozilla.org/dom/apps/inter-app-comm-ui-glue;1
 
 
-## selectApps ##
+## Methods ##
+
+### selectApps ###
 
 This method is to notify the prompt to let the user select some of the
 IAC-eligible apps.

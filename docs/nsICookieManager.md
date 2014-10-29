@@ -8,18 +8,14 @@ An optional interface for accessing or removing the cookies
 that are in the cookie list
 
 
-## removeAll ##
+## Methods ##
+
+### removeAll ###
 
 Called to remove all cookies from the cookie list
 
 
-## enumerator ##
-
-Called to enumerate through each cookie in the cookie list.
-The objects enumerated over are of type nsICookie
-
-
-## remove ##
+### remove ###
 
 Called to remove an individual cookie from the cookie list, specified
 by host, name, and path. If the cookie cannot be found, no exception
@@ -34,4 +30,12 @@ directly from the desired nsICookie object.
 @param aPath The path for which the cookie was set
 @param aBlocked Indicates if cookies from this host should be permanently blocked
 
+
+
+## Attributes ##
+
+### enumerator ###
+
+Called to enumerate through each cookie in the cookie list.
+The objects enumerated over are of type nsICookie
 

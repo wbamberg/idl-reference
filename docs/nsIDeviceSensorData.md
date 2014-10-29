@@ -4,22 +4,26 @@ layout: default
 
 # nsIDeviceSensorData #
 
-## TYPE_ORIENTATION ##
+## Attributes ##
 
-## TYPE_ACCELERATION ##
+### type ###
 
-## TYPE_PROXIMITY ##
+### x ###
 
-## TYPE_LINEAR_ACCELERATION ##
+### y ###
 
-## TYPE_GYROSCOPE ##
+### z ###
 
-## TYPE_LIGHT ##
+## Constants ##
 
-## type ##
+### TYPE_ORIENTATION ###
 
-## x ##
+### TYPE_ACCELERATION ###
 
-## y ##
+### TYPE_PROXIMITY ###
 
-## z ##
+### TYPE_LINEAR_ACCELERATION ###
+
+### TYPE_GYROSCOPE ###
+
+### TYPE_LIGHT ###

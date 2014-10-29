@@ -4,14 +4,16 @@ layout: default
 
 # nsIFindService #
 
-## searchString ##
+## Attributes ##
 
-## replaceString ##
+### searchString ###
 
-## findBackwards ##
+### replaceString ###
 
-## wrapFind ##
+### findBackwards ###
 
-## entireWord ##
+### wrapFind ###
 
-## matchCase ##
+### entireWord ###
+
+### matchCase ###

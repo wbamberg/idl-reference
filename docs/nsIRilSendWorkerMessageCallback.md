@@ -4,4 +4,6 @@ layout: default
 
 # nsIRilSendWorkerMessageCallback #
 
-## handleResponse ##
+## Methods ##
+
+### handleResponse ###

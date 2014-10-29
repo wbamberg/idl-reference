@@ -4,27 +4,29 @@ layout: default
 
 # nsIMobileNetworkInfo #
 
-## shortName ##
+## Attributes ##
+
+### shortName ###
 
 Short name of the network operator.
 
 
-## longName ##
+### longName ###
 
 Long name of the network operator.
 
 
-## mcc ##
+### mcc ###
 
 Mobile Country Code (MCC) of the network operator.
 
 
-## mnc ##
+### mnc ###
 
 Mobile Network Code (MNC) of the network operator.
 
 
-## state ##
+### state ###
 
 State of this network operator.
 

@@ -7,21 +7,21 @@ layout: default
 interface of Components.utils
 
 
-## reportError ##
+## Methods ##
 
-## Sandbox ##
+### reportError ###
 
-## evalInSandbox ##
+### evalInSandbox ###
 
-## getSandboxAddonId ##
+### getSandboxAddonId ###
 
-## getSandboxMetadata ##
+### getSandboxMetadata ###
 
-## setSandboxMetadata ##
+### setSandboxMetadata ###
 
-## import ##
+### import ###
 
-## isModuleLoaded ##
+### isModuleLoaded ###
 
 Returns true if the js file located at 'registryLocation' location has
 been loaded previously via the import method above. Returns false
@@ -33,33 +33,33 @@ otherwise.
          otherwise
 
 
-## unload ##
+### unload ###
 
-## importGlobalProperties ##
+### importGlobalProperties ###
 
-## getWeakReference ##
+### getWeakReference ###
 
-## forceGC ##
+### forceGC ###
 
-## forceCC ##
+### forceCC ###
 
-## finishCC ##
+### finishCC ###
 
-## ccSlice ##
+### ccSlice ###
 
-## getMaxCCSliceTimeSinceClear ##
+### getMaxCCSliceTimeSinceClear ###
 
-## clearMaxCCTime ##
+### clearMaxCCTime ###
 
-## forceShrinkingGC ##
+### forceShrinkingGC ###
 
-## schedulePreciseGC ##
+### schedulePreciseGC ###
 
-## schedulePreciseShrinkingGC ##
+### schedulePreciseShrinkingGC ###
 
-## unlinkGhostWindows ##
+### unlinkGhostWindows ###
 
-## nondeterministicGetWeakMapKeys ##
+### nondeterministicGetWeakMapKeys ###
 
 Return the keys in a weak map.  This operation is
 non-deterministic because it is affected by the scheduling of the
@@ -73,19 +73,19 @@ the GC and CC with weak maps.
 map as an array.  Otherwise, return undefined.
 
 
-## getJSTestingFunctions ##
+### getJSTestingFunctions ###
 
-## getGlobalForObject ##
+### getGlobalForObject ###
 
-## isProxy ##
+### isProxy ###
 
-## exportFunction ##
+### exportFunction ###
 
-## createObjectIn ##
+### createObjectIn ###
 
-## makeObjectPropsNormal ##
+### makeObjectPropsNormal ###
 
-## isDeadWrapper ##
+### isDeadWrapper ###
 
 Determines whether this object is backed by a DeadObjectProxy.
 
@@ -94,57 +94,49 @@ reference edges) and will throw if you touch them (e.g. by
 reading/writing a property).
 
 
-## isCrossProcessWrapper ##
+### isCrossProcessWrapper ###
 
 Determines whether this object is a cross-process wrapper.
 
 
-## recomputeWrappers ##
+### recomputeWrappers ###
 
-## setWantXrays ##
+### setWantXrays ###
 
-## forcePermissiveCOWs ##
+### forcePermissiveCOWs ###
 
-## skipCOWCallableChecks ##
+### skipCOWCallableChecks ###
 
-## forcePrivilegedComponentsForScope ##
+### forcePrivilegedComponentsForScope ###
 
-## getComponentsForScope ##
+### getComponentsForScope ###
 
-## dispatch ##
+### dispatch ###
 
-## strict ##
+### setGCZeal ###
 
-## werror ##
+### nukeSandbox ###
 
-## strict_mode ##
+### blockScriptForGlobal ###
 
-## ion ##
+### unblockScriptForGlobal ###
 
-## setGCZeal ##
-
-## nukeSandbox ##
-
-## blockScriptForGlobal ##
-
-## unblockScriptForGlobal ##
-
-## isXrayWrapper ##
+### isXrayWrapper ###
 
 Check whether the given object is an XrayWrapper.
 
 
-## waiveXrays ##
+### waiveXrays ###
 
 Waive Xray on a given value. Identity op for primitives.
 
 
-## unwaiveXrays ##
+### unwaiveXrays ###
 
 Strip off Xray waivers on a given value. Identity op for primitives.
 
 
-## getClassName ##
+### getClassName ###
 
 Gets the name of the JSClass of the object.
 
@@ -153,13 +145,13 @@ specifically trying to detect whether the object is a proxy, this is
 probably what you want.
 
 
-## getDOMClassInfo ##
+### getDOMClassInfo ###
 
 Get a DOM classinfo for the given classname.  Only some class
 names are supported.
 
 
-## getIncumbentGlobal ##
+### getIncumbentGlobal ###
 
 Gets the incument global for the execution of this function. For internal
 and testing use only.
@@ -169,7 +161,7 @@ sole argument. This allows the incumbent global to be measured in callback
 environments with no scripted frames on the stack.
 
 
-## generateXPCWrappedJS ##
+### generateXPCWrappedJS ###
 
 Forces the generation of an XPCWrappedJS for a given object. For internal
 and testing use only. This is only useful to set up wrapper map conditions
@@ -179,7 +171,7 @@ opaque nsISupports holder that keeps the underlying XPCWrappedJS alive.
 if |scope| is passed, the XPCWrappedJS is generated in the scope of that object.
 
 
-## getWatchdogTimestamp ##
+### getWatchdogTimestamp ###
 
 Retrieve the last time, in microseconds since epoch, that a given
 watchdog-related event occured.
@@ -191,16 +183,28 @@ Valid categories:
   "WatchdogHibernateStop"   - Watchdog stops hibernating
 
 
-## getJSEngineTelemetryValue ##
+### getJSEngineTelemetryValue ###
 
-## cloneInto ##
+### cloneInto ###
 
-## getWebIDLCallerPrincipal ##
+### getWebIDLCallerPrincipal ###
 
-## getObjectPrincipal ##
+### getObjectPrincipal ###
 
-## getCompartmentLocation ##
+### getCompartmentLocation ###
 
-## setAddonInterposition ##
+### setAddonInterposition ###
 
-## now ##
+### now ###
+
+## Attributes ##
+
+### Sandbox ###
+
+### strict ###
+
+### werror ###
+
+### strict_mode ###
+
+### ion ###

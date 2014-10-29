@@ -4,13 +4,9 @@ layout: default
 
 # nsITaggingService #
 
-## MAX_TAG_LENGTH ##
+## Methods ##
 
-Defines the maximal length of a tag. Related to the bug 407821 
-(https://bugzilla.mozilla.org/show_bug.cgi?id=407821) 
-
-
-## tagURI ##
+### tagURI ###
 
 Tags a URL with the given set of tags. Current tags set for the URL
 persist. Tags in aTags which are already set for the given URL are
@@ -24,7 +20,7 @@ ignored.
        itemId of a tag container.
 
 
-## untagURI ##
+### untagURI ###
 
 Removes tags from a URL. Tags from aTags which are not set for the
 given URL are ignored.
@@ -37,7 +33,7 @@ given URL are ignored.
        (non-empty string) or a concrete itemId of a tag container.
 
 
-## getURIsForTag ##
+### getURIsForTag ###
 
 Retrieves all URLs tagged with the given tag.
 
@@ -46,7 +42,7 @@ Retrieves all URLs tagged with the given tag.
 @returns Array of uris tagged with aTag.
 
 
-## getTagsForURI ##
+### getTagsForURI ###
 
 Retrieves all tags set for the given URL.
 
@@ -55,14 +51,24 @@ Retrieves all tags set for the given URL.
 @returns array of tags (sorted by name).
 
 
-## allTags ##
+## Attributes ##
+
+### allTags ###
 
 Retrieves all tags used to tag URIs in the data-base (sorted by name).
 
 
-## hasTags ##
+### hasTags ###
 
 Whether any tags exist.
 
 @note This is faster than allTags.length, since doesn't need to sort tags.
+
+
+## Constants ##
+
+### MAX_TAG_LENGTH ###
+
+Defines the maximal length of a tag. Related to the bug 407821 
+(https://bugzilla.mozilla.org/show_bug.cgi?id=407821) 
 

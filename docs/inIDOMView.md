@@ -4,20 +4,24 @@ layout: default
 
 # inIDOMView #
 
-## rootNode ##
+## Methods ##
 
-## showAnonymousContent ##
+### getNodeFromRowIndex ###
 
-## showSubDocuments ##
+### getRowIndexFromNode ###
 
-## showWhitespaceNodes ##
+### rebuild ###
 
-## showAccessibleNodes ##
+## Attributes ##
 
-## whatToShow ##
+### rootNode ###
 
-## getNodeFromRowIndex ##
+### showAnonymousContent ###
 
-## getRowIndexFromNode ##
+### showSubDocuments ###
 
-## rebuild ##
+### showWhitespaceNodes ###
+
+### showAccessibleNodes ###
+
+### whatToShow ###

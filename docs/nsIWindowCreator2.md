@@ -4,12 +4,9 @@ layout: default
 
 # nsIWindowCreator2 #
 
-## PARENT_IS_LOADING_OR_RUNNING_TIMEOUT ##
+## Methods ##
 
-Definitions for contextFlags
-
-
-## createChromeWindow2 ##
+### createChromeWindow2 ###
  Create a new window. Gecko will/may call this method, if made
 available to it, to create new windows.
 @param parent Parent window, if any. Null if not. The newly created
@@ -30,4 +27,11 @@ implementation has determined the window should not
 be created at all. The caller should not default
 to any possible backup scheme for creating the window.
 @return the new window. Will be null if canceled or an error occurred.
+
+
+## Constants ##
+
+### PARENT_IS_LOADING_OR_RUNNING_TIMEOUT ###
+
+Definitions for contextFlags
 

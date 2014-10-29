@@ -4,4 +4,6 @@ layout: default
 
 # nsISharingHandlerApp #
 
-## share ##
+## Methods ##
+
+### share ###

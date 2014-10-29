@@ -7,7 +7,9 @@ layout: default
 This is a companion interface for nsIAsyncInputStream::asyncWait.
 
 
-## onInputStreamReady ##
+## Methods ##
+
+### onInputStreamReady ###
 
 Called to indicate that the stream is either readable or closed.
 

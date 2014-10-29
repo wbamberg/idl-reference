@@ -15,7 +15,9 @@ from adding other methods.
 nsIMessageLoop's contractid is "@mozilla.org/message-loop;1".
 
 
-## postIdleTask ##
+## Methods ##
+
+### postIdleTask ###
 
 Posts a task to be run when this thread's message loop is idle, or after
 ensureRunsAfterMS milliseconds have elapsed.  (That is, the task is

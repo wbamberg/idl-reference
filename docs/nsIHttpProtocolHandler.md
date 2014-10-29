@@ -4,26 +4,28 @@ layout: default
 
 # nsIHttpProtocolHandler #
 
-## userAgent ##
+## Attributes ##
+
+### userAgent ###
 
 Get the HTTP advertised user agent string.
 
 
-## appName ##
+### appName ###
 
 Get the application name.
 
 @return The name of this application (eg. "Mozilla").
 
 
-## appVersion ##
+### appVersion ###
 
 Get the application version string.
 
 @return The complete version (major and minor) string. (eg. "5.0")
 
 
-## platform ##
+### platform ###
 
 Get the current platform.
 
@@ -31,14 +33,14 @@ Get the current platform.
 	   (eg. "Windows", "Macintosh", "X11")
 
 
-## oscpu ##
+### oscpu ###
 
 Get the current oscpu.
 
 @return The oscpu this application is running on
 
 
-## misc ##
+### misc ###
 
 Get the application comment misc portion.
 

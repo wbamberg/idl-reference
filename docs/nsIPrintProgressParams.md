@@ -4,6 +4,8 @@ layout: default
 
 # nsIPrintProgressParams #
 
-## docTitle ##
+## Attributes ##
 
-## docURL ##
+### docTitle ###
+
+### docURL ###

@@ -4,6 +4,10 @@ layout: default
 
 # nsIHttpChannelChild #
 
-## addCookiesToRequest ##
+## Methods ##
 
-## clientSetRequestHeaders ##
+### addCookiesToRequest ###
+
+## Attributes ##
+
+### clientSetRequestHeaders ###

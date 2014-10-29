@@ -7,7 +7,9 @@ layout: default
 The callback used by the above methods.
 
 
-## handleResult ##
+## Methods ##
+
+### handleResult ###
 
 For the retrieval methods, this is called once for each retrieved
 preference.  It is not called for other methods.
@@ -15,7 +17,7 @@ preference.  It is not called for other methods.
 @param pref  The retrieved preference.
 
 
-## handleError ##
+### handleError ###
 
 Called when an error occurs.  This may be called multiple times before
 handleCompletion is called.
@@ -23,7 +25,7 @@ handleCompletion is called.
 @param error  A number in Components.results describing the error.
 
 
-## handleCompletion ##
+### handleCompletion ###
 
 Called when the method finishes.  This will be called exactly once for
 each method invocation, and afterward no other callback methods will be
@@ -33,6 +35,8 @@ called.
                the method completed.
 
 
-## COMPLETE_OK ##
+## Constants ##
 
-## COMPLETE_ERROR ##
+### COMPLETE_OK ###
+
+### COMPLETE_ERROR ###

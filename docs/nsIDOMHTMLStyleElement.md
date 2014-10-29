@@ -14,10 +14,12 @@ with changes from the work-in-progress WHATWG HTML specification:
 http://www.whatwg.org/specs/web-apps/current-work/
 
 
-## disabled ##
+## Attributes ##
 
-## media ##
+### disabled ###
 
-## type ##
+### media ###
 
-## scoped ##
+### type ###
+
+### scoped ###

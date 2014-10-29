@@ -4,4 +4,6 @@ layout: default
 
 # nsIEngineeringModeMessageHandler #
 
-## handleMessage ##
+## Methods ##
+
+### handleMessage ###

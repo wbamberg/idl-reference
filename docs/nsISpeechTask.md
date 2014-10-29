@@ -8,7 +8,9 @@ A task is associated with a single utterance. It is provided by the browser
 to the service in the speak() method.
 
 
-## setup ##
+## Methods ##
+
+### setup ###
 
 Prepare browser for speech.
 
@@ -18,7 +20,7 @@ Prepare browser for speech.
 @param aRate     audio rate. Only required in direct audio services
 
 
-## sendAudio ##
+### sendAudio ###
 
 Send audio data to browser.
 
@@ -27,14 +29,14 @@ Send audio data to browser.
                     Used for emiting boundary and mark events.
 
 
-## sendAudioNative ##
+### sendAudioNative ###
 
-## dispatchStart ##
+### dispatchStart ###
 
 Dispatch start event.
 
 
-## dispatchEnd ##
+### dispatchEnd ###
 
 Dispatch end event.
 
@@ -42,7 +44,7 @@ Dispatch end event.
 @param aCharIndex   offset of spoken characters.
 
 
-## dispatchPause ##
+### dispatchPause ###
 
 Dispatch pause event. Should not be called directly by service.
 
@@ -50,7 +52,7 @@ Dispatch pause event. Should not be called directly by service.
 @param aCharIndex   offset of spoken characters.
 
 
-## dispatchResume ##
+### dispatchResume ###
 
 Dispatch resume event. Should not be called directly by service.
 
@@ -58,7 +60,7 @@ Dispatch resume event. Should not be called directly by service.
 @param aCharIndex   offset of spoken characters.
 
 
-## dispatchError ##
+### dispatchError ###
 
 Dispatch error event.
 
@@ -66,7 +68,7 @@ Dispatch error event.
 @param aCharIndex   offset of spoken characters.
 
 
-## dispatchBoundary ##
+### dispatchBoundary ###
 
 Dispatch boundary event.
 
@@ -75,7 +77,7 @@ Dispatch boundary event.
 @param aCharIndex   offset of spoken characters.
 
 
-## dispatchMark ##
+### dispatchMark ###
 
 Dispatch mark event.
 

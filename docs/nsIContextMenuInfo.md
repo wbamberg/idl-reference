@@ -9,24 +9,26 @@ nsIContextMenuInfo
 A helper object for implementors of nsIContextMenuListener2.
 
 
-## mouseEvent ##
+## Attributes ##
+
+### mouseEvent ###
 
 The DOM context menu event.
 
 
-## targetNode ##
+### targetNode ###
 
 The DOM node most relevant to the context.
 
 
-## associatedLink ##
+### associatedLink ###
 
 Given the <CODE>CONTEXT_LINK</CODE> flag, <CODE>targetNode</CODE> may not
 nescesarily be a link. This returns the anchor from <CODE>targetNode</CODE>
 if it has one or that of its nearest ancestor if it does not.
 
 
-## imageContainer ##
+### imageContainer ###
 
 Given the <CODE>CONTEXT_IMAGE</CODE> flag, these methods can be
 used in order to get the image for viewing, saving, or for the clipboard.
@@ -36,9 +38,9 @@ image was found, or NS_ERROR_NULL_POINTER if an internal error occurs where we t
 is an image, but for some reason it cannot be returned.
 
 
-## imageSrc ##
+### imageSrc ###
 
-## backgroundImageContainer ##
+### backgroundImageContainer ###
 
 Given the <CODE>CONTEXT_BACKGROUND_IMAGE</CODE> flag, these methods can be
 used in order to get the image for viewing, saving, or for the clipboard.
@@ -48,4 +50,4 @@ image was found, or NS_ERROR_NULL_POINTER if an internal error occurs where we t
 background image, but for some reason it cannot be returned.
 
 
-## backgroundImageSrc ##
+### backgroundImageSrc ###

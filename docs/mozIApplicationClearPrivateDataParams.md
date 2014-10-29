@@ -4,6 +4,8 @@ layout: default
 
 # mozIApplicationClearPrivateDataParams #
 
-## appId ##
+## Attributes ##
 
-## browserOnly ##
+### appId ###
+
+### browserOnly ###

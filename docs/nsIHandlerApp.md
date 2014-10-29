@@ -12,18 +12,9 @@ we should also try to make nsIWebContentHandlerInfo inherit from or possibly
 be replaced by nsIWebHandlerApp (bug 394710).
 
 
-## name ##
+## Methods ##
 
-Human readable name for the handler
-
-
-## detailedDescription ##
-
-Detailed description for this handler. Suitable for
-a tooltip or short informative sentence.
-
-
-## equals ##
+### equals ###
 
 Whether or not the given handler app is logically equivalent to the
 invokant (i.e. they represent the same app).
@@ -37,7 +28,7 @@ the same.
 @returns true if the two are logically equivalent, false otherwise
 
 
-## launchWithURI ##
+### launchWithURI ###
 
 Launches the application with the specified URI.
 
@@ -55,4 +46,17 @@ Launches the application with the specified URI.
        nsIBrowserDOMWindow.openURI.  In the future, it may attempt to 
        have a more comprehensive strategy which could include handing
        off to the system default browser (bug 394479).
+
+
+## Attributes ##
+
+### name ###
+
+Human readable name for the handler
+
+
+### detailedDescription ###
+
+Detailed description for this handler. Suitable for
+a tooltip or short informative sentence.
 

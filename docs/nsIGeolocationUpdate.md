@@ -9,21 +9,23 @@ Interface provides a way for a geolocation provider to
 notify the system that a new location is available.
 
 
-## update ##
+## Methods ##
+
+### update ###
 
 Notify the geolocation service that a new geolocation
 has been discovered.
 This must be called on the main thread
 
 
-## locationUpdatePending ##
+### locationUpdatePending ###
 
 Notify the geolocation service that the location has
 potentially changed, and thus a new position is in the
 process of being acquired.
 
 
-## notifyError ##
+### notifyError ###
 
 Notify the geolocation service of an error.
 This must be called on the main thread.

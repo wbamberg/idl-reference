@@ -4,11 +4,13 @@ layout: default
 
 # nsIRilContext #
 
-## cardState ##
+## Attributes ##
+
+### cardState ###
 
 One of the nsIIccProvider.CARD_STATE_* values.
 
 
-## imsi ##
+### imsi ###
 
-## iccInfo ##
+### iccInfo ###

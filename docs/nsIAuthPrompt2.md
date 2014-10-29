@@ -10,24 +10,9 @@ It can be used to prompt users for authentication information, either
 synchronously or asynchronously.
 
 
-## LEVEL_NONE ##
- @name Security Levels */
+## Methods ##
 
-The password will be sent unencrypted. No security provided.
-
-
-## LEVEL_PW_ENCRYPTED ##
-
-Password will be sent encrypted, but the connection is otherwise
-insecure.
-
-
-## LEVEL_SECURE ##
-
-The connection, both for password and data, is secure.
-
-
-## promptAuth ##
+### promptAuth ###
 
 Requests a username and a password. Implementations will commonly show a
 dialog with a username and password field, depending on flags also a
@@ -54,7 +39,7 @@ domain field.
         return value of false.
 
 
-## asyncPromptAuth ##
+### asyncPromptAuth ###
 
 Asynchronously prompt the user for a username and password.
 This has largely the same semantics as promptUsernameAndPassword(),
@@ -85,4 +70,23 @@ This implementation may:
     about the failure has to come through the callback. This way we
     prevent multiple dialogs shown to the user because consumer may fall
     back to synchronous prompt on synchronous failure of this method.
+
+
+## Constants ##
+
+### LEVEL_NONE ###
+ @name Security Levels */
+
+The password will be sent unencrypted. No security provided.
+
+
+### LEVEL_PW_ENCRYPTED ###
+
+Password will be sent encrypted, but the connection is otherwise
+insecure.
+
+
+### LEVEL_SECURE ###
+
+The connection, both for password and data, is secure.
 

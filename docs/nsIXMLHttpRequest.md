@@ -45,65 +45,15 @@ you're aware of all the security implications.  And then think twice about
 it.
 
 
-## channel ##
+## Methods ##
 
-The request uses a channel in order to perform the
-request.  This attribute represents the channel used
-for the request.  NULL if the channel has not yet been
-created.
-
-Mozilla only. Requires elevated privileges to access.
-
-
-## responseXML ##
-
-The response to the request is parsed as if it were a
-text/xml stream. This attributes represents the response as
-a DOM Document object. NULL if the request is unsuccessful or
-has not yet been sent.
-
-
-## responseText ##
-
-The response to the request as text.
-NULL if the request is unsuccessful or
-has not yet been sent.
-
-
-## responseType ##
-
-Determine a response format which response attribute returns.
-empty string (initial value) or "text": as text.
-"arraybuffer": as a typed array ArrayBuffer.
-"blob": as a File API Blob.
-"document": as a DOM Document object.
-
-
-## response ##
-
-The response to the request as a specified format by responseType.
-NULL if the request is unsuccessful or
-has not yet been sent.
-
-
-## status ##
-
-The status of the response to the request for HTTP requests.
-
-
-## statusText ##
-
-The string representing the status of the response for
-HTTP requests.
-
-
-## abort ##
+### abort ###
 
 If the request has been sent already, this method will
 abort the request.
 
 
-## getAllResponseHeaders ##
+### getAllResponseHeaders ###
 
 Returns all of the response headers as a string for HTTP
 requests.
@@ -112,7 +62,7 @@ requests.
          The empty string if the response has not yet been received.
 
 
-## getResponseHeader ##
+### getResponseHeader ###
 
 Returns the text of the header with the specified name for
 HTTP requests.
@@ -123,7 +73,7 @@ HTTP requests.
          header does not exist in the response.
 
 
-## open ##
+### open ###
 
 Meant to be a script-only method for initializing a request.
 
@@ -145,7 +95,7 @@ already), this is equivalent to calling abort() and then open().
                 The default value is the empty string
 
 
-## send ##
+### send ###
 
 Sends the request. If the request is asynchronous, returns
 immediately after sending the request. If it is synchronous
@@ -172,7 +122,7 @@ After the initial response, all event listeners will be cleared.
             calling send.
 
 
-## sendAsBinary ##
+### sendAsBinary ###
 
 A variant of the send() method used to send binary data.
 
@@ -181,7 +131,7 @@ A variant of the send() method used to send binary data.
             high-order byte of each character will be discarded).
 
 
-## setRequestHeader ##
+### setRequestHeader ###
 
 Sets a HTTP request header for HTTP requests. You must call open
 before setting the request headers.
@@ -190,36 +140,7 @@ before setting the request headers.
 @param value The body of the header.
 
 
-## timeout ##
-
-The amount of milliseconds a request can take before being terminated.
-Initially zero. Zero means there is no timeout.
-
-
-## UNSENT ##
-
-The state of the request.
-
-Possible values:
-  0 UNSENT   open() has not been called yet.
-  1 OPENED   send() has not been called yet.
-  2 HEADERS_RECEIVED
-             send() has been called, headers and status are available.
-  3 LOADING  Downloading, responseText holds the partial data.
-  4 DONE     Finished with all operations.
-
-
-## OPENED ##
-
-## HEADERS_RECEIVED ##
-
-## LOADING ##
-
-## DONE ##
-
-## readyState ##
-
-## overrideMimeType ##
+### overrideMimeType ###
 
 Override the mime type returned by the server (if any). This may
 be used, for example, to force a stream to be treated and parsed
@@ -230,26 +151,7 @@ must be done before the <code>send</code> method is invoked.
                 (if any).
 
 
-## mozBackgroundRequest ##
-
-Set to true if this is a background service request. This will
-prevent a load group being associated with the request, and
-suppress any security dialogs from being shown * to the user.
-In the cases where one of those dialogs would be shown, the request
-will simply fail instead.
-
-
-## withCredentials ##
-
-When set to true attempts to make cross-site Access-Control requests
-with credentials such as cookies and authorization headers.
-
-Never affects same-site requests.
-
-Defaults to false.
-
-
-## init ##
+### init ###
 
 Initialize the object for use from C++ code with the principal, script
 context, and owner window that should be used.
@@ -266,12 +168,93 @@ context, and owner window that should be used.
                null.
 
 
-## upload ##
+## Attributes ##
+
+### channel ###
+
+The request uses a channel in order to perform the
+request.  This attribute represents the channel used
+for the request.  NULL if the channel has not yet been
+created.
+
+Mozilla only. Requires elevated privileges to access.
+
+
+### responseXML ###
+
+The response to the request is parsed as if it were a
+text/xml stream. This attributes represents the response as
+a DOM Document object. NULL if the request is unsuccessful or
+has not yet been sent.
+
+
+### responseText ###
+
+The response to the request as text.
+NULL if the request is unsuccessful or
+has not yet been sent.
+
+
+### responseType ###
+
+Determine a response format which response attribute returns.
+empty string (initial value) or "text": as text.
+"arraybuffer": as a typed array ArrayBuffer.
+"blob": as a File API Blob.
+"document": as a DOM Document object.
+
+
+### response ###
+
+The response to the request as a specified format by responseType.
+NULL if the request is unsuccessful or
+has not yet been sent.
+
+
+### status ###
+
+The status of the response to the request for HTTP requests.
+
+
+### statusText ###
+
+The string representing the status of the response for
+HTTP requests.
+
+
+### timeout ###
+
+The amount of milliseconds a request can take before being terminated.
+Initially zero. Zero means there is no timeout.
+
+
+### readyState ###
+
+### mozBackgroundRequest ###
+
+Set to true if this is a background service request. This will
+prevent a load group being associated with the request, and
+suppress any security dialogs from being shown * to the user.
+In the cases where one of those dialogs would be shown, the request
+will simply fail instead.
+
+
+### withCredentials ###
+
+When set to true attempts to make cross-site Access-Control requests
+with credentials such as cookies and authorization headers.
+
+Never affects same-site requests.
+
+Defaults to false.
+
+
+### upload ###
 
 Upload process can be tracked by adding event listener to |upload|.
 
 
-## onreadystatechange ##
+### onreadystatechange ###
 
 Meant to be a script-only mechanism for setting a callback function.
 The attribute is expected to be JavaScript function object. When the
@@ -284,13 +267,36 @@ After the initial response, all event listeners will be cleared.
 Call open() before setting an onreadystatechange listener.
 
 
-## mozAnon ##
+### mozAnon ###
 
 If true, the request will be sent without cookie and authentication
 headers.
 
 
-## mozSystem ##
+### mozSystem ###
 
 If true, the same origin policy will not be enforced on the request.
 
+
+## Constants ##
+
+### UNSENT ###
+
+The state of the request.
+
+Possible values:
+  0 UNSENT   open() has not been called yet.
+  1 OPENED   send() has not been called yet.
+  2 HEADERS_RECEIVED
+             send() has been called, headers and status are available.
+  3 LOADING  Downloading, responseText holds the partial data.
+  4 DONE     Finished with all operations.
+
+
+### OPENED ###
+
+### HEADERS_RECEIVED ###
+
+### LOADING ###
+
+### DONE ###

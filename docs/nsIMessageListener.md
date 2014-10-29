@@ -161,7 +161,9 @@ is common
  };
 
 
-## receiveMessage ##
+## Methods ##
+
+### receiveMessage ###
 
 This is for JS only.
 receiveMessage is called with one parameter, which has the following

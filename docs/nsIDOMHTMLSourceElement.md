@@ -13,12 +13,14 @@ http://www.whatwg.org/specs/web-apps/current-work/#source
 @status UNDER_DEVELOPMENT
 
 
-## src ##
+## Attributes ##
 
-## type ##
+### src ###
 
-## srcset ##
+### type ###
 
-## sizes ##
+### srcset ###
 
-## media ##
+### sizes ###
+
+### media ###

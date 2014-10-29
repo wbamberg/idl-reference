@@ -4,7 +4,9 @@ layout: default
 
 # nsIRilMobileMessageDatabaseService #
 
-## saveReceivedMessage ##
+## Methods ##
+
+### saveReceivedMessage ###
 
 |aMessage| Object: should contain the following properties for internal use:
   - |type| DOMString: "sms" or "mms"
@@ -25,7 +27,7 @@ layout: default
     - |phoneNumber| DOMString: [optional] my own phone number.
 
 
-## saveSendingMessage ##
+### saveSendingMessage ###
 
 |aMessage| Object: should contain the following properties for internal use:
   - |type| DOMString: "sms" or "mms"
@@ -41,7 +43,7 @@ layout: default
     - |receivers| DOMString Array: the phone numbers of receivers
 
 
-## setMessageDeliveryByMessageId ##
+### setMessageDeliveryByMessageId ###
 
 |aMessageId| Number: the message's DB record ID.
 |aReceiver| DOMString: the phone number of receiver (for MMS; can be null).
@@ -51,7 +53,7 @@ layout: default
 |aCallback| nsIRilMobileMessageDatabaseCallback: an optional callback.
 
 
-## setMessageDeliveryStatusByEnvelopeId ##
+### setMessageDeliveryStatusByEnvelopeId ###
 
 |aEnvelopeId| DOMString: the "message-id" specified in the MMS PDU headers.
 |aReceiver| DOMString: the phone number of receiver (for MMS; can be null).
@@ -59,7 +61,7 @@ layout: default
 |aCallback| nsIRilMobileMessageDatabaseCallback: an optional callback.
 
 
-## setMessageReadStatusByEnvelopeId ##
+### setMessageReadStatusByEnvelopeId ###
 
 |aEnvelopeId| DOMString: the "message-id" specified in the MMS PDU headers.
 |aReceiver| DOMString: the phone number of receiver (for MMS; can be null).
@@ -67,28 +69,28 @@ layout: default
 |aCallback| nsIRilMobileMessageDatabaseCallback: an optional callback.
 
 
-## getMessageRecordById ##
+### getMessageRecordById ###
 
 |aMessageId| Number: the message's DB record ID.
 |aCallback| nsIRilMobileMessageDatabaseRecordCallback: a callback which
   takes result flag, message record and domMessage as parameters.
 
 
-## getMessageRecordByTransactionId ##
+### getMessageRecordByTransactionId ###
 
 |aTransactionId| DOMString: the transaction ID of MMS PDU.
 |aCallback| nsIRilMobileMessageDatabaseRecordCallback: a callback which
   takes result flag and message record as parameters.
 
 
-## translateCrErrorToMessageCallbackError ##
+### translateCrErrorToMessageCallbackError ###
 
 |aCrError| nsresult: the NS_ERROR defined in Components.results.
 
 @returns the error code defined in nsIMobileMessageCallback
 
 
-## saveSmsSegment ##
+### saveSmsSegment ###
 
 |aSmsSegment| jsval: Decoded Single SMS PDU.
 |aCallback| nsIRilMobileMessageDatabaseConcatenationCallback: a callback which

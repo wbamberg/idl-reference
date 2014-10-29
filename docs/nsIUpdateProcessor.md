@@ -8,7 +8,9 @@ An interface describing a component which handles the job of processing
 an update after it's been downloaded.
 
 
-## processUpdate ##
+## Methods ##
+
+### processUpdate ###
 
 Processes the update which has been downloaded.
 This happens without restarting the application.

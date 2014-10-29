@@ -4,6 +4,8 @@ layout: default
 
 # nsINetworkProperties #
 
-## isWifi ##
+## Attributes ##
 
-## dhcpGateway ##
+### isWifi ###
+
+### dhcpGateway ###

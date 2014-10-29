@@ -19,7 +19,9 @@ the stream will be read on a background thread utilizing the stream
 transport service.  More details are provided below.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize the input stream pump.
 
@@ -48,7 +50,7 @@ Initialize the input stream pump.
        if true, the input stream will be closed after it has been read.
 
 
-## asyncRead ##
+### asyncRead ###
 
 asyncRead causes the input stream to be read in chunks and delivered
 asynchronously to the listener via OnDataAvailable.

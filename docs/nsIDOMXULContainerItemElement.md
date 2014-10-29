@@ -4,7 +4,9 @@ layout: default
 
 # nsIDOMXULContainerItemElement #
 
-## parentContainer ##
+## Attributes ##
+
+### parentContainer ###
 
 Returns the parent container if any.
 

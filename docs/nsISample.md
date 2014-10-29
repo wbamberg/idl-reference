@@ -16,8 +16,12 @@ All platform: Using irc, connect to irc.mozilla.org and type in
 
 
 
-## value ##
+## Methods ##
 
-## writeValue ##
+### writeValue ###
 
-## poke ##
+### poke ###
+
+## Attributes ##
+
+### value ###

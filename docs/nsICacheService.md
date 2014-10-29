@@ -11,7 +11,9 @@ REMOVED SOON. WE STRONGLY ENCORAGE TO MIGRATE THE EXISTING CODE AND FOR
 THE NEW CODE USE ONLY THE NEW HTTP CACHE API IN netwerk/cache2/.
 
 
-## createSession ##
+## Methods ##
+
+### createSession ###
 
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.
 
@@ -35,14 +37,14 @@ equivalent.
 @return new cache session.
 
 
-## visitEntries ##
+### visitEntries ###
 
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.
 
 Visit entries stored in the cache.  Used to implement about:cache.
 
 
-## evictEntries ##
+### evictEntries ###
 
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.
 
@@ -52,7 +54,9 @@ Evicts all entries in all devices implied by the storage policy.
       everything.
 
 
-## cacheIOTarget ##
+## Attributes ##
+
+### cacheIOTarget ###
 
 Event target which is used for I/O operations
 

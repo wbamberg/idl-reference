@@ -9,4 +9,6 @@ Configuration interface for the Secret Decoder Ring
    used as parent for dialog windows (such as password prompts)
 
 
-## setWindow ##
+## Methods ##
+
+### setWindow ###

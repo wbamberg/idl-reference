@@ -8,22 +8,24 @@ This interface is implemented by top level accessible object in hierarchy and
 provides information about application.
 
 
-## appName ##
+## Attributes ##
+
+### appName ###
 
 Returns the application name.
 
 
-## appVersion ##
+### appVersion ###
 
 Returns the application version.
 
 
-## platformName ##
+### platformName ###
 
 Returns the platform name.
 
 
-## platformVersion ##
+### platformVersion ###
 
 Returns the platform version.
 

@@ -11,30 +11,34 @@ John Keiser <jkeiser@netscape.com> and Roland Mainz
 <roland.mainz@informatik.med.uni-giessen.de> for futher details.
 
 
-## ShowPrintSetupDialog ##
+## Methods ##
+
+### ShowPrintSetupDialog ###
 
 Show Native Print Options dialog, this may not be supported on all platforms
 
 
-## CreatePrintSettings ##
+### CreatePrintSettings ###
 
 Creates a new PrintSettnigs Object
 and initializes it from prefs
 
 
-## getPrinterPrefInt ##
+### getPrinterPrefInt ###
 
 Get a prefixed integer pref 
 
 
-## displayJobProperties ##
+### displayJobProperties ###
 
 display Printer Job Properties dialog
 
 
-## kNativeDataPrintRecord ##
+### GetNativeData ###
+
+## Constants ##
+
+### kNativeDataPrintRecord ###
 
 Native data constants
 
-
-## GetNativeData ##

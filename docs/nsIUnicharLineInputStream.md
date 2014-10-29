@@ -4,7 +4,9 @@ layout: default
 
 # nsIUnicharLineInputStream #
 
-## readLine ##
+## Methods ##
+
+### readLine ###
 
 Read a single line from the stream, where a line is a 
 possibly zero length sequence of characters terminated by a

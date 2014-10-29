@@ -18,7 +18,9 @@ should implement nsINestedURI and return the http://example.com URI as its
 inner URI.
 
 
-## innerURI ##
+## Attributes ##
+
+### innerURI ###
 
 The inner URI for this nested URI.  This must not return null if the
 getter succeeds; URIs that have no inner must not QI to this interface.
@@ -28,7 +30,7 @@ Modifying the returned URI must not in any way modify the nested URI; this
 means the returned URI must be either immutable or a clone.
 
 
-## innermostURI ##
+### innermostURI ###
 
 The innermost URI for this nested URI.  This must not return null if the
 getter succeeds.  This is equivalent to repeatedly calling innerURI while

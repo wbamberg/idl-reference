@@ -4,8 +4,10 @@ layout: default
 
 # nsIDOMCounter #
 
-## identifier ##
+## Attributes ##
 
-## listStyle ##
+### identifier ###
 
-## separator ##
+### listStyle ###
+
+### separator ###

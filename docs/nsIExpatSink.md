@@ -9,7 +9,9 @@ to get output from expat and do something with it; in other words,
 by any sink that handles some sort of XML dialect.
 
 
-## HandleStartElement ##
+## Methods ##
+
+### HandleStartElement ###
 
 Called to handle the opening tag of an element.
 @param aName the fully qualified tagname of the element
@@ -25,32 +27,32 @@ Called to handle the opening tag of an element.
 @param aLineNumber the line number of the start tag in the data stream.
 
 
-## HandleEndElement ##
+### HandleEndElement ###
 
 Called to handle the closing tag of an element.
 @param aName the fully qualified tagname of the element
 
 
-## HandleComment ##
+### HandleComment ###
 
 Called to handle a comment
 @param aCommentText the text of the comment (not including the
        "<!--" and "-->")
 
 
-## HandleCDataSection ##
+### HandleCDataSection ###
 
 Called to handle a CDATA section
 @param aData the text in the CDATA section.  This is null-terminated.
 @param aLength the length of the aData string
 
 
-## HandleDoctypeDecl ##
+### HandleDoctypeDecl ###
 
 Called to handle the doctype declaration
 
 
-## HandleCharacterData ##
+### HandleCharacterData ###
 
 Called to handle character data.  Note that this does NOT get
 called for the contents of CDATA sections.
@@ -58,14 +60,14 @@ called for the contents of CDATA sections.
 @param aLength the length of the aData string
 
 
-## HandleProcessingInstruction ##
+### HandleProcessingInstruction ###
 
 Called to handle a processing instruction
 @param aTarget the PI target (e.g. xml-stylesheet)
 @param aData all the rest of the data in the PI
 
 
-## HandleXMLDeclaration ##
+### HandleXMLDeclaration ###
 
 Handle the XML Declaration.
 
@@ -76,7 +78,7 @@ Handle the XML Declaration.
                    given as no, or that it was given as yes.
 
 
-## ReportError ##
+### ReportError ###
 
 Ask the content sink if the expat driver should log an error to the console.
 

@@ -4,17 +4,19 @@ layout: default
 
 # nsIHTTPIndex #
 
-## BaseURL ##
+## Attributes ##
+
+### BaseURL ###
 
 The base URL of the HTTP index
 
 
-## DataSource ##
+### DataSource ###
 
 The RDF datasource that contains the HTTP index information.
 
 
-## encoding ##
+### encoding ###
 
 The charset to use for decoding FTP filenames
 

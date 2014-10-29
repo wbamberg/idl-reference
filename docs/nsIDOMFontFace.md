@@ -4,24 +4,26 @@ layout: default
 
 # nsIDOMFontFace #
 
-## fromFontGroup ##
+## Attributes ##
 
-## fromLanguagePrefs ##
+### fromFontGroup ###
 
-## fromSystemFallback ##
+### fromLanguagePrefs ###
 
-## name ##
+### fromSystemFallback ###
 
-## CSSFamilyName ##
+### name ###
 
-## rule ##
+### CSSFamilyName ###
 
-## srcIndex ##
+### rule ###
 
-## URI ##
+### srcIndex ###
 
-## localName ##
+### URI ###
 
-## format ##
+### localName ###
 
-## metadata ##
+### format ###
+
+### metadata ###

@@ -4,6 +4,8 @@ layout: default
 
 # nsIPKCS11 #
 
-## deleteModule ##
+## Methods ##
 
-## addModule ##
+### deleteModule ###
+
+### addModule ###

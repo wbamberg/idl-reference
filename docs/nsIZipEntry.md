@@ -4,39 +4,41 @@ layout: default
 
 # nsIZipEntry #
 
-## compression ##
+## Attributes ##
+
+### compression ###
 
 The type of compression used for the item.  The possible values and
 their meanings are defined in the zip file specification at
 http://www.pkware.com/business_and_developers/developer/appnote/
 
 
-## size ##
+### size ###
 
 The compressed size of the data in the item.
 
 
-## realSize ##
+### realSize ###
 
 The uncompressed size of the data in the item.
 
 
-## CRC32 ##
+### CRC32 ###
 
 The CRC-32 hash of the file in the entry.
 
 
-## isDirectory ##
+### isDirectory ###
 
 True if the name of the entry ends with '/' and false otherwise.
 
 
-## lastModifiedTime ##
+### lastModifiedTime ###
 
 The time at which this item was last modified.
 
 
-## isSynthetic ##
+### isSynthetic ###
 
 Use this attribute to determine whether this item is an actual zip entry
 or is one synthesized for part of a real entry's path.  A synthesized
@@ -48,7 +50,7 @@ this attribute will be false for the nsIZipEntry for that directory.
 It is impossible for a file to be synthetic.
 
 
-## permissions ##
+### permissions ###
 
 The UNIX style file permissions of this item.
 

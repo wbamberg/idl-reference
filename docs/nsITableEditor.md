@@ -4,13 +4,9 @@ layout: default
 
 # nsITableEditor #
 
-## eNoSearch ##
+## Methods ##
 
-## ePreviousColumn ##
-
-## ePreviousRow ##
-
-## insertTableCell ##
+### insertTableCell ###
  Insert table methods
 Insert relative to the selected cell or the 
  cell enclosing the selection anchor
@@ -22,11 +18,11 @@ The selection is collapsed and is left in the new cell
                     else insert before current cell
 
 
-## insertTableColumn ##
+### insertTableColumn ###
 
-## insertTableRow ##
+### insertTableRow ###
 
-## deleteTable ##
+### deleteTable ###
  Delete table methods
 Delete starting at the selected cell or the 
  cell (or table) enclosing the selection anchor
@@ -38,13 +34,13 @@ The selection is collapsed and is left in the
 @param aNumber    Number of items to insert/delete
 
 
-## deleteTableCellContents ##
+### deleteTableCellContents ###
  Delete just the cell contents
 This is what should happen when Delete key is used
   for selected cells, to minimize upsetting the table layout
 
 
-## deleteTableCell ##
+### deleteTableCell ###
  Delete cell elements as well as contents
 @param aNumber   Number of contiguous cells, rows, or columns
 
@@ -55,17 +51,17 @@ For Delete Rows or Columns, the complete columns or rows are
  have to be contiguous.
 
 
-## deleteTableColumn ##
+### deleteTableColumn ###
 
-## deleteTableRow ##
+### deleteTableRow ###
 
-## selectTableCell ##
+### selectTableCell ###
  Table Selection methods
 Selecting a row or column actually
 selects all cells (not TR in the case of rows)
 
 
-## selectBlockOfCells ##
+### selectBlockOfCells ###
  Select a rectangular block of cells:
  all cells falling within the row/column index of aStartCell
  to through the row/column index of the aEndCell
@@ -75,15 +71,15 @@ selects all cells (not TR in the case of rows)
  @param aEndCell    ending cell in block
 
 
-## selectTableRow ##
+### selectTableRow ###
 
-## selectTableColumn ##
+### selectTableColumn ###
 
-## selectTable ##
+### selectTable ###
 
-## selectAllTableCells ##
+### selectAllTableCells ###
 
-## switchTableCellHeaderType ##
+### switchTableCellHeaderType ###
  Create a new TD or TH element, the opposite type of the supplied aSourceCell
   1. Copy all attributes from aSourceCell to the new cell
   2. Move all contents of aSourceCell to the new cell
@@ -93,7 +89,7 @@ selects all cells (not TR in the case of rows)
  @return              The new cell that replaces aSourceCell
 
 
-## joinTableCells ##
+### joinTableCells ###
  Merges contents of all selected cells
 for selected cells that are adjacent,
 this will result in a larger cell with appropriate 
@@ -115,7 +111,7 @@ If there are no selected cells,
   are merged
 
 
-## splitTableCell ##
+### splitTableCell ###
  Split a cell that has rowspan and/or colspan > 0
   into cells such that all new cells have 
   rowspan = 1 and colspan = 1
@@ -123,7 +119,7 @@ If there are no selected cells,
   they will appear to be in the upper-left cell 
 
 
-## normalizeTable ##
+### normalizeTable ###
  Scan through all rows and add cells as needed so 
   all locations in the cellmap are occupied.
   Used after inserting single cells or pasting
@@ -135,20 +131,20 @@ This doesn't doesn't change the selection,
   in a page independent of the selection
 
 
-## getCellIndexes ##
+### getCellIndexes ###
  Get the row an column index from the layout's cellmap
 If aCell is null, it will try to find enclosing table of selection anchor
 
 
 
-## getTableSize ##
+### getTableSize ###
  Get the number of rows and columns in a table from the layout's cellmap
 If aTable is null, it will try to find enclosing table of selection ancho
 Note that all rows in table will not have this many because of 
 ROWSPAN effects or if table is not "rectangular" (has short rows)
 
 
-## getCellAt ##
+### getCellAt ###
  Get a cell element at cellmap grid coordinates
 A cell that spans across multiple cellmap locations will
   be returned multiple times, once for each location it occupies
@@ -164,7 +160,7 @@ A cell that spans across multiple cellmap locations will
   until the returned aCell is null
 
 
-## getCellDataAt ##
+### getCellDataAt ###
  Get a cell at cellmap grid coordinates and associated data
 A cell that spans across multiple cellmap locations will
   be returned multiple times, once for each location it occupies
@@ -191,7 +187,7 @@ returns values:
  passes NS_SUCCEEDED macro)
 
 
-## getFirstRow ##
+### getFirstRow ###
  Get the first row element in a table
 
 @return            The row at the requested index
@@ -200,7 +196,7 @@ returns values:
  passes NS_SUCCEEDED macro)
 
 
-## getNextRow ##
+### getNextRow ###
  Get the next row element starting the search from aTableElement
 
 @param aTableElement Any TR or child-of-TR element in the document
@@ -212,7 +208,7 @@ returns values:
  passes NS_SUCCEEDED macro)
 
 
-## setSelectionAfterTableEdit ##
+### setSelectionAfterTableEdit ###
  Preferred direction to search for neighboring cell
 when trying to locate a cell to place caret in after
 a table editing action. 
@@ -236,7 +232,7 @@ Used for aDirection param in SetSelectionAfterTableEdit
                     object to insure we reset the caret in a table-editing method.
 
 
-## getSelectedOrParentTableElement ##
+### getSelectedOrParentTableElement ###
  Examine the current selection and find
   a selected TABLE, TD or TH, or TR element.
   or return the parent TD or TH if selection is inside a table cell
@@ -252,7 +248,7 @@ Used for aDirection param in SetSelectionAfterTableEdit
 
 
 
-## getSelectedCellsType ##
+### getSelectedCellsType ###
  Generally used after GetSelectedOrParentTableElement
   to test if selected cells are complete rows or columns
 
@@ -274,7 +270,7 @@ Used for aDirection param in SetSelectionAfterTableEdit
                              and in each column, all cells are selected
 
 
-## getFirstSelectedCell ##
+### getFirstSelectedCell ###
  Get first selected element from first selection range.
   (If multiple cells were selected this is the first in the order they were selected)
 Assumes cell-selection model where each cell
@@ -288,7 +284,7 @@ Returns the DOM cell element
    passes NS_SUCCEEDED macro)
 
 
-## getFirstSelectedCellInTable ##
+### getFirstSelectedCellInTable ###
  Get first selected element in the table
   This is the upper-left-most selected cell in table,
   ignoring the order that the user selected them (order in the selection ranges)
@@ -304,7 +300,7 @@ Returns the DOM cell element
    passes NS_SUCCEEDED macro)
 
 
-## getNextSelectedCell ##
+### getNextSelectedCell ###
  Get next selected cell element from first selection range.
 Assumes cell-selection model where each cell
 is in a separate range (selection parent node is table row)
@@ -318,3 +314,11 @@ Returns the DOM cell element
   (in C++: returns NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found
    passes NS_SUCCEEDED macro)
 
+
+## Constants ##
+
+### eNoSearch ###
+
+### ePreviousColumn ###
+
+### ePreviousRow ###

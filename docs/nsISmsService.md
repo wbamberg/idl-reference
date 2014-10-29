@@ -4,16 +4,20 @@ layout: default
 
 # nsISmsService #
 
-## smsDefaultServiceId ##
+## Methods ##
 
-## getSegmentInfoForText ##
+### getSegmentInfoForText ###
 
-## send ##
+### send ###
 
-## isSilentNumber ##
+### isSilentNumber ###
 
-## addSilentNumber ##
+### addSilentNumber ###
 
-## removeSilentNumber ##
+### removeSilentNumber ###
 
-## getSmscAddress ##
+### getSmscAddress ###
+
+## Attributes ##
+
+### smsDefaultServiceId ###

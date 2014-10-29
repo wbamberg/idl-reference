@@ -4,12 +4,14 @@ layout: default
 
 # nsIStatusReporterManager #
 
-## enumerateReporters ##
+## Methods ##
 
-## registerReporter ##
+### enumerateReporters ###
 
-## unregisterReporter ##
+### registerReporter ###
 
-## init ##
+### unregisterReporter ###
 
-## dumpReports ##
+### init ###
+
+### dumpReports ###

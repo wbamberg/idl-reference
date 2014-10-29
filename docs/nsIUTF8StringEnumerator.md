@@ -4,6 +4,8 @@ layout: default
 
 # nsIUTF8StringEnumerator #
 
-## hasMore ##
+## Methods ##
 
-## getNext ##
+### hasMore ###
+
+### getNext ###

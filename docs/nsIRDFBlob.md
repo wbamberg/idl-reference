@@ -8,12 +8,14 @@ A literal node in the graph, whose value is arbitrary
 binary data.
 
 
-## value ##
+## Attributes ##
+
+### value ###
 
 The binary data.
 
 
-## length ##
+### length ###
 
 The data's length.
 

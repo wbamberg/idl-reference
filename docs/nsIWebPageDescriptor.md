@@ -9,18 +9,24 @@ window to be loaded into another window without refetching it from the
 network.
 
 
-## DISPLAY_AS_SOURCE ##
+## Methods ##
 
-## DISPLAY_NORMAL ##
-
-## loadPage ##
+### loadPage ###
 
 Tells the object to load the page specified by the page descriptor
 
 @throws NS_ERROR_FAILURE - 
 
 
-## currentDescriptor ##
+## Attributes ##
+
+### currentDescriptor ###
 
 Retrieves the page descriptor for the curent document.
 
+
+## Constants ##
+
+### DISPLAY_AS_SOURCE ###
+
+### DISPLAY_NORMAL ###

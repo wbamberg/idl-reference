@@ -4,19 +4,15 @@ layout: default
 
 # nsIScriptError #
 
-## errorFlag ##
- pseudo-flag for default case */
+## Methods ##
 
-## warningFlag ##
- message is warning */
+### init ###
 
-## exceptionFlag ##
- exception was thrown for this case - exception-aware hosts can ignore */
+### initWithWindowID ###
 
-## strictFlag ##
- error or warning is due to strict option */
+## Attributes ##
 
-## errorMessage ##
+### errorMessage ###
 
 The error message without any context/line number information.
 
@@ -24,17 +20,17 @@ The error message without any context/line number information.
       with file/line information.
 
 
-## sourceName ##
+### sourceName ###
 
-## sourceLine ##
+### sourceLine ###
 
-## lineNumber ##
+### lineNumber ###
 
-## columnNumber ##
+### columnNumber ###
 
-## flags ##
+### flags ###
 
-## category ##
+### category ###
 
 Categories I know about -
 XUL javascript
@@ -42,12 +38,22 @@ content javascript (both of these from nsDocShell, currently)
 system javascript (errors in JS components and other system JS)
 
 
-## outerWindowID ##
+### outerWindowID ###
 
-## innerWindowID ##
+### innerWindowID ###
 
-## isFromPrivateWindow ##
+### isFromPrivateWindow ###
 
-## init ##
+## Constants ##
 
-## initWithWindowID ##
+### errorFlag ###
+ pseudo-flag for default case */
+
+### warningFlag ###
+ message is warning */
+
+### exceptionFlag ###
+ exception was thrown for this case - exception-aware hosts can ignore */
+
+### strictFlag ###
+ error or warning is due to strict option */

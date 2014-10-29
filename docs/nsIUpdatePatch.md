@@ -9,7 +9,19 @@ be downloaded and applied to a version of this application so that it
 can be updated.
 
 
-## type ##
+## Methods ##
+
+### serialize ###
+
+Serializes this patch object into a DOM Element
+@param   updates
+         The document to serialize into
+@returns The DOM Element created by the serialization process
+
+
+## Attributes ##
+
+### type ###
 
 The type of this patch:
 "partial"      A binary difference between two application versions
@@ -17,48 +29,40 @@ The type of this patch:
                to update to the new version
 
 
-## URL ##
+### URL ###
 
 The URL this patch was being downloaded from
 
 
-## finalURL ##
+### finalURL ###
 
 The final URL this patch was being downloaded from
 
 
-## hashFunction ##
+### hashFunction ###
 
 The hash function to use when determining this file's integrity
 
 
-## hashValue ##
+### hashValue ###
 
 The value of the hash function named above that should be computed if
 this file is not corrupt.
 
 
-## size ##
+### size ###
 
 The size of this file, in bytes.
 
 
-## state ##
+### state ###
 
 The state of this patch
 
 
-## selected ##
+### selected ###
 
 true if this patch is currently selected as the patch to be downloaded and
 installed for this update transaction, false if another patch from this
 update has been selected.
-
-
-## serialize ##
-
-Serializes this patch object into a DOM Element
-@param   updates
-         The document to serialize into
-@returns The DOM Element created by the serialization process
 

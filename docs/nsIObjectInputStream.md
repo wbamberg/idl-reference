@@ -8,7 +8,9 @@ layout: default
 @see nsIBinaryInputStream
 
 
-## readObject ##
+## Methods ##
+
+### readObject ###
 
 Read an object from this stream to satisfy a strong or weak reference
 to one of its interfaces.  If the interface was not along the primary
@@ -19,11 +21,11 @@ correct interface, which was specified when the object was serialized.
 @see nsIObjectOutputStream
 
 
-## readID ##
+### readID ###
 
-## getBuffer ##
+### getBuffer ###
 
 Optimized deserialization support -- see nsIStreamBufferAccess.idl.
 
 
-## putBuffer ##
+### putBuffer ###

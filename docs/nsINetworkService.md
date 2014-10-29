@@ -7,7 +7,9 @@ layout: default
 Provide network services.
 
 
-## setWifiTethering ##
+## Methods ##
+
+### setWifiTethering ###
 
 Enable or disable Wifi Tethering
 
@@ -19,7 +21,7 @@ Enable or disable Wifi Tethering
        Callback function used to report status to WifiManager.
 
 
-## setDhcpServer ##
+### setDhcpServer ###
 
 Enable or disable DHCP server
 
@@ -40,7 +42,7 @@ Enable or disable DHCP server
        Callback function used to report status.
 
 
-## getNetworkInterfaceStats ##
+### getNetworkInterfaceStats ###
 
 Retrieve network interface stats.
 
@@ -52,7 +54,7 @@ Retrieve network interface stats.
        and the date when stats are retrieved
 
 
-## setNetworkInterfaceAlarm ##
+### setNetworkInterfaceAlarm ###
 
 Set Alarm of usage per interface
 
@@ -68,7 +70,7 @@ Set Alarm of usage per interface
 @return false if there is no interface registered for the networkType param.
 
 
-## setWifiOperationMode ##
+### setWifiOperationMode ###
 
 Reload Wifi firmware to specific operation mode.
 
@@ -84,7 +86,7 @@ Reload Wifi firmware to specific operation mode.
        Callback to notify Wifi firmware reload result.
 
 
-## setNetworkProxy ##
+### setNetworkProxy ###
 
 Set http proxy for specific network
 
@@ -93,7 +95,7 @@ Set http proxy for specific network
        we want to set.
 
 
-## setUSBTethering ##
+### setUSBTethering ###
 
 Set USB tethering.
 
@@ -105,7 +107,7 @@ Set USB tethering.
        Callback function used to report the result enabling/disabling usb tethering.
 
 
-## resetRoutingTable ##
+### resetRoutingTable ###
 
 Reset routing table.
 
@@ -113,7 +115,7 @@ Reset routing table.
        The network interface we want remove from the routing table.
 
 
-## setDNS ##
+### setDNS ###
 
 Set DNS.
 
@@ -124,7 +126,7 @@ Set DNS.
        Callback to notify the result of setting DNS server.
 
 
-## setDefaultRoute ##
+### setDefaultRoute ###
 
 Set default route.
 
@@ -136,7 +138,7 @@ Set default route.
        Callback to notify the result of setting default route.
 
 
-## removeDefaultRoute ##
+### removeDefaultRoute ###
 
 Remove default route.
 
@@ -144,7 +146,7 @@ Remove default route.
        The network interface we want remove from the default route.
 
 
-## addHostRoute ##
+### addHostRoute ###
 
 Add host route.
 
@@ -159,7 +161,7 @@ Add host route.
         specified reason otherwise.
 
 
-## removeHostRoute ##
+### removeHostRoute ###
 
 Remove host route.
 
@@ -174,7 +176,7 @@ Remove host route.
         specified reason otherwise.
 
 
-## removeHostRoutes ##
+### removeHostRoutes ###
 
 Remove all host routes.
 
@@ -182,7 +184,7 @@ Remove all host routes.
        The interface name we want remove from the routing table.
 
 
-## addSecondaryRoute ##
+### addSecondaryRoute ###
 
 Add route to secondary routing table.
 
@@ -195,7 +197,7 @@ Add route to secondary routing table.
        .gateway: gateway ip address
 
 
-## removeSecondaryRoute ##
+### removeSecondaryRoute ###
 
 Remove route from secondary routing table.
 
@@ -208,7 +210,7 @@ Remove route from secondary routing table.
        .gateway: gateway ip address
 
 
-## enableUsbRndis ##
+### enableUsbRndis ###
 
 Enable or disable usb rndis.
 
@@ -218,7 +220,7 @@ Enable or disable usb rndis.
        Callback function to report the result.
 
 
-## updateUpStream ##
+### updateUpStream ###
 
 Update upstream.
 
@@ -230,7 +232,7 @@ Update upstream.
        Callback function to report the result.
 
 
-## configureInterface ##
+### configureInterface ###
 
 Configure a network interface.
 
@@ -248,7 +250,7 @@ Configure a network interface.
        Callback to notify the result of configurating network interface.
 
 
-## dhcpRequest ##
+### dhcpRequest ###
 
 Issue a DHCP client request.
 
@@ -259,7 +261,7 @@ Issue a DHCP client request.
        Callback to notify the result of the DHCP request.
 
 
-## enableInterface ##
+### enableInterface ###
 
 Enable a network interface.
 
@@ -270,7 +272,7 @@ Enable a network interface.
        Callback to notify the result of disabling network interface.
 
 
-## disableInterface ##
+### disableInterface ###
 
 Disable a network interface.
 
@@ -281,7 +283,7 @@ Disable a network interface.
        Callback to notify the result of disabling network interface.
 
 
-## resetConnections ##
+### resetConnections ###
 
 Reset all connections
 

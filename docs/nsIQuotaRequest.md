@@ -4,4 +4,6 @@ layout: default
 
 # nsIQuotaRequest #
 
-## cancel ##
+## Methods ##
+
+### cancel ###

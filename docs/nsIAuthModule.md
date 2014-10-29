@@ -4,48 +4,9 @@ layout: default
 
 # nsIAuthModule #
 
-## REQ_DEFAULT ##
+## Methods ##
 
-Default behavior.
-
-
-## REQ_MUTUAL_AUTH ##
-
-Client and server will be authenticated.
-
-
-## REQ_DELEGATE ##
-
-The server is allowed to impersonate the client.  The REQ_MUTUAL_AUTH
-flag may also need to be specified in order for this flag to take
-effect.
-
-
-## REQ_PROXY_AUTH ##
-
-The authentication is required for a proxy connection.
-
-
-## NTLM_MODULE_SAMBA_AUTH_PROXY ##
-
-Flags used for telemetry.
-
-
-## NTLM_MODULE_SAMBA_AUTH_DIRECT ##
-
-## NTLM_MODULE_WIN_API_PROXY ##
-
-## NTLM_MODULE_WIN_API_DIRECT ##
-
-## NTLM_MODULE_GENERIC_PROXY ##
-
-## NTLM_MODULE_GENERIC_DIRECT ##
-
-## NTLM_MODULE_KERBEROS_PROXY ##
-
-## NTLM_MODULE_KERBEROS_DIRECT ##
-
-## init ##
+### init ###
  Other flags may be defined in the future */
 
 Called to initialize an auth module.  The other methods cannot be called
@@ -65,7 +26,7 @@ unless this method succeeds.
        the user's password
 
 
-## getNextToken ##
+### getNextToken ###
 
 Called to get the next token in a sequence of authentication steps.
 
@@ -84,7 +45,7 @@ Called to get the next token in a sequence of authentication steps.
        length of the buffer (number of bytes) pointed to by aOutToken.
 
 
-## wrap ##
+### wrap ###
  
 Once a security context has been established through calls to GetNextToken()
 it may be used to protect data exchanged between client and server. Calls
@@ -106,7 +67,7 @@ Wrap() may return NS_ERROR_NOT_IMPLEMENTED, if the underlying authentication
 mechanism does not support security layers.
 
 
-## unwrap ##
+### unwrap ###
  
 Unwrap() is used to unpack, decrypt, and verify the checksums on data
 returned by a server when security layers are in use.
@@ -123,3 +84,46 @@ returned by a server when security layers are in use.
 Unwrap() may return NS_ERROR_NOT_IMPLEMENTED, if the underlying  
 authentication mechanism does not support security layers.
 
+
+## Constants ##
+
+### REQ_DEFAULT ###
+
+Default behavior.
+
+
+### REQ_MUTUAL_AUTH ###
+
+Client and server will be authenticated.
+
+
+### REQ_DELEGATE ###
+
+The server is allowed to impersonate the client.  The REQ_MUTUAL_AUTH
+flag may also need to be specified in order for this flag to take
+effect.
+
+
+### REQ_PROXY_AUTH ###
+
+The authentication is required for a proxy connection.
+
+
+### NTLM_MODULE_SAMBA_AUTH_PROXY ###
+
+Flags used for telemetry.
+
+
+### NTLM_MODULE_SAMBA_AUTH_DIRECT ###
+
+### NTLM_MODULE_WIN_API_PROXY ###
+
+### NTLM_MODULE_WIN_API_DIRECT ###
+
+### NTLM_MODULE_GENERIC_PROXY ###
+
+### NTLM_MODULE_GENERIC_DIRECT ###
+
+### NTLM_MODULE_KERBEROS_PROXY ###
+
+### NTLM_MODULE_KERBEROS_DIRECT ###

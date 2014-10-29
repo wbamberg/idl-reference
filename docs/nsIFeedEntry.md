@@ -9,32 +9,34 @@ and/or full-text content may be available, but callers will have to
 check both.
 
 
-## summary ##
+## Attributes ##
+
+### summary ###
 
 Uses description, subtitle, summary, content and extensions
 to generate a summary. 
 
 
 
-## published ##
+### published ###
 
 The date the entry was published, in RFC822 form. Parsable by JS
 and mail code.
 
 
-## content ##
+### content ###
 
 Uses atom:content and content:encoded to provide
 a 'full text' view of an entry.
 
 
 
-## enclosures ##
+### enclosures ###
 
 Enclosures are podcasts, photocasts, etc.
 
 
-## mediaContent ##
+### mediaContent ###
 
 Enclosures, etc. that might be displayed inline.
 

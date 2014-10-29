@@ -7,7 +7,9 @@ layout: default
 ...
 
 
-## getElement ##
+## Methods ##
+
+### getElement ###
 
 Retrieve (and |AddRef()|) the element this iterator currently points to.
 
@@ -17,7 +19,7 @@ useful range of the underlying container or sequence.
 @result a new reference to the element this iterator currently points to (if any)
 
 
-## getElementAt ##
+### getElementAt ###
 
 Retrieve (and |AddRef()|) an element at some offset from where this iterator currently points.
 The offset may be negative.  |getElementAt(0)| is equivalent to |getElement()|.
@@ -29,7 +31,7 @@ useful range of the underlying container or sequence.
 @result a new reference to the indicated element (if any)
 
 
-## putElement ##
+### putElement ###
 
 Put |anElementToPut| into the underlying container or sequence at the position currently pointed to by this iterator.
 The iterator and the underlying container or sequence cooperate to |Release()|
@@ -41,7 +43,7 @@ useful range of the underlying container or sequence.
 @param anElementToPut the element to place into the underlying container or sequence
 
 
-## putElementAt ##
+### putElementAt ###
 
 Put |anElementToPut| into the underlying container or sequence at the position |anOffset| away from that currently pointed to by this iterator.
 The iterator and the underlying container or sequence cooperate to |Release()|
@@ -55,12 +57,12 @@ useful range of the underlying container or sequence.
 @param anElementToPut the element to place into the underlying container or sequence
 
 
-## stepForward ##
+### stepForward ###
 
 Advance this iterator to the next position in the underlying container or sequence.
 
 
-## stepForwardBy ##
+### stepForwardBy ###
 
 Move this iterator by |anOffset| positions in the underlying container or sequence.
 |anOffset| may be negative.  |stepForwardBy(1)| is equivalent to |stepForward()|.
@@ -69,12 +71,12 @@ Move this iterator by |anOffset| positions in the underlying container or sequen
 @param anOffset a |0|-based offset from the position to which this iterator currently points
 
 
-## stepBackward ##
+### stepBackward ###
 
 Move this iterator to the previous position in the underlying container or sequence.
 
 
-## stepBackwardBy ##
+### stepBackwardBy ###
 
 Move this iterator backwards by |anOffset| positions in the underlying container or sequence.
 |anOffset| may be negative.  |stepBackwardBy(1)| is equivalent to |stepBackward()|.
@@ -83,7 +85,7 @@ Move this iterator backwards by |anOffset| positions in the underlying container
 @param anOffset a |0|-based offset from the position to which this iterator currently points
 
 
-## isEqualTo ##
+### isEqualTo ###
 
 Test if |anotherIterator| points to the same position in the underlying container or sequence.
 
@@ -93,7 +95,7 @@ The result is undefined if |anotherIterator| was not created by or for the same 
 @result true if |anotherIterator| points to the same position in the underlying container or sequence
 
 
-## clone ##
+### clone ###
 
 Create a new iterator pointing to the same position in the underlying container or sequence to which this iterator currently points.
 The returned iterator is suitable for use in a subsequent call to |isEqualTo()| against this iterator.

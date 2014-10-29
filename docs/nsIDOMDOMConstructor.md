@@ -4,4 +4,6 @@ layout: default
 
 # nsIDOMDOMConstructor #
 
-## toString ##
+## Methods ##
+
+### toString ###

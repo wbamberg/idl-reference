@@ -4,16 +4,18 @@ layout: default
 
 # nsIVolumeService #
 
-## getVolumeByName ##
+## Methods ##
 
-## getVolumeByPath ##
+### getVolumeByName ###
 
-## createOrGetVolumeByPath ##
+### getVolumeByPath ###
 
-## createMountLock ##
+### createOrGetVolumeByPath ###
 
-## getVolumeNames ##
+### createMountLock ###
 
-## createFakeVolume ##
+### getVolumeNames ###
 
-## SetFakeVolumeState ##
+### createFakeVolume ###
+
+### SetFakeVolumeState ###

@@ -4,14 +4,16 @@ layout: default
 
 # nsIDOMModalContentWindow #
 
-## dialogArguments ##
+## Attributes ##
+
+### dialogArguments ###
 
 Readonly attribute containing an arbitrary JS value passed by the
 code that opened the modal content window. A security check is
 performed at access time, per spec.
 
 
-## returnValue ##
+### returnValue ###
 
 The return value that will be returned to the function that
 opened the modal content window.

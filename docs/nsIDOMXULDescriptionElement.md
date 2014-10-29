@@ -4,8 +4,10 @@ layout: default
 
 # nsIDOMXULDescriptionElement #
 
-## disabled ##
+## Attributes ##
 
-## crop ##
+### disabled ###
 
-## value ##
+### crop ###
+
+### value ###

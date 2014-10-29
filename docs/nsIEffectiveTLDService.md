@@ -4,7 +4,9 @@ layout: default
 
 # nsIEffectiveTLDService #
 
-## getPublicSuffix ##
+## Methods ##
+
+### getPublicSuffix ###
 
 Returns the public suffix of a URI. A public suffix is the highest-level domain
 under which individual domains may be registered; it may therefore contain one
@@ -30,7 +32,7 @@ In the case of nested URIs, the innermost URI will be used.
         the success of a call to PR_StringToNetAddr()).
 
 
-## getBaseDomain ##
+### getBaseDomain ###
 
 Returns the base domain of a URI; that is, the public suffix with a given
 number of additional domain name parts. For example, the result of this method
@@ -72,7 +74,7 @@ In the case of nested URIs, the innermost URI will be used.
 @see    getPublicSuffix()
 
 
-## getPublicSuffixFromHost ##
+### getPublicSuffixFromHost ###
 
 NOTE: It is strongly recommended to use getPublicSuffix() above if a suitable
 nsIURI is available. Only use this method if this is not the case.
@@ -87,7 +89,7 @@ Returns the public suffix of a host string. Otherwise identical to getPublicSuff
 @see     getPublicSuffix()
 
 
-## getBaseDomainFromHost ##
+### getBaseDomainFromHost ###
 
 NOTE: It is strongly recommended to use getBaseDomain() above if a suitable
 nsIURI is available. Only use this method if this is not the case.
@@ -102,7 +104,7 @@ Returns the base domain of a host string. Otherwise identical to getBaseDomain()
 @see     getBaseDomain()
 
 
-## getNextSubDomain ##
+### getNextSubDomain ###
 
 Returns the parent sub-domain of a host string. If the host is a base
 domain, it will throw NS_ERROR_INSUFFICIENT_DOMAIN_LEVELS.

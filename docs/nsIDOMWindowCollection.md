@@ -8,17 +8,21 @@ The nsIDOMWindowCollection interface is an interface for a
 collection of DOM window objects.
 
 
-## length ##
+## Methods ##
 
-Accessor for the number of windows in this collection.
-
-
-## item ##
+### item ###
 
 Method for accessing an item in this collection by index.
 
 
-## namedItem ##
+### namedItem ###
 
 Method for accessing an item in this collection by window name.
+
+
+## Attributes ##
+
+### length ###
+
+Accessor for the number of windows in this collection.
 

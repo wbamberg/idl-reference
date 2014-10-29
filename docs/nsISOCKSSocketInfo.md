@@ -4,8 +4,10 @@ layout: default
 
 # nsISOCKSSocketInfo #
 
-## destinationAddr ##
+## Attributes ##
 
-## externalProxyAddr ##
+### destinationAddr ###
 
-## internalProxyAddr ##
+### externalProxyAddr ###
+
+### internalProxyAddr ###

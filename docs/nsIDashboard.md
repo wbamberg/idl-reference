@@ -4,16 +4,20 @@ layout: default
 
 # nsIDashboard #
 
-## requestSockets ##
+## Methods ##
 
-## requestHttpConnections ##
+### requestSockets ###
 
-## requestWebsocketConnections ##
+### requestHttpConnections ###
 
-## requestDNSInfo ##
+### requestWebsocketConnections ###
 
-## requestConnection ##
+### requestDNSInfo ###
 
-## enableLogging ##
+### requestConnection ###
 
-## requestDNSLookup ##
+### requestDNSLookup ###
+
+## Attributes ##
+
+### enableLogging ###

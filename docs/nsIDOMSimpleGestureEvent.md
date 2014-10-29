@@ -96,24 +96,30 @@ use event.preventDefault() to prevent default behavior when
 consuming events.
 
 
-## DIRECTION_UP ##
+## Methods ##
 
-## DIRECTION_DOWN ##
+### initSimpleGestureEvent ###
 
-## DIRECTION_LEFT ##
+## Attributes ##
 
-## DIRECTION_RIGHT ##
+### allowedDirections ###
 
-## ROTATION_COUNTERCLOCKWISE ##
+### direction ###
 
-## ROTATION_CLOCKWISE ##
+### delta ###
 
-## allowedDirections ##
+### clickCount ###
 
-## direction ##
+## Constants ##
 
-## delta ##
+### DIRECTION_UP ###
 
-## clickCount ##
+### DIRECTION_DOWN ###
 
-## initSimpleGestureEvent ##
+### DIRECTION_LEFT ###
+
+### DIRECTION_RIGHT ###
+
+### ROTATION_COUNTERCLOCKWISE ###
+
+### ROTATION_CLOCKWISE ###

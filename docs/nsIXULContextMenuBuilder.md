@@ -8,7 +8,9 @@ An interface for initialization of XUL context menu builder
 and for triggering of menuitem actions with assigned identifiers.
 
 
-## init ##
+## Methods ##
+
+### init ###
 
 Initialize builder before building.
 
@@ -19,7 +21,7 @@ Initialize builder before building.
        used to mark elements as generated and for menuitem identification
 
 
-## click ##
+### click ###
 
 Invoke the action of the menuitem with assigned id aGeneratedItemId.
 

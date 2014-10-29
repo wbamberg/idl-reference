@@ -4,39 +4,21 @@ layout: default
 
 # nsIDOMXULDocument #
 
-## popupNode ##
+## Methods ##
 
-## popupRangeParent ##
+### getElementsByAttribute ###
 
-These attributes correspond to trustedGetPopupNode().rangeOffset and
-rangeParent. They will help you find where in the DOM the popup is
-happening. Can be accessed from chrome only, and only during a popup
-event. Accessing any other time will be an error.
+### getElementsByAttributeNS ###
 
+### addBroadcastListenerFor ###
 
-## popupRangeOffset ##
+### removeBroadcastListenerFor ###
 
-## tooltipNode ##
+### persist ###
 
-## commandDispatcher ##
+### getBoxObjectFor ###
 
-## width ##
-
-## height ##
-
-## getElementsByAttribute ##
-
-## getElementsByAttributeNS ##
-
-## addBroadcastListenerFor ##
-
-## removeBroadcastListenerFor ##
-
-## persist ##
-
-## getBoxObjectFor ##
-
-## loadOverlay ##
+### loadOverlay ###
 
 Loads a XUL overlay and merges it with the current document, notifying an
 observer when the merge is complete. 
@@ -54,3 +36,25 @@ NOTICE:  In the 2.0 timeframe this API will change such that the
          API's behavior _not_ to change because it will!
          - Ben Goodger (8/23/2005)
 
+
+## Attributes ##
+
+### popupNode ###
+
+### popupRangeParent ###
+
+These attributes correspond to trustedGetPopupNode().rangeOffset and
+rangeParent. They will help you find where in the DOM the popup is
+happening. Can be accessed from chrome only, and only during a popup
+event. Accessing any other time will be an error.
+
+
+### popupRangeOffset ###
+
+### tooltipNode ###
+
+### commandDispatcher ###
+
+### width ###
+
+### height ###

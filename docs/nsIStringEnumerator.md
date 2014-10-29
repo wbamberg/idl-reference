@@ -7,6 +7,8 @@ layout: default
 Used to enumerate over an ordered list of strings.
 
 
-## hasMore ##
+## Methods ##
 
-## getNext ##
+### hasMore ###
+
+### getNext ###

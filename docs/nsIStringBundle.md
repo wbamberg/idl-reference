@@ -4,12 +4,14 @@ layout: default
 
 # nsIStringBundle #
 
-## GetStringFromID ##
+## Methods ##
 
-## GetStringFromName ##
+### GetStringFromID ###
 
-## formatStringFromID ##
+### GetStringFromName ###
 
-## formatStringFromName ##
+### formatStringFromID ###
 
-## getSimpleEnumeration ##
+### formatStringFromName ###
+
+### getSimpleEnumeration ###

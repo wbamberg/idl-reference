@@ -4,36 +4,42 @@ layout: default
 
 # nsIDOMSVGLength #
 
-## SVG_LENGTHTYPE_UNKNOWN ##
+## Methods ##
 
-## SVG_LENGTHTYPE_NUMBER ##
+### newValueSpecifiedUnits ###
 
-## SVG_LENGTHTYPE_PERCENTAGE ##
+### convertToSpecifiedUnits ###
 
-## SVG_LENGTHTYPE_EMS ##
+## Attributes ##
 
-## SVG_LENGTHTYPE_EXS ##
+### unitType ###
 
-## SVG_LENGTHTYPE_PX ##
+### value ###
 
-## SVG_LENGTHTYPE_CM ##
+### valueInSpecifiedUnits ###
 
-## SVG_LENGTHTYPE_MM ##
+### valueAsString ###
 
-## SVG_LENGTHTYPE_IN ##
+## Constants ##
 
-## SVG_LENGTHTYPE_PT ##
+### SVG_LENGTHTYPE_UNKNOWN ###
 
-## SVG_LENGTHTYPE_PC ##
+### SVG_LENGTHTYPE_NUMBER ###
 
-## unitType ##
+### SVG_LENGTHTYPE_PERCENTAGE ###
 
-## value ##
+### SVG_LENGTHTYPE_EMS ###
 
-## valueInSpecifiedUnits ##
+### SVG_LENGTHTYPE_EXS ###
 
-## valueAsString ##
+### SVG_LENGTHTYPE_PX ###
 
-## newValueSpecifiedUnits ##
+### SVG_LENGTHTYPE_CM ###
 
-## convertToSpecifiedUnits ##
+### SVG_LENGTHTYPE_MM ###
+
+### SVG_LENGTHTYPE_IN ###
+
+### SVG_LENGTHTYPE_PT ###
+
+### SVG_LENGTHTYPE_PC ###

@@ -4,10 +4,12 @@ layout: default
 
 # nsIWifiProxyService #
 
-## start ##
+## Methods ##
 
-## shutdown ##
+### start ###
 
-## sendCommand ##
+### shutdown ###
 
-## waitForEvent ##
+### sendCommand ###
+
+### waitForEvent ###
