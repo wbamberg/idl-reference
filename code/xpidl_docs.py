@@ -6,52 +6,94 @@ from xpidl import xpidl
 
 index = md.createFile("../index.md", "default_index")
 
-#class Attribute(object):
+class Attribute(object):
+    def __init__(self, spec):
+        self.name = spec.name
+        self.doccomments = spec.doccomments
 
-#class Method(object):
+    def write(self, output):
+        md.writeH3(self.name, output)
+        self.writeDoccomments(output)
 
-#class Constant(object):
+    def writeDoccomments(self, output):
+        for doccomment in self.doccomments:
+            processed = processDoccomment(doccomment)
+            for line in processed:
+                output.write(line)
 
-#class Interface(object):
+class Method(object):
+    def __init__(self, spec):
+        self.name = spec.name
+        self.doccomments = spec.doccomments
 
-def writeDoccomments(doccomments, output):
-    for doccomment in doccomments:
-        lines = doccomment.splitlines()
-        for line in lines:
-            line = line.lstrip()
-            if line.startswith("/**"):
-                line = line[3:]
-            if line.startswith("*/"):
-                line = line[2:]
-            if line.startswith("*"):
-                line = line[2:]
-            output.write(line + "  \n")
+    def write(self, output):
+        md.writeH3(self.name, output)
+        self.writeDoccomments(output)
 
+    def writeDoccomments(self, output):
+        for doccomment in self.doccomments:
+            processed = processDoccomment(doccomment)
+            for line in processed:
+                output.write(line)
 
-def writeMembers(name, members, output):
-    if len(members) > 0:
-        md.writeH2(name, output)
+class Constant(object):
+    def __init__(self, spec):
+        self.name = spec.name
+        self.doccomments = spec.doccomments
+
+    def write(self, output):
+        md.writeH3(self.name, output)
+        self.writeDoccomments(output)
+
+    def writeDoccomments(self, output):
+        for doccomment in self.doccomments:
+            processed = processDoccomment(doccomment)
+            for line in processed:
+                output.write(line)
+
+class Interface(object):
+    def __init__(self, filename, spec):
+        self.filename = filename
+        self.name = spec.name
+        self.doccomments = spec.doccomments
+        self.constants = [Constant(member) for member in spec.members if member.kind == "const"]
+        self.methods = [Method(member) for member in spec.members if member.kind == "method"]
+        self.attributes = [Attribute(member) for member in spec.members if member.kind == "attribute"]
+
+    def write(self):
+        output = md.createFile("../docs/" + self.name + ".md")
+        md.writeH1(self.name, output)
+        self.writeDoccomments(output)
+        self.writeMembers("Methods", self.methods, output)
+        self.writeMembers("Attributes", self.attributes, output)
+        self.writeMembers("Constants", self.constants, output)
+
+    def writeDoccomments(self, output):
+        for doccomment in self.doccomments:
+            processed = processDoccomment(doccomment)
+            for line in processed:
+                output.write(line)
+
+    def writeMembers(self, kind, members, output):
+        if len(members) > 0:
+            md.writeH2(kind, output)
         for member in members:
-            md.writeH3(member.name, output)
-            if hasattr(member, "doccomments"):
-                writeDoccomments(member.doccomments, output)
+            member.write(output)
 
-def writeInterface(interface):
-    name = interface.name
-    md.writeMDLink(name, "docs/" + name, index)
-    md.writeLineBreak(index)
-    output = md.createFile("../docs/" + name + ".md")
-    md.writeH1(name, output)
-    if hasattr(interface, "doccomments"):
-        writeDoccomments(interface.doccomments, output)
-
-    constants = [member for member in interface.members if member.kind == "const"]
-    methods = [member for member in interface.members if member.kind == "method"]
-    attributes = [member for member in interface.members if member.kind == "attribute"]
-
-    writeMembers("Methods", methods, output)
-    writeMembers("Attributes", attributes, output)
-    writeMembers("Constants", constants, output)
+def processDoccomment(doccomment):
+    processed = []
+    lines = doccomment.splitlines()
+    for line in lines:
+        line = line.lstrip()
+        if line.startswith("/**"):
+            line = line[3:]
+        if line.startswith("*/"):
+            line = line[2:]
+        if line.startswith("*"):
+            line = line[2:]
+        line = line + "  \n"
+        processed.append(line)
+    return processed
 
 def writeIdlFile(index, filename):
     try:
@@ -62,7 +104,11 @@ def writeIdlFile(index, filename):
     else:
         for p in idl.productions:
             if p.kind == "interface":
-                writeInterface(p)
+                name = p.name
+                md.writeMDLink(name, "docs/" + name, index)
+                md.writeLineBreak(index)
+                interface = Interface(filename, p)
+                interface.write()
 
 for dirpath, dirs, files in os.walk("../../gecko-dev"):
     for f in files:
