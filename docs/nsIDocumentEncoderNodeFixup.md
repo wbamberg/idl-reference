@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### fixupNode ###
+### fixupNode(aNode, aSerializeCloneKids) ###
   
 Create a fixed up version of a node. This method is called before  
 each node in a document is about to be persisted. The implementor  

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### formatURL ###
+### formatURL(aFormat) ###
    
 formatURL - Formats a string URL  
   
@@ -18,7 +18,7 @@ If a variable is unknown, it is left unchanged and a non-fatal error is reported
 @return The formatted URL.  
   
 
-### formatURLPref ###
+### formatURLPref(aPref) ###
    
 formatURLPref - Formats a string URL stored in a preference  
   

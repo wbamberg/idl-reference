@@ -10,12 +10,12 @@ collection of DOM window objects.
 
 ## Methods ##
 
-### item ###
+### item(index) ###
   
 Method for accessing an item in this collection by index.  
   
 
-### namedItem ###
+### namedItem(name) ###
   
 Method for accessing an item in this collection by window name.  
   

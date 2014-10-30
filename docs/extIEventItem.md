@@ -9,7 +9,7 @@ Interface holds information about an event.
 
 ## Methods ##
 
-### preventDefault ###
+### preventDefault() ###
   
 Cancels the event if it is cancelable.  
   

@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### handle ###
+### handle() ###
 
-### handleAbort ###
+### handleAbort(aErrorMessage) ###

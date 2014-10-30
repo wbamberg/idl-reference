@@ -9,7 +9,7 @@ This object represents the global options for executing a query.
 
 ## Methods ##
 
-### clone ###
+### clone() ###
   
 Creates a new options item with the same parameters of this one.  
   

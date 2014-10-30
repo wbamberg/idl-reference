@@ -18,7 +18,7 @@ nsIAsyncOutputStream.
 
 ## Methods ##
 
-### closeWithStatus ###
+### closeWithStatus(reason) ###
   
 This method closes the stream and sets its internal status.  If the   
 stream is already closed, then this method is ignored.  Once the stream  
@@ -38,7 +38,7 @@ greatly simplifies working with pipes in some cases.
        it has been closed.  
   
 
-### asyncWait ###
+### asyncWait(aCallback, aFlags, aRequestedCount, aEventTarget) ###
   
 Asynchronously wait for the stream to be writable or closed.  The  
 notification is one-shot, meaning that each asyncWait call will result  

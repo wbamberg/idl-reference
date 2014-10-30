@@ -10,7 +10,7 @@ to the gecko XUL engine.
 
 ## Methods ##
 
-### getXULOverlays ###
+### getXULOverlays(aURI) ###
   
 Get the XUL overlays for a particular chrome URI.  
   
@@ -18,7 +18,7 @@ Get the XUL overlays for a particular chrome URI.
 @return      An enumerator of nsIURI for the overlays of this URI   
   
 
-### getStyleOverlays ###
+### getStyleOverlays(aURI) ###
   
 Get the style overlays for a particular chrome URI.  
   

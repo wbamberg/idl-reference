@@ -12,7 +12,7 @@ notify when installations are blocked.
 
 ## Methods ##
 
-### onWebInstallDisabled ###
+### onWebInstallDisabled(aOriginator, aUri, aInstalls, aCount) ###
   
 Called when installation by websites is currently disabled.  
   
@@ -26,7 +26,7 @@ Called when installation by websites is currently disabled.
         The number of AddonInstalls  
   
 
-### onWebInstallBlocked ###
+### onWebInstallBlocked(aOriginator, aUri, aInstalls, aCount) ###
   
 Called when the website is not allowed to directly prompt the user to  
 install add-ons.  
@@ -42,7 +42,7 @@ install add-ons.
 @return true if the caller should start the installs  
   
 
-### onWebInstallRequested ###
+### onWebInstallRequested(aOriginator, aUri, aInstalls, aCount) ###
   
 Called when a website wants to ask the user to install add-ons.  
   

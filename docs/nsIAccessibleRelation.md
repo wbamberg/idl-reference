@@ -9,13 +9,13 @@ This interface gives access to an accessible's set of relations.
 
 ## Methods ##
 
-### getTarget ###
+### getTarget(index) ###
   
 Returns one accessible relation target.  
 @param index - 0 based index of relation target.  
   
 
-### getTargets ###
+### getTargets() ###
   
 Returns multiple accessible relation targets.  
   

@@ -6,23 +6,23 @@ layout: default
 
 ## Methods ##
 
-### showResizers ###
+### showResizers(aResizedElement) ###
   
 Shows active resizers around an element's frame  
 @param aResizedElement [IN] a DOM Element  
   
 
-### hideResizers ###
+### hideResizers() ###
   
 Hide resizers if they are visible  
   
 
-### refreshResizers ###
+### refreshResizers() ###
   
 Refresh visible resizers  
   
 
-### mouseDown ###
+### mouseDown(aX, aY, aTarget, aMouseEvent) ###
   
 event callback when a mouse button is pressed  
 @param aX      [IN] horizontal position of the pointer  
@@ -31,7 +31,7 @@ event callback when a mouse button is pressed
 @param aMouseEvent [IN] the event  
   
 
-### mouseUp ###
+### mouseUp(aX, aY, aTarget) ###
   
 event callback when a mouse button is released  
 @param aX      [IN] horizontal position of the pointer  
@@ -39,20 +39,20 @@ event callback when a mouse button is released
 @param aTarget [IN] the element triggering the event  
   
 
-### mouseMove ###
+### mouseMove(aMouseEvent) ###
   
 event callback when the mouse pointer is moved  
 @param aMouseEvent [IN] the event  
   
 
-### addObjectResizeEventListener ###
+### addObjectResizeEventListener(aListener) ###
   
 Creates a resize listener that can be used to get notifications  
 that the user started to resize an object or finalized such an operation  
 @param aListener [IN] an instance of nsIHTMLObjectResizeListener  
   
 
-### removeObjectResizeEventListener ###
+### removeObjectResizeEventListener(aListener) ###
   
 Deletes a resize listener  
 @param aListener [IN] an instance of nsIHTMLObjectResizeListener  

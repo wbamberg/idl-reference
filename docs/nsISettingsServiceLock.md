@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### set ###
+### set(aName, aValue, aCallback, aMessage) ###
 
-### get ###
+### get(aName, aCallback) ###

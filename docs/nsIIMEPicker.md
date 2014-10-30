@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### show ###
+### show() ###
   
 Show IME Picker dialog.  
   

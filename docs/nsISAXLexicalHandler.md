@@ -18,7 +18,7 @@ endDocument events.
 
 ## Methods ##
 
-### comment ###
+### comment(chars) ###
   
 Report an XML comment anywhere in the document.  
   
@@ -30,7 +30,7 @@ start/endDTD and start/endEntity events (if used).
 @param chars The characters in the comment.  
   
 
-### startDTD ###
+### startDTD(name, publicId, systemId) ###
   
 Report the start of DTD declarations, if any.  
   
@@ -61,7 +61,7 @@ startElement event.
        base URI.)  
   
 
-### endDTD ###
+### endDTD() ###
   
 Report the end of DTD declarations.  
   
@@ -70,7 +70,7 @@ DOCTYPE declaration; if the document has no DOCTYPE declaration,
 this method will not be invoked.  
   
 
-### startCDATA ###
+### startCDATA() ###
   
 Report the start of a CDATA section.  
   
@@ -79,12 +79,12 @@ regular characters event; this event is intended only to report
 the boundary.  
   
 
-### endCDATA ###
+### endCDATA() ###
   
 Report the end of a CDATA section.  
   
 
-### startEntity ###
+### startEntity(name) ###
   
 Report the beginning of some internal and external XML entities.  
   
@@ -107,7 +107,7 @@ All start/endEntity events must be properly nested.
             external DTD subset, it will be "[dtd]".  
   
 
-### endEntity ###
+### endEntity(name) ###
   
 Report the end of an entity.  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getData ###
+### getData(key) ###
   
 Return the data associated with the given key.  
   
@@ -14,7 +14,7 @@ Return the data associated with the given key.
 @return      the data associated with the key  
   
 
-### setData ###
+### setData(key, data) ###
   
 Set the data for the given key.  
   

@@ -13,7 +13,7 @@ http://www.w3.org/TR/DOM-Level-2-Events/
 
 ## Methods ##
 
-### handleEvent ###
+### handleEvent(event) ###
   
 This method is called whenever an event occurs of the type for which   
 the EventListener interface was registered.  

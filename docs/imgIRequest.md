@@ -13,7 +13,7 @@ imgIRequest interface
 
 ## Methods ##
 
-### clone ###
+### clone(aObserver) ###
   
 Clone this request; the returned request will have aObserver as the  
 observer.  aObserver will be notified synchronously (before the clone()  
@@ -21,7 +21,7 @@ call returns) with all the notifications that have already been dispatched
 for this image load.  
   
 
-### cancelAndForgetObserver ###
+### cancelAndForgetObserver(aStatus) ###
   
 Cancels this request as in nsIRequest::Cancel(); further, also nulls out  
 decoderObserver so it gets no further notifications from us.  
@@ -32,7 +32,7 @@ it, the listener/observer will get an OnStopRequest(). This means that, if
 you're the observer, you can't call cancel() from your destructor.  
   
 
-### requestDecode ###
+### requestDecode() ###
   
 Requests a decode for the image.  
   
@@ -43,9 +43,9 @@ container already exists, or calls it once it gets OnStartContainer if the
 container does not yet exist.  
   
 
-### startDecoding ###
+### startDecoding() ###
 
-### lockImage ###
+### lockImage() ###
   
 Locks an image. If the image does not exist yet, locks it once it becomes  
 available. The lock persists for the lifetime of the imgIRequest (until  
@@ -57,34 +57,34 @@ will be called for you automatically.
 @see imgIContainer::lockImage for documentation of the underlying call.  
   
 
-### unlockImage ###
+### unlockImage() ###
   
 Unlocks an image.  
   
 @see imgIContainer::unlockImage for documentation of the underlying call.  
   
 
-### requestDiscard ###
+### requestDiscard() ###
   
 If this image is unlocked, discard the image's decoded data.  If the image  
 is locked or is already discarded, do nothing.  
   
 
-### getStaticRequest ###
+### getStaticRequest() ###
   
 If this request is for an animated image, the method creates a new  
 request which contains the current frame of the image.  
 Otherwise returns the same request.  
   
 
-### incrementAnimationConsumers ###
+### incrementAnimationConsumers() ###
   
 Requests that the image animate (if it has an animation).  
   
 @see Image::IncrementAnimationConsumers for documentation of the underlying call.  
   
 
-### decrementAnimationConsumers ###
+### decrementAnimationConsumers() ###
   
 Tell the image it can forget about a request that the image animate.  
   

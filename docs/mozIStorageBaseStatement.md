@@ -12,7 +12,7 @@ purposes.
 
 ## Methods ##
 
-### finalize ###
+### finalize() ###
   
 Finalizes a statement so you can successfully close a database connection.  
 Once a statement has been finalized it can no longer be used for any  
@@ -31,7 +31,7 @@ involving the statement.  However, you do need to use asyncClose instead of
 close on the connection if any statements have been used asynchronously.  
   
 
-### bindUTF8StringParameter ###
+### bindUTF8StringParameter(aParamIndex, aValue) ###
   
 Bind the given value at the given numeric index.  
   
@@ -45,21 +45,21 @@ Bind the given value at the given numeric index.
 @{  
   
 
-### bindStringParameter ###
+### bindStringParameter(aParamIndex, aValue) ###
 
-### bindDoubleParameter ###
+### bindDoubleParameter(aParamIndex, aValue) ###
 
-### bindInt32Parameter ###
+### bindInt32Parameter(aParamIndex, aValue) ###
 
-### bindInt64Parameter ###
+### bindInt64Parameter(aParamIndex, aValue) ###
 
-### bindNullParameter ###
+### bindNullParameter(aParamIndex) ###
 
-### bindBlobParameter ###
+### bindBlobParameter(aParamIndex, aValue, aValueSize) ###
 
-### bindAdoptedBlobParameter ###
+### bindAdoptedBlobParameter(aParamIndex, aValue, aValueSize) ###
 
-### bindParameters ###
+### bindParameters(aParameters) ###
 @}*/  
   
 Binds the array of parameters to the statement.  When executeAsync is  
@@ -71,7 +71,7 @@ called, all the parameters in aParameters are bound and then executed.
 @note This is only works on statements being used asynchronously.  
   
 
-### newBindingParamsArray ###
+### newBindingParamsArray() ###
   
 Creates a new mozIStorageBindingParamsArray that can be used to bind  
 multiple sets of data to a statement with bindParameters.  
@@ -82,7 +82,7 @@ multiple sets of data to a statement with bindParameters.
 @note This is only useful for statements being used asynchronously.  
   
 
-### executeAsync ###
+### executeAsync(aCallback) ###
   
 Execute a query asynchronously using any currently bound parameters.  This  
 statement can be reused immediately, and reset does not need to be called.  
@@ -96,7 +96,7 @@ statement can be reused immediately, and reset does not need to be called.
 @return an object that can be used to cancel the statements execution.  
   
 
-### escapeStringForLIKE ###
+### escapeStringForLIKE(aValue, aEscapeChar) ###
   
 Escape a string for SQL LIKE search.  
   

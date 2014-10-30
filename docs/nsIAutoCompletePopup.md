@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### openAutocompletePopup ###
+### openAutocompletePopup(input, element) ###
 
-### closePopup ###
+### closePopup() ###
 
-### invalidate ###
+### invalidate() ###
 
-### selectBy ###
+### selectBy(reverse, page) ###
 
 ## Attributes ##
 

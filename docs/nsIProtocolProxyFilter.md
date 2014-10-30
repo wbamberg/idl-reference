@@ -11,7 +11,7 @@ this interface.
 
 ## Methods ##
 
-### applyFilter ###
+### applyFilter(aProxyService, aURI, aProxy) ###
   
 This method is called to apply proxy filter rules for the given URI  
 and proxy object (or list of proxy objects).  

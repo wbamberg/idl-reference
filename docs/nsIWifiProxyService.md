@@ -6,10 +6,10 @@ layout: default
 
 ## Methods ##
 
-### start ###
+### start(listener, aInterfaces, aNumOfInterface) ###
 
-### shutdown ###
+### shutdown() ###
 
-### sendCommand ###
+### sendCommand(parameters, aInterface) ###
 
-### waitForEvent ###
+### waitForEvent(aInterface) ###

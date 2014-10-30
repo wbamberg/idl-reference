@@ -12,7 +12,7 @@ manage/track transactions.
 
 ## Methods ##
 
-### doTransaction ###
+### doTransaction(aTransaction) ###
   
 Calls a transaction's doTransaction() method, then pushes it on the  
 undo stack.  
@@ -23,34 +23,34 @@ stack is pruned or when the transaction manager is destroyed.
 @param aTransaction the transaction to do.  
   
 
-### undoTransaction ###
+### undoTransaction() ###
   
 Pops the topmost transaction on the undo stack, calls its  
 undoTransaction() method, then pushes it on the redo stack.  
   
 
-### redoTransaction ###
+### redoTransaction() ###
   
 Pops the topmost transaction on the redo stack, calls its  
 redoTransaction() method, then pushes it on the undo stack.  
   
 
-### clear ###
+### clear() ###
   
 Clears the undo and redo stacks.  
   
 
-### clearUndoStack ###
+### clearUndoStack() ###
   
 Clears the undo stack only.  
   
 
-### clearRedoStack ###
+### clearRedoStack() ###
   
 Clears the redo stack only.  
   
 
-### beginBatch ###
+### beginBatch(aData) ###
   
 Turns on the transaction manager's batch mode, forcing all transactions  
 executed by the transaction manager's doTransaction() method to be  
@@ -61,7 +61,7 @@ so they can be undone with a single call to undoTransaction().
 batch. Can be retrieved from nsITransactionList.  
   
 
-### endBatch ###
+### endBatch(aAllowEmpty) ###
   
 Turns off the transaction manager's batch mode.  
 @param aAllowEmpty If true, a batch containing no children will be  
@@ -69,20 +69,20 @@ pushed onto the undo stack. Otherwise, ending a batch with no
 children will result in no transactions being pushed on the undo stack.  
   
 
-### batchTopUndo ###
+### batchTopUndo() ###
   
 Combines the transaction at the top of the undo stack (if any) with the  
 preceding undo transaction (if any) into a batch transaction. Thus,  
 a call to undoTransaction() will undo both transactions.  
   
 
-### removeTopUndo ###
+### removeTopUndo() ###
   
 Removes the transaction at the top of the undo stack (if any) without  
 transacting.  
   
 
-### peekUndoStack ###
+### peekUndoStack() ###
   
 Returns an AddRef'd pointer to the transaction at the top of the  
 undo stack. Callers should be aware that this method could return  
@@ -90,7 +90,7 @@ return a null in some implementations if there is a batch at the top
 of the undo stack.  
   
 
-### peekRedoStack ###
+### peekRedoStack() ###
   
 Returns an AddRef'd pointer to the transaction at the top of the  
 redo stack. Callers should be aware that this method could return  
@@ -98,21 +98,21 @@ return a null in some implementations if there is a batch at the top
 of the redo stack.  
   
 
-### getUndoList ###
+### getUndoList() ###
   
 Returns the list of transactions on the undo stack. Note that the  
 transaction at the top of the undo stack will actually be at the  
 index 'n-1' in the list, where 'n' is the number of items in the list.  
   
 
-### getRedoList ###
+### getRedoList() ###
   
 Returns the list of transactions on the redo stack. Note that the  
 transaction at the top of the redo stack will actually be at the  
 index 'n-1' in the list, where 'n' is the number of items in the list.  
   
 
-### AddListener ###
+### AddListener(aListener) ###
   
 Adds a listener to the transaction manager's notification list. Listeners  
 are notified whenever a transaction is done, undone, or redone.  
@@ -121,7 +121,7 @@ The listener's AddRef() method is called.
 @param aListener the lister to add.  
   
 
-### RemoveListener ###
+### RemoveListener(aListener) ###
   
 Removes a listener from the transaction manager's notification list.  
 <P>  

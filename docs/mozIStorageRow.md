@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getResultByIndex ###
+### getResultByIndex(aIndex) ###
   
 Obtains the result of a given column specified by aIndex.  
   
@@ -15,7 +15,7 @@ Obtains the result of a given column specified by aIndex.
 @returns the result of the specified column.  
   
 
-### getResultByName ###
+### getResultByName(aName) ###
   
 Obtains the result of a given column specified by aName.  
   

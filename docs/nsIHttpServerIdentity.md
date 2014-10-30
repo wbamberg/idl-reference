@@ -14,7 +14,7 @@ they have no special importance.
 
 ## Methods ##
 
-### add ###
+### add(scheme, host, port) ###
   
 Adds a location at which this server may be accessed.  
   
@@ -23,7 +23,7 @@ Adds a location at which this server may be accessed.
   into RFC 2616 from RFC 2396, or if port is not a valid port number  
   
 
-### remove ###
+### remove(scheme, host, port) ###
   
 Removes this name from the list of names by which the corresponding server  
 is known.  If name is also the primary name for the server, the primary  
@@ -36,7 +36,7 @@ name reverts to 'http://127.0.0.1' with the associated server's port.
   true if the given name was a name for this server, false otherwise  
   
 
-### has ###
+### has(scheme, host, port) ###
   
 Returns true if the given name is in this, false otherwise.  
   
@@ -45,7 +45,7 @@ Returns true if the given name is in this, false otherwise.
   into RFC 2616 from RFC 2396, or if port is not a valid port number  
   
 
-### getScheme ###
+### getScheme(host, port) ###
   
 Returns the scheme for the name with the given host and port, if one is  
 present; otherwise returns the empty string.  
@@ -55,7 +55,7 @@ present; otherwise returns the empty string.
   RFC 2396, or if port is not a valid port number  
   
 
-### setPrimary ###
+### setPrimary(scheme, host, port) ###
   
 Designates the given name as the primary name in this and adds it to this  
 if it is not already present.  

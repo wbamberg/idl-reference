@@ -9,7 +9,7 @@ Scriptable storage for 64-bit integers
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

@@ -11,7 +11,7 @@ in order to create a UDP socket.
 
 ## Methods ##
 
-### filterPacket ###
+### filterPacket(remote_addr, data, len, direction) ###
 
 ## Constants ##
 

@@ -25,7 +25,7 @@ with other implementations of nsIRequest.
 
 ## Methods ##
 
-### onProgress ###
+### onProgress(aRequest, aContext, aProgress, aProgressMax) ###
   
 Called to notify the event sink that progress has occurred for the  
 given request.  
@@ -43,7 +43,7 @@ given request.
        transfered (or 0xFFFFFFFFFFFFFFFF if total is unknown).  
   
 
-### onStatus ###
+### onStatus(aRequest, aContext, aStatus, aStatusArg) ###
   
 Called to notify the event sink with a status message for the given  
 request.  

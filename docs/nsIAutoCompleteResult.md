@@ -6,38 +6,38 @@ layout: default
 
 ## Methods ##
 
-### getValueAt ###
+### getValueAt(index) ###
   
 Get the value of the result at the given index  
   
 
-### getLabelAt ###
+### getLabelAt(index) ###
   
 This returns the string that is displayed in the dropdown  
   
 
-### getCommentAt ###
+### getCommentAt(index) ###
   
 Get the comment of the result at the given index  
   
 
-### getStyleAt ###
+### getStyleAt(index) ###
   
 Get the style hint for the result at the given index  
   
 
-### getImageAt ###
+### getImageAt(index) ###
   
 Get the image of the result at the given index  
   
 
-### getFinalCompleteValueAt ###
+### getFinalCompleteValueAt(index) ###
   
 Get the final value that should be completed when the user confirms  
 the match at the given index.  
   
 
-### removeValueAt ###
+### removeValueAt(rowIndex, removeFromDb) ###
   
 Remove the value at the given index from the autocomplete results.  
 If removeFromDb is set to true, the value should be removed from  

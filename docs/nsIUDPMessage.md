@@ -11,7 +11,7 @@ This interface is used to encapsulate an incomming UDP message
 
 ## Methods ##
 
-### getDataAsTArray ###
+### getDataAsTArray() ###
 
 ## Attributes ##
 

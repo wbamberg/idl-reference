@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### make ###
+### make(aTopic, aString) ###
   
 Create a new Finalization Witness.  
   

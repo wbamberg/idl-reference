@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### doDialog ###
+### doDialog(aParent, aParamBlock, aChromeURL) ###

@@ -10,7 +10,7 @@ and insecure pages, posts to insecure servers etc.
 
 ## Methods ##
 
-### confirmPostToInsecureFromSecure ###
+### confirmPostToInsecureFromSecure(ctx) ###
   
  Inform the user: Although the currently displayed  
  page was loaded using a secure connection, and the UI probably  

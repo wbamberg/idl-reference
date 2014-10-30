@@ -11,7 +11,7 @@ happening.
 
 ## Methods ##
 
-### isAppOfType ###
+### isAppOfType(appType) ###
   
 Check whether the load is happening in a particular type of application.  
   
@@ -22,12 +22,12 @@ Check whether the load is happening in a particular type of application.
         the given app type.  
   
 
-### SetPrivateBrowsing ###
+### SetPrivateBrowsing(aInPrivateBrowsing) ###
   
 Set the private browsing state of the load context, meant to be used internally.  
   
 
-### SetRemoteTabs ###
+### SetRemoteTabs(aUseRemoteTabs) ###
   
 Set the remote tabs state of the load context, meant to be used internally.  
   

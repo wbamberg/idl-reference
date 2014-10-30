@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### RemoveFromBFCacheAsync ###
+### RemoveFromBFCacheAsync() ###
 
-### RemoveFromBFCacheSync ###
+### RemoveFromBFCacheSync() ###
 
-### getSharedState ###
+### getSharedState() ###
   
 Some state, particularly that related to the back/forward cache, is  
 shared between SHEntries which correspond to the same document.  This  

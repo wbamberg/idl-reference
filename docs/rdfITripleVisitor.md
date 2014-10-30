@@ -13,7 +13,7 @@ aObject and aTruthValue are ignored.
 
 ## Methods ##
 
-### visit ###
+### visit(aSubject, aPredicate, aObject, aTruthValue) ###
   
 Callback function for returning query results.  
   

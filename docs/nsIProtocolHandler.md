@@ -9,7 +9,7 @@ nsIProtocolHandler
 
 ## Methods ##
 
-### newURI ###
+### newURI(aSpec, aOriginCharset, aBaseURI) ###
   
 Makes a URI object that is suitable for loading by this protocol,  
 where the URI string is given as an UTF-8 string.  The caller may  
@@ -36,18 +36,18 @@ server.)
                         URI aBaseURI will simply be ignored.  
   
 
-### newChannel2 ###
+### newChannel2(aURI, aLoadinfo) ###
   
 Constructs a new channel from the given URI for this protocol handler and  
 sets the loadInfo for the constructed channel.  
   
 
-### newChannel ###
+### newChannel(aURI) ###
   
 Constructs a new channel from the given URI for this protocol handler.  
   
 
-### allowPort ###
+### allowPort(port, scheme) ###
   
 Allows a protocol to override blacklisted ports.  
   

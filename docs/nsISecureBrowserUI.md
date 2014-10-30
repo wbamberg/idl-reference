@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(window) ###
 
-### setDocShell ###
+### setDocShell(docShell) ###
 
 ## Attributes ##
 

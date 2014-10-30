@@ -15,7 +15,7 @@ See nsIThreadManager for the API used to create and locate threads.
 
 ## Methods ##
 
-### shutdown ###
+### shutdown() ###
   
 Shutdown the thread.  This method prevents further dispatch of events to  
 the thread, and it causes any pending events to run to completion before  
@@ -35,7 +35,7 @@ events to the thread.
   on the thread object.  
   
 
-### hasPendingEvents ###
+### hasPendingEvents() ###
   
 This method may be called to determine if there are any events ready to be  
 processed.  It may only be called when this thread is the current thread.  
@@ -53,7 +53,7 @@ means that there were no pending events when this method was called.
   not the current thread.  
   
 
-### processNextEvent ###
+### processNextEvent(mayWait) ###
   
 Process the next event.  If there are no pending events, then this method  
 may wait -- depending on the value of the mayWait parameter -- until an  

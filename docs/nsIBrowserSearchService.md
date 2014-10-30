@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aObserver) ###
   
 Start asynchronous initialization.  
   
@@ -17,7 +17,7 @@ call to this method. The callback is always invoked asynchronously.
 @param aObserver An optional object observing the end of initialization.  
   
 
-### addEngine ###
+### addEngine(engineURL, dataType, iconURL, confirm, callback) ###
   
 Adds a new search engine from the file at the supplied URI, optionally  
 asking the user for confirmation first.  If a confirmation dialog is  
@@ -51,7 +51,7 @@ right away.
         file cannot be successfully loaded.  
   
 
-### addEngineWithDetails ###
+### addEngineWithDetails(name, iconURL, alias, description, method, url, extensionID) ###
   
 Adds a new search engine, without asking the user for confirmation and  
 without starting to use it right away.  
@@ -82,14 +82,14 @@ without starting to use it right away.
        Optional: The correct extensionID if called by an add-on.  
   
 
-### restoreDefaultEngines ###
+### restoreDefaultEngines() ###
   
 Un-hides all engines installed in the directory corresponding to  
 the directory service's NS_APP_SEARCH_DIR key. (i.e. the set of  
 engines returned by getDefaultEngines)  
   
 
-### getEngineByAlias ###
+### getEngineByAlias(alias) ###
   
 Returns an engine with the specified alias.  
   
@@ -99,7 +99,7 @@ Returns an engine with the specified alias.
          exist.  
   
 
-### getEngineByName ###
+### getEngineByName(aEngineName) ###
   
 Returns an engine with the specified name.  
   
@@ -109,14 +109,14 @@ Returns an engine with the specified name.
          exist.  
   
 
-### getEngines ###
+### getEngines(engineCount, engines) ###
   
 Returns an array of all installed search engines.  
   
 @returns an array of nsISearchEngine objects.  
   
 
-### getVisibleEngines ###
+### getVisibleEngines(engineCount, engines) ###
   
 Returns an array of all installed search engines whose hidden attribute is  
 false.  
@@ -124,7 +124,7 @@ false.
 @returns an array of nsISearchEngine objects.  
   
 
-### getDefaultEngines ###
+### getDefaultEngines(engineCount, engines) ###
   
 Returns an array of all default search engines. This includes all loaded  
 engines that aren't in the user's profile directory  
@@ -133,7 +133,7 @@ engines that aren't in the user's profile directory
 @returns an array of nsISearchEngine objects.  
   
 
-### moveEngine ###
+### moveEngine(engine, newIndex) ###
   
 Moves a visible search engine.  
   
@@ -146,7 +146,7 @@ Moves a visible search engine.
         hidden.  
   
 
-### removeEngine ###
+### removeEngine(engine) ###
   
 Removes the search engine. If the search engine is installed in a global  
 location, this will just hide the engine. If the engine is in the user's  
@@ -156,7 +156,7 @@ profile directory, it will be removed from disk.
         The engine to remove.  
   
 
-### parseSubmissionURL ###
+### parseSubmissionURL(url) ###
   
 Determines if the provided URL represents results from a search engine, and  
 provides details about the match.  

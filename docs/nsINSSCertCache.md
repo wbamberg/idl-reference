@@ -6,10 +6,10 @@ layout: default
 
 ## Methods ##
 
-### cacheAllCerts ###
+### cacheAllCerts() ###
 
-### cacheCertList ###
+### cacheCertList(list) ###
 
-### getX509CachedCerts ###
+### getX509CachedCerts() ###
 
-### getCachedCerts ###
+### getCachedCerts() ###

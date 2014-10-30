@@ -11,7 +11,7 @@ This class will be removed in gecko v33. See comments below for alternatives.
 
 ## Methods ##
 
-### drawElementOutline ###
+### drawElementOutline(aElement) ###
   
 This function now does nothing at all. Use the :-moz-devtools-highlighted  
 pseudo-class instead. For example, see the "HIGHLIGHTED_PSEUDO_CLASS" and  
@@ -21,14 +21,14 @@ https://hg.mozilla.org/dom-inspector/file/tip/resources/content/Flasher.js
 @status DEPRECATED  
   
 
-### repaintElement ###
+### repaintElement(aElement) ###
   
 This function now does nothing at all.  
   
 @status DEPRECATED  
   
 
-### scrollElementIntoView ###
+### scrollElementIntoView(aElement) ###
   
 As of gecko v33 you should use inIDOMUtils::scrollElementIntoView instead  
 of this function.  

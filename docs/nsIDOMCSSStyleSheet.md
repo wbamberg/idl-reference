@@ -13,9 +13,9 @@ http://www.w3.org/TR/DOM-Level-2-Style
 
 ## Methods ##
 
-### insertRule ###
+### insertRule(rule, index) ###
 
-### deleteRule ###
+### deleteRule(index) ###
 
 ## Attributes ##
 

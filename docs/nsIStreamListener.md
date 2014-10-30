@@ -9,7 +9,7 @@ nsIStreamListener
 
 ## Methods ##
 
-### onDataAvailable ###
+### onDataAvailable(aRequest, aContext, aInputStream, aOffset, aCount) ###
   
 Called when the next chunk of data (corresponding to the request) may  
 be read without blocking the calling thread.  The onDataAvailable impl  

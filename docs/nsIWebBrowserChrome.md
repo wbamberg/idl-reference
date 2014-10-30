@@ -10,7 +10,7 @@ containing an embedded Gecko web browser.
 
 ## Methods ##
 
-### setStatus ###
+### setStatus(statusType, status) ###
   
 Called when the status text in the chrome needs to be updated.  
 @param statusType indicates what is setting the text  
@@ -18,13 +18,13 @@ Called when the status text in the chrome needs to be updated.
               no status.  
   
 
-### destroyBrowserWindow ###
+### destroyBrowserWindow() ###
   
 Asks the implementer to destroy the window associated with this  
 WebBrowser object.  
   
 
-### sizeBrowserTo ###
+### sizeBrowserTo(aCX, aCY) ###
   
 Tells the chrome to size itself such that the browser will be the   
 specified size.  
@@ -32,20 +32,20 @@ specified size.
 @param aCY new height of the browser  
   
 
-### showAsModal ###
+### showAsModal() ###
   
 Shows the window as a modal window.  
 @return (the function error code) the status value specified by  
         in exitModalEventLoop.  
   
 
-### isWindowModal ###
+### isWindowModal() ###
   
 Is the window modal (that is, currently executing a modal loop)?  
 @return true if it's a modal window  
   
 
-### exitModalEventLoop ###
+### exitModalEventLoop(aStatus) ###
   
 Exit a modal event loop if we're in one. The implementation  
 should also exit out of the loop if the window is destroyed.  

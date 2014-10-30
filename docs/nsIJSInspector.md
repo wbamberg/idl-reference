@@ -10,7 +10,7 @@ keeping track of which ones are still running.
 
 ## Methods ##
 
-### enterNestedEventLoop ###
+### enterNestedEventLoop(requestor) ###
   
 Process the current thread's event queue, calling event handlers until  
 a call to exitNestedEventLoop, below, asks us to return.  
@@ -39,7 +39,7 @@ finished processing the current event.
                    number of enterNestedEventLoop calls to return.)  
   
 
-### exitNestedEventLoop ###
+### exitNestedEventLoop() ###
   
 Stop the youngest running enterNestedEventLoop call, asking it to return  
 once it has finished processing the current event.  

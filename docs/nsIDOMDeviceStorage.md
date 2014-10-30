@@ -6,23 +6,23 @@ layout: default
 
 ## Methods ##
 
-### add ###
+### add(aBlob) ###
 
-### addNamed ###
+### addNamed(aBlob, aName) ###
 
-### get ###
+### get(aName) ###
 
-### getEditable ###
+### getEditable(aName) ###
 
-### delete ###
+### delete(aName) ###
 
-### freeSpace ###
+### freeSpace() ###
 
-### usedSpace ###
+### usedSpace() ###
 
-### available ###
+### available() ###
 
-### createFileDescriptor ###
+### createFileDescriptor(aName, aFileDescriptor) ###
 
 ## Attributes ##
 

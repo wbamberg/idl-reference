@@ -14,7 +14,7 @@ asynchronous (callback-based) loading.
 
 ## Methods ##
 
-### parseFromString ###
+### parseFromString(str, contentType) ###
   
 The string passed in is parsed into a DOM document.  
   
@@ -24,7 +24,7 @@ The string passed in is parsed into a DOM document.
          string  
   
 
-### parseFromBuffer ###
+### parseFromBuffer(buf, bufLen, contentType) ###
   
 The buffer is parsed into a DOM document.  
 The charset is determined from the xml entity decl.  
@@ -36,7 +36,7 @@ The charset is determined from the xml entity decl.
          string  
   
 
-### parseFromStream ###
+### parseFromStream(stream, charset, contentLength, contentType) ###
   
 The byte stream passed in is parsed into a DOM document.  
   
@@ -53,7 +53,7 @@ Not accessible from web content.
          stream  
   
 
-### init ###
+### init(principal, documentURI, baseURI, scriptObject) ###
   
 Initialize the principal and document and base URIs that the parser should  
 use for documents it creates.  If this is not called, then a null  

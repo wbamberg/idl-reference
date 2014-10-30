@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### findSlotByName ###
+### findSlotByName(name) ###
 
-### listSlots ###
+### listSlots() ###
 
 ## Attributes ##
 

@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### GetStringFromID ###
+### GetStringFromID(aID) ###
 
-### GetStringFromName ###
+### GetStringFromName(aName) ###
 
-### formatStringFromID ###
+### formatStringFromID(aID, params, length) ###
 
-### formatStringFromName ###
+### formatStringFromName(aName, params, length) ###
 
-### getSimpleEnumeration ###
+### getSimpleEnumeration() ###

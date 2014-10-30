@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onTransportStatus ###
+### onTransportStatus(aTransport, aStatus, aProgress, aProgressMax) ###
   
 Transport status notification.  
   

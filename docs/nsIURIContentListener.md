@@ -13,7 +13,7 @@ dispatcher service.
 
 ## Methods ##
 
-### onStartURIOpen ###
+### onStartURIOpen(aURI) ###
   
 Gives the original content listener first crack at stopping a load before  
 it happens.  
@@ -24,7 +24,7 @@ it happens.
               <code>true</code> if the open should be aborted.  
   
 
-### doContent ###
+### doContent(aContentType, aIsContentPreferred, aRequest, aContentHandler) ###
   
 Notifies the content listener to hook up an nsIStreamListener capable of  
 consuming the data stream.  
@@ -48,7 +48,7 @@ consuming the data stream.
                             returned streamlistener's methods.   
   
 
-### isPreferred ###
+### isPreferred(aContentType, aDesiredContentType) ###
   
 When given a uri to dispatch, if the URI is specified as 'preferred   
 content' then the uri loader tries to find a preferred content handler  
@@ -74,7 +74,7 @@ between isPreferred and canHandleContent.
                             <code>false<code> otherwise.  
   
 
-### canHandleContent ###
+### canHandleContent(aContentType, aIsContentPreferred, aDesiredContentType) ###
   
 When given a uri to dispatch, if the URI is not specified as 'preferred  
 content' then the uri loader calls canHandleContent to see if the content  

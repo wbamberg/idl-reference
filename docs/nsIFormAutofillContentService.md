@@ -19,7 +19,7 @@ for the chrome process.
 
 ## Methods ##
 
-### requestAutocomplete ###
+### requestAutocomplete(aForm, aWindow) ###
   
 Invoked by the requestAutocomplete method of the DOM Form object.  
   

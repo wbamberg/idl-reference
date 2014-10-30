@@ -13,7 +13,7 @@ become available.
 
 ## Methods ##
 
-### getRequestHeader ###
+### getRequestHeader(aHeader) ###
   
 Get the value of a particular request header.  
   
@@ -25,7 +25,7 @@ Get the value of a particular request header.
 @throws NS_ERROR_NOT_AVAILABLE if the header is not set.  
   
 
-### setRequestHeader ###
+### setRequestHeader(aHeader, aValue, aMerge) ###
   
 Set the value of a particular request header.  
   
@@ -54,7 +54,7 @@ If aValue is empty and aMerge is false, the header will be cleared.
         opened.  
   
 
-### visitRequestHeaders ###
+### visitRequestHeaders(aVisitor) ###
   
 Call this method to visit all request headers.  Calling setRequestHeader  
 while visiting request headers has undefined behavior.  Don't do it!  
@@ -63,7 +63,7 @@ while visiting request headers has undefined behavior.  Don't do it!
        the header visitor instance.  
   
 
-### getResponseHeader ###
+### getResponseHeader(header) ###
   
 Get the value of a particular response header.  
   
@@ -78,7 +78,7 @@ Get the value of a particular response header.
         not set in the response.  
   
 
-### setResponseHeader ###
+### setResponseHeader(header, value, merge) ###
   
 Set the value of a particular response header.  
   
@@ -107,7 +107,7 @@ If aValue is empty and aMerge is false, the header will be cleared.
         header is not allowed.  
   
 
-### visitResponseHeaders ###
+### visitResponseHeaders(aVisitor) ###
   
 Call this method to visit all response headers.  Calling  
 setResponseHeader while visiting response headers has undefined  
@@ -120,7 +120,7 @@ behavior.  Don't do it!
         has been received (before onStartRequest).  
   
 
-### isNoStoreResponse ###
+### isNoStoreResponse() ###
   
 Returns true if the server sent a "Cache-Control: no-store" response  
 header.  
@@ -129,7 +129,7 @@ header.
         has been received (before onStartRequest).  
   
 
-### isNoCacheResponse ###
+### isNoCacheResponse() ###
   
 Returns true if the server sent the equivalent of a "Cache-control:  
 no-cache" response header.  Equivalent response headers include:  
@@ -140,7 +140,7 @@ in the past relative to the value of the "Date" header.
         has been received (before onStartRequest).  
   
 
-### redirectTo ###
+### redirectTo(aNewURI) ###
   
 Instructs the channel to immediately redirect to a new destination.  
 Can only be called on channels not yet opened.  

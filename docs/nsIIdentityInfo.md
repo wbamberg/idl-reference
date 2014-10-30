@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getValidEVPolicyOid ###
+### getValidEVPolicyOid() ###
   
 This function uses the same test as attribute  
   isExtendedValidation  

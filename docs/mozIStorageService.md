@@ -16,7 +16,7 @@ thread.
 
 ## Methods ##
 
-### openAsyncDatabase ###
+### openAsyncDatabase(aDatabaseStore, aOptions, aCallback) ###
   
 Open an asynchronous connection to a database.  
   
@@ -63,7 +63,7 @@ string may be:
         main thread.  
   
 
-### openSpecialDatabase ###
+### openSpecialDatabase(aStorageKey) ###
   
 Get a connection to a named special database storage.  
   
@@ -80,7 +80,7 @@ storage database.
 @throws NS_ERROR_INVALID_ARG if aStorageKey is invalid.  
   
 
-### openDatabase ###
+### openDatabase(aDatabaseFile) ###
   
 Open a connection to the specified file.  
   
@@ -112,7 +112,7 @@ use it only from the thread you created it from.
         If the database file is corrupted.  
   
 
-### openUnsharedDatabase ###
+### openUnsharedDatabase(aDatabaseFile) ###
   
 Open a connection to the specified file that doesn't share a sqlite cache.  
   
@@ -145,7 +145,7 @@ use it only from the thread you created it from.
         If the database file is corrupted.  
   
 
-### openDatabaseWithFileURL ###
+### openDatabaseWithFileURL(aFileURL) ###
   
 See openDatabase(). Exactly the same only initialized with a file URL.  
 Custom parameters can be passed to SQLite and VFS implementations through  
@@ -155,7 +155,7 @@ the query part of the URL.
        A nsIFileURL that represents the database that is to be opened.  
   
 
-### backupDatabaseFile ###
+### backupDatabaseFile(aDBFile, aBackupFileName, aBackupParentDirectory) ###
   
 Copies the specified database file to the specified parent directory with  
 the specified file name.  If the parent directory is not specified, it  

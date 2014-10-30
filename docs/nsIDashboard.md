@@ -6,17 +6,17 @@ layout: default
 
 ## Methods ##
 
-### requestSockets ###
+### requestSockets(cb) ###
 
-### requestHttpConnections ###
+### requestHttpConnections(cb) ###
 
-### requestWebsocketConnections ###
+### requestWebsocketConnections(cb) ###
 
-### requestDNSInfo ###
+### requestDNSInfo(cb) ###
 
-### requestConnection ###
+### requestConnection(aHost, aPort, aProtocol, aTimeout, cb) ###
 
-### requestDNSLookup ###
+### requestDNSLookup(aHost, cb) ###
 
 ## Attributes ##
 

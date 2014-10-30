@@ -25,7 +25,7 @@ defined in NS_TOOLTIPTEXTPROVIDER_CONTRACTID.
 
 ## Methods ##
 
-### getNodeText ###
+### getNodeText(aNode, aText) ###
   
 Called to obtain the tooltip text for a node.  
   

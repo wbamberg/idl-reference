@@ -9,7 +9,7 @@ The nsIDocShellFile
 
 ## Methods ##
 
-### print ###
+### print(aSilent, aDebugFile, aPrintSettings) ###
 
 ## Attributes ##
 

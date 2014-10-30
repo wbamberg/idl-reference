@@ -6,33 +6,33 @@ layout: default
 
 ## Methods ##
 
-### getValueType ###
+### getValueType(name) ###
 
-### getBooleanValue ###
+### getBooleanValue(name) ###
 
-### getLongValue ###
+### getLongValue(name) ###
 
-### getDoubleValue ###
+### getDoubleValue(name) ###
 
-### getStringValue ###
+### getStringValue(name) ###
 
-### getCStringValue ###
+### getCStringValue(name) ###
 
-### getISupportsValue ###
+### getISupportsValue(name) ###
 
-### setBooleanValue ###
+### setBooleanValue(name, value) ###
 
-### setLongValue ###
+### setLongValue(name, value) ###
 
-### setDoubleValue ###
+### setDoubleValue(name, value) ###
 
-### setStringValue ###
+### setStringValue(name, value) ###
 
-### setCStringValue ###
+### setCStringValue(name, value) ###
 
-### setISupportsValue ###
+### setISupportsValue(name, value) ###
 
-### removeValue ###
+### removeValue(name) ###
 
 ## Constants ##
 

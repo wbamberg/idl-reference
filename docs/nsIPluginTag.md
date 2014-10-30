@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### getMimeTypes ###
+### getMimeTypes(aCount, aResults) ###
 
-### getMimeDescriptions ###
+### getMimeDescriptions(aCount, aResults) ###
 
-### getExtensions ###
+### getExtensions(aCount, aResults) ###
 
 ## Attributes ##
 

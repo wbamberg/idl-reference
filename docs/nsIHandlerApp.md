@@ -14,7 +14,7 @@ be replaced by nsIWebHandlerApp (bug 394710).
 
 ## Methods ##
 
-### equals ###
+### equals(aHandlerApp) ###
   
 Whether or not the given handler app is logically equivalent to the  
 invokant (i.e. they represent the same app).  
@@ -28,7 +28,7 @@ the same.
 @returns true if the two are logically equivalent, false otherwise  
   
 
-### launchWithURI ###
+### launchWithURI(aURI, aWindowContext) ###
   
 Launches the application with the specified URI.  
   

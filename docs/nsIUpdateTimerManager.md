@@ -11,7 +11,7 @@ and then fired.
 
 ## Methods ##
 
-### registerTimer ###
+### registerTimer(id, callback, interval) ###
   
 Register an interval with the timer manager. The timer manager  
 periodically checks to see if the interval has expired and if it has  

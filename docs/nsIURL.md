@@ -20,7 +20,7 @@ http://host/directory/fileBaseName.fileExtension#ref
 
 ## Methods ##
 
-### getCommonBaseSpec ###
+### getCommonBaseSpec(aURIToCompare) ###
   
 This method takes a uri and compares the two.  The common uri portion  
 is returned as a string.  The minimum common uri portion is the   
@@ -43,7 +43,7 @@ Examples:
 9) file:///a/b/c.html      file:///d/e/c.html        file:///  
   
 
-### getRelativeSpec ###
+### getRelativeSpec(aURIToCompare) ###
   
 This method tries to create a string which specifies the location of the  
 argument relative to |this|.  If the argument and |this| are equal, the  

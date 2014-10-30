@@ -9,4 +9,4 @@ The callback interface for nsIHttpChannelInternal::HTTPUpgrade()
 
 ## Methods ##
 
-### onTransportAvailable ###
+### onTransportAvailable(aTransport, aSocketIn, aSocketOut) ###

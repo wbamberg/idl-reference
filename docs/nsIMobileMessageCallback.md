@@ -6,38 +6,38 @@ layout: default
 
 ## Methods ##
 
-### notifyMessageSent ###
+### notifyMessageSent(message) ###
   
 |message| can be nsIDOMMoz{Mms,Sms}Message.  
   
 
-### notifySendMessageFailed ###
+### notifySendMessageFailed(error, message) ###
 
-### notifyMessageGot ###
+### notifyMessageGot(message) ###
   
 |message| can be nsIDOMMoz{Mms,Sms}Message.  
   
 
-### notifyGetMessageFailed ###
+### notifyGetMessageFailed(error) ###
 
-### notifyMessageDeleted ###
+### notifyMessageDeleted(deleted, count) ###
 
-### notifyDeleteMessageFailed ###
+### notifyDeleteMessageFailed(error) ###
 
-### notifyMessageMarkedRead ###
+### notifyMessageMarkedRead(read) ###
 
-### notifyMarkMessageReadFailed ###
+### notifyMarkMessageReadFailed(error) ###
 
-### notifySegmentInfoForTextGot ###
+### notifySegmentInfoForTextGot(segments, charsPerSegment, charsAvailableInLastSegment) ###
 
-### notifyGetSegmentInfoForTextFailed ###
+### notifyGetSegmentInfoForTextFailed(error) ###
 
-### notifyGetSmscAddress ###
+### notifyGetSmscAddress(aSmscAddress) ###
   
  SMSC Address get/set result  
   
 
-### notifyGetSmscAddressFailed ###
+### notifyGetSmscAddressFailed(error) ###
 
 ## Constants ##
 

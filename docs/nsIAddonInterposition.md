@@ -20,7 +20,7 @@ it should return null.
 
 ## Methods ##
 
-### interpose ###
+### interpose(addonId, target, iface, prop) ###
   
 Returns a replacement property descriptor for a browser object.  
   

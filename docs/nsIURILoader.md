@@ -26,7 +26,7 @@ application.
 
 ## Methods ##
 
-### registerContentListener ###
+### registerContentListener(aContentListener) ###
   
 As applications such as messenger and the browser are instantiated,  
 they register content listener's with the uri dispatcher corresponding  
@@ -42,9 +42,9 @@ the content types the registered content listener cares about.
 @see the nsIURILoader class description  
   
 
-### unRegisterContentListener ###
+### unRegisterContentListener(aContentListener) ###
 
-### openURI ###
+### openURI(aChannel, aFlags, aWindowContext) ###
   
 OpenURI requires the following parameters.....  
 @param aChannel  
@@ -63,7 +63,7 @@ OpenURI requires the following parameters.....
        <b>Must not be null!</b>  
   
 
-### openChannel ###
+### openChannel(aChannel, aFlags, aWindowContext) ###
   
 Loads data from a channel. This differs from openURI in that the channel  
 may already be opened, and that it returns a stream listener into which the  
@@ -100,7 +100,7 @@ NS_ERROR_WONT_HANDLE_CONTENT.
        <b>Must not be null!</b>  
   
 
-### stop ###
+### stop(aLoadCookie) ###
   
 Stops an in progress load  
   

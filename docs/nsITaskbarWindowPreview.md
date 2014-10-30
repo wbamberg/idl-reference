@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getButton ###
+### getButton(index) ###
   
 Gets the nth button for the preview image. By default, all of the buttons  
 are invisible.  

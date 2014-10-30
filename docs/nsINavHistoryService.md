@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### getPageTitle ###
+### getPageTitle(aURI) ###
   
 Gets the original title of the page.  
 @deprecated use mozIAsyncHistory.getPlacesInfo instead.  
   
 
-### markPageAsFollowedBookmark ###
+### markPageAsFollowedBookmark(aURI) ###
   
 This is just like markPageAsTyped (in nsIBrowserHistory, also implemented  
 by the history service), but for bookmarks. It declares that the given URI  
@@ -21,7 +21,7 @@ soon after this message has been received, that transition will be marked
 as following a bookmark.  
   
 
-### markPageAsTyped ###
+### markPageAsTyped(aURI) ###
   
 Designates the url as having been explicitly typed in by the user.  
   
@@ -29,7 +29,7 @@ Designates the url as having been explicitly typed in by the user.
        URI of the page to be marked.  
   
 
-### markPageAsFollowedLink ###
+### markPageAsFollowedLink(aURI) ###
   
 Designates the url as coming from a link explicitly followed by  
 the user (for example by clicking on it).  
@@ -38,7 +38,7 @@ the user (for example by clicking on it).
        URI of the page to be marked.  
   
 
-### canAddURI ###
+### canAddURI(aURI) ###
   
 Returns true if this URI would be added to the history. You don't have to  
 worry about calling this, adding a visit will always check before  
@@ -47,31 +47,31 @@ may want to check if this page would go in the history (i.e. for
 annotations).  
   
 
-### getNewQuery ###
+### getNewQuery() ###
   
 This returns a new query object that you can pass to executeQuer[y/ies].  
 It will be initialized to all empty (so using it will give you all history).  
   
 
-### getNewQueryOptions ###
+### getNewQueryOptions() ###
   
 This returns a new options object that you can pass to executeQuer[y/ies]  
 after setting the desired options.  
   
 
-### executeQuery ###
+### executeQuery(aQuery, options) ###
   
 Executes a single query.  
   
 
-### executeQueries ###
+### executeQueries(aQueries, aQueryCount, options) ###
   
 Executes an array of queries. All of the query objects are ORed  
 together. Within a query, all the terms are ANDed together as in  
 executeQuery. See executeQuery()  
   
 
-### queryStringToQueries ###
+### queryStringToQueries(aQueryString, aQueries, aResultCount, options) ###
   
 Converts a query URI-like string to an array of actual query objects for  
 use to executeQueries(). The output query array may be empty if there is  
@@ -79,13 +79,13 @@ no information. However, there will always be an options structure returned
 (if nothing is defined, it will just have the default values).  
   
 
-### queriesToQueryString ###
+### queriesToQueryString(aQueries, aQueryCount, options) ###
   
 Converts a query into an equivalent string that can be persisted. Inverse  
 of queryStringToQueries()  
   
 
-### addObserver ###
+### addObserver(observer, ownsWeak) ###
   
 Adds a history observer. If ownsWeak is false, the history service will  
 keep an owning reference to the observer.  If ownsWeak is true, then  
@@ -93,12 +93,12 @@ aObserver must implement nsISupportsWeakReference, and the history service
 will keep a weak reference to the observer.  
   
 
-### removeObserver ###
+### removeObserver(observer) ###
   
 Removes a history observer.  
   
 
-### runInBatchMode ###
+### runInBatchMode(aCallback, aClosure) ###
   
 Runs the passed callback in batch mode. Use this when a lot of things  
 are about to change. Calls can be nested, observers will only be  
@@ -110,7 +110,7 @@ notified when all batches begin/end.
        Opaque parameter passed to nsINavBookmarksBatchCallback  
   
 
-### clearEmbedVisits ###
+### clearEmbedVisits() ###
   
 Clear all TRANSITION_EMBED visits.  
   

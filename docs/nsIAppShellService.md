@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### createTopLevelWindow ###
+### createTopLevelWindow(aParent, aUrl, aChromeMask, aInitialWidth, aInitialHeight, aOpeningTab) ###
 
-### createWindowlessBrowser ###
+### createWindowlessBrowser(aIsChrome) ###
   
 This is the constructor for creating an invisible DocShell.  
 It is used to simulate DOM windows without an actual physical  
@@ -16,11 +16,11 @@ representation.
 @param aIsChrome Set true if you want to use it for chrome content.  
   
 
-### createHiddenWindow ###
+### createHiddenWindow() ###
 
-### destroyHiddenWindow ###
+### destroyHiddenWindow() ###
 
-### getHiddenWindowAndJSContext ###
+### getHiddenWindowAndJSContext(aHiddenDOMWindow, aJSContext) ###
   
 Return the (singleton) application hidden window as an nsIDOMWindow,  
 and, the corresponding JavaScript context pointer.  This is useful  
@@ -29,7 +29,7 @@ if you'd like to subsequently call OpenDialog on the hidden window.
 @aJSContext       the corresponding JavaScript context  
   
 
-### registerTopLevelWindow ###
+### registerTopLevelWindow(aWindow) ###
   
 Add a window to the application's registry of windows.  These windows  
 are generally shown in the Windows taskbar, and the application  
@@ -39,7 +39,7 @@ knows it can't quit until it's out of registered windows.
       "xul-window-registered"  
   
 
-### unregisterTopLevelWindow ###
+### unregisterTopLevelWindow(aWindow) ###
   
 Remove a window from the application's window registry. Note that  
 this method won't automatically attempt to quit the app when  
@@ -47,7 +47,7 @@ the last window is unregistered. For that, see Quit().
 @param aWindow you see the pattern  
   
 
-### startEventLoopLagTracking ###
+### startEventLoopLagTracking() ###
   
 Start/stop tracking lags in the event loop.  
 If the event loop gets unresponsive, a "event-loop-lag" notification  
@@ -56,7 +56,7 @@ is already enabled has no effect.
 @return true if tracking succeeded.  
   
 
-### stopEventLoopLagTracking ###
+### stopEventLoopLagTracking() ###
 
 ## Attributes ##
 

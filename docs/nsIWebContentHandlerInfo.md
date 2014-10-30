@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getHandlerURI ###
+### getHandlerURI(uri) ###
    
 Gets the service URL Spec, with the loading document URI encoded in it.  
 @param   uri  

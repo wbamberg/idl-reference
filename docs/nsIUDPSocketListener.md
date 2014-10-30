@@ -16,7 +16,7 @@ client's IP address (NOTE: this may be an IPv4 or IPv6 string literal).
 
 ## Methods ##
 
-### onPacketReceived ###
+### onPacketReceived(aSocket, aMessage) ###
   
 onPacketReceived  
   
@@ -28,7 +28,7 @@ This method is called when a client sends an UDP packet.
        The message.  
   
 
-### onStopListening ###
+### onStopListening(aSocket, aStatus) ###
   
 onStopListening  
   

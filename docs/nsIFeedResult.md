@@ -10,7 +10,7 @@ metadata for a feed or entry.
 
 ## Methods ##
 
-### registerExtensionPrefix ###
+### registerExtensionPrefix(aNamespace, aPrefix) ###
   
 Registers a prefix used to access an extension in the feed/entry   
   

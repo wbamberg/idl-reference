@@ -36,7 +36,7 @@ rewritten to ask the user: "Would you like to proceed?"
 
 ## Methods ##
 
-### alert ###
+### alert(aParent, aDialogTitle, aText) ###
   
 Puts up an alert dialog with an OK button.  
   
@@ -48,7 +48,7 @@ Puts up an alert dialog with an OK button.
        Text to appear in the body of the dialog.  
   
 
-### alertCheck ###
+### alertCheck(aParent, aDialogTitle, aText, aCheckMsg, aCheckState) ###
   
 Puts up an alert dialog with an OK button and a labeled checkbox.  
   
@@ -65,7 +65,7 @@ Puts up an alert dialog with an OK button and a labeled checkbox.
        is called and the final checked state after this method returns.  
   
 
-### confirm ###
+### confirm(aParent, aDialogTitle, aText) ###
   
 Puts up a dialog with OK and Cancel buttons.  
   
@@ -79,7 +79,7 @@ Puts up a dialog with OK and Cancel buttons.
 @return true for OK, false for Cancel  
   
 
-### confirmCheck ###
+### confirmCheck(aParent, aDialogTitle, aText, aCheckMsg, aCheckState) ###
   
 Puts up a dialog with OK and Cancel buttons and a labeled checkbox.  
   
@@ -98,7 +98,7 @@ Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
 @return true for OK, false for Cancel  
   
 
-### confirmEx ###
+### confirmEx(aParent, aDialogTitle, aText, aButtonFlags, aButton0Title, aButton1Title, aButton2Title, aCheckMsg, aCheckState) ###
   
 Puts up a dialog with up to 3 buttons and an optional, labeled checkbox.  
   
@@ -143,7 +143,7 @@ In general, aButtonFlags is constructed per the following example:
 where "AAA" and "BBB" correspond to one of the button titles.  
   
 
-### prompt ###
+### prompt(aParent, aDialogTitle, aText, aValue, aCheckMsg, aCheckState) ###
   
 Puts up a dialog with an edit field and an optional, labeled checkbox.  
   
@@ -167,7 +167,7 @@ Puts up a dialog with an edit field and an optional, labeled checkbox.
 @return true for OK, false for Cancel.  
   
 
-### promptUsernameAndPassword ###
+### promptUsernameAndPassword(aParent, aDialogTitle, aText, aUsername, aPassword, aCheckMsg, aCheckState) ###
   
 Puts up a dialog with an edit field, a password field, and an optional,  
 labeled checkbox.  
@@ -197,7 +197,7 @@ labeled checkbox.
 @return true for OK, false for Cancel.  
   
 
-### promptPassword ###
+### promptPassword(aParent, aDialogTitle, aText, aPassword, aCheckMsg, aCheckState) ###
   
 Puts up a dialog with a password field and an optional, labeled checkbox.  
   
@@ -221,7 +221,7 @@ Puts up a dialog with a password field and an optional, labeled checkbox.
 @return true for OK, false for Cancel.  
   
 
-### select ###
+### select(aParent, aDialogTitle, aText, aCount, aSelectList, aOutSelection) ###
   
 Puts up a dialog box which has a list box of strings from which the user  
 may make a single selection.  

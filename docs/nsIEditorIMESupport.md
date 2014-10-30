@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### forceCompositionEnd ###
+### forceCompositionEnd() ###
   
 forceCompositionEnd() force the composition end  
   
 
-### getPreferredIMEState ###
+### getPreferredIMEState() ###
   
 Get preferred IME status of current widget.  
   

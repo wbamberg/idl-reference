@@ -10,12 +10,12 @@ that are in the cookie list
 
 ## Methods ##
 
-### removeAll ###
+### removeAll() ###
   
 Called to remove all cookies from the cookie list  
   
 
-### remove ###
+### remove(aHost, aName, aPath, aBlocked) ###
   
 Called to remove an individual cookie from the cookie list, specified  
 by host, name, and path. If the cookie cannot be found, no exception  

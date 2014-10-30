@@ -12,7 +12,7 @@ OnDataAvailable callback may be retargeted for delivery off the main thread.
 
 ## Methods ##
 
-### checkListenerChain ###
+### checkListenerChain() ###
   
 Checks this listener and any next listeners it may have to verify that  
 they can receive OnDataAvailable off the main thread. It is the  

@@ -6,33 +6,33 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init() ###
 
-### registerStrongReporter ###
+### registerStrongReporter(reporter) ###
 
-### registerWeakReporter ###
+### registerWeakReporter(reporter) ###
 
-### unregisterStrongReporter ###
+### unregisterStrongReporter(reporter) ###
 
-### unregisterWeakReporter ###
+### unregisterWeakReporter(reporter) ###
 
-### blockRegistrationAndHideExistingReporters ###
+### blockRegistrationAndHideExistingReporters() ###
 
-### unblockRegistrationAndRestoreOriginalReporters ###
+### unblockRegistrationAndRestoreOriginalReporters() ###
 
-### registerStrongReporterEvenIfBlocked ###
+### registerStrongReporterEvenIfBlocked(aReporter) ###
 
-### getReports ###
+### getReports(handleReport, handleReportData, finishReporting, finishReportingData, anonymize) ###
 
-### getReportsExtended ###
+### getReportsExtended(handleReport, handleReportData, finishReporting, finishReportingData, anonymize, minimizeMemoryUsage, DMDDumpIdent) ###
 
-### getReportsForThisProcess ###
+### getReportsForThisProcess(handleReport, handleReportData, anonymize) ###
 
-### getReportsForThisProcessExtended ###
+### getReportsForThisProcessExtended(handleReport, handleReportData, anonymize, DMDFile) ###
 
-### minimizeMemoryUsage ###
+### minimizeMemoryUsage(callback) ###
 
-### sizeOfTab ###
+### sizeOfTab(window, jsObjectsSize, jsStringsSize, jsOtherSize, domSize, styleSize, otherSize, totalSize, jsMilliseconds, nonJSMilliseconds) ###
 
 ## Attributes ##
 

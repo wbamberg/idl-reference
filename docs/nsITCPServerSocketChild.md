@@ -10,7 +10,7 @@ It is used in the server socket implementation on the child side.
 
 ## Methods ##
 
-### listen ###
+### listen(serverSocket, port, backlog, binaryType) ###
   
 Tell the chrome process to listen on the port with the given parameters.  
   
@@ -25,7 +25,7 @@ Tell the chrome process to listen on the port with the given parameters.
        "arraybuffer" to use UInt8 array instances or "string" to use String.  
   
 
-### close ###
+### close() ###
   
 Tell the chrome process to close the server socket.  
   

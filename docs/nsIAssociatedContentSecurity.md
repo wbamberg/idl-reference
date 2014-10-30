@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### flush ###
+### flush() ###
 
 ## Attributes ##
 

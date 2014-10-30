@@ -9,7 +9,7 @@ Interface representing a browser window.
 
 ## Methods ##
 
-### open ###
+### open(aURI) ###
   
 Open a new browser tab, pointing to the specified URI.  
 @param   aURI  

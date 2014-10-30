@@ -10,4 +10,4 @@ to destruct an object in a finally clause easier.
 
 ## Methods ##
 
-### destruct ###
+### destruct() ###

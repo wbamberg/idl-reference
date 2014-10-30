@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### register ###
+### register(aScope, aScriptURI) ###
   
 Registers a ServiceWorker with script loaded from `aScriptURI` to act as  
 the ServiceWorker for aScope.  Requires a valid entry settings object on  
@@ -16,25 +16,25 @@ a window.
 Returns a Promise.  
   
 
-### unregister ###
+### unregister(aCallback, aScope) ###
   
 Unregister an existing ServiceWorker registration for `aScope`.  
 It keeps aCallback alive until the operation is concluded.  
   
 
-### getRegistrations ###
+### getRegistrations(aWindow) ###
 
-### getRegistration ###
+### getRegistration(aWindow, aScope) ###
 
-### getReadyPromise ###
+### getReadyPromise(aWindow) ###
 
-### removeReadyPromise ###
+### removeReadyPromise(aWindow) ###
 
-### AddRegistrationEventListener ###
+### AddRegistrationEventListener(aPageURI, aTarget) ###
 
-### RemoveRegistrationEventListener ###
+### RemoveRegistrationEventListener(aPageURI, aTarget) ###
 
-### MaybeStartControlling ###
+### MaybeStartControlling(aDoc) ###
   
 Call this to request that document `aDoc` be controlled by a ServiceWorker  
 if a registration exists for it's scope.  
@@ -42,19 +42,19 @@ if a registration exists for it's scope.
 This MUST only be called once per document!  
   
 
-### MaybeStopControlling ###
+### MaybeStopControlling(aDoc) ###
   
 Documents that have called MaybeStartControlling() should call this when  
 they are destroyed. This function may be called multiple times, and is  
 idempotent.  
   
 
-### GetInstalling ###
+### GetInstalling(aWindow, aScope) ###
 
-### GetWaiting ###
+### GetWaiting(aWindow, aScope) ###
 
-### GetActive ###
+### GetActive(aWindow, aScope) ###
 
-### GetDocumentController ###
+### GetDocumentController(aWindow) ###
 
-### getScopeForUrl ###
+### getScopeForUrl(path) ###

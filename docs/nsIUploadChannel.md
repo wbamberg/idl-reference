@@ -13,7 +13,7 @@ prior to the invocation of asyncOpen on the channel.
 
 ## Methods ##
 
-### setUploadStream ###
+### setUploadStream(aStream, aContentType, aContentLength) ###
   
 Sets a stream to be uploaded by this channel.  
   

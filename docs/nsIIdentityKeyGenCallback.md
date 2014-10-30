@@ -13,4 +13,4 @@ we keep it so we can track deeper crypto errors.
 
 ## Methods ##
 
-### generateKeyPairFinished ###
+### generateKeyPairFinished(rv, keyPair) ###

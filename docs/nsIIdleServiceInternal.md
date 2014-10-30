@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### resetIdleTimeOut ###
+### resetIdleTimeOut(idleDeltaInMS) ###
   
 "Resets the idle time to the value specified."  
   

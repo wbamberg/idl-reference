@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### group ###
+### group(aURI) ###
   
 Determine the group to which the URI belongs.  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### scriptAvailable ###
+### scriptAvailable(aResult, aElement, aIsInline, aURI, aLineNo) ###
   
 The script is available for evaluation. For inline scripts, this  
 method will be called synchronously. For externally loaded scripts,  
@@ -23,7 +23,7 @@ this method will be called when the load completes.
        if it is a loaded script).  
   
 
-### scriptEvaluated ###
+### scriptEvaluated(aResult, aElement, aIsInline) ###
   
 The script has been evaluated.  
   

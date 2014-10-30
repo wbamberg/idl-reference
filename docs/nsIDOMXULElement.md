@@ -6,17 +6,17 @@ layout: default
 
 ## Methods ##
 
-### focus ###
+### focus() ###
 
-### blur ###
+### blur() ###
 
-### click ###
+### click() ###
 
-### doCommand ###
+### doCommand() ###
 
-### getElementsByAttribute ###
+### getElementsByAttribute(name, value) ###
 
-### getElementsByAttributeNS ###
+### getElementsByAttributeNS(namespaceURI, name, value) ###
 
 ## Attributes ##
 

@@ -13,7 +13,7 @@ http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html
 
 ## Methods ##
 
-### splitText ###
+### splitText(offset) ###
 
 ## Attributes ##
 

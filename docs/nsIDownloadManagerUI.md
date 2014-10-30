@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### show ###
+### show(aWindowContext, aDownload, aReason, aUsePrivateUI) ###
   
 Shows the Download Manager's UI to the user.  
   
@@ -23,7 +23,7 @@ Shows the Download Manager's UI to the user.
        should only display private downloads in the UI, if possible.  
   
 
-### getAttention ###
+### getAttention() ###
   
 Brings attention to the UI if it is already visible  
   

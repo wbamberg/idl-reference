@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### handleXMLDeclaration ###
+### handleXMLDeclaration(version, encoding, standalone) ###

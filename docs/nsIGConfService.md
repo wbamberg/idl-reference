@@ -6,26 +6,26 @@ layout: default
 
 ## Methods ##
 
-### getBool ###
+### getBool(key) ###
 
-### getString ###
+### getString(key) ###
 
-### getInt ###
+### getInt(key) ###
 
-### getFloat ###
+### getFloat(key) ###
 
-### getStringList ###
+### getStringList(key) ###
 
-### setBool ###
+### setBool(key, value) ###
 
-### setString ###
+### setString(key, value) ###
 
-### setInt ###
+### setInt(key, value) ###
 
-### setFloat ###
+### setFloat(key, value) ###
 
-### getAppForProtocol ###
+### getAppForProtocol(scheme, enabled) ###
 
-### handlerRequiresTerminal ###
+### handlerRequiresTerminal(scheme) ###
 
-### setAppForProtocol ###
+### setAppForProtocol(scheme, command) ###

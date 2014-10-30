@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### CreateCollation ###
+### CreateCollation(locale) ###
   
 Create the collation for a given locale.  
   

@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### getIdConst ###
+### getIdConst(idConst) ###
 
-### getNext ###
+### getNext() ###
 
-### getPrevious ###
+### getPrevious() ###
 
-### invalidate ###
+### invalidate() ###
 
 ## Attributes ##
 

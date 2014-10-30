@@ -10,7 +10,7 @@ to observe dispatch activity on the thread.
 
 ## Methods ##
 
-### addObserver ###
+### addObserver(observer) ###
   
 Add an observer that will *only* receive onProcessNextEvent,  
 beforeProcessNextEvent. and afterProcessNextEvent callbacks. Always called  
@@ -20,13 +20,13 @@ afterProcessNextEvent may be called first depending on whether or not the
 observer is added in a nested loop). Holds a strong ref.  
   
 
-### removeObserver ###
+### removeObserver(observer) ###
   
 Remove an observer added via the addObserver call. Once removed the  
 observer will never be called again by the thread.  
   
 
-### pushEventQueue ###
+### pushEventQueue() ###
   
 This method causes any events currently enqueued on the thread to be  
 suppressed until PopEventQueue is called, and any event dispatched to this  
@@ -39,7 +39,7 @@ events for the innermost event queue. Must only be called on the target
 thread.  
   
 
-### popEventQueue ###
+### popEventQueue(aInnermostTarget) ###
   
 Revert a call to PushEventQueue. When an event queue is popped, any events  
 remaining in the queue are appended to the elder queue. This also causes  

@@ -15,7 +15,7 @@ the last reference to the downloader is released.
 
 ## Methods ##
 
-### init ###
+### init(observer, downloadLocation) ###
   
 Initialize this downloader  
   

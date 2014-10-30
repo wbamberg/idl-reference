@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### networkStatsAvailable ###
+### networkStatsAvailable(success, rxBytes, txBytes, timestamp) ###

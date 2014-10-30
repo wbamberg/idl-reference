@@ -10,7 +10,7 @@ of updates previously performed as well as the current active update.
 
 ## Methods ##
 
-### getUpdateAt ###
+### getUpdateAt(index) ###
   
 Gets the update at the specified index  
 @param   index  
@@ -18,12 +18,12 @@ Gets the update at the specified index
 @returns The nsIUpdate object at the specified index  
   
 
-### saveUpdates ###
+### saveUpdates() ###
   
 Saves all updates to disk.  
   
 
-### refreshUpdateStatus ###
+### refreshUpdateStatus(update) ###
   
 Refresh the update status based on the information in update.status.  
   

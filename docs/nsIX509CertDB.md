@@ -10,7 +10,7 @@ X.509 certificates stored in a database.
 
 ## Methods ##
 
-### findCertByNickname ###
+### findCertByNickname(aToken, aNickname) ###
   
  Given a nickname and optionally a token,  
  locate the matching certificate.  
@@ -24,7 +24,7 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.  
   
 
-### findCertByDBKey ###
+### findCertByDBKey(aDBkey, aToken) ###
   
  Will find a certificate based on its dbkey  
  retrieved by getting the dbKey attribute of  
@@ -37,7 +37,7 @@ X.509 certificates stored in a database.
                Can be null to mean any token.  
   
 
-### findCertNicknames ###
+### findCertNicknames(aToken, aType, count, certNameList) ###
   
  Obtain a list of certificate nicknames from the database.  
  What the name is depends on type:  
@@ -53,7 +53,7 @@ X.509 certificates stored in a database.
  @param certNameList The returned array of certificate nicknames.  
   
 
-### findEmailEncryptionCert ###
+### findEmailEncryptionCert(aNickname) ###
   
  Find user's own email encryption certificate by nickname.  
   
@@ -63,7 +63,7 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.  
   
 
-### findEmailSigningCert ###
+### findEmailSigningCert(aNickname) ###
   
  Find user's own email signing certificate by nickname.  
   
@@ -73,7 +73,7 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.  
   
 
-### findCertByEmailAddress ###
+### findCertByEmailAddress(aToken, aEmailAddress) ###
   
  Find a certificate by email address.  
   
@@ -86,7 +86,7 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.  
   
 
-### importCertificates ###
+### importCertificates(data, length, type, ctx) ###
   
  Use this to import a stream sent down as a mime type into  
  the certificate database on the default token.  
@@ -98,7 +98,7 @@ X.509 certificates stored in a database.
  @param ctx A UI context.  
   
 
-### importEmailCertificate ###
+### importEmailCertificate(data, length, ctx) ###
   
  Import another person's email certificate into the database.  
   
@@ -107,7 +107,7 @@ X.509 certificates stored in a database.
  @param ctx A UI context.  
   
 
-### importServerCertificate ###
+### importServerCertificate(data, length, ctx) ###
   
  Import a server machine's certificate into the database.  
   
@@ -116,7 +116,7 @@ X.509 certificates stored in a database.
  @param ctx A UI context.  
   
 
-### importUserCertificate ###
+### importUserCertificate(data, length, ctx) ###
   
  Import a personal certificate into the database, assuming  
  the database already contains the private key for this certificate.  
@@ -126,14 +126,14 @@ X.509 certificates stored in a database.
  @param ctx A UI context.  
   
 
-### deleteCertificate ###
+### deleteCertificate(aCert) ###
   
  Delete a certificate stored in the database.  
   
  @param aCert Delete this certificate.  
   
 
-### setCertTrust ###
+### setCertTrust(cert, type, trust) ###
   
  Modify the trust that is stored and associated to a certificate within  
  a database. Separate trust is stored for  
@@ -146,7 +146,7 @@ X.509 certificates stored in a database.
               See the trust constants defined within this interface.  
   
 
-### setCertTrustFromString ###
+### setCertTrustFromString(cert, trustString) ###
   
 @param cert        The certificate for which to modify trust.  
 @param trustString decoded by CERT_DecodeTrustString. 3 comma separated  
@@ -154,7 +154,7 @@ X.509 certificates stored in a database.
                    trust.  
   
 
-### isCertTrusted ###
+### isCertTrusted(cert, certType, trustType) ###
   
  Query whether a certificate is trusted for a particular use.  
   
@@ -166,7 +166,7 @@ X.509 certificates stored in a database.
  @return Returns true if the certificate is trusted for the given use.  
   
 
-### importCertsFromFile ###
+### importCertsFromFile(aToken, aFile, aType) ###
   
  Import certificate(s) from file  
   
@@ -179,7 +179,7 @@ X.509 certificates stored in a database.
               be imported. See type constants in nsIX509Cert.  
   
 
-### importPKCS12File ###
+### importPKCS12File(aToken, aFile) ###
   
  Import a PKCS#12 file containing cert(s) and key(s) into the database.  
   
@@ -190,7 +190,7 @@ X.509 certificates stored in a database.
               to be imported.  
   
 
-### exportPKCS12File ###
+### exportPKCS12File(aToken, aFile, count, aCerts) ###
   
  Export a set of certs and keys from the database to a PKCS#12 file.  
   
@@ -203,13 +203,13 @@ X.509 certificates stored in a database.
  @param aCerts The array of all certificates to be exported.  
   
 
-### constructX509FromBase64 ###
+### constructX509FromBase64(base64) ###
 
-### constructX509 ###
+### constructX509(certDER, length) ###
 
-### openSignedAppFileAsync ###
+### openSignedAppFileAsync(trustedRoot, aJarFile, callback) ###
 
-### verifySignedManifestAsync ###
+### verifySignedManifestAsync(trustedRoot, aManifestStream, aSignatureStream, callback) ###
   
 Given streams containing a signature and a manifest file, verifies  
 that the signature is valid for the manifest. The signature must  
@@ -222,9 +222,9 @@ was issued by the given trusted root.
  On failure, an error code is returned.  
   
 
-### addCert ###
+### addCert(certDER, aTrust, aName) ###
 
-### verifyCertNow ###
+### verifyCertNow(aCert, aUsage, aFlags, verifiedChain, aHasEVPolicy) ###
  Warning: This interface is inteded to use only for testing only as:  
    1. It can create IO on the main thread.  
    2. It is in constant change, so in/out can change at any release.  
@@ -243,11 +243,11 @@ was issued by the given trusted root.
          failure  
   
 
-### clearOCSPCache ###
+### clearOCSPCache() ###
 
-### addCertFromBase64 ###
+### addCertFromBase64(base64, aTrust, aName) ###
 
-### getCerts ###
+### getCerts() ###
 
 ## Constants ##
 

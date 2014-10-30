@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### startFlow ###
+### startFlow(manifestURL, iccInfo) ###
   
 Request the creation of a Mobile ID UI flow.  
   
@@ -27,7 +27,7 @@ be returned as result of the Promise or a single string containing an error
 in case of rejection.  
   
 
-### verificationCodePrompt ###
+### verificationCodePrompt(retries, timeout, timeLeft) ###
   
 Will prompt the user to enter a code used to verify a phone number.  
 This will only be called if an external phone number is selected in  
@@ -46,17 +46,17 @@ verification code introduced through the UI or an error in case of
 rejection of the promise.  
   
 
-### verify ###
+### verify() ###
   
 Notify the UI about the start of the verification process.  
   
 
-### error ###
+### error(error) ###
   
 Notify the UI about an error in the verification process.  
   
 
-### verified ###
+### verified(verifiedPhoneNumber) ###
   
 Notify the UI about the succesful phone number verification.  
   

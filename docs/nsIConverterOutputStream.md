@@ -10,7 +10,7 @@ character encoding conversion.
 
 ## Methods ##
 
-### init ###
+### init(aOutStream, aCharset, aBufferSize, aReplacementCharacter) ###
   
 Initialize this stream. Must be called before any other method on this  
 interface, or you will crash. The output stream passed to this method  

@@ -13,7 +13,7 @@ Internally, imgIContainer also manages animation of images.
 
 ## Methods ##
 
-### optimalImageSizeForDest ###
+### optimalImageSizeForDest(aDest, aWhichFrame, aFilter, aFlags) ###
   
 Given a size at which this image will be displayed, and the drawing  
 parameters affecting how it will be drawn, returns the image size which  
@@ -31,12 +31,12 @@ can change over time due to changes in the internal state of the image.
 @param aFlags Flags of the FLAG_* variety  
   
 
-### GetType ###
+### GetType() ###
   
 Direct C++ accessor for 'type' attribute, for convenience.  
   
 
-### getFrame ###
+### getFrame(aWhichFrame, aFlags) ###
   
 Get a surface for the given frame. This may be a platform-native,  
 optimized surface, so you cannot inspect its pixel data. If you  
@@ -46,7 +46,7 @@ need that, use SourceSurface::GetDataSurface.
 @param aFlags Flags of the FLAG_* variety  
   
 
-### frameIsOpaque ###
+### frameIsOpaque(aWhichFrame) ###
   
 Whether the given frame is opaque; that is, needs the background painted  
 behind it.  
@@ -54,13 +54,13 @@ behind it.
 @param aWhichFrame Frame specifier of the FRAME_* variety.  
   
 
-### getImageContainer ###
+### getImageContainer(aManager) ###
   
 Attempts to create an ImageContainer (and Image) containing the current  
 frame. Only valid for RASTER type images.  
   
 
-### draw ###
+### draw(aContext, aSize, aRegion, aWhichFrame, aFilter, aSVGContext, aFlags) ###
   
 Draw the requested frame of this image onto the context specified.  
   
@@ -164,13 +164,13 @@ copies of the image, which looks like this:
 @param aFlags Flags of the FLAG_* variety  
   
 
-### requestDecode ###
+### requestDecode() ###
 
-### startDecoding ###
+### startDecoding() ###
 
-### isDecoded ###
+### isDecoded() ###
 
-### lockImage ###
+### lockImage() ###
   
 Increments the lock count on the image. An image will not be discarded  
 as long as the lock count is nonzero. Note that it is still possible for  
@@ -180,7 +180,7 @@ was never drawn.
 Upon instantiation images have a lock count of zero.  
   
 
-### unlockImage ###
+### unlockImage() ###
   
 Decreases the lock count on the image. If the lock count drops to zero,  
 the image is allowed to discard its frame data to save memory.  
@@ -190,32 +190,32 @@ call this method without first having made a matching lockImage() call.
 In other words, the lock count is not allowed to be negative.  
   
 
-### requestDiscard ###
+### requestDiscard() ###
   
 If this image is unlocked, discard its decoded data.  If the image is  
 locked or has already been discarded, do nothing.  
   
 
-### requestRefresh ###
+### requestRefresh(aTime) ###
   
 Indicates that this imgIContainer has been triggered to update  
 its internal animation state. Likely this should only be called  
 from within nsImageFrame or objects of similar type.  
   
 
-### resetAnimation ###
+### resetAnimation() ###
 
-### getFrameIndex ###
+### getFrameIndex(aWhichFrame) ###
 
-### getOrientation ###
+### getOrientation() ###
 
-### getFirstFrameDelay ###
+### getFirstFrameDelay() ###
 
-### setAnimationStartTime ###
+### setAnimationStartTime(aTime) ###
 
-### getImageSpaceInvalidationRect ###
+### getImageSpaceInvalidationRect(aRect) ###
 
-### unwrap ###
+### unwrap() ###
 
 ## Attributes ##
 

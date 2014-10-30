@@ -12,7 +12,7 @@ This interface must be used only from the XPCOM main thread.
 
 ## Methods ##
 
-### setPrivate ###
+### setPrivate(aPrivate) ###
   
 Determine whether the channel is tied to a private browsing window.  
   
@@ -35,7 +35,7 @@ or notificationCallbacks are set after setPrivate has been called.
 @param aPrivate whether the channel should be opened in private mode.  
   
 
-### isPrivateModeOverriden ###
+### isPrivateModeOverriden(aValue) ###
 
 ## Attributes ##
 

@@ -19,7 +19,7 @@ The agent will invoke a callback to notify Gecko components of
 
 ## Methods ##
 
-### init ###
+### init(window, channelType, callback) ###
   
 Initialize the agent with a channel type.  
 Note: This function should only be called once.  
@@ -37,7 +37,7 @@ Note: This function should only be called once.
       object.  
   
 
-### initWithWeakCallback ###
+### initWithWeakCallback(window, channelType, callback) ###
   
 This method is just like init(), except the audio channel agent keeps a  
 weak reference to the callback object.  
@@ -46,7 +46,7 @@ In order for this to work, |callback| must implement
 nsISupportsWeakReference.  
   
 
-### initWithVideo ###
+### initWithVideo(window, channelType, callback, weak) ###
   
 This method is just like init(), and specify the channel is associated  
 with video.  
@@ -55,7 +55,7 @@ with video.
    true if weak reference should be hold.  
   
 
-### startPlaying ###
+### startPlaying() ###
   
 Notify the agent that we want to start playing.  
 Note: Gecko component SHOULD call this function first then start to  
@@ -71,7 +71,7 @@ Note: Gecko component SHOULD call this function first then start to
          component should start playback as well as reducing the volume.  
   
 
-### stopPlaying ###
+### stopPlaying() ###
   
 Notify the agent we no longer want to play.  
   
@@ -81,7 +81,7 @@ Note : even if startPlaying() returned false, the agent would still be
        channel service.  
   
 
-### setVisibilityState ###
+### setVisibilityState(visible) ###
   
 Notify the agent of the visibility state of the window using this agent.  
 @param visible  

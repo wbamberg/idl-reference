@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### ConvertUTF32ToEntity ###
+### ConvertUTF32ToEntity(character, entityVersion) ###
 
-### ConvertToEntity ###
+### ConvertToEntity(character, entityVersion) ###
 
-### ConvertToEntities ###
+### ConvertToEntities(inString, entityVersion) ###
 
 ## Constants ##
 

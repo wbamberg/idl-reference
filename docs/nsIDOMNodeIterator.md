@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### nextNode ###
+### nextNode() ###
 
-### previousNode ###
+### previousNode() ###
 
-### detach ###
+### detach() ###
 
 ## Attributes ##
 

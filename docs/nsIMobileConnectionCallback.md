@@ -6,32 +6,32 @@ layout: default
 
 ## Methods ##
 
-### notifySuccess ###
+### notifySuccess() ###
   
 notify*Success*() will be called, when request is succeed.  
   
 
-### notifySuccessWithString ###
+### notifySuccessWithString(result) ###
 
-### notifySuccessWithBoolean ###
+### notifySuccessWithBoolean(result) ###
 
-### notifyGetNetworksSuccess ###
+### notifyGetNetworksSuccess(count, networks) ###
 
-### notifySendCancelMmiSuccess ###
+### notifySendCancelMmiSuccess(aServiceCode, aStatusMessage) ###
 
-### notifySendCancelMmiSuccessWithInteger ###
+### notifySendCancelMmiSuccessWithInteger(aServiceCode, aStatusMessage, aAdditionalInformation) ###
 
-### notifySendCancelMmiSuccessWithStrings ###
+### notifySendCancelMmiSuccessWithStrings(aServiceCode, aStatusMessage, aLength, aAdditionalInformation) ###
 
-### notifySendCancelMmiSuccessWithCallForwardingOptions ###
+### notifySendCancelMmiSuccessWithCallForwardingOptions(aServiceCode, aStatusMessage, aLength, aAdditionalInformation) ###
 
-### notifyGetCallForwardingSuccess ###
+### notifyGetCallForwardingSuccess(count, results) ###
 
-### notifyGetCallBarringSuccess ###
+### notifyGetCallBarringSuccess(program, enabled, serviceClass) ###
 
-### notifyGetClirStatusSuccess ###
+### notifyGetClirStatusSuccess(n, m) ###
 
-### notifyError ###
+### notifyError(name, message, serviceCode, additionalInformation) ###
   
 notifyError() will be called, when request is failed.  
   

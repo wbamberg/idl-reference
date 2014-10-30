@@ -9,7 +9,7 @@ nsIIOService2 extends nsIIOService
 
 ## Methods ##
 
-### newChannelFromURIWithProxyFlags2 ###
+### newChannelFromURIWithProxyFlags2(aURI, aProxyURI, aProxyFlags, aLoadingNode, aLoadingPrincipal, aTriggeringPrincipal, aSecurityFlags, aContentPolicyType) ###
   
 Creates a channel for a given URI.  
   
@@ -21,7 +21,7 @@ Creates a channel for a given URI.
 @return reference to the new nsIChannel object  
   
 
-### newChannelFromURIWithProxyFlags ###
+### newChannelFromURIWithProxyFlags(aURI, aProxyURI, aProxyFlags) ###
   
 Creates a channel for a given URI.  
   

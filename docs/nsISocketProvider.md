@@ -9,7 +9,7 @@ nsISocketProvider
 
 ## Methods ##
 
-### newSocket ###
+### newSocket(aFamily, aHost, aPort, aProxyHost, aProxyPort, aFlags, aFileDesc, aSecurityInfo) ###
   
 newSocket  
   
@@ -32,7 +32,7 @@ newSocket
        object typically implements nsITransportSecurityInfo.  
   
 
-### addToSocket ###
+### addToSocket(aFamily, aHost, aPort, aProxyHost, aProxyPort, aFlags, aFileDesc, aSecurityInfo) ###
   
 addToSocket  
   

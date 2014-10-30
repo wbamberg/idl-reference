@@ -11,7 +11,7 @@ node or a leaf.
 
 ## Methods ##
 
-### nameEquals ###
+### nameEquals(name) ###
   
 Compares the provided name against the item's name and  
 returns the appropriate result.  
@@ -20,28 +20,28 @@ returns the appropriate result.
         <CODE>PR_FALSE</CODE> otherwise.  
   
 
-### ItemType ###
+### ItemType() ###
 
-### findItemWithName ###
+### findItemWithName(name, aRequestor, aOriginalRequestor) ###
 
-### setTreeOwner ###
+### setTreeOwner(treeOwner) ###
 
-### addChild ###
+### addChild(child) ###
 
-### removeChild ###
+### removeChild(child) ###
 
-### getChildAt ###
+### getChildAt(index) ###
   
 Return the child at the index requested.  This is 0-based.  
   
 @throws NS_ERROR_UNEXPECTED if the index is out of range  
   
 
-### findChildWithName ###
+### findChildWithName(aName, aRecurse, aSameType, aRequestor, aOriginalRequestor) ###
 
-### getDocument ###
+### getDocument() ###
 
-### getWindow ###
+### getWindow() ###
 
 ## Attributes ##
 

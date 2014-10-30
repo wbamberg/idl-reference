@@ -10,7 +10,7 @@ a output stream.
 
 ## Methods ##
 
-### init ###
+### init(aSink, aObserver) ###
   
 Initialize the simple stream listener.  
   

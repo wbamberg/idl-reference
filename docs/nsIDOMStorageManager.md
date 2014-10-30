@@ -11,13 +11,13 @@ resp. sessionStorage with "@mozilla.org/dom/localStorage-manager;1" resp.
 
 ## Methods ##
 
-### precacheStorage ###
+### precacheStorage(aPrincipal) ###
   
 This starts async preloading of a storage cache for scope  
 defined by the principal.  
   
 
-### createStorage ###
+### createStorage(aWindow, aPrincipal, aDocumentURI, aPrivate) ###
   
 Returns instance of DOM storage object for given principal.  
 A new object is always returned and it is ensured there is  
@@ -33,7 +33,7 @@ a storage for the scope created.
    Whether the demanding document is running in Private Browsing mode or not.  
   
 
-### getStorage ###
+### getStorage(aWindow, aPrincipal, aPrivate) ###
   
 Returns instance of DOM storage object for given principal.  
 If there is no storage managed for the scope, then null is returned and  
@@ -48,7 +48,7 @@ scope is returned.
    Whether the demanding document is running in Private Browsing mode or not.  
   
 
-### cloneStorage ###
+### cloneStorage(aStorageToCloneFrom) ###
   
 Clones given storage into this storage manager.  
   
@@ -59,7 +59,7 @@ Clones given storage into this storage manager.
    not affect the original storage content we cloned from and vice versa.  
   
 
-### checkStorage ###
+### checkStorage(aPrincipal, aStorage) ###
   
 Returns true if the storage belongs to the given principal and is managed  
 (i.e. has been created and is cached) by this storage manager.  
@@ -75,7 +75,7 @@ Returns true if the storage belongs to the given principal and is managed
    false otherwise  
   
 
-### getLocalStorageForPrincipal ###
+### getLocalStorageForPrincipal(aPrincipal, aDocumentURI, aPrivate) ###
   
 @deprecated  
   

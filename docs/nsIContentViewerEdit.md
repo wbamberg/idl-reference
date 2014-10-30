@@ -6,17 +6,17 @@ layout: default
 
 ## Methods ##
 
-### clearSelection ###
+### clearSelection() ###
 
-### selectAll ###
+### selectAll() ###
 
-### copySelection ###
+### copySelection() ###
 
-### copyLinkLocation ###
+### copyLinkLocation() ###
 
-### copyImage ###
+### copyImage(aCopyFlags) ###
 
-### getContents ###
+### getContents(aMimeType, aSelectionOnly) ###
 
 ## Attributes ##
 

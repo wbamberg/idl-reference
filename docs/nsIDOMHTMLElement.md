@@ -17,15 +17,15 @@ http://www.whatwg.org/specs/web-apps/current-work/
 
 ## Methods ##
 
-### click ###
+### click() ###
 
-### focus ###
+### focus() ###
 
-### blur ###
+### blur() ###
 
-### insertAdjacentHTML ###
+### insertAdjacentHTML(position, text) ###
 
-### scrollIntoView ###
+### scrollIntoView(top) ###
 
 ## Attributes ##
 

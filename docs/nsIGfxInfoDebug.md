@@ -6,10 +6,10 @@ layout: default
 
 ## Methods ##
 
-### spoofVendorID ###
+### spoofVendorID(aVendorID) ###
 
-### spoofDeviceID ###
+### spoofDeviceID(aDeviceID) ###
 
-### spoofDriverVersion ###
+### spoofDriverVersion(aDriverVersion) ###
 
-### spoofOSVersion ###
+### spoofOSVersion(aVersion) ###

@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### start ###
+### start() ###
 
-### enable ###
+### enable() ###
 
-### stop ###
+### stop() ###
 
-### quit ###
+### quit() ###
 
-### onLastWindowClosing ###
+### onLastWindowClosing() ###
 
-### ReOpen ###
+### ReOpen() ###

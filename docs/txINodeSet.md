@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### item ###
+### item(index) ###
 
-### itemAsNumber ###
+### itemAsNumber(index) ###
 
-### itemAsString ###
+### itemAsString(index) ###
 
-### add ###
+### add(node) ###
 
 ## Attributes ##
 

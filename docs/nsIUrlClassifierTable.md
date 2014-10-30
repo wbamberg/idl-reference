@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### exists ###
+### exists(key, cb) ###
   
 In the simple case, exists just looks up the string in the  
 table and call the callback after the query returns with true or  

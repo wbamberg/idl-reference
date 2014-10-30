@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### downloadDone ###
+### downloadDone(aSource, aTarget, aContentType, aIsPrivate) ###
   
 Perform platform specific operations when a download is done.  
   
@@ -32,7 +32,7 @@ Perform platform specific operations when a download is done.
 @return none  
   
 
-### mapUrlToZone ###
+### mapUrlToZone(aURL) ###
   
 Proxy for IInternetSecurityManager::MapUrlToZone().  
   

@@ -10,7 +10,7 @@ interface, the profile lock is released.
 
 ## Methods ##
 
-### unlock ###
+### unlock() ###
   
 Unlock the profile.  
   

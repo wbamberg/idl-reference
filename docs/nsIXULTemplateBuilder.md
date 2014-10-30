@@ -112,7 +112,7 @@ See http://wiki.mozilla.org/XUL:Templates_Plan for details about templates.
 
 ## Methods ##
 
-### rebuild ###
+### rebuild() ###
   
 Force the template builder to rebuild its content. All existing content  
 will be removed first. The query processor's done() method will be  
@@ -121,7 +121,7 @@ when the content is to be regenerated.
   
   
 
-### refresh ###
+### refresh() ###
   
 Reload any of our RDF datasources that support nsIRDFRemoteDatasource.   
   
@@ -130,7 +130,7 @@ Reload any of our RDF datasources that support nsIRDFRemoteDatasource.
       this will no longer be necessary.  
   
 
-### addResult ###
+### addResult(aResult, aQueryNode) ###
   
 Inform the template builder that a new result is available. The builder  
 will add this result to the set of results. The query node that the  
@@ -147,7 +147,7 @@ matches.
 @throws NS_ERROR_NULL_POINTER if aResult or aQueryNode are null  
   
 
-### removeResult ###
+### removeResult(aResult) ###
   
 Inform the template builder that a result no longer applies. The builder  
 will call the remove content generated for the result, if any. If a different  
@@ -159,7 +159,7 @@ method will have no effect if the result isn't known to the builder.
 @throws NS_ERROR_NULL_POINTER if aResult is null  
   
 
-### replaceResult ###
+### replaceResult(aOldResult, aNewResult, aQueryNode) ###
   
 Inform the template builder that one result should be replaced with  
 another. Both the old result (aOldResult) and the new result  
@@ -177,7 +177,7 @@ removeResult for the old result and addResult for the new result.
         NS_ERROR_INVALID_ARG if the ids don't match  
   
 
-### resultBindingChanged ###
+### resultBindingChanged(aResult) ###
   
 Inform the template builder that one or more of the optional bindings  
 for a result has changed. In this case, the rules are not reapplied as  
@@ -189,7 +189,7 @@ resynchronize any variables that are referenced in the action body.
 @throws NS_ERROR_NULL_POINTER if aResult is null  
   
 
-### getResultForId ###
+### getResultForId(aId) ###
   
 Return the result for a given id. Only one such result is returned and  
 is always the result with that id associated with the active match.  
@@ -198,7 +198,7 @@ This method will return null is there is no result for the id.
 @param aId the id to return the result for  
   
 
-### getResultForContent ###
+### getResultForContent(aElement) ###
   
 Retrieve the result corresponding to a generated element, or null is  
 there isn't one.  
@@ -206,7 +206,7 @@ there isn't one.
 @param aContent element to result the result of  
   
 
-### hasGeneratedContent ###
+### hasGeneratedContent(aNode, aTag) ###
   
 Returns true if the node has content generated for it. This method is  
 intended to be called only by the RDF query processor. If aTag is set,  
@@ -217,7 +217,7 @@ for builders that don't generate real DOM content.
 @param aTag tag that must match  
   
 
-### addRuleFilter ###
+### addRuleFilter(aRule, aFilter) ###
   
 Adds a rule filter for a given rule, which may be used for specialized  
 rule filtering. Any existing filter on the rule is removed. The default  
@@ -230,7 +230,7 @@ rejected.
 @param aFilter the filter to add  
   
 
-### init ###
+### init(aElement) ###
   
 Called to initialize a XUL content builder on a particular root  
 element. This element presumably has a ``datasources''  
@@ -238,7 +238,7 @@ attribute, which the builder will parse to set up the template
 builder's datasources.  
   
 
-### createContents ###
+### createContents(aElement, aForceCreation) ###
   
 Invoked lazily by a XUL element that needs its child content built.  
 If aForceCreation is true, then the contents of an element will be  
@@ -246,13 +246,13 @@ generated even if it is closed. If false, the element will only
 generate its contents if it is open. This behaviour is used with menus.  
   
 
-### addListener ###
+### addListener(aListener) ###
   
 Add a listener to this template builder. The template builder  
 holds a strong reference to the listener.  
   
 
-### removeListener ###
+### removeListener(aListener) ###
   
 Remove a listener from this template builder.  
   

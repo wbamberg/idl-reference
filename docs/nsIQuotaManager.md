@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getUsageForURI ###
+### getUsageForURI(aURI, aCallback, aAppId, aInMozBrowserOnly) ###
   
 Schedules an asynchronous callback that will return the total amount of  
 disk space being used by storages for the given origin.  
@@ -17,7 +17,7 @@ disk space being used by storages for the given origin.
        The callback that will be called when the usage is available.  
   
 
-### clear ###
+### clear() ###
   
 Removes all storages. The files may not be deleted immediately depending  
 on prohibitive concurrent operations.  
@@ -27,7 +27,7 @@ If the dom.quotaManager.testing preference is not true the call will be
 a no-op.  
   
 
-### clearStoragesForURI ###
+### clearStoragesForURI(aURI, aAppId, aInMozBrowserOnly, aPersistenceType) ###
   
 Removes all storages stored for the given URI. The files may not be  
 deleted immediately depending on prohibitive concurrent operations.  
@@ -36,7 +36,7 @@ deleted immediately depending on prohibitive concurrent operations.
        The URI whose storages are to be cleared.  
   
 
-### reset ###
+### reset() ###
   
 Resets quota and storage management. This can be used to force  
 reinitialization of the temp storage, for example when the pref for  

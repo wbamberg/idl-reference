@@ -11,4 +11,4 @@ Configuration interface for the Secret Decoder Ring
 
 ## Methods ##
 
-### setWindow ###
+### setWindow(w) ###

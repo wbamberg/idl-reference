@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onRedirectVerifyCallback ###
+### onRedirectVerifyCallback(result) ###
   
 Complement to nsIChannelEventSink asynchronous callback. The result of  
 the redirect decision is passed through this callback.  

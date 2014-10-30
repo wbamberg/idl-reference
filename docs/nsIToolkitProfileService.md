@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getProfileByName ###
+### getProfileByName(aName) ###
   
 Get a profile by name. This is mainly for use by the -P  
 commandline flag.  
@@ -14,13 +14,13 @@ commandline flag.
 @param aName The profile name to find.  
   
 
-### lockProfilePath ###
+### lockProfilePath(aDirectory, aTempDirectory) ###
   
 Lock an arbitrary path as a profile. If the path does not exist, it  
 will be created and the defaults copied from the application directory.  
   
 
-### createProfile ###
+### createProfile(aRootDir, aName) ###
   
 Create a new profile.  
   
@@ -34,7 +34,7 @@ profile directory is located.
        The profile name.  
   
 
-### createDefaultProfileForApp ###
+### createDefaultProfileForApp(aProfileName, aAppName, aVendorName, aProfileDefaultsDir) ###
   
 Create the default profile for an application.  
   
@@ -60,7 +60,7 @@ new profile directory.
 @return The created profile.  
   
 
-### flush ###
+### flush() ###
   
 Flush the profiles list file.  
   

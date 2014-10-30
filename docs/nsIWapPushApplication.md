@@ -9,7 +9,7 @@ Handle WAP Push notifications.
 
 ## Methods ##
 
-### receiveWapPush ###
+### receiveWapPush(aData, aLength, aOffset, aOptions) ###
   
 Receive WAP Push message.  
   

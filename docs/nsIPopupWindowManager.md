@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### testPermission ###
+### testPermission(principal) ###
   
 Test whether a website has permission to show a popup window.  
 @param   principal is the principal to be tested  

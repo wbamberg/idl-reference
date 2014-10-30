@@ -6,18 +6,18 @@ layout: default
 
 ## Methods ##
 
-### createHiddenWindow ###
+### createHiddenWindow() ###
   
 Create the hidden window.  
   
 
-### destroyHiddenWindow ###
+### destroyHiddenWindow() ###
   
 Destroys the hidden window. This will have no effect if the hidden window  
 has not yet been created.  
   
 
-### run ###
+### run() ###
   
 Runs an application event loop: normally the main event pump which  
 defines the lifetime of the application. If there are no windows open  
@@ -39,7 +39,7 @@ method will exit immediately.
             quit was called with the eRestartNotSameProfile flag.  
   
 
-### enterLastWindowClosingSurvivalArea ###
+### enterLastWindowClosingSurvivalArea() ###
   
 There are situations where all application windows will be  
 closed but we don't want to take this as a signal to quit the  
@@ -47,9 +47,9 @@ app. Bracket the code where the last window could close with
 these.  
   
 
-### exitLastWindowClosingSurvivalArea ###
+### exitLastWindowClosingSurvivalArea() ###
 
-### restartInSafeMode ###
+### restartInSafeMode(aQuitMode) ###
   
 Restart the application in safe mode  
 @param aQuitMode  
@@ -57,7 +57,7 @@ Restart the application in safe mode
 @see nsIAppStartup::quit  
   
 
-### trackStartupCrashBegin ###
+### trackStartupCrashBegin() ###
   
 If the last startup crashed then increment a counter.  
 Set a flag so on next startup we can detect whether TrackStartupCrashEnd  
@@ -65,13 +65,13 @@ was called (and therefore the application crashed).
 @return whether safe mode is necessary  
   
 
-### trackStartupCrashEnd ###
+### trackStartupCrashEnd() ###
   
 We have succesfully started without crashing. Clear flags that were  
 tracking past crashes.  
   
 
-### quit ###
+### quit(aMode) ###
   
 Exit the event loop, and shut down the app.  
   
@@ -80,14 +80,14 @@ Exit the event loop, and shut down the app.
        constructed from the constants defined above.  
   
 
-### doneStartingUp ###
+### doneStartingUp() ###
   
 Mark the startup as completed.  
   
 Called at the end of startup by nsAppRunner.  
   
 
-### getStartupInfo ###
+### getStartupInfo() ###
    
 Returns an object with main, process, firstPaint, sessionRestored properties.  
 Properties may not be available depending on platform or application  

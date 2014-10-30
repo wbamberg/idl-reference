@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### acceptNode ###
+### acceptNode(n) ###
 
 ## Constants ##
 

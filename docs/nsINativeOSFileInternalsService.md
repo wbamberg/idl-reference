@@ -10,7 +10,7 @@ of OS.File.
 
 ## Methods ##
 
-### read ###
+### read(path, options, onSuccess, onError) ###
   
 Implementation of OS.File.read  
   

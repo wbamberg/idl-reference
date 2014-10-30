@@ -11,7 +11,7 @@ nsIKeygenThread
 
 ## Methods ##
 
-### startKeyGeneration ###
+### startKeyGeneration(observer) ###
   
 startKeyGeneration - run the thread  
   A user interface using this interface needs to  
@@ -26,7 +26,7 @@ startKeyGeneration - run the thread
   and subject.  
   
 
-### userCanceled ###
+### userCanceled(threadAlreadyClosedDialog) ###
   
 userCanceled - notify the thread  
   If the user canceled, the thread is no longer allowed to  

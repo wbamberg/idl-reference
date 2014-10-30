@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### newChannel ###
+### newChannel(aURI, aLoadInfo) ###
   
 Constructs a new channel for the about protocol module.   
   
@@ -14,14 +14,14 @@ Constructs a new channel for the about protocol module.
 @param aLoadInfo the loadinfo of the new channel  
   
 
-### getURIFlags ###
+### getURIFlags(aURI) ###
   
 A method to get the flags that apply to a given about: URI.  The URI  
 passed in is guaranteed to be one of the URIs that this module  
 registered to deal with.  
   
 
-### getIndexedDBOriginPostfix ###
+### getIndexedDBOriginPostfix(aURI) ###
   
 Returns the Indexed DB origin's postfix used for the given about: URI.  
 If the postfix returned is null then the URI's path (e.g. "home" for  

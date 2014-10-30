@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### createChromeWindow2 ###
+### createChromeWindow2(parent, chromeFlags, contextFlags, uri, aOpeningTab, cancel) ###
  Create a new window. Gecko will/may call this method, if made  
 available to it, to create new windows.  
 @param parent Parent window, if any. Null if not. The newly created  

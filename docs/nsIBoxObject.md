@@ -6,15 +6,15 @@ layout: default
 
 ## Methods ##
 
-### getPropertyAsSupports ###
+### getPropertyAsSupports(propertyName) ###
 
-### setPropertyAsSupports ###
+### setPropertyAsSupports(propertyName, value) ###
 
-### getProperty ###
+### getProperty(propertyName) ###
 
-### setProperty ###
+### setProperty(propertyName, propertyValue) ###
 
-### removeProperty ###
+### removeProperty(propertyName) ###
 
 ## Attributes ##
 

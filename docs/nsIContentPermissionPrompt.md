@@ -10,7 +10,7 @@ the UI prompts associated with geo position.
 
 ## Methods ##
 
-### prompt ###
+### prompt(request) ###
   
 Called when a request has been made to access  
 privileged content apis  

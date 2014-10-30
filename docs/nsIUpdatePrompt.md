@@ -10,13 +10,13 @@ notification UI to the user.
 
 ## Methods ##
 
-### checkForUpdates ###
+### checkForUpdates() ###
   
 Shows the application update checking user interface and checks if there  
 is an update available.  
   
 
-### showUpdateAvailable ###
+### showUpdateAvailable(update) ###
   
 Shows the application update available user interface advising that an  
 update is available for download and install. If the app.update.silent  
@@ -26,7 +26,7 @@ be a no-op.
          The nsIUpdate object to be downloaded and installed  
   
 
-### showUpdateDownloaded ###
+### showUpdateDownloaded(update, background) ###
   
 Shows the application update downloaded user interface advising that an  
 update has now been downloaded and a restart is necessary to complete the  
@@ -38,7 +38,7 @@ and the app.update.silent preference is true the call will be a no-op.
          Less obtrusive UI, starting with a non-modal notification alert  
   
 
-### showUpdateInstalled ###
+### showUpdateInstalled() ###
   
 Shows the application update installed user interface advising that an  
 update was installed successfully. If the app.update.silent preference is  
@@ -46,7 +46,7 @@ true, the app.update.showInstalledUI preference is false, or the user
 interface is already displayed the call will be a no-op.  
   
 
-### showUpdateError ###
+### showUpdateError(update) ###
   
 Shows the application update error user interface advising that an error  
 occurred while checking for or applying an update. If the app.update.silent  
@@ -58,7 +58,7 @@ preference is true the call will be a no-op.
          nsIUpdate object with the error information for the update check.  
   
 
-### showUpdateHistory ###
+### showUpdateHistory(parent) ###
   
 Shows a list of all updates installed to date.  
 @param   parent  

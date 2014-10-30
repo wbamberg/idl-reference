@@ -6,20 +6,20 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(executable) ###
   
 Initialises the process with an executable to be run. Call the run method  
 to run the executable.  
 @param executable The executable to run.  
   
 
-### kill ###
+### kill() ###
   
 Kills the running process. After exiting the process will either have  
 been killed or a failure will have been returned.  
   
 
-### run ###
+### run(blocking, args, count) ###
   
 Executes the file this object was initialized with  
 @param blocking   Whether to wait until the process terminates before  
@@ -29,7 +29,7 @@ returning or not.
 @param count      The length of the args array.  
   
 
-### runAsync ###
+### runAsync(args, count, observer, holdWeak) ###
   
 Executes the file this object was initialized with optionally calling  
 an observer after the process has finished running.  
@@ -43,7 +43,7 @@ an observer after the process has finished running.
 @param holdWeak   Whether to use a weak reference to hold the observer.  
   
 
-### runw ###
+### runw(blocking, args, count) ###
   
 Executes the file this object was initialized with  
 @param blocking   Whether to wait until the process terminates before  
@@ -52,7 +52,7 @@ returning or not.
 @param count      The length of the args array.  
   
 
-### runwAsync ###
+### runwAsync(args, count, observer, holdWeak) ###
   
 Executes the file this object was initialized with optionally calling  
 an observer after the process has finished running.  

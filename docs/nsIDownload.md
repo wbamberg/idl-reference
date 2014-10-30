@@ -18,26 +18,26 @@ Represents a download object.
 
 ## Methods ##
 
-### cancel ###
+### cancel() ###
   
 Cancel this download if it's currently in progress.  
   
 
-### pause ###
+### pause() ###
   
 Pause this download if it is in progress.  
   
 @throws NS_ERROR_UNEXPECTED if it cannot be paused.  
   
 
-### resume ###
+### resume() ###
   
 Resume this download if it is paused.  
   
 @throws NS_ERROR_UNEXPECTED if it cannot be resumed or is not paused.  
   
 
-### remove ###
+### remove() ###
   
 Instruct the download manager to remove this download. Whereas  
 cancel simply cancels the transfer, but retains information about it,  
@@ -47,7 +47,7 @@ remove removes all knowledge of it.
 @throws NS_ERROR_FAILURE if the download is active.  
   
 
-### retry ###
+### retry() ###
   
 Instruct the download manager to retry this failed download  
 @throws NS_ERROR_NOT_AVAILABLE if the download is not known.  

@@ -9,7 +9,7 @@ An interface for creating and locating nsIThread instances.
 
 ## Methods ##
 
-### newThread ###
+### newThread(creationFlags, stackSize) ###
   
 Create a new thread (a global, user PRThread).  
   
@@ -22,7 +22,7 @@ Create a new thread (a global, user PRThread).
   The newly created nsIThread object.  
   
 
-### getThreadFromPRThread ###
+### getThreadFromPRThread(prthread) ###
   
 Get the nsIThread object (if any) corresponding to the given PRThread.  
 This method returns null if there is no corresponding nsIThread.  

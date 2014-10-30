@@ -6,27 +6,27 @@ layout: default
 
 ## Methods ##
 
-### isNSSErrorCode ###
+### isNSSErrorCode(aNSPRCode) ###
   
  @param aNSPRCode An error code obtained using PR_GetError()  
  @return True if it is error code defined by the NSS library  
   
 
-### getXPCOMFromNSSError ###
+### getXPCOMFromNSSError(aNSPRCode) ###
   
  Function will fail if aNSPRCode is not an NSS error code.  
  @param aNSPRCode An error code obtained using PR_GetError()  
  @return The result of the conversion, an XPCOM error code  
   
 
-### getErrorMessage ###
+### getErrorMessage(aXPCOMErrorCode) ###
   
  Function will fail if aXPCOMErrorCode is not an NSS error code.  
  @param aXPCOMErrorCode An error code obtain using getXPCOMFromNSSError  
  return A localized human readable error explanation.  
   
 
-### getErrorClass ###
+### getErrorClass(aXPCOMErrorCode) ###
   
  Function will fail if aXPCOMErrorCode is not an NSS error code.  
  @param aXPCOMErrorCode An error code obtain using getXPCOMFromNSSError  

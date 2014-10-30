@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### append ###
+### append(name, value) ###

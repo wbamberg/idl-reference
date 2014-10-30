@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getClassObject ###
+### getClassObject(aClass, aIID, result) ###
   
 getClassObject  
   
@@ -16,7 +16,7 @@ CID aClass
 @param aClass The classid of the factory that is being requested  
   
 
-### getClassObjectByContractID ###
+### getClassObjectByContractID(aContractID, aIID, result) ###
   
 getClassObjectByContractID  
   
@@ -26,7 +26,7 @@ CID aClass
 @param aClass The classid of the factory that is being requested  
   
 
-### createInstance ###
+### createInstance(aClass, aDelegate, aIID, result) ###
   
 createInstance  
   
@@ -37,7 +37,7 @@ Create an instance of the CID aClass and return the interface aIID.
 @param aIID : IID of interface requested  
   
 
-### createInstanceByContractID ###
+### createInstanceByContractID(aContractID, aDelegate, aIID, result) ###
   
 createInstanceByContractID  
   
@@ -49,7 +49,7 @@ interface aIID.
 @param aIID : IID of interface requested  
   
 
-### addBootstrappedManifestLocation ###
+### addBootstrappedManifestLocation(aLocation) ###
   
 addBootstrappedManifestLocation  
   
@@ -59,7 +59,7 @@ Adds a bootstrapped manifest location on runtime.
                    or an XPI with it on the root.  
   
 
-### removeBootstrappedManifestLocation ###
+### removeBootstrappedManifestLocation(aLocation) ###
   
 removeBootstrappedManifestLocation  
   
@@ -69,7 +69,7 @@ Removes a bootstrapped manifest location on runtime.
                    or an XPI with it on the root.  
   
 
-### getManifestLocations ###
+### getManifestLocations() ###
   
 getManifestLocations  
   

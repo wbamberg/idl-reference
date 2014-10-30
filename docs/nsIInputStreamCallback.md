@@ -9,7 +9,7 @@ This is a companion interface for nsIAsyncInputStream::asyncWait.
 
 ## Methods ##
 
-### onInputStreamReady ###
+### onInputStreamReady(aStream) ###
   
 Called to indicate that the stream is either readable or closed.  
   

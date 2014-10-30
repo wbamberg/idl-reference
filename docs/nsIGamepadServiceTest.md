@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### addGamepad ###
+### addGamepad(id, mapping, numButtons, numAxes) ###
 
-### removeGamepad ###
+### removeGamepad(index) ###
 
-### newButtonEvent ###
+### newButtonEvent(index, button, pressed) ###
 
-### newAxisMoveEvent ###
+### newAxisMoveEvent(index, axis, value) ###
 
 ## Constants ##
 

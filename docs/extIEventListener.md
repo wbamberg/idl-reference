@@ -9,7 +9,7 @@ Interface used as a callback for listening to events.
 
 ## Methods ##
 
-### handleEvent ###
+### handleEvent(aEvent) ###
   
 This method is called whenever an event occurs of the type for which   
 the extIEventListener interface was registered.  

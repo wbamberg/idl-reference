@@ -10,7 +10,7 @@ keys and values stored on the entry.
 
 ## Methods ##
 
-### onMetaDataElement ###
+### onMetaDataElement(key, value) ###
   
 Called over each key / value pair.  
   

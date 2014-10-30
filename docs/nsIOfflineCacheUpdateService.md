@@ -6,16 +6,16 @@ layout: default
 
 ## Methods ##
 
-### getUpdate ###
+### getUpdate(index) ###
 
-### scheduleUpdate ###
+### scheduleUpdate(aManifestURI, aDocumentURI, aWindow) ###
   
 Schedule a cache update for a given offline manifest.  If an  
 existing update is scheduled or running, that update will be returned.  
 Otherwise a new update will be scheduled.  
   
 
-### scheduleAppUpdate ###
+### scheduleAppUpdate(aManifestURI, aDocumentURI, aAppID, aInBrowser, aProfileDir) ###
   
 Schedule a cache update for a given offline manifest using app cache  
 bound to the given appID+inBrowser flag.  If an existing update is  
@@ -23,13 +23,13 @@ scheduled or running, that update will be returned. Otherwise a new
 update will be scheduled.  
   
 
-### scheduleOnDocumentStop ###
+### scheduleOnDocumentStop(aManifestURI, aDocumentURI, aDocument) ###
   
 Schedule a cache update for a manifest when the document finishes  
 loading.  
   
 
-### checkForUpdate ###
+### checkForUpdate(aManifestURI, aAppID, aInBrowser, aObserver) ###
   
 Schedule a check to see if an update is available.  
   
@@ -42,7 +42,7 @@ For arguments see nsIOfflineCacheUpdate.initForUpdateCheck() method
 description.  
   
 
-### offlineAppAllowed ###
+### offlineAppAllowed(aPrincipal, aPrefBranch) ###
   
 Checks whether a principal should have access to the offline  
 cache.  
@@ -54,7 +54,7 @@ cache.
        the pref service will be used.  
   
 
-### offlineAppAllowedForURI ###
+### offlineAppAllowedForURI(aURI, aPrefBranch) ###
   
 Checks whether a document at the given URI should have access  
 to the offline cache.  
@@ -66,7 +66,7 @@ to the offline cache.
        the pref service will be used.  
   
 
-### allowOfflineApp ###
+### allowOfflineApp(aWindow, aPrincipal) ###
   
 Sets the "offline-app" permission for the principal.  
 In the single process model calls directly on permission manager.  

@@ -10,13 +10,13 @@ nsICryptoHash interface.
 
 ## Methods ##
 
-### init ###
+### init(aKey) ###
   
 Initialize a stream cipher.  
 @param aKey nsIKeyObject  
   
 
-### initWithIV ###
+### initWithIV(aKey, aIV, aIVLen) ###
   
 Initialize a stream cipher with an initialization vector.  
 @param aKey nsIKeyObject  
@@ -24,29 +24,29 @@ Initialize a stream cipher with an initialization vector.
 @param aIVLen the length of the initialization vector  
   
 
-### update ###
+### update(aData, aLen) ###
   
 Update from an array of bytes.  
   
 
-### updateFromStream ###
+### updateFromStream(aStream, aLen) ###
   
 Update from a stream.  
   
 
-### updateFromString ###
+### updateFromString(aInput) ###
   
 A more script friendly method (not in nsICryptoHash interface).  
   
 
-### finish ###
+### finish(aASCII) ###
   
 @param aASCII if true then the returned value is a base-64  
        encoded string.  if false, then the returned value is  
        binary data.  
   
 
-### discard ###
+### discard(aLen) ###
   
 Discard aLen bytes of the keystream.  
 These days 1536 is considered a decent amount to drop to get  

@@ -10,7 +10,7 @@ by the spell checker.
 
 ## Methods ##
 
-### getUtil ###
+### getUtil(language) ###
   
 Get a mozISpellI18NUtil interface that best matches the given language.  
   

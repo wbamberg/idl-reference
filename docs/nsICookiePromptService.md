@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### cookieDialog ###
+### cookieDialog(parent, cookie, hostname, cookiesFromHost, changingCookie, rememberDecision) ###
 
 ## Constants ##
 

@@ -9,7 +9,7 @@ layout: default
 
 ## Methods ##
 
-### getPref ###
+### getPref(aGroup, aName, aPrivacyContext, aCallback) ###
   
 Get a pref.  
   
@@ -40,7 +40,7 @@ We have a whitelist of values that can be read in such a way.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
-### setPref ###
+### setPref(aGroup, aName, aValue, aPrivacyContext) ###
   
 Set a pref.  
   
@@ -62,7 +62,7 @@ We have a whitelist of values that can be set in such a way.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
-### hasPref ###
+### hasPref(aGroup, aName, aContext) ###
   
 Check whether or not a pref exists.  
   
@@ -80,7 +80,7 @@ Check whether or not a pref exists.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
-### hasCachedPref ###
+### hasCachedPref(aGroup, aName, aContext) ###
   
 Check whether or not the value of a pref (or its non-existance) is cached.  
   
@@ -98,7 +98,7 @@ Check whether or not the value of a pref (or its non-existance) is cached.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
-### removePref ###
+### removePref(aGroup, aName, aContext) ###
   
 Remove a pref.  
   
@@ -116,7 +116,7 @@ Remove a pref.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
-### removeGroupedPrefs ###
+### removeGroupedPrefs(aContext) ###
   
 Remove all grouped prefs.  Useful for removing references to the sites  
 the user has visited when the user clears their private data.  
@@ -128,7 +128,7 @@ the user has visited when the user clears their private data.
                       window or channel.  
   
 
-### removePrefsByName ###
+### removePrefsByName(aName, aContext) ###
   
 Remove all prefs with the given name.  
   
@@ -141,7 +141,7 @@ Remove all prefs with the given name.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
-### getPrefs ###
+### getPrefs(aGroup, aContext) ###
   
 Get the prefs that apply to the given site.  
   
@@ -159,7 +159,7 @@ Get the prefs that apply to the given site.
 @throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
   
 
-### getPrefsByName ###
+### getPrefsByName(aName, aContext) ###
   
 Get the prefs with the given name.  
   
@@ -174,7 +174,7 @@ Get the prefs with the given name.
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
-### addObserver ###
+### addObserver(aName, aObserver) ###
   
 Add an observer.  
   
@@ -183,7 +183,7 @@ Add an observer.
 @param    aObserver   the observer to add  
   
 
-### removeObserver ###
+### removeObserver(aName, aObserver) ###
   
 Remove an observer.  
   

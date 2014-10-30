@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### decodeImage ###
+### decodeImage(aStream, aMimeType) ###
   
 decodeImage  
 Caller provides an input stream and mimetype. We read from the stream  
@@ -19,7 +19,7 @@ the resulting imgIContainer.
        Type of image in the stream.  
   
 
-### decodeImageData ###
+### decodeImageData(aStream, aMimeType, aContainer) ###
   
 decodeImageData  
 Caller provides an input stream and mimetype. We read from the stream  
@@ -39,7 +39,7 @@ new code should use |decodeImage|.
        |null|.  
   
 
-### encodeImage ###
+### encodeImage(aContainer, aMimeType, outputOptions) ###
   
 encodeImage  
 Caller provides an image container, and the mime type it should be  
@@ -53,7 +53,7 @@ encoded to. We return an input stream for the encoded image data.
        Encoder-specific output options.  
   
 
-### encodeScaledImage ###
+### encodeScaledImage(aContainer, aMimeType, aWidth, aHeight, outputOptions) ###
   
 encodeScaledImage  
 Caller provides an image container, and the mime type it should be  
@@ -71,7 +71,7 @@ The encoded image is scaled to the specified dimensions.
        Encoder-specific output options.  
   
 
-### getImgLoaderForDocument ###
+### getImgLoaderForDocument(doc) ###
   
 getImgLoaderForDocument  
 Retrieve an image loader that reflects the privacy status of the given  
@@ -81,7 +81,7 @@ document.
        A document. Must not be null.  
   
 
-### getImgCacheForDocument ###
+### getImgCacheForDocument(doc) ###
   
 getImgLoaderForDocument  
 Retrieve an image cache that reflects the privacy status of the given  
@@ -93,7 +93,7 @@ document.
        the current context in which a cache is desired.  
   
 
-### encodeCroppedImage ###
+### encodeCroppedImage(aContainer, aMimeType, aOffsetX, aOffsetY, aWidth, aHeight, outputOptions) ###
   
 encodeCroppedImage  
 Caller provides an image container, and the mime type it should be  
@@ -115,7 +115,7 @@ The given offset and size must not exceed the image bounds.
        Encoder-specific output options.  
   
 
-### createScriptedObserver ###
+### createScriptedObserver(aObserver) ###
   
 Create a wrapper around a scripted notification observer (ordinarily  
 imgINotificationObserver cannot be implemented from scripts).  

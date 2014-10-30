@@ -19,7 +19,7 @@ QueryInterface to nsIWebBrowserFindInFrames.
 
 ## Methods ##
 
-### findNext ###
+### findNext() ###
   
 findNext  
   

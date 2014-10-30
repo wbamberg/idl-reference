@@ -20,7 +20,7 @@ can get useful access to the referent, while it still exists.
 
 ## Methods ##
 
-### QueryReferent ###
+### QueryReferent(uuid, result) ###
   
 |QueryReferent| queries the referent, if it exists, and like |QueryInterface|, produces  
 an owning reference to the desired interface.  It is designed to look and act exactly  

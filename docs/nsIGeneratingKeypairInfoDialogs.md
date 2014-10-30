@@ -11,4 +11,4 @@ nsIGeneratingKeypairInfoDialogs
 
 ## Methods ##
 
-### displayGeneratingKeypairInfo ###
+### displayGeneratingKeypairInfo(ctx, runnable) ###

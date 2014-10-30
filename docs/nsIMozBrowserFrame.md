@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### disallowCreateFrameLoader ###
+### disallowCreateFrameLoader() ###
   
 Normally, a frame tries to create its frame loader when its src is  
 modified, or its contentWindow is accessed.  
@@ -21,9 +21,9 @@ disallowCreateFrameLoader twice without first calling allowFrameLoader.
 It's also an error to call either method if we already have a frame loader.  
   
 
-### allowCreateFrameLoader ###
+### allowCreateFrameLoader() ###
 
-### createRemoteFrameLoader ###
+### createRemoteFrameLoader(aTabParent) ###
   
 Create a remote (i.e., out-of-process) frame loader attached to the given  
 tab parent.  

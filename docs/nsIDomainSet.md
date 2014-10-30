@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### add ###
+### add(aDomain) ###
 
-### remove ###
+### remove(aDomain) ###
 
-### clear ###
+### clear() ###
 
-### contains ###
+### contains(aDomain) ###
 
-### containsSuperDomain ###
+### containsSuperDomain(aDomain) ###

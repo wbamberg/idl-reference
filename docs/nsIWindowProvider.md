@@ -14,7 +14,7 @@ to actually open a new window.
 
 ## Methods ##
 
-### provideWindow ###
+### provideWindow(aParent, aChromeFlags, aCalledFromJS, aPositionSpecified, aSizeSpecified, aURI, aName, aFeatures, aWindowIsNew) ###
   
 A method to request that this provider provide a window.  The window  
 returned need not to have the right name or parent set on it; setting  

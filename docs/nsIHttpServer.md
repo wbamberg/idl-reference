@@ -9,7 +9,7 @@ An interface which represents an HTTP server.
 
 ## Methods ##
 
-### start ###
+### start(port) ###
   
 Starts up this server, listening upon the given port.  
   
@@ -28,7 +28,7 @@ Starts up this server, listening upon the given port.
   called.  
   
 
-### stop ###
+### stop(callback) ###
   
 Shuts down this server if it is running (including the period of time after  
 stop() has been called but before the provided callback has been called).  
@@ -42,7 +42,7 @@ stop() has been called but before the provided callback has been called).
   if this server is not running  
   
 
-### registerFile ###
+### registerFile(path, file) ###
   
 Associates the local file represented by the string file with all requests  
 which match request.  
@@ -55,7 +55,7 @@ which match request.
   might exist; this file must exist for the lifetime of the server  
   
 
-### registerPathHandler ###
+### registerPathHandler(path, handler) ###
   
 Registers a custom path handler.  
   
@@ -73,7 +73,7 @@ Registers a custom path handler.
   if path does not begin with a "/"  
   
 
-### registerPrefixHandler ###
+### registerPrefixHandler(prefix, handler) ###
   
 Registers a custom prefix handler.  
   
@@ -91,7 +91,7 @@ Registers a custom prefix handler.
   if path does not begin with a "/" or does not end with a "/"  
   
 
-### registerErrorHandler ###
+### registerErrorHandler(code, handler) ###
   
 Registers a custom error page handler.  
   
@@ -110,7 +110,7 @@ Registers a custom error page handler.
   If the error handler handles HTTP 500 and throws, behavior is undefined.  
   
 
-### registerDirectory ###
+### registerDirectory(path, dir) ###
   
 Maps all requests to paths beneath path to the corresponding file beneath  
 dir.  
@@ -129,7 +129,7 @@ dir.
   does not begin with and end with a forward slash  
   
 
-### registerContentType ###
+### registerContentType(extension, type) ###
   
 Associates files with the given extension with the given Content-Type when  
 served by this server, in the absence of any file-specific information  
@@ -150,7 +150,7 @@ mapping, if one is present.
   generate this string from trusted data risk security vulnerabilities.  
   
 
-### setIndexHandler ###
+### setIndexHandler(handler) ###
   
 Sets the handler used to display the contents of a directory if  
 the directory contains no index page.  
@@ -165,39 +165,39 @@ the directory contains no index page.
   handler, under the key "directory".  
   
 
-### getState ###
+### getState(path, key) ###
   
 Retrieves the string associated with the given key in this, for the given  
 path's saved state.  All keys are initially associated with the empty  
 string.  
   
 
-### setState ###
+### setState(path, key, value) ###
   
 Sets the string associated with the given key in this, for the given path's  
 saved state.  
   
 
-### getSharedState ###
+### getSharedState(key) ###
   
 Retrieves the string associated with the given key in this, in  
 entire-server saved state.  All keys are initially associated with the  
 empty string.  
   
 
-### setSharedState ###
+### setSharedState(key, value) ###
   
 Sets the string associated with the given key in this, in entire-server  
 saved state.  
   
 
-### getObjectState ###
+### getObjectState(key) ###
   
 Retrieves the object associated with the given key in this in  
 object-valued saved state.  All keys are initially associated with null.  
   
 
-### setObjectState ###
+### setObjectState(key, value) ###
   
 Sets the object associated with the given key in this in object-valued  
 saved state.  The value may be null.  

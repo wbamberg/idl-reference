@@ -12,25 +12,25 @@ callback.update().
 
 ## Methods ##
 
-### startup ###
+### startup() ###
   
 Start up the provider.  This is called before any other  
 method.  may be called multiple times.  
   
 
-### watch ###
+### watch(callback) ###
   
 watch  
 When a location change is observed, notify the callback.  
   
 
-### shutdown ###
+### shutdown() ###
   
 shutdown  
 Shuts down the location device.  
   
 
-### setHighAccuracy ###
+### setHighAccuracy(enable) ###
   
 hint to provide to use any amount of power to provide a better result  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initWheelEvent ###
+### initWheelEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, buttonArg, relatedTargetArg, modifiersListArg, deltaXArg, deltaYArg, deltaZArg, deltaMode) ###
 
 ## Attributes ##
 

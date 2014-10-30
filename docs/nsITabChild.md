@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### sendRequestFocus ###
+### sendRequestFocus(canFocus) ###
 
 ## Attributes ##
 

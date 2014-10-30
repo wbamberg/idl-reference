@@ -12,41 +12,41 @@ to *_retval unless they want to return PR_FALSE.
 
 ## Methods ##
 
-### getScriptableFlags ###
+### getScriptableFlags() ###
 
-### preCreate ###
+### preCreate(nativeObj, cx, globalObj, parentObj) ###
 
-### create ###
+### create(wrapper, cx, obj) ###
 
-### postCreate ###
+### postCreate(wrapper, cx, obj) ###
 
-### postTransplant ###
+### postTransplant(wrapper, cx, obj) ###
 
-### addProperty ###
+### addProperty(wrapper, cx, obj, id, vp) ###
 
-### delProperty ###
+### delProperty(wrapper, cx, obj, id) ###
 
-### getProperty ###
+### getProperty(wrapper, cx, obj, id, vp) ###
 
-### setProperty ###
+### setProperty(wrapper, cx, obj, id, vp) ###
 
-### enumerate ###
+### enumerate(wrapper, cx, obj) ###
 
-### newEnumerate ###
+### newEnumerate(wrapper, cx, obj, enum_op, statep, idp) ###
 
-### newResolve ###
+### newResolve(wrapper, cx, obj, id, objp) ###
 
-### convert ###
+### convert(wrapper, cx, obj, type, vp) ###
 
-### finalize ###
+### finalize(wrapper, fop, obj) ###
 
-### call ###
+### call(wrapper, cx, obj, args) ###
 
-### construct ###
+### construct(wrapper, cx, obj, args) ###
 
-### hasInstance ###
+### hasInstance(wrapper, cx, obj, val, bp) ###
 
-### postCreatePrototype ###
+### postCreatePrototype(cx, proto) ###
 
 ## Attributes ##
 

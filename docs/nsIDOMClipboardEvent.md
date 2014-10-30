@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initClipboardEvent ###
+### initClipboardEvent(typeArg, canBubbleArg, cancelableArg, clipboardData) ###
 
 ## Attributes ##
 

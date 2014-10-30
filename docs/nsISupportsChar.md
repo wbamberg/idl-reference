@@ -10,7 +10,7 @@ Scriptable storage for single character values
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

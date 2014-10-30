@@ -9,7 +9,7 @@ A service used to sort the contents of a XUL widget.
 
 ## Methods ##
 
-### sort ###
+### sort(aNode, aSortKey, aSortHints) ###
   
 Sort the contents of the widget containing <code>aNode</code>  
 using <code>aSortKey</code> as the comparison key, and  

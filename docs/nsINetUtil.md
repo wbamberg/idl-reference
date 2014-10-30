@@ -9,7 +9,7 @@ nsINetUtil provides various network-related utility methods.
 
 ## Methods ##
 
-### parseContentType ###
+### parseContentType(aTypeHeader, aCharset, aHadCharset) ###
   
 Parse a content-type header and return the content type and  
 charset (if any).  
@@ -21,7 +21,7 @@ charset (if any).
 @return the MIME type specified in the header, in lower-case.  
   
 
-### protocolHasFlags ###
+### protocolHasFlags(aURI, aFlag) ###
   
 Test whether the given URI's handler has the given protocol flags.  
   
@@ -32,7 +32,7 @@ Test whether the given URI's handler has the given protocol flags.
         in aFlags.  
   
 
-### URIChainHasFlags ###
+### URIChainHasFlags(aURI, aFlags) ###
   
 Test whether the protocol handler for this URI or that for any of  
 its inner URIs has the given protocol flags.  This will QI aURI to  
@@ -45,7 +45,7 @@ nsINestedURI and walk the nested URI chain.
         in aFlags.  
   
 
-### toImmutableURI ###
+### toImmutableURI(aURI) ###
   
 Take aURI and produce an immutable version of it for the caller.  If aURI  
 is immutable this will be aURI itself; otherwise this will be a clone,  
@@ -53,19 +53,19 @@ marked immutable if possible.  Passing null to this method is allowed; in
 that case it will return null.  
   
 
-### newSimpleNestedURI ###
+### newSimpleNestedURI(aURI) ###
   
 Create a simple nested URI using the result of  
 toImmutableURI on the passed-in aURI which may not be null.  
 Note: The return URI will not have had its spec set yet.  
   
 
-### escapeString ###
+### escapeString(aString, aEscapeType) ###
   
 escape a string with %00-style escaping  
   
 
-### escapeURL ###
+### escapeURL(aStr, aFlags) ###
   
 %XX-Escape invalid chars in a URL segment.   
   
@@ -76,7 +76,7 @@ escape a string with %00-style escaping
   
   
 
-### unescapeString ###
+### unescapeString(aStr, aFlags) ###
   
 Expands URL escape sequences  
   
@@ -87,7 +87,7 @@ Expands URL escape sequences
 @return unescaped string  
   
 
-### extractCharsetFromContentType ###
+### extractCharsetFromContentType(aTypeHeader, aCharset, aCharsetStart, aCharsetEnd) ###
   
 Extract the charset parameter location and value from a content-type  
 header.  

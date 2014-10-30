@@ -16,7 +16,7 @@ This interface is accessible from javascript.
 
 ## Methods ##
 
-### getEntryAtIndex ###
+### getEntryAtIndex(index, modifyIndex) ###
   
 Called to obtain handle to the history entry at a  
 given index.  
@@ -33,7 +33,7 @@ given index.
                          history entry for the given index.  
   
 
-### PurgeHistory ###
+### PurgeHistory(numEntries) ###
   
 Called to purge older documents from history.  
 Documents can be removed from session history for various   
@@ -51,7 +51,7 @@ prior page loads etc...
                            
   
 
-### addSHistoryListener ###
+### addSHistoryListener(aListener) ###
   
 Called to register a listener for the session history component.  
 Listeners are notified when pages are loaded or purged from history.  
@@ -66,7 +66,7 @@ Listeners are notified when pages are loaded or purged from history.
 @see nsSupportsWeakReference  
   
 
-### removeSHistoryListener ###
+### removeSHistoryListener(aListener) ###
   
 Called to remove a listener for the session history component.  
 Listeners are notified when pages are loaded from history.  
@@ -80,9 +80,9 @@ Listeners are notified when pages are loaded from history.
 @see nsSupportsWeakReference  
   
 
-### reloadCurrentEntry ###
+### reloadCurrentEntry() ###
 
-### getIndexOfEntry ###
+### getIndexOfEntry(aEntry) ###
   
 Called to obtain the index to a given history entry.  
   

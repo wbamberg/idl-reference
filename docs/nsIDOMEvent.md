@@ -14,7 +14,7 @@ http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html
 
 ## Methods ##
 
-### stopPropagation ###
+### stopPropagation() ###
   
 The stopPropagation method is used prevent further propagation of an   
 event during event flow. If this method is called by any   
@@ -24,7 +24,7 @@ EventTarget before event flow stops. This method may be used during
 any stage of event flow.  
   
 
-### preventDefault ###
+### preventDefault() ###
   
 If an event is cancelable, the preventDefault method is used to   
 signify that the event is to be canceled, meaning any default action   
@@ -38,7 +38,7 @@ event's propagation. This method may be used during any stage of
 event flow.  
   
 
-### initEvent ###
+### initEvent(eventTypeArg, canBubbleArg, cancelableArg) ###
   
 The initEvent method is used to initialize the value of an Event   
 created through the DocumentEvent interface. This method may only be   
@@ -66,35 +66,35 @@ attributes are left unchanged.
                        action can be prevented.  
   
 
-### stopImmediatePropagation ###
+### stopImmediatePropagation() ###
   
 Prevents other event listeners from being triggered and,  
 unlike Event.stopPropagation() its effect is immediate.  
   
 
-### getPreventDefault ###
+### getPreventDefault() ###
   
 @deprecated Use nsIDOMEvent::defaultPrevented.  
 To be removed in bug 691151.  
   
 
-### duplicatePrivateData ###
+### duplicatePrivateData() ###
 
-### setTarget ###
+### setTarget(aTarget) ###
 
-### IsDispatchStopped ###
+### IsDispatchStopped() ###
 
-### GetInternalNSEvent ###
+### GetInternalNSEvent() ###
 
-### SetTrusted ###
+### SetTrusted(aTrusted) ###
 
-### Serialize ###
+### Serialize(aMsg, aSerializeInterfaceType) ###
 
-### Deserialize ###
+### Deserialize(aMsg, aIter) ###
 
-### SetOwner ###
+### SetOwner(aOwner) ###
 
-### InternalDOMEvent ###
+### InternalDOMEvent() ###
 
 ## Attributes ##
 

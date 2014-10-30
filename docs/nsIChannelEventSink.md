@@ -14,7 +14,7 @@ These methods are called before onStartRequest.
 
 ## Methods ##
 
-### asyncOnChannelRedirect ###
+### asyncOnChannelRedirect(oldChannel, newChannel, flags, callback) ###
   
 Called when a redirect occurs. This may happen due to an HTTP 3xx status  
 code. The purpose of this method is to notify the sink that a redirect  

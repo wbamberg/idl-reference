@@ -11,4 +11,4 @@ is native (and therefore suitable for use by untrusted content).
 
 ## Methods ##
 
-### ensureNative ###
+### ensureNative() ###

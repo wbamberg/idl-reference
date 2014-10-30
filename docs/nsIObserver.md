@@ -10,7 +10,7 @@ to observe an event corresponding to a topic.
 
 ## Methods ##
 
-### observe ###
+### observe(aSubject, aTopic, aData) ###
   
 Observe will be called when there is a notification for the  
 topic |aTopic|.  This assumes that the object implementing  

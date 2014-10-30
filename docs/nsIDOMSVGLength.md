@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### newValueSpecifiedUnits ###
+### newValueSpecifiedUnits(unitType, valueInSpecifiedUnits) ###
 
-### convertToSpecifiedUnits ###
+### convertToSpecifiedUnits(unitType) ###
 
 ## Attributes ##
 

@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### screenForRect ###
+### screenForRect(left, top, width, height) ###
 
-### screenForId ###
+### screenForId(id) ###
 
-### screenForNativeWidget ###
+### screenForNativeWidget(nativeWidget) ###
 
 ## Attributes ##
 

@@ -12,6 +12,6 @@ about the resulting user interface.
 
 ## Methods ##
 
-### promptAuth ###
+### promptAuth(aParent, aChannel, level, authInfo, checkboxLabel, checkValue) ###
 
-### asyncPromptAuth ###
+### asyncPromptAuth(aParent, aChannel, aCallback, aContext, level, authInfo, checkboxLabel, checkValue) ###

@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### start ###
+### start(listener) ###
 
-### shutdown ###
+### shutdown() ###
 
-### postMessage ###
+### postMessage(options) ###

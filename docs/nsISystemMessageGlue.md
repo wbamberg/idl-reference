@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### openApp ###
+### openApp(pageURL, manifestURL, type, target, showApp, onlyShowApp, extra) ###

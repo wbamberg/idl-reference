@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### onidle ###
+### onidle() ###
 
-### onactive ###
+### onactive() ###
 
 ## Attributes ##
 

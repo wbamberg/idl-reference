@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### shrinkToFit ###
+### shrinkToFit() ###
 
-### restoreImage ###
+### restoreImage() ###
 
-### restoreImageTo ###
+### restoreImageTo(x, y) ###
 
-### toggleImageSize ###
+### toggleImageSize() ###
 
 ## Attributes ##
 

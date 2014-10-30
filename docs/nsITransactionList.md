@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### itemIsBatch ###
+### itemIsBatch(aIndex) ###
   
 itemIsBatch() returns true if the item at aIndex is a batch. Note that  
 currently there is no requirement for a TransactionManager implementation  
@@ -17,7 +17,7 @@ getChildListForItem().
 @param aIndex The index of the item in the list.  
   
 
-### getItem ###
+### getItem(aIndex) ###
   
 getItem() returns the transaction at the given index in the list. Note that  
 a null can be returned here if the item is a batch. The transaction  
@@ -26,20 +26,20 @@ when it is done.
 @param aIndex The index of the item in the list.  
   
 
-### getData ###
+### getData(aIndex, aLength, aData) ###
   
 getData() returns the data (of type nsISupports array) associated with  
 the transaction list.  
   
 
-### getNumChildrenForItem ###
+### getNumChildrenForItem(aIndex) ###
   
 getNumChildrenForItem() returns the number of child (auto-aggreated)  
 transactions the item at aIndex has.  
 @param aIndex The index of the item in the list.  
   
 
-### getChildListForItem ###
+### getChildListForItem(aIndex) ###
   
 getChildListForItem() returns the list of children associated with the  
 item at aIndex. Implementations may return null if there are no children,  

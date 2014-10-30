@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getRelatedElement ###
+### getRelatedElement(aElement) ###
   
 Retrun an element associated with the given element. It's implemented  
 by container elements having relation between their items. For example,  

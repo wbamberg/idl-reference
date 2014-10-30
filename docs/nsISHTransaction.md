@@ -9,7 +9,7 @@ The nsISHTransaction.
 
 ## Methods ##
 
-### create ###
+### create(aSHEntry, aPrev) ###
   
 Create a transaction with parent and History Entry   
   

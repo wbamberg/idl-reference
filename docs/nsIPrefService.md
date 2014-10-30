@@ -15,7 +15,7 @@ of the preferences themselves.
 
 ## Methods ##
 
-### readUserPrefs ###
+### readUserPrefs(aFile) ###
   
 Called to read in the preferences specified in a user preference file.  
   
@@ -31,20 +31,20 @@ file(s) [prefs.js, user.js] will be read and processed.
 @see nsIFile  
   
 
-### resetPrefs ###
+### resetPrefs() ###
   
 Called to completely flush and re-initialize the preferences system.  
   
 @throws Error The preference service failed to restart correctly.  
   
 
-### resetUserPrefs ###
+### resetUserPrefs() ###
   
 Called to reset all preferences with user set values back to the  
 application default values.  
   
 
-### savePrefFile ###
+### savePrefFile(aFile) ###
   
 Called to write current preferences state to a file.  
   
@@ -60,7 +60,7 @@ written out to the current preferences file (usually prefs.js.)
 @see nsIFile  
   
 
-### getBranch ###
+### getBranch(aPrefRoot) ###
   
 Call to get a Preferences "Branch" which accesses user preference data.  
 Using a Set method on this object will always create or set a user  
@@ -80,7 +80,7 @@ returned if one exists, otherwise a default value will be returned.
 @see getDefaultBranch  
   
 
-### getDefaultBranch ###
+### getDefaultBranch(aPrefRoot) ###
   
 Call to get a Preferences "Branch" which accesses only the default   
 preference data. Using a Set method on this object will always create or  

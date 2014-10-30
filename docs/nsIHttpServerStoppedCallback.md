@@ -11,5 +11,5 @@ server may be received.
 
 ## Methods ##
 
-### onStopped ###
+### onStopped() ###
  Called when the corresponding server has been fully stopped. */  

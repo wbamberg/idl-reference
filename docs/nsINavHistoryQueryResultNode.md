@@ -13,7 +13,7 @@ to populate itself.
 
 ## Methods ##
 
-### getQueries ###
+### getQueries(queryCount, queries) ###
   
 Get the queries which build this node's children.  
 Only valid for RESULT_TYPE_QUERY nodes.  

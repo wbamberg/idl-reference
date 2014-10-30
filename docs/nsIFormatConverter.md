@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### getInputDataFlavors ###
+### getInputDataFlavors() ###
   
 Get the list of the "input" data flavors (mime types as nsISupportsCString),  
 in otherwords, the flavors that this converter can convert "from" (the   
 incoming data to the converter).  
   
 
-### getOutputDataFlavors ###
+### getOutputDataFlavors() ###
   
 Get the list of the "output" data flavors (mime types as nsISupportsCString),  
 in otherwords, the flavors that this converter can convert "to" (the   
@@ -22,7 +22,7 @@ outgoing data to the converter).
 @param  aDataFlavorList fills list with supported flavors  
   
 
-### canConvert ###
+### canConvert(aFromDataFlavor, aToDataFlavor) ###
   
 Determines whether a conversion from one flavor to another is supported  
   
@@ -30,7 +30,7 @@ Determines whether a conversion from one flavor to another is supported
 @param  aFromFormatConverter flavor to convert to  
   
 
-### convert ###
+### convert(aFromDataFlavor, aFromData, aDataLen, aToDataFlavor, aToData, aDataToLen) ###
   
 Converts from one flavor to another.  
   

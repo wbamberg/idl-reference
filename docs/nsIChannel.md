@@ -20,7 +20,7 @@ This interface must be used only from the XPCOM main thread.
 
 ## Methods ##
 
-### open ###
+### open() ###
   
 Synchronously open the channel.  
   
@@ -36,7 +36,7 @@ NOTE: Implementations should throw NS_ERROR_IN_PROGRESS if the channel
 is reopened.  
   
 
-### asyncOpen ###
+### asyncOpen(aListener, aContext) ###
   
 Asynchronously open this channel.  Data is fed to the specified stream  
 listener as it becomes available.  The stream listener's methods are  

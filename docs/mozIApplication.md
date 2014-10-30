@@ -10,9 +10,9 @@ sub-interface.
 
 ## Methods ##
 
-### hasPermission ###
+### hasPermission(permission) ###
 
-### hasWidgetPage ###
+### hasWidgetPage(pageURL) ###
   
  Return true if this app can be a widget and  
  its |widgetPages| contains |page|  

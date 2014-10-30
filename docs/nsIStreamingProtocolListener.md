@@ -9,7 +9,7 @@ nsIStreamingProtocolListener
 
 ## Methods ##
 
-### onMediaDataAvailable ###
+### onMediaDataAvailable(index, data, length, offset, meta) ###
   
 Called when the data may be read without blocking the calling thread.  
 @param index The track number of the media stream.  
@@ -20,14 +20,14 @@ Called when the data may be read without blocking the calling thread.
 @param meta The meta data of the frame.  
   
 
-### onConnected ###
+### onConnected(index, meta) ###
   
 Called when the meta data for a given session is available.  
 @param index The track number of the media stream.  
 @param meta The meta data of the media stream.  
   
 
-### onDisconnected ###
+### onDisconnected(index, reason) ###
   
 Called when the Rtsp session is closed.  
 @param index Track number of the media stream.  

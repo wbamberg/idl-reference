@@ -10,24 +10,24 @@ composition string.
 
 ## Methods ##
 
-### setString ###
+### setString(aString) ###
   
 Set composition string or committed string.  
   
 
-### appendClause ###
+### appendClause(aLength, aAttribute) ###
   
 Append a clause.  
   
 TODO: Should be able to specify custom clause style.  
   
 
-### setCaret ###
+### setCaret(aOffset, aLength) ###
   
 Set caret information.  
   
 
-### dispatchEvent ###
+### dispatchEvent() ###
   
 Synthesize composition string with given information by dispatching  
 a proper event.  

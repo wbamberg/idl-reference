@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onComplete ###
+### onComplete(aFaviconURI, aDataLen, aData, aMimeType) ###
   
 Called when the required favicon's information is available.  
   

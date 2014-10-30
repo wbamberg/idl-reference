@@ -9,7 +9,7 @@ To be implemented by @mozilla.org/dom/apps/inter-app-comm-ui-glue;1
 
 ## Methods ##
 
-### selectApps ###
+### selectApps(callerID, pubAppManifestURL, keyword, appsToSelect) ###
   
 This method is to notify the prompt to let the user select some of the  
 IAC-eligible apps.  

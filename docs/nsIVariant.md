@@ -13,57 +13,57 @@ JS type anyway.
 
 ## Methods ##
 
-### getAsInt8 ###
+### getAsInt8() ###
 
-### getAsInt16 ###
+### getAsInt16() ###
 
-### getAsInt32 ###
+### getAsInt32() ###
 
-### getAsInt64 ###
+### getAsInt64() ###
 
-### getAsUint8 ###
+### getAsUint8() ###
 
-### getAsUint16 ###
+### getAsUint16() ###
 
-### getAsUint32 ###
+### getAsUint32() ###
 
-### getAsUint64 ###
+### getAsUint64() ###
 
-### getAsFloat ###
+### getAsFloat() ###
 
-### getAsDouble ###
+### getAsDouble() ###
 
-### getAsBool ###
+### getAsBool() ###
 
-### getAsChar ###
+### getAsChar() ###
 
-### getAsWChar ###
+### getAsWChar() ###
 
-### getAsID ###
+### getAsID(retval) ###
 
-### getAsAString ###
+### getAsAString() ###
 
-### getAsDOMString ###
+### getAsDOMString() ###
 
-### getAsACString ###
+### getAsACString() ###
 
-### getAsAUTF8String ###
+### getAsAUTF8String() ###
 
-### getAsString ###
+### getAsString() ###
 
-### getAsWString ###
+### getAsWString() ###
 
-### getAsISupports ###
+### getAsISupports() ###
 
-### getAsJSVal ###
+### getAsJSVal() ###
 
-### getAsInterface ###
+### getAsInterface(iid, iface) ###
 
-### getAsArray ###
+### getAsArray(type, iid, count, ptr) ###
 
-### getAsStringWithSize ###
+### getAsStringWithSize(size, str) ###
 
-### getAsWStringWithSize ###
+### getAsWStringWithSize(size, str) ###
 
 ## Attributes ##
 

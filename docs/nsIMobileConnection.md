@@ -6,15 +6,15 @@ layout: default
 
 ## Methods ##
 
-### registerListener ###
+### registerListener(listener) ###
   
 Called when any one who is interested in receiving unsolicited messages  
 from this nsIMobileConnection instance.  
   
 
-### unregisterListener ###
+### unregisterListener(listener) ###
 
-### getSupportedNetworkTypes ###
+### getSupportedNetworkTypes(types, length) ###
   
 The network types supported by this radio.  
   
@@ -22,7 +22,7 @@ The network types supported by this radio.
         Possible values: 'gsm', 'wcdma', 'cdma', 'evdo', 'lte'.  
   
 
-### getNetworks ###
+### getNetworks(requestCallback) ###
   
 Search for available networks.  
   
@@ -37,7 +37,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### selectNetwork ###
+### selectNetwork(network, requestCallback) ###
   
 Manually selects the passed in network, overriding the radio's current  
 selection.  
@@ -54,7 +54,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### selectNetworkAutomatically ###
+### selectNetworkAutomatically(requestCallback) ###
   
 Tell the radio to automatically select a network.  
   
@@ -68,7 +68,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### setPreferredNetworkType ###
+### setPreferredNetworkType(type, requestCallback) ###
   
 Set preferred network type.  
   
@@ -88,7 +88,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.  
   
 
-### getPreferredNetworkType ###
+### getPreferredNetworkType(requestCallback) ###
   
 Query current preferred network type.  
   
@@ -106,7 +106,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### setRoamingPreference ###
+### setRoamingPreference(mode, requestCallback) ###
   
 Set roaming preference.  
   
@@ -123,7 +123,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.  
   
 
-### getRoamingPreference ###
+### getRoamingPreference(requestCallback) ###
   
 Query current roaming preference.  
   
@@ -139,7 +139,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### setVoicePrivacyMode ###
+### setVoicePrivacyMode(enabled, requestCallback) ###
   
 Set voice privacy preference.  
   
@@ -157,7 +157,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### getVoicePrivacyMode ###
+### getVoicePrivacyMode(requestCallback) ###
   
 Query current voice privacy mode.  
   
@@ -172,7 +172,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### sendMMI ###
+### sendMMI(mmi, requestCallback) ###
   
 Send a MMI message.  
   
@@ -188,7 +188,7 @@ result will contain the information about the mmi operation.
 Otherwise, the notifyError() will be called.  
   
 
-### cancelMMI ###
+### cancelMMI(requestCallback) ###
   
 Cancel the current MMI request if one exists.  
   
@@ -201,7 +201,7 @@ result will contain the information about the mmi operation.
 Otherwise, the notifyError() will be called.  
   
 
-### getCallForwarding ###
+### getCallForwarding(reason, requestCallback) ###
   
 Queries current call forwarding options.  
   
@@ -220,7 +220,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.  
   
 
-### setCallForwarding ###
+### setCallForwarding(action, reason, number, timeSeconds, serviceClass, requestCallback) ###
   
 Configures call forwarding options.  
   
@@ -245,7 +245,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.  
   
 
-### getCallBarring ###
+### getCallBarring(program, password, serviceClass, requestCallback) ###
   
 Queries current call barring status.  
   
@@ -267,7 +267,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.  
   
 
-### setCallBarring ###
+### setCallBarring(program, enabled, password, serviceClass, requestCallback) ###
   
 Configures call barring option.  
   
@@ -289,7 +289,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.  
   
 
-### changeCallBarringPassword ###
+### changeCallBarringPassword(pin, newPin, requestCallback) ###
   
 Change call barring facility password.  
   
@@ -307,7 +307,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.  
   
 
-### setCallWaiting ###
+### setCallWaiting(enabled, requestCallback) ###
   
 Configures call waiting options.  
   
@@ -323,7 +323,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### getCallWaiting ###
+### getCallWaiting(requestCallback) ###
   
 Queries current call waiting options.  
   
@@ -338,7 +338,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### setCallingLineIdRestriction ###
+### setCallingLineIdRestriction(clirMode, requestCallback) ###
   
 Enables or disables the presentation of the calling line identity (CLI) to  
 the called party when originating a call.  
@@ -355,7 +355,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'IllegalSIMorME', or 'GenericFailure'.  
   
 
-### getCallingLineIdRestriction ###
+### getCallingLineIdRestriction(requestCallback) ###
   
 Queries current CLIR status.  
   
@@ -371,7 +371,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### exitEmergencyCbMode ###
+### exitEmergencyCbMode(requestCallback) ###
   
 Exit emergency callback mode.  
   
@@ -385,7 +385,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'GenericFailure'.  
   
 
-### setRadioEnabled ###
+### setRadioEnabled(enabled, requestCallback) ###
   
 Set radio enabled/disabled.  
   
@@ -405,7 +405,7 @@ Note: Request is not available when radioState is null, 'enabling', or
 'InvalidStateError' error.  
   
 
-### getNeighboringCellIds ###
+### getNeighboringCellIds(callback) ###
   
 Request neighboring cell ids in GSM/UMTS network.  
   
@@ -414,7 +414,7 @@ Request neighboring cell ids in GSM/UMTS network.
        for details.  
   
 
-### getCellInfoList ###
+### getCellInfoList(callback) ###
   
 Request all of the current cell information known to the radio, including  
 neighboring cells.  

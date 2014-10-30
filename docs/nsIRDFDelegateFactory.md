@@ -14,7 +14,7 @@ nsIRDFResource::GetDelegate().
 
 ## Methods ##
 
-### CreateDelegate ###
+### CreateDelegate(aOuter, aKey, aIID, aResult) ###
   
 Create a delegate for the specified RDF resource.  
   

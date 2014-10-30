@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onComplete ###
+### onComplete(success, color) ###
   
 Will be called when color analysis finishes.  
   

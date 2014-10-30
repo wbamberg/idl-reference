@@ -24,11 +24,21 @@ class Attribute(object):
 class Method(object):
     def __init__(self, spec):
         self.name = spec.name
+        self.spec = spec
         self.doccomments = spec.doccomments
 
     def write(self, output):
-        md.writeH3(self.name, output)
+        md.writeH3(self.signature(), output)
         self.writeDoccomments(output)
+
+    def signature(self):
+        signature = self.name + "("
+        if len(self.spec.params) > 0:
+            signature += self.spec.params[0].name
+            for param in self.spec.params[1:]:
+                signature += ", " + param.name
+        signature += ")"
+        return signature
 
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:

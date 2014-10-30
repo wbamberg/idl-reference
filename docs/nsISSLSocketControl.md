@@ -6,15 +6,15 @@ layout: default
 
 ## Methods ##
 
-### proxyStartSSL ###
+### proxyStartSSL() ###
 
-### StartTLS ###
+### StartTLS() ###
 
-### setNPNList ###
+### setNPNList(aNPNList) ###
 
-### joinConnection ###
+### joinConnection(npnProtocol, hostname, port) ###
 
-### isAcceptableForHost ###
+### isAcceptableForHost(hostname) ###
 
 ## Attributes ##
 

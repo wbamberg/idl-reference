@@ -6,25 +6,25 @@ layout: default
 
 ## Methods ##
 
-### showInlineTableEditingUI ###
+### showInlineTableEditingUI(aCell) ###
   
 Shows inline table editing UI around a table cell  
 @param aCell [IN] a DOM Element being a table cell, td or th  
   
 
-### hideInlineTableEditingUI ###
+### hideInlineTableEditingUI() ###
   
 Hide all inline table editing UI  
   
 
-### doInlineTableEditingAction ###
+### doInlineTableEditingAction(aUIAnonymousElement) ###
   
 Modifies the table containing the selection according to the  
 activation of an inline table editing UI element  
 @param aUIAnonymousElement [IN] the inline table editing UI element  
   
 
-### refreshInlineTableEditingUI ###
+### refreshInlineTableEditingUI() ###
   
 Refresh already visible inline table editing UI  
   

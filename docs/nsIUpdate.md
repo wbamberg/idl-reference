@@ -16,7 +16,7 @@ about what is going on.
 
 ## Methods ##
 
-### getPatchAt ###
+### getPatchAt(index) ###
   
 Retrieves a patch.  
 @param   index  
@@ -24,7 +24,7 @@ Retrieves a patch.
 @returns The nsIUpdatePatch at the specified index.  
   
 
-### serialize ###
+### serialize(updates) ###
   
 Serializes this update object into a DOM Element  
 @param   updates  

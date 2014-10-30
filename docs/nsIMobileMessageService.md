@@ -6,10 +6,10 @@ layout: default
 
 ## Methods ##
 
-### createSmsMessage ###
+### createSmsMessage(id, threadId, iccId, delivery, deliveryStatus, sender, receiver, body, messageClass, timestamp, sentTimestamp, deliveryTimestamp, read) ###
 
-### createMmsMessage ###
+### createMmsMessage(id, threadId, iccId, delivery, deliveryInfo, sender, receivers, timestamp, sentTimestamp, read, subject, smil, attachments, expiryDate, readReportRequested) ###
 
-### createThread ###
+### createThread(id, participants, timestamp, lastMessageSubject, body, unreadCount, aLastMessageType) ###
 
-### createDeletedMessageInfo ###
+### createDeletedMessageInfo(messageIds, msgCount, threadIds, threadCount) ###

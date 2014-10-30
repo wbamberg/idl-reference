@@ -6,15 +6,15 @@ layout: default
 
 ## Methods ##
 
-### getBrowserTab ###
+### getBrowserTab(tabId) ###
 
-### getPreferences ###
+### getPreferences(requestId, prefNames, count) ###
 
-### observePreferences ###
+### observePreferences(requestId, prefNames, count) ###
 
-### removePreferenceObservers ###
+### removePreferenceObservers(requestId) ###
 
-### getUITelemetryObserver ###
+### getUITelemetryObserver() ###
 
 ## Attributes ##
 

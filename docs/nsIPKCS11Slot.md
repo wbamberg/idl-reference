@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getToken ###
+### getToken() ###
 
 ## Attributes ##
 

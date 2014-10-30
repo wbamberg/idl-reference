@@ -9,7 +9,7 @@ Manage network interfaces.
 
 ## Methods ##
 
-### registerNetworkInterface ###
+### registerNetworkInterface(network) ###
   
 Register the given network interface with the network manager.  
   
@@ -22,7 +22,7 @@ Throws if there's already an interface registered with the same network id.
        Network interface to register.  
   
 
-### updateNetworkInterface ###
+### updateNetworkInterface(network) ###
   
 Update the routes and DNSes according the state of the given network.  
   
@@ -36,7 +36,7 @@ registered.
        Network interface to update.  
   
 
-### unregisterNetworkInterface ###
+### unregisterNetworkInterface(network) ###
   
 Unregister the given network interface from the network manager.  
   
@@ -50,7 +50,7 @@ registered.
        Network interface to unregister.  
   
 
-### overrideActive ###
+### overrideActive(network) ###
   
 Override the default behaviour for preferredNetworkType and route  
 all network traffic through the the specified interface.  
@@ -63,7 +63,7 @@ the 'network-active-changed' observer notification.
        a previous override is canceled.  
   
 
-### setWifiTethering ###
+### setWifiTethering(enabled, networkInterface, config, callback) ###
   
 Enable or disable Wifi Tethering  
   
@@ -77,7 +77,7 @@ Enable or disable Wifi Tethering
        Callback function used to report status to WifiManager.  
   
 
-### addHostRoute ###
+### addHostRoute(network, host) ###
   
 Add host route to the specified network into routing table.  
   
@@ -91,7 +91,7 @@ Add host route to the specified network into routing table.
         resolved if added; rejected, otherwise.  
   
 
-### removeHostRoute ###
+### removeHostRoute(network, host) ###
   
 Remove host route to the specified network from routing table.  
   

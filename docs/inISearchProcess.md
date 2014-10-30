@@ -6,19 +6,19 @@ layout: default
 
 ## Methods ##
 
-### searchSync ###
+### searchSync() ###
 
-### searchAsync ###
+### searchAsync(aObserver) ###
 
-### searchStop ###
+### searchStop() ###
 
-### searchStep ###
+### searchStep() ###
 
-### getStringResultAt ###
+### getStringResultAt(aIndex) ###
 
-### getIntResultAt ###
+### getIntResultAt(aIndex) ###
 
-### getUIntResultAt ###
+### getUIntResultAt(aIndex) ###
 
 ## Attributes ##
 

@@ -11,11 +11,11 @@ nsITokenPasswordDialogs
 
 ## Methods ##
 
-### setPassword ###
+### setPassword(ctx, tokenName, canceled) ###
   
 setPassword - sets the password/PIN on the named token.  
   The canceled output value should be set to TRUE when  
   the user (or implementation) cancels the operation.  
   
 
-### getPassword ###
+### getPassword(ctx, tokenName, password, canceled) ###

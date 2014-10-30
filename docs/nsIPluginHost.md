@@ -6,19 +6,19 @@ layout: default
 
 ## Methods ##
 
-### reloadPlugins ###
+### reloadPlugins() ###
   
 Causes the plugins directory to be searched again for new plugin   
 libraries.  
   
 
-### getPluginTags ###
+### getPluginTags(aPluginCount, aResults) ###
 
-### clearSiteData ###
+### clearSiteData(plugin, domain, flags, maxAge) ###
 
-### siteHasData ###
+### siteHasData(plugin, domain) ###
 
-### registerPlayPreviewMimeType ###
+### registerPlayPreviewMimeType(mimeType, ignoreCTP, redirectURL) ###
   
 Registers the play preview plugin mode for specific mime type  
   
@@ -29,13 +29,13 @@ presence in the address bar.
 @param redirectURL: specifies url for the overlay iframe  
   
 
-### unregisterPlayPreviewMimeType ###
+### unregisterPlayPreviewMimeType(mimeType) ###
 
-### getPlayPreviewInfo ###
+### getPlayPreviewInfo(mimeType) ###
 
-### getPermissionStringForType ###
+### getPermissionStringForType(mimeType) ###
 
-### getPluginTagForType ###
+### getPluginTagForType(mimeType) ###
   
 Get the nsIPluginTag for this MIME type. This method works with both  
 enabled and disabled/blocklisted plugins, but an enabled plugin will  
@@ -45,12 +45,12 @@ always be returned if available.
         type.  
   
 
-### getStateForType ###
+### getStateForType(mimeType) ###
   
 Get the nsIPluginTag state for this MIME type.  
   
 
-### getBlocklistStateForType ###
+### getBlocklistStateForType(aMimeType) ###
   
 Get the blocklist state for a MIME type.  
   

@@ -15,7 +15,7 @@ and add support to addListBuild & removed items processing.
 
 ## Methods ##
 
-### equals ###
+### equals(item) ###
   
 Compare this item to another.  
   

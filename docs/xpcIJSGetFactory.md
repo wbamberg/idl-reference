@@ -10,4 +10,4 @@ functional interface type.
 
 ## Methods ##
 
-### get ###
+### get(aCID) ###

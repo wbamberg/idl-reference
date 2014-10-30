@@ -6,42 +6,42 @@ layout: default
 
 ## Methods ##
 
-### Equals ###
+### Equals(other) ###
 
-### IndexOf ###
+### IndexOf(aPossibleElement) ###
 
-### IndexOfStartingAt ###
+### IndexOfStartingAt(aPossibleElement, aStartIndex) ###
 
-### LastIndexOf ###
+### LastIndexOf(aPossibleElement) ###
 
-### GetIndexOf ###
+### GetIndexOf(aPossibleElement) ###
 
-### GetIndexOfStartingAt ###
+### GetIndexOfStartingAt(aPossibleElement, aStartIndex) ###
 
-### GetLastIndexOf ###
+### GetLastIndexOf(aPossibleElement) ###
 
-### InsertElementAt ###
+### InsertElementAt(aElement, aIndex) ###
 
-### ReplaceElementAt ###
+### ReplaceElementAt(aElement, aIndex) ###
 
-### RemoveElementAt ###
+### RemoveElementAt(aIndex) ###
 
-### RemoveLastElement ###
+### RemoveLastElement(aElement) ###
 
-### DeleteLastElement ###
+### DeleteLastElement(aElement) ###
 
-### DeleteElementAt ###
+### DeleteElementAt(aIndex) ###
 
-### AppendElements ###
+### AppendElements(aElements) ###
 
-### Compact ###
+### Compact() ###
 
-### clone ###
+### clone() ###
 
-### MoveElement ###
+### MoveElement(aFrom, aTo) ###
 
-### InsertElementsAt ###
+### InsertElementsAt(aOther, aIndex) ###
 
-### RemoveElementsAt ###
+### RemoveElementsAt(aIndex, aCount) ###
 
-### SizeTo ###
+### SizeTo(aSize) ###

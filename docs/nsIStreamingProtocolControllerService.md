@@ -9,4 +9,4 @@ Media stream controller Service API.
 
 ## Methods ##
 
-### create ###
+### create(channel) ###

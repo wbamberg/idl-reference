@@ -14,7 +14,7 @@ list of IP addresses.
 
 ## Methods ##
 
-### getNextAddr ###
+### getNextAddr(aPort) ###
   
 this function copies the value of the next IP address into the  
 given NetAddr struct and increments the internal address iterator.  
@@ -26,7 +26,7 @@ given NetAddr struct and increments the internal address iterator.
 the record.  
   
 
-### getScriptableNextAddr ###
+### getScriptableNextAddr(aPort) ###
   
 this function returns the value of the next IP address as a  
 scriptable address and increments the internal address iterator.  
@@ -38,7 +38,7 @@ scriptable address and increments the internal address iterator.
 the record.  
   
 
-### getNextAddrAsString ###
+### getNextAddrAsString() ###
   
 this function returns the value of the next IP address as a  
 string and increments the internal address iterator.  
@@ -47,18 +47,18 @@ string and increments the internal address iterator.
 the record.  
   
 
-### hasMore ###
+### hasMore() ###
   
 this function returns true if there is another address in the record.  
   
 
-### rewind ###
+### rewind() ###
   
 this function resets the internal address iterator to the first  
 address in the record.  
   
 
-### reportUnusable ###
+### reportUnusable(aPort) ###
   
 This function indicates that the last address obtained via getNextAddr*()  
 was not usuable and should be skipped in future uses of this  

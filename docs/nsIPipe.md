@@ -34,7 +34,7 @@ automatically closed when the respective pipe ends are released.
 
 ## Methods ##
 
-### init ###
+### init(nonBlockingInput, nonBlockingOutput, segmentSize, segmentCount) ###
   
 initialize this pipe  
   

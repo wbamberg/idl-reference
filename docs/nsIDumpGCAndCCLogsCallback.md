@@ -11,7 +11,7 @@ returns.
 
 ## Methods ##
 
-### onDump ###
+### onDump(aGCLog, aCCLog, aIsParent) ###
   
 Called whenever a process has successfully finished dumping its GC/CC logs.  
 Incomplete dumps (e.g., if the child crashes or is killed due to memory  
@@ -25,7 +25,7 @@ exhaustion) are not reported.
 parent process.  
   
 
-### onFinish ###
+### onFinish() ###
   
 Called when GC/CC logging has finished, after all calls to |onDump|.  
   

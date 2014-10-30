@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getMatchRoles ###
+### getMatchRoles(aRoles, aCount) ###
   
 Retrieve a list of roles that the traversal rule should test for. Any node  
 with a role not in this list will automatically be ignored. An empty list  
@@ -18,7 +18,7 @@ that would have no affect.
 @param aCount [out] the length of the array.  
   
 
-### match ###
+### match(aAccessible) ###
   
 Determines if a given accessible is to be accepted in our traversal rule  
   

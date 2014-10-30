@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### getStringFromName ###
+### getStringFromName(url, key) ###
   
 get the override value for a particular key in a particular  
 string bundle  
   
 
-### enumerateKeysInBundle ###
+### enumerateKeysInBundle(url) ###
   
 get all override keys for a given string bundle  
   

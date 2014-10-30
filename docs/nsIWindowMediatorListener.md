@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### onWindowTitleChange ###
+### onWindowTitleChange(window, newTitle) ###
 
-### onOpenWindow ###
+### onOpenWindow(window) ###
 
-### onCloseWindow ###
+### onCloseWindow(window) ###

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### setDnsResult ###
+### setDnsResult(error) ###
   
 Callback function used to report the result of setting DNS server.  
   

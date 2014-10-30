@@ -17,7 +17,7 @@ exception being thrown) or may simply be ignored.
 
 ## Methods ##
 
-### adjustPriority ###
+### adjustPriority(delta) ###
   
 This method adjusts the priority attribute by a given delta.  It helps  
 reduce the amount of coding required to increment or decrement the value  

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initialize ###
+### initialize() ###
   
 Initialize the component.  
   
@@ -18,7 +18,7 @@ returned promise is resolved or rejected.
 @rejects JavaScript exception.  
   
 
-### terminate ###
+### terminate() ###
   
 Ensures that all data has been written to disk and all files are closed.  
   
@@ -30,7 +30,7 @@ on shutdown is done by observers within the component.
 @rejects JavaScript exception.  
   
 
-### addLogin ###
+### addLogin(aLogin) ###
   
 Store a new login in the storage module.  
   
@@ -42,7 +42,7 @@ created. However, if the caller specifies non-default values, they will
 be used instead.  
   
 
-### removeLogin ###
+### removeLogin(aLogin) ###
   
 Remove a login from the storage module.  
   
@@ -53,7 +53,7 @@ The specified login must exactly match a stored login. However, the
 values of any nsILoginMetaInfo properties are ignored.  
   
 
-### modifyLogin ###
+### modifyLogin(oldLogin, newLoginData) ###
   
 Modify an existing login in the storage module.  
   
@@ -74,7 +74,7 @@ If the propertybag contains an item named "timesUsedIncrement", the
 login's timesUsed property will be incremented by the item's value.  
   
 
-### removeAllLogins ###
+### removeAllLogins() ###
   
 Remove all stored logins.  
   
@@ -84,7 +84,7 @@ login first (which might require knowing the master password).
   
   
 
-### getAllLogins ###
+### getAllLogins(count, logins) ###
   
 Fetch all logins in the login manager. An array is always returned;  
 if there are no logins the array is empty.  
@@ -100,7 +100,7 @@ NOTE: This can be called from JS as:
       (|logins| is an array).  
   
 
-### searchLogins ###
+### searchLogins(count, matchData, logins) ###
   
 Search for logins in the login manager. An array is always returned;  
 if there are no logins the array is empty.  
@@ -121,7 +121,7 @@ NOTE: This can be called from JS as:
       (|logins| is an array).  
   
 
-### getAllDisabledHosts ###
+### getAllDisabledHosts(count, hostnames) ###
   
 Obtain a list of all hosts for which password saving is disabled.  
   
@@ -136,7 +136,7 @@ NOTE: This can be called from JS as:
       var logins = pwmgr.getAllDisabledHosts();  
   
 
-### getLoginSavingEnabled ###
+### getLoginSavingEnabled(aHost) ###
   
 Check to see if saving logins has been disabled for a host.  
   
@@ -145,7 +145,7 @@ Check to see if saving logins has been disabled for a host.
        URL format, without a pathname. For example: "http://foo.com".  
   
 
-### setLoginSavingEnabled ###
+### setLoginSavingEnabled(aHost, isEnabled) ###
   
 Disable (or enable) storing logins for the specified host. When  
 disabled, the login manager will not prompt to store logins for  
@@ -159,7 +159,7 @@ that host. Existing logins are not affected.
        disabled (false)  
   
 
-### findLogins ###
+### findLogins(count, aHostname, aActionURL, aHttpRealm, logins) ###
   
 Search for logins matching the specified criteria. Called when looking  
 for logins that might be applicable to a form or authentication request.  
@@ -187,7 +187,7 @@ NOTE: This can be called from JS as:
   
   
 
-### countLogins ###
+### countLogins(aHostname, aActionURL, aHttpRealm) ###
   
 Search for logins matching the specified criteria, as with  
 findLogins(). This interface only returns the number of matching  

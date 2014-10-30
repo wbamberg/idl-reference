@@ -9,7 +9,7 @@ This interface is used to allow webpages to start installing add-ons.
 
 ## Methods ##
 
-### isInstallEnabled ###
+### isInstallEnabled(aMimetype, aReferer) ###
   
 Checks if installation is enabled for a webpage.  
   
@@ -20,7 +20,7 @@ Checks if installation is enabled for a webpage.
 @return true if installation is enabled  
   
 
-### installAddonsFromWebpage ###
+### installAddonsFromWebpage(aMimetype, aOriginator, aReferer, aUris, aHashes, aNames, aIcons, aCallback, aInstallCount) ###
   
 Installs an array of add-ons at the request of a webpage  
   

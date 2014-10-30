@@ -15,7 +15,7 @@ http://www.w3.org/TR/DOM-Level-2-Core/
 
 ## Methods ##
 
-### remove ###
+### remove() ###
 
 ## Attributes ##
 

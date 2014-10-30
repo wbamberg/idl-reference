@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aContext) ###
   
 Initializes a transferable object.  This should be called on all  
 transferable objects.  Failure to do so will result in fatal assertions in  
@@ -31,7 +31,7 @@ nsIDocument::GetLoadContext to get to the load context object.
        This can be set to null if a load context is not available.  
   
 
-### flavorsTransferableCanExport ###
+### flavorsTransferableCanExport() ###
   
 Computes a list of flavors (mime types as nsISupportsCString) that the transferable   
 can export, either through intrinsic knowledge or output data converters.  
@@ -40,7 +40,7 @@ can export, either through intrinsic knowledge or output data converters.
          the internal list, so it may be edited w/out affecting the transferable.  
   
 
-### getTransferData ###
+### getTransferData(aFlavor, aData, aDataLen) ###
   
 Given a flavor retrieve the data.   
   
@@ -49,7 +49,7 @@ Given a flavor retrieve the data.
 @param  aDataLen the length of the data  
   
 
-### getAnyTransferData ###
+### getAnyTransferData(aFlavor, aData, aDataLen) ###
   
 Returns the best flavor in the transferable, given those that have  
 been added to it with |AddFlavor()|  
@@ -59,12 +59,12 @@ been added to it with |AddFlavor()|
 @param  aDataLen the length of the data  
   
 
-### isLargeDataSet ###
+### isLargeDataSet() ###
   
 Returns true if the data is large.  
   
 
-### flavorsTransferableCanImport ###
+### flavorsTransferableCanImport() ###
   
 Computes a list of flavors (mime types as nsISupportsCString) that the transferable can  
 accept into it, either through intrinsic knowledge or input data converters.  
@@ -73,7 +73,7 @@ accept into it, either through intrinsic knowledge or input data converters.
          the internal list, so it may be edited w/out affecting the transferable.  
   
 
-### setTransferData ###
+### setTransferData(aFlavor, aData, aDataLen) ###
   
 Sets the data in the transferable with the specified flavor. The transferable  
 will maintain its own copy the data, so it is not necessary to do that beforehand.  
@@ -84,7 +84,7 @@ will maintain its own copy the data, so it is not necessary to do that beforehan
 @param  aDataLen the length of the data, or 0 if passing a nsIFlavorDataProvider  
   
 
-### addDataFlavor ###
+### addDataFlavor(aDataFlavor) ###
   
 Add the data flavor, indicating that this transferable   
 can receive this type of flavor  
@@ -92,7 +92,7 @@ can receive this type of flavor
 @param  aDataFlavor a new data flavor to handle  
   
 
-### removeDataFlavor ###
+### removeDataFlavor(aDataFlavor) ###
   
 Removes the data flavor matching the given one (string compare) and the data  
 that goes along with it.  

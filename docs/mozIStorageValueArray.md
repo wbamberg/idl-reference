@@ -10,14 +10,14 @@ row.
 
 ## Methods ##
 
-### getTypeOfIndex ###
+### getTypeOfIndex(aIndex) ###
   
 Returns the type of the value at the given column index;  
 one of VALUE_TYPE_NULL, VALUE_TYPE_INTEGER, VALUE_TYPE_FLOAT,  
 VALUE_TYPE_TEXT, VALUE_TYPE_BLOB.  
   
 
-### getInt32 ###
+### getInt32(aIndex) ###
   
 Obtain a value for the given entry (column) index.  
 Due to SQLite's type conversion rules, any of these are valid  
@@ -31,26 +31,26 @@ string with IsVoid set to distinguish it from an explicitly set empty
 string.  
   
 
-### getInt64 ###
+### getInt64(aIndex) ###
 
-### getDouble ###
+### getDouble(aIndex) ###
 
-### getUTF8String ###
+### getUTF8String(aIndex) ###
 
-### getString ###
+### getString(aIndex) ###
 
-### getBlob ###
+### getBlob(aIndex, aDataSize, aData) ###
 
-### getIsNull ###
+### getIsNull(aIndex) ###
 
-### getSharedUTF8String ###
+### getSharedUTF8String(aIndex, aLength, aResult) ###
   
 Returns a shared string pointer  
   
 
-### getSharedString ###
+### getSharedString(aIndex, aLength, aResult) ###
 
-### getSharedBlob ###
+### getSharedBlob(aIndex, aLength, aResult) ###
 
 ## Attributes ##
 

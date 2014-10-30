@@ -11,12 +11,12 @@ nsIAccessible for a given DOM node.  More documentation at:
 
 ## Methods ##
 
-### getApplicationAccessible ###
+### getApplicationAccessible() ###
   
 Return application accessible.  
   
 
-### getAccessibleFor ###
+### getAccessibleFor(aNode) ###
   
 Return an nsIAccessible for a DOM node in pres shell 0.  
 Create a new accessible of the appropriate type if necessary,  
@@ -25,14 +25,14 @@ or use one from the accessibility cache if it already exists.
 @return The nsIAccessible for the given DOM node.  
   
 
-### getStringRole ###
+### getStringRole(aRole) ###
   
 Returns accessible role as a string.  
   
 @param aRole - the accessible role constants.  
   
 
-### getStringStates ###
+### getStringStates(aStates, aExtraStates) ###
   
 Returns list which contains accessible states as a strings.  
   
@@ -40,7 +40,7 @@ Returns list which contains accessible states as a strings.
 @param aExtraStates - accessible extra states.  
   
 
-### getStringEventType ###
+### getStringEventType(aEventType) ###
   
 Get the type of accessible event as a string.  
   
@@ -48,7 +48,7 @@ Get the type of accessible event as a string.
 @return - accessible event type presented as human readable string  
   
 
-### getStringRelationType ###
+### getStringRelationType(aRelationType) ###
   
 Get the type of accessible relation as a string.  
   
@@ -56,7 +56,7 @@ Get the type of accessible relation as a string.
 @return - accessible relation type presented as human readable string  
   
 
-### getAccessibleFromCache ###
+### getAccessibleFromCache(aNode) ###
   
 Return an accessible for the given DOM node from the cache.  
 @note  the method is intended for testing purposes  
@@ -66,7 +66,7 @@ Return an accessible for the given DOM node from the cache.
 @return       cached accessible for the given DOM node if any  
   
 
-### createAccessiblePivot ###
+### createAccessiblePivot(aRoot) ###
   
 Create a new pivot for tracking a position and traversing a subtree.  
   
@@ -74,7 +74,7 @@ Create a new pivot for tracking a position and traversing a subtree.
 @return a new pivot  
   
 
-### setLogging ###
+### setLogging(aModules) ###
   
 Enable logging for the given modules, all other modules aren't logged.  
   
@@ -84,7 +84,7 @@ Enable logging for the given modules, all other modules aren't logged.
 @see Logging.cpp for list of possible values.  
   
 
-### isLogged ###
+### isLogged(aModule) ###
   
 Return true if the given module is logged.  
   

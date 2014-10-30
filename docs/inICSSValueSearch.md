@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### addPropertyCriteria ###
+### addPropertyCriteria(aPropName) ###
 
 ## Attributes ##
 

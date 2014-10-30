@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### addEntry ###
+### addEntry(aEntry, aPersist) ###
   
 Add a new Entry to the History List  
 @param aEntry - The entry to add  
@@ -15,19 +15,19 @@ in the list.  If false, this means that when new entries are added
 this element will not appear in the session history list.  
   
 
-### updateIndex ###
+### updateIndex() ###
    
 Update the index maintained by sessionHistory  
   
 
-### replaceEntry ###
+### replaceEntry(aIndex, aReplaceEntry) ###
   
 Replace the nsISHEntry at a particular index  
 @param aIndex - The index at which the entry should be replaced  
 @param aReplaceEntry - The replacement entry for the index.  
   
 
-### notifyOnHistoryReload ###
+### notifyOnHistoryReload(aReloadURI, aReloadFlags) ###
   
 Notifies all registered session history listeners about an impending  
 reload.  
@@ -39,7 +39,7 @@ reload.
 @return              Whether the operation can proceed.  
   
 
-### evictOutOfRangeContentViewers ###
+### evictOutOfRangeContentViewers(aIndex) ###
   
 Evict content viewers which don't lie in the "safe" range around aIndex.  
 In practice, this should leave us with no more than gHistoryMaxViewers  
@@ -53,18 +53,18 @@ not greater than our global max; if it is, evict viewers as appropriate.
   history was navigated to.  
   
 
-### evictExpiredContentViewerForEntry ###
+### evictExpiredContentViewerForEntry(aEntry) ###
   
 Evict the content viewer associated with a bfcache entry  
 that has timed out.  
   
 
-### evictAllContentViewers ###
+### evictAllContentViewers() ###
   
 Evict all the content viewers in this session history  
   
 
-### RemoveEntries ###
+### RemoveEntries(aIDs, aStartIndex) ###
   
 Removes entries from the history if their docshellID is in  
 aIDs array.  

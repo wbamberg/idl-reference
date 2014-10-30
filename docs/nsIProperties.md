@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### get ###
+### get(prop, iid, result) ###
   
 Gets a property with a given name.   
   
@@ -15,24 +15,24 @@ Gets a property with a given name.
 given iid.  
   
 
-### set ###
+### set(prop, value) ###
   
 Sets a property with a given name to a given value.   
   
 
-### has ###
+### has(prop) ###
   
 Returns true if the property with the given name exists.  
   
 
-### undefine ###
+### undefine(prop) ###
   
 Undefines a property.  
 @throws NS_ERROR_FAILURE if a property with that name doesn't  
 already exist.  
   
 
-### getKeys ###
+### getKeys(count, keys) ###
   
  Returns an array of the keys.  
   

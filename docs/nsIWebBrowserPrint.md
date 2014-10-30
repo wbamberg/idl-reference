@@ -10,7 +10,7 @@ for printing an embedded Gecko web browser window/document
 
 ## Methods ##
 
-### print ###
+### print(aThePrintSettings, aWPListener) ###
   
 Print the specified DOM window  
   
@@ -20,7 +20,7 @@ Print the specified DOM window
 @return void  
   
 
-### printPreview ###
+### printPreview(aThePrintSettings, aChildDOMWin, aWPListener) ###
   
 Print Preview the specified DOM window  
   
@@ -31,7 +31,7 @@ Print Preview the specified DOM window
 @return void  
   
 
-### printPreviewNavigate ###
+### printPreviewNavigate(aNavType, aPageNum) ###
   
 Print Preview - Navigates within the window  
   
@@ -40,13 +40,13 @@ Print Preview - Navigates within the window
 @return void  
   
 
-### cancel ###
+### cancel() ###
   
 Cancels the current print   
 @return void  
   
 
-### enumerateDocumentNames ###
+### enumerateDocumentNames(aCount, aResult) ###
   
 Returns an array of the names of all documents names (Title or URL)  
 and sub-documents. This will return a single item if the attr "isFramesetDocument" is false  
@@ -57,7 +57,7 @@ and may return any number of items is "isFramesetDocument" is true
 @return void  
   
 
-### exitPrintPreview ###
+### exitPrintPreview() ###
   
 This exists PrintPreview mode and returns browser window to galley mode  
 @return void  

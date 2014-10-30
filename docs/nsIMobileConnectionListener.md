@@ -6,17 +6,17 @@ layout: default
 
 ## Methods ##
 
-### notifyVoiceChanged ###
+### notifyVoiceChanged() ###
   
 Notify when voice info is changed.  
   
 
-### notifyDataChanged ###
+### notifyDataChanged() ###
   
 Notify when data info is changed.  
   
 
-### notifyUssdReceived ###
+### notifyUssdReceived(message, sessionEnded) ###
   
 Notify when ussd is received.  
   
@@ -26,7 +26,7 @@ Notify when ussd is received.
        Indicates whether the session is ended.  
   
 
-### notifyDataError ###
+### notifyDataError(message) ###
   
 Notify when data call is failed to establish.  
   
@@ -34,7 +34,7 @@ Notify when data call is failed to establish.
        Error message from RIL.  
   
 
-### notifyCFStateChanged ###
+### notifyCFStateChanged(action, reason, number, timeSeconds, serviceClass) ###
   
 Notify when call forwarding state is changed.  
   
@@ -50,7 +50,7 @@ Notify when call forwarding state is changed.
        One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
   
 
-### notifyEmergencyCbModeChanged ###
+### notifyEmergencyCbModeChanged(active, timeoutMs) ###
   
 Notify when emergency callback mode is changed.  
   
@@ -60,7 +60,7 @@ Notify when emergency callback mode is changed.
        The timeout in millisecond for emergency callback mode.  
   
 
-### notifyOtaStatusChanged ###
+### notifyOtaStatusChanged(status) ###
   
 Notify when ota status is changed.  
   
@@ -71,17 +71,17 @@ Notify when ota status is changed.
        'otapa_stopped', 'otapa_aborted'.  
   
 
-### notifyIccChanged ###
+### notifyIccChanged() ###
   
 Notify when icc id is changed.  
   
 
-### notifyRadioStateChanged ###
+### notifyRadioStateChanged() ###
   
 Notify when radio state is changed.  
   
 
-### notifyClirModeChanged ###
+### notifyClirModeChanged(mode) ###
   
 Notify when clir mode is changed.  
   
@@ -89,17 +89,17 @@ Notify when clir mode is changed.
        One of the nsIMobileConnection.CLIR_* values.  
   
 
-### notifyLastKnownNetworkChanged ###
+### notifyLastKnownNetworkChanged() ###
   
 Notify when last known network is changed.  
   
 
-### notifyLastKnownHomeNetworkChanged ###
+### notifyLastKnownHomeNetworkChanged() ###
   
 Notify when last known home network is changed.  
   
 
-### notifyNetworkSelectionModeChanged ###
+### notifyNetworkSelectionModeChanged() ###
   
 Notify when network selection mode is changed.  
   

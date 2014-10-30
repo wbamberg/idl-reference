@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### timingAllowCheck ###
+### timingAllowCheck(origin) ###
 
 ## Attributes ##
 

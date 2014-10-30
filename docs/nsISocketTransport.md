@@ -16,50 +16,50 @@ this interface may be called from any thread.
 
 ## Methods ##
 
-### getPeerAddr ###
+### getPeerAddr() ###
   
 Returns the IP address of the socket connection peer. This  
 attribute is defined only once a connection has been established.  
   
 
-### getSelfAddr ###
+### getSelfAddr() ###
   
 Returns the IP address of the initiating end. This attribute  
 is defined only once a connection has been established.  
   
 
-### bind ###
+### bind(aLocalAddr) ###
   
 Bind to a specific local address.  
   
 
-### getScriptablePeerAddr ###
+### getScriptablePeerAddr() ###
   
 Returns a scriptable version of getPeerAddr. This attribute is defined  
 only once a connection has been established.  
   
 
-### getScriptableSelfAddr ###
+### getScriptableSelfAddr() ###
   
 Returns a scriptable version of getSelfAddr. This attribute is defined  
 only once a connection has been established.  
   
 
-### isAlive ###
+### isAlive() ###
   
 Test if this socket transport is (still) connected.  
   
 
-### getTimeout ###
+### getTimeout(aType) ###
   
 Socket timeouts in seconds.  To specify no timeout, pass UINT32_MAX  
 as aValue to setTimeout.  The implementation may truncate timeout values  
 to a smaller range of values (e.g., 0 to 0xFFFF).  
   
 
-### setTimeout ###
+### setTimeout(aType, aValue) ###
 
-### setKeepaliveVals ###
+### setKeepaliveVals(keepaliveIdleTime, keepaliveRetryInterval) ###
 
 ## Attributes ##
 

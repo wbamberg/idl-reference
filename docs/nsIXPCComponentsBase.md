@@ -13,7 +13,7 @@ includes members that are only exposed to chrome.
 
 ## Methods ##
 
-### isSuccessCode ###
+### isSuccessCode(result) ###
 
 ## Attributes ##
 

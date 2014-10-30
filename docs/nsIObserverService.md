@@ -14,7 +14,7 @@ listeners.
 
 ## Methods ##
 
-### addObserver ###
+### addObserver(anObserver, aTopic, ownsWeak) ###
   
 AddObserver  
   
@@ -30,7 +30,7 @@ topic.
                    returned.  
   
 
-### removeObserver ###
+### removeObserver(anObserver, aTopic) ###
   
 removeObserver  
   
@@ -42,7 +42,7 @@ topic.
 @param aTopic     : The notification topic or subject.  
   
 
-### notifyObservers ###
+### notifyObservers(aSubject, aTopic, someData) ###
   
 notifyObservers  
   
@@ -53,7 +53,7 @@ Notifies all registered listeners of the given topic.
 @param someData : Notification specific wide string.  
   
 
-### enumerateObservers ###
+### enumerateObservers(aTopic) ###
   
 enumerateObservers  
   

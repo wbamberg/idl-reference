@@ -11,7 +11,7 @@ connection conversation.
 
 ## Methods ##
 
-### OnFTPControlLog ###
+### OnFTPControlLog(server, msg) ###
   
 XXX document this method!  (see bug 328915)  
   

@@ -11,11 +11,11 @@ the cycle collector is running, it cannot be implemented in JS.
 
 ## Methods ##
 
-### open ###
+### open(aGCLog, aCCLog) ###
 
-### closeGCLog ###
+### closeGCLog() ###
 
-### closeCCLog ###
+### closeCCLog() ###
 
 ## Attributes ##
 

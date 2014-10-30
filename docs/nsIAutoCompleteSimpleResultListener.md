@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onValueRemoved ###
+### onValueRemoved(aResult, aValue, aRemoveFromDb) ###
   
 Dispatched after a value is removed from the result.  
 @param aResult  

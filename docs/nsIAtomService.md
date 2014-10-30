@@ -6,21 +6,21 @@ layout: default
 
 ## Methods ##
 
-### getAtom ###
+### getAtom(value) ###
   
 Version of NS_NewAtom that doesn't require linking against the  
 XPCOM library.  See nsIAtom.idl.  
   
 
-### getPermanentAtom ###
+### getPermanentAtom(value) ###
   
 Version of NS_NewPermanentAtom that doesn't require linking against  
 the XPCOM library.  See nsIAtom.idl.  
   
 
-### getAtomUTF8 ###
+### getAtomUTF8(value) ###
   
 Get an atom with a utf8 string.  
   
 
-### getPermanentAtomUTF8 ###
+### getPermanentAtomUTF8(value) ###

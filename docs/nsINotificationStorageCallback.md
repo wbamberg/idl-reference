@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### handle ###
+### handle(id, title, dir, lang, body, tag, icon, data, behavior) ###
   
 Callback function used to pass single notification back  
 into C++ land for Notification.get return data.  
@@ -20,7 +20,7 @@ into C++ land for Notification.get return data.
 @param tag: the notification tag  
   
 
-### done ###
+### done() ###
   
 Callback function used to notify C++ the we have returned  
 all notification objects for this Notification.get call.  

@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### saveAppStats ###
+### saveAppStats(aAppId, aNetwork, aTimeStamp, aRxBytes, aTxBytes, aIsAccumulative, aCallback) ###
 
-### saveServiceStats ###
+### saveServiceStats(aServiceType, aNetwork, aTimeStamp, aRxBytes, aTxBytes, aIsAccumulative, aCallback) ###

@@ -11,7 +11,7 @@ nsUrlClassifierStreamUpdater.
 
 ## Methods ##
 
-### updateUrlRequested ###
+### updateUrlRequested(url, table) ###
   
 The update requested a new URL whose contents should be downloaded  
 and sent to the classifier as a new stream.  
@@ -21,7 +21,7 @@ and sent to the classifier as a new stream.
              with.  This should be passed back to beginStream().  
   
 
-### streamFinished ###
+### streamFinished(status, delay) ###
   
 A stream update has completed.  
   
@@ -30,9 +30,9 @@ A stream update has completed.
              next URL in ms.  
   
 
-### updateError ###
+### updateError(error) ###
 
-### updateSuccess ###
+### updateSuccess(requestedTimeout) ###
   
 The update has completed successfully.  
   

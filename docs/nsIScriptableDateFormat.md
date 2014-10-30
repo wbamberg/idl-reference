@@ -9,7 +9,7 @@ Format date and time in a human readable format.
 
 ## Methods ##
 
-### FormatDateTime ###
+### FormatDateTime(locale, dateFormatSelector, timeFormatSelector, year, month, day, hour, minute, second) ###
   
 Format the given date and time in a human readable format.  
   
@@ -45,14 +45,14 @@ you depend on any specific format or language.
         user preferences or the given locale.  
   
 
-### FormatDate ###
+### FormatDate(locale, dateFormatSelector, year, month, day) ###
   
 Format the given date in a human readable format.  
   
 See FormatDateTime for details.  
   
 
-### FormatTime ###
+### FormatTime(locale, timeFormatSelector, hour, minute, second) ###
   
 Format the given time in a human readable format.  
   

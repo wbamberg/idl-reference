@@ -10,51 +10,51 @@ information.
 
 ## Methods ##
 
-### registerListener ###
+### registerListener(listener) ###
   
 Called when a content process registers receiving unsolicited messages from  
 RadioInterfaceLayer in the chrome process. Only a content process that has  
 the 'telephony' permission is allowed to register.  
   
 
-### unregisterListener ###
+### unregisterListener(listener) ###
 
-### enumerateCalls ###
+### enumerateCalls(listener) ###
   
 Will continue calling listener.enumerateCallState until the listener  
 returns false.  
   
 
-### dial ###
+### dial(clientId, number, isEmergency, callback) ###
   
 Functionality for making and managing phone calls.  
   
 
-### hangUp ###
+### hangUp(clientId, callIndex) ###
 
-### startTone ###
+### startTone(clientId, dtmfChar) ###
 
-### stopTone ###
+### stopTone(clientId) ###
 
-### answerCall ###
+### answerCall(clientId, callIndex) ###
 
-### rejectCall ###
+### rejectCall(clientId, callIndex) ###
 
-### holdCall ###
+### holdCall(clientId, callIndex) ###
 
-### resumeCall ###
+### resumeCall(clientId, callIndex) ###
 
-### conferenceCall ###
+### conferenceCall(clientId) ###
 
-### separateCall ###
+### separateCall(clientId, callIndex) ###
 
-### hangUpConference ###
+### hangUpConference(clientId, callback) ###
 
-### holdConference ###
+### holdConference(clientId) ###
 
-### resumeConference ###
+### resumeConference(clientId) ###
 
-### sendUSSD ###
+### sendUSSD(clientId, ussd, callback) ###
   
 Send an USSD on existing session. It results in error if the session is  
 not existed.  

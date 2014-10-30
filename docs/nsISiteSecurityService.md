@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### processHeader ###
+### processHeader(aType, aSourceURI, aHeader, aSSLStatus, aFlags, aMaxAge, aIncludeSubdomains) ###
   
 Parses a given HTTP header and records the results internally.  
 Currently two header types are supported: HSTS (aka STS) and HPKP  
@@ -33,13 +33,13 @@ in future HTTPS connections.
                          if there are unrecognized tokens in the header.  
   
 
-### unsafeProcessHeader ###
+### unsafeProcessHeader(aType, aSourceURI, aHeader, aFlags, aMaxAge, aIncludeSubdomains) ###
   
 Same as processHeader but without checking for the security properties  
 of the connection. Use ONLY for testing.  
   
 
-### removeState ###
+### removeState(aType, aURI, aFlags) ###
   
 Given a header type, removes state relating to that header of a host,  
 including the includeSubdomains state that would affect subdomains.  
@@ -51,7 +51,7 @@ host.
                  NO_PERMANENT_STORAGE  
   
 
-### isSecureHost ###
+### isSecureHost(aType, aHost, aFlags) ###
   
 See isSecureURI  
   
@@ -61,13 +61,13 @@ See isSecureURI
                  NO_PERMANENT_STORAGE  
   
 
-### shouldIgnoreHeaders ###
+### shouldIgnoreHeaders(aSecurityInfo) ###
   
 Checks if the given security info is for a host with a broken  
 transport layer (certificate errors like invalid CN).  
   
 
-### isSecureURI ###
+### isSecureURI(aType, aURI, aFlags) ###
   
 Checks whether or not the URI's hostname has a given security state set.  
 For example, for HSTS:  
@@ -83,12 +83,12 @@ such as path and port.
                  NO_PERMANENT_STORAGE  
   
 
-### clearAll ###
+### clearAll() ###
   
 Removes all security state by resetting to factory-original settings.  
   
 
-### getKeyPinsForHostname ###
+### getKeyPinsForHostname(aHostname, evalTime, aPinArray, aIncludeSubdomains) ###
   
 Returns an array of sha256-hashed key pins for the given domain, if any.  
 If these pins also apply to subdomains of the given domain,  
@@ -103,7 +103,7 @@ mozilla::pkix::Time which uses internally seconds since 0 AD.
        given domain  
   
 
-### setKeyPins ###
+### setKeyPins(aHost, aIncludeSubdomains, aMaxAge, aPinCount, aSha256Pins) ###
   
 Set public-key pins for a host. The resulting pins will be permanent  
 and visible from private and non-private contexts. These pins replace  

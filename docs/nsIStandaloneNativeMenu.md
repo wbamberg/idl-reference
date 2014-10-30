@@ -9,14 +9,14 @@ Platform-independent interface to platform native menu objects.
 
 ## Methods ##
 
-### init ###
+### init(aDOMElement) ###
   
 Initialize the native menu using given XUL DOM element.  
   
 @param aDOMElement A XUL DOM element of tag type |menu| or |menupopup|.  
   
 
-### menuWillOpen ###
+### menuWillOpen() ###
   
 This method must be called before the menu is opened and displayed to the  
 user. It allows the platform code to update the menu and also determine  
@@ -25,7 +25,7 @@ whether the menu should even be shown.
 @return true if the menu can be shown, false if it should not be shown  
   
 
-### activateNativeMenuItemAt ###
+### activateNativeMenuItemAt(anIndexString) ###
   
 Activate the native menu item specified by |anIndexString|. This method  
 is intended to be used by the test suite.  
@@ -34,7 +34,7 @@ is intended to be used by the test suite.
        pipe ('|') characters  
   
 
-### forceUpdateNativeMenuAt ###
+### forceUpdateNativeMenuAt(anIndexString) ###
   
 Force an update of the native menu item specified by |anIndexString|. This  
 method is intended to be used by the test suite.  

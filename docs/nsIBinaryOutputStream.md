@@ -17,49 +17,49 @@ as this is traditional network order.
 
 ## Methods ##
 
-### setOutputStream ###
+### setOutputStream(aOutputStream) ###
 
-### writeBoolean ###
+### writeBoolean(aBoolean) ###
   
 Write a boolean as an 8-bit char to the stream.  
   
 
-### write8 ###
+### write8(aByte) ###
 
-### write16 ###
+### write16(a16) ###
 
-### write32 ###
+### write32(a32) ###
 
-### write64 ###
+### write64(a64) ###
 
-### writeFloat ###
+### writeFloat(aFloat) ###
 
-### writeDouble ###
+### writeDouble(aDouble) ###
 
-### writeStringZ ###
+### writeStringZ(aString) ###
   
 Write an 8-bit pascal style string to the stream.  
 32-bit length field, followed by length 8-bit chars.  
   
 
-### writeWStringZ ###
+### writeWStringZ(aString) ###
   
 Write a 16-bit pascal style string to the stream.  
 32-bit length field, followed by length PRUnichars.  
   
 
-### writeUtf8Z ###
+### writeUtf8Z(aString) ###
   
 Write an 8-bit pascal style string (UTF8-encoded) to the stream.  
 32-bit length field, followed by length 8-bit chars.  
   
 
-### writeBytes ###
+### writeBytes(aString, aLength) ###
   
 Write an opaque byte array to the stream.  
   
 
-### writeByteArray ###
+### writeByteArray(aBytes, aLength) ###
   
 Write an opaque byte array to the stream.  
   

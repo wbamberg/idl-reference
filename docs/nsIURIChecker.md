@@ -14,7 +14,7 @@ for HTTP URIs).
 
 ## Methods ##
 
-### init ###
+### init(aURI) ###
   
 Initializes the URI checker.  After this method is called, it is valid  
 to further configure the URI checker by calling its nsIRequest methods.  
@@ -25,7 +25,7 @@ In the case of the HTTP protocol, only a HEAD request will be issued.
        The URI to be checked.  
   
 
-### asyncCheck ###
+### asyncCheck(aObserver, aContext) ###
   
 Begin asynchronous checking URI for validity.  Notification will be  
 asynchronous through the nsIRequestObserver callback interface.  When  

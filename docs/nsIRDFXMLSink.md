@@ -10,34 +10,34 @@ by the RDF/XML parser.
 
 ## Methods ##
 
-### beginLoad ###
+### beginLoad() ###
   
 Initiate the RDF/XML load.  
   
 
-### interrupt ###
+### interrupt() ###
   
 Suspend the RDF/XML load.  
   
 
-### resume ###
+### resume() ###
   
 Resume the RDF/XML load.  
   
 
-### endLoad ###
+### endLoad() ###
   
 Complete the RDF/XML load.  
   
 
-### addNameSpace ###
+### addNameSpace(aPrefix, aURI) ###
   
 Add namespace information to the RDF/XML sink.  
 @param aPrefix the namespace prefix  
 @param aURI the namespace URI  
   
 
-### addXMLSinkObserver ###
+### addXMLSinkObserver(aObserver) ###
   
 Add an observer that will be notified as the RDF/XML load  
 progresses.  
@@ -53,7 +53,7 @@ clears the reference).
 load observers.  
   
 
-### removeXMLSinkObserver ###
+### removeXMLSinkObserver(aObserver) ###
   
 Remove an observer from the sink's set of observers.  
 @param aObserver the observer to remove.  

@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### notifyCursorError ###
+### notifyCursorError(error) ###
 
-### notifyCursorResult ###
+### notifyCursorResult(results, size) ###
 
-### notifyCursorDone ###
+### notifyCursorDone() ###

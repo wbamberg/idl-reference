@@ -13,17 +13,17 @@ http://www.w3.org/TR/DOM-Level-2-Core/
 
 ## Methods ##
 
-### substringData ###
+### substringData(offset, count) ###
 
-### appendData ###
+### appendData(arg) ###
 
-### insertData ###
+### insertData(offset, arg) ###
 
-### deleteData ###
+### deleteData(offset, count) ###
 
-### replaceData ###
+### replaceData(offset, count, arg) ###
 
-### remove ###
+### remove() ###
 
 ## Attributes ##
 

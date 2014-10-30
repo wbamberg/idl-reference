@@ -12,7 +12,7 @@ clipboard. The webshell implements this interface.
 
 ## Methods ##
 
-### canCutSelection ###
+### canCutSelection() ###
   
 Returns whether there is a selection and it is not read-only.  
   
@@ -20,7 +20,7 @@ Returns whether there is a selection and it is not read-only.
          <code>false</code> otherwise.  
   
 
-### canCopySelection ###
+### canCopySelection() ###
   
 Returns whether there is a selection and it is copyable.  
   
@@ -28,7 +28,7 @@ Returns whether there is a selection and it is copyable.
          <code>false</code> otherwise.  
   
 
-### canCopyLinkLocation ###
+### canCopyLinkLocation() ###
   
 Returns whether we can copy a link location.  
   
@@ -36,7 +36,7 @@ Returns whether we can copy a link location.
           <code>false</code> otherwise.  
   
 
-### canCopyImageLocation ###
+### canCopyImageLocation() ###
   
 Returns whether we can copy an image location.  
   
@@ -44,7 +44,7 @@ Returns whether we can copy an image location.
 <code>false</code> otherwise.  
   
 
-### canCopyImageContents ###
+### canCopyImageContents() ###
   
 Returns whether we can copy an image's contents.  
   
@@ -52,7 +52,7 @@ Returns whether we can copy an image's contents.
          <code>false</code> otherwise  
   
 
-### canPaste ###
+### canPaste() ###
   
 Returns whether the current contents of the clipboard can be  
 pasted and if the current selection is not read-only.  
@@ -62,43 +62,43 @@ pasted and if the current selection is not read-only.
          <code>false</code> otherwise  
   
 
-### cutSelection ###
+### cutSelection() ###
   
 Cut the current selection onto the clipboard.  
   
 
-### copySelection ###
+### copySelection() ###
   
 Copy the current selection onto the clipboard.  
   
 
-### copyLinkLocation ###
+### copyLinkLocation() ###
   
 Copy the link location of the current selection (e.g.,  
 the |href| attribute of a selected |a| tag).  
   
 
-### copyImageLocation ###
+### copyImageLocation() ###
   
 Copy the location of the selected image.  
   
 
-### copyImageContents ###
+### copyImageContents() ###
   
 Copy the contents of the selected image.  
   
 
-### paste ###
+### paste() ###
   
 Paste the contents of the clipboard into the current selection.  
   
 
-### selectAll ###
+### selectAll() ###
   
 Select the entire contents.  
   
 
-### selectNone ###
+### selectNone() ###
   
 Clear the current selection (if any). Insertion point ends up  
 at beginning of current selection.  

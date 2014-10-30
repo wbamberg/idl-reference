@@ -15,7 +15,7 @@ Base64 encoding.
 
 ## Methods ##
 
-### encodeToCString ###
+### encodeToCString(stream, length) ###
   
  These methods take an nsIInputStream and return a narrow or wide  
  string with the contents of the nsIInputStream base64 encoded.  
@@ -25,4 +25,4 @@ Base64 encoding.
  If either of these restrictions are violated we will abort.  
   
 
-### encodeToString ###
+### encodeToString(stream, length) ###

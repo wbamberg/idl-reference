@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### showStatusString ###
+### showStatusString(status) ###
 
-### startMeteors ###
+### startMeteors() ###
 
-### stopMeteors ###
+### stopMeteors() ###
 
-### showProgress ###
+### showProgress(percent) ###
 
-### setDocShell ###
+### setDocShell(shell, window) ###
 
-### closeWindow ###
+### closeWindow() ###

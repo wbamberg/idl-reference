@@ -9,7 +9,7 @@ Interface implemented by channels that support application caches.
 
 ## Methods ##
 
-### markOfflineCacheEntryAsForeign ###
+### markOfflineCacheEntryAsForeign() ###
   
 A shortcut method to mark the cache item of this channel as 'foreign'.  
 See the 'cache selection algorithm' and CACHE_SELECTION_RELOAD  

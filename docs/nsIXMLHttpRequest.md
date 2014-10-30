@@ -47,13 +47,13 @@ it.
 
 ## Methods ##
 
-### abort ###
+### abort() ###
   
 If the request has been sent already, this method will  
 abort the request.  
   
 
-### getAllResponseHeaders ###
+### getAllResponseHeaders() ###
   
 Returns all of the response headers as a string for HTTP  
 requests.  
@@ -62,7 +62,7 @@ requests.
          The empty string if the response has not yet been received.  
   
 
-### getResponseHeader ###
+### getResponseHeader(header) ###
   
 Returns the text of the header with the specified name for  
 HTTP requests.  
@@ -73,7 +73,7 @@ HTTP requests.
          header does not exist in the response.  
   
 
-### open ###
+### open(method, url, async, user, password) ###
   
 Meant to be a script-only method for initializing a request.  
   
@@ -95,7 +95,7 @@ already), this is equivalent to calling abort() and then open().
                 The default value is the empty string  
   
 
-### send ###
+### send(body) ###
   
 Sends the request. If the request is asynchronous, returns  
 immediately after sending the request. If it is synchronous  
@@ -122,7 +122,7 @@ After the initial response, all event listeners will be cleared.
             calling send.  
   
 
-### sendAsBinary ###
+### sendAsBinary(body) ###
   
 A variant of the send() method used to send binary data.  
   
@@ -131,7 +131,7 @@ A variant of the send() method used to send binary data.
             high-order byte of each character will be discarded).  
   
 
-### setRequestHeader ###
+### setRequestHeader(header, value) ###
   
 Sets a HTTP request header for HTTP requests. You must call open  
 before setting the request headers.  
@@ -140,7 +140,7 @@ before setting the request headers.
 @param value The body of the header.  
   
 
-### overrideMimeType ###
+### overrideMimeType(mimetype) ###
   
 Override the mime type returned by the server (if any). This may  
 be used, for example, to force a stream to be treated and parsed  
@@ -151,7 +151,7 @@ must be done before the <code>send</code> method is invoked.
                 (if any).  
   
 
-### init ###
+### init(principal, scriptContext, globalObject, baseURI) ###
   
 Initialize the object for use from C++ code with the principal, script  
 context, and owner window that should be used.  

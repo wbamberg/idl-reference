@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### onWaitEvent ###
+### onWaitEvent(event, aInterface) ###
 
-### onCommand ###
+### onCommand(result, aInterface) ###

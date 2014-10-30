@@ -16,15 +16,15 @@ http://www.whatwg.org/specs/web-apps/current-work/
 
 ## Methods ##
 
-### item ###
+### item(index) ###
 
-### namedItem ###
+### namedItem(name) ###
 
-### setOption ###
+### setOption(index, option) ###
 
-### add ###
+### add(option, before) ###
 
-### remove ###
+### remove(index) ###
 
 ## Attributes ##
 

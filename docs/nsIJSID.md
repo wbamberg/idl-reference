@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### equals ###
+### equals(other) ###
 
-### toString ###
+### toString() ###
 
-### initialize ###
+### initialize(idString) ###
 
-### getID ###
+### getID() ###
 
 ## Attributes ##
 

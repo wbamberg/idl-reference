@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### addURI ###
+### addURI(aURI, aRedirect, aToplevel, aReferrer) ###
   
 Add a URI to global history  
   
@@ -23,7 +23,7 @@ Add a URI to global history
        referrer.  
   
 
-### isVisited ###
+### isVisited(aURI) ###
   
 Checks to see whether the given URI is in history.  
   
@@ -31,7 +31,7 @@ Checks to see whether the given URI is in history.
 @return true if a URI has been visited  
   
 
-### setPageTitle ###
+### setPageTitle(aURI, aTitle) ###
   
 Set the page title for the given uri. URIs that are not already in  
 global history will not be added.  

@@ -10,7 +10,7 @@ private key matching the given public key.
 
 ## Methods ##
 
-### verifyData ###
+### verifyData(aData, aSignature, aPublicKey) ###
   
 Verifies that the data matches the data that was used to generate the  
 signature.  
@@ -22,7 +22,7 @@ signature.
 @returns true if the signature matches the data, false if not.  
   
 
-### verifySignature ###
+### verifySignature(aSignature, aSignatureLen, plaintext, plaintextLen, errorCode) ###
 
 ## Constants ##
 

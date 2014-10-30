@@ -17,7 +17,7 @@ that may or most likely will not have the ability to get back to A.
 
 ## Methods ##
 
-### getInterface ###
+### getInterface(uuid, result) ###
   
 Retrieves the specified interface pointer.  
   

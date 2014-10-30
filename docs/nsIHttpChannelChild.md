@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### addCookiesToRequest ###
+### addCookiesToRequest() ###
 
 ## Attributes ##
 

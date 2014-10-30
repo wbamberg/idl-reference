@@ -11,7 +11,7 @@ An interface to a server socket that can accept incoming connections.
 
 ## Methods ##
 
-### init ###
+### init(aPort, aLoopbackOnly, aBackLog) ###
  @} */  
   
 init  
@@ -32,7 +32,7 @@ This method initializes a server socket.
        Pass -1 to use the default value.  
   
 
-### initSpecialConnection ###
+### initSpecialConnection(aPort, aFlags, aBackLog) ###
   
 initSpecialConnection  
   
@@ -50,7 +50,7 @@ that socket not get terminated if Gecko is set offline.
        Pass -1 to use the default value.  
   
 
-### initWithAddress ###
+### initWithAddress(aAddr, aBackLog) ###
   
 initWithAddress  
   
@@ -65,7 +65,7 @@ local address (and hence a particular local network interface).
        Pass -1 to use the default value.  
   
 
-### initWithFilename ###
+### initWithFilename(aPath, aPermissions, aBacklog) ###
   
 initWithFilename  
   
@@ -119,7 +119,7 @@ always applied, so creating sockets in appropriately protected
 directories should be secure on both old and new systems.  
   
 
-### close ###
+### close() ###
   
 close  
   
@@ -129,7 +129,7 @@ created from this server socket).  This will cause the onStopListening
 event to asynchronously fire with a status of NS_BINDING_ABORTED.  
   
 
-### asyncListen ###
+### asyncListen(aListener) ###
   
 asyncListen  
   
@@ -146,7 +146,7 @@ transport (nsISocketTransport).  See below for more details.
        The listener to be notified when client connections are accepted.  
   
 
-### getAddress ###
+### getAddress() ###
   
 Returns the address to which this server socket is bound.  Since a  
 server socket may be bound to multiple network devices, this address  

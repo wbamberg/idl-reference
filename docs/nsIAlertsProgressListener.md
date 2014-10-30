@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onProgress ###
+### onProgress(name, progress, progressMax, text) ###
   
 Called to notify the alert service that progress has occurred for the  
 given notification previously displayed with showAlertNotification().  
@@ -21,7 +21,7 @@ given notification previously displayed with showAlertNotification().
                     the percentage will be displayed.  
   
 
-### onCancel ###
+### onCancel(name) ###
   
 Called to cancel and hide the given notification previously displayed  
 with showAlertNotification().  

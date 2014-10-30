@@ -11,32 +11,32 @@ but rather a common set that nearly all windowed objects support.
 
 ## Methods ##
 
-### initWindow ###
+### initWindow(parentNativeWindow, parentWidget, x, y, cx, cy) ###
 
-### create ###
+### create() ###
 
-### destroy ###
+### destroy() ###
 
-### setPosition ###
+### setPosition(x, y) ###
 
-### getPosition ###
+### getPosition(x, y) ###
 
-### setSize ###
+### setSize(cx, cy, fRepaint) ###
 
-### getSize ###
+### getSize(cx, cy) ###
 
-### setPositionAndSize ###
+### setPositionAndSize(x, y, cx, cy, fRepaint) ###
 
-### getPositionAndSize ###
+### getPositionAndSize(x, y, cx, cy) ###
 
-### repaint ###
+### repaint(force) ###
    
 Tell the window to repaint itself  
 @param aForce - if true, repaint immediately  
                 if false, the window may defer repainting as it sees fit.  
   
 
-### setFocus ###
+### setFocus() ###
   
 Give the window focus.  
   

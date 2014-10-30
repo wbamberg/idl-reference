@@ -11,9 +11,9 @@ these items.
 
 ## Methods ##
 
-### getChild ###
+### getChild(aIndex) ###
 
-### getChildIndex ###
+### getChildIndex(aNode) ###
   
 Get the index of a direct child in this container.  
   
@@ -26,7 +26,7 @@ Get the index of a direct child in this container.
 container.  
   
 
-### findNodeByDetails ###
+### findNodeByDetails(aURIString, aTime, aItemId, aRecursive) ###
   
 Look for a node in the container by some of its details.  Does not search  
 closed containers.  

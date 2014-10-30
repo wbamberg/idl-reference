@@ -12,7 +12,7 @@ manager.
 
 ## Methods ##
 
-### sendAsyncMessage ###
+### sendAsyncMessage(messageName, obj, objects, principal) ###
   
 Send |messageName| and |obj| to the "other side" of this message  
 manager.  This invokes listeners who registered for  

@@ -15,7 +15,7 @@ and running the command line actions by processing the command line handlers.
 
 ## Methods ##
 
-### init ###
+### init(argc, argv, workingDir, state) ###
   
 This method assumes a native character set, and is meant to be called  
 with the argc/argv passed to main(). Talk to bsmedberg if you need to  
@@ -28,12 +28,12 @@ On Windows, the "native" character set is UTF-8, not the native codepage.
 @param state      The nsICommandLine.state flag.  
   
 
-### setWindowContext ###
+### setWindowContext(aWindow) ###
   
 Set the windowContext parameter.  
   
 
-### run ###
+### run() ###
   
 Process the command-line handlers in the proper order, calling "handle()" on  
 each.  

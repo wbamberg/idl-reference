@@ -13,7 +13,7 @@ http://www.w3.org/TR/DOM-Level-2-Events/
 
 ## Methods ##
 
-### initUIEvent ###
+### initUIEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg) ###
 
 ## Attributes ##
 

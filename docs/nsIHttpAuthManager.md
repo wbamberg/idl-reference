@@ -20,7 +20,7 @@ has already logged into.
 
 ## Methods ##
 
-### getAuthIdentity ###
+### getAuthIdentity(aScheme, aHost, aPort, aAuthType, aRealm, aPath, aUserDomain, aUserName, aUserPassword, aIsPrivate, aPrincipal) ###
   
 Lookup auth identity.  
   
@@ -52,7 +52,7 @@ Lookup auth identity.
        app/mozbrowser is in use for this request  
   
 
-### setAuthIdentity ###
+### setAuthIdentity(aScheme, aHost, aPort, aAuthType, aRealm, aPath, aUserDomain, aUserName, aUserPassword, aIsPrivate, aPrincipal) ###
   
 Store auth identity.  
   
@@ -84,7 +84,7 @@ Store auth identity.
        app/mozbrowser is in use for this request  
   
 
-### clearAll ###
+### clearAll() ###
   
 Clear all auth cache.  
   

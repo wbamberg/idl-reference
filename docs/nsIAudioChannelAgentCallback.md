@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### canPlayChanged ###
+### canPlayChanged(canPlay) ###
   
 Notified when the playable status of channel is changed.  
   
@@ -17,7 +17,7 @@ Notified when the playable status of channel is changed.
        it is faded state then the volume of media should be reduced.  
   
 
-### windowVolumeChanged ###
+### windowVolumeChanged() ###
   
 Notified when the window volume/mute is changed  
   

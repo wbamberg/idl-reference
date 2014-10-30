@@ -6,60 +6,60 @@ layout: default
 
 ## Methods ##
 
-### testBoolean ###
+### testBoolean(a, b) ###
 
-### testOctet ###
+### testOctet(a, b) ###
 
-### testShort ###
+### testShort(a, b) ###
 
-### testLong ###
+### testLong(a, b) ###
 
-### testLongLong ###
+### testLongLong(a, b) ###
 
-### testUnsignedShort ###
+### testUnsignedShort(a, b) ###
 
-### testUnsignedLong ###
+### testUnsignedLong(a, b) ###
 
-### testUnsignedLongLong ###
+### testUnsignedLongLong(a, b) ###
 
-### testFloat ###
+### testFloat(a, b) ###
 
-### testDouble ###
+### testDouble(a, b) ###
 
-### testChar ###
+### testChar(a, b) ###
 
-### testString ###
+### testString(a, b) ###
 
-### testWchar ###
+### testWchar(a, b) ###
 
-### testWstring ###
+### testWstring(a, b) ###
 
-### testDOMString ###
+### testDOMString(a, b) ###
 
-### testAString ###
+### testAString(a, b) ###
 
-### testAUTF8String ###
+### testAUTF8String(a, b) ###
 
-### testACString ###
+### testACString(a, b) ###
 
-### testJsval ###
+### testJsval(a, b) ###
 
-### testShortArray ###
+### testShortArray(aLength, a, bLength, b, rvLength, rv) ###
 
-### testDoubleArray ###
+### testDoubleArray(aLength, a, bLength, b, rvLength, rv) ###
 
-### testStringArray ###
+### testStringArray(aLength, a, bLength, b, rvLength, rv) ###
 
-### testWstringArray ###
+### testWstringArray(aLength, a, bLength, b, rvLength, rv) ###
 
-### testInterfaceArray ###
+### testInterfaceArray(aLength, a, bLength, b, rvLength, rv) ###
 
-### testSizedString ###
+### testSizedString(aLength, a, bLength, b, rvLength, rv) ###
 
-### testSizedWstring ###
+### testSizedWstring(aLength, a, bLength, b, rvLength, rv) ###
 
-### testInterfaceIs ###
+### testInterfaceIs(aIID, a, bIID, b, rvIID, rv) ###
 
-### testInterfaceIsArray ###
+### testInterfaceIsArray(aLength, aIID, a, bLength, bIID, b, rvLength, rvIID, rv) ###
 
-### testOutAString ###
+### testOutAString(o) ###

@@ -12,7 +12,7 @@ interface.
 
 ## Methods ##
 
-### getNetAddr ###
+### getNetAddr() ###
   
 @return the underlying NetAddr struct.  
   

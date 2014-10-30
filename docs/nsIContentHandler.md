@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### handleContent ###
+### handleContent(aContentType, aWindowContext, aRequest) ###
   
 Tells the content handler to take over handling the content. If this  
 function succeeds, the URI Loader will leave this request alone, ignoring  

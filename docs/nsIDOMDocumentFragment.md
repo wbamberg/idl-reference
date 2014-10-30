@@ -14,11 +14,11 @@ http://www.w3.org/TR/DOM-Level-2-Core/
 
 ## Methods ##
 
-### querySelector ###
+### querySelector(selectors) ###
   
 Return nodes that match a given CSS selector.  
   
 @see <http://dev.w3.org/2006/webapi/selectors-api/>  
   
 
-### querySelectorAll ###
+### querySelectorAll(selectors) ###

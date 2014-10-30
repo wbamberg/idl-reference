@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### setExpirationTime ###
+### setExpirationTime(expirationTime) ###
   
 Set the time at which the cache entry should be considered invalid (in  
 seconds since the Epoch).  
   
 
-### forceValidFor ###
+### forceValidFor(aSecondsToTheFuture) ###
   
 This method is intended to override the per-spec cache validation  
 decisions for a duration specified in seconds. The current state can  
@@ -27,7 +27,7 @@ entries grows to take up more space than the cache size allows.
        overridden before it returns to normal  
   
 
-### openInputStream ###
+### openInputStream(offset) ###
   
 Open blocking input stream to cache data.  Use the stream transport  
 service to asynchronously read this stream on a background thread.  
@@ -40,7 +40,7 @@ The returned stream MAY implement nsISeekableStream.
 @return non-blocking, buffered input stream.  
   
 
-### openOutputStream ###
+### openOutputStream(offset) ###
   
 Open non-blocking output stream to cache data.  The returned stream  
 MAY implement nsISeekableStream.  
@@ -55,23 +55,23 @@ truncated to the specified offset.
 @return blocking, buffered output stream.  
   
 
-### asyncDoom ###
+### asyncDoom(listener) ###
   
 Asynchronously doom an entry. Listener will be notified about the status  
 of the operation. Null may be passed if caller doesn't care about the  
 result.  
   
 
-### getMetaDataElement ###
+### getMetaDataElement(key) ###
   
 Methods for accessing meta data.  Meta data is a table of key/value  
 string pairs.  The strings do not have to conform to any particular  
 charset, but they must be null terminated.  
   
 
-### setMetaDataElement ###
+### setMetaDataElement(key, value) ###
 
-### visitMetaData ###
+### visitMetaData(visitor) ###
   
 Obtain the list of metadata keys this entry keeps.  
   
@@ -81,7 +81,7 @@ if the values need to be processed somehow, it's better to cache them
 and process outside the callback.  
   
 
-### metaDataReady ###
+### metaDataReady() ###
   
 Claims that all metadata on this entry are up-to-date and this entry  
 now can be delivered to other waiting consumers.  
@@ -89,7 +89,7 @@ now can be delivered to other waiting consumers.
 We need such method since metadata must be delivered synchronously.  
   
 
-### setValid ###
+### setValid() ###
   
 Called by consumer upon 304/206 response from the server.  This marks  
 the entry content as positively revalidated.  
@@ -97,7 +97,7 @@ Consumer uses this method after the consumer has returned ENTRY_NEEDS_REVALIDATI
 result from onCacheEntryCheck and after successfull revalidation with the server.  
   
 
-### recreate ###
+### recreate(aMemoryOnly) ###
   
 Doom this entry and open a new, empty, entry for write.  Consumer has  
 to exchange the entry this method is called on for the newly created.  
@@ -113,7 +113,7 @@ Used on 200 responses to conditional requests.
      recreated for write  
   
 
-### close ###
+### close() ###
 ************************************************************************  
 The following methods might be added to some nsICacheEntryInternal  
 interface since we want to remove them as soon as the old cache backend is  
@@ -129,7 +129,7 @@ In the new backend: this method is no-op
 In the old backend: this method delegates to nsICacheEntryDescriptor.close()  
   
 
-### markValid ###
+### markValid() ###
   
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY  
@@ -137,14 +137,14 @@ Marks the entry as valid so that others can use it and get only readonly
 access when the entry is held by the 1st writer.  
   
 
-### maybeMarkValid ###
+### maybeMarkValid() ###
   
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY  
 Marks the entry as valid when write access is acquired.  
   
 
-### hasWriteAccess ###
+### hasWriteAccess(aWriteAllowed) ###
   
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK  

@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### getTabToStream ###
+### getTabToStream() ###
 
-### notifyStreamStart ###
+### notifyStreamStart(window) ###
 
-### notifyStreamStop ###
+### notifyStreamStop(window) ###

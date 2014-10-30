@@ -9,7 +9,7 @@ nsIRequest
 
 ## Methods ##
 
-### isPending ###
+### isPending() ###
   
 Indicates whether the request is pending. nsIRequest::isPending is  
 true when there is an outstanding asynchronous event that will make  
@@ -26,7 +26,7 @@ Requests can become pending multiple times during their lifetime.
 @note Suspended requests are still considered pending.  
   
 
-### cancel ###
+### cancel(aStatus) ###
   
 Cancels the current request.  This will close any open input or  
 output streams and terminate any async requests.  Users should   
@@ -49,7 +49,7 @@ be a success code such as NS_OK.  In general, aStatus should be
 a failure code.  
   
 
-### suspend ###
+### suspend() ###
   
 Suspends the current request.  This may have the effect of closing  
 any underlying transport (in order to free up resources), although  
@@ -65,7 +65,7 @@ general, callers should be capable of handling events even after
 suspending a request.  
   
 
-### resume ###
+### resume() ###
   
 Resumes the current request.  This may have the effect of re-opening  
 any underlying transport and will resume the delivery of data to   

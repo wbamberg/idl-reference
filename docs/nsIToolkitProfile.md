@@ -11,7 +11,7 @@ A interface representing a profile.
 
 ## Methods ##
 
-### remove ###
+### remove(removeFiles) ###
   
 Removes the profile from the registry of profiles.  
   
@@ -20,7 +20,7 @@ Removes the profile from the registry of profiles.
        removed in addition.  
   
 
-### lock ###
+### lock(aUnlocker) ###
   
 Lock this profile using platform-specific locking methods.  
   

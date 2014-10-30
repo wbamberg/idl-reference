@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### debugDump ###
+### debugDump(depth) ###
 
-### aggregatedQueryInterface ###
+### aggregatedQueryInterface(uuid, result) ###
 
 ## Attributes ##
 

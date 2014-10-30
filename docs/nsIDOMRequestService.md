@@ -6,18 +6,18 @@ layout: default
 
 ## Methods ##
 
-### createRequest ###
+### createRequest(window) ###
 
-### createCursor ###
+### createCursor(window, aCallback) ###
 
-### fireSuccess ###
+### fireSuccess(request, result) ###
 
-### fireError ###
+### fireError(request, error) ###
 
-### fireDetailedError ###
+### fireDetailedError(request, error) ###
 
-### fireSuccessAsync ###
+### fireSuccessAsync(request, result) ###
 
-### fireErrorAsync ###
+### fireErrorAsync(request, error) ###
 
-### fireDone ###
+### fireDone(cursor) ###

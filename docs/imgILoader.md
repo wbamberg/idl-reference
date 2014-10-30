@@ -13,7 +13,7 @@ imgILoader interface
 
 ## Methods ##
 
-### loadImageXPCOM ###
+### loadImageXPCOM(aURI, aInitialDocumentURL, aReferrerURI, aLoadingPrincipal, aLoadGroup, aObserver, aCX, aLoadFlags, cacheKey, aContentPolicyType) ###
   
 Start the load and decode of an image.  
 @param aURI the URI to load  
@@ -37,7 +37,7 @@ make sure to Cancel() the resulting request before the observer
 goes away.  
   
 
-### loadImageWithChannelXPCOM ###
+### loadImageWithChannelXPCOM(aChannel, aObserver, cx, aListener) ###
   
 Start the load and decode of an image.  
 @param aChannel the channel to load the image from.  This must  

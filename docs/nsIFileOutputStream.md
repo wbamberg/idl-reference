@@ -9,7 +9,7 @@ An output stream that lets you stream to a file.
 
 ## Methods ##
 
-### init ###
+### init(file, ioFlags, perm, behaviorFlags) ###
   
 @param file          file to write to  
 @param ioFlags       file open flags listed in prio.h (see  

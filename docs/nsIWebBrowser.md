@@ -13,7 +13,7 @@ to obtain the content DOM window and from that the rest of the DOM.
 
 ## Methods ##
 
-### addWebBrowserListener ###
+### addWebBrowserListener(aListener, aIID) ###
   
 Registers a listener of the type specified by the iid to receive  
 callbacks. The browser stores a weak reference to the listener  
@@ -44,7 +44,7 @@ the IID is that of the interface.
         specified by the IID.  
   
 
-### removeWebBrowserListener ###
+### removeWebBrowserListener(aListener, aIID) ###
   
 Removes a previously registered listener.  
   

@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### match ###
+### match(aContext, aString, aRegEx, aFlags) ###
 
-### replace ###
+### replace(aString, aRegEx, aFlags, aReplace) ###
 
-### test ###
+### test(aString, aRegEx, aFlags) ###

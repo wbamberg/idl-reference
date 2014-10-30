@@ -62,7 +62,7 @@ nsPrincipal is fixed to serialize its URIs as nsISupports (bug 662693).
 
 ## Methods ##
 
-### equals ###
+### equals(other) ###
 ********************************************************************  
 An URI supports the following methods:  
   
@@ -72,19 +72,19 @@ URI equivalence test (not a strict string comparison).
 eg. http://foo.com:80/ == http://foo.com/  
   
 
-### schemeIs ###
+### schemeIs(scheme) ###
   
 An optimization to do scheme checks without requiring the users of nsIURI  
 to GetScheme, thereby saving extra allocating and freeing. Returns true if  
 the schemes match (case ignored).  
   
 
-### clone ###
+### clone() ###
   
 Clones the current URI.  
   
 
-### resolve ###
+### resolve(relativePath) ###
   
 This method resolves a relative string into an absolute URI string,  
 using this URI as the base.   
@@ -92,7 +92,7 @@ using this URI as the base.
 NOTE: some implementations may have no concept of a relative URI.  
   
 
-### equalsExceptRef ###
+### equalsExceptRef(other) ###
   
 URI equivalence test (not a strict string comparison), ignoring  
 the value of the .ref member.  
@@ -101,7 +101,7 @@ eg. http://foo.com/# == http://foo.com/
     http://foo.com/#aaa == http://foo.com/#bbb  
   
 
-### cloneIgnoringRef ###
+### cloneIgnoringRef() ###
   
 Clones the current URI, clearing the 'ref' attribute in the clone.  
   

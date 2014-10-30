@@ -11,7 +11,7 @@ extensions/plugins.
 
 ## Methods ##
 
-### prompt ###
+### prompt(aAddons, aCount) ###
   
 Prompt the user about newly blocked addons. The prompt is then resposible  
 for soft-blocking any addons that need to be afterwards  

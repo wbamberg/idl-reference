@@ -13,17 +13,17 @@ http://www.w3.org/TR/DOM-Level-2-Style
 
 ## Methods ##
 
-### setFloatValue ###
+### setFloatValue(unitType, floatValue) ###
 
-### getFloatValue ###
+### getFloatValue(unitType) ###
 
-### setStringValue ###
+### setStringValue(stringType, stringValue) ###
 
-### getStringValue ###
+### getStringValue() ###
 
-### getCounterValue ###
+### getCounterValue() ###
 
-### getRectValue ###
+### getRectValue() ###
 
 ## Attributes ##
 

@@ -13,7 +13,7 @@ cannot be instantiated directly.
 
 ## Methods ##
 
-### invalidate ###
+### invalidate() ###
   
 Invalidates the taskbar's cached image of this preview, forcing a redraw  
 if necessary  

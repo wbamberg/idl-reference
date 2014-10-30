@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onContentPrefSet ###
+### onContentPrefSet(aGroup, aName, aValue) ###
   
 Called when a content pref is set to a different value.  
   
@@ -16,7 +16,7 @@ Called when a content pref is set to a different value.
 @param    aValue      the new value of the pref  
   
 
-### onContentPrefRemoved ###
+### onContentPrefRemoved(aGroup, aName) ###
   
 Called when a content pref is removed.  
   

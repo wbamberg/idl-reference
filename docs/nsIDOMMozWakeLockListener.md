@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### callback ###
+### callback(aTopic, aState) ###
   
 The callback will be called when a lock topic changes its lock  
 state.  

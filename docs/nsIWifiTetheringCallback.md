@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### wifiTetheringEnabledChange ###
+### wifiTetheringEnabledChange(error) ###
   
 Callback function used to report status to WifiManager.  
   

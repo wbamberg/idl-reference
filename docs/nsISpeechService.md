@@ -19,7 +19,7 @@ A service's speak method could be implemented in two ways:
 
 ## Methods ##
 
-### speak ###
+### speak(aText, aUri, aRate, aPitch, aTask) ###
   
 Speak the given text using the voice identified byu the given uri. See  
 W3C Speech API spec for information about pitch and rate.  

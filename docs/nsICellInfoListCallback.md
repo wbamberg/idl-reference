@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### notifyGetCellInfoList ###
+### notifyGetCellInfoList(count, result) ###
   
 result is an array of nsICellInfo, which could be instances of  
 nsIGsmCellInfo, nsIWcdmaCellInfo, nsICdmaCellInfo or nsILteCellInfo.  
   
 
-### notifyGetCellInfoListFailed ###
+### notifyGetCellInfoListFailed(error) ###
   
 Callback function with error message.  
   

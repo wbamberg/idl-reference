@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### notifyGetNeighboringCellIds ###
+### notifyGetNeighboringCellIds(count, result) ###
   
 result is an array of nsINeighboringCellInfo.  
   
 
-### notifyGetNeighboringCellIdsFailed ###
+### notifyGetNeighboringCellIdsFailed(error) ###
   
 Callback function with error message.  
   

@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### onRegister ###
+### onRegister(debugger) ###
 
-### onUnregister ###
+### onUnregister(debugger) ###

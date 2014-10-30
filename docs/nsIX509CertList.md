@@ -6,15 +6,15 @@ layout: default
 
 ## Methods ##
 
-### addCert ###
+### addCert(cert) ###
 
-### deleteCert ###
+### deleteCert(cert) ###
 
-### getEnumerator ###
+### getEnumerator() ###
 
-### getRawCertList ###
+### getRawCertList() ###
 
-### equals ###
+### equals(other) ###
   
 Test whether two certificate list instances represent the same  
 certificate list.  

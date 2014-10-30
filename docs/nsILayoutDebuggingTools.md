@@ -10,23 +10,23 @@ layout debugging functions to be used from chrome.
 
 ## Methods ##
 
-### init ###
+### init(win) ###
 
-### newURILoaded ###
+### newURILoaded() ###
 
-### dumpWebShells ###
+### dumpWebShells() ###
 
-### dumpContent ###
+### dumpContent() ###
 
-### dumpFrames ###
+### dumpFrames() ###
 
-### dumpViews ###
+### dumpViews() ###
 
-### dumpStyleSheets ###
+### dumpStyleSheets() ###
 
-### dumpStyleContexts ###
+### dumpStyleContexts() ###
 
-### dumpReflowStats ###
+### dumpReflowStats() ###
 
 ## Attributes ##
 

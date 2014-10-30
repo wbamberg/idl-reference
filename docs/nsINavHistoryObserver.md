@@ -13,19 +13,19 @@ database transaction active. You can still access the DB, but be careful.
 
 ## Methods ##
 
-### onBeginUpdateBatch ###
+### onBeginUpdateBatch() ###
   
 Notifies you that a bunch of things are about to change, don't do any  
 heavy-duty processing until onEndUpdateBatch is called.  
   
 
-### onEndUpdateBatch ###
+### onEndUpdateBatch() ###
   
 Notifies you that we are done doing a bunch of things and you should go  
 ahead and update UI, etc.  
   
 
-### onVisit ###
+### onVisit(aURI, aVisitID, aTime, aSessionID, aReferringID, aTransitionType, aGUID, aHidden) ###
   
 Called when a resource is visited. This is called the first time a  
 resource (page, image, etc.) is seen as well as every subsequent time.  
@@ -44,7 +44,7 @@ includeHidden is set). Many observers can ignore _EMBED notifications
 @param aHidden         Whether the visited page is marked as hidden.  
   
 
-### onTitleChanged ###
+### onTitleChanged(aURI, aPageTitle, aGUID) ###
   
 Called whenever either the "real" title or the custom title of the page  
 changed. BOTH TITLES ARE ALWAYS INCLUDED in this notification, even though  
@@ -66,7 +66,7 @@ empty string in either case).
        The unique ID associated with the page.  
   
 
-### onFrecencyChanged ###
+### onFrecencyChanged(aURI, aNewFrecency, aGUID, aHidden, aVisitDate) ###
   
 Called when an individual page's frecency has changed.  
   
@@ -86,14 +86,14 @@ once.  Use onManyFrecenciesChanged to detect such changes.
        The page's last visit date.  
   
 
-### onManyFrecenciesChanged ###
+### onManyFrecenciesChanged() ###
   
 Called when the frecencies of many pages have changed at once.  
   
 onFrecencyChanged is not called for each of those pages.  
   
 
-### onDeleteURI ###
+### onDeleteURI(aURI, aGUID, aReason) ###
   
 This page and all of its visits are being deleted. Note: the page may not  
 necessarily have actually existed for this function to be called.  
@@ -112,12 +112,12 @@ way around this.
        Indicates the reason for the removal.  see REASON_* constants.  
   
 
-### onClearHistory ###
+### onClearHistory() ###
   
 Notification that all of history is being deleted.  
   
 
-### onPageChanged ###
+### onPageChanged(aURI, aChangedAttribute, aNewValue, aGUID) ###
   
 An attribute of this page changed.  
   
@@ -131,7 +131,7 @@ An attribute of this page changed.
        The unique ID associated with the page.  
   
 
-### onDeleteVisits ###
+### onDeleteVisits(aURI, aVisitTime, aGUID, aReason, aTransitionType) ###
   
 Called when some visits of an history entry are expired.  
   

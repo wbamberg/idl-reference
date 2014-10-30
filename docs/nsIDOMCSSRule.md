@@ -13,7 +13,7 @@ http://www.w3.org/TR/DOM-Level-2-Style
 
 ## Methods ##
 
-### getCSSRule ###
+### getCSSRule() ###
 
 ## Attributes ##
 

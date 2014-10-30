@@ -66,29 +66,29 @@ while the cycle collector is running. To analyze cycle collection data in JS:
 
 ## Methods ##
 
-### allTraces ###
+### allTraces() ###
 
-### begin ###
+### begin() ###
 
-### noteRefCountedObject ###
+### noteRefCountedObject(aAddress, aRefCount, aObjectDescription) ###
 
-### noteGCedObject ###
+### noteGCedObject(aAddress, aMarked, aObjectDescription, aCompartmentAddress) ###
 
-### noteEdge ###
+### noteEdge(aToAddress, aEdgeName) ###
 
-### noteWeakMapEntry ###
+### noteWeakMapEntry(aMap, aKey, aKeyDelegate, aValue) ###
 
-### noteIncrementalRoot ###
+### noteIncrementalRoot(aAddress) ###
 
-### beginResults ###
+### beginResults() ###
 
-### describeRoot ###
+### describeRoot(aAddress, aKnownEdges) ###
 
-### describeGarbage ###
+### describeGarbage(aAddress) ###
 
-### end ###
+### end() ###
 
-### processNext ###
+### processNext(aHandler) ###
 
 ## Attributes ##
 

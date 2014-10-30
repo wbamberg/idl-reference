@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### share ###
+### share(data, title) ###

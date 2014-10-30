@@ -11,7 +11,7 @@ the bytes from a selected character encoding.
 
 ## Methods ##
 
-### init ###
+### init(aStream, aCharset, aBufferSize, aReplacementChar) ###
   
 Initialize this stream.  
 @param aStream   

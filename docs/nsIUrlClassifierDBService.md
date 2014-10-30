@@ -11,7 +11,7 @@ methods complete, they call the callback function.
 
 ## Methods ##
 
-### lookup ###
+### lookup(principal, tables, c) ###
   
 Looks up a URI in the specified tables.  
   
@@ -20,7 +20,7 @@ Looks up a URI in the specified tables.
        of tables to which the key belongs.  
   
 
-### getTables ###
+### getTables(c) ###
   
 Lists the tables along with which chunks are available in each table.  
 This list is in the format of the request body:  
@@ -32,14 +32,14 @@ For example:
   goog-white-regexp;a:1-3,5  
   
 
-### setHashCompleter ###
+### setHashCompleter(tableName, completer) ###
   
 Set the nsIUrlClassifierCompleter object for a given table.  This  
 object will be used to request complete versions of partial  
 hashes.  
   
 
-### beginUpdate ###
+### beginUpdate(updater, tables) ###
   
 Begin an update process.  Will throw NS_ERROR_NOT_AVAILABLE if there  
 is already an update in progress.  
@@ -48,7 +48,7 @@ is already an update in progress.
 @param tables A comma-separated list of tables included in this update.  
   
 
-### beginStream ###
+### beginStream(table) ###
   
 Begin a stream update.  This should be called once per url being  
 fetched.  
@@ -57,12 +57,12 @@ fetched.
              with, or empty for the initial stream.  
   
 
-### updateStream ###
+### updateStream(updateChunk) ###
   
 Update the table incrementally.  
   
 
-### finishStream ###
+### finishStream() ###
   
 Finish an individual stream update.  Must be called for every  
 beginStream() call, before the next beginStream() or finishUpdate().  
@@ -71,7 +71,7 @@ The update observer's streamFinished will be called once the
 stream has been processed.  
   
 
-### finishUpdate ###
+### finishUpdate() ###
   
 Finish an incremental update.  This will attempt to commit any  
 pending changes and resets the update interface.  
@@ -80,7 +80,7 @@ The update observer's updateSucceeded or updateError methods
 will be called when the update has been processed.  
   
 
-### cancelUpdate ###
+### cancelUpdate() ###
   
 Cancel an incremental update.  This rolls back any pending changes.  
 and resets the update interface.  
@@ -89,7 +89,7 @@ The update observer's updateError method will be called when the
 update has been rolled back.  
   
 
-### resetDatabase ###
+### resetDatabase() ###
   
 Reset the url-classifier database.  This call will delete the existing  
 database, emptying all tables.  Mostly intended for use in unit tests.  

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getText ###
+### getText(startOffset, endOffset) ###
   
 String methods may need to return multibyte-encoded strings,  
 since some locales can't be encoded using 16-bit chars.  
@@ -14,19 +14,19 @@ So the methods below might return UTF-16 strings, or they could
 return "string" values which are UTF-8.  
   
 
-### getTextAfterOffset ###
+### getTextAfterOffset(offset, boundaryType, startOffset, endOffset) ###
 
-### getTextAtOffset ###
+### getTextAtOffset(offset, boundaryType, startOffset, endOffset) ###
 
-### getTextBeforeOffset ###
+### getTextBeforeOffset(offset, boundaryType, startOffset, endOffset) ###
 
-### getCharacterAtOffset ###
+### getCharacterAtOffset(offset) ###
   
 It would be better to return an unsigned long here,  
 to allow unicode chars > 16 bits  
   
 
-### getTextAttributes ###
+### getTextAttributes(includeDefAttrs, offset, rangeStartOffset, rangeEndOffset) ###
   
 Get the accessible start/end offsets around the given offset,  
 return the text attributes for this range of text.  
@@ -38,7 +38,7 @@ return the text attributes for this range of text.
 @param  rangeEndOffset    [out] end offset of the range of text  
   
 
-### getCharacterExtents ###
+### getCharacterExtents(offset, x, y, width, height, coordType) ###
   
 Returns the bounding box of the specified position.  
   
@@ -64,9 +64,9 @@ not degenerate.
                    nsIAccessibleCoordinateType).  
   
 
-### getRangeExtents ###
+### getRangeExtents(startOffset, endOffset, x, y, width, height, coordType) ###
 
-### getOffsetAtPoint ###
+### getOffsetAtPoint(x, y, coordType) ###
   
 Get the text offset at the given point, or return -1  
 if no character exists at that point  
@@ -82,18 +82,18 @@ if no character exists at that point
                  the point.  
   
 
-### getSelectionBounds ###
+### getSelectionBounds(selectionNum, startOffset, endOffset) ###
 
-### setSelectionBounds ###
+### setSelectionBounds(selectionNum, startOffset, endOffset) ###
   
 Set the bounds for the given selection range  
   
 
-### addSelection ###
+### addSelection(startOffset, endOffset) ###
 
-### removeSelection ###
+### removeSelection(selectionNum) ###
 
-### scrollSubstringTo ###
+### scrollSubstringTo(startIndex, endIndex, scrollType) ###
   
 Makes a specific part of string visible on screen.  
   
@@ -105,7 +105,7 @@ Makes a specific part of string visible on screen.
                    available constants)  
   
 
-### scrollSubstringToPoint ###
+### scrollSubstringToPoint(startIndex, endIndex, coordinateType, x, y) ###
   
 Moves the top left of a substring to a specified location.  
   
@@ -119,12 +119,12 @@ Moves the top left of a substring to a specified location.
 @param y               defines the y coordinate  
   
 
-### getRangeByChild ###
+### getRangeByChild(child) ###
   
 Return a range containing the given accessible.  
   
 
-### getRangeAtPoint ###
+### getRangeAtPoint(x, y) ###
   
 Return a range containing an accessible at the given point.  
   

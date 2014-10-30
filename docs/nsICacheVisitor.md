@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### visitDevice ###
+### visitDevice(deviceID, deviceInfo) ###
   
 Called to provide information about a cache device.  
   
@@ -17,7 +17,7 @@ Called to provide information about a cache device.
 @return false to advance to the next device.  
   
 
-### visitEntry ###
+### visitEntry(deviceID, entryInfo) ###
   
 Called to provide information about a cache entry.  
   

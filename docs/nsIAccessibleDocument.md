@@ -16,7 +16,7 @@ nsIAccessible::GetDocument().
 
 ## Methods ##
 
-### getChildDocumentAt ###
+### getChildDocumentAt(index) ###
   
 Return the child document accessible at the given index.  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### unlock ###
+### unlock(aSeverity) ###
   
 Try to unlock the specified profile by attempting or forcing the  
 process that currently holds the lock to quit.  

@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### ConvertAndEscape ###
+### ConvertAndEscape(charset, text) ###
 
-### UnEscapeAndConvert ###
+### UnEscapeAndConvert(charset, text) ###
 
-### unEscapeURIForUI ###
+### unEscapeURIForUI(aCharset, aURIFragment) ###
   
 Unescapes the given URI fragment (for UI purpose only)  
 Note:   
@@ -27,7 +27,7 @@ Note:
 @return Unescaped aURIFragment  converted to unicode  
   
 
-### unEscapeNonAsciiURI ###
+### unEscapeNonAsciiURI(aCharset, aURIFragment) ###
   
 Unescapes only non ASCII characters in the given URI fragment   
 note: this method assumes the URI as UTF-8 and fallbacks to the given   

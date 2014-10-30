@@ -13,7 +13,7 @@ blocking the main thread.
 
 ## Methods ##
 
-### createInputTransport ###
+### createInputTransport(aStream, aStartOffset, aReadLimit, aCloseWhenDone) ###
   
 CreateInputTransport  
   
@@ -34,7 +34,7 @@ CreateInputTransport
 @return nsITransport instance.  
   
 
-### createOutputTransport ###
+### createOutputTransport(aStream, aStartOffset, aWriteLimit, aCloseWhenDone) ###
   
 CreateOutputTransport  
   

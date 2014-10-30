@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### getInfoForIID ###
+### getInfoForIID(iid) ###
 
-### getInfoForName ###
+### getInfoForName(name) ###
 
-### getIIDForName ###
+### getIIDForName(name) ###
 
-### getNameForIID ###
+### getNameForIID(iid) ###
 
-### autoRegisterInterfaces ###
+### autoRegisterInterfaces() ###
 
-### enumerateInterfacesWhoseNamesStartWith ###
+### enumerateInterfacesWhoseNamesStartWith(prefix) ###

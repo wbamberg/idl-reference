@@ -10,7 +10,7 @@ content.
 
 ## Methods ##
 
-### ask ###
+### ask(aHandler, aWindowContext, aURI, aReason) ###
   
 Asks the user what to do with the content.  
   

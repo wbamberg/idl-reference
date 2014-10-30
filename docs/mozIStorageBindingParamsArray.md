@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### newBindingParams ###
+### newBindingParams() ###
   
 Creates a new mozIStorageBindingParams object that can be added to this  
 array.  
@@ -15,7 +15,7 @@ array.
         parameters that need to be bound.  
   
 
-### addParams ###
+### addParams(aParameters) ###
   
 Adds the parameters to the end of this array.  
   

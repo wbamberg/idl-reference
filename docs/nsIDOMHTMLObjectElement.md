@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### checkValidity ###
+### checkValidity() ###
 
-### setCustomValidity ###
+### setCustomValidity(error) ###
 
 ## Attributes ##
 

@@ -11,7 +11,7 @@ It is used in the server socket implementation on the parent side.
 
 ## Methods ##
 
-### sendCallbackAccept ###
+### sendCallbackAccept(socket) ###
   
 Trigger a callback in the content process when the socket accepts any request.  
   
@@ -19,7 +19,7 @@ Trigger a callback in the content process when the socket accepts any request.
        The socket generated in accepting any open request on the parent side.  
   
 
-### sendCallbackError ###
+### sendCallbackError(message, filename, lineNumber, columnNumber) ###
   
 Trigger a callback in the content process when an error occurs.  
   

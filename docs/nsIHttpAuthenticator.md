@@ -17,7 +17,7 @@ found in the server challenge per the rules of RFC 2617.
 
 ## Methods ##
 
-### challengeReceived ###
+### challengeReceived(aChannel, aChallenge, aProxyAuth, aSessionState, aContinuationState, aInvalidatesIdentity) ###
   
 Upon receipt of a server challenge, this function is called to determine  
 whether or not the current user identity has been rejected.  If true,  
@@ -43,7 +43,7 @@ return value will be ignored, and user prompting will be suppressed.
        revised identity.  
   
 
-### generateCredentials ###
+### generateCredentials(aChannel, aChallenge, aProxyAuth, aDomain, aUser, aPassword, aSessionState, aContinuationState, aFlags) ###
   
 Called to generate the authentication credentials for a particular  
 server/proxy challenge.  This is the value that will be sent back  

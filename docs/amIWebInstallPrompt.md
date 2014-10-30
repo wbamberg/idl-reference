@@ -11,7 +11,7 @@ installs.
 
 ## Methods ##
 
-### confirm ###
+### confirm(aWindow, aUri, aInstalls, aCount) ###
   
 Get a confirmation that the user wants to start the installs.  
   

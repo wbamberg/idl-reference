@@ -11,7 +11,7 @@ Do not use this interface. Instead, write:
 
 ## Methods ##
 
-### addClass ###
+### addClass(global) ###
   
 Define the global Debugger constructor on a given global.  
   

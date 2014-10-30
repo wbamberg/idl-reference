@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### setData ###
+### setData(data, len) ###
 
-### getData ###
+### getData(data, len) ###

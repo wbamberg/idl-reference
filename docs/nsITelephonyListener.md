@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### callStateChanged ###
+### callStateChanged(clientId, callIndex, callState, number, numberPresentation, name, namePresentation, isOutgoing, isEmergency, isConference, isSwitchable, isMergeable) ###
   
 Notified when a telephony call changes state.  
   
@@ -40,7 +40,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        Indicates whether this call be be added into a conference.  
   
 
-### conferenceCallStateChanged ###
+### conferenceCallStateChanged(callState) ###
   
 Called when participants of a conference call have been updated, and the  
 conference call state changes.  
@@ -51,13 +51,13 @@ conference call state changes.
        nsITelephonyService::CALL_STATE_CONNECTED.  
   
 
-### enumerateCallStateComplete ###
+### enumerateCallStateComplete() ###
   
 Called when enumeration asked by nsITelephonyService::enumerateCalls  
 is completed.  
   
 
-### enumerateCallState ###
+### enumerateCallState(clientId, callIndex, callState, number, numberPresentation, name, namePresentation, isOutgoing, isEmergency, isConference, isSwitchable, isMergeable) ###
   
 Called when nsITelephonyService is asked to enumerate the current  
 telephony call state (nsITelephonyService::enumerateCalls). This is  
@@ -91,7 +91,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        Indicates whether this call be be added into a conference.  
   
 
-### supplementaryServiceNotification ###
+### supplementaryServiceNotification(clientId, callIndex, notification) ###
   
 Notify when RIL receives supplementary service notification.  
   
@@ -103,7 +103,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        One of the nsITelephonyService::NOTIFICATION_* values.  
   
 
-### notifyError ###
+### notifyError(clientId, callIndex, error) ###
   
 Called when RIL error occurs.  
   
@@ -115,7 +115,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        Error from RIL.  
   
 
-### notifyCdmaCallWaiting ###
+### notifyCdmaCallWaiting(clientId, number, numberPresentation, name, namePresentation) ###
   
 Called when a waiting call comes in CDMA networks.  
   
@@ -133,7 +133,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        One of the nsITelephonyProvider::CALL_PRESENTATION_* values.  
   
 
-### notifyConferenceError ###
+### notifyConferenceError(name, message) ###
   
 Called when RIL error occurs to creating or separating a conference call.  
   

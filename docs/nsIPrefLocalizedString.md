@@ -16,14 +16,14 @@ files.
 
 ## Methods ##
 
-### toString ###
+### toString() ###
   
 Used to retrieve the contents of this object into a wide string.  
   
 @return wstring The string containing the data stored within this object.  
   
 
-### setDataWithLength ###
+### setDataWithLength(length, data) ###
   
 Used to set the contents of this object.  
   

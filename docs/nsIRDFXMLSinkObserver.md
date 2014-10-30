@@ -10,31 +10,31 @@ of an RDF/XML document in an <code>nsIRDFXMLSink</code>.
 
 ## Methods ##
 
-### onBeginLoad ###
+### onBeginLoad(aSink) ###
   
 Called when the load begins.  
 @param aSink the RDF/XML sink on which the load is beginning.  
   
 
-### onInterrupt ###
+### onInterrupt(aSink) ###
   
 Called when the load is suspended (e.g., for network quantization).  
 @param aSink the RDF/XML sink that is being interrupted.  
   
 
-### onResume ###
+### onResume(aSink) ###
   
 Called when a suspended load is resuming.  
 @param aSink the RDF/XML sink that is resuming.  
   
 
-### onEndLoad ###
+### onEndLoad(aSink) ###
   
 Called when an RDF/XML load completes successfully.  
 @param aSink the RDF/XML sink that has finished loading.  
   
 
-### onError ###
+### onError(aSink, aStatus, aErrorMsg) ###
   
 Called when an error occurs during the load  
 @param aSink the RDF/XML sink in which the error occurred  

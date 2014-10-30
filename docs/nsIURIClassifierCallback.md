@@ -9,7 +9,7 @@ Callback function for nsIURIClassifier lookups.
 
 ## Methods ##
 
-### onClassifyComplete ###
+### onClassifyComplete(aErrorCode) ###
   
 Called by the URI classifier service when it is done checking a URI.  
   

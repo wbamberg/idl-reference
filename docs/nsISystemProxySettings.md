@@ -13,7 +13,7 @@ or generate proxy data based on the system's manual proxy settings.
 
 ## Methods ##
 
-### getProxyForURI ###
+### getProxyForURI(testSpec, testScheme, testHost, testPort) ###
   
 See ProxyAutoConfig::getProxyForURI; this function behaves similarly except  
 a more relaxed return string is allowed that includes full urls instead of just  

@@ -6,10 +6,10 @@ layout: default
 
 ## Methods ##
 
-### open ###
+### open(parent, host, port, useSSL, binaryType, appId) ###
 
-### listen ###
+### listen(parent, port, backlog, binaryType) ###
 
-### onRecvSendString ###
+### onRecvSendString(data, trackingNumber) ###
 
-### onRecvSendArrayBuffer ###
+### onRecvSendArrayBuffer(data, trackingNumber) ###

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### EnumerateAllFonts ###
+### EnumerateAllFonts(aCount, aResult) ###
   
 Return a sorted array of the names of all installed fonts.  
   
@@ -15,7 +15,7 @@ Return a sorted array of the names of all installed fonts.
 @return void  
   
 
-### EnumerateFonts ###
+### EnumerateFonts(aLangGroup, aGeneric, aCount, aResult) ###
   
 Return a sorted array of names of fonts that support the given language  
 group and are suitable for use as the given CSS generic font.  
@@ -27,26 +27,26 @@ group and are suitable for use as the given CSS generic font.
 @return void  
   
 
-### HaveFontFor ###
+### HaveFontFor(aLangGroup, aResult) ###
   
 @param  aLangGroup language group  
 @return bool do we have a font for this language group  
   
 
-### getDefaultFont ###
+### getDefaultFont(aLangGroup, aGeneric) ###
   
 @param  aLangGroup language group  
 @param  aGeneric CSS generic font  
 @return suggested default font for this language group and generic family  
   
 
-### updateFontList ###
+### updateFontList() ###
   
 update the global font list  
 return true if font list is changed  
   
 
-### getStandardFamilyName ###
+### getStandardFamilyName(aName) ###
   
 get the standard family name on the system from given family  
 @param  aName family name which may be alias  

@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### sendMessage ###
+### sendMessage(type, message, pageURI, manifestURI, extra) ###
 
-### broadcastMessage ###
+### broadcastMessage(type, message, extra) ###
 
-### registerPage ###
+### registerPage(type, pageURI, manifestURI) ###

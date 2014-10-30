@@ -12,7 +12,7 @@ with the nsIControllerCommandTable.
 
 ## Methods ##
 
-### isCommandEnabled ###
+### isCommandEnabled(aCommandName, aCommandContext) ###
   
 Returns true if the command is currently enabled. An nsIControllerCommand  
 can implement more than one commands; say, a group of related commands  
@@ -26,9 +26,9 @@ passed to each method.
                  The contents of this cookie are implementation-defined.  
   
 
-### getCommandStateParams ###
+### getCommandStateParams(aCommandName, aParams, aCommandContext) ###
 
-### doCommand ###
+### doCommand(aCommandName, aCommandContext) ###
   
 Execute the name command.  
   
@@ -39,4 +39,4 @@ Execute the name command.
                  The contents of this cookie are implementation-defined.  
   
 
-### doCommandParams ###
+### doCommandParams(aCommandName, aParams, aCommandContext) ###

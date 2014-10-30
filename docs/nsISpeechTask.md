@@ -10,7 +10,7 @@ to the service in the speak() method.
 
 ## Methods ##
 
-### setup ###
+### setup(aCallback, aChannels, aRate) ###
   
 Prepare browser for speech.  
   
@@ -20,7 +20,7 @@ Prepare browser for speech.
 @param aRate     audio rate. Only required in direct audio services  
   
 
-### sendAudio ###
+### sendAudio(aData, aLandmarks) ###
   
 Send audio data to browser.  
   
@@ -29,14 +29,14 @@ Send audio data to browser.
                     Used for emiting boundary and mark events.  
   
 
-### sendAudioNative ###
+### sendAudioNative(aData, aDataLen) ###
 
-### dispatchStart ###
+### dispatchStart() ###
   
 Dispatch start event.  
   
 
-### dispatchEnd ###
+### dispatchEnd(aElapsedTime, aCharIndex) ###
   
 Dispatch end event.  
   
@@ -44,7 +44,7 @@ Dispatch end event.
 @param aCharIndex   offset of spoken characters.  
   
 
-### dispatchPause ###
+### dispatchPause(aElapsedTime, aCharIndex) ###
   
 Dispatch pause event. Should not be called directly by service.  
   
@@ -52,7 +52,7 @@ Dispatch pause event. Should not be called directly by service.
 @param aCharIndex   offset of spoken characters.  
   
 
-### dispatchResume ###
+### dispatchResume(aElapsedTime, aCharIndex) ###
   
 Dispatch resume event. Should not be called directly by service.  
   
@@ -60,7 +60,7 @@ Dispatch resume event. Should not be called directly by service.
 @param aCharIndex   offset of spoken characters.  
   
 
-### dispatchError ###
+### dispatchError(aElapsedTime, aCharIndex) ###
   
 Dispatch error event.  
   
@@ -68,7 +68,7 @@ Dispatch error event.
 @param aCharIndex   offset of spoken characters.  
   
 
-### dispatchBoundary ###
+### dispatchBoundary(aName, aElapsedTime, aCharIndex) ###
   
 Dispatch boundary event.  
   
@@ -77,7 +77,7 @@ Dispatch boundary event.
 @param aCharIndex   offset of spoken characters.  
   
 
-### dispatchMark ###
+### dispatchMark(aName, aElapsedTime, aCharIndex) ###
   
 Dispatch mark event.  
   

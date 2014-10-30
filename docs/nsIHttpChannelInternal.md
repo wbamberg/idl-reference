@@ -11,19 +11,19 @@ will change and you will be broken.  You have been warned.
 
 ## Methods ##
 
-### getRequestVersion ###
+### getRequestVersion(major, minor) ###
   
 Get the major/minor version numbers for the request  
   
 
-### getResponseVersion ###
+### getResponseVersion(major, minor) ###
   
 Get the major/minor version numbers for the response  
   
 
-### takeAllSecurityMessages ###
+### takeAllSecurityMessages(aMessages) ###
 
-### setCookie ###
+### setCookie(aCookieHeader) ###
   
 Helper method to set a cookie with a consumer-provided  
 cookie header, _but_ using the channel's other information  
@@ -33,17 +33,17 @@ cookie header, _but_ using the channel's other information
        The cookie header to be parsed.  
   
 
-### setupFallbackChannel ###
+### setupFallbackChannel(aFallbackKey) ###
   
 Setup this channel as an application cache fallback channel.  
   
 
-### setCacheKeysRedirectChain ###
+### setCacheKeysRedirectChain(cacheKeys) ###
   
 Transfer chain of redirected cache-keys.  
   
 
-### HTTPUpgrade ###
+### HTTPUpgrade(aProtocolName, aListener) ###
   
 HTTPUpgrade allows for the use of HTTP to bootstrap another protocol  
 via the RFC 2616 Upgrade request header in conjunction with a 101 level  
@@ -62,13 +62,13 @@ is delievered.
        The callback object used to handle a successful upgrade  
   
 
-### addRedirect ###
+### addRedirect(aPrincipal) ###
   
 Add a new nsIPrincipal to the redirect chain. This is the only way to  
 write to nsIRedirectHistory.redirects.  
   
 
-### forceNoIntercept ###
+### forceNoIntercept() ###
   
 Force a channel that has not been AsyncOpen'ed to skip any check for possible  
 interception and proceed immediately to the network/cache.  

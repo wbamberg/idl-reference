@@ -10,7 +10,7 @@ wish to receive callbacks during the request execution.
 
 ## Methods ##
 
-### onProgress ###
+### onProgress(aConnection) ###
   
 onProgress is invoked periodically during long running calls.  
   

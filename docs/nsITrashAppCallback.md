@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### trashAppFinished ###
+### trashAppFinished(rv) ###

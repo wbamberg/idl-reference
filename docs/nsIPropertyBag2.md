@@ -6,36 +6,36 @@ layout: default
 
 ## Methods ##
 
-### getPropertyAsInt32 ###
+### getPropertyAsInt32(prop) ###
 
-### getPropertyAsUint32 ###
+### getPropertyAsUint32(prop) ###
 
-### getPropertyAsInt64 ###
+### getPropertyAsInt64(prop) ###
 
-### getPropertyAsUint64 ###
+### getPropertyAsUint64(prop) ###
 
-### getPropertyAsDouble ###
+### getPropertyAsDouble(prop) ###
 
-### getPropertyAsAString ###
+### getPropertyAsAString(prop) ###
 
-### getPropertyAsACString ###
+### getPropertyAsACString(prop) ###
 
-### getPropertyAsAUTF8String ###
+### getPropertyAsAUTF8String(prop) ###
 
-### getPropertyAsBool ###
+### getPropertyAsBool(prop) ###
 
-### getPropertyAsInterface ###
+### getPropertyAsInterface(prop, iid, result) ###
   
 This method returns null if the value exists, but is null.  
   
 
-### get ###
+### get(prop) ###
   
 This method returns null if the value does not exist,  
 or exists but is null.  
   
 
-### hasKey ###
+### hasKey(prop) ###
   
 Check for the existence of a key.  
   

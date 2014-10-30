@@ -6,24 +6,24 @@ layout: default
 
 ## Methods ##
 
-### callListenerError ###
+### callListenerError(type, name) ###
 
-### callListenerData ###
+### callListenerData(type, data) ###
 
-### callListenerArrayBuffer ###
+### callListenerArrayBuffer(type, data) ###
 
-### callListenerVoid ###
+### callListenerVoid(type) ###
 
-### updateReadyState ###
+### updateReadyState(readyState) ###
 
-### updateBufferedAmount ###
+### updateBufferedAmount(bufferedAmount, trackingNumber) ###
 
-### createAcceptedParent ###
+### createAcceptedParent(transport, binaryType) ###
 
-### createAcceptedChild ###
+### createAcceptedChild(socketChild, binaryType, window) ###
 
-### setAppId ###
+### setAppId(appId) ###
 
-### setOnUpdateBufferedAmountHandler ###
+### setOnUpdateBufferedAmountHandler(handler) ###
 
-### onRecvSendFromChild ###
+### onRecvSendFromChild(data, byteOffset, byteLength, trackingNumber) ###

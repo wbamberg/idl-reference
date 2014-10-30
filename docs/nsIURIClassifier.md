@@ -10,7 +10,7 @@ and malware sites.
 
 ## Methods ##
 
-### classify ###
+### classify(aPrincipal, aTrackingProtectionEnabled, aCallback) ###
   
 Classify a Principal using its URI.  
   

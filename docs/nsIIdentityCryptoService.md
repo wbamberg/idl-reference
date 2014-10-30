@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### generateKeyPair ###
+### generateKeyPair(algorithm, callback) ###
 
-### base64UrlEncode ###
+### base64UrlEncode(toEncode) ###

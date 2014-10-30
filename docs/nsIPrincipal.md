@@ -6,19 +6,19 @@ layout: default
 
 ## Methods ##
 
-### equals ###
+### equals(other) ###
   
 Returns whether the other principal is equivalent to this principal.  
 Principals are considered equal if they are the same principal, or  
 they have the same origin.  
   
 
-### equalsConsideringDomain ###
+### equalsConsideringDomain(other) ###
   
 Like equals, but takes document.domain changes into account.  
   
 
-### subsumes ###
+### subsumes(other) ###
   
 Returns whether the other principal is equal to or weaker than this  
 principal. Principals are equal if they are the same object or they  
@@ -34,13 +34,13 @@ privileged, security context) is not equal to any other principal
 anything but itself.  
   
 
-### subsumesConsideringDomain ###
+### subsumesConsideringDomain(other) ###
   
 Same as the previous method, subsumes(), but takes document.domain into  
 account.  
   
 
-### checkMayLoad ###
+### checkMayLoad(uri, report, allowIfInheritsPrincipal) ###
   
 Checks whether this principal is allowed to load the network resource  
 located at the given URI under the same-origin policy. This means that  

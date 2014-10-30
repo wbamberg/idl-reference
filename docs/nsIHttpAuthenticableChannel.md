@@ -6,24 +6,24 @@ layout: default
 
 ## Methods ##
 
-### cancel ###
+### cancel(aStatus) ###
   
 Cancels the current request. See nsIRequest.  
   
 
-### setProxyCredentials ###
+### setProxyCredentials(credentials) ###
   
 Sets the Proxy-Authorization request header. An empty string  
 will clear it.  
   
 
-### setWWWCredentials ###
+### setWWWCredentials(credentials) ###
   
 Sets the Authorization request header. An empty string  
 will clear it.  
   
 
-### onAuthAvailable ###
+### onAuthAvailable() ###
   
 Called when authentication information is ready and has been set on this  
 object using setWWWCredentials/setProxyCredentials. Implementations can  
@@ -36,7 +36,7 @@ NS_ERROR_IN_PROGRESS.
 @note  Any exceptions thrown from this method should be ignored.  
   
 
-### onAuthCancelled ###
+### onAuthCancelled(userCancel) ###
   
 Notifies that the prompt was cancelled. It is called asynchronously  
 from nsIHttpChannelAuthProvider::processAuthentication if that method  

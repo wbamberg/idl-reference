@@ -10,19 +10,19 @@ instance.
 
 ## Methods ##
 
-### close ###
+### close() ###
    
 Closes the stream.   
   
 
-### init ###
+### init(aInputStream) ###
   
 Wrap the given nsIInputStream with this nsIScriptableInputStream.   
   
 @param aInputStream parameter providing the stream to wrap   
   
 
-### available ###
+### available() ###
   
 Return the number of bytes currently available in the stream   
   
@@ -31,7 +31,7 @@ Return the number of bytes currently available in the stream
 @throws NS_BASE_STREAM_CLOSED if called after the stream has been closed  
   
 
-### read ###
+### read(aCount) ###
   
 Read data from the stream.  
   
@@ -46,7 +46,7 @@ a truncated string.
 @throws NS_ERROR_NOT_INITIALIZED if init was not called  
   
 
-### readBytes ###
+### readBytes(aCount) ###
   
 Read data from the stream, including NULL bytes.  
   

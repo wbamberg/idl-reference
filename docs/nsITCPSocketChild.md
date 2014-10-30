@@ -6,19 +6,19 @@ layout: default
 
 ## Methods ##
 
-### sendOpen ###
+### sendOpen(socket, host, port, ssl, binaryType, window, windowVal) ###
 
-### sendSend ###
+### sendSend(data, byteOffset, byteLength, trackingNumber) ###
 
-### sendResume ###
+### sendResume() ###
 
-### sendSuspend ###
+### sendSuspend() ###
 
-### sendClose ###
+### sendClose() ###
 
-### sendStartTLS ###
+### sendStartTLS() ###
 
-### setSocketAndWindow ###
+### setSocketAndWindow(socket, windowVal) ###
   
 Initialize the TCP socket on the child side for IPC. It is called from the child side,  
 which is generated in receiving a notification of accepting any open request  

@@ -11,12 +11,12 @@ to the embedding chrome. See mozilla bug #70224 for gratuitous info.
 
 ## Methods ##
 
-### focusNextElement ###
+### focusNextElement() ###
   
 Set the focus at the next focusable element in the chrome.  
   
 
-### focusPrevElement ###
+### focusPrevElement() ###
   
 Set the focus at the previous focusable element in the chrome.  
   

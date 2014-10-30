@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### openSignedAppFileFinished ###
+### openSignedAppFileFinished(rv, aZipReader, aSignerCert) ###

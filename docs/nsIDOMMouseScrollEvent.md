@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initMouseScrollEvent ###
+### initMouseScrollEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg, relatedTargetArg, axis) ###
 
 ## Attributes ##
 

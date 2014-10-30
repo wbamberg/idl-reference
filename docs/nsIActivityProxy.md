@@ -9,6 +9,6 @@ Implemented by @mozilla.org/dom/activities/proxy;1
 
 ## Methods ##
 
-### startActivity ###
+### startActivity(activity, options, window) ###
 
-### cleanup ###
+### cleanup() ###

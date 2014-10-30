@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onSuccess ###
+### onSuccess(engine) ###
   
 Called to indicate that the engine addition process succeeded.  
   
@@ -14,7 +14,7 @@ Called to indicate that the engine addition process succeeded.
        The nsISearchEngine object that was added (will not be null).  
   
 
-### onError ###
+### onError(errorCode) ###
   
 Called to indicate that the engine addition process failed.  
   

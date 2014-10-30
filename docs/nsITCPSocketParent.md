@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### initJS ###
+### initJS(intermediary) ###
 
-### sendEvent ###
+### sendEvent(type, data, readyState) ###
 
-### setSocketAndIntermediary ###
+### setSocketAndIntermediary(socket, intermediary) ###
 
-### sendUpdateBufferedAmount ###
+### sendUpdateBufferedAmount(bufferedAmount, trackingNumber) ###
 
 ## Attributes ##
 

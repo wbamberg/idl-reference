@@ -20,7 +20,7 @@ be registered.
 
 ## Methods ##
 
-### error ###
+### error(locator, error) ###
   
 Receive notification of a recoverable error.  
   
@@ -44,7 +44,7 @@ well.
 @param error The error message.  
   
 
-### fatalError ###
+### fatalError(locator, error) ###
   
 Receive notification of a non-recoverable error.  
   
@@ -70,7 +70,7 @@ other events once this method has been invoked.
 @param error The error message.  
   
 
-### ignorableWarning ###
+### ignorableWarning(locator, error) ###
   
 Receive notification of a warning.  
   

@@ -18,53 +18,53 @@ http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html
 
 ## Methods ##
 
-### createElement ###
+### createElement(tagName) ###
 
-### createDocumentFragment ###
+### createDocumentFragment() ###
 
-### createTextNode ###
+### createTextNode(data) ###
 
-### createComment ###
+### createComment(data) ###
 
-### createCDATASection ###
+### createCDATASection(data) ###
 
-### createProcessingInstruction ###
+### createProcessingInstruction(target, data) ###
 
-### createAttribute ###
+### createAttribute(name) ###
 
-### getElementsByTagName ###
+### getElementsByTagName(tagname) ###
 
-### importNode ###
+### importNode(importedNode, deep) ###
 
-### createElementNS ###
+### createElementNS(namespaceURI, qualifiedName) ###
 
-### createAttributeNS ###
+### createAttributeNS(namespaceURI, qualifiedName) ###
 
-### getElementsByTagNameNS ###
+### getElementsByTagNameNS(namespaceURI, localName) ###
 
-### getElementById ###
+### getElementById(elementId) ###
 
-### adoptNode ###
+### adoptNode(source) ###
 
-### createRange ###
+### createRange() ###
   
 Create a range  
   
 @see http://html5.org/specs/dom-range.html#dom-document-createrange  
   
 
-### createNodeIterator ###
+### createNodeIterator(root, whatToShow, filter) ###
 
-### createTreeWalker ###
+### createTreeWalker(root, whatToShow, filter) ###
 
-### createEvent ###
+### createEvent(eventType) ###
 
-### hasFocus ###
+### hasFocus() ###
   
 @see <http://www.whatwg.org/html/#dom-document-hasfocus>  
   
 
-### getElementsByClassName ###
+### getElementsByClassName(classes) ###
   
 Retrieve elements matching all classes listed in a  
 space-separated string.  
@@ -72,7 +72,7 @@ space-separated string.
 @see <http://www.whatwg.org/html/#dom-document-getelementsbyclassname>  
   
 
-### enableStyleSheetsForSet ###
+### enableStyleSheetsForSet(name) ###
   
 Calling this method must change the disabled attribute on each StyleSheet  
 object with a title attribute with a length greater than 0 in the  
@@ -91,7 +91,7 @@ preferredStyleSheetSet attributes.
 @see <http://dev.w3.org/csswg/cssom/#dom-document-enableStyleSheetsForSet>  
   
 
-### elementFromPoint ###
+### elementFromPoint(x, y) ###
   
 Returns the element from the caller's document at the given point,  
 relative to the upper-left-most point in the (possibly scrolled)  
@@ -112,7 +112,7 @@ before calling this method.
 @see <http://dev.w3.org/csswg/cssom-view/#dom-document-elementfrompoint>  
   
 
-### releaseCapture ###
+### releaseCapture() ###
   
 Release the current mouse capture if it is on an element within this  
 document.  
@@ -120,7 +120,7 @@ document.
 @see <https://developer.mozilla.org/en/DOM/document.releaseCapture>  
   
 
-### mozSetImageElement ###
+### mozSetImageElement(aImageElementId, aImageElement) ###
   
 Use the given DOM element as the source image of target |-moz-element()|.  
   
@@ -151,7 +151,7 @@ unregister the image element ID |aImageElementId|.
 @see <https://developer.mozilla.org/en/DOM/document.mozSetImageElement>  
   
 
-### mozCancelFullScreen ###
+### mozCancelFullScreen() ###
   
 Causes the document to leave DOM full-screen mode, if it's in  
 full-screen mode, as per the DOM full-screen api.  
@@ -159,7 +159,7 @@ full-screen mode, as per the DOM full-screen api.
 @see <https://wiki.mozilla.org/index.php?title=Gecko:FullScreenAPI>  
   
 
-### caretPositionFromPoint ###
+### caretPositionFromPoint(x, y) ###
   
 Retrieve the location of the caret position (DOM node and character  
 offset within that node), given a point.  
@@ -170,21 +170,21 @@ offset within that node), given a point.
          page coordinates.  
   
 
-### mozExitPointerLock ###
+### mozExitPointerLock() ###
   
 Exit pointer is lock if locked, as per the DOM pointer lock api.  
   
 @see <http://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html>  
   
 
-### querySelector ###
+### querySelector(selectors) ###
   
 Return nodes that match a given CSS selector.  
   
 @see <http://dev.w3.org/2006/webapi/selectors-api/>  
   
 
-### querySelectorAll ###
+### querySelectorAll(selectors) ###
 
 ## Attributes ##
 

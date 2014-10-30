@@ -6,17 +6,17 @@ layout: default
 
 ## Methods ##
 
-### doTransaction ###
+### doTransaction() ###
   
 Executes the transaction.  
   
 
-### undoTransaction ###
+### undoTransaction() ###
   
 Restores the state to what it was before the transaction was executed.  
   
 
-### redoTransaction ###
+### redoTransaction() ###
   
 Executes the transaction again. Can only be called on a transaction that  
 was previously undone.  
@@ -25,7 +25,7 @@ In most cases, the redoTransaction() method will actually call the
 doTransaction() method to execute the transaction again.  
   
 
-### merge ###
+### merge(aTransaction) ###
   
 Attempts to merge a transaction into "this" transaction. Both transactions  
 must be in their undo state, doTransaction() methods already called. The  

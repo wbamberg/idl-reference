@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### updateUpStreamResult ###
+### updateUpStreamResult(success, externalIfname) ###
   
 Callback function used to report the result of updating upstream.  
   

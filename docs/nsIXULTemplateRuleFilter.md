@@ -16,7 +16,7 @@ assigned using the template builder's addRuleFilter method.
 
 ## Methods ##
 
-### match ###
+### match(aRef, aRule) ###
   
 Evaluate a result and return true if the result is accepted by this  
 filter, or false if it is rejected. Accepted results will have output  

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### reportError ###
+### reportError(error) ###
 
 ## Attributes ##
 

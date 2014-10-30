@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### loadCerts ###
+### loadCerts(type) ###
 
-### loadCertsFromCache ###
+### loadCertsFromCache(cache, type) ###
 
-### getCert ###
+### getCert(index) ###
 
-### getTreeItem ###
+### getTreeItem(index) ###
 
-### isHostPortOverride ###
+### isHostPortOverride(index) ###
 
-### deleteEntryObject ###
+### deleteEntryObject(index) ###

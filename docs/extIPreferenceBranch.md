@@ -14,7 +14,7 @@ are relative to the root branch.
 
 ## Methods ##
 
-### has ###
+### has(aName) ###
   
 Check to see if a preference exists.  
 @param   aName  
@@ -22,7 +22,7 @@ Check to see if a preference exists.
 @returns true if the preference exists, false if not  
   
 
-### get ###
+### get(aName) ###
   
 Gets an object representing a preference  
 @param   aName  
@@ -30,7 +30,7 @@ Gets an object representing a preference
 @returns a preference object, or null if the preference does not exist  
   
 
-### getValue ###
+### getValue(aName, aDefaultValue) ###
   
 Gets the value of a preference. Returns a default value if  
 the preference does not exist.  
@@ -42,7 +42,7 @@ the preference does not exist.
          does not exists.  
   
 
-### setValue ###
+### setValue(aName, aValue) ###
   
 Sets the value of a storage item with the given name.  
 @param   aName  
@@ -51,7 +51,7 @@ Sets the value of a storage item with the given name.
          The value to assign to the item  
   
 
-### reset ###
+### reset() ###
   
 Resets all preferences in a branch back to their default values.  
   

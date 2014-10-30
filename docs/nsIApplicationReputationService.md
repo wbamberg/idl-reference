@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### queryReputation ###
+### queryReputation(aQuery, aCallback) ###
   
 Start querying the application reputation service.  
   

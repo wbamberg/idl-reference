@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### explicitSetUploadStream ###
+### explicitSetUploadStream(aStream, aContentType, aContentLength, aMethod, aStreamHasHeaders) ###
   
 Sets a stream to be uploaded by this channel with the specified  
 Content-Type and Content-Length header values.  

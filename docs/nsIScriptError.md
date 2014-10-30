@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(message, sourceName, sourceLine, lineNumber, columnNumber, flags, category) ###
 
-### initWithWindowID ###
+### initWithWindowID(message, sourceName, sourceLine, lineNumber, columnNumber, flags, category, innerWindowID) ###
 
 ## Attributes ##
 

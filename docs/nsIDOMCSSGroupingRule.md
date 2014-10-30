@@ -9,9 +9,9 @@ Interface for at-rules that have child rules in the CSS OM.
 
 ## Methods ##
 
-### insertRule ###
+### insertRule(rule, index) ###
 
-### deleteRule ###
+### deleteRule(index) ###
 
 ## Attributes ##
 

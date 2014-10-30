@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getDataInterfaceList ###
+### getDataInterfaceList(condition) ###
   
 Obtain a list of network interfaces that satisfy the specified condition.  
 @param condition flags that specify the interfaces to be returned. This  

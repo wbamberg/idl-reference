@@ -17,7 +17,7 @@ XXX define behaviour for sizes >4 GB
 
 ## Methods ##
 
-### init ###
+### init(aObserver) ###
   
 Initialize this stream loader, and start loading the data.  
   

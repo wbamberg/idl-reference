@@ -98,7 +98,7 @@ consuming events.
 
 ## Methods ##
 
-### initSimpleGestureEvent ###
+### initSimpleGestureEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg, relatedTargetArg, allowedDirectionsArg, directionArg, deltaArg, clickCount) ###
 
 ## Attributes ##
 

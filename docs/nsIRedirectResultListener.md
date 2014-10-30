@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onRedirectResult ###
+### onRedirectResult(proceeding) ###
   
  When an HTTP redirect has been processed (either successfully or not)  
  nsIHttpChannel will call this function if its callbacks implement this  

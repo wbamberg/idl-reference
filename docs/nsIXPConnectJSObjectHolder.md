@@ -7,4 +7,4 @@ layout: default
 
 ## Methods ##
 
-### GetJSObject ###
+### GetJSObject() ###

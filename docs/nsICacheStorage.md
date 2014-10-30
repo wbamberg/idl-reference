@@ -11,7 +11,7 @@ app-cache storage.
 
 ## Methods ##
 
-### asyncOpenURI ###
+### asyncOpenURI(aURI, aIdExtension, aFlags, aCallback) ###
   
 Asynchronously opens a cache entry for the specified URI.  
 Result is fetched asynchronously via the callback.  
@@ -36,7 +36,7 @@ Result is fetched asynchronously via the callback.
    IMPORTANT: The callback may be called sooner the method returns.  
   
 
-### openTruncate ###
+### openTruncate(aURI, aIdExtension) ###
   
 Immediately opens a new and empty cache entry in the storage, any existing  
 entries are immediately doomed.  This is similar to the recreate() method  
@@ -50,7 +50,7 @@ the new entry via a callback.
 @param aIdExtension @see asyncOpenURI  
   
 
-### exists ###
+### exists(aURI, aIdExtension) ###
   
 Synchronously check on existance of an entry.  In case of disk entries  
 this uses information from the cache index.  When the index data are not  
@@ -59,18 +59,18 @@ The same error may throw any storage implementation that cannot determine
 entry state without blocking the caller.  
   
 
-### asyncDoomURI ###
+### asyncDoomURI(aURI, aIdExtension, aCallback) ###
   
 Asynchronously removes an entry belonging to the URI from the cache.  
   
 
-### asyncEvictStorage ###
+### asyncEvictStorage(aCallback) ###
   
 Asynchronously removes all cached entries under this storage.  
 NOTE: Disk storage also evicts memory storage.  
   
 
-### asyncVisitStorage ###
+### asyncVisitStorage(aVisitor, aVisitEntries) ###
   
 Visits the storage and its entries.  
 NOTE: Disk storage also visits memory storage.  

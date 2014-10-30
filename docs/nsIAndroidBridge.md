@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### handleGeckoMessage ###
+### handleGeckoMessage(message) ###
 
-### getDisplayPort ###
+### getDisplayPort(aPageSizeUpdate, isBrowserContentDisplayed, tabId, metrics) ###
 
-### contentDocumentChanged ###
+### contentDocumentChanged() ###
 
-### isContentDocumentDisplayed ###
+### isContentDocumentDisplayed() ###
 
 ## Attributes ##
 

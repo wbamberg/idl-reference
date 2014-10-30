@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getEvents ###
+### getEvents(aId) ###
   
 Get the events array by inner window ID or all events from all windows.  
   
@@ -19,7 +19,7 @@ Get the events array by inner window ID or all events from all windows.
          window.  
   
 
-### recordEvent ###
+### recordEvent(aId, aEvent) ###
   
 Record an event associated with the given window ID.  
   
@@ -30,7 +30,7 @@ Record an event associated with the given window ID.
        A JavaScript object you want to store.  
   
 
-### clearEvents ###
+### clearEvents(aId) ###
   
 Clear storage data for the given window.  
   

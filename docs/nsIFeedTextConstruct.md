@@ -11,14 +11,14 @@ parameters, and this interface could be used there as well.
 
 ## Methods ##
 
-### plainText ###
+### plainText() ###
   
 Returns the text of the text construct, with all markup stripped   
 and all entities decoded. If the type attribute's value is "text",  
 this function returns the value of the text attribute unchanged.  
   
 
-### createDocumentFragment ###
+### createDocumentFragment(element) ###
   
 Return an nsIDocumentFragment containing the text and markup.  
   

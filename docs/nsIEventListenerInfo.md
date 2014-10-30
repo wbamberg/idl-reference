@@ -10,7 +10,7 @@ was added to an event target.
 
 ## Methods ##
 
-### toSource ###
+### toSource() ###
   
 Tries to serialize event listener to a string.  
 Returns null if serialization isn't possible  

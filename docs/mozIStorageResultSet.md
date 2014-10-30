@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getNextRow ###
+### getNextRow() ###
   
 Obtains the next row from the result set from the statement that was  
 executed.  

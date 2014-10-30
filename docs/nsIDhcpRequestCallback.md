@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### dhcpRequestResult ###
+### dhcpRequestResult(success, dhcpInfo) ###
   
 Callback function used to report the result of DHCP client request.  
   

@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### grammarCompilationEnd ###
+### grammarCompilationEnd(grammarObject, success) ###

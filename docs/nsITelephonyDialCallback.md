@@ -9,7 +9,7 @@ A callback interface for handling asynchronous response for telephony.dial.
 
 ## Methods ##
 
-### notifyDialMMI ###
+### notifyDialMMI(serviceCode) ###
   
 Called when a dial request is treated as an MMI code and it is about to  
 process the request.  
@@ -18,7 +18,7 @@ process the request.
        MMI service code key string that defined in MMI_KS_SC_*  
   
 
-### notifyDialCallSuccess ###
+### notifyDialCallSuccess(callIndex, number) ###
   
 Called when a dial request is treated as a call setup and the result  
 succeeds.  
@@ -29,7 +29,7 @@ succeeds.
        Dialed out phone number (ex: Temporary CLIR prefix will be removed)  
   
 
-### notifyDialMMISuccess ###
+### notifyDialMMISuccess(result) ###
   
 Called when a MMI code request succeeds.  
 The function should only be called after notifyDialMMI.  
@@ -38,10 +38,10 @@ The function should only be called after notifyDialMMI.
        Result of the request. See MozMMIResult.  
   
 
-### notifyDialMMIError ###
+### notifyDialMMIError(error) ###
   
 Called when a MMI code request fails.  
 The function should only be called after notifyDialMMI.  
   
 
-### notifyDialMMIErrorWithInfo ###
+### notifyDialMMIErrorWithInfo(error, info) ###

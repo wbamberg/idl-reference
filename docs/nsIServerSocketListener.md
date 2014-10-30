@@ -16,7 +16,7 @@ client's IP address (NOTE: this may be an IPv4 or IPv6 string literal).
 
 ## Methods ##
 
-### onSocketAccepted ###
+### onSocketAccepted(aServ, aTransport) ###
   
 onSocketAccepted  
   
@@ -28,7 +28,7 @@ This method is called when a client connection is accepted.
        The connected socket transport.  
   
 
-### onStopListening ###
+### onStopListening(aServ, aStatus) ###
   
 onStopListening  
   

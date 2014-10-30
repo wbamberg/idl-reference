@@ -30,7 +30,7 @@ interface to mirror this interface when changing it.
 
 ## Methods ##
 
-### addObserver ###
+### addObserver(aObserver) ###
   
 Used to register an image decoder observer.  Typically, this will  
 be a proxy for a frame that wants to paint the image.  
@@ -43,14 +43,14 @@ current and pending, will be passed through.
 @throws NS_ERROR_OUT_OF_MEMORY  
   
 
-### removeObserver ###
+### removeObserver(aObserver) ###
   
 Used to unregister an image decoder observer.  
   
 @param aObserver the observer to unregister  
   
 
-### getRequest ###
+### getRequest(aRequestType) ###
   
 Accessor to get the image requests  
   
@@ -63,19 +63,19 @@ is thrown)
 known  
   
 
-### frameCreated ###
+### frameCreated(aFrame) ###
   
 Used to notify the image loading content node that a frame has been  
 created.  
   
 
-### frameDestroyed ###
+### frameDestroyed(aFrame) ###
   
 Used to notify the image loading content node that a frame has been  
 destroyed.  
   
 
-### getRequestType ###
+### getRequestType(aRequest) ###
   
 Used to find out what type of request one is dealing with (eg  
 which request got passed through to the imgINotificationObserver  
@@ -88,7 +88,7 @@ interface of an observer)
 @throws NS_ERROR_UNEXPECTED if aRequest is not known  
   
 
-### loadImageWithChannel ###
+### loadImageWithChannel(aChannel) ###
   
 loadImageWithChannel allows data from an existing channel to be  
 used as the image data for this content node.  
@@ -102,7 +102,7 @@ used as the image data for this content node.
 @throws NS_ERROR_NULL_POINTER if aChannel is null  
   
 
-### forceReload ###
+### forceReload(aNotify) ###
   
 forceReload forces reloading of the image pointed to by currentURI  
   
@@ -110,22 +110,22 @@ forceReload forces reloading of the image pointed to by currentURI
 @throws NS_ERROR_NOT_AVAILABLE if there is no current URI to reload  
   
 
-### forceImageState ###
+### forceImageState(aForce, aState) ###
   
 Enables/disables image state forcing. When |aForce| is PR_TRUE, we force  
 nsImageLoadingContent::ImageState() to return |aState|. Call again with |aForce|  
 as PR_FALSE to revert ImageState() to its original behaviour.  
   
 
-### IncrementVisibleCount ###
+### IncrementVisibleCount() ###
   
 A visible count is stored, if it is non-zero then this image is considered  
 visible. These methods increment, decrement, or return the visible coount.  
   
 
-### DecrementVisibleCount ###
+### DecrementVisibleCount() ###
 
-### GetVisibleCount ###
+### GetVisibleCount() ###
 
 ## Attributes ##
 

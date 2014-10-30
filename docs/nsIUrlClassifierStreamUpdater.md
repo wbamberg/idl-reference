@@ -11,7 +11,7 @@ update tables as the data is streaming in.
 
 ## Methods ##
 
-### downloadUpdates ###
+### downloadUpdates(aRequestTables, aRequestBody, aUpdateUrl, aSuccessCallback, aUpdateErrorCallback, aDownloadErrorCallback) ###
   
 Try to download updates from updateUrl. If an update is already in  
 progress, queues the requested update. This is used in nsIUrlListManager  

@@ -6,17 +6,17 @@ layout: default
 
 ## Methods ##
 
-### item ###
+### item(index) ###
 
-### namedItem ###
+### namedItem(name) ###
 
-### add ###
+### add(element, before) ###
 
-### remove ###
+### remove(index) ###
 
-### checkValidity ###
+### checkValidity() ###
 
-### setCustomValidity ###
+### setCustomValidity(error) ###
 
 ## Attributes ##
 

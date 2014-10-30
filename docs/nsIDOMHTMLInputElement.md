@@ -16,23 +16,23 @@ http://www.whatwg.org/specs/web-apps/current-work/
 
 ## Methods ##
 
-### stepDown ###
+### stepDown(n) ###
 
-### stepUp ###
+### stepUp(n) ###
 
-### checkValidity ###
+### checkValidity() ###
 
-### setCustomValidity ###
+### setCustomValidity(error) ###
 
-### select ###
+### select() ###
 
-### setSelectionRange ###
+### setSelectionRange(selectionStart, selectionEnd, direction) ###
 
-### mozGetFileNameArray ###
+### mozGetFileNameArray(aLength, aFileNames) ###
 
-### mozSetFileNameArray ###
+### mozSetFileNameArray(aFileNames, aLength) ###
 
-### mozIsTextField ###
+### mozIsTextField(aExcludePassword) ###
   
 This non-standard method prevents to check types manually to know if the  
 element is a text field.  

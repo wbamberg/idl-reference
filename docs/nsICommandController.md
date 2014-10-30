@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### getCommandStateWithParams ###
+### getCommandStateWithParams(command, aCommandParams) ###
 
-### doCommandWithParams ###
+### doCommandWithParams(command, aCommandParams) ###

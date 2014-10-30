@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### usbTetheringEnabledChange ###
+### usbTetheringEnabledChange(error) ###
   
 Callback function used to report status of enabling usb tethering.  
   

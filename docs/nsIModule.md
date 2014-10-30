@@ -9,7 +9,7 @@ The nsIModule interface.
 
 ## Methods ##
 
-### getClassObject ###
+### getClassObject(aCompMgr, aClass, aIID, aResult) ###
    
 Object Instance Creation  
   
@@ -23,7 +23,7 @@ query to a nsIClassInfo.
   
   
 
-### registerSelf ###
+### registerSelf(aCompMgr, aLocation, aLoaderStr, aType) ###
   
 One time registration callback  
   
@@ -36,7 +36,7 @@ called so that any setup registration can be preformed.
 @param aType     : Loader Type being used to load this module   
   
 
-### unregisterSelf ###
+### unregisterSelf(aCompMgr, aLocation, aLoaderStr) ###
   
 One time unregistration callback  
   
@@ -49,7 +49,7 @@ called so that any unregistration can be preformed
   
   
 
-### canUnload ###
+### canUnload(aCompMgr) ###
    
 Module load management  
   

@@ -13,17 +13,17 @@ http://www.w3.org/TR/DOM-Level-2-Style
 
 ## Methods ##
 
-### getPropertyValue ###
+### getPropertyValue(propertyName) ###
 
-### getPropertyCSSValue ###
+### getPropertyCSSValue(propertyName) ###
 
-### removeProperty ###
+### removeProperty(propertyName) ###
 
-### getPropertyPriority ###
+### getPropertyPriority(propertyName) ###
 
-### setProperty ###
+### setProperty(propertyName, value, priority) ###
 
-### item ###
+### item(index) ###
 
 ## Attributes ##
 

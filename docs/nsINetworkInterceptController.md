@@ -11,7 +11,7 @@ request should be intercepted before any network request is initiated.
 
 ## Methods ##
 
-### shouldPrepareForIntercept ###
+### shouldPrepareForIntercept(aURI) ###
   
 Returns true if a channel should avoid initiating any network  
 requests until specifically instructed to do so.  
@@ -19,7 +19,7 @@ requests until specifically instructed to do so.
 @param aURI the URI being requested by a channel  
   
 
-### channelIntercepted ###
+### channelIntercepted(aChannel, aStream) ###
   
 Notification when a given intercepted channel is prepared to accept a synthesized  
 response via the provided stream.  

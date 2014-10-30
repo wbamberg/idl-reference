@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onCacheEntryCheck ###
+### onCacheEntryCheck(aEntry, aApplicationCache) ###
   
 Callback to perform any validity checks before the entry should be used.  
 Called before onCacheEntryAvailable callback, depending on the result it  
@@ -29,7 +29,7 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
    State of the entry, see the constants just above.  
   
 
-### onCacheEntryAvailable ###
+### onCacheEntryAvailable(aEntry, aNew, aApplicationCache, aResult) ###
   
 Callback giving actual result of asyncOpenURI.  It may give consumer the cache   
 entry or a failure result when it's not possible to open it from some reason.  

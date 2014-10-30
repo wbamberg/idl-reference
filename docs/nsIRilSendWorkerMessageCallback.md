@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### handleResponse ###
+### handleResponse(response) ###

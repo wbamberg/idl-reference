@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### openCacheEntry ###
+### openCacheEntry(key, accessRequested, blockingMode) ###
   
 A cache session can only give out one descriptor with WRITE access  
 to a given cache entry at a time.  Until the client calls MarkValid on  
@@ -22,7 +22,7 @@ return NS_ERROR_CACHE_WAIT_FOR_VALIDATION rather than block when another
 descriptor has been given WRITE access but hasn't validated the entry yet.  
   
 
-### asyncOpenCacheEntry ###
+### asyncOpenCacheEntry(key, accessRequested, listener, noWait) ###
   
 Asynchronous cache access. Does not block the calling thread. Instead,  
 the listener will be notified when the descriptor is available. If  
@@ -32,18 +32,18 @@ when another descriptor has been given WRITE access but hasn't validated
 the entry yet.  
   
 
-### evictEntries ###
+### evictEntries() ###
   
 Evict all entries for this session's clientID according to its storagePolicy.  
   
 
-### isStorageEnabled ###
+### isStorageEnabled() ###
   
 Return whether any of the cache devices implied by the session storage policy  
 are currently enabled for instantiation if they don't already exist.  
   
 
-### doomEntry ###
+### doomEntry(key, listener) ###
   
 Asynchronously doom an entry specified by the key. Listener will be  
 notified about the status of the operation. Null may be passed if caller  

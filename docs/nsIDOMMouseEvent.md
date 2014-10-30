@@ -13,11 +13,11 @@ http://www.w3.org/TR/DOM-Level-2-Events/
 
 ## Methods ##
 
-### initMouseEvent ###
+### initMouseEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg, relatedTargetArg) ###
 
-### initNSMouseEvent ###
+### initNSMouseEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg, relatedTargetArg, pressure, inputSourceArg) ###
 
-### getModifierState ###
+### getModifierState(keyArg) ###
 
 ## Attributes ##
 

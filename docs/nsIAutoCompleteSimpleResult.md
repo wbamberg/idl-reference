@@ -12,37 +12,37 @@ an array.
 
 ## Methods ##
 
-### setSearchString ###
+### setSearchString(aSearchString) ###
   
 A writer for the readonly attribute 'searchString' which should contain  
 the string that the user typed.  
   
 
-### setErrorDescription ###
+### setErrorDescription(aErrorDescription) ###
   
 A writer for the readonly attribute 'errorDescription'.  
   
 
-### setDefaultIndex ###
+### setDefaultIndex(aDefaultIndex) ###
   
 A writer for the readonly attribute 'defaultIndex' which should contain  
 the index of the list that will be selected by default (normally 0).  
   
 
-### setSearchResult ###
+### setSearchResult(aSearchResult) ###
   
 A writer for the readonly attribute 'searchResult' which should contain  
 one of the constants nsIAutoCompleteResult.RESULT_* indicating the success  
 of the search.  
   
 
-### setTypeAheadResult ###
+### setTypeAheadResult(aHidden) ###
   
 A writer for the readonly attribute 'typeAheadResult', typically set  
 because a result is only intended for type-ahead completion.  
   
 
-### appendMatch ###
+### appendMatch(aValue, aComment, aImage, aStyle, aFinalCompleteValue) ###
   
 Appends a match consisting of the given value, comment, image, style and  
 the value to use for defaultIndex completion.  
@@ -59,7 +59,7 @@ the value to use for defaultIndex completion.
        provided, aValue will be used.  
   
 
-### setListener ###
+### setListener(aListener) ###
   
 Sets a listener for changes in the result.  
   

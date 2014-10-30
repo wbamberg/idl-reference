@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### attachToBrowser ###
+### attachToBrowser(docShell, popup) ###
 
-### detachFromBrowser ###
+### detachFromBrowser(docShell) ###
 
-### markAsLoginManagerField ###
+### markAsLoginManagerField(aInput) ###

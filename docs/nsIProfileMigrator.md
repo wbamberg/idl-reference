@@ -13,7 +13,7 @@ Migrate application settings from an outside source.
 
 ## Methods ##
 
-### migrate ###
+### migrate(aStartup, aKey) ###
   
 Migrate data from an outside source, if possible.  Does nothing  
 otherwise.  

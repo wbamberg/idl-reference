@@ -14,7 +14,7 @@ Web IDL interfaces to mirror this interface when changing it.
 
 ## Methods ##
 
-### setUserInput ###
+### setUserInput(input) ###
 
 ## Attributes ##
 

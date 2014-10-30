@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### getStats ###
+### getStats() ###
 
-### format ###
+### format() ###
 
-### mount ###
+### mount() ###
 
-### unmount ###
+### unmount() ###
 
 ## Attributes ##
 

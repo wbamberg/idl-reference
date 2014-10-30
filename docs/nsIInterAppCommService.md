@@ -16,4 +16,4 @@ messages from and interacting with the content processes.
 
 ## Methods ##
 
-### registerConnection ###
+### registerConnection(keyword, handlerPageURI, manifestURI, description, rules) ###

@@ -12,56 +12,56 @@ http://www.w3.org/TR/DOM-Level-2-Traversal-Range/
 
 ## Methods ##
 
-### setStart ###
+### setStart(refNode, offset) ###
 
-### setEnd ###
+### setEnd(refNode, offset) ###
 
-### setStartBefore ###
+### setStartBefore(refNode) ###
 
-### setStartAfter ###
+### setStartAfter(refNode) ###
 
-### setEndBefore ###
+### setEndBefore(refNode) ###
 
-### setEndAfter ###
+### setEndAfter(refNode) ###
 
-### collapse ###
+### collapse(toStart) ###
 
-### selectNode ###
+### selectNode(refNode) ###
 
-### selectNodeContents ###
+### selectNodeContents(refNode) ###
 
-### compareBoundaryPoints ###
+### compareBoundaryPoints(how, sourceRange) ###
 
-### deleteContents ###
+### deleteContents() ###
 
-### extractContents ###
+### extractContents() ###
 
-### cloneContents ###
+### cloneContents() ###
 
-### insertNode ###
+### insertNode(newNode) ###
 
-### surroundContents ###
+### surroundContents(newParent) ###
 
-### cloneRange ###
+### cloneRange() ###
 
-### toString ###
+### toString() ###
 
-### detach ###
+### detach() ###
 
-### createContextualFragment ###
+### createContextualFragment(fragment) ###
 
-### isPointInRange ###
+### isPointInRange(parent, offset) ###
 
-### comparePoint ###
+### comparePoint(parent, offset) ###
 
-### intersectsNode ###
+### intersectsNode(node) ###
   
 Returns whether the range intersects node.  
   
 
-### getClientRects ###
+### getClientRects() ###
 
-### getBoundingClientRect ###
+### getBoundingClientRect() ###
 
 ## Attributes ##
 

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### writeToProfilingFile ###
+### writeToProfilingFile() ###
   
 Write the JSON string returned by JSONString to the log defined by  
 the environment variable MOZ_PROFILING_FILE.  

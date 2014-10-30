@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### setSelectionFlags ###
+### setSelectionFlags(toggle) ###
 
-### getSelectionFlags ###
+### getSelectionFlags() ###
 
 ## Constants ##
 

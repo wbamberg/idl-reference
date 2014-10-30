@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### wrapMessage ###
+### wrapMessage(message, window) ###

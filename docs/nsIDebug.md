@@ -15,7 +15,7 @@ layout: default
 
 ## Methods ##
 
-### assertion ###
+### assertion(aStr, aExpr, aFile, aLine) ###
   
 Show an assertion and trigger nsIDebug.break().  
   
@@ -26,7 +26,7 @@ Show an assertion and trigger nsIDebug.break().
   
   
 
-### warning ###
+### warning(aStr, aFile, aLine) ###
   
 Show a warning.  
   
@@ -35,7 +35,7 @@ Show a warning.
 @param aLine line number of assertion  
   
 
-### break ###
+### break(aFile, aLine) ###
   
 Request to break into a debugger.  
   
@@ -43,7 +43,7 @@ Request to break into a debugger.
 @param aLine line number of break request  
   
 
-### abort ###
+### abort(aFile, aLine) ###
   
 Request the process to trigger a fatal abort.  
   

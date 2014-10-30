@@ -11,7 +11,7 @@ and if it has an error.
 
 ## Methods ##
 
-### onCheckComplete ###
+### onCheckComplete(request, updates, updateCount) ###
   
 The update check was completed.  
 @param   request  
@@ -22,7 +22,7 @@ The update check was completed.
          The size of the |updates| array.  
   
 
-### onError ###
+### onError(request, update) ###
   
 An error occurred while loading the remote update service file.  
 @param   request  

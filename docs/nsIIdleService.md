@@ -14,7 +14,7 @@ user starts using their computer again.
 
 ## Methods ##
 
-### addIdleObserver ###
+### addIdleObserver(observer, time) ###
   
 Add an observer to be notified when the user idles for some period of  
 time, and when they get back from that.  
@@ -39,7 +39,7 @@ of the polling interval in that implementation.
 Current implementations use a delay of 5 seconds.  
   
 
-### removeIdleObserver ###
+### removeIdleObserver(observer, time) ###
   
 Remove an observer registered with addIdleObserver.  
 @param observer the observer that needs to be removed.  

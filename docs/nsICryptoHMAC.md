@@ -10,7 +10,7 @@ This interface provides HMAC signature algorithms.
 
 ## Methods ##
 
-### init ###
+### init(aAlgorithm, aKeyObject) ###
   
 Initialize the hashing object. This method may be  
 called multiple times with different algorithm types.  
@@ -34,7 +34,7 @@ NOTE: This method must be called before any other method
        on this interface is called.  
   
 
-### update ###
+### update(aData, aLen) ###
   
 @param aData a buffer to calculate the hash over  
   
@@ -44,7 +44,7 @@ NOTE: This method must be called before any other method
         called.  
   
 
-### updateFromStream ###
+### updateFromStream(aStream, aLen) ###
   
 Calculates and updates a new hash based on a given data stream.  
   
@@ -62,7 +62,7 @@ Calculates and updates a new hash based on a given data stream.
   
   
 
-### finish ###
+### finish(aASCII) ###
   
 Completes this HMAC object and produces the actual HMAC diegest data.  
   
@@ -81,7 +81,7 @@ NOTE: This method may be called any time after |init|
       pre-init state.  
   
 
-### reset ###
+### reset() ###
   
 Reinitialize HMAC context to be reused with the same  
 settings (the key and hash algorithm) but on different   

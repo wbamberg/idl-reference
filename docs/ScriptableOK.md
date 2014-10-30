@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### method1 ###
+### method1() ###

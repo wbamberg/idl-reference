@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### shouldDispatch ###
+### shouldDispatch(manifestURL, pageURL, type, message, extra) ###
 
 ## Attributes ##
 

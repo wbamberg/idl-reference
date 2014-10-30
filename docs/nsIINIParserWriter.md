@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### setString ###
+### setString(aSection, aKey, aValue) ###
   
 Set the value of a string for a particular section and key.  
   
 
-### writeFile ###
+### writeFile(aINIFile, aFlags) ###
   
 Write to the INI file.  
   

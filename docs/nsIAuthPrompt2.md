@@ -12,7 +12,7 @@ synchronously or asynchronously.
 
 ## Methods ##
 
-### promptAuth ###
+### promptAuth(aChannel, level, authInfo) ###
   
 Requests a username and a password. Implementations will commonly show a  
 dialog with a username and password field, depending on flags also a  
@@ -39,7 +39,7 @@ domain field.
         return value of false.  
   
 
-### asyncPromptAuth ###
+### asyncPromptAuth(aChannel, aCallback, aContext, level, authInfo) ###
   
 Asynchronously prompt the user for a username and password.  
 This has largely the same semantics as promptUsernameAndPassword(),  

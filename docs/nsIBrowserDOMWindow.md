@@ -13,7 +13,7 @@ interface.
 
 ## Methods ##
 
-### openURI ###
+### openURI(aURI, aOpener, aWhere, aContext) ###
   
 Load a URI  
   
@@ -27,14 +27,14 @@ Load a URI
 @return the window into which the URI was opened.  
   
 
-### openURIInFrame ###
+### openURIInFrame(aURI, aOpener, aWhere, aContext) ###
   
 As above, but return the nsIFrameLoaderOwner for the new window.  
 // XXXbz is this the right API? Do we really need the opener here?  
 // See bug 537428  
   
 
-### isTabContentWindow ###
+### isTabContentWindow(aWindow) ###
   
 @param  aWindow the window to test.  
 @return whether the window is the main content window for any  

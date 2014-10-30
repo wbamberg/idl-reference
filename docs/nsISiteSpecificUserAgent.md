@@ -9,7 +9,7 @@ nsISiteSpecificUserAgent provides you with site/window-specific User Agent strin
 
 ## Methods ##
 
-### getUserAgentForURIAndWindow ###
+### getUserAgentForURIAndWindow(aURI, aWindow) ###
   
 Get the User Agent string for a given URI.  
   

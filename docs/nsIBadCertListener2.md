@@ -11,7 +11,7 @@ that will be canceled because of improper cert status.
 
 ## Methods ##
 
-### notifyCertProblem ###
+### notifyCertProblem(socketInfo, status, targetSite) ###
   
  @param socketInfo A network communication context that can be used to obtain more information  
                    about the active connection.  

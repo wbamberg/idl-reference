@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### load ###
+### load(url) ###
   
 Load an XML document.  
   

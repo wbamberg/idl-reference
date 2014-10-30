@@ -10,7 +10,7 @@ Javascript callers should still use AddonManager.jsm directly.
 
 ## Methods ##
 
-### mapURIToAddonID ###
+### mapURIToAddonID(aURI, aID) ###
   
 Synchronously map a URI to the corresponding Addon ID.  
   

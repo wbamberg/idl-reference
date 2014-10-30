@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### observe ###
+### observe(aMessage) ###

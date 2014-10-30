@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### scanTXT ###
+### scanTXT(text, whattodo) ###
   
 @param text: plain text to scan. May be a line, paragraph (recommended)  
 or just a substring.<p>  
@@ -18,7 +18,7 @@ Scan(a + b, o)
 appropriate.  
   
 
-### scanHTML ###
+### scanHTML(text, whattodo) ###
   
 Adds additional formatting to user edited text, that the user was too lazy  
 or "unknowledged" (DELETEME: is that a word?) to make.  
@@ -37,7 +37,7 @@ Scan(a + b, o)
 @result      Additional HTML tags are inserted where appropriate.  
   
 
-### citeLevelTXT ###
+### citeLevelTXT(line, logLineStart) ###
   
 @param line: line in original msg, possibly starting starting with  
 txt quote tags like ">"  
@@ -49,7 +49,7 @@ Initial value must be 0, unless line is not real line.
 nested quotes.  
   
 
-### findURLInPlaintext ###
+### findURLInPlaintext(text, aLength, aPos, aStartPos, aEndPos) ###
    
 @param a wide string to scan for the presence of a URL.  
 @param aLength --> the length of the buffer to be scanned  

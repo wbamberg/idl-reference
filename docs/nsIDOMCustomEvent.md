@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initCustomEvent ###
+### initCustomEvent(typeArg, canBubbleArg, cancelableArg, detailArg) ###
 
 ## Attributes ##
 

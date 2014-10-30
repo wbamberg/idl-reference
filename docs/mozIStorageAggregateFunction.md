@@ -14,7 +14,7 @@ per request or many of them, if GROUP BY clause is used or not.
 
 ## Methods ##
 
-### onStep ###
+### onStep(aFunctionArguments) ###
   
 onStep is called when next value should be passed to  
 a custom function.  
@@ -22,7 +22,7 @@ a custom function.
 @param aFunctionArguments    The arguments passed in to the function  
   
 
-### onFinal ###
+### onFinal() ###
   
 Called when all tuples in a group have been processed and the engine  
 needs the aggregate function's value.  

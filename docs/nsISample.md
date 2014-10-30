@@ -18,9 +18,9 @@ All platform: Using irc, connect to irc.mozilla.org and type in
 
 ## Methods ##
 
-### writeValue ###
+### writeValue(aPrefix) ###
 
-### poke ###
+### poke(aValue) ###
 
 ## Attributes ##
 

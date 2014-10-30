@@ -9,27 +9,27 @@ An accessibility interface for selectable widgets.
 
 ## Methods ##
 
-### getSelectedItemAt ###
+### getSelectedItemAt(index) ###
   
 Return a nth selected item within the widget.  
   
 
-### isItemSelected ###
+### isItemSelected(index) ###
   
 Return true if the given item is selected.  
   
 
-### addItemToSelection ###
+### addItemToSelection(index) ###
   
 Adds the specified item to the widget's selection.  
   
 
-### removeItemFromSelection ###
+### removeItemFromSelection(index) ###
   
 Removes the specified item from the widget's selection.  
   
 
-### selectAll ###
+### selectAll() ###
   
 Select all items.  
   
@@ -37,7 +37,7 @@ Select all items.
         otherwise true.  
   
 
-### unselectAll ###
+### unselectAll() ###
   
 Unselect all items.  
   

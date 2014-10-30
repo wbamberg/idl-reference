@@ -11,7 +11,7 @@ message information.
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

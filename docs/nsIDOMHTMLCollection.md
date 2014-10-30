@@ -16,9 +16,9 @@ http://www.whatwg.org/specs/web-apps/current-work/
 
 ## Methods ##
 
-### item ###
+### item(index) ###
 
-### namedItem ###
+### namedItem(name) ###
 
 ## Attributes ##
 

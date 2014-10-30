@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### encrypt ###
+### encrypt(plainText) ###
   
 encrypt  
   
@@ -22,7 +22,7 @@ purpose encryption/decryption.
 Can throw if the user cancels entry of their master password.  
   
 
-### decrypt ###
+### decrypt(cipherText) ###
   
 decrypt  
   

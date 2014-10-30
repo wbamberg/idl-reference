@@ -12,7 +12,7 @@ for a substring match, and should be applied appropriately.
 
 ## Methods ##
 
-### init ###
+### init(itemType, namespaceSpec, data) ###
   
 Initialize the namespace.  
   

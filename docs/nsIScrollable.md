@@ -11,15 +11,15 @@ type of content that may be inside.
 
 ## Methods ##
 
-### getDefaultScrollbarPreferences ###
+### getDefaultScrollbarPreferences(scrollOrientation) ###
   
 Get or set the default scrollbar state for all documents in  
 this shell.  
   
 
-### setDefaultScrollbarPreferences ###
+### setDefaultScrollbarPreferences(scrollOrientation, scrollbarPref) ###
 
-### getScrollbarVisibility ###
+### getScrollbarVisibility(verticalVisible, horizontalVisible) ###
   
 Get information about whether the vertical and horizontal scrollbars are  
 currently visible.  If you are only interested in one of the visibility  

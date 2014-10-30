@@ -9,17 +9,17 @@ imgIEncoder interface
 
 ## Methods ##
 
-### initFromData ###
+### initFromData(data, length, width, height, stride, inputFormat, outputOptions) ###
 
-### startImageEncode ###
+### startImageEncode(width, height, inputFormat, outputOptions) ###
 
-### addImageFrame ###
+### addImageFrame(data, length, width, height, stride, frameFormat, frameOptions) ###
 
-### endImageEncode ###
+### endImageEncode() ###
 
-### getImageBufferUsed ###
+### getImageBufferUsed() ###
 
-### getImageBuffer ###
+### getImageBuffer() ###
 
 ## Constants ##
 

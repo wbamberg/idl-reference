@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onNetworkCacheDiskConsumption ###
+### onNetworkCacheDiskConsumption(aDiskSize) ###
   
 Callback invoked to answer asyncGetDiskConsumption call. Always triggered  
 on the main thread.  

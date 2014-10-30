@@ -9,19 +9,19 @@ interface of Components.utils
 
 ## Methods ##
 
-### reportError ###
+### reportError(error) ###
 
-### evalInSandbox ###
+### evalInSandbox(source, sandbox, version, filename, lineNo) ###
 
-### getSandboxAddonId ###
+### getSandboxAddonId(sandbox) ###
 
-### getSandboxMetadata ###
+### getSandboxMetadata(sandbox) ###
 
-### setSandboxMetadata ###
+### setSandboxMetadata(sandbox, metadata) ###
 
-### import ###
+### import(aResourceURI, targetObj) ###
 
-### isModuleLoaded ###
+### isModuleLoaded(aResourceURI) ###
   
 Returns true if the js file located at 'registryLocation' location has  
 been loaded previously via the import method above. Returns false  
@@ -33,33 +33,33 @@ otherwise.
          otherwise  
   
 
-### unload ###
+### unload(registryLocation) ###
 
-### importGlobalProperties ###
+### importGlobalProperties(aPropertyList) ###
 
-### getWeakReference ###
+### getWeakReference(obj) ###
 
-### forceGC ###
+### forceGC() ###
 
-### forceCC ###
+### forceCC() ###
 
-### finishCC ###
+### finishCC() ###
 
-### ccSlice ###
+### ccSlice(budget) ###
 
-### getMaxCCSliceTimeSinceClear ###
+### getMaxCCSliceTimeSinceClear() ###
 
-### clearMaxCCTime ###
+### clearMaxCCTime() ###
 
-### forceShrinkingGC ###
+### forceShrinkingGC() ###
 
-### schedulePreciseGC ###
+### schedulePreciseGC(callback) ###
 
-### schedulePreciseShrinkingGC ###
+### schedulePreciseShrinkingGC(callback) ###
 
-### unlinkGhostWindows ###
+### unlinkGhostWindows() ###
 
-### nondeterministicGetWeakMapKeys ###
+### nondeterministicGetWeakMapKeys(aMap) ###
   
 Return the keys in a weak map.  This operation is  
 non-deterministic because it is affected by the scheduling of the  
@@ -73,19 +73,19 @@ the GC and CC with weak maps.
 map as an array.  Otherwise, return undefined.  
   
 
-### getJSTestingFunctions ###
+### getJSTestingFunctions() ###
 
-### getGlobalForObject ###
+### getGlobalForObject(obj) ###
 
-### isProxy ###
+### isProxy(vobject) ###
 
-### exportFunction ###
+### exportFunction(vfunction, vscope, voptions) ###
 
-### createObjectIn ###
+### createObjectIn(vobj, voptions) ###
 
-### makeObjectPropsNormal ###
+### makeObjectPropsNormal(vobj) ###
 
-### isDeadWrapper ###
+### isDeadWrapper(obj) ###
   
 Determines whether this object is backed by a DeadObjectProxy.  
   
@@ -94,49 +94,49 @@ reference edges) and will throw if you touch them (e.g. by
 reading/writing a property).  
   
 
-### isCrossProcessWrapper ###
+### isCrossProcessWrapper(obj) ###
   
 Determines whether this object is a cross-process wrapper.  
   
 
-### recomputeWrappers ###
+### recomputeWrappers(vobj) ###
 
-### setWantXrays ###
+### setWantXrays(vscope) ###
 
-### forcePermissiveCOWs ###
+### forcePermissiveCOWs() ###
 
-### skipCOWCallableChecks ###
+### skipCOWCallableChecks() ###
 
-### forcePrivilegedComponentsForScope ###
+### forcePrivilegedComponentsForScope(vscope) ###
 
-### getComponentsForScope ###
+### getComponentsForScope(vscope) ###
 
-### dispatch ###
+### dispatch(runnable, scope) ###
 
-### setGCZeal ###
+### setGCZeal(zeal) ###
 
-### nukeSandbox ###
+### nukeSandbox(obj) ###
 
-### blockScriptForGlobal ###
+### blockScriptForGlobal(global) ###
 
-### unblockScriptForGlobal ###
+### unblockScriptForGlobal(global) ###
 
-### isXrayWrapper ###
+### isXrayWrapper(obj) ###
   
 Check whether the given object is an XrayWrapper.  
   
 
-### waiveXrays ###
+### waiveXrays(aVal) ###
   
 Waive Xray on a given value. Identity op for primitives.  
   
 
-### unwaiveXrays ###
+### unwaiveXrays(aVal) ###
   
 Strip off Xray waivers on a given value. Identity op for primitives.  
   
 
-### getClassName ###
+### getClassName(aObj, aUnwrap) ###
   
 Gets the name of the JSClass of the object.  
   
@@ -145,13 +145,13 @@ specifically trying to detect whether the object is a proxy, this is
 probably what you want.  
   
 
-### getDOMClassInfo ###
+### getDOMClassInfo(aClassName) ###
   
 Get a DOM classinfo for the given classname.  Only some class  
 names are supported.  
   
 
-### getIncumbentGlobal ###
+### getIncumbentGlobal(callback) ###
   
 Gets the incument global for the execution of this function. For internal  
 and testing use only.  
@@ -161,7 +161,7 @@ sole argument. This allows the incumbent global to be measured in callback
 environments with no scripted frames on the stack.  
   
 
-### generateXPCWrappedJS ###
+### generateXPCWrappedJS(obj, scope) ###
   
 Forces the generation of an XPCWrappedJS for a given object. For internal  
 and testing use only. This is only useful to set up wrapper map conditions  
@@ -171,7 +171,7 @@ opaque nsISupports holder that keeps the underlying XPCWrappedJS alive.
 if |scope| is passed, the XPCWrappedJS is generated in the scope of that object.  
   
 
-### getWatchdogTimestamp ###
+### getWatchdogTimestamp(aCategory) ###
   
 Retrieve the last time, in microseconds since epoch, that a given  
 watchdog-related event occured.  
@@ -183,19 +183,19 @@ Valid categories:
   "WatchdogHibernateStop"   - Watchdog stops hibernating  
   
 
-### getJSEngineTelemetryValue ###
+### getJSEngineTelemetryValue() ###
 
-### cloneInto ###
+### cloneInto(value, scope, options) ###
 
-### getWebIDLCallerPrincipal ###
+### getWebIDLCallerPrincipal() ###
 
-### getObjectPrincipal ###
+### getObjectPrincipal(obj) ###
 
-### getCompartmentLocation ###
+### getCompartmentLocation(obj) ###
 
-### setAddonInterposition ###
+### setAddonInterposition(addonId, interposition) ###
 
-### now ###
+### now() ###
 
 ## Attributes ##
 

@@ -9,7 +9,7 @@ A load group maintains a collection of nsIRequest objects.
 
 ## Methods ##
 
-### addRequest ###
+### addRequest(aRequest, aContext) ###
   
 Adds a new request to the group.  This will cause the default load  
 flags to be applied to the request.  If this is a foreground  
@@ -20,7 +20,7 @@ request is null, then the load group will inherit its load flags from
 the request.  
   
 
-### removeRequest ###
+### removeRequest(aRequest, aContext, aStatus) ###
   
 Removes a request from the group.  If this is a foreground request  
 then the groupObserver's onStopRequest will be called.  

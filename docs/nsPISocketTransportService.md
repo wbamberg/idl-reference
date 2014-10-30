@@ -10,12 +10,12 @@ It will never be frozen.  Do not use it in external code.
 
 ## Methods ##
 
-### init ###
+### init() ###
   
 init/shutdown routines.  
   
 
-### shutdown ###
+### shutdown() ###
 
 ## Attributes ##
 

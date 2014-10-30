@@ -10,7 +10,7 @@ completes.
 
 ## Methods ##
 
-### handleResult ###
+### handleResult(result) ###
    
 Always called, even after an error. There could be new feed-level  
 data available at this point, if it followed or was interspersed  

@@ -25,7 +25,7 @@ Currently, this interface is implemented only for file output streams.
 
 ## Methods ##
 
-### finish ###
+### finish() ###
   
 Call this method to close the stream and cause the original target  
 to be overwritten. Note: if any call to |write| failed to write out  

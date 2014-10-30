@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### reset ###
+### reset() ###
   
 Inspects the installed keyboards and resets the bidi keyboard state  
   
 
-### isLangRTL ###
+### isLangRTL() ###
   
 Determines if the current keyboard language is right-to-left  
 @throws NS_ERROR_FAILURE if no right-to-left keyboards are installed  

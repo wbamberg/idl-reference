@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### externalAppExistsForScheme ###
+### externalAppExistsForScheme(scheme) ###
   
 This method checks if the external handler exists for a given scheme.  
   

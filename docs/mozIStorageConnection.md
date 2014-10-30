@@ -17,7 +17,7 @@ errors.
 
 ## Methods ##
 
-### close ###
+### close() ###
   
 Closes a database connection.  Callers must finalize all statements created  
 for this connection prior to calling this method.  It is illegal to use  
@@ -30,7 +30,7 @@ connection.
         If is called on a thread other than the one that opened it.  
   
 
-### clone ###
+### clone(aReadOnly) ###
   
 Clones a database connection and makes the clone read only if needed.  
   
@@ -59,7 +59,7 @@ Clones a database connection and makes the clone read only if needed.
   
   
 
-### createStatement ###
+### createStatement(aSQLStatement) ###
   
 Create a mozIStorageStatement for the given SQL expression.  The  
 expression may use ? to indicate sequential numbered arguments,  
@@ -71,14 +71,14 @@ $var to indicate named arguments.
 @return a new mozIStorageStatement  
   
 
-### executeSimpleSQL ###
+### executeSimpleSQL(aSQLStatement) ###
   
 Execute a SQL expression, expecting no arguments.  
   
 @param aSQLStatement  The SQL statement to execute  
   
 
-### tableExists ###
+### tableExists(aTableName) ###
   
 Check if the given table exists.  
   
@@ -87,7 +87,7 @@ Check if the given table exists.
 @return TRUE if table exists, FALSE otherwise.  
   
 
-### indexExists ###
+### indexExists(aIndexName) ###
   
 Check if the given index exists.  
   
@@ -95,29 +95,29 @@ Check if the given index exists.
 @return TRUE if the index exists, FALSE otherwise.  
   
 
-### beginTransaction ###
+### beginTransaction() ###
   
 Begin a new transaction.  sqlite default transactions are deferred.  
 If a transaction is active, throws an error.  
   
 
-### beginTransactionAs ###
+### beginTransactionAs(transactionType) ###
 
-### commitTransaction ###
+### commitTransaction() ###
   
 Commits the current transaction.  If no transaction is active,  
 @throws NS_ERROR_UNEXPECTED.  
 @throws NS_ERROR_NOT_INITIALIZED.  
   
 
-### rollbackTransaction ###
+### rollbackTransaction() ###
   
 Rolls back the current transaction.  If no transaction is active,  
 @throws NS_ERROR_UNEXPECTED.  
 @throws NS_ERROR_NOT_INITIALIZED.  
   
 
-### createTable ###
+### createTable(aTableName, aTableSchema) ###
   
 Create the table with the given name and schema.  
   
@@ -137,7 +137,7 @@ the same as what is specified, but that doesn't happen currently.)
         reason.  
   
 
-### setGrowthIncrement ###
+### setGrowthIncrement(aIncrement, aDatabaseName) ###
   
 Controls SQLITE_FCNTL_CHUNK_SIZE setting in sqlite. This helps avoid fragmentation  
 by growing/shrinking the database file in SQLITE_FCNTL_CHUNK_SIZE increments. To  
@@ -153,7 +153,7 @@ on mobile devices or if less than 500MiB of space is left available.
         If the system is short on storage space.  
   
 
-### enableModule ###
+### enableModule(aModuleName) ###
   
 Enable a predefined virtual table implementation.  
   

@@ -11,7 +11,7 @@ by any sink that handles some sort of XML dialect.
 
 ## Methods ##
 
-### HandleStartElement ###
+### HandleStartElement(aName, aAtts, aAttsCount, aLineNumber) ###
   
 Called to handle the opening tag of an element.  
 @param aName the fully qualified tagname of the element  
@@ -27,32 +27,32 @@ Called to handle the opening tag of an element.
 @param aLineNumber the line number of the start tag in the data stream.  
   
 
-### HandleEndElement ###
+### HandleEndElement(aName) ###
   
 Called to handle the closing tag of an element.  
 @param aName the fully qualified tagname of the element  
   
 
-### HandleComment ###
+### HandleComment(aCommentText) ###
   
 Called to handle a comment  
 @param aCommentText the text of the comment (not including the  
        "<!--" and "-->")  
   
 
-### HandleCDataSection ###
+### HandleCDataSection(aData, aLength) ###
   
 Called to handle a CDATA section  
 @param aData the text in the CDATA section.  This is null-terminated.  
 @param aLength the length of the aData string  
   
 
-### HandleDoctypeDecl ###
+### HandleDoctypeDecl(aSubset, aName, aSystemId, aPublicId, aCatalogData) ###
   
 Called to handle the doctype declaration  
   
 
-### HandleCharacterData ###
+### HandleCharacterData(aData, aLength) ###
   
 Called to handle character data.  Note that this does NOT get  
 called for the contents of CDATA sections.  
@@ -60,14 +60,14 @@ called for the contents of CDATA sections.
 @param aLength the length of the aData string  
   
 
-### HandleProcessingInstruction ###
+### HandleProcessingInstruction(aTarget, aData) ###
   
 Called to handle a processing instruction  
 @param aTarget the PI target (e.g. xml-stylesheet)  
 @param aData all the rest of the data in the PI  
   
 
-### HandleXMLDeclaration ###
+### HandleXMLDeclaration(aVersion, aEncoding, aStandalone) ###
   
 Handle the XML Declaration.  
   
@@ -78,7 +78,7 @@ Handle the XML Declaration.
                    given as no, or that it was given as yes.  
   
 
-### ReportError ###
+### ReportError(aErrorText, aSourceText, aError) ###
   
 Ask the content sink if the expat driver should log an error to the console.  
   

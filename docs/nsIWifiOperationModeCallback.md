@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### wifiOperationModeResult ###
+### wifiOperationModeResult(error) ###
   
 Callback function used to report result to WifiManager.  
   

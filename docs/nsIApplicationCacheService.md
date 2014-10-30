@@ -10,24 +10,24 @@ groups.
 
 ## Methods ##
 
-### buildGroupID ###
+### buildGroupID(aManifestURL, aLoadContextInfo) ###
   
 Create group string identifying cache group according the manifest  
 URL and the given load context.  
   
 
-### buildGroupIDForApp ###
+### buildGroupIDForApp(aManifestURL, aAppID, aInBrowser) ###
   
 Same as buildGroupID method, just doesn't require load context.  
   
 
-### createApplicationCache ###
+### createApplicationCache(group) ###
   
 Create a new, empty application cache for the given cache  
 group.  
   
 
-### createCustomApplicationCache ###
+### createCustomApplicationCache(group, profileDir, quota) ###
   
 Create a new, empty application cache for the given cache  
 group residing in a custom directory with a custom quota.  
@@ -41,22 +41,22 @@ group residing in a custom directory with a custom quota.
    Optional override of the default quota.  
   
 
-### getApplicationCache ###
+### getApplicationCache(clientID) ###
   
 Get an application cache object for the given client ID.  
   
 
-### getActiveCache ###
+### getActiveCache(group) ###
   
 Get the currently active cache object for a cache group.  
   
 
-### deactivateGroup ###
+### deactivateGroup(group) ###
   
 Deactivate the currently-active cache object for a cache group.  
   
 
-### discardByAppId ###
+### discardByAppId(appID, discardOnlyBrowserEntries) ###
   
 Deletes some or all of an application's cache entries.    
   
@@ -70,12 +70,12 @@ Deletes some or all of an application's cache entries.
    deleted (this is used for application uninstallation).  
   
 
-### chooseApplicationCache ###
+### chooseApplicationCache(key, aLoadContextInfo) ###
   
 Try to find the best application cache to serve a resource.  
   
 
-### cacheOpportunistically ###
+### cacheOpportunistically(cache, key) ###
   
 Flags the key as being opportunistically cached.  
   
@@ -89,12 +89,12 @@ this is not currently implemented.
        The cache entry key.  
   
 
-### getGroups ###
+### getGroups(count, groupIDs) ###
   
 Get the list of application cache groups.  
   
 
-### getGroupsTimeOrdered ###
+### getGroupsTimeOrdered(count, groupIDs) ###
   
 Get the list of application cache groups in the order of  
 activating time.  

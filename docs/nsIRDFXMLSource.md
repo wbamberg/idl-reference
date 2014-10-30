@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### Serialize ###
+### Serialize(aStream) ###
   
 Serialize the contents of the datasource to aStream.  
 @param aStream the output stream the will receive the  

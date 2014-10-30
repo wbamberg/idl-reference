@@ -12,7 +12,7 @@ promptPasswordAsync returns.
 
 ## Methods ##
 
-### onAuthAvailable ###
+### onAuthAvailable(aContext, aAuthInfo) ###
   
 Authentication information is available.  
   
@@ -25,7 +25,7 @@ Authentication information is available.
 @note  Any exceptions thrown from this method should be ignored.  
   
 
-### onAuthCancelled ###
+### onAuthCancelled(aContext, userCancel) ###
   
 Notification that the prompt was cancelled.  
   

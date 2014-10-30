@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### isStreamBased ###
+### isStreamBased() ###
   
 Find out whether or not the cache entry is stream based.  
   

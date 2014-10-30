@@ -6,67 +6,67 @@ layout: default
 
 ## Methods ##
 
-### isSelected ###
+### isSelected(index) ###
   
 Indicates whether or not the row at the specified index is  
 part of the selection.  
   
 
-### select ###
+### select(index) ###
   
 Deselect all rows and select the row at the specified index.   
   
 
-### timedSelect ###
+### timedSelect(index, delay) ###
   
 Perform a timed select.  
   
 
-### toggleSelect ###
+### toggleSelect(index) ###
   
 Toggle the selection state of the row at the specified index.  
   
 
-### rangedSelect ###
+### rangedSelect(startIndex, endIndex, augment) ###
   
 Select the range specified by the indices.  If augment is true,  
 then we add the range to the selection without clearing out anything  
 else.  If augment is false, everything is cleared except for the specified range.  
   
 
-### clearRange ###
+### clearRange(startIndex, endIndex) ###
   
 Clears the range.  
   
 
-### clearSelection ###
+### clearSelection() ###
   
 Clears the selection.  
   
 
-### invertSelection ###
+### invertSelection() ###
   
 Inverts the selection.  
   
 
-### selectAll ###
+### selectAll() ###
   
 Selects all rows.  
   
 
-### getRangeCount ###
+### getRangeCount() ###
   
 Iterate the selection using these methods.  
   
 
-### getRangeAt ###
+### getRangeAt(i, min, max) ###
 
-### invalidateSelection ###
+### invalidateSelection() ###
   
 Can be used to invalidate the selection.  
   
 
-### adjustSelection ###
+### adjustSelection(index, count) ###
   
 Called when the row count changes to adjust selection indices.  
   

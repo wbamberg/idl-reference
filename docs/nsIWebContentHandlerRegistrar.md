@@ -16,11 +16,11 @@ can invoke it.
 
 ## Methods ##
 
-### registerContentHandler ###
+### registerContentHandler(mimeType, uri, title, contentWindow) ###
   
 See documentation in Navigator.webidl  
 The additional contentWindow param for both methods represents the dom  
 content window from which the method has been called.  
   
 
-### registerProtocolHandler ###
+### registerProtocolHandler(protocol, uri, title, contentWindow) ###

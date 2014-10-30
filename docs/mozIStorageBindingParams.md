@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### bindByName ###
+### bindByName(aName, aValue) ###
   
 Binds aValue to the parameter with the name aName.  
   
@@ -16,23 +16,23 @@ Binds aValue to the parameter with the name aName.
        The value to bind.  
   
 
-### bindUTF8StringByName ###
+### bindUTF8StringByName(aName, aValue) ###
 
-### bindStringByName ###
+### bindStringByName(aName, aValue) ###
 
-### bindDoubleByName ###
+### bindDoubleByName(aName, aValue) ###
 
-### bindInt32ByName ###
+### bindInt32ByName(aName, aValue) ###
 
-### bindInt64ByName ###
+### bindInt64ByName(aName, aValue) ###
 
-### bindNullByName ###
+### bindNullByName(aName) ###
 
-### bindBlobByName ###
+### bindBlobByName(aName, aValue, aValueSize) ###
 
-### bindAdoptedBlobByName ###
+### bindAdoptedBlobByName(aName, aValue, aValueSize) ###
 
-### bindByIndex ###
+### bindByIndex(aIndex, aValue) ###
   
 Binds aValue to the parameter with the index aIndex.  
   
@@ -42,18 +42,18 @@ Binds aValue to the parameter with the index aIndex.
        The value to bind.  
   
 
-### bindUTF8StringByIndex ###
+### bindUTF8StringByIndex(aIndex, aValue) ###
 
-### bindStringByIndex ###
+### bindStringByIndex(aIndex, aValue) ###
 
-### bindDoubleByIndex ###
+### bindDoubleByIndex(aIndex, aValue) ###
 
-### bindInt32ByIndex ###
+### bindInt32ByIndex(aIndex, aValue) ###
 
-### bindInt64ByIndex ###
+### bindInt64ByIndex(aIndex, aValue) ###
 
-### bindNullByIndex ###
+### bindNullByIndex(aIndex) ###
 
-### bindBlobByIndex ###
+### bindBlobByIndex(aIndex, aValue, aValueSize) ###
 
-### bindAdoptedBlobByIndex ###
+### bindAdoptedBlobByIndex(aIndex, aValue, aValueSize) ###

@@ -10,26 +10,26 @@ RDF data model. The object's identity is determined by its URI.
 
 ## Methods ##
 
-### GetValueConst ###
+### GetValueConst(aConstValue) ###
   
 An unscriptable version used to avoid a string copy. Meant  
 for use as a performance optimization. The string is encoded  
 in UTF-8.  
   
 
-### Init ###
+### Init(uri) ###
   
 This method is called by the nsIRDFService after constructing  
 a resource object to initialize its URI. You would not normally  
 call this method directly  
   
 
-### EqualsString ###
+### EqualsString(aURI) ###
   
 Determine if the resource has the given URI.  
   
 
-### GetDelegate ###
+### GetDelegate(aKey, aIID, aResult) ###
   
 Retrieve the "delegate" object for this resource. A resource  
 may have several delegate objects, each of whose lifetimes is  
@@ -52,7 +52,7 @@ is, an object that supports nsIRDFDelegateFactory. The delegate
 factory will be used to construct the delegate object.  
   
 
-### ReleaseDelegate ###
+### ReleaseDelegate(aKey) ###
   
 Force a delegate to be "unbound" from the resource.  
   

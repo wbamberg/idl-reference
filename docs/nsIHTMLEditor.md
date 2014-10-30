@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### addDefaultProperty ###
+### addDefaultProperty(aProperty, aAttribute, aValue) ###
   
 AddDefaultProperty() registers a default style property with the editor  
   
@@ -19,7 +19,7 @@ AddDefaultProperty() registers a default style property with the editor
                             aValue="0x00FFFF"  
   
 
-### removeDefaultProperty ###
+### removeDefaultProperty(aProperty, aAttribute, aValue) ###
   
 RemoveDefaultProperty() unregisters a default style property with the editor  
   
@@ -32,13 +32,13 @@ RemoveDefaultProperty() unregisters a default style property with the editor
                             aValue="0x00FFFF"  
   
 
-### removeAllDefaultProperties ###
+### removeAllDefaultProperties() ###
   
 RemoveAllDefaultProperties() unregisters all default style properties with the editor  
   
   
 
-### setInlineProperty ###
+### setInlineProperty(aProperty, aAttribute, aValue) ###
   
 SetInlineProperty() sets the aggregate properties on the current selection  
   
@@ -52,7 +52,7 @@ SetInlineProperty() sets the aggregate properties on the current selection
                             aValue="0x00FFFF"  
   
 
-### getInlineProperty ###
+### getInlineProperty(aProperty, aAttribute, aValue, aFirst, aAny, aAll) ###
   
 getInlineProperty() gets aggregate properties of the current selection.  
 All object in the current selection are scanned and their attributes are  
@@ -74,15 +74,15 @@ represented in a list of Property object.
                          selection have the property  
   
 
-### getInlinePropertyWithAttrValue ###
+### getInlinePropertyWithAttrValue(aProperty, aAttribute, aValue, aFirst, aAny, aAll) ###
 
-### removeAllInlineProperties ###
+### removeAllInlineProperties() ###
   
 removeAllInlineProperties() deletes all the inline properties from all   
 text in the current selection.  
   
 
-### removeInlineProperty ###
+### removeInlineProperty(aProperty, aAttribute) ###
   
 removeInlineProperty() deletes the properties from all text in the current  
 selection.  If aProperty is not set on the selection, nothing is done.  
@@ -101,21 +101,21 @@ selection.  If aProperty is not set on the selection, nothing is done.
                    are to be removed from the selection.  
   
 
-### increaseFontSize ###
+### increaseFontSize() ###
   
  Increase font size for text in selection by 1 HTML unit  
  All existing text is scanned for existing <FONT SIZE> attributes  
  so they will be incremented instead of inserting new <FONT> tag  
   
 
-### decreaseFontSize ###
+### decreaseFontSize() ###
   
  Decrease font size for text in selection by 1 HTML unit  
  All existing text is scanned for existing <FONT SIZE> attributes  
  so they will be decreased instead of inserting new <FONT> tag  
   
 
-### nodeIsBlock ###
+### nodeIsBlock(node) ###
   
 Tests if a node is a BLOCK element according the the HTML 4.0 DTD.  
   This does NOT consider CSS effect on display type  
@@ -123,20 +123,20 @@ Tests if a node is a BLOCK element according the the HTML 4.0 DTD.
 @param aNode      the node to test  
   
 
-### insertHTML ###
+### insertHTML(aInputString) ###
   
 Insert some HTML source at the current location  
   
 @param aInputString   the string to be inserted  
   
 
-### pasteNoFormatting ###
+### pasteNoFormatting(aSelectionType) ###
    
 Paste the text in the OS clipboard at the cursor position, replacing  
 the selected text (if any), but strip out any HTML styles and formatting  
   
 
-### rebuildDocumentFromSource ###
+### rebuildDocumentFromSource(aSourceString) ###
    
  Rebuild the entire document from source HTML  
  Needed to be able to edit HEAD and other outside-of-BODY content  
@@ -144,7 +144,7 @@ the selected text (if any), but strip out any HTML styles and formatting
  @param aSourceString   HTML source string of the entire new document  
   
 
-### insertHTMLWithContext ###
+### insertHTMLWithContext(aInputString, aContextStr, aInfoStr, aFlavor, aSourceDoc, aDestinationNode, aDestinationOffset, aDeleteSelection) ###
   
 Insert some HTML source, interpreting  
 the string argument according to the given context.  
@@ -160,7 +160,7 @@ the string argument according to the given context.
 @param aCollapseSelection  used with aDestNode during drag&drop  
   
 
-### insertElementAtSelection ###
+### insertElementAtSelection(aElement, aDeleteSelection) ###
    
 Insert an element, which may have child nodes, at the selection  
 Used primarily to insert a new element for various insert element dialogs,  
@@ -174,12 +174,12 @@ Used primarily to insert a new element for various insert element dialogs,
     Named Anchors, which insert before the selection  
   
 
-### setDocumentTitle ###
+### setDocumentTitle(aTitle) ###
    
   Set the documents title.  
   
 
-### updateBaseURL ###
+### updateBaseURL() ###
    
   Set the BaseURL for the document to the current URL  
     but only if the page doesn't have a <base> tag  
@@ -188,14 +188,14 @@ Used primarily to insert a new element for various insert element dialogs,
   This is used as base for relativizing link and image urls  
   
 
-### selectElement ###
+### selectElement(aElement) ###
    
 Set the selection at the suppled element  
   
 @param aElement   An element in the document  
   
 
-### setCaretAfterElement ###
+### setCaretAfterElement(aElement) ###
    
 Create a collapsed selection just after aElement  
   
@@ -209,13 +209,13 @@ The selection is set to parent-of-aElement with an
 @param aElement  An element in the document  
   
 
-### setParagraphFormat ###
+### setParagraphFormat(aParagraphFormat) ###
   
 SetParagraphFormat       Insert a block paragraph tag around selection  
 @param aParagraphFormat  "p", "h1" to "h6", "address", "pre", or "blockquote"  
   
 
-### getParagraphState ###
+### getParagraphState(aMixed) ###
   
 getParagraphState returns what block tag paragraph format is in  
 the selection.  
@@ -223,7 +223,7 @@ the selection.
 @return           Name of block tag. "" is returned for none.  
   
 
-### getFontFaceState ###
+### getFontFaceState(aMixed) ###
    
 getFontFaceState returns what font face is in the selection.  
 @param aMixed    True if there is more than one font face  
@@ -231,28 +231,28 @@ getFontFaceState returns what font face is in the selection.
                  tt tag.  "" is returned for none.  
   
 
-### getFontColorState ###
+### getFontColorState(aMixed) ###
    
 getFontColorState returns what font face is in the selection.  
 @param aMixed     True if there is more than one font color  
 @return           Color string. "" is returned for none.  
   
 
-### getBackgroundColorState ###
+### getBackgroundColorState(aMixed) ###
    
 getFontColorState returns what font face is in the selection.  
 @param aMixed     True if there is more than one font color  
 @return           Color string. "" is returned for none.  
   
 
-### getHighlightColorState ###
+### getHighlightColorState(aMixed) ###
    
 getHighlightColorState returns what the highlight color of the selection.  
 @param aMixed     True if there is more than one font color  
 @return           Color string. "" is returned for none.  
   
 
-### getListState ###
+### getListState(aMixed, aOL, aUL, aDL) ###
    
 getListState returns what list type is in the selection.  
 @param aMixed    True if there is more than one type of list, or  
@@ -263,7 +263,7 @@ getListState returns what list type is in the selection.
 @param aDL       true if a "dl" list is selected.  
   
 
-### getListItemState ###
+### getListItemState(aMixed, aLI, aDT, aDD) ###
    
 getListItemState returns what list item type is in the selection.  
 @param aMixed    True if there is more than one type of list item, or  
@@ -273,7 +273,7 @@ getListItemState returns what list item type is in the selection.
 @param aDD       true if "dd" list items are selected.  
   
 
-### getAlignment ###
+### getAlignment(aMixed, aAlign) ###
    
 getAlignment     returns what alignment is in the selection.  
 @param aMixed    True if there is more than one type of list item, or  
@@ -282,37 +282,37 @@ getAlignment     returns what alignment is in the selection.
                  (left/center/right)  
   
 
-### getIndentState ###
+### getIndentState(aCanIndent, aCanOutdent) ###
   
 Document me!  
   
   
 
-### makeOrChangeList ###
+### makeOrChangeList(aListType, entireList, aBulletType) ###
   
 Document me!  
   
   
 
-### removeList ###
+### removeList(aListType) ###
   
 Document me!  
   
   
 
-### indent ###
+### indent(aIndent) ###
   
 Document me!  
   
   
 
-### align ###
+### align(aAlign) ###
   
 Document me!  
   
   
 
-### getElementOrParentByTagName ###
+### getElementOrParentByTagName(aTagName, aNode) ###
    
 Return the input node or a parent matching the given aTagName,  
   starting the search at the supplied node.  
@@ -334,7 +334,7 @@ An example of use is for testing if a node is in a table cell
                 (passes NS_SUCCEEDED macro)  
   
 
-### getSelectedElement ###
+### getSelectedElement(aTagName) ###
    
 Return an element only if it is the only node selected,  
    such as an image, horizontal rule, etc.  
@@ -355,17 +355,17 @@ The exception is a link, which is more like a text attribute:
                  (passes NS_SUCCEEDED macro)  
   
 
-### getHeadContentsAsHTML ###
+### getHeadContentsAsHTML() ###
    
 Output the contents of the <HEAD> section as text/HTML format  
   
 
-### replaceHeadContentsWithHTML ###
+### replaceHeadContentsWithHTML(aSourceToInsert) ###
    
 Replace all children of <HEAD> with string of HTML source  
   
 
-### createElementWithDefaults ###
+### createElementWithDefaults(aTagName) ###
    
 Return a new element with default attribute values  
   
@@ -384,21 +384,21 @@ Used primarily to supply new element for various insert element dialogs
 @return          The new element created.  
   
 
-### insertLinkAroundSelection ###
+### insertLinkAroundSelection(aAnchorElement) ###
    
 Insert an link element as the parent of the current selection  
   
 @param aElement   An "A" element with a non-empty "href" attribute  
   
 
-### setBackgroundColor ###
+### setBackgroundColor(aColor) ###
    
 Set the value of the "bgcolor" attribute on the document's <body> element  
   
 @param aColor  The HTML color string, such as "#ffccff" or "yellow"  
   
 
-### setBodyAttribute ###
+### setBodyAttribute(aAttr, aValue) ###
    
 Set an attribute on the document's <body> element  
    such as text, link, background colors  
@@ -409,7 +409,7 @@ Set an attribute on the document's <body> element
 @param aValue  The value of the attribute  
   
 
-### getLinkedObjects ###
+### getLinkedObjects() ###
   
 Find all the nodes in the document which contain references  
 to outside URIs (e.g. a href, img src, script src, etc.)  
@@ -418,19 +418,19 @@ The objects in the array will be type nsIURIRefObject.
 @return aNodeList    the linked nodes found  
   
 
-### addInsertionListener ###
+### addInsertionListener(inFilter) ###
   
 Add listener for insertion override  
 @param inFilter  function which callers want called during insertion  
   
 
-### removeInsertionListener ###
+### removeInsertionListener(inFilter) ###
   
 Remove listener for insertion override  
 @param inFilter  function which callers do not want called during insertion  
   
 
-### createAnonymousElement ###
+### createAnonymousElement(aTag, aParentNode, aAnonClass, aIsCreatedHidden) ###
   
 Returns an anonymous nsDOMElement of type aTag,  
 child of aParentNode. If aIsCreatedHidden is true, the class  
@@ -447,27 +447,27 @@ the empty string, it becomes the value of the attribute "_moz_anonclass"
                              element  
   
 
-### getSelectionContainer ###
+### getSelectionContainer() ###
   
 returns the deepest container of the selection  
 @return a DOM Element  
   
 
-### checkSelectionStateForAnonymousButtons ###
+### checkSelectionStateForAnonymousButtons(aSelection) ###
   
 Checks if the anonymous nodes created by the HTML editor have to be  
 refreshed or hidden depending on a possible new state of the selection  
 @param aSelection [IN] a selection  
   
 
-### isAnonymousElement ###
+### isAnonymousElement(aElement) ###
 
-### breakIsVisible ###
+### breakIsVisible(aNode) ###
   
 Checks whether a BR node is visible to the user.  
   
 
-### GetActiveEditingHost ###
+### GetActiveEditingHost() ###
   
 Get an active editor's editing host in DOM window.  If this editor isn't  
 active in the DOM window, this returns NULL.  

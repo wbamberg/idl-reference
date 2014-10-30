@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### QueryInterface ###
+### QueryInterface(uuid, result) ###
 
-### AddRef ###
+### AddRef() ###
 
-### Release ###
+### Release() ###

@@ -11,7 +11,7 @@ Interface used in RDF to describe data sources.
 
 ## Methods ##
 
-### visitAllSubjects ###
+### visitAllSubjects(aVisitor) ###
   
 Visit all the subject resources in the datasource. The order is  
 intederminate and may change from one invocation to the next.  
@@ -22,7 +22,7 @@ this method, but in this case RDF serializations of this
 datasource will not be possible.  
   
 
-### visitAllTriples ###
+### visitAllTriples(aVisitor) ###
   
 Visit all the triples in the datasource. The order is  
 intederminate and may change from one invocation to the next.  

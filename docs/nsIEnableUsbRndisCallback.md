@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### enableUsbRndisResult ###
+### enableUsbRndisResult(success, enable) ###
   
 Callback function used to report the status of enabling/disabling usb rndis.  
   

@@ -6,65 +6,65 @@ layout: default
 
 ## Methods ##
 
-### IsOrdinalProperty ###
+### IsOrdinalProperty(aProperty) ###
   
 Returns 'true' if the property is an RDF ordinal property.  
   
 
-### IndexToOrdinalResource ###
+### IndexToOrdinalResource(aIndex) ###
   
 Convert the specified index to an ordinal property.  
   
 
-### OrdinalResourceToIndex ###
+### OrdinalResourceToIndex(aOrdinal) ###
   
 Convert the specified ordinal property into an index  
   
 
-### IsContainer ###
+### IsContainer(aDataSource, aResource) ###
   
 Return 'true' if the specified resource is a container  
   
 
-### IsEmpty ###
+### IsEmpty(aDataSource, aResource) ###
   
 Return 'true' if the specified resource is a container and it is empty  
   
 
-### IsBag ###
+### IsBag(aDataSource, aResource) ###
   
 Return 'true' if the specified resource is a bag  
   
 
-### IsSeq ###
+### IsSeq(aDataSource, aResource) ###
   
 Return 'true' if the specified resource is a sequence  
   
 
-### IsAlt ###
+### IsAlt(aDataSource, aResource) ###
   
 Return 'true' if the specified resource is an alternation  
   
 
-### MakeBag ###
+### MakeBag(aDataSource, aResource) ###
   
 Decorates the specified resource appropriately to make it  
 usable as an empty bag in the specified data source.  
   
 
-### MakeSeq ###
+### MakeSeq(aDataSource, aResource) ###
   
 Decorates the specified resource appropriately to make it  
 usable as an empty sequence in the specified data source.  
   
 
-### MakeAlt ###
+### MakeAlt(aDataSource, aResource) ###
   
 Decorates the specified resource appropriately to make it  
 usable as an empty alternation in the specified data source.  
   
 
-### indexOf ###
+### indexOf(aDataSource, aContainer, aElement) ###
   
 Retrieve the index of element in the container. Returns -1 if  
 the element is not in the container.  

@@ -9,4 +9,4 @@ Interface for a class that manages updates of the url classifier database.
 
 ## Methods ##
 
-### handleEvent ###
+### handleEvent(value) ###

@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### GetFrameLoader ###
+### GetFrameLoader() ###
 
-### swapFrameLoaders ###
+### swapFrameLoaders(aOtherOwner) ###
   
 Swap frame loaders with the given nsIFrameLoaderOwner.  This may  
 only be posible in a very limited range of circumstances, or  

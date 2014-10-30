@@ -12,6 +12,6 @@ http activities.
 
 ## Methods ##
 
-### addObserver ###
+### addObserver(aObserver) ###
 
-### removeObserver ###
+### removeObserver(aObserver) ###

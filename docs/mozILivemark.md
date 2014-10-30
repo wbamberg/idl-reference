@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### reload ###
+### reload(aForceUpdate) ###
   
 Reload livemark contents if they are expired or if forced to do so.  
   
@@ -18,7 +18,7 @@ Reload livemark contents if they are expired or if forced to do so.
       registerForUpdates.  
   
 
-### getNodesForContainer ###
+### getNodesForContainer(aContainerNode) ###
   
 Returns an array of nsINavHistoryResultNode objects, representing children  
 of this livemark.  The nodes will have aContainerNode as parent.  
@@ -28,7 +28,7 @@ of this livemark.  The nodes will have aContainerNode as parent.
        parent of the livemark nodes.  
   
 
-### registerForUpdates ###
+### registerForUpdates(aContainerNode, aResultObserver) ###
   
 Registers a container node for updates on this livemark.  
 When the livemark contents change, an invalidateContainer(aContainerNode)  
@@ -42,7 +42,7 @@ request is sent to aResultObserver.
        to the livemark contents.  
   
 
-### unregisterForUpdates ###
+### unregisterForUpdates(aContainerNode) ###
   
 Unregisters a previously registered container node.  
   

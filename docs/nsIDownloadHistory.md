@@ -11,7 +11,7 @@ downloads differently from other types of history.
 
 ## Methods ##
 
-### addDownload ###
+### addDownload(aSource, aReferrer, aStartTime, aDestination) ###
   
 Adds a download to history.  This will also notify observers that the  
 URI aSource is visited with the topic NS_LINK_VISITED_EVENT_TOPIC if  
@@ -39,7 +39,7 @@ aSource has not yet been visited.
       for toolkit's implementation of this interface).  
   
 
-### removeAllDownloads ###
+### removeAllDownloads() ###
   
 Remove all downloads from history.  
   

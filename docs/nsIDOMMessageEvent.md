@@ -13,7 +13,7 @@ http://www.whatwg.org/specs/web-apps/current-work/#messageevent
 
 ## Methods ##
 
-### initMessageEvent ###
+### initMessageEvent(aType, aCanBubble, aCancelable, aData, aOrigin, aLastEventId, aSource) ###
   
 Initializes this event with the given data, in a manner analogous to  
 the similarly-named method on the nsIDOMEvent interface, also setting the  

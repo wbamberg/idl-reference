@@ -9,7 +9,7 @@ Interface for persisting DOM documents and URIs to local or remote storage.
 
 ## Methods ##
 
-### saveURI ###
+### saveURI(aURI, aCacheKey, aReferrer, aPostData, aExtraHeaders, aFile, aPrivacyContext) ###
   
 Save the specified URI to file.  
   
@@ -42,7 +42,7 @@ Save the specified URI to file.
 @throws NS_ERROR_INVALID_ARG One or more arguments was invalid.  
   
 
-### savePrivacyAwareURI ###
+### savePrivacyAwareURI(aURI, aCacheKey, aReferrer, aPostData, aExtraHeaders, aFile, aIsPrivate) ###
   
 @param aIsPrivate Treat the save operation as private (ie. with  
                   regards to networking operations and persistence  
@@ -50,13 +50,13 @@ Save the specified URI to file.
 @see saveURI for all other parameter descriptions  
   
 
-### saveChannel ###
+### saveChannel(aChannel, aFile) ###
   
 Save a channel to a file. It must not be opened yet.  
 @see saveURI  
   
 
-### saveDocument ###
+### saveDocument(aDocument, aFile, aDataPath, aOutputContentType, aEncodingFlags, aWrapColumn) ###
   
 Save the specified DOM document to file and optionally all linked files  
 (e.g. images, CSS, JS & subframes). Do not call this method until the  
@@ -86,7 +86,7 @@ document has finished loading!
 @throws NS_ERROR_INVALID_ARG One or more arguments was invalid.  
   
 
-### cancelSave ###
+### cancelSave() ###
   
 Cancels the current operation. The caller is responsible for cleaning up  
 partially written files or directories. This has the same effect as calling  

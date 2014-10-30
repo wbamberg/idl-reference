@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aSource, aSink, aTarget, aSourceBuffered, aSinkBuffered, aChunkSize, aCloseSource, aCloseSink) ###
   
 Initialize the stream copier.  
   
@@ -36,7 +36,7 @@ whether your streams are buffered, you should use nsIAsyncStreamCopier2
 instead.  
   
 
-### asyncCopy ###
+### asyncCopy(aObserver, aObserverContext) ###
   
 asyncCopy triggers the start of the copy.  The observer will be notified  
 when the copy completes.  

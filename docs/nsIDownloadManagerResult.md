@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### handleResult ###
+### handleResult(aStatus, aDownload) ###
   
 Process an asynchronous result from getDownloadByGUID.  
   

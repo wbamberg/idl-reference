@@ -17,7 +17,7 @@ menu event, the browser will call this interface if present.
 
 ## Methods ##
 
-### onShowContextMenu ###
+### onShowContextMenu(aContextFlags, aEvent, aNode) ###
   
 Called when the browser receives a context menu event (e.g. user is right-mouse  
 clicking somewhere on the document). The combination of flags, event and node  

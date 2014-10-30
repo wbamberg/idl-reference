@@ -11,7 +11,7 @@ nsIWebNavigation.
 
 ## Methods ##
 
-### openStream ###
+### openStream(aBaseURI, aContentType) ###
   
 Prepare to load a stream of data. When this function returns successfully,  
 it must be paired by a call to closeStream.  
@@ -31,7 +31,7 @@ it must be paired by a call to closeStream.
        openStream was called twice without an intermediate closeStream.  
   
 
-### appendToStream ###
+### appendToStream(aData, aLen) ###
   
 Append data to this stream.  
 @param aData The data to append  
@@ -40,7 +40,7 @@ Append data to this stream.
 @note To append more than 4 GB of data, call this method multiple times.  
   
 
-### closeStream ###
+### closeStream() ###
   
 Notifies the browser that all the data has been appended. This may notify  
 the user that the browser is "done loading" in some form.  

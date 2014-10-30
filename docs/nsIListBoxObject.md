@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### getRowCount ###
+### getRowCount() ###
 
-### getItemAtIndex ###
+### getItemAtIndex(index) ###
 
-### getIndexOfItem ###
+### getIndexOfItem(item) ###

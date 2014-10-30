@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### deleteModule ###
+### deleteModule(moduleName) ###
 
-### addModule ###
+### addModule(moduleName, libraryFullPath, cryptoMechanismFlags, cipherFlags) ###

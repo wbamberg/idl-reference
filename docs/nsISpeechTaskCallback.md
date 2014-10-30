@@ -11,17 +11,17 @@ cancel method for shutting down the speech resources.
 
 ## Methods ##
 
-### onPause ###
+### onPause() ###
   
 The user or application has paused the speech.  
   
 
-### onResume ###
+### onResume() ###
   
 The user or application has resumed the speech.  
   
 
-### onCancel ###
+### onCancel() ###
   
 The user or application has canceled the speech.  
   

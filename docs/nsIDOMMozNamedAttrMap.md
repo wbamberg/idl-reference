@@ -10,19 +10,19 @@ world where Attr no longer inherits from Node.
 
 ## Methods ##
 
-### getNamedItem ###
+### getNamedItem(name) ###
 
-### setNamedItem ###
+### setNamedItem(arg) ###
 
-### removeNamedItem ###
+### removeNamedItem(name) ###
 
-### item ###
+### item(index) ###
 
-### getNamedItemNS ###
+### getNamedItemNS(namespaceURI, localName) ###
 
-### setNamedItemNS ###
+### setNamedItemNS(arg) ###
 
-### removeNamedItemNS ###
+### removeNamedItemNS(namespaceURI, localName) ###
 
 ## Attributes ##
 

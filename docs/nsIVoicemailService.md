@@ -10,16 +10,16 @@ information.
 
 ## Methods ##
 
-### getItemByServiceId ###
+### getItemByServiceId(serviceId) ###
 
-### getDefaultItem ###
+### getDefaultItem() ###
 
-### registerListener ###
+### registerListener(listener) ###
   
 Called when any one who is interested in receiving unsolicited messages.  
   
 
-### unregisterListener ###
+### unregisterListener(listener) ###
 
 ## Attributes ##
 

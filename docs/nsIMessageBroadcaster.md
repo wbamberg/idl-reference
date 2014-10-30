@@ -13,7 +13,7 @@ within its window.
 
 ## Methods ##
 
-### broadcastAsyncMessage ###
+### broadcastAsyncMessage(messageName, obj, objects) ###
   
 Like |sendAsyncMessage()|, but also broadcasts this message to  
 all "child" message managers of this message manager.  See long  
@@ -23,7 +23,7 @@ WARNING: broadcasting messages can be very expensive and leak
 sensitive data.  Use with extreme caution.  
   
 
-### getChildAt ###
+### getChildAt(aIndex) ###
   
 Return a single subordinate message manager.  
   

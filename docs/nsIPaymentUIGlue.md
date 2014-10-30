@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### confirmPaymentRequest ###
+### confirmPaymentRequest(requestId, paymentRequestsInfo, successCb, errorCb) ###
 
-### showPaymentFlow ###
+### showPaymentFlow(requestId, paymentFlowInfo, errorCb) ###
 
-### cleanup ###
+### cleanup() ###

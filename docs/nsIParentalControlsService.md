@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### isAllowed ###
+### isAllowed(aAction, aUri) ###
   
 Check if the user can do the prescibed action for this uri.  
   
@@ -15,7 +15,7 @@ Check if the user can do the prescibed action for this uri.
 @param aWindow             The window generating this event.  
   
 
-### requestURIOverride ###
+### requestURIOverride(aTarget, aWindowContext) ###
   
 Request that blocked URI(s) be allowed through parental  
 control filters. Returns true if the URI was successfully  
@@ -27,9 +27,9 @@ overriden. Note, may block while native UI is shown.
 @param window              Window that generates the event.  
   
 
-### requestURIOverrides ###
+### requestURIOverrides(aTargets, aWindowContext) ###
 
-### log ###
+### log(aEntryType, aFlag, aSource, aTarget) ###
   
 Log an application specific parental controls  
 event.  

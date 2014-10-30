@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### getWorkerDebuggerEnumerator ###
+### getWorkerDebuggerEnumerator() ###
 
-### addListener ###
+### addListener(listener) ###
 
-### removeListener ###
+### removeListener(listener) ###

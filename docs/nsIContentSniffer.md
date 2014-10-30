@@ -10,7 +10,7 @@ determine a MIME type from a chunk of bytes.
 
 ## Methods ##
 
-### getMIMETypeFromContent ###
+### getMIMETypeFromContent(aRequest, aData, aLength) ###
   
 Given a chunk of data, determines a MIME type. Information from the given  
 request may be used in order to make a better decision.  

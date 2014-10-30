@@ -9,42 +9,42 @@ This interface represents a Personal Dictionary.
 
 ## Methods ##
 
-### load ###
+### load() ###
   
 Load the dictionary  
   
 
-### save ###
+### save() ###
   
 Save the dictionary  
   
 
-### check ###
+### check(word, lang) ###
   
 Check a unicode string  
   
 
-### addWord ###
+### addWord(word, lang) ###
   
 Add a word to the personal dictionary  
   
 
-### removeWord ###
+### removeWord(word, lang) ###
   
 Remove a word from the personal dictionary  
   
 
-### ignoreWord ###
+### ignoreWord(word) ###
   
 Add a word to the ignore all list  
   
 
-### endSession ###
+### endSession() ###
   
 Clear the ignore list  
   
 
-### addCorrection ###
+### addCorrection(word, correction, lang) ###
    
 These three functions are here in case we want to store previous   
 misspellings and return them at the head of the misspell list.  
@@ -53,12 +53,12 @@ misspellings and return them at the head of the misspell list.
 Add a misspelling to the list of corrections  
   
 
-### removeCorrection ###
+### removeCorrection(word, correction, lang) ###
   
 Remove a misspelling from the list of corrections  
   
 
-### getCorrection ###
+### getCorrection(word, words, count) ###
   
 Get a list of previous corrections for the word  
   

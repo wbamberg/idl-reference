@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### pasteAsQuotation ###
+### pasteAsQuotation(aSelectionType) ###
  Paste the text in the OS clipboard at the cursor position,  
 as a quotation (whose representation is dependant on the editor type),  
 replacing the selected text (if any).  
 @param aSelectionType Text or html?  
   
 
-### insertAsQuotation ###
+### insertAsQuotation(aQuotedText) ###
  Insert a string as quoted text  
 (whose representation is dependant on the editor type),  
 replacing the selected text (if any).  
@@ -21,7 +21,7 @@ replacing the selected text (if any).
 @return             The node which was inserted  
   
 
-### insertTextWithQuotations ###
+### insertTextWithQuotations(aStringToInsert) ###
   
 Inserts a plaintext string at the current location,  
 with special processing for lines beginning with ">",  
@@ -33,7 +33,7 @@ and the insertion takes place at the resulting collapsed selection.
 @param aString   the string to be inserted  
   
 
-### pasteAsCitedQuotation ###
+### pasteAsCitedQuotation(aCitation, aSelectionType) ###
  Paste a string as quoted text,  
 whose representation is dependant on the editor type,  
 replacing the selected text (if any)  
@@ -41,7 +41,7 @@ replacing the selected text (if any)
 @param aSelectionType Text or html?  
   
 
-### insertAsCitedQuotation ###
+### insertAsCitedQuotation(aQuotedText, aCitation, aInsertHTML) ###
  Insert a string as quoted text  
 (whose representation is dependant on the editor type),  
 replacing the selected text (if any),  
@@ -52,18 +52,18 @@ including, if possible, a "cite" attribute.
 @return             The node which was inserted  
   
 
-### rewrap ###
+### rewrap(aRespectNewlines) ###
   
 Rewrap the selected part of the document, re-quoting if necessary.  
 @param aRespectNewlines  Try to maintain newlines in the original?  
   
 
-### stripCites ###
+### stripCites() ###
   
 Strip any citations in the selected part of the document.  
   
 
-### getEmbeddedObjects ###
+### getEmbeddedObjects() ###
   
 Get a list of IMG and OBJECT tags in the current document.  
   

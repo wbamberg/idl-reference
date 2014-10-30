@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### setSessionCache ###
+### setSessionCache(aSessionCache) ###
   
 setSessionCache  
   
@@ -15,7 +15,7 @@ should be set before calling |asyncListen| if you wish to change the
 default.  
   
 
-### setSessionTickets ###
+### setSessionTickets(aSessionTickets) ###
   
 setSessionTickets  
   
@@ -24,7 +24,7 @@ should be set before calling |asyncListen| if you wish to change the
 default.  
   
 
-### setRequestClientCertificate ###
+### setRequestClientCertificate(aRequestClientCert) ###
   
 setRequestClientCertificate  
   

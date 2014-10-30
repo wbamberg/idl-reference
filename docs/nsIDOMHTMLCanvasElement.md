@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### toDataURL ###
+### toDataURL(type, params) ###
 
-### mozGetAsFile ###
+### mozGetAsFile(name, type) ###
 
-### MozGetIPCContext ###
+### MozGetIPCContext(contextId) ###
 
-### mozFetchAsStream ###
+### mozFetchAsStream(callback, type) ###
 
 ## Attributes ##
 

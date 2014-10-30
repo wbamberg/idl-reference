@@ -14,7 +14,7 @@ by launching a dialog to prompt the user for something).
 
 ## Methods ##
 
-### shouldLoad ###
+### shouldLoad(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeTypeGuess, aExtra, aRequestPrincipal) ###
   
 Should the resource at this location be loaded?  
 ShouldLoad will be called before loading the resource at aContentLocation  
@@ -71,7 +71,7 @@ up, content showing up doubled, etc.  If you need to do any of the things
 above, do them off timeout or event.  
   
 
-### shouldProcess ###
+### shouldProcess(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeType, aExtra, aRequestPrincipal) ###
   
 Should the resource be processed?  
 ShouldProcess will be called once all the information passed to it has  

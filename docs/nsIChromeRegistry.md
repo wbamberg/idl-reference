@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### convertChromeURL ###
+### convertChromeURL(aChromeURL) ###
   
 Resolve a chrome URL to an loadable URI using the information in the  
 registry. Does not modify aChromeURL.  
@@ -25,12 +25,12 @@ where "ext" is:
 @param aChromeURL the URL that is to be converted.  
   
 
-### checkForNewChrome ###
+### checkForNewChrome() ###
   
 refresh the chrome list at runtime, looking for new packages/etc  
   
 
-### wrappersEnabled ###
+### wrappersEnabled(aURI) ###
   
 returns whether XPCNativeWrappers are enabled for aURI.  
   

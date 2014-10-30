@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### getAnonymousNodes ###
+### getAnonymousNodes(elt) ###
   
 See the MDC documentation for what these methods do.  
   
 
-### getAnonymousElementByAttribute ###
+### getAnonymousElementByAttribute(elt, attrName, attrValue) ###
 
-### getBindingParent ###
+### getBindingParent(node) ###
 
-### loadBindingDocument ###
+### loadBindingDocument(documentURL) ###

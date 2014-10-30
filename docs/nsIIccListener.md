@@ -6,10 +6,10 @@ layout: default
 
 ## Methods ##
 
-### notifyStkCommand ###
+### notifyStkCommand(aMessage) ###
 
-### notifyStkSessionEnd ###
+### notifyStkSessionEnd() ###
 
-### notifyCardStateChanged ###
+### notifyCardStateChanged() ###
 
-### notifyIccInfoChanged ###
+### notifyIccInfoChanged() ###

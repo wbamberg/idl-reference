@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initDragEvent ###
+### initDragEvent(typeArg, canBubbleArg, cancelableArg, aView, aDetail, aScreenX, aScreenY, aClientX, aClientY, aCtrlKey, aAltKey, aShiftKey, aMetaKey, aButton, aRelatedTarget, aDataTransfer) ###
 
 ## Attributes ##
 

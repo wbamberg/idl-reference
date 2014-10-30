@@ -10,7 +10,7 @@ and for triggering of menuitem actions with assigned identifiers.
 
 ## Methods ##
 
-### init ###
+### init(aDocumentFragment, aGeneratedItemIdAttrName) ###
   
 Initialize builder before building.  
   
@@ -21,7 +21,7 @@ Initialize builder before building.
        used to mark elements as generated and for menuitem identification  
   
 
-### click ###
+### click(aGeneratedItemId) ###
   
 Invoke the action of the menuitem with assigned id aGeneratedItemId.  
   

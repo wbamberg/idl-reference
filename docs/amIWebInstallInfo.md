@@ -11,7 +11,7 @@ it to warn the user about blocked installs and start the installs running.
 
 ## Methods ##
 
-### install ###
+### install() ###
   
 Starts all installs.  
   

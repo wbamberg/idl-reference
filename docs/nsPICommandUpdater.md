@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aWindow) ###
 
-### commandStatusChanged ###
+### commandStatusChanged(aCommandName) ###

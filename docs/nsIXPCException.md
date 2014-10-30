@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### initialize ###
+### initialize(aMessage, aResult, aName, aLocation, aData, aInner) ###

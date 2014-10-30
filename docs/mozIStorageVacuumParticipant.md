@@ -13,7 +13,7 @@ more information.
 
 ## Methods ##
 
-### onBeginVacuum ###
+### onBeginVacuum() ###
   
 Notifies when a vacuum operation begins.  Listeners should avoid using the  
 database till onEndVacuum is received.  
@@ -27,7 +27,7 @@ database till onEndVacuum is received.
       data argument being either "vacuum-begin" or "vacuum-end".  
   
 
-### onEndVacuum ###
+### onEndVacuum(aSucceeded) ###
   
 Notifies when a vacuum operation ends.  
   

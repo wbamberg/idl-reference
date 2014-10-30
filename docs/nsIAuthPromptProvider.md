@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getAuthPrompt ###
+### getAuthPrompt(aPromptReason, iid, result) ###
   
 Request a prompt interface for the given prompt reason;  
 @throws NS_ERROR_NOT_AVAILABLE if no prompt is allowed or  

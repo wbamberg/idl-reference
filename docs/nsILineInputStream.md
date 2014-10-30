@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### readLine ###
+### readLine(aLine) ###
   
 Read a single line from the stream, where a line is a   
 possibly zero length sequence of 8bit chars terminated by a  

@@ -9,32 +9,32 @@ Interface representing a browser tab.
 
 ## Methods ##
 
-### load ###
+### load(aURI) ###
   
 Load a new URI into this browser tab.  
 @param   aURI  
          The uri to load into the browser tab  
   
 
-### focus ###
+### focus() ###
   
 Give focus to this browser tab, and bring it to the front.  
   
 
-### close ###
+### close() ###
   
 Close the browser tab. This may not actually close the tab  
 as script may abort the close operation.  
   
 
-### moveBefore ###
+### moveBefore(aBefore) ###
   
 Moves this browser tab before another browser tab within the window.  
 @param   aBefore  
          The tab before which the target tab will be moved  
   
 
-### moveToEnd ###
+### moveToEnd() ###
   
 Move this browser tab to the last tab within the window.  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init() ###
   
 Inject module OS.Constants in the environment.  
   

@@ -15,7 +15,7 @@ think).
 
 ## Methods ##
 
-### complete ###
+### complete(partialHash, gethashUrl, callback) ###
   
 Request a completed hash from the given gethash url.  
   

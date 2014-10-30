@@ -11,7 +11,7 @@ instructions--you most likely do not want to inherit from nsIClassInfo.
 
 ## Methods ##
 
-### getInterfaces ###
+### getInterfaces(count, array) ###
   
 Get an ordered list of the interface ids that instances of the class   
 promise to implement. Note that nsISupports is an implicit member   
@@ -21,7 +21,7 @@ Should set *count = 0 and *array = null and return NS_OK if getting the
 list is not supported.  
   
 
-### getHelperForLanguage ###
+### getHelperForLanguage(language) ###
   
 Get a language mapping specific helper object that may assist in using  
 objects of this class in a specific lanaguage. For instance, if asked  

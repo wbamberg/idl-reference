@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getItemByServiceId ###
+### getItemByServiceId(serviceId) ###
 
 ## Attributes ##
 

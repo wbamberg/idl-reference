@@ -34,7 +34,7 @@ numbers remain within the limits of a signed char, i.e. -127 to 128.
 
 ## Methods ##
 
-### compare ###
+### compare(A, B) ###
   
 Compare two version strings  
 @param   A   The first version  

@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### registeredHistograms ###
+### registeredHistograms(count, histograms) ###
   
 Returns an array whose values are the names of histograms defined  
 in Histograms.json.  
   
 
-### newHistogram ###
+### newHistogram(name, expiration, min, max, bucket_count, histogram_type) ###
    
 Create and return a histogram.  Parameters:  
   
@@ -28,7 +28,7 @@ The returned object has the following functions:
   clear() - Zeros out the histogram's buckets and sum  
   
 
-### histogramFrom ###
+### histogramFrom(name, existing_name) ###
   
 Create a histogram using the current state of an existing histogram.  The  
 existing histogram must be registered in TelemetryHistograms.h.  
@@ -38,14 +38,14 @@ existing histogram must be registered in TelemetryHistograms.h.
 The returned object has the same functions as a histogram returned from newHistogram.  
   
 
-### getHistogramById ###
+### getHistogramById(id) ###
   
 Same as newHistogram above, but for histograms registered in TelemetryHistograms.h.  
   
 @param id - unique identifier from TelemetryHistograms.h  
   
 
-### registerAddonHistogram ###
+### registerAddonHistogram(addon_id, name, min, max, bucket_count, histogram_type) ###
  Addon telemetry hooks */  
   
 Register a histogram for an addon.  Throws an error if the  
@@ -60,7 +60,7 @@ histogram name has been registered previously.
        HISTOGRAM_BOOLEAN or HISTOGRAM_COUNT  
   
 
-### getAddonHistogram ###
+### getAddonHistogram(addon_id, name) ###
   
 Return a histogram previously registered via  
 registerAddonHistogram.  Throws an error if the id/name combo has  
@@ -73,21 +73,21 @@ The returned object has the same functions as a histogram returned
 from newHistogram.  
   
 
-### unregisterAddonHistograms ###
+### unregisterAddonHistograms(addon_id) ###
   
 Delete all histograms associated with the given addon id.  
   
 @param addon_id - Unique ID of the addon  
   
 
-### asyncFetchTelemetryData ###
+### asyncFetchTelemetryData(aCallback) ###
   
 Read data from the previous run. After the callback is called, the last  
 shutdown time is available in lastShutdownDuration and any late  
 writes in lateWrites.  
   
 
-### msSinceProcessStart ###
+### msSinceProcessStart() ###
   
 Return the number of seconds since process start using monotonic  
 timestamps (unaffected by system clock changes).  

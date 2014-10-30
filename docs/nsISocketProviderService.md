@@ -12,4 +12,4 @@ instance.  One could also use the service manager directly.
 
 ## Methods ##
 
-### getSocketProvider ###
+### getSocketProvider(socketType) ###

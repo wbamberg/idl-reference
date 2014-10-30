@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onDetermineCharset ###
+### onDetermineCharset(aLoader, aContext, aSegment) ###
   
 Called as soon as at least 512 octets of data have arrived.  
 If the stream receives fewer than 512 octets of data in total,  
@@ -20,7 +20,7 @@ Will not be called if the stream receives no data at all.
 @return the name of the character set to be used to decode this stream  
   
 
-### onStreamComplete ###
+### onStreamComplete(aLoader, aContext, aStatus, aBuffer) ###
   
 Called when the entire stream has been loaded and decoded.  
   

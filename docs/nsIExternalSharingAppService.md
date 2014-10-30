@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### shareWithDefault ###
+### shareWithDefault(data, mime, title) ###
 
-### getSharingApps ###
+### getSharingApps(aMIMEType, aLen, handlerApps) ###

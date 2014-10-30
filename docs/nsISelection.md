@@ -12,14 +12,14 @@ of nodes within the document.
 
 ## Methods ##
 
-### collapsed ###
+### collapsed() ###
 
-### getRangeAt ###
+### getRangeAt(index) ###
   
 Returns the range at the specified index.  
   
 
-### collapse ###
+### collapse(parentNode, offset) ###
   
 Collapses the selection to a single point, at the specified offset  
 in the given DOM node. When the selection is collapsed, and the content  
@@ -28,9 +28,9 @@ is focused and editable, the caret will blink there.
 @param offset          Where in given dom node to place the selection (the offset into the given node)  
   
 
-### collapseNative ###
+### collapseNative(parentNode, offset) ###
 
-### extend ###
+### extend(parentNode, offset) ###
   
 Extends the selection by moving the selection end to the specified node and offset,  
 preserving the selection begin position. The new selection end result will always  
@@ -39,23 +39,23 @@ be from the anchorNode to the new focusNode, regardless of direction.
 @param offset          Where in node to place the offset in the new selection end  
   
 
-### extendNative ###
+### extendNative(parentNode, offset) ###
 
-### collapseToStart ###
+### collapseToStart() ###
   
 Collapses the whole selection to a single point at the start  
 of the current selection (irrespective of direction).  If content  
 is focused and editable, the caret will blink there.  
   
 
-### collapseToEnd ###
+### collapseToEnd() ###
   
 Collapses the whole selection to a single point at the end  
 of the current selection (irrespective of direction).  If content  
 is focused and editable, the caret will blink there.  
   
 
-### containsNode ###
+### containsNode(node, partlyContained) ###
   
 Indicates whether the node is part of the selection. If partlyContained   
 is set to PR_TRUE, the function returns true when some part of the node   
@@ -63,38 +63,38 @@ is part of the selection. If partlyContained is set to PR_FALSE, the
 function only returns true when the entire node is part of the selection.  
   
 
-### selectAllChildren ###
+### selectAllChildren(parentNode) ###
   
 Adds all children of the specified node to the selection.  
 @param parentNode  the parent of the children to be added to the selection.  
   
 
-### addRange ###
+### addRange(range) ###
   
 Adds a range to the current selection.  
   
 
-### removeRange ###
+### removeRange(range) ###
   
 Removes a range from the current selection.  
   
 
-### removeAllRanges ###
+### removeAllRanges() ###
   
 Removes all ranges from the current selection.  
   
 
-### deleteFromDocument ###
+### deleteFromDocument() ###
   
 Deletes this selection from document the nodes belong to.  
   
 
-### toString ###
+### toString() ###
   
 Returns the whole selection into a plain text string.  
   
 
-### modify ###
+### modify(alter, direction, granularity) ###
   
 Modifies the selection.  Note that the parameters are case-insensitive.  
   

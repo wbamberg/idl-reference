@@ -12,7 +12,7 @@ data off the main thread.
 
 ## Methods ##
 
-### retargetDeliveryTo ###
+### retargetDeliveryTo(aNewTarget) ###
   
 Called to retarget delivery of OnDataAvailable to another thread. Should  
 only be called before AsyncOpen for nsIWebsocketChannels, or during  

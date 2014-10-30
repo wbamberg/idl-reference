@@ -10,7 +10,7 @@ their contents.
 
 ## Methods ##
 
-### parseFromStream ###
+### parseFromStream(stream, uri) ###
   
 Parse a feed from an nsIInputStream.  
   
@@ -18,7 +18,7 @@ Parse a feed from an nsIInputStream.
 @param uri The base URI.  
   
 
-### parseFromString ###
+### parseFromString(str, uri) ###
   
 Parse a feed from a string.  
   
@@ -26,7 +26,7 @@ Parse a feed from a string.
 @param uri The base URI.  
   
 
-### parseAsync ###
+### parseAsync(requestObserver, uri) ###
   
 Parse a feed asynchronously. The caller must then call the  
 nsIFeedProcessor's nsIStreamListener methods to drive the  

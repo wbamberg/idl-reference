@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### initialize ###
+### initialize(aSpeechRecognition) ###
 
-### processAudioSegment ###
+### processAudioSegment(aAudioSegment, aSampleRate) ###
 
-### validateAndSetGrammarList ###
+### validateAndSetGrammarList(aSpeechGramarList, aCallback) ###
 
-### soundEnd ###
+### soundEnd() ###
 
-### abort ###
+### abort() ###

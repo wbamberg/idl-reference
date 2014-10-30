@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### notify ###
+### notify(aProxy, aType, aRect) ###
 
 ## Constants ##
 

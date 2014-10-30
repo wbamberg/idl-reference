@@ -10,8 +10,8 @@ be thread aware and just work on the database.
 
 ## Methods ##
 
-### closeDb ###
+### closeDb() ###
 
-### cacheCompletions ###
+### cacheCompletions(completions) ###
 
-### cacheMisses ###
+### cacheMisses(misses) ###

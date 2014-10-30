@@ -10,7 +10,7 @@ can hold bookmarks, separators and other folders.
 
 ## Methods ##
 
-### addBookmark ###
+### addBookmark(aTitle, aURI) ###
   
 Adds a new child bookmark to this folder.  
 @param   aTitle  
@@ -19,19 +19,19 @@ Adds a new child bookmark to this folder.
          The uri of bookmark.  
   
 
-### addSeparator ###
+### addSeparator() ###
   
 Adds a new child separator to this folder.  
   
 
-### addFolder ###
+### addFolder(aTitle) ###
   
 Adds a new child folder to this folder.  
 @param   aTitle  
          The title of folder.  
   
 
-### remove ###
+### remove() ###
   
 Removes the folder from the parent folder.  
   

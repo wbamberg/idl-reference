@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### notifyPeerReady ###
+### notifyPeerReady(sessionToken) ###
   
 Callback function used to notify peerready.  
   
@@ -14,7 +14,7 @@ Callback function used to notify peerready.
        SessionToken received from Chrome process  
   
 
-### notifyPeerLost ###
+### notifyPeerLost(sessionToken) ###
   
 Callback function used to notify peerlost.  
   

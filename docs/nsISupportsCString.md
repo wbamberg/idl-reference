@@ -9,7 +9,7 @@ Scriptable storage for ASCII strings
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

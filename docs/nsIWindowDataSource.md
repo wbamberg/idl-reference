@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getWindowForResource ###
+### getWindowForResource(inResource) ###
   
 for the given resource name, return the window  
   

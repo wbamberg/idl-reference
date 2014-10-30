@@ -6,21 +6,21 @@ layout: default
 
 ## Methods ##
 
-### bind ###
+### bind(socket, host, port, addressReuse, loopback) ###
 
-### send ###
+### send(host, port, bytes, byteLength) ###
 
-### sendWithAddr ###
+### sendWithAddr(addr, bytes, byteLength) ###
 
-### sendWithAddress ###
+### sendWithAddress(addr, bytes, byteLength) ###
 
-### sendBinaryStream ###
+### sendBinaryStream(host, port, stream) ###
 
-### close ###
+### close() ###
 
-### joinMulticast ###
+### joinMulticast(multicastAddress, iface) ###
 
-### leaveMulticast ###
+### leaveMulticast(multicastAddress, iface) ###
 
 ## Attributes ##
 

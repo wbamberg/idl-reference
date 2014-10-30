@@ -12,7 +12,7 @@ will change and you will be broken.  You have been warned.
 
 ## Methods ##
 
-### OnEndPageLoad ###
+### OnEndPageLoad(aDefaultChannel) ###
   
 Called when the load group has loaded main page and  
 subresources. (i.e.essentially DOMComplete)  

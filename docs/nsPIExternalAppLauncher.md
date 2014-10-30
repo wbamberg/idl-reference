@@ -10,14 +10,14 @@ external helper app service
 
 ## Methods ##
 
-### deleteTemporaryFileOnExit ###
+### deleteTemporaryFileOnExit(aTemporaryFile) ###
   
 mscott --> eventually I should move this into a new service so other  
 consumers can add temporary files they want deleted on exit.  
 @param aTemporaryFile A temporary file we should delete on exit.  
   
 
-### deleteTemporaryPrivateFileWhenPossible ###
+### deleteTemporaryPrivateFileWhenPossible(aTemporaryFile) ###
   
 Delete a temporary file created inside private browsing mode when  
 the private browsing mode has ended.  

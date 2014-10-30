@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### setISupportAtIndex ###
+### setISupportAtIndex(index, object) ###
 
-### getISupportAtIndex ###
+### getISupportAtIndex(index) ###

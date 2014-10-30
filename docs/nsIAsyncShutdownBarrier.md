@@ -9,7 +9,7 @@ A stage of shutdown that supports blocker registration.
 
 ## Methods ##
 
-### wait ###
+### wait(aOnReady) ###
   
 Wait for all blockers to complete.  
   

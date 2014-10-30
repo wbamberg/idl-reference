@@ -9,7 +9,7 @@ Scriptable storage for nsID structures
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

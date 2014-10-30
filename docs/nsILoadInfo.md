@@ -9,12 +9,12 @@ An nsILoadOwner represents per-load information about who started the load.
 
 ## Methods ##
 
-### binaryLoadingPrincipal ###
+### binaryLoadingPrincipal() ###
   
 A C++-friendly version of loadingPrincipal.  
   
 
-### binaryLoadingNode ###
+### binaryLoadingNode() ###
   
 A C++-friendly version of loadingDocument (loadingNode).  
 This is the node most proximally responsible for the load.  

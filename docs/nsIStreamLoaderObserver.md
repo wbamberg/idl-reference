@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onStreamComplete ###
+### onStreamComplete(loader, ctxt, status, resultLength, result) ###
   
 Called when the entire stream has been loaded.  
   

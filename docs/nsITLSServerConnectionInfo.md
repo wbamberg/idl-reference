@@ -16,7 +16,7 @@ which is the first time the TLS server consumer is notified of a new client.
 
 ## Methods ##
 
-### setSecurityObserver ###
+### setSecurityObserver(observer) ###
   
 setSecurityObserver  
   

@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### getSendInfo ###
+### getSendInfo(body, contentLength, contentType, charset) ###

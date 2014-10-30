@@ -12,7 +12,7 @@ NOTE: This is *not* the same as InstallListener.
 
 ## Methods ##
 
-### onInstallEnded ###
+### onInstallEnded(aUrl, aStatus) ###
   
 Called when an install completes or fails.  
   

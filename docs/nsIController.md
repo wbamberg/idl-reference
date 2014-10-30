@@ -6,10 +6,10 @@ layout: default
 
 ## Methods ##
 
-### isCommandEnabled ###
+### isCommandEnabled(command) ###
 
-### supportsCommand ###
+### supportsCommand(command) ###
 
-### doCommand ###
+### doCommand(command) ###
 
-### onEvent ###
+### onEvent(eventName) ###

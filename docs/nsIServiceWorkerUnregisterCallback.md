@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### UnregisterSucceeded ###
+### UnregisterSucceeded(aState) ###
 
-### UnregisterFailed ###
+### UnregisterFailed() ###

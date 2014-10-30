@@ -9,7 +9,7 @@ nsIDNSService
 
 ## Methods ##
 
-### asyncResolve ###
+### asyncResolve(aHostName, aFlags, aListener, aListenerTarget) ###
   
 kicks off an asynchronous host lookup.  
   
@@ -29,7 +29,7 @@ kicks off an asynchronous host lookup.
 @return An object that can be used to cancel the host lookup.  
   
 
-### cancelAsyncResolve ###
+### cancelAsyncResolve(aHostName, aFlags, aListener, aReason) ###
   
 Attempts to cancel a previously requested async DNS lookup  
   
@@ -46,7 +46,7 @@ Attempts to cancel a previously requested async DNS lookup
 @return An object that can be used to cancel the host lookup.  
   
 
-### resolve ###
+### resolve(aHostName, aFlags) ###
   
 called to synchronously resolve a hostname.  warning this method may  
 block the calling thread for a long period of time.  it is extremely  
@@ -61,7 +61,7 @@ unwise to call this function on the UI thread of an application.
 @throws NS_ERROR_UNKNOWN_HOST if host could not be resolved.  
   
 
-### getDNSCacheEntries ###
+### getDNSCacheEntries(args) ###
   
 The method takes a pointer to an nsTArray  
 and fills it with cache entry data  

@@ -15,7 +15,7 @@ the url using the default handler.
 
 ## Methods ##
 
-### externalProtocolHandlerExists ###
+### externalProtocolHandlerExists(aProtocolScheme) ###
   
 Check whether a handler for a specific protocol exists.  Specifically,  
 this looks to see whether there are any known possible application handlers  
@@ -28,7 +28,7 @@ in either the nsIHandlerService datastore or registered with the OS.
 XXX shouldn't aProtocolScheme be an ACString like nsIURI::scheme?  
   
 
-### isExposedProtocol ###
+### isExposedProtocol(aProtocolScheme) ###
   
 Check whether a handler for a specific protocol is "exposed" as a visible  
 feature of the current application.  
@@ -41,7 +41,7 @@ Instead, it would be deferred to the system's external protocol handler.
 XXX shouldn't aProtocolScheme be an ACString like nsIURI::scheme?  
   
 
-### getProtocolHandlerInfo ###
+### getProtocolHandlerInfo(aProtocolScheme) ###
   
 Retrieve the handler for the given protocol.  If neither the application  
 nor the OS knows about a handler for the protocol, the object this method  
@@ -56,7 +56,7 @@ of the URI syntax, not part of the scheme itself (i.e. pass "mailto" not
 @return the handler, if any; otherwise a default handler  
   
 
-### getProtocolHandlerInfoFromOS ###
+### getProtocolHandlerInfoFromOS(aProtocolScheme, aFound) ###
   
 Given a scheme, looks up the protocol info from the OS.  This should be  
 overridden by each OS's implementation.  
@@ -66,7 +66,7 @@ overridden by each OS's implementation.
 @return An nsIHanderInfo for the protocol.  
   
 
-### setProtocolHandlerDefaults ###
+### setProtocolHandlerDefaults(aHandlerInfo, aOSHandlerExists) ###
    
 Set some sane defaults for a protocol handler object.  
   
@@ -78,7 +78,7 @@ Set some sane defaults for a protocol handler object.
                          getProtocolHandlerInfoFromOS.  
   
 
-### loadUrl ###
+### loadUrl(aURL) ###
   
 Used to load a url via an external protocol handler (if one exists)  
   
@@ -87,7 +87,7 @@ Used to load a url via an external protocol handler (if one exists)
 @deprecated Use LoadURI instead (See Bug 389565 for removal)  
   
 
-### loadURI ###
+### loadURI(aURI, aWindowContext) ###
   
 Used to load a URI via an external application. Might prompt the user for  
 permission to load the external application.  
@@ -108,7 +108,7 @@ permission to load the external application.
        (bug 394479).    
   
 
-### getApplicationDescription ###
+### getApplicationDescription(aScheme) ###
   
 Gets a human-readable description for the application responsible for  
 handling a specific protocol.  

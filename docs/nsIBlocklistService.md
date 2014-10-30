@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### isAddonBlocklisted ###
+### isAddonBlocklisted(addon, appVersion, toolkitVersion) ###
   
 Determine if an item is blocklisted  
 @param   addon  
@@ -23,7 +23,7 @@ Determine if an item is blocklisted
          application or this version of the toolkit, false, otherwise.  
   
 
-### getAddonBlocklistState ###
+### getAddonBlocklistState(addon, appVersion, toolkitVersion) ###
   
 Determine the blocklist state of an add-on  
 @param   id  
@@ -39,7 +39,7 @@ Determine the blocklist state of an add-on
 @returns The STATE constant.  
   
 
-### getPluginBlocklistState ###
+### getPluginBlocklistState(plugin, appVersion, toolkitVersion) ###
   
 Determine the blocklist state of a plugin  
 @param   plugin  
@@ -55,7 +55,7 @@ Determine the blocklist state of a plugin
 @returns The STATE constant.  
   
 
-### getAddonBlocklistURL ###
+### getAddonBlocklistURL(addon, appVersion, toolkitVersion) ###
   
 Determine the blocklist web page of an add-on.  
 @param   addon  
@@ -63,7 +63,7 @@ Determine the blocklist web page of an add-on.
 @returns The URL of the description page.  
   
 
-### getPluginBlocklistURL ###
+### getPluginBlocklistURL(plugin) ###
   
 Determine the blocklist web page of a plugin.  
 @param   plugin  
@@ -71,7 +71,7 @@ Determine the blocklist web page of a plugin.
 @returns The URL of the description page.  
   
 
-### getPluginInfoURL ###
+### getPluginInfoURL(plugin) ###
   
 Determine the blocklist infoURL of a plugin.  
 @param   plugin  

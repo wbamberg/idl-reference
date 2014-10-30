@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### addLivemark ###
+### addLivemark(aLivemarkInfo, aCallback) ###
   
 Creates a new livemark  
   
@@ -24,7 +24,7 @@ Creates a new livemark
             won't return a promise.  
   
 
-### removeLivemark ###
+### removeLivemark(aLivemarkInfo, aCallback) ###
   
 Removes an existing livemark.  
   
@@ -42,7 +42,7 @@ Removes an existing livemark.
             won't return a promise.  
   
 
-### getLivemark ###
+### getLivemark(aLivemarkInfo, aCallback) ###
   
 Gets an existing livemark.  
   
@@ -61,7 +61,7 @@ Gets an existing livemark.
             won't return a promise.  
   
 
-### reloadLivemarks ###
+### reloadLivemarks(aForceUpdate) ###
   
 Reloads all livemarks if they are expired or if forced to do so.  
   

@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### onSearchResult ###
+### onSearchResult(search, result) ###
 
-### onUpdateSearchResult ###
+### onUpdateSearchResult(search, result) ###

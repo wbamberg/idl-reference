@@ -6,21 +6,21 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aRoot, aWhatToShow) ###
 
-### parentNode ###
+### parentNode() ###
 
-### firstChild ###
+### firstChild() ###
 
-### lastChild ###
+### lastChild() ###
 
-### previousSibling ###
+### previousSibling() ###
 
-### nextSibling ###
+### nextSibling() ###
 
-### previousNode ###
+### previousNode() ###
 
-### nextNode ###
+### nextNode() ###
 
 ## Attributes ##
 

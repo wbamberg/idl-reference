@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onDownloadStateChange ###
+### onDownloadStateChange(aState, aDownload) ###
   
 Dispatched whenever the state of the download changes.  
   
@@ -15,11 +15,11 @@ Dispatched whenever the state of the download changes.
 @see nsIDownloadManager for download states.  
   
 
-### onStateChange ###
+### onStateChange(aWebProgress, aRequest, aStateFlags, aStatus, aDownload) ###
 
-### onProgressChange ###
+### onProgressChange(aWebProgress, aRequest, aCurSelfProgress, aMaxSelfProgress, aCurTotalProgress, aMaxTotalProgress, aDownload) ###
 
-### onSecurityChange ###
+### onSecurityChange(aWebProgress, aRequest, aState, aDownload) ###
 
 ## Attributes ##
 

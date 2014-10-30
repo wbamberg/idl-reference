@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onComplete ###
+### onComplete(aShouldBlock, aStatus) ###
   
 Callback for the result of the application reputation query.  
 @param aStatus  

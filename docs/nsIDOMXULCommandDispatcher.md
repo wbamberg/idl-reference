@@ -6,21 +6,21 @@ layout: default
 
 ## Methods ##
 
-### addCommandUpdater ###
+### addCommandUpdater(updater, events, targets) ###
 
-### removeCommandUpdater ###
+### removeCommandUpdater(updater) ###
 
-### updateCommands ###
+### updateCommands(eventName) ###
 
-### getControllerForCommand ###
+### getControllerForCommand(command) ###
 
-### getControllers ###
+### getControllers() ###
 
-### advanceFocus ###
+### advanceFocus() ###
 
-### rewindFocus ###
+### rewindFocus() ###
 
-### advanceFocusIntoSubtree ###
+### advanceFocusIntoSubtree(elt) ###
 
 ## Attributes ##
 

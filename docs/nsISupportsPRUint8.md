@@ -9,7 +9,7 @@ Scriptable storage for 8-bit integers
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

@@ -10,7 +10,7 @@ AUTF8String signature
 
 ## Methods ##
 
-### signFinished ###
+### signFinished(rv, base64urlSignature) ###
  On success, base64urlSignature is the base-64-URL-encoded signature  
   
 For RS256 signatures, XXX bug 769858  

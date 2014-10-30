@@ -11,7 +11,7 @@ can be created to read the data from the buffer non-destructively.
 
 ## Methods ##
 
-### init ###
+### init(segmentSize, maxSize) ###
   
   
 Initialize the stream, setting up the amount of space that will be  
@@ -24,7 +24,7 @@ allocated for the stream's backing-store.
        than or equal to this value. Passing UINT32_MAX is safe.  
   
 
-### getOutputStream ###
+### getOutputStream(startPosition) ###
   
 Get a reference to the one and only output stream for this instance.  
 The zero-based startPosition argument is used is used to set the initial  
@@ -33,7 +33,7 @@ current buffer length.  Calling this method has the side-effect of
 truncating the internal buffer to startPosition bytes.  
   
 
-### newInputStream ###
+### newInputStream(startPosition) ###
   
 Create a new input stream to read data (written by the singleton output  
 stream) from the internal buffer.  Multiple, independent input streams  

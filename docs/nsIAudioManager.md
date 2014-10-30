@@ -6,15 +6,15 @@ layout: default
 
 ## Methods ##
 
-### setForceForUse ###
+### setForceForUse(usage, force) ###
 
-### getForceForUse ###
+### getForceForUse(usage) ###
 
-### setAudioChannelVolume ###
+### setAudioChannelVolume(channel, index) ###
 
-### getAudioChannelVolume ###
+### getAudioChannelVolume(channel) ###
 
-### getMaxAudioChannelVolume ###
+### getMaxAudioChannelVolume(channel) ###
 
 ## Attributes ##
 

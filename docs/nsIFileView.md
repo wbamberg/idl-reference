@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### sort ###
+### sort(sortType, reverseSort) ###
 
-### setDirectory ###
+### setDirectory(directory) ###
 
-### setFilter ###
+### setFilter(filterString) ###
 
 ## Attributes ##
 

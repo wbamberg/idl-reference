@@ -11,13 +11,13 @@ nsIPluginHost::{GetURL,PostURL}() call. <P>
 
 ## Methods ##
 
-### newResponseHeader ###
+### newResponseHeader(headerName, headerValue) ###
   
 Called for each HTTP Response header.  
 NOTE: You must copy the values of the params.    
   
 
-### statusLine ###
+### statusLine(line) ###
   
 Called once for the HTTP Response status line.  
 Value does NOT include a terminating newline.  

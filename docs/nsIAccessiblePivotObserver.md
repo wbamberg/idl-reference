@@ -9,7 +9,7 @@ An observer interface for pivot changes.
 
 ## Methods ##
 
-### onPivotChanged ###
+### onPivotChanged(aPivot, aOldAccessible, aOldStart, aOldEnd, aReason, aIsFromUserInput) ###
   
 Called when the pivot changes.  
   

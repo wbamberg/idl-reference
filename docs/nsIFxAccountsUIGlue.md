@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### signInFlow ###
+### signInFlow() ###
 
-### refreshAuthentication ###
+### refreshAuthentication(email) ###

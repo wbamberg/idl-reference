@@ -18,37 +18,37 @@ autocomplete matches.
 
 ## Methods ##
 
-### addEntry ###
+### addEntry(name, value) ###
   
 Adds a name and value pair to the form history.  
   
 
-### removeEntry ###
+### removeEntry(name, value) ###
   
 Removes a name and value pair from the form history.  
   
 
-### removeEntriesForName ###
+### removeEntriesForName(name) ###
   
 Removes all entries that are paired with a name.  
   
 
-### removeAllEntries ###
+### removeAllEntries() ###
   
 Removes all entries in the entire form history.  
   
 
-### nameExists ###
+### nameExists(name) ###
   
 Returns true if there is no entry that is paired with a name.  
   
 
-### entryExists ###
+### entryExists(name, value) ###
   
 Gets whether a name and value pair exists in the form history.  
   
 
-### removeEntriesByTimeframe ###
+### removeEntriesByTimeframe(aBeginTime, aEndTime) ###
   
 Removes entries that were created between the specified times.  
   

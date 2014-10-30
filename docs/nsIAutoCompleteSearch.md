@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### startSearch ###
+### startSearch(searchString, searchParam, previousResult, listener) ###
 
-### stopSearch ###
+### stopSearch() ###

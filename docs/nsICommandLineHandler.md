@@ -27,7 +27,7 @@ command-line-handler y-final        @mozilla.org/browser/clh-final;1
 
 ## Methods ##
 
-### handle ###
+### handle(aCommandLine) ###
   
 Process a command line. If this handler finds arguments that it  
 understands, it should perform the appropriate actions (such as opening  

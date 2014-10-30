@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### addCommandObserver ###
+### addCommandObserver(aCommandObserver, aCommandToObserve) ###
 
-### removeCommandObserver ###
+### removeCommandObserver(aCommandObserver, aCommandObserved) ###
 
-### isCommandSupported ###
+### isCommandSupported(aCommandName, aTargetWindow) ###
 
-### isCommandEnabled ###
+### isCommandEnabled(aCommandName, aTargetWindow) ###
 
-### getCommandState ###
+### getCommandState(aCommandName, aTargetWindow, aCommandParams) ###
 
-### doCommand ###
+### doCommand(aCommandName, aCommandParams, aTargetWindow) ###

@@ -9,7 +9,7 @@ Scriptable storage for unsigned 16-bit integers
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

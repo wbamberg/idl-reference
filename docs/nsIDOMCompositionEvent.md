@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initCompositionEvent ###
+### initCompositionEvent(typeArg, canBubbleArg, cancelableArg, viewArg, dataArg, localeArg) ###
 
 ## Attributes ##
 

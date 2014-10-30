@@ -13,7 +13,7 @@ WebSockets for Workers.
 
 ## Methods ##
 
-### asyncOpen ###
+### asyncOpen(aURI, aOrigin, aListener, aContext) ###
   
 Asynchronously open the websocket connection.  Received messages are fed  
 to the socket listener as they arrive.  The socket listener's methods  
@@ -30,23 +30,23 @@ websocket connection is reopened.
 @param aContext an opaque parameter forwarded to aListener's methods  
   
 
-### close ###
+### close(aCode, aReason) ###
 
-### sendMsg ###
+### sendMsg(aMsg) ###
   
 Use to send text message down the connection to WebSocket peer.  
   
 @param aMsg the utf8 string to send  
   
 
-### sendBinaryMsg ###
+### sendBinaryMsg(aMsg) ###
   
 Use to send binary message down the connection to WebSocket peer.  
   
 @param aMsg the data to send  
   
 
-### sendBinaryStream ###
+### sendBinaryStream(aStream, length) ###
    
 Use to send a binary stream (Blob) to Websocket peer.  
   

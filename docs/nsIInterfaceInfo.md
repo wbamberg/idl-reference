@@ -6,49 +6,49 @@ layout: default
 
 ## Methods ##
 
-### isScriptable ###
+### isScriptable() ###
 
-### isBuiltinClass ###
+### isBuiltinClass() ###
 
-### getMethodInfo ###
+### getMethodInfo(index, info) ###
   
 These include methods and constants for parent (and all ancestors).  
   
 These do *not* make copies ***explicit bending of XPCOM rules***.  
   
 
-### getMethodInfoForName ###
+### getMethodInfoForName(methodName, index, info) ###
 
-### getConstant ###
+### getConstant(index, constant, name) ###
 
-### getInfoForParam ###
+### getInfoForParam(methodIndex, param) ###
   
 Get the interface information or iid associated with a param of some  
 method in this interface.  
   
 
-### getIIDForParam ###
+### getIIDForParam(methodIndex, param) ###
 
-### getTypeForParam ###
+### getTypeForParam(methodIndex, param, dimension) ###
   
 These do *not* make copies ***explicit bending of XPCOM rules***.  
   
 
-### getSizeIsArgNumberForParam ###
+### getSizeIsArgNumberForParam(methodIndex, param, dimension) ###
 
-### getInterfaceIsArgNumberForParam ###
+### getInterfaceIsArgNumberForParam(methodIndex, param) ###
 
-### isIID ###
+### isIID(IID) ###
 
-### getNameShared ###
+### getNameShared(name) ###
 
-### getIIDShared ###
+### getIIDShared(iid) ###
 
-### isFunction ###
+### isFunction() ###
 
-### hasAncestor ###
+### hasAncestor(iid) ###
 
-### getIIDForParamNoAlloc ###
+### getIIDForParamNoAlloc(methodIndex, param, iid) ###
 
 ## Attributes ##
 

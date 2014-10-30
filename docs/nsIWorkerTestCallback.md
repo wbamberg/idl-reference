@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### onmessage ###
+### onmessage(data) ###
 
-### onerror ###
+### onerror(data) ###

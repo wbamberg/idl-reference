@@ -19,7 +19,7 @@ and only must call Release when it shuts down.
 
 ## Methods ##
 
-### getService ###
+### getService(aClass, aIID, result) ###
   
 getServiceByContractID  
   
@@ -32,9 +32,9 @@ interface aIID.  This may result in the instance being created.
 @param result : resulting service   
   
 
-### getServiceByContractID ###
+### getServiceByContractID(aContractID, aIID, result) ###
 
-### isServiceInstantiated ###
+### isServiceInstantiated(aClass, aIID) ###
   
 isServiceInstantiated  
   
@@ -49,4 +49,4 @@ been created, or throw otherwise
 @throws NS_NOINTERFACE if the IID given isn't supported by the object  
   
 
-### isServiceInstantiatedByContractID ###
+### isServiceInstantiatedByContractID(aContractID, aIID) ###

@@ -9,7 +9,7 @@ A datasource that may load asynchronously
 
 ## Methods ##
 
-### Init ###
+### Init(aURI) ###
   
 Specify the URI for the data source: this is the prefix  
 that will be used to register the data source in the  
@@ -17,7 +17,7 @@ data source registry.
 @param aURI the URI to load  
   
 
-### Refresh ###
+### Refresh(aBlocking) ###
   
 Refresh the remote datasource, re-loading its contents  
 from the URI.  
@@ -26,13 +26,13 @@ from the URI.
 until the datasource has completely reloaded.  
   
 
-### Flush ###
+### Flush() ###
   
 Request that a data source write its contents out to   
 permanent storage, if applicable.  
   
 
-### FlushTo ###
+### FlushTo(aURI) ###
 
 ## Attributes ##
 

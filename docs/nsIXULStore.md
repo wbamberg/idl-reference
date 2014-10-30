@@ -13,7 +13,7 @@ The data is serialized to [profile directory]/xulstore.json
 
 ## Methods ##
 
-### setValue ###
+### setValue(doc, id, attr, value) ###
   
 Sets a value in the store.  
   
@@ -23,7 +23,7 @@ Sets a value in the store.
 @param value - value of the attribute  
   
 
-### hasValue ###
+### hasValue(doc, id, attr) ###
   
 Returns true if the store contains a value for attr.  
   
@@ -32,7 +32,7 @@ Returns true if the store contains a value for attr.
 @param attr - attribute  
   
 
-### getValue ###
+### getValue(doc, id, attr) ###
   
 Retrieves a value in the store, or an empty string if it does not exist.  
   
@@ -43,7 +43,7 @@ Retrieves a value in the store, or an empty string if it does not exist.
 @returns the value of the attribute  
   
 
-### removeValue ###
+### removeValue(doc, id, attr) ###
   
 Removes a value in the store.  
   
@@ -52,7 +52,7 @@ Removes a value in the store.
 @param attr - attribute to remove  
   
 
-### getIDsEnumerator ###
+### getIDsEnumerator(doc) ###
   
 Iterates over all of the ids associated with a given document uri that  
 have stored data.  
@@ -60,7 +60,7 @@ have stored data.
 @param doc - document URI  
   
 
-### getAttributeEnumerator ###
+### getAttributeEnumerator(doc, id) ###
   
 Iterates over all of the attributes associated with a given document uri  
 and id that have stored data.  

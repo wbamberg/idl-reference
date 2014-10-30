@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### notifyOfInsertion ###
+### notifyOfInsertion(mimeType, contentSourceURL, sourceDocument, willDeleteSelection, docFragment, contentStartNode, contentStartOffset, contentEndNode, contentEndOffset, insertionPointNode, insertionPointOffset, continueWithInsertion) ###
   
 This notification occurs in an editor during these events:  
    * open of document (once rendered in window but before editable)  

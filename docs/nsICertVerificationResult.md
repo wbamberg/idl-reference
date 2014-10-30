@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getUsagesArrayResult ###
+### getUsagesArrayResult(verified, count, usages) ###
   
  This interface reflects a container of  
  verification results. Call will not block.  

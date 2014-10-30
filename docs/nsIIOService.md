@@ -15,7 +15,7 @@ by eliminating intermediate data structures and interfaces.
 
 ## Methods ##
 
-### getProtocolHandler ###
+### getProtocolHandler(aScheme) ###
   
 Returns a protocol handler for a given URI scheme.  
   
@@ -23,7 +23,7 @@ Returns a protocol handler for a given URI scheme.
 @return reference to corresponding nsIProtocolHandler  
   
 
-### getProtocolFlags ###
+### getProtocolFlags(aScheme) ###
   
 Returns the protocol flags for a given scheme.  
   
@@ -31,7 +31,7 @@ Returns the protocol flags for a given scheme.
 @return value of corresponding nsIProtocolHandler::protocolFlags  
   
 
-### newURI ###
+### newURI(aSpec, aOriginCharset, aBaseURI) ###
   
 This method constructs a new URI by determining the scheme of the  
 URI spec, and then delegating the construction of the URI to the  
@@ -41,7 +41,7 @@ the resulting URI object to obtain a more specific type of URI.
 @see nsIProtocolHandler::newURI  
   
 
-### newFileURI ###
+### newFileURI(aFile) ###
   
 This method constructs a new URI from a nsIFile.  
   
@@ -53,7 +53,7 @@ callers to specify whether this is a file or directory by
 splitting this  into newDirURI() and newActualFileURI().  
   
 
-### newChannelFromURI2 ###
+### newChannelFromURI2(aURI, aLoadingNode, aLoadingPrincipal, aTriggeringPrincipal, aSecurityFlags, aContentPolicyType) ###
   
 Creates a channel for a given URI.  
   
@@ -61,7 +61,7 @@ Creates a channel for a given URI.
 @return reference to the new nsIChannel object  
   
 
-### newChannelFromURI ###
+### newChannelFromURI(aURI) ###
   
 Creates a channel for a given URI.  
   
@@ -69,17 +69,17 @@ Creates a channel for a given URI.
 @return reference to the new nsIChannel object  
   
 
-### newChannel2 ###
+### newChannel2(aSpec, aOriginCharset, aBaseURI, aLoadingNode, aLoadingPrincipal, aTriggeringPrincipal, aSecurityFlags, aContentPolicyType) ###
   
 Equivalent to newChannelFromURI(newURI(...))  
   
 
-### newChannel ###
+### newChannel(aSpec, aOriginCharset, aBaseURI) ###
   
 Equivalent to newChannelFromURI(newURI(...))  
   
 
-### setAppOffline ###
+### setAppOffline(appId, state) ###
   
 Set whether network appears to be offline for network connections from  
 a given appID.  
@@ -89,7 +89,7 @@ notification, which is also sent to child processes containing this appId.
 'state' must one of nsIAppOfflineInfo::{ONLINE|OFFLINE|WIFI_ONLY}.  
   
 
-### isAppOffline ###
+### isAppOffline(appId) ###
   
 Returns true if given appId is currently not allowed to make network  
 connections. It will return true if the app is in the wifi-only state  
@@ -97,13 +97,13 @@ and we are currently on a 3G connection.
 The returned value does not depend on the offline state of the browser.  
   
 
-### getAppOfflineState ###
+### getAppOfflineState(appId) ###
   
 Returns the state of the app with the given appId.  
 returns nsIAppOfflineInfo::{ONLINE,OFFLINE,WIFI_ONLY}  
   
 
-### allowPort ###
+### allowPort(aPort, aScheme) ###
   
 Checks if a port number is banned. This involves consulting a list of  
 unsafe ports, corresponding to network services that may be easily  
@@ -116,7 +116,7 @@ ensuring reasonable, default protection.
 @see nsIProtocolHandler::allowPort  
   
 
-### extractScheme ###
+### extractScheme(urlString) ###
   
 Utility to extract the scheme from a URL string, consistently and  
 according to spec (see RFC 2396).  

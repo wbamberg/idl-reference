@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### clearData ###
+### clearData(format) ###
   
 Remove the data associated with a given format. If format is empty or not  
 specified, the data associated with all formats is removed. If data for  
@@ -14,7 +14,7 @@ the specified format does not exist, or the data transfer contains no
 data, this method will have no effect.  
   
 
-### setData ###
+### setData(format, data) ###
   
 Set the data for a given format. If data for the format does not exist,  
 it is added at the end, such that the last item in the types list will be  
@@ -25,13 +25,13 @@ not changed.
 @throws NS_ERROR_NULL_POINTER if the data is null  
   
 
-### getData ###
+### getData(format) ###
   
 Retrieves the data for a given format, or an empty string if data for  
 that format does not exist or the data transfer contains no data.  
   
 
-### setDragImage ###
+### setDragImage(image, x, y) ###
   
 Set the image to be used for dragging if a custom one is desired. Most of  
 the time, this would not be set, as a default image is created from the  
@@ -52,16 +52,16 @@ width and height.
 @throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
   
 
-### addElement ###
+### addElement(element) ###
 
-### mozTypesAt ###
+### mozTypesAt(index) ###
   
 Holds a list of the format types of the data that is stored for an item  
 at the specified index. If the index is not in the range from 0 to  
 itemCount - 1, an empty string list is returned.  
   
 
-### mozClearDataAt ###
+### mozClearDataAt(format, index) ###
   
 Remove the data associated with the given format for an item at the  
 specified index. The index is in the range from zero to itemCount - 1.  
@@ -77,9 +77,9 @@ If the format is not found, then this method has no effect.
 @throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
   
 
-### mozSetDataAt ###
+### mozSetDataAt(format, data, index) ###
 
-### mozGetDataAt ###
+### mozGetDataAt(format, index) ###
   
 Retrieve the data associated with the given format for an item at the  
 specified index, or null if it does not exist. The index should be in the  

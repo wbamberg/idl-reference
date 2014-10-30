@@ -11,7 +11,7 @@ Interface used to generate random data.
 
 ## Methods ##
 
-### generateRandomBytes ###
+### generateRandomBytes(aLength, aBuffer) ###
   
 Generates the specified amount of random bytes.  
   

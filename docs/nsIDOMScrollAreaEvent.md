@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initScrollAreaEvent ###
+### initScrollAreaEvent(aEventType, aCanBubble, aCancelable, aView, aDetail, x, y, width, height) ###
 
 ## Attributes ##
 

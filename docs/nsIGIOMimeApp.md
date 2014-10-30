@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### launch ###
+### launch(uri) ###
 
-### setAsDefaultForMimeType ###
+### setAsDefaultForMimeType(mimeType) ###
 
-### setAsDefaultForFileExtensions ###
+### setAsDefaultForFileExtensions(extensions) ###
 
-### setAsDefaultForURIScheme ###
+### setAsDefaultForURIScheme(uriScheme) ###
 
 ## Attributes ##
 

@@ -9,7 +9,7 @@ An extended version of nsIWebProgressListener.
 
 ## Methods ##
 
-### onProgressChange64 ###
+### onProgressChange64(aWebProgress, aRequest, aCurSelfProgress, aMaxSelfProgress, aCurTotalProgress, aMaxTotalProgress) ###
   
 Notification that the progress has changed for one of the requests  
 associated with aWebProgress.  Progress totals are reset to zero when all  
@@ -38,7 +38,7 @@ NOTE: If any progress value is unknown, then its value is replaced with -1.
 @see nsIWebProgressListener2::onProgressChange64  
   
 
-### onRefreshAttempted ###
+### onRefreshAttempted(aWebProgress, aRefreshURI, aMillis, aSameURI) ###
   
 Notification that a refresh or redirect has been requested in aWebProgress  
 For example, via a <meta http-equiv="refresh"> or an HTTP Refresh: header  

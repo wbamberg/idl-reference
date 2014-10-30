@@ -10,19 +10,19 @@ the illusion of a single, coherent RDF graph.
 
 ## Methods ##
 
-### AddDataSource ###
+### AddDataSource(aDataSource) ###
   
 Add a datasource the the composite data source.  
 @param aDataSource the datasource to add to composite  
   
 
-### RemoveDataSource ###
+### RemoveDataSource(aDataSource) ###
   
 Remove a datasource from the composite data source.  
 @param aDataSource the datasource to remove from the composite  
   
 
-### GetDataSources ###
+### GetDataSources() ###
   
 Retrieve the datasources in the composite data source.  
 @return an nsISimpleEnumerator that will enumerate each  

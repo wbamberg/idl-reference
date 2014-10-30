@@ -11,12 +11,12 @@ geolocation.
 
 ## Methods ##
 
-### cancel ###
+### cancel() ###
   
 allow or cancel the request  
   
 
-### allow ###
+### allow(choices) ###
 
 ## Attributes ##
 

@@ -6,15 +6,15 @@ layout: default
 
 ## Methods ##
 
-### appendItem ###
+### appendItem(label, value) ###
 
-### insertItemAt ###
+### insertItemAt(index, label, value) ###
 
-### removeItemAt ###
+### removeItemAt(index) ###
 
-### getIndexOfItem ###
+### getIndexOfItem(item) ###
 
-### getItemAtIndex ###
+### getItemAtIndex(index) ###
 
 ## Attributes ##
 

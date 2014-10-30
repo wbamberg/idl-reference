@@ -9,6 +9,6 @@ A callback interface for handling asynchronous response.
 
 ## Methods ##
 
-### notifySuccess ###
+### notifySuccess() ###
 
-### notifyError ###
+### notifyError(error) ###

@@ -6,19 +6,19 @@ layout: default
 
 ## Methods ##
 
-### parentNode ###
+### parentNode() ###
 
-### firstChild ###
+### firstChild() ###
 
-### lastChild ###
+### lastChild() ###
 
-### previousSibling ###
+### previousSibling() ###
 
-### nextSibling ###
+### nextSibling() ###
 
-### previousNode ###
+### previousNode() ###
 
-### nextNode ###
+### nextNode() ###
 
 ## Attributes ##
 

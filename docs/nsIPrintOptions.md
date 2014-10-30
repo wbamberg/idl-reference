@@ -13,28 +13,28 @@ John Keiser <jkeiser@netscape.com> and Roland Mainz
 
 ## Methods ##
 
-### ShowPrintSetupDialog ###
+### ShowPrintSetupDialog(aThePrintSettings) ###
   
 Show Native Print Options dialog, this may not be supported on all platforms  
   
 
-### CreatePrintSettings ###
+### CreatePrintSettings() ###
   
 Creates a new PrintSettnigs Object  
 and initializes it from prefs  
   
 
-### getPrinterPrefInt ###
+### getPrinterPrefInt(aPrintSettings, aPrefName) ###
   
 Get a prefixed integer pref   
   
 
-### displayJobProperties ###
+### displayJobProperties(aPrinter, aPrintSettings, aDisplayed) ###
   
 display Printer Job Properties dialog  
   
 
-### GetNativeData ###
+### GetNativeData(aDataType) ###
 
 ## Constants ##
 

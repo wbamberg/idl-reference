@@ -11,17 +11,17 @@ of an nsISHEntry.
 
 ## Methods ##
 
-### AddChild ###
+### AddChild(child, offset) ###
   
 Add a new child SHEntry.  If offset is -1 adds to the end of the list.  
   
 
-### RemoveChild ###
+### RemoveChild(child) ###
   
 Removes a child SHEntry  
   
 
-### GetChildAt ###
+### GetChildAt(index) ###
   
 Get child at an index  
   

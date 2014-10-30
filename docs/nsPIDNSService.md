@@ -10,12 +10,12 @@ It will never be frozen.  Do not use it in external code.
 
 ## Methods ##
 
-### init ###
+### init() ###
   
 called to initialize the DNS service.  
   
 
-### shutdown ###
+### shutdown() ###
   
 called to shutdown the DNS service.  any pending asynchronous  
 requests will be canceled, and the local cache of DNS records  

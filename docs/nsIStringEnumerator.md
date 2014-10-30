@@ -9,6 +9,6 @@ Used to enumerate over an ordered list of strings.
 
 ## Methods ##
 
-### hasMore ###
+### hasMore() ###
 
-### getNext ###
+### getNext() ###

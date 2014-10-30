@@ -10,7 +10,7 @@ Provides generic UI for choosing a certificate
 
 ## Methods ##
 
-### PickCertificate ###
+### PickCertificate(ctx, certNickList, certDetailsList, count, selectedIndex, canceled) ###
   
 PickCertificate  
   General purpose certificate prompter  

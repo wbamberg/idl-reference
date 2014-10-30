@@ -10,7 +10,7 @@ and formatting numbers, dates and times.
 
 ## Methods ##
 
-### getCategory ###
+### getCategory(category) ###
   
 Get the locale code for a given category.  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### newFileURI ###
+### newFileURI(aFile) ###
   
 This method constructs a new file URI   
   
@@ -14,7 +14,7 @@ This method constructs a new file URI
 @return reference to a new nsIURI object  
   
 
-### getURLSpecFromFile ###
+### getURLSpecFromFile(file) ###
   
 Converts the nsIFile to the corresponding URL string.  NOTE: under  
 some platforms this is a lossy conversion (e.g., Mac Carbon build).  
@@ -26,7 +26,7 @@ NOTE: Callers should use getURLSpecFromActualFile or
 getURLSpecFromDirFile if possible, for performance reasons.  
   
 
-### getURLSpecFromActualFile ###
+### getURLSpecFromActualFile(file) ###
   
 Converts the nsIFile to the corresponding URL string. Should  
 only be called on files which are not directories. Otherwise  
@@ -34,7 +34,7 @@ identical to getURLSpecFromFile, but is usually more efficient.
 WARNING: This restriction may not be enforced at runtime!   
   
 
-### getURLSpecFromDir ###
+### getURLSpecFromDir(file) ###
   
 Converts the nsIFile to the corresponding URL string. Should  
 only be called on files which are directories. Otherwise  
@@ -42,13 +42,13 @@ identical to getURLSpecFromFile, but is usually more efficient.
 WARNING: This restriction may not be enforced at runtime!   
   
 
-### getFileFromURLSpec ###
+### getFileFromURLSpec(url) ###
   
 Converts the URL string into the corresponding nsIFile if possible.  
 A local file will be created if the URL string begins with file://.  
   
 
-### readURLFile ###
+### readURLFile(file) ###
   
 Takes a local file and tries to interpret it as an internet shortcut  
 (e.g. .url files on windows).  

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### convertStringToUTF8 ###
+### convertStringToUTF8(aString, aCharset, aSkipCheck, aAllowSubstitution) ###
   
 Ensure that |aString| is encoded in UTF-8.  If not,   
 convert to UTF-8 assuming it's encoded in |aCharset|  
@@ -30,7 +30,7 @@ and return the converted string in UTF-8.
         or error code of nsIUnicodeDecoder in case of conversion failure  
   
 
-### convertURISpecToUTF8 ###
+### convertURISpecToUTF8(aSpec, aCharset) ###
   
 Ensure that |aSpec| (after URL-unescaping it) is encoded in UTF-8.    
 If not,  convert it to UTF-8, assuming it's encoded in |aCharset|,    

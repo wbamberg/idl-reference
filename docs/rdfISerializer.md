@@ -11,7 +11,7 @@ Interface used to serialize RDF.
 
 ## Methods ##
 
-### serialize ###
+### serialize(aDataSource, aOut) ###
   
 Synchronously serialize the given datasource to the outputstream.  
   

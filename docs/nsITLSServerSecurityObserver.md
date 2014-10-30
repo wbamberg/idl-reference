@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onHandshakeDone ###
+### onHandshakeDone(aServer, aStatus) ###
   
 onHandsakeDone  
   

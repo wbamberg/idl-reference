@@ -11,7 +11,7 @@ This interface is implemented by an object that tracks transactions.
 
 ## Methods ##
 
-### willDo ###
+### willDo(aManager, aTransaction) ###
   
 Called before a transaction manager calls a transaction's  
 doTransaction() method.  
@@ -23,7 +23,7 @@ return true if they want to interrupt normal control flow, without
 throwing an error.  
   
 
-### didDo ###
+### didDo(aManager, aTransaction, aDoResult) ###
   
 Called after a transaction manager calls the doTransaction() method of  
 a transaction.  
@@ -33,7 +33,7 @@ a transaction.
 the transaction.  
   
 
-### willUndo ###
+### willUndo(aManager, aTransaction) ###
   
 Called before a transaction manager calls the Undo() method of  
 a transaction.  
@@ -46,7 +46,7 @@ throwing an error. Note that listeners can also interrupt normal
 control flow by throwing an nsresult that indicates an error.  
   
 
-### didUndo ###
+### didUndo(aManager, aTransaction, aUndoResult) ###
   
 Called after a transaction manager calls the Undo() method of  
 a transaction.  
@@ -55,7 +55,7 @@ a transaction.
 @param aUndoResult the nsresult returned after undoing the transaction.  
   
 
-### willRedo ###
+### willRedo(aManager, aTransaction) ###
   
 Called before a transaction manager calls the Redo() method of  
 a transaction.  
@@ -68,7 +68,7 @@ throwing an error. Note that listeners can also interrupt normal
 control flow by throwing an nsresult that indicates an error.  
   
 
-### didRedo ###
+### didRedo(aManager, aTransaction, aRedoResult) ###
   
 Called after a transaction manager calls the Redo() method of  
 a transaction.  
@@ -77,7 +77,7 @@ a transaction.
 @param aRedoResult the nsresult returned after redoing the transaction.  
   
 
-### willBeginBatch ###
+### willBeginBatch(aManager) ###
   
 Called before a transaction manager begins a batch.  
 @param aManager the transaction manager beginning a batch.  
@@ -88,14 +88,14 @@ throwing an error. Note that listeners can also interrupt normal
 control flow by throwing an nsresult that indicates an error.  
   
 
-### didBeginBatch ###
+### didBeginBatch(aManager, aResult) ###
   
 Called after a transaction manager begins a batch.  
 @param aManager the transaction manager that began a batch.  
 @param aResult the nsresult returned after beginning a batch.  
   
 
-### willEndBatch ###
+### willEndBatch(aManager) ###
   
 Called before a transaction manager ends a batch.  
 @param aManager the transaction manager ending a batch.  
@@ -106,14 +106,14 @@ throwing an error. Note that listeners can also interrupt normal
 control flow by throwing an nsresult that indicates an error.  
   
 
-### didEndBatch ###
+### didEndBatch(aManager, aResult) ###
   
 Called after a transaction manager ends a batch.  
 @param aManager the transaction manager ending a batch.  
 @param aResult the nsresult returned after ending a batch.  
   
 
-### willMerge ###
+### willMerge(aManager, aTopTransaction, aTransactionToMerge) ###
   
 Called before a transaction manager tries to merge  
 a transaction, that was just executed, with the  
@@ -128,7 +128,7 @@ throwing an error. Note that listeners can also interrupt normal
 control flow by throwing an nsresult that indicates an error.  
   
 
-### didMerge ###
+### didMerge(aManager, aTopTransaction, aTransactionToMerge, aDidMerge, aMergeResult) ###
   
 Called after a transaction manager tries to merge  
 a transaction, that was just executed, with the  

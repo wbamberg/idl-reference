@@ -9,7 +9,7 @@ Protocol handler interface for the resource:// protocol
 
 ## Methods ##
 
-### setSubstitution ###
+### setSubstitution(root, baseURI) ###
   
 Sets the substitution for the root key:  
   resource://root/path ==> baseURI.resolve(path)  
@@ -20,19 +20,19 @@ A root key should always be lowercase; however, this may not be
 enforced.  
   
 
-### getSubstitution ###
+### getSubstitution(root) ###
   
 Gets the substitution for the root key.  
   
 @throws NS_ERROR_NOT_AVAILABLE if none exists.  
   
 
-### hasSubstitution ###
+### hasSubstitution(root) ###
   
 Returns TRUE if the substitution exists and FALSE otherwise.  
   
 
-### resolveURI ###
+### resolveURI(resURI) ###
   
 Utility function to resolve a resource URI.  A resolved URI is not   
 guaranteed to reference a resource that exists (ie. opening a channel to  

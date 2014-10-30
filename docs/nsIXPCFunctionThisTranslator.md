@@ -7,4 +7,4 @@ layout: default
 
 ## Methods ##
 
-### TranslateThis ###
+### TranslateThis(aInitialThis) ###

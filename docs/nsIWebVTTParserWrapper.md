@@ -9,7 +9,7 @@ Interface for a wrapper of a JS WebVTT parser (vtt.js).
 
 ## Methods ##
 
-### loadParser ###
+### loadParser(window) ###
   
 Loads the JS WebVTTParser and sets it to use the passed window to create  
 VTTRegions and VTTCues. This function must be called before calling  
@@ -20,7 +20,7 @@ parse, flush, or watch.
   
   
 
-### parse ###
+### parse(data) ###
   
 Attempts to parse the stream's data as WebVTT format. When it successfully  
 parses a WebVTT region or WebVTT cue it will create a VTTRegion or VTTCue  
@@ -30,13 +30,13 @@ object and pass it back to the callee through its callbacks.
               Necko consumer so far.  
   
 
-### flush ###
+### flush() ###
   
 Flush indicates that no more data is expected from the stream. As such the  
 parser should try to parse any kind of partial data it has.  
   
 
-### watch ###
+### watch(callback) ###
   
 Set this parser object to use an nsIWebVTTListener object for its onCue  
 and onRegion callbacks.  
@@ -45,7 +45,7 @@ and onRegion callbacks.
                 onRegion callbacks for the parser.  
   
 
-### convertCueToDOMTree ###
+### convertCueToDOMTree(window, cue) ###
   
 Convert the text content of a WebVTT cue to a document fragment so that  
 we can display it on the page.  
@@ -56,7 +56,7 @@ we can display it on the page.
               fragment.  
   
 
-### processCues ###
+### processCues(window, cues, overlay) ###
   
 Compute the display state of the VTTCues in cues along with any VTTRegions  
 that they might be in. First, it computes the positioning and styling of  

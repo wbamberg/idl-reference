@@ -11,7 +11,7 @@ hide or show it and set/get its title.
 
 ## Methods ##
 
-### setDimensions ###
+### setDimensions(flags, x, y, cx, cy) ###
   
 Sets the dimensions for the window; the position & size. The  
 flags to indicate what the caller wants to set and whether the size  
@@ -37,7 +37,7 @@ surrounding chrome, window frame, title bar, and so on.
 @see DIM_FLAGS_SIZE_INNER  
   
 
-### getDimensions ###
+### getDimensions(flags, x, y, cx, cy) ###
   
 Gets the dimensions of the window. The caller may pass  
 <CODE>nullptr</CODE> for any value it is uninterested in receiving.  
@@ -54,12 +54,12 @@ Gets the dimensions of the window. The caller may pass
 @see DIM_FLAGS_SIZE_INNER  
   
 
-### setFocus ###
+### setFocus() ###
   
 Give the window focus.  
   
 
-### blur ###
+### blur() ###
   
 Blur the window. This should unfocus the window and send an onblur event.  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### cancel ###
+### cancel() ###
   
 Cancels a pending statement, if possible.  This will only fail if you try  
 cancel more than once.  

@@ -9,7 +9,7 @@ This interface provides a keypair and signing interface for Identity functionali
 
 ## Methods ##
 
-### sign ###
+### sign(aText, callback) ###
 
 ## Attributes ##
 

@@ -11,7 +11,7 @@ directly instead.
 
 ## Methods ##
 
-### sanitize ###
+### sanitize(src, flags) ###
   
 Parses a string into an HTML document, sanitizes the document and   
 returns the result serialized to a string.  
@@ -46,7 +46,7 @@ may still be XSS dangerous if loaded into a non-Gecko Web engine!
 @param flags sanitization option flags defined above  
   
 
-### convertToPlainText ###
+### convertToPlainText(src, flags, wrapCol) ###
   
 Convert HTML to plain text.  
   
@@ -56,7 +56,7 @@ Convert HTML to plain text.
 @param wrapCol number of characters per line; 0 for no auto-wrapping  
   
 
-### parseFragment ###
+### parseFragment(fragment, flags, isXML, baseURI, element) ###
   
 Parses markup into a sanitized document fragment.  
   

@@ -6,16 +6,16 @@ layout: default
 
 ## Methods ##
 
-### getVolumeByName ###
+### getVolumeByName(volName) ###
 
-### getVolumeByPath ###
+### getVolumeByPath(path) ###
 
-### createOrGetVolumeByPath ###
+### createOrGetVolumeByPath(path) ###
 
-### createMountLock ###
+### createMountLock(volName) ###
 
-### getVolumeNames ###
+### getVolumeNames() ###
 
-### createFakeVolume ###
+### createFakeVolume(name, path) ###
 
-### SetFakeVolumeState ###
+### SetFakeVolumeState(name, state) ###

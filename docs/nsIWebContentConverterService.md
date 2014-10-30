@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### setAutoHandler ###
+### setAutoHandler(contentType, handler) ###
   
 Specifies the handler to be used to automatically handle all links of a  
 certain content type from now on.   
@@ -19,7 +19,7 @@ certain content type from now on.
          not already registered.  
   
 
-### getAutoHandler ###
+### getAutoHandler(contentType) ###
   
 Gets the auto handler specified for a particular content type  
 @param   contentType  
@@ -30,7 +30,7 @@ Gets the auto handler specified for a particular content type
          as "automatic").  
   
 
-### getWebContentHandlerByURI ###
+### getWebContentHandlerByURI(contentType, uri) ###
   
 Gets a web handler for the specified service URI  
 @param   contentType  
@@ -40,7 +40,7 @@ Gets a web handler for the specified service URI
 @returns A web service handler that uses the specified uri.  
   
 
-### loadPreferredHandler ###
+### loadPreferredHandler(request) ###
   
 Loads the preferred handler when content of a registered type is about  
 to be loaded.  
@@ -48,7 +48,7 @@ to be loaded.
          The nsIRequest for the load of the content  
   
 
-### removeProtocolHandler ###
+### removeProtocolHandler(protocol, uri) ###
   
 Removes a registered protocol handler  
 @param   protocol  
@@ -57,7 +57,7 @@ Removes a registered protocol handler
          The uri of the service handler to remove  
   
 
-### removeContentHandler ###
+### removeContentHandler(contentType, uri) ###
   
 Removes a registered content handler  
 @param   contentType  
@@ -66,7 +66,7 @@ Removes a registered content handler
          The uri of the service handler to remove  
   
 
-### getContentHandlers ###
+### getContentHandlers(contentType, count, handlers) ###
   
 Gets the list of content handlers for a particular type.  
 @param   contentType  
@@ -74,7 +74,7 @@ Gets the list of content handlers for a particular type.
 @returns An array of nsIWebContentHandlerInfo objects  
   
 
-### resetHandlersForType ###
+### resetHandlersForType(contentType) ###
   
 Resets the list of available content handlers to the default set from  
 the distribution.  

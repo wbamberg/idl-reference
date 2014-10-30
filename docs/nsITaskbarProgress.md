@@ -10,7 +10,7 @@ the taskbar. This class wraps around the native functionality to do this.
 
 ## Methods ##
 
-### setProgressState ###
+### setProgressState(state, currentValue, maxValue) ###
   
 Sets the taskbar progress state and value for this window. The currentValue  
 and maxValue parameters are optional and should be supplied when |state|  

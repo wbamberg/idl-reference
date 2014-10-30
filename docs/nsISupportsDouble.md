@@ -9,7 +9,7 @@ Scriptable storage for doubles
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

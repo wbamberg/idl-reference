@@ -6,67 +6,67 @@ layout: default
 
 ## Methods ##
 
-### getAllStyleSheets ###
+### getAllStyleSheets(aDoc, aLength, aSheets) ###
 
-### getCSSStyleRules ###
+### getCSSStyleRules(aElement, aPseudo) ###
 
-### getRuleLine ###
+### getRuleLine(aRule) ###
 
-### getRuleColumn ###
+### getRuleColumn(aRule) ###
 
-### getSelectorCount ###
+### getSelectorCount(aRule) ###
 
-### getSelectorText ###
+### getSelectorText(aRule, aSelectorIndex) ###
 
-### getSpecificity ###
+### getSpecificity(aRule, aSelectorIndex) ###
 
-### selectorMatchesElement ###
+### selectorMatchesElement(aElement, aRule, aSelectorIndex, aPseudo) ###
 
-### isInheritedProperty ###
+### isInheritedProperty(aPropertyName) ###
 
-### getCSSPropertyNames ###
+### getCSSPropertyNames(aFlags, aCount, aProps) ###
 
-### getCSSValuesForProperty ###
+### getCSSValuesForProperty(aProperty, aLength, aValues) ###
 
-### colorNameToRGB ###
+### colorNameToRGB(aColorName) ###
 
-### rgbToColorName ###
+### rgbToColorName(aR, aG, aB) ###
 
-### colorToRGBA ###
+### colorToRGBA(aColorString) ###
 
-### isValidCSSColor ###
+### isValidCSSColor(aColorString) ###
 
-### cssPropertyIsValid ###
+### cssPropertyIsValid(aPropertyName, aPropertyValue) ###
 
-### getSubpropertiesForCSSProperty ###
+### getSubpropertiesForCSSProperty(aProperty, aLength, aValues) ###
 
-### cssPropertyIsShorthand ###
+### cssPropertyIsShorthand(aProperty) ###
 
-### cssPropertySupportsType ###
+### cssPropertySupportsType(aProperty, type) ###
 
-### isIgnorableWhitespace ###
+### isIgnorableWhitespace(aDataNode) ###
 
-### getParentForNode ###
+### getParentForNode(aNode, aShowingAnonymousContent) ###
 
-### getChildrenForNode ###
+### getChildrenForNode(aNode, aShowingAnonymousContent) ###
 
-### getBindingURLs ###
+### getBindingURLs(aElement) ###
 
-### getContentState ###
+### getContentState(aElement) ###
 
-### setContentState ###
+### setContentState(aElement, aState) ###
 
-### getUsedFontFaces ###
+### getUsedFontFaces(aRange) ###
 
-### addPseudoClassLock ###
+### addPseudoClassLock(aElement, aPseudoClass) ###
 
-### removePseudoClassLock ###
+### removePseudoClassLock(aElement, aPseudoClass) ###
 
-### hasPseudoClassLock ###
+### hasPseudoClassLock(aElement, aPseudoClass) ###
 
-### clearPseudoClassLocks ###
+### clearPseudoClassLocks(aElement) ###
 
-### parseStyleSheet ###
+### parseStyleSheet(aSheet, aInput) ###
   
 Parse CSS and update the style sheet in place.  
   
@@ -75,7 +75,7 @@ Parse CSS and update the style sheet in place.
        The new source string for the style sheet.  
   
 
-### scrollElementIntoView ###
+### scrollElementIntoView(aElement) ###
   
 Scroll an element completely into view, if possible.  
 This is similar to ensureElementIsVisible but for all ancestors.  

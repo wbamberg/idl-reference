@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### addCrash ###
+### addCrash(processType, crashType, id) ###
   
 Records the occurrence of a crash.  
   

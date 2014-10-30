@@ -9,12 +9,12 @@ A range representing a piece of text in the document.
 
 ## Methods ##
 
-### compare ###
+### compare(aOtherRange) ###
   
 Return true if this range has the same end points of the given range.  
   
 
-### compareEndPoints ###
+### compareEndPoints(aEndPoint, aOtherRange, aOtherRangeEndPoint) ###
   
 Compare this and given ranges end points.  
   
@@ -22,40 +22,40 @@ Compare this and given ranges end points.
          range end point.  
   
 
-### move ###
+### move(aUnit, aCount) ###
   
  Move the boundary(ies) by the given number of the unit.  
   
 
-### moveStart ###
+### moveStart(aUnit, aCount) ###
 
-### moveEnd ###
+### moveEnd(aUnit, aCount) ###
 
-### normalize ###
+### normalize(aUnit) ###
   
 Normalize the range to the closest unit of the given type.  
   
 
-### findText ###
+### findText(aText, aIsBackward, aIsIgnoreCase) ###
   
 Return range enclosing the found text.  
   
 
-### findAttr ###
+### findAttr(aAttr, aValue, aIsBackward) ###
   
 Return range enslosing the text having requested attribute.  
   
 
-### addToSelection ###
+### addToSelection() ###
   
 Add/remove the text range from selection.  
   
 
-### removeFromSelection ###
+### removeFromSelection() ###
 
-### select ###
+### select() ###
 
-### scrollIntoView ###
+### scrollIntoView(aHow) ###
   
 Scroll the range into view.  
   

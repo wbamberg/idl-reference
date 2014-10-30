@@ -9,7 +9,7 @@ This represents a X.509 certificate.
 
 ## Methods ##
 
-### getEmailAddresses ###
+### getEmailAddresses(length, addresses) ###
   
  Obtain a list of all email addresses  
  contained in the certificate.  
@@ -18,7 +18,7 @@ This represents a X.509 certificate.
  @return An array of email addresses.  
   
 
-### containsEmailAddress ###
+### containsEmailAddress(aEmailAddress) ###
   
  Check whether a given address is contained in the certificate.  
  The comparison will convert the email address to lowercase.  
@@ -29,7 +29,7 @@ This represents a X.509 certificate.
  @return True if the address is contained in the certificate.  
   
 
-### getChain ###
+### getChain() ###
   
  Obtain a list of certificates that contains this certificate  
  and the issuing certificates of all involved issuers,  
@@ -38,7 +38,7 @@ This represents a X.509 certificate.
  @return The chain of certifficates including the issuers.  
   
 
-### getUsagesArray ###
+### getUsagesArray(localOnly, verified, count, usages) ###
   
  Obtain an array of human readable strings describing  
  the certificate's certified usages.  
@@ -50,7 +50,7 @@ This represents a X.509 certificate.
  @param usages The array of human readable usages.  
   
 
-### requestUsagesArrayAsync ###
+### requestUsagesArrayAsync(cvl) ###
   
  Async version of nsIX509Cert::getUsagesArray()  
   
@@ -58,7 +58,7 @@ This represents a X.509 certificate.
  availability of results will be notified on the main thread.  
   
 
-### getUsagesString ###
+### getUsagesString(localOnly, verified, usages) ###
   
  Obtain a single comma separated human readable string describing  
  the certificate's certified usages.  
@@ -69,7 +69,7 @@ This represents a X.509 certificate.
  @param purposes The string listing the usages.  
   
 
-### getRawDER ###
+### getRawDER(length, data) ###
   
  Obtain a raw binary encoding of this certificate  
  in DER format.  
@@ -78,7 +78,7 @@ This represents a X.509 certificate.
  @param data The bytes representing the DER encoded certificate.  
   
 
-### equals ###
+### equals(other) ###
   
  Test whether two certificate instances represent the  
  same certificate.  
@@ -86,7 +86,7 @@ This represents a X.509 certificate.
  @return Whether the certificates are equal  
   
 
-### exportAsCMS ###
+### exportAsCMS(chainMode, length, data) ###
   
  Obtain the certificate wrapped in a PKCS#7 SignedData structure,  
  with or without the certificate chain  
@@ -97,12 +97,12 @@ see CMS_CHAIN_MODE constants.
  @param data The bytes representing the PKCS#7 wrapped certificate.  
   
 
-### getCert ###
+### getCert() ###
   
 Retrieves the NSS certificate object wrapped by this interface  
   
 
-### getAllTokenNames ###
+### getAllTokenNames(length, tokenNames) ###
   
 Human readable names identifying all hardware or  
 software tokens the certificate is stored on.  
@@ -113,7 +113,7 @@ software tokens the certificate is stored on.
         On failure the function throws/returns an error.  
   
 
-### markForPermDeletion ###
+### markForPermDeletion() ###
   
 Either delete the certificate from all cert databases,  
 or mark it as untrusted.  

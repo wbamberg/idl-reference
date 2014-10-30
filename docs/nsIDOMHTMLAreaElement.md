@@ -16,7 +16,7 @@ http://www.whatwg.org/specs/web-apps/current-work/
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

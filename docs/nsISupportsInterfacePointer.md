@@ -9,7 +9,7 @@ Scriptable storage for other XPCOM objects
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

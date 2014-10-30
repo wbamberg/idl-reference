@@ -32,12 +32,12 @@ descriptions there.
 
 ## Methods ##
 
-### noteRefCountedObject ###
+### noteRefCountedObject(aAddress, aRefCount, aObjectDescription) ###
 
-### noteGCedObject ###
+### noteGCedObject(aAddress, aMarked, aObjectDescription, aCompartmentAddress) ###
 
-### noteEdge ###
+### noteEdge(aFromAddress, aToAddress, aEdgeName) ###
 
-### describeRoot ###
+### describeRoot(aAddress, aKnownEdges) ###
 
-### describeGarbage ###
+### describeGarbage(aAddress) ###

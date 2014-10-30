@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### SendSetZLevelEvent ###
+### SendSetZLevelEvent() ###
 
-### GetChildSheet ###
+### GetChildSheet(aShown) ###
 
-### GetRealParent ###
+### GetRealParent() ###
 
 ## Attributes ##
 

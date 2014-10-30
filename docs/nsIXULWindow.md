@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getContentShellById ###
+### getContentShellById(ID) ###
   
 The content shell specified by the supplied id.  
   
@@ -16,19 +16,19 @@ Or down the road any other object that supports being a DocShellTreeItem
 Query accordingly to determine the capabilities.  
   
 
-### addChildWindow ###
+### addChildWindow(aChild) ###
   
 Tell this window that it has picked up a child XUL window  
 @param aChild the child window being added  
   
 
-### removeChildWindow ###
+### removeChildWindow(aChild) ###
   
 Tell this window that it has lost a child XUL window  
 @param aChild the child window being removed  
   
 
-### center ###
+### center(aRelative, aScreen, aAlert) ###
   
 Move the window to a centered position.  
 @param aRelative If not null, the window relative to which the window is  
@@ -44,19 +44,19 @@ Move the window to a centered position.
                  generally centered horizontally and 1/3 down from the top.  
   
 
-### showModal ###
+### showModal() ###
   
 Shows the window as a modal window. That is, ensures that it is visible  
 and runs a local event loop, exiting only once the window has been closed.  
   
 
-### assumeChromeFlagsAreFrozen ###
+### assumeChromeFlagsAreFrozen() ###
   
 Begin assuming |chromeFlags| don't change hereafter, and assert  
 if they do change.  The state change is one-way and idempotent.  
   
 
-### createNewWindow ###
+### createNewWindow(aChromeFlags, aOpeningTab) ###
   
 Create a new window.  
 @param aChromeFlags see nsIWebBrowserChrome  
@@ -65,7 +65,7 @@ Create a new window.
 @return the newly minted window  
   
 
-### applyChromeFlags ###
+### applyChromeFlags() ###
   
 Back-door method to force application of chrome flags at a particular  
 time.  Do NOT call this unless you know what you're doing!  In particular,  

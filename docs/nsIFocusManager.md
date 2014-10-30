@@ -34,7 +34,7 @@ Blur and focus events do not bubble as per the W3C DOM Events spec.
 
 ## Methods ##
 
-### getLastFocusMethod ###
+### getLastFocusMethod(window) ###
   
 Returns the method that was used to focus the element in window. This  
 will either be 0, FLAG_BYMOUSE or FLAG_BYKEY. If window is null, then  
@@ -43,13 +43,13 @@ of retrieving the method that was used to focus the currently focused
 element.  
   
 
-### setFocus ###
+### setFocus(aElement, aFlags) ###
   
 Changes the focused element reference within the window containing  
 aElement to aElement.  
   
 
-### moveFocus ###
+### moveFocus(aWindow, aStartElement, aType, aFlags) ###
   
 Move the focus to another element. If aStartElement is specified, then  
 movement is done relative to aStartElement. If aStartElement is null,  
@@ -68,7 +68,7 @@ the focus is not changed.
 Returns the element that was focused.  
   
 
-### clearFocus ###
+### clearFocus(aWindow) ###
   
 Clears the focused element within aWindow. If the current focusedWindow  
 is a descendant of aWindow, sets the current focusedWindow to aWindow.  
@@ -76,7 +76,7 @@ is a descendant of aWindow, sets the current focusedWindow to aWindow.
 @throws NS_ERROR_INVALID_ARG if aWindow is null  
   
 
-### getFocusedElementForWindow ###
+### getFocusedElementForWindow(aWindow, aDeep, aFocusedWindow) ###
   
 Returns the currently focused element within aWindow. If aWindow is equal  
 to the current value of focusedWindow, then the returned element will be  
@@ -95,27 +95,27 @@ element is focused.
 @throws NS_ERROR_INVALID_ARG if aWindow is null  
   
 
-### moveCaretToFocus ###
+### moveCaretToFocus(aWindow) ###
   
 Moves the selection caret within aWindow to the current focus.  
   
 
-### elementIsFocusable ###
+### elementIsFocusable(aElement, aFlags) ###
   
 Check if given element is focusable.  
   
 
-### windowRaised ###
+### windowRaised(aWindow) ###
   
 Called when a window has been raised.  
   
 
-### windowLowered ###
+### windowLowered(aWindow) ###
   
 Called when a window has been lowered.  
   
 
-### windowShown ###
+### windowShown(aWindow, aNeedsFocus) ###
   
 Called when a new document in a window is shown.  
   
@@ -123,18 +123,18 @@ If aNeedsFocus is true, then focus events are expected to be fired on the
 window if this window is in the focused window chain.  
   
 
-### windowHidden ###
+### windowHidden(aWindow) ###
   
 Called when a document in a window has been hidden or otherwise can no  
 longer accept focus.  
   
 
-### fireDelayedEvents ###
+### fireDelayedEvents(aDocument) ###
   
 Fire any events that have been delayed due to synchronized actions.  
   
 
-### focusPlugin ###
+### focusPlugin(aPlugin) ###
   
 Indicate that a plugin wishes to take the focus. This is similar to a  
 normal focus except that the widget focus is not changed. Updating the  

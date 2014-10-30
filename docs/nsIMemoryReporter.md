@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### collectReports ###
+### collectReports(callback, data, anonymize) ###
 
 ## Constants ##
 

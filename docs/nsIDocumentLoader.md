@@ -13,7 +13,7 @@ XXXbz this interface should go away, we think...
 
 ## Methods ##
 
-### stop ###
+### stop() ###
 
 ## Attributes ##
 

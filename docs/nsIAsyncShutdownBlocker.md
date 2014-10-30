@@ -14,7 +14,7 @@ interface (and only this interface).
 
 ## Methods ##
 
-### blockShutdown ###
+### blockShutdown(aBarrierClient) ###
   
 Inform the blocker that the stage of shutdown has started.  
 Shutdown will NOT proceed until `aBarrierClient.removeBlocker(this)`  

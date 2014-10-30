@@ -6,20 +6,20 @@ layout: default
 
 ## Methods ##
 
-### notifyAudioStateChanged ###
+### notifyAudioStateChanged(clientId, state) ###
 
-### notifyCallDisconnected ###
+### notifyCallDisconnected(clientId, call) ###
 
-### notifyCallRing ###
+### notifyCallRing() ###
 
-### notifyCallStateChanged ###
+### notifyCallStateChanged(clientId, call, skipStateConversion) ###
 
-### notifyCdmaCallWaiting ###
+### notifyCdmaCallWaiting(clientId, waitingCall) ###
 
-### notifySupplementaryService ###
+### notifySupplementaryService(clientId, callIndex, notification) ###
 
-### notifyConferenceCallStateChanged ###
+### notifyConferenceCallStateChanged(state) ###
 
-### notifyUssdReceived ###
+### notifyUssdReceived(clientId, message, sessionEnded) ###
 
-### dialMMI ###
+### dialMMI(clientId, mmiString, callback) ###

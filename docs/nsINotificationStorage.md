@@ -9,7 +9,7 @@ Interface for notification persistence layer.
 
 ## Methods ##
 
-### put ###
+### put(origin, id, title, dir, lang, body, tag, icon, alertName, data, behavior) ###
   
 Add/replace a notification to the persistence layer.  
   
@@ -28,7 +28,7 @@ Add/replace a notification to the persistence layer.
                   whether there is a tag defined.  
   
 
-### get ###
+### get(origin, tag, aCallback) ###
   
 Retrieve a list of notifications.  
   
@@ -38,7 +38,7 @@ Retrieve a list of notifications.
                  returning notifications objects  
   
 
-### delete ###
+### delete(origin, id) ###
   
 Remove a notification from storage.  
   

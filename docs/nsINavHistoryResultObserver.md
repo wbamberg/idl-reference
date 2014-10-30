@@ -11,14 +11,14 @@ result using nsINavHistoryResult::addObserver.
 
 ## Methods ##
 
-### nodeInserted ###
+### nodeInserted(aParent, aNode, aNewIndex) ###
   
 Called when 'aItem' is inserted into 'aParent' at index 'aNewIndex'.  
 The item previously at index (if any) and everything below it will have  
 been shifted down by one. The item may be a container or a leaf.  
   
 
-### nodeRemoved ###
+### nodeRemoved(aParent, aItem, aOldIndex) ###
   
 Called whan 'aItem' is removed from 'aParent' at 'aOldIndex'. The item  
 may be a container or a leaf. This function will be called after the item  
@@ -26,7 +26,7 @@ has been removed from its parent list, but before anything else (including
 NULLing out the item's parent) has happened.  
   
 
-### nodeMoved ###
+### nodeMoved(aNode, aOldParent, aOldIndex, aNewParent, aNewIndex) ###
   
 Called whan 'aItem' is moved from 'aOldParent' at 'aOldIndex' to  
 aNewParent at aNewIndex. The item may be a container or a leaf.  
@@ -37,7 +37,7 @@ a new node is created for the item, and the itemRemoved/itemAdded methods
 are used.  
   
 
-### nodeTitleChanged ###
+### nodeTitleChanged(aNode, aNewTitle) ###
   
 Called right after aNode's title has changed.  
   
@@ -47,7 +47,7 @@ Called right after aNode's title has changed.
        the new title  
   
 
-### nodeURIChanged ###
+### nodeURIChanged(aNode, aNewURI) ###
   
 Called right after aNode's uri property has changed.  
   
@@ -57,7 +57,7 @@ Called right after aNode's uri property has changed.
        the new uri  
   
 
-### nodeIconChanged ###
+### nodeIconChanged(aNode) ###
   
 Called right after aNode's icon property has changed.  
   
@@ -67,7 +67,7 @@ Called right after aNode's icon property has changed.
 @note: The new icon is accessible through aNode.icon.  
   
 
-### nodeHistoryDetailsChanged ###
+### nodeHistoryDetailsChanged(aNode, aNewVisitDate, aNewAccessCount) ###
   
 Called right after aNode's time property or accessCount property, or both,  
 have changed.  
@@ -80,7 +80,7 @@ have changed.
        the new access-count  
   
 
-### nodeTagsChanged ###
+### nodeTagsChanged(aNode) ###
   
 Called when the tags set on the uri represented by aNode have changed.  
   
@@ -90,7 +90,7 @@ Called when the tags set on the uri represented by aNode have changed.
 @note: The new tags list is accessible through aNode.tags.  
   
 
-### nodeKeywordChanged ###
+### nodeKeywordChanged(aNode, aNewKeyword) ###
   
 Called right after the aNode's keyword property has changed.  
   
@@ -100,7 +100,7 @@ Called right after the aNode's keyword property has changed.
        the new keyword  
   
 
-### nodeAnnotationChanged ###
+### nodeAnnotationChanged(aNode, aAnnoName) ###
   
 Called right after an annotation of aNode's has changed (set, altered, or  
 unset).  
@@ -111,7 +111,7 @@ unset).
        the name of the annotation that changed  
   
 
-### nodeDateAddedChanged ###
+### nodeDateAddedChanged(aNode, aNewValue) ###
   
 Called right after aNode's dateAdded property has changed.  
   
@@ -121,7 +121,7 @@ Called right after aNode's dateAdded property has changed.
        the new value of the dateAdded property  
   
 
-### nodeLastModifiedChanged ###
+### nodeLastModifiedChanged(aNode, aNewValue) ###
   
 Called right after aNode's dateModified property has changed.  
   
@@ -131,7 +131,7 @@ Called right after aNode's dateModified property has changed.
        the new value of the dateModified property  
   
 
-### containerStateChanged ###
+### containerStateChanged(aContainerNode, aOldState, aNewState) ###
   
 Called after a container changes state.  
   
@@ -143,7 +143,7 @@ Called after a container changes state.
        The state that aContainerNode has transitioned into.  
   
 
-### invalidateContainer ###
+### invalidateContainer(aContainerNode) ###
   
 Called when something significant has happened within the container. The  
 contents of the container should be re-built.  
@@ -152,7 +152,7 @@ contents of the container should be re-built.
        the container node to invalidate  
   
 
-### sortingChanged ###
+### sortingChanged(sortingMode) ###
   
 This is called to indicate to the UI that the sort has changed to the  
 given mode. For trees, for example, this would update the column headers  
@@ -166,7 +166,7 @@ This only is expected to update the sorting UI. invalidateAll() will also
 get called if the sorting changes to update everything.  
   
 
-### batching ###
+### batching(aToggleMode) ###
   
 This is called to indicate that a batch operation is about to start or end.  
 The observer could want to disable some events or updates during batches,  

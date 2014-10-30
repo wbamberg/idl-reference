@@ -12,7 +12,7 @@ implementation with an ArrayBuffer.
 
 ## Methods ##
 
-### setData ###
+### setData(buffer, byteOffset, byteLen) ###
   
 SetData - assign an ArrayBuffer to the input stream.  
   

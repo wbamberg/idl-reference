@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### Find ###
+### Find(aPatText, aSearchRange, aStartPoint, aEndPoint) ###
   
 Find some text in the current context. The implementation is  
 responsible for performing the find and highlighting the text.  

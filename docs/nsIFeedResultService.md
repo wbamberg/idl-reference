@@ -10,7 +10,7 @@ the results of feed processing.
 
 ## Methods ##
 
-### addToClientReader ###
+### addToClientReader(uri, title, subtitle, feedType) ###
   
 Adds a URI to the user's specified external feed handler, or live   
 bookmarks.   
@@ -24,7 +24,7 @@ bookmarks.
          The nsIFeed type of the feed.  See nsIFeed.idl  
   
 
-### addFeedResult ###
+### addFeedResult(feedResult) ###
   
 Registers a Feed Result object with a globally accessible service  
 so that it can be accessed by a singleton method outside the usual  
@@ -34,7 +34,7 @@ flow of control in document loading.
          An object implementing nsIFeedResult representing the feed.  
   
 
-### getFeedResult ###
+### getFeedResult(uri) ###
   
 Gets a Feed Handler object registered using addFeedResult.  
   
@@ -42,7 +42,7 @@ Gets a Feed Handler object registered using addFeedResult.
          The URI of the feed a handler is being requested for  
   
 
-### removeFeedResult ###
+### removeFeedResult(uri) ###
   
 Unregisters a Feed Handler object registered using addFeedResult.  
 @param   uri  

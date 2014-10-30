@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### handleCert ###
+### handleCert(cert, result) ###
   
 Called with the result of the getOrCreateCert operation above.  
   

@@ -6,15 +6,15 @@ layout: default
 
 ## Methods ##
 
-### slice ###
+### slice(start, end, contentType) ###
 
-### getFileId ###
+### getFileId() ###
 
-### addFileInfo ###
+### addFileInfo(aFileInfo) ###
 
-### getFileInfo ###
+### getFileInfo(aFileManager) ###
 
-### isMemoryFile ###
+### isMemoryFile() ###
 
 ## Attributes ##
 

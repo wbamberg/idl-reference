@@ -9,7 +9,7 @@ A representation of the data included in an HTTP request.
 
 ## Methods ##
 
-### getHeader ###
+### getHeader(fieldName) ###
   
 Returns the value for the header in this request specified by fieldName.  
   
@@ -29,7 +29,7 @@ Returns the value for the header in this request specified by fieldName.
   if the given header does not exist in this  
   
 
-### hasHeader ###
+### hasHeader(fieldName) ###
   
 Returns true if a header with the given field name exists in this, false  
 otherwise.  

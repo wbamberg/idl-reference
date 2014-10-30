@@ -6,19 +6,19 @@ layout: default
 
 ## Methods ##
 
-### setExpirationTime ###
+### setExpirationTime(expirationTime) ###
   
 Set the time at which the cache entry should be considered invalid (in  
 seconds since the Epoch).  
   
 
-### setDataSize ###
+### setDataSize(size) ###
   
 Set the cache entry data size.  This will fail if the cache entry  
 IS stream based.  
   
 
-### openInputStream ###
+### openInputStream(offset) ###
   
 Open blocking input stream to cache data.  This will fail if the cache  
 entry IS NOT stream based.  Use the stream transport service to  
@@ -32,7 +32,7 @@ stream MAY implement nsISeekableStream.
 @return blocking, unbuffered input stream.  
   
 
-### openOutputStream ###
+### openOutputStream(offset) ###
   
 Open blocking output stream to cache data.  This will fail if the cache  
 entry IS NOT stream based.  Use the stream transport service to  
@@ -49,7 +49,7 @@ truncated to the specified offset.
 @return blocking, unbuffered output stream.  
   
 
-### doom ###
+### doom() ###
   
 Doom the cache entry this descriptor references in order to slate it for   
 removal.  Once doomed a cache entry cannot be undoomed.  
@@ -60,36 +60,36 @@ a cache descriptor.  This is meant as a tool for clients that wish to
 instruct pending requests to skip the cache.  
   
 
-### doomAndFailPendingRequests ###
+### doomAndFailPendingRequests(status) ###
 
-### asyncDoom ###
+### asyncDoom(listener) ###
   
 Asynchronously doom an entry. Listener will be notified about the status  
 of the operation. Null may be passed if caller doesn't care about the  
 result.  
   
 
-### markValid ###
+### markValid() ###
   
 A writer must validate this cache object before any readers are given  
 a descriptor to the object.  
   
 
-### close ###
+### close() ###
   
  Explicitly close the descriptor (optional).  
   
 
-### getMetaDataElement ###
+### getMetaDataElement(key) ###
   
 Methods for accessing meta data.  Meta data is a table of key/value  
 string pairs.  The strings do not have to conform to any particular  
 charset, but they must be null terminated.  
   
 
-### setMetaDataElement ###
+### setMetaDataElement(key, value) ###
 
-### visitMetaData ###
+### visitMetaData(visitor) ###
   
 Visitor will be called with key/value pair for each meta data element.  
   

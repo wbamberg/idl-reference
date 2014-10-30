@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### continue ###
+### continue() ###
 
 ## Attributes ##
 

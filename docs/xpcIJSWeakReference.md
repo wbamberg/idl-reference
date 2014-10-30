@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### get ###
+### get() ###
   
 To be called from JS only.  
   

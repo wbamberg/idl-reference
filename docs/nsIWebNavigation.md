@@ -12,7 +12,7 @@ has previously gone.
 
 ## Methods ##
 
-### goBack ###
+### goBack() ###
   
 Tells the object to navigate to the previous session history item.  When a  
 page is loaded from session history, all content is loaded from the cache  
@@ -24,7 +24,7 @@ restored.
        that canGoBack is false.  
   
 
-### goForward ###
+### goForward() ###
   
 Tells the object to navigate to the next session history item.  When a  
 page is loaded from session history, all content is loaded from the cache  
@@ -36,7 +36,7 @@ restored.
        that canGoForward is false.  
   
 
-### gotoIndex ###
+### gotoIndex(index) ###
   
 Tells the object to navigate to the session history item at a given index.  
   
@@ -45,7 +45,7 @@ Tells the object to navigate to the session history item at a given index.
        that session history entry at the given index does not exist.  
   
 
-### loadURI ###
+### loadURI(aURI, aLoadFlags, aReferrer, aPostData, aHeaders) ###
   
 Loads a given URI.  This will give priority to loading the requested URI  
 in the object implementing	this interface.  If it can't be loaded here  
@@ -78,7 +78,7 @@ loading.
        This parameter is optional and may be null.  
   
 
-### loadURIWithBase ###
+### loadURIWithBase(aURI, aLoadFlags, aReferrer, aPostData, aHeaders, aBaseURI) ###
   
 Loads a given URI.  This will give priority to loading the requested URI  
 in the object implementing this interface.  If it can't be loaded here  
@@ -121,7 +121,7 @@ different to loadURI.
        This parameter is optional and may be null.  
   
 
-### reload ###
+### reload(aReloadFlags) ###
   
 Tells the Object to reload the current page.  There may be cases where the  
 user will be asked to confirm the reload (for example, when it is  
@@ -137,7 +137,7 @@ determined that the request is non-idempotent).
        Indicating that the user canceled the reload.  
   
 
-### stop ###
+### stop(aStopFlags) ###
   
 Stops a load of a URI.  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initPrintSettingsFromPrinter ###
+### initPrintSettingsFromPrinter(aPrinterName, aPrintSettings) ###
   
 Initializes certain settings from the native printer into the PrintSettings  
 if aPrinterName is null then it uses the default printer name if it can  
@@ -16,7 +16,7 @@ These settings include, but are not limited to:
   Number of Copies  
   
 
-### initPrintSettingsFromPrefs ###
+### initPrintSettingsFromPrefs(aPrintSettings, aUsePrinterNamePrefix, aFlags) ###
   
 Reads PrintSettings values from Prefs,  
 the values to be read are indicated by the "flags" arg.  
@@ -39,7 +39,7 @@ Items not read:
   
   
 
-### savePrintSettingsToPrefs ###
+### savePrintSettingsToPrefs(aPrintSettings, aUsePrinterNamePrefix, aFlags) ###
   
 Writes PrintSettings values to Prefs,   
 the values to be written are indicated by the "flags" arg.  

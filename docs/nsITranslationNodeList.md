@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### item ###
+### item(index) ###
 
-### isTranslationRootAtIndex ###
+### isTranslationRootAtIndex(index) ###
 
 ## Attributes ##
 

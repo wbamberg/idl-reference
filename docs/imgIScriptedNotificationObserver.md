@@ -6,16 +6,16 @@ layout: default
 
 ## Methods ##
 
-### sizeAvailable ###
+### sizeAvailable(aRequest) ###
 
-### frameUpdate ###
+### frameUpdate(aRequest) ###
 
-### frameComplete ###
+### frameComplete(aRequest) ###
 
-### loadComplete ###
+### loadComplete(aRequest) ###
 
-### decodeComplete ###
+### decodeComplete(aRequest) ###
 
-### discard ###
+### discard(aRequest) ###
 
-### isAnimated ###
+### isAnimated(aRequest) ###

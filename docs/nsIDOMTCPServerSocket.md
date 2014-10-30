@@ -11,7 +11,7 @@ An interface to a server socket that can accept incoming connections for gaia ap
 
 ## Methods ##
 
-### close ###
+### close() ###
   
 Close the server socket.  
   

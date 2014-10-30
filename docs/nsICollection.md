@@ -6,18 +6,18 @@ layout: default
 
 ## Methods ##
 
-### Count ###
+### Count() ###
 
-### GetElementAt ###
+### GetElementAt(index) ###
 
-### QueryElementAt ###
+### QueryElementAt(index, uuid, result) ###
 
-### SetElementAt ###
+### SetElementAt(index, item) ###
 
-### AppendElement ###
+### AppendElement(item) ###
 
-### RemoveElement ###
+### RemoveElement(item) ###
 
-### Enumerate ###
+### Enumerate() ###
 
-### Clear ###
+### Clear() ###

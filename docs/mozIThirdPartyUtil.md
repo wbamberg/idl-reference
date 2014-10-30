@@ -10,7 +10,7 @@ hierarchy is third party with respect to a known URI.
 
 ## Methods ##
 
-### isThirdPartyURI ###
+### isThirdPartyURI(aFirstURI, aSecondURI) ###
   
 isThirdPartyURI  
   
@@ -32,7 +32,7 @@ respect to "http://images.google.com/", but "http://mail.yahoo.com/" and
         and is not a file:// URI.  
   
 
-### isThirdPartyWindow ###
+### isThirdPartyWindow(aWindow, aURI) ###
   
 isThirdPartyWindow  
   
@@ -72,7 +72,7 @@ a URI of "http://mozilla.com", the result will be true.
 @see isThirdPartyURI  
   
 
-### isThirdPartyChannel ###
+### isThirdPartyChannel(aChannel, aURI) ###
   
 isThirdPartyChannel  
   
@@ -118,7 +118,7 @@ a URI of "http://mozilla.com", the result will be true.
 @see isThirdPartyWindow  
   
 
-### getBaseDomain ###
+### getBaseDomain(aHostURI) ###
   
 getBaseDomain  
   
@@ -136,7 +136,7 @@ special cases elided above.
 @return the base domain.  
   
 
-### getURIFromWindow ###
+### getURIFromWindow(aWindow) ###
   
 getURIFromWindow  
   
@@ -144,7 +144,7 @@ Returns the URI associated with the script object principal for the
 window.  
   
 
-### getTopWindowForChannel ###
+### getTopWindowForChannel(aChannel) ###
   
 getTopWindowForChannel  
   

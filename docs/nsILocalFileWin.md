@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getVersionInfoField ###
+### getVersionInfoField(aField) ###
   
 getVersionInfoValue  
   
@@ -17,7 +17,7 @@ Throws NS_ERROR_FAILURE if no value is found, or the value is empty.
   
   
 
-### setShortcut ###
+### setShortcut(targetFile, workingDir, args, description, iconFile, iconIndex) ###
   
 setShortcut  
   
@@ -44,7 +44,7 @@ iconFile.  If iconFile contains only one icon, this
 value should be 0.  
   
 
-### openNSPRFileDescShareDelete ###
+### openNSPRFileDescShareDelete(flags, mode) ###
   
 Identical to nsIFile::openNSPRFileDesc except it also uses the  
 FILE_SHARE_DELETE flag.  

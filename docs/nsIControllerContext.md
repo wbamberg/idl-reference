@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aCommandTable) ###
   
  Init the controller, optionally passing a controller  
  command table.  
@@ -17,7 +17,7 @@ layout: default
                       a new, empty table.  
   
 
-### setCommandContext ###
+### setCommandContext(aCommandContext) ###
    
  Set a context on this controller, which is passed  
  to commands to give them some context when they execute.  

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### round1 ###
+### round1(aSignerID, aGX1, aGV1, aR1, aGX2, aGV2, aR2) ###
   
 Perform first round of the JPAKE exchange.  
   
@@ -28,7 +28,7 @@ Perform first round of the JPAKE exchange.
        Schnorr signature value r2 = v2 - x2 * h, in hex representation.  
   
 
-### round2 ###
+### round2(aPeerID, aPIN, aGX3, aGV3, aR3, aGX4, aGV4, aR4, aA, aGVA, aRA) ###
   
 Perform second round of the JPAKE exchange.  
   
@@ -59,7 +59,7 @@ Perform second round of the JPAKE exchange.
        Schnorr signature value ra = va - xa * h, in hex representation.  
   
 
-### final ###
+### final(aB, aGVB, aRB, aHkdfInfo, aAES256Key, aHMAC256Key) ###
   
 Perform the final step of the JPAKE exchange. This will compute  
 the key and expand the key to two keys, an AES256 encryption key  

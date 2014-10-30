@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onSecurityChange ###
+### onSecurityChange(i_Context, state) ###
   
 Fired when a security change occurs due to page transitions,  
 or end document load. This interface should be called by  

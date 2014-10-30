@@ -6,21 +6,21 @@ layout: default
 
 ## Methods ##
 
-### registerGCCallback ###
+### registerGCCallback(func) ###
   
 Register additional GC callback which will run after the  
 standard XPConnect callback.  
   
 
-### unregisterGCCallback ###
+### unregisterGCCallback(func) ###
 
-### registerContextCallback ###
+### registerContextCallback(func) ###
   
 Register additional context callback which will run after the  
 standard XPConnect callback.  
   
 
-### unregisterContextCallback ###
+### unregisterContextCallback(func) ###
 
 ## Attributes ##
 

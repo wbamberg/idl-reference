@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getProperty ###
+### getProperty(name) ###
   
 Get a property value for the given name.  
 @throws NS_ERROR_FAILURE if a property with that name doesn't  

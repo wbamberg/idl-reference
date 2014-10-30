@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### initKey ###
+### initKey(aAlgorithm, aKey) ###
 
-### getKeyObj ###
+### getKeyObj() ###
 
-### getType ###
+### getType() ###
 
 ## Constants ##
 

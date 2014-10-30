@@ -11,23 +11,23 @@ its ui.
 
 ## Methods ##
 
-### setJSStatus ###
+### setJSStatus(status) ###
   
 Sets the status according to JS' version of status.  
   
 
-### setOverLink ###
+### setOverLink(link, element) ###
   
 Tells the object implementing this function what link we are currently  
 over.  
   
 
-### onBeforeLinkTraversal ###
+### onBeforeLinkTraversal(originalTarget, linkURI, linkNode, isAppTab) ###
   
 Determines the appropriate target for a link.  
   
 
-### shouldLoadURI ###
+### shouldLoadURI(aDocShell, aURI, aReferrer) ###
   
 Determines whether a load should continue.  
   
@@ -39,9 +39,9 @@ Determines whether a load should continue.
        The referrer of the load.  
   
 
-### showTooltip ###
+### showTooltip(x, y, tooltip) ###
   
 Show/hide a tooltip (when the user mouses over a link, say).  
   
 
-### hideTooltip ###
+### hideTooltip() ###

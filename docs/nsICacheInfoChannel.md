@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### isFromCache ###
+### isFromCache() ###
   
 TRUE if this channel's data is being loaded from the cache.  This value  
 is undefined before the channel fires its OnStartRequest notification  

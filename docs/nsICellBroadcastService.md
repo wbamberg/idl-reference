@@ -9,14 +9,14 @@ XPCOM component that provides the cell broadcast information.
 
 ## Methods ##
 
-### registerListener ###
+### registerListener(listener) ###
   
 Called to register receiving cellbroadcast messages.  
   
 'cellbroadcast' permission is required for registration/unregistration.  
   
 
-### unregisterListener ###
+### unregisterListener(listener) ###
 
 ## Constants ##
 

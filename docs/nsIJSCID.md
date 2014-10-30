@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### createInstance ###
+### createInstance(iid) ###
 
-### getService ###
+### getService(iid) ###

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### loadSubScript ###
+### loadSubScript(url, obj, charset) ###
   
 This method should only be called from JS!  
 In JS, the signature looks like:  
@@ -21,7 +21,7 @@ rv loadSubScript (url [, obj] [, charset]);
 @retval rv the value returned by the sub-script  
   
 
-### loadSubScriptWithOptions ###
+### loadSubScriptWithOptions(url, options) ###
   
 This method should only be called from JS!  
 In JS, the signature looks like:  
@@ -35,4 +35,4 @@ rv = loadSubScript (url, optionsObject)
 @retval rv the value returned by the sub-script  
   
 
-### precompileScript ###
+### precompileScript(uri, principal, observer) ###

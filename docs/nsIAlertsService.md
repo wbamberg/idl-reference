@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### showAlertNotification ###
+### showAlertNotification(imageUrl, title, text, textClickable, cookie, alertListener, name, dir, lang, data, principal) ###
   
 Displays a sliding notification window.  
   
@@ -48,7 +48,7 @@ method:
       "alertfinished" notification immediately.  
   
 
-### closeAlert ###
+### closeAlert(name, principal) ###
   
 Close alerts created by the service.  
   

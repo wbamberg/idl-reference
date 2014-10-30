@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getSubmission ###
+### getSubmission(data, responseType, purpose) ###
   
 Gets a nsISearchSubmission object that contains information about what to  
 send to the search engine, including the URI and postData, if applicable.  
@@ -29,7 +29,7 @@ send to the search engine, including the URI and postData, if applicable.
          obtained for the given responseType, returns null.  
   
 
-### addParam ###
+### addParam(name, value, responseType) ###
   
 Adds a parameter to the search engine's submission data. This should only  
 be called on engines created via addEngineWithDetails.  
@@ -52,7 +52,7 @@ be called on engines created via addEngineWithDetails.
 @throws NS_ERROR_INVALID_ARG if name or value are null.  
   
 
-### supportsResponseType ###
+### supportsResponseType(responseType) ###
   
 Determines whether the engine can return responses in the given  
 MIME type.  Returns true if the engine spec has a URL with the  
@@ -62,7 +62,7 @@ given responseType, false otherwise.
        The MIME type to check for  
   
 
-### getIconURLBySize ###
+### getIconURLBySize(width, height) ###
   
 Returns a string with the URL to an engine's icon matching both width and  
 height. Returns null if icon with specified dimensions is not found.  
@@ -73,7 +73,7 @@ height. Returns null if icon with specified dimensions is not found.
        Height of the requested icon.  
   
 
-### getIcons ###
+### getIcons() ###
   
 Gets an array of all available icons. Each entry is an object with  
 width, height and url properties. width and height are numeric and  
@@ -81,7 +81,7 @@ represent the icon's dimensions. url is a string with the URL for
 the icon.  
   
 
-### speculativeConnect ###
+### speculativeConnect(options) ###
   
 Opens a speculative connection to the engine's search URI  
 (and suggest URI, if different) to reduce request latency  
@@ -94,7 +94,7 @@ Opens a speculative connection to the engine's search URI
         elemeents  
   
 
-### getResultDomain ###
+### getResultDomain(responseType) ###
   
 Gets a string representing the hostname from which search results for a  
 given responseType are returned, minus the leading "www." (if present).  

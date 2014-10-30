@@ -9,7 +9,7 @@ The result of a history/bookmark query.
 
 ## Methods ##
 
-### addObserver ###
+### addObserver(aObserver, aOwnsWeak) ###
   
 Adds an observer for changes done in the result.  
   
@@ -24,7 +24,7 @@ Adds an observer for changes done in the result.
 @see nsINavHistoryResultObserver  
   
 
-### removeObserver ###
+### removeObserver(aObserver) ###
   
 Removes an observer that was added by addObserver.  
   

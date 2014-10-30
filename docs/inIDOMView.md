@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### getNodeFromRowIndex ###
+### getNodeFromRowIndex(rowIndex) ###
 
-### getRowIndexFromNode ###
+### getRowIndexFromNode(node) ###
 
-### rebuild ###
+### rebuild() ###
 
 ## Attributes ##
 

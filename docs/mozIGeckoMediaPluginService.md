@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### hasPluginForAPI ###
+### hasPluginForAPI(api, tags) ###
   
 Get a plugin that supports the specified tags.  
 Callable on any thread  
   
 
-### getGMPVideoDecoder ###
+### getGMPVideoDecoder(tags, nodeId, outVideoHost) ###
   
 Get a video decoder that supports the specified tags.  
 The array of tags should at least contain a codec tag, and optionally  
@@ -20,7 +20,7 @@ other tags such as for EME keysystem.
 Callable only on GMP thread.  
   
 
-### getGMPVideoEncoder ###
+### getGMPVideoEncoder(tags, nodeId, outVideoHost) ###
   
 Get a video encoder that supports the specified tags.  
 The array of tags should at least contain a codec tag, and optionally  
@@ -28,35 +28,35 @@ other tags.
 Callable only on GMP thread.  
   
 
-### getGMPAudioDecoder ###
+### getGMPAudioDecoder(tags, nodeId) ###
 
-### getGMPDecryptor ###
+### getGMPDecryptor(tags, nodeId) ###
 
-### addPluginDirectory ###
+### addPluginDirectory(directory) ###
   
 Add a directory to scan for gecko media plugins.  
 @note Main-thread API.  
   
 
-### removePluginDirectory ###
+### removePluginDirectory(directory) ###
   
 Remove a directory for gecko media plugins.  
 @note Main-thread API.  
   
 
-### getNodeId ###
+### getNodeId(origin, topLevelOrigin, inPrivateBrowsingMode) ###
   
 Gets the NodeId for a (origin, urlbarOrigin, isInprivateBrowsing) tuple.  
   
 
-### isPersistentStorageAllowed ###
+### isPersistentStorageAllowed(nodeId) ###
   
 Returns true if the given node id is allowed to store things  
 persistently on disk. Private Browsing and local content are not  
 allowed to store persistent data.  
   
 
-### getStorageDir ###
+### getStorageDir() ###
   
 Returns the directory to use as the base for storing data about GMPs.  
   

@@ -6,23 +6,23 @@ layout: default
 
 ## Methods ##
 
-### alert ###
+### alert(dialogTitle, text) ###
 
-### alertCheck ###
+### alertCheck(dialogTitle, text, checkMsg, checkValue) ###
 
-### confirm ###
+### confirm(dialogTitle, text) ###
 
-### confirmCheck ###
+### confirmCheck(dialogTitle, text, checkMsg, checkValue) ###
 
-### confirmEx ###
+### confirmEx(dialogTitle, text, buttonFlags, button0Title, button1Title, button2Title, checkMsg, checkValue) ###
 
-### prompt ###
+### prompt(dialogTitle, text, value, checkMsg, checkValue) ###
 
-### promptPassword ###
+### promptPassword(dialogTitle, text, password, checkMsg, checkValue) ###
 
-### promptUsernameAndPassword ###
+### promptUsernameAndPassword(dialogTitle, text, username, password, checkMsg, checkValue) ###
 
-### select ###
+### select(dialogTitle, text, count, selectList, outSelection) ###
 
 ## Constants ##
 

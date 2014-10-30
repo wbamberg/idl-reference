@@ -163,7 +163,7 @@ is common
 
 ## Methods ##
 
-### receiveMessage ###
+### receiveMessage() ###
   
 This is for JS only.  
 receiveMessage is called with one parameter, which has the following  

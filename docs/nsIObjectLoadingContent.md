@@ -12,14 +12,14 @@ interface to mirror this interface when changing it.
 
 ## Methods ##
 
-### getContentTypeForMIMEType ###
+### getContentTypeForMIMEType(aMimeType) ###
   
 Gets the content type that corresponds to the give MIME type.  See the  
 constants above for the list of possible values.  If nothing else fits,  
 TYPE_NULL will be returned.  
   
 
-### hasNewFrame ###
+### hasNewFrame(aFrame) ###
   
 Tells the content about an associated object frame.  
 This can be called multiple times for different frames.  
@@ -28,7 +28,7 @@ This is noscript because this is an internal method that will go away, and
 because nsIObjectFrame is unscriptable.  
   
 
-### getPrintFrame ###
+### getPrintFrame() ###
   
 If this object is in going to be printed, this method  
 returns the nsIObjectFrame object which should be used when  
@@ -36,17 +36,17 @@ printing the plugin. The returned nsIFrame is in the original document,
 not in the static clone.  
   
 
-### pluginDestroyed ###
+### pluginDestroyed() ###
 
-### pluginCrashed ###
+### pluginCrashed(pluginTag, pluginDumpID, browserDumpID, submittedCrashReport) ###
 
-### playPlugin ###
+### playPlugin() ###
   
 This method will play a plugin that has been stopped by the  
 click-to-play plugins or play-preview features.  
   
 
-### reload ###
+### reload(aClearActivation) ###
   
 Forces a re-evaluation and reload of the tag, optionally invalidating its  
 click-to-play state.  This can be used when the MIME type that provides a  
@@ -54,13 +54,13 @@ type has changed, for instance, to force the tag to re-evalulate the
 handler to use.  
   
 
-### stopPluginInstance ###
+### stopPluginInstance() ###
 
-### syncStartPluginInstance ###
+### syncStartPluginInstance() ###
 
-### asyncStartPluginInstance ###
+### asyncStartPluginInstance() ###
 
-### initializeFromChannel ###
+### initializeFromChannel(request) ###
   
 Puts the tag in the "waiting on a channel" state and adopts this  
 channel. This does not override the normal logic of examining attributes  
@@ -73,7 +73,7 @@ This assumes:
  - The caller will continue to pass channel events to us as a listener  
   
 
-### cancelPlayPreview ###
+### cancelPlayPreview() ###
   
 This method will disable the play-preview plugin state.  
   

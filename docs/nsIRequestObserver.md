@@ -9,7 +9,7 @@ nsIRequestObserver
 
 ## Methods ##
 
-### onStartRequest ###
+### onStartRequest(aRequest, aContext) ###
   
 Called to signify the beginning of an asynchronous request.  
   
@@ -20,7 +20,7 @@ An exception thrown from onStartRequest has the side-effect of
 causing the request to be canceled.  
   
 
-### onStopRequest ###
+### onStopRequest(aRequest, aContext, aStatusCode) ###
   
 Called to signify the end of an asynchronous request.  This  
 call is always preceded by a call to onStartRequest.  

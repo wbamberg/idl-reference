@@ -62,7 +62,7 @@ See nsIContentPrefCallback2 below for more information about callbacks.
 
 ## Methods ##
 
-### getByName ###
+### getByName(name, context, callback) ###
   
 Gets all the preferences with the given name.  
   
@@ -73,7 +73,7 @@ Gets all the preferences with the given name.
                  is not called at all.  
   
 
-### getByDomainAndName ###
+### getByDomainAndName(domain, name, context, callback) ###
   
 Gets the preference with the given domain and name.  
   
@@ -84,7 +84,7 @@ Gets the preference with the given domain and name.
                  exists, in which case handleResult is not called at all.  
   
 
-### getBySubdomainAndName ###
+### getBySubdomainAndName(domain, name, context, callback) ###
   
 Gets all preferences with the given name whose domains are either the same  
 as or subdomains of the given domain.  
@@ -96,7 +96,7 @@ as or subdomains of the given domain.
                  such preferences exist, handleResult is not called at all.  
   
 
-### getGlobal ###
+### getGlobal(name, context, callback) ###
   
 Gets the preference with no domain and the given name.  
   
@@ -106,7 +106,7 @@ Gets the preference with no domain and the given name.
                  exists, in which case handleResult is not called at all.  
   
 
-### getCachedByDomainAndName ###
+### getCachedByDomainAndName(domain, name, context) ###
   
 Synchronously retrieves from the in-memory cache the preference with the  
 given domain and name.  
@@ -127,7 +127,7 @@ exists.
                 exist.  
   
 
-### getCachedBySubdomainAndName ###
+### getCachedBySubdomainAndName(domain, name, context, len, prefs) ###
   
 Synchronously retrieves from the in-memory cache all preferences with the  
 given name whose domains are either the same as or subdomains of the given  
@@ -145,7 +145,7 @@ getCachedByDomainAndName, its value attribute will be undefined.
 @param prefs    The array of preferences.  
   
 
-### getCachedGlobal ###
+### getCachedGlobal(name, context) ###
   
 Synchronously retrieves from the in-memory cache the preference with no  
 domain and the given name.  
@@ -161,7 +161,7 @@ cached nor known not to exist, then null is returned.
                 exist.  
   
 
-### set ###
+### set(domain, name, value, context, callback) ###
   
 Sets a preference.  
   
@@ -173,7 +173,7 @@ Sets a preference.
                  stored.  
   
 
-### setGlobal ###
+### setGlobal(name, value, context, callback) ###
   
 Sets a preference with no domain.  
   
@@ -184,7 +184,7 @@ Sets a preference with no domain.
                  stored.  
   
 
-### removeByDomainAndName ###
+### removeByDomainAndName(domain, name, context, callback) ###
   
 Removes the preference with the given domain and name.  
   
@@ -194,7 +194,7 @@ Removes the preference with the given domain and name.
 @param callback  handleCompletion is called when the operation completes.  
   
 
-### removeBySubdomainAndName ###
+### removeBySubdomainAndName(domain, name, context, callback) ###
   
 Removes all the preferences with the given name whose domains are either  
 the same as or subdomains of the given domain.  
@@ -205,7 +205,7 @@ the same as or subdomains of the given domain.
 @param callback  handleCompletion is called when the operation completes.  
   
 
-### removeGlobal ###
+### removeGlobal(name, context, callback) ###
   
 Removes the preference with no domain and the given name.  
   
@@ -214,7 +214,7 @@ Removes the preference with no domain and the given name.
 @param callback  handleCompletion is called when the operation completes.  
   
 
-### removeByDomain ###
+### removeByDomain(domain, context, callback) ###
   
 Removes all preferences with the given domain.  
   
@@ -223,7 +223,7 @@ Removes all preferences with the given domain.
 @param callback  handleCompletion is called when the operation completes.  
   
 
-### removeBySubdomain ###
+### removeBySubdomain(domain, context, callback) ###
   
 Removes all preferences whose domains are either the same as or subdomains  
 of the given domain.  
@@ -233,7 +233,7 @@ of the given domain.
 @param callback  handleCompletion is called when the operation completes.  
   
 
-### removeByName ###
+### removeByName(name, context, callback) ###
   
 Removes all preferences with the given name regardless of domain, including  
 global preferences with the given name.  
@@ -243,7 +243,7 @@ global preferences with the given name.
 @param callback  handleCompletion is called when the operation completes.  
   
 
-### removeAllDomains ###
+### removeAllDomains(context, callback) ###
   
 Removes all non-global preferences -- in other words, all preferences that  
 have a domain.  
@@ -252,7 +252,7 @@ have a domain.
 @param callback  handleCompletion is called when the operation completes.  
   
 
-### removeAllDomainsSince ###
+### removeAllDomainsSince(since, context, callback) ###
   
 Removes all non-global preferences created after and including |since|.  
   
@@ -261,7 +261,7 @@ Removes all non-global preferences created after and including |since|.
 @param callback  handleCompletion is called when the operation completes.  
   
 
-### removeAllGlobals ###
+### removeAllGlobals(context, callback) ###
   
 Removes all global preferences -- in other words, all preferences that have  
 no domain.  
@@ -270,7 +270,7 @@ no domain.
 @param callback  handleCompletion is called when the operation completes.  
   
 
-### addObserverForName ###
+### addObserverForName(name, observer) ###
   
 Registers an observer that will be notified whenever a preference with the  
 given name is set or removed.  
@@ -287,7 +287,7 @@ be removed later to avoid leaking it.
 @param observer  The observer.  
   
 
-### removeObserverForName ###
+### removeObserverForName(name, observer) ###
   
 Unregisters an observer for the given name.  
   
@@ -296,7 +296,7 @@ Unregisters an observer for the given name.
 @param observer  The observer.  
   
 
-### extractDomain ###
+### extractDomain(str) ###
   
 Extracts and returns the domain from the given string representation of a  
 URI.  This is how the API extracts domains from URIs passed to it.  

@@ -6,15 +6,15 @@ layout: default
 
 ## Methods ##
 
-### readAsArrayBuffer ###
+### readAsArrayBuffer(filedata) ###
 
-### readAsBinaryString ###
+### readAsBinaryString(filedata) ###
 
-### readAsText ###
+### readAsText(filedata, encoding) ###
 
-### readAsDataURL ###
+### readAsDataURL(file) ###
 
-### abort ###
+### abort() ###
 
 ## Attributes ##
 

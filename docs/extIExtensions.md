@@ -9,7 +9,7 @@ Interface representing a list of all installed extensions
 
 ## Methods ##
 
-### has ###
+### has(aId) ###
   
 Determines if an extension exists with the given id.  
 @param   aId  
@@ -18,7 +18,7 @@ Determines if an extension exists with the given id.
          false otherwise.  
   
 
-### get ###
+### get(aId) ###
   
 Gets a extIExtension object for an extension.  
 @param   aId  

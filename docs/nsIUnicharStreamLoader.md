@@ -15,7 +15,7 @@ passed to the onStreamComplete() callback.
 
 ## Methods ##
 
-### init ###
+### init(aObserver) ###
   
 Initializes the unichar stream loader  
   

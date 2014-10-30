@@ -17,7 +17,7 @@ is illegal and behavior is undefined.
 
 ## Methods ##
 
-### getFromTypeAndExtension ###
+### getFromTypeAndExtension(aMIMEType, aFileExt) ###
   
 Retrieves an nsIMIMEInfo using both the extension  
 and the type of a file. The type is given preference  
@@ -26,7 +26,7 @@ can be an empty string. At least one of aMIMEType and aFileExt
 must be nonempty.  
   
 
-### getTypeFromExtension ###
+### getTypeFromExtension(aFileExt) ###
   
 Retrieves a ACString representation of the MIME type  
 associated with this file extension.  
@@ -35,7 +35,7 @@ associated with this file extension.
 @return The MIME type, if any.  
   
 
-### getTypeFromURI ###
+### getTypeFromURI(aURI) ###
   
 Retrieves a ACString representation of the MIME type  
 associated with this URI. The association is purely  
@@ -46,9 +46,9 @@ the type via server headers or byte scanning is made.
 @return The MIME type, if any.  
   
 
-### getTypeFromFile ###
+### getTypeFromFile(aFile) ###
 
-### getPrimaryExtension ###
+### getPrimaryExtension(aMIMEType, aFileExt) ###
   
 Given a Type/Extension combination, returns the default extension  
 for this type. This may be identical to the passed-in extension.  

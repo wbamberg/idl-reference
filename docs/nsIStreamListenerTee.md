@@ -10,7 +10,7 @@ and then forwarded to the real listener.
 
 ## Methods ##
 
-### init ###
+### init(listener, sink, requestObserver) ###
    
 Initalize the tee.  
   
@@ -28,7 +28,7 @@ Initalize the tee.
    the original listener (listener parameter) are privileged   
   
 
-### initAsync ###
+### initAsync(listener, eventTarget, sink, requestObserver) ###
    
 Initalize the tee like above, but with the extra parameter to make it  
 possible to copy the output asynchronously  

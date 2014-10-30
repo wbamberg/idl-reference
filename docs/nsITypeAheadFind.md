@@ -7,24 +7,24 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aDocShell) ###
 ************************** Initializer ******************************/  
 
-### find ###
+### find(aSearchString, aLinksOnly) ###
 ************************* Core functions ****************************/  
 
-### findAgain ###
+### findAgain(findBackwards, aLinksOnly) ###
 
-### getFoundRange ###
+### getFoundRange() ###
 
-### setDocShell ###
+### setDocShell(aDocShell) ###
 ************************ Helper functions ***************************/  
 
-### setSelectionModeAndRepaint ###
+### setSelectionModeAndRepaint(toggle) ###
 
-### collapseSelection ###
+### collapseSelection() ###
 
-### isRangeVisible ###
+### isRangeVisible(aRange, aMustBeInViewPort) ###
 
 ## Attributes ##
 

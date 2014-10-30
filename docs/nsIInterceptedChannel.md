@@ -12,19 +12,19 @@ which do not implement nsIChannel.
 
 ## Methods ##
 
-### resetInterception ###
+### resetInterception() ###
   
 Instruct a channel that has been intercepted to continue with the original  
 network request.  
   
 
-### synthesizeHeader ###
+### synthesizeHeader(name, value) ###
   
 Attach a header name/value pair to the forthcoming synthesized response.  
 Overwrites any existing header value.  
   
 
-### finishSynthesizedResponse ###
+### finishSynthesizedResponse() ###
   
 Instruct a channel that has been intercepted that a response has been  
 synthesized and can now be read. No further header modification is allowed  

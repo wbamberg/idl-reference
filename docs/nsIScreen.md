@@ -6,21 +6,21 @@ layout: default
 
 ## Methods ##
 
-### GetRect ###
+### GetRect(left, top, width, height) ###
   
 These report screen dimensions in (screen-specific) device pixels  
   
 
-### GetAvailRect ###
+### GetAvailRect(left, top, width, height) ###
 
-### GetRectDisplayPix ###
+### GetRectDisplayPix(left, top, width, height) ###
   
 And these report in global display pixels  
   
 
-### GetAvailRectDisplayPix ###
+### GetAvailRectDisplayPix(left, top, width, height) ###
 
-### lockMinimumBrightness ###
+### lockMinimumBrightness(brightness) ###
   
 Locks the minimum brightness of the screen, forcing it to be at  
 least as bright as a certain brightness level. Each call to this  
@@ -30,7 +30,7 @@ unlockMinimumBrightness, with the same brightness level.
 @param brightness A brightness level, one of the above constants.  
   
 
-### unlockMinimumBrightness ###
+### unlockMinimumBrightness(brightness) ###
   
 Releases a lock on the screen brightness. This must be called  
 (eventually) after a corresponding call to lockMinimumBrightness.  

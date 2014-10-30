@@ -11,13 +11,13 @@ downloading update patches.
 
 ## Methods ##
 
-### checkForBackgroundUpdates ###
+### checkForBackgroundUpdates() ###
   
 Checks for available updates in the background using the listener provided  
 by the application update service for background checks.  
   
 
-### selectUpdate ###
+### selectUpdate(updates, updateCount) ###
   
 Selects the best update to install from a list of available updates.  
 @param   updates  
@@ -26,7 +26,7 @@ Selects the best update to install from a list of available updates.
          The length of the |updates| array  
   
 
-### addDownloadListener ###
+### addDownloadListener(listener) ###
   
 Adds a listener that receives progress and state information about the  
 update that is currently being downloaded, e.g. to update a user  
@@ -37,7 +37,7 @@ interface.
          progress information as the update is downloaded.  
   
 
-### removeDownloadListener ###
+### removeDownloadListener(listener) ###
   
 Removes a listener that is receiving progress and state information  
 about the update that is currently being downloaded.  
@@ -45,12 +45,12 @@ about the update that is currently being downloaded.
          The listener object to remove.  
   
 
-### downloadUpdate ###
+### downloadUpdate(update, background) ###
   
   
   
 
-### applyOsUpdate ###
+### applyOsUpdate(update) ###
   
 Apply the OS update which has been downloaded and staged as applied.  
 @param   update   
@@ -58,13 +58,13 @@ Apply the OS update which has been downloaded and staged as applied.
 @throws  if the update object is not an OS update.  
   
 
-### getUpdatesDirectory ###
+### getUpdatesDirectory() ###
   
 Get the Active Updates directory  
 @returns An nsIFile for the active updates directory.  
   
 
-### pauseDownload ###
+### pauseDownload() ###
   
 Pauses the active update download process  
   

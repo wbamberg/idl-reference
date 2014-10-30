@@ -16,7 +16,7 @@ nsIDocumentObserver.
 
 ## Methods ##
 
-### WillCreateNode ###
+### WillCreateNode(aTag, aParent, aPosition) ###
    
 Called before the editor creates a node.  
 @param aTag      The tag name of the DOM Node to create.  
@@ -26,7 +26,7 @@ Called before the editor creates a node.
                  any number > number of current children = last child  
   
 
-### DidCreateNode ###
+### DidCreateNode(aTag, aNode, aParent, aPosition, aResult) ###
    
 Called after the editor creates a node.  
 @param aTag      The tag name of the DOM Node to create.  
@@ -38,7 +38,7 @@ Called after the editor creates a node.
 @param aResult   The result of the create node operation.  
   
 
-### WillInsertNode ###
+### WillInsertNode(aNode, aParent, aPosition) ###
    
 Called before the editor inserts a node.  
 @param aNode     The DOM Node to insert.  
@@ -48,7 +48,7 @@ Called before the editor inserts a node.
                  any number > number of current children = last child  
   
 
-### DidInsertNode ###
+### DidInsertNode(aNode, aParent, aPosition, aResult) ###
    
 Called after the editor inserts a node.  
 @param aNode     The DOM Node to insert.  
@@ -59,20 +59,20 @@ Called after the editor inserts a node.
 @param aResult   The result of the insert node operation.  
   
 
-### WillDeleteNode ###
+### WillDeleteNode(aChild) ###
    
 Called before the editor deletes a node.  
 @param aChild    The node to delete  
   
 
-### DidDeleteNode ###
+### DidDeleteNode(aChild, aResult) ###
    
 Called after the editor deletes a node.  
 @param aChild    The node to delete  
 @param aResult   The result of the delete node operation.  
   
 
-### WillSplitNode ###
+### WillSplitNode(aExistingRightNode, aOffset) ###
    
 Called before the editor splits a node.  
 @param aExistingRightNode   the node to split.  It will become the new node's next sibling.  
@@ -80,7 +80,7 @@ Called before the editor splits a node.
 @param aNewLeftNode         [OUT] the new node resulting from the split, becomes aExistingRightNode's previous sibling.  
   
 
-### DidSplitNode ###
+### DidSplitNode(aExistingRightNode, aOffset, aNewLeftNode, aResult) ###
    
 Called after the editor splits a node.  
 @param aExistingRightNode   the node to split.  It will become the new node's next sibling.  
@@ -88,7 +88,7 @@ Called after the editor splits a node.
 @param aNewLeftNode         [OUT] the new node resulting from the split, becomes aExistingRightNode's previous sibling.  
   
 
-### WillJoinNodes ###
+### WillJoinNodes(aLeftNode, aRightNode, aParent) ###
    
 Called before the editor joins 2 nodes.  
 @param aLeftNode   This node will be merged into the right node  
@@ -98,7 +98,7 @@ Called before the editor joins 2 nodes.
 @param aParent     The parent of aRightNode  
   
 
-### DidJoinNodes ###
+### DidJoinNodes(aLeftNode, aRightNode, aParent, aResult) ###
    
 Called after the editor joins 2 nodes.  
 @param aLeftNode   This node will be merged into the right node  
@@ -109,7 +109,7 @@ Called after the editor joins 2 nodes.
 @param aResult     The result of the join operation.  
   
 
-### WillInsertText ###
+### WillInsertText(aTextNode, aOffset, aString) ###
    
 Called before the editor inserts text.  
 @param aTextNode   This node getting inserted text  
@@ -117,7 +117,7 @@ Called before the editor inserts text.
 @param aString     The string that gets inserted.  
   
 
-### DidInsertText ###
+### DidInsertText(aTextNode, aOffset, aString, aResult) ###
    
 Called after the editor inserts text.  
 @param aTextNode   This node getting inserted text  
@@ -126,7 +126,7 @@ Called after the editor inserts text.
 @param aResult     The result of the insert text operation.  
   
 
-### WillDeleteText ###
+### WillDeleteText(aTextNode, aOffset, aLength) ###
    
 Called before the editor deletes text.  
 @param aTextNode   This node getting text deleted  
@@ -134,7 +134,7 @@ Called before the editor deletes text.
 @param aLength     The amount of text to delete.  
   
 
-### DidDeleteText ###
+### DidDeleteText(aTextNode, aOffset, aLength, aResult) ###
    
 Called before the editor deletes text.  
 @param aTextNode   This node getting text deleted  
@@ -143,13 +143,13 @@ Called before the editor deletes text.
 @param aResult     The result of the delete text operation.  
   
 
-### WillDeleteSelection ###
+### WillDeleteSelection(aSelection) ###
    
 Called before the editor deletes the selection.  
 @param aSelection   The selection to be deleted  
   
 
-### DidDeleteSelection ###
+### DidDeleteSelection(aSelection) ###
    
 Called after the editor deletes the selection.  
 @param aSelection   The selection, after deletion  

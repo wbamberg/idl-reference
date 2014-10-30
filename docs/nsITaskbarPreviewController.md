@@ -15,7 +15,7 @@ are required to be implemented.
 
 ## Methods ##
 
-### drawPreview ###
+### drawPreview(ctx) ###
   
 Invoked by nsITaskbarPreview when it needs to render the preview. The  
 context is attached to a surface with the controller's width and height  
@@ -26,7 +26,7 @@ Note that the context is not attached to a canvas element.
 @param ctx Canvas drawing context  
   
 
-### drawThumbnail ###
+### drawThumbnail(ctx, width, height) ###
   
 Invoked by the taskbar preview when it needs to draw the thumbnail in the  
 taskbar's application preview window.  
@@ -41,12 +41,12 @@ Also note that the context is not attached to a canvas element.
 @param height The height of the surface backing the drawing context  
   
 
-### onClose ###
+### onClose() ###
   
 Invoked when the user presses the close button on the tab preview.  
   
 
-### onActivate ###
+### onActivate() ###
   
 Invoked when the user clicks on the tab preview.  
   
@@ -54,7 +54,7 @@ Invoked when the user clicks on the tab preview.
         be activated, false if activation is not accepted.  
   
 
-### onClick ###
+### onClick(button) ###
   
 Invoked when one of the buttons on the window preview's toolbar is pressed.  
   

@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### getMimeTypeFromExtension ###
+### getMimeTypeFromExtension(extension) ###
 MIME registry methods ***/  
 
-### getAppForMimeType ###
+### getAppForMimeType(mimeType) ###
 
-### getDescriptionForMimeType ###
+### getDescriptionForMimeType(mimeType) ###
 
-### showURI ###
+### showURI(uri) ###
 Misc. methods ***/  
 
-### showURIForInput ###
+### showURIForInput(uri) ###

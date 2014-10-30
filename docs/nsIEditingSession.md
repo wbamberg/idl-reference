@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### makeWindowEditable ###
+### makeWindowEditable(window, aEditorType, doAfterUriLoad, aMakeWholeDocumentEditable, aInteractive) ###
   
  Make this window editable  
  @param aWindow nsIDOMWindow, the window the embedder needs to make editable  
@@ -18,7 +18,7 @@ layout: default
  @param aInteractive if PR_FALSE turn off scripting and plugins  
   
 
-### windowIsEditable ###
+### windowIsEditable(window) ###
   
  Test whether a specific window has had its editable flag set; it may have an editor  
  now, or will get one after the uri load.  
@@ -27,41 +27,41 @@ layout: default
  for this content.  
   
 
-### getEditorForWindow ###
+### getEditorForWindow(window) ###
   
  Get the editor for this window. May return null  
   
 
-### setupEditorOnWindow ###
+### setupEditorOnWindow(window) ###
    
  Setup editor and related support objects  
   
 
-### tearDownEditorOnWindow ###
+### tearDownEditorOnWindow(window) ###
    
   Destroy editor and related support objects  
   
 
-### setEditorOnControllers ###
+### setEditorOnControllers(aWindow, aEditor) ###
 
-### disableJSAndPlugins ###
+### disableJSAndPlugins(aWindow) ###
   
 Disable scripts and plugins in aWindow.  
   
 
-### restoreJSAndPlugins ###
+### restoreJSAndPlugins(aWindow) ###
   
 Restore JS and plugins (enable/disable them) according to the state they  
 were before the last call to disableJSAndPlugins.  
   
 
-### detachFromWindow ###
+### detachFromWindow(aWindow) ###
   
 Removes all the editor's controllers/listeners etc and makes the window  
 uneditable.  
   
 
-### reattachToWindow ###
+### reattachToWindow(aWindow) ###
   
 Undos detachFromWindow(), reattaches this editing session/editor  
 to the window.  

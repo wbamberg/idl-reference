@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### switchTask ###
+### switchTask() ###
   
 This method displays a UI to switch to (or launch) a different task  
   
 
-### createShortcut ###
+### createShortcut(aTitle, aURI, aIconData, aIntent) ###
   
 This method creates a shortcut on a desktop or homescreen that opens in  
 the our application.  

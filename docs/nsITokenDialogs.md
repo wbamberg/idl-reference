@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### ChooseToken ###
+### ChooseToken(ctx, tokenNameList, count, tokenName, canceled) ###
 
-### displayProtectedAuth ###
+### displayProtectedAuth(ctx, runnable) ###
   
 displayProtectedAuth - displays notification dialog to the user   
 that he is expected to authenticate to the token using its  

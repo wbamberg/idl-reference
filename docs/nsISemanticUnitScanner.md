@@ -10,7 +10,7 @@ text into meaningful semantic units (e.g. words).
 
 ## Methods ##
 
-### start ###
+### start(characterSet) ###
   
 start()  
   
@@ -22,7 +22,7 @@ used to determine the language(s) of the processed text.
                     encoded in (can be NULL)  
   
 
-### next ###
+### next(text, length, pos, isLastBuffer, begin, end) ###
   
 next()  
 Get the begin / end offset of the next unit in the current text  

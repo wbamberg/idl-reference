@@ -9,7 +9,7 @@ nsIWebBrowserChrome3 is an extension to nsIWebBrowserChrome2.
 
 ## Methods ##
 
-### onBeforeLinkTraversal ###
+### onBeforeLinkTraversal(originalTarget, linkURI, linkNode, isAppTab) ###
   
 Determines the appropriate target for a link.  
   
@@ -25,7 +25,7 @@ Determines the appropriate target for a link.
          Otherwise returns originalTarget.  
   
 
-### shouldLoadURI ###
+### shouldLoadURI(aDocShell, aURI, aReferrer) ###
   
 Determines whether a load should continue.  
   

@@ -12,7 +12,7 @@ progress indicator is available to the entire application.
 
 ## Methods ##
 
-### activateApplication ###
+### activateApplication(aIgnoreOtherApplications) ###
   
 Activate the application. This should be used by an application to  
 activate itself when a dock menu is selected as selection of a dock menu  

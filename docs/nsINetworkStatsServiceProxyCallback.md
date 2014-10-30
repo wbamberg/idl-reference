@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### notify ###
+### notify(aResult, aMessage) ###

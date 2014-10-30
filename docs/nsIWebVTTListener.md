@@ -9,14 +9,14 @@ Listener for a JS WebVTT parser (vtt.js).
 
 ## Methods ##
 
-### onCue ###
+### onCue(cue) ###
   
 Is called when the WebVTTParser successfully parses a WebVTT cue.  
   
 @param cue An object representing the data of a parsed WebVTT cue.  
   
 
-### onRegion ###
+### onRegion(region) ###
   
 Is called when the WebVTT parser successfully parses a WebVTT region.  
   
@@ -24,7 +24,7 @@ Is called when the WebVTT parser successfully parses a WebVTT region.
               WebVTT region.  
   
 
-### onParsingError ###
+### onParsingError(errorCode) ###
   
 Is called when the WebVTT parser encounters a parsing error.  
   

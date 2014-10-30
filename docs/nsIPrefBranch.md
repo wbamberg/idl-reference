@@ -21,7 +21,7 @@ and "browser.startup.homepage_override" can be accessed by simply passing
 
 ## Methods ##
 
-### getPrefType ###
+### getPrefType(aPrefName) ###
   
 Called to determine the type of a specific preference.  
   
@@ -31,7 +31,7 @@ Called to determine the type of a specific preference.
                  value will be PREF_STRING, PREF_INT, or PREF_BOOL.  
   
 
-### getBoolPref ###
+### getBoolPref(aPrefName) ###
   
 Called to get the state of an individual boolean preference.  
   
@@ -42,7 +42,7 @@ Called to get the state of an individual boolean preference.
 @see setBoolPref  
   
 
-### setBoolPref ###
+### setBoolPref(aPrefName, aValue) ###
   
 Called to set the state of an individual boolean preference.  
   
@@ -55,7 +55,7 @@ value of a type other than boolean.
 @see getBoolPref  
   
 
-### getFloatPref ###
+### getFloatPref(aPrefName) ###
   
 Called to get the state of an individual floating-point preference.  
 "Floating point" preferences are really string preferences that  
@@ -68,7 +68,7 @@ are converted to floating point numbers.
 @see setCharPref  
   
 
-### getCharPref ###
+### getCharPref(aPrefName) ###
   
 Called to get the state of an individual string preference.  
   
@@ -79,7 +79,7 @@ Called to get the state of an individual string preference.
 @see setCharPref  
   
 
-### setCharPref ###
+### setCharPref(aPrefName, aValue) ###
   
 Called to set the state of an individual string preference.  
   
@@ -92,7 +92,7 @@ value of a type other than string.
 @see getCharPref  
   
 
-### getIntPref ###
+### getIntPref(aPrefName) ###
   
 Called to get the state of an individual integer preference.  
   
@@ -103,7 +103,7 @@ Called to get the state of an individual integer preference.
 @see setIntPref  
   
 
-### setIntPref ###
+### setIntPref(aPrefName, aValue) ###
   
 Called to set the state of an individual integer preference.  
   
@@ -116,7 +116,7 @@ value of a type other than integer.
 @see getIntPref  
   
 
-### getComplexValue ###
+### getComplexValue(aPrefName, aType, aValue) ###
   
 Called to get the state of an individual complex preference. A complex  
 preference is a preference which represents an XPCOM object that can not  
@@ -136,7 +136,7 @@ be easily represented using a standard boolean, integer or string value.
 @see setComplexValue  
   
 
-### setComplexValue ###
+### setComplexValue(aPrefName, aType, aValue) ###
   
 Called to set the state of an individual complex preference. A complex  
 preference is a preference which represents an XPCOM object that can not  
@@ -156,7 +156,7 @@ be easily represented using a standard boolean, integer or string value.
 @see getComplexValue  
   
 
-### clearUserPref ###
+### clearUserPref(aPrefName) ###
   
 Called to clear a user set value from a specific preference. This will, in  
 effect, reset the value to the default value. If no default value exists  
@@ -168,7 +168,7 @@ the preference will cease to exist.
 This method does nothing if this object is a default branch.  
   
 
-### lockPref ###
+### lockPref(aPrefName) ###
   
 Called to lock a specific preference. Locking a preference will cause the  
 preference service to always return the default value regardless of  
@@ -185,7 +185,7 @@ effect, always operates on the default branch.
 @see unlockPref  
   
 
-### prefHasUserValue ###
+### prefHasUserValue(aPrefName) ###
   
 Called to check if a specific preference has a user value associated to  
 it.  
@@ -207,7 +207,7 @@ the preference will not be saved to a file by nsIPrefService.savePrefFile.
                  false The preference only has a default value.  
   
 
-### prefIsLocked ###
+### prefIsLocked(aPrefName) ###
   
 Called to check if a specific preference is locked. If a preference is  
 locked calling its Get method will always return the default value.  
@@ -225,7 +225,7 @@ effect, always operates on the default branch.
 @see unlockPref  
   
 
-### unlockPref ###
+### unlockPref(aPrefName) ###
   
 Called to unlock a specific preference. Unlocking a previously locked   
 preference allows the preference service to once again return the user set  
@@ -242,7 +242,7 @@ effect, always operates on the default branch.
 @see lockPref  
   
 
-### deleteBranch ###
+### deleteBranch(aStartingAt) ###
   
 Called to remove all of the preferences referenced by this branch.  
   
@@ -257,7 +257,7 @@ effect, always operates on both.
 @throws Error The preference(s) do not exist or an error occurred.  
   
 
-### getChildList ###
+### getChildList(aStartingAt, aCount, aChildArray) ###
   
 Returns an array of strings representing the child preferences of the  
 root of this branch.  
@@ -275,7 +275,7 @@ effect, always operates on both.
 @throws Error The preference(s) do not exist or an error occurred.  
   
 
-### resetBranch ###
+### resetBranch(aStartingAt) ###
   
 Called to reset all of the preferences referenced by this branch to their  
 default values.  
@@ -291,7 +291,7 @@ effect, always operates on the user branch.
 @throws Error The preference(s) do not exist or an error occurred.  
   
 
-### addObserver ###
+### addObserver(aDomain, aObserver, aHoldWeak) ###
   
 Add a preference change observer. On preference changes, the following  
 arguments will be passed to the nsIObserver.observe() method:  
@@ -353,7 +353,7 @@ please use an nsITimer.
 @see removeObserver  
   
 
-### removeObserver ###
+### removeObserver(aDomain, aObserver) ###
   
 Remove a preference change observer.  
   

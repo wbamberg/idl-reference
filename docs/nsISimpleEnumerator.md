@@ -14,7 +14,7 @@ no way to "reset" an enumerator, once you obtain one.
 
 ## Methods ##
 
-### hasMoreElements ###
+### hasMoreElements() ###
   
 Called to determine whether or not the enumerator has  
 any elements that can be returned via getNext(). This method  
@@ -28,7 +28,7 @@ internal state of enumerator.
         false if there are no more elements in the enumerator.  
   
 
-### getNext ###
+### getNext() ###
   
 Called to retrieve the next element in the enumerator. The "next"  
 element is the first element upon the first call. Must be  

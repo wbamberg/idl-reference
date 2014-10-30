@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### showPopup ###
+### showPopup(alignment, target, anchor) ###
 
-### hidePopup ###
+### hidePopup() ###
 
 ## Attributes ##
 

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initWithCFURL ###
+### initWithCFURL(aCFURL) ###
   
 initWithCFURL  
   
@@ -19,7 +19,7 @@ NOTE: If the path of the CFURL is /a/b/c, at least a/b must exist beforehand.
   
   
 
-### initWithFSRef ###
+### initWithFSRef(aFSRef) ###
   
 initWithFSRef  
   
@@ -31,7 +31,7 @@ NOTE: Supported only for XP_MACOSX
   
   
 
-### getCFURL ###
+### getCFURL() ###
   
 getCFURL  
   
@@ -49,7 +49,7 @@ NOTE: Supported only for XP_MACOSX
    
   
 
-### getFSRef ###
+### getFSRef() ###
   
 getFSRef  
   
@@ -66,7 +66,7 @@ NOTE: Supported only for XP_MACOSX
    
   
 
-### getFSSpec ###
+### getFSSpec() ###
   
 getFSSpec  
   
@@ -81,7 +81,7 @@ the unresolved alias file.
    
   
 
-### launchWithDoc ###
+### launchWithDoc(aDocToLoad, aLaunchInBackground) ###
   
 launchWithDoc  
   
@@ -92,7 +92,7 @@ Launch the application that this file points to with a document.
   
   
 
-### openDocWithApp ###
+### openDocWithApp(aAppToOpenWith, aLaunchInBackground) ###
   
 openDocWithApp  
   
@@ -105,7 +105,7 @@ Open the document that this file points to with the given application.
   
   
 
-### isPackage ###
+### isPackage() ###
   
 isPackage  
   

@@ -6,15 +6,15 @@ layout: default
 
 ## Methods ##
 
-### reload ###
+### reload(forceget) ###
 
-### replace ###
+### replace(url) ###
 
-### assign ###
+### assign(url) ###
 
-### toString ###
+### toString() ###
 
-### valueOf ###
+### valueOf() ###
 
 ## Attributes ##
 

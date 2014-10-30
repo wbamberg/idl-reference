@@ -9,7 +9,7 @@ Scriptable storage for floating point numbers
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

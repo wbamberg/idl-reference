@@ -9,7 +9,7 @@ Scriptable storage for 16-bit integers
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

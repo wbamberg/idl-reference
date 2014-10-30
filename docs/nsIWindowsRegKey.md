@@ -13,13 +13,13 @@ This interface is highly Win32 specific.
 
 ## Methods ##
 
-### close ###
+### close() ###
   
 This method closes the key.  If the key is already closed, then this  
 method does nothing.  
   
 
-### open ###
+### open(rootKey, relPath, mode) ###
   
 This method opens an existing key.  This method fails if the key  
 does not exist.  
@@ -37,7 +37,7 @@ Windows, that usage should probably be avoided in favor of openChild.
        above.  
   
 
-### create ###
+### create(rootKey, relPath, mode) ###
   
 This method opens an existing key or creates a new key.  
   
@@ -54,7 +54,7 @@ Windows, that usage should probably be avoided in favor of createChild.
        above.  
   
 
-### openChild ###
+### openChild(relPath, mode) ###
   
 This method opens a subkey relative to this key.  This method fails if the  
 key does not exist.  
@@ -62,14 +62,14 @@ key does not exist.
 @return nsIWindowsRegKey for the newly opened subkey.  
   
 
-### createChild ###
+### createChild(relPath, mode) ###
   
 This method opens or creates a subkey relative to this key.  
   
 @return nsIWindowsRegKey for the newly opened or created subkey.  
   
 
-### getChildName ###
+### getChildName(index) ###
   
 This method returns the name of the n'th child key.  
   
@@ -77,7 +77,7 @@ This method returns the name of the n'th child key.
        The index of the requested child key.  
   
 
-### hasChild ###
+### hasChild(name) ###
   
 This method checks to see if the key has a child by the given name.  
   
@@ -85,7 +85,7 @@ This method checks to see if the key has a child by the given name.
        The name of the requested child key.  
   
 
-### getValueName ###
+### getValueName(index) ###
   
 This method returns the name of the n'th value under this key.  
   
@@ -93,7 +93,7 @@ This method returns the name of the n'th value under this key.
        The index of the requested value.  
   
 
-### hasValue ###
+### hasValue(name) ###
   
 This method checks to see if the key has a value by the given name.  
   
@@ -101,7 +101,7 @@ This method checks to see if the key has a value by the given name.
        The name of the requested value.  
   
 
-### removeChild ###
+### removeChild(relPath) ###
   
 This method removes a child key and all of its values.  This method will  
 fail if the key has any children of its own.   
@@ -110,7 +110,7 @@ fail if the key has any children of its own.
        The relative path from this key to the key to be removed.  
   
 
-### removeValue ###
+### removeValue(name) ###
   
 This method removes the value with the given name.  
   
@@ -118,7 +118,7 @@ This method removes the value with the given name.
        The name of the value to be removed.  
   
 
-### getValueType ###
+### getValueType(name) ###
   
 This method returns the type of the value with the given name.  The return  
 value is one of the "TYPE_" constants defined above.  
@@ -127,7 +127,7 @@ value is one of the "TYPE_" constants defined above.
        The name of the value to query.  
   
 
-### readStringValue ###
+### readStringValue(name) ###
   
 This method reads the string contents of the named value as a Unicode  
 string.  
@@ -137,7 +137,7 @@ string.
        string to request the key's default value.  
   
 
-### readIntValue ###
+### readIntValue(name) ###
   
 This method reads the integer contents of the named value.  
   
@@ -145,7 +145,7 @@ This method reads the integer contents of the named value.
        The name of the value to query.  
   
 
-### readInt64Value ###
+### readInt64Value(name) ###
   
 This method reads the 64-bit integer contents of the named value.  
   
@@ -153,7 +153,7 @@ This method reads the 64-bit integer contents of the named value.
        The name of the value to query.  
   
 
-### readBinaryValue ###
+### readBinaryValue(name) ###
   
 This method reads the binary contents of the named value under this key.  
   
@@ -165,7 +165,7 @@ treated as an ISO-Latin-1 character string, which it is not).
        The name of the value to query.  
   
 
-### writeStringValue ###
+### writeStringValue(name, data) ###
   
 This method writes the unicode string contents of the named value.  The  
 value will be created if it does not already exist.  
@@ -177,7 +177,7 @@ value will be created if it does not already exist.
        The data for the value to modify.  
   
 
-### writeIntValue ###
+### writeIntValue(name, data) ###
   
 This method writes the integer contents of the named value.  The value  
 will be created if it does not already exist.  
@@ -188,7 +188,7 @@ will be created if it does not already exist.
        The data for the value to modify.  
   
 
-### writeInt64Value ###
+### writeInt64Value(name, data) ###
   
 This method writes the 64-bit integer contents of the named value.  The  
 value will be created if it does not already exist.  
@@ -199,7 +199,7 @@ value will be created if it does not already exist.
        The data for the value to modify.  
   
 
-### writeBinaryValue ###
+### writeBinaryValue(name, data) ###
   
 This method writes the binary contents of the named value.  The value will  
 be created if it does not already exist.  
@@ -217,7 +217,7 @@ occur.
        The data for the value to modify.  
   
 
-### startWatching ###
+### startWatching(recurse) ###
   
 This method starts watching the key to see if any of its values have  
 changed.  The key must have been opened with mode including ACCESS_NOTIFY.  
@@ -228,19 +228,19 @@ watched.  Otherwise, only this key is watched.
        Indicates whether or not to also watch child keys.  
   
 
-### stopWatching ###
+### stopWatching() ###
   
 This method stops any watching of the key initiated by a call to  
 startWatching.  This method does nothing if the key is not being watched.  
   
 
-### isWatching ###
+### isWatching() ###
   
 This method returns true if the key is being watched for changes (i.e.,  
 if startWatching() was called).  
   
 
-### hasChanged ###
+### hasChanged() ###
   
 This method returns true if the key has changed and false otherwise.  
 This method will always return false if startWatching was not called.  

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### showPrintDialog ###
+### showPrintDialog(parent, webBrowserPrint, printSettings) ###
   
  This service enables embedders to implement their own Print and Progress Dialogs.  
  Each platform has a "base" or "basckstop" implementation of the service. The   
@@ -88,7 +88,7 @@ layout: default
   
   
 
-### showProgress ###
+### showProgress(parent, webBrowserPrint, printSettings, openDialogObserver, isForPrinting, webProgressListener, printProgressParams, notifyOnOpen) ###
   
  Shows the print progress dialog  
   
@@ -105,7 +105,7 @@ layout: default
                        For Print Preview Progress there is intermediate progress  
   
 
-### showPageSetup ###
+### showPageSetup(parent, printSettings, aObs) ###
   
  Shows the print progress dialog  
   
@@ -116,7 +116,7 @@ layout: default
                For example, some platforms may implement an "Apply" button (not required)  
   
 
-### showPrinterProperties ###
+### showPrinterProperties(parent, printerName, printSettings) ###
   
  Sometimes platforms need to bring up a special properties dialog for showing  
  print specific properties. Although the PrintSettings has a place to set the   

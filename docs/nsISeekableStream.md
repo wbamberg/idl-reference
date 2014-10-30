@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### seek ###
+### seek(whence, offset) ###
   
  seek  
   
@@ -25,7 +25,7 @@ layout: default
   @throws NS_BASE_STREAM_CLOSED if called on a closed stream.  
   
 
-### tell ###
+### tell() ###
   
  tell  
   
@@ -35,7 +35,7 @@ layout: default
   @throws NS_BASE_STREAM_CLOSED if called on a closed stream.  
   
 
-### setEOF ###
+### setEOF() ###
   
  setEOF  
   

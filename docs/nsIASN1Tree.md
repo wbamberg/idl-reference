@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### loadASN1Structure ###
+### loadASN1Structure(asn1Object) ###
 
-### getDisplayData ###
+### getDisplayData(index) ###

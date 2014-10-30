@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### send ###
+### send(serviceId, parameters, request) ###
 
-### retrieve ###
+### retrieve(id, request) ###
 
-### sendReadReport ###
+### sendReadReport(messageID, toAddress, iccId) ###
 
 ## Attributes ##
 

@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### SetCurrentCharset ###
+### SetCurrentCharset(charset) ###
 
-### SetCurrentMailCharset ###
+### SetCurrentMailCharset(charset) ###
 
-### SetCurrentComposerCharset ###
+### SetCurrentComposerCharset(charset) ###

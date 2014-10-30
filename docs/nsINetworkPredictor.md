@@ -12,7 +12,7 @@ nsINetworkPredictor - learn about pages users visit, and allow us to take
 
 ## Methods ##
 
-### predict ###
+### predict(targetURI, sourceURI, reason, loadContext, verifier) ###
   
 Start taking predictive actions  
   
@@ -41,7 +41,7 @@ asked to take actions.
   normal operation.  
   
 
-### learn ###
+### learn(targetURI, sourceURI, reason, loadContext) ###
   
 Add to our compendium of knowledge  
   
@@ -65,7 +65,7 @@ smarter next time we predict something.
   learning about.  
   
 
-### reset ###
+### reset() ###
   
 Clear out all our learned knowledge  
   
@@ -73,7 +73,7 @@ This removes everything from our database so that any predictions begun
 after this completes will start from a blank slate.  
   
 
-### prepareForDnsTest ###
+### prepareForDnsTest(timestamp, uri) ###
   
 @deprecated THIS API IS FOR TESTING ONLY. IF YOU DON'T KNOW WHAT IT DOES,  
 DON'T USE IT  

@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### onresult ###
+### onresult(requestId, result) ###

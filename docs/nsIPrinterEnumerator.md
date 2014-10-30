@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initPrintSettingsFromPrinter ###
+### initPrintSettingsFromPrinter(aPrinterName, aPrintSettings) ###
   
 Initializes certain settings from the native printer into the PrintSettings  
 These settings include, but are not limited to:  
@@ -15,7 +15,7 @@ These settings include, but are not limited to:
   Number of Copies  
   
 
-### displayPropertiesDlg ###
+### displayPropertiesDlg(aPrinter, aPrintSettings) ###
 
 ## Attributes ##
 

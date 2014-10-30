@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### addWindow ###
+### addWindow(aWindow, aChrome) ###
  A window has been created. Add it to our list.  
 @param aWindow the window to add  
 @param aChrome the corresponding chrome window. The DOM window  
@@ -16,12 +16,12 @@ method getChromeForWindow. If null, any extant mapping
 will be cleared.  
   
 
-### removeWindow ###
+### removeWindow(aWindow) ###
  A window has been closed. Remove it from our list.  
 @param aWindow the window to remove  
   
 
-### openWindow2 ###
+### openWindow2(aParent, aUrl, aName, aFeatures, aCalledFromScript, aDialog, aNavigate, aOpeningTab, aArgs) ###
  Like the public interface's open(), but can handle openDialog-style  
 arguments and calls which shouldn't result in us navigating the window.  
   
@@ -53,7 +53,7 @@ window to the default charset of the document in the calling window
 aParent).  This is not guaranteed, however.  
   
 
-### findItemWithName ###
+### findItemWithName(aName, aRequestor, aOriginalRequestor) ###
   
 Find a named docshell tree item amongst all windows registered  
 with the window watcher.  This may be a subframe in some window,  

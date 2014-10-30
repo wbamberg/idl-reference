@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### dispatch ###
+### dispatch(event, flags) ###
   
 Dispatch an event to this event target.  This function may be called from  
 any thread, and it may be called re-entrantly.  
@@ -24,7 +24,7 @@ any thread, and it may be called re-entrantly.
 events, so this event would never run and has not been dispatched.   
   
 
-### isOnCurrentThread ###
+### isOnCurrentThread() ###
   
 Check to see if this event target is associated with the current thread.  
   

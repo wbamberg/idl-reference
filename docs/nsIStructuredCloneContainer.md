@@ -19,26 +19,26 @@ getDataAsBase64.
 
 ## Methods ##
 
-### initFromJSVal ###
+### initFromJSVal(aData) ###
   
 Initialize this structured clone container so it contains a clone of the  
 given jsval.  
   
 
-### initFromBase64 ###
+### initFromBase64(aData, aFormatVersion) ###
   
 Initialize this structured clone container from a base-64-encoded byte  
 stream, stored in aData.  aFormatVersion should be the version of the  
 structured clone algorithm which was used to generate aData.  
   
 
-### deserializeToVariant ###
+### deserializeToVariant() ###
   
 Deserialize the object this container holds, returning it wrapped as  
 an nsIVariant.  
   
 
-### getDataAsBase64 ###
+### getDataAsBase64() ###
   
 Get this structured clone container's data as a base-64-encoded string.  
   

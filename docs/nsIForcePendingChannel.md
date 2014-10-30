@@ -10,7 +10,7 @@ behavior for the channel's IsPending(), forcing 'true' to be returned.
 
 ## Methods ##
 
-### forcePending ###
+### forcePending(aForcePending) ###
   
 forcePending(true) overrides the normal behavior for the   
 channel's IsPending(), forcing 'true' to be returned. A call to  

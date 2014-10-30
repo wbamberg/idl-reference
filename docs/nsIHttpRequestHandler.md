@@ -17,7 +17,7 @@ handler's job to use that data as it sees fit to make the desired response.
 
 ## Methods ##
 
-### handle ###
+### handle(request, response) ###
   
 Processes an HTTP request and initializes the passed-in response to reflect  
 the correct HTTP response.  

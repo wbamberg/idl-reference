@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### hasMore ###
+### hasMore() ###
 
-### getNext ###
+### getNext() ###

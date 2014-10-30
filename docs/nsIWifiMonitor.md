@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### startWatching ###
+### startWatching(aListener) ###
 
-### stopWatching ###
+### stopWatching(aListener) ###

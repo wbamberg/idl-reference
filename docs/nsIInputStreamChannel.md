@@ -12,7 +12,7 @@ The input stream channel serves as a data pump for an input stream.
 
 ## Methods ##
 
-### setURI ###
+### setURI(aURI) ###
   
 Sets the URI for this channel.  This must be called before the  
 channel is opened, and it may only be called once.  

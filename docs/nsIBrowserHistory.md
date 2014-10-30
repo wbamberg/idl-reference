@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### removePage ###
+### removePage(aURI) ###
   
 Removes a page from global history.  
   
@@ -15,7 +15,7 @@ Removes a page from global history.
       operation.  
   
 
-### removePages ###
+### removePages(aURIs, aLength) ###
   
 Removes a list of pages from global history.  
   
@@ -27,7 +27,7 @@ Removes a list of pages from global history.
 @note the removal happens in a batch.  
   
 
-### removePagesFromHost ###
+### removePagesFromHost(aHost, aEntireDomain) ###
   
 Removes all global history information about pages for a given host.  
   
@@ -45,7 +45,7 @@ Removes all global history information about pages for a given host.
 @note The removal happens in a batch.  
   
 
-### removePagesByTimeframe ###
+### removePagesByTimeframe(aBeginTime, aEndTime) ###
   
 Removes all pages for a given timeframe.  
 Limits are included: aBeginTime <= timeframe <= aEndTime  
@@ -58,7 +58,7 @@ Limits are included: aBeginTime <= timeframe <= aEndTime
 @note The removal happens in a batch.  
   
 
-### removeVisitsByTimeframe ###
+### removeVisitsByTimeframe(aBeginTime, aEndTime) ###
   
 Removes all visits in a given timeframe.  
 Limits are included: aBeginTime <= timeframe <= aEndTime.  
@@ -72,7 +72,7 @@ Any pages that becomes unvisited as a result will also be deleted.
 @note The removal happens in a batch.  
   
 
-### removeAllPages ###
+### removeAllPages() ###
   
 Removes all existing pages from global history.  
 Visits are removed synchronously, but pages are expired asynchronously  

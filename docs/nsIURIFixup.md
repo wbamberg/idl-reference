@@ -9,7 +9,7 @@ Interface implemented by objects capable of fixing up strings into URIs
 
 ## Methods ##
 
-### createExposableURI ###
+### createExposableURI(aURI) ###
   
 Converts an internal URI (e.g. a wyciwyg URI) into one which we can  
 expose to the user, for example on the URL bar.  
@@ -21,7 +21,7 @@ expose to the user, for example on the URL bar.
         for the URI scheme.  
   
 
-### createFixupURI ###
+### createFixupURI(aURIText, aFixupFlags, aPostData) ###
   
 Converts the specified string into a URI, first attempting  
 to correct any errors in the syntax or other vagaries. Returns  
@@ -33,7 +33,7 @@ a wellformed URI or nullptr if it can't.
                    URI (see nsISearchSubmission).  
   
 
-### getFixupURIInfo ###
+### getFixupURIInfo(aURIText, aFixupFlags, aPostData) ###
   
 Same as createFixupURI, but returns information about what it corrected  
 (e.g. whether we could rescue the URI or "just" generated a keyword  
@@ -45,7 +45,7 @@ search URI instead).
                    URI (see nsISearchSubmission).  
   
 
-### keywordToURI ###
+### keywordToURI(aKeyword, aPostData) ###
   
 Converts the specified keyword string into a URI.  Note that it's the  
 caller's responsibility to check whether keywords are enabled and  

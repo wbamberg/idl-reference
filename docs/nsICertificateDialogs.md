@@ -9,7 +9,7 @@ Functions that implement user interface dialogs to manage certificates.
 
 ## Methods ##
 
-### confirmDownloadCACert ###
+### confirmDownloadCACert(ctx, cert, trust) ###
   
  UI shown when a user is asked to download a new CA cert.  
  Provides user with ability to choose trust settings for the cert.  
@@ -23,7 +23,7 @@ Functions that implement user interface dialogs to manage certificates.
  @return true if the user allows to import the certificate.  
   
 
-### notifyCACertExists ###
+### notifyCACertExists(ctx) ###
   
  UI shown when a web site has delivered a CA certificate to  
  be imported, but the certificate is already contained in the  
@@ -32,7 +32,7 @@ Functions that implement user interface dialogs to manage certificates.
  @param ctx A user interface context.  
   
 
-### setPKCS12FilePassword ###
+### setPKCS12FilePassword(ctx, password) ###
   
  UI shown when a user's personal certificate is going to be  
  exported to a backup file.  
@@ -48,7 +48,7 @@ Functions that implement user interface dialogs to manage certificates.
  @return false if the user requests to cancel.  
   
 
-### getPKCS12FilePassword ###
+### getPKCS12FilePassword(ctx, password) ###
   
  UI shown when a user is about to restore a personal  
  certificate from a backup file.  
@@ -61,7 +61,7 @@ Functions that implement user interface dialogs to manage certificates.
  @return false if the user requests to cancel.  
   
 
-### viewCert ###
+### viewCert(ctx, cert) ###
   
  UI shown when a certificate needs to be shown to the user.  
  The implementation should try to display as many attributes  

@@ -9,46 +9,46 @@ Simplified graphics interface for JS rendering.
 
 ## Methods ##
 
-### SetPrintOptions ###
+### SetPrintOptions(aType, aTurnOnOff) ###
   
 Set PrintOptions   
   
 
-### GetPrintOptions ###
+### GetPrintOptions(aType) ###
   
 Get PrintOptions   
   
 
-### GetPrintOptionsBits ###
+### GetPrintOptionsBits() ###
   
 Set PrintOptions Bit field  
   
 
-### GetEffectivePageSize ###
+### GetEffectivePageSize(aWidth, aHeight) ###
   
 Get the page size in twips, considering the  
 orientation (portrait or landscape).  
   
 
-### clone ###
+### clone() ###
   
 Makes a new copy  
   
 
-### assign ###
+### assign(aPS) ###
   
 Assigns the internal values from the "in" arg to the current object  
   
 
-### SetMarginInTwips ###
+### SetMarginInTwips(aMargin) ###
 
-### SetEdgeInTwips ###
+### SetEdgeInTwips(aEdge) ###
 
-### GetMarginInTwips ###
+### GetMarginInTwips(aMargin) ###
 
-### GetEdgeInTwips ###
+### GetEdgeInTwips(aEdge) ###
 
-### SetupSilentPrinting ###
+### SetupSilentPrinting() ###
   
 We call this function so that anything that requires a run of the event loop  
 can do so safely. The print dialog runs the event loop but in silent printing  
@@ -58,7 +58,7 @@ Either this or ShowPrintDialog (but not both) MUST be called by the print engine
 before printing, otherwise printing can fail on some platforms.  
   
 
-### SetUnwriteableMarginInTwips ###
+### SetUnwriteableMarginInTwips(aEdge) ###
   
 Sets/Gets the "unwriteable margin" for the page format.  This defines  
 the boundary from which we'll measure the EdgeInTwips and MarginInTwips   
@@ -69,9 +69,9 @@ negative margin values by falling back on the system default for
 that margin.  
   
 
-### GetUnwriteableMarginInTwips ###
+### GetUnwriteableMarginInTwips(aEdge) ###
 
-### GetPageRanges ###
+### GetPageRanges(aPages) ###
   
 Get more accurate print ranges from the superior interval   
 (startPageRange, endPageRange). The aPages array is populated with a   

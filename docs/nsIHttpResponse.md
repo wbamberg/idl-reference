@@ -9,7 +9,7 @@ Represents an HTTP response, as described in RFC 2616, section 6.
 
 ## Methods ##
 
-### setStatusLine ###
+### setStatusLine(httpVersion, statusCode, description) ###
   
 Sets the status line for this.  If this method is never called on this, the  
 status line defaults to "HTTP/", followed by the server's default HTTP  
@@ -32,7 +32,7 @@ version (e.g. "1.1"), followed by " 200 OK".
   this  
   
 
-### setHeader ###
+### setHeader(name, value, merge) ###
   
 Sets the specified header in this.  
   
@@ -57,7 +57,7 @@ Sets the specified header in this.
   this  
   
 
-### write ###
+### write(data) ###
   
 Writes a string to the response's output stream.  This method is merely a  
 convenient shorthand for writing the same data to bodyOutputStream  
@@ -69,7 +69,7 @@ directly.
   if called after this response has been fully constructed  
   
 
-### processAsync ###
+### processAsync() ###
   
 Signals that this response is being constructed asynchronously.  Requests  
 are typically completely constructed during nsIHttpRequestHandler.handle;  
@@ -88,7 +88,7 @@ finish() is called.
   if seizePower() has been called on this  
   
 
-### seizePower ###
+### seizePower() ###
   
 Seizes complete control of this response (and its connection) from the  
 server, allowing raw and unfettered access to data being sent in the HTTP  
@@ -111,7 +111,7 @@ is not enough to simply call close() on bodyOutputStream.
   if finish() has been called on this  
   
 
-### finish ###
+### finish() ###
   
 Signals that construction of this response is complete and that it may be  
 sent over the network to the client, or if seizePower() has been called  

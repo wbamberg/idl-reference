@@ -10,7 +10,7 @@ All reads access the current state of the preference.
 
 ## Methods ##
 
-### reset ###
+### reset() ###
   
 Resets a preference back to its default values.  
   

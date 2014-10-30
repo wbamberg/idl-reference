@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(window) ###

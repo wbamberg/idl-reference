@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### importStylesheet ###
+### importStylesheet(style) ###
   
 Import the stylesheet into this XSLTProcessor for transformations.  
   
@@ -21,7 +21,7 @@ Import the stylesheet into this XSLTProcessor for transformations.
 @exception nsIXSLTException  
   
 
-### transformToFragment ###
+### transformToFragment(source, output) ###
   
 Transforms the node source applying the stylesheet given by  
 the importStylesheet() function. The owner document of the output node  
@@ -34,7 +34,7 @@ owns the returned document fragment.
 @exception nsIXSLTException  
   
 
-### transformToDocument ###
+### transformToDocument(source) ###
   
 Transforms the node source applying the stylesheet given by the  
 importStylesheet() function.  
@@ -45,7 +45,7 @@ importStylesheet() function.
 @exception nsIXSLTException  
   
 
-### setParameter ###
+### setParameter(namespaceURI, localName, value) ###
   
 Sets a parameter to be used in subsequent transformations with this  
 nsIXSLTProcessor. If the parameter doesn't exist in the stylesheet the  
@@ -59,7 +59,7 @@ parameter will be ignored.
                                   not supported  
   
 
-### getParameter ###
+### getParameter(namespaceURI, localName) ###
   
 Gets a parameter if previously set by setParameter. Returns null  
 otherwise.  
@@ -69,7 +69,7 @@ otherwise.
 @return nsIVariant  The value of the XSLT parameter  
   
 
-### removeParameter ###
+### removeParameter(namespaceURI, localName) ###
   
 Removes a parameter, if set. This will make the processor use the  
 default-value for the parameter as specified in the stylesheet.  
@@ -78,14 +78,14 @@ default-value for the parameter as specified in the stylesheet.
 @param localName    The local name of the XSLT parameter  
   
 
-### clearParameters ###
+### clearParameters() ###
   
 Removes all set parameters from this nsIXSLTProcessor. This will make  
 the processor use the default-value for all parameters as specified in  
 the stylesheet.  
   
 
-### reset ###
+### reset() ###
   
 Remove all parameters and stylesheets from this nsIXSLTProcessor.  
   

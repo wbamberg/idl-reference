@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### dumpFrameModel ###
+### dumpFrameModel(aWindowToDump, aFile, aFlagsMask) ###
 
-### compareFrameModels ###
+### compareFrameModels(aBaseFile, aVerFile, aFlags) ###
 
 ## Constants ##
 

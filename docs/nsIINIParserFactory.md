@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### createINIParser ###
+### createINIParser(aINIFile) ###
   
 Create an iniparser instance from a local file.  
   

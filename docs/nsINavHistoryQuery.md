@@ -15,7 +15,7 @@ can be non-negligible.
 
 ## Methods ##
 
-### setTransitions ###
+### setTransitions(transitions, count) ###
   
 When the set of transitions is nonempty, results are limited to pages which  
 have at least one visit for each of the transition types.  
@@ -24,24 +24,24 @@ have at least one visit for each of the transition types.
 Limit results to the specified list of transition types.  
   
 
-### getTransitions ###
+### getTransitions(count, transitions) ###
   
 Get the transitions set for this query.  
   
 
-### getFolders ###
+### getFolders(count, folders) ###
   
 Limit results to items that are in all of the given folders.  
   
 
-### setFolders ###
+### setFolders(folders, folderCount) ###
   
 For the special result type RESULTS_AS_TAG_CONTENTS we can define only  
 one folder that must be a tag folder. This is not recursive so results  
 will be returned from the first level of that folder.  
   
 
-### clone ###
+### clone() ###
   
 Creates a new query item with the same parameters of this one.  
   

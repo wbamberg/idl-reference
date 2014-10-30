@@ -9,7 +9,7 @@ helper service for common uses of nsIClipboard.
 
 ## Methods ##
 
-### copyStringToClipboard ###
+### copyStringToClipboard(aString, aClipboardID, aDoc) ###
   
 copy string to given clipboard  
   
@@ -19,7 +19,7 @@ copy string to given clipboard
        (eg. kSelectionClipboard -- see nsIClipboard.idl)  
   
 
-### copyString ###
+### copyString(aString, aDoc) ###
   
 copy string to (default) clipboard  
   

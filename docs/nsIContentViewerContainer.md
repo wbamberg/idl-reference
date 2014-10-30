@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### embed ###
+### embed(aDocViewer, aCommand, aExtraInfo) ###
 
-### setIsPrinting ###
+### setIsPrinting(aIsPrinting) ###
   
 Allows the PrintEngine to make this call on   
 an internal interface to the DocShell  

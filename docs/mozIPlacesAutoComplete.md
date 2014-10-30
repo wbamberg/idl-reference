@@ -11,7 +11,7 @@ purposes.
 
 ## Methods ##
 
-### registerOpenPage ###
+### registerOpenPage(aURI) ###
   
 Mark a page as being currently open.  
   
@@ -23,7 +23,7 @@ Mark a page as being currently open.
        The URI to register as an open page.  
   
 
-### unregisterOpenPage ###
+### unregisterOpenPage(aURI) ###
   
 Mark a page as no longer being open (either by closing the window or tab,  
 or by navigating away from that page).  

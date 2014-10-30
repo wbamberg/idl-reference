@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### initialize ###
+### initialize(locale) ###
 
-### compareString ###
+### compareString(strength, string1, string2) ###
 
-### allocateRawSortKey ###
+### allocateRawSortKey(strength, stringIn, key, outLen) ###
 
-### compareRawSortKey ###
+### compareRawSortKey(key1, len1, key2, len2) ###
 
 ## Constants ##
 

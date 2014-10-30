@@ -9,7 +9,7 @@ Information about networks that is exposed to network manager API consumers.
 
 ## Methods ##
 
-### getAddresses ###
+### getAddresses(ips, prefixLengths, count) ###
   
 Get the list of ip addresses and prefix lengths, ip address could be IPv4  
 or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.  
@@ -22,7 +22,7 @@ or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.
 @returns the length of the lists.  
   
 
-### getGateways ###
+### getGateways(count, gateways) ###
   
 Get the list of gateways, could be IPv4 or IPv6, typically 1 IPv4 or 1  
 IPv6 or one of each.  
@@ -33,7 +33,7 @@ IPv6 or one of each.
 @returns the list of gateways.  
   
 
-### getDnses ###
+### getDnses(count, dnses) ###
   
 Get the list of dnses, could be IPv4 or IPv6.  
   

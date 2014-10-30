@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### dhcpServerResult ###
+### dhcpServerResult(error) ###
   
 Callback function used to report the DHCP server set result  
   

@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### onChange ###
+### onChange(accessPoints, aLen) ###
 
-### onError ###
+### onError(error) ###

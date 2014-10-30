@@ -6,19 +6,19 @@ layout: default
 
 ## Methods ##
 
-### getElementsByAttribute ###
+### getElementsByAttribute(name, value) ###
 
-### getElementsByAttributeNS ###
+### getElementsByAttributeNS(namespaceURI, name, value) ###
 
-### addBroadcastListenerFor ###
+### addBroadcastListenerFor(broadcaster, observer, attr) ###
 
-### removeBroadcastListenerFor ###
+### removeBroadcastListenerFor(broadcaster, observer, attr) ###
 
-### persist ###
+### persist(id, attr) ###
 
-### getBoxObjectFor ###
+### getBoxObjectFor(elt) ###
 
-### loadOverlay ###
+### loadOverlay(url, aObserver) ###
   
 Loads a XUL overlay and merges it with the current document, notifying an  
 observer when the merge is complete.   

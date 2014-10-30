@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initCommandEvent ###
+### initCommandEvent(typeArg, canBubbleArg, canCancelArg, command) ###
 
 ## Attributes ##
 

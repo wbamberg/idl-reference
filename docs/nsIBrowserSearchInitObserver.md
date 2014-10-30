@@ -9,7 +9,7 @@ Callback for asynchronous initialization of nsIBrowserSearchService
 
 ## Methods ##
 
-### onInitComplete ###
+### onInitComplete(aStatus) ###
   
 Called once initialization of the browser search service is complete.  
   

@@ -11,7 +11,7 @@ will be run on the next available worker thread.
 
 ## Methods ##
 
-### shutdown ###
+### shutdown() ###
   
 Shutdown the thread pool.  This method may not be executed from any thread  
 in the thread pool.  Instead, it is meant to be executed from another  
@@ -22,7 +22,7 @@ and it will no longer be possible to dispatch tasks to the thread pool.
 As a side effect, events on the current thread will be processed.  
   
 
-### setName ###
+### setName(aName) ###
   
 Set the label for threads in the pool. All threads will be named  
 "<aName> #<n>", where <n> is a serial number.  

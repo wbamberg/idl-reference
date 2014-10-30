@@ -12,7 +12,7 @@ enumeration is complete.
 
 ## Methods ##
 
-### close ###
+### close() ###
   
 Closes the directory being enumerated, releasing the system resource.  
 @throws NS_OK if the call succeeded and the directory was closed.  

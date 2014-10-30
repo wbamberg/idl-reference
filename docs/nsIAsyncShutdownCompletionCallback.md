@@ -9,7 +9,7 @@ Callback invoked once all blockers of a barrier have been removed.
 
 ## Methods ##
 
-### done ###
+### done() ###
   
 The operation has been completed.  
   

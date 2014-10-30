@@ -7,7 +7,7 @@ layout: default
 
 ## Methods ##
 
-### initClassesWithNewWrappedGlobal ###
+### initClassesWithNewWrappedGlobal(aJSContext, aCOMObj, aPrincipal, aFlags, aOptions) ###
   
 Creates a new global object using the given aCOMObj as the global  
 object. The object will be set up according to the flags (defined  
@@ -24,7 +24,7 @@ classes when asked by the JS engine.
 @param aOptions JSAPI-specific options for the new compartment.  
   
 
-### wrapNative ###
+### wrapNative(aJSContext, aScope, aCOMObj, aIID) ###
   
 wrapNative will create a new JSObject or return an existing one.  
   
@@ -58,7 +58,7 @@ Returns:
       NS_ERROR_FAILURE  
   
 
-### wrapNativeToJSVal ###
+### wrapNativeToJSVal(aJSContext, aScope, aCOMObj, aCache, aIID, aAllowWrapper, aVal) ###
   
 Same as wrapNative, but it returns the JSObject in aVal. C++ callers  
 must ensure that aVal is rooted.  
@@ -73,7 +73,7 @@ is required to push it if the top of the context stack is not equal to
 aJSContext.  
   
 
-### wrapJS ###
+### wrapJS(aJSContext, aJSObj, aIID, result) ###
   
 wrapJS will yield a new or previously existing xpcom interface pointer  
 to represent the JSObject passed in.  
@@ -98,32 +98,32 @@ Returns:
       NS_ERROR_FAILURE  
   
 
-### jSValToVariant ###
+### jSValToVariant(cx, aJSVal) ###
   
 Wraps the given jsval in a nsIVariant and returns the new variant.  
   
 
-### getWrappedNativeOfJSObject ###
+### getWrappedNativeOfJSObject(aJSContext, aJSObj) ###
   
 This only succeeds if the JSObject is a nsIXPConnectWrappedNative.  
 A new wrapper is *never* constructed.  
   
 
-### getNativeOfWrapper ###
+### getNativeOfWrapper(aJSContext, aJSObj) ###
 
-### createStackFrameLocation ###
+### createStackFrameLocation(aLanguage, aFilename, aFunctionName, aLineNumber, aCaller) ###
 
-### getCurrentJSContext ###
+### getCurrentJSContext() ###
 
-### getSafeJSContext ###
+### getSafeJSContext() ###
 
-### debugDump ###
+### debugDump(depth) ###
 
-### debugDumpObject ###
+### debugDumpObject(aCOMObj, depth) ###
 
-### debugDumpJSStack ###
+### debugDumpJSStack(showArgs, showLocals, showThisProps) ###
 
-### wrapJSAggregatedToNative ###
+### wrapJSAggregatedToNative(aOuter, aJSContext, aJSObj, aIID, result) ###
   
 wrapJSAggregatedToNative is just like wrapJS except it is used in cases  
 where the JSObject is also aggregated to some native xpcom Object.  
@@ -139,25 +139,25 @@ Returns:
       NS_ERROR_FAILURE  
   
 
-### getWrappedNativeOfNativeObject ###
+### getWrappedNativeOfNativeObject(aJSContext, aScope, aCOMObj, aIID) ###
   
 This only succeeds if the native object is already wrapped by xpconnect.  
 A new wrapper is *never* constructed.  
   
 
-### setFunctionThisTranslator ###
+### setFunctionThisTranslator(aIID, aTranslator) ###
 
-### reparentWrappedNativeIfFound ###
+### reparentWrappedNativeIfFound(aJSContext, aScope, aNewParent, aCOMObj) ###
 
-### rescueOrphansInScope ###
+### rescueOrphansInScope(aJSContext, aScope) ###
 
-### getWrappedNativePrototype ###
+### getWrappedNativePrototype(aJSContext, aScope, aClassInfo) ###
 
-### variantToJS ###
+### variantToJS(ctx, scope, value) ###
 
-### JSToVariant ###
+### JSToVariant(ctx, value) ###
 
-### createSandbox ###
+### createSandbox(cx, principal) ###
   
 Create a sandbox for evaluating code in isolation using  
 evalInSandboxObject().  
@@ -167,7 +167,7 @@ evalInSandboxObject().
                  to use when evaluating code in this sandbox.  
   
 
-### evalInSandboxObject ###
+### evalInSandboxObject(source, filename, cx, sandbox) ###
   
 Evaluate script in a sandbox, completely isolated from all  
 other running scripts.  
@@ -184,7 +184,7 @@ other running scripts.
         to this method.  
   
 
-### setReportAllJSExceptions ###
+### setReportAllJSExceptions(reportAllJSExceptions) ###
   
 Whether or not XPConnect should report all JS exceptions when returning  
 from JS into C++. False by default, although any value set in the  
@@ -192,31 +192,31 @@ MOZ_REPORT_ALL_JS_EXCEPTIONS environment variable will override the value
 passed here.  
   
 
-### GarbageCollect ###
+### GarbageCollect(reason) ###
   
 Trigger a JS garbage collection.  
 Use a js::gcreason::Reason from jsfriendapi.h for the kind.  
   
 
-### NotifyDidPaint ###
+### NotifyDidPaint() ###
   
 Signals a good place to do an incremental GC slice, because the  
 browser is drawing a frame.  
   
 
-### holdObject ###
+### holdObject(aJSContext, aObject) ###
   
 Creates a JS object holder around aObject that will hold the object  
 alive for as long as the holder stays alive.  
   
 
-### writeScript ###
+### writeScript(aStream, aJSContext, aJSScript) ###
 
-### readScript ###
+### readScript(aStream, aJSContext) ###
 
-### writeFunction ###
+### writeFunction(aStream, aJSContext, aJSObject) ###
 
-### readFunction ###
+### readFunction(aStream, aJSContext) ###
 
 ## Attributes ##
 

@@ -12,17 +12,17 @@ Used by the editor but not dependant on it.
 
 ## Methods ##
 
-### Reset ###
+### Reset() ###
   
 Go back to the beginning of the attribute list.  
   
 
-### GetNextURI ###
+### GetNextURI() ###
   
 Return the next rewritable URI.  
   
 
-### RewriteAllURIs ###
+### RewriteAllURIs(aOldPat, aNewPat, aMakeRel) ###
   
 Go back to the beginning of the attribute list  
   

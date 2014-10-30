@@ -12,14 +12,14 @@ Provides information about the XUL runtime.
 
 ## Methods ##
 
-### invalidateCachesOnRestart ###
+### invalidateCachesOnRestart() ###
   
 Signal the apprunner to invalidate caches on the next restart.  
 This will cause components to be autoregistered and all  
 fastload data to be re-created.  
   
 
-### ensureContentProcess ###
+### ensureContentProcess() ###
   
 Starts a child process. This method is intented to pre-start a  
 content child process so that when it is actually needed, it is  

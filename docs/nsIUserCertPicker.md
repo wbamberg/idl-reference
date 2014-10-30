@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### pickByUsage ###
+### pickByUsage(ctx, selectedNickname, certUsage, allowInvalid, allowDuplicateNicknames, canceled) ###

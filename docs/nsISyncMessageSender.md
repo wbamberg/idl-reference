@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### sendSyncMessage ###
+### sendSyncMessage(messageName, obj, objects, principal) ###
   
 Like |sendAsyncMessage()|, except blocks the sender until all  
 listeners of the message have been invoked.  Returns an array  
 containing return values from each listener invoked.  
   
 
-### sendRpcMessage ###
+### sendRpcMessage(messageName, obj, objects, principal) ###
   
 Like |sendSyncMessage()|, except re-entrant. New RPC messages may be  
 issued even if, earlier on the call stack, we are waiting for a reply  

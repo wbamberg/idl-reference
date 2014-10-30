@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### startSession ###
+### startSession(name, timestamp) ###
 
-### stopSession ###
+### stopSession(name, reason, timestamp) ###
 
-### addEvent ###
+### addEvent(action, method, timestamp, extras) ###

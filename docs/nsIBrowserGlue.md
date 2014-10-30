@@ -22,7 +22,7 @@ sanitization (see bug #284086)
 
 ## Methods ##
 
-### sanitize ###
+### sanitize(aParentWindow) ###
    
 Deletes privacy sensitive data according to user preferences  
   
@@ -31,12 +31,12 @@ Deletes privacy sensitive data according to user preferences
   
   
 
-### ensurePlacesDefaultQueriesInitialized ###
+### ensurePlacesDefaultQueriesInitialized() ###
   
 Add Smart Bookmarks special queries to bookmarks menu and toolbar folder.  
   
 
-### getMostRecentBrowserWindow ###
+### getMostRecentBrowserWindow() ###
   
 Gets the most recent window that's a browser (but not a popup)  
   

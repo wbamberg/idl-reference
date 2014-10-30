@@ -9,7 +9,7 @@ This interface provides a means to cancel an operation that is in progress.
 
 ## Methods ##
 
-### cancel ###
+### cancel(aReason) ###
   
 Call this method to request that this object abort whatever operation it  
 may be performing.  

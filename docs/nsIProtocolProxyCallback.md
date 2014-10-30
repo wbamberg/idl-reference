@@ -10,7 +10,7 @@ asyncResolve method.
 
 ## Methods ##
 
-### onProxyAvailable ###
+### onProxyAvailable(aRequest, aURI, aProxyInfo, aStatus) ###
   
 This method is called when proxy info is available or when an error  
 in the proxy resolution occurs.  

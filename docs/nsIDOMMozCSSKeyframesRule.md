@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### appendRule ###
+### appendRule(rule) ###
 
-### deleteRule ###
+### deleteRule(key) ###
 
-### findRule ###
+### findRule(key) ###
 
 ## Attributes ##
 

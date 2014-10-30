@@ -10,7 +10,7 @@ various network proxies.
 
 ## Methods ##
 
-### asyncResolve ###
+### asyncResolve(aURI, aFlags, aCallback) ###
   
 This method returns via callback a nsIProxyInfo instance that identifies  
 a proxy to be used for loading the given URI.  Otherwise, this method returns  
@@ -44,7 +44,7 @@ also supports nsIProxiedProtocolHandler.
 @see nsIProxiedProtocolHandler::newProxiedChannel   
   
 
-### newProxyInfo ###
+### newProxyInfo(aType, aHost, aPort, aFlags, aFailoverTimeout, aFailoverProxy) ###
   
 This method may be called to construct a nsIProxyInfo instance from  
 the given parameters.  This method may be useful in conjunction with  
@@ -79,7 +79,7 @@ a SOCKS connection.
        parameter may be null.  
   
 
-### getFailoverForProxy ###
+### getFailoverForProxy(aProxyInfo, aURI, aReason) ###
   
 If the proxy identified by aProxyInfo is unavailable for some reason,  
 this method may be called to access an alternate proxy that may be used  
@@ -97,7 +97,7 @@ from resolve/asyncResolve as well as from getFailoverForProxy.
 @throw NS_ERROR_NOT_AVAILABLE if there is no alternate proxy available.  
   
 
-### registerFilter ###
+### registerFilter(aFilter, aPosition) ###
   
 This method may be used to register a proxy filter instance.  Each proxy  
 filter is registered with an associated position that determines the  
@@ -132,7 +132,7 @@ this method make their position value configurable at runtime (perhaps
 via the preferences service).  
   
 
-### unregisterFilter ###
+### unregisterFilter(aFilter) ###
   
 This method may be used to unregister a proxy filter instance.  All  
 filters will be automatically unregistered at XPCOM shutdown.  

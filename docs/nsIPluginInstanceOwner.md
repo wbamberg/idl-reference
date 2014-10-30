@@ -6,65 +6,65 @@ layout: default
 
 ## Methods ##
 
-### setInstance ###
+### setInstance(aInstance) ###
   
 Let the owner know what its instance is  
   
 
-### getInstance ###
+### getInstance() ###
   
 Get the instance associated with this owner.  
   
 
-### getWindow ###
+### getWindow(aWindow) ###
   
 Get a handle to the window structure of the owner.  
 This pointer cannot be made persistent by the caller.  
   
 
-### createWidget ###
+### createWidget() ###
   
 Create a place for the plugin to live in the owner's  
 environment. this may or may not create a window  
 depending on the windowless state of the plugin instance.  
   
 
-### showStatus ###
+### showStatus(aStatusMsg) ###
   
 Show a status message in the host environment.  
   
 
-### invalidateRect ###
+### invalidateRect(aRect) ###
   
 Invalidate the rectangle  
   
 
-### invalidateRegion ###
+### invalidateRegion(aRegion) ###
   
 Invalidate the region  
   
 
-### redrawPlugin ###
+### redrawPlugin() ###
   
 Have the plugin recomposited.  
   
 
-### getNetscapeWindow ###
+### getNetscapeWindow(aValue) ###
   
 Get NetscapeWindow, corresponds to NPNVnetscapeWindow  
   
 
-### setEventModel ###
+### setEventModel(eventModel) ###
   
 Show native context menu  
   
 
-### callSetWindow ###
+### callSetWindow() ###
   
 Call NPP_SetWindow on the plugin.  
   
 
-### getContentsScaleFactor ###
+### getContentsScaleFactor() ###
   
 Get the contents scale factor for the screen the plugin is  
 drawn on.  

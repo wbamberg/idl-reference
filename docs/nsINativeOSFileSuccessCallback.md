@@ -9,4 +9,4 @@ A callback invoked in case of success.
 
 ## Methods ##
 
-### complete ###
+### complete(result) ###

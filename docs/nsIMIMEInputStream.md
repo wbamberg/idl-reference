@@ -10,7 +10,7 @@ automatic creation of the content-length header.
 
 ## Methods ##
 
-### addHeader ###
+### addHeader(name, value) ###
   
 Adds an additional header to the stream on the form "name: value". May  
 not be called once the stream has been started to be read.  
@@ -18,7 +18,7 @@ not be called once the stream has been started to be read.
 @param value  value of the header  
   
 
-### setData ###
+### setData(stream) ###
   
 Sets data-stream. May not be called once the stream has been started  
 to be read.  

@@ -16,7 +16,7 @@ See http://www.mozilla.org/projects/ui/accessibility for more information.
 
 ## Methods ##
 
-### getState ###
+### getState(aState, aExtraState) ###
   
 Accessible states -- bit fields which describe boolean properties of node.  
 Many states are only valid given a certain role attribute that supports  
@@ -28,7 +28,7 @@ them.
                      (see nsIAccessibleStates::EXT_STATE_* constants)  
   
 
-### groupPosition ###
+### groupPosition(aGroupLevel, aSimilarItemsInGroup, aPositionInGroup) ###
   
 Returns grouping information. Used for tree items, list items, tab panel  
 labels, radio buttons, etc. Also used for collectons of non-text objects.  
@@ -39,7 +39,7 @@ labels, radio buttons, etc. Also used for collectons of non-text objects.
 @param positionInGroup - 1-based, similar to ARIA 'posinset' property  
   
 
-### getChildAtPoint ###
+### getChildAtPoint(x, y) ###
   
 Accessible child which contains the coordinate at (x, y) in screen pixels.  
 If the point is in the current accessible but not in a child, the  
@@ -52,7 +52,7 @@ null will be returned.
 @return   the deepest accessible child containing the given point  
   
 
-### getDeepestChildAtPoint ###
+### getDeepestChildAtPoint(x, y) ###
   
 Deepest accessible child which contains the coordinate at (x, y) in screen  
 pixels. If the point is in the current accessible but not in a child, the  
@@ -64,45 +64,45 @@ accessible or a child, then null will be returned.
 @return   the deepest accessible child containing the given point  
   
 
-### getChildAt ###
+### getChildAt(aChildIndex) ###
   
 Nth accessible child using zero-based index or last child if index less than zero  
   
 
-### getRelationByType ###
+### getRelationByType(aRelationType) ###
   
 Return accessible relation by the given relation type (see.  
 constants defined in nsIAccessibleRelation).  
   
 
-### getRelations ###
+### getRelations() ###
   
 Returns multiple accessible relations for this object.  
   
 
-### getBounds ###
+### getBounds(x, y, width, height) ###
   
 Return accessible's x and y coordinates relative to the screen and  
 accessible's width and height.  
   
 
-### setSelected ###
+### setSelected(isSelected) ###
   
 Add or remove this accessible to the current selection  
   
 
-### extendSelection ###
+### extendSelection() ###
   
 Extend the current selection from its current accessible anchor node  
 to this accessible  
   
 
-### takeSelection ###
+### takeSelection() ###
   
 Select this accessible node only  
   
 
-### takeFocus ###
+### takeFocus() ###
   
 Focus this accessible node,  
 The state STATE_FOCUSABLE indicates whether this node is normally focusable.  
@@ -112,23 +112,23 @@ will still set focus on that node, although normally that will not be visually
 indicated in most style sheets.  
   
 
-### getActionName ###
+### getActionName(index) ###
   
 The name of the accessible action at the given zero-based index  
   
 
-### getActionDescription ###
+### getActionDescription(aIndex) ###
   
 The description of the accessible action at the given zero-based index  
   
 
-### doAction ###
+### doAction(index) ###
   
 Perform the accessible action at the given zero-based index  
 Action number 0 is the default action  
   
 
-### scrollTo ###
+### scrollTo(aScrollType) ###
   
 Makes an object visible on screen.  
   
@@ -137,7 +137,7 @@ Makes an object visible on screen.
                     available constants).  
   
 
-### scrollToPoint ###
+### scrollToPoint(coordinateType, x, y) ###
   
 Moves the top left of an object to a specified location.  
   

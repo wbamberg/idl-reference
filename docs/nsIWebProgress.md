@@ -23,7 +23,7 @@ nsIWebProgress instance.
 
 ## Methods ##
 
-### addProgressListener ###
+### addProgressListener(aListener, aNotifyMask) ###
   
 Registers a listener to receive web progress events.  
   
@@ -40,7 +40,7 @@ Registers a listener to receive web progress events.
        Indicates that aListener was already registered.  
   
 
-### removeProgressListener ###
+### removeProgressListener(aListener) ###
   
 Removes a previously registered listener of progress events.  
   

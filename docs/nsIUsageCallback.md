@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### onUsageResult ###
+### onUsageResult(aURI, aUsage, aFileUsage, aAppId, aInMozBrowserOnly) ###

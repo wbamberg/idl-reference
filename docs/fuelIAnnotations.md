@@ -10,7 +10,7 @@ with a bookmark or bookmark folder.
 
 ## Methods ##
 
-### has ###
+### has(aName) ###
   
 Determines if an annotation exists with the given name.  
 @param   aName  
@@ -19,7 +19,7 @@ Determines if an annotation exists with the given name.
          false otherwise.  
   
 
-### get ###
+### get(aName) ###
   
 Gets the value of an annotation with the given name.  
 @param   aName  
@@ -28,7 +28,7 @@ Gets the value of an annotation with the given name.
          string, boolean and number.  
   
 
-### set ###
+### set(aName, aValue, aExpiration) ###
   
 Sets the value of an annotation with the given name.  
 @param   aName  
@@ -41,7 +41,7 @@ Sets the value of an annotation with the given name.
          See nsIAnnotationService.  
   
 
-### remove ###
+### remove(aName) ###
   
 Removes the named annotation from the owner item.  
 @param   aName  

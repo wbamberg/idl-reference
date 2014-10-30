@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### dumpMemoryReportsToNamedFile ###
+### dumpMemoryReportsToNamedFile(aFilename, aFinishDumping, aFinishDumpingData, aAnonymize) ###
   
 This dumps gzipped memory reports for this process and its child  
 processes.  If a file of the given name exists, it will be overwritten.  
@@ -44,7 +44,7 @@ Sample output, annotated with comments for explanatory purposes.
 }  
   
 
-### dumpMemoryInfoToTempDir ###
+### dumpMemoryInfoToTempDir(aIdentifier, aAnonymize, aMinimizeMemoryUsage) ###
   
 Similar to dumpMemoryReportsToNamedFile, this method dumps gzipped memory  
 reports for this process and its child processes to files in the tmp  
@@ -72,7 +72,7 @@ file will be overwritten).
   memory report.  
   
 
-### dumpGCAndCCLogsToFile ###
+### dumpGCAndCCLogsToFile(aIdentifier, aDumpAllTraces, aDumpChildProcesses, aCallback) ###
   
 Dump GC and CC logs to files in the OS's temp directory (or in  
 $MOZ_CC_LOG_DIRECTORY, if that environment variable is specified).  
@@ -102,7 +102,7 @@ $MOZ_CC_LOG_DIRECTORY, if that environment variable is specified).
   
   
 
-### dumpGCAndCCLogsToSink ###
+### dumpGCAndCCLogsToSink(aDumpAllTraces, aSink) ###
   
 Like |dumpGCAndCCLogsToFile|, but sends the logs to the given log  
 sink object instead of accessing the filesystem directly, and  

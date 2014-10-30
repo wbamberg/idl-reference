@@ -10,4 +10,4 @@ inserting intermediate stream listeners.
 
 ## Methods ##
 
-### setNewListener ###
+### setNewListener(aListener) ###

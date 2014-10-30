@@ -20,13 +20,13 @@ http://search.ietf.org/internet-drafts/draft-ietf-idn-idna-06.txt
 
 ## Methods ##
 
-### convertUTF8toACE ###
+### convertUTF8toACE(input) ###
   
 Prepares the input hostname according to IDNA ToASCII operation,  
 the input hostname is assumed to be UTF8-encoded.  
   
 
-### convertACEtoUTF8 ###
+### convertACEtoUTF8(input) ###
   
 This is the ToUnicode operation as specified in the IDNA proposal,  
 with an additional step to encode the result in UTF-8.  
@@ -34,18 +34,18 @@ It takes an ACE-encoded hostname and performs ToUnicode to it, then
 encodes the resulting string into UTF8.  
   
 
-### isACE ###
+### isACE(input) ###
   
 Checks if the input string is ACE encoded or not.  
   
 
-### normalize ###
+### normalize(input) ###
   
 Performs the unicode normalization needed for hostnames in IDN,  
 for callers that want early normalization.  
   
 
-### convertToDisplayIDN ###
+### convertToDisplayIDN(input, isASCII) ###
   
 Normalizes and converts a host to UTF-8 if the host is in the IDN  
 whitelist, otherwise converts it to ACE. This is useful for display  

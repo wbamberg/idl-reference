@@ -6,23 +6,23 @@ layout: default
 
 ## Methods ##
 
-### dump ###
+### dump(aStr) ###
   
 Print a string to stdout.  
   
 
-### privateNoteIntentionalCrash ###
+### privateNoteIntentionalCrash() ###
   
 If leak detection is enabled, print a note to the leak log that this  
 process will intentionally crash.  
   
 
-### atob ###
+### atob(aAsciiString) ###
   
 Ascii base64 data to binary data and vice versa  
   
 
-### btoa ###
+### btoa(aBase64Data) ###
 
 ## Attributes ##
 

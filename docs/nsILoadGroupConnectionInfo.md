@@ -10,13 +10,13 @@ how they interact with blocking items like HEAD css/js loads.
 
 ## Methods ##
 
-### addBlockingTransaction ###
+### addBlockingTransaction() ###
   
 Increase the number of active blocking transactions associated  
 with this load group by one.  
   
 
-### removeBlockingTransaction ###
+### removeBlockingTransaction() ###
   
 Decrease the number of active blocking transactions associated  
 with this load group by one. The return value is the number of remaining  

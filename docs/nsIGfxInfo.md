@@ -6,27 +6,27 @@ layout: default
 
 ## Methods ##
 
-### getFailures ###
+### getFailures(failureCount, failures) ###
 
-### logFailure ###
+### logFailure(failure) ###
 
-### getFeatureStatus ###
+### getFeatureStatus(aFeature) ###
   
 Ask about a feature, and return the status of that feature  
   
 
-### getFeatureSuggestedDriverVersion ###
+### getFeatureSuggestedDriverVersion(aFeature) ###
 
-### getWebGLParameter ###
+### getWebGLParameter(aParam) ###
   
 WebGL info; valid params are "full-renderer", "vendor", "renderer", "version",  
 "shading_language_version", "extensions".  These return info from  
 underlying GL impl that's used to implement WebGL.  
   
 
-### GetData ###
+### GetData() ###
 
-### getInfo ###
+### getInfo() ###
 
 ## Attributes ##
 

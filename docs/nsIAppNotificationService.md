@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### showAppNotification ###
+### showAppNotification(imageUrl, title, text, alertListener, details) ###

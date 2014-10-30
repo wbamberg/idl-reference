@@ -21,7 +21,7 @@ array must grow to complete the call, but the allocation fails.
 
 ## Methods ##
 
-### appendElement ###
+### appendElement(element, weak) ###
   
 appendElement()  
   
@@ -35,7 +35,7 @@ Append an element at the end of the array.
                          nsIWeakReference.  
   
 
-### removeElementAt ###
+### removeElementAt(index) ###
   
 removeElementAt()  
   
@@ -48,7 +48,7 @@ first, then call removeElementAt().
   
   
 
-### insertElementAt ###
+### insertElementAt(element, index, weak) ###
   
 insertElementAt()  
   
@@ -71,7 +71,7 @@ position, up by one.
                          nsIWeakReference.  
   
 
-### replaceElementAt ###
+### replaceElementAt(element, index, weak) ###
   
 replaceElementAt()  
   
@@ -96,7 +96,7 @@ Replace the element at the given position.
                          nsIWeakReference.  
   
 
-### clear ###
+### clear() ###
   
 clear()  
   

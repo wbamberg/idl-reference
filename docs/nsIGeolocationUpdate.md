@@ -11,21 +11,21 @@ notify the system that a new location is available.
 
 ## Methods ##
 
-### update ###
+### update(position) ###
   
 Notify the geolocation service that a new geolocation  
 has been discovered.  
 This must be called on the main thread  
   
 
-### locationUpdatePending ###
+### locationUpdatePending() ###
   
 Notify the geolocation service that the location has  
 potentially changed, and thus a new position is in the  
 process of being acquired.  
   
 
-### notifyError ###
+### notifyError(error) ###
   
 Notify the geolocation service of an error.  
 This must be called on the main thread.  

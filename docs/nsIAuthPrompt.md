@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### prompt ###
+### prompt(dialogTitle, text, passwordRealm, savePassword, defaultText, result) ###
   
 Puts up a text input dialog with OK and Cancel buttons.  
 Note: prompt uses separate args for the "in" and "out" values of the  
@@ -22,7 +22,7 @@ Note: prompt uses separate args for the "in" and "out" values of the
 @return true for OK, false for Cancel  
   
 
-### promptUsernameAndPassword ###
+### promptUsernameAndPassword(dialogTitle, text, passwordRealm, savePassword, user, pwd) ###
   
 Puts up a username/password dialog with OK and Cancel buttons.  
 Puts up a password dialog with OK and Cancel buttons.  
@@ -37,7 +37,7 @@ Puts up a password dialog with OK and Cancel buttons.
 @return true for OK, false for Cancel  
   
 
-### promptPassword ###
+### promptPassword(dialogTitle, text, passwordRealm, savePassword, pwd) ###
   
 Puts up a password dialog with OK and Cancel buttons.  
 @param  dialogText    The title for the dialog.  

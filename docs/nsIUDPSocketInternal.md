@@ -6,10 +6,10 @@ layout: default
 
 ## Methods ##
 
-### callListenerOpened ###
+### callListenerOpened() ###
 
-### callListenerClosed ###
+### callListenerClosed() ###
 
-### callListenerReceivedData ###
+### callListenerReceivedData(host, port, data, dataLength) ###
 
-### callListenerError ###
+### callListenerError(message, filename, lineNumber) ###

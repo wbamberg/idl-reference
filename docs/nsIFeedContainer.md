@@ -11,7 +11,7 @@ different convenience methods.
 
 ## Methods ##
 
-### normalize ###
+### normalize() ###
   
 Syncs a container's fields with its convenience attributes.  
   

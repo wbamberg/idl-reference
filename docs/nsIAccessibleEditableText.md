@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### setTextContents ###
+### setTextContents(text) ###
   
 Replaces the text represented by this object by the given text.  
   
 
-### insertText ###
+### insertText(text, position) ###
   
 Inserts text at the specified position.  
   
@@ -19,7 +19,7 @@ Inserts text at the specified position.
 @param position - index at which to insert the text.  
   
 
-### copyText ###
+### copyText(startPos, endPos) ###
   
 Copies the text range into the clipboard.  
   
@@ -27,7 +27,7 @@ Copies the text range into the clipboard.
 @param endPos - end index of the text to moved into the clipboard.  
   
 
-### cutText ###
+### cutText(startPos, endPos) ###
   
 Deletes a range of text and copies it to the clipboard.  
   
@@ -35,7 +35,7 @@ Deletes a range of text and copies it to the clipboard.
 @param endOffset - end index of the text to be deleted.  
   
 
-### deleteText ###
+### deleteText(startPos, endPos) ###
   
 Deletes a range of text.  
   
@@ -43,7 +43,7 @@ Deletes a range of text.
 @param endPos - end index of the text to be deleted.  
   
 
-### pasteText ###
+### pasteText(position) ###
   
 Pastes text from the clipboard.  
   

@@ -6,17 +6,17 @@ layout: default
 
 ## Methods ##
 
-### getInternal ###
+### getInternal() ###
 
-### getInternalFIPS ###
+### getInternalFIPS() ###
 
-### findModuleByName ###
+### findModuleByName(name) ###
 
-### findSlotByName ###
+### findSlotByName(name) ###
 
-### listModules ###
+### listModules() ###
 
-### toggleFIPSMode ###
+### toggleFIPSMode() ###
 
 ## Attributes ##
 

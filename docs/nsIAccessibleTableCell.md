@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### isSelected ###
+### isSelected() ###
   
 Return a boolean value indicating whether this cell is selected.  
   

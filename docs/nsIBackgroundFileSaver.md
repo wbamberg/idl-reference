@@ -35,7 +35,7 @@ Finish method must be called to complete the operation.
 
 ## Methods ##
 
-### enableSignatureInfo ###
+### enableSignatureInfo() ###
   
 Instructs the component to compute the signatureInfo of the target file,  
 and make it available in the signatureInfo property.  
@@ -44,7 +44,7 @@ and make it available in the signatureInfo property.
          setTarget.  
   
 
-### enableSha256 ###
+### enableSha256() ###
   
 Instructs the component to compute the SHA-256 hash of the target file, and  
 make it available in the sha256Hash property.  
@@ -53,7 +53,7 @@ make it available in the sha256Hash property.
          setTarget.  
   
 
-### enableAppend ###
+### enableAppend() ###
   
 Instructs the component to append data to the initial target file, that  
 will be specified by the first call to the setTarget method, instead of  
@@ -65,7 +65,7 @@ If the initial target file does not exist, this method has no effect.
          setTarget.  
   
 
-### setTarget ###
+### setTarget(aTarget, aKeepPartial) ###
   
 Sets the name of the output file to be written.  The target can be changed  
 after data has already been fed, in which case the existing file will be  
@@ -90,7 +90,7 @@ fails.  Failure is notified asynchronously through the observer.
        generally set for downloads that use temporary ".part" files.  
   
 
-### finish ###
+### finish(aStatus) ###
   
 Terminates access to the output file, then notifies the observer with the  
 specified status code.  A failure code will force the operation to be  

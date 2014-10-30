@@ -11,7 +11,7 @@ to the underlying output stream are necessary.
 
 ## Methods ##
 
-### init ###
+### init(sinkToStream, bufferSize) ###
   
 @param sinkToStream - add buffering to this stream  
 @param bufferSize   - specifies the maximum buffer size  

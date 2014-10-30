@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### handleResult ###
+### handleResult(aResultSet) ###
   
 Called when some result is obtained from the database.  This function can  
 be called more than once with a different storageIResultSet each time for  
@@ -16,7 +16,7 @@ any given asynchronous statement.
        The result set containing the data from the database.  
   
 
-### handleError ###
+### handleError(aError) ###
   
 Called when some error occurs while executing the statement.  This function  
 may be called more than once with a different storageIError each time for  
@@ -26,7 +26,7 @@ any given asynchronous statement.
        An object containing information about the error.  
   
 
-### handleCompletion ###
+### handleCompletion(aReason) ###
 
 ## Constants ##
 

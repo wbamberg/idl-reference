@@ -10,7 +10,7 @@ nsIStreamListener in the child process to one in the parent.
 
 ## Methods ##
 
-### divertToParent ###
+### divertToParent() ###
   
 CHILD ONLY.  
 Called by Necko client in child process during OnStartRequest to divert  

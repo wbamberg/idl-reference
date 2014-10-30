@@ -16,7 +16,7 @@ clients.
 
 ## Methods ##
 
-### startup ###
+### startup(appName, profileName) ###
   
 Start the remote service. This should not be done until app startup  
 appears to have been successful.  
@@ -27,14 +27,14 @@ appears to have been successful.
                    profile name.  
   
 
-### registerWindow ###
+### registerWindow(aWindow) ###
   
 Register a XUL window with the xremote service. The window will be  
 configured to accept incoming remote requests. If this method is called  
 before startup(), the registration will happen once startup() is called.  
   
 
-### shutdown ###
+### shutdown() ###
   
 Stop the remote service from accepting additional requests.  
   

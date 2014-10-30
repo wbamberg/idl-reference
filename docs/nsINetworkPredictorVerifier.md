@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### onPredictPreconnect ###
+### onPredictPreconnect(uri) ###
   
 Callback for when we do a predictive preconnect  
   
 @param uri - The URI that was preconnected to  
   
 
-### onPredictDNS ###
+### onPredictDNS(uri) ###
   
 Callback for when we do a predictive DNS lookup  
   

@@ -10,7 +10,7 @@ components without specifying a concrete base class.
 
 ## Methods ##
 
-### createInstance ###
+### createInstance(aOuter, iid, result) ###
   
 Creates an instance of a component.  
   
@@ -26,7 +26,7 @@ Creates an instance of a component.
         NS_ERROR* - Method failure.  
   
 
-### lockFactory ###
+### lockFactory(lock) ###
   
 LockFactory provides the client a way to keep the component  
 in memory until it is finished with it. The client can call  

@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### installDataStore ###
+### installDataStore(appId, name, originURL, manifestURL, readOnly) ###
 
-### installAccessDataStore ###
+### installAccessDataStore(appId, name, originURL, manifestURL, readOnly) ###
 
-### getDataStores ###
+### getDataStores(window, name, owner) ###
 
-### getAppManifestURLsForDataStore ###
+### getAppManifestURLsForDataStore(name) ###
 
-### checkPermission ###
+### checkPermission(principal) ###

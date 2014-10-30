@@ -11,7 +11,7 @@ can be updated.
 
 ## Methods ##
 
-### serialize ###
+### serialize(updates) ###
   
 Serializes this patch object into a DOM Element  
 @param   updates  

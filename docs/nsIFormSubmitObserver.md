@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### notify ###
+### notify(formNode, window, actionURL, cancelSubmit) ###
 
-### notifyInvalidSubmit ###
+### notifyInvalidSubmit(formNode, invalidElements) ###

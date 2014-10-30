@@ -6,17 +6,17 @@ layout: default
 
 ## Methods ##
 
-### getSegmentInfoForText ###
+### getSegmentInfoForText(text, request) ###
 
-### send ###
+### send(serviceId, number, message, silent, request) ###
 
-### isSilentNumber ###
+### isSilentNumber(number) ###
 
-### addSilentNumber ###
+### addSilentNumber(number) ###
 
-### removeSilentNumber ###
+### removeSilentNumber(number) ###
 
-### getSmscAddress ###
+### getSmscAddress(serviceId, request) ###
 
 ## Attributes ##
 

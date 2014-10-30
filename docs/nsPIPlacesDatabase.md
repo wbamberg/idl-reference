@@ -11,7 +11,7 @@ the database so they do not break any internal invariants.
 
 ## Methods ##
 
-### asyncExecuteLegacyQueries ###
+### asyncExecuteLegacyQueries(aQueries, aQueryCount, aOptions, aCallback) ###
   
 Asynchronously executes the statement created from queries.  
   

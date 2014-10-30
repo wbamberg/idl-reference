@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### evaluate ###
+### evaluate(expression, contextNode, resolver, type, result) ###

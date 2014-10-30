@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### exec ###
+### exec(aCommand, aParameters) ###
 
-### query ###
+### query(aCommand, aParameters) ###

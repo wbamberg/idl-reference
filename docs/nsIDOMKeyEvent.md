@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### initKeyEvent ###
+### initKeyEvent(typeArg, canBubbleArg, cancelableArg, viewArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, keyCodeArg, charCodeArg) ###
 
-### getModifierState ###
+### getModifierState(keyArg) ###
 
 ## Attributes ##
 

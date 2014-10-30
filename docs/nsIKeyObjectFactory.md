@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### lookupKeyByName ###
+### lookupKeyByName(aName) ###
 
-### unwrapKey ###
+### unwrapKey(aAlgorithm, aWrappedKey, aWrappedKeyLen) ###
 
-### keyFromString ###
+### keyFromString(aAlgorithm, aKey) ###

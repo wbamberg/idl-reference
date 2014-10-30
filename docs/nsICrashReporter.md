@@ -12,13 +12,13 @@ Provides access to crash reporting functionality.
 
 ## Methods ##
 
-### setEnabled ###
+### setEnabled(enabled) ###
   
 Enable or disable crash reporting at runtime. Not available to script  
 because the JS engine relies on proper exception handler chaining.  
   
 
-### annotateCrashReport ###
+### annotateCrashReport(key, data) ###
   
 Add some extra data to be submitted with a crash report.  
   
@@ -33,7 +33,7 @@ Add some extra data to be submitted with a crash report.
                             '\n'.  Invalid character for data is '\0'.  
   
 
-### appendAppNotesToCrashReport ###
+### appendAppNotesToCrashReport(data) ###
   
 Append some data to the "Notes" field, to be submitted with a crash report.  
 Unlike annotateCrashReport, this method will append to existing data.  
@@ -46,7 +46,7 @@ Unlike annotateCrashReport, this method will append to existing data.
                             The only invalid character is '\0'.  
   
 
-### registerAppMemory ###
+### registerAppMemory(ptr, size) ###
   
 Register a given memory range to be included in the crash report.  
   
@@ -59,7 +59,7 @@ Register a given memory range to be included in the crash report.
 @throw NS_ERROR_NOT_IMPLEMENTED if unavailable on the current OS  
   
 
-### writeMinidumpForException ###
+### writeMinidumpForException(aExceptionInfo) ###
   
 Write a minidump immediately, with the user-supplied exception  
 information. This is implemented on Windows only, because  
@@ -68,14 +68,14 @@ SEH (structured exception handling) exists on Windows only.
 @param aExceptionInfo  EXCEPTION_INFO* provided by Window's SEH  
   
 
-### appendObjCExceptionInfoToAppNotes ###
+### appendObjCExceptionInfoToAppNotes(aException) ###
   
 Append note containing an Obj-C exception's info.  
   
 @param aException  NSException object to append note for  
   
 
-### UpdateCrashEventsDir ###
+### UpdateCrashEventsDir() ###
   
 Cause the crash reporter to re-evaluate where crash events should go.  
   
@@ -83,7 +83,7 @@ This should be called during application startup and whenever profiles
 change.  
   
 
-### saveMemoryReport ###
+### saveMemoryReport() ###
   
 Save an anonymized memory report file for inclusion in a future crash  
 report in this session.  

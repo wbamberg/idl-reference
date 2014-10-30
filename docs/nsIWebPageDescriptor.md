@@ -11,7 +11,7 @@ network.
 
 ## Methods ##
 
-### loadPage ###
+### loadPage(aPageDescriptor, aDisplayType) ###
   
 Tells the object to load the page specified by the page descriptor  
   

@@ -19,7 +19,7 @@ in order to cause a "save to disk" or "open using" action.
 
 ## Methods ##
 
-### show ###
+### show(aLauncher, aWindowContext, aReason) ###
   
 Show confirmation dialog for launching application (or "save to  
 disk") for content specified by aLauncher.  
@@ -34,7 +34,7 @@ disk") for content specified by aLauncher.
        REASON_CANTHANDLE.  
   
 
-### promptForSaveToFile ###
+### promptForSaveToFile(aLauncher, aWindowContext, aDefaultFileName, aSuggestedFileExtension, aForcePrompt) ###
   
 Invoke a save-to-file dialog instead of the full fledged helper app dialog.  
 Returns the a nsIFile for the file name/location selected.  
@@ -56,7 +56,7 @@ Returns the a nsIFile for the file name/location selected.
                                should be used.  
   
 
-### promptForSaveToFileAsync ###
+### promptForSaveToFileAsync(aLauncher, aWindowContext, aDefaultFileName, aSuggestedFileExtension, aForcePrompt) ###
   
 Async invoke a save-to-file dialog instead of the full fledged helper app  
 dialog. When the file is chosen (or the dialog is closed), the callback  

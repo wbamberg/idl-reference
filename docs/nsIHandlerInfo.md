@@ -10,7 +10,7 @@ scheme or MIME-type is handled.
 
 ## Methods ##
 
-### launchWithURI ###
+### launchWithURI(aURI, aWindowContext) ###
   
 Launches the application with the specified URI, in a way that  
 depends on the value of preferredAction. preferredAction must be  

@@ -15,7 +15,7 @@ The nsIURL methods operate on the <jar-entry> part of the spec.
 
 ## Methods ##
 
-### cloneWithJARFile ###
+### cloneWithJARFile(jarFile) ###
   
 Create a clone of the JAR URI with a new root URI (the URI for the  
 actual JAR file).  

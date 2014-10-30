@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(window, name, manifestURL, readOnly) ###
 
-### retrieveRevisionId ###
+### retrieveRevisionId(cb) ###
 
 ## Attributes ##
 

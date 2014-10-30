@@ -6,16 +6,16 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aName) ###
 
-### setPrefixes ###
+### setPrefixes(aPrefixes, aLength) ###
 
-### getPrefixes ###
+### getPrefixes(aCount, aPrefixes) ###
 
-### contains ###
+### contains(aPrefix) ###
 
-### isEmpty ###
+### isEmpty() ###
 
-### loadFromFile ###
+### loadFromFile(aFile) ###
 
-### storeToFile ###
+### storeToFile(aFile) ###

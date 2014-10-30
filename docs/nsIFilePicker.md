@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(parent, title, mode) ###
   
 Initialize the file picker widget.  The file picker is not valid until this  
 method is called.  
@@ -18,7 +18,7 @@ method is called.
   
   
 
-### appendFilters ###
+### appendFilters(filterMask) ###
   
 Append to the  filter list with things from the predefined list  
   
@@ -26,7 +26,7 @@ Append to the  filter list with things from the predefined list
   
   
 
-### appendFilter ###
+### appendFilter(title, filter) ###
   
 Add a filter  
   
@@ -35,7 +35,7 @@ Add a filter
   
   
 
-### show ###
+### show() ###
   
 Show File Dialog. The dialog is displayed modally.  
   
@@ -43,7 +43,7 @@ Show File Dialog. The dialog is displayed modally.
   
   
 
-### open ###
+### open(aFilePickerShownCallback) ###
   
 Opens the file dialog asynchrounously.  
 The passed in object's done method will be called upon completion.  

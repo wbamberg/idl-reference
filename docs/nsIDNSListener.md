@@ -9,7 +9,7 @@ nsIDNSListener
 
 ## Methods ##
 
-### onLookupComplete ###
+### onLookupComplete(aRequest, aRecord, aStatus) ###
   
 called when an asynchronous host lookup completes.  
   

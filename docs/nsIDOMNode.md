@@ -14,35 +14,35 @@ http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html
 
 ## Methods ##
 
-### insertBefore ###
+### insertBefore(newChild, refChild) ###
 
-### replaceChild ###
+### replaceChild(newChild, oldChild) ###
 
-### removeChild ###
+### removeChild(oldChild) ###
 
-### appendChild ###
+### appendChild(newChild) ###
 
-### hasChildNodes ###
+### hasChildNodes() ###
 
-### cloneNode ###
+### cloneNode(deep) ###
 
-### normalize ###
+### normalize() ###
 
-### compareDocumentPosition ###
+### compareDocumentPosition(other) ###
 
-### lookupPrefix ###
+### lookupPrefix(namespaceURI) ###
 
-### isDefaultNamespace ###
+### isDefaultNamespace(namespaceURI) ###
 
-### lookupNamespaceURI ###
+### lookupNamespaceURI(prefix) ###
 
-### isEqualNode ###
+### isEqualNode(arg) ###
 
-### setUserData ###
+### setUserData(key, data) ###
 
-### getUserData ###
+### getUserData(key) ###
 
-### contains ###
+### contains(aOther) ###
 
 ## Attributes ##
 

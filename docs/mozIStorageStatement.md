@@ -10,7 +10,7 @@ purposes.
 
 ## Methods ##
 
-### clone ###
+### clone() ###
   
 Create a clone of this statement, by initializing a new statement  
 with the same connection and same SQL statement as this one.  It  
@@ -19,12 +19,12 @@ being executed when it is cloned, the new statement will not be
 executing.  
   
 
-### getParameterName ###
+### getParameterName(aParamIndex) ###
   
 Name of nth parameter, if given  
   
 
-### getParameterIndex ###
+### getParameterIndex(aName) ###
   
 Returns the index of the named parameter.  
   
@@ -34,12 +34,12 @@ Returns the index of the named parameter.
 @return the index of the named parameter.  
   
 
-### getColumnName ###
+### getColumnName(aColumnIndex) ###
   
 Name of nth column  
   
 
-### getColumnIndex ###
+### getColumnIndex(aName) ###
   
 Obtains the index of the column with the specified name.  
   
@@ -48,7 +48,7 @@ Obtains the index of the column with the specified name.
 @return The index of the column with the specified name.  
   
 
-### getColumnDecltype ###
+### getColumnDecltype(aParamIndex) ###
   
 Obtains the declared column type of a prepared statement.  
   
@@ -58,12 +58,12 @@ Obtains the declared column type of a prepared statement.
 @return the declared index type.  
   
 
-### reset ###
+### reset() ###
   
 Reset parameters/statement execution  
   
 
-### execute ###
+### execute() ###
   
 Execute the query, ignoring any results.  This is accomplished by  
 calling executeStep() once, and then calling reset().  
@@ -72,7 +72,7 @@ Error and last insert info, etc. are available from
 the mozStorageConnection.  
   
 
-### executeStep ###
+### executeStep() ###
   
 Execute a query, using any currently-bound parameters.  Reset  
 must be called on the statement after the last call of  
@@ -83,7 +83,7 @@ executeStep.
         the statement.  
   
 
-### getTypeOfIndex ###
+### getTypeOfIndex(aIndex) ###
   
 Indicate the data type of the current result row for the the given column.  
 SQLite will perform type conversion if you ask for a value as a different  
@@ -96,7 +96,7 @@ type than it is stored as.
         VALUE_TYPE_TEXT, VALUE_TYPE_BLOB.  
   
 
-### getInt32 ###
+### getInt32(aIndex) ###
   
 Retrieve the contents of a column from the current result row as an  
 integer.  
@@ -107,9 +107,9 @@ integer.
 @{  
   
 
-### getInt64 ###
+### getInt64(aIndex) ###
 
-### getDouble ###
+### getDouble(aIndex) ###
  @} */  
   
 Retrieve the contents of a column from the current result row as a  
@@ -120,7 +120,7 @@ floating point double.
 @return Column value interpreted as a double per type conversion rules.  
   
 
-### getUTF8String ###
+### getUTF8String(aIndex) ###
   
 Retrieve the contents of a column from the current result row as a  
 string.  
@@ -133,9 +133,9 @@ string.
 @{  
   
 
-### getString ###
+### getString(aIndex) ###
 
-### getBlob ###
+### getBlob(aIndex, aDataSize, aData) ###
  @} */  
   
 Retrieve the contents of a column from the current result row as a  
@@ -149,7 +149,7 @@ blob.
             The contents of the BLOB.  This will be NULL if aDataSize == 0.  
   
 
-### getIsNull ###
+### getIsNull(aIndex) ###
   
 Check whether the given column in the current result row is NULL.  
   
@@ -158,14 +158,14 @@ Check whether the given column in the current result row is NULL.
 @return true if the value for the result column is null.  
   
 
-### getSharedUTF8String ###
+### getSharedUTF8String(aIndex, aLength, aResult) ###
   
 Returns a shared string pointer  
   
 
-### getSharedString ###
+### getSharedString(aIndex, aLength, aResult) ###
 
-### getSharedBlob ###
+### getSharedBlob(aIndex, aLength, aResult) ###
 
 ## Attributes ##
 

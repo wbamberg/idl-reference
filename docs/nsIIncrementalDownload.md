@@ -13,7 +13,7 @@ deleted.
 
 ## Methods ##
 
-### init ###
+### init(uri, destination, chunkSize, intervalInSeconds) ###
   
 Initialize the incremental download object.  If the destination file  
 already exists, then only the remaining portion of the file will be  
@@ -45,7 +45,7 @@ accidentally running "blah.exe" before it is a complete file.
        part of the file in one chunk.  
   
 
-### start ###
+### start(observer, ctxt) ###
   
 Start the incremental download.  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### launch ###
+### launch(uri) ###
 
 ## Attributes ##
 

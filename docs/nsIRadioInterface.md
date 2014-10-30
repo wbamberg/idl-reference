@@ -6,27 +6,27 @@ layout: default
 
 ## Methods ##
 
-### setupDataCallByType ###
+### setupDataCallByType(apntype) ###
   
 PDP APIs  
   
 
-### deactivateDataCallByType ###
+### deactivateDataCallByType(apntype) ###
 
-### getDataCallStateByType ###
+### getDataCallStateByType(apntype) ###
 
-### updateRILNetworkInterface ###
+### updateRILNetworkInterface() ###
 
-### getSegmentInfoForText ###
+### getSegmentInfoForText(text, request) ###
   
 SMS-related functionality.  
   
 
-### sendSMS ###
+### sendSMS(number, message, silent, request) ###
 
-### sendWorkerMessage ###
+### sendWorkerMessage(type, message, callback) ###
 
-### getSmscAddress ###
+### getSmscAddress(request) ###
 
 ## Attributes ##
 

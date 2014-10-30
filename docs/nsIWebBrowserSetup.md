@@ -13,7 +13,7 @@ object; you can do so at any time during the life cycle of the browser.
 
 ## Methods ##
 
-### setProperty ###
+### setProperty(aId, aValue) ###
   
 Sets an integer or boolean property on the new web browser object.  
 Only PR_TRUE and PR_FALSE are legal boolean values.  

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### done ###
+### done(aResult) ###
   
 Callback which is called when a filepicker is shown and a result  
 is returned.  

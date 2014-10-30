@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### NormalizeUnicodeNFD ###
+### NormalizeUnicodeNFD(aSrc, aDest) ###
   
 Normalize Unicode (NFD, NFC, NFKD, NFKC).  
   
@@ -21,8 +21,8 @@ Reference: Unicode Standard, TR15, Unicode Normalization Forms
 @return             NS_OK for success,   
   
 
-### NormalizeUnicodeNFC ###
+### NormalizeUnicodeNFC(aSrc, aDest) ###
 
-### NormalizeUnicodeNFKD ###
+### NormalizeUnicodeNFKD(aSrc, aDest) ###
 
-### NormalizeUnicodeNFKC ###
+### NormalizeUnicodeNFKC(aSrc, aDest) ###

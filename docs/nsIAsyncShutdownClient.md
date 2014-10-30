@@ -9,7 +9,7 @@ A client for a nsIAsyncShutdownBarrier.
 
 ## Methods ##
 
-### addBlocker ###
+### addBlocker(aBlocker, aFileName, aLineNumber, aStack) ###
   
 Add a blocker.  
   
@@ -30,7 +30,7 @@ removed, each  by a call to `removeBlocker`.
 empty when called from C++.  
   
 
-### removeBlocker ###
+### removeBlocker(aBlocker) ###
   
 Remove a blocker.  
   

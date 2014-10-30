@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### convert ###
+### convert(icon) ###

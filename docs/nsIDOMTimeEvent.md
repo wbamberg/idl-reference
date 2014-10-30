@@ -13,7 +13,7 @@ http://www.w3.org/TR/SVG/animate.html#InterfaceTimeEvent
 
 ## Methods ##
 
-### initTimeEvent ###
+### initTimeEvent(typeArg, viewArg, detailArg) ###
 
 ## Attributes ##
 

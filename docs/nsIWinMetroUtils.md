@@ -13,18 +13,18 @@ development purposes only.
 
 ## Methods ##
 
-### showSettingsFlyout ###
+### showSettingsFlyout() ###
   
 Show the settings flyout  
   
 
-### launchInDesktop ###
+### launchInDesktop(aPath, aArguments) ###
   
 Launches the specified application with the specified arguments and  
 switches to Desktop mode if in metro mode.  
   
 
-### showNativeToast ###
+### showNativeToast(aTitle, aMessage, anImage, aCookie, aAppId) ###
   
 Displays a native Windows 8 toast.  
   
@@ -32,7 +32,7 @@ Displays a native Windows 8 toast.
                If using Metro mode, it can be null string.  
   
 
-### pinTileAsync ###
+### pinTileAsync(aTileID, aShortName, aDisplayName, aActivationArgs, aTileImage, aSmallTileImage) ###
   
 Secondary tiles are a Windows 8 specific feature for pinning new tiles  
 to the start screen.   Tiles can later be activated whether the browser is  
@@ -51,7 +51,7 @@ Pins a new tile to the Windows 8 start screen.
 @param aSmallTileImage An image for the small tile view  
   
 
-### unpinTileAsync ###
+### unpinTileAsync(aTileID) ###
   
 Unpins a tile from the Windows 8 start screen.  
   
@@ -59,7 +59,7 @@ Unpins a tile from the Windows 8 start screen.
                ID must only contain valid filesystem characters  
   
 
-### isTilePinned ###
+### isTilePinned(aTileID) ###
   
 Determines if a tile is pinned to the Windows 8 start screen.  
   
@@ -68,7 +68,7 @@ Determines if a tile is pinned to the Windows 8 start screen.
 @return true if the tile is pinned  
   
 
-### addSettingsPanelEntry ###
+### addSettingsPanelEntry(aLabel) ###
   
 Settings panel links. addSettingsPanelEntry adds an entry to  
 the settings flyout panel that the user can invoke.  
@@ -79,7 +79,7 @@ ShowPanel api. Example: 'prefs-container'
 "metro-settings-entry-selected" notification when the entry is clicked  
   
 
-### swapMouseButton ###
+### swapMouseButton(aSwap) ###
   
 Change the value of the "switch primary and secondary buttons" preference.  
 See the Windows SwapMouseButton API docs for details.  

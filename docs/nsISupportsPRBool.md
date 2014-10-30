@@ -12,7 +12,7 @@ Scriptable storage for booleans
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

@@ -6,19 +6,19 @@ layout: default
 
 ## Methods ##
 
-### getExtensions ###
+### getExtensions(aCallback) ###
   
 The extensions object for the application. Contains a list  
 of all installed extensions.  
   
 
-### quit ###
+### quit() ###
   
 Quits the application (if nobody objects to quit-application-requested).  
 @returns whether quitting will proceed  
   
 
-### restart ###
+### restart() ###
   
 Restarts the application (if nobody objects to quit-application-requested).  
 @returns whether restarting will proceed  

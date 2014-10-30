@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### notify ###
+### notify(timer) ###
   
 @param aTimer the timer which has expired  
   

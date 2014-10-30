@@ -9,7 +9,7 @@ An interface describing an object that knows how to check for updates.
 
 ## Methods ##
 
-### checkForUpdates ###
+### checkForUpdates(listener, force) ###
   
 Checks for available updates, notifying a listener of the results.  
 @param   listener  
@@ -24,7 +24,7 @@ Checks for available updates, notifying a listener of the results.
          the app.update.enabled preference.  
   
 
-### stopChecking ###
+### stopChecking(duration) ###
   
 Ends any pending update check.  
 @param   duration  

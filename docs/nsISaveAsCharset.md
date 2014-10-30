@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### Init ###
+### Init(charset, attr, entityVersion) ###
 
-### Convert ###
+### Convert(inString) ###
 
 ## Attributes ##
 

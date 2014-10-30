@@ -10,7 +10,7 @@ manipulators so that the list can be modified or reused.
 
 ## Methods ##
 
-### addAttribute ###
+### addAttribute(uri, localName, qName, type, value) ###
   
 Add an attribute to the end of the list.  
   
@@ -29,19 +29,19 @@ the responsibility of the application.
 @param value The attribute value.  
   
 
-### clear ###
+### clear() ###
   
 Clear the attribute list for reuse.  
   
 
-### removeAttribute ###
+### removeAttribute(index) ###
   
 Remove an attribute from the list.  
   
 @param index The index of the attribute (zero-based).  
   
 
-### setAttributes ###
+### setAttributes(attributes) ###
   
 Set the attributes list. This method will clear any attributes in  
 the list before adding the attributes from the argument.  
@@ -50,7 +50,7 @@ the list before adding the attributes from the argument.
                   list with.  
   
 
-### setAttribute ###
+### setAttribute(index, uri, localName, qName, type, value) ###
   
 Set an attribute in the list.  
   
@@ -70,7 +70,7 @@ of the application.
 @param value The attribute value.  
   
 
-### setLocalName ###
+### setLocalName(index, localName) ###
   
 Set the local name of a specific attribute.  
   
@@ -79,7 +79,7 @@ Set the local name of a specific attribute.
        string for none.  
   
 
-### setQName ###
+### setQName(index, qName) ###
   
 Set the qualified name of a specific attribute.  
   
@@ -88,7 +88,7 @@ Set the qualified name of a specific attribute.
        string for none.  
   
 
-### setType ###
+### setType(index, type) ###
   
 Set the type of a specific attribute.  
   
@@ -96,7 +96,7 @@ Set the type of a specific attribute.
 @param type The attribute's type.  
   
 
-### setURI ###
+### setURI(index, uri) ###
   
 Set the Namespace URI of a specific attribute.  
   
@@ -105,7 +105,7 @@ Set the Namespace URI of a specific attribute.
        string for none.  
   
 
-### setValue ###
+### setValue(index, value) ###
   
 Set the value of a specific attribute.  
   

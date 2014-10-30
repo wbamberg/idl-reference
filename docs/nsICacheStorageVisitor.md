@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### onCacheStorageInfo ###
+### onCacheStorageInfo(aEntryCount, aConsumption, aCapacity, aDiskDirectory) ###
   
   
 
-### onCacheEntryInfo ###
+### onCacheEntryInfo(aURI, aIdEnhance, aDataSize, aFetchCount, aLastModifiedTime, aExpirationTime) ###
   
   
 
-### onCacheEntryVisitCompleted ###
+### onCacheEntryVisitCompleted() ###
   
   

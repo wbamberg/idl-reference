@@ -10,7 +10,7 @@ platform-specific applications for handling particular URLs.
 
 ## Methods ##
 
-### getURLHandlerInfoFromOS ###
+### getURLHandlerInfoFromOS(aURL, aFound) ###
   
 Given a URL, looks up the handler info from the OS. This should be  
 overridden by each OS's implementation.  

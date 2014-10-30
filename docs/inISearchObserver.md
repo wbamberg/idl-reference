@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### onSearchStart ###
+### onSearchStart(aModule) ###
 
-### onSearchResult ###
+### onSearchResult(aModule) ###
 
-### onSearchEnd ###
+### onSearchEnd(aModule, aResult) ###
 
-### onSearchError ###
+### onSearchError(aModule, aMessage) ###
 
 ## Constants ##
 

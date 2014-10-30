@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### newProxiedChannel2 ###
+### newProxiedChannel2(uri, proxyInfo, proxyResolveFlags, proxyURI, aLoadInfo) ###
  Create a new channel with the given proxyInfo  
   
 @param uri the channel uri  
@@ -23,7 +23,7 @@ layout: default
        a ws:// uri.  
   
 
-### newProxiedChannel ###
+### newProxiedChannel(uri, proxyInfo, proxyResolveFlags, proxyURI) ###
  Create a new channel with the given proxyInfo  
   
 @param uri the channel uri  

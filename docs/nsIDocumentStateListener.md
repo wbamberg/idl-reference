@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### NotifyDocumentCreated ###
+### NotifyDocumentCreated() ###
 
-### NotifyDocumentWillBeDestroyed ###
+### NotifyDocumentWillBeDestroyed() ###
 
-### NotifyDocumentStateChanged ###
+### NotifyDocumentStateChanged(nowDirty) ###

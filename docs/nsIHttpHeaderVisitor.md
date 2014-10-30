@@ -9,7 +9,7 @@ Implement this interface to visit http headers.
 
 ## Methods ##
 
-### visitHeader ###
+### visitHeader(aHeader, aValue) ###
   
 Called by the nsIHttpChannel implementation when visiting request and  
 response headers.  

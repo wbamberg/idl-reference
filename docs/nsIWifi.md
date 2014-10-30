@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### shutdown ###
+### shutdown() ###
   
 Shutdown the wifi system.  
   
 
-### getWifiScanResults ###
+### getWifiScanResults(callback) ###
   
 Returns the list of currently available networks as well as the list of  
 currently configured networks.  

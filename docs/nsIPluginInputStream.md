@@ -9,9 +9,9 @@ The nsIPluginInputStream interface ...
 
 ## Methods ##
 
-### getLastModified ###
+### getLastModified(aResult) ###
   
  Corresponds to NPStream's lastmodified field.)  
   
 
-### requestRead ###
+### requestRead(aRangeList) ###

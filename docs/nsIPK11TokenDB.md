@@ -15,8 +15,8 @@ nsIPK11TokenDB - Manages PK11 Tokens
 
 ## Methods ##
 
-### getInternalKeyToken ###
+### getInternalKeyToken() ###
 
-### findTokenByName ###
+### findTokenByName(tokenName) ###
 
-### listTokens ###
+### listTokens() ###

@@ -6,41 +6,41 @@ layout: default
 
 ## Methods ##
 
-### getElementsByName ###
+### getElementsByName(elementName) ###
 
-### getItems ###
+### getItems(types) ###
 
-### open ###
+### open(aContentTypeOrUrl, aReplaceOrName, aFeatures) ###
 
-### close ###
+### close() ###
 
-### write ###
+### write(text) ###
 
-### writeln ###
+### writeln(text) ###
 
-### execCommand ###
+### execCommand(commandID, doShowUI, value) ###
 
-### queryCommandEnabled ###
+### queryCommandEnabled(commandID) ###
 
-### queryCommandIndeterm ###
+### queryCommandIndeterm(commandID) ###
 
-### queryCommandState ###
+### queryCommandState(commandID) ###
 
-### queryCommandSupported ###
+### queryCommandSupported(commandID) ###
 
-### queryCommandValue ###
+### queryCommandValue(commandID) ###
 
-### clear ###
+### clear() ###
 
-### getSelection ###
+### getSelection() ###
 
-### captureEvents ###
+### captureEvents() ###
   
 @deprecated These are old Netscape 4 methods. Do not use,  
             the implementation is no-op.  
   
 
-### releaseEvents ###
+### releaseEvents() ###
 
 ## Attributes ##
 

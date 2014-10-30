@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### factoryReset ###
+### factoryReset(reason) ###
   
 Uses recovery to wipe the data and cache partitions. If this call is  
 successful, the device should reboot before the function call ever returns.  
@@ -14,7 +14,7 @@ successful, the device should reboot before the function call ever returns.
 @throws NS_ERROR_FAILURE when rebooting into recovery fails for some reason.  
   
 
-### installFotaUpdate ###
+### installFotaUpdate(updatePath) ###
   
 Use recovery to install an OTA update.zip. If this call is  
 successful, the device should reboot before the function call ever returns.  
@@ -22,7 +22,7 @@ successful, the device should reboot before the function call ever returns.
 @throws NS_ERROR_FAILURE when rebooting into recovery fails for some reason.  
   
 
-### getFotaUpdateStatus ###
+### getFotaUpdateStatus() ###
   
 @return The status of the last FOTA update. One of FOTA_UPDATE_UNKNOWN,  
         FOTA_UPDATE_FAIL, FOTA_UPDATE_SUCCESS.  

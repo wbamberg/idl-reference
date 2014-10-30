@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### setAlarm ###
+### setAlarm(aSeconds, aNanoseconds) ###
 
-### setAlarmFiredCb ###
+### setAlarmFiredCb(aAlarmFiredCb) ###
 
-### setTimezoneChangedCb ###
+### setTimezoneChangedCb(aTimezoneChangedCb) ###

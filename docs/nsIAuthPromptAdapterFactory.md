@@ -10,7 +10,7 @@ them usable via an nsIAuthPrompt2 interface.
 
 ## Methods ##
 
-### createAdapter ###
+### createAdapter(aPrompt) ###
   
 Wrap an object implementing nsIAuthPrompt so that it's usable via  
 nsIAuthPrompt2.  

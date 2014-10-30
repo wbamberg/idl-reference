@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### open ###
+### open(host, port, options) ###
   
 Create and return a socket object which will attempt to connect to  
 the given host and port.  
@@ -25,7 +25,7 @@ the given host and port.
 @return The new TCPSocket instance.  
   
 
-### listen ###
+### listen(localPort, options, backlog) ###
   
 Listen on a port  
   
@@ -44,28 +44,28 @@ Listen on a port
 @return The new TCPServerSocket instance.  
   
 
-### upgradeToSecure ###
+### upgradeToSecure() ###
   
 Enable secure on channel.  
   
 
-### suspend ###
+### suspend() ###
   
 Pause reading incoming data and invocations of the ondata handler until  
 resume is called.  
   
 
-### resume ###
+### resume() ###
   
 Resume reading incoming data and invoking ondata as usual.  
   
 
-### close ###
+### close() ###
   
 Close the socket.  
   
 
-### send ###
+### send(data, byteOffset, byteLength) ###
   
 Write data to the socket.  
   

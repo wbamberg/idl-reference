@@ -12,7 +12,7 @@ some customization on how URLs are normalized.
 
 ## Methods ##
 
-### init ###
+### init(aUrlType, aDefaultPort, aSpec, aOriginCharset, aBaseURI) ###
   
 Initialize a standard URL.  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### performSimpleAction ###
+### performSimpleAction(isLongPress) ###
   
 Perform haptic feedback  
   

@@ -30,7 +30,7 @@ parameters may be null, except where noted.
 
 ## Methods ##
 
-### queryElementAt ###
+### queryElementAt(index, uuid, result) ###
   
 queryElementAt()  
   
@@ -49,7 +49,7 @@ this method, but exceptions are thrown in other circumstances
   
   
 
-### indexOf ###
+### indexOf(startIndex, element) ###
   
 indexOf()  
   
@@ -66,7 +66,7 @@ is not found.
 @throws NS_ERROR_FAILURE if the element was not in the array.  
   
 
-### enumerate ###
+### enumerate() ###
   
 enumerate the array  
   

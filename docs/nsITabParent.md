@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### injectTouchEvent ###
+### injectTouchEvent(aType, aIdentifiers, aXs, aYs, aRxs, aRys, aRotationAngles, aForces, count, aModifiers) ###
 
-### setIsDocShellActive ###
+### setIsDocShellActive(aIsActive) ###
 
 ## Attributes ##
 

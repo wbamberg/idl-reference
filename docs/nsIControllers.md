@@ -6,20 +6,20 @@ layout: default
 
 ## Methods ##
 
-### getControllerForCommand ###
+### getControllerForCommand(command) ###
 
-### insertControllerAt ###
+### insertControllerAt(index, controller) ###
 
-### removeControllerAt ###
+### removeControllerAt(index) ###
 
-### getControllerAt ###
+### getControllerAt(index) ###
 
-### appendController ###
+### appendController(controller) ###
 
-### removeController ###
+### removeController(controller) ###
 
-### getControllerId ###
+### getControllerId(controller) ###
 
-### getControllerById ###
+### getControllerById(controllerID) ###
 
-### getControllerCount ###
+### getControllerCount() ###

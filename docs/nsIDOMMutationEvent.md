@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initMutationEvent ###
+### initMutationEvent(typeArg, canBubbleArg, cancelableArg, relatedNodeArg, prevValueArg, newValueArg, attrNameArg, attrChangeArg) ###
 
 ## Attributes ##
 

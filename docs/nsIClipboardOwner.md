@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### LosingOwnership ###
+### LosingOwnership(aTransferable) ###
   
 Notifies the owner of the clipboard transferable that the  
 transferable is being removed from the clipboard  

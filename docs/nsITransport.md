@@ -21,7 +21,7 @@ See nsISocketTransport for more info about socket transport specifics.
 
 ## Methods ##
 
-### openInputStream ###
+### openInputStream(aFlags, aSegmentSize, aSegmentCount) ###
   
 Open an input stream on this transport.  
   
@@ -54,7 +54,7 @@ OPEN_UNBUFFERED
        maximum number of buffer segments (pass 0 to use default value).  
   
 
-### openOutputStream ###
+### openOutputStream(aFlags, aSegmentSize, aSegmentCount) ###
   
 Open an output stream on this transport.  
   
@@ -87,7 +87,7 @@ OPEN_UNBUFFERED
        maximum number of buffer segments (pass 0 to use default value).  
   
 
-### close ###
+### close(aReason) ###
   
 Close the transport and any open streams.  
   
@@ -95,7 +95,7 @@ Close the transport and any open streams.
        the reason for closing the stream.  
   
 
-### setEventSink ###
+### setEventSink(aSink, aEventTarget) ###
   
 Set the transport event sink.  
   

@@ -9,7 +9,7 @@ Represents an object that can be stored in a hashtable.
 
 ## Methods ##
 
-### equals ###
+### equals(aOther) ###
   
 Is this object the equivalent of the other object?  
   

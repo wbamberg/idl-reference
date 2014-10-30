@@ -16,13 +16,13 @@ http://www.whatwg.org/specs/web-apps/current-work/
 
 ## Methods ##
 
-### checkValidity ###
+### checkValidity() ###
 
-### setCustomValidity ###
+### setCustomValidity(error) ###
 
-### select ###
+### select() ###
 
-### setSelectionRange ###
+### setSelectionRange(selectionStart, selectionEnd, direction) ###
 
 ## Attributes ##
 

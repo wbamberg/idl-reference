@@ -15,7 +15,7 @@ parse.
 
 ## Methods ##
 
-### setFeature ###
+### setFeature(name, value) ###
   
 Set the value of a feature flag.  
   
@@ -37,7 +37,7 @@ http://xml.org/sax/features/namespace-prefixes .  All other
 features will result in a NOT_IMPLEMENTED exception.  
   
 
-### getFeature ###
+### getFeature(name) ###
   
 Look up the value of a feature flag.  
   
@@ -58,7 +58,7 @@ http://xml.org/sax/features/namespace-prefixes .  All other
 features will result in a NOT_IMPLEMENTED exception.  
   
 
-### setProperty ###
+### setProperty(name, value) ###
   
 Set the value of a property. NOT CURRENTLY IMPLEMENTED.  
   
@@ -78,7 +78,7 @@ extended handlers.
 @param value Turn the feature on/off.  
   
 
-### getProperty ###
+### getProperty(name) ###
   
 Look up the value of a property. NOT CURRENTLY IMPLEMENTED.  
   
@@ -99,7 +99,7 @@ using names built on their own URIs.
 @return The current value of the property.  
   
 
-### parseFromString ###
+### parseFromString(str, contentType) ###
   
   
 @param str The UTF16 string to be parsed  
@@ -107,7 +107,7 @@ using names built on their own URIs.
   
   
 
-### parseFromStream ###
+### parseFromStream(stream, charset, contentType) ###
   
   
 @param stream The byte stream whose contents are parsed  
@@ -119,7 +119,7 @@ using names built on their own URIs.
   
   
 
-### parseAsync ###
+### parseAsync(observer) ###
   
 Begin an asynchronous parse. This method initializes the parser,  
 and must be called before any nsIStreamListener methods. It is  

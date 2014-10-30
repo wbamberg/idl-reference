@@ -6,31 +6,31 @@ layout: default
 
 ## Methods ##
 
-### getAttention ###
+### getAttention() ###
 
-### getAttentionWithCycleCount ###
+### getAttentionWithCycleCount(aCycleCount) ###
 
-### setCursor ###
+### setCursor(cursor) ###
 
-### maximize ###
+### maximize() ###
 
-### minimize ###
+### minimize() ###
 
-### restore ###
+### restore() ###
 
-### notifyDefaultButtonLoaded ###
+### notifyDefaultButtonLoaded(defaultButton) ###
   
 Notify a default button is loaded on a dialog or a wizard.  
 defaultButton is the default button.  
   
 
-### getGroupMessageManager ###
+### getGroupMessageManager(group) ###
   
 Returns the message manager identified by the given group name that  
 manages all frame loaders belonging to that group.  
   
 
-### beginWindowMove ###
+### beginWindowMove(mouseDownEvent, panel) ###
   
 On some operating systems, we must allow the window manager to  
 handle window dragging. This function tells the window manager to  

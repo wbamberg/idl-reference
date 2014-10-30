@@ -36,7 +36,7 @@ Notes:
 
 ## Methods ##
 
-### allowStartDrag ###
+### allowStartDrag(event) ###
   
 Prevents the drag from starting  
   
@@ -46,7 +46,7 @@ Prevents the drag from starting
 @return FALSE drag is cancelled, does not go to OS  
   
 
-### allowDrop ###
+### allowDrop(event, session) ###
   
 Tells gecko whether a drop is allowed on this content area  
   
@@ -60,7 +60,7 @@ Tells gecko whether a drop is allowed on this content area
                will change the cursor to "reject".  
   
 
-### onCopyOrDrag ###
+### onCopyOrDrag(aEvent, trans) ###
   
 Alter the flavors or data presented to the OS  
 Used for drag and copy actions  
@@ -76,7 +76,7 @@ not negatively impacted.
 @return FALSE copy/drag is cancelled, does not go to OS  
   
 
-### onPasteOrDrop ###
+### onPasteOrDrop(event, trans) ###
   
 Provide an alternative action to the built-in behavior when  
 something is dropped on the browser or in an editor  

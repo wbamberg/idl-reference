@@ -9,7 +9,7 @@ A stream that allows you to read from a file or stream to a file.
 
 ## Methods ##
 
-### init ###
+### init(file, ioFlags, perm, behaviorFlags) ###
   
 @param file          file to read from or stream to  
 @param ioFlags       file open flags listed in prio.h (see  

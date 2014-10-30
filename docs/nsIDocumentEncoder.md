@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aDocument, aMimeType, aFlags) ###
   
 Initialize with a pointer to the document and the mime type.  
 @param aDocument Document to encode.  
@@ -14,9 +14,9 @@ Initialize with a pointer to the document and the mime type.
 @param aFlags Flags to use while encoding. May also be set by SetFlags.  
   
 
-### nativeInit ###
+### nativeInit(aDocument, aMimeType, aFlags) ###
 
-### setSelection ###
+### setSelection(aSelection) ###
   
  If the selection is set to a non-null value, then the  
  selection is used for encoding, otherwise the entire  
@@ -24,7 +24,7 @@ Initialize with a pointer to the document and the mime type.
 @param aSelection The selection to encode.  
   
 
-### setRange ###
+### setRange(aRange) ###
   
  If the range is set to a non-null value, then the  
  range is used for encoding, otherwise the entire  
@@ -32,7 +32,7 @@ Initialize with a pointer to the document and the mime type.
 @param aRange The range to encode.  
   
 
-### setNode ###
+### setNode(aNode) ###
   
  If the node is set to a non-null value, then the  
  node is used for encoding, otherwise the entire  
@@ -40,9 +40,9 @@ Initialize with a pointer to the document and the mime type.
 @param aNode The node to encode.  
   
 
-### setNativeNode ###
+### setNativeNode(aNode) ###
 
-### setContainerNode ###
+### setContainerNode(aContainer) ###
   
  If the container is set to a non-null value, then its  
  child nodes are used for encoding, otherwise the entire  
@@ -50,9 +50,9 @@ Initialize with a pointer to the document and the mime type.
  @param aContainer The node which child nodes will be encoded.  
   
 
-### setNativeContainerNode ###
+### setNativeContainerNode(aContainer) ###
 
-### setCharset ###
+### setCharset(aCharset) ###
   
  Documents typically have an intrinsic character set,  
  but if no intrinsic value is found, the platform character set  
@@ -64,13 +64,13 @@ Initialize with a pointer to the document and the mime type.
  Possible result codes: NS_ERROR_NO_CHARSET_CONVERTER  
   
 
-### setWrapColumn ###
+### setWrapColumn(aWrapColumn) ###
   
  Set a wrap column.  This may have no effect in some types of encoders.  
 @param aWrapColumn Column to which to wrap.  
   
 
-### encodeToStream ###
+### encodeToStream(aStream) ###
   
  Encode the document and send the result to the nsIOutputStream.  
   
@@ -79,14 +79,14 @@ Initialize with a pointer to the document and the mime type.
 @param aStream Stream into which to encode.  
   
 
-### encodeToString ###
+### encodeToString() ###
   
 Encode the document into a string.  
   
 @return The document encoded into a string.  
   
 
-### encodeToStringWithContext ###
+### encodeToStringWithContext(aContextString, aInfoString) ###
   
 Encode the document into a string. Stores the extra context information  
 into the two arguments.  
@@ -98,7 +98,7 @@ into the two arguments.
   
   
 
-### encodeToStringWithMaxLength ###
+### encodeToStringWithMaxLength(aMaxLength) ###
   
 Encode the document into a string of limited size.  
 @param aMaxLength After aMaxLength characters, the encoder will stop  
@@ -113,7 +113,7 @@ Encode the document into a string of limited size.
 @return The document encoded into a string.  
   
 
-### setNodeFixup ###
+### setNodeFixup(aFixup) ###
   
 Set the fixup object associated with node persistence.  
 @param aFixup The fixup object.  

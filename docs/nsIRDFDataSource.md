@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### GetSource ###
+### GetSource(aProperty, aTarget, aTruthValue) ###
  Find an RDF resource that points to a given node over the  
 specified arc & truth value  
   
@@ -14,13 +14,13 @@ specified arc & truth value
 to the target with the specified property.  
   
 
-### GetSources ###
+### GetSources(aProperty, aTarget, aTruthValue) ###
   
 Find all RDF resources that point to a given node over the  
 specified arc & truth value  
   
 
-### GetTarget ###
+### GetTarget(aSource, aProperty, aTruthValue) ###
   
 Find a child of that is related to the source by the given arc  
 arc and truth value  
@@ -29,23 +29,23 @@ arc and truth value
 source via the specified property.  
   
 
-### GetTargets ###
+### GetTargets(aSource, aProperty, aTruthValue) ###
   
 Find all children of that are related to the source by the given arc  
 arc and truth value.  
   
 
-### Assert ###
+### Assert(aSource, aProperty, aTarget, aTruthValue) ###
   
 Add an assertion to the graph.  
   
 
-### Unassert ###
+### Unassert(aSource, aProperty, aTarget) ###
   
 Remove an assertion from the graph.  
   
 
-### Change ###
+### Change(aSource, aProperty, aOldTarget, aNewTarget) ###
   
 Change an assertion from  
   
@@ -56,7 +56,7 @@ to
   [aSource]--[aProperty]-->[aNewTarget]  
   
 
-### Move ###
+### Move(aOldSource, aNewSource, aProperty, aTarget) ###
   
 'Move' an assertion from  
   
@@ -67,68 +67,68 @@ to
   [aNewSource]--[aProperty]-->[aTarget]  
   
 
-### HasAssertion ###
+### HasAssertion(aSource, aProperty, aTarget, aTruthValue) ###
   
 Query whether an assertion exists in this graph.  
   
 
-### AddObserver ###
+### AddObserver(aObserver) ###
   
 Add an observer to this data source. If the datasource  
 supports observers, the datasource source should hold a strong  
 reference to the observer.  
   
 
-### RemoveObserver ###
+### RemoveObserver(aObserver) ###
   
 Remove an observer from this data source.  
   
 
-### ArcLabelsIn ###
+### ArcLabelsIn(aNode) ###
   
 Get a cursor to iterate over all the arcs that point into a node.  
   
 
-### ArcLabelsOut ###
+### ArcLabelsOut(aSource) ###
   
 Get a cursor to iterate over all the arcs that originate in  
 a resource.  
   
 
-### GetAllResources ###
+### GetAllResources() ###
   
 Retrieve all of the resources that the data source currently  
 refers to.  
   
 
-### IsCommandEnabled ###
+### IsCommandEnabled(aSources, aCommand, aArguments) ###
   
 Returns whether a given command is enabled for a set of sources.   
   
 
-### DoCommand ###
+### DoCommand(aSources, aCommand, aArguments) ###
   
 Perform the specified command on set of sources.  
   
 
-### GetAllCmds ###
+### GetAllCmds(aSource) ###
   
 Returns the set of all commands defined for a given source.  
   
 
-### hasArcIn ###
+### hasArcIn(aNode, aArc) ###
   
 Returns true if the specified node is pointed to by the specified arc.  
 Equivalent to enumerating ArcLabelsIn and comparing for the specified arc.  
   
 
-### hasArcOut ###
+### hasArcOut(aSource, aArc) ###
   
 Returns true if the specified node has the specified outward arc.  
 Equivalent to enumerating ArcLabelsOut and comparing for the specified arc.  
   
 
-### beginUpdateBatch ###
+### beginUpdateBatch() ###
   
 Notify observers that the datasource is about to send several  
 notifications at once.  
@@ -136,7 +136,7 @@ This must be followed by calling endUpdateBatch(), otherwise
 viewers will get out of sync.  
   
 
-### endUpdateBatch ###
+### endUpdateBatch() ###
   
 Notify observers that the datasource has completed issuing  
 a notification group.  

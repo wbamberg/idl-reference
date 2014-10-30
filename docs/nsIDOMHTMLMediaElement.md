@@ -15,17 +15,17 @@ http://www.whatwg.org/specs/web-apps/current-work/#htmlmediaelement
 
 ## Methods ##
 
-### load ###
+### load() ###
 
-### canPlayType ###
+### canPlayType(type) ###
 
-### play ###
+### play() ###
 
-### pause ###
+### pause() ###
 
-### mozGetMetadata ###
+### mozGetMetadata() ###
 
-### isVideo ###
+### isVideo() ###
 
 ## Attributes ##
 

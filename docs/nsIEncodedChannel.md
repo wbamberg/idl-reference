@@ -9,7 +9,7 @@ A channel interface which allows special handling of encoded content
 
 ## Methods ##
 
-### doApplyContentConversions ###
+### doApplyContentConversions(aNextListener, aNewNextListener, aCtxt) ###
   
 This function will start converters if they are available.  
 aNewNextListener will be nullptr if no converter is available.  

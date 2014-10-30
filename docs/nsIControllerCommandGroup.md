@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### addCommandToGroup ###
+### addCommandToGroup(aCommand, aGroup) ###
 
-### removeCommandFromGroup ###
+### removeCommandFromGroup(aCommand, aGroup) ###
 
-### isCommandInGroup ###
+### isCommandInGroup(aCommand, aGroup) ###
 
-### getGroupsEnumerator ###
+### getGroupsEnumerator() ###
 
-### getEnumeratorForGroup ###
+### getEnumeratorForGroup(aGroup) ###

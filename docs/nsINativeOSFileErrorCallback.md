@@ -9,7 +9,7 @@ A callback invoked in case of error.
 
 ## Methods ##
 
-### complete ###
+### complete(operation, OSstatus) ###
   
 @param operation The name of the failed operation. Provided to aid  
 debugging only, may change without notice.  

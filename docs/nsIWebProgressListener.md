@@ -13,7 +13,7 @@ relationship of nsIWebProgress instances.
 
 ## Methods ##
 
-### onStateChange ###
+### onStateChange(aWebProgress, aRequest, aStateFlags, aStatus) ###
   
 Notification indicating the state has changed for one of the requests  
 associated with aWebProgress.  
@@ -37,7 +37,7 @@ associated with aWebProgress.
        error information (e.g., for HTTP requests see nsIHttpChannel).  
   
 
-### onProgressChange ###
+### onProgressChange(aWebProgress, aRequest, aCurSelfProgress, aMaxSelfProgress, aCurTotalProgress, aMaxTotalProgress) ###
   
 Notification that the progress has changed for one of the requests  
 associated with aWebProgress.  Progress totals are reset to zero when all  
@@ -66,7 +66,7 @@ knows about that interface, this function will not be called. Instead,
 nsIWebProgressListener2::onProgressChange64 will be called.  
   
 
-### onLocationChange ###
+### onLocationChange(aWebProgress, aRequest, aLocation, aFlags) ###
   
 Called when the location of the window being watched changes.  This is not  
 when a load is requested, but rather once it is verified that the load is  
@@ -86,7 +86,7 @@ this new page here.
        the location has changed.  
   
 
-### onStatusChange ###
+### onStatusChange(aWebProgress, aRequest, aStatus, aMessage) ###
   
 Notification that the status of a request has changed.  The status message  
 is intended to be displayed to the user (e.g., in the status bar of the  
@@ -105,7 +105,7 @@ browser).
        Localized text corresponding to aStatus.  
   
 
-### onSecurityChange ###
+### onSecurityChange(aWebProgress, aRequest, aState) ###
   
 Notification called for security progress.  This method will be called on  
 security transitions (eg HTTP -> HTTPS, HTTPS -> HTTP, FOO -> HTTPS) and  

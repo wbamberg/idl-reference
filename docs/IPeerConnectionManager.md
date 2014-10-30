@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### hasActivePeerConnection ###
+### hasActivePeerConnection(innerWindowID) ###

@@ -13,7 +13,7 @@ the reference to the launcher dialog.
 
 ## Methods ##
 
-### saveToDisk ###
+### saveToDisk(aNewFileLocation, aRememberThisPreference) ###
   
 Saves the final destination of the file. Does not actually perform the  
 save.  
@@ -21,7 +21,7 @@ NOTE: This will release the reference to the
 nsIHelperAppLauncherDialog.  
   
 
-### launchWithApplication ###
+### launchWithApplication(aApplication, aRememberThisPreference) ###
   
 Remembers that aApplication should be used to launch this content. Does  
 not actually launch the application.  
@@ -30,14 +30,14 @@ NOTE: This will release the reference to the nsIHelperAppLauncherDialog.
 @param aRememberThisPreference TRUE if we should remember this choice.  
   
 
-### saveDestinationAvailable ###
+### saveDestinationAvailable(aFile) ###
   
 Callback invoked by nsIHelperAppLauncherDialog::promptForSaveToFileAsync  
 after the user has chosen a file through the File Picker (or dismissed it).  
 @param aFile The file that was chosen by the user (or null if dialog was dismissed).  
   
 
-### setWebProgressListener ###
+### setWebProgressListener(aWebProgressListener) ###
   
 The following methods are used by the progress dialog to get or set  
 information on the current helper app launcher download.  

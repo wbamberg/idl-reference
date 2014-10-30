@@ -21,7 +21,7 @@ getBindingObjectFor methods.
 
 ## Methods ##
 
-### getBindingFor ###
+### getBindingFor(aVar) ###
   
 Get the string representation of the value of a variable for this  
 result. This string will be used in the action body from a template as  
@@ -35,7 +35,7 @@ name, thus aVar should be ?name and not simply name.
 @return the value for the variable or a null string if it has no value  
   
 
-### getBindingObjectFor ###
+### getBindingObjectFor(aVar) ###
   
 Get an object value for a variable such as ?name for this result.   
   
@@ -48,7 +48,7 @@ convenience when sorting results.
 @return the value for the variable or null if it has no value  
   
 
-### ruleMatched ###
+### ruleMatched(aQuery, aRuleNode) ###
   
 Indicate that a particular rule of a query has matched and that output  
 will be generated for it. Both the query as compiled by the query  
@@ -61,7 +61,7 @@ the <query> element that was used to compile the query.
 @param aRuleNode the rule node that matched  
   
 
-### hasBeenRemoved ###
+### hasBeenRemoved() ###
   
 Indicate that the output for a result has beeen removed and that the  
 result is no longer being used by the builder.  

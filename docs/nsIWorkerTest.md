@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### postMessage ###
+### postMessage(data) ###
 
-### terminate ###
+### terminate() ###
 
 ## Attributes ##
 

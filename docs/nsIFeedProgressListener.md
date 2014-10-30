@@ -10,7 +10,7 @@ processing.
 
 ## Methods ##
 
-### reportError ###
+### reportError(errorText, lineNumber, bozo) ###
   
 ReportError will be called in the event of fatal  
 XML errors, or if the document is not a feed. The bozo   
@@ -22,7 +22,7 @@ bit will be set if the error was due to a fatal error.
        The line on which the error occurred.  
   
 
-### handleStartFeed ###
+### handleStartFeed(result) ###
   
 StartFeed will be called as soon as a reasonable start to  
 a feed is detected.   
@@ -33,7 +33,7 @@ a feed is detected.
        information.  
   
 
-### handleFeedAtFirstEntry ###
+### handleFeedAtFirstEntry(result) ###
   
 Called when the first entry/item is encountered. In Atom, all  
 feed data is required to preceed the entries. In RSS, the data  
@@ -46,7 +46,7 @@ this event will not be called.
        most of its feed-level metadata.  
   
 
-### handleEntry ###
+### handleEntry(entry, result) ###
   
 Called after each entry/item. If the document is a standalone  
 item or entry, this HandleFeedAtFirstEntry will not have been  

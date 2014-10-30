@@ -12,7 +12,7 @@ or any DOM subtree.
 
 ## Methods ##
 
-### serializeToString ###
+### serializeToString(root) ###
   
 The subtree rooted by the specified element is serialized to  
 a string.  
@@ -22,7 +22,7 @@ a string.
 @returns The serialized subtree in the form of a Unicode string  
   
 
-### serializeToStream ###
+### serializeToStream(root, stream, charset) ###
   
 The subtree rooted by the specified element is serialized to  
 a byte stream using the character set specified.  

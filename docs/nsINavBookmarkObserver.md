@@ -9,7 +9,7 @@ Observer for bookmarks changes.
 
 ## Methods ##
 
-### onBeginUpdateBatch ###
+### onBeginUpdateBatch() ###
   
 Notifies that a batch transaction has started.  
 Other notifications will be sent during the batch, but the observer is  
@@ -19,12 +19,12 @@ handle notifications, since multiple changes are going to happen in a short
 timeframe.  
   
 
-### onEndUpdateBatch ###
+### onEndUpdateBatch() ###
   
 Notifies that a batch transaction has ended.  
   
 
-### onItemAdded ###
+### onItemAdded(aItemId, aParentId, aIndex, aItemType, aURI, aTitle, aDateAdded, aGuid, aParentGuid) ###
   
 Notifies that an item (any type) was added.  Called after the actual  
 addition took place.  
@@ -52,7 +52,7 @@ be sent.
        The unique ID associated with the item's parent.  
   
 
-### onItemRemoved ###
+### onItemRemoved(aItemId, aParentId, aIndex, aItemType, aURI, aGuid, aParentGuid) ###
   
 Notifies that an item was removed.  Called after the actual remove took  
 place.  
@@ -76,7 +76,7 @@ be sent.
        The unique ID associated with the item's parent.  
   
 
-### onItemChanged ###
+### onItemChanged(aItemId, aProperty, aIsAnnotationProperty, aNewValue, aLastModified, aItemType, aParentId, aGuid, aParentGuid) ###
   
 Notifies that an item's information has changed.  This will be called  
 whenever any attributes like "title" are changed.  
@@ -116,7 +116,7 @@ whenever any attributes like "title" are changed.
       lastModified  | PRTime (as string) when the item was last modified.  
   
 
-### onItemVisited ###
+### onItemVisited(aItemId, aVisitId, aTime, aTransitionType, aURI, aParentId, aGuid, aParentGuid) ###
   
 Notifies that the item was visited.  Can be invoked only for TYPE_BOOKMARK  
 items.  
@@ -148,7 +148,7 @@ items.
       recent visit for that page.  
   
 
-### onItemMoved ###
+### onItemMoved(aItemId, aOldParentId, aOldIndex, aNewParentId, aNewIndex, aItemType, aGuid, aOldParentGuid, aNewParentGuid) ###
   
 Notifies that an item has been moved.  
   

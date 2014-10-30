@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### getMessage ###
+### getMessage(messageId, request) ###
 
-### deleteMessage ###
+### deleteMessage(messageIds, count, request) ###
 
-### createMessageCursor ###
+### createMessageCursor(hasStartDate, startDate, hasEndDate, endDate, numbers, numbersCount, delivery, hasRead, read, threadId, reverse, callback) ###
 
-### markMessageRead ###
+### markMessageRead(messageId, value, sendReadReport, request) ###
 
-### createThreadCursor ###
+### createThreadCursor(callback) ###

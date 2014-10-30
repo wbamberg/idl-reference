@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### watchPosition ###
+### watchPosition(callback, errorCallback, options) ###
 
-### getCurrentPosition ###
+### getCurrentPosition(callback, errorCallback, options) ###
 
-### clearWatch ###
+### clearWatch(watchId) ###

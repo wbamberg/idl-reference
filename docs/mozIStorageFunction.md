@@ -19,7 +19,7 @@ These functions can be called from triggers, too.
 
 ## Methods ##
 
-### onFunctionCall ###
+### onFunctionCall(aFunctionArguments) ###
   
 onFunctionCall is called when execution of a custom  
 function should occur.  

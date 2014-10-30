@@ -17,13 +17,13 @@ it, it will leak!
 
 ## Methods ##
 
-### nodeForTreeIndex ###
+### nodeForTreeIndex(aIndex) ###
   
 This allows you to get at the real node for a given row index. This is  
 only valid when a tree is attached.  
   
 
-### treeIndexForNode ###
+### treeIndexForNode(aNode) ###
 
 ## Constants ##
 

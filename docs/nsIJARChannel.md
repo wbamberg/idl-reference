@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### setAppURI ###
+### setAppURI(uri) ###
   
 Forces the uri to be a app:// uri.  
   
 
-### ensureChildFd ###
+### ensureChildFd() ###
   
 For child process, set this to make sure that a valid file descriptor of  
 JAR file is always provided when calling NSPRFileDesc().  

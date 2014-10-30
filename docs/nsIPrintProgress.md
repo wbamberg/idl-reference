@@ -6,17 +6,17 @@ layout: default
 
 ## Methods ##
 
-### openProgressDialog ###
+### openProgressDialog(parent, dialogURL, parameters, openDialogObserver, notifyOnOpen) ###
 
-### closeProgressDialog ###
+### closeProgressDialog(forceClose) ###
 
-### registerListener ###
+### registerListener(listener) ###
 
-### unregisterListener ###
+### unregisterListener(listener) ###
 
-### doneIniting ###
+### doneIniting() ###
 
-### getPrompter ###
+### getPrompter() ###
 
 ## Attributes ##
 

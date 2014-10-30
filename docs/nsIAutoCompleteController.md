@@ -6,37 +6,37 @@ layout: default
 
 ## Methods ##
 
-### startSearch ###
+### startSearch(searchString) ###
 
-### stopSearch ###
+### stopSearch() ###
 
-### handleText ###
+### handleText() ###
 
-### handleEnter ###
+### handleEnter(aIsPopupSelection) ###
 
-### handleEscape ###
+### handleEscape() ###
 
-### handleStartComposition ###
+### handleStartComposition() ###
 
-### handleEndComposition ###
+### handleEndComposition() ###
 
-### handleTab ###
+### handleTab() ###
 
-### handleKeyNavigation ###
+### handleKeyNavigation(key) ###
 
-### handleDelete ###
+### handleDelete() ###
 
-### getValueAt ###
+### getValueAt(index) ###
 
-### getLabelAt ###
+### getLabelAt(index) ###
 
-### getCommentAt ###
+### getCommentAt(index) ###
 
-### getStyleAt ###
+### getStyleAt(index) ###
 
-### getImageAt ###
+### getImageAt(index) ###
 
-### getFinalCompleteValueAt ###
+### getFinalCompleteValueAt(index) ###
 
 ## Attributes ##
 

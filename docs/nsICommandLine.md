@@ -16,7 +16,7 @@ Some flags may take "parameters", e.g. "--url <param>".
 
 ## Methods ##
 
-### getArgument ###
+### getArgument(aIndex) ###
   
 Get an argument from the array of command-line arguments.  
   
@@ -32,7 +32,7 @@ are normalized to the form -flag param.
 @throws       NS_ERROR_INVALID_ARG if aIndex is out of bounds.  
   
 
-### findFlag ###
+### findFlag(aFlag, aCaseSensitive) ###
   
 Find a command-line flag.  
   
@@ -42,7 +42,7 @@ Find a command-line flag.
 @return               The position of the flag in the command line.  
   
 
-### removeArguments ###
+### removeArguments(aStart, aEnd) ###
   
 Remove arguments from the command line. This normally occurs after  
 a handler has processed the arguments.  
@@ -51,7 +51,7 @@ a handler has processed the arguments.
 @param aEnd    Index to end removing, inclusive.  
   
 
-### handleFlag ###
+### handleFlag(aFlag, aCaseSensitive) ###
   
 A helper method which will find a flag and remove it in one step.  
   
@@ -60,7 +60,7 @@ A helper method which will find a flag and remove it in one step.
 @return       Whether the flag was found.  
   
 
-### handleFlagWithParam ###
+### handleFlagWithParam(aFlag, aCaseSensitive) ###
   
 Find a flag with a parameter and remove both. This is a helper  
 method that combines "findFlag" and "removeArguments" in one step.  
@@ -73,7 +73,7 @@ method that combines "findFlag" and "removeArguments" in one step.
 @param aCaseSensitive Whether to do case-sensitive flag search.  
   
 
-### resolveFile ###
+### resolveFile(aArgument) ###
   
 Resolve a file-path argument into an nsIFile. This method gracefully  
 handles relative or absolute file paths, according to the working  
@@ -82,7 +82,7 @@ directory of this command line.
 @param aArgument  The command-line argument to resolve.  
   
 
-### resolveURI ###
+### resolveURI(aArgument) ###
   
 Resolves a URI argument into a URI. This method has platform-specific  
 logic for converting an absolute URI or a relative file-path into the  

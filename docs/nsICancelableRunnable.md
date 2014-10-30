@@ -10,7 +10,7 @@ which can be cancelled if necessary.
 
 ## Methods ##
 
-### cancel ###
+### cancel() ###
   
 Cancels a pending task.  If the task has already been executed this will  
 be a no-op.  Calling this method twice is considered an error.  

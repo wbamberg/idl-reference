@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### handleEvent ###
+### handleEvent(resultType, result) ###
   
 Called if the user picked an activitiy to launch.  
 @param resultType Inidcates that {@code result} is an index or a native activity result.  

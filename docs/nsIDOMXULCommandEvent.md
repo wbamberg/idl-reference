@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initCommandEvent ###
+### initCommandEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, sourceEvent) ###
   
 Creates a new command event with the given attributes.  
   

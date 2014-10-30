@@ -6,20 +6,20 @@ layout: default
 
 ## Methods ##
 
-### getMimeTypeFromExtension ###
+### getMimeTypeFromExtension(extension) ###
 MIME registry methods ***/  
 
-### getAppForURIScheme ###
+### getAppForURIScheme(aURIScheme) ###
 
-### getAppForMimeType ###
+### getAppForMimeType(mimeType) ###
 
-### createAppFromCommand ###
+### createAppFromCommand(cmd, appName) ###
 
-### getDescriptionForMimeType ###
+### getDescriptionForMimeType(mimeType) ###
 
-### showURI ###
+### showURI(uri) ###
 Misc. methods ***/  
 
-### showURIForInput ###
+### showURIForInput(uri) ###
 
-### orgFreedesktopFileManager1ShowItems ###
+### orgFreedesktopFileManager1ShowItems(path) ###

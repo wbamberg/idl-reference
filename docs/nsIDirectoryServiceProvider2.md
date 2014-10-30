@@ -12,7 +12,7 @@ multiple files to be returned for the given key.
 
 ## Methods ##
 
-### getFiles ###
+### getFiles(prop) ###
   
 getFiles  
   

@@ -13,11 +13,11 @@ The component is a service, so use GetService, not CreateInstance to get it.
 
 ## Methods ##
 
-### createInstance ###
+### createInstance(aCommand, aChannel, aLoadGroup, aContentType, aContainer, aExtraInfo, aDocListenerResult) ###
 
-### createInstanceForDocument ###
+### createInstanceForDocument(aContainer, aDocument, aCommand) ###
 
-### createBlankDocument ###
+### createBlankDocument(aLoadGroup, aPrincipal) ###
   
 Create a blank document using the given loadgroup and given  
 principal.  aPrincipal is allowed to be null, in which case the  

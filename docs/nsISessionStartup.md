@@ -11,13 +11,13 @@ tab history, cookies, scroll state, form data, and window features
 
 ## Methods ##
 
-### doRestore ###
+### doRestore() ###
   
 Determines whether there is a pending session restore. Should only be  
 called after initialization has completed.  
   
 
-### isAutomaticRestoreEnabled ###
+### isAutomaticRestoreEnabled() ###
   
 Determines whether automatic session restoration is enabled for this  
 launch of the browser. This does not include crash restoration, and will  

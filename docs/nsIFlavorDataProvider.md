@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getFlavorData ###
+### getFlavorData(aTransferable, aFlavor, aData, aDataLen) ###
   
 Retrieve the data from this data provider.  
   

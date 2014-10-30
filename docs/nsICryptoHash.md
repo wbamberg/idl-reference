@@ -10,7 +10,7 @@ This interface provides crytographic hashing algorithms.
 
 ## Methods ##
 
-### init ###
+### init(aAlgorithm) ###
   
 Initialize the hashing object. This method may be  
 called multiple times with different algorithm types.  
@@ -26,7 +26,7 @@ NOTE: This method or initWithString must be called
       before any other method on this interface is called.  
   
 
-### initWithString ###
+### initWithString(aAlgorithm) ###
   
 Initialize the hashing object. This method may be  
 called multiple times with different algorithm types.  
@@ -40,7 +40,7 @@ NOTE: This method or init must be called before any
       other method on this interface is called.  
   
 
-### update ###
+### update(aData, aLen) ###
   
 @param aData a buffer to calculate the hash over  
   
@@ -50,7 +50,7 @@ NOTE: This method or init must be called before any
         called.  
   
 
-### updateFromStream ###
+### updateFromStream(aStream, aLen) ###
   
 Calculates and updates a new hash based on a given data stream.  
   
@@ -68,7 +68,7 @@ Calculates and updates a new hash based on a given data stream.
   
   
 
-### finish ###
+### finish(aASCII) ###
   
 Completes this hash object and produces the actual hash data.  
   

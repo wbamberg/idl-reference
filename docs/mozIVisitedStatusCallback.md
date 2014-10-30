@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### isVisited ###
+### isVisited(aURI, aVisitedStatus) ###
   
 Notifies whether a certain URI has been visited.  
   

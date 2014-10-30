@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### addVoice ###
+### addVoice(aService, aUri, aName, aLang, aLocalService) ###
   
 Register a speech synthesis voice.  
   
@@ -17,7 +17,7 @@ Register a speech synthesis voice.
 @param aLocalService true if service does not require network.  
   
 
-### removeVoice ###
+### removeVoice(aService, aUri) ###
   
 Remove a speech synthesis voice.  
   
@@ -25,7 +25,7 @@ Remove a speech synthesis voice.
 @param aUri     a unique identifier of an existing voice.  
   
 
-### setDefaultVoice ###
+### setDefaultVoice(aUri, aIsDefault) ###
   
 Set a voice as default.  
   
@@ -33,15 +33,15 @@ Set a voice as default.
 @param aIsDefault true if this voice should be toggled as default.  
   
 
-### getVoice ###
+### getVoice(aIndex) ###
 
-### isDefaultVoice ###
+### isDefaultVoice(aUri) ###
 
-### isLocalVoice ###
+### isLocalVoice(aUri) ###
 
-### getVoiceLang ###
+### getVoiceLang(aUri) ###
 
-### getVoiceName ###
+### getVoiceName(aUri) ###
 
 ## Attributes ##
 

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### addDownload ###
+### addDownload(aDownloadType, aSource, aTarget, aDisplayName, aMIMEInfo, aStartTime, aTempFile, aCancelable, aIsPrivate) ###
   
 Creates an nsIDownload and adds it to be managed by the download manager.  
   
@@ -48,7 +48,7 @@ Creates an nsIDownload and adds it to be managed by the download manager.
       as the returned download object, then call saveURI.  
   
 
-### getDownload ###
+### getDownload(aID) ###
   
 Retrieves a download managed by the download manager.  This can be one that  
 is in progress, or one that has completed in the past and is stored in the  
@@ -59,7 +59,7 @@ database.
 @throws NS_ERROR_NOT_AVAILABLE if the download is not in the database.  
   
 
-### getDownloadByGUID ###
+### getDownloadByGUID(aGUID, aCallback) ###
   
 Retrieves a download managed by the download manager.  This can be one that  
 is in progress, or one that has completed in the past and is stored in the  
@@ -71,7 +71,7 @@ with the provided GUID.
 @param aCallback The callback to invoke with the result of the search.  
   
 
-### cancelDownload ###
+### cancelDownload(aID) ###
   
 Cancels the download with the specified ID if it's currently in-progress.  
 This calls cancel(NS_BINDING_ABORTED) on the nsICancelable provided by the  
@@ -81,7 +81,7 @@ download.
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
 
-### removeDownload ###
+### removeDownload(aID) ###
   
 Removes the download with the specified id if it's not currently  
 in-progress.  Whereas cancelDownload simply cancels the transfer, but  
@@ -100,7 +100,7 @@ the guid notification should be relied upon instead.
 @throws NS_ERROR_FAILURE if the download is active.  
   
 
-### removeDownloadsByTimeframe ###
+### removeDownloadsByTimeframe(aBeginTime, aEndTime) ###
   
 Removes all inactive downloads that were started inclusively within the  
 specified time frame.  
@@ -111,7 +111,7 @@ specified time frame.
        The end time to remove downloads by in microseconds.  
   
 
-### pauseDownload ###
+### pauseDownload(aID) ###
   
 Pause the specified download.  
   
@@ -119,7 +119,7 @@ Pause the specified download.
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
 
-### resumeDownload ###
+### resumeDownload(aID) ###
   
 Resume the specified download.  
   
@@ -127,7 +127,7 @@ Resume the specified download.
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
 
-### retryDownload ###
+### retryDownload(aID) ###
   
 Retries a failed download.  
   
@@ -138,7 +138,7 @@ Retries a failed download.
           nsIDownloadManager::DOWNLOAD_FAILED  
   
 
-### cleanUp ###
+### cleanUp() ###
    
 Removes completed, failed, and canceled downloads from the list.  
 In global private browsing mode, this operates on the relevant  
@@ -150,7 +150,7 @@ and "download-manager-remove-download" topics with a null subject to
 allow any DM consumers to react to the removals.  
   
 
-### cleanUpPrivate ###
+### cleanUpPrivate() ###
    
 Removes completed, failed, and canceled downloads from the list  
 of private downloads.  
@@ -160,7 +160,7 @@ and "download-manager-remove-download" topics with a null subject to
 allow any DM consumers to react to the removals.  
   
 
-### addListener ###
+### addListener(aListener) ###
   
 Adds a listener to the download manager. It is expected that this  
 listener will only access downloads via their deprecated integer id attribute,  
@@ -168,14 +168,14 @@ and when global private browsing compatibility mode is disabled, this listener
 will receive no notifications for downloads marked private.  
   
 
-### addPrivacyAwareListener ###
+### addPrivacyAwareListener(aListener) ###
   
 Adds a listener to the download manager. This listener must be able to  
 understand and use the guid attribute of downloads for all interactions  
 with the download manager.  
   
 
-### removeListener ###
+### removeListener(aListener) ###
   
 Removes a listener from the download manager.  
   

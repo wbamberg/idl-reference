@@ -19,7 +19,7 @@ they've been canceled, and/or not firing after re-initiatization.
 
 ## Methods ##
 
-### init ###
+### init(aObserver, aDelay, aType) ###
   
 Initialize a timer that will fire after the said delay.  
 A user must keep a reference to this timer till it is   
@@ -37,7 +37,7 @@ is no longer needed or has been cancelled.
 @param aType       timer type per TYPE* consts defined above  
   
 
-### initWithFuncCallback ###
+### initWithFuncCallback(aCallback, aClosure, aDelay, aType) ###
   
 Initialize a timer to fire after the given millisecond interval.  
 This version takes a function to call and a closure to pass to  
@@ -49,7 +49,7 @@ that function.
 @param aType      Timer type per TYPE* consts defined above  
   
 
-### initWithCallback ###
+### initWithCallback(aCallback, aDelay, aType) ###
   
 Initialize a timer to fire after the given millisecond interval.  
 This version takes a function to call.  
@@ -59,7 +59,7 @@ This version takes a function to call.
 @param aType      Timer type per TYPE* consts defined above  
   
 
-### cancel ###
+### cancel() ###
   
 Cancel the timer.  This method works on all types, not just on repeating  
 timers -- you might want to cancel a TYPE_ONE_SHOT timer, and even reuse  

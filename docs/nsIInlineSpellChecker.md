@@ -6,27 +6,27 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aEditor) ###
 
-### cleanup ###
+### cleanup(aDestroyingFrames) ###
 
-### spellCheckAfterEditorChange ###
+### spellCheckAfterEditorChange(aAction, aSelection, aPreviousSelectedNode, aPreviousSelectedOffset, aStartNode, aStartOffset, aEndNode, aEndOffset) ###
 
-### spellCheckRange ###
+### spellCheckRange(aSelection) ###
 
-### getMisspelledWord ###
+### getMisspelledWord(aNode, aOffset) ###
 
-### replaceWord ###
+### replaceWord(aNode, aOffset, aNewword) ###
 
-### addWordToDictionary ###
+### addWordToDictionary(aWord) ###
 
-### removeWordFromDictionary ###
+### removeWordFromDictionary(aWord) ###
 
-### ignoreWord ###
+### ignoreWord(aWord) ###
 
-### ignoreWords ###
+### ignoreWords(aWordsToIgnore, aCount) ###
 
-### updateCurrentDictionary ###
+### updateCurrentDictionary() ###
 
 ## Attributes ##
 

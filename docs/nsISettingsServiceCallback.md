@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### handle ###
+### handle(aName, aResult) ###
 
-### handleError ###
+### handleError(aErrorMessage) ###

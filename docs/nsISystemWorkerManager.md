@@ -9,4 +9,4 @@ Information about networks that is exposed to network manager API consumers.
 
 ## Methods ##
 
-### registerRilWorker ###
+### registerRilWorker(aClientId, aWorker) ###

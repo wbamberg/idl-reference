@@ -9,7 +9,7 @@ Scriptable storage for unsigned 32-bit integers
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

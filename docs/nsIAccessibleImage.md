@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getImagePosition ###
+### getImagePosition(coordType, x, y) ###
   
 Returns the coordinates of the image.  
   
@@ -16,7 +16,7 @@ Returns the coordinates of the image.
 @param y          the y coordinate  
   
 
-### getImageSize ###
+### getImageSize(width, height) ###
   
 Returns the size of the image.  
   

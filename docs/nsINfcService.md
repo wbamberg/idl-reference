@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### start ###
+### start(listener) ###
 
-### shutdown ###
+### shutdown() ###
 
-### sendCommand ###
+### sendCommand(param) ###

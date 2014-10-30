@@ -9,7 +9,7 @@ Provides access to particual cache storages of the network URI cache.
 
 ## Methods ##
 
-### memoryCacheStorage ###
+### memoryCacheStorage(aLoadContextInfo) ###
   
 Get storage where entries will only remain in memory, never written  
 to the disk.  
@@ -24,7 +24,7 @@ OPEN_READONLY open flag has no effect on this behavior.
    respects separate storage for private browsing.  
   
 
-### diskCacheStorage ###
+### diskCacheStorage(aLoadContextInfo, aLookupAppCache) ###
   
 Get storage where entries will be written to disk when not forbidden by  
 response headers.  
@@ -34,7 +34,7 @@ response headers.
    be first to check on to find entries in.  
   
 
-### appCacheStorage ###
+### appCacheStorage(aLoadContextInfo, aApplicationCache) ###
   
 Get storage for a specified application cache obtained using some different  
 mechanism.  
@@ -46,18 +46,18 @@ mechanism.
    work with offline cache as a whole.  
   
 
-### clear ###
+### clear() ###
   
 Evict the whole cache.  
   
 
-### purgeFromMemory ###
+### purgeFromMemory(aWhat) ###
   
 Purges data we keep warmed in memory.  Use for tests and for  
 saving memory.  
   
 
-### asyncGetDiskConsumption ###
+### asyncGetDiskConsumption(aObserver) ###
   
 Asynchronously determine how many bytes of the disk space the cache takes.  
 @see nsICacheStorageConsumptionObserver  

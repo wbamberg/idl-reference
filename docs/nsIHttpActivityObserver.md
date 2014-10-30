@@ -12,7 +12,7 @@ to observers.
 
 ## Methods ##
 
-### observeActivity ###
+### observeActivity(aHttpChannel, aActivityType, aActivitySubtype, aTimestamp, aExtraSizeData, aExtraStringData) ###
   
 observe activity from the http transport  
   

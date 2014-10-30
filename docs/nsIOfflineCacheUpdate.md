@@ -16,7 +16,7 @@ observers.
 
 ## Methods ##
 
-### init ###
+### init(aManifestURI, aDocumentURI, aDocument, aCustomProfileDir, aAppId, aInBrowser) ###
   
 Initialize the update.  
   
@@ -26,7 +26,7 @@ Initialize the update.
        The page that is requesting the update.  
   
 
-### initPartial ###
+### initPartial(aManifestURI, aClientID, aDocumentURI) ###
   
 Initialize the update for partial processing.   
   
@@ -41,7 +41,7 @@ Initialize the update for partial processing.
        when this information is unknown.  
   
 
-### initForUpdateCheck ###
+### initForUpdateCheck(aManifestURI, aAppID, aInBrowser, aObserver) ###
   
 Initialize the update to only check whether there is an update  
 to the manifest available (if it has actually changed on the server).  
@@ -61,7 +61,7 @@ to the manifest available (if it has actually changed on the server).
        update available (the manifest has not changed on the server).  
   
 
-### addDynamicURI ###
+### addDynamicURI(aURI) ###
   
 Add a dynamic URI to the offline cache as part of the update.  
   
@@ -69,13 +69,13 @@ Add a dynamic URI to the offline cache as part of the update.
        The URI to add.  
   
 
-### schedule ###
+### schedule() ###
   
 Add the update to the offline update queue.  An offline-cache-update-added  
 event will be sent to the observer service.  
   
 
-### addObserver ###
+### addObserver(aObserver, aHoldWeak) ###
   
 Observe loads that are added to the update.  
   
@@ -86,7 +86,7 @@ Observe loads that are added to the update.
        observer, FALSE for a strong reference.  
   
 
-### removeObserver ###
+### removeObserver(aObserver) ###
   
 Remove an observer from the update.  
   
@@ -94,7 +94,7 @@ Remove an observer from the update.
        the observer to remove.  
   
 
-### cancel ###
+### cancel() ###
   
 Cancel the update when still in progress. This stops all running resource  
 downloads and discards the downloaded cache version. Throws when update  

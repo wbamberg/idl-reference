@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### initListBuild ###
+### initListBuild(removedItems) ###
   
 Initializes a jump list build and returns a list of items the user removed  
 since the last time a jump list was committed. Removed items can become state  
@@ -18,7 +18,7 @@ after initListBuild is called, lists should be built in single-shot fasion.
 @returns true if the operation completed successfully.  
   
 
-### addListToBuild ###
+### addListToBuild(aCatType, items, catName) ###
   
 Adds a list and if required, a set of items for the list.  
   
@@ -38,19 +38,19 @@ since the last commit.
 @throw NS_ERROR_UNEXPECTED on internal errors.  
   
 
-### abortListBuild ###
+### abortListBuild() ###
   
 Aborts and clears the current jump list build.  
   
 
-### commitListBuild ###
+### commitListBuild() ###
   
 Commits the current jump list build to the Taskbar.  
   
 @returns true if the operation completed successfully.  
   
 
-### deleteActiveList ###
+### deleteActiveList() ###
   
 Deletes any currently applied taskbar jump list for this application.  
 Common uses would be the enabling of a privacy mode and uninstallation.  

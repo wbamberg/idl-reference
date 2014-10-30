@@ -9,7 +9,7 @@ A literal node in the graph, whose value is a string.
 
 ## Methods ##
 
-### GetValueConst ###
+### GetValueConst(aConstValue) ###
   
 An unscriptable version used to avoid a string copy. Meant  
 for use as a performance optimization.  

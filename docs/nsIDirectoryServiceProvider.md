@@ -11,7 +11,7 @@ Used by Directory Service to get file locations.
 
 ## Methods ##
 
-### getFile ###
+### getFile(prop, persistent) ###
   
 getFile  
   

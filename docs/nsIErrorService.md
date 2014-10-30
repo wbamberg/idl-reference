@@ -14,18 +14,18 @@ This service will eventually get replaced by extending xpidl to allow errors to 
 
 ## Methods ##
 
-### registerErrorStringBundle ###
+### registerErrorStringBundle(errorModule, stringBundleURL) ###
   
 Registers a string bundle URL for an error module. Error modules are obtained from  
 nsresult code with NS_ERROR_GET_MODULE.  
   
 
-### unregisterErrorStringBundle ###
+### unregisterErrorStringBundle(errorModule) ###
   
 Unregisters a string bundle URL for an error module.  
   
 
-### getErrorStringBundle ###
+### getErrorStringBundle(errorModule) ###
   
 Retrieves a string bundle URL for an error module.  
   

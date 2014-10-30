@@ -10,7 +10,7 @@ an update after it's been downloaded.
 
 ## Methods ##
 
-### processUpdate ###
+### processUpdate(update) ###
   
 Processes the update which has been downloaded.  
 This happens without restarting the application.  

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### onCompletion ###
+### onCompletion(aStatus, aLivemark) ###
   
 Invoked when a livemark is added, removed or retrieved.  
   

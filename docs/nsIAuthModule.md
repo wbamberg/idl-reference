@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aServiceName, aServiceFlags, aDomain, aUsername, aPassword) ###
  Other flags may be defined in the future */  
   
 Called to initialize an auth module.  The other methods cannot be called  
@@ -26,7 +26,7 @@ unless this method succeeds.
        the user's password  
   
 
-### getNextToken ###
+### getNextToken(aInToken, aInTokenLength, aOutToken, aOutTokenLength) ###
   
 Called to get the next token in a sequence of authentication steps.  
   
@@ -45,7 +45,7 @@ Called to get the next token in a sequence of authentication steps.
        length of the buffer (number of bytes) pointed to by aOutToken.  
   
 
-### wrap ###
+### wrap(aInToken, aInTokenLength, confidential, aOutToken, aOutTokenLength) ###
    
 Once a security context has been established through calls to GetNextToken()  
 it may be used to protect data exchanged between client and server. Calls  
@@ -67,7 +67,7 @@ Wrap() may return NS_ERROR_NOT_IMPLEMENTED, if the underlying authentication
 mechanism does not support security layers.  
   
 
-### unwrap ###
+### unwrap(aInToken, aInTokenLength, aOutToken, aOutTokenLength) ###
    
 Unwrap() is used to unpack, decrypt, and verify the checksums on data  
 returned by a server when security layers are in use.  

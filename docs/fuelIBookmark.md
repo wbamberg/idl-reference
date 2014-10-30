@@ -9,7 +9,7 @@ Interface representing a bookmark item.
 
 ## Methods ##
 
-### remove ###
+### remove() ###
   
 Removes the item from the parent folder. Used to  
 delete a bookmark or separator  

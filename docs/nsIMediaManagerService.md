@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### mediaCaptureWindowState ###
+### mediaCaptureWindowState(aWindow, aVideo, aAudio, aScreenShare, aWindowShare, aAppShare) ###
 
 ## Attributes ##
 

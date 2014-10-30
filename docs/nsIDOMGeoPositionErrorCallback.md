@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### handleEvent ###
+### handleEvent(positionError) ###

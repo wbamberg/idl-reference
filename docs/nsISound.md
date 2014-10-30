@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### play ###
+### play(aURL) ###
 
-### playSystemSound ###
+### playSystemSound(soundAlias) ###
   
 for playing system sounds  
   
@@ -16,15 +16,15 @@ NS_SYSSOUND_* params are obsolete. The new events will not be supported by
 this method.  You should use playEventSound method instaed.  
   
 
-### beep ###
+### beep() ###
 
-### init ###
+### init() ###
   
 Not strictly necessary, but avoids delay before first sound.  
 The various methods on nsISound call Init() if they need to.  
   
 
-### playEventSound ###
+### playEventSound(aEventId) ###
 
 ## Constants ##
 

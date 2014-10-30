@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(parent, title, initialColor) ###
   
 Initialize the color picker widget. The color picker will not be shown until  
 open() is called.  
@@ -25,7 +25,7 @@ also assert.
                          of this file.  
   
 
-### open ###
+### open(aColorPickerShownCallback) ###
   
 Opens the color dialog asynchrounously.  
 The results are provided via the callback object.  

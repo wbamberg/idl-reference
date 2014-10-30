@@ -12,7 +12,7 @@ handler for the protocol of the link.
 
 ## Methods ##
 
-### compareHash ###
+### compareHash(uri) ###
   
 Compare this item's hash to another uri.  
   

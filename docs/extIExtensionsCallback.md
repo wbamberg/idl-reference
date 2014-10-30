@@ -9,4 +9,4 @@ Interface representing a callback that receives an array of extIExtensions
 
 ## Methods ##
 
-### callback ###
+### callback(extensions) ###

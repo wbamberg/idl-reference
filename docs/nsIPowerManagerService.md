@@ -9,28 +9,28 @@ For use with non-content code.
 
 ## Methods ##
 
-### powerOff ###
+### powerOff() ###
   
 This API will power off the machine.  
   
 
-### reboot ###
+### reboot() ###
   
 This API will completely shut down and boot the machine.  
   
 
-### restart ###
+### restart() ###
   
 This API will restart the Gecko processes without powering off the machine.  
   
 
-### addWakeLockListener ###
+### addWakeLockListener(aListener) ###
 
-### removeWakeLockListener ###
+### removeWakeLockListener(aListener) ###
 
-### getWakeLockState ###
+### getWakeLockState(aTopic) ###
 
-### newWakeLock ###
+### newWakeLock(aTopic, aWindow) ###
   
 Return a wake lock (MozWakeLock) object of aTopic associated with aWindow.  
 A wake lock without associated window, e.g. used in chrome, is  

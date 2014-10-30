@@ -12,7 +12,7 @@ child.
 
 ## Methods ##
 
-### onRemoteFileOpenComplete ###
+### onRemoteFileOpenComplete(aOpenStatus) ###
   
 Called when result of opening RemoteOpenFileChild:AsyncRemoteFileOpen()  
 is available in child.  

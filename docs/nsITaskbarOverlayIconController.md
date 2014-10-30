@@ -10,7 +10,7 @@ the taskbar. This class wraps around the native functionality to do this.
 
 ## Methods ##
 
-### setOverlayIcon ###
+### setOverlayIcon(statusIcon, statusDescription) ###
   
 Sets the overlay icon and its corresponding alt text.  
   

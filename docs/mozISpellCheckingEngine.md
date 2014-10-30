@@ -9,12 +9,12 @@ This interface represents a SpellChecker.
 
 ## Methods ##
 
-### getDictionaryList ###
+### getDictionaryList(dictionaries, count) ###
   
 Get the list of dictionaries  
   
 
-### check ###
+### check(word) ###
   
 check a word  
   
@@ -22,7 +22,7 @@ The spellcheck engine will send a notification with
 "spellcheck-dictionary-update" as topic when this changes.  
   
 
-### suggest ###
+### suggest(word, suggestions, count) ###
   
 get a list of suggestions for a misspelled word  
   
@@ -30,17 +30,17 @@ The spellcheck engine will send a notification with
 "spellcheck-dictionary-update" as topic when this changes.  
   
 
-### loadDictionariesFromDir ###
+### loadDictionariesFromDir(dir) ###
   
 Load dictionaries from the specified dir  
   
 
-### addDirectory ###
+### addDirectory(dir) ###
   
 Add dictionaries from a directory to the spell checker  
   
 
-### removeDirectory ###
+### removeDirectory(dir) ###
   
 Remove dictionaries from a directory from the spell checker  
   

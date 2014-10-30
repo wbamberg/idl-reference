@@ -10,7 +10,7 @@ methods.  Anchors, image maps, xul:labels with class="text-link" implement this 
 
 ## Methods ##
 
-### getURI ###
+### getURI(index) ###
   
 Returns the URI at the given index.  
   
@@ -23,7 +23,7 @@ links.
 @return the nsIURI object containing the specifications for the URI.  
   
 
-### getAnchor ###
+### getAnchor(index) ###
   
 Returns a reference to the object at the given index.  
   

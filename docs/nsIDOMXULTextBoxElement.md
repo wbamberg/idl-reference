@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### select ###
+### select() ###
 
-### setSelectionRange ###
+### setSelectionRange(selectionStart, selectionEnd) ###
 
 ## Attributes ##
 

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### loadURI ###
+### loadURI(uri, loadInfo, aLoadFlags, firstParty) ###
   
 Loads a given URI.  This will give priority to loading the requested URI  
 in the object implementing	this interface.  If it can't be loaded here  
@@ -27,7 +27,7 @@ loading.
                     be allowed.  Use at your own risk.  
   
 
-### loadStream ###
+### loadStream(aStream, aURI, aContentType, aContentCharset, aLoadInfo) ###
   
 Loads a given stream. This will give priority to loading the requested  
 stream in the object implementing this interface. If it can't be loaded  
@@ -48,7 +48,7 @@ content loading.
                          properties on it and then pass it to loadStream.  
   
 
-### internalLoad ###
+### internalLoad(aURI, aReferrer, aOwner, aFlags, aWindowTarget, aTypeHint, aFileName, aPostDataStream, aHeadersStream, aLoadFlags, aSHEntry, firstParty, aSrcdoc, aSourceDocShell, aBaseURI, aDocShell, aRequest) ###
   
 Loads the given URI.  This method is identical to loadURI(...) except  
 that its parameter list is broken out instead of being packaged inside  
@@ -80,32 +80,32 @@ the given filename.
                          in certain situations such as view-source.  
   
 
-### addState ###
+### addState(aData, aTitle, aURL, aReplace) ###
   
 Do either a history.pushState() or history.replaceState() operation,  
 depending on the value of aReplace.  
   
 
-### createLoadInfo ###
+### createLoadInfo(loadInfo) ###
   
 Creates a DocShellLoadInfo object that you can manipulate and then pass  
 to loadURI.  
   
 
-### prepareForNewContentModel ###
+### prepareForNewContentModel() ###
   
 Reset state to a new content model within the current document and the document  
 viewer.  Called by the document before initiating an out of band document.write().  
   
 
-### setCurrentURI ###
+### setCurrentURI(aURI) ###
   
 For editors and suchlike who wish to change the URI associated with the  
 document. Note if you want to get the current URI, use the read-only  
 property on nsIWebNavigation.  
   
 
-### firePageHideNotification ###
+### firePageHideNotification(isUnload) ###
   
 Notify the associated content viewer and all child docshells that they are  
 about to be hidden.  If |isUnload| is true, then the document is being  
@@ -115,18 +115,18 @@ unloaded as well.
                 event.  
   
 
-### GetPresShell ###
+### GetPresShell() ###
   
 Presentation shell for the currently loaded document.  This may be null.  
   
 
-### getDocShellEnumerator ###
+### getDocShellEnumerator(aItemType, aDirection) ###
 
-### tabToTreeOwner ###
+### tabToTreeOwner(forward, tookFocus) ###
 
-### isBeingDestroyed ###
+### isBeingDestroyed() ###
 
-### suspendRefreshURIs ###
+### suspendRefreshURIs() ###
   
 Cancel the XPCOM timers for each meta-refresh URI in this docshell,  
 and this docshell's children, recursively. The meta-refresh timers can be  
@@ -134,14 +134,14 @@ restarted using resumeRefreshURIs().  If the timers are already suspended,
 this has no effect.  
   
 
-### resumeRefreshURIs ###
+### resumeRefreshURIs() ###
   
 Restart the XPCOM timers for each meta-refresh URI in this docshell,  
 and this docshell's children, recursively.  If the timers are already  
 running, this has no effect.  
   
 
-### beginRestore ###
+### beginRestore(viewer, top) ###
   
 Begin firing WebProgressListener notifications for restoring a page  
 presentation. |viewer| is the content viewer whose document we are  
@@ -152,14 +152,14 @@ is called for child docshells.  This method will post an event to
 complete the simulated load after returning to the event loop.  
   
 
-### finishRestore ###
+### finishRestore() ###
   
 Finish firing WebProgressListener notifications and DOM events for  
 restoring a page presentation.  This should only be called via  
 beginRestore().  
   
 
-### displayLoadError ###
+### displayLoadError(aError, aURI, aURL, aFailedChannel) ###
   
 Display a load error in a frame while keeping that frame's currentURI  
 pointing correctly to the page where the error ocurred, rather than to  
@@ -171,7 +171,7 @@ the error document page. You must provide either the aURI or aURL parameter.
 @param  aFailedChannel The channel related to this error  
   
 
-### historyPurged ###
+### historyPurged(numEntries) ###
   
 Notification that entries have been removed from the beginning of a  
 nsSHistory which has this as its rootDocShell.  
@@ -179,43 +179,43 @@ nsSHistory which has this as its rootDocShell.
 @param numEntries - The number of entries removed  
   
 
-### getSessionStorageForPrincipal ###
+### getSessionStorageForPrincipal(principal, documentURI, create) ###
 
-### addSessionStorage ###
+### addSessionStorage(principal, storage) ###
 
-### setChildOffset ###
+### setChildOffset(offset) ###
   
 Set the offset of this child in its container.  
   
 
-### DetachEditorFromWindow ###
+### DetachEditorFromWindow() ###
   
 Disconnects this docshell's editor from its window, and stores the  
 editor data in the open document's session history entry.  This  
 should be called only during page transitions.  
   
 
-### createAboutBlankContentViewer ###
+### createAboutBlankContentViewer(aPrincipal) ###
   
 Create a new about:blank document and content viewer.  
 @param aPrincipal the principal to use for the new document.  
   
 
-### gatherCharsetMenuTelemetry ###
+### gatherCharsetMenuTelemetry() ###
   
 Called when the user chose an encoding override from the character  
 encoding menu. Separate from the setter for the charset property to avoid  
 extensions adding noise to the data.  
   
 
-### setParentCharset ###
+### setParentCharset(parentCharset, parentCharsetSource, parentCharsetPrincipal) ###
   
 In a child docshell, this is the charset of the parent docshell  
   
 
-### getParentCharset ###
+### getParentCharset(parentCharset, parentCharsetSource, parentCharsetPrincipal) ###
 
-### now ###
+### now() ###
   
 Return a DOMHighResTimeStamp representing the number of  
 milliseconds from an arbitrary point in time.  The reference  
@@ -223,29 +223,29 @@ point is shared by all DocShells and is also used by timestamps
 on markers.  
   
 
-### popProfileTimelineMarkers ###
+### popProfileTimelineMarkers() ###
   
 Returns and flushes the profile timeline markers gathered by the docShell  
   
 
-### addWeakPrivacyTransitionObserver ###
+### addWeakPrivacyTransitionObserver(obs) ###
   
 Add an observer to the list of parties to be notified when this docshell's  
 private browsing status is changed. |obs| must support weak references.  
   
 
-### addWeakReflowObserver ###
+### addWeakReflowObserver(obs) ###
   
 Add an observer to the list of parties to be notified when reflows are  
 occurring. |obs| must support weak references.  
   
 
-### removeWeakReflowObserver ###
+### removeWeakReflowObserver(obs) ###
   
 Remove an observer from the list of parties to be notified about reflows.  
   
 
-### notifyReflowObservers ###
+### notifyReflowObservers(interruptible, start, end) ###
   
 Notify all attached observers that a reflow has just occurred.  
   
@@ -256,25 +256,25 @@ Notify all attached observers that a reflow has just occurred.
                      navigationStart (accurate to 1/1000 of a ms)  
   
 
-### addWeakScrollObserver ###
+### addWeakScrollObserver(obs) ###
   
 Add an observer to the list of parties to be notified when scroll position  
 of some elements is changed.  
   
 
-### removeWeakScrollObserver ###
+### removeWeakScrollObserver(obs) ###
   
 Add an observer to the list of parties to be notified when scroll position  
 of some elements is changed.  
   
 
-### notifyScrollObservers ###
+### notifyScrollObservers() ###
   
 Notify all attached observers that the scroll position of some element  
 has changed.  
   
 
-### setIsApp ###
+### setIsApp(ownAppId) ###
   
 Indicate that this docshell corresponds to an app with the given app id.  
   
@@ -291,7 +291,7 @@ If you call this method after calling setIsBrowserInsideApp, this
 docshell will forget the fact that it was a browser.  
   
 
-### setIsBrowserInsideApp ###
+### setIsBrowserInsideApp(containingAppId) ###
   
 Indicate that this docshell corresponds to a browser inside an app with  
 the given ID.  As with setIsApp, you may pass NO_APP_ID or  
@@ -301,19 +301,19 @@ As with setIsApp, you may call this more than once, but it's kind of a
 hack, so be careful.  
   
 
-### getSameTypeParentIgnoreBrowserAndAppBoundaries ###
+### getSameTypeParentIgnoreBrowserAndAppBoundaries() ###
   
 Like nsIDocShellTreeItem::GetSameTypeParent, except this ignores <iframe  
 mozbrowser> and <iframe mozapp> boundaries.  
   
 
-### isSandboxedFrom ###
+### isSandboxedFrom(aTargetDocShell) ###
   
 Returns true if we are sandboxed from aTargetDocShell.  
 aTargetDocShell - the browsing context we are attempting to navigate.  
   
 
-### GetAllowMixedContentAndConnectionData ###
+### GetAllowMixedContentAndConnectionData(rootHasSecureConnection, allowMixedContent, isRootDocShell) ###
   
 Checks whether the channel associated with the root docShell is equal to  
 mMixedContentChannel. If they are the same, allowMixedContent is set to true.  
@@ -322,7 +322,7 @@ rootHasSecureConnection to true. If the docShell is the root doc shell,
 isRootDocShell is set to true.   
   
 
-### pluginsAllowedInCurrentDoc ###
+### pluginsAllowedInCurrentDoc() ###
   
 Are plugins allowed in the current document loaded in this docshell ?  
 (if there is one). This depends on whether plugins are allowed by this  
@@ -330,9 +330,9 @@ docshell itself or if the document is sandboxed and hence plugins should
 not be allowed.  
   
 
-### setFullscreenAllowed ###
+### setFullscreenAllowed(allowed) ###
 
-### makeEditable ###
+### makeEditable(inWaitForUriLoad) ###
   
 Make this docShell editable, setting a flag that causes  
 an editor to get created, either immediately, or after  
@@ -341,53 +341,53 @@ a url has been loaded.
                                  creating the editor.  
   
 
-### getChildSHEntry ###
+### getChildSHEntry(aChildOffset) ###
   
 Get the SHEntry associated with a child docshell  
   
 
-### addChildSHEntry ###
+### addChildSHEntry(aCloneReference, aHistoryEntry, aChildOffset, aLoadType, aCloneChilden) ###
   
 Add a Child SHEntry for a frameset page, given the child's loadtype.  
 If aCloneChildren is true, then aCloneReference's children will be  
 cloned onto aHistoryEntry.  
   
 
-### removeFromSessionHistory ###
+### removeFromSessionHistory() ###
   
 Removes nsISHEntry objects related to this docshell from session history.  
 Use this only with subdocuments, like iframes.  
   
 
-### getCurrentSHEntry ###
+### getCurrentSHEntry(aEntry) ###
   
 Returns false for mLSHE, true for mOSHE  
   
 
-### isCommandEnabled ###
+### isCommandEnabled(command) ###
   
 Cherry picked parts of nsIController.  
 They are here, because we want to call these functions  
 from JS.  
   
 
-### doCommand ###
+### doCommand(command) ###
 
-### IsInvisible ###
+### IsInvisible() ###
   
 Invisible DocShell are dummy construct to simulate DOM windows  
 without any actual visual representation. They have to be marked  
 at construction time, to avoid any painting activity.  
   
 
-### SetInvisible ###
+### SetInvisible(aIsInvisibleDochsell) ###
 
-### GetScriptGlobalObject ###
+### GetScriptGlobalObject() ###
   
 Get the script global for the document in this docshell.  
   
 
-### setOpener ###
+### setOpener(aOpener) ###
   
 Regarding setOpener / getOpener - We can't use XPIDL's "attribute"  
 for notxpcom, so we're relegated to using explicit gets / sets. This  
@@ -395,17 +395,17 @@ should be fine, considering that these methods should only ever be
 called from native code.  
   
 
-### getOpener ###
+### getOpener() ###
 
-### setOpenedRemote ###
+### setOpenedRemote(aOpenedRemote) ###
   
 See the documentation for setOpener and getOpener about why we  
 don't use attribute here instead.  
   
 
-### getOpenedRemote ###
+### getOpenedRemote() ###
 
-### getURLSearchParams ###
+### getURLSearchParams() ###
 
 ## Attributes ##
 

@@ -9,7 +9,7 @@ A service providing native implementations of path changes notification.
 
 ## Methods ##
 
-### addPath ###
+### addPath(pathToWatch, onChange, onError, onSuccess) ###
   
 Watches the passed path for changes. If it's a directory, every file  
 it contains is watched. Recursively watches subdirectories. If the  
@@ -27,7 +27,7 @@ is a file, the behaviour is not specified.
        watching the resource for changes.  
   
 
-### removePath ###
+### removePath(pathToUnwatch, onChange, onError, onSuccess) ###
   
 Removes the provided path from the watched resources. If the path  
 was not being watched or the callbacks were not registered, silently  

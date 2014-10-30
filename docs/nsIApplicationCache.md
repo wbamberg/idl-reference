@@ -20,57 +20,57 @@ no longer referenced.
 
 ## Methods ##
 
-### initAsHandle ###
+### initAsHandle(groupId, clientId) ###
   
 Init this application cache instance to just hold the group ID and  
 the client ID to work just as a handle to the real cache. Used on  
 content process to simplify the application cache code.  
   
 
-### activate ###
+### activate() ###
   
 Makes this cache the active application cache for this group.  
 Future loads associated with this group will come from this  
 cache.  Other caches from this cache group will be deactivated.  
   
 
-### discard ###
+### discard() ###
   
 Discard this application cache.  Removes all cached resources  
 for this cache.  If this is the active application cache for the  
 group, the group will be removed.  
   
 
-### markEntry ###
+### markEntry(key, typeBits) ###
   
 Adds item types to a given entry.  
   
 
-### unmarkEntry ###
+### unmarkEntry(key, typeBits) ###
   
 Removes types from a given entry.  If the resulting entry has  
 no types left, the entry is removed.  
   
 
-### getTypes ###
+### getTypes(key) ###
   
 Gets the types for a given entry.  
   
 
-### gatherEntries ###
+### gatherEntries(typeBits, count, keys) ###
   
 Returns any entries in the application cache whose type matches  
 one or more of the bits in typeBits.  
   
 
-### addNamespaces ###
+### addNamespaces(namespaces) ###
   
 Add a set of namespace entries to the application cache.  
 @param namespaces  
        An nsIArray of nsIApplicationCacheNamespace entries.  
   
 
-### getMatchingNamespace ###
+### getMatchingNamespace(key) ###
   
 Get the most specific namespace matching a given key.  
   

@@ -11,7 +11,7 @@ from a protocol. They can then be transformed into an output format
 
 ## Methods ##
 
-### onIndexAvailable ###
+### onIndexAvailable(aRequest, aCtxt, aIndex) ###
   
 Called for each directory entry  
   
@@ -20,7 +20,7 @@ Called for each directory entry
 @param index - new index to add  
   
 
-### onInformationAvailable ###
+### onInformationAvailable(aRequest, aCtxt, aInfo) ###
   
 Called for each information line  
   

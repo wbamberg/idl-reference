@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### createTransport ###
+### createTransport(aSocketTypes, aTypeCount, aHost, aPort, aProxyInfo) ###
   
 Creates a transport for a specified host and port.  
   
@@ -30,7 +30,7 @@ Creates a transport for a specified host and port.
 NOTE: this function can be called from any thread  
   
 
-### createUnixDomainTransport ###
+### createUnixDomainTransport(aPath) ###
   
 Create a transport built on a Unix domain socket, connecting to the  
 given filename.  
@@ -64,7 +64,7 @@ connections", and this is what Linux returns.)
        connect.  
   
 
-### attachSocket ###
+### attachSocket(aFd, aHandler) ###
   
 Adds a new socket to the list of controlled sockets.  
   
@@ -82,7 +82,7 @@ NOTE: this function may only be called from an event dispatch on the
       socket thread.  
   
 
-### notifyWhenCanAttachSocket ###
+### notifyWhenCanAttachSocket(aEvent) ###
   
 if the number of sockets reaches the limit, then consumers can be  
 notified when the number of sockets becomes less than the limit.  the  

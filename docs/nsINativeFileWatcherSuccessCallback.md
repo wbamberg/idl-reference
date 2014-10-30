@@ -10,7 +10,7 @@ successfully completes.
 
 ## Methods ##
 
-### complete ###
+### complete(resourcePath) ###
   
 @param resourcePath  
        The path of the resource for which the operation completes.  

@@ -10,14 +10,14 @@ password manager.
 
 ## Methods ##
 
-### init ###
+### init(aHostname, aFormSubmitURL, aHttpRealm, aUsername, aPassword, aUsernameField, aPasswordField) ###
   
 Initialize a newly created nsLoginInfo object.  
   
 The arguments are the fields for the new object.  
   
 
-### equals ###
+### equals(aLoginInfo) ###
   
 Test for strict equality with another nsILoginInfo object.  
   
@@ -25,7 +25,7 @@ Test for strict equality with another nsILoginInfo object.
        The other object to test.  
   
 
-### matches ###
+### matches(aLoginInfo, ignorePassword) ###
   
 Test for loose equivalency with another nsILoginInfo object. The  
 passwordField and usernameField values are ignored, and the password  
@@ -39,7 +39,7 @@ blank value indicates the login was stored before bug 360493 was fixed.]
        If true, ignore the password when checking for match.  
   
 
-### clone ###
+### clone() ###
   
 Create an identical copy of the login, duplicating all of the login's  
 nsILoginInfo and nsILoginMetaInfo properties.  

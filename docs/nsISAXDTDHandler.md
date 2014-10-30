@@ -26,7 +26,7 @@ must also be reported before the endDTD event.)
 
 ## Methods ##
 
-### notationDecl ###
+### notationDecl(name, publicId, systemId) ###
   
 Receive notification of a notation declaration event.  
   
@@ -50,7 +50,7 @@ reported before any unparsed entities that use it.
                  given.  
   
 
-### unparsedEntityDecl ###
+### unparsedEntityDecl(name, publicId, systemId, notationName) ###
   
 Receive notification of an unparsed entity declaration event.  
   

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### createTaskbarTabPreview ###
+### createTaskbarTabPreview(shell, controller) ###
   
 Taskbar window and tab preview management  
   
@@ -16,7 +16,7 @@ is used to find the toplevel window. See the documentation for
 nsITaskbarTabPreview for more information.  
   
 
-### getTaskbarWindowPreview ###
+### getTaskbarWindowPreview(shell) ###
   
 Gets the taskbar preview for a window. The docshell is used to find the  
 toplevel window. See the documentation for nsITaskbarTabPreview for more  
@@ -25,7 +25,7 @@ information.
 Note: to implement custom drawing or buttons, a controller is required.  
   
 
-### getTaskbarProgress ###
+### getTaskbarProgress(shell) ###
   
 Taskbar icon progress indicator  
   
@@ -35,7 +35,7 @@ toplevel window. See the documentation for nsITaskbarProgress for more
 information.  
   
 
-### getOverlayIconController ###
+### getOverlayIconController(shell) ###
   
 Taskbar icon overlay  
   
@@ -45,7 +45,7 @@ to find the toplevel window. See the documentation in
 nsITaskbarOverlayIconController for more details.  
   
 
-### createJumpListBuilder ###
+### createJumpListBuilder() ###
   
 Taskbar and start menu jump list management  
   
@@ -60,7 +60,7 @@ within an application.
 currently building a list.  
   
 
-### setGroupIdForWindow ###
+### setGroupIdForWindow(aParent, aIdentifier) ###
   
 Application window taskbar group settings  
   
@@ -85,7 +85,7 @@ associated with a widget.
 @throw NS_ERROR_UNEXPECTED for general failures.  
   
 
-### prepareFullScreen ###
+### prepareFullScreen(aWindow, aFullScreen) ###
   
 Notify the taskbar that a window is about to enter full screen mode.  
   
@@ -97,7 +97,7 @@ it is not notified when full screen operations start and end.
 @throw NS_ERROR_NOT_AVAILABLE if the taskbar cannot be obtained.  
   
 
-### prepareFullScreenHWND ###
+### prepareFullScreenHWND(aWindow, aFullScreen) ###
   
 Notify the taskbar that a window identified by its HWND is about to enter  
 full screen mode.  

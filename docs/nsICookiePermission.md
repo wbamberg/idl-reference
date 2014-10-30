@@ -9,7 +9,7 @@ An interface to test for cookie permissions
 
 ## Methods ##
 
-### setAccess ###
+### setAccess(aURI, aAccess) ###
   
 setAccess  
   
@@ -23,7 +23,7 @@ the same host name).
        the new cookie access for the URI.  
   
 
-### canAccess ###
+### canAccess(aURI, aChannel) ###
   
 canAccess  
   
@@ -40,7 +40,7 @@ access the cookie database, either to set or get cookies.
         ACCESS_ALLOW_FIRST_PARTY_ONLY  
   
 
-### canSetCookie ###
+### canSetCookie(aURI, aChannel, aCookie, aIsSession, aExpiry) ###
   
 canSetCookie  
   

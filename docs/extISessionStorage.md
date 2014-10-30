@@ -9,7 +9,7 @@ Interface representing a simple storage system
 
 ## Methods ##
 
-### has ###
+### has(aName) ###
   
 Determines if a storage item exists with the given name.  
 @param   aName  
@@ -18,7 +18,7 @@ Determines if a storage item exists with the given name.
          false otherwise.  
   
 
-### set ###
+### set(aName, aValue) ###
   
 Sets the value of a storage item with the given name.  
 @param   aName  
@@ -27,7 +27,7 @@ Sets the value of a storage item with the given name.
          The value to assign to the item  
   
 
-### get ###
+### get(aName, aDefaultValue) ###
   
 Gets the value of a storage item with the given name. Returns a  
 default value if the item does not exist.  

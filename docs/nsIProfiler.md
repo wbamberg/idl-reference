@@ -6,27 +6,27 @@ layout: default
 
 ## Methods ##
 
-### StartProfiler ###
+### StartProfiler(aEntries, aInterval, aFeatures, aFeatureCount, aThreadNameFilters, aFilterCount) ###
 
-### StopProfiler ###
+### StopProfiler() ###
 
-### IsPaused ###
+### IsPaused() ###
 
-### PauseSampling ###
+### PauseSampling() ###
 
-### ResumeSampling ###
+### ResumeSampling() ###
 
-### AddMarker ###
+### AddMarker(aMarker) ###
 
-### GetProfile ###
+### GetProfile() ###
 
-### getProfileData ###
+### getProfileData() ###
 
-### IsActive ###
+### IsActive() ###
 
-### GetFeatures ###
+### GetFeatures(aCount, aFeatures) ###
 
-### getSharedLibraryInformation ###
+### getSharedLibraryInformation() ###
   
 Returns a JSON string of an array of shared library objects.  
 Every object has three properties: start, end, and name.  

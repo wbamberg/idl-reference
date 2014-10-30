@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### getMobileIdAssertion ###
+### getMobileIdAssertion(window, options) ###

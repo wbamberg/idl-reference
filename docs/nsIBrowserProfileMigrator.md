@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### migrate ###
+### migrate(aItems, aStartup, aProfile) ###
   
 Copy user profile information to the current active profile.  
 @param aItems   list of data items to migrate. see above for values.  
@@ -14,7 +14,7 @@ Copy user profile information to the current active profile.
 @param aProfile profile to migrate from, if there is more than one.  
   
 
-### getMigrateData ###
+### getMigrateData(aProfile, aDoingStartup) ###
   
 A bit field containing profile items that this migrator  
 offers for import.   

@@ -6,23 +6,23 @@ layout: default
 
 ## Methods ##
 
-### addItemToSelection ###
+### addItemToSelection(item) ###
 
-### removeItemFromSelection ###
+### removeItemFromSelection(item) ###
 
-### toggleItemSelection ###
+### toggleItemSelection(item) ###
 
-### selectItem ###
+### selectItem(item) ###
 
-### selectItemRange ###
+### selectItemRange(startItem, item) ###
 
-### selectAll ###
+### selectAll() ###
 
-### invertSelection ###
+### invertSelection() ###
 
-### clearSelection ###
+### clearSelection() ###
 
-### getSelectedItem ###
+### getSelectedItem(index) ###
 
 ## Attributes ##
 

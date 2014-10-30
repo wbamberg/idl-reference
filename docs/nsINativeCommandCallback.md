@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### nativeCommandResult ###
+### nativeCommandResult(success) ###
   
 Callback function used to report the result of a network native command.  
   

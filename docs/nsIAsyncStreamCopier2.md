@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aSource, aSink, aTarget, aChunkSize, aCloseSource, aCloseSink) ###
   
 Initialize the stream copier.  
   
@@ -34,7 +34,7 @@ be automatically added to the sink.
        the desired behavior).  
   
 
-### asyncCopy ###
+### asyncCopy(aObserver, aObserverContext) ###
   
 asyncCopy triggers the start of the copy.  The observer will be notified  
 when the copy completes.  

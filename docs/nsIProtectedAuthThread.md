@@ -11,7 +11,7 @@ nsIProtectedAuthThread
 
 ## Methods ##
 
-### login ###
+### login(observer) ###
   
 login - run the thread  
   A user interface implementing this interface needs to  
@@ -24,7 +24,7 @@ login - run the thread
   and null data and subject.  
   
 
-### getTokenName ###
+### getTokenName() ###
   
 Gets token to be logged in name.  
   

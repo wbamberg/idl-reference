@@ -6,13 +6,13 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aParentWidget, aBounds) ###
 
-### loadStart ###
+### loadStart(aDoc) ###
 
-### loadComplete ###
+### loadComplete(aStatus) ###
 
-### permitUnload ###
+### permitUnload(aCallerClosesWindow) ###
   
 Checks if the document wants to prevent unloading by firing beforeunload on  
 the document, and if it does, prompts the user. The result is returned.  
@@ -22,14 +22,14 @@ the document, and if it does, prompts the user. The result is returned.
        ignored.  
   
 
-### permitUnloadInternal ###
+### permitUnloadInternal(aCallerClosesWindow, aShouldPrompt) ###
   
 As above, but this passes around the aShouldPrompt argument to keep  
 track of whether the user has responded to a prompt.  
 Used internally by the scriptable version to ensure we only prompt once.  
   
 
-### resetCloseWindow ###
+### resetCloseWindow() ###
   
 Works in tandem with permitUnload, if the caller decides not to close the  
 window it indicated it will, it is the caller's responsibility to reset  
@@ -40,9 +40,9 @@ that with this method.
  the behavior of this method is undefined.  
   
 
-### pageHide ###
+### pageHide(isUnload) ###
 
-### close ###
+### close(historyEntry) ###
   
 All users of a content viewer are responsible for calling both  
 close() and destroy(), in that order.   
@@ -65,28 +65,28 @@ actions will happen when destroy() is called (*):
   
   
 
-### destroy ###
+### destroy() ###
 
-### stop ###
+### stop() ###
 
-### getDocument ###
+### getDocument() ###
   
 Returns DOMDocument as nsIDocument and without addrefing.  
   
 
-### getBounds ###
+### getBounds(aBounds) ###
 
-### setBounds ###
+### setBounds(aBounds) ###
 
-### move ###
+### move(aX, aY) ###
 
-### show ###
+### show() ###
 
-### hide ###
+### hide() ###
 
-### requestWindowClose ###
+### requestWindowClose() ###
 
-### open ###
+### open(aState, aSHEntry) ###
   
 Attach the content viewer to its DOM window and docshell.  
 @param aState A state object that might be useful in attaching the DOM  
@@ -96,21 +96,21 @@ Attach the content viewer to its DOM window and docshell.
                 documents stored in its child shell list.  
   
 
-### clearHistoryEntry ###
+### clearHistoryEntry() ###
   
 Clears the current history entry.  This is used if we need to clear out  
 the saved presentation state.  
   
 
-### setPageMode ###
+### setPageMode(aPageMode, aPrintSettings) ###
   
 Change the layout to view the document with page layout (like print preview), but  
 dynamic and editable (like Galley layout).  
   
 
-### setDocumentInternal ###
+### setDocumentInternal(aDocument, aForceReuseInnerWindow) ###
 
-### findContainerView ###
+### findContainerView() ###
   
 Find the view to use as the container view for MakeWindow. Returns  
 null if this will be the root of a view manager hierarchy. In that  
@@ -118,25 +118,25 @@ case, if mParentWidget is null then this document should not even
 be displayed.  
   
 
-### setNavigationTiming ###
+### setNavigationTiming(aTiming) ###
   
 Set collector for navigation timing data (load, unload events).  
   
 
-### scrollToNode ###
+### scrollToNode(node) ###
 
-### getContentSize ###
+### getContentSize(width, height) ###
   
 Requests the size of the content to the container.  
   
 
-### appendSubtree ###
+### appendSubtree(array) ###
   
 Append |this| and all of its descendants to the given array,  
 in depth-first pre-order traversal.  
   
 
-### changeMaxLineBoxWidth ###
+### changeMaxLineBoxWidth(maxLineBoxWidth) ###
   
 Set the maximum line width for the document.  
 NOTE: This will generate a reflow!  
@@ -145,21 +145,21 @@ NOTE: This will generate a reflow!
        in CSS pixels.  
   
 
-### pausePainting ###
+### pausePainting() ###
   
 Instruct the refresh driver to discontinue painting until further  
 notice.  
   
 
-### resumePainting ###
+### resumePainting() ###
   
 Instruct the refresh driver to resume painting after a previous call to  
 pausePainting().  
   
 
-### emulateMedium ###
+### emulateMedium(aMediaType) ###
 
-### stopEmulatingMedium ###
+### stopEmulatingMedium() ###
 
 ## Attributes ##
 

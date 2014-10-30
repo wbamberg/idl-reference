@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### set ###
+### set(aTimeInMS) ###

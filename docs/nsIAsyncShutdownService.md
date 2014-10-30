@@ -9,7 +9,7 @@ A service that allows registering shutdown-time dependencies.
 
 ## Methods ##
 
-### makeBarrier ###
+### makeBarrier(aName) ###
   
 Create a new barrier.  
   

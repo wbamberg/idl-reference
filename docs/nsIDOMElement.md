@@ -13,47 +13,47 @@ http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#interface-element
 
 ## Methods ##
 
-### getAttribute ###
+### getAttribute(name) ###
 
-### getAttributeNS ###
+### getAttributeNS(namespaceURI, localName) ###
 
-### setAttribute ###
+### setAttribute(name, value) ###
 
-### setAttributeNS ###
+### setAttributeNS(namespaceURI, qualifiedName, value) ###
 
-### removeAttribute ###
+### removeAttribute(name) ###
 
-### removeAttributeNS ###
+### removeAttributeNS(namespaceURI, localName) ###
 
-### hasAttribute ###
+### hasAttribute(name) ###
 
-### hasAttributeNS ###
+### hasAttributeNS(namespaceURI, localName) ###
 
-### hasAttributes ###
+### hasAttributes() ###
 
-### getAttributeNode ###
+### getAttributeNode(name) ###
 
-### setAttributeNode ###
+### setAttributeNode(newAttr) ###
 
-### removeAttributeNode ###
+### removeAttributeNode(oldAttr) ###
 
-### getAttributeNodeNS ###
+### getAttributeNodeNS(namespaceURI, localName) ###
 
-### setAttributeNodeNS ###
+### setAttributeNodeNS(newAttr) ###
 
-### getElementsByTagName ###
+### getElementsByTagName(name) ###
 
-### getElementsByTagNameNS ###
+### getElementsByTagNameNS(namespaceURI, localName) ###
 
-### getElementsByClassName ###
+### getElementsByClassName(classes) ###
   
 Retrieve elements matching all classes listed in a  
 space-separated string.  
   
 
-### remove ###
+### remove() ###
 
-### getClientRects ###
+### getClientRects() ###
   
 Retrieve a list of rectangles, one for each CSS border-box associated with  
 the element. The coordinates are in CSS pixels, and relative to  
@@ -71,7 +71,7 @@ HTML AREA elements, and SVG elements that do not render). Those return
 an empty list.  
   
 
-### getBoundingClientRect ###
+### getBoundingClientRect() ###
   
 Returns the union of all rectangles in the getClientRects() list. Empty  
 rectangles are ignored, except that if all rectangles are empty,  
@@ -79,7 +79,7 @@ we return an empty rectangle positioned at the top-left of the first
 rectangle in getClientRects().  
   
 
-### mozMatchesSelector ###
+### mozMatchesSelector(selector) ###
   
 Returns whether this element would be selected by the given selector  
 string.  
@@ -87,7 +87,7 @@ string.
 See <http://dev.w3.org/2006/webapi/selectors-api2/#matchesselector>  
   
 
-### setCapture ###
+### setCapture(retargetToElement) ###
   
 Set this during a mousedown event to grab and retarget all mouse events  
 to this element until the mouse button is released or releaseCapture is  
@@ -97,13 +97,13 @@ element.
   
   
 
-### releaseCapture ###
+### releaseCapture() ###
   
 If this element has captured the mouse, release the capture. If another  
 element has captured the mouse, this method has no effect.  
   
 
-### mozRequestFullScreen ###
+### mozRequestFullScreen() ###
   
 Requests that this element be made the full-screen element, as per the DOM  
 full-screen api.  
@@ -111,7 +111,7 @@ full-screen api.
 @see <https://wiki.mozilla.org/index.php?title=Gecko:FullScreenAPI>  
   
 
-### mozRequestPointerLock ###
+### mozRequestPointerLock() ###
   
 Requests that this element be made the pointer-locked element, as per the DOM  
 pointer lock api.  
@@ -119,14 +119,14 @@ pointer lock api.
 @see <http://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html>  
   
 
-### querySelector ###
+### querySelector(selectors) ###
   
 Return nodes that match a given CSS selector.  
   
 @see <http://dev.w3.org/2006/webapi/selectors-api/>  
   
 
-### querySelectorAll ###
+### querySelectorAll(selectors) ###
 
 ## Attributes ##
 

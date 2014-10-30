@@ -13,7 +13,7 @@ Helper interface for nsIProfileMigrator.
 
 ## Methods ##
 
-### doStartup ###
+### doStartup() ###
   
 Do profile-startup by setting NS_APP_USER_PROFILE_50_DIR in the directory  
 service and notifying the profile-startup observer topics.  

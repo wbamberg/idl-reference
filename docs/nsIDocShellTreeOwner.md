@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### findItemWithName ###
+### findItemWithName(name, aRequestor, aOriginalRequestor) ###
 
-### contentShellAdded ###
+### contentShellAdded(aContentShell, aPrimary, aTargetable, aID) ###
   
 Called when a content shell is added to the docshell tree.  This is  
 _only_ called for "root" content shells (that is, ones whose parent is a  
@@ -22,7 +22,7 @@ chrome shell).
 		undefined. Don't rely on this for anything.  
   
 
-### contentShellRemoved ###
+### contentShellRemoved(aContentShell) ###
   
 Called when a content shell is removed from the docshell tree.  This is  
 _only_ called for "root" content shells (that is, ones whose parent is a  
@@ -32,11 +32,11 @@ contentShellRemoved should just do nothing.
 @param aContentShell the shell being removed.  
   
 
-### sizeShellTo ###
+### sizeShellTo(shell, cx, cy) ###
 
-### setPersistence ###
+### setPersistence(aPersistPosition, aPersistSize, aPersistSizeMode) ###
 
-### getPersistence ###
+### getPersistence(aPersistPosition, aPersistSize, aPersistSizeMode) ###
 
 ## Attributes ##
 

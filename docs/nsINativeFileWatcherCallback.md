@@ -10,7 +10,7 @@ resource is detected.
 
 ## Methods ##
 
-### changed ###
+### changed(resourcePath, flags) ###
   
 @param resourcePath  
        The path of the changed resource. If there were too many changes,  

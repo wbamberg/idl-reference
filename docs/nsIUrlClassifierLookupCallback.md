@@ -12,7 +12,7 @@ may need to expand using an nsIUrlClassifierCompleter.
 
 ## Methods ##
 
-### lookupComplete ###
+### lookupComplete(results) ###
   
 The lookup process is complete.  
   

@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### getCollectionForSchema ###
+### getCollectionForSchema(schema) ###

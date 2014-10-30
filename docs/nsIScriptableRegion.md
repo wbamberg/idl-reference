@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init() ###
 
-### setToRegion ###
+### setToRegion(aRegion) ###
   
 copy operator equivalent that takes another region  
   
@@ -17,7 +17,7 @@ copy operator equivalent that takes another region
   
 /  
 
-### setToRect ###
+### setToRect(aX, aY, aWidth, aHeight) ###
   
 copy operator equivalent that takes a rect  
   
@@ -29,7 +29,7 @@ copy operator equivalent that takes a rect
   
 /  
 
-### intersectRegion ###
+### intersectRegion(aRegion) ###
   
 destructively intersect another region with this one  
   
@@ -38,7 +38,7 @@ destructively intersect another region with this one
   
 /  
 
-### intersectRect ###
+### intersectRect(aX, aY, aWidth, aHeight) ###
   
 destructively intersect a rect with this region  
   
@@ -50,7 +50,7 @@ destructively intersect a rect with this region
   
 /  
 
-### unionRegion ###
+### unionRegion(aRegion) ###
   
 destructively union another region with this one  
   
@@ -59,7 +59,7 @@ destructively union another region with this one
   
 /  
 
-### unionRect ###
+### unionRect(aX, aY, aWidth, aHeight) ###
   
 destructively union a rect with this region  
   
@@ -71,7 +71,7 @@ destructively union a rect with this region
   
 /  
 
-### subtractRegion ###
+### subtractRegion(aRegion) ###
   
 destructively subtract another region with this one  
   
@@ -80,7 +80,7 @@ destructively subtract another region with this one
   
 /  
 
-### subtractRect ###
+### subtractRect(aX, aY, aWidth, aHeight) ###
   
 destructively subtract a rect from this region  
   
@@ -92,7 +92,7 @@ destructively subtract a rect from this region
   
 /  
 
-### isEmpty ###
+### isEmpty() ###
   
 is this region empty? i.e. does it contain any pixels  
   
@@ -101,7 +101,7 @@ is this region empty? i.e. does it contain any pixels
   
 /  
 
-### isEqualRegion ###
+### isEqualRegion(aRegion) ###
   
 == operator equivalent i.e. do the regions contain exactly  
 the same pixels  
@@ -111,7 +111,7 @@ the same pixels
   
 /  
 
-### getBoundingBox ###
+### getBoundingBox(aX, aY, aWidth, aHeight) ###
   
 returns the bounding box of the region i.e. the smallest  
 rectangle that completely contains the region.          
@@ -124,7 +124,7 @@ rectangle that completely contains the region.
   
 /  
 
-### offset ###
+### offset(aXOffset, aYOffset) ###
   
 offsets the region in x and y  
   
@@ -134,14 +134,14 @@ offsets the region in x and y
   
 /  
 
-### getRects ###
+### getRects() ###
   
 @return null if there are no rects,  
 @return flat array of rects,ie [x1,y1,width1,height1,x2...].  
 The result will contain bogus data if values don't fit in 31 bit  
 /  
 
-### containsRect ###
+### containsRect(aX, aY, aWidth, aHeight) ###
   
 does the region intersect the rectangle?  
   

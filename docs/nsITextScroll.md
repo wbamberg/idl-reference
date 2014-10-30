@@ -10,7 +10,7 @@ supports text scrolling.
 
 ## Methods ##
 
-### scrollByLines ###
+### scrollByLines(numLines) ###
   
 Scroll the view up or down by aNumLines lines. positive  
 values move down in the view. Prevents scrolling off the  
@@ -18,7 +18,7 @@ end of the view.
 @param numLines number of lines to scroll the view by  
   
 
-### scrollByPages ###
+### scrollByPages(numPages) ###
   
 Scroll the view up or down by numPages pages. a page  
 is considered to be the amount displayed by the clip view.  

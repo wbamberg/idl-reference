@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### updateStateChanged ###
+### updateStateChanged(aUpdate, state) ###
   
 aUpdate has changed its state.  
   
@@ -16,7 +16,7 @@ aUpdate has changed its state.
        See enumeration above  
   
 
-### applicationCacheAvailable ###
+### applicationCacheAvailable(applicationCache) ###
   
 Informs the observer about an application being available to associate.  
   

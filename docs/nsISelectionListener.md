@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### notifySelectionChanged ###
+### notifySelectionChanged(doc, sel, reason) ###
 
 ## Constants ##
 

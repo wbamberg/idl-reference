@@ -6,16 +6,16 @@ layout: default
 
 ## Methods ##
 
-### FindInterfaceWithMember ###
+### FindInterfaceWithMember(nameID) ###
   
 These are here as an aid to nsIXPCScriptable implementors  
   
 
-### FindInterfaceWithName ###
+### FindInterfaceWithName(nameID) ###
 
-### HasNativeMember ###
+### HasNativeMember(name) ###
 
-### debugDump ###
+### debugDump(depth) ###
 
 ## Attributes ##
 

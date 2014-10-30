@@ -14,25 +14,25 @@ HTML frameset document or if the document contains iframe elements.
 
 ## Methods ##
 
-### close ###
+### close() ###
 
-### stop ###
+### stop() ###
 
-### focus ###
+### focus() ###
 
-### blur ###
+### blur() ###
 
-### alert ###
+### alert(text) ###
 
-### confirm ###
+### confirm(text) ###
 
-### prompt ###
+### prompt(aMessage, aInitial) ###
 
-### print ###
+### print() ###
 
-### showModalDialog ###
+### showModalDialog(aURI, aArgs, aOptions) ###
 
-### postMessage ###
+### postMessage(message, targetOrigin, transfer) ###
   
 Implements a safe message-passing system which can cross same-origin  
 boundaries.  
@@ -51,67 +51,67 @@ location of the other).
 @see <http://www.whatwg.org/html/#dom-window-postmessage>  
   
 
-### atob ###
+### atob(aAsciiString) ###
 
-### btoa ###
+### btoa(aBase64Data) ###
 
-### getSelection ###
+### getSelection() ###
   
 Method for accessing this window's selection object.  
   
 
-### matchMedia ###
+### matchMedia(media_query_list) ###
 
-### scroll ###
+### scroll(xScroll, yScroll) ###
 
-### scrollTo ###
+### scrollTo(xScroll, yScroll) ###
   
 Method for scrolling this window to an absolute pixel offset.  
   
 
-### scrollBy ###
+### scrollBy(xScrollDif, yScrollDif) ###
   
 Method for scrolling this window to a pixel offset relative to  
 the current scroll position.  
   
 
-### getComputedStyle ###
+### getComputedStyle(elt, pseudoElt) ###
   
 @see <http://dev.w3.org/csswg/cssom/#dom-window-getcomputedstyle>  
   
 
-### getDefaultComputedStyle ###
+### getDefaultComputedStyle(elt, pseudoElt) ###
 
-### scrollByLines ###
+### scrollByLines(numLines) ###
   
 Method for scrolling this window by a number of lines.  
   
 
-### scrollByPages ###
+### scrollByPages(numPages) ###
   
 Method for scrolling this window by a number of pages.  
   
 
-### sizeToContent ###
+### sizeToContent() ###
   
 Method for sizing this window to the content in the window.  
   
 
-### back ###
+### back() ###
 
-### forward ###
+### forward() ###
 
-### home ###
+### home() ###
 
-### moveTo ###
+### moveTo(xPos, yPos) ###
 
-### moveBy ###
+### moveBy(xDif, yDif) ###
 
-### resizeTo ###
+### resizeTo(width, height) ###
 
-### resizeBy ###
+### resizeBy(widthDif, heightDif) ###
 
-### open ###
+### open(url, name, options) ###
   
 Open a new window with this one as the parent.  This method will  
 NOT examine the JS stack for purposes of determining a caller.  
@@ -120,7 +120,7 @@ name and the default character set on the newly opened window
 will just be the default character set of this window.  
   
 
-### openDialog ###
+### openDialog(url, name, options, aExtraArgument) ###
   
 This method works like open except that aExtraArgument gets  
 converted into the array window.arguments in JS, if  
@@ -130,27 +130,27 @@ nsISupports (nsISupportsPrimitives) types are converted to native
 JS types when possible.  
   
 
-### updateCommands ###
+### updateCommands(action, sel, reason) ###
 
-### find ###
+### find(str, caseSensitive, backwards, wrapAround, wholeWord, searchInFrames, showDialog) ###
 
-### mozRequestAnimationFrame ###
+### mozRequestAnimationFrame(aCallback) ###
   
 Request a refresh of this browser window.  
   
 @see <http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/RequestAnimationFrame/Overview.html>  
   
 
-### requestAnimationFrame ###
+### requestAnimationFrame(aCallback) ###
 
-### mozCancelAnimationFrame ###
+### mozCancelAnimationFrame(aHandle) ###
   
 Cancel a refresh callback.  
   
 
-### mozCancelRequestAnimationFrame ###
+### mozCancelRequestAnimationFrame(aHandle) ###
 
-### cancelAnimationFrame ###
+### cancelAnimationFrame(aHandle) ###
 
 ## Attributes ##
 

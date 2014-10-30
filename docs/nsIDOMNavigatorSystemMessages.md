@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### mozSetMessageHandler ###
+### mozSetMessageHandler(type, callback) ###
 
-### mozHasPendingMessage ###
+### mozHasPendingMessage(type) ###

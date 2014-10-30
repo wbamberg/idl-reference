@@ -13,7 +13,7 @@ THE NEW CODE USE ONLY THE NEW HTTP CACHE API IN netwerk/cache2/.
 
 ## Methods ##
 
-### createSession ###
+### createSession(clientID, storagePolicy, streamBased) ###
   
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.  
   
@@ -37,14 +37,14 @@ equivalent.
 @return new cache session.  
   
 
-### visitEntries ###
+### visitEntries(visitor) ###
   
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.  
   
 Visit entries stored in the cache.  Used to implement about:cache.  
   
 
-### evictEntries ###
+### evictEntries(storagePolicy) ###
   
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.  
   

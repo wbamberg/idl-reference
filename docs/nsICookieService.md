@@ -68,10 +68,10 @@ data   :  the referrer, or "?" if unknown
 
 ## Methods ##
 
-### getCookieString ###
+### getCookieString(aURI, aChannel) ###
 
-### getCookieStringFromHttp ###
+### getCookieStringFromHttp(aURI, aFirstURI, aChannel) ###
 
-### setCookieString ###
+### setCookieString(aURI, aPrompt, aCookie, aChannel) ###
 
-### setCookieStringFromHttp ###
+### setCookieStringFromHttp(aURI, aFirstURI, aPrompt, aCookie, aServerTime, aChannel) ###

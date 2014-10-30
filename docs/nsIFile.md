@@ -31,7 +31,7 @@ methods" are not scriptable.
 
 ## Methods ##
 
-### append ###
+### append(node) ###
   
  append[Native]  
   
@@ -44,14 +44,14 @@ methods" are not scriptable.
       filesystem charset.  
   
 
-### appendNative ###
+### appendNative(node) ###
 
-### normalize ###
+### normalize() ###
   
  Normalize the pathName (e.g. removing .. and . components on Unix).  
   
 
-### create ###
+### create(type, permissions) ###
   
  create  
   
@@ -73,7 +73,7 @@ methods" are not scriptable.
       permissions.  
   
 
-### copyTo ###
+### copyTo(newParentDir, newName) ###
   
  copyTo[Native]  
   
@@ -102,9 +102,9 @@ methods" are not scriptable.
       which case the current leaf name will be used.  
   
 
-### CopyToNative ###
+### CopyToNative(newParentDir, newName) ###
 
-### copyToFollowingLinks ###
+### copyToFollowingLinks(newParentDir, newName) ###
   
  copyToFollowingLinks[Native]  
   
@@ -115,9 +115,9 @@ methods" are not scriptable.
  native filesystem charset.  
   
 
-### copyToFollowingLinksNative ###
+### copyToFollowingLinksNative(newParentDir, newName) ###
 
-### moveTo ###
+### moveTo(newParentDir, newName) ###
   
  moveTo[Native]  
   
@@ -151,9 +151,9 @@ methods" are not scriptable.
       which case the current leaf name will be used.  
   
 
-### moveToNative ###
+### moveToNative(newParentDir, newName) ###
 
-### renameTo ###
+### renameTo(newParentDir, newName) ###
   
  renameTo  
   
@@ -163,7 +163,7 @@ methods" are not scriptable.
  This object will still point to the old location after renaming.  
   
 
-### remove ###
+### remove(recursive) ###
   
  This will try to delete this file.  The 'recursive' flag  
  must be PR_TRUE to delete directories which are not empty.  
@@ -171,28 +171,28 @@ methods" are not scriptable.
  This will not resolve any symlinks.  
   
 
-### exists ###
+### exists() ###
 
-### isWritable ###
+### isWritable() ###
 
-### isReadable ###
+### isReadable() ###
 
-### isExecutable ###
+### isExecutable() ###
 
-### isHidden ###
+### isHidden() ###
 
-### isDirectory ###
+### isDirectory() ###
 
-### isFile ###
+### isFile() ###
 
-### isSymlink ###
+### isSymlink() ###
 
-### isSpecial ###
+### isSpecial() ###
   
 Not a regular file, not a directory, not a symlink.  
   
 
-### createUnique ###
+### createUnique(type, permissions) ###
   
  createUnique  
    
@@ -219,7 +219,7 @@ Not a regular file, not a directory, not a symlink.
       permissions.  
   
 
-### clone ###
+### clone() ###
   
 clone()  
   
@@ -232,18 +232,18 @@ exact location of the |this| nsIFile.
   
   
 
-### equals ###
+### equals(inFile) ###
   
  Will determine if the inFile equals this.  
   
 
-### contains ###
+### contains(inFile) ###
   
  Will determine if inFile is a descendant of this file.  
  This routine looks in subdirectories too.  
   
 
-### initWithPath ###
+### initWithPath(filePath) ###
   
  initWith[Native]Path  
   
@@ -258,9 +258,9 @@ exact location of the |this| nsIFile.
       filesystem charset.  
   
 
-### initWithNativePath ###
+### initWithNativePath(filePath) ###
 
-### initWithFile ###
+### initWithFile(aFile) ###
   
  initWithFile  
   
@@ -270,7 +270,7 @@ exact location of the |this| nsIFile.
       the file this becomes equivalent to  
   
 
-### openNSPRFileDesc ###
+### openNSPRFileDesc(flags, mode) ###
   
 Return the result of PR_Open on the file.  The caller is  
 responsible for calling PR_Close on the result.  
@@ -283,19 +283,19 @@ Instead use NS_OpenAnonymousTemporaryFile() to create a temporary
 file which will be deleted upon close.  
   
 
-### openANSIFileDesc ###
+### openANSIFileDesc(mode) ###
   
 Return the result of fopen on the file.  The caller is  
 responsible for calling fclose on the result.  
   
 
-### load ###
+### load() ###
   
 Return the result of PR_LoadLibrary on the file.  The caller is  
 responsible for calling PR_UnloadLibrary on the result.  
   
 
-### appendRelativePath ###
+### appendRelativePath(relativeFilePath) ###
   
  appendRelative[Native]Path  
   
@@ -308,9 +308,9 @@ responsible for calling PR_UnloadLibrary on the result.
       must be in the native filesystem charset.  
   
 
-### appendRelativeNativePath ###
+### appendRelativeNativePath(relativeFilePath) ###
 
-### reveal ###
+### reveal() ###
    
  reveal  
   
@@ -320,7 +320,7 @@ responsible for calling PR_UnloadLibrary on the result.
  This routine must be called on the main.   
   
 
-### launch ###
+### launch() ###
    
  launch  
   
@@ -331,7 +331,7 @@ responsible for calling PR_UnloadLibrary on the result.
  main thread.   
   
 
-### getRelativeDescriptor ###
+### getRelativeDescriptor(fromFile) ###
   
  getRelativeDescriptor  
   
@@ -346,7 +346,7 @@ responsible for calling PR_UnloadLibrary on the result.
       There is no defined result if this param is null.  
   
 
-### setRelativeDescriptor ###
+### setRelativeDescriptor(fromFile, relativeDesc) ###
   
  setRelativeDescriptor  
   

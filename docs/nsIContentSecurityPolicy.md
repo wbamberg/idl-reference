@@ -12,19 +12,19 @@ one of these per document/principal.
 
 ## Methods ##
 
-### getPolicy ###
+### getPolicy(index) ###
   
 Accessor method for a read-only string version of the policy at a given  
 index.  
   
 
-### removePolicy ###
+### removePolicy(index) ###
   
 Remove a policy associated with this CSP context.  
 @throws NS_ERROR_FAILURE if the index is out of bounds or invalid.  
   
 
-### appendPolicy ###
+### appendPolicy(policyString, reportOnly) ###
   
 Parse and install a CSP policy.  
 @param aPolicy  
@@ -34,7 +34,7 @@ Parse and install a CSP policy.
        just send reports if it is violated?  
   
 
-### getAllowsInlineScript ###
+### getAllowsInlineScript(shouldReportViolations) ###
   
 Whether this policy allows in-page script.  
 @param shouldReportViolations  
@@ -47,7 +47,7 @@ Whether this policy allows in-page script.
     (block the compilation if false).  
   
 
-### getAllowsEval ###
+### getAllowsEval(shouldReportViolations) ###
   
 whether this policy allows eval and eval-like functions  
 such as setTimeout("code string", time).  
@@ -61,7 +61,7 @@ such as setTimeout("code string", time).
     (block the call if false).  
   
 
-### getAllowsInlineStyle ###
+### getAllowsInlineStyle(shouldReportViolations) ###
   
 Whether this policy allows in-page styles.  
 This includes <style> tags with text content and style="" attributes in  
@@ -77,7 +77,7 @@ HTML elements.
     (block the rules if false).  
   
 
-### getAllowsNonce ###
+### getAllowsNonce(aNonce, aContentType, shouldReportViolation) ###
   
 Whether this policy accepts the given nonce  
 @param aNonce  
@@ -93,7 +93,7 @@ Whether this policy accepts the given nonce
     Whether or not this nonce is valid  
   
 
-### getAllowsHash ###
+### getAllowsHash(aContent, aContentType, shouldReportViolation) ###
   
 Whether this policy accepts the given inline resource based on the hash  
 of its content.  
@@ -110,7 +110,7 @@ of its content.
     Whether or not this inline resource is whitelisted by a hash-source  
   
 
-### logViolationDetails ###
+### logViolationDetails(violationType, sourceFile, scriptSample, lineNum, nonce, content) ###
   
 For each violated policy (of type violationType), log policy violation on  
 the Error Console and send a report to report-uris present in the violated  
@@ -135,7 +135,7 @@ policies.
     reports.  
   
 
-### setRequestContext ###
+### setRequestContext(selfURI, referrer, aChannel) ###
   
 Called after the CSP object is created to fill in appropriate request  
 context and give it a reference to its owning principal for violation  
@@ -146,7 +146,7 @@ referrer and the principal from whatever is available.  If the channel is
 available, it'll also store that for processing policy-uri directives.  
   
 
-### permitsAncestry ###
+### permitsAncestry(docShell) ###
   
 Verifies ancestry as permitted by the policy.  
   
@@ -161,7 +161,7 @@ value should not be cached.
    here when violated).  
   
 
-### permitsBaseURI ###
+### permitsBaseURI(aURI) ###
   
 Whether this policy allows setting the document's base URI to  
 a given value.  
@@ -171,7 +171,7 @@ a given value.
    document's base URI. (block the setting if false).  
   
 
-### shouldLoad ###
+### shouldLoad(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeTypeGuess, aExtra) ###
   
 Delegate method called by the service when sub-elements of the protected  
 document are being loaded.  Given a bit of information about the request,  

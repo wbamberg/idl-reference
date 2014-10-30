@@ -16,11 +16,11 @@ http://www.whatwg.org/specs/web-apps/current-work/
 
 ## Methods ##
 
-### submit ###
+### submit() ###
 
-### reset ###
+### reset() ###
 
-### checkValidity ###
+### checkValidity() ###
 
 ## Attributes ##
 

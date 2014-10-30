@@ -6,6 +6,6 @@ layout: default
 
 ## Methods ##
 
-### onsuccess ###
+### onsuccess(value) ###
 
-### onerror ###
+### onerror(error) ###

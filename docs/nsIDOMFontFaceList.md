@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### item ###
+### item(index) ###
 
 ## Attributes ##
 

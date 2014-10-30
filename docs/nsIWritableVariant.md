@@ -15,63 +15,63 @@ may not succeed.
 
 ## Methods ##
 
-### setAsInt8 ###
+### setAsInt8(aValue) ###
 
-### setAsInt16 ###
+### setAsInt16(aValue) ###
 
-### setAsInt32 ###
+### setAsInt32(aValue) ###
 
-### setAsInt64 ###
+### setAsInt64(aValue) ###
 
-### setAsUint8 ###
+### setAsUint8(aValue) ###
 
-### setAsUint16 ###
+### setAsUint16(aValue) ###
 
-### setAsUint32 ###
+### setAsUint32(aValue) ###
 
-### setAsUint64 ###
+### setAsUint64(aValue) ###
 
-### setAsFloat ###
+### setAsFloat(aValue) ###
 
-### setAsDouble ###
+### setAsDouble(aValue) ###
 
-### setAsBool ###
+### setAsBool(aValue) ###
 
-### setAsChar ###
+### setAsChar(aValue) ###
 
-### setAsWChar ###
+### setAsWChar(aValue) ###
 
-### setAsID ###
+### setAsID(aValue) ###
 
-### setAsAString ###
+### setAsAString(aValue) ###
 
-### setAsDOMString ###
+### setAsDOMString(aValue) ###
 
-### setAsACString ###
+### setAsACString(aValue) ###
 
-### setAsAUTF8String ###
+### setAsAUTF8String(aValue) ###
 
-### setAsString ###
+### setAsString(aValue) ###
 
-### setAsWString ###
+### setAsWString(aValue) ###
 
-### setAsISupports ###
+### setAsISupports(aValue) ###
 
-### setAsInterface ###
+### setAsInterface(iid, iface) ###
 
-### setAsArray ###
+### setAsArray(type, iid, count, ptr) ###
 
-### setAsStringWithSize ###
+### setAsStringWithSize(size, str) ###
 
-### setAsWStringWithSize ###
+### setAsWStringWithSize(size, str) ###
 
-### setAsVoid ###
+### setAsVoid() ###
 
-### setAsEmpty ###
+### setAsEmpty() ###
 
-### setAsEmptyArray ###
+### setAsEmptyArray() ###
 
-### setFromVariant ###
+### setFromVariant(aValue) ###
 
 ## Attributes ##
 

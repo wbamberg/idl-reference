@@ -9,7 +9,7 @@ Scriptable storage for Unicode strings
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

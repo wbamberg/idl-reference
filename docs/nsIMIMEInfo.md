@@ -15,7 +15,7 @@ MIMEInfo objects are generally retrieved from the MIME Service
 
 ## Methods ##
 
-### getFileExtensions ###
+### getFileExtensions() ###
   
 Gives you an array of file types associated with this type.  
   
@@ -23,12 +23,12 @@ Gives you an array of file types associated with this type.
 @return Array of extensions.  
   
 
-### setFileExtensions ###
+### setFileExtensions(aExtensions) ###
   
 Set File Extensions. Input is a comma delimited list of extensions.  
   
 
-### extensionExists ###
+### extensionExists(aExtension) ###
   
 Returns whether or not the given extension is  
 associated with this MIME info.  
@@ -36,12 +36,12 @@ associated with this MIME info.
 @return TRUE if the association exists.   
   
 
-### appendExtension ###
+### appendExtension(aExtension) ###
   
 Append a given extension to the set of extensions  
   
 
-### equals ###
+### equals(aMIMEInfo) ###
   
 Returns whether or not these two nsIMIMEInfos are logically  
 equivalent.  
@@ -49,7 +49,7 @@ equivalent.
 @returns PR_TRUE if the two are considered equal  
   
 
-### launchWithFile ###
+### launchWithFile(aFile) ###
   
 Launches the application with the specified file, in a way that  
 depends on the value of preferredAction. preferredAction must be  

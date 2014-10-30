@@ -9,4 +9,4 @@ Factory of a specified filter.
 
 ## Methods ##
 
-### newFilter ###
+### newFilter() ###

@@ -6,22 +6,22 @@ layout: default
 
 ## Methods ##
 
-### setPropertyAsInt32 ###
+### setPropertyAsInt32(prop, value) ###
 
-### setPropertyAsUint32 ###
+### setPropertyAsUint32(prop, value) ###
 
-### setPropertyAsInt64 ###
+### setPropertyAsInt64(prop, value) ###
 
-### setPropertyAsUint64 ###
+### setPropertyAsUint64(prop, value) ###
 
-### setPropertyAsDouble ###
+### setPropertyAsDouble(prop, value) ###
 
-### setPropertyAsAString ###
+### setPropertyAsAString(prop, value) ###
 
-### setPropertyAsACString ###
+### setPropertyAsACString(prop, value) ###
 
-### setPropertyAsAUTF8String ###
+### setPropertyAsAUTF8String(prop, value) ###
 
-### setPropertyAsBool ###
+### setPropertyAsBool(prop, value) ###
 
-### setPropertyAsInterface ###
+### setPropertyAsInterface(prop, value) ###

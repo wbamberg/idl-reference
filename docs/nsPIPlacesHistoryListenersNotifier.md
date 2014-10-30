@@ -13,7 +13,7 @@ code that is not part of core.
 
 ## Methods ##
 
-### notifyOnPageExpired ###
+### notifyOnPageExpired(aURI, aVisitTime, aWholeEntry, aGUID, aReason, aTransitionType) ###
   
 Calls onDeleteVisits and onDeleteURI notifications on registered listeners  
 with the history service.  

@@ -12,37 +12,37 @@ This interface is a unicode encoder for use by scripts
 
 ## Methods ##
 
-### ConvertFromUnicode ###
+### ConvertFromUnicode(aSrc) ###
   
 Converts the data from Unicode to one Charset.  
 Returns the converted string. After converting, Finish should be called  
 and its return value appended to this return value.  
   
 
-### Finish ###
+### Finish() ###
   
 Returns the terminator string.  
 Should be called after ConvertFromUnicode() and appended to that  
 function's return value.  
   
 
-### ConvertToUnicode ###
+### ConvertToUnicode(aSrc) ###
   
 Converts the data from one Charset to Unicode.  
   
 
-### convertFromByteArray ###
+### convertFromByteArray(aData, aCount) ###
   
 Converts an array of bytes to a unicode string.  
   
 
-### convertToByteArray ###
+### convertToByteArray(aString, aLen, aData) ###
   
 Convert a unicode string to an array of bytes. Finish does not need to be  
 called.  
   
 
-### convertToInputStream ###
+### convertToInputStream(aString) ###
   
 Converts a unicode string to an input stream. The bytes in the stream are  
 encoded according to the charset attribute.  

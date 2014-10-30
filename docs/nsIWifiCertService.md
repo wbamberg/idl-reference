@@ -6,11 +6,11 @@ layout: default
 
 ## Methods ##
 
-### start ###
+### start(listener) ###
 
-### shutdown ###
+### shutdown() ###
 
-### importCert ###
+### importCert(id, certBlob, certPassword, certNickname) ###
   
 Import a certificate file.  
   
@@ -24,7 +24,7 @@ Import a certificate file.
        User assigned nickname for imported certificate.  
   
 
-### deleteCert ###
+### deleteCert(id, certNickname) ###
   
 Delete an imported certificate file  
   

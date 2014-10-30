@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### getData ###
+### getData(aTransferable, aItemIndex) ###
   
 Get data from a Drag&Drop. Can be called while the drag is in process  
 or after the drop has completed.    
@@ -15,7 +15,7 @@ or after the drop has completed.
 @param  aItemIndex which of multiple drag items, zero-based  
   
 
-### isDataFlavorSupported ###
+### isDataFlavorSupported(aDataFlavor) ###
   
 Check to set if any of the native data on the clipboard matches this data flavor  
   

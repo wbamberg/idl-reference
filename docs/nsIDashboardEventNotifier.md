@@ -6,10 +6,10 @@ layout: default
 
 ## Methods ##
 
-### addHost ###
+### addHost(aHost, aSerial, aEncrypted) ###
 
-### removeHost ###
+### removeHost(aHost, aSerial) ###
 
-### newMsgSent ###
+### newMsgSent(aHost, aSerial, aLength) ###
 
-### newMsgReceived ###
+### newMsgReceived(aHost, aSerial, aLength) ###

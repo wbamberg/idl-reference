@@ -16,7 +16,7 @@ background images as well as various utilities.
 
 ## Methods ##
 
-### onShowContextMenu ###
+### onShowContextMenu(aContextFlags, aUtils) ###
   
 Called when the browser receives a context menu event (e.g. user is right-mouse  
 clicking somewhere on the document). The combination of flags, along with the  

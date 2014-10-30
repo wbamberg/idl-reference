@@ -6,12 +6,12 @@ layout: default
 
 ## Methods ##
 
-### enumerateReporters ###
+### enumerateReporters() ###
 
-### registerReporter ###
+### registerReporter(reporter) ###
 
-### unregisterReporter ###
+### unregisterReporter(reporter) ###
 
-### init ###
+### init() ###
 
-### dumpReports ###
+### dumpReports() ###

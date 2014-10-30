@@ -10,7 +10,7 @@ on the capabilities of Gecko webnavigation objects.
 
 ## Methods ##
 
-### isTypeSupported ###
+### isTypeSupported(aType, aWebNav) ###
   
 Query whether aType is supported.  
 @param aType the MIME type in question.  

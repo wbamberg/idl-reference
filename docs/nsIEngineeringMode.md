@@ -6,8 +6,8 @@ layout: default
 
 ## Methods ##
 
-### getValue ###
+### getValue(name, callback) ###
 
-### setValue ###
+### setValue(name, value, callback) ###
 
-### setMessageHandler ###
+### setMessageHandler(handler) ###

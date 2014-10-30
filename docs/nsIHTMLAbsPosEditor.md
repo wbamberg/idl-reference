@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### absolutePositionSelection ###
+### absolutePositionSelection(aEnabled) ###
   
 extracts the selection from the normal flow of the document and  
 positions it.  
@@ -14,13 +14,13 @@ positions it.
                      false to put it back in the normal flow  
   
 
-### relativeChangeZIndex ###
+### relativeChangeZIndex(aChange) ###
   
 adds aChange to the z-index of the currently positioned element.  
 @param aChange [IN] relative change to apply to current z-index  
   
 
-### absolutelyPositionElement ###
+### absolutelyPositionElement(aElement, aEnabled) ###
   
 extracts an element from the normal flow of the document and  
 positions it, and puts it back in the normal flow.  
@@ -29,7 +29,7 @@ positions it, and puts it back in the normal flow.
                      false to put it back in the normal flow  
   
 
-### setElementPosition ###
+### setElementPosition(aElement, aX, aY) ###
   
 sets the position of an element; warning it does NOT check if the  
 element is already positioned or not and that's on purpose.  
@@ -38,21 +38,21 @@ element is already positioned or not and that's on purpose.
 @param aY       [IN] the y position in pixels.  
   
 
-### getElementZIndex ###
+### getElementZIndex(aElement) ###
   
 returns the absolute z-index of a positioned element. Never returns 'auto'.  
 @return         the z-index of the element  
 @param aElement [IN] the element.  
   
 
-### setElementZIndex ###
+### setElementZIndex(aElement, aZorder) ###
   
 sets the z-index of an element.  
 @param aElement [IN] the element  
 @param aZorder  [IN] the z-index  
   
 
-### relativeChangeElementZIndex ###
+### relativeChangeElementZIndex(aElement, aChange) ###
   
 adds aChange to the z-index of an arbitrary element.  
 @return         the new z-index of the element  
@@ -61,7 +61,7 @@ adds aChange to the z-index of an arbitrary element.
                      the element  
   
 
-### showGrabberOnElement ###
+### showGrabberOnElement(aElement) ###
   
 shows a grabber attached to an arbitrary element. The grabber is an image  
 positioned on the left hand side of the top border of the element. Dragging  
@@ -70,12 +70,12 @@ document. See chrome://editor/content/images/grabber.gif
 @param aElement [IN] the element  
   
 
-### hideGrabber ###
+### hideGrabber() ###
   
 hide the grabber if it shown.  
   
 
-### refreshGrabber ###
+### refreshGrabber() ###
   
 refreshes the grabber if it shown, possibly updating its position or  
 even hiding it.  

@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### add ###
+### add(uri, type, permission, expireType, expireTime) ###
   
 Add permission information for a given URI and permission type. This  
 operation will cause the type string to be registered if it does not  
@@ -33,7 +33,7 @@ will be modified.
                    should be forgotten (milliseconds since Jan 1 1970 0:00:00).   
   
 
-### addFromPrincipal ###
+### addFromPrincipal(principal, typed, permission, expireType, expireTime) ###
   
 Add permission information for a given principal.  
 It is internally calling the other add() method using the nsIURI from the  
@@ -42,7 +42,7 @@ Passing a system principal will be a no-op because they will always be
 granted permissions.  
   
 
-### remove ###
+### remove(host, type) ###
   
 Remove permission information for a given host string and permission type.  
 The host string represents the exact entry in the permission list (such as  
@@ -55,7 +55,7 @@ to.
               add() method.  
   
 
-### removeFromPrincipal ###
+### removeFromPrincipal(principal, type) ###
   
 Remove permission information for a given principal.  
 This is internally calling remove() with the host from the principal's URI.  
@@ -63,17 +63,17 @@ Passing system principal will be a no-op because we never add them to the
 database.  
   
 
-### removeAll ###
+### removeAll() ###
   
 Clear permission information for all websites.  
   
 
-### removeAllSince ###
+### removeAllSince(since) ###
   
 Clear all permission information added since the specified time.  
   
 
-### testPermission ###
+### testPermission(uri, type) ###
   
 Test whether a website has permission to perform the given action.  
 @param uri     the uri to be tested  
@@ -82,20 +82,20 @@ Test whether a website has permission to perform the given action.
                there is no stored permission for this uri and / or type.  
   
 
-### testPermissionFromPrincipal ###
+### testPermissionFromPrincipal(principal, type) ###
   
 Test whether the principal has the permission to perform a given action.  
 System principals will always have permissions granted.  
   
 
-### testPermissionFromWindow ###
+### testPermissionFromWindow(window, type) ###
   
 Test whether the principal associated with the window's document has the  
 permission to perform a given action.  System principals will always  
 have permissions granted.  
   
 
-### testExactPermission ###
+### testExactPermission(uri, type) ###
   
 Test whether a website has permission to perform the given action.  
 This requires an exact hostname match, subdomains are not a match.  
@@ -105,13 +105,13 @@ This requires an exact hostname match, subdomains are not a match.
                there is no stored permission for this uri and / or type.  
   
 
-### testExactPermissionFromPrincipal ###
+### testExactPermissionFromPrincipal(principal, type) ###
   
 See testExactPermission() above.  
 System principals will always have permissions granted.  
   
 
-### testExactPermanentPermission ###
+### testExactPermanentPermission(principal, type) ###
   
 Test whether a website has permission to perform the given action  
 ignoring active sessions.  
@@ -123,7 +123,7 @@ System principals will always have permissions granted.
                  there is no stored permission for this uri and / or type.  
   
 
-### getPermissionObject ###
+### getPermissionObject(principal, type, exactHost) ###
   
 Get the permission object associated with the given principal and action.  
 @param principal The principal  
@@ -138,7 +138,7 @@ Get the permission object associated with the given principal and action.
 @note This method will always return null for the system principal.  
   
 
-### addrefAppId ###
+### addrefAppId(appId) ###
   
 Increment or decrement our "refcount" of an app id.  
   
@@ -147,9 +147,9 @@ refcount goes to 0, we clear the permissions given to the app which are
 set to expire at the end of its session.  
   
 
-### releaseAppId ###
+### releaseAppId(appId) ###
 
-### removePermissionsForApp ###
+### removePermissionsForApp(appId, browserOnly) ###
   
 Remove all permissions associated with a given app id.  
 @param aAppId       The appId of the app  
@@ -157,7 +157,7 @@ Remove all permissions associated with a given app id.
                     a browser element (true) or all permissions (false).  
   
 
-### updateExpireTime ###
+### updateExpireTime(principal, type, exactHost, sessionExpireTime, persistentExpireTime) ###
   
 If the current permission is set to expire, reset the expiration time. If  
 there is no permission or the current permission does not expire, this  

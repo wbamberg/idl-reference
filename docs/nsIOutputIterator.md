@@ -9,7 +9,7 @@ layout: default
 
 ## Methods ##
 
-### putElement ###
+### putElement(anElementToPut) ###
   
 Put |anElementToPut| into the underlying container or sequence at the position currently pointed to by this iterator.  
 The iterator and the underlying container or sequence cooperate to |Release()|  
@@ -21,7 +21,7 @@ useful range of the underlying container or sequence.
 @param anElementToPut the element to place into the underlying container or sequence  
   
 
-### stepForward ###
+### stepForward() ###
   
 Advance this iterator to the next position in the underlying container or sequence.  
   

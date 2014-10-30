@@ -6,33 +6,33 @@ layout: default
 
 ## Methods ##
 
-### isLoggedIn ###
+### isLoggedIn() ###
 
-### login ###
+### login(force) ###
 
-### logoutSimple ###
+### logoutSimple() ###
 
-### logoutAndDropAuthenticatedResources ###
+### logoutAndDropAuthenticatedResources() ###
 
-### reset ###
+### reset() ###
 
-### checkPassword ###
+### checkPassword(password) ###
 
-### initPassword ###
+### initPassword(initialPassword) ###
 
-### changePassword ###
+### changePassword(oldPassword, newPassword) ###
 
-### getAskPasswordTimes ###
+### getAskPasswordTimes() ###
 
-### getAskPasswordTimeout ###
+### getAskPasswordTimeout() ###
 
-### setAskPasswordDefaults ###
+### setAskPasswordDefaults(askTimes, timeout) ###
 
-### isHardwareToken ###
+### isHardwareToken() ###
 
-### needsLogin ###
+### needsLogin() ###
 
-### isFriendly ###
+### isFriendly() ###
 
 ## Attributes ##
 

@@ -14,7 +14,7 @@ Otherwise, these objects are used simply as nsIRequestObserver's.
 
 ## Methods ##
 
-### init ###
+### init(observer, context) ###
   
 Initializes an nsIRequestObserverProxy.  
   

@@ -14,13 +14,13 @@ http://www.w3.org/TR/DOM-Level-2-Core/
 
 ## Methods ##
 
-### hasFeature ###
+### hasFeature(feature, version) ###
 
-### createDocumentType ###
+### createDocumentType(qualifiedName, publicId, systemId) ###
 
-### createDocument ###
+### createDocument(namespaceURI, qualifiedName, doctype) ###
 
-### createHTMLDocument ###
+### createHTMLDocument(title) ###
   
 Returns an HTML document with a basic DOM already constructed and with an  
 appropriate title element.  

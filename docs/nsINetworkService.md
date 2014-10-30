@@ -9,7 +9,7 @@ Provide network services.
 
 ## Methods ##
 
-### setWifiTethering ###
+### setWifiTethering(enabled, config, callback) ###
   
 Enable or disable Wifi Tethering  
   
@@ -21,7 +21,7 @@ Enable or disable Wifi Tethering
        Callback function used to report status to WifiManager.  
   
 
-### setDhcpServer ###
+### setDhcpServer(enabled, config, callback) ###
   
 Enable or disable DHCP server  
   
@@ -42,7 +42,7 @@ Enable or disable DHCP server
        Callback function used to report status.  
   
 
-### getNetworkInterfaceStats ###
+### getNetworkInterfaceStats(networkName, callback) ###
   
 Retrieve network interface stats.  
   
@@ -54,7 +54,7 @@ Retrieve network interface stats.
        and the date when stats are retrieved  
   
 
-### setNetworkInterfaceAlarm ###
+### setNetworkInterfaceAlarm(networkName, threshold, callback) ###
   
 Set Alarm of usage per interface  
   
@@ -70,7 +70,7 @@ Set Alarm of usage per interface
 @return false if there is no interface registered for the networkType param.  
   
 
-### setWifiOperationMode ###
+### setWifiOperationMode(interfaceName, mode, callback) ###
   
 Reload Wifi firmware to specific operation mode.  
   
@@ -86,7 +86,7 @@ Reload Wifi firmware to specific operation mode.
        Callback to notify Wifi firmware reload result.  
   
 
-### setNetworkProxy ###
+### setNetworkProxy(networkInterface) ###
   
 Set http proxy for specific network  
   
@@ -95,7 +95,7 @@ Set http proxy for specific network
        we want to set.  
   
 
-### setUSBTethering ###
+### setUSBTethering(enabled, config, callback) ###
   
 Set USB tethering.  
   
@@ -107,7 +107,7 @@ Set USB tethering.
        Callback function used to report the result enabling/disabling usb tethering.  
   
 
-### resetRoutingTable ###
+### resetRoutingTable(networkInterface) ###
   
 Reset routing table.  
   
@@ -115,7 +115,7 @@ Reset routing table.
        The network interface we want remove from the routing table.  
   
 
-### setDNS ###
+### setDNS(networkInterface, callback) ###
   
 Set DNS.  
   
@@ -126,7 +126,7 @@ Set DNS.
        Callback to notify the result of setting DNS server.  
   
 
-### setDefaultRoute ###
+### setDefaultRoute(networkInterface, oldInterface, callback) ###
   
 Set default route.  
   
@@ -138,7 +138,7 @@ Set default route.
        Callback to notify the result of setting default route.  
   
 
-### removeDefaultRoute ###
+### removeDefaultRoute(networkInterface) ###
   
 Remove default route.  
   
@@ -146,7 +146,7 @@ Remove default route.
        The network interface we want remove from the default route.  
   
 
-### addHostRoute ###
+### addHostRoute(interfaceName, gateway, host) ###
   
 Add host route.  
   
@@ -161,7 +161,7 @@ Add host route.
         specified reason otherwise.  
   
 
-### removeHostRoute ###
+### removeHostRoute(interfaceName, gateway, host) ###
   
 Remove host route.  
   
@@ -176,7 +176,7 @@ Remove host route.
         specified reason otherwise.  
   
 
-### removeHostRoutes ###
+### removeHostRoutes(interfaceName) ###
   
 Remove all host routes.  
   
@@ -184,7 +184,7 @@ Remove all host routes.
        The interface name we want remove from the routing table.  
   
 
-### addSecondaryRoute ###
+### addSecondaryRoute(interfaceName, route) ###
   
 Add route to secondary routing table.  
   
@@ -197,7 +197,7 @@ Add route to secondary routing table.
        .gateway: gateway ip address  
   
 
-### removeSecondaryRoute ###
+### removeSecondaryRoute(interfaceName, route) ###
   
 Remove route from secondary routing table.  
   
@@ -210,7 +210,7 @@ Remove route from secondary routing table.
        .gateway: gateway ip address  
   
 
-### enableUsbRndis ###
+### enableUsbRndis(enable, callback) ###
   
 Enable or disable usb rndis.  
   
@@ -220,7 +220,7 @@ Enable or disable usb rndis.
        Callback function to report the result.  
   
 
-### updateUpStream ###
+### updateUpStream(previous, current, callback) ###
   
 Update upstream.  
   
@@ -232,7 +232,7 @@ Update upstream.
        Callback function to report the result.  
   
 
-### configureInterface ###
+### configureInterface(config, callback) ###
   
 Configure a network interface.  
   
@@ -250,7 +250,7 @@ Configure a network interface.
        Callback to notify the result of configurating network interface.  
   
 
-### dhcpRequest ###
+### dhcpRequest(interfaceName, callback) ###
   
 Issue a DHCP client request.  
   
@@ -261,7 +261,7 @@ Issue a DHCP client request.
        Callback to notify the result of the DHCP request.  
   
 
-### enableInterface ###
+### enableInterface(interfaceName, callback) ###
   
 Enable a network interface.  
   
@@ -272,7 +272,7 @@ Enable a network interface.
        Callback to notify the result of disabling network interface.  
   
 
-### disableInterface ###
+### disableInterface(interfaceName, callback) ###
   
 Disable a network interface.  
   
@@ -283,7 +283,7 @@ Disable a network interface.
        Callback to notify the result of disabling network interface.  
   
 
-### resetConnections ###
+### resetConnections(interfaceName, callback) ###
   
 Reset all connections  
   

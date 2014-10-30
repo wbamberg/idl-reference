@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### handleResult ###
+### handleResult(result) ###
   
 Called with the result of the removeCert operation above.  
   

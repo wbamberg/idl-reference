@@ -10,7 +10,7 @@ layout: default
 
 ## Methods ##
 
-### writeObject ###
+### writeObject(aObject, aIsStrongRef) ###
   
 Write the object whose "root" or XPCOM-identity nsISupports is aObject.  
 The cause for writing this object is a strong or weak reference, so the  
@@ -26,14 +26,14 @@ the primary inheritance chain ending in the root nsISupports, you must
 call writeCompoundObject instead of this method.  
   
 
-### writeSingleRefObject ###
+### writeSingleRefObject(aObject) ###
   
 Write an object referenced singly and strongly via its root nsISupports  
 or a subclass of its root nsISupports.  There must not be other refs to  
 aObject in memory, or in the serialization.  
   
 
-### writeCompoundObject ###
+### writeCompoundObject(aObject, aIID, aIsStrongRef) ###
   
 Write the object referenced by an interface pointer at aObject that  
 inherits from a non-primary nsISupports, i.e., a reference to one of  
@@ -43,11 +43,11 @@ inner object in the case of true XPCOM aggregation.  aIID identifies
 this interface.  
   
 
-### writeID ###
+### writeID(aID) ###
 
-### getBuffer ###
+### getBuffer(aLength, aAlignMask) ###
   
 Optimized serialization support -- see nsIStreamBufferAccess.idl.  
   
 
-### putBuffer ###
+### putBuffer(aBuffer, aLength) ###

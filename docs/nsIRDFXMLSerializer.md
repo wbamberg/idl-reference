@@ -6,14 +6,14 @@ layout: default
 
 ## Methods ##
 
-### init ###
+### init(aDataSource) ###
   
 Initialize the serializer with the specified datasource.  
 @param aDataSource the datasource from which data will be  
   serialized  
   
 
-### addNameSpace ###
+### addNameSpace(aPrefix, aURI) ###
   
 Add the specified namespace to the serializer.  
 @param aPrefix the attribute namespace prefix  

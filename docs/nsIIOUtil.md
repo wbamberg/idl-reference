@@ -9,7 +9,7 @@ nsIIOUtil provdes various xpcom/io-related utility methods.
 
 ## Methods ##
 
-### inputStreamIsBuffered ###
+### inputStreamIsBuffered(aStream) ###
   
 Test whether an input stream is buffered.  See nsStreamUtils.h  
 documentation for NS_InputStreamIsBuffered for the definition of  
@@ -18,7 +18,7 @@ documentation for NS_InputStreamIsBuffered for the definition of
 @throws NS_ERROR_INVALID_POINTER if null is passed in.  
   
 
-### outputStreamIsBuffered ###
+### outputStreamIsBuffered(aStream) ###
   
 Test whether an output stream is buffered.  See nsStreamUtils.h  
 documentation for NS_OutputStreamIsBuffered for the definition of  

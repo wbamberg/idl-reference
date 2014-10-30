@@ -6,19 +6,19 @@ layout: default
 
 ## Methods ##
 
-### open ###
+### open(zipFile) ###
   
 Opens a zip file for reading.  
 It is allowed to open with another file,   
 but it needs to be closed first with close().  
   
 
-### openInner ###
+### openInner(zipReader, zipEntry) ###
   
 Opens a zip file inside a zip file for reading.  
   
 
-### close ###
+### close() ###
   
 Closes a zip reader. Subsequent attempts to extract files or read from  
 its input stream will result in an error.  
@@ -27,7 +27,7 @@ Subsequent attempts to access a nsIZipEntry obtained from this zip
 reader will cause unspecified behavior.  
   
 
-### test ###
+### test(aEntryName) ###
   
 Tests the integrity of the archive by performing a CRC check   
 on each item expanded into memory.  If an entry is specified  
@@ -36,7 +36,7 @@ or EmptyCString() (c++) is passed in the integrity of all items
 in the archive are tested.    
   
 
-### extract ###
+### extract(zipEntry, outFile) ###
   
 Extracts a zip entry into a local file specified by outFile.  
 The entry must be stored in the zip in either uncompressed or  
@@ -45,17 +45,17 @@ If the entry is a directory, the directory will be extracted
 non-recursively.  
   
 
-### getEntry ###
+### getEntry(zipEntry) ###
   
 Returns a nsIZipEntry describing a specified zip entry.  
   
 
-### hasEntry ###
+### hasEntry(zipEntry) ###
   
 Checks whether the zipfile contains an entry specified by entryName.  
   
 
-### findEntries ###
+### findEntries(aPattern) ###
   
 Returns a string enumerator containing the matching entry names.  
   
@@ -100,14 +100,14 @@ Returns a string enumerator containing the matching entry names.
                                values.  
   
 
-### getInputStream ###
+### getInputStream(zipEntry) ###
   
 Returns an input stream containing the contents of the specified zip  
 entry.  
 @param zipEntry the name of the entry to open the stream from  
   
 
-### getInputStreamWithSpec ###
+### getInputStreamWithSpec(aJarSpec, zipEntry) ###
   
 Returns an input stream containing the contents of the specified zip  
 entry. If the entry refers to a directory (ends with '/'), a directory stream   
@@ -116,7 +116,7 @@ is opened, otherwise the contents of the file entry is returned.
 @param zipEntry the name of the entry to open the stream from  
   
 
-### getSigningCert ###
+### getSigningCert(aEntryName) ###
   
 Returns an object describing the entity which signed   
 an entry. parseManifest must be called first. If aEntryName is an  

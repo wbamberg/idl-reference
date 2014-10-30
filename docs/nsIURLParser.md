@@ -10,7 +10,7 @@ follow the definitions of RFC 2396.
 
 ## Methods ##
 
-### parseURL ###
+### parseURL(spec, specLen, schemePos, schemeLen, authorityPos, authorityLen, pathPos, pathLen) ###
   
 The string to parse in the following methods may be given as a null  
 terminated string, in which case the length argument should be -1.  
@@ -29,7 +29,7 @@ an authority section (hostname, etc.), and a path.
 spec = <scheme>://<authority><path>  
   
 
-### parseAuthority ###
+### parseAuthority(authority, authorityLen, usernamePos, usernameLen, passwordPos, passwordLen, hostnamePos, hostnameLen, port) ###
   
 ParseAuthority breaks the authority string up into its 4 components:  
 username, password, hostname, and hostport.  
@@ -37,17 +37,17 @@ username, password, hostname, and hostport.
 auth = <username>:<password>@<hostname>:<port>  
   
 
-### parseUserInfo ###
+### parseUserInfo(userinfo, userinfoLen, usernamePos, usernameLen, passwordPos, passwordLen) ###
   
 userinfo = <username>:<password>  
   
 
-### parseServerInfo ###
+### parseServerInfo(serverinfo, serverinfoLen, hostnamePos, hostnameLen, port) ###
   
 serverinfo = <hostname>:<port>  
   
 
-### parsePath ###
+### parsePath(path, pathLen, filepathPos, filepathLen, queryPos, queryLen, refPos, refLen) ###
   
 ParsePath breaks the path string up into its 3 major components: a file path,  
 a query string, and a reference string.  
@@ -55,7 +55,7 @@ a query string, and a reference string.
 path = <filepath>?<query>#<ref>  
   
 
-### parseFilePath ###
+### parseFilePath(filepath, filepathLen, directoryPos, directoryLen, basenamePos, basenameLen, extensionPos, extensionLen) ###
   
 ParseFilePath breaks the file path string up into: the directory portion,  
 file base name, and file extension.  
@@ -63,7 +63,7 @@ file base name, and file extension.
 filepath = <directory><basename>.<extension>  
   
 
-### parseFileName ###
+### parseFileName(filename, filenameLen, basenamePos, basenameLen, extensionPos, extensionLen) ###
   
 filename = <basename>.<extension>  
   

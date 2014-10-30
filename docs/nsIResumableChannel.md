@@ -6,7 +6,7 @@ layout: default
 
 ## Methods ##
 
-### resumeAt ###
+### resumeAt(startPos, entityID) ###
   
 Prepare this channel for resuming. The request will not start until  
 asyncOpen or open is called. Calling resumeAt after open or asyncOpen  

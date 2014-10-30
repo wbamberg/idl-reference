@@ -6,9 +6,9 @@ layout: default
 
 ## Methods ##
 
-### dump ###
+### dump(str) ###
 
-### setTimeout ###
+### setTimeout() ###
   
 These methods take typeless arguments and optional arguments, the  
 first argument is either a function or a string, the second  
@@ -16,32 +16,32 @@ argument must be a number (ms) and the rest of the arguments (2
 ... n) are passed to the callback function  
   
 
-### setInterval ###
+### setInterval() ###
 
-### clearTimeout ###
+### clearTimeout(handle) ###
   
 These methods take one optional argument that's the timer ID to  
 clear. Often in existing code these methods are passed undefined,  
 which is a nop so we need to support that as well.  
   
 
-### clearInterval ###
+### clearInterval(handle) ###
 
-### setResizable ###
+### setResizable(resizable) ###
   
 This method is here for backwards compatibility with 4.x only,  
 its implementation is a no-op  
   
 
-### captureEvents ###
+### captureEvents() ###
   
 @deprecated These are old Netscape 4 methods. Do not use,  
             the implementation is no-op.  
   
 
-### releaseEvents ###
+### releaseEvents() ###
 
-### open ###
+### open(url, name, options) ###
   
 This is the scriptable version of nsIDOMWindow::open()  
 that takes 3 optional arguments. Its binary name is OpenJS to  
@@ -53,7 +53,7 @@ not.
 IOW, DO NOT CALL THIS FROM C++  
   
 
-### openDialog ###
+### openDialog(url, name, options) ###
   
 This is the scriptable version of  
 nsIDOMWindow::openDialog() that takes 3 optional  

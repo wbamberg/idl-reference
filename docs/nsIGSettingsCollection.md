@@ -6,16 +6,16 @@ layout: default
 
 ## Methods ##
 
-### setString ###
+### setString(key, value) ###
 
-### setBoolean ###
+### setBoolean(key, value) ###
 
-### setInt ###
+### setInt(key, value) ###
 
-### getString ###
+### getString(key) ###
 
-### getBoolean ###
+### getBoolean(key) ###
 
-### getInt ###
+### getInt(key) ###
 
-### getStringList ###
+### getStringList(key) ###

@@ -6,17 +6,17 @@ layout: default
 
 ## Methods ##
 
-### getSearchAt ###
+### getSearchAt(index) ###
 
-### selectTextRange ###
+### selectTextRange(startIndex, endIndex) ###
 
-### onSearchBegin ###
+### onSearchBegin() ###
 
-### onSearchComplete ###
+### onSearchComplete() ###
 
-### onTextEntered ###
+### onTextEntered() ###
 
-### onTextReverted ###
+### onTextReverted() ###
 
 ## Attributes ##
 

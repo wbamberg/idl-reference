@@ -17,7 +17,7 @@ controller command table via getInterface().
 
 ## Methods ##
 
-### makeImmutable ###
+### makeImmutable() ###
   
 Make this command table immutable, so that commands cannot  
 be registered or unregistered. Some command tables are made  
@@ -25,7 +25,7 @@ mutable after command registration so that they can be
 used as singletons.  
   
 
-### registerCommand ###
+### registerCommand(aCommandName, aCommand) ###
   
 Register and unregister commands with the command table.  
   
@@ -35,16 +35,16 @@ Register and unregister commands with the command table.
 @param aCommand      the handler for this command.  
   
 
-### unregisterCommand ###
+### unregisterCommand(aCommandName, aCommand) ###
 
-### findCommandHandler ###
+### findCommandHandler(aCommandName) ###
   
 Find the command handler which has been registered to handle the named command.  
   
 @param aCommandName  the name of the command to find the handler for.  
   
 
-### isCommandEnabled ###
+### isCommandEnabled(aCommandName, aCommandRefCon) ###
   
 Get whether the named command is enabled.  
   
@@ -52,7 +52,7 @@ Get whether the named command is enabled.
 @param aCommandRefCon  the command context data  
   
 
-### updateCommandState ###
+### updateCommandState(aCommandName, aCommandRefCon) ###
   
 Tell the command to update its state (if it is a state updating command)  
   
@@ -60,7 +60,7 @@ Tell the command to update its state (if it is a state updating command)
 @param aCommandRefCon  the command context data  
   
 
-### supportsCommand ###
+### supportsCommand(aCommandName, aCommandRefCon) ###
   
 Get whether the named command is supported.  
   
@@ -68,7 +68,7 @@ Get whether the named command is supported.
 @param aCommandRefCon  the command context data  
   
 
-### doCommand ###
+### doCommand(aCommandName, aCommandRefCon) ###
   
 Execute the named command.  
   
@@ -76,6 +76,6 @@ Execute the named command.
 @param aCommandRefCon  the command context data  
   
 
-### doCommandParams ###
+### doCommandParams(aCommandName, aParam, aCommandRefCon) ###
 
-### getCommandState ###
+### getCommandState(aCommandName, aParam, aCommandRefCon) ###

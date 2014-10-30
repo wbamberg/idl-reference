@@ -9,7 +9,7 @@ Scriptable storage for generic pointers
 
 ## Methods ##
 
-### toString ###
+### toString() ###
 
 ## Attributes ##
 

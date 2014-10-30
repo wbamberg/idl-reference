@@ -6,4 +6,4 @@ layout: default
 
 ## Methods ##
 
-### onTimezoneChanged ###
+### onTimezoneChanged(aTimezoneOffset) ###
