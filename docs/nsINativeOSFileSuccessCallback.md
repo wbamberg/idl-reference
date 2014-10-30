@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsINativeOSFileSuccessCallback #
-
-A callback invoked in case of success.
-
+  
+A callback invoked in case of success.  
+  
 
 ## Methods ##
 

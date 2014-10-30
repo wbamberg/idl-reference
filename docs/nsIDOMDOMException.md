@@ -3,17 +3,17 @@ layout: default
 ---
 
 # nsIDOMDOMException #
-
-In general, DOM methods return specific error values in ordinary
-processing situations, such as out-of-bound errors.
-However, DOM operations can raise exceptions in "exceptional"
-circumstances, i.e., when an operation is impossible to perform
-(either for logical reasons, because data is lost, or because the
-implementation has become unstable)
-
-For more information on this interface please see
-http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#domexception
-
+  
+In general, DOM methods return specific error values in ordinary  
+processing situations, such as out-of-bound errors.  
+However, DOM operations can raise exceptions in "exceptional"  
+circumstances, i.e., when an operation is impossible to perform  
+(either for logical reasons, because data is lost, or because the  
+implementation has become unstable)  
+  
+For more information on this interface please see  
+http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#domexception  
+  
 
 ## Attributes ##
 

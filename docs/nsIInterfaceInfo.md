@@ -11,28 +11,28 @@ layout: default
 ### isBuiltinClass ###
 
 ### getMethodInfo ###
-
-These include methods and constants for parent (and all ancestors).
-
-These do *not* make copies ***explicit bending of XPCOM rules***.
-
+  
+These include methods and constants for parent (and all ancestors).  
+  
+These do *not* make copies ***explicit bending of XPCOM rules***.  
+  
 
 ### getMethodInfoForName ###
 
 ### getConstant ###
 
 ### getInfoForParam ###
-
-Get the interface information or iid associated with a param of some
-method in this interface.
-
+  
+Get the interface information or iid associated with a param of some  
+method in this interface.  
+  
 
 ### getIIDForParam ###
 
 ### getTypeForParam ###
-
-These do *not* make copies ***explicit bending of XPCOM rules***.
-
+  
+These do *not* make copies ***explicit bending of XPCOM rules***.  
+  
 
 ### getSizeIsArgNumberForParam ###
 
@@ -59,8 +59,8 @@ These do *not* make copies ***explicit bending of XPCOM rules***.
 ### parent ###
 
 ### methodCount ###
-
-These include counts for parent (and all ancestors).
-
+  
+These include counts for parent (and all ancestors).  
+  
 
 ### constantCount ###

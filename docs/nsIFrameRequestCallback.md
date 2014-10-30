@@ -7,6 +7,6 @@ layout: default
 ## Methods ##
 
 ### sample ###
-
-The timestamp is the time to be used for the animation sample.
-
+  
+The timestamp is the time to be used for the animation sample.  
+  

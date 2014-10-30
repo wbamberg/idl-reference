@@ -7,11 +7,11 @@ layout: default
 ## Attributes ##
 
 ### mdn ###
-
-Mobile Directory Number (MDN) of the subscriber, aka his phone number.
-
+  
+Mobile Directory Number (MDN) of the subscriber, aka his phone number.  
+  
 
 ### prlVersion ###
-
-Preferred Roaming List (PRL) version of the subscriber.
-
+  
+Preferred Roaming List (PRL) version of the subscriber.  
+  

@@ -3,20 +3,20 @@ layout: default
 ---
 
 # nsIURIWithPrincipal #
-
-nsIURIWithPrincipal is implemented by URIs which are associated with a
-specific principal.
-
+  
+nsIURIWithPrincipal is implemented by URIs which are associated with a  
+specific principal.  
+  
 
 ## Attributes ##
 
 ### principal ###
-
-The principal associated with the resource returned when loading this
-uri.
-
+  
+The principal associated with the resource returned when loading this  
+uri.  
+  
 
 ### principalUri ###
-
-The uri for the principal.
-
+  
+The uri for the principal.  
+  

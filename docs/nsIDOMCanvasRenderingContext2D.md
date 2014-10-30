@@ -3,14 +3,14 @@ layout: default
 ---
 
 # nsIDOMCanvasRenderingContext2D #
-
-This interface remains only for the constants, for a context, use the
-WebIDL/Paris bindings instead (CanvasRenderingContext2D.webidl).
-The constants are used by CanvasRenderingContext2D::DrawWindow and are
-used in WindowsPreviewPerTab.jsm and some extensions. The constants can
-be referenced directly via a canvas context 2d rather than this interface,
-and that should be preferred in new code. 
-
+  
+This interface remains only for the constants, for a context, use the  
+WebIDL/Paris bindings instead (CanvasRenderingContext2D.webidl).  
+The constants are used by CanvasRenderingContext2D::DrawWindow and are  
+used in WindowsPreviewPerTab.jsm and some extensions. The constants can  
+be referenced directly via a canvas context 2d rather than this interface,  
+and that should be preferred in new code.   
+  
 
 ## Constants ##
 

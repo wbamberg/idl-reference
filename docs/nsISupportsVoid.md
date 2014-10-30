@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsISupportsVoid #
-
-Scriptable storage for generic pointers
-
+  
+Scriptable storage for generic pointers  
+  
 
 ## Methods ##
 

@@ -3,73 +3,73 @@ layout: default
 ---
 
 # nsIWebBrowserChrome #
-
-nsIWebBrowserChrome corresponds to the top-level, outermost window
-containing an embedded Gecko web browser.
-
+  
+nsIWebBrowserChrome corresponds to the top-level, outermost window  
+containing an embedded Gecko web browser.  
+  
 
 ## Methods ##
 
 ### setStatus ###
-
-Called when the status text in the chrome needs to be updated.
-@param statusType indicates what is setting the text
-@param status status string. null is an acceptable value meaning
-              no status.
-
+  
+Called when the status text in the chrome needs to be updated.  
+@param statusType indicates what is setting the text  
+@param status status string. null is an acceptable value meaning  
+              no status.  
+  
 
 ### destroyBrowserWindow ###
-
-Asks the implementer to destroy the window associated with this
-WebBrowser object.
-
+  
+Asks the implementer to destroy the window associated with this  
+WebBrowser object.  
+  
 
 ### sizeBrowserTo ###
-
-Tells the chrome to size itself such that the browser will be the 
-specified size.
-@param aCX new width of the browser
-@param aCY new height of the browser
-
+  
+Tells the chrome to size itself such that the browser will be the   
+specified size.  
+@param aCX new width of the browser  
+@param aCY new height of the browser  
+  
 
 ### showAsModal ###
-
-Shows the window as a modal window.
-@return (the function error code) the status value specified by
-        in exitModalEventLoop.
-
+  
+Shows the window as a modal window.  
+@return (the function error code) the status value specified by  
+        in exitModalEventLoop.  
+  
 
 ### isWindowModal ###
-
-Is the window modal (that is, currently executing a modal loop)?
-@return true if it's a modal window
-
+  
+Is the window modal (that is, currently executing a modal loop)?  
+@return true if it's a modal window  
+  
 
 ### exitModalEventLoop ###
-
-Exit a modal event loop if we're in one. The implementation
-should also exit out of the loop if the window is destroyed.
-@param aStatus - the result code to return from showAsModal
-
+  
+Exit a modal event loop if we're in one. The implementation  
+should also exit out of the loop if the window is destroyed.  
+@param aStatus - the result code to return from showAsModal  
+  
 
 ## Attributes ##
 
 ### webBrowser ###
-
-The currently loaded WebBrowser.  The browser chrome may be
-told to set the WebBrowser object to a new object by setting this
-attribute.  In this case the implementer is responsible for taking the 
-new WebBrowser object and doing any necessary initialization or setup 
-as if it had created the WebBrowser itself.  This includes positioning
-setting up listeners etc.
-
+  
+The currently loaded WebBrowser.  The browser chrome may be  
+told to set the WebBrowser object to a new object by setting this  
+attribute.  In this case the implementer is responsible for taking the   
+new WebBrowser object and doing any necessary initialization or setup   
+as if it had created the WebBrowser itself.  This includes positioning  
+setting up listeners etc.  
+  
 
 ### chromeFlags ###
-
-The chrome flags for this browser chrome. The implementation should
-reflect the value of this attribute by hiding or showing its chrome
-appropriately.
-
+  
+The chrome flags for this browser chrome. The implementation should  
+reflect the value of this attribute by hiding or showing its chrome  
+appropriately.  
+  
 
 ## Constants ##
 
@@ -78,9 +78,9 @@ appropriately.
 ### STATUS_LINK ###
 
 ### CHROME_DEFAULT ###
-
-Definitions for the chrome flags
-
+  
+Definitions for the chrome flags  
+  
 
 ### CHROME_WINDOW_BORDERS ###
 

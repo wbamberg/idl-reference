@@ -3,9 +3,9 @@ layout: default
 ---
 
 # extIExtensionsCallback #
-
-Interface representing a callback that receives an array of extIExtensions
-
+  
+Interface representing a callback that receives an array of extIExtensions  
+  
 
 ## Methods ##
 

@@ -7,16 +7,16 @@ layout: default
 ## Methods ##
 
 ### readLine ###
-
-Read a single line from the stream, where a line is a 
-possibly zero length sequence of characters terminated by a
-CR, LF, CRLF, LFCR, or eof.
-The line terminator is not returned.
-@retval false
-        End of file. This line is the last line of the file
-        (aLine is valid).
-@retval true
-        The file contains further lines.
-@note Do not mix readLine with other read functions.
-      Doing so can cause various problems and is not supported.
-
+  
+Read a single line from the stream, where a line is a   
+possibly zero length sequence of characters terminated by a  
+CR, LF, CRLF, LFCR, or eof.  
+The line terminator is not returned.  
+@retval false  
+        End of file. This line is the last line of the file  
+        (aLine is valid).  
+@retval true  
+        The file contains further lines.  
+@note Do not mix readLine with other read functions.  
+      Doing so can cause various problems and is not supported.  
+  

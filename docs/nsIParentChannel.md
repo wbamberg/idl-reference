@@ -3,18 +3,18 @@ layout: default
 ---
 
 # nsIParentChannel #
-
-Implemented by chrome side of IPC protocols.
-
+  
+Implemented by chrome side of IPC protocols.  
+  
 
 ## Methods ##
 
 ### setParentListener ###
-
-Called to set the HttpChannelParentListener object (optional).
-
+  
+Called to set the HttpChannelParentListener object (optional).  
+  
 
 ### delete ###
-
-Called to invoke deletion of the IPC protocol.
-
+  
+Called to invoke deletion of the IPC protocol.  
+  

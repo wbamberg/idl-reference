@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsISupportsCString #
-
-Scriptable storage for ASCII strings
-
+  
+Scriptable storage for ASCII strings  
+  
 
 ## Methods ##
 

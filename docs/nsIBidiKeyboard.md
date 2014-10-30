@@ -7,23 +7,23 @@ layout: default
 ## Methods ##
 
 ### reset ###
-
-Inspects the installed keyboards and resets the bidi keyboard state
-
+  
+Inspects the installed keyboards and resets the bidi keyboard state  
+  
 
 ### isLangRTL ###
-
-Determines if the current keyboard language is right-to-left
-@throws NS_ERROR_FAILURE if no right-to-left keyboards are installed
-
+  
+Determines if the current keyboard language is right-to-left  
+@throws NS_ERROR_FAILURE if no right-to-left keyboards are installed  
+  
 
 ## Attributes ##
 
 ### haveBidiKeyboards ###
-
-Determines whether the system has at least one keyboard of each direction
-installed.
-
-@throws NS_ERROR_NOT_IMPLEMENTED if the widget layer does not provide this
-information.
-
+  
+Determines whether the system has at least one keyboard of each direction  
+installed.  
+  
+@throws NS_ERROR_NOT_IMPLEMENTED if the widget layer does not provide this  
+information.  
+  

@@ -3,15 +3,15 @@ layout: default
 ---
 
 # nsIWritableVariant #
-
-An object that implements nsIVariant may or may NOT also implement this
-nsIWritableVariant.
-
-If the 'writable' attribute is false then attempts to call any of the 'set'
-methods can be expected to fail. Setting the 'writable' attribute may or
-may not succeed.
-
-
+  
+An object that implements nsIVariant may or may NOT also implement this  
+nsIWritableVariant.  
+  
+If the 'writable' attribute is false then attempts to call any of the 'set'  
+methods can be expected to fail. Setting the 'writable' attribute may or  
+may not succeed.  
+  
+  
 
 ## Methods ##
 

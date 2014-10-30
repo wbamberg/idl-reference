@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsISupportsString #
-
-Scriptable storage for Unicode strings
-
+  
+Scriptable storage for Unicode strings  
+  
 
 ## Methods ##
 

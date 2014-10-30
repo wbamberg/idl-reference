@@ -7,28 +7,28 @@ layout: default
 ## Attributes ##
 
 ### shortName ###
-
-Short name of the network operator.
-
+  
+Short name of the network operator.  
+  
 
 ### longName ###
-
-Long name of the network operator.
-
+  
+Long name of the network operator.  
+  
 
 ### mcc ###
-
-Mobile Country Code (MCC) of the network operator.
-
+  
+Mobile Country Code (MCC) of the network operator.  
+  
 
 ### mnc ###
-
-Mobile Network Code (MNC) of the network operator.
-
+  
+Mobile Network Code (MNC) of the network operator.  
+  
 
 ### state ###
-
-State of this network operator.
-
-Possible values: 'available', 'connected', 'forbidden', or null (unknown).
-
+  
+State of this network operator.  
+  
+Possible values: 'available', 'connected', 'forbidden', or null (unknown).  
+  

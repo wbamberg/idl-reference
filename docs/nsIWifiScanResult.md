@@ -13,9 +13,9 @@ layout: default
 ### capabilities ###
 
 ### signalStrength ###
-
-Strength of the signal to network.
-
+  
+Strength of the signal to network.  
+  
 
 ### relSignalStrength ###
 

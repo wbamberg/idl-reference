@@ -7,7 +7,7 @@ layout: default
 ## Methods ##
 
 ### notify ###
-
- Notify that results are ready, that have been requested
- using nsIX509Cert::requestUsagesArrayAsync()
-
+  
+ Notify that results are ready, that have been requested  
+ using nsIX509Cert::requestUsagesArrayAsync()  
+  

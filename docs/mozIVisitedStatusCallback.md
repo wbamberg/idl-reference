@@ -7,11 +7,11 @@ layout: default
 ## Methods ##
 
 ### isVisited ###
-
-Notifies whether a certain URI has been visited.
-
-@param aURI
-       URI being notified about.
-@param aVisitedStatus
-       The visited status of aURI.
-
+  
+Notifies whether a certain URI has been visited.  
+  
+@param aURI  
+       URI being notified about.  
+@param aVisitedStatus  
+       The visited status of aURI.  
+  

@@ -7,6 +7,6 @@ layout: default
 ## Methods ##
 
 ### print ###
-
-Causes the plugin to print in full-page mode
-
+  
+Causes the plugin to print in full-page mode  
+  

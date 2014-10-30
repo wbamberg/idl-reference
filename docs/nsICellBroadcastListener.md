@@ -7,6 +7,6 @@ layout: default
 ## Methods ##
 
 ### notifyMessageReceived ###
-
-Called when a Cell Broadcast message has been received by the network.
-
+  
+Called when a Cell Broadcast message has been received by the network.  
+  

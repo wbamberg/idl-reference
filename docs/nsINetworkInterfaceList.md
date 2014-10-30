@@ -7,12 +7,12 @@ layout: default
 ## Methods ##
 
 ### getNumberOfInterface ###
-
-Number of the network interfaces that is available.
-
+  
+Number of the network interfaces that is available.  
+  
 
 ### getInterface ###
-
-Get the i-th interface from the list.
-@param interfaceIndex index of interface, from 0 to number of interface - 1.
-
+  
+Get the i-th interface from the list.  
+@param interfaceIndex index of interface, from 0 to number of interface - 1.  
+  

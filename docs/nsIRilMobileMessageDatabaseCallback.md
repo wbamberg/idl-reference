@@ -7,6 +7,6 @@ layout: default
 ## Methods ##
 
 ### notify ###
-
-|aDomMessage|: the nsIDOMMoz{Mms,Sms}Message
-
+  
+|aDomMessage|: the nsIDOMMoz{Mms,Sms}Message  
+  

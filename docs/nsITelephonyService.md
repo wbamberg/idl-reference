@@ -3,32 +3,32 @@ layout: default
 ---
 
 # nsITelephonyService #
-
-XPCOM component (in the content process) that provides the telephony
-information.
-
+  
+XPCOM component (in the content process) that provides the telephony  
+information.  
+  
 
 ## Methods ##
 
 ### registerListener ###
-
-Called when a content process registers receiving unsolicited messages from
-RadioInterfaceLayer in the chrome process. Only a content process that has
-the 'telephony' permission is allowed to register.
-
+  
+Called when a content process registers receiving unsolicited messages from  
+RadioInterfaceLayer in the chrome process. Only a content process that has  
+the 'telephony' permission is allowed to register.  
+  
 
 ### unregisterListener ###
 
 ### enumerateCalls ###
-
-Will continue calling listener.enumerateCallState until the listener
-returns false.
-
+  
+Will continue calling listener.enumerateCallState until the listener  
+returns false.  
+  
 
 ### dial ###
-
-Functionality for making and managing phone calls.
-
+  
+Functionality for making and managing phone calls.  
+  
 
 ### hangUp ###
 
@@ -55,13 +55,13 @@ Functionality for making and managing phone calls.
 ### resumeConference ###
 
 ### sendUSSD ###
-
-Send an USSD on existing session. It results in error if the session is
-not existed.
-
-If successful, callback.notifySuccess() will be called.
-Otherwise, callback.notifyError() will be called.
-
+  
+Send an USSD on existing session. It results in error if the session is  
+not existed.  
+  
+If successful, callback.notifySuccess() will be called.  
+Otherwise, callback.notifyError() will be called.  
+  
 
 ## Attributes ##
 

@@ -7,11 +7,11 @@ layout: default
 ## Attributes ##
 
 ### styleNode ###
-
-The node in the stylesheet that triggered the exception.
-
+  
+The node in the stylesheet that triggered the exception.  
+  
 
 ### sourceNode ###
-
-The context node, may be null
-
+  
+The context node, may be null  
+  

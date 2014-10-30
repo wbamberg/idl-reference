@@ -7,21 +7,21 @@ layout: default
 ## Attributes ##
 
 ### type ###
-
-Network type. One of the CELL_INFO_TYPE_* constants.
-
+  
+Network type. One of the CELL_INFO_TYPE_* constants.  
+  
 
 ### registered ###
 
 ### timestampType ###
-
-Time stamp type. One of the TIMESTAMP_TYPE_* constants.
-
+  
+Time stamp type. One of the TIMESTAMP_TYPE_* constants.  
+  
 
 ### timestamp ###
-
-Time in nanoseconds since boot.
-
+  
+Time in nanoseconds since boot.  
+  
 
 ## Constants ##
 

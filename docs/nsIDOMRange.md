@@ -3,12 +3,12 @@ layout: default
 ---
 
 # nsIDOMRange #
-
-The nsIDOMRange interface is an interface to a DOM range object.
-
-For more information on this interface please see
-http://www.w3.org/TR/DOM-Level-2-Traversal-Range/
-
+  
+The nsIDOMRange interface is an interface to a DOM range object.  
+  
+For more information on this interface please see  
+http://www.w3.org/TR/DOM-Level-2-Traversal-Range/  
+  
 
 ## Methods ##
 
@@ -55,9 +55,9 @@ http://www.w3.org/TR/DOM-Level-2-Traversal-Range/
 ### comparePoint ###
 
 ### intersectsNode ###
-
-Returns whether the range intersects node.
-
+  
+Returns whether the range intersects node.  
+  
 
 ### getClientRects ###
 

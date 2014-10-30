@@ -3,51 +3,51 @@ layout: default
 ---
 
 # nsIMultiplexInputStream #
-
-The multiplex stream concatenates a list of input streams into a single
-stream.
-
+  
+The multiplex stream concatenates a list of input streams into a single  
+stream.  
+  
 
 ## Methods ##
 
 ### appendStream ###
-
-Appends a stream to the end of the streams. The cursor of the stream
-should be located at the beginning of the stream if the implementation
-of this nsIMultiplexInputStream also is used as an nsISeekableStream.
-@param stream  stream to append
-
+  
+Appends a stream to the end of the streams. The cursor of the stream  
+should be located at the beginning of the stream if the implementation  
+of this nsIMultiplexInputStream also is used as an nsISeekableStream.  
+@param stream  stream to append  
+  
 
 ### insertStream ###
-
-Insert a stream at specified index.  If the cursor of this stream is at
-the beginning of the stream at index, the cursor will be placed at the
-beginning of the inserted stream instead.
-The cursor of the new stream should be located at the beginning of the
-stream if the implementation of this nsIMultiplexInputStream also is
-used as an nsISeekableStream.
-@param stream  stream to insert
-@param index   index to insert stream at, must be <= count
-
+  
+Insert a stream at specified index.  If the cursor of this stream is at  
+the beginning of the stream at index, the cursor will be placed at the  
+beginning of the inserted stream instead.  
+The cursor of the new stream should be located at the beginning of the  
+stream if the implementation of this nsIMultiplexInputStream also is  
+used as an nsISeekableStream.  
+@param stream  stream to insert  
+@param index   index to insert stream at, must be <= count  
+  
 
 ### removeStream ###
-
-Remove stream at specified index. If this stream is the one currently
-being read the readcursor is moved to the beginning of the next
-stream
-@param index   remove stream at this index, must be < count
-
+  
+Remove stream at specified index. If this stream is the one currently  
+being read the readcursor is moved to the beginning of the next  
+stream  
+@param index   remove stream at this index, must be < count  
+  
 
 ### getStream ###
-
-Get stream at specified index.
-@param index   return stream at this index, must be < count
-@return        stream at specified index
-
+  
+Get stream at specified index.  
+@param index   return stream at this index, must be < count  
+@return        stream at specified index  
+  
 
 ## Attributes ##
 
 ### count ###
-
-Number of streams in this multiplex-stream
-
+  
+Number of streams in this multiplex-stream  
+  

@@ -7,9 +7,9 @@ layout: default
 ## Methods ##
 
 ### getAnonymousNodes ###
-
-See the MDC documentation for what these methods do.
-
+  
+See the MDC documentation for what these methods do.  
+  
 
 ### getAnonymousElementByAttribute ###
 

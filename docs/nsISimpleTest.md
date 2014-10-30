@@ -7,6 +7,6 @@ layout: default
 ## Methods ##
 
 ### add ###
-
-This interface adds two numbers together and returns the result.
-
+  
+This interface adds two numbers together and returns the result.  
+  

@@ -7,25 +7,25 @@ layout: default
 ## Attributes ##
 
 ### type ###
-
-|type| is always "mms".
-
+  
+|type| is always "mms".  
+  
 
 ### id ###
 
 ### threadId ###
 
 ### iccId ###
-
-Integrated Circuit Card Identifier.
-
-Will be null if ICC is not available.
-
+  
+Integrated Circuit Card Identifier.  
+  
+Will be null if ICC is not available.  
+  
 
 ### delivery ###
-
-Should be "not-downloaded", "received", "sending", "sent" or "error".
-
+  
+Should be "not-downloaded", "received", "sending", "sent" or "error".  
+  
 
 ### deliveryInfo ###
 

@@ -3,37 +3,37 @@ layout: default
 ---
 
 # nsIContentPermissionRequest #
-
-Interface allows access to a content to request
-permission to perform a privileged operation such as
-geolocation.
-
+  
+Interface allows access to a content to request  
+permission to perform a privileged operation such as  
+geolocation.  
+  
 
 ## Methods ##
 
 ### cancel ###
-
-allow or cancel the request
-
+  
+allow or cancel the request  
+  
 
 ### allow ###
 
 ## Attributes ##
 
 ### types ###
-
- The array will include the request types. Elements of this array are
- nsIContentPermissionType object.
-
+  
+ The array will include the request types. Elements of this array are  
+ nsIContentPermissionType object.  
+  
 
 ### principal ###
 
 ### window ###
-
- The window or element that the permission request was
- originated in.  Typically the element will be non-null
- in when using out of process content.  window or
- element can be null but not both.
-
+  
+ The window or element that the permission request was  
+ originated in.  Typically the element will be non-null  
+ in when using out of process content.  window or  
+ element can be null but not both.  
+  
 
 ### element ###

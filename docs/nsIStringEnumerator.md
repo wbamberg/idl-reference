@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsIStringEnumerator #
-
-Used to enumerate over an ordered list of strings.
-
+  
+Used to enumerate over an ordered list of strings.  
+  
 
 ## Methods ##
 

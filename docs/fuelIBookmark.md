@@ -3,63 +3,63 @@ layout: default
 ---
 
 # fuelIBookmark #
-
-Interface representing a bookmark item.
-
+  
+Interface representing a bookmark item.  
+  
 
 ## Methods ##
 
 ### remove ###
-
-Removes the item from the parent folder. Used to
-delete a bookmark or separator
-
+  
+Removes the item from the parent folder. Used to  
+delete a bookmark or separator  
+  
 
 ## Attributes ##
 
 ### id ###
-
-The id of the bookmark.
-
+  
+The id of the bookmark.  
+  
 
 ### title ###
-
-The title of the bookmark.
-
+  
+The title of the bookmark.  
+  
 
 ### uri ###
-
-The uri of the bookmark.
-
+  
+The uri of the bookmark.  
+  
 
 ### description ###
-
-The description of the bookmark.
-
+  
+The description of the bookmark.  
+  
 
 ### keyword ###
-
-The keyword associated with the bookmark.
-
+  
+The keyword associated with the bookmark.  
+  
 
 ### type ###
-
-The type of the bookmark.
-values: "bookmark", "separator"
-
+  
+The type of the bookmark.  
+values: "bookmark", "separator"  
+  
 
 ### parent ###
-
-The parent folder of the bookmark.
-
+  
+The parent folder of the bookmark.  
+  
 
 ### annotations ###
-
-The annotations object for the bookmark.
-
+  
+The annotations object for the bookmark.  
+  
 
 ### events ###
-
-The events object for the bookmark.
-supports: "remove", "change", "visit", "move"
-
+  
+The events object for the bookmark.  
+supports: "remove", "change", "visit", "move"  
+  

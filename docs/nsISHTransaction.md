@@ -3,36 +3,36 @@ layout: default
 ---
 
 # nsISHTransaction #
-
-The nsISHTransaction.
-
+  
+The nsISHTransaction.  
+  
 
 ## Methods ##
 
 ### create ###
-
-Create a transaction with parent and History Entry 
-
+  
+Create a transaction with parent and History Entry   
+  
 
 ## Attributes ##
 
 ### sHEntry ###
-
-The nsISHEntry for the current transaction
-
+  
+The nsISHEntry for the current transaction  
+  
 
 ### prev ###
-
-The parent of this transaction
-
+  
+The parent of this transaction  
+  
 
 ### next ###
-
-The legitimate child of this transaction 
-
+  
+The legitimate child of this transaction   
+  
 
 ### persist ###
-
-Specifies if this transaction should persist.  If not it will be replaced
-by new additions to the list.
-
+  
+Specifies if this transaction should persist.  If not it will be replaced  
+by new additions to the list.  
+  

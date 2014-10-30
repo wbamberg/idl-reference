@@ -35,10 +35,10 @@ layout: default
 ### getSelection ###
 
 ### captureEvents ###
-
-@deprecated These are old Netscape 4 methods. Do not use,
-            the implementation is no-op.
-
+  
+@deprecated These are old Netscape 4 methods. Do not use,  
+            the implementation is no-op.  
+  
 
 ### releaseEvents ###
 
@@ -65,9 +65,9 @@ layout: default
 ### scripts ###
 
 ### designMode ###
-
-Midas additions
-
+  
+Midas additions  
+  
 
 ### fgColor ###
 

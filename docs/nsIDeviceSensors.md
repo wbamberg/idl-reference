@@ -7,9 +7,9 @@ layout: default
 ## Methods ##
 
 ### hasWindowListener ###
-
-Returns true if the given window has any listeners of the given type
-
+  
+Returns true if the given window has any listeners of the given type  
+  
 
 ### addWindowListener ###
 

@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsISupportsFloat #
-
-Scriptable storage for floating point numbers
-
+  
+Scriptable storage for floating point numbers  
+  
 
 ## Methods ##
 

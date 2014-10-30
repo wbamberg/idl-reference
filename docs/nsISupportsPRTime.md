@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsISupportsPRTime #
-
-Scriptable storage for NSPR date/time values
-
+  
+Scriptable storage for NSPR date/time values  
+  
 
 ## Methods ##
 

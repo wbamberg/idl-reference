@@ -3,37 +3,37 @@ layout: default
 ---
 
 # nsIIccProvider #
-
-XPCOM component (in the content process) that provides the ICC information.
-
+  
+XPCOM component (in the content process) that provides the ICC information.  
+  
 
 ## Methods ##
 
 ### registerIccMsg ###
-
-Called when a content process registers receiving unsolicited messages from
-RadioInterfaceLayer in the chrome process. Only a content process that has
-the 'mobileconnection' permission is allowed to register.
-
+  
+Called when a content process registers receiving unsolicited messages from  
+RadioInterfaceLayer in the chrome process. Only a content process that has  
+the 'mobileconnection' permission is allowed to register.  
+  
 
 ### unregisterIccMsg ###
 
 ### getIccInfo ###
-
-UICC Information
-
+  
+UICC Information  
+  
 
 ### getCardState ###
-
-Card State
-
-One of the nsIIccProvider.CARD_STATE_* values.
-
+  
+Card State  
+  
+One of the nsIIccProvider.CARD_STATE_* values.  
+  
 
 ### sendStkResponse ###
-
-STK interfaces.
-
+  
+STK interfaces.  
+  
 
 ### sendStkMenuSelection ###
 
@@ -42,9 +42,9 @@ STK interfaces.
 ### sendStkEventDownload ###
 
 ### getCardLockState ###
-
-Card lock interfaces.
-
+  
+Card lock interfaces.  
+  
 
 ### unlockCardLock ###
 
@@ -53,25 +53,25 @@ Card lock interfaces.
 ### getCardLockRetryCount ###
 
 ### readContacts ###
-
-Phonebook interfaces.
-
+  
+Phonebook interfaces.  
+  
 
 ### updateContact ###
 
 ### iccOpenChannel ###
-
-Secure Card Icc communication channel
-
+  
+Secure Card Icc communication channel  
+  
 
 ### iccExchangeAPDU ###
 
 ### iccCloseChannel ###
 
 ### matchMvno ###
-
-Helpers
-
+  
+Helpers  
+  
 
 ## Constants ##
 

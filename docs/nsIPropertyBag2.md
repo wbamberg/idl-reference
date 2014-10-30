@@ -25,17 +25,17 @@ layout: default
 ### getPropertyAsBool ###
 
 ### getPropertyAsInterface ###
-
-This method returns null if the value exists, but is null.
-
+  
+This method returns null if the value exists, but is null.  
+  
 
 ### get ###
-
-This method returns null if the value does not exist,
-or exists but is null.
-
+  
+This method returns null if the value does not exist,  
+or exists but is null.  
+  
 
 ### hasKey ###
-
-Check for the existence of a key.
-
+  
+Check for the existence of a key.  
+  

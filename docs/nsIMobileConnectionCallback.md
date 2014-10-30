@@ -7,9 +7,9 @@ layout: default
 ## Methods ##
 
 ### notifySuccess ###
-
-notify*Success*() will be called, when request is succeed.
-
+  
+notify*Success*() will be called, when request is succeed.  
+  
 
 ### notifySuccessWithString ###
 
@@ -32,6 +32,6 @@ notify*Success*() will be called, when request is succeed.
 ### notifyGetClirStatusSuccess ###
 
 ### notifyError ###
-
-notifyError() will be called, when request is failed.
-
+  
+notifyError() will be called, when request is failed.  
+  

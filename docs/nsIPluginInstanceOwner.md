@@ -7,77 +7,77 @@ layout: default
 ## Methods ##
 
 ### setInstance ###
-
-Let the owner know what its instance is
-
+  
+Let the owner know what its instance is  
+  
 
 ### getInstance ###
-
-Get the instance associated with this owner.
-
+  
+Get the instance associated with this owner.  
+  
 
 ### getWindow ###
-
-Get a handle to the window structure of the owner.
-This pointer cannot be made persistent by the caller.
-
+  
+Get a handle to the window structure of the owner.  
+This pointer cannot be made persistent by the caller.  
+  
 
 ### createWidget ###
-
-Create a place for the plugin to live in the owner's
-environment. this may or may not create a window
-depending on the windowless state of the plugin instance.
-
+  
+Create a place for the plugin to live in the owner's  
+environment. this may or may not create a window  
+depending on the windowless state of the plugin instance.  
+  
 
 ### showStatus ###
-
-Show a status message in the host environment.
-
+  
+Show a status message in the host environment.  
+  
 
 ### invalidateRect ###
-
-Invalidate the rectangle
-
+  
+Invalidate the rectangle  
+  
 
 ### invalidateRegion ###
-
-Invalidate the region
-
+  
+Invalidate the region  
+  
 
 ### redrawPlugin ###
-
-Have the plugin recomposited.
-
+  
+Have the plugin recomposited.  
+  
 
 ### getNetscapeWindow ###
-
-Get NetscapeWindow, corresponds to NPNVnetscapeWindow
-
+  
+Get NetscapeWindow, corresponds to NPNVnetscapeWindow  
+  
 
 ### setEventModel ###
-
-Show native context menu
-
+  
+Show native context menu  
+  
 
 ### callSetWindow ###
-
-Call NPP_SetWindow on the plugin.
-
+  
+Call NPP_SetWindow on the plugin.  
+  
 
 ### getContentsScaleFactor ###
-
-Get the contents scale factor for the screen the plugin is
-drawn on.
-
+  
+Get the contents scale factor for the screen the plugin is  
+drawn on.  
+  
 
 ## Attributes ##
 
 ### mode ###
-
-Get the display mode for the plugin instance.
-
+  
+Get the display mode for the plugin instance.  
+  
 
 ### document ###
-
-Get the associated document.
-
+  
+Get the associated document.  
+  

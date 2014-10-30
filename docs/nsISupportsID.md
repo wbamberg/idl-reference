@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsISupportsID #
-
-Scriptable storage for nsID structures
-
+  
+Scriptable storage for nsID structures  
+  
 
 ## Methods ##
 

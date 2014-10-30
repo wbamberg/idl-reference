@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsISupportsInterfacePointer #
-
-Scriptable storage for other XPCOM objects
-
+  
+Scriptable storage for other XPCOM objects  
+  
 
 ## Methods ##
 

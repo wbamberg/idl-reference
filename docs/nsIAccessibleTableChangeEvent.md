@@ -7,11 +7,11 @@ layout: default
 ## Attributes ##
 
 ### rowOrColIndex ###
-
-Return the row or column index.
-
+  
+Return the row or column index.  
+  
 
 ### RowsOrColsCount ###
-
-Return the number of rows or cols
-
+  
+Return the number of rows or cols  
+  

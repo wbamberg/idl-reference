@@ -7,6 +7,6 @@ layout: default
 ## Methods ##
 
 ### getWindowForResource ###
-
-for the given resource name, return the window
-
+  
+for the given resource name, return the window  
+  

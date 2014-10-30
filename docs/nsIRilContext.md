@@ -7,9 +7,9 @@ layout: default
 ## Attributes ##
 
 ### cardState ###
-
-One of the nsIIccProvider.CARD_STATE_* values.
-
+  
+One of the nsIIccProvider.CARD_STATE_* values.  
+  
 
 ### imsi ###
 

@@ -11,18 +11,18 @@ layout: default
 ### logFailure ###
 
 ### getFeatureStatus ###
-
-Ask about a feature, and return the status of that feature
-
+  
+Ask about a feature, and return the status of that feature  
+  
 
 ### getFeatureSuggestedDriverVersion ###
 
 ### getWebGLParameter ###
-
-WebGL info; valid params are "full-renderer", "vendor", "renderer", "version",
-"shading_language_version", "extensions".  These return info from
-underlying GL impl that's used to implement WebGL.
-
+  
+WebGL info; valid params are "full-renderer", "vendor", "renderer", "version",  
+"shading_language_version", "extensions".  These return info from  
+underlying GL impl that's used to implement WebGL.  
+  
 
 ### GetData ###
 
@@ -39,9 +39,9 @@ underlying GL impl that's used to implement WebGL.
 ### cleartypeParameters ###
 
 ### adapterDescription ###
-
-The name of the display adapter.
-
+  
+The name of the display adapter.  
+  
 
 ### adapterDescription2 ###
 
@@ -62,9 +62,9 @@ The name of the display adapter.
 ### adapterSubsysID2 ###
 
 ### adapterRAM ###
-
-The amount of RAM in MB in the display adapter.
-
+  
+The amount of RAM in MB in the display adapter.  
+  
 
 ### adapterRAM2 ###
 

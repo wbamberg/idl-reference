@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsINavHistoryBatchCallback #
-
-@see runInBatchMode of nsINavHistoryService/nsINavBookmarksService
-
+  
+@see runInBatchMode of nsINavHistoryService/nsINavBookmarksService  
+  
 
 ## Methods ##
 

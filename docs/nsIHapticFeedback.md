@@ -7,12 +7,12 @@ layout: default
 ## Methods ##
 
 ### performSimpleAction ###
-
-Perform haptic feedback
-
-@param isLongPress
-       indicate whether feedback is for a long press (vs. short press)
-
+  
+Perform haptic feedback  
+  
+@param isLongPress  
+       indicate whether feedback is for a long press (vs. short press)  
+  
 
 ## Constants ##
 

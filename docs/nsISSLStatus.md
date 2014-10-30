@@ -23,10 +23,10 @@ layout: default
 ### isUntrusted ###
 
 ### isExtendedValidation ###
-
-True only if (and after) serverCert was successfully validated as
-Extended Validation (EV).
-
+  
+True only if (and after) serverCert was successfully validated as  
+Extended Validation (EV).  
+  
 
 ## Constants ##
 

@@ -3,34 +3,34 @@ layout: default
 ---
 
 # nsINetworkLinkService #
-
-Network link status monitoring service.
-
+  
+Network link status monitoring service.  
+  
 
 ## Attributes ##
 
 ### isLinkUp ###
-
-This is set to true when the system is believed to have a usable
-network connection.
-
-The link is only up when network connections can be established. For
-example, the link is down during DHCP configuration (unless there
-is another usable interface already configured).
-
-If the link status is not currently known, we generally assume that
-it is up.
-
+  
+This is set to true when the system is believed to have a usable  
+network connection.  
+  
+The link is only up when network connections can be established. For  
+example, the link is down during DHCP configuration (unless there  
+is another usable interface already configured).  
+  
+If the link status is not currently known, we generally assume that  
+it is up.  
+  
 
 ### linkStatusKnown ###
-
-This is set to true when we believe that isLinkUp is accurate.
-
+  
+This is set to true when we believe that isLinkUp is accurate.  
+  
 
 ### linkType ###
-
-The type of network connection.
-
+  
+The type of network connection.  
+  
 
 ## Constants ##
 

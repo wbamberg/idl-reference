@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsISupportsDouble #
-
-Scriptable storage for doubles
-
+  
+Scriptable storage for doubles  
+  
 
 ## Methods ##
 

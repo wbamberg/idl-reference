@@ -3,107 +3,107 @@ layout: default
 ---
 
 # nsIMemory #
-
-
-nsIMemory: interface to allocate and deallocate memory. Also provides
-for notifications in low-memory situations.
-
-The frozen exported symbols NS_Alloc, NS_Realloc, and NS_Free
-provide a more efficient way to access XPCOM memory allocation. Using
-those symbols is preferred to using the methods on this interface.
-
-A client that wishes to be notified of low memory situations (for
-example, because the client maintains a large memory cache that
-could be released when memory is tight) should register with the
-observer service (see nsIObserverService) using the topic 
-"memory-pressure". There are three specific types of notications 
-that can occur.  These types will be passed as the |aData| 
-parameter of the of the "memory-pressure" notification: 
-
-"low-memory"
-This will be passed as the extra data when the pressure 
-observer is being asked to flush for low-memory conditions.
-
-"low-memory-ongoing"
-This will be passed when we continue to be in a low-memory
-condition and we want to flush caches and do other cheap
-forms of memory minimization, but heavy handed approaches like
-a GC are unlikely to succeed.
-
-"-no-forward"
-This is appended to the above two parameters when the resulting
-notification should not be forwarded to the child processes.
-
-"heap-minimize"
-This will be passed as the extra data when the pressure 
-observer is being asked to flush because of a heap minimize 
-call.
-
-"alloc-failure"
-This will be passed as the extra data when the pressure 
-observer has been asked to flush because a malloc() or 
-realloc() has failed.
-
+  
+  
+nsIMemory: interface to allocate and deallocate memory. Also provides  
+for notifications in low-memory situations.  
+  
+The frozen exported symbols NS_Alloc, NS_Realloc, and NS_Free  
+provide a more efficient way to access XPCOM memory allocation. Using  
+those symbols is preferred to using the methods on this interface.  
+  
+A client that wishes to be notified of low memory situations (for  
+example, because the client maintains a large memory cache that  
+could be released when memory is tight) should register with the  
+observer service (see nsIObserverService) using the topic   
+"memory-pressure". There are three specific types of notications   
+that can occur.  These types will be passed as the |aData|   
+parameter of the of the "memory-pressure" notification:   
+  
+"low-memory"  
+This will be passed as the extra data when the pressure   
+observer is being asked to flush for low-memory conditions.  
+  
+"low-memory-ongoing"  
+This will be passed when we continue to be in a low-memory  
+condition and we want to flush caches and do other cheap  
+forms of memory minimization, but heavy handed approaches like  
+a GC are unlikely to succeed.  
+  
+"-no-forward"  
+This is appended to the above two parameters when the resulting  
+notification should not be forwarded to the child processes.  
+  
+"heap-minimize"  
+This will be passed as the extra data when the pressure   
+observer is being asked to flush because of a heap minimize   
+call.  
+  
+"alloc-failure"  
+This will be passed as the extra data when the pressure   
+observer has been asked to flush because a malloc() or   
+realloc() has failed.  
+  
 
 ## Methods ##
 
 ### alloc ###
-
-Allocates a block of memory of a particular size. If the memory 
-cannot be allocated (because of an out-of-memory condition), the
-process aborts.
-
-@param size - the size of the block to allocate
-@result the block of memory
-
+  
+Allocates a block of memory of a particular size. If the memory   
+cannot be allocated (because of an out-of-memory condition), the  
+process aborts.  
+  
+@param size - the size of the block to allocate  
+@result the block of memory  
+  
 
 ### realloc ###
-
-Reallocates a block of memory to a new size.
-
-@param ptr - the block of memory to reallocate
-@param size - the new size
-@result the reallocated block of memory
-
-If ptr is null, this function behaves like malloc.
-If s is the size of the block to which ptr points, the first
-min(s, size) bytes of ptr's block are copied to the new block.
-If the allocation succeeds, ptr is freed and a pointer to the 
-new block returned.  If the allocation fails, the process aborts.
-
+  
+Reallocates a block of memory to a new size.  
+  
+@param ptr - the block of memory to reallocate  
+@param size - the new size  
+@result the reallocated block of memory  
+  
+If ptr is null, this function behaves like malloc.  
+If s is the size of the block to which ptr points, the first  
+min(s, size) bytes of ptr's block are copied to the new block.  
+If the allocation succeeds, ptr is freed and a pointer to the   
+new block returned.  If the allocation fails, the process aborts.  
+  
 
 ### free ###
-
-Frees a block of memory. Null is a permissible value, in which case
-nothing happens. 
-
-@param ptr - the block of memory to free
-
+  
+Frees a block of memory. Null is a permissible value, in which case  
+nothing happens.   
+  
+@param ptr - the block of memory to free  
+  
 
 ### heapMinimize ###
-
-Attempts to shrink the heap.
-@param immediate - if true, heap minimization will occur
-  immediately if the call was made on the main thread. If
-  false, the flush will be scheduled to happen when the app is
-  idle.
-@throws NS_ERROR_FAILURE if 'immediate' is set an the call
-  was not on the application's main thread.
-
+  
+Attempts to shrink the heap.  
+@param immediate - if true, heap minimization will occur  
+  immediately if the call was made on the main thread. If  
+  false, the flush will be scheduled to happen when the app is  
+  idle.  
+@throws NS_ERROR_FAILURE if 'immediate' is set an the call  
+  was not on the application's main thread.  
+  
 
 ### isLowMemory ###
-
-This predicate can be used to determine if we're in a low-memory
-situation (what constitutes low-memory is platform dependent). This
-can be used to trigger the memory pressure observers.
-
-DEPRECATED - Always returns false.  See bug 592308.
-
+  
+This predicate can be used to determine if we're in a low-memory  
+situation (what constitutes low-memory is platform dependent). This  
+can be used to trigger the memory pressure observers.  
+  
+DEPRECATED - Always returns false.  See bug 592308.  
+  
 
 ### isLowMemoryPlatform ###
-
-This predicate can be used to determine if the platform is a "low-memory"
-platform. Callers may use this to dynamically tune their behaviour
-to favour reduced memory usage at the expense of performance. The value
-returned by this function will not change over the lifetime of the process.
-
+  
+This predicate can be used to determine if the platform is a "low-memory"  
+platform. Callers may use this to dynamically tune their behaviour  
+to favour reduced memory usage at the expense of performance. The value  
+returned by this function will not change over the lifetime of the process.  
+  

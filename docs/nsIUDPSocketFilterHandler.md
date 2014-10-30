@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsIUDPSocketFilterHandler #
-
-Factory of a specified filter.
-
+  
+Factory of a specified filter.  
+  
 
 ## Methods ##
 

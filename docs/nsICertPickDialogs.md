@@ -3,15 +3,15 @@ layout: default
 ---
 
 # nsICertPickDialogs #
-
-nsICertPickDialogs
-Provides generic UI for choosing a certificate
-
+  
+nsICertPickDialogs  
+Provides generic UI for choosing a certificate  
+  
 
 ## Methods ##
 
 ### PickCertificate ###
-
-PickCertificate
-  General purpose certificate prompter
-
+  
+PickCertificate  
+  General purpose certificate prompter  
+  

@@ -7,21 +7,21 @@ layout: default
 ## Methods ##
 
 ### onSuccess ###
-
-Called to indicate that the engine addition process succeeded.
-
-@param engine
-       The nsISearchEngine object that was added (will not be null).
-
+  
+Called to indicate that the engine addition process succeeded.  
+  
+@param engine  
+       The nsISearchEngine object that was added (will not be null).  
+  
 
 ### onError ###
-
-Called to indicate that the engine addition process failed.
-
-@param errorCode
-       One of the ERROR_* values described above indicating the cause of
-       the failure.
-
+  
+Called to indicate that the engine addition process failed.  
+  
+@param errorCode  
+       One of the ERROR_* values described above indicating the cause of  
+       the failure.  
+  
 
 ## Constants ##
 

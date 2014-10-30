@@ -7,9 +7,9 @@ layout: default
 ## Methods ##
 
 ### setupDataCallByType ###
-
-PDP APIs
-
+  
+PDP APIs  
+  
 
 ### deactivateDataCallByType ###
 
@@ -18,9 +18,9 @@ PDP APIs
 ### updateRILNetworkInterface ###
 
 ### getSegmentInfoForText ###
-
-SMS-related functionality.
-
+  
+SMS-related functionality.  
+  
 
 ### sendSMS ###
 

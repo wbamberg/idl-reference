@@ -3,212 +3,212 @@ layout: default
 ---
 
 # nsIUDPSocket #
-
-nsIUDPSocket
-
-An interface to a UDP socket that can accept incoming connections.
-
+  
+nsIUDPSocket  
+  
+An interface to a UDP socket that can accept incoming connections.  
+  
 
 ## Methods ##
 
 ### init ###
-
-init
-
-This method initializes a UDP socket.
-
-@param aPort
-       The port of the UDP socket.  Pass -1 to indicate no preference,
-       and a port will be selected automatically.
-@param aLoopbackOnly
-       If true, the UDP socket will only respond to connections on the
-       local loopback interface.  Otherwise, it will accept connections
-       from any interface.  To specify a particular network interface,
-       use initWithAddress.
-@param aAddressReuse
-       If true, the socket is allowed to be bound to an address that is
-       already in use. Default is true.
-
+  
+init  
+  
+This method initializes a UDP socket.  
+  
+@param aPort  
+       The port of the UDP socket.  Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+@param aLoopbackOnly  
+       If true, the UDP socket will only respond to connections on the  
+       local loopback interface.  Otherwise, it will accept connections  
+       from any interface.  To specify a particular network interface,  
+       use initWithAddress.  
+@param aAddressReuse  
+       If true, the socket is allowed to be bound to an address that is  
+       already in use. Default is true.  
+  
 
 ### initWithAddress ###
-
-initWithAddress
-
-This method initializes a UDP socket, and binds it to a particular
-local address (and hence a particular local network interface).
-
-@param aAddr
-       The address to which this UDP socket should be bound.
-@param aAddressReuse
-       If true, the socket is allowed to be bound to an address that is
-       already in use. Default is true.
-
+  
+initWithAddress  
+  
+This method initializes a UDP socket, and binds it to a particular  
+local address (and hence a particular local network interface).  
+  
+@param aAddr  
+       The address to which this UDP socket should be bound.  
+@param aAddressReuse  
+       If true, the socket is allowed to be bound to an address that is  
+       already in use. Default is true.  
+  
 
 ### close ###
-
-close
-
-This method closes a UDP socket.  This does not affect already
-connected client sockets (i.e., the nsISocketTransport instances
-created from this UDP socket).  This will cause the onStopListening
-event to asynchronously fire with a status of NS_BINDING_ABORTED.
-
+  
+close  
+  
+This method closes a UDP socket.  This does not affect already  
+connected client sockets (i.e., the nsISocketTransport instances  
+created from this UDP socket).  This will cause the onStopListening  
+event to asynchronously fire with a status of NS_BINDING_ABORTED.  
+  
 
 ### asyncListen ###
-
-asyncListen
-
-This method puts the UDP socket in the listening state.  It will
-asynchronously listen for and accept client connections.  The listener
-will be notified once for each client connection that is accepted.  The
-listener's onSocketAccepted method will be called on the same thread
-that called asyncListen (the calling thread must have a nsIEventTarget).
-
-The listener will be passed a reference to an already connected socket
-transport (nsISocketTransport).  See below for more details.
-
-@param aListener
-       The listener to be notified when client connections are accepted.
-
+  
+asyncListen  
+  
+This method puts the UDP socket in the listening state.  It will  
+asynchronously listen for and accept client connections.  The listener  
+will be notified once for each client connection that is accepted.  The  
+listener's onSocketAccepted method will be called on the same thread  
+that called asyncListen (the calling thread must have a nsIEventTarget).  
+  
+The listener will be passed a reference to an already connected socket  
+transport (nsISocketTransport).  See below for more details.  
+  
+@param aListener  
+       The listener to be notified when client connections are accepted.  
+  
 
 ### getAddress ###
-
-Returns the address to which this UDP socket is bound.  Since a
-UDP socket may be bound to multiple network devices, this address
-may not necessarily be specific to a single network device.  In the
-case of an IP socket, the IP address field would be zerod out to
-indicate a UDP socket bound to all network devices.  Therefore,
-this method cannot be used to determine the IP address of the local
-system.  See nsIDNSService::myHostName if this is what you need.
-
+  
+Returns the address to which this UDP socket is bound.  Since a  
+UDP socket may be bound to multiple network devices, this address  
+may not necessarily be specific to a single network device.  In the  
+case of an IP socket, the IP address field would be zerod out to  
+indicate a UDP socket bound to all network devices.  Therefore,  
+this method cannot be used to determine the IP address of the local  
+system.  See nsIDNSService::myHostName if this is what you need.  
+  
 
 ### send ###
-
-send
-
-Send out the datagram to specified remote host and port.
-DNS lookup will be triggered.
-
-@param host The remote host name.
-@param port The remote port.
-@param data The buffer containing the data to be written.
-@param dataLength The maximum number of bytes to be written.
-@return number of bytes written. (0 or dataLength)
-
+  
+send  
+  
+Send out the datagram to specified remote host and port.  
+DNS lookup will be triggered.  
+  
+@param host The remote host name.  
+@param port The remote port.  
+@param data The buffer containing the data to be written.  
+@param dataLength The maximum number of bytes to be written.  
+@return number of bytes written. (0 or dataLength)  
+  
 
 ### sendWithAddr ###
-
-sendWithAddr
-
-Send out the datagram to specified remote host and port.
-
-@param addr The remote host address.
-@param data The buffer containing the data to be written.
-@param dataLength The maximum number of bytes to be written.
-@return number of bytes written. (0 or dataLength)
-
+  
+sendWithAddr  
+  
+Send out the datagram to specified remote host and port.  
+  
+@param addr The remote host address.  
+@param data The buffer containing the data to be written.  
+@param dataLength The maximum number of bytes to be written.  
+@return number of bytes written. (0 or dataLength)  
+  
 
 ### sendWithAddress ###
-
-sendWithAddress
-
-Send out the datagram to specified remote address and port.
-
-@param addr The remote host address.
-@param data The buffer containing the data to be written.
-@param dataLength The maximum number of bytes to be written.
-@return number of bytes written. (0 or dataLength)
-
+  
+sendWithAddress  
+  
+Send out the datagram to specified remote address and port.  
+  
+@param addr The remote host address.  
+@param data The buffer containing the data to be written.  
+@param dataLength The maximum number of bytes to be written.  
+@return number of bytes written. (0 or dataLength)  
+  
 
 ### sendBinaryStream ###
-
-sendBinaryStream
-
-Send out the datagram to specified remote address and port.
-
-@param host The remote host name.
-@param port The remote port.
-@param stream The input stream to be sent. This must be a buffered stream implementation.
-
+  
+sendBinaryStream  
+  
+Send out the datagram to specified remote address and port.  
+  
+@param host The remote host name.  
+@param port The remote port.  
+@param stream The input stream to be sent. This must be a buffered stream implementation.  
+  
 
 ### sendBinaryStreamWithAddress ###
-
-sendBinaryStreamWithAddress
-
-Send out the datagram to specified remote address and port.
-
-@param addr The remote host address.
-@param stream The input stream to be sent. This must be a buffered stream implementation.
-
+  
+sendBinaryStreamWithAddress  
+  
+Send out the datagram to specified remote address and port.  
+  
+@param addr The remote host address.  
+@param stream The input stream to be sent. This must be a buffered stream implementation.  
+  
 
 ### joinMulticast ###
-
-joinMulticast
-
-Join the multicast group specified by |addr|.  You are then able to
-receive future datagrams addressed to the group.
-
-@param addr
-       The multicast group address.
-@param iface
-       The local address of the interface on which to join the group.  If
-       this is not specified, the OS may join the group on all interfaces
-       or only the primary interface.
-
+  
+joinMulticast  
+  
+Join the multicast group specified by |addr|.  You are then able to  
+receive future datagrams addressed to the group.  
+  
+@param addr  
+       The multicast group address.  
+@param iface  
+       The local address of the interface on which to join the group.  If  
+       this is not specified, the OS may join the group on all interfaces  
+       or only the primary interface.  
+  
 
 ### joinMulticastAddr ###
 
 ### leaveMulticast ###
-
-leaveMulticast
-
-Leave the multicast group specified by |addr|.  You will no longer
-receive future datagrams addressed to the group.
-
-@param addr
-       The multicast group address.
-@param iface
-       The local address of the interface on which to leave the group.
-       If this is not specified, the OS may leave the group on all
-       interfaces or only the primary interface.
-
+  
+leaveMulticast  
+  
+Leave the multicast group specified by |addr|.  You will no longer  
+receive future datagrams addressed to the group.  
+  
+@param addr  
+       The multicast group address.  
+@param iface  
+       The local address of the interface on which to leave the group.  
+       If this is not specified, the OS may leave the group on all  
+       interfaces or only the primary interface.  
+  
 
 ### leaveMulticastAddr ###
 
 ## Attributes ##
 
 ### localAddr ###
-
-Returns the local address of this UDP socket
-
+  
+Returns the local address of this UDP socket  
+  
 
 ### port ###
-
-Returns the port of this UDP socket.
-
+  
+Returns the port of this UDP socket.  
+  
 
 ### multicastLoopback ###
-
-multicastLoopback
-
-Whether multicast datagrams sent via this socket should be looped back to
-this host (assuming this host has joined the relevant group).  Defaults
-to true.
-Note: This is currently write-only.
-
+  
+multicastLoopback  
+  
+Whether multicast datagrams sent via this socket should be looped back to  
+this host (assuming this host has joined the relevant group).  Defaults  
+to true.  
+Note: This is currently write-only.  
+  
 
 ### multicastInterface ###
-
-multicastInterface
-
-The interface that should be used for sending future multicast datagrams.
-Note: This is currently write-only.
-
+  
+multicastInterface  
+  
+The interface that should be used for sending future multicast datagrams.  
+Note: This is currently write-only.  
+  
 
 ### multicastInterfaceAddr ###
-
-multicastInterfaceAddr
-
-The interface that should be used for sending future multicast datagrams.
-Note: This is currently write-only.
-
+  
+multicastInterfaceAddr  
+  
+The interface that should be used for sending future multicast datagrams.  
+Note: This is currently write-only.  
+  

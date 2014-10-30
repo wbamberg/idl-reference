@@ -7,6 +7,6 @@ layout: default
 ## Methods ##
 
 ### notify ###
-
-|aCompleteMessage|: jsval: the completely concatenated message. Noted, this value might be null.
-
+  
+|aCompleteMessage|: jsval: the completely concatenated message. Noted, this value might be null.  
+  

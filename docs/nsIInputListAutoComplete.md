@@ -7,6 +7,6 @@ layout: default
 ## Methods ##
 
 ### autoCompleteSearch ###
-
-Generate results for a form input autocomplete menu.
-
+  
+Generate results for a form input autocomplete menu.  
+  

@@ -27,8 +27,8 @@ layout: default
 ### availTop ###
 
 ### mozOrientation ###
-
-Returns the current screen orientation.
-Can be: landscape-primary, landscape-secondary,
-        portrait-primary or portrait-secondary.
-
+  
+Returns the current screen orientation.  
+Can be: landscape-primary, landscape-secondary,  
+        portrait-primary or portrait-secondary.  
+  

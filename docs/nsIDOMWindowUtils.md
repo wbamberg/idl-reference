@@ -7,1213 +7,1213 @@ layout: default
 ## Methods ##
 
 ### getCursorType ###
-
-Get current cursor type from this window
-@return the current value of nsCursor
-
+  
+Get current cursor type from this window  
+@return the current value of nsCursor  
+  
 
 ### getDocumentMetadata ###
-
-Function to get metadata associated with the window's current document
-@param aName the name of the metadata.  This should be all lowercase.
-@return the value of the metadata, or the empty string if it's not set
-
-Will throw a DOM security error if called without chrome privileges.
-
+  
+Function to get metadata associated with the window's current document  
+@param aName the name of the metadata.  This should be all lowercase.  
+@return the value of the metadata, or the empty string if it's not set  
+  
+Will throw a DOM security error if called without chrome privileges.  
+  
 
 ### redraw ###
-
-Force an immediate redraw of this window.  The parameter specifies
-the number of times to redraw, and the return value is the length,
-in milliseconds, that the redraws took.  If aCount is not specified
-or is 0, it is taken to be 1.
-
+  
+Force an immediate redraw of this window.  The parameter specifies  
+the number of times to redraw, and the return value is the length,  
+in milliseconds, that the redraws took.  If aCount is not specified  
+or is 0, it is taken to be 1.  
+  
 
 ### setCSSViewport ###
-
-Set the CSS viewport to be |widthPx| x |heightPx| in units of CSS
-pixels, regardless of the size of the enclosing widget/view.
-This will trigger reflow.
-
-The caller of this method must have chrome privileges.
-
+  
+Set the CSS viewport to be |widthPx| x |heightPx| in units of CSS  
+pixels, regardless of the size of the enclosing widget/view.  
+This will trigger reflow.  
+  
+The caller of this method must have chrome privileges.  
+  
 
 ### getViewportInfo ###
-
-Information retrieved from the <meta name="viewport"> tag.
-See nsContentUtils::GetViewportInfo for more information.
-
+  
+Information retrieved from the <meta name="viewport"> tag.  
+See nsContentUtils::GetViewportInfo for more information.  
+  
 
 ### setDisplayPortForElement ###
-
-For any scrollable element, this allows you to override the
-visible region and draw more than what is visible, which is
-useful for asynchronous drawing. The "displayport" will be
-<xPx, yPx, widthPx, heightPx> in units of CSS pixels,
-regardless of the size of the enclosing container.  This
-will *not* trigger reflow.
-
-For the root scroll area, pass in the root document element.
-For scrollable elements, pass in the container element (for
-instance, the element with overflow: scroll).
-
-<x, y> is relative to the top-left of what would normally be
-the visible area of the element. This means that the pixels
-rendered to the displayport take scrolling into account,
-for example.
-
-It's legal to set a displayport that extends beyond the overflow
-area in any direction (left/right/top/bottom).
-
-It's also legal to set a displayport that extends beyond the
-area's bounds.  No pixels are rendered outside the area bounds.
-
-The caller of this method must have chrome privileges.
-
-Calling this will always force a recomposite, so it should be
-avoided if at all possible. Client code should do checks before
-calling this so that duplicate sets are not made with the same
-displayport.
-
-aPriority is recorded along with the displayport rectangle. If this
-method is called with a lower priority than the current priority, the
-call is ignored.
-
+  
+For any scrollable element, this allows you to override the  
+visible region and draw more than what is visible, which is  
+useful for asynchronous drawing. The "displayport" will be  
+<xPx, yPx, widthPx, heightPx> in units of CSS pixels,  
+regardless of the size of the enclosing container.  This  
+will *not* trigger reflow.  
+  
+For the root scroll area, pass in the root document element.  
+For scrollable elements, pass in the container element (for  
+instance, the element with overflow: scroll).  
+  
+<x, y> is relative to the top-left of what would normally be  
+the visible area of the element. This means that the pixels  
+rendered to the displayport take scrolling into account,  
+for example.  
+  
+It's legal to set a displayport that extends beyond the overflow  
+area in any direction (left/right/top/bottom).  
+  
+It's also legal to set a displayport that extends beyond the  
+area's bounds.  No pixels are rendered outside the area bounds.  
+  
+The caller of this method must have chrome privileges.  
+  
+Calling this will always force a recomposite, so it should be  
+avoided if at all possible. Client code should do checks before  
+calling this so that duplicate sets are not made with the same  
+displayport.  
+  
+aPriority is recorded along with the displayport rectangle. If this  
+method is called with a lower priority than the current priority, the  
+call is ignored.  
+  
 
 ### setDisplayPortMarginsForElement ###
-
-An alternate way to represent a displayport rect as a set of margins and a
-base rect to apply those margins to. A consumer of pixels may ask for as
-many extra pixels as it would like in each direction. Layout then sets
-the base rect to the "visible rect" of the element, which is just the
-subrect of the element that is drawn (it does not take in account content
-covering the element).
-
-If both a displayport rect and displayport margins with corresponding base
-rect are set with the same priority then the margins will take precendence.
-
-Specifying an alignment value will ensure that after the base rect has
-been expanded by the displayport margins, it will be further expanded so
-that each edge is located at a multiple of the "alignment" value.
-
-Note that both the margin values and alignment are treated as values in
-LayerPixels. Refer to layout/base/Units.h for a description of this unit.
-The base rect values are in app units.
-
+  
+An alternate way to represent a displayport rect as a set of margins and a  
+base rect to apply those margins to. A consumer of pixels may ask for as  
+many extra pixels as it would like in each direction. Layout then sets  
+the base rect to the "visible rect" of the element, which is just the  
+subrect of the element that is drawn (it does not take in account content  
+covering the element).  
+  
+If both a displayport rect and displayport margins with corresponding base  
+rect are set with the same priority then the margins will take precendence.  
+  
+Specifying an alignment value will ensure that after the base rect has  
+been expanded by the displayport margins, it will be further expanded so  
+that each edge is located at a multiple of the "alignment" value.  
+  
+Note that both the margin values and alignment are treated as values in  
+LayerPixels. Refer to layout/base/Units.h for a description of this unit.  
+The base rect values are in app units.  
+  
 
 ### setDisplayPortBaseForElement ###
 
 ### setResolution ###
-
-Get/set the resolution at which rescalable web content is drawn.
-Currently this is only (some) thebes content.
-
-Setting a new resolution does *not* trigger reflow.  This API is
-entirely separate from textZoom and fullZoom; a resolution scale
-can be applied together with both textZoom and fullZoom.
-
-The effect of is API for gfx code to allocate more or fewer
-pixels for rescalable content by a factor of |resolution| in
-either or both dimensions.  setResolution() together with
-setDisplayport() can be used to implement a non-reflowing
-scale-zoom in concert with another entity that can draw with a
-scale.  For example, to scale a content |window| inside a
-<browser> by a factor of 2.0
-
-  window.setDisplayport(x, y, oldW / 2.0, oldH / 2.0);
-  window.setResolution(2.0, 2.0);
-  // elsewhere
-  browser.setViewportScale(2.0, 2.0);
-
-The caller of this method must have chrome privileges.
-
+  
+Get/set the resolution at which rescalable web content is drawn.  
+Currently this is only (some) thebes content.  
+  
+Setting a new resolution does *not* trigger reflow.  This API is  
+entirely separate from textZoom and fullZoom; a resolution scale  
+can be applied together with both textZoom and fullZoom.  
+  
+The effect of is API for gfx code to allocate more or fewer  
+pixels for rescalable content by a factor of |resolution| in  
+either or both dimensions.  setResolution() together with  
+setDisplayport() can be used to implement a non-reflowing  
+scale-zoom in concert with another entity that can draw with a  
+scale.  For example, to scale a content |window| inside a  
+<browser> by a factor of 2.0  
+  
+  window.setDisplayport(x, y, oldW / 2.0, oldH / 2.0);  
+  window.setResolution(2.0, 2.0);  
+  // elsewhere  
+  browser.setViewportScale(2.0, 2.0);  
+  
+The caller of this method must have chrome privileges.  
+  
 
 ### getResolution ###
 
 ### getPresShellId ###
 
 ### sendMouseEvent ###
- Synthesize a mouse event. The event types supported are:
-   mousedown, mouseup, mousemove, mouseover, mouseout, contextmenu,
-   MozMouseHitTest
-
-Events are sent in coordinates offset by aX and aY from the window.
-
-Note that additional events may be fired as a result of this call. For
-instance, typically a click event will be fired as a result of a
-mousedown and mouseup in sequence.
-
-Normally at this level of events, the mouseover and mouseout events are
-only fired when the window is entered or exited. For inter-element
-mouseover and mouseout events, a movemove event fired on the new element
-should be sufficient to generate the correct over and out events as well.
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
-The event is dispatched via the toplevel window, so it could go to any
-window under the toplevel window, in some cases it could never reach this
-window at all.
-
-@param aType event type
-@param aX x offset in CSS pixels
-@param aY y offset in CSS pixels
-@param aButton button to synthesize
-@param aClickCount number of clicks that have been performed
-@param aModifiers modifiers pressed, using constants defined as MODIFIER_*
-@param aIgnoreRootScrollFrame whether the event should ignore viewport bounds
-                          during dispatch
-@param aPressure touch input pressure: 0.0 -> 1.0
-@param aInputSourceArg input source, see nsIDOMMouseEvent for values,
-       defaults to mouse input.
-@param aIsSynthesized controls nsIDOMEvent.isSynthesized value
-                      that helps identifying test related events,
-                      defaults to true
-
-returns true if the page called prevent default on this event
-
+ Synthesize a mouse event. The event types supported are:  
+   mousedown, mouseup, mousemove, mouseover, mouseout, contextmenu,  
+   MozMouseHitTest  
+  
+Events are sent in coordinates offset by aX and aY from the window.  
+  
+Note that additional events may be fired as a result of this call. For  
+instance, typically a click event will be fired as a result of a  
+mousedown and mouseup in sequence.  
+  
+Normally at this level of events, the mouseover and mouseout events are  
+only fired when the window is entered or exited. For inter-element  
+mouseover and mouseout events, a movemove event fired on the new element  
+should be sufficient to generate the correct over and out events as well.  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
+The event is dispatched via the toplevel window, so it could go to any  
+window under the toplevel window, in some cases it could never reach this  
+window at all.  
+  
+@param aType event type  
+@param aX x offset in CSS pixels  
+@param aY y offset in CSS pixels  
+@param aButton button to synthesize  
+@param aClickCount number of clicks that have been performed  
+@param aModifiers modifiers pressed, using constants defined as MODIFIER_*  
+@param aIgnoreRootScrollFrame whether the event should ignore viewport bounds  
+                          during dispatch  
+@param aPressure touch input pressure: 0.0 -> 1.0  
+@param aInputSourceArg input source, see nsIDOMMouseEvent for values,  
+       defaults to mouse input.  
+@param aIsSynthesized controls nsIDOMEvent.isSynthesized value  
+                      that helps identifying test related events,  
+                      defaults to true  
+  
+returns true if the page called prevent default on this event  
+  
 
 ### sendPointerEvent ###
- Synthesize a pointer event. The event types supported are:
-   pointerdown, pointerup, pointermove, pointerover, pointerout
-
-Events are sent in coordinates offset by aX and aY from the window.
-
-Note that additional events may be fired as a result of this call. For
-instance, typically a click event will be fired as a result of a
-mousedown and mouseup in sequence.
-
-Normally at this level of events, the pointerover and pointerout events are
-only fired when the window is entered or exited. For inter-element
-pointerover and pointerout events, a movemove event fired on the new element
-should be sufficient to generate the correct over and out events as well.
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
-The event is dispatched via the toplevel window, so it could go to any
-window under the toplevel window, in some cases it could never reach this
-window at all.
-
-@param aType event type
-@param aX x offset in CSS pixels
-@param aY y offset in CSS pixels
-@param aButton button to synthesize
-@param aClickCount number of clicks that have been performed
-@param aModifiers modifiers pressed, using constants defined as MODIFIER_*
-@param aIgnoreRootScrollFrame whether the event should ignore viewport bounds
-                          during dispatch
-@param aPressure touch input pressure: 0.0 -> 1.0
-@param aInputSourceArg input source, see nsIDOMMouseEvent for values,
-       defaults to mouse input.
-@param aPointerId A unique identifier for the pointer causing the event. default is 0
-@param aWidth The width (magnitude on the X axis), default is 0
-@param aHeight The height (magnitude on the Y axis), default is 0
-@param aTilt The plane angle between the Y-Z plane
-       and the plane containing both the transducer (e.g. pen stylus) axis and the Y axis. default is 0
-@param aTiltX The plane angle between the X-Z plane
-       and the plane containing both the transducer (e.g. pen stylus) axis and the X axis. default is 0
-@param aIsPrimary  Indicates if the pointer represents the primary pointer of this pointer type.
-@param aIsSynthesized controls nsIDOMEvent.isSynthesized value
-                      that helps identifying test related events,
-                      defaults to true
-
-returns true if the page called prevent default on this event
-
+ Synthesize a pointer event. The event types supported are:  
+   pointerdown, pointerup, pointermove, pointerover, pointerout  
+  
+Events are sent in coordinates offset by aX and aY from the window.  
+  
+Note that additional events may be fired as a result of this call. For  
+instance, typically a click event will be fired as a result of a  
+mousedown and mouseup in sequence.  
+  
+Normally at this level of events, the pointerover and pointerout events are  
+only fired when the window is entered or exited. For inter-element  
+pointerover and pointerout events, a movemove event fired on the new element  
+should be sufficient to generate the correct over and out events as well.  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
+The event is dispatched via the toplevel window, so it could go to any  
+window under the toplevel window, in some cases it could never reach this  
+window at all.  
+  
+@param aType event type  
+@param aX x offset in CSS pixels  
+@param aY y offset in CSS pixels  
+@param aButton button to synthesize  
+@param aClickCount number of clicks that have been performed  
+@param aModifiers modifiers pressed, using constants defined as MODIFIER_*  
+@param aIgnoreRootScrollFrame whether the event should ignore viewport bounds  
+                          during dispatch  
+@param aPressure touch input pressure: 0.0 -> 1.0  
+@param aInputSourceArg input source, see nsIDOMMouseEvent for values,  
+       defaults to mouse input.  
+@param aPointerId A unique identifier for the pointer causing the event. default is 0  
+@param aWidth The width (magnitude on the X axis), default is 0  
+@param aHeight The height (magnitude on the Y axis), default is 0  
+@param aTilt The plane angle between the Y-Z plane  
+       and the plane containing both the transducer (e.g. pen stylus) axis and the Y axis. default is 0  
+@param aTiltX The plane angle between the X-Z plane  
+       and the plane containing both the transducer (e.g. pen stylus) axis and the X axis. default is 0  
+@param aIsPrimary  Indicates if the pointer represents the primary pointer of this pointer type.  
+@param aIsSynthesized controls nsIDOMEvent.isSynthesized value  
+                      that helps identifying test related events,  
+                      defaults to true  
+  
+returns true if the page called prevent default on this event  
+  
 
 ### sendTouchEvent ###
- Synthesize a touch event. The event types supported are:
-   touchstart, touchend, touchmove, and touchcancel
-
-Events are sent in coordinates offset by aX and aY from the window.
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
-The event is dispatched via the toplevel window, so it could go to any
-window under the toplevel window, in some cases it could never reach this
-window at all.
-
-@param aType event type
-@param xs array of offsets in CSS pixels for each touch to be sent
-@param ys array of offsets in CSS pixels for each touch to be sent
-@param rxs array of radii in CSS pixels for each touch to be sent
-@param rys array of radii in CSS pixels for each touch to be sent
-@param rotationAngles array of angles in degrees for each touch to be sent
-@param forces array of forces (floats from 0 to 1) for each touch to be sent
-@param count number of touches in this set
-@param aModifiers modifiers pressed, using constants defined as MODIFIER_*
-@param aIgnoreRootScrollFrame whether the event should ignore viewport bounds
-                          during dispatch
-
-returns true if the page called prevent default on this touch event
-
+ Synthesize a touch event. The event types supported are:  
+   touchstart, touchend, touchmove, and touchcancel  
+  
+Events are sent in coordinates offset by aX and aY from the window.  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
+The event is dispatched via the toplevel window, so it could go to any  
+window under the toplevel window, in some cases it could never reach this  
+window at all.  
+  
+@param aType event type  
+@param xs array of offsets in CSS pixels for each touch to be sent  
+@param ys array of offsets in CSS pixels for each touch to be sent  
+@param rxs array of radii in CSS pixels for each touch to be sent  
+@param rys array of radii in CSS pixels for each touch to be sent  
+@param rotationAngles array of angles in degrees for each touch to be sent  
+@param forces array of forces (floats from 0 to 1) for each touch to be sent  
+@param count number of touches in this set  
+@param aModifiers modifiers pressed, using constants defined as MODIFIER_*  
+@param aIgnoreRootScrollFrame whether the event should ignore viewport bounds  
+                          during dispatch  
+  
+returns true if the page called prevent default on this touch event  
+  
 
 ### sendMouseEventToWindow ###
- The same as sendMouseEvent but ensures that the event is dispatched to
- this DOM window or one of its children.
-
+ The same as sendMouseEvent but ensures that the event is dispatched to  
+ this DOM window or one of its children.  
+  
 
 ### sendPointerEventToWindow ###
- The same as sendPointerEvent but ensures that the event
- is dispatched to this DOM window or one of its children.
-
+ The same as sendPointerEvent but ensures that the event  
+ is dispatched to this DOM window or one of its children.  
+  
 
 ### sendTouchEventToWindow ###
- The same as sendTouchEvent but ensures that the event is dispatched to
- this DOM window or one of its children.
-
+ The same as sendTouchEvent but ensures that the event is dispatched to  
+ this DOM window or one of its children.  
+  
 
 ### sendWheelEvent ###
 
 ### sendKeyEvent ###
 
 ### sendNativeKeyEvent ###
-
-See nsIWidget::SynthesizeNativeKeyEvent
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
-When you use this for tests, use the constants defined in NativeKeyCodes.js
-
+  
+See nsIWidget::SynthesizeNativeKeyEvent  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
+When you use this for tests, use the constants defined in NativeKeyCodes.js  
+  
 
 ### sendNativeMouseEvent ###
-
-See nsIWidget::SynthesizeNativeMouseEvent
-
-Will be called on the widget that contains aElement.
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
+  
+See nsIWidget::SynthesizeNativeMouseEvent  
+  
+Will be called on the widget that contains aElement.  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
 
 ### sendNativeMouseScrollEvent ###
-
-See nsIWidget::SynthesizeNativeMouseScrollEvent
-
-Will be called on the widget that contains aElement.
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
-NOTE: The synthesized native event may be fired asynchronously.
-
-@param aNativeMessage
-  On Windows:  WM_MOUSEWHEEL (0x020A), WM_MOUSEHWHEEL(0x020E),
-               WM_VSCROLL (0x0115) or WM_HSCROLL (0x114).
-
+  
+See nsIWidget::SynthesizeNativeMouseScrollEvent  
+  
+Will be called on the widget that contains aElement.  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
+NOTE: The synthesized native event may be fired asynchronously.  
+  
+@param aNativeMessage  
+  On Windows:  WM_MOUSEWHEEL (0x020A), WM_MOUSEHWHEEL(0x020E),  
+               WM_VSCROLL (0x0115) or WM_HSCROLL (0x114).  
+  
 
 ### sendNativeTouchPoint ###
-
-Create a new or update an existing touch point on the digitizer.
-To trigger os level gestures, individual touch points should
-transition through a complete set of touch states which should be
-sent as individual calls. For example:
-tap - msg1:TOUCH_CONTACT, msg2:TOUCH_REMOVE
-drag - msg1-n:TOUCH_CONTACT (moving), msgn+1:TOUCH_REMOVE
-hover drag - msg1-n:TOUCH_HOVER (moving), msgn+1:TOUCH_REMOVE
-
-Widget support: Windows 8.0+, Winrt/Win32. Other widgets will
-throw.
-
-@param aPointerId The touch point id to create or update.
-@param aTouchState one or more of the touch states listed above
-@param aScreenX, aScreenY screen coords of this event
-@param aPressure 0.0 -> 1.0 float val indicating pressure
-@param aOrientation 0 -> 359 degree value indicating the
-orientation of the pointer. Use 90 for normal taps.
-
+  
+Create a new or update an existing touch point on the digitizer.  
+To trigger os level gestures, individual touch points should  
+transition through a complete set of touch states which should be  
+sent as individual calls. For example:  
+tap - msg1:TOUCH_CONTACT, msg2:TOUCH_REMOVE  
+drag - msg1-n:TOUCH_CONTACT (moving), msgn+1:TOUCH_REMOVE  
+hover drag - msg1-n:TOUCH_HOVER (moving), msgn+1:TOUCH_REMOVE  
+  
+Widget support: Windows 8.0+, Winrt/Win32. Other widgets will  
+throw.  
+  
+@param aPointerId The touch point id to create or update.  
+@param aTouchState one or more of the touch states listed above  
+@param aScreenX, aScreenY screen coords of this event  
+@param aPressure 0.0 -> 1.0 float val indicating pressure  
+@param aOrientation 0 -> 359 degree value indicating the  
+orientation of the pointer. Use 90 for normal taps.  
+  
 
 ### sendNativeTouchTap ###
-
-Simulates native touch based taps on the input digitizer. Events
-triggered by this call are injected at the os level. Events do not
-bypass widget level input processing and as such can be used to
-test widget event logic and async pan-zoom controller functionality.
-Cannot be accessed from an unprivileged context.
-
-Long taps (based on the aLongTap parameter) will be completed
-asynchrnously after the call returns. Long tap delay is based on
-the ui.click_hold_context_menus.delay pref or 1500 msec if pref
-is not set.
-
-Widget support: Windows 8.0+, Winrt/Win32. Other widgets will
-throw.
-
-@param aScreenX, aScreenY screen coords of this event
-@param aLongTap true if the tap should be long, false for a short
-tap.
-
+  
+Simulates native touch based taps on the input digitizer. Events  
+triggered by this call are injected at the os level. Events do not  
+bypass widget level input processing and as such can be used to  
+test widget event logic and async pan-zoom controller functionality.  
+Cannot be accessed from an unprivileged context.  
+  
+Long taps (based on the aLongTap parameter) will be completed  
+asynchrnously after the call returns. Long tap delay is based on  
+the ui.click_hold_context_menus.delay pref or 1500 msec if pref  
+is not set.  
+  
+Widget support: Windows 8.0+, Winrt/Win32. Other widgets will  
+throw.  
+  
+@param aScreenX, aScreenY screen coords of this event  
+@param aLongTap true if the tap should be long, false for a short  
+tap.  
+  
 
 ### clearNativeTouchSequence ###
-
-Cancel any existing touch points or long tap delays. Calling this is safe
-even if you're sure there aren't any pointers recorded. You should call
-this when tests shut down to reset the digitizer driver. Not doing so can
-leave the digitizer in an undetermined state which can screw up subsequent
-tests and native input.
-
+  
+Cancel any existing touch points or long tap delays. Calling this is safe  
+even if you're sure there aren't any pointers recorded. You should call  
+this when tests shut down to reset the digitizer driver. Not doing so can  
+leave the digitizer in an undetermined state which can screw up subsequent  
+tests and native input.  
+  
 
 ### activateNativeMenuItemAt ###
-
-See nsIWidget::ActivateNativeMenuItemAt
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
+  
+See nsIWidget::ActivateNativeMenuItemAt  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
 
 ### forceUpdateNativeMenuAt ###
-
-See nsIWidget::ForceUpdateNativeMenuAt
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
+  
+See nsIWidget::ForceUpdateNativeMenuAt  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
 
 ### focus ###
-
-Focus the element aElement. The element should be in the same document
-that the window is displaying. Pass null to blur the element, if any,
-that currently has focus, and focus the document.
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
-@param aElement the element to focus
-
-Do not use this method. Just use element.focus if available or
-nsIFocusManager::SetFocus instead.
-
-
+  
+Focus the element aElement. The element should be in the same document  
+that the window is displaying. Pass null to blur the element, if any,  
+that currently has focus, and focus the document.  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
+@param aElement the element to focus  
+  
+Do not use this method. Just use element.focus if available or  
+nsIFocusManager::SetFocus instead.  
+  
+  
 
 ### garbageCollect ###
-
-Force a garbage collection followed by a cycle collection.
-
-Will throw a DOM security error if called without chrome privileges in
-non-debug builds. Available to all callers in debug builds.
-
-@param aListener listener that receives information about the CC graph
-                 (see @mozilla.org/cycle-collector-logger;1 for a logger
-                  component)
-@param aExtraForgetSkippableCalls indicates how many times
-                                  nsCycleCollector_forgetSkippable will
-                                  be called before running cycle collection.
-                                  -1 prevents the default
-                                  nsCycleCollector_forgetSkippable call
-                                  which happens after garbage collection.
-
+  
+Force a garbage collection followed by a cycle collection.  
+  
+Will throw a DOM security error if called without chrome privileges in  
+non-debug builds. Available to all callers in debug builds.  
+  
+@param aListener listener that receives information about the CC graph  
+                 (see @mozilla.org/cycle-collector-logger;1 for a logger  
+                  component)  
+@param aExtraForgetSkippableCalls indicates how many times  
+                                  nsCycleCollector_forgetSkippable will  
+                                  be called before running cycle collection.  
+                                  -1 prevents the default  
+                                  nsCycleCollector_forgetSkippable call  
+                                  which happens after garbage collection.  
+  
 
 ### cycleCollect ###
-
-Force a cycle collection without garbage collection.
-
-Will throw a DOM security error if called without chrome privileges in
-non-debug builds. Available to all callers in debug builds.
-
-@param aListener listener that receives information about the CC graph
-                 (see @mozilla.org/cycle-collector-logger;1 for a logger
-                  component)
-@param aExtraForgetSkippableCalls indicates how many times
-                                  nsCycleCollector_forgetSkippable will
-                                  be called before running cycle collection.
-                                  -1 prevents the default
-                                  nsCycleCollector_forgetSkippable call
-                                  which happens after garbage collection.
-
+  
+Force a cycle collection without garbage collection.  
+  
+Will throw a DOM security error if called without chrome privileges in  
+non-debug builds. Available to all callers in debug builds.  
+  
+@param aListener listener that receives information about the CC graph  
+                 (see @mozilla.org/cycle-collector-logger;1 for a logger  
+                  component)  
+@param aExtraForgetSkippableCalls indicates how many times  
+                                  nsCycleCollector_forgetSkippable will  
+                                  be called before running cycle collection.  
+                                  -1 prevents the default  
+                                  nsCycleCollector_forgetSkippable call  
+                                  which happens after garbage collection.  
+  
 
 ### runNextCollectorTimer ###
-
-Trigger whichever GC or CC timer is currently active and waiting to fire.
-Don't do this too much for initiating heavy actions, like the start of a IGC.
-
+  
+Trigger whichever GC or CC timer is currently active and waiting to fire.  
+Don't do this too much for initiating heavy actions, like the start of a IGC.  
+  
 
 ### sendSimpleGestureEvent ###
- Synthesize a simple gesture event for a window. The event types
- supported are: MozSwipeGestureStart, MozSwipeGestureUpdate,
- MozSwipeGestureEnd, MozSwipeGesture, MozMagnifyGestureStart,
- MozMagnifyGestureUpdate, MozMagnifyGesture, MozRotateGestureStart,
- MozRotateGestureUpdate, MozRotateGesture, MozPressTapGesture,
- MozTapGesture, and MozEdgeUIGesture.
-
-Cannot be accessed from unprivileged context (not
-content-accessible) Will throw a DOM security error if called
-without chrome privileges.
-
-@param aType event type
-@param aX x offset in CSS pixels
-@param aY y offset in CSS pixels
-@param aDirection direction, using constants defined in nsIDOMSimpleGestureEvent
-@param aDelta  amount of magnification or rotation for magnify and rotation events
-@param aModifiers modifiers pressed, using constants defined in nsIDOMNSEvent
-@param aClickCount For tap gestures, the number of taps.
-
+ Synthesize a simple gesture event for a window. The event types  
+ supported are: MozSwipeGestureStart, MozSwipeGestureUpdate,  
+ MozSwipeGestureEnd, MozSwipeGesture, MozMagnifyGestureStart,  
+ MozMagnifyGestureUpdate, MozMagnifyGesture, MozRotateGestureStart,  
+ MozRotateGestureUpdate, MozRotateGesture, MozPressTapGesture,  
+ MozTapGesture, and MozEdgeUIGesture.  
+  
+Cannot be accessed from unprivileged context (not  
+content-accessible) Will throw a DOM security error if called  
+without chrome privileges.  
+  
+@param aType event type  
+@param aX x offset in CSS pixels  
+@param aY y offset in CSS pixels  
+@param aDirection direction, using constants defined in nsIDOMSimpleGestureEvent  
+@param aDelta  amount of magnification or rotation for magnify and rotation events  
+@param aModifiers modifiers pressed, using constants defined in nsIDOMNSEvent  
+@param aClickCount For tap gestures, the number of taps.  
+  
 
 ### elementFromPoint ###
-
-Retrieve the element at point aX, aY in the window's document.
-
-@param aIgnoreRootScrollFrame whether or not to ignore the root scroll
-       frame when retrieving the element. If false, this method returns
-       null for coordinates outside of the viewport.
-@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.
-
+  
+Retrieve the element at point aX, aY in the window's document.  
+  
+@param aIgnoreRootScrollFrame whether or not to ignore the root scroll  
+       frame when retrieving the element. If false, this method returns  
+       null for coordinates outside of the viewport.  
+@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
+  
 
 ### nodesFromRect ###
-
-Retrieve all nodes that intersect a rect in the window's document.
-
-@param aX x reference for the rectangle in CSS pixels
-@param aY y reference for the rectangle in CSS pixels
-@param aTopSize How much to expand up the rectangle
-@param aRightSize How much to expand right the rectangle
-@param aBottomSize How much to expand down the rectangle
-@param aLeftSize How much to expand left the rectangle
-@param aIgnoreRootScrollFrame whether or not to ignore the root scroll
-       frame when retrieving the element. If false, this method returns
-       null for coordinates outside of the viewport.
-@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.
-
+  
+Retrieve all nodes that intersect a rect in the window's document.  
+  
+@param aX x reference for the rectangle in CSS pixels  
+@param aY y reference for the rectangle in CSS pixels  
+@param aTopSize How much to expand up the rectangle  
+@param aRightSize How much to expand right the rectangle  
+@param aBottomSize How much to expand down the rectangle  
+@param aLeftSize How much to expand left the rectangle  
+@param aIgnoreRootScrollFrame whether or not to ignore the root scroll  
+       frame when retrieving the element. If false, this method returns  
+       null for coordinates outside of the viewport.  
+@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
+  
 
 ### getTranslationNodes ###
-
-Get a list of nodes that have meaningful textual content to
-be translated. The implementation of this algorithm is in flux
-as we experiment and refine which approach works best.
-
-This method requires chrome privileges.
-
+  
+Get a list of nodes that have meaningful textual content to  
+be translated. The implementation of this algorithm is in flux  
+as we experiment and refine which approach works best.  
+  
+This method requires chrome privileges.  
+  
 
 ### compareCanvases ###
-
-Compare the two canvases, returning the number of differing pixels and
-the maximum difference in a channel.  This will throw an error if
-the dimensions of the two canvases are different.
-
-This method requires chrome privileges.
-
+  
+Compare the two canvases, returning the number of differing pixels and  
+the maximum difference in a channel.  This will throw an error if  
+the dimensions of the two canvases are different.  
+  
+This method requires chrome privileges.  
+  
 
 ### suppressEventHandling ###
-
-Suppresses/unsuppresses user initiated event handling in window's document
-and subdocuments.
-
-@throw NS_ERROR_DOM_SECURITY_ERR if called without chrome privileges and
-       NS_ERROR_FAILURE if window doesn't have a document.
-
+  
+Suppresses/unsuppresses user initiated event handling in window's document  
+and subdocuments.  
+  
+@throw NS_ERROR_DOM_SECURITY_ERR if called without chrome privileges and  
+       NS_ERROR_FAILURE if window doesn't have a document.  
+  
 
 ### clearMozAfterPaintEvents ###
 
 ### disableNonTestMouseEvents ###
-
-Disable or enable non synthetic test mouse events on *all* windows.
-
-Cannot be accessed from unprivileged context (not content-accessible).
-Will throw a DOM security error if called without chrome privileges.
-
-@param aDisable  If true, disable all non synthetic test mouse events
-              on all windows.  Otherwise, enable them.
-
+  
+Disable or enable non synthetic test mouse events on *all* windows.  
+  
+Cannot be accessed from unprivileged context (not content-accessible).  
+Will throw a DOM security error if called without chrome privileges.  
+  
+@param aDisable  If true, disable all non synthetic test mouse events  
+              on all windows.  Otherwise, enable them.  
+  
 
 ### getScrollXY ###
-
-Returns the scroll position of the window's currently loaded document.
-
-@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.
-@see nsIDOMWindow::scrollX/Y
-
+  
+Returns the scroll position of the window's currently loaded document.  
+  
+@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
+@see nsIDOMWindow::scrollX/Y  
+  
 
 ### getScrollXYFloat ###
-
-Returns the scroll position of the window's currently loaded document.
-
-@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.
-@see nsIDOMWindow::scrollX/Y
-
+  
+Returns the scroll position of the window's currently loaded document.  
+  
+@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
+@see nsIDOMWindow::scrollX/Y  
+  
 
 ### getScrollbarSize ###
-
-Returns the scrollbar width of the window's scroll frame.
-
-@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.
-
+  
+Returns the scrollbar width of the window's scroll frame.  
+  
+@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
+  
 
 ### getBoundsWithoutFlushing ###
-
-Returns the given element's bounds without flushing pending layout changes.
-
+  
+Returns the given element's bounds without flushing pending layout changes.  
+  
 
 ### getRootBounds ###
-
-Returns the bounds of the window's currently loaded document. This will
-generally be (0, 0, pageWidth, pageHeight) but in some cases (e.g. RTL
-documents) may have a negative left value.
-
+  
+Returns the bounds of the window's currently loaded document. This will  
+generally be (0, 0, pageWidth, pageHeight) but in some cases (e.g. RTL  
+documents) may have a negative left value.  
+  
 
 ### dispatchDOMEventViaPresShell ###
-
-Dispatches aEvent via the nsIPresShell object of the window's document.
-The event is dispatched to aTarget, which should be an object
-which implements nsIContent interface (#element, #text, etc).
-
-Cannot be accessed from unprivileged context (not
-content-accessible) Will throw a DOM security error if called
-without chrome privileges.
-
-@note Event handlers won't get aEvent as parameter, but a similar event.
-      Also, aEvent should not be reused.
-
+  
+Dispatches aEvent via the nsIPresShell object of the window's document.  
+The event is dispatched to aTarget, which should be an object  
+which implements nsIContent interface (#element, #text, etc).  
+  
+Cannot be accessed from unprivileged context (not  
+content-accessible) Will throw a DOM security error if called  
+without chrome privileges.  
+  
+@note Event handlers won't get aEvent as parameter, but a similar event.  
+      Also, aEvent should not be reused.  
+  
 
 ### dispatchEventToChromeOnly ###
-
-Sets WidgetEvent::mFlags::mOnlyChromeDispatch to true to ensure that
-the event is propagated only to chrome.
-Event's .target property will be aTarget.
-Returns the same value as what EventTarget.dispatchEvent does.
-
+  
+Sets WidgetEvent::mFlags::mOnlyChromeDispatch to true to ensure that  
+the event is propagated only to chrome.  
+Event's .target property will be aTarget.  
+Returns the same value as what EventTarget.dispatchEvent does.  
+  
 
 ### getClassName ###
-
-Returns the real classname (possibly of the mostly-transparent security
-wrapper) of aObj.
-
+  
+Returns the real classname (possibly of the mostly-transparent security  
+wrapper) of aObj.  
+  
 
 ### sendContentCommandEvent ###
-
-Generate a content command event.
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
-@param aType Type of command content event to send.  Can be one of "cut",
-       "copy", "paste", "delete", "undo", "redo", or "pasteTransferable".
-@param aTransferable an instance of nsITransferable when aType is
-       "pasteTransferable"
-
+  
+Generate a content command event.  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
+@param aType Type of command content event to send.  Can be one of "cut",  
+       "copy", "paste", "delete", "undo", "redo", or "pasteTransferable".  
+@param aTransferable an instance of nsITransferable when aType is  
+       "pasteTransferable"  
+  
 
 ### sendCompositionEvent ###
-
-Synthesize a composition event to the window.
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
-@param aType     The event type: "compositionstart", "compositionend" or
-                 "compositionupdate".
-@param aData     The data property value.  Note that this isn't applied
-                 for compositionstart event because its value is the
-                 selected text which is automatically computed.
-@param aLocale   The locale property value.
-
+  
+Synthesize a composition event to the window.  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
+@param aType     The event type: "compositionstart", "compositionend" or  
+                 "compositionupdate".  
+@param aData     The data property value.  Note that this isn't applied  
+                 for compositionstart event because its value is the  
+                 selected text which is automatically computed.  
+@param aLocale   The locale property value.  
+  
 
 ### createCompositionStringSynthesizer ###
-
-Creating synthesizer of composition string on the window.
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
+  
+Creating synthesizer of composition string on the window.  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
 
 ### sendQueryContentEvent ###
-
-Synthesize a query content event. Note that the result value returned here
-is in LayoutDevice pixels rather than CSS pixels.
-
-@param aType  One of the following const values.  And see also each comment
-              for the other parameters and the result.
-@param aAdditionalFlags See the description of QUERY_CONTENT_FLAG_*.
-
+  
+Synthesize a query content event. Note that the result value returned here  
+is in LayoutDevice pixels rather than CSS pixels.  
+  
+@param aType  One of the following const values.  And see also each comment  
+              for the other parameters and the result.  
+@param aAdditionalFlags See the description of QUERY_CONTENT_FLAG_*.  
+  
 
 ### remoteFrameFullscreenChanged ###
-
-Called when the remote child frame has changed its fullscreen state,
-when entering fullscreen, and when the origin which is fullscreen changes.
-aFrameElement is the iframe element which contains the child-process
-fullscreen document, and aNewOrigin is the origin of the new fullscreen
-document.
-
+  
+Called when the remote child frame has changed its fullscreen state,  
+when entering fullscreen, and when the origin which is fullscreen changes.  
+aFrameElement is the iframe element which contains the child-process  
+fullscreen document, and aNewOrigin is the origin of the new fullscreen  
+document.  
+  
 
 ### remoteFrameFullscreenReverted ###
-
-Called when the remote frame has popped all fullscreen elements off its
-stack, so that the operation can complete on the parent side.
-
+  
+Called when the remote frame has popped all fullscreen elements off its  
+stack, so that the operation can complete on the parent side.  
+  
 
 ### exitFullscreen ###
-
-Called when the child frame has fully exit fullscreen, so that the parent
-process can also fully exit.
-
+  
+Called when the child frame has fully exit fullscreen, so that the parent  
+process can also fully exit.  
+  
 
 ### sendSelectionSetEvent ###
-
-Synthesize a selection set event to the window.
-
-This sets the selection as the specified information.
-
-@param aOffset  The caret offset of the selection start.
-@param aLength  The length of the selection.  If this is too long, the
-                extra length is ignored.
-@param aAdditionalFlags See the description of SELECTION_SET_FLAG_*.
-@return True, if succeeded.  Otherwise, false.
-
+  
+Synthesize a selection set event to the window.  
+  
+This sets the selection as the specified information.  
+  
+@param aOffset  The caret offset of the selection start.  
+@param aLength  The length of the selection.  If this is too long, the  
+                extra length is ignored.  
+@param aAdditionalFlags See the description of SELECTION_SET_FLAG_*.  
+@return True, if succeeded.  Otherwise, false.  
+  
 
 ### selectAtPoint ###
-
-Select content at a client point based on a selection behavior if the
-underlying content is selectable. Selection will accumulate with any
-existing selection, callers should clear selection prior if needed.
-May fire selection changed events. Calls nsFrame's SelectByTypeAtPoint.
-
-@param aX, aY The selection point in client coordinates.
-@param aSelectType The selection behavior requested.
-@return True if a selection occured, false otherwise.
-@throw NS_ERROR_DOM_SECURITY_ERR, NS_ERROR_UNEXPECTED for utils
-issues, and NS_ERROR_INVALID_ARG for coordinates that are outside
-this window.
-
+  
+Select content at a client point based on a selection behavior if the  
+underlying content is selectable. Selection will accumulate with any  
+existing selection, callers should clear selection prior if needed.  
+May fire selection changed events. Calls nsFrame's SelectByTypeAtPoint.  
+  
+@param aX, aY The selection point in client coordinates.  
+@param aSelectType The selection behavior requested.  
+@return True if a selection occured, false otherwise.  
+@throw NS_ERROR_DOM_SECURITY_ERR, NS_ERROR_UNEXPECTED for utils  
+issues, and NS_ERROR_INVALID_ARG for coordinates that are outside  
+this window.  
+  
 
 ### getVisitedDependentComputedStyle ###
-
-Perform the equivalent of:
-  window.getComputedStyle(aElement, aPseudoElement).
-    getPropertyValue(aPropertyName)
-except that, when the link whose presence in history is allowed to
-influence aElement's style is visited, get the value the property
-would have if allowed all properties to change as a result of
-:visited selectors (except for cases where getComputedStyle uses
-data from the frame).
-
-This is easier to implement than adding our property restrictions
-to this API, and is sufficient for the present testing
-requirements (which are essentially testing 'color').
-
+  
+Perform the equivalent of:  
+  window.getComputedStyle(aElement, aPseudoElement).  
+    getPropertyValue(aPropertyName)  
+except that, when the link whose presence in history is allowed to  
+influence aElement's style is visited, get the value the property  
+would have if allowed all properties to change as a result of  
+:visited selectors (except for cases where getComputedStyle uses  
+data from the frame).  
+  
+This is easier to implement than adding our property restrictions  
+to this API, and is sufficient for the present testing  
+requirements (which are essentially testing 'color').  
+  
 
 ### getParent ###
-
-Returns the parent of obj.
-
-@param obj The JavaScript object whose parent is to be gotten.
-@return the parent.
-
+  
+Returns the parent of obj.  
+  
+@param obj The JavaScript object whose parent is to be gotten.  
+@return the parent.  
+  
 
 ### enterModalState ###
-
-Put the window into a state where scripts are frozen and events
-suppressed, for use when the window has launched a modal prompt.
-
+  
+Put the window into a state where scripts are frozen and events  
+suppressed, for use when the window has launched a modal prompt.  
+  
 
 ### leaveModalState ###
-
-Resume normal window state, where scripts can run and events are
-delivered.
-
+  
+Resume normal window state, where scripts can run and events are  
+delivered.  
+  
 
 ### isInModalState ###
-
-Is the window is in a modal state? [See enterModalState()]
-
+  
+Is the window is in a modal state? [See enterModalState()]  
+  
 
 ### suspendTimeouts ###
-
-Suspend/resume timeouts on this window and its descendant windows.
-
+  
+Suspend/resume timeouts on this window and its descendant windows.  
+  
 
 ### resumeTimeouts ###
 
 ### startFrameTimeRecording ###
-
-Record (and return) frame-intervals for frames which were presented
-  between calling StartFrameTimeRecording and StopFrameTimeRecording.
-
-- Uses a cyclic buffer and serves concurrent consumers, so if Stop is called too late
-    (elements were overwritten since Start), result is considered invalid and hence empty.
-- Buffer is capable of holding 10 seconds @ 60fps (or more if frames were less frequent).
-    Can be changed (up to 1 hour) via pref: toolkit.framesRecording.bufferSize.
-- Note: the first frame-interval may be longer than expected because last frame
-    might have been presented some time before calling StartFrameTimeRecording.
-
-
-Returns a handle which represents current recording start position.
-
+  
+Record (and return) frame-intervals for frames which were presented  
+  between calling StartFrameTimeRecording and StopFrameTimeRecording.  
+  
+- Uses a cyclic buffer and serves concurrent consumers, so if Stop is called too late  
+    (elements were overwritten since Start), result is considered invalid and hence empty.  
+- Buffer is capable of holding 10 seconds @ 60fps (or more if frames were less frequent).  
+    Can be changed (up to 1 hour) via pref: toolkit.framesRecording.bufferSize.  
+- Note: the first frame-interval may be longer than expected because last frame  
+    might have been presented some time before calling StartFrameTimeRecording.  
+  
+  
+Returns a handle which represents current recording start position.  
+  
 
 ### stopFrameTimeRecording ###
-
-Returns number of recorded frames since startIndex was issued,
-  and allocates+populates 2 arraye with the recorded data.
-- Allocation is infallible. Should be released even if size is 0.
-
+  
+Returns number of recorded frames since startIndex was issued,  
+  and allocates+populates 2 arraye with the recorded data.  
+- Allocation is infallible. Should be released even if size is 0.  
+  
 
 ### beginTabSwitch ###
-
-Signals that we're begining to tab switch. This is used by painting code to
-determine total tab switch time.
-
+  
+Signals that we're begining to tab switch. This is used by painting code to  
+determine total tab switch time.  
+  
 
 ### getOuterWindowWithId ###
-
-Return the outer window with the given ID, if any.  Can return null.
-@deprecated Use nsIWindowMediator.getOuterWindowWithId.  See bug 865664.
-
+  
+Return the outer window with the given ID, if any.  Can return null.  
+@deprecated Use nsIWindowMediator.getOuterWindowWithId.  See bug 865664.  
+  
 
 ### RenderDocument ###
 
 ### advanceTimeAndRefresh ###
-
-advanceTimeAndRefresh allows the caller to take over the refresh
-driver timing for a window.  A call to advanceTimeAndRefresh does
-three things:
- (1) It marks the refresh driver for this presentation so that it
-     no longer refreshes on its own, but is instead driven entirely
-     by the caller (except for the refresh that happens when a
-     document comes out of the bfcache).
- (2) It advances the refresh driver's current refresh time by the
-     argument given.  Negative advances are permitted.
- (3) It does a refresh (i.e., notifies refresh observers) at that
-     new time.
-
-Note that this affects other connected docshells of the same type
-in the same docshell tree, such as parent frames.
-
-When callers have completed their use of advanceTimeAndRefresh,
-they must call restoreNormalRefresh.
-
+  
+advanceTimeAndRefresh allows the caller to take over the refresh  
+driver timing for a window.  A call to advanceTimeAndRefresh does  
+three things:  
+ (1) It marks the refresh driver for this presentation so that it  
+     no longer refreshes on its own, but is instead driven entirely  
+     by the caller (except for the refresh that happens when a  
+     document comes out of the bfcache).  
+ (2) It advances the refresh driver's current refresh time by the  
+     argument given.  Negative advances are permitted.  
+ (3) It does a refresh (i.e., notifies refresh observers) at that  
+     new time.  
+  
+Note that this affects other connected docshells of the same type  
+in the same docshell tree, such as parent frames.  
+  
+When callers have completed their use of advanceTimeAndRefresh,  
+they must call restoreNormalRefresh.  
+  
 
 ### restoreNormalRefresh ###
-
-Undoes the effects of advanceTimeAndRefresh.
-
+  
+Undoes the effects of advanceTimeAndRefresh.  
+  
 
 ### setAsyncScrollOffset ###
-
-Set async scroll offset on an element. The next composite will render
-with that offset if async scrolling is enabled, and then the offset
-will be removed. Only call this while test-controlled refreshes is enabled.
-
+  
+Set async scroll offset on an element. The next composite will render  
+with that offset if async scrolling is enabled, and then the offset  
+will be removed. Only call this while test-controlled refreshes is enabled.  
+  
 
 ### computeAnimationDistance ###
-
-Method for testing StyleAnimationValue::ComputeDistance.
-
-Returns the distance between the two values as reported by
-StyleAnimationValue::ComputeDistance for the given element and
-property.
-
+  
+Method for testing StyleAnimationValue::ComputeDistance.  
+  
+Returns the distance between the two values as reported by  
+StyleAnimationValue::ComputeDistance for the given element and  
+property.  
+  
 
 ### wrapDOMFile ###
-
-Wrap an nsIFile in an nsIDOMFile
-
+  
+Wrap an nsIFile in an nsIDOMFile  
+  
 
 ### findElementWithViewId ###
-
-Given a view ID from the compositor process, retrieve the element
-associated with a view. For scrollpanes for documents, the root
-element of the document is returned.
-
+  
+Given a view ID from the compositor process, retrieve the element  
+associated with a view. For scrollpanes for documents, the root  
+element of the document is returned.  
+  
 
 ### getViewId ###
-
-Find the view ID for a given element. This is the reverse of
-findElementWithViewId().
-
+  
+Find the view ID for a given element. This is the reverse of  
+findElementWithViewId().  
+  
 
 ### leafLayersPartitionWindow ###
-
-Checks the layer tree for this window and returns true
-if all layers have transforms that are translations by integers,
-no leaf layers overlap, and the union of the leaf layers is exactly
-the bounds of the window. Always returns true in non-DEBUG builds.
-
+  
+Checks the layer tree for this window and returns true  
+if all layers have transforms that are translations by integers,  
+no leaf layers overlap, and the union of the leaf layers is exactly  
+the bounds of the window. Always returns true in non-DEBUG builds.  
+  
 
 ### checkAndClearPaintedState ###
-
-Check if any PaintedLayer painting has been done for this element,
-clears the painted flags if they have.
-
+  
+Check if any PaintedLayer painting has been done for this element,  
+clears the painted flags if they have.  
+  
 
 ### getFileId ###
-
-Get internal id of the stored blob, file or file handle.
-
+  
+Get internal id of the stored blob, file or file handle.  
+  
 
 ### getFilePath ###
-
-Get internal file path of the stored file or file handle.
-
-TODO: File handle objects are actually not supported at the moment.
-
+  
+Get internal file path of the stored file or file handle.  
+  
+TODO: File handle objects are actually not supported at the moment.  
+  
 
 ### getFileReferences ###
-
-Get file ref count info for given database and file id.
-
-
+  
+Get file ref count info for given database and file id.  
+  
+  
 
 ### isIncrementalGCEnabled ###
-
-Return whether incremental GC has been disabled due to a binary add-on.
-
+  
+Return whether incremental GC has been disabled due to a binary add-on.  
+  
 
 ### startPCCountProfiling ###
-
-Begin opcode-level profiling of all JavaScript execution in the window's
-runtime.
-
+  
+Begin opcode-level profiling of all JavaScript execution in the window's  
+runtime.  
+  
 
 ### stopPCCountProfiling ###
-
-Stop opcode-level profiling of JavaScript execution in the runtime, and
-collect all counts for use by getPCCount methods.
-
+  
+Stop opcode-level profiling of JavaScript execution in the runtime, and  
+collect all counts for use by getPCCount methods.  
+  
 
 ### purgePCCounts ###
-
-Purge collected PC counters.
-
+  
+Purge collected PC counters.  
+  
 
 ### getPCCountScriptCount ###
-
-Get the number of scripts with opcode-level profiling information.
-
+  
+Get the number of scripts with opcode-level profiling information.  
+  
 
 ### getPCCountScriptSummary ###
-
-Get a JSON string for a short summary of a script and the PC counts
-accumulated for it.
-
+  
+Get a JSON string for a short summary of a script and the PC counts  
+accumulated for it.  
+  
 
 ### getPCCountScriptContents ###
-
-Get a JSON string with full information about a profiled script,
-including the decompilation of the script and placement of decompiled
-operations within it, and PC counts for each operation.
-
+  
+Get a JSON string with full information about a profiled script,  
+including the decompilation of the script and placement of decompiled  
+operations within it, and PC counts for each operation.  
+  
 
 ### setScrollPositionClampingScrollPortSize ###
-
-Set the scrollport size for the purposes of clamping scroll positions for
-the root scroll frame of this document to be (aWidth,aHeight) in CSS pixels.
-
-The caller of this method must have chrome privileges.
-
+  
+Set the scrollport size for the purposes of clamping scroll positions for  
+the root scroll frame of this document to be (aWidth,aHeight) in CSS pixels.  
+  
+The caller of this method must have chrome privileges.  
+  
 
 ### setContentDocumentFixedPositionMargins ###
-
-Set margins for the layout of fixed position elements in the content
-document. These are used on mobile, where the viewable area can be
-temporarily obscured by the browser chrome. In this situation, we're ok
-with scrollable page content being obscured, but fixed position content
-cannot be revealed without removing the obscuring chrome, so we use these
-margins so that it can remain visible.
-
-The caller of this method must have chrome privileges.
-
+  
+Set margins for the layout of fixed position elements in the content  
+document. These are used on mobile, where the viewable area can be  
+temporarily obscured by the browser chrome. In this situation, we're ok  
+with scrollable page content being obscured, but fixed position content  
+cannot be revealed without removing the obscuring chrome, so we use these  
+margins so that it can remain visible.  
+  
+The caller of this method must have chrome privileges.  
+  
 
 ### disableDialogs ###
-
-These are used to control whether dialogs (alert, prompt, confirm) are
-allowed.
-
+  
+These are used to control whether dialogs (alert, prompt, confirm) are  
+allowed.  
+  
 
 ### enableDialogs ###
 
 ### areDialogsEnabled ###
 
 ### loadSheet ###
-
-Synchronously loads a style sheet from |sheetURI| and adds it to the list
-of additional style sheets of the document.
-
-These additional style sheets are very much like user/agent sheets loaded 
-with loadAndRegisterSheet. The only difference is that they are applied only
-on the document owned by this window.
-
-Sheets added via this API take effect immediately on the document.
-
+  
+Synchronously loads a style sheet from |sheetURI| and adds it to the list  
+of additional style sheets of the document.  
+  
+These additional style sheets are very much like user/agent sheets loaded   
+with loadAndRegisterSheet. The only difference is that they are applied only  
+on the document owned by this window.  
+  
+Sheets added via this API take effect immediately on the document.  
+  
 
 ### addSheet ###
-
-Adds a style sheet to the list of additional style sheets of the document.
-
-Style sheets can be preloaded with nsIStyleSheetService.preloadSheet.
-
-Sheets added via this API take effect immediately on the document.
-
+  
+Adds a style sheet to the list of additional style sheets of the document.  
+  
+Style sheets can be preloaded with nsIStyleSheetService.preloadSheet.  
+  
+Sheets added via this API take effect immediately on the document.  
+  
 
 ### removeSheet ###
-
-Remove the document style sheet at |sheetURI| from the list of additional 
-style sheets of the document.  The removal takes effect immediately.
-
+  
+Remove the document style sheet at |sheetURI| from the list of additional   
+style sheets of the document.  The removal takes effect immediately.  
+  
 
 ### allowScriptsToClose ###
-
-After calling the method, the window for which this DOMWindowUtils
-was created can be closed using scripts.
-
+  
+After calling the method, the window for which this DOMWindowUtils  
+was created can be closed using scripts.  
+  
 
 ### isNodeDisabledForEvents ###
-
-In certain cases the event handling of nodes, form controls in practice,
-may be disabled. Such cases are for example the existence of disabled
-attribute or -moz-user-input: none/disabled.
-
+  
+In certain cases the event handling of nodes, form controls in practice,  
+may be disabled. Such cases are for example the existence of disabled  
+attribute or -moz-user-input: none/disabled.  
+  
 
 ### runInStableState ###
-
-Allows running of a "synchronous section", in the form of an nsIRunnable
-once the event loop has reached a "stable state". We've reached a stable
-state when the currently executing task/event has finished, see:
-http://www.whatwg.org/specs/web-apps/current-work/multipage/webappapis.html#synchronous-section
-In practice this runs aRunnable once the currently executing event
-finishes. If called multiple times per task/event, all the runnables will
-be executed, in the order in which runInStableState() was called.
-
-XXX - This can wreak havoc if you're not using this for very simple
-purposes, eg testing or setting a flag.
-
+  
+Allows running of a "synchronous section", in the form of an nsIRunnable  
+once the event loop has reached a "stable state". We've reached a stable  
+state when the currently executing task/event has finished, see:  
+http://www.whatwg.org/specs/web-apps/current-work/multipage/webappapis.html#synchronous-section  
+In practice this runs aRunnable once the currently executing event  
+finishes. If called multiple times per task/event, all the runnables will  
+be executed, in the order in which runInStableState() was called.  
+  
+XXX - This can wreak havoc if you're not using this for very simple  
+purposes, eg testing or setting a flag.  
+  
 
 ### runBeforeNextEvent ###
-
-Run the given runnable before the next iteration of the event loop (this
-includes native events too). If a nested loop is spawned within the current
-event then the runnable will not be run until that loop has terminated.
-
-XXX - This can wreak havoc if you're not using this for very simple
-purposes, eg testing or setting a flag.
-
+  
+Run the given runnable before the next iteration of the event loop (this  
+includes native events too). If a nested loop is spawned within the current  
+event then the runnable will not be run until that loop has terminated.  
+  
+XXX - This can wreak havoc if you're not using this for very simple  
+purposes, eg testing or setting a flag.  
+  
 
 ### getOMTAStyle ###
 
 ### requestCompositorProperty ###
-
-Special function that gets a property syncronously from the last composite
-that occured.
-
-Supported properties:
-  "overdraw": Report a percentage between 0 and 999 indicate how many times
-              each pixels on the destination window have been touched.
-  "missed_hwc": Report a bool if hardware composer is supported but was
-                not used for the last frame.
-
+  
+Special function that gets a property syncronously from the last composite  
+that occured.  
+  
+Supported properties:  
+  "overdraw": Report a percentage between 0 and 999 indicate how many times  
+              each pixels on the destination window have been touched.  
+  "missed_hwc": Report a bool if hardware composer is supported but was  
+                not used for the last frame.  
+  
 
 ### setHandlingUserInput ###
-
-If aHandlingInput is true, this informs the event state manager that
-we're handling user input. Otherwise, this is a no-op (as by default
-we're not handling user input).
-Remember to call destruct() on the return value!
-See also nsIDOMWindowUtils::isHandlingUserInput.
-
+  
+If aHandlingInput is true, this informs the event state manager that  
+we're handling user input. Otherwise, this is a no-op (as by default  
+we're not handling user input).  
+Remember to call destruct() on the return value!  
+See also nsIDOMWindowUtils::isHandlingUserInput.  
+  
 
 ### getContentAPZTestData ###
-
-Get the content- and compositor-side APZ test data instances.
-The return values are of type APZTestData (see APZTestData.webidl).
-
+  
+Get the content- and compositor-side APZ test data instances.  
+The return values are of type APZTestData (see APZTestData.webidl).  
+  
 
 ### getCompositorAPZTestData ###
 
 ### xpconnectArgument ###
-
-This method doesn't do anything useful.  It was solely added for the
-purpose of the test for bug 503926.
-
+  
+This method doesn't do anything useful.  It was solely added for the  
+purpose of the test for bug 503926.  
+  
 
 ### askPermission ###
-
-Helper for JS components that need to send permission requests with
-e10s support properly.
-
+  
+Helper for JS components that need to send permission requests with  
+e10s support properly.  
+  
 
 ## Attributes ##
 
 ### imageAnimationMode ###
-
-Image animation mode of the window. When this attribute's value
-is changed, the implementation should set all images in the window
-to the given value. That is, when set to kDontAnimMode, all images
-will stop animating. The attribute's value must be one of the
-animationMode values from imgIContainer.
-@note Images may individually override the window's setting after
-      the window's mode is set. Therefore images given different modes
-      since the last setting of the window's mode may behave
-      out of line with the window's overall mode.
-@note The attribute's value is the window's overall mode. It may
-      for example continue to report kDontAnimMode after all images
-      have subsequently been individually animated.
-@note Only images immediately in this window are affected;
-      this is not recursive to subwindows.
-@see imgIContainer
-
+  
+Image animation mode of the window. When this attribute's value  
+is changed, the implementation should set all images in the window  
+to the given value. That is, when set to kDontAnimMode, all images  
+will stop animating. The attribute's value must be one of the  
+animationMode values from imgIContainer.  
+@note Images may individually override the window's setting after  
+      the window's mode is set. Therefore images given different modes  
+      since the last setting of the window's mode may behave  
+      out of line with the window's overall mode.  
+@note The attribute's value is the window's overall mode. It may  
+      for example continue to report kDontAnimMode after all images  
+      have subsequently been individually animated.  
+@note Only images immediately in this window are affected;  
+      this is not recursive to subwindows.  
+@see imgIContainer  
+  
 
 ### docCharsetIsForced ###
-
-Whether the charset of the window's current document has been forced by
-the user.
-Cannot be accessed from unprivileged context (not content-accessible)
-
+  
+Whether the charset of the window's current document has been forced by  
+the user.  
+Cannot be accessed from unprivileged context (not content-accessible)  
+  
 
 ### isResolutionSet ###
-
-Whether the resolution has been set by the user.
-This gives a way to check whether the provided resolution is the default
-value or restored from a previous session.
-
-Can only be accessed with chrome privileges.
-
+  
+Whether the resolution has been set by the user.  
+This gives a way to check whether the provided resolution is the default  
+value or restored from a previous session.  
+  
+Can only be accessed with chrome privileges.  
+  
 
 ### isFirstPaint ###
-
-Whether the next paint should be flagged as the first paint for a document.
-This gives a way to track the next paint that occurs after the flag is
-set. The flag gets cleared after the next paint.
-
-Can only be accessed with chrome privileges.
-
+  
+Whether the next paint should be flagged as the first paint for a document.  
+This gives a way to track the next paint that occurs after the flag is  
+set. The flag gets cleared after the next paint.  
+  
+Can only be accessed with chrome privileges.  
+  
 
 ### isMozAfterPaintPending ###
-
-Returns true if a MozAfterPaint event has been queued but not yet
-fired.
-
+  
+Returns true if a MozAfterPaint event has been queued but not yet  
+fired.  
+  
 
 ### IMEIsOpen ###
-
-Get IME open state. TRUE means 'Open', otherwise, 'Close'.
-This property works only when IMEEnabled is IME_STATUS_ENABLED.
-
+  
+Get IME open state. TRUE means 'Open', otherwise, 'Close'.  
+This property works only when IMEEnabled is IME_STATUS_ENABLED.  
+  
 
 ### IMEStatus ###
-
-Get IME status, see above IME_STATUS_* definitions.
-
+  
+Get IME status, see above IME_STATUS_* definitions.  
+  
 
 ### screenPixelsPerCSSPixel ###
-
-Get the number of screen pixels per CSS pixel.
-
+  
+Get the number of screen pixels per CSS pixel.  
+  
 
 ### fullZoom ###
-
-Get the current zoom factor.
-This is _approximately_ the same as nsIContentViewer.fullZoom,
-but takes into account Gecko's quantization of the zoom factor, which is
-implemented by adjusting the (integer) number of appUnits per devPixel.
-
+  
+Get the current zoom factor.  
+This is _approximately_ the same as nsIContentViewer.fullZoom,  
+but takes into account Gecko's quantization of the zoom factor, which is  
+implemented by adjusting the (integer) number of appUnits per devPixel.  
+  
 
 ### outerWindowID ###
-
-Get the id of the outer window of this window.  This will never throw.
-
+  
+Get the id of the outer window of this window.  This will never throw.  
+  
 
 ### currentInnerWindowID ###
-
-Get the id of the current inner window of this window.  If there
-is no current inner window, throws NS_ERROR_NOT_AVAILABLE.
-
+  
+Get the id of the current inner window of this window.  If there  
+is no current inner window, throws NS_ERROR_NOT_AVAILABLE.  
+  
 
 ### layerManagerType ###
-
-What type of layer manager the widget associated with this window is
-using. "Basic" is unaccelerated; other types are accelerated. Throws an
-error if there is no widget associated with this window.
-
+  
+What type of layer manager the widget associated with this window is  
+using. "Basic" is unaccelerated; other types are accelerated. Throws an  
+error if there is no widget associated with this window.  
+  
 
 ### layerManagerRemote ###
-
-True if the layer manager for the widget associated with this window is
-forwarding layers to a remote compositor, false otherwise. Throws an
-error if there is no widget associated with this window.
-
+  
+True if the layer manager for the widget associated with this window is  
+forwarding layers to a remote compositor, false otherwise. Throws an  
+error if there is no widget associated with this window.  
+  
 
 ### displayDPI ###
-
-The DPI of the display
-
+  
+The DPI of the display  
+  
 
 ### containerElement ###
-
-Return this window's frame element.
-Ignores all chrome/content or mozbrowser boundaries.
-
+  
+Return this window's frame element.  
+Ignores all chrome/content or mozbrowser boundaries.  
+  
 
 ### isTestControllingRefreshes ###
-
-Reports whether the current state is test-controlled refreshes
-(see advanceTimeAndRefresh and restoreNormalRefresh above).
-
+  
+Reports whether the current state is test-controlled refreshes  
+(see advanceTimeAndRefresh and restoreNormalRefresh above).  
+  
 
 ### focusedInputType ###
-
-Get the type of the currently focused html input, if any.
-
+  
+Get the type of the currently focused html input, if any.  
+  
 
 ### mayHaveTouchEventListeners ###
-
-true if the (current inner) window may have event listeners for touch events.
-
+  
+true if the (current inner) window may have event listeners for touch events.  
+  
 
 ### paintingSuppressed ###
-
-Returns true if painting is suppressed for this window and false
-otherwise.
-
+  
+Returns true if painting is suppressed for this window and false  
+otherwise.  
+  
 
 ### plugins ###
-
-Returns an array of plugins on the page for opt-in activation.
-
-Cannot be accessed from unprivileged context (not content-accessible).
-Will throw a DOM security error if called without chrome privileges.
-
-
+  
+Returns an array of plugins on the page for opt-in activation.  
+  
+Cannot be accessed from unprivileged context (not content-accessible).  
+Will throw a DOM security error if called without chrome privileges.  
+  
+  
 
 ### isHandlingUserInput ###
-
-Returns true if a user input is being handled.
-
-This calls EventStateManager::IsHandlingUserInput().
-
+  
+Returns true if a user input is being handled.  
+  
+This calls EventStateManager::IsHandlingUserInput().  
+  
 
 ### isParentWindowMainWidgetVisible ###
-
-Is the parent window's main widget visible?  If it isn't, we probably
-don't want to display any dialogs etc it may request.  This corresponds
-to the visibility check in nsWindowWatcher::OpenWindowInternal().
-
-Will throw a DOM security error if called without chrome privileges or
-NS_ERROR_NOT_AVAILABLE in the unlikely event that the parent window's
-main widget can't be reached.
-
+  
+Is the parent window's main widget visible?  If it isn't, we probably  
+don't want to display any dialogs etc it may request.  This corresponds  
+to the visibility check in nsWindowWatcher::OpenWindowInternal().  
+  
+Will throw a DOM security error if called without chrome privileges or  
+NS_ERROR_NOT_AVAILABLE in the unlikely event that the parent window's  
+main widget can't be reached.  
+  
 
 ### paintFlashing ###
-
-Setting paintFlashing to true will flash newly painted area.
-
+  
+Setting paintFlashing to true will flash newly painted area.  
+  
 
 ### audioMuted ###
-
-With this it's possible to mute all the MediaElements in this window.
-We have audioMuted and audioVolume to preserve the volume across
-mute/umute.
-
+  
+With this it's possible to mute all the MediaElements in this window.  
+We have audioMuted and audioVolume to preserve the volume across  
+mute/umute.  
+  
 
 ### audioVolume ###
-
-range: greater or equal to 0. The real volume level is affected by the
-volume of all ancestor windows.
-
+  
+range: greater or equal to 0. The real volume level is affected by the  
+volume of all ancestor windows.  
+  
 
 ## Constants ##
 
 ### MODIFIER_ALT ###
-
-Following modifiers are for sent*Event() except sendNative*Event().
-NOTE: MODIFIER_ALT, MODIFIER_CONTROL, MODIFIER_SHIFT and MODIFIER_META
-      are must be same values as nsIDOMNSEvent::*_MASK for backward
-      compatibility.
-
+  
+Following modifiers are for sent*Event() except sendNative*Event().  
+NOTE: MODIFIER_ALT, MODIFIER_CONTROL, MODIFIER_SHIFT and MODIFIER_META  
+      are must be same values as nsIDOMNSEvent::*_MASK for backward  
+      compatibility.  
+  
 
 ### MODIFIER_CONTROL ###
 
@@ -1236,33 +1236,33 @@ NOTE: MODIFIER_ALT, MODIFIER_CONTROL, MODIFIER_SHIFT and MODIFIER_META
 ### MODIFIER_OS ###
 
 ### WHEEL_EVENT_CAUSED_BY_NO_LINE_OR_PAGE_DELTA_DEVICE ###
- Synthesize a wheel event for a window. The event types supported is only
- wheel.
-
-Events are sent in coordinates offset by aX and aY from the window.
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
-@param aX                 x offset in CSS pixels
-@param aY                 y offset in CSS pixels
-@param aDeltaX            deltaX value.
-@param aDeltaY            deltaY value.
-@param aDeltaZ            deltaZ value.
-@param aDeltaMode         deltaMode value which must be one of
-                          nsIDOMWheelEvent::DOM_DELTA_*.
-@param aModifiers         modifiers pressed, using constants defined as
-                          MODIFIER_*
-@param aLineOrPageDeltaX  If you set this value non-zero for
-                          DOM_DELTA_PIXEL event, EventStateManager will
-                          dispatch NS_MOUSE_SCROLL event for horizontal
-                          scroll.
-@param aLineOrPageDeltaY  If you set this value non-zero for
-                          DOM_DELTA_PIXEL event, EventStateManager will
-                          dispatch NS_MOUSE_SCROLL event for vertical
-                          scroll.
-@param aOptions           Set following flags.
-
+ Synthesize a wheel event for a window. The event types supported is only  
+ wheel.  
+  
+Events are sent in coordinates offset by aX and aY from the window.  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
+@param aX                 x offset in CSS pixels  
+@param aY                 y offset in CSS pixels  
+@param aDeltaX            deltaX value.  
+@param aDeltaY            deltaY value.  
+@param aDeltaZ            deltaZ value.  
+@param aDeltaMode         deltaMode value which must be one of  
+                          nsIDOMWheelEvent::DOM_DELTA_*.  
+@param aModifiers         modifiers pressed, using constants defined as  
+                          MODIFIER_*  
+@param aLineOrPageDeltaX  If you set this value non-zero for  
+                          DOM_DELTA_PIXEL event, EventStateManager will  
+                          dispatch NS_MOUSE_SCROLL event for horizontal  
+                          scroll.  
+@param aLineOrPageDeltaY  If you set this value non-zero for  
+                          DOM_DELTA_PIXEL event, EventStateManager will  
+                          dispatch NS_MOUSE_SCROLL event for vertical  
+                          scroll.  
+@param aOptions           Set following flags.  
+  
 
 ### WHEEL_EVENT_CAUSED_BY_PIXEL_ONLY_DEVICE ###
 
@@ -1283,25 +1283,25 @@ Will throw a DOM security error if called without chrome privileges.
 ### WHEEL_EVENT_EXPECTED_OVERFLOW_DELTA_Y_NEGATIVE ###
 
 ### KEY_FLAG_PREVENT_DEFAULT ###
-
-Synthesize a key event to the window. The event types supported are:
-  keydown, keyup, keypress
-
-Key events generally end up being sent to the focused node.
-
-Cannot be accessed from unprivileged context (not content-accessible)
-Will throw a DOM security error if called without chrome privileges.
-
-@param aType event type
-@param aKeyCode key code
-@param aCharCode character code
-@param aModifiers modifiers pressed, using constants defined as MODIFIER_*
-@param aAdditionalFlags special flags for the key event, see KEY_FLAG_*.
-
-@return false if the event had preventDefault() called on it,
-              true otherwise.  In other words, true if and only if the
-              default action was taken.
-
+  
+Synthesize a key event to the window. The event types supported are:  
+  keydown, keyup, keypress  
+  
+Key events generally end up being sent to the focused node.  
+  
+Cannot be accessed from unprivileged context (not content-accessible)  
+Will throw a DOM security error if called without chrome privileges.  
+  
+@param aType event type  
+@param aKeyCode key code  
+@param aCharCode character code  
+@param aModifiers modifiers pressed, using constants defined as MODIFIER_*  
+@param aAdditionalFlags special flags for the key event, see KEY_FLAG_*.  
+  
+@return false if the event had preventDefault() called on it,  
+              true otherwise.  In other words, true if and only if the  
+              default action was taken.  
+  
 
 ### KEY_FLAG_NOT_SYNTHESIZED_FOR_TESTS ###
 
@@ -1318,30 +1318,30 @@ Will throw a DOM security error if called without chrome privileges.
 ### KEY_FLAG_LOCATION_JOYSTICK ###
 
 ### MOUSESCROLL_PREFER_WIDGET_AT_POINT ###
-
-The values for sendNativeMouseScrollEvent's aAdditionalFlags.
-
-
-If MOUSESCROLL_PREFER_WIDGET_AT_POINT is set, widget will dispatch
-the event to a widget which is under the cursor.  Otherwise, dispatch to
-a default target on the platform.  E.g., on Windows, it's focused window.
-
+  
+The values for sendNativeMouseScrollEvent's aAdditionalFlags.  
+  
+  
+If MOUSESCROLL_PREFER_WIDGET_AT_POINT is set, widget will dispatch  
+the event to a widget which is under the cursor.  Otherwise, dispatch to  
+a default target on the platform.  E.g., on Windows, it's focused window.  
+  
 
 ### MOUSESCROLL_WIN_SCROLL_LPARAM_NOT_NULL ###
-
-The platform specific values of aAdditionalFlags.  Must be over 0x00010000.
-
-
-If MOUSESCROLL_WIN_SCROLL_LPARAM_NOT_NULL is set and aNativeMessage is
-WM_VSCROLL or WM_HSCROLL, widget will set the window handle to the lParam
-instead of NULL.
-
+  
+The platform specific values of aAdditionalFlags.  Must be over 0x00010000.  
+  
+  
+If MOUSESCROLL_WIN_SCROLL_LPARAM_NOT_NULL is set and aNativeMessage is  
+WM_VSCROLL or WM_HSCROLL, widget will set the window handle to the lParam  
+instead of NULL.  
+  
 
 ### TOUCH_HOVER ###
-
-Touch states for sendNativeTouchPoint. These values match
-nsIWidget's TouchPointerState.
-
+  
+Touch states for sendNativeTouchPoint. These values match  
+nsIWidget's TouchPointerState.  
+  
 
 ### TOUCH_CONTACT ###
 
@@ -1350,148 +1350,148 @@ nsIWidget's TouchPointerState.
 ### TOUCH_CANCEL ###
 
 ### IME_STATUS_DISABLED ###
-
-WARNING: These values must be same as nsIWidget's values.
-
-
-DISABLED means users cannot use IME completely.
-Note that this state is *not* same as |ime-mode: disabled;|.
-
+  
+WARNING: These values must be same as nsIWidget's values.  
+  
+  
+DISABLED means users cannot use IME completely.  
+Note that this state is *not* same as |ime-mode: disabled;|.  
+  
 
 ### IME_STATUS_ENABLED ###
-
-ENABLED means users can use all functions of IME. This state is same as
-|ime-mode: normal;|.
-
+  
+ENABLED means users can use all functions of IME. This state is same as  
+|ime-mode: normal;|.  
+  
 
 ### IME_STATUS_PASSWORD ###
-
-PASSWORD means users cannot use most functions of IME. But on GTK2,
-users can use "Simple IM" which only supports dead key inputting.
-The behavior is same as the behavior of the native password field.
-This state is same as |ime-mode: disabled;|.
-
+  
+PASSWORD means users cannot use most functions of IME. But on GTK2,  
+users can use "Simple IM" which only supports dead key inputting.  
+The behavior is same as the behavior of the native password field.  
+This state is same as |ime-mode: disabled;|.  
+  
 
 ### IME_STATUS_PLUGIN ###
-
-PLUGIN means a plug-in has focus. At this time we should not touch to
-controlling the IME state.
-
+  
+PLUGIN means a plug-in has focus. At this time we should not touch to  
+controlling the IME state.  
+  
 
 ### QUERY_CONTENT_FLAG_USE_NATIVE_LINE_BREAK ###
-
-If sendQueryContentEvent()'s aAdditionalFlags argument is
-QUERY_CONTENT_FLAG_USE_XP_LINE_BREAK, plain text generated from content
-is created with "\n".
-Otherwise, platform dependent.  E.g., on Windows, "\r\n" is used.
-aOffset and aLength are offset and length in/of the plain text content.
-This flag also affects the result values such as offset, length and string.
-
+  
+If sendQueryContentEvent()'s aAdditionalFlags argument is  
+QUERY_CONTENT_FLAG_USE_XP_LINE_BREAK, plain text generated from content  
+is created with "\n".  
+Otherwise, platform dependent.  E.g., on Windows, "\r\n" is used.  
+aOffset and aLength are offset and length in/of the plain text content.  
+This flag also affects the result values such as offset, length and string.  
+  
 
 ### QUERY_CONTENT_FLAG_USE_XP_LINE_BREAK ###
 
 ### QUERY_SELECTED_TEXT ###
-
-QUERY_SELECTED_TEXT queries the first selection range's information.
-
-@param aOffset   Not used.
-@param aLength   Not used.
-@param aX        Not used.
-@param aY        Not used.
-
-@return offset, reversed and text properties of the result are available.
-
+  
+QUERY_SELECTED_TEXT queries the first selection range's information.  
+  
+@param aOffset   Not used.  
+@param aLength   Not used.  
+@param aX        Not used.  
+@param aY        Not used.  
+  
+@return offset, reversed and text properties of the result are available.  
+  
 
 ### QUERY_TEXT_CONTENT ###
-
-QUERY_TEXT_CONTENT queries the text at the specified range.
-
-@param aOffset   The first character's offset.  0 is the first character.
-@param aLength   The length of getting text.  If the aLength is too long,
-                 the result text is shorter than this value.
-@param aX        Not used.
-@param aY        Not used.
-
-@return text property of the result is available.
-
+  
+QUERY_TEXT_CONTENT queries the text at the specified range.  
+  
+@param aOffset   The first character's offset.  0 is the first character.  
+@param aLength   The length of getting text.  If the aLength is too long,  
+                 the result text is shorter than this value.  
+@param aX        Not used.  
+@param aY        Not used.  
+  
+@return text property of the result is available.  
+  
 
 ### QUERY_CARET_RECT ###
-
-QUERY_CARET_RECT queries the (collapsed) caret rect of the offset.
-If the actual caret is there at the specified offset, this returns the
-actual caret rect.  Otherwise, this guesses the caret rect from the
-metrics of the text.
-
-@param aOffset   The caret offset.  0 is the left side of the first
-                 caracter in LTR text.
-@param aLength   Not used.
-@param aX        Not used.
-@param aY        Not used.
-
-@return left, top, width and height properties of the result are available.
-        The left and the top properties are offset in the client area of
-        the DOM window.
-
+  
+QUERY_CARET_RECT queries the (collapsed) caret rect of the offset.  
+If the actual caret is there at the specified offset, this returns the  
+actual caret rect.  Otherwise, this guesses the caret rect from the  
+metrics of the text.  
+  
+@param aOffset   The caret offset.  0 is the left side of the first  
+                 caracter in LTR text.  
+@param aLength   Not used.  
+@param aX        Not used.  
+@param aY        Not used.  
+  
+@return left, top, width and height properties of the result are available.  
+        The left and the top properties are offset in the client area of  
+        the DOM window.  
+  
 
 ### QUERY_TEXT_RECT ###
-
-QUERY_TEXT_RECT queries the specified text's rect.
-
-@param aOffset   The first character's offset.  0 is the first character.
-@param aLength   The length of getting text.  If the aLength is too long,
-                 the extra length is ignored.
-@param aX        Not used.
-@param aY        Not used.
-
-@return left, top, width and height properties of the result are available.
-        The left and the top properties are offset in the client area of
-        the DOM window.
-
+  
+QUERY_TEXT_RECT queries the specified text's rect.  
+  
+@param aOffset   The first character's offset.  0 is the first character.  
+@param aLength   The length of getting text.  If the aLength is too long,  
+                 the extra length is ignored.  
+@param aX        Not used.  
+@param aY        Not used.  
+  
+@return left, top, width and height properties of the result are available.  
+        The left and the top properties are offset in the client area of  
+        the DOM window.  
+  
 
 ### QUERY_EDITOR_RECT ###
-
-QUERY_TEXT_RECT queries the focused editor's rect.
-
-@param aOffset   Not used.
-@param aLength   Not used.
-@param aX        Not used.
-@param aY        Not used.
-
-@return left, top, width and height properties of the result are available.
-
+  
+QUERY_TEXT_RECT queries the focused editor's rect.  
+  
+@param aOffset   Not used.  
+@param aLength   Not used.  
+@param aX        Not used.  
+@param aY        Not used.  
+  
+@return left, top, width and height properties of the result are available.  
+  
 
 ### QUERY_CHARACTER_AT_POINT ###
-
-QUERY_CHARACTER_AT_POINT queries the character information at the
-specified point.  The point is offset in the window.
-NOTE: If there are some panels at the point, this method send the query
-event to the panel's widget automatically.
-
-@param aOffset   Not used.
-@param aLength   Not used.
-@param aX        X offset in the widget.
-@param aY        Y offset in the widget.
-
-@return offset, notFound, left, top, width and height properties of the
-        result are available.
-
+  
+QUERY_CHARACTER_AT_POINT queries the character information at the  
+specified point.  The point is offset in the window.  
+NOTE: If there are some panels at the point, this method send the query  
+event to the panel's widget automatically.  
+  
+@param aOffset   Not used.  
+@param aLength   Not used.  
+@param aX        X offset in the widget.  
+@param aY        Y offset in the widget.  
+  
+@return offset, notFound, left, top, width and height properties of the  
+        result are available.  
+  
 
 ### SELECTION_SET_FLAG_USE_NATIVE_LINE_BREAK ###
-
-If sendQueryContentEvent()'s aAdditionalFlags argument is
-SELECTION_SET_FLAG_USE_NATIVE_LINE_BREAK, aOffset and aLength are offset
-and length in/of plain text generated from content is created with "\n".
-Otherwise, platform dependent.  E.g., on Windows, "\r\n" is used.
-
+  
+If sendQueryContentEvent()'s aAdditionalFlags argument is  
+SELECTION_SET_FLAG_USE_NATIVE_LINE_BREAK, aOffset and aLength are offset  
+and length in/of plain text generated from content is created with "\n".  
+Otherwise, platform dependent.  E.g., on Windows, "\r\n" is used.  
+  
 
 ### SELECTION_SET_FLAG_USE_XP_LINE_BREAK ###
 
 ### SELECTION_SET_FLAG_REVERSE ###
-
-If SELECTION_SET_FLAG_REVERSE is set, the selection is set from
-|aOffset + aLength| to |aOffset|.  Otherwise, it's set from |aOffset| to
-|aOffset + aLength|.
-
+  
+If SELECTION_SET_FLAG_REVERSE is set, the selection is set from  
+|aOffset + aLength| to |aOffset|.  Otherwise, it's set from |aOffset| to  
+|aOffset + aLength|.  
+  
 
 ### SELECT_CHARACTER ###
 

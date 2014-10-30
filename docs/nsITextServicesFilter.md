@@ -7,7 +7,7 @@ layout: default
 ## Methods ##
 
 ### skip ###
-
-Indicates whether the content node should be skipped by the iterator
- @param aNode - node to skip
-
+  
+Indicates whether the content node should be skipped by the iterator  
+ @param aNode - node to skip  
+  

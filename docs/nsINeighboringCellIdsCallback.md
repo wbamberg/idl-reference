@@ -7,11 +7,11 @@ layout: default
 ## Methods ##
 
 ### notifyGetNeighboringCellIds ###
-
-result is an array of nsINeighboringCellInfo.
-
+  
+result is an array of nsINeighboringCellInfo.  
+  
 
 ### notifyGetNeighboringCellIdsFailed ###
-
-Callback function with error message.
-
+  
+Callback function with error message.  
+  

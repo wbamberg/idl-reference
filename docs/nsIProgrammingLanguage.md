@@ -3,16 +3,16 @@ layout: default
 ---
 
 # nsIProgrammingLanguage #
-
-Enumeration of Programming Languages
-
+  
+Enumeration of Programming Languages  
+  
 
 ## Constants ##
 
 ### UNKNOWN ###
-
-Identifiers for programming languages.
-
+  
+Identifiers for programming languages.  
+  
 
 ### CPLUSPLUS ###
 

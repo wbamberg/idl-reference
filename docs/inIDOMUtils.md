@@ -67,21 +67,21 @@ layout: default
 ### clearPseudoClassLocks ###
 
 ### parseStyleSheet ###
-
-Parse CSS and update the style sheet in place.
-
-@param DOMCSSStyleSheet aSheet
-@param DOMString aInput
-       The new source string for the style sheet.
-
+  
+Parse CSS and update the style sheet in place.  
+  
+@param DOMCSSStyleSheet aSheet  
+@param DOMString aInput  
+       The new source string for the style sheet.  
+  
 
 ### scrollElementIntoView ###
-
-Scroll an element completely into view, if possible.
-This is similar to ensureElementIsVisible but for all ancestors.
-
-@param DOMElement aElement
-
+  
+Scroll an element completely into view, if possible.  
+This is similar to ensureElementIsVisible but for all ancestors.  
+  
+@param DOMElement aElement  
+  
 
 ## Constants ##
 

@@ -3,12 +3,12 @@ layout: default
 ---
 
 # nsISupportsPrimitive #
-
-Primitive base interface.
-
-These first three are pointer types and do data copying
-using the nsIMemory. Be careful!
-
+  
+Primitive base interface.  
+  
+These first three are pointer types and do data copying  
+using the nsIMemory. Be careful!  
+  
 
 ## Attributes ##
 

@@ -6,6 +6,14 @@ from xpidl import xpidl
 
 index = md.createFile("../index.md", "default_index")
 
+#class Attribute(object):
+
+#class Method(object):
+
+#class Constant(object):
+
+#class Interface(object):
+
 def writeDoccomments(doccomments, output):
     for doccomment in doccomments:
         lines = doccomment.splitlines()
@@ -17,7 +25,7 @@ def writeDoccomments(doccomments, output):
                 line = line[2:]
             if line.startswith("*"):
                 line = line[2:]
-            output.write(line + "\n")
+            output.write(line + "  \n")
 
 
 def writeMembers(name, members, output):

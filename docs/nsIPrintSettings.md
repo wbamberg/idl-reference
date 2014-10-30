@@ -3,42 +3,42 @@ layout: default
 ---
 
 # nsIPrintSettings #
-
-Simplified graphics interface for JS rendering.
-
+  
+Simplified graphics interface for JS rendering.  
+  
 
 ## Methods ##
 
 ### SetPrintOptions ###
-
-Set PrintOptions 
-
+  
+Set PrintOptions   
+  
 
 ### GetPrintOptions ###
-
-Get PrintOptions 
-
+  
+Get PrintOptions   
+  
 
 ### GetPrintOptionsBits ###
-
-Set PrintOptions Bit field
-
+  
+Set PrintOptions Bit field  
+  
 
 ### GetEffectivePageSize ###
-
-Get the page size in twips, considering the
-orientation (portrait or landscape).
-
+  
+Get the page size in twips, considering the  
+orientation (portrait or landscape).  
+  
 
 ### clone ###
-
-Makes a new copy
-
+  
+Makes a new copy  
+  
 
 ### assign ###
-
-Assigns the internal values from the "in" arg to the current object
-
+  
+Assigns the internal values from the "in" arg to the current object  
+  
 
 ### SetMarginInTwips ###
 
@@ -49,56 +49,56 @@ Assigns the internal values from the "in" arg to the current object
 ### GetEdgeInTwips ###
 
 ### SetupSilentPrinting ###
-
-We call this function so that anything that requires a run of the event loop
-can do so safely. The print dialog runs the event loop but in silent printing
-that doesn't happen.
-
-Either this or ShowPrintDialog (but not both) MUST be called by the print engine
-before printing, otherwise printing can fail on some platforms.
-
+  
+We call this function so that anything that requires a run of the event loop  
+can do so safely. The print dialog runs the event loop but in silent printing  
+that doesn't happen.  
+  
+Either this or ShowPrintDialog (but not both) MUST be called by the print engine  
+before printing, otherwise printing can fail on some platforms.  
+  
 
 ### SetUnwriteableMarginInTwips ###
-
-Sets/Gets the "unwriteable margin" for the page format.  This defines
-the boundary from which we'll measure the EdgeInTwips and MarginInTwips 
-attributes, to place the headers and content, respectively.
-
-Note: Implementations of SetUnwriteableMarginInTwips should handle
-negative margin values by falling back on the system default for
-that margin.
-
+  
+Sets/Gets the "unwriteable margin" for the page format.  This defines  
+the boundary from which we'll measure the EdgeInTwips and MarginInTwips   
+attributes, to place the headers and content, respectively.  
+  
+Note: Implementations of SetUnwriteableMarginInTwips should handle  
+negative margin values by falling back on the system default for  
+that margin.  
+  
 
 ### GetUnwriteableMarginInTwips ###
 
 ### GetPageRanges ###
-
-Get more accurate print ranges from the superior interval 
-(startPageRange, endPageRange). The aPages array is populated with a 
-list of pairs (start, end), where the endpoints are included. The print 
-ranges (start, end), must not overlap and must be in the 
-(startPageRange, endPageRange) scope.
-
-If there are no print ranges the aPages array is cleared.
-
+  
+Get more accurate print ranges from the superior interval   
+(startPageRange, endPageRange). The aPages array is populated with a   
+list of pairs (start, end), where the endpoints are included. The print   
+ranges (start, end), must not overlap and must be in the   
+(startPageRange, endPageRange) scope.  
+  
+If there are no print ranges the aPages array is cleared.  
+  
 
 ## Attributes ##
 
 ### printSession ###
-
-Data Members
-
+  
+Data Members  
+  
 
 ### startPageRange ###
 
 ### endPageRange ###
 
 ### edgeTop ###
-
-The edge measurements define the positioning of the headers
-and footers on the page. They're measured as an offset from
-the "unwriteable margin" (described below).
-
+  
+The edge measurements define the positioning of the headers  
+and footers on the page. They're measured as an offset from  
+the "unwriteable margin" (described below).  
+  
 
 ### edgeLeft ###
 
@@ -107,11 +107,11 @@ the "unwriteable margin" (described below).
 ### edgeRight ###
 
 ### marginTop ###
-
-The margins define the positioning of the content on the page.
-They're treated as an offset from the "unwriteable margin"
-(described below).
-
+  
+The margins define the positioning of the content on the page.  
+They're treated as an offset from the "unwriteable margin"  
+(described below).  
+  
 
 ### marginLeft ###
 
@@ -120,10 +120,10 @@ They're treated as an offset from the "unwriteable margin"
 ### marginRight ###
 
 ### unwriteableMarginTop ###
-
-The unwriteable margin defines the printable region of the paper, creating
-an invisible border from which the edge and margin attributes are measured.
-
+  
+The unwriteable margin defines the printable region of the paper, creating  
+an invisible border from which the edge and margin attributes are measured.  
+  
 
 ### unwriteableMarginLeft ###
 
@@ -214,34 +214,34 @@ an invisible border from which the edge and margin attributes are measured.
 ### duplex ###
 
 ### isInitializedFromPrinter ###
-
-This attribute tracks whether the PS has been initialized 
-from a printer specified by the "printerName" attr. 
-If a different name is set into the "printerName" 
-attribute than the one it was initialized with the PS
-will then get intialized from that printer.
-
+  
+This attribute tracks whether the PS has been initialized   
+from a printer specified by the "printerName" attr.   
+If a different name is set into the "printerName"   
+attribute than the one it was initialized with the PS  
+will then get intialized from that printer.  
+  
 
 ### isInitializedFromPrefs ###
-
-This attribute tracks whether the PS has been initialized 
-from prefs. If a different name is set into the "printerName" 
-attribute than the one it was initialized with the PS
-will then get intialized from prefs again.
-
+  
+This attribute tracks whether the PS has been initialized   
+from prefs. If a different name is set into the "printerName"   
+attribute than the one it was initialized with the PS  
+will then get intialized from prefs again.  
+  
 
 ### persistMarginBoxSettings ###
-
-This attribute tracks if the settings made on the margin box is
-stored in the prefs or not.
-
+  
+This attribute tracks if the settings made on the margin box is  
+stored in the prefs or not.  
+  
 
 ## Constants ##
 
 ### kInitSaveOddEvenPages ###
-
-PrintSettings to be Saved Navigation Constants
-
+  
+PrintSettings to be Saved Navigation Constants  
+  
 
 ### kInitSaveHeaderLeft ###
 
@@ -326,37 +326,37 @@ PrintSettings to be Saved Navigation Constants
 ### kJustRight ###
 
 ### kUseInternalDefault ###
-
-FrameSet Default Type Constants
-
+  
+FrameSet Default Type Constants  
+  
 
 ### kUseSettingWhenPossible ###
 
 ### kPaperSizeNativeData ###
-
-Page Size Type Constants
-
+  
+Page Size Type Constants  
+  
 
 ### kPaperSizeDefined ###
 
 ### kPaperSizeInches ###
-
-Page Size Unit Constants
-
+  
+Page Size Unit Constants  
+  
 
 ### kPaperSizeMillimeters ###
 
 ### kPortraitOrientation ###
-
-Orientation Constants
-
+  
+Orientation Constants  
+  
 
 ### kLandscapeOrientation ###
 
 ### kNoFrames ###
-
-Print Frame Constants
-
+  
+Print Frame Constants  
+  
 
 ### kFramesAsIs ###
 
@@ -365,18 +365,18 @@ Print Frame Constants
 ### kEachFrameSep ###
 
 ### kFrameEnableNone ###
-
-How to Enable Frame Set Printing Constants
-
+  
+How to Enable Frame Set Printing Constants  
+  
 
 ### kFrameEnableAll ###
 
 ### kFrameEnableAsIsAndEach ###
 
 ### kOutputFormatNative ###
-
-Output file format
-
+  
+Output file format  
+  
 
 ### kOutputFormatPS ###
 

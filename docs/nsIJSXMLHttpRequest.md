@@ -3,6 +3,6 @@ layout: default
 ---
 
 # nsIJSXMLHttpRequest #
-
-@deprecated
-
+  
+@deprecated  
+  

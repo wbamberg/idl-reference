@@ -7,11 +7,11 @@ layout: default
 ## Attributes ##
 
 ### name ###
-
-Get the name of the property.
-
+  
+Get the name of the property.  
+  
 
 ### value ###
-
-Get the value of the property.
-
+  
+Get the value of the property.  
+  

@@ -3,48 +3,48 @@ layout: default
 ---
 
 # nsICommandLineHandler #
-
-Handles arguments on the command line of an XUL application.
-
-Each handler is registered in the category "command-line-handler".
-The entries in this category are read in alphabetical order, and each
-category value is treated as a service contractid implementing this
-interface.
-
-By convention, handler with ordinary priority should begin with "m".
-
-Example:
-Category             Entry          Value
-command-line-handler c-extensions   @mozilla.org/extension-manager/clh;1
-command-line-handler m-edit         @mozilla.org/composer/clh;1
-command-line-handler m-irc          @mozilla.org/chatzilla/clh;1
-command-line-handler y-final        @mozilla.org/browser/clh-final;1
-
-@note What do we do about localizing helpInfo? Do we make each handler do it,
-      or provide a generic solution of some sort? Don't freeze this interface
-      without thinking about this!
-
+  
+Handles arguments on the command line of an XUL application.  
+  
+Each handler is registered in the category "command-line-handler".  
+The entries in this category are read in alphabetical order, and each  
+category value is treated as a service contractid implementing this  
+interface.  
+  
+By convention, handler with ordinary priority should begin with "m".  
+  
+Example:  
+Category             Entry          Value  
+command-line-handler c-extensions   @mozilla.org/extension-manager/clh;1  
+command-line-handler m-edit         @mozilla.org/composer/clh;1  
+command-line-handler m-irc          @mozilla.org/chatzilla/clh;1  
+command-line-handler y-final        @mozilla.org/browser/clh-final;1  
+  
+@note What do we do about localizing helpInfo? Do we make each handler do it,  
+      or provide a generic solution of some sort? Don't freeze this interface  
+      without thinking about this!  
+  
 
 ## Methods ##
 
 ### handle ###
-
-Process a command line. If this handler finds arguments that it
-understands, it should perform the appropriate actions (such as opening
-a window), and remove the arguments from the command-line array.
-
-@throw NS_ERROR_ABORT to immediately cease command-line handling
-       (if this is STATE_INITIAL_LAUNCH, quits the app).
-       All other exceptions are silently ignored.
-
+  
+Process a command line. If this handler finds arguments that it  
+understands, it should perform the appropriate actions (such as opening  
+a window), and remove the arguments from the command-line array.  
+  
+@throw NS_ERROR_ABORT to immediately cease command-line handling  
+       (if this is STATE_INITIAL_LAUNCH, quits the app).  
+       All other exceptions are silently ignored.  
+  
 
 ## Attributes ##
 
 ### helpInfo ###
-
-When the app is launched with the --help argument, this attribute
-is retrieved and displayed to the user (on stdout). The text should
-have embedded newlines which wrap at 76 columns, and should include
-a newline at the end. By convention, the right column which contains flag
-descriptions begins at the 24th character.
-
+  
+When the app is launched with the --help argument, this attribute  
+is retrieved and displayed to the user (on stdout). The text should  
+have embedded newlines which wrap at 76 columns, and should include  
+a newline at the end. By convention, the right column which contains flag  
+descriptions begins at the 24th character.  
+  

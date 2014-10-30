@@ -7,12 +7,12 @@ layout: default
 ## Methods ##
 
 ### notifyStatusChanged ###
-
-Called when a voicemail status (hasMessages, messageCount, returnNumber,
-returnMessage) changed.
-
+  
+Called when a voicemail status (hasMessages, messageCount, returnNumber,  
+returnMessage) changed.  
+  
 
 ### notifyInfoChanged ###
-
-Called when a voicemail info (number, displayName) changed.
-
+  
+Called when a voicemail info (number, displayName) changed.  
+  

@@ -7,11 +7,11 @@ layout: default
 ## Attributes ##
 
 ### searchType ###
-
-Identifies the search behavior.
-Should be one of the SEARCH_TYPE_* constants above.
-Defaults to SEARCH_TYPE_DELAYED.
-
+  
+Identifies the search behavior.  
+Should be one of the SEARCH_TYPE_* constants above.  
+Defaults to SEARCH_TYPE_DELAYED.  
+  
 
 ## Constants ##
 

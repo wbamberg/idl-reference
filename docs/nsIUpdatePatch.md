@@ -3,66 +3,66 @@ layout: default
 ---
 
 # nsIUpdatePatch #
-
-An interface that describes an object representing a patch file that can
-be downloaded and applied to a version of this application so that it
-can be updated.
-
+  
+An interface that describes an object representing a patch file that can  
+be downloaded and applied to a version of this application so that it  
+can be updated.  
+  
 
 ## Methods ##
 
 ### serialize ###
-
-Serializes this patch object into a DOM Element
-@param   updates
-         The document to serialize into
-@returns The DOM Element created by the serialization process
-
+  
+Serializes this patch object into a DOM Element  
+@param   updates  
+         The document to serialize into  
+@returns The DOM Element created by the serialization process  
+  
 
 ## Attributes ##
 
 ### type ###
-
-The type of this patch:
-"partial"      A binary difference between two application versions
-"complete"     A complete patch containing all of the replacement files
-               to update to the new version
-
+  
+The type of this patch:  
+"partial"      A binary difference between two application versions  
+"complete"     A complete patch containing all of the replacement files  
+               to update to the new version  
+  
 
 ### URL ###
-
-The URL this patch was being downloaded from
-
+  
+The URL this patch was being downloaded from  
+  
 
 ### finalURL ###
-
-The final URL this patch was being downloaded from
-
+  
+The final URL this patch was being downloaded from  
+  
 
 ### hashFunction ###
-
-The hash function to use when determining this file's integrity
-
+  
+The hash function to use when determining this file's integrity  
+  
 
 ### hashValue ###
-
-The value of the hash function named above that should be computed if
-this file is not corrupt.
-
+  
+The value of the hash function named above that should be computed if  
+this file is not corrupt.  
+  
 
 ### size ###
-
-The size of this file, in bytes.
-
+  
+The size of this file, in bytes.  
+  
 
 ### state ###
-
-The state of this patch
-
+  
+The state of this patch  
+  
 
 ### selected ###
-
-true if this patch is currently selected as the patch to be downloaded and
-installed for this update transaction, false if another patch from this
-update has been selected.
-
+  
+true if this patch is currently selected as the patch to be downloaded and  
+installed for this update transaction, false if another patch from this  
+update has been selected.  
+  

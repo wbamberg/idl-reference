@@ -3,62 +3,62 @@ layout: default
 ---
 
 # nsIAccessibleTextRange #
-
-A range representing a piece of text in the document.
-
+  
+A range representing a piece of text in the document.  
+  
 
 ## Methods ##
 
 ### compare ###
-
-Return true if this range has the same end points of the given range.
-
+  
+Return true if this range has the same end points of the given range.  
+  
 
 ### compareEndPoints ###
-
-Compare this and given ranges end points.
-
-@return -1/0/1 if this range end point is before/equal/after the given
-         range end point.
-
+  
+Compare this and given ranges end points.  
+  
+@return -1/0/1 if this range end point is before/equal/after the given  
+         range end point.  
+  
 
 ### move ###
-
- Move the boundary(ies) by the given number of the unit.
-
+  
+ Move the boundary(ies) by the given number of the unit.  
+  
 
 ### moveStart ###
 
 ### moveEnd ###
 
 ### normalize ###
-
-Normalize the range to the closest unit of the given type.
-
+  
+Normalize the range to the closest unit of the given type.  
+  
 
 ### findText ###
-
-Return range enclosing the found text.
-
+  
+Return range enclosing the found text.  
+  
 
 ### findAttr ###
-
-Return range enslosing the text having requested attribute.
-
+  
+Return range enslosing the text having requested attribute.  
+  
 
 ### addToSelection ###
-
-Add/remove the text range from selection.
-
+  
+Add/remove the text range from selection.  
+  
 
 ### removeFromSelection ###
 
 ### select ###
 
 ### scrollIntoView ###
-
-Scroll the range into view.
-
+  
+Scroll the range into view.  
+  
 
 ## Attributes ##
 
@@ -71,31 +71,31 @@ Scroll the range into view.
 ### endOffset ###
 
 ### container ###
-
-Return an accessible containing the whole range
-
+  
+Return an accessible containing the whole range  
+  
 
 ### embeddedChildren ###
-
-Return embedded children within the range.
-
+  
+Return embedded children within the range.  
+  
 
 ### text ###
-
-Return text within the range.
-
+  
+Return text within the range.  
+  
 
 ### bounds ###
-
-Return list of rects of the range.
-
+  
+Return list of rects of the range.  
+  
 
 ## Constants ##
 
 ### EndPoint_Start ###
-
-The two endpoints of the range (starting and ending).
-
+  
+The two endpoints of the range (starting and ending).  
+  
 
 ### EndPoint_End ###
 
@@ -112,9 +112,9 @@ The two endpoints of the range (starting and ending).
 ### DocumentUnit ###
 
 ### AnimationStyleAttr ###
-
-Text attributes. Used in conjunction with findAttrs().
-
+  
+Text attributes. Used in conjunction with findAttrs().  
+  
 
 ### AnnotationObjectsAttr ###
 

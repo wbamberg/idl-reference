@@ -3,45 +3,45 @@ layout: default
 ---
 
 # nsIDOMMessageEvent #
-
-The nsIDOMMessageEvent interface is used for server-sent events and for
-cross-domain messaging.
-
-For more information on this interface, please see
-http://www.whatwg.org/specs/web-apps/current-work/#messageevent
-
+  
+The nsIDOMMessageEvent interface is used for server-sent events and for  
+cross-domain messaging.  
+  
+For more information on this interface, please see  
+http://www.whatwg.org/specs/web-apps/current-work/#messageevent  
+  
 
 ## Methods ##
 
 ### initMessageEvent ###
-
-Initializes this event with the given data, in a manner analogous to
-the similarly-named method on the nsIDOMEvent interface, also setting the
-data, origin, source, and lastEventId attributes of this appropriately.
-
+  
+Initializes this event with the given data, in a manner analogous to  
+the similarly-named method on the nsIDOMEvent interface, also setting the  
+data, origin, source, and lastEventId attributes of this appropriately.  
+  
 
 ## Attributes ##
 
 ### data ###
-
-Custom string data associated with this event.
-
+  
+Custom string data associated with this event.  
+  
 
 ### origin ###
-
-The origin of the site from which this event originated, which is the
-scheme, ":", and if the URI has a host, "//" followed by the
-host, and if the port is not the default for the given scheme,
-":" followed by that port.  This value does not have a trailing slash.
-
+  
+The origin of the site from which this event originated, which is the  
+scheme, ":", and if the URI has a host, "//" followed by the  
+host, and if the port is not the default for the given scheme,  
+":" followed by that port.  This value does not have a trailing slash.  
+  
 
 ### lastEventId ###
-
-The last event ID string of the event source, for server-sent DOM events; this
-value is the empty string for cross-origin messaging.
-
+  
+The last event ID string of the event source, for server-sent DOM events; this  
+value is the empty string for cross-origin messaging.  
+  
 
 ### source ###
-
-The window which originated this event.
-
+  
+The window which originated this event.  
+  

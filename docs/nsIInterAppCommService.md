@@ -3,16 +3,16 @@ layout: default
 ---
 
 # nsIInterAppCommService #
-
-Implemented by the contract id @mozilla.org/inter-app-communication-service;1
-
-This interface contains helpers for Inter-App Communication API [1] related
-purposes. A singleton service of this interface will be instantiated during
-the system boot-up, which plays the role of the central service receiving
-messages from and interacting with the content processes.
-
-[1] https://wiki.mozilla.org/WebAPI/Inter_App_Communication_Alt_proposal
-
+  
+Implemented by the contract id @mozilla.org/inter-app-communication-service;1  
+  
+This interface contains helpers for Inter-App Communication API [1] related  
+purposes. A singleton service of this interface will be instantiated during  
+the system boot-up, which plays the role of the central service receiving  
+messages from and interacting with the content processes.  
+  
+[1] https://wiki.mozilla.org/WebAPI/Inter_App_Communication_Alt_proposal  
+  
 
 ## Methods ##
 

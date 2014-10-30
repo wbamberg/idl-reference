@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsIFileChannel #
-
-nsIFileChannel
-
+  
+nsIFileChannel  
+  
 
 ## Attributes ##
 

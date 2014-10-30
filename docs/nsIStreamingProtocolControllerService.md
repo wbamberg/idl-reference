@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsIStreamingProtocolControllerService #
-
-Media stream controller Service API.
-
+  
+Media stream controller Service API.  
+  
 
 ## Methods ##
 

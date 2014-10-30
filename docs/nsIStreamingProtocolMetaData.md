@@ -3,64 +3,64 @@ layout: default
 ---
 
 # nsIStreamingProtocolMetaData #
-
-Metadata of the media stream.
-
+  
+Metadata of the media stream.  
+  
 
 ## Attributes ##
 
 ### frameType ###
-
-Frame type.
-
+  
+Frame type.  
+  
 
 ### totalTracks ###
-
-The total tracks for the given media stream session.
-
+  
+The total tracks for the given media stream session.  
+  
 
 ### mimeType ###
-
-The mime type of the track.
-
+  
+The mime type of the track.  
+  
 
 ### width ###
-
-The width of the resolution.
-
+  
+The width of the resolution.  
+  
 
 ### height ###
-
-The height of the resolution.
-
+  
+The height of the resolution.  
+  
 
 ### duration ###
-
-The duration of the media stream.
-
+  
+The duration of the media stream.  
+  
 
 ### sampleRate ###
-
-The sample rate of the media stream.
-
+  
+The sample rate of the media stream.  
+  
 
 ### timeStamp ###
-
-The timestamp indicates the stream absolute position
-relative to the beginning of the presentation.
-
+  
+The timestamp indicates the stream absolute position  
+relative to the beginning of the presentation.  
+  
 
 ### channelCount ###
-
-The total number of audio channels in the media stream.
-
+  
+The total number of audio channels in the media stream.  
+  
 
 ### esdsData ###
-
-The AAC audio codec specific data.
-
+  
+The AAC audio codec specific data.  
+  
 
 ### avccData ###
-
-The AVCC format extradata of H.264 stream.
-
+  
+The AVCC format extradata of H.264 stream.  
+  

@@ -3,30 +3,30 @@ layout: default
 ---
 
 # rdfIDataSource #
-
-Interface used in RDF to describe data sources.
-
-@status PLASMA
-
+  
+Interface used in RDF to describe data sources.  
+  
+@status PLASMA  
+  
 
 ## Methods ##
 
 ### visitAllSubjects ###
-
-Visit all the subject resources in the datasource. The order is
-intederminate and may change from one invocation to the next.
-The subjects will be in the aSubject argument in calls into
-aVisitor, aPredicate and aObject will be null.
-@note Implementations may throw NS_ERROR_NOT_IMPLEMENTED for
-this method, but in this case RDF serializations of this
-datasource will not be possible.
-
+  
+Visit all the subject resources in the datasource. The order is  
+intederminate and may change from one invocation to the next.  
+The subjects will be in the aSubject argument in calls into  
+aVisitor, aPredicate and aObject will be null.  
+@note Implementations may throw NS_ERROR_NOT_IMPLEMENTED for  
+this method, but in this case RDF serializations of this  
+datasource will not be possible.  
+  
 
 ### visitAllTriples ###
-
-Visit all the triples in the datasource. The order is
-intederminate and may change from one invocation to the next.
-@note Implementations may throw NS_ERROR_NOT_IMPLEMENTED for
-this method, but in this case RDF serializations of this
-datasource will not be possible.
-
+  
+Visit all the triples in the datasource. The order is  
+intederminate and may change from one invocation to the next.  
+@note Implementations may throw NS_ERROR_NOT_IMPLEMENTED for  
+this method, but in this case RDF serializations of this  
+datasource will not be possible.  
+  

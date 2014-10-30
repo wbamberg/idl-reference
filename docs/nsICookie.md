@@ -7,43 +7,43 @@ layout: default
 ## Attributes ##
 
 ### name ###
-
-the name of the cookie
-
+  
+the name of the cookie  
+  
 
 ### value ###
-
-the cookie value
-
+  
+the cookie value  
+  
 
 ### isDomain ###
-
-true if the cookie is a domain cookie, false otherwise
-
+  
+true if the cookie is a domain cookie, false otherwise  
+  
 
 ### host ###
-
-the host (possibly fully qualified) of the cookie
-
+  
+the host (possibly fully qualified) of the cookie  
+  
 
 ### path ###
-
-the path pertaining to the cookie
-
+  
+the path pertaining to the cookie  
+  
 
 ### isSecure ###
-
-true if the cookie was transmitted over ssl, false otherwise
-
+  
+true if the cookie was transmitted over ssl, false otherwise  
+  
 
 ### expires ###
-
-@DEPRECATED use nsICookie2.expiry and nsICookie2.isSession instead.
-
-expiration time in seconds since midnight (00:00:00), January 1, 1970 UTC.
-expires = 0 represents a session cookie.
-expires = 1 represents an expiration time earlier than Jan 1, 1970.
-
+  
+@DEPRECATED use nsICookie2.expiry and nsICookie2.isSession instead.  
+  
+expiration time in seconds since midnight (00:00:00), January 1, 1970 UTC.  
+expires = 0 represents a session cookie.  
+expires = 1 represents an expiration time earlier than Jan 1, 1970.  
+  
 
 ### status ###
 
@@ -52,9 +52,9 @@ expires = 1 represents an expiration time earlier than Jan 1, 1970.
 ## Constants ##
 
 ### STATUS_UNKNOWN ###
-
-@DEPRECATED status implementation will return STATUS_UNKNOWN in all cases.
-
+  
+@DEPRECATED status implementation will return STATUS_UNKNOWN in all cases.  
+  
 
 ### STATUS_ACCEPTED ###
 
@@ -65,9 +65,9 @@ expires = 1 represents an expiration time earlier than Jan 1, 1970.
 ### STATUS_REJECTED ###
 
 ### POLICY_UNKNOWN ###
-
-@DEPRECATED policy implementation will return POLICY_UNKNOWN in all cases.
-
+  
+@DEPRECATED policy implementation will return POLICY_UNKNOWN in all cases.  
+  
 
 ### POLICY_NONE ###
 

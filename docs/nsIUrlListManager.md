@@ -7,40 +7,40 @@ layout: default
 ## Methods ##
 
 ### getGethashUrl ###
-
-Get the gethash url for this table
-
+  
+Get the gethash url for this table  
+  
 
 ### registerTable ###
-
-Add a table to the list of tables we are managing. The name is a
-string of the format provider_name-semantic_type-table_type.  For
-@param tableName A string of the format
-       provider_name-semantic_type-table_type.  For example,
-       goog-white-enchash or goog-black-url.
-@param updateUrl The URL from which to fetch updates.
-@param gethashUrl The URL from which to fetch hash completions.
-
+  
+Add a table to the list of tables we are managing. The name is a  
+string of the format provider_name-semantic_type-table_type.  For  
+@param tableName A string of the format  
+       provider_name-semantic_type-table_type.  For example,  
+       goog-white-enchash or goog-black-url.  
+@param updateUrl The URL from which to fetch updates.  
+@param gethashUrl The URL from which to fetch hash completions.  
+  
 
 ### enableUpdate ###
-
-Turn on update checking for a table. I.e., during the next server
-check, download updates for this table.
-
+  
+Turn on update checking for a table. I.e., during the next server  
+check, download updates for this table.  
+  
 
 ### disableUpdate ###
-
-Turn off update checking for a table.
-
+  
+Turn off update checking for a table.  
+  
 
 ### maybeToggleUpdateChecking ###
-
-Toggle update checking, if necessary.
-
+  
+Toggle update checking, if necessary.  
+  
 
 ### safeLookup ###
-
-Lookup a key.  Should not raise exceptions.  Calls the callback
-function with a comma-separated list of tables to which the key
-belongs.
-
+  
+Lookup a key.  Should not raise exceptions.  Calls the callback  
+function with a comma-separated list of tables to which the key  
+belongs.  
+  

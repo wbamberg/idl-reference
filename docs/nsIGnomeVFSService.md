@@ -7,13 +7,13 @@ layout: default
 ## Methods ##
 
 ### getMimeTypeFromExtension ###
-MIME registry methods ***/
+MIME registry methods ***/  
 
 ### getAppForMimeType ###
 
 ### getDescriptionForMimeType ###
 
 ### showURI ###
-Misc. methods ***/
+Misc. methods ***/  
 
 ### showURIForInput ###

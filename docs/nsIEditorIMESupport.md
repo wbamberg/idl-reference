@@ -7,18 +7,18 @@ layout: default
 ## Methods ##
 
 ### forceCompositionEnd ###
-
-forceCompositionEnd() force the composition end
-
+  
+forceCompositionEnd() force the composition end  
+  
 
 ### getPreferredIMEState ###
-
-Get preferred IME status of current widget.
-
+  
+Get preferred IME status of current widget.  
+  
 
 ## Attributes ##
 
 ### composing ###
-
-whether this editor has active IME transaction
-
+  
+whether this editor has active IME transaction  
+  

@@ -3,19 +3,19 @@ layout: default
 ---
 
 # nsIRDFBlob #
-
-A literal node in the graph, whose value is arbitrary
-binary data.
-
+  
+A literal node in the graph, whose value is arbitrary  
+binary data.  
+  
 
 ## Attributes ##
 
 ### value ###
-
-The binary data.
-
+  
+The binary data.  
+  
 
 ### length ###
-
-The data's length.
-
+  
+The data's length.  
+  

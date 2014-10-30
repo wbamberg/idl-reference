@@ -3,6 +3,6 @@ layout: default
 ---
 
 # nsIJumpListSeparator #
-
-A menu separator.
-
+  
+A menu separator.  
+  

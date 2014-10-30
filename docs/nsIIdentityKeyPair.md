@@ -3,9 +3,9 @@ layout: default
 ---
 
 # nsIIdentityKeyPair #
-
-This interface provides a keypair and signing interface for Identity functionality
-
+  
+This interface provides a keypair and signing interface for Identity functionality  
+  
 
 ## Methods ##
 

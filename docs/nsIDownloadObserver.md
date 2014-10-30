@@ -7,6 +7,6 @@ layout: default
 ## Methods ##
 
 ### onDownloadComplete ###
-
-Called to signal a download that has completed.
-
+  
+Called to signal a download that has completed.  
+  

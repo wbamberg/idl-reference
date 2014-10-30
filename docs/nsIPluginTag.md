@@ -25,14 +25,14 @@ layout: default
 ### name ###
 
 ### blocklisted ###
-
-true only if this plugin is "hardblocked" and cannot be enabled.
-
+  
+true only if this plugin is "hardblocked" and cannot be enabled.  
+  
 
 ### isEnabledStateLocked ###
-
-true if the state is non-default and locked, false otherwise.
-
+  
+true if the state is non-default and locked, false otherwise.  
+  
 
 ### disabled ###
 

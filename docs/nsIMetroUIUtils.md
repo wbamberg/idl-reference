@@ -7,26 +7,26 @@ layout: default
 ## Attributes ##
 
 ### currentPageURI ###
-
-Obtains the current page URI
-
+  
+Obtains the current page URI  
+  
 
 ### currentPageTitle ###
-
-Obtains the current page title
-
+  
+Obtains the current page title  
+  
 
 ### hasSelectedContent ###
-
-Determines if the browser has selected content
-
+  
+Determines if the browser has selected content  
+  
 
 ### shareText ###
-
-Determines the text that should be shared
-
+  
+Determines the text that should be shared  
+  
 
 ### shareHTML ###
-
-Determines the HTML that should be shared
-
+  
+Determines the HTML that should be shared  
+  

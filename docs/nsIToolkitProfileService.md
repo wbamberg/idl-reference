@@ -7,63 +7,63 @@ layout: default
 ## Methods ##
 
 ### getProfileByName ###
-
-Get a profile by name. This is mainly for use by the -P
-commandline flag.
-
-@param aName The profile name to find.
-
+  
+Get a profile by name. This is mainly for use by the -P  
+commandline flag.  
+  
+@param aName The profile name to find.  
+  
 
 ### lockProfilePath ###
-
-Lock an arbitrary path as a profile. If the path does not exist, it
-will be created and the defaults copied from the application directory.
-
+  
+Lock an arbitrary path as a profile. If the path does not exist, it  
+will be created and the defaults copied from the application directory.  
+  
 
 ### createProfile ###
-
-Create a new profile.
-
-The profile temporary directory will be chosen based on where the
-profile directory is located.
-
-@param aRootDir
-       The profile directory. May be null, in which case a suitable
-       default will be chosen based on the profile name.
-@param aName
-       The profile name.
-
+  
+Create a new profile.  
+  
+The profile temporary directory will be chosen based on where the  
+profile directory is located.  
+  
+@param aRootDir  
+       The profile directory. May be null, in which case a suitable  
+       default will be chosen based on the profile name.  
+@param aName  
+       The profile name.  
+  
 
 ### createDefaultProfileForApp ###
-
-Create the default profile for an application.
-
-The profile will be typically in
-{Application Data}/.profilename/{salt}.default or
-{Application Data}/.appname/{salt}.default
-or if aVendorName is provided
-{Application Data}/.vendor/appname/{salt}.default
-
-@note Either aProfileName or aAppName must be non-empty
-
-The contents of aProfileDefaultsDir will be copied to the
-new profile directory.
-
-@param  aProfileName
-        The name of the profile
-@param  aAppName
-        The name of the application
-@param  aVendorName
-        The name of the vendor
-@param  aProfileDefaultsDir
-        The location where the profile defaults are.
-@return The created profile.
-
+  
+Create the default profile for an application.  
+  
+The profile will be typically in  
+{Application Data}/.profilename/{salt}.default or  
+{Application Data}/.appname/{salt}.default  
+or if aVendorName is provided  
+{Application Data}/.vendor/appname/{salt}.default  
+  
+@note Either aProfileName or aAppName must be non-empty  
+  
+The contents of aProfileDefaultsDir will be copied to the  
+new profile directory.  
+  
+@param  aProfileName  
+        The name of the profile  
+@param  aAppName  
+        The name of the application  
+@param  aVendorName  
+        The name of the vendor  
+@param  aProfileDefaultsDir  
+        The location where the profile defaults are.  
+@return The created profile.  
+  
 
 ### flush ###
-
-Flush the profiles list file.
-
+  
+Flush the profiles list file.  
+  
 
 ## Attributes ##
 
@@ -74,27 +74,27 @@ Flush the profiles list file.
 ### profiles ###
 
 ### selectedProfile ###
-
-The currently selected profile (the one used or about to be used by the
-browser).
-
+  
+The currently selected profile (the one used or about to be used by the  
+browser).  
+  
 
 ### defaultProfile ###
-
-The default profile (the one used or about to be used by the
-browser if no other profile is specified at runtime). This is the profile
-marked with Default=1 in profiles.ini and is usually the same as
-selectedProfile, except on Developer Edition.
-
-Developer Edition uses a profile named "dev-edition-default" as the
-default profile (which it creates if it doesn't exist), unless a special
-empty file named "ignore-dev-edition-profile" is present next to
-profiles.ini. In that case Developer Edition behaves the same as any
-other build of Firefox.
-
+  
+The default profile (the one used or about to be used by the  
+browser if no other profile is specified at runtime). This is the profile  
+marked with Default=1 in profiles.ini and is usually the same as  
+selectedProfile, except on Developer Edition.  
+  
+Developer Edition uses a profile named "dev-edition-default" as the  
+default profile (which it creates if it doesn't exist), unless a special  
+empty file named "ignore-dev-edition-profile" is present next to  
+profiles.ini. In that case Developer Edition behaves the same as any  
+other build of Firefox.  
+  
 
 ### profileCount ###
-
-Returns the number of profiles.
-@return 0, 1, or 2. More than 2 profiles will always return 2.
-
+  
+Returns the number of profiles.  
+@return 0, 1, or 2. More than 2 profiles will always return 2.  
+  

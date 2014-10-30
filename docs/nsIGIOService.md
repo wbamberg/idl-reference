@@ -7,7 +7,7 @@ layout: default
 ## Methods ##
 
 ### getMimeTypeFromExtension ###
-MIME registry methods ***/
+MIME registry methods ***/  
 
 ### getAppForURIScheme ###
 
@@ -18,7 +18,7 @@ MIME registry methods ***/
 ### getDescriptionForMimeType ###
 
 ### showURI ###
-Misc. methods ***/
+Misc. methods ***/  
 
 ### showURIForInput ###
 

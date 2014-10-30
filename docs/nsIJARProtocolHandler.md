@@ -7,6 +7,6 @@ layout: default
 ## Attributes ##
 
 ### JARCache ###
-
-JARCache contains the collection of open jar files.
-
+  
+JARCache contains the collection of open jar files.  
+  

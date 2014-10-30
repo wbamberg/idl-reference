@@ -7,23 +7,23 @@ layout: default
 ## Methods ##
 
 ### updateStateChanged ###
-
-aUpdate has changed its state.
-
-@param aUpdate
-       The nsIOfflineCacheUpdate being processed.
-@param event
-       See enumeration above
-
+  
+aUpdate has changed its state.  
+  
+@param aUpdate  
+       The nsIOfflineCacheUpdate being processed.  
+@param event  
+       See enumeration above  
+  
 
 ### applicationCacheAvailable ###
-
-Informs the observer about an application being available to associate.
-
-@param applicationCache
-       The application cache instance that has been created or found by the 
-       update to associate with
-
+  
+Informs the observer about an application being available to associate.  
+  
+@param applicationCache  
+       The application cache instance that has been created or found by the   
+       update to associate with  
+  
 
 ## Constants ##
 

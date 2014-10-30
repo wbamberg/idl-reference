@@ -7,16 +7,16 @@ layout: default
 ## Attributes ##
 
 ### BaseURL ###
-
-The base URL of the HTTP index
-
+  
+The base URL of the HTTP index  
+  
 
 ### DataSource ###
-
-The RDF datasource that contains the HTTP index information.
-
+  
+The RDF datasource that contains the HTTP index information.  
+  
 
 ### encoding ###
-
-The charset to use for decoding FTP filenames
-
+  
+The charset to use for decoding FTP filenames  
+  

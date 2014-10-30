@@ -3,9 +3,9 @@ layout: default
 ---
 
 # imgIEncoder #
-
-imgIEncoder interface
-
+  
+imgIEncoder interface  
+  
 
 ## Methods ##
 
