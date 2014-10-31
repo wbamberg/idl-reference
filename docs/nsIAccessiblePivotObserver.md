@@ -22,3 +22,45 @@ Called when the pivot changes.
 @param aIsFromUserInput [in] the pivot changed because of direct user input  
                           (default is true).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPivot</td>
+<td>[in] the pivot that has changed.  
+</td>
+</tr>
+
+<tr>
+<td>aPivot</td>
+<td>[in] the pivot that has changed.  
+</td>
+</tr>
+
+<tr>
+<td>aPivot</td>
+<td>[in] the pivot that has changed.  
+</td>
+</tr>
+
+<tr>
+<td>aPivot</td>
+<td>[in] the pivot that has changed.  
+</td>
+</tr>
+
+<tr>
+<td>aPivot</td>
+<td>[in] the pivot that has changed.  
+</td>
+</tr>
+
+<tr>
+<td>aPivot</td>
+<td>[in] the pivot that has changed.  
+</td>
+</tr>
+
+</table>

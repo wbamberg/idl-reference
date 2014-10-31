@@ -23,6 +23,18 @@ Returns a protocol handler for a given URI scheme.
 @return reference to corresponding nsIProtocolHandler  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aScheme</td>
+<td>the URI scheme  
+</td>
+</tr>
+
+</table>
+
 ### getProtocolFlags(aScheme) ###
   
 Returns the protocol flags for a given scheme.  
@@ -30,6 +42,18 @@ Returns the protocol flags for a given scheme.
 @param aScheme the URI scheme  
 @return value of corresponding nsIProtocolHandler::protocolFlags  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aScheme</td>
+<td>the URI scheme  
+</td>
+</tr>
+
+</table>
 
 ### newURI(aSpec, aOriginCharset, aBaseURI) ###
   
@@ -53,6 +77,18 @@ callers to specify whether this is a file or directory by
 splitting this  into newDirURI() and newActualFileURI().  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFile</td>
+<td>specifies the file path  
+</td>
+</tr>
+
+</table>
+
 ### newChannelFromURI2(aURI, aLoadingNode, aLoadingPrincipal, aTriggeringPrincipal, aSecurityFlags, aContentPolicyType) ###
   
 Creates a channel for a given URI.  
@@ -61,6 +97,18 @@ Creates a channel for a given URI.
 @return reference to the new nsIChannel object  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>nsIURI from which to make a channel  
+</td>
+</tr>
+
+</table>
+
 ### newChannelFromURI(aURI) ###
   
 Creates a channel for a given URI.  
@@ -68,6 +116,18 @@ Creates a channel for a given URI.
 @param aURI nsIURI from which to make a channel  
 @return reference to the new nsIChannel object  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>nsIURI from which to make a channel  
+</td>
+</tr>
+
+</table>
 
 ### newChannel2(aSpec, aOriginCharset, aBaseURI, aLoadingNode, aLoadingPrincipal, aTriggeringPrincipal, aSecurityFlags, aContentPolicyType) ###
   
@@ -130,6 +190,18 @@ is provided purely as an optimization.
   
 @throws NS_ERROR_MALFORMED_URI if URL string is not of the right form.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSpec</td>
+<td>the URL string to parse  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

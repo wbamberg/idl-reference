@@ -16,6 +16,33 @@ Called when a content pref is set to a different value.
 @param    aValue      the new value of the pref  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aGroup      the group to which the pref belongs, or null  
+                      if it's a global pref (applies to all sites)  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aGroup      the group to which the pref belongs, or null  
+                      if it's a global pref (applies to all sites)  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aGroup      the group to which the pref belongs, or null  
+                      if it's a global pref (applies to all sites)  
+</td>
+</tr>
+
+</table>
+
 ### onContentPrefRemoved(aGroup, aName) ###
   
 Called when a content pref is removed.  
@@ -24,3 +51,23 @@ Called when a content pref is removed.
                       if it's a global pref (applies to all sites)  
 @param    aName       the name of the pref that was removed  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aGroup      the group to which the pref belongs, or null  
+                      if it's a global pref (applies to all sites)  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aGroup      the group to which the pref belongs, or null  
+                      if it's a global pref (applies to all sites)  
+</td>
+</tr>
+
+</table>

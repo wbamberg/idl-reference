@@ -35,6 +35,24 @@ Append an element at the end of the array.
                          nsIWeakReference.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>element</td>
+<td>The element to append.  
+</td>
+</tr>
+
+<tr>
+<td>element</td>
+<td>The element to append.  
+</td>
+</tr>
+
+</table>
+
 ### removeElementAt(index) ###
   
 removeElementAt()  
@@ -47,6 +65,18 @@ first, then call removeElementAt().
 @param index the position of the item  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>the position of the item  
+</td>
+</tr>
+
+</table>
 
 ### insertElementAt(element, index, weak) ###
   
@@ -70,6 +100,24 @@ position, up by one.
                          but the element does not support  
                          nsIWeakReference.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>element</td>
+<td>The element to insert  
+</td>
+</tr>
+
+<tr>
+<td>element</td>
+<td>The element to insert  
+</td>
+</tr>
+
+</table>
 
 ### replaceElementAt(element, index, weak) ###
   
@@ -95,6 +143,30 @@ Replace the element at the given position.
                          but the element does not support  
                          nsIWeakReference.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>element</td>
+<td>The new element to insert  
+</td>
+</tr>
+
+<tr>
+<td>element</td>
+<td>The new element to insert  
+</td>
+</tr>
+
+<tr>
+<td>element</td>
+<td>The new element to insert  
+</td>
+</tr>
+
+</table>
 
 ### clear() ###
   

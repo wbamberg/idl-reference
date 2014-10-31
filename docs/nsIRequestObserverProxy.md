@@ -24,3 +24,21 @@ Initializes an nsIRequestObserverProxy.
                   initialization because it sometimes can't be  
                   AddRef/Release'd off-main-thread.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>observer</td>
+<td>- receives observer notifications on the main thread  
+</td>
+</tr>
+
+<tr>
+<td>observer</td>
+<td>- receives observer notifications on the main thread  
+</td>
+</tr>
+
+</table>

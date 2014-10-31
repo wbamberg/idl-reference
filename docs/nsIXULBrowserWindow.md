@@ -39,6 +39,30 @@ Determines whether a load should continue.
        The referrer of the load.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDocShell</td>
+<td>       The docshell performing the load.  
+</td>
+</tr>
+
+<tr>
+<td>aDocShell</td>
+<td>       The docshell performing the load.  
+</td>
+</tr>
+
+<tr>
+<td>aDocShell</td>
+<td>       The docshell performing the load.  
+</td>
+</tr>
+
+</table>
+
 ### showTooltip(x, y, tooltip) ###
   
 Show/hide a tooltip (when the user mouses over a link, say).  

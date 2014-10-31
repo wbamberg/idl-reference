@@ -33,6 +33,26 @@ as well as in the single process model.
        as "jsval" for deserialization.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>socket</td>
+<td>       The TCP socket on the child side.  
+       This instance is connected with the child IPC side of the IPC bridge.  
+</td>
+</tr>
+
+<tr>
+<td>socket</td>
+<td>       The TCP socket on the child side.  
+       This instance is connected with the child IPC side of the IPC bridge.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### host ###

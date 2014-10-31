@@ -27,3 +27,15 @@ normal delivery to the main thread will continue. As such, listeners
 should be ready to deal with OnDataAvailable on either the main thread or  
 the new target thread.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNewTarget</td>
+<td>New event target, e.g. thread or threadpool.  
+</td>
+</tr>
+
+</table>

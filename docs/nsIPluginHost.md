@@ -29,6 +29,30 @@ presence in the address bar.
 @param redirectURL: specifies url for the overlay iframe  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>mimeType:</td>
+<td>specifies plugin mime type.  
+</td>
+</tr>
+
+<tr>
+<td>mimeType:</td>
+<td>specifies plugin mime type.  
+</td>
+</tr>
+
+<tr>
+<td>mimeType:</td>
+<td>specifies plugin mime type.  
+</td>
+</tr>
+
+</table>
+
 ### unregisterPlayPreviewMimeType(mimeType) ###
 
 ### getPlayPreviewInfo(mimeType) ###

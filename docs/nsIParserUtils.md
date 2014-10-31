@@ -46,6 +46,26 @@ may still be XSS dangerous if loaded into a non-Gecko Web engine!
 @param flags sanitization option flags defined above  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>src</td>
+<td>the HTML source to parse (C++ callers are allowed but not  
+           required to use the same string for the return value.)  
+</td>
+</tr>
+
+<tr>
+<td>src</td>
+<td>the HTML source to parse (C++ callers are allowed but not  
+           required to use the same string for the return value.)  
+</td>
+</tr>
+
+</table>
+
 ### convertToPlainText(src, flags, wrapCol) ###
   
 Convert HTML to plain text.  
@@ -55,6 +75,33 @@ Convert HTML to plain text.
 @param flags conversion option flags defined in nsIDocumentEncoder  
 @param wrapCol number of characters per line; 0 for no auto-wrapping  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>src</td>
+<td>the HTML source to parse (C++ callers are allowed but not  
+           required to use the same string for the return value.)  
+</td>
+</tr>
+
+<tr>
+<td>src</td>
+<td>the HTML source to parse (C++ callers are allowed but not  
+           required to use the same string for the return value.)  
+</td>
+</tr>
+
+<tr>
+<td>src</td>
+<td>the HTML source to parse (C++ callers are allowed but not  
+           required to use the same string for the return value.)  
+</td>
+</tr>
+
+</table>
 
 ### parseFragment(fragment, flags, isXML, baseURI, element) ###
   
@@ -66,6 +113,42 @@ Parses markup into a sanitized document fragment.
 @param baseURI the base URL for this fragment  
 @param element the context node for the fragment parsing algorithm  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>fragment</td>
+<td>the input markup  
+</td>
+</tr>
+
+<tr>
+<td>fragment</td>
+<td>the input markup  
+</td>
+</tr>
+
+<tr>
+<td>fragment</td>
+<td>the input markup  
+</td>
+</tr>
+
+<tr>
+<td>fragment</td>
+<td>the input markup  
+</td>
+</tr>
+
+<tr>
+<td>fragment</td>
+<td>the input markup  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

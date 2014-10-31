@@ -22,6 +22,24 @@ Only PR_TRUE and PR_FALSE are legal boolean values.
 @param aValue The value of the property.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aId</td>
+<td>The identifier of the property to be set.  
+</td>
+</tr>
+
+<tr>
+<td>aId</td>
+<td>The identifier of the property to be set.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### SETUP_ALLOW_PLUGINS ###

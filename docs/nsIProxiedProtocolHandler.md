@@ -23,6 +23,36 @@ layout: default
        a ws:// uri.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>the channel uri  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the channel uri  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the channel uri  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the channel uri  
+</td>
+</tr>
+
+</table>
+
 ### newProxiedChannel(uri, proxyInfo, proxyResolveFlags, proxyURI) ###
  Create a new channel with the given proxyInfo  
   
@@ -39,3 +69,33 @@ layout: default
        to an http:// channel but make its proxy determination based on  
        a ws:// uri.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>the channel uri  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the channel uri  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the channel uri  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the channel uri  
+</td>
+</tr>
+
+</table>

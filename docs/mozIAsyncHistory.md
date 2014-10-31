@@ -32,6 +32,26 @@ called for it with NS_ERROR_NOT_AVAILABLE result code.
         - Not providing at least one valid GUID or URI.   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPlaceIdentifiers</td>
+<td>       The place[s] for which to retrieve information, identified by either  
+       a single place GUID, a single URI, or a JS array of URIs and/or GUIDs.  
+</td>
+</tr>
+
+<tr>
+<td>aPlaceIdentifiers</td>
+<td>       The place[s] for which to retrieve information, identified by either  
+       a single place GUID, a single URI, or a JS array of URIs and/or GUIDs.  
+</td>
+</tr>
+
+</table>
+
 ### updatePlaces(aPlaceInfo, aCallback) ###
   
 Adds a set of visits for one or more mozIPlaceInfo objects, and updates  
@@ -57,6 +77,26 @@ aCallback.handleResult is called for each visit added.
         - Providing an invalid transitionType for a mozIVisitInfo.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPlaceInfo</td>
+<td>       The mozIPlaceInfo object[s] containing the information to store or  
+       update.  This can be a single object, or an array of objects.  
+</td>
+</tr>
+
+<tr>
+<td>aPlaceInfo</td>
+<td>       The mozIPlaceInfo object[s] containing the information to store or  
+       update.  This can be a single object, or an array of objects.  
+</td>
+</tr>
+
+</table>
+
 ### isURIVisited(aURI, aCallback) ###
   
 Checks if a given URI has been visited.  
@@ -66,3 +106,21 @@ Checks if a given URI has been visited.
 @param aCallback  
        A mozIVisitStatusCallback object which receives the visited status.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to check for.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to check for.  
+</td>
+</tr>
+
+</table>

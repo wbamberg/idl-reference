@@ -39,6 +39,40 @@ aSource has not yet been visited.
       for toolkit's implementation of this interface).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSource</td>
+<td>       The source of the download we are adding to history.  This cannot be  
+       null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       The source of the download we are adding to history.  This cannot be  
+       null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       The source of the download we are adding to history.  This cannot be  
+       null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       The source of the download we are adding to history.  This cannot be  
+       null.  
+</td>
+</tr>
+
+</table>
+
 ### removeAllDownloads() ###
   
 Remove all downloads from history.  

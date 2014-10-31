@@ -18,3 +18,23 @@ Initialize the simple stream listener.
              Must implement writeFrom.  
 @param aObserver optional stream observer (can be NULL)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSink</td>
+<td>data will be read from the channel to this output stream.  
+             Must implement writeFrom.  
+</td>
+</tr>
+
+<tr>
+<td>aSink</td>
+<td>data will be read from the channel to this output stream.  
+             Must implement writeFrom.  
+</td>
+</tr>
+
+</table>

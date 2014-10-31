@@ -19,6 +19,24 @@ with the nickname supplied here, it is removed and a new one is made.
 @param cb       Callback to be notified with the result  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>nickname</td>
+<td>Nickname that identifies the cert  
+</td>
+</tr>
+
+<tr>
+<td>nickname</td>
+<td>Nickname that identifies the cert  
+</td>
+</tr>
+
+</table>
+
 ### removeCert(nickname, cb) ###
   
 Remove a X.509 cert with the given nickname.  
@@ -26,6 +44,24 @@ Remove a X.509 cert with the given nickname.
 @param nickname Nickname that identifies the cert  
 @param cb       Callback to be notified with the result  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>nickname</td>
+<td>Nickname that identifies the cert  
+</td>
+</tr>
+
+<tr>
+<td>nickname</td>
+<td>Nickname that identifies the cert  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

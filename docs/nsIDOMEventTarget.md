@@ -37,6 +37,36 @@ removeEventListener method.
                         they're trusted  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>type The event type for which the user is registering  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>type The event type for which the user is registering  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>type The event type for which the user is registering  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>type The event type for which the user is registering  
+</td>
+</tr>
+
+</table>
+
 ### addSystemEventListener(type, listener, aUseCapture, aWantsUntrusted) ###
   
 addSystemEventListener() adds an event listener of aType to the system  
@@ -54,6 +84,36 @@ stopPropagation() of the event.
                         Otherwise, FALSE.  
 @return                 NS_OK if succeed.  Otherwise, NS_ERROR_*.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>An event name you're going to handle.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>An event name you're going to handle.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>An event name you're going to handle.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>An event name you're going to handle.  
+</td>
+</tr>
+
+</table>
 
 ### removeEventListener(type, listener, useCapture) ###
   
@@ -76,6 +136,33 @@ currently registered EventListener on the EventTarget has no effect.
                     not affect a non-capturing version of the same   
                     listener, and vice versa.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>type Specifies the event type of the EventListener being   
+              removed.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>type Specifies the event type of the EventListener being   
+              removed.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>type Specifies the event type of the EventListener being   
+              removed.  
+</td>
+</tr>
+
+</table>
 
 ### removeSystemEventListener(type, listener, aUseCapture) ###
   
@@ -102,6 +189,19 @@ dispatchEvent is called.
              type as null or an empty string will also trigger this   
              exception.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>evt Specifies the event type, behavior, and contextual   
+             information to be used in processing the event.  
+</td>
+</tr>
+
+</table>
 
 ### GetTargetForDOMEvent() ###
   
@@ -136,6 +236,19 @@ the latter one is the possible parent object for the event target chain.
 @note Only EventDispatcher should call this method.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aVisitor</td>
+<td>the visitor object which is used to create the  
+                event target chain for event dispatching.  
+</td>
+</tr>
+
+</table>
+
 ### WillHandleEvent(aVisitor) ###
   
 If EventChainPreVisitor.mWantsWillHandleEvent is set PR_TRUE,  
@@ -151,6 +264,18 @@ The default handling of the event should happen here.
 @see EventDispatcher.h for documentation about aVisitor.  
 @note Only EventDispatcher should call this method.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aVisitor</td>
+<td>the visitor object which is used during post handling.  
+</td>
+</tr>
+
+</table>
 
 ### DispatchDOMEvent(aEvent, aDOMEvent, aPresContext, aEventStatus) ###
   
@@ -170,6 +295,36 @@ for dispatching, otherwise aEvent is used.
 @deprecated This method is here just until all the callers outside Gecko  
             have been converted to use nsIDOMEventTarget::dispatchEvent.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEvent</td>
+<td>the event that is being dispatched.  
+</td>
+</tr>
+
+<tr>
+<td>aEvent</td>
+<td>the event that is being dispatched.  
+</td>
+</tr>
+
+<tr>
+<td>aEvent</td>
+<td>the event that is being dispatched.  
+</td>
+</tr>
+
+<tr>
+<td>aEvent</td>
+<td>the event that is being dispatched.  
+</td>
+</tr>
+
+</table>
 
 ### GetContextForEventHandlers(aRv) ###
   

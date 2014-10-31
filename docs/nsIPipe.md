@@ -52,6 +52,36 @@ initialize this pipe
        parameter is a finite value.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>nonBlockingInput</td>
+<td>       true specifies non-blocking input stream behavior  
+</td>
+</tr>
+
+<tr>
+<td>nonBlockingInput</td>
+<td>       true specifies non-blocking input stream behavior  
+</td>
+</tr>
+
+<tr>
+<td>nonBlockingInput</td>
+<td>       true specifies non-blocking input stream behavior  
+</td>
+</tr>
+
+<tr>
+<td>nonBlockingInput</td>
+<td>       true specifies non-blocking input stream behavior  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### inputStream ###

@@ -34,6 +34,40 @@ CreateInputTransport
 @return nsITransport instance.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>       The input stream that will be read on a background thread.  
+       This stream must implement "blocking" stream semantics.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The input stream that will be read on a background thread.  
+       This stream must implement "blocking" stream semantics.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The input stream that will be read on a background thread.  
+       This stream must implement "blocking" stream semantics.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The input stream that will be read on a background thread.  
+       This stream must implement "blocking" stream semantics.  
+</td>
+</tr>
+
+</table>
+
 ### createOutputTransport(aStream, aStartOffset, aWriteLimit, aCloseWhenDone) ###
   
 CreateOutputTransport  
@@ -54,3 +88,37 @@ CreateOutputTransport
   
 @return nsITransport instance.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>       The output stream that will be written to on a background thread.  
+       This stream must implement "blocking" stream semantics.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The output stream that will be written to on a background thread.  
+       This stream must implement "blocking" stream semantics.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The output stream that will be written to on a background thread.  
+       This stream must implement "blocking" stream semantics.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The output stream that will be written to on a background thread.  
+       This stream must implement "blocking" stream semantics.  
+</td>
+</tr>
+
+</table>

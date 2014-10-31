@@ -25,6 +25,24 @@ GetSelection will return the selection that the presentation
 @param _return will hold the return value  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>will hold the type of selection //SelectionType  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>will hold the type of selection //SelectionType  
+</td>
+</tr>
+
+</table>
+
 ### scrollSelectionIntoView(type, region, flags) ###
   
 ScrollSelectionIntoView scrolls a region of the selection,  
@@ -45,12 +63,48 @@ Note that if isSynchronous is true, then this might flush the pending
 reflow. It's dangerous for some objects. See bug 418470 comment 12.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>the selection to scroll into view. //SelectionType  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the selection to scroll into view. //SelectionType  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the selection to scroll into view. //SelectionType  
+</td>
+</tr>
+
+</table>
+
 ### repaintSelection(type) ###
   
 RepaintSelection repaints the selection specified by aType.  
   
 @param aType specifies the selection to repaint.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>specifies the selection to repaint.  
+</td>
+</tr>
+
+</table>
 
 ### setCaretEnabled(enabled) ###
   
@@ -61,6 +115,18 @@ Can be called any time.
 @return always NS_OK  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEnable</td>
+<td>PR_TRUE to enable caret.  PR_FALSE to disable.  
+</td>
+</tr>
+
+</table>
+
 ### setCaretReadOnly(readOnly) ###
   
 Set the caret readonly or not. An readonly caret will  
@@ -68,6 +134,18 @@ draw but not blink when made visible.
 @param aReadOnly PR_TRUE to enable caret.  PR_FALSE to disable.  
 @return always NS_OK  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aReadOnly</td>
+<td>PR_TRUE to enable caret.  PR_FALSE to disable.  
+</td>
+</tr>
+
+</table>
 
 ### getCaretEnabled() ###
   
@@ -77,6 +155,18 @@ Gets the current state of the caret.
           else NS_OK  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEnabled</td>
+<td>[OUT] set to the current caret state, as set by SetCaretEnabled  
+</td>
+</tr>
+
+</table>
+
 ### setCaretVisibilityDuringSelection(visibility) ###
   
 Show the caret even in selections. By default the caret is hidden unless the  
@@ -84,6 +174,18 @@ selection is collapsed. Use this function to show the caret even in selections.
 @param aVisibility PR_TRUE to show the caret in selections.  PR_FALSE to hide.  
 @return always NS_OK  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aVisibility</td>
+<td>PR_TRUE to show the caret in selections.  PR_FALSE to hide.  
+</td>
+</tr>
+
+</table>
 
 ### characterMove(forward, extend) ###
  CharacterMove will move the selection one character forward/backward in the document.  

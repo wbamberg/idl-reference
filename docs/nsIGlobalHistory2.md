@@ -23,6 +23,36 @@ Add a URI to global history
        referrer.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the URI of the page  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI of the page  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI of the page  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI of the page  
+</td>
+</tr>
+
+</table>
+
 ### isVisited(aURI) ###
   
 Checks to see whether the given URI is in history.  
@@ -30,6 +60,18 @@ Checks to see whether the given URI is in history.
 @param aURI the uri to the page  
 @return true if a URI has been visited  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the uri to the page  
+</td>
+</tr>
+
+</table>
 
 ### setPageTitle(aURI, aTitle) ###
   
@@ -39,3 +81,21 @@ global history will not be added.
 @param aURI    the URI for which to set to the title  
 @param aTitle  the page title  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the URI for which to set to the title  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI for which to set to the title  
+</td>
+</tr>
+
+</table>

@@ -70,6 +70,18 @@ Add a set of namespace entries to the application cache.
        An nsIArray of nsIApplicationCacheNamespace entries.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>namespaces</td>
+<td>       An nsIArray of nsIApplicationCacheNamespace entries.  
+</td>
+</tr>
+
+</table>
+
 ### getMatchingNamespace(key) ###
   
 Get the most specific namespace matching a given key.  

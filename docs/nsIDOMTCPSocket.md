@@ -25,6 +25,30 @@ the given host and port.
 @return The new TCPSocket instance.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>host</td>
+<td>The hostname of the server to connect to.  
+</td>
+</tr>
+
+<tr>
+<td>host</td>
+<td>The hostname of the server to connect to.  
+</td>
+</tr>
+
+<tr>
+<td>host</td>
+<td>The hostname of the server to connect to.  
+</td>
+</tr>
+
+</table>
+
 ### listen(localPort, options, backlog) ###
   
 Listen on a port  
@@ -43,6 +67,33 @@ Listen on a port
   
 @return The new TCPServerSocket instance.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>localPort</td>
+<td>The port of the server socket. Pass -1 to indicate no preference,  
+                 and a port will be selected automatically.  
+</td>
+</tr>
+
+<tr>
+<td>localPort</td>
+<td>The port of the server socket. Pass -1 to indicate no preference,  
+                 and a port will be selected automatically.  
+</td>
+</tr>
+
+<tr>
+<td>localPort</td>
+<td>The port of the server socket. Pass -1 to indicate no preference,  
+                 and a port will be selected automatically.  
+</td>
+</tr>
+
+</table>
 
 ### upgradeToSecure() ###
   
@@ -91,6 +142,45 @@ Write data to the socket.
         handler has been called before buffering more data by more  
         calls to send.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>data</td>
+<td>The data to write to the socket. If  
+            binaryType: "arraybuffer" was passed in the options  
+            object, then this object should be an ArrayBuffer instance.  
+            If binaryType: "string" was passed, or if no binaryType  
+            option was specified, then this object should be an  
+            ordinary JavaScript string.  
+</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>The data to write to the socket. If  
+            binaryType: "arraybuffer" was passed in the options  
+            object, then this object should be an ArrayBuffer instance.  
+            If binaryType: "string" was passed, or if no binaryType  
+            option was specified, then this object should be an  
+            ordinary JavaScript string.  
+</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>The data to write to the socket. If  
+            binaryType: "arraybuffer" was passed in the options  
+            object, then this object should be an ArrayBuffer instance.  
+            If binaryType: "string" was passed, or if no binaryType  
+            option was specified, then this object should be an  
+            ordinary JavaScript string.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

@@ -21,6 +21,18 @@ useful range of the underlying container or sequence.
 @param anElementToPut the element to place into the underlying container or sequence  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anElementToPut</td>
+<td>the element to place into the underlying container or sequence  
+</td>
+</tr>
+
+</table>
+
 ### stepForward() ###
   
 Advance this iterator to the next position in the underlying container or sequence.  

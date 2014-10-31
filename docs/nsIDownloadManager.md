@@ -48,6 +48,60 @@ Creates an nsIDownload and adds it to be managed by the download manager.
       as the returned download object, then call saveURI.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+</table>
+
 ### getDownload(aID) ###
   
 Retrieves a download managed by the download manager.  This can be one that  
@@ -58,6 +112,18 @@ database.
 @return The download with the specified ID.  
 @throws NS_ERROR_NOT_AVAILABLE if the download is not in the database.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aID</td>
+<td>The unique ID of the download.  
+</td>
+</tr>
+
+</table>
 
 ### getDownloadByGUID(aGUID, aCallback) ###
   
@@ -71,6 +137,24 @@ with the provided GUID.
 @param aCallback The callback to invoke with the result of the search.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aGUID</td>
+<td>The unique GUID of the download.  
+</td>
+</tr>
+
+<tr>
+<td>aGUID</td>
+<td>The unique GUID of the download.  
+</td>
+</tr>
+
+</table>
+
 ### cancelDownload(aID) ###
   
 Cancels the download with the specified ID if it's currently in-progress.  
@@ -80,6 +164,19 @@ download.
 @param aID The unique ID of the download.  
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aID</td>
+<td>The unique ID of the download.  
+@throws NS_ERROR_FAILURE if the download is not in-progress.  
+</td>
+</tr>
+
+</table>
 
 ### removeDownload(aID) ###
   
@@ -100,6 +197,19 @@ the guid notification should be relied upon instead.
 @throws NS_ERROR_FAILURE if the download is active.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aID</td>
+<td>The unique ID of the download.  
+@throws NS_ERROR_FAILURE if the download is active.  
+</td>
+</tr>
+
+</table>
+
 ### removeDownloadsByTimeframe(aBeginTime, aEndTime) ###
   
 Removes all inactive downloads that were started inclusively within the  
@@ -111,6 +221,24 @@ specified time frame.
        The end time to remove downloads by in microseconds.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBeginTime</td>
+<td>       The start time to remove downloads by in microseconds.  
+</td>
+</tr>
+
+<tr>
+<td>aBeginTime</td>
+<td>       The start time to remove downloads by in microseconds.  
+</td>
+</tr>
+
+</table>
+
 ### pauseDownload(aID) ###
   
 Pause the specified download.  
@@ -119,6 +247,19 @@ Pause the specified download.
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aID</td>
+<td>The unique ID of the download.  
+@throws NS_ERROR_FAILURE if the download is not in-progress.  
+</td>
+</tr>
+
+</table>
+
 ### resumeDownload(aID) ###
   
 Resume the specified download.  
@@ -126,6 +267,19 @@ Resume the specified download.
 @param aID The unique ID of the download.  
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aID</td>
+<td>The unique ID of the download.  
+@throws NS_ERROR_FAILURE if the download is not in-progress.  
+</td>
+</tr>
+
+</table>
 
 ### retryDownload(aID) ###
   
@@ -137,6 +291,22 @@ Retries a failed download.
           nsIDownloadManager::DOWNLOAD_CANCELED  
           nsIDownloadManager::DOWNLOAD_FAILED  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aID</td>
+<td>The unique ID of the download.  
+@throws NS_ERROR_NOT_AVAILALE if the download id is not known.  
+@throws NS_ERROR_FAILURE if the download is not in the following states:  
+          nsIDownloadManager::DOWNLOAD_CANCELED  
+          nsIDownloadManager::DOWNLOAD_FAILED  
+</td>
+</tr>
+
+</table>
 
 ### cleanUp() ###
    

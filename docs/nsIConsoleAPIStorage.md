@@ -19,6 +19,20 @@ Get the events array by inner window ID or all events from all windows.
          window.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>string</td>
+<td>[aId]  
+       Optional, the inner window ID for which you want to get the array of  
+       cached events.  
+</td>
+</tr>
+
+</table>
+
 ### recordEvent(aId, aEvent) ###
   
 Record an event associated with the given window ID.  
@@ -30,6 +44,28 @@ Record an event associated with the given window ID.
        A JavaScript object you want to store.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>string</td>
+<td>aId  
+       The ID of the inner window for which the event occurred or "jsm" for  
+       messages logged from JavaScript modules..  
+</td>
+</tr>
+
+<tr>
+<td>string</td>
+<td>aId  
+       The ID of the inner window for which the event occurred or "jsm" for  
+       messages logged from JavaScript modules..  
+</td>
+</tr>
+
+</table>
+
 ### clearEvents(aId) ###
   
 Clear storage data for the given window.  
@@ -39,3 +75,18 @@ Clear storage data for the given window.
        messages. If this is not specified all of the cached messages are  
        cleared, from all window objects.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>string</td>
+<td>[aId]  
+       Optional, the inner window ID for which you want to clear the  
+       messages. If this is not specified all of the cached messages are  
+       cleared, from all window objects.  
+</td>
+</tr>
+
+</table>

@@ -48,6 +48,30 @@ Puts up an alert dialog with an OK button.
        Text to appear in the body of the dialog.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+</table>
+
 ### alertCheck(aParent, aDialogTitle, aText, aCheckMsg, aCheckState) ###
   
 Puts up an alert dialog with an OK button and a labeled checkbox.  
@@ -65,6 +89,42 @@ Puts up an alert dialog with an OK button and a labeled checkbox.
        is called and the final checked state after this method returns.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+</table>
+
 ### confirm(aParent, aDialogTitle, aText) ###
   
 Puts up a dialog with OK and Cancel buttons.  
@@ -78,6 +138,30 @@ Puts up a dialog with OK and Cancel buttons.
   
 @return true for OK, false for Cancel  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+</table>
 
 ### confirmCheck(aParent, aDialogTitle, aText, aCheckMsg, aCheckState) ###
   
@@ -97,6 +181,42 @@ Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
   
 @return true for OK, false for Cancel  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+</table>
 
 ### confirmEx(aParent, aDialogTitle, aText, aButtonFlags, aButton0Title, aButton1Title, aButton2Title, aCheckMsg, aCheckState) ###
   
@@ -143,6 +263,66 @@ In general, aButtonFlags is constructed per the following example:
 where "AAA" and "BBB" correspond to one of the button titles.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+</table>
+
 ### prompt(aParent, aDialogTitle, aText, aValue, aCheckMsg, aCheckState) ###
   
 Puts up a dialog with an edit field and an optional, labeled checkbox.  
@@ -166,6 +346,48 @@ Puts up a dialog with an edit field and an optional, labeled checkbox.
   
 @return true for OK, false for Cancel.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+</table>
 
 ### promptUsernameAndPassword(aParent, aDialogTitle, aText, aUsername, aPassword, aCheckMsg, aCheckState) ###
   
@@ -197,6 +419,54 @@ labeled checkbox.
 @return true for OK, false for Cancel.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+</table>
+
 ### promptPassword(aParent, aDialogTitle, aText, aPassword, aCheckMsg, aCheckState) ###
   
 Puts up a dialog with a password field and an optional, labeled checkbox.  
@@ -221,6 +491,48 @@ Puts up a dialog with a password field and an optional, labeled checkbox.
 @return true for OK, false for Cancel.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+</table>
+
 ### select(aParent, aDialogTitle, aText, aCount, aSelectList, aOutSelection) ###
   
 Puts up a dialog box which has a list box of strings from which the user  
@@ -242,6 +554,48 @@ may make a single selection.
   
 @return true for OK, false for Cancel.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>       The parent window or null.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

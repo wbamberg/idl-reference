@@ -30,6 +30,18 @@ start/endDTD and start/endEntity events (if used).
 @param chars The characters in the comment.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>chars</td>
+<td>The characters in the comment.  
+</td>
+</tr>
+
+</table>
+
 ### startDTD(name, publicId, systemId) ###
   
 Report the start of DTD declarations, if any.  
@@ -60,6 +72,30 @@ startElement event.
        (Note that this is not resolved against the document  
        base URI.)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The document type name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The document type name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The document type name.  
+</td>
+</tr>
+
+</table>
 
 ### endDTD() ###
   
@@ -107,9 +143,35 @@ All start/endEntity events must be properly nested.
             external DTD subset, it will be "[dtd]".  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The name of the entity.  If it is a parameter  
+            entity, the name will begin with '%', and if it is the  
+            external DTD subset, it will be "[dtd]".  
+</td>
+</tr>
+
+</table>
+
 ### endEntity(name) ###
   
 Report the end of an entity.  
   
 @param name The name of the entity that is ending.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The name of the entity that is ending.  
+</td>
+</tr>
+
+</table>

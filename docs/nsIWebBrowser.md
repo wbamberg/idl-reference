@@ -44,6 +44,24 @@ the IID is that of the interface.
         specified by the IID.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>The listener to be added.  
+</td>
+</tr>
+
+<tr>
+<td>aListener</td>
+<td>The listener to be added.  
+</td>
+</tr>
+
+</table>
+
 ### removeWebBrowserListener(aListener, aIID) ###
   
 Removes a previously registered listener.  
@@ -59,6 +77,24 @@ Removes a previously registered listener.
 @see addWebBrowserListener  
 @see nsIWeakReference  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>The listener to be removed.  
+</td>
+</tr>
+
+<tr>
+<td>aListener</td>
+<td>The listener to be removed.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

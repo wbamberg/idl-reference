@@ -18,6 +18,24 @@ Parse a feed from an nsIInputStream.
 @param uri The base URI.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>stream</td>
+<td>The input stream.  
+</td>
+</tr>
+
+<tr>
+<td>stream</td>
+<td>The input stream.  
+</td>
+</tr>
+
+</table>
+
 ### parseFromString(str, uri) ###
   
 Parse a feed from a string.  
@@ -25,6 +43,24 @@ Parse a feed from a string.
 @param str The string to parse.  
 @param uri The base URI.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>str</td>
+<td>The string to parse.  
+</td>
+</tr>
+
+<tr>
+<td>str</td>
+<td>The string to parse.  
+</td>
+</tr>
+
+</table>
 
 ### parseAsync(requestObserver, uri) ###
   
@@ -37,6 +73,26 @@ parse.
                        argument can be null.  
 @param uri The base URI.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>requestObserver</td>
+<td>The observer to notify on start/stop. This  
+                       argument can be null.  
+</td>
+</tr>
+
+<tr>
+<td>requestObserver</td>
+<td>The observer to notify on start/stop. This  
+                       argument can be null.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

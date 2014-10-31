@@ -26,3 +26,30 @@ below).
        want to handle this content. A different way for handling this  
        content should be tried.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindowContext</td>
+<td>       Window context, used to get things like the current nsIDOMWindow  
+       for this request. May be null.  
+</td>
+</tr>
+
+<tr>
+<td>aWindowContext</td>
+<td>       Window context, used to get things like the current nsIDOMWindow  
+       for this request. May be null.  
+</td>
+</tr>
+
+<tr>
+<td>aWindowContext</td>
+<td>       Window context, used to get things like the current nsIDOMWindow  
+       for this request. May be null.  
+</td>
+</tr>
+
+</table>

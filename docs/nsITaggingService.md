@@ -20,6 +20,24 @@ ignored.
        itemId of a tag container.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       the URL to tag.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the URL to tag.  
+</td>
+</tr>
+
+</table>
+
 ### untagURI(aURI, aTags) ###
   
 Removes tags from a URL. Tags from aTags which are not set for the  
@@ -33,6 +51,24 @@ given URL are ignored.
        (non-empty string) or a concrete itemId of a tag container.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       the URL to un-tag.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the URL to un-tag.  
+</td>
+</tr>
+
+</table>
+
 ### getURIsForTag(aTag) ###
   
 Retrieves all URLs tagged with the given tag.  
@@ -42,6 +78,18 @@ Retrieves all URLs tagged with the given tag.
 @returns Array of uris tagged with aTag.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTag</td>
+<td>       tag name  
+</td>
+</tr>
+
+</table>
+
 ### getTagsForURI(aURI, length, aTags) ###
   
 Retrieves all tags set for the given URL.  
@@ -50,6 +98,18 @@ Retrieves all tags set for the given URL.
        a URL.  
 @returns array of tags (sorted by name).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       a URL.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

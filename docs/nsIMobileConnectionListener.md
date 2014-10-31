@@ -26,6 +26,24 @@ Notify when ussd is received.
        Indicates whether the session is ended.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>message</td>
+<td>       The ussd request in string format.  
+</td>
+</tr>
+
+<tr>
+<td>message</td>
+<td>       The ussd request in string format.  
+</td>
+</tr>
+
+</table>
+
 ### notifyDataError(message) ###
   
 Notify when data call is failed to establish.  
@@ -33,6 +51,18 @@ Notify when data call is failed to establish.
 @param message  
        Error message from RIL.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>message</td>
+<td>       Error message from RIL.  
+</td>
+</tr>
+
+</table>
 
 ### notifyCFStateChanged(action, reason, number, timeSeconds, serviceClass) ###
   
@@ -50,6 +80,42 @@ Notify when call forwarding state is changed.
        One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>action</td>
+<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+</td>
+</tr>
+
+<tr>
+<td>action</td>
+<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+</td>
+</tr>
+
+<tr>
+<td>action</td>
+<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+</td>
+</tr>
+
+<tr>
+<td>action</td>
+<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+</td>
+</tr>
+
+<tr>
+<td>action</td>
+<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+</td>
+</tr>
+
+</table>
+
 ### notifyEmergencyCbModeChanged(active, timeoutMs) ###
   
 Notify when emergency callback mode is changed.  
@@ -59,6 +125,24 @@ Notify when emergency callback mode is changed.
 @param timeoutMs  
        The timeout in millisecond for emergency callback mode.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>active</td>
+<td>       Indicates whether the emergency callback mode is activated.  
+</td>
+</tr>
+
+<tr>
+<td>active</td>
+<td>       Indicates whether the emergency callback mode is activated.  
+</td>
+</tr>
+
+</table>
 
 ### notifyOtaStatusChanged(status) ###
   
@@ -70,6 +154,21 @@ Notify when ota status is changed.
        'imsi_downloaded', 'prl_downloaded', 'committed', 'otapa_started',  
        'otapa_stopped', 'otapa_aborted'.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>status</td>
+<td>       Ota status. Possible values: 'spl_unlocked', 'spc_retries_exceeded',  
+       'a_key_exchanged', 'ssd_updated', 'nam_downloaded', 'mdn_downloaded',  
+       'imsi_downloaded', 'prl_downloaded', 'committed', 'otapa_started',  
+       'otapa_stopped', 'otapa_aborted'.  
+</td>
+</tr>
+
+</table>
 
 ### notifyIccChanged() ###
   
@@ -88,6 +187,18 @@ Notify when clir mode is changed.
 @param mode  
        One of the nsIMobileConnection.CLIR_* values.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>mode</td>
+<td>       One of the nsIMobileConnection.CLIR_* values.  
+</td>
+</tr>
+
+</table>
 
 ### notifyLastKnownNetworkChanged() ###
   

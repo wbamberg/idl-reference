@@ -15,6 +15,18 @@ Obtains the result of a given column specified by aIndex.
 @returns the result of the specified column.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>       Zero-based index of the result to get from the tuple.  
+</td>
+</tr>
+
+</table>
+
 ### getResultByName(aName) ###
   
 Obtains the result of a given column specified by aName.  
@@ -26,3 +38,15 @@ Obtains the result of a given column specified by aName.
       column.  If there is no AS clause then the name of the column is  
       unspecified and may change from one release to the next.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>       Name of the result to get from the tuple.  
+</td>
+</tr>
+
+</table>

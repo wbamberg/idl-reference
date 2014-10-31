@@ -71,6 +71,61 @@ up, content showing up doubled, etc.  If you need to do any of the things
 above, do them off timeout or event.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+</table>
+
 ### shouldProcess(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeType, aExtra, aRequestPrincipal) ###
   
 Should the resource be processed?  
@@ -107,6 +162,54 @@ has been loaded.
 involved is in an inconsistent state.  See the note on shouldLoad to see  
 what this means for implementors of this method.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>the type of content being tested. This will be one  
+                         one of the TYPE_* constants.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

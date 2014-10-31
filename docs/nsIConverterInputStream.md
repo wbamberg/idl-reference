@@ -28,6 +28,36 @@ Initialize this stream.
        byte sequences are encountered in the stream.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>       The underlying stream to read from.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The underlying stream to read from.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The underlying stream to read from.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The underlying stream to read from.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### DEFAULT_REPLACEMENT_CHARACTER ###

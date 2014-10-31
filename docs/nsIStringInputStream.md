@@ -28,6 +28,24 @@ the data string will be seen as a terminator when the data is converted
 from a JS string to a C++ character array.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>data</td>
+<td>- stream data  
+</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>- stream data  
+</td>
+</tr>
+
+</table>
+
 ### adoptData(data, dataLen) ###
   
 NOTE: the following methods are designed to give C++ code added control  
@@ -42,6 +60,24 @@ the input stream is destroyed.
 @param dataLen   - stream data length (-1 if length should be computed)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>data</td>
+<td>- stream data  
+</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>- stream data  
+</td>
+</tr>
+
+</table>
+
 ### shareData(data, dataLen) ###
   
 ShareData - assign data to the input stream.  the input stream references  
@@ -51,3 +87,21 @@ data buffer must outlive the input stream.
 @param data      - stream data  
 @param dataLen   - stream data length (-1 if length should be computed)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>data</td>
+<td>- stream data  
+</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>- stream data  
+</td>
+</tr>
+
+</table>

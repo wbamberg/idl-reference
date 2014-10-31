@@ -29,3 +29,27 @@ Classify a Principal using its URI.
         <code>true</code> if classification will be performed.  The  
         callback will be called.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrincipal</td>
+<td>       The principal that should be checked by the URI classifier.  
+</td>
+</tr>
+
+<tr>
+<td>aPrincipal</td>
+<td>       The principal that should be checked by the URI classifier.  
+</td>
+</tr>
+
+<tr>
+<td>aPrincipal</td>
+<td>       The principal that should be checked by the URI classifier.  
+</td>
+</tr>
+
+</table>

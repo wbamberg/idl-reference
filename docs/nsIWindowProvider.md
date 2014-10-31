@@ -78,3 +78,89 @@ to have the caller create a brand-new window.
 @see nsIWindowWatcher for more information on aFeatures.  
 @see nsIWebBrowserChrome for more information on aChromeFlags.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>Must not be null.  This is the window that the caller wants  
+       to use as the parent for the new window.  Generally,  
+       nsIWindowProvider implementors can expect to be somehow related to  
+       aParent; the relationship may depend on the nsIWindowProvider  
+       implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>Must not be null.  This is the window that the caller wants  
+       to use as the parent for the new window.  Generally,  
+       nsIWindowProvider implementors can expect to be somehow related to  
+       aParent; the relationship may depend on the nsIWindowProvider  
+       implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>Must not be null.  This is the window that the caller wants  
+       to use as the parent for the new window.  Generally,  
+       nsIWindowProvider implementors can expect to be somehow related to  
+       aParent; the relationship may depend on the nsIWindowProvider  
+       implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>Must not be null.  This is the window that the caller wants  
+       to use as the parent for the new window.  Generally,  
+       nsIWindowProvider implementors can expect to be somehow related to  
+       aParent; the relationship may depend on the nsIWindowProvider  
+       implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>Must not be null.  This is the window that the caller wants  
+       to use as the parent for the new window.  Generally,  
+       nsIWindowProvider implementors can expect to be somehow related to  
+       aParent; the relationship may depend on the nsIWindowProvider  
+       implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>Must not be null.  This is the window that the caller wants  
+       to use as the parent for the new window.  Generally,  
+       nsIWindowProvider implementors can expect to be somehow related to  
+       aParent; the relationship may depend on the nsIWindowProvider  
+       implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>Must not be null.  This is the window that the caller wants  
+       to use as the parent for the new window.  Generally,  
+       nsIWindowProvider implementors can expect to be somehow related to  
+       aParent; the relationship may depend on the nsIWindowProvider  
+       implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>Must not be null.  This is the window that the caller wants  
+       to use as the parent for the new window.  Generally,  
+       nsIWindowProvider implementors can expect to be somehow related to  
+       aParent; the relationship may depend on the nsIWindowProvider  
+       implementation.  
+</td>
+</tr>
+
+</table>

@@ -34,6 +34,24 @@ extension, though the invoked file: handler is free to do so.
 call. Other exceptions may be thrown.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to launch this application with  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to launch this application with  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### type ###

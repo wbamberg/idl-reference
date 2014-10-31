@@ -22,6 +22,33 @@ The update check was completed.
          The size of the |updates| array.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>request  
+         The nsIXMLHttpRequest handling the update check.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>request  
+         The nsIXMLHttpRequest handling the update check.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>request  
+         The nsIXMLHttpRequest handling the update check.  
+</td>
+</tr>
+
+</table>
+
 ### onError(request, update) ###
   
 An error occurred while loading the remote update service file.  
@@ -31,3 +58,23 @@ An error occurred while loading the remote update service file.
          A nsIUpdate object that contains details about the  
          error in its |statusText| property.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>request  
+         The nsIXMLHttpRequest handling the update check.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>request  
+         The nsIXMLHttpRequest handling the update check.  
+</td>
+</tr>
+
+</table>

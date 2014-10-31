@@ -31,6 +31,19 @@ Deletes privacy sensitive data according to user preferences
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParentWindow</td>
+<td>an optionally null window which is the parent of the   
+       sanitization dialog  
+</td>
+</tr>
+
+</table>
+
 ### ensurePlacesDefaultQueriesInitialized() ###
   
 Add Smart Bookmarks special queries to bookmarks menu and toolbar folder.  

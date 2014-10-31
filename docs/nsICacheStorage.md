@@ -36,6 +36,36 @@ Result is fetched asynchronously via the callback.
    IMPORTANT: The callback may be called sooner the method returns.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>   The URI to search in cache or to open for writting.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>   The URI to search in cache or to open for writting.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>   The URI to search in cache or to open for writting.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>   The URI to search in cache or to open for writting.  
+</td>
+</tr>
+
+</table>
+
 ### openTruncate(aURI, aIdExtension) ###
   
 Immediately opens a new and empty cache entry in the storage, any existing  
@@ -49,6 +79,24 @@ the new entry via a callback.
 @param aURI @see asyncOpenURI  
 @param aIdExtension @see asyncOpenURI  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>@see asyncOpenURI  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>@see asyncOpenURI  
+</td>
+</tr>
+
+</table>
 
 ### exists(aURI, aIdExtension) ###
   

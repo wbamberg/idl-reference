@@ -31,6 +31,26 @@ it must be paired by a call to closeStream.
        openStream was called twice without an intermediate closeStream.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBaseURI</td>
+<td>       The base URI of the data. Must not be null. Relative  
+       URIs will be resolved relative to this URI.  
+</td>
+</tr>
+
+<tr>
+<td>aBaseURI</td>
+<td>       The base URI of the data. Must not be null. Relative  
+       URIs will be resolved relative to this URI.  
+</td>
+</tr>
+
+</table>
+
 ### appendToStream(aData, aLen) ###
   
 Append data to this stream.  
@@ -39,6 +59,24 @@ Append data to this stream.
   
 @note To append more than 4 GB of data, call this method multiple times.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aData</td>
+<td>The data to append  
+</td>
+</tr>
+
+<tr>
+<td>aData</td>
+<td>The data to append  
+</td>
+</tr>
+
+</table>
 
 ### closeStream() ###
   

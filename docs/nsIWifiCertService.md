@@ -24,6 +24,36 @@ Import a certificate file.
        User assigned nickname for imported certificate.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>id</td>
+<td>       Request ID.  
+</td>
+</tr>
+
+<tr>
+<td>id</td>
+<td>       Request ID.  
+</td>
+</tr>
+
+<tr>
+<td>id</td>
+<td>       Request ID.  
+</td>
+</tr>
+
+<tr>
+<td>id</td>
+<td>       Request ID.  
+</td>
+</tr>
+
+</table>
+
 ### deleteCert(id, certNickname) ###
   
 Delete an imported certificate file  
@@ -33,6 +63,24 @@ Delete an imported certificate file
 @param certNickname  
        Certificate nickname to delete.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>id</td>
+<td>       Request ID.  
+</td>
+</tr>
+
+<tr>
+<td>id</td>
+<td>       Request ID.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

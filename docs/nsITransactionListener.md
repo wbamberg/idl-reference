@@ -23,6 +23,24 @@ return true if they want to interrupt normal control flow, without
 throwing an error.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager doing the transaction.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager doing the transaction.  
+</td>
+</tr>
+
+</table>
+
 ### didDo(aManager, aTransaction, aDoResult) ###
   
 Called after a transaction manager calls the doTransaction() method of  
@@ -32,6 +50,30 @@ a transaction.
 @param aDoResult the nsresult returned after executing  
 the transaction.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager that did the transaction.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager that did the transaction.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager that did the transaction.  
+</td>
+</tr>
+
+</table>
 
 ### willUndo(aManager, aTransaction) ###
   
@@ -46,6 +88,24 @@ throwing an error. Note that listeners can also interrupt normal
 control flow by throwing an nsresult that indicates an error.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager undoing the transaction.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager undoing the transaction.  
+</td>
+</tr>
+
+</table>
+
 ### didUndo(aManager, aTransaction, aUndoResult) ###
   
 Called after a transaction manager calls the Undo() method of  
@@ -54,6 +114,30 @@ a transaction.
 @param aTransaction the transaction being undone.  
 @param aUndoResult the nsresult returned after undoing the transaction.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager undoing the transaction.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager undoing the transaction.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager undoing the transaction.  
+</td>
+</tr>
+
+</table>
 
 ### willRedo(aManager, aTransaction) ###
   
@@ -68,6 +152,24 @@ throwing an error. Note that listeners can also interrupt normal
 control flow by throwing an nsresult that indicates an error.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager redoing the transaction.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager redoing the transaction.  
+</td>
+</tr>
+
+</table>
+
 ### didRedo(aManager, aTransaction, aRedoResult) ###
   
 Called after a transaction manager calls the Redo() method of  
@@ -76,6 +178,30 @@ a transaction.
 @param aTransaction the transaction being redone.  
 @param aRedoResult the nsresult returned after redoing the transaction.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager redoing the transaction.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager redoing the transaction.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager redoing the transaction.  
+</td>
+</tr>
+
+</table>
 
 ### willBeginBatch(aManager) ###
   
@@ -88,12 +214,47 @@ throwing an error. Note that listeners can also interrupt normal
 control flow by throwing an nsresult that indicates an error.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager beginning a batch.  
+@result boolean value returned by listener which indicates  
+its desire to interrupt normal control flow. Listeners should  
+return true if they want to interrupt normal control flow, without  
+throwing an error. Note that listeners can also interrupt normal  
+control flow by throwing an nsresult that indicates an error.  
+</td>
+</tr>
+
+</table>
+
 ### didBeginBatch(aManager, aResult) ###
   
 Called after a transaction manager begins a batch.  
 @param aManager the transaction manager that began a batch.  
 @param aResult the nsresult returned after beginning a batch.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager that began a batch.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager that began a batch.  
+</td>
+</tr>
+
+</table>
 
 ### willEndBatch(aManager) ###
   
@@ -106,12 +267,47 @@ throwing an error. Note that listeners can also interrupt normal
 control flow by throwing an nsresult that indicates an error.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+@result boolean value returned by listener which indicates  
+its desire to interrupt normal control flow. Listeners should  
+return true if they want to interrupt normal control flow, without  
+throwing an error. Note that listeners can also interrupt normal  
+control flow by throwing an nsresult that indicates an error.  
+</td>
+</tr>
+
+</table>
+
 ### didEndBatch(aManager, aResult) ###
   
 Called after a transaction manager ends a batch.  
 @param aManager the transaction manager ending a batch.  
 @param aResult the nsresult returned after ending a batch.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+</table>
 
 ### willMerge(aManager, aTopTransaction, aTransactionToMerge) ###
   
@@ -128,6 +324,30 @@ throwing an error. Note that listeners can also interrupt normal
 control flow by throwing an nsresult that indicates an error.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+</table>
+
 ### didMerge(aManager, aTopTransaction, aTransactionToMerge, aDidMerge, aMergeResult) ###
   
 Called after a transaction manager tries to merge  
@@ -141,3 +361,45 @@ transaction at the top of the undo stack.
 @param aInterrupt listeners should set this to PR_TRUE if they  
 want to interrupt normal control flow, without throwing an error.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+<tr>
+<td>aManager</td>
+<td>the transaction manager ending a batch.  
+</td>
+</tr>
+
+</table>

@@ -58,6 +58,18 @@ Read an opaque byte array from the stream.
 @throws NS_ERROR_FAILURE if it can't read aLength bytes  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLength</td>
+<td>the number of bytes that must be read.  
+</td>
+</tr>
+
+</table>
+
 ### readByteArray(aLength, aBytes) ###
   
 Read an opaque byte array from the stream, storing the results  
@@ -67,6 +79,18 @@ as an array of PRUint8s.
   
 @throws NS_ERROR_FAILURE if it can't read aLength bytes  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLength</td>
+<td>the number of bytes that must be read.  
+</td>
+</tr>
+
+</table>
 
 ### readArrayBuffer(aLength, aArrayBuffer) ###
   
@@ -79,3 +103,21 @@ Note: passing view.buffer, where view is an ArrayBufferView of an
   
 @return The number of bytes actually read into aArrayBuffer.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLength</td>
+<td>the number of bytes that must be read  
+</td>
+</tr>
+
+<tr>
+<td>aLength</td>
+<td>the number of bytes that must be read  
+</td>
+</tr>
+
+</table>

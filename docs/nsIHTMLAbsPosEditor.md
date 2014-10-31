@@ -14,11 +14,36 @@ positions it.
                      false to put it back in the normal flow  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEnabled</td>
+<td>[IN] true to absolutely position the selection,  
+                     false to put it back in the normal flow  
+</td>
+</tr>
+
+</table>
+
 ### relativeChangeZIndex(aChange) ###
   
 adds aChange to the z-index of the currently positioned element.  
 @param aChange [IN] relative change to apply to current z-index  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChange</td>
+<td>[IN] relative change to apply to current z-index  
+</td>
+</tr>
+
+</table>
 
 ### absolutelyPositionElement(aElement, aEnabled) ###
   
@@ -29,6 +54,24 @@ positions it, and puts it back in the normal flow.
                      false to put it back in the normal flow  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+</table>
+
 ### setElementPosition(aElement, aX, aY) ###
   
 sets the position of an element; warning it does NOT check if the  
@@ -38,6 +81,30 @@ element is already positioned or not and that's on purpose.
 @param aY       [IN] the y position in pixels.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+</table>
+
 ### getElementZIndex(aElement) ###
   
 returns the absolute z-index of a positioned element. Never returns 'auto'.  
@@ -45,12 +112,42 @@ returns the absolute z-index of a positioned element. Never returns 'auto'.
 @param aElement [IN] the element.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element.  
+</td>
+</tr>
+
+</table>
+
 ### setElementZIndex(aElement, aZorder) ###
   
 sets the z-index of an element.  
 @param aElement [IN] the element  
 @param aZorder  [IN] the z-index  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+</table>
 
 ### relativeChangeElementZIndex(aElement, aChange) ###
   
@@ -61,6 +158,24 @@ adds aChange to the z-index of an arbitrary element.
                      the element  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+</table>
+
 ### showGrabberOnElement(aElement) ###
   
 shows a grabber attached to an arbitrary element. The grabber is an image  
@@ -69,6 +184,18 @@ and dropping it allows to change the element's absolute position in the
 document. See chrome://editor/content/images/grabber.gif  
 @param aElement [IN] the element  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+</table>
 
 ### hideGrabber() ###
   

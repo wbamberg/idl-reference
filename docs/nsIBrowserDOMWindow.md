@@ -27,6 +27,44 @@ Load a URI
 @return the window into which the URI was opened.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the URI to open. null is allowed.  If null is passed in, no  
+            load will be done, though the window the load would have  
+            happened in will be returned.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to open. null is allowed.  If null is passed in, no  
+            load will be done, though the window the load would have  
+            happened in will be returned.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to open. null is allowed.  If null is passed in, no  
+            load will be done, though the window the load would have  
+            happened in will be returned.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to open. null is allowed.  If null is passed in, no  
+            load will be done, though the window the load would have  
+            happened in will be returned.  
+</td>
+</tr>
+
+</table>
+
 ### openURIInFrame(aURI, aOpener, aWhere, aContext) ###
   
 As above, but return the nsIFrameLoaderOwner for the new window.  
@@ -40,6 +78,18 @@ As above, but return the nsIFrameLoaderOwner for the new window.
 @return whether the window is the main content window for any  
         currently open tab in this toplevel browser window.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aWindow the window to test.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

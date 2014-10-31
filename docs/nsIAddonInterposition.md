@@ -33,3 +33,33 @@ Returns a replacement property descriptor for a browser object.
 @param prop The name of the property being accessed.  
 @return A property descriptor or null.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>addonId</td>
+<td>The ID of the add-on accessing the property.  
+</td>
+</tr>
+
+<tr>
+<td>addonId</td>
+<td>The ID of the add-on accessing the property.  
+</td>
+</tr>
+
+<tr>
+<td>addonId</td>
+<td>The ID of the add-on accessing the property.  
+</td>
+</tr>
+
+<tr>
+<td>addonId</td>
+<td>The ID of the add-on accessing the property.  
+</td>
+</tr>
+
+</table>

@@ -43,6 +43,30 @@ for the aContentType parameter (see below).
        determined by calling the stream's |available| method.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>       The stream to be uploaded by this channel.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The stream to be uploaded by this channel.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The stream to be uploaded by this channel.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### uploadStream ###

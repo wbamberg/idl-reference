@@ -28,6 +28,48 @@ The returned object has the following functions:
   clear() - Zeros out the histogram's buckets and sum  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>Unique histogram name  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>Unique histogram name  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>Unique histogram name  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>Unique histogram name  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>Unique histogram name  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>Unique histogram name  
+</td>
+</tr>
+
+</table>
+
 ### histogramFrom(name, existing_name) ###
   
 Create a histogram using the current state of an existing histogram.  The  
@@ -38,12 +80,42 @@ existing histogram must be registered in TelemetryHistograms.h.
 The returned object has the same functions as a histogram returned from newHistogram.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>Unique histogram name  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>Unique histogram name  
+</td>
+</tr>
+
+</table>
+
 ### getHistogramById(id) ###
   
 Same as newHistogram above, but for histograms registered in TelemetryHistograms.h.  
   
 @param id - unique identifier from TelemetryHistograms.h  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>id</td>
+<td>- unique identifier from TelemetryHistograms.h  
+</td>
+</tr>
+
+</table>
 
 ### registerAddonHistogram(addon_id, name, min, max, bucket_count, histogram_type) ###
  Addon telemetry hooks */  
@@ -60,6 +132,48 @@ histogram name has been registered previously.
        HISTOGRAM_BOOLEAN or HISTOGRAM_COUNT  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>addon_id</td>
+<td>- Unique ID of the addon  
+</td>
+</tr>
+
+<tr>
+<td>addon_id</td>
+<td>- Unique ID of the addon  
+</td>
+</tr>
+
+<tr>
+<td>addon_id</td>
+<td>- Unique ID of the addon  
+</td>
+</tr>
+
+<tr>
+<td>addon_id</td>
+<td>- Unique ID of the addon  
+</td>
+</tr>
+
+<tr>
+<td>addon_id</td>
+<td>- Unique ID of the addon  
+</td>
+</tr>
+
+<tr>
+<td>addon_id</td>
+<td>- Unique ID of the addon  
+</td>
+</tr>
+
+</table>
+
 ### getAddonHistogram(addon_id, name) ###
   
 Return a histogram previously registered via  
@@ -73,12 +187,42 @@ The returned object has the same functions as a histogram returned
 from newHistogram.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>addon_id</td>
+<td>- Unique ID of the addon  
+</td>
+</tr>
+
+<tr>
+<td>addon_id</td>
+<td>- Unique ID of the addon  
+</td>
+</tr>
+
+</table>
+
 ### unregisterAddonHistograms(addon_id) ###
   
 Delete all histograms associated with the given addon id.  
   
 @param addon_id - Unique ID of the addon  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>addon_id</td>
+<td>- Unique ID of the addon  
+</td>
+</tr>
+
+</table>
 
 ### asyncFetchTelemetryData(aCallback) ###
   

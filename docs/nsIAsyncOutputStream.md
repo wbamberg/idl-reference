@@ -38,6 +38,19 @@ greatly simplifies working with pipes in some cases.
        it has been closed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStatus</td>
+<td>       The error that will be reported if this stream is accessed after  
+       it has been closed.  
+</td>
+</tr>
+
+</table>
+
 ### asyncWait(aCallback, aFlags, aRequestedCount, aEventTarget) ###
   
 Asynchronously wait for the stream to be writable or closed.  The  
@@ -70,6 +83,40 @@ event will be dispatched when the stream becomes writable or closed.
        specify that the notification be delivered to a specific event  
        target.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCallback</td>
+<td>       This object is notified when the stream becomes ready.  This  
+       parameter may be null to clear an existing callback.  
+</td>
+</tr>
+
+<tr>
+<td>aCallback</td>
+<td>       This object is notified when the stream becomes ready.  This  
+       parameter may be null to clear an existing callback.  
+</td>
+</tr>
+
+<tr>
+<td>aCallback</td>
+<td>       This object is notified when the stream becomes ready.  This  
+       parameter may be null to clear an existing callback.  
+</td>
+</tr>
+
+<tr>
+<td>aCallback</td>
+<td>       This object is notified when the stream becomes ready.  This  
+       parameter may be null to clear an existing callback.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

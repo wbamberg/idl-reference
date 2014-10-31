@@ -37,6 +37,26 @@ NOTICE:  In the 2.0 timeframe this API will change such that the
          - Ben Goodger (8/23/2005)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>url  
+         The URL of the overlay to load and merge  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>url  
+         The URL of the overlay to load and merge  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### popupNode ###

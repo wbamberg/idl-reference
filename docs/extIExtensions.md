@@ -18,6 +18,19 @@ Determines if an extension exists with the given id.
          false otherwise.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aId  
+         The id of an extension  
+</td>
+</tr>
+
+</table>
+
 ### get(aId) ###
   
 Gets a extIExtension object for an extension.  
@@ -26,6 +39,19 @@ Gets a extIExtension object for an extension.
 @returns An extension object or null if no extension exists  
          with the given id.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aId  
+         The id of an extension  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

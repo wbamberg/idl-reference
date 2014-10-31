@@ -15,6 +15,24 @@ Dispatched whenever the state of the download changes.
 @see nsIDownloadManager for download states.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aState</td>
+<td>The previous download sate.  
+</td>
+</tr>
+
+<tr>
+<td>aState</td>
+<td>The previous download sate.  
+</td>
+</tr>
+
+</table>
+
 ### onStateChange(aWebProgress, aRequest, aStateFlags, aStatus, aDownload) ###
 
 ### onProgressChange(aWebProgress, aRequest, aCurSelfProgress, aMaxSelfProgress, aCurTotalProgress, aMaxTotalProgress, aDownload) ###

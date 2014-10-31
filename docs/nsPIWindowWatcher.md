@@ -16,10 +16,40 @@ method getChromeForWindow. If null, any extant mapping
 will be cleared.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>the window to add  
+</td>
+</tr>
+
+<tr>
+<td>aWindow</td>
+<td>the window to add  
+</td>
+</tr>
+
+</table>
+
 ### removeWindow(aWindow) ###
  A window has been closed. Remove it from our list.  
 @param aWindow the window to remove  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>the window to remove  
+</td>
+</tr>
+
+</table>
 
 ### openWindow2(aParent, aUrl, aName, aFeatures, aCalledFromScript, aDialog, aNavigate, aOpeningTab, aArgs) ###
  Like the public interface's open(), but can handle openDialog-style  
@@ -53,6 +83,84 @@ window to the default charset of the document in the calling window
 aParent).  This is not guaranteed, however.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+</table>
+
 ### findItemWithName(aName, aRequestor, aOriginalRequestor) ###
   
 Find a named docshell tree item amongst all windows registered  
@@ -73,3 +181,27 @@ for example.
 @see findItemWithName methods on nsIDocShellTreeItem and  
      nsIDocShellTreeOwner  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>the name of the window.  Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>the name of the window.  Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>the name of the window.  Must not be null.  
+</td>
+</tr>
+
+</table>

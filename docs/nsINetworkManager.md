@@ -22,6 +22,18 @@ Throws if there's already an interface registered with the same network id.
        Network interface to register.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>network</td>
+<td>       Network interface to register.  
+</td>
+</tr>
+
+</table>
+
 ### updateNetworkInterface(network) ###
   
 Update the routes and DNSes according the state of the given network.  
@@ -35,6 +47,18 @@ registered.
 @param network  
        Network interface to update.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>network</td>
+<td>       Network interface to update.  
+</td>
+</tr>
+
+</table>
 
 ### unregisterNetworkInterface(network) ###
   
@@ -50,6 +74,18 @@ registered.
        Network interface to unregister.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>network</td>
+<td>       Network interface to unregister.  
+</td>
+</tr>
+
+</table>
+
 ### overrideActive(network) ###
   
 Override the default behaviour for preferredNetworkType and route  
@@ -62,6 +98,19 @@ the 'network-active-changed' observer notification.
        Network to route all network traffic to. If this is null,  
        a previous override is canceled.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>network</td>
+<td>       Network to route all network traffic to. If this is null,  
+       a previous override is canceled.  
+</td>
+</tr>
+
+</table>
 
 ### setWifiTethering(enabled, networkInterface, config, callback) ###
   
@@ -77,6 +126,36 @@ Enable or disable Wifi Tethering
        Callback function used to report status to WifiManager.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>enabled</td>
+<td>       Boolean that indicates whether tethering should be enabled (true) or disabled (false).  
+</td>
+</tr>
+
+<tr>
+<td>enabled</td>
+<td>       Boolean that indicates whether tethering should be enabled (true) or disabled (false).  
+</td>
+</tr>
+
+<tr>
+<td>enabled</td>
+<td>       Boolean that indicates whether tethering should be enabled (true) or disabled (false).  
+</td>
+</tr>
+
+<tr>
+<td>enabled</td>
+<td>       Boolean that indicates whether tethering should be enabled (true) or disabled (false).  
+</td>
+</tr>
+
+</table>
+
 ### addHostRoute(network, host) ###
   
 Add host route to the specified network into routing table.  
@@ -91,6 +170,24 @@ Add host route to the specified network into routing table.
         resolved if added; rejected, otherwise.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>network</td>
+<td>       The network interface where the host to be routed to.  
+</td>
+</tr>
+
+<tr>
+<td>network</td>
+<td>       The network interface where the host to be routed to.  
+</td>
+</tr>
+
+</table>
+
 ### removeHostRoute(network, host) ###
   
 Remove host route to the specified network from routing table.  
@@ -104,6 +201,24 @@ Remove host route to the specified network from routing table.
 @return a Promise  
         resolved if removed; rejected, otherwise.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>network</td>
+<td>       The network interface where the routing to be removed from.  
+</td>
+</tr>
+
+<tr>
+<td>network</td>
+<td>       The network interface where the routing to be removed from.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

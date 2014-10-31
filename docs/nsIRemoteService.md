@@ -27,6 +27,26 @@ appears to have been successful.
                    profile name.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>appName</td>
+<td>(Required) Sets a window property identifying the  
+                   application.  
+</td>
+</tr>
+
+<tr>
+<td>appName</td>
+<td>(Required) Sets a window property identifying the  
+                   application.  
+</td>
+</tr>
+
+</table>
+
 ### registerWindow(aWindow) ###
   
 Register a XUL window with the xremote service. The window will be  

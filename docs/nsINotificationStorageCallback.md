@@ -20,6 +20,48 @@ into C++ land for Notification.get return data.
 @param tag: the notification tag  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>id:</td>
+<td>a uuid for this notification  
+</td>
+</tr>
+
+<tr>
+<td>id:</td>
+<td>a uuid for this notification  
+</td>
+</tr>
+
+<tr>
+<td>id:</td>
+<td>a uuid for this notification  
+</td>
+</tr>
+
+<tr>
+<td>id:</td>
+<td>a uuid for this notification  
+</td>
+</tr>
+
+<tr>
+<td>id:</td>
+<td>a uuid for this notification  
+</td>
+</tr>
+
+<tr>
+<td>id:</td>
+<td>a uuid for this notification  
+</td>
+</tr>
+
+</table>
+
 ### done() ###
   
 Callback function used to notify C++ the we have returned  

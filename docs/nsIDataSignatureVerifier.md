@@ -22,6 +22,30 @@ signature.
 @returns true if the signature matches the data, false if not.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aData</td>
+<td>The data to be tested.  
+</td>
+</tr>
+
+<tr>
+<td>aData</td>
+<td>The data to be tested.  
+</td>
+</tr>
+
+<tr>
+<td>aData</td>
+<td>The data to be tested.  
+</td>
+</tr>
+
+</table>
+
 ### verifySignature(aSignature, aSignatureLen, plaintext, plaintextLen, errorCode) ###
 
 ## Constants ##

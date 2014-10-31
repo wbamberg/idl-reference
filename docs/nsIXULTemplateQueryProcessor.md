@@ -99,6 +99,42 @@ the data is available.
 @returns a datasource object  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDataSources</td>
+<td>the list of nsIURI objects and/or nsIDOMNode objects  
+</td>
+</tr>
+
+<tr>
+<td>aDataSources</td>
+<td>the list of nsIURI objects and/or nsIDOMNode objects  
+</td>
+</tr>
+
+<tr>
+<td>aDataSources</td>
+<td>the list of nsIURI objects and/or nsIDOMNode objects  
+</td>
+</tr>
+
+<tr>
+<td>aDataSources</td>
+<td>the list of nsIURI objects and/or nsIDOMNode objects  
+</td>
+</tr>
+
+<tr>
+<td>aDataSources</td>
+<td>the list of nsIURI objects and/or nsIDOMNode objects  
+</td>
+</tr>
+
+</table>
+
 ### initializeForBuilding(aDatasource, aBuilder, aRootNode) ###
   
 Initialize for query generation. This will be called before the rules are  
@@ -113,6 +149,30 @@ translateRef.
 @throws NS_ERROR_INVALID_ARG if the datasource is not supported or  
         NS_ERROR_UNEXPECTED if generateResults has already been called.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDatasource</td>
+<td>datasource for the data  
+</td>
+</tr>
+
+<tr>
+<td>aDatasource</td>
+<td>datasource for the data  
+</td>
+</tr>
+
+<tr>
+<td>aDatasource</td>
+<td>datasource for the data  
+</td>
+</tr>
+
+</table>
 
 ### done() ###
   
@@ -149,6 +209,36 @@ indicate what variable is expected to contain the results.
 @returns a compiled query object  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBuilder</td>
+<td>the template builder  
+</td>
+</tr>
+
+<tr>
+<td>aBuilder</td>
+<td>the template builder  
+</td>
+</tr>
+
+<tr>
+<td>aBuilder</td>
+<td>the template builder  
+</td>
+</tr>
+
+<tr>
+<td>aBuilder</td>
+<td>the template builder  
+</td>
+</tr>
+
+</table>
+
 ### generateResults(aDatasource, aRef, aQuery) ###
   
 Generate the results of a query and return them in an enumerator. The  
@@ -171,6 +261,30 @@ typically with different values for aRef.
   
 @throws NS_ERROR_INVALID_ARG if aQuery is invalid  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDatasource</td>
+<td>datasource for the data  
+</td>
+</tr>
+
+<tr>
+<td>aDatasource</td>
+<td>datasource for the data  
+</td>
+</tr>
+
+<tr>
+<td>aDatasource</td>
+<td>datasource for the data  
+</td>
+</tr>
+
+</table>
 
 ### addBinding(aRuleNode, aVar, aRef, aExpr) ###
   
@@ -204,6 +318,36 @@ the syntax '+2' to mean add two to the reference.
 @param aExpr expression used to compute the value to assign  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRuleNode</td>
+<td>rule to add the binding to  
+</td>
+</tr>
+
+<tr>
+<td>aRuleNode</td>
+<td>rule to add the binding to  
+</td>
+</tr>
+
+<tr>
+<td>aRuleNode</td>
+<td>rule to add the binding to  
+</td>
+</tr>
+
+<tr>
+<td>aRuleNode</td>
+<td>rule to add the binding to  
+</td>
+</tr>
+
+</table>
+
 ### translateRef(aDatasource, aRefString) ###
   
 Translate a ref attribute string into a result. This is used as the  
@@ -222,6 +366,24 @@ translate the reference.
   
 @return the translated ref  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDatasource</td>
+<td>datasource for the data  
+</td>
+</tr>
+
+<tr>
+<td>aDatasource</td>
+<td>datasource for the data  
+</td>
+</tr>
+
+</table>
 
 ### compareResults(aLeft, aRight, aVar, aSortHints) ###
   
@@ -246,3 +408,33 @@ query processor.
   
 @param returns -1 if less, 0 if equal, or 1 if greater  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLeft</td>
+<td>the left result to compare  
+</td>
+</tr>
+
+<tr>
+<td>aLeft</td>
+<td>the left result to compare  
+</td>
+</tr>
+
+<tr>
+<td>aLeft</td>
+<td>the left result to compare  
+</td>
+</tr>
+
+<tr>
+<td>aLeft</td>
+<td>the left result to compare  
+</td>
+</tr>
+
+</table>

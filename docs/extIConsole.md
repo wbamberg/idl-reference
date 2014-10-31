@@ -16,6 +16,19 @@ Sends a given string to the console.
          The text to send to the console  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aMsg  
+         The text to send to the console  
+</td>
+</tr>
+
+</table>
+
 ### open() ###
   
 Opens the error console window. The console window  

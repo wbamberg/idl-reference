@@ -45,6 +45,54 @@ observe activity from the http transport
        this activity  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHttpChannel</td>
+<td>       nsISupports interface for the the http channel that  
+       generated this activity  
+</td>
+</tr>
+
+<tr>
+<td>aHttpChannel</td>
+<td>       nsISupports interface for the the http channel that  
+       generated this activity  
+</td>
+</tr>
+
+<tr>
+<td>aHttpChannel</td>
+<td>       nsISupports interface for the the http channel that  
+       generated this activity  
+</td>
+</tr>
+
+<tr>
+<td>aHttpChannel</td>
+<td>       nsISupports interface for the the http channel that  
+       generated this activity  
+</td>
+</tr>
+
+<tr>
+<td>aHttpChannel</td>
+<td>       nsISupports interface for the the http channel that  
+       generated this activity  
+</td>
+</tr>
+
+<tr>
+<td>aHttpChannel</td>
+<td>       nsISupports interface for the the http channel that  
+       generated this activity  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### isActive ###

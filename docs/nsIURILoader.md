@@ -42,6 +42,19 @@ the content types the registered content listener cares about.
 @see the nsIURILoader class description  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContentListener</td>
+<td>       The listener to register. This listener must implement  
+       nsISupportsWeakReference.  
+</td>
+</tr>
+
+</table>
+
 ### unRegisterContentListener(aContentListener) ###
 
 ### openURI(aChannel, aFlags, aWindowContext) ###
@@ -62,6 +75,36 @@ OpenURI requires the following parameters.....
        to get at the progress event sink interface.  
        <b>Must not be null!</b>  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel that should be opened. This must not be asyncOpen'd yet!  
+       If a loadgroup is set on the channel, it will get replaced with a  
+       different one.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel that should be opened. This must not be asyncOpen'd yet!  
+       If a loadgroup is set on the channel, it will get replaced with a  
+       different one.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel that should be opened. This must not be asyncOpen'd yet!  
+       If a loadgroup is set on the channel, it will get replaced with a  
+       different one.  
+</td>
+</tr>
+
+</table>
 
 ### openChannel(aChannel, aFlags, aWindowContext) ###
   
@@ -99,6 +142,36 @@ NS_ERROR_WONT_HANDLE_CONTENT.
        to get at the progress event sink interface.  
        <b>Must not be null!</b>  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel that should be loaded. The channel may already be  
+       opened. It must not be closed (i.e. this must be called before the  
+       channel calls onStopRequest on its stream listener).  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel that should be loaded. The channel may already be  
+       opened. It must not be closed (i.e. this must be called before the  
+       channel calls onStopRequest on its stream listener).  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel that should be loaded. The channel may already be  
+       opened. It must not be closed (i.e. this must be called before the  
+       channel calls onStopRequest on its stream listener).  
+</td>
+</tr>
+
+</table>
 
 ### stop(aLoadCookie) ###
   

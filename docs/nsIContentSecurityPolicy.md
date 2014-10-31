@@ -34,6 +34,24 @@ Parse and install a CSP policy.
        just send reports if it is violated?  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPolicy</td>
+<td>       String representation of the policy (e.g., header value)  
+</td>
+</tr>
+
+<tr>
+<td>aPolicy</td>
+<td>       String representation of the policy (e.g., header value)  
+</td>
+</tr>
+
+</table>
+
 ### getAllowsInlineScript(shouldReportViolations) ###
   
 Whether this policy allows in-page script.  
@@ -46,6 +64,21 @@ Whether this policy allows in-page script.
     Whether or not the effects of the inline script should be allowed  
     (block the compilation if false).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>shouldReportViolations</td>
+<td>    Whether or not the use of inline script should be reported.  
+    This function always returns "true" for report-only policies, but when  
+    any policy (report-only or otherwise) is violated,  
+    shouldReportViolations is true as well.  
+</td>
+</tr>
+
+</table>
 
 ### getAllowsEval(shouldReportViolations) ###
   
@@ -60,6 +93,21 @@ such as setTimeout("code string", time).
     Whether or not the effects of the eval call should be allowed  
     (block the call if false).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>shouldReportViolations</td>
+<td>    Whether or not the use of eval should be reported.  
+    This function returns "true" when violating report-only policies, but  
+    when any policy (report-only or otherwise) is violated,  
+    shouldReportViolations is true as well.  
+</td>
+</tr>
+
+</table>
 
 ### getAllowsInlineStyle(shouldReportViolations) ###
   
@@ -77,6 +125,22 @@ HTML elements.
     (block the rules if false).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>shouldReportViolations</td>
+<td>    Whether or not the use of inline style should be reported.  
+    If there are report-only policies, this function may return true  
+    (don't block), but one or more policy may still want to send  
+    violation reports so shouldReportViolations will be true even if the  
+    inline style should be permitted.  
+</td>
+</tr>
+
+</table>
+
 ### getAllowsNonce(aNonce, aContentType, shouldReportViolation) ###
   
 Whether this policy accepts the given nonce  
@@ -92,6 +156,30 @@ Whether this policy accepts the given nonce
 @return  
     Whether or not this nonce is valid  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNonce</td>
+<td>    The nonce string to check against the policy  
+</td>
+</tr>
+
+<tr>
+<td>aNonce</td>
+<td>    The nonce string to check against the policy  
+</td>
+</tr>
+
+<tr>
+<td>aNonce</td>
+<td>    The nonce string to check against the policy  
+</td>
+</tr>
+
+</table>
 
 ### getAllowsHash(aContent, aContentType, shouldReportViolation) ###
   
@@ -109,6 +197,33 @@ of its content.
 @return  
     Whether or not this inline resource is whitelisted by a hash-source  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContent</td>
+<td>    The content of the inline resource to hash (and compare to the  
+    hashes listed in the policy)  
+</td>
+</tr>
+
+<tr>
+<td>aContent</td>
+<td>    The content of the inline resource to hash (and compare to the  
+    hashes listed in the policy)  
+</td>
+</tr>
+
+<tr>
+<td>aContent</td>
+<td>    The content of the inline resource to hash (and compare to the  
+    hashes listed in the policy)  
+</td>
+</tr>
+
+</table>
 
 ### logViolationDetails(violationType, sourceFile, scriptSample, lineNum, nonce, content) ###
   
@@ -135,6 +250,48 @@ policies.
     reports.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>violationType</td>
+<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+</td>
+</tr>
+
+<tr>
+<td>violationType</td>
+<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+</td>
+</tr>
+
+<tr>
+<td>violationType</td>
+<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+</td>
+</tr>
+
+<tr>
+<td>violationType</td>
+<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+</td>
+</tr>
+
+<tr>
+<td>violationType</td>
+<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+</td>
+</tr>
+
+<tr>
+<td>violationType</td>
+<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+</td>
+</tr>
+
+</table>
+
 ### setRequestContext(selfURI, referrer, aChannel) ###
   
 Called after the CSP object is created to fill in appropriate request  
@@ -160,6 +317,18 @@ value should not be cached.
    report-only policies, which will send reports and then return true  
    here when violated).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>docShell</td>
+<td>   containing the protected resource  
+</td>
+</tr>
+
+</table>
 
 ### permitsBaseURI(aURI) ###
   

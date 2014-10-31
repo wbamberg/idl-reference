@@ -72,6 +72,24 @@ a URI of "http://mozilla.com", the result will be true.
 @see isThirdPartyURI  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>       The bottommost window in the hierarchy.  
+</td>
+</tr>
+
+<tr>
+<td>aWindow</td>
+<td>       The bottommost window in the hierarchy.  
+</td>
+</tr>
+
+</table>
+
 ### isThirdPartyChannel(aChannel, aURI) ###
   
 isThirdPartyChannel  
@@ -118,6 +136,24 @@ a URI of "http://mozilla.com", the result will be true.
 @see isThirdPartyWindow  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel associated with the load.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel associated with the load.  
+</td>
+</tr>
+
+</table>
+
 ### getBaseDomain(aHostURI) ###
   
 getBaseDomain  
@@ -135,6 +171,18 @@ special cases elided above.
   
 @return the base domain.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHostURI</td>
+<td>       The URI to analyze.  
+</td>
+</tr>
+
+</table>
 
 ### getURIFromWindow(aWindow) ###
   

@@ -13,6 +13,18 @@ starts resizing an element
 @param aElement [IN] the element  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element  
+</td>
+</tr>
+
+</table>
+
 ### onEndResizing(aElement, aOldWidth, aOldHeight, aNewWidth, aNewHeight) ###
   
 Listener's callback called by the editor when the user  
@@ -23,3 +35,39 @@ has finalized the resizing of an element
 @param aNewWidth  [IN] the width of the element after resizing  
 @param aNewHeight [IN] the height of the element after resizing  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element that was resized  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element that was resized  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element that was resized  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element that was resized  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>[IN] the element that was resized  
+</td>
+</tr>
+
+</table>

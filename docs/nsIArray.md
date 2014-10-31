@@ -49,6 +49,30 @@ this method, but exceptions are thrown in other circumstances
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>position of element  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>position of element  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>position of element  
+</td>
+</tr>
+
+</table>
+
 ### indexOf(startIndex, element) ###
   
 indexOf()  
@@ -65,6 +89,28 @@ is not found.
          element in the array.  
 @throws NS_ERROR_FAILURE if the element was not in the array.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>startIndex</td>
+<td>The initial element to search in the array  
+                  To start at the beginning, use 0 as the  
+                  startIndex  
+</td>
+</tr>
+
+<tr>
+<td>startIndex</td>
+<td>The initial element to search in the array  
+                  To start at the beginning, use 0 as the  
+                  startIndex  
+</td>
+</tr>
+
+</table>
 
 ### enumerate() ###
   

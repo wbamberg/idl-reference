@@ -32,6 +32,19 @@ are normalized to the form -flag param.
 @throws       NS_ERROR_INVALID_ARG if aIndex is out of bounds.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>The argument to retrieve. This index is 0-based, and does  
+              not include the application name.  
+</td>
+</tr>
+
+</table>
+
 ### findFlag(aFlag, aCaseSensitive) ###
   
 Find a command-line flag.  
@@ -42,6 +55,26 @@ Find a command-line flag.
 @return               The position of the flag in the command line.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFlag</td>
+<td>The flag name to locate. Do not include the initial  
+                      hyphen.  
+</td>
+</tr>
+
+<tr>
+<td>aFlag</td>
+<td>The flag name to locate. Do not include the initial  
+                      hyphen.  
+</td>
+</tr>
+
+</table>
+
 ### removeArguments(aStart, aEnd) ###
   
 Remove arguments from the command line. This normally occurs after  
@@ -51,6 +84,24 @@ a handler has processed the arguments.
 @param aEnd    Index to end removing, inclusive.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStart</td>
+<td>Index to begin removing.  
+</td>
+</tr>
+
+<tr>
+<td>aStart</td>
+<td>Index to begin removing.  
+</td>
+</tr>
+
+</table>
+
 ### handleFlag(aFlag, aCaseSensitive) ###
   
 A helper method which will find a flag and remove it in one step.  
@@ -59,6 +110,24 @@ A helper method which will find a flag and remove it in one step.
 @param aCaseSensitive Whether to do case-sensitive comparisons.  
 @return       Whether the flag was found.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFlag</td>
+<td>The flag name to find and remove.  
+</td>
+</tr>
+
+<tr>
+<td>aFlag</td>
+<td>The flag name to find and remove.  
+</td>
+</tr>
+
+</table>
 
 ### handleFlagWithParam(aFlag, aCaseSensitive) ###
   
@@ -73,6 +142,24 @@ method that combines "findFlag" and "removeArguments" in one step.
 @param aCaseSensitive Whether to do case-sensitive flag search.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFlag</td>
+<td>The flag name to find and remove.  
+</td>
+</tr>
+
+<tr>
+<td>aFlag</td>
+<td>The flag name to find and remove.  
+</td>
+</tr>
+
+</table>
+
 ### resolveFile(aArgument) ###
   
 Resolve a file-path argument into an nsIFile. This method gracefully  
@@ -81,6 +168,18 @@ directory of this command line.
   
 @param aArgument  The command-line argument to resolve.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aArgument</td>
+<td>The command-line argument to resolve.  
+</td>
+</tr>
+
+</table>
 
 ### resolveURI(aArgument) ###
   
@@ -91,6 +190,18 @@ confuse the ioservice if passed directly.
   
 @param aArgument  The command-line argument to resolve.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aArgument</td>
+<td>The command-line argument to resolve.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

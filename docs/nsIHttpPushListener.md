@@ -30,3 +30,21 @@ The new channel can be canceled after the AsyncOpen if it is not wanted.
 @param pushChannel  
        a channel to the resource which is being pushed  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>associatedChannel</td>
+<td>       the monitor channel that was recieved on  
+</td>
+</tr>
+
+<tr>
+<td>associatedChannel</td>
+<td>       the monitor channel that was recieved on  
+</td>
+</tr>
+
+</table>

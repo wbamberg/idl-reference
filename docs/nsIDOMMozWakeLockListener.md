@@ -24,3 +24,21 @@ Possible states are:
 @param aTopic The resource name related to the wake lock.  
 @param aState The wake lock state  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTopic</td>
+<td>The resource name related to the wake lock.  
+</td>
+</tr>
+
+<tr>
+<td>aTopic</td>
+<td>The resource name related to the wake lock.  
+</td>
+</tr>
+
+</table>

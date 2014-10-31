@@ -23,9 +23,37 @@ a call to removeItem, or until the process shuts down.
                        The menu label is not shown.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDOMMenuElement</td>
+<td>A XUL menu element that contains a XUL menupopup  
+                       with regular menu content. The menu's icon is put  
+                       into the system status bar; clicking it will open  
+                       a menu with the contents of the menupopup.  
+                       The menu label is not shown.  
+</td>
+</tr>
+
+</table>
+
 ### removeItem(aDOMMenuElement) ###
   
 Remove a previously-added item from the menu bar. Calling this with an  
 element that has not been added before will be silently ignored.  
 @param aDOMMenuElement The XUL menu element that you called addItem with.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDOMMenuElement</td>
+<td>The XUL menu element that you called addItem with.  
+</td>
+</tr>
+
+</table>

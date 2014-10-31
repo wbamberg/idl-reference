@@ -24,6 +24,19 @@ changed.
                top of this file.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>color  The new selected color value following the format specifed on  
+               top of this file.  
+</td>
+</tr>
+
+</table>
+
 ### done(color) ###
   
 Callback called when the color picker is dismissed.  
@@ -34,3 +47,16 @@ If the color has not changed, the color parameter will be the empty string.
 @param  color  The new selected color value following the format specifed on  
                top of this file or the empty string.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>color  The new selected color value following the format specifed on  
+               top of this file or the empty string.  
+</td>
+</tr>
+
+</table>

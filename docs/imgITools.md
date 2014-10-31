@@ -19,6 +19,24 @@ the resulting imgIContainer.
        Type of image in the stream.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>       An input stream for an encoded image file.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       An input stream for an encoded image file.  
+</td>
+</tr>
+
+</table>
+
 ### decodeImageData(aStream, aMimeType, aContainer) ###
   
 decodeImageData  
@@ -39,6 +57,30 @@ new code should use |decodeImage|.
        |null|.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>       An input stream for an encoded image file.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       An input stream for an encoded image file.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       An input stream for an encoded image file.  
+</td>
+</tr>
+
+</table>
+
 ### encodeImage(aContainer, aMimeType, outputOptions) ###
   
 encodeImage  
@@ -52,6 +94,30 @@ encoded to. We return an input stream for the encoded image data.
 @param outputOptions  
        Encoder-specific output options.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+</table>
 
 ### encodeScaledImage(aContainer, aMimeType, aWidth, aHeight, outputOptions) ###
   
@@ -71,6 +137,36 @@ The encoded image is scaled to the specified dimensions.
        Encoder-specific output options.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+</table>
+
 ### getImgLoaderForDocument(doc) ###
   
 getImgLoaderForDocument  
@@ -80,6 +176,18 @@ document.
 @param doc  
        A document. Must not be null.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>doc</td>
+<td>       A document. Must not be null.  
+</td>
+</tr>
+
+</table>
 
 ### getImgCacheForDocument(doc) ###
   
@@ -92,6 +200,20 @@ document.
        when there is no way to obtain a relevant document for  
        the current context in which a cache is desired.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>doc</td>
+<td>       A document. Null is allowed, but must _only_ be passed  
+       when there is no way to obtain a relevant document for  
+       the current context in which a cache is desired.  
+</td>
+</tr>
+
+</table>
 
 ### encodeCroppedImage(aContainer, aMimeType, aOffsetX, aOffsetY, aWidth, aHeight, outputOptions) ###
   
@@ -115,6 +237,42 @@ The given offset and size must not exceed the image bounds.
        Encoder-specific output options.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+<tr>
+<td>aContainer</td>
+<td>       An image container.  
+</td>
+</tr>
+
+</table>
+
 ### createScriptedObserver(aObserver) ###
   
 Create a wrapper around a scripted notification observer (ordinarily  
@@ -122,3 +280,15 @@ imgINotificationObserver cannot be implemented from scripts).
   
 @param aObserver The scripted observer to wrap   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>The scripted observer to wrap   
+</td>
+</tr>
+
+</table>

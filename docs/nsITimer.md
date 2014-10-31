@@ -37,6 +37,36 @@ is no longer needed or has been cancelled.
 @param aType       timer type per TYPE* consts defined above  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>the callback object that observes the   
+                   ``timer-callback'' topic with the subject being  
+                   the timer itself when the timer fires:  
+</td>
+</tr>
+
+<tr>
+<td>aObserver</td>
+<td>the callback object that observes the   
+                   ``timer-callback'' topic with the subject being  
+                   the timer itself when the timer fires:  
+</td>
+</tr>
+
+<tr>
+<td>aObserver</td>
+<td>the callback object that observes the   
+                   ``timer-callback'' topic with the subject being  
+                   the timer itself when the timer fires:  
+</td>
+</tr>
+
+</table>
+
 ### initWithFuncCallback(aCallback, aClosure, aDelay, aType) ###
   
 Initialize a timer to fire after the given millisecond interval.  
@@ -49,6 +79,36 @@ that function.
 @param aType      Timer type per TYPE* consts defined above  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFunc</td>
+<td>The function to invoke  
+</td>
+</tr>
+
+<tr>
+<td>aFunc</td>
+<td>The function to invoke  
+</td>
+</tr>
+
+<tr>
+<td>aFunc</td>
+<td>The function to invoke  
+</td>
+</tr>
+
+<tr>
+<td>aFunc</td>
+<td>The function to invoke  
+</td>
+</tr>
+
+</table>
+
 ### initWithCallback(aCallback, aDelay, aType) ###
   
 Initialize a timer to fire after the given millisecond interval.  
@@ -58,6 +118,30 @@ This version takes a function to call.
 @param aDelay     The millisecond interval  
 @param aType      Timer type per TYPE* consts defined above  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFunc</td>
+<td>nsITimerCallback interface to call when timer expires  
+</td>
+</tr>
+
+<tr>
+<td>aFunc</td>
+<td>nsITimerCallback interface to call when timer expires  
+</td>
+</tr>
+
+<tr>
+<td>aFunc</td>
+<td>nsITimerCallback interface to call when timer expires  
+</td>
+</tr>
+
+</table>
 
 ### cancel() ###
   

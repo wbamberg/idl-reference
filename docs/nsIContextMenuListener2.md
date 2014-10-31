@@ -42,6 +42,24 @@ CONTEXT_BACKGROUND_IMAGE       <HTML> with background image
 @see nsIContextMenuInfo  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContextFlags</td>
+<td>Flags indicating the kind of context.  
+</td>
+</tr>
+
+<tr>
+<td>aContextFlags</td>
+<td>Flags indicating the kind of context.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### CONTEXT_NONE ###

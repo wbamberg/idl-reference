@@ -25,6 +25,18 @@ In the case of the HTTP protocol, only a HEAD request will be issued.
        The URI to be checked.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to be checked.  
+</td>
+</tr>
+
+</table>
+
 ### asyncCheck(aObserver, aContext) ###
   
 Begin asynchronous checking URI for validity.  Notification will be  
@@ -48,6 +60,32 @@ Our interpretations of the nsIRequestObserver status codes:
        A closure that will be passed back to the nsIRequestObserver  
        methods.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>       The object to notify when the link is verified.  We will  
+       call aObserver.OnStartRequest followed immediately by  
+       aObserver.OnStopRequest.  It is recommended that the caller use  
+       OnStopRequest to act on the link's status.  The underlying request  
+       will not be cancelled until after OnStopRequest has been called.  
+</td>
+</tr>
+
+<tr>
+<td>aObserver</td>
+<td>       The object to notify when the link is verified.  We will  
+       call aObserver.OnStartRequest followed immediately by  
+       aObserver.OnStopRequest.  It is recommended that the caller use  
+       OnStopRequest to act on the link's status.  The underlying request  
+       will not be cancelled until after OnStopRequest has been called.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

@@ -18,6 +18,32 @@ Scan(a + b, o)
 appropriate.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>text:</td>
+<td>plain text to scan. May be a line, paragraph (recommended)  
+or just a substring.<p>  
+Must be non-escaped, pure unicode.<p>  
+<em>Note:</em> ScanTXT(a, o) + ScanTXT(b, o) may be !=  
+Scan(a + b, o)  
+</td>
+</tr>
+
+<tr>
+<td>text:</td>
+<td>plain text to scan. May be a line, paragraph (recommended)  
+or just a substring.<p>  
+Must be non-escaped, pure unicode.<p>  
+<em>Note:</em> ScanTXT(a, o) + ScanTXT(b, o) may be !=  
+Scan(a + b, o)  
+</td>
+</tr>
+
+</table>
+
 ### scanHTML(text, whattodo) ###
   
 Adds additional formatting to user edited text, that the user was too lazy  
@@ -37,6 +63,34 @@ Scan(a + b, o)
 @result      Additional HTML tags are inserted where appropriate.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>text:</td>
+<td>HTML source to scan. May be a line, paragraph (recommended)  
+or just a substring.<p>  
+Must be correct HTML. "<", ">" and "&" must be escaped,  
+other chars must be pure unicode.<p>  
+<em>Note:</em> ScanTXT(a, o) + ScanTXT(b, o) may be !=  
+Scan(a + b, o)  
+</td>
+</tr>
+
+<tr>
+<td>text:</td>
+<td>HTML source to scan. May be a line, paragraph (recommended)  
+or just a substring.<p>  
+Must be correct HTML. "<", ">" and "&" must be escaped,  
+other chars must be pure unicode.<p>  
+<em>Note:</em> ScanTXT(a, o) + ScanTXT(b, o) may be !=  
+Scan(a + b, o)  
+</td>
+</tr>
+
+</table>
+
 ### citeLevelTXT(line, logLineStart) ###
   
 @param line: line in original msg, possibly starting starting with  
@@ -49,6 +103,26 @@ Initial value must be 0, unless line is not real line.
 nested quotes.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>line:</td>
+<td>line in original msg, possibly starting starting with  
+txt quote tags like ">"  
+</td>
+</tr>
+
+<tr>
+<td>line:</td>
+<td>line in original msg, possibly starting starting with  
+txt quote tags like ">"  
+</td>
+</tr>
+
+</table>
+
 ### findURLInPlaintext(text, aLength, aPos, aStartPos, aEndPos) ###
    
 @param a wide string to scan for the presence of a URL.  
@@ -58,6 +132,30 @@ nested quotes.
 aStartPos --> index into the start of a url (-1 if no url found)  
 aEndPos --> index of the last character in the url (-1 if no url found)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>a</td>
+<td>wide string to scan for the presence of a URL.  
+</td>
+</tr>
+
+<tr>
+<td>a</td>
+<td>wide string to scan for the presence of a URL.  
+</td>
+</tr>
+
+<tr>
+<td>a</td>
+<td>wide string to scan for the presence of a URL.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

@@ -30,6 +30,36 @@ websocket connection is reopened.
 @param aContext an opaque parameter forwarded to aListener's methods  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the uri of the websocket protocol - may be redirected  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the uri of the websocket protocol - may be redirected  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the uri of the websocket protocol - may be redirected  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the uri of the websocket protocol - may be redirected  
+</td>
+</tr>
+
+</table>
+
 ### close(aCode, aReason) ###
 
 ### sendMsg(aMsg) ###
@@ -39,6 +69,18 @@ Use to send text message down the connection to WebSocket peer.
 @param aMsg the utf8 string to send  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aMsg</td>
+<td>the utf8 string to send  
+</td>
+</tr>
+
+</table>
+
 ### sendBinaryMsg(aMsg) ###
   
 Use to send binary message down the connection to WebSocket peer.  
@@ -46,12 +88,36 @@ Use to send binary message down the connection to WebSocket peer.
 @param aMsg the data to send  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aMsg</td>
+<td>the data to send  
+</td>
+</tr>
+
+</table>
+
 ### sendBinaryStream(aStream, length) ###
    
 Use to send a binary stream (Blob) to Websocket peer.  
   
 @param aStream The input stream to be sent.    
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>The input stream to be sent.    
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

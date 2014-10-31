@@ -22,6 +22,36 @@ string of the format provider_name-semantic_type-table_type.  For
 @param gethashUrl The URL from which to fetch hash completions.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>tableName</td>
+<td>A string of the format  
+       provider_name-semantic_type-table_type.  For example,  
+       goog-white-enchash or goog-black-url.  
+</td>
+</tr>
+
+<tr>
+<td>tableName</td>
+<td>A string of the format  
+       provider_name-semantic_type-table_type.  For example,  
+       goog-white-enchash or goog-black-url.  
+</td>
+</tr>
+
+<tr>
+<td>tableName</td>
+<td>A string of the format  
+       provider_name-semantic_type-table_type.  For example,  
+       goog-white-enchash or goog-black-url.  
+</td>
+</tr>
+
+</table>
+
 ### enableUpdate(tableName) ###
   
 Turn on update checking for a table. I.e., during the next server  

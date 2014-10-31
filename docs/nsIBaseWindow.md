@@ -36,6 +36,19 @@ Tell the window to repaint itself
                 if false, the window may defer repainting as it sees fit.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aForce</td>
+<td>- if true, repaint immediately  
+                if false, the window may defer repainting as it sees fit.  
+</td>
+</tr>
+
+</table>
+
 ### setFocus() ###
   
 Give the window focus.  

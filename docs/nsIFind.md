@@ -22,6 +22,36 @@ responsible for performing the find and highlighting the text.
 @retval             A range spanning the match that was found (or null).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPatText</td>
+<td>The text to search for.  
+</td>
+</tr>
+
+<tr>
+<td>aPatText</td>
+<td>The text to search for.  
+</td>
+</tr>
+
+<tr>
+<td>aPatText</td>
+<td>The text to search for.  
+</td>
+</tr>
+
+<tr>
+<td>aPatText</td>
+<td>The text to search for.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### findBackwards ###

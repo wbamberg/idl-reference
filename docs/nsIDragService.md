@@ -16,6 +16,30 @@ Starts a modal drag session with an array of transaferables
 @param  aActionType - specified which of copy/move/link are allowed  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aTransferables - an array of transferables to be dragged  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aTransferables - an array of transferables to be dragged  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aTransferables - an array of transferables to be dragged  
+</td>
+</tr>
+
+</table>
+
 ### invokeDragSessionWithImage(aDOMNode, aTransferableArray, aRegion, aActionType, aImage, aImageX, aImageY, aDragEvent, aDataTransfer) ###
   
 Starts a modal drag session using an image. The first four arguments are  

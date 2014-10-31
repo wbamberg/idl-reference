@@ -23,6 +23,18 @@ OnStart will be called before any other calls to this API.
 @param aContext user defined context  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+</table>
+
 ### onStop(aContext, aStatusCode) ###
   
 Called to signify the completion of the message stream.  
@@ -37,6 +49,24 @@ nsIWebSocketChannel::Close() has not been called.
 @param aStatusCode reason for stopping (NS_OK if completed successfully)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+</table>
+
 ### onMessageAvailable(aContext, aMsg) ###
   
 Called to deliver text message.  
@@ -44,6 +74,24 @@ Called to deliver text message.
 @param aContext user defined context  
 @param aMsg the message data  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+</table>
 
 ### onBinaryMessageAvailable(aContext, aMsg) ###
   
@@ -53,6 +101,24 @@ Called to deliver binary message.
 @param aMsg the message data  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+</table>
+
 ### onAcknowledge(aContext, aSize) ###
   
 Called to acknowledge message sent via sendMsg() or sendBinaryMsg.  
@@ -60,6 +126,24 @@ Called to acknowledge message sent via sendMsg() or sendBinaryMsg.
 @param aContext user defined context  
 @param aSize number of bytes placed in OS send buffer  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+</table>
 
 ### onServerClose(aContext, aCode, aReason) ###
   
@@ -77,3 +161,27 @@ be sent through the nsIWebSocketChannel connection.
 @param aReason the websocket closing handshake close reason  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>user defined context  
+</td>
+</tr>
+
+</table>

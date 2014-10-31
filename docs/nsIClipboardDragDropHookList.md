@@ -21,12 +21,36 @@ Add a hook to list.
 @param aHooks  implementation of hooks  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHooks</td>
+<td>implementation of hooks  
+</td>
+</tr>
+
+</table>
+
 ### removeClipboardDragDropHooks(aHooks) ###
   
 Remove a hook from list (note if this implementation is not present  
 in the list then removal will be ignored).  
 @param aHooks  implementation of hooks  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHooks</td>
+<td>implementation of hooks  
+</td>
+</tr>
+
+</table>
 
 ### getHookEnumerator() ###
   

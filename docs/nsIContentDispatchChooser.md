@@ -28,6 +28,40 @@ Asks the user what to do with the content.
        The reason why we are asking (see above).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHander</td>
+<td>       The interface describing the details of how this content should or  
+       can be handled.  
+</td>
+</tr>
+
+<tr>
+<td>aHander</td>
+<td>       The interface describing the details of how this content should or  
+       can be handled.  
+</td>
+</tr>
+
+<tr>
+<td>aHander</td>
+<td>       The interface describing the details of how this content should or  
+       can be handled.  
+</td>
+</tr>
+
+<tr>
+<td>aHander</td>
+<td>       The interface describing the details of how this content should or  
+       can be handled.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### REASON_CANNOT_HANDLE ###

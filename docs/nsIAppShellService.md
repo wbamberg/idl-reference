@@ -16,6 +16,18 @@ representation.
 @param aIsChrome Set true if you want to use it for chrome content.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIsChrome</td>
+<td>Set true if you want to use it for chrome content.  
+</td>
+</tr>
+
+</table>
+
 ### createHiddenWindow() ###
 
 ### destroyHiddenWindow() ###
@@ -39,6 +51,20 @@ knows it can't quit until it's out of registered windows.
       "xul-window-registered"  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>the window to register  
+@note When this method is successful, it fires the global notification  
+      "xul-window-registered"  
+</td>
+</tr>
+
+</table>
+
 ### unregisterTopLevelWindow(aWindow) ###
   
 Remove a window from the application's window registry. Note that  
@@ -46,6 +72,18 @@ this method won't automatically attempt to quit the app when
 the last window is unregistered. For that, see Quit().  
 @param aWindow you see the pattern  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>you see the pattern  
+</td>
+</tr>
+
+</table>
 
 ### startEventLoopLagTracking() ###
   

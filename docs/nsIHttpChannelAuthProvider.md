@@ -48,6 +48,30 @@ the credentials to send.
                               until disconnect be called.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>httpStatus</td>
+<td>       the http status received.  
+</td>
+</tr>
+
+<tr>
+<td>httpStatus</td>
+<td>       the http status received.  
+</td>
+</tr>
+
+<tr>
+<td>httpStatus</td>
+<td>       the http status received.  
+</td>
+</tr>
+
+</table>
+
 ### addAuthorizationHeaders() ###
   
 Add credentials from the http auth cache.  

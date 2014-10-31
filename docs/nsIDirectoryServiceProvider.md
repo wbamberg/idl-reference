@@ -28,3 +28,21 @@ a prop or on every request if the prop is not persistent.
 @return             The file represented by the property.  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>prop</td>
+<td>The symbolic name of the file.  
+</td>
+</tr>
+
+<tr>
+<td>prop</td>
+<td>The symbolic name of the file.  
+</td>
+</tr>
+
+</table>

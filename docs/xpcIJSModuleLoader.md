@@ -38,6 +38,24 @@ specified target object and the global object returned as above.
 (This comment is duplicated to nsIXPCComponents_Utils.)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>resourceURI</td>
+<td>A resource:// URI string to load the module from.  
+</td>
+</tr>
+
+<tr>
+<td>resourceURI</td>
+<td>A resource:// URI string to load the module from.  
+</td>
+</tr>
+
+</table>
+
 ### importInto(aResourceURI, targetObj, cc) ###
   
 Imports the JS module at aResourceURI to the JS object  
@@ -64,3 +82,16 @@ otherwise.
 @returns boolean, true if the js file has been loaded via import. false  
          otherwise  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>resourceURI</td>
+<td>A resource:// URI string representing the location of  
+       the js file to be checked if it is already loaded or not.  
+</td>
+</tr>
+
+</table>

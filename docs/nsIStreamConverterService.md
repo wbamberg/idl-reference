@@ -45,6 +45,36 @@ Use this method when you have a stream you want to convert.
                      until it is used.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFromStream</td>
+<td>The stream representing the original/raw data.  
+</td>
+</tr>
+
+<tr>
+<td>aFromStream</td>
+<td>The stream representing the original/raw data.  
+</td>
+</tr>
+
+<tr>
+<td>aFromStream</td>
+<td>The stream representing the original/raw data.  
+</td>
+</tr>
+
+<tr>
+<td>aFromStream</td>
+<td>The stream representing the original/raw data.  
+</td>
+</tr>
+
+</table>
+
 ### asyncConvertData(aFromType, aToType, aListener, aContext) ###
   
 <b>ASYNCHRONOUS VERSION</b>  
@@ -63,3 +93,33 @@ callbacks asynchronously.
 @return              A nsIStreamListener that receives data via its  
                      OnDataAvailable() method.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFromType</td>
+<td>The MIME type of the original/raw data.  
+</td>
+</tr>
+
+<tr>
+<td>aFromType</td>
+<td>The MIME type of the original/raw data.  
+</td>
+</tr>
+
+<tr>
+<td>aFromType</td>
+<td>The MIME type of the original/raw data.  
+</td>
+</tr>
+
+<tr>
+<td>aFromType</td>
+<td>The MIME type of the original/raw data.  
+</td>
+</tr>
+
+</table>

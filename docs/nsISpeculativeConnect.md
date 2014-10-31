@@ -21,3 +21,21 @@ to actually open the new channel.
        such as nsIBadCertListener. May be null.  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the URI of the hinted transaction  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI of the hinted transaction  
+</td>
+</tr>
+
+</table>

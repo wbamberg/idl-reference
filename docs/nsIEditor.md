@@ -24,6 +24,36 @@ Init is to tell the implementation of nsIEditor to begin its services
                      of the editor.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDoc</td>
+<td>The dom document interface being observed  
+</td>
+</tr>
+
+<tr>
+<td>aDoc</td>
+<td>The dom document interface being observed  
+</td>
+</tr>
+
+<tr>
+<td>aDoc</td>
+<td>The dom document interface being observed  
+</td>
+</tr>
+
+<tr>
+<td>aDoc</td>
+<td>The dom document interface being observed  
+</td>
+</tr>
+
+</table>
+
 ### setAttributeOrEquivalent(element, sourceAttrName, sourceAttrValue, aSuppressTransaction) ###
 
 ### removeAttributeOrEquivalent(element, sourceAttrName, aSuppressTransaction) ###
@@ -43,6 +73,20 @@ are being destroyed (so there is no need to modify any nsISelections,
 nor is it safe to do so)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDestroyingFrames</td>
+<td>set to true when the frames being edited  
+are being destroyed (so there is no need to modify any nsISelections,  
+nor is it safe to do so)  
+</td>
+</tr>
+
+</table>
+
 ### deleteSelection(action, stripWrappers) ###
    
 DeleteSelection removes all nodes in the current selection.  
@@ -53,6 +97,26 @@ DeleteSelection removes all nodes in the current selection.
                      doubt, pass eStrip -- eNoStrip is only for if you're  
                      about to insert text or similar right after.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDir</td>
+<td>if eNext, delete to the right (for example, the DEL key)  
+             if ePrevious, delete to the left (for example, the BACKSPACE key)  
+</td>
+</tr>
+
+<tr>
+<td>aDir</td>
+<td>if eNext, delete to the right (for example, the DEL key)  
+             if ePrevious, delete to the left (for example, the BACKSPACE key)  
+</td>
+</tr>
+
+</table>
 
 ### resetModificationCount() ###
  to be used ONLY when we need to override the doc's modification  
@@ -72,6 +136,19 @@ Increments the modification count of the document.
                    to increase or decrease the count  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aModCount  the number of modifications by which  
+                   to increase or decrease the count  
+</td>
+</tr>
+
+</table>
+
 ### doTransaction(txn) ###
  doTransaction() fires a transaction.  
 It is provided here so clients can create their own transactions.  
@@ -80,6 +157,18 @@ Otherwise, the transaction is just executed directly.
   
 @param aTxn the transaction to execute  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTxn</td>
+<td>the transaction to execute  
+</td>
+</tr>
+
+</table>
 
 ### enableUndo(enable) ###
  turn the undo system on or off  
@@ -90,6 +179,20 @@ Otherwise, the transaction is just executed directly.
                 the undo system could be initialized properly  
                 if aEnable is PR_FALSE, returns NS_OK.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEnable</td>
+<td>if PR_TRUE, the undo system is turned on if available  
+                if PR_FALSE the undo system is turned off if it  
+                was previously on  
+</td>
+</tr>
+
+</table>
 
 ### undo(count) ###
  undo reverses the effects of the last Do operation,  
@@ -110,6 +213,24 @@ error NS_ERROR_NOT_AVAILABLE is returned.
                         currently ready to be undone.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIsEnabled</td>
+<td>[OUT] PR_TRUE if undo is enabled  
+</td>
+</tr>
+
+<tr>
+<td>aIsEnabled</td>
+<td>[OUT] PR_TRUE if undo is enabled  
+</td>
+</tr>
+
+</table>
+
 ### redo(count) ###
  redo reverses the effects of the last Undo operation  
 It is provided here so clients need no knowledge of whether  
@@ -128,6 +249,24 @@ error NS_ERROR_NOT_AVAILABLE is returned.
 @param aCanRedo   [OUT] PR_TRUE if at least one transaction is  
 currently ready to be redone.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIsEnabled</td>
+<td>[OUT] PR_TRUE if redo is enabled  
+</td>
+</tr>
+
+<tr>
+<td>aIsEnabled</td>
+<td>[OUT] PR_TRUE if redo is enabled  
+</td>
+</tr>
+
+</table>
 
 ### beginTransaction() ###
  beginTransaction is a signal from the caller to the editor that  
@@ -165,6 +304,23 @@ WARNING: You must be very careful to reset back to PR_TRUE after
          for further editing.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>should  Set false to suppress changing the selection;  
+                 i.e., before using InsertElement() to insert  
+                 under <head> element  
+WARNING: You must be very careful to reset back to PR_TRUE after  
+         setting PR_FALSE, else selection/caret is trashed  
+         for further editing.  
+</td>
+</tr>
+
+</table>
+
 ### getInlineSpellChecker(autoCreate) ###
  Returns the inline spell checker associated with this object. The spell  
 checker is lazily created, so this function may create the object for  
@@ -174,6 +330,21 @@ you during this call.
                     and the object has not been created, this function  
                     WILL RETURN NULL.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>autoCreate  If true, this will create a spell checker object  
+                    if one does not exist yet for this editor. If false  
+                    and the object has not been created, this function  
+                    WILL RETURN NULL.  
+</td>
+</tr>
+
+</table>
 
 ### syncRealTimeSpell() ###
  Resyncs spellchecking state (enabled/disabled).  This should be called  
@@ -187,6 +358,19 @@ editor.
 @param  enable  The new state of spellchecking in this editor, as  
                 requested by the user.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>enable  The new state of spellchecking in this editor, as  
+                requested by the user.  
+</td>
+</tr>
+
+</table>
 
 ### cut() ###
  cut the currently selected text, putting it into the OS clipboard  
@@ -253,6 +437,30 @@ or if aValue is a legal value of aAttribute.
 @param aValue      the value to set aAttribute to  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>the content element to operate on  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>the content element to operate on  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>the content element to operate on  
+</td>
+</tr>
+
+</table>
+
 ### getAttributeValue(aElement, attributestr, resultValue) ###
   
 getAttributeValue() retrieves the attribute's value for aElement.  
@@ -265,6 +473,30 @@ getAttributeValue() retrieves the attribute's value for aElement.
                      PR_FALSE if it is not.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>the content element to operate on  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>the content element to operate on  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>the content element to operate on  
+</td>
+</tr>
+
+</table>
+
 ### removeAttribute(aElement, aAttribute) ###
   
 removeAttribute() deletes aAttribute from the attribute list of aElement.  
@@ -273,6 +505,24 @@ If aAttribute is not an attribute of aElement, nothing is done.
 @param aElement      the content element to operate on  
 @param aAttribute    the string representation of the attribute to get  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>the content element to operate on  
+</td>
+</tr>
+
+<tr>
+<td>aElement</td>
+<td>the content element to operate on  
+</td>
+</tr>
+
+</table>
 
 ### cloneAttribute(aAttribute, aDestNode, aSourceNode) ###
   
@@ -288,6 +538,30 @@ The supplied nodes MUST BE ELEMENTS (most callers are working with nodes)
                                  element  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAttribute</td>
+<td>the name of the attribute to copy  
+</td>
+</tr>
+
+<tr>
+<td>aAttribute</td>
+<td>the name of the attribute to copy  
+</td>
+</tr>
+
+<tr>
+<td>aAttribute</td>
+<td>the name of the attribute to copy  
+</td>
+</tr>
+
+</table>
+
 ### cloneAttributes(destNode, sourceNode) ###
   
 cloneAttributes() is similar to nsIDOMNode::cloneNode(),  
@@ -301,6 +575,24 @@ The supplied nodes MUST BE ELEMENTS (most callers are working with nodes)
 @param aSourceNode   the source element to copy attributes from  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDestNode</td>
+<td>the destination element to operate on  
+</td>
+</tr>
+
+<tr>
+<td>aDestNode</td>
+<td>the destination element to operate on  
+</td>
+</tr>
+
+</table>
+
 ### createNode(tag, parent, position) ###
    
 createNode instantiates a new element of type aTag and inserts it  
@@ -310,6 +602,30 @@ into aParent at aPosition.
 @param aPosition The place in aParent to insert the new node  
 @return          The node created.  Caller must release aNewNode.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTag</td>
+<td>The type of object to create  
+</td>
+</tr>
+
+<tr>
+<td>aTag</td>
+<td>The type of object to create  
+</td>
+</tr>
+
+<tr>
+<td>aTag</td>
+<td>The type of object to create  
+</td>
+</tr>
+
+</table>
 
 ### insertNode(node, parent, aPosition) ###
    
@@ -323,6 +639,30 @@ That is the responsibility of the caller.
                  any number > number of current children = last child  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNode</td>
+<td>The DOM Node to insert.  
+</td>
+</tr>
+
+<tr>
+<td>aNode</td>
+<td>The DOM Node to insert.  
+</td>
+</tr>
+
+<tr>
+<td>aNode</td>
+<td>The DOM Node to insert.  
+</td>
+</tr>
+
+</table>
+
 ### splitNode(existingRightNode, offset, newLeftNode) ###
    
 splitNode() creates a new node identical to an existing node,  
@@ -334,6 +674,33 @@ and split the contents between the two nodes
 @param aNewLeftNode         [OUT] the new node resulting from the split,  
                             becomes aExistingRightNode's previous sibling.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aExistingRightNode</td>
+<td>the node to split.  
+                            It will become the new node's next sibling.  
+</td>
+</tr>
+
+<tr>
+<td>aExistingRightNode</td>
+<td>the node to split.  
+                            It will become the new node's next sibling.  
+</td>
+</tr>
+
+<tr>
+<td>aExistingRightNode</td>
+<td>the node to split.  
+                            It will become the new node's next sibling.  
+</td>
+</tr>
+
+</table>
 
 ### joinNodes(leftNode, rightNode, parent) ###
    
@@ -347,11 +714,47 @@ joinNodes() takes 2 nodes and merge their content|children.
                      merged only with another text node.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLeftNode</td>
+<td>The left node.  It will be deleted.  
+</td>
+</tr>
+
+<tr>
+<td>aLeftNode</td>
+<td>The left node.  It will be deleted.  
+</td>
+</tr>
+
+<tr>
+<td>aLeftNode</td>
+<td>The left node.  It will be deleted.  
+</td>
+</tr>
+
+</table>
+
 ### deleteNode(child) ###
    
 deleteNode removes aChild from aParent.  
 @param aChild    The node to delete  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChild</td>
+<td>The node to delete  
+</td>
+</tr>
+
+</table>
 
 ### outputsMozDirty() ###
   
@@ -365,6 +768,18 @@ markNodeDirty() sets a special dirty attribute on the node.
 Usually this will be called immediately after creating a new node.  
 @param aNode      The node for which to insert formatting.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNode</td>
+<td>The node for which to insert formatting.  
+</td>
+</tr>
+
+</table>
 
 ### switchTextDirection() ###
    

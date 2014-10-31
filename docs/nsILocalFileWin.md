@@ -17,6 +17,18 @@ Throws NS_ERROR_FAILURE if no value is found, or the value is empty.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aField         The field to look up.  
+</td>
+</tr>
+
+</table>
+
 ### setShortcut(targetFile, workingDir, args, description, iconFile, iconIndex) ###
   
 setShortcut  
@@ -43,6 +55,48 @@ shortcut
 iconFile.  If iconFile contains only one icon, this  
 value should be 0.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>targetFile</td>
+<td>the path that the shortcut should target  
+</td>
+</tr>
+
+<tr>
+<td>targetFile</td>
+<td>the path that the shortcut should target  
+</td>
+</tr>
+
+<tr>
+<td>targetFile</td>
+<td>the path that the shortcut should target  
+</td>
+</tr>
+
+<tr>
+<td>targetFile</td>
+<td>the path that the shortcut should target  
+</td>
+</tr>
+
+<tr>
+<td>targetFile</td>
+<td>the path that the shortcut should target  
+</td>
+</tr>
+
+<tr>
+<td>targetFile</td>
+<td>the path that the shortcut should target  
+</td>
+</tr>
+
+</table>
 
 ### openNSPRFileDescShareDelete(flags, mode) ###
   

@@ -22,6 +22,48 @@ Note: prompt uses separate args for the "in" and "out" values of the
 @return true for OK, false for Cancel  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+</table>
+
 ### promptUsernameAndPassword(dialogTitle, text, passwordRealm, savePassword, user, pwd) ###
   
 Puts up a username/password dialog with OK and Cancel buttons.  
@@ -36,6 +78,48 @@ Puts up a password dialog with OK and Cancel buttons.
                       selected.  
 @return true for OK, false for Cancel  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+</table>
 
 ### promptPassword(dialogTitle, text, passwordRealm, savePassword, pwd) ###
   
@@ -55,6 +139,42 @@ Puts up a password dialog with OK and Cancel buttons.
                       selected.  
 @return true for OK, false for Cancel  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>dialogText    The title for the dialog.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

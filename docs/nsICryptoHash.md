@@ -26,6 +26,20 @@ NOTE: This method or initWithString must be called
       before any other method on this interface is called.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAlgorithm</td>
+<td>the algorithm type to be used.  
+       This value must be one of the above valid  
+       algorithm types.  
+</td>
+</tr>
+
+</table>
+
 ### initWithString(aAlgorithm) ###
   
 Initialize the hashing object. This method may be  
@@ -40,6 +54,18 @@ NOTE: This method or init must be called before any
       other method on this interface is called.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAlgorithm</td>
+<td>the algorithm type to be used.  
+</td>
+</tr>
+
+</table>
+
 ### update(aData, aLen) ###
   
 @param aData a buffer to calculate the hash over  
@@ -49,6 +75,24 @@ NOTE: This method or init must be called before any
 @throws NS_ERROR_NOT_INITIALIZED if |init| has not been   
         called.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aData</td>
+<td>a buffer to calculate the hash over  
+</td>
+</tr>
+
+<tr>
+<td>aData</td>
+<td>a buffer to calculate the hash over  
+</td>
+</tr>
+
+</table>
 
 ### updateFromStream(aStream, aLen) ###
   
@@ -68,6 +112,24 @@ Calculates and updates a new hash based on a given data stream.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>an input stream to read from.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>an input stream to read from.  
+</td>
+</tr>
+
+</table>
+
 ### finish(aASCII) ###
   
 Completes this hash object and produces the actual hash data.  
@@ -86,6 +148,20 @@ NOTE: This method may be called any time after |init|
       is called.  This call resets the object to its  
       pre-init state.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aASCII</td>
+<td>if true then the returned value is a base-64   
+       encoded string.  if false, then the returned value is  
+       binary data.    
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

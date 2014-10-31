@@ -37,6 +37,30 @@ Note: This function should only be called once.
       object.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>window</td>
+<td>   The window  
+</td>
+</tr>
+
+<tr>
+<td>window</td>
+<td>   The window  
+</td>
+</tr>
+
+<tr>
+<td>window</td>
+<td>   The window  
+</td>
+</tr>
+
+</table>
+
 ### initWithWeakCallback(window, channelType, callback) ###
   
 This method is just like init(), except the audio channel agent keeps a  
@@ -54,6 +78,18 @@ with video.
 @param weak  
    true if weak reference should be hold.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>weak</td>
+<td>   true if weak reference should be hold.  
+</td>
+</tr>
+
+</table>
 
 ### startPlaying() ###
   
@@ -87,6 +123,18 @@ Notify the agent of the visibility state of the window using this agent.
 @param visible  
    True if the window associated with the agent is visible.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>visible</td>
+<td>   True if the window associated with the agent is visible.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

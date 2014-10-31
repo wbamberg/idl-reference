@@ -15,6 +15,24 @@ in the list.  If false, this means that when new entries are added
 this element will not appear in the session history list.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEntry</td>
+<td>- The entry to add  
+</td>
+</tr>
+
+<tr>
+<td>aEntry</td>
+<td>- The entry to add  
+</td>
+</tr>
+
+</table>
+
 ### updateIndex() ###
    
 Update the index maintained by sessionHistory  
@@ -27,6 +45,24 @@ Replace the nsISHEntry at a particular index
 @param aReplaceEntry - The replacement entry for the index.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>- The index at which the entry should be replaced  
+</td>
+</tr>
+
+<tr>
+<td>aIndex</td>
+<td>- The index at which the entry should be replaced  
+</td>
+</tr>
+
+</table>
+
 ### notifyOnHistoryReload(aReloadURI, aReloadFlags) ###
   
 Notifies all registered session history listeners about an impending  
@@ -38,6 +74,24 @@ reload.
                      interface.  
 @return              Whether the operation can proceed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aReloadURI</td>
+<td>The URI of the document to be reloaded.  
+</td>
+</tr>
+
+<tr>
+<td>aReloadURI</td>
+<td>The URI of the document to be reloaded.  
+</td>
+</tr>
+
+</table>
 
 ### evictOutOfRangeContentViewers(aIndex) ###
   
@@ -52,6 +106,20 @@ not greater than our global max; if it is, evict viewers as appropriate.
   general, if you just navigated the history, aIndex should be the index  
   history was navigated to.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>- The index around which the "safe" range is centered.  In  
+  general, if you just navigated the history, aIndex should be the index  
+  history was navigated to.  
+</td>
+</tr>
+
+</table>
 
 ### evictExpiredContentViewerForEntry(aEntry) ###
   

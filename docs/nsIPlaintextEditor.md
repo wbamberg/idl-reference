@@ -24,6 +24,18 @@ and the insertion takes place at the resulting collapsed selection.
 @param aString   the string to be inserted  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aString</td>
+<td>the string to be inserted  
+</td>
+</tr>
+
+</table>
+
 ### insertLineBreak() ###
   
 Insert a line break into the content model.  

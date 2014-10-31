@@ -22,6 +22,18 @@ a custom function.
 @param aFunctionArguments    The arguments passed in to the function  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFunctionArguments</td>
+<td>The arguments passed in to the function  
+</td>
+</tr>
+
+</table>
+
 ### onFinal() ###
   
 Called when all tuples in a group have been processed and the engine  

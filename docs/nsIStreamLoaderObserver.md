@@ -27,3 +27,39 @@ in place of NS_OK as its success code. The loader will then
 onStreamComplete() returns; observer must call moz_free()  
 when the data is no longer required.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>loader</td>
+<td>the stream loader that loaded the stream.  
+</td>
+</tr>
+
+<tr>
+<td>loader</td>
+<td>the stream loader that loaded the stream.  
+</td>
+</tr>
+
+<tr>
+<td>loader</td>
+<td>the stream loader that loaded the stream.  
+</td>
+</tr>
+
+<tr>
+<td>loader</td>
+<td>the stream loader that loaded the stream.  
+</td>
+</tr>
+
+<tr>
+<td>loader</td>
+<td>the stream loader that loaded the stream.  
+</td>
+</tr>
+
+</table>

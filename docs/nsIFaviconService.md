@@ -30,6 +30,18 @@ For invalid chrome URIs, you'll get a broken image.
         output will be the same as the input.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       The URI of an icon in the favicon service.  
+</td>
+</tr>
+
+</table>
+
 ### expireAllFavicons() ###
   
 Expire all known favicons from the database.  
@@ -51,6 +63,18 @@ fetching an icon.
        The URI of an icon in the favicon service.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       The URI of an icon in the favicon service.  
+</td>
+</tr>
+
+</table>
+
 ### removeFailedFavicon(aFaviconURI) ###
   
 Removes the given favicon from the failed favicon cache.  If the icon is  
@@ -59,6 +83,18 @@ not in the cache, it will silently succeed.
 @param aFaviconURI  
        The URI of an icon in the favicon service.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       The URI of an icon in the favicon service.  
+</td>
+</tr>
+
+</table>
 
 ### isFailedFavicon(aFaviconURI) ###
   
@@ -72,6 +108,18 @@ page on a site that doesn't have a favicon.
 @param aFaviconURI  
        The URI of an icon in the favicon service.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       The URI of an icon in the favicon service.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

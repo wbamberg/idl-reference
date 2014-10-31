@@ -40,6 +40,26 @@ Registers a listener to receive web progress events.
        Indicates that aListener was already registered.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>       The listener interface to be called when a progress event occurs.  
+       This object must also implement nsISupportsWeakReference.  
+</td>
+</tr>
+
+<tr>
+<td>aListener</td>
+<td>       The listener interface to be called when a progress event occurs.  
+       This object must also implement nsISupportsWeakReference.  
+</td>
+</tr>
+
+</table>
+
 ### removeProgressListener(aListener) ###
   
 Removes a previously registered listener of progress events.  
@@ -51,6 +71,19 @@ Removes a previously registered listener of progress events.
 @throw NS_ERROR_FAILURE  
        Indicates that aListener was not registered.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>       The listener interface previously registered with a call to  
+       addProgressListener.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

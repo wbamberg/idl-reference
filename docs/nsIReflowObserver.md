@@ -16,6 +16,26 @@ Called when an uninterruptible reflow has occurred.
              navigationStart (accurate to 1/1000 of a ms)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>start</td>
+<td>timestamp when reflow ended, in milliseconds since  
+             navigationStart (accurate to 1/1000 of a ms)  
+</td>
+</tr>
+
+<tr>
+<td>start</td>
+<td>timestamp when reflow ended, in milliseconds since  
+             navigationStart (accurate to 1/1000 of a ms)  
+</td>
+</tr>
+
+</table>
+
 ### reflowInterruptible(start, end) ###
   
 Called when an interruptible reflow has occurred.  
@@ -25,3 +45,23 @@ Called when an interruptible reflow has occurred.
 @param end   timestamp when reflow ended, in milliseconds since  
              navigationStart (accurate to 1/1000 of a ms)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>start</td>
+<td>timestamp when reflow ended, in milliseconds since  
+             navigationStart (accurate to 1/1000 of a ms)  
+</td>
+</tr>
+
+<tr>
+<td>start</td>
+<td>timestamp when reflow ended, in milliseconds since  
+             navigationStart (accurate to 1/1000 of a ms)  
+</td>
+</tr>
+
+</table>

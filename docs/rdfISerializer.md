@@ -21,3 +21,21 @@ other stream-based optimizations.
 @param aDataSource The RDF data source to be serialized.  
 @param aOut The output stream to use.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDataSource</td>
+<td>The RDF data source to be serialized.  
+</td>
+</tr>
+
+<tr>
+<td>aDataSource</td>
+<td>The RDF data source to be serialized.  
+</td>
+</tr>
+
+</table>

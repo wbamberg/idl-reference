@@ -24,6 +24,40 @@ bookmarks.
          The nsIFeed type of the feed.  See nsIFeed.idl  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>uri  
+         The uri of the feed to add.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>uri  
+         The uri of the feed to add.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>uri  
+         The uri of the feed to add.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>uri  
+         The uri of the feed to add.  
+</td>
+</tr>
+
+</table>
+
 ### addFeedResult(feedResult) ###
   
 Registers a Feed Result object with a globally accessible service  
@@ -34,6 +68,19 @@ flow of control in document loading.
          An object implementing nsIFeedResult representing the feed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>feedResult  
+         An object implementing nsIFeedResult representing the feed.  
+</td>
+</tr>
+
+</table>
+
 ### getFeedResult(uri) ###
   
 Gets a Feed Handler object registered using addFeedResult.  
@@ -42,6 +89,19 @@ Gets a Feed Handler object registered using addFeedResult.
          The URI of the feed a handler is being requested for  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>uri  
+         The URI of the feed a handler is being requested for  
+</td>
+</tr>
+
+</table>
+
 ### removeFeedResult(uri) ###
   
 Unregisters a Feed Handler object registered using addFeedResult.  
@@ -49,6 +109,20 @@ Unregisters a Feed Handler object registered using addFeedResult.
          The feed URI the handler was registered under. This must be  
          the same *instance* the feed was registered under.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>uri  
+         The feed URI the handler was registered under. This must be  
+         the same *instance* the feed was registered under.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

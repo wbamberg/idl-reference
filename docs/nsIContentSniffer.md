@@ -27,3 +27,27 @@ request may be used in order to make a better decision.
 they should not attempt to set the content type property that subclasses of  
 nsIRequest might offer.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>The request where this data came from. May be null.  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>The request where this data came from. May be null.  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>The request where this data came from. May be null.  
+</td>
+</tr>
+
+</table>

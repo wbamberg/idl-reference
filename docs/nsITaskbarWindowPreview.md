@@ -17,6 +17,19 @@ are invisible.
              MAX_TOOLBAR_BUTTONS.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The index into the button array. Must be >= 0 and <  
+             MAX_TOOLBAR_BUTTONS.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### enableCustomDrawing ###

@@ -18,6 +18,24 @@ The selection is collapsed and is left in the new cell
                     else insert before current cell  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNumber</td>
+<td>Number of items to insert  
+</td>
+</tr>
+
+<tr>
+<td>aNumber</td>
+<td>Number of items to insert  
+</td>
+</tr>
+
+</table>
+
 ### insertTableColumn(aNumber, aAfter) ###
 
 ### insertTableRow(aNumber, aAfter) ###
@@ -33,6 +51,18 @@ The selection is collapsed and is left in the
   
 @param aNumber    Number of items to insert/delete  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNumber</td>
+<td>Number of items to insert/delete  
+</td>
+</tr>
+
+</table>
 
 ### deleteTableCellContents() ###
  Delete just the cell contents  
@@ -50,6 +80,18 @@ For Delete Rows or Columns, the complete columns or rows are
  user simply selects a cell in each, and they don't  
  have to be contiguous.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNumber</td>
+<td>Number of contiguous cells, rows, or columns  
+</td>
+</tr>
+
+</table>
 
 ### deleteTableColumn(aNumber) ###
 
@@ -111,6 +153,22 @@ If there are no selected cells,
   are merged  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aMergeNonContiguousContents:</td>
+<td>      If true:   
+        Non-contiguous cells are not deleted,  
+        but their contents are still moved   
+        to the upper-left cell  
+      If false: contiguous cells are ignored  
+</td>
+</tr>
+
+</table>
+
 ### splitTableCell() ###
  Split a cell that has rowspan and/or colspan > 0  
   into cells such that all new cells have   
@@ -160,6 +218,24 @@ A cell that spans across multiple cellmap locations will
   until the returned aCell is null  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTable</td>
+<td>A table in the document  
+</td>
+</tr>
+
+<tr>
+<td>aTable</td>
+<td>A table in the document  
+</td>
+</tr>
+
+</table>
+
 ### getCellDataAt(aTable, aRowIndex, aColIndex, aCell, aStartRowIndex, aStartColIndex, aRowSpan, aColSpan, aActualRowSpan, aActualColSpan, aIsSelected) ###
  Get a cell at cellmap grid coordinates and associated data  
 A cell that spans across multiple cellmap locations will  
@@ -208,6 +284,18 @@ returns values:
  passes NS_SUCCEEDED macro)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTableElement</td>
+<td>Any TR or child-of-TR element in the document  
+</td>
+</tr>
+
+</table>
+
 ### setSelectionAfterTableEdit(aTable, aRow, aCol, aDirection, aSelected) ###
  Preferred direction to search for neighboring cell  
 when trying to locate a cell to place caret in after  
@@ -232,6 +320,42 @@ Used for aDirection param in SetSelectionAfterTableEdit
                     object to insure we reset the caret in a table-editing method.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTable</td>
+<td>A table in the document  
+</td>
+</tr>
+
+<tr>
+<td>aTable</td>
+<td>A table in the document  
+</td>
+</tr>
+
+<tr>
+<td>aTable</td>
+<td>A table in the document  
+</td>
+</tr>
+
+<tr>
+<td>aTable</td>
+<td>A table in the document  
+</td>
+</tr>
+
+<tr>
+<td>aTable</td>
+<td>A table in the document  
+</td>
+</tr>
+
+</table>
+
 ### getSelectedOrParentTableElement(aTagName, aCount) ###
  Examine the current selection and find  
   a selected TABLE, TD or TH, or TR element.  
@@ -247,6 +371,28 @@ Used for aDirection param in SetSelectionAfterTableEdit
 @return                 The table element (table, row, or first selected cell)  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTagName</td>
+<td>The tagname of returned element  
+                        Note that "td" will be returned if name  
+                        is actually "th"  
+</td>
+</tr>
+
+<tr>
+<td>aTagName</td>
+<td>The tagname of returned element  
+                        Note that "td" will be returned if name  
+                        is actually "th"  
+</td>
+</tr>
+
+</table>
 
 ### getSelectedCellsType(aElement) ###
  Generally used after GetSelectedOrParentTableElement  
@@ -270,6 +416,21 @@ Used for aDirection param in SetSelectionAfterTableEdit
                              and in each column, all cells are selected  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>Any table or cell element or any element  
+                          inside a table  
+                          Used to get enclosing table.   
+                          If null, selection's anchorNode is used  
+</td>
+</tr>
+
+</table>
+
 ### getFirstSelectedCell(aRange) ###
  Get first selected element from first selection range.  
   (If multiple cells were selected this is the first in the order they were selected)  
@@ -283,6 +444,26 @@ Returns the DOM cell element
   (in C++: returns NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
    passes NS_SUCCEEDED macro)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCell</td>
+<td>[OUT] Selected cell or null if ranges don't contain  
+                 cell selections  
+</td>
+</tr>
+
+<tr>
+<td>aCell</td>
+<td>[OUT] Selected cell or null if ranges don't contain  
+                 cell selections  
+</td>
+</tr>
+
+</table>
 
 ### getFirstSelectedCellInTable(aRowIndex, aColIndex) ###
  Get first selected element in the table  
@@ -300,6 +481,33 @@ Returns the DOM cell element
    passes NS_SUCCEEDED macro)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCell</td>
+<td>Selected cell or null if ranges don't contain  
+                   cell selections  
+</td>
+</tr>
+
+<tr>
+<td>aCell</td>
+<td>Selected cell or null if ranges don't contain  
+                   cell selections  
+</td>
+</tr>
+
+<tr>
+<td>aCell</td>
+<td>Selected cell or null if ranges don't contain  
+                   cell selections  
+</td>
+</tr>
+
+</table>
+
 ### getNextSelectedCell(aRange) ###
  Get next selected cell element from first selection range.  
 Assumes cell-selection model where each cell  
@@ -314,6 +522,26 @@ Returns the DOM cell element
   (in C++: returns NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
    passes NS_SUCCEEDED macro)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCell</td>
+<td>Selected cell or null if no more selected cells  
+                    or ranges don't contain cell selections  
+</td>
+</tr>
+
+<tr>
+<td>aCell</td>
+<td>Selected cell or null if no more selected cells  
+                    or ranges don't contain cell selections  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

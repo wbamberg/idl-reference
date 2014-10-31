@@ -34,6 +34,42 @@ Initialize a standard URL.
                         to aBaseURI.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aUrlType</td>
+<td>- one of the URLTYPE_ flags listed above.  
+</td>
+</tr>
+
+<tr>
+<td>aUrlType</td>
+<td>- one of the URLTYPE_ flags listed above.  
+</td>
+</tr>
+
+<tr>
+<td>aUrlType</td>
+<td>- one of the URLTYPE_ flags listed above.  
+</td>
+</tr>
+
+<tr>
+<td>aUrlType</td>
+<td>- one of the URLTYPE_ flags listed above.  
+</td>
+</tr>
+
+<tr>
+<td>aUrlType</td>
+<td>- one of the URLTYPE_ flags listed above.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### URLTYPE_STANDARD ###

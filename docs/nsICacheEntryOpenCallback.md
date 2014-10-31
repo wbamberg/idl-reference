@@ -29,6 +29,26 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
    State of the entry, see the constants just above.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEntry</td>
+<td>   An entry to examine.  Consumer has a chance to decide whether the  
+   entry is valid or not.  
+</td>
+</tr>
+
+<tr>
+<td>aEntry</td>
+<td>   An entry to examine.  Consumer has a chance to decide whether the  
+   entry is valid or not.  
+</td>
+</tr>
+
+</table>
+
 ### onCacheEntryAvailable(aEntry, aNew, aApplicationCache, aResult) ###
   
 Callback giving actual result of asyncOpenURI.  It may give consumer the cache   
@@ -59,6 +79,44 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
    - there is not enough disk space to create new entries  
    - cache entry was not found in a given application cache  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEntry</td>
+<td>   The entry bound to the originally requested URI.  May be null when  
+   loading from a particular application cache and the URI has not  
+   been found in that application cache.  
+</td>
+</tr>
+
+<tr>
+<td>aEntry</td>
+<td>   The entry bound to the originally requested URI.  May be null when  
+   loading from a particular application cache and the URI has not  
+   been found in that application cache.  
+</td>
+</tr>
+
+<tr>
+<td>aEntry</td>
+<td>   The entry bound to the originally requested URI.  May be null when  
+   loading from a particular application cache and the URI has not  
+   been found in that application cache.  
+</td>
+</tr>
+
+<tr>
+<td>aEntry</td>
+<td>   The entry bound to the originally requested URI.  May be null when  
+   loading from a particular application cache and the URI has not  
+   been found in that application cache.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

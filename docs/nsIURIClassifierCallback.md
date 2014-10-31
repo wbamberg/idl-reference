@@ -20,3 +20,16 @@ calls.
        The error code with which the channel should be cancelled, or  
        NS_OK if the load should continue normally.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aErrorCode</td>
+<td>       The error code with which the channel should be cancelled, or  
+       NS_OK if the load should continue normally.  
+</td>
+</tr>
+
+</table>

@@ -25,6 +25,18 @@ where "ext" is:
 @param aChromeURL the URL that is to be converted.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChromeURL</td>
+<td>the URL that is to be converted.  
+</td>
+</tr>
+
+</table>
+
 ### checkForNewChrome() ###
   
 refresh the chrome list at runtime, looking for new packages/etc  

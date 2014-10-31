@@ -21,6 +21,24 @@ Import the stylesheet into this XSLTProcessor for transformations.
 @exception nsIXSLTException  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>style</td>
+<td>The root-node of a XSLT stylesheet. This can be either  
+             a document node or an element node. If a document node  
+             then the document can contain either a XSLT stylesheet  
+             or a LRE stylesheet.  
+             If the argument is an element node it must be the  
+             xsl:stylesheet (or xsl:transform) element of an XSLT  
+             stylesheet.  
+</td>
+</tr>
+
+</table>
+
 ### transformToFragment(source, output) ###
   
 Transforms the node source applying the stylesheet given by  
@@ -34,6 +52,24 @@ owns the returned document fragment.
 @exception nsIXSLTException  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>source</td>
+<td>The node to be transformed  
+</td>
+</tr>
+
+<tr>
+<td>source</td>
+<td>The node to be transformed  
+</td>
+</tr>
+
+</table>
+
 ### transformToDocument(source) ###
   
 Transforms the node source applying the stylesheet given by the  
@@ -44,6 +80,18 @@ importStylesheet() function.
   
 @exception nsIXSLTException  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>source</td>
+<td>The node to be transformed  
+</td>
+</tr>
+
+</table>
 
 ### setParameter(namespaceURI, localName, value) ###
   
@@ -59,6 +107,30 @@ parameter will be ignored.
                                   not supported  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>namespaceURI</td>
+<td>The namespaceURI of the XSLT parameter  
+</td>
+</tr>
+
+<tr>
+<td>namespaceURI</td>
+<td>The namespaceURI of the XSLT parameter  
+</td>
+</tr>
+
+<tr>
+<td>namespaceURI</td>
+<td>The namespaceURI of the XSLT parameter  
+</td>
+</tr>
+
+</table>
+
 ### getParameter(namespaceURI, localName) ###
   
 Gets a parameter if previously set by setParameter. Returns null  
@@ -69,6 +141,24 @@ otherwise.
 @return nsIVariant  The value of the XSLT parameter  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>namespaceURI</td>
+<td>The namespaceURI of the XSLT parameter  
+</td>
+</tr>
+
+<tr>
+<td>namespaceURI</td>
+<td>The namespaceURI of the XSLT parameter  
+</td>
+</tr>
+
+</table>
+
 ### removeParameter(namespaceURI, localName) ###
   
 Removes a parameter, if set. This will make the processor use the  
@@ -77,6 +167,24 @@ default-value for the parameter as specified in the stylesheet.
 @param namespaceURI The namespaceURI of the XSLT parameter  
 @param localName    The local name of the XSLT parameter  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>namespaceURI</td>
+<td>The namespaceURI of the XSLT parameter  
+</td>
+</tr>
+
+<tr>
+<td>namespaceURI</td>
+<td>The namespaceURI of the XSLT parameter  
+</td>
+</tr>
+
+</table>
 
 ### clearParameters() ###
   

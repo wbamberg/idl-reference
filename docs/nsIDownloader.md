@@ -30,3 +30,21 @@ Initialize this downloader
        not be deleted, and it will be the callers responsibility  
        to keep track of the file, etc.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>observer</td>
+<td>       the observer to be notified when the download completes.  
+</td>
+</tr>
+
+<tr>
+<td>observer</td>
+<td>       the observer to be notified when the download completes.  
+</td>
+</tr>
+
+</table>

@@ -16,6 +16,30 @@ Given a transferable, set the data on the native clipboard
 @result NS_Ok if no errors  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aTransferable The transferable  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aTransferable The transferable  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aTransferable The transferable  
+</td>
+</tr>
+
+</table>
+
 ### getData(aTransferable, aWhichClipboard) ###
   
 Given a transferable, get the clipboard data.  
@@ -25,6 +49,24 @@ Given a transferable, get the clipboard data.
 @result NS_Ok if no errors  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aTransferable The transferable  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aTransferable The transferable  
+</td>
+</tr>
+
+</table>
+
 ### emptyClipboard(aWhichClipboard) ###
   
 This empties the clipboard and notifies the clipboard owner.  
@@ -33,6 +75,19 @@ This empties the "logical" clipboard. It does not clear the native clipboard.
 @param  aWhichClipboard Specifies the clipboard to which this operation applies.  
 @result NS_OK if successful.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aWhichClipboard Specifies the clipboard to which this operation applies.  
+@result NS_OK if successful.  
+</td>
+</tr>
+
+</table>
 
 ### hasDataMatchingFlavors(aFlavorList, aLength, aWhichClipboard) ###
   
@@ -47,6 +102,30 @@ any of the flavors in the given list.
 @outResult - if data is present matching one of   
 @result NS_OK if successful.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aFlavorList     An array of ASCII strings.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aFlavorList     An array of ASCII strings.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aFlavorList     An array of ASCII strings.  
+</td>
+</tr>
+
+</table>
 
 ### supportsSelectionClipboard() ###
   

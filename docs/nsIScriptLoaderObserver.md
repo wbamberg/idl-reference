@@ -23,6 +23,52 @@ this method will be called when the load completes.
        if it is a loaded script).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aResult</td>
+<td>A result code representing the result of loading  
+       a script. If this is a failure code, script evaluation  
+       will not occur.  
+</td>
+</tr>
+
+<tr>
+<td>aResult</td>
+<td>A result code representing the result of loading  
+       a script. If this is a failure code, script evaluation  
+       will not occur.  
+</td>
+</tr>
+
+<tr>
+<td>aResult</td>
+<td>A result code representing the result of loading  
+       a script. If this is a failure code, script evaluation  
+       will not occur.  
+</td>
+</tr>
+
+<tr>
+<td>aResult</td>
+<td>A result code representing the result of loading  
+       a script. If this is a failure code, script evaluation  
+       will not occur.  
+</td>
+</tr>
+
+<tr>
+<td>aResult</td>
+<td>A result code representing the result of loading  
+       a script. If this is a failure code, script evaluation  
+       will not occur.  
+</td>
+</tr>
+
+</table>
+
 ### scriptEvaluated(aResult, aElement, aIsInline) ###
   
 The script has been evaluated.  
@@ -32,3 +78,30 @@ The script has been evaluated.
 @param aElement The element being processed.  
 @param aIsInline Is this an inline script or externally loaded?  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aResult</td>
+<td>A result code representing the success or failure of  
+       the script evaluation.  
+</td>
+</tr>
+
+<tr>
+<td>aResult</td>
+<td>A result code representing the success or failure of  
+       the script evaluation.  
+</td>
+</tr>
+
+<tr>
+<td>aResult</td>
+<td>A result code representing the success or failure of  
+       the script evaluation.  
+</td>
+</tr>
+
+</table>

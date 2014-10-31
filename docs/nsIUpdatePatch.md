@@ -19,6 +19,19 @@ Serializes this patch object into a DOM Element
 @returns The DOM Element created by the serialization process  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>updates  
+         The document to serialize into  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### type ###

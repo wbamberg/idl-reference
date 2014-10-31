@@ -14,6 +14,24 @@ Called if the user picked an activitiy to launch.
 If NATIVE_ACTIVITY, the return value to be sent to the MozActivity.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>resultType</td>
+<td>Inidcates that {@code result} is an index or a native activity result.  
+</td>
+</tr>
+
+<tr>
+<td>resultType</td>
+<td>Inidcates that {@code result} is an index or a native activity result.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### WEBAPPS_ACTIVITY ###

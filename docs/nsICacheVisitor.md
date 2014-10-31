@@ -17,6 +17,24 @@ Called to provide information about a cache device.
 @return false to advance to the next device.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>deviceID</td>
+<td>- specifies the device being visited.  
+</td>
+</tr>
+
+<tr>
+<td>deviceID</td>
+<td>- specifies the device being visited.  
+</td>
+</tr>
+
+</table>
+
 ### visitEntry(deviceID, entryInfo) ###
   
 Called to provide information about a cache entry.  
@@ -28,3 +46,21 @@ Called to provide information about a cache entry.
   end of the device has been reached, advance to the next device.  
 @return false to advance to the next device.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>deviceID</td>
+<td>- specifies the device being visited.  
+</td>
+</tr>
+
+<tr>
+<td>deviceID</td>
+<td>- specifies the device being visited.  
+</td>
+</tr>
+
+</table>

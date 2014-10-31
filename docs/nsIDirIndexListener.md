@@ -20,6 +20,30 @@ Called for each directory entry
 @param index - new index to add  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>request</td>
+<td>- the request  
+</td>
+</tr>
+
+<tr>
+<td>request</td>
+<td>- the request  
+</td>
+</tr>
+
+<tr>
+<td>request</td>
+<td>- the request  
+</td>
+</tr>
+
+</table>
+
 ### onInformationAvailable(aRequest, aCtxt, aInfo) ###
   
 Called for each information line  
@@ -28,3 +52,27 @@ Called for each information line
 @param ctxt - opaque parameter  
 @param info - new info to add  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>request</td>
+<td>- the request  
+</td>
+</tr>
+
+<tr>
+<td>request</td>
+<td>- the request  
+</td>
+</tr>
+
+<tr>
+<td>request</td>
+<td>- the request  
+</td>
+</tr>
+
+</table>

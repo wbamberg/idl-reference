@@ -18,6 +18,18 @@ process the request.
        MMI service code key string that defined in MMI_KS_SC_*  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>serviceCode</td>
+<td>       MMI service code key string that defined in MMI_KS_SC_*  
+</td>
+</tr>
+
+</table>
+
 ### notifyDialCallSuccess(callIndex, number) ###
   
 Called when a dial request is treated as a call setup and the result  
@@ -29,6 +41,24 @@ succeeds.
        Dialed out phone number (ex: Temporary CLIR prefix will be removed)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>callIndex</td>
+<td>       Call index from RIL.  
+</td>
+</tr>
+
+<tr>
+<td>callIndex</td>
+<td>       Call index from RIL.  
+</td>
+</tr>
+
+</table>
+
 ### notifyDialMMISuccess(result) ###
   
 Called when a MMI code request succeeds.  
@@ -37,6 +67,18 @@ The function should only be called after notifyDialMMI.
 @param result  
        Result of the request. See MozMMIResult.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>result</td>
+<td>       Result of the request. See MozMMIResult.  
+</td>
+</tr>
+
+</table>
 
 ### notifyDialMMIError(error) ###
   

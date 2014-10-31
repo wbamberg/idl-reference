@@ -154,6 +154,24 @@ X.509 certificates stored in a database.
                    trust.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>cert</td>
+<td>The certificate for which to modify trust.  
+</td>
+</tr>
+
+<tr>
+<td>cert</td>
+<td>The certificate for which to modify trust.  
+</td>
+</tr>
+
+</table>
+
 ### isCertTrusted(cert, certType, trustType) ###
   
  Query whether a certificate is trusted for a particular use.  

@@ -22,6 +22,18 @@ Return link accessible at the given index.
 @return       link accessible or null if there is no link at that index  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>[in] 0-based index of the link that is to be retrieved  
+</td>
+</tr>
+
+</table>
+
 ### getLinkIndex(link) ###
   
 Return index of the given link.  
@@ -31,6 +43,18 @@ Return index of the given link.
 @return      index of the given link or null if there's no link within  
                hypertext accessible  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>link</td>
+<td>[in] link accessible the index is requested for  
+</td>
+</tr>
+
+</table>
 
 ### getLinkIndexAtOffset(offset) ###
 

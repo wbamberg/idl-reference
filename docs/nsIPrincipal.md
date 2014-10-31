@@ -68,6 +68,30 @@ NOTE: The 'domain' attribute has no effect on the behaviour of this
 @throws NS_ERROR_DOM_BAD_URI if the load is not allowed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>The URI about to be loaded.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>The URI about to be loaded.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>The URI about to be loaded.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### hashValue ###

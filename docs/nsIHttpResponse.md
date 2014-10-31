@@ -32,6 +32,33 @@ version (e.g. "1.1"), followed by " 200 OK".
   this  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>httpVersion</td>
+<td>  the HTTP version of this, as a string (e.g. "1.1"); if null, the server  
+  default is used  
+</td>
+</tr>
+
+<tr>
+<td>httpVersion</td>
+<td>  the HTTP version of this, as a string (e.g. "1.1"); if null, the server  
+  default is used  
+</td>
+</tr>
+
+<tr>
+<td>httpVersion</td>
+<td>  the HTTP version of this, as a string (e.g. "1.1"); if null, the server  
+  default is used  
+</td>
+</tr>
+
+</table>
+
 ### setHeader(name, value, merge) ###
   
 Sets the specified header in this.  
@@ -56,6 +83,30 @@ Sets the specified header in this.
   written to this response's body, or if seizePower() has been called on  
   this  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>  the name of the header; must match the field-name production per RFC 2616  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>  the name of the header; must match the field-name production per RFC 2616  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>  the name of the header; must match the field-name production per RFC 2616  
+</td>
+</tr>
+
+</table>
 
 ### write(data) ###
   

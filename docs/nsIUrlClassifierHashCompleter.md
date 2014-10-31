@@ -26,3 +26,27 @@ Request a completed hash from the given gethash url.
 @param callback  
        An nsIUrlClassifierCompleterCallback instance.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>partialHash</td>
+<td>       The 32-bit hash encountered by the url-classifier.  
+</td>
+</tr>
+
+<tr>
+<td>partialHash</td>
+<td>       The 32-bit hash encountered by the url-classifier.  
+</td>
+</tr>
+
+<tr>
+<td>partialHash</td>
+<td>       The 32-bit hash encountered by the url-classifier.  
+</td>
+</tr>
+
+</table>

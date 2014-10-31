@@ -23,6 +23,30 @@ query to a nsIClassInfo.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+</table>
+
 ### registerSelf(aCompMgr, aLocation, aLoaderStr, aType) ###
   
 One time registration callback  
@@ -36,6 +60,36 @@ called so that any setup registration can be preformed.
 @param aType     : Loader Type being used to load this module   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+</table>
+
 ### unregisterSelf(aCompMgr, aLocation, aLoaderStr) ###
   
 One time unregistration callback  
@@ -48,6 +102,30 @@ called so that any unregistration can be preformed
 @param aLoaderStr : Opaque loader specific string  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+</table>
 
 ### canUnload(aCompMgr) ###
    
@@ -63,3 +141,15 @@ Module load management
       PR_TRUE.   
 	Returning PR_FALSE guaratees that the module won't be unloaded.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCompMgr</td>
+<td>: The global component manager  
+</td>
+</tr>
+
+</table>

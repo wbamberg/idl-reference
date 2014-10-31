@@ -16,6 +16,24 @@ parse RDF/XML.
 @return an nsIStreamListener object to handle the data  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSink</td>
+<td>the RDF datasource the will receive the data  
+</td>
+</tr>
+
+<tr>
+<td>aSink</td>
+<td>the RDF datasource the will receive the data  
+</td>
+</tr>
+
+</table>
+
 ### parseString(aSink, aBaseURI, aSource) ###
   
 Parse a string of RDF/XML  
@@ -24,3 +42,27 @@ Parse a string of RDF/XML
   references in the RDF/XML  
 @param aSource a UTF8 string containing RDF/XML data.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSink</td>
+<td>the RDF datasource that will receive the data  
+</td>
+</tr>
+
+<tr>
+<td>aSink</td>
+<td>the RDF datasource that will receive the data  
+</td>
+</tr>
+
+<tr>
+<td>aSink</td>
+<td>the RDF datasource that will receive the data  
+</td>
+</tr>
+
+</table>

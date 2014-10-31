@@ -22,6 +22,18 @@ Wrap the given nsIInputStream with this nsIScriptableInputStream.
 @param aInputStream parameter providing the stream to wrap   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aInputStream</td>
+<td>parameter providing the stream to wrap   
+</td>
+</tr>
+
+</table>
+
 ### available() ###
   
 Return the number of bytes currently available in the stream   
@@ -46,6 +58,18 @@ a truncated string.
 @throws NS_ERROR_NOT_INITIALIZED if init was not called  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCount</td>
+<td>the maximum number of bytes to read   
+</td>
+</tr>
+
+</table>
+
 ### readBytes(aCount) ###
   
 Read data from the stream, including NULL bytes.  
@@ -60,3 +84,15 @@ Read data from the stream, including NULL bytes.
 @throws NS_ERROR_FAILURE if there are not enough bytes available to read  
         aCount amount of data.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCount</td>
+<td>the maximum number of bytes to read.  
+</td>
+</tr>
+
+</table>

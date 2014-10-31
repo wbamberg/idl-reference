@@ -14,6 +14,30 @@ Initialize with a pointer to the document and the mime type.
 @param aFlags Flags to use while encoding. May also be set by SetFlags.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDocument</td>
+<td>Document to encode.  
+</td>
+</tr>
+
+<tr>
+<td>aDocument</td>
+<td>Document to encode.  
+</td>
+</tr>
+
+<tr>
+<td>aDocument</td>
+<td>Document to encode.  
+</td>
+</tr>
+
+</table>
+
 ### nativeInit(aDocument, aMimeType, aFlags) ###
 
 ### setSelection(aSelection) ###
@@ -24,6 +48,18 @@ Initialize with a pointer to the document and the mime type.
 @param aSelection The selection to encode.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSelection</td>
+<td>The selection to encode.  
+</td>
+</tr>
+
+</table>
+
 ### setRange(aRange) ###
   
  If the range is set to a non-null value, then the  
@@ -32,6 +68,18 @@ Initialize with a pointer to the document and the mime type.
 @param aRange The range to encode.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRange</td>
+<td>The range to encode.  
+</td>
+</tr>
+
+</table>
+
 ### setNode(aNode) ###
   
  If the node is set to a non-null value, then the  
@@ -39,6 +87,18 @@ Initialize with a pointer to the document and the mime type.
  document or range or selection is encoded.  
 @param aNode The node to encode.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNode</td>
+<td>The node to encode.  
+</td>
+</tr>
+
+</table>
 
 ### setNativeNode(aNode) ###
 
@@ -70,6 +130,18 @@ Initialize with a pointer to the document and the mime type.
 @param aWrapColumn Column to which to wrap.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWrapColumn</td>
+<td>Column to which to wrap.  
+</td>
+</tr>
+
+</table>
+
 ### encodeToStream(aStream) ###
   
  Encode the document and send the result to the nsIOutputStream.  
@@ -78,6 +150,18 @@ Initialize with a pointer to the document and the mime type.
  been encountered.  
 @param aStream Stream into which to encode.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>Stream into which to encode.  
+</td>
+</tr>
+
+</table>
 
 ### encodeToString() ###
   
@@ -98,6 +182,26 @@ into the two arguments.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>[OUT]</td>
+<td>aContextString The string where the parent hierarchy  
+             information will be stored.  
+</td>
+</tr>
+
+<tr>
+<td>[OUT]</td>
+<td>aContextString The string where the parent hierarchy  
+             information will be stored.  
+</td>
+</tr>
+
+</table>
+
 ### encodeToStringWithMaxLength(aMaxLength) ###
   
 Encode the document into a string of limited size.  
@@ -113,11 +217,42 @@ Encode the document into a string of limited size.
 @return The document encoded into a string.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aMaxLength</td>
+<td>After aMaxLength characters, the encoder will stop  
+                  encoding new data.  
+                  Only values > 0 will be considered.  
+                  The returned string may be slightly larger than  
+                  aMaxLength because some serializers (eg. HTML)  
+                  may need to close some tags after they stop  
+                  encoding new data, or finish a line (72 columns  
+                  by default for the plain text serializer).  
+</td>
+</tr>
+
+</table>
+
 ### setNodeFixup(aFixup) ###
   
 Set the fixup object associated with node persistence.  
 @param aFixup The fixup object.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFixup</td>
+<td>The fixup object.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

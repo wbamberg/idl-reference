@@ -57,6 +57,19 @@ Restart the application in safe mode
 @see nsIAppStartup::quit  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aQuitMode</td>
+<td>       This parameter modifies how the app is shutdown.  
+@see nsIAppStartup::quit  
+</td>
+</tr>
+
+</table>
+
 ### trackStartupCrashBegin() ###
   
 If the last startup crashed then increment a counter.  
@@ -79,6 +92,19 @@ Exit the event loop, and shut down the app.
        This parameter modifies how the app is shutdown, and it is  
        constructed from the constants defined above.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aMode</td>
+<td>       This parameter modifies how the app is shutdown, and it is  
+       constructed from the constants defined above.  
+</td>
+</tr>
+
+</table>
 
 ### doneStartingUp() ###
   

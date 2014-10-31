@@ -60,6 +60,24 @@ check exists() before calling fillHandlerInfo(), to prevent spamming the
 console with XPCOM exception errors.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHandlerInfo</td>
+<td>the handler info object  
+</td>
+</tr>
+
+<tr>
+<td>aHandlerInfo</td>
+<td>the handler info object  
+</td>
+</tr>
+
+</table>
+
 ### store(aHandlerInfo) ###
   
 Save the preferred action, preferred handler, possible handlers, and  
@@ -72,6 +90,18 @@ the default value nsIHandlerInfo::useHelperApp.
 @param aHandlerInfo  the handler info object  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHandlerInfo</td>
+<td>the handler info object  
+</td>
+</tr>
+
+</table>
+
 ### exists(aHandlerInfo) ###
   
 Whether or not a record for the given handler info object exists  
@@ -83,6 +113,18 @@ is caught in the implementation), false will be returned.
 @returns whether or not a record exists  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHandlerInfo</td>
+<td>a handler info object  
+</td>
+</tr>
+
+</table>
+
 ### remove(aHandlerInfo) ###
   
 Remove the given handler info object from the datastore.  Deletes all  
@@ -92,6 +134,18 @@ Otherwise, it does nothing and does not return an error.
   
 @param aHandlerInfo  the handler info object  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHandlerInfo</td>
+<td>the handler info object  
+</td>
+</tr>
+
+</table>
 
 ### getTypeFromExtension(aFileExtension) ###
   
@@ -109,3 +163,15 @@ to specifically get only the mapping available in the datastore.
   
 @returns the MIME type, if any; otherwise returns an empty string ("").  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFileExtension</td>
+<td>the file extension  
+</td>
+</tr>
+
+</table>

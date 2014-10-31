@@ -44,6 +44,54 @@ includeHidden is set). Many observers can ignore _EMBED notifications
 @param aHidden         Whether the visited page is marked as hidden.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aVisitID</td>
+<td>ID of the visit that was just created.  
+</td>
+</tr>
+
+<tr>
+<td>aVisitID</td>
+<td>ID of the visit that was just created.  
+</td>
+</tr>
+
+<tr>
+<td>aVisitID</td>
+<td>ID of the visit that was just created.  
+</td>
+</tr>
+
+<tr>
+<td>aVisitID</td>
+<td>ID of the visit that was just created.  
+</td>
+</tr>
+
+<tr>
+<td>aVisitID</td>
+<td>ID of the visit that was just created.  
+</td>
+</tr>
+
+<tr>
+<td>aVisitID</td>
+<td>ID of the visit that was just created.  
+</td>
+</tr>
+
+<tr>
+<td>aVisitID</td>
+<td>ID of the visit that was just created.  
+</td>
+</tr>
+
+</table>
+
 ### onTitleChanged(aURI, aPageTitle, aGUID) ###
   
 Called whenever either the "real" title or the custom title of the page  
@@ -66,6 +114,30 @@ empty string in either case).
        The unique ID associated with the page.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI of the page.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI of the page.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI of the page.  
+</td>
+</tr>
+
+</table>
+
 ### onFrecencyChanged(aURI, aNewFrecency, aGUID, aHidden, aVisitDate) ###
   
 Called when an individual page's frecency has changed.  
@@ -85,6 +157,42 @@ once.  Use onManyFrecenciesChanged to detect such changes.
 @param aVisitDate  
        The page's last visit date.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The page's URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The page's URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The page's URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The page's URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The page's URI.  
+</td>
+</tr>
+
+</table>
 
 ### onManyFrecenciesChanged() ###
   
@@ -112,6 +220,30 @@ way around this.
        Indicates the reason for the removal.  see REASON_* constants.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI that was deleted.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI that was deleted.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI that was deleted.  
+</td>
+</tr>
+
+</table>
+
 ### onClearHistory() ###
   
 Notification that all of history is being deleted.  
@@ -130,6 +262,36 @@ An attribute of this page changed.
 @param aGUID  
        The unique ID associated with the page.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI of the page on which an attribute changed.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI of the page on which an attribute changed.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI of the page on which an attribute changed.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI of the page on which an attribute changed.  
+</td>
+</tr>
+
+</table>
 
 ### onDeleteVisits(aURI, aVisitTime, aGUID, aReason, aTransitionType) ###
   
@@ -153,6 +315,42 @@ Called when some visits of an history entry are expired.
        If it's a valid TRANSITION_* value, all visits of the specified type  
        have been removed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The page whose visits have been expired.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The page whose visits have been expired.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The page whose visits have been expired.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The page whose visits have been expired.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The page whose visits have been expired.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

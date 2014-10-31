@@ -147,6 +147,24 @@ Use getAnnotationInfo if you need this along with the mime-type etc.
 @throws if the annotation is not set  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       the uri on which the annotation is set  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the uri on which the annotation is set  
+</td>
+</tr>
+
+</table>
+
 ### getItemAnnotationType(aItemId, aName) ###
 
 ### getPagesWithAnnotation(name, resultCount, results) ###
@@ -164,6 +182,18 @@ Returns a list of mozIAnnotation(s), having a given annotation name.
        The annotation to search for.  
 @return list of mozIAnnotation objects.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The annotation to search for.  
+</td>
+</tr>
+
+</table>
 
 ### getPageAnnotationNames(aURI, count, result) ###
   

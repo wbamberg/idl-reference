@@ -27,6 +27,19 @@ entries grows to take up more space than the cache size allows.
        overridden before it returns to normal  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSecondsToTheFuture</td>
+<td>       the number of seconds the default cache validation behavior will be  
+       overridden before it returns to normal  
+</td>
+</tr>
+
+</table>
+
 ### openInputStream(offset) ###
   
 Open blocking input stream to cache data.  Use the stream transport  
@@ -39,6 +52,19 @@ The returned stream MAY implement nsISeekableStream.
   
 @return non-blocking, buffered input stream.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>offset</td>
+<td>       read starting from this offset into the cached data.  an offset  
+       beyond the end of the stream has undefined consequences.  
+</td>
+</tr>
+
+</table>
 
 ### openOutputStream(offset) ###
   
@@ -54,6 +80,19 @@ truncated to the specified offset.
   
 @return blocking, buffered output stream.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>offset</td>
+<td>       write starting from this offset into the cached data.  an offset  
+       beyond the end of the stream has undefined consequences.  
+</td>
+</tr>
+
+</table>
 
 ### asyncDoom(listener) ###
   
@@ -113,6 +152,19 @@ Used on 200 responses to conditional requests.
      recreated for write  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aMemoryOnly</td>
+<td>   - whether the entry is to be created as memory/only regardless how  
+     the entry being recreated persistence is set  
+</td>
+</tr>
+
+</table>
+
 ### close() ###
 ************************************************************************  
 The following methods might be added to some nsICacheEntryInternal  
@@ -155,6 +207,19 @@ FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK
    true when write access is acquired for this entry,  
    false otherwise  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWriteAllowed</td>
+<td>   Consumer indicates whether write to the entry is allowed for it.  
+   Depends on implementation how the flag is handled.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

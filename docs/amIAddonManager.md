@@ -23,3 +23,16 @@ but do not include URIs from meta data, such as the add-on homepage.
 @return  
         true if the URI has been mapped successfully to an Addon ID  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aURI  
+        The nsIURI to map  
+</td>
+</tr>
+
+</table>

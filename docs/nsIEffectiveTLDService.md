@@ -32,6 +32,18 @@ In the case of nested URIs, the innermost URI will be used.
         the success of a call to PR_StringToNetAddr()).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aURI   The URI to be analyzed  
+</td>
+</tr>
+
+</table>
+
 ### getBaseDomain(aURI, aAdditionalParts) ###
   
 Returns the base domain of a URI; that is, the public suffix with a given  
@@ -74,6 +86,24 @@ In the case of nested URIs, the innermost URI will be used.
 @see    getPublicSuffix()  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aURI               The URI to be analyzed  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aURI               The URI to be analyzed  
+</td>
+</tr>
+
+</table>
+
 ### getPublicSuffixFromHost(aHost) ###
   
 NOTE: It is strongly recommended to use getPublicSuffix() above if a suitable  
@@ -88,6 +118,21 @@ Returns the public suffix of a host string. Otherwise identical to getPublicSuff
   
 @see     getPublicSuffix()  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aHost   The host to be analyzed. Any additional parts (e.g. scheme,  
+                 port, or path) will cause this method to throw. ASCII/ACE and  
+                 UTF8 encodings are acceptable as input; normalization will  
+                 be performed as specified in getBaseDomain().  
+</td>
+</tr>
+
+</table>
 
 ### getBaseDomainFromHost(aHost, aAdditionalParts) ###
   
@@ -104,6 +149,21 @@ Returns the base domain of a host string. Otherwise identical to getBaseDomain()
 @see     getBaseDomain()  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aHost   The host to be analyzed. Any additional parts (e.g. scheme,  
+                 port, or path) will cause this method to throw. ASCII/ACE and  
+                 UTF8 encodings are acceptable as input; normalization will  
+                 be performed as specified in getBaseDomain().  
+</td>
+</tr>
+
+</table>
+
 ### getNextSubDomain(aHost) ###
   
 Returns the parent sub-domain of a host string. If the host is a base  
@@ -117,3 +177,18 @@ For example: "player.bbc.co.uk" would return "bbc.co.uk" and
                  UTF8 encodings are acceptable as input; normalization will  
                  be performed as specified in getBaseDomain().  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aHost   The host to be analyzed. Any additional parts (e.g. scheme,  
+                 port, or path) will cause this method to throw. ASCII/ACE and  
+                 UTF8 encodings are acceptable as input; normalization will  
+                 be performed as specified in getBaseDomain().  
+</td>
+</tr>
+
+</table>

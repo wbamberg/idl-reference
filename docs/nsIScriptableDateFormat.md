@@ -45,6 +45,40 @@ you depend on any specific format or language.
         user preferences or the given locale.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>locale</td>
+<td>       Locale code of locale used to format the date or an empty string  
+       to follow user preference.  
+</td>
+</tr>
+
+<tr>
+<td>locale</td>
+<td>       Locale code of locale used to format the date or an empty string  
+       to follow user preference.  
+</td>
+</tr>
+
+<tr>
+<td>locale</td>
+<td>       Locale code of locale used to format the date or an empty string  
+       to follow user preference.  
+</td>
+</tr>
+
+<tr>
+<td>locale</td>
+<td>       Locale code of locale used to format the date or an empty string  
+       to follow user preference.  
+</td>
+</tr>
+
+</table>
+
 ### FormatDate(locale, dateFormatSelector, year, month, day) ###
   
 Format the given date in a human readable format.  

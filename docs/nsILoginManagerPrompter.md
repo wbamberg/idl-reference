@@ -17,6 +17,21 @@ Initialize the prompter. Must be called before using other interfaces.
        is being used, topmost opener in some cases).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>       The in which the user is doing some login-related action that's  
+       resulting in a need to prompt them for something. The prompt  
+       will be associated with this window (or, if a notification bar  
+       is being used, topmost opener in some cases).  
+</td>
+</tr>
+
+</table>
+
 ### setE10sData(aData) ###
   
 If the caller knows which browser this prompter is being created for,  
@@ -26,6 +41,18 @@ window passed to init.
 @param aBrowser the <browser> to use for this prompter.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBrowser</td>
+<td>the <browser> to use for this prompter.  
+</td>
+</tr>
+
+</table>
+
 ### promptToSavePassword(aLogin) ###
   
 Ask the user if they want to save a login (Yes, Never, Not Now)  
@@ -33,6 +60,18 @@ Ask the user if they want to save a login (Yes, Never, Not Now)
 @param aLogin  
        The login to be saved.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLogin</td>
+<td>       The login to be saved.  
+</td>
+</tr>
+
+</table>
 
 ### promptToChangePassword(aOldLogin, aNewLogin) ###
   
@@ -44,6 +83,24 @@ user consents, modifyLogin() will be called.
 @param aNewLogin  
        The new login.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aOldLogin</td>
+<td>       The existing login (with the old password).  
+</td>
+</tr>
+
+<tr>
+<td>aOldLogin</td>
+<td>       The existing login (with the old password).  
+</td>
+</tr>
+
+</table>
 
 ### promptToChangePasswordWithUsernames(logins, count, aNewLogin) ###
   
@@ -64,3 +121,27 @@ Note: Because the caller does not know the username of the login
       will be set (using the user's selection) before modifyLogin()  
       is called.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>logins</td>
+<td>       An array of existing logins.  
+</td>
+</tr>
+
+<tr>
+<td>logins</td>
+<td>       An array of existing logins.  
+</td>
+</tr>
+
+<tr>
+<td>logins</td>
+<td>       An array of existing logins.  
+</td>
+</tr>
+
+</table>

@@ -13,6 +13,19 @@ Rearranges the preview relative to another tab preview from the same window
              indicates that the preview is the rightmost one.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNext</td>
+<td>The preview to the right of this one. A value of null  
+             indicates that the preview is the rightmost one.  
+</td>
+</tr>
+
+</table>
+
 ### GetHWND() ###
   
 Used internally to grab the handle to the proxy window.  

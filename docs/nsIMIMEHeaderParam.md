@@ -55,6 +55,47 @@ code.
 @return the value of <code>aParamName</code> in Unichar(UTF-16).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aHeaderVal        a header string to get the value of a parameter   
+                          from.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aHeaderVal        a header string to get the value of a parameter   
+                          from.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aHeaderVal        a header string to get the value of a parameter   
+                          from.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aHeaderVal        a header string to get the value of a parameter   
+                          from.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aHeaderVal        a header string to get the value of a parameter   
+                          from.  
+</td>
+</tr>
+
+</table>
+
 ### getParameterHTTP(aHeaderVal, aParamName, aFallbackCharset, aTryLocaleCharset, aLang) ###
   
 Like getParameter, but disabling encodings and workarounds specific to  
@@ -82,6 +123,24 @@ should use this function.
                           empty).  
 @return the decoded parameter value.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aParamVal         a header field parameter to decode.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aParamVal         a header field parameter to decode.  
+</td>
+</tr>
+
+</table>
 
 ### getParameterInternal(aHeaderVal, aParamName, aCharset, aLang) ###
    
@@ -113,6 +172,36 @@ Otherwise, this method would have been made static.
                     RFC 2231 decoding but without charset conversion.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aHeaderVal  a header string to get the value of a parameter from.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aHeaderVal  a header string to get the value of a parameter from.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aHeaderVal  a header string to get the value of a parameter from.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aHeaderVal  a header string to get the value of a parameter from.  
+</td>
+</tr>
+
+</table>
+
 ### decodeRFC2047Header(aHeaderVal, aDefaultCharset, aOverrideCharset, aEatContinuation) ###
    
 Given a header value, decodes RFC 2047-style encoding and  
@@ -137,6 +226,36 @@ char * Mime_DecodeMimeHeader(char *header_val, const char *charset,
 @param aEatContinuation When set, removes CR/LF  
 @return                 decoded header value  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHeaderVal</td>
+<td>a header value to decode  
+</td>
+</tr>
+
+<tr>
+<td>aHeaderVal</td>
+<td>a header value to decode  
+</td>
+</tr>
+
+<tr>
+<td>aHeaderVal</td>
+<td>a header value to decode  
+</td>
+</tr>
+
+<tr>
+<td>aHeaderVal</td>
+<td>a header value to decode  
+</td>
+</tr>
+
+</table>
 
 ### decodeParameter(aParamValue, aCharset, aDefaultCharset, aOverrideCharset) ###
    
@@ -168,3 +287,33 @@ char * mime_decode_filename(char *name, const char *charset,
                         <code>aDefaultCharset</code>  
 @return                 decoded parameter   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParamValue</td>
+<td>the value of a parameter to decode and convert  
+</td>
+</tr>
+
+<tr>
+<td>aParamValue</td>
+<td>the value of a parameter to decode and convert  
+</td>
+</tr>
+
+<tr>
+<td>aParamValue</td>
+<td>the value of a parameter to decode and convert  
+</td>
+</tr>
+
+<tr>
+<td>aParamValue</td>
+<td>the value of a parameter to decode and convert  
+</td>
+</tr>
+
+</table>

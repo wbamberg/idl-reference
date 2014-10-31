@@ -19,6 +19,18 @@ Trigger a callback in the content process when the socket accepts any request.
        The socket generated in accepting any open request on the parent side.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>socket</td>
+<td>       The socket generated in accepting any open request on the parent side.  
+</td>
+</tr>
+
+</table>
+
 ### sendCallbackError(message, filename, lineNumber, columnNumber) ###
   
 Trigger a callback in the content process when an error occurs.  
@@ -32,3 +44,33 @@ Trigger a callback in the content process when an error occurs.
 @param columnNumber  
        The column number in which the error occured.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>message</td>
+<td>       The error message.  
+</td>
+</tr>
+
+<tr>
+<td>message</td>
+<td>       The error message.  
+</td>
+</tr>
+
+<tr>
+<td>message</td>
+<td>       The error message.  
+</td>
+</tr>
+
+<tr>
+<td>message</td>
+<td>       The error message.  
+</td>
+</tr>
+
+</table>

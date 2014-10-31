@@ -38,6 +38,40 @@ return the text attributes for this range of text.
 @param  rangeEndOffset    [out] end offset of the range of text  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>includeDefAttrs   [in] points whether text attributes applied to  
+                          the entire accessible should be included or not.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>includeDefAttrs   [in] points whether text attributes applied to  
+                          the entire accessible should be included or not.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>includeDefAttrs   [in] points whether text attributes applied to  
+                          the entire accessible should be included or not.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>includeDefAttrs   [in] points whether text attributes applied to  
+                          the entire accessible should be included or not.  
+</td>
+</tr>
+
+</table>
+
 ### getCharacterExtents(offset, x, y, width, height, coordType) ###
   
 Returns the bounding box of the specified position.  
@@ -64,6 +98,54 @@ not degenerate.
                    nsIAccessibleCoordinateType).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>offset</td>
+<td>- Index of the character for which to return its bounding  
+                 box. The valid range is 0..length.  
+</td>
+</tr>
+
+<tr>
+<td>offset</td>
+<td>- Index of the character for which to return its bounding  
+                 box. The valid range is 0..length.  
+</td>
+</tr>
+
+<tr>
+<td>offset</td>
+<td>- Index of the character for which to return its bounding  
+                 box. The valid range is 0..length.  
+</td>
+</tr>
+
+<tr>
+<td>offset</td>
+<td>- Index of the character for which to return its bounding  
+                 box. The valid range is 0..length.  
+</td>
+</tr>
+
+<tr>
+<td>offset</td>
+<td>- Index of the character for which to return its bounding  
+                 box. The valid range is 0..length.  
+</td>
+</tr>
+
+<tr>
+<td>offset</td>
+<td>- Index of the character for which to return its bounding  
+                 box. The valid range is 0..length.  
+</td>
+</tr>
+
+</table>
+
 ### getRangeExtents(startOffset, endOffset, x, y, width, height, coordType) ###
 
 ### getOffsetAtPoint(x, y, coordType) ###
@@ -81,6 +163,33 @@ if no character exists at that point
                  the point is invalid or there is no character under  
                  the point.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>x</td>
+<td>- The position's x value for which to look up the index of the  
+           character that is rendered on to the display at that point.  
+</td>
+</tr>
+
+<tr>
+<td>x</td>
+<td>- The position's x value for which to look up the index of the  
+           character that is rendered on to the display at that point.  
+</td>
+</tr>
+
+<tr>
+<td>x</td>
+<td>- The position's x value for which to look up the index of the  
+           character that is rendered on to the display at that point.  
+</td>
+</tr>
+
+</table>
 
 ### getSelectionBounds(selectionNum, startOffset, endOffset) ###
 
@@ -105,6 +214,30 @@ Makes a specific part of string visible on screen.
                    available constants)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>startIndex</td>
+<td>0-based character offset  
+</td>
+</tr>
+
+<tr>
+<td>startIndex</td>
+<td>0-based character offset  
+</td>
+</tr>
+
+<tr>
+<td>startIndex</td>
+<td>0-based character offset  
+</td>
+</tr>
+
+</table>
+
 ### scrollSubstringToPoint(startIndex, endIndex, coordinateType, x, y) ###
   
 Moves the top left of a substring to a specified location.  
@@ -118,6 +251,42 @@ Moves the top left of a substring to a specified location.
 @param x               defines the x coordinate  
 @param y               defines the y coordinate  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>startIndex</td>
+<td>0-based character offset  
+</td>
+</tr>
+
+<tr>
+<td>startIndex</td>
+<td>0-based character offset  
+</td>
+</tr>
+
+<tr>
+<td>startIndex</td>
+<td>0-based character offset  
+</td>
+</tr>
+
+<tr>
+<td>startIndex</td>
+<td>0-based character offset  
+</td>
+</tr>
+
+<tr>
+<td>startIndex</td>
+<td>0-based character offset  
+</td>
+</tr>
+
+</table>
 
 ### getRangeByChild(child) ###
   

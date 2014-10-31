@@ -26,3 +26,15 @@ a prop and the requested type is nsISimpleEnumerator.
 @returnCode         NS_SUCCESS_AGGREGATE_RESULT if this result should be  
                     aggregated with other "lower" providers.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>prop</td>
+<td>The symbolic name of the file list.  
+</td>
+</tr>
+
+</table>

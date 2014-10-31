@@ -52,6 +52,66 @@ be sent.
        The unique ID associated with the item's parent.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was added.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was added.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was added.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was added.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was added.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was added.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was added.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was added.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was added.  
+</td>
+</tr>
+
+</table>
+
 ### onItemRemoved(aItemId, aParentId, aIndex, aItemType, aURI, aGuid, aParentGuid) ###
   
 Notifies that an item was removed.  Called after the actual remove took  
@@ -75,6 +135,54 @@ be sent.
 @param aParentGuid  
        The unique ID associated with the item's parent.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was removed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was removed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was removed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was removed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was removed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was removed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was removed.  
+</td>
+</tr>
+
+</table>
 
 ### onItemChanged(aItemId, aProperty, aIsAnnotationProperty, aNewValue, aLastModified, aItemType, aParentId, aGuid, aParentGuid) ###
   
@@ -116,6 +224,66 @@ whenever any attributes like "title" are changed.
       lastModified  | PRTime (as string) when the item was last modified.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was changed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was changed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was changed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was changed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was changed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was changed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was changed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was changed.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was changed.  
+</td>
+</tr>
+
+</table>
+
 ### onItemVisited(aItemId, aVisitId, aTime, aTransitionType, aURI, aParentId, aGuid, aParentGuid) ###
   
 Notifies that the item was visited.  Can be invoked only for TYPE_BOOKMARK  
@@ -148,6 +316,60 @@ items.
       recent visit for that page.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the bookmark that was visited.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the bookmark that was visited.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the bookmark that was visited.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the bookmark that was visited.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the bookmark that was visited.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the bookmark that was visited.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the bookmark that was visited.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the bookmark that was visited.  
+</td>
+</tr>
+
+</table>
+
 ### onItemMoved(aItemId, aOldParentId, aOldIndex, aNewParentId, aNewIndex, aItemType, aGuid, aOldParentGuid, aNewParentGuid) ###
   
 Notifies that an item has been moved.  
@@ -171,3 +393,63 @@ Notifies that an item has been moved.
 @param aNewParentGuid  
        The unique ID associated with the new item's parent.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was moved.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was moved.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was moved.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was moved.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was moved.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was moved.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was moved.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was moved.  
+</td>
+</tr>
+
+<tr>
+<td>aItemId</td>
+<td>       The id of the item that was moved.  
+</td>
+</tr>
+
+</table>

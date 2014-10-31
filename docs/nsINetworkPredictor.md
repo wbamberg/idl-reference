@@ -41,6 +41,42 @@ asked to take actions.
   normal operation.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>targetURI</td>
+<td>- The URI we are being asked to take actions based on.  
+</td>
+</tr>
+
+<tr>
+<td>targetURI</td>
+<td>- The URI we are being asked to take actions based on.  
+</td>
+</tr>
+
+<tr>
+<td>targetURI</td>
+<td>- The URI we are being asked to take actions based on.  
+</td>
+</tr>
+
+<tr>
+<td>targetURI</td>
+<td>- The URI we are being asked to take actions based on.  
+</td>
+</tr>
+
+<tr>
+<td>targetURI</td>
+<td>- The URI we are being asked to take actions based on.  
+</td>
+</tr>
+
+</table>
+
 ### learn(targetURI, sourceURI, reason, loadContext) ###
   
 Add to our compendium of knowledge  
@@ -64,6 +100,36 @@ smarter next time we predict something.
 @param loadContext - The nsILoadContext for the page load that we are  
   learning about.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>targetURI</td>
+<td>- The URI that was loaded that we are keeping track of.  
+</td>
+</tr>
+
+<tr>
+<td>targetURI</td>
+<td>- The URI that was loaded that we are keeping track of.  
+</td>
+</tr>
+
+<tr>
+<td>targetURI</td>
+<td>- The URI that was loaded that we are keeping track of.  
+</td>
+</tr>
+
+<tr>
+<td>targetURI</td>
+<td>- The URI that was loaded that we are keeping track of.  
+</td>
+</tr>
+
+</table>
 
 ### reset() ###
   

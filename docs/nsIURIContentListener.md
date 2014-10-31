@@ -24,6 +24,18 @@ it happens.
               <code>true</code> if the open should be aborted.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>URI that is being opened.  
+</td>
+</tr>
+
+</table>
+
 ### doContent(aContentType, aIsContentPreferred, aRequest, aContentHandler) ###
   
 Notifies the content listener to hook up an nsIStreamListener capable of  
@@ -47,6 +59,36 @@ consuming the data stream.
                             continue handling the load and call the  
                             returned streamlistener's methods.   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContentType</td>
+<td>Content type of the data.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>Content type of the data.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>Content type of the data.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>Content type of the data.  
+</td>
+</tr>
+
+</table>
 
 ### isPreferred(aContentType, aDesiredContentType) ###
   
@@ -74,6 +116,24 @@ between isPreferred and canHandleContent.
                             <code>false<code> otherwise.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContentType</td>
+<td>Content type of the data.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>Content type of the data.  
+</td>
+</tr>
+
+</table>
+
 ### canHandleContent(aContentType, aIsContentPreferred, aDesiredContentType) ###
   
 When given a uri to dispatch, if the URI is not specified as 'preferred  
@@ -100,6 +160,30 @@ shells. The isPreferred decision is a decision made by a top level
 application content listener that sits at the top of the docshell  
 hierarchy.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContentType</td>
+<td>Content type of the data.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>Content type of the data.  
+</td>
+</tr>
+
+<tr>
+<td>aContentType</td>
+<td>Content type of the data.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

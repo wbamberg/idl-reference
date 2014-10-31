@@ -40,6 +40,84 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        Indicates whether this call be be added into a conference.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+</table>
+
 ### conferenceCallStateChanged(callState) ###
   
 Called when participants of a conference call have been updated, and the  
@@ -50,6 +128,20 @@ conference call state changes.
        nsITelephonyService::CALL_STATE_HELD,  
        nsITelephonyService::CALL_STATE_CONNECTED.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>callState</td>
+<td>       Possible values are: nsITelephonyService::CALL_STATE_UNKNOWN,  
+       nsITelephonyService::CALL_STATE_HELD,  
+       nsITelephonyService::CALL_STATE_CONNECTED.  
+</td>
+</tr>
+
+</table>
 
 ### enumerateCallStateComplete() ###
   
@@ -91,6 +183,78 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        Indicates whether this call be be added into a conference.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+</table>
+
 ### supplementaryServiceNotification(clientId, callIndex, notification) ###
   
 Notify when RIL receives supplementary service notification.  
@@ -103,6 +267,30 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        One of the nsITelephonyService::NOTIFICATION_* values.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+</table>
+
 ### notifyError(clientId, callIndex, error) ###
   
 Called when RIL error occurs.  
@@ -114,6 +302,30 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 @param error  
        Error from RIL.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+</table>
 
 ### notifyCdmaCallWaiting(clientId, number, numberPresentation, name, namePresentation) ###
   
@@ -133,6 +345,42 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        One of the nsITelephonyProvider::CALL_PRESENTATION_* values.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+</td>
+</tr>
+
+</table>
+
 ### notifyConferenceError(name, message) ###
   
 Called when RIL error occurs to creating or separating a conference call.  
@@ -142,3 +390,21 @@ Called when RIL error occurs to creating or separating a conference call.
 @param message  
        Detailed error message from RIL.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       Error name. Possible values are addError and removeError.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       Error name. Possible values are addError and removeError.  
+</td>
+</tr>
+
+</table>

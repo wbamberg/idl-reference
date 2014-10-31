@@ -28,3 +28,27 @@ notifications in the implemention of observe.
 @param aData    : Notification specific wide string.  
                    subject event.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSubject</td>
+<td>: Notification specific interface pointer.  
+</td>
+</tr>
+
+<tr>
+<td>aSubject</td>
+<td>: Notification specific interface pointer.  
+</td>
+</tr>
+
+<tr>
+<td>aSubject</td>
+<td>: Notification specific interface pointer.  
+</td>
+</tr>
+
+</table>

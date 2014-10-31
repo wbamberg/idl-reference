@@ -24,6 +24,24 @@ Adds an observer for changes done in the result.
 @see nsINavHistoryResultObserver  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>       a result observer.  
+</td>
+</tr>
+
+<tr>
+<td>aObserver</td>
+<td>       a result observer.  
+</td>
+</tr>
+
+</table>
+
 ### removeObserver(aObserver) ###
   
 Removes an observer that was added by addObserver.  
@@ -31,6 +49,18 @@ Removes an observer that was added by addObserver.
 @param aObserver  
        a result observer that was added by addObserver.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>       a result observer that was added by addObserver.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

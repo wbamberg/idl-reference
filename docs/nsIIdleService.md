@@ -39,6 +39,24 @@ of the polling interval in that implementation.
 Current implementations use a delay of 5 seconds.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>observer</td>
+<td>the observer to be notified  
+</td>
+</tr>
+
+<tr>
+<td>observer</td>
+<td>the observer to be notified  
+</td>
+</tr>
+
+</table>
+
 ### removeIdleObserver(observer, time) ###
   
 Remove an observer registered with addIdleObserver.  
@@ -49,6 +67,24 @@ Removing an observer will remove it once, for the idle time you specify.
 If you have added an observer multiple times, you will need to remove it  
 just as many times.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>observer</td>
+<td>the observer that needs to be removed.  
+</td>
+</tr>
+
+<tr>
+<td>observer</td>
+<td>the observer that needs to be removed.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

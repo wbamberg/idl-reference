@@ -18,6 +18,33 @@ method is called.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>parent   nsIDOMWindow parent.  This dialog will be dependent  
+                     on this parent. parent must be non-null.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>parent   nsIDOMWindow parent.  This dialog will be dependent  
+                     on this parent. parent must be non-null.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>parent   nsIDOMWindow parent.  This dialog will be dependent  
+                     on this parent. parent must be non-null.  
+</td>
+</tr>
+
+</table>
+
 ### appendFilters(filterMask) ###
   
 Append to the  filter list with things from the predefined list  
@@ -25,6 +52,18 @@ Append to the  filter list with things from the predefined list
 @param      filters  mask of filters i.e. (filterAll | filterHTML)  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>filters  mask of filters i.e. (filterAll | filterHTML)  
+</td>
+</tr>
+
+</table>
 
 ### appendFilter(title, filter) ###
   
@@ -34,6 +73,24 @@ Add a filter
 @param      filter   extensions to filter -- semicolon and space separated  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>title    name of the filter  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>title    name of the filter  
+</td>
+</tr>
+
+</table>
 
 ### show() ###
   

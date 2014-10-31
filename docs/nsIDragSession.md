@@ -15,6 +15,24 @@ or after the drop has completed.
 @param  aItemIndex which of multiple drag items, zero-based  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aTransferable the transferable for the data to be put into  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aTransferable the transferable for the data to be put into  
+</td>
+</tr>
+
+</table>
+
 ### isDataFlavorSupported(aDataFlavor) ###
   
 Check to set if any of the native data on the clipboard matches this data flavor  

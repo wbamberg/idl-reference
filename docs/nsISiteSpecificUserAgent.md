@@ -20,3 +20,21 @@ Get the User Agent string for a given URI.
 @returns the User Agent string for the given URI. If no override applies,  
 the default User Agent string is used.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>is the URI of the page the UA string is used for.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>is the URI of the page the UA string is used for.  
+</td>
+</tr>
+
+</table>

@@ -16,6 +16,24 @@ aUpdate has changed its state.
        See enumeration above  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aUpdate</td>
+<td>       The nsIOfflineCacheUpdate being processed.  
+</td>
+</tr>
+
+<tr>
+<td>aUpdate</td>
+<td>       The nsIOfflineCacheUpdate being processed.  
+</td>
+</tr>
+
+</table>
+
 ### applicationCacheAvailable(applicationCache) ###
   
 Informs the observer about an application being available to associate.  
@@ -24,6 +42,19 @@ Informs the observer about an application being available to associate.
        The application cache instance that has been created or found by the   
        update to associate with  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>applicationCache</td>
+<td>       The application cache instance that has been created or found by the   
+       update to associate with  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

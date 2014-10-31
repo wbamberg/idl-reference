@@ -18,6 +18,24 @@ Set the value of an environment variable.
 @param aValue  the value to set.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>the variable name to set.  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>the variable name to set.  
+</td>
+</tr>
+
+</table>
+
 ### get(aName) ###
   
 Get the value of an environment variable.  
@@ -29,6 +47,18 @@ Get the value of an environment variable.
                |exists()| to probe whether the env variable exists  
                or not.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>the variable name to retrieve.  
+</td>
+</tr>
+
+</table>
 
 ### exists(aName) ###
   
@@ -49,3 +79,15 @@ or not.
                PR_TRUE. If the variable was not defined in the  
                environment PR_FALSE will be returned.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>the variable name to probe.  
+</td>
+</tr>
+
+</table>

@@ -32,6 +32,19 @@ Displays a native Windows 8 toast.
                If using Metro mode, it can be null string.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAppId</td>
+<td>Application ID for current application.  
+               If using Metro mode, it can be null string.  
+</td>
+</tr>
+
+</table>
+
 ### pinTileAsync(aTileID, aShortName, aDisplayName, aActivationArgs, aTileImage, aSmallTileImage) ###
   
 Secondary tiles are a Windows 8 specific feature for pinning new tiles  
@@ -51,6 +64,54 @@ Pins a new tile to the Windows 8 start screen.
 @param aSmallTileImage An image for the small tile view  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTileID</td>
+<td>An ID which can later be used to remove the tile  
+                       ID must only contain valid filesystem characters  
+</td>
+</tr>
+
+<tr>
+<td>aTileID</td>
+<td>An ID which can later be used to remove the tile  
+                       ID must only contain valid filesystem characters  
+</td>
+</tr>
+
+<tr>
+<td>aTileID</td>
+<td>An ID which can later be used to remove the tile  
+                       ID must only contain valid filesystem characters  
+</td>
+</tr>
+
+<tr>
+<td>aTileID</td>
+<td>An ID which can later be used to remove the tile  
+                       ID must only contain valid filesystem characters  
+</td>
+</tr>
+
+<tr>
+<td>aTileID</td>
+<td>An ID which can later be used to remove the tile  
+                       ID must only contain valid filesystem characters  
+</td>
+</tr>
+
+<tr>
+<td>aTileID</td>
+<td>An ID which can later be used to remove the tile  
+                       ID must only contain valid filesystem characters  
+</td>
+</tr>
+
+</table>
+
 ### unpinTileAsync(aTileID) ###
   
 Unpins a tile from the Windows 8 start screen.  
@@ -58,6 +119,19 @@ Unpins a tile from the Windows 8 start screen.
 @param aTileID An existing ID which was previously pinned  
                ID must only contain valid filesystem characters  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTileID</td>
+<td>An existing ID which was previously pinned  
+               ID must only contain valid filesystem characters  
+</td>
+</tr>
+
+</table>
 
 ### isTilePinned(aTileID) ###
   
@@ -67,6 +141,19 @@ Determines if a tile is pinned to the Windows 8 start screen.
                ID must only contain valid filesystem characters  
 @return true if the tile is pinned  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTileID</td>
+<td>An ID which may have been pinned with pinTileAsync  
+               ID must only contain valid filesystem characters  
+</td>
+</tr>
+
+</table>
 
 ### addSettingsPanelEntry(aLabel) ###
   
@@ -79,6 +166,19 @@ ShowPanel api. Example: 'prefs-container'
 "metro-settings-entry-selected" notification when the entry is clicked  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChromePanelId</td>
+<td>panel id invoked via nsIBrowserDOMWindow's  
+ShowPanel api. Example: 'prefs-container'  
+</td>
+</tr>
+
+</table>
+
 ### swapMouseButton(aSwap) ###
   
 Change the value of the "switch primary and secondary buttons" preference.  
@@ -88,6 +188,18 @@ Included here for use in automated tests (see bug 839460).
 @param aSwap true to enable the preference, false to disable it.  
 @return original value of the preference.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSwap</td>
+<td>true to enable the preference, false to disable it.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

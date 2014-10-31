@@ -63,6 +63,39 @@ string may be:
         main thread.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDatabaseStore</td>
+<td>Either a nsIFile representing the file that contains  
+the database or a special string to open a special database. The special  
+string may be:  
+- "memory" to open an in-memory database.  
+</td>
+</tr>
+
+<tr>
+<td>aDatabaseStore</td>
+<td>Either a nsIFile representing the file that contains  
+the database or a special string to open a special database. The special  
+string may be:  
+- "memory" to open an in-memory database.  
+</td>
+</tr>
+
+<tr>
+<td>aDatabaseStore</td>
+<td>Either a nsIFile representing the file that contains  
+the database or a special string to open a special database. The special  
+string may be:  
+- "memory" to open an in-memory database.  
+</td>
+</tr>
+
+</table>
+
 ### openSpecialDatabase(aStorageKey) ###
   
 Get a connection to a named special database storage.  
@@ -79,6 +112,19 @@ storage database.
   
 @throws NS_ERROR_INVALID_ARG if aStorageKey is invalid.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStorageKey</td>
+<td>a string key identifying the type of storage  
+requested.  Valid values include: "memory".  
+</td>
+</tr>
+
+</table>
 
 ### openDatabase(aDatabaseFile) ###
   
@@ -111,6 +157,18 @@ use it only from the thread you created it from.
 @throws NS_ERROR_FILE_CORRUPTED  
         If the database file is corrupted.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDatabaseFile</td>
+<td>       A nsIFile that represents the database that is to be opened..  
+</td>
+</tr>
+
+</table>
 
 ### openUnsharedDatabase(aDatabaseFile) ###
   
@@ -145,6 +203,18 @@ use it only from the thread you created it from.
         If the database file is corrupted.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDatabaseFile</td>
+<td>       A nsIFile that represents the database that is to be opened.  
+</td>
+</tr>
+
+</table>
+
 ### openDatabaseWithFileURL(aFileURL) ###
   
 See openDatabase(). Exactly the same only initialized with a file URL.  
@@ -154,6 +224,18 @@ the query part of the URL.
 @param aURL  
        A nsIFileURL that represents the database that is to be opened.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURL</td>
+<td>       A nsIFileURL that represents the database that is to be opened.  
+</td>
+</tr>
+
+</table>
 
 ### backupDatabaseFile(aDBFile, aBackupFileName, aBackupParentDirectory) ###
   
@@ -170,3 +252,27 @@ ensures that the file being created is unique.
        The directory you'd like the backup file to be placed.  
 @return The nsIFile representing the backup file.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDBFile</td>
+<td>       The database file that will be backed up.  
+</td>
+</tr>
+
+<tr>
+<td>aDBFile</td>
+<td>       The database file that will be backed up.  
+</td>
+</tr>
+
+<tr>
+<td>aDBFile</td>
+<td>       The database file that will be backed up.  
+</td>
+</tr>
+
+</table>

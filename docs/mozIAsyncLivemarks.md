@@ -24,6 +24,26 @@ Creates a new livemark
             won't return a promise.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLivemarkInfo</td>
+<td>       mozILivemarkInfo object containing at least title, parentId,  
+       index and feedURI of the livemark to create.  
+</td>
+</tr>
+
+<tr>
+<td>aLivemarkInfo</td>
+<td>       mozILivemarkInfo object containing at least title, parentId,  
+       index and feedURI of the livemark to create.  
+</td>
+</tr>
+
+</table>
+
 ### removeLivemark(aLivemarkInfo, aCallback) ###
   
 Removes an existing livemark.  
@@ -41,6 +61,26 @@ Removes an existing livemark.
             compatibility reasons, when a callback is provided this method  
             won't return a promise.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLivemarkInfo</td>
+<td>       mozILivemarkInfo object containing either an id or a guid of the  
+       livemark to remove.  
+</td>
+</tr>
+
+<tr>
+<td>aLivemarkInfo</td>
+<td>       mozILivemarkInfo object containing either an id or a guid of the  
+       livemark to remove.  
+</td>
+</tr>
+
+</table>
 
 ### getLivemark(aLivemarkInfo, aCallback) ###
   
@@ -61,6 +101,26 @@ Gets an existing livemark.
             won't return a promise.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLivemarkInfo</td>
+<td>       mozILivemarkInfo object containing either an id or a guid of the  
+       livemark to retrieve.  
+</td>
+</tr>
+
+<tr>
+<td>aLivemarkInfo</td>
+<td>       mozILivemarkInfo object containing either an id or a guid of the  
+       livemark to retrieve.  
+</td>
+</tr>
+
+</table>
+
 ### reloadLivemarks(aForceUpdate) ###
   
 Reloads all livemarks if they are expired or if forced to do so.  
@@ -71,3 +131,15 @@ Reloads all livemarks if they are expired or if forced to do so.
 @note The update process is asynchronous, observers registered through  
       registerForUpdates will be notified of updated contents.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>[optional]aForceUpdate</td>
+<td>       If set to true forces a reload even if contents are still valid.  
+</td>
+</tr>
+
+</table>

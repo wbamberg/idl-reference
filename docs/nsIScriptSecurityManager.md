@@ -30,6 +30,24 @@ should be denied.
 @param uri the URI that is being loaded  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>cx</td>
+<td>the JSContext of the script causing the load  
+</td>
+</tr>
+
+<tr>
+<td>cx</td>
+<td>the JSContext of the script causing the load  
+</td>
+</tr>
+
+</table>
+
 ### checkLoadURIWithPrincipal(aPrincipal, uri, flags) ###
   
 Check that content with principal aPrincipal can load "uri".  
@@ -41,6 +59,30 @@ should be denied.
 @param uri the URI that is being loaded  
 @param flags the permission set, see above  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrincipal</td>
+<td>the principal identifying the actor causing the load  
+</td>
+</tr>
+
+<tr>
+<td>aPrincipal</td>
+<td>the principal identifying the actor causing the load  
+</td>
+</tr>
+
+<tr>
+<td>aPrincipal</td>
+<td>the principal identifying the actor causing the load  
+</td>
+</tr>
+
+</table>
 
 ### checkLoadURIStrWithPrincipal(aPrincipal, uri, flags) ###
   
@@ -78,6 +120,24 @@ Returns a principal that has the given information.
 inside a mozbrowser frame.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>appId</td>
+<td>is the app id of the principal. It can't be UNKNOWN_APP_ID.  
+</td>
+</tr>
+
+<tr>
+<td>appId</td>
+<td>is the app id of the principal. It can't be UNKNOWN_APP_ID.  
+</td>
+</tr>
+
+</table>
+
 ### getLoadContextCodebasePrincipal(uri, loadContext) ###
   
 Returns a principal that has the appId and inMozBrowser of the load  
@@ -85,12 +145,36 @@ context.
 @param loadContext to get appId/inMozBrowser from.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>loadContext</td>
+<td>to get appId/inMozBrowser from.  
+</td>
+</tr>
+
+</table>
+
 ### getDocShellCodebasePrincipal(uri, docShell) ###
   
 Returns a principal that has the appId and inMozBrowser of the docshell  
 inside a mozbrowser frame.  
 @param docShell to get appId/inMozBrowser from.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>docShell</td>
+<td>to get appId/inMozBrowser from.  
+</td>
+</tr>
+
+</table>
 
 ### getNoAppCodebasePrincipal(uri) ###
   

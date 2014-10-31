@@ -15,6 +15,18 @@ Returns one accessible relation target.
 @param index - 0 based index of relation target.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>- 0 based index of relation target.  
+</td>
+</tr>
+
+</table>
+
 ### getTargets() ###
   
 Returns multiple accessible relation targets.  

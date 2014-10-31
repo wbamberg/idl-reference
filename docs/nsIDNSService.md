@@ -29,6 +29,36 @@ kicks off an asynchronous host lookup.
 @return An object that can be used to cancel the host lookup.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHostName</td>
+<td>       the hostname or IP-address-literal to resolve.  
+</td>
+</tr>
+
+<tr>
+<td>aHostName</td>
+<td>       the hostname or IP-address-literal to resolve.  
+</td>
+</tr>
+
+<tr>
+<td>aHostName</td>
+<td>       the hostname or IP-address-literal to resolve.  
+</td>
+</tr>
+
+<tr>
+<td>aHostName</td>
+<td>       the hostname or IP-address-literal to resolve.  
+</td>
+</tr>
+
+</table>
+
 ### cancelAsyncResolve(aHostName, aFlags, aListener, aReason) ###
   
 Attempts to cancel a previously requested async DNS lookup  
@@ -46,6 +76,36 @@ Attempts to cancel a previously requested async DNS lookup
 @return An object that can be used to cancel the host lookup.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHostName</td>
+<td>       the hostname or IP-address-literal to resolve.  
+</td>
+</tr>
+
+<tr>
+<td>aHostName</td>
+<td>       the hostname or IP-address-literal to resolve.  
+</td>
+</tr>
+
+<tr>
+<td>aHostName</td>
+<td>       the hostname or IP-address-literal to resolve.  
+</td>
+</tr>
+
+<tr>
+<td>aHostName</td>
+<td>       the hostname or IP-address-literal to resolve.  
+</td>
+</tr>
+
+</table>
+
 ### resolve(aHostName, aFlags) ###
   
 called to synchronously resolve a hostname.  warning this method may  
@@ -60,6 +120,24 @@ unwise to call this function on the UI thread of an application.
 @return DNS record corresponding to the given hostname.  
 @throws NS_ERROR_UNKNOWN_HOST if host could not be resolved.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHostName</td>
+<td>       the hostname or IP-address-literal to resolve.  
+</td>
+</tr>
+
+<tr>
+<td>aHostName</td>
+<td>       the hostname or IP-address-literal to resolve.  
+</td>
+</tr>
+
+</table>
 
 ### getDNSCacheEntries(args) ###
   

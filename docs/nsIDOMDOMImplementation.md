@@ -28,3 +28,16 @@ appropriate title element.
 @param title the title of the Document  
 @see <http://www.whatwg.org/html/#creating-documents>  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>title</td>
+<td>the title of the Document  
+@see <http://www.whatwg.org/html/#creating-documents>  
+</td>
+</tr>
+
+</table>

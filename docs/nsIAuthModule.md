@@ -26,6 +26,47 @@ unless this method succeeds.
        the user's password  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aServiceName</td>
+<td>       the service name, which may be null if not applicable (e.g., for  
+       NTLM, this parameter should be null).  
+</td>
+</tr>
+
+<tr>
+<td>aServiceName</td>
+<td>       the service name, which may be null if not applicable (e.g., for  
+       NTLM, this parameter should be null).  
+</td>
+</tr>
+
+<tr>
+<td>aServiceName</td>
+<td>       the service name, which may be null if not applicable (e.g., for  
+       NTLM, this parameter should be null).  
+</td>
+</tr>
+
+<tr>
+<td>aServiceName</td>
+<td>       the service name, which may be null if not applicable (e.g., for  
+       NTLM, this parameter should be null).  
+</td>
+</tr>
+
+<tr>
+<td>aServiceName</td>
+<td>       the service name, which may be null if not applicable (e.g., for  
+       NTLM, this parameter should be null).  
+</td>
+</tr>
+
+</table>
+
 ### getNextToken(aInToken, aInTokenLength, aOutToken, aOutTokenLength) ###
   
 Called to get the next token in a sequence of authentication steps.  
@@ -44,6 +85,40 @@ Called to get the next token in a sequence of authentication steps.
        If getNextToken succeeds, then aOutTokenLength contains the  
        length of the buffer (number of bytes) pointed to by aOutToken.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the input token (e.g., a challenge from a  
+       server).  This may be null.  
+</td>
+</tr>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the input token (e.g., a challenge from a  
+       server).  This may be null.  
+</td>
+</tr>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the input token (e.g., a challenge from a  
+       server).  This may be null.  
+</td>
+</tr>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the input token (e.g., a challenge from a  
+       server).  This may be null.  
+</td>
+</tr>
+
+</table>
 
 ### wrap(aInToken, aInTokenLength, confidential, aOutToken, aOutTokenLength) ###
    
@@ -67,6 +142,42 @@ Wrap() may return NS_ERROR_NOT_IMPLEMENTED, if the underlying authentication
 mechanism does not support security layers.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the data to be sent to the server  
+</td>
+</tr>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the data to be sent to the server  
+</td>
+</tr>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the data to be sent to the server  
+</td>
+</tr>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the data to be sent to the server  
+</td>
+</tr>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the data to be sent to the server  
+</td>
+</tr>
+
+</table>
+
 ### unwrap(aInToken, aInTokenLength, aOutToken, aOutTokenLength) ###
    
 Unwrap() is used to unpack, decrypt, and verify the checksums on data  
@@ -84,6 +195,36 @@ returned by a server when security layers are in use.
 Unwrap() may return NS_ERROR_NOT_IMPLEMENTED, if the underlying    
 authentication mechanism does not support security layers.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the data received from the server  
+</td>
+</tr>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the data received from the server  
+</td>
+</tr>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the data received from the server  
+</td>
+</tr>
+
+<tr>
+<td>aInToken</td>
+<td>       A buffer containing the data received from the server  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

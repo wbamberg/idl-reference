@@ -21,3 +21,27 @@ called when an asynchronous host lookup completes.
 @param aStatus  
        if the lookup failed, this parameter gives the reason.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>       the value returned from asyncResolve.  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       the value returned from asyncResolve.  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       the value returned from asyncResolve.  
+</td>
+</tr>
+
+</table>

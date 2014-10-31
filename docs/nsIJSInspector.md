@@ -39,6 +39,19 @@ finished processing the current event.
                    number of enterNestedEventLoop calls to return.)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>requestor</td>
+<td>A token of the caller's choice to identify this event  
+                   loop.  
+</td>
+</tr>
+
+</table>
+
 ### exitNestedEventLoop() ###
   
 Stop the youngest running enterNestedEventLoop call, asking it to return  

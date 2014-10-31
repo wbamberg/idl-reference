@@ -20,6 +20,26 @@ Print the specified DOM window
 @return void  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aThePrintSettings</td>
+<td>- Printer Settings for the print job, if aThePrintSettings is null  
+                           then the global PS will be used.  
+</td>
+</tr>
+
+<tr>
+<td>aThePrintSettings</td>
+<td>- Printer Settings for the print job, if aThePrintSettings is null  
+                           then the global PS will be used.  
+</td>
+</tr>
+
+</table>
+
 ### printPreview(aThePrintSettings, aChildDOMWin, aWPListener) ###
   
 Print Preview the specified DOM window  
@@ -31,6 +51,33 @@ Print Preview the specified DOM window
 @return void  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aThePrintSettings</td>
+<td>- Printer Settings for the print preview, if aThePrintSettings is null  
+                           then the global PS will be used.  
+</td>
+</tr>
+
+<tr>
+<td>aThePrintSettings</td>
+<td>- Printer Settings for the print preview, if aThePrintSettings is null  
+                           then the global PS will be used.  
+</td>
+</tr>
+
+<tr>
+<td>aThePrintSettings</td>
+<td>- Printer Settings for the print preview, if aThePrintSettings is null  
+                           then the global PS will be used.  
+</td>
+</tr>
+
+</table>
+
 ### printPreviewNavigate(aNavType, aPageNum) ###
   
 Print Preview - Navigates within the window  
@@ -39,6 +86,24 @@ Print Preview - Navigates within the window
 @param aPageNum - page num to navigate to when aNavType = ePrintPreviewGoToPageNum  
 @return void  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNavType</td>
+<td>- navigation enum  
+</td>
+</tr>
+
+<tr>
+<td>aNavType</td>
+<td>- navigation enum  
+</td>
+</tr>
+
+</table>
 
 ### cancel() ###
   
@@ -56,6 +121,24 @@ and may return any number of items is "isFramesetDocument" is true
 @param  aResult - returns array of names  
 @return void  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aCount - returns number of printers returned  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aCount - returns number of printers returned  
+</td>
+</tr>
+
+</table>
 
 ### exitPrintPreview() ###
   

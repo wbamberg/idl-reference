@@ -22,6 +22,19 @@ a string.
 @returns The serialized subtree in the form of a Unicode string  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>root</td>
+<td>The root of the subtree to be serialized. This could  
+            be any node, including a Document.  
+</td>
+</tr>
+
+</table>
+
 ### serializeToStream(root, stream, charset) ###
   
 The subtree rooted by the specified element is serialized to  
@@ -33,3 +46,30 @@ a byte stream using the character set specified.
                to a byte stream.  If this string is empty and root is  
                a document, the document's character set will be used.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>root</td>
+<td>The root of the subtree to be serialized. This could  
+            be any node, including a Document.  
+</td>
+</tr>
+
+<tr>
+<td>root</td>
+<td>The root of the subtree to be serialized. This could  
+            be any node, including a Document.  
+</td>
+</tr>
+
+<tr>
+<td>root</td>
+<td>The root of the subtree to be serialized. This could  
+            be any node, including a Document.  
+</td>
+</tr>
+
+</table>

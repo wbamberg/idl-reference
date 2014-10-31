@@ -18,6 +18,19 @@ Gets the update at the specified index
 @returns The nsIUpdate object at the specified index  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>index  
+         The index within the updates array  
+</td>
+</tr>
+
+</table>
+
 ### saveUpdates() ###
   
 Saves all updates to disk.  

@@ -33,6 +33,26 @@ given index.
                          history entry for the given index.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The index value whose entry is requested.  
+                         The oldest entry is located at index == 0.  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index value whose entry is requested.  
+                         The oldest entry is located at index == 0.  
+</td>
+</tr>
+
+</table>
+
 ### PurgeHistory(numEntries) ###
   
 Called to purge older documents from history.  
@@ -51,6 +71,24 @@ prior page loads etc...
                            
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>numEntries</td>
+<td>The number of toplevel documents to be  
+                         purged from history. During purge operation,  
+                         the latest documents are maintained and older   
+                         'numEntries' documents are removed from history.  
+@throws                  <code>NS_SUCCESS_LOSS_OF_INSIGNIFICANT_DATA</code> Purge was vetod.  
+@throws                  <code>NS_ERROR_FAILURE</code> numEntries is  
+                         invalid or out of bounds with the size of history.  
+</td>
+</tr>
+
+</table>
+
 ### addSHistoryListener(aListener) ###
   
 Called to register a listener for the session history component.  
@@ -66,6 +104,19 @@ Listeners are notified when pages are loaded or purged from history.
 @see nsSupportsWeakReference  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>Listener object to be notified for all  
+                         page loads that initiate in session history.  
+</td>
+</tr>
+
+</table>
+
 ### removeSHistoryListener(aListener) ###
   
 Called to remove a listener for the session history component.  
@@ -80,6 +131,19 @@ Listeners are notified when pages are loaded from history.
 @see nsSupportsWeakReference  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>Listener object to be removed from   
+                         session history.  
+</td>
+</tr>
+
+</table>
+
 ### reloadCurrentEntry() ###
 
 ### getIndexOfEntry(aEntry) ###
@@ -93,6 +157,18 @@ Called to obtain the index to a given history entry.
                          <code>NS_ERROR_FAILURE</code> Error in obtaining  
                          index for the given history entry.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEntry</td>
+<td>The entry to obtain the index of.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

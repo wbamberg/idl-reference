@@ -90,6 +90,24 @@ fails.  Failure is notified asynchronously through the observer.
        generally set for downloads that use temporary ".part" files.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTarget</td>
+<td>       New output file to be written.  
+</td>
+</tr>
+
+<tr>
+<td>aTarget</td>
+<td>       New output file to be written.  
+</td>
+</tr>
+
+</table>
+
 ### finish(aStatus) ###
   
 Terminates access to the output file, then notifies the observer with the  
@@ -110,6 +128,21 @@ renamed even if all the data has been fed.
        fails meanwhile for other reasons, or the observer has been already  
        notified of completion, this status code is ignored.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStatus</td>
+<td>       Result code that determines whether the operation should succeed or  
+       be canceled, and is notified to the observer.  If the operation  
+       fails meanwhile for other reasons, or the observer has been already  
+       notified of completion, this status code is ignored.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

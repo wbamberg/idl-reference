@@ -25,6 +25,18 @@ Initialize this stream loader, and start loading the data.
        An observer that will be notified when the data is complete.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>       An observer that will be notified when the data is complete.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### numBytesRead ###

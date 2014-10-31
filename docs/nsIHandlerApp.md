@@ -28,6 +28,18 @@ the same.
 @returns true if the two are logically equivalent, false otherwise  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHandlerApp</td>
+<td>the handler app to compare to the invokant  
+</td>
+</tr>
+
+</table>
+
 ### launchWithURI(aURI, aWindowContext) ###
   
 Launches the application with the specified URI.  
@@ -47,6 +59,24 @@ Launches the application with the specified URI.
        have a more comprehensive strategy which could include handing  
        off to the system default browser (bug 394479).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to launch this application with  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to launch this application with  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

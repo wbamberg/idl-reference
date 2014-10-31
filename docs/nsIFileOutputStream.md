@@ -22,6 +22,36 @@ An output stream that lets you stream to a file.
        (currently none supported)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>file</td>
+<td>file to write to  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to write to  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to write to  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to write to  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### DEFER_OPEN ###

@@ -22,6 +22,36 @@ chrome shell).
 		undefined. Don't rely on this for anything.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContentShell</td>
+<td>the shell being added.  
+</td>
+</tr>
+
+<tr>
+<td>aContentShell</td>
+<td>the shell being added.  
+</td>
+</tr>
+
+<tr>
+<td>aContentShell</td>
+<td>the shell being added.  
+</td>
+</tr>
+
+<tr>
+<td>aContentShell</td>
+<td>the shell being added.  
+</td>
+</tr>
+
+</table>
+
 ### contentShellRemoved(aContentShell) ###
   
 Called when a content shell is removed from the docshell tree.  This is  
@@ -31,6 +61,18 @@ contentShellRemoved should just do nothing.
   
 @param aContentShell the shell being removed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContentShell</td>
+<td>the shell being removed.  
+</td>
+</tr>
+
+</table>
 
 ### sizeShellTo(shell, cx, cy) ###
 

@@ -33,6 +33,42 @@ will be modified.
                    should be forgotten (milliseconds since Jan 1 1970 0:00:00).   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>the uri to add the permission for  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the uri to add the permission for  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the uri to add the permission for  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the uri to add the permission for  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the uri to add the permission for  
+</td>
+</tr>
+
+</table>
+
 ### addFromPrincipal(principal, typed, permission, expireType, expireTime) ###
   
 Add permission information for a given principal.  
@@ -54,6 +90,24 @@ to.
               The type must have been previously registered using the  
               add() method.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>host</td>
+<td>the host to remove the permission for  
+</td>
+</tr>
+
+<tr>
+<td>host</td>
+<td>the host to remove the permission for  
+</td>
+</tr>
+
+</table>
 
 ### removeFromPrincipal(principal, type) ###
   
@@ -82,6 +136,30 @@ Test whether a website has permission to perform the given action.
                there is no stored permission for this uri and / or type.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>the uri to be tested  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the uri to be tested  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the uri to be tested  
+</td>
+</tr>
+
+</table>
+
 ### testPermissionFromPrincipal(principal, type) ###
   
 Test whether the principal has the permission to perform a given action.  
@@ -105,6 +183,30 @@ This requires an exact hostname match, subdomains are not a match.
                there is no stored permission for this uri and / or type.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>the uri to be tested  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the uri to be tested  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the uri to be tested  
+</td>
+</tr>
+
+</table>
+
 ### testExactPermissionFromPrincipal(principal, type) ###
   
 See testExactPermission() above.  
@@ -123,6 +225,30 @@ System principals will always have permissions granted.
                  there is no stored permission for this uri and / or type.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>principal</td>
+<td>the principal  
+</td>
+</tr>
+
+<tr>
+<td>principal</td>
+<td>the principal  
+</td>
+</tr>
+
+<tr>
+<td>principal</td>
+<td>the principal  
+</td>
+</tr>
+
+</table>
+
 ### getPermissionObject(principal, type, exactHost) ###
   
 Get the permission object associated with the given principal and action.  
@@ -137,6 +263,30 @@ Get the permission object associated with the given principal and action.
       need to know the specific stored details.  
 @note This method will always return null for the system principal.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>principal</td>
+<td>The principal  
+</td>
+</tr>
+
+<tr>
+<td>principal</td>
+<td>The principal  
+</td>
+</tr>
+
+<tr>
+<td>principal</td>
+<td>The principal  
+</td>
+</tr>
+
+</table>
 
 ### addrefAppId(appId) ###
   
@@ -157,6 +307,24 @@ Remove all permissions associated with a given app id.
                     a browser element (true) or all permissions (false).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAppId</td>
+<td>The appId of the app  
+</td>
+</tr>
+
+<tr>
+<td>aAppId</td>
+<td>The appId of the app  
+</td>
+</tr>
+
+</table>
+
 ### updateExpireTime(principal, type, exactHost, sessionExpireTime, persistentExpireTime) ###
   
 If the current permission is set to expire, reset the expiration time. If  
@@ -172,6 +340,30 @@ method will silently return.
                           Jan 1 1970 0:00:00), if it is currently  
                           EXPIRE_TIME.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>sessionExpiretime</td>
+<td>an integer representation of when this permission  
+                          should be forgotten (milliseconds since  
+                          Jan 1 1970 0:00:00), if it is currently  
+                          EXPIRE_SESSION.  
+</td>
+</tr>
+
+<tr>
+<td>sessionExpiretime</td>
+<td>an integer representation of when this permission  
+                          should be forgotten (milliseconds since  
+                          Jan 1 1970 0:00:00), if it is currently  
+                          EXPIRE_SESSION.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

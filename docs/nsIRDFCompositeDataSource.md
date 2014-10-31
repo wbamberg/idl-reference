@@ -16,11 +16,35 @@ Add a datasource the the composite data source.
 @param aDataSource the datasource to add to composite  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDataSource</td>
+<td>the datasource to add to composite  
+</td>
+</tr>
+
+</table>
+
 ### RemoveDataSource(aDataSource) ###
   
 Remove a datasource from the composite data source.  
 @param aDataSource the datasource to remove from the composite  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDataSource</td>
+<td>the datasource to remove from the composite  
+</td>
+</tr>
+
+</table>
 
 ### GetDataSources() ###
   

@@ -23,6 +23,18 @@ links.
 @return the nsIURI object containing the specifications for the URI.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The 0-based index of the URI to be returned.  
+</td>
+</tr>
+
+</table>
+
 ### getAnchor(index) ###
   
 Returns a reference to the object at the given index.  
@@ -31,6 +43,18 @@ Returns a reference to the object at the given index.
   
 @return the nsIAccessible object at the desired index.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The 0-based index whose object is to be returned.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

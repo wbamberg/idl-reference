@@ -32,6 +32,60 @@ newSocket
        object typically implements nsITransportSecurityInfo.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFamily</td>
+<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+</td>
+</tr>
+
+<tr>
+<td>aFamily</td>
+<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+</td>
+</tr>
+
+<tr>
+<td>aFamily</td>
+<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+</td>
+</tr>
+
+<tr>
+<td>aFamily</td>
+<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+</td>
+</tr>
+
+<tr>
+<td>aFamily</td>
+<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+</td>
+</tr>
+
+<tr>
+<td>aFamily</td>
+<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+</td>
+</tr>
+
+<tr>
+<td>aFamily</td>
+<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+</td>
+</tr>
+
+<tr>
+<td>aFamily</td>
+<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+</td>
+</tr>
+
+</table>
+
 ### addToSocket(aFamily, aHost, aPort, aProxyHost, aProxyPort, aFlags, aFileDesc, aSecurityInfo) ###
   
 addToSocket  

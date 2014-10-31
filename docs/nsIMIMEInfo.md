@@ -61,6 +61,18 @@ useHelperApp or useSystemDefault.
 Other exceptions may be thrown.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFile</td>
+<td>The file to launch this application with.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### primaryExtension ###

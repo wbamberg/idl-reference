@@ -35,3 +35,37 @@ must not be null, or you will crash.
        A value of 0x0000 will cause an exception to be thrown upon  
        attempts to write unsupported characters.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aOutStream</td>
+<td>       The underlying output stream to which the converted strings will  
+       be written.  
+</td>
+</tr>
+
+<tr>
+<td>aOutStream</td>
+<td>       The underlying output stream to which the converted strings will  
+       be written.  
+</td>
+</tr>
+
+<tr>
+<td>aOutStream</td>
+<td>       The underlying output stream to which the converted strings will  
+       be written.  
+</td>
+</tr>
+
+<tr>
+<td>aOutStream</td>
+<td>       The underlying output stream to which the converted strings will  
+       be written.  
+</td>
+</tr>
+
+</table>

@@ -19,6 +19,26 @@ available for the given reason.
 @returns an nsIAuthPrompt2 interface, or throws NS_ERROR_NOT_AVAILABLE  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPromptReason</td>
+<td>The reason for the auth prompt;  
+                       one of #PROMPT_NORMAL or #PROMPT_PROXY  
+</td>
+</tr>
+
+<tr>
+<td>aPromptReason</td>
+<td>The reason for the auth prompt;  
+                       one of #PROMPT_NORMAL or #PROMPT_PROXY  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### PROMPT_NORMAL ###

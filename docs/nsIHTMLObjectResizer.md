@@ -12,6 +12,18 @@ Shows active resizers around an element's frame
 @param aResizedElement [IN] a DOM Element  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aResizedElement</td>
+<td>[IN] a DOM Element  
+</td>
+</tr>
+
+</table>
+
 ### hideResizers() ###
   
 Hide resizers if they are visible  
@@ -31,6 +43,36 @@ event callback when a mouse button is pressed
 @param aMouseEvent [IN] the event  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aX</td>
+<td>[IN] horizontal position of the pointer  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>[IN] horizontal position of the pointer  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>[IN] horizontal position of the pointer  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>[IN] horizontal position of the pointer  
+</td>
+</tr>
+
+</table>
+
 ### mouseUp(aX, aY, aTarget) ###
   
 event callback when a mouse button is released  
@@ -39,11 +81,47 @@ event callback when a mouse button is released
 @param aTarget [IN] the element triggering the event  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aX</td>
+<td>[IN] horizontal position of the pointer  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>[IN] horizontal position of the pointer  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>[IN] horizontal position of the pointer  
+</td>
+</tr>
+
+</table>
+
 ### mouseMove(aMouseEvent) ###
   
 event callback when the mouse pointer is moved  
 @param aMouseEvent [IN] the event  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aMouseEvent</td>
+<td>[IN] the event  
+</td>
+</tr>
+
+</table>
 
 ### addObjectResizeEventListener(aListener) ###
   
@@ -52,11 +130,35 @@ that the user started to resize an object or finalized such an operation
 @param aListener [IN] an instance of nsIHTMLObjectResizeListener  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>[IN] an instance of nsIHTMLObjectResizeListener  
+</td>
+</tr>
+
+</table>
+
 ### removeObjectResizeEventListener(aListener) ###
   
 Deletes a resize listener  
 @param aListener [IN] an instance of nsIHTMLObjectResizeListener  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>[IN] an instance of nsIHTMLObjectResizeListener  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

@@ -45,6 +45,36 @@ accidentally running "blah.exe" before it is a complete file.
        part of the file in one chunk.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>       The URI to fetch.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>       The URI to fetch.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>       The URI to fetch.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>       The URI to fetch.  
+</td>
+</tr>
+
+</table>
+
 ### start(observer, ctxt) ###
   
 Start the incremental download.  
@@ -62,6 +92,40 @@ Start the incremental download.
 @param ctxt  
        User defined object forwarded to the observer's methods.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>observer</td>
+<td>       An observer to be notified of various events.  OnStartRequest is  
+       called when finalURI and totalSize have been determined or when an  
+       error occurs.  OnStopRequest is called when the file is completely  
+       downloaded or when an error occurs.  If this object implements  
+       nsIProgressEventSink, then its OnProgress method will be called as  
+       data is written to the destination file.  If this object implements  
+       nsIInterfaceRequestor, then it will be assigned as the underlying  
+       channel's notification callbacks, which allows it to provide a  
+       nsIAuthPrompt implementation if needed by the channel, for example.  
+</td>
+</tr>
+
+<tr>
+<td>observer</td>
+<td>       An observer to be notified of various events.  OnStartRequest is  
+       called when finalURI and totalSize have been determined or when an  
+       error occurs.  OnStopRequest is called when the file is completely  
+       downloaded or when an error occurs.  If this object implements  
+       nsIProgressEventSink, then its OnProgress method will be called as  
+       data is written to the destination file.  If this object implements  
+       nsIInterfaceRequestor, then it will be assigned as the underlying  
+       channel's notification callbacks, which allows it to provide a  
+       nsIAuthPrompt implementation if needed by the channel, for example.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

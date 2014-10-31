@@ -23,6 +23,26 @@ removed with the removeListener method.
          The reference to a listener  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aEvent  
+         The name of an event  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aEvent  
+         The name of an event  
+</td>
+</tr>
+
+</table>
+
 ### removeListener(aEvent, aListener) ###
   
 Removes an event listener from the list. Calling remove  
@@ -33,3 +53,23 @@ event listener has no effect.
 @param   aListener  
          The reference to a listener  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aEvent  
+         The name of an event  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aEvent  
+         The name of an event  
+</td>
+</tr>
+
+</table>

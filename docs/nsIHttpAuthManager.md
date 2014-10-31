@@ -52,6 +52,100 @@ Lookup auth identity.
        app/mozbrowser is in use for this request  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+</table>
+
 ### setAuthIdentity(aScheme, aHost, aPort, aAuthType, aRealm, aPath, aUserDomain, aUserName, aUserPassword, aIsPrivate, aPrincipal) ###
   
 Store auth identity.  
@@ -83,6 +177,100 @@ Store auth identity.
        the principal from which to derive information about which  
        app/mozbrowser is in use for this request  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
+       this should be "http" (this includes authentication for CONNECT  
+       tunneling).  
+</td>
+</tr>
+
+</table>
 
 ### clearAll() ###
   

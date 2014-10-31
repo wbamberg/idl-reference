@@ -75,6 +75,24 @@ Parse CSS and update the style sheet in place.
        The new source string for the style sheet.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>DOMCSSStyleSheet</td>
+<td>aSheet  
+</td>
+</tr>
+
+<tr>
+<td>DOMCSSStyleSheet</td>
+<td>aSheet  
+</td>
+</tr>
+
+</table>
+
 ### scrollElementIntoView(aElement) ###
   
 Scroll an element completely into view, if possible.  
@@ -82,6 +100,18 @@ This is similar to ensureElementIsVisible but for all ancestors.
   
 @param DOMElement aElement  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>DOMElement</td>
+<td>aElement  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

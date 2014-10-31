@@ -52,6 +52,30 @@ width and height.
 @throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>image</td>
+<td>a node to use   
+</td>
+</tr>
+
+<tr>
+<td>image</td>
+<td>a node to use   
+</td>
+</tr>
+
+<tr>
+<td>image</td>
+<td>a node to use   
+</td>
+</tr>
+
+</table>
+
 ### addElement(element) ###
 
 ### mozTypesAt(index) ###
@@ -77,6 +101,20 @@ If the format is not found, then this method has no effect.
 @throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>format</td>
+<td>the format to remove  
+@throws NS_ERROR_DOM_INDEX_SIZE_ERR if index is greater or equal than itemCount  
+@throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
+</td>
+</tr>
+
+</table>
+
 ### mozSetDataAt(format, data, index) ###
 
 ### mozGetDataAt(format, index) ###
@@ -89,6 +127,18 @@ range from zero to itemCount - 1.
 @returns the data of the given format, or null if it doesn't exist.  
 @throws NS_ERROR_DOM_INDEX_SIZE_ERR if index is greater or equal than itemCount  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>format</td>
+<td>the format of the data to look up  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

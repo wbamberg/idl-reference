@@ -66,6 +66,24 @@ Read data from the stream.
 NOTE: this method should not throw NS_BASE_STREAM_CLOSED.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBuf</td>
+<td>the buffer into which the data is to be read  
+</td>
+</tr>
+
+<tr>
+<td>aBuf</td>
+<td>the buffer into which the data is to be read  
+</td>
+</tr>
+
+</table>
+
 ### readSegments(aWriter, aClosure, aCount) ###
   
 Low-level read method that provides access to the stream's underlying  
@@ -91,6 +109,30 @@ buffer (e.g., socket input stream).
   
 NOTE: this method should not throw NS_BASE_STREAM_CLOSED.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWriter</td>
+<td>the "consumer" of the data to be read  
+</td>
+</tr>
+
+<tr>
+<td>aWriter</td>
+<td>the "consumer" of the data to be read  
+</td>
+</tr>
+
+<tr>
+<td>aWriter</td>
+<td>the "consumer" of the data to be read  
+</td>
+</tr>
+
+</table>
 
 ### isNonBlocking() ###
   

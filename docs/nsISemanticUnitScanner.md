@@ -22,6 +22,19 @@ used to determine the language(s) of the processed text.
                     encoded in (can be NULL)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>characterSet</td>
+<td>the character set the text was originally  
+                    encoded in (can be NULL)  
+</td>
+</tr>
+
+</table>
+
 ### next(text, length, pos, isLastBuffer, begin, end) ###
   
 next()  
@@ -35,3 +48,45 @@ Get the begin / end offset of the next unit in the current text
 @param begin the end offset of the next unit   
 @return has more unit in the current text  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>text</td>
+<td>the text to be scanned  
+</td>
+</tr>
+
+<tr>
+<td>text</td>
+<td>the text to be scanned  
+</td>
+</tr>
+
+<tr>
+<td>text</td>
+<td>the text to be scanned  
+</td>
+</tr>
+
+<tr>
+<td>text</td>
+<td>the text to be scanned  
+</td>
+</tr>
+
+<tr>
+<td>text</td>
+<td>the text to be scanned  
+</td>
+</tr>
+
+<tr>
+<td>text</td>
+<td>the text to be scanned  
+</td>
+</tr>
+
+</table>

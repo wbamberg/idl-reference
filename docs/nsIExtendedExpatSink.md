@@ -20,6 +20,30 @@ events.
               or null if none was declared.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDoctypeName</td>
+<td>The document type name.  
+</td>
+</tr>
+
+<tr>
+<td>aDoctypeName</td>
+<td>The document type name.  
+</td>
+</tr>
+
+<tr>
+<td>aDoctypeName</td>
+<td>The document type name.  
+</td>
+</tr>
+
+</table>
+
 ### handleStartNamespaceDecl(aPrefix, aUri) ###
   
 Called when a prefix mapping starts to be in-scope, before any  
@@ -30,6 +54,28 @@ startElement events.
 @param aUri The Namespace URI the prefix is mapped to.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefix</td>
+<td>The Namespace prefix being declared. An empty string  
+               is used for the default element namespace, which has  
+               no prefix.  
+</td>
+</tr>
+
+<tr>
+<td>aPrefix</td>
+<td>The Namespace prefix being declared. An empty string  
+               is used for the default element namespace, which has  
+               no prefix.  
+</td>
+</tr>
+
+</table>
+
 ### handleEndNamespaceDecl(aPrefix) ###
   
 Called when a prefix mapping is no longer in-scope, after any  
@@ -37,6 +83,19 @@ endElement events.
 @param aPrefix The prefix that was being mapped. This is the empty string  
                when a default mapping scope ends.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefix</td>
+<td>The prefix that was being mapped. This is the empty string  
+               when a default mapping scope ends.  
+</td>
+</tr>
+
+</table>
 
 ### handleNotationDecl(aNotationName, aSysid, aPubid) ###
   
@@ -48,6 +107,30 @@ null. The other arguments can be.
 @param aPubId The notation's pubilc identifier, or null if none was given.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNotationName</td>
+<td>The notation name.  
+</td>
+</tr>
+
+<tr>
+<td>aNotationName</td>
+<td>The notation name.  
+</td>
+</tr>
+
+<tr>
+<td>aNotationName</td>
+<td>The notation name.  
+</td>
+</tr>
+
+</table>
+
 ### handleUnparsedEntityDecl(aName, aSysid, aPubid, aNotationName) ###
   
 This is called for a declaration of an unparsed (NDATA) entity.  
@@ -58,3 +141,33 @@ null. The other arguments may be.
 @param aPubId The notation's pubilc identifier, or null if none was given.  
 @param aNotationName The name of the associated notation.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>The unparsed entity's name.  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>The unparsed entity's name.  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>The unparsed entity's name.  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>The unparsed entity's name.  
+</td>
+</tr>
+
+</table>

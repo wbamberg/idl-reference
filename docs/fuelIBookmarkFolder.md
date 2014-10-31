@@ -19,6 +19,26 @@ Adds a new child bookmark to this folder.
          The uri of bookmark.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aTitle  
+         The title of bookmark.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aTitle  
+         The title of bookmark.  
+</td>
+</tr>
+
+</table>
+
 ### addSeparator() ###
   
 Adds a new child separator to this folder.  
@@ -30,6 +50,19 @@ Adds a new child folder to this folder.
 @param   aTitle  
          The title of folder.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aTitle  
+         The title of folder.  
+</td>
+</tr>
+
+</table>
 
 ### remove() ###
   

@@ -22,6 +22,18 @@ purpose encryption/decryption.
 Can throw if the user cancels entry of their master password.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>plainText</td>
+<td>       The string to be encrypted.  
+</td>
+</tr>
+
+</table>
+
 ### decrypt(cipherText) ###
   
 decrypt  
@@ -35,6 +47,18 @@ Can throw if the user cancels entry of their master password, or if the
 cipherText value can not be successfully decrypted (eg, if it was  
 encrypted with some other key).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>cipherText</td>
+<td>       The string to be decrypted.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

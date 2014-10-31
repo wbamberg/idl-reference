@@ -18,3 +18,27 @@ decide whether or not to defer the request to an alternate activity system.
 @param activities  A json blob which is an array of { "title":"...", "icon":"..." }.  
 @param callback    The callback to send the index of the choosen activity, or the result.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>options</td>
+<td>The ActivityOptions object in the form of { name: "send", data: { ... } }  
+</td>
+</tr>
+
+<tr>
+<td>options</td>
+<td>The ActivityOptions object in the form of { name: "send", data: { ... } }  
+</td>
+</tr>
+
+<tr>
+<td>options</td>
+<td>The ActivityOptions object in the form of { name: "send", data: { ... } }  
+</td>
+</tr>
+
+</table>

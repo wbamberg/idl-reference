@@ -50,6 +50,66 @@ Initialize the input stream pump.
        if true, the input stream will be closed after it has been read.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>       contains the data to be read.  if the input stream is non-blocking,  
+       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
+       then the stream will be read directly.  otherwise, it will be read  
+       on a background thread using the stream transport service.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       contains the data to be read.  if the input stream is non-blocking,  
+       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
+       then the stream will be read directly.  otherwise, it will be read  
+       on a background thread using the stream transport service.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       contains the data to be read.  if the input stream is non-blocking,  
+       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
+       then the stream will be read directly.  otherwise, it will be read  
+       on a background thread using the stream transport service.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       contains the data to be read.  if the input stream is non-blocking,  
+       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
+       then the stream will be read directly.  otherwise, it will be read  
+       on a background thread using the stream transport service.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       contains the data to be read.  if the input stream is non-blocking,  
+       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
+       then the stream will be read directly.  otherwise, it will be read  
+       on a background thread using the stream transport service.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       contains the data to be read.  if the input stream is non-blocking,  
+       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
+       then the stream will be read directly.  otherwise, it will be read  
+       on a background thread using the stream transport service.  
+</td>
+</tr>
+
+</table>
+
 ### asyncRead(aListener, aListenerContext) ###
   
 asyncRead causes the input stream to be read in chunks and delivered  
@@ -60,3 +120,21 @@ asynchronously to the listener via OnDataAvailable.
 @param aListenerContext  
        passed to listener methods.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>       receives notifications.  
+</td>
+</tr>
+
+<tr>
+<td>aListener</td>
+<td>       receives notifications.  
+</td>
+</tr>
+
+</table>

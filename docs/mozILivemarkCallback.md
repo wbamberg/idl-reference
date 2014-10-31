@@ -16,3 +16,23 @@ Invoked when a livemark is added, removed or retrieved.
 @param aLivemark  
        A mozILivemark object representing the livemark, or null on removal.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStatus</td>
+<td>       Whether the request was completed successfully.  
+       Use Components.isSuccessCode(aStatus) to check this.  
+</td>
+</tr>
+
+<tr>
+<td>aStatus</td>
+<td>       Whether the request was completed successfully.  
+       Use Components.isSuccessCode(aStatus) to check this.  
+</td>
+</tr>
+
+</table>

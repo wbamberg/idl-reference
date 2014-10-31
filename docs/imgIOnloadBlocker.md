@@ -15,6 +15,18 @@ Called when it is appropriate to block onload for the given imgIRequest.
        The request that should block onload.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>       The request that should block onload.  
+</td>
+</tr>
+
+</table>
+
 ### unblockOnload(aRequest) ###
   
 unblockOnload  
@@ -24,3 +36,15 @@ imgIRequest.
 @param aRequest  
        The request that should unblock onload.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>       The request that should unblock onload.  
+</td>
+</tr>
+
+</table>

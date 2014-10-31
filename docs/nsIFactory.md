@@ -26,6 +26,36 @@ Creates an instance of a component.
         NS_ERROR* - Method failure.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aOuter</td>
+<td>Pointer to a component that wishes to be aggregated  
+              in the resulting instance. This will be nullptr if no  
+              aggregation is requested.  
+</td>
+</tr>
+
+<tr>
+<td>aOuter</td>
+<td>Pointer to a component that wishes to be aggregated  
+              in the resulting instance. This will be nullptr if no  
+              aggregation is requested.  
+</td>
+</tr>
+
+<tr>
+<td>aOuter</td>
+<td>Pointer to a component that wishes to be aggregated  
+              in the resulting instance. This will be nullptr if no  
+              aggregation is requested.  
+</td>
+</tr>
+
+</table>
+
 ### lockFactory(lock) ###
   
 LockFactory provides the client a way to keep the component  
@@ -36,3 +66,16 @@ to release the factory.
 @param lock - Must be PR_TRUE or PR_FALSE  
 @throws NS_ERROR* - Method failure.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>lock</td>
+<td>- Must be PR_TRUE or PR_FALSE  
+@throws NS_ERROR* - Method failure.  
+</td>
+</tr>
+
+</table>

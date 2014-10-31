@@ -28,6 +28,24 @@ On Windows, the "native" character set is UTF-8, not the native codepage.
 @param state      The nsICommandLine.state flag.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>workingDir</td>
+<td>The working directory for resolving file and URI paths.  
+</td>
+</tr>
+
+<tr>
+<td>workingDir</td>
+<td>The working directory for resolving file and URI paths.  
+</td>
+</tr>
+
+</table>
+
 ### setWindowContext(aWindow) ###
   
 Set the windowContext parameter.  

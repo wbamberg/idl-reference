@@ -25,3 +25,51 @@ as well as in testing.
 @param aDownloadErrorCallback Called if we get an http error or a  
        connection refused error.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequestTables</td>
+<td>Comma-separated list of tables included in this  
+       update.  
+</td>
+</tr>
+
+<tr>
+<td>aRequestTables</td>
+<td>Comma-separated list of tables included in this  
+       update.  
+</td>
+</tr>
+
+<tr>
+<td>aRequestTables</td>
+<td>Comma-separated list of tables included in this  
+       update.  
+</td>
+</tr>
+
+<tr>
+<td>aRequestTables</td>
+<td>Comma-separated list of tables included in this  
+       update.  
+</td>
+</tr>
+
+<tr>
+<td>aRequestTables</td>
+<td>Comma-separated list of tables included in this  
+       update.  
+</td>
+</tr>
+
+<tr>
+<td>aRequestTables</td>
+<td>Comma-separated list of tables included in this  
+       update.  
+</td>
+</tr>
+
+</table>

@@ -15,6 +15,19 @@ process that currently holds the lock to quit.
 @throws NS_ERROR_FAILURE if unlocking failed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSeverity</td>
+<td>either ATTEMPT_QUIT or FORCE_QUIT  
+@throws NS_ERROR_FAILURE if unlocking failed.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### ATTEMPT_QUIT ###

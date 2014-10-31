@@ -18,6 +18,24 @@ not be called once the stream has been started to be read.
 @param value  value of the header  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>name of the header  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>name of the header  
+</td>
+</tr>
+
+</table>
+
 ### setData(stream) ###
   
 Sets data-stream. May not be called once the stream has been started  
@@ -27,6 +45,18 @@ stream if the implementation of the nsIMIMEInputStream also is used as
 an nsISeekableStream.  
 @param stream  stream containing the data for the stream  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>stream</td>
+<td>stream containing the data for the stream  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

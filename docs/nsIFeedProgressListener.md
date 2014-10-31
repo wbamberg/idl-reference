@@ -22,6 +22,24 @@ bit will be set if the error was due to a fatal error.
        The line on which the error occurred.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>errorText</td>
+<td>       A short description of the error.  
+</td>
+</tr>
+
+<tr>
+<td>errorText</td>
+<td>       A short description of the error.  
+</td>
+</tr>
+
+</table>
+
 ### handleStartFeed(result) ###
   
 StartFeed will be called as soon as a reasonable start to  
@@ -32,6 +50,20 @@ a feed is detected.
        and its metadata. At this point, the result has version   
        information.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>result</td>
+<td>       An object implementing nsIFeedResult representing the feed   
+       and its metadata. At this point, the result has version   
+       information.  
+</td>
+</tr>
+
+</table>
 
 ### handleFeedAtFirstEntry(result) ###
   
@@ -46,6 +78,20 @@ this event will not be called.
        most of its feed-level metadata.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>result</td>
+<td>       An object implementing nsIFeedResult representing the feed   
+       and its metadata. At this point, the result will likely have  
+       most of its feed-level metadata.  
+</td>
+</tr>
+
+</table>
+
 ### handleEntry(entry, result) ###
   
 Called after each entry/item. If the document is a standalone  
@@ -59,3 +105,23 @@ called. Also, this entry's parent field will be null.
        An object implementing nsIFeedResult representing the feed   
        and its metadata.   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>entry</td>
+<td>       An object implementing nsIFeedEntry that represents the latest  
+       entry encountered.  
+</td>
+</tr>
+
+<tr>
+<td>entry</td>
+<td>       An object implementing nsIFeedEntry that represents the latest  
+       entry encountered.  
+</td>
+</tr>
+
+</table>

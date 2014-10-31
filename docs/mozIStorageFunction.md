@@ -29,3 +29,21 @@ function should occur.
   
 @returns any value as Variant type.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNumArguments</td>
+<td>The number of arguments  
+</td>
+</tr>
+
+<tr>
+<td>aNumArguments</td>
+<td>The number of arguments  
+</td>
+</tr>
+
+</table>

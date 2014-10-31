@@ -18,6 +18,19 @@ Determines if a storage item exists with the given name.
          false otherwise.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of an item  
+</td>
+</tr>
+
+</table>
+
 ### set(aName, aValue) ###
   
 Sets the value of a storage item with the given name.  
@@ -26,6 +39,26 @@ Sets the value of a storage item with the given name.
 @param   aValue  
          The value to assign to the item  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of an item  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of an item  
+</td>
+</tr>
+
+</table>
 
 ### get(aName, aDefaultValue) ###
   
@@ -38,6 +71,26 @@ default value if the item does not exist.
 @returns value of the item or the given default value if no item  
          exists with the given name.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of an item  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of an item  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

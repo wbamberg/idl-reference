@@ -69,6 +69,24 @@ channel is reopened.
 @see nsIChannelEventSink for onChannelRedirect  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>the nsIStreamListener implementation  
+</td>
+</tr>
+
+<tr>
+<td>aListener</td>
+<td>the nsIStreamListener implementation  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### originalURI ###

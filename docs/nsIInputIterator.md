@@ -34,6 +34,19 @@ The result is undefined if |anotherIterator| was not created by or for the same 
 @result true if |anotherIterator| points to the same position in the underlying container or sequence  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anotherIterator</td>
+<td>another iterator to compare against, created by or for the same underlying container or sequence  
+@result true if |anotherIterator| points to the same position in the underlying container or sequence  
+</td>
+</tr>
+
+</table>
+
 ### clone() ###
   
 Create a new iterator pointing to the same position in the underlying container or sequence to which this iterator currently points.  

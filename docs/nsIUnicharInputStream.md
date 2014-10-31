@@ -44,12 +44,48 @@ NOTE: this function may be unimplemented if a stream has no underlying
 buffer  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWriter</td>
+<td>the "consumer" of the data to be read  
+</td>
+</tr>
+
+<tr>
+<td>aWriter</td>
+<td>the "consumer" of the data to be read  
+</td>
+</tr>
+
+<tr>
+<td>aWriter</td>
+<td>the "consumer" of the data to be read  
+</td>
+</tr>
+
+</table>
+
 ### readString(aCount, aString) ###
   
 Read into a string object.  
 @param aCount The number of characters that should be read  
 @return The number of characters that were read.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCount</td>
+<td>The number of characters that should be read  
+</td>
+</tr>
+
+</table>
 
 ### close() ###
   

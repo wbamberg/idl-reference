@@ -19,6 +19,18 @@ NOTE: If the path of the CFURL is /a/b/c, at least a/b must exist beforehand.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aCFURL         the CoreFoundation URL  
+</td>
+</tr>
+
+</table>
+
 ### initWithFSRef(aFSRef) ###
   
 initWithFSRef  
@@ -30,6 +42,18 @@ NOTE: Supported only for XP_MACOSX
 @param   aFSRef         the native FSRef  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aFSRef         the native FSRef  
+</td>
+</tr>
+
+</table>
 
 ### getCFURL() ###
   
@@ -92,6 +116,24 @@ Launch the application that this file points to with a document.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aDocToLoad          Must not be NULL. If no document, use nsIFile::launch  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aDocToLoad          Must not be NULL. If no document, use nsIFile::launch  
+</td>
+</tr>
+
+</table>
+
 ### openDocWithApp(aAppToOpenWith, aLaunchInBackground) ###
   
 openDocWithApp  
@@ -104,6 +146,28 @@ Open the document that this file points to with the given application.
 @param   aLaunchInBackground TRUE if the application should not come to the front.  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aAppToOpenWith      The application with  which to open the document.  
+                             If NULL, the creator code of the document is used  
+                             to determine the application.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aAppToOpenWith      The application with  which to open the document.  
+                             If NULL, the creator code of the document is used  
+                             to determine the application.  
+</td>
+</tr>
+
+</table>
 
 ### isPackage() ###
   

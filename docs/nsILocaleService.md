@@ -19,6 +19,18 @@ Create a new nsILocale from a locale string.
 @return A nsILocale representing the given locale.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLocale</td>
+<td>       A locale code as described in nsILocale.  
+</td>
+</tr>
+
+</table>
+
 ### getSystemLocale() ###
   
 Get the user preference for locale from the operating system.  
@@ -47,6 +59,19 @@ Get the most preferred locale from a list of locale preferences.
 @return The most preferred locale according to the acceptLanguage  
         parameter.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>acceptLanguage</td>
+<td>       Locale preference in the same format as the Accept-Language HTTP  
+       header.  
+</td>
+</tr>
+
+</table>
 
 ### getLocaleComponentForUserAgent() ###
   

@@ -25,6 +25,40 @@ Tell the chrome process to listen on the port with the given parameters.
        "arraybuffer" to use UInt8 array instances or "string" to use String.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>serverSocket</td>
+<td>       The server socket generated in the listen of nsIDOMTCPSocket  
+       on the child side.  
+</td>
+</tr>
+
+<tr>
+<td>serverSocket</td>
+<td>       The server socket generated in the listen of nsIDOMTCPSocket  
+       on the child side.  
+</td>
+</tr>
+
+<tr>
+<td>serverSocket</td>
+<td>       The server socket generated in the listen of nsIDOMTCPSocket  
+       on the child side.  
+</td>
+</tr>
+
+<tr>
+<td>serverSocket</td>
+<td>       The server socket generated in the listen of nsIDOMTCPSocket  
+       on the child side.  
+</td>
+</tr>
+
+</table>
+
 ### close() ###
   
 Tell the chrome process to close the server socket.  

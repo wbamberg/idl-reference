@@ -41,6 +41,30 @@ group residing in a custom directory with a custom quota.
    Optional override of the default quota.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>group</td>
+<td>   URL of the manifest  
+</td>
+</tr>
+
+<tr>
+<td>group</td>
+<td>   URL of the manifest  
+</td>
+</tr>
+
+<tr>
+<td>group</td>
+<td>   URL of the manifest  
+</td>
+</tr>
+
+</table>
+
 ### getApplicationCache(clientID) ###
   
 Get an application cache object for the given client ID.  
@@ -70,6 +94,24 @@ Deletes some or all of an application's cache entries.
    deleted (this is used for application uninstallation).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>appId</td>
+<td>   The mozIApplication.localId of the application.  
+</td>
+</tr>
+
+<tr>
+<td>appId</td>
+<td>   The mozIApplication.localId of the application.  
+</td>
+</tr>
+
+</table>
+
 ### chooseApplicationCache(key, aLoadContextInfo) ###
   
 Try to find the best application cache to serve a resource.  
@@ -88,6 +130,24 @@ this is not currently implemented.
 @param key  
        The cache entry key.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>cache</td>
+<td>       The cache in which the entry is cached now.  
+</td>
+</tr>
+
+<tr>
+<td>cache</td>
+<td>       The cache in which the entry is cached now.  
+</td>
+</tr>
+
+</table>
 
 ### getGroups(count, groupIDs) ###
   

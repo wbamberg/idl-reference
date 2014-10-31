@@ -16,6 +16,24 @@ Binds aValue to the parameter with the name aName.
        The value to bind.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>       The name of the parameter to bind aValue to.  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>       The name of the parameter to bind aValue to.  
+</td>
+</tr>
+
+</table>
+
 ### bindUTF8StringByName(aName, aValue) ###
 
 ### bindStringByName(aName, aValue) ###
@@ -41,6 +59,24 @@ Binds aValue to the parameter with the index aIndex.
 @param aValue  
        The value to bind.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>       The zero-based index of the parameter to bind aValue to.  
+</td>
+</tr>
+
+<tr>
+<td>aIndex</td>
+<td>       The zero-based index of the parameter to bind aValue to.  
+</td>
+</tr>
+
+</table>
 
 ### bindUTF8StringByIndex(aIndex, aValue) ###
 

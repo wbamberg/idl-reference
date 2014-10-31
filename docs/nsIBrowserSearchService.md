@@ -17,6 +17,18 @@ call to this method. The callback is always invoked asynchronously.
 @param aObserver An optional object observing the end of initialization.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>An optional object observing the end of initialization.  
+</td>
+</tr>
+
+</table>
+
 ### addEngine(engineURL, dataType, iconURL, confirm, callback) ###
   
 Adds a new search engine from the file at the supplied URI, optionally  
@@ -51,6 +63,42 @@ right away.
         file cannot be successfully loaded.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>engineURL</td>
+<td>       The URL to the search engine's description file.  
+</td>
+</tr>
+
+<tr>
+<td>engineURL</td>
+<td>       The URL to the search engine's description file.  
+</td>
+</tr>
+
+<tr>
+<td>engineURL</td>
+<td>       The URL to the search engine's description file.  
+</td>
+</tr>
+
+<tr>
+<td>engineURL</td>
+<td>       The URL to the search engine's description file.  
+</td>
+</tr>
+
+<tr>
+<td>engineURL</td>
+<td>       The URL to the search engine's description file.  
+</td>
+</tr>
+
+</table>
+
 ### addEngineWithDetails(name, iconURL, alias, description, method, url, extensionID) ###
   
 Adds a new search engine, without asking the user for confirmation and  
@@ -82,6 +130,54 @@ without starting to use it right away.
        Optional: The correct extensionID if called by an add-on.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The search engine's name. Must be unique. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The search engine's name. Must be unique. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The search engine's name. Must be unique. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The search engine's name. Must be unique. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The search engine's name. Must be unique. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The search engine's name. Must be unique. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The search engine's name. Must be unique. Must not be null.  
+</td>
+</tr>
+
+</table>
+
 ### restoreDefaultEngines() ###
   
 Un-hides all engines installed in the directory corresponding to  
@@ -99,6 +195,19 @@ Returns an engine with the specified alias.
          exist.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>alias  
+         The search engine's alias.  
+</td>
+</tr>
+
+</table>
+
 ### getEngineByName(aEngineName) ###
   
 Returns an engine with the specified name.  
@@ -108,6 +217,19 @@ Returns an engine with the specified name.
 @returns The corresponding nsISearchEngine object, or null if it doesn't  
          exist.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aEngineName  
+         The name of the engine.  
+</td>
+</tr>
+
+</table>
 
 ### getEngines(engineCount, engines) ###
   
@@ -146,6 +268,26 @@ Moves a visible search engine.
         hidden.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>engine  
+        The engine to move.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>engine  
+        The engine to move.  
+</td>
+</tr>
+
+</table>
+
 ### removeEngine(engine) ###
   
 Removes the search engine. If the search engine is installed in a global  
@@ -155,6 +297,19 @@ profile directory, it will be removed from disk.
 @param  engine  
         The engine to remove.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>engine  
+        The engine to remove.  
+</td>
+</tr>
+
+</table>
 
 ### parseSubmissionURL(url) ###
   
@@ -171,6 +326,19 @@ string, but other parameters are ignored.
        String containing the URL to parse, for example  
        "https://www.google.com/search?q=terms".  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>url</td>
+<td>       String containing the URL to parse, for example  
+       "https://www.google.com/search?q=terms".  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

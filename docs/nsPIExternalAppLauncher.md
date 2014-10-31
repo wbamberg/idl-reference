@@ -17,6 +17,18 @@ consumers can add temporary files they want deleted on exit.
 @param aTemporaryFile A temporary file we should delete on exit.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTemporaryFile</td>
+<td>A temporary file we should delete on exit.  
+</td>
+</tr>
+
+</table>
+
 ### deleteTemporaryPrivateFileWhenPossible(aTemporaryFile) ###
   
 Delete a temporary file created inside private browsing mode when  

@@ -18,6 +18,18 @@ If a variable is unknown, it is left unchanged and a non-fatal error is reported
 @return The formatted URL.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFormat</td>
+<td>string Unformatted URL.  
+</td>
+</tr>
+
+</table>
+
 ### formatURLPref(aPref) ###
    
 formatURLPref - Formats a string URL stored in a preference  
@@ -29,3 +41,15 @@ and the "about:blank" URL is returned.
   
 @return The formatted URL returned by formatURL(), or "about:blank".  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPref</td>
+<td>string Preference name.  
+</td>
+</tr>
+
+</table>

@@ -42,6 +42,68 @@ Save the specified URI to file.
 @throws NS_ERROR_INVALID_ARG One or more arguments was invalid.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>URI to save to file. Some implementations of this interface  
+                  may also support <CODE>nullptr</CODE> to imply the currently  
+                  loaded URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>URI to save to file. Some implementations of this interface  
+                  may also support <CODE>nullptr</CODE> to imply the currently  
+                  loaded URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>URI to save to file. Some implementations of this interface  
+                  may also support <CODE>nullptr</CODE> to imply the currently  
+                  loaded URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>URI to save to file. Some implementations of this interface  
+                  may also support <CODE>nullptr</CODE> to imply the currently  
+                  loaded URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>URI to save to file. Some implementations of this interface  
+                  may also support <CODE>nullptr</CODE> to imply the currently  
+                  loaded URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>URI to save to file. Some implementations of this interface  
+                  may also support <CODE>nullptr</CODE> to imply the currently  
+                  loaded URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>URI to save to file. Some implementations of this interface  
+                  may also support <CODE>nullptr</CODE> to imply the currently  
+                  loaded URI.  
+</td>
+</tr>
+
+</table>
+
 ### savePrivacyAwareURI(aURI, aCacheKey, aReferrer, aPostData, aExtraHeaders, aFile, aIsPrivate) ###
   
 @param aIsPrivate Treat the save operation as private (ie. with  
@@ -49,6 +111,21 @@ Save the specified URI to file.
                   of intermediate data, etc.)  
 @see saveURI for all other parameter descriptions  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIsPrivate</td>
+<td>Treat the save operation as private (ie. with  
+                  regards to networking operations and persistence  
+                  of intermediate data, etc.)  
+@see saveURI for all other parameter descriptions  
+</td>
+</tr>
+
+</table>
 
 ### saveChannel(aChannel, aFile) ###
   
@@ -85,6 +162,60 @@ document has finished loading!
   
 @throws NS_ERROR_INVALID_ARG One or more arguments was invalid.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDocument</td>
+<td>Document to save to file. Some implementations of  
+                          this interface may also support <CODE>nullptr</CODE>  
+                          to imply the currently loaded document.  
+</td>
+</tr>
+
+<tr>
+<td>aDocument</td>
+<td>Document to save to file. Some implementations of  
+                          this interface may also support <CODE>nullptr</CODE>  
+                          to imply the currently loaded document.  
+</td>
+</tr>
+
+<tr>
+<td>aDocument</td>
+<td>Document to save to file. Some implementations of  
+                          this interface may also support <CODE>nullptr</CODE>  
+                          to imply the currently loaded document.  
+</td>
+</tr>
+
+<tr>
+<td>aDocument</td>
+<td>Document to save to file. Some implementations of  
+                          this interface may also support <CODE>nullptr</CODE>  
+                          to imply the currently loaded document.  
+</td>
+</tr>
+
+<tr>
+<td>aDocument</td>
+<td>Document to save to file. Some implementations of  
+                          this interface may also support <CODE>nullptr</CODE>  
+                          to imply the currently loaded document.  
+</td>
+</tr>
+
+<tr>
+<td>aDocument</td>
+<td>Document to save to file. Some implementations of  
+                          this interface may also support <CODE>nullptr</CODE>  
+                          to imply the currently loaded document.  
+</td>
+</tr>
+
+</table>
 
 ### cancelSave() ###
   

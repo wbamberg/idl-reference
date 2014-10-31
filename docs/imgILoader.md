@@ -37,6 +37,72 @@ make sure to Cancel() the resulting request before the observer
 goes away.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+</table>
+
 ### loadImageWithChannelXPCOM(aChannel, aObserver, cx, aListener) ###
   
 Start the load and decode of an image.  
@@ -55,6 +121,44 @@ libpr0n does NOT keep a strong ref to the observer; this prevents
 reference cycles.  This means that callers of loadImageWithChannel should  
 make sure to Cancel() the resulting request before the observer goes away.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChannel</td>
+<td>the channel to load the image from.  This must  
+                already be opened before ths method is called, and there  
+                must have been no OnDataAvailable calls for it yet.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>the channel to load the image from.  This must  
+                already be opened before ths method is called, and there  
+                must have been no OnDataAvailable calls for it yet.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>the channel to load the image from.  This must  
+                already be opened before ths method is called, and there  
+                must have been no OnDataAvailable calls for it yet.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>the channel to load the image from.  This must  
+                already be opened before ths method is called, and there  
+                must have been no OnDataAvailable calls for it yet.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

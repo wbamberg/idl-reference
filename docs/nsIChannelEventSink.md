@@ -58,6 +58,36 @@ callback must be done if this method throws!
        cancelled  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>oldChannel</td>
+<td>       The channel that's being redirected.  
+</td>
+</tr>
+
+<tr>
+<td>oldChannel</td>
+<td>       The channel that's being redirected.  
+</td>
+</tr>
+
+<tr>
+<td>oldChannel</td>
+<td>       The channel that's being redirected.  
+</td>
+</tr>
+
+<tr>
+<td>oldChannel</td>
+<td>       The channel that's being redirected.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### REDIRECT_TEMPORARY ###

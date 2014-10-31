@@ -20,6 +20,42 @@ Called when the data may be read without blocking the calling thread.
 @param meta The meta data of the frame.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The track number of the media stream.  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The track number of the media stream.  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The track number of the media stream.  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The track number of the media stream.  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The track number of the media stream.  
+</td>
+</tr>
+
+</table>
+
 ### onConnected(index, meta) ###
   
 Called when the meta data for a given session is available.  
@@ -27,9 +63,45 @@ Called when the meta data for a given session is available.
 @param meta The meta data of the media stream.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The track number of the media stream.  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The track number of the media stream.  
+</td>
+</tr>
+
+</table>
+
 ### onDisconnected(index, reason) ###
   
 Called when the Rtsp session is closed.  
 @param index Track number of the media stream.  
 @param reason The reason of disconnection.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>Track number of the media stream.  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>Track number of the media stream.  
+</td>
+</tr>
+
+</table>

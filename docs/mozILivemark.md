@@ -18,6 +18,18 @@ Reload livemark contents if they are expired or if forced to do so.
       registerForUpdates.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>[optional]aForceUpdate</td>
+<td>       If set to true forces a reload even if contents are still valid.  
+</td>
+</tr>
+
+</table>
+
 ### getNodesForContainer(aContainerNode) ###
   
 Returns an array of nsINavHistoryResultNode objects, representing children  
@@ -27,6 +39,19 @@ of this livemark.  The nodes will have aContainerNode as parent.
        Object implementing nsINavHistoryContainerResultNode, to be used as  
        parent of the livemark nodes.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContainerNode</td>
+<td>       Object implementing nsINavHistoryContainerResultNode, to be used as  
+       parent of the livemark nodes.  
+</td>
+</tr>
+
+</table>
 
 ### registerForUpdates(aContainerNode, aResultObserver) ###
   
@@ -42,6 +67,26 @@ request is sent to aResultObserver.
        to the livemark contents.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContainerNode</td>
+<td>       Object implementing nsINavHistoryContainerResultNode, representing  
+       this livemark.  
+</td>
+</tr>
+
+<tr>
+<td>aContainerNode</td>
+<td>       Object implementing nsINavHistoryContainerResultNode, representing  
+       this livemark.  
+</td>
+</tr>
+
+</table>
+
 ### unregisterForUpdates(aContainerNode) ###
   
 Unregisters a previously registered container node.  
@@ -54,6 +99,19 @@ Unregisters a previously registered container node.
       to free up the associated resources.  A good time to do so is when  
       the container gets closed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContainerNode</td>
+<td>       Object implementing nsINavHistoryContainerResultNode, representing  
+       this livemark.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

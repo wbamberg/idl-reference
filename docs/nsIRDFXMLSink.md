@@ -37,6 +37,24 @@ Add namespace information to the RDF/XML sink.
 @param aURI the namespace URI  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefix</td>
+<td>the namespace prefix  
+</td>
+</tr>
+
+<tr>
+<td>aPrefix</td>
+<td>the namespace prefix  
+</td>
+</tr>
+
+</table>
+
 ### addXMLSinkObserver(aObserver) ###
   
 Add an observer that will be notified as the RDF/XML load  
@@ -53,11 +71,36 @@ clears the reference).
 load observers.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>the observer to add to the sink's set of  
+load observers.  
+</td>
+</tr>
+
+</table>
+
 ### removeXMLSinkObserver(aObserver) ###
   
 Remove an observer from the sink's set of observers.  
 @param aObserver the observer to remove.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>the observer to remove.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

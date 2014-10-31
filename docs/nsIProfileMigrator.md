@@ -33,3 +33,21 @@ set profile prefs or bookmarks, for example), use aStartup.doStartup.
   
 @note The startup code ignores COM exceptions thrown from this method.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aStartup nsIProfileStartup object to use during migration.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aStartup nsIProfileStartup object to use during migration.  
+</td>
+</tr>
+
+</table>

@@ -35,6 +35,18 @@ associated with this file extension.
 @return The MIME type, if any.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>A file extension (excluding the dot ('.')).  
+</td>
+</tr>
+
+</table>
+
 ### getTypeFromURI(aURI) ###
   
 Retrieves a ACString representation of the MIME type  
@@ -46,6 +58,18 @@ the type via server headers or byte scanning is made.
 @return The MIME type, if any.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>The URI the user wants MIME info on.  
+</td>
+</tr>
+
+</table>
+
 ### getTypeFromFile(aFile) ###
 
 ### getPrimaryExtension(aMIMEType, aFileExt) ###
@@ -56,3 +80,21 @@ for this type. This may be identical to the passed-in extension.
 @param aMIMEType The Type to get information on. Must not be empty.  
 @param aFileExt  File Extension. Can be empty.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aMIMEType</td>
+<td>The Type to get information on. Must not be empty.  
+</td>
+</tr>
+
+<tr>
+<td>aMIMEType</td>
+<td>The Type to get information on. Must not be empty.  
+</td>
+</tr>
+
+</table>

@@ -44,6 +44,60 @@ be called prior to accessing any properties on this interface.
                   a source that desires privacy.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>The source URI of the transfer. Must not be null.  
+</td>
+</tr>
+
+</table>
+
 ### setSha256Hash(aHash) ###
 
 ### setSignatureInfo(aSignatureInfo) ###

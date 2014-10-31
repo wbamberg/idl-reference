@@ -36,3 +36,41 @@ information like mime-type or data itself.
       recommended that you call the getFaviconLinkForIcon method to convert  
       the "favicon URI" into a "favicon link URI".  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       Receives the "favicon URI" (not the "favicon link URI") associated  
+       to the requested page.  This can be null if there is no associated  
+       favicon URI, or the callback is notifying a failure.  
+</td>
+</tr>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       Receives the "favicon URI" (not the "favicon link URI") associated  
+       to the requested page.  This can be null if there is no associated  
+       favicon URI, or the callback is notifying a failure.  
+</td>
+</tr>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       Receives the "favicon URI" (not the "favicon link URI") associated  
+       to the requested page.  This can be null if there is no associated  
+       favicon URI, or the callback is notifying a failure.  
+</td>
+</tr>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       Receives the "favicon URI" (not the "favicon link URI") associated  
+       to the requested page.  This can be null if there is no associated  
+       favicon URI, or the callback is notifying a failure.  
+</td>
+</tr>
+
+</table>

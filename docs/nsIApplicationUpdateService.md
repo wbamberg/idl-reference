@@ -26,6 +26,26 @@ Selects the best update to install from a list of available updates.
          The length of the |updates| array  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>updates  
+         An array of updates that are available  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>updates  
+         An array of updates that are available  
+</td>
+</tr>
+
+</table>
+
 ### addDownloadListener(listener) ###
   
 Adds a listener that receives progress and state information about the  
@@ -37,6 +57,21 @@ interface.
          progress information as the update is downloaded.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>listener  
+         An object implementing nsIRequestObserver and optionally  
+         nsIProgressEventSink that is to be notified of state and  
+         progress information as the update is downloaded.  
+</td>
+</tr>
+
+</table>
+
 ### removeDownloadListener(listener) ###
   
 Removes a listener that is receiving progress and state information  
@@ -44,6 +79,19 @@ about the update that is currently being downloaded.
 @param   listener  
          The listener object to remove.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>listener  
+         The listener object to remove.  
+</td>
+</tr>
+
+</table>
 
 ### downloadUpdate(update, background) ###
   
@@ -57,6 +105,20 @@ Apply the OS update which has been downloaded and staged as applied.
          The update has been downloaded and staged as applied.  
 @throws  if the update object is not an OS update.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>update   
+         The update has been downloaded and staged as applied.  
+@throws  if the update object is not an OS update.  
+</td>
+</tr>
+
+</table>
 
 ### getUpdatesDirectory() ###
   

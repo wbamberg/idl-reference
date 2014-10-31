@@ -33,3 +33,45 @@ with the history service.
        If it's a valid TRANSITION_* value, all visits of the specified type  
        have been removed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The nsIURI object representing the URI of the page being expired.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The nsIURI object representing the URI of the page being expired.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The nsIURI object representing the URI of the page being expired.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The nsIURI object representing the URI of the page being expired.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The nsIURI object representing the URI of the page being expired.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The nsIURI object representing the URI of the page being expired.  
+</td>
+</tr>
+
+</table>

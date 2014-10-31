@@ -22,6 +22,18 @@ this method.
 @param src The HTML string to convert to plain text.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>src</td>
+<td>The HTML string to convert to plain text.  
+</td>
+</tr>
+
+</table>
+
 ### parseFragment(fragment, isXML, baseURI, element) ###
   
 Parses markup into a sanitized document fragment. This is equivalent to  
@@ -35,3 +47,33 @@ method.
 @param baseURI the base URL for this fragment  
 @param element the context node for the fragment parsing algorithm  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>fragment</td>
+<td>the input markup  
+</td>
+</tr>
+
+<tr>
+<td>fragment</td>
+<td>the input markup  
+</td>
+</tr>
+
+<tr>
+<td>fragment</td>
+<td>the input markup  
+</td>
+</tr>
+
+<tr>
+<td>fragment</td>
+<td>the input markup  
+</td>
+</tr>
+
+</table>

@@ -23,6 +23,18 @@ Adds the parameters to the end of this array.
        The parameters to add to this array.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParameters</td>
+<td>       The parameters to add to this array.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### length ###

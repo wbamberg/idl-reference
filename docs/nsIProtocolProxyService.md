@@ -44,6 +44,30 @@ also supports nsIProxiedProtocolHandler.
 @see nsIProxiedProtocolHandler::newProxiedChannel   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to test.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to test.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to test.  
+</td>
+</tr>
+
+</table>
+
 ### newProxyInfo(aType, aHost, aPort, aFlags, aFailoverTimeout, aFailoverProxy) ###
   
 This method may be called to construct a nsIProxyInfo instance from  
@@ -79,6 +103,102 @@ a SOCKS connection.
        parameter may be null.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>       The proxy type.  This is a string value that identifies the proxy  
+       type.  Standard values include:  
+         "http"    - specifies a HTTP proxy  
+         "https"   - specifies HTTP proxying over TLS connection to proxy  
+         "socks"   - specifies a SOCKS version 5 proxy  
+         "socks4"  - specifies a SOCKS version 4 proxy  
+         "direct"  - specifies a direct connection (useful for failover)  
+       The type name is case-insensitive.  Other string values may be  
+       possible, and new types may be defined by a future version of  
+       this interface.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>       The proxy type.  This is a string value that identifies the proxy  
+       type.  Standard values include:  
+         "http"    - specifies a HTTP proxy  
+         "https"   - specifies HTTP proxying over TLS connection to proxy  
+         "socks"   - specifies a SOCKS version 5 proxy  
+         "socks4"  - specifies a SOCKS version 4 proxy  
+         "direct"  - specifies a direct connection (useful for failover)  
+       The type name is case-insensitive.  Other string values may be  
+       possible, and new types may be defined by a future version of  
+       this interface.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>       The proxy type.  This is a string value that identifies the proxy  
+       type.  Standard values include:  
+         "http"    - specifies a HTTP proxy  
+         "https"   - specifies HTTP proxying over TLS connection to proxy  
+         "socks"   - specifies a SOCKS version 5 proxy  
+         "socks4"  - specifies a SOCKS version 4 proxy  
+         "direct"  - specifies a direct connection (useful for failover)  
+       The type name is case-insensitive.  Other string values may be  
+       possible, and new types may be defined by a future version of  
+       this interface.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>       The proxy type.  This is a string value that identifies the proxy  
+       type.  Standard values include:  
+         "http"    - specifies a HTTP proxy  
+         "https"   - specifies HTTP proxying over TLS connection to proxy  
+         "socks"   - specifies a SOCKS version 5 proxy  
+         "socks4"  - specifies a SOCKS version 4 proxy  
+         "direct"  - specifies a direct connection (useful for failover)  
+       The type name is case-insensitive.  Other string values may be  
+       possible, and new types may be defined by a future version of  
+       this interface.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>       The proxy type.  This is a string value that identifies the proxy  
+       type.  Standard values include:  
+         "http"    - specifies a HTTP proxy  
+         "https"   - specifies HTTP proxying over TLS connection to proxy  
+         "socks"   - specifies a SOCKS version 5 proxy  
+         "socks4"  - specifies a SOCKS version 4 proxy  
+         "direct"  - specifies a direct connection (useful for failover)  
+       The type name is case-insensitive.  Other string values may be  
+       possible, and new types may be defined by a future version of  
+       this interface.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>       The proxy type.  This is a string value that identifies the proxy  
+       type.  Standard values include:  
+         "http"    - specifies a HTTP proxy  
+         "https"   - specifies HTTP proxying over TLS connection to proxy  
+         "socks"   - specifies a SOCKS version 5 proxy  
+         "socks4"  - specifies a SOCKS version 4 proxy  
+         "direct"  - specifies a direct connection (useful for failover)  
+       The type name is case-insensitive.  Other string values may be  
+       possible, and new types may be defined by a future version of  
+       this interface.  
+</td>
+</tr>
+
+</table>
+
 ### getFailoverForProxy(aProxyInfo, aURI, aReason) ###
   
 If the proxy identified by aProxyInfo is unavailable for some reason,  
@@ -96,6 +216,30 @@ from resolve/asyncResolve as well as from getFailoverForProxy.
   
 @throw NS_ERROR_NOT_AVAILABLE if there is no alternate proxy available.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aProxyInfo</td>
+<td>       The proxy that was unavailable.  
+</td>
+</tr>
+
+<tr>
+<td>aProxyInfo</td>
+<td>       The proxy that was unavailable.  
+</td>
+</tr>
+
+<tr>
+<td>aProxyInfo</td>
+<td>       The proxy that was unavailable.  
+</td>
+</tr>
+
+</table>
 
 ### registerFilter(aFilter, aPosition) ###
   
@@ -132,6 +276,24 @@ this method make their position value configurable at runtime (perhaps
 via the preferences service).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFilter</td>
+<td>       The nsIProtocolProxyFilter instance to be registered.  
+</td>
+</tr>
+
+<tr>
+<td>aFilter</td>
+<td>       The nsIProtocolProxyFilter instance to be registered.  
+</td>
+</tr>
+
+</table>
+
 ### unregisterFilter(aFilter) ###
   
 This method may be used to unregister a proxy filter instance.  All  
@@ -140,6 +302,18 @@ filters will be automatically unregistered at XPCOM shutdown.
 @param aFilter  
        The nsIProtocolProxyFilter instance to be unregistered.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFilter</td>
+<td>       The nsIProtocolProxyFilter instance to be unregistered.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

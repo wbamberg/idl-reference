@@ -19,6 +19,19 @@ Determines if an annotation exists with the given name.
          false otherwise.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of the annotation  
+</td>
+</tr>
+
+</table>
+
 ### get(aName) ###
   
 Gets the value of an annotation with the given name.  
@@ -27,6 +40,19 @@ Gets the value of an annotation with the given name.
 @returns A variant containing the value of the annotation. Supports  
          string, boolean and number.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of the annotation  
+</td>
+</tr>
+
+</table>
 
 ### set(aName, aValue, aExpiration) ###
   
@@ -41,12 +67,52 @@ Sets the value of an annotation with the given name.
          See nsIAnnotationService.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of the annotation  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of the annotation  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of the annotation  
+</td>
+</tr>
+
+</table>
+
 ### remove(aName) ###
   
 Removes the named annotation from the owner item.  
 @param   aName  
          The name of annotation.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of annotation.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

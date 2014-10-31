@@ -13,9 +13,40 @@ Initialize the serializer with the specified datasource.
   serialized  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDataSource</td>
+<td>the datasource from which data will be  
+  serialized  
+</td>
+</tr>
+
+</table>
+
 ### addNameSpace(aPrefix, aURI) ###
   
 Add the specified namespace to the serializer.  
 @param aPrefix the attribute namespace prefix  
 @param aURI the namespace URI  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefix</td>
+<td>the attribute namespace prefix  
+</td>
+</tr>
+
+<tr>
+<td>aPrefix</td>
+<td>the attribute namespace prefix  
+</td>
+</tr>
+
+</table>

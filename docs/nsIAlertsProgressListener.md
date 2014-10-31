@@ -21,6 +21,44 @@ given notification previously displayed with showAlertNotification().
                     the percentage will be displayed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The name of the notification displaying the  
+                    progress. On Android the name is hashed and used  
+                    as a notification ID.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The name of the notification displaying the  
+                    progress. On Android the name is hashed and used  
+                    as a notification ID.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The name of the notification displaying the  
+                    progress. On Android the name is hashed and used  
+                    as a notification ID.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The name of the notification displaying the  
+                    progress. On Android the name is hashed and used  
+                    as a notification ID.  
+</td>
+</tr>
+
+</table>
+
 ### onCancel(name) ###
   
 Called to cancel and hide the given notification previously displayed  
@@ -28,3 +66,15 @@ with showAlertNotification().
   
 @param name         The name of the notification.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The name of the notification.  
+</td>
+</tr>
+
+</table>

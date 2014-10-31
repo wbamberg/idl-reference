@@ -28,6 +28,24 @@ This method is called when a client sends an UDP packet.
        The message.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSocket</td>
+<td>       The UDP socket.  
+</td>
+</tr>
+
+<tr>
+<td>aSocket</td>
+<td>       The UDP socket.  
+</td>
+</tr>
+
+</table>
+
 ### onStopListening(aSocket, aStatus) ###
   
 onStopListening  
@@ -42,3 +60,21 @@ The UDP socket is effectively dead after this notification.
        UDP socket was manually closed, then this value will be  
        NS_BINDING_ABORTED.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSocket</td>
+<td>       The UDP socket.  
+</td>
+</tr>
+
+<tr>
+<td>aSocket</td>
+<td>       The UDP socket.  
+</td>
+</tr>
+
+</table>

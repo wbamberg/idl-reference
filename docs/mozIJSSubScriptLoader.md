@@ -21,6 +21,33 @@ rv loadSubScript (url [, obj] [, charset]);
 @retval rv the value returned by the sub-script  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>url</td>
+<td>the url of the sub-script, it MUST be either a file:,  
+           resource:, or chrome: url, and MUST be local.  
+</td>
+</tr>
+
+<tr>
+<td>url</td>
+<td>the url of the sub-script, it MUST be either a file:,  
+           resource:, or chrome: url, and MUST be local.  
+</td>
+</tr>
+
+<tr>
+<td>url</td>
+<td>the url of the sub-script, it MUST be either a file:,  
+           resource:, or chrome: url, and MUST be local.  
+</td>
+</tr>
+
+</table>
+
 ### loadSubScriptWithOptions(url, options) ###
   
 This method should only be called from JS!  
@@ -34,5 +61,25 @@ rv = loadSubScript (url, optionsObject)
                      - ignoreCache: if set to true, will bypass the cache for reading the file.  
 @retval rv the value returned by the sub-script  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>url</td>
+<td>the url of the sub-script, it MUST be either a file:,  
+           resource:, or chrome: url, and MUST be local.  
+</td>
+</tr>
+
+<tr>
+<td>url</td>
+<td>the url of the sub-script, it MUST be either a file:,  
+           resource:, or chrome: url, and MUST be local.  
+</td>
+</tr>
+
+</table>
 
 ### precompileScript(uri, principal, observer) ###

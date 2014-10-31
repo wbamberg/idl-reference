@@ -31,6 +31,18 @@ useful range of the underlying container or sequence.
 @param anElementToPut the element to place into the underlying container or sequence  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anElementToPut</td>
+<td>the element to place into the underlying container or sequence  
+</td>
+</tr>
+
+</table>
+
 ### stepForward() ###
   
 Advance this iterator to the next position in the underlying container or sequence.  
@@ -50,6 +62,19 @@ The result is undefined if |anotherIterator| was not created by or for the same 
 @param anotherIterator another iterator to compare against, created by or for the same underlying container or sequence  
 @result true if |anotherIterator| points to the same position in the underlying container or sequence  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anotherIterator</td>
+<td>another iterator to compare against, created by or for the same underlying container or sequence  
+@result true if |anotherIterator| points to the same position in the underlying container or sequence  
+</td>
+</tr>
+
+</table>
 
 ### clone() ###
   

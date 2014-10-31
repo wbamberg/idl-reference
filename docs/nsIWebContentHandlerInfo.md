@@ -15,6 +15,19 @@ Gets the service URL Spec, with the loading document URI encoded in it.
          it.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>uri  
+         The URI of the document being loaded  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### contentType ###

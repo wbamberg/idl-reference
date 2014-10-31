@@ -19,6 +19,36 @@ queued and executed when the current load finishes.
 @param aMetaRefresh Flag to indicate if this is a Meta refresh.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aUri</td>
+<td>The uri to refresh.  
+</td>
+</tr>
+
+<tr>
+<td>aUri</td>
+<td>The uri to refresh.  
+</td>
+</tr>
+
+<tr>
+<td>aUri</td>
+<td>The uri to refresh.  
+</td>
+</tr>
+
+<tr>
+<td>aUri</td>
+<td>The uri to refresh.  
+</td>
+</tr>
+
+</table>
+
 ### forceRefreshURI(aURI, aMillis, aMetaRefresh) ###
   
 Loads a URI immediately as if it were a refresh.  
@@ -28,6 +58,30 @@ Loads a URI immediately as if it were a refresh.
                be delayed if it were not being forced.  
 @param aMetaRefresh Flag to indicate if this is a meta refresh.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>The URI to refresh.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>The URI to refresh.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>The URI to refresh.  
+</td>
+</tr>
+
+</table>
 
 ### setupRefreshURI(aChannel) ###
   
@@ -43,6 +97,18 @@ header was found and successfully setup.
 @param aChannel The channel to be parsed.   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChannel</td>
+<td>The channel to be parsed.   
+</td>
+</tr>
+
+</table>
+
 ### setupRefreshURIFromHeader(aBaseURI, principal, aHeader) ###
   
 Parses the passed in header string and sets up a refreshURI if  
@@ -54,6 +120,30 @@ the current page finishes loading.
 @param principal the associated principal  
 @param aHeader  The meta refresh header string.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBaseURI</td>
+<td>base URI to resolve refresh uri with.  
+</td>
+</tr>
+
+<tr>
+<td>aBaseURI</td>
+<td>base URI to resolve refresh uri with.  
+</td>
+</tr>
+
+<tr>
+<td>aBaseURI</td>
+<td>base URI to resolve refresh uri with.  
+</td>
+</tr>
+
+</table>
 
 ### cancelRefreshURITimers() ###
   

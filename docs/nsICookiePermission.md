@@ -23,6 +23,24 @@ the same host name).
        the new cookie access for the URI.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       the URI to block  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the URI to block  
+</td>
+</tr>
+
+</table>
+
 ### canAccess(aURI, aChannel) ###
   
 canAccess  
@@ -39,6 +57,24 @@ access the cookie database, either to set or get cookies.
         ACCESS_DEFAULT, ACCESS_ALLOW, ACCESS_DENY, or  
         ACCESS_ALLOW_FIRST_PARTY_ONLY  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       the URI trying to access cookies  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the URI trying to access cookies  
+</td>
+</tr>
+
+</table>
 
 ### canSetCookie(aURI, aChannel, aCookie, aIsSession, aExpiry) ###
   
@@ -68,6 +104,42 @@ downgrade a cookie to session-only if it fails to meet certain criteria.
   
 @return true if the cookie can be set.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       the URI trying to set the cookie  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the URI trying to set the cookie  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the URI trying to set the cookie  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the URI trying to set the cookie  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the URI trying to set the cookie  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

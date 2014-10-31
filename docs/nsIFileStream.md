@@ -21,6 +21,36 @@ A stream that allows you to read from a file or stream to a file.
        (see enumerations in the class)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>file</td>
+<td>file to read from or stream to  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from or stream to  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from or stream to  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from or stream to  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### DEFER_OPEN ###

@@ -15,3 +15,21 @@ Notifies whether a certain URI has been visited.
 @param aVisitedStatus  
        The visited status of aURI.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       URI being notified about.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       URI being notified about.  
+</td>
+</tr>
+
+</table>

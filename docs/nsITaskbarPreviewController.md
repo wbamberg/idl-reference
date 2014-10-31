@@ -26,6 +26,18 @@ Note that the context is not attached to a canvas element.
 @param ctx Canvas drawing context  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>ctx</td>
+<td>Canvas drawing context  
+</td>
+</tr>
+
+</table>
+
 ### drawThumbnail(ctx, width, height) ###
   
 Invoked by the taskbar preview when it needs to draw the thumbnail in the  
@@ -40,6 +52,30 @@ Also note that the context is not attached to a canvas element.
 @param width The width of the surface backing the drawing context  
 @param height The height of the surface backing the drawing context  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>ctx</td>
+<td>Canvas drawing context  
+</td>
+</tr>
+
+<tr>
+<td>ctx</td>
+<td>Canvas drawing context  
+</td>
+</tr>
+
+<tr>
+<td>ctx</td>
+<td>Canvas drawing context  
+</td>
+</tr>
+
+</table>
 
 ### onClose() ###
   
@@ -61,6 +97,19 @@ Invoked when one of the buttons on the window preview's toolbar is pressed.
 @param button The button that was pressed. This can be compared with the  
               buttons returned by nsITaskbarWindowPreview.getButton.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>button</td>
+<td>The button that was pressed. This can be compared with the  
+              buttons returned by nsITaskbarWindowPreview.getButton.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

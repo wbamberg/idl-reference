@@ -50,6 +50,30 @@ reported before any unparsed entities that use it.
                  given.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The notation name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The notation name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The notation name.  
+</td>
+</tr>
+
+</table>
+
 ### unparsedEntityDecl(name, publicId, systemId, notationName) ###
   
 Receive notification of an unparsed entity declaration event.  
@@ -69,3 +93,33 @@ fully before passing it to the application.
                  given.  
 @param notationName The name of the associated notation.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The unparsed entity's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The unparsed entity's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The unparsed entity's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The unparsed entity's name.  
+</td>
+</tr>
+
+</table>

@@ -25,6 +25,36 @@ Determines the appropriate target for a link.
          Otherwise returns originalTarget.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>originalTarget</td>
+<td>       The original link target.  
+</td>
+</tr>
+
+<tr>
+<td>originalTarget</td>
+<td>       The original link target.  
+</td>
+</tr>
+
+<tr>
+<td>originalTarget</td>
+<td>       The original link target.  
+</td>
+</tr>
+
+<tr>
+<td>originalTarget</td>
+<td>       The original link target.  
+</td>
+</tr>
+
+</table>
+
 ### shouldLoadURI(aDocShell, aURI, aReferrer) ###
   
 Determines whether a load should continue.  
@@ -36,3 +66,27 @@ Determines whether a load should continue.
 @param aReferrer  
        The referrer of the load.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDocShell</td>
+<td>       The docshell performing the load.  
+</td>
+</tr>
+
+<tr>
+<td>aDocShell</td>
+<td>       The docshell performing the load.  
+</td>
+</tr>
+
+<tr>
+<td>aDocShell</td>
+<td>       The docshell performing the load.  
+</td>
+</tr>
+
+</table>

@@ -20,6 +20,24 @@ Called when the given place could not be processed.
        The information that was given to the caller for the place.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aResultCode</td>
+<td>       nsresult indicating the failure reason.  
+</td>
+</tr>
+
+<tr>
+<td>aResultCode</td>
+<td>       nsresult indicating the failure reason.  
+</td>
+</tr>
+
+</table>
+
 ### handleResult(aPlaceInfo) ###
   
 Called for each place processed successfully.  
@@ -27,6 +45,18 @@ Called for each place processed successfully.
 @param aPlaceInfo  
        The current info stored for the place.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPlaceInfo</td>
+<td>       The current info stored for the place.  
+</td>
+</tr>
+
+</table>
 
 ### handleCompletion() ###
   

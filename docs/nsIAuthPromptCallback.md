@@ -25,6 +25,24 @@ Authentication information is available.
 @note  Any exceptions thrown from this method should be ignored.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContext</td>
+<td>       The context as passed to promptPasswordAsync  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>       The context as passed to promptPasswordAsync  
+</td>
+</tr>
+
+</table>
+
 ### onAuthCancelled(aContext, userCancel) ###
   
 Notification that the prompt was cancelled.  
@@ -36,3 +54,21 @@ Notification that the prompt was cancelled.
        the cancel method on the nsICancelable; otherwise,  
        it was cancelled by the user.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContext</td>
+<td>       The context that was passed to promptPasswordAsync.  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>       The context that was passed to promptPasswordAsync.  
+</td>
+</tr>
+
+</table>

@@ -17,6 +17,24 @@ disk space being used by storages for the given origin.
        The callback that will be called when the usage is available.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI whose usage is being queried.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI whose usage is being queried.  
+</td>
+</tr>
+
+</table>
+
 ### clear() ###
   
 Removes all storages. The files may not be deleted immediately depending  
@@ -35,6 +53,18 @@ deleted immediately depending on prohibitive concurrent operations.
 @param aURI  
        The URI whose storages are to be cleared.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI whose storages are to be cleared.  
+</td>
+</tr>
+
+</table>
 
 ### reset() ###
   

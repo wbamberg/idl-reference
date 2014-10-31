@@ -20,6 +20,30 @@ Will not be called if the stream receives no data at all.
 @return the name of the character set to be used to decode this stream  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLoader</td>
+<td>the unichar stream loader  
+</td>
+</tr>
+
+<tr>
+<td>aLoader</td>
+<td>the unichar stream loader  
+</td>
+</tr>
+
+<tr>
+<td>aLoader</td>
+<td>the unichar stream loader  
+</td>
+</tr>
+
+</table>
+
 ### onStreamComplete(aLoader, aContext, aStatus, aBuffer) ###
   
 Called when the entire stream has been loaded and decoded.  
@@ -35,3 +59,33 @@ loader's init() method.  If onDetermineCharset fails,
 onStreamComplete will still be called, but aStatus will be an  
 error code.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLoader</td>
+<td>the unichar stream loader  
+</td>
+</tr>
+
+<tr>
+<td>aLoader</td>
+<td>the unichar stream loader  
+</td>
+</tr>
+
+<tr>
+<td>aLoader</td>
+<td>the unichar stream loader  
+</td>
+</tr>
+
+<tr>
+<td>aLoader</td>
+<td>the unichar stream loader  
+</td>
+</tr>
+
+</table>

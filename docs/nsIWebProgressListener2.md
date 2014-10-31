@@ -38,6 +38,48 @@ NOTE: If any progress value is unknown, then its value is replaced with -1.
 @see nsIWebProgressListener2::onProgressChange64  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+</table>
+
 ### onRefreshAttempted(aWebProgress, aRefreshURI, aMillis, aSameURI) ###
   
 Notification that a refresh or redirect has been requested in aWebProgress  
@@ -58,3 +100,33 @@ For example, via a <meta http-equiv="refresh"> or an HTTP Refresh: header
 @return True if the refresh may proceed.  
         False if the refresh should be aborted.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+</table>

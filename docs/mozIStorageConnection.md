@@ -59,6 +59,19 @@ Clones a database connection and makes the clone read only if needed.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aReadOnly</td>
+<td>       If true, the returned database should be put into read-only mode.  
+       Defaults to false.  
+</td>
+</tr>
+
+</table>
+
 ### createStatement(aSQLStatement) ###
   
 Create a mozIStorageStatement for the given SQL expression.  The  
@@ -71,12 +84,36 @@ $var to indicate named arguments.
 @return a new mozIStorageStatement  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSQLStatement</td>
+<td>       The SQL statement to execute.  
+</td>
+</tr>
+
+</table>
+
 ### executeSimpleSQL(aSQLStatement) ###
   
 Execute a SQL expression, expecting no arguments.  
   
 @param aSQLStatement  The SQL statement to execute  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSQLStatement</td>
+<td>The SQL statement to execute  
+</td>
+</tr>
+
+</table>
 
 ### tableExists(aTableName) ###
   
@@ -87,6 +124,18 @@ Check if the given table exists.
 @return TRUE if table exists, FALSE otherwise.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTableName</td>
+<td>       The table to check  
+</td>
+</tr>
+
+</table>
+
 ### indexExists(aIndexName) ###
   
 Check if the given index exists.  
@@ -94,6 +143,18 @@ Check if the given index exists.
 @param aIndexName   The index to check  
 @return TRUE if the index exists, FALSE otherwise.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndexName</td>
+<td>The index to check  
+</td>
+</tr>
+
+</table>
 
 ### beginTransaction() ###
   
@@ -137,6 +198,26 @@ the same as what is specified, but that doesn't happen currently.)
         reason.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTableName</td>
+<td>       The table name to be created, consisting of [A-Za-z0-9_], and  
+       beginning with a letter.  
+</td>
+</tr>
+
+<tr>
+<td>aTableName</td>
+<td>       The table name to be created, consisting of [A-Za-z0-9_], and  
+       beginning with a letter.  
+</td>
+</tr>
+
+</table>
+
 ### setGrowthIncrement(aIncrement, aDatabaseName) ###
   
 Controls SQLITE_FCNTL_CHUNK_SIZE setting in sqlite. This helps avoid fragmentation  
@@ -153,6 +234,24 @@ on mobile devices or if less than 500MiB of space is left available.
         If the system is short on storage space.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIncrement</td>
+<td>       The database file will grow in multiples of chunkSize.  
+</td>
+</tr>
+
+<tr>
+<td>aIncrement</td>
+<td>       The database file will grow in multiples of chunkSize.  
+</td>
+</tr>
+
+</table>
+
 ### enableModule(aModuleName) ###
   
 Enable a predefined virtual table implementation.  
@@ -163,6 +262,18 @@ Enable a predefined virtual table implementation.
 @throws NS_ERROR_FAILURE  
         For unknown module names.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aModuleName</td>
+<td>       The module to enable. Only "filesystem" is currently supported.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

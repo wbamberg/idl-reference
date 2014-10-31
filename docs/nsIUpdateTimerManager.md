@@ -45,3 +45,30 @@ the values are as follows
                optional by specifying an empty string for the value.  
   interval   : the default interval in seconds for the timer.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>id  
+         An id that identifies the interval, used for persistence  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>id  
+         An id that identifies the interval, used for persistence  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>id  
+         An id that identifies the interval, used for persistence  
+</td>
+</tr>
+
+</table>

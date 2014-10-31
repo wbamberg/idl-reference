@@ -32,6 +32,33 @@ This method initializes a server socket.
        Pass -1 to use the default value.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPort</td>
+<td>       The port of the server socket.  Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+<tr>
+<td>aPort</td>
+<td>       The port of the server socket.  Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+<tr>
+<td>aPort</td>
+<td>       The port of the server socket.  Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+</table>
+
 ### initSpecialConnection(aPort, aFlags, aBackLog) ###
   
 initSpecialConnection  
@@ -50,6 +77,33 @@ that socket not get terminated if Gecko is set offline.
        Pass -1 to use the default value.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPort</td>
+<td>       The port of the server socket.  Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+<tr>
+<td>aPort</td>
+<td>       The port of the server socket.  Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+<tr>
+<td>aPort</td>
+<td>       The port of the server socket.  Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+</table>
+
 ### initWithAddress(aAddr, aBackLog) ###
   
 initWithAddress  
@@ -64,6 +118,24 @@ local address (and hence a particular local network interface).
        This parameter may be silently limited by the operating system.  
        Pass -1 to use the default value.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAddr</td>
+<td>       The address to which this server socket should be bound.  
+</td>
+</tr>
+
+<tr>
+<td>aAddr</td>
+<td>       The address to which this server socket should be bound.  
+</td>
+</tr>
+
+</table>
 
 ### initWithFilename(aPath, aPermissions, aBacklog) ###
   
@@ -119,6 +191,26 @@ always applied, so creating sockets in appropriately protected
 directories should be secure on both old and new systems.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPath</td>
+<td>nsIFile  
+       The file name at which the socket should be created.  
+</td>
+</tr>
+
+<tr>
+<td>aPath</td>
+<td>nsIFile  
+       The file name at which the socket should be created.  
+</td>
+</tr>
+
+</table>
+
 ### close() ###
   
 close  
@@ -145,6 +237,18 @@ transport (nsISocketTransport).  See below for more details.
 @param aListener  
        The listener to be notified when client connections are accepted.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>       The listener to be notified when client connections are accepted.  
+</td>
+</tr>
+
+</table>
 
 ### getAddress() ###
   

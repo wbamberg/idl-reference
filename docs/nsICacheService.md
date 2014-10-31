@@ -37,6 +37,30 @@ equivalent.
 @return new cache session.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientID</td>
+<td>- Specifies the name of the client using the cache.  
+</td>
+</tr>
+
+<tr>
+<td>clientID</td>
+<td>- Specifies the name of the client using the cache.  
+</td>
+</tr>
+
+<tr>
+<td>clientID</td>
+<td>- Specifies the name of the client using the cache.  
+</td>
+</tr>
+
+</table>
+
 ### visitEntries(visitor) ###
   
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.  

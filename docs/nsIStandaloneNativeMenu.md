@@ -16,6 +16,18 @@ Initialize the native menu using given XUL DOM element.
 @param aDOMElement A XUL DOM element of tag type |menu| or |menupopup|.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDOMElement</td>
+<td>A XUL DOM element of tag type |menu| or |menupopup|.  
+</td>
+</tr>
+
+</table>
+
 ### menuWillOpen() ###
   
 This method must be called before the menu is opened and displayed to the  
@@ -34,6 +46,19 @@ is intended to be used by the test suite.
        pipe ('|') characters  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anIndexString</td>
+<td>string containing a list of indices separated by  
+       pipe ('|') characters  
+</td>
+</tr>
+
+</table>
+
 ### forceUpdateNativeMenuAt(anIndexString) ###
   
 Force an update of the native menu item specified by |anIndexString|. This  
@@ -42,6 +67,19 @@ method is intended to be used by the test suite.
 @param anIndexString string containing a list of indices separated by  
        pipe ('|') characters  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anIndexString</td>
+<td>string containing a list of indices separated by  
+       pipe ('|') characters  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

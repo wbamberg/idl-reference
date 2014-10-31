@@ -23,6 +23,18 @@ stack is pruned or when the transaction manager is destroyed.
 @param aTransaction the transaction to do.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTransaction</td>
+<td>the transaction to do.  
+</td>
+</tr>
+
+</table>
+
 ### undoTransaction() ###
   
 Pops the topmost transaction on the undo stack, calls its  
@@ -61,6 +73,19 @@ so they can be undone with a single call to undoTransaction().
 batch. Can be retrieved from nsITransactionList.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aData</td>
+<td>An arbitrary nsISupports object that is associated with the  
+batch. Can be retrieved from nsITransactionList.  
+</td>
+</tr>
+
+</table>
+
 ### endBatch(aAllowEmpty) ###
   
 Turns off the transaction manager's batch mode.  
@@ -68,6 +93,20 @@ Turns off the transaction manager's batch mode.
 pushed onto the undo stack. Otherwise, ending a batch with no  
 children will result in no transactions being pushed on the undo stack.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAllowEmpty</td>
+<td>If true, a batch containing no children will be  
+pushed onto the undo stack. Otherwise, ending a batch with no  
+children will result in no transactions being pushed on the undo stack.  
+</td>
+</tr>
+
+</table>
 
 ### batchTopUndo() ###
   
@@ -121,6 +160,18 @@ The listener's AddRef() method is called.
 @param aListener the lister to add.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>the lister to add.  
+</td>
+</tr>
+
+</table>
+
 ### RemoveListener(aListener) ###
   
 Removes a listener from the transaction manager's notification list.  
@@ -128,6 +179,18 @@ Removes a listener from the transaction manager's notification list.
 The listener's Release() method is called.  
 @param aListener the lister to remove.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>the lister to remove.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

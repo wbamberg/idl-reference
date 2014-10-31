@@ -47,6 +47,24 @@ See 3.7.4.1 Display in 3GPP2 C.S0005-F.
 The string to be displayed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+</table>
+
 ### notifyCdmaInfoRecCalledPartyNumber(clientId, type, plan, number, pi, si) ###
   
 Notify Called Party Number from received Cdma-Info-Record.  
@@ -69,6 +87,48 @@ See 3.7.4.2 Called Party Number in 3GPP2 C.S0005-F.
        The Screening Indicator of the number.  
        See Table 2.7.4.4-2 in 3GPP2 C.S0005-F.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+</table>
 
 ### notifyCdmaInfoRecCallingPartyNumber(clientId, type, plan, number, pi, si) ###
   
@@ -93,6 +153,48 @@ See 3.7.4.3 Calling Party Number in 3GPP2 C.S0005-F.
        See Table 2.7.4.4-2 in 3GPP2 C.S0005-F.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+</table>
+
 ### notifyCdmaInfoRecConnectedPartyNumber(clientId, type, plan, number, pi, si) ###
   
 Notify Connected Party Number from received Cdma-Info-Record.  
@@ -116,6 +218,48 @@ See 3.7.4.4 Connected Party Number in 3GPP2 C.S0005-F.
        See Table 2.7.4.4-2 in 3GPP2 C.S0005-F.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+</table>
+
 ### notifyCdmaInfoRecSignal(clientId, type, alertPitch, signal) ###
   
 Notify Signal Info from received Cdma-Info-Record.  
@@ -133,6 +277,36 @@ See 3.7.4.5 Signal in 3GPP2 C.S0005-F.
        The signal code. (6-bit binary)  
        See Table 3.7.5.5-3, 3.7.5.5-4, 3.7.5.5-5 in 3GPP2 C.S0005-F.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+</table>
 
 ### notifyCdmaInfoRecRedirectingNumber(clientId, type, plan, number, pi, si, reason) ###
   
@@ -160,6 +334,54 @@ See 3.7.4.11 Redirecting Number in 3GPP2 C.S0005-F.
        See Table 3.7.5.11-1 in 3GPP2 C.S0005-F.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+</table>
+
 ### notifyCdmaInfoRecLineControl(clientId, polarityIncluded, toggle, reverse, powerDenial) ###
   
 Notify Line Control from received Cdma-Info-Record.  
@@ -177,6 +399,42 @@ See 3.7.4.15 Line Control in 3GPP2 C.S0005-F.
        Power denial timeout.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+</table>
+
 ### notifyCdmaInfoRecClir(clientId, cause) ###
   
 Notify CLIR from received Cdma-Info-Record.  
@@ -189,6 +447,24 @@ http://www.arib.or.jp/english/html/overview/doc/T53v6_5_pdf/5_ANNEX_v6_5.pdf
        Reason code. (8-bit binary)  
        See Table A 1.1-1 in T53.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+</table>
 
 ### notifyCdmaInfoRecAudioControl(clientId, upLink, downLink) ###
   
@@ -204,3 +480,27 @@ Note: No information from ARIB about Audio Control.
 @param upLink  
 @param downLink  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+<tr>
+<td>clientId</td>
+<td>       The ID of radioInterface where this info is notified from.  
+</td>
+</tr>
+
+</table>

@@ -17,6 +17,18 @@ getChildListForItem().
 @param aIndex The index of the item in the list.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>The index of the item in the list.  
+</td>
+</tr>
+
+</table>
+
 ### getItem(aIndex) ###
   
 getItem() returns the transaction at the given index in the list. Note that  
@@ -25,6 +37,18 @@ returned is AddRef'd so it is up to the caller to Release the transaction
 when it is done.  
 @param aIndex The index of the item in the list.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>The index of the item in the list.  
+</td>
+</tr>
+
+</table>
 
 ### getData(aIndex, aLength, aData) ###
   
@@ -39,6 +63,18 @@ transactions the item at aIndex has.
 @param aIndex The index of the item in the list.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>The index of the item in the list.  
+</td>
+</tr>
+
+</table>
+
 ### getChildListForItem(aIndex) ###
   
 getChildListForItem() returns the list of children associated with the  
@@ -47,6 +83,18 @@ or an empty list. The list returned is AddRef'd so it is up to the caller
 to Release the transaction when it is done.  
 @param aIndex The index of the item in the list.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>The index of the item in the list.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

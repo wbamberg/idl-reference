@@ -29,6 +29,66 @@ to any possible backup scheme for creating the window.
 @return the new window. Will be null if canceled or an error occurred.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>parent</td>
+<td>Parent window, if any. Null if not. The newly created  
+window should be made a child/dependent window of  
+the parent, if any (and if the concept applies  
+to the underlying OS).  
+</td>
+</tr>
+
+<tr>
+<td>parent</td>
+<td>Parent window, if any. Null if not. The newly created  
+window should be made a child/dependent window of  
+the parent, if any (and if the concept applies  
+to the underlying OS).  
+</td>
+</tr>
+
+<tr>
+<td>parent</td>
+<td>Parent window, if any. Null if not. The newly created  
+window should be made a child/dependent window of  
+the parent, if any (and if the concept applies  
+to the underlying OS).  
+</td>
+</tr>
+
+<tr>
+<td>parent</td>
+<td>Parent window, if any. Null if not. The newly created  
+window should be made a child/dependent window of  
+the parent, if any (and if the concept applies  
+to the underlying OS).  
+</td>
+</tr>
+
+<tr>
+<td>parent</td>
+<td>Parent window, if any. Null if not. The newly created  
+window should be made a child/dependent window of  
+the parent, if any (and if the concept applies  
+to the underlying OS).  
+</td>
+</tr>
+
+<tr>
+<td>parent</td>
+<td>Parent window, if any. Null if not. The newly created  
+window should be made a child/dependent window of  
+the parent, if any (and if the concept applies  
+to the underlying OS).  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### PARENT_IS_LOADING_OR_RUNNING_TIMEOUT ###

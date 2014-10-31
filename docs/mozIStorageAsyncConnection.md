@@ -28,6 +28,22 @@ to complete first.
         If is called on a thread other than the one that opened it.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCallback</td>
+<td>[optional]  
+       A callback that will be notified when the close is completed,  
+       with the following arguments:  
+       - status: the status of the call  
+       - value: |null|  
+</td>
+</tr>
+
+</table>
+
 ### asyncClone(aReadOnly, aCallback) ###
   
 Clone a database and make the clone read only if needed.  
@@ -64,6 +80,24 @@ Clone a database and make the clone read only if needed.
        - wal_autocheckpoint  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aReadOnly</td>
+<td>       If true, the returned database should be put into read-only mode.  
+</td>
+</tr>
+
+<tr>
+<td>aReadOnly</td>
+<td>       If true, the returned database should be put into read-only mode.  
+</td>
+</tr>
+
+</table>
+
 ### createAsyncStatement(aSQLStatement) ###
   
 Create an asynchronous statement for the given SQL. An  
@@ -80,6 +114,18 @@ $var to indicate named arguments.
 @return a new mozIStorageAsyncStatement  
 @note The statement is created lazily on first execution.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSQLStatement</td>
+<td>       The SQL statement to execute.  
+</td>
+</tr>
+
+</table>
 
 ### executeAsync(aStatements, aNumStatements, aCallback) ###
   
@@ -103,6 +149,33 @@ reset does not need to be called.
        re-entrant since they can be called on multiple threads.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStatements</td>
+<td>       The array of statements to execute asynchronously, in the order they  
+       are given in the array.  
+</td>
+</tr>
+
+<tr>
+<td>aStatements</td>
+<td>       The array of statements to execute asynchronously, in the order they  
+       are given in the array.  
+</td>
+</tr>
+
+<tr>
+<td>aStatements</td>
+<td>       The array of statements to execute asynchronously, in the order they  
+       are given in the array.  
+</td>
+</tr>
+
+</table>
+
 ### executeSimpleSQLAsync(aSQLStatement, aCallback) ###
   
 Execute asynchronously an SQL expression, expecting no arguments.  
@@ -114,6 +187,24 @@ Execute asynchronously an SQL expression, expecting no arguments.
        completion.  
 @return an object that can be used to cancel the statement execution.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSQLStatement</td>
+<td>       The SQL statement to execute  
+</td>
+</tr>
+
+<tr>
+<td>aSQLStatement</td>
+<td>       The SQL statement to execute  
+</td>
+</tr>
+
+</table>
 
 ### createFunction(aFunctionName, aNumArguments, aFunction) ###
   
@@ -131,6 +222,30 @@ thread.
        in question.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFunctionName</td>
+<td>       The name of function to create, as seen in SQL.  
+</td>
+</tr>
+
+<tr>
+<td>aFunctionName</td>
+<td>       The name of function to create, as seen in SQL.  
+</td>
+</tr>
+
+<tr>
+<td>aFunctionName</td>
+<td>       The name of function to create, as seen in SQL.  
+</td>
+</tr>
+
+</table>
+
 ### createAggregateFunction(aFunctionName, aNumArguments, aFunction) ###
   
 Create a new SQL aggregate function.  If you use your connection on  
@@ -147,6 +262,30 @@ be called on one thread.
        function in question.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFunctionName</td>
+<td>       The name of aggregate function to create, as seen in SQL.  
+</td>
+</tr>
+
+<tr>
+<td>aFunctionName</td>
+<td>       The name of aggregate function to create, as seen in SQL.  
+</td>
+</tr>
+
+<tr>
+<td>aFunctionName</td>
+<td>       The name of aggregate function to create, as seen in SQL.  
+</td>
+</tr>
+
+</table>
+
 ### removeFunction(aFunctionName) ###
   
 Delete custom SQL function (simple or aggregate one).  
@@ -154,6 +293,18 @@ Delete custom SQL function (simple or aggregate one).
 @param aFunctionName  
        The name of function to remove.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFunctionName</td>
+<td>       The name of function to remove.  
+</td>
+</tr>
+
+</table>
 
 ### setProgressHandler(aGranularity, aHandler) ###
   
@@ -169,6 +320,26 @@ one thread.
        The instance of mozIStorageProgressHandler.  
 @return previous registered handler.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aGranularity</td>
+<td>       The number of SQL virtual machine steps between progress handler  
+       callbacks.  
+</td>
+</tr>
+
+<tr>
+<td>aGranularity</td>
+<td>       The number of SQL virtual machine steps between progress handler  
+       callbacks.  
+</td>
+</tr>
+
+</table>
 
 ### removeProgressHandler() ###
   

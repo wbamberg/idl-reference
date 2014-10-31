@@ -59,6 +59,42 @@ the value to use for defaultIndex completion.
        provided, aValue will be used.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aValue</td>
+<td>       The value to autocomplete to  
+</td>
+</tr>
+
+<tr>
+<td>aValue</td>
+<td>       The value to autocomplete to  
+</td>
+</tr>
+
+<tr>
+<td>aValue</td>
+<td>       The value to autocomplete to  
+</td>
+</tr>
+
+<tr>
+<td>aValue</td>
+<td>       The value to autocomplete to  
+</td>
+</tr>
+
+<tr>
+<td>aValue</td>
+<td>       The value to autocomplete to  
+</td>
+</tr>
+
+</table>
+
 ### setListener(aListener) ###
   
 Sets a listener for changes in the result.  

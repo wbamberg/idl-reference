@@ -25,6 +25,33 @@ also assert.
                          of this file.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>parent       nsIDOMWindow parent. This dialog will be dependent  
+                         on this parent. parent must be non-null.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>parent       nsIDOMWindow parent. This dialog will be dependent  
+                         on this parent. parent must be non-null.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>parent       nsIDOMWindow parent. This dialog will be dependent  
+                         on this parent. parent must be non-null.  
+</td>
+</tr>
+
+</table>
+
 ### open(aColorPickerShownCallback) ###
   
 Opens the color dialog asynchrounously.  

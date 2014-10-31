@@ -305,6 +305,24 @@ nsINavBookmarkObserver.onBeginUpdateBatch/onEndUpdateBatch.
        Opaque parameter passed to nsINavBookmarksBatchCallback  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCallback</td>
+<td>       nsINavHistoryBatchCallback interface to call.  
+</td>
+</tr>
+
+<tr>
+<td>aCallback</td>
+<td>       nsINavHistoryBatchCallback interface to call.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### placesRoot ###

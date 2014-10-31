@@ -31,6 +31,18 @@ file(s) [prefs.js, user.js] will be read and processed.
 @see nsIFile  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFile</td>
+<td>The file to be read.  
+</td>
+</tr>
+
+</table>
+
 ### resetPrefs() ###
   
 Called to completely flush and re-initialize the preferences system.  
@@ -60,6 +72,18 @@ written out to the current preferences file (usually prefs.js.)
 @see nsIFile  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFile</td>
+<td>The file to be written.  
+</td>
+</tr>
+
+</table>
+
 ### getBranch(aPrefRoot) ###
   
 Call to get a Preferences "Branch" which accesses user preference data.  
@@ -79,6 +103,24 @@ returned if one exists, otherwise a default value will be returned.
   
 @see getDefaultBranch  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefRoot</td>
+<td>The preference "root" on which to base this "branch".  
+                 For example, if the root "browser.startup." is used, the  
+                 branch will be able to easily access the preferences  
+                 "browser.startup.page", "browser.startup.homepage", or  
+                 "browser.startup.homepage_override" by simply requesting  
+                 "page", "homepage", or "homepage_override". nullptr or ""   
+                 may be used to access to the entire preference "tree".  
+</td>
+</tr>
+
+</table>
 
 ### getDefaultBranch(aPrefRoot) ###
   
@@ -104,6 +146,24 @@ make sense when applied to user set preferences.
   
 @see getBranch  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefRoot</td>
+<td>The preference "root" on which to base this "branch".  
+                 For example, if the root "browser.startup." is used, the  
+                 branch will be able to easily access the preferences  
+                 "browser.startup.page", "browser.startup.homepage", or  
+                 "browser.startup.homepage_override" by simply requesting  
+                 "page", "homepage", or "homepage_override". nullptr or ""   
+                 may be used to access to the entire preference "tree".  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

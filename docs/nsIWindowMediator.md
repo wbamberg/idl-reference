@@ -18,6 +18,21 @@ from the oldest window to the youngest.
         enumerator can have .closed set to true.  Caveat enumerator!  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aWindowType the returned enumerator will enumerate only  
+                    windows of this type. ("type" is the  
+                    |windowtype| attribute of the XML <window> element.)  
+                    If null, all windows will be enumerated.  
+</td>
+</tr>
+
+</table>
+
 ### getXULWindowEnumerator(aWindowType) ###
  Identical to getEnumerator except:  
 @return an enumerator of nsIXULWindows  
@@ -37,6 +52,30 @@ are re-ordered while z-order enumerators are active.
 @return an enumerator of nsIDOMWindows  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aWindowType the returned enumerator will enumerate only  
+                    windows of this type. ("type" is the  
+                    |windowtype| attribute of the XML <window> element.)  
+                    If null, all windows will be enumerated.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aWindowType the returned enumerator will enumerate only  
+                    windows of this type. ("type" is the  
+                    |windowtype| attribute of the XML <window> element.)  
+                    If null, all windows will be enumerated.  
+</td>
+</tr>
+
+</table>
+
 ### getZOrderXULWindowEnumerator(aWindowType, aFrontToBack) ###
  Identical to getZOrderDOMWindowEnumerator except:  
 @return an enumerator of nsIXULWindows  
@@ -51,6 +90,21 @@ front to back order.
                     If null, return the topmost window of any type.  
 @return the topmost window  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aWindowType return the topmost window of this type.  
+                    ("type" is the |windowtype| attribute of  
+                    the XML <window> element.)  
+                    If null, return the topmost window of any type.  
+</td>
+</tr>
+
+</table>
 
 ### getOuterWindowWithId(aOuterWindowID) ###
   
@@ -70,11 +124,35 @@ addListener) will be notified through their onOpenWindow method.
 @param aWindow the window to add  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>the window to add  
+</td>
+</tr>
+
+</table>
+
 ### unregisterWindow(aWindow) ###
  Remove the window from the list of known windows. Listeners (see  
 addListener) will be be notified through their onCloseWindow method.  
 @param aWindow the window to remove  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>the window to remove  
+</td>
+</tr>
+
+</table>
 
 ### updateWindowTimeStamp(aWindow) ###
  Call this method when a window gains focus. It's a primitive means of  
@@ -83,12 +161,42 @@ really should be removed.
 @param aWindow the window which has gained focus  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>the window which has gained focus  
+</td>
+</tr>
+
+</table>
+
 ### updateWindowTitle(aWindow, inTitle) ###
  Call this method when a window's title changes. Listeners (see  
 addListener) will be notified through their onWindowTitleChange method.  
 @param aWindow the window whose title has changed  
 @param inTitle the window's new title  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>the window whose title has changed  
+</td>
+</tr>
+
+<tr>
+<td>aWindow</td>
+<td>the window whose title has changed  
+</td>
+</tr>
+
+</table>
 
 ### calculateZPosition(inWindow, inPosition, inBelow, outPosition, outBelow) ###
  A window wants to be moved in z-order. Calculate whether and how  
@@ -121,6 +229,42 @@ pointers in those parameters.
         the position given.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>inWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+<tr>
+<td>inWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+<tr>
+<td>inWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+<tr>
+<td>inWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+<tr>
+<td>inWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+</table>
+
 ### setZPosition(inWindow, inPosition, inBelow) ###
  A window has been positioned behind another. Inform WindowMediator  
 @param inWindow the window in question  
@@ -132,11 +276,47 @@ pointers in those parameters.
 @param inBelow the window inWindow is behind, if zLevelBelow  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>inWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+<tr>
+<td>inWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+<tr>
+<td>inWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+</table>
+
 ### getZLevel(aWindow) ###
  Return the window's Z level (as defined in nsIXULWindow).  
 @param aWindow the window in question  
 @return aWindow's z level  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+</table>
 
 ### setZLevel(aWindow, aZLevel) ###
  Set the window's Z level (as defined in nsIXULWindow). The implementation  
@@ -147,16 +327,58 @@ nsIXULWindow::normalZ until it has been informed of a different level.
 @param aZLevel the window's new Z level  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+<tr>
+<td>aWindow</td>
+<td>the window in question  
+</td>
+</tr>
+
+</table>
+
 ### addListener(aListener) ###
  Register a listener for window status changes.  
 keeps strong ref? (to be decided)  
 @param aListener the listener to register  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>the listener to register  
+</td>
+</tr>
+
+</table>
+
 ### removeListener(aListener) ###
  Unregister a listener of window status changes.  
 @param aListener the listener to unregister  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>the listener to unregister  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

@@ -19,3 +19,16 @@ update request.
 @param update The update being applied, or null if this is a switch  
               to updated application request.  Must be non-null on GONK.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>update</td>
+<td>The update being applied, or null if this is a switch  
+              to updated application request.  Must be non-null on GONK.  
+</td>
+</tr>
+
+</table>

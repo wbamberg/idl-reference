@@ -25,6 +25,24 @@ Query whether aType is supported.
       registered for the types they support.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>the MIME type in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the MIME type in question.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### UNSUPPORTED ###

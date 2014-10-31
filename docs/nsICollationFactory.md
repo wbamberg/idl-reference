@@ -18,3 +18,16 @@ from the operating system.
        user preference.  
 @return A collation for the given locale.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>locale</td>
+<td>       The locale for which to create the collation or null to use  
+       user preference.  
+</td>
+</tr>
+
+</table>

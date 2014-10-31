@@ -33,6 +33,18 @@ cookie header, _but_ using the channel's other information
        The cookie header to be parsed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCookieHeader</td>
+<td>       The cookie header to be parsed.  
+</td>
+</tr>
+
+</table>
+
 ### setupFallbackChannel(aFallbackKey) ###
   
 Setup this channel as an application cache fallback channel.  
@@ -61,6 +73,24 @@ is delievered.
 @param aListener  
        The callback object used to handle a successful upgrade  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aProtocolName</td>
+<td>       The value of the HTTP Upgrade request header  
+</td>
+</tr>
+
+<tr>
+<td>aProtocolName</td>
+<td>       The value of the HTTP Upgrade request header  
+</td>
+</tr>
+
+</table>
 
 ### addRedirect(aPrincipal) ###
   

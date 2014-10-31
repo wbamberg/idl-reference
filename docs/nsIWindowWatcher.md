@@ -54,6 +54,52 @@ however.
 via nsIObserverService if the window did not already exist.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+<tr>
+<td>aParent</td>
+<td>parent window, if any. Null if no parent.  If it is  
+impossible to get to an nsIWebBrowserChrome from aParent, this  
+method will effectively act as if aParent were null.  
+</td>
+</tr>
+
+</table>
+
 ### registerNotification(aObserver) ###
  Clients of this service can register themselves to be notified  
 when a window is opened or closed (added to or removed from this  
@@ -70,6 +116,20 @@ aTopic   a wstring, either "domwindowopened" or "domwindowclosed".
 someData not used.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>the object to be notified when windows are  
+opened or closed. Its Observe method will be  
+called with the following parameters:  
+</td>
+</tr>
+
+</table>
+
 ### unregisterNotification(aObserver) ###
  Clients of this service can register themselves to be notified  
 when a window is opened or closed (added to or removed from this  
@@ -77,6 +137,18 @@ service). This method removes an aObserver from the list of objects
 to be notified.  
 @param aObserver the observer to be removed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>the observer to be removed.  
+</td>
+</tr>
+
+</table>
 
 ### getWindowEnumerator() ###
  Get an iterator for currently open windows in the order they were opened,  
@@ -91,11 +163,35 @@ can be QIed to an nsIDOMWindow
 @return a new nsIPrompt object  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>the parent window used for posing alerts. can be null.  
+</td>
+</tr>
+
+</table>
+
 ### getNewAuthPrompter(aParent) ###
  Return a newly created nsIAuthPrompt implementation.  
 @param aParent the parent window used for posing alerts. can be null.  
 @return a new nsIAuthPrompt object  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParent</td>
+<td>the parent window used for posing alerts. can be null.  
+</td>
+</tr>
+
+</table>
 
 ### setWindowCreator(creator) ###
  Set the window creator callback. It must be filled in by the app.  
@@ -103,6 +199,19 @@ openWindow will use it to create new windows.
 @param creator the callback. if null, the callback will be cleared  
 and window creation capabilities lost.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>creator</td>
+<td>the callback. if null, the callback will be cleared  
+and window creation capabilities lost.  
+</td>
+</tr>
+
+</table>
 
 ### hasWindowCreator() ###
  Returns true if a window creator callback has been set, false otherwise.  
@@ -118,6 +227,18 @@ this method will do that.
 @return the corresponding chrome window  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>the DOM window whose chrome window the caller needs  
+</td>
+</tr>
+
+</table>
+
 ### getWindowByName(aTargetName, aCurrentWindow) ###
   
 Retrieve an existing window (or frame).  
@@ -130,6 +251,24 @@ Note: This method will search all open windows for any window or
 frame with the given window name. Make sure you understand the  
 security implications of this before using this method!  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTargetName</td>
+<td>the window name  
+</td>
+</tr>
+
+<tr>
+<td>aTargetName</td>
+<td>the window name  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

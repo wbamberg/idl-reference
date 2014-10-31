@@ -29,6 +29,52 @@ the responsibility of the application.
 @param value The attribute value.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>The Namespace URI, or the empty string if  
+       none is available or Namespace processing is not  
+       being performed.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>The Namespace URI, or the empty string if  
+       none is available or Namespace processing is not  
+       being performed.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>The Namespace URI, or the empty string if  
+       none is available or Namespace processing is not  
+       being performed.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>The Namespace URI, or the empty string if  
+       none is available or Namespace processing is not  
+       being performed.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>The Namespace URI, or the empty string if  
+       none is available or Namespace processing is not  
+       being performed.  
+</td>
+</tr>
+
+</table>
+
 ### clear() ###
   
 Clear the attribute list for reuse.  
@@ -41,6 +87,18 @@ Remove an attribute from the list.
 @param index The index of the attribute (zero-based).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+</table>
+
 ### setAttributes(attributes) ###
   
 Set the attributes list. This method will clear any attributes in  
@@ -49,6 +107,19 @@ the list before adding the attributes from the argument.
 @param attributes The attributes object to replace populate the  
                   list with.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>attributes</td>
+<td>The attributes object to replace populate the  
+                  list with.  
+</td>
+</tr>
+
+</table>
 
 ### setAttribute(index, uri, localName, qName, type, value) ###
   
@@ -70,6 +141,48 @@ of the application.
 @param value The attribute value.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+</table>
+
 ### setLocalName(index, localName) ###
   
 Set the local name of a specific attribute.  
@@ -78,6 +191,24 @@ Set the local name of a specific attribute.
 @param localName The attribute's local name, or the empty  
        string for none.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+</table>
 
 ### setQName(index, qName) ###
   
@@ -88,6 +219,24 @@ Set the qualified name of a specific attribute.
        string for none.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+</table>
+
 ### setType(index, type) ###
   
 Set the type of a specific attribute.  
@@ -95,6 +244,24 @@ Set the type of a specific attribute.
 @param index The index of the attribute (zero-based).  
 @param type The attribute's type.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+</table>
 
 ### setURI(index, uri) ###
   
@@ -105,6 +272,24 @@ Set the Namespace URI of a specific attribute.
        string for none.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+</table>
+
 ### setValue(index, value) ###
   
 Set the value of a specific attribute.  
@@ -112,3 +297,21 @@ Set the value of a specific attribute.
 @param index The index of the attribute (zero-based).  
 @param value The attribute's value.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the attribute (zero-based).  
+</td>
+</tr>
+
+</table>

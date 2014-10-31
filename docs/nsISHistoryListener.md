@@ -28,6 +28,18 @@ or content area, for example via nsIWebNavigation::loadURI()
 @param aNewURI     The URI of the document to be added to session history.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNewURI</td>
+<td>The URI of the document to be added to session history.  
+</td>
+</tr>
+
+</table>
+
 ### OnHistoryGoBack(aBackURI) ###
   
 Called when navigating to a previous session history entry, for example  
@@ -37,6 +49,18 @@ due to a nsIWebNavigation::goBack() call.
 @return            Whether the operation can proceed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBackURI</td>
+<td>The URI of the session history entry being navigated to.  
+</td>
+</tr>
+
+</table>
+
 ### OnHistoryGoForward(aForwardURI) ###
   
 Called when navigating to a next session history entry, for example  
@@ -45,6 +69,18 @@ due to a nsIWebNavigation::goForward() call.
 @param aForwardURI   The URI of the session history entry being navigated to.  
 @return              Whether the operation can proceed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aForwardURI</td>
+<td>The URI of the session history entry being navigated to.  
+</td>
+</tr>
+
+</table>
 
 ### OnHistoryReload(aReloadURI, aReloadFlags) ###
    
@@ -60,6 +96,24 @@ nsIWebNavigation::reload() call.
 @see  nsIWebNavigation  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aReloadURI</td>
+<td>The URI of the document to be reloaded.  
+</td>
+</tr>
+
+<tr>
+<td>aReloadURI</td>
+<td>The URI of the document to be reloaded.  
+</td>
+</tr>
+
+</table>
+
 ### OnHistoryGotoIndex(aIndex, aGotoURI) ###
   
 Called when navigating to a session history entry by index, for example,  
@@ -69,6 +123,24 @@ when nsIWebNavigation::gotoIndex() is called.
 @param aGotoURI      The URI of the session history entry to be loaded.  
 @return              Whether the operation can proceed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>The index in session history of the entry to be loaded.  
+</td>
+</tr>
+
+<tr>
+<td>aIndex</td>
+<td>The index in session history of the entry to be loaded.  
+</td>
+</tr>
+
+</table>
 
 ### OnHistoryPurge(aNumEntries) ###
   
@@ -83,6 +155,18 @@ To purge documents from session history call nsISHistory::PurgeHistory()
 @return              Whether the operation can proceed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNumEntries</td>
+<td>The number of entries to be removed from session history.  
+</td>
+</tr>
+
+</table>
+
 ### OnHistoryReplaceEntry(aIndex) ###
   
 Called when an entry is replaced in the session history. Entries are  
@@ -92,3 +176,16 @@ about pages) and when history.replaceState is called.
 @param aIndex        The index in session history of the entry being  
                       replaced  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>The index in session history of the entry being  
+                      replaced  
+</td>
+</tr>
+
+</table>

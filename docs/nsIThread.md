@@ -72,6 +72,19 @@ only be called if this thread is the current thread.
   not the current thread.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>mayWait</td>
+<td>  A boolean parameter that if "true" indicates that the method may block  
+  the calling thread to wait for a pending event.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### PRThread ###

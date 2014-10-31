@@ -17,6 +17,36 @@ Enqueue a request to prefetch the specified URI.
 @param aExplicit the link element has an explicit prefetch link type  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the URI of the document to prefetch  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI of the document to prefetch  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI of the document to prefetch  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI of the document to prefetch  
+</td>
+</tr>
+
+</table>
+
 ### enumerateQueue() ###
   
 Enumerate the items in the prefetch queue.  

@@ -48,6 +48,24 @@ Opens a zip file.
  or unsupported form)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFile</td>
+<td>the zip file to open  
+</td>
+</tr>
+
+<tr>
+<td>aFile</td>
+<td>the zip file to open  
+</td>
+</tr>
+
+</table>
+
 ### getEntry(aZipEntry) ###
   
 Returns a nsIZipEntry describing a specified zip entry or null if there  
@@ -56,12 +74,36 @@ is no such entry in the zip file
 @param aZipEntry the path of the entry  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the entry  
+</td>
+</tr>
+
+</table>
+
 ### hasEntry(aZipEntry) ###
   
 Checks whether the zipfile contains an entry specified by zipEntry.  
   
 @param aZipEntry the path of the entry  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the entry  
+</td>
+</tr>
+
+</table>
 
 ### addEntryDirectory(aZipEntry, aModTime, aQueue) ###
   
@@ -78,6 +120,30 @@ Adds a new directory entry to the zip file. If aZipEntry does not end with
  file  
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the directory entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the directory entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the directory entry  
+</td>
+</tr>
+
+</table>
 
 ### addEntryFile(aZipEntry, aCompression, aFile, aQueue) ###
   
@@ -97,6 +163,36 @@ addEntryDirectory(aZipEntry, aFile.lastModifiedTime, aQueue)
 @throws NS_ERROR_FILE_NOT_FOUND if file does not exist  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+</table>
+
 ### addEntryChannel(aZipEntry, aModTime, aCompression, aChannel, aQueue) ###
   
 Adds data from a channel to the zip file. If the operation is performed  
@@ -115,6 +211,42 @@ the channel must support being opened synchronously.
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+</table>
+
 ### addEntryStream(aZipEntry, aModTime, aCompression, aStream, aQueue) ###
   
 Adds data from an input stream to the zip file.  
@@ -131,6 +263,42 @@ Adds data from an input stream to the zip file.
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the file entry  
+</td>
+</tr>
+
+</table>
+
 ### removeEntry(aZipEntry, aQueue) ###
   
 Removes an existing entry from the zip file.  
@@ -144,6 +312,24 @@ Removes an existing entry from the zip file.
 @throws NS_ERROR_FILE_NOT_FOUND if no entry with the given path exists  
 @throws <other-error> on failure to update the zip file  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the entry to be removed  
+</td>
+</tr>
+
+<tr>
+<td>aZipEntry</td>
+<td>the path of the entry to be removed  
+</td>
+</tr>
+
+</table>
 
 ### processQueue(aObserver, aContext) ###
   
@@ -178,6 +364,19 @@ must be power of 2.
 @throws NS_ERROR_INVALID_ARG if aAlignSize is invalid  
 @throws <other-error> on failure to update the zip file  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAlignSize</td>
+<td>is the alignment size, valid values from 2 to 32768, and  
+must be power of 2.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

@@ -14,6 +14,24 @@ Constructs a new channel for the about protocol module.
 @param aLoadInfo the loadinfo of the new channel  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the uri of the new channel  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the uri of the new channel  
+</td>
+</tr>
+
+</table>
+
 ### getURIFlags(aURI) ###
   
 A method to get the flags that apply to a given about: URI.  The URI  

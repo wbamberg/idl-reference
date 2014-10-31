@@ -24,6 +24,19 @@ Retrieves a patch.
 @returns The nsIUpdatePatch at the specified index.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>index  
+         The index of the patch to retrieve.  
+</td>
+</tr>
+
+</table>
+
 ### serialize(updates) ###
   
 Serializes this update object into a DOM Element  
@@ -31,6 +44,19 @@ Serializes this update object into a DOM Element
          The document to serialize into  
 @returns The DOM Element created by the serialization process  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>updates  
+         The document to serialize into  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

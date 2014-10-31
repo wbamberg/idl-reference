@@ -37,6 +37,30 @@ Used to set the contents of this object.
 This makes a copy of the string argument passed in.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>length</td>
+<td>The length of the string. This value should not include  
+              space for the null terminator, nor should it account for the  
+              size of a character. It should  only be the number of  
+              characters for which there is space in the string.  
+</td>
+</tr>
+
+<tr>
+<td>length</td>
+<td>The length of the string. This value should not include  
+              space for the null terminator, nor should it account for the  
+              size of a character. It should  only be the number of  
+              characters for which there is space in the string.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### data ###

@@ -37,6 +37,24 @@ http://xml.org/sax/features/namespace-prefixes .  All other
 features will result in a NOT_IMPLEMENTED exception.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>String flag for a parser feature.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>String flag for a parser feature.  
+</td>
+</tr>
+
+</table>
+
 ### getFeature(name) ###
   
 Look up the value of a feature flag.  
@@ -58,6 +76,18 @@ http://xml.org/sax/features/namespace-prefixes .  All other
 features will result in a NOT_IMPLEMENTED exception.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>String flag for a parser feature.  
+</td>
+</tr>
+
+</table>
+
 ### setProperty(name, value) ###
   
 Set the value of a property. NOT CURRENTLY IMPLEMENTED.  
@@ -77,6 +107,24 @@ extended handlers.
 @param name String flag for a parser feature  
 @param value Turn the feature on/off.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>String flag for a parser feature  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>String flag for a parser feature  
+</td>
+</tr>
+
+</table>
 
 ### getProperty(name) ###
   
@@ -99,6 +147,18 @@ using names built on their own URIs.
 @return The current value of the property.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The property name, which is a fully-qualified URI.  
+</td>
+</tr>
+
+</table>
+
 ### parseFromString(str, contentType) ###
   
   
@@ -106,6 +166,24 @@ using names built on their own URIs.
 @param contentType The content type of the string (see parseFromStream)  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>str</td>
+<td>The UTF16 string to be parsed  
+</td>
+</tr>
+
+<tr>
+<td>str</td>
+<td>The UTF16 string to be parsed  
+</td>
+</tr>
+
+</table>
 
 ### parseFromStream(stream, charset, contentType) ###
   
@@ -119,6 +197,30 @@ using names built on their own URIs.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>stream</td>
+<td>The byte stream whose contents are parsed  
+</td>
+</tr>
+
+<tr>
+<td>stream</td>
+<td>The byte stream whose contents are parsed  
+</td>
+</tr>
+
+<tr>
+<td>stream</td>
+<td>The byte stream whose contents are parsed  
+</td>
+</tr>
+
+</table>
+
 ### parseAsync(observer) ###
   
 Begin an asynchronous parse. This method initializes the parser,  
@@ -130,6 +232,19 @@ one of the other parse methods.
 @param observer The nsIRequestObserver to notify upon start or stop.  
                 Can be NULL.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>observer</td>
+<td>The nsIRequestObserver to notify upon start or stop.  
+                Can be NULL.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

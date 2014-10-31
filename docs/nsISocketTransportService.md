@@ -30,6 +30,42 @@ Creates a transport for a specified host and port.
 NOTE: this function can be called from any thread  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSocketTypes</td>
+<td>       array of socket type strings.  null if using default socket type.  
+</td>
+</tr>
+
+<tr>
+<td>aSocketTypes</td>
+<td>       array of socket type strings.  null if using default socket type.  
+</td>
+</tr>
+
+<tr>
+<td>aSocketTypes</td>
+<td>       array of socket type strings.  null if using default socket type.  
+</td>
+</tr>
+
+<tr>
+<td>aSocketTypes</td>
+<td>       array of socket type strings.  null if using default socket type.  
+</td>
+</tr>
+
+<tr>
+<td>aSocketTypes</td>
+<td>       array of socket type strings.  null if using default socket type.  
+</td>
+</tr>
+
+</table>
+
 ### createUnixDomainTransport(aPath) ###
   
 Create a transport built on a Unix domain socket, connecting to the  
@@ -64,6 +100,19 @@ connections", and this is what Linux returns.)
        connect.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPath</td>
+<td>       The file name of the Unix domain socket to which we should  
+       connect.  
+</td>
+</tr>
+
+</table>
+
 ### attachSocket(aFd, aHandler) ###
   
 Adds a new socket to the list of controlled sockets.  
@@ -82,6 +131,24 @@ NOTE: this function may only be called from an event dispatch on the
       socket thread.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFd</td>
+<td>       Open file descriptor of the socket to control.  
+</td>
+</tr>
+
+<tr>
+<td>aFd</td>
+<td>       Open file descriptor of the socket to control.  
+</td>
+</tr>
+
+</table>
+
 ### notifyWhenCanAttachSocket(aEvent) ###
   
 if the number of sockets reaches the limit, then consumers can be  
@@ -96,3 +163,16 @@ instance on the socket transport thread.
 NOTE: this function may only be called from an event dispatch on the  
       socket thread.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEvent</td>
+<td>       Event that will receive the notification when a new socket can  
+       be attached  
+</td>
+</tr>
+
+</table>

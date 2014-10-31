@@ -20,3 +20,23 @@ broadcast.
 @param aString The string that the witness will broadcast.  
 @return An object with a single method |forget()|.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTopic</td>
+<td>The topic that the witness will broadcast using  
+              Services.obs.  
+</td>
+</tr>
+
+<tr>
+<td>aTopic</td>
+<td>The topic that the witness will broadcast using  
+              Services.obs.  
+</td>
+</tr>
+
+</table>

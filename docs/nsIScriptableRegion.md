@@ -17,6 +17,18 @@ copy operator equivalent that takes another region
   
 /  
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>region to copy  
+</td>
+</tr>
+
+</table>
+
 ### setToRect(aX, aY, aWidth, aHeight) ###
   
 copy operator equivalent that takes a rect  
@@ -29,6 +41,36 @@ copy operator equivalent that takes a rect
   
 /  
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to set region to  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to set region to  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to set region to  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to set region to  
+</td>
+</tr>
+
+</table>
+
 ### intersectRegion(aRegion) ###
   
 destructively intersect another region with this one  
@@ -37,6 +79,18 @@ destructively intersect another region with this one
 @return     void  
   
 /  
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>region to intersect  
+</td>
+</tr>
+
+</table>
 
 ### intersectRect(aX, aY, aWidth, aHeight) ###
   
@@ -50,6 +104,36 @@ destructively intersect a rect with this region
   
 /  
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to intersect with region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to intersect with region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to intersect with region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to intersect with region  
+</td>
+</tr>
+
+</table>
+
 ### unionRegion(aRegion) ###
   
 destructively union another region with this one  
@@ -58,6 +142,18 @@ destructively union another region with this one
 @return     void  
   
 /  
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>region to union  
+</td>
+</tr>
+
+</table>
 
 ### unionRect(aX, aY, aWidth, aHeight) ###
   
@@ -71,6 +167,36 @@ destructively union a rect with this region
   
 /  
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to union with region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to union with region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to union with region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to union with region  
+</td>
+</tr>
+
+</table>
+
 ### subtractRegion(aRegion) ###
   
 destructively subtract another region with this one  
@@ -79,6 +205,18 @@ destructively subtract another region with this one
 @return     void  
   
 /  
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>region to subtract  
+</td>
+</tr>
+
+</table>
 
 ### subtractRect(aX, aY, aWidth, aHeight) ###
   
@@ -92,6 +230,36 @@ destructively subtract a rect from this region
   
 /  
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to subtract with region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to subtract with region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to subtract with region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX xoffset of rect to subtract with region  
+</td>
+</tr>
+
+</table>
+
 ### isEmpty() ###
   
 is this region empty? i.e. does it contain any pixels  
@@ -100,6 +268,18 @@ is this region empty? i.e. does it contain any pixels
 @return     returns whether the region is empty  
   
 /  
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>none  
+</td>
+</tr>
+
+</table>
 
 ### isEqualRegion(aRegion) ###
   
@@ -110,6 +290,18 @@ the same pixels
 @return     whether the regions are identical  
   
 /  
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>region to compare  
+</td>
+</tr>
+
+</table>
 
 ### getBoundingBox(aX, aY, aWidth, aHeight) ###
   
@@ -124,6 +316,36 @@ rectangle that completely contains the region.
   
 /  
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aX out parameter for xoffset of bounding rect for region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX out parameter for xoffset of bounding rect for region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX out parameter for xoffset of bounding rect for region  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aX out parameter for xoffset of bounding rect for region  
+</td>
+</tr>
+
+</table>
+
 ### offset(aXOffset, aYOffset) ###
   
 offsets the region in x and y  
@@ -133,6 +355,24 @@ offsets the region in x and y
 @return          void  
   
 /  
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>xoffset  pixel offset in x  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>xoffset  pixel offset in x  
+</td>
+</tr>
+
+</table>
 
 ### getRects() ###
   
@@ -149,6 +389,18 @@ does the region intersect the rectangle?
 @return     true if the region intersects the rect  
   
 /  
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>rect to check for containment  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

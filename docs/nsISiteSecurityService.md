@@ -33,6 +33,54 @@ in future HTTPS connections.
                          if there are unrecognized tokens in the header.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>the type of security header in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security header in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security header in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security header in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security header in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security header in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security header in question.  
+</td>
+</tr>
+
+</table>
+
 ### unsafeProcessHeader(aType, aSourceURI, aHeader, aFlags, aMaxAge, aIncludeSubdomains) ###
   
 Same as processHeader but without checking for the security properties  
@@ -51,6 +99,30 @@ host.
                  NO_PERMANENT_STORAGE  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>the type of security state in question  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security state in question  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security state in question  
+</td>
+</tr>
+
+</table>
+
 ### isSecureHost(aType, aHost, aFlags) ###
   
 See isSecureURI  
@@ -60,6 +132,30 @@ See isSecureURI
 @param aFlags  options for this request as defined in nsISocketProvider:  
                  NO_PERMANENT_STORAGE  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>the type of security state in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security state in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security state in question.  
+</td>
+</tr>
+
+</table>
 
 ### shouldIgnoreHeaders(aSecurityInfo) ###
   
@@ -83,6 +179,30 @@ such as path and port.
                  NO_PERMANENT_STORAGE  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>the type of security state in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security state in question.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>the type of security state in question.  
+</td>
+</tr>
+
+</table>
+
 ### clearAll() ###
   
 Removes all security state by resetting to factory-original settings.  
@@ -103,6 +223,36 @@ mozilla::pkix::Time which uses internally seconds since 0 AD.
        given domain  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHostname</td>
+<td>the hosname (punycode) to be queried about  
+</td>
+</tr>
+
+<tr>
+<td>aHostname</td>
+<td>the hosname (punycode) to be queried about  
+</td>
+</tr>
+
+<tr>
+<td>aHostname</td>
+<td>the hosname (punycode) to be queried about  
+</td>
+</tr>
+
+<tr>
+<td>aHostname</td>
+<td>the hosname (punycode) to be queried about  
+</td>
+</tr>
+
+</table>
+
 ### setKeyPins(aHost, aIncludeSubdomains, aMaxAge, aPinCount, aSha256Pins) ###
   
 Set public-key pins for a host. The resulting pins will be permanent  
@@ -115,6 +265,42 @@ any already set by this mechanism or those built-in to Gecko.
 @param aPinCount number of keys being pinnned  
 @param aSha256Pins array of hashed key fingerprints (SHA-256, base64)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHost</td>
+<td>the hostname (punycode) that pins will apply to  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>the hostname (punycode) that pins will apply to  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>the hostname (punycode) that pins will apply to  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>the hostname (punycode) that pins will apply to  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>the hostname (punycode) that pins will apply to  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

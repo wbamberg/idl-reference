@@ -22,6 +22,19 @@ Check to see if a preference exists.
 @returns true if the preference exists, false if not  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of preference  
+</td>
+</tr>
+
+</table>
+
 ### get(aName) ###
   
 Gets an object representing a preference  
@@ -29,6 +42,19 @@ Gets an object representing a preference
          The name of preference  
 @returns a preference object, or null if the preference does not exist  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of preference  
+</td>
+</tr>
+
+</table>
 
 ### getValue(aName, aDefaultValue) ###
   
@@ -42,6 +68,26 @@ the preference does not exist.
          does not exists.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of preference  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of preference  
+</td>
+</tr>
+
+</table>
+
 ### setValue(aName, aValue) ###
   
 Sets the value of a storage item with the given name.  
@@ -50,6 +96,26 @@ Sets the value of a storage item with the given name.
 @param   aValue  
          The value to assign to the item  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of an item  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aName  
+         The name of an item  
+</td>
+</tr>
+
+</table>
 
 ### reset() ###
   

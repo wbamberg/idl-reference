@@ -73,6 +73,30 @@ Gets all the preferences with the given name.
                  is not called at all.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The preferences' name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preferences' name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preferences' name.  
+</td>
+</tr>
+
+</table>
+
 ### getByDomainAndName(domain, name, context, callback) ###
   
 Gets the preference with the given domain and name.  
@@ -83,6 +107,36 @@ Gets the preference with the given domain and name.
 @param callback  handleResult is called once unless no such preference  
                  exists, in which case handleResult is not called at all.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+</table>
 
 ### getBySubdomainAndName(domain, name, context, callback) ###
   
@@ -96,6 +150,36 @@ as or subdomains of the given domain.
                  such preferences exist, handleResult is not called at all.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+</table>
+
 ### getGlobal(name, context, callback) ###
   
 Gets the preference with no domain and the given name.  
@@ -105,6 +189,30 @@ Gets the preference with no domain and the given name.
 @param callback  handleResult is called once unless no such preference  
                  exists, in which case handleResult is not called at all.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+</table>
 
 ### getCachedByDomainAndName(domain, name, context) ###
   
@@ -127,6 +235,30 @@ exists.
                 exist.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+</table>
+
 ### getCachedBySubdomainAndName(domain, name, context, len, prefs) ###
   
 Synchronously retrieves from the in-memory cache all preferences with the  
@@ -145,6 +277,42 @@ getCachedByDomainAndName, its value attribute will be undefined.
 @param prefs    The array of preferences.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+</table>
+
 ### getCachedGlobal(name, context) ###
   
 Synchronously retrieves from the in-memory cache the preference with no  
@@ -161,6 +329,24 @@ cached nor known not to exist, then null is returned.
                 exist.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+</table>
+
 ### set(domain, name, value, context, callback) ###
   
 Sets a preference.  
@@ -173,6 +359,42 @@ Sets a preference.
                  stored.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+</table>
+
 ### setGlobal(name, value, context, callback) ###
   
 Sets a preference with no domain.  
@@ -184,6 +406,36 @@ Sets a preference with no domain.
                  stored.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+</table>
+
 ### removeByDomainAndName(domain, name, context, callback) ###
   
 Removes the preference with the given domain and name.  
@@ -193,6 +445,36 @@ Removes the preference with the given domain and name.
 @param context   The private-browsing context, if any.  
 @param callback  handleCompletion is called when the operation completes.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preference's domain.  
+</td>
+</tr>
+
+</table>
 
 ### removeBySubdomainAndName(domain, name, context, callback) ###
   
@@ -205,6 +487,36 @@ the same as or subdomains of the given domain.
 @param callback  handleCompletion is called when the operation completes.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+</table>
+
 ### removeGlobal(name, context, callback) ###
   
 Removes the preference with no domain and the given name.  
@@ -214,6 +526,30 @@ Removes the preference with no domain and the given name.
 @param callback  handleCompletion is called when the operation completes.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preference's name.  
+</td>
+</tr>
+
+</table>
+
 ### removeByDomain(domain, context, callback) ###
   
 Removes all preferences with the given domain.  
@@ -222,6 +558,30 @@ Removes all preferences with the given domain.
 @param context   The private-browsing context, if any.  
 @param callback  handleCompletion is called when the operation completes.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+</table>
 
 ### removeBySubdomain(domain, context, callback) ###
   
@@ -233,6 +593,30 @@ of the given domain.
 @param callback  handleCompletion is called when the operation completes.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+<tr>
+<td>domain</td>
+<td>The preferences' domain.  
+</td>
+</tr>
+
+</table>
+
 ### removeByName(name, context, callback) ###
   
 Removes all preferences with the given name regardless of domain, including  
@@ -243,6 +627,30 @@ global preferences with the given name.
 @param callback  handleCompletion is called when the operation completes.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The preferences' name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preferences' name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The preferences' name.  
+</td>
+</tr>
+
+</table>
+
 ### removeAllDomains(context, callback) ###
   
 Removes all non-global preferences -- in other words, all preferences that  
@@ -251,6 +659,24 @@ have a domain.
 @param context   The private-browsing context, if any.  
 @param callback  handleCompletion is called when the operation completes.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>context</td>
+<td>The private-browsing context, if any.  
+</td>
+</tr>
+
+<tr>
+<td>context</td>
+<td>The private-browsing context, if any.  
+</td>
+</tr>
+
+</table>
 
 ### removeAllDomainsSince(since, context, callback) ###
   
@@ -261,6 +687,30 @@ Removes all non-global preferences created after and including |since|.
 @param callback  handleCompletion is called when the operation completes.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>since</td>
+<td>Timestamp in milliseconds.  
+</td>
+</tr>
+
+<tr>
+<td>since</td>
+<td>Timestamp in milliseconds.  
+</td>
+</tr>
+
+<tr>
+<td>since</td>
+<td>Timestamp in milliseconds.  
+</td>
+</tr>
+
+</table>
+
 ### removeAllGlobals(context, callback) ###
   
 Removes all global preferences -- in other words, all preferences that have  
@@ -269,6 +719,24 @@ no domain.
 @param context   The private-browsing context, if any.  
 @param callback  handleCompletion is called when the operation completes.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>context</td>
+<td>The private-browsing context, if any.  
+</td>
+</tr>
+
+<tr>
+<td>context</td>
+<td>The private-browsing context, if any.  
+</td>
+</tr>
+
+</table>
 
 ### addObserverForName(name, observer) ###
   
@@ -287,6 +755,26 @@ be removed later to avoid leaking it.
 @param observer  The observer.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The name of the preferences to observe.  Pass null to  
+                 observe all preference changes regardless of name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The name of the preferences to observe.  Pass null to  
+                 observe all preference changes regardless of name.  
+</td>
+</tr>
+
+</table>
+
 ### removeObserverForName(name, observer) ###
   
 Unregisters an observer for the given name.  
@@ -295,6 +783,26 @@ Unregisters an observer for the given name.
                  if the observer was added with a null name.  
 @param observer  The observer.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The name for which the observer was registered.  Pass null  
+                 if the observer was added with a null name.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>The name for which the observer was registered.  Pass null  
+                 if the observer was added with a null name.  
+</td>
+</tr>
+
+</table>
 
 ### extractDomain(str) ###
   
@@ -306,3 +814,16 @@ URI.  This is how the API extracts domains from URIs passed to it.
 @return     If the given string is a valid URI, the domain of that URI is  
             returned.  Otherwise, the string itself is returned.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>str</td>
+<td>The string representation of a URI, like  
+            "http://example.com/foo/bar".  
+</td>
+</tr>
+
+</table>

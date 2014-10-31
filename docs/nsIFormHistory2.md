@@ -58,6 +58,24 @@ Removes entries that were created between the specified times.
        The end of the timeframe, in microseconds  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBeginTime</td>
+<td>       The beginning of the timeframe, in microseconds  
+</td>
+</tr>
+
+<tr>
+<td>aBeginTime</td>
+<td>       The beginning of the timeframe, in microseconds  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### hasEntries ###

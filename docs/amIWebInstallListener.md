@@ -26,6 +26,40 @@ Called when installation by websites is currently disabled.
         The number of AddonInstalls  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aOriginator  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aOriginator  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aOriginator  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aOriginator  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+</table>
+
 ### onWebInstallBlocked(aOriginator, aUri, aInstalls, aCount) ###
   
 Called when the website is not allowed to directly prompt the user to  
@@ -42,6 +76,40 @@ install add-ons.
 @return true if the caller should start the installs  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+</table>
+
 ### onWebInstallRequested(aOriginator, aUri, aInstalls, aCount) ###
   
 Called when a website wants to ask the user to install add-ons.  
@@ -56,3 +124,37 @@ Called when a website wants to ask the user to install add-ons.
         The number of AddonInstalls  
 @return true if the caller should start the installs  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window or browser that triggered the installs  
+</td>
+</tr>
+
+</table>

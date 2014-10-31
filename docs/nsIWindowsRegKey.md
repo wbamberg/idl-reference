@@ -37,6 +37,30 @@ Windows, that usage should probably be avoided in favor of openChild.
        above.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>rootKey</td>
+<td>       A root key defined above or any valid HKEY on 32-bit Windows.  
+</td>
+</tr>
+
+<tr>
+<td>rootKey</td>
+<td>       A root key defined above or any valid HKEY on 32-bit Windows.  
+</td>
+</tr>
+
+<tr>
+<td>rootKey</td>
+<td>       A root key defined above or any valid HKEY on 32-bit Windows.  
+</td>
+</tr>
+
+</table>
+
 ### create(rootKey, relPath, mode) ###
   
 This method opens an existing key or creates a new key.  
@@ -53,6 +77,30 @@ Windows, that usage should probably be avoided in favor of createChild.
        Access mode, which is a bit-wise OR of the ACCESS_ values defined  
        above.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>rootKey</td>
+<td>       A root key defined above or any valid HKEY on 32-bit Windows.  
+</td>
+</tr>
+
+<tr>
+<td>rootKey</td>
+<td>       A root key defined above or any valid HKEY on 32-bit Windows.  
+</td>
+</tr>
+
+<tr>
+<td>rootKey</td>
+<td>       A root key defined above or any valid HKEY on 32-bit Windows.  
+</td>
+</tr>
+
+</table>
 
 ### openChild(relPath, mode) ###
   
@@ -77,6 +125,18 @@ This method returns the name of the n'th child key.
        The index of the requested child key.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>       The index of the requested child key.  
+</td>
+</tr>
+
+</table>
+
 ### hasChild(name) ###
   
 This method checks to see if the key has a child by the given name.  
@@ -84,6 +144,18 @@ This method checks to see if the key has a child by the given name.
 @param name  
        The name of the requested child key.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the requested child key.  
+</td>
+</tr>
+
+</table>
 
 ### getValueName(index) ###
   
@@ -93,6 +165,18 @@ This method returns the name of the n'th value under this key.
        The index of the requested value.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>       The index of the requested value.  
+</td>
+</tr>
+
+</table>
+
 ### hasValue(name) ###
   
 This method checks to see if the key has a value by the given name.  
@@ -100,6 +184,18 @@ This method checks to see if the key has a value by the given name.
 @param name  
        The name of the requested value.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the requested value.  
+</td>
+</tr>
+
+</table>
 
 ### removeChild(relPath) ###
   
@@ -110,6 +206,18 @@ fail if the key has any children of its own.
        The relative path from this key to the key to be removed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>relPath</td>
+<td>       The relative path from this key to the key to be removed.  
+</td>
+</tr>
+
+</table>
+
 ### removeValue(name) ###
   
 This method removes the value with the given name.  
@@ -117,6 +225,18 @@ This method removes the value with the given name.
 @param name  
        The name of the value to be removed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to be removed.  
+</td>
+</tr>
+
+</table>
 
 ### getValueType(name) ###
   
@@ -126,6 +246,18 @@ value is one of the "TYPE_" constants defined above.
 @param name  
        The name of the value to query.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to query.  
+</td>
+</tr>
+
+</table>
 
 ### readStringValue(name) ###
   
@@ -137,6 +269,19 @@ string.
        string to request the key's default value.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to query.  This parameter can be the empty  
+       string to request the key's default value.  
+</td>
+</tr>
+
+</table>
+
 ### readIntValue(name) ###
   
 This method reads the integer contents of the named value.  
@@ -145,6 +290,18 @@ This method reads the integer contents of the named value.
        The name of the value to query.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to query.  
+</td>
+</tr>
+
+</table>
+
 ### readInt64Value(name) ###
   
 This method reads the 64-bit integer contents of the named value.  
@@ -152,6 +309,18 @@ This method reads the 64-bit integer contents of the named value.
 @param name  
        The name of the value to query.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to query.  
+</td>
+</tr>
+
+</table>
 
 ### readBinaryValue(name) ###
   
@@ -165,6 +334,18 @@ treated as an ISO-Latin-1 character string, which it is not).
        The name of the value to query.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to query.  
+</td>
+</tr>
+
+</table>
+
 ### writeStringValue(name, data) ###
   
 This method writes the unicode string contents of the named value.  The  
@@ -177,6 +358,26 @@ value will be created if it does not already exist.
        The data for the value to modify.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to modify.  This parameter can be the empty  
+       string to modify the key's default value.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to modify.  This parameter can be the empty  
+       string to modify the key's default value.  
+</td>
+</tr>
+
+</table>
+
 ### writeIntValue(name, data) ###
   
 This method writes the integer contents of the named value.  The value  
@@ -188,6 +389,24 @@ will be created if it does not already exist.
        The data for the value to modify.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to modify.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to modify.  
+</td>
+</tr>
+
+</table>
+
 ### writeInt64Value(name, data) ###
   
 This method writes the 64-bit integer contents of the named value.  The  
@@ -198,6 +417,24 @@ value will be created if it does not already exist.
 @param data  
        The data for the value to modify.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to modify.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to modify.  
+</td>
+</tr>
+
+</table>
 
 ### writeBinaryValue(name, data) ###
   
@@ -217,6 +454,24 @@ occur.
        The data for the value to modify.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to modify.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The name of the value to modify.  
+</td>
+</tr>
+
+</table>
+
 ### startWatching(recurse) ###
   
 This method starts watching the key to see if any of its values have  
@@ -227,6 +482,18 @@ watched.  Otherwise, only this key is watched.
 @param recurse  
        Indicates whether or not to also watch child keys.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>recurse</td>
+<td>       Indicates whether or not to also watch child keys.  
+</td>
+</tr>
+
+</table>
 
 ### stopWatching() ###
   

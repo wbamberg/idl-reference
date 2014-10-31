@@ -27,6 +27,24 @@ Removes a list of pages from global history.
 @note the removal happens in a batch.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURIs</td>
+<td>       Array of URIs to be removed.  
+</td>
+</tr>
+
+<tr>
+<td>aURIs</td>
+<td>       Array of URIs to be removed.  
+</td>
+</tr>
+
+</table>
+
 ### removePagesFromHost(aHost, aEntireDomain) ###
   
 Removes all global history information about pages for a given host.  
@@ -45,6 +63,32 @@ Removes all global history information about pages for a given host.
 @note The removal happens in a batch.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHost</td>
+<td>       Hostname to be removed.  
+       An empty host name means local files and anything else with no  
+       hostname.  You can also pass in the localized "(local files)"  
+       title given to you from a history query to remove all  
+       history information from local files.  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>       Hostname to be removed.  
+       An empty host name means local files and anything else with no  
+       hostname.  You can also pass in the localized "(local files)"  
+       title given to you from a history query to remove all  
+       history information from local files.  
+</td>
+</tr>
+
+</table>
+
 ### removePagesByTimeframe(aBeginTime, aEndTime) ###
   
 Removes all pages for a given timeframe.  
@@ -57,6 +101,24 @@ Limits are included: aBeginTime <= timeframe <= aEndTime
   
 @note The removal happens in a batch.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBeginTime</td>
+<td>       Microseconds from epoch, representing the initial time.  
+</td>
+</tr>
+
+<tr>
+<td>aBeginTime</td>
+<td>       Microseconds from epoch, representing the initial time.  
+</td>
+</tr>
+
+</table>
 
 ### removeVisitsByTimeframe(aBeginTime, aEndTime) ###
   
@@ -71,6 +133,24 @@ Any pages that becomes unvisited as a result will also be deleted.
   
 @note The removal happens in a batch.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBeginTime</td>
+<td>       Microseconds from epoch, representing the initial time.  
+</td>
+</tr>
+
+<tr>
+<td>aBeginTime</td>
+<td>       Microseconds from epoch, representing the initial time.  
+</td>
+</tr>
+
+</table>
 
 ### removeAllPages() ###
   

@@ -16,6 +16,18 @@ Initialize a stream cipher.
 @param aKey nsIKeyObject  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aKey</td>
+<td>nsIKeyObject  
+</td>
+</tr>
+
+</table>
+
 ### initWithIV(aKey, aIV, aIVLen) ###
   
 Initialize a stream cipher with an initialization vector.  
@@ -23,6 +35,30 @@ Initialize a stream cipher with an initialization vector.
 @param aIV the initialization vector  
 @param aIVLen the length of the initialization vector  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aKey</td>
+<td>nsIKeyObject  
+</td>
+</tr>
+
+<tr>
+<td>aKey</td>
+<td>nsIKeyObject  
+</td>
+</tr>
+
+<tr>
+<td>aKey</td>
+<td>nsIKeyObject  
+</td>
+</tr>
+
+</table>
 
 ### update(aData, aLen) ###
   
@@ -45,6 +81,20 @@ A more script friendly method (not in nsICryptoHash interface).
        encoded string.  if false, then the returned value is  
        binary data.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aASCII</td>
+<td>if true then the returned value is a base-64  
+       encoded string.  if false, then the returned value is  
+       binary data.  
+</td>
+</tr>
+
+</table>
 
 ### discard(aLen) ###
   

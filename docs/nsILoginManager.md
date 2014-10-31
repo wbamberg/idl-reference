@@ -18,6 +18,18 @@ created. However, if the caller specifies non-default values, they will
 be used instead.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLogin</td>
+<td>       The login to be added.  
+</td>
+</tr>
+
+</table>
+
 ### removeLogin(aLogin) ###
   
 Remove a login from the login manager.  
@@ -28,6 +40,18 @@ Remove a login from the login manager.
 The specified login must exactly match a stored login. However, the  
 values of any nsILoginMetaInfo properties are ignored.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLogin</td>
+<td>       The login to be removed.  
+</td>
+</tr>
+
+</table>
 
 ### modifyLogin(oldLogin, newLoginData) ###
   
@@ -49,6 +73,24 @@ changed in this manner.
 If the propertybag contains an item named "timesUsedIncrement", the  
 login's timesUsed property will be incremented by the item's value.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>oldLogin</td>
+<td>       The login to be modified.  
+</td>
+</tr>
+
+<tr>
+<td>oldLogin</td>
+<td>       The login to be modified.  
+</td>
+</tr>
+
+</table>
 
 ### removeAllLogins() ###
   
@@ -76,6 +118,26 @@ NOTE: This can be called from JS as:
       (|logins| is an array).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property and omit this param.  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property and omit this param.  
+</td>
+</tr>
+
+</table>
+
 ### getAllDisabledHosts(count, hostnames) ###
   
 Obtain a list of all hosts for which password saving is disabled.  
@@ -91,6 +153,26 @@ NOTE: This can be called from JS as:
       var logins = pwmgr.getDisabledAllLogins();  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property and omit this param.  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property and omit this param.  
+</td>
+</tr>
+
+</table>
+
 ### getLoginSavingEnabled(aHost) ###
   
 Check to see if saving logins has been disabled for a host.  
@@ -99,6 +181,19 @@ Check to see if saving logins has been disabled for a host.
        The hostname to check. This argument should be in the origin  
        URL format, without a pathname. For example: "http://foo.com".  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHost</td>
+<td>       The hostname to check. This argument should be in the origin  
+       URL format, without a pathname. For example: "http://foo.com".  
+</td>
+</tr>
+
+</table>
 
 ### setLoginSavingEnabled(aHost, isEnabled) ###
   
@@ -113,6 +208,26 @@ that host. Existing logins are not affected.
        Specify if saving logins should be enabled (true) or  
        disabled (false)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHost</td>
+<td>       The hostname to set. This argument should be in the origin  
+       URL format, without a pathname. For example: "http://foo.com".  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>       The hostname to set. This argument should be in the origin  
+       URL format, without a pathname. For example: "http://foo.com".  
+</td>
+</tr>
+
+</table>
 
 ### findLogins(count, aHostname, aActionURL, aHttpRealm, logins) ###
   
@@ -146,6 +261,52 @@ NOTE: This can be called from JS as:
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property, and supply an dummy object for  
+       this out param. For example: |findLogins({}, hostname, ...)|  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property, and supply an dummy object for  
+       this out param. For example: |findLogins({}, hostname, ...)|  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property, and supply an dummy object for  
+       this out param. For example: |findLogins({}, hostname, ...)|  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property, and supply an dummy object for  
+       this out param. For example: |findLogins({}, hostname, ...)|  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property, and supply an dummy object for  
+       this out param. For example: |findLogins({}, hostname, ...)|  
+</td>
+</tr>
+
+</table>
+
 ### countLogins(aHostname, aActionURL, aHttpRealm) ###
   
 Search for logins matching the specified criteria, as with  
@@ -168,6 +329,36 @@ password to decrypt the logins.
        realm, specify null.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHostname</td>
+<td>       The hostname to restrict searches to. Specify an empty string  
+       to match all hosts. A null value will not match any logins, and  
+       will thus always return a count of 0.  
+</td>
+</tr>
+
+<tr>
+<td>aHostname</td>
+<td>       The hostname to restrict searches to. Specify an empty string  
+       to match all hosts. A null value will not match any logins, and  
+       will thus always return a count of 0.  
+</td>
+</tr>
+
+<tr>
+<td>aHostname</td>
+<td>       The hostname to restrict searches to. Specify an empty string  
+       to match all hosts. A null value will not match any logins, and  
+       will thus always return a count of 0.  
+</td>
+</tr>
+
+</table>
+
 ### autoCompleteSearchAsync(aSearchString, aPreviousResult, aElement, aListener) ###
   
 Generate results for a userfield autocomplete menu.  
@@ -186,6 +377,18 @@ aForm regardless of the signon.autofillForms preference.
        The form to fill  
 @return Promise that is resolved with whether or not the form was filled.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aForm</td>
+<td>       The form to fill  
+</td>
+</tr>
+
+</table>
 
 ### searchLogins(count, matchData, logins) ###
   
@@ -207,6 +410,36 @@ NOTE: This can be called from JS as:
       var logins = pwmgr.searchLogins({}, matchData);  
       (|logins| is an array).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property, and supply an dummy object for  
+       this out param. For example: |searchLogins({}, matchData)|  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property, and supply an dummy object for  
+       this out param. For example: |searchLogins({}, matchData)|  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>       The number of elements in the array. JS callers can simply use  
+       the array's .length property, and supply an dummy object for  
+       this out param. For example: |searchLogins({}, matchData)|  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

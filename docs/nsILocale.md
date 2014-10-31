@@ -31,3 +31,15 @@ NSILOCALE_MESSAGES: Related to fonts, character encodings etc.
        The category of interest.  
 @return The locale code to be used for the given category.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>category</td>
+<td>       The category of interest.  
+</td>
+</tr>
+
+</table>

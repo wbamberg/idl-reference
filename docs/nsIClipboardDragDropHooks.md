@@ -46,6 +46,18 @@ Prevents the drag from starting
 @return FALSE drag is cancelled, does not go to OS  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>event</td>
+<td>DOM event (drag gesture)  
+</td>
+</tr>
+
+</table>
+
 ### allowDrop(event, session) ###
   
 Tells gecko whether a drop is allowed on this content area  
@@ -59,6 +71,24 @@ Tells gecko whether a drop is allowed on this content area
 @return FALSE indicates to OS drop is not allowed. On win32, this  
                will change the cursor to "reject".  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>event</td>
+<td>DOM event (drag over)  
+</td>
+</tr>
+
+<tr>
+<td>event</td>
+<td>DOM event (drag over)  
+</td>
+</tr>
+
+</table>
 
 ### onCopyOrDrag(aEvent, trans) ###
   
@@ -76,6 +106,24 @@ not negatively impacted.
 @return FALSE copy/drag is cancelled, does not go to OS  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>event</td>
+<td>DOM event (drag drop); null if triggered by copy.  
+</td>
+</tr>
+
+<tr>
+<td>event</td>
+<td>DOM event (drag drop); null if triggered by copy.  
+</td>
+</tr>
+
+</table>
+
 ### onPasteOrDrop(event, trans) ###
   
 Provide an alternative action to the built-in behavior when  
@@ -89,3 +137,21 @@ something is dropped on the browser or in an editor
                behavior  
 @return FALSE action was not overridden, do built-in behavior  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>event</td>
+<td>DOM event (drag drop); null if triggered by paste.  
+</td>
+</tr>
+
+<tr>
+<td>event</td>
+<td>DOM event (drag drop); null if triggered by paste.  
+</td>
+</tr>
+
+</table>

@@ -28,6 +28,24 @@ This method is called when a client connection is accepted.
        The connected socket transport.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aServ</td>
+<td>       The server socket.  
+</td>
+</tr>
+
+<tr>
+<td>aServ</td>
+<td>       The server socket.  
+</td>
+</tr>
+
+</table>
+
 ### onStopListening(aServ, aStatus) ###
   
 onStopListening  
@@ -42,3 +60,21 @@ The server socket is effectively dead after this notification.
        server socket was manually closed, then this value will be  
        NS_BINDING_ABORTED.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aServ</td>
+<td>       The server socket.  
+</td>
+</tr>
+
+<tr>
+<td>aServ</td>
+<td>       The server socket.  
+</td>
+</tr>
+
+</table>

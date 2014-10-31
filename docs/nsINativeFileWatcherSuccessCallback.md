@@ -15,3 +15,15 @@ successfully completes.
 @param resourcePath  
        The path of the resource for which the operation completes.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>resourcePath</td>
+<td>       The path of the resource for which the operation completes.  
+</td>
+</tr>
+
+</table>

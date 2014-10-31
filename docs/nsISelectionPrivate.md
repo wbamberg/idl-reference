@@ -60,6 +60,44 @@ the scrolled view.
 @param aHPercent - how to align the frame horizontally.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRegion</td>
+<td>- the region inside the selection to scroll into view  
+                 (see selection region constants defined in  
+                  nsISelectionController).  
+</td>
+</tr>
+
+<tr>
+<td>aRegion</td>
+<td>- the region inside the selection to scroll into view  
+                 (see selection region constants defined in  
+                  nsISelectionController).  
+</td>
+</tr>
+
+<tr>
+<td>aRegion</td>
+<td>- the region inside the selection to scroll into view  
+                 (see selection region constants defined in  
+                  nsISelectionController).  
+</td>
+</tr>
+
+<tr>
+<td>aRegion</td>
+<td>- the region inside the selection to scroll into view  
+                 (see selection region constants defined in  
+                  nsISelectionController).  
+</td>
+</tr>
+
+</table>
+
 ### scrollIntoViewInternal(aRegion, aIsSynchronous, aVertical, aHorizontal) ###
   
 Scrolls a region of the selection, so that it is visible in  
@@ -77,12 +115,63 @@ the scrolled view.
                    See nsIPresShell.h:ScrollAxis for details.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRegion</td>
+<td>- the region inside the selection to scroll into view  
+                 (see selection region constants defined in  
+                  nsISelectionController).  
+</td>
+</tr>
+
+<tr>
+<td>aRegion</td>
+<td>- the region inside the selection to scroll into view  
+                 (see selection region constants defined in  
+                  nsISelectionController).  
+</td>
+</tr>
+
+<tr>
+<td>aRegion</td>
+<td>- the region inside the selection to scroll into view  
+                 (see selection region constants defined in  
+                  nsISelectionController).  
+</td>
+</tr>
+
+<tr>
+<td>aRegion</td>
+<td>- the region inside the selection to scroll into view  
+                 (see selection region constants defined in  
+                  nsISelectionController).  
+</td>
+</tr>
+
+</table>
+
 ### selectionLanguageChange(langRTL) ###
   
 Modifies the cursor Bidi level after a change in keyboard direction  
 @param langRTL is PR_TRUE if the new language is right-to-left or  
                PR_FALSE if the new language is left-to-right.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>langRTL</td>
+<td>is PR_TRUE if the new language is right-to-left or  
+               PR_FALSE if the new language is left-to-right.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

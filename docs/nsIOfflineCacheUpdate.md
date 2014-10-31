@@ -26,6 +26,24 @@ Initialize the update.
        The page that is requesting the update.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManifestURI</td>
+<td>       The manifest URI to be checked.  
+</td>
+</tr>
+
+<tr>
+<td>aManifestURI</td>
+<td>       The manifest URI to be checked.  
+</td>
+</tr>
+
+</table>
+
 ### initPartial(aManifestURI, aClientID, aDocumentURI) ###
   
 Initialize the update for partial processing.   
@@ -40,6 +58,30 @@ Initialize the update for partial processing.
        The page that is requesting the update. May be null   
        when this information is unknown.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManifestURI</td>
+<td>       The manifest URI of the related cache.  
+</td>
+</tr>
+
+<tr>
+<td>aManifestURI</td>
+<td>       The manifest URI of the related cache.  
+</td>
+</tr>
+
+<tr>
+<td>aManifestURI</td>
+<td>       The manifest URI of the related cache.  
+</td>
+</tr>
+
+</table>
 
 ### initForUpdateCheck(aManifestURI, aAppID, aInBrowser, aObserver) ###
   
@@ -61,6 +103,36 @@ to the manifest available (if it has actually changed on the server).
        update available (the manifest has not changed on the server).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aManifestURI</td>
+<td>       The manifest URI of the related cache.  
+</td>
+</tr>
+
+<tr>
+<td>aManifestURI</td>
+<td>       The manifest URI of the related cache.  
+</td>
+</tr>
+
+<tr>
+<td>aManifestURI</td>
+<td>       The manifest URI of the related cache.  
+</td>
+</tr>
+
+<tr>
+<td>aManifestURI</td>
+<td>       The manifest URI of the related cache.  
+</td>
+</tr>
+
+</table>
+
 ### addDynamicURI(aURI) ###
   
 Add a dynamic URI to the offline cache as part of the update.  
@@ -68,6 +140,18 @@ Add a dynamic URI to the offline cache as part of the update.
 @param aURI  
        The URI to add.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to add.  
+</td>
+</tr>
+
+</table>
 
 ### schedule() ###
   
@@ -86,6 +170,24 @@ Observe loads that are added to the update.
        observer, FALSE for a strong reference.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>       object that notifications will be sent to.  
+</td>
+</tr>
+
+<tr>
+<td>aObserver</td>
+<td>       object that notifications will be sent to.  
+</td>
+</tr>
+
+</table>
+
 ### removeObserver(aObserver) ###
   
 Remove an observer from the update.  
@@ -93,6 +195,18 @@ Remove an observer from the update.
 @param aObserver  
        the observer to remove.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>       the observer to remove.  
+</td>
+</tr>
+
+</table>
 
 ### cancel() ###
   

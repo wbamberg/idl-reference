@@ -18,6 +18,18 @@ after initListBuild is called, lists should be built in single-shot fasion.
 @returns true if the operation completed successfully.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>removedItems</td>
+<td>       A list of items that were removed by the user since the last commit.  
+</td>
+</tr>
+
+</table>
+
 ### addListToBuild(aCatType, items, catName) ###
   
 Adds a list and if required, a set of items for the list.  
@@ -37,6 +49,30 @@ a particular category or item type.
 since the last commit.  
 @throw NS_ERROR_UNEXPECTED on internal errors.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCatType</td>
+<td>       The type of list to add.  
+</td>
+</tr>
+
+<tr>
+<td>aCatType</td>
+<td>       The type of list to add.  
+</td>
+</tr>
+
+<tr>
+<td>aCatType</td>
+<td>       The type of list to add.  
+</td>
+</tr>
+
+</table>
 
 ### abortListBuild() ###
   

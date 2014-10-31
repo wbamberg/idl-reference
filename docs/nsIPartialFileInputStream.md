@@ -30,3 +30,45 @@ can be used.
 @param behaviorFlags flags specifying various behaviors of the class  
        (see enumerations in nsIFileInputStream)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>file</td>
+<td>file to read from  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from  
+</td>
+</tr>
+
+</table>

@@ -28,6 +28,18 @@ in either the nsIHandlerService datastore or registered with the OS.
 XXX shouldn't aProtocolScheme be an ACString like nsIURI::scheme?  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aProtocolScheme</td>
+<td>The scheme from a url: http, ftp, mailto, etc.  
+</td>
+</tr>
+
+</table>
+
 ### isExposedProtocol(aProtocolScheme) ###
   
 Check whether a handler for a specific protocol is "exposed" as a visible  
@@ -56,6 +68,18 @@ of the URI syntax, not part of the scheme itself (i.e. pass "mailto" not
 @return the handler, if any; otherwise a default handler  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aProtocolScheme</td>
+<td>the scheme from a URL: http, ftp, mailto, etc.  
+</td>
+</tr>
+
+</table>
+
 ### getProtocolHandlerInfoFromOS(aProtocolScheme, aFound) ###
   
 Given a scheme, looks up the protocol info from the OS.  This should be  
@@ -65,6 +89,24 @@ overridden by each OS's implementation.
 @param aFound  Was an OS default handler for this scheme found?  
 @return An nsIHanderInfo for the protocol.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aScheme</td>
+<td>The protocol scheme we are looking for.  
+</td>
+</tr>
+
+<tr>
+<td>aScheme</td>
+<td>The protocol scheme we are looking for.  
+</td>
+</tr>
+
+</table>
 
 ### setProtocolHandlerDefaults(aHandlerInfo, aOSHandlerExists) ###
    
@@ -78,6 +120,26 @@ Set some sane defaults for a protocol handler object.
                          getProtocolHandlerInfoFromOS.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHandlerInfo</td>
+<td>nsIHandlerInfo object, as returned by   
+                         getProtocolHandlerInfoFromOS  
+</td>
+</tr>
+
+<tr>
+<td>aHandlerInfo</td>
+<td>nsIHandlerInfo object, as returned by   
+                         getProtocolHandlerInfoFromOS  
+</td>
+</tr>
+
+</table>
+
 ### loadUrl(aURL) ###
   
 Used to load a url via an external protocol handler (if one exists)  
@@ -86,6 +148,18 @@ Used to load a url via an external protocol handler (if one exists)
   
 @deprecated Use LoadURI instead (See Bug 389565 for removal)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURL</td>
+<td>The url to load  
+</td>
+</tr>
+
+</table>
 
 ### loadURI(aURI, aWindowContext) ###
   
@@ -108,6 +182,24 @@ permission to load the external application.
        (bug 394479).    
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to load  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to load  
+</td>
+</tr>
+
+</table>
+
 ### getApplicationDescription(aScheme) ###
   
 Gets a human-readable description for the application responsible for  
@@ -121,3 +213,15 @@ handling a specific protocol.
        If no protocol helper exists for this scheme, or if it is not  
        possible to get a description for it.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aScheme</td>
+<td>The scheme to look up. For example, "mms".  
+</td>
+</tr>
+
+</table>

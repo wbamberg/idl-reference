@@ -32,3 +32,15 @@ the provided nsID pointer instead of allocating a new nsID.
 @throws NS_ERROR_FAILURE if a UUID cannot be generated (e.g. if  
 an underlying source of randomness is not available)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>id</td>
+<td>an existing nsID pointer where the UUID will be stored.  
+</td>
+</tr>
+
+</table>

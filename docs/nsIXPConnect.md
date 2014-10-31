@@ -24,6 +24,42 @@ classes when asked by the JS engine.
 @param aOptions JSAPI-specific options for the new compartment.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aJSContext</td>
+<td>the context to use while creating the global object.  
+</td>
+</tr>
+
+<tr>
+<td>aJSContext</td>
+<td>the context to use while creating the global object.  
+</td>
+</tr>
+
+<tr>
+<td>aJSContext</td>
+<td>the context to use while creating the global object.  
+</td>
+</tr>
+
+<tr>
+<td>aJSContext</td>
+<td>the context to use while creating the global object.  
+</td>
+</tr>
+
+<tr>
+<td>aJSContext</td>
+<td>the context to use while creating the global object.  
+</td>
+</tr>
+
+</table>
+
 ### wrapNative(aJSContext, aScope, aCOMObj, aIID) ###
   
 wrapNative will create a new JSObject or return an existing one.  
@@ -167,6 +203,24 @@ evalInSandboxObject().
                  to use when evaluating code in this sandbox.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>cx</td>
+<td>A context to use when creating the sandbox object.  
+</td>
+</tr>
+
+<tr>
+<td>cx</td>
+<td>A context to use when creating the sandbox object.  
+</td>
+</tr>
+
+</table>
+
 ### evalInSandboxObject(source, filename, cx, sandbox) ###
   
 Evaluate script in a sandbox, completely isolated from all  
@@ -183,6 +237,36 @@ other running scripts.
         is responsible for rooting the jsval before making a call  
         to this method.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>source</td>
+<td>The source of the script to evaluate.  
+</td>
+</tr>
+
+<tr>
+<td>source</td>
+<td>The source of the script to evaluate.  
+</td>
+</tr>
+
+<tr>
+<td>source</td>
+<td>The source of the script to evaluate.  
+</td>
+</tr>
+
+<tr>
+<td>source</td>
+<td>The source of the script to evaluate.  
+</td>
+</tr>
+
+</table>
 
 ### setReportAllJSExceptions(reportAllJSExceptions) ###
   

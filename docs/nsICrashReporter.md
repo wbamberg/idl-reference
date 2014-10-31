@@ -33,6 +33,24 @@ Add some extra data to be submitted with a crash report.
                             '\n'.  Invalid character for data is '\0'.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>key</td>
+<td>       Name of the data to be added.  
+</td>
+</tr>
+
+<tr>
+<td>key</td>
+<td>       Name of the data to be added.  
+</td>
+</tr>
+
+</table>
+
 ### appendAppNotesToCrashReport(data) ###
   
 Append some data to the "Notes" field, to be submitted with a crash report.  
@@ -45,6 +63,18 @@ Unlike annotateCrashReport, this method will append to existing data.
 @throw NS_ERROR_INVALID_ARG if data contains invalid characters.  
                             The only invalid character is '\0'.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>data</td>
+<td>       Data to be added.  
+</td>
+</tr>
+
+</table>
 
 ### registerAppMemory(ptr, size) ###
   
@@ -59,6 +89,24 @@ Register a given memory range to be included in the crash report.
 @throw NS_ERROR_NOT_IMPLEMENTED if unavailable on the current OS  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>ptr</td>
+<td>       The starting address for the bytes.  
+</td>
+</tr>
+
+<tr>
+<td>ptr</td>
+<td>       The starting address for the bytes.  
+</td>
+</tr>
+
+</table>
+
 ### writeMinidumpForException(aExceptionInfo) ###
   
 Write a minidump immediately, with the user-supplied exception  
@@ -68,12 +116,36 @@ SEH (structured exception handling) exists on Windows only.
 @param aExceptionInfo  EXCEPTION_INFO* provided by Window's SEH  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aExceptionInfo</td>
+<td>EXCEPTION_INFO* provided by Window's SEH  
+</td>
+</tr>
+
+</table>
+
 ### appendObjCExceptionInfoToAppNotes(aException) ###
   
 Append note containing an Obj-C exception's info.  
   
 @param aException  NSException object to append note for  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aException</td>
+<td>NSException object to append note for  
+</td>
+</tr>
+
+</table>
 
 ### UpdateCrashEventsDir() ###
   

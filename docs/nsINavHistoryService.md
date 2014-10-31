@@ -29,6 +29,18 @@ Designates the url as having been explicitly typed in by the user.
        URI of the page to be marked.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       URI of the page to be marked.  
+</td>
+</tr>
+
+</table>
+
 ### markPageAsFollowedLink(aURI) ###
   
 Designates the url as coming from a link explicitly followed by  
@@ -37,6 +49,18 @@ the user (for example by clicking on it).
 @param aURI  
        URI of the page to be marked.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       URI of the page to be marked.  
+</td>
+</tr>
+
+</table>
 
 ### canAddURI(aURI) ###
   
@@ -109,6 +133,24 @@ notified when all batches begin/end.
 @param aUserData  
        Opaque parameter passed to nsINavBookmarksBatchCallback  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCallback</td>
+<td>       nsINavHistoryBatchCallback interface to call.  
+</td>
+</tr>
+
+<tr>
+<td>aCallback</td>
+<td>       nsINavHistoryBatchCallback interface to call.  
+</td>
+</tr>
+
+</table>
 
 ### clearEmbedVisits() ###
   

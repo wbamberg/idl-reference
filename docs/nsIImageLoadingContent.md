@@ -43,12 +43,36 @@ current and pending, will be passed through.
 @throws NS_ERROR_OUT_OF_MEMORY  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>the observer to register  
+</td>
+</tr>
+
+</table>
+
 ### removeObserver(aObserver) ###
   
 Used to unregister an image decoder observer.  
   
 @param aObserver the observer to unregister  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>the observer to unregister  
+</td>
+</tr>
+
+</table>
 
 ### getRequest(aRequestType) ###
   
@@ -62,6 +86,18 @@ is thrown)
 @throws NS_ERROR_UNEXPECTED if the request type requested is not  
 known  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequestType</td>
+<td>a value saying which request is wanted  
+</td>
+</tr>
+
+</table>
 
 ### frameCreated(aFrame) ###
   
@@ -88,6 +124,18 @@ interface of an observer)
 @throws NS_ERROR_UNEXPECTED if aRequest is not known  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>the request whose type we want to know  
+</td>
+</tr>
+
+</table>
+
 ### loadImageWithChannel(aChannel) ###
   
 loadImageWithChannel allows data from an existing channel to be  
@@ -102,6 +150,18 @@ used as the image data for this content node.
 @throws NS_ERROR_NULL_POINTER if aChannel is null  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChannel</td>
+<td>the channel that will deliver the data  
+</td>
+</tr>
+
+</table>
+
 ### forceReload(aNotify) ###
   
 forceReload forces reloading of the image pointed to by currentURI  
@@ -109,6 +169,19 @@ forceReload forces reloading of the image pointed to by currentURI
 @param aNotify [optional] request should notify, defaults to true  
 @throws NS_ERROR_NOT_AVAILABLE if there is no current URI to reload  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNotify</td>
+<td>[optional] request should notify, defaults to true  
+@throws NS_ERROR_NOT_AVAILABLE if there is no current URI to reload  
+</td>
+</tr>
+
+</table>
 
 ### forceImageState(aForce, aState) ###
   

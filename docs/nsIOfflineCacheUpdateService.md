@@ -54,6 +54,24 @@ cache.
        the pref service will be used.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrincipal</td>
+<td>       The principal to check.  
+</td>
+</tr>
+
+<tr>
+<td>aPrincipal</td>
+<td>       The principal to check.  
+</td>
+</tr>
+
+</table>
+
 ### offlineAppAllowedForURI(aURI, aPrefBranch) ###
   
 Checks whether a document at the given URI should have access  
@@ -65,6 +83,24 @@ to the offline cache.
        offline-apps.allow_by_default pref.  If not specified,  
        the pref service will be used.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to check  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to check  
+</td>
+</tr>
+
+</table>
 
 ### allowOfflineApp(aWindow, aPrincipal) ###
   

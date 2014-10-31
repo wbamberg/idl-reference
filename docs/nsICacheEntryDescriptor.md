@@ -32,6 +32,19 @@ stream MAY implement nsISeekableStream.
 @return blocking, unbuffered input stream.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>offset</td>
+<td>       read starting from this offset into the cached data.  an offset  
+       beyond the end of the stream has undefined consequences.  
+</td>
+</tr>
+
+</table>
+
 ### openOutputStream(offset) ###
   
 Open blocking output stream to cache data.  This will fail if the cache  
@@ -48,6 +61,19 @@ truncated to the specified offset.
   
 @return blocking, unbuffered output stream.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>offset</td>
+<td>       write starting from this offset into the cached data.  an offset  
+       beyond the end of the stream has undefined consequences.  
+</td>
+</tr>
+
+</table>
 
 ### doom() ###
   

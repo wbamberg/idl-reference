@@ -20,6 +20,24 @@ An exception thrown from onStartRequest has the side-effect of
 causing the request to be canceled.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>request being observed  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>request being observed  
+</td>
+</tr>
+
+</table>
+
 ### onStopRequest(aRequest, aContext, aStatusCode) ###
   
 Called to signify the end of an asynchronous request.  This  
@@ -31,3 +49,27 @@ call is always preceded by a call to onStartRequest.
   
 An exception thrown from onStopRequest is generally ignored.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>request being observed  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>request being observed  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>request being observed  
+</td>
+</tr>
+
+</table>

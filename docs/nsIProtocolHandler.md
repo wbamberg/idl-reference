@@ -36,6 +36,36 @@ server.)
                         URI aBaseURI will simply be ignored.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSpec</td>
+<td>- the URI string in UTF-8 encoding. depending  
+                        on the protocol implementation, unicode character  
+                        sequences may or may not be %xx escaped.  
+</td>
+</tr>
+
+<tr>
+<td>aSpec</td>
+<td>- the URI string in UTF-8 encoding. depending  
+                        on the protocol implementation, unicode character  
+                        sequences may or may not be %xx escaped.  
+</td>
+</tr>
+
+<tr>
+<td>aSpec</td>
+<td>- the URI string in UTF-8 encoding. depending  
+                        on the protocol implementation, unicode character  
+                        sequences may or may not be %xx escaped.  
+</td>
+</tr>
+
+</table>
+
 ### newChannel2(aURI, aLoadinfo) ###
   
 Constructs a new channel from the given URI for this protocol handler and  

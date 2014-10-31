@@ -31,3 +31,30 @@ and proxy object (or list of proxy objects).
         connection should be used.  Use aProxyService.newProxyInfo to  
         construct nsIProxyInfo objects.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aProxyService</td>
+<td>       A reference to the Protocol Proxy Service.  This is passed so that  
+       implementations may easily access methods such as newProxyInfo.  
+</td>
+</tr>
+
+<tr>
+<td>aProxyService</td>
+<td>       A reference to the Protocol Proxy Service.  This is passed so that  
+       implementations may easily access methods such as newProxyInfo.  
+</td>
+</tr>
+
+<tr>
+<td>aProxyService</td>
+<td>       A reference to the Protocol Proxy Service.  This is passed so that  
+       implementations may easily access methods such as newProxyInfo.  
+</td>
+</tr>
+
+</table>

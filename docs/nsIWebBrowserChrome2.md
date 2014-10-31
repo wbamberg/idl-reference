@@ -25,3 +25,27 @@ implementor of this method, should still implement SetStatus.
        node corresponding to the source of the link.  This value can  
        be null if there is no context.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>statusType</td>
+<td>       Indicates what is setting the text.  
+</td>
+</tr>
+
+<tr>
+<td>statusType</td>
+<td>       Indicates what is setting the text.  
+</td>
+</tr>
+
+<tr>
+<td>statusType</td>
+<td>       Indicates what is setting the text.  
+</td>
+</tr>
+
+</table>

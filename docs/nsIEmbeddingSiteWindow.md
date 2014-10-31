@@ -37,6 +37,42 @@ surrounding chrome, window frame, title bar, and so on.
 @see DIM_FLAGS_SIZE_INNER  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>flags</td>
+<td>Combination of position, inner and outer size flags.  
+</td>
+</tr>
+
+<tr>
+<td>flags</td>
+<td>Combination of position, inner and outer size flags.  
+</td>
+</tr>
+
+<tr>
+<td>flags</td>
+<td>Combination of position, inner and outer size flags.  
+</td>
+</tr>
+
+<tr>
+<td>flags</td>
+<td>Combination of position, inner and outer size flags.  
+</td>
+</tr>
+
+<tr>
+<td>flags</td>
+<td>Combination of position, inner and outer size flags.  
+</td>
+</tr>
+
+</table>
+
 ### getDimensions(flags, x, y, cx, cy) ###
   
 Gets the dimensions of the window. The caller may pass  
@@ -53,6 +89,42 @@ Gets the dimensions of the window. The caller may pass
 @see DIM_FLAGS_SIZE_OUTER  
 @see DIM_FLAGS_SIZE_INNER  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>flags</td>
+<td>Combination of position, inner and outer size flag .  
+</td>
+</tr>
+
+<tr>
+<td>flags</td>
+<td>Combination of position, inner and outer size flag .  
+</td>
+</tr>
+
+<tr>
+<td>flags</td>
+<td>Combination of position, inner and outer size flag .  
+</td>
+</tr>
+
+<tr>
+<td>flags</td>
+<td>Combination of position, inner and outer size flag .  
+</td>
+</tr>
+
+<tr>
+<td>flags</td>
+<td>Combination of position, inner and outer size flag .  
+</td>
+</tr>
+
+</table>
 
 ### setFocus() ###
   

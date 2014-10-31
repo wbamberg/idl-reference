@@ -26,6 +26,26 @@ passed to each method.
                  The contents of this cookie are implementation-defined.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command for which we want the enabled  
+                     state.  
+</td>
+</tr>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command for which we want the enabled  
+                     state.  
+</td>
+</tr>
+
+</table>
+
 ### getCommandStateParams(aCommandName, aParams, aCommandContext) ###
 
 ### doCommand(aCommandName, aCommandContext) ###
@@ -38,5 +58,23 @@ Execute the name command.
                  allowing the command to get some context information.  
                  The contents of this cookie are implementation-defined.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to execute.  
+</td>
+</tr>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to execute.  
+</td>
+</tr>
+
+</table>
 
 ### doCommandParams(aCommandName, aParams, aCommandContext) ###

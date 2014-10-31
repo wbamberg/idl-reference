@@ -16,6 +16,18 @@ any given asynchronous statement.
        The result set containing the data from the database.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aResultSet</td>
+<td>       The result set containing the data from the database.  
+</td>
+</tr>
+
+</table>
+
 ### handleError(aError) ###
   
 Called when some error occurs while executing the statement.  This function  
@@ -25,6 +37,18 @@ any given asynchronous statement.
 @param aError  
        An object containing information about the error.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aError</td>
+<td>       An object containing information about the error.  
+</td>
+</tr>
+
+</table>
 
 ### handleCompletion(aReason) ###
 

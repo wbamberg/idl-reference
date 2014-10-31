@@ -13,6 +13,18 @@ Test whether a website has permission to show a popup window.
 @return  one of the enumerated permission actions defined above  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>principal is the principal to be tested  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### ALLOW_POPUP ###

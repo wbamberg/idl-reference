@@ -15,3 +15,21 @@ stream so that fewer accesses to the underlying stream are necessary.
 @param fillFromStream - add buffering to this stream  
 @param bufferSize     - specifies the maximum buffer size  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>fillFromStream</td>
+<td>- add buffering to this stream  
+</td>
+</tr>
+
+<tr>
+<td>fillFromStream</td>
+<td>- add buffering to this stream  
+</td>
+</tr>
+
+</table>

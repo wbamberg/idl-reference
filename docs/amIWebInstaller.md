@@ -20,6 +20,26 @@ Checks if installation is enabled for a webpage.
 @return true if installation is enabled  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-on to be installed  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-on to be installed  
+</td>
+</tr>
+
+</table>
+
 ### installAddonsFromWebpage(aMimetype, aOriginator, aReferer, aUris, aHashes, aNames, aIcons, aCallback, aInstallCount) ###
   
 Installs an array of add-ons at the request of a webpage  
@@ -46,3 +66,72 @@ Installs an array of add-ons at the request of a webpage
         An optional argument including the number of add-ons to install  
 @return true if the installation was successfully started  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-ons  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-ons  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-ons  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-ons  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-ons  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-ons  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-ons  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-ons  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aMimetype  
+        The mimetype for the add-ons  
+</td>
+</tr>
+
+</table>

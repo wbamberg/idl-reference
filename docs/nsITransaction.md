@@ -39,6 +39,18 @@ pushing it on the undo stack.
 @param aTransaction the previously executed transaction to merge.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTransaction</td>
+<td>the previously executed transaction to merge.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### isTransient ###

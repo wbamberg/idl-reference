@@ -20,6 +20,19 @@ parse, flush, or watch.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>window</td>
+<td>The window that the parser will use to create VTTCues and  
+              VTTRegions.  
+</td>
+</tr>
+
+</table>
+
 ### parse(data) ###
   
 Attempts to parse the stream's data as WebVTT format. When it successfully  
@@ -29,6 +42,19 @@ object and pass it back to the callee through its callbacks.
 @param data   The buffer that contains the WebVTT data received by the  
               Necko consumer so far.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>data</td>
+<td>The buffer that contains the WebVTT data received by the  
+              Necko consumer so far.  
+</td>
+</tr>
+
+</table>
 
 ### flush() ###
   
@@ -45,6 +71,19 @@ and onRegion callbacks.
                 onRegion callbacks for the parser.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>callback</td>
+<td>The nsIWebVTTListener object that exposes onCue and  
+                onRegion callbacks for the parser.  
+</td>
+</tr>
+
+</table>
+
 ### convertCueToDOMTree(window, cue) ###
   
 Convert the text content of a WebVTT cue to a document fragment so that  
@@ -55,6 +94,26 @@ we can display it on the page.
 @param cue    The cue whose content will be converted to a document  
               fragment.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>window</td>
+<td>A window object with which the document fragment will be  
+              created.  
+</td>
+</tr>
+
+<tr>
+<td>window</td>
+<td>A window object with which the document fragment will be  
+              created.  
+</td>
+</tr>
+
+</table>
 
 ### processCues(window, cues, overlay) ###
   
@@ -71,3 +130,30 @@ computed divs to the VTTCues display state property for use later.
                computed.  
 @param overlay The HTMLElement that the cues will be displayed within.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>window</td>
+<td>A window object with which it will create the DOM tree  
+               and containing div element.  
+</td>
+</tr>
+
+<tr>
+<td>window</td>
+<td>A window object with which it will create the DOM tree  
+               and containing div element.  
+</td>
+</tr>
+
+<tr>
+<td>window</td>
+<td>A window object with which it will create the DOM tree  
+               and containing div element.  
+</td>
+</tr>
+
+</table>

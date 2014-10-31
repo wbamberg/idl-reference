@@ -20,3 +20,27 @@ SetData - assign an ArrayBuffer to the input stream.
 @param byteOffset - stream data offset  
 @param byteLen - stream data length  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>buffer</td>
+<td>- stream data  
+</td>
+</tr>
+
+<tr>
+<td>buffer</td>
+<td>- stream data  
+</td>
+</tr>
+
+<tr>
+<td>buffer</td>
+<td>- stream data  
+</td>
+</tr>
+
+</table>

@@ -40,6 +40,36 @@ Register a factory with a given ContractID, CID and Class Name.
                      with a previously registered CID.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aClass</td>
+<td>: CID of object  
+</td>
+</tr>
+
+<tr>
+<td>aClass</td>
+<td>: CID of object  
+</td>
+</tr>
+
+<tr>
+<td>aClass</td>
+<td>: CID of object  
+</td>
+</tr>
+
+<tr>
+<td>aClass</td>
+<td>: CID of object  
+</td>
+</tr>
+
+</table>
+
 ### unregisterFactory(aClass, aFactory) ###
   
 unregisterFactory  
@@ -52,6 +82,24 @@ Unregister a factory associated with CID aClass.
   
 @throws NS_ERROR* Method failure.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aClass</td>
+<td>: CID being unregistered  
+</td>
+</tr>
+
+<tr>
+<td>aClass</td>
+<td>: CID being unregistered  
+</td>
+</tr>
+
+</table>
 
 ### registerFactoryLocation(aClass, aClassName, aContractID, aFile, aLoaderStr, aType) ###
   
@@ -80,6 +128,18 @@ Returns true if a factory is registered for the CID.
                 false otherwise.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aClass</td>
+<td>: CID queried for registeration  
+</td>
+</tr>
+
+</table>
+
 ### isContractIDRegistered(aContractID) ###
   
 isContractIDRegistered  
@@ -90,6 +150,18 @@ Returns true if a factory is registered for the contract id.
 @return       : true if a factory is registered for contract id   
                 false otherwise.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aClass</td>
+<td>: contract id queried for registeration  
+</td>
+</tr>
+
+</table>
 
 ### enumerateCIDs() ###
   

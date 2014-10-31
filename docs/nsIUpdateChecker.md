@@ -24,12 +24,47 @@ Checks for available updates, notifying a listener of the results.
          the app.update.enabled preference.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>listener  
+         An object implementing nsIUpdateCheckListener which is notified  
+         of the results of an update check.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>listener  
+         An object implementing nsIUpdateCheckListener which is notified  
+         of the results of an update check.  
+</td>
+</tr>
+
+</table>
+
 ### stopChecking(duration) ###
   
 Ends any pending update check.  
 @param   duration  
          A value representing the set of checks to stop doing.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>duration  
+         A value representing the set of checks to stop doing.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

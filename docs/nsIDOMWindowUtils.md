@@ -21,6 +21,18 @@ Function to get metadata associated with the window's current document
 Will throw a DOM security error if called without chrome privileges.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>the name of the metadata.  This should be all lowercase.  
+</td>
+</tr>
+
+</table>
+
 ### redraw(aCount) ###
   
 Force an immediate redraw of this window.  The parameter specifies  
@@ -173,6 +185,72 @@ window at all.
 returns true if the page called prevent default on this event  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+</table>
+
 ### sendPointerEvent(aType, aX, aY, aButton, aClickCount, aModifiers, aIgnoreRootScrollFrame, aPressure, aInputSourceArg, aPointerId, aWidth, aHeight, aTiltX, aTiltY, aIsPrimary, aIsSynthesized) ###
  Synthesize a pointer event. The event types supported are:  
    pointerdown, pointerup, pointermove, pointerover, pointerout  
@@ -221,6 +299,108 @@ window at all.
 returns true if the page called prevent default on this event  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+</table>
+
 ### sendTouchEvent(aType, aIdentifiers, aXs, aYs, aRxs, aRys, aRotationAngles, aForces, count, aModifiers, aIgnoreRootScrollFrame) ###
  Synthesize a touch event. The event types supported are:  
    touchstart, touchend, touchmove, and touchcancel  
@@ -248,6 +428,72 @@ window at all.
   
 returns true if the page called prevent default on this touch event  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+</table>
 
 ### sendMouseEventToWindow(aType, aX, aY, aButton, aClickCount, aModifiers, aIgnoreRootScrollFrame, aPressure, aInputSourceArg, aIsSynthesized) ###
  The same as sendMouseEvent but ensures that the event is dispatched to  
@@ -302,6 +548,19 @@ NOTE: The synthesized native event may be fired asynchronously.
                WM_VSCROLL (0x0115) or WM_HSCROLL (0x114).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNativeMessage</td>
+<td>  On Windows:  WM_MOUSEWHEEL (0x020A), WM_MOUSEHWHEEL(0x020E),  
+               WM_VSCROLL (0x0115) or WM_HSCROLL (0x114).  
+</td>
+</tr>
+
+</table>
+
 ### sendNativeTouchPoint(aPointerId, aTouchState, aScreenX, aScreenY, aPressure, aOrientation) ###
   
 Create a new or update an existing touch point on the digitizer.  
@@ -323,6 +582,42 @@ throw.
 orientation of the pointer. Use 90 for normal taps.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPointerId</td>
+<td>The touch point id to create or update.  
+</td>
+</tr>
+
+<tr>
+<td>aPointerId</td>
+<td>The touch point id to create or update.  
+</td>
+</tr>
+
+<tr>
+<td>aPointerId</td>
+<td>The touch point id to create or update.  
+</td>
+</tr>
+
+<tr>
+<td>aPointerId</td>
+<td>The touch point id to create or update.  
+</td>
+</tr>
+
+<tr>
+<td>aPointerId</td>
+<td>The touch point id to create or update.  
+</td>
+</tr>
+
+</table>
+
 ### sendNativeTouchTap(aScreenX, aScreenY, aLongTap) ###
   
 Simulates native touch based taps on the input digitizer. Events  
@@ -343,6 +638,24 @@ throw.
 @param aLongTap true if the tap should be long, false for a short  
 tap.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aScreenX,</td>
+<td>aScreenY screen coords of this event  
+</td>
+</tr>
+
+<tr>
+<td>aScreenX,</td>
+<td>aScreenY screen coords of this event  
+</td>
+</tr>
+
+</table>
 
 ### clearNativeTouchSequence() ###
   
@@ -385,6 +698,18 @@ nsIFocusManager::SetFocus instead.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElement</td>
+<td>the element to focus  
+</td>
+</tr>
+
+</table>
+
 ### garbageCollect(aListener, aExtraForgetSkippableCalls) ###
   
 Force a garbage collection followed by a cycle collection.  
@@ -403,6 +728,28 @@ non-debug builds. Available to all callers in debug builds.
                                   which happens after garbage collection.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>listener that receives information about the CC graph  
+                 (see @mozilla.org/cycle-collector-logger;1 for a logger  
+                  component)  
+</td>
+</tr>
+
+<tr>
+<td>aListener</td>
+<td>listener that receives information about the CC graph  
+                 (see @mozilla.org/cycle-collector-logger;1 for a logger  
+                  component)  
+</td>
+</tr>
+
+</table>
+
 ### cycleCollect(aListener, aExtraForgetSkippableCalls) ###
   
 Force a cycle collection without garbage collection.  
@@ -420,6 +767,28 @@ non-debug builds. Available to all callers in debug builds.
                                   nsCycleCollector_forgetSkippable call  
                                   which happens after garbage collection.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>listener that receives information about the CC graph  
+                 (see @mozilla.org/cycle-collector-logger;1 for a logger  
+                  component)  
+</td>
+</tr>
+
+<tr>
+<td>aListener</td>
+<td>listener that receives information about the CC graph  
+                 (see @mozilla.org/cycle-collector-logger;1 for a logger  
+                  component)  
+</td>
+</tr>
+
+</table>
 
 ### runNextCollectorTimer() ###
   
@@ -448,6 +817,54 @@ without chrome privileges.
 @param aClickCount For tap gestures, the number of taps.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>event type  
+</td>
+</tr>
+
+</table>
+
 ### elementFromPoint(aX, aY, aIgnoreRootScrollFrame, aFlushLayout) ###
   
 Retrieve the element at point aX, aY in the window's document.  
@@ -457,6 +874,28 @@ Retrieve the element at point aX, aY in the window's document.
        null for coordinates outside of the viewport.  
 @param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIgnoreRootScrollFrame</td>
+<td>whether or not to ignore the root scroll  
+       frame when retrieving the element. If false, this method returns  
+       null for coordinates outside of the viewport.  
+</td>
+</tr>
+
+<tr>
+<td>aIgnoreRootScrollFrame</td>
+<td>whether or not to ignore the root scroll  
+       frame when retrieving the element. If false, this method returns  
+       null for coordinates outside of the viewport.  
+</td>
+</tr>
+
+</table>
 
 ### nodesFromRect(aX, aY, aTopSize, aRightSize, aBottomSize, aLeftSize, aIgnoreRootScrollFrame, aFlushLayout) ###
   
@@ -473,6 +912,60 @@ Retrieve all nodes that intersect a rect in the window's document.
        null for coordinates outside of the viewport.  
 @param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aX</td>
+<td>x reference for the rectangle in CSS pixels  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>x reference for the rectangle in CSS pixels  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>x reference for the rectangle in CSS pixels  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>x reference for the rectangle in CSS pixels  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>x reference for the rectangle in CSS pixels  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>x reference for the rectangle in CSS pixels  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>x reference for the rectangle in CSS pixels  
+</td>
+</tr>
+
+<tr>
+<td>aX</td>
+<td>x reference for the rectangle in CSS pixels  
+</td>
+</tr>
+
+</table>
 
 ### getTranslationNodes(aRoot) ###
   
@@ -514,6 +1007,19 @@ Will throw a DOM security error if called without chrome privileges.
               on all windows.  Otherwise, enable them.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDisable</td>
+<td>If true, disable all non synthetic test mouse events  
+              on all windows.  Otherwise, enable them.  
+</td>
+</tr>
+
+</table>
+
 ### getScrollXY(aFlushLayout, aScrollX, aScrollY) ###
   
 Returns the scroll position of the window's currently loaded document.  
@@ -521,6 +1027,19 @@ Returns the scroll position of the window's currently loaded document.
 @param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
 @see nsIDOMWindow::scrollX/Y  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFlushLayout</td>
+<td>flushes layout if true. Otherwise, no flush occurs.  
+@see nsIDOMWindow::scrollX/Y  
+</td>
+</tr>
+
+</table>
 
 ### getScrollXYFloat(aFlushLayout, aScrollX, aScrollY) ###
   
@@ -530,12 +1049,37 @@ Returns the scroll position of the window's currently loaded document.
 @see nsIDOMWindow::scrollX/Y  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFlushLayout</td>
+<td>flushes layout if true. Otherwise, no flush occurs.  
+@see nsIDOMWindow::scrollX/Y  
+</td>
+</tr>
+
+</table>
+
 ### getScrollbarSize(aFlushLayout, aWidth, aHeight) ###
   
 Returns the scrollbar width of the window's scroll frame.  
   
 @param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFlushLayout</td>
+<td>flushes layout if true. Otherwise, no flush occurs.  
+</td>
+</tr>
+
+</table>
 
 ### getBoundsWithoutFlushing(aElement) ###
   
@@ -590,6 +1134,26 @@ Will throw a DOM security error if called without chrome privileges.
        "pasteTransferable"  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>Type of command content event to send.  Can be one of "cut",  
+       "copy", "paste", "delete", "undo", "redo", or "pasteTransferable".  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>Type of command content event to send.  Can be one of "cut",  
+       "copy", "paste", "delete", "undo", "redo", or "pasteTransferable".  
+</td>
+</tr>
+
+</table>
+
 ### sendCompositionEvent(aType, aData, aLocale) ###
   
 Synthesize a composition event to the window.  
@@ -604,6 +1168,33 @@ Will throw a DOM security error if called without chrome privileges.
                  selected text which is automatically computed.  
 @param aLocale   The locale property value.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>The event type: "compositionstart", "compositionend" or  
+                 "compositionupdate".  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>The event type: "compositionstart", "compositionend" or  
+                 "compositionupdate".  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>The event type: "compositionstart", "compositionend" or  
+                 "compositionupdate".  
+</td>
+</tr>
+
+</table>
 
 ### createCompositionStringSynthesizer() ###
   
@@ -622,6 +1213,26 @@ is in LayoutDevice pixels rather than CSS pixels.
               for the other parameters and the result.  
 @param aAdditionalFlags See the description of QUERY_CONTENT_FLAG_*.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aType</td>
+<td>One of the following const values.  And see also each comment  
+              for the other parameters and the result.  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>One of the following const values.  And see also each comment  
+              for the other parameters and the result.  
+</td>
+</tr>
+
+</table>
 
 ### remoteFrameFullscreenChanged(aFrameElement, aNewOrigin) ###
   
@@ -657,6 +1268,30 @@ This sets the selection as the specified information.
 @return True, if succeeded.  Otherwise, false.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aOffset</td>
+<td>The caret offset of the selection start.  
+</td>
+</tr>
+
+<tr>
+<td>aOffset</td>
+<td>The caret offset of the selection start.  
+</td>
+</tr>
+
+<tr>
+<td>aOffset</td>
+<td>The caret offset of the selection start.  
+</td>
+</tr>
+
+</table>
+
 ### selectAtPoint(aX, aY, aSelectBehavior) ###
   
 Select content at a client point based on a selection behavior if the  
@@ -671,6 +1306,24 @@ May fire selection changed events. Calls nsFrame's SelectByTypeAtPoint.
 issues, and NS_ERROR_INVALID_ARG for coordinates that are outside  
 this window.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aX,</td>
+<td>aY The selection point in client coordinates.  
+</td>
+</tr>
+
+<tr>
+<td>aX,</td>
+<td>aY The selection point in client coordinates.  
+</td>
+</tr>
+
+</table>
 
 ### getVisitedDependentComputedStyle(aElement, aPseudoElement, aPropertyName) ###
   
@@ -695,6 +1348,18 @@ Returns the parent of obj.
 @param obj The JavaScript object whose parent is to be gotten.  
 @return the parent.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>obj</td>
+<td>The JavaScript object whose parent is to be gotten.  
+</td>
+</tr>
+
+</table>
 
 ### enterModalState() ###
   

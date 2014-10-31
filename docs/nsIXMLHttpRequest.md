@@ -73,6 +73,18 @@ HTTP requests.
          header does not exist in the response.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>header</td>
+<td>The name of the header to retrieve  
+</td>
+</tr>
+
+</table>
+
 ### open(method, url, async, user, password) ###
   
 Meant to be a script-only method for initializing a request.  
@@ -94,6 +106,47 @@ already), this is equivalent to calling abort() and then open().
 @param password (optional) A password for authentication if necessary.  
                 The default value is the empty string  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>method</td>
+<td>The HTTP method - either "POST" or "GET". Ignored  
+              if the URL is not a HTTP URL.  
+</td>
+</tr>
+
+<tr>
+<td>method</td>
+<td>The HTTP method - either "POST" or "GET". Ignored  
+              if the URL is not a HTTP URL.  
+</td>
+</tr>
+
+<tr>
+<td>method</td>
+<td>The HTTP method - either "POST" or "GET". Ignored  
+              if the URL is not a HTTP URL.  
+</td>
+</tr>
+
+<tr>
+<td>method</td>
+<td>The HTTP method - either "POST" or "GET". Ignored  
+              if the URL is not a HTTP URL.  
+</td>
+</tr>
+
+<tr>
+<td>method</td>
+<td>The HTTP method - either "POST" or "GET". Ignored  
+              if the URL is not a HTTP URL.  
+</td>
+</tr>
+
+</table>
 
 ### send(body) ###
   
@@ -122,6 +175,31 @@ After the initial response, all event listeners will be cleared.
             calling send.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>body</td>
+<td>Either an instance of nsIDOMDocument, nsIInputStream  
+            or a string (nsISupportsString in the native calling  
+            case). This is used to populate the body of the  
+            HTTP request if the HTTP request method is "POST".  
+            If the parameter is a nsIDOMDocument, it is serialized.  
+            If the parameter is a nsIInputStream, then it must be  
+            compatible with nsIUploadChannel.setUploadStream, and a  
+            Content-Length header will be added to the HTTP request  
+            with a value given by nsIInputStream.available.  Any  
+            headers included at the top of the stream will be  
+            treated as part of the message body.  The MIME type of  
+            the stream should be specified by setting the Content-  
+            Type header via the setRequestHeader method before  
+            calling send.  
+</td>
+</tr>
+
+</table>
+
 ### sendAsBinary(body) ###
   
 A variant of the send() method used to send binary data.  
@@ -131,6 +209,20 @@ A variant of the send() method used to send binary data.
             high-order byte of each character will be discarded).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>body</td>
+<td>The request body as a DOM string.  The string data will be  
+            converted to a single-byte string by truncation (i.e., the  
+            high-order byte of each character will be discarded).  
+</td>
+</tr>
+
+</table>
+
 ### setRequestHeader(header, value) ###
   
 Sets a HTTP request header for HTTP requests. You must call open  
@@ -139,6 +231,24 @@ before setting the request headers.
 @param header The name of the header to set in the request.  
 @param value The body of the header.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>header</td>
+<td>The name of the header to set in the request.  
+</td>
+</tr>
+
+<tr>
+<td>header</td>
+<td>The name of the header to set in the request.  
+</td>
+</tr>
+
+</table>
 
 ### overrideMimeType(mimetype) ###
   
@@ -150,6 +260,19 @@ must be done before the <code>send</code> method is invoked.
 @param mimetype The type used to override that returned by the server  
                 (if any).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>mimetype</td>
+<td>The type used to override that returned by the server  
+                (if any).  
+</td>
+</tr>
+
+</table>
 
 ### init(principal, scriptContext, globalObject, baseURI) ###
   
@@ -167,6 +290,40 @@ context, and owner window that should be used.
 @param baseURI The base URI to use when resolving relative URIs. May be  
                null.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>principal</td>
+<td>The principal to use for the request. This must not be  
+                 null.  
+</td>
+</tr>
+
+<tr>
+<td>principal</td>
+<td>The principal to use for the request. This must not be  
+                 null.  
+</td>
+</tr>
+
+<tr>
+<td>principal</td>
+<td>The principal to use for the request. This must not be  
+                 null.  
+</td>
+</tr>
+
+<tr>
+<td>principal</td>
+<td>The principal to use for the request. This must not be  
+                 null.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

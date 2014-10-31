@@ -14,6 +14,18 @@ Load an XML document.
 @return     True if load successfull.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>url URL to an XML document.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### async ###

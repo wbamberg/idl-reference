@@ -28,3 +28,21 @@ may still match another rule.
   
 @return true if the rule matches  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRef</td>
+<td>the result to examine  
+</td>
+</tr>
+
+<tr>
+<td>aRef</td>
+<td>the result to examine  
+</td>
+</tr>
+
+</table>

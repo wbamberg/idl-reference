@@ -30,6 +30,48 @@ removed, each  by a call to `removeBlocker`.
 empty when called from C++.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBlocker</td>
+<td>The blocker to add. Once  
+nsIAsyncShutdownBarrier::wait() has been called, it will not  
+call its `aOnReady` callback until all blockers have been  
+removed, each  by a call to `removeBlocker`.  
+</td>
+</tr>
+
+<tr>
+<td>aBlocker</td>
+<td>The blocker to add. Once  
+nsIAsyncShutdownBarrier::wait() has been called, it will not  
+call its `aOnReady` callback until all blockers have been  
+removed, each  by a call to `removeBlocker`.  
+</td>
+</tr>
+
+<tr>
+<td>aBlocker</td>
+<td>The blocker to add. Once  
+nsIAsyncShutdownBarrier::wait() has been called, it will not  
+call its `aOnReady` callback until all blockers have been  
+removed, each  by a call to `removeBlocker`.  
+</td>
+</tr>
+
+<tr>
+<td>aBlocker</td>
+<td>The blocker to add. Once  
+nsIAsyncShutdownBarrier::wait() has been called, it will not  
+call its `aOnReady` callback until all blockers have been  
+removed, each  by a call to `removeBlocker`.  
+</td>
+</tr>
+
+</table>
+
 ### removeBlocker(aBlocker) ###
   
 Remove a blocker.  
@@ -38,6 +80,20 @@ Remove a blocker.
 `addBlocker`. Noop if the blocker has never been added or has been  
 removed already.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBlocker</td>
+<td>A blocker previously added to this client through  
+`addBlocker`. Noop if the blocker has never been added or has been  
+removed already.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

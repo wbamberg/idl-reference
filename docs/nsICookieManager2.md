@@ -43,6 +43,116 @@ method is something of a backdoor.
        in this way, the more restrictive of the two will take effect.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHost</td>
+<td>       the host or domain for which the cookie is set. presence of a  
+       leading dot indicates a domain cookie; otherwise, the cookie  
+       is treated as a non-domain cookie (see RFC2109). The host string  
+       will be normalized to ASCII or ACE; any trailing dot will be  
+       stripped. To be a domain cookie, the host must have at least two  
+       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
+       exception will be thrown. An empty string is acceptable  
+       (e.g. file:// URI's).  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>       the host or domain for which the cookie is set. presence of a  
+       leading dot indicates a domain cookie; otherwise, the cookie  
+       is treated as a non-domain cookie (see RFC2109). The host string  
+       will be normalized to ASCII or ACE; any trailing dot will be  
+       stripped. To be a domain cookie, the host must have at least two  
+       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
+       exception will be thrown. An empty string is acceptable  
+       (e.g. file:// URI's).  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>       the host or domain for which the cookie is set. presence of a  
+       leading dot indicates a domain cookie; otherwise, the cookie  
+       is treated as a non-domain cookie (see RFC2109). The host string  
+       will be normalized to ASCII or ACE; any trailing dot will be  
+       stripped. To be a domain cookie, the host must have at least two  
+       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
+       exception will be thrown. An empty string is acceptable  
+       (e.g. file:// URI's).  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>       the host or domain for which the cookie is set. presence of a  
+       leading dot indicates a domain cookie; otherwise, the cookie  
+       is treated as a non-domain cookie (see RFC2109). The host string  
+       will be normalized to ASCII or ACE; any trailing dot will be  
+       stripped. To be a domain cookie, the host must have at least two  
+       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
+       exception will be thrown. An empty string is acceptable  
+       (e.g. file:// URI's).  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>       the host or domain for which the cookie is set. presence of a  
+       leading dot indicates a domain cookie; otherwise, the cookie  
+       is treated as a non-domain cookie (see RFC2109). The host string  
+       will be normalized to ASCII or ACE; any trailing dot will be  
+       stripped. To be a domain cookie, the host must have at least two  
+       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
+       exception will be thrown. An empty string is acceptable  
+       (e.g. file:// URI's).  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>       the host or domain for which the cookie is set. presence of a  
+       leading dot indicates a domain cookie; otherwise, the cookie  
+       is treated as a non-domain cookie (see RFC2109). The host string  
+       will be normalized to ASCII or ACE; any trailing dot will be  
+       stripped. To be a domain cookie, the host must have at least two  
+       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
+       exception will be thrown. An empty string is acceptable  
+       (e.g. file:// URI's).  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>       the host or domain for which the cookie is set. presence of a  
+       leading dot indicates a domain cookie; otherwise, the cookie  
+       is treated as a non-domain cookie (see RFC2109). The host string  
+       will be normalized to ASCII or ACE; any trailing dot will be  
+       stripped. To be a domain cookie, the host must have at least two  
+       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
+       exception will be thrown. An empty string is acceptable  
+       (e.g. file:// URI's).  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>       the host or domain for which the cookie is set. presence of a  
+       leading dot indicates a domain cookie; otherwise, the cookie  
+       is treated as a non-domain cookie (see RFC2109). The host string  
+       will be normalized to ASCII or ACE; any trailing dot will be  
+       stripped. To be a domain cookie, the host must have at least two  
+       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
+       exception will be thrown. An empty string is acceptable  
+       (e.g. file:// URI's).  
+</td>
+</tr>
+
+</table>
+
 ### cookieExists(aCookie) ###
   
 Find whether a given cookie already exists.  
@@ -53,6 +163,18 @@ Find whether a given cookie already exists.
 @return true if a cookie was found which matches the host, path, and name  
         fields of aCookie  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCookie</td>
+<td>       the cookie to look for  
+</td>
+</tr>
+
+</table>
 
 ### countCookiesFromHost(aHost) ###
   
@@ -68,6 +190,20 @@ counted.
   
 @return the number of cookies found.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHost</td>
+<td>       the host string to search for, e.g. "google.com". this should consist  
+       of only the host portion of a URI. see @add for a description of  
+       acceptable host strings.  
+</td>
+</tr>
+
+</table>
 
 ### getCookiesFromHost(aHost) ###
   
@@ -86,6 +222,20 @@ subdomains would be returned.
 @see countCookiesFromHost  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHost</td>
+<td>       the host string to search for, e.g. "google.com". this should consist  
+       of only the host portion of a URI. see @add for a description of  
+       acceptable host strings.  
+</td>
+</tr>
+
+</table>
+
 ### importCookies(aCookieFile) ###
   
 Import an old-style cookie file. Imported cookies will be added to the  
@@ -94,6 +244,18 @@ being imported (i.e. domain, name, and path match), they will be replaced.
   
 @param aCookieFile the file to import, usually cookies.txt  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCookieFile</td>
+<td>the file to import, usually cookies.txt  
+</td>
+</tr>
+
+</table>
 
 ### getCookiesForApp(appId, onlyBrowserElement) ###
   

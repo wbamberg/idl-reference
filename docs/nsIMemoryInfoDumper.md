@@ -44,6 +44,36 @@ Sample output, annotated with comments for explanatory purposes.
 }  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFilename</td>
+<td>The output file.  
+</td>
+</tr>
+
+<tr>
+<td>aFilename</td>
+<td>The output file.  
+</td>
+</tr>
+
+<tr>
+<td>aFilename</td>
+<td>The output file.  
+</td>
+</tr>
+
+<tr>
+<td>aFilename</td>
+<td>The output file.  
+</td>
+</tr>
+
+</table>
+
 ### dumpMemoryInfoToTempDir(aIdentifier, aAnonymize, aMinimizeMemoryUsage) ###
   
 Similar to dumpMemoryReportsToNamedFile, this method dumps gzipped memory  
@@ -71,6 +101,33 @@ file will be overwritten).
   gc/cc's in an attempt to reduce our memory usage before collecting our  
   memory report.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIdentifier</td>
+<td>this identifier will appear in the filename of our  
+  about:memory dump and those of our children.  
+</td>
+</tr>
+
+<tr>
+<td>aIdentifier</td>
+<td>this identifier will appear in the filename of our  
+  about:memory dump and those of our children.  
+</td>
+</tr>
+
+<tr>
+<td>aIdentifier</td>
+<td>this identifier will appear in the filename of our  
+  about:memory dump and those of our children.  
+</td>
+</tr>
+
+</table>
 
 ### dumpGCAndCCLogsToFile(aIdentifier, aDumpAllTraces, aDumpChildProcesses, aCallback) ###
   
@@ -101,6 +158,36 @@ $MOZ_CC_LOG_DIRECTORY, if that environment variable is specified).
   will dump their children, and so on.  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIdentifier</td>
+<td>If aIdentifier is non-empty, this string will appear in  
+  the filenames of the logs we create (both for this process and, if  
+  aDumpChildProcesses is true, for our child processes).  
+</td>
+</tr>
+
+<tr>
+<td>aIdentifier</td>
+<td>If aIdentifier is non-empty, this string will appear in  
+  the filenames of the logs we create (both for this process and, if  
+  aDumpChildProcesses is true, for our child processes).  
+</td>
+</tr>
+
+<tr>
+<td>aIdentifier</td>
+<td>If aIdentifier is non-empty, this string will appear in  
+  the filenames of the logs we create (both for this process and, if  
+  aDumpChildProcesses is true, for our child processes).  
+</td>
+</tr>
+
+</table>
 
 ### dumpGCAndCCLogsToSink(aDumpAllTraces, aSink) ###
   

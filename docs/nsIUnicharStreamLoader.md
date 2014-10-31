@@ -23,6 +23,19 @@ Initializes the unichar stream loader
                  the load is complete  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>the observer to notify when a charset is needed and when  
+                 the load is complete  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### channel ###

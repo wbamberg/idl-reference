@@ -21,6 +21,18 @@ expose to the user, for example on the URL bar.
         for the URI scheme.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aURI       The URI to be converted  
+</td>
+</tr>
+
+</table>
+
 ### createFixupURI(aURIText, aFixupFlags, aPostData) ###
   
 Converts the specified string into a URI, first attempting  
@@ -33,6 +45,30 @@ a wellformed URI or nullptr if it can't.
                    URI (see nsISearchSubmission).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURIText</td>
+<td>Candidate URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURIText</td>
+<td>Candidate URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURIText</td>
+<td>Candidate URI.  
+</td>
+</tr>
+
+</table>
+
 ### getFixupURIInfo(aURIText, aFixupFlags, aPostData) ###
   
 Same as createFixupURI, but returns information about what it corrected  
@@ -44,6 +80,30 @@ search URI instead).
 @param aPostData   The POST data to submit with the returned  
                    URI (see nsISearchSubmission).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURIText</td>
+<td>Candidate URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURIText</td>
+<td>Candidate URI.  
+</td>
+</tr>
+
+<tr>
+<td>aURIText</td>
+<td>Candidate URI.  
+</td>
+</tr>
+
+</table>
 
 ### keywordToURI(aKeyword, aPostData) ###
   
@@ -58,6 +118,24 @@ whether aKeyword is a sensible keyword.
 @throws NS_ERROR_FAILURE if the resulting URI requires submission of POST  
         data and aPostData is null.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aKeyword</td>
+<td>The keyword string to convert into a URI  
+</td>
+</tr>
+
+<tr>
+<td>aKeyword</td>
+<td>The keyword string to convert into a URI  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

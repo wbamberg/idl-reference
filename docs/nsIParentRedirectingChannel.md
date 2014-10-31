@@ -24,6 +24,30 @@ on the child process and provide the decision result to the callback.
    nsIChannelEventSink defines it  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>newChannelId</td>
+<td>   id of the redirect channel obtained from nsIRedirectChannelRegistrar.  
+</td>
+</tr>
+
+<tr>
+<td>newChannelId</td>
+<td>   id of the redirect channel obtained from nsIRedirectChannelRegistrar.  
+</td>
+</tr>
+
+<tr>
+<td>newChannelId</td>
+<td>   id of the redirect channel obtained from nsIRedirectChannelRegistrar.  
+</td>
+</tr>
+
+</table>
+
 ### completeRedirect(succeeded) ###
   
 Called after we are done with redirecting process and we know if to  

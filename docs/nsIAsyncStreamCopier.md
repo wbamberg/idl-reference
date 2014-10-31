@@ -36,6 +36,60 @@ whether your streams are buffered, you should use nsIAsyncStreamCopier2
 instead.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSource</td>
+<td>       contains the data to be copied.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       contains the data to be copied.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       contains the data to be copied.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       contains the data to be copied.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       contains the data to be copied.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       contains the data to be copied.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       contains the data to be copied.  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       contains the data to be copied.  
+</td>
+</tr>
+
+</table>
+
 ### asyncCopy(aObserver, aObserverContext) ###
   
 asyncCopy triggers the start of the copy.  The observer will be notified  
@@ -46,3 +100,21 @@ when the copy completes.
 @param aObserverContext  
        passed to observer methods.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>       receives notifications.  
+</td>
+</tr>
+
+<tr>
+<td>aObserver</td>
+<td>       receives notifications.  
+</td>
+</tr>
+
+</table>

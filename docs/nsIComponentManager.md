@@ -16,6 +16,18 @@ CID aClass
 @param aClass The classid of the factory that is being requested  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aClass</td>
+<td>The classid of the factory that is being requested  
+</td>
+</tr>
+
+</table>
+
 ### getClassObjectByContractID(aContractID, aIID, result) ###
   
 getClassObjectByContractID  
@@ -25,6 +37,18 @@ CID aClass
   
 @param aClass The classid of the factory that is being requested  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aClass</td>
+<td>The classid of the factory that is being requested  
+</td>
+</tr>
+
+</table>
 
 ### createInstance(aClass, aDelegate, aIID, result) ###
   
@@ -36,6 +60,30 @@ Create an instance of the CID aClass and return the interface aIID.
 @param aDelegate : Used for aggregation  
 @param aIID : IID of interface requested  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aClass</td>
+<td>: ClassID of object instance requested  
+</td>
+</tr>
+
+<tr>
+<td>aClass</td>
+<td>: ClassID of object instance requested  
+</td>
+</tr>
+
+<tr>
+<td>aClass</td>
+<td>: ClassID of object instance requested  
+</td>
+</tr>
+
+</table>
 
 ### createInstanceByContractID(aContractID, aDelegate, aIID, result) ###
   
@@ -49,6 +97,30 @@ interface aIID.
 @param aIID : IID of interface requested  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContractID</td>
+<td>: aContractID of object instance requested  
+</td>
+</tr>
+
+<tr>
+<td>aContractID</td>
+<td>: aContractID of object instance requested  
+</td>
+</tr>
+
+<tr>
+<td>aContractID</td>
+<td>: aContractID of object instance requested  
+</td>
+</tr>
+
+</table>
+
 ### addBootstrappedManifestLocation(aLocation) ###
   
 addBootstrappedManifestLocation  
@@ -59,6 +131,19 @@ Adds a bootstrapped manifest location on runtime.
                    or an XPI with it on the root.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLocation</td>
+<td>: A directory where chrome.manifest resides,  
+                   or an XPI with it on the root.  
+</td>
+</tr>
+
+</table>
+
 ### removeBootstrappedManifestLocation(aLocation) ###
   
 removeBootstrappedManifestLocation  
@@ -68,6 +153,19 @@ Removes a bootstrapped manifest location on runtime.
 @param aLocation : A directory where chrome.manifest resides,  
                    or an XPI with it on the root.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLocation</td>
+<td>: A directory where chrome.manifest resides,  
+                   or an XPI with it on the root.  
+</td>
+</tr>
+
+</table>
 
 ### getManifestLocations() ###
   

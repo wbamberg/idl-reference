@@ -32,6 +32,36 @@ Perform platform specific operations when a download is done.
 @return none  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSource</td>
+<td>       Source URI of the download  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       Source URI of the download  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       Source URI of the download  
+</td>
+</tr>
+
+<tr>
+<td>aSource</td>
+<td>       Source URI of the download  
+</td>
+</tr>
+
+</table>
+
 ### mapUrlToZone(aURL) ###
   
 Proxy for IInternetSecurityManager::MapUrlToZone().  
@@ -42,6 +72,18 @@ Proxy for IInternetSecurityManager::MapUrlToZone().
        URI of the download  
 @return Security Zone corresponding to aURL.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURL</td>
+<td>       URI of the download  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

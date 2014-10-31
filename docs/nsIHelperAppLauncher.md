@@ -30,12 +30,42 @@ NOTE: This will release the reference to the nsIHelperAppLauncherDialog.
 @param aRememberThisPreference TRUE if we should remember this choice.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aApplication</td>
+<td>nsIFile corresponding to the location of the application to use.  
+</td>
+</tr>
+
+<tr>
+<td>aApplication</td>
+<td>nsIFile corresponding to the location of the application to use.  
+</td>
+</tr>
+
+</table>
+
 ### saveDestinationAvailable(aFile) ###
   
 Callback invoked by nsIHelperAppLauncherDialog::promptForSaveToFileAsync  
 after the user has chosen a file through the File Picker (or dismissed it).  
 @param aFile The file that was chosen by the user (or null if dialog was dismissed).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFile</td>
+<td>The file that was chosen by the user (or null if dialog was dismissed).  
+</td>
+</tr>
+
+</table>
 
 ### setWebProgressListener(aWebProgressListener) ###
   

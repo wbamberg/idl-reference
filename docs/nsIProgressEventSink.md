@@ -43,6 +43,36 @@ given request.
        transfered (or 0xFFFFFFFFFFFFFFFF if total is unknown).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>       the request being observed (may QI to nsIChannel).  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       the request being observed (may QI to nsIChannel).  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       the request being observed (may QI to nsIChannel).  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       the request being observed (may QI to nsIChannel).  
+</td>
+</tr>
+
+</table>
+
 ### onStatus(aRequest, aContext, aStatus, aStatusArg) ###
   
 Called to notify the event sink with a status message for the given  
@@ -65,3 +95,33 @@ request.
        of the status code.  for socket status codes, this parameter  
        indicates the host:port associated with the status code.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>       the request being observed (may QI to nsIChannel).  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       the request being observed (may QI to nsIChannel).  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       the request being observed (may QI to nsIChannel).  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       the request being observed (may QI to nsIChannel).  
+</td>
+</tr>
+
+</table>

@@ -283,6 +283,23 @@ Instead use NS_OpenAnonymousTemporaryFile() to create a temporary
 file which will be deleted upon close.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>flags</td>
+<td>the PR_Open flags from prio.h, plus optionally  
+OS_READAHEAD or DELETE_ON_CLOSE. OS_READAHEAD is a hint to the  
+OS that the file will be read sequentially with agressive  
+readahead. DELETE_ON_CLOSE is unreliable on Windows and is deprecated.  
+Instead use NS_OpenAnonymousTemporaryFile() to create a temporary  
+file which will be deleted upon close.  
+</td>
+</tr>
+
+</table>
+
 ### openANSIFileDesc(mode) ###
   
 Return the result of fopen on the file.  The caller is  

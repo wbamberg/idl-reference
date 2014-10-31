@@ -22,6 +22,18 @@ parameter list.
 @param param the parameter to add.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>param</td>
+<td>the parameter to add.  
+</td>
+</tr>
+
+</table>
+
 ### getParameter(parameterIndex) ###
   
 Retrieves a specific command line parameter.  
@@ -33,6 +45,18 @@ Retrieves a specific command line parameter.
 @throw NS_ERROR_INVALID_ARG if the index is out of range.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>param</td>
+<td>the index of the parameter to return.  
+</td>
+</tr>
+
+</table>
+
 ### parameterExists(param) ###
   
 Checks to see if a parameter exists in the command line  
@@ -42,6 +66,18 @@ parameter list.
   
 @return TRUE if the parameter exists in the current list.   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>param</td>
+<td>the parameter to search for.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

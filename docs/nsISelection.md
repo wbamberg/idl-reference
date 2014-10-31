@@ -28,6 +28,24 @@ is focused and editable, the caret will blink there.
 @param offset          Where in given dom node to place the selection (the offset into the given node)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>parentNode</td>
+<td>The given dom node where the selection will be set  
+</td>
+</tr>
+
+<tr>
+<td>parentNode</td>
+<td>The given dom node where the selection will be set  
+</td>
+</tr>
+
+</table>
+
 ### collapseNative(parentNode, offset) ###
 
 ### extend(parentNode, offset) ###
@@ -38,6 +56,24 @@ be from the anchorNode to the new focusNode, regardless of direction.
 @param parentNode      The node where the selection will be extended to  
 @param offset          Where in node to place the offset in the new selection end  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>parentNode</td>
+<td>The node where the selection will be extended to  
+</td>
+</tr>
+
+<tr>
+<td>parentNode</td>
+<td>The node where the selection will be extended to  
+</td>
+</tr>
+
+</table>
 
 ### extendNative(parentNode, offset) ###
 
@@ -68,6 +104,18 @@ function only returns true when the entire node is part of the selection.
 Adds all children of the specified node to the selection.  
 @param parentNode  the parent of the children to be added to the selection.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>parentNode</td>
+<td>the parent of the children to be added to the selection.  
+</td>
+</tr>
+
+</table>
 
 ### addRange(range) ###
   
@@ -113,6 +161,45 @@ Modifies the selection.  Note that the parameters are case-insensitive.
 "documentboundary".  Returns NS_ERROR_INVALID_ARG if alter, direction,  
 or granularity has an unrecognized value.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>alter</td>
+<td>can be one of { "move", "extend" }  
+  - "move" collapses the selection to the end of the selection and  
+     applies the movement direction/granularity to the collapsed  
+     selection.  
+  - "extend" leaves the start of the selection unchanged, and applies  
+     movement direction/granularity to the end of the selection.  
+</td>
+</tr>
+
+<tr>
+<td>alter</td>
+<td>can be one of { "move", "extend" }  
+  - "move" collapses the selection to the end of the selection and  
+     applies the movement direction/granularity to the collapsed  
+     selection.  
+  - "extend" leaves the start of the selection unchanged, and applies  
+     movement direction/granularity to the end of the selection.  
+</td>
+</tr>
+
+<tr>
+<td>alter</td>
+<td>can be one of { "move", "extend" }  
+  - "move" collapses the selection to the end of the selection and  
+     applies the movement direction/granularity to the collapsed  
+     selection.  
+  - "extend" leaves the start of the selection unchanged, and applies  
+     movement direction/granularity to the end of the selection.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

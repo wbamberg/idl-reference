@@ -17,6 +17,24 @@ may be called more than once if the target file is renamed while saving.
        Name of the file that is being written.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSaver</td>
+<td>       Reference to the object that raised the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aSaver</td>
+<td>       Reference to the object that raised the notification.  
+</td>
+</tr>
+
+</table>
+
 ### onSaveComplete(aSaver, aStatus) ###
   
 Called when the operation completed, and the target file has been closed.  
@@ -29,3 +47,21 @@ it might have been already deleted.
        Result code that determines whether the operation succeeded or  
        failed, as well as the failure reason.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSaver</td>
+<td>       Reference to the object that raised the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aSaver</td>
+<td>       Reference to the object that raised the notification.  
+</td>
+</tr>
+
+</table>

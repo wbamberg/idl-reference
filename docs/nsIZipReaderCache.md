@@ -15,6 +15,21 @@ Initializes a new zip reader cache.
   for those otherwise unused entries)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>cacheSize</td>
+<td>- the number of released entries to maintain before  
+  beginning to throw some out (note that the number of outstanding  
+  entries can be much greater than this number -- this is the count  
+  for those otherwise unused entries)  
+</td>
+</tr>
+
+</table>
+
 ### getZip(zipFile) ###
   
 Returns a (possibly shared) nsIZipReader for an nsIFile.  

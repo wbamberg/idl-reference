@@ -15,6 +15,18 @@ Preprare the URI before we can start the connection.
 @param aUri The URI of the media stream.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aUri</td>
+<td>The URI of the media stream.  
+</td>
+</tr>
+
+</table>
+
 ### asyncOpen(aListener) ###
   
 Asynchronously open this controller.  Data is fed to the specified  
@@ -24,6 +36,18 @@ until it has called onStopRequest on aListener.
   
 @param aListener The nsIStreamingProtocolListener implementation  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>The nsIStreamingProtocolListener implementation  
+</td>
+</tr>
+
+</table>
 
 ### getTrackMetaData(index) ###
 

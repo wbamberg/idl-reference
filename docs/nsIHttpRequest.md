@@ -29,6 +29,20 @@ Returns the value for the header in this request specified by fieldName.
   if the given header does not exist in this  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>fieldName</td>
+<td>  the name of the field whose value is to be gotten; note that since HTTP  
+  header field names are case-insensitive, this method produces equivalent  
+  results for "HeAdER" and "hEADer" as fieldName  
+</td>
+</tr>
+
+</table>
+
 ### hasHeader(fieldName) ###
   
 Returns true if a header with the given field name exists in this, false  
@@ -41,6 +55,22 @@ otherwise.
 @throws NS_ERROR_INVALID_ARG  
   if fieldName does not constitute a valid header field name  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>fieldName</td>
+<td>  the field name whose existence is to be determined in this; note that  
+  since HTTP header field names are case-insensitive, this method produces  
+  equivalent results for "HeAdER" and "hEADer" as fieldName  
+@throws NS_ERROR_INVALID_ARG  
+  if fieldName does not constitute a valid header field name  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

@@ -28,6 +28,29 @@ Starts up this server, listening upon the given port.
   called.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>port</td>
+<td>  the port upon which listening should happen, or -1 if no specific port is  
+  desired  
+@throws NS_ERROR_ALREADY_INITIALIZED  
+  if this server is already started  
+@throws NS_ERROR_NOT_AVAILABLE  
+  if the server is not started and cannot be started on the desired port  
+  (perhaps because the port is already in use or because the process does  
+  not have privileges to do so)  
+@note  
+  Behavior is undefined if this method is called after stop() has been  
+  called on this but before the provided callback function has been  
+  called.  
+</td>
+</tr>
+
+</table>
+
 ### stop(callback) ###
   
 Shuts down this server if it is running (including the period of time after  
@@ -42,6 +65,23 @@ stop() has been called but before the provided callback has been called).
   if this server is not running  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>callback</td>
+<td>  an asynchronous callback used to notify the user when this server is  
+  stopped and all pending requests have been fully served  
+@throws NS_ERROR_NULL_POINTER  
+  if callback is null  
+@throws NS_ERROR_UNEXPECTED  
+  if this server is not running  
+</td>
+</tr>
+
+</table>
+
 ### registerFile(path, file) ###
   
 Associates the local file represented by the string file with all requests  
@@ -54,6 +94,26 @@ which match request.
   the file to serve for the given path, or null to remove any mapping that  
   might exist; this file must exist for the lifetime of the server  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>path</td>
+<td>  the path which is to be mapped to the given file; must begin with "/" and  
+  be a valid URI path (i.e., no query string, hash reference, etc.)  
+</td>
+</tr>
+
+<tr>
+<td>path</td>
+<td>  the path which is to be mapped to the given file; must begin with "/" and  
+  be a valid URI path (i.e., no query string, hash reference, etc.)  
+</td>
+</tr>
+
+</table>
 
 ### registerPathHandler(path, handler) ###
   
@@ -73,6 +133,30 @@ Registers a custom path handler.
   if path does not begin with a "/"  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>path</td>
+<td>  the path on the server (beginning with a "/") which is to be handled by  
+  handler; this path must not include a query string or hash component; it  
+  also should usually be canonicalized, since most browsers will do so  
+  before sending otherwise-matching requests  
+</td>
+</tr>
+
+<tr>
+<td>path</td>
+<td>  the path on the server (beginning with a "/") which is to be handled by  
+  handler; this path must not include a query string or hash component; it  
+  also should usually be canonicalized, since most browsers will do so  
+  before sending otherwise-matching requests  
+</td>
+</tr>
+
+</table>
+
 ### registerPrefixHandler(prefix, handler) ###
   
 Registers a custom prefix handler.  
@@ -90,6 +174,30 @@ Registers a custom prefix handler.
 @throws NS_ERROR_INVALID_ARG  
   if path does not begin with a "/" or does not end with a "/"  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>prefix</td>
+<td>  the path on the server (beginning and ending with "/") which is to be  
+  handled by handler; this path must not include a query string or hash  
+  component. All requests that start with this prefix will be directed to  
+  the given handler.  
+</td>
+</tr>
+
+<tr>
+<td>prefix</td>
+<td>  the path on the server (beginning and ending with "/") which is to be  
+  handled by handler; this path must not include a query string or hash  
+  component. All requests that start with this prefix will be directed to  
+  the given handler.  
+</td>
+</tr>
+
+</table>
 
 ### registerErrorHandler(code, handler) ###
   
@@ -110,6 +218,24 @@ Registers a custom error page handler.
   If the error handler handles HTTP 500 and throws, behavior is undefined.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>code</td>
+<td>  the error code which is to be handled by handler  
+</td>
+</tr>
+
+<tr>
+<td>code</td>
+<td>  the error code which is to be handled by handler  
+</td>
+</tr>
+
+</table>
+
 ### registerDirectory(path, dir) ###
   
 Maps all requests to paths beneath path to the corresponding file beneath  
@@ -128,6 +254,28 @@ dir.
   if dir is non-null and does not exist or is not a directory, or if path  
   does not begin with and end with a forward slash  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>path</td>
+<td>  the absolute path on the server against which requests will be served  
+  from dir (e.g., "/", "/foo/", etc.); must begin and end with a forward  
+  slash  
+</td>
+</tr>
+
+<tr>
+<td>path</td>
+<td>  the absolute path on the server against which requests will be served  
+  from dir (e.g., "/", "/foo/", etc.); must begin and end with a forward  
+  slash  
+</td>
+</tr>
+
+</table>
 
 ### registerContentType(extension, type) ###
   
@@ -164,6 +312,24 @@ the directory contains no index page.
   directory is available from the metadata object passed to the  
   handler, under the key "directory".  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>handler</td>
+<td>  an object which will handle any requests for directories which  
+  do not contain index pages, or null to reset to the default  
+  index handler; if while the server is running the handler  
+  throws an exception while responding to a request, an HTTP 500  
+  response will be returned.  An nsIFile corresponding to the  
+  directory is available from the metadata object passed to the  
+  handler, under the key "directory".  
+</td>
+</tr>
+
+</table>
 
 ### getState(path, key) ###
   

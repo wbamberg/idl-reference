@@ -19,6 +19,18 @@ requests until specifically instructed to do so.
 @param aURI the URI being requested by a channel  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the URI being requested by a channel  
+</td>
+</tr>
+
+</table>
+
 ### channelIntercepted(aChannel, aStream) ###
   
 Notification when a given intercepted channel is prepared to accept a synthesized  
@@ -27,3 +39,21 @@ response via the provided stream.
 @param aChannel the controlling interface for a channel that has been intercepted  
 @param aStream a stream directly into the channel's synthesized response body  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChannel</td>
+<td>the controlling interface for a channel that has been intercepted  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>the controlling interface for a channel that has been intercepted  
+</td>
+</tr>
+
+</table>

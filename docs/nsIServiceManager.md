@@ -32,6 +32,33 @@ interface aIID.  This may result in the instance being created.
 @param result : resulting service   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aClass</td>
+<td>or aContractID : aClass or aContractID of object   
+                               instance requested  
+</td>
+</tr>
+
+<tr>
+<td>aClass</td>
+<td>or aContractID : aClass or aContractID of object   
+                               instance requested  
+</td>
+</tr>
+
+<tr>
+<td>aClass</td>
+<td>or aContractID : aClass or aContractID of object   
+                               instance requested  
+</td>
+</tr>
+
+</table>
+
 ### getServiceByContractID(aContractID, aIID, result) ###
 
 ### isServiceInstantiated(aClass, aIID) ###
@@ -48,5 +75,25 @@ been created, or throw otherwise
         instantiated  
 @throws NS_NOINTERFACE if the IID given isn't supported by the object  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aClass</td>
+<td>or aContractID : aClass or aContractID of object   
+                               instance requested  
+</td>
+</tr>
+
+<tr>
+<td>aClass</td>
+<td>or aContractID : aClass or aContractID of object   
+                               instance requested  
+</td>
+</tr>
+
+</table>
 
 ### isServiceInstantiatedByContractID(aContractID, aIID) ###

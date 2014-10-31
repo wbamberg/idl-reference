@@ -46,6 +46,18 @@ returns NS_ERROR_IN_PROGRESS.
        If the user was cancelled has cancelled the authentication prompt.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>userCancel</td>
+<td>       If the user was cancelled has cancelled the authentication prompt.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### isSSL ###

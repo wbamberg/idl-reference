@@ -21,6 +21,19 @@ Current backlog is deleted by this call otherwise.
    when their age is more then value of this argument.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>minBacklogSeconds</td>
+<td>   Manimum time to keep the backlog.  Entries of the log are discarded  
+   when their age is more then value of this argument.  
+</td>
+</tr>
+
+</table>
+
 ### stop() ###
   
 Stop the logging now.  Backlog is kept in memory.  

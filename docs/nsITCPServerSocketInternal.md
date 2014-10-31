@@ -22,6 +22,18 @@ Initialization after creating a TCP server socket object.
        An object to create ArrayBuffer for this window. See Bug 831107.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>windowVal</td>
+<td>       An object to create ArrayBuffer for this window. See Bug 831107.  
+</td>
+</tr>
+
+</table>
+
 ### listen(localPort, options, backlog) ###
    
 Listen on a port  
@@ -41,6 +53,33 @@ Listen on a port
        This parameter may be silently limited by the operating system.  
        Pass -1 to use the default value.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>localPort</td>
+<td>       The port of the server socket. Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+<tr>
+<td>localPort</td>
+<td>       The port of the server socket. Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+<tr>
+<td>localPort</td>
+<td>       The port of the server socket. Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+</table>
 
 ### callListenerAccept(socketChild) ###
   

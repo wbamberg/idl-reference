@@ -32,6 +32,30 @@ corner of the browser area.
 @return <code>NS_OK</code> if the tooltip was displayed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aXCoords</td>
+<td>The tooltip left edge X coordinate.  
+</td>
+</tr>
+
+<tr>
+<td>aXCoords</td>
+<td>The tooltip left edge X coordinate.  
+</td>
+</tr>
+
+<tr>
+<td>aXCoords</td>
+<td>The tooltip left edge X coordinate.  
+</td>
+</tr>
+
+</table>
+
 ### onHideTooltip() ###
   
 Called when the tooltip should be hidden, either because the pointer  

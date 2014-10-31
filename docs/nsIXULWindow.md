@@ -22,11 +22,35 @@ Tell this window that it has picked up a child XUL window
 @param aChild the child window being added  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChild</td>
+<td>the child window being added  
+</td>
+</tr>
+
+</table>
+
 ### removeChildWindow(aChild) ###
   
 Tell this window that it has lost a child XUL window  
 @param aChild the child window being removed  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChild</td>
+<td>the child window being removed  
+</td>
+</tr>
+
+</table>
 
 ### center(aRelative, aScreen, aAlert) ###
   
@@ -43,6 +67,33 @@ Move the window to a centered position.
 @param aAlert    PR_TRUE to move the window to an alert position,  
                  generally centered horizontally and 1/3 down from the top.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRelative</td>
+<td>If not null, the window relative to which the window is  
+                 moved. See aScreen parameter for details.  
+</td>
+</tr>
+
+<tr>
+<td>aRelative</td>
+<td>If not null, the window relative to which the window is  
+                 moved. See aScreen parameter for details.  
+</td>
+</tr>
+
+<tr>
+<td>aRelative</td>
+<td>If not null, the window relative to which the window is  
+                 moved. See aScreen parameter for details.  
+</td>
+</tr>
+
+</table>
 
 ### showModal() ###
   
@@ -64,6 +115,24 @@ Create a new window.
                    Can be left null.  
 @return the newly minted window  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChromeFlags</td>
+<td>see nsIWebBrowserChrome  
+</td>
+</tr>
+
+<tr>
+<td>aChromeFlags</td>
+<td>see nsIWebBrowserChrome  
+</td>
+</tr>
+
+</table>
 
 ### applyChromeFlags() ###
   

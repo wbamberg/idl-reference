@@ -25,3 +25,33 @@ Implementation of OS.File.read
 @param onSuccess The success callback.  
 @param onError The error callback.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>path</td>
+<td>The absolute path to the file to read.  
+</td>
+</tr>
+
+<tr>
+<td>path</td>
+<td>The absolute path to the file to read.  
+</td>
+</tr>
+
+<tr>
+<td>path</td>
+<td>The absolute path to the file to read.  
+</td>
+</tr>
+
+<tr>
+<td>path</td>
+<td>The absolute path to the file to read.  
+</td>
+</tr>
+
+</table>

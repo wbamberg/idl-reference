@@ -23,6 +23,18 @@ Mark a page as being currently open.
        The URI to register as an open page.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to register as an open page.  
+</td>
+</tr>
+
+</table>
+
 ### unregisterOpenPage(aURI) ###
   
 Mark a page as no longer being open (either by closing the window or tab,  
@@ -35,6 +47,18 @@ or by navigating away from that page).
 @param aURI  
        The URI to unregister as an open page.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI to unregister as an open page.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

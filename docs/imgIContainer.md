@@ -31,6 +31,40 @@ can change over time due to changes in the internal state of the image.
 @param aFlags Flags of the FLAG_* variety  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDest</td>
+<td>The size of the destination rect into which this image will be  
+             drawn, in device pixels.  
+</td>
+</tr>
+
+<tr>
+<td>aDest</td>
+<td>The size of the destination rect into which this image will be  
+             drawn, in device pixels.  
+</td>
+</tr>
+
+<tr>
+<td>aDest</td>
+<td>The size of the destination rect into which this image will be  
+             drawn, in device pixels.  
+</td>
+</tr>
+
+<tr>
+<td>aDest</td>
+<td>The size of the destination rect into which this image will be  
+             drawn, in device pixels.  
+</td>
+</tr>
+
+</table>
+
 ### GetType() ###
   
 Direct C++ accessor for 'type' attribute, for convenience.  
@@ -46,6 +80,24 @@ need that, use SourceSurface::GetDataSurface.
 @param aFlags Flags of the FLAG_* variety  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWhichFrame</td>
+<td>Frame specifier of the FRAME_* variety.  
+</td>
+</tr>
+
+<tr>
+<td>aWhichFrame</td>
+<td>Frame specifier of the FRAME_* variety.  
+</td>
+</tr>
+
+</table>
+
 ### frameIsOpaque(aWhichFrame) ###
   
 Whether the given frame is opaque; that is, needs the background painted  
@@ -53,6 +105,18 @@ behind it.
   
 @param aWhichFrame Frame specifier of the FRAME_* variety.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWhichFrame</td>
+<td>Frame specifier of the FRAME_* variety.  
+</td>
+</tr>
+
+</table>
 
 ### getImageContainer(aManager) ###
   
@@ -163,6 +227,54 @@ copies of the image, which looks like this:
                    would occupy. Ignored for raster images.  
 @param aFlags Flags of the FLAG_* variety  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContext</td>
+<td>The Thebes context to draw the image to.  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>The Thebes context to draw the image to.  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>The Thebes context to draw the image to.  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>The Thebes context to draw the image to.  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>The Thebes context to draw the image to.  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>The Thebes context to draw the image to.  
+</td>
+</tr>
+
+<tr>
+<td>aContext</td>
+<td>The Thebes context to draw the image to.  
+</td>
+</tr>
+
+</table>
 
 ### requestDecode() ###
 

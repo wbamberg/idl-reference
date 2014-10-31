@@ -25,6 +25,18 @@ Test for strict equality with another nsILoginInfo object.
        The other object to test.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLoginInfo</td>
+<td>       The other object to test.  
+</td>
+</tr>
+
+</table>
+
 ### matches(aLoginInfo, ignorePassword) ###
   
 Test for loose equivalency with another nsILoginInfo object. The  
@@ -38,6 +50,24 @@ blank value indicates the login was stored before bug 360493 was fixed.]
 @param ignorePassword  
        If true, ignore the password when checking for match.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLoginInfo</td>
+<td>       The other object to test.  
+</td>
+</tr>
+
+<tr>
+<td>aLoginInfo</td>
+<td>       The other object to test.  
+</td>
+</tr>
+
+</table>
 
 ### clone() ###
   

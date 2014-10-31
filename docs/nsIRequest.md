@@ -49,6 +49,18 @@ be a success code such as NS_OK.  In general, aStatus should be
 a failure code.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStatus</td>
+<td>the reason for canceling this request.  
+</td>
+</tr>
+
+</table>
+
 ### suspend() ###
   
 Suspends the current request.  This may have the effect of closing  

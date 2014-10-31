@@ -30,6 +30,36 @@ and return the converted string in UTF-8.
         or error code of nsIUnicodeDecoder in case of conversion failure  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aString</td>
+<td>a string to  ensure its UTF8ness  
+</td>
+</tr>
+
+<tr>
+<td>aString</td>
+<td>a string to  ensure its UTF8ness  
+</td>
+</tr>
+
+<tr>
+<td>aString</td>
+<td>a string to  ensure its UTF8ness  
+</td>
+</tr>
+
+<tr>
+<td>aString</td>
+<td>a string to  ensure its UTF8ness  
+</td>
+</tr>
+
+</table>
+
 ### convertURISpecToUTF8(aSpec, aCharset) ###
   
 Ensure that |aSpec| (after URL-unescaping it) is encoded in UTF-8.    
@@ -51,3 +81,21 @@ going around in Mozilla code would break this assumption.
 @throws NS_ERROR_UCONV_NOCONV when there is no decoder for aCharset  
         or error code of nsIUnicodeDecoder in case of conversion failure  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSpec</td>
+<td>an url-escaped URI spec to  ensure its UTF8ness  
+</td>
+</tr>
+
+<tr>
+<td>aSpec</td>
+<td>an url-escaped URI spec to  ensure its UTF8ness  
+</td>
+</tr>
+
+</table>

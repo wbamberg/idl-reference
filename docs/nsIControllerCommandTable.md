@@ -35,6 +35,26 @@ Register and unregister commands with the command table.
 @param aCommand      the handler for this command.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command under which to register or  
+                     unregister the given command handler.  
+</td>
+</tr>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command under which to register or  
+                     unregister the given command handler.  
+</td>
+</tr>
+
+</table>
+
 ### unregisterCommand(aCommandName, aCommand) ###
 
 ### findCommandHandler(aCommandName) ###
@@ -44,6 +64,18 @@ Find the command handler which has been registered to handle the named command.
 @param aCommandName  the name of the command to find the handler for.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to find the handler for.  
+</td>
+</tr>
+
+</table>
+
 ### isCommandEnabled(aCommandName, aCommandRefCon) ###
   
 Get whether the named command is enabled.  
@@ -51,6 +83,24 @@ Get whether the named command is enabled.
 @param aCommandName    the name of the command to test  
 @param aCommandRefCon  the command context data  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to test  
+</td>
+</tr>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to test  
+</td>
+</tr>
+
+</table>
 
 ### updateCommandState(aCommandName, aCommandRefCon) ###
   
@@ -60,6 +110,24 @@ Tell the command to update its state (if it is a state updating command)
 @param aCommandRefCon  the command context data  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to update  
+</td>
+</tr>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to update  
+</td>
+</tr>
+
+</table>
+
 ### supportsCommand(aCommandName, aCommandRefCon) ###
   
 Get whether the named command is supported.  
@@ -68,6 +136,24 @@ Get whether the named command is supported.
 @param aCommandRefCon  the command context data  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to test  
+</td>
+</tr>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to test  
+</td>
+</tr>
+
+</table>
+
 ### doCommand(aCommandName, aCommandRefCon) ###
   
 Execute the named command.  
@@ -75,6 +161,24 @@ Execute the named command.
 @param aCommandName    the name of the command to execute  
 @param aCommandRefCon  the command context data  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to execute  
+</td>
+</tr>
+
+<tr>
+<td>aCommandName</td>
+<td>the name of the command to execute  
+</td>
+</tr>
+
+</table>
 
 ### doCommandParams(aCommandName, aParam, aCommandRefCon) ###
 

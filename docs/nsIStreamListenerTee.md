@@ -28,6 +28,36 @@ Initalize the tee.
    the original listener (listener parameter) are privileged   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>listener</td>
+<td>   the original listener the tee will propagate onStartRequest,  
+   onDataAvailable and onStopRequest notifications to, exceptions from   
+   the listener will be propagated back to the channel  
+</td>
+</tr>
+
+<tr>
+<td>listener</td>
+<td>   the original listener the tee will propagate onStartRequest,  
+   onDataAvailable and onStopRequest notifications to, exceptions from   
+   the listener will be propagated back to the channel  
+</td>
+</tr>
+
+<tr>
+<td>listener</td>
+<td>   the original listener the tee will propagate onStartRequest,  
+   onDataAvailable and onStopRequest notifications to, exceptions from   
+   the listener will be propagated back to the channel  
+</td>
+</tr>
+
+</table>
+
 ### initAsync(listener, eventTarget, sink, requestObserver) ###
    
 Initalize the tee like above, but with the extra parameter to make it  
@@ -36,3 +66,16 @@ possible to copy the output asynchronously
    if set, this event-target is used to copy data to the output stream,  
    giving an asynchronous tee  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anEventTarget</td>
+<td>   if set, this event-target is used to copy data to the output stream,  
+   giving an asynchronous tee  
+</td>
+</tr>
+
+</table>

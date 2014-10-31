@@ -20,3 +20,15 @@ subresources. (i.e.essentially DOMComplete)
 @param aDefaultChanel  
        The request channel for the base apge  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDefaultChanel</td>
+<td>       The request channel for the base apge  
+</td>
+</tr>
+
+</table>

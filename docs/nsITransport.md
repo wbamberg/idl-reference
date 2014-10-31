@@ -54,6 +54,30 @@ OPEN_UNBUFFERED
        maximum number of buffer segments (pass 0 to use default value).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFlags</td>
+<td>       optional transport specific flags.  
+</td>
+</tr>
+
+<tr>
+<td>aFlags</td>
+<td>       optional transport specific flags.  
+</td>
+</tr>
+
+<tr>
+<td>aFlags</td>
+<td>       optional transport specific flags.  
+</td>
+</tr>
+
+</table>
+
 ### openOutputStream(aFlags, aSegmentSize, aSegmentCount) ###
   
 Open an output stream on this transport.  
@@ -87,6 +111,30 @@ OPEN_UNBUFFERED
        maximum number of buffer segments (pass 0 to use default value).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFlags</td>
+<td>       optional transport specific flags.  
+</td>
+</tr>
+
+<tr>
+<td>aFlags</td>
+<td>       optional transport specific flags.  
+</td>
+</tr>
+
+<tr>
+<td>aFlags</td>
+<td>       optional transport specific flags.  
+</td>
+</tr>
+
+</table>
+
 ### close(aReason) ###
   
 Close the transport and any open streams.  
@@ -94,6 +142,18 @@ Close the transport and any open streams.
 @param aReason  
        the reason for closing the stream.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aReason</td>
+<td>       the reason for closing the stream.  
+</td>
+</tr>
+
+</table>
 
 ### setEventSink(aSink, aEventTarget) ###
   
@@ -106,6 +166,24 @@ Set the transport event sink.
        be delivered.  if NULL, then the notifications may occur on  
        any thread.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSink</td>
+<td>       receives transport layer notifications  
+</td>
+</tr>
+
+<tr>
+<td>aSink</td>
+<td>       receives transport layer notifications  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

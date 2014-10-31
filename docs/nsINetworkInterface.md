@@ -22,6 +22,24 @@ or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.
 @returns the length of the lists.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>ips</td>
+<td>       The list of ip addresses retrieved.  
+</td>
+</tr>
+
+<tr>
+<td>ips</td>
+<td>       The list of ip addresses retrieved.  
+</td>
+</tr>
+
+</table>
+
 ### getGateways(count, gateways) ###
   
 Get the list of gateways, could be IPv4 or IPv6, typically 1 IPv4 or 1  
@@ -33,6 +51,18 @@ IPv6 or one of each.
 @returns the list of gateways.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>count</td>
+<td>       The length of the list of gateways  
+</td>
+</tr>
+
+</table>
+
 ### getDnses(count, dnses) ###
   
 Get the list of dnses, could be IPv4 or IPv6.  
@@ -42,6 +72,18 @@ Get the list of dnses, could be IPv4 or IPv6.
   
 @returns the list of dnses.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>count</td>
+<td>       The length of the list of dnses.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

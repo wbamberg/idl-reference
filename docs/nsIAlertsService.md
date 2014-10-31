@@ -48,6 +48,93 @@ method:
       "alertfinished" notification immediately.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>imageUrl</td>
+<td>A URL identifying the image to put in the alert.  
+                      The OS X implemenation limits the amount of time it  
+                      will wait for an icon to load to six seconds. After  
+                      that time the alert will show with no icon.  
+</td>
+</tr>
+
+<tr>
+<td>imageUrl</td>
+<td>A URL identifying the image to put in the alert.  
+                      The OS X implemenation limits the amount of time it  
+                      will wait for an icon to load to six seconds. After  
+                      that time the alert will show with no icon.  
+</td>
+</tr>
+
+<tr>
+<td>imageUrl</td>
+<td>A URL identifying the image to put in the alert.  
+                      The OS X implemenation limits the amount of time it  
+                      will wait for an icon to load to six seconds. After  
+                      that time the alert will show with no icon.  
+</td>
+</tr>
+
+<tr>
+<td>imageUrl</td>
+<td>A URL identifying the image to put in the alert.  
+                      The OS X implemenation limits the amount of time it  
+                      will wait for an icon to load to six seconds. After  
+                      that time the alert will show with no icon.  
+</td>
+</tr>
+
+<tr>
+<td>imageUrl</td>
+<td>A URL identifying the image to put in the alert.  
+                      The OS X implemenation limits the amount of time it  
+                      will wait for an icon to load to six seconds. After  
+                      that time the alert will show with no icon.  
+</td>
+</tr>
+
+<tr>
+<td>imageUrl</td>
+<td>A URL identifying the image to put in the alert.  
+                      The OS X implemenation limits the amount of time it  
+                      will wait for an icon to load to six seconds. After  
+                      that time the alert will show with no icon.  
+</td>
+</tr>
+
+<tr>
+<td>imageUrl</td>
+<td>A URL identifying the image to put in the alert.  
+                      The OS X implemenation limits the amount of time it  
+                      will wait for an icon to load to six seconds. After  
+                      that time the alert will show with no icon.  
+</td>
+</tr>
+
+<tr>
+<td>imageUrl</td>
+<td>A URL identifying the image to put in the alert.  
+                      The OS X implemenation limits the amount of time it  
+                      will wait for an icon to load to six seconds. After  
+                      that time the alert will show with no icon.  
+</td>
+</tr>
+
+<tr>
+<td>imageUrl</td>
+<td>A URL identifying the image to put in the alert.  
+                      The OS X implemenation limits the amount of time it  
+                      will wait for an icon to load to six seconds. After  
+                      that time the alert will show with no icon.  
+</td>
+</tr>
+
+</table>
+
 ### closeAlert(name, principal) ###
   
 Close alerts created by the service.  
@@ -56,3 +143,17 @@ Close alerts created by the service.
                       is provided then only a notification created with  
                       no name (if any) will be closed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>The name of the notification to close. If no name  
+                      is provided then only a notification created with  
+                      no name (if any) will be closed.  
+</td>
+</tr>
+
+</table>

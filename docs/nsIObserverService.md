@@ -30,6 +30,30 @@ topic.
                    returned.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anObserve</td>
+<td>: The interface pointer which will receive notifications.  
+</td>
+</tr>
+
+<tr>
+<td>anObserve</td>
+<td>: The interface pointer which will receive notifications.  
+</td>
+</tr>
+
+<tr>
+<td>anObserve</td>
+<td>: The interface pointer which will receive notifications.  
+</td>
+</tr>
+
+</table>
+
 ### removeObserver(anObserver, aTopic) ###
   
 removeObserver  
@@ -42,6 +66,26 @@ topic.
 @param aTopic     : The notification topic or subject.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anObserver</td>
+<td>: The interface pointer which will stop recieving  
+                    notifications.  
+</td>
+</tr>
+
+<tr>
+<td>anObserver</td>
+<td>: The interface pointer which will stop recieving  
+                    notifications.  
+</td>
+</tr>
+
+</table>
+
 ### notifyObservers(aSubject, aTopic, someData) ###
   
 notifyObservers  
@@ -53,6 +97,30 @@ Notifies all registered listeners of the given topic.
 @param someData : Notification specific wide string.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSubject</td>
+<td>: Notification specific interface pointer.  
+</td>
+</tr>
+
+<tr>
+<td>aSubject</td>
+<td>: Notification specific interface pointer.  
+</td>
+</tr>
+
+<tr>
+<td>aSubject</td>
+<td>: Notification specific interface pointer.  
+</td>
+</tr>
+
+</table>
+
 ### enumerateObservers(aTopic) ###
   
 enumerateObservers  
@@ -61,3 +129,15 @@ Returns an enumeration of all registered listeners.
   
 @param aTopic   : The notification topic or subject.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTopic</td>
+<td>: The notification topic or subject.  
+</td>
+</tr>
+
+</table>

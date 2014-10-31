@@ -27,3 +27,21 @@ Retrieves the specified interface pointer.
 @throws NS_NOINTERFACE - interface not accessible.  
 @throws NS_ERROR* - method failure.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uuid</td>
+<td>The IID of the interface being requested.  
+</td>
+</tr>
+
+<tr>
+<td>uuid</td>
+<td>The IID of the interface being requested.  
+</td>
+</tr>
+
+</table>

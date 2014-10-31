@@ -22,6 +22,20 @@ the document, and if it does, prompts the user. The result is returned.
        ignored.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCallerClosesWindow</td>
+<td>indicates that the current caller will close the  
+       window. If the method returns true, all subsequent calls will be  
+       ignored.  
+</td>
+</tr>
+
+</table>
+
 ### permitUnloadInternal(aCallerClosesWindow, aShouldPrompt) ###
   
 As above, but this passes around the aShouldPrompt argument to keep  
@@ -96,6 +110,26 @@ Attach the content viewer to its DOM window and docshell.
                 documents stored in its child shell list.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aState</td>
+<td>A state object that might be useful in attaching the DOM  
+              window.  
+</td>
+</tr>
+
+<tr>
+<td>aState</td>
+<td>A state object that might be useful in attaching the DOM  
+              window.  
+</td>
+</tr>
+
+</table>
+
 ### clearHistoryEntry() ###
   
 Clears the current history entry.  This is used if we need to clear out  
@@ -144,6 +178,19 @@ NOTE: This will generate a reflow!
 @param maxLineWidth The maximum width of any line boxes on the page,  
        in CSS pixels.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>maxLineWidth</td>
+<td>The maximum width of any line boxes on the page,  
+       in CSS pixels.  
+</td>
+</tr>
+
+</table>
 
 ### pausePainting() ###
   

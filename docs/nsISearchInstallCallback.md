@@ -14,6 +14,18 @@ Called to indicate that the engine addition process succeeded.
        The nsISearchEngine object that was added (will not be null).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>engine</td>
+<td>       The nsISearchEngine object that was added (will not be null).  
+</td>
+</tr>
+
+</table>
+
 ### onError(errorCode) ###
   
 Called to indicate that the engine addition process failed.  
@@ -22,6 +34,19 @@ Called to indicate that the engine addition process failed.
        One of the ERROR_* values described above indicating the cause of  
        the failure.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>errorCode</td>
+<td>       One of the ERROR_* values described above indicating the cause of  
+       the failure.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

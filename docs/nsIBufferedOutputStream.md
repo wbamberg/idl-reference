@@ -16,3 +16,21 @@ to the underlying output stream are necessary.
 @param sinkToStream - add buffering to this stream  
 @param bufferSize   - specifies the maximum buffer size  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>sinkToStream</td>
+<td>- add buffering to this stream  
+</td>
+</tr>
+
+<tr>
+<td>sinkToStream</td>
+<td>- add buffering to this stream  
+</td>
+</tr>
+
+</table>

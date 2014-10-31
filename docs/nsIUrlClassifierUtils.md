@@ -15,3 +15,15 @@ url-decodes the string, and strips off the protocol.
   
 @returns String containing the canonicalized URI.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>URI to get the lookup key for.  
+</td>
+</tr>
+
+</table>

@@ -31,6 +31,19 @@ nsIDocument::GetLoadContext to get to the load context object.
        This can be set to null if a load context is not available.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContext</td>
+<td>the load context associated with the transferable object.  
+       This can be set to null if a load context is not available.  
+</td>
+</tr>
+
+</table>
+
 ### flavorsTransferableCanExport() ###
   
 Computes a list of flavors (mime types as nsISupportsCString) that the transferable   
@@ -39,6 +52,19 @@ can export, either through intrinsic knowledge or output data converters.
 @param  aDataFlavorList fills list with supported flavors. This is a copy of  
          the internal list, so it may be edited w/out affecting the transferable.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aDataFlavorList fills list with supported flavors. This is a copy of  
+         the internal list, so it may be edited w/out affecting the transferable.  
+</td>
+</tr>
+
+</table>
 
 ### getTransferData(aFlavor, aData, aDataLen) ###
   
@@ -49,6 +75,30 @@ Given a flavor retrieve the data.
 @param  aDataLen the length of the data  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aFlavor (in parameter) the flavor of data to retrieve  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aFlavor (in parameter) the flavor of data to retrieve  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aFlavor (in parameter) the flavor of data to retrieve  
+</td>
+</tr>
+
+</table>
+
 ### getAnyTransferData(aFlavor, aData, aDataLen) ###
   
 Returns the best flavor in the transferable, given those that have  
@@ -58,6 +108,30 @@ been added to it with |AddFlavor()|
 @param  aData the data. Some variant of class in nsISupportsPrimitives.idl  
 @param  aDataLen the length of the data  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aFlavor (out parameter) the flavor of data that was retrieved  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aFlavor (out parameter) the flavor of data that was retrieved  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aFlavor (out parameter) the flavor of data that was retrieved  
+</td>
+</tr>
+
+</table>
 
 ### isLargeDataSet() ###
   
@@ -73,6 +147,19 @@ accept into it, either through intrinsic knowledge or input data converters.
          the internal list, so it may be edited w/out affecting the transferable.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>outFlavorList fills list with supported flavors. This is a copy of  
+         the internal list, so it may be edited w/out affecting the transferable.  
+</td>
+</tr>
+
+</table>
+
 ### setTransferData(aFlavor, aData, aDataLen) ###
   
 Sets the data in the transferable with the specified flavor. The transferable  
@@ -84,6 +171,30 @@ will maintain its own copy the data, so it is not necessary to do that beforehan
 @param  aDataLen the length of the data, or 0 if passing a nsIFlavorDataProvider  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aFlavor the flavor of data that is being set  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aFlavor the flavor of data that is being set  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aFlavor the flavor of data that is being set  
+</td>
+</tr>
+
+</table>
+
 ### addDataFlavor(aDataFlavor) ###
   
 Add the data flavor, indicating that this transferable   
@@ -92,6 +203,18 @@ can receive this type of flavor
 @param  aDataFlavor a new data flavor to handle  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aDataFlavor a new data flavor to handle  
+</td>
+</tr>
+
+</table>
+
 ### removeDataFlavor(aDataFlavor) ###
   
 Removes the data flavor matching the given one (string compare) and the data  
@@ -99,6 +222,18 @@ that goes along with it.
   
 @param  aDataFlavor a data flavor to remove  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aDataFlavor a data flavor to remove  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

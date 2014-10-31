@@ -17,9 +17,15 @@ class Attribute(object):
 
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
-            processed = processDoccomment(doccomment)
+            processed = stripComments(doccomment)
             for line in processed:
                 output.write(line)
+
+
+class Param(object):
+    def __init__(self, name, doc):
+        self.name = name
+        self.doc = doc
 
 class Method(object):
     def __init__(self, spec):
@@ -30,6 +36,20 @@ class Method(object):
     def write(self, output):
         md.writeH3(self.signature(), output)
         self.writeDoccomments(output)
+        self.writeParams(output)
+
+    def writeParams(self, output):
+        params = self.paramGenerator(self.doccomments)
+        try:
+            first = params.next()
+            md.writeH4("Parameters", output)
+            md.writeTableStart(output)
+            md.writeTableRow([first.name, first.doc], output)
+        except StopIteration:
+            return
+        for param in params:
+            md.writeTableRow([first.name, first.doc], output)
+        md.writeTableEnd(output)
 
     def signature(self):
         signature = self.name + "("
@@ -40,9 +60,48 @@ class Method(object):
         signature += ")"
         return signature
 
+    def getParamNameFromLine(self, line):
+        return line.split(" ", 1)[0]
+
+    def lineIsEmpty(self, line):
+        return not line.rstrip()
+
+    # this function assumes that:
+    # - lines starting with @param are the start of param doc blocks
+    # - the next complete word after @param is the param name
+    # - the rest of that line is param documentation
+    # - any subsequent lines are param documentation until
+    # the param doc block is ended by any of:
+    #    - a new @param line
+    #    - an @return line
+    #    - an empty line
+    #    - the end of the whole comment block
+    def paramGenerator(self, doccomments):
+        lines = []
+        for doccomment in self.doccomments:
+            lines += stripComments(doccomment)
+        processingParamRightNow = False
+        for line in lines:
+            if line.startswith("@param"):
+                if processingParamRightNow:
+                    yield Param(name, doc)
+                processingParamRightNow = True
+                line = line[len("@param "):]
+                name = self.getParamNameFromLine(line)
+                doc = line[len(name):].lstrip()
+            elif line.startswith("@return") or self.lineIsEmpty(line):
+                if processingParamRightNow:
+                    yield Param(name, doc)
+                processingParamRightNow = False
+            else:
+                if processingParamRightNow:
+                    doc += line
+        if processingParamRightNow:
+            yield Param(name, doc)
+
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
-            processed = processDoccomment(doccomment)
+            processed = stripComments(doccomment)
             for line in processed:
                 output.write(line)
 
@@ -57,7 +116,7 @@ class Constant(object):
 
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
-            processed = processDoccomment(doccomment)
+            processed = stripComments(doccomment)
             for line in processed:
                 output.write(line)
 
@@ -80,7 +139,7 @@ class Interface(object):
 
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
-            processed = processDoccomment(doccomment)
+            processed = stripComments(doccomment)
             for line in processed:
                 output.write(line)
 
@@ -90,7 +149,7 @@ class Interface(object):
         for member in members:
             member.write(output)
 
-def processDoccomment(doccomment):
+def stripComments(doccomment):
     processed = []
     lines = doccomment.splitlines()
     for line in lines:

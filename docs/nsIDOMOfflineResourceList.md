@@ -14,6 +14,18 @@ Check that an entry exists in the list of dynamically-managed entries.
        The resource to check.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>       The resource to check.  
+</td>
+</tr>
+
+</table>
+
 ### mozItem(index) ###
   
 Get the URI of a dynamically-managed entry.  
@@ -30,6 +42,18 @@ will be fetched into the application cache.
        The resource to add.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>       The resource to add.  
+</td>
+</tr>
+
+</table>
+
 ### mozRemove(uri) ###
   
 Remove an item from the list of dynamically-managed entries.  If this  
@@ -39,6 +63,18 @@ entry will be removed.
 @param uri  
        The resource to remove.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>       The resource to remove.  
+</td>
+</tr>
+
+</table>
 
 ### update() ###
   

@@ -30,6 +30,18 @@ unlockMinimumBrightness, with the same brightness level.
 @param brightness A brightness level, one of the above constants.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>brightness</td>
+<td>A brightness level, one of the above constants.  
+</td>
+</tr>
+
+</table>
+
 ### unlockMinimumBrightness(brightness) ###
   
 Releases a lock on the screen brightness. This must be called  
@@ -37,6 +49,18 @@ Releases a lock on the screen brightness. This must be called
   
 @param brightness A brightness level, one of the above constants.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>brightness</td>
+<td>A brightness level, one of the above constants.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

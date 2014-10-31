@@ -29,6 +29,36 @@ send to the search engine, including the URI and postData, if applicable.
          obtained for the given responseType, returns null.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>data  
+        Data to add to the submission object.  
+        i.e. the search terms.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>data  
+        Data to add to the submission object.  
+        i.e. the search terms.  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>data  
+        Data to add to the submission object.  
+        i.e. the search terms.  
+</td>
+</tr>
+
+</table>
+
 ### addParam(name, value, responseType) ###
   
 Adds a parameter to the search engine's submission data. This should only  
@@ -52,6 +82,30 @@ be called on engines created via addEngineWithDetails.
 @throws NS_ERROR_INVALID_ARG if name or value are null.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>name</td>
+<td>       The parameter's name. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The parameter's name. Must not be null.  
+</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>       The parameter's name. Must not be null.  
+</td>
+</tr>
+
+</table>
+
 ### supportsResponseType(responseType) ###
   
 Determines whether the engine can return responses in the given  
@@ -61,6 +115,18 @@ given responseType, false otherwise.
 @param responseType  
        The MIME type to check for  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>responseType</td>
+<td>       The MIME type to check for  
+</td>
+</tr>
+
+</table>
 
 ### getIconURLBySize(width, height) ###
   
@@ -72,6 +138,24 @@ height. Returns null if icon with specified dimensions is not found.
 @param height  
        Height of the requested icon.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>width</td>
+<td>       Width of the requested icon.  
+</td>
+</tr>
+
+<tr>
+<td>width</td>
+<td>       Width of the requested icon.  
+</td>
+</tr>
+
+</table>
 
 ### getIcons() ###
   
@@ -94,6 +178,20 @@ Opens a speculative connection to the engine's search URI
         elemeents  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>options  
+        An object that must contain the following fields:  
+        {window} the content window for the window performing the search  
+</td>
+</tr>
+
+</table>
+
 ### getResultDomain(responseType) ###
   
 Gets a string representing the hostname from which search results for a  
@@ -106,6 +204,19 @@ but will default to host from the <Url>'s template otherwise.
   
 @return the resultDomain for the given responseType.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>responseType [optional]  
+        The MIME type to get resultDomain for.  Defaults to "text/html".  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

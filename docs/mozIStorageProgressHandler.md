@@ -19,3 +19,16 @@ onProgress is invoked periodically during long running calls.
   
 @return true to abort request, false to continue work.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aConnection</td>
+<td>connection, for which progress handler is  
+                      invoked.  
+</td>
+</tr>
+
+</table>

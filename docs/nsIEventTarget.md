@@ -24,6 +24,24 @@ any thread, and it may be called re-entrantly.
 events, so this event would never run and has not been dispatched.   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>event</td>
+<td>  The event to dispatch.  
+</td>
+</tr>
+
+<tr>
+<td>event</td>
+<td>  The event to dispatch.  
+</td>
+</tr>
+
+</table>
+
 ### isOnCurrentThread() ###
   
 Check to see if this event target is associated with the current thread.  

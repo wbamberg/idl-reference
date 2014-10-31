@@ -26,6 +26,18 @@ Get the index of a direct child in this container.
 container.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNode</td>
+<td>       a result node.  
+</td>
+</tr>
+
+</table>
+
 ### findNodeByDetails(aURIString, aTime, aItemId, aRecursive) ###
   
 Look for a node in the container by some of its details.  Does not search  
@@ -44,6 +56,36 @@ closed containers.
 @return a result node that matches the given details if any, null  
         otherwise.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       the node's uri attribute value  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the node's uri attribute value  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the node's uri attribute value  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       the node's uri attribute value  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

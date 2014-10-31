@@ -22,3 +22,33 @@ Receive WAP Push message.
 @param options  
        An object containing various attributes from lower transport layer.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aData</td>
+<td>       An array containing raw PDU data.  
+</td>
+</tr>
+
+<tr>
+<td>aData</td>
+<td>       An array containing raw PDU data.  
+</td>
+</tr>
+
+<tr>
+<td>aData</td>
+<td>       An array containing raw PDU data.  
+</td>
+</tr>
+
+<tr>
+<td>aData</td>
+<td>       An array containing raw PDU data.  
+</td>
+</tr>
+
+</table>

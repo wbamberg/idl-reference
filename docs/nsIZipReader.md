@@ -100,12 +100,39 @@ Returns a string enumerator containing the matching entry names.
                                values.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPattern</td>
+<td>  A regular expression used to find matching entries in the zip file.  
+  Set this parameter to null (javascript) or EmptyCString() (c++) or "*"   
+  to get all entries; otherwise, use the  
+  following syntax:  
+</td>
+</tr>
+
+</table>
+
 ### getInputStream(zipEntry) ###
   
 Returns an input stream containing the contents of the specified zip  
 entry.  
 @param zipEntry the name of the entry to open the stream from  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>zipEntry</td>
+<td>the name of the entry to open the stream from  
+</td>
+</tr>
+
+</table>
 
 ### getInputStreamWithSpec(aJarSpec, zipEntry) ###
   
@@ -115,6 +142,24 @@ is opened, otherwise the contents of the file entry is returned.
 @param aJarSpec the Spec of the URI for the JAR (only used for directory streams)  
 @param zipEntry the name of the entry to open the stream from  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aJarSpec</td>
+<td>the Spec of the URI for the JAR (only used for directory streams)  
+</td>
+</tr>
+
+<tr>
+<td>aJarSpec</td>
+<td>the Spec of the URI for the JAR (only used for directory streams)  
+</td>
+</tr>
+
+</table>
 
 ### getSigningCert(aEntryName) ###
   

@@ -25,3 +25,23 @@ Start querying the application reputation service.
          will solicit a valid response, but won't produce any useful  
          information.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aQuery</td>
+<td>       The nsIApplicationReputationQuery containing metadata of the  
+       downloaded file.  
+</td>
+</tr>
+
+<tr>
+<td>aQuery</td>
+<td>       The nsIApplicationReputationQuery containing metadata of the  
+       downloaded file.  
+</td>
+</tr>
+
+</table>

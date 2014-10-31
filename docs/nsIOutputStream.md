@@ -50,6 +50,24 @@ Write data into the stream.
 @throws <other-error> on failure  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBuf</td>
+<td>the buffer containing the data to be written  
+</td>
+</tr>
+
+<tr>
+<td>aBuf</td>
+<td>the buffer containing the data to be written  
+</td>
+</tr>
+
+</table>
+
 ### writeFrom(aFromStream, aCount) ###
   
 Writes data into the stream from an input stream.  
@@ -70,6 +88,24 @@ its internal buffer (if any). If this method was provided as an external
 facility, a separate char* buffer would need to be used in order to call  
 the output stream's other Write method.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFromStream</td>
+<td>the stream containing the data to be written  
+</td>
+</tr>
+
+<tr>
+<td>aFromStream</td>
+<td>the stream containing the data to be written  
+</td>
+</tr>
+
+</table>
 
 ### writeSegments(aReader, aClosure, aCount) ###
   
@@ -94,6 +130,30 @@ should not call the reader with zero bytes to provide.
 NOTE: this function may be unimplemented if a stream has no underlying  
 buffer (e.g., socket output stream).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aReader</td>
+<td>the "provider" of the data to be written  
+</td>
+</tr>
+
+<tr>
+<td>aReader</td>
+<td>the "provider" of the data to be written  
+</td>
+</tr>
+
+<tr>
+<td>aReader</td>
+<td>the "provider" of the data to be written  
+</td>
+</tr>
+
+</table>
 
 ### isNonBlocking() ###
   

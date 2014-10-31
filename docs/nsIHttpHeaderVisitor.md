@@ -21,3 +21,21 @@ response headers.
   
 @throw any exception to terminate enumeration  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHeader</td>
+<td>       the header being visited.  
+</td>
+</tr>
+
+<tr>
+<td>aHeader</td>
+<td>       the header being visited.  
+</td>
+</tr>
+
+</table>

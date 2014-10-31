@@ -16,6 +16,19 @@ Load a new URI into this browser tab.
          The uri to load into the browser tab  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aURI  
+         The uri to load into the browser tab  
+</td>
+</tr>
+
+</table>
+
 ### focus() ###
   
 Give focus to this browser tab, and bring it to the front.  
@@ -33,6 +46,19 @@ Moves this browser tab before another browser tab within the window.
 @param   aBefore  
          The tab before which the target tab will be moved  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aBefore  
+         The tab before which the target tab will be moved  
+</td>
+</tr>
+
+</table>
 
 ### moveToEnd() ###
   

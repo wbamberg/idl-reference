@@ -31,6 +31,30 @@ Go back to the beginning of the attribute list
 @param aMakeRel Rewrite links as relative vs. absolute  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aOldPat</td>
+<td>Old pattern to be replaced, e.g. file:///a/b/  
+</td>
+</tr>
+
+<tr>
+<td>aOldPat</td>
+<td>Old pattern to be replaced, e.g. file:///a/b/  
+</td>
+</tr>
+
+<tr>
+<td>aOldPat</td>
+<td>Old pattern to be replaced, e.g. file:///a/b/  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### node ###

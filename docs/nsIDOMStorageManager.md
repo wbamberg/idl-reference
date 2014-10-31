@@ -33,6 +33,36 @@ a storage for the scope created.
    Whether the demanding document is running in Private Browsing mode or not.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>   The parent window.  
+</td>
+</tr>
+
+<tr>
+<td>aWindow</td>
+<td>   The parent window.  
+</td>
+</tr>
+
+<tr>
+<td>aWindow</td>
+<td>   The parent window.  
+</td>
+</tr>
+
+<tr>
+<td>aWindow</td>
+<td>   The parent window.  
+</td>
+</tr>
+
+</table>
+
 ### getStorage(aWindow, aPrincipal, aPrivate) ###
   
 Returns instance of DOM storage object for given principal.  
@@ -48,6 +78,30 @@ scope is returned.
    Whether the demanding document is running in Private Browsing mode or not.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWindow</td>
+<td>   The parent window.  
+</td>
+</tr>
+
+<tr>
+<td>aWindow</td>
+<td>   The parent window.  
+</td>
+</tr>
+
+<tr>
+<td>aWindow</td>
+<td>   The parent window.  
+</td>
+</tr>
+
+</table>
+
 ### cloneStorage(aStorageToCloneFrom) ###
   
 Clones given storage into this storage manager.  
@@ -58,6 +112,21 @@ Clones given storage into this storage manager.
    the moment this method was called.  Modification to this new object will  
    not affect the original storage content we cloned from and vice versa.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStorageToCloneFrom</td>
+<td>   The storage to copy all items from into this manager.  Manager will then  
+   return a new and independent object that contains snapshot of data from  
+   the moment this method was called.  Modification to this new object will  
+   not affect the original storage content we cloned from and vice versa.  
+</td>
+</tr>
+
+</table>
 
 ### checkStorage(aPrincipal, aStorage) ###
   
@@ -74,6 +143,24 @@ Returns true if the storage belongs to the given principal and is managed
         by this storage manager.  
    false otherwise  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrincipal</td>
+<td>   Principal to check the storage against.  
+</td>
+</tr>
+
+<tr>
+<td>aPrincipal</td>
+<td>   Principal to check the storage against.  
+</td>
+</tr>
+
+</table>
 
 ### getLocalStorageForPrincipal(aPrincipal, aDocumentURI, aPrivate) ###
   

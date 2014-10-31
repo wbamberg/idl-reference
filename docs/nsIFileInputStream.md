@@ -21,6 +21,36 @@ An input stream that allows you to read from a file.
        (see enumerations in the class)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>file</td>
+<td>file to read from  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from  
+</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>file to read from  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### DELETE_ON_CLOSE ###

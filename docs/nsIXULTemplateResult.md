@@ -35,6 +35,18 @@ name, thus aVar should be ?name and not simply name.
 @return the value for the variable or a null string if it has no value  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aVar</td>
+<td>the variable to look up  
+</td>
+</tr>
+
+</table>
+
 ### getBindingObjectFor(aVar) ###
   
 Get an object value for a variable such as ?name for this result.   
@@ -48,6 +60,18 @@ convenience when sorting results.
 @return the value for the variable or null if it has no value  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aVar</td>
+<td>the variable to look up  
+</td>
+</tr>
+
+</table>
+
 ### ruleMatched(aQuery, aRuleNode) ###
   
 Indicate that a particular rule of a query has matched and that output  
@@ -60,6 +84,24 @@ the <query> element that was used to compile the query.
 @param aQuery the query that matched  
 @param aRuleNode the rule node that matched  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aQuery</td>
+<td>the query that matched  
+</td>
+</tr>
+
+<tr>
+<td>aQuery</td>
+<td>the query that matched  
+</td>
+</tr>
+
+</table>
 
 ### hasBeenRemoved() ###
   

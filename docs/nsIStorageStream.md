@@ -24,6 +24,24 @@ allocated for the stream's backing-store.
        than or equal to this value. Passing UINT32_MAX is safe.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>segmentSize</td>
+<td>       Size of each segment. Must be a power of two.  
+</td>
+</tr>
+
+<tr>
+<td>segmentSize</td>
+<td>       Size of each segment. Must be a power of two.  
+</td>
+</tr>
+
+</table>
+
 ### getOutputStream(startPosition) ###
   
 Get a reference to the one and only output stream for this instance.  

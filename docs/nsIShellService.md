@@ -21,3 +21,33 @@ the our application.
 @param aIconData  a base64-encoded data: URI representation of the shortcut's icon, as accepted by the favicon decoder.  
 @param aIntent    obsolete and ignored, but remains for backward compatibility; pass an empty string  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTitle</td>
+<td>the user-friendly name of the shortcut.  
+</td>
+</tr>
+
+<tr>
+<td>aTitle</td>
+<td>the user-friendly name of the shortcut.  
+</td>
+</tr>
+
+<tr>
+<td>aTitle</td>
+<td>the user-friendly name of the shortcut.  
+</td>
+</tr>
+
+<tr>
+<td>aTitle</td>
+<td>the user-friendly name of the shortcut.  
+</td>
+</tr>
+
+</table>

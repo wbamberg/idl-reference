@@ -16,6 +16,19 @@ Open a new browser tab, pointing to the specified URI.
          The uri to open the browser tab to  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aURI  
+         The uri to open the browser tab to  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### tabs ###

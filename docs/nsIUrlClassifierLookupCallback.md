@@ -22,3 +22,18 @@ The lookup process is complete.
        with possible matches.  The callee is responsible for freeing  
        this array.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>results</td>
+<td>       If this parameter is null, there were no results found.  
+       If not, it contains an array of nsUrlClassifierEntry objects  
+       with possible matches.  The callee is responsible for freeing  
+       this array.  
+</td>
+</tr>
+
+</table>

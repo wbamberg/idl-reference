@@ -57,6 +57,19 @@ process aborts.
 @result the block of memory  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>size</td>
+<td>- the size of the block to allocate  
+@result the block of memory  
+</td>
+</tr>
+
+</table>
+
 ### realloc(ptr, newSize) ###
   
 Reallocates a block of memory to a new size.  
@@ -72,6 +85,24 @@ If the allocation succeeds, ptr is freed and a pointer to the
 new block returned.  If the allocation fails, the process aborts.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>ptr</td>
+<td>- the block of memory to reallocate  
+</td>
+</tr>
+
+<tr>
+<td>ptr</td>
+<td>- the block of memory to reallocate  
+</td>
+</tr>
+
+</table>
+
 ### free(ptr) ###
   
 Frees a block of memory. Null is a permissible value, in which case  
@@ -79,6 +110,18 @@ nothing happens.
   
 @param ptr - the block of memory to free  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>ptr</td>
+<td>- the block of memory to free  
+</td>
+</tr>
+
+</table>
 
 ### heapMinimize(immediate) ###
   
@@ -90,6 +133,23 @@ Attempts to shrink the heap.
 @throws NS_ERROR_FAILURE if 'immediate' is set an the call  
   was not on the application's main thread.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>immediate</td>
+<td>- if true, heap minimization will occur  
+  immediately if the call was made on the main thread. If  
+  false, the flush will be scheduled to happen when the app is  
+  idle.  
+@throws NS_ERROR_FAILURE if 'immediate' is set an the call  
+  was not on the application's main thread.  
+</td>
+</tr>
+
+</table>
 
 ### isLowMemory() ###
   

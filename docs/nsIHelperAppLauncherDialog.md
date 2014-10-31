@@ -34,6 +34,30 @@ disk") for content specified by aLauncher.
        REASON_CANTHANDLE.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+</table>
+
 ### promptForSaveToFile(aLauncher, aWindowContext, aDefaultFileName, aSuggestedFileExtension, aForcePrompt) ###
   
 Invoke a save-to-file dialog instead of the full fledged helper app dialog.  
@@ -56,6 +80,42 @@ Returns the a nsIFile for the file name/location selected.
                                should be used.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+</table>
+
 ### promptForSaveToFileAsync(aLauncher, aWindowContext, aDefaultFileName, aSuggestedFileExtension, aForcePrompt) ###
   
 Async invoke a save-to-file dialog instead of the full fledged helper app  
@@ -76,6 +136,42 @@ selected file.
        name/location, otherwise perferences may control if the user is  
        prompted.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+<tr>
+<td>aLauncher</td>
+<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

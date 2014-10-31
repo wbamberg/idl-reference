@@ -98,6 +98,44 @@ optional).
        startElement returns is undefined  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>the Namespace URI, or the empty string if the  
+       element has no Namespace URI or if Namespace  
+       processing is not being performed  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the Namespace URI, or the empty string if the  
+       element has no Namespace URI or if Namespace  
+       processing is not being performed  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the Namespace URI, or the empty string if the  
+       element has no Namespace URI or if Namespace  
+       processing is not being performed  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the Namespace URI, or the empty string if the  
+       element has no Namespace URI or if Namespace  
+       processing is not being performed  
+</td>
+</tr>
+
+</table>
+
 ### endElement(uri, localName, qName) ###
   
 Receive notification of the end of an element.  
@@ -119,6 +157,36 @@ For information on the names, see startElement.
        empty string if qualified names are not available  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>the Namespace URI, or the empty string if the  
+       element has no Namespace URI or if Namespace  
+       processing is not being performed  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the Namespace URI, or the empty string if the  
+       element has no Namespace URI or if Namespace  
+       processing is not being performed  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>the Namespace URI, or the empty string if the  
+       element has no Namespace URI or if Namespace  
+       processing is not being performed  
+</td>
+</tr>
+
+</table>
+
 ### characters(value) ###
   
 Receive notification of character data.  
@@ -136,6 +204,18 @@ content using the ignorableWhitespace method rather than this one
   
 @param value the characters from the XML document  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>value</td>
+<td>the characters from the XML document  
+</td>
+</tr>
+
+</table>
 
 ### processingInstruction(target, data) ###
   
@@ -155,6 +235,24 @@ this method.
        whitespace separating it from the target  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>target</td>
+<td>the processing instruction target  
+</td>
+</tr>
+
+<tr>
+<td>target</td>
+<td>the processing instruction target  
+</td>
+</tr>
+
+</table>
+
 ### ignorableWhitespace(whitespace) ###
   
 Receive notification of ignorable whitespace in element content.  
@@ -172,6 +270,18 @@ external entity, so that the Locator provides useful information.
   
 @param whitespace the characters from the XML document  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>whitespace</td>
+<td>the characters from the XML document  
+</td>
+</tr>
+
+</table>
 
 ### startPrefixMapping(prefix, uri) ###
   
@@ -205,6 +315,28 @@ There should never be start/endPrefixMapping events for the
 @param uri The Namespace URI the prefix is mapped to.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>prefix</td>
+<td>The Namespace prefix being declared. An empty  
+              string is used for the default element namespace,  
+              which has no prefix.  
+</td>
+</tr>
+
+<tr>
+<td>prefix</td>
+<td>The Namespace prefix being declared. An empty  
+              string is used for the default element namespace,  
+              which has no prefix.  
+</td>
+</tr>
+
+</table>
+
 ### endPrefixMapping(prefix) ###
   
 End the scope of a prefix-URI mapping.  
@@ -216,3 +348,16 @@ the order of endPrefixMapping events is not otherwise guaranteed.
 @param prefix The prefix that was being mapped. This is the empty  
               string when a default mapping scope ends.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>prefix</td>
+<td>The prefix that was being mapped. This is the empty  
+              string when a default mapping scope ends.  
+</td>
+</tr>
+
+</table>

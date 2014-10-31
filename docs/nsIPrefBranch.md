@@ -31,6 +31,18 @@ Called to determine the type of a specific preference.
                  value will be PREF_STRING, PREF_INT, or PREF_BOOL.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The preference to get the type of.  
+</td>
+</tr>
+
+</table>
+
 ### getBoolPref(aPrefName) ###
   
 Called to get the state of an individual boolean preference.  
@@ -41,6 +53,18 @@ Called to get the state of an individual boolean preference.
   
 @see setBoolPref  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The boolean preference to get the state of.  
+</td>
+</tr>
+
+</table>
 
 ### setBoolPref(aPrefName, aValue) ###
   
@@ -55,6 +79,24 @@ value of a type other than boolean.
 @see getBoolPref  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The boolean preference to set the state of.  
+</td>
+</tr>
+
+<tr>
+<td>aPrefName</td>
+<td>The boolean preference to set the state of.  
+</td>
+</tr>
+
+</table>
+
 ### getFloatPref(aPrefName) ###
   
 Called to get the state of an individual floating-point preference.  
@@ -68,6 +110,18 @@ are converted to floating point numbers.
 @see setCharPref  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The floating point preference to get the state of.  
+</td>
+</tr>
+
+</table>
+
 ### getCharPref(aPrefName) ###
   
 Called to get the state of an individual string preference.  
@@ -78,6 +132,18 @@ Called to get the state of an individual string preference.
   
 @see setCharPref  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The string preference to retrieve.  
+</td>
+</tr>
+
+</table>
 
 ### setCharPref(aPrefName, aValue) ###
   
@@ -92,6 +158,24 @@ value of a type other than string.
 @see getCharPref  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The string preference to set.  
+</td>
+</tr>
+
+<tr>
+<td>aPrefName</td>
+<td>The string preference to set.  
+</td>
+</tr>
+
+</table>
+
 ### getIntPref(aPrefName) ###
   
 Called to get the state of an individual integer preference.  
@@ -102,6 +186,18 @@ Called to get the state of an individual integer preference.
   
 @see setIntPref  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The integer preference to get the value of.  
+</td>
+</tr>
+
+</table>
 
 ### setIntPref(aPrefName, aValue) ###
   
@@ -115,6 +211,24 @@ value of a type other than integer.
   
 @see getIntPref  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The integer preference to set the value of.  
+</td>
+</tr>
+
+<tr>
+<td>aPrefName</td>
+<td>The integer preference to set the value of.  
+</td>
+</tr>
+
+</table>
 
 ### getComplexValue(aPrefName, aType, aValue) ###
   
@@ -136,6 +250,30 @@ be easily represented using a standard boolean, integer or string value.
 @see setComplexValue  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The complex preference to get the value of.  
+</td>
+</tr>
+
+<tr>
+<td>aPrefName</td>
+<td>The complex preference to get the value of.  
+</td>
+</tr>
+
+<tr>
+<td>aPrefName</td>
+<td>The complex preference to get the value of.  
+</td>
+</tr>
+
+</table>
+
 ### setComplexValue(aPrefName, aType, aValue) ###
   
 Called to set the state of an individual complex preference. A complex  
@@ -156,6 +294,30 @@ be easily represented using a standard boolean, integer or string value.
 @see getComplexValue  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The complex preference to set the value of.  
+</td>
+</tr>
+
+<tr>
+<td>aPrefName</td>
+<td>The complex preference to set the value of.  
+</td>
+</tr>
+
+<tr>
+<td>aPrefName</td>
+<td>The complex preference to set the value of.  
+</td>
+</tr>
+
+</table>
+
 ### clearUserPref(aPrefName) ###
   
 Called to clear a user set value from a specific preference. This will, in  
@@ -167,6 +329,18 @@ the preference will cease to exist.
 @note  
 This method does nothing if this object is a default branch.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The preference to be cleared.  
+</td>
+</tr>
+
+</table>
 
 ### lockPref(aPrefName) ###
   
@@ -184,6 +358,18 @@ effect, always operates on the default branch.
   
 @see unlockPref  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The preference to be locked.  
+</td>
+</tr>
+
+</table>
 
 ### prefHasUserValue(aPrefName) ###
   
@@ -207,6 +393,18 @@ the preference will not be saved to a file by nsIPrefService.savePrefFile.
                  false The preference only has a default value.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The preference to be tested.  
+</td>
+</tr>
+
+</table>
+
 ### prefIsLocked(aPrefName) ###
   
 Called to check if a specific preference is locked. If a preference is  
@@ -225,6 +423,18 @@ effect, always operates on the default branch.
 @see unlockPref  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The preference to be tested.  
+</td>
+</tr>
+
+</table>
+
 ### unlockPref(aPrefName) ###
   
 Called to unlock a specific preference. Unlocking a previously locked   
@@ -242,6 +452,18 @@ effect, always operates on the default branch.
 @see lockPref  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrefName</td>
+<td>The preference to be unlocked.  
+</td>
+</tr>
+
+</table>
+
 ### deleteBranch(aStartingAt) ###
   
 Called to remove all of the preferences referenced by this branch.  
@@ -256,6 +478,20 @@ effect, always operates on both.
   
 @throws Error The preference(s) do not exist or an error occurred.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStartingAt</td>
+<td>The point on the branch at which to start the deleting  
+                   preferences. Pass in "" to remove all preferences  
+                   referenced by this branch.  
+</td>
+</tr>
+
+</table>
 
 ### getChildList(aStartingAt, aCount, aChildArray) ###
   
@@ -275,6 +511,36 @@ effect, always operates on both.
 @throws Error The preference(s) do not exist or an error occurred.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStartingAt</td>
+<td>The point on the branch at which to start enumerating  
+                   the child preferences. Pass in "" to enumerate all  
+                   preferences referenced by this branch.  
+</td>
+</tr>
+
+<tr>
+<td>aStartingAt</td>
+<td>The point on the branch at which to start enumerating  
+                   the child preferences. Pass in "" to enumerate all  
+                   preferences referenced by this branch.  
+</td>
+</tr>
+
+<tr>
+<td>aStartingAt</td>
+<td>The point on the branch at which to start enumerating  
+                   the child preferences. Pass in "" to enumerate all  
+                   preferences referenced by this branch.  
+</td>
+</tr>
+
+</table>
+
 ### resetBranch(aStartingAt) ###
   
 Called to reset all of the preferences referenced by this branch to their  
@@ -290,6 +556,20 @@ effect, always operates on the user branch.
   
 @throws Error The preference(s) do not exist or an error occurred.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStartingAt</td>
+<td>The point on the branch at which to start the resetting  
+                   preferences to their default values. Pass in "" to  
+                   reset all preferences referenced by this branch.  
+</td>
+</tr>
+
+</table>
 
 ### addObserver(aDomain, aObserver, aHoldWeak) ###
   
@@ -353,6 +633,42 @@ please use an nsITimer.
 @see removeObserver  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDomain</td>
+<td>The preference on which to listen for changes. This can  
+                 be the name of an entire branch to observe.  
+                 e.g. Holding the "root" prefbranch and calling  
+                 addObserver("foo.bar.", ...) will observe changes to  
+                 foo.bar.baz and foo.bar.bzip  
+</td>
+</tr>
+
+<tr>
+<td>aDomain</td>
+<td>The preference on which to listen for changes. This can  
+                 be the name of an entire branch to observe.  
+                 e.g. Holding the "root" prefbranch and calling  
+                 addObserver("foo.bar.", ...) will observe changes to  
+                 foo.bar.baz and foo.bar.bzip  
+</td>
+</tr>
+
+<tr>
+<td>aDomain</td>
+<td>The preference on which to listen for changes. This can  
+                 be the name of an entire branch to observe.  
+                 e.g. Holding the "root" prefbranch and calling  
+                 addObserver("foo.bar.", ...) will observe changes to  
+                 foo.bar.baz and foo.bar.bzip  
+</td>
+</tr>
+
+</table>
+
 ### removeObserver(aDomain, aObserver) ###
   
 Remove a preference change observer.  
@@ -368,6 +684,24 @@ otherwise, the observer will not be removed.
 @see nsIObserver  
 @see addObserver  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aDomain</td>
+<td>The preference which is being observed for changes.  
+</td>
+</tr>
+
+<tr>
+<td>aDomain</td>
+<td>The preference which is being observed for changes.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

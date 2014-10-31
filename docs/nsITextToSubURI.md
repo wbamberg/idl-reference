@@ -27,6 +27,24 @@ Note:
 @return Unescaped aURIFragment  converted to unicode  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCharset</td>
+<td>the charset to convert from  
+</td>
+</tr>
+
+<tr>
+<td>aCharset</td>
+<td>the charset to convert from  
+</td>
+</tr>
+
+</table>
+
 ### unEscapeNonAsciiURI(aCharset, aURIFragment) ###
   
 Unescapes only non ASCII characters in the given URI fragment   
@@ -39,3 +57,21 @@ charset if the charset is an ASCII superset
 @throws NS_ERROR_UCONV_NOCONV when there is no decoder for aCharset  
         or error code of nsIUnicodeDecoder in case of conversion failure  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCharset</td>
+<td>the charset to convert from  
+</td>
+</tr>
+
+<tr>
+<td>aCharset</td>
+<td>the charset to convert from  
+</td>
+</tr>
+
+</table>

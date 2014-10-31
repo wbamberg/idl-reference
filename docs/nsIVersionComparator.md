@@ -43,3 +43,21 @@ Compare two version strings
          = 0 if A == B  
          > 0 if A > B  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>A   The first version  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>A   The first version  
+</td>
+</tr>
+
+</table>

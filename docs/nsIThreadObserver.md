@@ -44,6 +44,18 @@ This method may be called from any thread.
   The thread where the event is being dispatched.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>thread</td>
+<td>  The thread where the event is being dispatched.  
+</td>
+</tr>
+
+</table>
+
 ### onProcessNextEvent(thread, mayWait, recursionDepth) ###
   
 This method is called when nsIThread::ProcessNextEvent is called.  It does  
@@ -59,6 +71,30 @@ is only called on the target thread.
   Indicates the number of calls to ProcessNextEvent on the call stack in  
   addition to the current call.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>thread</td>
+<td>  The thread being asked to process another event.  
+</td>
+</tr>
+
+<tr>
+<td>thread</td>
+<td>  The thread being asked to process another event.  
+</td>
+</tr>
+
+<tr>
+<td>thread</td>
+<td>  The thread being asked to process another event.  
+</td>
+</tr>
+
+</table>
 
 ### afterProcessNextEvent(thread, recursionDepth, eventWasProcessed) ###
   
@@ -76,3 +112,27 @@ on the target thread.
   Indicates whether an event was actually processed. May be false if the  
   |mayWait| flag was false when calling nsIThread::ProcessNextEvent().  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>thread</td>
+<td>  The thread that processed another event.  
+</td>
+</tr>
+
+<tr>
+<td>thread</td>
+<td>  The thread that processed another event.  
+</td>
+</tr>
+
+<tr>
+<td>thread</td>
+<td>  The thread that processed another event.  
+</td>
+</tr>
+
+</table>

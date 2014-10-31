@@ -39,6 +39,30 @@ domain field.
         return value of false.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel that requires authentication.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel that requires authentication.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       The channel that requires authentication.  
+</td>
+</tr>
+
+</table>
+
 ### asyncPromptAuth(aChannel, aCallback, aContext, level, authInfo) ###
   
 Asynchronously prompt the user for a username and password.  

@@ -13,6 +13,18 @@ replacing the selected text (if any).
 @param aSelectionType Text or html?  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSelectionType</td>
+<td>Text or html?  
+</td>
+</tr>
+
+</table>
+
 ### insertAsQuotation(aQuotedText) ###
  Insert a string as quoted text  
 (whose representation is dependant on the editor type),  
@@ -20,6 +32,18 @@ replacing the selected text (if any).
 @param aQuotedText  The actual text to be quoted  
 @return             The node which was inserted  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aQuotedText</td>
+<td>The actual text to be quoted  
+</td>
+</tr>
+
+</table>
 
 ### insertTextWithQuotations(aStringToInsert) ###
   
@@ -33,6 +57,18 @@ and the insertion takes place at the resulting collapsed selection.
 @param aString   the string to be inserted  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aString</td>
+<td>the string to be inserted  
+</td>
+</tr>
+
+</table>
+
 ### pasteAsCitedQuotation(aCitation, aSelectionType) ###
  Paste a string as quoted text,  
 whose representation is dependant on the editor type,  
@@ -40,6 +76,24 @@ replacing the selected text (if any)
 @param aCitation    The "mid" URL of the source message  
 @param aSelectionType Text or html?  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCitation</td>
+<td>The "mid" URL of the source message  
+</td>
+</tr>
+
+<tr>
+<td>aCitation</td>
+<td>The "mid" URL of the source message  
+</td>
+</tr>
+
+</table>
 
 ### insertAsCitedQuotation(aQuotedText, aCitation, aInsertHTML) ###
  Insert a string as quoted text  
@@ -52,11 +106,47 @@ including, if possible, a "cite" attribute.
 @return             The node which was inserted  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aQuotedText</td>
+<td>The actual text to be quoted  
+</td>
+</tr>
+
+<tr>
+<td>aQuotedText</td>
+<td>The actual text to be quoted  
+</td>
+</tr>
+
+<tr>
+<td>aQuotedText</td>
+<td>The actual text to be quoted  
+</td>
+</tr>
+
+</table>
+
 ### rewrap(aRespectNewlines) ###
   
 Rewrap the selected part of the document, re-quoting if necessary.  
 @param aRespectNewlines  Try to maintain newlines in the original?  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRespectNewlines</td>
+<td>Try to maintain newlines in the original?  
+</td>
+</tr>
+
+</table>
 
 ### stripCites() ###
   

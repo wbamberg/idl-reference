@@ -26,6 +26,19 @@ be a no-op.
          The nsIUpdate object to be downloaded and installed  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>update  
+         The nsIUpdate object to be downloaded and installed  
+</td>
+</tr>
+
+</table>
+
 ### showUpdateDownloaded(update, background) ###
   
 Shows the application update downloaded user interface advising that an  
@@ -37,6 +50,26 @@ and the app.update.silent preference is true the call will be a no-op.
 @param   background  
          Less obtrusive UI, starting with a non-modal notification alert  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>update  
+         The nsIUpdate object that was downloaded  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>update  
+         The nsIUpdate object that was downloaded  
+</td>
+</tr>
+
+</table>
 
 ### showUpdateInstalled() ###
   
@@ -58,9 +91,38 @@ preference is true the call will be a no-op.
          nsIUpdate object with the error information for the update check.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>update  
+         An nsIUpdate object representing the update that could not be  
+         installed. The nsIUpdate object will not be the actual update when  
+         the error occurred during an update check and will instead be an  
+         nsIUpdate object with the error information for the update check.  
+</td>
+</tr>
+
+</table>
+
 ### showUpdateHistory(parent) ###
   
 Shows a list of all updates installed to date.  
 @param   parent  
          An nsIDOMWindow to set as the parent for this window. Can be null.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>parent  
+         An nsIDOMWindow to set as the parent for this window. Can be null.  
+</td>
+</tr>
+
+</table>

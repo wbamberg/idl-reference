@@ -17,6 +17,18 @@ data source registry.
 @param aURI the URI to load  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the URI to load  
+</td>
+</tr>
+
+</table>
+
 ### Refresh(aBlocking) ###
   
 Refresh the remote datasource, re-loading its contents  
@@ -25,6 +37,19 @@ from the URI.
 @param aBlocking If <code>true</code>, the call will block  
 until the datasource has completely reloaded.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBlocking</td>
+<td>If <code>true</code>, the call will block  
+until the datasource has completely reloaded.  
+</td>
+</tr>
+
+</table>
 
 ### Flush() ###
   

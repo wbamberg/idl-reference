@@ -26,6 +26,30 @@ using <code>aSortKey</code> as the comparison key, and
   twostate: don't allow the natural (unordered state)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNode</td>
+<td>A node in the XUL widget whose children are to be sorted.  
+</td>
+</tr>
+
+<tr>
+<td>aNode</td>
+<td>A node in the XUL widget whose children are to be sorted.  
+</td>
+</tr>
+
+<tr>
+<td>aNode</td>
+<td>A node in the XUL widget whose children are to be sorted.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### SORT_COMPARECASE ###

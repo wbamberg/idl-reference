@@ -20,3 +20,21 @@ Generates the specified amount of random bytes.
 @param aBuffer  
        A buffer that contains random bytes of size aLength.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLength</td>
+<td>       The length of the data to generate.  
+</td>
+</tr>
+
+<tr>
+<td>aLength</td>
+<td>       The length of the data to generate.  
+</td>
+</tr>
+
+</table>

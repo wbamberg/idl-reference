@@ -21,6 +21,24 @@ and sent to the classifier as a new stream.
              with.  This should be passed back to beginStream().  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>url</td>
+<td>The url that was requested.  
+</td>
+</tr>
+
+<tr>
+<td>url</td>
+<td>The url that was requested.  
+</td>
+</tr>
+
+</table>
+
 ### streamFinished(status, delay) ###
   
 A stream update has completed.  
@@ -29,6 +47,24 @@ A stream update has completed.
 @param delay The amount of time the updater should wait to fetch the  
              next URL in ms.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>status</td>
+<td>The state of the update process.  
+</td>
+</tr>
+
+<tr>
+<td>status</td>
+<td>The state of the update process.  
+</td>
+</tr>
+
+</table>
 
 ### updateError(error) ###
 
@@ -39,3 +75,17 @@ The update has completed successfully.
 @param requestedTimeout The number of seconds that the caller should  
                         wait before trying to update again.  
 /  
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>requestedTimeout</td>
+<td>The number of seconds that the caller should  
+                        wait before trying to update again.  
+/  
+</td>
+</tr>
+
+</table>

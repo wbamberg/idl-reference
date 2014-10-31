@@ -21,6 +21,30 @@ charset (if any).
 @return the MIME type specified in the header, in lower-case.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTypeHeader</td>
+<td>the header string to parse  
+</td>
+</tr>
+
+<tr>
+<td>aTypeHeader</td>
+<td>the header string to parse  
+</td>
+</tr>
+
+<tr>
+<td>aTypeHeader</td>
+<td>the header string to parse  
+</td>
+</tr>
+
+</table>
+
 ### protocolHasFlags(aURI, aFlag) ###
   
 Test whether the given URI's handler has the given protocol flags.  
@@ -31,6 +55,24 @@ Test whether the given URI's handler has the given protocol flags.
 @return whether the protocol handler for aURI has all the flags  
         in aFlags.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the URI in question  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI in question  
+</td>
+</tr>
+
+</table>
 
 ### URIChainHasFlags(aURI, aFlags) ###
   
@@ -44,6 +86,24 @@ nsINestedURI and walk the nested URI chain.
 @return whether any of the protocol handlers involved have all the flags  
         in aFlags.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>the URI in question  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>the URI in question  
+</td>
+</tr>
+
+</table>
 
 ### toImmutableURI(aURI) ###
   
@@ -76,6 +136,24 @@ escape a string with %00-style escaping
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStr</td>
+<td>the URL to be escaped  
+</td>
+</tr>
+
+<tr>
+<td>aStr</td>
+<td>the URL to be escaped  
+</td>
+</tr>
+
+</table>
+
 ### unescapeString(aStr, aFlags) ###
   
 Expands URL escape sequences  
@@ -86,6 +164,24 @@ Expands URL escape sequences
               unescaped  
 @return unescaped string  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStr</td>
+<td>the URL to be unescaped  
+</td>
+</tr>
+
+<tr>
+<td>aStr</td>
+<td>the URL to be unescaped  
+</td>
+</tr>
+
+</table>
 
 ### extractCharsetFromContentType(aTypeHeader, aCharset, aCharsetStart, aCharsetEnd) ###
   
@@ -110,6 +206,36 @@ header.
 cases when parseContentType would claim to have a charset, if the type  
 that won out does not have a charset parameter specified.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTypeHeader</td>
+<td>the header string to parse  
+</td>
+</tr>
+
+<tr>
+<td>aTypeHeader</td>
+<td>the header string to parse  
+</td>
+</tr>
+
+<tr>
+<td>aTypeHeader</td>
+<td>the header string to parse  
+</td>
+</tr>
+
+<tr>
+<td>aTypeHeader</td>
+<td>the header string to parse  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

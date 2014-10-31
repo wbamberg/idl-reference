@@ -25,6 +25,19 @@ Get the value of a particular request header.
 @throws NS_ERROR_NOT_AVAILABLE if the header is not set.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHeader</td>
+<td>       The case-insensitive name of the request header to query (e.g.,  
+       "Cache-Control").  
+</td>
+</tr>
+
+</table>
+
 ### setRequestHeader(aHeader, aValue, aMerge) ###
   
 Set the value of a particular request header.  
@@ -54,6 +67,33 @@ If aValue is empty and aMerge is false, the header will be cleared.
         opened.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHeader</td>
+<td>       The case-insensitive name of the request header to set (e.g.,  
+       "Cookie").  
+</td>
+</tr>
+
+<tr>
+<td>aHeader</td>
+<td>       The case-insensitive name of the request header to set (e.g.,  
+       "Cookie").  
+</td>
+</tr>
+
+<tr>
+<td>aHeader</td>
+<td>       The case-insensitive name of the request header to set (e.g.,  
+       "Cookie").  
+</td>
+</tr>
+
+</table>
+
 ### visitRequestHeaders(aVisitor) ###
   
 Call this method to visit all request headers.  Calling setRequestHeader  
@@ -62,6 +102,18 @@ while visiting request headers has undefined behavior.  Don't do it!
 @param aVisitor  
        the header visitor instance.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aVisitor</td>
+<td>       the header visitor instance.  
+</td>
+</tr>
+
+</table>
 
 ### getResponseHeader(header) ###
   
@@ -77,6 +129,19 @@ Get the value of a particular response header.
         has been received (before onStartRequest) or if the header is  
         not set in the response.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHeader</td>
+<td>       The case-insensitive name of the response header to query (e.g.,  
+       "Set-Cookie").  
+</td>
+</tr>
+
+</table>
 
 ### setResponseHeader(header, value, merge) ###
   
@@ -107,6 +172,33 @@ If aValue is empty and aMerge is false, the header will be cleared.
         header is not allowed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHeader</td>
+<td>       The case-insensitive name of the response header to set (e.g.,  
+       "Cache-control").  
+</td>
+</tr>
+
+<tr>
+<td>aHeader</td>
+<td>       The case-insensitive name of the response header to set (e.g.,  
+       "Cache-control").  
+</td>
+</tr>
+
+<tr>
+<td>aHeader</td>
+<td>       The case-insensitive name of the response header to set (e.g.,  
+       "Cache-control").  
+</td>
+</tr>
+
+</table>
+
 ### visitResponseHeaders(aVisitor) ###
   
 Call this method to visit all response headers.  Calling  
@@ -119,6 +211,18 @@ behavior.  Don't do it!
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aVisitor</td>
+<td>       the header visitor instance.  
+</td>
+</tr>
+
+</table>
 
 ### isNoStoreResponse() ###
   

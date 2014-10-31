@@ -17,3 +17,16 @@ the extIEventListener interface was registered.
 @param   aEvent  
          The extIEventItem associated with the event.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aEvent  
+         The extIEventItem associated with the event.  
+</td>
+</tr>
+
+</table>

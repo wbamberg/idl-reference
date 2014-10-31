@@ -34,6 +34,19 @@ Returns the index of the named parameter.
 @return the index of the named parameter.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>       The name of the parameter you want the index for.  This does not  
+       include the leading ':'.  
+</td>
+</tr>
+
+</table>
+
 ### getColumnName(aColumnIndex) ###
   
 Name of nth column  
@@ -48,6 +61,18 @@ Obtains the index of the column with the specified name.
 @return The index of the column with the specified name.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>       The name of the column.  
+</td>
+</tr>
+
+</table>
+
 ### getColumnDecltype(aParamIndex) ###
   
 Obtains the declared column type of a prepared statement.  
@@ -57,6 +82,19 @@ Obtains the declared column type of a prepared statement.
        interested in.  
 @return the declared index type.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParamIndex</td>
+<td>       The zero-based index of the column who's declared type we are  
+       interested in.  
+</td>
+</tr>
+
+</table>
 
 ### reset() ###
   
@@ -96,6 +134,18 @@ type than it is stored as.
         VALUE_TYPE_TEXT, VALUE_TYPE_BLOB.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>       0-based column index.  
+</td>
+</tr>
+
+</table>
+
 ### getInt32(aIndex) ###
   
 Retrieve the contents of a column from the current result row as an  
@@ -106,6 +156,18 @@ integer.
 @return Column value interpreted as an integer per type conversion rules.  
 @{  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>       0-based colummn index.  
+</td>
+</tr>
+
+</table>
 
 ### getInt64(aIndex) ###
 
@@ -120,6 +182,18 @@ floating point double.
 @return Column value interpreted as a double per type conversion rules.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>       0-based colummn index.  
+</td>
+</tr>
+
+</table>
+
 ### getUTF8String(aIndex) ###
   
 Retrieve the contents of a column from the current result row as a  
@@ -132,6 +206,18 @@ string.
         to distinguish it from an explicitly set empty string.  
 @{  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>       0-based colummn index.  
+</td>
+</tr>
+
+</table>
 
 ### getString(aIndex) ###
 
@@ -149,6 +235,30 @@ blob.
             The contents of the BLOB.  This will be NULL if aDataSize == 0.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>       0-based colummn index.  
+</td>
+</tr>
+
+<tr>
+<td>aIndex</td>
+<td>       0-based colummn index.  
+</td>
+</tr>
+
+<tr>
+<td>aIndex</td>
+<td>       0-based colummn index.  
+</td>
+</tr>
+
+</table>
+
 ### getIsNull(aIndex) ###
   
 Check whether the given column in the current result row is NULL.  
@@ -157,6 +267,18 @@ Check whether the given column in the current result row is NULL.
        0-based colummn index.  
 @return true if the value for the result column is null.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIndex</td>
+<td>       0-based colummn index.  
+</td>
+</tr>
+
+</table>
 
 ### getSharedUTF8String(aIndex, aLength, aResult) ###
   

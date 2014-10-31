@@ -28,6 +28,26 @@ them.
                      (see nsIAccessibleStates::EXT_STATE_* constants)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aState</td>
+<td>- the first bit field (see nsIAccessibleStates::STATE_*  
+                constants)  
+</td>
+</tr>
+
+<tr>
+<td>aState</td>
+<td>- the first bit field (see nsIAccessibleStates::STATE_*  
+                constants)  
+</td>
+</tr>
+
+</table>
+
 ### groupPosition(aGroupLevel, aSimilarItemsInGroup, aPositionInGroup) ###
   
 Returns grouping information. Used for tree items, list items, tab panel  
@@ -38,6 +58,30 @@ labels, radio buttons, etc. Also used for collectons of non-text objects.
                              inclusive of the current item  
 @param positionInGroup - 1-based, similar to ARIA 'posinset' property  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>groupLevel</td>
+<td>- 1-based, similar to ARIA 'level' property  
+</td>
+</tr>
+
+<tr>
+<td>groupLevel</td>
+<td>- 1-based, similar to ARIA 'level' property  
+</td>
+</tr>
+
+<tr>
+<td>groupLevel</td>
+<td>- 1-based, similar to ARIA 'level' property  
+</td>
+</tr>
+
+</table>
 
 ### getChildAtPoint(x, y) ###
   
@@ -52,6 +96,24 @@ null will be returned.
 @return   the deepest accessible child containing the given point  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>x</td>
+<td>screen's x coordinate  
+</td>
+</tr>
+
+<tr>
+<td>x</td>
+<td>screen's x coordinate  
+</td>
+</tr>
+
+</table>
+
 ### getDeepestChildAtPoint(x, y) ###
   
 Deepest accessible child which contains the coordinate at (x, y) in screen  
@@ -63,6 +125,24 @@ accessible or a child, then null will be returned.
 @param y  screen's y coordinate  
 @return   the deepest accessible child containing the given point  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>x</td>
+<td>screen's x coordinate  
+</td>
+</tr>
+
+<tr>
+<td>x</td>
+<td>screen's x coordinate  
+</td>
+</tr>
+
+</table>
 
 ### getChildAt(aChildIndex) ###
   
@@ -137,6 +217,20 @@ Makes an object visible on screen.
                     available constants).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>scrollType</td>
+<td>- defines where the object should be placed on  
+                    the screen (see nsIAccessibleScrollType for  
+                    available constants).  
+</td>
+</tr>
+
+</table>
+
 ### scrollToPoint(coordinateType, x, y) ###
   
 Moves the top left of an object to a specified location.  
@@ -147,6 +241,36 @@ Moves the top left of an object to a specified location.
 @param x [in] - defines the x coordinate  
 @param y [in] - defines the y coordinate  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>coordinateType</td>
+<td>[in] - specifies whether the coordinates are relative to  
+                        the screen or the parent object (for available  
+                        constants refer to nsIAccessibleCoordinateType)  
+</td>
+</tr>
+
+<tr>
+<td>coordinateType</td>
+<td>[in] - specifies whether the coordinates are relative to  
+                        the screen or the parent object (for available  
+                        constants refer to nsIAccessibleCoordinateType)  
+</td>
+</tr>
+
+<tr>
+<td>coordinateType</td>
+<td>[in] - specifies whether the coordinates are relative to  
+                        the screen or the parent object (for available  
+                        constants refer to nsIAccessibleCoordinateType)  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

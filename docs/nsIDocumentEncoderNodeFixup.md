@@ -18,3 +18,21 @@ apply recursive serialization to the children of the fixed up node
 instead of the children of the original node.  
 @return The resulting fixed up node.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNode</td>
+<td>Node to fixup.  
+</td>
+</tr>
+
+<tr>
+<td>aNode</td>
+<td>Node to fixup.  
+</td>
+</tr>
+
+</table>

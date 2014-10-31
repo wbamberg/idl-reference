@@ -31,6 +31,19 @@ useful range of the underlying container or sequence.
 @result a new reference to the indicated element (if any)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anOffset</td>
+<td>a |0|-based offset from the position to which this iterator currently points  
+@result a new reference to the indicated element (if any)  
+</td>
+</tr>
+
+</table>
+
 ### putElement(anElementToPut) ###
   
 Put |anElementToPut| into the underlying container or sequence at the position currently pointed to by this iterator.  
@@ -42,6 +55,18 @@ useful range of the underlying container or sequence.
   
 @param anElementToPut the element to place into the underlying container or sequence  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anElementToPut</td>
+<td>the element to place into the underlying container or sequence  
+</td>
+</tr>
+
+</table>
 
 ### putElementAt(anOffset, anElementToPut) ###
   
@@ -57,6 +82,24 @@ useful range of the underlying container or sequence.
 @param anElementToPut the element to place into the underlying container or sequence  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anOffset</td>
+<td>a |0|-based offset from the position to which this iterator currently points  
+</td>
+</tr>
+
+<tr>
+<td>anOffset</td>
+<td>a |0|-based offset from the position to which this iterator currently points  
+</td>
+</tr>
+
+</table>
+
 ### stepForward() ###
   
 Advance this iterator to the next position in the underlying container or sequence.  
@@ -70,6 +113,18 @@ Move this iterator by |anOffset| positions in the underlying container or sequen
   
 @param anOffset a |0|-based offset from the position to which this iterator currently points  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anOffset</td>
+<td>a |0|-based offset from the position to which this iterator currently points  
+</td>
+</tr>
+
+</table>
 
 ### stepBackward() ###
   
@@ -85,6 +140,18 @@ Move this iterator backwards by |anOffset| positions in the underlying container
 @param anOffset a |0|-based offset from the position to which this iterator currently points  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anOffset</td>
+<td>a |0|-based offset from the position to which this iterator currently points  
+</td>
+</tr>
+
+</table>
+
 ### isEqualTo(anotherIterator) ###
   
 Test if |anotherIterator| points to the same position in the underlying container or sequence.  
@@ -94,6 +161,19 @@ The result is undefined if |anotherIterator| was not created by or for the same 
 @param anotherIterator another iterator to compare against, created by or for the same underlying container or sequence  
 @result true if |anotherIterator| points to the same position in the underlying container or sequence  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>anotherIterator</td>
+<td>another iterator to compare against, created by or for the same underlying container or sequence  
+@result true if |anotherIterator| points to the same position in the underlying container or sequence  
+</td>
+</tr>
+
+</table>
 
 ### clone() ###
   

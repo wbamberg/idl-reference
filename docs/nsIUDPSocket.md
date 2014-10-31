@@ -30,6 +30,33 @@ This method initializes a UDP socket.
        already in use. Default is true.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPort</td>
+<td>       The port of the UDP socket.  Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+<tr>
+<td>aPort</td>
+<td>       The port of the UDP socket.  Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+<tr>
+<td>aPort</td>
+<td>       The port of the UDP socket.  Pass -1 to indicate no preference,  
+       and a port will be selected automatically.  
+</td>
+</tr>
+
+</table>
+
 ### initWithAddress(aAddr, aAddressReuse) ###
   
 initWithAddress  
@@ -43,6 +70,24 @@ local address (and hence a particular local network interface).
        If true, the socket is allowed to be bound to an address that is  
        already in use. Default is true.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAddr</td>
+<td>       The address to which this UDP socket should be bound.  
+</td>
+</tr>
+
+<tr>
+<td>aAddr</td>
+<td>       The address to which this UDP socket should be bound.  
+</td>
+</tr>
+
+</table>
 
 ### close() ###
   
@@ -71,6 +116,18 @@ transport (nsISocketTransport).  See below for more details.
        The listener to be notified when client connections are accepted.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aListener</td>
+<td>       The listener to be notified when client connections are accepted.  
+</td>
+</tr>
+
+</table>
+
 ### getAddress() ###
   
 Returns the address to which this UDP socket is bound.  Since a  
@@ -96,6 +153,36 @@ DNS lookup will be triggered.
 @return number of bytes written. (0 or dataLength)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>host</td>
+<td>The remote host name.  
+</td>
+</tr>
+
+<tr>
+<td>host</td>
+<td>The remote host name.  
+</td>
+</tr>
+
+<tr>
+<td>host</td>
+<td>The remote host name.  
+</td>
+</tr>
+
+<tr>
+<td>host</td>
+<td>The remote host name.  
+</td>
+</tr>
+
+</table>
+
 ### sendWithAddr(addr, data, dataLength) ###
   
 sendWithAddr  
@@ -107,6 +194,30 @@ Send out the datagram to specified remote host and port.
 @param dataLength The maximum number of bytes to be written.  
 @return number of bytes written. (0 or dataLength)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>addr</td>
+<td>The remote host address.  
+</td>
+</tr>
+
+<tr>
+<td>addr</td>
+<td>The remote host address.  
+</td>
+</tr>
+
+<tr>
+<td>addr</td>
+<td>The remote host address.  
+</td>
+</tr>
+
+</table>
 
 ### sendWithAddress(addr, data, dataLength) ###
   
@@ -120,6 +231,30 @@ Send out the datagram to specified remote address and port.
 @return number of bytes written. (0 or dataLength)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>addr</td>
+<td>The remote host address.  
+</td>
+</tr>
+
+<tr>
+<td>addr</td>
+<td>The remote host address.  
+</td>
+</tr>
+
+<tr>
+<td>addr</td>
+<td>The remote host address.  
+</td>
+</tr>
+
+</table>
+
 ### sendBinaryStream(host, port, stream) ###
   
 sendBinaryStream  
@@ -131,6 +266,30 @@ Send out the datagram to specified remote address and port.
 @param stream The input stream to be sent. This must be a buffered stream implementation.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>host</td>
+<td>The remote host name.  
+</td>
+</tr>
+
+<tr>
+<td>host</td>
+<td>The remote host name.  
+</td>
+</tr>
+
+<tr>
+<td>host</td>
+<td>The remote host name.  
+</td>
+</tr>
+
+</table>
+
 ### sendBinaryStreamWithAddress(addr, stream) ###
   
 sendBinaryStreamWithAddress  
@@ -140,6 +299,24 @@ Send out the datagram to specified remote address and port.
 @param addr The remote host address.  
 @param stream The input stream to be sent. This must be a buffered stream implementation.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>addr</td>
+<td>The remote host address.  
+</td>
+</tr>
+
+<tr>
+<td>addr</td>
+<td>The remote host address.  
+</td>
+</tr>
+
+</table>
 
 ### joinMulticast(addr, iface) ###
   
@@ -155,6 +332,24 @@ receive future datagrams addressed to the group.
        this is not specified, the OS may join the group on all interfaces  
        or only the primary interface.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>addr</td>
+<td>       The multicast group address.  
+</td>
+</tr>
+
+<tr>
+<td>addr</td>
+<td>       The multicast group address.  
+</td>
+</tr>
+
+</table>
 
 ### joinMulticastAddr(addr, iface) ###
 
@@ -172,6 +367,24 @@ receive future datagrams addressed to the group.
        If this is not specified, the OS may leave the group on all  
        interfaces or only the primary interface.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>addr</td>
+<td>       The multicast group address.  
+</td>
+</tr>
+
+<tr>
+<td>addr</td>
+<td>       The multicast group address.  
+</td>
+</tr>
+
+</table>
 
 ### leaveMulticastAddr(addr, iface) ###
 

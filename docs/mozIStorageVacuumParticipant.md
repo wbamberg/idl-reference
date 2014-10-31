@@ -35,6 +35,18 @@ Notifies when a vacuum operation ends.
        reports if the vacuum succeeded or failed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aSucceeded</td>
+<td>       reports if the vacuum succeeded or failed.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### expectedDatabasePageSize ###

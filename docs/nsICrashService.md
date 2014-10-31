@@ -18,6 +18,30 @@ Records the occurrence of a crash.
        Crash ID. Likely a UUID.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>processType</td>
+<td>       One of the PROCESS_TYPE constants defined below.  
+</td>
+</tr>
+
+<tr>
+<td>processType</td>
+<td>       One of the PROCESS_TYPE constants defined below.  
+</td>
+</tr>
+
+<tr>
+<td>processType</td>
+<td>       One of the PROCESS_TYPE constants defined below.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### PROCESS_TYPE_MAIN ###

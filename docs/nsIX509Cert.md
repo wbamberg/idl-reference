@@ -113,6 +113,18 @@ software tokens the certificate is stored on.
         On failure the function throws/returns an error.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>length</td>
+<td>On success, the number of entries in the returned array.  
+</td>
+</tr>
+
+</table>
+
 ### markForPermDeletion() ###
   
 Either delete the certificate from all cert databases,  

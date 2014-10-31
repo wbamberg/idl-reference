@@ -43,6 +43,48 @@ return value will be ignored, and user prompting will be suppressed.
        revised identity.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel that received the challenge.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel that received the challenge.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel that received the challenge.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel that received the challenge.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel that received the challenge.  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel that received the challenge.  
+</td>
+</tr>
+
+</table>
+
 ### generateCredentials(aChannel, aChallenge, aProxyAuth, aDomain, aUser, aPassword, aSessionState, aContinuationState, aFlags) ###
   
 Called to generate the authentication credentials for a particular  
@@ -80,6 +122,66 @@ authenticator sets the REUSABLE_CHALLENGE flag.
 @param aFlags  
        authenticator may return one of the generate flags bellow.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel requesting credentials  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel requesting credentials  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel requesting credentials  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel requesting credentials  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel requesting credentials  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel requesting credentials  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel requesting credentials  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel requesting credentials  
+</td>
+</tr>
+
+<tr>
+<td>aChannel</td>
+<td>       the http channel requesting credentials  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

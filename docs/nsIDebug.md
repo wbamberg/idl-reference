@@ -26,6 +26,36 @@ Show an assertion and trigger nsIDebug.break().
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStr</td>
+<td>assertion message  
+</td>
+</tr>
+
+<tr>
+<td>aStr</td>
+<td>assertion message  
+</td>
+</tr>
+
+<tr>
+<td>aStr</td>
+<td>assertion message  
+</td>
+</tr>
+
+<tr>
+<td>aStr</td>
+<td>assertion message  
+</td>
+</tr>
+
+</table>
+
 ### warning(aStr, aFile, aLine) ###
   
 Show a warning.  
@@ -35,6 +65,30 @@ Show a warning.
 @param aLine line number of assertion  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStr</td>
+<td>warning message  
+</td>
+</tr>
+
+<tr>
+<td>aStr</td>
+<td>warning message  
+</td>
+</tr>
+
+<tr>
+<td>aStr</td>
+<td>warning message  
+</td>
+</tr>
+
+</table>
+
 ### break(aFile, aLine) ###
   
 Request to break into a debugger.  
@@ -43,6 +97,24 @@ Request to break into a debugger.
 @param aLine line number of break request  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFile</td>
+<td>file containing break request  
+</td>
+</tr>
+
+<tr>
+<td>aFile</td>
+<td>file containing break request  
+</td>
+</tr>
+
+</table>
+
 ### abort(aFile, aLine) ###
   
 Request the process to trigger a fatal abort.  
@@ -50,3 +122,21 @@ Request the process to trigger a fatal abort.
 @param aFile file containing abort request  
 @param aLine line number of abort request  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFile</td>
+<td>file containing abort request  
+</td>
+</tr>
+
+<tr>
+<td>aFile</td>
+<td>file containing abort request  
+</td>
+</tr>
+
+</table>

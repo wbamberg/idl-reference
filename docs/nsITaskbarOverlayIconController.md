@@ -30,3 +30,27 @@ Sets the overlay icon and its corresponding alt text.
   and if a previous overlay set for a different window in the group is  
   still available, then that previous overlay is displayed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>statusIcon</td>
+<td>The handle to the overlay icon. The icon will be scaled  
+                  to the small icon size (16x16 at 96 dpi). Can be null, in  
+                  which case if the taskbar button represents a single window  
+                  the icon is removed.  
+</td>
+</tr>
+
+<tr>
+<td>statusIcon</td>
+<td>The handle to the overlay icon. The icon will be scaled  
+                  to the small icon size (16x16 at 96 dpi). Can be null, in  
+                  which case if the taskbar button represents a single window  
+                  the icon is removed.  
+</td>
+</tr>
+
+</table>

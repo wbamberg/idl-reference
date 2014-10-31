@@ -28,6 +28,60 @@ Add/replace a notification to the persistence layer.
                   whether there is a tag defined.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app of this notification  
+</td>
+</tr>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app of this notification  
+</td>
+</tr>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app of this notification  
+</td>
+</tr>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app of this notification  
+</td>
+</tr>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app of this notification  
+</td>
+</tr>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app of this notification  
+</td>
+</tr>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app of this notification  
+</td>
+</tr>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app of this notification  
+</td>
+</tr>
+
+</table>
+
 ### get(origin, tag, aCallback) ###
   
 Retrieve a list of notifications.  
@@ -38,6 +92,30 @@ Retrieve a list of notifications.
                  returning notifications objects  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app for which to fetch notifications from  
+</td>
+</tr>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app for which to fetch notifications from  
+</td>
+</tr>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app for which to fetch notifications from  
+</td>
+</tr>
+
+</table>
+
 ### delete(origin, id) ###
   
 Remove a notification from storage.  
@@ -45,3 +123,21 @@ Remove a notification from storage.
 @param origin: the origin/app to delete the notification from  
 @param id: the uuid for the notification to delete  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app to delete the notification from  
+</td>
+</tr>
+
+<tr>
+<td>origin:</td>
+<td>the origin/app to delete the notification from  
+</td>
+</tr>
+
+</table>

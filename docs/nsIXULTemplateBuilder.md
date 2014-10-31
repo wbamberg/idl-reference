@@ -147,6 +147,24 @@ matches.
 @throws NS_ERROR_NULL_POINTER if aResult or aQueryNode are null  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aResult</td>
+<td>the result to add  
+</td>
+</tr>
+
+<tr>
+<td>aResult</td>
+<td>the result to add  
+</td>
+</tr>
+
+</table>
+
 ### removeResult(aResult) ###
   
 Inform the template builder that a result no longer applies. The builder  
@@ -158,6 +176,18 @@ method will have no effect if the result isn't known to the builder.
   
 @throws NS_ERROR_NULL_POINTER if aResult is null  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aResult</td>
+<td>the result to remove  
+</td>
+</tr>
+
+</table>
 
 ### replaceResult(aOldResult, aNewResult, aQueryNode) ###
   
@@ -177,6 +207,30 @@ removeResult for the old result and addResult for the new result.
         NS_ERROR_INVALID_ARG if the ids don't match  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aOldResult</td>
+<td>the old result  
+</td>
+</tr>
+
+<tr>
+<td>aOldResult</td>
+<td>the old result  
+</td>
+</tr>
+
+<tr>
+<td>aOldResult</td>
+<td>the old result  
+</td>
+</tr>
+
+</table>
+
 ### resultBindingChanged(aResult) ###
   
 Inform the template builder that one or more of the optional bindings  
@@ -189,6 +243,18 @@ resynchronize any variables that are referenced in the action body.
 @throws NS_ERROR_NULL_POINTER if aResult is null  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aResult</td>
+<td>the result to change  
+</td>
+</tr>
+
+</table>
+
 ### getResultForId(aId) ###
   
 Return the result for a given id. Only one such result is returned and  
@@ -198,6 +264,18 @@ This method will return null is there is no result for the id.
 @param aId the id to return the result for  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aId</td>
+<td>the id to return the result for  
+</td>
+</tr>
+
+</table>
+
 ### getResultForContent(aElement) ###
   
 Retrieve the result corresponding to a generated element, or null is  
@@ -205,6 +283,18 @@ there isn't one.
   
 @param aContent element to result the result of  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aContent</td>
+<td>element to result the result of  
+</td>
+</tr>
+
+</table>
 
 ### hasGeneratedContent(aNode, aTag) ###
   
@@ -216,6 +306,24 @@ for builders that don't generate real DOM content.
 @param aNode node to check  
 @param aTag tag that must match  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aNode</td>
+<td>node to check  
+</td>
+</tr>
+
+<tr>
+<td>aNode</td>
+<td>node to check  
+</td>
+</tr>
+
+</table>
 
 ### addRuleFilter(aRule, aFilter) ###
   
@@ -229,6 +337,24 @@ rejected.
 @param aRule the rule to apply the filter to  
 @param aFilter the filter to add  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRule</td>
+<td>the rule to apply the filter to  
+</td>
+</tr>
+
+<tr>
+<td>aRule</td>
+<td>the rule to apply the filter to  
+</td>
+</tr>
+
+</table>
 
 ### init(aElement) ###
   

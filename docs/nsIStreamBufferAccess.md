@@ -44,6 +44,32 @@ accesses before the fill or flush point is reached.
    after the current position that satisfies (A & aAlignMask) == 0.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLength</td>
+<td>   Count of contiguous bytes requested at the address A that satisfies  
+   (A & aAlignMask) == 0 in the buffer, starting from the current stream  
+   position, mapped to a buffer address B.  The stream implementation  
+   must pad from B to A by skipping bytes (if input stream) or storing  
+   zero bytes (if output stream).  
+</td>
+</tr>
+
+<tr>
+<td>aLength</td>
+<td>   Count of contiguous bytes requested at the address A that satisfies  
+   (A & aAlignMask) == 0 in the buffer, starting from the current stream  
+   position, mapped to a buffer address B.  The stream implementation  
+   must pad from B to A by skipping bytes (if input stream) or storing  
+   zero bytes (if output stream).  
+</td>
+</tr>
+
+</table>
+
 ### putBuffer(aBuffer, aLength) ###
   
 Relinquish access to the stream's buffer, filling if at end of an input  
@@ -58,6 +84,26 @@ that returns non-null, putBuffer must be called.
    The same count of contiguous bytes passed to the getBuffer call that  
    returned aBuffer.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aBuffer</td>
+<td>   A non-null pointer returned by getBuffer on the same stream buffer  
+   access object.  
+</td>
+</tr>
+
+<tr>
+<td>aBuffer</td>
+<td>   A non-null pointer returned by getBuffer on the same stream buffer  
+   access object.  
+</td>
+</tr>
+
+</table>
 
 ### disableBuffering() ###
   

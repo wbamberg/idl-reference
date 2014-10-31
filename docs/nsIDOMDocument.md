@@ -151,6 +151,26 @@ unregister the image element ID |aImageElementId|.
 @see <https://developer.mozilla.org/en/DOM/document.mozSetImageElement>  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aImageElementId</td>
+<td>an image element ID to associate with  
+|aImageElement|  
+</td>
+</tr>
+
+<tr>
+<td>aImageElementId</td>
+<td>an image element ID to associate with  
+|aImageElement|  
+</td>
+</tr>
+
+</table>
+
 ### mozCancelFullScreen() ###
   
 Causes the document to leave DOM full-screen mode, if it's in  
@@ -169,6 +189,26 @@ offset within that node), given a point.
 @param y Vertical point at which to determine the caret position, in  
          page coordinates.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>x</td>
+<td>Horizontal point at which to determine the caret position, in  
+         page coordinates.  
+</td>
+</tr>
+
+<tr>
+<td>x</td>
+<td>Horizontal point at which to determine the caret position, in  
+         page coordinates.  
+</td>
+</tr>
+
+</table>
 
 ### mozExitPointerLock() ###
   

@@ -32,6 +32,48 @@ directly from the desired nsICookie object.
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aHost</td>
+<td>The host or domain for which the cookie was set. @see  
+             nsICookieManager2::add for a description of acceptable host  
+             strings. If the target cookie is a domain cookie, a leading  
+             dot must be present.  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>The host or domain for which the cookie was set. @see  
+             nsICookieManager2::add for a description of acceptable host  
+             strings. If the target cookie is a domain cookie, a leading  
+             dot must be present.  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>The host or domain for which the cookie was set. @see  
+             nsICookieManager2::add for a description of acceptable host  
+             strings. If the target cookie is a domain cookie, a leading  
+             dot must be present.  
+</td>
+</tr>
+
+<tr>
+<td>aHost</td>
+<td>The host or domain for which the cookie was set. @see  
+             nsICookieManager2::add for a description of acceptable host  
+             strings. If the target cookie is a domain cookie, a leading  
+             dot must be present.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### enumerator ###

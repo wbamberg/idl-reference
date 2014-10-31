@@ -27,6 +27,36 @@ is a file, the behaviour is not specified.
        watching the resource for changes.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>pathToWatch</td>
+<td>The path to watch for changes.  
+</td>
+</tr>
+
+<tr>
+<td>pathToWatch</td>
+<td>The path to watch for changes.  
+</td>
+</tr>
+
+<tr>
+<td>pathToWatch</td>
+<td>The path to watch for changes.  
+</td>
+</tr>
+
+<tr>
+<td>pathToWatch</td>
+<td>The path to watch for changes.  
+</td>
+</tr>
+
+</table>
+
 ### removePath(pathToUnwatch, onChange, onError, onSuccess) ###
   
 Removes the provided path from the watched resources. If the path  
@@ -48,3 +78,33 @@ some error callbacks associated).
        The optional callback invoked when the file watcher stops  
        watching the resource for changes.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>pathToUnwatch</td>
+<td>The path to un-watch.  
+</td>
+</tr>
+
+<tr>
+<td>pathToUnwatch</td>
+<td>The path to un-watch.  
+</td>
+</tr>
+
+<tr>
+<td>pathToUnwatch</td>
+<td>The path to un-watch.  
+</td>
+</tr>
+
+<tr>
+<td>pathToUnwatch</td>
+<td>The path to un-watch.  
+</td>
+</tr>
+
+</table>

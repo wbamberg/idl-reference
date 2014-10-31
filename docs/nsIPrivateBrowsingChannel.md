@@ -35,6 +35,18 @@ or notificationCallbacks are set after setPrivate has been called.
 @param aPrivate whether the channel should be opened in private mode.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrivate</td>
+<td>whether the channel should be opened in private mode.  
+</td>
+</tr>
+
+</table>
+
 ### isPrivateModeOverriden(aValue) ###
 
 ## Attributes ##

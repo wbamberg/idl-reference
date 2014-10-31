@@ -29,3 +29,39 @@ NOTE: The aInputStream parameter must implement readSegments.
 An exception thrown from onDataAvailable has the side-effect of  
 causing the request to be canceled.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>request corresponding to the source of the data  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>request corresponding to the source of the data  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>request corresponding to the source of the data  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>request corresponding to the source of the data  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>request corresponding to the source of the data  
+</td>
+</tr>
+
+</table>

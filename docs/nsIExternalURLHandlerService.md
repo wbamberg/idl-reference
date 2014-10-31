@@ -19,3 +19,21 @@ overridden by each OS's implementation.
 @param aFound  Was an OS default handler for this URL found?  
 @return  An nsIHanderInfo for the protocol.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURL</td>
+<td>The URL we are looking for.  
+</td>
+</tr>
+
+<tr>
+<td>aURL</td>
+<td>The URL we are looking for.  
+</td>
+</tr>
+
+</table>

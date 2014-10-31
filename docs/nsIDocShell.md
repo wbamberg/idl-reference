@@ -27,6 +27,30 @@ loading.
                     be allowed.  Use at your own risk.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>uri</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+</table>
+
 ### loadStream(aStream, aURI, aContentType, aContentCharset, aLoadInfo) ###
   
 Loads a given stream. This will give priority to loading the requested  
@@ -47,6 +71,52 @@ content loading.
                          you have this object you can set the needed   
                          properties on it and then pass it to loadStream.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>- The input stream that provides access to the data  
+                         to be loaded.  This must be a blocking, threadsafe  
+                         stream implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>- The input stream that provides access to the data  
+                         to be loaded.  This must be a blocking, threadsafe  
+                         stream implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>- The input stream that provides access to the data  
+                         to be loaded.  This must be a blocking, threadsafe  
+                         stream implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>- The input stream that provides access to the data  
+                         to be loaded.  This must be a blocking, threadsafe  
+                         stream implementation.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>- The input stream that provides access to the data  
+                         to be loaded.  This must be a blocking, threadsafe  
+                         stream implementation.  
+</td>
+</tr>
+
+</table>
 
 ### internalLoad(aURI, aReferrer, aOwner, aFlags, aWindowTarget, aTypeHint, aFileName, aPostDataStream, aHeadersStream, aLoadFlags, aSHEntry, firstParty, aSrcdoc, aSourceDocShell, aBaseURI, aDocShell, aRequest) ###
   
@@ -79,6 +149,102 @@ the given filename.
                          srcdoc loads as it cannot otherwise be inferred  
                          in certain situations such as view-source.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>- The URI to load.  
+</td>
+</tr>
+
+</table>
 
 ### addState(aData, aTitle, aURL, aReplace) ###
   
@@ -114,6 +280,19 @@ unloaded as well.
 @param isUnload if true, fire the unload event in addition to the pagehide  
                 event.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>isUnload</td>
+<td>if true, fire the unload event in addition to the pagehide  
+                event.  
+</td>
+</tr>
+
+</table>
 
 ### GetPresShell() ###
   
@@ -171,6 +350,36 @@ the error document page. You must provide either the aURI or aURL parameter.
 @param  aFailedChannel The channel related to this error  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aError         The error code to be displayed  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aError         The error code to be displayed  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aError         The error code to be displayed  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aError         The error code to be displayed  
+</td>
+</tr>
+
+</table>
+
 ### historyPurged(numEntries) ###
   
 Notification that entries have been removed from the beginning of a  
@@ -178,6 +387,18 @@ nsSHistory which has this as its rootDocShell.
   
 @param numEntries - The number of entries removed  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>numEntries</td>
+<td>- The number of entries removed  
+</td>
+</tr>
+
+</table>
 
 ### getSessionStorageForPrincipal(principal, documentURI, create) ###
 
@@ -200,6 +421,18 @@ should be called only during page transitions.
 Create a new about:blank document and content viewer.  
 @param aPrincipal the principal to use for the new document.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPrincipal</td>
+<td>the principal to use for the new document.  
+</td>
+</tr>
+
+</table>
 
 ### gatherCharsetMenuTelemetry() ###
   
@@ -255,6 +488,30 @@ Notify all attached observers that a reflow has just occurred.
 @param end           timestamp when reflow ended, in milliseconds since  
                      navigationStart (accurate to 1/1000 of a ms)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>interruptible</td>
+<td>if true, the reflow was interruptible.  
+</td>
+</tr>
+
+<tr>
+<td>interruptible</td>
+<td>if true, the reflow was interruptible.  
+</td>
+</tr>
+
+<tr>
+<td>interruptible</td>
+<td>if true, the reflow was interruptible.  
+</td>
+</tr>
+
+</table>
 
 ### addWeakScrollObserver(obs) ###
   

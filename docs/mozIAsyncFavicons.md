@@ -48,6 +48,42 @@ when history is disabled.
 @see nsIFaviconDataCallback in nsIFaviconService.idl.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPageURI</td>
+<td>       URI of the page whose favicon is being set.  
+</td>
+</tr>
+
+<tr>
+<td>aPageURI</td>
+<td>       URI of the page whose favicon is being set.  
+</td>
+</tr>
+
+<tr>
+<td>aPageURI</td>
+<td>       URI of the page whose favicon is being set.  
+</td>
+</tr>
+
+<tr>
+<td>aPageURI</td>
+<td>       URI of the page whose favicon is being set.  
+</td>
+</tr>
+
+<tr>
+<td>aPageURI</td>
+<td>       URI of the page whose favicon is being set.  
+</td>
+</tr>
+
+</table>
+
 ### replaceFaviconData(aFaviconURI, aData, aDataLen, aMimeType, aExpiration) ###
   
 Sets the data for a given favicon URI either by replacing existing data in  
@@ -90,6 +126,42 @@ size it won't be saved.
         Thrown if the favicon is overbloated and won't be saved to the db.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       URI of the favicon whose data is being set.  
+</td>
+</tr>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       URI of the favicon whose data is being set.  
+</td>
+</tr>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       URI of the favicon whose data is being set.  
+</td>
+</tr>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       URI of the favicon whose data is being set.  
+</td>
+</tr>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       URI of the favicon whose data is being set.  
+</td>
+</tr>
+
+</table>
+
 ### replaceFaviconDataFromDataURL(aFaviconURI, aDataURL, aExpiration) ###
   
 Same as replaceFaviconData but the data is provided by a string  
@@ -109,6 +181,30 @@ containing a data URL.
         Thrown if the favicon is overbloated and won't be saved to the db.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       URI of the favicon whose data is being set.  
+</td>
+</tr>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       URI of the favicon whose data is being set.  
+</td>
+</tr>
+
+<tr>
+<td>aFaviconURI</td>
+<td>       URI of the favicon whose data is being set.  
+</td>
+</tr>
+
+</table>
+
 ### getFaviconURLForPage(aPageURI, aCallback) ###
   
 Retrieves the favicon URI associated to the given page, if any.  
@@ -127,6 +223,24 @@ Retrieves the favicon URI associated to the given page, if any.
 @see nsIFaviconDataCallback in nsIFaviconService.idl.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPageURI</td>
+<td>       URI of the page whose favicon URI we're looking up.  
+</td>
+</tr>
+
+<tr>
+<td>aPageURI</td>
+<td>       URI of the page whose favicon URI we're looking up.  
+</td>
+</tr>
+
+</table>
+
 ### getFaviconDataForPage(aPageURI, aCallback) ###
   
 Retrieves the favicon URI and data associated to the given page, if any.  
@@ -144,3 +258,21 @@ Retrieves the favicon URI and data associated to the given page, if any.
   
 @see nsIFaviconDataCallback in nsIFaviconService.idl.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPageURI</td>
+<td>       URI of the page whose favicon URI and data we're looking up.  
+</td>
+</tr>
+
+<tr>
+<td>aPageURI</td>
+<td>       URI of the page whose favicon URI and data we're looking up.  
+</td>
+</tr>
+
+</table>

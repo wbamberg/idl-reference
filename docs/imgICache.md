@@ -21,6 +21,19 @@ Evict images from the cache.
               If FALSE, evict everything except chrome images.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>chrome</td>
+<td>If TRUE,  evict only chrome images.  
+              If FALSE, evict everything except chrome images.  
+</td>
+</tr>
+
+</table>
+
 ### removeEntry(uri) ###
   
 Evict images from the cache.  
@@ -28,6 +41,19 @@ Evict images from the cache.
 @param uri The URI to remove.  
 @throws NS_ERROR_NOT_AVAILABLE if \a uri was unable to be removed from the cache.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>The URI to remove.  
+@throws NS_ERROR_NOT_AVAILABLE if \a uri was unable to be removed from the cache.  
+</td>
+</tr>
+
+</table>
 
 ### findEntryProperties(uri) ###
   
@@ -43,6 +69,18 @@ Hopefully this will be removed with bug 805119
 @param uri The URI to look up.  
 @returns NULL if the URL was not found in the cache  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>uri</td>
+<td>The URI to look up.  
+</td>
+</tr>
+
+</table>
 
 ### respectPrivacyNotifications() ###
   

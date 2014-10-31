@@ -26,6 +26,18 @@ given NetAddr struct and increments the internal address iterator.
 the record.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPort</td>
+<td>       A port number to initialize the NetAddr with.  
+</td>
+</tr>
+
+</table>
+
 ### getScriptableNextAddr(aPort) ###
   
 this function returns the value of the next IP address as a  
@@ -37,6 +49,18 @@ scriptable address and increments the internal address iterator.
 @throws NS_ERROR_NOT_AVAILABLE if there is not another IP address in  
 the record.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPort</td>
+<td>       A port number to initialize the nsINetAddr with.  
+</td>
+</tr>
+
+</table>
 
 ### getNextAddrAsString() ###
   
@@ -67,6 +91,19 @@ record if other addresses are available.
 @param aPort is the port number associated with the failure, if any.  
        It may be zero if not applicable.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aPort</td>
+<td>is the port number associated with the failure, if any.  
+       It may be zero if not applicable.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

@@ -29,3 +29,33 @@ in the proxy resolution occurs.
        could not be satisfied, in which case the value of aStatus  
        indicates the reason for the failure and aProxyInfo will be null.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRequest</td>
+<td>       The value returned from asyncResolve.  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       The value returned from asyncResolve.  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       The value returned from asyncResolve.  
+</td>
+</tr>
+
+<tr>
+<td>aRequest</td>
+<td>       The value returned from asyncResolve.  
+</td>
+</tr>
+
+</table>

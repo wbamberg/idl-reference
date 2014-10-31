@@ -14,6 +14,18 @@ This method constructs a new file URI
 @return reference to a new nsIURI object  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aFile</td>
+<td>nsIFile  
+</td>
+</tr>
+
+</table>
+
 ### getURLSpecFromFile(file) ###
   
 Converts the nsIFile to the corresponding URL string.  NOTE: under  
@@ -58,3 +70,15 @@ Takes a local file and tries to interpret it as an internet shortcut
 @throw NS_ERROR_NOT_AVAILABLE if the OS does not support such files.  
 @throw NS_ERROR_NOT_AVAILABLE if this file is not an internet shortcut.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>file</td>
+<td>The local file to read  
+</td>
+</tr>
+
+</table>

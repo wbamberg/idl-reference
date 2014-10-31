@@ -78,6 +78,52 @@ loading.
        This parameter is optional and may be null.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+</table>
+
 ### loadURIWithBase(aURI, aLoadFlags, aReferrer, aPostData, aHeaders, aBaseURI) ###
   
 Loads a given URI.  This will give priority to loading the requested URI  
@@ -121,6 +167,60 @@ different to loadURI.
        This parameter is optional and may be null.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>       The URI string to load.  For HTTP and FTP URLs and possibly others,  
+       characters above U+007F will be converted to UTF-8 and then URL-  
+       escaped per the rules of RFC 2396.  
+</td>
+</tr>
+
+</table>
+
 ### reload(aReloadFlags) ###
   
 Tells the Object to reload the current page.  There may be cases where the  
@@ -137,6 +237,21 @@ determined that the request is non-idempotent).
        Indicating that the user canceled the reload.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aReloadFlags</td>
+<td>       Flags modifying load behaviour.  This parameter is a bitwise  
+       combination of the Load Flags defined above.  (Undefined bits are  
+       reserved for future use.)  Generally you will pass LOAD_FLAGS_NONE  
+       for this parameter.  
+</td>
+</tr>
+
+</table>
+
 ### stop(aStopFlags) ###
   
 Stops a load of a URI.  
@@ -144,6 +259,18 @@ Stops a load of a URI.
 @param aStopFlags  
        This parameter is one of the stop flags defined above.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStopFlags</td>
+<td>       This parameter is one of the stop flags defined above.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

@@ -23,6 +23,30 @@ nsIUrlClassifierCompleter::complete() call.
        The database chunk that this hash belongs to.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>hash</td>
+<td>       The 128-bit hash that was discovered.  
+</td>
+</tr>
+
+<tr>
+<td>hash</td>
+<td>       The 128-bit hash that was discovered.  
+</td>
+</tr>
+
+<tr>
+<td>hash</td>
+<td>       The 128-bit hash that was discovered.  
+</td>
+</tr>
+
+</table>
+
 ### completionFinished(status) ###
   
 The completion is complete.  This method is called once per  
@@ -32,3 +56,15 @@ calls are finished.
 @param status  
        NS_OK if the request completed successfully, or an error code.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>status</td>
+<td>       NS_OK if the request completed successfully, or an error code.  
+</td>
+</tr>
+
+</table>

@@ -22,3 +22,37 @@ IAC-eligible apps.
   
 Returns a promise.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>callerID</td>
+<td>The generated UUID to identify the caller and  
+                          should be unique for each call.  
+</td>
+</tr>
+
+<tr>
+<td>callerID</td>
+<td>The generated UUID to identify the caller and  
+                          should be unique for each call.  
+</td>
+</tr>
+
+<tr>
+<td>callerID</td>
+<td>The generated UUID to identify the caller and  
+                          should be unique for each call.  
+</td>
+</tr>
+
+<tr>
+<td>callerID</td>
+<td>The generated UUID to identify the caller and  
+                          should be unique for each call.  
+</td>
+</tr>
+
+</table>

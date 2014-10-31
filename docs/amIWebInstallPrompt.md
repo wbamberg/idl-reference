@@ -24,3 +24,37 @@ Get a confirmation that the user wants to start the installs.
 @param  aCount  
         The number of AddonInstalls  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window that triggered the installs  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aWindow  
+        The window that triggered the installs  
+</td>
+</tr>
+
+</table>

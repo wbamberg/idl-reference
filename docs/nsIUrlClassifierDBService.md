@@ -20,6 +20,24 @@ Looks up a URI in the specified tables.
        of tables to which the key belongs.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>principal:</td>
+<td>The principal containing the URI to search.  
+</td>
+</tr>
+
+<tr>
+<td>principal:</td>
+<td>The principal containing the URI to search.  
+</td>
+</tr>
+
+</table>
+
 ### getTables(c) ###
   
 Lists the tables along with which chunks are available in each table.  
@@ -48,6 +66,24 @@ is already an update in progress.
 @param tables A comma-separated list of tables included in this update.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>updater</td>
+<td>The update observer tied to this update.  
+</td>
+</tr>
+
+<tr>
+<td>updater</td>
+<td>The update observer tied to this update.  
+</td>
+</tr>
+
+</table>
+
 ### beginStream(table) ###
   
 Begin a stream update.  This should be called once per url being  
@@ -56,6 +92,19 @@ fetched.
 @param table The table the contents of this stream will be associated  
              with, or empty for the initial stream.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>table</td>
+<td>The table the contents of this stream will be associated  
+             with, or empty for the initial stream.  
+</td>
+</tr>
+
+</table>
 
 ### updateStream(updateChunk) ###
   

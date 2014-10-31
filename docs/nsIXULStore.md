@@ -23,6 +23,36 @@ Sets a value in the store.
 @param value - value of the attribute  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+</table>
+
 ### hasValue(doc, id, attr) ###
   
 Returns true if the store contains a value for attr.  
@@ -31,6 +61,30 @@ Returns true if the store contains a value for attr.
 @param id - identifier of the node  
 @param attr - attribute  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>doc</td>
+<td>- URI of the document  
+</td>
+</tr>
+
+<tr>
+<td>doc</td>
+<td>- URI of the document  
+</td>
+</tr>
+
+<tr>
+<td>doc</td>
+<td>- URI of the document  
+</td>
+</tr>
+
+</table>
 
 ### getValue(doc, id, attr) ###
   
@@ -43,6 +97,30 @@ Retrieves a value in the store, or an empty string if it does not exist.
 @returns the value of the attribute  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+</table>
+
 ### removeValue(doc, id, attr) ###
   
 Removes a value in the store.  
@@ -52,6 +130,30 @@ Removes a value in the store.
 @param attr - attribute to remove  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+</table>
+
 ### getIDsEnumerator(doc) ###
   
 Iterates over all of the ids associated with a given document uri that  
@@ -59,6 +161,18 @@ have stored data.
   
 @param doc - document URI  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+</table>
 
 ### getAttributeEnumerator(doc, id) ###
   
@@ -68,3 +182,21 @@ and id that have stored data.
 @param doc - document URI  
 @param id - identifier of the node  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+<tr>
+<td>doc</td>
+<td>- document URI  
+</td>
+</tr>
+
+</table>

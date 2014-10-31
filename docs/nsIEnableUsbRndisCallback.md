@@ -15,3 +15,21 @@ Callback function used to report the status of enabling/disabling usb rndis.
 @param enable  
        Boolean to indicate if we are enabling or disabling usb rndis.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>success</td>
+<td>       Boolean to indicate the operation is successful or not.  
+</td>
+</tr>
+
+<tr>
+<td>success</td>
+<td>       Boolean to indicate the operation is successful or not.  
+</td>
+</tr>
+
+</table>

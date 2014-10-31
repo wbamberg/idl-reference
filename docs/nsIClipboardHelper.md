@@ -19,6 +19,30 @@ copy string to given clipboard
        (eg. kSelectionClipboard -- see nsIClipboard.idl)  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aString,</td>
+<td>the string to copy to the clipboard  
+</td>
+</tr>
+
+<tr>
+<td>aString,</td>
+<td>the string to copy to the clipboard  
+</td>
+</tr>
+
+<tr>
+<td>aString,</td>
+<td>the string to copy to the clipboard  
+</td>
+</tr>
+
+</table>
+
 ### copyString(aString, aDoc) ###
   
 copy string to (default) clipboard  
@@ -26,3 +50,21 @@ copy string to (default) clipboard
 @param aString, the string to copy to the clipboard  
 @param aDoc, the source document for the string, if available  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aString,</td>
+<td>the string to copy to the clipboard  
+</td>
+</tr>
+
+<tr>
+<td>aString,</td>
+<td>the string to copy to the clipboard  
+</td>
+</tr>
+
+</table>

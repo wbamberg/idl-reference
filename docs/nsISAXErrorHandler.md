@@ -44,6 +44,24 @@ well.
 @param error The error message.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>locator</td>
+<td>The locator object for the error (may be null).  
+</td>
+</tr>
+
+<tr>
+<td>locator</td>
+<td>The locator object for the error (may be null).  
+</td>
+</tr>
+
+</table>
+
 ### fatalError(locator, error) ###
   
 Receive notification of a non-recoverable error.  
@@ -70,6 +88,24 @@ other events once this method has been invoked.
 @param error The error message.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>locator</td>
+<td>The locator object for the error (may be null).  
+</td>
+</tr>
+
+<tr>
+<td>locator</td>
+<td>The locator object for the error (may be null).  
+</td>
+</tr>
+
+</table>
+
 ### ignorableWarning(locator, error) ###
   
 Receive notification of a warning.  
@@ -88,3 +124,21 @@ as well.
 @param locator The locator object for the warning (may be null).  
 @param error The warning message.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>locator</td>
+<td>The locator object for the warning (may be null).  
+</td>
+</tr>
+
+<tr>
+<td>locator</td>
+<td>The locator object for the warning (may be null).  
+</td>
+</tr>
+
+</table>

@@ -18,6 +18,18 @@ of this nsIMultiplexInputStream also is used as an nsISeekableStream.
 @param stream  stream to append  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>stream</td>
+<td>stream to append  
+</td>
+</tr>
+
+</table>
+
 ### insertStream(stream, index) ###
   
 Insert a stream at specified index.  If the cursor of this stream is at  
@@ -30,6 +42,24 @@ used as an nsISeekableStream.
 @param index   index to insert stream at, must be <= count  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>stream</td>
+<td>stream to insert  
+</td>
+</tr>
+
+<tr>
+<td>stream</td>
+<td>stream to insert  
+</td>
+</tr>
+
+</table>
+
 ### removeStream(index) ###
   
 Remove stream at specified index. If this stream is the one currently  
@@ -38,12 +68,36 @@ stream
 @param index   remove stream at this index, must be < count  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>remove stream at this index, must be < count  
+</td>
+</tr>
+
+</table>
+
 ### getStream(index) ###
   
 Get stream at specified index.  
 @param index   return stream at this index, must be < count  
 @return        stream at specified index  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>index</td>
+<td>return stream at this index, must be < count  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

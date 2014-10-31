@@ -31,6 +31,42 @@ Most implementations of this interface require that the stream:
        True if the stream already contains headers for the HTTP request.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStream</td>
+<td>       The stream to be uploaded by this channel.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The stream to be uploaded by this channel.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The stream to be uploaded by this channel.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The stream to be uploaded by this channel.  
+</td>
+</tr>
+
+<tr>
+<td>aStream</td>
+<td>       The stream to be uploaded by this channel.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### uploadStreamHasHeaders ###

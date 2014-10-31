@@ -24,6 +24,19 @@ OPEN_READONLY open flag has no effect on this behavior.
    respects separate storage for private browsing.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLoadContextInfo</td>
+<td>   Information about the loading context, this focuses the storage JAR and  
+   respects separate storage for private browsing.  
+</td>
+</tr>
+
+</table>
+
 ### diskCacheStorage(aLoadContextInfo, aLookupAppCache) ###
   
 Get storage where entries will be written to disk when not forbidden by  
@@ -33,6 +46,19 @@ response headers.
    When set true (for top level document loading channels) app cache will  
    be first to check on to find entries in.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLookupAppCache</td>
+<td>   When set true (for top level document loading channels) app cache will  
+   be first to check on to find entries in.  
+</td>
+</tr>
+
+</table>
 
 ### appCacheStorage(aLoadContextInfo, aApplicationCache) ###
   
@@ -45,6 +71,24 @@ mechanism.
    Optional reference to an existing appcache.  When left null, this will  
    work with offline cache as a whole.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aLoadContextInfo</td>
+<td>   Mandatory reference to a load context information.  
+</td>
+</tr>
+
+<tr>
+<td>aLoadContextInfo</td>
+<td>   Mandatory reference to a load context information.  
+</td>
+</tr>
+
+</table>
 
 ### clear() ###
   
@@ -66,6 +110,20 @@ Asynchronously determine how many bytes of the disk space the cache takes.
    nsICacheStorageConsumptionObserver.  
    NOTE: the observer MUST implement nsISupportsWeakReference.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aObserver</td>
+<td>   A mandatory (weak referred) observer.  Documented at  
+   nsICacheStorageConsumptionObserver.  
+   NOTE: the observer MUST implement nsISupportsWeakReference.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

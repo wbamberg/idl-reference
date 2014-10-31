@@ -33,6 +33,19 @@ otherwise.
          otherwise  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>resourceURI</td>
+<td>A resource:// URI string representing the location of  
+       the js file to be checked if it is already loaded or not.  
+</td>
+</tr>
+
+</table>
+
 ### unload(registryLocation) ###
 
 ### importGlobalProperties(aPropertyList) ###
@@ -72,6 +85,18 @@ the GC and CC with weak maps.
 @returns If aMap is a weak map object, return the keys of the weak  
 map as an array.  Otherwise, return undefined.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aMap</td>
+<td>weak map or other JavaScript value  
+</td>
+</tr>
+
+</table>
 
 ### getJSTestingFunctions() ###
 

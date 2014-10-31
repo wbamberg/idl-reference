@@ -23,6 +23,20 @@ item does not automatically activate the application.
        application activates regardless.   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aIgnoreOtherApplications</td>
+<td>If false, the application is activated  
+       only if no other application is currently active. If true, the  
+       application activates regardless.   
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### dockMenu ###

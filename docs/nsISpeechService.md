@@ -33,6 +33,42 @@ https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#utterance-attribut
                 data back to browser.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aText</td>
+<td>text to utter.  
+</td>
+</tr>
+
+<tr>
+<td>aText</td>
+<td>text to utter.  
+</td>
+</tr>
+
+<tr>
+<td>aText</td>
+<td>text to utter.  
+</td>
+</tr>
+
+<tr>
+<td>aText</td>
+<td>text to utter.  
+</td>
+</tr>
+
+<tr>
+<td>aText</td>
+<td>text to utter.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### serviceType ###

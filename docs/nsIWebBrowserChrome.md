@@ -18,6 +18,24 @@ Called when the status text in the chrome needs to be updated.
               no status.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>statusType</td>
+<td>indicates what is setting the text  
+</td>
+</tr>
+
+<tr>
+<td>statusType</td>
+<td>indicates what is setting the text  
+</td>
+</tr>
+
+</table>
+
 ### destroyBrowserWindow() ###
   
 Asks the implementer to destroy the window associated with this  
@@ -31,6 +49,24 @@ specified size.
 @param aCX new width of the browser  
 @param aCY new height of the browser  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCX</td>
+<td>new width of the browser  
+</td>
+</tr>
+
+<tr>
+<td>aCX</td>
+<td>new width of the browser  
+</td>
+</tr>
+
+</table>
 
 ### showAsModal() ###
   
@@ -51,6 +87,18 @@ Exit a modal event loop if we're in one. The implementation
 should also exit out of the loop if the window is destroyed.  
 @param aStatus - the result code to return from showAsModal  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aStatus</td>
+<td>- the result code to return from showAsModal  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

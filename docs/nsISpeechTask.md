@@ -20,6 +20,30 @@ Prepare browser for speech.
 @param aRate     audio rate. Only required in direct audio services  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCallback</td>
+<td>callback object for mid-speech operations.  
+</td>
+</tr>
+
+<tr>
+<td>aCallback</td>
+<td>callback object for mid-speech operations.  
+</td>
+</tr>
+
+<tr>
+<td>aCallback</td>
+<td>callback object for mid-speech operations.  
+</td>
+</tr>
+
+</table>
+
 ### sendAudio(aData, aLandmarks) ###
   
 Send audio data to browser.  
@@ -28,6 +52,24 @@ Send audio data to browser.
 @param aLandmarks an array of sample offset and landmark pairs.  
                     Used for emiting boundary and mark events.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aData</td>
+<td>an Int16Array with PCM-16 audio data.  
+</td>
+</tr>
+
+<tr>
+<td>aData</td>
+<td>an Int16Array with PCM-16 audio data.  
+</td>
+</tr>
+
+</table>
 
 ### sendAudioNative(aData, aDataLen) ###
 
@@ -44,6 +86,24 @@ Dispatch end event.
 @param aCharIndex   offset of spoken characters.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElapsedTime</td>
+<td>time in seconds since speech has started.  
+</td>
+</tr>
+
+<tr>
+<td>aElapsedTime</td>
+<td>time in seconds since speech has started.  
+</td>
+</tr>
+
+</table>
+
 ### dispatchPause(aElapsedTime, aCharIndex) ###
   
 Dispatch pause event. Should not be called directly by service.  
@@ -51,6 +111,24 @@ Dispatch pause event. Should not be called directly by service.
 @param aElapsedTime time in seconds since speech has started.  
 @param aCharIndex   offset of spoken characters.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElapsedTime</td>
+<td>time in seconds since speech has started.  
+</td>
+</tr>
+
+<tr>
+<td>aElapsedTime</td>
+<td>time in seconds since speech has started.  
+</td>
+</tr>
+
+</table>
 
 ### dispatchResume(aElapsedTime, aCharIndex) ###
   
@@ -60,6 +138,24 @@ Dispatch resume event. Should not be called directly by service.
 @param aCharIndex   offset of spoken characters.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElapsedTime</td>
+<td>time in seconds since speech has started.  
+</td>
+</tr>
+
+<tr>
+<td>aElapsedTime</td>
+<td>time in seconds since speech has started.  
+</td>
+</tr>
+
+</table>
+
 ### dispatchError(aElapsedTime, aCharIndex) ###
   
 Dispatch error event.  
@@ -67,6 +163,24 @@ Dispatch error event.
 @param aElapsedTime time in seconds since speech has started.  
 @param aCharIndex   offset of spoken characters.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aElapsedTime</td>
+<td>time in seconds since speech has started.  
+</td>
+</tr>
+
+<tr>
+<td>aElapsedTime</td>
+<td>time in seconds since speech has started.  
+</td>
+</tr>
+
+</table>
 
 ### dispatchBoundary(aName, aElapsedTime, aCharIndex) ###
   
@@ -77,6 +191,30 @@ Dispatch boundary event.
 @param aCharIndex   offset of spoken characters.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>name of boundary, 'word' or 'sentence'  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>name of boundary, 'word' or 'sentence'  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>name of boundary, 'word' or 'sentence'  
+</td>
+</tr>
+
+</table>
+
 ### dispatchMark(aName, aElapsedTime, aCharIndex) ###
   
 Dispatch mark event.  
@@ -85,3 +223,27 @@ Dispatch mark event.
 @param aElapsedTime time in seconds since speech has started.  
 @param aCharIndex   offset of spoken characters.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>mark identifier.  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>mark identifier.  
+</td>
+</tr>
+
+<tr>
+<td>aName</td>
+<td>mark identifier.  
+</td>
+</tr>
+
+</table>

@@ -14,6 +14,18 @@ commandline flag.
 @param aName The profile name to find.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aName</td>
+<td>The profile name to find.  
+</td>
+</tr>
+
+</table>
+
 ### lockProfilePath(aDirectory, aTempDirectory) ###
   
 Lock an arbitrary path as a profile. If the path does not exist, it  
@@ -33,6 +45,26 @@ profile directory is located.
 @param aName  
        The profile name.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRootDir</td>
+<td>       The profile directory. May be null, in which case a suitable  
+       default will be chosen based on the profile name.  
+</td>
+</tr>
+
+<tr>
+<td>aRootDir</td>
+<td>       The profile directory. May be null, in which case a suitable  
+       default will be chosen based on the profile name.  
+</td>
+</tr>
+
+</table>
 
 ### createDefaultProfileForApp(aProfileName, aAppName, aVendorName, aProfileDefaultsDir) ###
   
@@ -59,6 +91,40 @@ new profile directory.
         The location where the profile defaults are.  
 @return The created profile.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aProfileName  
+        The name of the profile  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aProfileName  
+        The name of the profile  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aProfileName  
+        The name of the profile  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aProfileName  
+        The name of the profile  
+</td>
+</tr>
+
+</table>
 
 ### flush() ###
   

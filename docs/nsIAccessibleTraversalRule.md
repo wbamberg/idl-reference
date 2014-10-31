@@ -18,6 +18,24 @@ that would have no affect.
 @param aCount [out] the length of the array.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aRoles</td>
+<td>[out] an array of the roles to match.  
+</td>
+</tr>
+
+<tr>
+<td>aRoles</td>
+<td>[out] an array of the roles to match.  
+</td>
+</tr>
+
+</table>
+
 ### match(aAccessible) ###
   
 Determines if a given accessible is to be accepted in our traversal rule  
@@ -25,6 +43,18 @@ Determines if a given accessible is to be accepted in our traversal rule
 @param aAccessible [in] accessible to examine.  
 @return a bitfield of FILTER_MATCH and FILTER_IGNORE_SUBTREE.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAccessible</td>
+<td>[in] accessible to examine.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

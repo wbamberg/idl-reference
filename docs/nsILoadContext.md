@@ -22,6 +22,19 @@ Check whether the load is happening in a particular type of application.
         the given app type.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>an</td>
+<td>application type.  For now, the constants to be passed here are  
+       the nsIDocShell APP_TYPE_* constants.  
+</td>
+</tr>
+
+</table>
+
 ### SetPrivateBrowsing(aInPrivateBrowsing) ###
   
 Set the private browsing state of the load context, meant to be used internally.  

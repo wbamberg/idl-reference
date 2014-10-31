@@ -17,6 +17,24 @@ the cell is currently visible (on the screen).
 @param  columnIndex  [in] the column index to retrieve the cell at  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>rowIndex     [in] the row index to retrieve the cell at  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>rowIndex     [in] the row index to retrieve the cell at  
+</td>
+</tr>
+
+</table>
+
 ### getCellIndexAt(rowIndex, columnIndex) ###
   
 Translate the given row and column indices into the corresponding cell  
@@ -26,6 +44,24 @@ index.
 @param  columnIndex [in] the column index to return cell index at  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>rowIndex    [in] the row index to return cell index at  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>rowIndex    [in] the row index to return cell index at  
+</td>
+</tr>
+
+</table>
+
 ### getColumnIndexAt(cellIndex) ###
   
 Translate the given cell index into the corresponding column index.  
@@ -33,12 +69,36 @@ Translate the given cell index into the corresponding column index.
 @param  cellIndex  [in] index of the table cell to return column index for  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>cellIndex  [in] index of the table cell to return column index for  
+</td>
+</tr>
+
+</table>
+
 ### getRowIndexAt(cellIndex) ###
   
 Translate the given cell index into the corresponding row index.  
   
 @param cellIndex  [in] index of the table cell to return row index for  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>cellIndex</td>
+<td>[in] index of the table cell to return row index for  
+</td>
+</tr>
+
+</table>
 
 ### getRowAndColumnIndicesAt(cellIndex, rowIndex, columnIndex) ###
   
@@ -49,6 +109,30 @@ indices.
 @param rowIndex     [out] row index at the given cell index  
 @param columnIndex  [out] column index at the given cell index  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>cellIndex</td>
+<td>[in] cell index to return row and column indices for  
+</td>
+</tr>
+
+<tr>
+<td>cellIndex</td>
+<td>[in] cell index to return row and column indices for  
+</td>
+</tr>
+
+<tr>
+<td>cellIndex</td>
+<td>[in] cell index to return row and column indices for  
+</td>
+</tr>
+
+</table>
 
 ### getColumnExtentAt(row, column) ###
   
@@ -61,6 +145,24 @@ the specified cell spans multiple columns.
                  for  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>row     [in] row index of the cell to return the column extent for  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>row     [in] row index of the cell to return the column extent for  
+</td>
+</tr>
+
+</table>
+
 ### getRowExtentAt(row, column) ###
   
 Return the number of rows occupied by the accessible cell at the specified  
@@ -72,6 +174,24 @@ cell spans multiple rows.
                  for  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>row     [in] row index of the cell to return the column extent for  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>row     [in] row index of the cell to return the column extent for  
+</td>
+</tr>
+
+</table>
+
 ### getColumnDescription(columnIndex) ###
   
 Return the description text of the specified column in the table.  
@@ -79,12 +199,36 @@ Return the description text of the specified column in the table.
 @param  columnIndex  [in] the column index to retrieve description for  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>columnIndex  [in] the column index to retrieve description for  
+</td>
+</tr>
+
+</table>
+
 ### getRowDescription(rowIndex) ###
   
 Return the description text of the specified row in the table.  
   
 @param  rowIndex  [in] the row index to retrieve description for  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>rowIndex  [in] the row index to retrieve description for  
+</td>
+</tr>
+
+</table>
 
 ### isColumnSelected(columnIndex) ###
   
@@ -94,6 +238,18 @@ selected, i.e. all cells within the column are selected.
 @param  columnIndex  [in] the column index to determine if it's selected  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>columnIndex  [in] the column index to determine if it's selected  
+</td>
+</tr>
+
+</table>
+
 ### isRowSelected(rowIndex) ###
   
 Return a boolean value indicating whether the specified row is selected,  
@@ -101,6 +257,18 @@ i.e. all cells within the row are selected.
   
 @param  rowIndex  [in] the row index to determine whether it's selected  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>rowIndex  [in] the row index to determine whether it's selected  
+</td>
+</tr>
+
+</table>
 
 ### isCellSelected(rowIndex, columnIndex) ###
   
@@ -110,6 +278,24 @@ Return a boolean value indicating whether the specified cell is selected.
 @param  columnIndex  [in] the column index of the cell  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>rowIndex     [in] the row index of the cell  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>rowIndex     [in] the row index of the cell  
+</td>
+</tr>
+
+</table>
+
 ### getSelectedCellIndices(cellsArraySize, cellsArray) ###
   
 Return an array of cell indices currently selected.  
@@ -117,6 +303,24 @@ Return an array of cell indices currently selected.
 @param  cellsArraySize  [in] length of array  
 @param  cellsArray      [in] array of indexes of selected cells  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>cellsArraySize  [in] length of array  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>cellsArraySize  [in] length of array  
+</td>
+</tr>
+
+</table>
 
 ### getSelectedColumnIndices(columnsArraySize, columnsArray) ###
   
@@ -126,6 +330,24 @@ Return an array of column indices currently selected.
 @param  columnsArray      [in] array of indices of selected columns  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>columnsArraySize  [in] length of array  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>columnsArraySize  [in] length of array  
+</td>
+</tr>
+
+</table>
+
 ### getSelectedRowIndices(rowsArraySize, rowsArray) ###
   
 Return an array of row indices currently selected.  
@@ -134,12 +356,42 @@ Return an array of row indices currently selected.
 @param  rowsArray      [in] array of indices of selected rows  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>rowsArraySize  [in] Length of array  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>rowsArraySize  [in] Length of array  
+</td>
+</tr>
+
+</table>
+
 ### selectRow(rowIndex) ###
   
 Select a row and unselects all previously selected rows.  
   
 @param  rowIndex  [in] the row index to select  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>rowIndex  [in] the row index to select  
+</td>
+</tr>
+
+</table>
 
 ### selectColumn(columnIndex) ###
   
@@ -148,6 +400,18 @@ Select a column and unselects all previously selected columns.
 @param  columnIndex  [in] the column index to select  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>columnIndex  [in] the column index to select  
+</td>
+</tr>
+
+</table>
+
 ### unselectRow(rowIndex) ###
   
 Unselect the given row, leaving other selected rows selected (if any).  
@@ -155,12 +419,36 @@ Unselect the given row, leaving other selected rows selected (if any).
 @param  rowIndex  [in] the row index to select  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>rowIndex  [in] the row index to select  
+</td>
+</tr>
+
+</table>
+
 ### unselectColumn(columnIndex) ###
   
 Unselect the given column, leaving other selected columns selected (if any).  
   
 @param  columnIndex  [in] the column index to select  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>columnIndex  [in] the column index to select  
+</td>
+</tr>
+
+</table>
 
 ### isProbablyForLayout() ###
   

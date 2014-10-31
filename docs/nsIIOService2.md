@@ -21,6 +21,30 @@ Creates a channel for a given URI.
 @return reference to the new nsIChannel object  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>nsIURI from which to make a channel  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>nsIURI from which to make a channel  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>nsIURI from which to make a channel  
+</td>
+</tr>
+
+</table>
+
 ### newChannelFromURIWithProxyFlags(aURI, aProxyURI, aProxyFlags) ###
   
 Creates a channel for a given URI.  
@@ -32,6 +56,30 @@ Creates a channel for a given URI.
        when resolving proxies for this new channel  
 @return reference to the new nsIChannel object  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aURI</td>
+<td>nsIURI from which to make a channel  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>nsIURI from which to make a channel  
+</td>
+</tr>
+
+<tr>
+<td>aURI</td>
+<td>nsIURI from which to make a channel  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

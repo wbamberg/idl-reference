@@ -17,6 +17,18 @@ preference.  It is not called for other methods.
 @param pref  The retrieved preference.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>pref</td>
+<td>The retrieved preference.  
+</td>
+</tr>
+
+</table>
+
 ### handleError(error) ###
   
 Called when an error occurs.  This may be called multiple times before  
@@ -24,6 +36,18 @@ handleCompletion is called.
   
 @param error  A number in Components.results describing the error.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>error</td>
+<td>A number in Components.results describing the error.  
+</td>
+</tr>
+
+</table>
 
 ### handleCompletion(reason) ###
   
@@ -34,6 +58,19 @@ called.
 @param reason  One of the COMPLETE_* values indicating the manner in which  
                the method completed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>reason</td>
+<td>One of the COMPLETE_* values indicating the manner in which  
+               the method completed.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

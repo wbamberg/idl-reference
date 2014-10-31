@@ -15,6 +15,30 @@ Check if the user can do the prescibed action for this uri.
 @param aWindow             The window generating this event.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aAction</td>
+<td>Action being performed  
+</td>
+</tr>
+
+<tr>
+<td>aAction</td>
+<td>Action being performed  
+</td>
+</tr>
+
+<tr>
+<td>aAction</td>
+<td>Action being performed  
+</td>
+</tr>
+
+</table>
+
 ### requestURIOverride(aTarget, aWindowContext) ###
   
 Request that blocked URI(s) be allowed through parental  
@@ -26,6 +50,28 @@ overriden. Note, may block while native UI is shown.
                            should be the root URI of the site.  
 @param window              Window that generates the event.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aTarget(s)</td>
+<td>URI to be overridden. In the case of  
+                           multiple URI, the first URI in the array  
+                           should be the root URI of the site.  
+</td>
+</tr>
+
+<tr>
+<td>aTarget(s)</td>
+<td>URI to be overridden. In the case of  
+                           multiple URI, the first URI in the array  
+                           should be the root URI of the site.  
+</td>
+</tr>
+
+</table>
 
 ### requestURIOverrides(aTargets, aWindowContext) ###
 
@@ -41,6 +87,36 @@ event.
 @param aTarget          The location the content was saved to if  
                         no blocking occurred.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aEntryType</td>
+<td>Constant defining the type of event.  
+</td>
+</tr>
+
+<tr>
+<td>aEntryType</td>
+<td>Constant defining the type of event.  
+</td>
+</tr>
+
+<tr>
+<td>aEntryType</td>
+<td>Constant defining the type of event.  
+</td>
+</tr>
+
+<tr>
+<td>aEntryType</td>
+<td>Constant defining the type of event.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

@@ -25,6 +25,30 @@ exhaustion) are not reported.
 parent process.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aGCLog</td>
+<td>The file that the GC log was written to.  
+</td>
+</tr>
+
+<tr>
+<td>aGCLog</td>
+<td>The file that the GC log was written to.  
+</td>
+</tr>
+
+<tr>
+<td>aGCLog</td>
+<td>The file that the GC log was written to.  
+</td>
+</tr>
+
+</table>
+
 ### onFinish() ###
   
 Called when GC/CC logging has finished, after all calls to |onDump|.  

@@ -21,3 +21,23 @@ Called when an install completes or fails.
 @param  aStatus  
         0 if the install was successful or negative if not  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aUrl  
+        The url of the add-on being installed  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aUrl  
+        The url of the add-on being installed  
+</td>
+</tr>
+
+</table>

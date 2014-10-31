@@ -37,6 +37,36 @@ associated with aWebProgress.
        error information (e.g., for HTTP requests see nsIHttpChannel).  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification  
+</td>
+</tr>
+
+</table>
+
 ### onProgressChange(aWebProgress, aRequest, aCurSelfProgress, aMaxSelfProgress, aCurTotalProgress, aMaxTotalProgress) ###
   
 Notification that the progress has changed for one of the requests  
@@ -66,6 +96,48 @@ knows about that interface, this function will not be called. Instead,
 nsIWebProgressListener2::onProgressChange64 will be called.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+</table>
+
 ### onLocationChange(aWebProgress, aRequest, aLocation, aFlags) ###
   
 Called when the location of the window being watched changes.  This is not  
@@ -86,6 +158,36 @@ this new page here.
        the location has changed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+</table>
+
 ### onStatusChange(aWebProgress, aRequest, aStatus, aMessage) ###
   
 Notification that the status of a request has changed.  The status message  
@@ -104,6 +206,36 @@ browser).
 @param aMessage  
        Localized text corresponding to aStatus.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+</table>
 
 ### onSecurityChange(aWebProgress, aRequest, aState) ###
   
@@ -124,6 +256,30 @@ occurs during network loading.
 NOTE: These notifications will only occur if a security package is  
 installed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+<tr>
+<td>aWebProgress</td>
+<td>       The nsIWebProgress instance that fired the notification.  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

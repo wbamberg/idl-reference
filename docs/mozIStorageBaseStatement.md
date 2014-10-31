@@ -45,6 +45,33 @@ Bind the given value at the given numeric index.
 @{  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParamIndex</td>
+<td>       0-based index, 0 corresponding to the first numbered argument or  
+       "?1".  
+</td>
+</tr>
+
+<tr>
+<td>aParamIndex</td>
+<td>       0-based index, 0 corresponding to the first numbered argument or  
+       "?1".  
+</td>
+</tr>
+
+<tr>
+<td>aParamIndex</td>
+<td>       0-based index, 0 corresponding to the first numbered argument or  
+       "?1".  
+</td>
+</tr>
+
+</table>
+
 ### bindStringParameter(aParamIndex, aValue) ###
 
 ### bindDoubleParameter(aParamIndex, aValue) ###
@@ -71,6 +98,18 @@ called, all the parameters in aParameters are bound and then executed.
 @note This is only works on statements being used asynchronously.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aParameters</td>
+<td>       The array of parameters to bind to the statement upon execution.  
+</td>
+</tr>
+
+</table>
+
 ### newBindingParamsArray() ###
   
 Creates a new mozIStorageBindingParamsArray that can be used to bind  
@@ -96,6 +135,20 @@ statement can be reused immediately, and reset does not need to be called.
 @return an object that can be used to cancel the statements execution.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCallback</td>
+<td>[optional]  
+       The callback object that will be notified of progress, errors, and  
+       completion.  
+</td>
+</tr>
+
+</table>
+
 ### escapeStringForLIKE(aValue, aEscapeChar) ###
   
 Escape a string for SQL LIKE search.  
@@ -112,6 +165,24 @@ Escape a string for SQL LIKE search.
         For example, we will convert "foo/bar_baz%20cheese"   
         into "foo//bar/_baz/%20cheese" (if the escape char is '/').  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aValue</td>
+<td>       The string to escape for SQL LIKE.  
+</td>
+</tr>
+
+<tr>
+<td>aValue</td>
+<td>       The string to escape for SQL LIKE.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

@@ -29,6 +29,42 @@ with this data.
 @return A nsIStreamListener which the caller should pump the data into.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aMimeContentType</td>
+<td>The content type of the incoming data  
+</td>
+</tr>
+
+<tr>
+<td>aMimeContentType</td>
+<td>The content type of the incoming data  
+</td>
+</tr>
+
+<tr>
+<td>aMimeContentType</td>
+<td>The content type of the incoming data  
+</td>
+</tr>
+
+<tr>
+<td>aMimeContentType</td>
+<td>The content type of the incoming data  
+</td>
+</tr>
+
+<tr>
+<td>aMimeContentType</td>
+<td>The content type of the incoming data  
+</td>
+</tr>
+
+</table>
+
 ### applyDecodingForExtension(aExtension, aEncodingType) ###
   
 Returns true if data from a URL with this extension combination  

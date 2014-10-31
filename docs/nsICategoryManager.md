@@ -14,6 +14,24 @@ Get the value for the given category's entry.
 @return The value.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCategory</td>
+<td>The name of the category ("protocol")  
+</td>
+</tr>
+
+<tr>
+<td>aCategory</td>
+<td>The name of the category ("protocol")  
+</td>
+</tr>
+
+</table>
+
 ### addCategoryEntry(aCategory, aEntry, aValue, aPersist, aReplace) ###
   
 Add an entry to a category.  
@@ -25,6 +43,42 @@ Add an entry to a category.
 @return Previous entry, if any  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCategory</td>
+<td>The name of the category ("protocol")  
+</td>
+</tr>
+
+<tr>
+<td>aCategory</td>
+<td>The name of the category ("protocol")  
+</td>
+</tr>
+
+<tr>
+<td>aCategory</td>
+<td>The name of the category ("protocol")  
+</td>
+</tr>
+
+<tr>
+<td>aCategory</td>
+<td>The name of the category ("protocol")  
+</td>
+</tr>
+
+<tr>
+<td>aCategory</td>
+<td>The name of the category ("protocol")  
+</td>
+</tr>
+
+</table>
+
 ### deleteCategoryEntry(aCategory, aEntry, aPersist) ###
   
 Delete an entry from the category.  
@@ -33,11 +87,47 @@ Delete an entry from the category.
 @param aPersist Delete persistent data from registry, if present?  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCategory</td>
+<td>The name of the category ("protocol")  
+</td>
+</tr>
+
+<tr>
+<td>aCategory</td>
+<td>The name of the category ("protocol")  
+</td>
+</tr>
+
+<tr>
+<td>aCategory</td>
+<td>The name of the category ("protocol")  
+</td>
+</tr>
+
+</table>
+
 ### deleteCategory(aCategory) ###
   
 Delete a category and all entries.  
 @param aCategory The category to be deleted.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCategory</td>
+<td>The category to be deleted.  
+</td>
+</tr>
+
+</table>
 
 ### enumerateCategory(aCategory) ###
   
@@ -47,6 +137,18 @@ Enumerate the entries in a category.
         nsISupportsCString.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCategory</td>
+<td>The category to be enumerated.  
+</td>
+</tr>
+
+</table>
+
 ### enumerateCategories() ###
   
 Enumerate all existing categories  
@@ -54,3 +156,15 @@ Enumerate all existing categories
 @return a simple enumerator, each result QIs to  
         nsISupportsCString.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aCategory</td>
+<td>The category to be enumerated.  
+</td>
+</tr>
+
+</table>

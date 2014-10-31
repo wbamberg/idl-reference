@@ -27,6 +27,24 @@ In both of these cases, no OnDataAvailable will be called, and
  OnStopRequest will immediately follow with the same status code.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>startPos</td>
+<td>the starting offset, in bytes, to use to download  
+</td>
+</tr>
+
+<tr>
+<td>startPos</td>
+<td>the starting offset, in bytes, to use to download  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### entityID ###

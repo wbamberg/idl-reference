@@ -14,6 +14,30 @@ Copy user profile information to the current active profile.
 @param aProfile profile to migrate from, if there is more than one.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>aItems</td>
+<td>list of data items to migrate. see above for values.  
+</td>
+</tr>
+
+<tr>
+<td>aItems</td>
+<td>list of data items to migrate. see above for values.  
+</td>
+</tr>
+
+<tr>
+<td>aItems</td>
+<td>list of data items to migrate. see above for values.  
+</td>
+</tr>
+
+</table>
+
 ### getMigrateData(aProfile, aDoingStartup) ###
   
 A bit field containing profile items that this migrator  
@@ -24,6 +48,26 @@ offers for import.
 @return  bit field containing profile items (see above)  
 @note    a return value of 0 represents no items rather than ALL.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td></td>
+<td>aProfile the profile that we are looking for available data  
+         to import  
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>aProfile the profile that we are looking for available data  
+         to import  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 
