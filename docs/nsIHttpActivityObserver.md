@@ -57,37 +57,46 @@ observe activity from the http transport
 </tr>
 
 <tr>
-<td>aHttpChannel</td>
-<td>       nsISupports interface for the the http channel that  
-       generated this activity  
+<td>aActivityType</td>
+<td>       The value of this aActivityType will be one of  
+         ACTIVITY_TYPE_SOCKET_TRANSPORT or  
+         ACTIVITY_TYPE_HTTP_TRANSACTION  
 </td>
 </tr>
 
 <tr>
-<td>aHttpChannel</td>
-<td>       nsISupports interface for the the http channel that  
-       generated this activity  
+<td>aActivitySubtype</td>
+<td>       The value of this aActivitySubtype, will be depend  
+       on the value of aActivityType. When aActivityType  
+       is ACTIVITY_TYPE_SOCKET_TRANSPORT  
+         aActivitySubtype will be one of the  
+         nsISocketTransport::STATUS_???? values defined in  
+         nsISocketTransport.idl  
+       OR when aActivityType  
+       is ACTIVITY_TYPE_HTTP_TRANSACTION  
+         aActivitySubtype will be one of the  
+         nsIHttpActivityObserver::ACTIVITY_SUBTYPE_???? values  
+         defined below  
 </td>
 </tr>
 
 <tr>
-<td>aHttpChannel</td>
-<td>       nsISupports interface for the the http channel that  
-       generated this activity  
+<td>aTimestamp</td>
+<td>       microseconds past the epoch of Jan 1, 1970  
 </td>
 </tr>
 
 <tr>
-<td>aHttpChannel</td>
-<td>       nsISupports interface for the the http channel that  
-       generated this activity  
+<td>aExtraSizeData</td>
+<td>       Any extra size data optionally available with  
+       this activity  
 </td>
 </tr>
 
 <tr>
-<td>aHttpChannel</td>
-<td>       nsISupports interface for the the http channel that  
-       generated this activity  
+<td>aExtraStringData</td>
+<td>       Any extra string data optionally available with  
+       this activity  
 </td>
 </tr>
 

@@ -77,8 +77,8 @@ NOTE: this method should not throw NS_BASE_STREAM_CLOSED.
 </tr>
 
 <tr>
-<td>aBuf</td>
-<td>the buffer into which the data is to be read  
+<td>aCount</td>
+<td>the maximum number of bytes to be read  
 </td>
 </tr>
 
@@ -121,14 +121,14 @@ NOTE: this method should not throw NS_BASE_STREAM_CLOSED.
 </tr>
 
 <tr>
-<td>aWriter</td>
-<td>the "consumer" of the data to be read  
+<td>aClosure</td>
+<td>opaque parameter passed to writer   
 </td>
 </tr>
 
 <tr>
-<td>aWriter</td>
-<td>the "consumer" of the data to be read  
+<td>aCount</td>
+<td>the maximum number of bytes to be read  
 </td>
 </tr>
 

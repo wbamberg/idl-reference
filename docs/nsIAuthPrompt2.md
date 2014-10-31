@@ -50,14 +50,17 @@ domain field.
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       The channel that requires authentication.  
+<td>level</td>
+<td>       One of the level constants from above. See there for descriptions  
+       of the levels.  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       The channel that requires authentication.  
+<td>authInfo</td>
+<td>       Authentication information object. The implementation should fill in  
+       this object with the information entered by the user before  
+       returning.  
 </td>
 </tr>
 

@@ -30,14 +30,14 @@ decide whether or not to defer the request to an alternate activity system.
 </tr>
 
 <tr>
-<td>options</td>
-<td>The ActivityOptions object in the form of { name: "send", data: { ... } }  
+<td>activities</td>
+<td>A json blob which is an array of { "title":"...", "icon":"..." }.  
 </td>
 </tr>
 
 <tr>
-<td>options</td>
-<td>The ActivityOptions object in the form of { name: "send", data: { ... } }  
+<td>callback</td>
+<td>The callback to send the index of the choosen activity, or the result.  
 </td>
 </tr>
 

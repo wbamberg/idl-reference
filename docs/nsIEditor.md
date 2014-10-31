@@ -35,20 +35,24 @@ Init is to tell the implementation of nsIEditor to begin its services
 </tr>
 
 <tr>
-<td>aDoc</td>
-<td>The dom document interface being observed  
+<td>aRoot</td>
+<td>This is the root of the editable section of this  
+                     document. If it is null then we get root  
+                     from document body.  
 </td>
 </tr>
 
 <tr>
-<td>aDoc</td>
-<td>The dom document interface being observed  
+<td>aSelCon</td>
+<td>this should be used to get the selection location  
+                     (will be null for HTML editors)  
 </td>
 </tr>
 
 <tr>
-<td>aDoc</td>
-<td>The dom document interface being observed  
+<td>aFlags</td>
+<td>A bitmask of flags for specifying the behavior  
+                     of the editor.  
 </td>
 </tr>
 
@@ -110,9 +114,11 @@ DeleteSelection removes all nodes in the current selection.
 </tr>
 
 <tr>
-<td>aDir</td>
-<td>if eNext, delete to the right (for example, the DEL key)  
-             if ePrevious, delete to the left (for example, the BACKSPACE key)  
+<td>stripWrappers</td>
+<td>If eStrip, strip any empty inline elements left  
+                     behind after the deletion; if eNoStrip, don't.  If in  
+                     doubt, pass eStrip -- eNoStrip is only for if you're  
+                     about to insert text or similar right after.  
 </td>
 </tr>
 
@@ -224,8 +230,9 @@ error NS_ERROR_NOT_AVAILABLE is returned.
 </tr>
 
 <tr>
-<td>aIsEnabled</td>
-<td>[OUT] PR_TRUE if undo is enabled  
+<td>aCanUndo</td>
+<td>[OUT] PR_TRUE if at least one transaction is  
+                        currently ready to be undone.  
 </td>
 </tr>
 
@@ -261,8 +268,9 @@ currently ready to be redone.
 </tr>
 
 <tr>
-<td>aIsEnabled</td>
-<td>[OUT] PR_TRUE if redo is enabled  
+<td>aCanRedo</td>
+<td>[OUT] PR_TRUE if at least one transaction is  
+currently ready to be redone.  
 </td>
 </tr>
 
@@ -448,14 +456,14 @@ or if aValue is a legal value of aAttribute.
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>the content element to operate on  
+<td>aAttribute</td>
+<td>the string representation of the attribute to set  
 </td>
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>the content element to operate on  
+<td>aValue</td>
+<td>the value to set aAttribute to  
 </td>
 </tr>
 
@@ -484,14 +492,15 @@ getAttributeValue() retrieves the attribute's value for aElement.
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>the content element to operate on  
+<td>aAttribute</td>
+<td>the string representation of the attribute to get  
 </td>
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>the content element to operate on  
+<td>aResultValue</td>
+<td>[OUT] the value of aAttribute.  
+                     Only valid if aResultIsSet is PR_TRUE  
 </td>
 </tr>
 
@@ -517,8 +526,8 @@ If aAttribute is not an attribute of aElement, nothing is done.
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>the content element to operate on  
+<td>aAttribute</td>
+<td>the string representation of the attribute to get  
 </td>
 </tr>
 
@@ -549,14 +558,17 @@ The supplied nodes MUST BE ELEMENTS (most callers are working with nodes)
 </tr>
 
 <tr>
-<td>aAttribute</td>
-<td>the name of the attribute to copy  
+<td>aDestNode</td>
+<td>the destination element to operate on  
 </td>
 </tr>
 
 <tr>
-<td>aAttribute</td>
-<td>the name of the attribute to copy  
+<td>aSourceNode</td>
+<td>the source element to copy attributes from  
+@exception NS_ERROR_NULL_POINTER at least one of the nodes is null  
+@exception NS_ERROR_NO_INTERFACE at least one of the nodes is not an  
+                                 element  
 </td>
 </tr>
 
@@ -586,8 +598,8 @@ The supplied nodes MUST BE ELEMENTS (most callers are working with nodes)
 </tr>
 
 <tr>
-<td>aDestNode</td>
-<td>the destination element to operate on  
+<td>aSourceNode</td>
+<td>the source element to copy attributes from  
 </td>
 </tr>
 
@@ -614,14 +626,14 @@ into aParent at aPosition.
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>The type of object to create  
+<td>aParent</td>
+<td>The node to insert the new object into  
 </td>
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>The type of object to create  
+<td>aPosition</td>
+<td>The place in aParent to insert the new node  
 </td>
 </tr>
 
@@ -650,14 +662,16 @@ That is the responsibility of the caller.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>The DOM Node to insert.  
+<td>aParent</td>
+<td>The node to insert the new object into  
 </td>
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>The DOM Node to insert.  
+<td>aPosition</td>
+<td>The place in aParent to insert the new node  
+                 0=first child, 1=second child, etc.  
+                 any number > number of current children = last child  
 </td>
 </tr>
 
@@ -687,16 +701,16 @@ and split the contents between the two nodes
 </tr>
 
 <tr>
-<td>aExistingRightNode</td>
-<td>the node to split.  
-                            It will become the new node's next sibling.  
+<td>aOffset</td>
+<td>the offset of aExistingRightNode's  
+                            content|children to do the split at  
 </td>
 </tr>
 
 <tr>
-<td>aExistingRightNode</td>
-<td>the node to split.  
-                            It will become the new node's next sibling.  
+<td>aNewLeftNode</td>
+<td>[OUT] the new node resulting from the split,  
+                            becomes aExistingRightNode's previous sibling.  
 </td>
 </tr>
 
@@ -725,14 +739,14 @@ joinNodes() takes 2 nodes and merge their content|children.
 </tr>
 
 <tr>
-<td>aLeftNode</td>
-<td>The left node.  It will be deleted.  
+<td>aRightNode</td>
+<td>The right node. It will remain after the join.  
 </td>
 </tr>
 
 <tr>
-<td>aLeftNode</td>
-<td>The left node.  It will be deleted.  
+<td>aParent</td>
+<td>The parent of aExistingRightNode  
 </td>
 </tr>
 

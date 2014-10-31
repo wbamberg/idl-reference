@@ -49,8 +49,10 @@ specified target object and the global object returned as above.
 </tr>
 
 <tr>
-<td>resourceURI</td>
-<td>A resource:// URI string to load the module from.  
+<td>targetObj</td>
+<td>the object to install the exported properties on.  
+       If this parameter is a primitive value, this method throws  
+       an exception.  
 </td>
 </tr>
 

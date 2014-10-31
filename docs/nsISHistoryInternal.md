@@ -26,8 +26,10 @@ this element will not appear in the session history list.
 </tr>
 
 <tr>
-<td>aEntry</td>
-<td>- The entry to add  
+<td>aPersist</td>
+<td>- If true this specifies that the entry should persist  
+in the list.  If false, this means that when new entries are added  
+this element will not appear in the session history list.  
 </td>
 </tr>
 
@@ -56,8 +58,8 @@ Replace the nsISHEntry at a particular index
 </tr>
 
 <tr>
-<td>aIndex</td>
-<td>- The index at which the entry should be replaced  
+<td>aReplaceEntry</td>
+<td>- The replacement entry for the index.  
 </td>
 </tr>
 
@@ -86,8 +88,10 @@ reload.
 </tr>
 
 <tr>
-<td>aReloadURI</td>
-<td>The URI of the document to be reloaded.  
+<td>aReloadFlags</td>
+<td>Flags that indicate how the document is to be  
+                     refreshed. See constants on the nsIWebNavigation  
+                     interface.  
 </td>
 </tr>
 

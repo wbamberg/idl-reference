@@ -79,9 +79,9 @@ request is sent to aResultObserver.
 </tr>
 
 <tr>
-<td>aContainerNode</td>
-<td>       Object implementing nsINavHistoryContainerResultNode, representing  
-       this livemark.  
+<td>aResultObserver</td>
+<td>       The nsINavHistoryResultObserver that should be notified of changes  
+       to the livemark contents.  
 </td>
 </tr>
 

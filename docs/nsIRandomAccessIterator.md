@@ -93,8 +93,8 @@ useful range of the underlying container or sequence.
 </tr>
 
 <tr>
-<td>anOffset</td>
-<td>a |0|-based offset from the position to which this iterator currently points  
+<td>anElementToPut</td>
+<td>the element to place into the underlying container or sequence  
 </td>
 </tr>
 

@@ -83,14 +83,16 @@ is only called on the target thread.
 </tr>
 
 <tr>
-<td>thread</td>
-<td>  The thread being asked to process another event.  
+<td>mayWait</td>
+<td>  Indicates whether or not the method is allowed to block the calling  
+  thread.  For example, this parameter is false during thread shutdown.  
 </td>
 </tr>
 
 <tr>
-<td>thread</td>
-<td>  The thread being asked to process another event.  
+<td>recursionDepth</td>
+<td>  Indicates the number of calls to ProcessNextEvent on the call stack in  
+  addition to the current call.  
 </td>
 </tr>
 
@@ -124,14 +126,16 @@ on the target thread.
 </tr>
 
 <tr>
-<td>thread</td>
-<td>  The thread that processed another event.  
+<td>recursionDepth</td>
+<td>  Indicates the number of calls to ProcessNextEvent on the call stack in  
+  addition to the current call.  
 </td>
 </tr>
 
 <tr>
-<td>thread</td>
-<td>  The thread that processed another event.  
+<td>eventWasProcessed</td>
+<td>  Indicates whether an event was actually processed. May be false if the  
+  |mayWait| flag was false when calling nsIThread::ProcessNextEvent().  
 </td>
 </tr>
 

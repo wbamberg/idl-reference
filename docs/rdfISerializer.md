@@ -33,8 +33,8 @@ other stream-based optimizations.
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>The RDF data source to be serialized.  
+<td>aOut</td>
+<td>The output stream to use.  
 </td>
 </tr>
 

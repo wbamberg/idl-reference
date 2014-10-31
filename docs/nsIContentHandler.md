@@ -39,16 +39,14 @@ below).
 </tr>
 
 <tr>
-<td>aWindowContext</td>
-<td>       Window context, used to get things like the current nsIDOMWindow  
-       for this request. May be null.  
+<td>aContentType</td>
+<td>       The content type of aRequest  
 </td>
 </tr>
 
 <tr>
-<td>aWindowContext</td>
-<td>       Window context, used to get things like the current nsIDOMWindow  
-       for this request. May be null.  
+<td>aRequest</td>
+<td>       A request whose content type is already known.  
 </td>
 </tr>
 

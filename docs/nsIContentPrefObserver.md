@@ -29,15 +29,13 @@ Called when a content pref is set to a different value.
 
 <tr>
 <td></td>
-<td>aGroup      the group to which the pref belongs, or null  
-                      if it's a global pref (applies to all sites)  
+<td>aName       the name of the pref that was set  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aGroup      the group to which the pref belongs, or null  
-                      if it's a global pref (applies to all sites)  
+<td>aValue      the new value of the pref  
 </td>
 </tr>
 
@@ -65,8 +63,7 @@ Called when a content pref is removed.
 
 <tr>
 <td></td>
-<td>aGroup      the group to which the pref belongs, or null  
-                      if it's a global pref (applies to all sites)  
+<td>aName       the name of the pref that was removed  
 </td>
 </tr>
 

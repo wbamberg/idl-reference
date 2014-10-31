@@ -41,20 +41,29 @@ and return the converted string in UTF-8.
 </tr>
 
 <tr>
-<td>aString</td>
-<td>a string to  ensure its UTF8ness  
+<td>aCharset</td>
+<td>the charset to convert from if |aString| is not in UTF-8  
 </td>
 </tr>
 
 <tr>
-<td>aString</td>
-<td>a string to  ensure its UTF8ness  
+<td>aSkipCheck</td>
+<td>determines whether or not to skip 'ASCIIness' and   
+       'UTF8ness' check. Set this to PR_TRUE only if you suspect that   
+       aString can be mistaken for ASCII / UTF-8 but is actually NOT   
+       in ASCII / UTF-8 so that aString has to go through the conversion.  
+       skipping ASCIIness/UTF8ness check.  
+       The most common case is the input is in 7bit non-ASCII charsets  
+       like ISO-2022-JP, HZ or UTF-7 (in its original form or  
+       a modified form used in IMAP folder names).  
 </td>
 </tr>
 
 <tr>
-<td>aString</td>
-<td>a string to  ensure its UTF8ness  
+<td>aAllowSubstitution</td>
+<td>when true, allow the decoder to substitute  
+       invalid input sequences by replacement characters (defaults to  
+       true)  
 </td>
 </tr>
 
@@ -93,8 +102,8 @@ going around in Mozilla code would break this assumption.
 </tr>
 
 <tr>
-<td>aSpec</td>
-<td>an url-escaped URI spec to  ensure its UTF8ness  
+<td>aCharset</td>
+<td>the charset to convert from if |aSpec| is not in UTF-8  
 </td>
 </tr>
 

@@ -45,8 +45,9 @@ Parse and install a CSP policy.
 </tr>
 
 <tr>
-<td>aPolicy</td>
-<td>       String representation of the policy (e.g., header value)  
+<td>reportOnly</td>
+<td>       Should this policy affect content, script and style processing or  
+       just send reports if it is violated?  
 </td>
 </tr>
 
@@ -168,14 +169,17 @@ Whether this policy accepts the given nonce
 </tr>
 
 <tr>
-<td>aNonce</td>
-<td>    The nonce string to check against the policy  
+<td>aContentType</td>
+<td>    The type of element on which we encountered this nonce  
 </td>
 </tr>
 
 <tr>
-<td>aNonce</td>
-<td>    The nonce string to check against the policy  
+<td>shouldReportViolation</td>
+<td>    Whether or not the use of an incorrect nonce should be reported.  
+    This function always returns "true" for report-only policies, but when  
+    the report-only policy is violated, shouldReportViolation is true as  
+    well.  
 </td>
 </tr>
 
@@ -210,16 +214,16 @@ of its content.
 </tr>
 
 <tr>
-<td>aContent</td>
-<td>    The content of the inline resource to hash (and compare to the  
-    hashes listed in the policy)  
+<td>aContentType</td>
+<td>    The type of inline element (script or style)  
 </td>
 </tr>
 
 <tr>
-<td>aContent</td>
-<td>    The content of the inline resource to hash (and compare to the  
-    hashes listed in the policy)  
+<td>shouldReportViolation</td>
+<td>    Whether this inline resource should be reported as a hash-source  
+    violation. If there are no hash-sources in the policy, this is  
+    always false.  
 </td>
 </tr>
 
@@ -261,32 +265,37 @@ policies.
 </tr>
 
 <tr>
-<td>violationType</td>
-<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+<td>sourceFile</td>
+<td>    name of the source file containing the violation (if available)  
 </td>
 </tr>
 
 <tr>
-<td>violationType</td>
-<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+<td>contentSample</td>
+<td>    sample of the violating content (to aid debugging)  
 </td>
 </tr>
 
 <tr>
-<td>violationType</td>
-<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+<td>lineNum</td>
+<td>    source line number of the violation (if available)  
 </td>
 </tr>
 
 <tr>
-<td>violationType</td>
-<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+<td>aNonce</td>
+<td>    (optional) If this is a nonce violation, include the nonce so we can  
+    recheck to determine which policies were violated and send the  
+    appropriate reports.  
 </td>
 </tr>
 
 <tr>
-<td>violationType</td>
-<td>    one of the VIOLATION_TYPE_* constants, e.g. inline-script or eval  
+<td>aContent</td>
+<td>    (optional) If this is a hash violation, include contents of the inline  
+    resource in the question so we can recheck the hash in order to  
+    determine which policies were violated and send the appropriate  
+    reports.  
 </td>
 </tr>
 

@@ -49,18 +49,23 @@ server.)
 </tr>
 
 <tr>
-<td>aSpec</td>
-<td>- the URI string in UTF-8 encoding. depending  
-                        on the protocol implementation, unicode character  
-                        sequences may or may not be %xx escaped.  
+<td>aOriginCharset</td>
+<td>- the charset of the document from which this URI  
+                        string originated.  this corresponds to the  
+                        charset that should be used when communicating  
+                        this URI to an origin server, for example.  if  
+                        null, then UTF-8 encoding is assumed (i.e.,  
+                        no charset transformation from aSpec).  
 </td>
 </tr>
 
 <tr>
-<td>aSpec</td>
-<td>- the URI string in UTF-8 encoding. depending  
-                        on the protocol implementation, unicode character  
-                        sequences may or may not be %xx escaped.  
+<td>aBaseURI</td>
+<td>- if null, aSpec must specify an absolute URI.  
+                        otherwise, aSpec may be resolved relative  
+                        to aBaseURI, depending on the protocol.   
+                        If the protocol has no concept of relative   
+                        URI aBaseURI will simply be ignored.  
 </td>
 </tr>
 

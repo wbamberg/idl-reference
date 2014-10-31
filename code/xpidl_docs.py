@@ -48,7 +48,7 @@ class Method(object):
         except StopIteration:
             return
         for param in params:
-            md.writeTableRow([first.name, first.doc], output)
+            md.writeTableRow([param.name, param.doc], output)
         md.writeTableEnd(output)
 
     def signature(self):

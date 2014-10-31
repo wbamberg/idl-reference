@@ -41,8 +41,8 @@ NOTE: This will release the reference to the nsIHelperAppLauncherDialog.
 </tr>
 
 <tr>
-<td>aApplication</td>
-<td>nsIFile corresponding to the location of the application to use.  
+<td>aRememberThisPreference</td>
+<td>TRUE if we should remember this choice.  
 </td>
 </tr>
 

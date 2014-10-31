@@ -58,9 +58,8 @@ may still be XSS dangerous if loaded into a non-Gecko Web engine!
 </tr>
 
 <tr>
-<td>src</td>
-<td>the HTML source to parse (C++ callers are allowed but not  
-           required to use the same string for the return value.)  
+<td>flags</td>
+<td>sanitization option flags defined above  
 </td>
 </tr>
 
@@ -88,16 +87,14 @@ Convert HTML to plain text.
 </tr>
 
 <tr>
-<td>src</td>
-<td>the HTML source to parse (C++ callers are allowed but not  
-           required to use the same string for the return value.)  
+<td>flags</td>
+<td>conversion option flags defined in nsIDocumentEncoder  
 </td>
 </tr>
 
 <tr>
-<td>src</td>
-<td>the HTML source to parse (C++ callers are allowed but not  
-           required to use the same string for the return value.)  
+<td>wrapCol</td>
+<td>number of characters per line; 0 for no auto-wrapping  
 </td>
 </tr>
 
@@ -125,26 +122,26 @@ Parses markup into a sanitized document fragment.
 </tr>
 
 <tr>
-<td>fragment</td>
-<td>the input markup  
+<td>flags</td>
+<td>sanitization option flags defined above  
 </td>
 </tr>
 
 <tr>
-<td>fragment</td>
-<td>the input markup  
+<td>isXML</td>
+<td>true if |fragment| is XML and false if HTML  
 </td>
 </tr>
 
 <tr>
-<td>fragment</td>
-<td>the input markup  
+<td>baseURI</td>
+<td>the base URL for this fragment  
 </td>
 </tr>
 
 <tr>
-<td>fragment</td>
-<td>the input markup  
+<td>element</td>
+<td>the context node for the fragment parsing algorithm  
 </td>
 </tr>
 

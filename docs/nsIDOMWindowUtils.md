@@ -196,56 +196,60 @@ returns true if the page called prevent default on this event
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aX</td>
+<td>x offset in CSS pixels  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aY</td>
+<td>y offset in CSS pixels  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aButton</td>
+<td>button to synthesize  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aClickCount</td>
+<td>number of clicks that have been performed  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aModifiers</td>
+<td>modifiers pressed, using constants defined as MODIFIER_*  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aIgnoreRootScrollFrame</td>
+<td>whether the event should ignore viewport bounds  
+                          during dispatch  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aPressure</td>
+<td>touch input pressure: 0.0 -> 1.0  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aInputSourceArg</td>
+<td>input source, see nsIDOMMouseEvent for values,  
+       defaults to mouse input.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aIsSynthesized</td>
+<td>controls nsIDOMEvent.isSynthesized value  
+                      that helps identifying test related events,  
+                      defaults to true  
 </td>
 </tr>
 
@@ -310,92 +314,98 @@ returns true if the page called prevent default on this event
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aX</td>
+<td>x offset in CSS pixels  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aY</td>
+<td>y offset in CSS pixels  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aButton</td>
+<td>button to synthesize  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aClickCount</td>
+<td>number of clicks that have been performed  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aModifiers</td>
+<td>modifiers pressed, using constants defined as MODIFIER_*  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aIgnoreRootScrollFrame</td>
+<td>whether the event should ignore viewport bounds  
+                          during dispatch  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aPressure</td>
+<td>touch input pressure: 0.0 -> 1.0  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aInputSourceArg</td>
+<td>input source, see nsIDOMMouseEvent for values,  
+       defaults to mouse input.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aPointerId</td>
+<td>A unique identifier for the pointer causing the event. default is 0  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aWidth</td>
+<td>The width (magnitude on the X axis), default is 0  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aHeight</td>
+<td>The height (magnitude on the Y axis), default is 0  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aTilt</td>
+<td>The plane angle between the Y-Z plane  
+       and the plane containing both the transducer (e.g. pen stylus) axis and the Y axis. default is 0  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aTiltX</td>
+<td>The plane angle between the X-Z plane  
+       and the plane containing both the transducer (e.g. pen stylus) axis and the X axis. default is 0  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aIsPrimary</td>
+<td>Indicates if the pointer represents the primary pointer of this pointer type.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aIsSynthesized</td>
+<td>controls nsIDOMEvent.isSynthesized value  
+                      that helps identifying test related events,  
+                      defaults to true  
 </td>
 </tr>
 
@@ -440,56 +450,57 @@ returns true if the page called prevent default on this touch event
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>xs</td>
+<td>array of offsets in CSS pixels for each touch to be sent  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>ys</td>
+<td>array of offsets in CSS pixels for each touch to be sent  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>rxs</td>
+<td>array of radii in CSS pixels for each touch to be sent  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>rys</td>
+<td>array of radii in CSS pixels for each touch to be sent  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>rotationAngles</td>
+<td>array of angles in degrees for each touch to be sent  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>forces</td>
+<td>array of forces (floats from 0 to 1) for each touch to be sent  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>count</td>
+<td>number of touches in this set  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aModifiers</td>
+<td>modifiers pressed, using constants defined as MODIFIER_*  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aIgnoreRootScrollFrame</td>
+<td>whether the event should ignore viewport bounds  
+                          during dispatch  
 </td>
 </tr>
 
@@ -593,26 +604,27 @@ orientation of the pointer. Use 90 for normal taps.
 </tr>
 
 <tr>
-<td>aPointerId</td>
-<td>The touch point id to create or update.  
+<td>aTouchState</td>
+<td>one or more of the touch states listed above  
 </td>
 </tr>
 
 <tr>
-<td>aPointerId</td>
-<td>The touch point id to create or update.  
+<td>aScreenX,</td>
+<td>aScreenY screen coords of this event  
 </td>
 </tr>
 
 <tr>
-<td>aPointerId</td>
-<td>The touch point id to create or update.  
+<td>aPressure</td>
+<td>0.0 -> 1.0 float val indicating pressure  
 </td>
 </tr>
 
 <tr>
-<td>aPointerId</td>
-<td>The touch point id to create or update.  
+<td>aOrientation</td>
+<td>0 -> 359 degree value indicating the  
+orientation of the pointer. Use 90 for normal taps.  
 </td>
 </tr>
 
@@ -650,8 +662,9 @@ tap.
 </tr>
 
 <tr>
-<td>aScreenX,</td>
-<td>aScreenY screen coords of this event  
+<td>aLongTap</td>
+<td>true if the tap should be long, false for a short  
+tap.  
 </td>
 </tr>
 
@@ -741,10 +754,13 @@ non-debug builds. Available to all callers in debug builds.
 </tr>
 
 <tr>
-<td>aListener</td>
-<td>listener that receives information about the CC graph  
-                 (see @mozilla.org/cycle-collector-logger;1 for a logger  
-                  component)  
+<td>aExtraForgetSkippableCalls</td>
+<td>indicates how many times  
+                                  nsCycleCollector_forgetSkippable will  
+                                  be called before running cycle collection.  
+                                  -1 prevents the default  
+                                  nsCycleCollector_forgetSkippable call  
+                                  which happens after garbage collection.  
 </td>
 </tr>
 
@@ -781,10 +797,13 @@ non-debug builds. Available to all callers in debug builds.
 </tr>
 
 <tr>
-<td>aListener</td>
-<td>listener that receives information about the CC graph  
-                 (see @mozilla.org/cycle-collector-logger;1 for a logger  
-                  component)  
+<td>aExtraForgetSkippableCalls</td>
+<td>indicates how many times  
+                                  nsCycleCollector_forgetSkippable will  
+                                  be called before running cycle collection.  
+                                  -1 prevents the default  
+                                  nsCycleCollector_forgetSkippable call  
+                                  which happens after garbage collection.  
 </td>
 </tr>
 
@@ -828,38 +847,38 @@ without chrome privileges.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aX</td>
+<td>x offset in CSS pixels  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aY</td>
+<td>y offset in CSS pixels  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aDirection</td>
+<td>direction, using constants defined in nsIDOMSimpleGestureEvent  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aDelta</td>
+<td>amount of magnification or rotation for magnify and rotation events  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aModifiers</td>
+<td>modifiers pressed, using constants defined in nsIDOMNSEvent  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>event type  
+<td>aClickCount</td>
+<td>For tap gestures, the number of taps.  
 </td>
 </tr>
 
@@ -888,10 +907,8 @@ Retrieve the element at point aX, aY in the window's document.
 </tr>
 
 <tr>
-<td>aIgnoreRootScrollFrame</td>
-<td>whether or not to ignore the root scroll  
-       frame when retrieving the element. If false, this method returns  
-       null for coordinates outside of the viewport.  
+<td>aFlushLayout</td>
+<td>flushes layout if true. Otherwise, no flush occurs.  
 </td>
 </tr>
 
@@ -924,44 +941,46 @@ Retrieve all nodes that intersect a rect in the window's document.
 </tr>
 
 <tr>
-<td>aX</td>
-<td>x reference for the rectangle in CSS pixels  
+<td>aY</td>
+<td>y reference for the rectangle in CSS pixels  
 </td>
 </tr>
 
 <tr>
-<td>aX</td>
-<td>x reference for the rectangle in CSS pixels  
+<td>aTopSize</td>
+<td>How much to expand up the rectangle  
 </td>
 </tr>
 
 <tr>
-<td>aX</td>
-<td>x reference for the rectangle in CSS pixels  
+<td>aRightSize</td>
+<td>How much to expand right the rectangle  
 </td>
 </tr>
 
 <tr>
-<td>aX</td>
-<td>x reference for the rectangle in CSS pixels  
+<td>aBottomSize</td>
+<td>How much to expand down the rectangle  
 </td>
 </tr>
 
 <tr>
-<td>aX</td>
-<td>x reference for the rectangle in CSS pixels  
+<td>aLeftSize</td>
+<td>How much to expand left the rectangle  
 </td>
 </tr>
 
 <tr>
-<td>aX</td>
-<td>x reference for the rectangle in CSS pixels  
+<td>aIgnoreRootScrollFrame</td>
+<td>whether or not to ignore the root scroll  
+       frame when retrieving the element. If false, this method returns  
+       null for coordinates outside of the viewport.  
 </td>
 </tr>
 
 <tr>
-<td>aX</td>
-<td>x reference for the rectangle in CSS pixels  
+<td>aFlushLayout</td>
+<td>flushes layout if true. Otherwise, no flush occurs.  
 </td>
 </tr>
 
@@ -1146,9 +1165,9 @@ Will throw a DOM security error if called without chrome privileges.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>Type of command content event to send.  Can be one of "cut",  
-       "copy", "paste", "delete", "undo", "redo", or "pasteTransferable".  
+<td>aTransferable</td>
+<td>an instance of nsITransferable when aType is  
+       "pasteTransferable"  
 </td>
 </tr>
 
@@ -1181,16 +1200,16 @@ Will throw a DOM security error if called without chrome privileges.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>The event type: "compositionstart", "compositionend" or  
-                 "compositionupdate".  
+<td>aData</td>
+<td>The data property value.  Note that this isn't applied  
+                 for compositionstart event because its value is the  
+                 selected text which is automatically computed.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>The event type: "compositionstart", "compositionend" or  
-                 "compositionupdate".  
+<td>aLocale</td>
+<td>The locale property value.  
 </td>
 </tr>
 
@@ -1226,9 +1245,8 @@ is in LayoutDevice pixels rather than CSS pixels.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>One of the following const values.  And see also each comment  
-              for the other parameters and the result.  
+<td>aAdditionalFlags</td>
+<td>See the description of QUERY_CONTENT_FLAG_*.  
 </td>
 </tr>
 
@@ -1279,14 +1297,15 @@ This sets the selection as the specified information.
 </tr>
 
 <tr>
-<td>aOffset</td>
-<td>The caret offset of the selection start.  
+<td>aLength</td>
+<td>The length of the selection.  If this is too long, the  
+                extra length is ignored.  
 </td>
 </tr>
 
 <tr>
-<td>aOffset</td>
-<td>The caret offset of the selection start.  
+<td>aAdditionalFlags</td>
+<td>See the description of SELECTION_SET_FLAG_*.  
 </td>
 </tr>
 
@@ -1318,8 +1337,8 @@ this window.
 </tr>
 
 <tr>
-<td>aX,</td>
-<td>aY The selection point in client coordinates.  
+<td>aSelectType</td>
+<td>The selection behavior requested.  
 </td>
 </tr>
 

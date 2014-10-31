@@ -49,19 +49,31 @@ removeEventListener method.
 
 <tr>
 <td></td>
-<td>type The event type for which the user is registering  
+<td>listener The listener parameter takes an interface   
+                  implemented by the user which contains the methods   
+                  to be called when the event occurs.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>type The event type for which the user is registering  
+<td>useCapture If true, useCapture indicates that the user   
+                    wishes to initiate capture. After initiating   
+                    capture, all events of the specified type will be   
+                    dispatched to the registered EventListener before   
+                    being dispatched to any EventTargets beneath them   
+                    in the tree. Events which are bubbling upward   
+                    through the tree will not trigger an   
+                    EventListener designated to use capture.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>type The event type for which the user is registering  
+<td>wantsUntrusted If false, the listener will not receive any  
+                        untrusted events (see above), if true, the  
+                        listener will receive events whether or not  
+                        they're trusted  
 </td>
 </tr>
 
@@ -96,20 +108,22 @@ stopPropagation() of the event.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>An event name you're going to handle.  
+<td>aListener</td>
+<td>An event listener.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>An event name you're going to handle.  
+<td>aUseCapture</td>
+<td>TRUE if you want to listen the event in capturing  
+                        phase.  Otherwise, FALSE.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>An event name you're going to handle.  
+<td>aWantsUntrusted</td>
+<td>TRUE if you want to handle untrusted events.  
+                        Otherwise, FALSE.  
 </td>
 </tr>
 
@@ -150,15 +164,20 @@ currently registered EventListener on the EventTarget has no effect.
 
 <tr>
 <td></td>
-<td>type Specifies the event type of the EventListener being   
-              removed.  
+<td>listener The EventListener parameter indicates the   
+                  EventListener to be removed.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>type Specifies the event type of the EventListener being   
-              removed.  
+<td>useCapture Specifies whether the EventListener being   
+                    removed was registered as a capturing listener or   
+                    not. If a listener was registered twice, one with   
+                    capture and one without, each must be removed   
+                    separately. Removal of a capturing listener does   
+                    not affect a non-capturing version of the same   
+                    listener, and vice versa.  
 </td>
 </tr>
 
@@ -307,20 +326,21 @@ for dispatching, otherwise aEvent is used.
 </tr>
 
 <tr>
-<td>aEvent</td>
-<td>the event that is being dispatched.  
+<td>aDOMEvent</td>
+<td>the event that is being dispatched, use if you want to  
+                 dispatch nsIDOMEvent, not only WidgetEvent.  
 </td>
 </tr>
 
 <tr>
-<td>aEvent</td>
-<td>the event that is being dispatched.  
+<td>aPresContext</td>
+<td>the current presentation context, can be nullptr.  
 </td>
 </tr>
 
 <tr>
-<td>aEvent</td>
-<td>the event that is being dispatched.  
+<td>aEventStatus</td>
+<td>the status returned from the function, can be nullptr.  
 </td>
 </tr>
 

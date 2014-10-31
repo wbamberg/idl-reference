@@ -31,9 +31,9 @@ available for the given reason.
 </tr>
 
 <tr>
-<td>aPromptReason</td>
-<td>The reason for the auth prompt;  
-                       one of #PROMPT_NORMAL or #PROMPT_PROXY  
+<td>iid</td>
+<td>The desired interface, e.g.  
+                       NS_GET_IID(nsIAuthPrompt2).  
 </td>
 </tr>
 

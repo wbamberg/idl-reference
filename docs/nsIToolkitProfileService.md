@@ -58,9 +58,8 @@ profile directory is located.
 </tr>
 
 <tr>
-<td>aRootDir</td>
-<td>       The profile directory. May be null, in which case a suitable  
-       default will be chosen based on the profile name.  
+<td>aName</td>
+<td>       The profile name.  
 </td>
 </tr>
 
@@ -105,22 +104,22 @@ new profile directory.
 
 <tr>
 <td></td>
-<td>aProfileName  
-        The name of the profile  
+<td>aAppName  
+        The name of the application  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aProfileName  
-        The name of the profile  
+<td>aVendorName  
+        The name of the vendor  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aProfileName  
-        The name of the profile  
+<td>aProfileDefaultsDir  
+        The location where the profile defaults are.  
 </td>
 </tr>
 

@@ -73,26 +73,22 @@ the scrolled view.
 </tr>
 
 <tr>
-<td>aRegion</td>
-<td>- the region inside the selection to scroll into view  
-                 (see selection region constants defined in  
-                  nsISelectionController).  
+<td>aIsSynchronous</td>
+<td>- when true, scrolls the selection into view  
+                        before returning. If false, posts a request which  
+                        is processed at some point after the method returns.  
 </td>
 </tr>
 
 <tr>
-<td>aRegion</td>
-<td>- the region inside the selection to scroll into view  
-                 (see selection region constants defined in  
-                  nsISelectionController).  
+<td>aVPercent</td>
+<td>- how to align the frame vertically.  
 </td>
 </tr>
 
 <tr>
-<td>aRegion</td>
-<td>- the region inside the selection to scroll into view  
-                 (see selection region constants defined in  
-                  nsISelectionController).  
+<td>aHPercent</td>
+<td>- how to align the frame horizontally.  
 </td>
 </tr>
 
@@ -128,26 +124,24 @@ the scrolled view.
 </tr>
 
 <tr>
-<td>aRegion</td>
-<td>- the region inside the selection to scroll into view  
-                 (see selection region constants defined in  
-                  nsISelectionController).  
+<td>aIsSynchronous</td>
+<td>- when true, scrolls the selection into view  
+                        before returning. If false, posts a request which  
+                        is processed at some point after the method returns.  
 </td>
 </tr>
 
 <tr>
-<td>aRegion</td>
-<td>- the region inside the selection to scroll into view  
-                 (see selection region constants defined in  
-                  nsISelectionController).  
+<td>aVertical</td>
+<td>- how to align the frame vertically and when.  
+                   See nsIPresShell.h:ScrollAxis for details.  
 </td>
 </tr>
 
 <tr>
-<td>aRegion</td>
-<td>- the region inside the selection to scroll into view  
-                 (see selection region constants defined in  
-                  nsISelectionController).  
+<td>aHorizontal</td>
+<td>- how to align the frame horizontally and when.  
+                   See nsIPresShell.h:ScrollAxis for details.  
 </td>
 </tr>
 

@@ -44,9 +44,12 @@ called for it with NS_ERROR_NOT_AVAILABLE result code.
 </tr>
 
 <tr>
-<td>aPlaceIdentifiers</td>
-<td>       The place[s] for which to retrieve information, identified by either  
-       a single place GUID, a single URI, or a JS array of URIs and/or GUIDs.  
+<td>aCallback</td>
+<td>       A mozIVisitInfoCallback object which consists of callbacks to be  
+       notified for successful or failed retrievals.  
+       If there's no information available for a given place, aCallback  
+       is called with a stub place info object, containing just the provided  
+       data (GUID or URI).  
 </td>
 </tr>
 
@@ -89,9 +92,10 @@ aCallback.handleResult is called for each visit added.
 </tr>
 
 <tr>
-<td>aPlaceInfo</td>
-<td>       The mozIPlaceInfo object[s] containing the information to store or  
-       update.  This can be a single object, or an array of objects.  
+<td>[optional]</td>
+<td>aCallback  
+       A mozIVisitInfoCallback object which consists of callbacks to be  
+       notified for successful and/or failed changes.  
 </td>
 </tr>
 
@@ -118,8 +122,8 @@ Checks if a given URI has been visited.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI to check for.  
+<td>aCallback</td>
+<td>       A mozIVisitStatusCallback object which receives the visited status.  
 </td>
 </tr>
 

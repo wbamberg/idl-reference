@@ -61,93 +61,48 @@ method is something of a backdoor.
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>       the host or domain for which the cookie is set. presence of a  
-       leading dot indicates a domain cookie; otherwise, the cookie  
-       is treated as a non-domain cookie (see RFC2109). The host string  
-       will be normalized to ASCII or ACE; any trailing dot will be  
-       stripped. To be a domain cookie, the host must have at least two  
-       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
-       exception will be thrown. An empty string is acceptable  
-       (e.g. file:// URI's).  
+<td>aPath</td>
+<td>       path within the domain for which the cookie is valid  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>       the host or domain for which the cookie is set. presence of a  
-       leading dot indicates a domain cookie; otherwise, the cookie  
-       is treated as a non-domain cookie (see RFC2109). The host string  
-       will be normalized to ASCII or ACE; any trailing dot will be  
-       stripped. To be a domain cookie, the host must have at least two  
-       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
-       exception will be thrown. An empty string is acceptable  
-       (e.g. file:// URI's).  
+<td>aName</td>
+<td>       cookie name  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>       the host or domain for which the cookie is set. presence of a  
-       leading dot indicates a domain cookie; otherwise, the cookie  
-       is treated as a non-domain cookie (see RFC2109). The host string  
-       will be normalized to ASCII or ACE; any trailing dot will be  
-       stripped. To be a domain cookie, the host must have at least two  
-       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
-       exception will be thrown. An empty string is acceptable  
-       (e.g. file:// URI's).  
+<td>aValue</td>
+<td>       cookie data  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>       the host or domain for which the cookie is set. presence of a  
-       leading dot indicates a domain cookie; otherwise, the cookie  
-       is treated as a non-domain cookie (see RFC2109). The host string  
-       will be normalized to ASCII or ACE; any trailing dot will be  
-       stripped. To be a domain cookie, the host must have at least two  
-       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
-       exception will be thrown. An empty string is acceptable  
-       (e.g. file:// URI's).  
+<td>aIsSecure</td>
+<td>       true if the cookie should only be sent over a secure connection.  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>       the host or domain for which the cookie is set. presence of a  
-       leading dot indicates a domain cookie; otherwise, the cookie  
-       is treated as a non-domain cookie (see RFC2109). The host string  
-       will be normalized to ASCII or ACE; any trailing dot will be  
-       stripped. To be a domain cookie, the host must have at least two  
-       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
-       exception will be thrown. An empty string is acceptable  
-       (e.g. file:// URI's).  
+<td>aIsHttpOnly</td>
+<td>       true if the cookie should only be sent to, and can only be  
+       modified by, an http connection.  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>       the host or domain for which the cookie is set. presence of a  
-       leading dot indicates a domain cookie; otherwise, the cookie  
-       is treated as a non-domain cookie (see RFC2109). The host string  
-       will be normalized to ASCII or ACE; any trailing dot will be  
-       stripped. To be a domain cookie, the host must have at least two  
-       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
-       exception will be thrown. An empty string is acceptable  
-       (e.g. file:// URI's).  
+<td>aIsSession</td>
+<td>       true if the cookie should exist for the current session only.  
+       see aExpiry.  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>       the host or domain for which the cookie is set. presence of a  
-       leading dot indicates a domain cookie; otherwise, the cookie  
-       is treated as a non-domain cookie (see RFC2109). The host string  
-       will be normalized to ASCII or ACE; any trailing dot will be  
-       stripped. To be a domain cookie, the host must have at least two  
-       subdomain parts (e.g. '.foo.com', not '.com'), otherwise an  
-       exception will be thrown. An empty string is acceptable  
-       (e.g. file:// URI's).  
+<td>aExpiry</td>
+<td>       expiration date, in seconds since midnight (00:00:00), January 1,  
+       1970 UTC. note that expiry time will also be honored for session cookies;  
+       in this way, the more restrictive of the two will take effect.  
 </td>
 </tr>
 

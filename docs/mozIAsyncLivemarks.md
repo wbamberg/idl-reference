@@ -36,9 +36,10 @@ Creates a new livemark
 </tr>
 
 <tr>
-<td>aLivemarkInfo</td>
-<td>       mozILivemarkInfo object containing at least title, parentId,  
-       index and feedURI of the livemark to create.  
+<td>[optional]</td>
+<td>aCallback  
+       Invoked when the creation process is done.  In case of failure will  
+       receive an error code.  
 </td>
 </tr>
 
@@ -74,9 +75,10 @@ Removes an existing livemark.
 </tr>
 
 <tr>
-<td>aLivemarkInfo</td>
-<td>       mozILivemarkInfo object containing either an id or a guid of the  
-       livemark to remove.  
+<td>[optional]</td>
+<td>aCallback  
+       Invoked when the removal process is done.  In case of failure will  
+       receive an error code.  
 </td>
 </tr>
 
@@ -113,9 +115,10 @@ Gets an existing livemark.
 </tr>
 
 <tr>
-<td>aLivemarkInfo</td>
-<td>       mozILivemarkInfo object containing either an id or a guid of the  
-       livemark to retrieve.  
+<td>[optional]</td>
+<td>aCallback  
+       Invoked when the fetching process is done.  In case of failure will  
+       receive an error code.  
 </td>
 </tr>
 

@@ -51,22 +51,19 @@ return the text attributes for this range of text.
 
 <tr>
 <td></td>
-<td>includeDefAttrs   [in] points whether text attributes applied to  
-                          the entire accessible should be included or not.  
+<td>offset            [in] text offset  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>includeDefAttrs   [in] points whether text attributes applied to  
-                          the entire accessible should be included or not.  
+<td>rangeStartOffset  [out] start offset of the range of text  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>includeDefAttrs   [in] points whether text attributes applied to  
-                          the entire accessible should be included or not.  
+<td>rangeEndOffset    [out] end offset of the range of text  
 </td>
 </tr>
 
@@ -110,37 +107,34 @@ not degenerate.
 </tr>
 
 <tr>
-<td>offset</td>
-<td>- Index of the character for which to return its bounding  
-                 box. The valid range is 0..length.  
+<td>x</td>
+<td>- X coordinate of the bounding box of the referenced character.  
 </td>
 </tr>
 
 <tr>
-<td>offset</td>
-<td>- Index of the character for which to return its bounding  
-                 box. The valid range is 0..length.  
+<td>y</td>
+<td>- Y coordinate of the bounding box of the referenced character.  
 </td>
 </tr>
 
 <tr>
-<td>offset</td>
-<td>- Index of the character for which to return its bounding  
-                 box. The valid range is 0..length.  
+<td>width</td>
+<td>- Width of the bounding box of the referenced character.  
 </td>
 </tr>
 
 <tr>
-<td>offset</td>
-<td>- Index of the character for which to return its bounding  
-                 box. The valid range is 0..length.  
+<td>height</td>
+<td>- Height of the bounding box of the referenced character.  
 </td>
 </tr>
 
 <tr>
-<td>offset</td>
-<td>- Index of the character for which to return its bounding  
-                 box. The valid range is 0..length.  
+<td>coordType</td>
+<td>- Specifies if the coordinates are relative to the screen  
+                   or to the parent window (see constants declared in  
+                   nsIAccessibleCoordinateType).  
 </td>
 </tr>
 
@@ -176,16 +170,16 @@ if no character exists at that point
 </tr>
 
 <tr>
-<td>x</td>
-<td>- The position's x value for which to look up the index of the  
+<td>y</td>
+<td>- The position's y value for which to look up the index of the  
            character that is rendered on to the display at that point.  
 </td>
 </tr>
 
 <tr>
-<td>x</td>
-<td>- The position's x value for which to look up the index of the  
-           character that is rendered on to the display at that point.  
+<td>coordType</td>
+<td>- Screen coordinates or window coordinates (see constants  
+                   declared in nsIAccessibleCoordinateType).  
 </td>
 </tr>
 
@@ -225,14 +219,17 @@ Makes a specific part of string visible on screen.
 </tr>
 
 <tr>
-<td>startIndex</td>
-<td>0-based character offset  
+<td>endIndex</td>
+<td>0-based character offset - the offset of the  
+                   character just past the last character of the  
+                   string  
 </td>
 </tr>
 
 <tr>
-<td>startIndex</td>
-<td>0-based character offset  
+<td>scrollType</td>
+<td>defines how to scroll (see nsIAccessibleScrollType for  
+                   available constants)  
 </td>
 </tr>
 
@@ -263,26 +260,29 @@ Moves the top left of a substring to a specified location.
 </tr>
 
 <tr>
-<td>startIndex</td>
-<td>0-based character offset  
+<td>endIndex</td>
+<td>0-based character offset - the offset of the  
+                       character just past the last character of  
+                       the string  
 </td>
 </tr>
 
 <tr>
-<td>startIndex</td>
-<td>0-based character offset  
+<td>coordinateType</td>
+<td>specifies the coordinates origin (for available  
+                       constants refer to nsIAccessibleCoordinateType)  
 </td>
 </tr>
 
 <tr>
-<td>startIndex</td>
-<td>0-based character offset  
+<td>x</td>
+<td>defines the x coordinate  
 </td>
 </tr>
 
 <tr>
-<td>startIndex</td>
-<td>0-based character offset  
+<td>y</td>
+<td>defines the y coordinate  
 </td>
 </tr>
 

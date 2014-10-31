@@ -77,8 +77,8 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>network</td>
-<td>       The manually selecting network.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -145,12 +145,8 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>type</td>
-<td>       DOMString indicates the desired preferred network type.  
-       Possible values: 'wcdma/gsm', 'gsm', 'wcdma', 'wcdma/gsm-auto',  
-       'cdma/evdo', 'cdma', 'evdo', 'wcdma/gsm/cdma/evdo',  
-       'lte/cdma/evdo', 'lte/wcdma/gsm', 'lte/wcdma/gsm/cdma/evdo' or  
-       'lte'.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -215,9 +211,8 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>mode</td>
-<td>       DOMString indicates the desired roaming preference.  
-       Possible values: 'home', 'affiliated', or 'any'.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -282,10 +277,8 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean indicates the preferred voice privacy mode used in voice  
-       scrambling in CDMA networks. 'True' means the enhanced voice security  
-       is required.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -346,9 +339,8 @@ Otherwise, the notifyError() will be called.
 </tr>
 
 <tr>
-<td>mmi</td>
-<td>       DOMString containing an MMI string that can be associated to a  
-       USSD request or other RIL functionality.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -410,9 +402,8 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>reason</td>
-<td>       Indicates the reason the call is being forwarded. It shall be one of  
-       the nsIMobileConnectionService.CALL_FORWARD_REASON_* values.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -454,32 +445,33 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>action</td>
-<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+<td>reason</td>
+<td>       One of the nsIMobileConnection.CALL_FORWARD_REASON_* values.  
 </td>
 </tr>
 
 <tr>
-<td>action</td>
-<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+<td>number</td>
+<td>       Phone number of forwarding address.  
 </td>
 </tr>
 
 <tr>
-<td>action</td>
-<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+<td>timeSeconds</td>
+<td>       When "no reply" is enabled or queried, this gives the time in  
+       seconds to wait before call is forwarded.  
 </td>
 </tr>
 
 <tr>
-<td>action</td>
-<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+<td>serviceClass</td>
+<td>       One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
 </td>
 </tr>
 
 <tr>
-<td>action</td>
-<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -518,20 +510,20 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>program</td>
-<td>       One of the nsIMobileConnection.CALL_BARRING_PROGRAM_* values.  
+<td>password</td>
+<td>       Call barring password. Use "" if no password specified.  
 </td>
 </tr>
 
 <tr>
-<td>program</td>
-<td>       One of the nsIMobileConnection.CALL_BARRING_PROGRAM_* values.  
+<td>serviceClass</td>
+<td>       One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
 </td>
 </tr>
 
 <tr>
-<td>program</td>
-<td>       One of the nsIMobileConnection.CALL_BARRING_PROGRAM_* values.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -570,26 +562,26 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>program</td>
-<td>       One of the nsIMobileConnection.CALL_BARRING_PROGRAM_* values.  
+<td>enabled</td>
+<td>       Enable or disable the call barring program.  
 </td>
 </tr>
 
 <tr>
-<td>program</td>
-<td>       One of the nsIMobileConnection.CALL_BARRING_PROGRAM_* values.  
+<td>password</td>
+<td>       Call barring password. Use "" if no password specified.  
 </td>
 </tr>
 
 <tr>
-<td>program</td>
-<td>       One of the nsIMobileConnection.CALL_BARRING_PROGRAM_* values.  
+<td>serviceClass</td>
+<td>       One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
 </td>
 </tr>
 
 <tr>
-<td>program</td>
-<td>       One of the nsIMobileConnection.CALL_BARRING_PROGRAM_* values.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -624,14 +616,14 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>pin</td>
-<td>       Old call barring password.  
+<td>newPin</td>
+<td>       New call barring password.  
 </td>
 </tr>
 
 <tr>
-<td>pin</td>
-<td>       Old call barring password.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -664,8 +656,8 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean indicates the desired call waiting status.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -726,8 +718,8 @@ Otherwise, the notifyError() will be called, and the error will be either
 </tr>
 
 <tr>
-<td>clirMode</td>
-<td>       One of the nsIMobileConnection.CLIR_* values.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 
@@ -818,8 +810,8 @@ Note: Request is not available when radioState is null, 'enabling', or
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean indicates the desired radio power. True to enable the radio.  
+<td>requestCallback</td>
+<td>       Called when request is finished.  
 </td>
 </tr>
 

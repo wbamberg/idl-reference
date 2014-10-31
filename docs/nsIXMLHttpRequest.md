@@ -119,30 +119,33 @@ already), this is equivalent to calling abort() and then open().
 </tr>
 
 <tr>
-<td>method</td>
-<td>The HTTP method - either "POST" or "GET". Ignored  
-              if the URL is not a HTTP URL.  
+<td>url</td>
+<td>The URL to which to send the request.  
 </td>
 </tr>
 
 <tr>
-<td>method</td>
-<td>The HTTP method - either "POST" or "GET". Ignored  
-              if the URL is not a HTTP URL.  
+<td>async</td>
+<td>(optional) Whether the request is synchronous or  
+             asynchronous i.e. whether send returns only after  
+             the response is received or if it returns immediately after  
+             sending the request. In the latter case, notification  
+             of completion is sent through the event listeners.  
+             The default value is true.  
 </td>
 </tr>
 
 <tr>
-<td>method</td>
-<td>The HTTP method - either "POST" or "GET". Ignored  
-              if the URL is not a HTTP URL.  
+<td>user</td>
+<td>(optional) A username for authentication if necessary.  
+            The default value is the empty string  
 </td>
 </tr>
 
 <tr>
-<td>method</td>
-<td>The HTTP method - either "POST" or "GET". Ignored  
-              if the URL is not a HTTP URL.  
+<td>password</td>
+<td>(optional) A password for authentication if necessary.  
+                The default value is the empty string  
 </td>
 </tr>
 
@@ -243,8 +246,8 @@ before setting the request headers.
 </tr>
 
 <tr>
-<td>header</td>
-<td>The name of the header to set in the request.  
+<td>value</td>
+<td>The body of the header.  
 </td>
 </tr>
 
@@ -303,23 +306,25 @@ context, and owner window that should be used.
 </tr>
 
 <tr>
-<td>principal</td>
-<td>The principal to use for the request. This must not be  
-                 null.  
+<td>scriptContext</td>
+<td>The script context to use for the request. May be  
+                     null.  
 </td>
 </tr>
 
 <tr>
-<td>principal</td>
-<td>The principal to use for the request. This must not be  
-                 null.  
+<td>globalObject</td>
+<td>The associated global for the request. Can be the  
+                    outer window, a sandbox, or a backstage pass.  
+                    May be null, but then the request cannot create a  
+                    document.  
 </td>
 </tr>
 
 <tr>
-<td>principal</td>
-<td>The principal to use for the request. This must not be  
-                 null.  
+<td>baseURI</td>
+<td>The base URI to use when resolving relative URIs. May be  
+               null.  
 </td>
 </tr>
 

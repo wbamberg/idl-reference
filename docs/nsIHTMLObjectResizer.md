@@ -54,20 +54,20 @@ event callback when a mouse button is pressed
 </tr>
 
 <tr>
-<td>aX</td>
-<td>[IN] horizontal position of the pointer  
+<td>aY</td>
+<td>[IN] vertical position of the pointer  
 </td>
 </tr>
 
 <tr>
-<td>aX</td>
-<td>[IN] horizontal position of the pointer  
+<td>aTarget</td>
+<td>[IN] the element triggering the event  
 </td>
 </tr>
 
 <tr>
-<td>aX</td>
-<td>[IN] horizontal position of the pointer  
+<td>aMouseEvent</td>
+<td>[IN] the event  
 </td>
 </tr>
 
@@ -92,14 +92,14 @@ event callback when a mouse button is released
 </tr>
 
 <tr>
-<td>aX</td>
-<td>[IN] horizontal position of the pointer  
+<td>aY</td>
+<td>[IN] vertical position of the pointer  
 </td>
 </tr>
 
 <tr>
-<td>aX</td>
-<td>[IN] horizontal position of the pointer  
+<td>aTarget</td>
+<td>[IN] the element triggering the event  
 </td>
 </tr>
 

@@ -43,20 +43,20 @@ Perform platform specific operations when a download is done.
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       Source URI of the download  
+<td>aTarget</td>
+<td>       Downloaded file  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       Source URI of the download  
+<td>aContentType</td>
+<td>       The source's content type  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       Source URI of the download  
+<td>aIsPrivate</td>
+<td>       True for private downloads  
 </td>
 </tr>
 

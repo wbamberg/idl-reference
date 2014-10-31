@@ -63,50 +63,50 @@ be sent.
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was added.  
+<td>aParentId</td>
+<td>       The id of the folder to which the item was added.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was added.  
+<td>aIndex</td>
+<td>       The item's index in the folder.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was added.  
+<td>aItemType</td>
+<td>       The type of the added item (see TYPE_* constants below).  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was added.  
+<td>aURI</td>
+<td>       The URI of the added item if it was TYPE_BOOKMARK, null otherwise.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was added.  
+<td>aTitle</td>
+<td>       The title of the added item.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was added.  
+<td>aDateAdded</td>
+<td>       The stored date added value, in microseconds from the epoch.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was added.  
+<td>aGuid</td>
+<td>       The unique ID associated with the item.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was added.  
+<td>aParentGuid</td>
+<td>       The unique ID associated with the item's parent.  
 </td>
 </tr>
 
@@ -147,38 +147,38 @@ be sent.
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was removed.  
+<td>aParentId</td>
+<td>       The id of the folder from which the item was removed.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was removed.  
+<td>aIndex</td>
+<td>       The bookmark's index in the folder.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was removed.  
+<td>aItemType</td>
+<td>       The type of the item to be removed (see TYPE_* constants below).  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was removed.  
+<td>aURI</td>
+<td>       The URI of the added item if it was TYPE_BOOKMARK, null otherwise.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was removed.  
+<td>aGuid</td>
+<td>       The unique ID associated with the item.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was removed.  
+<td>aParentGuid</td>
+<td>       The unique ID associated with the item's parent.  
 </td>
 </tr>
 
@@ -235,50 +235,54 @@ whenever any attributes like "title" are changed.
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was changed.  
+<td>aProperty</td>
+<td>       The property which changed.  Can be null for the removal of all of  
+       the annotations, in this case aIsAnnotationProperty is true.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was changed.  
+<td>aIsAnnotationProperty</td>
+<td>       Whether or not aProperty is the name of an annotation.  If true  
+       aNewValue is always an empty string.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was changed.  
+<td>aNewValue</td>
+<td>       For certain properties, this is set to the new value of the  
+       property (see the list below).  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was changed.  
+<td>aLastModified</td>
+<td>       If lastModified changed, this parameter is the new value, otherwise  
+       it's set to 0.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was changed.  
+<td>aItemType</td>
+<td>       The type of the item to be removed (see TYPE_* constants below).  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was changed.  
+<td>aParentId</td>
+<td>       The id of the folder containing the item.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was changed.  
+<td>aGuid</td>
+<td>       The unique ID associated with the item.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was changed.  
+<td>aParentGuid</td>
+<td>       The unique ID associated with the item's parent.  
 </td>
 </tr>
 
@@ -327,44 +331,45 @@ items.
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the bookmark that was visited.  
+<td>aVisitId</td>
+<td>       The id of the visit.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the bookmark that was visited.  
+<td>aTime</td>
+<td>       The time of the visit.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the bookmark that was visited.  
+<td>aTransitionType</td>
+<td>       The transition for the visit.  See nsINavHistoryService::TRANSITION_*  
+       constants for a list of possible values.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the bookmark that was visited.  
+<td>aURI</td>
+<td>       The nsIURI for this bookmark.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the bookmark that was visited.  
+<td>aParentId</td>
+<td>       The id of the folder containing the item.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the bookmark that was visited.  
+<td>aGuid</td>
+<td>       The unique ID associated with the item.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the bookmark that was visited.  
+<td>aParentGuid</td>
+<td>       The unique ID associated with the item's parent.  
 </td>
 </tr>
 
@@ -405,50 +410,50 @@ Notifies that an item has been moved.
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was moved.  
+<td>aOldParentId</td>
+<td>       The id of the old parent.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was moved.  
+<td>aOldIndex</td>
+<td>       The old index inside the old parent.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was moved.  
+<td>aNewParentId</td>
+<td>       The id of the new parent.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was moved.  
+<td>aNewIndex</td>
+<td>       The index inside the new parent.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was moved.  
+<td>aItemType</td>
+<td>       The type of the item to be removed (see TYPE_* constants below).  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was moved.  
+<td>aGuid</td>
+<td>       The unique ID associated with the item.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was moved.  
+<td>aOldParentGuid</td>
+<td>       The unique ID associated with the old item's parent.  
 </td>
 </tr>
 
 <tr>
-<td>aItemId</td>
-<td>       The id of the item that was moved.  
+<td>aNewParentGuid</td>
+<td>       The unique ID associated with the new item's parent.  
 </td>
 </tr>
 

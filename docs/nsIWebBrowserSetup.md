@@ -33,8 +33,8 @@ Only PR_TRUE and PR_FALSE are legal boolean values.
 </tr>
 
 <tr>
-<td>aId</td>
-<td>The identifier of the property to be set.  
+<td>aValue</td>
+<td>The value of the property.  
 </td>
 </tr>
 

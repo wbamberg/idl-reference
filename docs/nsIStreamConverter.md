@@ -77,20 +77,21 @@ Use this method when you have a stream you want to convert.
 </tr>
 
 <tr>
-<td>aFromStream</td>
-<td>The stream representing the original/raw data.  
+<td>aFromType</td>
+<td>The MIME type of aFromStream.  
 </td>
 </tr>
 
 <tr>
-<td>aFromStream</td>
-<td>The stream representing the original/raw data.  
+<td>aToType</td>
+<td>The MIME type of the returned stream.  
 </td>
 </tr>
 
 <tr>
-<td>aFromStream</td>
-<td>The stream representing the original/raw data.  
+<td>aCtxt</td>
+<td>Either an opaque context, or a converter specific context  
+                     (implementation specific).  
 </td>
 </tr>
 
@@ -124,20 +125,21 @@ asynchronously.
 </tr>
 
 <tr>
-<td>aFromType</td>
-<td>The MIME type of the original/raw data.  
+<td>aToType</td>
+<td>The MIME type of the converted data.  
 </td>
 </tr>
 
 <tr>
-<td>aFromType</td>
-<td>The MIME type of the original/raw data.  
+<td>aListener</td>
+<td>The listener who receives the converted data.  
 </td>
 </tr>
 
 <tr>
-<td>aFromType</td>
-<td>The MIME type of the original/raw data.  
+<td>aCtxt</td>
+<td>Either an opaque context, or a converter specific context  
+                     (implementation specific).  
 </td>
 </tr>
 

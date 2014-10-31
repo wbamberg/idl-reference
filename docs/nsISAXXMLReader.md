@@ -48,8 +48,8 @@ features will result in a NOT_IMPLEMENTED exception.
 </tr>
 
 <tr>
-<td>name</td>
-<td>String flag for a parser feature.  
+<td>value</td>
+<td>Turn the feature on/off.  
 </td>
 </tr>
 
@@ -119,8 +119,8 @@ extended handlers.
 </tr>
 
 <tr>
-<td>name</td>
-<td>String flag for a parser feature  
+<td>value</td>
+<td>Turn the feature on/off.  
 </td>
 </tr>
 
@@ -178,8 +178,8 @@ using names built on their own URIs.
 </tr>
 
 <tr>
-<td>str</td>
-<td>The UTF16 string to be parsed  
+<td>contentType</td>
+<td>The content type of the string (see parseFromStream)  
 </td>
 </tr>
 
@@ -208,14 +208,17 @@ using names built on their own URIs.
 </tr>
 
 <tr>
-<td>stream</td>
-<td>The byte stream whose contents are parsed  
+<td>charset</td>
+<td>The character set that was used to encode the byte  
+               stream. NULL if not specified.  
 </td>
 </tr>
 
 <tr>
-<td>stream</td>
-<td>The byte stream whose contents are parsed  
+<td>contentType</td>
+<td>The content type of the string - either text/xml,  
+                   application/xml, or application/xhtml+xml.  
+                   Must not be NULL.  
 </td>
 </tr>
 

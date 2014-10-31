@@ -42,34 +42,28 @@ the responsibility of the application.
 </tr>
 
 <tr>
-<td>uri</td>
-<td>The Namespace URI, or the empty string if  
-       none is available or Namespace processing is not  
-       being performed.  
+<td>localName</td>
+<td>The local name, or the empty string if  
+       Namespace processing is not being performed.  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>The Namespace URI, or the empty string if  
-       none is available or Namespace processing is not  
-       being performed.  
+<td>qName</td>
+<td>The qualified (prefixed) name, or the empty string  
+       if qualified names are not available.  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>The Namespace URI, or the empty string if  
-       none is available or Namespace processing is not  
-       being performed.  
+<td>type</td>
+<td>The attribute type as a string.  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>The Namespace URI, or the empty string if  
-       none is available or Namespace processing is not  
-       being performed.  
+<td>value</td>
+<td>The attribute value.  
 </td>
 </tr>
 
@@ -152,32 +146,36 @@ of the application.
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index of the attribute (zero-based).  
+<td>uri</td>
+<td>The Namespace URI, or the empty string if  
+       none is available or Namespace processing is not  
+       being performed.  
 </td>
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index of the attribute (zero-based).  
+<td>localName</td>
+<td>The local name, or the empty string if  
+       Namespace processing is not being performed.  
 </td>
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index of the attribute (zero-based).  
+<td>qName</td>
+<td>The qualified name, or the empty string  
+       if qualified names are not available.  
 </td>
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index of the attribute (zero-based).  
+<td>type</td>
+<td>The attribute type as a string.  
 </td>
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index of the attribute (zero-based).  
+<td>value</td>
+<td>The attribute value.  
 </td>
 </tr>
 
@@ -203,8 +201,9 @@ Set the local name of a specific attribute.
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index of the attribute (zero-based).  
+<td>localName</td>
+<td>The attribute's local name, or the empty  
+       string for none.  
 </td>
 </tr>
 
@@ -230,8 +229,9 @@ Set the qualified name of a specific attribute.
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index of the attribute (zero-based).  
+<td>qName</td>
+<td>The attribute's qualified name, or the empty  
+       string for none.  
 </td>
 </tr>
 
@@ -256,8 +256,8 @@ Set the type of a specific attribute.
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index of the attribute (zero-based).  
+<td>type</td>
+<td>The attribute's type.  
 </td>
 </tr>
 
@@ -283,8 +283,9 @@ Set the Namespace URI of a specific attribute.
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index of the attribute (zero-based).  
+<td>uri</td>
+<td>The attribute's Namespace URI, or the empty  
+       string for none.  
 </td>
 </tr>
 
@@ -309,8 +310,8 @@ Set the value of a specific attribute.
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index of the attribute (zero-based).  
+<td>value</td>
+<td>The attribute's value.  
 </td>
 </tr>
 

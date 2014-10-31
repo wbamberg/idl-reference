@@ -47,10 +47,11 @@ NOTE: This method must be called before any other method
 </tr>
 
 <tr>
-<td>aAlgorithm</td>
-<td>the algorithm type to be used.  
-       This value must be one of the above valid  
-       algorithm types.  
+<td>aKeyObject</td>
+<td>       Object holding a key. To create the key object use for instance:  
+       var keyObject = Components.classes["@mozilla.org/security/keyobjectfactory;1"]  
+           .getService(Components.interfaces.nsIKeyObjectFactory)  
+             .keyFromString(Components.interfaces.nsIKeyObject.HMAC, rawKeyData);  
 </td>
 </tr>
 
@@ -77,8 +78,8 @@ NOTE: This method must be called before any other method
 </tr>
 
 <tr>
-<td>aData</td>
-<td>a buffer to calculate the hash over  
+<td>aLen</td>
+<td>the length of the buffer |aData|  
 </td>
 </tr>
 
@@ -113,8 +114,10 @@ Calculates and updates a new hash based on a given data stream.
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>an input stream to read from.  
+<td>aLen</td>
+<td>how much to read from the given |aStream|.  Passing  
+       UINT32_MAX indicates that all data available will be used   
+       to update the hash.   
 </td>
 </tr>
 

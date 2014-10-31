@@ -33,8 +33,8 @@ response headers.
 </tr>
 
 <tr>
-<td>aHeader</td>
-<td>       the header being visited.  
+<td>aValue</td>
+<td>       the header value (possibly a comma delimited list).  
 </td>
 </tr>
 

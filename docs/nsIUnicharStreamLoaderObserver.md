@@ -31,14 +31,14 @@ Will not be called if the stream receives no data at all.
 </tr>
 
 <tr>
-<td>aLoader</td>
-<td>the unichar stream loader  
+<td>aContext</td>
+<td>the context parameter of the underlying channel  
 </td>
 </tr>
 
 <tr>
-<td>aLoader</td>
-<td>the unichar stream loader  
+<td>aSegment</td>
+<td>up to 512 octets of raw data from the stream  
 </td>
 </tr>
 
@@ -71,20 +71,20 @@ error code.
 </tr>
 
 <tr>
-<td>aLoader</td>
-<td>the unichar stream loader  
+<td>aContext</td>
+<td>the context parameter of the underlying channel  
 </td>
 </tr>
 
 <tr>
-<td>aLoader</td>
-<td>the unichar stream loader  
+<td>aStatus</td>
+<td>the status of the underlying channel  
 </td>
 </tr>
 
 <tr>
-<td>aLoader</td>
-<td>the unichar stream loader  
+<td>aBuffer</td>
+<td>the contents of the stream, decoded to UTF-16.  
 </td>
 </tr>
 

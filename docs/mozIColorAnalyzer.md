@@ -40,10 +40,9 @@ will fail before analyzing it for performance reasons.
 </tr>
 
 <tr>
-<td>imageURI</td>
-<td>       A URI pointing to the image - ideally a data: URI, but any scheme  
-       that will load when setting the src attribute of a DOM img element  
-       should work.  
+<td>callback</td>
+<td>       Function to call when the representative color is found or an  
+       error occurs.  
 </td>
 </tr>
 

@@ -51,23 +51,31 @@ aSource has not yet been visited.
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       The source of the download we are adding to history.  This cannot be  
-       null.  
+<td>aReferrer</td>
+<td>       [optional] The referrer of source URI.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       The source of the download we are adding to history.  This cannot be  
-       null.  
+<td>aStartTime</td>
+<td>       [optional] The time the download was started.  If the start time  
+       is not given, the current time is used.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       The source of the download we are adding to history.  This cannot be  
-       null.  
+<td>aDestination</td>
+<td>       [optional] The target where the download is to be saved on the local  
+       filesystem.  
+@throws NS_ERROR_NOT_AVAILABLE  
+        In a situation where a history implementation is not available,  
+        where 'history implementation' refers to something like  
+        nsIGlobalHistory and friends.  
+@note This addition is not guaranteed to be synchronous, since it delegates  
+      the actual addition to the underlying history implementation.  If you  
+      need to observe the completion of the addition, use the underlying  
+      history implementation's notifications system (e.g. nsINavHistoryObserver  
+      for toolkit's implementation of this interface).  
 </td>
 </tr>
 

@@ -28,13 +28,14 @@ Given a transferable, set the data on the native clipboard
 
 <tr>
 <td></td>
-<td>aTransferable The transferable  
+<td>anOwner The owner of the transferable  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aTransferable The transferable  
+<td>aWhichClipboard Specifies the clipboard to which this operation applies.  
+@result NS_Ok if no errors  
 </td>
 </tr>
 
@@ -61,7 +62,8 @@ Given a transferable, get the clipboard data.
 
 <tr>
 <td></td>
-<td>aTransferable The transferable  
+<td>aWhichClipboard Specifies the clipboard to which this operation applies.  
+@result NS_Ok if no errors  
 </td>
 </tr>
 
@@ -115,13 +117,15 @@ any of the flavors in the given list.
 
 <tr>
 <td></td>
-<td>aFlavorList     An array of ASCII strings.  
+<td>aLength         The length of the aFlavorList.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aFlavorList     An array of ASCII strings.  
+<td>aWhichClipboard Specifies the clipboard to which this operation applies.  
+@outResult - if data is present matching one of   
+@result NS_OK if successful.  
 </td>
 </tr>
 

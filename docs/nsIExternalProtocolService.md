@@ -101,8 +101,8 @@ overridden by each OS's implementation.
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>The protocol scheme we are looking for.  
+<td>aFound</td>
+<td>Was an OS default handler for this scheme found?  
 </td>
 </tr>
 
@@ -132,9 +132,11 @@ Set some sane defaults for a protocol handler object.
 </tr>
 
 <tr>
-<td>aHandlerInfo</td>
-<td>nsIHandlerInfo object, as returned by   
-                         getProtocolHandlerInfoFromOS  
+<td>aOSHandlerExists</td>
+<td>was the object above created for an extant  
+                         OS default handler?  This is generally the  
+                         value of the aFound out param from  
+                         getProtocolHandlerInfoFromOS.  
 </td>
 </tr>
 
@@ -193,8 +195,13 @@ permission to load the external application.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI to load  
+<td>aWindowContext</td>
+<td>       The window to parent the dialog against, and, if a web handler  
+       is chosen, it is loaded in this window as well.  This parameter  
+       may be ultimately passed nsIURILoader.openURI in the case of a  
+       web handler, and aWindowContext is null or not present, web  
+       handlers will fail.  We need to do better than that; bug 394483  
+       filed in order to track.  
 </td>
 </tr>
 

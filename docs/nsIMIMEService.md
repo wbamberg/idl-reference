@@ -92,8 +92,8 @@ for this type. This may be identical to the passed-in extension.
 </tr>
 
 <tr>
-<td>aMIMEType</td>
-<td>The Type to get information on. Must not be empty.  
+<td>aFileExt</td>
+<td>File Extension. Can be empty.  
 </td>
 </tr>
 

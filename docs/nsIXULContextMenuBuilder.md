@@ -33,9 +33,9 @@ Initialize builder before building.
 </tr>
 
 <tr>
-<td>aDocumentFragment</td>
-<td>the fragment that will be used to append top  
-       level elements  
+<td>aGeneratedItemIdAttrName</td>
+<td>the name of the attribute that will be  
+       used to mark elements as generated and for menuitem identification  
 </td>
 </tr>
 

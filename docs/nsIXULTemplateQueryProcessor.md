@@ -110,26 +110,27 @@ the data is available.
 </tr>
 
 <tr>
-<td>aDataSources</td>
-<td>the list of nsIURI objects and/or nsIDOMNode objects  
+<td>aRootNode</td>
+<td>the root node the builder is attached to  
 </td>
 </tr>
 
 <tr>
-<td>aDataSources</td>
-<td>the list of nsIURI objects and/or nsIDOMNode objects  
+<td>aIsTrusted</td>
+<td>true if the template is in a trusted document  
 </td>
 </tr>
 
 <tr>
-<td>aDataSources</td>
-<td>the list of nsIURI objects and/or nsIDOMNode objects  
+<td>aBuilder</td>
+<td>the template builder  
 </td>
 </tr>
 
 <tr>
-<td>aDataSources</td>
-<td>the list of nsIURI objects and/or nsIDOMNode objects  
+<td>aShouldDelayBuilding</td>
+<td>[out] whether the builder should wait to  
+                                  build the content or not  
 </td>
 </tr>
 
@@ -161,14 +162,14 @@ translateRef.
 </tr>
 
 <tr>
-<td>aDatasource</td>
-<td>datasource for the data  
+<td>aBuilder</td>
+<td>the template builder  
 </td>
 </tr>
 
 <tr>
-<td>aDatasource</td>
-<td>datasource for the data  
+<td>aRootNode</td>
+<td>the root node the builder is attached to  
 </td>
 </tr>
 
@@ -220,20 +221,20 @@ indicate what variable is expected to contain the results.
 </tr>
 
 <tr>
-<td>aBuilder</td>
-<td>the template builder  
+<td>aQuery</td>
+<td><query> node to compile  
 </td>
 </tr>
 
 <tr>
-<td>aBuilder</td>
-<td>the template builder  
+<td>aRefVariable</td>
+<td>the reference variable  
 </td>
 </tr>
 
 <tr>
-<td>aBuilder</td>
-<td>the template builder  
+<td>aMemberVariable</td>
+<td>the member variable  
 </td>
 </tr>
 
@@ -273,14 +274,14 @@ typically with different values for aRef.
 </tr>
 
 <tr>
-<td>aDatasource</td>
-<td>datasource for the data  
+<td>aRef</td>
+<td>context reference value used as a starting point  
 </td>
 </tr>
 
 <tr>
-<td>aDatasource</td>
-<td>datasource for the data  
+<td>aQuery</td>
+<td>the compiled query returned from query compilation  
 </td>
 </tr>
 
@@ -329,20 +330,20 @@ the syntax '+2' to mean add two to the reference.
 </tr>
 
 <tr>
-<td>aRuleNode</td>
-<td>rule to add the binding to  
+<td>aVar</td>
+<td>variable that will be bound  
 </td>
 </tr>
 
 <tr>
-<td>aRuleNode</td>
-<td>rule to add the binding to  
+<td>aRef</td>
+<td>variable that holds reference value  
 </td>
 </tr>
 
 <tr>
-<td>aRuleNode</td>
-<td>rule to add the binding to  
+<td>aExpr</td>
+<td>expression used to compute the value to assign  
 </td>
 </tr>
 
@@ -378,8 +379,8 @@ translate the reference.
 </tr>
 
 <tr>
-<td>aDatasource</td>
-<td>datasource for the data  
+<td>aRefString</td>
+<td>the ref attribute string  
 </td>
 </tr>
 
@@ -420,20 +421,20 @@ query processor.
 </tr>
 
 <tr>
-<td>aLeft</td>
-<td>the left result to compare  
+<td>aRight</td>
+<td>the right result to compare  
 </td>
 </tr>
 
 <tr>
-<td>aLeft</td>
-<td>the left result to compare  
+<td>aVar</td>
+<td>variable to compare  
 </td>
 </tr>
 
 <tr>
-<td>aLeft</td>
-<td>the left result to compare  
+<td>returns</td>
+<td>-1 if less, 0 if equal, or 1 if greater  
 </td>
 </tr>
 

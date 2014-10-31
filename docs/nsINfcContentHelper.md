@@ -50,14 +50,16 @@ then 'onsuccess' is called else 'onerror'
 </tr>
 
 <tr>
-<td>window</td>
-<td>       Current window  
+<td>blob</td>
+<td>       Raw data of the file to be sent. This object represents a file-like  
+       (nsIDOMFile) object of immutable, raw data. The blob data needs  
+       to be 'object wrapped' before calling this interface.  
 </td>
 </tr>
 
 <tr>
-<td>window</td>
-<td>       Current window  
+<td>sessionToken</td>
+<td>       Current token  
 </td>
 </tr>
 
@@ -104,8 +106,8 @@ Register the given application id with Chrome process
 </tr>
 
 <tr>
-<td>window</td>
-<td>       Current window  
+<td>appId</td>
+<td>       Application ID to be registered  
 </td>
 </tr>
 
@@ -133,8 +135,8 @@ Unregister the given application id with Chrome process
 </tr>
 
 <tr>
-<td>window</td>
-<td>       Current window  
+<td>appId</td>
+<td>       Application ID to be registered  
 </td>
 </tr>
 
@@ -164,8 +166,8 @@ Returns DOMRequest, if appId is registered then 'onsuccess' is called else 'oner
 </tr>
 
 <tr>
-<td>window</td>
-<td>       Current window  
+<td>appId</td>
+<td>       Application ID to be updated with Chrome process  
 </td>
 </tr>
 
@@ -193,8 +195,8 @@ Notify the Chrome process that user has accepted to share nfc message on P2P UI
 </tr>
 
 <tr>
-<td>window</td>
-<td>       Current window  
+<td>appId</td>
+<td>       Application ID that is capable of handling NFC_EVENT_PEER_READY event  
 </td>
 </tr>
 
@@ -225,14 +227,14 @@ Notify the status of sendFile operation to Chrome process
 </tr>
 
 <tr>
-<td>window</td>
-<td>       Current window  
+<td>status</td>
+<td>       Status of sendFile operation  
 </td>
 </tr>
 
 <tr>
-<td>window</td>
-<td>       Current window  
+<td>requestId</td>
+<td>       Request ID of SendFile DOM Request  
 </td>
 </tr>
 

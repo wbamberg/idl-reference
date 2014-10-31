@@ -38,22 +38,22 @@ Get a confirmation that the user wants to start the installs.
 
 <tr>
 <td></td>
-<td>aWindow  
-        The window that triggered the installs  
+<td>aUri  
+        The URI of the site that triggered the installs  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aWindow  
-        The window that triggered the installs  
+<td>aInstalls  
+        The AddonInstalls that were requested  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aWindow  
-        The window that triggered the installs  
+<td>aCount  
+        The number of AddonInstalls  
 </td>
 </tr>
 

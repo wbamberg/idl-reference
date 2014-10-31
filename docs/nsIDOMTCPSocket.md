@@ -36,14 +36,15 @@ the given host and port.
 </tr>
 
 <tr>
-<td>host</td>
-<td>The hostname of the server to connect to.  
+<td>port</td>
+<td>The port to connect to.  
 </td>
 </tr>
 
 <tr>
-<td>host</td>
-<td>The hostname of the server to connect to.  
+<td>options</td>
+<td>An object specifying one or more parameters which  
+               determine the details of the socket.  
 </td>
 </tr>
 
@@ -80,16 +81,17 @@ Listen on a port
 </tr>
 
 <tr>
-<td>localPort</td>
-<td>The port of the server socket. Pass -1 to indicate no preference,  
-                 and a port will be selected automatically.  
+<td>options</td>
+<td>An object specifying one or more parameters which  
+               determine the details of the socket.  
 </td>
 </tr>
 
 <tr>
-<td>localPort</td>
-<td>The port of the server socket. Pass -1 to indicate no preference,  
-                 and a port will be selected automatically.  
+<td>backlog</td>
+<td>The maximum length the queue of pending connections may grow to.  
+               This parameter may be silently limited by the operating system.  
+               Pass -1 to use the default value.  
 </td>
 </tr>
 
@@ -159,24 +161,16 @@ Write data to the socket.
 </tr>
 
 <tr>
-<td>data</td>
-<td>The data to write to the socket. If  
-            binaryType: "arraybuffer" was passed in the options  
-            object, then this object should be an ArrayBuffer instance.  
-            If binaryType: "string" was passed, or if no binaryType  
-            option was specified, then this object should be an  
-            ordinary JavaScript string.  
+<td>byteOffset</td>
+<td>The offset within the data from which to begin writing.  
+                  Has no effect on non-ArrayBuffer data.  
 </td>
 </tr>
 
 <tr>
-<td>data</td>
-<td>The data to write to the socket. If  
-            binaryType: "arraybuffer" was passed in the options  
-            object, then this object should be an ArrayBuffer instance.  
-            If binaryType: "string" was passed, or if no binaryType  
-            option was specified, then this object should be an  
-            ordinary JavaScript string.  
+<td>byteLength</td>
+<td>The number of bytes to write. Has no effect on  
+                  non-ArrayBuffer data.  
 </td>
 </tr>
 

@@ -79,14 +79,18 @@ NOTE: The 'domain' attribute has no effect on the behaviour of this
 </tr>
 
 <tr>
-<td>uri</td>
-<td>The URI about to be loaded.  
+<td>report</td>
+<td>If true, will report a warning to the console service  
+              if the load is not allowed.  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>The URI about to be loaded.  
+<td>allowIfInheritsPrincipal</td>
+<td>If true, the load is allowed if the  
+                                  loadee inherits the principal of the  
+                                  loader.  
+@throws NS_ERROR_DOM_BAD_URI if the load is not allowed.  
 </td>
 </tr>
 

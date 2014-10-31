@@ -34,20 +34,22 @@ Add a URI to global history
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI of the page  
+<td>aRedirect</td>
+<td>whether the URI was redirected to another location;  
+                 this is 'true' for the original URI which is  
+                 redirected.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI of the page  
+<td>aToplevel</td>
+<td>whether the URI is loaded in a top-level window  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI of the page  
+<td>aReferrer</td>
+<td>the URI of the referring page  
 </td>
 </tr>
 
@@ -93,8 +95,8 @@ global history will not be added.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI for which to set to the title  
+<td>aTitle</td>
+<td>the page title  
 </td>
 </tr>
 

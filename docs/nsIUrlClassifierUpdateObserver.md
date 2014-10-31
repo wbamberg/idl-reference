@@ -32,8 +32,9 @@ and sent to the classifier as a new stream.
 </tr>
 
 <tr>
-<td>url</td>
-<td>The url that was requested.  
+<td>table</td>
+<td>The table name that this URL's contents will be associated  
+             with.  This should be passed back to beginStream().  
 </td>
 </tr>
 
@@ -59,8 +60,9 @@ A stream update has completed.
 </tr>
 
 <tr>
-<td>status</td>
-<td>The state of the update process.  
+<td>delay</td>
+<td>The amount of time the updater should wait to fetch the  
+             next URL in ms.  
 </td>
 </tr>
 

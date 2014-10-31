@@ -27,8 +27,8 @@ Notifies whether a certain URI has been visited.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       URI being notified about.  
+<td>aVisitedStatus</td>
+<td>       The visited status of aURI.  
 </td>
 </tr>
 

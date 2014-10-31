@@ -45,20 +45,23 @@ Returns a replacement property descriptor for a browser object.
 </tr>
 
 <tr>
-<td>addonId</td>
-<td>The ID of the add-on accessing the property.  
+<td>target</td>
+<td>The browser object being accessed.  
 </td>
 </tr>
 
 <tr>
-<td>addonId</td>
-<td>The ID of the add-on accessing the property.  
+<td>iface</td>
+<td>The IID of the interface the property is associated with. This  
+             parameter is only available for XPCWrappedNative targets. As  
+             such, it's only useful as an optimization to avoid  
+             instanceof checks on the target.  
 </td>
 </tr>
 
 <tr>
-<td>addonId</td>
-<td>The ID of the add-on accessing the property.  
+<td>prop</td>
+<td>The name of the property being accessed.  
 </td>
 </tr>
 

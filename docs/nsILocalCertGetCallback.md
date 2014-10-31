@@ -25,8 +25,8 @@ Called with the result of the getOrCreateCert operation above.
 </tr>
 
 <tr>
-<td>cert</td>
-<td>Requested cert, or null if some error  
+<td>result</td>
+<td>Result code from the get operation  
 </td>
 </tr>
 

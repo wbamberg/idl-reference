@@ -51,11 +51,8 @@ This makes a copy of the string argument passed in.
 </tr>
 
 <tr>
-<td>length</td>
-<td>The length of the string. This value should not include  
-              space for the null terminator, nor should it account for the  
-              size of a character. It should  only be the number of  
-              characters for which there is space in the string.  
+<td>data</td>
+<td>The string data to be stored.  
 </td>
 </tr>
 

@@ -38,9 +38,8 @@ Start querying the application reputation service.
 </tr>
 
 <tr>
-<td>aQuery</td>
-<td>       The nsIApplicationReputationQuery containing metadata of the  
-       downloaded file.  
+<td>aCallback</td>
+<td>       The callback for receiving the results of the query.  
 </td>
 </tr>
 

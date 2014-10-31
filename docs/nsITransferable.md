@@ -87,13 +87,13 @@ Given a flavor retrieve the data.
 
 <tr>
 <td></td>
-<td>aFlavor (in parameter) the flavor of data to retrieve  
+<td>aData the data. Some variant of class in nsISupportsPrimitives.idl  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aFlavor (in parameter) the flavor of data to retrieve  
+<td>aDataLen the length of the data  
 </td>
 </tr>
 
@@ -121,13 +121,13 @@ been added to it with |AddFlavor()|
 
 <tr>
 <td></td>
-<td>aFlavor (out parameter) the flavor of data that was retrieved  
+<td>aData the data. Some variant of class in nsISupportsPrimitives.idl  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aFlavor (out parameter) the flavor of data that was retrieved  
+<td>aDataLen the length of the data  
 </td>
 </tr>
 
@@ -183,13 +183,14 @@ will maintain its own copy the data, so it is not necessary to do that beforehan
 
 <tr>
 <td></td>
-<td>aFlavor the flavor of data that is being set  
+<td>aData the data, either some variant of class in nsISupportsPrimitives.idl,  
+        an nsIFile, or an nsIFlavorDataProvider (see above)  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aFlavor the flavor of data that is being set  
+<td>aDataLen the length of the data, or 0 if passing a nsIFlavorDataProvider  
 </td>
 </tr>
 

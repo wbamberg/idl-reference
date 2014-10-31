@@ -39,32 +39,36 @@ The returned object has the following functions:
 </tr>
 
 <tr>
-<td>name</td>
-<td>Unique histogram name  
+<td>expiration</td>
+<td>Expiration version  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>Unique histogram name  
+<td>min</td>
+<td>- Minimal bucket size  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>Unique histogram name  
+<td>max</td>
+<td>- Maximum bucket size  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>Unique histogram name  
+<td>bucket_count</td>
+<td>- number of buckets in the histogram.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>Unique histogram name  
+<td>type</td>
+<td>- HISTOGRAM_EXPONENTIAL, HISTOGRAM_LINEAR, HISTOGRAM_BOOLEAN or HISTOGRAM_COUNT  
+The returned object has the following functions:  
+  add(int) - Adds an int value to the appropriate bucket  
+  snapshot() - Returns a snapshot of the histogram with the same data fields as in histogramSnapshots()  
+  clear() - Zeros out the histogram's buckets and sum  
 </td>
 </tr>
 
@@ -91,8 +95,9 @@ The returned object has the same functions as a histogram returned from newHisto
 </tr>
 
 <tr>
-<td>name</td>
-<td>Unique histogram name  
+<td>existing_name</td>
+<td>Existing histogram name  
+The returned object has the same functions as a histogram returned from newHistogram.  
 </td>
 </tr>
 
@@ -143,32 +148,33 @@ histogram name has been registered previously.
 </tr>
 
 <tr>
-<td>addon_id</td>
-<td>- Unique ID of the addon  
+<td>name</td>
+<td>- Unique histogram name  
 </td>
 </tr>
 
 <tr>
-<td>addon_id</td>
-<td>- Unique ID of the addon  
+<td>min</td>
+<td>- Minimal bucket size  
 </td>
 </tr>
 
 <tr>
-<td>addon_id</td>
-<td>- Unique ID of the addon  
+<td>max</td>
+<td>- Maximum bucket size  
 </td>
 </tr>
 
 <tr>
-<td>addon_id</td>
-<td>- Unique ID of the addon  
+<td>bucket_count</td>
+<td>- number of buckets in the histogram  
 </td>
 </tr>
 
 <tr>
-<td>addon_id</td>
-<td>- Unique ID of the addon  
+<td>histogram_type</td>
+<td>- HISTOGRAM_EXPONENTIAL, HISTOGRAM_LINEAR,  
+       HISTOGRAM_BOOLEAN or HISTOGRAM_COUNT  
 </td>
 </tr>
 
@@ -198,8 +204,8 @@ from newHistogram.
 </tr>
 
 <tr>
-<td>addon_id</td>
-<td>- Unique ID of the addon  
+<td>name</td>
+<td>- Registered histogram name  
 </td>
 </tr>
 

@@ -28,8 +28,8 @@ Called to provide information about a cache device.
 </tr>
 
 <tr>
-<td>deviceID</td>
-<td>- specifies the device being visited.  
+<td>deviceInfo</td>
+<td>- specifies information about this device.  
 </td>
 </tr>
 
@@ -58,8 +58,8 @@ Called to provide information about a cache entry.
 </tr>
 
 <tr>
-<td>deviceID</td>
-<td>- specifies the device being visited.  
+<td>entryInfo</td>
+<td>- specifies information about this entry.  
 </td>
 </tr>
 

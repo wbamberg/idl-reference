@@ -48,56 +48,59 @@ goes away.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to load  
+<td>aInitialDocumentURI</td>
+<td>the URI that 'initiated' the load -- used for 3rd party cookie blocking  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to load  
+<td>aReferrerURI</td>
+<td>the 'referring' URI  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to load  
+<td>aLoadingPrincipal</td>
+<td>the principal of the loading document  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to load  
+<td>aLoadGroup</td>
+<td>Loadgroup to put the image load into  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to load  
+<td>aObserver</td>
+<td>the observer (may be null)  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to load  
+<td>aCX</td>
+<td>some random data  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to load  
+<td>aLoadFlags</td>
+<td>Load flags for the request  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to load  
+<td>aCacheKey</td>
+<td>cache key to use for a load if the original  
+                 image came from a request that had post data  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to load  
+<td>aContentPolicyType</td>
+<td>[optional] the nsContentPolicyType to  
+                          use for this load. Defaults to  
+                          nsIContentPolicy::TYPE_IMAGE  
 </td>
 </tr>
 
@@ -135,26 +138,24 @@ make sure to Cancel() the resulting request before the observer goes away.
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>the channel to load the image from.  This must  
-                already be opened before ths method is called, and there  
-                must have been no OnDataAvailable calls for it yet.  
+<td>aObserver</td>
+<td>the observer (may be null)  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>the channel to load the image from.  This must  
-                already be opened before ths method is called, and there  
-                must have been no OnDataAvailable calls for it yet.  
+<td>cx</td>
+<td>some random data  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>the channel to load the image from.  This must  
-                already be opened before ths method is called, and there  
-                must have been no OnDataAvailable calls for it yet.  
+<td>aListener</td>
+<td>[out]  
+       A listener that you must send the channel's notifications and data to.  
+       Can be null, in which case imagelib has found a cached image and is  
+       not interested in the data. @aChannel will be canceled for you in  
+       this case.  
 </td>
 </tr>
 

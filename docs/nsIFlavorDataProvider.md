@@ -28,19 +28,19 @@ Retrieve the data from this data provider.
 
 <tr>
 <td></td>
-<td>aTransferable (in parameter) the transferable we're being called for.  
+<td>aFlavor (in parameter) the flavor of data to retrieve  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aTransferable (in parameter) the transferable we're being called for.  
+<td>aData the data. Some variant of class in nsISupportsPrimitives.idl  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aTransferable (in parameter) the transferable we're being called for.  
+<td>aDataLen the length of the data  
 </td>
 </tr>
 

@@ -145,8 +145,8 @@ notified when all batches begin/end.
 </tr>
 
 <tr>
-<td>aCallback</td>
-<td>       nsINavHistoryBatchCallback interface to call.  
+<td>aUserData</td>
+<td>       Opaque parameter passed to nsINavBookmarksBatchCallback  
 </td>
 </tr>
 

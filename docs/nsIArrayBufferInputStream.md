@@ -32,14 +32,14 @@ SetData - assign an ArrayBuffer to the input stream.
 </tr>
 
 <tr>
-<td>buffer</td>
-<td>- stream data  
+<td>byteOffset</td>
+<td>- stream data offset  
 </td>
 </tr>
 
 <tr>
-<td>buffer</td>
-<td>- stream data  
+<td>byteLen</td>
+<td>- stream data length  
 </td>
 </tr>
 

@@ -31,14 +31,14 @@ Called for each directory entry
 </tr>
 
 <tr>
-<td>request</td>
-<td>- the request  
+<td>ctxt</td>
+<td>- opaque parameter  
 </td>
 </tr>
 
 <tr>
-<td>request</td>
-<td>- the request  
+<td>index</td>
+<td>- new index to add  
 </td>
 </tr>
 
@@ -64,14 +64,14 @@ Called for each information line
 </tr>
 
 <tr>
-<td>request</td>
-<td>- the request  
+<td>ctxt</td>
+<td>- opaque parameter  
 </td>
 </tr>
 
 <tr>
-<td>request</td>
-<td>- the request  
+<td>info</td>
+<td>- new info to add  
 </td>
 </tr>
 

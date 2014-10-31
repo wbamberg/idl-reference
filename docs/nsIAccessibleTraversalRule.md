@@ -29,8 +29,8 @@ that would have no affect.
 </tr>
 
 <tr>
-<td>aRoles</td>
-<td>[out] an array of the roles to match.  
+<td>aCount</td>
+<td>[out] the length of the array.  
 </td>
 </tr>
 

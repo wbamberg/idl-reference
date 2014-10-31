@@ -48,26 +48,26 @@ surrounding chrome, window frame, title bar, and so on.
 </tr>
 
 <tr>
-<td>flags</td>
-<td>Combination of position, inner and outer size flags.  
+<td>x</td>
+<td>Left hand corner of the outer area.  
 </td>
 </tr>
 
 <tr>
-<td>flags</td>
-<td>Combination of position, inner and outer size flags.  
+<td>y</td>
+<td>Top corner of the outer area.  
 </td>
 </tr>
 
 <tr>
-<td>flags</td>
-<td>Combination of position, inner and outer size flags.  
+<td>cx</td>
+<td>Width of the inner or outer area.  
 </td>
 </tr>
 
 <tr>
-<td>flags</td>
-<td>Combination of position, inner and outer size flags.  
+<td>cy</td>
+<td>Height of the inner or outer area.  
 </td>
 </tr>
 
@@ -101,26 +101,26 @@ Gets the dimensions of the window. The caller may pass
 </tr>
 
 <tr>
-<td>flags</td>
-<td>Combination of position, inner and outer size flag .  
+<td>x</td>
+<td>Left hand corner of the outer area; or <CODE>nullptr</CODE>.  
 </td>
 </tr>
 
 <tr>
-<td>flags</td>
-<td>Combination of position, inner and outer size flag .  
+<td>y</td>
+<td>Top corner of the outer area; or <CODE>nullptr</CODE>.  
 </td>
 </tr>
 
 <tr>
-<td>flags</td>
-<td>Combination of position, inner and outer size flag .  
+<td>cx</td>
+<td>Width of the inner or outer area; or <CODE>nullptr</CODE>.  
 </td>
 </tr>
 
 <tr>
-<td>flags</td>
-<td>Combination of position, inner and outer size flag .  
+<td>cy</td>
+<td>Height of the inner or outer area; or <CODE>nullptr</CODE>.  
 </td>
 </tr>
 

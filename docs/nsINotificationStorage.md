@@ -39,44 +39,49 @@ Add/replace a notification to the persistence layer.
 </tr>
 
 <tr>
-<td>origin:</td>
-<td>the origin/app of this notification  
+<td>id:</td>
+<td>a uuid for this notification  
 </td>
 </tr>
 
 <tr>
-<td>origin:</td>
-<td>the origin/app of this notification  
+<td>title:</td>
+<td>the notification title  
 </td>
 </tr>
 
 <tr>
-<td>origin:</td>
-<td>the origin/app of this notification  
+<td>dir:</td>
+<td>the notification direction,  
+            possible values are "ltr", "rtl", "auto"  
 </td>
 </tr>
 
 <tr>
-<td>origin:</td>
-<td>the origin/app of this notification  
+<td>lang:</td>
+<td>the notification language  
 </td>
 </tr>
 
 <tr>
-<td>origin:</td>
-<td>the origin/app of this notification  
+<td>body:</td>
+<td>the notification body  
 </td>
 </tr>
 
 <tr>
-<td>origin:</td>
-<td>the origin/app of this notification  
+<td>tag:</td>
+<td>notification tag, will replace any existing  
+            notifications with same origin/tag pair  
 </td>
 </tr>
 
 <tr>
-<td>origin:</td>
-<td>the origin/app of this notification  
+<td>alertName:</td>
+<td>the alert identifier as used by system app.  
+                  Stored in the database to avoid re-computing  
+                  it. Built from origin and tag or id depending  
+                  whether there is a tag defined.  
 </td>
 </tr>
 
@@ -103,14 +108,15 @@ Retrieve a list of notifications.
 </tr>
 
 <tr>
-<td>origin:</td>
-<td>the origin/app for which to fetch notifications from  
+<td>tag:</td>
+<td>used to fetch only a specific tag  
 </td>
 </tr>
 
 <tr>
-<td>origin:</td>
-<td>the origin/app for which to fetch notifications from  
+<td>callback:</td>
+<td>nsINotificationStorageCallback, used for  
+                 returning notifications objects  
 </td>
 </tr>
 
@@ -135,8 +141,8 @@ Remove a notification from storage.
 </tr>
 
 <tr>
-<td>origin:</td>
-<td>the origin/app to delete the notification from  
+<td>id:</td>
+<td>the uuid for the notification to delete  
 </td>
 </tr>
 

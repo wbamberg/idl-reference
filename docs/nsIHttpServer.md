@@ -107,9 +107,9 @@ which match request.
 </tr>
 
 <tr>
-<td>path</td>
-<td>  the path which is to be mapped to the given file; must begin with "/" and  
-  be a valid URI path (i.e., no query string, hash reference, etc.)  
+<td>file</td>
+<td>  the file to serve for the given path, or null to remove any mapping that  
+  might exist; this file must exist for the lifetime of the server  
 </td>
 </tr>
 
@@ -147,11 +147,13 @@ Registers a custom path handler.
 </tr>
 
 <tr>
-<td>path</td>
-<td>  the path on the server (beginning with a "/") which is to be handled by  
-  handler; this path must not include a query string or hash component; it  
-  also should usually be canonicalized, since most browsers will do so  
-  before sending otherwise-matching requests  
+<td>handler</td>
+<td>  an object which will handle any requests for the given path, or null to  
+  remove any existing handler; if while the server is running the handler  
+  throws an exception while responding to a request, an HTTP 500 response  
+  will be returned  
+@throws NS_ERROR_INVALID_ARG  
+  if path does not begin with a "/"  
 </td>
 </tr>
 
@@ -189,11 +191,13 @@ Registers a custom prefix handler.
 </tr>
 
 <tr>
-<td>prefix</td>
-<td>  the path on the server (beginning and ending with "/") which is to be  
-  handled by handler; this path must not include a query string or hash  
-  component. All requests that start with this prefix will be directed to  
-  the given handler.  
+<td>handler</td>
+<td>  an object which will handle any requests for the given path, or null to  
+  remove any existing handler; if while the server is running the handler  
+  throws an exception while responding to a request, an HTTP 500 response  
+  will be returned  
+@throws NS_ERROR_INVALID_ARG  
+  if path does not begin with a "/" or does not end with a "/"  
 </td>
 </tr>
 
@@ -229,8 +233,17 @@ Registers a custom error page handler.
 </tr>
 
 <tr>
-<td>code</td>
-<td>  the error code which is to be handled by handler  
+<td>handler</td>
+<td>  an object which will handle any requests which generate the given status  
+  code, or null to remove any existing handler.  If the handler throws an  
+  exception during server operation, fallback is to the genericized error  
+  handler (the x00 version), then to 500, using a user-defined error  
+  handler if one exists or the server default handler otherwise.  Fallback  
+  will never occur from a user-provided handler that throws to the same  
+  handler as provided by the server, e.g. a throwing user 404 falls back to  
+  400, not a server-provided 404 that might not throw.  
+@note  
+  If the error handler handles HTTP 500 and throws, behavior is undefined.  
 </td>
 </tr>
 
@@ -268,10 +281,14 @@ dir.
 </tr>
 
 <tr>
-<td>path</td>
-<td>  the absolute path on the server against which requests will be served  
-  from dir (e.g., "/", "/foo/", etc.); must begin and end with a forward  
-  slash  
+<td>dir</td>
+<td>  the directory to be used to serve all requests for paths underneath path  
+  (except those further overridden by another, deeper path registered with  
+  another directory); if null, any current mapping for the given path is  
+  removed  
+@throws NS_ERROR_INVALID_ARG  
+  if dir is non-null and does not exist or is not a directory, or if path  
+  does not begin with and end with a forward slash  
 </td>
 </tr>
 

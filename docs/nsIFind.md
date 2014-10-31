@@ -33,20 +33,25 @@ responsible for performing the find and highlighting the text.
 </tr>
 
 <tr>
-<td>aPatText</td>
-<td>The text to search for.  
+<td>aSearchRange</td>
+<td>A Range specifying domain of search.  
 </td>
 </tr>
 
 <tr>
-<td>aPatText</td>
-<td>The text to search for.  
+<td>aStartPoint</td>
+<td>A Range specifying search start point.  
+                    If not collapsed, we'll start from  
+                    end (forward) or start (backward).  
 </td>
 </tr>
 
 <tr>
-<td>aPatText</td>
-<td>The text to search for.  
+<td>aEndPoint</td>
+<td>A Range specifying search end point.  
+                    If not collapsed, we'll end at  
+                    end (forward) or start (backward).  
+@retval             A range spanning the match that was found (or null).  
 </td>
 </tr>
 

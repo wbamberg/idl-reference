@@ -38,20 +38,27 @@ Called to handle the opening tag of an element.
 </tr>
 
 <tr>
-<td>aName</td>
-<td>the fully qualified tagname of the element  
+<td>aAtts</td>
+<td>the array of attribute names and values.  There are  
+       aAttsCount/2 names and aAttsCount/2 values, so the total number of  
+       elements in the array is aAttsCount.  The names and values  
+       alternate.  Thus, if we number attributes starting with 0,  
+       aAtts[2*k] is the name of the k-th attribute and aAtts[2*k+1] is  
+       the value of that attribute  Both explicitly specified attributes  
+       and attributes that are defined to have default values in a DTD are  
+       present in aAtts.  
 </td>
 </tr>
 
 <tr>
-<td>aName</td>
-<td>the fully qualified tagname of the element  
+<td>aAttsCount</td>
+<td>the number of elements in aAtts.  
 </td>
 </tr>
 
 <tr>
-<td>aName</td>
-<td>the fully qualified tagname of the element  
+<td>aLineNumber</td>
+<td>the line number of the start tag in the data stream.  
 </td>
 </tr>
 
@@ -113,8 +120,8 @@ Called to handle a CDATA section
 </tr>
 
 <tr>
-<td>aData</td>
-<td>the text in the CDATA section.  This is null-terminated.  
+<td>aLength</td>
+<td>the length of the aData string  
 </td>
 </tr>
 
@@ -144,8 +151,8 @@ called for the contents of CDATA sections.
 </tr>
 
 <tr>
-<td>aData</td>
-<td>the data to handle.  aData is NOT NULL-TERMINATED.  
+<td>aLength</td>
+<td>the length of the aData string  
 </td>
 </tr>
 
@@ -169,8 +176,8 @@ Called to handle a processing instruction
 </tr>
 
 <tr>
-<td>aTarget</td>
-<td>the PI target (e.g. xml-stylesheet)  
+<td>aData</td>
+<td>all the rest of the data in the PI  
 </td>
 </tr>
 
@@ -198,14 +205,16 @@ Handle the XML Declaration.
 </tr>
 
 <tr>
-<td>aVersion</td>
-<td>The version string, can be null if not specified.  
+<td>aEncoding</td>
+<td>The encoding string, can be null if not specified.  
 </td>
 </tr>
 
 <tr>
-<td>aVersion</td>
-<td>The version string, can be null if not specified.  
+<td>aStandalone</td>
+<td>-1, 0, or 1 indicating respectively that there was no  
+                   standalone parameter in the declaration, that it was  
+                   given as no, or that it was given as yes.  
 </td>
 </tr>
 
@@ -233,14 +242,14 @@ Ask the content sink if the expat driver should log an error to the console.
 </tr>
 
 <tr>
-<td>aErrorText</td>
-<td>Error message to pass to content sink.  
+<td>aSourceText</td>
+<td>Source text of the document we're parsing.  
 </td>
 </tr>
 
 <tr>
-<td>aErrorText</td>
-<td>Error message to pass to content sink.  
+<td>aError</td>
+<td>Script error object with line number & column number  
 </td>
 </tr>
 

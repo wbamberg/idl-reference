@@ -59,26 +59,31 @@ when history is disabled.
 </tr>
 
 <tr>
-<td>aPageURI</td>
-<td>       URI of the page whose favicon is being set.  
+<td>aFaviconURI</td>
+<td>       URI of the favicon to associate with the page.  
 </td>
 </tr>
 
 <tr>
-<td>aPageURI</td>
-<td>       URI of the page whose favicon is being set.  
+<td>aForceReload</td>
+<td>       If aForceReload is false, we try to reload the favicon only if we  
+       don't have it or it has expired from the cache.  Setting  
+       aForceReload to true causes us to reload the favicon even if we  
+       have a usable copy.  
 </td>
 </tr>
 
 <tr>
-<td>aPageURI</td>
-<td>       URI of the page whose favicon is being set.  
+<td>aFaviconLoadType</td>
+<td>       Set to FAVICON_LOAD_PRIVATE if the favicon is loaded from a private  
+       browsing window.  Set to FAVICON_LOAD_NON_PRIVATE otherwise.  
 </td>
 </tr>
 
 <tr>
-<td>aPageURI</td>
-<td>       URI of the page whose favicon is being set.  
+<td>aCallback</td>
+<td>       Once we're done setting and/or fetching the favicon, we invoke this  
+       callback.  
 </td>
 </tr>
 
@@ -137,26 +142,31 @@ size it won't be saved.
 </tr>
 
 <tr>
-<td>aFaviconURI</td>
-<td>       URI of the favicon whose data is being set.  
+<td>aData</td>
+<td>       Binary contents of the favicon to save  
 </td>
 </tr>
 
 <tr>
-<td>aFaviconURI</td>
-<td>       URI of the favicon whose data is being set.  
+<td>aDataLength</td>
+<td>       Length of binary data  
 </td>
 </tr>
 
 <tr>
-<td>aFaviconURI</td>
-<td>       URI of the favicon whose data is being set.  
+<td>aMimeType</td>
+<td>       MIME type of the data to store.  This is important so that we know  
+       what to report when the favicon is used.  You should always set this  
+       param unless you are clearing an icon.  
 </td>
 </tr>
 
 <tr>
-<td>aFaviconURI</td>
-<td>       URI of the favicon whose data is being set.  
+<td>aExpiration</td>
+<td>       Time in microseconds since the epoch when this favicon expires.  
+       Until this time, we won't try to load it again.  
+@throws NS_ERROR_FAILURE  
+        Thrown if the favicon is overbloated and won't be saved to the db.  
 </td>
 </tr>
 
@@ -192,14 +202,18 @@ containing a data URL.
 </tr>
 
 <tr>
-<td>aFaviconURI</td>
-<td>       URI of the favicon whose data is being set.  
+<td>aDataURL</td>
+<td>       string containing a data URL that represents the contents of  
+       the favicon to save  
 </td>
 </tr>
 
 <tr>
-<td>aFaviconURI</td>
-<td>       URI of the favicon whose data is being set.  
+<td>aExpiration</td>
+<td>       Time in microseconds since the epoch when this favicon expires.  
+       Until this time, we won't try to load it again.  
+@throws NS_ERROR_FAILURE  
+        Thrown if the favicon is overbloated and won't be saved to the db.  
 </td>
 </tr>
 
@@ -234,8 +248,10 @@ Retrieves the favicon URI associated to the given page, if any.
 </tr>
 
 <tr>
-<td>aPageURI</td>
-<td>       URI of the page whose favicon URI we're looking up.  
+<td>aCallback</td>
+<td>       This callback is always invoked to notify the result of the lookup.  
+       The aURI parameter will be the favicon URI, or null when no favicon  
+       is associated with the page or an error occurred while fetching it.  
 </td>
 </tr>
 
@@ -270,8 +286,14 @@ Retrieves the favicon URI and data associated to the given page, if any.
 </tr>
 
 <tr>
-<td>aPageURI</td>
-<td>       URI of the page whose favicon URI and data we're looking up.  
+<td>aCallback</td>
+<td>       This callback is always invoked to notify the result of the lookup.  The aURI  
+       parameter will be the favicon URI, or null when no favicon is  
+       associated with the page or an error occurred while fetching it.  If  
+       aURI is not null, the other parameters may contain the favicon data.  
+       However, if no favicon data is currently associated with the favicon  
+       URI, aDataLen will be 0, aData will be an empty array, and aMimeType  
+       will be an empty string.  
 </td>
 </tr>
 

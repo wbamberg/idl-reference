@@ -33,8 +33,8 @@ bit will be set if the error was due to a fatal error.
 </tr>
 
 <tr>
-<td>errorText</td>
-<td>       A short description of the error.  
+<td>lineNumber</td>
+<td>       The line on which the error occurred.  
 </td>
 </tr>
 
@@ -118,9 +118,9 @@ called. Also, this entry's parent field will be null.
 </tr>
 
 <tr>
-<td>entry</td>
-<td>       An object implementing nsIFeedEntry that represents the latest  
-       entry encountered.  
+<td>result</td>
+<td>       An object implementing nsIFeedResult representing the feed   
+       and its metadata.   
 </td>
 </tr>
 

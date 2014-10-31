@@ -59,20 +59,20 @@ method.
 </tr>
 
 <tr>
-<td>fragment</td>
-<td>the input markup  
+<td>isXML</td>
+<td>true if |fragment| is XML and false if HTML  
 </td>
 </tr>
 
 <tr>
-<td>fragment</td>
-<td>the input markup  
+<td>baseURI</td>
+<td>the base URL for this fragment  
 </td>
 </tr>
 
 <tr>
-<td>fragment</td>
-<td>the input markup  
+<td>element</td>
+<td>the context node for the fragment parsing algorithm  
 </td>
 </tr>
 

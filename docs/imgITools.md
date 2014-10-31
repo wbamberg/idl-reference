@@ -30,8 +30,8 @@ the resulting imgIContainer.
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       An input stream for an encoded image file.  
+<td>aMimeType</td>
+<td>       Type of image in the stream.  
 </td>
 </tr>
 
@@ -68,14 +68,16 @@ new code should use |decodeImage|.
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       An input stream for an encoded image file.  
+<td>aMimeType</td>
+<td>       Type of image in the stream.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       An input stream for an encoded image file.  
+<td>aContainer</td>
+<td>       An imgIContainer holding the decoded image will be returned via  
+       this parameter. It is an error to provide any initial value but  
+       |null|.  
 </td>
 </tr>
 
@@ -106,14 +108,14 @@ encoded to. We return an input stream for the encoded image data.
 </tr>
 
 <tr>
-<td>aContainer</td>
-<td>       An image container.  
+<td>aMimeType</td>
+<td>       Type of encoded image desired (eg "image/png").  
 </td>
 </tr>
 
 <tr>
-<td>aContainer</td>
-<td>       An image container.  
+<td>outputOptions</td>
+<td>       Encoder-specific output options.  
 </td>
 </tr>
 
@@ -148,20 +150,22 @@ The encoded image is scaled to the specified dimensions.
 </tr>
 
 <tr>
-<td>aContainer</td>
-<td>       An image container.  
+<td>aMimeType</td>
+<td>       Type of encoded image desired (eg "image/png").  
 </td>
 </tr>
 
 <tr>
-<td>aContainer</td>
-<td>       An image container.  
+<td>aWidth,</td>
+<td>aHeight  
+       The size (in pixels) desired for the resulting image. Specify 0 to  
+       use the given image's width or height. Values must be >= 0.  
 </td>
 </tr>
 
 <tr>
-<td>aContainer</td>
-<td>       An image container.  
+<td>outputOptions</td>
+<td>       Encoder-specific output options.  
 </td>
 </tr>
 
@@ -248,26 +252,29 @@ The given offset and size must not exceed the image bounds.
 </tr>
 
 <tr>
-<td>aContainer</td>
-<td>       An image container.  
+<td>aMimeType</td>
+<td>       Type of encoded image desired (eg "image/png").  
 </td>
 </tr>
 
 <tr>
-<td>aContainer</td>
-<td>       An image container.  
+<td>aOffsetX,</td>
+<td>aOffsetY  
+       The crop offset (in pixels). Values must be >= 0.  
 </td>
 </tr>
 
 <tr>
-<td>aContainer</td>
-<td>       An image container.  
+<td>aWidth,</td>
+<td>aHeight  
+       The size (in pixels) desired for the resulting image. Specify 0 to  
+       use the given image's width or height. Values must be >= 0.  
 </td>
 </tr>
 
 <tr>
-<td>aContainer</td>
-<td>       An image container.  
+<td>outputOptions</td>
+<td>       Encoder-specific output options.  
 </td>
 </tr>
 

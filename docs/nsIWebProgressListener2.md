@@ -49,32 +49,32 @@ NOTE: If any progress value is unknown, then its value is replaced with -1.
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aRequest</td>
+<td>       The nsIRequest that has new progress.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aCurSelfProgress</td>
+<td>       The current progress for aRequest.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aMaxSelfProgress</td>
+<td>       The maximum progress for aRequest.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aCurTotalProgress</td>
+<td>       The current progress for all requests associated with aWebProgress.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aMaxTotalProgress</td>
+<td>       The total progress for all requests associated with aWebProgress.  
 </td>
 </tr>
 
@@ -112,20 +112,23 @@ For example, via a <meta http-equiv="refresh"> or an HTTP Refresh: header
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aRefreshURI</td>
+<td>       The new URI that aWebProgress has requested redirecting to.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aMillis</td>
+<td>       The delay (in milliseconds) before refresh.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aSameURI</td>
+<td>       True if aWebProgress is requesting a refresh of the  
+       current URI.  
+       False if aWebProgress is requesting a redirection to  
+       a different URI.  
 </td>
 </tr>
 

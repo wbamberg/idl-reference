@@ -67,32 +67,35 @@ value should be 0.
 </tr>
 
 <tr>
-<td>targetFile</td>
-<td>the path that the shortcut should target  
+<td>workingDir</td>
+<td>the working dir that should be set for the shortcut  
 </td>
 </tr>
 
 <tr>
-<td>targetFile</td>
-<td>the path that the shortcut should target  
+<td>args</td>
+<td>the args string that should be set for the shortcut  
 </td>
 </tr>
 
 <tr>
-<td>targetFile</td>
-<td>the path that the shortcut should target  
+<td>description</td>
+<td>the description that should be set for the shortcut  
 </td>
 </tr>
 
 <tr>
-<td>targetFile</td>
-<td>the path that the shortcut should target  
+<td>iconFile</td>
+<td>the file containing an icon to be used for this  
+shortcut  
 </td>
 </tr>
 
 <tr>
-<td>targetFile</td>
-<td>the path that the shortcut should target  
+<td>iconIndex</td>
+<td>this value selects a specific icon from within  
+iconFile.  If iconFile contains only one icon, this  
+value should be 0.  
 </td>
 </tr>
 

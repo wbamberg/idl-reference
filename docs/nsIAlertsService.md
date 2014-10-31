@@ -62,74 +62,61 @@ method:
 </tr>
 
 <tr>
-<td>imageUrl</td>
-<td>A URL identifying the image to put in the alert.  
-                      The OS X implemenation limits the amount of time it  
-                      will wait for an icon to load to six seconds. After  
-                      that time the alert will show with no icon.  
+<td>title</td>
+<td>The title for the alert.  
 </td>
 </tr>
 
 <tr>
-<td>imageUrl</td>
-<td>A URL identifying the image to put in the alert.  
-                      The OS X implemenation limits the amount of time it  
-                      will wait for an icon to load to six seconds. After  
-                      that time the alert will show with no icon.  
+<td>text</td>
+<td>The contents of the alert.  
 </td>
 </tr>
 
 <tr>
-<td>imageUrl</td>
-<td>A URL identifying the image to put in the alert.  
-                      The OS X implemenation limits the amount of time it  
-                      will wait for an icon to load to six seconds. After  
-                      that time the alert will show with no icon.  
+<td>textClickable</td>
+<td>If true, causes the alert text to look like a link  
+                      and notifies the listener when user attempts to   
+                      click the alert text.  
 </td>
 </tr>
 
 <tr>
-<td>imageUrl</td>
-<td>A URL identifying the image to put in the alert.  
-                      The OS X implemenation limits the amount of time it  
-                      will wait for an icon to load to six seconds. After  
-                      that time the alert will show with no icon.  
+<td>cookie</td>
+<td>A blind cookie the alert will pass back to the   
+                      consumer during the alert listener callbacks.  
 </td>
 </tr>
 
 <tr>
-<td>imageUrl</td>
-<td>A URL identifying the image to put in the alert.  
-                      The OS X implemenation limits the amount of time it  
-                      will wait for an icon to load to six seconds. After  
-                      that time the alert will show with no icon.  
+<td>alertListener</td>
+<td>Used for callbacks. May be null if the caller   
+                      doesn't care about callbacks.  
 </td>
 </tr>
 
 <tr>
-<td>imageUrl</td>
-<td>A URL identifying the image to put in the alert.  
-                      The OS X implemenation limits the amount of time it  
-                      will wait for an icon to load to six seconds. After  
-                      that time the alert will show with no icon.  
+<td>name</td>
+<td>The name of the notification. This is currently only  
+                      used on Android and OS X. On Android the name is  
+                      hashed and used as a notification ID. Notifications  
+                      will replace previous notifications with the same name.  
 </td>
 </tr>
 
 <tr>
-<td>imageUrl</td>
-<td>A URL identifying the image to put in the alert.  
-                      The OS X implemenation limits the amount of time it  
-                      will wait for an icon to load to six seconds. After  
-                      that time the alert will show with no icon.  
+<td>dir</td>
+<td>Bidi override for the title. Valid values are  
+                      "auto", "ltr" or "rtl". Only available on supported  
+                      platforms.  
 </td>
 </tr>
 
 <tr>
-<td>imageUrl</td>
-<td>A URL identifying the image to put in the alert.  
-                      The OS X implemenation limits the amount of time it  
-                      will wait for an icon to load to six seconds. After  
-                      that time the alert will show with no icon.  
+<td>lang</td>
+<td>Language of title and text of the alert. Only available  
+                      on supported platforms.  
+@throws NS_ERROR_NOT_AVAILABLE If the notification cannot be displayed.  
 </td>
 </tr>
 

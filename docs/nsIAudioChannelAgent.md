@@ -48,14 +48,19 @@ Note: This function should only be called once.
 </tr>
 
 <tr>
-<td>window</td>
-<td>   The window  
+<td>channelType</td>
+<td>   Audio Channel Type listed as above  
 </td>
 </tr>
 
 <tr>
-<td>window</td>
-<td>   The window  
+<td>callback</td>
+<td>   1. Once the playable status changes, agent uses this callback function  
+      to notify Gecko component.  
+   2. The callback is allowed to be null. Ex: telephony doesn't need to  
+      listen change of the playable status.  
+   3. The AudioChannelAgent keeps a strong reference to the callback  
+      object.  
 </td>
 </tr>
 

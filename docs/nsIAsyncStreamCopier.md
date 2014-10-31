@@ -47,44 +47,48 @@ instead.
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       contains the data to be copied.  
+<td>aSink</td>
+<td>       specifies the destination for the data.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       contains the data to be copied.  
+<td>aTarget</td>
+<td>       specifies the thread on which the copy will occur.  a null value  
+       is permitted and will cause the copy to occur on an unspecified  
+       background thread.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       contains the data to be copied.  
+<td>aSourceBuffered</td>
+<td>       true if aSource implements ReadSegments.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       contains the data to be copied.  
+<td>aSinkBuffered</td>
+<td>       true if aSink implements WriteSegments.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       contains the data to be copied.  
+<td>aChunkSize</td>
+<td>       specifies how many bytes to read/write at a time.  this controls  
+       the granularity of the copying.  it should match the segment size  
+       of the "buffered" streams involved.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       contains the data to be copied.  
+<td>aCloseSource</td>
+<td>       true if aSource should be closed after copying.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>       contains the data to be copied.  
+<td>aCloseSink</td>
+<td>       true if aSink should be closed after copying.  
 </td>
 </tr>
 
@@ -112,8 +116,8 @@ when the copy completes.
 </tr>
 
 <tr>
-<td>aObserver</td>
-<td>       receives notifications.  
+<td>aObserverContext</td>
+<td>       passed to observer methods.  
 </td>
 </tr>
 

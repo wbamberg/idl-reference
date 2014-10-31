@@ -32,8 +32,11 @@ certain content type from now on.
 
 <tr>
 <td></td>
-<td>contentType  
-         The content type to automatically load with the specified handler  
+<td>handler  
+         A web service handler. If this is null, no automatic action is  
+         performed and the user must choose.  
+@throws  NS_ERROR_NOT_AVAILABLE if the service refered to by |handler| is   
+         not already registered.  
 </td>
 </tr>
 
@@ -86,8 +89,8 @@ Gets a web handler for the specified service URI
 
 <tr>
 <td></td>
-<td>contentType  
-         The content type of the service being located  
+<td>uri  
+         The service URI of the handler to locate.  
 </td>
 </tr>
 
@@ -136,8 +139,8 @@ Removes a registered protocol handler
 
 <tr>
 <td></td>
-<td>protocol  
-         The protocol scheme to remove a service handler for  
+<td>uri  
+         The uri of the service handler to remove  
 </td>
 </tr>
 
@@ -165,8 +168,8 @@ Removes a registered content handler
 
 <tr>
 <td></td>
-<td>contentType  
-         The content type to remove a service handler for  
+<td>uri  
+         The uri of the service handler to remove  
 </td>
 </tr>
 

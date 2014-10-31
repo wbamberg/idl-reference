@@ -96,23 +96,26 @@ event will be dispatched when the stream becomes readable or closed.
 </tr>
 
 <tr>
-<td>aCallback</td>
-<td>       This object is notified when the stream becomes ready.  This  
-       parameter may be null to clear an existing callback.  
+<td>aFlags</td>
+<td>       This parameter specifies optional flags passed in to configure  
+       the behavior of this method.  Pass zero to specify no flags.  
 </td>
 </tr>
 
 <tr>
-<td>aCallback</td>
-<td>       This object is notified when the stream becomes ready.  This  
-       parameter may be null to clear an existing callback.  
+<td>aRequestedCount</td>
+<td>       Wait until at least this many bytes can be read.  This is only  
+       a suggestion to the underlying stream; it may be ignored.  The  
+       caller may pass zero to indicate no preference.  
 </td>
 </tr>
 
 <tr>
-<td>aCallback</td>
-<td>       This object is notified when the stream becomes ready.  This  
-       parameter may be null to clear an existing callback.  
+<td>aEventTarget</td>
+<td>       Specify NULL to receive notification on ANY thread (possibly even  
+       recursively on the calling thread -- i.e., synchronously), or  
+       specify that the notification be delivered to a specific event  
+       target.  
 </td>
 </tr>
 

@@ -149,8 +149,8 @@ This is always synchronous
 </tr>
 
 <tr>
-<td>aURL</td>
-<td>The style sheet to be enabled or disabled  
+<td>aEnable</td>
+<td>true to enable, or false to disable the style sheet  
 </td>
 </tr>
 

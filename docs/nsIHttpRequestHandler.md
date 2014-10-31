@@ -53,8 +53,9 @@ are met).
 </tr>
 
 <tr>
-<td>request</td>
-<td>  data representing an HTTP request  
+<td>response</td>
+<td>  an initially-empty response which must be modified to reflect the data  
+  which should be sent as the response to the request described by metadata  
 </td>
 </tr>
 

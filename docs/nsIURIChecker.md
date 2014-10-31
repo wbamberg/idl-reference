@@ -76,12 +76,9 @@ Our interpretations of the nsIRequestObserver status codes:
 </tr>
 
 <tr>
-<td>aObserver</td>
-<td>       The object to notify when the link is verified.  We will  
-       call aObserver.OnStartRequest followed immediately by  
-       aObserver.OnStopRequest.  It is recommended that the caller use  
-       OnStopRequest to act on the link's status.  The underlying request  
-       will not be cancelled until after OnStopRequest has been called.  
+<td>aContext</td>
+<td>       A closure that will be passed back to the nsIRequestObserver  
+       methods.  
 </td>
 </tr>
 

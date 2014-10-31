@@ -33,9 +33,8 @@ broadcast.
 </tr>
 
 <tr>
-<td>aTopic</td>
-<td>The topic that the witness will broadcast using  
-              Services.obs.  
+<td>aString</td>
+<td>The string that the witness will broadcast.  
 </td>
 </tr>
 

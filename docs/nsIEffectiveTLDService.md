@@ -98,7 +98,8 @@ In the case of nested URIs, the innermost URI will be used.
 
 <tr>
 <td></td>
-<td>aURI               The URI to be analyzed  
+<td>aAdditionalParts   Number of domain name parts to be  
+                            returned in addition to the public suffix  
 </td>
 </tr>
 

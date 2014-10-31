@@ -54,32 +54,34 @@ return value will be ignored, and user prompting will be suppressed.
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel that received the challenge.  
+<td>aChallenge</td>
+<td>       the challenge from the WWW-Authenticate/Proxy-Authenticate  
+       server response header.  (possibly from the auth cache.)  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel that received the challenge.  
+<td>aProxyAuth</td>
+<td>       flag indicating whether or not aChallenge is from a proxy.  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel that received the challenge.  
+<td>aSessionState</td>
+<td>       see description below for generateCredentials.  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel that received the challenge.  
+<td>aContinuationState</td>
+<td>       see description below for generateCredentials.  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel that received the challenge.  
+<td>aInvalidateIdentity</td>
+<td>       return value indicating whether or not to prompt the user for a  
+       revised identity.  
 </td>
 </tr>
 
@@ -134,50 +136,59 @@ authenticator sets the REUSABLE_CHALLENGE flag.
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel requesting credentials  
+<td>aChallenge</td>
+<td>       the challenge from the WWW-Authenticate/Proxy-Authenticate  
+       server response header.  (possibly from the auth cache.)  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel requesting credentials  
+<td>aProxyAuth</td>
+<td>       flag indicating whether or not aChallenge is from a proxy.  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel requesting credentials  
+<td>aDomain</td>
+<td>       string containing the domain name (if appropriate)  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel requesting credentials  
+<td>aUser</td>
+<td>       string containing the user name  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel requesting credentials  
+<td>aPassword</td>
+<td>       string containing the password  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel requesting credentials  
+<td>aSessionState</td>
+<td>       state stored along side the user's identity in the auth cache  
+       for the lifetime of the browser session.  if a new auth cache  
+       entry is created for this challenge, then this parameter will  
+       be null.  on return, the result will be stored in the new auth  
+       cache entry.  this parameter is non-null when an auth cache entry  
+       is being reused.  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel requesting credentials  
+<td>aContinuationState</td>
+<td>       state held by the channel between consecutive calls to  
+       generateCredentials, assuming multiple calls are required  
+       to authenticate.  this state is held for at most the lifetime of  
+       the channel.  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       the http channel requesting credentials  
+<td>aFlags</td>
+<td>       authenticator may return one of the generate flags bellow.  
 </td>
 </tr>
 

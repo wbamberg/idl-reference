@@ -33,8 +33,9 @@ to actually open the new channel.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI of the hinted transaction  
+<td>aCallbacks</td>
+<td>any security callbacks for use with SSL for interfaces  
+       such as nsIBadCertListener. May be null.  
 </td>
 </tr>
 

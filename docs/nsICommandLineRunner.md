@@ -39,8 +39,8 @@ On Windows, the "native" character set is UTF-8, not the native codepage.
 </tr>
 
 <tr>
-<td>workingDir</td>
-<td>The working directory for resolving file and URI paths.  
+<td>state</td>
+<td>The nsICommandLine.state flag.  
 </td>
 </tr>
 

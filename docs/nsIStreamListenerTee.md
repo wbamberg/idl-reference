@@ -41,18 +41,18 @@ Initalize the tee.
 </tr>
 
 <tr>
-<td>listener</td>
-<td>   the original listener the tee will propagate onStartRequest,  
-   onDataAvailable and onStopRequest notifications to, exceptions from   
-   the listener will be propagated back to the channel  
+<td>sink</td>
+<td>   the stream the data coming from the channel will be written to,  
+   should be blocking  
 </td>
 </tr>
 
 <tr>
-<td>listener</td>
-<td>   the original listener the tee will propagate onStartRequest,  
-   onDataAvailable and onStopRequest notifications to, exceptions from   
-   the listener will be propagated back to the channel  
+<td>requestObserver</td>
+<td>   optional parameter, listener that gets only onStartRequest and  
+   onStopRequest notifications; exceptions threw within this optional  
+   observer are also propagated to the channel, but exceptions from  
+   the original listener (listener parameter) are privileged   
 </td>
 </tr>
 

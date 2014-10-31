@@ -31,8 +31,8 @@ overridden by each OS's implementation.
 </tr>
 
 <tr>
-<td>aURL</td>
-<td>The URL we are looking for.  
+<td>aFound</td>
+<td>Was an OS default handler for this URL found?  
 </td>
 </tr>
 

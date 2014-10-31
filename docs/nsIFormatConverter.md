@@ -54,7 +54,7 @@ Determines whether a conversion from one flavor to another is supported
 
 <tr>
 <td></td>
-<td>aFromFormatConverter flavor to convert from  
+<td>aFromFormatConverter flavor to convert to  
 </td>
 </tr>
 
@@ -81,7 +81,7 @@ Converts from one flavor to another.
 
 <tr>
 <td></td>
-<td>aFromFormatConverter flavor to convert from  
+<td>aFromFormatConverter flavor to convert to (destination own the memory)  
 </td>
 </tr>
 

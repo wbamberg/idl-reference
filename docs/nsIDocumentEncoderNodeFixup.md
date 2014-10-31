@@ -30,8 +30,10 @@ instead of the children of the original node.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>Node to fixup.  
+<td>[OUT]</td>
+<td>aSerializeCloneKids True if the document encoder should  
+apply recursive serialization to the children of the fixed up node  
+instead of the children of the original node.  
 </td>
 </tr>
 

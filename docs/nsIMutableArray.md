@@ -46,8 +46,12 @@ Append an element at the end of the array.
 </tr>
 
 <tr>
-<td>element</td>
-<td>The element to append.  
+<td>weak</td>
+<td>Whether or not to store the element using a weak  
+               reference.  
+@throws NS_ERROR_FAILURE when a weak reference is requested,  
+                         but the element does not support  
+                         nsIWeakReference.  
 </td>
 </tr>
 
@@ -112,8 +116,15 @@ position, up by one.
 </tr>
 
 <tr>
-<td>element</td>
-<td>The element to insert  
+<td>index</td>
+<td>The position in the array:  
+               If the position is lower than the current length  
+               of the array, the elements at that position and  
+               onwards are bumped one position up.  
+               If the position is equal to the current length  
+               of the array, the new element is appended.  
+               An index lower than 0 or higher than the current  
+               length of the array is invalid and will be ignored.  
 </td>
 </tr>
 
@@ -155,14 +166,23 @@ Replace the element at the given position.
 </tr>
 
 <tr>
-<td>element</td>
-<td>The new element to insert  
+<td>index</td>
+<td>The position in the array  
+               If the position is lower than the current length  
+               of the array, an existing element will be replaced.  
+               If the position is equal to the current length  
+               of the array, the new element is appended.  
+               If the position is higher than the current length  
+               of the array, empty elements are appended followed  
+               by the new element at the specified position.  
+               An index lower than 0 is invalid and will be ignored.  
 </td>
 </tr>
 
 <tr>
-<td>element</td>
-<td>The new element to insert  
+<td>weak</td>
+<td>Whether or not to store the new element using a weak  
+               reference.  
 </td>
 </tr>
 

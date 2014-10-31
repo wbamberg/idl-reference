@@ -58,8 +58,8 @@ Called right after aNode's title has changed.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>       a result node  
+<td>aNewTitle</td>
+<td>       the new title  
 </td>
 </tr>
 
@@ -86,8 +86,8 @@ Called right after aNode's uri property has changed.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>       a result node  
+<td>aNewURI</td>
+<td>       the new uri  
 </td>
 </tr>
 
@@ -139,14 +139,14 @@ have changed.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>       a uri result node  
+<td>aNewVisitDate</td>
+<td>       the new visit date  
 </td>
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>       a uri result node  
+<td>aNewAccessCount</td>
+<td>       the new access-count  
 </td>
 </tr>
 
@@ -195,8 +195,8 @@ Called right after the aNode's keyword property has changed.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>       a uri result node  
+<td>aNewKeyword</td>
+<td>       the new keyword  
 </td>
 </tr>
 
@@ -224,8 +224,8 @@ unset).
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>       a result node  
+<td>aAnnoName</td>
+<td>       the name of the annotation that changed  
 </td>
 </tr>
 
@@ -252,8 +252,8 @@ Called right after aNode's dateAdded property has changed.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>       a result node  
+<td>aNewValue</td>
+<td>       the new value of the dateAdded property  
 </td>
 </tr>
 
@@ -280,8 +280,8 @@ Called right after aNode's dateModified property has changed.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>       a result node  
+<td>aNewValue</td>
+<td>       the new value of the dateModified property  
 </td>
 </tr>
 
@@ -310,14 +310,14 @@ Called after a container changes state.
 </tr>
 
 <tr>
-<td>aContainerNode</td>
-<td>       The container that has changed state.  
+<td>aOldState</td>
+<td>       The state that aContainerNode has transitioned out of.  
 </td>
 </tr>
 
 <tr>
-<td>aContainerNode</td>
-<td>       The container that has changed state.  
+<td>aNewState</td>
+<td>       The state that aContainerNode has transitioned into.  
 </td>
 </tr>
 

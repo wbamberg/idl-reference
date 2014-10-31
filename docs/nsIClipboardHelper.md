@@ -30,14 +30,15 @@ copy string to given clipboard
 </tr>
 
 <tr>
-<td>aString,</td>
-<td>the string to copy to the clipboard  
+<td>aDoc,</td>
+<td>the source document for the string, if available  
 </td>
 </tr>
 
 <tr>
-<td>aString,</td>
-<td>the string to copy to the clipboard  
+<td>aClipboardID,</td>
+<td>the ID of the clipboard to copy to  
+       (eg. kSelectionClipboard -- see nsIClipboard.idl)  
 </td>
 </tr>
 
@@ -62,8 +63,8 @@ copy string to (default) clipboard
 </tr>
 
 <tr>
-<td>aString,</td>
-<td>the string to copy to the clipboard  
+<td>aDoc,</td>
+<td>the source document for the string, if available  
 </td>
 </tr>
 

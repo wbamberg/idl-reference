@@ -47,26 +47,26 @@ has finalized the resizing of an element
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>[IN] the element that was resized  
+<td>aOldWidth</td>
+<td>[IN] the width of the element before resizing  
 </td>
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>[IN] the element that was resized  
+<td>aOldHeight</td>
+<td>[IN] the height of the element before resizing  
 </td>
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>[IN] the element that was resized  
+<td>aNewWidth</td>
+<td>[IN] the width of the element after resizing  
 </td>
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>[IN] the element that was resized  
+<td>aNewHeight</td>
+<td>[IN] the height of the element after resizing  
 </td>
 </tr>
 

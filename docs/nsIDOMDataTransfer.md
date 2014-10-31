@@ -63,14 +63,15 @@ width and height.
 </tr>
 
 <tr>
-<td>image</td>
-<td>a node to use   
+<td>x</td>
+<td>the horizontal offset  
 </td>
 </tr>
 
 <tr>
-<td>image</td>
-<td>a node to use   
+<td>y</td>
+<td>the vertical offset  
+@throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
 </td>
 </tr>
 

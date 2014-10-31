@@ -27,8 +27,8 @@ Callback function used to report the result of updating upstream.
 </tr>
 
 <tr>
-<td>success</td>
-<td>       Boolean to indicate the operation is successful or not.  
+<td>externalIfname</td>
+<td>       The external interface name.  
 </td>
 </tr>
 

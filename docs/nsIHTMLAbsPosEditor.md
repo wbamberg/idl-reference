@@ -65,8 +65,9 @@ positions it, and puts it back in the normal flow.
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>[IN] the element  
+<td>aEnabled</td>
+<td>[IN] true to absolutely position the element,  
+                     false to put it back in the normal flow  
 </td>
 </tr>
 
@@ -92,14 +93,14 @@ element is already positioned or not and that's on purpose.
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>[IN] the element  
+<td>aX</td>
+<td>[IN] the x position in pixels.  
 </td>
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>[IN] the element  
+<td>aY</td>
+<td>[IN] the y position in pixels.  
 </td>
 </tr>
 
@@ -142,8 +143,8 @@ sets the z-index of an element.
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>[IN] the element  
+<td>aZorder</td>
+<td>[IN] the z-index  
 </td>
 </tr>
 
@@ -169,8 +170,9 @@ adds aChange to the z-index of an arbitrary element.
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>[IN] the element  
+<td>aChange</td>
+<td>[IN] relative change to apply to current z-index of  
+                     the element  
 </td>
 </tr>
 

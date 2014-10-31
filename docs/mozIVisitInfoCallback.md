@@ -31,8 +31,8 @@ Called when the given place could not be processed.
 </tr>
 
 <tr>
-<td>aResultCode</td>
-<td>       nsresult indicating the failure reason.  
+<td>aPlaceInfo</td>
+<td>       The information that was given to the caller for the place.  
 </td>
 </tr>
 

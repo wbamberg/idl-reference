@@ -25,8 +25,8 @@ Constructs a new channel for the about protocol module.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the uri of the new channel  
+<td>aLoadInfo</td>
+<td>the loadinfo of the new channel  
 </td>
 </tr>
 

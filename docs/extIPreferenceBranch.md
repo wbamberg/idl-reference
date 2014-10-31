@@ -81,8 +81,8 @@ the preference does not exist.
 
 <tr>
 <td></td>
-<td>aName  
-         The name of preference  
+<td>aDefaultValue  
+         The value to return if preference does not exist  
 </td>
 </tr>
 
@@ -110,8 +110,8 @@ Sets the value of a storage item with the given name.
 
 <tr>
 <td></td>
-<td>aName  
-         The name of an item  
+<td>aValue  
+         The value to assign to the item  
 </td>
 </tr>
 

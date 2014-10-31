@@ -39,8 +39,8 @@ is focused and editable, the caret will blink there.
 </tr>
 
 <tr>
-<td>parentNode</td>
-<td>The given dom node where the selection will be set  
+<td>offset</td>
+<td>Where in given dom node to place the selection (the offset into the given node)  
 </td>
 </tr>
 
@@ -68,8 +68,8 @@ be from the anchorNode to the new focusNode, regardless of direction.
 </tr>
 
 <tr>
-<td>parentNode</td>
-<td>The node where the selection will be extended to  
+<td>offset</td>
+<td>Where in node to place the offset in the new selection end  
 </td>
 </tr>
 
@@ -178,24 +178,15 @@ or granularity has an unrecognized value.
 </tr>
 
 <tr>
-<td>alter</td>
-<td>can be one of { "move", "extend" }  
-  - "move" collapses the selection to the end of the selection and  
-     applies the movement direction/granularity to the collapsed  
-     selection.  
-  - "extend" leaves the start of the selection unchanged, and applies  
-     movement direction/granularity to the end of the selection.  
+<td>direction</td>
+<td>can be one of { "forward", "backward", "left", "right" }  
 </td>
 </tr>
 
 <tr>
-<td>alter</td>
-<td>can be one of { "move", "extend" }  
-  - "move" collapses the selection to the end of the selection and  
-     applies the movement direction/granularity to the collapsed  
-     selection.  
-  - "extend" leaves the start of the selection unchanged, and applies  
-     movement direction/granularity to the end of the selection.  
+<td>granularity</td>
+<td>can be one of { "character", "word",  
+                                   "line", "lineboundary" }  
 </td>
 </tr>
 

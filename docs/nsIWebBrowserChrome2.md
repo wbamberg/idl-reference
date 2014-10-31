@@ -37,14 +37,17 @@ implementor of this method, should still implement SetStatus.
 </tr>
 
 <tr>
-<td>statusType</td>
-<td>       Indicates what is setting the text.  
+<td>status</td>
+<td>       Status string.  Null is an acceptable value meaning no status.  
 </td>
 </tr>
 
 <tr>
-<td>statusType</td>
-<td>       Indicates what is setting the text.  
+<td>contextNode</td>
+<td>       An object that provides context pertaining to the status type.  
+       If statusType is STATUS_LINK, then statusContext may be a DOM  
+       node corresponding to the source of the link.  This value can  
+       be null if there is no context.  
 </td>
 </tr>
 

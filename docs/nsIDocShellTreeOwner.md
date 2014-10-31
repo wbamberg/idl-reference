@@ -33,20 +33,22 @@ chrome shell).
 </tr>
 
 <tr>
-<td>aContentShell</td>
-<td>the shell being added.  
+<td>aPrimary</td>
+<td>whether the shell is primary.  
 </td>
 </tr>
 
 <tr>
-<td>aContentShell</td>
-<td>the shell being added.  
+<td>aTargetable</td>
+<td>whether the shell can be a target for named window  
+				targeting.  
 </td>
 </tr>
 
 <tr>
-<td>aContentShell</td>
-<td>the shell being added.  
+<td>aID</td>
+<td>the "id" of the shell.  What this actually means is  
+		undefined. Don't rely on this for anything.  
 </td>
 </tr>
 

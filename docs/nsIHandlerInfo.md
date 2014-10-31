@@ -45,8 +45,10 @@ call. Other exceptions may be thrown.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI to launch this application with  
+<td>aWindowContext</td>
+<td>       The window to parent the dialog against, and, if a web handler  
+       is chosen, it is loaded in this window as well.  See   
+       nsIHandlerApp.launchWithURI for more details.  
 </td>
 </tr>
 

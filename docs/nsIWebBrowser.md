@@ -55,8 +55,9 @@ the IID is that of the interface.
 </tr>
 
 <tr>
-<td>aListener</td>
-<td>The listener to be added.  
+<td>aIID</td>
+<td>The IID of the interface that will be called  
+                 on the listener as appropriate.  
 </td>
 </tr>
 
@@ -89,8 +90,9 @@ Removes a previously registered listener.
 </tr>
 
 <tr>
-<td>aListener</td>
-<td>The listener to be removed.  
+<td>aIID</td>
+<td>The IID of the interface on the listener that will  
+                 no longer be called.  
 </td>
 </tr>
 

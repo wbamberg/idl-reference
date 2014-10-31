@@ -36,22 +36,25 @@ Shows the Download Manager's UI to the user.
 
 <tr>
 <td>[optional]</td>
-<td>aWindowContext  
-       The parent window context to show the UI.  
+<td>aDownload  
+       The download to be preselected upon opening.  
 </td>
 </tr>
 
 <tr>
 <td>[optional]</td>
-<td>aWindowContext  
-       The parent window context to show the UI.  
+<td>aReason  
+       The reason to show the download manager's UI.  This defaults to  
+       REASON_USER_INTERACTED, and should be one of the previously listed  
+       constants.  
 </td>
 </tr>
 
 <tr>
 <td>[optional]</td>
-<td>aWindowContext  
-       The parent window context to show the UI.  
+<td>aUsePrivateUI  
+       Pass true as this argument to hint to the implementation that it  
+       should only display private downloads in the UI, if possible.  
 </td>
 </tr>
 

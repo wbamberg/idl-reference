@@ -44,16 +44,14 @@ interface aIID.  This may result in the instance being created.
 </tr>
 
 <tr>
-<td>aClass</td>
-<td>or aContractID : aClass or aContractID of object   
-                               instance requested  
+<td>aIID</td>
+<td>: IID of interface requested  
 </td>
 </tr>
 
 <tr>
-<td>aClass</td>
-<td>or aContractID : aClass or aContractID of object   
-                               instance requested  
+<td>result</td>
+<td>: resulting service   
 </td>
 </tr>
 
@@ -88,9 +86,11 @@ been created, or throw otherwise
 </tr>
 
 <tr>
-<td>aClass</td>
-<td>or aContractID : aClass or aContractID of object   
-                               instance requested  
+<td>aIID</td>
+<td>: IID of interface requested  
+@throws NS_ERROR_SERVICE_NOT_AVAILABLE if the service hasn't been   
+        instantiated  
+@throws NS_NOINTERFACE if the IID given isn't supported by the object  
 </td>
 </tr>
 

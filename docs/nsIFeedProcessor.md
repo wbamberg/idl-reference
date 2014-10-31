@@ -29,8 +29,8 @@ Parse a feed from an nsIInputStream.
 </tr>
 
 <tr>
-<td>stream</td>
-<td>The input stream.  
+<td>uri</td>
+<td>The base URI.  
 </td>
 </tr>
 
@@ -55,8 +55,8 @@ Parse a feed from a string.
 </tr>
 
 <tr>
-<td>str</td>
-<td>The string to parse.  
+<td>uri</td>
+<td>The base URI.  
 </td>
 </tr>
 
@@ -86,9 +86,8 @@ parse.
 </tr>
 
 <tr>
-<td>requestObserver</td>
-<td>The observer to notify on start/stop. This  
-                       argument can be null.  
+<td>uri</td>
+<td>The base URI.  
 </td>
 </tr>
 

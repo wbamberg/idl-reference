@@ -45,26 +45,37 @@ Initialize a standard URL.
 </tr>
 
 <tr>
-<td>aUrlType</td>
-<td>- one of the URLTYPE_ flags listed above.  
+<td>aDefaultPort</td>
+<td>- if the port parsed from the URL string matches  
+                        this port, then the port will be removed from the  
+                        canonical form of the URL.  
 </td>
 </tr>
 
 <tr>
-<td>aUrlType</td>
-<td>- one of the URLTYPE_ flags listed above.  
+<td>aSpec</td>
+<td>- URL string.  
 </td>
 </tr>
 
 <tr>
-<td>aUrlType</td>
-<td>- one of the URLTYPE_ flags listed above.  
+<td>aOriginCharset</td>
+<td>- the charset from which this URI string  
+                        originated.  this corresponds to the charset  
+                        that should be used when communicating this  
+                        URI to an origin server, for example.  if  
+                        null, then provide aBaseURI implements this  
+                        interface, the origin charset of aBaseURI will  
+                        be assumed, otherwise defaulting to UTF-8 (i.e.,  
+                        no charset transformation from aSpec).  
 </td>
 </tr>
 
 <tr>
-<td>aUrlType</td>
-<td>- one of the URLTYPE_ flags listed above.  
+<td>aBaseURI</td>
+<td>- if null, aSpec must specify an absolute URI.  
+                        otherwise, aSpec will be resolved relative  
+                        to aBaseURI.  
 </td>
 </tr>
 

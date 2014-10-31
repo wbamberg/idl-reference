@@ -28,8 +28,8 @@ may be called more than once if the target file is renamed while saving.
 </tr>
 
 <tr>
-<td>aSaver</td>
-<td>       Reference to the object that raised the notification.  
+<td>aTarget</td>
+<td>       Name of the file that is being written.  
 </td>
 </tr>
 
@@ -59,8 +59,9 @@ it might have been already deleted.
 </tr>
 
 <tr>
-<td>aSaver</td>
-<td>       Reference to the object that raised the notification.  
+<td>aStatus</td>
+<td>       Result code that determines whether the operation succeeded or  
+       failed, as well as the failure reason.  
 </td>
 </tr>
 

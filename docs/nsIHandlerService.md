@@ -71,8 +71,8 @@ console with XPCOM exception errors.
 </tr>
 
 <tr>
-<td>aHandlerInfo</td>
-<td>the handler info object  
+<td>aOverrideType</td>
+<td>a type to use instead of aHandlerInfo::type  
 </td>
 </tr>
 

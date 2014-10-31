@@ -27,8 +27,12 @@ will be cleared.
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>the window to add  
+<td>aChrome</td>
+<td>the corresponding chrome window. The DOM window  
+and chrome will be mapped together, and the corresponding  
+chrome can be retrieved using the (not private)  
+method getChromeForWindow. If null, any extant mapping  
+will be cleared.  
 </td>
 </tr>
 
@@ -96,66 +100,56 @@ method will effectively act as if aParent were null.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aURL</td>
+<td>url to which to open the new window. Must already be  
+escaped, if applicable. can be null.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aName</td>
+<td>window name from JS window.open. can be null.  If a window  
+with this name already exists, the openWindow call may just load  
+aUrl in it (if aUrl is not null) and return it.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aFeatures</td>
+<td>window features from JS window.open. can be null.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aCalledFromScript</td>
+<td>true if we were called from script.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aDialog</td>
+<td>use dialog defaults (see nsIDOMWindow::openDialog)  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aNavigate</td>
+<td>true if we should navigate the new window to the  
+specified URL.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aOpeningTab</td>
+<td>the nsITabParent that is opening the new window. The  
+nsITabParent is a remote tab belonging to aParent. Can  
+be nullptr if this window is not being opened from a tab.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aArgs</td>
+<td>Window argument  
 </td>
 </tr>
 
@@ -193,14 +187,17 @@ for example.
 </tr>
 
 <tr>
-<td>aName</td>
-<td>the name of the window.  Must not be null.  
+<td>aRequestor</td>
+<td>the tree item immediately making the request.  
+       We should make sure to not recurse down into its findItemWithName  
+       method.  
 </td>
 </tr>
 
 <tr>
-<td>aName</td>
-<td>the name of the window.  Must not be null.  
+<td>aOriginalRequestor</td>
+<td>the original treeitem that made the request.  
+       Used for security checks.  
 </td>
 </tr>
 

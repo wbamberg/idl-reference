@@ -109,8 +109,8 @@ login's timesUsed property will be incremented by the item's value.
 </tr>
 
 <tr>
-<td>oldLogin</td>
-<td>       The login to be modified.  
+<td>newLoginData</td>
+<td>       The new login values (either a nsILoginInfo or nsIProperyBag)  
 </td>
 </tr>
 
@@ -154,9 +154,8 @@ NOTE: This can be called from JS as:
 </tr>
 
 <tr>
-<td>count</td>
-<td>       The number of elements in the array. JS callers can simply use  
-       the array's .length property and omit this param.  
+<td>logins</td>
+<td>       An array of nsILoginInfo objects.  
 </td>
 </tr>
 
@@ -196,18 +195,16 @@ NOTE: This can be called from JS as:
 </tr>
 
 <tr>
-<td>count</td>
-<td>       The number of elements in the array. JS callers can simply use  
-       the array's .length property, and supply an dummy object for  
-       this out param. For example: |searchLogins({}, matchData)|  
+<td>matchData</td>
+<td>       The data used to search. This does not follow the same  
+       requirements as findLogins for those fields. Wildcard matches are  
+       simply not specified.  
 </td>
 </tr>
 
 <tr>
-<td>count</td>
-<td>       The number of elements in the array. JS callers can simply use  
-       the array's .length property, and supply an dummy object for  
-       this out param. For example: |searchLogins({}, matchData)|  
+<td>logins</td>
+<td>       An array of nsILoginInfo objects.  
 </td>
 </tr>
 
@@ -240,9 +237,9 @@ NOTE: This can be called from JS as:
 </tr>
 
 <tr>
-<td>count</td>
-<td>       The number of elements in the array. JS callers can simply use  
-       the array's .length property and omit this param.  
+<td>hostnames</td>
+<td>       An array of hostname strings, in origin URL format without a  
+       pathname. For example: "https://www.site.com".  
 </td>
 </tr>
 
@@ -296,9 +293,9 @@ that host. Existing logins are not affected.
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>       The hostname to set. This argument should be in the origin  
-       URL format, without a pathname. For example: "http://foo.com".  
+<td>isEnabled</td>
+<td>       Specify if saving logins should be enabled (true) or  
+       disabled (false)  
 </td>
 </tr>
 
@@ -345,34 +342,31 @@ NOTE: This can be called from JS as:
 </tr>
 
 <tr>
-<td>count</td>
-<td>       The number of elements in the array. JS callers can simply use  
-       the array's .length property, and supply an dummy object for  
-       this out param. For example: |findLogins({}, hostname, ...)|  
+<td>aHostname</td>
+<td>       The hostname to restrict searches to, in URL format. For  
+       example: "http://www.site.com".  
 </td>
 </tr>
 
 <tr>
-<td>count</td>
-<td>       The number of elements in the array. JS callers can simply use  
-       the array's .length property, and supply an dummy object for  
-       this out param. For example: |findLogins({}, hostname, ...)|  
+<td>aActionURL</td>
+<td>       For form logins, this argument should be the URL to which the  
+       form will be submitted. For protocol logins, specify null.  
 </td>
 </tr>
 
 <tr>
-<td>count</td>
-<td>       The number of elements in the array. JS callers can simply use  
-       the array's .length property, and supply an dummy object for  
-       this out param. For example: |findLogins({}, hostname, ...)|  
+<td>aHttpRealm</td>
+<td>       For protocol logins, this argument should be the HTTP Realm  
+       for which the login applies. This is obtained from the  
+       WWW-Authenticate header. See RFC2617. For form logins,  
+       specify null.  
 </td>
 </tr>
 
 <tr>
-<td>count</td>
-<td>       The number of elements in the array. JS callers can simply use  
-       the array's .length property, and supply an dummy object for  
-       this out param. For example: |findLogins({}, hostname, ...)|  
+<td>logins</td>
+<td>       An array of nsILoginInfo objects.  
 </td>
 </tr>
 
@@ -413,18 +407,18 @@ password to decrypt the logins.
 </tr>
 
 <tr>
-<td>aHostname</td>
-<td>       The hostname to restrict searches to. Specify an empty string  
-       to match all hosts. A null value will not match any logins, and  
-       will thus always return a count of 0.  
+<td>aActionURL</td>
+<td>       The URL to which a form login will be submitted. To match any  
+       form login, specify an empty string. To not match any form  
+       login, specify null.  
 </td>
 </tr>
 
 <tr>
-<td>aHostname</td>
-<td>       The hostname to restrict searches to. Specify an empty string  
-       to match all hosts. A null value will not match any logins, and  
-       will thus always return a count of 0.  
+<td>aHttpRealm</td>
+<td>       The HTTP Realm for which the login applies. To match logins for  
+       any realm, specify an empty string. To not match logins for any  
+       realm, specify null.  
 </td>
 </tr>
 

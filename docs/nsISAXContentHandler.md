@@ -111,26 +111,26 @@ optional).
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the Namespace URI, or the empty string if the  
-       element has no Namespace URI or if Namespace  
-       processing is not being performed  
+<td>localName</td>
+<td>the local name (without prefix), or the  
+       empty string if Namespace processing is not being  
+       performed  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the Namespace URI, or the empty string if the  
-       element has no Namespace URI or if Namespace  
-       processing is not being performed  
+<td>qName</td>
+<td>the qualified name (with prefix), or the  
+       empty string if qualified names are not available  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the Namespace URI, or the empty string if the  
-       element has no Namespace URI or if Namespace  
-       processing is not being performed  
+<td>atts</td>
+<td>the attributes attached to the element.  If  
+       there are no attributes, it shall be an empty  
+       SAXAttributes object.  The value of this object after  
+       startElement returns is undefined  
 </td>
 </tr>
 
@@ -170,18 +170,17 @@ For information on the names, see startElement.
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the Namespace URI, or the empty string if the  
-       element has no Namespace URI or if Namespace  
-       processing is not being performed  
+<td>localName</td>
+<td>the local name (without prefix), or the  
+       empty string if Namespace processing is not being  
+       performed  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the Namespace URI, or the empty string if the  
-       element has no Namespace URI or if Namespace  
-       processing is not being performed  
+<td>qName</td>
+<td>the qualified XML name (with prefix), or the  
+       empty string if qualified names are not available  
 </td>
 </tr>
 
@@ -246,8 +245,10 @@ this method.
 </tr>
 
 <tr>
-<td>target</td>
-<td>the processing instruction target  
+<td>data</td>
+<td>the processing instruction data, or null if  
+       none was supplied.  The data does not include any  
+       whitespace separating it from the target  
 </td>
 </tr>
 
@@ -328,10 +329,8 @@ There should never be start/endPrefixMapping events for the
 </tr>
 
 <tr>
-<td>prefix</td>
-<td>The Namespace prefix being declared. An empty  
-              string is used for the default element namespace,  
-              which has no prefix.  
+<td>uri</td>
+<td>The Namespace URI the prefix is mapped to.  
 </td>
 </tr>
 

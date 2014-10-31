@@ -39,9 +39,9 @@ appears to have been successful.
 </tr>
 
 <tr>
-<td>appName</td>
-<td>(Required) Sets a window property identifying the  
-                   application.  
+<td>profileName</td>
+<td>(May be null) Sets a window property identifying the  
+                   profile name.  
 </td>
 </tr>
 

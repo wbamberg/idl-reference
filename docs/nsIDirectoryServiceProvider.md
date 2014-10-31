@@ -40,8 +40,12 @@ a prop or on every request if the prop is not persistent.
 </tr>
 
 <tr>
-<td>prop</td>
-<td>The symbolic name of the file.  
+<td>persistent</td>
+<td>TRUE - The returned file will be cached by Directory  
+                    Service. Subsequent requests for this prop will  
+                    bypass the provider and use the cache.  
+                    FALSE - The provider will be asked for this prop  
+                    each time it is requested.  
 </td>
 </tr>
 

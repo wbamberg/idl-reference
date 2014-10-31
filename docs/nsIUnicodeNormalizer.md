@@ -32,8 +32,8 @@ Reference: Unicode Standard, TR15, Unicode Normalization Forms
 </tr>
 
 <tr>
-<td>aSrc</td>
-<td>[IN]  nsAString which contains an input UTF-16 string.  
+<td>aDest</td>
+<td>[OUT] A pointer to an output buffer provided by a callee.  
 </td>
 </tr>
 

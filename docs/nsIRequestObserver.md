@@ -31,8 +31,8 @@ causing the request to be canceled.
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>request being observed  
+<td>aContext</td>
+<td>user defined context  
 </td>
 </tr>
 
@@ -61,14 +61,14 @@ An exception thrown from onStopRequest is generally ignored.
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>request being observed  
+<td>aContext</td>
+<td>user defined context  
 </td>
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>request being observed  
+<td>aStatusCode</td>
+<td>reason for stopping (NS_OK if completed successfully)  
 </td>
 </tr>
 

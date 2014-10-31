@@ -46,29 +46,20 @@ directly from the desired nsICookie object.
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>The host or domain for which the cookie was set. @see  
-             nsICookieManager2::add for a description of acceptable host  
-             strings. If the target cookie is a domain cookie, a leading  
-             dot must be present.  
+<td>aName</td>
+<td>The name specified in the cookie  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>The host or domain for which the cookie was set. @see  
-             nsICookieManager2::add for a description of acceptable host  
-             strings. If the target cookie is a domain cookie, a leading  
-             dot must be present.  
+<td>aPath</td>
+<td>The path for which the cookie was set  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>The host or domain for which the cookie was set. @see  
-             nsICookieManager2::add for a description of acceptable host  
-             strings. If the target cookie is a domain cookie, a leading  
-             dot must be present.  
+<td>aBlocked</td>
+<td>Indicates if cookies from this host should be permanently blocked  
 </td>
 </tr>
 

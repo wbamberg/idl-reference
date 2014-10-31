@@ -38,8 +38,8 @@ Removes a list of pages from global history.
 </tr>
 
 <tr>
-<td>aURIs</td>
-<td>       Array of URIs to be removed.  
+<td>aLength</td>
+<td>       Length of the array.  
 </td>
 </tr>
 
@@ -78,12 +78,10 @@ Removes all global history information about pages for a given host.
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>       Hostname to be removed.  
-       An empty host name means local files and anything else with no  
-       hostname.  You can also pass in the localized "(local files)"  
-       title given to you from a history query to remove all  
-       history information from local files.  
+<td>aEntireDomain</td>
+<td>       If true, will also delete pages from sub hosts (so if  
+       passed in "microsoft.com" will delete "www.microsoft.com",  
+       "msdn.microsoft.com", etc.).  
 </td>
 </tr>
 
@@ -113,8 +111,8 @@ Limits are included: aBeginTime <= timeframe <= aEndTime
 </tr>
 
 <tr>
-<td>aBeginTime</td>
-<td>       Microseconds from epoch, representing the initial time.  
+<td>aEndTime</td>
+<td>       Microseconds from epoch, representing the final time.  
 </td>
 </tr>
 
@@ -145,8 +143,8 @@ Any pages that becomes unvisited as a result will also be deleted.
 </tr>
 
 <tr>
-<td>aBeginTime</td>
-<td>       Microseconds from epoch, representing the initial time.  
+<td>aEndTime</td>
+<td>       Microseconds from epoch, representing the final time.  
 </td>
 </tr>
 

@@ -31,9 +31,8 @@ Initialize the simple stream listener.
 </tr>
 
 <tr>
-<td>aSink</td>
-<td>data will be read from the channel to this output stream.  
-             Must implement writeFrom.  
+<td>aObserver</td>
+<td>optional stream observer (can be NULL)  
 </td>
 </tr>
 

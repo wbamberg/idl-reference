@@ -56,20 +56,23 @@ accidentally running "blah.exe" before it is a complete file.
 </tr>
 
 <tr>
-<td>uri</td>
-<td>       The URI to fetch.  
+<td>destination</td>
+<td>       The location where the file is to be stored.  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>       The URI to fetch.  
+<td>chunkSize</td>
+<td>       The size of the chunks to fetch.  A non-positive value results in  
+       the default chunk size being used.  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>       The URI to fetch.  
+<td>intervalInSeconds</td>
+<td>       The amount of time to wait between fetching chunks.  Pass a  
+       negative to use the default interval, or 0 to fetch the remaining  
+       part of the file in one chunk.  
 </td>
 </tr>
 
@@ -112,16 +115,8 @@ Start the incremental download.
 </tr>
 
 <tr>
-<td>observer</td>
-<td>       An observer to be notified of various events.  OnStartRequest is  
-       called when finalURI and totalSize have been determined or when an  
-       error occurs.  OnStopRequest is called when the file is completely  
-       downloaded or when an error occurs.  If this object implements  
-       nsIProgressEventSink, then its OnProgress method will be called as  
-       data is written to the destination file.  If this object implements  
-       nsIInterfaceRequestor, then it will be assigned as the underlying  
-       channel's notification callbacks, which allows it to provide a  
-       nsIAuthPrompt implementation if needed by the channel, for example.  
+<td>ctxt</td>
+<td>       User defined object forwarded to the observer's methods.  
 </td>
 </tr>
 

@@ -33,8 +33,8 @@ or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.
 </tr>
 
 <tr>
-<td>ips</td>
-<td>       The list of ip addresses retrieved.  
+<td>prefixLengths</td>
+<td>       The list of prefix lengths retrieved.  
 </td>
 </tr>
 

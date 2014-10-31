@@ -51,8 +51,8 @@ response via the provided stream.
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>the controlling interface for a channel that has been intercepted  
+<td>aStream</td>
+<td>a stream directly into the channel's synthesized response body  
 </td>
 </tr>
 

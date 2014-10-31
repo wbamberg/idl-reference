@@ -44,29 +44,21 @@ removed, each  by a call to `removeBlocker`.
 </tr>
 
 <tr>
-<td>aBlocker</td>
-<td>The blocker to add. Once  
-nsIAsyncShutdownBarrier::wait() has been called, it will not  
-call its `aOnReady` callback until all blockers have been  
-removed, each  by a call to `removeBlocker`.  
+<td>aFileName</td>
+<td>The filename of the callsite, as given by `__FILE__`.  
 </td>
 </tr>
 
 <tr>
-<td>aBlocker</td>
-<td>The blocker to add. Once  
-nsIAsyncShutdownBarrier::wait() has been called, it will not  
-call its `aOnReady` callback until all blockers have been  
-removed, each  by a call to `removeBlocker`.  
+<td>aLineNumber</td>
+<td>The linenumber of the callsite, as given by `__LINE__`.  
 </td>
 </tr>
 
 <tr>
-<td>aBlocker</td>
-<td>The blocker to add. Once  
-nsIAsyncShutdownBarrier::wait() has been called, it will not  
-call its `aOnReady` callback until all blockers have been  
-removed, each  by a call to `removeBlocker`.  
+<td>aStack</td>
+<td>Information on the stack that lead to this call. Generally  
+empty when called from C++.  
 </td>
 </tr>
 

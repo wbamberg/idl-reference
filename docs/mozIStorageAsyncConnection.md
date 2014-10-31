@@ -91,8 +91,12 @@ Clone a database and make the clone read only if needed.
 </tr>
 
 <tr>
-<td>aReadOnly</td>
-<td>       If true, the returned database should be put into read-only mode.  
+<td>aCallback</td>
+<td>       A callback that will be notified when the operation is complete,  
+       with the following arguments:  
+       - status: the status of the operation  
+       - value: in case of success, an intance of  
+            mozIStorageAsyncConnection cloned from this one.  
 </td>
 </tr>
 
@@ -161,16 +165,16 @@ reset does not need to be called.
 </tr>
 
 <tr>
-<td>aStatements</td>
-<td>       The array of statements to execute asynchronously, in the order they  
-       are given in the array.  
+<td>aNumStatements</td>
+<td>       The number of statements in aStatements.  
 </td>
 </tr>
 
 <tr>
-<td>aStatements</td>
-<td>       The array of statements to execute asynchronously, in the order they  
-       are given in the array.  
+<td>aCallback</td>
+<td>[optional]  
+       The callback object that will be notified of progress, errors, and  
+       completion.  
 </td>
 </tr>
 
@@ -199,8 +203,10 @@ Execute asynchronously an SQL expression, expecting no arguments.
 </tr>
 
 <tr>
-<td>aSQLStatement</td>
-<td>       The SQL statement to execute  
+<td>aCallback</td>
+<td>[optional]  
+       The callback object that will be notified of progress, errors, and  
+       completion.  
 </td>
 </tr>
 
@@ -233,14 +239,16 @@ thread.
 </tr>
 
 <tr>
-<td>aFunctionName</td>
-<td>       The name of function to create, as seen in SQL.  
+<td>aNumArguments</td>
+<td>       The number of arguments the function takes. Pass -1 for  
+       variable-argument functions.  
 </td>
 </tr>
 
 <tr>
-<td>aFunctionName</td>
-<td>       The name of function to create, as seen in SQL.  
+<td>aFunction</td>
+<td>       The instance of mozIStorageFunction, which implements the function  
+       in question.  
 </td>
 </tr>
 
@@ -273,14 +281,16 @@ be called on one thread.
 </tr>
 
 <tr>
-<td>aFunctionName</td>
-<td>       The name of aggregate function to create, as seen in SQL.  
+<td>aNumArguments</td>
+<td>       The number of arguments the function takes. Pass -1 for  
+       variable-argument functions.  
 </td>
 </tr>
 
 <tr>
-<td>aFunctionName</td>
-<td>       The name of aggregate function to create, as seen in SQL.  
+<td>aFunction</td>
+<td>       The instance of mozIStorageAggreagteFunction, which implements the  
+       function in question.  
 </td>
 </tr>
 
@@ -333,9 +343,8 @@ one thread.
 </tr>
 
 <tr>
-<td>aGranularity</td>
-<td>       The number of SQL virtual machine steps between progress handler  
-       callbacks.  
+<td>aHandler</td>
+<td>       The instance of mozIStorageProgressHandler.  
 </td>
 </tr>
 

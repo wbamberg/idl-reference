@@ -62,8 +62,8 @@ blank value indicates the login was stored before bug 360493 was fixed.]
 </tr>
 
 <tr>
-<td>aLoginInfo</td>
-<td>       The other object to test.  
+<td>ignorePassword</td>
+<td>       If true, ignore the password when checking for match.  
 </td>
 </tr>
 

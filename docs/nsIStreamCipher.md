@@ -47,14 +47,14 @@ Initialize a stream cipher with an initialization vector.
 </tr>
 
 <tr>
-<td>aKey</td>
-<td>nsIKeyObject  
+<td>aIV</td>
+<td>the initialization vector  
 </td>
 </tr>
 
 <tr>
-<td>aKey</td>
-<td>nsIKeyObject  
+<td>aIVLen</td>
+<td>the length of the initialization vector  
 </td>
 </tr>
 

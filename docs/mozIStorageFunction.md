@@ -41,8 +41,8 @@ function should occur.
 </tr>
 
 <tr>
-<td>aNumArguments</td>
-<td>The number of arguments  
+<td>aFunctionArguments</td>
+<td>The arguments passed in to the function  
 </td>
 </tr>
 

@@ -59,44 +59,58 @@ Creates an nsIDownload and adds it to be managed by the download manager.
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>The source URI of the transfer. Must not be null.  
+<td>aTarget</td>
+<td>The target URI of the transfer. Must not be null.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>The source URI of the transfer. Must not be null.  
+<td>aDisplayName</td>
+<td>The user-readable description of the transfer.  
+                    Can be empty.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>The source URI of the transfer. Must not be null.  
+<td>aMIMEInfo</td>
+<td>The MIME info associated with the target,  
+                 including MIME type and helper app when appropriate.  
+                 This parameter is optional.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>The source URI of the transfer. Must not be null.  
+<td>startTime</td>
+<td>Time when the download started  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>The source URI of the transfer. Must not be null.  
+<td>aTempFile</td>
+<td>The location of a temporary file; i.e. a file in which  
+                 the received data will be stored, but which is not  
+                 equal to the target file. (will be moved to the real  
+                 target by the DownloadManager, when the download is  
+                 finished). This will be null for all callers except for  
+                 nsExternalHelperAppHandler. Addons should generally pass  
+                 null for aTempFile. This will be moved to the real target  
+                 by the download manager when the download is finished,  
+                 and the action indicated by aMIMEInfo will be executed.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>The source URI of the transfer. Must not be null.  
+<td>aCancelable</td>
+<td>An object that can be used to abort the download.  
+                   Must not be null.  
 </td>
 </tr>
 
 <tr>
-<td>aSource</td>
-<td>The source URI of the transfer. Must not be null.  
+<td>aIsPrivate</td>
+<td>Used to determine the privacy status of the new download.  
+                  If true, the download is stored in a manner that leaves  
+                  no permanent trace outside of the current private session.  
 </td>
 </tr>
 
@@ -148,8 +162,8 @@ with the provided GUID.
 </tr>
 
 <tr>
-<td>aGUID</td>
-<td>The unique GUID of the download.  
+<td>aCallback</td>
+<td>The callback to invoke with the result of the search.  
 </td>
 </tr>
 
@@ -232,8 +246,8 @@ specified time frame.
 </tr>
 
 <tr>
-<td>aBeginTime</td>
-<td>       The start time to remove downloads by in microseconds.  
+<td>aEndTime</td>
+<td>       The end time to remove downloads by in microseconds.  
 </td>
 </tr>
 

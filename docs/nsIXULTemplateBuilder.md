@@ -158,8 +158,8 @@ matches.
 </tr>
 
 <tr>
-<td>aResult</td>
-<td>the result to add  
+<td>aQueryNode</td>
+<td>the query that the result applies to  
 </td>
 </tr>
 
@@ -218,14 +218,14 @@ removeResult for the old result and addResult for the new result.
 </tr>
 
 <tr>
-<td>aOldResult</td>
-<td>the old result  
+<td>aNewResult</td>
+<td>the new result  
 </td>
 </tr>
 
 <tr>
-<td>aOldResult</td>
-<td>the old result  
+<td>aQueryNode</td>
+<td>the query that the new result applies to  
 </td>
 </tr>
 
@@ -318,8 +318,8 @@ for builders that don't generate real DOM content.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>node to check  
+<td>aTag</td>
+<td>tag that must match  
 </td>
 </tr>
 
@@ -349,8 +349,8 @@ rejected.
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>the rule to apply the filter to  
+<td>aFilter</td>
+<td>the filter to add  
 </td>
 </tr>
 

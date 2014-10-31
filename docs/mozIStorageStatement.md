@@ -246,14 +246,16 @@ blob.
 </tr>
 
 <tr>
-<td>aIndex</td>
-<td>       0-based colummn index.  
+<td>out]</td>
+<td>aDataSize  
+            The number of bytes in the blob.  
 </td>
 </tr>
 
 <tr>
-<td>aIndex</td>
-<td>       0-based colummn index.  
+<td>out]</td>
+<td>aData  
+            The contents of the BLOB.  This will be NULL if aDataSize == 0.  
 </td>
 </tr>
 

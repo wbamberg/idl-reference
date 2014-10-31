@@ -80,16 +80,21 @@ Move the window to a centered position.
 </tr>
 
 <tr>
-<td>aRelative</td>
-<td>If not null, the window relative to which the window is  
-                 moved. See aScreen parameter for details.  
+<td>aScreen</td>
+<td>PR_TRUE to center the window relative to the screen  
+                 containing aRelative if aRelative is not null. If  
+                 aRelative is null then relative to the screen of the  
+                 opener window if it was initialized by passing it to  
+                 nsWebShellWindow::Initialize. Failing that relative to  
+                 the main screen.  
+                 PR_FALSE to center it relative to aRelative itself.  
 </td>
 </tr>
 
 <tr>
-<td>aRelative</td>
-<td>If not null, the window relative to which the window is  
-                 moved. See aScreen parameter for details.  
+<td>aAlert</td>
+<td>PR_TRUE to move the window to an alert position,  
+                 generally centered horizontally and 1/3 down from the top.  
 </td>
 </tr>
 
@@ -127,8 +132,9 @@ Create a new window.
 </tr>
 
 <tr>
-<td>aChromeFlags</td>
-<td>see nsIWebBrowserChrome  
+<td>aOpeningTab</td>
+<td>the TabParent that requested this new window be opened.  
+                   Can be left null.  
 </td>
 </tr>
 

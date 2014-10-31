@@ -37,22 +37,22 @@ bookmarks.
 
 <tr>
 <td></td>
-<td>uri  
-         The uri of the feed to add.  
+<td>title  
+         The title of the feed to add.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>uri  
-         The uri of the feed to add.  
+<td>subtitle  
+         The subtitle of the feed to add.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>uri  
-         The uri of the feed to add.  
+<td>feedType  
+         The nsIFeed type of the feed.  See nsIFeed.idl  
 </td>
 </tr>
 

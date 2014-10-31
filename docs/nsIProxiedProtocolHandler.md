@@ -34,20 +34,28 @@ layout: default
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the channel uri  
+<td>proxyInfo</td>
+<td>any proxy information that has already been determined,  
+       or null if channel should later determine the proxy on its own using  
+       proxyResolveFlags/proxyURI  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the channel uri  
+<td>proxyResolveFlags</td>
+<td>used if the proxy is later determined  
+       from nsIProtocolProxyService::asyncResolve  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the channel uri  
+<td>proxyURI</td>
+<td>used if the proxy is later determined from  
+       nsIProtocolProxyService::asyncResolve with this as the proxyURI name.  
+       Generally this is the same as uri (or null which has the same  
+       effect), except in the case of websockets which wants to bootstrap  
+       to an http:// channel but make its proxy determination based on  
+       a ws:// uri.  
 </td>
 </tr>
 
@@ -81,20 +89,28 @@ layout: default
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the channel uri  
+<td>proxyInfo</td>
+<td>any proxy information that has already been determined,  
+       or null if channel should later determine the proxy on its own using  
+       proxyResolveFlags/proxyURI  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the channel uri  
+<td>proxyResolveFlags</td>
+<td>used if the proxy is later determined  
+       from nsIProtocolProxyService::asyncResolve  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the channel uri  
+<td>proxyURI</td>
+<td>used if the proxy is later determined from  
+       nsIProtocolProxyService::asyncResolve with this as the proxyURI name.  
+       Generally this is the same as uri (or null which has the same  
+       effect), except in the case of websockets which wants to bootstrap  
+       to an http:// channel but make its proxy determination based on  
+       a ws:// uri.  
 </td>
 </tr>
 

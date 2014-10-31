@@ -35,8 +35,8 @@ The string passed in is parsed into a DOM document.
 </tr>
 
 <tr>
-<td>str</td>
-<td>The UTF16 string to be parsed  
+<td>contentType</td>
+<td>The content type of the string (see parseFromStream)  
 </td>
 </tr>
 
@@ -65,14 +65,14 @@ The charset is determined from the xml entity decl.
 </tr>
 
 <tr>
-<td>buf</td>
-<td>The octet array data to be parsed  
+<td>bufLen</td>
+<td>Length (in bytes) of the data  
 </td>
 </tr>
 
 <tr>
-<td>buf</td>
-<td>The octet array data to be parsed  
+<td>contentType</td>
+<td>The content type of the data (see parseFromStream)  
 </td>
 </tr>
 
@@ -106,20 +106,23 @@ Not accessible from web content.
 </tr>
 
 <tr>
-<td>stream</td>
-<td>The byte stream whose contents are parsed  
+<td>charset</td>
+<td>The character set that was used to encode the byte  
+               stream. NULL if not specified.  
 </td>
 </tr>
 
 <tr>
-<td>stream</td>
-<td>The byte stream whose contents are parsed  
+<td>contentLength</td>
+<td>The number of bytes in the input stream.  
 </td>
 </tr>
 
 <tr>
-<td>stream</td>
-<td>The byte stream whose contents are parsed  
+<td>contentType</td>
+<td>The content type of the string - either text/xml,  
+                   application/xml, or application/xhtml+xml.  
+                   Must not be NULL.  
 </td>
 </tr>
 
@@ -162,29 +165,25 @@ fail.
 </tr>
 
 <tr>
-<td>principal</td>
-<td>The principal to use for documents we create.  
-                 If this is null, a codebase principal will be created  
-                 based on documentURI; in that case the documentURI must  
-                 be non-null.  
+<td>documentURI</td>
+<td>The documentURI to use for the documents we create.  
+                   If null, the principal's URI will be used;  
+                   in that case, the principal must be non-null and its  
+                   URI must be non-null.  
 </td>
 </tr>
 
 <tr>
-<td>principal</td>
-<td>The principal to use for documents we create.  
-                 If this is null, a codebase principal will be created  
-                 based on documentURI; in that case the documentURI must  
-                 be non-null.  
+<td>baseURI</td>
+<td>The baseURI to use for the documents we create.  
+               If null, the documentURI will be used.  
 </td>
 </tr>
 
 <tr>
-<td>principal</td>
-<td>The principal to use for documents we create.  
-                 If this is null, a codebase principal will be created  
-                 based on documentURI; in that case the documentURI must  
-                 be non-null.  
+<td>scriptObject</td>
+<td>The object from which the context for event handling  
+                    can be got.  
 </td>
 </tr>
 

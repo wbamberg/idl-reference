@@ -37,20 +37,26 @@ Implementation of OS.File.read
 </tr>
 
 <tr>
-<td>path</td>
-<td>The absolute path to the file to read.  
+<td>options</td>
+<td>An object that may contain some of the following fields  
+- {number} bytes The maximal number of bytes to read.  
+- {string} encoding If provided, return the result as a string, decoded  
+  using this encoding. Otherwise, pass the result as an ArrayBuffer.  
+  Invalid encodings cause onError to be called with the platform-specific  
+  "invalid argument" constant.  
+- {string} compression Unimplemented at the moment.  
 </td>
 </tr>
 
 <tr>
-<td>path</td>
-<td>The absolute path to the file to read.  
+<td>onSuccess</td>
+<td>The success callback.  
 </td>
 </tr>
 
 <tr>
-<td>path</td>
-<td>The absolute path to the file to read.  
+<td>onError</td>
+<td>The error callback.  
 </td>
 </tr>
 

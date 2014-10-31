@@ -40,26 +40,31 @@ with this data.
 </tr>
 
 <tr>
-<td>aMimeContentType</td>
-<td>The content type of the incoming data  
+<td>aRequest</td>
+<td>The request corresponding to the incoming data  
 </td>
 </tr>
 
 <tr>
-<td>aMimeContentType</td>
-<td>The content type of the incoming data  
+<td>aContentContext</td>
+<td>Used in processing content document refresh  
+ headers after target content is downloaded. Note in e10s land  
+ this is likely a CPOW that points to a window in the child process.  
 </td>
 </tr>
 
 <tr>
-<td>aMimeContentType</td>
-<td>The content type of the incoming data  
+<td>aForceSave</td>
+<td>True to always save this content to disk, regardless of  
+ nsIMIMEInfo and other such influences.  
 </td>
 </tr>
 
 <tr>
-<td>aMimeContentType</td>
-<td>The content type of the incoming data  
+<td>aWindowContext</td>
+<td>Used in parenting helper app dialogs, usually  
+ points to the parent browser window. This parameter may be null,  
+ in which case dialogs will be parented to aContentContext.  
 </td>
 </tr>
 

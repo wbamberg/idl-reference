@@ -69,8 +69,8 @@ Removes entries that were created between the specified times.
 </tr>
 
 <tr>
-<td>aBeginTime</td>
-<td>       The beginning of the timeframe, in microseconds  
+<td>aEndTime</td>
+<td>       The end of the timeframe, in microseconds  
 </td>
 </tr>
 

@@ -70,26 +70,27 @@ the value to use for defaultIndex completion.
 </tr>
 
 <tr>
-<td>aValue</td>
-<td>       The value to autocomplete to  
+<td>aComment</td>
+<td>       Comment shown in the autocomplete widget to describe this match  
 </td>
 </tr>
 
 <tr>
-<td>aValue</td>
-<td>       The value to autocomplete to  
+<td>aImage</td>
+<td>       Image shown in the autocomplete widget for this match.  
 </td>
 </tr>
 
 <tr>
-<td>aValue</td>
-<td>       The value to autocomplete to  
+<td>aStyle</td>
+<td>       Describes how to style the match in the autocomplete widget  
 </td>
 </tr>
 
 <tr>
-<td>aValue</td>
-<td>       The value to autocomplete to  
+<td>aFinalCompleteValue</td>
+<td>       Value used when the user confirms selecting this match. If not  
+       provided, aValue will be used.  
 </td>
 </tr>
 

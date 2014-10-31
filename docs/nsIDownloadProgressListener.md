@@ -26,8 +26,9 @@ Dispatched whenever the state of the download changes.
 </tr>
 
 <tr>
-<td>aState</td>
-<td>The previous download sate.  
+<td>aDownload</td>
+<td>The download object.  
+@see nsIDownloadManager for download states.  
 </td>
 </tr>
 

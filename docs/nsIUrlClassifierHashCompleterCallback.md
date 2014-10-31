@@ -34,14 +34,14 @@ nsIUrlClassifierCompleter::complete() call.
 </tr>
 
 <tr>
-<td>hash</td>
-<td>       The 128-bit hash that was discovered.  
+<td>table</td>
+<td>       The name of the table that this hash belongs to.  
 </td>
 </tr>
 
 <tr>
-<td>hash</td>
-<td>       The 128-bit hash that was discovered.  
+<td>chunkId</td>
+<td>       The database chunk that this hash belongs to.  
 </td>
 </tr>
 

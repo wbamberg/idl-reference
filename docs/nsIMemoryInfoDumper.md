@@ -55,20 +55,20 @@ Sample output, annotated with comments for explanatory purposes.
 </tr>
 
 <tr>
-<td>aFilename</td>
-<td>The output file.  
+<td>aFinishDumping</td>
+<td>The callback called on completion.  
 </td>
 </tr>
 
 <tr>
-<td>aFilename</td>
-<td>The output file.  
+<td>aFinishDumpingData</td>
+<td>The environment for the callback.  
 </td>
 </tr>
 
 <tr>
-<td>aFilename</td>
-<td>The output file.  
+<td>aAnonymize</td>
+<td>Should the reports be anonymized?  
 </td>
 </tr>
 
@@ -114,16 +114,16 @@ file will be overwritten).
 </tr>
 
 <tr>
-<td>aIdentifier</td>
-<td>this identifier will appear in the filename of our  
-  about:memory dump and those of our children.  
+<td>aAnonymize</td>
+<td>Should the reports be anonymized?  
 </td>
 </tr>
 
 <tr>
-<td>aIdentifier</td>
-<td>this identifier will appear in the filename of our  
-  about:memory dump and those of our children.  
+<td>aMinimizeMemoryUsage</td>
+<td>indicates whether we should run a series of  
+  gc/cc's in an attempt to reduce our memory usage before collecting our  
+  memory report.  
 </td>
 </tr>
 
@@ -172,18 +172,19 @@ $MOZ_CC_LOG_DIRECTORY, if that environment variable is specified).
 </tr>
 
 <tr>
-<td>aIdentifier</td>
-<td>If aIdentifier is non-empty, this string will appear in  
-  the filenames of the logs we create (both for this process and, if  
-  aDumpChildProcesses is true, for our child processes).  
+<td>aDumpAllTraces</td>
+<td>indicates whether we should run an all-traces CC  
+  log.  An all-traces log visits all objects currently eligible for cycle  
+  collection, while a non-all-traces log avoids visiting some objects  
+  which we know are reachable.  
 </td>
 </tr>
 
 <tr>
-<td>aIdentifier</td>
-<td>If aIdentifier is non-empty, this string will appear in  
-  the filenames of the logs we create (both for this process and, if  
-  aDumpChildProcesses is true, for our child processes).  
+<td>aDumpChildProcesses</td>
+<td>indicates whether we should call  
+  DumpGCAndCCLogsToFile in our child processes.  If so, the child processes  
+  will dump their children, and so on.  
 </td>
 </tr>
 

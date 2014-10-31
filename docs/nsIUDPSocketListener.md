@@ -39,8 +39,8 @@ This method is called when a client sends an UDP packet.
 </tr>
 
 <tr>
-<td>aSocket</td>
-<td>       The UDP socket.  
+<td>aMessage</td>
+<td>       The message.  
 </td>
 </tr>
 
@@ -72,8 +72,10 @@ The UDP socket is effectively dead after this notification.
 </tr>
 
 <tr>
-<td>aSocket</td>
-<td>       The UDP socket.  
+<td>aStatus</td>
+<td>       The reason why the UDP socket stopped listening.  If the  
+       UDP socket was manually closed, then this value will be  
+       NS_BINDING_ABORTED.  
 </td>
 </tr>
 

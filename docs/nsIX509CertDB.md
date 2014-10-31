@@ -165,8 +165,10 @@ X.509 certificates stored in a database.
 </tr>
 
 <tr>
-<td>cert</td>
-<td>The certificate for which to modify trust.  
+<td>trustString</td>
+<td>decoded by CERT_DecodeTrustString. 3 comma separated  
+                   characters, indicating SSL, Email, and Obj signing  
+                   trust.  
 </td>
 </tr>
 

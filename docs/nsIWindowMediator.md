@@ -67,10 +67,8 @@ are re-ordered while z-order enumerators are active.
 
 <tr>
 <td></td>
-<td>aWindowType the returned enumerator will enumerate only  
-                    windows of this type. ("type" is the  
-                    |windowtype| attribute of the XML <window> element.)  
-                    If null, all windows will be enumerated.  
+<td>aFrontToBack if true, the enumerator enumerates windows in order  
+                     from front to back. back to front if false.  
 </td>
 </tr>
 
@@ -191,8 +189,8 @@ addListener) will be notified through their onWindowTitleChange method.
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>the window whose title has changed  
+<td>inTitle</td>
+<td>the window's new title  
 </td>
 </tr>
 
@@ -240,26 +238,33 @@ pointers in those parameters.
 </tr>
 
 <tr>
-<td>inWindow</td>
-<td>the window in question  
+<td>inPosition</td>
+<td>requested position  
+                  values: zLevelTop: topmost window. zLevelBottom: bottom.  
+                  zLevelBelow: below ioBelow. (the value of ioBelow will  
+                  be ignored for zLevelTop and Bottom.)  
 </td>
 </tr>
 
 <tr>
-<td>inWindow</td>
-<td>the window in question  
+<td>inBelow</td>
+<td>if inPosition==zLevelBelow, the window  
+                below which inWindow wants to be placed. Otherwise this  
+                variable is ignored.  
 </td>
 </tr>
 
 <tr>
-<td>inWindow</td>
-<td>the window in question  
+<td>outPosition</td>
+<td>constrained position, values like inPosition.  
 </td>
 </tr>
 
 <tr>
-<td>inWindow</td>
-<td>the window in question  
+<td>outBelow</td>
+<td>if outPosition==zLevelBelow, the window  
+                below which inWindow should be placed. Otherwise this  
+                this value will be null.  
 </td>
 </tr>
 
@@ -287,14 +292,18 @@ pointers in those parameters.
 </tr>
 
 <tr>
-<td>inWindow</td>
-<td>the window in question  
+<td>inPosition</td>
+<td>new position. values:  
+                  zLevelTop: topmost window.  
+                  zLevelBottom: bottom.  
+                  zLevelBelow: below inBelow. (inBelow is ignored  
+                               for other values of inPosition.)  
 </td>
 </tr>
 
 <tr>
-<td>inWindow</td>
-<td>the window in question  
+<td>inBelow</td>
+<td>the window inWindow is behind, if zLevelBelow  
 </td>
 </tr>
 
@@ -338,8 +347,8 @@ nsIXULWindow::normalZ until it has been informed of a different level.
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>the window in question  
+<td>aZLevel</td>
+<td>the window's new Z level  
 </td>
 </tr>
 

@@ -51,20 +51,23 @@ Register a factory with a given ContractID, CID and Class Name.
 </tr>
 
 <tr>
-<td>aClass</td>
-<td>: CID of object  
+<td>aClassName</td>
+<td>: Class Name of CID (unused)  
 </td>
 </tr>
 
 <tr>
-<td>aClass</td>
-<td>: CID of object  
+<td>aContractID</td>
+<td>: ContractID associated with CID aClass. May be null  
+                     if no contract ID is needed.  
 </td>
 </tr>
 
 <tr>
-<td>aClass</td>
-<td>: CID of object  
+<td>aFactory</td>
+<td>: Factory that will be registered for CID aClass.  
+                     If aFactory is null, the contract will be associated  
+                     with a previously registered CID.  
 </td>
 </tr>
 
@@ -94,8 +97,9 @@ Unregister a factory associated with CID aClass.
 </tr>
 
 <tr>
-<td>aClass</td>
-<td>: CID being unregistered  
+<td>aFactory</td>
+<td>: Factory previously registered to create instances of  
+                  CID aClass.  
 </td>
 </tr>
 

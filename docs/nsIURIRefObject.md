@@ -42,14 +42,14 @@ Go back to the beginning of the attribute list
 </tr>
 
 <tr>
-<td>aOldPat</td>
-<td>Old pattern to be replaced, e.g. file:///a/b/  
+<td>aNewPat</td>
+<td>New pattern to be replaced, e.g. http://mypage.aol.com/  
 </td>
 </tr>
 
 <tr>
-<td>aOldPat</td>
-<td>Old pattern to be replaced, e.g. file:///a/b/  
+<td>aMakeRel</td>
+<td>Rewrite links as relative vs. absolute  
 </td>
 </tr>
 

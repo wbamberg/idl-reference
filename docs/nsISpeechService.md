@@ -44,26 +44,27 @@ https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#utterance-attribut
 </tr>
 
 <tr>
-<td>aText</td>
-<td>text to utter.  
+<td>aUri</td>
+<td>unique voice identifier.  
 </td>
 </tr>
 
 <tr>
-<td>aText</td>
-<td>text to utter.  
+<td>aRate</td>
+<td>rate to speak voice in.  
 </td>
 </tr>
 
 <tr>
-<td>aText</td>
-<td>text to utter.  
+<td>aPitch</td>
+<td>pitch to speak voice in.  
 </td>
 </tr>
 
 <tr>
-<td>aText</td>
-<td>text to utter.  
+<td>aTask</td>
+<td>task instance for utterance, used for sending events or audio  
+                data back to browser.  
 </td>
 </tr>
 

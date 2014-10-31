@@ -51,68 +51,72 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>callIndex</td>
+<td>       Call identifier assigned by the RIL.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>callState</td>
+<td>       One of the nsITelephonyService::CALL_STATE_* values.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>number</td>
+<td>       Number of the other party.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>numberPresentation</td>
+<td>       Presentation of the call number.  
+       One of the nsITelephonyProvider::CALL_PRESENTATION_* values.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>name</td>
+<td>       Name of the other party.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>namePresentation</td>
+<td>       Presentation of the call name.  
+       One of the nsITelephonyProvider::CALL_PRESENTATION_* values.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>isOutgoing</td>
+<td>       Indicates whether this call is outgoing or incoming.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>isEmergency</td>
+<td>       Indicates whether this call is an emergency call.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>isConference</td>
+<td>       Indicates whether this call is a conference call.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>isSwitchable</td>
+<td>       Indicates whether this call can be switched between states of  
+       nsITelephonyService::CALL_STATE_CONNECTED and  
+       nsITelephonyService::CALL_STATE_HELD.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>isMergeable</td>
+<td>       Indicates whether this call be be added into a conference.  
 </td>
 </tr>
 
@@ -194,62 +198,66 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>callIndex</td>
+<td>       Call identifier assigned by the RIL.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>callState</td>
+<td>       One of the nsITelephonyService::CALL_STATE_* values.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>number</td>
+<td>       Number of the other party.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>numberPresentation</td>
+<td>       Presentation of the call number.  
+       One of the nsITelephonyProvider::CALL_PRESENTATION_* values.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>name</td>
+<td>       Name of the other party.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>namePresentation</td>
+<td>       Presentation of the call name.  
+       One of the nsITelephonyProvider::CALL_PRESENTATION_* values.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>isOutgoing</td>
+<td>       Indicates whether this call is outgoing or incoming.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>isConference</td>
+<td>       Indicates whether this call is a conference call.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>isSwitchable</td>
+<td>       Indicates whether this call can be switched between states of  
+       nsITelephonyService::CALL_STATE_CONNECTED and  
+       nsITelephonyService::CALL_STATE_HELD.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>isMergeable</td>
+<td>       Indicates whether this call be be added into a conference.  
 </td>
 </tr>
 
@@ -278,14 +286,14 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>callIndex</td>
+<td>       Call identifier assigned by the RIL. -1 if not specified  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>notification</td>
+<td>       One of the nsITelephonyService::NOTIFICATION_* values.  
 </td>
 </tr>
 
@@ -314,14 +322,14 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>callIndex</td>
+<td>       Call identifier assigned by the RIL. -1 if no connection  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>error</td>
+<td>       Error from RIL.  
 </td>
 </tr>
 
@@ -356,26 +364,28 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>number</td>
+<td>       Number of the other party.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>numberPresentation</td>
+<td>       Presentation of the call number.  
+       One of the nsITelephonyProvider::CALL_PRESENTATION_* values.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>name</td>
+<td>       Name of the other party.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>Indicate the RIL client, 0 ~ (number of client - 1).  
+<td>namePresentation</td>
+<td>       Presentation of the call name.  
+       One of the nsITelephonyProvider::CALL_PRESENTATION_* values.  
 </td>
 </tr>
 
@@ -402,8 +412,8 @@ Called when RIL error occurs to creating or separating a conference call.
 </tr>
 
 <tr>
-<td>name</td>
-<td>       Error name. Possible values are addError and removeError.  
+<td>message</td>
+<td>       Detailed error message from RIL.  
 </td>
 </tr>
 

@@ -54,20 +54,23 @@ given request.
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>       the request being observed (may QI to nsIChannel).  
+<td>aContext</td>
+<td>       if aRequest is a channel, then this parameter is the listener  
+       context passed to nsIChannel::asyncOpen.  
 </td>
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>       the request being observed (may QI to nsIChannel).  
+<td>aProgress</td>
+<td>       numeric value in the range 0 to aProgressMax indicating the  
+       number of bytes transfered thus far.  
 </td>
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>       the request being observed (may QI to nsIChannel).  
+<td>aProgressMax</td>
+<td>       numeric value indicating maximum number of bytes that will be  
+       transfered (or 0xFFFFFFFFFFFFFFFF if total is unknown).  
 </td>
 </tr>
 
@@ -107,20 +110,28 @@ request.
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>       the request being observed (may QI to nsIChannel).  
+<td>aContext</td>
+<td>       if aRequest is a channel, then this parameter is the listener  
+       context passed to nsIChannel::asyncOpen.  
 </td>
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>       the request being observed (may QI to nsIChannel).  
+<td>aStatus</td>
+<td>       status code (not necessarily an error code) indicating the  
+       state of the channel (usually the state of the underlying  
+       transport).  see nsISocketTransport for socket specific status  
+       codes.  
 </td>
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>       the request being observed (may QI to nsIChannel).  
+<td>aStatusArg</td>
+<td>       status code argument to be used with the string bundle service  
+       to convert the status message into localized, human readable  
+       text.  the meaning of this parameter is specific to the value  
+       of the status code.  for socket status codes, this parameter  
+       indicates the host:port associated with the status code.  
 </td>
 </tr>
 

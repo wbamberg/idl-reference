@@ -44,8 +44,8 @@ Add the specified namespace to the serializer.
 </tr>
 
 <tr>
-<td>aPrefix</td>
-<td>the attribute namespace prefix  
+<td>aURI</td>
+<td>the namespace URI  
 </td>
 </tr>
 

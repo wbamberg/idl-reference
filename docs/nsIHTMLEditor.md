@@ -30,14 +30,18 @@ AddDefaultProperty() registers a default style property with the editor
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to set by default  
+<td>aAttribute</td>
+<td>the attribute of the property, if applicable.  
+                   May be null.  
+                   Example: aProperty="font", aAttribute="color"  
 </td>
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to set by default  
+<td>aValue</td>
+<td>if aAttribute is not null, the value of the attribute.  
+                   Example: aProperty="font", aAttribute="color",  
+                            aValue="0x00FFFF"  
 </td>
 </tr>
 
@@ -67,14 +71,18 @@ RemoveDefaultProperty() unregisters a default style property with the editor
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to remove from defaults  
+<td>aAttribute</td>
+<td>the attribute of the property, if applicable.  
+                   May be null.  
+                   Example: aProperty="font", aAttribute="color"  
 </td>
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to remove from defaults  
+<td>aValue</td>
+<td>if aAttribute is not null, the value of the attribute.  
+                   Example: aProperty="font", aAttribute="color",  
+                            aValue="0x00FFFF"  
 </td>
 </tr>
 
@@ -111,14 +119,19 @@ SetInlineProperty() sets the aggregate properties on the current selection
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to set on the selection   
+<td>aAttribute</td>
+<td>the attribute of the property, if applicable.  
+                   May be null.  
+                   Example: aProperty="font", aAttribute="color"  
 </td>
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to set on the selection   
+<td>aValue</td>
+<td>if aAttribute is not null, the value of the attribute.  
+                   May be null.  
+                   Example: aProperty="font", aAttribute="color",  
+                            aValue="0x00FFFF"  
 </td>
 </tr>
 
@@ -157,32 +170,40 @@ represented in a list of Property object.
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to get on the selection   
+<td>aAttribute</td>
+<td>the attribute of the property, if applicable.  
+                   May be null.  
+                   Example: aProperty="font", aAttribute="color"  
 </td>
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to get on the selection   
+<td>aValue</td>
+<td>if aAttribute is not null, the value of the attribute.  
+                   May be null.  
+                   Example: aProperty="font", aAttribute="color",  
+                            aValue="0x00FFFF"  
 </td>
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to get on the selection   
+<td>aFirst</td>
+<td>[OUT] PR_TRUE if the first text node in the  
+                         selection has the property  
 </td>
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to get on the selection   
+<td>aAny</td>
+<td>[OUT] PR_TRUE if any of the text nodes in the  
+                         selection have the property  
 </td>
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to get on the selection   
+<td>aAll</td>
+<td>[OUT] PR_TRUE if all of the text nodes in the  
+                         selection have the property  
 </td>
 </tr>
 
@@ -230,12 +251,14 @@ selection.  If aProperty is not set on the selection, nothing is done.
 </tr>
 
 <tr>
-<td>aProperty</td>
-<td>the property to remove from the selection   
-                   All atoms are for normal HTML tags (e.g.:  
-                   nsIEditorProperty::font) except when you want to  
-                   remove just links and not named anchors.  
-                   For that, use nsIEditorProperty::href  
+<td>aAttribute</td>
+<td>the attribute of the property, if applicable.  
+                   May be null.  
+                   Example: aProperty=nsIEditorProptery::font,  
+                   aAttribute="color"  
+                   nsIEditProperty::allAttributes is special.  
+                   It indicates that all content-based text properties  
+                   are to be removed from the selection.  
 </td>
 </tr>
 
@@ -335,50 +358,50 @@ the string argument according to the given context.
 </tr>
 
 <tr>
-<td>aInputString</td>
-<td>the string to be inserted  
+<td>aContextStr</td>
+<td>Context of insertion  
 </td>
 </tr>
 
 <tr>
-<td>aInputString</td>
-<td>the string to be inserted  
+<td>aInfoStr</td>
+<td>Related info to aInputString   
 </td>
 </tr>
 
 <tr>
-<td>aInputString</td>
-<td>the string to be inserted  
+<td>aFlavor</td>
+<td>Transferable flavor, can be ""  
 </td>
 </tr>
 
 <tr>
-<td>aInputString</td>
-<td>the string to be inserted  
+<td>aSourceDoc</td>
+<td>document where input was dragged from (may be null)  
 </td>
 </tr>
 
 <tr>
-<td>aInputString</td>
-<td>the string to be inserted  
+<td>aDestinationNode</td>
+<td>location for insertion (such as when dropped)  
 </td>
 </tr>
 
 <tr>
-<td>aInputString</td>
-<td>the string to be inserted  
+<td>aDestinationOffset</td>
+<td>used with aDestNode to determine insert location  
 </td>
 </tr>
 
 <tr>
-<td>aInputString</td>
-<td>the string to be inserted  
+<td>aDeleteSelection</td>
+<td>used with aDestNode during drag&drop   
 </td>
 </tr>
 
 <tr>
-<td>aInputString</td>
-<td>the string to be inserted  
+<td>aCollapseSelection</td>
+<td>used with aDestNode during drag&drop  
 </td>
 </tr>
 
@@ -409,8 +432,11 @@ Used primarily to insert a new element for various insert element dialogs,
 </tr>
 
 <tr>
-<td>aElement</td>
-<td>The element to insert  
+<td>aDeleteSelection</td>
+<td>Delete the selection before inserting  
+    If aDeleteSelection is PR_FALSE, then the element is inserted   
+    after the end of the selection for all element except  
+    Named Anchors, which insert before the selection  
 </td>
 </tr>
 
@@ -613,23 +639,21 @@ getListState returns what list type is in the selection.
 </tr>
 
 <tr>
-<td>aMixed</td>
-<td>True if there is more than one type of list, or  
-                 if there is some list and non-list  
+<td>aOL</td>
+<td>The company that employs me.  No, really, it's   
+                 true if an "ol" list is selected.  
 </td>
 </tr>
 
 <tr>
-<td>aMixed</td>
-<td>True if there is more than one type of list, or  
-                 if there is some list and non-list  
+<td>aUL</td>
+<td>true if an "ul" list is selected.  
 </td>
 </tr>
 
 <tr>
-<td>aMixed</td>
-<td>True if there is more than one type of list, or  
-                 if there is some list and non-list  
+<td>aDL</td>
+<td>true if a "dl" list is selected.  
 </td>
 </tr>
 
@@ -657,23 +681,20 @@ getListItemState returns what list item type is in the selection.
 </tr>
 
 <tr>
-<td>aMixed</td>
-<td>True if there is more than one type of list item, or  
-                 if there is some list and non-list  
+<td>aLI</td>
+<td>true if "li" list items are selected.  
 </td>
 </tr>
 
 <tr>
-<td>aMixed</td>
-<td>True if there is more than one type of list item, or  
-                 if there is some list and non-list  
+<td>aDT</td>
+<td>true if "dt" list items are selected.  
 </td>
 </tr>
 
 <tr>
-<td>aMixed</td>
-<td>True if there is more than one type of list item, or  
-                 if there is some list and non-list  
+<td>aDD</td>
+<td>true if "dd" list items are selected.  
 </td>
 </tr>
 
@@ -700,9 +721,9 @@ getAlignment     returns what alignment is in the selection.
 </tr>
 
 <tr>
-<td>aMixed</td>
-<td>True if there is more than one type of list item, or  
-                 if there is some list and non-list  
+<td>aAlign</td>
+<td>enum value for first encountered alignment  
+                 (left/center/right)  
 </td>
 </tr>
 
@@ -778,15 +799,9 @@ An example of use is for testing if a node is in a table cell
 </tr>
 
 <tr>
-<td>aTagName</td>
-<td>The HTML tagname  
- Special input values:  
-   Use "href" to get a link node   
-     (an "A" tag with the "href" attribute set)  
-   Use "anchor" or "namedanchor" to get a named anchor node  
-     (an "A" tag with the "name" attribute set)  
-   Use "list" to get an OL, UL, or DL list node  
-   Use "td" to get either a TD or TH cell node  
+<td>aNode</td>
+<td>The node in the document to start the search.  
+    If it is null, the anchor node of the current selection is used.  
 </td>
 </tr>
 
@@ -937,8 +952,8 @@ Set an attribute on the document's <body> element
 </tr>
 
 <tr>
-<td>aAttr</td>
-<td>The attribute to be set  
+<td>aValue</td>
+<td>The value of the attribute  
 </td>
 </tr>
 
@@ -1018,23 +1033,23 @@ the empty string, it becomes the value of the attribute "_moz_anonclass"
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>[IN] a string representing the desired type of  
-                             the element to create  
+<td>aParentNode</td>
+<td>[IN] the parent node of the created anonymous  
+                             element  
 </td>
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>[IN] a string representing the desired type of  
-                             the element to create  
+<td>aAnonClass</td>
+<td>[IN] contents of the _moz_anonclass attribute  
 </td>
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>[IN] a string representing the desired type of  
-                             the element to create  
+<td>aIsCreatedHidden</td>
+<td>[IN] a boolean specifying if the class "hidden"  
+                             is to be added to the created anonymous  
+                             element  
 </td>
 </tr>
 

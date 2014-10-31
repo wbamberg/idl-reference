@@ -56,14 +56,15 @@ a wellformed URI or nullptr if it can't.
 </tr>
 
 <tr>
-<td>aURIText</td>
-<td>Candidate URI.  
+<td>aFixupFlags</td>
+<td>Flags that govern ways the URI may be fixed up.  
 </td>
 </tr>
 
 <tr>
-<td>aURIText</td>
-<td>Candidate URI.  
+<td>aPostData</td>
+<td>The POST data to submit with the returned  
+                   URI (see nsISearchSubmission).  
 </td>
 </tr>
 
@@ -92,14 +93,15 @@ search URI instead).
 </tr>
 
 <tr>
-<td>aURIText</td>
-<td>Candidate URI.  
+<td>aFixupFlags</td>
+<td>Flags that govern ways the URI may be fixed up.  
 </td>
 </tr>
 
 <tr>
-<td>aURIText</td>
-<td>Candidate URI.  
+<td>aPostData</td>
+<td>The POST data to submit with the returned  
+                   URI (see nsISearchSubmission).  
 </td>
 </tr>
 
@@ -130,8 +132,9 @@ whether aKeyword is a sensible keyword.
 </tr>
 
 <tr>
-<td>aKeyword</td>
-<td>The keyword string to convert into a URI  
+<td>aPostData</td>
+<td>The POST data to submit to the returned URI  
+                 (see nsISearchSubmission).  
 </td>
 </tr>
 

@@ -34,8 +34,8 @@ the same host name).
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the URI to block  
+<td>aAccess</td>
+<td>       the new cookie access for the URI.  
 </td>
 </tr>
 
@@ -69,8 +69,8 @@ access the cookie database, either to set or get cookies.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the URI trying to access cookies  
+<td>aChannel</td>
+<td>       the channel corresponding to aURI  
 </td>
 </tr>
 
@@ -116,26 +116,30 @@ downgrade a cookie to session-only if it fails to meet certain criteria.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the URI trying to set the cookie  
+<td>aChannel</td>
+<td>       the channel corresponding to aURI  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the URI trying to set the cookie  
+<td>aCookie</td>
+<td>       the cookie being added to the cookie database  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the URI trying to set the cookie  
+<td>aIsSession</td>
+<td>       when canSetCookie is invoked, this is the current isSession attribute  
+       of the cookie. canSetCookie may leave this value unchanged to  
+       preserve this attribute of the cookie.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the URI trying to set the cookie  
+<td>aExpiry</td>
+<td>       when canSetCookie is invoked, this is the current expiry time of  
+       the cookie. canSetCookie may leave this value unchanged to  
+       preserve this attribute of the cookie.  
 </td>
 </tr>
 

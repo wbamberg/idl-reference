@@ -34,31 +34,33 @@ Note: prompt uses separate args for the "in" and "out" values of the
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>text          The text to display in the dialog.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>passwordRealm The "realm" the password belongs to: e.g.  
+                      ldap://localhost/dc=test  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>savePassword  One of the SAVE_PASSWORD_* options above.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>defaultText   The default text to display in the text input box.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>result        The value entered by the user if OK was  
+                      selected.  
 </td>
 </tr>
 
@@ -91,31 +93,33 @@ Puts up a password dialog with OK and Cancel buttons.
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>text          The text to display in the dialog.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>passwordRealm The "realm" the password belongs to: e.g.  
+                      ldap://localhost/dc=test  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>savePassword  One of the SAVE_PASSWORD_* options above.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>user          The username entered in the dialog.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>pwd           The password entered by the user if OK was  
+                      selected.  
 </td>
 </tr>
 
@@ -152,25 +156,33 @@ Puts up a password dialog with OK and Cancel buttons.
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>text          The text to display in the dialog.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>passwordRealm The "realm" the password belongs to: e.g.  
+                      ldap://localhost/dc=test. If a username is  
+                      specified (http://user@site.com) it will be used  
+                      when matching existing logins or saving new ones.  
+                      If no username is specified, only password-only  
+                      logins will be matched or saved.  
+                      Note: if a username is specified, the username  
+                      should be escaped.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>savePassword  One of the SAVE_PASSWORD_* options above.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>dialogText    The title for the dialog.  
+<td>pwd           The password entered by the user if OK was  
+                      selected.  
 </td>
 </tr>
 

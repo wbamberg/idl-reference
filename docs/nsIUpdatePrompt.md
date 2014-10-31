@@ -64,8 +64,8 @@ and the app.update.silent preference is true the call will be a no-op.
 
 <tr>
 <td></td>
-<td>update  
-         The nsIUpdate object that was downloaded  
+<td>background  
+         Less obtrusive UI, starting with a non-modal notification alert  
 </td>
 </tr>
 

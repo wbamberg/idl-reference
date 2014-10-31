@@ -53,8 +53,8 @@ used as an nsISeekableStream.
 </tr>
 
 <tr>
-<td>stream</td>
-<td>stream to insert  
+<td>index</td>
+<td>index to insert stream at, must be <= count  
 </td>
 </tr>
 

@@ -29,8 +29,8 @@ not be called once the stream has been started to be read.
 </tr>
 
 <tr>
-<td>name</td>
-<td>name of the header  
+<td>value</td>
+<td>value of the header  
 </td>
 </tr>
 

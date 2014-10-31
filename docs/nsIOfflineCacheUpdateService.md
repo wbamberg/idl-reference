@@ -65,8 +65,10 @@ cache.
 </tr>
 
 <tr>
-<td>aPrincipal</td>
-<td>       The principal to check.  
+<td>aPrefBranch</td>
+<td>       The pref branch to use to check the  
+       offline-apps.allow_by_default pref.  If not specified,  
+       the pref service will be used.  
 </td>
 </tr>
 
@@ -95,8 +97,10 @@ to the offline cache.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI to check  
+<td>aPrefBranch</td>
+<td>       The pref branch to use to check the  
+       offline-apps.allow_by_default pref.  If not specified,  
+       the pref service will be used.  
 </td>
 </tr>
 

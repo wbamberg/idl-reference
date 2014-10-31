@@ -38,15 +38,15 @@ also assert.
 
 <tr>
 <td></td>
-<td>parent       nsIDOMWindow parent. This dialog will be dependent  
-                         on this parent. parent must be non-null.  
+<td>title        The title for the color picker widget.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>parent       nsIDOMWindow parent. This dialog will be dependent  
-                         on this parent. parent must be non-null.  
+<td>initialColor The color to show when the widget is opened. The  
+                         parameter has to follow the format specified on top  
+                         of this file.  
 </td>
 </tr>
 

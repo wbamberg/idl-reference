@@ -74,26 +74,34 @@ right away.
 </tr>
 
 <tr>
-<td>engineURL</td>
-<td>       The URL to the search engine's description file.  
+<td>dataType</td>
+<td>       An integer representing the plugin file format. Must be one  
+       of the supported search engine data types defined above.  
 </td>
 </tr>
 
 <tr>
-<td>engineURL</td>
-<td>       The URL to the search engine's description file.  
+<td>iconURL</td>
+<td>       A URL string to an icon file to be used as the search engine's  
+       icon. This value may be overridden by an icon specified in the  
+       engine description file.  
 </td>
 </tr>
 
 <tr>
-<td>engineURL</td>
-<td>       The URL to the search engine's description file.  
+<td>confirm</td>
+<td>       A boolean value indicating whether the user should be asked for  
+       confirmation before this engine is added to the list.  If this  
+       value is false, the engine will be added to the list upon successful  
+       load, but it will not be selected as the current engine.  
 </td>
 </tr>
 
 <tr>
-<td>engineURL</td>
-<td>       The URL to the search engine's description file.  
+<td>callback</td>
+<td>       A nsISearchInstallCallback that will be notified when the  
+       addition is complete, or if the addition fails. It will not be  
+       called if addEngine throws an exception.  
 </td>
 </tr>
 
@@ -141,38 +149,43 @@ without starting to use it right away.
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The search engine's name. Must be unique. Must not be null.  
+<td>iconURL</td>
+<td>       Optional: A URL string pointing to the icon to be used to represent  
+       the engine.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The search engine's name. Must be unique. Must not be null.  
+<td>alias</td>
+<td>       Optional: A unique shortcut that can be used to retrieve the  
+       search engine.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The search engine's name. Must be unique. Must not be null.  
+<td>description</td>
+<td>       Optional: a description of the search engine.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The search engine's name. Must be unique. Must not be null.  
+<td>method</td>
+<td>       The HTTP request method used when submitting a search query.  
+       Must be a case insensitive value of either "get" or "post".  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The search engine's name. Must be unique. Must not be null.  
+<td>url</td>
+<td>       The URL to which search queries should be sent.  
+       Must not be null.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The search engine's name. Must be unique. Must not be null.  
+<td>extensionID</td>
+<td>[optional]  
+       Optional: The correct extensionID if called by an add-on.  
 </td>
 </tr>
 
@@ -281,8 +294,8 @@ Moves a visible search engine.
 
 <tr>
 <td></td>
-<td>engine  
-        The engine to move.  
+<td>newIndex  
+        The engine's new index in the set of visible engines.  
 </td>
 </tr>
 

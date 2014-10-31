@@ -28,14 +28,14 @@ Dispatched after a value is removed from the result.
 </tr>
 
 <tr>
-<td>aResult</td>
-<td>       The result from which aValue has been removed.  
+<td>aValue</td>
+<td>       The removed value.  
 </td>
 </tr>
 
 <tr>
-<td>aResult</td>
-<td>       The result from which aValue has been removed.  
+<td>aRemoveFromDb</td>
+<td>       Whether the value should be removed from persistent storage as well.  
 </td>
 </tr>
 

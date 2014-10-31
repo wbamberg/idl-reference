@@ -36,20 +36,20 @@ Determines the appropriate target for a link.
 </tr>
 
 <tr>
-<td>originalTarget</td>
-<td>       The original link target.  
+<td>linkURI</td>
+<td>       Link destination URI.  
 </td>
 </tr>
 
 <tr>
-<td>originalTarget</td>
-<td>       The original link target.  
+<td>aDOMNode</td>
+<td>       Link DOM node.  
 </td>
 </tr>
 
 <tr>
-<td>originalTarget</td>
-<td>       The original link target.  
+<td>isAppTab</td>
+<td>       Whether or not the link is in an app tab.  
 </td>
 </tr>
 
@@ -78,14 +78,14 @@ Determines whether a load should continue.
 </tr>
 
 <tr>
-<td>aDocShell</td>
-<td>       The docshell performing the load.  
+<td>aURI</td>
+<td>       The URI being loaded.  
 </td>
 </tr>
 
 <tr>
-<td>aDocShell</td>
-<td>       The docshell performing the load.  
+<td>aReferrer</td>
+<td>       The referrer of the load.  
 </td>
 </tr>
 

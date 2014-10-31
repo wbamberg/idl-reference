@@ -57,16 +57,15 @@ Bind the given value at the given numeric index.
 </tr>
 
 <tr>
-<td>aParamIndex</td>
-<td>       0-based index, 0 corresponding to the first numbered argument or  
-       "?1".  
+<td>aValue</td>
+<td>       Argument value.  
 </td>
 </tr>
 
 <tr>
-<td>aParamIndex</td>
-<td>       0-based index, 0 corresponding to the first numbered argument or  
-       "?1".  
+<td>aValueSize</td>
+<td>       Length of aValue in bytes.  
+@{  
 </td>
 </tr>
 
@@ -177,8 +176,8 @@ Escape a string for SQL LIKE search.
 </tr>
 
 <tr>
-<td>aValue</td>
-<td>       The string to escape for SQL LIKE.  
+<td>aEscapeChar</td>
+<td>       The escape character.  
 </td>
 </tr>
 

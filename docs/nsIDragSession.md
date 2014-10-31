@@ -27,7 +27,7 @@ or after the drop has completed.
 
 <tr>
 <td></td>
-<td>aTransferable the transferable for the data to be put into  
+<td>aItemIndex which of multiple drag items, zero-based  
 </td>
 </tr>
 

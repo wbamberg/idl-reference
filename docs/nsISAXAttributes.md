@@ -46,9 +46,8 @@ Look up the index of an attribute by Namespace name.
 </tr>
 
 <tr>
-<td>uri</td>
-<td>The Namespace URI, or the empty string  
-           if the name has no Namespace URI.  
+<td>localName</td>
+<td>The attribute's local name.  
 </td>
 </tr>
 
@@ -164,9 +163,8 @@ Look up an attribute's type by Namespace name.
 </tr>
 
 <tr>
-<td>uri</td>
-<td>The Namespace URI, or the empty string  
-            if the name has no Namespace URI.  
+<td>localName</td>
+<td>The attribute's local name.  
 </td>
 </tr>
 
@@ -262,9 +260,8 @@ separated by a single space.
 </tr>
 
 <tr>
-<td>uri</td>
-<td>The Namespace URI, or the empty string  
-            if the name has no Namespace URI.  
+<td>localName</td>
+<td>The attribute's local name.  
 </td>
 </tr>
 

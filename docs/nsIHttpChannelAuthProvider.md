@@ -59,14 +59,15 @@ the credentials to send.
 </tr>
 
 <tr>
-<td>httpStatus</td>
-<td>       the http status received.  
+<td>sslConnectFailed</td>
+<td>       if the last ssl tunnel connection attempt was or not successful.  
 </td>
 </tr>
 
 <tr>
-<td>httpStatus</td>
-<td>       the http status received.  
+<td>callback</td>
+<td>       the callback to be called when it returns NS_ERROR_IN_PROGRESS.  
+       The implementation must hold a weak reference.  
 </td>
 </tr>
 

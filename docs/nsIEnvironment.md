@@ -29,8 +29,8 @@ Set the value of an environment variable.
 </tr>
 
 <tr>
-<td>aName</td>
-<td>the variable name to set.  
+<td>aValue</td>
+<td>the value to set.  
 </td>
 </tr>
 

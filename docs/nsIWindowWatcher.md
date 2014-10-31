@@ -67,34 +67,32 @@ method will effectively act as if aParent were null.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aURL</td>
+<td>url to which to open the new window. Must already be  
+escaped, if applicable. can be null.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aName</td>
+<td>window name from JS window.open. can be null.  If a window  
+with this name already exists, the openWindow call may just load  
+aUrl in it (if aUrl is not null) and return it.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aFeatures</td>
+<td>window features from JS window.open. can be null.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
+<td>aArguments</td>
+<td>extra argument(s) to the new window, to be attached  
+as the |arguments| property. An nsISupportsArray will be  
+unwound into multiple arguments (but not recursively!).  
+can be null.  
 </td>
 </tr>
 
@@ -263,8 +261,10 @@ security implications of this before using this method!
 </tr>
 
 <tr>
-<td>aTargetName</td>
-<td>the window name  
+<td>aCurrentWindow</td>
+<td>a starting point in the window hierarchy to  
+begin the search.  If null, each toplevel window  
+will be searched.  
 </td>
 </tr>
 

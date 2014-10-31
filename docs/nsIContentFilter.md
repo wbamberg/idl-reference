@@ -76,68 +76,68 @@ source document.
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>contentSourceURL</td>
+<td>location where docFragment came from  
 </td>
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>sourceDocument</td>
+<td>document where content came from (can be null)  
 </td>
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>willDeleteSelection</td>
+<td>tells hook if selection will/should be deleted  
 </td>
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>docFragment</td>
+<td>fragment of node to be inserted  
 </td>
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>contentStartNode</td>
+<td>node under which content to be inserted begins  
 </td>
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>contentStartOffset</td>
+<td>start offset within contentStartNode  
 </td>
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>contentEndNode</td>
+<td>node under which content to be inserted ends  
 </td>
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>contentEndOffset</td>
+<td>ending offset withing contentEndNode  
 </td>
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>insertionPointNode</td>
+<td>location where insertion will occur  
 </td>
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>insertionPointOffset</td>
+<td>offset within node where insertion occurs  
 </td>
 </tr>
 
 <tr>
-<td>mimeType</td>
-<td>the mimetype used for retrieving data  
+<td>continueWithInsertion</td>
+<td>flag to cancel insertion (if desired)  
 </td>
 </tr>
 

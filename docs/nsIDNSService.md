@@ -40,20 +40,24 @@ kicks off an asynchronous host lookup.
 </tr>
 
 <tr>
-<td>aHostName</td>
-<td>       the hostname or IP-address-literal to resolve.  
+<td>aFlags</td>
+<td>       a bitwise OR of the RESOLVE_ prefixed constants defined below.  
 </td>
 </tr>
 
 <tr>
-<td>aHostName</td>
-<td>       the hostname or IP-address-literal to resolve.  
+<td>aListener</td>
+<td>       the listener to be notified when the result is available.  
 </td>
 </tr>
 
 <tr>
-<td>aHostName</td>
-<td>       the hostname or IP-address-literal to resolve.  
+<td>aListenerTarget</td>
+<td>       optional parameter (may be null).  if non-null, this parameter  
+       specifies the nsIEventTarget of the thread on which the  
+       listener's onLookupComplete should be called.  however, if this  
+       parameter is null, then onLookupComplete will be called on an  
+       unspecified thread (possibly recursively).  
 </td>
 </tr>
 
@@ -87,20 +91,21 @@ Attempts to cancel a previously requested async DNS lookup
 </tr>
 
 <tr>
-<td>aHostName</td>
-<td>       the hostname or IP-address-literal to resolve.  
+<td>aFlags</td>
+<td>       a bitwise OR of the RESOLVE_ prefixed constants defined below.  
 </td>
 </tr>
 
 <tr>
-<td>aHostName</td>
-<td>       the hostname or IP-address-literal to resolve.  
+<td>aListener</td>
+<td>       the original listener which was to be notified about the host lookup  
+       result - used to match request information to requestor.  
 </td>
 </tr>
 
 <tr>
-<td>aHostName</td>
-<td>       the hostname or IP-address-literal to resolve.  
+<td>aReason</td>
+<td>       nsresult reason for the cancellation  
 </td>
 </tr>
 
@@ -132,8 +137,8 @@ unwise to call this function on the UI thread of an application.
 </tr>
 
 <tr>
-<td>aHostName</td>
-<td>       the hostname or IP-address-literal to resolve.  
+<td>aFlags</td>
+<td>       a bitwise OR of the RESOLVE_ prefixed constants defined below.  
 </td>
 </tr>
 

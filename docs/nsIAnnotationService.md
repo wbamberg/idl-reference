@@ -158,8 +158,8 @@ Use getAnnotationInfo if you need this along with the mime-type etc.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the uri on which the annotation is set  
+<td>aName</td>
+<td>       the annotation name  
 </td>
 </tr>
 

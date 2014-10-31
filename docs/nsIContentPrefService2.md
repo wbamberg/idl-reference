@@ -84,14 +84,16 @@ Gets all the preferences with the given name.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preferences' name.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preferences' name.  
+<td>callback</td>
+<td>handleResult is called once for each preference unless  
+                 no such preferences exist, in which case handleResult  
+                 is not called at all.  
 </td>
 </tr>
 
@@ -119,20 +121,21 @@ Gets the preference with the given domain and name.
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>name</td>
+<td>The preference's name.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>callback</td>
+<td>handleResult is called once unless no such preference  
+                 exists, in which case handleResult is not called at all.  
 </td>
 </tr>
 
@@ -161,20 +164,21 @@ as or subdomains of the given domain.
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>name</td>
+<td>The preferences' name.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>callback</td>
+<td>handleResult is called once for each preference.  If no  
+                 such preferences exist, handleResult is not called at all.  
 </td>
 </tr>
 
@@ -201,14 +205,15 @@ Gets the preference with no domain and the given name.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preference's name.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preference's name.  
+<td>callback</td>
+<td>handleResult is called once unless no such preference  
+                 exists, in which case handleResult is not called at all.  
 </td>
 </tr>
 
@@ -246,14 +251,14 @@ exists.
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>name</td>
+<td>The preference's name.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
@@ -288,26 +293,26 @@ getCachedByDomainAndName, its value attribute will be undefined.
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>name</td>
+<td>The preferences' name.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>len</td>
+<td>The length of the returned array.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>prefs</td>
+<td>The array of preferences.  
 </td>
 </tr>
 
@@ -340,8 +345,8 @@ cached nor known not to exist, then null is returned.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preference's name.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
@@ -370,26 +375,27 @@ Sets a preference.
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>name</td>
+<td>The preference's name.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>value</td>
+<td>The preference's value.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>callback</td>
+<td>handleCompletion is called when the preference has been  
+                 stored.  
 </td>
 </tr>
 
@@ -417,20 +423,21 @@ Sets a preference with no domain.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preference's name.  
+<td>value</td>
+<td>The preference's value.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preference's name.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preference's name.  
+<td>callback</td>
+<td>handleCompletion is called when the preference has been  
+                 stored.  
 </td>
 </tr>
 
@@ -457,20 +464,20 @@ Removes the preference with the given domain and name.
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>name</td>
+<td>The preference's name.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preference's domain.  
+<td>callback</td>
+<td>handleCompletion is called when the operation completes.  
 </td>
 </tr>
 
@@ -498,20 +505,20 @@ the same as or subdomains of the given domain.
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>name</td>
+<td>The preferences' name.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>callback</td>
+<td>handleCompletion is called when the operation completes.  
 </td>
 </tr>
 
@@ -537,14 +544,14 @@ Removes the preference with no domain and the given name.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preference's name.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preference's name.  
+<td>callback</td>
+<td>handleCompletion is called when the operation completes.  
 </td>
 </tr>
 
@@ -570,14 +577,14 @@ Removes all preferences with the given domain.
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>callback</td>
+<td>handleCompletion is called when the operation completes.  
 </td>
 </tr>
 
@@ -604,14 +611,14 @@ of the given domain.
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>domain</td>
-<td>The preferences' domain.  
+<td>callback</td>
+<td>handleCompletion is called when the operation completes.  
 </td>
 </tr>
 
@@ -638,14 +645,14 @@ global preferences with the given name.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preferences' name.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>The preferences' name.  
+<td>callback</td>
+<td>handleCompletion is called when the operation completes.  
 </td>
 </tr>
 
@@ -671,8 +678,8 @@ have a domain.
 </tr>
 
 <tr>
-<td>context</td>
-<td>The private-browsing context, if any.  
+<td>callback</td>
+<td>handleCompletion is called when the operation completes.  
 </td>
 </tr>
 
@@ -698,14 +705,14 @@ Removes all non-global preferences created after and including |since|.
 </tr>
 
 <tr>
-<td>since</td>
-<td>Timestamp in milliseconds.  
+<td>context</td>
+<td>The private-browsing context, if any.  
 </td>
 </tr>
 
 <tr>
-<td>since</td>
-<td>Timestamp in milliseconds.  
+<td>callback</td>
+<td>handleCompletion is called when the operation completes.  
 </td>
 </tr>
 
@@ -731,8 +738,8 @@ no domain.
 </tr>
 
 <tr>
-<td>context</td>
-<td>The private-browsing context, if any.  
+<td>callback</td>
+<td>handleCompletion is called when the operation completes.  
 </td>
 </tr>
 
@@ -767,9 +774,8 @@ be removed later to avoid leaking it.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The name of the preferences to observe.  Pass null to  
-                 observe all preference changes regardless of name.  
+<td>observer</td>
+<td>The observer.  
 </td>
 </tr>
 
@@ -796,9 +802,8 @@ Unregisters an observer for the given name.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The name for which the observer was registered.  Pass null  
-                 if the observer was added with a null name.  
+<td>observer</td>
+<td>The observer.  
 </td>
 </tr>
 

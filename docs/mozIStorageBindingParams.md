@@ -27,8 +27,8 @@ Binds aValue to the parameter with the name aName.
 </tr>
 
 <tr>
-<td>aName</td>
-<td>       The name of the parameter to bind aValue to.  
+<td>aValue</td>
+<td>       The value to bind.  
 </td>
 </tr>
 
@@ -71,8 +71,8 @@ Binds aValue to the parameter with the index aIndex.
 </tr>
 
 <tr>
-<td>aIndex</td>
-<td>       The zero-based index of the parameter to bind aValue to.  
+<td>aValue</td>
+<td>       The value to bind.  
 </td>
 </tr>
 

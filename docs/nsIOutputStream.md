@@ -61,8 +61,8 @@ Write data into the stream.
 </tr>
 
 <tr>
-<td>aBuf</td>
-<td>the buffer containing the data to be written  
+<td>aCount</td>
+<td>the maximum number of bytes to be written  
 </td>
 </tr>
 
@@ -100,8 +100,8 @@ the output stream's other Write method.
 </tr>
 
 <tr>
-<td>aFromStream</td>
-<td>the stream containing the data to be written  
+<td>aCount</td>
+<td>the maximum number of bytes to be written  
 </td>
 </tr>
 
@@ -142,14 +142,14 @@ buffer (e.g., socket output stream).
 </tr>
 
 <tr>
-<td>aReader</td>
-<td>the "provider" of the data to be written  
+<td>aClosure</td>
+<td>opaque parameter passed to reader  
 </td>
 </tr>
 
 <tr>
-<td>aReader</td>
-<td>the "provider" of the data to be written  
+<td>aCount</td>
+<td>the maximum number of bytes to be written  
 </td>
 </tr>
 

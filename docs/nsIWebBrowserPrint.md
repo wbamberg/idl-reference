@@ -32,9 +32,8 @@ Print the specified DOM window
 </tr>
 
 <tr>
-<td>aThePrintSettings</td>
-<td>- Printer Settings for the print job, if aThePrintSettings is null  
-                           then the global PS will be used.  
+<td>aWPListener</td>
+<td>- is updated during the print  
 </td>
 </tr>
 
@@ -63,16 +62,14 @@ Print Preview the specified DOM window
 </tr>
 
 <tr>
-<td>aThePrintSettings</td>
-<td>- Printer Settings for the print preview, if aThePrintSettings is null  
-                           then the global PS will be used.  
+<td>aChildDOMWin</td>
+<td>- DOM Window to be print previewed.  
 </td>
 </tr>
 
 <tr>
-<td>aThePrintSettings</td>
-<td>- Printer Settings for the print preview, if aThePrintSettings is null  
-                           then the global PS will be used.  
+<td>aWPListener</td>
+<td>- is updated during the printpreview  
 </td>
 </tr>
 
@@ -98,8 +95,8 @@ Print Preview - Navigates within the window
 </tr>
 
 <tr>
-<td>aNavType</td>
-<td>- navigation enum  
+<td>aPageNum</td>
+<td>- page num to navigate to when aNavType = ePrintPreviewGoToPageNum  
 </td>
 </tr>
 
@@ -134,7 +131,7 @@ and may return any number of items is "isFramesetDocument" is true
 
 <tr>
 <td></td>
-<td>aCount - returns number of printers returned  
+<td>aResult - returns array of names  
 </td>
 </tr>
 

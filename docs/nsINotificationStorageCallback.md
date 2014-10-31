@@ -31,32 +31,33 @@ into C++ land for Notification.get return data.
 </tr>
 
 <tr>
-<td>id:</td>
-<td>a uuid for this notification  
+<td>title:</td>
+<td>the notification title  
 </td>
 </tr>
 
 <tr>
-<td>id:</td>
-<td>a uuid for this notification  
+<td>dir:</td>
+<td>the notification direction,  
+            possible values are "ltr", "rtl", "auto"  
 </td>
 </tr>
 
 <tr>
-<td>id:</td>
-<td>a uuid for this notification  
+<td>lang:</td>
+<td>the notification language  
 </td>
 </tr>
 
 <tr>
-<td>id:</td>
-<td>a uuid for this notification  
+<td>body:</td>
+<td>the notification body  
 </td>
 </tr>
 
 <tr>
-<td>id:</td>
-<td>a uuid for this notification  
+<td>tag:</td>
+<td>the notification tag  
 </td>
 </tr>
 

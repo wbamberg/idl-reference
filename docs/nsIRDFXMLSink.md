@@ -48,8 +48,8 @@ Add namespace information to the RDF/XML sink.
 </tr>
 
 <tr>
-<td>aPrefix</td>
-<td>the namespace prefix  
+<td>aURI</td>
+<td>the namespace URI  
 </td>
 </tr>
 

@@ -37,8 +37,8 @@ Initialize the update.
 </tr>
 
 <tr>
-<td>aManifestURI</td>
-<td>       The manifest URI to be checked.  
+<td>aDocumentURI</td>
+<td>       The page that is requesting the update.  
 </td>
 </tr>
 
@@ -70,14 +70,17 @@ Initialize the update for partial processing.
 </tr>
 
 <tr>
-<td>aManifestURI</td>
-<td>       The manifest URI of the related cache.  
+<td>aClientID</td>
+<td>       Client  ID of the cache to store resource to. This ClientID  
+       must be ID of cache in the cache group identified by  
+       the manifest URI passed in the first parameter.  
 </td>
 </tr>
 
 <tr>
-<td>aManifestURI</td>
-<td>       The manifest URI of the related cache.  
+<td>aDocumentURI</td>
+<td>       The page that is requesting the update. May be null   
+       when this information is unknown.  
 </td>
 </tr>
 
@@ -114,20 +117,25 @@ to the manifest available (if it has actually changed on the server).
 </tr>
 
 <tr>
-<td>aManifestURI</td>
-<td>       The manifest URI of the related cache.  
+<td>aAppID</td>
+<td>       Local ID of an app (optional) to check the cache update for.  
 </td>
 </tr>
 
 <tr>
-<td>aManifestURI</td>
-<td>       The manifest URI of the related cache.  
+<td>aInBrowser</td>
+<td>       Whether to check for a cache populated from browser element.  
 </td>
 </tr>
 
 <tr>
-<td>aManifestURI</td>
-<td>       The manifest URI of the related cache.  
+<td>aObserver</td>
+<td>       nsIObserver implementation that receives the result.  
+       When aTopic == "offline-cache-update-available" there is an update to  
+       to download. Update of the app cache will lead to a new version  
+       download.  
+       When aTopic == "offline-cache-update-unavailable" then there is no  
+       update available (the manifest has not changed on the server).  
 </td>
 </tr>
 
@@ -181,8 +189,9 @@ Observe loads that are added to the update.
 </tr>
 
 <tr>
-<td>aObserver</td>
-<td>       object that notifications will be sent to.  
+<td>aHoldWeak</td>
+<td>       TRUE if you want the update to hold a weak reference to the  
+       observer, FALSE for a strong reference.  
 </td>
 </tr>
 

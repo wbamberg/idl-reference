@@ -39,8 +39,8 @@ Selects the best update to install from a list of available updates.
 
 <tr>
 <td></td>
-<td>updates  
-         An array of updates that are available  
+<td>updateCount  
+         The length of the |updates| array  
 </td>
 </tr>
 

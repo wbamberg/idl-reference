@@ -61,8 +61,8 @@ Get closed tab data
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>is the browser window to reopen a closed tab in.  
+<td>aCloseTabData</td>
+<td>is the data of the tab to be restored.  
 </td>
 </tr>
 
@@ -85,8 +85,8 @@ Get closed tab data
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>is the browser window associated with the closed tab.  
+<td>aIndex</td>
+<td>is the index of the closed tab to be removed (FIFO ordered).  
 </td>
 </tr>
 
@@ -111,8 +111,8 @@ Get closed tab data
 </tr>
 
 <tr>
-<td>aTab</td>
-<td>is the browser tab to get the value for.  
+<td>aKey</td>
+<td>is the value's name.  
 </td>
 </tr>
 
@@ -136,14 +136,14 @@ Get closed tab data
 </tr>
 
 <tr>
-<td>aTab</td>
-<td>is the browser tab to set the value for.  
+<td>aKey</td>
+<td>is the value's name.  
 </td>
 </tr>
 
 <tr>
-<td>aTab</td>
-<td>is the browser tab to set the value for.  
+<td>aStringValue</td>
+<td>is the value itself (use JSON.stringify/parse before setting JS objects).  
 </td>
 </tr>
 
@@ -166,8 +166,8 @@ Get closed tab data
 </tr>
 
 <tr>
-<td>aTab</td>
-<td>is the browser tab to get the value for.  
+<td>aKey</td>
+<td>is the value's name.  
 </td>
 </tr>
 

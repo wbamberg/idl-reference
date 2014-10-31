@@ -60,8 +60,8 @@ nsIWebSocketChannel::Close() has not been called.
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>user defined context  
+<td>aStatusCode</td>
+<td>reason for stopping (NS_OK if completed successfully)  
 </td>
 </tr>
 
@@ -86,8 +86,8 @@ Called to deliver text message.
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>user defined context  
+<td>aMsg</td>
+<td>the message data  
 </td>
 </tr>
 
@@ -112,8 +112,8 @@ Called to deliver binary message.
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>user defined context  
+<td>aMsg</td>
+<td>the message data  
 </td>
 </tr>
 
@@ -138,8 +138,8 @@ Called to acknowledge message sent via sendMsg() or sendBinaryMsg.
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>user defined context  
+<td>aSize</td>
+<td>number of bytes placed in OS send buffer  
 </td>
 </tr>
 
@@ -173,14 +173,14 @@ be sent through the nsIWebSocketChannel connection.
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>user defined context  
+<td>aCode</td>
+<td>the websocket closing handshake close code.  
 </td>
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>user defined context  
+<td>aReason</td>
+<td>the websocket closing handshake close reason  
 </td>
 </tr>
 

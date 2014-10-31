@@ -33,14 +33,15 @@ signature.
 </tr>
 
 <tr>
-<td>aData</td>
-<td>The data to be tested.  
+<td>aSignature</td>
+<td>The signature of the data, base64 encoded.  
 </td>
 </tr>
 
 <tr>
-<td>aData</td>
-<td>The data to be tested.  
+<td>aPublicKey</td>
+<td>The public part of the key used for signing, DER encoded  
+                  then base64 encoded.  
 </td>
 </tr>
 

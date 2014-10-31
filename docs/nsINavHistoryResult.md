@@ -35,8 +35,11 @@ Adds an observer for changes done in the result.
 </tr>
 
 <tr>
-<td>aObserver</td>
-<td>       a result observer.  
+<td>aOwnsWeak</td>
+<td>       If false, the result will keep an owning reference to the observer,  
+       which must be removed using removeObserver.  
+       If true, the result will keep a weak reference to the observer, which  
+       must implement nsISupportsWeakReference.  
 </td>
 </tr>
 

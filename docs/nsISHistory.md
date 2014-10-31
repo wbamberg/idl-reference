@@ -45,9 +45,10 @@ given index.
 </tr>
 
 <tr>
-<td>index</td>
-<td>The index value whose entry is requested.  
-                         The oldest entry is located at index == 0.  
+<td>modifyIndex</td>
+<td>A boolean flag that indicates if the current  
+                         index of session history should be modified   
+                         to the parameter index.  
 </td>
 </tr>
 

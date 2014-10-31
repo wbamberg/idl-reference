@@ -59,12 +59,9 @@ accesses before the fill or flush point is reached.
 </tr>
 
 <tr>
-<td>aLength</td>
-<td>   Count of contiguous bytes requested at the address A that satisfies  
-   (A & aAlignMask) == 0 in the buffer, starting from the current stream  
-   position, mapped to a buffer address B.  The stream implementation  
-   must pad from B to A by skipping bytes (if input stream) or storing  
-   zero bytes (if output stream).  
+<td>aAlignMask</td>
+<td>   Bit-mask computed by subtracting 1 from the power-of-two alignment  
+   modulus (e.g., 3 or sizeof(uint32_t)-1 for uint32_t alignment).  
 </td>
 </tr>
 
@@ -97,9 +94,9 @@ that returns non-null, putBuffer must be called.
 </tr>
 
 <tr>
-<td>aBuffer</td>
-<td>   A non-null pointer returned by getBuffer on the same stream buffer  
-   access object.  
+<td>aLength</td>
+<td>   The same count of contiguous bytes passed to the getBuffer call that  
+   returned aBuffer.  
 </td>
 </tr>
 

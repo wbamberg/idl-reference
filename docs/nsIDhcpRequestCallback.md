@@ -42,8 +42,8 @@ Callback function used to report the result of DHCP client request.
 </tr>
 
 <tr>
-<td>success</td>
-<td>       Boolean to indicate the operation is successful or not.  
+<td>dhcpInfo</td>
+<td>       An object to represent the successful DHCP request:  
 </td>
 </tr>
 

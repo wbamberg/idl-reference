@@ -53,19 +53,19 @@ copy operator equivalent that takes a rect
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to set region to  
+<td>aY yoffset of rect to set region to  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to set region to  
+<td>aWidth width of rect to set region to  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to set region to  
+<td>aHeight height of rect to set region to  
 </td>
 </tr>
 
@@ -116,19 +116,19 @@ destructively intersect a rect with this region
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to intersect with region  
+<td>aY yoffset of rect to intersect with region  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to intersect with region  
+<td>aWidth width of rect to intersect with region  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to intersect with region  
+<td>aHeight height of rect to intersect with region  
 </td>
 </tr>
 
@@ -179,19 +179,19 @@ destructively union a rect with this region
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to union with region  
+<td>aY yoffset of rect to union with region  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to union with region  
+<td>aWidth width of rect to union with region  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to union with region  
+<td>aHeight height of rect to union with region  
 </td>
 </tr>
 
@@ -242,19 +242,19 @@ destructively subtract a rect from this region
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to subtract with region  
+<td>aY yoffset of rect to subtract with region  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to subtract with region  
+<td>aWidth width of rect to subtract with region  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aX xoffset of rect to subtract with region  
+<td>aHeight height of rect to subtract with region  
 </td>
 </tr>
 
@@ -328,19 +328,19 @@ rectangle that completely contains the region.
 
 <tr>
 <td></td>
-<td>aX out parameter for xoffset of bounding rect for region  
+<td>aY out parameter for yoffset of bounding rect for region  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aX out parameter for xoffset of bounding rect for region  
+<td>aWidth out parameter for width of bounding rect for region  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aX out parameter for xoffset of bounding rect for region  
+<td>aHeight out parameter for height of bounding rect for region  
 </td>
 </tr>
 
@@ -368,7 +368,7 @@ offsets the region in x and y
 
 <tr>
 <td></td>
-<td>xoffset  pixel offset in x  
+<td>yoffset  pixel offset in y  
 </td>
 </tr>
 

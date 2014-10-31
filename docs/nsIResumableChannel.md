@@ -38,8 +38,9 @@ In both of these cases, no OnDataAvailable will be called, and
 </tr>
 
 <tr>
-<td>startPos</td>
-<td>the starting offset, in bytes, to use to download  
+<td>entityID</td>
+<td>information about the file, to match before obtaining  
+ the file. Pass an empty string to use anything.  
 </td>
 </tr>
 

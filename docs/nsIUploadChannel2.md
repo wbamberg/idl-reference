@@ -42,26 +42,29 @@ Most implementations of this interface require that the stream:
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       The stream to be uploaded by this channel.  
+<td>aContentType</td>
+<td>       This value will replace any existing Content-Type  
+       header on the HTTP request, regardless of whether  
+       or not its empty.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       The stream to be uploaded by this channel.  
+<td>aContentLength</td>
+<td>       A value of -1 indicates that the length of the stream should be  
+       determined by calling the stream's |available| method.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       The stream to be uploaded by this channel.  
+<td>aMethod</td>
+<td>       The HTTP request method to set on the stream.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       The stream to be uploaded by this channel.  
+<td>aStreamHasHeaders</td>
+<td>       True if the stream already contains headers for the HTTP request.  
 </td>
 </tr>
 

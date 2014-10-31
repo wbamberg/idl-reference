@@ -71,20 +71,25 @@ consuming the data stream.
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>Content type of the data.  
+<td>aIsContentPreferred</td>
+<td>Indicates whether the content should be  
+                            preferred by this listener.  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>Content type of the data.  
+<td>aRequest</td>
+<td>Request that is providing the data.  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>Content type of the data.  
+<td>aContentHandler</td>
+<td>nsIStreamListener that will consume the data.  
+                            This should be set to <code>nullptr</code> if  
+                            this content listener can't handle the content  
+                            type; in this case, doContent should also fail  
+                            (i.e., return failure nsresult).  
 </td>
 </tr>
 
@@ -127,8 +132,14 @@ between isPreferred and canHandleContent.
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>Content type of the data.  
+<td>aDesiredContentType</td>
+<td>Indicates that aContentType must be converted  
+                            to aDesiredContentType before processing the  
+                            data.  This causes a stream converted to be  
+                            inserted into the nsIStreamListener chain.  
+                            This argument can be <code>nullptr</code> if  
+                            the content should be consumed directly as  
+                            aContentType.  
 </td>
 </tr>
 
@@ -172,14 +183,21 @@ hierarchy.
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>Content type of the data.  
+<td>aIsContentPreferred</td>
+<td>Indicates whether the content should be  
+                            preferred by this listener.  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>Content type of the data.  
+<td>aDesiredContentType</td>
+<td>Indicates that aContentType must be converted  
+                            to aDesiredContentType before processing the  
+                            data.  This causes a stream converted to be  
+                            inserted into the nsIStreamListener chain.  
+                            This argument can be <code>nullptr</code> if  
+                            the content should be consumed directly as  
+                            aContentType.  
 </td>
 </tr>
 

@@ -44,8 +44,8 @@ Add some extra data to be submitted with a crash report.
 </tr>
 
 <tr>
-<td>key</td>
-<td>       Name of the data to be added.  
+<td>data</td>
+<td>       Data to be added.  
 </td>
 </tr>
 
@@ -100,8 +100,8 @@ Register a given memory range to be included in the crash report.
 </tr>
 
 <tr>
-<td>ptr</td>
-<td>       The starting address for the bytes.  
+<td>size</td>
+<td>       The number of bytes to include.  
 </td>
 </tr>
 

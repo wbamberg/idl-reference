@@ -96,8 +96,9 @@ new block returned.  If the allocation fails, the process aborts.
 </tr>
 
 <tr>
-<td>ptr</td>
-<td>- the block of memory to reallocate  
+<td>size</td>
+<td>- the new size  
+@result the reallocated block of memory  
 </td>
 </tr>
 

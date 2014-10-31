@@ -46,7 +46,7 @@ set profile prefs or bookmarks, for example), use aStartup.doStartup.
 
 <tr>
 <td></td>
-<td>aStartup nsIProfileStartup object to use during migration.  
+<td>aKey     optional key of a migrator to use to skip source selection.  
 </td>
 </tr>
 

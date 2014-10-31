@@ -35,20 +35,20 @@ Import a certificate file.
 </tr>
 
 <tr>
-<td>id</td>
-<td>       Request ID.  
+<td>certBlob</td>
+<td>       A Blob object containing raw data of certificate to be imported.  
 </td>
 </tr>
 
 <tr>
-<td>id</td>
-<td>       Request ID.  
+<td>certPassword</td>
+<td>       Password of certificate.  
 </td>
 </tr>
 
 <tr>
-<td>id</td>
-<td>       Request ID.  
+<td>certNickname</td>
+<td>       User assigned nickname for imported certificate.  
 </td>
 </tr>
 
@@ -75,8 +75,8 @@ Delete an imported certificate file
 </tr>
 
 <tr>
-<td>id</td>
-<td>       Request ID.  
+<td>certNickname</td>
+<td>       Certificate nickname to delete.  
 </td>
 </tr>
 

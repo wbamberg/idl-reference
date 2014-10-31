@@ -45,32 +45,34 @@ with the history service.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The nsIURI object representing the URI of the page being expired.  
+<td>aVisitTime</td>
+<td>       The time, in microseconds, that the page being expired was visited.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The nsIURI object representing the URI of the page being expired.  
+<td>aWholeEntry</td>
+<td>       Indicates if this is the last visit for this URI.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The nsIURI object representing the URI of the page being expired.  
+<td>aGUID</td>
+<td>       The unique ID associated with the page.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The nsIURI object representing the URI of the page being expired.  
+<td>aReason</td>
+<td>       Indicates the reason for the removal.  
+       See nsINavHistoryObserver::REASON_* constants.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The nsIURI object representing the URI of the page being expired.  
+<td>aTransitionType</td>
+<td>       If it's a valid TRANSITION_* value, all visits of the specified type  
+       have been removed.  
 </td>
 </tr>
 

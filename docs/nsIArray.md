@@ -60,14 +60,14 @@ this method, but exceptions are thrown in other circumstances
 </tr>
 
 <tr>
-<td>index</td>
-<td>position of element  
+<td>uuid</td>
+<td>the IID of the requested interface  
 </td>
 </tr>
 
 <tr>
-<td>index</td>
-<td>position of element  
+<td>result</td>
+<td>the object, QI'd to the requested interface  
 </td>
 </tr>
 
@@ -103,10 +103,8 @@ is not found.
 </tr>
 
 <tr>
-<td>startIndex</td>
-<td>The initial element to search in the array  
-                  To start at the beginning, use 0 as the  
-                  startIndex  
+<td>element</td>
+<td>The element you are looking for  
 </td>
 </tr>
 

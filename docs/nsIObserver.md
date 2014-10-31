@@ -40,14 +40,15 @@ notifications in the implemention of observe.
 </tr>
 
 <tr>
-<td>aSubject</td>
-<td>: Notification specific interface pointer.  
+<td>aTopic</td>
+<td>: The notification topic or subject.  
 </td>
 </tr>
 
 <tr>
-<td>aSubject</td>
-<td>: Notification specific interface pointer.  
+<td>aData</td>
+<td>: Notification specific wide string.  
+                   subject event.  
 </td>
 </tr>
 

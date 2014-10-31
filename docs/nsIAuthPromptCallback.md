@@ -36,8 +36,9 @@ Authentication information is available.
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>       The context as passed to promptPasswordAsync  
+<td>aAuthInfo</td>
+<td>       Authentication information. Must be the same object that was passed  
+       to promptPasswordAsync.  
 </td>
 </tr>
 
@@ -66,8 +67,10 @@ Notification that the prompt was cancelled.
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>       The context that was passed to promptPasswordAsync.  
+<td>userCancel</td>
+<td>       If false, this prompt was cancelled by calling the  
+       the cancel method on the nsICancelable; otherwise,  
+       it was cancelled by the user.  
 </td>
 </tr>
 

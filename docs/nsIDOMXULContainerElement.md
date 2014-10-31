@@ -26,8 +26,8 @@ container.
 </tr>
 
 <tr>
-<td>aLabel</td>
-<td>- the label for the new item  
+<td>aValue</td>
+<td>- the value of the new item  
 </td>
 </tr>
 
@@ -54,14 +54,14 @@ container at the specified position.
 </tr>
 
 <tr>
-<td>aIndex</td>
-<td>- the index where the new item will be inserted  
+<td>aLabel</td>
+<td>- the label for the new item  
 </td>
 </tr>
 
 <tr>
-<td>aIndex</td>
-<td>- the index where the new item will be inserted  
+<td>aValue</td>
+<td>- the value of the new item  
 </td>
 </tr>
 

@@ -44,16 +44,15 @@ and proxy object (or list of proxy objects).
 </tr>
 
 <tr>
-<td>aProxyService</td>
-<td>       A reference to the Protocol Proxy Service.  This is passed so that  
-       implementations may easily access methods such as newProxyInfo.  
+<td>aURI</td>
+<td>       The URI for which these proxy settings apply.  
 </td>
 </tr>
 
 <tr>
-<td>aProxyService</td>
-<td>       A reference to the Protocol Proxy Service.  This is passed so that  
-       implementations may easily access methods such as newProxyInfo.  
+<td>aProxy</td>
+<td>       The proxy (or list of proxies) that would be used by default for  
+       the given URI.  This may be null.  
 </td>
 </tr>
 

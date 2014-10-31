@@ -45,14 +45,16 @@ disk") for content specified by aLauncher.
 </tr>
 
 <tr>
-<td>aLauncher</td>
-<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+<td>aWindowContext</td>
+<td>       Window associated with action.  
 </td>
 </tr>
 
 <tr>
-<td>aLauncher</td>
-<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+<td>aReason</td>
+<td>       One of the constants from above. It indicates why the dialog is  
+       shown. Implementors should treat unknown reasons like  
+       REASON_CANTHANDLE.  
 </td>
 </tr>
 
@@ -91,26 +93,28 @@ Returns the a nsIFile for the file name/location selected.
 </tr>
 
 <tr>
-<td>aLauncher</td>
-<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+<td>aWindowContext</td>
+<td>       Window associated with action.  
 </td>
 </tr>
 
 <tr>
-<td>aLauncher</td>
-<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+<td>aDefaultFileName</td>
+<td>       Default file name to provide (can be null)  
 </td>
 </tr>
 
 <tr>
-<td>aLauncher</td>
-<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+<td>aSuggestedFileExtension</td>
+<td>       Sugested file extension  
 </td>
 </tr>
 
 <tr>
-<td>aLauncher</td>
-<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+<td>aForcePrompt</td>
+<td>       Set to true to force prompting the user for thet file  
+       name/location, otherwise perferences may control if the user is  
+       prompted.  
 </td>
 </tr>
 
@@ -148,26 +152,28 @@ selected file.
 </tr>
 
 <tr>
-<td>aLauncher</td>
-<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+<td>aWindowContext</td>
+<td>       Window associated with action.  
 </td>
 </tr>
 
 <tr>
-<td>aLauncher</td>
-<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+<td>aDefaultFileName</td>
+<td>       Default file name to provide (can be null)  
 </td>
 </tr>
 
 <tr>
-<td>aLauncher</td>
-<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+<td>aSuggestedFileExtension</td>
+<td>       Sugested file extension  
 </td>
 </tr>
 
 <tr>
-<td>aLauncher</td>
-<td>       A nsIHelperAppLauncher to be invoked when a file is selected.  
+<td>aForcePrompt</td>
+<td>       Set to true to force prompting the user for thet file  
+       name/location, otherwise perferences may control if the user is  
+       prompted.  
 </td>
 </tr>
 

@@ -39,20 +39,24 @@ Initialize this stream.
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       The underlying stream to read from.  
+<td>aCharset</td>
+<td>       The character encoding to use for converting the bytes of the  
+       stream. A null charset will be interpreted as UTF-8.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       The underlying stream to read from.  
+<td>aBufferSize</td>
+<td>       How many bytes to buffer.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       The underlying stream to read from.  
+<td>aReplacementChar</td>
+<td>       The character to replace unknown byte sequences in the stream  
+       with. The standard replacement character is U+FFFD.  
+       A value of 0x0000 will cause an exception to be thrown if unknown  
+       byte sequences are encountered in the stream.  
 </td>
 </tr>
 

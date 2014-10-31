@@ -94,72 +94,65 @@ to have the caller create a brand-new window.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>Must not be null.  This is the window that the caller wants  
-       to use as the parent for the new window.  Generally,  
-       nsIWindowProvider implementors can expect to be somehow related to  
-       aParent; the relationship may depend on the nsIWindowProvider  
-       implementation.  
+<td>aChromeFlags</td>
+<td>The chrome flags the caller will use to create a new  
+       window if this provider returns null.  See nsIWebBrowserChrome for  
+       the possible values of this field.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>Must not be null.  This is the window that the caller wants  
-       to use as the parent for the new window.  Generally,  
-       nsIWindowProvider implementors can expect to be somehow related to  
-       aParent; the relationship may depend on the nsIWindowProvider  
-       implementation.  
+<td>aPositionSpecified</td>
+<td>Whether the attempt to create a window is trying  
+       to specify a position for the new window.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>Must not be null.  This is the window that the caller wants  
-       to use as the parent for the new window.  Generally,  
-       nsIWindowProvider implementors can expect to be somehow related to  
-       aParent; the relationship may depend on the nsIWindowProvider  
-       implementation.  
+<td>aSizeSpecified</td>
+<td>Whether the attempt to create a window is trying to  
+       specify a size for the new window.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>Must not be null.  This is the window that the caller wants  
-       to use as the parent for the new window.  Generally,  
-       nsIWindowProvider implementors can expect to be somehow related to  
-       aParent; the relationship may depend on the nsIWindowProvider  
-       implementation.  
+<td>aURI</td>
+<td>The URI to be loaded in the new window (may be NULL).  The  
+       nsIWindowProvider implementation must not load this URI into the  
+       window it returns.  This URI is provided solely to help the  
+       nsIWindowProvider implementation make decisions; the caller will  
+       handle loading the URI in the window returned if provideWindow  
+       returns a window.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>Must not be null.  This is the window that the caller wants  
-       to use as the parent for the new window.  Generally,  
-       nsIWindowProvider implementors can expect to be somehow related to  
-       aParent; the relationship may depend on the nsIWindowProvider  
-       implementation.  
+<td>aName</td>
+<td>The name of the window being opened.  Setting the name on the  
+       return value of provideWindow will be handled by the caller; aName  
+       is provided solely to help the nsIWindowProvider implementation  
+       make decisions.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>Must not be null.  This is the window that the caller wants  
-       to use as the parent for the new window.  Generally,  
-       nsIWindowProvider implementors can expect to be somehow related to  
-       aParent; the relationship may depend on the nsIWindowProvider  
-       implementation.  
+<td>aFeatures</td>
+<td>The feature string for the window being opened.  This may  
+       be empty.  The nsIWindowProvider implementation is allowed to apply  
+       the feature string to the window it returns in any way it sees fit.  
+       See the nsIWindowWatcher interface for details on feature strings.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>Must not be null.  This is the window that the caller wants  
-       to use as the parent for the new window.  Generally,  
-       nsIWindowProvider implementors can expect to be somehow related to  
-       aParent; the relationship may depend on the nsIWindowProvider  
-       implementation.  
+<td>aWindowIsNew</td>
+<td>[out] Whether the window being returned was just  
+       created by the window provider implementation.  This can be used by  
+       callers to keep track of which windows were opened by the user as  
+       opposed to being opened programmatically.  This should be set to  
+       false if the window being returned existed before the  
+       provideWindow() call.  The value of this out parameter is  
+       meaningless if provideWindow() returns null.  
 </td>
 </tr>
 

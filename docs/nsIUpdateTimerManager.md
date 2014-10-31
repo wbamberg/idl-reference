@@ -59,15 +59,16 @@ the values are as follows
 
 <tr>
 <td></td>
-<td>id  
-         An id that identifies the interval, used for persistence  
+<td>callback  
+         A nsITimerCallback object that is notified when the interval  
+         expires  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>id  
-         An id that identifies the interval, used for persistence  
+<td>interval  
+         The length of time, in seconds, of the interval  
 </td>
 </tr>
 

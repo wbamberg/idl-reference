@@ -31,11 +31,8 @@ to the underlying OS).
 </tr>
 
 <tr>
-<td>parent</td>
-<td>parent window, if any. null if not. the newly created  
-window should be made a child/dependent window of  
-the parent, if any (and if the concept applies  
-to the underlying OS).  
+<td>chromeFlags</td>
+<td>chrome features from nsIWebBrowserChrome  
 </td>
 </tr>
 

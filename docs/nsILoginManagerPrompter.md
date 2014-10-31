@@ -95,8 +95,8 @@ user consents, modifyLogin() will be called.
 </tr>
 
 <tr>
-<td>aOldLogin</td>
-<td>       The existing login (with the old password).  
+<td>aNewLogin</td>
+<td>       The new login.  
 </td>
 </tr>
 
@@ -133,14 +133,14 @@ Note: Because the caller does not know the username of the login
 </tr>
 
 <tr>
-<td>logins</td>
-<td>       An array of existing logins.  
+<td>count</td>
+<td>       (length of the array)  
 </td>
 </tr>
 
 <tr>
-<td>logins</td>
-<td>       An array of existing logins.  
+<td>aNewLogin</td>
+<td>       The new login.  
 </td>
 </tr>
 

@@ -32,8 +32,8 @@ Adds a new child bookmark to this folder.
 
 <tr>
 <td></td>
-<td>aTitle  
-         The title of bookmark.  
+<td>aURI  
+         The uri of bookmark.  
 </td>
 </tr>
 

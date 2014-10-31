@@ -61,14 +61,16 @@ reported before any unparsed entities that use it.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The notation name.  
+<td>publicId</td>
+<td>The notation's public identifier, or null if none was  
+                 given.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>The notation name.  
+<td>systemId</td>
+<td>The notation's system identifier, or null if none was  
+                 given.  
 </td>
 </tr>
 
@@ -105,20 +107,22 @@ fully before passing it to the application.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The unparsed entity's name.  
+<td>publicId</td>
+<td>The entity's public identifier, or null if none was  
+                 given.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>The unparsed entity's name.  
+<td>systemId</td>
+<td>The entity's system identifier, or null if none was  
+                 given.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>The unparsed entity's name.  
+<td>notationName</td>
+<td>The name of the associated notation.  
 </td>
 </tr>
 

@@ -57,10 +57,9 @@ Record an event associated with the given window ID.
 </tr>
 
 <tr>
-<td>string</td>
-<td>aId  
-       The ID of the inner window for which the event occurred or "jsm" for  
-       messages logged from JavaScript modules..  
+<td>object</td>
+<td>aEvent  
+       A JavaScript object you want to store.  
 </td>
 </tr>
 

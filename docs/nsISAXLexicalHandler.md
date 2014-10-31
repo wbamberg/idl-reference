@@ -84,14 +84,18 @@ startElement event.
 </tr>
 
 <tr>
-<td>name</td>
-<td>The document type name.  
+<td>publicId</td>
+<td>The declared public identifier for the  
+       external DTD subset, or null if none was declared.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>The document type name.  
+<td>systemId</td>
+<td>The declared system identifier for the  
+       external DTD subset, or null if none was declared.  
+       (Note that this is not resolved against the document  
+       base URI.)  
 </td>
 </tr>
 

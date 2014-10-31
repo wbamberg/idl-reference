@@ -137,20 +137,20 @@ Enable or disable Wifi Tethering
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean that indicates whether tethering should be enabled (true) or disabled (false).  
+<td>network</td>
+<td>       The Wifi network interface with at least name of network interface.  
 </td>
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean that indicates whether tethering should be enabled (true) or disabled (false).  
+<td>config</td>
+<td>       The Wifi Tethering configuration from settings db.  
 </td>
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean that indicates whether tethering should be enabled (true) or disabled (false).  
+<td>callback</td>
+<td>       Callback function used to report status to WifiManager.  
 </td>
 </tr>
 
@@ -181,8 +181,9 @@ Add host route to the specified network into routing table.
 </tr>
 
 <tr>
-<td>network</td>
-<td>       The network interface where the host to be routed to.  
+<td>host</td>
+<td>       The host to be added.  
+       The host will be resolved in advance if it's not an ip-address.  
 </td>
 </tr>
 
@@ -213,8 +214,9 @@ Remove host route to the specified network from routing table.
 </tr>
 
 <tr>
-<td>network</td>
-<td>       The network interface where the routing to be removed from.  
+<td>host</td>
+<td>       The host routed to the network.  
+       The host will be resolved in advance if it's not an ip-address.  
 </td>
 </tr>
 

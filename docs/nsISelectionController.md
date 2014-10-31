@@ -36,8 +36,8 @@ GetSelection will return the selection that the presentation
 </tr>
 
 <tr>
-<td>aType</td>
-<td>will hold the type of selection //SelectionType  
+<td>_return</td>
+<td>will hold the return value  
 </td>
 </tr>
 
@@ -74,14 +74,21 @@ reflow. It's dangerous for some objects. See bug 418470 comment 12.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the selection to scroll into view. //SelectionType  
+<td>aRegion</td>
+<td>the region inside the selection to scroll into view. //SelectionRegion  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the selection to scroll into view. //SelectionType  
+<td>aFlags</td>
+<td>the scroll flags.  Valid bits include:  
+SCROLL_SYNCHRONOUS: when set, scrolls the selection into view  
+before returning. If not set, posts a request which is processed  
+at some point after the method returns.  
+SCROLL_FIRST_ANCESTOR_ONLY: if set, only the first ancestor will be scrolled  
+into view.  
+SCROLL_OVERFLOW_HIDDEN: if set, scrolls even if the overflow is specified  
+as hidden.  
 </td>
 </tr>
 

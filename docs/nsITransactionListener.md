@@ -34,8 +34,12 @@ throwing an error.
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager doing the transaction.  
+<td>aTransaction</td>
+<td>the transaction being executed.  
+@result boolean value returned by listener which indicates  
+its desire to interrupt normal control flow. Listeners should  
+return true if they want to interrupt normal control flow, without  
+throwing an error.  
 </td>
 </tr>
 
@@ -62,14 +66,15 @@ the transaction.
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager that did the transaction.  
+<td>aTransaction</td>
+<td>the transaction that was executed.  
 </td>
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager that did the transaction.  
+<td>aDoResult</td>
+<td>the nsresult returned after executing  
+the transaction.  
 </td>
 </tr>
 
@@ -99,8 +104,13 @@ control flow by throwing an nsresult that indicates an error.
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager undoing the transaction.  
+<td>aTransaction</td>
+<td>the transaction being undone.  
+@result boolean value returned by listener which indicates  
+its desire to interrupt normal control flow. Listeners should  
+return true if they want to interrupt normal control flow, without  
+throwing an error. Note that listeners can also interrupt normal  
+control flow by throwing an nsresult that indicates an error.  
 </td>
 </tr>
 
@@ -126,14 +136,14 @@ a transaction.
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager undoing the transaction.  
+<td>aTransaction</td>
+<td>the transaction being undone.  
 </td>
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager undoing the transaction.  
+<td>aUndoResult</td>
+<td>the nsresult returned after undoing the transaction.  
 </td>
 </tr>
 
@@ -163,8 +173,13 @@ control flow by throwing an nsresult that indicates an error.
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager redoing the transaction.  
+<td>aTransaction</td>
+<td>the transaction being redone.  
+@result boolean value returned by listener which indicates  
+its desire to interrupt normal control flow. Listeners should  
+return true if they want to interrupt normal control flow, without  
+throwing an error. Note that listeners can also interrupt normal  
+control flow by throwing an nsresult that indicates an error.  
 </td>
 </tr>
 
@@ -190,14 +205,14 @@ a transaction.
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager redoing the transaction.  
+<td>aTransaction</td>
+<td>the transaction being redone.  
 </td>
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager redoing the transaction.  
+<td>aRedoResult</td>
+<td>the nsresult returned after redoing the transaction.  
 </td>
 </tr>
 
@@ -249,8 +264,8 @@ Called after a transaction manager begins a batch.
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager that began a batch.  
+<td>aResult</td>
+<td>the nsresult returned after beginning a batch.  
 </td>
 </tr>
 
@@ -302,8 +317,8 @@ Called after a transaction manager ends a batch.
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager ending a batch.  
+<td>aResult</td>
+<td>the nsresult returned after ending a batch.  
 </td>
 </tr>
 
@@ -335,14 +350,19 @@ control flow by throwing an nsresult that indicates an error.
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager ending a batch.  
+<td>aTopTransaction</td>
+<td>the transaction at the top of the undo stack.  
 </td>
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager ending a batch.  
+<td>aTransactionToMerge</td>
+<td>the transaction to merge.  
+@result boolean value returned by listener which indicates  
+its desire to interrupt normal control flow. Listeners should  
+return true if they want to interrupt normal control flow, without  
+throwing an error. Note that listeners can also interrupt normal  
+control flow by throwing an nsresult that indicates an error.  
 </td>
 </tr>
 
@@ -373,32 +393,33 @@ want to interrupt normal control flow, without throwing an error.
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager ending a batch.  
+<td>aTopTransaction</td>
+<td>the transaction at the top of the undo stack.  
 </td>
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager ending a batch.  
+<td>aTransactionToMerge</td>
+<td>the transaction to merge.  
 </td>
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager ending a batch.  
+<td>aDidMerge</td>
+<td>true if transaction was merged, else false.  
 </td>
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager ending a batch.  
+<td>aMergeResult</td>
+<td>the nsresult returned after the merge attempt.  
 </td>
 </tr>
 
 <tr>
-<td>aManager</td>
-<td>the transaction manager ending a batch.  
+<td>aInterrupt</td>
+<td>listeners should set this to PR_TRUE if they  
+want to interrupt normal control flow, without throwing an error.  
 </td>
 </tr>
 

@@ -28,16 +28,14 @@ Returns the coordinates of the image.
 </tr>
 
 <tr>
-<td>coordType</td>
-<td>specifies coordinates origin (for available constants  
-                  refer to nsIAccessibleCoordinateType)  
+<td>x</td>
+<td>the x coordinate  
 </td>
 </tr>
 
 <tr>
-<td>coordType</td>
-<td>specifies coordinates origin (for available constants  
-                  refer to nsIAccessibleCoordinateType)  
+<td>y</td>
+<td>the y coordinate  
 </td>
 </tr>
 
@@ -62,8 +60,8 @@ Returns the size of the image.
 </tr>
 
 <tr>
-<td>width</td>
-<td>the heigth  
+<td>height</td>
+<td>the width  
 </td>
 </tr>
 

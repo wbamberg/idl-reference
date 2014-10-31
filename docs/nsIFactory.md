@@ -39,18 +39,19 @@ Creates an instance of a component.
 </tr>
 
 <tr>
-<td>aOuter</td>
-<td>Pointer to a component that wishes to be aggregated  
-              in the resulting instance. This will be nullptr if no  
-              aggregation is requested.  
+<td>iid</td>
+<td>The IID of the interface being requested in  
+              the component which is being currently created.  
 </td>
 </tr>
 
 <tr>
-<td>aOuter</td>
-<td>Pointer to a component that wishes to be aggregated  
-              in the resulting instance. This will be nullptr if no  
-              aggregation is requested.  
+<td>result</td>
+<td>[out] Pointer to the newly created instance, if successful.  
+@throws NS_NOINTERFACE - Interface not accessible.  
+@throws NS_ERROR_NO_AGGREGATION - if an 'outer' object is supplied, but the  
+                                  component is not aggregatable.  
+        NS_ERROR* - Method failure.  
 </td>
 </tr>
 

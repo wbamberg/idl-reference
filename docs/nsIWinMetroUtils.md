@@ -76,37 +76,33 @@ Pins a new tile to the Windows 8 start screen.
 </tr>
 
 <tr>
-<td>aTileID</td>
-<td>An ID which can later be used to remove the tile  
-                       ID must only contain valid filesystem characters  
+<td>aShortName</td>
+<td>A short name for the tile  
 </td>
 </tr>
 
 <tr>
-<td>aTileID</td>
-<td>An ID which can later be used to remove the tile  
-                       ID must only contain valid filesystem characters  
+<td>aDiplayName</td>
+<td>The name that will be displayed on the tile  
 </td>
 </tr>
 
 <tr>
-<td>aTileID</td>
-<td>An ID which can later be used to remove the tile  
-                       ID must only contain valid filesystem characters  
+<td>aActivationArgs</td>
+<td>The arguments to pass to the browser upon   
+                       activation of the tile  
 </td>
 </tr>
 
 <tr>
-<td>aTileID</td>
-<td>An ID which can later be used to remove the tile  
-                       ID must only contain valid filesystem characters  
+<td>aTileImage</td>
+<td>An image for the normal tile view  
 </td>
 </tr>
 
 <tr>
-<td>aTileID</td>
-<td>An ID which can later be used to remove the tile  
-                       ID must only contain valid filesystem characters  
+<td>aSmallTileImage</td>
+<td>An image for the small tile view  
 </td>
 </tr>
 

@@ -59,16 +59,16 @@ a byte stream using the character set specified.
 </tr>
 
 <tr>
-<td>root</td>
-<td>The root of the subtree to be serialized. This could  
-            be any node, including a Document.  
+<td>stream</td>
+<td>The byte stream to which the subtree is serialized.  
 </td>
 </tr>
 
 <tr>
-<td>root</td>
-<td>The root of the subtree to be serialized. This could  
-            be any node, including a Document.  
+<td>charset</td>
+<td>The name of the character set to use for the encoding  
+               to a byte stream.  If this string is empty and root is  
+               a document, the document's character set will be used.  
 </td>
 </tr>
 

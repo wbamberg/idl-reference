@@ -44,26 +44,39 @@ will be modified.
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the uri to add the permission for  
+<td>type</td>
+<td>a case-sensitive ASCII string, identifying the consumer.  
+                   Consumers should choose this string to be unique, with  
+                   respect to other consumers.  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the uri to add the permission for  
+<td>permission</td>
+<td>an integer representing the desired action (e.g. allow  
+                   or deny). The interpretation of this number is up to the  
+                   consumer, and may represent different actions for different  
+                   types. Consumers may use one of the enumerated permission  
+                   actions defined above, for convenience.  
+                   NOTE: UNKNOWN_ACTION (0) is reserved to represent the  
+                   default permission when no entry is found for a host, and  
+                   should not be used by consumers to indicate otherwise.  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the uri to add the permission for  
+<td>expiretype</td>
+<td>a constant defining whether this permission should  
+                   never expire (EXPIRE_NEVER), expire at the end of the  
+                   session (EXPIRE_SESSION), or expire at a specified time  
+                   (EXPIRE_TIME).  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the uri to add the permission for  
+<td>expiretime</td>
+<td>an integer representation of when this permission  
+                   should be forgotten (milliseconds since Jan 1 1970 0:00:00).   
 </td>
 </tr>
 
@@ -102,8 +115,10 @@ to.
 </tr>
 
 <tr>
-<td>host</td>
-<td>the host to remove the permission for  
+<td>type</td>
+<td>a case-sensitive ASCII string, identifying the consumer.   
+              The type must have been previously registered using the  
+              add() method.  
 </td>
 </tr>
 
@@ -147,14 +162,15 @@ Test whether a website has permission to perform the given action.
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the uri to be tested  
+<td>type</td>
+<td>a case-sensitive ASCII string, identifying the consumer  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the uri to be tested  
+<td>return</td>
+<td>see add(), param permission. returns UNKNOWN_ACTION when  
+               there is no stored permission for this uri and / or type.  
 </td>
 </tr>
 
@@ -194,14 +210,15 @@ This requires an exact hostname match, subdomains are not a match.
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the uri to be tested  
+<td>type</td>
+<td>a case-sensitive ASCII string, identifying the consumer  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>the uri to be tested  
+<td>return</td>
+<td>see add(), param permission. returns UNKNOWN_ACTION when  
+               there is no stored permission for this uri and / or type.  
 </td>
 </tr>
 
@@ -236,14 +253,15 @@ System principals will always have permissions granted.
 </tr>
 
 <tr>
-<td>principal</td>
-<td>the principal  
+<td>type</td>
+<td>a case-sensitive ASCII string, identifying the consumer  
 </td>
 </tr>
 
 <tr>
-<td>principal</td>
-<td>the principal  
+<td>return</td>
+<td>see add(), param permission. returns UNKNOWN_ACTION when  
+                 there is no stored permission for this uri and / or type.  
 </td>
 </tr>
 
@@ -275,14 +293,16 @@ Get the permission object associated with the given principal and action.
 </tr>
 
 <tr>
-<td>principal</td>
-<td>The principal  
+<td>type</td>
+<td>A case-sensitive ASCII string identifying the consumer  
 </td>
 </tr>
 
 <tr>
-<td>principal</td>
-<td>The principal  
+<td>exactHost</td>
+<td>If true, only the specific host will be matched,  
+                 @see testExactPermission. If false, subdomains will  
+                 also be searched, @see testPermission.  
 </td>
 </tr>
 
@@ -318,8 +338,9 @@ Remove all permissions associated with a given app id.
 </tr>
 
 <tr>
-<td>aAppId</td>
-<td>The appId of the app  
+<td>aBrowserOnly</td>
+<td>Whether we should remove permissions associated with  
+                    a browser element (true) or all permissions (false).  
 </td>
 </tr>
 
@@ -359,7 +380,7 @@ method will silently return.
 <td>an integer representation of when this permission  
                           should be forgotten (milliseconds since  
                           Jan 1 1970 0:00:00), if it is currently  
-                          EXPIRE_SESSION.  
+                          EXPIRE_TIME.  
 </td>
 </tr>
 

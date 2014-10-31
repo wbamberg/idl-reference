@@ -43,23 +43,20 @@ can change over time due to changes in the internal state of the image.
 </tr>
 
 <tr>
-<td>aDest</td>
-<td>The size of the destination rect into which this image will be  
-             drawn, in device pixels.  
+<td>aWhichFrame</td>
+<td>Frame specifier of the FRAME_* variety.  
 </td>
 </tr>
 
 <tr>
-<td>aDest</td>
-<td>The size of the destination rect into which this image will be  
-             drawn, in device pixels.  
+<td>aFilter</td>
+<td>The filter to be used if we're scaling the image.  
 </td>
 </tr>
 
 <tr>
-<td>aDest</td>
-<td>The size of the destination rect into which this image will be  
-             drawn, in device pixels.  
+<td>aFlags</td>
+<td>Flags of the FLAG_* variety  
 </td>
 </tr>
 
@@ -91,8 +88,8 @@ need that, use SourceSurface::GetDataSurface.
 </tr>
 
 <tr>
-<td>aWhichFrame</td>
-<td>Frame specifier of the FRAME_* variety.  
+<td>aFlags</td>
+<td>Flags of the FLAG_* variety  
 </td>
 </tr>
 
@@ -239,38 +236,56 @@ copies of the image, which looks like this:
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>The Thebes context to draw the image to.  
+<td>aSize</td>
+<td>The size to which the image should be scaled before drawing.  
+             This requirement may be satisfied using HQ scaled frames,  
+             selecting from different resolution layers, drawing at a  
+             higher DPI, or just performing additional scaling on the  
+             graphics context. Callers can use optimalImageSizeForDest()  
+             to determine the best choice for this parameter if they have  
+             no special size requirements.  
 </td>
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>The Thebes context to draw the image to.  
+<td>aRegion</td>
+<td>The region in tiled image space which will be drawn onto the  
+               graphics context. aRegion is in the coordinate space of the  
+               image after it has been scaled to aSize - that is, the image  
+               is scaled first, and then aRegion is applied. When aFlags  
+               includes FLAG_CLAMP, the image will be extended to this area  
+               by clamping image sample coordinates. Otherwise, the image  
+               will be automatically tiled as necessary. aRegion can also  
+               optionally contain a second region which restricts the set of  
+               pixels we're allowed to sample from when drawing; this is  
+               only of use to callers which need to draw with pixel snapping.  
 </td>
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>The Thebes context to draw the image to.  
+<td>aWhichFrame</td>
+<td>Frame specifier of the FRAME_* variety.  
 </td>
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>The Thebes context to draw the image to.  
+<td>aFilter</td>
+<td>The filter to be used if we're scaling the image.  
 </td>
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>The Thebes context to draw the image to.  
+<td>aSVGContext</td>
+<td>If specified, SVG-related rendering context, such as  
+                   overridden attributes on the image document's root <svg>  
+                   node, and the size of the viewport that the full image  
+                   would occupy. Ignored for raster images.  
 </td>
 </tr>
 
 <tr>
-<td>aContext</td>
-<td>The Thebes context to draw the image to.  
+<td>aFlags</td>
+<td>Flags of the FLAG_* variety  
 </td>
 </tr>
 

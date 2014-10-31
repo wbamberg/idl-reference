@@ -43,17 +43,18 @@ send to the search engine, including the URI and postData, if applicable.
 
 <tr>
 <td></td>
-<td>data  
-        Data to add to the submission object.  
-        i.e. the search terms.  
+<td>responseType [optional]  
+        The MIME type that we'd like to receive in response  
+        to this submission.  If null, will default to "text/html".  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>data  
-        Data to add to the submission object.  
-        i.e. the search terms.  
+<td>purpose</td>
+<td>[optional]  
+       A string meant to indicate the context of the search request. This  
+       allows the search service to provide a different nsISearchSubmission  
+       depending on e.g. where the search is triggered in the UI.  
 </td>
 </tr>
 
@@ -93,14 +94,19 @@ be called on engines created via addEngineWithDetails.
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The parameter's name. Must not be null.  
+<td>value</td>
+<td>       The value to pass. If value is "{searchTerms}", it will be  
+       substituted with the user-entered data when retrieving the  
+       submission. Must not be null.  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The parameter's name. Must not be null.  
+<td>responseType</td>
+<td>       Since an engine can have several different request URLs,  
+       differentiated by response types, this parameter selects  
+       a request to add parameters to.  If null, will default  
+       to "text/html"  
 </td>
 </tr>
 
@@ -150,8 +156,8 @@ height. Returns null if icon with specified dimensions is not found.
 </tr>
 
 <tr>
-<td>width</td>
-<td>       Width of the requested icon.  
+<td>height</td>
+<td>       Height of the requested icon.  
 </td>
 </tr>
 

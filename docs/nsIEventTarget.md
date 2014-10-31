@@ -35,8 +35,9 @@ events, so this event would never run and has not been dispatched.
 </tr>
 
 <tr>
-<td>event</td>
-<td>  The event to dispatch.  
+<td>flags</td>
+<td>  The flags modifying event dispatch.  The flags are described in detail  
+  below.  
 </td>
 </tr>
 

@@ -39,8 +39,8 @@ This method is called when a client connection is accepted.
 </tr>
 
 <tr>
-<td>aServ</td>
-<td>       The server socket.  
+<td>aTransport</td>
+<td>       The connected socket transport.  
 </td>
 </tr>
 
@@ -72,8 +72,10 @@ The server socket is effectively dead after this notification.
 </tr>
 
 <tr>
-<td>aServ</td>
-<td>       The server socket.  
+<td>aStatus</td>
+<td>       The reason why the server socket stopped listening.  If the  
+       server socket was manually closed, then this value will be  
+       NS_BINDING_ABORTED.  
 </td>
 </tr>
 

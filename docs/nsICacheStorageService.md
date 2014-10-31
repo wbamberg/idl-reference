@@ -83,8 +83,9 @@ mechanism.
 </tr>
 
 <tr>
-<td>aLoadContextInfo</td>
-<td>   Mandatory reference to a load context information.  
+<td>aApplicationCache</td>
+<td>   Optional reference to an existing appcache.  When left null, this will  
+   work with offline cache as a whole.  
 </td>
 </tr>
 

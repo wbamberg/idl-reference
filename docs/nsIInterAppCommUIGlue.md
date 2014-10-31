@@ -35,23 +35,20 @@ Returns a promise.
 </tr>
 
 <tr>
-<td>callerID</td>
-<td>The generated UUID to identify the caller and  
-                          should be unique for each call.  
+<td>pubAppManifestURL</td>
+<td>The manifest URL of the publisher.  
 </td>
 </tr>
 
 <tr>
-<td>callerID</td>
-<td>The generated UUID to identify the caller and  
-                          should be unique for each call.  
+<td>keyword</td>
+<td>The IAC keyword.  
 </td>
 </tr>
 
 <tr>
-<td>callerID</td>
-<td>The generated UUID to identify the caller and  
-                          should be unique for each call.  
+<td>appsToSelect</td>
+<td>The IAC-eligible apps for selection.  
 </td>
 </tr>
 

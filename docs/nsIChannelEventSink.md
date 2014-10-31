@@ -69,20 +69,23 @@ callback must be done if this method throws!
 </tr>
 
 <tr>
-<td>oldChannel</td>
-<td>       The channel that's being redirected.  
+<td>newChannel</td>
+<td>       The new channel. This channel is not opened yet.  
 </td>
 </tr>
 
 <tr>
-<td>oldChannel</td>
-<td>       The channel that's being redirected.  
+<td>flags</td>
+<td>       Flags indicating the type of redirect. A bitmask consisting  
+       of flags from above.  
+       One of REDIRECT_TEMPORARY and REDIRECT_PERMANENT will always be  
+       set.  
 </td>
 </tr>
 
 <tr>
-<td>oldChannel</td>
-<td>       The channel that's being redirected.  
+<td>callback</td>
+<td>       Object to inform about the async result of this method  
 </td>
 </tr>
 

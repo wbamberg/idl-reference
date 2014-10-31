@@ -28,8 +28,8 @@ disk space being used by storages for the given origin.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI whose usage is being queried.  
+<td>aCallback</td>
+<td>       The callback that will be called when the usage is available.  
 </td>
 </tr>
 

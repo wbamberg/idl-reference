@@ -101,14 +101,14 @@ Called when an error occurs during the load
 </tr>
 
 <tr>
-<td>aSink</td>
-<td>the RDF/XML sink in which the error occurred  
+<td>aStatus</td>
+<td>the networking result code  
 </td>
 </tr>
 
 <tr>
-<td>aSink</td>
-<td>the RDF/XML sink in which the error occurred  
+<td>aErrorMsg</td>
+<td>an error message, if applicable  
 </td>
 </tr>
 

@@ -37,23 +37,20 @@ Tell the chrome process to listen on the port with the given parameters.
 </tr>
 
 <tr>
-<td>serverSocket</td>
-<td>       The server socket generated in the listen of nsIDOMTCPSocket  
-       on the child side.  
+<td>port</td>
+<td>       The port of the server socket.  
 </td>
 </tr>
 
 <tr>
-<td>serverSocket</td>
-<td>       The server socket generated in the listen of nsIDOMTCPSocket  
-       on the child side.  
+<td>backlog</td>
+<td>       The maximum length the queue of pending connections may grow to.  
 </td>
 </tr>
 
 <tr>
-<td>serverSocket</td>
-<td>       The server socket generated in the listen of nsIDOMTCPSocket  
-       on the child side.  
+<td>binaryType</td>
+<td>       "arraybuffer" to use UInt8 array instances or "string" to use String.  
 </td>
 </tr>
 

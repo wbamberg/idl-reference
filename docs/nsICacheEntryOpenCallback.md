@@ -41,9 +41,8 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
 </tr>
 
 <tr>
-<td>aEntry</td>
-<td>   An entry to examine.  Consumer has a chance to decide whether the  
-   entry is valid or not.  
+<td>aApplicationCache</td>
+<td>   Optional, application cache the entry has been found in, if any.  
 </td>
 </tr>
 
@@ -93,26 +92,29 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
 </tr>
 
 <tr>
-<td>aEntry</td>
-<td>   The entry bound to the originally requested URI.  May be null when  
-   loading from a particular application cache and the URI has not  
-   been found in that application cache.  
+<td>aNew</td>
+<td>   Whether no data so far has been stored for this entry, i.e. reading  
+   it will just fail.  When aNew is true, a server request should be  
+   made and data stored to this new entry.  
 </td>
 </tr>
 
 <tr>
-<td>aEntry</td>
-<td>   The entry bound to the originally requested URI.  May be null when  
-   loading from a particular application cache and the URI has not  
-   been found in that application cache.  
+<td>aApplicationCache</td>
+<td>   When an entry had been found in an application cache, this is the  
+   given application cache.  It should be associated with the loading  
+   channel.  
 </td>
 </tr>
 
 <tr>
-<td>aEntry</td>
-<td>   The entry bound to the originally requested URI.  May be null when  
-   loading from a particular application cache and the URI has not  
-   been found in that application cache.  
+<td>aResult</td>
+<td>   Result of the request.  This may be a failure only when one of these  
+   issues occur:  
+   - the cache storage service could not be started due to some unexpected  
+     faulure  
+   - there is not enough disk space to create new entries  
+   - cache entry was not found in a given application cache  
 </td>
 </tr>
 

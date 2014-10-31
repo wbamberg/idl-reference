@@ -42,16 +42,18 @@ This method initializes a UDP socket.
 </tr>
 
 <tr>
-<td>aPort</td>
-<td>       The port of the UDP socket.  Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
+<td>aLoopbackOnly</td>
+<td>       If true, the UDP socket will only respond to connections on the  
+       local loopback interface.  Otherwise, it will accept connections  
+       from any interface.  To specify a particular network interface,  
+       use initWithAddress.  
 </td>
 </tr>
 
 <tr>
-<td>aPort</td>
-<td>       The port of the UDP socket.  Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
+<td>aAddressReuse</td>
+<td>       If true, the socket is allowed to be bound to an address that is  
+       already in use. Default is true.  
 </td>
 </tr>
 
@@ -82,8 +84,9 @@ local address (and hence a particular local network interface).
 </tr>
 
 <tr>
-<td>aAddr</td>
-<td>       The address to which this UDP socket should be bound.  
+<td>aAddressReuse</td>
+<td>       If true, the socket is allowed to be bound to an address that is  
+       already in use. Default is true.  
 </td>
 </tr>
 
@@ -164,20 +167,20 @@ DNS lookup will be triggered.
 </tr>
 
 <tr>
-<td>host</td>
-<td>The remote host name.  
+<td>port</td>
+<td>The remote port.  
 </td>
 </tr>
 
 <tr>
-<td>host</td>
-<td>The remote host name.  
+<td>data</td>
+<td>The buffer containing the data to be written.  
 </td>
 </tr>
 
 <tr>
-<td>host</td>
-<td>The remote host name.  
+<td>dataLength</td>
+<td>The maximum number of bytes to be written.  
 </td>
 </tr>
 
@@ -206,14 +209,14 @@ Send out the datagram to specified remote host and port.
 </tr>
 
 <tr>
-<td>addr</td>
-<td>The remote host address.  
+<td>data</td>
+<td>The buffer containing the data to be written.  
 </td>
 </tr>
 
 <tr>
-<td>addr</td>
-<td>The remote host address.  
+<td>dataLength</td>
+<td>The maximum number of bytes to be written.  
 </td>
 </tr>
 
@@ -242,14 +245,14 @@ Send out the datagram to specified remote address and port.
 </tr>
 
 <tr>
-<td>addr</td>
-<td>The remote host address.  
+<td>data</td>
+<td>The buffer containing the data to be written.  
 </td>
 </tr>
 
 <tr>
-<td>addr</td>
-<td>The remote host address.  
+<td>dataLength</td>
+<td>The maximum number of bytes to be written.  
 </td>
 </tr>
 
@@ -277,14 +280,14 @@ Send out the datagram to specified remote address and port.
 </tr>
 
 <tr>
-<td>host</td>
-<td>The remote host name.  
+<td>port</td>
+<td>The remote port.  
 </td>
 </tr>
 
 <tr>
-<td>host</td>
-<td>The remote host name.  
+<td>stream</td>
+<td>The input stream to be sent. This must be a buffered stream implementation.  
 </td>
 </tr>
 
@@ -311,8 +314,8 @@ Send out the datagram to specified remote address and port.
 </tr>
 
 <tr>
-<td>addr</td>
-<td>The remote host address.  
+<td>stream</td>
+<td>The input stream to be sent. This must be a buffered stream implementation.  
 </td>
 </tr>
 
@@ -344,8 +347,10 @@ receive future datagrams addressed to the group.
 </tr>
 
 <tr>
-<td>addr</td>
-<td>       The multicast group address.  
+<td>iface</td>
+<td>       The local address of the interface on which to join the group.  If  
+       this is not specified, the OS may join the group on all interfaces  
+       or only the primary interface.  
 </td>
 </tr>
 
@@ -379,8 +384,10 @@ receive future datagrams addressed to the group.
 </tr>
 
 <tr>
-<td>addr</td>
-<td>       The multicast group address.  
+<td>iface</td>
+<td>       The local address of the interface on which to leave the group.  
+       If this is not specified, the OS may leave the group on all  
+       interfaces or only the primary interface.  
 </td>
 </tr>
 

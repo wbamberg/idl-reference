@@ -65,82 +65,64 @@ Lookup auth identity.
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aHost</td>
+<td>       the host of the server issuing a challenge (ASCII only).  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aPort</td>
+<td>       the port of the server issuing a challenge.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aAuthType</td>
+<td>       optional string identifying auth type used (e.g., "basic")  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aRealm</td>
+<td>       optional string identifying auth realm.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aPath</td>
+<td>       optional string identifying auth path. empty for proxy auth.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aUserDomain</td>
+<td>       return value containing user domain.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aUserName</td>
+<td>       return value containing user name.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aUserPassword</td>
+<td>       return value containing user password.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aIsPrivate</td>
+<td>       whether to look up a private or public identity (they are  
+       stored separately, for use by private browsing)  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aPrincipal</td>
+<td>       the principal from which to derive information about which  
+       app/mozbrowser is in use for this request  
 </td>
 </tr>
 
@@ -191,82 +173,64 @@ Store auth identity.
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aHost</td>
+<td>       the host of the server issuing a challenge (ASCII only).  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aPort</td>
+<td>       the port of the server issuing a challenge.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aAuthType</td>
+<td>       optional string identifying auth type used (e.g., "basic")  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aRealm</td>
+<td>       optional string identifying auth realm.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aPath</td>
+<td>       optional string identifying auth path. empty for proxy auth.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aUserDomain</td>
+<td>       optional string containing user domain.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aUserName</td>
+<td>       optional string containing user name.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aUserPassword</td>
+<td>       optional string containing user password.  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aIsPrivate</td>
+<td>       whether to store a private or public identity (they are  
+       stored separately, for use by private browsing)  
 </td>
 </tr>
 
 <tr>
-<td>aScheme</td>
-<td>       the URL scheme (e.g., "http").  NOTE: for proxy authentication,  
-       this should be "http" (this includes authentication for CONNECT  
-       tunneling).  
+<td>aPrincipal</td>
+<td>       the principal from which to derive information about which  
+       app/mozbrowser is in use for this request  
 </td>
 </tr>
 

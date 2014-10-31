@@ -32,14 +32,16 @@ Creates a channel for a given URI.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>nsIURI from which to make a channel  
+<td>aProxyURI</td>
+<td>nsIURI to use for proxy resolution. Can be null in which  
+       case aURI is used  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>nsIURI from which to make a channel  
+<td>aProxyFlags</td>
+<td>flags from nsIProtocolProxyService to use  
+       when resolving proxies for this new channel  
 </td>
 </tr>
 
@@ -68,14 +70,16 @@ Creates a channel for a given URI.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>nsIURI from which to make a channel  
+<td>aProxyURI</td>
+<td>nsIURI to use for proxy resolution. Can be null in which  
+       case aURI is used  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>nsIURI from which to make a channel  
+<td>aProxyFlags</td>
+<td>flags from nsIProtocolProxyService to use  
+       when resolving proxies for this new channel  
 </td>
 </tr>
 

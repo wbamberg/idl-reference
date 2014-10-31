@@ -26,8 +26,8 @@ The interface for the callback invoked when there is an error.
 </tr>
 
 <tr>
-<td>xpcomError</td>
-<td>The XPCOM error code.  
+<td>osError</td>
+<td>The native OS error (errno under Unix, GetLastError under Windows).  
 </td>
 </tr>
 

@@ -38,14 +38,23 @@ loading.
 </tr>
 
 <tr>
-<td>uri</td>
-<td>- The URI to load.  
+<td>loadInfo</td>
+<td>- This is the extended load info for this load.  This  
+                    most often will be null, but if you need to do   
+                    additional setup for this load you can get a loadInfo  
+                    object by calling createLoadInfo.  Once you have this  
+                    object you can set the needed properties on it and  
+                    then pass it to loadURI.  
 </td>
 </tr>
 
 <tr>
-<td>uri</td>
-<td>- The URI to load.  
+<td>aLoadFlags</td>
+<td>- Flags to modify load behaviour. Flags are defined in  
+                    nsIWebNavigation.  Note that using flags outside  
+                    LOAD_FLAGS_MASK is only allowed if passing in a  
+                    non-null loadInfo.  And even some of those might not  
+                    be allowed.  Use at your own risk.  
 </td>
 </tr>
 
@@ -85,34 +94,31 @@ content loading.
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>- The input stream that provides access to the data  
-                         to be loaded.  This must be a blocking, threadsafe  
-                         stream implementation.  
+<td>aURI</td>
+<td>- The URI representing the stream, or null.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>- The input stream that provides access to the data  
-                         to be loaded.  This must be a blocking, threadsafe  
-                         stream implementation.  
+<td>aContentType</td>
+<td>- The type (MIME) of data being loaded (empty if unknown).  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>- The input stream that provides access to the data  
-                         to be loaded.  This must be a blocking, threadsafe  
-                         stream implementation.  
+<td>aContentCharset</td>
+<td>- The charset of the data being loaded (empty if unknown).  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>- The input stream that provides access to the data  
-                         to be loaded.  This must be a blocking, threadsafe  
-                         stream implementation.  
+<td>aLoadInfo</td>
+<td>- This is the extended load info for this load.  This  
+                         most often will be null, but if you need to do   
+                         additional setup for this load you can get a  
+                         loadInfo object by calling createLoadInfo.  Once  
+                         you have this object you can set the needed   
+                         properties on it and then pass it to loadStream.  
 </td>
 </tr>
 
@@ -161,86 +167,95 @@ the given filename.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aReferrer</td>
+<td>- Referring URI  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aOwner</td>
+<td>- Owner (security principal)   
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aInheritOwner</td>
+<td>- Flag indicating whether the owner of the current  
+                         document should be inherited if aOwner is null.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aStopActiveDoc</td>
+<td>- Flag indicating whether loading the current  
+                         document should be stopped.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aWindowTarget</td>
+<td>- Window target for the load.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aTypeHint</td>
+<td>- A hint as to the content-type of the resulting  
+                         data.  May be null or empty if no hint.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aFileName</td>
+<td>- Non-null when the link should be downloaded as  
+the given filename.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aPostDataStream</td>
+<td>- Post data stream (if POSTing)  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aHeadersStream</td>
+<td>- Stream containing "extra" request headers...  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aLoadFlags</td>
+<td>- Flags to modify load behaviour. Flags are defined  
+                         in nsIWebNavigation.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aSHEntry</td>
+<td>- Active Session History entry (if loading from SH)  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aSrcdoc</td>
+<td>When INTERNAL_LOAD_FLAGS_IS_SRCDOC is set, the  
+                         contents of this parameter will be loaded instead  
+                         of aURI.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aSourceDocShell</td>
+<td>- The source browsing context for the navigation.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>- The URI to load.  
+<td>aBaseURI</td>
+<td>- The base URI to be used for the load.  Set in  
+                         srcdoc loads as it cannot otherwise be inferred  
+                         in certain situations such as view-source.  
 </td>
 </tr>
 
@@ -362,19 +377,19 @@ the error document page. You must provide either the aURI or aURL parameter.
 
 <tr>
 <td></td>
-<td>aError         The error code to be displayed  
+<td>aURI           nsIURI of the page where the error happened  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aError         The error code to be displayed  
+<td>aURL           wstring of the page where the error happened  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aError         The error code to be displayed  
+<td>aFailedChannel The channel related to this error  
 </td>
 </tr>
 
@@ -500,14 +515,16 @@ Notify all attached observers that a reflow has just occurred.
 </tr>
 
 <tr>
-<td>interruptible</td>
-<td>if true, the reflow was interruptible.  
+<td>start</td>
+<td>timestamp when reflow started, in milliseconds since  
+                     navigationStart (accurate to 1/1000 of a ms)  
 </td>
 </tr>
 
 <tr>
-<td>interruptible</td>
-<td>if true, the reflow was interruptible.  
+<td>end</td>
+<td>timestamp when reflow ended, in milliseconds since  
+                     navigationStart (accurate to 1/1000 of a ms)  
 </td>
 </tr>
 

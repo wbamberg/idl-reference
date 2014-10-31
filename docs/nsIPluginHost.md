@@ -40,14 +40,16 @@ presence in the address bar.
 </tr>
 
 <tr>
-<td>mimeType:</td>
-<td>specifies plugin mime type.  
+<td>ignoreCTP:</td>
+<td>if true, the play preview ignores CTP rules, e.g.  
+whitelisted websites, will not notify about plugin  
+presence in the address bar.  
 </td>
 </tr>
 
 <tr>
-<td>mimeType:</td>
-<td>specifies plugin mime type.  
+<td>redirectURL:</td>
+<td>specifies url for the overlay iframe  
 </td>
 </tr>
 

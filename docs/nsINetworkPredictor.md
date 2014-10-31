@@ -52,26 +52,39 @@ asked to take actions.
 </tr>
 
 <tr>
-<td>targetURI</td>
-<td>- The URI we are being asked to take actions based on.  
+<td>sourceURI</td>
+<td>- The URI that is currently loaded. This is so we can  
+  avoid doing predictive actions for link hover on an HTTPS page (for  
+  example).  
 </td>
 </tr>
 
 <tr>
-<td>targetURI</td>
-<td>- The URI we are being asked to take actions based on.  
+<td>reason</td>
+<td>- The reason we are being asked to take actions. Can be  
+  any of the PREDICT_* values above.  
+  In the case of PREDICT_LINK, targetURI should be the URI of the link  
+  that is being hovered over, and sourceURI should be the URI of the page  
+  on which the link appears.  
+  In the case of PREDICT_LOAD, targetURI should be the URI of the page that  
+  is being loaded and sourceURI should be null.  
+  In the case of PREDICT_STARTUP, both targetURI and sourceURI should be  
+  null.  
 </td>
 </tr>
 
 <tr>
-<td>targetURI</td>
-<td>- The URI we are being asked to take actions based on.  
+<td>loadContext</td>
+<td>- The nsILoadContext of the page load we are predicting  
+  about.  
 </td>
 </tr>
 
 <tr>
-<td>targetURI</td>
-<td>- The URI we are being asked to take actions based on.  
+<td>verifier</td>
+<td>- An nsINetworkPredictorVerifier used in testing to ensure  
+  we're predicting the way we expect to. Not necessary (or desired) for  
+  normal operation.  
 </td>
 </tr>
 
@@ -112,20 +125,31 @@ smarter next time we predict something.
 </tr>
 
 <tr>
-<td>targetURI</td>
-<td>- The URI that was loaded that we are keeping track of.  
+<td>sourceURI</td>
+<td>- The URI that caused targetURI to be loaded (for page  
+  loads). This means the DOCUMENT URI.  
 </td>
 </tr>
 
 <tr>
-<td>targetURI</td>
-<td>- The URI that was loaded that we are keeping track of.  
+<td>reason</td>
+<td>- The reason we are learning this bit of knowledge.  
+  Reason can be any of the LEARN_* values.  
+  In the case of LEARN_LOAD_SUBRESOURCE, targetURI should be the URI of a  
+  subresource of a page, and sourceURI should be the top-level URI.  
+  In the case of LEARN_LOAD_REDIRECT, targetURI is the NEW URI of a  
+  top-level resource that was redirected to, and sourceURI is the  
+  ORIGINAL URI of said top-level resource.  
+  In the case of LEARN_STARTUP, targetURI should be the URI of a page  
+  that was loaded immediately after browser startup, and sourceURI should  
+  be null.  
 </td>
 </tr>
 
 <tr>
-<td>targetURI</td>
-<td>- The URI that was loaded that we are keeping track of.  
+<td>loadContext</td>
+<td>- The nsILoadContext for the page load that we are  
+  learning about.  
 </td>
 </tr>
 

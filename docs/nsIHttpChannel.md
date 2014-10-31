@@ -79,16 +79,20 @@ If aValue is empty and aMerge is false, the header will be cleared.
 </tr>
 
 <tr>
-<td>aHeader</td>
-<td>       The case-insensitive name of the request header to set (e.g.,  
-       "Cookie").  
+<td>aValue</td>
+<td>       The request header value to set (e.g., "X=1").  
 </td>
 </tr>
 
 <tr>
-<td>aHeader</td>
-<td>       The case-insensitive name of the request header to set (e.g.,  
-       "Cookie").  
+<td>aMerge</td>
+<td>       If true, the new header value will be merged with any existing  
+       values for the specified header.  This flag is ignored if the  
+       specified header does not support merging (e.g., the "Content-  
+       Type" header can only have one value).  The list of headers for  
+       which this flag is ignored is an implementation detail.  If this  
+       flag is false, then the header value will be replaced with the  
+       contents of |aValue|.  
 </td>
 </tr>
 
@@ -184,16 +188,20 @@ If aValue is empty and aMerge is false, the header will be cleared.
 </tr>
 
 <tr>
-<td>aHeader</td>
-<td>       The case-insensitive name of the response header to set (e.g.,  
-       "Cache-control").  
+<td>aValue</td>
+<td>       The response header value to set (e.g., "no-cache").  
 </td>
 </tr>
 
 <tr>
-<td>aHeader</td>
-<td>       The case-insensitive name of the response header to set (e.g.,  
-       "Cache-control").  
+<td>aMerge</td>
+<td>       If true, the new header value will be merged with any existing  
+       values for the specified header.  This flag is ignored if the  
+       specified header does not support merging (e.g., the "Content-  
+       Type" header can only have one value).  The list of headers for  
+       which this flag is ignored is an implementation detail.  If this  
+       flag is false, then the header value will be replaced with the  
+       contents of |aValue|.  
 </td>
 </tr>
 

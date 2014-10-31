@@ -48,14 +48,15 @@ Windows, that usage should probably be avoided in favor of openChild.
 </tr>
 
 <tr>
-<td>rootKey</td>
-<td>       A root key defined above or any valid HKEY on 32-bit Windows.  
+<td>relPath</td>
+<td>       A relative path from the given root key.  
 </td>
 </tr>
 
 <tr>
-<td>rootKey</td>
-<td>       A root key defined above or any valid HKEY on 32-bit Windows.  
+<td>mode</td>
+<td>       Access mode, which is a bit-wise OR of the ACCESS_ values defined  
+       above.  
 </td>
 </tr>
 
@@ -89,14 +90,15 @@ Windows, that usage should probably be avoided in favor of createChild.
 </tr>
 
 <tr>
-<td>rootKey</td>
-<td>       A root key defined above or any valid HKEY on 32-bit Windows.  
+<td>relPath</td>
+<td>       A relative path from the given root key.  
 </td>
 </tr>
 
 <tr>
-<td>rootKey</td>
-<td>       A root key defined above or any valid HKEY on 32-bit Windows.  
+<td>mode</td>
+<td>       Access mode, which is a bit-wise OR of the ACCESS_ values defined  
+       above.  
 </td>
 </tr>
 
@@ -370,9 +372,8 @@ value will be created if it does not already exist.
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The name of the value to modify.  This parameter can be the empty  
-       string to modify the key's default value.  
+<td>data</td>
+<td>       The data for the value to modify.  
 </td>
 </tr>
 
@@ -400,8 +401,8 @@ will be created if it does not already exist.
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The name of the value to modify.  
+<td>data</td>
+<td>       The data for the value to modify.  
 </td>
 </tr>
 
@@ -429,8 +430,8 @@ value will be created if it does not already exist.
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The name of the value to modify.  
+<td>data</td>
+<td>       The data for the value to modify.  
 </td>
 </tr>
 
@@ -465,8 +466,8 @@ occur.
 </tr>
 
 <tr>
-<td>name</td>
-<td>       The name of the value to modify.  
+<td>data</td>
+<td>       The data for the value to modify.  
 </td>
 </tr>
 

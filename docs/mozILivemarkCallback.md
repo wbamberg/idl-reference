@@ -29,9 +29,8 @@ Invoked when a livemark is added, removed or retrieved.
 </tr>
 
 <tr>
-<td>aStatus</td>
-<td>       Whether the request was completed successfully.  
-       Use Components.isSuccessCode(aStatus) to check this.  
+<td>aLivemark</td>
+<td>       A mozILivemark object representing the livemark, or null on removal.  
 </td>
 </tr>
 

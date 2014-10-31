@@ -43,9 +43,11 @@ it must be paired by a call to closeStream.
 </tr>
 
 <tr>
-<td>aBaseURI</td>
-<td>       The base URI of the data. Must not be null. Relative  
-       URIs will be resolved relative to this URI.  
+<td>aContentType</td>
+<td>       ASCII string giving the content type of the data. If rendering  
+       content of this type is not supported, this method fails.  
+       This string may include a charset declaration, for example:  
+       text/html;charset=ISO-8859-1  
 </td>
 </tr>
 
@@ -71,8 +73,8 @@ Append data to this stream.
 </tr>
 
 <tr>
-<td>aData</td>
-<td>The data to append  
+<td>aLen</td>
+<td>Length of the data to append.  
 </td>
 </tr>
 

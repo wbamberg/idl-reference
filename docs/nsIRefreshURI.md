@@ -30,20 +30,21 @@ queued and executed when the current load finishes.
 </tr>
 
 <tr>
-<td>aUri</td>
-<td>The uri to refresh.  
+<td>aMillis</td>
+<td>The number of milliseconds to wait.  
 </td>
 </tr>
 
 <tr>
-<td>aUri</td>
-<td>The uri to refresh.  
+<td>aRepeat</td>
+<td>Flag to indicate if the uri is to be   
+               repeatedly refreshed every aMillis milliseconds.  
 </td>
 </tr>
 
 <tr>
-<td>aUri</td>
-<td>The uri to refresh.  
+<td>aMetaRefresh</td>
+<td>Flag to indicate if this is a Meta refresh.  
 </td>
 </tr>
 
@@ -70,14 +71,15 @@ Loads a URI immediately as if it were a refresh.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>The URI to refresh.  
+<td>aMillis</td>
+<td>The number of milliseconds by which this refresh would  
+               be delayed if it were not being forced.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>The URI to refresh.  
+<td>aMetaRefresh</td>
+<td>Flag to indicate if this is a meta refresh.  
 </td>
 </tr>
 
@@ -132,14 +134,14 @@ the current page finishes loading.
 </tr>
 
 <tr>
-<td>aBaseURI</td>
-<td>base URI to resolve refresh uri with.  
+<td>principal</td>
+<td>the associated principal  
 </td>
 </tr>
 
 <tr>
-<td>aBaseURI</td>
-<td>base URI to resolve refresh uri with.  
+<td>aHeader</td>
+<td>The meta refresh header string.  
 </td>
 </tr>
 

@@ -37,14 +37,14 @@ using <code>aSortKey</code> as the comparison key, and
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>A node in the XUL widget whose children are to be sorted.  
+<td>aSortKey</td>
+<td>The value to be used as the comparison key.  
 </td>
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>A node in the XUL widget whose children are to be sorted.  
+<td>aSortHints</td>
+<td>One or more hints as to how to sort:  
 </td>
 </tr>
 

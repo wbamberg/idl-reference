@@ -35,26 +35,28 @@ classes when asked by the JS engine.
 </tr>
 
 <tr>
-<td>aJSContext</td>
-<td>the context to use while creating the global object.  
+<td>aCOMObj</td>
+<td>the native object that represents the global object.  
 </td>
 </tr>
 
 <tr>
-<td>aJSContext</td>
-<td>the context to use while creating the global object.  
+<td>aPrincipal</td>
+<td>the principal of the code that will run in this  
+                  compartment. Can be null if not on the main thread.  
 </td>
 </tr>
 
 <tr>
-<td>aJSContext</td>
-<td>the context to use while creating the global object.  
+<td>aFlags</td>
+<td>one of the flags below specifying what options this  
+              global object wants.  
 </td>
 </tr>
 
 <tr>
-<td>aJSContext</td>
-<td>the context to use while creating the global object.  
+<td>aOptions</td>
+<td>JSAPI-specific options for the new compartment.  
 </td>
 </tr>
 
@@ -214,8 +216,9 @@ evalInSandboxObject().
 </tr>
 
 <tr>
-<td>cx</td>
-<td>A context to use when creating the sandbox object.  
+<td>principal</td>
+<td>The principal (or NULL to use the null principal)  
+                 to use when evaluating code in this sandbox.  
 </td>
 </tr>
 
@@ -249,20 +252,22 @@ other running scripts.
 </tr>
 
 <tr>
-<td>source</td>
-<td>The source of the script to evaluate.  
+<td>filename</td>
+<td>The filename of the script. May be null.  
 </td>
 </tr>
 
 <tr>
-<td>source</td>
-<td>The source of the script to evaluate.  
+<td>cx</td>
+<td>The context to use when setting up the evaluation of  
+          the script. The actual evaluation will happen on a new  
+          temporary context.  
 </td>
 </tr>
 
 <tr>
-<td>source</td>
-<td>The source of the script to evaluate.  
+<td>sandbox</td>
+<td>The sandbox object to evaluate the script in.  
 </td>
 </tr>
 

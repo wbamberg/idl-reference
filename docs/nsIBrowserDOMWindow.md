@@ -40,26 +40,21 @@ Load a URI
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to open. null is allowed.  If null is passed in, no  
-            load will be done, though the window the load would have  
-            happened in will be returned.  
+<td>aWhere</td>
+<td>see possible values described above.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to open. null is allowed.  If null is passed in, no  
-            load will be done, though the window the load would have  
-            happened in will be returned.  
+<td>aOpener</td>
+<td>window requesting the open (can be null).  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI to open. null is allowed.  If null is passed in, no  
-            load will be done, though the window the load would have  
-            happened in will be returned.  
+<td>aContext</td>
+<td>the context in which the URI is being opened. This  
+                is used only when aWhere == OPEN_DEFAULTWINDOW.  
 </td>
 </tr>
 

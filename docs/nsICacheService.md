@@ -48,14 +48,20 @@ equivalent.
 </tr>
 
 <tr>
-<td>clientID</td>
-<td>- Specifies the name of the client using the cache.  
+<td>storagePolicy</td>
+<td>- Limits the storage policy for all entries  
+  accessed via the returned session.  As a result, devices excluded  
+  by the storage policy will not be searched when opening entries  
+  from the returned session.  
 </td>
 </tr>
 
 <tr>
-<td>clientID</td>
-<td>- Specifies the name of the client using the cache.  
+<td>streamBased</td>
+<td>- Indicates whether or not the data being cached  
+  can be represented as a stream.  The storagePolicy must be   
+  consistent with the value of this field.  For example, a non-stream-  
+  based cache entry can only have a storage policy of STORE_IN_MEMORY.  
 </td>
 </tr>
 

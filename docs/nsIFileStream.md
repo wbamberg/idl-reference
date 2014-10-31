@@ -32,20 +32,24 @@ A stream that allows you to read from a file or stream to a file.
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to read from or stream to  
+<td>ioFlags</td>
+<td>file open flags listed in prio.h (see  
+                     PR_Open documentation) or -1 to open the  
+                     file in default mode (PR_RDWR).  
 </td>
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to read from or stream to  
+<td>perm</td>
+<td>file mode bits listed in prio.h or -1 to  
+                     use the default value (0)  
 </td>
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to read from or stream to  
+<td>behaviorFlags</td>
+<td>flags specifying various behaviors of the class  
+       (see enumerations in the class)  
 </td>
 </tr>
 

@@ -50,8 +50,10 @@ an AutocompleteErrorEvent being fired on the form.
 </tr>
 
 <tr>
-<td>aForm</td>
-<td>       The form on which the requestAutocomplete method was invoked.  
+<td>aWindow</td>
+<td>       The window where the form is located.  This must be specified even  
+       for elements that are not in a document, and is used to generate the  
+       DOM events resulting from the operation.  
 </td>
 </tr>
 

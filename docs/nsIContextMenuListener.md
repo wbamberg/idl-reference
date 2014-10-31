@@ -55,14 +55,14 @@ possible.
 </tr>
 
 <tr>
-<td>aContextFlags</td>
-<td>Flags indicating the kind of context.  
+<td>aEvent</td>
+<td>The DOM context menu event.  
 </td>
 </tr>
 
 <tr>
-<td>aContextFlags</td>
-<td>Flags indicating the kind of context.  
+<td>aNode</td>
+<td>The DOM node most relevant to the context.  
 </td>
 </tr>
 

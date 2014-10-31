@@ -38,9 +38,10 @@ passed to each method.
 </tr>
 
 <tr>
-<td>aCommandName</td>
-<td>the name of the command for which we want the enabled  
-                     state.  
+<td>aCommandContext</td>
+<td>a cookie held by the nsIControllerCommandTable,  
+                 allowing the command to get some context information.  
+                 The contents of this cookie are implementation-defined.  
 </td>
 </tr>
 
@@ -70,8 +71,10 @@ Execute the name command.
 </tr>
 
 <tr>
-<td>aCommandName</td>
-<td>the name of the command to execute.  
+<td>aCommandContext</td>
+<td>a cookie held by the nsIControllerCommandTable,  
+                 allowing the command to get some context information.  
+                 The contents of this cookie are implementation-defined.  
 </td>
 </tr>
 

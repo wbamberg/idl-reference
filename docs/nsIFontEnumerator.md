@@ -27,7 +27,7 @@ Return a sorted array of the names of all installed fonts.
 
 <tr>
 <td></td>
-<td>aCount     returns number of names returned  
+<td>aResult    returns array of names  
 </td>
 </tr>
 
@@ -57,19 +57,19 @@ group and are suitable for use as the given CSS generic font.
 
 <tr>
 <td></td>
-<td>aLangGroup language group  
+<td>aGeneric   CSS generic font  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aLangGroup language group  
+<td>aCount     returns number of names returned  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aLangGroup language group  
+<td>aResult    returns array of names  
 </td>
 </tr>
 
@@ -112,7 +112,7 @@ group and are suitable for use as the given CSS generic font.
 
 <tr>
 <td></td>
-<td>aLangGroup language group  
+<td>aGeneric CSS generic font  
 </td>
 </tr>
 

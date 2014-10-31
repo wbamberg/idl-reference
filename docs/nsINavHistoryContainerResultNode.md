@@ -68,20 +68,20 @@ closed containers.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the node's uri attribute value  
+<td>aTime</td>
+<td>       the node's time attribute value.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the node's uri attribute value  
+<td>aItemId</td>
+<td>       the node's itemId attribute value.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the node's uri attribute value  
+<td>aRecursive</td>
+<td>       whether or not to search recursively.  
 </td>
 </tr>
 

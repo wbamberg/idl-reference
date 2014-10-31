@@ -37,20 +37,20 @@ Show an assertion and trigger nsIDebug.break().
 </tr>
 
 <tr>
-<td>aStr</td>
-<td>assertion message  
+<td>aExpr</td>
+<td>expression that failed  
 </td>
 </tr>
 
 <tr>
-<td>aStr</td>
-<td>assertion message  
+<td>aFile</td>
+<td>file containing assertion  
 </td>
 </tr>
 
 <tr>
-<td>aStr</td>
-<td>assertion message  
+<td>aLine</td>
+<td>line number of assertion  
 </td>
 </tr>
 
@@ -76,14 +76,14 @@ Show a warning.
 </tr>
 
 <tr>
-<td>aStr</td>
-<td>warning message  
+<td>aFile</td>
+<td>file containing assertion  
 </td>
 </tr>
 
 <tr>
-<td>aStr</td>
-<td>warning message  
+<td>aLine</td>
+<td>line number of assertion  
 </td>
 </tr>
 
@@ -108,8 +108,8 @@ Request to break into a debugger.
 </tr>
 
 <tr>
-<td>aFile</td>
-<td>file containing break request  
+<td>aLine</td>
+<td>line number of break request  
 </td>
 </tr>
 
@@ -134,8 +134,8 @@ Request the process to trigger a fatal abort.
 </tr>
 
 <tr>
-<td>aFile</td>
-<td>file containing abort request  
+<td>aLine</td>
+<td>line number of abort request  
 </td>
 </tr>
 

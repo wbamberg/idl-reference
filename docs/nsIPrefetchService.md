@@ -28,20 +28,21 @@ Enqueue a request to prefetch the specified URI.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI of the document to prefetch  
+<td>aReferrerURI</td>
+<td>the URI of the referring page  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI of the document to prefetch  
+<td>aSource</td>
+<td>the DOM node (such as a <link> tag) that requested this  
+       fetch, or null if the prefetch was not requested by a DOM node.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI of the document to prefetch  
+<td>aExplicit</td>
+<td>the link element has an explicit prefetch link type  
 </td>
 </tr>
 

@@ -107,8 +107,10 @@ nsIWebNavigation::reload() call.
 </tr>
 
 <tr>
-<td>aReloadURI</td>
-<td>The URI of the document to be reloaded.  
+<td>aReloadFlags</td>
+<td>Flags that indicate how the document is to be   
+                     refreshed. See constants on the nsIWebNavigation  
+                     interface.  
 </td>
 </tr>
 
@@ -135,8 +137,8 @@ when nsIWebNavigation::gotoIndex() is called.
 </tr>
 
 <tr>
-<td>aIndex</td>
-<td>The index in session history of the entry to be loaded.  
+<td>aGotoURI</td>
+<td>The URI of the session history entry to be loaded.  
 </td>
 </tr>
 

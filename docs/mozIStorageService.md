@@ -77,20 +77,26 @@ string may be:
 </tr>
 
 <tr>
-<td>aDatabaseStore</td>
-<td>Either a nsIFile representing the file that contains  
-the database or a special string to open a special database. The special  
-string may be:  
-- "memory" to open an in-memory database.  
+<td>aOptions</td>
+<td>A set of options (may be null). Options may contain:  
+- bool shared (defaults to |false|).  
+  -- If |true|, opens the database with a shared-cache. The  
+    shared-cache mode is more memory-efficient when many  
+    connections to the same database are expected, though, the  
+    connections will contend the cache resource. In any cases  
+    where performance matter, working without a shared-cache will  
+    improve concurrency.  @see openUnsharedDatabase  
 </td>
 </tr>
 
 <tr>
-<td>aDatabaseStore</td>
-<td>Either a nsIFile representing the file that contains  
-the database or a special string to open a special database. The special  
-string may be:  
-- "memory" to open an in-memory database.  
+<td>aCallback</td>
+<td>A callback that will receive the result of the operation.  
+ In case of error, it may receive as status:  
+ - NS_ERROR_OUT_OF_MEMORY if allocating a new storage object fails.  
+ - NS_ERROR_FILE_CORRUPTED if the database file is corrupted.  
+ In case of success, it receives as argument the new database  
+ connection, as an instance of |mozIStorageAsyncConnection|.  
 </td>
 </tr>
 
@@ -264,14 +270,15 @@ ensures that the file being created is unique.
 </tr>
 
 <tr>
-<td>aDBFile</td>
-<td>       The database file that will be backed up.  
+<td>aBackupFileName</td>
+<td>       The name of the new backup file to create.  
 </td>
 </tr>
 
 <tr>
-<td>aDBFile</td>
-<td>       The database file that will be backed up.  
+<td>[optional]</td>
+<td>aBackupParentDirectory  
+       The directory you'd like the backup file to be placed.  
 </td>
 </tr>
 

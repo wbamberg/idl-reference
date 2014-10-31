@@ -34,20 +34,20 @@ Receive WAP Push message.
 </tr>
 
 <tr>
-<td>aData</td>
-<td>       An array containing raw PDU data.  
+<td>aLength</td>
+<td>       Length of aData.  
 </td>
 </tr>
 
 <tr>
-<td>aData</td>
-<td>       An array containing raw PDU data.  
+<td>aOffset</td>
+<td>       Start offset of aData containing message body of the Push PDU.  
 </td>
 </tr>
 
 <tr>
-<td>aData</td>
-<td>       An array containing raw PDU data.  
+<td>options</td>
+<td>       An object containing various attributes from lower transport layer.  
 </td>
 </tr>
 

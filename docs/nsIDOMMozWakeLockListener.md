@@ -36,8 +36,8 @@ Possible states are:
 </tr>
 
 <tr>
-<td>aTopic</td>
-<td>The resource name related to the wake lock.  
+<td>aState</td>
+<td>The wake lock state  
 </td>
 </tr>
 

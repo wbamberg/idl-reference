@@ -43,44 +43,45 @@ newSocket
 </tr>
 
 <tr>
-<td>aFamily</td>
-<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+<td>aHost</td>
+<td>       The hostname for this connection.  
 </td>
 </tr>
 
 <tr>
-<td>aFamily</td>
-<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+<td>aPort</td>
+<td>       The port for this connection.  
 </td>
 </tr>
 
 <tr>
-<td>aFamily</td>
-<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+<td>aProxyHost</td>
+<td>       If non-null, the proxy hostname for this connection.  
 </td>
 </tr>
 
 <tr>
-<td>aFamily</td>
-<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+<td>aProxyPort</td>
+<td>       The proxy port for this connection.  
 </td>
 </tr>
 
 <tr>
-<td>aFamily</td>
-<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+<td>aFlags</td>
+<td>       Control flags that govern this connection (see below.)  
 </td>
 </tr>
 
 <tr>
-<td>aFamily</td>
-<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+<td>aFileDesc</td>
+<td>       The resulting PRFileDesc.  
 </td>
 </tr>
 
 <tr>
-<td>aFamily</td>
-<td>       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
+<td>aSecurityInfo</td>
+<td>       Any security info that should be associated with aFileDesc.  This  
+       object typically implements nsITransportSecurityInfo.  
 </td>
 </tr>
 

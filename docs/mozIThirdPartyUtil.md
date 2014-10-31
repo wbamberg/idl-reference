@@ -83,8 +83,9 @@ a URI of "http://mozilla.com", the result will be true.
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>       The bottommost window in the hierarchy.  
+<td>aURI</td>
+<td>       A URI to test against. If null, the URI of the principal  
+       associated with 'aWindow' will be used.  
 </td>
 </tr>
 
@@ -147,8 +148,8 @@ a URI of "http://mozilla.com", the result will be true.
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       The channel associated with the load.  
+<td>aURI</td>
+<td>       A URI to test against. If null, the URI of the channel will be used.  
 </td>
 </tr>
 

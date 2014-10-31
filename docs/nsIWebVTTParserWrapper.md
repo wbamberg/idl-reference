@@ -107,9 +107,9 @@ we can display it on the page.
 </tr>
 
 <tr>
-<td>window</td>
-<td>A window object with which the document fragment will be  
-              created.  
+<td>cue</td>
+<td>The cue whose content will be converted to a document  
+              fragment.  
 </td>
 </tr>
 
@@ -143,16 +143,15 @@ computed divs to the VTTCues display state property for use later.
 </tr>
 
 <tr>
-<td>window</td>
-<td>A window object with which it will create the DOM tree  
-               and containing div element.  
+<td>cues</td>
+<td>An array of VTTCues who need there display state to be  
+               computed.  
 </td>
 </tr>
 
 <tr>
-<td>window</td>
-<td>A window object with which it will create the DOM tree  
-               and containing div element.  
+<td>overlay</td>
+<td>The HTMLElement that the cues will be displayed within.  
 </td>
 </tr>
 

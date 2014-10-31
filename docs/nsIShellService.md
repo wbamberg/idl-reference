@@ -33,20 +33,20 @@ the our application.
 </tr>
 
 <tr>
-<td>aTitle</td>
-<td>the user-friendly name of the shortcut.  
+<td>aURI</td>
+<td>the URI to open.  
 </td>
 </tr>
 
 <tr>
-<td>aTitle</td>
-<td>the user-friendly name of the shortcut.  
+<td>aIconData</td>
+<td>a base64-encoded data: URI representation of the shortcut's icon, as accepted by the favicon decoder.  
 </td>
 </tr>
 
 <tr>
-<td>aTitle</td>
-<td>the user-friendly name of the shortcut.  
+<td>aIntent</td>
+<td>obsolete and ignored, but remains for backward compatibility; pass an empty string  
 </td>
 </tr>
 

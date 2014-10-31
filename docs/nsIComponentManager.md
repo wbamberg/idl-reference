@@ -72,14 +72,14 @@ Create an instance of the CID aClass and return the interface aIID.
 </tr>
 
 <tr>
-<td>aClass</td>
-<td>: ClassID of object instance requested  
+<td>aDelegate</td>
+<td>: Used for aggregation  
 </td>
 </tr>
 
 <tr>
-<td>aClass</td>
-<td>: ClassID of object instance requested  
+<td>aIID</td>
+<td>: IID of interface requested  
 </td>
 </tr>
 
@@ -108,14 +108,14 @@ interface aIID.
 </tr>
 
 <tr>
-<td>aContractID</td>
-<td>: aContractID of object instance requested  
+<td>aDelegate</td>
+<td>: Used for aggregation  
 </td>
 </tr>
 
 <tr>
-<td>aContractID</td>
-<td>: aContractID of object instance requested  
+<td>aIID</td>
+<td>: IID of interface requested  
 </td>
 </tr>
 

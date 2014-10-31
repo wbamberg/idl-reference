@@ -34,20 +34,20 @@ Sets a value in the store.
 </tr>
 
 <tr>
-<td>doc</td>
-<td>- document URI  
+<td>id</td>
+<td>- identifier of the node  
 </td>
 </tr>
 
 <tr>
-<td>doc</td>
-<td>- document URI  
+<td>attr</td>
+<td>- attribute to store  
 </td>
 </tr>
 
 <tr>
-<td>doc</td>
-<td>- document URI  
+<td>value</td>
+<td>- value of the attribute  
 </td>
 </tr>
 
@@ -73,14 +73,14 @@ Returns true if the store contains a value for attr.
 </tr>
 
 <tr>
-<td>doc</td>
-<td>- URI of the document  
+<td>id</td>
+<td>- identifier of the node  
 </td>
 </tr>
 
 <tr>
-<td>doc</td>
-<td>- URI of the document  
+<td>attr</td>
+<td>- attribute  
 </td>
 </tr>
 
@@ -108,14 +108,14 @@ Retrieves a value in the store, or an empty string if it does not exist.
 </tr>
 
 <tr>
-<td>doc</td>
-<td>- document URI  
+<td>id</td>
+<td>- identifier of the node  
 </td>
 </tr>
 
 <tr>
-<td>doc</td>
-<td>- document URI  
+<td>attr</td>
+<td>- attribute to retrieve  
 </td>
 </tr>
 
@@ -141,14 +141,14 @@ Removes a value in the store.
 </tr>
 
 <tr>
-<td>doc</td>
-<td>- document URI  
+<td>id</td>
+<td>- identifier of the node  
 </td>
 </tr>
 
 <tr>
-<td>doc</td>
-<td>- document URI  
+<td>attr</td>
+<td>- attribute to remove  
 </td>
 </tr>
 
@@ -194,8 +194,8 @@ and id that have stored data.
 </tr>
 
 <tr>
-<td>doc</td>
-<td>- document URI  
+<td>id</td>
+<td>- identifier of the node  
 </td>
 </tr>
 

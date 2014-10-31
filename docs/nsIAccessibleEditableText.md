@@ -30,8 +30,8 @@ Inserts text at the specified position.
 </tr>
 
 <tr>
-<td>text</td>
-<td>- text that is inserted.  
+<td>position</td>
+<td>- index at which to insert the text.  
 </td>
 </tr>
 
@@ -56,8 +56,8 @@ Copies the text range into the clipboard.
 </tr>
 
 <tr>
-<td>startPos</td>
-<td>- start index of the text to moved into the clipboard.  
+<td>endPos</td>
+<td>- end index of the text to moved into the clipboard.  
 </td>
 </tr>
 
@@ -82,8 +82,8 @@ Deletes a range of text and copies it to the clipboard.
 </tr>
 
 <tr>
-<td>startPos</td>
-<td>- start index of the text to be deleted.  
+<td>endOffset</td>
+<td>- end index of the text to be deleted.  
 </td>
 </tr>
 
@@ -108,8 +108,8 @@ Deletes a range of text.
 </tr>
 
 <tr>
-<td>startPos</td>
-<td>- start index of the text to be deleted.  
+<td>endPos</td>
+<td>- end index of the text to be deleted.  
 </td>
 </tr>
 

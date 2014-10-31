@@ -31,14 +31,16 @@ events.
 </tr>
 
 <tr>
-<td>aDoctypeName</td>
-<td>The document type name.  
+<td>aSysid</td>
+<td>The declared system identifier for the external DTD subset,  
+              or null if none was declared.  
 </td>
 </tr>
 
 <tr>
-<td>aDoctypeName</td>
-<td>The document type name.  
+<td>aPubid</td>
+<td>The declared public identifier for the external DTD subset,  
+              or null if none was declared.  
 </td>
 </tr>
 
@@ -67,10 +69,8 @@ startElement events.
 </tr>
 
 <tr>
-<td>aPrefix</td>
-<td>The Namespace prefix being declared. An empty string  
-               is used for the default element namespace, which has  
-               no prefix.  
+<td>aUri</td>
+<td>The Namespace URI the prefix is mapped to.  
 </td>
 </tr>
 
@@ -118,14 +118,14 @@ null. The other arguments can be.
 </tr>
 
 <tr>
-<td>aNotationName</td>
-<td>The notation name.  
+<td>aSysId</td>
+<td>The notation's system identifier, or null if none was given.  
 </td>
 </tr>
 
 <tr>
-<td>aNotationName</td>
-<td>The notation name.  
+<td>aPubId</td>
+<td>The notation's pubilc identifier, or null if none was given.  
 </td>
 </tr>
 
@@ -153,20 +153,20 @@ null. The other arguments may be.
 </tr>
 
 <tr>
-<td>aName</td>
-<td>The unparsed entity's name.  
+<td>aSysId</td>
+<td>The notation's system identifier.  
 </td>
 </tr>
 
 <tr>
-<td>aName</td>
-<td>The unparsed entity's name.  
+<td>aPubId</td>
+<td>The notation's pubilc identifier, or null if none was given.  
 </td>
 </tr>
 
 <tr>
-<td>aName</td>
-<td>The unparsed entity's name.  
+<td>aNotationName</td>
+<td>The name of the associated notation.  
 </td>
 </tr>
 

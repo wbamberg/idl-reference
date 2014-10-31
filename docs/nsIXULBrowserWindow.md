@@ -50,14 +50,14 @@ Determines whether a load should continue.
 </tr>
 
 <tr>
-<td>aDocShell</td>
-<td>       The docshell performing the load.  
+<td>aURI</td>
+<td>       The URI being loaded.  
 </td>
 </tr>
 
 <tr>
-<td>aDocShell</td>
-<td>       The docshell performing the load.  
+<td>aReferrer</td>
+<td>       The referrer of the load.  
 </td>
 </tr>
 

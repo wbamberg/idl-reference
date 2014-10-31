@@ -75,8 +75,8 @@ Returns list which contains accessible states as a strings.
 </tr>
 
 <tr>
-<td>aStates</td>
-<td>- accessible states.  
+<td>aExtraStates</td>
+<td>- accessible extra states.  
 </td>
 </tr>
 

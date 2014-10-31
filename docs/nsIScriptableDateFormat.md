@@ -57,23 +57,24 @@ you depend on any specific format or language.
 </tr>
 
 <tr>
-<td>locale</td>
-<td>       Locale code of locale used to format the date or an empty string  
-       to follow user preference.  
+<td>dateFormatSelector</td>
+<td>       Indicate which format should preferably be used for the date.  
+       Use one of the dateFormat* constants.  
 </td>
 </tr>
 
 <tr>
-<td>locale</td>
-<td>       Locale code of locale used to format the date or an empty string  
-       to follow user preference.  
+<td>timeFormatSelector</td>
+<td>       Indicate which format should preferably be used for the time.  
+       Use one of the timeFormat* constants.  
 </td>
 </tr>
 
 <tr>
-<td>locale</td>
-<td>       Locale code of locale used to format the date or an empty string  
-       to follow user preference.  
+<td>year,</td>
+<td>month, day, hour, minute and second  
+       The date and time to be formatted, given in the computer's local  
+       time zone.  
 </td>
 </tr>
 

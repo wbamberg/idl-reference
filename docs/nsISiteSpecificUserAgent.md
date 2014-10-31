@@ -32,8 +32,8 @@ the default User Agent string is used.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>is the URI of the page the UA string is used for.  
+<td>aWindow</td>
+<td>is the window this UA is being requested for  
 </td>
 </tr>
 

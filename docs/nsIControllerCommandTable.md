@@ -47,9 +47,8 @@ Register and unregister commands with the command table.
 </tr>
 
 <tr>
-<td>aCommandName</td>
-<td>the name of the command under which to register or  
-                     unregister the given command handler.  
+<td>aCommand</td>
+<td>the handler for this command.  
 </td>
 </tr>
 
@@ -95,8 +94,8 @@ Get whether the named command is enabled.
 </tr>
 
 <tr>
-<td>aCommandName</td>
-<td>the name of the command to test  
+<td>aCommandRefCon</td>
+<td>the command context data  
 </td>
 </tr>
 
@@ -121,8 +120,8 @@ Tell the command to update its state (if it is a state updating command)
 </tr>
 
 <tr>
-<td>aCommandName</td>
-<td>the name of the command to update  
+<td>aCommandRefCon</td>
+<td>the command context data  
 </td>
 </tr>
 
@@ -147,8 +146,8 @@ Get whether the named command is supported.
 </tr>
 
 <tr>
-<td>aCommandName</td>
-<td>the name of the command to test  
+<td>aCommandRefCon</td>
+<td>the command context data  
 </td>
 </tr>
 
@@ -173,8 +172,8 @@ Execute the named command.
 </tr>
 
 <tr>
-<td>aCommandName</td>
-<td>the name of the command to execute  
+<td>aCommandRefCon</td>
+<td>the command context data  
 </td>
 </tr>
 

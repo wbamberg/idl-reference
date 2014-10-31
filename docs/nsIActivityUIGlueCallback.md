@@ -25,8 +25,9 @@ If NATIVE_ACTIVITY, the return value to be sent to the MozActivity.
 </tr>
 
 <tr>
-<td>resultType</td>
-<td>Inidcates that {@code result} is an index or a native activity result.  
+<td>result</td>
+<td>If WEBAPPS_ACTIVITY, the index of the chosen activity. Send '-1' if no choice is made.  
+If NATIVE_ACTIVITY, the return value to be sent to the MozActivity.  
 </td>
 </tr>
 

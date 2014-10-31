@@ -55,38 +55,38 @@ includeHidden is set). Many observers can ignore _EMBED notifications
 </tr>
 
 <tr>
-<td>aVisitID</td>
-<td>ID of the visit that was just created.  
+<td>aTime</td>
+<td>Time of the visit  
 </td>
 </tr>
 
 <tr>
-<td>aVisitID</td>
-<td>ID of the visit that was just created.  
+<td>aSessionID</td>
+<td>No longer supported (always set to 0).  
 </td>
 </tr>
 
 <tr>
-<td>aVisitID</td>
-<td>ID of the visit that was just created.  
+<td>aReferringID</td>
+<td>The ID of the visit the user came from. 0 if empty.  
 </td>
 </tr>
 
 <tr>
-<td>aVisitID</td>
-<td>ID of the visit that was just created.  
+<td>aTransitionType</td>
+<td>One of nsINavHistory.TRANSITION_*  
 </td>
 </tr>
 
 <tr>
-<td>aVisitID</td>
-<td>ID of the visit that was just created.  
+<td>aGUID</td>
+<td>The unique ID associated with the page.  
 </td>
 </tr>
 
 <tr>
-<td>aVisitID</td>
-<td>ID of the visit that was just created.  
+<td>aHidden</td>
+<td>Whether the visited page is marked as hidden.  
 </td>
 </tr>
 
@@ -125,14 +125,14 @@ empty string in either case).
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI of the page.  
+<td>aPageTitle</td>
+<td>       The new title of the page.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI of the page.  
+<td>aGUID</td>
+<td>       The unique ID associated with the page.  
 </td>
 </tr>
 
@@ -169,26 +169,26 @@ once.  Use onManyFrecenciesChanged to detect such changes.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The page's URI.  
+<td>aNewFrecency</td>
+<td>       The page's new frecency.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The page's URI.  
+<td>aGUID</td>
+<td>       The page's GUID.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The page's URI.  
+<td>aHidden</td>
+<td>       True if the page is marked as hidden.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The page's URI.  
+<td>aVisitDate</td>
+<td>       The page's last visit date.  
 </td>
 </tr>
 
@@ -231,14 +231,14 @@ way around this.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI that was deleted.  
+<td>aGUID</td>
+<td>       The unique ID associated with the page.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI that was deleted.  
+<td>aReason</td>
+<td>       Indicates the reason for the removal.  see REASON_* constants.  
 </td>
 </tr>
 
@@ -274,20 +274,20 @@ An attribute of this page changed.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI of the page on which an attribute changed.  
+<td>aChangedAttribute</td>
+<td>       The attribute whose value changed.  See ATTRIBUTE_* constants.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI of the page on which an attribute changed.  
+<td>aNewValue</td>
+<td>       The attribute's new value.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI of the page on which an attribute changed.  
+<td>aGUID</td>
+<td>       The unique ID associated with the page.  
 </td>
 </tr>
 
@@ -327,26 +327,28 @@ Called when some visits of an history entry are expired.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The page whose visits have been expired.  
+<td>aVisitTime</td>
+<td>       The largest visit time in microseconds that has been expired.  We  
+       guarantee that we don't have any visit older than this date.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The page whose visits have been expired.  
+<td>aGUID</td>
+<td>       The unique ID associated with the page.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The page whose visits have been expired.  
+<td>aReason</td>
+<td>       Indicates the reason for the removal.  see REASON_* constants.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The page whose visits have been expired.  
+<td>aTransitionType</td>
+<td>       If it's a valid TRANSITION_* value, all visits of the specified type  
+       have been removed.  
 </td>
 </tr>
 

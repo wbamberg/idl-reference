@@ -64,47 +64,40 @@ Initialize the input stream pump.
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       contains the data to be read.  if the input stream is non-blocking,  
-       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
-       then the stream will be read directly.  otherwise, it will be read  
-       on a background thread using the stream transport service.  
+<td>aStreamPos</td>
+<td>       specifies the stream offset from which to start reading.  the  
+       offset value is absolute.  pass -1 to specify the current offset.  
+       NOTE: this parameter is ignored if the underlying stream does not  
+       implement nsISeekableStream.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       contains the data to be read.  if the input stream is non-blocking,  
-       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
-       then the stream will be read directly.  otherwise, it will be read  
-       on a background thread using the stream transport service.  
+<td>aStreamLen</td>
+<td>       specifies how much data to read from the stream.  pass -1 to read  
+       all data available in the stream.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       contains the data to be read.  if the input stream is non-blocking,  
-       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
-       then the stream will be read directly.  otherwise, it will be read  
-       on a background thread using the stream transport service.  
+<td>aSegmentSize</td>
+<td>       if the stream transport service is used, then this parameter  
+       specifies the segment size for the stream transport's buffer.  
+       pass 0 to specify the default value.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       contains the data to be read.  if the input stream is non-blocking,  
-       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
-       then the stream will be read directly.  otherwise, it will be read  
-       on a background thread using the stream transport service.  
+<td>aSegmentCount</td>
+<td>       if the stream transport service is used, then this parameter  
+       specifies the segment count for the stream transport's buffer.  
+       pass 0 to specify the default value.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       contains the data to be read.  if the input stream is non-blocking,  
-       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
-       then the stream will be read directly.  otherwise, it will be read  
-       on a background thread using the stream transport service.  
+<td>aCloseWhenDone</td>
+<td>       if true, the input stream will be closed after it has been read.  
 </td>
 </tr>
 
@@ -132,8 +125,8 @@ asynchronously to the listener via OnDataAvailable.
 </tr>
 
 <tr>
-<td>aListener</td>
-<td>       receives notifications.  
+<td>aListenerContext</td>
+<td>       passed to listener methods.  
 </td>
 </tr>
 

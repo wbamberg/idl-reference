@@ -56,20 +56,20 @@ Trigger a callback in the content process when an error occurs.
 </tr>
 
 <tr>
-<td>message</td>
-<td>       The error message.  
+<td>filename</td>
+<td>       The file name in which the error occured.  
 </td>
 </tr>
 
 <tr>
-<td>message</td>
-<td>       The error message.  
+<td>lineNumber</td>
+<td>       The line number in which the error occured.  
 </td>
 </tr>
 
 <tr>
-<td>message</td>
-<td>       The error message.  
+<td>columnNumber</td>
+<td>       The column number in which the error occured.  
 </td>
 </tr>
 

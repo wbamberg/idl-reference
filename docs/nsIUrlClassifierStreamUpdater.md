@@ -38,37 +38,33 @@ as well as in testing.
 </tr>
 
 <tr>
-<td>aRequestTables</td>
-<td>Comma-separated list of tables included in this  
-       update.  
+<td>aRequestBody</td>
+<td>The body for the request.  
 </td>
 </tr>
 
 <tr>
-<td>aRequestTables</td>
-<td>Comma-separated list of tables included in this  
-       update.  
+<td>aUpdateUrl</td>
+<td>The plaintext url from which to request updates.  
 </td>
 </tr>
 
 <tr>
-<td>aRequestTables</td>
-<td>Comma-separated list of tables included in this  
-       update.  
+<td>aSuccessCallback</td>
+<td>Called after a successful update.  
 </td>
 </tr>
 
 <tr>
-<td>aRequestTables</td>
-<td>Comma-separated list of tables included in this  
-       update.  
+<td>aUpdateErrorCallback</td>
+<td>Called for problems applying the update  
 </td>
 </tr>
 
 <tr>
-<td>aRequestTables</td>
-<td>Comma-separated list of tables included in this  
-       update.  
+<td>aDownloadErrorCallback</td>
+<td>Called if we get an http error or a  
+       connection refused error.  
 </td>
 </tr>
 

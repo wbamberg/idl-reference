@@ -35,18 +35,14 @@ string of the format provider_name-semantic_type-table_type.  For
 </tr>
 
 <tr>
-<td>tableName</td>
-<td>A string of the format  
-       provider_name-semantic_type-table_type.  For example,  
-       goog-white-enchash or goog-black-url.  
+<td>updateUrl</td>
+<td>The URL from which to fetch updates.  
 </td>
 </tr>
 
 <tr>
-<td>tableName</td>
-<td>A string of the format  
-       provider_name-semantic_type-table_type.  For example,  
-       goog-white-enchash or goog-black-url.  
+<td>gethashUrl</td>
+<td>The URL from which to fetch hash completions.  
 </td>
 </tr>
 

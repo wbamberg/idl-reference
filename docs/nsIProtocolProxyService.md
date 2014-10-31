@@ -55,14 +55,16 @@ also supports nsIProxiedProtocolHandler.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI to test.  
+<td>aFlags</td>
+<td>       A bit-wise combination of the RESOLVE_ flags defined above.  Pass  
+       0 to specify the default behavior.  Any additional bits that do  
+       not correspond to a RESOLVE_ flag are reserved for future use.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI to test.  
+<td>aCallback</td>
+<td>       The object to be notified when the result is available.  
 </td>
 </tr>
 
@@ -123,77 +125,37 @@ a SOCKS connection.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>       The proxy type.  This is a string value that identifies the proxy  
-       type.  Standard values include:  
-         "http"    - specifies a HTTP proxy  
-         "https"   - specifies HTTP proxying over TLS connection to proxy  
-         "socks"   - specifies a SOCKS version 5 proxy  
-         "socks4"  - specifies a SOCKS version 4 proxy  
-         "direct"  - specifies a direct connection (useful for failover)  
-       The type name is case-insensitive.  Other string values may be  
-       possible, and new types may be defined by a future version of  
-       this interface.  
+<td>aHost</td>
+<td>       The proxy hostname or IP address.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>       The proxy type.  This is a string value that identifies the proxy  
-       type.  Standard values include:  
-         "http"    - specifies a HTTP proxy  
-         "https"   - specifies HTTP proxying over TLS connection to proxy  
-         "socks"   - specifies a SOCKS version 5 proxy  
-         "socks4"  - specifies a SOCKS version 4 proxy  
-         "direct"  - specifies a direct connection (useful for failover)  
-       The type name is case-insensitive.  Other string values may be  
-       possible, and new types may be defined by a future version of  
-       this interface.  
+<td>aPort</td>
+<td>       The proxy port.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>       The proxy type.  This is a string value that identifies the proxy  
-       type.  Standard values include:  
-         "http"    - specifies a HTTP proxy  
-         "https"   - specifies HTTP proxying over TLS connection to proxy  
-         "socks"   - specifies a SOCKS version 5 proxy  
-         "socks4"  - specifies a SOCKS version 4 proxy  
-         "direct"  - specifies a direct connection (useful for failover)  
-       The type name is case-insensitive.  Other string values may be  
-       possible, and new types may be defined by a future version of  
-       this interface.  
+<td>aFlags</td>
+<td>       Flags associated with this connection.  See nsIProxyInfo.idl  
+       for currently defined flags.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>       The proxy type.  This is a string value that identifies the proxy  
-       type.  Standard values include:  
-         "http"    - specifies a HTTP proxy  
-         "https"   - specifies HTTP proxying over TLS connection to proxy  
-         "socks"   - specifies a SOCKS version 5 proxy  
-         "socks4"  - specifies a SOCKS version 4 proxy  
-         "direct"  - specifies a direct connection (useful for failover)  
-       The type name is case-insensitive.  Other string values may be  
-       possible, and new types may be defined by a future version of  
-       this interface.  
+<td>aFailoverTimeout</td>
+<td>       Specifies the length of time (in seconds) to ignore this proxy if  
+       this proxy fails.  Pass UINT32_MAX to specify the default  
+       timeout value, causing nsIProxyInfo::failoverTimeout to be  
+       assigned the default value.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>       The proxy type.  This is a string value that identifies the proxy  
-       type.  Standard values include:  
-         "http"    - specifies a HTTP proxy  
-         "https"   - specifies HTTP proxying over TLS connection to proxy  
-         "socks"   - specifies a SOCKS version 5 proxy  
-         "socks4"  - specifies a SOCKS version 4 proxy  
-         "direct"  - specifies a direct connection (useful for failover)  
-       The type name is case-insensitive.  Other string values may be  
-       possible, and new types may be defined by a future version of  
-       this interface.  
+<td>aFailoverProxy</td>
+<td>       Specifies the next proxy to try if this proxy fails.  This  
+       parameter may be null.  
 </td>
 </tr>
 
@@ -228,14 +190,15 @@ from resolve/asyncResolve as well as from getFailoverForProxy.
 </tr>
 
 <tr>
-<td>aProxyInfo</td>
-<td>       The proxy that was unavailable.  
+<td>aURI</td>
+<td>       The URI that was originally passed to resolve/asyncResolve.  
 </td>
 </tr>
 
 <tr>
-<td>aProxyInfo</td>
-<td>       The proxy that was unavailable.  
+<td>aReason</td>
+<td>       The error code corresponding to the proxy failure.  This value  
+       may be used to tune the delay before this proxy is used again.  
 </td>
 </tr>
 
@@ -287,8 +250,8 @@ via the preferences service).
 </tr>
 
 <tr>
-<td>aFilter</td>
-<td>       The nsIProtocolProxyFilter instance to be registered.  
+<td>aPosition</td>
+<td>       The position of the filter.  
 </td>
 </tr>
 

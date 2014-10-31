@@ -25,14 +25,14 @@ Initialize with a pointer to the document and the mime type.
 </tr>
 
 <tr>
-<td>aDocument</td>
-<td>Document to encode.  
+<td>aMimeType</td>
+<td>MimeType to use. May also be set by SetMimeType.  
 </td>
 </tr>
 
 <tr>
-<td>aDocument</td>
-<td>Document to encode.  
+<td>aFlags</td>
+<td>Flags to use while encoding. May also be set by SetFlags.  
 </td>
 </tr>
 
@@ -195,8 +195,8 @@ into the two arguments.
 
 <tr>
 <td>[OUT]</td>
-<td>aContextString The string where the parent hierarchy  
-             information will be stored.  
+<td>aInfoString The string where extra context info will  
+             be stored.  
 </td>
 </tr>
 

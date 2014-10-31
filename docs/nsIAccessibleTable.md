@@ -29,7 +29,7 @@ the cell is currently visible (on the screen).
 
 <tr>
 <td></td>
-<td>rowIndex     [in] the row index to retrieve the cell at  
+<td>columnIndex  [in] the column index to retrieve the cell at  
 </td>
 </tr>
 
@@ -56,7 +56,7 @@ index.
 
 <tr>
 <td></td>
-<td>rowIndex    [in] the row index to return cell index at  
+<td>columnIndex [in] the column index to return cell index at  
 </td>
 </tr>
 
@@ -121,14 +121,14 @@ indices.
 </tr>
 
 <tr>
-<td>cellIndex</td>
-<td>[in] cell index to return row and column indices for  
+<td>rowIndex</td>
+<td>[out] row index at the given cell index  
 </td>
 </tr>
 
 <tr>
-<td>cellIndex</td>
-<td>[in] cell index to return row and column indices for  
+<td>columnIndex</td>
+<td>[out] column index at the given cell index  
 </td>
 </tr>
 
@@ -157,7 +157,8 @@ the specified cell spans multiple columns.
 
 <tr>
 <td></td>
-<td>row     [in] row index of the cell to return the column extent for  
+<td>column  [in] column index of the cell to return the column extent  
+                 for  
 </td>
 </tr>
 
@@ -186,7 +187,8 @@ cell spans multiple rows.
 
 <tr>
 <td></td>
-<td>row     [in] row index of the cell to return the column extent for  
+<td>column  [in] column index of the cell to return the column extent  
+                 for  
 </td>
 </tr>
 
@@ -290,7 +292,7 @@ Return a boolean value indicating whether the specified cell is selected.
 
 <tr>
 <td></td>
-<td>rowIndex     [in] the row index of the cell  
+<td>columnIndex  [in] the column index of the cell  
 </td>
 </tr>
 
@@ -316,7 +318,7 @@ Return an array of cell indices currently selected.
 
 <tr>
 <td></td>
-<td>cellsArraySize  [in] length of array  
+<td>cellsArray      [in] array of indexes of selected cells  
 </td>
 </tr>
 
@@ -342,7 +344,7 @@ Return an array of column indices currently selected.
 
 <tr>
 <td></td>
-<td>columnsArraySize  [in] length of array  
+<td>columnsArray      [in] array of indices of selected columns  
 </td>
 </tr>
 
@@ -368,7 +370,7 @@ Return an array of row indices currently selected.
 
 <tr>
 <td></td>
-<td>rowsArraySize  [in] Length of array  
+<td>rowsArray      [in] array of indices of selected rows  
 </td>
 </tr>
 

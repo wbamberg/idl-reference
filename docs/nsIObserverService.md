@@ -41,14 +41,18 @@ topic.
 </tr>
 
 <tr>
-<td>anObserve</td>
-<td>: The interface pointer which will receive notifications.  
+<td>aTopic</td>
+<td>: The notification topic or subject.  
 </td>
 </tr>
 
 <tr>
-<td>anObserve</td>
-<td>: The interface pointer which will receive notifications.  
+<td>ownsWeak</td>
+<td>: If set to false, the nsIObserverService will hold a   
+                   strong reference to |anObserver|.  If set to true and   
+                   |anObserver| supports the nsIWeakReference interface,  
+                   a weak reference will be held.  Otherwise an error will be  
+                   returned.  
 </td>
 </tr>
 
@@ -78,9 +82,8 @@ topic.
 </tr>
 
 <tr>
-<td>anObserver</td>
-<td>: The interface pointer which will stop recieving  
-                    notifications.  
+<td>aTopic</td>
+<td>: The notification topic or subject.  
 </td>
 </tr>
 
@@ -108,14 +111,14 @@ Notifies all registered listeners of the given topic.
 </tr>
 
 <tr>
-<td>aSubject</td>
-<td>: Notification specific interface pointer.  
+<td>aTopic</td>
+<td>: The notification topic or subject.  
 </td>
 </tr>
 
 <tr>
-<td>aSubject</td>
-<td>: Notification specific interface pointer.  
+<td>someData</td>
+<td>: Notification specific wide string.  
 </td>
 </tr>
 

@@ -61,14 +61,14 @@ since the last commit.
 </tr>
 
 <tr>
-<td>aCatType</td>
-<td>       The type of list to add.  
+<td>items</td>
+<td>       An array of nsIJumpListItem items to add to the list.  
 </td>
 </tr>
 
 <tr>
-<td>aCatType</td>
-<td>       The type of list to add.  
+<td>catName</td>
+<td>       For custom lists, the title of the list.  
 </td>
 </tr>
 

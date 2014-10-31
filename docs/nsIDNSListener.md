@@ -33,14 +33,15 @@ called when an asynchronous host lookup completes.
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>       the value returned from asyncResolve.  
+<td>aRecord</td>
+<td>       the DNS record corresponding to the hostname that was resolved.  
+       this parameter is null if there was an error.  
 </td>
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>       the value returned from asyncResolve.  
+<td>aStatus</td>
+<td>       if the lookup failed, this parameter gives the reason.  
 </td>
 </tr>
 

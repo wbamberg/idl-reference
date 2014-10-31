@@ -67,9 +67,8 @@ Find a command-line flag.
 </tr>
 
 <tr>
-<td>aFlag</td>
-<td>The flag name to locate. Do not include the initial  
-                      hyphen.  
+<td>aCaseSensitive</td>
+<td>Whether to do case-sensitive comparisons.  
 </td>
 </tr>
 
@@ -95,8 +94,8 @@ a handler has processed the arguments.
 </tr>
 
 <tr>
-<td>aStart</td>
-<td>Index to begin removing.  
+<td>aEnd</td>
+<td>Index to end removing, inclusive.  
 </td>
 </tr>
 
@@ -122,8 +121,8 @@ A helper method which will find a flag and remove it in one step.
 </tr>
 
 <tr>
-<td>aFlag</td>
-<td>The flag name to find and remove.  
+<td>aCaseSensitive</td>
+<td>Whether to do case-sensitive comparisons.  
 </td>
 </tr>
 
@@ -153,8 +152,8 @@ method that combines "findFlag" and "removeArguments" in one step.
 </tr>
 
 <tr>
-<td>aFlag</td>
-<td>The flag name to find and remove.  
+<td>aCaseSensitive</td>
+<td>Whether to do case-sensitive flag search.  
 </td>
 </tr>
 

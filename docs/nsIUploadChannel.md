@@ -54,14 +54,20 @@ for the aContentType parameter (see below).
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       The stream to be uploaded by this channel.  
+<td>aContentType</td>
+<td>       If aContentType is empty, the protocol will assume that no  
+       content headers are to be added to the uploaded stream and that  
+       any required headers are already encoded in the stream.  In the  
+       case of HTTP, if this parameter is non-empty, then its value will  
+       replace any existing Content-Type header on the HTTP request.  
+       In the case of FTP and FILE, this parameter is ignored.  
 </td>
 </tr>
 
 <tr>
-<td>aStream</td>
-<td>       The stream to be uploaded by this channel.  
+<td>aContentLength</td>
+<td>       A value of -1 indicates that the length of the stream should be  
+       determined by calling the stream's |available| method.  
 </td>
 </tr>
 

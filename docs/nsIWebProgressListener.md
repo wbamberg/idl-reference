@@ -48,20 +48,29 @@ associated with aWebProgress.
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification  
+<td>aRequest</td>
+<td>       The nsIRequest that has changed state.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification  
+<td>aStateFlags</td>
+<td>       Flags indicating the new state.  This value is a combination of one  
+       of the State Transition Flags and one or more of the State Type  
+       Flags defined above.  Any undefined bits are reserved for future  
+       use.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification  
+<td>aStatus</td>
+<td>       Error status code associated with the state change.  This parameter  
+       should be ignored unless aStateFlags includes the STATE_STOP bit.  
+       The status code indicates success or failure of the request  
+       associated with the state change.  NOTE: aStatus may be a success  
+       code even for server generated errors, such as the HTTP 404 error.  
+       In such cases, the request itself should be queried for extended  
+       error information (e.g., for HTTP requests see nsIHttpChannel).  
 </td>
 </tr>
 
@@ -107,32 +116,32 @@ nsIWebProgressListener2::onProgressChange64 will be called.
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aRequest</td>
+<td>       The nsIRequest that has new progress.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aCurSelfProgress</td>
+<td>       The current progress for aRequest.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aMaxSelfProgress</td>
+<td>       The maximum progress for aRequest.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aCurTotalProgress</td>
+<td>       The current progress for all requests associated with aWebProgress.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aMaxTotalProgress</td>
+<td>       The total progress for all requests associated with aWebProgress.  
 </td>
 </tr>
 
@@ -169,20 +178,21 @@ this new page here.
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aRequest</td>
+<td>       The associated nsIRequest.  This may be null in some cases.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aLocation</td>
+<td>       The URI of the location that is being loaded.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aFlags</td>
+<td>       This is a value which explains the situation or the reason why  
+       the location has changed.  
 </td>
 </tr>
 
@@ -218,20 +228,23 @@ browser).
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aRequest</td>
+<td>       The nsIRequest that has new status.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aStatus</td>
+<td>       This value is not an error code.  Instead, it is a numeric value  
+       that indicates the current status of the request.  This interface  
+       does not define the set of possible status codes.  NOTE: Some  
+       status values are defined by nsITransport and nsISocketTransport.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aMessage</td>
+<td>       Localized text corresponding to aStatus.  
 </td>
 </tr>
 
@@ -268,14 +281,16 @@ installed.
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aRequest</td>
+<td>       The nsIRequest that has new security state.  
 </td>
 </tr>
 
 <tr>
-<td>aWebProgress</td>
-<td>       The nsIWebProgress instance that fired the notification.  
+<td>aState</td>
+<td>       A value composed of the Security State Flags and the Security  
+       Strength Flags listed above.  Any undefined bits are reserved for  
+       future use.  
 </td>
 </tr>
 

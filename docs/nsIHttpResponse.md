@@ -44,16 +44,22 @@ version (e.g. "1.1"), followed by " 200 OK".
 </tr>
 
 <tr>
-<td>httpVersion</td>
-<td>  the HTTP version of this, as a string (e.g. "1.1"); if null, the server  
-  default is used  
+<td>code</td>
+<td>  the numeric HTTP status code for this  
 </td>
 </tr>
 
 <tr>
-<td>httpVersion</td>
-<td>  the HTTP version of this, as a string (e.g. "1.1"); if null, the server  
-  default is used  
+<td>description</td>
+<td>  a human-readable description of code; may be null if no description is  
+  desired  
+@throws NS_ERROR_INVALID_ARG  
+  if httpVersion is not a valid HTTP version string, statusCode is greater  
+  than 999, or description contains invalid characters  
+@throws NS_ERROR_NOT_AVAILABLE  
+  if this response is being processed asynchronously and data has been  
+  written to this response's body, or if seizePower() has been called on  
+  this  
 </td>
 </tr>
 
@@ -95,14 +101,27 @@ Sets the specified header in this.
 </tr>
 
 <tr>
-<td>name</td>
-<td>  the name of the header; must match the field-name production per RFC 2616  
+<td>value</td>
+<td>  the value of the header; must match the field-value production per RFC  
+  2616  
 </td>
 </tr>
 
 <tr>
-<td>name</td>
-<td>  the name of the header; must match the field-name production per RFC 2616  
+<td>merge</td>
+<td>  when true, if the given header already exists in this, the values passed  
+  to this function will be merged into the existing header, per RFC 2616  
+  header semantics (except for the Set-Cookie, WWW-Authenticate, and  
+  Proxy-Authenticate headers, which will treat each such merged header as  
+  an additional instance of the header, for real-world compatibility  
+  reasons); when false, replaces any existing header of the given name (if  
+  any exists) with a new header with the specified value  
+@throws NS_ERROR_INVALID_ARG  
+  if name or value is not a valid header component  
+@throws NS_ERROR_NOT_AVAILABLE  
+  if this response is being processed asynchronously and data has been  
+  written to this response's body, or if seizePower() has been called on  
+  this  
 </td>
 </tr>
 

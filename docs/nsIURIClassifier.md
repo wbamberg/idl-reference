@@ -41,14 +41,16 @@ Classify a Principal using its URI.
 </tr>
 
 <tr>
-<td>aPrincipal</td>
-<td>       The principal that should be checked by the URI classifier.  
+<td>aTrackingProtectionEnabled</td>
+<td>       Whether or not to classify the given URI against tracking  
+       protection lists  
 </td>
 </tr>
 
 <tr>
-<td>aPrincipal</td>
-<td>       The principal that should be checked by the URI classifier.  
+<td>aCallback</td>
+<td>       The URI classifier will call this callback when the URI has been  
+       classified.  
 </td>
 </tr>
 

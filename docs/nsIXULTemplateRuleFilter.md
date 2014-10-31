@@ -40,8 +40,8 @@ may still match another rule.
 </tr>
 
 <tr>
-<td>aRef</td>
-<td>the result to examine  
+<td>aRule</td>
+<td>the rule node  
 </td>
 </tr>
 

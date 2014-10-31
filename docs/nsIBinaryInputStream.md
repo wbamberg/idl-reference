@@ -115,8 +115,10 @@ Note: passing view.buffer, where view is an ArrayBufferView of an
 </tr>
 
 <tr>
-<td>aLength</td>
-<td>the number of bytes that must be read  
+<td>aArrayBuffer</td>
+<td>the arraybuffer in which to store the results  
+Note: passing view.buffer, where view is an ArrayBufferView of an  
+      ArrayBuffer, is not valid unless view.byteOffset == 0.  
 </td>
 </tr>
 

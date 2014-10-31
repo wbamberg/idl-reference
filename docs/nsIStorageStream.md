@@ -35,8 +35,9 @@ allocated for the stream's backing-store.
 </tr>
 
 <tr>
-<td>segmentSize</td>
-<td>       Size of each segment. Must be a power of two.  
+<td>maxSize</td>
+<td>       Maximum total size of this stream. length will always be less  
+       than or equal to this value. Passing UINT32_MAX is safe.  
 </td>
 </tr>
 

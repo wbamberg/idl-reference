@@ -44,20 +44,20 @@ a storage for the scope created.
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>   The parent window.  
+<td>aPrincipal</td>
+<td>   Principal to bound storage to.  
 </td>
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>   The parent window.  
+<td>aDocumentURI</td>
+<td>   URL of the demanding document, used for DOM storage event only.  
 </td>
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>   The parent window.  
+<td>aPrivate</td>
+<td>   Whether the demanding document is running in Private Browsing mode or not.  
 </td>
 </tr>
 
@@ -89,14 +89,14 @@ scope is returned.
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>   The parent window.  
+<td>aPrincipal</td>
+<td>   Principal to bound storage to.  
 </td>
 </tr>
 
 <tr>
-<td>aWindow</td>
-<td>   The parent window.  
+<td>aPrivate</td>
+<td>   Whether the demanding document is running in Private Browsing mode or not.  
 </td>
 </tr>
 
@@ -155,8 +155,8 @@ Returns true if the storage belongs to the given principal and is managed
 </tr>
 
 <tr>
-<td>aPrincipal</td>
-<td>   Principal to check the storage against.  
+<td>aStorage</td>
+<td>   The storage object to examine.  
 </td>
 </tr>
 

@@ -85,8 +85,8 @@ is delievered.
 </tr>
 
 <tr>
-<td>aProtocolName</td>
-<td>       The value of the HTTP Upgrade request header  
+<td>aListener</td>
+<td>       The callback object used to handle a successful upgrade  
 </td>
 </tr>
 

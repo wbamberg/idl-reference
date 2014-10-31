@@ -26,9 +26,8 @@ Perform captive portal detection on specific network interface.
 </tr>
 
 <tr>
-<td>ifname</td>
-<td>The name of network interface, exception will be thrwon  
-              if the same interface has unfinished request.  
+<td>callback</td>
+<td>Callbacks when detection procedure starts and finishes.  
 </td>
 </tr>
 

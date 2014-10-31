@@ -53,8 +53,8 @@ Sets the value of a storage item with the given name.
 
 <tr>
 <td></td>
-<td>aName  
-         The name of an item  
+<td>aValue  
+         The value to assign to the item  
 </td>
 </tr>
 
@@ -85,8 +85,8 @@ default value if the item does not exist.
 
 <tr>
 <td></td>
-<td>aName  
-         The name of an item  
+<td>aDefaultValue  
+         The value to return if no item exists with the given name  
 </td>
 </tr>
 

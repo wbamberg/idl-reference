@@ -29,8 +29,9 @@ The selection is collapsed and is left in the new cell
 </tr>
 
 <tr>
-<td>aNumber</td>
-<td>Number of items to insert  
+<td>aAfter</td>
+<td>If TRUE, insert after the current cell,  
+                    else insert before current cell  
 </td>
 </tr>
 
@@ -229,8 +230,8 @@ A cell that spans across multiple cellmap locations will
 </tr>
 
 <tr>
-<td>aTable</td>
-<td>A table in the document  
+<td>aRowIndex,</td>
+<td>aColIndex     The 0-based cellmap indexes  
 </td>
 </tr>
 
@@ -331,26 +332,35 @@ Used for aDirection param in SetSelectionAfterTableEdit
 </tr>
 
 <tr>
-<td>aTable</td>
-<td>A table in the document  
+<td>aRow</td>
+<td>The row ...  
 </td>
 </tr>
 
 <tr>
-<td>aTable</td>
-<td>A table in the document  
+<td>aCol</td>
+<td>... and column defining the cell  
+                   where we will try to place the caret  
 </td>
 </tr>
 
 <tr>
-<td>aTable</td>
-<td>A table in the document  
+<td>aSelected</td>
+<td>If true, we select the whole cell instead of setting caret  
 </td>
 </tr>
 
 <tr>
-<td>aTable</td>
-<td>A table in the document  
+<td>aDirection</td>
+<td>If cell at (aCol, aRow) is not found,  
+                   search for previous cell in the same  
+                   column (aPreviousColumn) or row (ePreviousRow)  
+                   or don't search for another cell (aNoSearch)  
+                   If no cell is found, caret is place just before table;  
+                   and if that fails, at beginning of document.  
+                   Thus we generally don't worry about the return value  
+                    and can use the nsSetSelectionAfterTableEdit stack-based   
+                    object to insure we reset the caret in a table-editing method.  
 </td>
 </tr>
 
@@ -385,10 +395,10 @@ Used for aDirection param in SetSelectionAfterTableEdit
 </tr>
 
 <tr>
-<td>aTagName</td>
-<td>The tagname of returned element  
-                        Note that "td" will be returned if name  
-                        is actually "th"  
+<td>aCount</td>
+<td>How many table elements were selected  
+                        This tells us if we have multiple cells selected  
+                          (0 if element is a parent cell of selection)  
 </td>
 </tr>
 
@@ -457,9 +467,12 @@ Returns the DOM cell element
 </tr>
 
 <tr>
-<td>aCell</td>
-<td>[OUT] Selected cell or null if ranges don't contain  
-                 cell selections  
+<td>aRange</td>
+<td>[OUT] Optional: if not null, return the selection range   
+                    associated with the cell  
+Returns the DOM cell element  
+  (in C++: returns NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
+   passes NS_SUCCEEDED macro)  
 </td>
 </tr>
 
@@ -493,16 +506,14 @@ Returns the DOM cell element
 </tr>
 
 <tr>
-<td>aCell</td>
-<td>Selected cell or null if ranges don't contain  
-                   cell selections  
+<td>aRowIndex</td>
+<td>Optional: if not null, return row index of 1st cell  
 </td>
 </tr>
 
 <tr>
-<td>aCell</td>
-<td>Selected cell or null if ranges don't contain  
-                   cell selections  
+<td>aColIndex</td>
+<td>Optional: if not null, return column index of 1st cell  
 </td>
 </tr>
 
@@ -535,9 +546,9 @@ Returns the DOM cell element
 </tr>
 
 <tr>
-<td>aCell</td>
-<td>Selected cell or null if no more selected cells  
-                    or ranges don't contain cell selections  
+<td>aRange</td>
+<td>Optional: if not null, return the selection range   
+                    associated with the cell  
 </td>
 </tr>
 

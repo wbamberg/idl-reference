@@ -34,14 +34,14 @@ query to a nsIClassInfo.
 </tr>
 
 <tr>
-<td>aCompMgr</td>
-<td>: The global component manager  
+<td>aClass</td>
+<td>: ClassID of object instance requested  
 </td>
 </tr>
 
 <tr>
-<td>aCompMgr</td>
-<td>: The global component manager  
+<td>aIID</td>
+<td>: IID of interface requested  
 </td>
 </tr>
 
@@ -71,20 +71,20 @@ called so that any setup registration can be preformed.
 </tr>
 
 <tr>
-<td>aCompMgr</td>
-<td>: The global component manager  
+<td>aLocation</td>
+<td>: The location of the nsIModule on disk  
 </td>
 </tr>
 
 <tr>
-<td>aCompMgr</td>
-<td>: The global component manager  
+<td>aLoaderStr:</td>
+<td>Opaque loader specific string  
 </td>
 </tr>
 
 <tr>
-<td>aCompMgr</td>
-<td>: The global component manager  
+<td>aType</td>
+<td>: Loader Type being used to load this module   
 </td>
 </tr>
 
@@ -114,14 +114,14 @@ called so that any unregistration can be preformed
 </tr>
 
 <tr>
-<td>aCompMgr</td>
-<td>: The global component manager  
+<td>aLocation</td>
+<td>: The location of the nsIModule on disk  
 </td>
 </tr>
 
 <tr>
-<td>aCompMgr</td>
-<td>: The global component manager  
+<td>aLoaderStr</td>
+<td>: Opaque loader specific string  
 </td>
 </tr>
 

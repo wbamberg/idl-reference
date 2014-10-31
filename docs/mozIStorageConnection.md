@@ -210,9 +210,9 @@ the same as what is specified, but that doesn't happen currently.)
 </tr>
 
 <tr>
-<td>aTableName</td>
-<td>       The table name to be created, consisting of [A-Za-z0-9_], and  
-       beginning with a letter.  
+<td>aTableSchema</td>
+<td>       The schema of the table; what would normally go between the parens  
+       in a CREATE TABLE statement: e.g., "foo  INTEGER, bar STRING".  
 </td>
 </tr>
 
@@ -245,8 +245,11 @@ on mobile devices or if less than 500MiB of space is left available.
 </tr>
 
 <tr>
-<td>aIncrement</td>
-<td>       The database file will grow in multiples of chunkSize.  
+<td>aDatabaseName</td>
+<td>       Sqlite database name. "" means pass NULL for zDbName to sqlite3_file_control.  
+       See http://sqlite.org/c3ref/file_control.html for more details.  
+@throws NS_ERROR_FILE_TOO_BIG  
+        If the system is short on storage space.  
 </td>
 </tr>
 

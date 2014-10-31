@@ -30,8 +30,8 @@ with the nickname supplied here, it is removed and a new one is made.
 </tr>
 
 <tr>
-<td>nickname</td>
-<td>Nickname that identifies the cert  
+<td>cb</td>
+<td>Callback to be notified with the result  
 </td>
 </tr>
 
@@ -56,8 +56,8 @@ Remove a X.509 cert with the given nickname.
 </tr>
 
 <tr>
-<td>nickname</td>
-<td>Nickname that identifies the cert  
+<td>cb</td>
+<td>Callback to be notified with the result  
 </td>
 </tr>
 

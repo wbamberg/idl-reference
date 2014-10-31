@@ -38,20 +38,22 @@ is a file, the behaviour is not specified.
 </tr>
 
 <tr>
-<td>pathToWatch</td>
-<td>The path to watch for changes.  
+<td>onChange</td>
+<td>       The callback invoked whenever a change on a watched  
+       resource is detected.  
 </td>
 </tr>
 
 <tr>
-<td>pathToWatch</td>
-<td>The path to watch for changes.  
+<td>onError</td>
+<td>       The optional callback invoked whenever an error occurs.  
 </td>
 </tr>
 
 <tr>
-<td>pathToWatch</td>
-<td>The path to watch for changes.  
+<td>onSuccess</td>
+<td>       The optional callback invoked when the file watcher starts  
+       watching the resource for changes.  
 </td>
 </tr>
 
@@ -90,20 +92,23 @@ some error callbacks associated).
 </tr>
 
 <tr>
-<td>pathToUnwatch</td>
-<td>The path to un-watch.  
+<td>onChange</td>
+<td>       The registered callback invoked whenever a change on a watched  
+       resource is detected.  
 </td>
 </tr>
 
 <tr>
-<td>pathToUnwatch</td>
-<td>The path to un-watch.  
+<td>onError</td>
+<td>       The optionally registered callback invoked whenever an error  
+       occurs.  
 </td>
 </tr>
 
 <tr>
-<td>pathToUnwatch</td>
-<td>The path to un-watch.  
+<td>onSuccess</td>
+<td>       The optional callback invoked when the file watcher stops  
+       watching the resource for changes.  
 </td>
 </tr>
 

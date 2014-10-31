@@ -38,23 +38,23 @@ Set the pivot's text range in a text accessible.
 </tr>
 
 <tr>
-<td>aTextAccessible</td>
-<td>[in] the text accessible that contains the desired  
-                          range.  
+<td>aStartOffset</td>
+<td>[in] the start offset to set.  
 </td>
 </tr>
 
 <tr>
-<td>aTextAccessible</td>
-<td>[in] the text accessible that contains the desired  
-                          range.  
+<td>aEndOffset</td>
+<td>[in] the end offset to set.  
 </td>
 </tr>
 
 <tr>
-<td>aTextAccessible</td>
-<td>[in] the text accessible that contains the desired  
-                          range.  
+<td>aIsFromUserInput</td>
+<td>[in] the pivot changed because of direct user input  
+                          (default is true).  
+@throws NS_ERROR_INVALID_ARG when the offset exceeds the accessible's  
+  character count.  
 </td>
 </tr>
 
@@ -85,20 +85,22 @@ complying to given traversal rule.
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in] traversal rule to use.  
+<td>aAnchor</td>
+<td>[in] accessible to start search from, if not provided,  
+                          current position will be used.  
 </td>
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in] traversal rule to use.  
+<td>aIncludeStart</td>
+<td>[in] include anchor accessible in search.  
 </td>
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in] traversal rule to use.  
+<td>aIsFromUserInput</td>
+<td>[in] the pivot changed because of direct user input  
+                          (default is true).  
 </td>
 </tr>
 
@@ -129,20 +131,22 @@ complying to given traversal rule.
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in] traversal rule to use.  
+<td>aAnchor</td>
+<td>[in] accessible to start search from, if not provided,  
+                          current position will be used.  
 </td>
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in] traversal rule to use.  
+<td>aIncludeStart</td>
+<td>[in] include anchor accessible in search.  
 </td>
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in] traversal rule to use.  
+<td>aIsFromUserInput</td>
+<td>[in] the pivot changed because of direct user input  
+                          (default is true).  
 </td>
 </tr>
 
@@ -169,8 +173,9 @@ Move pivot to first object in subtree complying to given traversal rule.
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in] traversal rule to use.  
+<td>aIsFromUserInput</td>
+<td>[in] the pivot changed because of direct user input  
+                          (default is true).  
 </td>
 </tr>
 
@@ -196,8 +201,9 @@ Move pivot to last object in subtree complying to given traversal rule.
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in] traversal rule to use.  
+<td>aIsFromUserInput</td>
+<td>[in] the pivot changed because of direct user input  
+                          (default is true).  
 </td>
 </tr>
 
@@ -226,9 +232,9 @@ Move pivot to next text range.
 </tr>
 
 <tr>
-<td>aBoundary</td>
-<td>[in] type of boundary for next text range,  
-                          character, word, etc.  
+<td>aIsFromUserInput</td>
+<td>[in] the pivot changed because of direct user input  
+                          (default is true).  
 </td>
 </tr>
 
@@ -257,9 +263,9 @@ Move pivot to previous text range.
 </tr>
 
 <tr>
-<td>aBoundary</td>
-<td>[in] type of boundary for next text range,  
-                          character, word, etc.  
+<td>aIsFromUserInput</td>
+<td>[in] the pivot changed because of direct user input  
+                          (default is true).  
 </td>
 </tr>
 
@@ -290,26 +296,28 @@ Move pivot to given coordinate in screen pixels.
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in]  raversal rule to use.  
+<td>aX</td>
+<td>[in]  screen's x coordinate  
 </td>
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in]  raversal rule to use.  
+<td>aY</td>
+<td>[in]  screen's y coordinate  
 </td>
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in]  raversal rule to use.  
+<td>aIgnoreNoMatch</td>
+<td>[in]  don't unset position if no object was found  
+                          at point.  
 </td>
 </tr>
 
 <tr>
-<td>aRule</td>
-<td>[in]  raversal rule to use.  
+<td>aIsFromUserInput</td>
+<td>[in] the pivot changed because of direct user input  
+                          (default is true).  
 </td>
 </tr>
 

@@ -88,8 +88,8 @@ replacing the selected text (if any)
 </tr>
 
 <tr>
-<td>aCitation</td>
-<td>The "mid" URL of the source message  
+<td>aSelectionType</td>
+<td>Text or html?  
 </td>
 </tr>
 
@@ -117,14 +117,14 @@ including, if possible, a "cite" attribute.
 </tr>
 
 <tr>
-<td>aQuotedText</td>
-<td>The actual text to be quoted  
+<td>aCitation</td>
+<td>The "mid" URL of the source message  
 </td>
 </tr>
 
 <tr>
-<td>aQuotedText</td>
-<td>The actual text to be quoted  
+<td>aInsertHTML</td>
+<td>Insert as html?  (vs plaintext)  
 </td>
 </tr>
 

@@ -89,18 +89,20 @@ OpenURI requires the following parameters.....
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       The channel that should be opened. This must not be asyncOpen'd yet!  
-       If a loadgroup is set on the channel, it will get replaced with a  
-       different one.  
+<td>aFlags</td>
+<td>       Combination (bitwise OR) of the flags specified above. 0 indicates  
+       default handling.  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       The channel that should be opened. This must not be asyncOpen'd yet!  
-       If a loadgroup is set on the channel, it will get replaced with a  
-       different one.  
+<td>aWindowContext</td>
+<td>       If you are running the url from a doc shell or a web shell, this is  
+       your window context. If you have a content listener you want to  
+       give first crack to, the uri loader needs to be able to get it  
+       from the window context. We will also be using the window context  
+       to get at the progress event sink interface.  
+       <b>Must not be null!</b>  
 </td>
 </tr>
 
@@ -156,18 +158,20 @@ NS_ERROR_WONT_HANDLE_CONTENT.
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       The channel that should be loaded. The channel may already be  
-       opened. It must not be closed (i.e. this must be called before the  
-       channel calls onStopRequest on its stream listener).  
+<td>aFlags</td>
+<td>       Combination (bitwise OR) of the flags specified above. 0 indicates  
+       default handling.  
 </td>
 </tr>
 
 <tr>
-<td>aChannel</td>
-<td>       The channel that should be loaded. The channel may already be  
-       opened. It must not be closed (i.e. this must be called before the  
-       channel calls onStopRequest on its stream listener).  
+<td>aWindowContext</td>
+<td>       If you are running the url from a doc shell or a web shell, this is  
+       your window context. If you have a content listener you want to  
+       give first crack to, the uri loader needs to be able to get it  
+       from the window context. We will also be using the window context  
+       to get at the progress event sink interface.  
+       <b>Must not be null!</b>  
 </td>
 </tr>
 

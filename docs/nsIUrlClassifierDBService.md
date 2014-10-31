@@ -31,8 +31,9 @@ Looks up a URI in the specified tables.
 </tr>
 
 <tr>
-<td>principal:</td>
-<td>The principal containing the URI to search.  
+<td>c:</td>
+<td>The callback will be called with a comma-separated list  
+       of tables to which the key belongs.  
 </td>
 </tr>
 
@@ -77,8 +78,8 @@ is already an update in progress.
 </tr>
 
 <tr>
-<td>updater</td>
-<td>The update observer tied to this update.  
+<td>tables</td>
+<td>A comma-separated list of tables included in this update.  
 </td>
 </tr>
 

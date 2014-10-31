@@ -83,44 +83,54 @@ above, do them off timeout or event.
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aContentLocation</td>
+<td>the location of the content being checked; must  
+                         not be null  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aRequestOrigin</td>
+<td>OPTIONAL. the location of the resource that  
+                         initiated this load request; can be null if  
+                         inapplicable  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aContext</td>
+<td>OPTIONAL. the nsIDOMNode or nsIDOMWindow that  
+                         initiated the request, or something that can QI  
+                         to one of those; can be null if inapplicable.  
+                         Note that for navigation events (new windows and  
+                         link clicks), this is the NEW window.  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aMimeTypeGuess</td>
+<td>OPTIONAL. a guess for the requested content's  
+                         MIME type, based on information available to  
+                         the request initiator (e.g., an OBJECT's type  
+                         attribute); does not reliably reflect the  
+                         actual MIME type of the requested content  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aExtra</td>
+<td>an OPTIONAL argument, pass-through for non-Gecko  
+                         callers to pass extra data to callees.  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aRequestPrincipal</td>
+<td>an OPTIONAL argument, defines the principal that  
+                         caused the load. This is optional only for  
+                         non-gecko code: all gecko code should set this  
+                         argument.  For navigation events, this is  
+                         the principal of the page that caused this load.  
 </td>
 </tr>
 
@@ -175,37 +185,42 @@ what this means for implementors of this method.
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aContentLocation</td>
+<td>OPTIONAL; the location of the resource being  
+                         requested: MAY be, e.g., a post-redirection URI  
+                         for the resource.  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aRequestOrigin</td>
+<td>OPTIONAL. the location of the resource that  
+                         initiated this load request; can be null if  
+                         inapplicable  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aContext</td>
+<td>OPTIONAL. the nsIDOMNode or nsIDOMWindow that  
+                         initiated the request, or something that can QI  
+                         to one of those; can be null if inapplicable.  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aMimeType</td>
+<td>the MIME type of the requested resource (e.g.,  
+                         image/png), as reported by the networking library,  
+                         if available (may be empty if inappropriate for  
+                         the type, e.g., TYPE_REFRESH).  
 </td>
 </tr>
 
 <tr>
-<td>aContentType</td>
-<td>the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
+<td>aExtra</td>
+<td>an OPTIONAL argument, pass-through for non-Gecko  
+                         callers to pass extra data to callees.  
 </td>
 </tr>
 

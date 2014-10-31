@@ -36,8 +36,11 @@ Initializes an nsIRequestObserverProxy.
 </tr>
 
 <tr>
-<td>observer</td>
-<td>- receives observer notifications on the main thread  
+<td>context</td>
+<td>- the context argument that will be passed to OnStopRequest  
+                  and OnStartRequest. This has to be stored permanently on  
+                  initialization because it sometimes can't be  
+                  AddRef/Release'd off-main-thread.  
 </td>
 </tr>
 

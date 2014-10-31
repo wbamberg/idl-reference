@@ -29,14 +29,14 @@ Records the occurrence of a crash.
 </tr>
 
 <tr>
-<td>processType</td>
-<td>       One of the PROCESS_TYPE constants defined below.  
+<td>crashType</td>
+<td>       One of the CRASH_TYPE constants defined below.  
 </td>
 </tr>
 
 <tr>
-<td>processType</td>
-<td>       One of the PROCESS_TYPE constants defined below.  
+<td>id</td>
+<td>       Crash ID. Likely a UUID.  
 </td>
 </tr>
 

@@ -42,8 +42,8 @@ The new channel can be canceled after the AsyncOpen if it is not wanted.
 </tr>
 
 <tr>
-<td>associatedChannel</td>
-<td>       the monitor channel that was recieved on  
+<td>pushChannel</td>
+<td>       a channel to the resource which is being pushed  
 </td>
 </tr>
 

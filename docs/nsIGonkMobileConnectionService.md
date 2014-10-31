@@ -58,8 +58,8 @@ The string to be displayed.
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>display</td>
+<td>The string to be displayed.  
 </td>
 </tr>
 
@@ -99,32 +99,38 @@ See 3.7.4.2 Called Party Number in 3GPP2 C.S0005-F.
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>type</td>
+<td>       The type of number. (3-bit binary)  
+       See Table 2.7.1.3.2.4-2 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>plan</td>
+<td>       The numbering plan. (4-bit binary)  
+       See Table 2.7.1.3.2.4-3 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>number</td>
+<td>       The string presentation of the number.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>pi</td>
+<td>(2-bit binary)  
+       The Presentation indicator of the number.  
+       See Table 2.7.4.4-1 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>si</td>
+<td>(2-bit binary)  
+       The Screening Indicator of the number.  
+       See Table 2.7.4.4-2 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
@@ -164,32 +170,38 @@ See 3.7.4.3 Calling Party Number in 3GPP2 C.S0005-F.
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>type</td>
+<td>       The type of number. (3-bit binary)  
+       See Table 2.7.1.3.2.4-2 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>plan</td>
+<td>       The numbering plan. (4-bit binary)  
+       See Table 2.7.1.3.2.4-3 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>number</td>
+<td>       The string presentation of the number.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>pi</td>
+<td>(2-bit binary)  
+       The Presentation indicator of the number.  
+       See Table 2.7.4.4-1 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>si</td>
+<td>(2-bit binary)  
+       The Screening Indicator of the number.  
+       See Table 2.7.4.4-2 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
@@ -229,32 +241,38 @@ See 3.7.4.4 Connected Party Number in 3GPP2 C.S0005-F.
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>type</td>
+<td>       The type of number. (3-bit binary)  
+       See Table 2.7.1.3.2.4-2 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>plan</td>
+<td>       The numbering plan. (4-bit binary)  
+       See Table 2.7.1.3.2.4-3 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>number</td>
+<td>       The string presentation of the number.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>pi</td>
+<td>(2-bit binary)  
+       The Presentation indicator of the number.  
+       See Table 2.7.4.4-1 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>si</td>
+<td>(2-bit binary)  
+       The Screening Indicator of the number.  
+       See Table 2.7.4.4-2 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
@@ -289,20 +307,23 @@ See 3.7.4.5 Signal in 3GPP2 C.S0005-F.
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>type</td>
+<td>       The signal type. (2-bit binary)  
+       See Table 3.7.5.5-1 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>alertPitch</td>
+<td>       The pitch of the alerting signal. (2-bit binary)  
+       See Table 3.7.5.5-2 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>signal</td>
+<td>       The signal code. (6-bit binary)  
+       See Table 3.7.5.5-3, 3.7.5.5-4, 3.7.5.5-5 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
@@ -345,38 +366,46 @@ See 3.7.4.11 Redirecting Number in 3GPP2 C.S0005-F.
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>type</td>
+<td>       The type of number. (3-bit binary)  
+       See Table 2.7.1.3.2.4-2 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>plan</td>
+<td>       The numbering plan. (4-bit binary)  
+       See Table 2.7.1.3.2.4-3 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>number</td>
+<td>       The string presentation of the number.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>pi</td>
+<td>(2-bit binary)  
+       The Presentation indicator of the number.  
+       See Table 2.7.4.4-1 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>si</td>
+<td>(2-bit binary)  
+       The Screening Indicator of the number.  
+       See Table 2.7.4.4-2 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>reason</td>
+<td>(4-bit binary)  
+       The redirection reason.  
+       See Table 3.7.5.11-1 in 3GPP2 C.S0005-F.  
 </td>
 </tr>
 
@@ -410,26 +439,30 @@ See 3.7.4.15 Line Control in 3GPP2 C.S0005-F.
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>polarityIncluded</td>
+<td>(1-bit)  
+       Polarity parameter included.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>toggle</td>
+<td>(1-bit)  
+       Toggle mode.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>reverse</td>
+<td>(1-bit)  
+       Reverse polarity.  
 </td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>powerDenial</td>
+<td>(8-bit)  
+       Power denial timeout.  
 </td>
 </tr>
 
@@ -459,8 +492,9 @@ http://www.arib.or.jp/english/html/overview/doc/T53v6_5_pdf/5_ANNEX_v6_5.pdf
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
+<td>cause</td>
+<td>       Reason code. (8-bit binary)  
+       See Table A 1.1-1 in T53.  
 </td>
 </tr>
 
@@ -492,15 +526,13 @@ Note: No information from ARIB about Audio Control.
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
-</td>
+<td>upLink</td>
+<td></td>
 </tr>
 
 <tr>
-<td>clientId</td>
-<td>       The ID of radioInterface where this info is notified from.  
-</td>
+<td>downLink</td>
+<td></td>
 </tr>
 
 </table>

@@ -42,32 +42,38 @@ can be used.
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to read from  
+<td>start</td>
+<td>start offset of slice to read. Must be smaller  
+                     than the size of the file.  
 </td>
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to read from  
+<td>length</td>
+<td>length of slice to read. Must be small enough that  
+                     start+length is smaller than the size of the file.  
 </td>
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to read from  
+<td>ioFlags</td>
+<td>file open flags listed in prio.h (see  
+                     PR_Open documentation) or -1 to open the  
+                     file in default mode (PR_RDONLY).  
 </td>
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to read from  
+<td>perm</td>
+<td>file mode bits listed in prio.h or -1 to  
+                     use the default value (0)  
 </td>
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to read from  
+<td>behaviorFlags</td>
+<td>flags specifying various behaviors of the class  
+       (see enumerations in nsIFileInputStream)  
 </td>
 </tr>
 

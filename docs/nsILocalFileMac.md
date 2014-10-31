@@ -128,7 +128,7 @@ Launch the application that this file points to with a document.
 
 <tr>
 <td></td>
-<td>aDocToLoad          Must not be NULL. If no document, use nsIFile::launch  
+<td>aLaunchInBackground TRUE if the application should not come to the front.  
 </td>
 </tr>
 
@@ -161,9 +161,7 @@ Open the document that this file points to with the given application.
 
 <tr>
 <td></td>
-<td>aAppToOpenWith      The application with  which to open the document.  
-                             If NULL, the creator code of the document is used  
-                             to determine the application.  
+<td>aLaunchInBackground TRUE if the application should not come to the front.  
 </td>
 </tr>
 

@@ -27,8 +27,9 @@ parse RDF/XML.
 </tr>
 
 <tr>
-<td>aSink</td>
-<td>the RDF datasource the will receive the data  
+<td>aBaseURI</td>
+<td>the base URI used to resolve relative  
+  references in the RDF/XML  
 </td>
 </tr>
 
@@ -54,14 +55,15 @@ Parse a string of RDF/XML
 </tr>
 
 <tr>
-<td>aSink</td>
-<td>the RDF datasource that will receive the data  
+<td>aBaseURI</td>
+<td>the base URI used to resolve relative  
+  references in the RDF/XML  
 </td>
 </tr>
 
 <tr>
-<td>aSink</td>
-<td>the RDF datasource that will receive the data  
+<td>aSource</td>
+<td>a UTF8 string containing RDF/XML data.  
 </td>
 </tr>
 

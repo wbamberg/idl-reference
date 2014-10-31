@@ -27,8 +27,8 @@ stream so that fewer accesses to the underlying stream are necessary.
 </tr>
 
 <tr>
-<td>fillFromStream</td>
-<td>- add buffering to this stream  
+<td>bufferSize</td>
+<td>- specifies the maximum buffer size  
 </td>
 </tr>
 

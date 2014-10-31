@@ -31,26 +31,27 @@ Called when the data may be read without blocking the calling thread.
 </tr>
 
 <tr>
-<td>index</td>
-<td>The track number of the media stream.  
+<td>data</td>
+<td>Raw data of the media stream on given track number.  
 </td>
 </tr>
 
 <tr>
-<td>index</td>
-<td>The track number of the media stream.  
+<td>length</td>
+<td>The length of the raw data.  
 </td>
 </tr>
 
 <tr>
-<td>index</td>
-<td>The track number of the media stream.  
+<td>offset</td>
+<td>The offset in the data stream from the start of the media  
+              presentation in bytes.  
 </td>
 </tr>
 
 <tr>
-<td>index</td>
-<td>The track number of the media stream.  
+<td>meta</td>
+<td>The meta data of the frame.  
 </td>
 </tr>
 
@@ -74,8 +75,8 @@ Called when the meta data for a given session is available.
 </tr>
 
 <tr>
-<td>index</td>
-<td>The track number of the media stream.  
+<td>meta</td>
+<td>The meta data of the media stream.  
 </td>
 </tr>
 
@@ -99,8 +100,8 @@ Called when the Rtsp session is closed.
 </tr>
 
 <tr>
-<td>index</td>
-<td>Track number of the media stream.  
+<td>reason</td>
+<td>The reason of disconnection.  
 </td>
 </tr>
 

@@ -36,14 +36,15 @@ parent process.
 </tr>
 
 <tr>
-<td>aGCLog</td>
-<td>The file that the GC log was written to.  
+<td>aCCLog</td>
+<td>The file that the CC log was written to.  
 </td>
 </tr>
 
 <tr>
-<td>aGCLog</td>
-<td>The file that the GC log was written to.  
+<td>aIsParent</td>
+<td>indicates whether this log file pair is from the  
+parent process.  
 </td>
 </tr>
 

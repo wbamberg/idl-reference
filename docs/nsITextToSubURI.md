@@ -38,8 +38,8 @@ Note:
 </tr>
 
 <tr>
-<td>aCharset</td>
-<td>the charset to convert from  
+<td>aURIFragment</td>
+<td>the URI (or URI fragment) to unescape  
 </td>
 </tr>
 
@@ -69,8 +69,8 @@ charset if the charset is an ASCII superset
 </tr>
 
 <tr>
-<td>aCharset</td>
-<td>the charset to convert from  
+<td>aURIFragment</td>
+<td>the URI (or URI fragment) to unescape  
 </td>
 </tr>
 

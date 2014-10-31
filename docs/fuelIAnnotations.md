@@ -80,15 +80,17 @@ Sets the value of an annotation with the given name.
 
 <tr>
 <td></td>
-<td>aName  
-         The name of the annotation  
+<td>aValue  
+         The new value of the annotation. Supports string, boolean  
+         and number  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aName  
-         The name of the annotation  
+<td>aExpiration  
+         The expiration policy for the annotation.  
+         See nsIAnnotationService.  
 </td>
 </tr>
 

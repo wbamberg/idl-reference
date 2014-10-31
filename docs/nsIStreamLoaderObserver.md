@@ -39,26 +39,26 @@ when the data is no longer required.
 </tr>
 
 <tr>
-<td>loader</td>
-<td>the stream loader that loaded the stream.  
+<td>ctxt</td>
+<td>the context parameter of the underlying channel  
 </td>
 </tr>
 
 <tr>
-<td>loader</td>
-<td>the stream loader that loaded the stream.  
+<td>status</td>
+<td>the status of the underlying channel  
 </td>
 </tr>
 
 <tr>
-<td>loader</td>
-<td>the stream loader that loaded the stream.  
+<td>resultLength</td>
+<td>the length of the data loaded  
 </td>
 </tr>
 
 <tr>
-<td>loader</td>
-<td>the stream loader that loaded the stream.  
+<td>result</td>
+<td>the data  
 </td>
 </tr>
 

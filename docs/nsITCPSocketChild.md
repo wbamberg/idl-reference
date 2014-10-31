@@ -45,9 +45,9 @@ as well as in the single process model.
 </tr>
 
 <tr>
-<td>socket</td>
-<td>       The TCP socket on the child side.  
-       This instance is connected with the child IPC side of the IPC bridge.  
+<td>windowVal</td>
+<td>       The window object on the child side to create data  
+       as "jsval" for deserialization.  
 </td>
 </tr>
 

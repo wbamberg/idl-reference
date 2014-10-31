@@ -41,26 +41,29 @@ NOTE: this function can be called from any thread
 </tr>
 
 <tr>
-<td>aSocketTypes</td>
-<td>       array of socket type strings.  null if using default socket type.  
+<td>aTypeCount</td>
+<td>       specifies length of aSocketTypes.  
 </td>
 </tr>
 
 <tr>
-<td>aSocketTypes</td>
-<td>       array of socket type strings.  null if using default socket type.  
+<td>aHost</td>
+<td>       specifies the target hostname or IP address literal of the peer  
+       for this socket.  
 </td>
 </tr>
 
 <tr>
-<td>aSocketTypes</td>
-<td>       array of socket type strings.  null if using default socket type.  
+<td>aPort</td>
+<td>       specifies the target port of the peer for this socket.  
 </td>
 </tr>
 
 <tr>
-<td>aSocketTypes</td>
-<td>       array of socket type strings.  null if using default socket type.  
+<td>aProxyInfo</td>
+<td>       specifies the transport-layer proxy type to use.  null if no  
+       proxy.  used for communicating information about proxies like  
+       SOCKS (which are transparent to upper protocols).  
 </td>
 </tr>
 
@@ -142,8 +145,9 @@ NOTE: this function may only be called from an event dispatch on the
 </tr>
 
 <tr>
-<td>aFd</td>
-<td>       Open file descriptor of the socket to control.  
+<td>aHandler</td>
+<td>       Socket handler that will receive notifications when the socket is  
+       ready or detached.  
 </td>
 </tr>
 

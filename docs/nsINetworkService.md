@@ -32,14 +32,14 @@ Enable or disable Wifi Tethering
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean that indicates whether tethering should be enabled (true) or disabled (false).  
+<td>config</td>
+<td>       The Wifi Tethering configuration from settings db.  
 </td>
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean that indicates whether tethering should be enabled (true) or disabled (false).  
+<td>callback</td>
+<td>       Callback function used to report status to WifiManager.  
 </td>
 </tr>
 
@@ -77,14 +77,19 @@ Enable or disable DHCP server
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean that indicates enabling or disabling DHCP server.  
+<td>config</td>
+<td>       Config used to enable the DHCP server. It contains  
+       .startIp    start of the ip lease range (string)  
+       .endIp      end of the ip lease range (string)  
+       .serverIp   ip of the DHCP server (string)  
+       .maskLength the length of the subnet mask  
+       .ifname     the interface name  
 </td>
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean that indicates enabling or disabling DHCP server.  
+<td>callback</td>
+<td>       Callback function used to report status.  
 </td>
 </tr>
 
@@ -113,8 +118,9 @@ Retrieve network interface stats.
 </tr>
 
 <tr>
-<td>networkName</td>
-<td>       Select the Network interface to request estats.  
+<td>callback</td>
+<td>       Callback to notify result and provide stats, connectionType  
+       and the date when stats are retrieved  
 </td>
 </tr>
 
@@ -147,14 +153,14 @@ Set Alarm of usage per interface
 </tr>
 
 <tr>
-<td>networkName</td>
-<td>       Select the Network interface to set an alarm.  
+<td>threshold</td>
+<td>       Amount of data that will trigger the alarm.  
 </td>
 </tr>
 
 <tr>
-<td>networkName</td>
-<td>       Select the Network interface to set an alarm.  
+<td>callback</td>
+<td>       Callback to notify the result.  
 </td>
 </tr>
 
@@ -187,14 +193,16 @@ Reload Wifi firmware to specific operation mode.
 </tr>
 
 <tr>
-<td>interfaceName</td>
-<td>       Wifi Network interface name.  
+<td>mode</td>
+<td>       AP  - Access pointer mode.  
+       P2P - Peer to peer connection mode.  
+       STA - Station mode.  
 </td>
 </tr>
 
 <tr>
-<td>interfaceName</td>
-<td>       Wifi Network interface name.  
+<td>callback</td>
+<td>       Callback to notify Wifi firmware reload result.  
 </td>
 </tr>
 
@@ -245,14 +253,14 @@ Set USB tethering.
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean to indicate we are going to enable or disable usb tethering.  
+<td>config</td>
+<td>       The usb tethering configuration.  
 </td>
 </tr>
 
 <tr>
-<td>enabled</td>
-<td>       Boolean to indicate we are going to enable or disable usb tethering.  
+<td>callback</td>
+<td>       Callback function used to report the result enabling/disabling usb tethering.  
 </td>
 </tr>
 
@@ -300,8 +308,8 @@ Set DNS.
 </tr>
 
 <tr>
-<td>networkInterface</td>
-<td>       The network interface which contains the DNS we want to set.  
+<td>callback</td>
+<td>       Callback to notify the result of setting DNS server.  
 </td>
 </tr>
 
@@ -330,14 +338,14 @@ Set default route.
 </tr>
 
 <tr>
-<td>networkInterface</td>
-<td>       The network interface we want to set to the default route.  
+<td>oldInterface</td>
+<td>       The previous network interface.  
 </td>
 </tr>
 
 <tr>
-<td>networkInterface</td>
-<td>       The network interface we want to set to the default route.  
+<td>callback</td>
+<td>       Callback to notify the result of setting default route.  
 </td>
 </tr>
 
@@ -389,14 +397,14 @@ Add host route.
 </tr>
 
 <tr>
-<td>interfaceName</td>
-<td>       Network interface name for the output of the host route.  
+<td>gateway</td>
+<td>       Gateway ip for the output of the host route.  
 </td>
 </tr>
 
 <tr>
-<td>interfaceName</td>
-<td>       Network interface name for the output of the host route.  
+<td>host</td>
+<td>       Host ip we want to add route for.  
 </td>
 </tr>
 
@@ -428,14 +436,14 @@ Remove host route.
 </tr>
 
 <tr>
-<td>interfaceName</td>
-<td>       Network interface name for the output of the host route.  
+<td>gateway</td>
+<td>       Gateway ip for the output of the host route.  
 </td>
 </tr>
 
 <tr>
-<td>interfaceName</td>
-<td>       Network interface name for the output of the host route.  
+<td>host</td>
+<td>       Host ip we want to remove route for.  
 </td>
 </tr>
 
@@ -485,8 +493,11 @@ Add route to secondary routing table.
 </tr>
 
 <tr>
-<td>interfaceName</td>
-<td>       The network interface for this route.  
+<td>route</td>
+<td>       The route info should have the following fields:  
+       .ip: destination ip address  
+       .prefix: destination prefix  
+       .gateway: gateway ip address  
 </td>
 </tr>
 
@@ -516,8 +527,11 @@ Remove route from secondary routing table.
 </tr>
 
 <tr>
-<td>interfaceName</td>
-<td>       The network interface for the route we want to remove.  
+<td>route</td>
+<td>       The route info should have the following fields:  
+       .ip: destination ip address  
+       .prefix: destination prefix  
+       .gateway: gateway ip address  
 </td>
 </tr>
 
@@ -544,8 +558,8 @@ Enable or disable usb rndis.
 </tr>
 
 <tr>
-<td>enable</td>
-<td>       Boolean to indicate we want enable or disable usb rndis.  
+<td>callback</td>
+<td>       Callback function to report the result.  
 </td>
 </tr>
 
@@ -574,14 +588,14 @@ Update upstream.
 </tr>
 
 <tr>
-<td>previous</td>
-<td>       The previous internal and external interface.  
+<td>current</td>
+<td>       The current internal and external interface.  
 </td>
 </tr>
 
 <tr>
-<td>previous</td>
-<td>       The previous internal and external interface.  
+<td>callback</td>
+<td>       Callback function to report the result.  
 </td>
 </tr>
 
@@ -616,8 +630,8 @@ Configure a network interface.
 </tr>
 
 <tr>
-<td>config</td>
-<td>       An object containing the detail that we want to configure the interface:  
+<td>callback</td>
+<td>       Callback to notify the result of configurating network interface.  
 </td>
 </tr>
 
@@ -645,8 +659,8 @@ Issue a DHCP client request.
 </tr>
 
 <tr>
-<td>networkInterface</td>
-<td>       The network interface which we wnat to do the DHCP request on.  
+<td>callback</td>
+<td>       Callback to notify the result of the DHCP request.  
 </td>
 </tr>
 
@@ -674,8 +688,8 @@ Enable a network interface.
 </tr>
 
 <tr>
-<td>networkInterface</td>
-<td>       The network interface name which we want to enable.  
+<td>callback</td>
+<td>       Callback to notify the result of disabling network interface.  
 </td>
 </tr>
 
@@ -703,8 +717,8 @@ Disable a network interface.
 </tr>
 
 <tr>
-<td>networkInterface</td>
-<td>       The network interface name which we want to disable.  
+<td>callback</td>
+<td>       Callback to notify the result of disabling network interface.  
 </td>
 </tr>
 
@@ -732,8 +746,8 @@ Reset all connections
 </tr>
 
 <tr>
-<td>networkInterface</td>
-<td>       The network interface name which we want to reset.  
+<td>callback</td>
+<td>       Callback to notify the result of resetting connections.  
 </td>
 </tr>
 

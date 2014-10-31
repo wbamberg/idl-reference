@@ -44,16 +44,19 @@ This method initializes a server socket.
 </tr>
 
 <tr>
-<td>aPort</td>
-<td>       The port of the server socket.  Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
+<td>aLoopbackOnly</td>
+<td>       If true, the server socket will only respond to connections on the  
+       local loopback interface.  Otherwise, it will accept connections  
+       from any interface.  To specify a particular network interface,  
+       use initWithAddress.  
 </td>
 </tr>
 
 <tr>
-<td>aPort</td>
-<td>       The port of the server socket.  Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
+<td>aBackLog</td>
+<td>       The maximum length the queue of pending connections may grow to.  
+       This parameter may be silently limited by the operating system.  
+       Pass -1 to use the default value.  
 </td>
 </tr>
 
@@ -89,16 +92,16 @@ that socket not get terminated if Gecko is set offline.
 </tr>
 
 <tr>
-<td>aPort</td>
-<td>       The port of the server socket.  Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
+<td>aFlags</td>
+<td>       Flags for the socket.  
 </td>
 </tr>
 
 <tr>
-<td>aPort</td>
-<td>       The port of the server socket.  Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
+<td>aBackLog</td>
+<td>       The maximum length the queue of pending connections may grow to.  
+       This parameter may be silently limited by the operating system.  
+       Pass -1 to use the default value.  
 </td>
 </tr>
 
@@ -130,8 +133,10 @@ local address (and hence a particular local network interface).
 </tr>
 
 <tr>
-<td>aAddr</td>
-<td>       The address to which this server socket should be bound.  
+<td>aBackLog</td>
+<td>       The maximum length the queue of pending connections may grow to.  
+       This parameter may be silently limited by the operating system.  
+       Pass -1 to use the default value.  
 </td>
 </tr>
 
@@ -203,9 +208,9 @@ directories should be secure on both old and new systems.
 </tr>
 
 <tr>
-<td>aPath</td>
-<td>nsIFile  
-       The file name at which the socket should be created.  
+<td>aPermissions</td>
+<td>unsigned long  
+       Unix-style permission bits to be applied to the new socket.  
 </td>
 </tr>
 

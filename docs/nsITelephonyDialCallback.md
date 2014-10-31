@@ -52,8 +52,8 @@ succeeds.
 </tr>
 
 <tr>
-<td>callIndex</td>
-<td>       Call index from RIL.  
+<td>number</td>
+<td>       Dialed out phone number (ex: Temporary CLIR prefix will be removed)  
 </td>
 </tr>
 

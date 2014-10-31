@@ -59,8 +59,8 @@ Opens a zip file.
 </tr>
 
 <tr>
-<td>aFile</td>
-<td>the zip file to open  
+<td>aIoFlags</td>
+<td>the open flags for the zip file from prio.h  
 </td>
 </tr>
 
@@ -132,14 +132,15 @@ Adds a new directory entry to the zip file. If aZipEntry does not end with
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the directory entry  
+<td>aModTime</td>
+<td>the modification time of the entry in microseconds  
 </td>
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the directory entry  
+<td>aQueue</td>
+<td>adds the operation to the background queue. Will be  
+       performed when processQueue is called.  
 </td>
 </tr>
 
@@ -174,20 +175,21 @@ addEntryDirectory(aZipEntry, aFile.lastModifiedTime, aQueue)
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aCompression</td>
+<td>the compression level, 0 is no compression, 9 is best  
 </td>
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aFile</td>
+<td>the file to get the data and modification time from  
 </td>
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aQueue</td>
+<td>adds the operation to the background queue. Will be  
+       performed when processQueue is called.  
 </td>
 </tr>
 
@@ -222,26 +224,27 @@ the channel must support being opened synchronously.
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aModTime</td>
+<td>the modification time of the entry in microseconds  
 </td>
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aCompression</td>
+<td>the compression level, 0 is no compression, 9 is best  
 </td>
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aChannel</td>
+<td>the channel to get the data from  
 </td>
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aQueue</td>
+<td>adds the operation to the background queue. Will be  
+       performed when processQueue is called.  
 </td>
 </tr>
 
@@ -274,26 +277,27 @@ Adds data from an input stream to the zip file.
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aModTime</td>
+<td>the modification time of the entry in microseconds  
 </td>
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aCompression</td>
+<td>the compression level, 0 is no compression, 9 is best  
 </td>
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aStream</td>
+<td>the input stream to get the data from  
 </td>
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the file entry  
+<td>aQueue</td>
+<td>adds the operation to the background queue. Will be  
+       performed when processQueue is called.  
 </td>
 </tr>
 
@@ -324,8 +328,9 @@ Removes an existing entry from the zip file.
 </tr>
 
 <tr>
-<td>aZipEntry</td>
-<td>the path of the entry to be removed  
+<td>aQueue</td>
+<td>adds the operation to the background queue. Will be  
+       performed when processQueue is called.  
 </td>
 </tr>
 

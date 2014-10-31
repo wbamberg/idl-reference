@@ -63,8 +63,8 @@ owns the returned document fragment.
 </tr>
 
 <tr>
-<td>source</td>
-<td>The node to be transformed  
+<td>output</td>
+<td>This document is used to generate the output  
 </td>
 </tr>
 
@@ -118,14 +118,14 @@ parameter will be ignored.
 </tr>
 
 <tr>
-<td>namespaceURI</td>
-<td>The namespaceURI of the XSLT parameter  
+<td>localName</td>
+<td>The local name of the XSLT parameter  
 </td>
 </tr>
 
 <tr>
-<td>namespaceURI</td>
-<td>The namespaceURI of the XSLT parameter  
+<td>value</td>
+<td>The new value of the XSLT parameter  
 </td>
 </tr>
 
@@ -152,8 +152,8 @@ otherwise.
 </tr>
 
 <tr>
-<td>namespaceURI</td>
-<td>The namespaceURI of the XSLT parameter  
+<td>localName</td>
+<td>The local name of the XSLT parameter  
 </td>
 </tr>
 
@@ -179,8 +179,8 @@ default-value for the parameter as specified in the stylesheet.
 </tr>
 
 <tr>
-<td>namespaceURI</td>
-<td>The namespaceURI of the XSLT parameter  
+<td>localName</td>
+<td>The local name of the XSLT parameter  
 </td>
 </tr>
 

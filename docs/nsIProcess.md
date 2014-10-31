@@ -53,16 +53,15 @@ returning or not.
 </tr>
 
 <tr>
-<td>blocking</td>
-<td>Whether to wait until the process terminates before  
-returning or not.  
+<td>args</td>
+<td>An array of arguments to pass to the process in the  
+                  native character set.  
 </td>
 </tr>
 
 <tr>
-<td>blocking</td>
-<td>Whether to wait until the process terminates before  
-returning or not.  
+<td>count</td>
+<td>The length of the args array.  
 </td>
 </tr>
 
@@ -94,23 +93,23 @@ an observer after the process has finished running.
 </tr>
 
 <tr>
-<td>args</td>
-<td>An array of arguments to pass to the process in the  
-                  native character set.  
+<td>count</td>
+<td>The length of the args array.  
 </td>
 </tr>
 
 <tr>
-<td>args</td>
-<td>An array of arguments to pass to the process in the  
-                  native character set.  
+<td>observer</td>
+<td>An observer to notify when the process has completed. It  
+                  will receive this process instance as the subject and  
+                  "process-finished" or "process-failed" as the topic. The  
+                  observer will be notified on the main thread.  
 </td>
 </tr>
 
 <tr>
-<td>args</td>
-<td>An array of arguments to pass to the process in the  
-                  native character set.  
+<td>holdWeak</td>
+<td>Whether to use a weak reference to hold the observer.  
 </td>
 </tr>
 
@@ -137,16 +136,14 @@ returning or not.
 </tr>
 
 <tr>
-<td>blocking</td>
-<td>Whether to wait until the process terminates before  
-returning or not.  
+<td>args</td>
+<td>An array of arguments to pass to the process in UTF-16  
 </td>
 </tr>
 
 <tr>
-<td>blocking</td>
-<td>Whether to wait until the process terminates before  
-returning or not.  
+<td>count</td>
+<td>The length of the args array.  
 </td>
 </tr>
 
@@ -176,20 +173,23 @@ an observer after the process has finished running.
 </tr>
 
 <tr>
-<td>args</td>
-<td>An array of arguments to pass to the process in UTF-16  
+<td>count</td>
+<td>The length of the args array.  
 </td>
 </tr>
 
 <tr>
-<td>args</td>
-<td>An array of arguments to pass to the process in UTF-16  
+<td>observer</td>
+<td>An observer to notify when the process has completed. It  
+                  will receive this process instance as the subject and  
+                  "process-finished" or "process-failed" as the topic. The  
+                  observer will be notified on the main thread.  
 </td>
 </tr>
 
 <tr>
-<td>args</td>
-<td>An array of arguments to pass to the process in UTF-16  
+<td>holdWeak</td>
+<td>Whether to use a weak reference to hold the observer.  
 </td>
 </tr>
 

@@ -27,8 +27,8 @@ aUpdate has changed its state.
 </tr>
 
 <tr>
-<td>aUpdate</td>
-<td>       The nsIOfflineCacheUpdate being processed.  
+<td>event</td>
+<td>       See enumeration above  
 </td>
 </tr>
 

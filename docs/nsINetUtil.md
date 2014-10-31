@@ -32,14 +32,15 @@ charset (if any).
 </tr>
 
 <tr>
-<td>aTypeHeader</td>
-<td>the header string to parse  
+<td>[out]</td>
+<td>aCharset the charset parameter specified in the  
+             header, if any.  
 </td>
 </tr>
 
 <tr>
-<td>aTypeHeader</td>
-<td>the header string to parse  
+<td>[out]</td>
+<td>aHadCharset whether a charset was explicitly specified.  
 </td>
 </tr>
 
@@ -67,8 +68,8 @@ Test whether the given URI's handler has the given protocol flags.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI in question  
+<td>aFlags</td>
+<td>the flags we're testing for.  
 </td>
 </tr>
 
@@ -98,8 +99,8 @@ nsINestedURI and walk the nested URI chain.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the URI in question  
+<td>aFlags</td>
+<td>the flags we're testing for.  
 </td>
 </tr>
 
@@ -147,8 +148,8 @@ escape a string with %00-style escaping
 </tr>
 
 <tr>
-<td>aStr</td>
-<td>the URL to be escaped  
+<td>aFlags</td>
+<td>the URL segment type flags  
 </td>
 </tr>
 
@@ -176,8 +177,10 @@ Expands URL escape sequences
 </tr>
 
 <tr>
-<td>aStr</td>
-<td>the URL to be unescaped  
+<td>aFlags</td>
+<td>only ESCAPE_URL_ONLY_NONASCII and ESCAPE_URL_SKIP_CONTROL  
+              are recognized.  If |aFlags| is 0 all escape sequences are   
+              unescaped  
 </td>
 </tr>
 
@@ -218,20 +221,29 @@ that won out does not have a charset parameter specified.
 </tr>
 
 <tr>
-<td>aTypeHeader</td>
-<td>the header string to parse  
+<td>[out]</td>
+<td>aCharset the charset parameter specified in the  
+             header, if any.  
 </td>
 </tr>
 
 <tr>
-<td>aTypeHeader</td>
-<td>the header string to parse  
+<td>[out]</td>
+<td>aCharsetStart index of the start of the charset parameter  
+             (the ';' separating it from what came before) in aTypeHeader.  
+             If this function returns false, this argument will still be  
+             set, to the index of the location where a new charset should  
+             be inserted.  
 </td>
 </tr>
 
 <tr>
-<td>aTypeHeader</td>
-<td>the header string to parse  
+<td>[out]</td>
+<td>aCharsetEnd index of the end of the charset parameter (the  
+             ';' separating it from what comes after, or the end  
+             of the string) in aTypeHeader.  If this function returns  
+             false, this argument will still be set, to the index of the  
+             location where a new charset should be inserted.  
 </td>
 </tr>
 

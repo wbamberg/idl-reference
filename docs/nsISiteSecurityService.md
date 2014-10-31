@@ -44,38 +44,39 @@ in future HTTPS connections.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security header in question.  
+<td>aSourceURI</td>
+<td>the URI of the resource with the HTTP header.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security header in question.  
+<td>aSSLStatus</td>
+<td>the SSLStatus of the current channel  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security header in question.  
+<td>aHeader</td>
+<td>the HTTP response header specifying security data.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security header in question.  
+<td>aFlags</td>
+<td>options for this request as defined in nsISocketProvider:  
+                 NO_PERMANENT_STORAGE  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security header in question.  
+<td>aMaxAge</td>
+<td>the parsed max-age directive of the header.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security header in question.  
+<td>aIncludeSubdomains</td>
+<td>the parsed includeSubdomains directive.  
 </td>
 </tr>
 
@@ -110,14 +111,15 @@ host.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security state in question  
+<td>aURI</td>
+<td>the URI of the target host  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security state in question  
+<td>aFlags</td>
+<td>options for this request as defined in nsISocketProvider:  
+                 NO_PERMANENT_STORAGE  
 </td>
 </tr>
 
@@ -144,14 +146,15 @@ See isSecureURI
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security state in question.  
+<td>aHost</td>
+<td>the hostname (punycode) to query for state.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security state in question.  
+<td>aFlags</td>
+<td>options for this request as defined in nsISocketProvider:  
+                 NO_PERMANENT_STORAGE  
 </td>
 </tr>
 
@@ -190,14 +193,15 @@ such as path and port.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security state in question.  
+<td>aURI</td>
+<td>the URI to query for STS state.  
 </td>
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the type of security state in question.  
+<td>aFlags</td>
+<td>options for this request as defined in nsISocketProvider:  
+                 NO_PERMANENT_STORAGE  
 </td>
 </tr>
 
@@ -234,20 +238,22 @@ mozilla::pkix::Time which uses internally seconds since 0 AD.
 </tr>
 
 <tr>
-<td>aHostname</td>
-<td>the hosname (punycode) to be queried about  
+<td>the</td>
+<td>time at which the pins should be valid. This is in  
+mozilla::pkix::Time which uses internally seconds since 0 AD.  
 </td>
 </tr>
 
 <tr>
-<td>aHostname</td>
-<td>the hosname (punycode) to be queried about  
+<td>aPinArray</td>
+<td>the set of sha256-hashed key pins for the given domain  
 </td>
 </tr>
 
 <tr>
-<td>aHostname</td>
-<td>the hosname (punycode) to be queried about  
+<td>aIncludeSubdomains</td>
+<td>true if the pins apply to subdomains of the  
+       given domain  
 </td>
 </tr>
 
@@ -277,26 +283,26 @@ any already set by this mechanism or those built-in to Gecko.
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>the hostname (punycode) that pins will apply to  
+<td>aIncludeSubdomains</td>
+<td>whether these pins also apply to subdomains  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>the hostname (punycode) that pins will apply to  
+<td>aMaxAge</td>
+<td>lifetime (in seconds) of this pin set  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>the hostname (punycode) that pins will apply to  
+<td>aPinCount</td>
+<td>number of keys being pinnned  
 </td>
 </tr>
 
 <tr>
-<td>aHost</td>
-<td>the hostname (punycode) that pins will apply to  
+<td>aSha256Pins</td>
+<td>array of hashed key fingerprints (SHA-256, base64)  
 </td>
 </tr>
 

@@ -154,8 +154,8 @@ is opened, otherwise the contents of the file entry is returned.
 </tr>
 
 <tr>
-<td>aJarSpec</td>
-<td>the Spec of the URI for the JAR (only used for directory streams)  
+<td>zipEntry</td>
+<td>the name of the entry to open the stream from  
 </td>
 </tr>
 

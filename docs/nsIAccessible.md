@@ -40,9 +40,9 @@ them.
 </tr>
 
 <tr>
-<td>aState</td>
-<td>- the first bit field (see nsIAccessibleStates::STATE_*  
-                constants)  
+<td>aExtraState</td>
+<td>- the second bit field  
+                     (see nsIAccessibleStates::EXT_STATE_* constants)  
 </td>
 </tr>
 
@@ -70,14 +70,15 @@ labels, radio buttons, etc. Also used for collectons of non-text objects.
 </tr>
 
 <tr>
-<td>groupLevel</td>
-<td>- 1-based, similar to ARIA 'level' property  
+<td>similarItemsInGroup</td>
+<td>- 1-based, similar to ARIA 'setsize' property,  
+                             inclusive of the current item  
 </td>
 </tr>
 
 <tr>
-<td>groupLevel</td>
-<td>- 1-based, similar to ARIA 'level' property  
+<td>positionInGroup</td>
+<td>- 1-based, similar to ARIA 'posinset' property  
 </td>
 </tr>
 
@@ -107,8 +108,8 @@ null will be returned.
 </tr>
 
 <tr>
-<td>x</td>
-<td>screen's x coordinate  
+<td>y</td>
+<td>screen's y coordinate  
 </td>
 </tr>
 
@@ -137,8 +138,8 @@ accessible or a child, then null will be returned.
 </tr>
 
 <tr>
-<td>x</td>
-<td>screen's x coordinate  
+<td>y</td>
+<td>screen's y coordinate  
 </td>
 </tr>
 
@@ -255,18 +256,14 @@ Moves the top left of an object to a specified location.
 </tr>
 
 <tr>
-<td>coordinateType</td>
-<td>[in] - specifies whether the coordinates are relative to  
-                        the screen or the parent object (for available  
-                        constants refer to nsIAccessibleCoordinateType)  
+<td>x</td>
+<td>[in] - defines the x coordinate  
 </td>
 </tr>
 
 <tr>
-<td>coordinateType</td>
-<td>[in] - specifies whether the coordinates are relative to  
-                        the screen or the parent object (for available  
-                        constants refer to nsIAccessibleCoordinateType)  
+<td>y</td>
+<td>[in] - defines the y coordinate  
 </td>
 </tr>
 

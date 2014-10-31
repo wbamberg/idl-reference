@@ -32,9 +32,9 @@ Indicates that the event this callback was passed in for has completed.
 </tr>
 
 <tr>
-<td>status</td>
-<td>       The status of the call. Generally NS_OK if the operation  
-       completed successfully.  
+<td>value</td>
+<td>       If the operation produces a result, the result. Otherwise,  
+       |null|.  
 </td>
 </tr>
 

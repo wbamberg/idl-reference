@@ -48,7 +48,9 @@ Set the data for the given key.
 
 <tr>
 <td></td>
-<td>key   the data key  
+<td>data  the data  
+@throws       NS_ERROR_UNEXPECTED if the method is called during event  
+              dispatch  
 </td>
 </tr>
 

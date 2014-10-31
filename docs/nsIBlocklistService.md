@@ -36,15 +36,19 @@ Determine if an item is blocklisted
 
 <tr>
 <td></td>
-<td>addon  
-         The addon item to be checked.  
+<td>appVersion  
+         The version of the application we are checking in the blocklist.  
+         If this parameter is null, the version of the running application  
+         is used.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>addon  
-         The addon item to be checked.  
+<td>toolkitVersion  
+         The version of the toolkit we are checking in the blocklist.  
+         If this parameter is null, the version of the running toolkit  
+         is used.  
 </td>
 </tr>
 
@@ -79,15 +83,19 @@ Determine the blocklist state of an add-on
 
 <tr>
 <td></td>
-<td>id  
-         The addon item to be checked.  
+<td>appVersion  
+         The version of the application we are checking in the blocklist.  
+         If this parameter is null, the version of the running application  
+         is used.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>id  
-         The addon item to be checked.  
+<td>toolkitVersion  
+         The version of the toolkit we are checking in the blocklist.  
+         If this parameter is null, the version of the running toolkit  
+         is used.  
 </td>
 </tr>
 
@@ -122,15 +130,19 @@ Determine the blocklist state of a plugin
 
 <tr>
 <td></td>
-<td>plugin  
-         The plugin to get the state for  
+<td>appVersion  
+         The version of the application we are checking in the blocklist.  
+         If this parameter is null, the version of the running application  
+         is used.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>plugin  
-         The plugin to get the state for  
+<td>toolkitVersion  
+         The version of the toolkit we are checking in the blocklist.  
+         If this parameter is null, the version of the running toolkit  
+         is used.  
 </td>
 </tr>
 

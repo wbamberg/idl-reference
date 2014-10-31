@@ -31,14 +31,15 @@ Prepare browser for speech.
 </tr>
 
 <tr>
-<td>aCallback</td>
-<td>callback object for mid-speech operations.  
+<td>aChannels</td>
+<td>number of audio channels. Only required  
+                   in direct audio services  
 </td>
 </tr>
 
 <tr>
-<td>aCallback</td>
-<td>callback object for mid-speech operations.  
+<td>aRate</td>
+<td>audio rate. Only required in direct audio services  
 </td>
 </tr>
 
@@ -64,8 +65,9 @@ Send audio data to browser.
 </tr>
 
 <tr>
-<td>aData</td>
-<td>an Int16Array with PCM-16 audio data.  
+<td>aLandmarks</td>
+<td>an array of sample offset and landmark pairs.  
+                    Used for emiting boundary and mark events.  
 </td>
 </tr>
 
@@ -97,8 +99,8 @@ Dispatch end event.
 </tr>
 
 <tr>
-<td>aElapsedTime</td>
-<td>time in seconds since speech has started.  
+<td>aCharIndex</td>
+<td>offset of spoken characters.  
 </td>
 </tr>
 
@@ -123,8 +125,8 @@ Dispatch pause event. Should not be called directly by service.
 </tr>
 
 <tr>
-<td>aElapsedTime</td>
-<td>time in seconds since speech has started.  
+<td>aCharIndex</td>
+<td>offset of spoken characters.  
 </td>
 </tr>
 
@@ -149,8 +151,8 @@ Dispatch resume event. Should not be called directly by service.
 </tr>
 
 <tr>
-<td>aElapsedTime</td>
-<td>time in seconds since speech has started.  
+<td>aCharIndex</td>
+<td>offset of spoken characters.  
 </td>
 </tr>
 
@@ -175,8 +177,8 @@ Dispatch error event.
 </tr>
 
 <tr>
-<td>aElapsedTime</td>
-<td>time in seconds since speech has started.  
+<td>aCharIndex</td>
+<td>offset of spoken characters.  
 </td>
 </tr>
 
@@ -202,14 +204,14 @@ Dispatch boundary event.
 </tr>
 
 <tr>
-<td>aName</td>
-<td>name of boundary, 'word' or 'sentence'  
+<td>aElapsedTime</td>
+<td>time in seconds since speech has started.  
 </td>
 </tr>
 
 <tr>
-<td>aName</td>
-<td>name of boundary, 'word' or 'sentence'  
+<td>aCharIndex</td>
+<td>offset of spoken characters.  
 </td>
 </tr>
 
@@ -235,14 +237,14 @@ Dispatch mark event.
 </tr>
 
 <tr>
-<td>aName</td>
-<td>mark identifier.  
+<td>aElapsedTime</td>
+<td>time in seconds since speech has started.  
 </td>
 </tr>
 
 <tr>
-<td>aName</td>
-<td>mark identifier.  
+<td>aCharIndex</td>
+<td>offset of spoken characters.  
 </td>
 </tr>
 

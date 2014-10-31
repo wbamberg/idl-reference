@@ -52,9 +52,8 @@ Registers a listener to receive web progress events.
 </tr>
 
 <tr>
-<td>aListener</td>
-<td>       The listener interface to be called when a progress event occurs.  
-       This object must also implement nsISupportsWeakReference.  
+<td>aNotifyMask</td>
+<td>       The types of notifications to receive.  
 </td>
 </tr>
 

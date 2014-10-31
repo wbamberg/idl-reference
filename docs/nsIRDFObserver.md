@@ -29,23 +29,20 @@ in the data source
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aSource</td>
+<td>the subject of the assertion  
 </td>
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aProperty</td>
+<td>the predicate of the assertion  
 </td>
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aTarget</td>
+<td>the object of the assertion  
 </td>
 </tr>
 
@@ -74,23 +71,20 @@ from the data source
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aSource</td>
+<td>the subject of the assertion  
 </td>
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aProperty</td>
+<td>the predicate of the assertion  
 </td>
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aTarget</td>
+<td>the object of the assertion  
 </td>
 </tr>
 
@@ -120,30 +114,26 @@ changes from one value to another.
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aSource</td>
+<td>the subject of the assertion  
 </td>
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aProperty</td>
+<td>the predicate of the assertion  
 </td>
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aOldTarget</td>
+<td>the old object of the assertion  
 </td>
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aNewTarget</td>
+<td>the new object of the assertion  
 </td>
 </tr>
 
@@ -173,30 +163,26 @@ changes from one value to another.
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aOldSource</td>
+<td>the old subject of the assertion  
 </td>
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aNewSource</td>
+<td>the new subject of the assertion  
 </td>
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aProperty</td>
+<td>the predicate of the assertion  
 </td>
 </tr>
 
 <tr>
-<td>aDataSource</td>
-<td>the datasource that is issuing  
-  the notification.  
+<td>aTarget</td>
+<td>the object of the assertion  
 </td>
 </tr>
 

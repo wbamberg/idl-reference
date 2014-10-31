@@ -39,8 +39,8 @@ from a JS string to a C++ character array.
 </tr>
 
 <tr>
-<td>data</td>
-<td>- stream data  
+<td>dataLen</td>
+<td>- stream data length (-1 if length should be computed)  
 </td>
 </tr>
 
@@ -71,8 +71,8 @@ the input stream is destroyed.
 </tr>
 
 <tr>
-<td>data</td>
-<td>- stream data  
+<td>dataLen</td>
+<td>- stream data length (-1 if length should be computed)  
 </td>
 </tr>
 
@@ -99,8 +99,8 @@ data buffer must outlive the input stream.
 </tr>
 
 <tr>
-<td>data</td>
-<td>- stream data  
+<td>dataLen</td>
+<td>- stream data length (-1 if length should be computed)  
 </td>
 </tr>
 

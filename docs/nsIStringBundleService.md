@@ -32,9 +32,9 @@ Formats a message string from a status code and status arguments.
 </tr>
 
 <tr>
-<td>aStatus</td>
-<td>- The status code. This is mapped into a string ID and  
-           and used in the string lookup process (see nsIErrorService).  
+<td>aStatusArg</td>
+<td>- The status message argument(s). Multiple arguments  
+           can be separated by newline ('\n') characters.  
 </td>
 </tr>
 

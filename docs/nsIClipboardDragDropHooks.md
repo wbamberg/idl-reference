@@ -83,8 +83,9 @@ Tells gecko whether a drop is allowed on this content area
 </tr>
 
 <tr>
-<td>event</td>
-<td>DOM event (drag over)  
+<td>session</td>
+<td>the drag session from which client can get  
+                  the flavors present or the actual data  
 </td>
 </tr>
 
@@ -117,8 +118,9 @@ not negatively impacted.
 </tr>
 
 <tr>
-<td>event</td>
-<td>DOM event (drag drop); null if triggered by copy.  
+<td>trans</td>
+<td>the transferable holding the list of flavors  
+              and the data for each flavor  
 </td>
 </tr>
 
@@ -149,8 +151,9 @@ something is dropped on the browser or in an editor
 </tr>
 
 <tr>
-<td>event</td>
-<td>DOM event (drag drop); null if triggered by paste.  
+<td>trans</td>
+<td>the transferable holding the list of flavors  
+              and the data for each flavor  
 </td>
 </tr>
 

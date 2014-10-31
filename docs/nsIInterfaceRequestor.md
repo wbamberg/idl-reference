@@ -39,8 +39,11 @@ Retrieves the specified interface pointer.
 </tr>
 
 <tr>
-<td>uuid</td>
-<td>The IID of the interface being requested.  
+<td>result</td>
+<td>[out] The interface pointer to be filled in if  
+              the interface is accessible.  
+@throws NS_NOINTERFACE - interface not accessible.  
+@throws NS_ERROR* - method failure.  
 </td>
 </tr>
 

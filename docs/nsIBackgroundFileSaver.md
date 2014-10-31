@@ -101,8 +101,10 @@ fails.  Failure is notified asynchronously through the observer.
 </tr>
 
 <tr>
-<td>aTarget</td>
-<td>       New output file to be written.  
+<td>aKeepPartial</td>
+<td>       Indicates whether aFile should be kept as partially completed,  
+       rather than deleted, if the operation fails or is canceled.  This is  
+       generally set for downloads that use temporary ".part" files.  
 </td>
 </tr>
 

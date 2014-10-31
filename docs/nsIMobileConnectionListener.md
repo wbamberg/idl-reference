@@ -37,8 +37,8 @@ Notify when ussd is received.
 </tr>
 
 <tr>
-<td>message</td>
-<td>       The ussd request in string format.  
+<td>sessionEnded</td>
+<td>       Indicates whether the session is ended.  
 </td>
 </tr>
 
@@ -91,26 +91,26 @@ Notify when call forwarding state is changed.
 </tr>
 
 <tr>
-<td>action</td>
-<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+<td>reason</td>
+<td>       One of the nsIMobileConnection.CALL_FORWARD_REASON_* values.  
 </td>
 </tr>
 
 <tr>
-<td>action</td>
-<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+<td>number</td>
+<td>       Phone number of forwarding address.  
 </td>
 </tr>
 
 <tr>
-<td>action</td>
-<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+<td>timeSeconds</td>
+<td>       The time in seconds should wait before call is forwarded.  
 </td>
 </tr>
 
 <tr>
-<td>action</td>
-<td>       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
+<td>serviceClass</td>
+<td>       One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
 </td>
 </tr>
 
@@ -137,8 +137,8 @@ Notify when emergency callback mode is changed.
 </tr>
 
 <tr>
-<td>active</td>
-<td>       Indicates whether the emergency callback mode is activated.  
+<td>timeoutMs</td>
+<td>       The timeout in millisecond for emergency callback mode.  
 </td>
 </tr>
 

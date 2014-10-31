@@ -50,8 +50,9 @@ Current implementations use a delay of 5 seconds.
 </tr>
 
 <tr>
-<td>observer</td>
-<td>the observer to be notified  
+<td>time</td>
+<td>the amount of time in seconds the user should be idle before  
+            the observer should be notified.  
 </td>
 </tr>
 
@@ -79,8 +80,12 @@ just as many times.
 </tr>
 
 <tr>
-<td>observer</td>
-<td>the observer that needs to be removed.  
+<td>time</td>
+<td>the amount of time they were listening for.  
+@note  
+Removing an observer will remove it once, for the idle time you specify.   
+If you have added an observer multiple times, you will need to remove it  
+just as many times.  
 </td>
 </tr>
 

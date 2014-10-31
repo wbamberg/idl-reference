@@ -25,14 +25,14 @@ Copy user profile information to the current active profile.
 </tr>
 
 <tr>
-<td>aItems</td>
-<td>list of data items to migrate. see above for values.  
+<td>aStartup</td>
+<td>helper interface which is non-null if called during startup.   
 </td>
 </tr>
 
 <tr>
-<td>aItems</td>
-<td>list of data items to migrate. see above for values.  
+<td>aProfile</td>
+<td>profile to migrate from, if there is more than one.  
 </td>
 </tr>
 
@@ -62,8 +62,7 @@ offers for import.
 
 <tr>
 <td></td>
-<td>aProfile the profile that we are looking for available data  
-         to import  
+<td>aDoingStartup "true" if the profile is not currently being used.  
 </td>
 </tr>
 

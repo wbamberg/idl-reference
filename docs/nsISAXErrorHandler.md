@@ -55,8 +55,8 @@ well.
 </tr>
 
 <tr>
-<td>locator</td>
-<td>The locator object for the error (may be null).  
+<td>error</td>
+<td>The error message.  
 </td>
 </tr>
 
@@ -99,8 +99,8 @@ other events once this method has been invoked.
 </tr>
 
 <tr>
-<td>locator</td>
-<td>The locator object for the error (may be null).  
+<td>error</td>
+<td>The error message.  
 </td>
 </tr>
 
@@ -136,8 +136,8 @@ as well.
 </tr>
 
 <tr>
-<td>locator</td>
-<td>The locator object for the warning (may be null).  
+<td>error</td>
+<td>The warning message.  
 </td>
 </tr>
 

@@ -39,14 +39,14 @@ nsIRequest might offer.
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>The request where this data came from. May be null.  
+<td>aData</td>
+<td>Data to check  
 </td>
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>The request where this data came from. May be null.  
+<td>aLength</td>
+<td>Length of the data  
 </td>
 </tr>
 

@@ -64,14 +64,14 @@ Also note that the context is not attached to a canvas element.
 </tr>
 
 <tr>
-<td>ctx</td>
-<td>Canvas drawing context  
+<td>width</td>
+<td>The width of the surface backing the drawing context  
 </td>
 </tr>
 
 <tr>
-<td>ctx</td>
-<td>Canvas drawing context  
+<td>height</td>
+<td>The height of the surface backing the drawing context  
 </td>
 </tr>
 

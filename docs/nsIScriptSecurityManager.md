@@ -41,8 +41,8 @@ should be denied.
 </tr>
 
 <tr>
-<td>cx</td>
-<td>the JSContext of the script causing the load  
+<td>uri</td>
+<td>the URI that is being loaded  
 </td>
 </tr>
 
@@ -71,14 +71,14 @@ should be denied.
 </tr>
 
 <tr>
-<td>aPrincipal</td>
-<td>the principal identifying the actor causing the load  
+<td>uri</td>
+<td>the URI that is being loaded  
 </td>
 </tr>
 
 <tr>
-<td>aPrincipal</td>
-<td>the principal identifying the actor causing the load  
+<td>flags</td>
+<td>the permission set, see above  
 </td>
 </tr>
 
@@ -131,8 +131,9 @@ inside a mozbrowser frame.
 </tr>
 
 <tr>
-<td>appId</td>
-<td>is the app id of the principal. It can't be UNKNOWN_APP_ID.  
+<td>inMozBrowser</td>
+<td>is true if the principal has to be considered as  
+inside a mozbrowser frame.  
 </td>
 </tr>
 

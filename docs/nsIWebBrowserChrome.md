@@ -29,8 +29,9 @@ Called when the status text in the chrome needs to be updated.
 </tr>
 
 <tr>
-<td>statusType</td>
-<td>indicates what is setting the text  
+<td>status</td>
+<td>status string. null is an acceptable value meaning  
+              no status.  
 </td>
 </tr>
 
@@ -61,8 +62,8 @@ specified size.
 </tr>
 
 <tr>
-<td>aCX</td>
-<td>new width of the browser  
+<td>aCY</td>
+<td>new height of the browser  
 </td>
 </tr>
 

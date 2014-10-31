@@ -50,18 +50,14 @@ is no longer needed or has been cancelled.
 </tr>
 
 <tr>
-<td>aObserver</td>
-<td>the callback object that observes the   
-                   ``timer-callback'' topic with the subject being  
-                   the timer itself when the timer fires:  
+<td>aDelay</td>
+<td>delay in milliseconds for timer to fire  
 </td>
 </tr>
 
 <tr>
-<td>aObserver</td>
-<td>the callback object that observes the   
-                   ``timer-callback'' topic with the subject being  
-                   the timer itself when the timer fires:  
+<td>aType</td>
+<td>timer type per TYPE* consts defined above  
 </td>
 </tr>
 
@@ -90,20 +86,20 @@ that function.
 </tr>
 
 <tr>
-<td>aFunc</td>
-<td>The function to invoke  
+<td>aClosure</td>
+<td>An opaque pointer to pass to that function  
 </td>
 </tr>
 
 <tr>
-<td>aFunc</td>
-<td>The function to invoke  
+<td>aDelay</td>
+<td>The millisecond interval  
 </td>
 </tr>
 
 <tr>
-<td>aFunc</td>
-<td>The function to invoke  
+<td>aType</td>
+<td>Timer type per TYPE* consts defined above  
 </td>
 </tr>
 
@@ -130,14 +126,14 @@ This version takes a function to call.
 </tr>
 
 <tr>
-<td>aFunc</td>
-<td>nsITimerCallback interface to call when timer expires  
+<td>aDelay</td>
+<td>The millisecond interval  
 </td>
 </tr>
 
 <tr>
-<td>aFunc</td>
-<td>nsITimerCallback interface to call when timer expires  
+<td>aType</td>
+<td>Timer type per TYPE* consts defined above  
 </td>
 </tr>
 

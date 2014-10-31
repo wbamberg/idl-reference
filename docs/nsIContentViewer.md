@@ -122,9 +122,10 @@ Attach the content viewer to its DOM window and docshell.
 </tr>
 
 <tr>
-<td>aState</td>
-<td>A state object that might be useful in attaching the DOM  
-              window.  
+<td>aSHEntry</td>
+<td>The history entry that the content viewer was stored in.  
+                The entry must have the docshells for all of the child  
+                documents stored in its child shell list.  
 </td>
 </tr>
 

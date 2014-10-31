@@ -32,8 +32,8 @@ Generates the specified amount of random bytes.
 </tr>
 
 <tr>
-<td>aLength</td>
-<td>       The length of the data to generate.  
+<td>aBuffer</td>
+<td>       A buffer that contains random bytes of size aLength.  
 </td>
 </tr>
 

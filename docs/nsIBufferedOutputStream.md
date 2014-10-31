@@ -28,8 +28,8 @@ to the underlying output stream are necessary.
 </tr>
 
 <tr>
-<td>sinkToStream</td>
-<td>- add buffering to this stream  
+<td>bufferSize</td>
+<td>- specifies the maximum buffer size  
 </td>
 </tr>
 

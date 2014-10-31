@@ -25,8 +25,8 @@ Get the value for the given category's entry.
 </tr>
 
 <tr>
-<td>aCategory</td>
-<td>The name of the category ("protocol")  
+<td>aEntry</td>
+<td>The entry you're looking for ("http")  
 </td>
 </tr>
 
@@ -54,26 +54,26 @@ Add an entry to a category.
 </tr>
 
 <tr>
-<td>aCategory</td>
-<td>The name of the category ("protocol")  
+<td>aEntry</td>
+<td>The entry to be added ("http")  
 </td>
 </tr>
 
 <tr>
-<td>aCategory</td>
-<td>The name of the category ("protocol")  
+<td>aValue</td>
+<td>The value for the entry ("moz.httprulez.1")  
 </td>
 </tr>
 
 <tr>
-<td>aCategory</td>
-<td>The name of the category ("protocol")  
+<td>aPersist</td>
+<td>Should this data persist between invocations?  
 </td>
 </tr>
 
 <tr>
-<td>aCategory</td>
-<td>The name of the category ("protocol")  
+<td>aReplace</td>
+<td>Should we replace an existing entry?  
 </td>
 </tr>
 
@@ -98,14 +98,14 @@ Delete an entry from the category.
 </tr>
 
 <tr>
-<td>aCategory</td>
-<td>The name of the category ("protocol")  
+<td>aEntry</td>
+<td>The entry to be added ("http")  
 </td>
 </tr>
 
 <tr>
-<td>aCategory</td>
-<td>The name of the category ("protocol")  
+<td>aPersist</td>
+<td>Delete persistent data from registry, if present?  
 </td>
 </tr>
 

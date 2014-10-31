@@ -28,26 +28,26 @@ Register a speech synthesis voice.
 </tr>
 
 <tr>
-<td>aService</td>
-<td>the service that provides this voice.  
+<td>aUri</td>
+<td>a unique identifier for this voice.  
 </td>
 </tr>
 
 <tr>
-<td>aService</td>
-<td>the service that provides this voice.  
+<td>aName</td>
+<td>human-readable name for this voice.  
 </td>
 </tr>
 
 <tr>
-<td>aService</td>
-<td>the service that provides this voice.  
+<td>aLang</td>
+<td>a BCP 47 language tag.  
 </td>
 </tr>
 
 <tr>
-<td>aService</td>
-<td>the service that provides this voice.  
+<td>aLocalService</td>
+<td>true if service does not require network.  
 </td>
 </tr>
 
@@ -72,8 +72,8 @@ Remove a speech synthesis voice.
 </tr>
 
 <tr>
-<td>aService</td>
-<td>the service that was used to add the voice.  
+<td>aUri</td>
+<td>a unique identifier of an existing voice.  
 </td>
 </tr>
 
@@ -98,8 +98,8 @@ Set a voice as default.
 </tr>
 
 <tr>
-<td>aUri</td>
-<td>a unique identifier of an existing voice.  
+<td>aIsDefault</td>
+<td>true if this voice should be toggled as default.  
 </td>
 </tr>
 

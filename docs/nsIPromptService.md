@@ -59,14 +59,14 @@ Puts up an alert dialog with an OK button.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aDialogTitle</td>
+<td>       Text to appear in the title of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aText</td>
+<td>       Text to appear in the body of the dialog.  
 </td>
 </tr>
 
@@ -100,26 +100,27 @@ Puts up an alert dialog with an OK button and a labeled checkbox.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aDialogTitle</td>
+<td>       Text to appear in the title of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aText</td>
+<td>       Text to appear in the body of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckMsg</td>
+<td>       Text to appear with the checkbox.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckState</td>
+<td>       Contains the initial checked state of the checkbox when this method  
+       is called and the final checked state after this method returns.  
 </td>
 </tr>
 
@@ -150,14 +151,14 @@ Puts up a dialog with OK and Cancel buttons.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aDialogTitle</td>
+<td>       Text to appear in the title of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aText</td>
+<td>       Text to appear in the body of the dialog.  
 </td>
 </tr>
 
@@ -193,26 +194,27 @@ Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aDialogTitle</td>
+<td>       Text to appear in the title of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aText</td>
+<td>       Text to appear in the body of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckMsg</td>
+<td>       Text to appear with the checkbox.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckState</td>
+<td>       Contains the initial checked state of the checkbox when this method  
+       is called and the final checked state after this method returns.  
 </td>
 </tr>
 
@@ -274,50 +276,51 @@ where "AAA" and "BBB" correspond to one of the button titles.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aDialogTitle</td>
+<td>       Text to appear in the title of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aText</td>
+<td>       Text to appear in the body of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aButtonFlags</td>
+<td>       A combination of Button Flags.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aButton0Title</td>
+<td>       Used when button 0 uses TITLE_IS_STRING  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aButton1Title</td>
+<td>       Used when button 1 uses TITLE_IS_STRING  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aButton2Title</td>
+<td>       Used when button 2 uses TITLE_IS_STRING  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckMsg</td>
+<td>       Text to appear with the checkbox.  Null if no checkbox.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckState</td>
+<td>       Contains the initial checked state of the checkbox when this method  
+       is called and the final checked state after this method returns.  
 </td>
 </tr>
 
@@ -358,32 +361,36 @@ Puts up a dialog with an edit field and an optional, labeled checkbox.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aDialogTitle</td>
+<td>       Text to appear in the title of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aText</td>
+<td>       Text to appear in the body of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aValue</td>
+<td>       Contains the default value for the dialog field when this method  
+       is called (null value is ok).  Upon return, if the user pressed  
+       OK, then this parameter contains a newly allocated string value.  
+       Otherwise, the parameter's value is unmodified.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckMsg</td>
+<td>       Text to appear with the checkbox.  If null, check box will not be shown.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckState</td>
+<td>       Contains the initial checked state of the checkbox when this method  
+       is called and the final checked state after this method returns.  
 </td>
 </tr>
 
@@ -430,38 +437,45 @@ labeled checkbox.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aDialogTitle</td>
+<td>       Text to appear in the title of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aText</td>
+<td>       Text to appear in the body of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aUsername</td>
+<td>       Contains the default value for the username field when this method  
+       is called (null value is ok).  Upon return, if the user pressed OK,  
+       then this parameter contains a newly allocated string value.  
+       Otherwise, the parameter's value is unmodified.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aPassword</td>
+<td>       Contains the default value for the password field when this method  
+       is called (null value is ok).  Upon return, if the user pressed OK,  
+       then this parameter contains a newly allocated string value.  
+       Otherwise, the parameter's value is unmodified.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckMsg</td>
+<td>       Text to appear with the checkbox.  If null, check box will not be shown.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckState</td>
+<td>       Contains the initial checked state of the checkbox when this method  
+       is called and the final checked state after this method returns.  
 </td>
 </tr>
 
@@ -502,32 +516,36 @@ Puts up a dialog with a password field and an optional, labeled checkbox.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aDialogTitle</td>
+<td>       Text to appear in the title of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aText</td>
+<td>       Text to appear in the body of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aPassword</td>
+<td>       Contains the default value for the password field when this method  
+       is called (null value is ok).  Upon return, if the user pressed OK,  
+       then this parameter contains a newly allocated string value.  
+       Otherwise, the parameter's value is unmodified.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckMsg</td>
+<td>       Text to appear with the checkbox.  If null, check box will not be shown.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCheckState</td>
+<td>       Contains the initial checked state of the checkbox when this method  
+       is called and the final checked state after this method returns.  
 </td>
 </tr>
 
@@ -566,32 +584,33 @@ may make a single selection.
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aDialogTitle</td>
+<td>       Text to appear in the title of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aText</td>
+<td>       Text to appear in the body of the dialog.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aCount</td>
+<td>       The length of the aSelectList array parameter.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aSelectList</td>
+<td>       The list of strings to display.  
 </td>
 </tr>
 
 <tr>
-<td>aParent</td>
-<td>       The parent window or null.  
+<td>aOutSelection</td>
+<td>       Contains the index of the selected item in the list when this  
+       method returns true.  
 </td>
 </tr>
 

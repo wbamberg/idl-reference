@@ -41,20 +41,20 @@ websocket connection is reopened.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the uri of the websocket protocol - may be redirected  
+<td>aOrigin</td>
+<td>the uri of the originating resource  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the uri of the websocket protocol - may be redirected  
+<td>aListener</td>
+<td>the nsIWebSocketListener implementation  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>the uri of the websocket protocol - may be redirected  
+<td>aContext</td>
+<td>an opaque parameter forwarded to aListener's methods  
 </td>
 </tr>
 

@@ -163,9 +163,10 @@ unregister the image element ID |aImageElementId|.
 </tr>
 
 <tr>
-<td>aImageElementId</td>
-<td>an image element ID to associate with  
-|aImageElement|  
+<td>aImageElement</td>
+<td>a DOM element to be used as the source image of  
+|-moz-element(#aImageElementId)|. If this is null, the function will  
+unregister the image element ID |aImageElementId|.  
 </td>
 </tr>
 
@@ -202,8 +203,8 @@ offset within that node), given a point.
 </tr>
 
 <tr>
-<td>x</td>
-<td>Horizontal point at which to determine the caret position, in  
+<td>y</td>
+<td>Vertical point at which to determine the caret position, in  
          page coordinates.  
 </td>
 </tr>

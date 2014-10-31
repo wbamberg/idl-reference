@@ -31,8 +31,10 @@ ignored.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the URL to tag.  
+<td>aTags</td>
+<td>       Array of tags to set for the given URL.  Each element within the  
+       array can be either a tag name (non-empty string) or a concrete  
+       itemId of a tag container.  
 </td>
 </tr>
 
@@ -62,8 +64,10 @@ given URL are ignored.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       the URL to un-tag.  
+<td>aTags</td>
+<td>       Array of tags to unset.  Pass null to remove all tags from the given  
+       url.  Each element within the array can be either a tag name  
+       (non-empty string) or a concrete itemId of a tag container.  
 </td>
 </tr>
 

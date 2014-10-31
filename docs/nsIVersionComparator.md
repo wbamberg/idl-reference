@@ -56,7 +56,7 @@ Compare two version strings
 
 <tr>
 <td></td>
-<td>A   The first version  
+<td>B   The second version  
 </td>
 </tr>
 

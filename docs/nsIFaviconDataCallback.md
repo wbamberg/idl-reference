@@ -50,26 +50,21 @@ information like mime-type or data itself.
 </tr>
 
 <tr>
-<td>aFaviconURI</td>
-<td>       Receives the "favicon URI" (not the "favicon link URI") associated  
-       to the requested page.  This can be null if there is no associated  
-       favicon URI, or the callback is notifying a failure.  
+<td>aDataLen</td>
+<td>       Size of the icon data in bytes.  Notice that a value of 0 does not  
+       necessarily mean that we don't have an icon.  
 </td>
 </tr>
 
 <tr>
-<td>aFaviconURI</td>
-<td>       Receives the "favicon URI" (not the "favicon link URI") associated  
-       to the requested page.  This can be null if there is no associated  
-       favicon URI, or the callback is notifying a failure.  
+<td>aData</td>
+<td>       Icon data, or an empty array if aDataLen is 0.  
 </td>
 </tr>
 
 <tr>
-<td>aFaviconURI</td>
-<td>       Receives the "favicon URI" (not the "favicon link URI") associated  
-       to the requested page.  This can be null if there is no associated  
-       favicon URI, or the callback is notifying a failure.  
+<td>aMimeType</td>
+<td>       Mime type of the icon, or an empty string if aDataLen is 0.  
 </td>
 </tr>
 

@@ -90,8 +90,8 @@ value of a type other than boolean.
 </tr>
 
 <tr>
-<td>aPrefName</td>
-<td>The boolean preference to set the state of.  
+<td>aValue</td>
+<td>The boolean value to set the preference to.  
 </td>
 </tr>
 
@@ -169,8 +169,8 @@ value of a type other than string.
 </tr>
 
 <tr>
-<td>aPrefName</td>
-<td>The string preference to set.  
+<td>aValue</td>
+<td>The string value to set the preference to.  
 </td>
 </tr>
 
@@ -223,8 +223,8 @@ value of a type other than integer.
 </tr>
 
 <tr>
-<td>aPrefName</td>
-<td>The integer preference to set the value of.  
+<td>aValue</td>
+<td>The integer value to set the preference to.  
 </td>
 </tr>
 
@@ -261,14 +261,19 @@ be easily represented using a standard boolean, integer or string value.
 </tr>
 
 <tr>
-<td>aPrefName</td>
-<td>The complex preference to get the value of.  
+<td>aType</td>
+<td>The XPCOM interface that this complex preference  
+                 represents. Interfaces currently supported are:  
+                   - nsIFile  
+                   - nsISupportsString (UniChar)  
+                   - nsIPrefLocalizedString (Localized UniChar)  
 </td>
 </tr>
 
 <tr>
-<td>aPrefName</td>
-<td>The complex preference to get the value of.  
+<td>aValue</td>
+<td>The XPCOM object into which to the complex preference   
+                 value should be retrieved.  
 </td>
 </tr>
 
@@ -305,14 +310,19 @@ be easily represented using a standard boolean, integer or string value.
 </tr>
 
 <tr>
-<td>aPrefName</td>
-<td>The complex preference to set the value of.  
+<td>aType</td>
+<td>The XPCOM interface that this complex preference  
+                 represents. Interfaces currently supported are:  
+                   - nsIFile  
+                   - nsISupportsString (UniChar)  
+                   - nsIPrefLocalizedString (Localized UniChar)  
 </td>
 </tr>
 
 <tr>
-<td>aPrefName</td>
-<td>The complex preference to set the value of.  
+<td>aValue</td>
+<td>The XPCOM object from which to set the complex preference   
+                 value.  
 </td>
 </tr>
 
@@ -524,18 +534,14 @@ effect, always operates on both.
 </tr>
 
 <tr>
-<td>aStartingAt</td>
-<td>The point on the branch at which to start enumerating  
-                   the child preferences. Pass in "" to enumerate all  
-                   preferences referenced by this branch.  
+<td>aCount</td>
+<td>Receives the number of elements in the array.  
 </td>
 </tr>
 
 <tr>
-<td>aStartingAt</td>
-<td>The point on the branch at which to start enumerating  
-                   the child preferences. Pass in "" to enumerate all  
-                   preferences referenced by this branch.  
+<td>aChildArray</td>
+<td>Receives the array of child preferences.  
 </td>
 </tr>
 
@@ -648,22 +654,17 @@ please use an nsITimer.
 </tr>
 
 <tr>
-<td>aDomain</td>
-<td>The preference on which to listen for changes. This can  
-                 be the name of an entire branch to observe.  
-                 e.g. Holding the "root" prefbranch and calling  
-                 addObserver("foo.bar.", ...) will observe changes to  
-                 foo.bar.baz and foo.bar.bzip  
+<td>aObserver</td>
+<td>The object to be notified if the preference changes.  
 </td>
 </tr>
 
 <tr>
-<td>aDomain</td>
-<td>The preference on which to listen for changes. This can  
-                 be the name of an entire branch to observe.  
-                 e.g. Holding the "root" prefbranch and calling  
-                 addObserver("foo.bar.", ...) will observe changes to  
-                 foo.bar.baz and foo.bar.bzip  
+<td>aHoldWeak</td>
+<td>true  Hold a weak reference to |aObserver|. The object  
+                       must implement the nsISupportsWeakReference  
+                       interface or this will fail.  
+                 false Hold a strong reference to |aObserver|.  
 </td>
 </tr>
 
@@ -696,8 +697,8 @@ otherwise, the observer will not be removed.
 </tr>
 
 <tr>
-<td>aDomain</td>
-<td>The preference which is being observed for changes.  
+<td>aObserver</td>
+<td>An observer previously registered with addObserver().  
 </td>
 </tr>
 

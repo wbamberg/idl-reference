@@ -36,34 +36,28 @@ this method will be called when the load completes.
 </tr>
 
 <tr>
-<td>aResult</td>
-<td>A result code representing the result of loading  
-       a script. If this is a failure code, script evaluation  
-       will not occur.  
+<td>aElement</td>
+<td>The element being processed.  
 </td>
 </tr>
 
 <tr>
-<td>aResult</td>
-<td>A result code representing the result of loading  
-       a script. If this is a failure code, script evaluation  
-       will not occur.  
+<td>aIsInline</td>
+<td>Is this an inline script or externally loaded?  
 </td>
 </tr>
 
 <tr>
-<td>aResult</td>
-<td>A result code representing the result of loading  
-       a script. If this is a failure code, script evaluation  
-       will not occur.  
+<td>aURI</td>
+<td>What is the URI of the script (the document URI if  
+       it is inline).  
 </td>
 </tr>
 
 <tr>
-<td>aResult</td>
-<td>A result code representing the result of loading  
-       a script. If this is a failure code, script evaluation  
-       will not occur.  
+<td>aLineNo</td>
+<td>At what line does the script appear (generally 1  
+       if it is a loaded script).  
 </td>
 </tr>
 
@@ -91,16 +85,14 @@ The script has been evaluated.
 </tr>
 
 <tr>
-<td>aResult</td>
-<td>A result code representing the success or failure of  
-       the script evaluation.  
+<td>aElement</td>
+<td>The element being processed.  
 </td>
 </tr>
 
 <tr>
-<td>aResult</td>
-<td>A result code representing the success or failure of  
-       the script evaluation.  
+<td>aIsInline</td>
+<td>Is this an inline script or externally loaded?  
 </td>
 </tr>
 

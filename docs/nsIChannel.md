@@ -80,8 +80,9 @@ channel is reopened.
 </tr>
 
 <tr>
-<td>aListener</td>
-<td>the nsIStreamListener implementation  
+<td>aContext</td>
+<td>an opaque parameter forwarded to aListener's methods  
+@see nsIChannelEventSink for onChannelRedirect  
 </td>
 </tr>
 

@@ -37,14 +37,16 @@ Called before the editor creates a node.
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>The tag name of the DOM Node to create.  
+<td>aParent</td>
+<td>The node to insert the new object into  
 </td>
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>The tag name of the DOM Node to create.  
+<td>aPosition</td>
+<td>The place in aParent to insert the new node  
+                 0=first child, 1=second child, etc.  
+                 any number > number of current children = last child  
 </td>
 </tr>
 
@@ -73,26 +75,28 @@ Called after the editor creates a node.
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>The tag name of the DOM Node to create.  
+<td>aNode</td>
+<td>The DOM Node that was created.  
 </td>
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>The tag name of the DOM Node to create.  
+<td>aParent</td>
+<td>The node to insert the new object into  
 </td>
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>The tag name of the DOM Node to create.  
+<td>aPosition</td>
+<td>The place in aParent to insert the new node  
+                 0=first child, 1=second child, etc.  
+                 any number > number of current children = last child  
 </td>
 </tr>
 
 <tr>
-<td>aTag</td>
-<td>The tag name of the DOM Node to create.  
+<td>aResult</td>
+<td>The result of the create node operation.  
 </td>
 </tr>
 
@@ -119,14 +123,16 @@ Called before the editor inserts a node.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>The DOM Node to insert.  
+<td>aParent</td>
+<td>The node to insert the new object into  
 </td>
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>The DOM Node to insert.  
+<td>aPosition</td>
+<td>The place in aParent to insert the new node  
+                 0=first child, 1=second child, etc.  
+                 any number > number of current children = last child  
 </td>
 </tr>
 
@@ -154,20 +160,22 @@ Called after the editor inserts a node.
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>The DOM Node to insert.  
+<td>aParent</td>
+<td>The node to insert the new object into  
 </td>
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>The DOM Node to insert.  
+<td>aPosition</td>
+<td>The place in aParent to insert the new node  
+                 0=first child, 1=second child, etc.  
+                 any number > number of current children = last child  
 </td>
 </tr>
 
 <tr>
-<td>aNode</td>
-<td>The DOM Node to insert.  
+<td>aResult</td>
+<td>The result of the insert node operation.  
 </td>
 </tr>
 
@@ -209,8 +217,8 @@ Called after the editor deletes a node.
 </tr>
 
 <tr>
-<td>aChild</td>
-<td>The node to delete  
+<td>aResult</td>
+<td>The result of the delete node operation.  
 </td>
 </tr>
 
@@ -235,14 +243,14 @@ Called before the editor splits a node.
 </tr>
 
 <tr>
-<td>aExistingRightNode</td>
-<td>the node to split.  It will become the new node's next sibling.  
+<td>aOffset</td>
+<td>the offset of aExistingRightNode's content|children to do the split at  
 </td>
 </tr>
 
 <tr>
-<td>aExistingRightNode</td>
-<td>the node to split.  It will become the new node's next sibling.  
+<td>aNewLeftNode</td>
+<td>[OUT] the new node resulting from the split, becomes aExistingRightNode's previous sibling.  
 </td>
 </tr>
 
@@ -267,14 +275,14 @@ Called after the editor splits a node.
 </tr>
 
 <tr>
-<td>aExistingRightNode</td>
-<td>the node to split.  It will become the new node's next sibling.  
+<td>aOffset</td>
+<td>the offset of aExistingRightNode's content|children to do the split at  
 </td>
 </tr>
 
 <tr>
-<td>aExistingRightNode</td>
-<td>the node to split.  It will become the new node's next sibling.  
+<td>aNewLeftNode</td>
+<td>[OUT] the new node resulting from the split, becomes aExistingRightNode's previous sibling.  
 </td>
 </tr>
 
@@ -301,14 +309,16 @@ Called before the editor joins 2 nodes.
 </tr>
 
 <tr>
-<td>aLeftNode</td>
-<td>This node will be merged into the right node  
+<td>aRightNode</td>
+<td>The node that will be merged into.  
+                   There is no requirement that the two nodes be of  
+                   the same type.  
 </td>
 </tr>
 
 <tr>
-<td>aLeftNode</td>
-<td>This node will be merged into the right node  
+<td>aParent</td>
+<td>The parent of aRightNode  
 </td>
 </tr>
 
@@ -336,20 +346,22 @@ Called after the editor joins 2 nodes.
 </tr>
 
 <tr>
-<td>aLeftNode</td>
-<td>This node will be merged into the right node  
+<td>aRightNode</td>
+<td>The node that will be merged into.  
+                   There is no requirement that the two nodes be of  
+                   the same type.  
 </td>
 </tr>
 
 <tr>
-<td>aLeftNode</td>
-<td>This node will be merged into the right node  
+<td>aParent</td>
+<td>The parent of aRightNode  
 </td>
 </tr>
 
 <tr>
-<td>aLeftNode</td>
-<td>This node will be merged into the right node  
+<td>aResult</td>
+<td>The result of the join operation.  
 </td>
 </tr>
 
@@ -374,14 +386,14 @@ Called before the editor inserts text.
 </tr>
 
 <tr>
-<td>aTextNode</td>
-<td>This node getting inserted text  
+<td>aOffset</td>
+<td>The offset in aTextNode to insert at.  
 </td>
 </tr>
 
 <tr>
-<td>aTextNode</td>
-<td>This node getting inserted text  
+<td>aString</td>
+<td>The string that gets inserted.  
 </td>
 </tr>
 
@@ -407,20 +419,20 @@ Called after the editor inserts text.
 </tr>
 
 <tr>
-<td>aTextNode</td>
-<td>This node getting inserted text  
+<td>aOffset</td>
+<td>The offset in aTextNode to insert at.  
 </td>
 </tr>
 
 <tr>
-<td>aTextNode</td>
-<td>This node getting inserted text  
+<td>aString</td>
+<td>The string that gets inserted.  
 </td>
 </tr>
 
 <tr>
-<td>aTextNode</td>
-<td>This node getting inserted text  
+<td>aResult</td>
+<td>The result of the insert text operation.  
 </td>
 </tr>
 
@@ -445,14 +457,14 @@ Called before the editor deletes text.
 </tr>
 
 <tr>
-<td>aTextNode</td>
-<td>This node getting text deleted  
+<td>aOffset</td>
+<td>The offset in aTextNode to delete at.  
 </td>
 </tr>
 
 <tr>
-<td>aTextNode</td>
-<td>This node getting text deleted  
+<td>aLength</td>
+<td>The amount of text to delete.  
 </td>
 </tr>
 
@@ -478,20 +490,20 @@ Called before the editor deletes text.
 </tr>
 
 <tr>
-<td>aTextNode</td>
-<td>This node getting text deleted  
+<td>aOffset</td>
+<td>The offset in aTextNode to delete at.  
 </td>
 </tr>
 
 <tr>
-<td>aTextNode</td>
-<td>This node getting text deleted  
+<td>aLength</td>
+<td>The amount of text to delete.  
 </td>
 </tr>
 
 <tr>
-<td>aTextNode</td>
-<td>This node getting text deleted  
+<td>aResult</td>
+<td>The result of the delete text operation.  
 </td>
 </tr>
 

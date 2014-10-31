@@ -31,15 +31,13 @@ method is called.
 
 <tr>
 <td></td>
-<td>parent   nsIDOMWindow parent.  This dialog will be dependent  
-                     on this parent. parent must be non-null.  
+<td>title    The title for the file widget  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>parent   nsIDOMWindow parent.  This dialog will be dependent  
-                     on this parent. parent must be non-null.  
+<td>mode     load, save, or get folder  
 </td>
 </tr>
 
@@ -86,7 +84,7 @@ Add a filter
 
 <tr>
 <td></td>
-<td>title    name of the filter  
+<td>filter   extensions to filter -- semicolon and space separated  
 </td>
 </tr>
 

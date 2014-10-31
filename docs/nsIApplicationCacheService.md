@@ -52,14 +52,15 @@ group residing in a custom directory with a custom quota.
 </tr>
 
 <tr>
-<td>group</td>
-<td>   URL of the manifest  
+<td>directory</td>
+<td>   Actually a reference to a profile directory where to  
+   create the OfflineCache sub-dir.  
 </td>
 </tr>
 
 <tr>
-<td>group</td>
-<td>   URL of the manifest  
+<td>quota</td>
+<td>   Optional override of the default quota.  
 </td>
 </tr>
 
@@ -105,8 +106,11 @@ Deletes some or all of an application's cache entries.
 </tr>
 
 <tr>
-<td>appId</td>
-<td>   The mozIApplication.localId of the application.  
+<td>discardOnlyBrowserEntries</td>
+<td>   If true, only entries marked as 'inBrowserElement' are deleted   
+   (this is used by browser applications to delete user browsing   
+   data/history.).  If false, *all* entries for the given appId are  
+   deleted (this is used for application uninstallation).  
 </td>
 </tr>
 
@@ -142,8 +146,8 @@ this is not currently implemented.
 </tr>
 
 <tr>
-<td>cache</td>
-<td>       The cache in which the entry is cached now.  
+<td>key</td>
+<td>       The cache entry key.  
 </td>
 </tr>
 

@@ -28,13 +28,14 @@ Starts a modal drag session with an array of transaferables
 
 <tr>
 <td></td>
-<td>aTransferables - an array of transferables to be dragged  
+<td>aRegion - a region containing rectangles for cursor feedback,   
+           in window coordinates.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aTransferables - an array of transferables to be dragged  
+<td>aActionType - specified which of copy/move/link are allowed  
 </td>
 </tr>
 

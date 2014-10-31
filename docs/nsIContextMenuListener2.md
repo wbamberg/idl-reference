@@ -53,8 +53,8 @@ CONTEXT_BACKGROUND_IMAGE       <HTML> with background image
 </tr>
 
 <tr>
-<td>aContextFlags</td>
-<td>Flags indicating the kind of context.  
+<td>aUtils</td>
+<td>Context information and helper utilities.  
 </td>
 </tr>
 

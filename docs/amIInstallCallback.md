@@ -35,8 +35,8 @@ Called when an install completes or fails.
 
 <tr>
 <td></td>
-<td>aUrl  
-        The url of the add-on being installed  
+<td>aStatus  
+        0 if the install was successful or negative if not  
 </td>
 </tr>
 

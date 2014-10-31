@@ -41,26 +41,28 @@ causing the request to be canceled.
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>request corresponding to the source of the data  
+<td>aContext</td>
+<td>user defined context  
 </td>
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>request corresponding to the source of the data  
+<td>aInputStream</td>
+<td>input stream containing the data chunk  
 </td>
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>request corresponding to the source of the data  
+<td>aOffset</td>
+<td>       Number of bytes that were sent in previous onDataAvailable calls  
+       for this request. In other words, the sum of all previous count  
+       parameters.  
 </td>
 </tr>
 
 <tr>
-<td>aRequest</td>
-<td>request corresponding to the source of the data  
+<td>aCount</td>
+<td>number of bytes available in the stream  
 </td>
 </tr>
 

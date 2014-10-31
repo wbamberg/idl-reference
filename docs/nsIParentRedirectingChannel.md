@@ -35,14 +35,15 @@ on the child process and provide the decision result to the callback.
 </tr>
 
 <tr>
-<td>newChannelId</td>
-<td>   id of the redirect channel obtained from nsIRedirectChannelRegistrar.  
+<td>newURI</td>
+<td>   the URI we redirect to  
 </td>
 </tr>
 
 <tr>
-<td>newChannelId</td>
-<td>   id of the redirect channel obtained from nsIRedirectChannelRegistrar.  
+<td>callback</td>
+<td>   redirect result callback, usage is compatible with how  
+   nsIChannelEventSink defines it  
 </td>
 </tr>
 

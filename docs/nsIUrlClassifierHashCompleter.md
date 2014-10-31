@@ -38,14 +38,14 @@ Request a completed hash from the given gethash url.
 </tr>
 
 <tr>
-<td>partialHash</td>
-<td>       The 32-bit hash encountered by the url-classifier.  
+<td>gethashUrl</td>
+<td>       The gethash url to use.  
 </td>
 </tr>
 
 <tr>
-<td>partialHash</td>
-<td>       The 32-bit hash encountered by the url-classifier.  
+<td>callback</td>
+<td>       An nsIUrlClassifierCompleterCallback instance.  
 </td>
 </tr>
 

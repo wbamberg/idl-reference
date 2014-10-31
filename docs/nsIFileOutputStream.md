@@ -33,20 +33,25 @@ An output stream that lets you stream to a file.
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to write to  
+<td>ioFlags</td>
+<td>file open flags listed in prio.h (see  
+                     PR_Open documentation) or -1 to open the  
+                     file in default mode (PR_WRONLY |  
+                     PR_CREATE_FILE | PR_TRUNCATE)  
 </td>
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to write to  
+<td>perm</td>
+<td>file mode bits listed in prio.h or -1 to  
+                     use the default permissions (0664)  
 </td>
 </tr>
 
 <tr>
-<td>file</td>
-<td>file to write to  
+<td>behaviorFlags</td>
+<td>flags specifying various behaviors of the class  
+       (currently none supported)  
 </td>
 </tr>
 

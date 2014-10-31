@@ -33,12 +33,10 @@ Scan(a + b, o)
 </tr>
 
 <tr>
-<td>text:</td>
-<td>plain text to scan. May be a line, paragraph (recommended)  
-or just a substring.<p>  
-Must be non-escaped, pure unicode.<p>  
-<em>Note:</em> ScanTXT(a, o) + ScanTXT(b, o) may be !=  
-Scan(a + b, o)  
+<td>whattodo:</td>
+<td>Bitfield describing the modes of operation  
+@result      "<", ">" and "&" are escaped and HTML tags are inserted where  
+appropriate.  
 </td>
 </tr>
 
@@ -79,13 +77,9 @@ Scan(a + b, o)
 </tr>
 
 <tr>
-<td>text:</td>
-<td>HTML source to scan. May be a line, paragraph (recommended)  
-or just a substring.<p>  
-Must be correct HTML. "<", ">" and "&" must be escaped,  
-other chars must be pure unicode.<p>  
-<em>Note:</em> ScanTXT(a, o) + ScanTXT(b, o) may be !=  
-Scan(a + b, o)  
+<td>whattodo:</td>
+<td>Bitfield describing the modes of operation  
+@result      Additional HTML tags are inserted where appropriate.  
 </td>
 </tr>
 
@@ -115,9 +109,11 @@ txt quote tags like ">"
 </tr>
 
 <tr>
-<td>line:</td>
-<td>line in original msg, possibly starting starting with  
-txt quote tags like ">"  
+<td>logLineStart:</td>
+<td>pos in line, where the real content (logical line)  
+begins, i.e. pos after all txt quote tags.  
+E.g. position of "t" in "> > text".  
+Initial value must be 0, unless line is not real line.  
 </td>
 </tr>
 
@@ -144,14 +140,14 @@ aEndPos --> index of the last character in the url (-1 if no url found)
 </tr>
 
 <tr>
-<td>a</td>
-<td>wide string to scan for the presence of a URL.  
+<td>aLength</td>
+<td>--> the length of the buffer to be scanned  
 </td>
 </tr>
 
 <tr>
-<td>a</td>
-<td>wide string to scan for the presence of a URL.  
+<td>aPos</td>
+<td>--> the position in the buffer to start scanning for a url  
 </td>
 </tr>
 

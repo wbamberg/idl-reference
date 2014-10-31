@@ -36,8 +36,8 @@ removed with the removeListener method.
 
 <tr>
 <td></td>
-<td>aEvent  
-         The name of an event  
+<td>aListener  
+         The reference to a listener  
 </td>
 </tr>
 
@@ -67,8 +67,8 @@ event listener has no effect.
 
 <tr>
 <td></td>
-<td>aEvent  
-         The name of an event  
+<td>aListener  
+         The reference to a listener  
 </td>
 </tr>
 

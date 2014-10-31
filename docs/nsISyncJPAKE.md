@@ -39,38 +39,40 @@ Perform first round of the JPAKE exchange.
 </tr>
 
 <tr>
-<td>aSignerID</td>
-<td>       String identifying the signer.  
+<td>aGX1</td>
+<td>       Schnorr signature value g^x1, in hex representation.  
 </td>
 </tr>
 
 <tr>
-<td>aSignerID</td>
-<td>       String identifying the signer.  
+<td>aGV1</td>
+<td>       Schnorr signature value g^v1 (v1 is a random value), in hex  
+       representation.  
 </td>
 </tr>
 
 <tr>
-<td>aSignerID</td>
-<td>       String identifying the signer.  
+<td>aR1</td>
+<td>       Schnorr signature value r1 = v1 - x1 * h, in hex representation.  
 </td>
 </tr>
 
 <tr>
-<td>aSignerID</td>
-<td>       String identifying the signer.  
+<td>aGX2</td>
+<td>       Schnorr signature value g^x2, in hex representation.  
 </td>
 </tr>
 
 <tr>
-<td>aSignerID</td>
-<td>       String identifying the signer.  
+<td>aGV2</td>
+<td>       Schnorr signature value g^v2 (v2 is a random value), in hex  
+       representation.  
 </td>
 </tr>
 
 <tr>
-<td>aSignerID</td>
-<td>       String identifying the signer.  
+<td>aR2</td>
+<td>       Schnorr signature value r2 = v2 - x2 * h, in hex representation.  
 </td>
 </tr>
 
@@ -118,62 +120,65 @@ Perform second round of the JPAKE exchange.
 </tr>
 
 <tr>
-<td>aPeerID</td>
-<td>       String identifying the peer.  
+<td>aPIN</td>
+<td>       String containing the weak secret (PIN).  
 </td>
 </tr>
 
 <tr>
-<td>aPeerID</td>
-<td>       String identifying the peer.  
+<td>aGX3</td>
+<td>       Schnorr signature value g^x3, in hex representation.  
 </td>
 </tr>
 
 <tr>
-<td>aPeerID</td>
-<td>       String identifying the peer.  
+<td>aGV3</td>
+<td>       Schnorr signature value g^v3 (v3 is a random value), in hex  
+       representation.  
 </td>
 </tr>
 
 <tr>
-<td>aPeerID</td>
-<td>       String identifying the peer.  
+<td>aR3</td>
+<td>       Schnorr signature value r3 = v3 - x3 * h, in hex representation.  
 </td>
 </tr>
 
 <tr>
-<td>aPeerID</td>
-<td>       String identifying the peer.  
+<td>aGX4</td>
+<td>       Schnorr signature value g^x4, in hex representation.  
 </td>
 </tr>
 
 <tr>
-<td>aPeerID</td>
-<td>       String identifying the peer.  
+<td>aGV4</td>
+<td>       Schnorr signature value g^v4 (v4 is a random value), in hex  
+       representation.  
 </td>
 </tr>
 
 <tr>
-<td>aPeerID</td>
-<td>       String identifying the peer.  
+<td>aR4</td>
+<td>       Schnorr signature value r4 = v4 - x4 * h, in hex representation.  
 </td>
 </tr>
 
 <tr>
-<td>aPeerID</td>
-<td>       String identifying the peer.  
+<td>aA</td>
+<td>       Schnorr signature value A, in hex representation.  
 </td>
 </tr>
 
 <tr>
-<td>aPeerID</td>
-<td>       String identifying the peer.  
+<td>aGVA</td>
+<td>       Schnorr signature value g^va (va is a random value), in hex  
+       representation.  
 </td>
 </tr>
 
 <tr>
-<td>aPeerID</td>
-<td>       String identifying the peer.  
+<td>aRA</td>
+<td>       Schnorr signature value ra = va - xa * h, in hex representation.  
 </td>
 </tr>
 
@@ -210,26 +215,27 @@ and a 256 bit HMAC key. It returns a key confirmation value
 </tr>
 
 <tr>
-<td>aB</td>
-<td>       Schnorr signature value B, in hex representation.  
+<td>aGVB</td>
+<td>       Schnorr signature value g^vb (vb is a random value), in hex  
+       representation.  
 </td>
 </tr>
 
 <tr>
-<td>aB</td>
-<td>       Schnorr signature value B, in hex representation.  
+<td>aRB</td>
+<td>       Schnorr signature value rb = vb - xb * h, in hex representation.  
 </td>
 </tr>
 
 <tr>
-<td>aB</td>
-<td>       Schnorr signature value B, in hex representation.  
+<td>aAES256Key</td>
+<td>       The AES 256 encryption key, in base64 representation.  
 </td>
 </tr>
 
 <tr>
-<td>aB</td>
-<td>       Schnorr signature value B, in hex representation.  
+<td>aHMAC256Key</td>
+<td>       The 256 bit HMAC key, in base64 representation.  
 </td>
 </tr>
 

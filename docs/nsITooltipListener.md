@@ -43,14 +43,16 @@ corner of the browser area.
 </tr>
 
 <tr>
-<td>aXCoords</td>
-<td>The tooltip left edge X coordinate.  
+<td>aYCoords</td>
+<td>The tooltip top edge Y coordinate.  
 </td>
 </tr>
 
 <tr>
-<td>aXCoords</td>
-<td>The tooltip left edge X coordinate.  
+<td>aTipText</td>
+<td>The text to display in the tooltip, typically obtained  
+       from the TITLE attribute of the node (or containing parent)  
+       over which the pointer has been positioned.  
 </td>
 </tr>
 

@@ -48,23 +48,26 @@ must not be null, or you will crash.
 </tr>
 
 <tr>
-<td>aOutStream</td>
-<td>       The underlying output stream to which the converted strings will  
-       be written.  
+<td>aCharset</td>
+<td>       The character set to use for encoding the characters. A null  
+       charset will be interpreted as UTF-8.  
 </td>
 </tr>
 
 <tr>
-<td>aOutStream</td>
-<td>       The underlying output stream to which the converted strings will  
-       be written.  
+<td>aBufferSize</td>
+<td>       How many bytes to buffer. A value of 0 means that no bytes will be  
+       buffered. Implementations not supporting buffering may ignore  
+       this parameter.  
 </td>
 </tr>
 
 <tr>
-<td>aOutStream</td>
-<td>       The underlying output stream to which the converted strings will  
-       be written.  
+<td>aReplacementCharacter</td>
+<td>       The replacement character to use when an unsupported character is found.  
+       The character must be encodable in the selected character  
+       encoding; otherwise, attempts to write an unsupported character  
+       will throw NS_ERROR_LOSS_OF_SIGNIFICANT_DATA.  
 </td>
 </tr>
 

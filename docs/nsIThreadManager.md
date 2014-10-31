@@ -33,8 +33,8 @@ Create a new thread (a global, user PRThread).
 </tr>
 
 <tr>
-<td>creationFlags</td>
-<td>  Reserved for future use.  Pass 0.  
+<td>stackSize</td>
+<td>  Number of bytes to reserve for the thread's stack.  
 </td>
 </tr>
 

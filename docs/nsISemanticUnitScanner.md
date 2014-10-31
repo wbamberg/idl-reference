@@ -60,32 +60,32 @@ Get the begin / end offset of the next unit in the current text
 </tr>
 
 <tr>
-<td>text</td>
-<td>the text to be scanned  
+<td>length</td>
+<td>the number of characters in the text to be processed  
 </td>
 </tr>
 
 <tr>
-<td>text</td>
-<td>the text to be scanned  
+<td>pos</td>
+<td>the current position  
 </td>
 </tr>
 
 <tr>
-<td>text</td>
-<td>the text to be scanned  
+<td>isLastBuffer,</td>
+<td>the buffer is the last one  
 </td>
 </tr>
 
 <tr>
-<td>text</td>
-<td>the text to be scanned  
+<td>begin</td>
+<td>the begin offset of the next unit   
 </td>
 </tr>
 
 <tr>
-<td>text</td>
-<td>the text to be scanned  
+<td>begin</td>
+<td>the end offset of the next unit   
 </td>
 </tr>
 

@@ -68,29 +68,33 @@ code.
 
 <tr>
 <td></td>
-<td>aHeaderVal        a header string to get the value of a parameter   
-                          from.  
+<td>aParamName        the name of a MIME header parameter (e.g.   
+                          filename, name, charset). If empty,  returns   
+                          the first (possibly) _unnamed_ 'parameter'.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aHeaderVal        a header string to get the value of a parameter   
-                          from.  
+<td>aFallbackCharset  fallback charset to try if  the string after  
+                          RFC 2231/2047 decoding or the raw 8bit   
+                          string is not UTF-8  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aHeaderVal        a header string to get the value of a parameter   
-                          from.  
+<td>aTryLocaleCharset If set, makes yet another attempt   
+                          with the locale charset.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aHeaderVal        a header string to get the value of a parameter   
-                          from.  
+<td>aLang             If non-null, assigns it to a pointer   
+                          to a string containing the value of language   
+                          obtained from RFC 2231 parsing. Caller has to   
+                          nsMemory::Free it.  
 </td>
 </tr>
 
@@ -136,7 +140,8 @@ should use this function.
 
 <tr>
 <td></td>
-<td>aParamVal         a header field parameter to decode.  
+<td>aLang             will be set to the language part (possibly  
+                          empty).  
 </td>
 </tr>
 
@@ -184,19 +189,25 @@ Otherwise, this method would have been made static.
 
 <tr>
 <td></td>
-<td>aHeaderVal  a header string to get the value of a parameter from.  
+<td>aParamName  the name of a MIME header parameter (e.g.   
+                    filename, name, charset). If empty,  returns   
+                    the first (possibly) _unnamed_ 'parameter'.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aHeaderVal  a header string to get the value of a parameter from.  
+<td>aCharset    If non-null, it gets assigned a new pointer  
+                    to a string containing the value of charset obtained  
+                    from RFC 2231 parsing. Caller has to nsMemory::Free it.  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aHeaderVal  a header string to get the value of a parameter from.  
+<td>aLang       If non-null, it gets assigned a new pointer  
+                    to a string containing the value of language obtained  
+                    from RFC 2231 parsing. Caller has to nsMemory::Free it.  
 </td>
 </tr>
 
@@ -238,20 +249,23 @@ char * Mime_DecodeMimeHeader(char *header_val, const char *charset,
 </tr>
 
 <tr>
-<td>aHeaderVal</td>
-<td>a header value to decode  
+<td>aDefaultCharset</td>
+<td>MIME charset to use in place of MIME charset  
+                        specified in RFC 2047 style encoding  
+                        when <code>aOverrideCharset</code> is set.  
 </td>
 </tr>
 
 <tr>
-<td>aHeaderVal</td>
-<td>a header value to decode  
+<td>aOverrideCharset</td>
+<td>When set, overrides MIME charset specified   
+                        in RFC 2047 style encoding with <code>aDefaultCharset</code>  
 </td>
 </tr>
 
 <tr>
-<td>aHeaderVal</td>
-<td>a header value to decode  
+<td>aEatContinuation</td>
+<td>When set, removes CR/LF  
 </td>
 </tr>
 
@@ -299,20 +313,28 @@ char * mime_decode_filename(char *name, const char *charset,
 </tr>
 
 <tr>
-<td>aParamValue</td>
-<td>the value of a parameter to decode and convert  
+<td>aCharset</td>
+<td>charset obtained from RFC 2231 decoding  in which   
+                        <code>aParamValue</code> is encoded. If null,  
+                        indicates that it needs to try RFC 2047, instead.   
 </td>
 </tr>
 
 <tr>
-<td>aParamValue</td>
-<td>the value of a parameter to decode and convert  
+<td>aDefaultCharset</td>
+<td>MIME charset to use when aCharset is null and  
+                        cannot be obtained per RFC 2047 (most likely   
+                        because 'bare' string is  used.)  Besides, it   
+                        overrides aCharset/MIME charset obtained from   
+                        RFC 2047 if <code>aOverrideCharset</code>  is set.  
 </td>
 </tr>
 
 <tr>
-<td>aParamValue</td>
-<td>the value of a parameter to decode and convert  
+<td>aOverrideCharset</td>
+<td>When set, overrides MIME charset specified   
+                        in RFC 2047 style encoding with   
+                        <code>aDefaultCharset</code>  
 </td>
 </tr>
 

@@ -65,14 +65,16 @@ OPEN_UNBUFFERED
 </tr>
 
 <tr>
-<td>aFlags</td>
-<td>       optional transport specific flags.  
+<td>aSegmentSize</td>
+<td>       if OPEN_UNBUFFERED is not set, then this parameter specifies the  
+       size of each buffer segment (pass 0 to use default value).  
 </td>
 </tr>
 
 <tr>
-<td>aFlags</td>
-<td>       optional transport specific flags.  
+<td>aSegmentCount</td>
+<td>       if OPEN_UNBUFFERED is not set, then this parameter specifies the  
+       maximum number of buffer segments (pass 0 to use default value).  
 </td>
 </tr>
 
@@ -122,14 +124,16 @@ OPEN_UNBUFFERED
 </tr>
 
 <tr>
-<td>aFlags</td>
-<td>       optional transport specific flags.  
+<td>aSegmentSize</td>
+<td>       if OPEN_UNBUFFERED is not set, then this parameter specifies the  
+       size of each buffer segment (pass 0 to use default value).  
 </td>
 </tr>
 
 <tr>
-<td>aFlags</td>
-<td>       optional transport specific flags.  
+<td>aSegmentCount</td>
+<td>       if OPEN_UNBUFFERED is not set, then this parameter specifies the  
+       maximum number of buffer segments (pass 0 to use default value).  
 </td>
 </tr>
 
@@ -178,8 +182,10 @@ Set the transport event sink.
 </tr>
 
 <tr>
-<td>aSink</td>
-<td>       receives transport layer notifications  
+<td>aEventTarget</td>
+<td>       indicates the event target to which the notifications should  
+       be delivered.  if NULL, then the notifications may occur on  
+       any thread.  
 </td>
 </tr>
 

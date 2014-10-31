@@ -35,20 +35,24 @@ Transport status notification.
 </tr>
 
 <tr>
-<td>aTransport</td>
-<td>       the transport sending this status notification.  
+<td>aStatus</td>
+<td>       the transport status (resolvable to a string using  
+       nsIErrorService). See nsISocketTransport for socket specific  
+       status codes and more comments.  
 </td>
 </tr>
 
 <tr>
-<td>aTransport</td>
-<td>       the transport sending this status notification.  
+<td>aProgress</td>
+<td>       the amount of data either read or written depending on the value  
+       of the status code.  this value is relative to aProgressMax.  
 </td>
 </tr>
 
 <tr>
-<td>aTransport</td>
-<td>       the transport sending this status notification.  
+<td>aProgressMax</td>
+<td>       the maximum amount of data that will be read or written.  if  
+       unknown, 0xFFFFFFFF will be passed.  
 </td>
 </tr>
 

@@ -47,20 +47,30 @@ Result is fetched asynchronously via the callback.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>   The URI to search in cache or to open for writting.  
+<td>aIdExtension</td>
+<td>   Any string that will extend (distinguish) the entry.  Two entries  
+   with the same aURI but different aIdExtension will be comletely  
+   different entries.  If you don't know what aIdExtension should be  
+   leave it empty.  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>   The URI to search in cache or to open for writting.  
+<td>aFlags</td>
+<td>   OPEN_NORMALLY - open cache entry normally for read and write  
+   OPEN_TRUNCATE - delete any existing entry before opening it  
+   OPEN_READONLY - don't create an entry if there is none  
+   OPEN_PRIORITY - give this request a priority over others  
+   OPEN_BYPASS_IF_BUSY - backward compatibility only, LOAD_BYPASS_LOCAL_CACHE_IF_BUSY  
+   CHECK_MULTITHREADED - onCacheEntryCheck may be called on any thread, consumer   
+                         implementation is thread-safe  
 </td>
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>   The URI to search in cache or to open for writting.  
+<td>aCallback</td>
+<td>   The consumer that receives the result.  
+   IMPORTANT: The callback may be called sooner the method returns.  
 </td>
 </tr>
 
@@ -91,7 +101,7 @@ the new entry via a callback.
 </tr>
 
 <tr>
-<td>aURI</td>
+<td>aIdExtension</td>
 <td>@see asyncOpenURI  
 </td>
 </tr>

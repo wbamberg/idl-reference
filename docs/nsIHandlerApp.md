@@ -71,9 +71,8 @@ Launches the application with the specified URI.
 </tr>
 
 <tr>
-<td>aURI</td>
-<td>       The URI to launch this application with  
-</td>
+<td>aWindowContext</td>
+<td></td>
 </tr>
 
 </table>

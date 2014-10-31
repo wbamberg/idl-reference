@@ -96,8 +96,8 @@ the <query> element that was used to compile the query.
 </tr>
 
 <tr>
-<td>aQuery</td>
-<td>the query that matched  
+<td>aRuleNode</td>
+<td>the rule node that matched  
 </td>
 </tr>
 

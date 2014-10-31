@@ -86,8 +86,9 @@ Parse CSS and update the style sheet in place.
 </tr>
 
 <tr>
-<td>DOMCSSStyleSheet</td>
-<td>aSheet  
+<td>DOMString</td>
+<td>aInput  
+       The new source string for the style sheet.  
 </td>
 </tr>
 

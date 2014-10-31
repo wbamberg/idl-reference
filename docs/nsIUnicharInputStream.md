@@ -55,14 +55,14 @@ buffer
 </tr>
 
 <tr>
-<td>aWriter</td>
-<td>the "consumer" of the data to be read  
+<td>aClosure</td>
+<td>opaque parameter passed to writer   
 </td>
 </tr>
 
 <tr>
-<td>aWriter</td>
-<td>the "consumer" of the data to be read  
+<td>aCount</td>
+<td>the maximum number of characters to be read  
 </td>
 </tr>
 

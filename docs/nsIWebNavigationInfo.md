@@ -36,8 +36,13 @@ Query whether aType is supported.
 </tr>
 
 <tr>
-<td>aType</td>
-<td>the MIME type in question.  
+<td>aWebNav</td>
+<td>the nsIWebNavigation object for which the request  
+       is being made.  This is allowed to be null.  If it is non-null,  
+       the return value of this method may depend on the exact state of  
+       aWebNav and the values set through nsIWebBrowserSetup; otherwise  
+       the method will assume that the caller is interested in information  
+       about nsIWebNavigation objects in their default state.  
 </td>
 </tr>
 

@@ -39,22 +39,22 @@ Called when installation by websites is currently disabled.
 
 <tr>
 <td></td>
-<td>aOriginator  
-        The window or browser that triggered the installs  
+<td>aUri  
+        The URI of the site that triggered the installs  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aOriginator  
-        The window or browser that triggered the installs  
+<td>aInstalls  
+        The AddonInstalls that were blocked  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aOriginator  
-        The window or browser that triggered the installs  
+<td>aCount  
+        The number of AddonInstalls  
 </td>
 </tr>
 
@@ -89,22 +89,22 @@ install add-ons.
 
 <tr>
 <td></td>
-<td>aWindow  
-        The window or browser that triggered the installs  
+<td>aUri  
+        The URI of the site that triggered the installs  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aWindow  
-        The window or browser that triggered the installs  
+<td>aInstalls  
+        The AddonInstalls that were blocked  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aWindow  
-        The window or browser that triggered the installs  
+<td>aCount  
+        The number of AddonInstalls  
 </td>
 </tr>
 
@@ -138,22 +138,22 @@ Called when a website wants to ask the user to install add-ons.
 
 <tr>
 <td></td>
-<td>aWindow  
-        The window or browser that triggered the installs  
+<td>aUri  
+        The URI of the site that triggered the installs  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aWindow  
-        The window or browser that triggered the installs  
+<td>aInstalls  
+        The AddonInstalls that were requested  
 </td>
 </tr>
 
 <tr>
 <td></td>
-<td>aWindow  
-        The window or browser that triggered the installs  
+<td>aCount  
+        The number of AddonInstalls  
 </td>
 </tr>
 

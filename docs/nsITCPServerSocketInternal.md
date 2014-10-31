@@ -66,16 +66,17 @@ Listen on a port
 </tr>
 
 <tr>
-<td>localPort</td>
-<td>       The port of the server socket. Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
+<td>options</td>
+<td>       An object specifying one or more parameters which  
+       determine the details of the socket.  
 </td>
 </tr>
 
 <tr>
-<td>localPort</td>
-<td>       The port of the server socket. Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
+<td>backlog</td>
+<td>       The maximum length the queue of pending connections may grow to.  
+       This parameter may be silently limited by the operating system.  
+       Pass -1 to use the default value.  
 </td>
 </tr>
 

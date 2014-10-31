@@ -38,30 +38,27 @@ unless this method succeeds.
 </tr>
 
 <tr>
-<td>aServiceName</td>
-<td>       the service name, which may be null if not applicable (e.g., for  
-       NTLM, this parameter should be null).  
+<td>aServiceFlags</td>
+<td>       a bitwise-or of the REQ_ flags defined above (pass REQ_DEFAULT  
+       for default behavior).  
 </td>
 </tr>
 
 <tr>
-<td>aServiceName</td>
-<td>       the service name, which may be null if not applicable (e.g., for  
-       NTLM, this parameter should be null).  
+<td>aDomain</td>
+<td>       the authentication domain, which may be null if not applicable.  
 </td>
 </tr>
 
 <tr>
-<td>aServiceName</td>
-<td>       the service name, which may be null if not applicable (e.g., for  
-       NTLM, this parameter should be null).  
+<td>aUsername</td>
+<td>       the user's login name  
 </td>
 </tr>
 
 <tr>
-<td>aServiceName</td>
-<td>       the service name, which may be null if not applicable (e.g., for  
-       NTLM, this parameter should be null).  
+<td>aPassword</td>
+<td>       the user's password  
 </td>
 </tr>
 
@@ -98,23 +95,24 @@ Called to get the next token in a sequence of authentication steps.
 </tr>
 
 <tr>
-<td>aInToken</td>
-<td>       A buffer containing the input token (e.g., a challenge from a  
-       server).  This may be null.  
+<td>aInTokenLength</td>
+<td>       The length of the input token.  
 </td>
 </tr>
 
 <tr>
-<td>aInToken</td>
-<td>       A buffer containing the input token (e.g., a challenge from a  
-       server).  This may be null.  
+<td>aOutToken</td>
+<td>       If getNextToken succeeds, then aOutToken will point to a buffer  
+       to be sent in response to the server challenge.  The length of  
+       this buffer is given by aOutTokenLength.  The buffer at aOutToken  
+       must be recycled with a call to nsMemory::Free.  
 </td>
 </tr>
 
 <tr>
-<td>aInToken</td>
-<td>       A buffer containing the input token (e.g., a challenge from a  
-       server).  This may be null.  
+<td>aOutTokenLength</td>
+<td>       If getNextToken succeeds, then aOutTokenLength contains the  
+       length of the buffer (number of bytes) pointed to by aOutToken.  
 </td>
 </tr>
 
@@ -153,26 +151,27 @@ mechanism does not support security layers.
 </tr>
 
 <tr>
-<td>aInToken</td>
-<td>       A buffer containing the data to be sent to the server  
+<td>aInTokenLength</td>
+<td>       The length of the input token  
 </td>
 </tr>
 
 <tr>
-<td>aInToken</td>
-<td>       A buffer containing the data to be sent to the server  
+<td>confidential</td>
+<td>       If set to true, Wrap() will encrypt the data, otherwise data will  
+       just be integrity protected (checksummed)  
 </td>
 </tr>
 
 <tr>
-<td>aInToken</td>
-<td>       A buffer containing the data to be sent to the server  
+<td>aOutToken</td>
+<td>       A buffer containing the resulting data to be sent to the server  
 </td>
 </tr>
 
 <tr>
-<td>aInToken</td>
-<td>       A buffer containing the data to be sent to the server  
+<td>aOutTokenLength</td>
+<td>       The length of the output token buffer  
 </td>
 </tr>
 
@@ -207,20 +206,20 @@ authentication mechanism does not support security layers.
 </tr>
 
 <tr>
-<td>aInToken</td>
-<td>       A buffer containing the data received from the server  
+<td>aInTokenLength</td>
+<td>       The length of the input token  
 </td>
 </tr>
 
 <tr>
-<td>aInToken</td>
-<td>       A buffer containing the data received from the server  
+<td>aOutToken</td>
+<td>       A buffer containing the plaintext data from the server  
 </td>
 </tr>
 
 <tr>
-<td>aInToken</td>
-<td>       A buffer containing the data received from the server  
+<td>aOutTokenLength</td>
+<td>       The length of the output token buffer  
 </td>
 </tr>
 
