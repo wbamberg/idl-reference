@@ -40,6 +40,17 @@ XXX shouldn't aProtocolScheme be an ACString like nsIURI::scheme?
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if we have a handler and false otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### isExposedProtocol(aProtocolScheme) ###
   
 Check whether a handler for a specific protocol is "exposed" as a visible  
@@ -80,6 +91,17 @@ of the URI syntax, not part of the scheme itself (i.e. pass "mailto" not
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the handler, if any; otherwise a default handler  
+</td>
+</tr>
+
+</table>
+
 ### getProtocolHandlerInfoFromOS(aProtocolScheme, aFound) ###
   
 Given a scheme, looks up the protocol info from the OS.  This should be  
@@ -103,6 +125,17 @@ overridden by each OS's implementation.
 <tr>
 <td>aFound</td>
 <td>Was an OS default handler for this scheme found?  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An nsIHanderInfo for the protocol.  
 </td>
 </tr>
 

@@ -14,3 +14,15 @@ executed.
 @returns the next row from the result set.  This will be null when there  
          are no more results.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the next row from the result set.  This will be null when there  
+         are no more results.  
+</td>
+</tr>
+
+</table>

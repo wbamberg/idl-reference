@@ -27,3 +27,14 @@ url-decodes the string, and strips off the protocol.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>String containing the canonicalized URI.  
+</td>
+</tr>
+
+</table>

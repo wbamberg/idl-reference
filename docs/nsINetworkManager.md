@@ -189,6 +189,18 @@ Add host route to the specified network into routing table.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a Promise  
+        resolved if added; rejected, otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### removeHostRoute(network, host) ###
   
 Remove host route to the specified network from routing table.  
@@ -217,6 +229,18 @@ Remove host route to the specified network from routing table.
 <td>host</td>
 <td>       The host routed to the network.  
        The host will be resolved in advance if it's not an ip-address.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a Promise  
+        resolved if removed; rejected, otherwise.  
 </td>
 </tr>
 

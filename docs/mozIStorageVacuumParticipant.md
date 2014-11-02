@@ -27,6 +27,19 @@ database till onEndVacuum is received.
       data argument being either "vacuum-begin" or "vacuum-end".  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true to proceed with the vacuum, false if the participant wants to  
+        opt-out for now, it will be retried later.  Useful when participant  
+        is running some other heavy operation that can't be interrupted.  
+</td>
+</tr>
+
+</table>
+
 ### onEndVacuum(aSucceeded) ###
   
 Notifies when a vacuum operation ends.  

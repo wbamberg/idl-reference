@@ -25,6 +25,17 @@ Read 8-bits from the stream.
 @return that byte to be treated as a boolean.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>that byte to be treated as a boolean.  
+</td>
+</tr>
+
+</table>
+
 ### read8() ###
 
 ### read16() ###
@@ -119,6 +130,17 @@ Note: passing view.buffer, where view is an ArrayBufferView of an
 <td>the arraybuffer in which to store the results  
 Note: passing view.buffer, where view is an ArrayBufferView of an  
       ArrayBuffer, is not valid unless view.byteOffset == 0.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The number of bytes actually read into aArrayBuffer.  
 </td>
 </tr>
 

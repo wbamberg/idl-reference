@@ -164,6 +164,17 @@ Puts up a dialog with OK and Cancel buttons.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true for OK, false for Cancel  
+</td>
+</tr>
+
+</table>
+
 ### confirmCheck(aParent, aDialogTitle, aText, aCheckMsg, aCheckState) ###
   
 Puts up a dialog with OK and Cancel buttons and a labeled checkbox.  
@@ -215,6 +226,17 @@ Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
 <td>aCheckState</td>
 <td>       Contains the initial checked state of the checkbox when this method  
        is called and the final checked state after this method returns.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true for OK, false for Cancel  
 </td>
 </tr>
 
@@ -326,6 +348,17 @@ where "AAA" and "BBB" correspond to one of the button titles.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>index of the button pressed.  
+</td>
+</tr>
+
+</table>
+
 ### prompt(aParent, aDialogTitle, aText, aValue, aCheckMsg, aCheckState) ###
   
 Puts up a dialog with an edit field and an optional, labeled checkbox.  
@@ -391,6 +424,17 @@ Puts up a dialog with an edit field and an optional, labeled checkbox.
 <td>aCheckState</td>
 <td>       Contains the initial checked state of the checkbox when this method  
        is called and the final checked state after this method returns.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true for OK, false for Cancel.  
 </td>
 </tr>
 
@@ -481,6 +525,17 @@ labeled checkbox.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true for OK, false for Cancel.  
+</td>
+</tr>
+
+</table>
+
 ### promptPassword(aParent, aDialogTitle, aText, aPassword, aCheckMsg, aCheckState) ###
   
 Puts up a dialog with a password field and an optional, labeled checkbox.  
@@ -551,6 +606,17 @@ Puts up a dialog with a password field and an optional, labeled checkbox.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true for OK, false for Cancel.  
+</td>
+</tr>
+
+</table>
+
 ### select(aParent, aDialogTitle, aText, aCount, aSelectList, aOutSelection) ###
   
 Puts up a dialog box which has a list box of strings from which the user  
@@ -611,6 +677,17 @@ may make a single selection.
 <td>aOutSelection</td>
 <td>       Contains the index of the selected item in the list when this  
        method returns true.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true for OK, false for Cancel.  
 </td>
 </tr>
 

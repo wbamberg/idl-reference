@@ -37,6 +37,17 @@ or use one from the accessibility cache if it already exists.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The nsIAccessible for the given DOM node.  
+</td>
+</tr>
+
+</table>
+
 ### getStringRole(aRole) ###
   
 Returns accessible role as a string.  
@@ -102,6 +113,17 @@ Get the type of accessible event as a string.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>- accessible event type presented as human readable string  
+</td>
+</tr>
+
+</table>
+
 ### getStringRelationType(aRelationType) ###
   
 Get the type of accessible relation as a string.  
@@ -117,6 +139,17 @@ Get the type of accessible relation as a string.
 <tr>
 <td>aRelationType</td>
 <td>- the accessible relation type constant  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>- accessible relation type presented as human readable string  
 </td>
 </tr>
 
@@ -144,6 +177,17 @@ Return an accessible for the given DOM node from the cache.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>cached accessible for the given DOM node if any  
+</td>
+</tr>
+
+</table>
+
 ### createAccessiblePivot(aRoot) ###
   
 Create a new pivot for tracking a position and traversing a subtree.  
@@ -159,6 +203,17 @@ Create a new pivot for tracking a position and traversing a subtree.
 <tr>
 <td>aRoot</td>
 <td>[in] the accessible root for the pivot  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a new pivot  
 </td>
 </tr>
 

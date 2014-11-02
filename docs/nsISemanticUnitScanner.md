@@ -90,3 +90,14 @@ Get the begin / end offset of the next unit in the current text
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>has more unit in the current text  
+</td>
+</tr>
+
+</table>

@@ -17,6 +17,17 @@ interface.
 @return the underlying NetAddr struct.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the underlying NetAddr struct.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### family ###

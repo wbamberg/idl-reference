@@ -82,6 +82,17 @@ to any possible backup scheme for creating the window.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the new window. Will be null if canceled or an error occurred.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### PARENT_IS_LOADING_OR_RUNNING_TIMEOUT ###

@@ -157,3 +157,17 @@ to have the caller create a brand-new window.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A window the caller should use or null if the caller should just  
+        create a new window.  The returned window may be newly opened by  
+        the nsIWindowProvider implementation or may be a window that  
+        already existed.  
+</td>
+</tr>
+
+</table>

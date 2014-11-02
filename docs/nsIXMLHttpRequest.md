@@ -62,6 +62,18 @@ requests.
          The empty string if the response has not yet been received.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A string containing all of the response headers.  
+         The empty string if the response has not yet been received.  
+</td>
+</tr>
+
+</table>
+
 ### getResponseHeader(header) ###
   
 Returns the text of the header with the specified name for  
@@ -80,6 +92,19 @@ HTTP requests.
 <tr>
 <td>header</td>
 <td>The name of the header to retrieve  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A string containing the text of the header specified.  
+         NULL if the response has not yet been received or the  
+         header does not exist in the response.  
 </td>
 </tr>
 

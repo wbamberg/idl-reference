@@ -273,6 +273,20 @@ returns values:
  passes NS_SUCCEEDED macro)  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The row at the requested index  
+                   Returns null if there are no rows in table  
+(in C++ returns: NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
+ passes NS_SUCCEEDED macro)  
+</td>
+</tr>
+
+</table>
+
 ### getNextRow(aTableElement) ###
  Get the next row element starting the search from aTableElement  
   
@@ -292,6 +306,21 @@ returns values:
 <tr>
 <td>aTableElement</td>
 <td>Any TR or child-of-TR element in the document  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The row to start search from  
+                   and the row returned from the search  
+                   Returns null if there isn't another row  
+(in C++ returns: NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
+ passes NS_SUCCEEDED macro)  
 </td>
 </tr>
 
@@ -404,6 +433,17 @@ Used for aDirection param in SetSelectionAfterTableEdit
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The table element (table, row, or first selected cell)  
+</td>
+</tr>
+
+</table>
+
 ### getSelectedCellsType(aElement) ###
  Generally used after GetSelectedOrParentTableElement  
   to test if selected cells are complete rows or columns  
@@ -436,6 +476,26 @@ Used for aDirection param in SetSelectionAfterTableEdit
                           inside a table  
                           Used to get enclosing table.   
                           If null, selection's anchorNode is used  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>    0                        aCellElement was not a cell  
+                             (returned result = NS_ERROR_FAILURE)  
+    TABLESELECTION_CELL      There are 1 or more cells selected but  
+                             complete rows or columns are not selected  
+    TABLESELECTION_ROW       All cells are in 1 or more rows  
+                             and in each row, all cells selected  
+                             Note: This is the value if all rows  
+                             (thus all cells) are selected  
+    TABLESELECTION_COLUMN    All cells are in 1 or more columns  
+                             and in each column, all cells are selected  
 </td>
 </tr>
 

@@ -35,6 +35,17 @@ links.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the nsIURI object containing the specifications for the URI.  
+</td>
+</tr>
+
+</table>
+
 ### getAnchor(index) ###
   
 Returns a reference to the object at the given index.  
@@ -51,6 +62,17 @@ Returns a reference to the object at the given index.
 <tr>
 <td>index</td>
 <td>The 0-based index whose object is to be returned.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the nsIAccessible object at the desired index.  
 </td>
 </tr>
 

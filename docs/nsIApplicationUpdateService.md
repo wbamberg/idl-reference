@@ -126,6 +126,17 @@ Get the Active Updates directory
 @returns An nsIFile for the active updates directory.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An nsIFile for the active updates directory.  
+</td>
+</tr>
+
+</table>
+
 ### pauseDownload() ###
   
 Pauses the active update download process  

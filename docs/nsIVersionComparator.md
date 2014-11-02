@@ -61,3 +61,16 @@ Compare two version strings
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>< 0 if A < B  
+         = 0 if A == B  
+         > 0 if A > B  
+</td>
+</tr>
+
+</table>

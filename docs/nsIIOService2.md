@@ -47,6 +47,17 @@ Creates a channel for a given URI.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>reference to the new nsIChannel object  
+</td>
+</tr>
+
+</table>
+
 ### newChannelFromURIWithProxyFlags(aURI, aProxyURI, aProxyFlags) ###
   
 Creates a channel for a given URI.  
@@ -80,6 +91,17 @@ Creates a channel for a given URI.
 <td>aProxyFlags</td>
 <td>flags from nsIProtocolProxyService to use  
        when resolving proxies for this new channel  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>reference to the new nsIChannel object  
 </td>
 </tr>
 

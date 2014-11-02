@@ -170,6 +170,17 @@ Encode the document into a string.
 @return The document encoded into a string.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The document encoded into a string.  
+</td>
+</tr>
+
+</table>
+
 ### encodeToStringWithContext(aContextString, aInfoString) ###
   
 Encode the document into a string. Stores the extra context information  
@@ -197,6 +208,17 @@ into the two arguments.
 <td>[OUT]</td>
 <td>aInfoString The string where extra context info will  
              be stored.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The document encoded as a string.  
 </td>
 </tr>
 
@@ -231,6 +253,17 @@ Encode the document into a string of limited size.
                   may need to close some tags after they stop  
                   encoding new data, or finish a line (72 columns  
                   by default for the plain text serializer).  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The document encoded into a string.  
 </td>
 </tr>
 

@@ -36,6 +36,17 @@ name reverts to 'http://127.0.0.1' with the associated server's port.
   true if the given name was a name for this server, false otherwise  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>  true if the given name was a name for this server, false otherwise  
+</td>
+</tr>
+
+</table>
+
 ### has(scheme, host, port) ###
   
 Returns true if the given name is in this, false otherwise.  

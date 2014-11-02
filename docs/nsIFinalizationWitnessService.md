@@ -39,3 +39,14 @@ broadcast.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An object with a single method |forget()|.  
+</td>
+</tr>
+
+</table>

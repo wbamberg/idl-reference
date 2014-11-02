@@ -47,6 +47,17 @@ associated with this file extension.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The MIME type, if any.  
+</td>
+</tr>
+
+</table>
+
 ### getTypeFromURI(aURI) ###
   
 Retrieves a ACString representation of the MIME type  
@@ -65,6 +76,17 @@ the type via server headers or byte scanning is made.
 <tr>
 <td></td>
 <td>The URI the user wants MIME info on.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The MIME type, if any.  
 </td>
 </tr>
 

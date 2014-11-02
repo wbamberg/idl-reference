@@ -94,6 +94,17 @@ Retrieves all URLs tagged with the given tag.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Array of uris tagged with aTag.  
+</td>
+</tr>
+
+</table>
+
 ### getTagsForURI(aURI, length, aTags) ###
   
 Retrieves all tags set for the given URL.  
@@ -110,6 +121,17 @@ Retrieves all tags set for the given URL.
 <tr>
 <td>aURI</td>
 <td>       a URL.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>array of tags (sorted by name).  
 </td>
 </tr>
 

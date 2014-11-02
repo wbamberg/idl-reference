@@ -166,6 +166,17 @@ Set Alarm of usage per interface
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>false if there is no interface registered for the networkType param.  
+</td>
+</tr>
+
+</table>
+
 ### setWifiOperationMode(interfaceName, mode, callback) ###
   
 Reload Wifi firmware to specific operation mode.  
@@ -410,6 +421,18 @@ Add host route.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A deferred promise that resolves on success or rejects with a  
+        specified reason otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### removeHostRoute(interfaceName, gateway, host) ###
   
 Remove host route.  
@@ -444,6 +467,18 @@ Remove host route.
 <tr>
 <td>host</td>
 <td>       Host ip we want to remove route for.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A deferred promise that resolves on success or rejects with a  
+        specified reason otherwise.  
 </td>
 </tr>
 

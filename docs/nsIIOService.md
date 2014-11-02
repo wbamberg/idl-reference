@@ -35,6 +35,17 @@ Returns a protocol handler for a given URI scheme.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>reference to corresponding nsIProtocolHandler  
+</td>
+</tr>
+
+</table>
+
 ### getProtocolFlags(aScheme) ###
   
 Returns the protocol flags for a given scheme.  
@@ -50,6 +61,17 @@ Returns the protocol flags for a given scheme.
 <tr>
 <td>aScheme</td>
 <td>the URI scheme  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>value of corresponding nsIProtocolHandler::protocolFlags  
 </td>
 </tr>
 
@@ -89,6 +111,17 @@ splitting this  into newDirURI() and newActualFileURI().
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>reference to a new nsIURI object  
+</td>
+</tr>
+
+</table>
+
 ### newChannelFromURI2(aURI, aLoadingNode, aLoadingPrincipal, aTriggeringPrincipal, aSecurityFlags, aContentPolicyType) ###
   
 Creates a channel for a given URI.  
@@ -109,6 +142,17 @@ Creates a channel for a given URI.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>reference to the new nsIChannel object  
+</td>
+</tr>
+
+</table>
+
 ### newChannelFromURI(aURI) ###
   
 Creates a channel for a given URI.  
@@ -124,6 +168,17 @@ Creates a channel for a given URI.
 <tr>
 <td>aURI</td>
 <td>nsIURI from which to make a channel  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>reference to the new nsIChannel object  
 </td>
 </tr>
 
@@ -198,6 +253,17 @@ is provided purely as an optimization.
 <tr>
 <td>aSpec</td>
 <td>the URL string to parse  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>URL scheme  
 </td>
 </tr>
 

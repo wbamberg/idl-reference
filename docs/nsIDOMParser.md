@@ -42,6 +42,18 @@ The string passed in is parsed into a DOM document.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The DOM document created as a result of parsing the   
+         string  
+</td>
+</tr>
+
+</table>
+
 ### parseFromBuffer(buf, bufLen, contentType) ###
   
 The buffer is parsed into a DOM document.  
@@ -73,6 +85,18 @@ The charset is determined from the xml entity decl.
 <tr>
 <td>contentType</td>
 <td>The content type of the data (see parseFromStream)  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The DOM document created as a result of parsing the   
+         string  
 </td>
 </tr>
 
@@ -123,6 +147,18 @@ Not accessible from web content.
 <td>The content type of the string - either text/xml,  
                    application/xml, or application/xhtml+xml.  
                    Must not be NULL.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The DOM document created as a result of parsing the   
+         stream  
 </td>
 </tr>
 

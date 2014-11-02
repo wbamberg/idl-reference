@@ -28,6 +28,18 @@ Gets the service URL Spec, with the loading document URI encoded in it.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The URI of the service with the loading document URI encoded in   
+         it.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### contentType ###

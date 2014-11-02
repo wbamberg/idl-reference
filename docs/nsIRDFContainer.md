@@ -53,6 +53,17 @@ removal.
 @return the element that was removed.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the element that was removed.  
+</td>
+</tr>
+
+</table>
+
 ### IndexOf(aElement) ###
   
 Determine the index of an element in the container.  
@@ -61,6 +72,19 @@ Determine the index of an element in the container.
 the element is not contained in the container, this function  
 returns '-1'.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The index of the specified element in the container. If  
+the element is not contained in the container, this function  
+returns '-1'.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

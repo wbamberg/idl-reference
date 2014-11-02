@@ -308,6 +308,21 @@ Get the permission object associated with the given principal and action.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The matching permission object, or null if no matching object  
+         was found. No matching object is equivalent to UNKNOWN_ACTION.  
+@note Clients in general should prefer the test* methods unless they  
+      need to know the specific stored details.  
+@note This method will always return null for the system principal.  
+</td>
+</tr>
+
+</table>
+
 ### addrefAppId(appId) ###
   
 Increment or decrement our "refcount" of an app id.  

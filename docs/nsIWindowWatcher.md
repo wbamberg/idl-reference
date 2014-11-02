@@ -98,6 +98,17 @@ can be null.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the new window  
+</td>
+</tr>
+
+</table>
+
 ### registerNotification(aObserver) ###
  Clients of this service can register themselves to be notified  
 when a window is opened or closed (added to or removed from this  
@@ -155,6 +166,18 @@ guaranteeing that each will be visited exactly once.
 can be QIed to an nsIDOMWindow  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an enumerator which will itself return nsISupports objects which  
+can be QIed to an nsIDOMWindow  
+</td>
+</tr>
+
+</table>
+
 ### getNewPrompter(aParent) ###
  Return a newly created nsIPrompt implementation.  
 @param aParent the parent window used for posing alerts. can be null.  
@@ -173,6 +196,17 @@ can be QIed to an nsIDOMWindow
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a new nsIPrompt object  
+</td>
+</tr>
+
+</table>
+
 ### getNewAuthPrompter(aParent) ###
  Return a newly created nsIAuthPrompt implementation.  
 @param aParent the parent window used for posing alerts. can be null.  
@@ -186,6 +220,17 @@ can be QIed to an nsIDOMWindow
 <tr>
 <td>aParent</td>
 <td>the parent window used for posing alerts. can be null.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a new nsIAuthPrompt object  
 </td>
 </tr>
 
@@ -232,6 +277,17 @@ this method will do that.
 <tr>
 <td>aWindow</td>
 <td>the DOM window whose chrome window the caller needs  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the corresponding chrome window  
 </td>
 </tr>
 

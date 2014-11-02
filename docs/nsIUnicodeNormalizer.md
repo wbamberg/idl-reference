@@ -39,6 +39,17 @@ Reference: Unicode Standard, TR15, Unicode Normalization Forms
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>NS_OK for success,   
+</td>
+</tr>
+
+</table>
+
 ### NormalizeUnicodeNFC(aSrc, aDest) ###
 
 ### NormalizeUnicodeNFKD(aSrc, aDest) ###

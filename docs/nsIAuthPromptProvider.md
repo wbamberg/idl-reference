@@ -39,6 +39,17 @@ available for the given reason.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an nsIAuthPrompt2 interface, or throws NS_ERROR_NOT_AVAILABLE  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### PROMPT_NORMAL ###

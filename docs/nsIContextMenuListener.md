@@ -68,6 +68,17 @@ possible.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><CODE>NS_OK</CODE> always.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### CONTEXT_NONE ###

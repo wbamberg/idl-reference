@@ -32,6 +32,17 @@ respect to "http://images.google.com/", but "http://mail.yahoo.com/" and
         and is not a file:// URI.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if aFirstURI is third party with respect to aSecondURI.  
+</td>
+</tr>
+
+</table>
+
 ### isThirdPartyWindow(aWindow, aURI) ###
   
 isThirdPartyWindow  
@@ -86,6 +97,18 @@ a URI of "http://mozilla.com", the result will be true.
 <td>aURI</td>
 <td>       A URI to test against. If null, the URI of the principal  
        associated with 'aWindow' will be used.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if 'aURI' is third party with respect to any of the URIs  
+        associated with aWindow and its same-type parents.  
 </td>
 </tr>
 
@@ -155,6 +178,19 @@ a URI of "http://mozilla.com", the result will be true.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if aURI is third party with respect to the channel URI or any  
+        of the URIs associated with the same-type window hierarchy of the  
+        channel.  
+</td>
+</tr>
+
+</table>
+
 ### getBaseDomain(aHostURI) ###
   
 getBaseDomain  
@@ -180,6 +216,17 @@ special cases elided above.
 <tr>
 <td>aHostURI</td>
 <td>       The URI to analyze.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the base domain.  
 </td>
 </tr>
 

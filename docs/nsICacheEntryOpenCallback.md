@@ -48,6 +48,17 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>   State of the entry, see the constants just above.  
+</td>
+</tr>
+
+</table>
+
 ### onCacheEntryAvailable(aEntry, aNew, aApplicationCache, aResult) ###
   
 Callback giving actual result of asyncOpenURI.  It may give consumer the cache   

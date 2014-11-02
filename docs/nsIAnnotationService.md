@@ -165,6 +165,18 @@ Use getAnnotationInfo if you need this along with the mime-type etc.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>one of the TYPE_* constants above  
+@throws if the annotation is not set  
+</td>
+</tr>
+
+</table>
+
 ### getItemAnnotationType(aItemId, aName) ###
 
 ### getPagesWithAnnotation(name, resultCount, results) ###
@@ -190,6 +202,17 @@ Returns a list of mozIAnnotation(s), having a given annotation name.
 <tr>
 <td>name</td>
 <td>       The annotation to search for.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>list of mozIAnnotation objects.  
 </td>
 </tr>
 

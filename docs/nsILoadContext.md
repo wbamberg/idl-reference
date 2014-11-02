@@ -35,6 +35,18 @@ Check whether the load is happening in a particular type of application.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether there is some ancestor of the associatedWindow that is of  
+        the given app type.  
+</td>
+</tr>
+
+</table>
+
 ### SetPrivateBrowsing(aInPrivateBrowsing) ###
   
 Set the private browsing state of the load context, meant to be used internally.  

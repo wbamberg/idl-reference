@@ -32,6 +32,17 @@ Get the value for the given category's entry.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The value.  
+</td>
+</tr>
+
+</table>
+
 ### addCategoryEntry(aCategory, aEntry, aValue, aPersist, aReplace) ###
   
 Add an entry to a category.  
@@ -74,6 +85,17 @@ Add an entry to a category.
 <tr>
 <td>aReplace</td>
 <td>Should we replace an existing entry?  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Previous entry, if any  
 </td>
 </tr>
 
@@ -149,6 +171,18 @@ Enumerate the entries in a category.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a simple enumerator, each result QIs to  
+        nsISupportsCString.  
+</td>
+</tr>
+
+</table>
+
 ### enumerateCategories() ###
   
 Enumerate all existing categories  
@@ -164,6 +198,18 @@ Enumerate all existing categories
 <tr>
 <td>aCategory</td>
 <td>The category to be enumerated.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a simple enumerator, each result QIs to  
+        nsISupportsCString.  
 </td>
 </tr>
 

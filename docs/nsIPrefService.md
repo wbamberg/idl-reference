@@ -122,6 +122,17 @@ returned if one exists, otherwise a default value will be returned.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>nsIPrefBranch The object representing the requested branch.  
+</td>
+</tr>
+
+</table>
+
 ### getDefaultBranch(aPrefRoot) ###
   
 Call to get a Preferences "Branch" which accesses only the default   
@@ -160,6 +171,17 @@ make sense when applied to user set preferences.
                  "browser.startup.homepage_override" by simply requesting  
                  "page", "homepage", or "homepage_override". nullptr or ""   
                  may be used to access to the entire preference "tree".  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>nsIPrefBranch The object representing the requested default branch.  
 </td>
 </tr>
 

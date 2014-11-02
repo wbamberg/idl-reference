@@ -35,6 +35,17 @@ a string.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The serialized subtree in the form of a Unicode string  
+</td>
+</tr>
+
+</table>
+
 ### serializeToStream(root, stream, charset) ###
   
 The subtree rooted by the specified element is serialized to  

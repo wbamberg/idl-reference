@@ -66,3 +66,14 @@ Returns a replacement property descriptor for a browser object.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A property descriptor or null.  
+</td>
+</tr>
+
+</table>

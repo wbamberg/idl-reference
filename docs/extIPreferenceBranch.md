@@ -35,6 +35,17 @@ Check to see if a preference exists.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the preference exists, false if not  
+</td>
+</tr>
+
+</table>
+
 ### get(aName) ###
   
 Gets an object representing a preference  
@@ -51,6 +62,17 @@ Gets an object representing a preference
 <td></td>
 <td>aName  
          The name of preference  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a preference object, or null if the preference does not exist  
 </td>
 </tr>
 
@@ -83,6 +105,18 @@ the preference does not exist.
 <td></td>
 <td>aDefaultValue  
          The value to return if preference does not exist  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>value of the preference or the given default value if preference  
+         does not exists.  
 </td>
 </tr>
 

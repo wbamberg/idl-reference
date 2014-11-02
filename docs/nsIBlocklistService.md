@@ -54,6 +54,18 @@ Determine if an item is blocklisted
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the item is compatible with this version of the  
+         application or this version of the toolkit, false, otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### getAddonBlocklistState(addon, appVersion, toolkitVersion) ###
   
 Determine the blocklist state of an add-on  
@@ -96,6 +108,17 @@ Determine the blocklist state of an add-on
          The version of the toolkit we are checking in the blocklist.  
          If this parameter is null, the version of the running toolkit  
          is used.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The STATE constant.  
 </td>
 </tr>
 
@@ -148,6 +171,17 @@ Determine the blocklist state of a plugin
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The STATE constant.  
+</td>
+</tr>
+
+</table>
+
 ### getAddonBlocklistURL(addon, appVersion, toolkitVersion) ###
   
 Determine the blocklist web page of an add-on.  
@@ -164,6 +198,17 @@ Determine the blocklist web page of an add-on.
 <td></td>
 <td>addon  
          The addon item whose url is required.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The URL of the description page.  
 </td>
 </tr>
 
@@ -190,6 +235,17 @@ Determine the blocklist web page of a plugin.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The URL of the description page.  
+</td>
+</tr>
+
+</table>
+
 ### getPluginInfoURL(plugin) ###
   
 Determine the blocklist infoURL of a plugin.  
@@ -207,6 +263,18 @@ Determine the blocklist infoURL of a plugin.
 <td></td>
 <td>plugin  
          The blocked plugin that we are determining the infoURL for.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The preferred URL to present the user, or |null| if  
+         it is not available.  
 </td>
 </tr>
 

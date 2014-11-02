@@ -186,6 +186,17 @@ DNS lookup will be triggered.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>number of bytes written. (0 or dataLength)  
+</td>
+</tr>
+
+</table>
+
 ### sendWithAddr(addr, data, dataLength) ###
   
 sendWithAddr  
@@ -222,6 +233,17 @@ Send out the datagram to specified remote host and port.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>number of bytes written. (0 or dataLength)  
+</td>
+</tr>
+
+</table>
+
 ### sendWithAddress(addr, data, dataLength) ###
   
 sendWithAddress  
@@ -253,6 +275,17 @@ Send out the datagram to specified remote address and port.
 <tr>
 <td>dataLength</td>
 <td>The maximum number of bytes to be written.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>number of bytes written. (0 or dataLength)  
 </td>
 </tr>
 

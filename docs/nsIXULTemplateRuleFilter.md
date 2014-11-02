@@ -46,3 +46,14 @@ may still match another rule.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the rule matches  
+</td>
+</tr>
+
+</table>

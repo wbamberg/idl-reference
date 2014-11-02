@@ -63,6 +63,20 @@ the IID is that of the interface.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><CODE>NS_OK</CODE>, listener was successfully added;  
+        <CODE>NS_ERROR_INVALID_ARG</CODE>, one of the arguments was  
+        invalid or the object did not implement the interface  
+        specified by the IID.  
+</td>
+</tr>
+
+</table>
+
 ### removeWebBrowserListener(aListener, aIID) ###
   
 Removes a previously registered listener.  
@@ -93,6 +107,19 @@ Removes a previously registered listener.
 <td>aIID</td>
 <td>The IID of the interface on the listener that will  
                  no longer be called.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td><CODE>NS_OK</CODE>, listener was successfully removed;  
+        <CODE>NS_ERROR_INVALID_ARG</CODE> arguments was invalid or  
+        the object did not implement the interface specified by the IID.  
 </td>
 </tr>
 

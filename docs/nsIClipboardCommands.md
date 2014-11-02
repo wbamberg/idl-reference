@@ -20,6 +20,18 @@ Returns whether there is a selection and it is not read-only.
          <code>false</code> otherwise.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>true</code> if the current selection can be cut,  
+         <code>false</code> otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### canCopySelection() ###
   
 Returns whether there is a selection and it is copyable.  
@@ -27,6 +39,18 @@ Returns whether there is a selection and it is copyable.
 @return <code>true</code> if there is a selection,  
          <code>false</code> otherwise.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>true</code> if there is a selection,  
+         <code>false</code> otherwise.  
+</td>
+</tr>
+
+</table>
 
 ### canCopyLinkLocation() ###
   
@@ -36,6 +60,18 @@ Returns whether we can copy a link location.
           <code>false</code> otherwise.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>true</code> if a link is selected,  
+          <code>false</code> otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### canCopyImageLocation() ###
   
 Returns whether we can copy an image location.  
@@ -44,6 +80,18 @@ Returns whether we can copy an image location.
 <code>false</code> otherwise.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>true</code> if an image is selected,  
+<code>false</code> otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### canCopyImageContents() ###
   
 Returns whether we can copy an image's contents.  
@@ -51,6 +99,18 @@ Returns whether we can copy an image's contents.
 @return <code>true</code> if an image is selected,  
          <code>false</code> otherwise  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>true</code> if an image is selected,  
+         <code>false</code> otherwise  
+</td>
+</tr>
+
+</table>
 
 ### canPaste() ###
   
@@ -61,6 +121,19 @@ pasted and if the current selection is not read-only.
          and the current selection is not read-only,  
          <code>false</code> otherwise  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>true</code> there is data to paste on the clipboard  
+         and the current selection is not read-only,  
+         <code>false</code> otherwise  
+</td>
+</tr>
+
+</table>
 
 ### cutSelection() ###
   

@@ -57,6 +57,17 @@ Retrieves a specific command line parameter.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the parameter string.  
+</td>
+</tr>
+
+</table>
+
 ### parameterExists(param) ###
   
 Checks to see if a parameter exists in the command line  
@@ -74,6 +85,17 @@ parameter list.
 <tr>
 <td>param</td>
 <td>the parameter to search for.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>TRUE if the parameter exists in the current list.   
 </td>
 </tr>
 

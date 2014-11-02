@@ -29,6 +29,17 @@ copy operator equivalent that takes another region
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### setToRect(aX, aY, aWidth, aHeight) ###
   
 copy operator equivalent that takes a rect  
@@ -71,6 +82,17 @@ copy operator equivalent that takes a rect
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### intersectRegion(aRegion) ###
   
 destructively intersect another region with this one  
@@ -87,6 +109,17 @@ destructively intersect another region with this one
 <tr>
 <td></td>
 <td>region to intersect  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
 </td>
 </tr>
 
@@ -134,6 +167,17 @@ destructively intersect a rect with this region
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### unionRegion(aRegion) ###
   
 destructively union another region with this one  
@@ -150,6 +194,17 @@ destructively union another region with this one
 <tr>
 <td></td>
 <td>region to union  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
 </td>
 </tr>
 
@@ -197,6 +252,17 @@ destructively union a rect with this region
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### subtractRegion(aRegion) ###
   
 destructively subtract another region with this one  
@@ -213,6 +279,17 @@ destructively subtract another region with this one
 <tr>
 <td></td>
 <td>region to subtract  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
 </td>
 </tr>
 
@@ -260,6 +337,17 @@ destructively subtract a rect from this region
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### isEmpty() ###
   
 is this region empty? i.e. does it contain any pixels  
@@ -276,6 +364,17 @@ is this region empty? i.e. does it contain any pixels
 <tr>
 <td></td>
 <td>none  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>returns whether the region is empty  
 </td>
 </tr>
 
@@ -298,6 +397,17 @@ the same pixels
 <tr>
 <td></td>
 <td>region to compare  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether the regions are identical  
 </td>
 </tr>
 
@@ -346,6 +456,17 @@ rectangle that completely contains the region.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### offset(aXOffset, aYOffset) ###
   
 offsets the region in x and y  
@@ -374,12 +495,36 @@ offsets the region in x and y
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### getRects() ###
   
 @return null if there are no rects,  
 @return flat array of rects,ie [x1,y1,width1,height1,x2...].  
 The result will contain bogus data if values don't fit in 31 bit  
 /  
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>flat array of rects,ie [x1,y1,width1,height1,x2...].  
+The result will contain bogus data if values don't fit in 31 bit  
+/  
+</td>
+</tr>
+
+</table>
 
 ### containsRect(aX, aY, aWidth, aHeight) ###
   
@@ -397,6 +542,17 @@ does the region intersect the rectangle?
 <tr>
 <td></td>
 <td>rect to check for containment  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the region intersects the rect  
 </td>
 </tr>
 

@@ -43,6 +43,18 @@ Called to determine the type of a specific preference.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>long     A value representing the type of the preference. This  
+                 value will be PREF_STRING, PREF_INT, or PREF_BOOL.  
+</td>
+</tr>
+
+</table>
+
 ### getBoolPref(aPrefName) ###
   
 Called to get the state of an individual boolean preference.  
@@ -61,6 +73,17 @@ Called to get the state of an individual boolean preference.
 <tr>
 <td>aPrefName</td>
 <td>The boolean preference to get the state of.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>boolean  The value of the requested boolean preference.  
 </td>
 </tr>
 
@@ -122,6 +145,17 @@ are converted to floating point numbers.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>float  The value of the requested floating point preference.  
+</td>
+</tr>
+
+</table>
+
 ### getCharPref(aPrefName) ###
   
 Called to get the state of an individual string preference.  
@@ -140,6 +174,17 @@ Called to get the state of an individual string preference.
 <tr>
 <td>aPrefName</td>
 <td>The string preference to retrieve.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>string   The value of the requested string preference.  
 </td>
 </tr>
 
@@ -194,6 +239,17 @@ Called to get the state of an individual integer preference.
 <tr>
 <td>aPrefName</td>
 <td>The integer preference to get the value of.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>long     The value of the requested integer preference.  
 </td>
 </tr>
 
@@ -415,6 +471,18 @@ the preference will not be saved to a file by nsIPrefService.savePrefFile.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>boolean  true  The preference has a user set value.  
+                 false The preference only has a default value.  
+</td>
+</tr>
+
+</table>
+
 ### prefIsLocked(aPrefName) ###
   
 Called to check if a specific preference is locked. If a preference is  
@@ -440,6 +508,18 @@ effect, always operates on the default branch.
 <tr>
 <td>aPrefName</td>
 <td>The preference to be tested.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>boolean  true  The preference is locked.  
+                 false The preference is not locked.  
 </td>
 </tr>
 

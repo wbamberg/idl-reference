@@ -134,6 +134,17 @@ Can be called any time.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>always NS_OK  
+</td>
+</tr>
+
+</table>
+
 ### setCaretReadOnly(readOnly) ###
   
 Set the caret readonly or not. An readonly caret will  
@@ -149,6 +160,17 @@ draw but not blink when made visible.
 <tr>
 <td>aReadOnly</td>
 <td>PR_TRUE to enable caret.  PR_FALSE to disable.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>always NS_OK  
 </td>
 </tr>
 
@@ -174,6 +196,18 @@ Gets the current state of the caret.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>if aOutEnabled==null, returns NS_ERROR_INVALID_ARG  
+          else NS_OK  
+</td>
+</tr>
+
+</table>
+
 ### setCaretVisibilityDuringSelection(visibility) ###
   
 Show the caret even in selections. By default the caret is hidden unless the  
@@ -189,6 +223,17 @@ selection is collapsed. Use this function to show the caret even in selections.
 <tr>
 <td>aVisibility</td>
 <td>PR_TRUE to show the caret in selections.  PR_FALSE to hide.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>always NS_OK  
 </td>
 </tr>
 

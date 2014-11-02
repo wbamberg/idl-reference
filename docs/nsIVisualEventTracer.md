@@ -49,3 +49,17 @@ Obtain the log.  This can be called whenever you want.
    the log using the object.  Calling stop() on the tracer  
    doesn't delete this log.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>   Result is an object that keeps snaphot of the log from  
+   time this method has been called.  You can then access  
+   the log using the object.  Calling stop() on the tracer  
+   doesn't delete this log.  
+</td>
+</tr>
+
+</table>

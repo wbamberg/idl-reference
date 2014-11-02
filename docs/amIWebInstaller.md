@@ -40,6 +40,17 @@ Checks if installation is enabled for a webpage.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if installation is enabled  
+</td>
+</tr>
+
+</table>
+
 ### installAddonsFromWebpage(aMimetype, aOriginator, aReferer, aUris, aHashes, aNames, aIcons, aCallback, aInstallCount) ###
   
 Installs an array of add-ons at the request of a webpage  
@@ -133,6 +144,17 @@ Installs an array of add-ons at the request of a webpage
 <td></td>
 <td>aInstallCount  
         An optional argument including the number of add-ons to install  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the installation was successfully started  
 </td>
 </tr>
 

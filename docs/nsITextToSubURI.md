@@ -45,6 +45,17 @@ Note:
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Unescaped aURIFragment  converted to unicode  
+</td>
+</tr>
+
+</table>
+
 ### unEscapeNonAsciiURI(aCharset, aURIFragment) ###
   
 Unescapes only non ASCII characters in the given URI fragment   
@@ -71,6 +82,19 @@ charset if the charset is an ASCII superset
 <tr>
 <td>aURIFragment</td>
 <td>the URI (or URI fragment) to unescape  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Unescaped aURIFragment  converted to unicode  
+@throws NS_ERROR_UCONV_NOCONV when there is no decoder for aCharset  
+        or error code of nsIUnicodeDecoder in case of conversion failure  
 </td>
 </tr>
 

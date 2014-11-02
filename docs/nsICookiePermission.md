@@ -76,6 +76,19 @@ access the cookie database, either to set or get cookies.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>one of the following nsCookieAccess values:  
+        ACCESS_DEFAULT, ACCESS_ALLOW, ACCESS_DENY, or  
+        ACCESS_ALLOW_FIRST_PARTY_ONLY  
+</td>
+</tr>
+
+</table>
+
 ### canSetCookie(aURI, aChannel, aCookie, aIsSession, aExpiry) ###
   
 canSetCookie  
@@ -140,6 +153,17 @@ downgrade a cookie to session-only if it fails to meet certain criteria.
 <td>       when canSetCookie is invoked, this is the current expiry time of  
        the cookie. canSetCookie may leave this value unchanged to  
        preserve this attribute of the cookie.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the cookie can be set.  
 </td>
 </tr>
 

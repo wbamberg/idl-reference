@@ -2,6 +2,7 @@ import os
 import sys
 import md
 
+from parse_comments import parseDoccomments
 from xpidl import xpidl
 
 index = md.createFile("../index.md", "default_index")
@@ -21,7 +22,6 @@ class Attribute(object):
             for line in processed:
                 output.write(line)
 
-
 class Param(object):
     def __init__(self, name, doc):
         self.name = name
@@ -32,13 +32,40 @@ class Method(object):
         self.name = spec.name
         self.spec = spec
         self.doccomments = spec.doccomments
+        self.doclines = []
+        for doccomment in self.doccomments:
+            self.doclines += stripComments(doccomment)
 
     def write(self, output):
+        print "    " + self.name
         md.writeH3(self.signature(), output)
         self.writeDoccomments(output)
-        self.writeParams(output)
+        parsed = parseDoccomments(self.doclines)
+        self.writeParams(parsed.params, output)
+        self.writeReturns(parsed.returns, output)
 
-    def writeParams(self, output):
+    def writeParams(self, params, output):
+        params = iter(params)
+        try:
+            first = params.next()
+            md.writeH4("Parameters", output)
+            md.writeTableStart(output)
+            md.writeTableRow([first.name, first.doc], output)
+        except StopIteration:
+            return
+        for param in params:
+            md.writeTableRow([param.name, param.doc], output)
+        md.writeTableEnd(output)
+
+    def writeReturns(self, returns, output):
+        if not returns:
+            return
+        md.writeH4("Returns", output)
+        md.writeTableStart(output)
+        md.writeTableRow([returns], output)
+        md.writeTableEnd(output)
+
+    def writeParams2(self, output):
         params = self.paramGenerator(self.doccomments)
         try:
             first = params.next()
@@ -60,7 +87,7 @@ class Method(object):
         signature += ")"
         return signature
 
-    def getParamNameFromLine(self, line):
+    def getNextWordFromLine(self, line):
         return line.split(" ", 1)[0]
 
     def lineIsEmpty(self, line):
@@ -77,17 +104,14 @@ class Method(object):
     #    - an empty line
     #    - the end of the whole comment block
     def paramGenerator(self, doccomments):
-        lines = []
-        for doccomment in self.doccomments:
-            lines += stripComments(doccomment)
         processingParamRightNow = False
-        for line in lines:
+        for line in self.lines:
             if line.startswith("@param"):
                 if processingParamRightNow:
                     yield Param(name, doc)
                 processingParamRightNow = True
                 line = line[len("@param "):]
-                name = self.getParamNameFromLine(line)
+                name = self.getNextWordFromLine(line)
                 doc = line[len(name):].lstrip()
             elif line.startswith("@return") or self.lineIsEmpty(line):
                 if processingParamRightNow:
@@ -98,6 +122,21 @@ class Method(object):
                     doc += line
         if processingParamRightNow:
             yield Param(name, doc)
+
+    def getReturn(self, doccumments):
+        processingReturnRightNow = False
+        for line in self.lines:
+            if line.startswith("@return"):
+                processingReturnRightNow = True
+                line = line[len("@return "):]
+                doc = line[len(name):].lstrip()
+            elif line.startswith("@param") or self.lineIsEmpty(line):
+                return Return(name, doc)
+            else:
+                if processingReturnRightNow:
+                    doc += line
+        if processingReturnRightNow:
+            return Return(name, doc)
 
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
@@ -122,6 +161,7 @@ class Constant(object):
 
 class Interface(object):
     def __init__(self, filename, spec):
+        print spec.name
         self.filename = filename
         self.name = spec.name
         self.doccomments = spec.doccomments

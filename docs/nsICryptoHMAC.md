@@ -156,6 +156,18 @@ NOTE: This method may be called any time after |init|
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a hash of the data that was read by this object.  This can  
+        be either binary data or base 64 encoded.  
+</td>
+</tr>
+
+</table>
+
 ### reset() ###
   
 Reinitialize HMAC context to be reused with the same  

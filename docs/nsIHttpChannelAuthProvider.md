@@ -73,6 +73,22 @@ the credentials to send.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>NS_OK if the credentials were got and set successfully.  
+         NS_ERROR_IN_PROGRESS if the credentials are going to be asked to  
+                              the user. The channel reference must be  
+                              alive until the feedback from  
+                              nsIHttpAuthenticableChannel's methods or  
+                              until disconnect be called.  
+</td>
+</tr>
+
+</table>
+
 ### addAuthorizationHeaders() ###
   
 Add credentials from the http auth cache.  

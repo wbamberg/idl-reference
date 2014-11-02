@@ -22,6 +22,18 @@ Compare this and given ranges end points.
          range end point.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>-1/0/1 if this range end point is before/equal/after the given  
+         range end point.  
+</td>
+</tr>
+
+</table>
+
 ### move(aUnit, aCount) ###
   
  Move the boundary(ies) by the given number of the unit.  

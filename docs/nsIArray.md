@@ -110,6 +110,19 @@ is not found.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a number >= startIndex which is the position of the  
+         element in the array.  
+@throws NS_ERROR_FAILURE if the element was not in the array.  
+</td>
+</tr>
+
+</table>
+
 ### enumerate() ###
   
 enumerate the array  
@@ -118,6 +131,19 @@ enumerate the array
 @throws NS_ERROR_FAILURE if the array is empty (to make it easy  
         to detect errors), or NS_ERROR_OUT_OF_MEMORY if out of memory.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a new enumerator positioned at the start of the array  
+@throws NS_ERROR_FAILURE if the array is empty (to make it easy  
+        to detect errors), or NS_ERROR_OUT_OF_MEMORY if out of memory.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

@@ -133,3 +133,15 @@ For example, via a <meta http-equiv="refresh"> or an HTTP Refresh: header
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>True if the refresh may proceed.  
+        False if the refresh should be aborted.  
+</td>
+</tr>
+
+</table>

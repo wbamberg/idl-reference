@@ -22,6 +22,18 @@ The network types supported by this radio.
         Possible values: 'gsm', 'wcdma', 'cdma', 'evdo', 'lte'.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an array of DOMString  
+        Possible values: 'gsm', 'wcdma', 'cdma', 'evdo', 'lte'.  
+</td>
+</tr>
+
+</table>
+
 ### getNetworks(requestCallback) ###
   
 Search for available networks.  

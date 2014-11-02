@@ -31,3 +31,14 @@ from the operating system.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A collation for the given locale.  
+</td>
+</tr>
+
+</table>

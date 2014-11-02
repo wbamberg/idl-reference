@@ -125,6 +125,19 @@ software tokens the certificate is stored on.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>On success, an array containing the names of all tokens  
+        the certificate is stored on (may be empty).  
+        On failure the function throws/returns an error.  
+</td>
+</tr>
+
+</table>
+
 ### markForPermDeletion() ###
   
 Either delete the certificate from all cert databases,  

@@ -33,10 +33,34 @@ from the oldest window to the youngest.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an enumerator of nsIDOMWindows.  Note that windows close  
+        asynchronously in many cases, so windows returned from this  
+        enumerator can have .closed set to true.  Caveat enumerator!  
+</td>
+</tr>
+
+</table>
+
 ### getXULWindowEnumerator(aWindowType) ###
  Identical to getEnumerator except:  
 @return an enumerator of nsIXULWindows  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an enumerator of nsIXULWindows  
+</td>
+</tr>
+
+</table>
 
 ### getZOrderDOMWindowEnumerator(aWindowType, aFrontToBack) ###
  Return an enumerator which iterates over all windows of type aWindowType  
@@ -74,10 +98,32 @@ are re-ordered while z-order enumerators are active.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an enumerator of nsIDOMWindows  
+</td>
+</tr>
+
+</table>
+
 ### getZOrderXULWindowEnumerator(aWindowType, aFrontToBack) ###
  Identical to getZOrderDOMWindowEnumerator except:  
 @return an enumerator of nsIXULWindows  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an enumerator of nsIXULWindows  
+</td>
+</tr>
+
+</table>
 
 ### getMostRecentWindow(aWindowType) ###
  This is a shortcut for simply fetching the first window in  
@@ -99,6 +145,17 @@ front to back order.
                     ("type" is the |windowtype| attribute of  
                     the XML <window> element.)  
                     If null, return the topmost window of any type.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the topmost window  
 </td>
 </tr>
 
@@ -270,6 +327,18 @@ pointers in those parameters.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>PR_TRUE if the position returned is different from  
+        the position given.  
+</td>
+</tr>
+
+</table>
+
 ### setZPosition(inWindow, inPosition, inBelow) ###
  A window has been positioned behind another. Inform WindowMediator  
 @param inWindow the window in question  
@@ -322,6 +391,17 @@ pointers in those parameters.
 <tr>
 <td>aWindow</td>
 <td>the window in question  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>aWindow's z level  
 </td>
 </tr>
 

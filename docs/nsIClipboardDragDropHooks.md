@@ -58,6 +58,17 @@ Prevents the drag from starting
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>FALSE drag is cancelled, does not go to OS  
+</td>
+</tr>
+
+</table>
+
 ### allowDrop(event, session) ###
   
 Tells gecko whether a drop is allowed on this content area  
@@ -86,6 +97,18 @@ Tells gecko whether a drop is allowed on this content area
 <td>session</td>
 <td>the drag session from which client can get  
                   the flavors present or the actual data  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>FALSE indicates to OS drop is not allowed. On win32, this  
+               will change the cursor to "reject".  
 </td>
 </tr>
 
@@ -126,6 +149,17 @@ not negatively impacted.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>FALSE copy/drag is cancelled, does not go to OS  
+</td>
+</tr>
+
+</table>
+
 ### onPasteOrDrop(event, trans) ###
   
 Provide an alternative action to the built-in behavior when  
@@ -154,6 +188,17 @@ something is dropped on the browser or in an editor
 <td>trans</td>
 <td>the transferable holding the list of flavors  
               and the data for each flavor  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>FALSE action was not overridden, do built-in behavior  
 </td>
 </tr>
 

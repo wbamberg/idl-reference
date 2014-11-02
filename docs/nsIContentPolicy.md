@@ -136,6 +136,17 @@ above, do them off timeout or event.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>ACCEPT or REJECT_*  
+</td>
+</tr>
+
+</table>
+
 ### shouldProcess(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeType, aExtra, aRequestPrincipal) ###
   
 Should the resource be processed?  
@@ -221,6 +232,17 @@ what this means for implementors of this method.
 <td>aExtra</td>
 <td>an OPTIONAL argument, pass-through for non-Gecko  
                          callers to pass extra data to callees.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>ACCEPT or REJECT_*  
 </td>
 </tr>
 

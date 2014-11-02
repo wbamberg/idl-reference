@@ -66,6 +66,17 @@ The returned stream MAY implement nsISeekableStream.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>non-blocking, buffered input stream.  
+</td>
+</tr>
+
+</table>
+
 ### openOutputStream(offset) ###
   
 Open non-blocking output stream to cache data.  The returned stream  
@@ -89,6 +100,17 @@ truncated to the specified offset.
 <td>offset</td>
 <td>       write starting from this offset into the cached data.  an offset  
        beyond the end of the stream has undefined consequences.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>blocking, buffered output stream.  
 </td>
 </tr>
 
@@ -165,6 +187,20 @@ Used on 200 responses to conditional requests.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>   - an entry that can be used to write to  
+@throws  
+   - NS_ERROR_NOT_AVAILABLE when the entry cannot be from some reason  
+     recreated for write  
+</td>
+</tr>
+
+</table>
+
 ### close() ###
 ************************************************************************  
 The following methods might be added to some nsICacheEntryInternal  
@@ -216,6 +252,18 @@ FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK
 <td>aWriteAllowed</td>
 <td>   Consumer indicates whether write to the entry is allowed for it.  
    Depends on implementation how the flag is handled.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>   true when write access is acquired for this entry,  
+   false otherwise  
 </td>
 </tr>
 

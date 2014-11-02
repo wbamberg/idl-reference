@@ -47,6 +47,17 @@ name, thus aVar should be ?name and not simply name.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the value for the variable or a null string if it has no value  
+</td>
+</tr>
+
+</table>
+
 ### getBindingObjectFor(aVar) ###
   
 Get an object value for a variable such as ?name for this result.   
@@ -67,6 +78,17 @@ convenience when sorting results.
 <tr>
 <td>aVar</td>
 <td>the variable to look up  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the value for the variable or null if it has no value  
 </td>
 </tr>
 

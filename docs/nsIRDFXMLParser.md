@@ -35,6 +35,17 @@ parse RDF/XML.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an nsIStreamListener object to handle the data  
+</td>
+</tr>
+
+</table>
+
 ### parseString(aSink, aBaseURI, aSource) ###
   
 Parse a string of RDF/XML  

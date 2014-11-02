@@ -26,6 +26,19 @@ Requests can become pending multiple times during their lifetime.
 @note Suspended requests are still considered pending.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>FALSE if the request has reached completion (e.g., after  
+  OnStopRequest has fired).  
+@note Suspended requests are still considered pending.  
+</td>
+</tr>
+
+</table>
+
 ### cancel(aStatus) ###
   
 Cancels the current request.  This will close any open input or  

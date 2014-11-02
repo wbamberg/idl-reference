@@ -43,6 +43,17 @@ Return the number of bytes currently available in the stream
 @throws NS_BASE_STREAM_CLOSED if called after the stream has been closed  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the number of bytes   
+</td>
+</tr>
+
+</table>
+
 ### read(aCount) ###
   
 Read data from the stream.  
@@ -70,6 +81,17 @@ a truncated string.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the data, which will be an empty string if the stream is at EOF.  
+</td>
+</tr>
+
+</table>
+
 ### readBytes(aCount) ###
   
 Read data from the stream, including NULL bytes.  
@@ -92,6 +114,18 @@ Read data from the stream, including NULL bytes.
 <tr>
 <td>aCount</td>
 <td>the maximum number of bytes to read.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the data from the stream, which will be an empty string if EOF  
+        has been reached.  
 </td>
 </tr>
 

@@ -47,6 +47,17 @@ Returns the index of the named parameter.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the index of the named parameter.  
+</td>
+</tr>
+
+</table>
+
 ### getColumnName(aColumnIndex) ###
   
 Name of nth column  
@@ -73,6 +84,17 @@ Obtains the index of the column with the specified name.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The index of the column with the specified name.  
+</td>
+</tr>
+
+</table>
+
 ### getColumnDecltype(aParamIndex) ###
   
 Obtains the declared column type of a prepared statement.  
@@ -91,6 +113,17 @@ Obtains the declared column type of a prepared statement.
 <td>aParamIndex</td>
 <td>       The zero-based index of the column who's declared type we are  
        interested in.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the declared index type.  
 </td>
 </tr>
 
@@ -121,6 +154,19 @@ executeStep.
         the statement.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a boolean indicating whether there are more rows or not;  
+        row data may be accessed using mozIStorageValueArray methods on  
+        the statement.  
+</td>
+</tr>
+
+</table>
+
 ### getTypeOfIndex(aIndex) ###
   
 Indicate the data type of the current result row for the the given column.  
@@ -146,6 +192,19 @@ type than it is stored as.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The type of the value at the given column index; one of  
+        VALUE_TYPE_NULL, VALUE_TYPE_INTEGER, VALUE_TYPE_FLOAT,  
+        VALUE_TYPE_TEXT, VALUE_TYPE_BLOB.  
+</td>
+</tr>
+
+</table>
+
 ### getInt32(aIndex) ###
   
 Retrieve the contents of a column from the current result row as an  
@@ -164,6 +223,18 @@ integer.
 <tr>
 <td>aIndex</td>
 <td>       0-based colummn index.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Column value interpreted as an integer per type conversion rules.  
+@{  
 </td>
 </tr>
 
@@ -194,6 +265,17 @@ floating point double.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Column value interpreted as a double per type conversion rules.  
+</td>
+</tr>
+
+</table>
+
 ### getUTF8String(aIndex) ###
   
 Retrieve the contents of a column from the current result row as a  
@@ -214,6 +296,20 @@ string.
 <tr>
 <td>aIndex</td>
 <td>       0-based colummn index.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The value for the result column interpreted as a string.  If the  
+        stored value was NULL, you will get an empty string with IsVoid set  
+        to distinguish it from an explicitly set empty string.  
+@{  
 </td>
 </tr>
 
@@ -277,6 +373,17 @@ Check whether the given column in the current result row is NULL.
 <tr>
 <td>aIndex</td>
 <td>       0-based colummn index.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the value for the result column is null.  
 </td>
 </tr>
 

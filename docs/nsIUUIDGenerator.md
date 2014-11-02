@@ -22,6 +22,17 @@ obtain a nsID that can be considered to be globally unique.
 an underlying source of randomness is not available)  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an nsID filled in with a new UUID.  
+</td>
+</tr>
+
+</table>
+
 ### generateUUIDInPlace(id) ###
   
 Obtain a new UUID like the generateUUID method, but place it in  

@@ -132,6 +132,18 @@ requested.  Valid values include: "memory".
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a new mozIStorageConnection for the requested  
+storage database.  
+</td>
+</tr>
+
+</table>
+
 ### openDatabase(aDatabaseFile) ###
   
 Open a connection to the specified file.  
@@ -171,6 +183,17 @@ use it only from the thread you created it from.
 <tr>
 <td>aDatabaseFile</td>
 <td>       A nsIFile that represents the database that is to be opened..  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a mozIStorageConnection for the requested database file.  
 </td>
 </tr>
 
@@ -216,6 +239,17 @@ use it only from the thread you created it from.
 <tr>
 <td>aDatabaseFile</td>
 <td>       A nsIFile that represents the database that is to be opened.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a mozIStorageConnection for the requested database file.  
 </td>
 </tr>
 
@@ -279,6 +313,17 @@ ensures that the file being created is unique.
 <td>[optional]</td>
 <td>aBackupParentDirectory  
        The directory you'd like the backup file to be placed.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The nsIFile representing the backup file.  
 </td>
 </tr>
 

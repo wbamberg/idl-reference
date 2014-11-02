@@ -116,6 +116,17 @@ Creates an nsIDownload and adds it to be managed by the download manager.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The newly created download item with the passed-in properties.  
+</td>
+</tr>
+
+</table>
+
 ### getDownload(aID) ###
   
 Retrieves a download managed by the download manager.  This can be one that  
@@ -134,6 +145,18 @@ database.
 <tr>
 <td>aID</td>
 <td>The unique ID of the download.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The download with the specified ID.  
+@throws NS_ERROR_NOT_AVAILABLE if the download is not in the database.  
 </td>
 </tr>
 

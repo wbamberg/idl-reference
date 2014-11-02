@@ -40,6 +40,17 @@ Create a new thread (a global, user PRThread).
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>  The newly created nsIThread object.  
+</td>
+</tr>
+
+</table>
+
 ### getThreadFromPRThread(prthread) ###
   
 Get the nsIThread object (if any) corresponding to the given PRThread.  
@@ -60,6 +71,18 @@ This method returns null if there is no corresponding nsIThread.
 <tr>
 <td>prthread</td>
 <td>  The PRThread of the nsIThread being requested.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>  The nsIThread object corresponding to the given PRThread or null if no  
+  such nsIThread exists.  
 </td>
 </tr>
 

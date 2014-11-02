@@ -144,6 +144,18 @@ Returns true if a factory is registered for the CID.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>: true if a factory is registered for CID   
+                false otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### isContractIDRegistered(aContractID) ###
   
 isContractIDRegistered  
@@ -167,6 +179,18 @@ Returns true if a factory is registered for the contract id.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>: true if a factory is registered for contract id   
+                false otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### enumerateCIDs() ###
   
 enumerateCIDs  
@@ -177,6 +201,19 @@ Enumerate the list of all registered CIDs.
           for the nsISupportsID interface.  From the nsISupportsID, you   
           can obtain the actual CID.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>: enumerator for CIDs.  Elements of the enumeration can be QI'ed  
+          for the nsISupportsID interface.  From the nsISupportsID, you   
+          can obtain the actual CID.  
+</td>
+</tr>
+
+</table>
 
 ### enumerateContractIDs() ###
   
@@ -189,6 +226,20 @@ Enumerate the list of all registered ContractIDs.
           nsISupportsCString interface, you can obtain the actual   
           Contract ID string.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>: enumerator for ContractIDs. Elements of the enumeration can be   
+          QI'ed for the nsISupportsCString interface.  From  the  
+          nsISupportsCString interface, you can obtain the actual   
+          Contract ID string.  
+</td>
+</tr>
+
+</table>
 
 ### CIDToContractID(aClass) ###
   
@@ -206,3 +257,14 @@ Returns the CID for a given Contract ID, if one exists and is registered.
   
 @return : Contract ID.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>: Contract ID.  
+</td>
+</tr>
+
+</table>

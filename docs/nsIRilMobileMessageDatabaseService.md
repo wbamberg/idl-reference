@@ -90,6 +90,17 @@ layout: default
 @returns the error code defined in nsIMobileMessageCallback  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the error code defined in nsIMobileMessageCallback  
+</td>
+</tr>
+
+</table>
+
 ### saveSmsSegment(aSmsSegment, aCallback) ###
   
 |aSmsSegment| jsval: Decoded Single SMS PDU.  

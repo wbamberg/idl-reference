@@ -28,6 +28,18 @@ internal state of enumerator.
         false if there are no more elements in the enumerator.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if there are remaining elements in the enumerator.  
+        false if there are no more elements in the enumerator.  
+</td>
+</tr>
+
+</table>
+
 ### getNext() ###
   
 Called to retrieve the next element in the enumerator. The "next"  
@@ -41,3 +53,14 @@ the elements in the enumerator.
                          to enumerate.  
 @return the next element in the enumeration.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the next element in the enumeration.  
+</td>
+</tr>
+
+</table>

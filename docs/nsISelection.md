@@ -192,6 +192,20 @@ or granularity has an unrecognized value.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>NS_ERROR_NOT_IMPLEMENTED if the granularity is "sentence",  
+"sentenceboundary", "paragraph", "paragraphboundary", or  
+"documentboundary".  Returns NS_ERROR_INVALID_ARG if alter, direction,  
+or granularity has an unrecognized value.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### anchorNode ###

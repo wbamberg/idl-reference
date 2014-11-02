@@ -44,6 +44,17 @@ Will not be called if the stream receives no data at all.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the name of the character set to be used to decode this stream  
+</td>
+</tr>
+
+</table>
+
 ### onStreamComplete(aLoader, aContext, aStatus, aBuffer) ###
   
 Called when the entire stream has been loaded and decoded.  

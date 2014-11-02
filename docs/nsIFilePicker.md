@@ -98,6 +98,17 @@ Show File Dialog. The dialog is displayed modally.
   
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>returnOK if the user selects OK, returnCancel if the user selects cancel  
+</td>
+</tr>
+
+</table>
+
 ### open(aFilePickerShownCallback) ###
   
 Opens the file dialog asynchrounously.  

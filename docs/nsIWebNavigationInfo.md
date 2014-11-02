@@ -48,6 +48,19 @@ Query whether aType is supported.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an enum value indicating whether and how aType is supported.  
+@note This method may rescan plugins to ensure that they're properly  
+      registered for the types they support.  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### UNSUPPORTED ###

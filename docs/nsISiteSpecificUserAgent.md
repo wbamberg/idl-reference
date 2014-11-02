@@ -38,3 +38,15 @@ the default User Agent string is used.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the User Agent string for the given URI. If no override applies,  
+the default User Agent string is used.  
+</td>
+</tr>
+
+</table>

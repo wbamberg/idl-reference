@@ -151,6 +151,17 @@ Determines if a tile is pinned to the Windows 8 start screen.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the tile is pinned  
+</td>
+</tr>
+
+</table>
+
 ### addSettingsPanelEntry(aLabel) ###
   
 Settings panel links. addSettingsPanelEntry adds an entry to  
@@ -175,6 +186,18 @@ ShowPanel api. Example: 'prefs-container'
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a unique identifier that will be passed as "data" in the  
+"metro-settings-entry-selected" notification when the entry is clicked  
+</td>
+</tr>
+
+</table>
+
 ### swapMouseButton(aSwap) ###
   
 Change the value of the "switch primary and secondary buttons" preference.  
@@ -192,6 +215,17 @@ Included here for use in automated tests (see bug 839460).
 <tr>
 <td>aSwap</td>
 <td>true to enable the preference, false to disable it.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>original value of the preference.  
 </td>
 </tr>
 

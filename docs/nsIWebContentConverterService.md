@@ -66,6 +66,20 @@ Gets the auto handler specified for a particular content type
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The web service handler that will automatically handle all   
+         documents of the specified type. null if there is no automatic  
+         handler. (Handlers may be registered, just none of them specified  
+         as "automatic").  
+</td>
+</tr>
+
+</table>
+
 ### getWebContentHandlerByURI(contentType, uri) ###
   
 Gets a web handler for the specified service URI  
@@ -91,6 +105,17 @@ Gets a web handler for the specified service URI
 <td></td>
 <td>uri  
          The service URI of the handler to locate.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A web service handler that uses the specified uri.  
 </td>
 </tr>
 
@@ -191,6 +216,17 @@ Gets the list of content handlers for a particular type.
 <td></td>
 <td>contentType  
          The content type to get handlers for  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An array of nsIWebContentHandlerInfo objects  
 </td>
 </tr>
 

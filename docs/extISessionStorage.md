@@ -31,6 +31,18 @@ Determines if a storage item exists with the given name.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if an item exists with the given name,  
+         false otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### set(aName, aValue) ###
   
 Sets the value of a storage item with the given name.  
@@ -87,6 +99,18 @@ default value if the item does not exist.
 <td></td>
 <td>aDefaultValue  
          The value to return if no item exists with the given name  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>value of the item or the given default value if no item  
+         exists with the given name.  
 </td>
 </tr>
 

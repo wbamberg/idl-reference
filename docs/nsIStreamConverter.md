@@ -97,6 +97,20 @@ Use this method when you have a stream you want to convert.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The converted stream. NOTE: The returned stream may not  
+                     already be converted. An efficient stream converter  
+                     implementation will converter data on demand rather than  
+                     buffering the converted data until it is used.  
+</td>
+</tr>
+
+</table>
+
 ### asyncConvertData(aFromType, aToType, aListener, aCtxt) ###
   
 <b>ASYNCRONOUS VERSION</b>  

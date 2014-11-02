@@ -79,6 +79,19 @@ We have a whitelist of values that can be read in such a way.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the value of the pref  
+@throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
+@throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
+</td>
+</tr>
+
+</table>
+
 ### setPref(aGroup, aName, aValue, aPrivacyContext) ###
   
 Set a pref.  
@@ -400,6 +413,18 @@ Get the prefs that apply to the given site.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a property bag of prefs  
+@throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
+</td>
+</tr>
+
+</table>
+
 ### getPrefsByName(aName, aContext) ###
   
 Get the prefs with the given name.  
@@ -432,6 +457,18 @@ Get the prefs with the given name.
                        of the pref (ie. whether to search for prefs in memory  
                        or in permanent storage), obtained from a relevant  
                        window or channel.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a property bag of prefs  
+@throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
 </td>
 </tr>
 

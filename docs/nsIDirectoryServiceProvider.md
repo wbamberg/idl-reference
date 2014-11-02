@@ -50,3 +50,14 @@ a prop or on every request if the prop is not persistent.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The file represented by the property.  
+</td>
+</tr>
+
+</table>

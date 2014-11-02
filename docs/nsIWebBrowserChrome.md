@@ -76,11 +76,34 @@ Shows the window as a modal window.
         in exitModalEventLoop.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>(the function error code) the status value specified by  
+        in exitModalEventLoop.  
+</td>
+</tr>
+
+</table>
+
 ### isWindowModal() ###
   
 Is the window modal (that is, currently executing a modal loop)?  
 @return true if it's a modal window  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if it's a modal window  
+</td>
+</tr>
+
+</table>
 
 ### exitModalEventLoop(aStatus) ###
   

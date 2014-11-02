@@ -53,6 +53,18 @@ means that there were no pending events when this method was called.
   not the current thread.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>  A boolean value that if "true" indicates that this thread has one or  
+  more pending events.  
+</td>
+</tr>
+
+</table>
+
 ### processNextEvent(mayWait) ###
   
 Process the next event.  If there are no pending events, then this method  
@@ -80,6 +92,17 @@ only be called if this thread is the current thread.
 <td>mayWait</td>
 <td>  A boolean parameter that if "true" indicates that the method may block  
   the calling thread to wait for a pending event.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>  A boolean value that if "true" indicates that an event was processed.  
 </td>
 </tr>
 

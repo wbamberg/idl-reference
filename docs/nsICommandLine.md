@@ -45,6 +45,18 @@ are normalized to the form -flag param.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The indexth argument.  
+@throws       NS_ERROR_INVALID_ARG if aIndex is out of bounds.  
+</td>
+</tr>
+
+</table>
+
 ### findFlag(aFlag, aCaseSensitive) ###
   
 Find a command-line flag.  
@@ -69,6 +81,17 @@ Find a command-line flag.
 <tr>
 <td>aCaseSensitive</td>
 <td>Whether to do case-sensitive comparisons.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The position of the flag in the command line.  
 </td>
 </tr>
 
@@ -128,6 +151,17 @@ A helper method which will find a flag and remove it in one step.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Whether the flag was found.  
+</td>
+</tr>
+
+</table>
+
 ### handleFlagWithParam(aFlag, aCaseSensitive) ###
   
 Find a flag with a parameter and remove both. This is a helper  
@@ -154,6 +188,19 @@ method that combines "findFlag" and "removeArguments" in one step.
 <tr>
 <td>aCaseSensitive</td>
 <td>Whether to do case-sensitive flag search.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>null (a void astring) if the flag is not found. The parameter value  
+          if found. Note that null and the empty string are not the same.  
+@throws   NS_ERROR_INVALID_ARG if the flag exists without a parameter  
 </td>
 </tr>
 

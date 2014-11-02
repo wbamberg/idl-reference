@@ -45,6 +45,22 @@ Creates a new livemark
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>{Promise}  
+@throws NS_ERROR_INVALID_ARG if the supplied information is insufficient  
+        for the creation.  
+@deprecated passing a callback is deprecated. Moreover, for backwards  
+            compatibility reasons, when a callback is provided this method  
+            won't return a promise.  
+</td>
+</tr>
+
+</table>
+
 ### removeLivemark(aLivemarkInfo, aCallback) ###
   
 Removes an existing livemark.  
@@ -79,6 +95,21 @@ Removes an existing livemark.
 <td>aCallback  
        Invoked when the removal process is done.  In case of failure will  
        receive an error code.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>{Promise}  
+@throws NS_ERROR_INVALID_ARG if the id/guid is invalid.  
+@deprecated passing a callback is deprecated. Moreover, for backwards  
+            compatibility reasons, when a callback is provided this method  
+            won't return a promise.  
 </td>
 </tr>
 
@@ -119,6 +150,22 @@ Gets an existing livemark.
 <td>aCallback  
        Invoked when the fetching process is done.  In case of failure will  
        receive an error code.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>{Promise}  
+@throws NS_ERROR_INVALID_ARG if the id/guid is invalid or an invalid  
+        callback is provided.  
+@deprecated passing a callback is deprecated. Moreover, for backwards  
+            compatibility reasons, when a callback is provided this method  
+            won't return a promise.  
 </td>
 </tr>
 

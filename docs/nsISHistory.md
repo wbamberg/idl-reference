@@ -54,6 +54,20 @@ given index.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>NS_OK</code> history entry for   
+                         the index is obtained successfully.  
+                         <code>NS_ERROR_FAILURE</code> Error in obtaining  
+                         history entry for the given index.  
+</td>
+</tr>
+
+</table>
+
 ### PurgeHistory(numEntries) ###
   
 Called to purge older documents from history.  
@@ -166,6 +180,20 @@ Called to obtain the index to a given history entry.
 <tr>
 <td>aEntry</td>
 <td>The entry to obtain the index of.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>NS_OK</code> index for the history entry  
+                         is obtained successfully.  
+                         <code>NS_ERROR_FAILURE</code> Error in obtaining  
+                         index for the given history entry.  
 </td>
 </tr>
 

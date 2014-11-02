@@ -61,6 +61,19 @@ Lock this profile using platform-specific locking methods.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An interface which holds a profile lock as long as you reference  
+        it.  
+@throws NS_ERROR_FILE_ACCESS_DENIED if the profile was already locked.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### rootDir ###

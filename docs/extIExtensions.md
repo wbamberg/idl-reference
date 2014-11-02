@@ -31,6 +31,18 @@ Determines if an extension exists with the given id.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if an extension exists with the given id,  
+         false otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### get(aId) ###
   
 Gets a extIExtension object for an extension.  
@@ -48,6 +60,18 @@ Gets a extIExtension object for an extension.
 <td></td>
 <td>aId  
          The id of an extension  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An extension object or null if no extension exists  
+         with the given id.  
 </td>
 </tr>
 

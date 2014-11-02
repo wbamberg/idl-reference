@@ -38,6 +38,20 @@ container.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>aNode's index in this container.  
+@throws NS_ERROR_NOT_AVAILABLE if containerOpen is false.  
+@throws NS_ERROR_INVALID_ARG if aNode isn't a direct child of this  
+container.  
+</td>
+</tr>
+
+</table>
+
 ### findNodeByDetails(aURIString, aTime, aItemId, aRecursive) ###
   
 Look for a node in the container by some of its details.  Does not search  
@@ -82,6 +96,18 @@ closed containers.
 <tr>
 <td>aRecursive</td>
 <td>       whether or not to search recursively.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a result node that matches the given details if any, null  
+        otherwise.  
 </td>
 </tr>
 

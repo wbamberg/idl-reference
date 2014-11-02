@@ -13,12 +13,34 @@ Encrypt a buffer - callable only from C++.
 @return The length of the data in the output buffer.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The length of the data in the output buffer.  
+</td>
+</tr>
+
+</table>
+
 ### decrypt(data, dataLen, result) ###
   
 Decrypt a buffer - callable only from C++.  
   
 @return The length of the data in the output buffer.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The length of the data in the output buffer.  
+</td>
+</tr>
+
+</table>
 
 ### encryptString(text) ###
   

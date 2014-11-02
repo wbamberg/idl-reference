@@ -35,6 +35,17 @@ Called to provide information about a cache device.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>false to advance to the next device.  
+</td>
+</tr>
+
+</table>
+
 ### visitEntry(deviceID, entryInfo) ###
   
 Called to provide information about a cache entry.  
@@ -60,6 +71,17 @@ Called to provide information about a cache entry.
 <tr>
 <td>entryInfo</td>
 <td>- specifies information about this entry.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>false to advance to the next device.  
 </td>
 </tr>
 

@@ -39,6 +39,17 @@ Print the specified DOM window
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### printPreview(aThePrintSettings, aChildDOMWin, aWPListener) ###
   
 Print Preview the specified DOM window  
@@ -75,6 +86,17 @@ Print Preview the specified DOM window
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### printPreviewNavigate(aNavType, aPageNum) ###
   
 Print Preview - Navigates within the window  
@@ -102,11 +124,33 @@ Print Preview - Navigates within the window
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### cancel() ###
   
 Cancels the current print   
 @return void  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
 
 ### enumerateDocumentNames(aCount, aResult) ###
   
@@ -137,11 +181,33 @@ and may return any number of items is "isFramesetDocument" is true
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### exitPrintPreview() ###
   
 This exists PrintPreview mode and returns browser window to galley mode  
 @return void  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

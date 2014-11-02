@@ -60,6 +60,21 @@ Get the value of an environment variable.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>returns the value of the env variable. An empty string  
+               will be returned when the env variable does not exist or  
+               when the value itself is an empty string - please use  
+               |exists()| to probe whether the env variable exists  
+               or not.  
+</td>
+</tr>
+
+</table>
+
 ### exists(aName) ###
   
 Check the existence of an environment variable.  
@@ -87,6 +102,19 @@ or not.
 <tr>
 <td>aName</td>
 <td>the variable name to probe.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>if the variable has been set, the value returned is  
+               PR_TRUE. If the variable was not defined in the  
+               environment PR_FALSE will be returned.  
 </td>
 </tr>
 

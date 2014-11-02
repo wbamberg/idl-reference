@@ -44,6 +44,17 @@ In the case of nested URIs, the innermost URI will be used.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the public suffix  
+</td>
+</tr>
+
+</table>
+
 ### getBaseDomain(aURI, aAdditionalParts) ###
   
 Returns the base domain of a URI; that is, the public suffix with a given  
@@ -100,6 +111,17 @@ In the case of nested URIs, the innermost URI will be used.
 <td></td>
 <td>aAdditionalParts   Number of domain name parts to be  
                             returned in addition to the public suffix  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the base domain (public suffix plus the requested number of additional parts)  
 </td>
 </tr>
 

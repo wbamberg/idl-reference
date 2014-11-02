@@ -21,3 +21,14 @@ certificate list.
   
 @return Whether the certificate lists are equal  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Whether the certificate lists are equal  
+</td>
+</tr>
+
+</table>

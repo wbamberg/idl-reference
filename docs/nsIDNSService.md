@@ -63,6 +63,17 @@ kicks off an asynchronous host lookup.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An object that can be used to cancel the host lookup.  
+</td>
+</tr>
+
+</table>
+
 ### cancelAsyncResolve(aHostName, aFlags, aListener, aReason) ###
   
 Attempts to cancel a previously requested async DNS lookup  
@@ -111,6 +122,17 @@ Attempts to cancel a previously requested async DNS lookup
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An object that can be used to cancel the host lookup.  
+</td>
+</tr>
+
+</table>
+
 ### resolve(aHostName, aFlags) ###
   
 called to synchronously resolve a hostname.  warning this method may  
@@ -139,6 +161,18 @@ unwise to call this function on the UI thread of an application.
 <tr>
 <td>aFlags</td>
 <td>       a bitwise OR of the RESOLVE_ prefixed constants defined below.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>DNS record corresponding to the given hostname.  
+@throws NS_ERROR_UNKNOWN_HOST if host could not be resolved.  
 </td>
 </tr>
 

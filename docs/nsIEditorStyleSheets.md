@@ -175,6 +175,17 @@ This is always synchronous
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the style sheet  
+</td>
+</tr>
+
+</table>
+
 ### getURLForStyleSheet(aStyleSheet) ###
  Get the URL associated with the given CSSStyleSheet.  
   
@@ -189,6 +200,17 @@ This is always synchronous
 <tr>
 <td>aStyleSheet</td>
 <td>The style sheet  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the style sheet's URL  
 </td>
 </tr>
 

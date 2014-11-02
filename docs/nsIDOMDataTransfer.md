@@ -141,6 +141,18 @@ range from zero to itemCount - 1.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the data of the given format, or null if it doesn't exist.  
+@throws NS_ERROR_DOM_INDEX_SIZE_ERR if index is greater or equal than itemCount  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### dropEffect ###

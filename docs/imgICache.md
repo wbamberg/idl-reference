@@ -82,6 +82,17 @@ Hopefully this will be removed with bug 805119
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>NULL if the URL was not found in the cache  
+</td>
+</tr>
+
+</table>
+
 ### respectPrivacyNotifications() ###
   
 Make this cache instance respect private browsing notifications. This entails clearing  

@@ -37,6 +37,17 @@ Retrieves a patch.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The nsIUpdatePatch at the specified index.  
+</td>
+</tr>
+
+</table>
+
 ### serialize(updates) ###
   
 Serializes this update object into a DOM Element  
@@ -53,6 +64,17 @@ Serializes this update object into a DOM Element
 <td></td>
 <td>updates  
          The document to serialize into  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The DOM Element created by the serialization process  
 </td>
 </tr>
 

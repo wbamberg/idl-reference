@@ -36,6 +36,17 @@ NOTE: Implementations should throw NS_ERROR_IN_PROGRESS if the channel
 is reopened.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>blocking input stream to the channel's data.  
+</td>
+</tr>
+
+</table>
+
 ### asyncOpen(aListener, aContext) ###
   
 Asynchronously open this channel.  Data is fed to the specified stream  

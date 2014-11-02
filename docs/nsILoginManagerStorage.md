@@ -18,6 +18,19 @@ returned promise is resolved or rejected.
 @rejects JavaScript exception.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>{Promise}  
+@resolves When initialization is complete.  
+@rejects JavaScript exception.  
+</td>
+</tr>
+
+</table>
+
 ### terminate() ###
   
 Ensures that all data has been written to disk and all files are closed.  
@@ -29,6 +42,19 @@ on shutdown is done by observers within the component.
 @resolves When finalization is complete.  
 @rejects JavaScript exception.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>{Promise}  
+@resolves When finalization is complete.  
+@rejects JavaScript exception.  
+</td>
+</tr>
+
+</table>
 
 ### addLogin(aLogin) ###
   

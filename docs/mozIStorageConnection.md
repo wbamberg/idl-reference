@@ -72,6 +72,17 @@ Clones a database connection and makes the clone read only if needed.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the cloned database connection.  
+</td>
+</tr>
+
+</table>
+
 ### createStatement(aSQLStatement) ###
   
 Create a mozIStorageStatement for the given SQL expression.  The  
@@ -91,6 +102,17 @@ $var to indicate named arguments.
 <tr>
 <td>aSQLStatement</td>
 <td>       The SQL statement to execute.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a new mozIStorageStatement  
 </td>
 </tr>
 
@@ -136,6 +158,17 @@ Check if the given table exists.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>TRUE if table exists, FALSE otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### indexExists(aIndexName) ###
   
 Check if the given index exists.  
@@ -151,6 +184,17 @@ Check if the given index exists.
 <tr>
 <td>aIndexName</td>
 <td>The index to check  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>TRUE if the index exists, FALSE otherwise.  
 </td>
 </tr>
 

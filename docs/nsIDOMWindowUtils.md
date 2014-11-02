@@ -12,6 +12,17 @@ Get current cursor type from this window
 @return the current value of nsCursor  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the current value of nsCursor  
+</td>
+</tr>
+
+</table>
+
 ### getDocumentMetadata(aName) ###
   
 Function to get metadata associated with the window's current document  
@@ -28,6 +39,17 @@ Will throw a DOM security error if called without chrome privileges.
 <tr>
 <td>aName</td>
 <td>the name of the metadata.  This should be all lowercase.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the value of the metadata, or the empty string if it's not set  
 </td>
 </tr>
 
@@ -1311,6 +1333,17 @@ This sets the selection as the specified information.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>True, if succeeded.  Otherwise, false.  
+</td>
+</tr>
+
+</table>
+
 ### selectAtPoint(aX, aY, aSelectBehavior) ###
   
 Select content at a client point based on a selection behavior if the  
@@ -1339,6 +1372,20 @@ this window.
 <tr>
 <td>aSelectType</td>
 <td>The selection behavior requested.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>True if a selection occured, false otherwise.  
+@throw NS_ERROR_DOM_SECURITY_ERR, NS_ERROR_UNEXPECTED for utils  
+issues, and NS_ERROR_INVALID_ARG for coordinates that are outside  
+this window.  
 </td>
 </tr>
 
@@ -1375,6 +1422,17 @@ Returns the parent of obj.
 <tr>
 <td>obj</td>
 <td>The JavaScript object whose parent is to be gotten.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the parent.  
 </td>
 </tr>
 

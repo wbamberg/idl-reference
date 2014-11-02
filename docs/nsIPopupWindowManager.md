@@ -25,6 +25,17 @@ Test whether a website has permission to show a popup window.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>one of the enumerated permission actions defined above  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### ALLOW_POPUP ###

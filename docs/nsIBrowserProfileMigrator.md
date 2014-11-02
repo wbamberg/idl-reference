@@ -68,6 +68,18 @@ offers for import.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>bit field containing profile items (see above)  
+@note    a return value of 0 represents no items rather than ALL.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### sourceExists ###

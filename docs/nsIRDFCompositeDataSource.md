@@ -53,6 +53,18 @@ Retrieve the datasources in the composite data source.
 of the datasources in the composite  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an nsISimpleEnumerator that will enumerate each  
+of the datasources in the composite  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### allowNegativeAssertions ###

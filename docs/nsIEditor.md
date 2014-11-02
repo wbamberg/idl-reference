@@ -135,6 +135,18 @@ state (such as when it's saved).
         Zero means unchanged.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the modification count of the document being edited.  
+        Zero means unchanged.  
+</td>
+</tr>
+
+</table>
+
 ### incrementModificationCount(aModCount) ###
  called each time we modify the document.  
 Increments the modification count of the document.  
@@ -195,6 +207,19 @@ Otherwise, the transaction is just executed directly.
 <td>if PR_TRUE, the undo system is turned on if available  
                 if PR_FALSE the undo system is turned off if it  
                 was previously on  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>if aEnable is PR_TRUE, returns NS_OK if  
+                the undo system could be initialized properly  
+                if aEnable is PR_FALSE, returns NS_OK.  
 </td>
 </tr>
 
@@ -506,6 +531,18 @@ getAttributeValue() retrieves the attribute's value for aElement.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>PR_TRUE if aAttribute is set on the current node,  
+                     PR_FALSE if it is not.  
+</td>
+</tr>
+
+</table>
+
 ### removeAttribute(aElement, aAttribute) ###
   
 removeAttribute() deletes aAttribute from the attribute list of aElement.  
@@ -634,6 +671,17 @@ into aParent at aPosition.
 <tr>
 <td>aPosition</td>
 <td>The place in aParent to insert the new node  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The node created.  Caller must release aNewNode.  
 </td>
 </tr>
 

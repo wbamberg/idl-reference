@@ -31,6 +31,17 @@ Gets the update at the specified index
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The nsIUpdate object at the specified index  
+</td>
+</tr>
+
+</table>
+
 ### saveUpdates() ###
   
 Saves all updates to disk.  

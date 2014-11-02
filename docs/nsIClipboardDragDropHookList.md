@@ -57,3 +57,14 @@ in the list then removal will be ignored).
 Gets an enumerator for all hooks which have been added.  
 @return nsISimpleEnumerator for nsIClipboardDragDropHooks  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>nsISimpleEnumerator for nsIClipboardDragDropHooks  
+</td>
+</tr>
+
+</table>

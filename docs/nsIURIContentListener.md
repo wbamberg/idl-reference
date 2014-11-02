@@ -36,6 +36,18 @@ it happens.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>false</code> if the load can continue;  
+              <code>true</code> if the open should be aborted.  
+</td>
+</tr>
+
+</table>
+
 ### doContent(aContentType, aIsContentPreferred, aRequest, aContentHandler) ###
   
 Notifies the content listener to hook up an nsIStreamListener capable of  
@@ -95,6 +107,23 @@ consuming the data stream.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>true</code> if the load should  
+                            be aborted and consumer wants to  
+                            handle the load completely by itself.  This  
+                            causes the URI Loader do nothing else...  
+                            <code>false</code> if the URI Loader should  
+                            continue handling the load and call the  
+                            returned streamlistener's methods.   
+</td>
+</tr>
+
+</table>
+
 ### isPreferred(aContentType, aDesiredContentType) ###
   
 When given a uri to dispatch, if the URI is specified as 'preferred   
@@ -140,6 +169,19 @@ between isPreferred and canHandleContent.
                             This argument can be <code>nullptr</code> if  
                             the content should be consumed directly as  
                             aContentType.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>true</code> if this is a preferred  
+                            content handler for aContentType;  
+                            <code>false<code> otherwise.  
 </td>
 </tr>
 
@@ -198,6 +240,18 @@ hierarchy.
                             This argument can be <code>nullptr</code> if  
                             the content should be consumed directly as  
                             aContentType.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>true</code> if the data can be consumed.  
+                            <code>false</code> otherwise.  
 </td>
 </tr>
 

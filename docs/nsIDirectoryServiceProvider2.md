@@ -38,3 +38,15 @@ a prop and the requested type is nsISimpleEnumerator.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>ode         NS_SUCCESS_AGGREGATE_RESULT if this result should be  
+                    aggregated with other "lower" providers.  
+</td>
+</tr>
+
+</table>

@@ -55,3 +55,17 @@ Classify a Principal using its URI.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>false</code> if classification is not necessary.  The  
+        callback will not be called.  
+        <code>true</code> if classification will be performed.  The  
+        callback will be called.  
+</td>
+</tr>
+
+</table>

@@ -26,3 +26,14 @@ Determine the group to which the URI belongs.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the group to which the URI belongs  
+</td>
+</tr>
+
+</table>

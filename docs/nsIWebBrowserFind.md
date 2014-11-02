@@ -30,6 +30,17 @@ search string is empty.
 @return  Whether an occurrence was found  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Whether an occurrence was found  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### searchString ###

@@ -15,6 +15,18 @@ array.
         parameters that need to be bound.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a mozIStorageBindingParams object that can be used to specify  
+        parameters that need to be bound.  
+</td>
+</tr>
+
+</table>
+
 ### addParams(aParameters) ###
   
 Adds the parameters to the end of this array.  

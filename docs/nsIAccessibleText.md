@@ -185,6 +185,19 @@ if no character exists at that point
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>offset - Index of the character under the given point or -1 if  
+                 the point is invalid or there is no character under  
+                 the point.  
+</td>
+</tr>
+
+</table>
+
 ### getSelectionBounds(selectionNum, startOffset, endOffset) ###
 
 ### setSelectionBounds(selectionNum, startOffset, endOffset) ###

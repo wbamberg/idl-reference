@@ -37,3 +37,14 @@ to the underlying OS).
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the new window  
+</td>
+</tr>
+
+</table>

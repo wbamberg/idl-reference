@@ -20,6 +20,18 @@ returns the appropriate result.
         <CODE>PR_FALSE</CODE> otherwise.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><CODE>PR_TRUE</CODE> if names match;  
+        <CODE>PR_FALSE</CODE> otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### ItemType() ###
 
 ### findItemWithName(name, aRequestor, aOriginalRequestor) ###

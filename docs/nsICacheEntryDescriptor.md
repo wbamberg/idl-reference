@@ -45,6 +45,17 @@ stream MAY implement nsISeekableStream.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>blocking, unbuffered input stream.  
+</td>
+</tr>
+
+</table>
+
 ### openOutputStream(offset) ###
   
 Open blocking output stream to cache data.  This will fail if the cache  
@@ -70,6 +81,17 @@ truncated to the specified offset.
 <td>offset</td>
 <td>       write starting from this offset into the cached data.  an offset  
        beyond the end of the stream has undefined consequences.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>blocking, unbuffered output stream.  
 </td>
 </tr>
 

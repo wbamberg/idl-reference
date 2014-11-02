@@ -70,6 +70,19 @@ also supports nsIProxiedProtocolHandler.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An object that can be used to cancel the asychronous operation.  
+        If canceled, the cancelation status (aReason) will be forwarded  
+        to the callback's onProxyAvailable method via the aStatus param.  
+</td>
+</tr>
+
+</table>
+
 ### newProxyInfo(aType, aHost, aPort, aFlags, aFailoverTimeout, aFailoverProxy) ###
   
 This method may be called to construct a nsIProxyInfo instance from  

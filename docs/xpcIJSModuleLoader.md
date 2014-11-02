@@ -58,6 +58,17 @@ specified target object and the global object returned as above.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the module code's global object.  
+</td>
+</tr>
+
+</table>
+
 ### importInto(aResourceURI, targetObj, cc) ###
   
 Imports the JS module at aResourceURI to the JS object  
@@ -93,6 +104,18 @@ otherwise.
 <td>resourceURI</td>
 <td>A resource:// URI string representing the location of  
        the js file to be checked if it is already loaded or not.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>boolean, true if the js file has been loaded via import. false  
+         otherwise  
 </td>
 </tr>
 

@@ -37,6 +37,17 @@ whether the menu should even be shown.
 @return true if the menu can be shown, false if it should not be shown  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the menu can be shown, false if it should not be shown  
+</td>
+</tr>
+
+</table>
+
 ### activateNativeMenuItemAt(anIndexString) ###
   
 Activate the native menu item specified by |anIndexString|. This method  

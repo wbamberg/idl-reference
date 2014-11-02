@@ -94,6 +94,17 @@ is already enabled has no effect.
 @return true if tracking succeeded.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if tracking succeeded.  
+</td>
+</tr>
+
+</table>
+
 ### stopEventLoopLagTracking() ###
 
 ## Attributes ##

@@ -56,6 +56,17 @@ Determines if a given accessible is to be accepted in our traversal rule
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a bitfield of FILTER_MATCH and FILTER_IGNORE_SUBTREE.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### preFilter ###

@@ -26,6 +26,17 @@ Return the data associated with the given key.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the data associated with the key  
+</td>
+</tr>
+
+</table>
+
 ### setData(key, data) ###
   
 Set the data for the given key.  

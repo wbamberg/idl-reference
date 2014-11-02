@@ -33,3 +33,15 @@ Callback function for returning query results.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>ode NS_RDF_STOP_VISIT to stop iterating over the query result.  
+            Any error code will stop the iteration as well.  
+</td>
+</tr>
+
+</table>

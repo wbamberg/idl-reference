@@ -40,6 +40,17 @@ Formats a message string from a status code and status arguments.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the formatted message  
+</td>
+</tr>
+
+</table>
+
 ### flushBundles() ###
   
 flushes the string bundle cache - useful when the locale changes or  

@@ -39,6 +39,20 @@ method will exit immediately.
             quit was called with the eRestartNotSameProfile flag.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>ode NS_SUCCESS_RESTART_APP_NOT_SAME_PROFILE  
+            This return code indicates that the application should be  
+            restarted without necessarily using the same profile because  
+            quit was called with the eRestartNotSameProfile flag.  
+</td>
+</tr>
+
+</table>
+
 ### enterLastWindowClosingSurvivalArea() ###
   
 There are situations where all application windows will be  
@@ -77,6 +91,17 @@ Set a flag so on next startup we can detect whether TrackStartupCrashEnd
 was called (and therefore the application crashed).  
 @return whether safe mode is necessary  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether safe mode is necessary  
+</td>
+</tr>
+
+</table>
 
 ### trackStartupCrashEnd() ###
   

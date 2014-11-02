@@ -40,6 +40,17 @@ or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the length of the lists.  
+</td>
+</tr>
+
+</table>
+
 ### getGateways(count, gateways) ###
   
 Get the list of gateways, could be IPv4 or IPv6, typically 1 IPv4 or 1  
@@ -63,6 +74,17 @@ IPv6 or one of each.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the list of gateways.  
+</td>
+</tr>
+
+</table>
+
 ### getDnses(count, dnses) ###
   
 Get the list of dnses, could be IPv4 or IPv6.  
@@ -80,6 +102,17 @@ Get the list of dnses, could be IPv4 or IPv6.
 <tr>
 <td>count</td>
 <td>       The length of the list of dnses.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the list of dnses.  
 </td>
 </tr>
 

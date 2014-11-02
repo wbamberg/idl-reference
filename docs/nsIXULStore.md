@@ -121,6 +121,17 @@ Retrieves a value in the store, or an empty string if it does not exist.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the value of the attribute  
+</td>
+</tr>
+
+</table>
+
 ### removeValue(doc, id, attr) ###
   
 Removes a value in the store.  

@@ -33,6 +33,20 @@ expose to the user, for example on the URL bar.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>nsIURI     The converted, exposable URI  
+@throws NS_ERROR_MALFORMED_URI when the exposable portion of aURI is malformed  
+@throws NS_ERROR_UNKNOWN_PROTOCOL when we can't get a protocol handler service  
+        for the URI scheme.  
+</td>
+</tr>
+
+</table>
+
 ### createFixupURI(aURIText, aFixupFlags, aPostData) ###
   
 Converts the specified string into a URI, first attempting  

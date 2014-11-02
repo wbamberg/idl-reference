@@ -90,6 +90,18 @@ Invoked when the user clicks on the tab preview.
         be activated, false if activation is not accepted.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the top level window corresponding to the preview should  
+        be activated, false if activation is not accepted.  
+</td>
+</tr>
+
+</table>
+
 ### onClick(button) ###
   
 Invoked when one of the buttons on the window preview's toolbar is pressed.  

@@ -99,6 +99,17 @@ Get stream at specified index.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>stream at specified index  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### count ###

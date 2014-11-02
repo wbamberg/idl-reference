@@ -264,6 +264,18 @@ exists.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The preference, or null if no such preference is known to  
+                exist.  
+</td>
+</tr>
+
+</table>
+
 ### getCachedBySubdomainAndName(domain, name, context, len, prefs) ###
   
 Synchronously retrieves from the in-memory cache all preferences with the  
@@ -347,6 +359,18 @@ cached nor known not to exist, then null is returned.
 <tr>
 <td>context</td>
 <td>The private-browsing context, if any.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The preference, or null if no such preference is known to  
+                exist.  
 </td>
 </tr>
 
@@ -828,6 +852,18 @@ URI.  This is how the API extracts domains from URIs passed to it.
 <td>str</td>
 <td>The string representation of a URI, like  
             "http://example.com/foo/bar".  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>If the given string is a valid URI, the domain of that URI is  
+            returned.  Otherwise, the string itself is returned.  
 </td>
 </tr>
 

@@ -33,6 +33,17 @@ Return a sorted array of the names of all installed fonts.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### EnumerateFonts(aLangGroup, aGeneric, aCount, aResult) ###
   
 Return a sorted array of names of fonts that support the given language  
@@ -75,6 +86,17 @@ group and are suitable for use as the given CSS generic font.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>void  
+</td>
+</tr>
+
+</table>
+
 ### HaveFontFor(aLangGroup, aResult) ###
   
 @param  aLangGroup language group  
@@ -88,6 +110,17 @@ group and are suitable for use as the given CSS generic font.
 <tr>
 <td></td>
 <td>aLangGroup language group  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>bool do we have a font for this language group  
 </td>
 </tr>
 
@@ -118,6 +151,17 @@ group and are suitable for use as the given CSS generic font.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>suggested default font for this language group and generic family  
+</td>
+</tr>
+
+</table>
+
 ### updateFontList() ###
   
 update the global font list  
@@ -139,6 +183,18 @@ get the standard family name on the system from given family
 <tr>
 <td></td>
 <td>aName family name which may be alias  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the standard family name on the system, if given name does not  
+        exist, returns empty string  
 </td>
 </tr>
 

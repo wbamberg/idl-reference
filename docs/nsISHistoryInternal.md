@@ -97,6 +97,17 @@ reload.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Whether the operation can proceed.  
+</td>
+</tr>
+
+</table>
+
 ### evictOutOfRangeContentViewers(aIndex) ###
   
 Evict content viewers which don't lie in the "safe" range around aIndex.  

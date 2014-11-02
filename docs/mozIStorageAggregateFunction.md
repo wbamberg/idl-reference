@@ -41,3 +41,14 @@ needs the aggregate function's value.
   
 @returns aggregate result as Variant.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>aggregate result as Variant.  
+</td>
+</tr>
+
+</table>

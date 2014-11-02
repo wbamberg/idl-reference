@@ -68,6 +68,17 @@ Write data into the stream.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>number of bytes written (may be less than aCount)  
+</td>
+</tr>
+
+</table>
+
 ### writeFrom(aFromStream, aCount) ###
   
 Writes data into the stream from an input stream.  
@@ -102,6 +113,17 @@ the output stream's other Write method.
 <tr>
 <td>aCount</td>
 <td>the maximum number of bytes to be written  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>number of bytes written (may be less than aCount)  
 </td>
 </tr>
 
@@ -155,6 +177,17 @@ buffer (e.g., socket output stream).
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>number of bytes written (may be less than aCount)  
+</td>
+</tr>
+
+</table>
+
 ### isNonBlocking() ###
   
 @return true if stream is non-blocking  
@@ -166,3 +199,14 @@ NOTE: a non-blocking output stream may implement nsIAsyncOutputStream to
 provide consumers with a way to wait for the stream to accept more data  
 once its write method is unable to accept any data without blocking.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if stream is non-blocking  
+</td>
+</tr>
+
+</table>

@@ -42,3 +42,15 @@ The process should look like the following:
 @throws exception if the channel was canceled early. Throws status code of  
         canceled channel.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>ChannelDiverterChild IPDL actor to be passed to parent process by  
+        client IPDL message, e.g. PClient.DivertUsing(PDiverterChild).  
+</td>
+</tr>
+
+</table>

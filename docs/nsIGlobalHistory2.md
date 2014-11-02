@@ -75,6 +75,17 @@ Checks to see whether the given URI is in history.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if a URI has been visited  
+</td>
+</tr>
+
+</table>
+
 ### setPageTitle(aURI, aTitle) ###
   
 Set the page title for the given uri. URIs that are not already in  

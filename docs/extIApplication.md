@@ -18,11 +18,33 @@ Quits the application (if nobody objects to quit-application-requested).
 @returns whether quitting will proceed  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether quitting will proceed  
+</td>
+</tr>
+
+</table>
+
 ### restart() ###
   
 Restarts the application (if nobody objects to quit-application-requested).  
 @returns whether restarting will proceed  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether restarting will proceed  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

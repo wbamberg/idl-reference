@@ -36,3 +36,16 @@ Called to obtain the tooltip text for a node.
         with the node and was returned in the aText argument;  
         <CODE>PR_FALSE</CODE> otherwise.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td><CODE>PR_TRUE</CODE> if tooltip text is associated  
+        with the node and was returned in the aText argument;  
+        <CODE>PR_FALSE</CODE> otherwise.  
+</td>
+</tr>
+
+</table>

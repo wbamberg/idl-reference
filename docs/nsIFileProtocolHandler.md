@@ -26,6 +26,17 @@ This method constructs a new file URI
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>reference to a new nsIURI object  
+</td>
+</tr>
+
+</table>
+
 ### getURLSpecFromFile(file) ###
   
 Converts the nsIFile to the corresponding URL string.  NOTE: under  
@@ -78,6 +89,17 @@ Takes a local file and tries to interpret it as an internet shortcut
 <tr>
 <td>file</td>
 <td>The local file to read  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The URI the file refers to  
 </td>
 </tr>
 

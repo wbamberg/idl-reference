@@ -159,6 +159,17 @@ using names built on their own URIs.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The current value of the property.  
+</td>
+</tr>
+
+</table>
+
 ### parseFromString(str, contentType) ###
   
   

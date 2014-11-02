@@ -106,6 +106,17 @@ complying to given traversal rule.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true on success, false if there are no new nodes to traverse to.  
+</td>
+</tr>
+
+</table>
+
 ### movePrevious(aRule, aAnchor, aIncludeStart, aIsFromUserInput) ###
   
 Move pivot to previous object, from current position or given anchor,  
@@ -152,6 +163,17 @@ complying to given traversal rule.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true on success, false if there are no new nodes to traverse to.  
+</td>
+</tr>
+
+</table>
+
 ### moveFirst(aRule, aIsFromUserInput) ###
   
 Move pivot to first object in subtree complying to given traversal rule.  
@@ -176,6 +198,17 @@ Move pivot to first object in subtree complying to given traversal rule.
 <td>aIsFromUserInput</td>
 <td>[in] the pivot changed because of direct user input  
                           (default is true).  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true on success, false if there are no new nodes to traverse to.  
 </td>
 </tr>
 
@@ -240,6 +273,17 @@ Move pivot to next text range.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true on success, false if there are is no more text.  
+</td>
+</tr>
+
+</table>
+
 ### movePreviousByText(aBoundary, aIsFromUserInput) ###
   
 Move pivot to previous text range.  
@@ -266,6 +310,17 @@ Move pivot to previous text range.
 <td>aIsFromUserInput</td>
 <td>[in] the pivot changed because of direct user input  
                           (default is true).  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true on success, false if there are is no more text.  
 </td>
 </tr>
 
@@ -318,6 +373,17 @@ Move pivot to given coordinate in screen pixels.
 <td>aIsFromUserInput</td>
 <td>[in] the pivot changed because of direct user input  
                           (default is true).  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true on success, false if the pivot has not been moved.  
 </td>
 </tr>
 

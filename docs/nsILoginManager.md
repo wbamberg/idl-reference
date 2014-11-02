@@ -390,6 +390,17 @@ aForm regardless of the signon.autofillForms preference.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Promise that is resolved with whether or not the form was filled.  
+</td>
+</tr>
+
+</table>
+
 ### searchLogins(count, matchData, logins) ###
   
 Search for logins in the login manager. An array is always returned;  

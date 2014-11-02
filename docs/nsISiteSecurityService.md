@@ -82,6 +82,20 @@ in future HTTPS connections.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>NS_OK            if it succeeds  
+        NS_ERROR_FAILURE if it can't be parsed  
+        NS_SUCCESS_LOSS_OF_INSIGNIFICANT_DATA  
+                         if there are unrecognized tokens in the header.  
+</td>
+</tr>
+
+</table>
+
 ### unsafeProcessHeader(aType, aSourceURI, aHeader, aFlags, aMaxAge, aIncludeSubdomains) ###
   
 Same as processHeader but without checking for the security properties  

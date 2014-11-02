@@ -23,6 +23,17 @@ Gives you an array of file types associated with this type.
 @return Array of extensions.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Array of extensions.  
+</td>
+</tr>
+
+</table>
+
 ### setFileExtensions(aExtensions) ###
   
 Set File Extensions. Input is a comma delimited list of extensions.  
@@ -36,6 +47,17 @@ associated with this MIME info.
 @return TRUE if the association exists.   
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>TRUE if the association exists.   
+</td>
+</tr>
+
+</table>
+
 ### appendExtension(aExtension) ###
   
 Append a given extension to the set of extensions  
@@ -48,6 +70,17 @@ equivalent.
   
 @returns PR_TRUE if the two are considered equal  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>PR_TRUE if the two are considered equal  
+</td>
+</tr>
+
+</table>
 
 ### launchWithFile(aFile) ###
   

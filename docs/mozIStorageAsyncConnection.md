@@ -131,6 +131,18 @@ $var to indicate named arguments.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a new mozIStorageAsyncStatement  
+@note The statement is created lazily on first execution.  
+</td>
+</tr>
+
+</table>
+
 ### executeAsync(aStatements, aNumStatements, aCallback) ###
   
 Execute an array of statements created with this connection using  
@@ -180,6 +192,17 @@ reset does not need to be called.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an object that can be used to cancel the statements execution.  
+</td>
+</tr>
+
+</table>
+
 ### executeSimpleSQLAsync(aSQLStatement, aCallback) ###
   
 Execute asynchronously an SQL expression, expecting no arguments.  
@@ -207,6 +230,17 @@ Execute asynchronously an SQL expression, expecting no arguments.
 <td>[optional]  
        The callback object that will be notified of progress, errors, and  
        completion.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an object that can be used to cancel the statement execution.  
 </td>
 </tr>
 
@@ -350,12 +384,34 @@ one thread.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>previous registered handler.  
+</td>
+</tr>
+
+</table>
+
 ### removeProgressHandler() ###
   
 Remove a progress handler.  
   
 @return previous registered handler.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>previous registered handler.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

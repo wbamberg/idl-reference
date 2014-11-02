@@ -131,6 +131,18 @@ Find whether a given cookie already exists.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if a cookie was found which matches the host, path, and name  
+        fields of aCookie  
+</td>
+</tr>
+
+</table>
+
 ### countCookiesFromHost(aHost) ###
   
 Count how many cookies exist within the base domain of 'aHost'.  
@@ -155,6 +167,17 @@ counted.
 <td>       the host string to search for, e.g. "google.com". this should consist  
        of only the host portion of a URI. see @add for a description of  
        acceptable host strings.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the number of cookies found.  
 </td>
 </tr>
 
@@ -186,6 +209,17 @@ subdomains would be returned.
 <td>       the host string to search for, e.g. "google.com". this should consist  
        of only the host portion of a URI. see @add for a description of  
        acceptable host strings.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an nsISimpleEnumerator of nsICookie2 objects.  
 </td>
 </tr>
 

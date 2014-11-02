@@ -38,6 +38,18 @@ Get the value of a particular request header.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the value of the request header.  
+@throws NS_ERROR_NOT_AVAILABLE if the header is not set.  
+</td>
+</tr>
+
+</table>
+
 ### setRequestHeader(aHeader, aValue, aMerge) ###
   
 Set the value of a particular request header.  
@@ -142,6 +154,17 @@ Get the value of a particular response header.
 <td>aHeader</td>
 <td>       The case-insensitive name of the response header to query (e.g.,  
        "Set-Cookie").  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the value of the response header.  
 </td>
 </tr>
 

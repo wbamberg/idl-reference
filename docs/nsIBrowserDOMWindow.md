@@ -60,6 +60,17 @@ Load a URI
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the window into which the URI was opened.  
+</td>
+</tr>
+
+</table>
+
 ### openURIInFrame(aURI, aOpener, aWhere, aContext) ###
   
 As above, but return the nsIFrameLoaderOwner for the new window.  
@@ -81,6 +92,18 @@ As above, but return the nsIFrameLoaderOwner for the new window.
 <tr>
 <td></td>
 <td>aWindow the window to test.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether the window is the main content window for any  
+        currently open tab in this toplevel browser window.  
 </td>
 </tr>
 

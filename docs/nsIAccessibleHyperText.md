@@ -34,6 +34,17 @@ Return link accessible at the given index.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>link accessible or null if there is no link at that index  
+</td>
+</tr>
+
+</table>
+
 ### getLinkIndex(link) ###
   
 Return index of the given link.  
@@ -51,6 +62,18 @@ Return index of the given link.
 <tr>
 <td>link</td>
 <td>[in] link accessible the index is requested for  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>index of the given link or null if there's no link within  
+               hypertext accessible  
 </td>
 </tr>
 

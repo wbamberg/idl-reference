@@ -119,6 +119,18 @@ Initial value must be 0, unless line is not real line.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Cite Level, i.e. number of txt quote tags found, i.e. number of  
+nested quotes.  
+</td>
+</tr>
+
+</table>
+
 ### findURLInPlaintext(text, aLength, aPos, aStartPos, aEndPos) ###
    
 @param a wide string to scan for the presence of a URL.  

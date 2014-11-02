@@ -27,3 +27,14 @@ redirection may be to a non-http channel.
   
 @return failure cancels redirect  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>failure cancels redirect  
+</td>
+</tr>
+
+</table>

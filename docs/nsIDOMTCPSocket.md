@@ -50,6 +50,17 @@ the given host and port.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The new TCPSocket instance.  
+</td>
+</tr>
+
+</table>
+
 ### listen(localPort, options, backlog) ###
   
 Listen on a port  
@@ -92,6 +103,17 @@ Listen on a port
 <td>The maximum length the queue of pending connections may grow to.  
                This parameter may be silently limited by the operating system.  
                Pass -1 to use the default value.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The new TCPServerSocket instance.  
 </td>
 </tr>
 
@@ -171,6 +193,26 @@ Write data to the socket.
 <td>byteLength</td>
 <td>The number of bytes to write. Has no effect on  
                   non-ArrayBuffer data.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Send returns true or false as a hint to the caller that  
+        they may either continue sending more data immediately, or  
+        may want to wait until the other side has read some of the  
+        data which has already been written to the socket before  
+        buffering more. If send returns true, then less than 64k  
+        has been buffered and it's safe to immediately write more.  
+        If send returns false, then more than 64k has been buffered,  
+        and the caller may wish to wait until the ondrain event  
+        handler has been called before buffering more data by more  
+        calls to send.  
 </td>
 </tr>
 

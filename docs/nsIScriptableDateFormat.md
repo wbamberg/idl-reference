@@ -80,6 +80,18 @@ you depend on any specific format or language.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The date and time formatted as human readable text according to  
+        user preferences or the given locale.  
+</td>
+</tr>
+
+</table>
+
 ### FormatDate(locale, dateFormatSelector, year, month, day) ###
   
 Format the given date in a human readable format.  

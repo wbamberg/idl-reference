@@ -47,6 +47,17 @@ signature.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the signature matches the data, false if not.  
+</td>
+</tr>
+
+</table>
+
 ### verifySignature(aSignature, aSignatureLen, plaintext, plaintextLen, errorCode) ###
 
 ## Constants ##

@@ -125,6 +125,17 @@ new profile directory.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The created profile.  
+</td>
+</tr>
+
+</table>
+
 ### flush() ###
   
 Flush the profiles list file.  

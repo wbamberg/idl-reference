@@ -86,3 +86,14 @@ Converts from one flavor to another.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>returns NS_OK if it was converted  
+</td>
+</tr>
+
+</table>

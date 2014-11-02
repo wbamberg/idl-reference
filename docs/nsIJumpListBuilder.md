@@ -30,6 +30,17 @@ after initListBuild is called, lists should be built in single-shot fasion.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the operation completed successfully.  
+</td>
+</tr>
+
+</table>
+
 ### addListToBuild(aCatType, items, catName) ###
   
 Adds a list and if required, a set of items for the list.  
@@ -74,6 +85,17 @@ since the last commit.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the operation completed successfully.  
+</td>
+</tr>
+
+</table>
+
 ### abortListBuild() ###
   
 Aborts and clears the current jump list build.  
@@ -86,6 +108,17 @@ Commits the current jump list build to the Taskbar.
 @returns true if the operation completed successfully.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the operation completed successfully.  
+</td>
+</tr>
+
+</table>
+
 ### deleteActiveList() ###
   
 Deletes any currently applied taskbar jump list for this application.  
@@ -95,6 +128,17 @@ Common uses would be the enabling of a privacy mode and uninstallation.
   
 @throw NS_ERROR_UNEXPECTED on internal errors.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the operation completed successfully.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

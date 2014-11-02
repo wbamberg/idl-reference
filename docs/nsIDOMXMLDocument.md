@@ -26,6 +26,17 @@ Load an XML document.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>True if load successfull.  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### async ###

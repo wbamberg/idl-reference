@@ -112,12 +112,34 @@ key does not exist.
 @return nsIWindowsRegKey for the newly opened subkey.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>nsIWindowsRegKey for the newly opened subkey.  
+</td>
+</tr>
+
+</table>
+
 ### createChild(relPath, mode) ###
   
 This method opens or creates a subkey relative to this key.  
   
 @return nsIWindowsRegKey for the newly opened or created subkey.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>nsIWindowsRegKey for the newly opened or created subkey.  
+</td>
+</tr>
+
+</table>
 
 ### getChildName(index) ###
   

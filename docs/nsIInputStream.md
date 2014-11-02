@@ -49,6 +49,17 @@ implementations automatically close when eof is reached; some do not).
   condition  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>number of bytes currently available in the stream.  
+</td>
+</tr>
+
+</table>
+
 ### read(aBuf, aCount) ###
    
 Read data from the stream.  
@@ -79,6 +90,17 @@ NOTE: this method should not throw NS_BASE_STREAM_CLOSED.
 <tr>
 <td>aCount</td>
 <td>the maximum number of bytes to be read  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>0 if reached end-of-file  
 </td>
 </tr>
 
@@ -134,6 +156,17 @@ NOTE: this method should not throw NS_BASE_STREAM_CLOSED.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>0 if reached end-of-file (or if aWriter refused to consume data)  
+</td>
+</tr>
+
+</table>
+
 ### isNonBlocking() ###
   
 @return true if stream is non-blocking  
@@ -145,3 +178,14 @@ NOTE: a non-blocking input stream may implement nsIAsyncInputStream to
 provide consumers with a way to wait for the stream to have more data  
 once its read method is unable to return any data without blocking.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if stream is non-blocking  
+</td>
+</tr>
+
+</table>

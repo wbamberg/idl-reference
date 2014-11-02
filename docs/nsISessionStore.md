@@ -18,6 +18,17 @@ Get the current browsing state.
 @returns a JSON string representing the session state.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a JSON string representing the session state.  
+</td>
+</tr>
+
+</table>
+
 ### getClosedTabCount(aWindow) ###
   
 Get the number of restore-able tabs for a browser window  
@@ -43,6 +54,17 @@ Get closed tab data
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a JS array of closed tabs.  
+</td>
+</tr>
+
+</table>
+
 ### undoCloseTab(aWindow, aCloseTabData) ###
   
 @param aWindow is the browser window to reopen a closed tab in.  
@@ -63,6 +85,17 @@ Get closed tab data
 <tr>
 <td>aCloseTabData</td>
 <td>is the data of the tab to be restored.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a reference to the reopened tab.  
 </td>
 </tr>
 
@@ -113,6 +146,17 @@ Get closed tab data
 <tr>
 <td>aKey</td>
 <td>is the value's name.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A string value or an empty string if none is set.  
 </td>
 </tr>
 

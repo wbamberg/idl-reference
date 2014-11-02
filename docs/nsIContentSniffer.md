@@ -51,3 +51,14 @@ nsIRequest might offer.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The content type  
+</td>
+</tr>
+
+</table>

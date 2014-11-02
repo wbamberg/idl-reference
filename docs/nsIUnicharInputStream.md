@@ -21,6 +21,19 @@ Reads into a caller-provided character array.
 @note To read more than 2^32 characters, call this method multiple times.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The number of characters that were successfully read. May be less  
+        than aCount, even if there is more data in the input stream.  
+        A return value of 0 means EOF.  
+</td>
+</tr>
+
+</table>
+
 ### readSegments(aWriter, aClosure, aCount) ###
   
 Low-level read method that has access to the stream's underlying buffer.  
@@ -68,6 +81,17 @@ buffer
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>0 if reached end of file (or if aWriter refused to consume data)  
+</td>
+</tr>
+
+</table>
+
 ### readString(aCount, aString) ###
   
 Read into a string object.  
@@ -82,6 +106,17 @@ Read into a string object.
 <tr>
 <td>aCount</td>
 <td>The number of characters that should be read  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The number of characters that were read.  
 </td>
 </tr>
 

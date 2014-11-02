@@ -67,6 +67,19 @@ accesses before the fill or flush point is reached.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>   The aligned pointer to aLength bytes in the buffer, or null if the  
+   buffer has no room for aLength bytes starting at the next address A  
+   after the current position that satisfies (A & aAlignMask) == 0.  
+</td>
+</tr>
+
+</table>
+
 ### putBuffer(aBuffer, aLength) ###
   
 Relinquish access to the stream's buffer, filling if at end of an input  

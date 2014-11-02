@@ -25,3 +25,14 @@ This method checks if the external handler exists for a given scheme.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>TRUE if the external handler exists for the input scheme, FALSE otherwise.  
+</td>
+</tr>
+
+</table>

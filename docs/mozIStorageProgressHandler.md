@@ -32,3 +32,14 @@ onProgress is invoked periodically during long running calls.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true to abort request, false to continue work.  
+</td>
+</tr>
+
+</table>

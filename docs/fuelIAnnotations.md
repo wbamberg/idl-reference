@@ -32,6 +32,18 @@ Determines if an annotation exists with the given name.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if an annotation exists with the given name,  
+         false otherwise.  
+</td>
+</tr>
+
+</table>
+
 ### get(aName) ###
   
 Gets the value of an annotation with the given name.  
@@ -49,6 +61,18 @@ Gets the value of an annotation with the given name.
 <td></td>
 <td>aName  
          The name of the annotation  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A variant containing the value of the annotation. Supports  
+         string, boolean and number.  
 </td>
 </tr>
 

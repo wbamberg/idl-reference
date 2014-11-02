@@ -110,6 +110,17 @@ install add-ons.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the caller should start the installs  
+</td>
+</tr>
+
+</table>
+
 ### onWebInstallRequested(aOriginator, aUri, aInstalls, aCount) ###
   
 Called when a website wants to ask the user to install add-ons.  
@@ -154,6 +165,17 @@ Called when a website wants to ask the user to install add-ons.
 <td></td>
 <td>aCount  
         The number of AddonInstalls  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the caller should start the installs  
 </td>
 </tr>
 

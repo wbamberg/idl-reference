@@ -37,6 +37,18 @@ Select all items.
         otherwise true.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>false if the object does not accept multiple selection,  
+        otherwise true.  
+</td>
+</tr>
+
+</table>
+
 ### unselectAll() ###
   
 Unselect all items.  

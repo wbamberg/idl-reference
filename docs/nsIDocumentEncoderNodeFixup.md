@@ -38,3 +38,14 @@ instead of the children of the original node.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The resulting fixed up node.  
+</td>
+</tr>
+
+</table>

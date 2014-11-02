@@ -67,6 +67,17 @@ equivalent.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>new cache session.  
+</td>
+</tr>
+
+</table>
+
 ### visitEntries(visitor) ###
   
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.  

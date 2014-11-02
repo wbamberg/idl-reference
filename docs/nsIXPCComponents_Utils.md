@@ -46,6 +46,18 @@ otherwise.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>boolean, true if the js file has been loaded via import. false  
+         otherwise  
+</td>
+</tr>
+
+</table>
+
 ### unload(registryLocation) ###
 
 ### importGlobalProperties(aPropertyList) ###
@@ -93,6 +105,18 @@ map as an array.  Otherwise, return undefined.
 <tr>
 <td>aMap</td>
 <td>weak map or other JavaScript value  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>If aMap is a weak map object, return the keys of the weak  
+map as an array.  Otherwise, return undefined.  
 </td>
 </tr>
 

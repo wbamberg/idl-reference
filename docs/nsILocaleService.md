@@ -31,12 +31,34 @@ Create a new nsILocale from a locale string.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A nsILocale representing the given locale.  
+</td>
+</tr>
+
+</table>
+
 ### getSystemLocale() ###
   
 Get the user preference for locale from the operating system.  
   
 @return User's OS setting for preferred locale.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>User's OS setting for preferred locale.  
+</td>
+</tr>
+
+</table>
 
 ### getApplicationLocale() ###
   
@@ -48,6 +70,17 @@ similar to getSystemLocale.
   
 @return User's OS setting for preferred locale.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>User's OS setting for preferred locale.  
+</td>
+</tr>
+
+</table>
 
 ### getLocaleFromAcceptLanguage(acceptLanguage) ###
   
@@ -73,6 +106,18 @@ Get the most preferred locale from a list of locale preferences.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The most preferred locale according to the acceptLanguage  
+        parameter.  
+</td>
+</tr>
+
+</table>
+
 ### getLocaleComponentForUserAgent() ###
   
 Get the user preference for locale from the operating system.  
@@ -83,3 +128,15 @@ returns the same as getSystemLocale, but as a string.
 @return User's OS setting for preferred locale in the format described  
         in nsILocale.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>User's OS setting for preferred locale in the format described  
+        in nsILocale.  
+</td>
+</tr>
+
+</table>

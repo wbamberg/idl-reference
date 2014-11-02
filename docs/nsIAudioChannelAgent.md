@@ -112,6 +112,22 @@ Note: Gecko component SHOULD call this function first then start to
          component should start playback as well as reducing the volume.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>   normal state: the agent has registered with audio channel service and  
+         the component should start playback.  
+   muted state: the agent has registered with audio channel service but  
+         the component should not start playback.  
+   faded state: the agent has registered with audio channel service the  
+         component should start playback as well as reducing the volume.  
+</td>
+</tr>
+
+</table>
+
 ### stopPlaying() ###
   
 Notify the agent we no longer want to play.  

@@ -61,6 +61,17 @@ due to a nsIWebNavigation::goBack() call.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Whether the operation can proceed.  
+</td>
+</tr>
+
+</table>
+
 ### OnHistoryGoForward(aForwardURI) ###
   
 Called when navigating to a next session history entry, for example  
@@ -77,6 +88,17 @@ due to a nsIWebNavigation::goForward() call.
 <tr>
 <td>aForwardURI</td>
 <td>The URI of the session history entry being navigated to.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Whether the operation can proceed.  
 </td>
 </tr>
 
@@ -116,6 +138,17 @@ nsIWebNavigation::reload() call.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Whether the operation can proceed.  
+</td>
+</tr>
+
+</table>
+
 ### OnHistoryGotoIndex(aIndex, aGotoURI) ###
   
 Called when navigating to a session history entry by index, for example,  
@@ -144,6 +177,17 @@ when nsIWebNavigation::gotoIndex() is called.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Whether the operation can proceed.  
+</td>
+</tr>
+
+</table>
+
 ### OnHistoryPurge(aNumEntries) ###
   
 Called when entries are removed from session history. Entries can be  
@@ -164,6 +208,17 @@ To purge documents from session history call nsISHistory::PurgeHistory()
 <tr>
 <td>aNumEntries</td>
 <td>The number of entries to be removed from session history.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Whether the operation can proceed.  
 </td>
 </tr>
 

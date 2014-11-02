@@ -125,6 +125,17 @@ returns the absolute z-index of a positioned element. Never returns 'auto'.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the z-index of the element  
+</td>
+</tr>
+
+</table>
+
 ### setElementZIndex(aElement, aZorder) ###
   
 sets the z-index of an element.  
@@ -173,6 +184,17 @@ adds aChange to the z-index of an arbitrary element.
 <td>aChange</td>
 <td>[IN] relative change to apply to current z-index of  
                      the element  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the new z-index of the element  
 </td>
 </tr>
 

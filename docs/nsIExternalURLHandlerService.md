@@ -37,3 +37,14 @@ overridden by each OS's implementation.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An nsIHanderInfo for the protocol.  
+</td>
+</tr>
+
+</table>

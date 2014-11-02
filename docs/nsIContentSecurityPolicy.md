@@ -81,6 +81,18 @@ Whether this policy allows in-page script.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>    Whether or not the effects of the inline script should be allowed  
+    (block the compilation if false).  
+</td>
+</tr>
+
+</table>
+
 ### getAllowsEval(shouldReportViolations) ###
   
 whether this policy allows eval and eval-like functions  
@@ -105,6 +117,18 @@ such as setTimeout("code string", time).
     This function returns "true" when violating report-only policies, but  
     when any policy (report-only or otherwise) is violated,  
     shouldReportViolations is true as well.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>    Whether or not the effects of the eval call should be allowed  
+    (block the call if false).  
 </td>
 </tr>
 
@@ -137,6 +161,18 @@ HTML elements.
     (don't block), but one or more policy may still want to send  
     violation reports so shouldReportViolations will be true even if the  
     inline style should be permitted.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>    Whether or not the effects of the inline style should be allowed  
+    (block the rules if false).  
 </td>
 </tr>
 
@@ -185,6 +221,17 @@ Whether this policy accepts the given nonce
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>    Whether or not this nonce is valid  
+</td>
+</tr>
+
+</table>
+
 ### getAllowsHash(aContent, aContentType, shouldReportViolation) ###
   
 Whether this policy accepts the given inline resource based on the hash  
@@ -224,6 +271,17 @@ of its content.
 <td>    Whether this inline resource should be reported as a hash-source  
     violation. If there are no hash-sources in the policy, this is  
     always false.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>    Whether or not this inline resource is whitelisted by a hash-source  
 </td>
 </tr>
 
@@ -339,6 +397,19 @@ value should not be cached.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>   true if the frame's ancestors are all allowed by policy (except for  
+   report-only policies, which will send reports and then return true  
+   here when violated).  
+</td>
+</tr>
+
+</table>
+
 ### permitsBaseURI(aURI) ###
   
 Whether this policy allows setting the document's base URI to  
@@ -348,6 +419,18 @@ a given value.
    Whether or not the provided URI is allowed to be used as the  
    document's base URI. (block the setting if false).  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>   Whether or not the provided URI is allowed to be used as the  
+   document's base URI. (block the setting if false).  
+</td>
+</tr>
+
+</table>
 
 ### shouldLoad(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeTypeGuess, aExtra) ###
   

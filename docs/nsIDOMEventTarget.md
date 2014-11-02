@@ -129,6 +129,17 @@ stopPropagation() of the event.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>NS_OK if succeed.  Otherwise, NS_ERROR_*.  
+</td>
+</tr>
+
+</table>
+
 ### removeEventListener(type, listener, useCapture) ###
   
 This method allows the removal of event listeners from the event   
@@ -217,6 +228,24 @@ dispatchEvent is called.
 <td></td>
 <td>evt Specifies the event type, behavior, and contextual   
              information to be used in processing the event.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Indicates whether any of the listeners which handled the   
+         event called preventDefault. If preventDefault was called   
+         the value is false, else the value is true.  
+@throws  INVALID_STATE_ERR: Raised if the Event's type was   
+             not specified by initializing the event before   
+             dispatchEvent was called. Specification of the Event's   
+             type as null or an empty string will also trigger this   
+             exception.  
 </td>
 </tr>
 

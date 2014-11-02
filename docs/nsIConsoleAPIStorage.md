@@ -33,6 +33,20 @@ Get the events array by inner window ID or all events from all windows.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>array  
+         The array of cached events for the given window. If no |aId| is  
+         given this function returns all of the cached events, from any  
+         window.  
+</td>
+</tr>
+
+</table>
+
 ### recordEvent(aId, aEvent) ###
   
 Record an event associated with the given window ID.  

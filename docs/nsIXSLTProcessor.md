@@ -70,6 +70,17 @@ owns the returned document fragment.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>DocumentFragment The result of the transformation  
+</td>
+</tr>
+
+</table>
+
 ### transformToDocument(source) ###
   
 Transforms the node source applying the stylesheet given by the  
@@ -88,6 +99,17 @@ importStylesheet() function.
 <tr>
 <td>source</td>
 <td>The node to be transformed  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Document The result of the transformation  
 </td>
 </tr>
 
@@ -154,6 +176,17 @@ otherwise.
 <tr>
 <td>localName</td>
 <td>The local name of the XSLT parameter  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>nsIVariant  The value of the XSLT parameter  
 </td>
 </tr>
 

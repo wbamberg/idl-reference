@@ -140,6 +140,17 @@ Create a new window.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the newly minted window  
+</td>
+</tr>
+
+</table>
+
 ### applyChromeFlags() ###
   
 Back-door method to force application of chrome flags at a particular  

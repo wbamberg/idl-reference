@@ -15,6 +15,17 @@ it will remain in the same order in the future.
 @returns a list of all handlers in the datastore  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a list of all handlers in the datastore  
+</td>
+</tr>
+
+</table>
+
 ### fillHandlerInfo(aHandlerInfo, aOverrideType) ###
   
 Fill a handler info object with information from the datastore.  
@@ -125,6 +136,17 @@ is caught in the implementation), false will be returned.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether or not a record exists  
+</td>
+</tr>
+
+</table>
+
 ### remove(aHandlerInfo) ###
   
 Remove the given handler info object from the datastore.  Deletes all  
@@ -171,6 +193,17 @@ to specifically get only the mapping available in the datastore.
 <tr>
 <td>aFileExtension</td>
 <td>the file extension  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the MIME type, if any; otherwise returns an empty string ("").  
 </td>
 </tr>
 

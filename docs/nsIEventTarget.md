@@ -53,6 +53,19 @@ Check to see if this event target is associated with the current thread.
   this method).  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>  A boolean value that if "true" indicates that events dispatched to this  
+  event target will run on the current thread (i.e., the thread calling  
+  this method).  
+</td>
+</tr>
+
+</table>
+
 ## Constants ##
 
 ### DISPATCH_NORMAL ###

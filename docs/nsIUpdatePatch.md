@@ -32,6 +32,17 @@ Serializes this patch object into a DOM Element
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The DOM Element created by the serialization process  
+</td>
+</tr>
+
+</table>
+
 ## Attributes ##
 
 ### type ###

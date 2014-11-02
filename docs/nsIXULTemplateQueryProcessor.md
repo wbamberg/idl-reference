@@ -136,6 +136,17 @@ the data is available.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a datasource object  
+</td>
+</tr>
+
+</table>
+
 ### initializeForBuilding(aDatasource, aBuilder, aRootNode) ###
   
 Initialize for query generation. This will be called before the rules are  
@@ -240,6 +251,17 @@ indicate what variable is expected to contain the results.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a compiled query object  
+</td>
+</tr>
+
+</table>
+
 ### generateResults(aDatasource, aRef, aQuery) ###
   
 Generate the results of a query and return them in an enumerator. The  
@@ -282,6 +304,17 @@ typically with different values for aRef.
 <tr>
 <td>aQuery</td>
 <td>the compiled query returned from query compilation  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an enumerator of nsIXULTemplateResult objects as the results  
 </td>
 </tr>
 
@@ -381,6 +414,17 @@ translate the reference.
 <tr>
 <td>aRefString</td>
 <td>the ref attribute string  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the translated ref  
 </td>
 </tr>
 

@@ -43,6 +43,20 @@ Returns the value for the header in this request specified by fieldName.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>  The result is a string containing the individual values of the header,  
+  usually separated with a comma.  The headers WWW-Authenticate,  
+  Proxy-Authenticate, and Set-Cookie violate the HTTP specification,  
+  however, and for these headers only the separator string is '\n'.  
+</td>
+</tr>
+
+</table>
+
 ### hasHeader(fieldName) ###
   
 Returns true if a header with the given field name exists in this, false  

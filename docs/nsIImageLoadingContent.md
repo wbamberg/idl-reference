@@ -99,6 +99,18 @@ known
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the imgIRequest object (may be null, even when no error  
+is thrown)  
+</td>
+</tr>
+
+</table>
+
 ### frameCreated(aFrame) ###
   
 Used to notify the image loading content node that a frame has been  
@@ -136,6 +148,17 @@ interface of an observer)
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an enum value saying what type this request is  
+</td>
+</tr>
+
+</table>
+
 ### loadImageWithChannel(aChannel) ###
   
 loadImageWithChannel allows data from an existing channel to be  
@@ -157,6 +180,17 @@ used as the image data for this content node.
 <tr>
 <td>aChannel</td>
 <td>the channel that will deliver the data  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a stream listener to pump the image data into  
 </td>
 </tr>
 

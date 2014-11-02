@@ -153,3 +153,20 @@ Module load management
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>indicates to the caller if the module can be unloaded.  
+		Returning PR_TRUE isn't a guarantee that the module will be  
+	unloaded. It constitues only willingness of the module to be  
+	unloaded.  It is very important to ensure that no outstanding   
+      references to the module's code/data exist before returning   
+      PR_TRUE.   
+	Returning PR_FALSE guaratees that the module won't be unloaded.  
+</td>
+</tr>
+
+</table>

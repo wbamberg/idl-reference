@@ -43,3 +43,14 @@ NSILOCALE_MESSAGES: Related to fonts, character encodings etc.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The locale code to be used for the given category.  
+</td>
+</tr>
+
+</table>

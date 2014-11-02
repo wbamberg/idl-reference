@@ -273,6 +273,20 @@ other running scripts.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The result of the evaluation as a jsval. If the caller  
+        intends to use the return value from this call the caller  
+        is responsible for rooting the jsval before making a call  
+        to this method.  
+</td>
+</tr>
+
+</table>
+
 ### setReportAllJSExceptions(reportAllJSExceptions) ###
   
 Whether or not XPConnect should report all JS exceptions when returning  

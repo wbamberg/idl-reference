@@ -221,6 +221,18 @@ Returns an engine with the specified alias.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The corresponding nsISearchEngine object, or null if it doesn't  
+         exist.  
+</td>
+</tr>
+
+</table>
+
 ### getEngineByName(aEngineName) ###
   
 Returns an engine with the specified name.  
@@ -244,12 +256,35 @@ Returns an engine with the specified name.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The corresponding nsISearchEngine object, or null if it doesn't  
+         exist.  
+</td>
+</tr>
+
+</table>
+
 ### getEngines(engineCount, engines) ###
   
 Returns an array of all installed search engines.  
   
 @returns an array of nsISearchEngine objects.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an array of nsISearchEngine objects.  
+</td>
+</tr>
+
+</table>
 
 ### getVisibleEngines(engineCount, engines) ###
   
@@ -259,6 +294,17 @@ false.
 @returns an array of nsISearchEngine objects.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an array of nsISearchEngine objects.  
+</td>
+</tr>
+
+</table>
+
 ### getDefaultEngines(engineCount, engines) ###
   
 Returns an array of all default search engines. This includes all loaded  
@@ -267,6 +313,17 @@ engines that aren't in the user's profile directory
   
 @returns an array of nsISearchEngine objects.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an array of nsISearchEngine objects.  
+</td>
+</tr>
+
+</table>
 
 ### moveEngine(engine, newIndex) ###
   

@@ -62,6 +62,17 @@ Perform platform specific operations when a download is done.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>none  
+</td>
+</tr>
+
+</table>
+
 ### mapUrlToZone(aURL) ###
   
 Proxy for IInternetSecurityManager::MapUrlToZone().  
@@ -80,6 +91,17 @@ Proxy for IInternetSecurityManager::MapUrlToZone().
 <tr>
 <td>aURL</td>
 <td>       URI of the download  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Security Zone corresponding to aURL.  
 </td>
 </tr>
 

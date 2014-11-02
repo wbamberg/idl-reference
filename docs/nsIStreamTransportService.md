@@ -69,6 +69,17 @@ CreateInputTransport
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>nsITransport instance.  
+</td>
+</tr>
+
+</table>
+
 ### createOutputTransport(aStream, aStartOffset, aWriteLimit, aCloseWhenDone) ###
   
 CreateOutputTransport  
@@ -120,6 +131,17 @@ CreateOutputTransport
 <td>aCloseWhenDone</td>
 <td>       Specify this flag to have the output stream closed once its  
        contents have been completely written.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>nsITransport instance.  
 </td>
 </tr>
 

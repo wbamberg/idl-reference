@@ -115,6 +115,17 @@ null will be returned.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the deepest accessible child containing the given point  
+</td>
+</tr>
+
+</table>
+
 ### getDeepestChildAtPoint(x, y) ###
   
 Deepest accessible child which contains the coordinate at (x, y) in screen  
@@ -140,6 +151,17 @@ accessible or a child, then null will be returned.
 <tr>
 <td>y</td>
 <td>screen's y coordinate  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the deepest accessible child containing the given point  
 </td>
 </tr>
 

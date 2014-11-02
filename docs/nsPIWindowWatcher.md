@@ -155,6 +155,17 @@ be nullptr if this window is not being opened from a tab.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the new window  
+</td>
+</tr>
+
+</table>
+
 ### findItemWithName(aName, aRequestor, aOriginalRequestor) ###
   
 Find a named docshell tree item amongst all windows registered  
@@ -198,6 +209,23 @@ for example.
 <td>aOriginalRequestor</td>
 <td>the original treeitem that made the request.  
        Used for security checks.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the tree item with aName as the name, or null if there  
+        isn't one.  "Special" names, like _self, _top, etc, will be  
+        treated specially only if aRequestor is null; in that case they  
+        will be resolved relative to the first window the windowwatcher  
+        knows about.  
+@see findItemWithName methods on nsIDocShellTreeItem and  
+     nsIDocShellTreeOwner  
 </td>
 </tr>
 

@@ -40,6 +40,17 @@ the same.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the two are logically equivalent, false otherwise  
+</td>
+</tr>
+
+</table>
+
 ### launchWithURI(aURI, aWindowContext) ###
   
 Launches the application with the specified URI.  

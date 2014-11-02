@@ -60,6 +60,19 @@ send to the search engine, including the URI and postData, if applicable.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A nsISearchSubmission object that contains information about what  
+         to send to the search engine.  If no submission can be  
+         obtained for the given responseType, returns null.  
+</td>
+</tr>
+
+</table>
+
 ### addParam(name, value, responseType) ###
   
 Adds a parameter to the search engine's submission data. This should only  
@@ -219,6 +232,17 @@ but will default to host from the <Url>'s template otherwise.
 <td></td>
 <td>responseType [optional]  
         The MIME type to get resultDomain for.  Defaults to "text/html".  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the resultDomain for the given responseType.  
 </td>
 </tr>
 

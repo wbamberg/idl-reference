@@ -46,6 +46,17 @@ charset (if any).
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the MIME type specified in the header, in lower-case.  
+</td>
+</tr>
+
+</table>
+
 ### protocolHasFlags(aURI, aFlag) ###
   
 Test whether the given URI's handler has the given protocol flags.  
@@ -70,6 +81,18 @@ Test whether the given URI's handler has the given protocol flags.
 <tr>
 <td>aFlags</td>
 <td>the flags we're testing for.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether the protocol handler for aURI has all the flags  
+        in aFlags.  
 </td>
 </tr>
 
@@ -101,6 +124,18 @@ nsINestedURI and walk the nested URI chain.
 <tr>
 <td>aFlags</td>
 <td>the flags we're testing for.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether any of the protocol handlers involved have all the flags  
+        in aFlags.  
 </td>
 </tr>
 
@@ -155,6 +190,17 @@ escape a string with %00-style escaping
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the escaped string (the string itself if escaping did not happen)  
+</td>
+</tr>
+
+</table>
+
 ### unescapeString(aStr, aFlags) ###
   
 Expands URL escape sequences  
@@ -181,6 +227,17 @@ Expands URL escape sequences
 <td>only ESCAPE_URL_ONLY_NONASCII and ESCAPE_URL_SKIP_CONTROL  
               are recognized.  If |aFlags| is 0 all escape sequences are   
               unescaped  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>unescaped string  
 </td>
 </tr>
 
@@ -244,6 +301,19 @@ that won out does not have a charset parameter specified.
              of the string) in aTypeHeader.  If this function returns  
              false, this argument will still be set, to the index of the  
              location where a new charset should be inserted.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether a charset parameter was found.  This can be false even in  
+cases when parseContentType would claim to have a charset, if the type  
+that won out does not have a charset parameter specified.  
 </td>
 </tr>
 

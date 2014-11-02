@@ -539,6 +539,17 @@ the selection.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Name of block tag. "" is returned for none.  
+</td>
+</tr>
+
+</table>
+
 ### getFontFaceState(aMixed) ###
    
 getFontFaceState returns what font face is in the selection.  
@@ -554,6 +565,18 @@ getFontFaceState returns what font face is in the selection.
 <tr>
 <td>aMixed</td>
 <td>True if there is more than one font face  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Name of face.  Note: "tt" is returned for  
+                 tt tag.  "" is returned for none.  
 </td>
 </tr>
 
@@ -578,6 +601,17 @@ getFontColorState returns what font face is in the selection.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Color string. "" is returned for none.  
+</td>
+</tr>
+
+</table>
+
 ### getBackgroundColorState(aMixed) ###
    
 getFontColorState returns what font face is in the selection.  
@@ -597,6 +631,17 @@ getFontColorState returns what font face is in the selection.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Color string. "" is returned for none.  
+</td>
+</tr>
+
+</table>
+
 ### getHighlightColorState(aMixed) ###
    
 getHighlightColorState returns what the highlight color of the selection.  
@@ -611,6 +656,17 @@ getHighlightColorState returns what the highlight color of the selection.
 <tr>
 <td>aMixed</td>
 <td>True if there is more than one font color  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Color string. "" is returned for none.  
 </td>
 </tr>
 
@@ -807,6 +863,18 @@ An example of use is for testing if a node is in a table cell
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
+                (passes NS_SUCCEEDED macro)  
+</td>
+</tr>
+
+</table>
+
 ### getSelectedElement(aTagName) ###
    
 Return an element only if it is the only node selected,  
@@ -841,6 +909,18 @@ The exception is a link, which is more like a text attribute:
      (an "A" tag with the "href" attribute set)  
    Use "anchor" or "namedanchor" to get a named anchor node  
      (an "A" tag with the "name" attribute set)  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
+                 (passes NS_SUCCEEDED macro)  
 </td>
 </tr>
 
@@ -887,6 +967,17 @@ Used primarily to supply new element for various insert element dialogs
      (an "A" tag with the "href" attribute set)  
    Use "anchor" or "namedanchor" to get a named anchor node  
      (an "A" tag with the "name" attribute set)  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The new element created.  
 </td>
 </tr>
 
@@ -967,6 +1058,17 @@ The objects in the array will be type nsIURIRefObject.
   
 @return aNodeList    the linked nodes found  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>aNodeList    the linked nodes found  
+</td>
+</tr>
+
+</table>
 
 ### addInsertionListener(inFilter) ###
   
@@ -1055,11 +1157,33 @@ the empty string, it becomes the value of the attribute "_moz_anonclass"
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a DOM Element  
+</td>
+</tr>
+
+</table>
+
 ### getSelectionContainer() ###
   
 returns the deepest container of the selection  
 @return a DOM Element  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a DOM Element  
+</td>
+</tr>
+
+</table>
 
 ### checkSelectionStateForAnonymousButtons(aSelection) ###
   

@@ -69,6 +69,19 @@ and return the converted string in UTF-8.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the converted string in UTF-8.  
+@throws NS_ERROR_UCONV_NOCONV when there is no decoder for aCharset  
+        or error code of nsIUnicodeDecoder in case of conversion failure  
+</td>
+</tr>
+
+</table>
+
 ### convertURISpecToUTF8(aSpec, aCharset) ###
   
 Ensure that |aSpec| (after URL-unescaping it) is encoded in UTF-8.    
@@ -104,6 +117,19 @@ going around in Mozilla code would break this assumption.
 <tr>
 <td>aCharset</td>
 <td>the charset to convert from if |aSpec| is not in UTF-8  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the converted spec in UTF-8.  
+@throws NS_ERROR_UCONV_NOCONV when there is no decoder for aCharset  
+        or error code of nsIUnicodeDecoder in case of conversion failure  
 </td>
 </tr>
 

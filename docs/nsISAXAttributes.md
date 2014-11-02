@@ -53,6 +53,18 @@ Look up the index of an attribute by Namespace name.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The index of the attribute, or -1  
+        if it does not appear in the list.  
+</td>
+</tr>
+
+</table>
+
 ### getIndexFromQName(qName) ###
   
 Look up the index of an attribute by XML qualified name.  
@@ -68,6 +80,18 @@ Look up the index of an attribute by XML qualified name.
 <tr>
 <td>qName</td>
 <td>The qualified name.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The index of the attribute, or -1  
+        if it does not appear in the list.  
 </td>
 </tr>
 
@@ -92,6 +116,17 @@ Look up an attribute's local name by index.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The local name, or null if the index is out of range.  
+</td>
+</tr>
+
+</table>
+
 ### getQName(index) ###
   
 Look up an attribute's XML qualified name by index.  
@@ -107,6 +142,18 @@ Look up an attribute's XML qualified name by index.
 <tr>
 <td>index</td>
 <td>The attribute index (zero-based).  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The XML qualified name, or the empty string if none is  
+        available, or null if the index is out of range.  
 </td>
 </tr>
 
@@ -141,6 +188,18 @@ notation, the parser will report the type as "NMTOKEN".
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The attribute's type as a string, or null if the index is  
+        out of range.  
+</td>
+</tr>
+
+</table>
+
 ### getTypeFromName(uri, localName) ###
   
 Look up an attribute's type by Namespace name.  
@@ -170,6 +229,18 @@ Look up an attribute's type by Namespace name.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The attribute type as a string, or null if the attribute  
+        is not in the list.  
+</td>
+</tr>
+
+</table>
+
 ### getTypeFromQName(qName) ###
   
 Look up an attribute's type by XML qualified name.  
@@ -185,6 +256,18 @@ Look up an attribute's type by XML qualified name.
 <tr>
 <td>qName</td>
 <td>The qualified name.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The attribute type as a string, or null if the attribute  
+        is not in the list.  
 </td>
 </tr>
 
@@ -210,6 +293,18 @@ Look up an attribute's Namespace URI by index.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The Namespace URI, or the empty string if none is available,  
+        or null if the index is out of range.  
+</td>
+</tr>
+
+</table>
+
 ### getValue(index) ###
   
 Look up an attribute's value by index.  If the attribute value is  
@@ -229,6 +324,18 @@ a single space.
 <tr>
 <td>index</td>
 <td>The attribute index (zero-based).  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The attribute's value as a string, or null if the index is  
+        out of range.  
 </td>
 </tr>
 
@@ -267,6 +374,18 @@ separated by a single space.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The attribute's value as a string, or null if the attribute is  
+        not in the list.  
+</td>
+</tr>
+
+</table>
+
 ### getValueFromQName(qName) ###
   
 Look up an attribute's value by XML qualified (prefixed) name.  
@@ -286,6 +405,18 @@ with each token separated by a single space.
 <tr>
 <td>qName</td>
 <td>The qualified (prefixed) name.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The attribute's value as a string, or null if the attribute is  
+        not in the list.  
 </td>
 </tr>
 

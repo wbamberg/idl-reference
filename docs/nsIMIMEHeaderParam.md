@@ -100,6 +100,17 @@ code.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the value of <code>aParamName</code> in Unichar(UTF-16).  
+</td>
+</tr>
+
+</table>
+
 ### getParameterHTTP(aHeaderVal, aParamName, aFallbackCharset, aTryLocaleCharset, aLang) ###
   
 Like getParameter, but disabling encodings and workarounds specific to  
@@ -142,6 +153,17 @@ should use this function.
 <td></td>
 <td>aLang             will be set to the language part (possibly  
                           empty).  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the decoded parameter value.  
 </td>
 </tr>
 
@@ -213,6 +235,18 @@ Otherwise, this method would have been made static.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>the value of <code>aParamName</code> after  
+                    RFC 2231 decoding but without charset conversion.  
+</td>
+</tr>
+
+</table>
+
 ### decodeRFC2047Header(aHeaderVal, aDefaultCharset, aOverrideCharset, aEatContinuation) ###
    
 Given a header value, decodes RFC 2047-style encoding and  
@@ -266,6 +300,17 @@ char * Mime_DecodeMimeHeader(char *header_val, const char *charset,
 <tr>
 <td>aEatContinuation</td>
 <td>When set, removes CR/LF  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>decoded header value  
 </td>
 </tr>
 
@@ -335,6 +380,17 @@ char * mime_decode_filename(char *name, const char *charset,
 <td>When set, overrides MIME charset specified   
                         in RFC 2047 style encoding with   
                         <code>aDefaultCharset</code>  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>decoded parameter   
 </td>
 </tr>
 

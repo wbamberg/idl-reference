@@ -47,3 +47,14 @@ function should occur.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>any value as Variant type.  
+</td>
+</tr>
+
+</table>

@@ -30,6 +30,17 @@ Get the XUL overlays for a particular chrome URI.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An enumerator of nsIURI for the overlays of this URI   
+</td>
+</tr>
+
+</table>
+
 ### getStyleOverlays(aURI) ###
   
 Get the style overlays for a particular chrome URI.  
@@ -45,6 +56,17 @@ Get the style overlays for a particular chrome URI.
 <tr>
 <td>aURI</td>
 <td>The URI being loaded  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An enumerator of nsIURI for the overlays of this URI   
 </td>
 </tr>
 

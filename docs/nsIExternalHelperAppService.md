@@ -70,6 +70,17 @@ with this data.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A nsIStreamListener which the caller should pump the data into.  
+</td>
+</tr>
+
+</table>
+
 ### applyDecodingForExtension(aExtension, aEncodingType) ###
   
 Returns true if data from a URL with this extension combination  

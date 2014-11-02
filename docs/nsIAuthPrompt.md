@@ -66,6 +66,17 @@ Note: prompt uses separate args for the "in" and "out" values of the
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true for OK, false for Cancel  
+</td>
+</tr>
+
+</table>
+
 ### promptUsernameAndPassword(dialogTitle, text, passwordRealm, savePassword, user, pwd) ###
   
 Puts up a username/password dialog with OK and Cancel buttons.  
@@ -120,6 +131,17 @@ Puts up a password dialog with OK and Cancel buttons.
 <td></td>
 <td>pwd           The password entered by the user if OK was  
                       selected.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true for OK, false for Cancel  
 </td>
 </tr>
 
@@ -183,6 +205,17 @@ Puts up a password dialog with OK and Cancel buttons.
 <td></td>
 <td>pwd           The password entered by the user if OK was  
                       selected.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true for OK, false for Cancel  
 </td>
 </tr>
 

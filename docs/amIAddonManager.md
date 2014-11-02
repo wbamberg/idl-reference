@@ -36,3 +36,14 @@ but do not include URIs from meta data, such as the add-on homepage.
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>        true if the URI has been mapped successfully to an Addon ID  
+</td>
+</tr>
+
+</table>

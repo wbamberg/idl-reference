@@ -57,3 +57,18 @@ and proxy object (or list of proxy objects).
 </tr>
 
 </table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The proxy (or list of proxies) that should be used in place of  
+        aProxy.  This can be just be aProxy if the filter chooses not to  
+        modify the proxy.  It can also be null to indicate that a direct  
+        connection should be used.  Use aProxyService.newProxyInfo to  
+        construct nsIProxyInfo objects.  
+</td>
+</tr>
+
+</table>

@@ -52,6 +52,18 @@ finished processing the current event.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>depth      The number of running enterNestedEventLoop calls  
+                   remaining, now that this one has returned.  
+</td>
+</tr>
+
+</table>
+
 ### exitNestedEventLoop() ###
   
 Stop the youngest running enterNestedEventLoop call, asking it to return  
@@ -72,6 +84,18 @@ another running loop.
   
 @throws NS_ERROR_FAILURE if there are no running enterNestedEventLoop calls.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>depth      The number of running enterNestedEventLoop calls  
+                   remaining, now that one has been stopped.  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

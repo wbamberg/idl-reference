@@ -45,6 +45,17 @@ replacing the selected text (if any).
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The node which was inserted  
+</td>
+</tr>
+
+</table>
+
 ### insertTextWithQuotations(aStringToInsert) ###
   
 Inserts a plaintext string at the current location,  
@@ -125,6 +136,17 @@ including, if possible, a "cite" attribute.
 <tr>
 <td>aInsertHTML</td>
 <td>Insert as html?  (vs plaintext)  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The node which was inserted  
 </td>
 </tr>
 

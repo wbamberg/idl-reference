@@ -73,6 +73,21 @@ surrounding chrome, window frame, title bar, and so on.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>NS_OK</code> if operation was performed correctly;  
+        <code>NS_ERROR_UNEXPECTED</code> if window could not be  
+          destroyed;  
+        <code>NS_ERROR_INVALID_ARG</code> for bad flag combination  
+          or illegal dimensions.  
+</td>
+</tr>
+
+</table>
+
 ### getDimensions(flags, x, y, cx, cy) ###
   
 Gets the dimensions of the window. The caller may pass  

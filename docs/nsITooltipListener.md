@@ -58,6 +58,17 @@ corner of the browser area.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td><code>NS_OK</code> if the tooltip was displayed.  
+</td>
+</tr>
+
+</table>
+
 ### onHideTooltip() ###
   
 Called when the tooltip should be hidden, either because the pointer  

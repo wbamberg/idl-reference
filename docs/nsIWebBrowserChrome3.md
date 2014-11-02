@@ -55,6 +55,18 @@ Determines the appropriate target for a link.
 
 </table>
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>A new link target, if appropriate.  
+         Otherwise returns originalTarget.  
+</td>
+</tr>
+
+</table>
+
 ### shouldLoadURI(aDocShell, aURI, aReferrer) ###
   
 Determines whether a load should continue.  

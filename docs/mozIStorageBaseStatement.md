@@ -120,6 +120,18 @@ multiple sets of data to a statement with bindParameters.
 @note This is only useful for statements being used asynchronously.  
   
 
+#### Returns ####
+
+<table>
+
+<tr>
+<td>a mozIStorageBindingParamsArray that multiple sets of parameters  
+        can be bound to.  
+</td>
+</tr>
+
+</table>
+
 ### executeAsync(aCallback) ###
   
 Execute a query asynchronously using any currently bound parameters.  This  
@@ -143,6 +155,17 @@ statement can be reused immediately, and reset does not need to be called.
 <td>[optional]  
        The callback object that will be notified of progress, errors, and  
        completion.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an object that can be used to cancel the statements execution.  
 </td>
 </tr>
 
@@ -178,6 +201,20 @@ Escape a string for SQL LIKE search.
 <tr>
 <td>aEscapeChar</td>
 <td>       The escape character.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>an AString of an escaped version of aValue  
+        (%, _ and the escape char are escaped with the escape char)  
+        For example, we will convert "foo/bar_baz%20cheese"   
+        into "foo//bar/_baz/%20cheese" (if the escape char is '/').  
 </td>
 </tr>
 
