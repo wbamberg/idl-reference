@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/mozapps/extensions/amIWebInstallListener.idl">Source file</a>
 </div>
+
 # amIWebInstallPrompt #
   
 amIWebInstallPrompt is used, if available, by the default implementation of   

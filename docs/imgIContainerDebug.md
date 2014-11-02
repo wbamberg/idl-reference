@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/image/public/imgIContainerDebug.idl">Source file</a>
 </div>
+
 # imgIContainerDebug #
   
 This interface is used in debug builds (and only there) in  

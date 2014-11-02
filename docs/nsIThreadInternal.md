@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/threads/nsIThreadInternal.idl">Source file</a>
 </div>
+
 # nsIThreadInternal #
   
 The XPCOM thread object implements this interface, which allows a consumer  

@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/media/webspeech/synth/nsISpeechService.idl">Source file</a>
 </div>
+
 # nsISpeechTask #
   
 A task is associated with a single utterance. It is provided by the browser  

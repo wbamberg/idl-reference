@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/js/ductwork/debugger/IJSDebugger.idl">Source file</a>
 </div>
+
 # IJSDebugger #
   
 Do not use this interface. Instead, write:  

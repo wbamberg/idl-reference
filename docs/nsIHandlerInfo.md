@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/mime/nsIMIMEInfo.idl">Source file</a>
 </div>
+
 # nsIHandlerInfo #
   
 nsIHandlerInfo gives access to the information about how a given protocol  

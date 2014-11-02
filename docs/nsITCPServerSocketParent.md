@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/network/interfaces/nsITCPServerSocketParent.idl">Source file</a>
 </div>
+
 # nsITCPServerSocketParent #
    
 Interface required to allow the TCP server-socket object in the parent process  

@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/embedding/components/webbrowserpersist/nsIWebBrowserPersist.idl">Source file</a>
 </div>
+
 # nsIWebBrowserPersist #
   
 Interface for persisting DOM documents and URIs to local or remote storage.  

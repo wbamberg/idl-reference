@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/io/nsIDirectoryEnumerator.idl">Source file</a>
 </div>
+
 # nsIDirectoryEnumerator #
   
 This interface provides a means for enumerating the contents of a directory.  

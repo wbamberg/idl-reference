@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/css/nsIDOMCSSRuleList.idl">Source file</a>
 </div>
+
 # nsIDOMCSSRuleList #
   
 The nsIDOMCSSRuleList interface is a datatype for a list of CSS  

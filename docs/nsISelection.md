@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/base/nsISelection.idl">Source file</a>
 </div>
+
 # nsISelection #
   
 Interface for manipulating and querying the current selected range  

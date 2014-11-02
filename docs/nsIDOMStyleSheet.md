@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/stylesheets/nsIDOMStyleSheet.idl">Source file</a>
 </div>
+
 # nsIDOMStyleSheet #
   
 The nsIDOMStyleSheet interface is a datatype for a style sheet in  

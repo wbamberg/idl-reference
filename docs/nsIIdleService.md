@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/widget/nsIIdleService.idl">Source file</a>
 </div>
+
 # nsIIdleService #
   
 This interface lets you monitor how long the user has been 'idle',  

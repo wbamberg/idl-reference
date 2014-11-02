@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/parser/xml/nsISAXContentHandler.idl">Source file</a>
 </div>
+
 # nsISAXContentHandler #
   
 Receive notification of the logical content of a document.  

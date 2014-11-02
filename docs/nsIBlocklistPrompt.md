@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/system/nsIBlocklistService.idl">Source file</a>
 </div>
+
 # nsIBlocklistPrompt #
   
 nsIBlocklistPrompt is used, if available, by the default implementation of   

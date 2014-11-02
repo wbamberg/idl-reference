@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/test/httpserver/nsIHttpServer.idl">Source file</a>
 </div>
+
 # nsIHttpServerStoppedCallback #
   
 An interface through which a notification of the complete stopping (socket  

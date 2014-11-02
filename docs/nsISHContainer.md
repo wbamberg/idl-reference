@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/docshell/shistory/public/nsISHContainer.idl">Source file</a>
 </div>
+
 # nsISHContainer #
   
 The nsISHEntryContainer. The interface to access child entries  

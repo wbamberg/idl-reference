@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/apps/nsIInterAppCommUIGlue.idl">Source file</a>
 </div>
+
 # nsIInterAppCommUIGlue #
   
 To be implemented by @mozilla.org/dom/apps/inter-app-comm-ui-glue;1  

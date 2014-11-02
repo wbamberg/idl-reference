@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/security/manager/ssl/public/nsIX509CertValidity.idl">Source file</a>
 </div>
+
 # nsIX509CertValidity #
   
 Information on the validity period of a X.509 certificate.  

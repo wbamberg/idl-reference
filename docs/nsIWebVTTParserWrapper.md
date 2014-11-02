@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/media/webvtt/nsIWebVTTParserWrapper.idl">Source file</a>
 </div>
+
 # nsIWebVTTParserWrapper #
   
 Interface for a wrapper of a JS WebVTT parser (vtt.js).  

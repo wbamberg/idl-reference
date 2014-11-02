@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/passwordmgr/nsILoginMetaInfo.idl">Source file</a>
 </div>
+
 # nsILoginMetaInfo #
   
 An object containing metainfo for a login stored by the login manager.  

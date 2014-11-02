@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIIOService2.idl">Source file</a>
 </div>
+
 # nsIIOService2 #
   
 nsIIOService2 extends nsIIOService  

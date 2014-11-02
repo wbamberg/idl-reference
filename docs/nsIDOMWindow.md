@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/base/nsIDOMWindow.idl">Source file</a>
 </div>
+
 # nsIDOMWindow #
   
 The nsIDOMWindow interface is the primary interface for a DOM  

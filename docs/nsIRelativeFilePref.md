@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/modules/libpref/nsIRelativeFilePref.idl">Source file</a>
 </div>
+
 # nsIRelativeFilePref #
   
 The nsIRelativeFilePref interface is a wrapper for an nsIFile and  

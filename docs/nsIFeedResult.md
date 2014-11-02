@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/feeds/nsIFeedResult.idl">Source file</a>
 </div>
+
 # nsIFeedResult #
   
 The nsIFeedResult interface provides access to HTTP and parsing  

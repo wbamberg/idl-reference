@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/ds/nsIVariant.idl">Source file</a>
 </div>
+
 # nsIVariant #
   
 XPConnect has magic to transparently convert between nsIVariant and JS types.  

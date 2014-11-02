@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/io/nsIBinaryInputStream.idl">Source file</a>
 </div>
+
 # nsIBinaryInputStream #
   
 This interface allows consumption of primitive data types from a "binary  

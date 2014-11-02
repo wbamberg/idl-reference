@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/intl/locale/nsILocale.idl">Source file</a>
 </div>
+
 # nsILocale #
   
 Represents one locale, which can be used for things like sorting text strings  

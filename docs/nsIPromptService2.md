@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/embedding/components/windowwatcher/nsIPromptService2.idl">Source file</a>
 </div>
+
 # nsIPromptService2 #
   
 This is an improved version of nsIPromptService that is less prescriptive  

@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/test/httpserver/nsIHttpServer.idl">Source file</a>
 </div>
+
 # nsIHttpResponse #
   
 Represents an HTTP response, as described in RFC 2616, section 6.  

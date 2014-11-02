@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/modules/libpref/nsIPrefService.idl">Source file</a>
 </div>
+
 # nsIPrefService #
   
 The nsIPrefService interface is the main entry point into the back end  

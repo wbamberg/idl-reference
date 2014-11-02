@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/modules/libpref/nsIPrefBranch.idl">Source file</a>
 </div>
+
 # nsIPrefBranch #
   
 The nsIPrefBranch interface is used to manipulate the preferences data. This  

@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/embedding/browser/nsIContextMenuListener.idl">Source file</a>
 </div>
+
 # nsIContextMenuListener #
   
 An optional interface for embedding clients wishing to receive  

@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/embedding/browser/nsIWebBrowserSetup.idl">Source file</a>
 </div>
+
 # nsIWebBrowserSetup #
   
 The nsIWebBrowserSetup interface lets you set properties on a browser  

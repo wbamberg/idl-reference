@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/base/nsIStructuredCloneContainer.idl">Source file</a>
 </div>
+
 # nsIStructuredCloneContainer #
   
 This interface acts as a container for an object serialized using the  

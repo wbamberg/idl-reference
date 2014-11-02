@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIFileStreams.idl">Source file</a>
 </div>
+
 # nsIFileMetadata #
   
 An interface that allows you to get some metadata like file size and  

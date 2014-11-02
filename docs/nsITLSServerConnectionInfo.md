@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsITLSServerSocket.idl">Source file</a>
 </div>
+
 # nsITLSServerConnectionInfo #
   
 Connection info for a given TLS client connection being handled by a  

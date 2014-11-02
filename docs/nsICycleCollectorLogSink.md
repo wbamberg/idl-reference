@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/base/nsICycleCollectorListener.idl">Source file</a>
 </div>
+
 # nsICycleCollectorLogSink #
   
 This interface allows replacing the log-writing backend for an  

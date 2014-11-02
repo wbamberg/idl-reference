@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/security/manager/ssl/public/nsIDataSignatureVerifier.idl">Source file</a>
 </div>
+
 # nsIDataSignatureVerifier #
   
 An interface for verifying that a given string of data was signed by the  

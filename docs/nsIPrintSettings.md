@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/widget/nsIPrintSettings.idl">Source file</a>
 </div>
+
 # nsIPrintSettings #
   
 Simplified graphics interface for JS rendering.  

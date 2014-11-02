@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/xul/templates/nsIXULSortService.idl">Source file</a>
 </div>
+
 # nsIXULSortService #
   
 A service used to sort the contents of a XUL widget.  

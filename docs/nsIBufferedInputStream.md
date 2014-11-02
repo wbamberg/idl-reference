@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIBufferedStreams.idl">Source file</a>
 </div>
+
 # nsIBufferedInputStream #
   
 An input stream that reads ahead and keeps a buffer coming from another input  

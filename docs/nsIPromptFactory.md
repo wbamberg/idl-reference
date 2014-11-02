@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/embedding/components/windowwatcher/nsIPromptFactory.idl">Source file</a>
 </div>
+
 # nsIPromptFactory #
   
 This interface allows creating various prompts that have a specific parent.  

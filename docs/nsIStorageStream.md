@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/io/nsIStorageStream.idl">Source file</a>
 </div>
+
 # nsIStorageStream #
   
 The nsIStorageStream interface maintains an internal data buffer that can be  

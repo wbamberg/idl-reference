@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/layout/xul/tree/nsITreeView.idl">Source file</a>
 </div>
+
 # nsINativeTreeView #
   
 The following interface is not scriptable and MUST NEVER BE MADE scriptable.  

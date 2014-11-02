@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/accessible/interfaces/nsIAccessibleTextRange.idl">Source file</a>
 </div>
+
 # nsIAccessibleTextRange #
   
 A range representing a piece of text in the document.  

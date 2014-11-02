@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/base/nsIErrorService.idl">Source file</a>
 </div>
+
 # nsIErrorService #
   
 nsIErrorService: This is an interim service that allows nsresult codes to be mapped to   

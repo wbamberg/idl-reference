@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/feeds/nsIFeed.idl">Source file</a>
 </div>
+
 # nsIFeed #
   
 An nsIFeed represents a single Atom or RSS feed.  

@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/base/nsIUUIDGenerator.idl">Source file</a>
 </div>
+
 # nsIUUIDGenerator #
   
 nsIUUIDGenerator is implemented by a service that can generate  

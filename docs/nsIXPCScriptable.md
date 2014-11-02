@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/js/xpconnect/idl/nsIXPCScriptable.idl">Source file</a>
 </div>
+
 # nsIXPCScriptable #
   
 Note: This is not really an XPCOM interface.  For example, callers must  

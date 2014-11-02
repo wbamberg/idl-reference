@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/cookie/nsICookie2.idl">Source file</a>
 </div>
+
 # nsICookie2 #
    
 Main cookie object interface for use by consumers:  

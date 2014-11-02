@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/profile/nsIProfileMigrator.idl">Source file</a>
 </div>
+
 # nsIProfileMigrator #
   
 Migrate application settings from an outside source.  

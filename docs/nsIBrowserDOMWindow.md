@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/base/nsIBrowserDOMWindow.idl">Source file</a>
 </div>
+
 # nsIBrowserDOMWindow #
   
 The C++ source has access to the browser script source through  

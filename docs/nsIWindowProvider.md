@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/embedding/nsIWindowProvider.idl">Source file</a>
 </div>
+
 # nsIWindowProvider #
   
 The nsIWindowProvider interface exists so that the window watcher's default  

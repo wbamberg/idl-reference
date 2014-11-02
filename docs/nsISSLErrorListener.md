@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/security/manager/ssl/public/nsISSLErrorListener.idl">Source file</a>
 </div>
+
 # nsISSLErrorListener #
   
 A mechanism to report a broken SSL connection. The recipient should NOT block.  

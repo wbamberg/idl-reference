@@ -126,6 +126,7 @@ class Interface(object):
         md.writeHTMLLink("Index", "../index.html", output)
         md.writeHTMLLink("Source file", dxrBase + self.filename[len(pathSearchPrefix):], output)
         output.write("</div>")
+        md.writeLineBreak(output)
         md.writeH1(self.name, output)
         self.writeDoccomments(output)
         self.writeMembers("Methods", self.methods, output)

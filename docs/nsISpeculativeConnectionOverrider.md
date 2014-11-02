@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsISpeculativeConnect.idl">Source file</a>
 </div>
+
 # nsISpeculativeConnectionOverrider #
   
 This is used to override the default values for various values (documented  

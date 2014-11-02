@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/dom/html/nsIPhonetic.idl">Source file</a>
 </div>
+
 # nsIPhonetic #
    
 This interface is used to get the phonetic value of the input text.  

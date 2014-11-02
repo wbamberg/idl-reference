@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpfe/appshell/nsIXULBrowserWindow.idl">Source file</a>
 </div>
+
 # nsIXULBrowserWindow #
   
 The nsIXULBrowserWindow supplies the methods that may be called from the  

@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsINestedURI.idl">Source file</a>
 </div>
+
 # nsINestedURI #
   
 nsINestedURI is an interface that must be implemented by any nsIURI  

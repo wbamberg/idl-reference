@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/ds/nsIObserver.idl">Source file</a>
 </div>
+
 # nsIObserver #
   
 This interface is implemented by an object that wants  

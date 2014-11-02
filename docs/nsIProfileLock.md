@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/profile/nsIToolkitProfile.idl">Source file</a>
 </div>
+
 # nsIProfileLock #
   
 Hold on to a profile lock. Once you release the last reference to this  

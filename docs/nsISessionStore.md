@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/mobile/android/components/SessionStore.idl">Source file</a>
 </div>
+
 # nsISessionStore #
   
 nsISessionStore keeps track of the current browsing state.  

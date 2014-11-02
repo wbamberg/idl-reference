@@ -4,6 +4,7 @@ layout: default
 <div class='links' style='float:right'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/satchel/nsIFormHistory.idl">Source file</a>
 </div>
+
 # nsIFormHistory2 #
   
 The nsIFormHistory object is a service which holds a set of name/value  
