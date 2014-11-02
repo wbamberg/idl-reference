@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class='links' style='float:right'><a href="../index.html">Index</a>
+<div id='links'><a href="../index.html">Index</a>
 <a href="http://dxr.mozilla.org/mozilla-central/source/layout/tools/layout-debug/src/nsILayoutDebuggingTools.idl">Source file</a>
 </div>
 

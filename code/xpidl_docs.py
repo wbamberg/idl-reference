@@ -122,7 +122,7 @@ class Interface(object):
 
     def write(self):
         output = md.createFile("../docs/" + self.name + ".md")
-        output.write("<div class='links' style='float:right'>")
+        output.write("<div id='links'>")
         md.writeHTMLLink("Index", "../index.html", output)
         md.writeHTMLLink("Source file", dxrBase + self.filename[len(pathSearchPrefix):], output)
         output.write("</div>")
