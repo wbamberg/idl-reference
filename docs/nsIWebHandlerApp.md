@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/mime/nsIMIMEInfo.idl">Source file</a>
+</div>
 # nsIWebHandlerApp #
   
 nsIWebHandlerApp is a web-based handler, as speced by the WhatWG HTML5  

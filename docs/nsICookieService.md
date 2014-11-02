@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/cookie/nsICookieService.idl">Source file</a>
+</div>
 # nsICookieService #
   
 nsICookieService  

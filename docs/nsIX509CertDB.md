@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/security/manager/ssl/public/nsIX509CertDB.idl">Source file</a>
+</div>
 # nsIX509CertDB #
   
 This represents a service to access and manipulate  

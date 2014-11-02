@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/accessible/interfaces/nsIAccessibleHyperLink.idl">Source file</a>
+</div>
 # nsIAccessibleHyperLink #
   
 A cross-platform interface that supports hyperlink-specific properties and  

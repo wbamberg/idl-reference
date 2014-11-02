@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/canvas/nsIDOMCanvasRenderingContext2D.idl">Source file</a>
+</div>
 # nsIDOMCanvasRenderingContext2D #
   
 This interface remains only for the constants, for a context, use the  

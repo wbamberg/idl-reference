@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIProtocolProxyService2.idl">Source file</a>
+</div>
 # nsIProtocolProxyService2 #
   
 An extension of nsIProtocolProxyService  

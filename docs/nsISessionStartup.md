@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/browser/components/sessionstore/nsISessionStartup.idl">Source file</a>
+</div>
 # nsISessionStartup #
   
 nsISessionStore keeps track of the current browsing state - i.e.  

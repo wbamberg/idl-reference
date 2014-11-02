@@ -5,6 +5,9 @@ import md
 from parse_comments import parseDoccomments
 from xpidl import xpidl
 
+pathSearchPrefix = "../../gecko-dev/"
+dxrBase = "http://dxr.mozilla.org/mozilla-central/source/"
+
 index = md.createFile("../index.md", "default_index")
 
 class Attribute(object):
@@ -86,57 +89,6 @@ class Method(object):
         signature += ")"
         return signature
 
-    def getNextWordFromLine(self, line):
-        return line.split(" ", 1)[0]
-
-    def lineIsEmpty(self, line):
-        return not line.rstrip()
-
-    # this function assumes that:
-    # - lines starting with @param are the start of param doc blocks
-    # - the next complete word after @param is the param name
-    # - the rest of that line is param documentation
-    # - any subsequent lines are param documentation until
-    # the param doc block is ended by any of:
-    #    - a new @param line
-    #    - an @return line
-    #    - an empty line
-    #    - the end of the whole comment block
-    def paramGenerator(self, doccomments):
-        processingParamRightNow = False
-        for line in self.lines:
-            if line.startswith("@param"):
-                if processingParamRightNow:
-                    yield Param(name, doc)
-                processingParamRightNow = True
-                line = line[len("@param "):]
-                name = self.getNextWordFromLine(line)
-                doc = line[len(name):].lstrip()
-            elif line.startswith("@return") or self.lineIsEmpty(line):
-                if processingParamRightNow:
-                    yield Param(name, doc)
-                processingParamRightNow = False
-            else:
-                if processingParamRightNow:
-                    doc += line
-        if processingParamRightNow:
-            yield Param(name, doc)
-
-    def getReturn(self, doccumments):
-        processingReturnRightNow = False
-        for line in self.lines:
-            if line.startswith("@return"):
-                processingReturnRightNow = True
-                line = line[len("@return "):]
-                doc = line[len(name):].lstrip()
-            elif line.startswith("@param") or self.lineIsEmpty(line):
-                return Return(name, doc)
-            else:
-                if processingReturnRightNow:
-                    doc += line
-        if processingReturnRightNow:
-            return Return(name, doc)
-
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
             processed = stripComments(doccomment)
@@ -170,6 +122,10 @@ class Interface(object):
 
     def write(self):
         output = md.createFile("../docs/" + self.name + ".md")
+        output.write("<div class='links' style='float:right'>")
+        md.writeHTMLLink("Index", "../index.html", output)
+        md.writeHTMLLink("Source file", dxrBase + self.filename[len(pathSearchPrefix):], output)
+        output.write("</div>")
         md.writeH1(self.name, output)
         self.writeDoccomments(output)
         self.writeMembers("Methods", self.methods, output)
@@ -218,7 +174,7 @@ def writeIdlFile(index, filename):
                 interface = Interface(filename, p)
                 interface.write()
 
-for dirpath, dirs, files in os.walk("../../gecko-dev"):
+for dirpath, dirs, files in os.walk(pathSearchPrefix):
     for f in files:
         if f.endswith(".idl"):
             fullname = os.path.join(dirpath, f)

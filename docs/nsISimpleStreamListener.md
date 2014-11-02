@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsISimpleStreamListener.idl">Source file</a>
+</div>
 # nsISimpleStreamListener #
   
 A simple stream listener can be used with AsyncRead to supply data to  

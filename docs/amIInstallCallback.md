@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/mozapps/extensions/amIWebInstaller.idl">Source file</a>
+</div>
 # amIInstallCallback #
   
 A callback function used to notify webpages when a requested install has  

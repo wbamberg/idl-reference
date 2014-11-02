@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIProtocolProxyFilter.idl">Source file</a>
+</div>
 # nsIProtocolProxyFilter #
   
 This interface is used to apply filters to the proxies selected for a given  

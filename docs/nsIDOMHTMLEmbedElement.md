@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/html/nsIDOMHTMLEmbedElement.idl">Source file</a>
+</div>
 # nsIDOMHTMLEmbedElement #
   
 The nsIDOMHTMLEmbedElement interface is the interface to a [X]HTML  

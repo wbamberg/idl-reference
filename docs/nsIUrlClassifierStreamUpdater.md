@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/url-classifier/nsIUrlClassifierStreamUpdater.idl">Source file</a>
+</div>
 # nsIUrlClassifierStreamUpdater #
   
 This is a class to manage large table updates from the server.  Rather than  

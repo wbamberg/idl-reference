@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/mozapps/extensions/amIAddonManager.idl">Source file</a>
+</div>
 # amIAddonManager #
   
 A service to make some AddonManager functionality available to C++ callers.  

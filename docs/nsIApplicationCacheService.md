@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIApplicationCacheService.idl">Source file</a>
+</div>
 # nsIApplicationCacheService #
   
 The application cache service manages the set of application cache  

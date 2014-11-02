@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/base/nsIFocusManager.idl">Source file</a>
+</div>
 # nsIFocusManager #
   
 The focus manager deals with all focus related behaviour. Only one element  

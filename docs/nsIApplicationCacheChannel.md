@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIApplicationCacheChannel.idl">Source file</a>
+</div>
 # nsIApplicationCacheChannel #
   
 Interface implemented by channels that support application caches.  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/events/nsIDOMMessageEvent.idl">Source file</a>
+</div>
 # nsIDOMMessageEvent #
   
 The nsIDOMMessageEvent interface is used for server-sent events and for  

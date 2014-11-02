@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/accessible/interfaces/nsIAccessibleRelation.idl">Source file</a>
+</div>
 # nsIAccessibleRelation #
   
 This interface gives access to an accessible's set of relations.  

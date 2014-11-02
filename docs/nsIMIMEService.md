@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/mime/nsIMIMEService.idl">Source file</a>
+</div>
 # nsIMIMEService #
   
 The MIME service is responsible for mapping file extensions to MIME-types  

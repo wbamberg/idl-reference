@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/remote/nsIRemoteService.idl">Source file</a>
+</div>
 # nsIRemoteService #
   
 Start and stop the remote service (xremote/phremote), and register  

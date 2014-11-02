@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/devtools/server/nsIJSInspector.idl">Source file</a>
+</div>
 # nsIJSInspector #
   
 Utilities for running nested event loops, asking them to return, and  

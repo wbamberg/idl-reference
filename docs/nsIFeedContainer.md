@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/feeds/nsIFeedContainer.idl">Source file</a>
+</div>
 # nsIFeedContainer #
   
 A shared base for feeds and items, which are pretty similar,  

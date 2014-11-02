@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/core/nsIDOMDOMImplementation.idl">Source file</a>
+</div>
 # nsIDOMDOMImplementation #
   
 The nsIDOMDOMImplementation interface provides a number of methods for   

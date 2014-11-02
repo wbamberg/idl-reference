@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/embedding/components/windowwatcher/nsIPromptService.idl">Source file</a>
+</div>
 # nsIPromptService #
   
 This is the interface to the embeddable prompt service; the service that  

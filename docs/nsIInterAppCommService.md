@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/apps/nsIInterAppCommService.idl">Source file</a>
+</div>
 # nsIInterAppCommService #
   
 Implemented by the contract id @mozilla.org/inter-app-communication-service;1  

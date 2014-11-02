@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/modules/libpref/nsIPrefLocalizedString.idl">Source file</a>
+</div>
 # nsIPrefLocalizedString #
   
 The nsIPrefLocalizedString interface is simply a wrapper interface for  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/security/manager/ssl/public/nsIASN1Object.idl">Source file</a>
+</div>
 # nsIASN1Object #
   
 This represents an ASN.1 object,  

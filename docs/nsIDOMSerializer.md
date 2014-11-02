@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/base/nsIDOMSerializer.idl">Source file</a>
+</div>
 # nsIDOMSerializer #
   
 The nsIDOMSerializer interface is really a placeholder till the W3C  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/threads/nsITimer.idl">Source file</a>
+</div>
 # nsITimer #
   
 nsITimer instances must be initialized by calling one of the "init" methods  

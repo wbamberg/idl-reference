@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/threads/nsISupportsPriority.idl">Source file</a>
+</div>
 # nsISupportsPriority #
   
 This interface exposes the general notion of a scheduled object with a  

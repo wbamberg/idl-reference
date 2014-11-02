@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/rdf/base/nsIRDFResource.idl">Source file</a>
+</div>
 # nsIRDFResource #
   
 An nsIRDFResource is an object that has unique identity in the   

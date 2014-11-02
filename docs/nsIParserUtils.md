@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/parser/html/nsIParserUtils.idl">Source file</a>
+</div>
 # nsIParserUtils #
   
 Non-Web HTML parser functionality to Firefox extensions and XULRunner apps.   

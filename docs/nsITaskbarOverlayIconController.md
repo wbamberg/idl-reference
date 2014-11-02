@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/widget/nsITaskbarOverlayIconController.idl">Source file</a>
+</div>
 # nsITaskbarOverlayIconController #
   
 Starting in Windows 7, applications can display an overlay on the icon in  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/storage/public/mozIStorageStatement.idl">Source file</a>
+</div>
 # mozIStorageStatement #
   
 A SQL statement that can be used for both synchronous and asynchronous  

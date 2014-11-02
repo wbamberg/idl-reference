@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIURI.idl">Source file</a>
+</div>
 # nsIURI #
   
 URIs are essentially structured names for things -- anything. This interface  

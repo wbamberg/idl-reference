@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/base/nsIImageLoadingContent.idl">Source file</a>
+</div>
 # nsIImageLoadingContent #
   
 This interface represents a content node that loads images.  The interface  

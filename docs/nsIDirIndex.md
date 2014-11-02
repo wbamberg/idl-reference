@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/streamconv/public/nsIDirIndex.idl">Source file</a>
+</div>
 # nsIDirIndex #
  A class holding information about a directory index.  
 These have no reference back to their original source -  

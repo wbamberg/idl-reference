@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/xulstore/nsIXULStore.idl">Source file</a>
+</div>
 # nsIXULStore #
   
 The XUL store is used to store information related to a XUL document/application.  

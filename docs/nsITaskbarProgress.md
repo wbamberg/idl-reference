@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/widget/nsITaskbarProgress.idl">Source file</a>
+</div>
 # nsITaskbarProgress #
   
 Starting in Windows 7, applications can display a progress notification in  

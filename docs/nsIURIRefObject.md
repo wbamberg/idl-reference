@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/editor/nsIURIRefObject.idl">Source file</a>
+</div>
 # nsIURIRefObject #
  A class which can represent any node which points to an  
 external URI, e.g. <a>, <img>, <script> etc,  

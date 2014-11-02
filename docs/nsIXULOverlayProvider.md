@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/xul/nsIXULOverlayProvider.idl">Source file</a>
+</div>
 # nsIXULOverlayProvider #
   
 The chrome registry implements this interface to give overlays  

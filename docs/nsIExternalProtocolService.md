@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/uriloader/exthandler/nsIExternalProtocolService.idl">Source file</a>
+</div>
 # nsIExternalProtocolService #
   
 The external protocol service is used for finding and launching  

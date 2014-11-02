@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/activities/interfaces/nsIActivityUIGlue.idl">Source file</a>
+</div>
 # nsIActivityUIGlue #
   
 To be implemented by @mozilla.org/dom/activities/ui-glue;1  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/places/nsPIPlacesHistoryListenersNotifier.idl">Source file</a>
+</div>
 # nsPIPlacesHistoryListenersNotifier #
   
 This is a private interface used by Places components to notify history  

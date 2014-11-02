@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/apps/mozIApplication.idl">Source file</a>
+</div>
 # mozIApplication #
   
 We expose Gecko-internal helpers related to "web apps" through this  

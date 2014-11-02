@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/docshell/base/nsIDownloadHistory.idl">Source file</a>
+</div>
 # nsIDownloadHistory #
   
 This interface can be used to add a download to history.  There is a separate  

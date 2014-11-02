@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/base/nsICycleCollectorListener.idl">Source file</a>
+</div>
 # nsICycleCollectorListener #
   
 Given an instance of this interface, the cycle collector calls the instance's  

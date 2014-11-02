@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/embedding/components/windowwatcher/nsIDialogParamBlock.idl">Source file</a>
+</div>
 # nsIDialogParamBlock #
   
 An interface to pass strings, integers and nsISupports to a dialog  

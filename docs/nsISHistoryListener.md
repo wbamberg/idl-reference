@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/docshell/shistory/public/nsISHistoryListener.idl">Source file</a>
+</div>
 # nsISHistoryListener #
   
 nsISHistoryListener defines the interface one can implement to receive  

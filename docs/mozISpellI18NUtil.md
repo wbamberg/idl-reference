@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/extensions/spellcheck/idl/mozISpellI18NUtil.idl">Source file</a>
+</div>
 # mozISpellI18NUtil #
   
 This interface contains various I18N related code used in various places by the spell checker.  

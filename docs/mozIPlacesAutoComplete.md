@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/places/mozIPlacesAutoComplete.idl">Source file</a>
+</div>
 # mozIPlacesAutoComplete #
   
 This interface provides some constants used by the Places AutoComplete  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/io/nsIStreamBufferAccess.idl">Source file</a>
+</div>
 # nsIStreamBufferAccess #
   
 An interface for access to a buffering stream implementation's underlying  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/widget/nsIWinMetroUtils.idl">Source file</a>
+</div>
 # nsIWinMetroUtils #
   
 Integration with the "Metro"/"Modern" UI environment in Windows 8.  

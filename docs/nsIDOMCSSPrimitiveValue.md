@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/css/nsIDOMCSSPrimitiveValue.idl">Source file</a>
+</div>
 # nsIDOMCSSPrimitiveValue #
   
 The nsIDOMCSSPrimitiveValue interface is a datatype for a primitive  

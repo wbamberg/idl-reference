@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/security/manager/ssl/public/nsICertificateDialogs.idl">Source file</a>
+</div>
 # nsICertificateDialogs #
   
 Functions that implement user interface dialogs to manage certificates.  

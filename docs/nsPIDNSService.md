@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/dns/nsPIDNSService.idl">Source file</a>
+</div>
 # nsPIDNSService #
   
 This is a private interface used by the internals of the networking library.  

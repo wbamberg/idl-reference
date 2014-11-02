@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIAuthPromptCallback.idl">Source file</a>
+</div>
 # nsIAuthPromptCallback #
   
 Interface for callback methods for the asynchronous nsIAuthPrompt2 method.  

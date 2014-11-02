@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/system/nsICrashReporter.idl">Source file</a>
+</div>
 # nsICrashReporter #
   
 Provides access to crash reporting functionality.  

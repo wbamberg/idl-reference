@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIApplicationCache.idl">Source file</a>
+</div>
 # nsIApplicationCacheNamespace #
   
 Application caches can store a set of namespace entries that affect  

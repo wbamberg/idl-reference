@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/base/nsIDOMParser.idl">Source file</a>
+</div>
 # nsIDOMParser #
   
 The nsIDOMParser interface is a non-SAX interface that can be used  

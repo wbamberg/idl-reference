@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/commandlines/nsICommandLine.idl">Source file</a>
+</div>
 # nsICommandLine #
   
 Represents the command line used to invoke a XUL application. This may be the  

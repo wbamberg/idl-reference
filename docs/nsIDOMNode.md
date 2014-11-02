@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/core/nsIDOMNode.idl">Source file</a>
+</div>
 # nsIDOMNode #
   
 The nsIDOMNode interface is the primary datatype for the entire   

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/widget/nsIAppShell.idl">Source file</a>
+</div>
 # nsIAppShell #
   
 Interface for the native event system layer.  This interface is designed  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/uriloader/base/nsIWebProgressListener.idl">Source file</a>
+</div>
 # nsIWebProgressListener #
   
 The nsIWebProgressListener interface is implemented by clients wishing to  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIAuthInformation.idl">Source file</a>
+</div>
 # nsIAuthInformation #
   
 A object that hold authentication information. The caller of  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/core/nsIDOMElement.idl">Source file</a>
+</div>
 # nsIDOMElement #
   
 The nsIDOMElement interface represents an element in an HTML or   

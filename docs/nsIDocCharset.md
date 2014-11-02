@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/docshell/base/nsIDocCharset.idl">Source file</a>
+</div>
 # nsIDocCharset #
   
 The functionality of the nsIDocCharset interface has been incorporated into  

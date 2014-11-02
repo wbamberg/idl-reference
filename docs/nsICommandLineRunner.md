@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/commandlines/nsICommandLineRunner.idl">Source file</a>
+</div>
 # nsICommandLineRunner #
   
 Extension of nsICommandLine that allows for initialization of new command lines  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/layout/inspector/inIFlasher.idl">Source file</a>
+</div>
 # inIFlasher #
   
 This class will be removed in gecko v33. See comments below for alternatives.  

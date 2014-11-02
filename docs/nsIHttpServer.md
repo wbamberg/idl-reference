@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/test/httpserver/nsIHttpServer.idl">Source file</a>
+</div>
 # nsIHttpServer #
   
 An interface which represents an HTTP server.  

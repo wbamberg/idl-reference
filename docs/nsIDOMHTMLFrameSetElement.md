@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/html/nsIDOMHTMLFrameSetElement.idl">Source file</a>
+</div>
 # nsIDOMHTMLFrameSetElement #
   
 The nsIDOMHTMLFrameSetElement interface is the interface to a  

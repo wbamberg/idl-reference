@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/uriloader/base/nsIWebProgress.idl">Source file</a>
+</div>
 # nsIWebProgress #
   
 The nsIWebProgress interface is used to add or remove nsIWebProgressListener  

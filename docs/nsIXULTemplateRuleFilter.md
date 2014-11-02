@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/xul/templates/nsIXULTemplateRuleFilter.idl">Source file</a>
+</div>
 # nsIXULTemplateRuleFilter #
   
 A rule filter may be used to add additional filtering of results to a rule.  

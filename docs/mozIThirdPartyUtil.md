@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/mozIThirdPartyUtil.idl">Source file</a>
+</div>
 # mozIThirdPartyUtil #
   
 Utility functions for determining whether a given URI, channel, or window  

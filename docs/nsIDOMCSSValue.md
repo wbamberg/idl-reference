@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/css/nsIDOMCSSValue.idl">Source file</a>
+</div>
 # nsIDOMCSSValue #
   
 The nsIDOMCSSValue interface is a datatype for a CSS value in the  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/io/nsIPipe.idl">Source file</a>
+</div>
 # nsISearchableInputStream #
   
 XXX this interface doesn't really belong in here.  It is here because  

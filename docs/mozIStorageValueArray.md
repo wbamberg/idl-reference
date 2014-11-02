@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/storage/public/mozIStorageValueArray.idl">Source file</a>
+</div>
 # mozIStorageValueArray #
   
 mozIStorageValueArray wraps an array of SQL values, such as a single database  

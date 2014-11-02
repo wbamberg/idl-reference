@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsINetworkPredictor.idl">Source file</a>
+</div>
 # nsINetworkPredictor #
   
 nsINetworkPredictor - learn about pages users visit, and allow us to take  

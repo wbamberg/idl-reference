@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/sample/nsISample.idl">Source file</a>
+</div>
 # nsISample #
   
 The uuid is a unique number identifying the interface normally  

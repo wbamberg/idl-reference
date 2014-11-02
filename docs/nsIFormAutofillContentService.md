@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/components/formautofill/nsIFormAutofillContentService.idl">Source file</a>
+</div>
 # nsIFormAutofillContentService #
   
 Defines a service used by DOM content to request Form Autofill, in particular  

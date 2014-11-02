@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/base/public/nsIProxiedChannel.idl">Source file</a>
+</div>
 # nsIProxiedChannel #
   
 An interface for accessing the proxy info that a channel was  

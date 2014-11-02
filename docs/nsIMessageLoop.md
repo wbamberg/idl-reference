@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/base/nsIMessageLoop.idl">Source file</a>
+</div>
 # nsIMessageLoop #
   
 This service allows access to the current thread's Chromium MessageLoop  

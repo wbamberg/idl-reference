@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/io/nsIBinaryOutputStream.idl">Source file</a>
+</div>
 # nsIBinaryOutputStream #
   
 This interface allows writing of primitive data types (integers,  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/dom/interfaces/base/nsICompositionStringSynthesizer.idl">Source file</a>
+</div>
 # nsICompositionStringSynthesizer #
   
 Stores composition clauses information and caret information for synthesizing  

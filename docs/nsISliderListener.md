@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/layout/xul/nsISliderListener.idl">Source file</a>
+</div>
 # nsISliderListener #
   
 Used for <scale> to listen to slider changes to avoid mutation listeners  

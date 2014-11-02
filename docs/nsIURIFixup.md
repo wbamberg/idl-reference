@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/docshell/base/nsIURIFixup.idl">Source file</a>
+</div>
 # nsIURIFixup #
   
 Interface implemented by objects capable of fixing up strings into URIs  

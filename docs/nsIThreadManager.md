@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/xpcom/threads/nsIThreadManager.idl">Source file</a>
+</div>
 # nsIThreadManager #
   
 An interface for creating and locating nsIThread instances.  

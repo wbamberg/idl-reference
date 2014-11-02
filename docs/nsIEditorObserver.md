@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/editor/nsIEditorObserver.idl">Source file</a>
+</div>
 # nsIEditorObserver #
   
 A generic editor observer interface.   

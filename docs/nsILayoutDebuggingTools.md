@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/layout/tools/layout-debug/src/nsILayoutDebuggingTools.idl">Source file</a>
+</div>
 # nsILayoutDebuggingTools #
   
 A series of hooks into non-IDL-ized layout code to allow all the  

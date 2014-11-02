@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/caps/nsIPrincipal.idl">Source file</a>
+</div>
 # nsIExpandedPrincipal #
   
 If nsSystemPrincipal is too risky to use, but we want a principal to access  

@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/toolkit/xre/nsIWinAppHelper.idl">Source file</a>
+</div>
 # nsIWinAppHelper #
   
 A scriptable interface used on Windows only to do some work from  

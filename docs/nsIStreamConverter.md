@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/streamconv/public/nsIStreamConverter.idl">Source file</a>
+</div>
 # nsIStreamConverter #
   
 nsIStreamConverter provides an interface to implement when you have code  

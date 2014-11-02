@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/netwerk/cache2/nsICacheStorageService.idl">Source file</a>
+</div>
 # nsICacheStorageService #
   
 Provides access to particual cache storages of the network URI cache.  

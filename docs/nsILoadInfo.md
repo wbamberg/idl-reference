@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+<div class='links' style='float:right'><a href="../index.html">Index</a>
+<a href="http://dxr.mozilla.org/mozilla-central/source/docshell/base/nsILoadInfo.idl">Source file</a>
+</div>
 # nsILoadInfo #
   
 An nsILoadOwner represents per-load information about who started the load.  
