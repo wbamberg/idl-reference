@@ -30,21 +30,21 @@ also assert.
 <table>
 
 <tr>
-<td></td>
-<td>parent       nsIDOMWindow parent. This dialog will be dependent  
+<td>parent</td>
+<td>nsIDOMWindow parent. This dialog will be dependent  
                          on this parent. parent must be non-null.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>title        The title for the color picker widget.  
+<td>title</td>
+<td>The title for the color picker widget.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>initialColor The color to show when the widget is opened. The  
+<td>initialColor</td>
+<td>The color to show when the widget is opened. The  
                          parameter has to follow the format specified on top  
                          of this file.  
 </td>

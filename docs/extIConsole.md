@@ -21,9 +21,8 @@ Sends a given string to the console.
 <table>
 
 <tr>
-<td></td>
-<td>aMsg  
-         The text to send to the console  
+<td>aMsg</td>
+<td>         The text to send to the console  
 </td>
 </tr>
 

@@ -29,17 +29,15 @@ Checks for available updates, notifying a listener of the results.
 <table>
 
 <tr>
-<td></td>
-<td>listener  
-         An object implementing nsIUpdateCheckListener which is notified  
+<td>listener</td>
+<td>         An object implementing nsIUpdateCheckListener which is notified  
          of the results of an update check.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>force  
-         Forces the checker to check for updates, regardless of the  
+<td>force</td>
+<td>         Forces the checker to check for updates, regardless of the  
          current value of the user's update settings. This is used by  
          any piece of UI that offers the user the imperative option to  
          check for updates now, regardless of their update settings.  
@@ -62,9 +60,8 @@ Ends any pending update check.
 <table>
 
 <tr>
-<td></td>
-<td>duration  
-         A value representing the set of checks to stop doing.  
+<td>duration</td>
+<td>         A value representing the set of checks to stop doing.  
 </td>
 </tr>
 

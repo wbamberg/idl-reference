@@ -213,9 +213,8 @@ Returns an engine with the specified alias.
 <table>
 
 <tr>
-<td></td>
-<td>alias  
-         The search engine's alias.  
+<td>alias</td>
+<td>         The search engine's alias.  
 </td>
 </tr>
 
@@ -248,9 +247,8 @@ Returns an engine with the specified name.
 <table>
 
 <tr>
-<td></td>
-<td>aEngineName  
-         The name of the engine.  
+<td>aEngineName</td>
+<td>         The name of the engine.  
 </td>
 </tr>
 
@@ -343,16 +341,14 @@ Moves a visible search engine.
 <table>
 
 <tr>
-<td></td>
-<td>engine  
-        The engine to move.  
+<td>engine</td>
+<td>        The engine to move.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>newIndex  
-        The engine's new index in the set of visible engines.  
+<td>newIndex</td>
+<td>        The engine's new index in the set of visible engines.  
 </td>
 </tr>
 
@@ -373,9 +369,8 @@ profile directory, it will be removed from disk.
 <table>
 
 <tr>
-<td></td>
-<td>engine  
-        The engine to remove.  
+<td>engine</td>
+<td>        The engine to remove.  
 </td>
 </tr>
 

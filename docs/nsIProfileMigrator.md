@@ -39,14 +39,14 @@ set profile prefs or bookmarks, for example), use aStartup.doStartup.
 <table>
 
 <tr>
-<td></td>
-<td>aStartup nsIProfileStartup object to use during migration.  
+<td>aStartup</td>
+<td>nsIProfileStartup object to use during migration.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aKey     optional key of a migrator to use to skip source selection.  
+<td>aKey</td>
+<td>optional key of a migrator to use to skip source selection.  
 </td>
 </tr>
 

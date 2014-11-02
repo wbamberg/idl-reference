@@ -27,8 +27,8 @@ outgoing data to the converter).
 <table>
 
 <tr>
-<td></td>
-<td>aDataFlavorList fills list with supported flavors  
+<td>aDataFlavorList</td>
+<td>fills list with supported flavors  
 </td>
 </tr>
 
@@ -47,14 +47,14 @@ Determines whether a conversion from one flavor to another is supported
 <table>
 
 <tr>
-<td></td>
-<td>aFromFormatConverter flavor to convert from  
+<td>aFromFormatConverter</td>
+<td>flavor to convert from  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aFromFormatConverter flavor to convert to  
+<td>aFromFormatConverter</td>
+<td>flavor to convert to  
 </td>
 </tr>
 
@@ -74,14 +74,14 @@ Converts from one flavor to another.
 <table>
 
 <tr>
-<td></td>
-<td>aFromFormatConverter flavor to convert from  
+<td>aFromFormatConverter</td>
+<td>flavor to convert from  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aFromFormatConverter flavor to convert to (destination own the memory)  
+<td>aFromFormatConverter</td>
+<td>flavor to convert to (destination own the memory)  
 </td>
 </tr>
 

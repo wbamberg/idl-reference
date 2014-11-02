@@ -23,9 +23,8 @@ Gets the update at the specified index
 <table>
 
 <tr>
-<td></td>
-<td>index  
-         The index within the updates array  
+<td>index</td>
+<td>         The index within the updates array  
 </td>
 </tr>
 

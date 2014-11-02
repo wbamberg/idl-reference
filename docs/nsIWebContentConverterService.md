@@ -24,16 +24,14 @@ certain content type from now on.
 <table>
 
 <tr>
-<td></td>
-<td>contentType  
-         The content type to automatically load with the specified handler  
+<td>contentType</td>
+<td>         The content type to automatically load with the specified handler  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>handler  
-         A web service handler. If this is null, no automatic action is  
+<td>handler</td>
+<td>         A web service handler. If this is null, no automatic action is  
          performed and the user must choose.  
 @throws  NS_ERROR_NOT_AVAILABLE if the service refered to by |handler| is   
          not already registered.  
@@ -58,9 +56,8 @@ Gets the auto handler specified for a particular content type
 <table>
 
 <tr>
-<td></td>
-<td>contentType  
-         The content type to look up an auto handler for.  
+<td>contentType</td>
+<td>         The content type to look up an auto handler for.  
 </td>
 </tr>
 
@@ -95,16 +92,14 @@ Gets a web handler for the specified service URI
 <table>
 
 <tr>
-<td></td>
-<td>contentType  
-         The content type of the service being located  
+<td>contentType</td>
+<td>         The content type of the service being located  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>uri  
-         The service URI of the handler to locate.  
+<td>uri</td>
+<td>         The service URI of the handler to locate.  
 </td>
 </tr>
 
@@ -134,9 +129,8 @@ to be loaded.
 <table>
 
 <tr>
-<td></td>
-<td>request  
-         The nsIRequest for the load of the content  
+<td>request</td>
+<td>         The nsIRequest for the load of the content  
 </td>
 </tr>
 
@@ -156,16 +150,14 @@ Removes a registered protocol handler
 <table>
 
 <tr>
-<td></td>
-<td>protocol  
-         The protocol scheme to remove a service handler for  
+<td>protocol</td>
+<td>         The protocol scheme to remove a service handler for  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>uri  
-         The uri of the service handler to remove  
+<td>uri</td>
+<td>         The uri of the service handler to remove  
 </td>
 </tr>
 
@@ -185,16 +177,14 @@ Removes a registered content handler
 <table>
 
 <tr>
-<td></td>
-<td>contentType  
-         The content type to remove a service handler for  
+<td>contentType</td>
+<td>         The content type to remove a service handler for  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>uri  
-         The uri of the service handler to remove  
+<td>uri</td>
+<td>         The uri of the service handler to remove  
 </td>
 </tr>
 
@@ -213,9 +203,8 @@ Gets the list of content handlers for a particular type.
 <table>
 
 <tr>
-<td></td>
-<td>contentType  
-         The content type to get handlers for  
+<td>contentType</td>
+<td>         The content type to get handlers for  
 </td>
 </tr>
 
@@ -245,9 +234,8 @@ the distribution.
 <table>
 
 <tr>
-<td></td>
-<td>contentType  
-         The content type to reset handlers for  
+<td>contentType</td>
+<td>         The content type to reset handlers for  
 </td>
 </tr>
 

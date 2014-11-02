@@ -22,14 +22,14 @@ the cell is currently visible (on the screen).
 <table>
 
 <tr>
-<td></td>
-<td>rowIndex     [in] the row index to retrieve the cell at  
+<td>rowIndex</td>
+<td>[in] the row index to retrieve the cell at  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>columnIndex  [in] the column index to retrieve the cell at  
+<td>columnIndex</td>
+<td>[in] the column index to retrieve the cell at  
 </td>
 </tr>
 
@@ -49,14 +49,14 @@ index.
 <table>
 
 <tr>
-<td></td>
-<td>rowIndex    [in] the row index to return cell index at  
+<td>rowIndex</td>
+<td>[in] the row index to return cell index at  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>columnIndex [in] the column index to return cell index at  
+<td>columnIndex</td>
+<td>[in] the column index to return cell index at  
 </td>
 </tr>
 
@@ -74,8 +74,8 @@ Translate the given cell index into the corresponding column index.
 <table>
 
 <tr>
-<td></td>
-<td>cellIndex  [in] index of the table cell to return column index for  
+<td>cellIndex</td>
+<td>[in] index of the table cell to return column index for  
 </td>
 </tr>
 
@@ -150,14 +150,14 @@ the specified cell spans multiple columns.
 <table>
 
 <tr>
-<td></td>
-<td>row     [in] row index of the cell to return the column extent for  
+<td>row</td>
+<td>[in] row index of the cell to return the column extent for  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>column  [in] column index of the cell to return the column extent  
+<td>column</td>
+<td>[in] column index of the cell to return the column extent  
                  for  
 </td>
 </tr>
@@ -180,14 +180,14 @@ cell spans multiple rows.
 <table>
 
 <tr>
-<td></td>
-<td>row     [in] row index of the cell to return the column extent for  
+<td>row</td>
+<td>[in] row index of the cell to return the column extent for  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>column  [in] column index of the cell to return the column extent  
+<td>column</td>
+<td>[in] column index of the cell to return the column extent  
                  for  
 </td>
 </tr>
@@ -206,8 +206,8 @@ Return the description text of the specified column in the table.
 <table>
 
 <tr>
-<td></td>
-<td>columnIndex  [in] the column index to retrieve description for  
+<td>columnIndex</td>
+<td>[in] the column index to retrieve description for  
 </td>
 </tr>
 
@@ -225,8 +225,8 @@ Return the description text of the specified row in the table.
 <table>
 
 <tr>
-<td></td>
-<td>rowIndex  [in] the row index to retrieve description for  
+<td>rowIndex</td>
+<td>[in] the row index to retrieve description for  
 </td>
 </tr>
 
@@ -245,8 +245,8 @@ selected, i.e. all cells within the column are selected.
 <table>
 
 <tr>
-<td></td>
-<td>columnIndex  [in] the column index to determine if it's selected  
+<td>columnIndex</td>
+<td>[in] the column index to determine if it's selected  
 </td>
 </tr>
 
@@ -265,8 +265,8 @@ i.e. all cells within the row are selected.
 <table>
 
 <tr>
-<td></td>
-<td>rowIndex  [in] the row index to determine whether it's selected  
+<td>rowIndex</td>
+<td>[in] the row index to determine whether it's selected  
 </td>
 </tr>
 
@@ -285,14 +285,14 @@ Return a boolean value indicating whether the specified cell is selected.
 <table>
 
 <tr>
-<td></td>
-<td>rowIndex     [in] the row index of the cell  
+<td>rowIndex</td>
+<td>[in] the row index of the cell  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>columnIndex  [in] the column index of the cell  
+<td>columnIndex</td>
+<td>[in] the column index of the cell  
 </td>
 </tr>
 
@@ -311,14 +311,14 @@ Return an array of cell indices currently selected.
 <table>
 
 <tr>
-<td></td>
-<td>cellsArraySize  [in] length of array  
+<td>cellsArraySize</td>
+<td>[in] length of array  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>cellsArray      [in] array of indexes of selected cells  
+<td>cellsArray</td>
+<td>[in] array of indexes of selected cells  
 </td>
 </tr>
 
@@ -337,14 +337,14 @@ Return an array of column indices currently selected.
 <table>
 
 <tr>
-<td></td>
-<td>columnsArraySize  [in] length of array  
+<td>columnsArraySize</td>
+<td>[in] length of array  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>columnsArray      [in] array of indices of selected columns  
+<td>columnsArray</td>
+<td>[in] array of indices of selected columns  
 </td>
 </tr>
 
@@ -363,14 +363,14 @@ Return an array of row indices currently selected.
 <table>
 
 <tr>
-<td></td>
-<td>rowsArraySize  [in] Length of array  
+<td>rowsArraySize</td>
+<td>[in] Length of array  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>rowsArray      [in] array of indices of selected rows  
+<td>rowsArray</td>
+<td>[in] array of indices of selected rows  
 </td>
 </tr>
 
@@ -388,8 +388,8 @@ Select a row and unselects all previously selected rows.
 <table>
 
 <tr>
-<td></td>
-<td>rowIndex  [in] the row index to select  
+<td>rowIndex</td>
+<td>[in] the row index to select  
 </td>
 </tr>
 
@@ -407,8 +407,8 @@ Select a column and unselects all previously selected columns.
 <table>
 
 <tr>
-<td></td>
-<td>columnIndex  [in] the column index to select  
+<td>columnIndex</td>
+<td>[in] the column index to select  
 </td>
 </tr>
 
@@ -426,8 +426,8 @@ Unselect the given row, leaving other selected rows selected (if any).
 <table>
 
 <tr>
-<td></td>
-<td>rowIndex  [in] the row index to select  
+<td>rowIndex</td>
+<td>[in] the row index to select  
 </td>
 </tr>
 
@@ -445,8 +445,8 @@ Unselect the given column, leaving other selected columns selected (if any).
 <table>
 
 <tr>
-<td></td>
-<td>columnIndex  [in] the column index to select  
+<td>columnIndex</td>
+<td>[in] the column index to select  
 </td>
 </tr>
 

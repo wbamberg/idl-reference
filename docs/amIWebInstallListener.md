@@ -31,30 +31,26 @@ Called when installation by websites is currently disabled.
 <table>
 
 <tr>
-<td></td>
-<td>aOriginator  
-        The window or browser that triggered the installs  
+<td>aOriginator</td>
+<td>        The window or browser that triggered the installs  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aUri  
-        The URI of the site that triggered the installs  
+<td>aUri</td>
+<td>        The URI of the site that triggered the installs  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aInstalls  
-        The AddonInstalls that were blocked  
+<td>aInstalls</td>
+<td>        The AddonInstalls that were blocked  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aCount  
-        The number of AddonInstalls  
+<td>aCount</td>
+<td>        The number of AddonInstalls  
 </td>
 </tr>
 
@@ -81,30 +77,26 @@ install add-ons.
 <table>
 
 <tr>
-<td></td>
-<td>aWindow  
-        The window or browser that triggered the installs  
+<td>aWindow</td>
+<td>        The window or browser that triggered the installs  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aUri  
-        The URI of the site that triggered the installs  
+<td>aUri</td>
+<td>        The URI of the site that triggered the installs  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aInstalls  
-        The AddonInstalls that were blocked  
+<td>aInstalls</td>
+<td>        The AddonInstalls that were blocked  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aCount  
-        The number of AddonInstalls  
+<td>aCount</td>
+<td>        The number of AddonInstalls  
 </td>
 </tr>
 
@@ -141,30 +133,26 @@ Called when a website wants to ask the user to install add-ons.
 <table>
 
 <tr>
-<td></td>
-<td>aWindow  
-        The window or browser that triggered the installs  
+<td>aWindow</td>
+<td>        The window or browser that triggered the installs  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aUri  
-        The URI of the site that triggered the installs  
+<td>aUri</td>
+<td>        The URI of the site that triggered the installs  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aInstalls  
-        The AddonInstalls that were requested  
+<td>aInstalls</td>
+<td>        The AddonInstalls that were requested  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aCount  
-        The number of AddonInstalls  
+<td>aCount</td>
+<td>        The number of AddonInstalls  
 </td>
 </tr>
 

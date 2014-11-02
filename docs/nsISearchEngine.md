@@ -34,16 +34,15 @@ send to the search engine, including the URI and postData, if applicable.
 <table>
 
 <tr>
-<td></td>
-<td>data  
-        Data to add to the submission object.  
+<td>data</td>
+<td>        Data to add to the submission object.  
         i.e. the search terms.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>responseType [optional]  
+<td>responseType</td>
+<td>[optional]  
         The MIME type that we'd like to receive in response  
         to this submission.  If null, will default to "text/html".  
 </td>
@@ -202,9 +201,8 @@ Opens a speculative connection to the engine's search URI
 <table>
 
 <tr>
-<td></td>
-<td>options  
-        An object that must contain the following fields:  
+<td>options</td>
+<td>        An object that must contain the following fields:  
         {window} the content window for the window performing the search  
 </td>
 </tr>
@@ -229,8 +227,8 @@ but will default to host from the <Url>'s template otherwise.
 <table>
 
 <tr>
-<td></td>
-<td>responseType [optional]  
+<td>responseType</td>
+<td>[optional]  
         The MIME type to get resultDomain for.  Defaults to "text/html".  
 </td>
 </tr>

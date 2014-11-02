@@ -19,8 +19,8 @@ Load an XML document.
 <table>
 
 <tr>
-<td></td>
-<td>url URL to an XML document.  
+<td>url</td>
+<td>URL to an XML document.  
 </td>
 </tr>
 

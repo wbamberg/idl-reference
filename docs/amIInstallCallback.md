@@ -27,16 +27,14 @@ Called when an install completes or fails.
 <table>
 
 <tr>
-<td></td>
-<td>aUrl  
-        The url of the add-on being installed  
+<td>aUrl</td>
+<td>        The url of the add-on being installed  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aStatus  
-        0 if the install was successful or negative if not  
+<td>aStatus</td>
+<td>        0 if the install was successful or negative if not  
 </td>
 </tr>
 

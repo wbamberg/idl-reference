@@ -20,14 +20,14 @@ Return a sorted array of the names of all installed fonts.
 <table>
 
 <tr>
-<td></td>
-<td>aCount     returns number of names returned  
+<td>aCount</td>
+<td>returns number of names returned  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aResult    returns array of names  
+<td>aResult</td>
+<td>returns array of names  
 </td>
 </tr>
 
@@ -61,26 +61,26 @@ group and are suitable for use as the given CSS generic font.
 <table>
 
 <tr>
-<td></td>
-<td>aLangGroup language group  
+<td>aLangGroup</td>
+<td>language group  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aGeneric   CSS generic font  
+<td>aGeneric</td>
+<td>CSS generic font  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aCount     returns number of names returned  
+<td>aCount</td>
+<td>returns number of names returned  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aResult    returns array of names  
+<td>aResult</td>
+<td>returns array of names  
 </td>
 </tr>
 
@@ -108,8 +108,8 @@ group and are suitable for use as the given CSS generic font.
 <table>
 
 <tr>
-<td></td>
-<td>aLangGroup language group  
+<td>aLangGroup</td>
+<td>language group  
 </td>
 </tr>
 
@@ -138,14 +138,14 @@ group and are suitable for use as the given CSS generic font.
 <table>
 
 <tr>
-<td></td>
-<td>aLangGroup language group  
+<td>aLangGroup</td>
+<td>language group  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aGeneric CSS generic font  
+<td>aGeneric</td>
+<td>CSS generic font  
 </td>
 </tr>
 
@@ -181,8 +181,8 @@ get the standard family name on the system from given family
 <table>
 
 <tr>
-<td></td>
-<td>aName family name which may be alias  
+<td>aName</td>
+<td>family name which may be alias  
 </td>
 </tr>
 

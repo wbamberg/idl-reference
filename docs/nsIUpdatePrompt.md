@@ -31,9 +31,8 @@ be a no-op.
 <table>
 
 <tr>
-<td></td>
-<td>update  
-         The nsIUpdate object to be downloaded and installed  
+<td>update</td>
+<td>         The nsIUpdate object to be downloaded and installed  
 </td>
 </tr>
 
@@ -56,16 +55,14 @@ and the app.update.silent preference is true the call will be a no-op.
 <table>
 
 <tr>
-<td></td>
-<td>update  
-         The nsIUpdate object that was downloaded  
+<td>update</td>
+<td>         The nsIUpdate object that was downloaded  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>background  
-         Less obtrusive UI, starting with a non-modal notification alert  
+<td>background</td>
+<td>         Less obtrusive UI, starting with a non-modal notification alert  
 </td>
 </tr>
 
@@ -96,9 +93,8 @@ preference is true the call will be a no-op.
 <table>
 
 <tr>
-<td></td>
-<td>update  
-         An nsIUpdate object representing the update that could not be  
+<td>update</td>
+<td>         An nsIUpdate object representing the update that could not be  
          installed. The nsIUpdate object will not be the actual update when  
          the error occurred during an update check and will instead be an  
          nsIUpdate object with the error information for the update check.  
@@ -119,9 +115,8 @@ Shows a list of all updates installed to date.
 <table>
 
 <tr>
-<td></td>
-<td>parent  
-         An nsIDOMWindow to set as the parent for this window. Can be null.  
+<td>parent</td>
+<td>         An nsIDOMWindow to set as the parent for this window. Can be null.  
 </td>
 </tr>
 

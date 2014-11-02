@@ -24,9 +24,8 @@ Serializes this patch object into a DOM Element
 <table>
 
 <tr>
-<td></td>
-<td>updates  
-         The document to serialize into  
+<td>updates</td>
+<td>         The document to serialize into  
 </td>
 </tr>
 

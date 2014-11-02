@@ -370,26 +370,26 @@ the error document page. You must provide either the aURI or aURL parameter.
 <table>
 
 <tr>
-<td></td>
-<td>aError         The error code to be displayed  
+<td>aError</td>
+<td>The error code to be displayed  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aURI           nsIURI of the page where the error happened  
+<td>aURI</td>
+<td>nsIURI of the page where the error happened  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aURL           wstring of the page where the error happened  
+<td>aURL</td>
+<td>wstring of the page where the error happened  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aFailedChannel The channel related to this error  
+<td>aFailedChannel</td>
+<td>The channel related to this error  
 </td>
 </tr>
 

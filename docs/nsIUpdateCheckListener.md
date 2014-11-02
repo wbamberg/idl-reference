@@ -27,23 +27,20 @@ The update check was completed.
 <table>
 
 <tr>
-<td></td>
-<td>request  
-         The nsIXMLHttpRequest handling the update check.  
+<td>request</td>
+<td>         The nsIXMLHttpRequest handling the update check.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>updates  
-         An array of nsIUpdate objects listing available updates.  
+<td>updates</td>
+<td>         An array of nsIUpdate objects listing available updates.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>updateCount  
-         The size of the |updates| array.  
+<td>updateCount</td>
+<td>         The size of the |updates| array.  
 </td>
 </tr>
 
@@ -64,16 +61,14 @@ An error occurred while loading the remote update service file.
 <table>
 
 <tr>
-<td></td>
-<td>request  
-         The nsIXMLHttpRequest handling the update check.  
+<td>request</td>
+<td>         The nsIXMLHttpRequest handling the update check.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>update  
-         A nsIUpdate object that contains details about the  
+<td>update</td>
+<td>         A nsIUpdate object that contains details about the  
          error in its |statusText| property.  
 </td>
 </tr>

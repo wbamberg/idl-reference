@@ -21,9 +21,8 @@ Load a new URI into this browser tab.
 <table>
 
 <tr>
-<td></td>
-<td>aURI  
-         The uri to load into the browser tab  
+<td>aURI</td>
+<td>         The uri to load into the browser tab  
 </td>
 </tr>
 
@@ -52,9 +51,8 @@ Moves this browser tab before another browser tab within the window.
 <table>
 
 <tr>
-<td></td>
-<td>aBefore  
-         The tab before which the target tab will be moved  
+<td>aBefore</td>
+<td>         The tab before which the target tab will be moved  
 </td>
 </tr>
 

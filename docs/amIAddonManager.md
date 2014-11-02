@@ -29,9 +29,8 @@ but do not include URIs from meta data, such as the add-on homepage.
 <table>
 
 <tr>
-<td></td>
-<td>aURI  
-        The nsIURI to map  
+<td>aURI</td>
+<td>        The nsIURI to map  
 </td>
 </tr>
 

@@ -159,8 +159,8 @@ Increments the modification count of the document.
 <table>
 
 <tr>
-<td></td>
-<td>aModCount  the number of modifications by which  
+<td>aModCount</td>
+<td>the number of modifications by which  
                    to increase or decrease the count  
 </td>
 </tr>
@@ -342,8 +342,8 @@ WARNING: You must be very careful to reset back to PR_TRUE after
 <table>
 
 <tr>
-<td></td>
-<td>should  Set false to suppress changing the selection;  
+<td>should</td>
+<td>Set false to suppress changing the selection;  
                  i.e., before using InsertElement() to insert  
                  under <head> element  
 WARNING: You must be very careful to reset back to PR_TRUE after  
@@ -369,8 +369,8 @@ you during this call.
 <table>
 
 <tr>
-<td></td>
-<td>autoCreate  If true, this will create a spell checker object  
+<td>autoCreate</td>
+<td>If true, this will create a spell checker object  
                     if one does not exist yet for this editor. If false  
                     and the object has not been created, this function  
                     WILL RETURN NULL.  
@@ -397,8 +397,8 @@ editor.
 <table>
 
 <tr>
-<td></td>
-<td>enable  The new state of spellchecking in this editor, as  
+<td>enable</td>
+<td>The new state of spellchecking in this editor, as  
                 requested by the user.  
 </td>
 </tr>

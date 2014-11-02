@@ -22,8 +22,8 @@ copy operator equivalent that takes another region
 <table>
 
 <tr>
-<td></td>
-<td>region to copy  
+<td>region</td>
+<td>to copy  
 </td>
 </tr>
 
@@ -57,26 +57,26 @@ copy operator equivalent that takes a rect
 <table>
 
 <tr>
-<td></td>
-<td>aX xoffset of rect to set region to  
+<td>aX</td>
+<td>xoffset of rect to set region to  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aY yoffset of rect to set region to  
+<td>aY</td>
+<td>yoffset of rect to set region to  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aWidth width of rect to set region to  
+<td>aWidth</td>
+<td>width of rect to set region to  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aHeight height of rect to set region to  
+<td>aHeight</td>
+<td>height of rect to set region to  
 </td>
 </tr>
 
@@ -107,8 +107,8 @@ destructively intersect another region with this one
 <table>
 
 <tr>
-<td></td>
-<td>region to intersect  
+<td>region</td>
+<td>to intersect  
 </td>
 </tr>
 
@@ -142,26 +142,26 @@ destructively intersect a rect with this region
 <table>
 
 <tr>
-<td></td>
-<td>aX xoffset of rect to intersect with region  
+<td>aX</td>
+<td>xoffset of rect to intersect with region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aY yoffset of rect to intersect with region  
+<td>aY</td>
+<td>yoffset of rect to intersect with region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aWidth width of rect to intersect with region  
+<td>aWidth</td>
+<td>width of rect to intersect with region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aHeight height of rect to intersect with region  
+<td>aHeight</td>
+<td>height of rect to intersect with region  
 </td>
 </tr>
 
@@ -192,8 +192,8 @@ destructively union another region with this one
 <table>
 
 <tr>
-<td></td>
-<td>region to union  
+<td>region</td>
+<td>to union  
 </td>
 </tr>
 
@@ -227,26 +227,26 @@ destructively union a rect with this region
 <table>
 
 <tr>
-<td></td>
-<td>aX xoffset of rect to union with region  
+<td>aX</td>
+<td>xoffset of rect to union with region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aY yoffset of rect to union with region  
+<td>aY</td>
+<td>yoffset of rect to union with region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aWidth width of rect to union with region  
+<td>aWidth</td>
+<td>width of rect to union with region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aHeight height of rect to union with region  
+<td>aHeight</td>
+<td>height of rect to union with region  
 </td>
 </tr>
 
@@ -277,8 +277,8 @@ destructively subtract another region with this one
 <table>
 
 <tr>
-<td></td>
-<td>region to subtract  
+<td>region</td>
+<td>to subtract  
 </td>
 </tr>
 
@@ -312,26 +312,26 @@ destructively subtract a rect from this region
 <table>
 
 <tr>
-<td></td>
-<td>aX xoffset of rect to subtract with region  
+<td>aX</td>
+<td>xoffset of rect to subtract with region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aY yoffset of rect to subtract with region  
+<td>aY</td>
+<td>yoffset of rect to subtract with region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aWidth width of rect to subtract with region  
+<td>aWidth</td>
+<td>width of rect to subtract with region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aHeight height of rect to subtract with region  
+<td>aHeight</td>
+<td>height of rect to subtract with region  
 </td>
 </tr>
 
@@ -362,9 +362,8 @@ is this region empty? i.e. does it contain any pixels
 <table>
 
 <tr>
+<td>none</td>
 <td></td>
-<td>none  
-</td>
 </tr>
 
 </table>
@@ -395,8 +394,8 @@ the same pixels
 <table>
 
 <tr>
-<td></td>
-<td>region to compare  
+<td>region</td>
+<td>to compare  
 </td>
 </tr>
 
@@ -431,26 +430,26 @@ rectangle that completely contains the region.
 <table>
 
 <tr>
-<td></td>
-<td>aX out parameter for xoffset of bounding rect for region  
+<td>aX</td>
+<td>out parameter for xoffset of bounding rect for region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aY out parameter for yoffset of bounding rect for region  
+<td>aY</td>
+<td>out parameter for yoffset of bounding rect for region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aWidth out parameter for width of bounding rect for region  
+<td>aWidth</td>
+<td>out parameter for width of bounding rect for region  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aHeight out parameter for height of bounding rect for region  
+<td>aHeight</td>
+<td>out parameter for height of bounding rect for region  
 </td>
 </tr>
 
@@ -482,14 +481,14 @@ offsets the region in x and y
 <table>
 
 <tr>
-<td></td>
-<td>xoffset  pixel offset in x  
+<td>xoffset</td>
+<td>pixel offset in x  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>yoffset  pixel offset in y  
+<td>yoffset</td>
+<td>pixel offset in y  
 </td>
 </tr>
 
@@ -540,8 +539,8 @@ does the region intersect the rectangle?
 <table>
 
 <tr>
-<td></td>
-<td>rect to check for containment  
+<td>rect</td>
+<td>to check for containment  
 </td>
 </tr>
 

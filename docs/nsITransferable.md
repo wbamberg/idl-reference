@@ -58,8 +58,8 @@ can export, either through intrinsic knowledge or output data converters.
 <table>
 
 <tr>
-<td></td>
-<td>aDataFlavorList fills list with supported flavors. This is a copy of  
+<td>aDataFlavorList</td>
+<td>fills list with supported flavors. This is a copy of  
          the internal list, so it may be edited w/out affecting the transferable.  
 </td>
 </tr>
@@ -80,20 +80,20 @@ Given a flavor retrieve the data.
 <table>
 
 <tr>
-<td></td>
-<td>aFlavor (in parameter) the flavor of data to retrieve  
+<td>aFlavor</td>
+<td>(in parameter) the flavor of data to retrieve  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aData the data. Some variant of class in nsISupportsPrimitives.idl  
+<td>aData</td>
+<td>the data. Some variant of class in nsISupportsPrimitives.idl  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aDataLen the length of the data  
+<td>aDataLen</td>
+<td>the length of the data  
 </td>
 </tr>
 
@@ -114,20 +114,20 @@ been added to it with |AddFlavor()|
 <table>
 
 <tr>
-<td></td>
-<td>aFlavor (out parameter) the flavor of data that was retrieved  
+<td>aFlavor</td>
+<td>(out parameter) the flavor of data that was retrieved  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aData the data. Some variant of class in nsISupportsPrimitives.idl  
+<td>aData</td>
+<td>the data. Some variant of class in nsISupportsPrimitives.idl  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aDataLen the length of the data  
+<td>aDataLen</td>
+<td>the length of the data  
 </td>
 </tr>
 
@@ -152,8 +152,8 @@ accept into it, either through intrinsic knowledge or input data converters.
 <table>
 
 <tr>
-<td></td>
-<td>outFlavorList fills list with supported flavors. This is a copy of  
+<td>outFlavorList</td>
+<td>fills list with supported flavors. This is a copy of  
          the internal list, so it may be edited w/out affecting the transferable.  
 </td>
 </tr>
@@ -176,21 +176,21 @@ will maintain its own copy the data, so it is not necessary to do that beforehan
 <table>
 
 <tr>
-<td></td>
-<td>aFlavor the flavor of data that is being set  
+<td>aFlavor</td>
+<td>the flavor of data that is being set  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aData the data, either some variant of class in nsISupportsPrimitives.idl,  
+<td>aData</td>
+<td>the data, either some variant of class in nsISupportsPrimitives.idl,  
         an nsIFile, or an nsIFlavorDataProvider (see above)  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aDataLen the length of the data, or 0 if passing a nsIFlavorDataProvider  
+<td>aDataLen</td>
+<td>the length of the data, or 0 if passing a nsIFlavorDataProvider  
 </td>
 </tr>
 
@@ -209,8 +209,8 @@ can receive this type of flavor
 <table>
 
 <tr>
-<td></td>
-<td>aDataFlavor a new data flavor to handle  
+<td>aDataFlavor</td>
+<td>a new data flavor to handle  
 </td>
 </tr>
 
@@ -229,8 +229,8 @@ that goes along with it.
 <table>
 
 <tr>
-<td></td>
-<td>aDataFlavor a data flavor to remove  
+<td>aDataFlavor</td>
+<td>a data flavor to remove  
 </td>
 </tr>
 

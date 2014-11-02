@@ -19,8 +19,8 @@ Return the data associated with the given key.
 <table>
 
 <tr>
-<td></td>
-<td>key  the key  
+<td>key</td>
+<td>the key  
 </td>
 </tr>
 
@@ -52,14 +52,14 @@ Set the data for the given key.
 <table>
 
 <tr>
-<td></td>
-<td>key   the data key  
+<td>key</td>
+<td>the data key  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>data  the data  
+<td>data</td>
+<td>the data  
 @throws       NS_ERROR_UNEXPECTED if the method is called during event  
               dispatch  
 </td>

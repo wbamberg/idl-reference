@@ -35,9 +35,8 @@ for soft-blocking any addons that need to be afterwards
 <table>
 
 <tr>
-<td></td>
-<td>aAddons  
-        An array of addons and plugins that are blocked. These are javascript  
+<td>aAddons</td>
+<td>        An array of addons and plugins that are blocked. These are javascript  
         objects with properties:  
          name    - the plugin or extension name,  
          version - the version of the extension or plugin,  
@@ -50,9 +49,8 @@ for soft-blocking any addons that need to be afterwards
 </tr>
 
 <tr>
-<td></td>
-<td>aCount  
-        The number of addons  
+<td>aCount</td>
+<td>        The number of addons  
 </td>
 </tr>
 

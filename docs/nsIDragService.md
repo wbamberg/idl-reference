@@ -21,21 +21,21 @@ Starts a modal drag session with an array of transaferables
 <table>
 
 <tr>
-<td></td>
-<td>aTransferables - an array of transferables to be dragged  
+<td>aTransferables</td>
+<td>- an array of transferables to be dragged  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aRegion - a region containing rectangles for cursor feedback,   
+<td>aRegion</td>
+<td>- a region containing rectangles for cursor feedback,   
            in window coordinates.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aActionType - specified which of copy/move/link are allowed  
+<td>aActionType</td>
+<td>- specified which of copy/move/link are allowed  
 </td>
 </tr>
 

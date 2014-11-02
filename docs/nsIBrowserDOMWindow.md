@@ -90,8 +90,8 @@ As above, but return the nsIFrameLoaderOwner for the new window.
 <table>
 
 <tr>
-<td></td>
-<td>aWindow the window to test.  
+<td>aWindow</td>
+<td>the window to test.  
 </td>
 </tr>
 

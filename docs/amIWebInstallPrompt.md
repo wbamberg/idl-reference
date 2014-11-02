@@ -30,30 +30,26 @@ Get a confirmation that the user wants to start the installs.
 <table>
 
 <tr>
-<td></td>
-<td>aWindow  
-        The window that triggered the installs  
+<td>aWindow</td>
+<td>        The window that triggered the installs  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aUri  
-        The URI of the site that triggered the installs  
+<td>aUri</td>
+<td>        The URI of the site that triggered the installs  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aInstalls  
-        The AddonInstalls that were requested  
+<td>aInstalls</td>
+<td>        The AddonInstalls that were requested  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aCount  
-        The number of AddonInstalls  
+<td>aCount</td>
+<td>        The number of AddonInstalls  
 </td>
 </tr>
 

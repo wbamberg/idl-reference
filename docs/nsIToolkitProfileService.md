@@ -96,30 +96,26 @@ new profile directory.
 <table>
 
 <tr>
-<td></td>
-<td>aProfileName  
-        The name of the profile  
+<td>aProfileName</td>
+<td>        The name of the profile  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aAppName  
-        The name of the application  
+<td>aAppName</td>
+<td>        The name of the application  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aVendorName  
-        The name of the vendor  
+<td>aVendorName</td>
+<td>        The name of the vendor  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aProfileDefaultsDir  
-        The location where the profile defaults are.  
+<td>aProfileDefaultsDir</td>
+<td>        The location where the profile defaults are.  
 </td>
 </tr>
 

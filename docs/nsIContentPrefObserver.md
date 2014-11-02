@@ -21,21 +21,21 @@ Called when a content pref is set to a different value.
 <table>
 
 <tr>
-<td></td>
-<td>aGroup      the group to which the pref belongs, or null  
+<td>aGroup</td>
+<td>the group to which the pref belongs, or null  
                       if it's a global pref (applies to all sites)  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aName       the name of the pref that was set  
+<td>aName</td>
+<td>the name of the pref that was set  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aValue      the new value of the pref  
+<td>aValue</td>
+<td>the new value of the pref  
 </td>
 </tr>
 
@@ -55,15 +55,15 @@ Called when a content pref is removed.
 <table>
 
 <tr>
-<td></td>
-<td>aGroup      the group to which the pref belongs, or null  
+<td>aGroup</td>
+<td>the group to which the pref belongs, or null  
                       if it's a global pref (applies to all sites)  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aName       the name of the pref that was removed  
+<td>aName</td>
+<td>the name of the pref that was removed  
 </td>
 </tr>
 

@@ -37,8 +37,8 @@ In the case of nested URIs, the innermost URI will be used.
 <table>
 
 <tr>
-<td></td>
-<td>aURI   The URI to be analyzed  
+<td>aURI</td>
+<td>The URI to be analyzed  
 </td>
 </tr>
 
@@ -102,14 +102,14 @@ In the case of nested URIs, the innermost URI will be used.
 <table>
 
 <tr>
-<td></td>
-<td>aURI               The URI to be analyzed  
+<td>aURI</td>
+<td>The URI to be analyzed  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aAdditionalParts   Number of domain name parts to be  
+<td>aAdditionalParts</td>
+<td>Number of domain name parts to be  
                             returned in addition to the public suffix  
 </td>
 </tr>
@@ -147,8 +147,8 @@ Returns the public suffix of a host string. Otherwise identical to getPublicSuff
 <table>
 
 <tr>
-<td></td>
-<td>aHost   The host to be analyzed. Any additional parts (e.g. scheme,  
+<td>aHost</td>
+<td>The host to be analyzed. Any additional parts (e.g. scheme,  
                  port, or path) will cause this method to throw. ASCII/ACE and  
                  UTF8 encodings are acceptable as input; normalization will  
                  be performed as specified in getBaseDomain().  
@@ -177,8 +177,8 @@ Returns the base domain of a host string. Otherwise identical to getBaseDomain()
 <table>
 
 <tr>
-<td></td>
-<td>aHost   The host to be analyzed. Any additional parts (e.g. scheme,  
+<td>aHost</td>
+<td>The host to be analyzed. Any additional parts (e.g. scheme,  
                  port, or path) will cause this method to throw. ASCII/ACE and  
                  UTF8 encodings are acceptable as input; normalization will  
                  be performed as specified in getBaseDomain().  
@@ -206,8 +206,8 @@ For example: "player.bbc.co.uk" would return "bbc.co.uk" and
 <table>
 
 <tr>
-<td></td>
-<td>aHost   The host to be analyzed. Any additional parts (e.g. scheme,  
+<td>aHost</td>
+<td>The host to be analyzed. Any additional parts (e.g. scheme,  
                  port, or path) will cause this method to throw. ASCII/ACE and  
                  UTF8 encodings are acceptable as input; normalization will  
                  be performed as specified in getBaseDomain().  

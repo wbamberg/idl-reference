@@ -25,16 +25,14 @@ Checks if installation is enabled for a webpage.
 <table>
 
 <tr>
-<td></td>
-<td>aMimetype  
-        The mimetype for the add-on to be installed  
+<td>aMimetype</td>
+<td>        The mimetype for the add-on to be installed  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>referer  
-        The URL of the webpage trying to install an add-on  
+<td>referer</td>
+<td>        The URL of the webpage trying to install an add-on  
 </td>
 </tr>
 
@@ -83,67 +81,58 @@ Installs an array of add-ons at the request of a webpage
 <table>
 
 <tr>
-<td></td>
-<td>aMimetype  
-        The mimetype for the add-ons  
+<td>aMimetype</td>
+<td>        The mimetype for the add-ons  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aOriginator  
-        If not e10s, the window installing the add-ons, otherwise the  
+<td>aOriginator</td>
+<td>        If not e10s, the window installing the add-ons, otherwise the  
         browser installing the add-ons.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aReferer  
-        The URI for the webpage installing the add-ons  
+<td>aReferer</td>
+<td>        The URI for the webpage installing the add-ons  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aUris  
-        The URIs of add-ons to be installed  
+<td>aUris</td>
+<td>        The URIs of add-ons to be installed  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aHashes  
-        The hashes for the add-ons to be installed  
+<td>aHashes</td>
+<td>        The hashes for the add-ons to be installed  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aNames  
-        The names for the add-ons to be installed  
+<td>aNames</td>
+<td>        The names for the add-ons to be installed  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aIcons  
-        The icons for the add-ons to be installed  
+<td>aIcons</td>
+<td>        The icons for the add-ons to be installed  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aCallback  
-        An optional callback to notify about installation success and  
+<td>aCallback</td>
+<td>        An optional callback to notify about installation success and  
         failure  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aInstallCount  
-        An optional argument including the number of add-ons to install  
+<td>aInstallCount</td>
+<td>        An optional argument including the number of add-ons to install  
 </td>
 </tr>
 

@@ -28,16 +28,14 @@ removed with the removeListener method.
 <table>
 
 <tr>
-<td></td>
-<td>aEvent  
-         The name of an event  
+<td>aEvent</td>
+<td>         The name of an event  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aListener  
-         The reference to a listener  
+<td>aListener</td>
+<td>         The reference to a listener  
 </td>
 </tr>
 
@@ -59,16 +57,14 @@ event listener has no effect.
 <table>
 
 <tr>
-<td></td>
-<td>aEvent  
-         The name of an event  
+<td>aEvent</td>
+<td>         The name of an event  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aListener  
-         The reference to a listener  
+<td>aListener</td>
+<td>         The reference to a listener  
 </td>
 </tr>
 

@@ -27,9 +27,8 @@ Check to see if a preference exists.
 <table>
 
 <tr>
-<td></td>
-<td>aName  
-         The name of preference  
+<td>aName</td>
+<td>         The name of preference  
 </td>
 </tr>
 
@@ -59,9 +58,8 @@ Gets an object representing a preference
 <table>
 
 <tr>
-<td></td>
-<td>aName  
-         The name of preference  
+<td>aName</td>
+<td>         The name of preference  
 </td>
 </tr>
 
@@ -95,16 +93,14 @@ the preference does not exist.
 <table>
 
 <tr>
-<td></td>
-<td>aName  
-         The name of preference  
+<td>aName</td>
+<td>         The name of preference  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aDefaultValue  
-         The value to return if preference does not exist  
+<td>aDefaultValue</td>
+<td>         The value to return if preference does not exist  
 </td>
 </tr>
 
@@ -136,16 +132,14 @@ Sets the value of a storage item with the given name.
 <table>
 
 <tr>
-<td></td>
-<td>aName  
-         The name of an item  
+<td>aName</td>
+<td>         The name of an item  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aValue  
-         The value to assign to the item  
+<td>aValue</td>
+<td>         The value to assign to the item  
 </td>
 </tr>
 

@@ -24,16 +24,14 @@ Adds a new child bookmark to this folder.
 <table>
 
 <tr>
-<td></td>
-<td>aTitle  
-         The title of bookmark.  
+<td>aTitle</td>
+<td>         The title of bookmark.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aURI  
-         The uri of bookmark.  
+<td>aURI</td>
+<td>         The uri of bookmark.  
 </td>
 </tr>
 
@@ -56,9 +54,8 @@ Adds a new child folder to this folder.
 <table>
 
 <tr>
-<td></td>
-<td>aTitle  
-         The title of folder.  
+<td>aTitle</td>
+<td>         The title of folder.  
 </td>
 </tr>
 

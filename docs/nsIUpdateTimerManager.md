@@ -51,24 +51,21 @@ the values are as follows
 <table>
 
 <tr>
-<td></td>
-<td>id  
-         An id that identifies the interval, used for persistence  
+<td>id</td>
+<td>         An id that identifies the interval, used for persistence  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>callback  
-         A nsITimerCallback object that is notified when the interval  
+<td>callback</td>
+<td>         A nsITimerCallback object that is notified when the interval  
          expires  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>interval  
-         The length of time, in seconds, of the interval  
+<td>interval</td>
+<td>         The length of time, in seconds, of the interval  
 </td>
 </tr>
 

@@ -42,16 +42,14 @@ NOTICE:  In the 2.0 timeframe this API will change such that the
 <table>
 
 <tr>
-<td></td>
-<td>url  
-         The URL of the overlay to load and merge  
+<td>url</td>
+<td>         The URL of the overlay to load and merge  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>observer  
-         An object implementing nsIObserver that will be notified with a  
+<td>observer</td>
+<td>         An object implementing nsIObserver that will be notified with a  
          message of topic "xul-overlay-merged" when the merge is complete.   
          The subject parameter of |observe| will QI to a nsIURI - the URI   
          of the merged overlay. This parameter is optional and may be null.  

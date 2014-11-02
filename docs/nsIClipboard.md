@@ -21,20 +21,20 @@ Given a transferable, set the data on the native clipboard
 <table>
 
 <tr>
-<td></td>
-<td>aTransferable The transferable  
+<td>aTransferable</td>
+<td>The transferable  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>anOwner The owner of the transferable  
+<td>anOwner</td>
+<td>The owner of the transferable  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aWhichClipboard Specifies the clipboard to which this operation applies.  
+<td>aWhichClipboard</td>
+<td>Specifies the clipboard to which this operation applies.  
 @result NS_Ok if no errors  
 </td>
 </tr>
@@ -55,14 +55,14 @@ Given a transferable, get the clipboard data.
 <table>
 
 <tr>
-<td></td>
-<td>aTransferable The transferable  
+<td>aTransferable</td>
+<td>The transferable  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aWhichClipboard Specifies the clipboard to which this operation applies.  
+<td>aWhichClipboard</td>
+<td>Specifies the clipboard to which this operation applies.  
 @result NS_Ok if no errors  
 </td>
 </tr>
@@ -83,8 +83,8 @@ This empties the "logical" clipboard. It does not clear the native clipboard.
 <table>
 
 <tr>
-<td></td>
-<td>aWhichClipboard Specifies the clipboard to which this operation applies.  
+<td>aWhichClipboard</td>
+<td>Specifies the clipboard to which this operation applies.  
 @result NS_OK if successful.  
 </td>
 </tr>
@@ -110,20 +110,20 @@ any of the flavors in the given list.
 <table>
 
 <tr>
-<td></td>
-<td>aFlavorList     An array of ASCII strings.  
+<td>aFlavorList</td>
+<td>An array of ASCII strings.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aLength         The length of the aFlavorList.  
+<td>aLength</td>
+<td>The length of the aFlavorList.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aWhichClipboard Specifies the clipboard to which this operation applies.  
+<td>aWhichClipboard</td>
+<td>Specifies the clipboard to which this operation applies.  
 @outResult - if data is present matching one of   
 @result NS_OK if successful.  
 </td>

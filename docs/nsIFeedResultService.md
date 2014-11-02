@@ -29,30 +29,26 @@ bookmarks.
 <table>
 
 <tr>
-<td></td>
-<td>uri  
-         The uri of the feed to add.  
+<td>uri</td>
+<td>         The uri of the feed to add.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>title  
-         The title of the feed to add.  
+<td>title</td>
+<td>         The title of the feed to add.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>subtitle  
-         The subtitle of the feed to add.  
+<td>subtitle</td>
+<td>         The subtitle of the feed to add.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>feedType  
-         The nsIFeed type of the feed.  See nsIFeed.idl  
+<td>feedType</td>
+<td>         The nsIFeed type of the feed.  See nsIFeed.idl  
 </td>
 </tr>
 
@@ -73,9 +69,8 @@ flow of control in document loading.
 <table>
 
 <tr>
-<td></td>
-<td>feedResult  
-         An object implementing nsIFeedResult representing the feed.  
+<td>feedResult</td>
+<td>         An object implementing nsIFeedResult representing the feed.  
 </td>
 </tr>
 
@@ -94,9 +89,8 @@ Gets a Feed Handler object registered using addFeedResult.
 <table>
 
 <tr>
-<td></td>
-<td>uri  
-         The URI of the feed a handler is being requested for  
+<td>uri</td>
+<td>         The URI of the feed a handler is being requested for  
 </td>
 </tr>
 
@@ -115,9 +109,8 @@ Unregisters a Feed Handler object registered using addFeedResult.
 <table>
 
 <tr>
-<td></td>
-<td>uri  
-         The feed URI the handler was registered under. This must be  
+<td>uri</td>
+<td>         The feed URI the handler was registered under. This must be  
          the same *instance* the feed was registered under.  
 </td>
 </tr>

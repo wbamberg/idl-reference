@@ -23,9 +23,8 @@ Determines if an extension exists with the given id.
 <table>
 
 <tr>
-<td></td>
-<td>aId  
-         The id of an extension  
+<td>aId</td>
+<td>         The id of an extension  
 </td>
 </tr>
 
@@ -57,9 +56,8 @@ Gets a extIExtension object for an extension.
 <table>
 
 <tr>
-<td></td>
-<td>aId  
-         The id of an extension  
+<td>aId</td>
+<td>         The id of an extension  
 </td>
 </tr>
 

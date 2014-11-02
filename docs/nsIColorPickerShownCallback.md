@@ -29,8 +29,8 @@ changed.
 <table>
 
 <tr>
-<td></td>
-<td>color  The new selected color value following the format specifed on  
+<td>color</td>
+<td>The new selected color value following the format specifed on  
                top of this file.  
 </td>
 </tr>
@@ -53,8 +53,8 @@ If the color has not changed, the color parameter will be the empty string.
 <table>
 
 <tr>
-<td></td>
-<td>color  The new selected color value following the format specifed on  
+<td>color</td>
+<td>The new selected color value following the format specifed on  
                top of this file or the empty string.  
 </td>
 </tr>

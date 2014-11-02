@@ -43,27 +43,27 @@ return the text attributes for this range of text.
 <table>
 
 <tr>
-<td></td>
-<td>includeDefAttrs   [in] points whether text attributes applied to  
+<td>includeDefAttrs</td>
+<td>[in] points whether text attributes applied to  
                           the entire accessible should be included or not.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>offset            [in] text offset  
+<td>offset</td>
+<td>[in] text offset  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>rangeStartOffset  [out] start offset of the range of text  
+<td>rangeStartOffset</td>
+<td>[out] start offset of the range of text  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>rangeEndOffset    [out] end offset of the range of text  
+<td>rangeEndOffset</td>
+<td>[out] end offset of the range of text  
 </td>
 </tr>
 

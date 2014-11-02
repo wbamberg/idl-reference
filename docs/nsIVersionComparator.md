@@ -49,14 +49,14 @@ Compare two version strings
 <table>
 
 <tr>
-<td></td>
-<td>A   The first version  
+<td>A</td>
+<td>The first version  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>B   The second version  
+<td>B</td>
+<td>The second version  
 </td>
 </tr>
 

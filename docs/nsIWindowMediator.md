@@ -23,8 +23,8 @@ from the oldest window to the youngest.
 <table>
 
 <tr>
-<td></td>
-<td>aWindowType the returned enumerator will enumerate only  
+<td>aWindowType</td>
+<td>the returned enumerator will enumerate only  
                     windows of this type. ("type" is the  
                     |windowtype| attribute of the XML <window> element.)  
                     If null, all windows will be enumerated.  
@@ -81,8 +81,8 @@ are re-ordered while z-order enumerators are active.
 <table>
 
 <tr>
-<td></td>
-<td>aWindowType the returned enumerator will enumerate only  
+<td>aWindowType</td>
+<td>the returned enumerator will enumerate only  
                     windows of this type. ("type" is the  
                     |windowtype| attribute of the XML <window> element.)  
                     If null, all windows will be enumerated.  
@@ -90,8 +90,8 @@ are re-ordered while z-order enumerators are active.
 </tr>
 
 <tr>
-<td></td>
-<td>aFrontToBack if true, the enumerator enumerates windows in order  
+<td>aFrontToBack</td>
+<td>if true, the enumerator enumerates windows in order  
                      from front to back. back to front if false.  
 </td>
 </tr>
@@ -140,8 +140,8 @@ front to back order.
 <table>
 
 <tr>
-<td></td>
-<td>aWindowType return the topmost window of this type.  
+<td>aWindowType</td>
+<td>return the topmost window of this type.  
                     ("type" is the |windowtype| attribute of  
                     the XML <window> element.)  
                     If null, return the topmost window of any type.  

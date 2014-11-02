@@ -26,8 +26,8 @@ expose to the user, for example on the URL bar.
 <table>
 
 <tr>
-<td></td>
-<td>aURI       The URI to be converted  
+<td>aURI</td>
+<td>The URI to be converted  
 </td>
 </tr>
 

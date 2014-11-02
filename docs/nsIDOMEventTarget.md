@@ -42,22 +42,22 @@ removeEventListener method.
 <table>
 
 <tr>
-<td></td>
-<td>type The event type for which the user is registering  
+<td>type</td>
+<td>The event type for which the user is registering  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>listener The listener parameter takes an interface   
+<td>listener</td>
+<td>The listener parameter takes an interface   
                   implemented by the user which contains the methods   
                   to be called when the event occurs.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>useCapture If true, useCapture indicates that the user   
+<td>useCapture</td>
+<td>If true, useCapture indicates that the user   
                     wishes to initiate capture. After initiating   
                     capture, all events of the specified type will be   
                     dispatched to the registered EventListener before   
@@ -69,8 +69,8 @@ removeEventListener method.
 </tr>
 
 <tr>
-<td></td>
-<td>wantsUntrusted If false, the listener will not receive any  
+<td>wantsUntrusted</td>
+<td>If false, the listener will not receive any  
                         untrusted events (see above), if true, the  
                         listener will receive events whether or not  
                         they're trusted  
@@ -167,22 +167,22 @@ currently registered EventListener on the EventTarget has no effect.
 <table>
 
 <tr>
-<td></td>
-<td>type Specifies the event type of the EventListener being   
+<td>type</td>
+<td>Specifies the event type of the EventListener being   
               removed.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>listener The EventListener parameter indicates the   
+<td>listener</td>
+<td>The EventListener parameter indicates the   
                   EventListener to be removed.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>useCapture Specifies whether the EventListener being   
+<td>useCapture</td>
+<td>Specifies whether the EventListener being   
                     removed was registered as a capturing listener or   
                     not. If a listener was registered twice, one with   
                     capture and one without, each must be removed   
@@ -225,8 +225,8 @@ dispatchEvent is called.
 <table>
 
 <tr>
-<td></td>
-<td>evt Specifies the event type, behavior, and contextual   
+<td>evt</td>
+<td>Specifies the event type, behavior, and contextual   
              information to be used in processing the event.  
 </td>
 </tr>

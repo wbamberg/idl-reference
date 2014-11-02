@@ -168,14 +168,14 @@ and may return any number of items is "isFramesetDocument" is true
 <table>
 
 <tr>
-<td></td>
-<td>aCount - returns number of printers returned  
+<td>aCount</td>
+<td>- returns number of printers returned  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aResult - returns array of names  
+<td>aResult</td>
+<td>- returns array of names  
 </td>
 </tr>
 

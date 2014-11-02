@@ -71,8 +71,8 @@ attributes are left unchanged.
 <table>
 
 <tr>
-<td></td>
-<td>eventTypeArg Specifies the event type. This type may be   
+<td>eventTypeArg</td>
+<td>Specifies the event type. This type may be   
                       any event type currently defined in this   
                       specification or a new event type.. The string   
                       must be an XML name.  
@@ -88,14 +88,14 @@ attributes are left unchanged.
 </tr>
 
 <tr>
-<td></td>
-<td>canBubbleArg Specifies whether or not the event can bubble.  
+<td>canBubbleArg</td>
+<td>Specifies whether or not the event can bubble.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>cancelableArg Specifies whether or not the event's default   
+<td>cancelableArg</td>
+<td>Specifies whether or not the event's default   
                        action can be prevented.  
 </td>
 </tr>

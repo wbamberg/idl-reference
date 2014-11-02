@@ -60,38 +60,38 @@ code.
 <table>
 
 <tr>
-<td></td>
-<td>aHeaderVal        a header string to get the value of a parameter   
+<td>aHeaderVal</td>
+<td>a header string to get the value of a parameter   
                           from.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aParamName        the name of a MIME header parameter (e.g.   
+<td>aParamName</td>
+<td>the name of a MIME header parameter (e.g.   
                           filename, name, charset). If empty,  returns   
                           the first (possibly) _unnamed_ 'parameter'.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aFallbackCharset  fallback charset to try if  the string after  
+<td>aFallbackCharset</td>
+<td>fallback charset to try if  the string after  
                           RFC 2231/2047 decoding or the raw 8bit   
                           string is not UTF-8  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aTryLocaleCharset If set, makes yet another attempt   
+<td>aTryLocaleCharset</td>
+<td>If set, makes yet another attempt   
                           with the locale charset.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aLang             If non-null, assigns it to a pointer   
+<td>aLang</td>
+<td>If non-null, assigns it to a pointer   
                           to a string containing the value of language   
                           obtained from RFC 2231 parsing. Caller has to   
                           nsMemory::Free it.  
@@ -144,14 +144,14 @@ should use this function.
 <table>
 
 <tr>
-<td></td>
-<td>aParamVal         a header field parameter to decode.  
+<td>aParamVal</td>
+<td>a header field parameter to decode.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aLang             will be set to the language part (possibly  
+<td>aLang</td>
+<td>will be set to the language part (possibly  
                           empty).  
 </td>
 </tr>
@@ -204,30 +204,30 @@ Otherwise, this method would have been made static.
 <table>
 
 <tr>
-<td></td>
-<td>aHeaderVal  a header string to get the value of a parameter from.  
+<td>aHeaderVal</td>
+<td>a header string to get the value of a parameter from.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aParamName  the name of a MIME header parameter (e.g.   
+<td>aParamName</td>
+<td>the name of a MIME header parameter (e.g.   
                     filename, name, charset). If empty,  returns   
                     the first (possibly) _unnamed_ 'parameter'.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aCharset    If non-null, it gets assigned a new pointer  
+<td>aCharset</td>
+<td>If non-null, it gets assigned a new pointer  
                     to a string containing the value of charset obtained  
                     from RFC 2231 parsing. Caller has to nsMemory::Free it.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aLang       If non-null, it gets assigned a new pointer  
+<td>aLang</td>
+<td>If non-null, it gets assigned a new pointer  
                     to a string containing the value of language obtained  
                     from RFC 2231 parsing. Caller has to nsMemory::Free it.  
 </td>

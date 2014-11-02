@@ -37,7 +37,6 @@ class Method(object):
             self.doclines += stripComments(doccomment)
 
     def write(self, output):
-        print "    " + self.name
         md.writeH3(self.signature(), output)
         self.writeDoccomments(output)
         parsed = parseDoccomments(self.doclines)

@@ -342,14 +342,14 @@ blob.
 </tr>
 
 <tr>
-<td>out]</td>
+<td>[out]</td>
 <td>aDataSize  
             The number of bytes in the blob.  
 </td>
 </tr>
 
 <tr>
-<td>out]</td>
+<td>[out]</td>
 <td>aData  
             The contents of the BLOB.  This will be NULL if aDataSize == 0.  
 </td>

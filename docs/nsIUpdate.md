@@ -29,9 +29,8 @@ Retrieves a patch.
 <table>
 
 <tr>
-<td></td>
-<td>index  
-         The index of the patch to retrieve.  
+<td>index</td>
+<td>         The index of the patch to retrieve.  
 </td>
 </tr>
 
@@ -61,9 +60,8 @@ Serializes this update object into a DOM Element
 <table>
 
 <tr>
-<td></td>
-<td>updates  
-         The document to serialize into  
+<td>updates</td>
+<td>         The document to serialize into  
 </td>
 </tr>
 

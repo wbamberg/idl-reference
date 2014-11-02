@@ -20,8 +20,8 @@ transferable is being removed from the clipboard
 <table>
 
 <tr>
-<td></td>
-<td>aTransferable The transferable  
+<td>aTransferable</td>
+<td>The transferable  
 @result NS_Ok if no errors  
 </td>
 </tr>

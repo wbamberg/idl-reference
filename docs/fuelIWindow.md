@@ -21,9 +21,8 @@ Open a new browser tab, pointing to the specified URI.
 <table>
 
 <tr>
-<td></td>
-<td>aURI  
-         The uri to open the browser tab to  
+<td>aURI</td>
+<td>         The uri to open the browser tab to  
 </td>
 </tr>
 

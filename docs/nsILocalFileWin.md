@@ -22,8 +22,8 @@ Throws NS_ERROR_FAILURE if no value is found, or the value is empty.
 <table>
 
 <tr>
-<td></td>
-<td>aField         The field to look up.  
+<td>aField</td>
+<td>The field to look up.  
 </td>
 </tr>
 

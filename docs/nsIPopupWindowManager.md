@@ -18,8 +18,8 @@ Test whether a website has permission to show a popup window.
 <table>
 
 <tr>
-<td></td>
-<td>principal is the principal to be tested  
+<td>principal</td>
+<td>is the principal to be tested  
 </td>
 </tr>
 

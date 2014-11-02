@@ -45,8 +45,8 @@ We have a whitelist of values that can be read in such a way.
 <table>
 
 <tr>
-<td></td>
-<td>aGroup      the group for which to get the pref, as an nsIURI  
+<td>aGroup</td>
+<td>the group for which to get the pref, as an nsIURI  
                       from which the hostname will be used, a string  
                       (typically in the format of a hostname), or null   
                       to get the global pref (applies to all sites)  
@@ -54,15 +54,14 @@ We have a whitelist of values that can be read in such a way.
 </tr>
 
 <tr>
-<td></td>
-<td>aName       the name of the pref to get  
+<td>aName</td>
+<td>the name of the pref to get  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aPrivacyContext  
-                      a context from which to determine the privacy status  
+<td>aPrivacyContext</td>
+<td>                      a context from which to determine the privacy status  
                       of the pref (ie. whether to search in memory or in  
                       permanent storage for it), obtained from a relevant  
                       window or channel.  
@@ -70,8 +69,8 @@ We have a whitelist of values that can be read in such a way.
 </tr>
 
 <tr>
-<td></td>
-<td>aCallback   an optional nsIContentPrefCallback to receive the  
+<td>aCallback</td>
+<td>an optional nsIContentPrefCallback to receive the  
                       result. If desired, JavaScript callers can instead  
                       provide a function to call upon completion  
 </td>
@@ -119,8 +118,8 @@ We have a whitelist of values that can be set in such a way.
 <table>
 
 <tr>
-<td></td>
-<td>aGroup      the group for which to set the pref, as an nsIURI  
+<td>aGroup</td>
+<td>the group for which to set the pref, as an nsIURI  
                       from which the hostname will be used, a string  
                       (typically in the format of a hostname), or null  
                       to set the global pref (applies to all sites)  
@@ -128,21 +127,20 @@ We have a whitelist of values that can be set in such a way.
 </tr>
 
 <tr>
-<td></td>
-<td>aName       the name of the pref to set  
+<td>aName</td>
+<td>the name of the pref to set  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aValue      the new value of the pref  
+<td>aValue</td>
+<td>the new value of the pref  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aPrivacyContext  
-                      a context from which to determine the privacy status  
+<td>aPrivacyContext</td>
+<td>                      a context from which to determine the privacy status  
                       of the pref (ie. whether to store it in memory or in  
                       permanent storage), obtained from a relevant  
                       window or channel.  
@@ -176,8 +174,8 @@ Check whether or not a pref exists.
 <table>
 
 <tr>
-<td></td>
-<td>aGroup      the group for which to check for the pref, as an nsIURI  
+<td>aGroup</td>
+<td>the group for which to check for the pref, as an nsIURI  
                       from which the hostname will be used, a string  
                       (typically in the format of a hostname), or null  
                       to check for the global pref (applies to all sites)  
@@ -185,15 +183,14 @@ Check whether or not a pref exists.
 </tr>
 
 <tr>
-<td></td>
-<td>aName       the name of the pref to check for  
+<td>aName</td>
+<td>the name of the pref to check for  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aPrivacyContext  
-                      a context from which to determine the privacy status  
+<td>aPrivacyContext</td>
+<td>                      a context from which to determine the privacy status  
                       of the pref (ie. whether to search in memory or in  
                       permanent storage for it), obtained from a relevant  
                       window or channel.  
@@ -227,8 +224,8 @@ Check whether or not the value of a pref (or its non-existance) is cached.
 <table>
 
 <tr>
-<td></td>
-<td>aGroup      the group for which to check for the pref, as an nsIURI  
+<td>aGroup</td>
+<td>the group for which to check for the pref, as an nsIURI  
                       from which the hostname will be used, a string  
                       (typically in the format of a hostname), or null  
                       to check for the global pref (applies to all sites)  
@@ -236,15 +233,14 @@ Check whether or not the value of a pref (or its non-existance) is cached.
 </tr>
 
 <tr>
-<td></td>
-<td>aName       the name of the pref to check for  
+<td>aName</td>
+<td>the name of the pref to check for  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aPrivacyContext  
-                      a context from which to determine the privacy status  
+<td>aPrivacyContext</td>
+<td>                      a context from which to determine the privacy status  
                       of the pref (ie. whether to search in memory or in  
                       permanent storage for it), obtained from a relevant  
                       window or channel.  
@@ -278,8 +274,8 @@ Remove a pref.
 <table>
 
 <tr>
-<td></td>
-<td>aGroup      the group for which to remove the pref, as an nsIURI  
+<td>aGroup</td>
+<td>the group for which to remove the pref, as an nsIURI  
                       from which the hostname will be used, a string  
                       (typically in the format of a hostname), or null  
                       to remove the global pref (applies to all sites)   
@@ -287,15 +283,14 @@ Remove a pref.
 </tr>
 
 <tr>
-<td></td>
-<td>aName       the name of the pref to remove  
+<td>aName</td>
+<td>the name of the pref to remove  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aPrivacyContext  
-                      a context from which to determine the privacy status  
+<td>aPrivacyContext</td>
+<td>                      a context from which to determine the privacy status  
                       of the pref (ie. whether to search in memory or in  
                       permanent storage for it), obtained from a relevant  
                       window or channel.  
@@ -323,9 +318,8 @@ the user has visited when the user clears their private data.
 <table>
 
 <tr>
-<td></td>
-<td>aPrivacyContext  
-                      a context from which to determine the privacy status  
+<td>aPrivacyContext</td>
+<td>                      a context from which to determine the privacy status  
                       of the pref (ie. whether to remove prefs in memory or  
                       in permanent storage), obtained from a relevant  
                       window or channel.  
@@ -352,15 +346,14 @@ Remove all prefs with the given name.
 <table>
 
 <tr>
-<td></td>
-<td>aName        the setting name for which to remove prefs  
+<td>aName</td>
+<td>the setting name for which to remove prefs  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aPrivacyContext  
-                       a context from which to determine the privacy status  
+<td>aPrivacyContext</td>
+<td>                       a context from which to determine the privacy status  
                        of the prefs (ie. whether to remove prefs in memory or  
                        in permanent storage), obtained from a relevant  
                        window or channel.  
@@ -393,8 +386,8 @@ Get the prefs that apply to the given site.
 <table>
 
 <tr>
-<td></td>
-<td>aGroup      the group for which to retrieve prefs, as an nsIURI  
+<td>aGroup</td>
+<td>the group for which to retrieve prefs, as an nsIURI  
                       from which the hostname will be used, a string  
                       (typically in the format of a hostname), or null  
                       to get the global prefs (apply to all sites)   
@@ -402,9 +395,8 @@ Get the prefs that apply to the given site.
 </tr>
 
 <tr>
-<td></td>
-<td>aPrivacyContext  
-                      a context from which to determine the privacy status  
+<td>aPrivacyContext</td>
+<td>                      a context from which to determine the privacy status  
                       of the pref (ie. whether to search for prefs in memory  
                       or in permanent storage), obtained from a relevant  
                       window or channel.  
@@ -445,15 +437,14 @@ Get the prefs with the given name.
 <table>
 
 <tr>
-<td></td>
-<td>aName        the setting name for which to retrieve prefs  
+<td>aName</td>
+<td>the setting name for which to retrieve prefs  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aPrivacyContext  
-                       a context from which to determine the privacy status  
+<td>aPrivacyContext</td>
+<td>                       a context from which to determine the privacy status  
                        of the pref (ie. whether to search for prefs in memory  
                        or in permanent storage), obtained from a relevant  
                        window or channel.  
@@ -488,15 +479,15 @@ Add an observer.
 <table>
 
 <tr>
-<td></td>
-<td>aName       the setting to observe, or null to add  
+<td>aName</td>
+<td>the setting to observe, or null to add  
                       a generic observer that observes all settings  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aObserver   the observer to add  
+<td>aObserver</td>
+<td>the observer to add  
 </td>
 </tr>
 
@@ -516,15 +507,15 @@ Remove an observer.
 <table>
 
 <tr>
-<td></td>
-<td>aName       the setting being observed, or null to remove  
+<td>aName</td>
+<td>the setting being observed, or null to remove  
                       a generic observer that observes all settings  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aObserver   the observer to remove  
+<td>aObserver</td>
+<td>the observer to remove  
 </td>
 </tr>
 

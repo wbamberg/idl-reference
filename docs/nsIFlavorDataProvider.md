@@ -21,26 +21,26 @@ Retrieve the data from this data provider.
 <table>
 
 <tr>
-<td></td>
-<td>aTransferable (in parameter) the transferable we're being called for.  
+<td>aTransferable</td>
+<td>(in parameter) the transferable we're being called for.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aFlavor (in parameter) the flavor of data to retrieve  
+<td>aFlavor</td>
+<td>(in parameter) the flavor of data to retrieve  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aData the data. Some variant of class in nsISupportsPrimitives.idl  
+<td>aData</td>
+<td>the data. Some variant of class in nsISupportsPrimitives.idl  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aDataLen the length of the data  
+<td>aDataLen</td>
+<td>the length of the data  
 </td>
 </tr>
 

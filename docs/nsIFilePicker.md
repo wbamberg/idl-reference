@@ -23,21 +23,21 @@ method is called.
 <table>
 
 <tr>
-<td></td>
-<td>parent   nsIDOMWindow parent.  This dialog will be dependent  
+<td>parent</td>
+<td>nsIDOMWindow parent.  This dialog will be dependent  
                      on this parent. parent must be non-null.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>title    The title for the file widget  
+<td>title</td>
+<td>The title for the file widget  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>mode     load, save, or get folder  
+<td>mode</td>
+<td>load, save, or get folder  
 </td>
 </tr>
 
@@ -56,8 +56,8 @@ Append to the  filter list with things from the predefined list
 <table>
 
 <tr>
-<td></td>
-<td>filters  mask of filters i.e. (filterAll | filterHTML)  
+<td>filters</td>
+<td>mask of filters i.e. (filterAll | filterHTML)  
 </td>
 </tr>
 
@@ -77,14 +77,14 @@ Add a filter
 <table>
 
 <tr>
-<td></td>
-<td>title    name of the filter  
+<td>title</td>
+<td>name of the filter  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>filter   extensions to filter -- semicolon and space separated  
+<td>filter</td>
+<td>extensions to filter -- semicolon and space separated  
 </td>
 </tr>
 

@@ -31,16 +31,14 @@ Selects the best update to install from a list of available updates.
 <table>
 
 <tr>
-<td></td>
-<td>updates  
-         An array of updates that are available  
+<td>updates</td>
+<td>         An array of updates that are available  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>updateCount  
-         The length of the |updates| array  
+<td>updateCount</td>
+<td>         The length of the |updates| array  
 </td>
 </tr>
 
@@ -62,9 +60,8 @@ interface.
 <table>
 
 <tr>
-<td></td>
-<td>listener  
-         An object implementing nsIRequestObserver and optionally  
+<td>listener</td>
+<td>         An object implementing nsIRequestObserver and optionally  
          nsIProgressEventSink that is to be notified of state and  
          progress information as the update is downloaded.  
 </td>
@@ -85,9 +82,8 @@ about the update that is currently being downloaded.
 <table>
 
 <tr>
-<td></td>
-<td>listener  
-         The listener object to remove.  
+<td>listener</td>
+<td>         The listener object to remove.  
 </td>
 </tr>
 
@@ -111,9 +107,8 @@ Apply the OS update which has been downloaded and staged as applied.
 <table>
 
 <tr>
-<td></td>
-<td>update   
-         The update has been downloaded and staged as applied.  
+<td>update</td>
+<td>         The update has been downloaded and staged as applied.  
 @throws  if the update object is not an OS update.  
 </td>
 </tr>

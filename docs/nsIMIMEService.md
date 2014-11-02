@@ -40,8 +40,8 @@ associated with this file extension.
 <table>
 
 <tr>
-<td></td>
-<td>A file extension (excluding the dot ('.')).  
+<td>A</td>
+<td>file extension (excluding the dot ('.')).  
 </td>
 </tr>
 
@@ -74,8 +74,8 @@ the type via server headers or byte scanning is made.
 <table>
 
 <tr>
-<td></td>
-<td>The URI the user wants MIME info on.  
+<td>The</td>
+<td>URI the user wants MIME info on.  
 </td>
 </tr>
 

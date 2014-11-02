@@ -23,9 +23,8 @@ the extIEventListener interface was registered.
 <table>
 
 <tr>
-<td></td>
-<td>aEvent  
-         The extIEventItem associated with the event.  
+<td>aEvent</td>
+<td>         The extIEventItem associated with the event.  
 </td>
 </tr>
 

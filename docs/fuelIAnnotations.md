@@ -24,9 +24,8 @@ Determines if an annotation exists with the given name.
 <table>
 
 <tr>
-<td></td>
-<td>aName  
-         The name of the annotation  
+<td>aName</td>
+<td>         The name of the annotation  
 </td>
 </tr>
 
@@ -58,9 +57,8 @@ Gets the value of an annotation with the given name.
 <table>
 
 <tr>
-<td></td>
-<td>aName  
-         The name of the annotation  
+<td>aName</td>
+<td>         The name of the annotation  
 </td>
 </tr>
 
@@ -96,24 +94,21 @@ Sets the value of an annotation with the given name.
 <table>
 
 <tr>
-<td></td>
-<td>aName  
-         The name of the annotation  
+<td>aName</td>
+<td>         The name of the annotation  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aValue  
-         The new value of the annotation. Supports string, boolean  
+<td>aValue</td>
+<td>         The new value of the annotation. Supports string, boolean  
          and number  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aExpiration  
-         The expiration policy for the annotation.  
+<td>aExpiration</td>
+<td>         The expiration policy for the annotation.  
          See nsIAnnotationService.  
 </td>
 </tr>
@@ -132,9 +127,8 @@ Removes the named annotation from the owner item.
 <table>
 
 <tr>
-<td></td>
-<td>aName  
-         The name of annotation.  
+<td>aName</td>
+<td>         The name of annotation.  
 </td>
 </tr>
 

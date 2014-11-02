@@ -20,14 +20,14 @@ or after the drop has completed.
 <table>
 
 <tr>
-<td></td>
-<td>aTransferable the transferable for the data to be put into  
+<td>aTransferable</td>
+<td>the transferable for the data to be put into  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aItemIndex which of multiple drag items, zero-based  
+<td>aItemIndex</td>
+<td>which of multiple drag items, zero-based  
 </td>
 </tr>
 

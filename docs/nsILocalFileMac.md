@@ -24,8 +24,8 @@ NOTE: If the path of the CFURL is /a/b/c, at least a/b must exist beforehand.
 <table>
 
 <tr>
-<td></td>
-<td>aCFURL         the CoreFoundation URL  
+<td>aCFURL</td>
+<td>the CoreFoundation URL  
 </td>
 </tr>
 
@@ -48,8 +48,8 @@ NOTE: Supported only for XP_MACOSX
 <table>
 
 <tr>
-<td></td>
-<td>aFSRef         the native FSRef  
+<td>aFSRef</td>
+<td>the native FSRef  
 </td>
 </tr>
 
@@ -121,14 +121,14 @@ Launch the application that this file points to with a document.
 <table>
 
 <tr>
-<td></td>
-<td>aDocToLoad          Must not be NULL. If no document, use nsIFile::launch  
+<td>aDocToLoad</td>
+<td>Must not be NULL. If no document, use nsIFile::launch  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aLaunchInBackground TRUE if the application should not come to the front.  
+<td>aLaunchInBackground</td>
+<td>TRUE if the application should not come to the front.  
 </td>
 </tr>
 
@@ -152,16 +152,16 @@ Open the document that this file points to with the given application.
 <table>
 
 <tr>
-<td></td>
-<td>aAppToOpenWith      The application with  which to open the document.  
+<td>aAppToOpenWith</td>
+<td>The application with  which to open the document.  
                              If NULL, the creator code of the document is used  
                              to determine the application.  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aLaunchInBackground TRUE if the application should not come to the front.  
+<td>aLaunchInBackground</td>
+<td>TRUE if the application should not come to the front.  
 </td>
 </tr>
 

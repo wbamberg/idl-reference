@@ -54,15 +54,15 @@ offers for import.
 <table>
 
 <tr>
-<td></td>
-<td>aProfile the profile that we are looking for available data  
+<td>aProfile</td>
+<td>the profile that we are looking for available data  
          to import  
 </td>
 </tr>
 
 <tr>
-<td></td>
-<td>aDoingStartup "true" if the profile is not currently being used.  
+<td>aDoingStartup</td>
+<td>"true" if the profile is not currently being used.  
 </td>
 </tr>
 

@@ -20,8 +20,8 @@ Determine the group to which the URI belongs.
 <table>
 
 <tr>
-<td></td>
-<td>aURI       the URI to group  
+<td>aURI</td>
+<td>the URI to group  
 </td>
 </tr>
 
