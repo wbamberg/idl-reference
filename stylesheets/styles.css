@@ -50,6 +50,14 @@ a small {
   display:block;
 }
 
+#links {
+  float:right;
+}
+
+#links a {
+  margin: 0.3em;
+}
+
 .wrapper {
   width:860px;
   margin:0 auto;
