@@ -14,3 +14,15 @@ layout: default
 Indicates whether the content node should be skipped by the iterator  
  @param aNode - node to skip  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aNode - node to skip  
+</td>
+</tr>
+
+</table>

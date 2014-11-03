@@ -28,6 +28,29 @@ layout: default
   @throws NS_BASE_STREAM_CLOSED if called on a closed stream.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>whence specifies how to interpret the 'offset' parameter in  
+                setting the stream offset associated with the implementing  
+                stream.  
+</td>
+</tr>
+
+<tr>
+<td>am</td>
+<td>offset specifies a value, in bytes, that is used in conjunction  
+                with the 'whence' parameter to set the stream offset of the   
+                implementing stream.  A negative value causes seeking in   
+                the reverse direction.  
+</td>
+</tr>
+
+</table>
+
 ### tell() ###
   
  tell  

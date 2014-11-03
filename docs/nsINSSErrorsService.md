@@ -15,12 +15,38 @@ layout: default
  @return True if it is error code defined by the NSS library  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aNSPRCode An error code obtained using PR_GetError()  
+ @return True if it is error code defined by the NSS library  
+</td>
+</tr>
+
+</table>
+
 ### getXPCOMFromNSSError(aNSPRCode) ###
   
  Function will fail if aNSPRCode is not an NSS error code.  
  @param aNSPRCode An error code obtained using PR_GetError()  
  @return The result of the conversion, an XPCOM error code  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aNSPRCode An error code obtained using PR_GetError()  
+ @return The result of the conversion, an XPCOM error code  
+</td>
+</tr>
+
+</table>
 
 ### getErrorMessage(aXPCOMErrorCode) ###
   
@@ -29,12 +55,38 @@ layout: default
  return A localized human readable error explanation.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aXPCOMErrorCode An error code obtain using getXPCOMFromNSSError  
+ return A localized human readable error explanation.  
+</td>
+</tr>
+
+</table>
+
 ### getErrorClass(aXPCOMErrorCode) ###
   
  Function will fail if aXPCOMErrorCode is not an NSS error code.  
  @param aXPCOMErrorCode An error code obtain using getXPCOMFromNSSError  
  return the   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aXPCOMErrorCode An error code obtain using getXPCOMFromNSSError  
+ return the   
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

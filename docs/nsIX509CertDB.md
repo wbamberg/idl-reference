@@ -27,6 +27,33 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aToken Optionally limits the scope of  
+               this function to a token device.  
+               Can be null to mean any token.  
+ @param aNickname The nickname to be used as the key  
+                  to find a certificate.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The matching certificate if found.  
+</td>
+</tr>
+
+</table>
+
 ### findCertByDBKey(aDBkey, aToken) ###
   
  Will find a certificate based on its dbkey  
@@ -39,6 +66,22 @@ X.509 certificates stored in a database.
                this function to a token device.  
                Can be null to mean any token.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aDBkey Database internal key, as obtained using  
+               attribute dbkey in nsIX509Cert.  
+ @param aToken Optionally limits the scope of  
+               this function to a token device.  
+               Can be null to mean any token.  
+</td>
+</tr>
+
+</table>
 
 ### findCertNicknames(aToken, aType, count, certNameList) ###
   
@@ -56,6 +99,24 @@ X.509 certificates stored in a database.
  @param certNameList The returned array of certificate nicknames.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aToken Optionally limits the scope of  
+               this function to a token device.  
+               Can be null to mean any token.  
+ @param aType Type of certificate to obtain  
+              See certificate type constants in nsIX509Cert.  
+ @param count The number of nicknames in the returned array  
+ @param certNameList The returned array of certificate nicknames.  
+</td>
+</tr>
+
+</table>
+
 ### findEmailEncryptionCert(aNickname) ###
   
  Find user's own email encryption certificate by nickname.  
@@ -66,6 +127,30 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aNickname The nickname to be used as the key  
+                  to find the certificate.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The matching certificate if found.  
+</td>
+</tr>
+
+</table>
+
 ### findEmailSigningCert(aNickname) ###
   
  Find user's own email signing certificate by nickname.  
@@ -75,6 +160,30 @@ X.509 certificates stored in a database.
   
  @return The matching certificate if found.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aNickname The nickname to be used as the key  
+                  to find the certificate.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The matching certificate if found.  
+</td>
+</tr>
+
+</table>
 
 ### findCertByEmailAddress(aToken, aEmailAddress) ###
   
@@ -89,6 +198,33 @@ X.509 certificates stored in a database.
  @return The matching certificate if found.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aToken Optionally limits the scope of  
+               this function to a token device.  
+               Can be null to mean any token.  
+ @param aEmailAddress The email address to be used as the key  
+                      to find the certificate.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The matching certificate if found.  
+</td>
+</tr>
+
+</table>
+
 ### importCertificates(data, length, type, ctx) ###
   
  Use this to import a stream sent down as a mime type into  
@@ -101,6 +237,21 @@ X.509 certificates stored in a database.
  @param ctx A UI context.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>data The raw data to be imported  
+ @param length The length of the data to be imported  
+ @param type The type of the certificate, see constants in nsIX509Cert  
+ @param ctx A UI context.  
+</td>
+</tr>
+
+</table>
+
 ### importEmailCertificate(data, length, ctx) ###
   
  Import another person's email certificate into the database.  
@@ -110,6 +261,20 @@ X.509 certificates stored in a database.
  @param ctx A UI context.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>data The raw data to be imported  
+ @param length The length of the data to be imported  
+ @param ctx A UI context.  
+</td>
+</tr>
+
+</table>
+
 ### importServerCertificate(data, length, ctx) ###
   
  Import a server machine's certificate into the database.  
@@ -118,6 +283,20 @@ X.509 certificates stored in a database.
  @param length The length of the data to be imported  
  @param ctx A UI context.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>data The raw data to be imported  
+ @param length The length of the data to be imported  
+ @param ctx A UI context.  
+</td>
+</tr>
+
+</table>
 
 ### importUserCertificate(data, length, ctx) ###
   
@@ -129,12 +308,38 @@ X.509 certificates stored in a database.
  @param ctx A UI context.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>data The raw data to be imported  
+ @param length The length of the data to be imported  
+ @param ctx A UI context.  
+</td>
+</tr>
+
+</table>
+
 ### deleteCertificate(aCert) ###
   
  Delete a certificate stored in the database.  
   
  @param aCert Delete this certificate.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aCert Delete this certificate.  
+</td>
+</tr>
+
+</table>
 
 ### setCertTrust(cert, type, trust) ###
   
@@ -148,6 +353,21 @@ X.509 certificates stored in a database.
  @param trust A bitmask. The new trust for the possible usages.  
               See the trust constants defined within this interface.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>cert Change the stored trust of this certificate.  
+ @param type The type of the certificate. See nsIX509Cert.  
+ @param trust A bitmask. The new trust for the possible usages.  
+              See the trust constants defined within this interface.  
+</td>
+</tr>
+
+</table>
 
 ### setCertTrustFromString(cert, trustString) ###
   
@@ -189,6 +409,32 @@ X.509 certificates stored in a database.
  @return Returns true if the certificate is trusted for the given use.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>cert Obtain the stored trust of this certificate.  
+ @param certType The type of the certificate. See nsIX509Cert.  
+ @param trustType A single bit from the usages constants defined  
+                  within this interface.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Returns true if the certificate is trusted for the given use.  
+</td>
+</tr>
+
+</table>
+
 ### importCertsFromFile(aToken, aFile, aType) ###
   
  Import certificate(s) from file  
@@ -202,6 +448,24 @@ X.509 certificates stored in a database.
               be imported. See type constants in nsIX509Cert.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aToken Optionally limits the scope of  
+               this function to a token device.  
+               Can be null to mean any token.  
+ @param aFile Identifies a file that contains the certificate  
+              to be imported.  
+ @param aType Describes the type of certificate that is going to  
+              be imported. See type constants in nsIX509Cert.  
+</td>
+</tr>
+
+</table>
+
 ### importPKCS12File(aToken, aFile) ###
   
  Import a PKCS#12 file containing cert(s) and key(s) into the database.  
@@ -212,6 +476,22 @@ X.509 certificates stored in a database.
  @param aFile Identifies a file that contains the data  
               to be imported.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aToken Optionally limits the scope of  
+               this function to a token device.  
+               Can be null to mean any token.  
+ @param aFile Identifies a file that contains the data  
+              to be imported.  
+</td>
+</tr>
+
+</table>
 
 ### exportPKCS12File(aToken, aFile, count, aCerts) ###
   
@@ -225,6 +505,24 @@ X.509 certificates stored in a database.
  @param count The number of certificates to be exported.  
  @param aCerts The array of all certificates to be exported.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aToken Optionally limits the scope of  
+               this function to a token device.  
+               Can be null to mean any token.  
+ @param aFile Identifies a file that will be filled with the data  
+              to be exported.  
+ @param count The number of certificates to be exported.  
+ @param aCerts The array of all certificates to be exported.  
+</td>
+</tr>
+
+</table>
 
 ### constructX509FromBase64(base64) ###
 
@@ -265,6 +563,24 @@ was issued by the given trusted root.
  @return 0 if success or the value or the error code for the verification  
          failure  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aCert Obtain the stored trust of this certificate  
+ @param aUsage a integer representing the usage from NSS  
+ @param aFlags flags as described above  
+ @param verifedChain chain of verification up to the root if success  
+ @param aHasEVPolicy bool that signified that the cert was an EV cert  
+ @return 0 if success or the value or the error code for the verification  
+         failure  
+</td>
+</tr>
+
+</table>
 
 ### clearOCSPCache() ###
 

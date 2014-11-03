@@ -29,6 +29,22 @@ that the user wants to accept without further warnings.
  @param aOverrideBits The errors we want to be overriden  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aHostName The host (punycode) this mapping belongs to  
+ @param aPort The port this mapping belongs to, if it is -1 then it   
+         is internaly treated as 443  
+ @param aCert The cert that should always be accepted  
+ @param aOverrideBits The errors we want to be overriden  
+</td>
+</tr>
+
+</table>
+
 ### hasMatchingOverride(aHostName, aPort, aCert, aOverrideBits, aIsTemporary) ###
   
  The given cert should always be accepted for the given hostname:port,  
@@ -46,6 +62,24 @@ that the user wants to accept without further warnings.
          that matches the given certificate  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aHostName The host (punycode) this mapping belongs to  
+ @param aPort The port this mapping belongs to, if it is -1 then it   
+         is internaly treated as 443  
+ @param aCert The cert that should always be accepted  
+ @param aOverrideBits The errors that are currently overriden  
+ @return whether an override entry for aHostNameWithPort is currently on file  
+         that matches the given certificate  
+</td>
+</tr>
+
+</table>
+
 ### getValidityOverride(aHostName, aPort, aHashAlg, aFingerprint, aOverrideBits, aIsTemporary) ###
   
  Retrieve the stored override for the given hostname:port.  
@@ -61,6 +95,26 @@ that the user wants to accept without further warnings.
          and aFingerprint is currently on file  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aHostName The host (punycode) whose entry should be tested  
+ @param aPort The port whose entry should be tested, if it is -1 then it   
+         is internaly treated as 443  
+ @param aHashAlg On return value True, the fingerprint hash algorithm  
+                 as an OID value in dotted notation.  
+ @param aFingerprint On return value True, the stored fingerprint   
+ @param aOverrideBits The errors that are currently overriden  
+ @return whether a matching override entry for aHostNameWithPort   
+         and aFingerprint is currently on file  
+</td>
+</tr>
+
+</table>
+
 ### clearValidityOverride(aHostName, aPort) ###
   
  Remove a override for the given hostname:port.  
@@ -72,6 +126,22 @@ that the user wants to accept without further warnings.
               then all temporary certificates should be cleared.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aHostName The host (punycode) whose entry should be cleared.  
+ @param aPort The port whose entry should be cleared.  
+              If it is -1, then it is internaly treated as 443.  
+              If it is 0 and aHostName is "all:temporary-certificates",  
+              then all temporary certificates should be cleared.  
+</td>
+</tr>
+
+</table>
+
 ### getAllOverrideHostsWithPorts(aCount, aHostsWithPortsArray) ###
   
  Obtain the full list of hostname:port for which overrides are known.  
@@ -79,6 +149,19 @@ that the user wants to accept without further warnings.
  @param aCount The number of host:port entries returned  
  @param aHostsWithPortsArray The array of host:port entries returned  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aCount The number of host:port entries returned  
+ @param aHostsWithPortsArray The array of host:port entries returned  
+</td>
+</tr>
+
+</table>
 
 ### isCertUsedForOverrides(aCert, aCheckTemporaries, aCheckPermanents) ###
   
@@ -88,6 +171,20 @@ that the user wants to accept without further warnings.
  @return how many override entries are currently on file  
          for the given certificate  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aCert The cert we're looking for  
+ @return how many override entries are currently on file  
+         for the given certificate  
+</td>
+</tr>
+
+</table>
 
 ## Constants ##
 

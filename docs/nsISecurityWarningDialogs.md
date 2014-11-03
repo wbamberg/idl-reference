@@ -24,3 +24,26 @@ and insecure pages, posts to insecure servers etc.
   
  @return true if the user confirms to submit.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>ctx A user interface context.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>true if the user confirms to submit.  
+</td>
+</tr>
+
+</table>

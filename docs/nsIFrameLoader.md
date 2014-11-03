@@ -34,6 +34,18 @@ Updates the position and size of the subdocument loaded by this frameloader.
  @param aIFrame The nsIFrame for the content node that owns this frameloader  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aIFrame The nsIFrame for the content node that owns this frameloader  
+</td>
+</tr>
+
+</table>
+
 ### activateRemoteFrame() ###
   
 Activate remote frame.  

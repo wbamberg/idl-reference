@@ -37,12 +37,49 @@ Inserts a child bookmark into the given folder.
  @throws if aGuid is malformed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aParentId  
+        The id of the parent folder  
+ @param aURI  
+        The URI to insert  
+ @param aIndex  
+        The index to insert at, or DEFAULT_INDEX to append  
+ @param aTitle  
+        The title for the new bookmark  
+ @param [optional] aGuid  
+        The GUID to be set for the new item.  If not set, a new GUID is  
+        generated.  Unless you've a very sound reason, such as an undo  
+        manager implementation, do not pass this argument.  
+ @return The ID of the newly-created bookmark.  
+</td>
+</tr>
+
+</table>
+
 ### removeItem(aItemId) ###
   
 Removes a child item. Used to delete a bookmark or separator.  
  @param aItemId  
         The child item to remove  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aItemId  
+        The child item to remove  
+</td>
+</tr>
+
+</table>
 
 ### createFolder(aParentFolder, name, index, aGuid) ###
   
@@ -60,6 +97,29 @@ Creates a new child folder and inserts it under the given parent.
  @return The ID of the newly-inserted folder.  
  @throws if aGuid is malformed.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aParentFolder  
+        The id of the parent folder  
+ @param aName  
+        The name of the new folder  
+ @param aIndex  
+        The index to insert at, or DEFAULT_INDEX to append  
+ @param [optional] aGuid  
+        The GUID to be set for the new item.  If not set, a new GUID is  
+        generated.  Unless you've a very sound reason, such as an undo  
+        manager implementation, do not pass this argument.  
+ @return The ID of the newly-inserted folder.  
+ @throws if aGuid is malformed.  
+</td>
+</tr>
+
+</table>
 
 ### getRemoveFolderTransaction(aItemId) ###
   
@@ -79,6 +139,21 @@ specific IDs (potentially dangerous if abused by other code!) in the
 public API.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aItemId  
+        The id of the folder to remove.  
+ @return An object implementing nsITransaction that can be used to undo  
+         or redo the action.  
+</td>
+</tr>
+
+</table>
+
 ### removeFolderChildren(aItemId) ###
   
 Convenience function for container services.  Removes  
@@ -86,6 +161,19 @@ all children of the given folder.
  @param aItemId  
         The id of the folder to remove children from.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aItemId  
+        The id of the folder to remove children from.  
+</td>
+</tr>
+
+</table>
 
 ### moveItem(aItemId, aNewParentId, aIndex) ###
   
@@ -101,6 +189,23 @@ NOTE: When moving down in the same container we take into account the
 removal of the original item. If you want to move from index X to  
 index Y > X you must use moveItem(id, folder, Y + 1)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aItemId  
+        The id of the item to move  
+ @param aNewParentId  
+        The id of the new parent  
+ @param aIndex  
+        The index under aNewParent, or DEFAULT_INDEX to append  
+</td>
+</tr>
+
+</table>
 
 ### insertSeparator(aParentId, aIndex, aGuid) ###
   
@@ -118,6 +223,27 @@ The separator can be removed using removeChildAt().
  @throws if aGuid is malformed.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aParentId  
+        The id of the parent folder  
+ @param aIndex  
+        The separator's index under folder, or DEFAULT_INDEX to append  
+ @param [optional] aGuid  
+        The GUID to be set for the new item.  If not set, a new GUID is  
+        generated.  Unless you've a very sound reason, such as an undo  
+        manager implementation, do not pass this argument.  
+ @return The ID of the new separator.  
+ @throws if aGuid is malformed.  
+</td>
+</tr>
+
+</table>
+
 ### getIdForItemAt(aParentId, aIndex) ###
   
 Get the itemId given the containing folder and the index.  
@@ -128,6 +254,23 @@ Get the itemId given the containing folder and the index.
         Pass DEFAULT_INDEX for the last item.  
  @return The ID of the found item, -1 if the item does not exists.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aParentId  
+        The id of the diret parent folder of the item  
+ @param aIndex  
+        The index of the item within the parent folder.  
+        Pass DEFAULT_INDEX for the last item.  
+ @return The ID of the found item, -1 if the item does not exists.  
+</td>
+</tr>
+
+</table>
 
 ### setItemTitle(aItemId, aTitle) ###
   
@@ -140,6 +283,21 @@ Set the title for an item.
  @note  aTitle will be truncated to TITLE_LENGTH_MAX.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aItemId  
+        The id of the item whose title should be updated.  
+ @param aTitle  
+        The new title for the bookmark.  
+</td>
+</tr>
+
+</table>
+
 ### getItemTitle(aItemId) ###
   
 Get the title for an item.  
@@ -150,6 +308,20 @@ If no item title is available it will return a void string (null in JS).
         The id of the item whose title should be retrieved  
  @return The title of the item.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aItemId  
+        The id of the item whose title should be retrieved  
+ @return The title of the item.  
+</td>
+</tr>
+
+</table>
 
 ### setItemDateAdded(aItemId, aDateAdded) ###
   
@@ -205,6 +377,19 @@ WARNING: This is API is intended for scenarios such as folder sorting,
   
  @throws If aNewIndex is out of bounds.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aItemId    The id of the item to modify  
+ @param aNewIndex  The new index  
+</td>
+</tr>
+
+</table>
 
 ### getItemType(aItemId) ###
   

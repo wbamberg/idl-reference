@@ -19,3 +19,17 @@ layout: default
         Indicated whether the redirect will be proceeding, or not (i.e.  
         has been canceled, or failed).  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>proceeding  
+        Indicated whether the redirect will be proceeding, or not (i.e.  
+        has been canceled, or failed).  
+</td>
+</tr>
+
+</table>

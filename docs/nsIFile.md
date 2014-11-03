@@ -47,6 +47,21 @@ methods" are not scriptable.
       filesystem charset.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>node  
+      A string which is intended to be a child node of the nsIFile.  
+      For the |appendNative| method, the node must be in the native  
+      filesystem charset.  
+</td>
+</tr>
+
+</table>
+
 ### appendNative(node) ###
 
 ### normalize() ###
@@ -76,6 +91,32 @@ methods" are not scriptable.
       permissions.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>type  
+      This specifies the type of file system object  
+      to be made.  The only two types at this time  
+      are file and directory which are defined above.  
+      If the type is unrecongnized, we will return an  
+      error (NS_ERROR_FILE_UNKNOWN_TYPE).  
+</td>
+</tr>
+
+<tr>
+<td>am</td>
+<td>permissions  
+      The unix style octal permissions.  This may  
+      be ignored on systems that do not need to do  
+      permissions.  
+</td>
+</tr>
+
+</table>
+
 ### copyTo(newParentDir, newName) ###
   
  copyTo[Native]  
@@ -104,6 +145,34 @@ methods" are not scriptable.
       the file to be copied. This param may be empty, in  
       which case the current leaf name will be used.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>newParentDir  
+      This param is the destination directory. If the  
+      newParentDir is null, copyTo() will use the parent  
+      directory of this file. If the newParentDir is not  
+      empty and is not a directory, an error will be  
+      returned (NS_ERROR_FILE_DESTINATION_NOT_DIR). For the   
+      |CopyToNative| method, the newName must be in the   
+      native filesystem charset.  
+</td>
+</tr>
+
+<tr>
+<td>am</td>
+<td>newName  
+      This param allows you to specify a new name for  
+      the file to be copied. This param may be empty, in  
+      which case the current leaf name will be used.  
+</td>
+</tr>
+
+</table>
 
 ### CopyToNative(newParentDir, newName) ###
 
@@ -153,6 +222,34 @@ methods" are not scriptable.
       the file to be moved. This param may be empty, in  
       which case the current leaf name will be used.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>newParentDir  
+      This param is the destination directory. If the  
+      newParentDir is empty, moveTo() will rename the file  
+      within its current directory. If the newParentDir is  
+      not empty and does not name a directory, an error will  
+      be returned (NS_ERROR_FILE_DESTINATION_NOT_DIR).  For   
+      the |moveToNative| method, the newName must be in the   
+      native filesystem charset.  
+</td>
+</tr>
+
+<tr>
+<td>am</td>
+<td>newName  
+      This param allows you to specify a new name for  
+      the file to be moved. This param may be empty, in  
+      which case the current leaf name will be used.  
+</td>
+</tr>
+
+</table>
 
 ### moveToNative(newParentDir, newName) ###
 
@@ -222,6 +319,32 @@ Not a regular file, not a directory, not a symlink.
       permissions.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>type  
+      This specifies the type of file system object  
+      to be made.  The only two types at this time  
+      are file and directory which are defined above.  
+      If the type is unrecongnized, we will return an  
+      error (NS_ERROR_FILE_UNKNOWN_TYPE).  
+</td>
+</tr>
+
+<tr>
+<td>am</td>
+<td>permissions  
+      The unix style octal permissions.  This may  
+      be ignored on systems that do not need to do  
+      permissions.  
+</td>
+</tr>
+
+</table>
+
 ### clone() ###
   
 clone()  
@@ -234,6 +357,20 @@ exact location of the |this| nsIFile.
          with.  
   
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>file  
+         A nsIFile which this object will be initialize  
+         with.  
+</td>
+</tr>
+
+</table>
 
 ### equals(inFile) ###
   
@@ -261,6 +398,23 @@ exact location of the |this| nsIFile.
       filesystem charset.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>filePath         
+      A string which specifies a full file path to a   
+      location.  Relative paths will be treated as an  
+      error (NS_ERROR_FILE_UNRECOGNIZED_PATH).  For   
+      initWithNativePath, the filePath must be in the native  
+      filesystem charset.  
+</td>
+</tr>
+
+</table>
+
 ### initWithNativePath(filePath) ###
 
 ### initWithFile(aFile) ###
@@ -272,6 +426,19 @@ exact location of the |this| nsIFile.
   @param aFile  
       the file this becomes equivalent to  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>aFile  
+      the file this becomes equivalent to  
+</td>
+</tr>
+
+</table>
 
 ### openNSPRFileDesc(flags, mode) ###
   
@@ -328,6 +495,22 @@ responsible for calling PR_UnloadLibrary on the result.
       must be in the native filesystem charset.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>relativeFilePath  
+      relativeFilePath is a native relative path. For security reasons,  
+      this cannot contain .. or cannot start with a directory separator.  
+      For the |appendRelativeNativePath| method, the relativeFilePath   
+      must be in the native filesystem charset.  
+</td>
+</tr>
+
+</table>
+
 ### appendRelativeNativePath(relativeFilePath) ###
 
 ### reveal() ###
@@ -366,6 +549,20 @@ responsible for calling PR_UnloadLibrary on the result.
       There is no defined result if this param is null.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>fromFile  
+      the file from which the descriptor is relative.  
+      There is no defined result if this param is null.  
+</td>
+</tr>
+
+</table>
+
 ### setRelativeDescriptor(fromFile, relativeDesc) ###
   
  setRelativeDescriptor  
@@ -378,6 +575,21 @@ responsible for calling PR_UnloadLibrary on the result.
   @param relative  
       the relative descriptor obtained from getRelativeDescriptor  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>am</td>
+<td>fromFile  
+      the file to which the descriptor is relative  
+  @param relative  
+      the relative descriptor obtained from getRelativeDescriptor  
+</td>
+</tr>
+
+</table>
 
 ## Attributes ##
 

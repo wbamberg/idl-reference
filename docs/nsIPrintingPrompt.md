@@ -90,6 +90,19 @@ layout: default
   
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>webBrowserPrint - represents the document to be printed  
+ @param printSettings - PrintSettings for print "job"  
+</td>
+</tr>
+
+</table>
+
 ### showProgress(webBrowserPrint, printSettings, openDialogObserver, isForPrinting, webProgressListener, printProgressParams, notifyOnOpen) ###
   
  Shows the print progress dialog  
@@ -106,6 +119,27 @@ layout: default
                        For Print Preview Progress there is intermediate progress  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>webBrowserPrint - represents the document to be printed  
+ @param printSettings - PrintSettings for print "job"  
+ @param openDialogObserver - an observer that will be notifed when the dialog is opened  
+ @param isForPrinting - true - for printing, false for print preview  
+ @param webProgressListener - additional listener can be registered for progress notifications  
+ @param printProgressParams - parameter object for passing progress state  
+ @param notifyOnOpen - this indicates that the observer will be notified when the progress  
+                       dialog has been opened. If false is returned it means the observer  
+                       (usually the caller) shouldn't wait  
+                       For Print Preview Progress there is intermediate progress  
+</td>
+</tr>
+
+</table>
+
 ### showPageSetup(printSettings, aObs) ###
   
  Shows the print progress dialog  
@@ -115,6 +149,21 @@ layout: default
                object has changed while the dialog is being shown.   
                For example, some platforms may implement an "Apply" button (not required)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>printSettings - PrintSettings for page setup (required)  
+ @param aObs - An observer to know if the contents of the Print Settings   
+               object has changed while the dialog is being shown.   
+               For example, some platforms may implement an "Apply" button (not required)  
+</td>
+</tr>
+
+</table>
 
 ### showPrinterProperties(printerName, printSettings) ###
   
@@ -126,3 +175,16 @@ layout: default
  @param printerName - name of printer (required)  
  @param printSettings - PrintSettings for page setup (required)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>printerName - name of printer (required)  
+ @param printSettings - PrintSettings for page setup (required)  
+</td>
+</tr>
+
+</table>

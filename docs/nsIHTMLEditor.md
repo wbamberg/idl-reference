@@ -334,6 +334,18 @@ the selected text (if any), but strip out any HTML styles and formatting
  @param aSourceString   HTML source string of the entire new document  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aSourceString   HTML source string of the entire new document  
+</td>
+</tr>
+
+</table>
+
 ### insertHTMLWithContext(aInputString, aContextStr, aInfoStr, aFlavor, aSourceDoc, aDestinationNode, aDestinationOffset, aDeleteSelection) ###
   
 Insert some HTML source, interpreting  

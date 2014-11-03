@@ -55,10 +55,10 @@ def parseDoccomments(lines):
     parsed = Parsed()
     linesGenerator = generator(lines)
     for line in linesGenerator:
-        if line.startswith("@param"):
+        if line.lstrip().startswith("@param"):
             param = createParamDoc(line, linesGenerator)
             parsed.params.append(param)
-        elif line.startswith("@return"):
+        elif line.lstrip().startswith("@return"):
             parsed.returns = createReturnDoc(line, linesGenerator)
         else:
             parsed.generalDocs += line

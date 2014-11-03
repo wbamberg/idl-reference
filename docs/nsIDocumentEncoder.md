@@ -113,6 +113,18 @@ Initialize with a pointer to the document and the mime type.
  @param aContainer The node which child nodes will be encoded.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aContainer The node which child nodes will be encoded.  
+</td>
+</tr>
+
+</table>
+
 ### setNativeContainerNode(aContainer) ###
 
 ### setCharset(aCharset) ###
@@ -126,6 +138,19 @@ Initialize with a pointer to the document and the mime type.
   
  Possible result codes: NS_ERROR_NO_CHARSET_CONVERTER  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aCharset Overrides the both the intrinsic or platform  
+ character set when encoding the document.  
+</td>
+</tr>
+
+</table>
 
 ### setWrapColumn(aWrapColumn) ###
   

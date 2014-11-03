@@ -31,3 +31,19 @@ layout: default
  @param count The number of human readable usages returned.  
  @param usages The array of human readable usages.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>cert The certificate that was verified.  
+ @param verified The certificate verification result,  
+        see constants in nsIX509Cert.  
+ @param count The number of human readable usages returned.  
+ @param usages The array of human readable usages.  
+</td>
+</tr>
+
+</table>

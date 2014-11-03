@@ -21,6 +21,19 @@ This represents a X.509 certificate.
  @return An array of email addresses.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>length The number of strings in the returned array.  
+ @return An array of email addresses.  
+</td>
+</tr>
+
+</table>
+
 ### containsEmailAddress(aEmailAddress) ###
   
  Check whether a given address is contained in the certificate.  
@@ -32,6 +45,29 @@ This represents a X.509 certificate.
  @return True if the address is contained in the certificate.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aEmailAddress The address to search for.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>True if the address is contained in the certificate.  
+</td>
+</tr>
+
+</table>
+
 ### getChain() ###
   
  Obtain a list of certificates that contains this certificate  
@@ -40,6 +76,17 @@ This represents a X.509 certificate.
   
  @return The chain of certifficates including the issuers.  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The chain of certifficates including the issuers.  
+</td>
+</tr>
+
+</table>
 
 ### getUsagesArray(localOnly, verified, count, usages) ###
   
@@ -52,6 +99,22 @@ This represents a X.509 certificate.
  @param count The number of human readable usages returned.  
  @param usages The array of human readable usages.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>localOnly Do not hit the network, even if revocation information  
+                  downloading is currently activated.  
+ @param verified The certificate verification result, see constants.  
+ @param count The number of human readable usages returned.  
+ @param usages The array of human readable usages.  
+</td>
+</tr>
+
+</table>
 
 ### requestUsagesArrayAsync(cvl) ###
   
@@ -72,6 +135,21 @@ This represents a X.509 certificate.
  @param purposes The string listing the usages.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>localOnly Do not hit the network, even if revocation information  
+                  downloading is currently activated.  
+ @param verified The certificate verification result, see constants.  
+ @param purposes The string listing the usages.  
+</td>
+</tr>
+
+</table>
+
 ### getRawDER(length, data) ###
   
  Obtain a raw binary encoding of this certificate  
@@ -81,6 +159,19 @@ This represents a X.509 certificate.
  @param data The bytes representing the DER encoded certificate.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>length The number of bytes in the binary encoding.  
+ @param data The bytes representing the DER encoded certificate.  
+</td>
+</tr>
+
+</table>
+
 ### equals(other) ###
   
  Test whether two certificate instances represent the  
@@ -88,6 +179,17 @@ This represents a X.509 certificate.
   
  @return Whether the certificates are equal  
   
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>Whether the certificates are equal  
+</td>
+</tr>
+
+</table>
 
 ### exportAsCMS(chainMode, length, data) ###
   
@@ -99,6 +201,21 @@ see CMS_CHAIN_MODE constants.
  @param length The number of bytes of the PKCS#7 data.  
  @param data The bytes representing the PKCS#7 wrapped certificate.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>chainMode Whether to include the chain (with or without the root),  
+see CMS_CHAIN_MODE constants.  
+ @param length The number of bytes of the PKCS#7 data.  
+ @param data The bytes representing the PKCS#7 wrapped certificate.  
+</td>
+</tr>
+
+</table>
 
 ### getCert() ###
   

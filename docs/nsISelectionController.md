@@ -251,6 +251,19 @@ selection is collapsed. Use this function to show the caret even in selections.
  @param aExtend  should it collapse the selection of extend it?  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aForward forward or backward if PR_FALSE  
+ @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+</table>
+
 ### characterExtendForDelete() ###
   
 CharacterExtendForDelete will extend the selection one character cell  
@@ -275,11 +288,36 @@ after UTF-16 surrogates.
  @param aExtend  should it collapse the selection of extend it?  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aForward forward or backward if PR_FALSE  
+ @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+</table>
+
 ### wordExtendForDelete(forward) ###
  wordExtendForDelete will extend the selection one word forward/backward in the document.  
  this method is used internally for handling ctrl[option]-backspace and ctrl[option]-del.  
  @param aForward forward or backward if PR_FALSE  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aForward forward or backward if PR_FALSE  
+</td>
+</tr>
+
+</table>
 
 ### lineMove(forward, extend) ###
  LineMove will move the selection one line forward/backward in the document.  
@@ -289,6 +327,19 @@ after UTF-16 surrogates.
  @param aForward forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aForward forward or backward if PR_FALSE  
+ @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+</table>
 
 ### intraLineMove(forward, extend) ###
  IntraLineMove will move the selection to the front of the line or end of the line  
@@ -300,6 +351,19 @@ after UTF-16 surrogates.
  @param aExtend  should it collapse the selection of extend it?  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aForward forward or backward if PR_FALSE  
+ @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+</table>
+
 ### pageMove(forward, extend) ###
  PageMove will move the selection one page forward/backward in the document.  
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
@@ -309,10 +373,35 @@ after UTF-16 surrogates.
  @param aExtend  should it collapse the selection of extend it?  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aForward forward or backward if PR_FALSE  
+ @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+</table>
+
 ### completeScroll(forward) ###
  CompleteScroll will move page view to the top or bottom of the document  
  @param aForward forward or backward if PR_FALSE  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aForward forward or backward if PR_FALSE  
+</td>
+</tr>
+
+</table>
 
 ### completeMove(forward, extend) ###
  CompleteMove will move page view to the top or bottom of the document  
@@ -323,20 +412,69 @@ after UTF-16 surrogates.
  @param aExtend  should it collapse the selection of extend it?  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aForward forward or backward if PR_FALSE  
+ @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+</table>
+
 ### scrollPage(forward) ###
  ScrollPage will scroll the page without affecting the selection.  
  @param aForward scroll forward or backwards in selection  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aForward scroll forward or backwards in selection  
+</td>
+</tr>
+
+</table>
 
 ### scrollLine(forward) ###
  ScrollLine will scroll line up or down dependent on the boolean  
  @param aForward scroll forward or backwards in selection  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aForward scroll forward or backwards in selection  
+</td>
+</tr>
+
+</table>
+
 ### scrollCharacter(right) ###
  ScrollCharacter will scroll right or left dependent on the boolean  
  @param aRight if true will scroll right. if not will scroll left.  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aRight if true will scroll right. if not will scroll left.  
+</td>
+</tr>
+
+</table>
 
 ### selectAll() ###
  SelectAll will select the whole page  
@@ -350,6 +488,21 @@ after UTF-16 surrogates.
  @param aEndOffset    offset in dom to last char of textnode to test  
  @param aReturnBool   boolean returned TRUE if visible FALSE if not  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aNode textNode to test  
+ @param aStartOffset  offset in dom to first char of textnode to test  
+ @param aEndOffset    offset in dom to last char of textnode to test  
+ @param aReturnBool   boolean returned TRUE if visible FALSE if not  
+</td>
+</tr>
+
+</table>
 
 ### checkVisibilityContent(node, startOffset, endOffset) ###
 

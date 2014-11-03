@@ -117,6 +117,19 @@ selects all cells (not TR in the case of rows)
  @param aEndCell    ending cell in block  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aStartCell  starting cell in block  
+ @param aEndCell    ending cell in block  
+</td>
+</tr>
+
+</table>
+
 ### selectTableRow() ###
 
 ### selectTableColumn() ###
@@ -134,6 +147,19 @@ selects all cells (not TR in the case of rows)
  @param aSourceCell   The cell to be replaced  
  @return              The new cell that replaces aSourceCell  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aSourceCell   The cell to be replaced  
+ @return              The new cell that replaces aSourceCell  
+</td>
+</tr>
+
+</table>
 
 ### joinTableCells(aMergeNonContiguousContents) ###
  Merges contents of all selected cells  
@@ -266,6 +292,29 @@ returns values:
 (in C++ returns: NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
  passes NS_SUCCEEDED macro)  
   
+
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>m</td>
+<td>aTable                   A table in the document  
+ @param aRowIndex, aColIndex     The 0-based cellmap indexes  
+returns values:  
+ @param aCell                    The cell at this cellmap location  
+ @param aStartRowIndex           The row index where cell starts  
+ @param aStartColIndex           The col index where cell starts  
+ @param aRowSpan                 May be 0 (to span down entire table) or number of cells spanned  
+ @param aColSpan                 May be 0 (to span across entire table) or number of cells spanned  
+ @param aActualRowSpan           The actual number of cellmap locations (rows) spanned by the cell  
+ @param aActualColSpan           The actual number of cellmap locations (columns) spanned by the cell  
+ @param aIsSelected  
+ @param   
+</td>
+</tr>
+
+</table>
 
 ### getFirstRow(aTableElement) ###
  Get the first row element in a table  

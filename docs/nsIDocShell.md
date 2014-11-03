@@ -618,6 +618,19 @@ a url has been loaded.
                                  creating the editor.  
   
 
+#### Parameters ####
+
+<table>
+
+<tr>
+<td>param</td>
+<td>inWaitForUriLoad    true to wait for a URI before  
+                                 creating the editor.  
+</td>
+</tr>
+
+</table>
+
 ### getChildSHEntry(aChildOffset) ###
   
 Get the SHEntry associated with a child docshell  
