@@ -22,7 +22,6 @@ layout: default
 Test whether two certificate list instances represent the same  
 certificate list.  
   
-@return Whether the certificate lists are equal  
   
 
 #### Returns ####

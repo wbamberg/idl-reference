@@ -32,8 +32,6 @@ Helper method to set a cookie with a consumer-provided
 cookie header, _but_ using the channel's other information  
 (URI's, prompters, date headers etc).  
   
-@param aCookieHeader  
-       The cookie header to be parsed.  
   
 
 #### Parameters ####
@@ -71,10 +69,6 @@ The onStartRequest and onStopRequest events are still delivered and the
 listener gets full control over the socket if and when onTransportAvailable  
 is delievered.  
   
-@param aProtocolName  
-       The value of the HTTP Upgrade request header  
-@param aListener  
-       The callback object used to handle a successful upgrade  
   
 
 #### Parameters ####

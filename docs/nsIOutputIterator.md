@@ -21,7 +21,6 @@ the replaced element, if any and if necessary, and to |AddRef()| the new element
 The result is undefined if this iterator currently points outside the  
 useful range of the underlying container or sequence.  
   
-@param anElementToPut the element to place into the underlying container or sequence  
   
 
 #### Parameters ####

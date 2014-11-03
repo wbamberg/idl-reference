@@ -17,8 +17,6 @@ A callback interface for handling asynchronous response for telephony.dial.
 Called when a dial request is treated as an MMI code and it is about to  
 process the request.  
   
-@param serviceCode  
-       MMI service code key string that defined in MMI_KS_SC_*  
   
 
 #### Parameters ####
@@ -38,10 +36,6 @@ process the request.
 Called when a dial request is treated as a call setup and the result  
 succeeds.  
   
-@param callIndex  
-       Call index from RIL.  
-@param number  
-       Dialed out phone number (ex: Temporary CLIR prefix will be removed)  
   
 
 #### Parameters ####
@@ -67,8 +61,6 @@ succeeds.
 Called when a MMI code request succeeds.  
 The function should only be called after notifyDialMMI.  
   
-@param result  
-       Result of the request. See MozMMIResult.  
   
 
 #### Parameters ####

@@ -13,8 +13,6 @@ layout: default
   
 Load an XML document.  
   
-@param  url URL to an XML document.  
-@return     True if load successfull.  
   
 
 #### Parameters ####

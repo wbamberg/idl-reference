@@ -16,7 +16,6 @@ nsICryptoHash interface.
 ### init(aKey) ###
   
 Initialize a stream cipher.  
-@param aKey nsIKeyObject  
   
 
 #### Parameters ####
@@ -34,9 +33,6 @@ Initialize a stream cipher.
 ### initWithIV(aKey, aIV, aIVLen) ###
   
 Initialize a stream cipher with an initialization vector.  
-@param aKey nsIKeyObject  
-@param aIV the initialization vector  
-@param aIVLen the length of the initialization vector  
   
 
 #### Parameters ####
@@ -80,9 +76,6 @@ A more script friendly method (not in nsICryptoHash interface).
 
 ### finish(aASCII) ###
   
-@param aASCII if true then the returned value is a base-64  
-       encoded string.  if false, then the returned value is  
-       binary data.  
   
 
 #### Parameters ####

@@ -18,13 +18,6 @@ below). If you do not pass INIT_JS_STANDARD_CLASSES, then aCOMObj
 must implement nsIXPCScriptable so it can resolve the standard  
 classes when asked by the JS engine.  
   
-@param aJSContext the context to use while creating the global object.  
-@param aCOMObj the native object that represents the global object.  
-@param aPrincipal the principal of the code that will run in this  
-                  compartment. Can be null if not on the main thread.  
-@param aFlags one of the flags below specifying what options this  
-              global object wants.  
-@param aOptions JSAPI-specific options for the new compartment.  
   
 
 #### Parameters ####
@@ -203,9 +196,6 @@ A new wrapper is *never* constructed.
 Create a sandbox for evaluating code in isolation using  
 evalInSandboxObject().  
   
-@param cx A context to use when creating the sandbox object.  
-@param principal The principal (or NULL to use the null principal)  
-                 to use when evaluating code in this sandbox.  
   
 
 #### Parameters ####
@@ -232,16 +222,6 @@ evalInSandboxObject().
 Evaluate script in a sandbox, completely isolated from all  
 other running scripts.  
   
-@param source The source of the script to evaluate.  
-@param filename The filename of the script. May be null.  
-@param cx The context to use when setting up the evaluation of  
-          the script. The actual evaluation will happen on a new  
-          temporary context.  
-@param sandbox The sandbox object to evaluate the script in.  
-@return The result of the evaluation as a jsval. If the caller  
-        intends to use the return value from this call the caller  
-        is responsible for rooting the jsval before making a call  
-        to this method.  
   
 
 #### Parameters ####

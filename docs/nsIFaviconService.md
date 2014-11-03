@@ -21,16 +21,6 @@ protocol handler's special case for "favicon" annotations will resolve
 invalid icons to the default icon, although without caching.  
 For invalid chrome URIs, you'll get a broken image.  
   
-@param aFaviconURI  
-       The URI of an icon in the favicon service.  
-@return A URI that will give you the icon image.  This is NOT the URI of  
-        the icon as set on the page, but a URI that will give you the  
-        data out of the favicon service.  For a normal page with a  
-        favicon we've stored, this will be an annotation URI which will  
-        then cause the corresponding favicon data to be loaded async from  
-        this service.  For pages where we don't have a favicon, this will  
-        be a chrome URI of the default icon. For chrome URIs, the  
-        output will be the same as the input.  
   
 
 #### Parameters ####
@@ -80,8 +70,6 @@ The lifespan of the favicon cache is up to the caching system.  This cache
 will also be written when setAndLoadFaviconForPage hits an error while  
 fetching an icon.  
   
-@param aFaviconURI  
-       The URI of an icon in the favicon service.  
   
 
 #### Parameters ####
@@ -101,8 +89,6 @@ fetching an icon.
 Removes the given favicon from the failed favicon cache.  If the icon is  
 not in the cache, it will silently succeed.  
   
-@param aFaviconURI  
-       The URI of an icon in the favicon service.  
   
 
 #### Parameters ####
@@ -126,8 +112,6 @@ worth trying to load it.
 This allows you to avoid trying to load "foo.com/favicon.ico" for every  
 page on a site that doesn't have a favicon.  
   
-@param aFaviconURI  
-       The URI of an icon in the favicon service.  
   
 
 #### Parameters ####

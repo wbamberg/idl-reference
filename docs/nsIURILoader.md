@@ -38,9 +38,6 @@ to content windows within that application.
 Note to self: we may want to optimize things a bit more by requiring  
 the content types the registered content listener cares about.  
   
-@param aContentListener  
-       The listener to register. This listener must implement  
-       nsISupportsWeakReference.  
   
 @see the nsIURILoader class description  
   
@@ -63,20 +60,6 @@ the content types the registered content listener cares about.
 ### openURI(aChannel, aFlags, aWindowContext) ###
   
 OpenURI requires the following parameters.....  
-@param aChannel  
-       The channel that should be opened. This must not be asyncOpen'd yet!  
-       If a loadgroup is set on the channel, it will get replaced with a  
-       different one.  
-@param aFlags  
-       Combination (bitwise OR) of the flags specified above. 0 indicates  
-       default handling.  
-@param aWindowContext  
-       If you are running the url from a doc shell or a web shell, this is  
-       your window context. If you have a content listener you want to  
-       give first crack to, the uri loader needs to be able to get it  
-       from the window context. We will also be using the window context  
-       to get at the progress event sink interface.  
-       <b>Must not be null!</b>  
   
 
 #### Parameters ####
@@ -132,20 +115,6 @@ during onStartRequest (e.g. in canHandleContent/isPreferred), then the
 returned stream listener's onStartRequest method will return  
 NS_ERROR_WONT_HANDLE_CONTENT.  
   
-@param aChannel  
-       The channel that should be loaded. The channel may already be  
-       opened. It must not be closed (i.e. this must be called before the  
-       channel calls onStopRequest on its stream listener).  
-@param aFlags  
-       Combination (bitwise OR) of the flags specified above. 0 indicates  
-       default handling.  
-@param aWindowContext  
-       If you are running the url from a doc shell or a web shell, this is  
-       your window context. If you have a content listener you want to  
-       give first crack to, the uri loader needs to be able to get it  
-       from the window context. We will also be using the window context  
-       to get at the progress event sink interface.  
-       <b>Must not be null!</b>  
   
 
 #### Parameters ####

@@ -24,23 +24,7 @@ which means there is no record for this pref in the database.
 This method can be called from content processes in electrolysis builds.  
 We have a whitelist of values that can be read in such a way.  
   
-@param    aGroup      the group for which to get the pref, as an nsIURI  
-                      from which the hostname will be used, a string  
-                      (typically in the format of a hostname), or null   
-                      to get the global pref (applies to all sites)  
-@param    aName       the name of the pref to get  
-@param    aPrivacyContext  
-                      a context from which to determine the privacy status  
-                      of the pref (ie. whether to search in memory or in  
-                      permanent storage for it), obtained from a relevant  
-                      window or channel.  
-@param    aCallback   an optional nsIContentPrefCallback to receive the  
-                      result. If desired, JavaScript callers can instead  
-                      provide a function to call upon completion  
   
-@returns  the value of the pref  
-@throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
-@throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
 #### Parameters ####
@@ -101,19 +85,6 @@ Set a pref.
 This method can be called from content processes in electrolysis builds.  
 We have a whitelist of values that can be set in such a way.  
   
-@param    aGroup      the group for which to set the pref, as an nsIURI  
-                      from which the hostname will be used, a string  
-                      (typically in the format of a hostname), or null  
-                      to set the global pref (applies to all sites)  
-@param    aName       the name of the pref to set  
-@param    aValue      the new value of the pref  
-@param    aPrivacyContext  
-                      a context from which to determine the privacy status  
-                      of the pref (ie. whether to store it in memory or in  
-                      permanent storage), obtained from a relevant  
-                      window or channel.  
-@throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
-@throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
 #### Parameters ####
@@ -158,18 +129,6 @@ We have a whitelist of values that can be set in such a way.
   
 Check whether or not a pref exists.  
   
-@param    aGroup      the group for which to check for the pref, as an nsIURI  
-                      from which the hostname will be used, a string  
-                      (typically in the format of a hostname), or null  
-                      to check for the global pref (applies to all sites)  
-@param    aName       the name of the pref to check for  
-@param    aPrivacyContext  
-                      a context from which to determine the privacy status  
-                      of the pref (ie. whether to search in memory or in  
-                      permanent storage for it), obtained from a relevant  
-                      window or channel.  
-@throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
-@throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
 #### Parameters ####
@@ -208,18 +167,6 @@ Check whether or not a pref exists.
   
 Check whether or not the value of a pref (or its non-existance) is cached.  
   
-@param    aGroup      the group for which to check for the pref, as an nsIURI  
-                      from which the hostname will be used, a string  
-                      (typically in the format of a hostname), or null  
-                      to check for the global pref (applies to all sites)  
-@param    aName       the name of the pref to check for  
-@param    aPrivacyContext  
-                      a context from which to determine the privacy status  
-                      of the pref (ie. whether to search in memory or in  
-                      permanent storage for it), obtained from a relevant  
-                      window or channel.  
-@throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
-@throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
 #### Parameters ####
@@ -258,18 +205,6 @@ Check whether or not the value of a pref (or its non-existance) is cached.
   
 Remove a pref.  
   
-@param    aGroup      the group for which to remove the pref, as an nsIURI  
-                      from which the hostname will be used, a string  
-                      (typically in the format of a hostname), or null  
-                      to remove the global pref (applies to all sites)   
-@param    aName       the name of the pref to remove  
-@param    aPrivacyContext  
-                      a context from which to determine the privacy status  
-                      of the pref (ie. whether to search in memory or in  
-                      permanent storage for it), obtained from a relevant  
-                      window or channel.  
-@throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
-@throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
 #### Parameters ####
@@ -309,11 +244,6 @@ Remove a pref.
 Remove all grouped prefs.  Useful for removing references to the sites  
 the user has visited when the user clears their private data.  
   
-@param    aPrivacyContext  
-                      a context from which to determine the privacy status  
-                      of the pref (ie. whether to remove prefs in memory or  
-                      in permanent storage), obtained from a relevant  
-                      window or channel.  
   
 
 #### Parameters ####
@@ -335,13 +265,6 @@ the user has visited when the user clears their private data.
   
 Remove all prefs with the given name.  
   
-@param    aName        the setting name for which to remove prefs  
-@param    aPrivacyContext  
-                       a context from which to determine the privacy status  
-                       of the prefs (ie. whether to remove prefs in memory or  
-                       in permanent storage), obtained from a relevant  
-                       window or channel.  
-@throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
 #### Parameters ####
@@ -370,18 +293,7 @@ Remove all prefs with the given name.
   
 Get the prefs that apply to the given site.  
   
-@param    aGroup      the group for which to retrieve prefs, as an nsIURI  
-                      from which the hostname will be used, a string  
-                      (typically in the format of a hostname), or null  
-                      to get the global prefs (apply to all sites)   
-@param    aPrivacyContext  
-                      a context from which to determine the privacy status  
-                      of the pref (ie. whether to search for prefs in memory  
-                      or in permanent storage), obtained from a relevant  
-                      window or channel.  
   
-@returns  a property bag of prefs  
-@throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
   
 
 #### Parameters ####
@@ -424,15 +336,7 @@ Get the prefs that apply to the given site.
   
 Get the prefs with the given name.  
   
-@param    aName        the setting name for which to retrieve prefs  
-@param    aPrivacyContext  
-                       a context from which to determine the privacy status  
-                       of the pref (ie. whether to search for prefs in memory  
-                       or in permanent storage), obtained from a relevant  
-                       window or channel.  
   
-@returns  a property bag of prefs  
-@throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
 
 #### Parameters ####
@@ -472,9 +376,6 @@ Get the prefs with the given name.
   
 Add an observer.  
   
-@param    aName       the setting to observe, or null to add  
-                      a generic observer that observes all settings  
-@param    aObserver   the observer to add  
   
 
 #### Parameters ####
@@ -500,9 +401,6 @@ Add an observer.
   
 Remove an observer.  
   
-@param    aName       the setting being observed, or null to remove  
-                      a generic observer that observes all settings  
-@param    aObserver   the observer to remove  
   
 
 #### Parameters ####

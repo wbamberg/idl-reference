@@ -16,7 +16,6 @@ layout: default
 This is the constructor for creating an invisible DocShell.  
 It is used to simulate DOM windows without an actual physical  
 representation.  
-@param aIsChrome Set true if you want to use it for chrome content.  
   
 
 #### Parameters ####
@@ -49,9 +48,6 @@ if you'd like to subsequently call OpenDialog on the hidden window.
 Add a window to the application's registry of windows.  These windows  
 are generally shown in the Windows taskbar, and the application  
 knows it can't quit until it's out of registered windows.  
-@param aWindow the window to register  
-@note When this method is successful, it fires the global notification  
-      "xul-window-registered"  
   
 
 #### Parameters ####
@@ -73,7 +69,6 @@ knows it can't quit until it's out of registered windows.
 Remove a window from the application's window registry. Note that  
 this method won't automatically attempt to quit the app when  
 the last window is unregistered. For that, see Quit().  
-@param aWindow you see the pattern  
   
 
 #### Parameters ####
@@ -94,7 +89,6 @@ Start/stop tracking lags in the event loop.
 If the event loop gets unresponsive, a "event-loop-lag" notification  
 is sent. Note that calling `startEventLoopLagTracking` when tracking  
 is already enabled has no effect.  
-@return true if tracking succeeded.  
   
 
 #### Returns ####

@@ -39,8 +39,6 @@ CONTEXT_TEXT                   <TEXTAREA>
 CONTEXT_DOCUMENT               <HTML>  
 CONTEXT_BACKGROUND_IMAGE       <HTML> with background image  
   
-@param aContextFlags           Flags indicating the kind of context.  
-@param aUtils                  Context information and helper utilities.  
   
 @see nsIContextMenuInfo  
   

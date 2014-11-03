@@ -13,7 +13,6 @@ layout: default
  Paste the text in the OS clipboard at the cursor position,  
 as a quotation (whose representation is dependant on the editor type),  
 replacing the selected text (if any).  
-@param aSelectionType Text or html?  
   
 
 #### Parameters ####
@@ -32,8 +31,6 @@ replacing the selected text (if any).
  Insert a string as quoted text  
 (whose representation is dependant on the editor type),  
 replacing the selected text (if any).  
-@param aQuotedText  The actual text to be quoted  
-@return             The node which was inserted  
   
 
 #### Parameters ####
@@ -68,7 +65,6 @@ as plaintext quoted blocks.
 If the selection is not collapsed, the selection is deleted  
 and the insertion takes place at the resulting collapsed selection.  
   
-@param aString   the string to be inserted  
   
 
 #### Parameters ####
@@ -87,8 +83,6 @@ and the insertion takes place at the resulting collapsed selection.
  Paste a string as quoted text,  
 whose representation is dependant on the editor type,  
 replacing the selected text (if any)  
-@param aCitation    The "mid" URL of the source message  
-@param aSelectionType Text or html?  
   
 
 #### Parameters ####
@@ -114,10 +108,6 @@ replacing the selected text (if any)
 (whose representation is dependant on the editor type),  
 replacing the selected text (if any),  
 including, if possible, a "cite" attribute.  
-@param aQuotedText  The actual text to be quoted  
-@param aCitation    The "mid" URL of the source message  
-@param aInsertHTML  Insert as html?  (vs plaintext)  
-@return             The node which was inserted  
   
 
 #### Parameters ####
@@ -158,7 +148,6 @@ including, if possible, a "cite" attribute.
 ### rewrap(aRespectNewlines) ###
   
 Rewrap the selected part of the document, re-quoting if necessary.  
-@param aRespectNewlines  Try to maintain newlines in the original?  
   
 
 #### Parameters ####

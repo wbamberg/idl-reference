@@ -35,7 +35,6 @@ raising errors if setPrivate is called on a channel which has a loadGroup
 and/or callbacks that implement nsILoadContext, or if the loadGroup  
 or notificationCallbacks are set after setPrivate has been called.  
   
-@param aPrivate whether the channel should be opened in private mode.  
   
 
 #### Parameters ####

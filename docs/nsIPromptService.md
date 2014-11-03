@@ -43,12 +43,6 @@ rewritten to ask the user: "Would you like to proceed?"
   
 Puts up an alert dialog with an OK button.  
   
-@param aParent  
-       The parent window or null.  
-@param aDialogTitle  
-       Text to appear in the title of the dialog.  
-@param aText  
-       Text to appear in the body of the dialog.  
   
 
 #### Parameters ####
@@ -79,17 +73,6 @@ Puts up an alert dialog with an OK button.
   
 Puts up an alert dialog with an OK button and a labeled checkbox.  
   
-@param aParent  
-       The parent window or null.  
-@param aDialogTitle  
-       Text to appear in the title of the dialog.  
-@param aText  
-       Text to appear in the body of the dialog.  
-@param aCheckMsg  
-       Text to appear with the checkbox.  
-@param aCheckState  
-       Contains the initial checked state of the checkbox when this method  
-       is called and the final checked state after this method returns.  
   
 
 #### Parameters ####
@@ -133,14 +116,7 @@ Puts up an alert dialog with an OK button and a labeled checkbox.
   
 Puts up a dialog with OK and Cancel buttons.  
   
-@param aParent  
-       The parent window or null.  
-@param aDialogTitle  
-       Text to appear in the title of the dialog.  
-@param aText  
-       Text to appear in the body of the dialog.  
   
-@return true for OK, false for Cancel  
   
 
 #### Parameters ####
@@ -182,19 +158,7 @@ Puts up a dialog with OK and Cancel buttons.
   
 Puts up a dialog with OK and Cancel buttons and a labeled checkbox.  
   
-@param aParent  
-       The parent window or null.  
-@param aDialogTitle  
-       Text to appear in the title of the dialog.  
-@param aText  
-       Text to appear in the body of the dialog.  
-@param aCheckMsg  
-       Text to appear with the checkbox.  
-@param aCheckState  
-       Contains the initial checked state of the checkbox when this method  
-       is called and the final checked state after this method returns.  
   
-@return true for OK, false for Cancel  
   
 
 #### Parameters ####
@@ -249,27 +213,7 @@ Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
   
 Puts up a dialog with up to 3 buttons and an optional, labeled checkbox.  
   
-@param aParent  
-       The parent window or null.  
-@param aDialogTitle  
-       Text to appear in the title of the dialog.  
-@param aText  
-       Text to appear in the body of the dialog.  
-@param aButtonFlags  
-       A combination of Button Flags.  
-@param aButton0Title  
-       Used when button 0 uses TITLE_IS_STRING  
-@param aButton1Title  
-       Used when button 1 uses TITLE_IS_STRING  
-@param aButton2Title  
-       Used when button 2 uses TITLE_IS_STRING  
-@param aCheckMsg  
-       Text to appear with the checkbox.  Null if no checkbox.  
-@param aCheckState      
-       Contains the initial checked state of the checkbox when this method  
-       is called and the final checked state after this method returns.  
   
-@return index of the button pressed.  
   
 Buttons are numbered 0 - 2. The implementation can decide whether the  
 sequence goes from right to left or left to right.  Button 0 is the  
@@ -366,24 +310,7 @@ where "AAA" and "BBB" correspond to one of the button titles.
   
 Puts up a dialog with an edit field and an optional, labeled checkbox.  
   
-@param aParent  
-       The parent window or null.  
-@param aDialogTitle  
-       Text to appear in the title of the dialog.  
-@param aText  
-       Text to appear in the body of the dialog.  
-@param aValue  
-       Contains the default value for the dialog field when this method  
-       is called (null value is ok).  Upon return, if the user pressed  
-       OK, then this parameter contains a newly allocated string value.  
-       Otherwise, the parameter's value is unmodified.  
-@param aCheckMsg  
-       Text to appear with the checkbox.  If null, check box will not be shown.  
-@param aCheckState  
-       Contains the initial checked state of the checkbox when this method  
-       is called and the final checked state after this method returns.  
   
-@return true for OK, false for Cancel.  
   
 
 #### Parameters ####
@@ -448,29 +375,7 @@ Puts up a dialog with an edit field and an optional, labeled checkbox.
 Puts up a dialog with an edit field, a password field, and an optional,  
 labeled checkbox.  
   
-@param aParent  
-       The parent window or null.  
-@param aDialogTitle  
-       Text to appear in the title of the dialog.  
-@param aText  
-       Text to appear in the body of the dialog.  
-@param aUsername  
-       Contains the default value for the username field when this method  
-       is called (null value is ok).  Upon return, if the user pressed OK,  
-       then this parameter contains a newly allocated string value.  
-       Otherwise, the parameter's value is unmodified.  
-@param aPassword  
-       Contains the default value for the password field when this method  
-       is called (null value is ok).  Upon return, if the user pressed OK,  
-       then this parameter contains a newly allocated string value.  
-       Otherwise, the parameter's value is unmodified.  
-@param aCheckMsg  
-       Text to appear with the checkbox.  If null, check box will not be shown.  
-@param aCheckState  
-       Contains the initial checked state of the checkbox when this method  
-       is called and the final checked state after this method returns.  
   
-@return true for OK, false for Cancel.  
   
 
 #### Parameters ####
@@ -543,24 +448,7 @@ labeled checkbox.
   
 Puts up a dialog with a password field and an optional, labeled checkbox.  
   
-@param aParent  
-       The parent window or null.  
-@param aDialogTitle  
-       Text to appear in the title of the dialog.  
-@param aText  
-       Text to appear in the body of the dialog.  
-@param aPassword  
-       Contains the default value for the password field when this method  
-       is called (null value is ok).  Upon return, if the user pressed OK,  
-       then this parameter contains a newly allocated string value.  
-       Otherwise, the parameter's value is unmodified.  
-@param aCheckMsg  
-       Text to appear with the checkbox.  If null, check box will not be shown.  
-@param aCheckState  
-       Contains the initial checked state of the checkbox when this method  
-       is called and the final checked state after this method returns.  
   
-@return true for OK, false for Cancel.  
   
 
 #### Parameters ####
@@ -625,21 +513,7 @@ Puts up a dialog with a password field and an optional, labeled checkbox.
 Puts up a dialog box which has a list box of strings from which the user  
 may make a single selection.  
   
-@param aParent  
-       The parent window or null.  
-@param aDialogTitle  
-       Text to appear in the title of the dialog.  
-@param aText  
-       Text to appear in the body of the dialog.  
-@param aCount  
-       The length of the aSelectList array parameter.  
-@param aSelectList  
-       The list of strings to display.  
-@param aOutSelection  
-       Contains the index of the selected item in the list when this  
-       method returns true.  
   
-@return true for OK, false for Cancel.  
   
 
 #### Parameters ####

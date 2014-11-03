@@ -25,10 +25,6 @@ because the JS engine relies on proper exception handler chaining.
   
 Add some extra data to be submitted with a crash report.  
   
-@param key  
-       Name of the data to be added.  
-@param data  
-       Data to be added.  
   
 @throw NS_ERROR_NOT_INITIALIZED if crash reporting not initialized  
 @throw NS_ERROR_INVALID_ARG if key or data contain invalid characters.  
@@ -59,8 +55,6 @@ Add some extra data to be submitted with a crash report.
 Append some data to the "Notes" field, to be submitted with a crash report.  
 Unlike annotateCrashReport, this method will append to existing data.  
   
-@param data  
-       Data to be added.  
   
 @throw NS_ERROR_NOT_INITIALIZED if crash reporting not initialized  
 @throw NS_ERROR_INVALID_ARG if data contains invalid characters.  
@@ -83,10 +77,6 @@ Unlike annotateCrashReport, this method will append to existing data.
   
 Register a given memory range to be included in the crash report.  
   
-@param ptr  
-       The starting address for the bytes.  
-@param size  
-       The number of bytes to include.  
   
 @throw NS_ERROR_NOT_INITIALIZED if crash reporting not initialized  
 @throw NS_ERROR_NOT_IMPLEMENTED if unavailable on the current OS  
@@ -116,7 +106,6 @@ Write a minidump immediately, with the user-supplied exception
 information. This is implemented on Windows only, because  
 SEH (structured exception handling) exists on Windows only.  
   
-@param aExceptionInfo  EXCEPTION_INFO* provided by Window's SEH  
   
 
 #### Parameters ####
@@ -135,7 +124,6 @@ SEH (structured exception handling) exists on Windows only.
   
 Append note containing an Obj-C exception's info.  
   
-@param aException  NSException object to append note for  
   
 
 #### Parameters ####

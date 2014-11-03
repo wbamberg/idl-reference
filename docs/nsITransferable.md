@@ -30,8 +30,6 @@ var loadContext = doc.defaultView.QueryInterface(Ci.nsIInterfaceRequestor)
 In C++ callers, if you have the corresponding document, you can just call  
 nsIDocument::GetLoadContext to get to the load context object.  
   
-@param aContext the load context associated with the transferable object.  
-       This can be set to null if a load context is not available.  
   
 
 #### Parameters ####
@@ -52,8 +50,6 @@ nsIDocument::GetLoadContext to get to the load context object.
 Computes a list of flavors (mime types as nsISupportsCString) that the transferable   
 can export, either through intrinsic knowledge or output data converters.  
   
-@param  aDataFlavorList fills list with supported flavors. This is a copy of  
-         the internal list, so it may be edited w/out affecting the transferable.  
   
 
 #### Parameters ####
@@ -73,9 +69,6 @@ can export, either through intrinsic knowledge or output data converters.
   
 Given a flavor retrieve the data.   
   
-@param  aFlavor (in parameter) the flavor of data to retrieve  
-@param  aData the data. Some variant of class in nsISupportsPrimitives.idl  
-@param  aDataLen the length of the data  
   
 
 #### Parameters ####
@@ -107,9 +100,6 @@ Given a flavor retrieve the data.
 Returns the best flavor in the transferable, given those that have  
 been added to it with |AddFlavor()|  
   
-@param  aFlavor (out parameter) the flavor of data that was retrieved  
-@param  aData the data. Some variant of class in nsISupportsPrimitives.idl  
-@param  aDataLen the length of the data  
   
 
 #### Parameters ####
@@ -146,8 +136,6 @@ Returns true if the data is large.
 Computes a list of flavors (mime types as nsISupportsCString) that the transferable can  
 accept into it, either through intrinsic knowledge or input data converters.  
   
-@param  outFlavorList fills list with supported flavors. This is a copy of  
-         the internal list, so it may be edited w/out affecting the transferable.  
   
 
 #### Parameters ####
@@ -168,10 +156,6 @@ accept into it, either through intrinsic knowledge or input data converters.
 Sets the data in the transferable with the specified flavor. The transferable  
 will maintain its own copy the data, so it is not necessary to do that beforehand.  
   
-@param  aFlavor the flavor of data that is being set  
-@param  aData the data, either some variant of class in nsISupportsPrimitives.idl,  
-        an nsIFile, or an nsIFlavorDataProvider (see above)  
-@param  aDataLen the length of the data, or 0 if passing a nsIFlavorDataProvider  
   
 
 #### Parameters ####
@@ -204,7 +188,6 @@ will maintain its own copy the data, so it is not necessary to do that beforehan
 Add the data flavor, indicating that this transferable   
 can receive this type of flavor  
   
-@param  aDataFlavor a new data flavor to handle  
   
 
 #### Parameters ####
@@ -224,7 +207,6 @@ can receive this type of flavor
 Removes the data flavor matching the given one (string compare) and the data  
 that goes along with it.  
   
-@param  aDataFlavor a data flavor to remove  
   
 
 #### Parameters ####

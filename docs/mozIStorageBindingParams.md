@@ -13,10 +13,6 @@ layout: default
   
 Binds aValue to the parameter with the name aName.  
   
-@param aName  
-       The name of the parameter to bind aValue to.  
-@param aValue  
-       The value to bind.  
   
 
 #### Parameters ####
@@ -57,10 +53,6 @@ Binds aValue to the parameter with the name aName.
   
 Binds aValue to the parameter with the index aIndex.  
   
-@param aIndex  
-       The zero-based index of the parameter to bind aValue to.  
-@param aValue  
-       The value to bind.  
   
 
 #### Parameters ####

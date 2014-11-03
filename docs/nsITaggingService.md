@@ -15,12 +15,6 @@ Tags a URL with the given set of tags. Current tags set for the URL
 persist. Tags in aTags which are already set for the given URL are  
 ignored.  
   
-@param aURI  
-       the URL to tag.  
-@param aTags  
-       Array of tags to set for the given URL.  Each element within the  
-       array can be either a tag name (non-empty string) or a concrete  
-       itemId of a tag container.  
   
 
 #### Parameters ####
@@ -48,12 +42,6 @@ ignored.
 Removes tags from a URL. Tags from aTags which are not set for the  
 given URL are ignored.  
   
-@param aURI  
-       the URL to un-tag.  
-@param aTags  
-       Array of tags to unset.  Pass null to remove all tags from the given  
-       url.  Each element within the array can be either a tag name  
-       (non-empty string) or a concrete itemId of a tag container.  
   
 
 #### Parameters ####
@@ -80,9 +68,6 @@ given URL are ignored.
   
 Retrieves all URLs tagged with the given tag.  
   
-@param aTag  
-       tag name  
-@returns Array of uris tagged with aTag.  
   
 
 #### Parameters ####
@@ -112,9 +97,6 @@ Retrieves all URLs tagged with the given tag.
   
 Retrieves all tags set for the given URL.  
   
-@param aURI  
-       a URL.  
-@returns array of tags (sorted by name).  
   
 
 #### Parameters ####

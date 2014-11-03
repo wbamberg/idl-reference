@@ -18,8 +18,6 @@ The cert is stored permanently in the profile's key store after first use,
 and is valid for 1 year.  If an expired or otherwise invalid cert is found  
 with the nickname supplied here, it is removed and a new one is made.  
   
-@param nickname Nickname that identifies the cert  
-@param cb       Callback to be notified with the result  
   
 
 #### Parameters ####
@@ -44,8 +42,6 @@ with the nickname supplied here, it is removed and a new one is made.
   
 Remove a X.509 cert with the given nickname.  
   
-@param nickname Nickname that identifies the cert  
-@param cb       Callback to be notified with the result  
   
 
 #### Parameters ####

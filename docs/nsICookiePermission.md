@@ -20,10 +20,6 @@ this method is called to block cookie access for the given URI.  this
 may result in other URIs being blocked as well (e.g., URIs which share  
 the same host name).  
   
-@param aURI  
-       the URI to block  
-@param aAccess  
-       the new cookie access for the URI.  
   
 
 #### Parameters ####
@@ -51,14 +47,7 @@ canAccess
 this method is called to test whether or not the given URI/channel may  
 access the cookie database, either to set or get cookies.  
   
-@param aURI  
-       the URI trying to access cookies  
-@param aChannel  
-       the channel corresponding to aURI  
   
-@return one of the following nsCookieAccess values:  
-        ACCESS_DEFAULT, ACCESS_ALLOW, ACCESS_DENY, or  
-        ACCESS_ALLOW_FIRST_PARTY_ONLY  
   
 
 #### Parameters ####
@@ -103,22 +92,7 @@ cookie via the aIsSession and aExpiry parameters, in order to limit
 or extend the lifetime of the cookie. this is useful, for instance, to  
 downgrade a cookie to session-only if it fails to meet certain criteria.  
   
-@param aURI  
-       the URI trying to set the cookie  
-@param aChannel  
-       the channel corresponding to aURI  
-@param aCookie  
-       the cookie being added to the cookie database  
-@param aIsSession  
-       when canSetCookie is invoked, this is the current isSession attribute  
-       of the cookie. canSetCookie may leave this value unchanged to  
-       preserve this attribute of the cookie.  
-@param aExpiry  
-       when canSetCookie is invoked, this is the current expiry time of  
-       the cookie. canSetCookie may leave this value unchanged to  
-       preserve this attribute of the cookie.  
   
-@return true if the cookie can be set.  
   
 
 #### Parameters ####

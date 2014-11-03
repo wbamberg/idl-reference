@@ -73,9 +73,6 @@ layout: default
   
 Parse CSS and update the style sheet in place.  
   
-@param DOMCSSStyleSheet aSheet  
-@param DOMString aInput  
-       The new source string for the style sheet.  
   
 
 #### Parameters ####
@@ -102,7 +99,6 @@ Parse CSS and update the style sheet in place.
 Scroll an element completely into view, if possible.  
 This is similar to ensureElementIsVisible but for all ancestors.  
   
-@param DOMElement aElement  
   
 
 #### Parameters ####

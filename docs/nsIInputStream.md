@@ -45,7 +45,6 @@ to read from it.  If a stream is at end-of-file, but not closed, then
 this method returns 0 bytes available.  (Note: some nsIInputStream  
 implementations automatically close when eof is reached; some do not).  
   
-@return number of bytes currently available in the stream.  
   
 @throws NS_BASE_STREAM_CLOSED if the stream is closed normally.  
 @throws <other-error> if the stream is closed due to some error  
@@ -67,11 +66,7 @@ implementations automatically close when eof is reached; some do not).
    
 Read data from the stream.  
   
-@param aBuf the buffer into which the data is to be read  
-@param aCount the maximum number of bytes to be read  
   
-@return number of bytes read (may be less than aCount).  
-@return 0 if reached end-of-file  
   
 @throws NS_BASE_STREAM_WOULD_BLOCK if reading from the input stream would  
   block the calling thread (non-blocking mode only)  
@@ -117,12 +112,7 @@ buffers.  ReadSegments is expected to keep calling the writer until
 either there is nothing left to read or the writer returns an error.  
 ReadSegments should not call the writer with zero bytes to consume.  
   
-@param aWriter the "consumer" of the data to be read  
-@param aClosure opaque parameter passed to writer   
-@param aCount the maximum number of bytes to be read  
   
-@return number of bytes read (may be less than aCount)  
-@return 0 if reached end-of-file (or if aWriter refused to consume data)  
   
 @throws NS_BASE_STREAM_WOULD_BLOCK if reading from the input stream would  
   block the calling thread (non-blocking mode only)  
@@ -172,7 +162,6 @@ NOTE: this method should not throw NS_BASE_STREAM_CLOSED.
 
 ### isNonBlocking() ###
   
-@return true if stream is non-blocking  
   
 NOTE: reading from a blocking input stream will block the calling thread  
 until at least one byte of data can be extracted from the stream.  

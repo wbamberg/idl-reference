@@ -17,10 +17,7 @@ wish to receive callbacks during the request execution.
   
 onProgress is invoked periodically during long running calls.  
   
-@param aConnection    connection, for which progress handler is  
-                      invoked.  
   
-@return true to abort request, false to continue work.  
   
 
 #### Parameters ####

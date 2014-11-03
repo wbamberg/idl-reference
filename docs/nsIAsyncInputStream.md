@@ -36,9 +36,6 @@ when an attempt is made to write to a "broken" pipe corresponds to the
 status code passed in when the input end of the pipe was closed, which  
 greatly simplifies working with pipes in some cases.  
   
-@param aStatus  
-       The error that will be reported if this stream is accessed after  
-       it has been closed.  
   
 
 #### Parameters ####
@@ -70,21 +67,6 @@ stream is already readable or closed when AsyncWait is called, then the
 OnInputStreamReady event will be dispatched immediately.  Otherwise, the  
 event will be dispatched when the stream becomes readable or closed.  
   
-@param aCallback  
-       This object is notified when the stream becomes ready.  This  
-       parameter may be null to clear an existing callback.  
-@param aFlags  
-       This parameter specifies optional flags passed in to configure  
-       the behavior of this method.  Pass zero to specify no flags.  
-@param aRequestedCount  
-       Wait until at least this many bytes can be read.  This is only  
-       a suggestion to the underlying stream; it may be ignored.  The  
-       caller may pass zero to indicate no preference.  
-@param aEventTarget  
-       Specify NULL to receive notification on ANY thread (possibly even  
-       recursively on the calling thread -- i.e., synchronously), or  
-       specify that the notification be delivered to a specific event  
-       target.  
   
 
 #### Parameters ####

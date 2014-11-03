@@ -22,17 +22,11 @@ for.
   
 Called when a tooltip should be displayed.  
   
-@param aXCoords The tooltip left edge X coordinate.  
-@param aYCoords The tooltip top edge Y coordinate.  
-@param aTipText The text to display in the tooltip, typically obtained  
-       from the TITLE attribute of the node (or containing parent)  
-       over which the pointer has been positioned.  
   
 @note  
 Coordinates are specified in pixels, relative to the top-left  
 corner of the browser area.  
   
-@return <code>NS_OK</code> if the tooltip was displayed.  
   
 
 #### Parameters ####

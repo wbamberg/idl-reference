@@ -30,12 +30,6 @@ appendElement()
   
 Append an element at the end of the array.  
   
-@param element The element to append.  
-@param weak    Whether or not to store the element using a weak  
-               reference.  
-@throws NS_ERROR_FAILURE when a weak reference is requested,  
-                         but the element does not support  
-                         nsIWeakReference.  
   
 
 #### Parameters ####
@@ -69,7 +63,6 @@ stored at a higher position down one.
 To remove a specific element, use indexOf() to find the index  
 first, then call removeElementAt().  
   
-@param index the position of the item  
   
   
 
@@ -93,15 +86,6 @@ Insert an element at the given position, moving the element
 currently located in that position, and all elements in higher  
 position, up by one.  
   
-@param element The element to insert  
-@param index   The position in the array:  
-               If the position is lower than the current length  
-               of the array, the elements at that position and  
-               onwards are bumped one position up.  
-               If the position is equal to the current length  
-               of the array, the new element is appended.  
-               An index lower than 0 or higher than the current  
-               length of the array is invalid and will be ignored.  
   
 @throws NS_ERROR_FAILURE when a weak reference is requested,  
                          but the element does not support  
@@ -139,19 +123,7 @@ replaceElementAt()
   
 Replace the element at the given position.  
   
-@param element The new element to insert  
-@param index   The position in the array  
-               If the position is lower than the current length  
-               of the array, an existing element will be replaced.  
-               If the position is equal to the current length  
-               of the array, the new element is appended.  
-               If the position is higher than the current length  
-               of the array, empty elements are appended followed  
-               by the new element at the specified position.  
-               An index lower than 0 is invalid and will be ignored.  
   
-@param weak    Whether or not to store the new element using a weak  
-               reference.  
   
 @throws NS_ERROR_FAILURE when a weak reference is requested,  
                          but the element does not support  

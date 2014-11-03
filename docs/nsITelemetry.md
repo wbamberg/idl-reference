@@ -19,16 +19,6 @@ in Histograms.json.
    
 Create and return a histogram.  Parameters:  
   
-@param name Unique histogram name  
-@param expiration Expiration version  
-@param min - Minimal bucket size  
-@param max - Maximum bucket size  
-@param bucket_count - number of buckets in the histogram.  
-@param type - HISTOGRAM_EXPONENTIAL, HISTOGRAM_LINEAR, HISTOGRAM_BOOLEAN or HISTOGRAM_COUNT  
-The returned object has the following functions:  
-  add(int) - Adds an int value to the appropriate bucket  
-  snapshot() - Returns a snapshot of the histogram with the same data fields as in histogramSnapshots()  
-  clear() - Zeros out the histogram's buckets and sum  
   
 
 #### Parameters ####
@@ -82,9 +72,6 @@ The returned object has the following functions:
 Create a histogram using the current state of an existing histogram.  The  
 existing histogram must be registered in TelemetryHistograms.h.  
   
-@param name Unique histogram name  
-@param existing_name Existing histogram name  
-The returned object has the same functions as a histogram returned from newHistogram.  
   
 
 #### Parameters ####
@@ -110,7 +97,6 @@ The returned object has the same functions as a histogram returned from newHisto
   
 Same as newHistogram above, but for histograms registered in TelemetryHistograms.h.  
   
-@param id - unique identifier from TelemetryHistograms.h  
   
 
 #### Parameters ####
@@ -131,13 +117,6 @@ Same as newHistogram above, but for histograms registered in TelemetryHistograms
 Register a histogram for an addon.  Throws an error if the  
 histogram name has been registered previously.  
   
-@param addon_id - Unique ID of the addon  
-@param name - Unique histogram name  
-@param min - Minimal bucket size  
-@param max - Maximum bucket size  
-@param bucket_count - number of buckets in the histogram  
-@param histogram_type - HISTOGRAM_EXPONENTIAL, HISTOGRAM_LINEAR,  
-       HISTOGRAM_BOOLEAN or HISTOGRAM_COUNT  
   
 
 #### Parameters ####
@@ -189,8 +168,6 @@ Return a histogram previously registered via
 registerAddonHistogram.  Throws an error if the id/name combo has  
 not been registered via registerAddonHistogram.  
   
-@param addon_id - Unique ID of the addon  
-@param name - Registered histogram name  
   
 The returned object has the same functions as a histogram returned  
 from newHistogram.  
@@ -218,7 +195,6 @@ from newHistogram.
   
 Delete all histograms associated with the given addon id.  
   
-@param addon_id - Unique ID of the addon  
   
 
 #### Parameters ####

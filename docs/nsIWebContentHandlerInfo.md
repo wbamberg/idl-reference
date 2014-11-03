@@ -12,10 +12,6 @@ layout: default
 ### getHandlerURI(uri) ###
    
 Gets the service URL Spec, with the loading document URI encoded in it.  
-@param   uri  
-         The URI of the document being loaded  
-@returns The URI of the service with the loading document URI encoded in   
-         it.  
   
 
 #### Parameters ####

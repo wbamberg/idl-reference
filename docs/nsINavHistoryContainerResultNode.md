@@ -20,13 +20,7 @@ these items.
   
 Get the index of a direct child in this container.  
   
-@param aNode  
-       a result node.  
   
-@return aNode's index in this container.  
-@throws NS_ERROR_NOT_AVAILABLE if containerOpen is false.  
-@throws NS_ERROR_INVALID_ARG if aNode isn't a direct child of this  
-container.  
   
 
 #### Parameters ####
@@ -60,18 +54,8 @@ container.
 Look for a node in the container by some of its details.  Does not search  
 closed containers.  
   
-@param aURI  
-       the node's uri attribute value  
-@param aTime  
-       the node's time attribute value.  
-@param aItemId  
-       the node's itemId attribute value.  
-@param aRecursive  
-       whether or not to search recursively.  
   
 @throws NS_ERROR_NOT_AVAILABLE if this container is closed.  
-@return a result node that matches the given details if any, null  
-        otherwise.  
   
 
 #### Parameters ####

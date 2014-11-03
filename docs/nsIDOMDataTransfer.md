@@ -49,10 +49,6 @@ The coordinates specify the offset into the image where the mouse cursor
 should be. To center the image for instance, use values that are half the  
 width and height.  
   
-@param image a node to use   
-@param x the horizontal offset  
-@param y the vertical offset  
-@throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
   
 
 #### Parameters ####
@@ -100,9 +96,6 @@ reducing the itemCount by one.
 If format is empty, then the data associated with all formats is removed.  
 If the format is not found, then this method has no effect.  
   
-@param format the format to remove  
-@throws NS_ERROR_DOM_INDEX_SIZE_ERR if index is greater or equal than itemCount  
-@throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
   
 
 #### Parameters ####
@@ -127,9 +120,6 @@ Retrieve the data associated with the given format for an item at the
 specified index, or null if it does not exist. The index should be in the  
 range from zero to itemCount - 1.  
   
-@param format the format of the data to look up  
-@returns the data of the given format, or null if it doesn't exist.  
-@throws NS_ERROR_DOM_INDEX_SIZE_ERR if index is greater or equal than itemCount  
   
 
 #### Parameters ####

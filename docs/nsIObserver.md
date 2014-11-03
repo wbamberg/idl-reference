@@ -26,10 +26,6 @@ responsible for filtering.
 You should not modify, add, remove, or enumerate   
 notifications in the implemention of observe.   
   
-@param aSubject : Notification specific interface pointer.  
-@param aTopic   : The notification topic or subject.  
-@param aData    : Notification specific wide string.  
-                   subject event.  
   
 
 #### Parameters ####

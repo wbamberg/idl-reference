@@ -62,11 +62,6 @@ Checks whether the zipfile contains an entry specified by entryName.
   
 Returns a string enumerator containing the matching entry names.  
   
-@param aPattern  
-  A regular expression used to find matching entries in the zip file.  
-  Set this parameter to null (javascript) or EmptyCString() (c++) or "*"   
-  to get all entries; otherwise, use the  
-  following syntax:  
   
   o * matches anything  
   o ? matches one character  
@@ -122,7 +117,6 @@ Returns a string enumerator containing the matching entry names.
   
 Returns an input stream containing the contents of the specified zip  
 entry.  
-@param zipEntry the name of the entry to open the stream from  
   
 
 #### Parameters ####
@@ -142,8 +136,6 @@ entry.
 Returns an input stream containing the contents of the specified zip  
 entry. If the entry refers to a directory (ends with '/'), a directory stream   
 is opened, otherwise the contents of the file entry is returned.  
-@param aJarSpec the Spec of the URI for the JAR (only used for directory streams)  
-@param zipEntry the name of the entry to open the stream from  
   
 
 #### Parameters ####

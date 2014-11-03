@@ -22,7 +22,6 @@ Get the list of the "output" data flavors (mime types as nsISupportsCString),
 in otherwords, the flavors that this converter can convert "to" (the   
 outgoing data to the converter).  
   
-@param  aDataFlavorList fills list with supported flavors  
   
 
 #### Parameters ####
@@ -41,8 +40,6 @@ outgoing data to the converter).
   
 Determines whether a conversion from one flavor to another is supported  
   
-@param  aFromFormatConverter flavor to convert from  
-@param  aFromFormatConverter flavor to convert to  
   
 
 #### Parameters ####
@@ -67,9 +64,6 @@ Determines whether a conversion from one flavor to another is supported
   
 Converts from one flavor to another.  
   
-@param  aFromFormatConverter flavor to convert from  
-@param  aFromFormatConverter flavor to convert to (destination own the memory)  
-@returns returns NS_OK if it was converted  
   
 
 #### Parameters ####

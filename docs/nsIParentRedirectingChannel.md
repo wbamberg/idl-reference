@@ -18,13 +18,6 @@ Called when the channel got a response that redirects it to a different
 URI.  The implementation is responsible for calling the redirect observers  
 on the child process and provide the decision result to the callback.  
   
-@param newChannelId  
-   id of the redirect channel obtained from nsIRedirectChannelRegistrar.  
-@param newURI  
-   the URI we redirect to  
-@param callback  
-   redirect result callback, usage is compatible with how  
-   nsIChannelEventSink defines it  
   
 
 #### Parameters ####

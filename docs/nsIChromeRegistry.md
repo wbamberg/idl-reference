@@ -25,7 +25,6 @@ where "ext" is:
   "css" for a "skin" package, and  
   "dtd" for a "locale" package.  
   
-@param aChromeURL the URL that is to be converted.  
   
 
 #### Parameters ####

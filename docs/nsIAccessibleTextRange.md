@@ -21,8 +21,6 @@ Return true if this range has the same end points of the given range.
   
 Compare this and given ranges end points.  
   
-@return -1/0/1 if this range end point is before/equal/after the given  
-         range end point.  
   
 
 #### Returns ####

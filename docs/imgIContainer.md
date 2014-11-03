@@ -27,11 +27,6 @@ algorithm.
 For best results the size returned by this method should not be cached. It  
 can change over time due to changes in the internal state of the image.  
   
-@param aDest The size of the destination rect into which this image will be  
-             drawn, in device pixels.  
-@param aWhichFrame Frame specifier of the FRAME_* variety.  
-@param aFilter The filter to be used if we're scaling the image.  
-@param aFlags Flags of the FLAG_* variety  
   
 
 #### Parameters ####
@@ -76,8 +71,6 @@ Get a surface for the given frame. This may be a platform-native,
 optimized surface, so you cannot inspect its pixel data. If you  
 need that, use SourceSurface::GetDataSurface.  
   
-@param aWhichFrame Frame specifier of the FRAME_* variety.  
-@param aFlags Flags of the FLAG_* variety  
   
 
 #### Parameters ####
@@ -103,7 +96,6 @@ need that, use SourceSurface::GetDataSurface.
 Whether the given frame is opaque; that is, needs the background painted  
 behind it.  
   
-@param aWhichFrame Frame specifier of the FRAME_* variety.  
   
 
 #### Parameters ####
@@ -201,31 +193,6 @@ copies of the image, which looks like this:
              +---------------------------------------------+  
   
   
-@param aContext The Thebes context to draw the image to.  
-@param aSize The size to which the image should be scaled before drawing.  
-             This requirement may be satisfied using HQ scaled frames,  
-             selecting from different resolution layers, drawing at a  
-             higher DPI, or just performing additional scaling on the  
-             graphics context. Callers can use optimalImageSizeForDest()  
-             to determine the best choice for this parameter if they have  
-             no special size requirements.  
-@param aRegion The region in tiled image space which will be drawn onto the  
-               graphics context. aRegion is in the coordinate space of the  
-               image after it has been scaled to aSize - that is, the image  
-               is scaled first, and then aRegion is applied. When aFlags  
-               includes FLAG_CLAMP, the image will be extended to this area  
-               by clamping image sample coordinates. Otherwise, the image  
-               will be automatically tiled as necessary. aRegion can also  
-               optionally contain a second region which restricts the set of  
-               pixels we're allowed to sample from when drawing; this is  
-               only of use to callers which need to draw with pixel snapping.  
-@param aWhichFrame Frame specifier of the FRAME_* variety.  
-@param aFilter The filter to be used if we're scaling the image.  
-@param aSVGContext If specified, SVG-related rendering context, such as  
-                   overridden attributes on the image document's root <svg>  
-                   node, and the size of the viewport that the full image  
-                   would occupy. Ignored for raster images.  
-@param aFlags Flags of the FLAG_* variety  
   
 
 #### Parameters ####

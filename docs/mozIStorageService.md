@@ -32,19 +32,7 @@ SAME NAME for the file each time, including case. The sqlite code uses
 a simple string compare to see if there is already a connection. Opening  
 a connection to "Foo.sqlite" and "foo.sqlite" will CORRUPT YOUR DATABASE.  
   
-@param aDatabaseStore Either a nsIFile representing the file that contains  
-the database or a special string to open a special database. The special  
-string may be:  
-- "memory" to open an in-memory database.  
   
-@param aOptions A set of options (may be null). Options may contain:  
-- bool shared (defaults to |false|).  
-  -- If |true|, opens the database with a shared-cache. The  
-    shared-cache mode is more memory-efficient when many  
-    connections to the same database are expected, though, the  
-    connections will contend the cache resource. In any cases  
-    where performance matter, working without a shared-cache will  
-    improve concurrency.  @see openUnsharedDatabase  
   
 - int growthIncrement (defaults to none).  
   -- Set the growth increment for the main database.  This hints SQLite to  
@@ -52,12 +40,6 @@ string may be:
      filesystem fragmentation on large databases.  
      @see mozIStorageConnection::setGrowthIncrement  
   
-@param aCallback A callback that will receive the result of the operation.  
- In case of error, it may receive as status:  
- - NS_ERROR_OUT_OF_MEMORY if allocating a new storage object fails.  
- - NS_ERROR_FILE_CORRUPTED if the database file is corrupted.  
- In case of success, it receives as argument the new database  
- connection, as an instance of |mozIStorageAsyncConnection|.  
   
 @throws NS_ERROR_INVALID_ARG if |aDatabaseStore| is neither a file nor  
         one of the special strings understood by this method, or if one of  
@@ -109,15 +91,11 @@ string may be:
   
 Get a connection to a named special database storage.  
   
-@param aStorageKey a string key identifying the type of storage  
-requested.  Valid values include: "memory".  
   
 @see openDatabase for restrictions on how database connections may be  
 used. For the profile database, you should only access it from the main  
 thread since other callers may also have connections.  
   
-@returns a new mozIStorageConnection for the requested  
-storage database.  
   
 @throws NS_ERROR_INVALID_ARG if aStorageKey is invalid.  
   
@@ -168,10 +146,7 @@ a connection to "Foo.sqlite" and "foo.sqlite" will CORRUPT YOUR DATABASE.
 The connection object returned by this function is not threadsafe. You must  
 use it only from the thread you created it from.  
   
-@param aDatabaseFile  
-       A nsIFile that represents the database that is to be opened..  
   
-@returns a mozIStorageConnection for the requested database file.  
   
 @throws NS_ERROR_OUT_OF_MEMORY  
         If allocating a new storage object fails.  
@@ -224,10 +199,7 @@ a connection to "Foo.sqlite" and "foo.sqlite" will CORRUPT YOUR DATABASE.
 The connection object returned by this function is not threadsafe. You must  
 use it only from the thread you created it from.  
   
-@param aDatabaseFile  
-       A nsIFile that represents the database that is to be opened.  
   
-@returns a mozIStorageConnection for the requested database file.  
   
 @throws NS_ERROR_OUT_OF_MEMORY  
         If allocating a new storage object fails.  
@@ -264,8 +236,6 @@ See openDatabase(). Exactly the same only initialized with a file URL.
 Custom parameters can be passed to SQLite and VFS implementations through  
 the query part of the URL.  
   
-@param aURL  
-       A nsIFileURL that represents the database that is to be opened.  
   
 
 #### Parameters ####
@@ -287,13 +257,6 @@ the specified file name.  If the parent directory is not specified, it
 places the backup in the same directory as the current file.  This function  
 ensures that the file being created is unique.  
   
-@param aDBFile  
-       The database file that will be backed up.  
-@param aBackupFileName  
-       The name of the new backup file to create.  
-@param [optional] aBackupParentDirectory  
-       The directory you'd like the backup file to be placed.  
-@return The nsIFile representing the backup file.  
   
 
 #### Parameters ####

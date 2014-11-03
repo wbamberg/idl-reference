@@ -55,10 +55,6 @@ Gets whether a name and value pair exists in the form history.
   
 Removes entries that were created between the specified times.  
   
-@param aBeginTime  
-       The beginning of the timeframe, in microseconds  
-@param aEndTime  
-       The end of the timeframe, in microseconds  
   
 
 #### Parameters ####

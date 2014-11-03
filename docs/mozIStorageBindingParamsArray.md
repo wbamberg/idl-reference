@@ -14,8 +14,6 @@ layout: default
 Creates a new mozIStorageBindingParams object that can be added to this  
 array.  
   
-@return a mozIStorageBindingParams object that can be used to specify  
-        parameters that need to be bound.  
   
 
 #### Returns ####
@@ -34,8 +32,6 @@ array.
   
 Adds the parameters to the end of this array.  
   
-@param aParameters  
-       The parameters to add to this array.  
   
 
 #### Parameters ####

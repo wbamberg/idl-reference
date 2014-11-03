@@ -22,8 +22,6 @@ MIMEInfo objects are generally retrieved from the MIME Service
   
 Gives you an array of file types associated with this type.  
   
-@return Number of elements in the array.  
-@return Array of extensions.  
   
 
 #### Returns ####
@@ -47,7 +45,6 @@ Set File Extensions. Input is a comma delimited list of extensions.
 Returns whether or not the given extension is  
 associated with this MIME info.  
   
-@return TRUE if the association exists.   
   
 
 #### Returns ####
@@ -71,7 +68,6 @@ Append a given extension to the set of extensions
 Returns whether or not these two nsIMIMEInfos are logically  
 equivalent.  
   
-@returns PR_TRUE if the two are considered equal  
   
 
 #### Returns ####
@@ -91,7 +87,6 @@ Launches the application with the specified file, in a way that
 depends on the value of preferredAction. preferredAction must be  
 useHelperApp or useSystemDefault.  
   
-@param aFile The file to launch this application with.  
   
 @throw NS_ERROR_INVALID_ARG if action is not valid for this function.  
 Other exceptions may be thrown.  

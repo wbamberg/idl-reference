@@ -19,11 +19,6 @@ promptPasswordAsync returns.
   
 Authentication information is available.  
   
-@param aContext  
-       The context as passed to promptPasswordAsync  
-@param aAuthInfo  
-       Authentication information. Must be the same object that was passed  
-       to promptPasswordAsync.  
   
 @note  Any exceptions thrown from this method should be ignored.  
   
@@ -51,12 +46,6 @@ Authentication information is available.
   
 Notification that the prompt was cancelled.  
   
-@param aContext  
-       The context that was passed to promptPasswordAsync.  
-@param userCancel  
-       If false, this prompt was cancelled by calling the  
-       the cancel method on the nsICancelable; otherwise,  
-       it was cancelled by the user.  
   
 
 #### Parameters ####

@@ -29,8 +29,6 @@ sanitization (see bug #284086)
    
 Deletes privacy sensitive data according to user preferences  
   
-@param aParentWindow an optionally null window which is the parent of the   
-       sanitization dialog  
   
   
 

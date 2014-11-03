@@ -16,9 +16,6 @@ of updates previously performed as well as the current active update.
 ### getUpdateAt(index) ###
   
 Gets the update at the specified index  
-@param   index  
-         The index within the updates array  
-@returns The nsIUpdate object at the specified index  
   
 
 #### Parameters ####

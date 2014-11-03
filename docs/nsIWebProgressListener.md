@@ -21,23 +21,6 @@ relationship of nsIWebProgress instances.
 Notification indicating the state has changed for one of the requests  
 associated with aWebProgress.  
   
-@param aWebProgress  
-       The nsIWebProgress instance that fired the notification  
-@param aRequest  
-       The nsIRequest that has changed state.  
-@param aStateFlags  
-       Flags indicating the new state.  This value is a combination of one  
-       of the State Transition Flags and one or more of the State Type  
-       Flags defined above.  Any undefined bits are reserved for future  
-       use.  
-@param aStatus  
-       Error status code associated with the state change.  This parameter  
-       should be ignored unless aStateFlags includes the STATE_STOP bit.  
-       The status code indicates success or failure of the request  
-       associated with the state change.  NOTE: aStatus may be a success  
-       code even for server generated errors, such as the HTTP 404 error.  
-       In such cases, the request itself should be queried for extended  
-       error information (e.g., for HTTP requests see nsIHttpChannel).  
   
 
 #### Parameters ####
@@ -87,18 +70,6 @@ requests in aWebProgress complete (corresponding to onStateChange being
 called with aStateFlags including the STATE_STOP and STATE_IS_WINDOW  
 flags).  
   
-@param aWebProgress  
-       The nsIWebProgress instance that fired the notification.  
-@param aRequest  
-       The nsIRequest that has new progress.  
-@param aCurSelfProgress  
-       The current progress for aRequest.  
-@param aMaxSelfProgress  
-       The maximum progress for aRequest.  
-@param aCurTotalProgress  
-       The current progress for all requests associated with aWebProgress.  
-@param aMaxTotalProgress  
-       The total progress for all requests associated with aWebProgress.  
   
 NOTE: If any progress value is unknown, or if its value would exceed the  
 maximum value of type long, then its value is replaced with -1.  
@@ -159,15 +130,6 @@ window might send progress and status messages for the new site, but it
 will not send the onLocationChange until we are sure that we are loading  
 this new page here.  
   
-@param aWebProgress  
-       The nsIWebProgress instance that fired the notification.  
-@param aRequest  
-       The associated nsIRequest.  This may be null in some cases.  
-@param aLocation  
-       The URI of the location that is being loaded.  
-@param aFlags  
-       This is a value which explains the situation or the reason why  
-       the location has changed.  
   
 
 #### Parameters ####
@@ -207,17 +169,6 @@ Notification that the status of a request has changed.  The status message
 is intended to be displayed to the user (e.g., in the status bar of the  
 browser).  
   
-@param aWebProgress  
-       The nsIWebProgress instance that fired the notification.  
-@param aRequest  
-       The nsIRequest that has new status.  
-@param aStatus  
-       This value is not an error code.  Instead, it is a numeric value  
-       that indicates the current status of the request.  This interface  
-       does not define the set of possible status codes.  NOTE: Some  
-       status values are defined by nsITransport and nsISocketTransport.  
-@param aMessage  
-       Localized text corresponding to aStatus.  
   
 
 #### Parameters ####
@@ -260,14 +211,6 @@ security transitions (eg HTTP -> HTTPS, HTTPS -> HTTP, FOO -> HTTPS) and
 after document load completion.  It might also be called if an error  
 occurs during network loading.  
   
-@param aWebProgress  
-       The nsIWebProgress instance that fired the notification.  
-@param aRequest  
-       The nsIRequest that has new security state.  
-@param aState  
-       A value composed of the Security State Flags and the Security  
-       Strength Flags listed above.  Any undefined bits are reserved for  
-       future use.  
   
 NOTE: These notifications will only occur if a security package is  
 installed.  

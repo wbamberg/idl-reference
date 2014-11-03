@@ -24,8 +24,6 @@ Possible states are:
  - "locked-background" - at least one window holds the wake lock,  
    but all of them are hidden.  
   
-@param aTopic The resource name related to the wake lock.  
-@param aState The wake lock state  
   
 
 #### Parameters ####

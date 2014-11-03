@@ -13,19 +13,6 @@ layout: default
   
 Creates a transport for a specified host and port.  
   
-@param aSocketTypes  
-       array of socket type strings.  null if using default socket type.  
-@param aTypeCount  
-       specifies length of aSocketTypes.  
-@param aHost  
-       specifies the target hostname or IP address literal of the peer  
-       for this socket.  
-@param aPort  
-       specifies the target port of the peer for this socket.  
-@param aProxyInfo  
-       specifies the transport-layer proxy type to use.  null if no  
-       proxy.  used for communicating information about proxies like  
-       SOCKS (which are transparent to upper protocols).  
   
 @see nsIProxiedProtocolHandler  
 @see nsIProtocolProxyService::GetProxyInfo  
@@ -101,9 +88,6 @@ this returns NS_ERROR_CONNECTION_REFUSED. (POSIX specifies
 ECONNREFUSED when "the target address was not listening for  
 connections", and this is what Linux returns.)  
   
-@param aPath  
-       The file name of the Unix domain socket to which we should  
-       connect.  
   
 
 #### Parameters ####
@@ -127,11 +111,6 @@ This will fail with the error code NS_ERROR_NOT_AVAILABLE if the maximum
 number of sockets is already reached.  
 In this case, the notifyWhenCanAttachSocket method should be used.  
   
-@param aFd  
-       Open file descriptor of the socket to control.  
-@param aHandler  
-       Socket handler that will receive notifications when the socket is  
-       ready or detached.  
   
 NOTE: this function may only be called from an event dispatch on the  
       socket thread.  
@@ -163,9 +142,6 @@ notified when the number of sockets becomes less than the limit.  the
 notification is asynchronous, delivered via the given nsIRunnable  
 instance on the socket transport thread.  
   
-@param aEvent  
-       Event that will receive the notification when a new socket can  
-       be attached  
   
 NOTE: this function may only be called from an event dispatch on the  
       socket thread.  

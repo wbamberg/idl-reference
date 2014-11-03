@@ -24,16 +24,7 @@ This interface is accessible from javascript.
 Called to obtain handle to the history entry at a  
 given index.  
   
-@param index             The index value whose entry is requested.  
-                         The oldest entry is located at index == 0.  
-@param modifyIndex       A boolean flag that indicates if the current  
-                         index of session history should be modified   
-                         to the parameter index.  
   
-@return                  <code>NS_OK</code> history entry for   
-                         the index is obtained successfully.  
-                         <code>NS_ERROR_FAILURE</code> Error in obtaining  
-                         history entry for the given index.  
   
 
 #### Parameters ####
@@ -79,13 +70,6 @@ reasons. For example to  control memory usage of the browser, to
 prevent users from loading documents from history, to erase evidence of  
 prior page loads etc...  
   
-@param numEntries        The number of toplevel documents to be  
-                         purged from history. During purge operation,  
-                         the latest documents are maintained and older   
-                         'numEntries' documents are removed from history.  
-@throws                  <code>NS_SUCCESS_LOSS_OF_INSIGNIFICANT_DATA</code> Purge was vetod.  
-@throws                  <code>NS_ERROR_FAILURE</code> numEntries is  
-                         invalid or out of bounds with the size of history.  
                            
   
 
@@ -112,8 +96,6 @@ prior page loads etc...
 Called to register a listener for the session history component.  
 Listeners are notified when pages are loaded or purged from history.  
   
-@param aListener         Listener object to be notified for all  
-                         page loads that initiate in session history.  
   
 @note                    A listener object must implement   
                          nsISHistoryListener and nsSupportsWeakReference  
@@ -140,8 +122,6 @@ Listeners are notified when pages are loaded or purged from history.
 Called to remove a listener for the session history component.  
 Listeners are notified when pages are loaded from history.  
   
-@param aListener         Listener object to be removed from   
-                         session history.  
   
 @note                    A listener object must implement   
                          nsISHistoryListener and nsSupportsWeakReference  
@@ -168,12 +148,7 @@ Listeners are notified when pages are loaded from history.
   
 Called to obtain the index to a given history entry.  
   
-@param aEntry            The entry to obtain the index of.  
   
-@return                  <code>NS_OK</code> index for the history entry  
-                         is obtained successfully.  
-                         <code>NS_ERROR_FAILURE</code> Error in obtaining  
-                         index for the given history entry.  
   
 
 #### Parameters ####

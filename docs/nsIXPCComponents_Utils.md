@@ -30,10 +30,6 @@ Returns true if the js file located at 'registryLocation' location has
 been loaded previously via the import method above. Returns false  
 otherwise.  
   
-@param resourceURI A resource:// URI string representing the location of  
-       the js file to be checked if it is already loaded or not.  
-@returns boolean, true if the js file has been loaded via import. false  
-         otherwise  
   
 
 #### Parameters ####
@@ -96,9 +92,6 @@ garbage collector and the cycle collector.
 This should only be used to write tests of the interaction of  
 the GC and CC with weak maps.  
   
-@param aMap weak map or other JavaScript value  
-@returns If aMap is a weak map object, return the keys of the weak  
-map as an array.  Otherwise, return undefined.  
   
 
 #### Parameters ####

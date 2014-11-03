@@ -53,14 +53,6 @@ Return array of ranges intersecting with the given DOM interval.
 Scrolls a region of the selection, so that it is visible in  
 the scrolled view.  
   
-@param aRegion - the region inside the selection to scroll into view  
-                 (see selection region constants defined in  
-                  nsISelectionController).  
-@param aIsSynchronous - when true, scrolls the selection into view  
-                        before returning. If false, posts a request which  
-                        is processed at some point after the method returns.  
-@param aVPercent - how to align the frame vertically.  
-@param aHPercent - how to align the frame horizontally.  
   
 
 #### Parameters ####
@@ -102,16 +94,6 @@ the scrolled view.
 Scrolls a region of the selection, so that it is visible in  
 the scrolled view.  
   
-@param aRegion - the region inside the selection to scroll into view  
-                 (see selection region constants defined in  
-                  nsISelectionController).  
-@param aIsSynchronous - when true, scrolls the selection into view  
-                        before returning. If false, posts a request which  
-                        is processed at some point after the method returns.  
-@param aVertical - how to align the frame vertically and when.  
-                   See nsIPresShell.h:ScrollAxis for details.  
-@param aHorizontal - how to align the frame horizontally and when.  
-                   See nsIPresShell.h:ScrollAxis for details.  
   
 
 #### Parameters ####
@@ -153,8 +135,6 @@ the scrolled view.
 ### selectionLanguageChange(langRTL) ###
   
 Modifies the cursor Bidi level after a change in keyboard direction  
-@param langRTL is PR_TRUE if the new language is right-to-left or  
-               PR_FALSE if the new language is left-to-right.  
   
 
 #### Parameters ####

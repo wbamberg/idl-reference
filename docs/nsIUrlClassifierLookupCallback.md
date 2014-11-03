@@ -19,11 +19,6 @@ may need to expand using an nsIUrlClassifierCompleter.
   
 The lookup process is complete.  
   
-@param results  
-       If this parameter is null, there were no results found.  
-       If not, it contains an array of nsUrlClassifierEntry objects  
-       with possible matches.  The callee is responsible for freeing  
-       this array.  
   
 
 #### Parameters ####

@@ -34,8 +34,6 @@ must be nonempty.
 Retrieves a ACString representation of the MIME type  
 associated with this file extension.  
   
-@param  A file extension (excluding the dot ('.')).  
-@return The MIME type, if any.  
   
 
 #### Parameters ####
@@ -68,8 +66,6 @@ associated with this URI. The association is purely
 file extension to MIME type based. No attempt to determine  
 the type via server headers or byte scanning is made.  
   
-@param  The URI the user wants MIME info on.  
-@return The MIME type, if any.  
   
 
 #### Parameters ####
@@ -102,8 +98,6 @@ the type via server headers or byte scanning is made.
 Given a Type/Extension combination, returns the default extension  
 for this type. This may be identical to the passed-in extension.  
   
-@param aMIMEType The Type to get information on. Must not be empty.  
-@param aFileExt  File Extension. Can be empty.  
   
 
 #### Parameters ####

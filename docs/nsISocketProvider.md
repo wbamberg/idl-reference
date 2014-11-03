@@ -16,23 +16,6 @@ nsISocketProvider
   
 newSocket  
   
-@param aFamily  
-       The address family for this socket (PR_AF_INET or PR_AF_INET6).  
-@param aHost  
-       The hostname for this connection.  
-@param aPort  
-       The port for this connection.  
-@param aProxyHost  
-       If non-null, the proxy hostname for this connection.  
-@param aProxyPort  
-       The proxy port for this connection.  
-@param aFlags  
-       Control flags that govern this connection (see below.)  
-@param aFileDesc  
-       The resulting PRFileDesc.  
-@param aSecurityInfo  
-       Any security info that should be associated with aFileDesc.  This  
-       object typically implements nsITransportSecurityInfo.  
   
 
 #### Parameters ####

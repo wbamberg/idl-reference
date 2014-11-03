@@ -25,10 +25,6 @@ onSocketAccepted
   
 This method is called when a client connection is accepted.  
   
-@param aServ  
-       The server socket.  
-@param aTransport  
-       The connected socket transport.  
   
 
 #### Parameters ####
@@ -56,12 +52,6 @@ onStopListening
 This method is called when the listening socket stops for some reason.  
 The server socket is effectively dead after this notification.  
   
-@param aServ  
-       The server socket.  
-@param aStatus  
-       The reason why the server socket stopped listening.  If the  
-       server socket was manually closed, then this value will be  
-       NS_BINDING_ABORTED.  
   
 
 #### Parameters ####

@@ -14,10 +14,6 @@ layout: default
 Initialize the file picker widget.  The file picker is not valid until this  
 method is called.  
   
-@param      parent   nsIDOMWindow parent.  This dialog will be dependent  
-                     on this parent. parent must be non-null.  
-@param      title    The title for the file widget  
-@param      mode     load, save, or get folder  
   
   
 
@@ -50,7 +46,6 @@ method is called.
   
 Append to the  filter list with things from the predefined list  
   
-@param      filters  mask of filters i.e. (filterAll | filterHTML)  
   
   
 
@@ -70,8 +65,6 @@ Append to the  filter list with things from the predefined list
   
 Add a filter  
   
-@param      title    name of the filter  
-@param      filter   extensions to filter -- semicolon and space separated  
   
   
 
@@ -97,7 +90,6 @@ Add a filter
   
 Show File Dialog. The dialog is displayed modally.  
   
-@return returnOK if the user selects OK, returnCancel if the user selects cancel  
   
   
 

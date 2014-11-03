@@ -17,7 +17,6 @@ interface.
 
 ### getNetAddr() ###
   
-@return the underlying NetAddr struct.  
   
 
 #### Returns ####

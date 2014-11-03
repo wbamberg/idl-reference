@@ -24,7 +24,6 @@ given by the selection.
 If the selection is not collapsed, the selection is deleted  
 and the insertion takes place at the resulting collapsed selection.  
   
-@param aString   the string to be inserted  
   
 
 #### Parameters ####

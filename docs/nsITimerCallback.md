@@ -11,7 +11,6 @@ layout: default
 
 ### notify(timer) ###
   
-@param aTimer the timer which has expired  
   
 
 #### Parameters ####

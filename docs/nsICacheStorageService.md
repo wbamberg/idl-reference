@@ -22,9 +22,6 @@ prior opening an entry using this memory-only storage.  Result of
 AsyncOpenURI will be a new and empty memory-only entry.  Using  
 OPEN_READONLY open flag has no effect on this behavior.  
   
-@param aLoadContextInfo  
-   Information about the loading context, this focuses the storage JAR and  
-   respects separate storage for private browsing.  
   
 
 #### Parameters ####
@@ -45,9 +42,6 @@ OPEN_READONLY open flag has no effect on this behavior.
 Get storage where entries will be written to disk when not forbidden by  
 response headers.  
   
-@param aLookupAppCache  
-   When set true (for top level document loading channels) app cache will  
-   be first to check on to find entries in.  
   
 
 #### Parameters ####
@@ -68,11 +62,6 @@ response headers.
 Get storage for a specified application cache obtained using some different  
 mechanism.  
   
-@param aLoadContextInfo  
-   Mandatory reference to a load context information.  
-@param aApplicationCache  
-   Optional reference to an existing appcache.  When left null, this will  
-   work with offline cache as a whole.  
   
 
 #### Parameters ####
@@ -109,10 +98,6 @@ saving memory.
   
 Asynchronously determine how many bytes of the disk space the cache takes.  
 @see nsICacheStorageConsumptionObserver  
-@param aObserver  
-   A mandatory (weak referred) observer.  Documented at  
-   nsICacheStorageConsumptionObserver.  
-   NOTE: the observer MUST implement nsISupportsWeakReference.  
   
 
 #### Parameters ####

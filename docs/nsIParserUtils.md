@@ -44,9 +44,6 @@ removed as a side effect. Note! If -moz-binding is not present, <style>
 and style="" and SanitizerAllowStyle is specified, the sanitized content  
 may still be XSS dangerous if loaded into a non-Gecko Web engine!  
   
-@param src the HTML source to parse (C++ callers are allowed but not  
-           required to use the same string for the return value.)  
-@param flags sanitization option flags defined above  
   
 
 #### Parameters ####
@@ -72,10 +69,6 @@ may still be XSS dangerous if loaded into a non-Gecko Web engine!
   
 Convert HTML to plain text.  
   
-@param src the HTML source to parse (C++ callers are allowed but not  
-           required to use the same string for the return value.)  
-@param flags conversion option flags defined in nsIDocumentEncoder  
-@param wrapCol number of characters per line; 0 for no auto-wrapping  
   
 
 #### Parameters ####
@@ -107,11 +100,6 @@ Convert HTML to plain text.
   
 Parses markup into a sanitized document fragment.  
   
-@param fragment the input markup  
-@param flags sanitization option flags defined above  
-@param isXML true if |fragment| is XML and false if HTML  
-@param baseURI the base URL for this fragment  
-@param element the context node for the fragment parsing algorithm  
   
 
 #### Parameters ####

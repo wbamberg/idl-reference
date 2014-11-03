@@ -27,19 +27,8 @@ defines the lifetime of the application. If there are no windows open
 and no outstanding calls to enterLastWindowClosingSurvivalArea this  
 method will exit immediately.  
   
-@returnCode NS_SUCCESS_RESTART_APP  
-            This return code indicates that the application should be  
-            restarted because quit was called with the eRestart flag.  
   
-@returnCode NS_SUCCESS_RESTART_METRO_APP  
-            This return code indicates that the application should be  
-            restarted in metro because quit was called with the  
-            eRestartTouchEnviroment flag.  
   
-@returnCode NS_SUCCESS_RESTART_APP_NOT_SAME_PROFILE  
-            This return code indicates that the application should be  
-            restarted without necessarily using the same profile because  
-            quit was called with the eRestartNotSameProfile flag.  
   
 
 #### Returns ####
@@ -69,9 +58,6 @@ these.
 ### restartInSafeMode(aQuitMode) ###
   
 Restart the application in safe mode  
-@param aQuitMode  
-       This parameter modifies how the app is shutdown.  
-@see nsIAppStartup::quit  
   
 
 #### Parameters ####
@@ -92,7 +78,6 @@ Restart the application in safe mode
 If the last startup crashed then increment a counter.  
 Set a flag so on next startup we can detect whether TrackStartupCrashEnd  
 was called (and therefore the application crashed).  
-@return whether safe mode is necessary  
   
 
 #### Returns ####
@@ -116,9 +101,6 @@ tracking past crashes.
   
 Exit the event loop, and shut down the app.  
   
-@param aMode  
-       This parameter modifies how the app is shutdown, and it is  
-       constructed from the constants defined above.  
   
 
 #### Parameters ####

@@ -24,15 +24,6 @@ Perform platform specific operations when a download is done.
   Android:  
     Scan media  
   
-@param aSource  
-       Source URI of the download  
-@param aTarget  
-       Downloaded file  
-@param aContentType  
-       The source's content type  
-@param aIsPrivate  
-       True for private downloads  
-@return none  
   
 
 #### Parameters ####
@@ -82,9 +73,6 @@ Proxy for IInternetSecurityManager::MapUrlToZone().
   
   Windows only.  
   
-@param aURL  
-       URI of the download  
-@return Security Zone corresponding to aURL.  
   
 
 #### Parameters ####

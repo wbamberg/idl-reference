@@ -25,11 +25,6 @@ libraries.
   
 Registers the play preview plugin mode for specific mime type  
   
-@param mimeType: specifies plugin mime type.  
-@param ignoreCTP: if true, the play preview ignores CTP rules, e.g.  
-whitelisted websites, will not notify about plugin  
-presence in the address bar.  
-@param redirectURL: specifies url for the overlay iframe  
   
 
 #### Parameters ####

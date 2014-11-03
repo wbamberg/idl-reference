@@ -17,11 +17,6 @@ nsINetUtil provides various network-related utility methods.
 Parse a content-type header and return the content type and  
 charset (if any).  
   
-@param aTypeHeader the header string to parse  
-@param [out] aCharset the charset parameter specified in the  
-             header, if any.  
-@param [out] aHadCharset whether a charset was explicitly specified.  
-@return the MIME type specified in the header, in lower-case.  
   
 
 #### Parameters ####
@@ -64,11 +59,7 @@ charset (if any).
   
 Test whether the given URI's handler has the given protocol flags.  
   
-@param aURI the URI in question  
-@param aFlags the flags we're testing for.  
   
-@return whether the protocol handler for aURI has all the flags  
-        in aFlags.  
   
 
 #### Parameters ####
@@ -107,11 +98,7 @@ Test whether the protocol handler for this URI or that for any of
 its inner URIs has the given protocol flags.  This will QI aURI to  
 nsINestedURI and walk the nested URI chain.  
   
-@param aURI the URI in question  
-@param aFlags the flags we're testing for.  
   
-@return whether any of the protocol handlers involved have all the flags  
-        in aFlags.  
   
 
 #### Parameters ####
@@ -168,10 +155,7 @@ escape a string with %00-style escaping
   
 %XX-Escape invalid chars in a URL segment.   
   
-@param aStr the URL to be escaped  
-@param aFlags the URL segment type flags  
   
-@return the escaped string (the string itself if escaping did not happen)  
   
   
 
@@ -208,11 +192,6 @@ escape a string with %00-style escaping
   
 Expands URL escape sequences  
   
-@param aStr the URL to be unescaped  
-@param aFlags only ESCAPE_URL_ONLY_NONASCII and ESCAPE_URL_SKIP_CONTROL  
-              are recognized.  If |aFlags| is 0 all escape sequences are   
-              unescaped  
-@return unescaped string  
   
 
 #### Parameters ####
@@ -251,23 +230,7 @@ Expands URL escape sequences
 Extract the charset parameter location and value from a content-type  
 header.  
   
-@param aTypeHeader the header string to parse  
-@param [out] aCharset the charset parameter specified in the  
-             header, if any.  
-@param [out] aCharsetStart index of the start of the charset parameter  
-             (the ';' separating it from what came before) in aTypeHeader.  
-             If this function returns false, this argument will still be  
-             set, to the index of the location where a new charset should  
-             be inserted.  
-@param [out] aCharsetEnd index of the end of the charset parameter (the  
-             ';' separating it from what comes after, or the end  
-             of the string) in aTypeHeader.  If this function returns  
-             false, this argument will still be set, to the index of the  
-             location where a new charset should be inserted.  
   
-@return whether a charset parameter was found.  This can be false even in  
-cases when parseContentType would claim to have a charset, if the type  
-that won out does not have a charset parameter specified.  
   
 
 #### Parameters ####

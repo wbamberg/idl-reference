@@ -30,9 +30,6 @@ NSILOCALE_NUMERIC: Numeric, non-monetary formatting.
 NSILOCALE_TIME: Date and time formats.  
 NSILOCALE_MESSAGES: Related to fonts, character encodings etc.  
   
-@param category  
-       The category of interest.  
-@return The locale code to be used for the given category.  
   
 
 #### Parameters ####

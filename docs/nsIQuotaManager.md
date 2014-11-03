@@ -14,10 +14,6 @@ layout: default
 Schedules an asynchronous callback that will return the total amount of  
 disk space being used by storages for the given origin.  
   
-@param aURI  
-       The URI whose usage is being queried.  
-@param aCallback  
-       The callback that will be called when the usage is available.  
   
 
 #### Parameters ####
@@ -53,8 +49,6 @@ a no-op.
 Removes all storages stored for the given URI. The files may not be  
 deleted immediately depending on prohibitive concurrent operations.  
   
-@param aURI  
-       The URI whose storages are to be cleared.  
   
 
 #### Parameters ####

@@ -31,8 +31,6 @@ switches to Desktop mode if in metro mode.
   
 Displays a native Windows 8 toast.  
   
-@param aAppId  Application ID for current application.  
-               If using Metro mode, it can be null string.  
   
 
 #### Parameters ####
@@ -57,14 +55,6 @@ already opened or not.
   
 Pins a new tile to the Windows 8 start screen.  
   
-@param aTileID         An ID which can later be used to remove the tile  
-                       ID must only contain valid filesystem characters  
-@param aShortName      A short name for the tile  
-@param aDiplayName     The name that will be displayed on the tile  
-@param aActivationArgs The arguments to pass to the browser upon   
-                       activation of the tile  
-@param aTileImage An image for the normal tile view  
-@param aSmallTileImage An image for the small tile view  
   
 
 #### Parameters ####
@@ -115,8 +105,6 @@ Pins a new tile to the Windows 8 start screen.
   
 Unpins a tile from the Windows 8 start screen.  
   
-@param aTileID An existing ID which was previously pinned  
-               ID must only contain valid filesystem characters  
   
 
 #### Parameters ####
@@ -136,9 +124,6 @@ Unpins a tile from the Windows 8 start screen.
   
 Determines if a tile is pinned to the Windows 8 start screen.  
   
-@param aTileID An ID which may have been pinned with pinTileAsync  
-               ID must only contain valid filesystem characters  
-@return true if the tile is pinned  
   
 
 #### Parameters ####
@@ -170,10 +155,6 @@ Determines if a tile is pinned to the Windows 8 start screen.
 Settings panel links. addSettingsPanelEntry adds an entry to  
 the settings flyout panel that the user can invoke.  
   
-@param aChromePanelId panel id invoked via nsIBrowserDOMWindow's  
-ShowPanel api. Example: 'prefs-container'  
-@return a unique identifier that will be passed as "data" in the  
-"metro-settings-entry-selected" notification when the entry is clicked  
   
 
 #### Parameters ####
@@ -207,8 +188,6 @@ Change the value of the "switch primary and secondary buttons" preference.
 See the Windows SwapMouseButton API docs for details.  
 Included here for use in automated tests (see bug 839460).  
   
-@param aSwap true to enable the preference, false to disable it.  
-@return original value of the preference.  
   
 
 #### Parameters ####

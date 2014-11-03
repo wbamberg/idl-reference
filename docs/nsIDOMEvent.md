@@ -52,21 +52,6 @@ precedence. If called from a subclass of Event interface only the
 values specified in the initEvent method are modified, all other   
 attributes are left unchanged.  
   
-@param   eventTypeArg Specifies the event type. This type may be   
-                      any event type currently defined in this   
-                      specification or a new event type.. The string   
-                      must be an XML name.  
-                      Any new event type must not begin with any   
-                      upper, lower, or mixed case version of the   
-                      string "DOM". This prefix is reserved for   
-                      future DOM event sets. It is also strongly   
-                      recommended that third parties adding their   
-                      own events use their own prefix to avoid   
-                      confusion and lessen the probability of   
-                      conflicts with other new events.  
-@param   canBubbleArg Specifies whether or not the event can bubble.  
-@param   cancelableArg Specifies whether or not the event's default   
-                       action can be prevented.  
   
 
 #### Parameters ####

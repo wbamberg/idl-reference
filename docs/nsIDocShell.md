@@ -16,18 +16,6 @@ in the object implementing	this interface.  If it can't be loaded here
 however, the URL dispatcher will go through its normal process of content  
 loading.  
   
-@param uri        - The URI to load.  
-@param loadInfo   - This is the extended load info for this load.  This  
-                    most often will be null, but if you need to do   
-                    additional setup for this load you can get a loadInfo  
-                    object by calling createLoadInfo.  Once you have this  
-                    object you can set the needed properties on it and  
-                    then pass it to loadURI.  
-@param aLoadFlags - Flags to modify load behaviour. Flags are defined in  
-                    nsIWebNavigation.  Note that using flags outside  
-                    LOAD_FLAGS_MASK is only allowed if passing in a  
-                    non-null loadInfo.  And even some of those might not  
-                    be allowed.  Use at your own risk.  
   
 
 #### Parameters ####
@@ -70,18 +58,6 @@ stream in the object implementing this interface. If it can't be loaded
 here however, the URL dispatched will go through its normal process of  
 content loading.  
   
-@param aStream         - The input stream that provides access to the data  
-                         to be loaded.  This must be a blocking, threadsafe  
-                         stream implementation.  
-@param aURI            - The URI representing the stream, or null.  
-@param aContentType    - The type (MIME) of data being loaded (empty if unknown).  
-@param aContentCharset - The charset of the data being loaded (empty if unknown).  
-@param aLoadInfo       - This is the extended load info for this load.  This  
-                         most often will be null, but if you need to do   
-                         additional setup for this load you can get a  
-                         loadInfo object by calling createLoadInfo.  Once  
-                         you have this object you can set the needed   
-                         properties on it and then pass it to loadStream.  
   
 
 #### Parameters ####
@@ -133,30 +109,6 @@ Loads the given URI.  This method is identical to loadURI(...) except
 that its parameter list is broken out instead of being packaged inside  
 of an nsIDocShellLoadInfo object...  
   
-@param aURI            - The URI to load.  
-@param aReferrer       - Referring URI  
-@param aOwner          - Owner (security principal)   
-@param aInheritOwner   - Flag indicating whether the owner of the current  
-                         document should be inherited if aOwner is null.  
-@param aStopActiveDoc  - Flag indicating whether loading the current  
-                         document should be stopped.  
-@param aWindowTarget   - Window target for the load.  
-@param aTypeHint       - A hint as to the content-type of the resulting  
-                         data.  May be null or empty if no hint.  
-@param aFileName       - Non-null when the link should be downloaded as  
-the given filename.  
-@param aPostDataStream - Post data stream (if POSTing)  
-@param aHeadersStream  - Stream containing "extra" request headers...  
-@param aLoadFlags      - Flags to modify load behaviour. Flags are defined  
-                         in nsIWebNavigation.  
-@param aSHEntry        - Active Session History entry (if loading from SH)  
-@param aSrcdoc           When INTERNAL_LOAD_FLAGS_IS_SRCDOC is set, the  
-                         contents of this parameter will be loaded instead  
-                         of aURI.  
-@param aSourceDocShell - The source browsing context for the navigation.  
-@param aBaseURI        - The base URI to be used for the load.  Set in  
-                         srcdoc loads as it cannot otherwise be inferred  
-                         in certain situations such as view-source.  
   
 
 #### Parameters ####
@@ -295,8 +247,6 @@ Notify the associated content viewer and all child docshells that they are
 about to be hidden.  If |isUnload| is true, then the document is being  
 unloaded as well.  
   
-@param isUnload if true, fire the unload event in addition to the pagehide  
-                event.  
   
 
 #### Parameters ####
@@ -362,10 +312,6 @@ Display a load error in a frame while keeping that frame's currentURI
 pointing correctly to the page where the error ocurred, rather than to  
 the error document page. You must provide either the aURI or aURL parameter.  
   
-@param  aError         The error code to be displayed  
-@param  aURI           nsIURI of the page where the error happened  
-@param  aURL           wstring of the page where the error happened  
-@param  aFailedChannel The channel related to this error  
   
 
 #### Parameters ####
@@ -403,7 +349,6 @@ the error document page. You must provide either the aURI or aURL parameter.
 Notification that entries have been removed from the beginning of a  
 nsSHistory which has this as its rootDocShell.  
   
-@param numEntries - The number of entries removed  
   
 
 #### Parameters ####
@@ -437,7 +382,6 @@ should be called only during page transitions.
 ### createAboutBlankContentViewer(aPrincipal) ###
   
 Create a new about:blank document and content viewer.  
-@param aPrincipal the principal to use for the new document.  
   
 
 #### Parameters ####
@@ -500,11 +444,6 @@ Remove an observer from the list of parties to be notified about reflows.
   
 Notify all attached observers that a reflow has just occurred.  
   
-@param interruptible if true, the reflow was interruptible.  
-@param start         timestamp when reflow started, in milliseconds since  
-                     navigationStart (accurate to 1/1000 of a ms)  
-@param end           timestamp when reflow ended, in milliseconds since  
-                     navigationStart (accurate to 1/1000 of a ms)  
   
 
 #### Parameters ####
@@ -614,8 +553,6 @@ not be allowed.
 Make this docShell editable, setting a flag that causes  
 an editor to get created, either immediately, or after  
 a url has been loaded.  
-     @param  inWaitForUriLoad    true to wait for a URI before  
-                                 creating the editor.  
   
 
 #### Parameters ####

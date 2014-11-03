@@ -47,14 +47,6 @@ OPEN_UNBUFFERED
   ReadSegments is only gauranteed to be implemented when this flag is  
   NOT specified.  
   
-@param aFlags  
-       optional transport specific flags.  
-@param aSegmentSize  
-       if OPEN_UNBUFFERED is not set, then this parameter specifies the  
-       size of each buffer segment (pass 0 to use default value).  
-@param aSegmentCount  
-       if OPEN_UNBUFFERED is not set, then this parameter specifies the  
-       maximum number of buffer segments (pass 0 to use default value).  
   
 
 #### Parameters ####
@@ -106,14 +98,6 @@ OPEN_UNBUFFERED
   WriteFrom.  WriteSegments and WriteFrom are only guaranteed to be  
   implemented when this flag is NOT specified.  
   
-@param aFlags  
-       optional transport specific flags.  
-@param aSegmentSize  
-       if OPEN_UNBUFFERED is not set, then this parameter specifies the  
-       size of each buffer segment (pass 0 to use default value).  
-@param aSegmentCount  
-       if OPEN_UNBUFFERED is not set, then this parameter specifies the  
-       maximum number of buffer segments (pass 0 to use default value).  
   
 
 #### Parameters ####
@@ -146,8 +130,6 @@ OPEN_UNBUFFERED
   
 Close the transport and any open streams.  
   
-@param aReason  
-       the reason for closing the stream.  
   
 
 #### Parameters ####
@@ -166,12 +148,6 @@ Close the transport and any open streams.
   
 Set the transport event sink.  
   
-@param aSink  
-       receives transport layer notifications  
-@param aEventTarget  
-       indicates the event target to which the notifications should  
-       be delivered.  if NULL, then the notifications may occur on  
-       any thread.  
   
 
 #### Parameters ####

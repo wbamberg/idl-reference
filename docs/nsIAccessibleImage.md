@@ -13,10 +13,6 @@ layout: default
   
 Returns the coordinates of the image.  
   
-@param coordType  specifies coordinates origin (for available constants  
-                  refer to nsIAccessibleCoordinateType)  
-@param x          the x coordinate  
-@param y          the y coordinate  
   
 
 #### Parameters ####
@@ -48,8 +44,6 @@ Returns the coordinates of the image.
   
 Returns the size of the image.  
   
-@param width      the heigth  
-@param height     the width  
   
 
 #### Parameters ####

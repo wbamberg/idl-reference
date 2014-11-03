@@ -20,9 +20,6 @@ aObject and aTruthValue are ignored.
   
 Callback function for returning query results.  
   
-@param aSubject, aPredicate, aObject describe the (sub-)arc  
-@returnCode NS_RDF_STOP_VISIT to stop iterating over the query result.  
-            Any error code will stop the iteration as well.  
   
 
 #### Parameters ####

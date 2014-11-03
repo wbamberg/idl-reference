@@ -30,7 +30,6 @@ document element, including comments in the external DTD subset
 (if read).  Comments in the DTD must be properly nested inside  
 start/endDTD and start/endEntity events (if used).  
   
-@param chars The characters in the comment.  
   
 
 #### Parameters ####
@@ -67,13 +66,6 @@ Note that the start/endDTD events will appear within the
 start/endDocument events from ContentHandler and before the first  
 startElement event.  
   
-@param name The document type name.  
-@param publicId The declared public identifier for the  
-       external DTD subset, or null if none was declared.  
-@param systemId The declared system identifier for the  
-       external DTD subset, or null if none was declared.  
-       (Note that this is not resolved against the document  
-       base URI.)  
   
 
 #### Parameters ####
@@ -145,9 +137,6 @@ are not really entities anyway) are not reported.
   
 All start/endEntity events must be properly nested.  
   
-@param name The name of the entity.  If it is a parameter  
-            entity, the name will begin with '%', and if it is the  
-            external DTD subset, it will be "[dtd]".  
   
 
 #### Parameters ####
@@ -168,7 +157,6 @@ All start/endEntity events must be properly nested.
   
 Report the end of an entity.  
   
-@param name The name of the entity that is ending.  
   
 
 #### Parameters ####

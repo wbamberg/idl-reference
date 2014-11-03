@@ -17,9 +17,6 @@ can be updated.
 ### serialize(updates) ###
   
 Serializes this patch object into a DOM Element  
-@param   updates  
-         The document to serialize into  
-@returns The DOM Element created by the serialization process  
   
 
 #### Parameters ####

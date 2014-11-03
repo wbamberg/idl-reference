@@ -32,8 +32,6 @@ All XMLReaders are required to support setting
 http://xml.org/sax/features/namespaces to true and  
 http://xml.org/sax/features/namespace-prefixes to false.  
   
-@param name String flag for a parser feature.  
-@param value Turn the feature on/off.  
   
 @note This is currently supported only for  
 http://xml.org/sax/features/namespace-prefixes .  All other  
@@ -72,7 +70,6 @@ All XMLReaders are required to recognize the
 http://xml.org/sax/features/namespaces and the  
 http://xml.org/sax/features/namespace-prefixes feature names.  
   
-@param name String flag for a parser feature.  
   
 @note This is currently supported only for  
 http://xml.org/sax/features/namespace-prefixes .  All other  
@@ -107,8 +104,6 @@ property names, though a core set is defined by SAX2.
 This method is also the standard mechanism for setting  
 extended handlers.  
   
-@param name String flag for a parser feature  
-@param value Turn the feature on/off.  
   
 
 #### Parameters ####
@@ -146,8 +141,6 @@ SAX2.
 Implementors are free (and encouraged) to invent their own properties,  
 using names built on their own URIs.  
   
-@param name The property name, which is a fully-qualified URI.  
-@return The current value of the property.  
   
 
 #### Parameters ####
@@ -176,8 +169,6 @@ using names built on their own URIs.
 ### parseFromString(str, contentType) ###
   
   
-@param str The UTF16 string to be parsed  
-@param contentType The content type of the string (see parseFromStream)  
   
   
 
@@ -202,12 +193,6 @@ using names built on their own URIs.
 ### parseFromStream(stream, charset, contentType) ###
   
   
-@param stream The byte stream whose contents are parsed  
-@param charset The character set that was used to encode the byte  
-               stream. NULL if not specified.  
-@param contentType The content type of the string - either text/xml,  
-                   application/xml, or application/xhtml+xml.  
-                   Must not be NULL.  
   
   
 
@@ -246,8 +231,6 @@ then the caller's duty to call nsIStreamListener methods to drive
 the parser. Once this method is called, the caller must not call  
 one of the other parse methods.  
   
-@param observer The nsIRequestObserver to notify upon start or stop.  
-                Can be NULL.  
   
 
 #### Parameters ####

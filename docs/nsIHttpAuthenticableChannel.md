@@ -45,8 +45,6 @@ Notifies that the prompt was cancelled. It is called asynchronously
 from nsIHttpChannelAuthProvider::processAuthentication if that method  
 returns NS_ERROR_IN_PROGRESS.  
   
-@param userCancel  
-       If the user was cancelled has cancelled the authentication prompt.  
   
 
 #### Parameters ####

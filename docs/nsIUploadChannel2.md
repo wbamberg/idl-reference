@@ -19,19 +19,6 @@ Most implementations of this interface require that the stream:
   (2) implement nsIInputStream::readSegments  
   (3) implement nsISeekableStream::seek  
   
-@param aStream  
-       The stream to be uploaded by this channel.  
-@param aContentType  
-       This value will replace any existing Content-Type  
-       header on the HTTP request, regardless of whether  
-       or not its empty.  
-@param aContentLength  
-       A value of -1 indicates that the length of the stream should be  
-       determined by calling the stream's |available| method.  
-@param aMethod  
-       The HTTP request method to set on the stream.  
-@param aStreamHasHeaders  
-       True if the stream already contains headers for the HTTP request.  
   
 
 #### Parameters ####

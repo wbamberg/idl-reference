@@ -15,8 +15,6 @@ layout: default
   
 copy operator equivalent that takes another region  
   
-@param      region to copy  
-@return     void  
   
 /  
 
@@ -47,11 +45,6 @@ copy operator equivalent that takes another region
   
 copy operator equivalent that takes a rect  
   
-@param      aX xoffset of rect to set region to  
-@param      aY yoffset of rect to set region to  
-@param      aWidth width of rect to set region to  
-@param      aHeight height of rect to set region to  
-@return     void  
   
 /  
 
@@ -100,8 +93,6 @@ copy operator equivalent that takes a rect
   
 destructively intersect another region with this one  
   
-@param      region to intersect  
-@return     void  
   
 /  
 
@@ -132,11 +123,6 @@ destructively intersect another region with this one
   
 destructively intersect a rect with this region  
   
-@param      aX xoffset of rect to intersect with region  
-@param      aY yoffset of rect to intersect with region  
-@param      aWidth width of rect to intersect with region  
-@param      aHeight height of rect to intersect with region  
-@return     void  
   
 /  
 
@@ -185,8 +171,6 @@ destructively intersect a rect with this region
   
 destructively union another region with this one  
   
-@param      region to union  
-@return     void  
   
 /  
 
@@ -217,11 +201,6 @@ destructively union another region with this one
   
 destructively union a rect with this region  
   
-@param      aX xoffset of rect to union with region  
-@param      aY yoffset of rect to union with region  
-@param      aWidth width of rect to union with region  
-@param      aHeight height of rect to union with region  
-@return     void  
   
 /  
 
@@ -270,8 +249,6 @@ destructively union a rect with this region
   
 destructively subtract another region with this one  
   
-@param      region to subtract  
-@return     void  
   
 /  
 
@@ -302,11 +279,6 @@ destructively subtract another region with this one
   
 destructively subtract a rect from this region  
   
-@param      aX xoffset of rect to subtract with region  
-@param      aY yoffset of rect to subtract with region  
-@param      aWidth width of rect to subtract with region  
-@param      aHeight height of rect to subtract with region  
-@return     void  
   
 /  
 
@@ -355,8 +327,6 @@ destructively subtract a rect from this region
   
 is this region empty? i.e. does it contain any pixels  
   
-@param      none  
-@return     returns whether the region is empty  
   
 /  
 
@@ -387,8 +357,6 @@ is this region empty? i.e. does it contain any pixels
 == operator equivalent i.e. do the regions contain exactly  
 the same pixels  
   
-@param      region to compare  
-@return     whether the regions are identical  
   
 /  
 
@@ -420,11 +388,6 @@ the same pixels
 returns the bounding box of the region i.e. the smallest  
 rectangle that completely contains the region.          
   
-@param      aX out parameter for xoffset of bounding rect for region  
-@param      aY out parameter for yoffset of bounding rect for region  
-@param      aWidth out parameter for width of bounding rect for region  
-@param      aHeight out parameter for height of bounding rect for region  
-@return     void  
   
 /  
 
@@ -473,9 +436,6 @@ rectangle that completely contains the region.
   
 offsets the region in x and y  
   
-@param  xoffset  pixel offset in x  
-@param  yoffset  pixel offset in y  
-@return          void  
   
 /  
 
@@ -510,10 +470,6 @@ offsets the region in x and y
 
 ### getRects() ###
   
-@return null if there are no rects,  
-@return flat array of rects,ie [x1,y1,width1,height1,x2...].  
-The result will contain bogus data if values don't fit in 31 bit  
-/  
 
 #### Returns ####
 
@@ -532,8 +488,6 @@ The result will contain bogus data if values don't fit in 31 bit
   
 does the region intersect the rectangle?  
   
-@param      rect to check for containment  
-@return     true if the region intersects the rect  
   
 /  
 

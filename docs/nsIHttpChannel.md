@@ -20,12 +20,7 @@ become available.
   
 Get the value of a particular request header.  
   
-@param aHeader  
-       The case-insensitive name of the request header to query (e.g.,  
-       "Cache-Control").  
   
-@return the value of the request header.  
-@throws NS_ERROR_NOT_AVAILABLE if the header is not set.  
   
 
 #### Parameters ####
@@ -62,19 +57,6 @@ headers to the outgoing HTTP request.
   
 This method may only be called before the channel is opened.  
   
-@param aHeader  
-       The case-insensitive name of the request header to set (e.g.,  
-       "Cookie").  
-@param aValue  
-       The request header value to set (e.g., "X=1").  
-@param aMerge  
-       If true, the new header value will be merged with any existing  
-       values for the specified header.  This flag is ignored if the  
-       specified header does not support merging (e.g., the "Content-  
-       Type" header can only have one value).  The list of headers for  
-       which this flag is ignored is an implementation detail.  If this  
-       flag is false, then the header value will be replaced with the  
-       contents of |aValue|.  
   
 If aValue is empty and aMerge is false, the header will be cleared.  
   
@@ -118,8 +100,6 @@ If aValue is empty and aMerge is false, the header will be cleared.
 Call this method to visit all request headers.  Calling setRequestHeader  
 while visiting request headers has undefined behavior.  Don't do it!  
   
-@param aVisitor  
-       the header visitor instance.  
   
 
 #### Parameters ####
@@ -138,11 +118,7 @@ while visiting request headers has undefined behavior.  Don't do it!
   
 Get the value of a particular response header.  
   
-@param aHeader  
-       The case-insensitive name of the response header to query (e.g.,  
-       "Set-Cookie").  
   
-@return the value of the response header.  
   
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest) or if the header is  
@@ -180,19 +156,6 @@ Set the value of a particular response header.
 This method allows, for example, the HTML content sink to inform the HTTP  
 channel about HTTP-EQUIV headers found in HTML <META> tags.  
   
-@param aHeader  
-       The case-insensitive name of the response header to set (e.g.,  
-       "Cache-control").  
-@param aValue  
-       The response header value to set (e.g., "no-cache").  
-@param aMerge  
-       If true, the new header value will be merged with any existing  
-       values for the specified header.  This flag is ignored if the  
-       specified header does not support merging (e.g., the "Content-  
-       Type" header can only have one value).  The list of headers for  
-       which this flag is ignored is an implementation detail.  If this  
-       flag is false, then the header value will be replaced with the  
-       contents of |aValue|.  
   
 If aValue is empty and aMerge is false, the header will be cleared.  
   
@@ -239,8 +202,6 @@ Call this method to visit all response headers.  Calling
 setResponseHeader while visiting response headers has undefined  
 behavior.  Don't do it!  
   
-@param aVisitor  
-       the header visitor instance.  
   
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  

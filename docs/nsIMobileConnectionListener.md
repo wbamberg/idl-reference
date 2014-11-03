@@ -23,10 +23,6 @@ Notify when data info is changed.
   
 Notify when ussd is received.  
   
-@param message  
-       The ussd request in string format.  
-@param sessionEnded  
-       Indicates whether the session is ended.  
   
 
 #### Parameters ####
@@ -51,8 +47,6 @@ Notify when ussd is received.
   
 Notify when data call is failed to establish.  
   
-@param message  
-       Error message from RIL.  
   
 
 #### Parameters ####
@@ -71,16 +65,6 @@ Notify when data call is failed to establish.
   
 Notify when call forwarding state is changed.  
   
-@param action  
-       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
-@param reason  
-       One of the nsIMobileConnection.CALL_FORWARD_REASON_* values.  
-@param number  
-       Phone number of forwarding address.  
-@param timeSeconds  
-       The time in seconds should wait before call is forwarded.  
-@param serviceClass  
-       One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
   
 
 #### Parameters ####
@@ -123,10 +107,6 @@ Notify when call forwarding state is changed.
   
 Notify when emergency callback mode is changed.  
   
-@param active  
-       Indicates whether the emergency callback mode is activated.  
-@param timeoutMs  
-       The timeout in millisecond for emergency callback mode.  
   
 
 #### Parameters ####
@@ -151,11 +131,6 @@ Notify when emergency callback mode is changed.
   
 Notify when ota status is changed.  
   
-@param status  
-       Ota status. Possible values: 'spl_unlocked', 'spc_retries_exceeded',  
-       'a_key_exchanged', 'ssd_updated', 'nam_downloaded', 'mdn_downloaded',  
-       'imsi_downloaded', 'prl_downloaded', 'committed', 'otapa_started',  
-       'otapa_stopped', 'otapa_aborted'.  
   
 
 #### Parameters ####
@@ -187,8 +162,6 @@ Notify when radio state is changed.
   
 Notify when clir mode is changed.  
   
-@param mode  
-       One of the nsIMobileConnection.CLIR_* values.  
   
 
 #### Parameters ####

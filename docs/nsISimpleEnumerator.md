@@ -27,8 +27,6 @@ called without subsequent getNext() calls. Does not affect
 internal state of enumerator.  
   
 @see getNext()  
-@return true if there are remaining elements in the enumerator.  
-        false if there are no more elements in the enumerator.  
   
 
 #### Returns ####
@@ -54,7 +52,6 @@ the elements in the enumerator.
 @see hasMoreElements()  
 @throws NS_ERROR_FAILURE if there are no more elements  
                          to enumerate.  
-@return the next element in the enumeration.  
   
 
 #### Returns ####

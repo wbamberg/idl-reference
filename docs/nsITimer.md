@@ -28,16 +28,11 @@ Initialize a timer that will fire after the said delay.
 A user must keep a reference to this timer till it is   
 is no longer needed or has been cancelled.  
   
-@param aObserver   the callback object that observes the   
-                   ``timer-callback'' topic with the subject being  
-                   the timer itself when the timer fires:  
   
                    observe(nsISupports aSubject, => nsITimer  
                            string aTopic,        => ``timer-callback''  
                            wstring data          =>  null  
   
-@param aDelay      delay in milliseconds for timer to fire  
-@param aType       timer type per TYPE* consts defined above  
   
 
 #### Parameters ####
@@ -72,10 +67,6 @@ Initialize a timer to fire after the given millisecond interval.
 This version takes a function to call and a closure to pass to  
 that function.  
   
-@param aFunc      The function to invoke  
-@param aClosure   An opaque pointer to pass to that function  
-@param aDelay     The millisecond interval  
-@param aType      Timer type per TYPE* consts defined above  
   
 
 #### Parameters ####
@@ -113,9 +104,6 @@ that function.
 Initialize a timer to fire after the given millisecond interval.  
 This version takes a function to call.  
   
-@param aFunc      nsITimerCallback interface to call when timer expires  
-@param aDelay     The millisecond interval  
-@param aType      Timer type per TYPE* consts defined above  
   
 
 #### Parameters ####

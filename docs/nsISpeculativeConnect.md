@@ -19,9 +19,6 @@ ready and/or progressed when the transaction is actually submitted.
 No obligation is taken on by the implementer, nor is the submitter obligated  
 to actually open the new channel.   
   
-@param aURI the URI of the hinted transaction  
-@param aCallbacks any security callbacks for use with SSL for interfaces  
-       such as nsIBadCertListener. May be null.  
   
   
 

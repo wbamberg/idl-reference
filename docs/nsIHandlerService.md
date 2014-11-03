@@ -15,7 +15,6 @@ Retrieve a list of all handlers in the datastore.  This list is not
 guaranteed to be in any particular order, and callers should not assume  
 it will remain in the same order in the future.  
   
-@returns a list of all handlers in the datastore  
   
 
 #### Returns ####
@@ -65,8 +64,6 @@ In that situation, you can call this method to fill in the handler info
 object with information about that other type by passing the other type  
 as the aOverrideType parameter.  
   
-@param aHandlerInfo   the handler info object  
-@param aOverrideType  a type to use instead of aHandlerInfo::type  
   
 Note: if there is no information in the datastore about this type,  
 this method throws NS_ERROR_NOT_AVAILABLE. Callers are encouraged to  
@@ -101,7 +98,6 @@ Updates an existing record or creates a new one if necessary.
 Note: if preferred action is undefined or invalid, then we assume  
 the default value nsIHandlerInfo::useHelperApp.  
   
-@param aHandlerInfo  the handler info object  
   
 
 #### Parameters ####
@@ -122,9 +118,7 @@ Whether or not a record for the given handler info object exists
 in the datastore. If the datastore is corrupt (or some other error  
 is caught in the implementation), false will be returned.  
   
-@param aHandlerInfo  a handler info object  
   
-@returns whether or not a record exists  
   
 
 #### Parameters ####
@@ -157,7 +151,6 @@ records associated with the object, including the preferred handler, info,
 and type records plus the entry in the list of types, if they exist.  
 Otherwise, it does nothing and does not return an error.  
   
-@param aHandlerInfo  the handler info object  
   
 
 #### Parameters ####
@@ -184,9 +177,7 @@ to get a MIME type from a file extension, as that method checks a variety
 of other sources besides just the datastore.  Use this only when you want  
 to specifically get only the mapping available in the datastore.  
   
-@param aFileExtension  the file extension  
   
-@returns the MIME type, if any; otherwise returns an empty string ("").  
   
 
 #### Parameters ####

@@ -40,11 +40,6 @@ numbers remain within the limits of a signed char, i.e. -127 to 128.
 ### compare(A, B) ###
   
 Compare two version strings  
-@param   A   The first version  
-@param   B   The second version  
-@returns < 0 if A < B  
-         = 0 if A == B  
-         > 0 if A > B  
   
 
 #### Parameters ####

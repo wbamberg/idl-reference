@@ -20,9 +20,6 @@ Obtains a Class Object from a nsIModule for a given CID and IID pair.
 This class object can either be query to a nsIFactory or a may be   
 query to a nsIClassInfo.  
   
-@param aCompMgr  : The global component manager  
-@param aClass    : ClassID of object instance requested  
-@param aIID      : IID of interface requested  
   
   
 
@@ -57,10 +54,6 @@ One time registration callback
 When the nsIModule is discovered, this method will be  
 called so that any setup registration can be preformed.  
   
-@param aCompMgr  : The global component manager  
-@param aLocation : The location of the nsIModule on disk  
-@param aLoaderStr: Opaque loader specific string  
-@param aType     : Loader Type being used to load this module   
   
 
 #### Parameters ####
@@ -100,9 +93,6 @@ One time unregistration callback
 When the nsIModule is being unregistered, this method will be  
 called so that any unregistration can be preformed  
   
-@param aCompMgr   : The global component manager  
-@param aLocation  : The location of the nsIModule on disk  
-@param aLoaderStr : Opaque loader specific string  
   
   
 
@@ -134,15 +124,7 @@ called so that any unregistration can be preformed
    
 Module load management  
   
-@param aCompMgr  : The global component manager  
   
-@return indicates to the caller if the module can be unloaded.  
-		Returning PR_TRUE isn't a guarantee that the module will be  
-	unloaded. It constitues only willingness of the module to be  
-	unloaded.  It is very important to ensure that no outstanding   
-      references to the module's code/data exist before returning   
-      PR_TRUE.   
-	Returning PR_FALSE guaratees that the module won't be unloaded.  
   
 
 #### Parameters ####

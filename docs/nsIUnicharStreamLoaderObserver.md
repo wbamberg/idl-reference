@@ -16,11 +16,7 @@ If the stream receives fewer than 512 octets of data in total,
 called upon stream completion but before calling OnStreamComplete.  
 Will not be called if the stream receives no data at all.  
   
-@param aLoader the unichar stream loader  
-@param aContext the context parameter of the underlying channel  
-@param aSegment up to 512 octets of raw data from the stream  
   
-@return the name of the character set to be used to decode this stream  
   
 
 #### Parameters ####
@@ -62,10 +58,6 @@ Will not be called if the stream receives no data at all.
   
 Called when the entire stream has been loaded and decoded.  
   
-@param aLoader the unichar stream loader  
-@param aContext the context parameter of the underlying channel  
-@param aStatus the status of the underlying channel  
-@param aBuffer the contents of the stream, decoded to UTF-16.  
   
 This method will always be called asynchronously by the  
 nsUnicharIStreamLoader involved, on the thread that called the  

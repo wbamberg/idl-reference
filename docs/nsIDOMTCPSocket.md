@@ -14,10 +14,6 @@ layout: default
 Create and return a socket object which will attempt to connect to  
 the given host and port.  
   
-@param host The hostname of the server to connect to.  
-@param port The port to connect to.  
-@param options An object specifying one or more parameters which  
-               determine the details of the socket.  
   
        useSecureTransport: true to create an SSL socket. Defaults to false.  
   
@@ -25,7 +21,6 @@ the given host and port.
          instances in the ondata callback and as the argument  
          to send. Defaults to "string", to use JavaScript strings.  
   
-@return The new TCPSocket instance.  
   
 
 #### Parameters ####
@@ -68,19 +63,11 @@ the given host and port.
   
 Listen on a port  
   
-@param localPort The port of the server socket. Pass -1 to indicate no preference,  
-                 and a port will be selected automatically.  
-@param options An object specifying one or more parameters which  
-               determine the details of the socket.  
   
        binaryType: "arraybuffer" to use ArrayBuffer  
          instances in the ondata callback and as the argument  
          to send. Defaults to "string", to use JavaScript strings.  
-@param backlog The maximum length the queue of pending connections may grow to.  
-               This parameter may be silently limited by the operating system.  
-               Pass -1 to use the default value.  
   
-@return The new TCPServerSocket instance.  
   
 
 #### Parameters ####
@@ -147,27 +134,7 @@ Close the socket.
   
 Write data to the socket.  
   
-@param data The data to write to the socket. If  
-            binaryType: "arraybuffer" was passed in the options  
-            object, then this object should be an ArrayBuffer instance.  
-            If binaryType: "string" was passed, or if no binaryType  
-            option was specified, then this object should be an  
-            ordinary JavaScript string.  
-@param byteOffset The offset within the data from which to begin writing.  
-                  Has no effect on non-ArrayBuffer data.  
-@param byteLength The number of bytes to write. Has no effect on  
-                  non-ArrayBuffer data.  
   
-@return Send returns true or false as a hint to the caller that  
-        they may either continue sending more data immediately, or  
-        may want to wait until the other side has read some of the  
-        data which has already been written to the socket before  
-        buffering more. If send returns true, then less than 64k  
-        has been buffered and it's safe to immediately write more.  
-        If send returns false, then more than 64k has been buffered,  
-        and the caller may wish to wait until the ondrain event  
-        handler has been called before buffering more data by more  
-        calls to send.  
   
 
 #### Parameters ####

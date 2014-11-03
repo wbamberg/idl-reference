@@ -16,20 +16,7 @@ nsIDNSService
   
 kicks off an asynchronous host lookup.  
   
-@param aHostName  
-       the hostname or IP-address-literal to resolve.  
-@param aFlags  
-       a bitwise OR of the RESOLVE_ prefixed constants defined below.  
-@param aListener  
-       the listener to be notified when the result is available.  
-@param aListenerTarget  
-       optional parameter (may be null).  if non-null, this parameter  
-       specifies the nsIEventTarget of the thread on which the  
-       listener's onLookupComplete should be called.  however, if this  
-       parameter is null, then onLookupComplete will be called on an  
-       unspecified thread (possibly recursively).  
   
-@return An object that can be used to cancel the host lookup.  
   
 
 #### Parameters ####
@@ -81,17 +68,7 @@ kicks off an asynchronous host lookup.
   
 Attempts to cancel a previously requested async DNS lookup  
   
-@param aHostName  
-       the hostname or IP-address-literal to resolve.  
-@param aFlags  
-       a bitwise OR of the RESOLVE_ prefixed constants defined below.  
-@param aListener  
-       the original listener which was to be notified about the host lookup  
-       result - used to match request information to requestor.  
-@param aReason  
-       nsresult reason for the cancellation  
   
-@return An object that can be used to cancel the host lookup.  
   
 
 #### Parameters ####
@@ -142,13 +119,7 @@ called to synchronously resolve a hostname.  warning this method may
 block the calling thread for a long period of time.  it is extremely  
 unwise to call this function on the UI thread of an application.  
   
-@param aHostName  
-       the hostname or IP-address-literal to resolve.  
-@param aFlags  
-       a bitwise OR of the RESOLVE_ prefixed constants defined below.  
   
-@return DNS record corresponding to the given hostname.  
-@throws NS_ERROR_UNKNOWN_HOST if host could not be resolved.  
   
 
 #### Parameters ####

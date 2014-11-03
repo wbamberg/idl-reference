@@ -26,10 +26,7 @@ filter, or false if it is rejected. Accepted results will have output
 generated for them for the rule. Rejected results will not, but they  
 may still match another rule.  
   
-@param aRef the result to examine  
-@param aRule the rule node  
   
-@return true if the rule matches  
   
 
 #### Parameters ####

@@ -30,7 +30,6 @@ least as bright as a certain brightness level. Each call to this
 function must eventually be followed by a corresponding call to  
 unlockMinimumBrightness, with the same brightness level.  
   
-@param brightness A brightness level, one of the above constants.  
   
 
 #### Parameters ####
@@ -50,7 +49,6 @@ unlockMinimumBrightness, with the same brightness level.
 Releases a lock on the screen brightness. This must be called  
 (eventually) after a corresponding call to lockMinimumBrightness.  
   
-@param brightness A brightness level, one of the above constants.  
   
 
 #### Parameters ####

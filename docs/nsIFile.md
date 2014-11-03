@@ -41,10 +41,6 @@ methods" are not scriptable.
  This function is used for constructing a descendent of the  
  current nsIFile.  
   
-  @param node  
-      A string which is intended to be a child node of the nsIFile.  
-      For the |appendNative| method, the node must be in the native  
-      filesystem charset.  
   
 
 #### Parameters ####
@@ -77,17 +73,7 @@ methods" are not scriptable.
  resolved, will be.  If the file or directory already  
  exists create() will return NS_ERROR_FILE_ALREADY_EXISTS.  
   
-  @param type  
-      This specifies the type of file system object  
-      to be made.  The only two types at this time  
-      are file and directory which are defined above.  
-      If the type is unrecongnized, we will return an  
-      error (NS_ERROR_FILE_UNKNOWN_TYPE).  
   
-  @param permissions  
-      The unix style octal permissions.  This may  
-      be ignored on systems that do not need to do  
-      permissions.  
   
 
 #### Parameters ####
@@ -128,19 +114,7 @@ methods" are not scriptable.
   
  copyTo will NOT resolve aliases/shortcuts during the copy.  
   
-  @param newParentDir  
-      This param is the destination directory. If the  
-      newParentDir is null, copyTo() will use the parent  
-      directory of this file. If the newParentDir is not  
-      empty and is not a directory, an error will be  
-      returned (NS_ERROR_FILE_DESTINATION_NOT_DIR). For the   
-      |CopyToNative| method, the newName must be in the   
-      native filesystem charset.  
   
-  @param newName  
-      This param allows you to specify a new name for  
-      the file to be copied. This param may be empty, in  
-      which case the current leaf name will be used.  
   
 
 #### Parameters ####
@@ -203,19 +177,7 @@ methods" are not scriptable.
  moveTo will return an error (NS_ERROR_FILE_ACCESS_DENIED) if 'this' is  
  a directory and the destination directory is not writable.  
   
-  @param newParentDir  
-      This param is the destination directory. If the  
-      newParentDir is empty, moveTo() will rename the file  
-      within its current directory. If the newParentDir is  
-      not empty and does not name a directory, an error will  
-      be returned (NS_ERROR_FILE_DESTINATION_NOT_DIR).  For   
-      the |moveToNative| method, the newName must be in the   
-      native filesystem charset.  
   
-  @param newName  
-      This param allows you to specify a new name for  
-      the file to be moved. This param may be empty, in  
-      which case the current leaf name will be used.  
   
 
 #### Parameters ####
@@ -299,17 +261,7 @@ Not a regular file, not a directory, not a symlink.
  (thousands of the variants already exist), we give up and  
  return NS_ERROR_FILE_TOO_BIG.  
   
-  @param type  
-      This specifies the type of file system object  
-      to be made.  The only two types at this time  
-      are file and directory which are defined above.  
-      If the type is unrecongnized, we will return an  
-      error (NS_ERROR_FILE_UNKNOWN_TYPE).  
   
-  @param permissions  
-      The unix style octal permissions.  This may  
-      be ignored on systems that do not need to do  
-      permissions.  
   
 
 #### Parameters ####
@@ -343,9 +295,6 @@ clone()
 This function will allocate and initialize a nsIFile object to the  
 exact location of the |this| nsIFile.  
   
-  @param file  
-         A nsIFile which this object will be initialize  
-         with.  
   
   
 
@@ -380,12 +329,6 @@ exact location of the |this| nsIFile.
  This function will initialize the nsIFile object.  Any  
  internal state information will be reset.  
   
-  @param filePath         
-      A string which specifies a full file path to a   
-      location.  Relative paths will be treated as an  
-      error (NS_ERROR_FILE_UNRECOGNIZED_PATH).  For   
-      initWithNativePath, the filePath must be in the native  
-      filesystem charset.  
   
 
 #### Parameters ####
@@ -412,8 +355,6 @@ exact location of the |this| nsIFile.
   
  Initialize this object with another file  
   
-  @param aFile  
-      the file this becomes equivalent to  
   
 
 #### Parameters ####
@@ -433,12 +374,6 @@ exact location of the |this| nsIFile.
 Return the result of PR_Open on the file.  The caller is  
 responsible for calling PR_Close on the result.  
   
-@param flags the PR_Open flags from prio.h, plus optionally  
-OS_READAHEAD or DELETE_ON_CLOSE. OS_READAHEAD is a hint to the  
-OS that the file will be read sequentially with agressive  
-readahead. DELETE_ON_CLOSE is unreliable on Windows and is deprecated.  
-Instead use NS_OpenAnonymousTemporaryFile() to create a temporary  
-file which will be deleted upon close.  
   
 
 #### Parameters ####
@@ -476,11 +411,6 @@ responsible for calling PR_UnloadLibrary on the result.
   
  Append a relative path to the current path of the nsIFile object.  
   
-  @param relativeFilePath  
-      relativeFilePath is a native relative path. For security reasons,  
-      this cannot contain .. or cannot start with a directory separator.  
-      For the |appendRelativeNativePath| method, the relativeFilePath   
-      must be in the native filesystem charset.  
   
 
 #### Parameters ####
@@ -531,9 +461,6 @@ responsible for calling PR_UnloadLibrary on the result.
  The character set of the string returned from this function is  
  undefined.  DO NOT TRY TO INTERPRET IT AS HUMAN READABLE TEXT!  
   
-  @param fromFile  
-      the file from which the descriptor is relative.  
-      There is no defined result if this param is null.  
   
 
 #### Parameters ####
@@ -556,10 +483,6 @@ responsible for calling PR_UnloadLibrary on the result.
  Initializes the file to the location relative to fromFile using  
  a string returned by getRelativeDescriptor.  
   
-  @param fromFile  
-      the file to which the descriptor is relative  
-  @param relative  
-      the relative descriptor obtained from getRelativeDescriptor  
   
 
 #### Parameters ####

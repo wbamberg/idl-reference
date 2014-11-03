@@ -34,12 +34,6 @@ Determines the appropriate target for a link.
   
 Determines whether a load should continue.  
   
-@param aDocShell  
-       The docshell performing the load.  
-@param aURI  
-       The URI being loaded.  
-@param aReferrer  
-       The referrer of the load.  
   
 
 #### Parameters ####

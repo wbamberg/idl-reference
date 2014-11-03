@@ -13,8 +13,6 @@ layout: default
   
 Check that an entry exists in the list of dynamically-managed entries.  
   
-@param uri  
-       The resource to check.  
   
 
 #### Parameters ####
@@ -41,8 +39,6 @@ Get the URI of a dynamically-managed entry.
 Add an item to the list of dynamically-managed entries.  The resource  
 will be fetched into the application cache.  
   
-@param uri  
-       The resource to add.  
   
 
 #### Parameters ####
@@ -63,8 +59,6 @@ Remove an item from the list of dynamically-managed entries.  If this
 was the last reference to a URI in the application cache, the cache  
 entry will be removed.  
   
-@param uri  
-       The resource to remove.  
   
 
 #### Parameters ####

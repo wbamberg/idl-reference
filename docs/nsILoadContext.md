@@ -18,11 +18,7 @@ happening.
   
 Check whether the load is happening in a particular type of application.  
   
-@param an application type.  For now, the constants to be passed here are  
-       the nsIDocShell APP_TYPE_* constants.  
   
-@return whether there is some ancestor of the associatedWindow that is of  
-        the given app type.  
   
 
 #### Parameters ####

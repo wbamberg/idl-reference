@@ -19,22 +19,6 @@ some customization on how URLs are normalized.
   
 Initialize a standard URL.  
   
-@param aUrlType       - one of the URLTYPE_ flags listed above.  
-@param aDefaultPort   - if the port parsed from the URL string matches  
-                        this port, then the port will be removed from the  
-                        canonical form of the URL.  
-@param aSpec          - URL string.  
-@param aOriginCharset - the charset from which this URI string  
-                        originated.  this corresponds to the charset  
-                        that should be used when communicating this  
-                        URI to an origin server, for example.  if  
-                        null, then provide aBaseURI implements this  
-                        interface, the origin charset of aBaseURI will  
-                        be assumed, otherwise defaulting to UTF-8 (i.e.,  
-                        no charset transformation from aSpec).  
-@param aBaseURI       - if null, aSpec must specify an absolute URI.  
-                        otherwise, aSpec will be resolved relative  
-                        to aBaseURI.  
   
 
 #### Parameters ####

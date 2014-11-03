@@ -20,9 +20,6 @@ layout: default
 Checks if the document wants to prevent unloading by firing beforeunload on  
 the document, and if it does, prompts the user. The result is returned.  
   
-@param aCallerClosesWindow indicates that the current caller will close the  
-       window. If the method returns true, all subsequent calls will be  
-       ignored.  
   
 
 #### Parameters ####
@@ -106,11 +103,6 @@ Returns DOMDocument as nsIDocument and without addrefing.
 ### open(aState, aSHEntry) ###
   
 Attach the content viewer to its DOM window and docshell.  
-@param aState A state object that might be useful in attaching the DOM  
-              window.  
-@param aSHEntry The history entry that the content viewer was stored in.  
-                The entry must have the docshells for all of the child  
-                documents stored in its child shell list.  
   
 
 #### Parameters ####
@@ -179,8 +171,6 @@ in depth-first pre-order traversal.
 Set the maximum line width for the document.  
 NOTE: This will generate a reflow!  
   
-@param maxLineWidth The maximum width of any line boxes on the page,  
-       in CSS pixels.  
   
 
 #### Parameters ####

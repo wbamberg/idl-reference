@@ -34,11 +34,6 @@ to allow unicode chars > 16 bits
 Get the accessible start/end offsets around the given offset,  
 return the text attributes for this range of text.  
   
-@param  includeDefAttrs   [in] points whether text attributes applied to  
-                          the entire accessible should be included or not.  
-@param  offset            [in] text offset  
-@param  rangeStartOffset  [out] start offset of the range of text  
-@param  rangeEndOffset    [out] end offset of the range of text  
   
 
 #### Parameters ####
@@ -87,15 +82,6 @@ height of all the characters in the text or the height of the preceding
 character, its width being at least one pixel so that the bounding box is  
 not degenerate.  
   
-@param offset - Index of the character for which to return its bounding  
-                 box. The valid range is 0..length.  
-@param x - X coordinate of the bounding box of the referenced character.  
-@param y - Y coordinate of the bounding box of the referenced character.  
-@param width - Width of the bounding box of the referenced character.  
-@param height - Height of the bounding box of the referenced character.  
-@param coordType - Specifies if the coordinates are relative to the screen  
-                   or to the parent window (see constants declared in  
-                   nsIAccessibleCoordinateType).  
   
 
 #### Parameters ####
@@ -150,15 +136,6 @@ not degenerate.
 Get the text offset at the given point, or return -1  
 if no character exists at that point  
   
-@param x - The position's x value for which to look up the index of the  
-           character that is rendered on to the display at that point.  
-@param y - The position's y value for which to look up the index of the  
-           character that is rendered on to the display at that point.  
-@param coordType - Screen coordinates or window coordinates (see constants  
-                   declared in nsIAccessibleCoordinateType).  
-@return offset - Index of the character under the given point or -1 if  
-                 the point is invalid or there is no character under  
-                 the point.  
   
 
 #### Parameters ####
@@ -216,12 +193,6 @@ Set the bounds for the given selection range
   
 Makes a specific part of string visible on screen.  
   
-@param startIndex  0-based character offset  
-@param endIndex    0-based character offset - the offset of the  
-                   character just past the last character of the  
-                   string  
-@param scrollType  defines how to scroll (see nsIAccessibleScrollType for  
-                   available constants)  
   
 
 #### Parameters ####
@@ -255,14 +226,6 @@ Makes a specific part of string visible on screen.
   
 Moves the top left of a substring to a specified location.  
   
-@param startIndex      0-based character offset  
-@param endIndex        0-based character offset - the offset of the  
-                       character just past the last character of  
-                       the string  
-@param coordinateType  specifies the coordinates origin (for available  
-                       constants refer to nsIAccessibleCoordinateType)  
-@param x               defines the x coordinate  
-@param y               defines the y coordinate  
   
 
 #### Parameters ####

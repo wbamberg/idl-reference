@@ -34,12 +34,6 @@ about which type of information is being requested.
 The processing will result in either an "autocomplete" simple DOM Event or  
 an AutocompleteErrorEvent being fired on the form.  
   
-@param aForm  
-       The form on which the requestAutocomplete method was invoked.  
-@param aWindow  
-       The window where the form is located.  This must be specified even  
-       for elements that are not in a document, and is used to generate the  
-       DOM events resulting from the operation.  
   
 
 #### Parameters ####

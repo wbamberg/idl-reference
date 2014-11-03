@@ -17,9 +17,6 @@ a output stream.
   
 Initialize the simple stream listener.  
   
-@param aSink data will be read from the channel to this output stream.  
-             Must implement writeFrom.  
-@param aObserver optional stream observer (can be NULL)  
   
 
 #### Parameters ####

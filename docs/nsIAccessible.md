@@ -25,10 +25,6 @@ Accessible states -- bit fields which describe boolean properties of node.
 Many states are only valid given a certain role attribute that supports  
 them.  
   
-@param aState - the first bit field (see nsIAccessibleStates::STATE_*  
-                constants)  
-@param aExtraState - the second bit field  
-                     (see nsIAccessibleStates::EXT_STATE_* constants)  
   
 
 #### Parameters ####
@@ -56,10 +52,6 @@ them.
 Returns grouping information. Used for tree items, list items, tab panel  
 labels, radio buttons, etc. Also used for collectons of non-text objects.  
   
-@param groupLevel - 1-based, similar to ARIA 'level' property  
-@param similarItemsInGroup - 1-based, similar to ARIA 'setsize' property,  
-                             inclusive of the current item  
-@param positionInGroup - 1-based, similar to ARIA 'posinset' property  
   
 
 #### Parameters ####
@@ -95,9 +87,6 @@ current accessible will be returned.
 If the point is in neither the current accessible or a child, then  
 null will be returned.  
   
-@param x  screen's x coordinate  
-@param y  screen's y coordinate  
-@return   the deepest accessible child containing the given point  
   
 
 #### Parameters ####
@@ -136,9 +125,6 @@ pixels. If the point is in the current accessible but not in a child, the
 current accessible will be returned. If the point is in neither the current  
 accessible or a child, then null will be returned.  
   
-@param x  screen's x coordinate  
-@param y  screen's y coordinate  
-@return   the deepest accessible child containing the given point  
   
 
 #### Parameters ####
@@ -238,9 +224,6 @@ Action number 0 is the default action
   
 Makes an object visible on screen.  
   
-@param scrollType - defines where the object should be placed on  
-                    the screen (see nsIAccessibleScrollType for  
-                    available constants).  
   
 
 #### Parameters ####
@@ -261,11 +244,6 @@ Makes an object visible on screen.
   
 Moves the top left of an object to a specified location.  
   
-@param coordinateType [in] - specifies whether the coordinates are relative to  
-                        the screen or the parent object (for available  
-                        constants refer to nsIAccessibleCoordinateType)  
-@param x [in] - defines the x coordinate  
-@param y [in] - defines the y coordinate  
   
 
 #### Parameters ####

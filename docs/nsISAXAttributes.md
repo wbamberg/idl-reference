@@ -30,11 +30,6 @@ The order of attributes in the list is unspecified.
 ### getIndexFromName(uri, localName) ###
   
 Look up the index of an attribute by Namespace name.  
-@param uri The Namespace URI, or the empty string  
-           if the name has no Namespace URI.  
-@param localName The attribute's local name.  
-@return The index of the attribute, or -1  
-        if it does not appear in the list.  
   
 
 #### Parameters ####
@@ -71,9 +66,6 @@ Look up the index of an attribute by Namespace name.
 ### getIndexFromQName(qName) ###
   
 Look up the index of an attribute by XML qualified name.  
-@param qName The qualified name.  
-@return The index of the attribute, or -1  
-        if it does not appear in the list.  
   
 
 #### Parameters ####
@@ -103,8 +95,6 @@ Look up the index of an attribute by XML qualified name.
 ### getLocalName(index) ###
   
 Look up an attribute's local name by index.  
-@param index The attribute index (zero-based).  
-@return The local name, or null if the index is out of range.  
   
 
 #### Parameters ####
@@ -133,9 +123,6 @@ Look up an attribute's local name by index.
 ### getQName(index) ###
   
 Look up an attribute's XML qualified name by index.  
-@param index The attribute index (zero-based).  
-@return The XML qualified name, or the empty string if none is  
-        available, or null if the index is out of range.  
   
 
 #### Parameters ####
@@ -174,9 +161,6 @@ Recommendation (clause 3.3.3, "Attribute-Value
 Normalization"). For an enumerated attribute that is not a  
 notation, the parser will report the type as "NMTOKEN".  
   
-@param index The attribute index (zero-based).  
-@return The attribute's type as a string, or null if the index is  
-        out of range.  
   
 
 #### Parameters ####
@@ -206,11 +190,6 @@ notation, the parser will report the type as "NMTOKEN".
 ### getTypeFromName(uri, localName) ###
   
 Look up an attribute's type by Namespace name.  
-@param uri The Namespace URI, or the empty string  
-            if the name has no Namespace URI.  
-@param localName The attribute's local name.  
-@return The attribute type as a string, or null if the attribute  
-        is not in the list.  
   
 
 #### Parameters ####
@@ -247,9 +226,6 @@ Look up an attribute's type by Namespace name.
 ### getTypeFromQName(qName) ###
   
 Look up an attribute's type by XML qualified name.  
-@param qName The qualified name.  
-@return The attribute type as a string, or null if the attribute  
-        is not in the list.  
   
 
 #### Parameters ####
@@ -279,9 +255,6 @@ Look up an attribute's type by XML qualified name.
 ### getURI(index) ###
   
 Look up an attribute's Namespace URI by index.  
-@param index The attribute index (zero-based).  
-@return The Namespace URI, or the empty string if none is available,  
-        or null if the index is out of range.  
   
 
 #### Parameters ####
@@ -315,9 +288,6 @@ a list of tokens (IDREFS, ENTITIES, or NMTOKENS), the tokens will
 be concatenated into a single string with each token separated by  
 a single space.  
   
-@param index The attribute index (zero-based).  
-@return The attribute's value as a string, or null if the index is  
-        out of range.  
   
 
 #### Parameters ####
@@ -351,11 +321,6 @@ value is a list of tokens (IDREFS, ENTITIES, or NMTOKENS), the
 tokens will be concatenated into a single string with each token  
 separated by a single space.  
   
-@param uri The Namespace URI, or the empty string  
-            if the name has no Namespace URI.  
-@param localName The attribute's local name.  
-@return The attribute's value as a string, or null if the attribute is  
-        not in the list.  
   
 
 #### Parameters ####
@@ -396,9 +361,6 @@ If the attribute value is a list of tokens (IDREFS, ENTITIES, or
 NMTOKENS), the tokens will be concatenated into a single string  
 with each token separated by a single space.  
   
-@param qName The qualified (prefixed) name.  
-@return The attribute's value as a string, or null if the attribute is  
-        not in the list.  
   
 
 #### Parameters ####

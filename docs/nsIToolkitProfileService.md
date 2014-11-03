@@ -14,7 +14,6 @@ layout: default
 Get a profile by name. This is mainly for use by the -P  
 commandline flag.  
   
-@param aName The profile name to find.  
   
 
 #### Parameters ####
@@ -42,11 +41,6 @@ Create a new profile.
 The profile temporary directory will be chosen based on where the  
 profile directory is located.  
   
-@param aRootDir  
-       The profile directory. May be null, in which case a suitable  
-       default will be chosen based on the profile name.  
-@param aName  
-       The profile name.  
   
 
 #### Parameters ####
@@ -83,15 +77,6 @@ or if aVendorName is provided
 The contents of aProfileDefaultsDir will be copied to the  
 new profile directory.  
   
-@param  aProfileName  
-        The name of the profile  
-@param  aAppName  
-        The name of the application  
-@param  aVendorName  
-        The name of the vendor  
-@param  aProfileDefaultsDir  
-        The location where the profile defaults are.  
-@return The created profile.  
   
 
 #### Parameters ####

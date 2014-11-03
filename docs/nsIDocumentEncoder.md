@@ -12,9 +12,6 @@ layout: default
 ### init(aDocument, aMimeType, aFlags) ###
   
 Initialize with a pointer to the document and the mime type.  
-@param aDocument Document to encode.  
-@param aMimeType MimeType to use. May also be set by SetMimeType.  
-@param aFlags Flags to use while encoding. May also be set by SetFlags.  
   
 
 #### Parameters ####
@@ -48,7 +45,6 @@ Initialize with a pointer to the document and the mime type.
  If the selection is set to a non-null value, then the  
  selection is used for encoding, otherwise the entire  
  document is encoded.  
-@param aSelection The selection to encode.  
   
 
 #### Parameters ####
@@ -68,7 +64,6 @@ Initialize with a pointer to the document and the mime type.
  If the range is set to a non-null value, then the  
  range is used for encoding, otherwise the entire  
  document or selection is encoded.  
-@param aRange The range to encode.  
   
 
 #### Parameters ####
@@ -88,7 +83,6 @@ Initialize with a pointer to the document and the mime type.
  If the node is set to a non-null value, then the  
  node is used for encoding, otherwise the entire  
  document or range or selection is encoded.  
-@param aNode The node to encode.  
   
 
 #### Parameters ####
@@ -110,7 +104,6 @@ Initialize with a pointer to the document and the mime type.
  If the container is set to a non-null value, then its  
  child nodes are used for encoding, otherwise the entire  
  document or range or selection or node is encoded.  
- @param aContainer The node which child nodes will be encoded.  
   
 
 #### Parameters ####
@@ -133,8 +126,6 @@ Initialize with a pointer to the document and the mime type.
  but if no intrinsic value is found, the platform character set  
  is used. This function overrides both the intrinisc and platform  
  charset.  
- @param aCharset Overrides the both the intrinsic or platform  
- character set when encoding the document.  
   
  Possible result codes: NS_ERROR_NO_CHARSET_CONVERTER  
   
@@ -155,7 +146,6 @@ Initialize with a pointer to the document and the mime type.
 ### setWrapColumn(aWrapColumn) ###
   
  Set a wrap column.  This may have no effect in some types of encoders.  
-@param aWrapColumn Column to which to wrap.  
   
 
 #### Parameters ####
@@ -176,7 +166,6 @@ Initialize with a pointer to the document and the mime type.
   
  Possible result codes are the stream errors which might have  
  been encountered.  
-@param aStream Stream into which to encode.  
   
 
 #### Parameters ####
@@ -195,7 +184,6 @@ Initialize with a pointer to the document and the mime type.
   
 Encode the document into a string.  
   
-@return The document encoded into a string.  
   
 
 #### Returns ####
@@ -213,11 +201,6 @@ Encode the document into a string.
   
 Encode the document into a string. Stores the extra context information  
 into the two arguments.  
-@param [OUT] aContextString The string where the parent hierarchy  
-             information will be stored.  
-@param [OUT] aInfoString The string where extra context info will  
-             be stored.  
-@return The document encoded as a string.  
   
   
 
@@ -255,16 +238,7 @@ into the two arguments.
 ### encodeToStringWithMaxLength(aMaxLength) ###
   
 Encode the document into a string of limited size.  
-@param aMaxLength After aMaxLength characters, the encoder will stop  
-                  encoding new data.  
-                  Only values > 0 will be considered.  
-                  The returned string may be slightly larger than  
-                  aMaxLength because some serializers (eg. HTML)  
-                  may need to close some tags after they stop  
-                  encoding new data, or finish a line (72 columns  
-                  by default for the plain text serializer).  
   
-@return The document encoded into a string.  
   
 
 #### Parameters ####
@@ -300,7 +274,6 @@ Encode the document into a string of limited size.
 ### setNodeFixup(aFixup) ###
   
 Set the fixup object associated with node persistence.  
-@param aFixup The fixup object.  
   
 
 #### Parameters ####

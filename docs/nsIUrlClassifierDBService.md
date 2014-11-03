@@ -18,9 +18,6 @@ methods complete, they call the callback function.
   
 Looks up a URI in the specified tables.  
   
-@param principal: The principal containing the URI to search.  
-@param c: The callback will be called with a comma-separated list  
-       of tables to which the key belongs.  
   
 
 #### Parameters ####
@@ -66,8 +63,6 @@ hashes.
 Begin an update process.  Will throw NS_ERROR_NOT_AVAILABLE if there  
 is already an update in progress.  
   
-@param updater The update observer tied to this update.  
-@param tables A comma-separated list of tables included in this update.  
   
 
 #### Parameters ####
@@ -93,8 +88,6 @@ is already an update in progress.
 Begin a stream update.  This should be called once per url being  
 fetched.  
   
-@param table The table the contents of this stream will be associated  
-             with, or empty for the initial stream.  
   
 
 #### Parameters ####

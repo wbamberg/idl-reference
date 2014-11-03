@@ -13,8 +13,6 @@ layout: default
   
 This method constructs a new file URI   
   
-@param aFile nsIFile  
-@return reference to a new nsIURI object  
   
 
 #### Parameters ####
@@ -78,8 +76,6 @@ A local file will be created if the URL string begins with file://.
   
 Takes a local file and tries to interpret it as an internet shortcut  
 (e.g. .url files on windows).  
-@param file The local file to read  
-@return The URI the file refers to  
   
 @throw NS_ERROR_NOT_AVAILABLE if the OS does not support such files.  
 @throw NS_ERROR_NOT_AVAILABLE if this file is not an internet shortcut.  

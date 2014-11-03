@@ -53,7 +53,6 @@ Remove the element at the specified index. If aRenumber is 'true', then
 the underlying RDF graph will be 're-numbered' to account for the  
 removal.  
   
-@return the element that was removed.  
   
 
 #### Returns ####
@@ -71,9 +70,6 @@ removal.
   
 Determine the index of an element in the container.  
   
-@return The index of the specified element in the container. If  
-the element is not contained in the container, this function  
-returns '-1'.  
   
 
 #### Returns ####

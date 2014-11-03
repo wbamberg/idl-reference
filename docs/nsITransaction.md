@@ -39,7 +39,6 @@ A true value indicates that the transactions were merged successfully,
 a false value if the merge was not possible or failed. If true,  
 the transaction manager will Release() the new transacton instead of  
 pushing it on the undo stack.  
-@param aTransaction the previously executed transaction to merge.  
   
 
 #### Parameters ####

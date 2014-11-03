@@ -35,13 +35,6 @@ group.
 Create a new, empty application cache for the given cache  
 group residing in a custom directory with a custom quota.  
   
-@param group  
-   URL of the manifest  
-@param directory  
-   Actually a reference to a profile directory where to  
-   create the OfflineCache sub-dir.  
-@param quota  
-   Optional override of the default quota.  
   
 
 #### Parameters ####
@@ -88,14 +81,7 @@ Deactivate the currently-active cache object for a cache group.
   
 Deletes some or all of an application's cache entries.    
   
-@param appId  
-   The mozIApplication.localId of the application.  
   
-@param discardOnlyBrowserEntries   
-   If true, only entries marked as 'inBrowserElement' are deleted   
-   (this is used by browser applications to delete user browsing   
-   data/history.).  If false, *all* entries for the given appId are  
-   deleted (this is used for application uninstallation).  
   
 
 #### Parameters ####
@@ -132,10 +118,6 @@ This method should also propagate the entry to other
 application caches with the same opportunistic namespace, but  
 this is not currently implemented.  
   
-@param cache  
-       The cache in which the entry is cached now.  
-@param key  
-       The cache entry key.  
   
 
 #### Parameters ####

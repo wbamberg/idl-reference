@@ -23,7 +23,6 @@ files.
   
 Used to retrieve the contents of this object into a wide string.  
   
-@return wstring The string containing the data stored within this object.  
   
 
 #### Returns ####
@@ -41,11 +40,6 @@ Used to retrieve the contents of this object into a wide string.
   
 Used to set the contents of this object.  
   
-@param length The length of the string. This value should not include  
-              space for the null terminator, nor should it account for the  
-              size of a character. It should  only be the number of  
-              characters for which there is space in the string.  
-@param data   The string data to be stored.  
   
 @note  
 This makes a copy of the string argument passed in.  

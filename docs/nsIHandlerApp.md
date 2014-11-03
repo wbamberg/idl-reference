@@ -26,9 +26,7 @@ Two apps are the same if they are both either local or web handlers
 and their executables/URI templates and command line parameters are  
 the same.  
   
-@param aHandlerApp the handler app to compare to the invokant  
   
-@returns true if the two are logically equivalent, false otherwise  
   
 
 #### Parameters ####
@@ -58,10 +56,7 @@ the same.
   
 Launches the application with the specified URI.  
   
-@param aURI  
-       The URI to launch this application with  
   
-@param aWindowContext   
   
        Currently only relevant to web-handler apps.  If given, this  
        represents the docshell to load the handler in and is passed  

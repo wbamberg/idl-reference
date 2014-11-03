@@ -14,7 +14,6 @@ layout: default
 editor's document, replacing the last style sheet added (if any).  
 This is always asynchronous, and may cause network I/O.  
   
-@param aURL The style sheet to be loaded and applied.  
   
 
 #### Parameters ####
@@ -34,7 +33,6 @@ This is always asynchronous, and may cause network I/O.
 on top of any that are already there.  
 This is always asynchronous, and may cause network I/O.  
   
-@param aURL The style sheet to be loaded and applied.  
   
 
 #### Parameters ####
@@ -59,7 +57,6 @@ display behavior for editing (like showing special cursors) that will
 not be affected by loading "document" style sheets with addStyleSheet or  
 especially replaceStyleSheet.  
   
-@param aURL The style sheet to be loaded and applied.  
   
 
 #### Parameters ####
@@ -80,7 +77,6 @@ the editor's document, on top of any that are already there.
 This is always synchronous, so the same caveats about local files and no  
 non-local @import as replaceOverrideStyleSheet apply here, too.  
   
-@param aURL The style sheet to be loaded and applied.  
   
 
 #### Parameters ####
@@ -99,7 +95,6 @@ non-local @import as replaceOverrideStyleSheet apply here, too.
  Remove the given style sheet from the editor's document  
 This is always synchronous  
   
-@param aURL The style sheet to be removed  
   
 
 #### Parameters ####
@@ -118,7 +113,6 @@ This is always synchronous
  Remove the given override style sheet from the editor's document  
 This is always synchronous  
   
-@param aURL The style sheet to be removed.  
   
 
 #### Parameters ####
@@ -137,8 +131,6 @@ This is always synchronous
  Enable or disable the given style sheet from the editor's document  
 This is always synchronous  
   
-@param aURL  The style sheet to be enabled or disabled  
-@param aEnable true to enable, or false to disable the style sheet  
   
 
 #### Parameters ####
@@ -162,8 +154,6 @@ This is always synchronous
 ### getStyleSheetForURL(aURL) ###
  Get the CSSStyleSheet associated with the given URL.  
   
-@param aURL         The style sheet's URL  
-@return             the style sheet  
   
 
 #### Parameters ####
@@ -192,8 +182,6 @@ This is always synchronous
 ### getURLForStyleSheet(aStyleSheet) ###
  Get the URL associated with the given CSSStyleSheet.  
   
-@param aStyleSheet  The style sheet  
-@return             the style sheet's URL  
   
 
 #### Parameters ####

@@ -21,10 +21,6 @@ asynchronous (callback-based) loading.
   
 The string passed in is parsed into a DOM document.  
   
-@param str The UTF16 string to be parsed  
-@param contentType The content type of the string (see parseFromStream)  
-@returns The DOM document created as a result of parsing the   
-         string  
   
 
 #### Parameters ####
@@ -62,11 +58,6 @@ The string passed in is parsed into a DOM document.
 The buffer is parsed into a DOM document.  
 The charset is determined from the xml entity decl.  
   
-@param buf The octet array data to be parsed  
-@param bufLen Length (in bytes) of the data  
-@param contentType The content type of the data (see parseFromStream)  
-@returns The DOM document created as a result of parsing the   
-         string  
   
 
 #### Parameters ####
@@ -111,15 +102,6 @@ The byte stream passed in is parsed into a DOM document.
   
 Not accessible from web content.  
   
-@param stream The byte stream whose contents are parsed  
-@param charset The character set that was used to encode the byte  
-               stream. NULL if not specified.  
-@param contentLength The number of bytes in the input stream.  
-@param contentType The content type of the string - either text/xml,  
-                   application/xml, or application/xhtml+xml.  
-                   Must not be NULL.  
-@returns The DOM document created as a result of parsing the   
-         stream  
   
 
 #### Parameters ####
@@ -176,18 +158,6 @@ constructor, this will be called automatically.  This method may only be
 called once.  If this method fails, all following parse attempts will  
 fail.  
   
-@param principal The principal to use for documents we create.  
-                 If this is null, a codebase principal will be created  
-                 based on documentURI; in that case the documentURI must  
-                 be non-null.  
-@param documentURI The documentURI to use for the documents we create.  
-                   If null, the principal's URI will be used;  
-                   in that case, the principal must be non-null and its  
-                   URI must be non-null.  
-@param baseURI The baseURI to use for the documents we create.  
-               If null, the documentURI will be used.  
-@param scriptObject The object from which the context for event handling  
-                    can be got.  
   
 
 #### Parameters ####

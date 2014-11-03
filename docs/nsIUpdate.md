@@ -22,9 +22,6 @@ about what is going on.
 ### getPatchAt(index) ###
   
 Retrieves a patch.  
-@param   index  
-         The index of the patch to retrieve.  
-@returns The nsIUpdatePatch at the specified index.  
   
 
 #### Parameters ####
@@ -53,9 +50,6 @@ Retrieves a patch.
 ### serialize(updates) ###
   
 Serializes this update object into a DOM Element  
-@param   updates  
-         The document to serialize into  
-@returns The DOM Element created by the serialization process  
   
 
 #### Parameters ####

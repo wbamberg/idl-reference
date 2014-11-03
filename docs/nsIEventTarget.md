@@ -14,11 +14,6 @@ layout: default
 Dispatch an event to this event target.  This function may be called from  
 any thread, and it may be called re-entrantly.  
   
-@param event  
-  The event to dispatch.  
-@param flags  
-  The flags modifying event dispatch.  The flags are described in detail  
-  below.  
   
 @throws NS_ERROR_INVALID_ARG  
   Indicates that event is null.  
@@ -50,10 +45,6 @@ events, so this event would never run and has not been dispatched.
   
 Check to see if this event target is associated with the current thread.  
   
-@returns  
-  A boolean value that if "true" indicates that events dispatched to this  
-  event target will run on the current thread (i.e., the thread calling  
-  this method).  
   
 
 #### Returns ####

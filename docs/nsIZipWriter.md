@@ -39,8 +39,6 @@ experience problems what that.
   
 Opens a zip file.  
   
-@param aFile the zip file to open  
-@param aIoFlags the open flags for the zip file from prio.h  
   
 @throws NS_ERROR_ALREADY_INITIALIZED if a zip file is already open  
 @throws NS_ERROR_INVALID_ARG if aFile is null  
@@ -74,7 +72,6 @@ Opens a zip file.
 Returns a nsIZipEntry describing a specified zip entry or null if there  
 is no such entry in the zip file  
   
-@param aZipEntry the path of the entry  
   
 
 #### Parameters ####
@@ -93,7 +90,6 @@ is no such entry in the zip file
   
 Checks whether the zipfile contains an entry specified by zipEntry.  
   
-@param aZipEntry the path of the entry  
   
 
 #### Parameters ####
@@ -113,10 +109,6 @@ Checks whether the zipfile contains an entry specified by zipEntry.
 Adds a new directory entry to the zip file. If aZipEntry does not end with  
 "/" then it will be added.  
   
-@param aZipEntry the path of the directory entry  
-@param aModTime the modification time of the entry in microseconds  
-@param aQueue adds the operation to the background queue. Will be  
-       performed when processQueue is called.  
   
 @throws NS_ERROR_NOT_INITIALIZED if no zip file has been opened  
 @throws NS_ERROR_FILE_ALREADY_EXISTS if the path already exists in the  
@@ -155,11 +147,6 @@ Adds a new file or directory to the zip file. If the specified file is
 a directory then this will be equivalent to a call to  
 addEntryDirectory(aZipEntry, aFile.lastModifiedTime, aQueue)  
   
-@param aZipEntry the path of the file entry  
-@param aCompression the compression level, 0 is no compression, 9 is best  
-@param aFile the file to get the data and modification time from  
-@param aQueue adds the operation to the background queue. Will be  
-       performed when processQueue is called.  
   
 @throws NS_ERROR_NOT_INITIALIZED if no zip file has been opened  
 @throws NS_ERROR_FILE_ALREADY_EXISTS if the path already exists in the zip  
@@ -204,12 +191,6 @@ Adds data from a channel to the zip file. If the operation is performed
 on the queue then the channel will be opened asynchronously, otherwise  
 the channel must support being opened synchronously.  
   
-@param aZipEntry the path of the file entry  
-@param aModTime the modification time of the entry in microseconds  
-@param aCompression the compression level, 0 is no compression, 9 is best  
-@param aChannel the channel to get the data from  
-@param aQueue adds the operation to the background queue. Will be  
-       performed when processQueue is called.  
   
 @throws NS_ERROR_NOT_INITIALIZED if no zip file has been opened  
 @throws NS_ERROR_FILE_ALREADY_EXISTS if the path already exists in the zip  
@@ -257,12 +238,6 @@ the channel must support being opened synchronously.
   
 Adds data from an input stream to the zip file.  
   
-@param aZipEntry the path of the file entry  
-@param aModTime the modification time of the entry in microseconds  
-@param aCompression the compression level, 0 is no compression, 9 is best  
-@param aStream the input stream to get the data from  
-@param aQueue adds the operation to the background queue. Will be  
-       performed when processQueue is called.  
   
 @throws NS_ERROR_NOT_INITIALIZED if no zip file has been opened  
 @throws NS_ERROR_FILE_ALREADY_EXISTS if the path already exists in the zip  
@@ -310,9 +285,6 @@ Adds data from an input stream to the zip file.
   
 Removes an existing entry from the zip file.  
   
-@param aZipEntry the path of the entry to be removed  
-@param aQueue adds the operation to the background queue. Will be  
-       performed when processQueue is called.  
   
 @throws NS_ERROR_NOT_INITIALIZED if no zip file has been opened  
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress  
@@ -366,8 +338,6 @@ Closes the zip file.
   
 Make all stored(uncompressed) files align to given alignment size.  
   
-@param aAlignSize is the alignment size, valid values from 2 to 32768, and  
-must be power of 2.  
   
 @throws NS_ERROR_INVALID_ARG if aAlignSize is invalid  
 @throws <other-error> on failure to update the zip file  

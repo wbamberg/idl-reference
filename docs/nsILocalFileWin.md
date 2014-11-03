@@ -16,7 +16,6 @@ getVersionInfoValue
 Retrieve a metadata field from the file's VERSIONINFO block.  
 Throws NS_ERROR_FAILURE if no value is found, or the value is empty.  
   
-@param   aField         The field to look up.  
   
   
 
@@ -48,15 +47,6 @@ description.
 If the shortcut does not already exist and targetFile is not specified,  
 setShortcut will throw NS_ERROR_FILE_TARGET_DOES_NOT_EXIST.  
   
-@param targetFile      the path that the shortcut should target  
-@param workingDir      the working dir that should be set for the shortcut  
-@param args            the args string that should be set for the shortcut  
-@param description     the description that should be set for the shortcut  
-@param iconFile        the file containing an icon to be used for this  
-shortcut  
-@param iconIndex       this value selects a specific icon from within  
-iconFile.  If iconFile contains only one icon, this  
-value should be 0.  
   
 
 #### Parameters ####

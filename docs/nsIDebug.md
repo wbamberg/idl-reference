@@ -22,10 +22,6 @@ layout: default
   
 Show an assertion and trigger nsIDebug.break().  
   
-@param aStr assertion message  
-@param aExpr expression that failed  
-@param aFile file containing assertion  
-@param aLine line number of assertion  
   
   
 
@@ -63,9 +59,6 @@ Show an assertion and trigger nsIDebug.break().
   
 Show a warning.  
   
-@param aStr warning message  
-@param aFile file containing assertion  
-@param aLine line number of assertion  
   
 
 #### Parameters ####
@@ -96,8 +89,6 @@ Show a warning.
   
 Request to break into a debugger.  
   
-@param aFile file containing break request  
-@param aLine line number of break request  
   
 
 #### Parameters ####
@@ -122,8 +113,6 @@ Request to break into a debugger.
   
 Request the process to trigger a fatal abort.  
   
-@param aFile file containing abort request  
-@param aLine line number of abort request  
   
 
 #### Parameters ####

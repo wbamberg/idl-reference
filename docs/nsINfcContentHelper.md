@@ -27,16 +27,8 @@ layout: default
   
 Initiate Send file operation  
   
-@param window  
-       Current window  
   
-@param blob  
-       Raw data of the file to be sent. This object represents a file-like  
-       (nsIDOMFile) object of immutable, raw data. The blob data needs  
-       to be 'object wrapped' before calling this interface.  
   
-@param sessionToken  
-       Current token  
   
 Returns DOMRequest, if initiation of send file operation is successful  
 then 'onsuccess' is called else 'onerror'  
@@ -72,7 +64,6 @@ then 'onsuccess' is called else 'onerror'
   
 Register the event target.  
   
-@param target  An instance of the nsINfcDOMEventTarget.  
   
 
 #### Parameters ####
@@ -91,11 +82,7 @@ Register the event target.
   
 Register the given application id with Chrome process  
   
-@param window  
-       Current window  
   
-@param appId  
-       Application ID to be registered  
   
 
 #### Parameters ####
@@ -120,11 +107,7 @@ Register the given application id with Chrome process
   
 Unregister the given application id with Chrome process  
   
-@param window  
-       Current window  
   
-@param appId  
-       Application ID to be registered  
   
 
 #### Parameters ####
@@ -149,11 +132,7 @@ Unregister the given application id with Chrome process
   
 Checks if the given application's id is a registered peer target (with the Chrome process)  
   
-@param window  
-       Current window  
   
-@param appId  
-       Application ID to be updated with Chrome process  
   
 Returns DOMRequest, if appId is registered then 'onsuccess' is called else 'onerror'  
   
@@ -180,11 +159,7 @@ Returns DOMRequest, if appId is registered then 'onsuccess' is called else 'oner
   
 Notify the Chrome process that user has accepted to share nfc message on P2P UI  
   
-@param window  
-       Current window  
   
-@param appId  
-       Application ID that is capable of handling NFC_EVENT_PEER_READY event  
   
 
 #### Parameters ####
@@ -209,14 +184,8 @@ Notify the Chrome process that user has accepted to share nfc message on P2P UI
   
 Notify the status of sendFile operation to Chrome process  
   
-@param window  
-       Current window  
   
-@param status  
-       Status of sendFile operation  
   
-@param requestId  
-       Request ID of SendFile DOM Request  
   
 
 #### Parameters ####

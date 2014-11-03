@@ -17,10 +17,6 @@ for printing an embedded Gecko web browser window/document
   
 Print the specified DOM window  
   
-@param aThePrintSettings - Printer Settings for the print job, if aThePrintSettings is null  
-                           then the global PS will be used.  
-@param aWPListener - is updated during the print  
-@return void  
   
 
 #### Parameters ####
@@ -57,11 +53,6 @@ Print the specified DOM window
   
 Print Preview the specified DOM window  
   
-@param aThePrintSettings - Printer Settings for the print preview, if aThePrintSettings is null  
-                           then the global PS will be used.  
-@param aChildDOMWin - DOM Window to be print previewed.  
-@param aWPListener - is updated during the printpreview  
-@return void  
   
 
 #### Parameters ####
@@ -104,9 +95,6 @@ Print Preview the specified DOM window
   
 Print Preview - Navigates within the window  
   
-@param aNavType - navigation enum  
-@param aPageNum - page num to navigate to when aNavType = ePrintPreviewGoToPageNum  
-@return void  
   
 
 #### Parameters ####
@@ -141,7 +129,6 @@ Print Preview - Navigates within the window
 ### cancel() ###
   
 Cancels the current print   
-@return void  
   
 
 #### Returns ####
@@ -161,9 +148,6 @@ Returns an array of the names of all documents names (Title or URL)
 and sub-documents. This will return a single item if the attr "isFramesetDocument" is false  
 and may return any number of items is "isFramesetDocument" is true  
   
-@param  aCount - returns number of printers returned  
-@param  aResult - returns array of names  
-@return void  
   
 
 #### Parameters ####
@@ -198,7 +182,6 @@ and may return any number of items is "isFramesetDocument" is true
 ### exitPrintPreview() ###
   
 This exists PrintPreview mode and returns browser window to galley mode  
-@return void  
   
 
 #### Returns ####

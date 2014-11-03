@@ -41,9 +41,6 @@ Retrieve a specific element of the array, and QueryInterface it
 to the specified interface. null is a valid result for  
 this method, but exceptions are thrown in other circumstances  
   
-@param index position of element  
-@param uuid the IID of the requested interface  
-@param result the object, QI'd to the requested interface  
   
 @throws NS_ERROR_NO_INTERFACE when an entry exists at the  
         specified index, but the requested interface is not  
@@ -84,13 +81,6 @@ Get the position of a specific element. Note that since null is
 a valid input, exceptions are used to indicate that an element  
 is not found.  
   
-@param startIndex The initial element to search in the array  
-                  To start at the beginning, use 0 as the  
-                  startIndex  
-@param element    The element you are looking for  
-@returns a number >= startIndex which is the position of the  
-         element in the array.  
-@throws NS_ERROR_FAILURE if the element was not in the array.  
   
 
 #### Parameters ####
@@ -130,9 +120,6 @@ is not found.
   
 enumerate the array  
   
-@returns a new enumerator positioned at the start of the array  
-@throws NS_ERROR_FAILURE if the array is empty (to make it easy  
-        to detect errors), or NS_ERROR_OUT_OF_MEMORY if out of memory.  
   
 
 #### Returns ####

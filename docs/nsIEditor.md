@@ -17,14 +17,6 @@ Finalizes selection and caret for the editor.
 ### init(doc, aRoot, aSelCon, aFlags, initialValue) ###
   
 Init is to tell the implementation of nsIEditor to begin its services  
-@param aDoc          The dom document interface being observed  
-@param aRoot         This is the root of the editable section of this  
-                     document. If it is null then we get root  
-                     from document body.  
-@param aSelCon       this should be used to get the selection location  
-                     (will be null for HTML editors)  
-@param aFlags        A bitmask of flags for specifying the behavior  
-                     of the editor.  
   
 
 #### Parameters ####
@@ -75,9 +67,6 @@ tells its documentStateObservers that the document has been created.
   
 preDestroy is called before the editor goes away, and gives the editor a  
 chance to tell its documentStateObservers that the document is going away.  
-@param aDestroyingFrames set to true when the frames being edited  
-are being destroyed (so there is no need to modify any nsISelections,  
-nor is it safe to do so)  
   
 
 #### Parameters ####
@@ -97,12 +86,6 @@ nor is it safe to do so)
 ### deleteSelection(action, stripWrappers) ###
    
 DeleteSelection removes all nodes in the current selection.  
-@param aDir  if eNext, delete to the right (for example, the DEL key)  
-             if ePrevious, delete to the left (for example, the BACKSPACE key)  
-@param stripWrappers If eStrip, strip any empty inline elements left  
-                     behind after the deletion; if eNoStrip, don't.  If in  
-                     doubt, pass eStrip -- eNoStrip is only for if you're  
-                     about to insert text or similar right after.  
   
 
 #### Parameters ####
@@ -134,8 +117,6 @@ state (such as when it's saved).
 
 ### getModificationCount() ###
  Gets the modification count of the document we are editing.  
-@return the modification count of the document being edited.  
-        Zero means unchanged.  
   
 
 #### Returns ####
@@ -153,8 +134,6 @@ state (such as when it's saved).
 ### incrementModificationCount(aModCount) ###
  called each time we modify the document.  
 Increments the modification count of the document.  
-@param  aModCount  the number of modifications by which  
-                   to increase or decrease the count  
   
 
 #### Parameters ####
@@ -176,7 +155,6 @@ It is provided here so clients can create their own transactions.
 If a transaction manager is present, it is used.    
 Otherwise, the transaction is just executed directly.  
   
-@param aTxn the transaction to execute  
   
 
 #### Parameters ####
@@ -193,12 +171,6 @@ Otherwise, the transaction is just executed directly.
 
 ### enableUndo(enable) ###
  turn the undo system on or off  
-@param aEnable  if PR_TRUE, the undo system is turned on if available  
-                if PR_FALSE the undo system is turned off if it  
-                was previously on  
-@return         if aEnable is PR_TRUE, returns NS_OK if  
-                the undo system could be initialized properly  
-                if aEnable is PR_FALSE, returns NS_OK.  
   
 
 #### Parameters ####
@@ -242,9 +214,6 @@ error NS_ERROR_NOT_AVAILABLE is returned.
 
 ### canUndo(isEnabled, canUndo) ###
  returns state information about the undo system.  
-@param aIsEnabled [OUT] PR_TRUE if undo is enabled  
-@param aCanUndo   [OUT] PR_TRUE if at least one transaction is  
-                        currently ready to be undone.  
   
 
 #### Parameters ####
@@ -280,9 +249,6 @@ error NS_ERROR_NOT_AVAILABLE is returned.
 
 ### canRedo(isEnabled, canRedo) ###
  returns state information about the redo system.  
-@param aIsEnabled [OUT] PR_TRUE if redo is enabled  
-@param aCanRedo   [OUT] PR_TRUE if at least one transaction is  
-currently ready to be redone.  
   
 
 #### Parameters ####
@@ -332,12 +298,6 @@ is called once per beginTransaction.
 
 ### setShouldTxnSetSelection(should) ###
  Set the flag that prevents insertElementTxn from changing the selection  
-@param   should  Set false to suppress changing the selection;  
-                 i.e., before using InsertElement() to insert  
-                 under <head> element  
-WARNING: You must be very careful to reset back to PR_TRUE after  
-         setting PR_FALSE, else selection/caret is trashed  
-         for further editing.  
   
 
 #### Parameters ####
@@ -361,10 +321,6 @@ WARNING: You must be very careful to reset back to PR_TRUE after
  Returns the inline spell checker associated with this object. The spell  
 checker is lazily created, so this function may create the object for  
 you during this call.  
-@param  autoCreate  If true, this will create a spell checker object  
-                    if one does not exist yet for this editor. If false  
-                    and the object has not been created, this function  
-                    WILL RETURN NULL.  
   
 
 #### Parameters ####
@@ -391,8 +347,6 @@ spellcheck attribute value.
 ### setSpellcheckUserOverride(enable) ###
  Called when the user manually overrides the spellchecking state for this  
 editor.  
-@param  enable  The new state of spellchecking in this editor, as  
-                requested by the user.  
   
 
 #### Parameters ####
@@ -468,9 +422,6 @@ setAttribute() sets the attribute of aElement.
 No checking is done to see if aAttribute is a legal attribute of the node,  
 or if aValue is a legal value of aAttribute.  
   
-@param aElement    the content element to operate on  
-@param aAttribute  the string representation of the attribute to set  
-@param aValue      the value to set aAttribute to  
   
 
 #### Parameters ####
@@ -501,12 +452,6 @@ or if aValue is a legal value of aAttribute.
   
 getAttributeValue() retrieves the attribute's value for aElement.  
   
-@param aElement      the content element to operate on  
-@param aAttribute    the string representation of the attribute to get  
-@param aResultValue  [OUT] the value of aAttribute.  
-                     Only valid if aResultIsSet is PR_TRUE  
-@return              PR_TRUE if aAttribute is set on the current node,  
-                     PR_FALSE if it is not.  
   
 
 #### Parameters ####
@@ -551,8 +496,6 @@ getAttributeValue() retrieves the attribute's value for aElement.
 removeAttribute() deletes aAttribute from the attribute list of aElement.  
 If aAttribute is not an attribute of aElement, nothing is done.  
   
-@param aElement      the content element to operate on  
-@param aAttribute    the string representation of the attribute to get  
   
 
 #### Parameters ####
@@ -579,12 +522,6 @@ cloneAttribute() copies the attribute from the source node to
 the destination node and delete those not in the source.  
   
 The supplied nodes MUST BE ELEMENTS (most callers are working with nodes)  
-@param aAttribute    the name of the attribute to copy  
-@param aDestNode     the destination element to operate on  
-@param aSourceNode   the source element to copy attributes from  
-@exception NS_ERROR_NULL_POINTER at least one of the nodes is null  
-@exception NS_ERROR_NO_INTERFACE at least one of the nodes is not an  
-                                 element  
   
 
 #### Parameters ####
@@ -623,8 +560,6 @@ cloneAttributes() is similar to nsIDOMNode::cloneNode(),
   This is used when the destination node (element) already exists  
   
 The supplied nodes MUST BE ELEMENTS (most callers are working with nodes)  
-@param aDestNode     the destination element to operate on  
-@param aSourceNode   the source element to copy attributes from  
   
 
 #### Parameters ####
@@ -649,10 +584,6 @@ The supplied nodes MUST BE ELEMENTS (most callers are working with nodes)
    
 createNode instantiates a new element of type aTag and inserts it  
 into aParent at aPosition.  
-@param aTag      The type of object to create  
-@param aParent   The node to insert the new object into  
-@param aPosition The place in aParent to insert the new node  
-@return          The node created.  Caller must release aNewNode.  
   
 
 #### Parameters ####
@@ -695,11 +626,6 @@ into aParent at aPosition.
 insertNode inserts aNode into aParent at aPosition.  
 No checking is done to verify the legality of the insertion.  
 That is the responsibility of the caller.  
-@param aNode     The DOM Node to insert.  
-@param aParent   The node to insert the new object into  
-@param aPosition The place in aParent to insert the new node  
-                 0=first child, 1=second child, etc.  
-                 any number > number of current children = last child  
   
 
 #### Parameters ####
@@ -732,12 +658,6 @@ That is the responsibility of the caller.
    
 splitNode() creates a new node identical to an existing node,  
 and split the contents between the two nodes  
-@param aExistingRightNode   the node to split.  
-                            It will become the new node's next sibling.  
-@param aOffset              the offset of aExistingRightNode's  
-                            content|children to do the split at  
-@param aNewLeftNode         [OUT] the new node resulting from the split,  
-                            becomes aExistingRightNode's previous sibling.  
   
 
 #### Parameters ####
@@ -770,9 +690,6 @@ and split the contents between the two nodes
 ### joinNodes(leftNode, rightNode, parent) ###
    
 joinNodes() takes 2 nodes and merge their content|children.  
-@param aLeftNode     The left node.  It will be deleted.  
-@param aRightNode    The right node. It will remain after the join.  
-@param aParent       The parent of aExistingRightNode  
   
                      There is no requirement that the two nodes be  
                      of the same type.  However, a text node can be  
@@ -806,7 +723,6 @@ joinNodes() takes 2 nodes and merge their content|children.
 ### deleteNode(child) ###
    
 deleteNode removes aChild from aParent.  
-@param aChild    The node to delete  
   
 
 #### Parameters ####
@@ -831,7 +747,6 @@ markNodeDirty() is a no-op.
    
 markNodeDirty() sets a special dirty attribute on the node.  
 Usually this will be called immediately after creating a new node.  
-@param aNode      The node for which to insert formatting.  
   
 
 #### Parameters ####

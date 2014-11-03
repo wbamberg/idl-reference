@@ -27,8 +27,6 @@ successful, the device should reboot before the function call ever returns.
 
 ### getFotaUpdateStatus() ###
   
-@return The status of the last FOTA update. One of FOTA_UPDATE_UNKNOWN,  
-        FOTA_UPDATE_FAIL, FOTA_UPDATE_SUCCESS.  
   
 
 #### Returns ####

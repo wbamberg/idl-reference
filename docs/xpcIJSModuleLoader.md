@@ -26,11 +26,6 @@ properties on 'targetObj', or, if 'targetObj' is not specified,
 on the caller's global object. If 'EXPORTED_SYMBOLS' is not  
 found, an error is thrown.  
   
-@param resourceURI A resource:// URI string to load the module from.  
-@param targetObj  the object to install the exported properties on.  
-       If this parameter is a primitive value, this method throws  
-       an exception.  
-@returns the module code's global object.  
   
 The implementation maintains a hash of registryLocation->global obj.  
 Subsequent invocations of importModule with 'registryLocation'  
@@ -93,10 +88,6 @@ Returns true if the js file located at 'registryLocation' location has
 been loaded previously via the import method above. Returns false  
 otherwise.  
   
-@param resourceURI A resource:// URI string representing the location of  
-       the js file to be checked if it is already loaded or not.  
-@returns boolean, true if the js file has been loaded via import. false  
-         otherwise  
   
 
 #### Parameters ####

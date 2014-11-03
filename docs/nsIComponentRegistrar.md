@@ -34,13 +34,6 @@ registerFactory
   
 Register a factory with a given ContractID, CID and Class Name.  
   
-@param aClass      : CID of object  
-@param aClassName  : Class Name of CID (unused)  
-@param aContractID : ContractID associated with CID aClass. May be null  
-                     if no contract ID is needed.  
-@param aFactory    : Factory that will be registered for CID aClass.  
-                     If aFactory is null, the contract will be associated  
-                     with a previously registered CID.  
   
 
 #### Parameters ####
@@ -82,9 +75,6 @@ unregisterFactory
   
 Unregister a factory associated with CID aClass.  
   
-@param aClass   : CID being unregistered  
-@param aFactory : Factory previously registered to create instances of  
-                  CID aClass.  
   
 @throws NS_ERROR* Method failure.  
   
@@ -130,9 +120,6 @@ isCIDRegistered
   
 Returns true if a factory is registered for the CID.  
   
-@param aClass : CID queried for registeration  
-@return       : true if a factory is registered for CID   
-                false otherwise.  
   
 
 #### Parameters ####
@@ -165,9 +152,6 @@ isContractIDRegistered
   
 Returns true if a factory is registered for the contract id.  
   
-@param aClass : contract id queried for registeration  
-@return       : true if a factory is registered for contract id   
-                false otherwise.  
   
 
 #### Parameters ####
@@ -200,9 +184,6 @@ enumerateCIDs
   
 Enumerate the list of all registered CIDs.  
   
-@return : enumerator for CIDs.  Elements of the enumeration can be QI'ed  
-          for the nsISupportsID interface.  From the nsISupportsID, you   
-          can obtain the actual CID.  
   
 
 #### Returns ####
@@ -224,10 +205,6 @@ enumerateContractIDs
   
 Enumerate the list of all registered ContractIDs.  
   
-@return : enumerator for ContractIDs. Elements of the enumeration can be   
-          QI'ed for the nsISupportsCString interface.  From  the  
-          nsISupportsCString interface, you can obtain the actual   
-          Contract ID string.  
   
 
 #### Returns ####
@@ -258,7 +235,6 @@ contractIDToCID
   
 Returns the CID for a given Contract ID, if one exists and is registered.  
   
-@return : Contract ID.  
   
 
 #### Returns ####

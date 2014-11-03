@@ -13,10 +13,6 @@ layout: default
   
 Given a transferable, set the data on the native clipboard  
   
-@param  aTransferable The transferable  
-@param  anOwner The owner of the transferable  
-@param  aWhichClipboard Specifies the clipboard to which this operation applies.  
-@result NS_Ok if no errors  
   
 
 #### Parameters ####
@@ -48,9 +44,6 @@ Given a transferable, set the data on the native clipboard
   
 Given a transferable, get the clipboard data.  
   
-@param  aTransferable The transferable  
-@param  aWhichClipboard Specifies the clipboard to which this operation applies.  
-@result NS_Ok if no errors  
   
 
 #### Parameters ####
@@ -77,8 +70,6 @@ Given a transferable, get the clipboard data.
 This empties the clipboard and notifies the clipboard owner.  
 This empties the "logical" clipboard. It does not clear the native clipboard.  
   
-@param  aWhichClipboard Specifies the clipboard to which this operation applies.  
-@result NS_OK if successful.  
   
 
 #### Parameters ####
@@ -101,11 +92,6 @@ should be allowed. It does _NOT_ actually retreive the data and should be a very
 inexpensive call. All it does is check if there is data on the clipboard matching  
 any of the flavors in the given list.  
   
-@param  aFlavorList     An array of ASCII strings.  
-@param  aLength         The length of the aFlavorList.  
-@param  aWhichClipboard Specifies the clipboard to which this operation applies.  
-@outResult - if data is present matching one of   
-@result NS_OK if successful.  
   
 
 #### Parameters ####

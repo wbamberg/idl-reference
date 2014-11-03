@@ -17,11 +17,6 @@ Interface implemented by objects capable of fixing up strings into URIs
 Converts an internal URI (e.g. a wyciwyg URI) into one which we can  
 expose to the user, for example on the URL bar.  
   
-@param  aURI       The URI to be converted  
-@return nsIURI     The converted, exposable URI  
-@throws NS_ERROR_MALFORMED_URI when the exposable portion of aURI is malformed  
-@throws NS_ERROR_UNKNOWN_PROTOCOL when we can't get a protocol handler service  
-        for the URI scheme.  
   
 
 #### Parameters ####
@@ -56,10 +51,6 @@ Converts the specified string into a URI, first attempting
 to correct any errors in the syntax or other vagaries. Returns  
 a wellformed URI or nullptr if it can't.  
   
-@param aURIText    Candidate URI.  
-@param aFixupFlags Flags that govern ways the URI may be fixed up.  
-@param aPostData   The POST data to submit with the returned  
-                   URI (see nsISearchSubmission).  
   
 
 #### Parameters ####
@@ -93,10 +84,6 @@ Same as createFixupURI, but returns information about what it corrected
 (e.g. whether we could rescue the URI or "just" generated a keyword  
 search URI instead).  
   
-@param aURIText    Candidate URI.  
-@param aFixupFlags Flags that govern ways the URI may be fixed up.  
-@param aPostData   The POST data to submit with the returned  
-                   URI (see nsISearchSubmission).  
   
 
 #### Parameters ####
@@ -130,9 +117,6 @@ Converts the specified keyword string into a URI.  Note that it's the
 caller's responsibility to check whether keywords are enabled and  
 whether aKeyword is a sensible keyword.  
   
-@param aKeyword  The keyword string to convert into a URI  
-@param aPostData The POST data to submit to the returned URI  
-                 (see nsISearchSubmission).  
   
 @throws NS_ERROR_FAILURE if the resulting URI requires submission of POST  
         data and aPostData is null.  

@@ -19,8 +19,6 @@ nsIInputStream implementation with a simple character array.
   
 SetData - assign data to the input stream (copied on assignment).  
   
-@param data    - stream data  
-@param dataLen - stream data length (-1 if length should be computed)  
   
 NOTE: C++ code should consider using AdoptData or ShareData to avoid  
 making an extra copy of the stream data.  
@@ -59,8 +57,6 @@ AdoptData - assign data to the input stream.  the input stream takes
 ownership of the given data buffer and will nsMemory::Free it when  
 the input stream is destroyed.  
   
-@param data      - stream data  
-@param dataLen   - stream data length (-1 if length should be computed)  
   
 
 #### Parameters ####
@@ -87,8 +83,6 @@ ShareData - assign data to the input stream.  the input stream references
 the given data buffer until the input stream is destroyed.  the given  
 data buffer must outlive the input stream.  
   
-@param data      - stream data  
-@param dataLen   - stream data length (-1 if length should be computed)  
   
 
 #### Parameters ####

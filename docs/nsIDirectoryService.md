@@ -26,9 +26,6 @@ registerProvider
   
 Register a provider with the service.  
   
-@param prov            The service will keep a strong reference  
-                       to this object. It will be released when  
-                       the service is released.  
   
   
 
@@ -52,7 +49,6 @@ unregisterProvider
   
 Unregister a provider with the service.  
   
-@param prov              
   
   
 

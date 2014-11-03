@@ -16,9 +16,6 @@ Insert relative to the selected cell or the
 The selection is collapsed and is left in the new cell  
  at the same row,col location as the original anchor cell  
   
-@param aNumber    Number of items to insert  
-@param aAfter     If TRUE, insert after the current cell,  
-                    else insert before current cell  
   
 
 #### Parameters ####
@@ -53,7 +50,6 @@ The selection is collapsed and is left in the
  the previous selection anchor, if possible,  
  else in the closest neigboring cell  
   
-@param aNumber    Number of items to insert/delete  
   
 
 #### Parameters ####
@@ -76,7 +72,6 @@ This is what should happen when Delete key is used
 
 ### deleteTableCell(aNumber) ###
  Delete cell elements as well as contents  
-@param aNumber   Number of contiguous cells, rows, or columns  
   
 When there are more than 1 selected cells, aNumber is ignored.  
 For Delete Rows or Columns, the complete columns or rows are   
@@ -113,8 +108,6 @@ selects all cells (not TR in the case of rows)
  to through the row/column index of the aEndCell  
  aStartCell can be any location relative to aEndCell,  
   as long as they are in the same table  
- @param aStartCell  starting cell in block  
- @param aEndCell    ending cell in block  
   
 
 #### Parameters ####
@@ -149,8 +142,6 @@ selects all cells (not TR in the case of rows)
   2. Move all contents of aSourceCell to the new cell  
   3. Replace aSourceCell in the table with the new cell  
   
- @param aSourceCell   The cell to be replaced  
- @return              The new cell that replaces aSourceCell  
   
 
 #### Parameters ####
@@ -185,12 +176,6 @@ The resulting cell is in the location of the
   cell at the upper-left corner of the adjacent  
   block of selected cells  
   
-@param aMergeNonContiguousContents:    
-      If true:   
-        Non-contiguous cells are not deleted,  
-        but their contents are still moved   
-        to the upper-left cell  
-      If false: contiguous cells are ignored  
   
 If there are no selected cells,  
   and selection or caret is in a cell,  
@@ -252,8 +237,6 @@ ROWSPAN effects or if table is not "rectangular" (has short rows)
 A cell that spans across multiple cellmap locations will  
   be returned multiple times, once for each location it occupies  
   
-@param aTable                   A table in the document  
-@param aRowIndex, aColIndex     The 0-based cellmap indexes  
   
 (in C++ returns: NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
  passes NS_SUCCEEDED macro)  
@@ -291,18 +274,6 @@ Examine the returned aStartRowIndex and aStartColIndex to see
   A "layout column" is all cells sharing the same left edge  
   This is important to determine what to do when inserting or deleting a column or row  
   
- @param aTable                   A table in the document  
- @param aRowIndex, aColIndex     The 0-based cellmap indexes  
-returns values:  
- @param aCell                    The cell at this cellmap location  
- @param aStartRowIndex           The row index where cell starts  
- @param aStartColIndex           The col index where cell starts  
- @param aRowSpan                 May be 0 (to span down entire table) or number of cells spanned  
- @param aColSpan                 May be 0 (to span across entire table) or number of cells spanned  
- @param aActualRowSpan           The actual number of cellmap locations (rows) spanned by the cell  
- @param aActualColSpan           The actual number of cellmap locations (columns) spanned by the cell  
- @param aIsSelected  
- @param   
   
 (in C++ returns: NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
  passes NS_SUCCEEDED macro)  
@@ -382,10 +353,6 @@ returns values:
 ### getFirstRow(aTableElement) ###
  Get the first row element in a table  
   
-@return            The row at the requested index  
-                   Returns null if there are no rows in table  
-(in C++ returns: NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
- passes NS_SUCCEEDED macro)  
   
 
 #### Returns ####
@@ -405,13 +372,7 @@ returns values:
 ### getNextRow(aTableElement) ###
  Get the next row element starting the search from aTableElement  
   
-@param aTableElement Any TR or child-of-TR element in the document  
   
-@return            The row to start search from  
-                   and the row returned from the search  
-                   Returns null if there isn't another row  
-(in C++ returns: NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
- passes NS_SUCCEEDED macro)  
   
 
 #### Parameters ####
@@ -449,20 +410,6 @@ Used for aDirection param in SetSelectionAfterTableEdit
   
  Reset a selected cell or collapsed selection (the caret) after table editing  
   
-@param aTable      A table in the document  
-@param aRow        The row ...  
-@param aCol        ... and column defining the cell  
-                   where we will try to place the caret  
-@param aSelected   If true, we select the whole cell instead of setting caret  
-@param aDirection  If cell at (aCol, aRow) is not found,  
-                   search for previous cell in the same  
-                   column (aPreviousColumn) or row (ePreviousRow)  
-                   or don't search for another cell (aNoSearch)  
-                   If no cell is found, caret is place just before table;  
-                   and if that fails, at beginning of document.  
-                   Thus we generally don't worry about the return value  
-                    and can use the nsSetSelectionAfterTableEdit stack-based   
-                    object to insure we reset the caret in a table-editing method.  
   
 
 #### Parameters ####
@@ -516,13 +463,6 @@ Used for aDirection param in SetSelectionAfterTableEdit
   or return the parent TD or TH if selection is inside a table cell  
   Returns null if no table element is found.  
   
-@param aTagName         The tagname of returned element  
-                        Note that "td" will be returned if name  
-                        is actually "th"  
-@param aCount           How many table elements were selected  
-                        This tells us if we have multiple cells selected  
-                          (0 if element is a parent cell of selection)  
-@return                 The table element (table, row, or first selected cell)  
   
   
 
@@ -563,22 +503,7 @@ Used for aDirection param in SetSelectionAfterTableEdit
  Generally used after GetSelectedOrParentTableElement  
   to test if selected cells are complete rows or columns  
   
-@param aElement           Any table or cell element or any element  
-                          inside a table  
-                          Used to get enclosing table.   
-                          If null, selection's anchorNode is used  
   
-@return  
-    0                        aCellElement was not a cell  
-                             (returned result = NS_ERROR_FAILURE)  
-    TABLESELECTION_CELL      There are 1 or more cells selected but  
-                             complete rows or columns are not selected  
-    TABLESELECTION_ROW       All cells are in 1 or more rows  
-                             and in each row, all cells selected  
-                             Note: This is the value if all rows  
-                             (thus all cells) are selected  
-    TABLESELECTION_COLUMN    All cells are in 1 or more columns  
-                             and in each column, all cells are selected  
   
 
 #### Parameters ####
@@ -621,13 +546,6 @@ Used for aDirection param in SetSelectionAfterTableEdit
   (If multiple cells were selected this is the first in the order they were selected)  
 Assumes cell-selection model where each cell  
 is in a separate range (selection parent node is table row)  
-@param aCell     [OUT] Selected cell or null if ranges don't contain  
-                 cell selections  
-@param aRange    [OUT] Optional: if not null, return the selection range   
-                    associated with the cell  
-Returns the DOM cell element  
-  (in C++: returns NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
-   passes NS_SUCCEEDED macro)  
   
 
 #### Parameters ####
@@ -659,10 +577,6 @@ Returns the DOM cell element
   ignoring the order that the user selected them (order in the selection ranges)  
 Assumes cell-selection model where each cell  
 is in a separate range (selection parent node is table row)  
-@param aCell       Selected cell or null if ranges don't contain  
-                   cell selections  
-@param aRowIndex   Optional: if not null, return row index of 1st cell  
-@param aColIndex   Optional: if not null, return column index of 1st cell  
   
 Returns the DOM cell element  
   (in C++: returns NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
@@ -699,10 +613,6 @@ Returns the DOM cell element
 Assumes cell-selection model where each cell  
 is in a separate range (selection parent node is table row)  
 Always call GetFirstSelectedCell() to initialize stored index of "next" cell  
-@param aCell     Selected cell or null if no more selected cells  
-                    or ranges don't contain cell selections  
-@param aRange    Optional: if not null, return the selection range   
-                    associated with the cell  
   
 Returns the DOM cell element  
   (in C++: returns NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  

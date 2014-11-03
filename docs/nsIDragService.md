@@ -13,10 +13,6 @@ layout: default
   
 Starts a modal drag session with an array of transaferables   
   
-@param  aTransferables - an array of transferables to be dragged  
-@param  aRegion - a region containing rectangles for cursor feedback,   
-           in window coordinates.  
-@param  aActionType - specified which of copy/move/link are allowed  
   
 
 #### Parameters ####

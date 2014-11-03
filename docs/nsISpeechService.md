@@ -28,12 +28,6 @@ Speak the given text using the voice identified byu the given uri. See
 W3C Speech API spec for information about pitch and rate.  
 https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#utterance-attributes  
   
-@param aText  text to utter.  
-@param aUri   unique voice identifier.  
-@param aRate  rate to speak voice in.  
-@param aPitch pitch to speak voice in.  
-@param aTask  task instance for utterance, used for sending events or audio  
-                data back to browser.  
   
 
 #### Parameters ####

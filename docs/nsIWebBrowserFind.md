@@ -30,7 +30,6 @@ Finds, highlights, and scrolls into view the next occurrence of the
 search string, using the current search settings. Fails if the  
 search string is empty.  
   
-@return  Whether an occurrence was found  
   
 
 #### Returns ####

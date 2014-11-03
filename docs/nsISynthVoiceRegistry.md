@@ -13,11 +13,6 @@ layout: default
   
 Register a speech synthesis voice.  
   
-@param aService      the service that provides this voice.  
-@param aUri          a unique identifier for this voice.  
-@param aName         human-readable name for this voice.  
-@param aLang         a BCP 47 language tag.  
-@param aLocalService true if service does not require network.  
   
 
 #### Parameters ####
@@ -60,8 +55,6 @@ Register a speech synthesis voice.
   
 Remove a speech synthesis voice.  
   
-@param aService the service that was used to add the voice.  
-@param aUri     a unique identifier of an existing voice.  
   
 
 #### Parameters ####
@@ -86,8 +79,6 @@ Remove a speech synthesis voice.
   
 Set a voice as default.  
   
-@param aUri       a unique identifier of an existing voice.  
-@param aIsDefault true if this voice should be toggled as default.  
   
 
 #### Parameters ####

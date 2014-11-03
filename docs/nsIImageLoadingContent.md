@@ -41,7 +41,6 @@ Notifications from ongoing image loads will be passed to all
 registered observers.  Notifications for all request types,  
 current and pending, will be passed through.  
   
-@param aObserver the observer to register  
   
 @throws NS_ERROR_OUT_OF_MEMORY  
   
@@ -62,7 +61,6 @@ current and pending, will be passed through.
   
 Used to unregister an image decoder observer.  
   
-@param aObserver the observer to unregister  
   
 
 #### Parameters ####
@@ -81,10 +79,7 @@ Used to unregister an image decoder observer.
   
 Accessor to get the image requests  
   
-@param aRequestType a value saying which request is wanted  
   
-@return the imgIRequest object (may be null, even when no error  
-is thrown)  
   
 @throws NS_ERROR_UNEXPECTED if the request type requested is not  
 known  
@@ -132,9 +127,7 @@ Used to find out what type of request one is dealing with (eg
 which request got passed through to the imgINotificationObserver  
 interface of an observer)  
   
-@param aRequest the request whose type we want to know  
   
-@return an enum value saying what type this request is  
   
 @throws NS_ERROR_UNEXPECTED if aRequest is not known  
   
@@ -167,9 +160,7 @@ interface of an observer)
 loadImageWithChannel allows data from an existing channel to be  
 used as the image data for this content node.  
   
-@param aChannel the channel that will deliver the data  
   
-@return a stream listener to pump the image data into  
   
 @see imgILoader::loadImageWithChannel  
   
@@ -203,8 +194,6 @@ used as the image data for this content node.
   
 forceReload forces reloading of the image pointed to by currentURI  
   
-@param aNotify [optional] request should notify, defaults to true  
-@throws NS_ERROR_NOT_AVAILABLE if there is no current URI to reload  
   
 
 #### Parameters ####

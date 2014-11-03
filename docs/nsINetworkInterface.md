@@ -17,12 +17,7 @@ Information about networks that is exposed to network manager API consumers.
 Get the list of ip addresses and prefix lengths, ip address could be IPv4  
 or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.  
   
-@param ips  
-       The list of ip addresses retrieved.  
-@param prefixLengths  
-       The list of prefix lengths retrieved.  
   
-@returns the length of the lists.  
   
 
 #### Parameters ####
@@ -59,10 +54,7 @@ or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.
 Get the list of gateways, could be IPv4 or IPv6, typically 1 IPv4 or 1  
 IPv6 or one of each.  
   
-@param count  
-       The length of the list of gateways  
   
-@returns the list of gateways.  
   
 
 #### Parameters ####
@@ -92,10 +84,7 @@ IPv6 or one of each.
   
 Get the list of dnses, could be IPv4 or IPv6.  
   
-@param count  
-       The length of the list of dnses.  
   
-@returns the list of dnses.  
   
 
 #### Parameters ####

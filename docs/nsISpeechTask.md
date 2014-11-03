@@ -17,10 +17,6 @@ to the service in the speak() method.
   
 Prepare browser for speech.  
   
-@param aCallback callback object for mid-speech operations.  
-@param aChannels number of audio channels. Only required  
-                   in direct audio services  
-@param aRate     audio rate. Only required in direct audio services  
   
 
 #### Parameters ####
@@ -52,9 +48,6 @@ Prepare browser for speech.
   
 Send audio data to browser.  
   
-@param aData     an Int16Array with PCM-16 audio data.  
-@param aLandmarks an array of sample offset and landmark pairs.  
-                    Used for emiting boundary and mark events.  
   
 
 #### Parameters ####
@@ -87,8 +80,6 @@ Dispatch start event.
   
 Dispatch end event.  
   
-@param aElapsedTime time in seconds since speech has started.  
-@param aCharIndex   offset of spoken characters.  
   
 
 #### Parameters ####
@@ -113,8 +104,6 @@ Dispatch end event.
   
 Dispatch pause event. Should not be called directly by service.  
   
-@param aElapsedTime time in seconds since speech has started.  
-@param aCharIndex   offset of spoken characters.  
   
 
 #### Parameters ####
@@ -139,8 +128,6 @@ Dispatch pause event. Should not be called directly by service.
   
 Dispatch resume event. Should not be called directly by service.  
   
-@param aElapsedTime time in seconds since speech has started.  
-@param aCharIndex   offset of spoken characters.  
   
 
 #### Parameters ####
@@ -165,8 +152,6 @@ Dispatch resume event. Should not be called directly by service.
   
 Dispatch error event.  
   
-@param aElapsedTime time in seconds since speech has started.  
-@param aCharIndex   offset of spoken characters.  
   
 
 #### Parameters ####
@@ -191,9 +176,6 @@ Dispatch error event.
   
 Dispatch boundary event.  
   
-@param aName        name of boundary, 'word' or 'sentence'  
-@param aElapsedTime time in seconds since speech has started.  
-@param aCharIndex   offset of spoken characters.  
   
 
 #### Parameters ####
@@ -224,9 +206,6 @@ Dispatch boundary event.
   
 Dispatch mark event.  
   
-@param aName        mark identifier.  
-@param aElapsedTime time in seconds since speech has started.  
-@param aCharIndex   offset of spoken characters.  
   
 
 #### Parameters ####

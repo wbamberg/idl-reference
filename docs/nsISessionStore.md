@@ -18,7 +18,6 @@ tabs contained in them.
 ### getBrowserState() ###
   
 Get the current browsing state.  
-@returns a JSON string representing the session state.  
   
 
 #### Returns ####
@@ -41,8 +40,6 @@ Get the number of restore-able tabs for a browser window
   
 Get closed tab data  
   
-@param aWindow is the browser window for which to get closed tab data  
-@returns a JS array of closed tabs.  
   
 
 #### Parameters ####
@@ -70,9 +67,6 @@ Get closed tab data
 
 ### undoCloseTab(aWindow, aCloseTabData) ###
   
-@param aWindow is the browser window to reopen a closed tab in.  
-@param aCloseTabData is the data of the tab to be restored.  
-@returns a reference to the reopened tab.  
   
 
 #### Parameters ####
@@ -106,8 +100,6 @@ Get closed tab data
 
 ### forgetClosedTab(aWindow, aIndex) ###
   
-@param aWindow is the browser window associated with the closed tab.  
-@param aIndex  is the index of the closed tab to be removed (FIFO ordered).  
   
 
 #### Parameters ####
@@ -130,10 +122,7 @@ Get closed tab data
 
 ### getTabValue(aTab, aKey) ###
   
-@param aTab is the browser tab to get the value for.  
-@param aKey is the value's name.  
   
-@returns A string value or an empty string if none is set.  
   
 
 #### Parameters ####
@@ -167,9 +156,6 @@ Get closed tab data
 
 ### setTabValue(aTab, aKey, aStringValue) ###
   
-@param aTab         is the browser tab to set the value for.  
-@param aKey         is the value's name.  
-@param aStringValue is the value itself (use JSON.stringify/parse before setting JS objects).  
   
 
 #### Parameters ####
@@ -198,8 +184,6 @@ Get closed tab data
 
 ### deleteTabValue(aTab, aKey) ###
   
-@param aTab is the browser tab to get the value for.  
-@param aKey is the value's name.  
   
 
 #### Parameters ####
@@ -223,8 +207,6 @@ Get closed tab data
 ### restoreLastSession(aSessionString) ###
   
 Restores the previous browser session using a fast, lightweight strategy  
-@param aSessionString The session string to restore from. If null, the  
-                      backup session file is read from.  
   
 
 #### Parameters ####
@@ -244,7 +226,6 @@ Restores the previous browser session using a fast, lightweight strategy
   
 Removes a window from the current session history. Data from this window  
 won't be saved when its closed.  
-@param aWindow The window to remove  
   
 
 #### Parameters ####

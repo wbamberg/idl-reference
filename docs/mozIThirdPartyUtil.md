@@ -29,7 +29,6 @@ For example, the URI "http://mail.google.com/" is not third party with
 respect to "http://images.google.com/", but "http://mail.yahoo.com/" and  
 "http://192.168.1.1/" are.  
   
-@return true if aFirstURI is third party with respect to aSecondURI.  
   
 @throws if either URI is null, has a malformed host, or has an empty host  
         and is not a file:// URI.  
@@ -65,18 +64,11 @@ Therefore, each level in the window hierarchy is tested. (This means that
 nested iframes with different base domains, even though the bottommost and  
 topmost URIs might be equal, will be considered third party.)  
   
-@param aWindow  
-       The bottommost window in the hierarchy.  
-@param aURI  
-       A URI to test against. If null, the URI of the principal  
-       associated with 'aWindow' will be used.  
   
 For example, if 'aURI' is "http://mail.google.com/", 'aWindow' has a URI  
 of "http://google.com/", and its parent is the topmost content window with  
 a URI of "http://mozilla.com", the result will be true.  
   
-@return true if 'aURI' is third party with respect to any of the URIs  
-        associated with aWindow and its same-type parents.  
   
 @throws if aWindow is null; the same-type parent of any window in the  
         hierarchy cannot be determined; or the URI associated with any  
@@ -144,18 +136,11 @@ third party. This is done as follows:
 Therefore, both the channel's URI and each level in the window hierarchy  
 associated with the channel is tested.  
   
-@param aChannel  
-       The channel associated with the load.  
-@param aURI  
-       A URI to test against. If null, the URI of the channel will be used.  
   
 For example, if 'aURI' is "http://mail.google.com/", 'aChannel' has a URI  
 of "http://google.com/", and its parent is the topmost content window with  
 a URI of "http://mozilla.com", the result will be true.  
   
-@return true if aURI is third party with respect to the channel URI or any  
-        of the URIs associated with the same-type window hierarchy of the  
-        channel.  
   
 @throws if 'aChannel' is null; the channel has no notification callbacks or  
         an associated window; or isThirdPartyWindow throws.  
@@ -206,10 +191,7 @@ be the exact host. The result of this function should only be used in exact
 string comparisons, since substring comparisons will not be valid for the  
 special cases elided above.  
   
-@param aHostURI  
-       The URI to analyze.  
   
-@return the base domain.  
   
 
 #### Parameters ####

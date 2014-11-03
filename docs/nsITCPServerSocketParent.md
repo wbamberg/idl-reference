@@ -18,8 +18,6 @@ It is used in the server socket implementation on the parent side.
   
 Trigger a callback in the content process when the socket accepts any request.  
   
-@param socket  
-       The socket generated in accepting any open request on the parent side.  
   
 
 #### Parameters ####
@@ -38,14 +36,6 @@ Trigger a callback in the content process when the socket accepts any request.
   
 Trigger a callback in the content process when an error occurs.  
   
-@param message  
-       The error message.  
-@param filename  
-       The file name in which the error occured.  
-@param lineNumber  
-       The line number in which the error occured.  
-@param columnNumber  
-       The column number in which the error occured.  
   
 
 #### Parameters ####

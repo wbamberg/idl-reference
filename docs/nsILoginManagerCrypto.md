@@ -13,8 +13,6 @@ layout: default
   
 encrypt  
   
-@param plainText  
-       The string to be encrypted.  
   
 Encrypts the specified string, returning the ciphertext value.  
   
@@ -41,8 +39,6 @@ Can throw if the user cancels entry of their master password.
   
 decrypt  
   
-@param cipherText  
-       The string to be decrypted.  
   
 Decrypts the specified string, returning the plaintext value.  
   

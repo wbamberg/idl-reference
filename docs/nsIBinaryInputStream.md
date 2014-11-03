@@ -25,7 +25,6 @@ little-endian platforms.
   
 Read 8-bits from the stream.  
   
-@return that byte to be treated as a boolean.  
   
 
 #### Returns ####
@@ -67,7 +66,6 @@ Read an 16-bit pascal style string from the stream.
   
 Read an opaque byte array from the stream.  
   
-@param aLength the number of bytes that must be read.  
   
 @throws NS_ERROR_FAILURE if it can't read aLength bytes  
   
@@ -89,7 +87,6 @@ Read an opaque byte array from the stream.
 Read an opaque byte array from the stream, storing the results  
 as an array of PRUint8s.  
   
-@param aLength the number of bytes that must be read.  
   
 @throws NS_ERROR_FAILURE if it can't read aLength bytes  
   
@@ -110,12 +107,7 @@ as an array of PRUint8s.
   
 Read opaque bytes from the stream, storing the results in an ArrayBuffer.  
   
-@param aLength the number of bytes that must be read  
-@param aArrayBuffer the arraybuffer in which to store the results  
-Note: passing view.buffer, where view is an ArrayBufferView of an  
-      ArrayBuffer, is not valid unless view.byteOffset == 0.  
   
-@return The number of bytes actually read into aArrayBuffer.  
   
 
 #### Parameters ####

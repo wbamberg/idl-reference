@@ -21,8 +21,6 @@ from this nsIMobileConnection instance.
   
 The network types supported by this radio.  
   
-@return an array of DOMString  
-        Possible values: 'gsm', 'wcdma', 'cdma', 'evdo', 'lte'.  
   
 
 #### Returns ####
@@ -41,8 +39,6 @@ The network types supported by this radio.
   
 Search for available networks.  
   
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifyGetNetworksSuccess() will be called. And the  
 result will be an array of nsIMobileNetworkInfo.  
@@ -69,10 +65,6 @@ Otherwise, the notifyError() will be called, and the error will be either
 Manually selects the passed in network, overriding the radio's current  
 selection.  
   
-@param network  
-       The manually selecting network.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -103,8 +95,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Tell the radio to automatically select a network.  
   
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -129,14 +119,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Set preferred network type.  
   
-@param type  
-       DOMString indicates the desired preferred network type.  
-       Possible values: 'wcdma/gsm', 'gsm', 'wcdma', 'wcdma/gsm-auto',  
-       'cdma/evdo', 'cdma', 'evdo', 'wcdma/gsm/cdma/evdo',  
-       'lte/cdma/evdo', 'lte/wcdma/gsm', 'lte/wcdma/gsm/cdma/evdo' or  
-       'lte'.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -171,8 +153,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Query current preferred network type.  
   
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccessString() will be called. And the result  
 will be a string indicating the current preferred network type. The value  
@@ -201,11 +181,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Set roaming preference.  
   
-@param mode  
-       DOMString indicates the desired roaming preference.  
-       Possible values: 'home', 'affiliated', or 'any'.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -237,8 +212,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Query current roaming preference.  
   
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccessWithString() will be called. And the result  
 will be a string indicating the current roaming preference. The value will  
@@ -265,12 +238,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Set voice privacy preference.  
   
-@param enabled  
-       Boolean indicates the preferred voice privacy mode used in voice  
-       scrambling in CDMA networks. 'True' means the enhanced voice security  
-       is required.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -303,8 +270,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Query current voice privacy mode.  
   
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccessWithBoolean() will be called. And the result  
 will be a boolean indicating the current voice privacy mode.  
@@ -330,11 +295,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Send a MMI message.  
   
-@param mmi  
-       DOMString containing an MMI string that can be associated to a  
-       USSD request or other RIL functionality.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySendCancelMmiSuccess*() will be called. And the  
 result will contain the information about the mmi operation.  
@@ -365,8 +325,6 @@ Otherwise, the notifyError() will be called.
   
 Cancel the current MMI request if one exists.  
   
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySendCancelMmiSuccess*() will be called. And the  
 result will contain the information about the mmi operation.  
@@ -390,11 +348,6 @@ Otherwise, the notifyError() will be called.
   
 Queries current call forwarding options.  
   
-@param reason  
-       Indicates the reason the call is being forwarded. It shall be one of  
-       the nsIMobileConnectionService.CALL_FORWARD_REASON_* values.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifyGetCallForwardingSuccess() will be called. And the  
 result will be an array of nsIMobileCallForwardingOptions.  
@@ -428,19 +381,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Configures call forwarding options.  
   
-@param action  
-       One of the nsIMobileConnection.CALL_FORWARD_ACTION_* values.  
-@param reason  
-       One of the nsIMobileConnection.CALL_FORWARD_REASON_* values.  
-@param number  
-       Phone number of forwarding address.  
-@param timeSeconds  
-       When "no reply" is enabled or queried, this gives the time in  
-       seconds to wait before call is forwarded.  
-@param serviceClass  
-       One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -496,14 +436,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Queries current call barring status.  
   
-@param program  
-       One of the nsIMobileConnection.CALL_BARRING_PROGRAM_* values.  
-@param password  
-       Call barring password. Use "" if no password specified.  
-@param serviceClass  
-       One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifyGetCallBarringSuccess() will be called. And the  
 result will contain correct 'enabled' property indicating the status of  
@@ -548,16 +480,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Configures call barring option.  
   
-@param program  
-       One of the nsIMobileConnection.CALL_BARRING_PROGRAM_* values.  
-@param enabled  
-       Enable or disable the call barring program.  
-@param password  
-       Call barring password. Use "" if no password specified.  
-@param serviceClass  
-       One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -606,12 +528,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Change call barring facility password.  
   
-@param pin  
-       Old call barring password.  
-@param newPin  
-       New call barring password.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -648,10 +564,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Configures call waiting options.  
   
-@param enabled  
-       Boolean indicates the desired call waiting status.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -682,8 +594,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Queries current call waiting options.  
   
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccessWithBoolean() will be called. And the result  
 will be a boolean indicating the call waiting status.  
@@ -710,10 +620,6 @@ Otherwise, the notifyError() will be called, and the error will be either
 Enables or disables the presentation of the calling line identity (CLI) to  
 the called party when originating a call.  
   
-@param clirMode  
-       One of the nsIMobileConnection.CLIR_* values.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -744,8 +650,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Queries current CLIR status.  
   
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifyGetClirStatusSuccess() will be called. And the  
 result will be a an object containing CLIR 'n' and 'm' parameter.  
@@ -772,8 +676,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Exit emergency callback mode.  
   
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -798,10 +700,6 @@ Otherwise, the notifyError() will be called, and the error will be either
   
 Set radio enabled/disabled.  
   
-@param enabled  
-       Boolean indicates the desired radio power. True to enable the radio.  
-@param requestCallback  
-       Called when request is finished.  
   
 If successful, the notifySuccess() will be called.  
   
@@ -836,9 +734,6 @@ Note: Request is not available when radioState is null, 'enabling', or
   
 Request neighboring cell ids in GSM/UMTS network.  
   
-@param callback  
-       Called when request is finished. See nsINeighboringCellIdsCallback  
-       for details.  
   
 
 #### Parameters ####
@@ -859,9 +754,6 @@ Request neighboring cell ids in GSM/UMTS network.
 Request all of the current cell information known to the radio, including  
 neighboring cells.  
   
-@param callback  
-       Called when request is finished. See nsICellInfoListCallback  
-       for details.  
   
 
 #### Parameters ####

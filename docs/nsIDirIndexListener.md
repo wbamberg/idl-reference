@@ -18,9 +18,6 @@ from a protocol. They can then be transformed into an output format
   
 Called for each directory entry  
   
-@param request - the request  
-@param ctxt - opaque parameter  
-@param index - new index to add  
   
 
 #### Parameters ####
@@ -51,9 +48,6 @@ Called for each directory entry
   
 Called for each information line  
   
-@param request - the request  
-@param ctxt - opaque parameter  
-@param info - new info to add  
   
 
 #### Parameters ####

@@ -69,8 +69,6 @@ one or more of the bits in typeBits.
 ### addNamespaces(namespaces) ###
   
 Add a set of namespace entries to the application cache.  
-@param namespaces  
-       An nsIArray of nsIApplicationCacheNamespace entries.  
   
 
 #### Parameters ####

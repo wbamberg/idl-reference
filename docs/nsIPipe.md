@@ -41,18 +41,6 @@ automatically closed when the respective pipe ends are released.
   
 initialize this pipe  
   
-@param nonBlockingInput  
-       true specifies non-blocking input stream behavior  
-@param nonBlockingOutput  
-       true specifies non-blocking output stream behavior  
-@param segmentSize  
-       specifies the segment size in bytes (pass 0 to use default value)  
-@param segmentCount  
-       specifies the max number of segments (pass 0 to use default  
-       value).   Passing UINT32_MAX here causes the pipe to have  
-       "infinite" space.  This mode can be useful in some cases, but  
-       should always be used with caution.  The default value for this  
-       parameter is a finite value.  
   
 
 #### Parameters ####

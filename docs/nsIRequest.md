@@ -23,10 +23,6 @@ returns successfully).
   
 Requests can become pending multiple times during their lifetime.  
   
-@return TRUE if the request has yet to reach completion.  
-@return FALSE if the request has reached completion (e.g., after  
-  OnStopRequest has fired).  
-@note Suspended requests are still considered pending.  
   
 
 #### Returns ####
@@ -57,7 +53,6 @@ removal from the load group (if any) must also happen asynchronously.
 Requests that use nsIStreamListener must not call onDataAvailable  
 anymore after cancel has been called.  
   
-@param aStatus the reason for canceling this request.  
   
 NOTE: most nsIRequest implementations expect aStatus to be a  
 failure code; however, some implementations may allow aStatus to  

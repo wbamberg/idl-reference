@@ -14,8 +14,6 @@ layout: default
 Get data from a Drag&Drop. Can be called while the drag is in process  
 or after the drop has completed.    
   
-@param  aTransferable the transferable for the data to be put into  
-@param  aItemIndex which of multiple drag items, zero-based  
   
 
 #### Parameters ####

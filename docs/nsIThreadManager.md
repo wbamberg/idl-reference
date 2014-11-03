@@ -16,13 +16,7 @@ An interface for creating and locating nsIThread instances.
   
 Create a new thread (a global, user PRThread).  
   
-@param creationFlags  
-  Reserved for future use.  Pass 0.  
-@param stackSize  
-  Number of bytes to reserve for the thread's stack.  
   
-@returns  
-  The newly created nsIThread object.  
   
 
 #### Parameters ####
@@ -59,12 +53,7 @@ Create a new thread (a global, user PRThread).
 Get the nsIThread object (if any) corresponding to the given PRThread.  
 This method returns null if there is no corresponding nsIThread.  
   
-@param prthread  
-  The PRThread of the nsIThread being requested.  
   
-@returns  
-  The nsIThread object corresponding to the given PRThread or null if no  
-  such nsIThread exists.  
   
 
 #### Parameters ####

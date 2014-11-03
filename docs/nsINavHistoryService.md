@@ -28,8 +28,6 @@ as following a bookmark.
   
 Designates the url as having been explicitly typed in by the user.  
   
-@param aURI  
-       URI of the page to be marked.  
   
 
 #### Parameters ####
@@ -49,8 +47,6 @@ Designates the url as having been explicitly typed in by the user.
 Designates the url as coming from a link explicitly followed by  
 the user (for example by clicking on it).  
   
-@param aURI  
-       URI of the page to be marked.  
   
 
 #### Parameters ####
@@ -131,10 +127,6 @@ Runs the passed callback in batch mode. Use this when a lot of things
 are about to change. Calls can be nested, observers will only be  
 notified when all batches begin/end.  
   
-@param aCallback  
-       nsINavHistoryBatchCallback interface to call.  
-@param aUserData  
-       Opaque parameter passed to nsINavBookmarksBatchCallback  
   
 
 #### Parameters ####

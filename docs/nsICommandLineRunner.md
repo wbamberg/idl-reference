@@ -27,8 +27,6 @@ way.
   
 On Windows, the "native" character set is UTF-8, not the native codepage.  
   
-@param workingDir The working directory for resolving file and URI paths.  
-@param state      The nsICommandLine.state flag.  
   
 
 #### Parameters ####

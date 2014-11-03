@@ -32,20 +32,6 @@ uses. Even if you know the locale, the format might be customized by the
 user. Therefore you should not use the returned values in contexts where  
 you depend on any specific format or language.  
   
-@param locale  
-       Locale code of locale used to format the date or an empty string  
-       to follow user preference.  
-@param dateFormatSelector  
-       Indicate which format should preferably be used for the date.  
-       Use one of the dateFormat* constants.  
-@param timeFormatSelector  
-       Indicate which format should preferably be used for the time.  
-       Use one of the timeFormat* constants.  
-@param year, month, day, hour, minute and second  
-       The date and time to be formatted, given in the computer's local  
-       time zone.  
-@return The date and time formatted as human readable text according to  
-        user preferences or the given locale.  
   
 
 #### Parameters ####

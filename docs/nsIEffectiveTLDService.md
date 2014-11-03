@@ -23,9 +23,7 @@ If consumers wish to compare the result of this method against the host from
 another nsIURI, the host should be obtained using nsIURI::GetAsciiHost().  
 In the case of nested URIs, the innermost URI will be used.  
   
-@param   aURI   The URI to be analyzed  
   
-@returns the public suffix  
   
 @throws NS_ERROR_UNEXPECTED   
         or other error returned by nsIIDNService::normalize when   
@@ -81,11 +79,7 @@ If consumers wish to compare the result of this method against the host from
 another nsIURI, the host should be obtained using nsIURI::GetAsciiHost().  
 In the case of nested URIs, the innermost URI will be used.  
   
-@param   aURI               The URI to be analyzed  
-@param   aAdditionalParts   Number of domain name parts to be  
-                            returned in addition to the public suffix  
   
-@returns the base domain (public suffix plus the requested number of additional parts)  
   
 @throws NS_ERROR_UNEXPECTED   
         or other error returned by nsIIDNService::normalize when   
@@ -137,10 +131,6 @@ nsIURI is available. Only use this method if this is not the case.
   
 Returns the public suffix of a host string. Otherwise identical to getPublicSuffix().  
   
-@param   aHost   The host to be analyzed. Any additional parts (e.g. scheme,  
-                 port, or path) will cause this method to throw. ASCII/ACE and  
-                 UTF8 encodings are acceptable as input; normalization will  
-                 be performed as specified in getBaseDomain().  
   
 @see     getPublicSuffix()  
   
@@ -167,10 +157,6 @@ nsIURI is available. Only use this method if this is not the case.
   
 Returns the base domain of a host string. Otherwise identical to getBaseDomain().  
   
-@param   aHost   The host to be analyzed. Any additional parts (e.g. scheme,  
-                 port, or path) will cause this method to throw. ASCII/ACE and  
-                 UTF8 encodings are acceptable as input; normalization will  
-                 be performed as specified in getBaseDomain().  
   
 @see     getBaseDomain()  
   
@@ -198,10 +184,6 @@ domain, it will throw NS_ERROR_INSUFFICIENT_DOMAIN_LEVELS.
 For example: "player.bbc.co.uk" would return "bbc.co.uk" and  
              "bbc.co.uk" would throw NS_ERROR_INSUFFICIENT_DOMAIN_LEVELS.  
   
-@param   aHost   The host to be analyzed. Any additional parts (e.g. scheme,  
-                 port, or path) will cause this method to throw. ASCII/ACE and  
-                 UTF8 encodings are acceptable as input; normalization will  
-                 be performed as specified in getBaseDomain().  
   
 
 #### Parameters ####

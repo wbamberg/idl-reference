@@ -90,7 +90,6 @@ layout: default
   
 |aCrError| nsresult: the NS_ERROR defined in Components.results.  
   
-@returns the error code defined in nsIMobileMessageCallback  
   
 
 #### Returns ####

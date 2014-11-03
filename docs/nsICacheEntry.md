@@ -25,9 +25,6 @@ will not be evicted from the cache for the duration of forced validity.
 This means that there is a potential problem if the number of forced valid  
 entries grows to take up more space than the cache size allows.  
   
-@param aSecondsToTheFuture  
-       the number of seconds the default cache validation behavior will be  
-       overridden before it returns to normal  
   
 
 #### Parameters ####
@@ -49,11 +46,7 @@ Open blocking input stream to cache data.  Use the stream transport
 service to asynchronously read this stream on a background thread.  
 The returned stream MAY implement nsISeekableStream.  
   
-@param offset  
-       read starting from this offset into the cached data.  an offset  
-       beyond the end of the stream has undefined consequences.  
   
-@return non-blocking, buffered input stream.  
   
 
 #### Parameters ####
@@ -88,11 +81,7 @@ MAY implement nsISeekableStream.
 If opening an output stream to existing cached data, the data will be  
 truncated to the specified offset.  
   
-@param offset  
-       write starting from this offset into the cached data.  an offset  
-       beyond the end of the stream has undefined consequences.  
   
-@return blocking, buffered output stream.  
   
 
 #### Parameters ####
@@ -167,14 +156,6 @@ Doom this entry and open a new, empty, entry for write.  Consumer has
 to exchange the entry this method is called on for the newly created.  
 Used on 200 responses to conditional requests.  
   
-@param aMemoryOnly  
-   - whether the entry is to be created as memory/only regardless how  
-     the entry being recreated persistence is set  
-@returns  
-   - an entry that can be used to write to  
-@throws  
-   - NS_ERROR_NOT_AVAILABLE when the entry cannot be from some reason  
-     recreated for write  
   
 
 #### Parameters ####
@@ -239,12 +220,6 @@ Marks the entry as valid when write access is acquired.
   
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK  
-@param aWriteAllowed  
-   Consumer indicates whether write to the entry is allowed for it.  
-   Depends on implementation how the flag is handled.  
-@returns  
-   true when write access is acquired for this entry,  
-   false otherwise  
   
 
 #### Parameters ####

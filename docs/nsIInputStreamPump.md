@@ -28,29 +28,6 @@ transport service.  More details are provided below.
   
 Initialize the input stream pump.  
   
-@param aStream  
-       contains the data to be read.  if the input stream is non-blocking,  
-       then it will be QI'd to nsIAsyncInputStream.  if the QI succeeds  
-       then the stream will be read directly.  otherwise, it will be read  
-       on a background thread using the stream transport service.  
-@param aStreamPos  
-       specifies the stream offset from which to start reading.  the  
-       offset value is absolute.  pass -1 to specify the current offset.  
-       NOTE: this parameter is ignored if the underlying stream does not  
-       implement nsISeekableStream.  
-@param aStreamLen  
-       specifies how much data to read from the stream.  pass -1 to read  
-       all data available in the stream.  
-@param aSegmentSize  
-       if the stream transport service is used, then this parameter  
-       specifies the segment size for the stream transport's buffer.  
-       pass 0 to specify the default value.  
-@param aSegmentCount  
-       if the stream transport service is used, then this parameter  
-       specifies the segment count for the stream transport's buffer.  
-       pass 0 to specify the default value.  
-@param aCloseWhenDone  
-       if true, the input stream will be closed after it has been read.  
   
 
 #### Parameters ####
@@ -111,10 +88,6 @@ Initialize the input stream pump.
 asyncRead causes the input stream to be read in chunks and delivered  
 asynchronously to the listener via OnDataAvailable.  
   
-@param aListener  
-       receives notifications.  
-@param aListenerContext  
-       passed to listener methods.  
   
 
 #### Parameters ####

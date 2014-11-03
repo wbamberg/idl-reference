@@ -43,10 +43,7 @@ Notes:
   
 Prevents the drag from starting  
   
-@param event DOM event (drag gesture)  
   
-@return TRUE  drag can proceed  
-@return FALSE drag is cancelled, does not go to OS  
   
 
 #### Parameters ####
@@ -76,14 +73,7 @@ Prevents the drag from starting
   
 Tells gecko whether a drop is allowed on this content area  
   
-@param event   DOM event (drag over)  
-@param session the drag session from which client can get  
-                  the flavors present or the actual data  
   
-@return TRUE  indicates to OS that if a drop does happen on this  
-               browser, it will be accepted.  
-@return FALSE indicates to OS drop is not allowed. On win32, this  
-               will change the cursor to "reject".  
   
 
 #### Parameters ####
@@ -125,12 +115,7 @@ Because this can be called many times, it is highly recommended
 that the implementation be very efficient so user feedback is  
 not negatively impacted.  
   
-@param event  DOM event (drag drop); null if triggered by copy.  
-@param trans  the transferable holding the list of flavors  
-              and the data for each flavor  
   
-@return TRUE  copy/drag can proceed  
-@return FALSE copy/drag is cancelled, does not go to OS  
   
 
 #### Parameters ####
@@ -168,13 +153,7 @@ not negatively impacted.
 Provide an alternative action to the built-in behavior when  
 something is dropped on the browser or in an editor  
   
-@param event  DOM event (drag drop); null if triggered by paste.  
-@param trans  the transferable holding the list of flavors  
-              and the data for each flavor  
   
-@return TRUE  action was handled, do not perform built-in  
-               behavior  
-@return FALSE action was not overridden, do built-in behavior  
   
 
 #### Parameters ####

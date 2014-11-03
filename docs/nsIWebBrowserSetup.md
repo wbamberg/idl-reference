@@ -21,8 +21,6 @@ object; you can do so at any time during the life cycle of the browser.
 Sets an integer or boolean property on the new web browser object.  
 Only PR_TRUE and PR_FALSE are legal boolean values.  
   
-@param aId The identifier of the property to be set.  
-@param aValue The value of the property.  
   
 
 #### Parameters ####

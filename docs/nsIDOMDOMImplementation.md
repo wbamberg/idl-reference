@@ -28,8 +28,6 @@ http://www.w3.org/TR/DOM-Level-2-Core/
 Returns an HTML document with a basic DOM already constructed and with an  
 appropriate title element.  
   
-@param title the title of the Document  
-@see <http://www.whatwg.org/html/#creating-documents>  
   
 
 #### Parameters ####

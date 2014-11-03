@@ -23,7 +23,6 @@ called: OnStop is called without calling this function if errors occur
 during connection setup.  If the websocket connection is successful,  
 OnStart will be called before any other calls to this API.  
   
-@param aContext user defined context  
   
 
 #### Parameters ####
@@ -48,8 +47,6 @@ nsIWebSocketChannel will release its reference to the listener.
 Note: this event can be received in error cases even if  
 nsIWebSocketChannel::Close() has not been called.  
   
-@param aContext user defined context  
-@param aStatusCode reason for stopping (NS_OK if completed successfully)  
   
 
 #### Parameters ####
@@ -74,8 +71,6 @@ nsIWebSocketChannel::Close() has not been called.
   
 Called to deliver text message.  
   
-@param aContext user defined context  
-@param aMsg the message data  
   
 
 #### Parameters ####
@@ -100,8 +95,6 @@ Called to deliver text message.
   
 Called to deliver binary message.  
   
-@param aContext user defined context  
-@param aMsg the message data  
   
 
 #### Parameters ####
@@ -126,8 +119,6 @@ Called to deliver binary message.
   
 Called to acknowledge message sent via sendMsg() or sendBinaryMsg.  
   
-@param aContext user defined context  
-@param aSize number of bytes placed in OS send buffer  
   
 
 #### Parameters ####
@@ -159,9 +150,6 @@ onBinaryMessageAvailable() or onAcknowledge() will be delievered
 to the listener after onServerClose(), though outgoing messages can still  
 be sent through the nsIWebSocketChannel connection.  
   
-@param aContext user defined context  
-@param aCode the websocket closing handshake close code.  
-@param aReason the websocket closing handshake close reason  
   
   
 

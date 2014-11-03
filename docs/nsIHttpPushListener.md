@@ -28,10 +28,6 @@ will receive the normal sequence of OnStartRequest(),
   
 The new channel can be canceled after the AsyncOpen if it is not wanted.  
   
-@param associatedChannel  
-       the monitor channel that was recieved on  
-@param pushChannel  
-       a channel to the resource which is being pushed  
   
 
 #### Parameters ####

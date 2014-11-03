@@ -22,17 +22,7 @@ refers to the inner or outer area. The inner area refers to just
 the embedded area, wheras the outer area can also include any   
 surrounding chrome, window frame, title bar, and so on.  
   
-@param flags  Combination of position, inner and outer size flags.  
-@param x      Left hand corner of the outer area.  
-@param y      Top corner of the outer area.  
-@param cx     Width of the inner or outer area.  
-@param cy     Height of the inner or outer area.  
   
-@return <code>NS_OK</code> if operation was performed correctly;  
-        <code>NS_ERROR_UNEXPECTED</code> if window could not be  
-          destroyed;  
-        <code>NS_ERROR_INVALID_ARG</code> for bad flag combination  
-          or illegal dimensions.  
   
 @see getDimensions  
 @see DIM_FLAGS_POSITION  
@@ -96,11 +86,6 @@ surrounding chrome, window frame, title bar, and so on.
 Gets the dimensions of the window. The caller may pass  
 <CODE>nullptr</CODE> for any value it is uninterested in receiving.  
   
-@param flags  Combination of position, inner and outer size flag .  
-@param x      Left hand corner of the outer area; or <CODE>nullptr</CODE>.  
-@param y      Top corner of the outer area; or <CODE>nullptr</CODE>.  
-@param cx     Width of the inner or outer area; or <CODE>nullptr</CODE>.  
-@param cy     Height of the inner or outer area; or <CODE>nullptr</CODE>.  
   
 @see setDimensions  
 @see DIM_FLAGS_POSITION  

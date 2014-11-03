@@ -35,9 +35,6 @@ Called to obtain the tooltip text for a node.
 @arg aNode The node to obtain the text from.  
 @arg aText The tooltip text.  
   
-@return <CODE>PR_TRUE</CODE> if tooltip text is associated  
-        with the node and was returned in the aText argument;  
-        <CODE>PR_FALSE</CODE> otherwise.  
   
 
 #### Returns ####

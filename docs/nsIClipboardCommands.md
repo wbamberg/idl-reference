@@ -19,8 +19,6 @@ clipboard. The webshell implements this interface.
   
 Returns whether there is a selection and it is not read-only.  
   
-@return <code>true</code> if the current selection can be cut,  
-         <code>false</code> otherwise.  
   
 
 #### Returns ####
@@ -39,8 +37,6 @@ Returns whether there is a selection and it is not read-only.
   
 Returns whether there is a selection and it is copyable.  
   
-@return <code>true</code> if there is a selection,  
-         <code>false</code> otherwise.  
   
 
 #### Returns ####
@@ -59,8 +55,6 @@ Returns whether there is a selection and it is copyable.
   
 Returns whether we can copy a link location.  
   
-@return <code>true</code> if a link is selected,  
-          <code>false</code> otherwise.  
   
 
 #### Returns ####
@@ -79,8 +73,6 @@ Returns whether we can copy a link location.
   
 Returns whether we can copy an image location.  
   
-@return <code>true</code> if an image is selected,  
-<code>false</code> otherwise.  
   
 
 #### Returns ####
@@ -99,8 +91,6 @@ Returns whether we can copy an image location.
   
 Returns whether we can copy an image's contents.  
   
-@return <code>true</code> if an image is selected,  
-         <code>false</code> otherwise  
   
 
 #### Returns ####
@@ -120,9 +110,6 @@ Returns whether we can copy an image's contents.
 Returns whether the current contents of the clipboard can be  
 pasted and if the current selection is not read-only.  
   
-@return <code>true</code> there is data to paste on the clipboard  
-         and the current selection is not read-only,  
-         <code>false</code> otherwise  
   
 
 #### Returns ####

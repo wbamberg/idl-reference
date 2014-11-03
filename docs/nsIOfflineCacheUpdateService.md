@@ -49,12 +49,6 @@ description.
   
 Checks whether a principal should have access to the offline  
 cache.  
-@param aPrincipal  
-       The principal to check.  
-@param aPrefBranch  
-       The pref branch to use to check the  
-       offline-apps.allow_by_default pref.  If not specified,  
-       the pref service will be used.  
   
 
 #### Parameters ####
@@ -81,12 +75,6 @@ cache.
   
 Checks whether a document at the given URI should have access  
 to the offline cache.  
-@param aURI  
-       The URI to check  
-@param aPrefBranch  
-       The pref branch to use to check the  
-       offline-apps.allow_by_default pref.  If not specified,  
-       the pref service will be used.  
   
 
 #### Parameters ####

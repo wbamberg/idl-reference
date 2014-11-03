@@ -17,13 +17,6 @@ the taskbar. This class wraps around the native functionality to do this.
   
 Sets the overlay icon and its corresponding alt text.  
   
-@param statusIcon The handle to the overlay icon. The icon will be scaled  
-                  to the small icon size (16x16 at 96 dpi). Can be null, in  
-                  which case if the taskbar button represents a single window  
-                  the icon is removed.  
-@param statusDescription The alt text version of the information  
-                         conveyed by the overlay, for accessibility  
-                         purposes.  
   
 @note The behavior for window groups is managed by Windows.  
 - If an overlay icon is set for any window in a window group and another  

@@ -49,17 +49,6 @@ because a result is only intended for type-ahead completion.
   
 Appends a match consisting of the given value, comment, image, style and  
 the value to use for defaultIndex completion.  
-@param aValue  
-       The value to autocomplete to  
-@param aComment  
-       Comment shown in the autocomplete widget to describe this match  
-@param aImage  
-       Image shown in the autocomplete widget for this match.  
-@param aStyle  
-       Describes how to style the match in the autocomplete widget  
-@param aFinalCompleteValue  
-       Value used when the user confirms selecting this match. If not  
-       provided, aValue will be used.  
   
 
 #### Parameters ####

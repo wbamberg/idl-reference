@@ -32,10 +32,7 @@ used as singletons.
   
 Register and unregister commands with the command table.  
   
-@param aCommandName  the name of the command under which to register or  
-                     unregister the given command handler.  
   
-@param aCommand      the handler for this command.  
   
 
 #### Parameters ####
@@ -63,7 +60,6 @@ Register and unregister commands with the command table.
   
 Find the command handler which has been registered to handle the named command.  
   
-@param aCommandName  the name of the command to find the handler for.  
   
 
 #### Parameters ####
@@ -82,8 +78,6 @@ Find the command handler which has been registered to handle the named command.
   
 Get whether the named command is enabled.  
   
-@param aCommandName    the name of the command to test  
-@param aCommandRefCon  the command context data  
   
 
 #### Parameters ####
@@ -108,8 +102,6 @@ Get whether the named command is enabled.
   
 Tell the command to update its state (if it is a state updating command)  
   
-@param aCommandName    the name of the command to update  
-@param aCommandRefCon  the command context data  
   
 
 #### Parameters ####
@@ -134,8 +126,6 @@ Tell the command to update its state (if it is a state updating command)
   
 Get whether the named command is supported.  
   
-@param aCommandName    the name of the command to test  
-@param aCommandRefCon  the command context data  
   
 
 #### Parameters ####
@@ -160,8 +150,6 @@ Get whether the named command is supported.
   
 Execute the named command.  
   
-@param aCommandName    the name of the command to execute  
-@param aCommandRefCon  the command context data  
   
 
 #### Parameters ####

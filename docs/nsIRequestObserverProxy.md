@@ -21,11 +21,6 @@ Otherwise, these objects are used simply as nsIRequestObserver's.
   
 Initializes an nsIRequestObserverProxy.  
   
-@param observer - receives observer notifications on the main thread  
-@param context  - the context argument that will be passed to OnStopRequest  
-                  and OnStartRequest. This has to be stored permanently on  
-                  initialization because it sometimes can't be  
-                  AddRef/Release'd off-main-thread.  
   
 
 #### Parameters ####

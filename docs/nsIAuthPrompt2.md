@@ -21,15 +21,6 @@ Requests a username and a password. Implementations will commonly show a
 dialog with a username and password field, depending on flags also a  
 domain field.  
   
-@param aChannel  
-       The channel that requires authentication.  
-@param level  
-       One of the level constants from above. See there for descriptions  
-       of the levels.  
-@param authInfo  
-       Authentication information object. The implementation should fill in  
-       this object with the information entered by the user before  
-       returning.  
   
 @retval true  
         Authentication can proceed using the values in the authInfo  

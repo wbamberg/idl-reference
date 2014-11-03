@@ -28,11 +28,7 @@ entry IS NOT stream based.  Use the stream transport service to
 asynchronously read this stream on a background thread.  The returned  
 stream MAY implement nsISeekableStream.  
   
-@param offset  
-       read starting from this offset into the cached data.  an offset  
-       beyond the end of the stream has undefined consequences.  
   
-@return blocking, unbuffered input stream.  
   
 
 #### Parameters ####
@@ -69,11 +65,7 @@ stream MAY implement nsISeekableStream.
 If opening an output stream to existing cached data, the data will be  
 truncated to the specified offset.  
   
-@param offset  
-       write starting from this offset into the cached data.  an offset  
-       beyond the end of the stream has undefined consequences.  
   
-@return blocking, unbuffered output stream.  
   
 
 #### Parameters ####

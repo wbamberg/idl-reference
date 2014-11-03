@@ -15,7 +15,6 @@ Media stream controller API: control and retrieve meta data from media stream.
 ### init(aUri) ###
   
 Preprare the URI before we can start the connection.  
-@param aUri The URI of the media stream.  
   
 
 #### Parameters ####
@@ -37,7 +36,6 @@ media stream listener as it becomes available. If asyncOpen returns
 successfully, the controller is responsible for keeping itself alive  
 until it has called onStopRequest on aListener.  
   
-@param aListener The nsIStreamingProtocolListener implementation  
   
 
 #### Parameters ####

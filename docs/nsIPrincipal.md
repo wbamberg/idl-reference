@@ -62,13 +62,6 @@ NOTE: The 'domain' attribute has no effect on the behaviour of this
       function.  
   
   
-@param uri    The URI about to be loaded.  
-@param report If true, will report a warning to the console service  
-              if the load is not allowed.  
-@param allowIfInheritsPrincipal   If true, the load is allowed if the  
-                                  loadee inherits the principal of the  
-                                  loader.  
-@throws NS_ERROR_DOM_BAD_URI if the load is not allowed.  
   
 
 #### Parameters ####

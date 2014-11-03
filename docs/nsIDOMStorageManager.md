@@ -26,14 +26,6 @@ Returns instance of DOM storage object for given principal.
 A new object is always returned and it is ensured there is  
 a storage for the scope created.  
   
-@param aWindow  
-   The parent window.  
-@param aPrincipal  
-   Principal to bound storage to.  
-@param aDocumentURI  
-   URL of the demanding document, used for DOM storage event only.  
-@param aPrivate  
-   Whether the demanding document is running in Private Browsing mode or not.  
   
 
 #### Parameters ####
@@ -73,12 +65,6 @@ If there is no storage managed for the scope, then null is returned and
 no object is created.  Otherwise, an object (new) for the existing storage  
 scope is returned.  
   
-@param aWindow  
-   The parent window.  
-@param aPrincipal  
-   Principal to bound storage to.  
-@param aPrivate  
-   Whether the demanding document is running in Private Browsing mode or not.  
   
 
 #### Parameters ####
@@ -109,11 +95,6 @@ scope is returned.
   
 Clones given storage into this storage manager.  
   
-@param aStorageToCloneFrom  
-   The storage to copy all items from into this manager.  Manager will then  
-   return a new and independent object that contains snapshot of data from  
-   the moment this method was called.  Modification to this new object will  
-   not affect the original storage content we cloned from and vice versa.  
   
 
 #### Parameters ####
@@ -136,10 +117,6 @@ Clones given storage into this storage manager.
 Returns true if the storage belongs to the given principal and is managed  
 (i.e. has been created and is cached) by this storage manager.  
   
-@param aPrincipal  
-   Principal to check the storage against.  
-@param aStorage  
-   The storage object to examine.  
   
 @result  
    true when the storage object is bound with the principal and is managed  

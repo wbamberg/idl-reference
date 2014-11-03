@@ -17,8 +17,6 @@ will match all roles. It should be assumed that this method is called once
 at the start of a traversal, so changing the method's return result after  
 that would have no affect.  
   
-@param aRoles [out] an array of the roles to match.  
-@param aCount [out] the length of the array.  
   
 
 #### Parameters ####
@@ -43,8 +41,6 @@ that would have no affect.
   
 Determines if a given accessible is to be accepted in our traversal rule  
   
-@param aAccessible [in] accessible to examine.  
-@return a bitfield of FILTER_MATCH and FILTER_IGNORE_SUBTREE.  
   
 
 #### Parameters ####

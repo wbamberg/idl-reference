@@ -17,7 +17,6 @@ A datasource that may load asynchronously
 Specify the URI for the data source: this is the prefix  
 that will be used to register the data source in the  
 data source registry.  
-@param aURI the URI to load  
   
 
 #### Parameters ####
@@ -37,8 +36,6 @@ data source registry.
 Refresh the remote datasource, re-loading its contents  
 from the URI.  
   
-@param aBlocking If <code>true</code>, the call will block  
-until the datasource has completely reloaded.  
   
 
 #### Parameters ####

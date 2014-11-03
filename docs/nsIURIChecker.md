@@ -24,8 +24,6 @@ to further configure the URI checker by calling its nsIRequest methods.
 This method creates the channel that will be used to verify the URI.  
 In the case of the HTTP protocol, only a HEAD request will be issued.  
   
-@param aURI  
-       The URI to be checked.  
   
 
 #### Parameters ####
@@ -53,15 +51,6 @@ Our interpretations of the nsIRequestObserver status codes:
   NS_BINDING_FAILED:      link is invalid (gave an error)  
   NS_BINDING_ABORTED:     timed out, or cancelled  
   
-@param aObserver  
-       The object to notify when the link is verified.  We will  
-       call aObserver.OnStartRequest followed immediately by  
-       aObserver.OnStopRequest.  It is recommended that the caller use  
-       OnStopRequest to act on the link's status.  The underlying request  
-       will not be cancelled until after OnStopRequest has been called.  
-@param aContext  
-       A closure that will be passed back to the nsIRequestObserver  
-       methods.  
   
 
 #### Parameters ####

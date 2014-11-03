@@ -32,20 +32,6 @@ setWindowCreator.
 ### openWindow(aParent, aUrl, aName, aFeatures, aArguments) ###
  Create a new window. It will automatically be added to our list  
 (via addWindow()).  
-@param aParent parent window, if any. Null if no parent.  If it is  
-impossible to get to an nsIWebBrowserChrome from aParent, this  
-method will effectively act as if aParent were null.  
-@param aURL url to which to open the new window. Must already be  
-escaped, if applicable. can be null.  
-@param aName window name from JS window.open. can be null.  If a window  
-with this name already exists, the openWindow call may just load  
-aUrl in it (if aUrl is not null) and return it.  
-@param aFeatures window features from JS window.open. can be null.  
-@param aArguments extra argument(s) to the new window, to be attached  
-as the |arguments| property. An nsISupportsArray will be  
-unwound into multiple arguments (but not recursively!).  
-can be null.  
-@return the new window  
   
 @note This method may examine the JS context stack for purposes of  
 determining the security context to use for the search for a given  
@@ -117,9 +103,6 @@ can be null.
 when a window is opened or closed (added to or removed from this  
 service). This method adds an aObserver to the list of objects  
 to be notified.  
-@param aObserver the object to be notified when windows are  
-opened or closed. Its Observe method will be  
-called with the following parameters:  
   
 aObserver::Observe interprets its parameters so:  
 aSubject the window being opened or closed, sent as an nsISupports  
@@ -147,7 +130,6 @@ called with the following parameters:
 when a window is opened or closed (added to or removed from this  
 service). This method removes an aObserver from the list of objects  
 to be notified.  
-@param aObserver the observer to be removed.  
   
 
 #### Parameters ####
@@ -165,8 +147,6 @@ to be notified.
 ### getWindowEnumerator() ###
  Get an iterator for currently open windows in the order they were opened,  
 guaranteeing that each will be visited exactly once.  
-@return an enumerator which will itself return nsISupports objects which  
-can be QIed to an nsIDOMWindow  
   
 
 #### Returns ####
@@ -183,8 +163,6 @@ can be QIed to an nsIDOMWindow
 
 ### getNewPrompter(aParent) ###
  Return a newly created nsIPrompt implementation.  
-@param aParent the parent window used for posing alerts. can be null.  
-@return a new nsIPrompt object  
   
 
 #### Parameters ####
@@ -212,8 +190,6 @@ can be QIed to an nsIDOMWindow
 
 ### getNewAuthPrompter(aParent) ###
  Return a newly created nsIAuthPrompt implementation.  
-@param aParent the parent window used for posing alerts. can be null.  
-@return a new nsIAuthPrompt object  
   
 
 #### Parameters ####
@@ -242,8 +218,6 @@ can be QIed to an nsIDOMWindow
 ### setWindowCreator(creator) ###
  Set the window creator callback. It must be filled in by the app.  
 openWindow will use it to create new windows.  
-@param creator the callback. if null, the callback will be cleared  
-and window creation capabilities lost.  
   
 
 #### Parameters ####
@@ -269,8 +243,6 @@ Watcher keeps a list of all top-level DOM windows currently open,
 along with their corresponding chrome interfaces. Since DOM Windows  
 lack a (public) means of retrieving their corresponding chrome,  
 this method will do that.  
-@param aWindow the DOM window whose chrome window the caller needs  
-@return the corresponding chrome window  
   
 
 #### Parameters ####
@@ -299,10 +271,6 @@ this method will do that.
 ### getWindowByName(aTargetName, aCurrentWindow) ###
   
 Retrieve an existing window (or frame).  
-@param aTargetName the window name  
-@param aCurrentWindow a starting point in the window hierarchy to  
-begin the search.  If null, each toplevel window  
-will be searched.  
   
 Note: This method will search all open windows for any window or  
 frame with the given window name. Make sure you understand the  

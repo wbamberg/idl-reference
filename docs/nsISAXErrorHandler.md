@@ -43,8 +43,6 @@ so.
 Filters may use this method to report other, non-XML errors as  
 well.  
   
-@param locator The locator object for the error (may be null).  
-@param error The error message.  
   
 
 #### Parameters ####
@@ -87,8 +85,6 @@ at all) only for the sake of collecting additional error
 messages: in fact, SAX parsers are free to stop reporting any  
 other events once this method has been invoked.  
   
-@param locator The locator object for the error (may be null).  
-@param error The error message.  
   
 
 #### Parameters ####
@@ -124,8 +120,6 @@ application to process the document through to the end.
 Filters may use this method to report other, non-XML warnings  
 as well.  
   
-@param locator The locator object for the warning (may be null).  
-@param error The warning message.  
   
 
 #### Parameters ####

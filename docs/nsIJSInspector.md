@@ -31,11 +31,7 @@ We say an enterNestedEventLoop call is "running" if it has not yet been
 asked to return, or "stopped" if it has been asked to return once it has  
 finished processing the current event.  
   
-@param requestor   A token of the caller's choice to identify this event  
-                   loop.  
   
-@return depth      The number of running enterNestedEventLoop calls  
-                   remaining, now that this one has returned.  
   
                    (Note that not all calls still on the stack are  
                    necessary running; exitNestedEventLoop can ask any  
@@ -82,8 +78,6 @@ This method ignores loops that have already been stopped, and operates on
 the youngest loop that is still running. Each call to this method stops  
 another running loop.  
   
-@return depth      The number of running enterNestedEventLoop calls  
-                   remaining, now that one has been stopped.  
   
 @throws NS_ERROR_FAILURE if there are no running enterNestedEventLoop calls.  
   

@@ -25,13 +25,7 @@ a file: URI, the handler that is registered for file: will be launched
 and our code will not make any decision based on the content-type or  
 extension, though the invoked file: handler is free to do so.   
   
-@param aURI  
-       The URI to launch this application with  
   
-@param aWindowContext   
-       The window to parent the dialog against, and, if a web handler  
-       is chosen, it is loaded in this window as well.  See   
-       nsIHandlerApp.launchWithURI for more details.  
   
 @throw NS_ERROR_INVALID_ARG if preferredAction is not valid for this  
 call. Other exceptions may be thrown.  

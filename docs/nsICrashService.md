@@ -13,12 +13,6 @@ layout: default
   
 Records the occurrence of a crash.  
   
-@param processType  
-       One of the PROCESS_TYPE constants defined below.  
-@param crashType  
-       One of the CRASH_TYPE constants defined below.  
-@param id  
-       Crash ID. Likely a UUID.  
   
 
 #### Parameters ####

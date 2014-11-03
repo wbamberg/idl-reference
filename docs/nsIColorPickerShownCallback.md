@@ -23,8 +23,6 @@ This callback can not be called after done() was called.
 When this callback is used, the consumer can assume that the color value has  
 changed.  
   
-@param  color  The new selected color value following the format specifed on  
-               top of this file.  
   
 
 #### Parameters ####
@@ -47,8 +45,6 @@ When this callback is used, the color might have changed or could stay the
 same.  
 If the color has not changed, the color parameter will be the empty string.  
   
-@param  color  The new selected color value following the format specifed on  
-               top of this file or the empty string.  
   
 
 #### Parameters ####

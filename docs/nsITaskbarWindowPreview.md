@@ -16,8 +16,6 @@ are invisible.
   
 @see nsITaskbarPreviewButton  
   
-@param index The index into the button array. Must be >= 0 and <  
-             MAX_TOOLBAR_BUTTONS.  
   
 
 #### Parameters ####

@@ -18,19 +18,6 @@ folders.  A URI in history can be contained in one or more such folders.
   
 Inserts a child bookmark into the given folder.  
   
- @param aParentId  
-        The id of the parent folder  
- @param aURI  
-        The URI to insert  
- @param aIndex  
-        The index to insert at, or DEFAULT_INDEX to append  
- @param aTitle  
-        The title for the new bookmark  
- @param [optional] aGuid  
-        The GUID to be set for the new item.  If not set, a new GUID is  
-        generated.  Unless you've a very sound reason, such as an undo  
-        manager implementation, do not pass this argument.  
- @return The ID of the newly-created bookmark.  
   
  @note aTitle will be truncated to TITLE_LENGTH_MAX and  
        aURI will be truncated to URI_LENGTH_MAX.  
@@ -90,8 +77,6 @@ Inserts a child bookmark into the given folder.
 ### removeItem(aItemId) ###
   
 Removes a child item. Used to delete a bookmark or separator.  
- @param aItemId  
-        The child item to remove  
   
 
 #### Parameters ####
@@ -109,18 +94,6 @@ Removes a child item. Used to delete a bookmark or separator.
 ### createFolder(aParentFolder, name, index, aGuid) ###
   
 Creates a new child folder and inserts it under the given parent.  
- @param aParentFolder  
-        The id of the parent folder  
- @param aName  
-        The name of the new folder  
- @param aIndex  
-        The index to insert at, or DEFAULT_INDEX to append  
- @param [optional] aGuid  
-        The GUID to be set for the new item.  If not set, a new GUID is  
-        generated.  Unless you've a very sound reason, such as an undo  
-        manager implementation, do not pass this argument.  
- @return The ID of the newly-inserted folder.  
- @throws if aGuid is malformed.  
   
 
 #### Parameters ####
@@ -172,10 +145,6 @@ Creates a new child folder and inserts it under the given parent.
   
 Gets an undo-able transaction for removing a folder from the bookmarks  
 tree.  
- @param aItemId  
-        The id of the folder to remove.  
- @return An object implementing nsITransaction that can be used to undo  
-         or redo the action.  
   
 This method exists because complex delete->undo operations rely on  
 recreated folders to have the same ID they had before they were deleted,  
@@ -214,8 +183,6 @@ public API.
   
 Convenience function for container services.  Removes  
 all children of the given folder.  
- @param aItemId  
-        The id of the folder to remove children from.  
   
 
 #### Parameters ####
@@ -233,12 +200,6 @@ all children of the given folder.
 ### moveItem(aItemId, aNewParentId, aIndex) ###
   
 Moves an item to a different container, preserving its contents.  
- @param aItemId  
-        The id of the item to move  
- @param aNewParentId  
-        The id of the new parent  
- @param aIndex  
-        The index under aNewParent, or DEFAULT_INDEX to append  
   
 NOTE: When moving down in the same container we take into account the  
 removal of the original item. If you want to move from index X to  
@@ -273,16 +234,6 @@ index Y > X you must use moveItem(id, folder, Y + 1)
   
 Inserts a bookmark separator into the given folder at the given index.  
 The separator can be removed using removeChildAt().  
- @param aParentId  
-        The id of the parent folder  
- @param aIndex  
-        The separator's index under folder, or DEFAULT_INDEX to append  
- @param [optional] aGuid  
-        The GUID to be set for the new item.  If not set, a new GUID is  
-        generated.  Unless you've a very sound reason, such as an undo  
-        manager implementation, do not pass this argument.  
- @return The ID of the new separator.  
- @throws if aGuid is malformed.  
   
 
 #### Parameters ####
@@ -327,12 +278,6 @@ The separator can be removed using removeChildAt().
 ### getIdForItemAt(aParentId, aIndex) ###
   
 Get the itemId given the containing folder and the index.  
- @param aParentId  
-        The id of the diret parent folder of the item  
- @param aIndex  
-        The index of the item within the parent folder.  
-        Pass DEFAULT_INDEX for the last item.  
- @return The ID of the found item, -1 if the item does not exists.  
   
 
 #### Parameters ####
@@ -368,10 +313,6 @@ Get the itemId given the containing folder and the index.
 ### setItemTitle(aItemId, aTitle) ###
   
 Set the title for an item.  
- @param aItemId  
-        The id of the item whose title should be updated.  
- @param aTitle  
-        The new title for the bookmark.  
   
  @note  aTitle will be truncated to TITLE_LENGTH_MAX.  
   
@@ -400,9 +341,6 @@ Get the title for an item.
   
 If no item title is available it will return a void string (null in JS).  
   
- @param aItemId  
-        The id of the item whose title should be retrieved  
- @return The title of the item.  
   
 
 #### Parameters ####
@@ -477,8 +415,6 @@ WARNING: This is API is intended for scenarios such as folder sorting,
          where the caller manages the indices of *all* items in the folder.  
          You must always ensure each index is unique after a reordering.  
   
- @param aItemId    The id of the item to modify  
- @param aNewIndex  The new index  
   
  @throws If aNewIndex is out of bounds.  
   
@@ -597,10 +533,6 @@ adding or deleting a large number of bookmark items. Calls can
 be nested. Observers are notified when batches begin and end, via  
 nsINavBookmarkObserver.onBeginUpdateBatch/onEndUpdateBatch.  
   
-@param aCallback  
-       nsINavHistoryBatchCallback interface to call.  
-@param aUserData  
-       Opaque parameter passed to nsINavBookmarksBatchCallback  
   
 
 #### Parameters ####

@@ -16,10 +16,6 @@ with a bookmark or bookmark folder.
 ### has(aName) ###
   
 Determines if an annotation exists with the given name.  
-@param   aName  
-         The name of the annotation  
-@returns true if an annotation exists with the given name,  
-         false otherwise.  
   
 
 #### Parameters ####
@@ -49,10 +45,6 @@ Determines if an annotation exists with the given name.
 ### get(aName) ###
   
 Gets the value of an annotation with the given name.  
-@param   aName  
-         The name of the annotation  
-@returns A variant containing the value of the annotation. Supports  
-         string, boolean and number.  
   
 
 #### Parameters ####
@@ -82,14 +74,6 @@ Gets the value of an annotation with the given name.
 ### set(aName, aValue, aExpiration) ###
   
 Sets the value of an annotation with the given name.  
-@param   aName  
-         The name of the annotation  
-@param   aValue  
-         The new value of the annotation. Supports string, boolean  
-         and number  
-@param   aExpiration  
-         The expiration policy for the annotation.  
-         See nsIAnnotationService.  
   
 
 #### Parameters ####
@@ -121,8 +105,6 @@ Sets the value of an annotation with the given name.
 ### remove(aName) ###
   
 Removes the named annotation from the owner item.  
-@param   aName  
-         The name of annotation.  
   
 
 #### Parameters ####

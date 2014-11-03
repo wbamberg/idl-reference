@@ -15,8 +15,6 @@ Interface that gives simplified access to the console
 ### log(aMsg) ###
   
 Sends a given string to the console.  
-@param   aMsg  
-         The text to send to the console  
   
 
 #### Parameters ####

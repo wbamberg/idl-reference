@@ -41,21 +41,6 @@ mail (MIME) header fields, and thus SHOULD be used from non-mail
 code.  
   
   
-@param  aHeaderVal        a header string to get the value of a parameter   
-                          from.  
-@param  aParamName        the name of a MIME header parameter (e.g.   
-                          filename, name, charset). If empty,  returns   
-                          the first (possibly) _unnamed_ 'parameter'.  
-@param  aFallbackCharset  fallback charset to try if  the string after  
-                          RFC 2231/2047 decoding or the raw 8bit   
-                          string is not UTF-8  
-@param  aTryLocaleCharset If set, makes yet another attempt   
-                          with the locale charset.  
-@param  aLang             If non-null, assigns it to a pointer   
-                          to a string containing the value of language   
-                          obtained from RFC 2231 parsing. Caller has to   
-                          nsMemory::Free it.  
-@return the value of <code>aParamName</code> in Unichar(UTF-16).  
   
 
 #### Parameters ####
@@ -136,10 +121,6 @@ non-interoperable usage.
 Code that parses HTTP header fields (as opposed to MIME header fields)  
 should use this function.  
   
-@param  aParamVal         a header field parameter to decode.  
-@param  aLang             will be set to the language part (possibly  
-                          empty).  
-@return the decoded parameter value.  
   
 
 #### Parameters ####
@@ -188,18 +169,6 @@ char * MimeHeaders_get_parameter (const char *header_value,
   
 Otherwise, this method would have been made static.  
   
-@param  aHeaderVal  a header string to get the value of a parameter from.  
-@param  aParamName  the name of a MIME header parameter (e.g.   
-                    filename, name, charset). If empty,  returns   
-                    the first (possibly) _unnamed_ 'parameter'.  
-@param  aCharset    If non-null, it gets assigned a new pointer  
-                    to a string containing the value of charset obtained  
-                    from RFC 2231 parsing. Caller has to nsMemory::Free it.  
-@param  aLang       If non-null, it gets assigned a new pointer  
-                    to a string containing the value of language obtained  
-                    from RFC 2231 parsing. Caller has to nsMemory::Free it.  
-@return             the value of <code>aParamName</code> after  
-                    RFC 2231 decoding but without charset conversion.  
   
 
 #### Parameters ####
@@ -265,14 +234,6 @@ mailnews/mime/src/mimehdrs.cpp defined as
 char * Mime_DecodeMimeHeader(char *header_val, const char *charset,   
                              bool override, bool eatcontinuation)  
   
-@param aHeaderVal       a header value to decode  
-@param aDefaultCharset  MIME charset to use in place of MIME charset  
-                        specified in RFC 2047 style encoding  
-                        when <code>aOverrideCharset</code> is set.  
-@param aOverrideCharset When set, overrides MIME charset specified   
-                        in RFC 2047 style encoding with <code>aDefaultCharset</code>  
-@param aEatContinuation When set, removes CR/LF  
-@return                 decoded header value  
   
 
 #### Parameters ####
@@ -335,19 +296,6 @@ mailnews/mime/src/mimehdrs.cpp defined as
 char * mime_decode_filename(char *name, const char *charset,   
                             MimeDisplayOptions *opt)   
   
-@param aParamValue      the value of a parameter to decode and convert  
-@param aCharset         charset obtained from RFC 2231 decoding  in which   
-                        <code>aParamValue</code> is encoded. If null,  
-                        indicates that it needs to try RFC 2047, instead.   
-@param aDefaultCharset  MIME charset to use when aCharset is null and  
-                        cannot be obtained per RFC 2047 (most likely   
-                        because 'bare' string is  used.)  Besides, it   
-                        overrides aCharset/MIME charset obtained from   
-                        RFC 2047 if <code>aOverrideCharset</code>  is set.  
-@param aOverrideCharset When set, overrides MIME charset specified   
-                        in RFC 2047 style encoding with   
-                        <code>aDefaultCharset</code>  
-@return                 decoded parameter   
   
 
 #### Parameters ####

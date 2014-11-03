@@ -27,17 +27,6 @@ The agent will invoke a callback to notify Gecko components of
 Initialize the agent with a channel type.  
 Note: This function should only be called once.  
   
-@param window  
-   The window  
-@param channelType  
-   Audio Channel Type listed as above  
-@param callback  
-   1. Once the playable status changes, agent uses this callback function  
-      to notify Gecko component.  
-   2. The callback is allowed to be null. Ex: telephony doesn't need to  
-      listen change of the playable status.  
-   3. The AudioChannelAgent keeps a strong reference to the callback  
-      object.  
   
 
 #### Parameters ####
@@ -83,8 +72,6 @@ nsISupportsWeakReference.
 This method is just like init(), and specify the channel is associated  
 with video.  
   
-@param weak  
-   true if weak reference should be hold.  
   
 
 #### Parameters ####
@@ -106,13 +93,6 @@ Note: Gecko component SHOULD call this function first then start to
          play audio stream only when return value is true.  
   
   
-@return  
-   normal state: the agent has registered with audio channel service and  
-         the component should start playback.  
-   muted state: the agent has registered with audio channel service but  
-         the component should not start playback.  
-   faded state: the agent has registered with audio channel service the  
-         component should start playback as well as reducing the volume.  
   
 
 #### Returns ####
@@ -144,8 +124,6 @@ Note : even if startPlaying() returned false, the agent would still be
 ### setVisibilityState(visible) ###
   
 Notify the agent of the visibility state of the window using this agent.  
-@param visible  
-   True if the window associated with the agent is visible.  
   
 
 #### Parameters ####

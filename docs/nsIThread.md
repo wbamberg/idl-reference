@@ -47,9 +47,6 @@ Because events may be added to this thread by another thread, a "false"
 result does not mean that this thread has no pending events.  It only  
 means that there were no pending events when this method was called.  
   
-@returns  
-  A boolean value that if "true" indicates that this thread has one or  
-  more pending events.  
   
 @throws NS_ERROR_UNEXPECTED  
   Indicates that this method was erroneously called when this thread was  
@@ -75,12 +72,7 @@ may wait -- depending on the value of the mayWait parameter -- until an
 event is dispatched to this thread.  This method is re-entrant but may  
 only be called if this thread is the current thread.  
   
-@param mayWait  
-  A boolean parameter that if "true" indicates that the method may block  
-  the calling thread to wait for a pending event.  
   
-@returns  
-  A boolean value that if "true" indicates that an event was processed.  
   
 @throws NS_ERROR_UNEXPECTED  
   Indicates that this method was erroneously called when this thread was  

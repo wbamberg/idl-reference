@@ -22,8 +22,6 @@ Mark a page as being currently open.
       mode is entered or exited.  Therefore, consumers MUST unregister or  
       register themselves.  
   
-@param aURI  
-       The URI to register as an open page.  
   
 
 #### Parameters ####
@@ -47,8 +45,6 @@ or by navigating away from that page).
       mode is entered or exited.  Therefore, consumers MUST unregister or  
       register themselves.  
   
-@param aURI  
-       The URI to unregister as an open page.  
   
 
 #### Parameters ####

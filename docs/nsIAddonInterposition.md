@@ -27,14 +27,6 @@ it should return null.
   
 Returns a replacement property descriptor for a browser object.  
   
-@param addonId The ID of the add-on accessing the property.  
-@param target The browser object being accessed.  
-@param iface The IID of the interface the property is associated with. This  
-             parameter is only available for XPCWrappedNative targets. As  
-             such, it's only useful as an optimization to avoid  
-             instanceof checks on the target.  
-@param prop The name of the property being accessed.  
-@return A property descriptor or null.  
   
 
 #### Parameters ####

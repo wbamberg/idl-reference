@@ -17,8 +17,6 @@ to the gecko XUL engine.
   
 Get the XUL overlays for a particular chrome URI.  
   
-@param aURI  The URI being loaded  
-@return      An enumerator of nsIURI for the overlays of this URI   
   
 
 #### Parameters ####
@@ -48,8 +46,6 @@ Get the XUL overlays for a particular chrome URI.
   
 Get the style overlays for a particular chrome URI.  
   
-@param aURI  The URI being loaded  
-@return      An enumerator of nsIURI for the overlays of this URI   
   
 
 #### Parameters ####

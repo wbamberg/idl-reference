@@ -93,13 +93,6 @@ may set the aShouldDelayBuilding returned parameter to true to delay
 building the template content, and call the builder's Rebuild method when  
 the data is available.  
   
-@param aDataSources  the list of nsIURI objects and/or nsIDOMNode objects  
-@param aRootNode     the root node the builder is attached to  
-@param aIsTrusted    true if the template is in a trusted document  
-@param aBuilder      the template builder  
-@param aShouldDelayBuilding [out] whether the builder should wait to  
-                                  build the content or not  
-@returns a datasource object  
   
 
 #### Parameters ####
@@ -157,9 +150,6 @@ processed and whenever the template is rebuilt. This method must be
 called once before any of the other query processor methods except for  
 translateRef.  
   
-@param aDatasource datasource for the data  
-@param aBuilder the template builder  
-@param aRootNode the root node the builder is attached to  
   
 @throws NS_ERROR_INVALID_ARG if the datasource is not supported or  
         NS_ERROR_UNEXPECTED if generateResults has already been called.  
@@ -216,12 +206,7 @@ template, or from the uri in the first action's rule if that attribute is
 not present. A rule processor may use the member variable as a hint to  
 indicate what variable is expected to contain the results.  
   
-@param aBuilder the template builder  
-@param aQuery <query> node to compile  
-@param aRefVariable the reference variable  
-@param aMemberVariable the member variable  
   
-@returns a compiled query object  
   
 
 #### Parameters ####
@@ -279,11 +264,7 @@ The value of aQuery must be the result of a previous call to compileQuery
 from this query processor. This method may be called multiple times,  
 typically with different values for aRef.  
   
-@param aDatasource datasource for the data  
-@param aRef context reference value used as a starting point  
-@param aQuery the compiled query returned from query compilation  
   
-@returns an enumerator of nsIXULTemplateResult objects as the results  
   
 @throws NS_ERROR_INVALID_ARG if aQuery is invalid  
   
@@ -349,10 +330,6 @@ holds the value 5, and the expression aExpr is the string '+2', the value
 of the variable aVar would be 7, assuming the query processor considers  
 the syntax '+2' to mean add two to the reference.  
   
-@param aRuleNode rule to add the binding to  
-@param aVar variable that will be bound  
-@param aRef variable that holds reference value  
-@param aExpr expression used to compute the value to assign  
   
 
 #### Parameters ####
@@ -398,10 +375,7 @@ This method may be called before initializeForBuilding, so the
 implementation may use the supplied datasource if it is needed to  
 translate the reference.  
   
-@param aDatasource datasource for the data  
-@param aRefString the ref attribute string  
   
-@return the translated ref  
   
 
 #### Parameters ####
@@ -450,11 +424,7 @@ The sort hints are the flags in nsIXULSortService.
 This method must only be called with results that were created by this  
 query processor.  
   
-@param aLeft the left result to compare  
-@param aRight the right result to compare  
-@param aVar variable to compare  
   
-@param returns -1 if less, 0 if equal, or 1 if greater  
   
 
 #### Parameters ####

@@ -54,18 +54,6 @@ immediate children of the docFragment.  Any nodes outside of the range
 set by contentStartNode and contentEndNode are for context from the  
 source document.  
   
-@param mimeType          the mimetype used for retrieving data  
-@param contentSourceURL  location where docFragment came from  
-@param sourceDocument      document where content came from (can be null)  
-@param willDeleteSelection tells hook if selection will/should be deleted  
-@param docFragment         fragment of node to be inserted  
-@param contentStartNode    node under which content to be inserted begins  
-@param contentStartOffset  start offset within contentStartNode  
-@param contentEndNode      node under which content to be inserted ends  
-@param contentEndOffset    ending offset withing contentEndNode  
-@param insertionPointNode     location where insertion will occur  
-@param insertionPointOffset   offset within node where insertion occurs  
-@param continueWithInsertion  flag to cancel insertion (if desired)  
   
 
 #### Parameters ####

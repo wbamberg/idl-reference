@@ -25,10 +25,6 @@ onPacketReceived
   
 This method is called when a client sends an UDP packet.  
   
-@param aSocket  
-       The UDP socket.  
-@param aMessage  
-       The message.  
   
 
 #### Parameters ####
@@ -56,12 +52,6 @@ onStopListening
 This method is called when the listening socket stops for some reason.  
 The UDP socket is effectively dead after this notification.  
   
-@param aSocket  
-       The UDP socket.  
-@param aStatus  
-       The reason why the UDP socket stopped listening.  If the  
-       UDP socket was manually closed, then this value will be  
-       NS_BINDING_ABORTED.  
   
 
 #### Parameters ####

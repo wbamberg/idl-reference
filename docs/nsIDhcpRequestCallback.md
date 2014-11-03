@@ -13,11 +13,7 @@ layout: default
   
 Callback function used to report the result of DHCP client request.  
   
-@param success  
-       Boolean to indicate the operation is successful or not.  
   
-@param dhcpInfo  
-       An object to represent the successful DHCP request:  
   
          - gateway_str: string  
          - dns1_str:    string  

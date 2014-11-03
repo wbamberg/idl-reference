@@ -20,8 +20,6 @@ imgICache interface
   
 Evict images from the cache.  
   
-@param chrome If TRUE,  evict only chrome images.  
-              If FALSE, evict everything except chrome images.  
   
 
 #### Parameters ####
@@ -41,8 +39,6 @@ Evict images from the cache.
   
 Evict images from the cache.  
   
-@param uri The URI to remove.  
-@throws NS_ERROR_NOT_AVAILABLE if \a uri was unable to be removed from the cache.  
   
 
 #### Parameters ####
@@ -69,8 +65,6 @@ but come back empty.
   
 Hopefully this will be removed with bug 805119  
   
-@param uri The URI to look up.  
-@returns NULL if the URL was not found in the cache  
   
 
 #### Parameters ####

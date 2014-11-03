@@ -31,7 +31,6 @@ clear the weak owner content reference.
   
 Updates the position and size of the subdocument loaded by this frameloader.  
   
- @param aIFrame The nsIFrame for the content node that owns this frameloader  
   
 
 #### Parameters ####

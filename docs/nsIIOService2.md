@@ -16,12 +16,6 @@ nsIIOService2 extends nsIIOService
   
 Creates a channel for a given URI.  
   
-@param aURI nsIURI from which to make a channel  
-@param aProxyURI nsIURI to use for proxy resolution. Can be null in which  
-       case aURI is used  
-@param aProxyFlags flags from nsIProtocolProxyService to use  
-       when resolving proxies for this new channel  
-@return reference to the new nsIChannel object  
   
 
 #### Parameters ####
@@ -65,12 +59,6 @@ Creates a channel for a given URI.
   
 Creates a channel for a given URI.  
   
-@param aURI nsIURI from which to make a channel  
-@param aProxyURI nsIURI to use for proxy resolution. Can be null in which  
-       case aURI is used  
-@param aProxyFlags flags from nsIProtocolProxyService to use  
-       when resolving proxies for this new channel  
-@return reference to the new nsIChannel object  
   
 
 #### Parameters ####

@@ -29,10 +29,6 @@ getServiceByContractID
 Returns the instance that implements aClass or aContractID and the  
 interface aIID.  This may result in the instance being created.  
   
-@param aClass or aContractID : aClass or aContractID of object   
-                               instance requested  
-@param aIID : IID of interface requested  
-@param result : resulting service   
   
 
 #### Parameters ####
@@ -69,12 +65,6 @@ isServiceInstantiated
 isServiceInstantiated will return a true if the service has already  
 been created, or throw otherwise  
   
-@param aClass or aContractID : aClass or aContractID of object   
-                               instance requested  
-@param aIID : IID of interface requested  
-@throws NS_ERROR_SERVICE_NOT_AVAILABLE if the service hasn't been   
-        instantiated  
-@throws NS_NOINTERFACE if the IID given isn't supported by the object  
   
 
 #### Parameters ####

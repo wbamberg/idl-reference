@@ -16,9 +16,6 @@ containing an embedded Gecko web browser.
 ### setStatus(statusType, status) ###
   
 Called when the status text in the chrome needs to be updated.  
-@param statusType indicates what is setting the text  
-@param status status string. null is an acceptable value meaning  
-              no status.  
   
 
 #### Parameters ####
@@ -50,8 +47,6 @@ WebBrowser object.
   
 Tells the chrome to size itself such that the browser will be the   
 specified size.  
-@param aCX new width of the browser  
-@param aCY new height of the browser  
   
 
 #### Parameters ####
@@ -75,8 +70,6 @@ specified size.
 ### showAsModal() ###
   
 Shows the window as a modal window.  
-@return (the function error code) the status value specified by  
-        in exitModalEventLoop.  
   
 
 #### Returns ####
@@ -94,7 +87,6 @@ Shows the window as a modal window.
 ### isWindowModal() ###
   
 Is the window modal (that is, currently executing a modal loop)?  
-@return true if it's a modal window  
   
 
 #### Returns ####
@@ -112,7 +104,6 @@ Is the window modal (that is, currently executing a modal loop)?
   
 Exit a modal event loop if we're in one. The implementation  
 should also exit out of the loop if the window is destroyed.  
-@param aStatus - the result code to return from showAsModal  
   
 
 #### Parameters ####

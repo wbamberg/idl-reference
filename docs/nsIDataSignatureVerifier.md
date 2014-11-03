@@ -18,11 +18,6 @@ private key matching the given public key.
 Verifies that the data matches the data that was used to generate the  
 signature.  
   
-@param aData      The data to be tested.  
-@param aSignature The signature of the data, base64 encoded.  
-@param aPublicKey The public part of the key used for signing, DER encoded  
-                  then base64 encoded.  
-@returns true if the signature matches the data, false if not.  
   
 
 #### Parameters ####

@@ -25,11 +25,6 @@ layout: default
  This allows an optimization in the implementation,  
  ownership of result data will be transfered to caller.  
   
- @param cert The certificate that was verified.  
- @param verified The certificate verification result,  
-        see constants in nsIX509Cert.  
- @param count The number of human readable usages returned.  
- @param usages The array of human readable usages.  
   
 
 #### Parameters ####

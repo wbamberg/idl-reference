@@ -20,13 +20,6 @@ Register an interval with the timer manager. The timer manager
 periodically checks to see if the interval has expired and if it has  
 calls the specified callback. This is persistent across application  
 restarts and can handle intervals of long durations.  
-@param   id  
-         An id that identifies the interval, used for persistence  
-@param   callback  
-         A nsITimerCallback object that is notified when the interval  
-         expires  
-@param   interval  
-         The length of time, in seconds, of the interval  
   
 Note: to avoid having to instantiate a component to call registerTimer  
 the component can intead register an update-timer category with comma  

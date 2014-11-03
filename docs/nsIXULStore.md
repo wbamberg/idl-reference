@@ -20,10 +20,6 @@ The data is serialized to [profile directory]/xulstore.json
   
 Sets a value in the store.  
   
-@param doc - document URI  
-@param id - identifier of the node  
-@param attr - attribute to store  
-@param value - value of the attribute  
   
 
 #### Parameters ####
@@ -60,9 +56,6 @@ Sets a value in the store.
   
 Returns true if the store contains a value for attr.  
   
-@param doc - URI of the document  
-@param id - identifier of the node  
-@param attr - attribute  
   
 
 #### Parameters ####
@@ -93,11 +86,7 @@ Returns true if the store contains a value for attr.
   
 Retrieves a value in the store, or an empty string if it does not exist.  
   
-@param doc - document URI  
-@param id - identifier of the node  
-@param attr - attribute to retrieve  
   
-@returns the value of the attribute  
   
 
 #### Parameters ####
@@ -139,9 +128,6 @@ Retrieves a value in the store, or an empty string if it does not exist.
   
 Removes a value in the store.  
   
-@param doc - document URI  
-@param id - identifier of the node  
-@param attr - attribute to remove  
   
 
 #### Parameters ####
@@ -173,7 +159,6 @@ Removes a value in the store.
 Iterates over all of the ids associated with a given document uri that  
 have stored data.  
   
-@param doc - document URI  
   
 
 #### Parameters ####
@@ -193,8 +178,6 @@ have stored data.
 Iterates over all of the attributes associated with a given document uri  
 and id that have stored data.  
   
-@param doc - document URI  
-@param id - identifier of the node  
   
 
 #### Parameters ####

@@ -20,9 +20,6 @@ are relative to the root branch.
 ### has(aName) ###
   
 Check to see if a preference exists.  
-@param   aName  
-         The name of preference  
-@returns true if the preference exists, false if not  
   
 
 #### Parameters ####
@@ -51,9 +48,6 @@ Check to see if a preference exists.
 ### get(aName) ###
   
 Gets an object representing a preference  
-@param   aName  
-         The name of preference  
-@returns a preference object, or null if the preference does not exist  
   
 
 #### Parameters ####
@@ -83,12 +77,6 @@ Gets an object representing a preference
   
 Gets the value of a preference. Returns a default value if  
 the preference does not exist.  
-@param   aName  
-         The name of preference  
-@param   aDefaultValue  
-         The value to return if preference does not exist  
-@returns value of the preference or the given default value if preference  
-         does not exists.  
   
 
 #### Parameters ####
@@ -124,10 +112,6 @@ the preference does not exist.
 ### setValue(aName, aValue) ###
   
 Sets the value of a storage item with the given name.  
-@param   aName  
-         The name of an item  
-@param   aValue  
-         The value to assign to the item  
   
 
 #### Parameters ####

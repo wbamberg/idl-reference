@@ -17,8 +17,6 @@ their contents.
   
 Parse a feed from an nsIInputStream.  
   
-@param stream The input stream.  
-@param uri The base URI.  
   
 
 #### Parameters ####
@@ -43,8 +41,6 @@ Parse a feed from an nsIInputStream.
   
 Parse a feed from a string.  
   
-@param str The string to parse.  
-@param uri The base URI.  
   
 
 #### Parameters ####
@@ -72,9 +68,6 @@ nsIFeedProcessor's nsIStreamListener methods to drive the
 parse. Do not call the other parse methods during an asynchronous  
 parse.  
   
-@param requestObserver The observer to notify on start/stop. This  
-                       argument can be null.  
-@param uri The base URI.  
   
 
 #### Parameters ####

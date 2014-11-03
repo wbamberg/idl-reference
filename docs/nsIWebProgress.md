@@ -30,11 +30,6 @@ nsIWebProgress instance.
   
 Registers a listener to receive web progress events.  
   
-@param aListener  
-       The listener interface to be called when a progress event occurs.  
-       This object must also implement nsISupportsWeakReference.  
-@param aNotifyMask  
-       The types of notifications to receive.  
   
 @throw NS_ERROR_INVALID_ARG  
        Indicates that aListener was either null or that it does not  
@@ -66,9 +61,6 @@ Registers a listener to receive web progress events.
   
 Removes a previously registered listener of progress events.  
   
-@param aListener  
-       The listener interface previously registered with a call to  
-       addProgressListener.  
   
 @throw NS_ERROR_FAILURE  
        Indicates that aListener was not registered.  

@@ -31,8 +31,6 @@ aStartup.directory.
 If your migrator needs to access services that use the profile (to  
 set profile prefs or bookmarks, for example), use aStartup.doStartup.  
   
-@param  aStartup nsIProfileStartup object to use during migration.  
-@param  aKey     optional key of a migrator to use to skip source selection.  
   
 @note The startup code ignores COM exceptions thrown from this method.  
   

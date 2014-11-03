@@ -16,16 +16,6 @@ on the capabilities of Gecko webnavigation objects.
 ### isTypeSupported(aType, aWebNav) ###
   
 Query whether aType is supported.  
-@param aType the MIME type in question.  
-@param aWebNav the nsIWebNavigation object for which the request  
-       is being made.  This is allowed to be null.  If it is non-null,  
-       the return value of this method may depend on the exact state of  
-       aWebNav and the values set through nsIWebBrowserSetup; otherwise  
-       the method will assume that the caller is interested in information  
-       about nsIWebNavigation objects in their default state.  
-@return an enum value indicating whether and how aType is supported.  
-@note This method may rescan plugins to ensure that they're properly  
-      registered for the types they support.  
   
 
 #### Parameters ####

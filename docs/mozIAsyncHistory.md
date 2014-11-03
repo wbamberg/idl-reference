@@ -20,15 +20,6 @@ The retrieved places info objects DO NOT include the visits data (the
 If a given place does not exist in the database, aCallback.handleError is  
 called for it with NS_ERROR_NOT_AVAILABLE result code.  
   
-@param aPlaceIdentifiers  
-       The place[s] for which to retrieve information, identified by either  
-       a single place GUID, a single URI, or a JS array of URIs and/or GUIDs.  
-@param aCallback  
-       A mozIVisitInfoCallback object which consists of callbacks to be  
-       notified for successful or failed retrievals.  
-       If there's no information available for a given place, aCallback  
-       is called with a stub place info object, containing just the provided  
-       data (GUID or URI).  
   
 @throws NS_ERROR_INVALID_ARG  
         - Passing in NULL for aPlaceIdentifiers or aCallback.  
@@ -65,12 +56,6 @@ each mozIPlaceInfo's title or guid.
   
 aCallback.handleResult is called for each visit added.  
   
-@param aPlaceInfo  
-       The mozIPlaceInfo object[s] containing the information to store or  
-       update.  This can be a single object, or an array of objects.  
-@param [optional] aCallback  
-       A mozIVisitInfoCallback object which consists of callbacks to be  
-       notified for successful and/or failed changes.  
   
 @throws NS_ERROR_INVALID_ARG  
         - Passing in NULL for aPlaceInfo.  
@@ -108,10 +93,6 @@ aCallback.handleResult is called for each visit added.
   
 Checks if a given URI has been visited.  
   
-@param aURI  
-       The URI to check for.  
-@param aCallback  
-       A mozIVisitStatusCallback object which receives the visited status.  
   
 
 #### Parameters ####

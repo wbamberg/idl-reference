@@ -16,7 +16,6 @@ the illusion of a single, coherent RDF graph.
 ### AddDataSource(aDataSource) ###
   
 Add a datasource the the composite data source.  
-@param aDataSource the datasource to add to composite  
   
 
 #### Parameters ####
@@ -34,7 +33,6 @@ Add a datasource the the composite data source.
 ### RemoveDataSource(aDataSource) ###
   
 Remove a datasource from the composite data source.  
-@param aDataSource the datasource to remove from the composite  
   
 
 #### Parameters ####
@@ -52,8 +50,6 @@ Remove a datasource from the composite data source.
 ### GetDataSources() ###
   
 Retrieve the datasources in the composite data source.  
-@return an nsISimpleEnumerator that will enumerate each  
-of the datasources in the composite  
   
 
 #### Returns ####

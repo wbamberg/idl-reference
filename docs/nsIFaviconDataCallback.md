@@ -23,17 +23,6 @@ get it, or the method does not require we actually have any data).
 It's up to the caller to check aDataLen > 0 before using any data-related  
 information like mime-type or data itself.  
   
-@param aFaviconURI  
-       Receives the "favicon URI" (not the "favicon link URI") associated  
-       to the requested page.  This can be null if there is no associated  
-       favicon URI, or the callback is notifying a failure.  
-@param aDataLen  
-       Size of the icon data in bytes.  Notice that a value of 0 does not  
-       necessarily mean that we don't have an icon.  
-@param aData  
-       Icon data, or an empty array if aDataLen is 0.  
-@param aMimeType  
-       Mime type of the icon, or an empty string if aDataLen is 0.  
   
 @note If you want to open a network channel to access the favicon, it's  
       recommended that you call the getFaviconLinkForIcon method to convert  

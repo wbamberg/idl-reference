@@ -39,8 +39,6 @@ The process should look like the following:
    nsIStreamListener calls (OnDataAvailable, OnStopRequest) will be made  
    to it.  
   
-@return ChannelDiverterChild IPDL actor to be passed to parent process by  
-        client IPDL message, e.g. PClient.DivertUsing(PDiverterChild).  
   
 @throws exception if the channel was canceled early. Throws status code of  
         canceled channel.  

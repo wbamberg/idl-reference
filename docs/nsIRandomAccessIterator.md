@@ -30,8 +30,6 @@ The offset may be negative.  |getElementAt(0)| is equivalent to |getElement()|.
 The result is undefined if this iterator currently points outside the  
 useful range of the underlying container or sequence.  
   
-@param anOffset a |0|-based offset from the position to which this iterator currently points  
-@result a new reference to the indicated element (if any)  
   
 
 #### Parameters ####
@@ -56,7 +54,6 @@ the replaced element, if any and if necessary, and to |AddRef()| the new element
 The result is undefined if this iterator currently points outside the  
 useful range of the underlying container or sequence.  
   
-@param anElementToPut the element to place into the underlying container or sequence  
   
 
 #### Parameters ####
@@ -81,8 +78,6 @@ the replaced element, if any and if necessary, and to |AddRef()| the new element
 The result is undefined if this iterator currently points outside the  
 useful range of the underlying container or sequence.  
   
-@param anOffset a |0|-based offset from the position to which this iterator currently points  
-@param anElementToPut the element to place into the underlying container or sequence  
   
 
 #### Parameters ####
@@ -114,7 +109,6 @@ Move this iterator by |anOffset| positions in the underlying container or sequen
 |anOffset| may be negative.  |stepForwardBy(1)| is equivalent to |stepForward()|.  
 |stepForwardBy(0)| is a no-op.  
   
-@param anOffset a |0|-based offset from the position to which this iterator currently points  
   
 
 #### Parameters ####
@@ -140,7 +134,6 @@ Move this iterator backwards by |anOffset| positions in the underlying container
 |anOffset| may be negative.  |stepBackwardBy(1)| is equivalent to |stepBackward()|.  
 |stepBackwardBy(n)| is equivalent to |stepForwardBy(-n)|.  |stepBackwardBy(0)| is a no-op.  
   
-@param anOffset a |0|-based offset from the position to which this iterator currently points  
   
 
 #### Parameters ####
@@ -161,8 +154,6 @@ Test if |anotherIterator| points to the same position in the underlying containe
   
 The result is undefined if |anotherIterator| was not created by or for the same underlying container or sequence.  
   
-@param anotherIterator another iterator to compare against, created by or for the same underlying container or sequence  
-@result true if |anotherIterator| points to the same position in the underlying container or sequence  
   
 
 #### Parameters ####

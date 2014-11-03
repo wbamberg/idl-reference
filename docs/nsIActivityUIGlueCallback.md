@@ -12,9 +12,6 @@ layout: default
 ### handleEvent(resultType, result) ###
   
 Called if the user picked an activitiy to launch.  
-@param resultType Inidcates that {@code result} is an index or a native activity result.  
-@param result     If WEBAPPS_ACTIVITY, the index of the chosen activity. Send '-1' if no choice is made.  
-If NATIVE_ACTIVITY, the return value to be sent to the MozActivity.  
   
 
 #### Parameters ####

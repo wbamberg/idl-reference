@@ -12,13 +12,6 @@ layout: default
 ### makeWindowEditable(window, aEditorType, doAfterUriLoad, aMakeWholeDocumentEditable, aInteractive) ###
   
  Make this window editable  
- @param aWindow nsIDOMWindow, the window the embedder needs to make editable  
- @param aEditorType string, "html" "htmlsimple" "text" "textsimple"  
- @param aMakeWholeDocumentEditable if PR_TRUE make the whole document in  
-                                   aWindow editable, otherwise it's the  
-                                   embedder who should make the document  
-                                   (or part of it) editable.  
- @param aInteractive if PR_FALSE turn off scripting and plugins  
   
 
 #### Parameters ####

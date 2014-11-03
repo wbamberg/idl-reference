@@ -16,10 +16,6 @@ can hold bookmarks, separators and other folders.
 ### addBookmark(aTitle, aURI) ###
   
 Adds a new child bookmark to this folder.  
-@param   aTitle  
-         The title of bookmark.  
-@param   aURI  
-         The uri of bookmark.  
   
 
 #### Parameters ####
@@ -48,8 +44,6 @@ Adds a new child separator to this folder.
 ### addFolder(aTitle) ###
   
 Adds a new child folder to this folder.  
-@param   aTitle  
-         The title of folder.  
   
 
 #### Parameters ####

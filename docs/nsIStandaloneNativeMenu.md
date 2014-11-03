@@ -16,7 +16,6 @@ Platform-independent interface to platform native menu objects.
   
 Initialize the native menu using given XUL DOM element.  
   
-@param aDOMElement A XUL DOM element of tag type |menu| or |menupopup|.  
   
 
 #### Parameters ####
@@ -37,7 +36,6 @@ This method must be called before the menu is opened and displayed to the
 user. It allows the platform code to update the menu and also determine  
 whether the menu should even be shown.  
   
-@return true if the menu can be shown, false if it should not be shown  
   
 
 #### Returns ####
@@ -56,8 +54,6 @@ whether the menu should even be shown.
 Activate the native menu item specified by |anIndexString|. This method  
 is intended to be used by the test suite.  
   
-@param anIndexString string containing a list of indices separated by  
-       pipe ('|') characters  
   
 
 #### Parameters ####
@@ -78,8 +74,6 @@ is intended to be used by the test suite.
 Force an update of the native menu item specified by |anIndexString|. This  
 method is intended to be used by the test suite.  
   
-@param anIndexString string containing a list of indices separated by  
-       pipe ('|') characters  
   
 
 #### Parameters ####

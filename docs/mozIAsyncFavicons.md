@@ -32,21 +32,6 @@ when history is disabled.
 @note This function is identical to  
       nsIFaviconService::setAndLoadFaviconForPage.  
   
-@param aPageURI  
-       URI of the page whose favicon is being set.  
-@param aFaviconURI  
-       URI of the favicon to associate with the page.  
-@param aForceReload  
-       If aForceReload is false, we try to reload the favicon only if we  
-       don't have it or it has expired from the cache.  Setting  
-       aForceReload to true causes us to reload the favicon even if we  
-       have a usable copy.  
-@param aFaviconLoadType  
-       Set to FAVICON_LOAD_PRIVATE if the favicon is loaded from a private  
-       browsing window.  Set to FAVICON_LOAD_NON_PRIVATE otherwise.  
-@param aCallback  
-       Once we're done setting and/or fetching the favicon, we invoke this  
-       callback.  
   
 @see nsIFaviconDataCallback in nsIFaviconService.idl.  
   
@@ -117,21 +102,6 @@ than a defined limit we will try to convert it to a 16x16 png image.
 If the conversion fails and favicon is still bigger than our max accepted  
 size it won't be saved.  
   
-@param aFaviconURI  
-       URI of the favicon whose data is being set.  
-@param aData  
-       Binary contents of the favicon to save  
-@param aDataLength  
-       Length of binary data  
-@param aMimeType  
-       MIME type of the data to store.  This is important so that we know  
-       what to report when the favicon is used.  You should always set this  
-       param unless you are clearing an icon.  
-@param aExpiration  
-       Time in microseconds since the epoch when this favicon expires.  
-       Until this time, we won't try to load it again.  
-@throws NS_ERROR_FAILURE  
-        Thrown if the favicon is overbloated and won't be saved to the db.  
   
 
 #### Parameters ####
@@ -182,16 +152,6 @@ containing a data URL.
   
 @see replaceFaviconData  
   
-@param aFaviconURI  
-       URI of the favicon whose data is being set.  
-@param aDataURL  
-       string containing a data URL that represents the contents of  
-       the favicon to save  
-@param aExpiration  
-       Time in microseconds since the epoch when this favicon expires.  
-       Until this time, we won't try to load it again.  
-@throws NS_ERROR_FAILURE  
-        Thrown if the favicon is overbloated and won't be saved to the db.  
   
 
 #### Parameters ####
@@ -226,12 +186,6 @@ containing a data URL.
   
 Retrieves the favicon URI associated to the given page, if any.  
   
-@param aPageURI  
-       URI of the page whose favicon URI we're looking up.  
-@param aCallback  
-       This callback is always invoked to notify the result of the lookup.  
-       The aURI parameter will be the favicon URI, or null when no favicon  
-       is associated with the page or an error occurred while fetching it.  
   
 @note When the callback is invoked, aDataLen will be always 0, aData will  
       be an empty array, and aMimeType will be an empty string, regardless  
@@ -264,16 +218,6 @@ Retrieves the favicon URI associated to the given page, if any.
   
 Retrieves the favicon URI and data associated to the given page, if any.  
   
-@param aPageURI  
-       URI of the page whose favicon URI and data we're looking up.  
-@param aCallback  
-       This callback is always invoked to notify the result of the lookup.  The aURI  
-       parameter will be the favicon URI, or null when no favicon is  
-       associated with the page or an error occurred while fetching it.  If  
-       aURI is not null, the other parameters may contain the favicon data.  
-       However, if no favicon data is currently associated with the favicon  
-       URI, aDataLen will be 0, aData will be an empty array, and aMimeType  
-       will be an empty string.  
   
 @see nsIFaviconDataCallback in nsIFaviconService.idl.  
   

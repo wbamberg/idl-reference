@@ -144,8 +144,6 @@ result, unless a result with the same id from an earlier query
 supersedes it, and the result's RuleMatched method will be called if it  
 matches.  
   
-@param aResult the result to add  
-@param aQueryNode the query that the result applies to  
   
 @throws NS_ERROR_NULL_POINTER if aResult or aQueryNode are null  
   
@@ -175,7 +173,6 @@ will call the remove content generated for the result, if any. If a different
 query would then match instead, it will become the active match. This  
 method will have no effect if the result isn't known to the builder.  
   
-@param aResult the result to remove  
   
 @throws NS_ERROR_NULL_POINTER if aResult is null  
   
@@ -202,9 +199,6 @@ applies to must be specified using the aQueryNode parameter.
 This method is expected to have the same effect as calling both  
 removeResult for the old result and addResult for the new result.  
   
-@param aOldResult the old result  
-@param aNewResult the new result  
-@param aQueryNode the query that the new result applies to  
   
 @throws NS_ERROR_NULL_POINTER if either argument is null, or  
         NS_ERROR_INVALID_ARG if the ids don't match  
@@ -241,7 +235,6 @@ for a result has changed. In this case, the rules are not reapplied as
 it is expected that the same rule will still apply. The builder will  
 resynchronize any variables that are referenced in the action body.  
   
-@param aResult the result to change  
   
 @throws NS_ERROR_NULL_POINTER if aResult is null  
   
@@ -264,7 +257,6 @@ Return the result for a given id. Only one such result is returned and
 is always the result with that id associated with the active match.  
 This method will return null is there is no result for the id.  
   
-@param aId the id to return the result for  
   
 
 #### Parameters ####
@@ -284,7 +276,6 @@ This method will return null is there is no result for the id.
 Retrieve the result corresponding to a generated element, or null is  
 there isn't one.  
   
-@param aContent element to result the result of  
   
 
 #### Parameters ####
@@ -306,8 +297,6 @@ intended to be called only by the RDF query processor. If aTag is set,
 the content must have a tag name that matches aTag. aTag may be ignored  
 for builders that don't generate real DOM content.  
   
-@param aNode node to check  
-@param aTag tag that must match  
   
 
 #### Parameters ####
@@ -337,8 +326,6 @@ rule filter is applied, meaning that the filter may be used to further
 filter out results but not reaccept results that have already been  
 rejected.  
   
-@param aRule the rule to apply the filter to  
-@param aFilter the filter to add  
   
 
 #### Parameters ####

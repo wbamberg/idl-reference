@@ -35,8 +35,6 @@ but rather a common set that nearly all windowed objects support.
 ### repaint(force) ###
    
 Tell the window to repaint itself  
-@param aForce - if true, repaint immediately  
-                if false, the window may defer repainting as it sees fit.  
   
 
 #### Parameters ####

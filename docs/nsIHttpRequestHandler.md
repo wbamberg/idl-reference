@@ -38,11 +38,6 @@ an exception; in the general case, however, this method may throw an
 exception (causing an HTTP 500 response to occur, if the above conditions  
 are met).  
   
-@param request  
-  data representing an HTTP request  
-@param response  
-  an initially-empty response which must be modified to reflect the data  
-  which should be sent as the response to the request described by metadata  
   
 
 #### Parameters ####

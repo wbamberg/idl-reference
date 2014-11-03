@@ -38,13 +38,6 @@ a page, for example) are not displayed in history results (unless
 includeHidden is set). Many observers can ignore _EMBED notifications  
 (which will comprise the majority of visit notifications) to save work.  
   
-@param aVisitID        ID of the visit that was just created.  
-@param aTime           Time of the visit  
-@param aSessionID      No longer supported (always set to 0).  
-@param aReferringID    The ID of the visit the user came from. 0 if empty.  
-@param aTransitionType One of nsINavHistory.TRANSITION_*  
-@param aGUID           The unique ID associated with the page.  
-@param aHidden         Whether the visited page is marked as hidden.  
   
 
 #### Parameters ####
@@ -109,12 +102,6 @@ nothing. NULL means nobody set it. From C++: use IsVoid() and SetIsVoid()
 to see whether an empty string is "null" or not (it will always be an  
 empty string in either case).  
   
-@param aURI  
-       The URI of the page.  
-@param aPageTitle  
-       The new title of the page.  
-@param aGUID  
-       The unique ID associated with the page.  
   
 
 #### Parameters ####
@@ -149,16 +136,6 @@ This is not called for pages whose frecencies change as the result of some
 large operation where some large or unknown number of frecencies change at  
 once.  Use onManyFrecenciesChanged to detect such changes.  
   
-@param aURI  
-       The page's URI.  
-@param aNewFrecency  
-       The page's new frecency.  
-@param aGUID  
-       The page's GUID.  
-@param aHidden  
-       True if the page is marked as hidden.  
-@param aVisitDate  
-       The page's last visit date.  
   
 
 #### Parameters ####
@@ -215,12 +192,6 @@ delete. If there is some error in the middle (for example, out of memory)
 then you'll get a notification and it won't get deleted. There's no easy  
 way around this.  
   
-@param aURI  
-       The URI that was deleted.  
-@param aGUID  
-       The unique ID associated with the page.  
-@param aReason  
-       Indicates the reason for the removal.  see REASON_* constants.  
   
 
 #### Parameters ####
@@ -256,14 +227,6 @@ Notification that all of history is being deleted.
   
 An attribute of this page changed.  
   
-@param aURI  
-       The URI of the page on which an attribute changed.  
-@param aChangedAttribute  
-       The attribute whose value changed.  See ATTRIBUTE_* constants.  
-@param aNewValue  
-       The attribute's new value.  
-@param aGUID  
-       The unique ID associated with the page.  
   
 
 #### Parameters ####
@@ -300,23 +263,11 @@ An attribute of this page changed.
   
 Called when some visits of an history entry are expired.  
   
-@param aURI  
-       The page whose visits have been expired.  
-@param aVisitTime  
-       The largest visit time in microseconds that has been expired.  We  
-       guarantee that we don't have any visit older than this date.  
-@param aGUID  
-       The unique ID associated with the page.  
   
 @note: when all visits for a page are expired and also the full page entry  
        is expired, you will only get an onDeleteURI notification.  If a  
        page entry is removed, then you can be sure that we don't have  
        anymore visits for it.  
-@param aReason  
-       Indicates the reason for the removal.  see REASON_* constants.  
-@param aTransitionType  
-       If it's a valid TRANSITION_* value, all visits of the specified type  
-       have been removed.  
   
 
 #### Parameters ####

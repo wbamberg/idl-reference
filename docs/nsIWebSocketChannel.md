@@ -27,10 +27,6 @@ protocol implementation promises to call at least onStop on the listener.
 NOTE: Implementations should throw NS_ERROR_ALREADY_OPENED if the  
 websocket connection is reopened.  
   
-@param aURI the uri of the websocket protocol - may be redirected  
-@param aOrigin the uri of the originating resource  
-@param aListener the nsIWebSocketListener implementation  
-@param aContext an opaque parameter forwarded to aListener's methods  
   
 
 #### Parameters ####
@@ -69,7 +65,6 @@ websocket connection is reopened.
   
 Use to send text message down the connection to WebSocket peer.  
   
-@param aMsg the utf8 string to send  
   
 
 #### Parameters ####
@@ -88,7 +83,6 @@ Use to send text message down the connection to WebSocket peer.
   
 Use to send binary message down the connection to WebSocket peer.  
   
-@param aMsg the data to send  
   
 
 #### Parameters ####
@@ -107,7 +101,6 @@ Use to send binary message down the connection to WebSocket peer.
    
 Use to send a binary stream (Blob) to Websocket peer.  
   
-@param aStream The input stream to be sent.    
   
 
 #### Parameters ####

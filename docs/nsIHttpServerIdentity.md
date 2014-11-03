@@ -35,8 +35,6 @@ name reverts to 'http://127.0.0.1' with the associated server's port.
 @throws NS_ERROR_ILLEGAL_VALUE  
   if scheme or host do not match the scheme or host productions imported  
   into RFC 2616 from RFC 2396, or if port is not a valid port number  
-@returns  
-  true if the given name was a name for this server, false otherwise  
   
 
 #### Returns ####

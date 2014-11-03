@@ -21,10 +21,7 @@ dispatcher service.
 Gives the original content listener first crack at stopping a load before  
 it happens.  
   
-@param aURI   URI that is being opened.  
   
-@return       <code>false</code> if the load can continue;  
-              <code>true</code> if the open should be aborted.  
   
 
 #### Parameters ####
@@ -56,23 +53,7 @@ it happens.
 Notifies the content listener to hook up an nsIStreamListener capable of  
 consuming the data stream.  
   
-@param aContentType         Content type of the data.  
-@param aIsContentPreferred  Indicates whether the content should be  
-                            preferred by this listener.  
-@param aRequest             Request that is providing the data.  
-@param aContentHandler      nsIStreamListener that will consume the data.  
-                            This should be set to <code>nullptr</code> if  
-                            this content listener can't handle the content  
-                            type; in this case, doContent should also fail  
-                            (i.e., return failure nsresult).  
   
-@return                     <code>true</code> if the load should  
-                            be aborted and consumer wants to  
-                            handle the load completely by itself.  This  
-                            causes the URI Loader do nothing else...  
-                            <code>false</code> if the URI Loader should  
-                            continue handling the load and call the  
-                            returned streamlistener's methods.   
   
 
 #### Parameters ####
@@ -139,18 +120,7 @@ then the browser window should handle that content and not the mail
 window where the user may have clicked the link.  This is the difference  
 between isPreferred and canHandleContent.  
   
-@param aContentType         Content type of the data.  
-@param aDesiredContentType  Indicates that aContentType must be converted  
-                            to aDesiredContentType before processing the  
-                            data.  This causes a stream converted to be  
-                            inserted into the nsIStreamListener chain.  
-                            This argument can be <code>nullptr</code> if  
-                            the content should be consumed directly as  
-                            aContentType.  
   
-@return                     <code>true</code> if this is a preferred  
-                            content handler for aContentType;  
-                            <code>false<code> otherwise.  
   
 
 #### Parameters ####
@@ -196,19 +166,7 @@ When given a uri to dispatch, if the URI is not specified as 'preferred
 content' then the uri loader calls canHandleContent to see if the content  
 listener is capable of handling the content.  
   
-@param aContentType         Content type of the data.  
-@param aIsContentPreferred  Indicates whether the content should be  
-                            preferred by this listener.  
-@param aDesiredContentType  Indicates that aContentType must be converted  
-                            to aDesiredContentType before processing the  
-                            data.  This causes a stream converted to be  
-                            inserted into the nsIStreamListener chain.  
-                            This argument can be <code>nullptr</code> if  
-                            the content should be consumed directly as  
-                            aContentType.  
   
-@return                     <code>true</code> if the data can be consumed.  
-                            <code>false</code> otherwise.  
   
 Note: I really envision canHandleContent as a method implemented  
 by the docshell as the implementation is generic to all doc  

@@ -20,11 +20,6 @@ can be created to read the data from the buffer non-destructively.
 Initialize the stream, setting up the amount of space that will be  
 allocated for the stream's backing-store.  
   
-@param segmentSize  
-       Size of each segment. Must be a power of two.  
-@param maxSize  
-       Maximum total size of this stream. length will always be less  
-       than or equal to this value. Passing UINT32_MAX is safe.  
   
 
 #### Parameters ####

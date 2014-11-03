@@ -26,25 +26,12 @@ to receive <CODE>nsIWebProgressListener</CODE> or
 <CODE>nsISHistoryListener</CODE> notifications in which case the  
 the IID is that of the interface.  
   
-@param aListener The listener to be added.  
-@param aIID      The IID of the interface that will be called  
-                 on the listener as appropriate.  
-@return          <CODE>NS_OK</CODE> for successful registration;  
-                 <CODE>NS_ERROR_INVALID_ARG</CODE> if aIID is not  
-                 supposed to be registered using this method;  
-                 <CODE>NS_ERROR_FAILURE</CODE> either aListener did not  
-                 expose the interface specified by the IID, or some  
-                 other internal error occurred.  
   
 @see removeWebBrowserListener  
 @see nsIWeakReference  
 @see nsIWebProgressListener  
 @see nsISHistoryListener  
   
-@return <CODE>NS_OK</CODE>, listener was successfully added;  
-        <CODE>NS_ERROR_INVALID_ARG</CODE>, one of the arguments was  
-        invalid or the object did not implement the interface  
-        specified by the IID.  
   
 
 #### Parameters ####
@@ -84,13 +71,7 @@ the IID is that of the interface.
   
 Removes a previously registered listener.  
   
-@param aListener The listener to be removed.  
-@param aIID      The IID of the interface on the listener that will  
-                 no longer be called.  
   
-@return <CODE>NS_OK</CODE>, listener was successfully removed;  
-        <CODE>NS_ERROR_INVALID_ARG</CODE> arguments was invalid or  
-        the object did not implement the interface specified by the IID.  
   
 @see addWebBrowserListener  
 @see nsIWeakReference  

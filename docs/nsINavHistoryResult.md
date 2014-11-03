@@ -16,13 +16,6 @@ The result of a history/bookmark query.
   
 Adds an observer for changes done in the result.  
   
-@param aObserver  
-       a result observer.  
-@param aOwnsWeak  
-       If false, the result will keep an owning reference to the observer,  
-       which must be removed using removeObserver.  
-       If true, the result will keep a weak reference to the observer, which  
-       must implement nsISupportsWeakReference.  
   
 @see nsINavHistoryResultObserver  
   
@@ -52,8 +45,6 @@ Adds an observer for changes done in the result.
   
 Removes an observer that was added by addObserver.  
   
-@param aObserver  
-       a result observer that was added by addObserver.  
   
 
 #### Parameters ####

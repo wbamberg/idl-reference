@@ -22,8 +22,6 @@ by eliminating intermediate data structures and interfaces.
   
 Returns a protocol handler for a given URI scheme.  
   
-@param aScheme the URI scheme  
-@return reference to corresponding nsIProtocolHandler  
   
 
 #### Parameters ####
@@ -53,8 +51,6 @@ Returns a protocol handler for a given URI scheme.
   
 Returns the protocol flags for a given scheme.  
   
-@param aScheme the URI scheme  
-@return value of corresponding nsIProtocolHandler::protocolFlags  
   
 
 #### Parameters ####
@@ -94,8 +90,6 @@ the resulting URI object to obtain a more specific type of URI.
   
 This method constructs a new URI from a nsIFile.  
   
-@param aFile specifies the file path  
-@return reference to a new nsIURI object  
   
 Note: in the future, for perf reasons we should allow   
 callers to specify whether this is a file or directory by  
@@ -129,8 +123,6 @@ splitting this  into newDirURI() and newActualFileURI().
   
 Creates a channel for a given URI.  
   
-@param aURI nsIURI from which to make a channel  
-@return reference to the new nsIChannel object  
   
 
 #### Parameters ####
@@ -160,8 +152,6 @@ Creates a channel for a given URI.
   
 Creates a channel for a given URI.  
   
-@param aURI nsIURI from which to make a channel  
-@return reference to the new nsIChannel object  
   
 
 #### Parameters ####
@@ -243,8 +233,6 @@ NOTE: Most URL parsing is done via nsIURI, and in fact the scheme
 can also be extracted from a URL string via nsIURI.  This method  
 is provided purely as an optimization.  
   
-@param aSpec the URL string to parse  
-@return URL scheme  
   
 @throws NS_ERROR_MALFORMED_URI if URL string is not of the right form.  
   

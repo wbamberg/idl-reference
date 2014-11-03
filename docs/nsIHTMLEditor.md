@@ -13,13 +13,6 @@ layout: default
   
 AddDefaultProperty() registers a default style property with the editor  
   
-@param aProperty   the property to set by default  
-@param aAttribute  the attribute of the property, if applicable.  
-                   May be null.  
-                   Example: aProperty="font", aAttribute="color"  
-@param aValue      if aAttribute is not null, the value of the attribute.  
-                   Example: aProperty="font", aAttribute="color",  
-                            aValue="0x00FFFF"  
   
 
 #### Parameters ####
@@ -54,13 +47,6 @@ AddDefaultProperty() registers a default style property with the editor
   
 RemoveDefaultProperty() unregisters a default style property with the editor  
   
-@param aProperty   the property to remove from defaults  
-@param aAttribute  the attribute of the property, if applicable.  
-                   May be null.  
-                   Example: aProperty="font", aAttribute="color"  
-@param aValue      if aAttribute is not null, the value of the attribute.  
-                   Example: aProperty="font", aAttribute="color",  
-                            aValue="0x00FFFF"  
   
 
 #### Parameters ####
@@ -101,14 +87,6 @@ RemoveAllDefaultProperties() unregisters all default style properties with the e
   
 SetInlineProperty() sets the aggregate properties on the current selection  
   
-@param aProperty   the property to set on the selection   
-@param aAttribute  the attribute of the property, if applicable.  
-                   May be null.  
-                   Example: aProperty="font", aAttribute="color"  
-@param aValue      if aAttribute is not null, the value of the attribute.  
-                   May be null.  
-                   Example: aProperty="font", aAttribute="color",  
-                            aValue="0x00FFFF"  
   
 
 #### Parameters ####
@@ -146,20 +124,6 @@ getInlineProperty() gets aggregate properties of the current selection.
 All object in the current selection are scanned and their attributes are  
 represented in a list of Property object.  
   
-@param aProperty   the property to get on the selection   
-@param aAttribute  the attribute of the property, if applicable.  
-                   May be null.  
-                   Example: aProperty="font", aAttribute="color"  
-@param aValue      if aAttribute is not null, the value of the attribute.  
-                   May be null.  
-                   Example: aProperty="font", aAttribute="color",  
-                            aValue="0x00FFFF"  
-@param aFirst      [OUT] PR_TRUE if the first text node in the  
-                         selection has the property  
-@param aAny        [OUT] PR_TRUE if any of the text nodes in the  
-                         selection have the property  
-@param aAll        [OUT] PR_TRUE if all of the text nodes in the  
-                         selection have the property  
   
 
 #### Parameters ####
@@ -225,18 +189,6 @@ text in the current selection.
 removeInlineProperty() deletes the properties from all text in the current  
 selection.  If aProperty is not set on the selection, nothing is done.  
   
-@param aProperty   the property to remove from the selection   
-                   All atoms are for normal HTML tags (e.g.:  
-                   nsIEditorProperty::font) except when you want to  
-                   remove just links and not named anchors.  
-                   For that, use nsIEditorProperty::href  
-@param aAttribute  the attribute of the property, if applicable.  
-                   May be null.  
-                   Example: aProperty=nsIEditorProptery::font,  
-                   aAttribute="color"  
-                   nsIEditProperty::allAttributes is special.  
-                   It indicates that all content-based text properties  
-                   are to be removed from the selection.  
   
 
 #### Parameters ####
@@ -286,7 +238,6 @@ selection.  If aProperty is not set on the selection, nothing is done.
 Tests if a node is a BLOCK element according the the HTML 4.0 DTD.  
   This does NOT consider CSS effect on display type  
   
-@param aNode      the node to test  
   
 
 #### Parameters ####
@@ -305,7 +256,6 @@ Tests if a node is a BLOCK element according the the HTML 4.0 DTD.
   
 Insert some HTML source at the current location  
   
-@param aInputString   the string to be inserted  
   
 
 #### Parameters ####
@@ -331,7 +281,6 @@ the selected text (if any), but strip out any HTML styles and formatting
  Rebuild the entire document from source HTML  
  Needed to be able to edit HEAD and other outside-of-BODY content  
   
- @param aSourceString   HTML source string of the entire new document  
   
 
 #### Parameters ####
@@ -351,15 +300,6 @@ the selected text (if any), but strip out any HTML styles and formatting
 Insert some HTML source, interpreting  
 the string argument according to the given context.  
   
-@param aInputString   the string to be inserted  
-@param aContextStr    Context of insertion  
-@param aInfoStr       Related info to aInputString   
-@param aFlavor        Transferable flavor, can be ""  
-@param aSourceDoc          document where input was dragged from (may be null)  
-@param aDestinationNode    location for insertion (such as when dropped)  
-@param aDestinationOffset  used with aDestNode to determine insert location  
-@param aDeleteSelection    used with aDestNode during drag&drop   
-@param aCollapseSelection  used with aDestNode during drag&drop  
   
 
 #### Parameters ####
@@ -429,11 +369,6 @@ Used primarily to insert a new element for various insert element dialogs,
   but it enforces the HTML 4.0 DTD "CanContain" rules, so it should  
   be useful for other elements.  
   
-@param aElement           The element to insert  
-@param aDeleteSelection   Delete the selection before inserting  
-    If aDeleteSelection is PR_FALSE, then the element is inserted   
-    after the end of the selection for all element except  
-    Named Anchors, which insert before the selection  
   
 
 #### Parameters ####
@@ -475,7 +410,6 @@ Used primarily to insert a new element for various insert element dialogs,
    
 Set the selection at the suppled element  
   
-@param aElement   An element in the document  
   
 
 #### Parameters ####
@@ -501,7 +435,6 @@ The selection is set to parent-of-aElement with an
   but it enforces the HTML 4.0 DTD "CanContain" rules, so it should  
   be useful for other elements.  
   
-@param aElement  An element in the document  
   
 
 #### Parameters ####
@@ -519,7 +452,6 @@ The selection is set to parent-of-aElement with an
 ### setParagraphFormat(aParagraphFormat) ###
   
 SetParagraphFormat       Insert a block paragraph tag around selection  
-@param aParagraphFormat  "p", "h1" to "h6", "address", "pre", or "blockquote"  
   
 
 #### Parameters ####
@@ -538,8 +470,6 @@ SetParagraphFormat       Insert a block paragraph tag around selection
   
 getParagraphState returns what block tag paragraph format is in  
 the selection.  
-@param aMixed     True if there is more than one format  
-@return           Name of block tag. "" is returned for none.  
   
 
 #### Parameters ####
@@ -568,9 +498,6 @@ the selection.
 ### getFontFaceState(aMixed) ###
    
 getFontFaceState returns what font face is in the selection.  
-@param aMixed    True if there is more than one font face  
-@return          Name of face.  Note: "tt" is returned for  
-                 tt tag.  "" is returned for none.  
   
 
 #### Parameters ####
@@ -600,8 +527,6 @@ getFontFaceState returns what font face is in the selection.
 ### getFontColorState(aMixed) ###
    
 getFontColorState returns what font face is in the selection.  
-@param aMixed     True if there is more than one font color  
-@return           Color string. "" is returned for none.  
   
 
 #### Parameters ####
@@ -630,8 +555,6 @@ getFontColorState returns what font face is in the selection.
 ### getBackgroundColorState(aMixed) ###
    
 getFontColorState returns what font face is in the selection.  
-@param aMixed     True if there is more than one font color  
-@return           Color string. "" is returned for none.  
   
 
 #### Parameters ####
@@ -660,8 +583,6 @@ getFontColorState returns what font face is in the selection.
 ### getHighlightColorState(aMixed) ###
    
 getHighlightColorState returns what the highlight color of the selection.  
-@param aMixed     True if there is more than one font color  
-@return           Color string. "" is returned for none.  
   
 
 #### Parameters ####
@@ -690,12 +611,6 @@ getHighlightColorState returns what the highlight color of the selection.
 ### getListState(aMixed, aOL, aUL, aDL) ###
    
 getListState returns what list type is in the selection.  
-@param aMixed    True if there is more than one type of list, or  
-                 if there is some list and non-list  
-@param aOL       The company that employs me.  No, really, it's   
-                 true if an "ol" list is selected.  
-@param aUL       true if an "ul" list is selected.  
-@param aDL       true if a "dl" list is selected.  
   
 
 #### Parameters ####
@@ -733,11 +648,6 @@ getListState returns what list type is in the selection.
 ### getListItemState(aMixed, aLI, aDT, aDD) ###
    
 getListItemState returns what list item type is in the selection.  
-@param aMixed    True if there is more than one type of list item, or  
-                 if there is some list and non-list  
-@param aLI       true if "li" list items are selected.  
-@param aDT       true if "dt" list items are selected.  
-@param aDD       true if "dd" list items are selected.  
   
 
 #### Parameters ####
@@ -774,10 +684,6 @@ getListItemState returns what list item type is in the selection.
 ### getAlignment(aMixed, aAlign) ###
    
 getAlignment     returns what alignment is in the selection.  
-@param aMixed    True if there is more than one type of list item, or  
-                 if there is some list and non-list  
-@param aAlign    enum value for first encountered alignment  
-                 (left/center/right)  
   
 
 #### Parameters ####
@@ -837,19 +743,7 @@ Return the input node or a parent matching the given aTagName,
 An example of use is for testing if a node is in a table cell  
   given a selection anchor node.  
   
-@param aTagName  The HTML tagname  
- Special input values:  
-   Use "href" to get a link node   
-     (an "A" tag with the "href" attribute set)  
-   Use "anchor" or "namedanchor" to get a named anchor node  
-     (an "A" tag with the "name" attribute set)  
-   Use "list" to get an OL, UL, or DL list node  
-   Use "td" to get either a TD or TH cell node  
   
-@param aNode    The node in the document to start the search.  
-    If it is null, the anchor node of the current selection is used.  
-@return         NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
-                (passes NS_SUCCEEDED macro)  
   
 
 #### Parameters ####
@@ -900,15 +794,6 @@ The exception is a link, which is more like a text attribute:
    This could be a collapsed selection, i.e., a caret  
    within the link text.  
   
-@param aTagName  The HTML tagname or and empty string   
-      to get any element (but only if it is the only element selected)  
-   Special input values for Links and Named anchors:  
-   Use "href" to get a link node  
-     (an "A" tag with the "href" attribute set)  
-   Use "anchor" or "namedanchor" to get a named anchor node  
-     (an "A" tag with the "name" attribute set)  
-@return          NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
-                 (passes NS_SUCCEEDED macro)  
   
 
 #### Parameters ####
@@ -961,13 +846,6 @@ Used primarily to supply new element for various insert element dialogs
  (Image, Link, NamedAnchor, Table, and HorizontalRule   
   are the only returned elements as of 7/25/99)  
   
-@param aTagName  The HTML tagname  
-   Special input values for Links and Named anchors:  
-   Use "href" to get a link node  
-     (an "A" tag with the "href" attribute set)  
-   Use "anchor" or "namedanchor" to get a named anchor node  
-     (an "A" tag with the "name" attribute set)  
-@return          The new element created.  
   
 
 #### Parameters ####
@@ -1002,7 +880,6 @@ Used primarily to supply new element for various insert element dialogs
    
 Insert an link element as the parent of the current selection  
   
-@param aElement   An "A" element with a non-empty "href" attribute  
   
 
 #### Parameters ####
@@ -1021,7 +898,6 @@ Insert an link element as the parent of the current selection
    
 Set the value of the "bgcolor" attribute on the document's <body> element  
   
-@param aColor  The HTML color string, such as "#ffccff" or "yellow"  
   
 
 #### Parameters ####
@@ -1043,8 +919,6 @@ Set an attribute on the document's <body> element
   
 8/31/00 THIS ISN'T BEING USED? SHOULD WE DROP IT?  
   
-@param aAttr   The attribute to be set  
-@param aValue  The value of the attribute  
   
 
 #### Parameters ####
@@ -1071,7 +945,6 @@ Find all the nodes in the document which contain references
 to outside URIs (e.g. a href, img src, script src, etc.)  
 The objects in the array will be type nsIURIRefObject.  
   
-@return aNodeList    the linked nodes found  
   
 
 #### Returns ####
@@ -1088,7 +961,6 @@ The objects in the array will be type nsIURIRefObject.
 ### addInsertionListener(inFilter) ###
   
 Add listener for insertion override  
-@param inFilter  function which callers want called during insertion  
   
 
 #### Parameters ####
@@ -1106,7 +978,6 @@ Add listener for insertion override
 ### removeInsertionListener(inFilter) ###
   
 Remove listener for insertion override  
-@param inFilter  function which callers do not want called during insertion  
   
 
 #### Parameters ####
@@ -1127,15 +998,6 @@ Returns an anonymous nsDOMElement of type aTag,
 child of aParentNode. If aIsCreatedHidden is true, the class  
 "hidden" is added to the created element. If aAnonClass is not  
 the empty string, it becomes the value of the attribute "_moz_anonclass"  
-@return a DOM Element  
-@param aTag             [IN] a string representing the desired type of  
-                             the element to create  
-@param aParentNode      [IN] the parent node of the created anonymous  
-                             element  
-@param aAnonClass       [IN] contents of the _moz_anonclass attribute  
-@param aIsCreatedHidden [IN] a boolean specifying if the class "hidden"  
-                             is to be added to the created anonymous  
-                             element  
   
 
 #### Parameters ####
@@ -1186,7 +1048,6 @@ the empty string, it becomes the value of the attribute "_moz_anonclass"
 ### getSelectionContainer() ###
   
 returns the deepest container of the selection  
-@return a DOM Element  
   
 
 #### Returns ####
@@ -1204,7 +1065,6 @@ returns the deepest container of the selection
   
 Checks if the anonymous nodes created by the HTML editor have to be  
 refreshed or hidden depending on a possible new state of the selection  
-@param aSelection [IN] a selection  
   
 
 #### Parameters ####

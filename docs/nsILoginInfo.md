@@ -24,8 +24,6 @@ The arguments are the fields for the new object.
   
 Test for strict equality with another nsILoginInfo object.  
   
-@param aLoginInfo  
-       The other object to test.  
   
 
 #### Parameters ####
@@ -48,10 +46,6 @@ values may be optionally ignored. If one login's formSubmitURL is an
 empty string (but not null), it will be treated as a wildcard. [The  
 blank value indicates the login was stored before bug 360493 was fixed.]  
   
-@param aLoginInfo  
-       The other object to test.  
-@param ignorePassword  
-       If true, ignore the password when checking for match.  
   
 
 #### Parameters ####

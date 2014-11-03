@@ -142,12 +142,6 @@ example JS:
 Retrieves the type of an existing annotation  
 Use getAnnotationInfo if you need this along with the mime-type etc.  
   
-@param aURI  
-       the uri on which the annotation is set  
-@param aName  
-       the annotation name  
-@return one of the TYPE_* constants above  
-@throws if the annotation is not set  
   
 
 #### Parameters ####
@@ -193,9 +187,6 @@ Returns a list of all URIs having a given annotation.
   
 Returns a list of mozIAnnotation(s), having a given annotation name.  
   
-@param name  
-       The annotation to search for.  
-@return list of mozIAnnotation objects.  
   
 
 #### Parameters ####

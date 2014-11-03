@@ -145,11 +145,6 @@ Example:
 </script>  
 <div style="background-image: -moz-element(#canvasbg);"></div>  
   
-@param aImageElementId an image element ID to associate with  
-|aImageElement|  
-@param aImageElement a DOM element to be used as the source image of  
-|-moz-element(#aImageElementId)|. If this is null, the function will  
-unregister the image element ID |aImageElementId|.  
   
 @see <https://developer.mozilla.org/en/DOM/document.mozSetImageElement>  
   
@@ -188,10 +183,6 @@ full-screen mode, as per the DOM full-screen api.
 Retrieve the location of the caret position (DOM node and character  
 offset within that node), given a point.  
   
-@param x Horizontal point at which to determine the caret position, in  
-         page coordinates.  
-@param y Vertical point at which to determine the caret position, in  
-         page coordinates.  
   
 
 #### Parameters ####

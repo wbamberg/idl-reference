@@ -13,12 +13,7 @@ layout: default
   
 Start querying the application reputation service.  
   
-@param aQuery  
-       The nsIApplicationReputationQuery containing metadata of the  
-       downloaded file.  
   
-@param aCallback  
-       The callback for receiving the results of the query.  
   
 @remarks aCallback may not be null.  onComplete is guaranteed to be called  
          on aCallback. This function may not be called more than once with  

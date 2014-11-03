@@ -14,13 +14,9 @@ layout: default
 This dumps gzipped memory reports for this process and its child  
 processes.  If a file of the given name exists, it will be overwritten.  
   
-@param aFilename The output file.  
   
-@param aFinishDumping The callback called on completion.  
   
-@param aFinishDumpingData The environment for the callback.  
   
-@param aAnonymize Should the reports be anonymized?  
   
 Sample output, annotated with comments for explanatory purposes.  
   
@@ -90,19 +86,13 @@ process and its child processes to files in the tmp directory called
 dmd-<identifier>-<pid>.txt.gz (or something similar; again, no existing  
 file will be overwritten).  
   
-@param aIdentifier this identifier will appear in the filename of our  
-  about:memory dump and those of our children.  
   
   If the identifier is empty, the implementation may set it arbitrarily  
   and use that new value for its own dump and the dumps of its child  
   processes.  For example, the implementation may set |aIdentifier| to the  
   number of seconds since the epoch.  
   
-@param aAnonymize Should the reports be anonymized?  
   
-@param aMinimizeMemoryUsage indicates whether we should run a series of  
-  gc/cc's in an attempt to reduce our memory usage before collecting our  
-  memory report.  
   
 
 #### Parameters ####
@@ -137,18 +127,11 @@ file will be overwritten).
 Dump GC and CC logs to files in the OS's temp directory (or in  
 $MOZ_CC_LOG_DIRECTORY, if that environment variable is specified).  
   
-@param aIdentifier If aIdentifier is non-empty, this string will appear in  
-  the filenames of the logs we create (both for this process and, if  
-  aDumpChildProcesses is true, for our child processes).  
   
   If aIdentifier is empty, the implementation may set it to an  
   arbitrary value; for example, it may set aIdentifier to the number  
   of seconds since the epoch.  
   
-@param aDumpAllTraces indicates whether we should run an all-traces CC  
-  log.  An all-traces log visits all objects currently eligible for cycle  
-  collection, while a non-all-traces log avoids visiting some objects  
-  which we know are reachable.  
   
   All-traces logs are much bigger than the alternative, but they may be  
   helpful when trying to understand why a particular object is alive.  For  
@@ -156,9 +139,6 @@ $MOZ_CC_LOG_DIRECTORY, if that environment variable is specified).
   document; if your object is being held alive by such a document, you  
   probably want to see those references.  
   
-@param aDumpChildProcesses indicates whether we should call  
-  DumpGCAndCCLogsToFile in our child processes.  If so, the child processes  
-  will dump their children, and so on.  
   
   
 

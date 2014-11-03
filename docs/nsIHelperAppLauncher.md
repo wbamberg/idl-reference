@@ -29,8 +29,6 @@ nsIHelperAppLauncherDialog.
 Remembers that aApplication should be used to launch this content. Does  
 not actually launch the application.  
 NOTE: This will release the reference to the nsIHelperAppLauncherDialog.  
-@param aApplication nsIFile corresponding to the location of the application to use.  
-@param aRememberThisPreference TRUE if we should remember this choice.  
   
 
 #### Parameters ####
@@ -55,7 +53,6 @@ NOTE: This will release the reference to the nsIHelperAppLauncherDialog.
   
 Callback invoked by nsIHelperAppLauncherDialog::promptForSaveToFileAsync  
 after the user has chosen a file through the File Picker (or dismissed it).  
-@param aFile The file that was chosen by the user (or null if dialog was dismissed).  
   
 
 #### Parameters ####

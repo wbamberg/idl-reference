@@ -16,15 +16,6 @@ A representation of the data included in an HTTP request.
   
 Returns the value for the header in this request specified by fieldName.  
   
-@param fieldName  
-  the name of the field whose value is to be gotten; note that since HTTP  
-  header field names are case-insensitive, this method produces equivalent  
-  results for "HeAdER" and "hEADer" as fieldName  
-@returns  
-  The result is a string containing the individual values of the header,  
-  usually separated with a comma.  The headers WWW-Authenticate,  
-  Proxy-Authenticate, and Set-Cookie violate the HTTP specification,  
-  however, and for these headers only the separator string is '\n'.  
   
 @throws NS_ERROR_INVALID_ARG  
   if fieldName does not constitute a valid header field name  
@@ -65,12 +56,6 @@ Returns the value for the header in this request specified by fieldName.
 Returns true if a header with the given field name exists in this, false  
 otherwise.  
   
-@param fieldName  
-  the field name whose existence is to be determined in this; note that  
-  since HTTP header field names are case-insensitive, this method produces  
-  equivalent results for "HeAdER" and "hEADer" as fieldName  
-@throws NS_ERROR_INVALID_ARG  
-  if fieldName does not constitute a valid header field name  
   
 
 #### Parameters ####

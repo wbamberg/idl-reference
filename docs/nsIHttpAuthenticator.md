@@ -30,20 +30,6 @@ identity.  Following this, generateCredentials will be called.
 If the IDENTITY_IGNORED auth flag is set, then the aInvalidateIdentity  
 return value will be ignored, and user prompting will be suppressed.  
   
-@param aChannel  
-       the http channel that received the challenge.  
-@param aChallenge  
-       the challenge from the WWW-Authenticate/Proxy-Authenticate  
-       server response header.  (possibly from the auth cache.)  
-@param aProxyAuth  
-       flag indicating whether or not aChallenge is from a proxy.  
-@param aSessionState  
-       see description below for generateCredentials.  
-@param aContinuationState  
-       see description below for generateCredentials.  
-@param aInvalidateIdentity  
-       return value indicating whether or not to prompt the user for a  
-       revised identity.  
   
 
 #### Parameters ####
@@ -99,33 +85,6 @@ to the server via an Authorization/Proxy-Authorization header.
 This function may be called using a cached challenge provided the  
 authenticator sets the REUSABLE_CHALLENGE flag.  
   
-@param aChannel  
-       the http channel requesting credentials  
-@param aChallenge  
-       the challenge from the WWW-Authenticate/Proxy-Authenticate  
-       server response header.  (possibly from the auth cache.)  
-@param aProxyAuth  
-       flag indicating whether or not aChallenge is from a proxy.  
-@param aDomain  
-       string containing the domain name (if appropriate)  
-@param aUser  
-       string containing the user name  
-@param aPassword  
-       string containing the password  
-@param aSessionState  
-       state stored along side the user's identity in the auth cache  
-       for the lifetime of the browser session.  if a new auth cache  
-       entry is created for this challenge, then this parameter will  
-       be null.  on return, the result will be stored in the new auth  
-       cache entry.  this parameter is non-null when an auth cache entry  
-       is being reused.  
-@param aContinuationState  
-       state held by the channel between consecutive calls to  
-       generateCredentials, assuming multiple calls are required  
-       to authenticate.  this state is held for at most the lifetime of  
-       the channel.  
-@param aFlags  
-       authenticator may return one of the generate flags bellow.  
   
 
 #### Parameters ####

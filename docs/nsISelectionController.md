@@ -24,8 +24,6 @@ GetDisplaySelection will get the display mode for the selection. OFF,ON,DISABLED
 GetSelection will return the selection that the presentation  
  shell may implement.  
   
-@param aType will hold the type of selection //SelectionType  
-@param _return will hold the return value  
   
 
 #### Parameters ####
@@ -51,16 +49,6 @@ GetSelection will return the selection that the presentation
 ScrollSelectionIntoView scrolls a region of the selection,  
 so that it is visible in the scrolled view.  
   
-@param aType the selection to scroll into view. //SelectionType  
-@param aRegion the region inside the selection to scroll into view. //SelectionRegion  
-@param aFlags the scroll flags.  Valid bits include:  
-SCROLL_SYNCHRONOUS: when set, scrolls the selection into view  
-before returning. If not set, posts a request which is processed  
-at some point after the method returns.  
-SCROLL_FIRST_ANCESTOR_ONLY: if set, only the first ancestor will be scrolled  
-into view.  
-SCROLL_OVERFLOW_HIDDEN: if set, scrolls even if the overflow is specified  
-as hidden.  
   
 Note that if isSynchronous is true, then this might flush the pending  
 reflow. It's dangerous for some objects. See bug 418470 comment 12.  
@@ -101,7 +89,6 @@ as hidden.
   
 RepaintSelection repaints the selection specified by aType.  
   
-@param aType specifies the selection to repaint.  
   
 
 #### Parameters ####
@@ -121,8 +108,6 @@ RepaintSelection repaints the selection specified by aType.
 Set the caret as enabled or disabled. An enabled caret will  
 draw or blink when made visible. A disabled caret will never show up.  
 Can be called any time.  
-@param aEnable PR_TRUE to enable caret.  PR_FALSE to disable.  
-@return always NS_OK  
   
 
 #### Parameters ####
@@ -152,8 +137,6 @@ Can be called any time.
   
 Set the caret readonly or not. An readonly caret will  
 draw but not blink when made visible.   
-@param aReadOnly PR_TRUE to enable caret.  PR_FALSE to disable.  
-@return always NS_OK  
   
 
 #### Parameters ####
@@ -182,9 +165,6 @@ draw but not blink when made visible.
 ### getCaretEnabled() ###
   
 Gets the current state of the caret.  
-@param aEnabled  [OUT] set to the current caret state, as set by SetCaretEnabled  
-@return   if aOutEnabled==null, returns NS_ERROR_INVALID_ARG  
-          else NS_OK  
   
 
 #### Parameters ####
@@ -215,8 +195,6 @@ Gets the current state of the caret.
   
 Show the caret even in selections. By default the caret is hidden unless the  
 selection is collapsed. Use this function to show the caret even in selections.  
-@param aVisibility PR_TRUE to show the caret in selections.  PR_FALSE to hide.  
-@return always NS_OK  
   
 
 #### Parameters ####
@@ -247,8 +225,6 @@ selection is collapsed. Use this function to show the caret even in selections.
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
- @param aForward forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
   
 
 #### Parameters ####
@@ -289,8 +265,6 @@ after UTF-16 surrogates.
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
- @param aForward forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
   
 
 #### Parameters ####
@@ -314,7 +288,6 @@ after UTF-16 surrogates.
 ### wordExtendForDelete(forward) ###
  wordExtendForDelete will extend the selection one word forward/backward in the document.  
  this method is used internally for handling ctrl[option]-backspace and ctrl[option]-del.  
- @param aForward forward or backward if PR_FALSE  
   
 
 #### Parameters ####
@@ -334,8 +307,6 @@ after UTF-16 surrogates.
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
- @param aForward forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
   
 
 #### Parameters ####
@@ -362,8 +333,6 @@ after UTF-16 surrogates.
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
- @param aForward forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
   
 
 #### Parameters ####
@@ -389,8 +358,6 @@ after UTF-16 surrogates.
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
- @param aForward forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
   
 
 #### Parameters ####
@@ -413,7 +380,6 @@ after UTF-16 surrogates.
 
 ### completeScroll(forward) ###
  CompleteScroll will move page view to the top or bottom of the document  
- @param aForward forward or backward if PR_FALSE  
   
 
 #### Parameters ####
@@ -433,8 +399,6 @@ after UTF-16 surrogates.
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
- @param aForward forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
   
 
 #### Parameters ####
@@ -457,7 +421,6 @@ after UTF-16 surrogates.
 
 ### scrollPage(forward) ###
  ScrollPage will scroll the page without affecting the selection.  
- @param aForward scroll forward or backwards in selection  
   
 
 #### Parameters ####
@@ -474,7 +437,6 @@ after UTF-16 surrogates.
 
 ### scrollLine(forward) ###
  ScrollLine will scroll line up or down dependent on the boolean  
- @param aForward scroll forward or backwards in selection  
   
 
 #### Parameters ####
@@ -491,7 +453,6 @@ after UTF-16 surrogates.
 
 ### scrollCharacter(right) ###
  ScrollCharacter will scroll right or left dependent on the boolean  
- @param aRight if true will scroll right. if not will scroll left.  
   
 
 #### Parameters ####
@@ -513,10 +474,6 @@ after UTF-16 surrogates.
 ### checkVisibility(node, startOffset, endOffset) ###
  CheckVisibility will return true if textnode and offsets are actually rendered   
  in the current precontext.  
- @param aNode textNode to test  
- @param aStartOffset  offset in dom to first char of textnode to test  
- @param aEndOffset    offset in dom to last char of textnode to test  
- @param aReturnBool   boolean returned TRUE if visible FALSE if not  
   
 
 #### Parameters ####

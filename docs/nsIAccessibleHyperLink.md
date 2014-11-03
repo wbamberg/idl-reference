@@ -21,9 +21,7 @@ Returns the URI at the given index.
 processed via JavaScript. Therefore this property does not work on ARIA  
 links.  
   
-@param index  The 0-based index of the URI to be returned.  
   
-@return the nsIURI object containing the specifications for the URI.  
   
 
 #### Parameters ####
@@ -53,9 +51,7 @@ links.
   
 Returns a reference to the object at the given index.  
   
-@param index  The 0-based index whose object is to be returned.  
   
-@return the nsIAccessible object at the desired index.  
   
 
 #### Parameters ####

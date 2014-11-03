@@ -15,9 +15,6 @@ Prepare this channel for resuming. The request will not start until
 asyncOpen or open is called. Calling resumeAt after open or asyncOpen  
 has been called has undefined behaviour.  
   
-@param startPos the starting offset, in bytes, to use to download  
-@param entityID information about the file, to match before obtaining  
- the file. Pass an empty string to use anything.  
   
 During OnStartRequest, this channel will have a status of  
  NS_ERROR_NOT_RESUMABLE if the file cannot be resumed, eg because the  

@@ -18,7 +18,6 @@ stream.
 Appends a stream to the end of the streams. The cursor of the stream  
 should be located at the beginning of the stream if the implementation  
 of this nsIMultiplexInputStream also is used as an nsISeekableStream.  
-@param stream  stream to append  
   
 
 #### Parameters ####
@@ -41,8 +40,6 @@ beginning of the inserted stream instead.
 The cursor of the new stream should be located at the beginning of the  
 stream if the implementation of this nsIMultiplexInputStream also is  
 used as an nsISeekableStream.  
-@param stream  stream to insert  
-@param index   index to insert stream at, must be <= count  
   
 
 #### Parameters ####
@@ -68,7 +65,6 @@ used as an nsISeekableStream.
 Remove stream at specified index. If this stream is the one currently  
 being read the readcursor is moved to the beginning of the next  
 stream  
-@param index   remove stream at this index, must be < count  
   
 
 #### Parameters ####
@@ -86,8 +82,6 @@ stream
 ### getStream(index) ###
   
 Get stream at specified index.  
-@param index   return stream at this index, must be < count  
-@return        stream at specified index  
   
 
 #### Parameters ####

@@ -13,9 +13,6 @@ layout: default
   
 Check if the user can do the prescibed action for this uri.  
   
-@param aAction             Action being performed  
-@param aUri                The uri requesting this action  
-@param aWindow             The window generating this event.  
   
 
 #### Parameters ####
@@ -48,10 +45,6 @@ Request that blocked URI(s) be allowed through parental
 control filters. Returns true if the URI was successfully  
 overriden. Note, may block while native UI is shown.  
   
-@param aTarget(s)          URI to be overridden. In the case of  
-                           multiple URI, the first URI in the array  
-                           should be the root URI of the site.  
-@param window              Window that generates the event.  
   
 
 #### Parameters ####
@@ -81,12 +74,6 @@ overriden. Note, may block while native UI is shown.
 Log an application specific parental controls  
 event.  
   
-@param aEntryType       Constant defining the type of event.  
-@param aFlag            A flag indicating if the subject content  
-                        was blocked.  
-@param aSource          The URI source of the subject content.  
-@param aTarget          The location the content was saved to if  
-                        no blocking occurred.  
   
 
 #### Parameters ####

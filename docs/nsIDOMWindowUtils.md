@@ -12,7 +12,6 @@ layout: default
 ### getCursorType() ###
   
 Get current cursor type from this window  
-@return the current value of nsCursor  
   
 
 #### Returns ####
@@ -29,8 +28,6 @@ Get current cursor type from this window
 ### getDocumentMetadata(aName) ###
   
 Function to get metadata associated with the window's current document  
-@param aName the name of the metadata.  This should be all lowercase.  
-@return the value of the metadata, or the empty string if it's not set  
   
 Will throw a DOM security error if called without chrome privileges.  
   
@@ -192,20 +189,6 @@ The event is dispatched via the toplevel window, so it could go to any
 window under the toplevel window, in some cases it could never reach this  
 window at all.  
   
-@param aType event type  
-@param aX x offset in CSS pixels  
-@param aY y offset in CSS pixels  
-@param aButton button to synthesize  
-@param aClickCount number of clicks that have been performed  
-@param aModifiers modifiers pressed, using constants defined as MODIFIER_*  
-@param aIgnoreRootScrollFrame whether the event should ignore viewport bounds  
-                          during dispatch  
-@param aPressure touch input pressure: 0.0 -> 1.0  
-@param aInputSourceArg input source, see nsIDOMMouseEvent for values,  
-       defaults to mouse input.  
-@param aIsSynthesized controls nsIDOMEvent.isSynthesized value  
-                      that helps identifying test related events,  
-                      defaults to true  
   
 returns true if the page called prevent default on this event  
   
@@ -302,28 +285,6 @@ The event is dispatched via the toplevel window, so it could go to any
 window under the toplevel window, in some cases it could never reach this  
 window at all.  
   
-@param aType event type  
-@param aX x offset in CSS pixels  
-@param aY y offset in CSS pixels  
-@param aButton button to synthesize  
-@param aClickCount number of clicks that have been performed  
-@param aModifiers modifiers pressed, using constants defined as MODIFIER_*  
-@param aIgnoreRootScrollFrame whether the event should ignore viewport bounds  
-                          during dispatch  
-@param aPressure touch input pressure: 0.0 -> 1.0  
-@param aInputSourceArg input source, see nsIDOMMouseEvent for values,  
-       defaults to mouse input.  
-@param aPointerId A unique identifier for the pointer causing the event. default is 0  
-@param aWidth The width (magnitude on the X axis), default is 0  
-@param aHeight The height (magnitude on the Y axis), default is 0  
-@param aTilt The plane angle between the Y-Z plane  
-       and the plane containing both the transducer (e.g. pen stylus) axis and the Y axis. default is 0  
-@param aTiltX The plane angle between the X-Z plane  
-       and the plane containing both the transducer (e.g. pen stylus) axis and the X axis. default is 0  
-@param aIsPrimary  Indicates if the pointer represents the primary pointer of this pointer type.  
-@param aIsSynthesized controls nsIDOMEvent.isSynthesized value  
-                      that helps identifying test related events,  
-                      defaults to true  
   
 returns true if the page called prevent default on this event  
   
@@ -449,17 +410,6 @@ The event is dispatched via the toplevel window, so it could go to any
 window under the toplevel window, in some cases it could never reach this  
 window at all.  
   
-@param aType event type  
-@param xs array of offsets in CSS pixels for each touch to be sent  
-@param ys array of offsets in CSS pixels for each touch to be sent  
-@param rxs array of radii in CSS pixels for each touch to be sent  
-@param rys array of radii in CSS pixels for each touch to be sent  
-@param rotationAngles array of angles in degrees for each touch to be sent  
-@param forces array of forces (floats from 0 to 1) for each touch to be sent  
-@param count number of touches in this set  
-@param aModifiers modifiers pressed, using constants defined as MODIFIER_*  
-@param aIgnoreRootScrollFrame whether the event should ignore viewport bounds  
-                          during dispatch  
   
 returns true if the page called prevent default on this touch event  
   
@@ -579,9 +529,6 @@ Will throw a DOM security error if called without chrome privileges.
   
 NOTE: The synthesized native event may be fired asynchronously.  
   
-@param aNativeMessage  
-  On Windows:  WM_MOUSEWHEEL (0x020A), WM_MOUSEHWHEEL(0x020E),  
-               WM_VSCROLL (0x0115) or WM_HSCROLL (0x114).  
   
 
 #### Parameters ####
@@ -610,12 +557,6 @@ hover drag - msg1-n:TOUCH_HOVER (moving), msgn+1:TOUCH_REMOVE
 Widget support: Windows 8.0+, Winrt/Win32. Other widgets will  
 throw.  
   
-@param aPointerId The touch point id to create or update.  
-@param aTouchState one or more of the touch states listed above  
-@param aScreenX, aScreenY screen coords of this event  
-@param aPressure 0.0 -> 1.0 float val indicating pressure  
-@param aOrientation 0 -> 359 degree value indicating the  
-orientation of the pointer. Use 90 for normal taps.  
   
 
 #### Parameters ####
@@ -671,9 +612,6 @@ is not set.
 Widget support: Windows 8.0+, Winrt/Win32. Other widgets will  
 throw.  
   
-@param aScreenX, aScreenY screen coords of this event  
-@param aLongTap true if the tap should be long, false for a short  
-tap.  
   
 
 #### Parameters ####
@@ -729,7 +667,6 @@ that currently has focus, and focus the document.
 Cannot be accessed from unprivileged context (not content-accessible)  
 Will throw a DOM security error if called without chrome privileges.  
   
-@param aElement the element to focus  
   
 Do not use this method. Just use element.focus if available or  
 nsIFocusManager::SetFocus instead.  
@@ -755,15 +692,6 @@ Force a garbage collection followed by a cycle collection.
 Will throw a DOM security error if called without chrome privileges in  
 non-debug builds. Available to all callers in debug builds.  
   
-@param aListener listener that receives information about the CC graph  
-                 (see @mozilla.org/cycle-collector-logger;1 for a logger  
-                  component)  
-@param aExtraForgetSkippableCalls indicates how many times  
-                                  nsCycleCollector_forgetSkippable will  
-                                  be called before running cycle collection.  
-                                  -1 prevents the default  
-                                  nsCycleCollector_forgetSkippable call  
-                                  which happens after garbage collection.  
   
 
 #### Parameters ####
@@ -798,15 +726,6 @@ Force a cycle collection without garbage collection.
 Will throw a DOM security error if called without chrome privileges in  
 non-debug builds. Available to all callers in debug builds.  
   
-@param aListener listener that receives information about the CC graph  
-                 (see @mozilla.org/cycle-collector-logger;1 for a logger  
-                  component)  
-@param aExtraForgetSkippableCalls indicates how many times  
-                                  nsCycleCollector_forgetSkippable will  
-                                  be called before running cycle collection.  
-                                  -1 prevents the default  
-                                  nsCycleCollector_forgetSkippable call  
-                                  which happens after garbage collection.  
   
 
 #### Parameters ####
@@ -852,13 +771,6 @@ Cannot be accessed from unprivileged context (not
 content-accessible) Will throw a DOM security error if called  
 without chrome privileges.  
   
-@param aType event type  
-@param aX x offset in CSS pixels  
-@param aY y offset in CSS pixels  
-@param aDirection direction, using constants defined in nsIDOMSimpleGestureEvent  
-@param aDelta  amount of magnification or rotation for magnify and rotation events  
-@param aModifiers modifiers pressed, using constants defined in nsIDOMNSEvent  
-@param aClickCount For tap gestures, the number of taps.  
   
 
 #### Parameters ####
@@ -913,10 +825,6 @@ without chrome privileges.
   
 Retrieve the element at point aX, aY in the window's document.  
   
-@param aIgnoreRootScrollFrame whether or not to ignore the root scroll  
-       frame when retrieving the element. If false, this method returns  
-       null for coordinates outside of the viewport.  
-@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
   
 
 #### Parameters ####
@@ -943,16 +851,6 @@ Retrieve the element at point aX, aY in the window's document.
   
 Retrieve all nodes that intersect a rect in the window's document.  
   
-@param aX x reference for the rectangle in CSS pixels  
-@param aY y reference for the rectangle in CSS pixels  
-@param aTopSize How much to expand up the rectangle  
-@param aRightSize How much to expand right the rectangle  
-@param aBottomSize How much to expand down the rectangle  
-@param aLeftSize How much to expand left the rectangle  
-@param aIgnoreRootScrollFrame whether or not to ignore the root scroll  
-       frame when retrieving the element. If false, this method returns  
-       null for coordinates outside of the viewport.  
-@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
   
 
 #### Parameters ####
@@ -1047,8 +945,6 @@ Disable or enable non synthetic test mouse events on *all* windows.
 Cannot be accessed from unprivileged context (not content-accessible).  
 Will throw a DOM security error if called without chrome privileges.  
   
-@param aDisable  If true, disable all non synthetic test mouse events  
-              on all windows.  Otherwise, enable them.  
   
 
 #### Parameters ####
@@ -1068,8 +964,6 @@ Will throw a DOM security error if called without chrome privileges.
   
 Returns the scroll position of the window's currently loaded document.  
   
-@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
-@see nsIDOMWindow::scrollX/Y  
   
 
 #### Parameters ####
@@ -1089,8 +983,6 @@ Returns the scroll position of the window's currently loaded document.
   
 Returns the scroll position of the window's currently loaded document.  
   
-@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
-@see nsIDOMWindow::scrollX/Y  
   
 
 #### Parameters ####
@@ -1110,7 +1002,6 @@ Returns the scroll position of the window's currently loaded document.
   
 Returns the scrollbar width of the window's scroll frame.  
   
-@param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
   
 
 #### Parameters ####
@@ -1172,10 +1063,6 @@ Generate a content command event.
 Cannot be accessed from unprivileged context (not content-accessible)  
 Will throw a DOM security error if called without chrome privileges.  
   
-@param aType Type of command content event to send.  Can be one of "cut",  
-       "copy", "paste", "delete", "undo", "redo", or "pasteTransferable".  
-@param aTransferable an instance of nsITransferable when aType is  
-       "pasteTransferable"  
   
 
 #### Parameters ####
@@ -1205,12 +1092,6 @@ Synthesize a composition event to the window.
 Cannot be accessed from unprivileged context (not content-accessible)  
 Will throw a DOM security error if called without chrome privileges.  
   
-@param aType     The event type: "compositionstart", "compositionend" or  
-                 "compositionupdate".  
-@param aData     The data property value.  Note that this isn't applied  
-                 for compositionstart event because its value is the  
-                 selected text which is automatically computed.  
-@param aLocale   The locale property value.  
   
 
 #### Parameters ####
@@ -1253,9 +1134,6 @@ Will throw a DOM security error if called without chrome privileges.
 Synthesize a query content event. Note that the result value returned here  
 is in LayoutDevice pixels rather than CSS pixels.  
   
-@param aType  One of the following const values.  And see also each comment  
-              for the other parameters and the result.  
-@param aAdditionalFlags See the description of QUERY_CONTENT_FLAG_*.  
   
 
 #### Parameters ####
@@ -1304,11 +1182,6 @@ Synthesize a selection set event to the window.
   
 This sets the selection as the specified information.  
   
-@param aOffset  The caret offset of the selection start.  
-@param aLength  The length of the selection.  If this is too long, the  
-                extra length is ignored.  
-@param aAdditionalFlags See the description of SELECTION_SET_FLAG_*.  
-@return True, if succeeded.  Otherwise, false.  
   
 
 #### Parameters ####
@@ -1354,12 +1227,6 @@ underlying content is selectable. Selection will accumulate with any
 existing selection, callers should clear selection prior if needed.  
 May fire selection changed events. Calls nsFrame's SelectByTypeAtPoint.  
   
-@param aX, aY The selection point in client coordinates.  
-@param aSelectType The selection behavior requested.  
-@return True if a selection occured, false otherwise.  
-@throw NS_ERROR_DOM_SECURITY_ERR, NS_ERROR_UNEXPECTED for utils  
-issues, and NS_ERROR_INVALID_ARG for coordinates that are outside  
-this window.  
   
 
 #### Parameters ####
@@ -1414,8 +1281,6 @@ requirements (which are essentially testing 'color').
   
 Returns the parent of obj.  
   
-@param obj The JavaScript object whose parent is to be gotten.  
-@return the parent.  
   
 
 #### Parameters ####

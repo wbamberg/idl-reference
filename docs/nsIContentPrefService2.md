@@ -69,11 +69,6 @@ See nsIContentPrefCallback2 below for more information about callbacks.
   
 Gets all the preferences with the given name.  
   
-@param name      The preferences' name.  
-@param context   The private-browsing context, if any.  
-@param callback  handleResult is called once for each preference unless  
-                 no such preferences exist, in which case handleResult  
-                 is not called at all.  
   
 
 #### Parameters ####
@@ -106,11 +101,6 @@ Gets all the preferences with the given name.
   
 Gets the preference with the given domain and name.  
   
-@param domain    The preference's domain.  
-@param name      The preference's name.  
-@param context   The private-browsing context, if any.  
-@param callback  handleResult is called once unless no such preference  
-                 exists, in which case handleResult is not called at all.  
   
 
 #### Parameters ####
@@ -149,11 +139,6 @@ Gets the preference with the given domain and name.
 Gets all preferences with the given name whose domains are either the same  
 as or subdomains of the given domain.  
   
-@param domain    The preferences' domain.  
-@param name      The preferences' name.  
-@param context   The private-browsing context, if any.  
-@param callback  handleResult is called once for each preference.  If no  
-                 such preferences exist, handleResult is not called at all.  
   
 
 #### Parameters ####
@@ -191,10 +176,6 @@ as or subdomains of the given domain.
   
 Gets the preference with no domain and the given name.  
   
-@param name      The preference's name.  
-@param context   The private-browsing context, if any.  
-@param callback  handleResult is called once unless no such preference  
-                 exists, in which case handleResult is not called at all.  
   
 
 #### Parameters ####
@@ -236,11 +217,6 @@ If the preference is neither cached nor known not to exist, then null is
 returned, and get() must be called to determine whether the preference  
 exists.  
   
-@param domain   The preference's domain.  
-@param name     The preference's name.  
-@param context  The private-browsing context, if any.  
-@return         The preference, or null if no such preference is known to  
-                exist.  
   
 
 #### Parameters ####
@@ -290,11 +266,6 @@ preference for a particular subdomain is known not to exist, then an object
 corresponding to that preference will be present in the array, and, as with  
 getCachedByDomainAndName, its value attribute will be undefined.  
   
-@param domain   The preferences' domain.  
-@param name     The preferences' name.  
-@param context  The private-browsing context, if any.  
-@param len      The length of the returned array.  
-@param prefs    The array of preferences.  
   
 
 #### Parameters ####
@@ -343,10 +314,6 @@ returned; if the preference is known not to exist, then the value attribute
 of the returned object will be undefined; if the preference is neither  
 cached nor known not to exist, then null is returned.  
   
-@param name     The preference's name.  
-@param context  The private-browsing context, if any.  
-@return         The preference, or null if no such preference is known to  
-                exist.  
   
 
 #### Parameters ####
@@ -383,12 +350,6 @@ cached nor known not to exist, then null is returned.
   
 Sets a preference.  
   
-@param domain    The preference's domain.  
-@param name      The preference's name.  
-@param value     The preference's value.  
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the preference has been  
-                 stored.  
   
 
 #### Parameters ####
@@ -432,11 +393,6 @@ Sets a preference.
   
 Sets a preference with no domain.  
   
-@param name      The preference's name.  
-@param value     The preference's value.  
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the preference has been  
-                 stored.  
   
 
 #### Parameters ####
@@ -474,10 +430,6 @@ Sets a preference with no domain.
   
 Removes the preference with the given domain and name.  
   
-@param domain    The preference's domain.  
-@param name      The preference's name.  
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the operation completes.  
   
 
 #### Parameters ####
@@ -515,10 +467,6 @@ Removes the preference with the given domain and name.
 Removes all the preferences with the given name whose domains are either  
 the same as or subdomains of the given domain.  
   
-@param domain    The preferences' domain.  
-@param name      The preferences' name.  
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the operation completes.  
   
 
 #### Parameters ####
@@ -555,9 +503,6 @@ the same as or subdomains of the given domain.
   
 Removes the preference with no domain and the given name.  
   
-@param name      The preference's name.  
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the operation completes.  
   
 
 #### Parameters ####
@@ -588,9 +533,6 @@ Removes the preference with no domain and the given name.
   
 Removes all preferences with the given domain.  
   
-@param domain    The preferences' domain.  
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the operation completes.  
   
 
 #### Parameters ####
@@ -622,9 +564,6 @@ Removes all preferences with the given domain.
 Removes all preferences whose domains are either the same as or subdomains  
 of the given domain.  
   
-@param domain    The preferences' domain.  
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the operation completes.  
   
 
 #### Parameters ####
@@ -656,9 +595,6 @@ of the given domain.
 Removes all preferences with the given name regardless of domain, including  
 global preferences with the given name.  
   
-@param name      The preferences' name.  
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the operation completes.  
   
 
 #### Parameters ####
@@ -690,8 +626,6 @@ global preferences with the given name.
 Removes all non-global preferences -- in other words, all preferences that  
 have a domain.  
   
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the operation completes.  
   
 
 #### Parameters ####
@@ -716,9 +650,6 @@ have a domain.
   
 Removes all non-global preferences created after and including |since|.  
   
-@param since     Timestamp in milliseconds.  
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the operation completes.  
   
 
 #### Parameters ####
@@ -750,8 +681,6 @@ Removes all non-global preferences created after and including |since|.
 Removes all global preferences -- in other words, all preferences that have  
 no domain.  
   
-@param context   The private-browsing context, if any.  
-@param callback  handleCompletion is called when the operation completes.  
   
 
 #### Parameters ####
@@ -784,9 +713,6 @@ are called in the same turn of the event loop as the callback.
 The service holds a strong reference to the observer, so the observer must  
 be removed later to avoid leaking it.  
   
-@param name      The name of the preferences to observe.  Pass null to  
-                 observe all preference changes regardless of name.  
-@param observer  The observer.  
   
 
 #### Parameters ####
@@ -812,9 +738,6 @@ be removed later to avoid leaking it.
   
 Unregisters an observer for the given name.  
   
-@param name      The name for which the observer was registered.  Pass null  
-                 if the observer was added with a null name.  
-@param observer  The observer.  
   
 
 #### Parameters ####
@@ -841,10 +764,6 @@ Unregisters an observer for the given name.
 Extracts and returns the domain from the given string representation of a  
 URI.  This is how the API extracts domains from URIs passed to it.  
   
-@param str  The string representation of a URI, like  
-            "http://example.com/foo/bar".  
-@return     If the given string is a valid URI, the domain of that URI is  
-            returned.  Otherwise, the string itself is returned.  
   
 
 #### Parameters ####

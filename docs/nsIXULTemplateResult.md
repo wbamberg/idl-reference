@@ -33,9 +33,7 @@ attribute within the action body, it will be replaced with the result
 of this method. The question mark is considered part of the variable  
 name, thus aVar should be ?name and not simply name.  
   
-@param aVar the variable to look up  
   
-@return the value for the variable or a null string if it has no value  
   
 
 #### Parameters ####
@@ -69,9 +67,7 @@ This method may return null for a variable, even if getBindingFor returns
 a non-null value for the same variable. This method is provided as a  
 convenience when sorting results.  
   
-@param aVar the variable to look up  
   
-@return the value for the variable or null if it has no value  
   
 
 #### Parameters ####
@@ -106,8 +102,6 @@ The query must always be one that was compiled by the query processor
 that created this result. The <rule> element must always be a child of  
 the <query> element that was used to compile the query.  
   
-@param aQuery the query that matched  
-@param aRuleNode the rule node that matched  
   
 
 #### Parameters ####

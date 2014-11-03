@@ -36,16 +36,6 @@ Converts a stream of one type, to a stream of another type.
   
 Use this method when you have a stream you want to convert.  
   
-@param aFromStream   The stream representing the original/raw data.  
-@param aFromType     The MIME type of aFromStream.  
-@param aToType       The MIME type of the returned stream.  
-@param aContext      Either an opaque context, or a converter specific  
-                     context (implementation specific).  
-@return              The converted stream. NOTE: The returned stream  
-                     may not already be converted. An efficient stream  
-                     converter implementation will convert data on  
-                     demand rather than buffering the converted data  
-                     until it is used.  
   
 
 #### Parameters ####
@@ -104,13 +94,6 @@ the data to aListener.
 Use this method when you want to proxy (and convert) nsIStreamListener  
 callbacks asynchronously.  
   
-@param aFromType     The MIME type of the original/raw data.  
-@param aToType       The MIME type of the converted data.  
-@param aListener     The listener that receives the converted data.  
-@param aCtxt         Either an opaque context, or a converter specific  
-                     context (implementation specific).  
-@return              A nsIStreamListener that receives data via its  
-                     OnDataAvailable() method.  
   
 
 #### Parameters ####

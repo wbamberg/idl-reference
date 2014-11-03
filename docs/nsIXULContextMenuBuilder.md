@@ -17,11 +17,7 @@ and for triggering of menuitem actions with assigned identifiers.
   
 Initialize builder before building.  
   
-@param aDocumentFragment the fragment that will be used to append top  
-       level elements  
   
-@param aGeneratedItemIdAttrName the name of the attribute that will be  
-       used to mark elements as generated and for menuitem identification  
   
 
 #### Parameters ####
@@ -48,7 +44,6 @@ Initialize builder before building.
   
 Invoke the action of the menuitem with assigned id aGeneratedItemId.  
   
-@param aGeneratedItemId the menuitem id  
   
 
 #### Parameters ####

@@ -28,10 +28,7 @@ and "browser.startup.homepage_override" can be accessed by simply passing
   
 Called to determine the type of a specific preference.  
   
-@param aPrefName The preference to get the type of.  
   
-@return long     A value representing the type of the preference. This  
-                 value will be PREF_STRING, PREF_INT, or PREF_BOOL.  
   
 
 #### Parameters ####
@@ -62,9 +59,7 @@ Called to determine the type of a specific preference.
   
 Called to get the state of an individual boolean preference.  
   
-@param aPrefName The boolean preference to get the state of.  
   
-@return boolean  The value of the requested boolean preference.  
   
 @see setBoolPref  
   
@@ -96,8 +91,6 @@ Called to get the state of an individual boolean preference.
   
 Called to set the state of an individual boolean preference.  
   
-@param aPrefName The boolean preference to set the state of.  
-@param aValue    The boolean value to set the preference to.  
   
 @throws Error if setting failed or the preference has a default  
 value of a type other than boolean.  
@@ -129,9 +122,7 @@ Called to get the state of an individual floating-point preference.
 "Floating point" preferences are really string preferences that  
 are converted to floating point numbers.  
   
-@param aPrefName The floating point preference to get the state of.  
   
-@return float  The value of the requested floating point preference.  
   
 @see setCharPref  
   
@@ -163,9 +154,7 @@ are converted to floating point numbers.
   
 Called to get the state of an individual string preference.  
   
-@param aPrefName The string preference to retrieve.  
   
-@return string   The value of the requested string preference.  
   
 @see setCharPref  
   
@@ -197,8 +186,6 @@ Called to get the state of an individual string preference.
   
 Called to set the state of an individual string preference.  
   
-@param aPrefName The string preference to set.  
-@param aValue    The string value to set the preference to.  
   
 @throws Error if setting failed or the preference has a default  
 value of a type other than string.  
@@ -228,9 +215,7 @@ value of a type other than string.
   
 Called to get the state of an individual integer preference.  
   
-@param aPrefName The integer preference to get the value of.  
   
-@return long     The value of the requested integer preference.  
   
 @see setIntPref  
   
@@ -262,8 +247,6 @@ Called to get the state of an individual integer preference.
   
 Called to set the state of an individual integer preference.  
   
-@param aPrefName The integer preference to set the value of.  
-@param aValue    The integer value to set the preference to.  
   
 @throws Error if setting failed or the preference has a default  
 value of a type other than integer.  
@@ -295,14 +278,6 @@ Called to get the state of an individual complex preference. A complex
 preference is a preference which represents an XPCOM object that can not  
 be easily represented using a standard boolean, integer or string value.  
   
-@param aPrefName The complex preference to get the value of.  
-@param aType     The XPCOM interface that this complex preference  
-                 represents. Interfaces currently supported are:  
-                   - nsIFile  
-                   - nsISupportsString (UniChar)  
-                   - nsIPrefLocalizedString (Localized UniChar)  
-@param aValue    The XPCOM object into which to the complex preference   
-                 value should be retrieved.  
   
 @throws Error The value does not exist or is the wrong type.  
   
@@ -344,14 +319,6 @@ Called to set the state of an individual complex preference. A complex
 preference is a preference which represents an XPCOM object that can not  
 be easily represented using a standard boolean, integer or string value.  
   
-@param aPrefName The complex preference to set the value of.  
-@param aType     The XPCOM interface that this complex preference  
-                 represents. Interfaces currently supported are:  
-                   - nsIFile  
-                   - nsISupportsString (UniChar)  
-                   - nsIPrefLocalizedString (Localized UniChar)  
-@param aValue    The XPCOM object from which to set the complex preference   
-                 value.  
   
 @throws Error if setting failed or the value is the wrong type.  
   
@@ -393,7 +360,6 @@ Called to clear a user set value from a specific preference. This will, in
 effect, reset the value to the default value. If no default value exists  
 the preference will cease to exist.  
   
-@param aPrefName The preference to be cleared.  
   
 @note  
 This method does nothing if this object is a default branch.  
@@ -417,7 +383,6 @@ Called to lock a specific preference. Locking a preference will cause the
 preference service to always return the default value regardless of  
 whether there is a user set value or not.  
   
-@param aPrefName The preference to be locked.  
   
 @note  
 This method can be called on either a default or user branch but, in  
@@ -445,7 +410,6 @@ effect, always operates on the default branch.
 Called to check if a specific preference has a user value associated to  
 it.  
   
-@param aPrefName The preference to be tested.  
   
 @note  
 This method can be called on either a default or user branch but, in  
@@ -458,8 +422,6 @@ considered reset to its default value.
 In particular, this method will return false for such a preference and  
 the preference will not be saved to a file by nsIPrefService.savePrefFile.  
   
-@return boolean  true  The preference has a user set value.  
-                 false The preference only has a default value.  
   
 
 #### Parameters ####
@@ -491,14 +453,11 @@ the preference will not be saved to a file by nsIPrefService.savePrefFile.
 Called to check if a specific preference is locked. If a preference is  
 locked calling its Get method will always return the default value.  
   
-@param aPrefName The preference to be tested.  
   
 @note  
 This method can be called on either a default or user branch but, in  
 effect, always operates on the default branch.  
   
-@return boolean  true  The preference is locked.  
-                 false The preference is not locked.  
   
 @see lockPref  
 @see unlockPref  
@@ -534,7 +493,6 @@ Called to unlock a specific preference. Unlocking a previously locked
 preference allows the preference service to once again return the user set  
 value of the preference.  
   
-@param aPrefName The preference to be unlocked.  
   
 @note  
 This method can be called on either a default or user branch but, in  
@@ -561,9 +519,6 @@ effect, always operates on the default branch.
   
 Called to remove all of the preferences referenced by this branch.  
   
-@param aStartingAt The point on the branch at which to start the deleting  
-                   preferences. Pass in "" to remove all preferences  
-                   referenced by this branch.  
   
 @note  
 This method can be called on either a default or user branch but, in  
@@ -591,11 +546,6 @@ effect, always operates on both.
 Returns an array of strings representing the child preferences of the  
 root of this branch.  
   
-@param aStartingAt The point on the branch at which to start enumerating  
-                   the child preferences. Pass in "" to enumerate all  
-                   preferences referenced by this branch.  
-@param aCount      Receives the number of elements in the array.  
-@param aChildArray Receives the array of child preferences.  
   
 @note  
 This method can be called on either a default or user branch but, in  
@@ -635,9 +585,6 @@ effect, always operates on both.
 Called to reset all of the preferences referenced by this branch to their  
 default values.  
   
-@param aStartingAt The point on the branch at which to start the resetting  
-                   preferences to their default values. Pass in "" to  
-                   reset all preferences referenced by this branch.  
   
 @note  
 This method can be called on either a default or user branch but, in  
@@ -675,16 +622,6 @@ addObserver("bar.", ...) on a branch with root "foo.", modifying
 the preference "foo.bar.baz" will trigger the observer, and aData  
 parameter will be "bar.baz".  
   
-@param aDomain   The preference on which to listen for changes. This can  
-                 be the name of an entire branch to observe.  
-                 e.g. Holding the "root" prefbranch and calling  
-                 addObserver("foo.bar.", ...) will observe changes to  
-                 foo.bar.baz and foo.bar.bzip  
-@param aObserver The object to be notified if the preference changes.  
-@param aHoldWeak true  Hold a weak reference to |aObserver|. The object  
-                       must implement the nsISupportsWeakReference  
-                       interface or this will fail.  
-                 false Hold a strong reference to |aObserver|.  
   
 @note  
 Registering as a preference observer can open an object to potential  
@@ -757,8 +694,6 @@ please use an nsITimer.
   
 Remove a preference change observer.  
   
-@param aDomain   The preference which is being observed for changes.  
-@param aObserver An observer previously registered with addObserver().  
   
 @note  
 Note that you must call removeObserver() on the same nsIPrefBranch  

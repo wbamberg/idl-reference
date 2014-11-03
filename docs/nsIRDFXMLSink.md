@@ -36,8 +36,6 @@ Complete the RDF/XML load.
 ### addNameSpace(aPrefix, aURI) ###
   
 Add namespace information to the RDF/XML sink.  
-@param aPrefix the namespace prefix  
-@param aURI the namespace URI  
   
 
 #### Parameters ####
@@ -70,8 +68,6 @@ that cannot be released (i.e., if the observer holds a
 reference to the sink, it should be sure that it eventually  
 clears the reference).  
   
-@param aObserver the observer to add to the sink's set of  
-load observers.  
   
 
 #### Parameters ####
@@ -90,7 +86,6 @@ load observers.
 ### removeXMLSinkObserver(aObserver) ###
   
 Remove an observer from the sink's set of observers.  
-@param aObserver the observer to remove.  
   
 
 #### Parameters ####

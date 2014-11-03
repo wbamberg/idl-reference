@@ -85,12 +85,6 @@ recommended not to feed any data until the output file is set.
 If an input/output error occurs with the specified file, the save operation  
 fails.  Failure is notified asynchronously through the observer.  
   
-@param aTarget  
-       New output file to be written.  
-@param aKeepPartial  
-       Indicates whether aFile should be kept as partially completed,  
-       rather than deleted, if the operation fails or is canceled.  This is  
-       generally set for downloads that use temporary ".part" files.  
   
 
 #### Parameters ####
@@ -127,11 +121,6 @@ target file name cannot be changed anymore after this method has been
 called.  Conversely, before calling this method, the file can still be  
 renamed even if all the data has been fed.  
   
-@param aStatus  
-       Result code that determines whether the operation should succeed or  
-       be canceled, and is notified to the observer.  If the operation  
-       fails meanwhile for other reasons, or the observer has been already  
-       notified of completion, this status code is ignored.  
   
 
 #### Parameters ####

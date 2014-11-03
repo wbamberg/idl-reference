@@ -24,9 +24,7 @@ Check whether a handler for a specific protocol exists.  Specifically,
 this looks to see whether there are any known possible application handlers  
 in either the nsIHandlerService datastore or registered with the OS.  
   
-@param aProtocolScheme The scheme from a url: http, ftp, mailto, etc.  
   
-@return true if we have a handler and false otherwise.  
   
 XXX shouldn't aProtocolScheme be an ACString like nsIURI::scheme?  
   
@@ -73,13 +71,11 @@ Retrieve the handler for the given protocol.  If neither the application
 nor the OS knows about a handler for the protocol, the object this method  
 returns will represent a default handler for unknown content.  
   
-@param aProtocolScheme the scheme from a URL: http, ftp, mailto, etc.  
   
 Note: aProtocolScheme should not include a trailing colon, which is part  
 of the URI syntax, not part of the scheme itself (i.e. pass "mailto" not  
 "mailto:").  
   
-@return the handler, if any; otherwise a default handler  
   
 
 #### Parameters ####
@@ -110,9 +106,6 @@ of the URI syntax, not part of the scheme itself (i.e. pass "mailto" not
 Given a scheme, looks up the protocol info from the OS.  This should be  
 overridden by each OS's implementation.  
   
-@param aScheme The protocol scheme we are looking for.  
-@param aFound  Was an OS default handler for this scheme found?  
-@return An nsIHanderInfo for the protocol.  
   
 
 #### Parameters ####
@@ -148,12 +141,6 @@ overridden by each OS's implementation.
    
 Set some sane defaults for a protocol handler object.  
   
-@param aHandlerInfo      nsIHandlerInfo object, as returned by   
-                         getProtocolHandlerInfoFromOS  
-@param aOSHandlerExists  was the object above created for an extant  
-                         OS default handler?  This is generally the  
-                         value of the aFound out param from  
-                         getProtocolHandlerInfoFromOS.  
   
 
 #### Parameters ####
@@ -182,7 +169,6 @@ Set some sane defaults for a protocol handler object.
   
 Used to load a url via an external protocol handler (if one exists)  
   
-@param aURL The url to load  
   
 @deprecated Use LoadURI instead (See Bug 389565 for removal)  
   
@@ -204,16 +190,7 @@ Used to load a url via an external protocol handler (if one exists)
 Used to load a URI via an external application. Might prompt the user for  
 permission to load the external application.  
   
-@param aURI  
-       The URI to load  
   
-@param aWindowContext   
-       The window to parent the dialog against, and, if a web handler  
-       is chosen, it is loaded in this window as well.  This parameter  
-       may be ultimately passed nsIURILoader.openURI in the case of a  
-       web handler, and aWindowContext is null or not present, web  
-       handlers will fail.  We need to do better than that; bug 394483  
-       filed in order to track.  
   
 @note  Embedders that do not expose the http protocol should not currently  
        use web-based protocol handlers, as handoff won't work correctly  
@@ -248,7 +225,6 @@ permission to load the external application.
 Gets a human-readable description for the application responsible for  
 handling a specific protocol.  
   
-@param aScheme The scheme to look up. For example, "mms".  
   
 @throw NS_ERROR_NOT_IMPLEMENTED  
        If getting descriptions for protocol helpers is not supported  

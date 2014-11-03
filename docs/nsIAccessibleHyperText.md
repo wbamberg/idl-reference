@@ -20,9 +20,7 @@ Current implementation assumes every embedded object is a link.
   
 Return link accessible at the given index.  
   
-@param index  [in] 0-based index of the link that is to be retrieved  
   
-@return       link accessible or null if there is no link at that index  
   
 
 #### Parameters ####
@@ -52,10 +50,7 @@ Return link accessible at the given index.
   
 Return index of the given link.  
   
-@param link  [in] link accessible the index is requested for  
   
-@return      index of the given link or null if there's no link within  
-               hypertext accessible  
   
 
 #### Parameters ####

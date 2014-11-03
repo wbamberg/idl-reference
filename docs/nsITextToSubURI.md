@@ -25,9 +25,6 @@ Note:
  <li> Always succeeeds (callers don't need to do error checking)  
 </ul>  
   
-@param aCharset the charset to convert from  
-@param aURIFragment the URI (or URI fragment) to unescape  
-@return Unescaped aURIFragment  converted to unicode  
   
 
 #### Parameters ####
@@ -65,11 +62,6 @@ Unescapes only non ASCII characters in the given URI fragment
 note: this method assumes the URI as UTF-8 and fallbacks to the given   
 charset if the charset is an ASCII superset   
   
-@param aCharset the charset to convert from  
-@param aURIFragment the URI (or URI fragment) to unescape  
-@return Unescaped aURIFragment  converted to unicode  
-@throws NS_ERROR_UCONV_NOCONV when there is no decoder for aCharset  
-        or error code of nsIUnicodeDecoder in case of conversion failure  
   
 
 #### Parameters ####

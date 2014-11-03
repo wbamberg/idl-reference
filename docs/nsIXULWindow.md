@@ -22,7 +22,6 @@ Query accordingly to determine the capabilities.
 ### addChildWindow(aChild) ###
   
 Tell this window that it has picked up a child XUL window  
-@param aChild the child window being added  
   
 
 #### Parameters ####
@@ -40,7 +39,6 @@ Tell this window that it has picked up a child XUL window
 ### removeChildWindow(aChild) ###
   
 Tell this window that it has lost a child XUL window  
-@param aChild the child window being removed  
   
 
 #### Parameters ####
@@ -58,17 +56,6 @@ Tell this window that it has lost a child XUL window
 ### center(aRelative, aScreen, aAlert) ###
   
 Move the window to a centered position.  
-@param aRelative If not null, the window relative to which the window is  
-                 moved. See aScreen parameter for details.  
-@param aScreen   PR_TRUE to center the window relative to the screen  
-                 containing aRelative if aRelative is not null. If  
-                 aRelative is null then relative to the screen of the  
-                 opener window if it was initialized by passing it to  
-                 nsWebShellWindow::Initialize. Failing that relative to  
-                 the main screen.  
-                 PR_FALSE to center it relative to aRelative itself.  
-@param aAlert    PR_TRUE to move the window to an alert position,  
-                 generally centered horizontally and 1/3 down from the top.  
   
 
 #### Parameters ####
@@ -118,10 +105,6 @@ if they do change.  The state change is one-way and idempotent.
 ### createNewWindow(aChromeFlags, aOpeningTab) ###
   
 Create a new window.  
-@param aChromeFlags see nsIWebBrowserChrome  
-@param aOpeningTab the TabParent that requested this new window be opened.  
-                   Can be left null.  
-@return the newly minted window  
   
 
 #### Parameters ####

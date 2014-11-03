@@ -37,10 +37,6 @@ connection.
   
 Clones a database connection and makes the clone read only if needed.  
   
-@param aReadOnly  
-       If true, the returned database should be put into read-only mode.  
-       Defaults to false.  
-@return the cloned database connection.  
   
 @throws NS_ERROR_UNEXPECTED  
         If this connection is a memory database.  
@@ -93,9 +89,6 @@ expression may use ? to indicate sequential numbered arguments,
 ?1, ?2 etc. to indicate specific numbered arguments or :name and   
 $var to indicate named arguments.  
   
-@param aSQLStatement  
-       The SQL statement to execute.  
-@return a new mozIStorageStatement  
   
 
 #### Parameters ####
@@ -125,7 +118,6 @@ $var to indicate named arguments.
   
 Execute a SQL expression, expecting no arguments.  
   
-@param aSQLStatement  The SQL statement to execute  
   
 
 #### Parameters ####
@@ -144,9 +136,6 @@ Execute a SQL expression, expecting no arguments.
   
 Check if the given table exists.  
   
-@param aTableName  
-       The table to check  
-@return TRUE if table exists, FALSE otherwise.  
   
 
 #### Parameters ####
@@ -176,8 +165,6 @@ Check if the given table exists.
   
 Check if the given index exists.  
   
-@param aIndexName   The index to check  
-@return TRUE if the index exists, FALSE otherwise.  
   
 
 #### Parameters ####
@@ -233,12 +220,6 @@ If the table already exists, NS_ERROR_FAILURE is thrown.
 (XXX at some point in the future it will check if the schema is  
 the same as what is specified, but that doesn't happen currently.)  
   
-@param aTableName  
-       The table name to be created, consisting of [A-Za-z0-9_], and  
-       beginning with a letter.  
-@param aTableSchema  
-       The schema of the table; what would normally go between the parens  
-       in a CREATE TABLE statement: e.g., "foo  INTEGER, bar STRING".  
   
 @throws NS_ERROR_FAILURE  
         If the table already exists or could not be created for any other  
@@ -272,13 +253,6 @@ by growing/shrinking the database file in SQLITE_FCNTL_CHUNK_SIZE increments. To
 conserve memory on systems short on storage space, this function will have no effect  
 on mobile devices or if less than 500MiB of space is left available.  
   
-@param aIncrement  
-       The database file will grow in multiples of chunkSize.  
-@param aDatabaseName  
-       Sqlite database name. "" means pass NULL for zDbName to sqlite3_file_control.  
-       See http://sqlite.org/c3ref/file_control.html for more details.  
-@throws NS_ERROR_FILE_TOO_BIG  
-        If the system is short on storage space.  
   
 
 #### Parameters ####
@@ -306,8 +280,6 @@ on mobile devices or if less than 500MiB of space is left available.
   
 Enable a predefined virtual table implementation.  
   
-@param aModuleName  
-       The module to enable. Only "filesystem" is currently supported.  
   
 @throws NS_ERROR_FAILURE  
         For unknown module names.  

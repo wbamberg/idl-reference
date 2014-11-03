@@ -20,9 +20,7 @@ and insecure pages, posts to insecure servers etc.
  currently indicates a secure page,   
  that information is being submitted to an insecure page.  
   
- @param ctx A user interface context.  
   
- @return true if the user confirms to submit.  
   
 
 #### Parameters ####

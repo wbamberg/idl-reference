@@ -17,12 +17,6 @@ and if it has an error.
 ### onCheckComplete(request, updates, updateCount) ###
   
 The update check was completed.  
-@param   request  
-         The nsIXMLHttpRequest handling the update check.  
-@param   updates  
-         An array of nsIUpdate objects listing available updates.  
-@param   updateCount  
-         The size of the |updates| array.  
   
 
 #### Parameters ####
@@ -52,11 +46,6 @@ The update check was completed.
 ### onError(request, update) ###
   
 An error occurred while loading the remote update service file.  
-@param   request  
-         The nsIXMLHttpRequest handling the update check.  
-@param   update  
-         A nsIUpdate object that contains details about the  
-         error in its |statusText| property.  
   
 
 #### Parameters ####

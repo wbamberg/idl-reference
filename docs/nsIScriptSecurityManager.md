@@ -29,8 +29,6 @@ Check that the script currently running in context "cx" can load "uri".
 Will return error code NS_ERROR_DOM_BAD_URI if the load request  
 should be denied.  
   
-@param cx the JSContext of the script causing the load  
-@param uri the URI that is being loaded  
   
 
 #### Parameters ####
@@ -58,9 +56,6 @@ Check that content with principal aPrincipal can load "uri".
 Will return error code NS_ERROR_DOM_BAD_URI if the load request  
 should be denied.  
   
-@param aPrincipal the principal identifying the actor causing the load  
-@param uri the URI that is being loaded  
-@param flags the permission set, see above  
   
 
 #### Parameters ####
@@ -118,9 +113,6 @@ have appId = UNKNOWN_APP_ID.
 ### getAppCodebasePrincipal(uri, appId, inMozBrowser) ###
   
 Returns a principal that has the given information.  
-@param appId is the app id of the principal. It can't be UNKNOWN_APP_ID.  
-@param inMozBrowser is true if the principal has to be considered as  
-inside a mozbrowser frame.  
   
 
 #### Parameters ####
@@ -146,7 +138,6 @@ inside a mozbrowser frame.
   
 Returns a principal that has the appId and inMozBrowser of the load  
 context.  
-@param loadContext to get appId/inMozBrowser from.  
   
 
 #### Parameters ####
@@ -165,7 +156,6 @@ context.
   
 Returns a principal that has the appId and inMozBrowser of the docshell  
 inside a mozbrowser frame.  
-@param docShell to get appId/inMozBrowser from.  
   
 
 #### Parameters ####

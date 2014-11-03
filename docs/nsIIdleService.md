@@ -22,9 +22,6 @@ user starts using their computer again.
 Add an observer to be notified when the user idles for some period of  
 time, and when they get back from that.  
   
-@param observer the observer to be notified  
-@param time the amount of time in seconds the user should be idle before  
-            the observer should be notified.  
   
 @note  
 The subject of the notification the observer will get is always the  
@@ -64,12 +61,6 @@ Current implementations use a delay of 5 seconds.
 ### removeIdleObserver(observer, time) ###
   
 Remove an observer registered with addIdleObserver.  
-@param observer the observer that needs to be removed.  
-@param time the amount of time they were listening for.  
-@note  
-Removing an observer will remove it once, for the idle time you specify.   
-If you have added an observer multiple times, you will need to remove it  
-just as many times.  
   
 
 #### Parameters ####

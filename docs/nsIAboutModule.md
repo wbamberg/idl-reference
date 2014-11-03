@@ -13,8 +13,6 @@ layout: default
   
 Constructs a new channel for the about protocol module.   
   
-@param aURI the uri of the new channel  
-@param aLoadInfo the loadinfo of the new channel  
   
 
 #### Parameters ####

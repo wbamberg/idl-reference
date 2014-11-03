@@ -15,8 +15,6 @@ Interface representing a browser tab.
 ### load(aURI) ###
   
 Load a new URI into this browser tab.  
-@param   aURI  
-         The uri to load into the browser tab  
   
 
 #### Parameters ####
@@ -45,8 +43,6 @@ as script may abort the close operation.
 ### moveBefore(aBefore) ###
   
 Moves this browser tab before another browser tab within the window.  
-@param   aBefore  
-         The tab before which the target tab will be moved  
   
 
 #### Parameters ####

@@ -46,11 +46,6 @@ through this event.
 There is no guarantee that the notation declaration will be  
 reported before any unparsed entities that use it.  
   
-@param name The notation name.  
-@param publicId The notation's public identifier, or null if none was  
-                 given.  
-@param systemId The notation's system identifier, or null if none was  
-                 given.  
   
 
 #### Parameters ####
@@ -91,12 +86,6 @@ may appear as attribute values.
 If the system identifier is a URL, the parser must resolve it  
 fully before passing it to the application.  
   
-@param name The unparsed entity's name.  
-@param publicId The entity's public identifier, or null if none was  
-                 given.  
-@param systemId The entity's system identifier, or null if none was  
-                 given.  
-@param notationName The name of the associated notation.  
   
 
 #### Parameters ####

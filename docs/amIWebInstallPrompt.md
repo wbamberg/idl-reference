@@ -18,14 +18,6 @@ installs.
   
 Get a confirmation that the user wants to start the installs.  
   
-@param  aWindow  
-        The window that triggered the installs  
-@param  aUri  
-        The URI of the site that triggered the installs  
-@param  aInstalls  
-        The AddonInstalls that were requested  
-@param  aCount  
-        The number of AddonInstalls  
   
 
 #### Parameters ####

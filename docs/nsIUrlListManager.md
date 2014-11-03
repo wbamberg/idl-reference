@@ -18,11 +18,6 @@ Get the gethash url for this table
   
 Add a table to the list of tables we are managing. The name is a  
 string of the format provider_name-semantic_type-table_type.  For  
-@param tableName A string of the format  
-       provider_name-semantic_type-table_type.  For example,  
-       goog-white-enchash or goog-black-url.  
-@param updateUrl The URL from which to fetch updates.  
-@param gethashUrl The URL from which to fetch hash completions.  
   
 
 #### Parameters ####

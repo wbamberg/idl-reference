@@ -27,7 +27,6 @@ This interface must be used only from the XPCOM main thread.
   
 Synchronously open the channel.  
   
-@return blocking input stream to the channel's data.  
   
 NOTE: nsIChannel implementations are not required to implement this  
 method.  Moreover, since this method may block the calling thread, it  
@@ -78,9 +77,6 @@ associated load group (if any).
 NOTE: Implementations should throw NS_ERROR_ALREADY_OPENED if the  
 channel is reopened.  
   
-@param aListener the nsIStreamListener implementation  
-@param aContext an opaque parameter forwarded to aListener's methods  
-@see nsIChannelEventSink for onChannelRedirect  
   
 
 #### Parameters ####

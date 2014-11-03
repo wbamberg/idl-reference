@@ -24,11 +24,6 @@ that may or most likely will not have the ability to get back to A.
   
 Retrieves the specified interface pointer.  
   
-@param uuid The IID of the interface being requested.  
-@param result [out] The interface pointer to be filled in if  
-              the interface is accessible.  
-@throws NS_NOINTERFACE - interface not accessible.  
-@throws NS_ERROR* - method failure.  
   
 
 #### Parameters ####

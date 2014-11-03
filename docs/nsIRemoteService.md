@@ -24,10 +24,6 @@ clients.
 Start the remote service. This should not be done until app startup  
 appears to have been successful.  
   
-@param appName     (Required) Sets a window property identifying the  
-                   application.  
-@param profileName (May be null) Sets a window property identifying the  
-                   profile name.  
   
 
 #### Parameters ####

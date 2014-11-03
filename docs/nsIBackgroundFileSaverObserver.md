@@ -14,10 +14,6 @@ layout: default
 Called when the name of the output file has been determined.  This function  
 may be called more than once if the target file is renamed while saving.  
   
-@param aSaver  
-       Reference to the object that raised the notification.  
-@param aTarget  
-       Name of the file that is being written.  
   
 
 #### Parameters ####
@@ -44,11 +40,6 @@ Called when the operation completed, and the target file has been closed.
 If the operation succeeded, the target file is ready to be used, otherwise  
 it might have been already deleted.  
   
-@param aSaver  
-       Reference to the object that raised the notification.  
-@param aStatus  
-       Result code that determines whether the operation succeeded or  
-       failed, as well as the failure reason.  
   
 
 #### Parameters ####

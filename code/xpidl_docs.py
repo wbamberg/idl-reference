@@ -41,10 +41,14 @@ class Method(object):
 
     def write(self, output):
         md.writeH3(self.signature(), output)
-        self.writeDoccomments(output)
         parsed = parseDoccomments(self.doclines)
+        self.writeGeneralComments(parsed.generalDocs, output)
         self.writeParams(parsed.params, output)
         self.writeReturns(parsed.returns, output)
+
+    def writeGeneralComments(self, comments, output):
+        for comment in comments:
+            output.write(comment)
 
     def writeParams(self, params, output):
         params = iter(params)

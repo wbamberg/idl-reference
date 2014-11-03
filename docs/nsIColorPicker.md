@@ -20,12 +20,6 @@ this file, the behavior will be unspecified. The initialColor could be the
 one used by the underlying backend or an arbitrary one. The backend could  
 also assert.  
   
-@param      parent       nsIDOMWindow parent. This dialog will be dependent  
-                         on this parent. parent must be non-null.  
-@param      title        The title for the color picker widget.  
-@param      initialColor The color to show when the widget is opened. The  
-                         parameter has to follow the format specified on top  
-                         of this file.  
   
 
 #### Parameters ####

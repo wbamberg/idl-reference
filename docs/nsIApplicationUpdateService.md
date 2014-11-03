@@ -23,10 +23,6 @@ by the application update service for background checks.
 ### selectUpdate(updates, updateCount) ###
   
 Selects the best update to install from a list of available updates.  
-@param   updates  
-         An array of updates that are available  
-@param   updateCount  
-         The length of the |updates| array  
   
 
 #### Parameters ####
@@ -52,10 +48,6 @@ Selects the best update to install from a list of available updates.
 Adds a listener that receives progress and state information about the  
 update that is currently being downloaded, e.g. to update a user  
 interface.  
-@param   listener  
-         An object implementing nsIRequestObserver and optionally  
-         nsIProgressEventSink that is to be notified of state and  
-         progress information as the update is downloaded.  
   
 
 #### Parameters ####
@@ -76,8 +68,6 @@ interface.
   
 Removes a listener that is receiving progress and state information  
 about the update that is currently being downloaded.  
-@param   listener  
-         The listener object to remove.  
   
 
 #### Parameters ####
@@ -100,9 +90,6 @@ about the update that is currently being downloaded.
 ### applyOsUpdate(update) ###
   
 Apply the OS update which has been downloaded and staged as applied.  
-@param   update   
-         The update has been downloaded and staged as applied.  
-@throws  if the update object is not an OS update.  
   
 
 #### Parameters ####
@@ -121,7 +108,6 @@ Apply the OS update which has been downloaded and staged as applied.
 ### getUpdatesDirectory() ###
   
 Get the Active Updates directory  
-@returns An nsIFile for the active updates directory.  
   
 
 #### Returns ####

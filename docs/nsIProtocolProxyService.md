@@ -19,18 +19,7 @@ This method returns via callback a nsIProxyInfo instance that identifies
 a proxy to be used for loading the given URI.  Otherwise, this method returns  
 null indicating that a direct connection should be used.  
   
-@param aURI  
-       The URI to test.  
-@param aFlags  
-       A bit-wise combination of the RESOLVE_ flags defined above.  Pass  
-       0 to specify the default behavior.  Any additional bits that do  
-       not correspond to a RESOLVE_ flag are reserved for future use.  
-@param aCallback  
-       The object to be notified when the result is available.  
   
-@return An object that can be used to cancel the asychronous operation.  
-        If canceled, the cancelation status (aReason) will be forwarded  
-        to the callback's onProxyAvailable method via the aStatus param.  
   
 NOTE: If this proxy is unavailable, getFailoverForProxy may be called  
 to determine the correct secondary proxy to be used.  
@@ -93,32 +82,6 @@ the given parameters.  This method may be useful in conjunction with
 nsISocketTransportService::createTransport for creating, for example,  
 a SOCKS connection.  
   
-@param aType  
-       The proxy type.  This is a string value that identifies the proxy  
-       type.  Standard values include:  
-         "http"    - specifies a HTTP proxy  
-         "https"   - specifies HTTP proxying over TLS connection to proxy  
-         "socks"   - specifies a SOCKS version 5 proxy  
-         "socks4"  - specifies a SOCKS version 4 proxy  
-         "direct"  - specifies a direct connection (useful for failover)  
-       The type name is case-insensitive.  Other string values may be  
-       possible, and new types may be defined by a future version of  
-       this interface.  
-@param aHost  
-       The proxy hostname or IP address.  
-@param aPort  
-       The proxy port.  
-@param aFlags  
-       Flags associated with this connection.  See nsIProxyInfo.idl  
-       for currently defined flags.  
-@param aFailoverTimeout  
-       Specifies the length of time (in seconds) to ignore this proxy if  
-       this proxy fails.  Pass UINT32_MAX to specify the default  
-       timeout value, causing nsIProxyInfo::failoverTimeout to be  
-       assigned the default value.  
-@param aFailoverProxy  
-       Specifies the next proxy to try if this proxy fails.  This  
-       parameter may be null.  
   
 
 #### Parameters ####
@@ -184,13 +147,6 @@ this method may be called to access an alternate proxy that may be used
 instead.  As a side-effect, this method may affect future result values  
 from resolve/asyncResolve as well as from getFailoverForProxy.  
   
-@param aProxyInfo  
-       The proxy that was unavailable.  
-@param aURI  
-       The URI that was originally passed to resolve/asyncResolve.  
-@param aReason  
-       The error code corresponding to the proxy failure.  This value  
-       may be used to tune the delay before this proxy is used again.  
   
 @throw NS_ERROR_NOT_AVAILABLE if there is no alternate proxy available.  
   
@@ -243,10 +199,6 @@ queried URI does not permit proxying via HTTP.
 If a nsIProtocolHandler disallows all proxying, then filters will never  
 have a chance to intercept proxy requests for such URLs.  
   
-@param aFilter  
-       The nsIProtocolProxyFilter instance to be registered.  
-@param aPosition  
-       The position of the filter.  
   
 NOTE: It is possible to construct filters that compete with one another  
 in undesirable ways.  This API does not attempt to protect against such  
@@ -278,8 +230,6 @@ via the preferences service).
 This method may be used to unregister a proxy filter instance.  All  
 filters will be automatically unregistered at XPCOM shutdown.  
   
-@param aFilter  
-       The nsIProtocolProxyFilter instance to be unregistered.  
   
 
 #### Parameters ####

@@ -12,10 +12,6 @@ layout: default
 ### init(cacheSize) ###
   
 Initializes a new zip reader cache.   
-@param cacheSize - the number of released entries to maintain before  
-  beginning to throw some out (note that the number of outstanding  
-  entries can be much greater than this number -- this is the count  
-  for those otherwise unused entries)  
   
 
 #### Parameters ####

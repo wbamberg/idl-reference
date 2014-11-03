@@ -22,7 +22,6 @@ nsIParserUtils::convertToPlainText(src,
 You should call nsIParserUtils::convertToPlainText() instead of calling   
 this method.  
   
-@param src The HTML string to convert to plain text.  
   
 
 #### Parameters ####
@@ -45,10 +44,6 @@ element).
   
 You should call nsIParserUtils::parseFragment() instead of calling this   
 method.  
-@param fragment the input markup  
-@param isXML true if |fragment| is XML and false if HTML  
-@param baseURI the base URL for this fragment  
-@param element the context node for the fragment parsing algorithm  
   
 
 #### Parameters ####

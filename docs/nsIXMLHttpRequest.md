@@ -61,8 +61,6 @@ abort the request.
 Returns all of the response headers as a string for HTTP  
 requests.  
   
-@returns A string containing all of the response headers.  
-         The empty string if the response has not yet been received.  
   
 
 #### Returns ####
@@ -82,10 +80,6 @@ requests.
 Returns the text of the header with the specified name for  
 HTTP requests.  
   
-@param header The name of the header to retrieve  
-@returns A string containing the text of the header specified.  
-         NULL if the response has not yet been received or the  
-         header does not exist in the response.  
   
 
 #### Parameters ####
@@ -120,19 +114,6 @@ Meant to be a script-only method for initializing a request.
 If there is an "active" request (that is, if open() has been called  
 already), this is equivalent to calling abort() and then open().  
   
-@param method The HTTP method - either "POST" or "GET". Ignored  
-              if the URL is not a HTTP URL.  
-@param url The URL to which to send the request.  
-@param async (optional) Whether the request is synchronous or  
-             asynchronous i.e. whether send returns only after  
-             the response is received or if it returns immediately after  
-             sending the request. In the latter case, notification  
-             of completion is sent through the event listeners.  
-             The default value is true.  
-@param user (optional) A username for authentication if necessary.  
-            The default value is the empty string  
-@param password (optional) A password for authentication if necessary.  
-                The default value is the empty string  
   
 
 #### Parameters ####
@@ -190,20 +171,6 @@ All event listeners must be set before calling send().
 After the initial response, all event listeners will be cleared.  
 // XXXbz what does that mean, exactly?     
   
-@param body Either an instance of nsIDOMDocument, nsIInputStream  
-            or a string (nsISupportsString in the native calling  
-            case). This is used to populate the body of the  
-            HTTP request if the HTTP request method is "POST".  
-            If the parameter is a nsIDOMDocument, it is serialized.  
-            If the parameter is a nsIInputStream, then it must be  
-            compatible with nsIUploadChannel.setUploadStream, and a  
-            Content-Length header will be added to the HTTP request  
-            with a value given by nsIInputStream.available.  Any  
-            headers included at the top of the stream will be  
-            treated as part of the message body.  The MIME type of  
-            the stream should be specified by setting the Content-  
-            Type header via the setRequestHeader method before  
-            calling send.  
   
 
 #### Parameters ####
@@ -235,9 +202,6 @@ After the initial response, all event listeners will be cleared.
   
 A variant of the send() method used to send binary data.  
   
-@param body The request body as a DOM string.  The string data will be  
-            converted to a single-byte string by truncation (i.e., the  
-            high-order byte of each character will be discarded).  
   
 
 #### Parameters ####
@@ -259,8 +223,6 @@ A variant of the send() method used to send binary data.
 Sets a HTTP request header for HTTP requests. You must call open  
 before setting the request headers.  
   
-@param header The name of the header to set in the request.  
-@param value The body of the header.  
   
 
 #### Parameters ####
@@ -288,8 +250,6 @@ be used, for example, to force a stream to be treated and parsed
 as text/xml, even if the server does not report it as such. This  
 must be done before the <code>send</code> method is invoked.  
   
-@param mimetype The type used to override that returned by the server  
-                (if any).  
   
 
 #### Parameters ####
@@ -310,16 +270,6 @@ must be done before the <code>send</code> method is invoked.
 Initialize the object for use from C++ code with the principal, script  
 context, and owner window that should be used.  
   
-@param principal The principal to use for the request. This must not be  
-                 null.  
-@param scriptContext The script context to use for the request. May be  
-                     null.  
-@param globalObject The associated global for the request. Can be the  
-                    outer window, a sandbox, or a backstage pass.  
-                    May be null, but then the request cannot create a  
-                    document.  
-@param baseURI The base URI to use when resolving relative URIs. May be  
-               null.  
   
 
 #### Parameters ####

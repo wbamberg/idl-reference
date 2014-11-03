@@ -21,9 +21,6 @@ more information.
 Notifies when a vacuum operation begins.  Listeners should avoid using the  
 database till onEndVacuum is received.  
   
-@return true to proceed with the vacuum, false if the participant wants to  
-        opt-out for now, it will be retried later.  Useful when participant  
-        is running some other heavy operation that can't be interrupted.  
   
 @note When a vacuum operation starts or ends it will also dispatch a global  
       "heavy-io-task" notification through the observer service with the  
@@ -47,8 +44,6 @@ database till onEndVacuum is received.
   
 Notifies when a vacuum operation ends.  
   
-@param aSucceeded  
-       reports if the vacuum succeeded or failed.  
   
 
 #### Parameters ####

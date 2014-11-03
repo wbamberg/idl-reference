@@ -40,11 +40,7 @@ possible.
 <TR><TD>CONTEXT_DOCUMENT</TD><TD>&lt;HTML&gt;</TD></TR>  
 </TABLE>  
   
-@param aContextFlags Flags indicating the kind of context.  
-@param aEvent The DOM context menu event.  
-@param aNode The DOM node most relevant to the context.  
   
-@return <CODE>NS_OK</CODE> always.  
   
 
 #### Parameters ####

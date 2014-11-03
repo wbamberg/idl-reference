@@ -21,18 +21,6 @@ init
   
 This method initializes a server socket.  
   
-@param aPort  
-       The port of the server socket.  Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
-@param aLoopbackOnly  
-       If true, the server socket will only respond to connections on the  
-       local loopback interface.  Otherwise, it will accept connections  
-       from any interface.  To specify a particular network interface,  
-       use initWithAddress.  
-@param aBackLog  
-       The maximum length the queue of pending connections may grow to.  
-       This parameter may be silently limited by the operating system.  
-       Pass -1 to use the default value.  
   
 
 #### Parameters ####
@@ -72,15 +60,6 @@ initSpecialConnection
 This method initializes a server socket and offers the ability to have  
 that socket not get terminated if Gecko is set offline.  
   
-@param aPort  
-       The port of the server socket.  Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
-@param aFlags  
-       Flags for the socket.  
-@param aBackLog  
-       The maximum length the queue of pending connections may grow to.  
-       This parameter may be silently limited by the operating system.  
-       Pass -1 to use the default value.  
   
 
 #### Parameters ####
@@ -117,12 +96,6 @@ initWithAddress
 This method initializes a server socket, and binds it to a particular  
 local address (and hence a particular local network interface).  
   
-@param aAddr  
-       The address to which this server socket should be bound.  
-@param aBackLog  
-       The maximum length the queue of pending connections may grow to.  
-       This parameter may be silently limited by the operating system.  
-       Pass -1 to use the default value.  
   
 
 #### Parameters ####
@@ -183,11 +156,7 @@ NS_ERROR_SOCKET_ADDRESS_IN_USE.
 On systems that don't support Unix domain sockets at all, this  
 returns NS_ERROR_SOCKET_ADDRESS_NOT_SUPPORTED.  
   
-@param aPath nsIFile  
-       The file name at which the socket should be created.  
   
-@param aPermissions unsigned long  
-       Unix-style permission bits to be applied to the new socket.  
   
 Note about permissions: Linux's unix(7) man page claims that some  
 BSD-derived systems ignore permissions on UNIX-domain sockets;  
@@ -242,8 +211,6 @@ that called asyncListen (the calling thread must have a nsIEventTarget).
 The listener will be passed a reference to an already connected socket  
 transport (nsISocketTransport).  See below for more details.  
   
-@param aListener  
-       The listener to be notified when client connections are accepted.  
   
 
 #### Parameters ####

@@ -22,22 +22,6 @@ discarded. They do not cause the EventListener to be called twice
 and since they are discarded they do not need to be removed with the   
 removeEventListener method.  
   
-@param   type The event type for which the user is registering  
-@param   listener The listener parameter takes an interface   
-                  implemented by the user which contains the methods   
-                  to be called when the event occurs.  
-@param   useCapture If true, useCapture indicates that the user   
-                    wishes to initiate capture. After initiating   
-                    capture, all events of the specified type will be   
-                    dispatched to the registered EventListener before   
-                    being dispatched to any EventTargets beneath them   
-                    in the tree. Events which are bubbling upward   
-                    through the tree will not trigger an   
-                    EventListener designated to use capture.  
-@param   wantsUntrusted If false, the listener will not receive any  
-                        untrusted events (see above), if true, the  
-                        listener will receive events whether or not  
-                        they're trusted  
   
 
 #### Parameters ####
@@ -91,13 +75,6 @@ nsIDOMEventTarget::AddEventListener for a content node, it means
 that the listener cannot listen the event when web content calls  
 stopPropagation() of the event.  
   
-@param aType            An event name you're going to handle.  
-@param aListener        An event listener.  
-@param aUseCapture      TRUE if you want to listen the event in capturing  
-                        phase.  Otherwise, FALSE.  
-@param aWantsUntrusted  TRUE if you want to handle untrusted events.  
-                        Otherwise, FALSE.  
-@return                 NS_OK if succeed.  Otherwise, NS_ERROR_*.  
   
 
 #### Parameters ####
@@ -152,17 +129,6 @@ EventListeners can never be invoked after being removed.
 Calling removeEventListener with arguments which do not identify any   
 currently registered EventListener on the EventTarget has no effect.  
   
-@param   type Specifies the event type of the EventListener being   
-              removed.  
-@param   listener The EventListener parameter indicates the   
-                  EventListener to be removed.  
-@param   useCapture Specifies whether the EventListener being   
-                    removed was registered as a capturing listener or   
-                    not. If a listener was registered twice, one with   
-                    capture and one without, each must be removed   
-                    separately. Removal of a capturing listener does   
-                    not affect a non-capturing version of the same   
-                    listener, and vice versa.  
   
 
 #### Parameters ####
@@ -211,16 +177,6 @@ capturing and bubbling behavior as events dispatched directly by the
 implementation. The target of the event is the EventTarget on which   
 dispatchEvent is called.  
   
-@param   evt Specifies the event type, behavior, and contextual   
-             information to be used in processing the event.  
-@return  Indicates whether any of the listeners which handled the   
-         event called preventDefault. If preventDefault was called   
-         the value is false, else the value is true.  
-@throws  INVALID_STATE_ERR: Raised if the Event's type was   
-             not specified by initializing the event before   
-             dispatchEvent was called. Specification of the Event's   
-             type as null or an empty string will also trigger this   
-             exception.  
   
 
 #### Parameters ####
@@ -281,8 +237,6 @@ First one tells that this object can handle the aVisitor.mEvent event and
 the latter one is the possible parent object for the event target chain.  
 @see EventDispatcher.h for more documentation about aVisitor.  
   
-@param aVisitor the visitor object which is used to create the  
-                event target chain for event dispatching.  
   
 @note Only EventDispatcher should call this method.  
   
@@ -310,7 +264,6 @@ called just before possible event handlers on this object will be called.
   
 Called after the bubble phase of the system event group.  
 The default handling of the event should happen here.  
-@param aVisitor the visitor object which is used during post handling.  
   
 @see EventDispatcher.h for documentation about aVisitor.  
 @note Only EventDispatcher should call this method.  
@@ -331,11 +284,6 @@ The default handling of the event should happen here.
 ### DispatchDOMEvent(aEvent, aDOMEvent, aPresContext, aEventStatus) ###
   
 Dispatch an event.  
-@param aEvent the event that is being dispatched.  
-@param aDOMEvent the event that is being dispatched, use if you want to  
-                 dispatch nsIDOMEvent, not only WidgetEvent.  
-@param aPresContext the current presentation context, can be nullptr.  
-@param aEventStatus the status returned from the function, can be nullptr.  
   
 @note If both aEvent and aDOMEvent are used, aEvent must be the internal  
       event of the aDOMEvent.  

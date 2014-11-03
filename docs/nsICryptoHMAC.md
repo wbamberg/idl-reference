@@ -18,15 +18,7 @@ This interface provides HMAC signature algorithms.
 Initialize the hashing object. This method may be  
 called multiple times with different algorithm types.  
   
-@param aAlgorithm the algorithm type to be used.  
-       This value must be one of the above valid  
-       algorithm types.  
   
-@param aKeyObject  
-       Object holding a key. To create the key object use for instance:  
-       var keyObject = Components.classes["@mozilla.org/security/keyobjectfactory;1"]  
-           .getService(Components.interfaces.nsIKeyObjectFactory)  
-             .keyFromString(Components.interfaces.nsIKeyObject.HMAC, rawKeyData);  
   
 WARNING: This approach is not FIPS compliant.  
   
@@ -62,9 +54,7 @@ NOTE: This method must be called before any other method
 
 ### update(aData, aLen) ###
   
-@param aData a buffer to calculate the hash over  
   
-@param aLen the length of the buffer |aData|  
   
 @throws NS_ERROR_NOT_INITIALIZED if |init| has not been   
         called.  
@@ -92,11 +82,7 @@ NOTE: This method must be called before any other method
   
 Calculates and updates a new hash based on a given data stream.  
   
-@param aStream an input stream to read from.  
   
-@param aLen how much to read from the given |aStream|.  Passing  
-       UINT32_MAX indicates that all data available will be used   
-       to update the hash.   
   
 @throws NS_ERROR_NOT_INITIALIZED if |init| has not been   
         called.  
@@ -130,12 +116,7 @@ Calculates and updates a new hash based on a given data stream.
   
 Completes this HMAC object and produces the actual HMAC diegest data.  
   
-@param aASCII if true then the returned value is a base-64   
-       encoded string.  if false, then the returned value is  
-       binary data.    
   
-@return a hash of the data that was read by this object.  This can  
-        be either binary data or base 64 encoded.  
   
 @throws NS_ERROR_NOT_INITIALIZED if |init| has not been   
         called.  

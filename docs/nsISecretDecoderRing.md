@@ -13,7 +13,6 @@ layout: default
   
 Encrypt a buffer - callable only from C++.  
   
-@return The length of the data in the output buffer.  
   
 
 #### Returns ####
@@ -31,7 +30,6 @@ Encrypt a buffer - callable only from C++.
   
 Decrypt a buffer - callable only from C++.  
   
-@return The length of the data in the output buffer.  
   
 
 #### Returns ####

@@ -15,8 +15,6 @@ Interface representing a browser window.
 ### open(aURI) ###
   
 Open a new browser tab, pointing to the specified URI.  
-@param   aURI  
-         The uri to open the browser tab to  
   
 
 #### Parameters ####

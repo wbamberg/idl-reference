@@ -22,18 +22,6 @@ https://tools.ietf.org/html/draft-ietf-websec-key-pinning-20
 and allows a host to speficy a subset of trusted anchors to be used  
 in future HTTPS connections.  
   
-@param aType the type of security header in question.  
-@param aSourceURI the URI of the resource with the HTTP header.  
-@param aSSLStatus the SSLStatus of the current channel  
-@param aHeader the HTTP response header specifying security data.  
-@param aFlags  options for this request as defined in nsISocketProvider:  
-                 NO_PERMANENT_STORAGE  
-@param aMaxAge the parsed max-age directive of the header.  
-@param aIncludeSubdomains the parsed includeSubdomains directive.  
-@return NS_OK            if it succeeds  
-        NS_ERROR_FAILURE if it can't be parsed  
-        NS_SUCCESS_LOSS_OF_INSIGNIFICANT_DATA  
-                         if there are unrecognized tokens in the header.  
   
 
 #### Parameters ####
@@ -111,10 +99,6 @@ Given a header type, removes state relating to that header of a host,
 including the includeSubdomains state that would affect subdomains.  
 This essentially removes the state for the domain tree rooted at this  
 host.  
-@param aType   the type of security state in question  
-@param aURI    the URI of the target host  
-@param aFlags  options for this request as defined in nsISocketProvider:  
-                 NO_PERMANENT_STORAGE  
   
 
 #### Parameters ####
@@ -146,10 +130,6 @@ host.
   
 See isSecureURI  
   
-@param aType the type of security state in question.  
-@param aHost the hostname (punycode) to query for state.  
-@param aFlags  options for this request as defined in nsISocketProvider:  
-                 NO_PERMANENT_STORAGE  
   
 
 #### Parameters ####
@@ -193,10 +173,6 @@ NOTE: this function makes decisions based only on the
 host contained in the URI, and disregards other portions of the URI  
 such as path and port.  
   
-@param aType the type of security state in question.  
-@param aURI the URI to query for STS state.  
-@param aFlags  options for this request as defined in nsISocketProvider:  
-                 NO_PERMANENT_STORAGE  
   
 
 #### Parameters ####
@@ -236,12 +212,6 @@ If these pins also apply to subdomains of the given domain,
 aIncludeSubdomains will be true. Pins returned are only for non-built-in  
 pin entries.  
   
-@param aHostname the hosname (punycode) to be queried about  
-@param the time at which the pins should be valid. This is in  
-mozilla::pkix::Time which uses internally seconds since 0 AD.  
-@param aPinArray the set of sha256-hashed key pins for the given domain  
-@param aIncludeSubdomains true if the pins apply to subdomains of the  
-       given domain  
   
 
 #### Parameters ####
@@ -282,11 +252,6 @@ Set public-key pins for a host. The resulting pins will be permanent
 and visible from private and non-private contexts. These pins replace  
 any already set by this mechanism or those built-in to Gecko.  
   
-@param aHost the hostname (punycode) that pins will apply to  
-@param aIncludeSubdomains whether these pins also apply to subdomains  
-@param aMaxAge lifetime (in seconds) of this pin set  
-@param aPinCount number of keys being pinnned  
-@param aSha256Pins array of hashed key fingerprints (SHA-256, base64)  
   
 
 #### Parameters ####

@@ -13,7 +13,6 @@ layout: default
   
 Initialises the process with an executable to be run. Call the run method  
 to run the executable.  
-@param executable The executable to run.  
   
 
 #### Parameters ####
@@ -37,11 +36,6 @@ been killed or a failure will have been returned.
 ### run(blocking, args, count) ###
   
 Executes the file this object was initialized with  
-@param blocking   Whether to wait until the process terminates before  
-returning or not.  
-@param args       An array of arguments to pass to the process in the  
-                  native character set.  
-@param count      The length of the args array.  
   
 
 #### Parameters ####
@@ -74,14 +68,6 @@ returning or not.
   
 Executes the file this object was initialized with optionally calling  
 an observer after the process has finished running.  
-@param args       An array of arguments to pass to the process in the  
-                  native character set.  
-@param count      The length of the args array.  
-@param observer   An observer to notify when the process has completed. It  
-                  will receive this process instance as the subject and  
-                  "process-finished" or "process-failed" as the topic. The  
-                  observer will be notified on the main thread.  
-@param holdWeak   Whether to use a weak reference to hold the observer.  
   
 
 #### Parameters ####
@@ -121,10 +107,6 @@ an observer after the process has finished running.
 ### runw(blocking, args, count) ###
   
 Executes the file this object was initialized with  
-@param blocking   Whether to wait until the process terminates before  
-returning or not.  
-@param args       An array of arguments to pass to the process in UTF-16  
-@param count      The length of the args array.  
   
 
 #### Parameters ####
@@ -156,13 +138,6 @@ returning or not.
   
 Executes the file this object was initialized with optionally calling  
 an observer after the process has finished running.  
-@param args       An array of arguments to pass to the process in UTF-16  
-@param count      The length of the args array.  
-@param observer   An observer to notify when the process has completed. It  
-                  will receive this process instance as the subject and  
-                  "process-finished" or "process-failed" as the topic. The  
-                  observer will be notified on the main thread.  
-@param holdWeak   Whether to use a weak reference to hold the observer.  
   
 
 #### Parameters ####

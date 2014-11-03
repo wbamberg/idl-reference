@@ -17,15 +17,6 @@ It is used in the server socket implementation on the child side.
   
 Tell the chrome process to listen on the port with the given parameters.  
   
-@param serverSocket  
-       The server socket generated in the listen of nsIDOMTCPSocket  
-       on the child side.  
-@param port  
-       The port of the server socket.  
-@param backlog   
-       The maximum length the queue of pending connections may grow to.  
-@param binaryType  
-       "arraybuffer" to use UInt8 array instances or "string" to use String.  
   
 
 #### Parameters ####

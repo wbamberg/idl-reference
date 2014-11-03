@@ -12,8 +12,6 @@ layout: default
 ### testPermission(principal) ###
   
 Test whether a website has permission to show a popup window.  
-@param   principal is the principal to be tested  
-@return  one of the enumerated permission actions defined above  
   
 
 #### Parameters ####

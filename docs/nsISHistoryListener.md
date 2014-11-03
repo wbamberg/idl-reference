@@ -28,7 +28,6 @@ Called when a new document is added to session history. New documents are
 added to session history by docshell when new pages are loaded in a frame  
 or content area, for example via nsIWebNavigation::loadURI()  
   
-@param aNewURI     The URI of the document to be added to session history.  
   
 
 #### Parameters ####
@@ -48,8 +47,6 @@ or content area, for example via nsIWebNavigation::loadURI()
 Called when navigating to a previous session history entry, for example  
 due to a nsIWebNavigation::goBack() call.  
   
-@param aBackURI    The URI of the session history entry being navigated to.  
-@return            Whether the operation can proceed.  
   
 
 #### Parameters ####
@@ -80,8 +77,6 @@ due to a nsIWebNavigation::goBack() call.
 Called when navigating to a next session history entry, for example  
 due to a nsIWebNavigation::goForward() call.  
   
-@param aForwardURI   The URI of the session history entry being navigated to.  
-@return              Whether the operation can proceed.  
   
 
 #### Parameters ####
@@ -112,11 +107,6 @@ due to a nsIWebNavigation::goForward() call.
 Called when the current document is reloaded, for example due to a  
 nsIWebNavigation::reload() call.  
   
-@param aReloadURI    The URI of the document to be reloaded.  
-@param aReloadFlags  Flags that indicate how the document is to be   
-                     refreshed. See constants on the nsIWebNavigation  
-                     interface.  
-@return              Whether the operation can proceed.  
   
 @see  nsIWebNavigation  
   
@@ -157,9 +147,6 @@ nsIWebNavigation::reload() call.
 Called when navigating to a session history entry by index, for example,  
 when nsIWebNavigation::gotoIndex() is called.  
   
-@param aIndex        The index in session history of the entry to be loaded.  
-@param aGotoURI      The URI of the session history entry to be loaded.  
-@return              Whether the operation can proceed.  
   
 
 #### Parameters ####
@@ -200,8 +187,6 @@ from history, to erase evidence of prior page loads, etc.
   
 To purge documents from session history call nsISHistory::PurgeHistory()  
   
-@param aNumEntries   The number of entries to be removed from session history.  
-@return              Whether the operation can proceed.  
   
 
 #### Parameters ####
@@ -233,8 +218,6 @@ Called when an entry is replaced in the session history. Entries are
 replaced when navigating away from non-persistent history entries (such as  
 about pages) and when history.replaceState is called.  
   
-@param aIndex        The index in session history of the entry being  
-                      replaced  
   
 
 #### Parameters ####

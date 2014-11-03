@@ -36,8 +36,6 @@ Removes the specified item from the widget's selection.
   
 Select all items.  
   
-@return false if the object does not accept multiple selection,  
-        otherwise true.  
   
 
 #### Returns ####

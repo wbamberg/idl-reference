@@ -45,17 +45,6 @@ callback must be done if this method throws!
   
 @see nsIAsyncVerifyRedirectCallback::onRedirectVerifyCallback()  
   
-@param oldChannel  
-       The channel that's being redirected.  
-@param newChannel  
-       The new channel. This channel is not opened yet.  
-@param flags  
-       Flags indicating the type of redirect. A bitmask consisting  
-       of flags from above.  
-       One of REDIRECT_TEMPORARY and REDIRECT_PERMANENT will always be  
-       set.  
-@param callback  
-       Object to inform about the async result of this method  
   
 @throw <any> Throwing an exception will cause the redirect to be  
        cancelled  

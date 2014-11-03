@@ -18,7 +18,6 @@ of all installed extensions.
 ### quit() ###
   
 Quits the application (if nobody objects to quit-application-requested).  
-@returns whether quitting will proceed  
   
 
 #### Returns ####
@@ -35,7 +34,6 @@ Quits the application (if nobody objects to quit-application-requested).
 ### restart() ###
   
 Restarts the application (if nobody objects to quit-application-requested).  
-@returns whether restarting will proceed  
   
 
 #### Returns ####

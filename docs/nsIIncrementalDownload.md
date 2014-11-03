@@ -35,17 +35,6 @@ double-clicking it.  For example, it might be wise to append a file
 extension like ".part" to the end of the destination to protect users from  
 accidentally running "blah.exe" before it is a complete file.  
   
-@param uri  
-       The URI to fetch.  
-@param destination  
-       The location where the file is to be stored.  
-@param chunkSize  
-       The size of the chunks to fetch.  A non-positive value results in  
-       the default chunk size being used.  
-@param intervalInSeconds  
-       The amount of time to wait between fetching chunks.  Pass a  
-       negative to use the default interval, or 0 to fetch the remaining  
-       part of the file in one chunk.  
   
 
 #### Parameters ####
@@ -85,18 +74,6 @@ accidentally running "blah.exe" before it is a complete file.
   
 Start the incremental download.  
   
-@param observer  
-       An observer to be notified of various events.  OnStartRequest is  
-       called when finalURI and totalSize have been determined or when an  
-       error occurs.  OnStopRequest is called when the file is completely  
-       downloaded or when an error occurs.  If this object implements  
-       nsIProgressEventSink, then its OnProgress method will be called as  
-       data is written to the destination file.  If this object implements  
-       nsIInterfaceRequestor, then it will be assigned as the underlying  
-       channel's notification callbacks, which allows it to provide a  
-       nsIAuthPrompt implementation if needed by the channel, for example.  
-@param ctxt  
-       User defined object forwarded to the observer's methods.  
   
 
 #### Parameters ####

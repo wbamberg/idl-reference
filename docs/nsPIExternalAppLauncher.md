@@ -17,7 +17,6 @@ external helper app service
   
 mscott --> eventually I should move this into a new service so other  
 consumers can add temporary files they want deleted on exit.  
-@param aTemporaryFile A temporary file we should delete on exit.  
   
 
 #### Parameters ####

@@ -27,10 +27,7 @@ These functions can be called from triggers, too.
 onFunctionCall is called when execution of a custom  
 function should occur.  
   
-@param aNumArguments         The number of arguments  
-@param aFunctionArguments    The arguments passed in to the function  
   
-@returns any value as Variant type.  
   
 
 #### Parameters ####

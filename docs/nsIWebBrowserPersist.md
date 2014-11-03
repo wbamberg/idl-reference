@@ -16,27 +16,6 @@ Interface for persisting DOM documents and URIs to local or remote storage.
   
 Save the specified URI to file.  
   
-@param aURI       URI to save to file. Some implementations of this interface  
-                  may also support <CODE>nullptr</CODE> to imply the currently  
-                  loaded URI.  
-@param aCacheKey  An object representing the URI in the cache or  
-                  <CODE>nullptr</CODE>.  This can be a necko cache key,  
-                  an nsIWebPageDescriptor, or the currentDescriptor of an  
-                  nsIWebPageDescriptor.  
-@param aReferrer  The referrer URI to pass with an HTTP request or  
-                  <CODE>nullptr</CODE>.  
-@param aPostData  Post data to pass with an HTTP request or  
-                  <CODE>nullptr</CODE>.  
-@param aExtraHeaders Additional headers to supply with an HTTP request  
-                  or <CODE>nullptr</CODE>.  
-@param aFile      Target file. This may be a nsIFile object or an  
-                  nsIURI object with a file scheme or a scheme that  
-                  supports uploading (e.g. ftp).  
-@param aPrivacyContext A context from which the privacy status of this  
-                  save operation can be determined. Must only be null  
-                  in situations in which no such context is available  
-                  (eg. the operation has no logical association with any  
-                  window or document)  
   
 @see nsIFile  
 @see nsIURI  
@@ -109,10 +88,6 @@ Save the specified URI to file.
 
 ### savePrivacyAwareURI(aURI, aCacheKey, aReferrer, aPostData, aExtraHeaders, aFile, aIsPrivate) ###
   
-@param aIsPrivate Treat the save operation as private (ie. with  
-                  regards to networking operations and persistence  
-                  of intermediate data, etc.)  
-@see saveURI for all other parameter descriptions  
   
 
 #### Parameters ####
@@ -142,23 +117,6 @@ Save the specified DOM document to file and optionally all linked files
 (e.g. images, CSS, JS & subframes). Do not call this method until the  
 document has finished loading!  
   
-@param aDocument          Document to save to file. Some implementations of  
-                          this interface may also support <CODE>nullptr</CODE>  
-                          to imply the currently loaded document.  
-@param aFile              Target local file. This may be a nsIFile object or an  
-                          nsIURI object with a file scheme or a scheme that  
-                          supports uploading (e.g. ftp).  
-@param aDataPath          Path to directory where URIs linked to the document  
-                          are saved or nullptr if no linked URIs should be saved.  
-                          This may be a nsIFile object or an nsIURI object  
-                          with a file scheme.  
-@param aOutputContentType The desired MIME type format to save the   
-                          document and all subdocuments into or nullptr to use  
-                          the default behaviour.  
-@param aEncodingFlags     Flags to pass to the encoder.  
-@param aWrapColumn        For text documents, indicates the desired width to  
-                          wrap text at. Parameter is ignored if wrapping is not  
-                          specified by the encoding flags.  
   
 @see nsIFile  
 @see nsIURI  

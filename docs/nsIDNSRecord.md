@@ -22,8 +22,6 @@ list of IP addresses.
 this function copies the value of the next IP address into the  
 given NetAddr struct and increments the internal address iterator.  
   
-@param aPort  
-       A port number to initialize the NetAddr with.  
   
 @throws NS_ERROR_NOT_AVAILABLE if there is not another IP address in  
 the record.  
@@ -46,8 +44,6 @@ the record.
 this function returns the value of the next IP address as a  
 scriptable address and increments the internal address iterator.  
   
-@param aPort  
-       A port number to initialize the nsINetAddr with.  
   
 @throws NS_ERROR_NOT_AVAILABLE if there is not another IP address in  
 the record.  
@@ -91,8 +87,6 @@ This function indicates that the last address obtained via getNextAddr*()
 was not usuable and should be skipped in future uses of this  
 record if other addresses are available.  
   
-@param aPort is the port number associated with the failure, if any.  
-       It may be zero if not applicable.  
   
 
 #### Parameters ####

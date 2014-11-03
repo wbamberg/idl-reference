@@ -18,7 +18,6 @@ Init this object with a CFURLRef
 NOTE: Supported only for XP_MACOSX  
 NOTE: If the path of the CFURL is /a/b/c, at least a/b must exist beforehand.  
   
-@param   aCFURL         the CoreFoundation URL  
   
   
 
@@ -42,7 +41,6 @@ Init this object with an FSRef
   
 NOTE: Supported only for XP_MACOSX  
   
-@param   aFSRef         the native FSRef  
   
   
 
@@ -72,7 +70,6 @@ the unresolved alias file.
   
 NOTE: Supported only for XP_MACOSX  
   
-@return  
    
   
 
@@ -89,7 +86,6 @@ the unresolved alias file.
   
 NOTE: Supported only for XP_MACOSX  
   
-@return  
    
   
 
@@ -104,7 +100,6 @@ If the file object is an alias and followLinks is TRUE, returns
 the target of the alias. If followLinks is FALSE, returns  
 the unresolved alias file.  
   
-@return  
    
   
 
@@ -114,8 +109,6 @@ launchWithDoc
   
 Launch the application that this file points to with a document.  
   
-@param   aDocToLoad          Must not be NULL. If no document, use nsIFile::launch  
-@param   aLaunchInBackground TRUE if the application should not come to the front.  
   
   
 
@@ -143,10 +136,6 @@ openDocWithApp
   
 Open the document that this file points to with the given application.  
   
-@param   aAppToOpenWith      The application with  which to open the document.  
-                             If NULL, the creator code of the document is used  
-                             to determine the application.  
-@param   aLaunchInBackground TRUE if the application should not come to the front.  
   
   
 

@@ -19,9 +19,6 @@ instrumentation around the mozilla code base.
 Start the logging now.  No affect if already started.  
 Current backlog is deleted by this call otherwise.  
   
-@param minBacklogSeconds  
-   Manimum time to keep the backlog.  Entries of the log are discarded  
-   when their age is more then value of this argument.  
   
 
 #### Parameters ####
@@ -46,11 +43,6 @@ Stop the logging now.  Backlog is kept in memory.
   
 Obtain the log.  This can be called whenever you want.  
   
-@return  
-   Result is an object that keeps snaphot of the log from  
-   time this method has been called.  You can then access  
-   the log using the object.  Calling stop() on the tracer  
-   doesn't delete this log.  
   
 
 #### Returns ####

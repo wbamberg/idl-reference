@@ -21,10 +21,6 @@ http://www.w3.org/TR/DOM-Level-2-Events/
 This method is called whenever an event occurs of the type for which   
 the EventListener interface was registered.  
   
-@param   evt The Event contains contextual information about the   
-             event. It also contains the stopPropagation and   
-             preventDefault methods which are used in determining the   
-             event's flow and default action.  
   
 
 #### Parameters ####

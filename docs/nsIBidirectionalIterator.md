@@ -31,7 +31,6 @@ the replaced element, if any and if necessary, and to |AddRef()| the new element
 The result is undefined if this iterator currently points outside the  
 useful range of the underlying container or sequence.  
   
-@param anElementToPut the element to place into the underlying container or sequence  
   
 
 #### Parameters ####
@@ -62,8 +61,6 @@ Test if |anotherIterator| points to the same position in the underlying containe
   
 The result is undefined if |anotherIterator| was not created by or for the same underlying container or sequence.  
   
-@param anotherIterator another iterator to compare against, created by or for the same underlying container or sequence  
-@result true if |anotherIterator| points to the same position in the underlying container or sequence  
   
 
 #### Parameters ####

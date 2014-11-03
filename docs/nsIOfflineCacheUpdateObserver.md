@@ -13,10 +13,6 @@ layout: default
   
 aUpdate has changed its state.  
   
-@param aUpdate  
-       The nsIOfflineCacheUpdate being processed.  
-@param event  
-       See enumeration above  
   
 
 #### Parameters ####
@@ -41,9 +37,6 @@ aUpdate has changed its state.
   
 Informs the observer about an application being available to associate.  
   
-@param applicationCache  
-       The application cache instance that has been created or found by the   
-       update to associate with  
   
 
 #### Parameters ####

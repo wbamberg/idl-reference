@@ -87,18 +87,6 @@ http://xml.org/sax/features/namespace-prefixes property is true
 (it is false by default, and support for a true value is  
 optional).  
   
-@param uri the Namespace URI, or the empty string if the  
-       element has no Namespace URI or if Namespace  
-       processing is not being performed  
-@param localName the local name (without prefix), or the  
-       empty string if Namespace processing is not being  
-       performed  
-@param qName the qualified name (with prefix), or the  
-       empty string if qualified names are not available  
-@param atts the attributes attached to the element.  If  
-       there are no attributes, it shall be an empty  
-       SAXAttributes object.  The value of this object after  
-       startElement returns is undefined  
   
 
 #### Parameters ####
@@ -150,14 +138,6 @@ element is empty).
   
 For information on the names, see startElement.  
   
-@param uri the Namespace URI, or the empty string if the  
-       element has no Namespace URI or if Namespace  
-       processing is not being performed  
-@param localName the local name (without prefix), or the  
-       empty string if Namespace processing is not being  
-       performed  
-@param qName the qualified XML name (with prefix), or the  
-       empty string if qualified names are not available  
   
 
 #### Parameters ####
@@ -204,7 +184,6 @@ Note that some parsers will report whitespace in element
 content using the ignorableWhitespace method rather than this one  
 (validating parsers must do so).  
   
-@param value the characters from the XML document  
   
 
 #### Parameters ####
@@ -231,10 +210,6 @@ A SAX parser must never report an XML declaration (XML 1.0,
 section 2.8) or a text declaration (XML 1.0, section 4.3.1) using  
 this method.  
   
-@param target the processing instruction target  
-@param data the processing instruction data, or null if  
-       none was supplied.  The data does not include any  
-       whitespace separating it from the target  
   
 
 #### Parameters ####
@@ -272,7 +247,6 @@ chunk, or they may split it into several chunks; however, all of
 the characters in any single event must come from the same  
 external entity, so that the Locator provides useful information.  
   
-@param whitespace the characters from the XML document  
   
 
 #### Parameters ####
@@ -313,10 +287,6 @@ order is not otherwise guaranteed.
 There should never be start/endPrefixMapping events for the  
 "xml" prefix, since it is predeclared and immutable.  
   
-@param prefix The Namespace prefix being declared. An empty  
-              string is used for the default element namespace,  
-              which has no prefix.  
-@param uri The Namespace URI the prefix is mapped to.  
   
 
 #### Parameters ####
@@ -347,8 +317,6 @@ See startPrefixMapping for details.  These events will always
 occur immediately after the corresponding endElement event, but  
 the order of endPrefixMapping events is not otherwise guaranteed.  
   
-@param prefix The prefix that was being mapped. This is the empty  
-              string when a default mapping scope ends.  
   
 
 #### Parameters ####

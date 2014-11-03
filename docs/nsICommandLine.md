@@ -29,10 +29,6 @@ are normalized to -flag param.
 On *nix and mac flags of the form --flag are normalized to -flag. --flag=param  
 are normalized to the form -flag param.  
   
-@param aIndex The argument to retrieve. This index is 0-based, and does  
-              not include the application name.  
-@return       The indexth argument.  
-@throws       NS_ERROR_INVALID_ARG if aIndex is out of bounds.  
   
 
 #### Parameters ####
@@ -64,10 +60,6 @@ are normalized to the form -flag param.
   
 Find a command-line flag.  
   
-@param aFlag          The flag name to locate. Do not include the initial  
-                      hyphen.  
-@param aCaseSensitive Whether to do case-sensitive comparisons.  
-@return               The position of the flag in the command line.  
   
 
 #### Parameters ####
@@ -105,8 +97,6 @@ Find a command-line flag.
 Remove arguments from the command line. This normally occurs after  
 a handler has processed the arguments.  
   
-@param aStart  Index to begin removing.  
-@param aEnd    Index to end removing, inclusive.  
   
 
 #### Parameters ####
@@ -131,9 +121,6 @@ a handler has processed the arguments.
   
 A helper method which will find a flag and remove it in one step.  
   
-@param aFlag  The flag name to find and remove.  
-@param aCaseSensitive Whether to do case-sensitive comparisons.  
-@return       Whether the flag was found.  
   
 
 #### Parameters ####
@@ -170,12 +157,7 @@ A helper method which will find a flag and remove it in one step.
 Find a flag with a parameter and remove both. This is a helper  
 method that combines "findFlag" and "removeArguments" in one step.  
   
-@return   null (a void astring) if the flag is not found. The parameter value  
-          if found. Note that null and the empty string are not the same.  
-@throws   NS_ERROR_INVALID_ARG if the flag exists without a parameter  
   
-@param aFlag The flag name to find and remove.  
-@param aCaseSensitive Whether to do case-sensitive flag search.  
   
 
 #### Parameters ####
@@ -215,7 +197,6 @@ Resolve a file-path argument into an nsIFile. This method gracefully
 handles relative or absolute file paths, according to the working  
 directory of this command line.  
   
-@param aArgument  The command-line argument to resolve.  
   
 
 #### Parameters ####
@@ -237,7 +218,6 @@ logic for converting an absolute URI or a relative file-path into the
 appropriate URI object; it gracefully handles win32 C:\ paths which would  
 confuse the ioservice if passed directly.  
   
-@param aArgument  The command-line argument to resolve.  
   
 
 #### Parameters ####

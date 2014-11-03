@@ -22,12 +22,6 @@ think).
   
 Request a completed hash from the given gethash url.  
   
-@param partialHash  
-       The 32-bit hash encountered by the url-classifier.  
-@param gethashUrl  
-       The gethash url to use.  
-@param callback  
-       An nsIUrlClassifierCompleterCallback instance.  
   
 
 #### Parameters ####

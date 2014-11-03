@@ -31,13 +31,6 @@ NOTE: On 32-bit Windows, it is valid to pass any HKEY as the rootKey
 parameter of this function.  However, for compatibility with 64-bit  
 Windows, that usage should probably be avoided in favor of openChild.  
   
-@param rootKey  
-       A root key defined above or any valid HKEY on 32-bit Windows.  
-@param relPath  
-       A relative path from the given root key.  
-@param mode  
-       Access mode, which is a bit-wise OR of the ACCESS_ values defined  
-       above.  
   
 
 #### Parameters ####
@@ -73,13 +66,6 @@ NOTE: On 32-bit Windows, it is valid to pass any HKEY as the rootKey
 parameter of this function.  However, for compatibility with 64-bit  
 Windows, that usage should probably be avoided in favor of createChild.  
   
-@param rootKey  
-       A root key defined above or any valid HKEY on 32-bit Windows.  
-@param relPath  
-       A relative path from the given root key.  
-@param mode  
-       Access mode, which is a bit-wise OR of the ACCESS_ values defined  
-       above.  
   
 
 #### Parameters ####
@@ -112,7 +98,6 @@ Windows, that usage should probably be avoided in favor of createChild.
 This method opens a subkey relative to this key.  This method fails if the  
 key does not exist.  
   
-@return nsIWindowsRegKey for the newly opened subkey.  
   
 
 #### Returns ####
@@ -130,7 +115,6 @@ key does not exist.
   
 This method opens or creates a subkey relative to this key.  
   
-@return nsIWindowsRegKey for the newly opened or created subkey.  
   
 
 #### Returns ####
@@ -148,8 +132,6 @@ This method opens or creates a subkey relative to this key.
   
 This method returns the name of the n'th child key.  
   
-@param index  
-       The index of the requested child key.  
   
 
 #### Parameters ####
@@ -168,8 +150,6 @@ This method returns the name of the n'th child key.
   
 This method checks to see if the key has a child by the given name.  
   
-@param name  
-       The name of the requested child key.  
   
 
 #### Parameters ####
@@ -188,8 +168,6 @@ This method checks to see if the key has a child by the given name.
   
 This method returns the name of the n'th value under this key.  
   
-@param index  
-       The index of the requested value.  
   
 
 #### Parameters ####
@@ -208,8 +186,6 @@ This method returns the name of the n'th value under this key.
   
 This method checks to see if the key has a value by the given name.  
   
-@param name  
-       The name of the requested value.  
   
 
 #### Parameters ####
@@ -229,8 +205,6 @@ This method checks to see if the key has a value by the given name.
 This method removes a child key and all of its values.  This method will  
 fail if the key has any children of its own.   
   
-@param relPath  
-       The relative path from this key to the key to be removed.  
   
 
 #### Parameters ####
@@ -249,8 +223,6 @@ fail if the key has any children of its own.
   
 This method removes the value with the given name.  
   
-@param name  
-       The name of the value to be removed.  
   
 
 #### Parameters ####
@@ -270,8 +242,6 @@ This method removes the value with the given name.
 This method returns the type of the value with the given name.  The return  
 value is one of the "TYPE_" constants defined above.  
   
-@param name  
-       The name of the value to query.  
   
 
 #### Parameters ####
@@ -291,9 +261,6 @@ value is one of the "TYPE_" constants defined above.
 This method reads the string contents of the named value as a Unicode  
 string.  
   
-@param name  
-       The name of the value to query.  This parameter can be the empty  
-       string to request the key's default value.  
   
 
 #### Parameters ####
@@ -313,8 +280,6 @@ string.
   
 This method reads the integer contents of the named value.  
   
-@param name  
-       The name of the value to query.  
   
 
 #### Parameters ####
@@ -333,8 +298,6 @@ This method reads the integer contents of the named value.
   
 This method reads the 64-bit integer contents of the named value.  
   
-@param name  
-       The name of the value to query.  
   
 
 #### Parameters ####
@@ -357,8 +320,6 @@ JavaScript callers should take care with the result of this method since
 it will be byte-expanded to form a JS string.  (The binary data will be  
 treated as an ISO-Latin-1 character string, which it is not).  
   
-@param name  
-       The name of the value to query.  
   
 
 #### Parameters ####
@@ -378,11 +339,6 @@ treated as an ISO-Latin-1 character string, which it is not).
 This method writes the unicode string contents of the named value.  The  
 value will be created if it does not already exist.  
   
-@param name  
-       The name of the value to modify.  This parameter can be the empty  
-       string to modify the key's default value.  
-@param data  
-       The data for the value to modify.  
   
 
 #### Parameters ####
@@ -409,10 +365,6 @@ value will be created if it does not already exist.
 This method writes the integer contents of the named value.  The value  
 will be created if it does not already exist.  
   
-@param name  
-       The name of the value to modify.  
-@param data  
-       The data for the value to modify.  
   
 
 #### Parameters ####
@@ -438,10 +390,6 @@ will be created if it does not already exist.
 This method writes the 64-bit integer contents of the named value.  The  
 value will be created if it does not already exist.  
   
-@param name  
-       The name of the value to modify.  
-@param data  
-       The data for the value to modify.  
   
 
 #### Parameters ####
@@ -474,10 +422,6 @@ string, which it is not).  So, JavaScript callers should only pass
 character values in the range \u0000 to \u00FF, or else data loss will  
 occur.  
   
-@param name  
-       The name of the value to modify.  
-@param data  
-       The data for the value to modify.  
   
 
 #### Parameters ####
@@ -505,8 +449,6 @@ changed.  The key must have been opened with mode including ACCESS_NOTIFY.
 If recurse is true, then this key and any of its descendant keys are  
 watched.  Otherwise, only this key is watched.  
   
-@param recurse  
-       Indicates whether or not to also watch child keys.  
   
 
 #### Parameters ####

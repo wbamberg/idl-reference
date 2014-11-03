@@ -18,12 +18,7 @@ Functions that implement user interface dialogs to manage certificates.
  Provides user with ability to choose trust settings for the cert.  
  Asks the user to grant permission to import the certificate.  
   
- @param ctx A user interface context.  
- @param cert The certificate that is about to get installed.  
- @param trust a bit mask of trust flags,   
-              see nsIX509CertDB for possible values.  
   
- @return true if the user allows to import the certificate.  
   
 
 #### Parameters ####
@@ -68,7 +63,6 @@ Functions that implement user interface dialogs to manage certificates.
  be imported, but the certificate is already contained in the  
  user's storage.  
   
- @param ctx A user interface context.  
   
 
 #### Parameters ####
@@ -93,10 +87,7 @@ Functions that implement user interface dialogs to manage certificates.
  The wording in the dialog should also motivate the user   
  to enter a strong password.  
   
- @param ctx A user interface context.  
- @param password The password provided by the user.  
   
- @return false if the user requests to cancel.  
   
 
 #### Parameters ####
@@ -135,10 +126,7 @@ Functions that implement user interface dialogs to manage certificates.
  The user is requested to enter the password  
  that was used in the past to protect that backup file.  
   
- @param ctx A user interface context.  
- @param password The password provided by the user.  
   
- @return false if the user requests to cancel.  
   
 
 #### Parameters ####
@@ -176,8 +164,6 @@ Functions that implement user interface dialogs to manage certificates.
  The implementation should try to display as many attributes  
  as possible.  
   
- @param ctx A user interface context.  
- @param cert The certificate to be shown to the user.  
   
 
 #### Parameters ####

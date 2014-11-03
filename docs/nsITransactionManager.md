@@ -23,7 +23,6 @@ undo stack.
 This method calls the transaction's AddRef() method.  
 The transaction's Release() method will be called when the undo or redo  
 stack is pruned or when the transaction manager is destroyed.  
-@param aTransaction the transaction to do.  
   
 
 #### Parameters ####
@@ -72,8 +71,6 @@ executed by the transaction manager's doTransaction() method to be
 aggregated together until EndBatch() is called.  This mode allows an  
 application to execute and group together several independent transactions  
 so they can be undone with a single call to undoTransaction().  
-@param aData An arbitrary nsISupports object that is associated with the  
-batch. Can be retrieved from nsITransactionList.  
   
 
 #### Parameters ####
@@ -92,9 +89,6 @@ batch. Can be retrieved from nsITransactionList.
 ### endBatch(aAllowEmpty) ###
   
 Turns off the transaction manager's batch mode.  
-@param aAllowEmpty If true, a batch containing no children will be  
-pushed onto the undo stack. Otherwise, ending a batch with no  
-children will result in no transactions being pushed on the undo stack.  
   
 
 #### Parameters ####
@@ -160,7 +154,6 @@ Adds a listener to the transaction manager's notification list. Listeners
 are notified whenever a transaction is done, undone, or redone.  
 <P>  
 The listener's AddRef() method is called.  
-@param aListener the lister to add.  
   
 
 #### Parameters ####
@@ -180,7 +173,6 @@ The listener's AddRef() method is called.
 Removes a listener from the transaction manager's notification list.  
 <P>  
 The listener's Release() method is called.  
-@param aListener the lister to remove.  
   
 
 #### Parameters ####

@@ -20,17 +20,6 @@ init
   
 This method initializes a UDP socket.  
   
-@param aPort  
-       The port of the UDP socket.  Pass -1 to indicate no preference,  
-       and a port will be selected automatically.  
-@param aLoopbackOnly  
-       If true, the UDP socket will only respond to connections on the  
-       local loopback interface.  Otherwise, it will accept connections  
-       from any interface.  To specify a particular network interface,  
-       use initWithAddress.  
-@param aAddressReuse  
-       If true, the socket is allowed to be bound to an address that is  
-       already in use. Default is true.  
   
 
 #### Parameters ####
@@ -69,11 +58,6 @@ initWithAddress
 This method initializes a UDP socket, and binds it to a particular  
 local address (and hence a particular local network interface).  
   
-@param aAddr  
-       The address to which this UDP socket should be bound.  
-@param aAddressReuse  
-       If true, the socket is allowed to be bound to an address that is  
-       already in use. Default is true.  
   
 
 #### Parameters ####
@@ -118,8 +102,6 @@ that called asyncListen (the calling thread must have a nsIEventTarget).
 The listener will be passed a reference to an already connected socket  
 transport (nsISocketTransport).  See below for more details.  
   
-@param aListener  
-       The listener to be notified when client connections are accepted.  
   
 
 #### Parameters ####
@@ -152,11 +134,6 @@ send
 Send out the datagram to specified remote host and port.  
 DNS lookup will be triggered.  
   
-@param host The remote host name.  
-@param port The remote port.  
-@param data The buffer containing the data to be written.  
-@param dataLength The maximum number of bytes to be written.  
-@return number of bytes written. (0 or dataLength)  
   
 
 #### Parameters ####
@@ -206,10 +183,6 @@ sendWithAddr
   
 Send out the datagram to specified remote host and port.  
   
-@param addr The remote host address.  
-@param data The buffer containing the data to be written.  
-@param dataLength The maximum number of bytes to be written.  
-@return number of bytes written. (0 or dataLength)  
   
 
 #### Parameters ####
@@ -253,10 +226,6 @@ sendWithAddress
   
 Send out the datagram to specified remote address and port.  
   
-@param addr The remote host address.  
-@param data The buffer containing the data to be written.  
-@param dataLength The maximum number of bytes to be written.  
-@return number of bytes written. (0 or dataLength)  
   
 
 #### Parameters ####
@@ -300,9 +269,6 @@ sendBinaryStream
   
 Send out the datagram to specified remote address and port.  
   
-@param host The remote host name.  
-@param port The remote port.  
-@param stream The input stream to be sent. This must be a buffered stream implementation.  
   
 
 #### Parameters ####
@@ -335,8 +301,6 @@ sendBinaryStreamWithAddress
   
 Send out the datagram to specified remote address and port.  
   
-@param addr The remote host address.  
-@param stream The input stream to be sent. This must be a buffered stream implementation.  
   
 
 #### Parameters ####
@@ -364,12 +328,6 @@ joinMulticast
 Join the multicast group specified by |addr|.  You are then able to  
 receive future datagrams addressed to the group.  
   
-@param addr  
-       The multicast group address.  
-@param iface  
-       The local address of the interface on which to join the group.  If  
-       this is not specified, the OS may join the group on all interfaces  
-       or only the primary interface.  
   
 
 #### Parameters ####
@@ -401,12 +359,6 @@ leaveMulticast
 Leave the multicast group specified by |addr|.  You will no longer  
 receive future datagrams addressed to the group.  
   
-@param addr  
-       The multicast group address.  
-@param iface  
-       The local address of the interface on which to leave the group.  
-       If this is not specified, the OS may leave the group on all  
-       interfaces or only the primary interface.  
   
 
 #### Parameters ####

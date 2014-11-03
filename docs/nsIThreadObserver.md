@@ -43,8 +43,6 @@ NOTE: Will be split into two interfaces soon: one for onProcessNextEvent and
 This method is called after an event has been dispatched to the thread.  
 This method may be called from any thread.   
   
-@param thread  
-  The thread where the event is being dispatched.  
   
 
 #### Parameters ####
@@ -65,14 +63,6 @@ This method is called when nsIThread::ProcessNextEvent is called.  It does
 not guarantee that an event is actually going to be processed.  This method  
 is only called on the target thread.  
   
-@param thread  
-  The thread being asked to process another event.  
-@param mayWait  
-  Indicates whether or not the method is allowed to block the calling  
-  thread.  For example, this parameter is false during thread shutdown.  
-@param recursionDepth  
-  Indicates the number of calls to ProcessNextEvent on the call stack in  
-  addition to the current call.  
   
 
 #### Parameters ####
@@ -108,14 +98,6 @@ is processed.  It does not guarantee that an event was actually processed
 (depends on the value of |eventWasProcessed|.  This method is only called  
 on the target thread.  
   
-@param thread  
-  The thread that processed another event.  
-@param recursionDepth  
-  Indicates the number of calls to ProcessNextEvent on the call stack in  
-  addition to the current call.  
-@param eventWasProcessed  
-  Indicates whether an event was actually processed. May be false if the  
-  |mayWait| flag was false when calling nsIThread::ProcessNextEvent().  
   
 
 #### Parameters ####

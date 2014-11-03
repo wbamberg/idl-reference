@@ -23,13 +23,6 @@ or cache management thread.
 IMPORTANT NOTE:   
 This callback may be invoked sooner then respective asyncOpenURI call exits.  
   
-@param aEntry  
-   An entry to examine.  Consumer has a chance to decide whether the  
-   entry is valid or not.  
-@param aApplicationCache  
-   Optional, application cache the entry has been found in, if any.  
-@return  
-   State of the entry, see the constants just above.  
   
 
 #### Parameters ####
@@ -72,25 +65,6 @@ has been called.
 IMPORTANT NOTE:   
 This callback may be invoked sooner then respective asyncOpenURI call exits.  
   
-@param aEntry  
-   The entry bound to the originally requested URI.  May be null when  
-   loading from a particular application cache and the URI has not  
-   been found in that application cache.  
-@param aNew  
-   Whether no data so far has been stored for this entry, i.e. reading  
-   it will just fail.  When aNew is true, a server request should be  
-   made and data stored to this new entry.  
-@param aApplicationCache  
-   When an entry had been found in an application cache, this is the  
-   given application cache.  It should be associated with the loading  
-   channel.  
-@param aResult  
-   Result of the request.  This may be a failure only when one of these  
-   issues occur:  
-   - the cache storage service could not be started due to some unexpected  
-     faulure  
-   - there is not enough disk space to create new entries  
-   - cache entry was not found in a given application cache  
   
 
 #### Parameters ####

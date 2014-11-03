@@ -18,8 +18,6 @@ Loads the JS WebVTTParser and sets it to use the passed window to create
 VTTRegions and VTTCues. This function must be called before calling  
 parse, flush, or watch.  
   
-@param window The window that the parser will use to create VTTCues and  
-              VTTRegions.  
   
   
 
@@ -42,8 +40,6 @@ Attempts to parse the stream's data as WebVTT format. When it successfully
 parses a WebVTT region or WebVTT cue it will create a VTTRegion or VTTCue  
 object and pass it back to the callee through its callbacks.  
   
-@param data   The buffer that contains the WebVTT data received by the  
-              Necko consumer so far.  
   
 
 #### Parameters ####
@@ -70,8 +66,6 @@ parser should try to parse any kind of partial data it has.
 Set this parser object to use an nsIWebVTTListener object for its onCue  
 and onRegion callbacks.  
   
-@param callback The nsIWebVTTListener object that exposes onCue and  
-                onRegion callbacks for the parser.  
   
 
 #### Parameters ####
@@ -92,10 +86,6 @@ and onRegion callbacks.
 Convert the text content of a WebVTT cue to a document fragment so that  
 we can display it on the page.  
   
-@param window A window object with which the document fragment will be  
-              created.  
-@param cue    The cue whose content will be converted to a document  
-              fragment.  
   
 
 #### Parameters ####
@@ -127,11 +117,6 @@ a containing HTMLDivElement. It then adjusts those computed divs for
 overlap avoidance using the dimensions of 'overlay'. Finally, it adds the  
 computed divs to the VTTCues display state property for use later.  
   
-@param window  A window object with which it will create the DOM tree  
-               and containing div element.  
-@param cues    An array of VTTCues who need there display state to be  
-               computed.  
-@param overlay The HTMLElement that the cues will be displayed within.  
   
 
 #### Parameters ####

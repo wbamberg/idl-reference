@@ -21,11 +21,6 @@ statements, executing SQL, and examining database errors.
 Close this database connection, allowing all pending statements  
 to complete first.  
   
-@param aCallback [optional]  
-       A callback that will be notified when the close is completed,  
-       with the following arguments:  
-       - status: the status of the call  
-       - value: |null|  
   
 @throws NS_ERROR_NOT_SAME_THREAD  
         If is called on a thread other than the one that opened it.  
@@ -51,15 +46,7 @@ to complete first.
   
 Clone a database and make the clone read only if needed.  
   
-@param aReadOnly  
-       If true, the returned database should be put into read-only mode.  
   
-@param aCallback  
-       A callback that will be notified when the operation is complete,  
-       with the following arguments:  
-       - status: the status of the operation  
-       - value: in case of success, an intance of  
-            mozIStorageAsyncConnection cloned from this one.  
   
 @throws NS_ERROR_NOT_SAME_THREAD  
         If is called on a thread other than the one that opened it.  
@@ -116,10 +103,6 @@ The expression may use ? to indicate sequential numbered arguments,
 ?1, ?2 etc. to indicate specific numbered arguments or :name and  
 $var to indicate named arguments.  
   
-@param aSQLStatement  
-       The SQL statement to execute.  
-@return a new mozIStorageAsyncStatement  
-@note The statement is created lazily on first execution.  
   
 
 #### Parameters ####
@@ -154,15 +137,6 @@ statements, the execution is wrapped in a single
 transaction. These statements can be reused immediately, and  
 reset does not need to be called.  
   
-@param aStatements  
-       The array of statements to execute asynchronously, in the order they  
-       are given in the array.  
-@param aNumStatements  
-       The number of statements in aStatements.  
-@param aCallback [optional]  
-       The callback object that will be notified of progress, errors, and  
-       completion.  
-@return an object that can be used to cancel the statements execution.  
   
 @note If you have any custom defined functions, they must be  
        re-entrant since they can be called on multiple threads.  
@@ -210,12 +184,6 @@ reset does not need to be called.
   
 Execute asynchronously an SQL expression, expecting no arguments.  
   
-@param aSQLStatement  
-       The SQL statement to execute  
-@param aCallback [optional]  
-       The callback object that will be notified of progress, errors, and  
-       completion.  
-@return an object that can be used to cancel the statement execution.  
   
 
 #### Parameters ####
@@ -255,14 +223,6 @@ Create a new SQL function.  If you use your connection on multiple threads,
 your function needs to be threadsafe, or it should only be called on one  
 thread.  
   
-@param aFunctionName  
-       The name of function to create, as seen in SQL.  
-@param aNumArguments  
-       The number of arguments the function takes. Pass -1 for  
-       variable-argument functions.  
-@param aFunction  
-       The instance of mozIStorageFunction, which implements the function  
-       in question.  
   
 
 #### Parameters ####
@@ -297,14 +257,6 @@ Create a new SQL aggregate function.  If you use your connection on
 multiple threads, your function needs to be threadsafe, or it should only  
 be called on one thread.  
   
-@param aFunctionName  
-       The name of aggregate function to create, as seen in SQL.  
-@param aNumArguments  
-       The number of arguments the function takes. Pass -1 for  
-       variable-argument functions.  
-@param aFunction  
-       The instance of mozIStorageAggreagteFunction, which implements the  
-       function in question.  
   
 
 #### Parameters ####
@@ -337,8 +289,6 @@ be called on one thread.
   
 Delete custom SQL function (simple or aggregate one).  
   
-@param aFunctionName  
-       The name of function to remove.  
   
 
 #### Parameters ####
@@ -360,12 +310,6 @@ If you need more than one, you need to chain them yourself.  This progress
 handler should be threadsafe if you use this connection object on more than  
 one thread.  
   
-@param aGranularity  
-       The number of SQL virtual machine steps between progress handler  
-       callbacks.  
-@param aHandler  
-       The instance of mozIStorageProgressHandler.  
-@return previous registered handler.  
   
 
 #### Parameters ####
@@ -402,7 +346,6 @@ one thread.
   
 Remove a progress handler.  
   
-@return previous registered handler.  
   
 
 #### Returns ####

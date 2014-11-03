@@ -16,11 +16,6 @@ layout: default
 ### formatStatusMessage(aStatus, aStatusArg) ###
   
 Formats a message string from a status code and status arguments.  
-@param aStatus - The status code. This is mapped into a string ID and  
-           and used in the string lookup process (see nsIErrorService).  
-@param aStatusArg - The status message argument(s). Multiple arguments  
-           can be separated by newline ('\n') characters.  
-@return the formatted message  
   
 
 #### Parameters ####

@@ -29,9 +29,6 @@ Return the next rewritable URI.
   
 Go back to the beginning of the attribute list  
   
-@param aOldPat  Old pattern to be replaced, e.g. file:///a/b/  
-@param aNewPat  New pattern to be replaced, e.g. http://mypage.aol.com/  
-@param aMakeRel Rewrite links as relative vs. absolute  
   
 
 #### Parameters ####

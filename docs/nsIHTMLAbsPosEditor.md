@@ -13,8 +13,6 @@ layout: default
   
 extracts the selection from the normal flow of the document and  
 positions it.  
-@param aEnabled [IN] true to absolutely position the selection,  
-                     false to put it back in the normal flow  
   
 
 #### Parameters ####
@@ -33,7 +31,6 @@ positions it.
 ### relativeChangeZIndex(aChange) ###
   
 adds aChange to the z-index of the currently positioned element.  
-@param aChange [IN] relative change to apply to current z-index  
   
 
 #### Parameters ####
@@ -52,9 +49,6 @@ adds aChange to the z-index of the currently positioned element.
   
 extracts an element from the normal flow of the document and  
 positions it, and puts it back in the normal flow.  
-@param aElement [IN] the element  
-@param aEnabled [IN] true to absolutely position the element,  
-                     false to put it back in the normal flow  
   
 
 #### Parameters ####
@@ -80,9 +74,6 @@ positions it, and puts it back in the normal flow.
   
 sets the position of an element; warning it does NOT check if the  
 element is already positioned or not and that's on purpose.  
-@param aElement [IN] the element  
-@param aX       [IN] the x position in pixels.  
-@param aY       [IN] the y position in pixels.  
   
 
 #### Parameters ####
@@ -112,8 +103,6 @@ element is already positioned or not and that's on purpose.
 ### getElementZIndex(aElement) ###
   
 returns the absolute z-index of a positioned element. Never returns 'auto'.  
-@return         the z-index of the element  
-@param aElement [IN] the element.  
   
 
 #### Parameters ####
@@ -142,8 +131,6 @@ returns the absolute z-index of a positioned element. Never returns 'auto'.
 ### setElementZIndex(aElement, aZorder) ###
   
 sets the z-index of an element.  
-@param aElement [IN] the element  
-@param aZorder  [IN] the z-index  
   
 
 #### Parameters ####
@@ -167,10 +154,6 @@ sets the z-index of an element.
 ### relativeChangeElementZIndex(aElement, aChange) ###
   
 adds aChange to the z-index of an arbitrary element.  
-@return         the new z-index of the element  
-@param aElement [IN] the element  
-@param aChange  [IN] relative change to apply to current z-index of  
-                     the element  
   
 
 #### Parameters ####
@@ -209,7 +192,6 @@ shows a grabber attached to an arbitrary element. The grabber is an image
 positioned on the left hand side of the top border of the element. Dragging  
 and dropping it allows to change the element's absolute position in the  
 document. See chrome://editor/content/images/grabber.gif  
-@param aElement [IN] the element  
   
 
 #### Parameters ####

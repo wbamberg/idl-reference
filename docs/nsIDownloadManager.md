@@ -13,37 +13,14 @@ layout: default
   
 Creates an nsIDownload and adds it to be managed by the download manager.  
   
-@param aSource The source URI of the transfer. Must not be null.  
   
-@param aTarget The target URI of the transfer. Must not be null.  
   
-@param aDisplayName The user-readable description of the transfer.  
-                    Can be empty.  
   
-@param aMIMEInfo The MIME info associated with the target,  
-                 including MIME type and helper app when appropriate.  
-                 This parameter is optional.  
   
-@param startTime Time when the download started  
   
-@param aTempFile The location of a temporary file; i.e. a file in which  
-                 the received data will be stored, but which is not  
-                 equal to the target file. (will be moved to the real  
-                 target by the DownloadManager, when the download is  
-                 finished). This will be null for all callers except for  
-                 nsExternalHelperAppHandler. Addons should generally pass  
-                 null for aTempFile. This will be moved to the real target  
-                 by the download manager when the download is finished,  
-                 and the action indicated by aMIMEInfo will be executed.  
   
-@param aCancelable An object that can be used to abort the download.  
-                   Must not be null.  
   
-@param aIsPrivate Used to determine the privacy status of the new download.  
-                  If true, the download is stored in a manner that leaves  
-                  no permanent trace outside of the current private session.  
   
-@return The newly created download item with the passed-in properties.  
   
 @note This does not actually start a download.  If you want to add and  
       start a download, you need to create an nsIWebBrowserPersist, pass it  
@@ -136,9 +113,6 @@ Retrieves a download managed by the download manager.  This can be one that
 is in progress, or one that has completed in the past and is stored in the  
 database.  
   
-@param aID The unique ID of the download.  
-@return The download with the specified ID.  
-@throws NS_ERROR_NOT_AVAILABLE if the download is not in the database.  
   
 
 #### Parameters ####
@@ -173,8 +147,6 @@ database.  The result of this method is returned via an asynchronous callback,
 the parameter of which will be an nsIDownload object, or null if none exists  
 with the provided GUID.  
   
-@param aGUID The unique GUID of the download.  
-@param aCallback The callback to invoke with the result of the search.  
   
 
 #### Parameters ####
@@ -201,8 +173,6 @@ Cancels the download with the specified ID if it's currently in-progress.
 This calls cancel(NS_BINDING_ABORTED) on the nsICancelable provided by the  
 download.  
   
-@param aID The unique ID of the download.  
-@throws NS_ERROR_FAILURE if the download is not in-progress.  
   
 
 #### Parameters ####
@@ -233,8 +203,6 @@ with the download id as the subject, if the download removed is public
 or if global private browsing mode is in use. This notification is deprecated;  
 the guid notification should be relied upon instead.  
   
-@param aID The unique ID of the download.  
-@throws NS_ERROR_FAILURE if the download is active.  
   
 
 #### Parameters ####
@@ -255,10 +223,6 @@ the guid notification should be relied upon instead.
 Removes all inactive downloads that were started inclusively within the  
 specified time frame.  
   
-@param aBeginTime  
-       The start time to remove downloads by in microseconds.  
-@param aEndTime  
-       The end time to remove downloads by in microseconds.  
   
 
 #### Parameters ####
@@ -283,8 +247,6 @@ specified time frame.
   
 Pause the specified download.  
   
-@param aID The unique ID of the download.  
-@throws NS_ERROR_FAILURE if the download is not in-progress.  
   
 
 #### Parameters ####
@@ -304,8 +266,6 @@ Pause the specified download.
   
 Resume the specified download.  
   
-@param aID The unique ID of the download.  
-@throws NS_ERROR_FAILURE if the download is not in-progress.  
   
 
 #### Parameters ####
@@ -325,11 +285,6 @@ Resume the specified download.
   
 Retries a failed download.  
   
-@param aID The unique ID of the download.  
-@throws NS_ERROR_NOT_AVAILALE if the download id is not known.  
-@throws NS_ERROR_FAILURE if the download is not in the following states:  
-          nsIDownloadManager::DOWNLOAD_CANCELED  
-          nsIDownloadManager::DOWNLOAD_FAILED  
   
 
 #### Parameters ####

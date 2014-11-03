@@ -23,38 +23,13 @@ Should the resource at this location be loaded?
 ShouldLoad will be called before loading the resource at aContentLocation  
 to determine whether to start the load at all.  
   
-@param aContentType      the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
   
-@param aContentLocation  the location of the content being checked; must  
-                         not be null  
   
-@param aRequestOrigin    OPTIONAL. the location of the resource that  
-                         initiated this load request; can be null if  
-                         inapplicable  
   
-@param aContext          OPTIONAL. the nsIDOMNode or nsIDOMWindow that  
-                         initiated the request, or something that can QI  
-                         to one of those; can be null if inapplicable.  
-                         Note that for navigation events (new windows and  
-                         link clicks), this is the NEW window.  
   
-@param aMimeTypeGuess    OPTIONAL. a guess for the requested content's  
-                         MIME type, based on information available to  
-                         the request initiator (e.g., an OBJECT's type  
-                         attribute); does not reliably reflect the  
-                         actual MIME type of the requested content  
   
-@param aExtra            an OPTIONAL argument, pass-through for non-Gecko  
-                         callers to pass extra data to callees.  
   
-@param aRequestPrincipal an OPTIONAL argument, defines the principal that  
-                         caused the load. This is optional only for  
-                         non-gecko code: all gecko code should set this  
-                         argument.  For navigation events, this is  
-                         the principal of the page that caused this load.  
   
-@return ACCEPT or REJECT_*  
   
 @note shouldLoad can be called while the DOM and layout of the document  
 involved is in an inconsistent state.  This means that implementors of  
@@ -157,30 +132,12 @@ ShouldProcess will be called once all the information passed to it has
 been determined about the resource, typically after part of the resource  
 has been loaded.  
   
-@param aContentType      the type of content being tested. This will be one  
-                         one of the TYPE_* constants.  
   
-@param aContentLocation  OPTIONAL; the location of the resource being  
-                         requested: MAY be, e.g., a post-redirection URI  
-                         for the resource.  
   
-@param aRequestOrigin    OPTIONAL. the location of the resource that  
-                         initiated this load request; can be null if  
-                         inapplicable  
   
-@param aContext          OPTIONAL. the nsIDOMNode or nsIDOMWindow that  
-                         initiated the request, or something that can QI  
-                         to one of those; can be null if inapplicable.  
   
-@param aMimeType         the MIME type of the requested resource (e.g.,  
-                         image/png), as reported by the networking library,  
-                         if available (may be empty if inappropriate for  
-                         the type, e.g., TYPE_REFRESH).  
   
-@param aExtra            an OPTIONAL argument, pass-through for non-Gecko  
-                         callers to pass extra data to callees.  
   
-@return ACCEPT or REJECT_*  
   
 @note shouldProcess can be called while the DOM and layout of the document  
 involved is in an inconsistent state.  See the note on shouldLoad to see  

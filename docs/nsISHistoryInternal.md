@@ -12,10 +12,6 @@ layout: default
 ### addEntry(aEntry, aPersist) ###
   
 Add a new Entry to the History List  
-@param aEntry - The entry to add  
-@param aPersist - If true this specifies that the entry should persist  
-in the list.  If false, this means that when new entries are added  
-this element will not appear in the session history list.  
   
 
 #### Parameters ####
@@ -46,8 +42,6 @@ Update the index maintained by sessionHistory
 ### replaceEntry(aIndex, aReplaceEntry) ###
   
 Replace the nsISHEntry at a particular index  
-@param aIndex - The index at which the entry should be replaced  
-@param aReplaceEntry - The replacement entry for the index.  
   
 
 #### Parameters ####
@@ -73,11 +67,6 @@ Replace the nsISHEntry at a particular index
 Notifies all registered session history listeners about an impending  
 reload.  
   
-@param aReloadURI    The URI of the document to be reloaded.  
-@param aReloadFlags  Flags that indicate how the document is to be  
-                     refreshed. See constants on the nsIWebNavigation  
-                     interface.  
-@return              Whether the operation can proceed.  
   
 
 #### Parameters ####
@@ -120,9 +109,6 @@ viewers associated with this SHistory object.
 Also make sure that the total number of content viewers in all windows is  
 not greater than our global max; if it is, evict viewers as appropriate.  
   
-@param aIndex - The index around which the "safe" range is centered.  In  
-  general, if you just navigated the history, aIndex should be the index  
-  history was navigated to.  
   
 
 #### Parameters ####

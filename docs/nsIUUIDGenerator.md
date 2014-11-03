@@ -19,7 +19,6 @@ method for generating UUIDs.
 Obtains a new UUID using appropriate platform-specific methods to  
 obtain a nsID that can be considered to be globally unique.  
   
-@returns an nsID filled in with a new UUID.  
   
 @throws NS_ERROR_FAILURE if a UUID cannot be generated (e.g. if  
 an underlying source of randomness is not available)  
@@ -41,7 +40,6 @@ an underlying source of randomness is not available)
 Obtain a new UUID like the generateUUID method, but place it in  
 the provided nsID pointer instead of allocating a new nsID.  
   
-@param id an existing nsID pointer where the UUID will be stored.  
   
 @throws NS_ERROR_FAILURE if a UUID cannot be generated (e.g. if  
 an underlying source of randomness is not available)  

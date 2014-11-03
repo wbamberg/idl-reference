@@ -44,10 +44,6 @@ are used.
   
 Called right after aNode's title has changed.  
   
-@param aNode  
-       a result node  
-@param aNewTitle  
-       the new title  
   
 
 #### Parameters ####
@@ -72,10 +68,6 @@ Called right after aNode's title has changed.
   
 Called right after aNode's uri property has changed.  
   
-@param aNode  
-       a result node  
-@param aNewURI  
-       the new uri  
   
 
 #### Parameters ####
@@ -100,8 +92,6 @@ Called right after aNode's uri property has changed.
   
 Called right after aNode's icon property has changed.  
   
-@param aNode  
-       a result node  
   
 @note: The new icon is accessible through aNode.icon.  
   
@@ -123,12 +113,6 @@ Called right after aNode's icon property has changed.
 Called right after aNode's time property or accessCount property, or both,  
 have changed.  
   
-@param aNode  
-       a uri result node  
-@param aNewVisitDate  
-       the new visit date  
-@param aNewAccessCount  
-       the new access-count  
   
 
 #### Parameters ####
@@ -159,8 +143,6 @@ have changed.
   
 Called when the tags set on the uri represented by aNode have changed.  
   
-@param aNode  
-       a uri result node  
   
 @note: The new tags list is accessible through aNode.tags.  
   
@@ -181,10 +163,6 @@ Called when the tags set on the uri represented by aNode have changed.
   
 Called right after the aNode's keyword property has changed.  
   
-@param aNode  
-       a uri result node  
-@param aNewKeyword  
-       the new keyword  
   
 
 #### Parameters ####
@@ -210,10 +188,6 @@ Called right after the aNode's keyword property has changed.
 Called right after an annotation of aNode's has changed (set, altered, or  
 unset).  
   
-@param aNode  
-       a result node  
-@param aAnnoName  
-       the name of the annotation that changed  
   
 
 #### Parameters ####
@@ -238,10 +212,6 @@ unset).
   
 Called right after aNode's dateAdded property has changed.  
   
-@param aNode  
-       a result node  
-@param aNewValue  
-       the new value of the dateAdded property  
   
 
 #### Parameters ####
@@ -266,10 +236,6 @@ Called right after aNode's dateAdded property has changed.
   
 Called right after aNode's dateModified property has changed.  
   
-@param aNode  
-       a result node  
-@param aNewValue  
-       the new value of the dateModified property  
   
 
 #### Parameters ####
@@ -294,12 +260,6 @@ Called right after aNode's dateModified property has changed.
   
 Called after a container changes state.  
   
-@param aContainerNode  
-       The container that has changed state.  
-@param aOldState  
-       The state that aContainerNode has transitioned out of.  
-@param aNewState  
-       The state that aContainerNode has transitioned into.  
   
 
 #### Parameters ####
@@ -331,8 +291,6 @@ Called after a container changes state.
 Called when something significant has happened within the container. The  
 contents of the container should be re-built.  
   
-@param aContainerNode  
-       the container node to invalidate  
   
 
 #### Parameters ####
@@ -354,8 +312,6 @@ given mode. For trees, for example, this would update the column headers
 to reflect the sorting. For many other types of views, this won't be  
 applicable.  
   
-@param sortingMode  One of nsINavHistoryQueryOptions.SORT_BY_* that  
-                    indicates the new sorting mode.  
   
 This only is expected to update the sorting UI. invalidateAll() will also  
 get called if the sorting changes to update everything.  
@@ -381,8 +337,6 @@ The observer could want to disable some events or updates during batches,
 since multiple operations are packed in a short time.  
 For example treeviews could temporarily suppress select notifications.  
   
-@param aToggleMode  
-       true if a batch is starting, false if it's ending.  
   
 
 #### Parameters ####

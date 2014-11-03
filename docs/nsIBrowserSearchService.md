@@ -17,7 +17,6 @@ The callback is triggered once initialization is complete, which may be
 immediately, if initialization has already been completed by some previous  
 call to this method. The callback is always invoked asynchronously.  
   
-@param aObserver An optional object observing the end of initialization.  
   
 
 #### Parameters ####
@@ -39,28 +38,10 @@ asking the user for confirmation first.  If a confirmation dialog is
 shown, it will offer the option to begin using the newly added engine  
 right away.  
   
-@param engineURL  
-       The URL to the search engine's description file.  
   
-@param dataType  
-       An integer representing the plugin file format. Must be one  
-       of the supported search engine data types defined above.  
   
-@param iconURL  
-       A URL string to an icon file to be used as the search engine's  
-       icon. This value may be overridden by an icon specified in the  
-       engine description file.  
   
-@param confirm  
-       A boolean value indicating whether the user should be asked for  
-       confirmation before this engine is added to the list.  If this  
-       value is false, the engine will be added to the list upon successful  
-       load, but it will not be selected as the current engine.  
   
-@param callback  
-       A nsISearchInstallCallback that will be notified when the  
-       addition is complete, or if the addition fails. It will not be  
-       called if addEngine throws an exception.  
   
 @throws NS_ERROR_FAILURE if the type is invalid, or if the description  
         file cannot be successfully loaded.  
@@ -115,30 +96,12 @@ right away.
 Adds a new search engine, without asking the user for confirmation and  
 without starting to use it right away.  
   
-@param name  
-       The search engine's name. Must be unique. Must not be null.  
   
-@param iconURL  
-       Optional: A URL string pointing to the icon to be used to represent  
-       the engine.  
   
-@param alias  
-       Optional: A unique shortcut that can be used to retrieve the  
-       search engine.  
   
-@param description  
-       Optional: a description of the search engine.  
   
-@param method  
-       The HTTP request method used when submitting a search query.  
-       Must be a case insensitive value of either "get" or "post".  
   
-@param url  
-       The URL to which search queries should be sent.  
-       Must not be null.  
   
-@param extensionID [optional]  
-       Optional: The correct extensionID if called by an add-on.  
   
 
 #### Parameters ####
@@ -205,10 +168,6 @@ engines returned by getDefaultEngines)
   
 Returns an engine with the specified alias.  
   
-@param   alias  
-         The search engine's alias.  
-@returns The corresponding nsISearchEngine object, or null if it doesn't  
-         exist.  
   
 
 #### Parameters ####
@@ -239,10 +198,6 @@ Returns an engine with the specified alias.
   
 Returns an engine with the specified name.  
   
-@param   aEngineName  
-         The name of the engine.  
-@returns The corresponding nsISearchEngine object, or null if it doesn't  
-         exist.  
   
 
 #### Parameters ####
@@ -273,7 +228,6 @@ Returns an engine with the specified name.
   
 Returns an array of all installed search engines.  
   
-@returns an array of nsISearchEngine objects.  
   
 
 #### Returns ####
@@ -292,7 +246,6 @@ Returns an array of all installed search engines.
 Returns an array of all installed search engines whose hidden attribute is  
 false.  
   
-@returns an array of nsISearchEngine objects.  
   
 
 #### Returns ####
@@ -312,7 +265,6 @@ Returns an array of all default search engines. This includes all loaded
 engines that aren't in the user's profile directory  
 (NS_APP_USER_SEARCH_DIR).  
   
-@returns an array of nsISearchEngine objects.  
   
 
 #### Returns ####
@@ -330,10 +282,6 @@ engines that aren't in the user's profile directory
   
 Moves a visible search engine.  
   
-@param  engine  
-        The engine to move.  
-@param  newIndex  
-        The engine's new index in the set of visible engines.  
   
 @throws NS_ERROR_FAILURE if newIndex is out of bounds, or if engine is  
         hidden.  
@@ -363,8 +311,6 @@ Removes the search engine. If the search engine is installed in a global
 location, this will just hide the engine. If the engine is in the user's  
 profile directory, it will be removed from disk.  
   
-@param  engine  
-        The engine to remove.  
   
 
 #### Parameters ####
@@ -390,9 +336,6 @@ search engines.  The match does not depend on which of the schemes is used.
 The expected URI parameter for the search terms must exist in the query  
 string, but other parameters are ignored.  
   
-@param url  
-       String containing the URL to parse, for example  
-       "https://www.google.com/search?q=terms".  
   
 
 #### Parameters ####

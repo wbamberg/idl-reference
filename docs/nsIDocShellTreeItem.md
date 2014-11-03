@@ -19,8 +19,6 @@ node or a leaf.
 Compares the provided name against the item's name and  
 returns the appropriate result.  
   
-@return <CODE>PR_TRUE</CODE> if names match;  
-        <CODE>PR_FALSE</CODE> otherwise.  
   
 
 #### Returns ####

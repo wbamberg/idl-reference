@@ -19,14 +19,6 @@ to a given rule.
   
 Set the pivot's text range in a text accessible.  
   
-@param aTextAccessible  [in] the text accessible that contains the desired  
-                          range.  
-@param aStartOffset     [in] the start offset to set.  
-@param aEndOffset       [in] the end offset to set.  
-@param aIsFromUserInput [in] the pivot changed because of direct user input  
-                          (default is true).  
-@throws NS_ERROR_INVALID_ARG when the offset exceeds the accessible's  
-  character count.  
   
 
 #### Parameters ####
@@ -68,13 +60,6 @@ Set the pivot's text range in a text accessible.
 Move pivot to next object, from current position or given anchor,  
 complying to given traversal rule.  
   
-@param aRule            [in] traversal rule to use.  
-@param aAnchor          [in] accessible to start search from, if not provided,  
-                          current position will be used.  
-@param aIncludeStart    [in] include anchor accessible in search.  
-@param aIsFromUserInput [in] the pivot changed because of direct user input  
-                          (default is true).  
-@return true on success, false if there are no new nodes to traverse to.  
   
 
 #### Parameters ####
@@ -125,13 +110,6 @@ complying to given traversal rule.
 Move pivot to previous object, from current position or given anchor,  
 complying to given traversal rule.  
   
-@param aRule            [in] traversal rule to use.  
-@param aAnchor          [in] accessible to start search from, if not provided,  
-                          current position will be used.  
-@param aIncludeStart    [in] include anchor accessible in search.  
-@param aIsFromUserInput [in] the pivot changed because of direct user input  
-                          (default is true).  
-@return true on success, false if there are no new nodes to traverse to.  
   
 
 #### Parameters ####
@@ -181,10 +159,6 @@ complying to given traversal rule.
   
 Move pivot to first object in subtree complying to given traversal rule.  
   
-@param aRule            [in] traversal rule to use.  
-@param aIsFromUserInput [in] the pivot changed because of direct user input  
-                          (default is true).  
-@return true on success, false if there are no new nodes to traverse to.  
   
 
 #### Parameters ####
@@ -221,9 +195,6 @@ Move pivot to first object in subtree complying to given traversal rule.
   
 Move pivot to last object in subtree complying to given traversal rule.  
   
-@param aRule            [in] traversal rule to use.  
-@param aIsFromUserInput [in] the pivot changed because of direct user input  
-                          (default is true).  
   
 
 #### Parameters ####
@@ -249,11 +220,6 @@ Move pivot to last object in subtree complying to given traversal rule.
   
 Move pivot to next text range.  
   
-@param aBoundary        [in] type of boundary for next text range,  
-                          character, word, etc.  
-@param aIsFromUserInput [in] the pivot changed because of direct user input  
-                          (default is true).  
-@return true on success, false if there are is no more text.  
   
 
 #### Parameters ####
@@ -291,11 +257,6 @@ Move pivot to next text range.
   
 Move pivot to previous text range.  
   
-@param aBoundary        [in] type of boundary for next text range,  
-                          character, word, etc.  
-@param aIsFromUserInput [in] the pivot changed because of direct user input  
-                          (default is true).  
-@return true on success, false if there are is no more text.  
   
 
 #### Parameters ####
@@ -333,14 +294,6 @@ Move pivot to previous text range.
   
 Move pivot to given coordinate in screen pixels.  
   
-@param aRule            [in]  raversal rule to use.  
-@param aX               [in]  screen's x coordinate  
-@param aY               [in]  screen's y coordinate  
-@param aIgnoreNoMatch   [in]  don't unset position if no object was found  
-                          at point.  
-@param aIsFromUserInput [in] the pivot changed because of direct user input  
-                          (default is true).  
-@return true on success, false if the pivot has not been moved.  
   
 
 #### Parameters ####
@@ -396,7 +349,6 @@ Move pivot to given coordinate in screen pixels.
   
 Add an observer for pivot changes.  
   
-@param aObserver [in] the observer object to be notified of pivot changes.  
   
 
 #### Parameters ####
@@ -415,7 +367,6 @@ Add an observer for pivot changes.
   
 Remove an observer for pivot changes.  
   
-@param aObserver [in] the observer object to remove from being notified.  
   
 
 #### Parameters ####

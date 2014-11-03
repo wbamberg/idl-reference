@@ -17,8 +17,6 @@ Scriptable access to the current process environment.
   
 Set the value of an environment variable.  
   
-@param aName   the variable name to set.  
-@param aValue  the value to set.  
   
 
 #### Parameters ####
@@ -43,12 +41,6 @@ Set the value of an environment variable.
   
 Get the value of an environment variable.  
   
-@param aName   the variable name to retrieve.  
-@return        returns the value of the env variable. An empty string  
-               will be returned when the env variable does not exist or  
-               when the value itself is an empty string - please use  
-               |exists()| to probe whether the env variable exists  
-               or not.  
   
 
 #### Parameters ####
@@ -92,10 +84,6 @@ An environment variable does not exist when |getenv()| returns NULL.
 which simply checks whether the string returned by |Get()| is empty  
 or not.  
   
-@param aName   the variable name to probe.  
-@return        if the variable has been set, the value returned is  
-               PR_TRUE. If the variable was not defined in the  
-               environment PR_FALSE will be returned.  
   
 
 #### Parameters ####

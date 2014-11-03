@@ -24,8 +24,6 @@ XXX define behaviour for sizes >4 GB
   
 Initialize this stream loader, and start loading the data.  
   
-@param aObserver  
-       An observer that will be notified when the data is complete.  
   
 
 #### Parameters ####

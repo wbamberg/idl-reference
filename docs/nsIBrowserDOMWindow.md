@@ -20,14 +20,6 @@ interface.
   
 Load a URI  
   
-@param aURI the URI to open. null is allowed.  If null is passed in, no  
-            load will be done, though the window the load would have  
-            happened in will be returned.  
-@param aWhere see possible values described above.  
-@param aOpener window requesting the open (can be null).  
-@param aContext the context in which the URI is being opened. This  
-                is used only when aWhere == OPEN_DEFAULTWINDOW.  
-@return the window into which the URI was opened.  
   
 
 #### Parameters ####
@@ -83,9 +75,6 @@ As above, but return the nsIFrameLoaderOwner for the new window.
 
 ### isTabContentWindow(aWindow) ###
   
-@param  aWindow the window to test.  
-@return whether the window is the main content window for any  
-        currently open tab in this toplevel browser window.  
   
 
 #### Parameters ####

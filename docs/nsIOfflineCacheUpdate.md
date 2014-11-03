@@ -23,10 +23,6 @@ observers.
   
 Initialize the update.  
   
-@param aManifestURI  
-       The manifest URI to be checked.  
-@param aDocumentURI  
-       The page that is requesting the update.  
   
 
 #### Parameters ####
@@ -51,15 +47,6 @@ Initialize the update.
   
 Initialize the update for partial processing.   
   
-@param aManifestURI  
-       The manifest URI of the related cache.  
-@param aClientID  
-       Client  ID of the cache to store resource to. This ClientID  
-       must be ID of cache in the cache group identified by  
-       the manifest URI passed in the first parameter.  
-@param aDocumentURI  
-       The page that is requesting the update. May be null   
-       when this information is unknown.  
   
 
 #### Parameters ####
@@ -94,19 +81,6 @@ Initialize the update for partial processing.
 Initialize the update to only check whether there is an update  
 to the manifest available (if it has actually changed on the server).  
   
-@param aManifestURI  
-       The manifest URI of the related cache.  
-@param aAppID  
-       Local ID of an app (optional) to check the cache update for.  
-@param aInBrowser  
-       Whether to check for a cache populated from browser element.  
-@param aObserver  
-       nsIObserver implementation that receives the result.  
-       When aTopic == "offline-cache-update-available" there is an update to  
-       to download. Update of the app cache will lead to a new version  
-       download.  
-       When aTopic == "offline-cache-update-unavailable" then there is no  
-       update available (the manifest has not changed on the server).  
   
 
 #### Parameters ####
@@ -148,8 +122,6 @@ to the manifest available (if it has actually changed on the server).
   
 Add a dynamic URI to the offline cache as part of the update.  
   
-@param aURI  
-       The URI to add.  
   
 
 #### Parameters ####
@@ -174,11 +146,6 @@ event will be sent to the observer service.
   
 Observe loads that are added to the update.  
   
-@param aObserver  
-       object that notifications will be sent to.  
-@param aHoldWeak  
-       TRUE if you want the update to hold a weak reference to the  
-       observer, FALSE for a strong reference.  
   
 
 #### Parameters ####
@@ -204,8 +171,6 @@ Observe loads that are added to the update.
   
 Remove an observer from the update.  
   
-@param aObserver  
-       the observer to remove.  
   
 
 #### Parameters ####

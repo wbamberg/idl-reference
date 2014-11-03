@@ -22,8 +22,6 @@ passed to the onStreamComplete() callback.
   
 Initializes the unichar stream loader  
   
-@param aObserver the observer to notify when a charset is needed and when  
-                 the load is complete  
   
 
 #### Parameters ####
