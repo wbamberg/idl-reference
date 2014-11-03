@@ -22,7 +22,17 @@ layout: default
 <tr>
 <td>aNSPRCode</td>
 <td>An error code obtained using PR_GetError()  
- @return True if it is error code defined by the NSS library  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>True if it is error code defined by the NSS library  
 </td>
 </tr>
 
@@ -42,7 +52,17 @@ layout: default
 <tr>
 <td>aNSPRCode</td>
 <td>An error code obtained using PR_GetError()  
- @return The result of the conversion, an XPCOM error code  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The result of the conversion, an XPCOM error code  
 </td>
 </tr>
 

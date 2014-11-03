@@ -124,7 +124,12 @@ selects all cells (not TR in the case of rows)
 <tr>
 <td>aStartCell</td>
 <td>starting cell in block  
- @param aEndCell    ending cell in block  
+</td>
+</tr>
+
+<tr>
+<td>aEndCell</td>
+<td>ending cell in block  
 </td>
 </tr>
 
@@ -155,7 +160,17 @@ selects all cells (not TR in the case of rows)
 <tr>
 <td>aSourceCell</td>
 <td>The cell to be replaced  
- @return              The new cell that replaces aSourceCell  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>The new cell that replaces aSourceCell  
 </td>
 </tr>
 
@@ -300,18 +315,66 @@ returns values:
 <tr>
 <td>aTable</td>
 <td>A table in the document  
- @param aRowIndex, aColIndex     The 0-based cellmap indexes  
-returns values:  
- @param aCell                    The cell at this cellmap location  
- @param aStartRowIndex           The row index where cell starts  
- @param aStartColIndex           The col index where cell starts  
- @param aRowSpan                 May be 0 (to span down entire table) or number of cells spanned  
- @param aColSpan                 May be 0 (to span across entire table) or number of cells spanned  
- @param aActualRowSpan           The actual number of cellmap locations (rows) spanned by the cell  
- @param aActualColSpan           The actual number of cellmap locations (columns) spanned by the cell  
- @param aIsSelected  
- @param   
 </td>
+</tr>
+
+<tr>
+<td>aRowIndex,</td>
+<td>aColIndex     The 0-based cellmap indexes  
+returns values:  
+</td>
+</tr>
+
+<tr>
+<td>aCell</td>
+<td>The cell at this cellmap location  
+</td>
+</tr>
+
+<tr>
+<td>aStartRowIndex</td>
+<td>The row index where cell starts  
+</td>
+</tr>
+
+<tr>
+<td>aStartColIndex</td>
+<td>The col index where cell starts  
+</td>
+</tr>
+
+<tr>
+<td>aRowSpan</td>
+<td>May be 0 (to span down entire table) or number of cells spanned  
+</td>
+</tr>
+
+<tr>
+<td>aColSpan</td>
+<td>May be 0 (to span across entire table) or number of cells spanned  
+</td>
+</tr>
+
+<tr>
+<td>aActualRowSpan</td>
+<td>The actual number of cellmap locations (rows) spanned by the cell  
+</td>
+</tr>
+
+<tr>
+<td>aActualColSpan</td>
+<td>The actual number of cellmap locations (columns) spanned by the cell  
+</td>
+</tr>
+
+<tr>
+<td>aIsSelected</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
 </tr>
 
 </table>

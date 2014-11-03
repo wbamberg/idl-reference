@@ -21,6 +21,7 @@ def generator(lines):
            yield l
 
 def blockIsFinished(line):
+    line = line.lstrip()
     return lineIsEmpty(line) or line.startswith("@param") or line.startswith("@return")
 
 def createParamDoc(line, lines):

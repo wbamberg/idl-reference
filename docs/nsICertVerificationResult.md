@@ -39,10 +39,25 @@ layout: default
 <tr>
 <td>cert</td>
 <td>The certificate that was verified.  
- @param verified The certificate verification result,  
+</td>
+</tr>
+
+<tr>
+<td>verified</td>
+<td>The certificate verification result,  
         see constants in nsIX509Cert.  
- @param count The number of human readable usages returned.  
- @param usages The array of human readable usages.  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>The number of human readable usages returned.  
+</td>
+</tr>
+
+<tr>
+<td>usages</td>
+<td>The array of human readable usages.  
 </td>
 </tr>
 

@@ -33,8 +33,18 @@ that will be canceled because of improper cert status.
 <td>socketInfo</td>
 <td>A network communication context that can be used to obtain more information  
                    about the active connection.  
- @param status The SSL status object that describes the problem(s).  
- @param targetSite The Site name that was used to open the current connection.  
+</td>
+</tr>
+
+<tr>
+<td>status</td>
+<td>The SSL status object that describes the problem(s).  
+</td>
+</tr>
+
+<tr>
+<td>targetSite</td>
+<td>The Site name that was used to open the current connection.  
 </td>
 </tr>
 

@@ -31,8 +31,18 @@ A mechanism to report a broken SSL connection. The recipient should NOT block.
 <td>socketInfo</td>
 <td>A network communication context that can be used to obtain more information  
                    about the active connection.  
- @param error The code associated with the error.  
- @param targetSite The Site name that was used to open the current connection.  
+</td>
+</tr>
+
+<tr>
+<td>error</td>
+<td>The code associated with the error.  
+</td>
+</tr>
+
+<tr>
+<td>targetSite</td>
+<td>The Site name that was used to open the current connection.  
 </td>
 </tr>
 

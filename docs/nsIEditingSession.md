@@ -28,12 +28,27 @@ layout: default
 <tr>
 <td>aWindow</td>
 <td>nsIDOMWindow, the window the embedder needs to make editable  
- @param aEditorType string, "html" "htmlsimple" "text" "textsimple"  
- @param aMakeWholeDocumentEditable if PR_TRUE make the whole document in  
+</td>
+</tr>
+
+<tr>
+<td>aEditorType</td>
+<td>string, "html" "htmlsimple" "text" "textsimple"  
+</td>
+</tr>
+
+<tr>
+<td>aMakeWholeDocumentEditable</td>
+<td>if PR_TRUE make the whole document in  
                                    aWindow editable, otherwise it's the  
                                    embedder who should make the document  
                                    (or part of it) editable.  
- @param aInteractive if PR_FALSE turn off scripting and plugins  
+</td>
+</tr>
+
+<tr>
+<td>aInteractive</td>
+<td>if PR_FALSE turn off scripting and plugins  
 </td>
 </tr>
 

@@ -28,7 +28,17 @@ This represents a X.509 certificate.
 <tr>
 <td>length</td>
 <td>The number of strings in the returned array.  
- @return An array of email addresses.  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>An array of email addresses.  
 </td>
 </tr>
 
@@ -108,9 +118,24 @@ This represents a X.509 certificate.
 <td>localOnly</td>
 <td>Do not hit the network, even if revocation information  
                   downloading is currently activated.  
- @param verified The certificate verification result, see constants.  
- @param count The number of human readable usages returned.  
- @param usages The array of human readable usages.  
+</td>
+</tr>
+
+<tr>
+<td>verified</td>
+<td>The certificate verification result, see constants.  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>The number of human readable usages returned.  
+</td>
+</tr>
+
+<tr>
+<td>usages</td>
+<td>The array of human readable usages.  
 </td>
 </tr>
 
@@ -143,8 +168,18 @@ This represents a X.509 certificate.
 <td>localOnly</td>
 <td>Do not hit the network, even if revocation information  
                   downloading is currently activated.  
- @param verified The certificate verification result, see constants.  
- @param purposes The string listing the usages.  
+</td>
+</tr>
+
+<tr>
+<td>verified</td>
+<td>The certificate verification result, see constants.  
+</td>
+</tr>
+
+<tr>
+<td>purposes</td>
+<td>The string listing the usages.  
 </td>
 </tr>
 
@@ -166,7 +201,12 @@ This represents a X.509 certificate.
 <tr>
 <td>length</td>
 <td>The number of bytes in the binary encoding.  
- @param data The bytes representing the DER encoded certificate.  
+</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>The bytes representing the DER encoded certificate.  
 </td>
 </tr>
 
@@ -210,8 +250,18 @@ see CMS_CHAIN_MODE constants.
 <td>chainMode</td>
 <td>Whether to include the chain (with or without the root),  
 see CMS_CHAIN_MODE constants.  
- @param length The number of bytes of the PKCS#7 data.  
- @param data The bytes representing the PKCS#7 wrapped certificate.  
+</td>
+</tr>
+
+<tr>
+<td>length</td>
+<td>The number of bytes of the PKCS#7 data.  
+</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>The bytes representing the PKCS#7 wrapped certificate.  
 </td>
 </tr>
 

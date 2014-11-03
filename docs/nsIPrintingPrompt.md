@@ -97,7 +97,12 @@ layout: default
 <tr>
 <td>webBrowserPrint</td>
 <td>- represents the document to be printed  
- @param printSettings - PrintSettings for print "job"  
+</td>
+</tr>
+
+<tr>
+<td>printSettings</td>
+<td>- PrintSettings for print "job"  
 </td>
 </tr>
 
@@ -126,12 +131,42 @@ layout: default
 <tr>
 <td>webBrowserPrint</td>
 <td>- represents the document to be printed  
- @param printSettings - PrintSettings for print "job"  
- @param openDialogObserver - an observer that will be notifed when the dialog is opened  
- @param isForPrinting - true - for printing, false for print preview  
- @param webProgressListener - additional listener can be registered for progress notifications  
- @param printProgressParams - parameter object for passing progress state  
- @param notifyOnOpen - this indicates that the observer will be notified when the progress  
+</td>
+</tr>
+
+<tr>
+<td>printSettings</td>
+<td>- PrintSettings for print "job"  
+</td>
+</tr>
+
+<tr>
+<td>openDialogObserver</td>
+<td>- an observer that will be notifed when the dialog is opened  
+</td>
+</tr>
+
+<tr>
+<td>isForPrinting</td>
+<td>- true - for printing, false for print preview  
+</td>
+</tr>
+
+<tr>
+<td>webProgressListener</td>
+<td>- additional listener can be registered for progress notifications  
+</td>
+</tr>
+
+<tr>
+<td>printProgressParams</td>
+<td>- parameter object for passing progress state  
+</td>
+</tr>
+
+<tr>
+<td>notifyOnOpen</td>
+<td>- this indicates that the observer will be notified when the progress  
                        dialog has been opened. If false is returned it means the observer  
                        (usually the caller) shouldn't wait  
                        For Print Preview Progress there is intermediate progress  
@@ -157,7 +192,12 @@ layout: default
 <tr>
 <td>printSettings</td>
 <td>- PrintSettings for page setup (required)  
- @param aObs - An observer to know if the contents of the Print Settings   
+</td>
+</tr>
+
+<tr>
+<td>aObs</td>
+<td>- An observer to know if the contents of the Print Settings   
                object has changed while the dialog is being shown.   
                For example, some platforms may implement an "Apply" button (not required)  
 </td>
@@ -183,7 +223,12 @@ layout: default
 <tr>
 <td>printerName</td>
 <td>- name of printer (required)  
- @param printSettings - PrintSettings for page setup (required)  
+</td>
+</tr>
+
+<tr>
+<td>printSettings</td>
+<td>- PrintSettings for page setup (required)  
 </td>
 </tr>
 

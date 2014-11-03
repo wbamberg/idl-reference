@@ -33,8 +33,18 @@ Functions that implement user interface dialogs to manage certificates.
 <tr>
 <td>ctx</td>
 <td>A user interface context.  
- @param cert The certificate that is about to get installed.  
- @param trust a bit mask of trust flags,   
+</td>
+</tr>
+
+<tr>
+<td>cert</td>
+<td>The certificate that is about to get installed.  
+</td>
+</tr>
+
+<tr>
+<td>trust</td>
+<td>a bit mask of trust flags,   
               see nsIX509CertDB for possible values.  
 </td>
 </tr>
@@ -96,7 +106,12 @@ Functions that implement user interface dialogs to manage certificates.
 <tr>
 <td>ctx</td>
 <td>A user interface context.  
- @param password The password provided by the user.  
+</td>
+</tr>
+
+<tr>
+<td>password</td>
+<td>The password provided by the user.  
 </td>
 </tr>
 
@@ -133,7 +148,12 @@ Functions that implement user interface dialogs to manage certificates.
 <tr>
 <td>ctx</td>
 <td>A user interface context.  
- @param password The password provided by the user.  
+</td>
+</tr>
+
+<tr>
+<td>password</td>
+<td>The password provided by the user.  
 </td>
 </tr>
 
@@ -167,7 +187,12 @@ Functions that implement user interface dialogs to manage certificates.
 <tr>
 <td>ctx</td>
 <td>A user interface context.  
- @param cert The certificate to be shown to the user.  
+</td>
+</tr>
+
+<tr>
+<td>cert</td>
+<td>The certificate to be shown to the user.  
 </td>
 </tr>
 

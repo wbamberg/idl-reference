@@ -36,10 +36,25 @@ that the user wants to accept without further warnings.
 <tr>
 <td>aHostName</td>
 <td>The host (punycode) this mapping belongs to  
- @param aPort The port this mapping belongs to, if it is -1 then it   
+</td>
+</tr>
+
+<tr>
+<td>aPort</td>
+<td>The port this mapping belongs to, if it is -1 then it   
          is internaly treated as 443  
- @param aCert The cert that should always be accepted  
- @param aOverrideBits The errors we want to be overriden  
+</td>
+</tr>
+
+<tr>
+<td>aCert</td>
+<td>The cert that should always be accepted  
+</td>
+</tr>
+
+<tr>
+<td>aOverrideBits</td>
+<td>The errors we want to be overriden  
 </td>
 </tr>
 
@@ -69,11 +84,36 @@ that the user wants to accept without further warnings.
 <tr>
 <td>aHostName</td>
 <td>The host (punycode) this mapping belongs to  
- @param aPort The port this mapping belongs to, if it is -1 then it   
+</td>
+</tr>
+
+<tr>
+<td>aPort</td>
+<td>The port this mapping belongs to, if it is -1 then it   
          is internaly treated as 443  
- @param aCert The cert that should always be accepted  
- @param aOverrideBits The errors that are currently overriden  
- @return whether an override entry for aHostNameWithPort is currently on file  
+</td>
+</tr>
+
+<tr>
+<td>aCert</td>
+<td>The cert that should always be accepted  
+</td>
+</tr>
+
+<tr>
+<td>aOverrideBits</td>
+<td>The errors that are currently overriden  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether an override entry for aHostNameWithPort is currently on file  
          that matches the given certificate  
 </td>
 </tr>
@@ -102,13 +142,43 @@ that the user wants to accept without further warnings.
 <tr>
 <td>aHostName</td>
 <td>The host (punycode) whose entry should be tested  
- @param aPort The port whose entry should be tested, if it is -1 then it   
+</td>
+</tr>
+
+<tr>
+<td>aPort</td>
+<td>The port whose entry should be tested, if it is -1 then it   
          is internaly treated as 443  
- @param aHashAlg On return value True, the fingerprint hash algorithm  
+</td>
+</tr>
+
+<tr>
+<td>aHashAlg</td>
+<td>On return value True, the fingerprint hash algorithm  
                  as an OID value in dotted notation.  
- @param aFingerprint On return value True, the stored fingerprint   
- @param aOverrideBits The errors that are currently overriden  
- @return whether a matching override entry for aHostNameWithPort   
+</td>
+</tr>
+
+<tr>
+<td>aFingerprint</td>
+<td>On return value True, the stored fingerprint   
+</td>
+</tr>
+
+<tr>
+<td>aOverrideBits</td>
+<td>The errors that are currently overriden  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>whether a matching override entry for aHostNameWithPort   
          and aFingerprint is currently on file  
 </td>
 </tr>
@@ -133,7 +203,12 @@ that the user wants to accept without further warnings.
 <tr>
 <td>aHostName</td>
 <td>The host (punycode) whose entry should be cleared.  
- @param aPort The port whose entry should be cleared.  
+</td>
+</tr>
+
+<tr>
+<td>aPort</td>
+<td>The port whose entry should be cleared.  
               If it is -1, then it is internaly treated as 443.  
               If it is 0 and aHostName is "all:temporary-certificates",  
               then all temporary certificates should be cleared.  
@@ -157,7 +232,12 @@ that the user wants to accept without further warnings.
 <tr>
 <td>aCount</td>
 <td>The number of host:port entries returned  
- @param aHostsWithPortsArray The array of host:port entries returned  
+</td>
+</tr>
+
+<tr>
+<td>aHostsWithPortsArray</td>
+<td>The array of host:port entries returned  
 </td>
 </tr>
 
@@ -179,7 +259,17 @@ that the user wants to accept without further warnings.
 <tr>
 <td>aCert</td>
 <td>The cert we're looking for  
- @return how many override entries are currently on file  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>how many override entries are currently on file  
          for the given certificate  
 </td>
 </tr>

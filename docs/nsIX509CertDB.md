@@ -36,7 +36,12 @@ X.509 certificates stored in a database.
 <td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
- @param aNickname The nickname to be used as the key  
+</td>
+</tr>
+
+<tr>
+<td>aNickname</td>
+<td>The nickname to be used as the key  
                   to find a certificate.  
 </td>
 </tr>
@@ -75,7 +80,12 @@ X.509 certificates stored in a database.
 <td>aDBkey</td>
 <td>Database internal key, as obtained using  
                attribute dbkey in nsIX509Cert.  
- @param aToken Optionally limits the scope of  
+</td>
+</tr>
+
+<tr>
+<td>aToken</td>
+<td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
 </td>
@@ -108,10 +118,25 @@ X.509 certificates stored in a database.
 <td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
- @param aType Type of certificate to obtain  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>Type of certificate to obtain  
               See certificate type constants in nsIX509Cert.  
- @param count The number of nicknames in the returned array  
- @param certNameList The returned array of certificate nicknames.  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>The number of nicknames in the returned array  
+</td>
+</tr>
+
+<tr>
+<td>certNameList</td>
+<td>The returned array of certificate nicknames.  
 </td>
 </tr>
 
@@ -207,7 +232,12 @@ X.509 certificates stored in a database.
 <td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
- @param aEmailAddress The email address to be used as the key  
+</td>
+</tr>
+
+<tr>
+<td>aEmailAddress</td>
+<td>The email address to be used as the key  
                       to find the certificate.  
 </td>
 </tr>
@@ -244,9 +274,24 @@ X.509 certificates stored in a database.
 <tr>
 <td>data</td>
 <td>The raw data to be imported  
- @param length The length of the data to be imported  
- @param type The type of the certificate, see constants in nsIX509Cert  
- @param ctx A UI context.  
+</td>
+</tr>
+
+<tr>
+<td>length</td>
+<td>The length of the data to be imported  
+</td>
+</tr>
+
+<tr>
+<td>type</td>
+<td>The type of the certificate, see constants in nsIX509Cert  
+</td>
+</tr>
+
+<tr>
+<td>ctx</td>
+<td>A UI context.  
 </td>
 </tr>
 
@@ -268,8 +313,18 @@ X.509 certificates stored in a database.
 <tr>
 <td>data</td>
 <td>The raw data to be imported  
- @param length The length of the data to be imported  
- @param ctx A UI context.  
+</td>
+</tr>
+
+<tr>
+<td>length</td>
+<td>The length of the data to be imported  
+</td>
+</tr>
+
+<tr>
+<td>ctx</td>
+<td>A UI context.  
 </td>
 </tr>
 
@@ -291,8 +346,18 @@ X.509 certificates stored in a database.
 <tr>
 <td>data</td>
 <td>The raw data to be imported  
- @param length The length of the data to be imported  
- @param ctx A UI context.  
+</td>
+</tr>
+
+<tr>
+<td>length</td>
+<td>The length of the data to be imported  
+</td>
+</tr>
+
+<tr>
+<td>ctx</td>
+<td>A UI context.  
 </td>
 </tr>
 
@@ -315,8 +380,18 @@ X.509 certificates stored in a database.
 <tr>
 <td>data</td>
 <td>The raw data to be imported  
- @param length The length of the data to be imported  
- @param ctx A UI context.  
+</td>
+</tr>
+
+<tr>
+<td>length</td>
+<td>The length of the data to be imported  
+</td>
+</tr>
+
+<tr>
+<td>ctx</td>
+<td>A UI context.  
 </td>
 </tr>
 
@@ -361,8 +436,18 @@ X.509 certificates stored in a database.
 <tr>
 <td>cert</td>
 <td>Change the stored trust of this certificate.  
- @param type The type of the certificate. See nsIX509Cert.  
- @param trust A bitmask. The new trust for the possible usages.  
+</td>
+</tr>
+
+<tr>
+<td>type</td>
+<td>The type of the certificate. See nsIX509Cert.  
+</td>
+</tr>
+
+<tr>
+<td>trust</td>
+<td>A bitmask. The new trust for the possible usages.  
               See the trust constants defined within this interface.  
 </td>
 </tr>
@@ -416,8 +501,18 @@ X.509 certificates stored in a database.
 <tr>
 <td>cert</td>
 <td>Obtain the stored trust of this certificate.  
- @param certType The type of the certificate. See nsIX509Cert.  
- @param trustType A single bit from the usages constants defined  
+</td>
+</tr>
+
+<tr>
+<td>certType</td>
+<td>The type of the certificate. See nsIX509Cert.  
+</td>
+</tr>
+
+<tr>
+<td>trustType</td>
+<td>A single bit from the usages constants defined  
                   within this interface.  
 </td>
 </tr>
@@ -457,9 +552,19 @@ X.509 certificates stored in a database.
 <td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
- @param aFile Identifies a file that contains the certificate  
+</td>
+</tr>
+
+<tr>
+<td>aFile</td>
+<td>Identifies a file that contains the certificate  
               to be imported.  
- @param aType Describes the type of certificate that is going to  
+</td>
+</tr>
+
+<tr>
+<td>aType</td>
+<td>Describes the type of certificate that is going to  
               be imported. See type constants in nsIX509Cert.  
 </td>
 </tr>
@@ -486,7 +591,12 @@ X.509 certificates stored in a database.
 <td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
- @param aFile Identifies a file that contains the data  
+</td>
+</tr>
+
+<tr>
+<td>aFile</td>
+<td>Identifies a file that contains the data  
               to be imported.  
 </td>
 </tr>
@@ -515,10 +625,25 @@ X.509 certificates stored in a database.
 <td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
- @param aFile Identifies a file that will be filled with the data  
+</td>
+</tr>
+
+<tr>
+<td>aFile</td>
+<td>Identifies a file that will be filled with the data  
               to be exported.  
- @param count The number of certificates to be exported.  
- @param aCerts The array of all certificates to be exported.  
+</td>
+</tr>
+
+<tr>
+<td>count</td>
+<td>The number of certificates to be exported.  
+</td>
+</tr>
+
+<tr>
+<td>aCerts</td>
+<td>The array of all certificates to be exported.  
 </td>
 </tr>
 
@@ -571,11 +696,41 @@ was issued by the given trusted root.
 <tr>
 <td>aCert</td>
 <td>Obtain the stored trust of this certificate  
- @param aUsage a integer representing the usage from NSS  
- @param aFlags flags as described above  
- @param verifedChain chain of verification up to the root if success  
- @param aHasEVPolicy bool that signified that the cert was an EV cert  
- @return 0 if success or the value or the error code for the verification  
+</td>
+</tr>
+
+<tr>
+<td>aUsage</td>
+<td>a integer representing the usage from NSS  
+</td>
+</tr>
+
+<tr>
+<td>aFlags</td>
+<td>flags as described above  
+</td>
+</tr>
+
+<tr>
+<td>verifedChain</td>
+<td>chain of verification up to the root if success  
+</td>
+</tr>
+
+<tr>
+<td>aHasEVPolicy</td>
+<td>bool that signified that the cert was an EV cert  
+</td>
+</tr>
+
+</table>
+
+#### Returns ####
+
+<table>
+
+<tr>
+<td>0 if success or the value or the error code for the verification  
          failure  
 </td>
 </tr>

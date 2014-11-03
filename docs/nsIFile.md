@@ -569,8 +569,12 @@ responsible for calling PR_UnloadLibrary on the result.
 <tr>
 <td>fromFile</td>
 <td>      the file to which the descriptor is relative  
-  @param relative  
-      the relative descriptor obtained from getRelativeDescriptor  
+</td>
+</tr>
+
+<tr>
+<td>relative</td>
+<td>      the relative descriptor obtained from getRelativeDescriptor  
 </td>
 </tr>
 

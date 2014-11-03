@@ -258,7 +258,12 @@ selection is collapsed. Use this function to show the caret even in selections.
 <tr>
 <td>aForward</td>
 <td>forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+<tr>
+<td>aExtend</td>
+<td>should it collapse the selection of extend it?  
 </td>
 </tr>
 
@@ -295,7 +300,12 @@ after UTF-16 surrogates.
 <tr>
 <td>aForward</td>
 <td>forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+<tr>
+<td>aExtend</td>
+<td>should it collapse the selection of extend it?  
 </td>
 </tr>
 
@@ -335,7 +345,12 @@ after UTF-16 surrogates.
 <tr>
 <td>aForward</td>
 <td>forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+<tr>
+<td>aExtend</td>
+<td>should it collapse the selection of extend it?  
 </td>
 </tr>
 
@@ -358,7 +373,12 @@ after UTF-16 surrogates.
 <tr>
 <td>aForward</td>
 <td>forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+<tr>
+<td>aExtend</td>
+<td>should it collapse the selection of extend it?  
 </td>
 </tr>
 
@@ -380,7 +400,12 @@ after UTF-16 surrogates.
 <tr>
 <td>aForward</td>
 <td>forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+<tr>
+<td>aExtend</td>
+<td>should it collapse the selection of extend it?  
 </td>
 </tr>
 
@@ -419,7 +444,12 @@ after UTF-16 surrogates.
 <tr>
 <td>aForward</td>
 <td>forward or backward if PR_FALSE  
- @param aExtend  should it collapse the selection of extend it?  
+</td>
+</tr>
+
+<tr>
+<td>aExtend</td>
+<td>should it collapse the selection of extend it?  
 </td>
 </tr>
 
@@ -496,9 +526,24 @@ after UTF-16 surrogates.
 <tr>
 <td>aNode</td>
 <td>textNode to test  
- @param aStartOffset  offset in dom to first char of textnode to test  
- @param aEndOffset    offset in dom to last char of textnode to test  
- @param aReturnBool   boolean returned TRUE if visible FALSE if not  
+</td>
+</tr>
+
+<tr>
+<td>aStartOffset</td>
+<td>offset in dom to first char of textnode to test  
+</td>
+</tr>
+
+<tr>
+<td>aEndOffset</td>
+<td>offset in dom to last char of textnode to test  
+</td>
+</tr>
+
+<tr>
+<td>aReturnBool</td>
+<td>boolean returned TRUE if visible FALSE if not  
 </td>
 </tr>
 
