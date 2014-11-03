@@ -10,11 +10,11 @@ layout: default
 ## Methods ##
 
 ### showInlineTableEditingUI(aCell) ###
-<code>  
+  
 Shows inline table editing UI around a table cell  
 @param aCell [IN] a DOM Element being a table cell, td or th  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -28,17 +28,17 @@ Shows inline table editing UI around a table cell
 </table>
 
 ### hideInlineTableEditingUI() ###
-<code>  
+  
 Hide all inline table editing UI  
   
-</code>
+
 ### doInlineTableEditingAction(aUIAnonymousElement) ###
-<code>  
+  
 Modifies the table containing the selection according to the  
 activation of an inline table editing UI element  
 @param aUIAnonymousElement [IN] the inline table editing UI element  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -52,10 +52,10 @@ activation of an inline table editing UI element
 </table>
 
 ### refreshInlineTableEditingUI() ###
-<code>  
+  
 Refresh already visible inline table editing UI  
   
-</code>
+
 ## Attributes ##
 
 ### inlineTableEditingEnabled ###

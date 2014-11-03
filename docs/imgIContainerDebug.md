@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # imgIContainerDebug #
-<code>  
+  
 This interface is used in debug builds (and only there) in  
 order to let automatic tests running JavaScript access  
 internal state of imgContainers. This lets us test  
 things like animation.  
   
-</code>
+
 ## Attributes ##
 
 ### framesNotified ###

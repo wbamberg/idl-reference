@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # amIInstallCallback #
-<code>  
+  
 A callback function used to notify webpages when a requested install has  
 ended.  
   
 NOTE: This is *not* the same as InstallListener.  
   
-</code>
+
 ## Methods ##
 
 ### onInstallEnded(aUrl, aStatus) ###
-<code>  
+  
 Called when an install completes or fails.  
   
 @param  aUrl  
@@ -24,7 +24,7 @@ Called when an install completes or fails.
 @param  aStatus  
         0 if the install was successful or negative if not  
   
-</code>
+
 #### Parameters ####
 
 <table>

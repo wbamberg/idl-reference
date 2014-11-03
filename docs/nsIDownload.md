@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDownload #
-<code>  
+  
 Represents a download object.  
   
 @note This object is no longer updated once it enters a completed state.  
@@ -18,30 +18,30 @@ Represents a download object.
       nsIDownloadManager::DOWNLOAD_DIRTY   
       nsIDownloadManager::DOWNLOAD_BLOCKED_POLICY   
   
-</code>
+
 ## Methods ##
 
 ### cancel() ###
-<code>  
+  
 Cancel this download if it's currently in progress.  
   
-</code>
+
 ### pause() ###
-<code>  
+  
 Pause this download if it is in progress.  
   
 @throws NS_ERROR_UNEXPECTED if it cannot be paused.  
   
-</code>
+
 ### resume() ###
-<code>  
+  
 Resume this download if it is paused.  
   
 @throws NS_ERROR_UNEXPECTED if it cannot be resumed or is not paused.  
   
-</code>
+
 ### remove() ###
-<code>  
+  
 Instruct the download manager to remove this download. Whereas  
 cancel simply cancels the transfer, but retains information about it,  
 remove removes all knowledge of it.  
@@ -49,16 +49,16 @@ remove removes all knowledge of it.
 @see nsIDownloadManager.removeDownload for more detail  
 @throws NS_ERROR_FAILURE if the download is active.  
   
-</code>
+
 ### retry() ###
-<code>  
+  
 Instruct the download manager to retry this failed download  
 @throws NS_ERROR_NOT_AVAILABLE if the download is not known.  
 @throws NS_ERROR_FAILURE if the download is not in the following states:  
         nsIDownloadManager::DOWNLOAD_CANCELED  
         nsIDownloadManager::DOWNLOAD_FAILED  
   
-</code>
+
 ## Attributes ##
 
 ### targetFile ###

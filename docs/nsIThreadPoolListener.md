@@ -10,14 +10,13 @@ layout: default
 ## Methods ##
 
 ### onThreadCreated() ###
-<code>  
+  
 Called when a new thread is created by the thread pool. The notification  
 happens on the newly-created thread.  
   
-</code>
+
 ### onThreadShuttingDown() ###
-<code>  
+  
 Called when a thread is about to be destroyed by the thread pool. The  
 notification happens on the thread that is about to be destroyed.  
   
-</code>

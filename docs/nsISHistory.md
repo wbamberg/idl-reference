@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISHistory #
-<code>  
+  
 An interface to the primary properties of the Session History  
 component. In an embedded browser environment, the nsIWebBrowser  
 object creates an instance of session history for each open window.  
@@ -16,11 +16,11 @@ session history component must create a instance of it and set
 it in the nsIWebNavigation object.  
 This interface is accessible from javascript.  
   
-</code>
+
 ## Methods ##
 
 ### getEntryAtIndex(index, modifyIndex) ###
-<code>  
+  
 Called to obtain handle to the history entry at a  
 given index.  
   
@@ -35,7 +35,7 @@ given index.
                          <code>NS_ERROR_FAILURE</code> Error in obtaining  
                          history entry for the given index.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -72,7 +72,7 @@ given index.
 </table>
 
 ### PurgeHistory(numEntries) ###
-<code>  
+  
 Called to purge older documents from history.  
 Documents can be removed from session history for various   
 reasons. For example to  control memory usage of the browser, to   
@@ -88,7 +88,7 @@ prior page loads etc...
                          invalid or out of bounds with the size of history.  
                            
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -108,7 +108,7 @@ prior page loads etc...
 </table>
 
 ### addSHistoryListener(aListener) ###
-<code>  
+  
 Called to register a listener for the session history component.  
 Listeners are notified when pages are loaded or purged from history.  
   
@@ -121,7 +121,7 @@ Listeners are notified when pages are loaded or purged from history.
 @see nsISHistoryListener  
 @see nsSupportsWeakReference  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -136,7 +136,7 @@ Listeners are notified when pages are loaded or purged from history.
 </table>
 
 ### removeSHistoryListener(aListener) ###
-<code>  
+  
 Called to remove a listener for the session history component.  
 Listeners are notified when pages are loaded from history.  
   
@@ -148,7 +148,7 @@ Listeners are notified when pages are loaded from history.
 @see nsISHistoryListener  
 @see nsSupportsWeakReference  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -165,7 +165,7 @@ Listeners are notified when pages are loaded from history.
 ### reloadCurrentEntry() ###
 
 ### getIndexOfEntry(aEntry) ###
-<code>  
+  
 Called to obtain the index to a given history entry.  
   
 @param aEntry            The entry to obtain the index of.  
@@ -175,7 +175,7 @@ Called to obtain the index to a given history entry.
                          <code>NS_ERROR_FAILURE</code> Error in obtaining  
                          index for the given history entry.  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### addEntry(aEntry, aPersist) ###
-<code>  
+  
 Add a new Entry to the History List  
 @param aEntry - The entry to add  
 @param aPersist - If true this specifies that the entry should persist  
 in the list.  If false, this means that when new entries are added  
 this element will not appear in the session history list.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -39,17 +39,17 @@ this element will not appear in the session history list.
 </table>
 
 ### updateIndex() ###
-<code>   
+   
 Update the index maintained by sessionHistory  
   
-</code>
+
 ### replaceEntry(aIndex, aReplaceEntry) ###
-<code>  
+  
 Replace the nsISHEntry at a particular index  
 @param aIndex - The index at which the entry should be replaced  
 @param aReplaceEntry - The replacement entry for the index.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -69,7 +69,7 @@ Replace the nsISHEntry at a particular index
 </table>
 
 ### notifyOnHistoryReload(aReloadURI, aReloadFlags) ###
-<code>  
+  
 Notifies all registered session history listeners about an impending  
 reload.  
   
@@ -79,7 +79,7 @@ reload.
                      interface.  
 @return              Whether the operation can proceed.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -112,7 +112,7 @@ reload.
 </table>
 
 ### evictOutOfRangeContentViewers(aIndex) ###
-<code>  
+  
 Evict content viewers which don't lie in the "safe" range around aIndex.  
 In practice, this should leave us with no more than gHistoryMaxViewers  
 viewers associated with this SHistory object.  
@@ -124,7 +124,7 @@ not greater than our global max; if it is, evict viewers as appropriate.
   general, if you just navigated the history, aIndex should be the index  
   history was navigated to.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -140,22 +140,22 @@ not greater than our global max; if it is, evict viewers as appropriate.
 </table>
 
 ### evictExpiredContentViewerForEntry(aEntry) ###
-<code>  
+  
 Evict the content viewer associated with a bfcache entry  
 that has timed out.  
   
-</code>
+
 ### evictAllContentViewers() ###
-<code>  
+  
 Evict all the content viewers in this session history  
   
-</code>
+
 ### RemoveEntries(aIDs, aStartIndex) ###
-<code>  
+  
 Removes entries from the history if their docshellID is in  
 aIDs array.  
   
-</code>
+
 ## Attributes ##
 
 ### rootTransaction ###

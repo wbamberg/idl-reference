@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIObjectInputStream #
-<code>  
+  
 @see nsIObjectOutputStream  
 @see nsIBinaryInputStream  
   
-</code>
+
 ## Methods ##
 
 ### readObject(aIsStrongRef) ###
-<code>  
+  
 Read an object from this stream to satisfy a strong or weak reference  
 to one of its interfaces.  If the interface was not along the primary  
 inheritance chain ending in the "root" or XPCOM-identity nsISupports,  
@@ -23,12 +23,12 @@ correct interface, which was specified when the object was serialized.
   
 @see nsIObjectOutputStream  
   
-</code>
+
 ### readID(aID) ###
 
 ### getBuffer(aLength, aAlignMask) ###
-<code>  
+  
 Optimized deserialization support -- see nsIStreamBufferAccess.idl.  
   
-</code>
+
 ### putBuffer(aBuffer, aLength) ###

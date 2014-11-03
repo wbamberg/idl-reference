@@ -10,10 +10,10 @@ layout: default
 ## Methods ##
 
 ### setupDataCallByType(apntype) ###
-<code>  
+  
 PDP APIs  
   
-</code>
+
 ### deactivateDataCallByType(apntype) ###
 
 ### getDataCallStateByType(apntype) ###
@@ -21,10 +21,10 @@ PDP APIs
 ### updateRILNetworkInterface() ###
 
 ### getSegmentInfoForText(text, request) ###
-<code>  
+  
 SMS-related functionality.  
   
-</code>
+
 ### sendSMS(number, message, silent, request) ###
 
 ### sendWorkerMessage(type, message, callback) ###

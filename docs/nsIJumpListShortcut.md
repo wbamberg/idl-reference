@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIJumpListShortcut #
-<code>  
+  
 A generic application shortcut with command line support.  
   
-</code>
+
 ## Attributes ##
 
 ### app ###

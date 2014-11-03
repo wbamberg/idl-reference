@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIFeedElementBase #
-<code>  
+  
  An nsIFeedGenerator represents the software used to create a feed.  
   
-</code>
+
 ## Attributes ##
 
 ### attributes ###

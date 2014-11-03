@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsINativeOSFileResult #
-<code>  
+  
 The result of a successful asynchronous operation.  
   
-</code>
+
 ## Attributes ##
 
 ### result ###

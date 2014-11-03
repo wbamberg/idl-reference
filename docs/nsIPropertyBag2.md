@@ -28,18 +28,17 @@ layout: default
 ### getPropertyAsBool(prop) ###
 
 ### getPropertyAsInterface(prop, iid, result) ###
-<code>  
+  
 This method returns null if the value exists, but is null.  
   
-</code>
+
 ### get(prop) ###
-<code>  
+  
 This method returns null if the value does not exist,  
 or exists but is null.  
   
-</code>
+
 ### hasKey(prop) ###
-<code>  
+  
 Check for the existence of a key.  
   
-</code>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINetworkService #
-<code>  
+  
 Provide network services.  
   
-</code>
+
 ## Methods ##
 
 ### setWifiTethering(enabled, config, callback) ###
-<code>  
+  
 Enable or disable Wifi Tethering  
   
 @param enabled  
@@ -23,7 +23,7 @@ Enable or disable Wifi Tethering
 @param callback  
        Callback function used to report status to WifiManager.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -49,7 +49,7 @@ Enable or disable Wifi Tethering
 </table>
 
 ### setDhcpServer(enabled, config, callback) ###
-<code>  
+  
 Enable or disable DHCP server  
   
 @param enabled  
@@ -68,7 +68,7 @@ Enable or disable DHCP server
 @param callback  
        Callback function used to report status.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -99,7 +99,7 @@ Enable or disable DHCP server
 </table>
 
 ### getNetworkInterfaceStats(networkName, callback) ###
-<code>  
+  
 Retrieve network interface stats.  
   
 @param networkName  
@@ -109,7 +109,7 @@ Retrieve network interface stats.
        Callback to notify result and provide stats, connectionType  
        and the date when stats are retrieved  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -130,7 +130,7 @@ Retrieve network interface stats.
 </table>
 
 ### setNetworkInterfaceAlarm(networkName, threshold, callback) ###
-<code>  
+  
 Set Alarm of usage per interface  
   
 @param networkName  
@@ -144,7 +144,7 @@ Set Alarm of usage per interface
   
 @return false if there is no interface registered for the networkType param.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -181,7 +181,7 @@ Set Alarm of usage per interface
 </table>
 
 ### setWifiOperationMode(interfaceName, mode, callback) ###
-<code>  
+  
 Reload Wifi firmware to specific operation mode.  
   
 @param interfaceName  
@@ -195,7 +195,7 @@ Reload Wifi firmware to specific operation mode.
 @param callback  
        Callback to notify Wifi firmware reload result.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -223,14 +223,14 @@ Reload Wifi firmware to specific operation mode.
 </table>
 
 ### setNetworkProxy(networkInterface) ###
-<code>  
+  
 Set http proxy for specific network  
   
 @param networkInterface  
        The network interface which contains the http proxy host/port  
        we want to set.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -245,7 +245,7 @@ Set http proxy for specific network
 </table>
 
 ### setUSBTethering(enabled, config, callback) ###
-<code>  
+  
 Set USB tethering.  
   
 @param enabled  
@@ -255,7 +255,7 @@ Set USB tethering.
 @param callback  
        Callback function used to report the result enabling/disabling usb tethering.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -281,13 +281,13 @@ Set USB tethering.
 </table>
 
 ### resetRoutingTable(networkInterface) ###
-<code>  
+  
 Reset routing table.  
   
 @param networkInterface  
        The network interface we want remove from the routing table.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -301,7 +301,7 @@ Reset routing table.
 </table>
 
 ### setDNS(networkInterface, callback) ###
-<code>  
+  
 Set DNS.  
   
 @param networkInterface  
@@ -310,7 +310,7 @@ Set DNS.
 @param callback  
        Callback to notify the result of setting DNS server.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -330,7 +330,7 @@ Set DNS.
 </table>
 
 ### setDefaultRoute(networkInterface, oldInterface, callback) ###
-<code>  
+  
 Set default route.  
   
 @param networkInterface  
@@ -340,7 +340,7 @@ Set default route.
 @param callback  
        Callback to notify the result of setting default route.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -366,13 +366,13 @@ Set default route.
 </table>
 
 ### removeDefaultRoute(networkInterface) ###
-<code>  
+  
 Remove default route.  
   
 @param networkInterface  
        The network interface we want remove from the default route.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -386,7 +386,7 @@ Remove default route.
 </table>
 
 ### addHostRoute(interfaceName, gateway, host) ###
-<code>  
+  
 Add host route.  
   
 @param interfaceName  
@@ -399,7 +399,7 @@ Add host route.
 @return A deferred promise that resolves on success or rejects with a  
         specified reason otherwise.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -437,7 +437,7 @@ Add host route.
 </table>
 
 ### removeHostRoute(interfaceName, gateway, host) ###
-<code>  
+  
 Remove host route.  
   
 @param interfaceName  
@@ -450,7 +450,7 @@ Remove host route.
 @return A deferred promise that resolves on success or rejects with a  
         specified reason otherwise.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -488,13 +488,13 @@ Remove host route.
 </table>
 
 ### removeHostRoutes(interfaceName) ###
-<code>  
+  
 Remove all host routes.  
   
 @param interfaceName  
        The interface name we want remove from the routing table.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -508,7 +508,7 @@ Remove all host routes.
 </table>
 
 ### addSecondaryRoute(interfaceName, route) ###
-<code>  
+  
 Add route to secondary routing table.  
   
 @param interfaceName  
@@ -519,7 +519,7 @@ Add route to secondary routing table.
        .prefix: destination prefix  
        .gateway: gateway ip address  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -542,7 +542,7 @@ Add route to secondary routing table.
 </table>
 
 ### removeSecondaryRoute(interfaceName, route) ###
-<code>  
+  
 Remove route from secondary routing table.  
   
 @param interfaceName  
@@ -553,7 +553,7 @@ Remove route from secondary routing table.
        .prefix: destination prefix  
        .gateway: gateway ip address  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -576,7 +576,7 @@ Remove route from secondary routing table.
 </table>
 
 ### enableUsbRndis(enable, callback) ###
-<code>  
+  
 Enable or disable usb rndis.  
   
 @param enable  
@@ -584,7 +584,7 @@ Enable or disable usb rndis.
 @param callback  
        Callback function to report the result.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -604,7 +604,7 @@ Enable or disable usb rndis.
 </table>
 
 ### updateUpStream(previous, current, callback) ###
-<code>  
+  
 Update upstream.  
   
 @param previous  
@@ -614,7 +614,7 @@ Update upstream.
 @param callback  
        Callback function to report the result.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -640,7 +640,7 @@ Update upstream.
 </table>
 
 ### configureInterface(config, callback) ###
-<code>  
+  
 Configure a network interface.  
   
 @param config  
@@ -656,7 +656,7 @@ Configure a network interface.
 @param callback  
        Callback to notify the result of configurating network interface.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -676,7 +676,7 @@ Configure a network interface.
 </table>
 
 ### dhcpRequest(interfaceName, callback) ###
-<code>  
+  
 Issue a DHCP client request.  
   
 @param networkInterface  
@@ -685,7 +685,7 @@ Issue a DHCP client request.
 @param callback  
        Callback to notify the result of the DHCP request.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -705,7 +705,7 @@ Issue a DHCP client request.
 </table>
 
 ### enableInterface(interfaceName, callback) ###
-<code>  
+  
 Enable a network interface.  
   
 @param networkInterface  
@@ -714,7 +714,7 @@ Enable a network interface.
 @param callback  
        Callback to notify the result of disabling network interface.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -734,7 +734,7 @@ Enable a network interface.
 </table>
 
 ### disableInterface(interfaceName, callback) ###
-<code>  
+  
 Disable a network interface.  
   
 @param networkInterface  
@@ -743,7 +743,7 @@ Disable a network interface.
 @param callback  
        Callback to notify the result of disabling network interface.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -763,7 +763,7 @@ Disable a network interface.
 </table>
 
 ### resetConnections(interfaceName, callback) ###
-<code>  
+  
 Reset all connections  
   
 @param networkInterface  
@@ -772,7 +772,7 @@ Reset all connections
 @param callback  
        Callback to notify the result of resetting connections.  
   
-</code>
+
 #### Parameters ####
 
 <table>

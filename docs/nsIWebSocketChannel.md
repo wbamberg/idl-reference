@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIWebSocketChannel #
-<code>  
+  
 Low-level websocket API: handles network protocol.    
   
 This is primarly intended for use by the higher-level nsIWebSocket.idl.  
 We are also making it scriptable for now, but this may change once we have  
 WebSockets for Workers.  
   
-</code>
+
 ## Methods ##
 
 ### asyncOpen(aURI, aOrigin, aListener, aContext) ###
-<code>  
+  
 Asynchronously open the websocket connection.  Received messages are fed  
 to the socket listener as they arrive.  The socket listener's methods  
 are called on the thread that calls asyncOpen and are not called until  
@@ -32,7 +32,7 @@ websocket connection is reopened.
 @param aListener the nsIWebSocketListener implementation  
 @param aContext an opaque parameter forwarded to aListener's methods  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -66,12 +66,12 @@ websocket connection is reopened.
 ### close(aCode, aReason) ###
 
 ### sendMsg(aMsg) ###
-<code>  
+  
 Use to send text message down the connection to WebSocket peer.  
   
 @param aMsg the utf8 string to send  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -85,12 +85,12 @@ Use to send text message down the connection to WebSocket peer.
 </table>
 
 ### sendBinaryMsg(aMsg) ###
-<code>  
+  
 Use to send binary message down the connection to WebSocket peer.  
   
 @param aMsg the data to send  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -104,12 +104,12 @@ Use to send binary message down the connection to WebSocket peer.
 </table>
 
 ### sendBinaryStream(aStream, length) ###
-<code>   
+   
 Use to send a binary stream (Blob) to Websocket peer.  
   
 @param aStream The input stream to be sent.    
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### isAllowed(aAction, aUri) ###
-<code>  
+  
 Check if the user can do the prescibed action for this uri.  
   
 @param aAction             Action being performed  
 @param aUri                The uri requesting this action  
 @param aWindow             The window generating this event.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -43,7 +43,7 @@ Check if the user can do the prescibed action for this uri.
 </table>
 
 ### requestURIOverride(aTarget, aWindowContext) ###
-<code>  
+  
 Request that blocked URI(s) be allowed through parental  
 control filters. Returns true if the URI was successfully  
 overriden. Note, may block while native UI is shown.  
@@ -53,7 +53,7 @@ overriden. Note, may block while native UI is shown.
                            should be the root URI of the site.  
 @param window              Window that generates the event.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -77,7 +77,7 @@ overriden. Note, may block while native UI is shown.
 ### requestURIOverrides(aTargets, aWindowContext) ###
 
 ### log(aEntryType, aFlag, aSource, aTarget) ###
-<code>  
+  
 Log an application specific parental controls  
 event.  
   
@@ -88,7 +88,7 @@ event.
 @param aTarget          The location the content was saved to if  
                         no blocking occurred.  
   
-</code>
+
 #### Parameters ####
 
 <table>

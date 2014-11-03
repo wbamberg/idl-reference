@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsIOutputStreamCallback #
-<code>  
+  
 This is a companion interface for nsIAsyncOutputStream::asyncWait.  
   
-</code>
+
 ## Methods ##
 
 ### onOutputStreamReady(aStream) ###
-<code>  
+  
 Called to indicate that the stream is either writable or closed.  
   
 @param aStream  
        The stream whose asyncWait method was called.  
   
-</code>
+
 #### Parameters ####
 
 <table>

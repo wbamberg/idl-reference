@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIProtocolProxyService #
-<code>  
+  
 nsIProtocolProxyService provides methods to access information about  
 various network proxies.  
   
-</code>
+
 ## Methods ##
 
 ### asyncResolve(aURI, aFlags, aCallback) ###
-<code>  
+  
 This method returns via callback a nsIProxyInfo instance that identifies  
 a proxy to be used for loading the given URI.  Otherwise, this method returns  
 null indicating that a direct connection should be used.  
@@ -46,7 +46,7 @@ also supports nsIProxiedProtocolHandler.
   
 @see nsIProxiedProtocolHandler::newProxiedChannel   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -87,7 +87,7 @@ also supports nsIProxiedProtocolHandler.
 </table>
 
 ### newProxyInfo(aType, aHost, aPort, aFlags, aFailoverTimeout, aFailoverProxy) ###
-<code>  
+  
 This method may be called to construct a nsIProxyInfo instance from  
 the given parameters.  This method may be useful in conjunction with  
 nsISocketTransportService::createTransport for creating, for example,  
@@ -120,7 +120,7 @@ a SOCKS connection.
        Specifies the next proxy to try if this proxy fails.  This  
        parameter may be null.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -178,7 +178,7 @@ a SOCKS connection.
 </table>
 
 ### getFailoverForProxy(aProxyInfo, aURI, aReason) ###
-<code>  
+  
 If the proxy identified by aProxyInfo is unavailable for some reason,  
 this method may be called to access an alternate proxy that may be used  
 instead.  As a side-effect, this method may affect future result values  
@@ -194,7 +194,7 @@ from resolve/asyncResolve as well as from getFailoverForProxy.
   
 @throw NS_ERROR_NOT_AVAILABLE if there is no alternate proxy available.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -221,7 +221,7 @@ from resolve/asyncResolve as well as from getFailoverForProxy.
 </table>
 
 ### registerFilter(aFilter, aPosition) ###
-<code>  
+  
 This method may be used to register a proxy filter instance.  Each proxy  
 filter is registered with an associated position that determines the  
 order in which the filters are applied (starting from position 0).  When  
@@ -254,7 +254,7 @@ problems.  It is recommended that any extensions that choose to call
 this method make their position value configurable at runtime (perhaps  
 via the preferences service).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -274,14 +274,14 @@ via the preferences service).
 </table>
 
 ### unregisterFilter(aFilter) ###
-<code>  
+  
 This method may be used to unregister a proxy filter instance.  All  
 filters will be automatically unregistered at XPCOM shutdown.  
   
 @param aFilter  
        The nsIProtocolProxyFilter instance to be unregistered.  
   
-</code>
+
 #### Parameters ####
 
 <table>

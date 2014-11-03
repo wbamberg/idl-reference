@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISocketTransport #
-<code>  
+  
 nsISocketTransport  
   
 NOTE: Connection setup is triggered by opening an input or output stream,  
@@ -16,50 +16,50 @@ indicated by a STATUS_CONNECTED_TO notification to the event sink (if set).
 NOTE: This is a free-threaded interface, meaning that the methods on  
 this interface may be called from any thread.  
   
-</code>
+
 ## Methods ##
 
 ### getPeerAddr() ###
-<code>  
+  
 Returns the IP address of the socket connection peer. This  
 attribute is defined only once a connection has been established.  
   
-</code>
+
 ### getSelfAddr() ###
-<code>  
+  
 Returns the IP address of the initiating end. This attribute  
 is defined only once a connection has been established.  
   
-</code>
+
 ### bind(aLocalAddr) ###
-<code>  
+  
 Bind to a specific local address.  
   
-</code>
+
 ### getScriptablePeerAddr() ###
-<code>  
+  
 Returns a scriptable version of getPeerAddr. This attribute is defined  
 only once a connection has been established.  
   
-</code>
+
 ### getScriptableSelfAddr() ###
-<code>  
+  
 Returns a scriptable version of getSelfAddr. This attribute is defined  
 only once a connection has been established.  
   
-</code>
+
 ### isAlive() ###
-<code>  
+  
 Test if this socket transport is (still) connected.  
   
-</code>
+
 ### getTimeout(aType) ###
-<code>  
+  
 Socket timeouts in seconds.  To specify no timeout, pass UINT32_MAX  
 as aValue to setTimeout.  The implementation may truncate timeout values  
 to a smaller range of values (e.g., 0 to 0xFFFF).  
   
-</code>
+
 ### setTimeout(aType, aValue) ###
 
 ### setKeepaliveVals(keepaliveIdleTime, keepaliveRetryInterval) ###

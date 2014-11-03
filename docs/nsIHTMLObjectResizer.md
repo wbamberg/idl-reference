@@ -10,11 +10,11 @@ layout: default
 ## Methods ##
 
 ### showResizers(aResizedElement) ###
-<code>  
+  
 Shows active resizers around an element's frame  
 @param aResizedElement [IN] a DOM Element  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -28,24 +28,24 @@ Shows active resizers around an element's frame
 </table>
 
 ### hideResizers() ###
-<code>  
+  
 Hide resizers if they are visible  
   
-</code>
+
 ### refreshResizers() ###
-<code>  
+  
 Refresh visible resizers  
   
-</code>
+
 ### mouseDown(aX, aY, aTarget, aMouseEvent) ###
-<code>  
+  
 event callback when a mouse button is pressed  
 @param aX      [IN] horizontal position of the pointer  
 @param aY      [IN] vertical position of the pointer  
 @param aTarget [IN] the element triggering the event  
 @param aMouseEvent [IN] the event  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -77,13 +77,13 @@ event callback when a mouse button is pressed
 </table>
 
 ### mouseUp(aX, aY, aTarget) ###
-<code>  
+  
 event callback when a mouse button is released  
 @param aX      [IN] horizontal position of the pointer  
 @param aY      [IN] vertical position of the pointer  
 @param aTarget [IN] the element triggering the event  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -109,11 +109,11 @@ event callback when a mouse button is released
 </table>
 
 ### mouseMove(aMouseEvent) ###
-<code>  
+  
 event callback when the mouse pointer is moved  
 @param aMouseEvent [IN] the event  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -127,12 +127,12 @@ event callback when the mouse pointer is moved
 </table>
 
 ### addObjectResizeEventListener(aListener) ###
-<code>  
+  
 Creates a resize listener that can be used to get notifications  
 that the user started to resize an object or finalized such an operation  
 @param aListener [IN] an instance of nsIHTMLObjectResizeListener  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -146,11 +146,11 @@ that the user started to resize an object or finalized such an operation
 </table>
 
 ### removeObjectResizeEventListener(aListener) ###
-<code>  
+  
 Deletes a resize listener  
 @param aListener [IN] an instance of nsIHTMLObjectResizeListener  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsPIPlacesHistoryListenersNotifier #
-<code>  
+  
 This is a private interface used by Places components to notify history  
 listeners about important notifications.  These should not be used by any  
 code that is not part of core.  
   
 @note See also: nsINavHistoryObserver  
   
-</code>
+
 ## Methods ##
 
 ### notifyOnPageExpired(aURI, aVisitTime, aWholeEntry, aGUID, aReason, aTransitionType) ###
-<code>  
+  
 Calls onDeleteVisits and onDeleteURI notifications on registered listeners  
 with the history service.  
   
@@ -36,7 +36,7 @@ with the history service.
        If it's a valid TRANSITION_* value, all visits of the specified type  
        have been removed.  
   
-</code>
+
 #### Parameters ####
 
 <table>

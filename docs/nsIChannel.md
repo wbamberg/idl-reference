@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIChannel #
-<code>  
+  
 The nsIChannel interface allows clients to construct "GET" requests for  
 specific protocols, and manage them in a uniform way.  Once a channel is  
 created (via nsIIOService::newChannel), parameters for that request may  
@@ -20,11 +20,11 @@ response headers to be retrieved for the corresponding http transaction.
   
 This interface must be used only from the XPCOM main thread.  
   
-</code>
+
 ## Methods ##
 
 ### open() ###
-<code>  
+  
 Synchronously open the channel.  
   
 @return blocking input stream to the channel's data.  
@@ -38,7 +38,7 @@ than the XPCOM main thread.
 NOTE: Implementations should throw NS_ERROR_IN_PROGRESS if the channel  
 is reopened.  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -51,7 +51,7 @@ is reopened.
 </table>
 
 ### asyncOpen(aListener, aContext) ###
-<code>  
+  
 Asynchronously open this channel.  Data is fed to the specified stream  
 listener as it becomes available.  The stream listener's methods are  
 called on the thread that calls asyncOpen and are not called until  
@@ -82,7 +82,7 @@ channel is reopened.
 @param aContext an opaque parameter forwarded to aListener's methods  
 @see nsIChannelEventSink for onChannelRedirect  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIStreamListener #
-<code>  
+  
 nsIStreamListener  
   
-</code>
+
 ## Methods ##
 
 ### onDataAvailable(aRequest, aContext, aInputStream, aOffset, aCount) ###
-<code>  
+  
 Called when the next chunk of data (corresponding to the request) may  
 be read without blocking the calling thread.  The onDataAvailable impl  
 must read exactly |aCount| bytes of data before returning.  
@@ -32,7 +32,7 @@ NOTE: The aInputStream parameter must implement readSegments.
 An exception thrown from onDataAvailable has the side-effect of  
 causing the request to be canceled.  
   
-</code>
+
 #### Parameters ####
 
 <table>

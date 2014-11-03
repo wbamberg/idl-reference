@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getPlacesInfo(aPlaceIdentifiers, aCallback) ###
-<code>  
+  
 Gets the available information for the given array of places, each  
 identified by either nsIURI or places GUID (string).  
   
@@ -34,7 +34,7 @@ called for it with NS_ERROR_NOT_AVAILABLE result code.
         - Passing in NULL for aPlaceIdentifiers or aCallback.  
         - Not providing at least one valid GUID or URI.   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -59,7 +59,7 @@ called for it with NS_ERROR_NOT_AVAILABLE result code.
 </table>
 
 ### updatePlaces(aPlaceInfo, aCallback) ###
-<code>  
+  
 Adds a set of visits for one or more mozIPlaceInfo objects, and updates  
 each mozIPlaceInfo's title or guid.  
   
@@ -82,7 +82,7 @@ aCallback.handleResult is called for each visit added.
           mozIVisitInfo.  
         - Providing an invalid transitionType for a mozIVisitInfo.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -105,7 +105,7 @@ aCallback.handleResult is called for each visit added.
 </table>
 
 ### isURIVisited(aURI, aCallback) ###
-<code>  
+  
 Checks if a given URI has been visited.  
   
 @param aURI  
@@ -113,7 +113,7 @@ Checks if a given URI has been visited.
 @param aCallback  
        A mozIVisitStatusCallback object which receives the visited status.  
   
-</code>
+
 #### Parameters ####
 
 <table>

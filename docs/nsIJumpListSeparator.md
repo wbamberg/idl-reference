@@ -6,7 +6,6 @@ layout: default
 </div>
 
 # nsIJumpListSeparator #
-<code>  
+  
 A menu separator.  
   
-</code>

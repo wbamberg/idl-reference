@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### notifyPeerReady(sessionToken) ###
-<code>  
+  
 Callback function used to notify peerready.  
   
 @param sessionToken  
        SessionToken received from Chrome process  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -30,13 +30,13 @@ Callback function used to notify peerready.
 </table>
 
 ### notifyPeerLost(sessionToken) ###
-<code>  
+  
 Callback function used to notify peerlost.  
   
 @param sessionToken  
        SessionToken received from Chrome process  
   
-</code>
+
 #### Parameters ####
 
 <table>

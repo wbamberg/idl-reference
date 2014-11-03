@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIDOMCSSGroupingRule #
-<code>  
+  
 Interface for at-rules that have child rules in the CSS OM.  
   
-</code>
+
 ## Methods ##
 
 ### insertRule(rule, index) ###

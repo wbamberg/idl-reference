@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # fuelIApplication #
-<code>  
+  
 Interface for managing and accessing the applications systems  
   
-</code>
+
 ## Attributes ##
 
 ### bookmarks ###

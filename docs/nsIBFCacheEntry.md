@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIBFCacheEntry #
-<code>  
+  
 This interface lets you evict a document from the back/forward cache.  
   
-</code>
+
 ## Methods ##
 
 ### RemoveFromBFCacheSync() ###

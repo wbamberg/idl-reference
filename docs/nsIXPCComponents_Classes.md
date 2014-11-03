@@ -6,8 +6,7 @@ layout: default
 </div>
 
 # nsIXPCComponents_Classes #
-<code>  
+  
 interface of Components.classes  
 (interesting stuff only reflected into JavaScript)  
   
-</code>

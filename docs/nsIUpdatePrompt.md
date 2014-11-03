@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsIUpdatePrompt #
-<code>  
+  
 An interface describing an object that can show various kinds of Update  
 notification UI to the user.  
   
-</code>
+
 ## Methods ##
 
 ### checkForUpdates() ###
-<code>  
+  
 Shows the application update checking user interface and checks if there  
 is an update available.  
   
-</code>
+
 ### showUpdateAvailable(update) ###
-<code>  
+  
 Shows the application update available user interface advising that an  
 update is available for download and install. If the app.update.silent  
 preference is true or the user interface is already displayed the call will  
@@ -28,7 +28,7 @@ be a no-op.
 @param   update  
          The nsIUpdate object to be downloaded and installed  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -42,7 +42,7 @@ be a no-op.
 </table>
 
 ### showUpdateDownloaded(update, background) ###
-<code>  
+  
 Shows the application update downloaded user interface advising that an  
 update has now been downloaded and a restart is necessary to complete the  
 update. If background is true (e.g. the download was not user initiated)  
@@ -52,7 +52,7 @@ and the app.update.silent preference is true the call will be a no-op.
 @param   background  
          Less obtrusive UI, starting with a non-modal notification alert  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -72,15 +72,15 @@ and the app.update.silent preference is true the call will be a no-op.
 </table>
 
 ### showUpdateInstalled() ###
-<code>  
+  
 Shows the application update installed user interface advising that an  
 update was installed successfully. If the app.update.silent preference is  
 true, the app.update.showInstalledUI preference is false, or the user  
 interface is already displayed the call will be a no-op.  
   
-</code>
+
 ### showUpdateError(update) ###
-<code>  
+  
 Shows the application update error user interface advising that an error  
 occurred while checking for or applying an update. If the app.update.silent  
 preference is true the call will be a no-op.  
@@ -90,7 +90,7 @@ preference is true the call will be a no-op.
          the error occurred during an update check and will instead be an  
          nsIUpdate object with the error information for the update check.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -107,12 +107,12 @@ preference is true the call will be a no-op.
 </table>
 
 ### showUpdateHistory(parent) ###
-<code>  
+  
 Shows a list of all updates installed to date.  
 @param   parent  
          An nsIDOMWindow to set as the parent for this window. Can be null.  
   
-</code>
+
 #### Parameters ####
 
 <table>

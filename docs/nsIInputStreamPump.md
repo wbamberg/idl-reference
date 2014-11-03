@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIInputStreamPump #
-<code>  
+  
 nsIInputStreamPump  
   
 This interface provides a means to configure and use a input stream pump  
@@ -21,11 +21,11 @@ call the stream's AsyncWait method to drive the stream listener.  Otherwise,
 the stream will be read on a background thread utilizing the stream  
 transport service.  More details are provided below.  
   
-</code>
+
 ## Methods ##
 
 ### init(aStream, aStreamPos, aStreamLen, aSegmentSize, aSegmentCount, aCloseWhenDone) ###
-<code>  
+  
 Initialize the input stream pump.  
   
 @param aStream  
@@ -52,7 +52,7 @@ Initialize the input stream pump.
 @param aCloseWhenDone  
        if true, the input stream will be closed after it has been read.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -107,7 +107,7 @@ Initialize the input stream pump.
 </table>
 
 ### asyncRead(aListener, aListenerContext) ###
-<code>  
+  
 asyncRead causes the input stream to be read in chunks and delivered  
 asynchronously to the listener via OnDataAvailable.  
   
@@ -116,7 +116,7 @@ asynchronously to the listener via OnDataAvailable.
 @param aListenerContext  
        passed to listener methods.  
   
-</code>
+
 #### Parameters ####
 
 <table>

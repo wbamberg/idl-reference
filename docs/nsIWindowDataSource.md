@@ -10,7 +10,6 @@ layout: default
 ## Methods ##
 
 ### getWindowForResource(inResource) ###
-<code>  
+  
 for the given resource name, return the window  
   
-</code>

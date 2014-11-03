@@ -10,7 +10,6 @@ layout: default
 ## Methods ##
 
 ### add(a, b) ###
-<code>  
+  
 This interface adds two numbers together and returns the result.  
   
-</code>

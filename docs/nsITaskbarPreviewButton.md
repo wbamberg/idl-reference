@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsITaskbarPreviewButton #
-<code>  
+  
 nsITaskbarPreviewButton  
   
 Provides access to a window preview's toolbar button's properties.  
   
-</code>
+
 ## Attributes ##
 
 ### tooltip ###

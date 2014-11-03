@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIScriptableUnescapeHTML #
-<code>  
+  
 This interface is OBSOLETE and exists solely for legacy extensions.  
   
-</code>
+
 ## Methods ##
 
 ### unescape(src) ###
-<code>   
+   
 Converts HTML to plain text. This is equivalent to calling  
 nsIParserUtils::convertToPlainText(src,   
   nsIDocumentEncoder::OutputSelectionOnly |  
@@ -24,7 +24,7 @@ this method.
   
 @param src The HTML string to convert to plain text.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -38,7 +38,7 @@ this method.
 </table>
 
 ### parseFragment(fragment, isXML, baseURI, element) ###
-<code>  
+  
 Parses markup into a sanitized document fragment. This is equivalent to  
 calling nsIParserUtils::parseFragment(fragment, 0, isXML, baseURI,  
 element).  
@@ -50,7 +50,7 @@ method.
 @param baseURI the base URL for this fragment  
 @param element the context node for the fragment parsing algorithm  
   
-</code>
+
 #### Parameters ####
 
 <table>

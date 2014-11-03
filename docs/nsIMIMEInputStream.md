@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsIMIMEInputStream #
-<code>  
+  
 The MIME stream separates headers and a datastream. It also allows  
 automatic creation of the content-length header.  
   
-</code>
+
 ## Methods ##
 
 ### addHeader(name, value) ###
-<code>  
+  
 Adds an additional header to the stream on the form "name: value". May  
 not be called once the stream has been started to be read.  
 @param name   name of the header  
 @param value  value of the header  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -40,7 +40,7 @@ not be called once the stream has been started to be read.
 </table>
 
 ### setData(stream) ###
-<code>  
+  
 Sets data-stream. May not be called once the stream has been started  
 to be read.  
 The cursor of the new stream should be located at the beginning of the  
@@ -48,7 +48,7 @@ stream if the implementation of the nsIMIMEInputStream also is used as
 an nsISeekableStream.  
 @param stream  stream containing the data for the stream  
   
-</code>
+
 #### Parameters ####
 
 <table>

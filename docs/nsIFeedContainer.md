@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIFeedContainer #
-<code>  
+  
 A shared base for feeds and items, which are pretty similar,  
 but they have some divergent attributes and require  
 different convenience methods.  
   
-</code>
+
 ## Methods ##
 
 ### normalize() ###
-<code>  
+  
 Syncs a container's fields with its convenience attributes.  
   
-</code>
+
 ## Attributes ##
 
 ### id ###

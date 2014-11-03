@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getSamples(network, start, end, options) ###
-<code>  
+  
 Find samples between two dates start and end, both included.  
   
 If options is provided, per-app or per-system service usage will be  
@@ -18,9 +18,9 @@ retrieved; otherwise the target will be overall system usage.
   
 If success, the request result will be an nsIDOMMozNetworkStats object.  
   
-</code>
+
 ### addAlarm(network, threshold, options) ###
-<code>  
+  
 Install an alarm on a network. The network must be in the return of  
 getAvailableNetworks() otherwise an "InvalidNetwork" exception will  
 be raised.  
@@ -31,9 +31,9 @@ system message is sent to the application, where the optional parameter
   
 If success, the |result| field of the DOMRequest keeps the alarm Id.  
   
-</code>
+
 ### getAllAlarms(network) ###
-<code>  
+  
 Obtain all alarms for those networks returned by getAvailableNetworks().  
 If a network is provided, only retrieves the alarms for that network.  
 The network must be one of those returned by getAvailebleNetworks() or an  
@@ -45,33 +45,33 @@ Each alarm object has the same fields as that in the system message:
  - threshold  
  - data  
   
-</code>
+
 ### removeAlarms(alarmId) ###
-<code>  
+  
 Remove all network alarms. If an |alarmId| is provided, then only that  
 alarm is removed.  
   
-</code>
+
 ### clearStats(network) ###
-<code>  
+  
 Remove all stats related with the provided network from DB.  
   
-</code>
+
 ### clearAllStats() ###
-<code>  
+  
 Remove all stats in the database.  
   
-</code>
+
 ### getAvailableNetworks() ###
-<code>  
+  
 Return available networks that used to be saved in the database.  
   
-</code>
+
 ### getAvailableServiceTypes() ###
-<code>  
+  
 Return available service types that used to be saved in the database.  
   
-</code>
+
 ## Attributes ##
 
 ### sampleRate ###

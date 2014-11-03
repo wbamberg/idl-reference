@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsICookieManager2 #
-<code>   
+   
 Additions to the frozen nsICookieManager  
   
-</code>
+
 ## Methods ##
 
 ### add(aHost, aPath, aName, aValue, aIsSecure, aIsHttpOnly, aIsSession, aExpiry) ###
-<code>  
+  
 Add a cookie. nsICookieService is the normal way to do this. This  
 method is something of a backdoor.  
   
@@ -45,7 +45,7 @@ method is something of a backdoor.
        1970 UTC. note that expiry time will also be honored for session cookies;  
        in this way, the more restrictive of the two will take effect.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -112,7 +112,7 @@ method is something of a backdoor.
 </table>
 
 ### cookieExists(aCookie) ###
-<code>  
+  
 Find whether a given cookie already exists.  
   
 @param aCookie  
@@ -121,7 +121,7 @@ Find whether a given cookie already exists.
 @return true if a cookie was found which matches the host, path, and name  
         fields of aCookie  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -147,7 +147,7 @@ Find whether a given cookie already exists.
 </table>
 
 ### countCookiesFromHost(aHost) ###
-<code>  
+  
 Count how many cookies exist within the base domain of 'aHost'.  
 Thus, for a host "weather.yahoo.com", the base domain would be "yahoo.com",  
 and any host or domain cookies for "yahoo.com" and its subdomains would be  
@@ -160,7 +160,7 @@ counted.
   
 @return the number of cookies found.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -187,7 +187,7 @@ counted.
 </table>
 
 ### getCookiesFromHost(aHost) ###
-<code>  
+  
 Returns an enumerator of cookies that exist within the base domain of  
 'aHost'. Thus, for a host "weather.yahoo.com", the base domain would be  
 "yahoo.com", and any host or domain cookies for "yahoo.com" and its  
@@ -202,7 +202,7 @@ subdomains would be returned.
   
 @see countCookiesFromHost  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -229,14 +229,14 @@ subdomains would be returned.
 </table>
 
 ### importCookies(aCookieFile) ###
-<code>  
+  
 Import an old-style cookie file. Imported cookies will be added to the  
 existing database. If the database contains any cookies the same as those  
 being imported (i.e. domain, name, and path match), they will be replaced.  
   
 @param aCookieFile the file to import, usually cookies.txt  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -250,7 +250,7 @@ being imported (i.e. domain, name, and path match), they will be replaced.
 </table>
 
 ### getCookiesForApp(appId, onlyBrowserElement) ###
-<code>  
+  
 Returns an enumerator of all cookies that are related to a specific app.  
   
 If the onlyBrowserELement parameter is set to true, only cookies part of  
@@ -260,9 +260,9 @@ cookies will be returned, regardless of their browserElement flag.
 This method assumes that appId is a valid app id. It should not be a  
 special value like UNKNOWN_APP_ID or NO_APP_ID.  
   
-</code>
+
 ### removeCookiesForApp(appId, onlyBrowserElement) ###
-<code>  
+  
 Remove all the cookies associated with the app with the id aAppId.  
   
 If onlyBrowserElement is set to true, the method will only remove the  
@@ -270,4 +270,3 @@ cookies marked as part of a browser element inside the app.
   
 Special app id values are not allowed (NO_APP_ID or UNKNOWN_APP_ID for example).  
   
-</code>

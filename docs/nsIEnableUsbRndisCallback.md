@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### enableUsbRndisResult(success, enable) ###
-<code>  
+  
 Callback function used to report the status of enabling/disabling usb rndis.  
   
 @param success  
@@ -18,7 +18,7 @@ Callback function used to report the status of enabling/disabling usb rndis.
 @param enable  
        Boolean to indicate if we are enabling or disabling usb rndis.  
   
-</code>
+
 #### Parameters ####
 
 <table>

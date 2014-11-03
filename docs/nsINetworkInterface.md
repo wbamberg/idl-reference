@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINetworkInterface #
-<code>  
+  
 Information about networks that is exposed to network manager API consumers.  
   
-</code>
+
 ## Methods ##
 
 ### getAddresses(ips, prefixLengths, count) ###
-<code>  
+  
 Get the list of ip addresses and prefix lengths, ip address could be IPv4  
 or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.  
   
@@ -24,7 +24,7 @@ or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.
   
 @returns the length of the lists.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -55,7 +55,7 @@ or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.
 </table>
 
 ### getGateways(count, gateways) ###
-<code>  
+  
 Get the list of gateways, could be IPv4 or IPv6, typically 1 IPv4 or 1  
 IPv6 or one of each.  
   
@@ -64,7 +64,7 @@ IPv6 or one of each.
   
 @returns the list of gateways.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -89,7 +89,7 @@ IPv6 or one of each.
 </table>
 
 ### getDnses(count, dnses) ###
-<code>  
+  
 Get the list of dnses, could be IPv4 or IPv6.  
   
 @param count  
@@ -97,7 +97,7 @@ Get the list of dnses, could be IPv4 or IPv6.
   
 @returns the list of dnses.  
   
-</code>
+
 #### Parameters ####
 
 <table>

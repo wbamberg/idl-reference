@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getVersionInfoField(aField) ###
-<code>  
+  
 getVersionInfoValue  
   
 Retrieve a metadata field from the file's VERSIONINFO block.  
@@ -19,7 +19,7 @@ Throws NS_ERROR_FAILURE if no value is found, or the value is empty.
 @param   aField         The field to look up.  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -33,7 +33,7 @@ Throws NS_ERROR_FAILURE if no value is found, or the value is empty.
 </table>
 
 ### setShortcut(targetFile, workingDir, args, description, iconFile, iconIndex) ###
-<code>  
+  
 setShortcut  
   
 Creates the specified shortcut, or updates it if it already exists.  
@@ -58,7 +58,7 @@ shortcut
 iconFile.  If iconFile contains only one icon, this  
 value should be 0.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -105,11 +105,11 @@ value should be 0.
 </table>
 
 ### openNSPRFileDescShareDelete(flags, mode) ###
-<code>  
+  
 Identical to nsIFile::openNSPRFileDesc except it also uses the  
 FILE_SHARE_DELETE flag.  
   
-</code>
+
 ## Attributes ##
 
 ### canonicalPath ###

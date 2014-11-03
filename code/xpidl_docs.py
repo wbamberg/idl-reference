@@ -92,10 +92,8 @@ class Method(object):
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
             processed = stripComments(doccomment)
-            output.write("<code>")
             for line in processed:
                 output.write(line)
-            output.write("</code>")
 
 class Constant(object):
     def __init__(self, spec):
@@ -138,10 +136,8 @@ class Interface(object):
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
             processed = stripComments(doccomment)
-            output.write("<code>")
             for line in processed:
                 output.write(line)
-            output.write("</code>")
 
     def writeMembers(self, kind, members, output):
         if len(members) > 0:

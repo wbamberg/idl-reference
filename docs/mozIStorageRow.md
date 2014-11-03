@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### getResultByIndex(aIndex) ###
-<code>  
+  
 Obtains the result of a given column specified by aIndex.  
   
 @param aIndex  
        Zero-based index of the result to get from the tuple.  
 @returns the result of the specified column.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -42,7 +42,7 @@ Obtains the result of a given column specified by aIndex.
 </table>
 
 ### getResultByName(aName) ###
-<code>  
+  
 Obtains the result of a given column specified by aName.  
   
 @param aName  
@@ -52,7 +52,7 @@ Obtains the result of a given column specified by aName.
       column.  If there is no AS clause then the name of the column is  
       unspecified and may change from one release to the next.  
   
-</code>
+
 #### Parameters ####
 
 <table>

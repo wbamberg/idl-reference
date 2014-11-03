@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIDirIndex #
-<code> A class holding information about a directory index.  
+ A class holding information about a directory index.  
 These have no reference back to their original source -  
 changing these attributes won't affect the directory  
   
-</code>
+
 ## Attributes ##
 
 ### type ###

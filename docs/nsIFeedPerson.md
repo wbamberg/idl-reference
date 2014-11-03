@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIFeedPerson #
-<code>  
+  
  An nsIFeedPerson represents an author or contributor of a feed.  
   
-</code>
+
 ## Attributes ##
 
 ### name ###

@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsINativeOSFileErrorCallback #
-<code>  
+  
 A callback invoked in case of error.  
   
-</code>
+
 ## Methods ##
 
 ### complete(operation, OSstatus) ###
-<code>  
+  
 @param operation The name of the failed operation. Provided to aid  
 debugging only, may change without notice.  
 @param OSstatus The OS status of the operation (errno under Unix,  
 GetLastError under Windows).  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsINestedURI #
-<code>  
+  
 nsINestedURI is an interface that must be implemented by any nsIURI  
 implementation which has an "inner" URI that it actually gets data  
 from.  
@@ -20,7 +20,7 @@ http://example.com, sanitizes it, and returns it, then the sanitize: URI
 should implement nsINestedURI and return the http://example.com URI as its  
 inner URI.  
   
-</code>
+
 ## Attributes ##
 
 ### innerURI ###

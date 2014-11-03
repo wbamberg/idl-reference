@@ -10,121 +10,121 @@ layout: default
 ## Methods ##
 
 ### setURI(aURI) ###
-<code> URI for the document */  
-</code>
+ URI for the document */  
+
 ### getViewerBounds(bounds) ###
-<code>  
+  
 Saved position and dimensions of the content viewer; we must adjust the  
 root view's widget accordingly if this has changed when the presentation  
 is restored.  
   
-</code>
+
 ### setViewerBounds(bounds) ###
 
 ### addChildShell(shell) ###
-<code>  
+  
 Saved child docshells corresponding to contentViewer.  The child shells  
 are restored as children of the parent docshell, in this order, when the  
 parent docshell restores a saved presentation.  
   
-</code><code> Append a child shell to the end of our list. */  
-</code>
+ Append a child shell to the end of our list. */  
+
 ### childShellAt(index) ###
-<code>  
+  
 Get the child shell at |index|; returns null if |index| is out of bounds.  
   
-</code>
+
 ### clearChildShells() ###
-<code>  
+  
 Clear the child shell list.  
   
-</code>
+
 ### syncPresentationState() ###
-<code>  
+  
 Ensure that the cached presentation members are self-consistent.  
 If either |contentViewer| or |windowState| are null, then all of the  
 following members are cleared/reset:  
  contentViewer, sticky, windowState, viewerBounds, childShells,  
  refreshURIList.  
   
-</code>
+
 ### setTitle(aTitle) ###
-<code> Title for the document */  
-</code>
+ Title for the document */  
+
 ### setScrollPosition(x, y) ###
-<code> Set/Get scrollers' positon in anchored pages */  
-</code>
+ Set/Get scrollers' positon in anchored pages */  
+
 ### getScrollPosition(x, y) ###
 
 ### create(URI, title, inputStream, layoutHistoryState, cacheKey, contentType, owner, docshellID, dynamicCreation) ###
-<code> Additional ways to create an entry */  
-</code>
+ Additional ways to create an entry */  
+
 ### clone() ###
 
 ### setIsSubFrame(aFlag) ###
-<code> Attribute that indicates if this entry is for a subframe navigation */  
-</code>
+ Attribute that indicates if this entry is for a subframe navigation */  
+
 ### getAnyContentViewer(ownerEntry) ###
-<code> Return any content viewer present in or below this node in the  
+ Return any content viewer present in or below this node in the  
 nsSHEntry tree.  This will differ from contentViewer in the case  
 where a child nsSHEntry has the content viewer for this tree. */  
-</code>
+
 ### forgetEditorData() ###
-<code>  
+  
 Gets the owning pointer to the editor data assosicated with  
 this shistory entry. This forgets its pointer, so free it when  
 you're done.  
   
-</code>
+
 ### setEditorData(aData) ###
-<code>  
+  
 Sets the owning pointer to the editor data assosicated with  
 this shistory entry. Unless forgetEditorData() is called, this  
 shentry will destroy the editor data when it's destroyed.  
   
-</code>
+
 ### hasDetachedEditor() ###
-<code> Returns true if this shistory entry is storing a detached editor. */  
-</code>
+ Returns true if this shistory entry is storing a detached editor. */  
+
 ### isDynamicallyAdded() ###
-<code>  
+  
 Returns true if the related docshell was added because of  
 dynamic addition of an iframe/frame.  
   
-</code>
+
 ### hasDynamicallyAddedChild() ###
-<code>  
+  
 Returns true if any of the child entries returns true  
 when isDynamicallyAdded is called on it.  
   
-</code>
+
 ### hasBFCacheEntry(aEntry) ###
-<code>  
+  
 Does this SHEntry point to the given BFCache entry?  If so, evicting  
 the BFCache entry will evict the SHEntry, since the two entries  
 correspond to the same document.  
   
-</code>
+
 ### adoptBFCacheEntry(aEntry) ###
-<code>  
+  
 Adopt aEntry's BFCacheEntry, so now both this and aEntry point to  
 aEntry's BFCacheEntry.  
   
-</code>
+
 ### abandonBFCacheEntry() ###
-<code>  
+  
 Create a new BFCache entry and drop our reference to our old one.  This  
 call unlinks this SHEntry from any other SHEntries for its document.  
   
-</code>
+
 ### sharesDocumentWith(aEntry) ###
-<code>  
+  
 Does this SHEntry correspond to the same document as aEntry?  This is  
 true iff the two SHEntries have the same BFCacheEntry.  So in  
 particular, sharesDocumentWith(aEntry) is guaranteed to return true if  
 it's preceeded by a call to adoptBFCacheEntry(aEntry).  
   
-</code>
+
 ## Attributes ##
 
 ### URI ###

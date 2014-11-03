@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # nsIXPCScriptable #
-<code>  
+  
 Note: This is not really an XPCOM interface.  For example, callers must  
 guarantee that they set the *_retval of the various methods that return a  
 boolean to PR_TRUE before making the call.  Implementations may skip writing  
 to *_retval unless they want to return PR_FALSE.  
   
-</code>
+
 ## Methods ##
 
 ### getScriptableFlags() ###

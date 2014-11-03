@@ -10,19 +10,19 @@ layout: default
 ## Methods ##
 
 ### setExpirationTime(expirationTime) ###
-<code>  
+  
 Set the time at which the cache entry should be considered invalid (in  
 seconds since the Epoch).  
   
-</code>
+
 ### setDataSize(size) ###
-<code>  
+  
 Set the cache entry data size.  This will fail if the cache entry  
 IS stream based.  
   
-</code>
+
 ### openInputStream(offset) ###
-<code>  
+  
 Open blocking input stream to cache data.  This will fail if the cache  
 entry IS NOT stream based.  Use the stream transport service to  
 asynchronously read this stream on a background thread.  The returned  
@@ -34,7 +34,7 @@ stream MAY implement nsISeekableStream.
   
 @return blocking, unbuffered input stream.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -60,7 +60,7 @@ stream MAY implement nsISeekableStream.
 </table>
 
 ### openOutputStream(offset) ###
-<code>  
+  
 Open blocking output stream to cache data.  This will fail if the cache  
 entry IS NOT stream based.  Use the stream transport service to  
 asynchronously write to this stream on a background thread.  The returned  
@@ -75,7 +75,7 @@ truncated to the specified offset.
   
 @return blocking, unbuffered output stream.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -101,7 +101,7 @@ truncated to the specified offset.
 </table>
 
 ### doom() ###
-<code>  
+  
 Doom the cache entry this descriptor references in order to slate it for   
 removal.  Once doomed a cache entry cannot be undoomed.  
   
@@ -110,41 +110,41 @@ fail pending requests.  This means that pending requests will not get
 a cache descriptor.  This is meant as a tool for clients that wish to  
 instruct pending requests to skip the cache.  
   
-</code>
+
 ### doomAndFailPendingRequests(status) ###
 
 ### asyncDoom(listener) ###
-<code>  
+  
 Asynchronously doom an entry. Listener will be notified about the status  
 of the operation. Null may be passed if caller doesn't care about the  
 result.  
   
-</code>
+
 ### markValid() ###
-<code>  
+  
 A writer must validate this cache object before any readers are given  
 a descriptor to the object.  
   
-</code>
+
 ### close() ###
-<code>  
+  
  Explicitly close the descriptor (optional).  
   
-</code>
+
 ### getMetaDataElement(key) ###
-<code>  
+  
 Methods for accessing meta data.  Meta data is a table of key/value  
 string pairs.  The strings do not have to conform to any particular  
 charset, but they must be null terminated.  
   
-</code>
+
 ### setMetaDataElement(key, value) ###
 
 ### visitMetaData(visitor) ###
-<code>  
+  
 Visitor will be called with key/value pair for each meta data element.  
   
-</code>
+
 ## Attributes ##
 
 ### cacheElement ###

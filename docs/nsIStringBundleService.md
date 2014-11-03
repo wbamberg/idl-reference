@@ -14,7 +14,7 @@ layout: default
 ### createExtensibleBundle(aRegistryKey) ###
 
 ### formatStatusMessage(aStatus, aStatusArg) ###
-<code>  
+  
 Formats a message string from a status code and status arguments.  
 @param aStatus - The status code. This is mapped into a string ID and  
            and used in the string lookup process (see nsIErrorService).  
@@ -22,7 +22,7 @@ Formats a message string from a status code and status arguments.
            can be separated by newline ('\n') characters.  
 @return the formatted message  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -55,7 +55,7 @@ Formats a message string from a status code and status arguments.
 </table>
 
 ### flushBundles() ###
-<code>  
+  
 flushes the string bundle cache - useful when the locale changes or  
 when we need to get some extra memory back  
   
@@ -64,4 +64,3 @@ because any bundles that are floating around when the locale changes
 will suddenly contain bad data  
   
   
-</code>

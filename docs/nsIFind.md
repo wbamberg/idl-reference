@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### Find(aPatText, aSearchRange, aStartPoint, aEndPoint) ###
-<code>  
+  
 Find some text in the current context. The implementation is  
 responsible for performing the find and highlighting the text.  
   
@@ -24,7 +24,7 @@ responsible for performing the find and highlighting the text.
                     end (forward) or start (backward).  
 @retval             A range spanning the match that was found (or null).  
   
-</code>
+
 #### Parameters ####
 
 <table>

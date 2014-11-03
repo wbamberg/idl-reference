@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIPromptService #
-<code>  
+  
 This is the interface to the embeddable prompt service; the service that  
 implements nsIPrompt.  Its interface is designed to be just nsIPrompt, each  
 method modified to take a parent window parameter.  
@@ -36,11 +36,11 @@ not refer to the button types by name.  For example, it is inadvisable to
 tell the user to "Press OK to proceed."  Instead, such a prompt might be  
 rewritten to ask the user: "Would you like to proceed?"  
   
-</code>
+
 ## Methods ##
 
 ### alert(aParent, aDialogTitle, aText) ###
-<code>  
+  
 Puts up an alert dialog with an OK button.  
   
 @param aParent  
@@ -50,7 +50,7 @@ Puts up an alert dialog with an OK button.
 @param aText  
        Text to appear in the body of the dialog.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -76,7 +76,7 @@ Puts up an alert dialog with an OK button.
 </table>
 
 ### alertCheck(aParent, aDialogTitle, aText, aCheckMsg, aCheckState) ###
-<code>  
+  
 Puts up an alert dialog with an OK button and a labeled checkbox.  
   
 @param aParent  
@@ -91,7 +91,7 @@ Puts up an alert dialog with an OK button and a labeled checkbox.
        Contains the initial checked state of the checkbox when this method  
        is called and the final checked state after this method returns.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -130,7 +130,7 @@ Puts up an alert dialog with an OK button and a labeled checkbox.
 </table>
 
 ### confirm(aParent, aDialogTitle, aText) ###
-<code>  
+  
 Puts up a dialog with OK and Cancel buttons.  
   
 @param aParent  
@@ -142,7 +142,7 @@ Puts up a dialog with OK and Cancel buttons.
   
 @return true for OK, false for Cancel  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -179,7 +179,7 @@ Puts up a dialog with OK and Cancel buttons.
 </table>
 
 ### confirmCheck(aParent, aDialogTitle, aText, aCheckMsg, aCheckState) ###
-<code>  
+  
 Puts up a dialog with OK and Cancel buttons and a labeled checkbox.  
   
 @param aParent  
@@ -196,7 +196,7 @@ Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
   
 @return true for OK, false for Cancel  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -246,7 +246,7 @@ Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
 </table>
 
 ### confirmEx(aParent, aDialogTitle, aText, aButtonFlags, aButton0Title, aButton1Title, aButton2Title, aCheckMsg, aCheckState) ###
-<code>  
+  
 Puts up a dialog with up to 3 buttons and an optional, labeled checkbox.  
   
 @param aParent  
@@ -289,7 +289,7 @@ In general, aButtonFlags is constructed per the following example:
   
 where "AAA" and "BBB" correspond to one of the button titles.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -363,7 +363,7 @@ where "AAA" and "BBB" correspond to one of the button titles.
 </table>
 
 ### prompt(aParent, aDialogTitle, aText, aValue, aCheckMsg, aCheckState) ###
-<code>  
+  
 Puts up a dialog with an edit field and an optional, labeled checkbox.  
   
 @param aParent  
@@ -385,7 +385,7 @@ Puts up a dialog with an edit field and an optional, labeled checkbox.
   
 @return true for OK, false for Cancel.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -444,7 +444,7 @@ Puts up a dialog with an edit field and an optional, labeled checkbox.
 </table>
 
 ### promptUsernameAndPassword(aParent, aDialogTitle, aText, aUsername, aPassword, aCheckMsg, aCheckState) ###
-<code>  
+  
 Puts up a dialog with an edit field, a password field, and an optional,  
 labeled checkbox.  
   
@@ -472,7 +472,7 @@ labeled checkbox.
   
 @return true for OK, false for Cancel.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -540,7 +540,7 @@ labeled checkbox.
 </table>
 
 ### promptPassword(aParent, aDialogTitle, aText, aPassword, aCheckMsg, aCheckState) ###
-<code>  
+  
 Puts up a dialog with a password field and an optional, labeled checkbox.  
   
 @param aParent  
@@ -562,7 +562,7 @@ Puts up a dialog with a password field and an optional, labeled checkbox.
   
 @return true for OK, false for Cancel.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -621,7 +621,7 @@ Puts up a dialog with a password field and an optional, labeled checkbox.
 </table>
 
 ### select(aParent, aDialogTitle, aText, aCount, aSelectList, aOutSelection) ###
-<code>  
+  
 Puts up a dialog box which has a list box of strings from which the user  
 may make a single selection.  
   
@@ -641,7 +641,7 @@ may make a single selection.
   
 @return true for OK, false for Cancel.  
   
-</code>
+
 #### Parameters ####
 
 <table>

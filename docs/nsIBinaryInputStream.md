@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIBinaryInputStream #
-<code>  
+  
 This interface allows consumption of primitive data types from a "binary  
 stream" containing untagged, big-endian binary data, i.e. as produced by an  
 implementation of nsIBinaryOutputStream.  This might be used, for example,  
@@ -16,18 +16,18 @@ little-endian platforms.
   
 @See nsIBinaryOutputStream  
   
-</code>
+
 ## Methods ##
 
 ### setInputStream(aInputStream) ###
 
 ### readBoolean() ###
-<code>  
+  
 Read 8-bits from the stream.  
   
 @return that byte to be treated as a boolean.  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -52,26 +52,26 @@ Read 8-bits from the stream.
 ### readDouble() ###
 
 ### readCString() ###
-<code>  
+  
 Read an 8-bit pascal style string from the stream.  
 32-bit length field, followed by length 8-bit chars.  
   
-</code>
+
 ### readString() ###
-<code>  
+  
 Read an 16-bit pascal style string from the stream.  
 32-bit length field, followed by length PRUnichars.  
   
-</code>
+
 ### readBytes(aLength, aString) ###
-<code>  
+  
 Read an opaque byte array from the stream.  
   
 @param aLength the number of bytes that must be read.  
   
 @throws NS_ERROR_FAILURE if it can't read aLength bytes  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -85,7 +85,7 @@ Read an opaque byte array from the stream.
 </table>
 
 ### readByteArray(aLength, aBytes) ###
-<code>  
+  
 Read an opaque byte array from the stream, storing the results  
 as an array of PRUint8s.  
   
@@ -93,7 +93,7 @@ as an array of PRUint8s.
   
 @throws NS_ERROR_FAILURE if it can't read aLength bytes  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -107,7 +107,7 @@ as an array of PRUint8s.
 </table>
 
 ### readArrayBuffer(aLength, aArrayBuffer) ###
-<code>  
+  
 Read opaque bytes from the stream, storing the results in an ArrayBuffer.  
   
 @param aLength the number of bytes that must be read  
@@ -117,7 +117,7 @@ Note: passing view.buffer, where view is an ArrayBufferView of an
   
 @return The number of bytes actually read into aArrayBuffer.  
   
-</code>
+
 #### Parameters ####
 
 <table>

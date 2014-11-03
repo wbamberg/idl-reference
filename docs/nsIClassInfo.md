@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIClassInfo #
-<code>  
+  
 Provides information about a specific implementation class.  If you want  
 your class to implement nsIClassInfo, see nsIClassInfoImpl.h for  
 instructions--you most likely do not want to inherit from nsIClassInfo.  
   
-</code>
+
 ## Methods ##
 
 ### getInterfaces(count, array) ###
-<code>  
+  
 Get an ordered list of the interface ids that instances of the class   
 promise to implement. Note that nsISupports is an implicit member   
 of any such list and need not be included.   
@@ -23,9 +23,9 @@ of any such list and need not be included.
 Should set *count = 0 and *array = null and return NS_OK if getting the   
 list is not supported.  
   
-</code>
+
 ### getHelperForLanguage(language) ###
-<code>  
+  
 Get a language mapping specific helper object that may assist in using  
 objects of this class in a specific lanaguage. For instance, if asked  
 for the helper for nsIProgrammingLanguage::JAVASCRIPT this might return   
@@ -37,7 +37,7 @@ see: nsIProgrammingLanguage.idl
   
 Should return null if no helper available for given language.  
   
-</code>
+
 ## Attributes ##
 
 ### contractID ###

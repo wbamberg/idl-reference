@@ -6,40 +6,40 @@ layout: default
 </div>
 
 # nsIRDFXMLSink #
-<code>  
+  
 A "sink" that receives and processes RDF/XML. This interface is used  
 by the RDF/XML parser.  
   
-</code>
+
 ## Methods ##
 
 ### beginLoad() ###
-<code>  
+  
 Initiate the RDF/XML load.  
   
-</code>
+
 ### interrupt() ###
-<code>  
+  
 Suspend the RDF/XML load.  
   
-</code>
+
 ### resume() ###
-<code>  
+  
 Resume the RDF/XML load.  
   
-</code>
+
 ### endLoad() ###
-<code>  
+  
 Complete the RDF/XML load.  
   
-</code>
+
 ### addNameSpace(aPrefix, aURI) ###
-<code>  
+  
 Add namespace information to the RDF/XML sink.  
 @param aPrefix the namespace prefix  
 @param aURI the namespace URI  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -59,7 +59,7 @@ Add namespace information to the RDF/XML sink.
 </table>
 
 ### addXMLSinkObserver(aObserver) ###
-<code>  
+  
 Add an observer that will be notified as the RDF/XML load  
 progresses.  
 <p>  
@@ -73,7 +73,7 @@ clears the reference).
 @param aObserver the observer to add to the sink's set of  
 load observers.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -88,11 +88,11 @@ load observers.
 </table>
 
 ### removeXMLSinkObserver(aObserver) ###
-<code>  
+  
 Remove an observer from the sink's set of observers.  
 @param aObserver the observer to remove.  
   
-</code>
+
 #### Parameters ####
 
 <table>

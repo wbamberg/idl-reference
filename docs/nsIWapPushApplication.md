@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIWapPushApplication #
-<code>  
+  
 Handle WAP Push notifications.  
   
-</code>
+
 ## Methods ##
 
 ### receiveWapPush(aData, aLength, aOffset, aOptions) ###
-<code>  
+  
 Receive WAP Push message.  
   
 @param aData  
@@ -25,7 +25,7 @@ Receive WAP Push message.
 @param options  
        An object containing various attributes from lower transport layer.  
   
-</code>
+
 #### Parameters ####
 
 <table>

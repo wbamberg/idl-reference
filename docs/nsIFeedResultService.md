@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIFeedResultService #
-<code>  
+  
 nsIFeedResultService provides a globally-accessible object for retrieving  
 the results of feed processing.  
   
-</code>
+
 ## Methods ##
 
 ### addToClientReader(uri, title, subtitle, feedType) ###
-<code>  
+  
 Adds a URI to the user's specified external feed handler, or live   
 bookmarks.   
 @param   uri  
@@ -26,7 +26,7 @@ bookmarks.
 @param   feedType  
          The nsIFeed type of the feed.  See nsIFeed.idl  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -58,7 +58,7 @@ bookmarks.
 </table>
 
 ### addFeedResult(feedResult) ###
-<code>  
+  
 Registers a Feed Result object with a globally accessible service  
 so that it can be accessed by a singleton method outside the usual  
 flow of control in document loading.  
@@ -66,7 +66,7 @@ flow of control in document loading.
 @param   feedResult  
          An object implementing nsIFeedResult representing the feed.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -80,13 +80,13 @@ flow of control in document loading.
 </table>
 
 ### getFeedResult(uri) ###
-<code>  
+  
 Gets a Feed Handler object registered using addFeedResult.  
   
 @param   uri  
          The URI of the feed a handler is being requested for  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -100,13 +100,13 @@ Gets a Feed Handler object registered using addFeedResult.
 </table>
 
 ### removeFeedResult(uri) ###
-<code>  
+  
 Unregisters a Feed Handler object registered using addFeedResult.  
 @param   uri  
          The feed URI the handler was registered under. This must be  
          the same *instance* the feed was registered under.  
   
-</code>
+
 #### Parameters ####
 
 <table>

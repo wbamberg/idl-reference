@@ -6,15 +6,14 @@ layout: default
 </div>
 
 # nsIPermissionPromptService #
-<code>  
+  
 Generic permission service for access to WebAPIs, hardware, capabilities.  
   
-</code>
+
 ## Methods ##
 
 ### getPermission(aRequest) ###
-<code>  
+  
 Checks if the capability requires a permission, fires the corresponding cancel()   
 or allow() method in aRequest after consulting PermissionSettings, etc.  
   
-</code>

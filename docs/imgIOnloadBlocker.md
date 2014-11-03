@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### blockOnload(aRequest) ###
-<code>  
+  
 blockOnload  
 Called when it is appropriate to block onload for the given imgIRequest.  
   
 @param aRequest  
        The request that should block onload.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -31,7 +31,7 @@ Called when it is appropriate to block onload for the given imgIRequest.
 </table>
 
 ### unblockOnload(aRequest) ###
-<code>  
+  
 unblockOnload  
 Called when it is appropriate to unblock onload for the given  
 imgIRequest.  
@@ -39,7 +39,7 @@ imgIRequest.
 @param aRequest  
        The request that should unblock onload.  
   
-</code>
+
 #### Parameters ####
 
 <table>

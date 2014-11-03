@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### getProfileByName(aName) ###
-<code>  
+  
 Get a profile by name. This is mainly for use by the -P  
 commandline flag.  
   
 @param aName The profile name to find.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -30,13 +30,13 @@ commandline flag.
 </table>
 
 ### lockProfilePath(aDirectory, aTempDirectory) ###
-<code>  
+  
 Lock an arbitrary path as a profile. If the path does not exist, it  
 will be created and the defaults copied from the application directory.  
   
-</code>
+
 ### createProfile(aRootDir, aName) ###
-<code>  
+  
 Create a new profile.  
   
 The profile temporary directory will be chosen based on where the  
@@ -48,7 +48,7 @@ profile directory is located.
 @param aName  
        The profile name.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -69,7 +69,7 @@ profile directory is located.
 </table>
 
 ### createDefaultProfileForApp(aProfileName, aAppName, aVendorName, aProfileDefaultsDir) ###
-<code>  
+  
 Create the default profile for an application.  
   
 The profile will be typically in  
@@ -93,7 +93,7 @@ new profile directory.
         The location where the profile defaults are.  
 @return The created profile.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -136,10 +136,10 @@ new profile directory.
 </table>
 
 ### flush() ###
-<code>  
+  
 Flush the profiles list file.  
   
-</code>
+
 ## Attributes ##
 
 ### startWithLastProfile ###

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIBrowserGlue #
-<code>  
+  
 nsIBrowserGlue is a dirty and rather fluid interface to host shared utility   
 methods used by browser UI code, but which are not local to a browser window.  
 The component implementing this interface is meant to be a singleton  
@@ -22,18 +22,18 @@ browser windows to accomplish browser-related activities, such as shutdown
 sanitization (see bug #284086)  
   
   
-</code>
+
 ## Methods ##
 
 ### sanitize(aParentWindow) ###
-<code>   
+   
 Deletes privacy sensitive data according to user preferences  
   
 @param aParentWindow an optionally null window which is the parent of the   
        sanitization dialog  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -48,12 +48,11 @@ Deletes privacy sensitive data according to user preferences
 </table>
 
 ### ensurePlacesDefaultQueriesInitialized() ###
-<code>  
+  
 Add Smart Bookmarks special queries to bookmarks menu and toolbar folder.  
   
-</code>
+
 ### getMostRecentBrowserWindow() ###
-<code>  
+  
 Gets the most recent window that's a browser (but not a popup)  
   
-</code>

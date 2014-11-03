@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### visitDevice(deviceID, deviceInfo) ###
-<code>  
+  
 Called to provide information about a cache device.  
   
 @param deviceID - specifies the device being visited.  
@@ -19,7 +19,7 @@ Called to provide information about a cache device.
 @return true to start visiting all entries for this device.  
 @return false to advance to the next device.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -50,7 +50,7 @@ Called to provide information about a cache device.
 </table>
 
 ### visitEntry(deviceID, entryInfo) ###
-<code>  
+  
 Called to provide information about a cache entry.  
   
 @param deviceID - specifies the device being visited.  
@@ -60,7 +60,7 @@ Called to provide information about a cache entry.
   end of the device has been reached, advance to the next device.  
 @return false to advance to the next device.  
   
-</code>
+
 #### Parameters ####
 
 <table>

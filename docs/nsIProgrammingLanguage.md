@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIProgrammingLanguage #
-<code>  
+  
 Enumeration of Programming Languages  
   
-</code>
+
 ## Constants ##
 
 ### UNKNOWN ###

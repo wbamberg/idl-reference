@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsPISocketTransportService #
-<code>  
+  
 This is a private interface used by the internals of the networking library.  
 It will never be frozen.  Do not use it in external code.  
   
-</code>
+
 ## Methods ##
 
 ### init() ###
-<code>  
+  
 init/shutdown routines.  
   
-</code>
+
 ### shutdown() ###
 
 ## Attributes ##

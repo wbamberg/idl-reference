@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsILocale #
-<code>  
+  
 Represents one locale, which can be used for things like sorting text strings  
 and formatting numbers, dates and times.  
   
-</code>
+
 ## Methods ##
 
 ### getCategory(category) ###
-<code>  
+  
 Get the locale code for a given category.  
   
 A locale code is of the form language[-COUNTRY[-region]], where  
@@ -34,7 +34,7 @@ NSILOCALE_MESSAGES: Related to fonts, character encodings etc.
        The category of interest.  
 @return The locale code to be used for the given category.  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIWebBrowser #
-<code>  
+  
 The nsIWebBrowser interface is implemented by web browser objects.  
 Embedders use this interface during initialisation to associate  
 the new web browser instance with the embedders chrome and  
 to register any listeners. The interface may also be used at runtime  
 to obtain the content DOM window and from that the rest of the DOM.  
   
-</code>
+
 ## Methods ##
 
 ### addWebBrowserListener(aListener, aIID) ###
-<code>  
+  
 Registers a listener of the type specified by the iid to receive  
 callbacks. The browser stores a weak reference to the listener  
 to avoid any circular dependencies.  
@@ -46,7 +46,7 @@ the IID is that of the interface.
         invalid or the object did not implement the interface  
         specified by the IID.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -81,7 +81,7 @@ the IID is that of the interface.
 </table>
 
 ### removeWebBrowserListener(aListener, aIID) ###
-<code>  
+  
 Removes a previously registered listener.  
   
 @param aListener The listener to be removed.  
@@ -95,7 +95,7 @@ Removes a previously registered listener.
 @see addWebBrowserListener  
 @see nsIWeakReference  
   
-</code>
+
 #### Parameters ####
 
 <table>

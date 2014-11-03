@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIOutputIterator #
-<code>  
+  
 ...  
   
-</code>
+
 ## Methods ##
 
 ### putElement(anElementToPut) ###
-<code>  
+  
 Put |anElementToPut| into the underlying container or sequence at the position currently pointed to by this iterator.  
 The iterator and the underlying container or sequence cooperate to |Release()|  
 the replaced element, if any and if necessary, and to |AddRef()| the new element.  
@@ -23,7 +23,7 @@ useful range of the underlying container or sequence.
   
 @param anElementToPut the element to place into the underlying container or sequence  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -37,7 +37,6 @@ useful range of the underlying container or sequence.
 </table>
 
 ### stepForward() ###
-<code>  
+  
 Advance this iterator to the next position in the underlying container or sequence.  
   
-</code>

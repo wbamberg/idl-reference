@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIActivityProxy #
-<code>  
+  
 Implemented by @mozilla.org/dom/activities/proxy;1  
   
-</code>
+
 ## Methods ##
 
 ### startActivity(activity, options, window) ###

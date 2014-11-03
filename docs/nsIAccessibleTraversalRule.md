@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getMatchRoles(aRoles, aCount) ###
-<code>  
+  
 Retrieve a list of roles that the traversal rule should test for. Any node  
 with a role not in this list will automatically be ignored. An empty list  
 will match all roles. It should be assumed that this method is called once  
@@ -20,7 +20,7 @@ that would have no affect.
 @param aRoles [out] an array of the roles to match.  
 @param aCount [out] the length of the array.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -40,13 +40,13 @@ that would have no affect.
 </table>
 
 ### match(aAccessible) ###
-<code>  
+  
 Determines if a given accessible is to be accepted in our traversal rule  
   
 @param aAccessible [in] accessible to examine.  
 @return a bitfield of FILTER_MATCH and FILTER_IGNORE_SUBTREE.  
   
-</code>
+
 #### Parameters ####
 
 <table>

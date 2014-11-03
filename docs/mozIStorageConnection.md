@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # mozIStorageConnection #
-<code>  
+  
 mozIStorageConnection represents a database connection attached to  
 a specific file or to the in-memory data storage.  It is the  
 primary interface for interacting with a database, including  
@@ -17,11 +17,11 @@ errors.
   
 @threadsafe  
   
-</code>
+
 ## Methods ##
 
 ### close() ###
-<code>  
+  
 Closes a database connection.  Callers must finalize all statements created  
 for this connection prior to calling this method.  It is illegal to use  
 call this method if any asynchronous statements have been executed on this  
@@ -32,9 +32,9 @@ connection.
 @throws NS_ERROR_UNEXPECTED  
         If is called on a thread other than the one that opened it.  
   
-</code>
+
 ### clone(aReadOnly) ###
-<code>  
+  
 Clones a database connection and makes the clone read only if needed.  
   
 @param aReadOnly  
@@ -61,7 +61,7 @@ Clones a database connection and makes the clone read only if needed.
        - wal_autocheckpoint  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -87,7 +87,7 @@ Clones a database connection and makes the clone read only if needed.
 </table>
 
 ### createStatement(aSQLStatement) ###
-<code>  
+  
 Create a mozIStorageStatement for the given SQL expression.  The  
 expression may use ? to indicate sequential numbered arguments,  
 ?1, ?2 etc. to indicate specific numbered arguments or :name and   
@@ -97,7 +97,7 @@ $var to indicate named arguments.
        The SQL statement to execute.  
 @return a new mozIStorageStatement  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -122,12 +122,12 @@ $var to indicate named arguments.
 </table>
 
 ### executeSimpleSQL(aSQLStatement) ###
-<code>  
+  
 Execute a SQL expression, expecting no arguments.  
   
 @param aSQLStatement  The SQL statement to execute  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -141,14 +141,14 @@ Execute a SQL expression, expecting no arguments.
 </table>
 
 ### tableExists(aTableName) ###
-<code>  
+  
 Check if the given table exists.  
   
 @param aTableName  
        The table to check  
 @return TRUE if table exists, FALSE otherwise.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -173,13 +173,13 @@ Check if the given table exists.
 </table>
 
 ### indexExists(aIndexName) ###
-<code>  
+  
 Check if the given index exists.  
   
 @param aIndexName   The index to check  
 @return TRUE if the index exists, FALSE otherwise.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -204,29 +204,29 @@ Check if the given index exists.
 </table>
 
 ### beginTransaction() ###
-<code>  
+  
 Begin a new transaction.  sqlite default transactions are deferred.  
 If a transaction is active, throws an error.  
   
-</code>
+
 ### beginTransactionAs(transactionType) ###
 
 ### commitTransaction() ###
-<code>  
+  
 Commits the current transaction.  If no transaction is active,  
 @throws NS_ERROR_UNEXPECTED.  
 @throws NS_ERROR_NOT_INITIALIZED.  
   
-</code>
+
 ### rollbackTransaction() ###
-<code>  
+  
 Rolls back the current transaction.  If no transaction is active,  
 @throws NS_ERROR_UNEXPECTED.  
 @throws NS_ERROR_NOT_INITIALIZED.  
   
-</code>
+
 ### createTable(aTableName, aTableSchema) ###
-<code>  
+  
 Create the table with the given name and schema.  
   
 If the table already exists, NS_ERROR_FAILURE is thrown.  
@@ -244,7 +244,7 @@ the same as what is specified, but that doesn't happen currently.)
         If the table already exists or could not be created for any other  
         reason.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -266,7 +266,7 @@ the same as what is specified, but that doesn't happen currently.)
 </table>
 
 ### setGrowthIncrement(aIncrement, aDatabaseName) ###
-<code>  
+  
 Controls SQLITE_FCNTL_CHUNK_SIZE setting in sqlite. This helps avoid fragmentation  
 by growing/shrinking the database file in SQLITE_FCNTL_CHUNK_SIZE increments. To  
 conserve memory on systems short on storage space, this function will have no effect  
@@ -280,7 +280,7 @@ on mobile devices or if less than 500MiB of space is left available.
 @throws NS_ERROR_FILE_TOO_BIG  
         If the system is short on storage space.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -303,7 +303,7 @@ on mobile devices or if less than 500MiB of space is left available.
 </table>
 
 ### enableModule(aModuleName) ###
-<code>  
+  
 Enable a predefined virtual table implementation.  
   
 @param aModuleName  
@@ -312,7 +312,7 @@ Enable a predefined virtual table implementation.
 @throws NS_ERROR_FAILURE  
         For unknown module names.  
   
-</code>
+
 #### Parameters ####
 
 <table>

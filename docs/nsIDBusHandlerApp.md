@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIDBusHandlerApp #
-<code>  
+  
 nsIDBusHandlerApp represents local applications launched by DBus a message  
 invoking a method taking a single string argument descibing a URI  
   
-</code>
+
 ## Attributes ##
 
 ### service ###

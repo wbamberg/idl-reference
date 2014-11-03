@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### loadSubScript(url, obj, charset) ###
-<code>  
+  
 This method should only be called from JS!  
 In JS, the signature looks like:  
 rv loadSubScript (url [, obj] [, charset]);  
@@ -23,7 +23,7 @@ rv loadSubScript (url [, obj] [, charset]);
                as ASCII.  
 @retval rv the value returned by the sub-script  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -54,7 +54,7 @@ rv loadSubScript (url [, obj] [, charset]);
 </table>
 
 ### loadSubScriptWithOptions(url, options) ###
-<code>  
+  
 This method should only be called from JS!  
 In JS, the signature looks like:  
 rv = loadSubScript (url, optionsObject)  
@@ -66,7 +66,7 @@ rv = loadSubScript (url, optionsObject)
                      - ignoreCache: if set to true, will bypass the cache for reading the file.  
 @retval rv the value returned by the sub-script  
   
-</code>
+
 #### Parameters ####
 
 <table>

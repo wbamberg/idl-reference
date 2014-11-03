@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIModule #
-<code>  
+  
 The nsIModule interface.  
   
-</code>
+
 ## Methods ##
 
 ### getClassObject(aCompMgr, aClass, aIID, aResult) ###
-<code>   
+   
 Object Instance Creation  
   
 Obtains a Class Object from a nsIModule for a given CID and IID pair.    
@@ -25,7 +25,7 @@ query to a nsIClassInfo.
 @param aIID      : IID of interface requested  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -51,7 +51,7 @@ query to a nsIClassInfo.
 </table>
 
 ### registerSelf(aCompMgr, aLocation, aLoaderStr, aType) ###
-<code>  
+  
 One time registration callback  
   
 When the nsIModule is discovered, this method will be  
@@ -62,7 +62,7 @@ called so that any setup registration can be preformed.
 @param aLoaderStr: Opaque loader specific string  
 @param aType     : Loader Type being used to load this module   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -94,7 +94,7 @@ called so that any setup registration can be preformed.
 </table>
 
 ### unregisterSelf(aCompMgr, aLocation, aLoaderStr) ###
-<code>  
+  
 One time unregistration callback  
   
 When the nsIModule is being unregistered, this method will be  
@@ -105,7 +105,7 @@ called so that any unregistration can be preformed
 @param aLoaderStr : Opaque loader specific string  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -131,7 +131,7 @@ called so that any unregistration can be preformed
 </table>
 
 ### canUnload(aCompMgr) ###
-<code>   
+   
 Module load management  
   
 @param aCompMgr  : The global component manager  
@@ -144,7 +144,7 @@ Module load management
       PR_TRUE.   
 	Returning PR_FALSE guaratees that the module won't be unloaded.  
   
-</code>
+
 #### Parameters ####
 
 <table>

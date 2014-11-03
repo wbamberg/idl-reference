@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### updateStateChanged(aUpdate, state) ###
-<code>  
+  
 aUpdate has changed its state.  
   
 @param aUpdate  
@@ -18,7 +18,7 @@ aUpdate has changed its state.
 @param event  
        See enumeration above  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -38,14 +38,14 @@ aUpdate has changed its state.
 </table>
 
 ### applicationCacheAvailable(applicationCache) ###
-<code>  
+  
 Informs the observer about an application being available to associate.  
   
 @param applicationCache  
        The application cache instance that has been created or found by the   
        update to associate with  
   
-</code>
+
 #### Parameters ####
 
 <table>

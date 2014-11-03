@@ -6,23 +6,23 @@ layout: default
 </div>
 
 # nsIDOMWindowCollection #
-<code>  
+  
 The nsIDOMWindowCollection interface is an interface for a  
 collection of DOM window objects.  
   
-</code>
+
 ## Methods ##
 
 ### item(index) ###
-<code>  
+  
 Method for accessing an item in this collection by index.  
   
-</code>
+
 ### namedItem(name) ###
-<code>  
+  
 Method for accessing an item in this collection by window name.  
   
-</code>
+
 ## Attributes ##
 
 ### length ###

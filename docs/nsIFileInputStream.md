@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIFileInputStream #
-<code>  
+  
 An input stream that allows you to read from a file.  
   
-</code>
+
 ## Methods ##
 
 ### init(file, ioFlags, perm, behaviorFlags) ###
-<code>  
+  
 @param file          file to read from  
 @param ioFlags       file open flags listed in prio.h (see  
                      PR_Open documentation) or -1 to open the  
@@ -23,7 +23,7 @@ An input stream that allows you to read from a file.
 @param behaviorFlags flags specifying various behaviors of the class  
        (see enumerations in the class)  
   
-</code>
+
 #### Parameters ####
 
 <table>

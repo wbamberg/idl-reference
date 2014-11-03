@@ -10,8 +10,7 @@ layout: default
 ## Methods ##
 
 ### onCacheEntryDoomed(aResult) ###
-<code>  
+  
 Callback invoked after an entry or entries has/have been  
 doomed from the cache.  
   
-</code>

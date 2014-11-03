@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIBlocklistPrompt #
-<code>  
+  
 nsIBlocklistPrompt is used, if available, by the default implementation of   
 nsIBlocklistService to display a confirmation UI to the user before blocking  
 extensions/plugins.  
   
-</code>
+
 ## Methods ##
 
 ### prompt(aAddons, aCount) ###
-<code>  
+  
 Prompt the user about newly blocked addons. The prompt is then resposible  
 for soft-blocking any addons that need to be afterwards  
   
@@ -32,7 +32,7 @@ for soft-blocking any addons that need to be afterwards
 @param  aCount  
         The number of addons  
   
-</code>
+
 #### Parameters ####
 
 <table>

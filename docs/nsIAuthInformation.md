@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIAuthInformation #
-<code>  
+  
 A object that hold authentication information. The caller of  
 nsIAuthPrompt2::promptUsernameAndPassword or  
 nsIAuthPrompt2::promptPasswordAsync provides an object implementing this  
@@ -15,7 +15,7 @@ the dialog. After the user entered the authentication information, it should
 set the attributes of this object to indicate to the caller what was entered  
 by the user.  
   
-</code>
+
 ## Attributes ##
 
 ### flags ###

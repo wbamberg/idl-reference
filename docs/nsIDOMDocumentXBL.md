@@ -10,10 +10,10 @@ layout: default
 ## Methods ##
 
 ### getAnonymousNodes(elt) ###
-<code>  
+  
 See the MDC documentation for what these methods do.  
   
-</code>
+
 ### getAnonymousElementByAttribute(elt, attrName, attrValue) ###
 
 ### getBindingParent(node) ###

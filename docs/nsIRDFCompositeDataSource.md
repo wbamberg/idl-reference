@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIRDFCompositeDataSource #
-<code>  
+  
 An nsIRDFCompositeDataSource composes individual data sources, providing  
 the illusion of a single, coherent RDF graph.  
   
-</code>
+
 ## Methods ##
 
 ### AddDataSource(aDataSource) ###
-<code>  
+  
 Add a datasource the the composite data source.  
 @param aDataSource the datasource to add to composite  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -32,11 +32,11 @@ Add a datasource the the composite data source.
 </table>
 
 ### RemoveDataSource(aDataSource) ###
-<code>  
+  
 Remove a datasource from the composite data source.  
 @param aDataSource the datasource to remove from the composite  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -50,12 +50,12 @@ Remove a datasource from the composite data source.
 </table>
 
 ### GetDataSources() ###
-<code>  
+  
 Retrieve the datasources in the composite data source.  
 @return an nsISimpleEnumerator that will enumerate each  
 of the datasources in the composite  
   
-</code>
+
 #### Returns ####
 
 <table>

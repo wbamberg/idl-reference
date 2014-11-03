@@ -6,55 +6,55 @@ layout: default
 </div>
 
 # nsIRDFService #
-<code>  
+  
 The RDF service interface. This is a singleton object which should be  
 obtained from the <code>nsServiceManager</code>.  
   
-</code>
+
 ## Methods ##
 
 ### GetResource(aURI) ###
-<code>  
+  
 Construct an RDF resource from a single-byte URI. <code>nsIRDFService</code>  
 caches resources that are in-use, so multiple calls to <code>GetResource()</code>  
 for the same <code>uri</code> will return identical pointers. FindResource  
 is used to find out whether there already exists a resource corresponding to that url.  
   
-</code>
+
 ### GetUnicodeResource(aURI) ###
-<code>  
+  
 Construct an RDF resource from a Unicode URI. This is provided  
 as a convenience method, allowing automatic, in-line C++  
 conversion from <code>nsString</code> objects. The <code>uri</code> will  
 be converted to a single-byte representation internally.  
   
-</code>
+
 ### GetAnonymousResource() ###
 
 ### GetLiteral(aValue) ###
-<code>  
+  
 Construct an RDF literal from a Unicode string.  
   
-</code>
+
 ### GetDateLiteral(aValue) ###
-<code>  
+  
 Construct an RDF literal from a PRTime.  
   
-</code>
+
 ### GetIntLiteral(aValue) ###
-<code>  
+  
 Construct an RDF literal from an int.  
   
-</code>
+
 ### getBlobLiteral(aValue, aLength) ###
-<code>  
+  
 Construct an RDF literal from a data blob  
   
-</code>
+
 ### IsAnonymousResource(aResource) ###
 
 ### RegisterResource(aResource, aReplace) ###
-<code>  
+  
 Registers a resource with the RDF system, making it unique w.r.t.  
 GetResource.  
   
@@ -78,9 +78,9 @@ implementation of the resource cache in nsIRDFService uses the
 URI maintained "internally" in the resource as a key into the  
 cache rather than copying the resource URI itself.)  
   
-</code>
+
 ### UnregisterResource(aResource) ###
-<code>  
+  
 Called to notify the resource manager that a resource is no  
 longer in use. This method should only be called from the  
 destructor of a "custom" resource implementation to notify the  
@@ -93,9 +93,9 @@ nsIRDFResource::GetValue() as a key into its cache. For this
 reason, you must always un-cache the resource <b>before</b>  
 releasing the storage for the <code>const char*</code> URI.  
   
-</code>
+
 ### RegisterDataSource(aDataSource, aReplace) ###
-<code>  
+  
 Register a <i>named data source</i>. The RDF service will call  
 <code>nsIRDFDataSource::GetURI()</code> to determine the URI under  
 which to register the data source.  
@@ -106,16 +106,16 @@ registers with the service once it is initialized (via
 <code>nsIRDFDataSource::Init()</code>), and unregisters when the  
 last reference to the data source is released.  
   
-</code>
+
 ### UnregisterDataSource(aDataSource) ###
-<code>  
+  
 Unregister a <i>named data source</i>. The RDF service will call  
 <code>nsIRDFDataSource::GetURI()</code> to determine the URI under which the  
 data source was registered.  
   
-</code>
+
 ### GetDataSource(aURI) ###
-<code>  
+  
 Get the <i>named data source</i> corresponding to the URI. If a data  
 source has been registered via <code>RegisterDataSource()</code>, that  
 data source will be returned.  
@@ -127,11 +127,10 @@ the RDF service will call the constructor to attempt to construct a
 new data source. If construction is successful, the data source will  
 be initialized via <code>nsIRDFDataSource::Init()</code>.  
   
-</code>
+
 ### GetDataSourceBlocking(aURI) ###
-<code>  
+  
 Same as GetDataSource, but if a remote/XML data source needs to be  
 constructed, then this method will issue a <b>blocking</b> Refresh  
 call on that data source.  
   
-</code>

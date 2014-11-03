@@ -6,25 +6,25 @@ layout: default
 </div>
 
 # nsIAppShell #
-<code>  
+  
 Interface for the native event system layer.  This interface is designed  
 to be used on the main application thread only.  
   
-</code>
+
 ## Methods ##
 
 ### run() ###
-<code>  
+  
 Enter an event loop.  Don't leave until exit() is called.  
   
-</code>
+
 ### exit() ###
-<code>  
+  
 Exit the handle event loop  
   
-</code>
+
 ### favorPerformanceHint(favorPerfOverStarvation, starvationDelay) ###
-<code>  
+  
 Give hint to native event queue notification mechanism. If the native  
 platform needs to tradeoff performance vs. native event starvation this  
 hint tells the native dispatch code which to favor.  The default is to  
@@ -39,9 +39,9 @@ The starvationDelay arg is only used when favorPerfOverStarvation is
 PR_FALSE. It is the amount of time in milliseconds to wait before the  
 PR_FALSE actually takes effect.  
   
-</code>
+
 ### suspendNative() ###
-<code>  
+  
 Suspends the use of additional platform-specific methods (besides the  
 nsIAppShell->run() event loop) to run Gecko events on the main  
 application thread.  Under some circumstances these "additional methods"  
@@ -55,16 +55,16 @@ events will stop being processed until resumeNative() is called (even
 if a plugin or library is temporarily processing events on a nested  
 event loop).  
   
-</code>
+
 ### resumeNative() ###
-<code>  
+  
 Resumes the use of additional platform-specific methods to run Gecko  
 events on the main application thread.  Calls to suspendNative() and  
 resumeNative() may be nested.  On some platforms this will be a no-op.  
   
-</code>
+
 ### runInStableState(runnable) ###
-<code>  
+  
 Allows running of a "synchronous section", in the form of an nsIRunnable  
 once the event loop has reached a "stable state". We've reached a stable  
 state when the currently executing task/event has finished, see:  
@@ -73,14 +73,14 @@ In practice this runs aRunnable once the currently executing event
 finishes. If called multiple times per task/event, all the runnables will  
 be executed, in the order in which runInStableState() was called.  
   
-</code>
+
 ### runBeforeNextEvent(runnable) ###
-<code>  
+  
 Run the given runnable before the next iteration of the event loop (this  
 includes native events too). If a nested loop is spawned within the current  
 event then the runnable will not be run until that loop has terminated.  
   
-</code>
+
 ## Attributes ##
 
 ### eventloopNestingLevel ###

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIASN1Sequence #
-<code>  
+  
 This represents a sequence of ASN.1 objects,  
 where ASN.1 is "Abstract Syntax Notation number One".  
   
@@ -29,7 +29,7 @@ when working with visual reprenstation of ASN.1 objects
 in a human user interface, like in a tree widget  
 where open/close state of nodes must be remembered.  
   
-</code>
+
 ## Attributes ##
 
 ### ASN1Objects ###

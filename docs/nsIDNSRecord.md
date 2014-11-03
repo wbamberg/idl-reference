@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDNSRecord #
-<code>  
+  
 nsIDNSRecord  
   
 this interface represents the result of a DNS lookup.  since a DNS  
@@ -14,11 +14,11 @@ query may return more than one resolved IP address, the record acts
 like an enumerator, allowing the caller to easily step through the  
 list of IP addresses.  
   
-</code>
+
 ## Methods ##
 
 ### getNextAddr(aPort) ###
-<code>  
+  
 this function copies the value of the next IP address into the  
 given NetAddr struct and increments the internal address iterator.  
   
@@ -28,7 +28,7 @@ given NetAddr struct and increments the internal address iterator.
 @throws NS_ERROR_NOT_AVAILABLE if there is not another IP address in  
 the record.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -42,7 +42,7 @@ the record.
 </table>
 
 ### getScriptableNextAddr(aPort) ###
-<code>  
+  
 this function returns the value of the next IP address as a  
 scriptable address and increments the internal address iterator.  
   
@@ -52,7 +52,7 @@ scriptable address and increments the internal address iterator.
 @throws NS_ERROR_NOT_AVAILABLE if there is not another IP address in  
 the record.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -66,27 +66,27 @@ the record.
 </table>
 
 ### getNextAddrAsString() ###
-<code>  
+  
 this function returns the value of the next IP address as a  
 string and increments the internal address iterator.  
   
 @throws NS_ERROR_NOT_AVAILABLE if there is not another IP address in  
 the record.  
   
-</code>
+
 ### hasMore() ###
-<code>  
+  
 this function returns true if there is another address in the record.  
   
-</code>
+
 ### rewind() ###
-<code>  
+  
 this function resets the internal address iterator to the first  
 address in the record.  
   
-</code>
+
 ### reportUnusable(aPort) ###
-<code>  
+  
 This function indicates that the last address obtained via getNextAddr*()  
 was not usuable and should be skipped in future uses of this  
 record if other addresses are available.  
@@ -94,7 +94,7 @@ record if other addresses are available.
 @param aPort is the port number associated with the failure, if any.  
        It may be zero if not applicable.  
   
-</code>
+
 #### Parameters ####
 
 <table>

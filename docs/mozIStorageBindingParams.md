@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### bindByName(aName, aValue) ###
-<code>  
+  
 Binds aValue to the parameter with the name aName.  
   
 @param aName  
@@ -18,7 +18,7 @@ Binds aValue to the parameter with the name aName.
 @param aValue  
        The value to bind.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -54,7 +54,7 @@ Binds aValue to the parameter with the name aName.
 ### bindAdoptedBlobByName(aName, aValue, aValueSize) ###
 
 ### bindByIndex(aIndex, aValue) ###
-<code>  
+  
 Binds aValue to the parameter with the index aIndex.  
   
 @param aIndex  
@@ -62,7 +62,7 @@ Binds aValue to the parameter with the index aIndex.
 @param aValue  
        The value to bind.  
   
-</code>
+
 #### Parameters ####
 
 <table>

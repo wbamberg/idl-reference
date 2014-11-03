@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIWebBrowserFindInFrames #
-<code>  
+  
 nsIWebBrowserFindInFrames  
   
 Controls how find behaves when multiple frames or iframes are present.  
   
 Get by doing a QueryInterface from nsIWebBrowserFind.  
   
-</code>
+
 ## Attributes ##
 
 ### currentSearchFrame ###

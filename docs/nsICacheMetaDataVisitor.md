@@ -10,7 +10,6 @@ layout: default
 ## Methods ##
 
 ### visitMetaDataElement(key, value) ###
-<code>  
+  
 Called for each key/value pair in the meta data for a cache entry  
   
-</code>

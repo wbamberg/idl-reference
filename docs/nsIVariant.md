@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIVariant #
-<code>  
+  
 XPConnect has magic to transparently convert between nsIVariant and JS types.  
 We mark the interface [scriptable] so that JS can use methods  
 that refer to this interface. But we mark all the methods and attributes  
 [noscript] since any nsIVariant object will be automatically converted to a  
 JS type anyway.  
   
-</code>
+
 ## Methods ##
 
 ### getAsInt8() ###

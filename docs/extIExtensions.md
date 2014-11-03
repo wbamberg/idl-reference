@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # extIExtensions #
-<code>  
+  
 Interface representing a list of all installed extensions  
   
-</code>
+
 ## Methods ##
 
 ### has(aId) ###
-<code>  
+  
 Determines if an extension exists with the given id.  
 @param   aId  
          The id of an extension  
 @returns true if an extension exists with the given id,  
          false otherwise.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -46,14 +46,14 @@ Determines if an extension exists with the given id.
 </table>
 
 ### get(aId) ###
-<code>  
+  
 Gets a extIExtension object for an extension.  
 @param   aId  
          The id of an extension  
 @returns An extension object or null if no extension exists  
          with the given id.  
   
-</code>
+
 #### Parameters ####
 
 <table>

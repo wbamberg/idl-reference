@@ -6,38 +6,38 @@ layout: default
 </div>
 
 # nsIIccProvider #
-<code>  
+  
 XPCOM component (in the content process) that provides the ICC information.  
   
-</code>
+
 ## Methods ##
 
 ### registerIccMsg(clientId, listener) ###
-<code>  
+  
 Called when a content process registers receiving unsolicited messages from  
 RadioInterfaceLayer in the chrome process. Only a content process that has  
 the 'mobileconnection' permission is allowed to register.  
   
-</code>
+
 ### unregisterIccMsg(clientId, listener) ###
 
 ### getIccInfo(clientId) ###
-<code>  
+  
 UICC Information  
   
-</code>
+
 ### getCardState(clientId) ###
-<code>  
+  
 Card State  
   
 One of the nsIIccProvider.CARD_STATE_* values.  
   
-</code>
+
 ### sendStkResponse(clientId, window, command, response) ###
-<code>  
+  
 STK interfaces.  
   
-</code>
+
 ### sendStkMenuSelection(clientId, window, itemIdentifier, helpRequested) ###
 
 ### sendStkTimerExpiration(clientId, window, timer) ###
@@ -45,10 +45,10 @@ STK interfaces.
 ### sendStkEventDownload(clientId, window, event) ###
 
 ### getCardLockState(clientId, window, lockType) ###
-<code>  
+  
 Card lock interfaces.  
   
-</code>
+
 ### unlockCardLock(clientId, window, info) ###
 
 ### setCardLock(clientId, window, info) ###
@@ -56,26 +56,26 @@ Card lock interfaces.
 ### getCardLockRetryCount(clientId, window, lockType) ###
 
 ### readContacts(clientId, window, contactType) ###
-<code>  
+  
 Phonebook interfaces.  
   
-</code>
+
 ### updateContact(clientId, window, contactType, contact, pin2) ###
 
 ### iccOpenChannel(clientId, window, aid) ###
-<code>  
+  
 Secure Card Icc communication channel  
   
-</code>
+
 ### iccExchangeAPDU(clientId, window, channel, apdu) ###
 
 ### iccCloseChannel(clientId, window, channel) ###
 
 ### matchMvno(clientId, window, mvnoType, mvnoData) ###
-<code>  
+  
 Helpers  
   
-</code>
+
 ## Constants ##
 
 ### CARD_STATE_UNKNOWN ###

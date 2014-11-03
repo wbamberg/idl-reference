@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsICache #
-<code>  
+  
 nsICache is a namespace for various cache constants.  It does not represent  
 an actual object.  
   
-</code>
+
 ## Constants ##
 
 ### ACCESS_NONE ###

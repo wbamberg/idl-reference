@@ -6,43 +6,43 @@ layout: default
 </div>
 
 # nsIPrintSettings #
-<code>  
+  
 Simplified graphics interface for JS rendering.  
   
-</code>
+
 ## Methods ##
 
 ### SetPrintOptions(aType, aTurnOnOff) ###
-<code>  
+  
 Set PrintOptions   
   
-</code>
+
 ### GetPrintOptions(aType) ###
-<code>  
+  
 Get PrintOptions   
   
-</code>
+
 ### GetPrintOptionsBits() ###
-<code>  
+  
 Set PrintOptions Bit field  
   
-</code>
+
 ### GetEffectivePageSize(aWidth, aHeight) ###
-<code>  
+  
 Get the page size in twips, considering the  
 orientation (portrait or landscape).  
   
-</code>
+
 ### clone() ###
-<code>  
+  
 Makes a new copy  
   
-</code>
+
 ### assign(aPS) ###
-<code>  
+  
 Assigns the internal values from the "in" arg to the current object  
   
-</code>
+
 ### SetMarginInTwips(aMargin) ###
 
 ### SetEdgeInTwips(aEdge) ###
@@ -52,7 +52,7 @@ Assigns the internal values from the "in" arg to the current object
 ### GetEdgeInTwips(aEdge) ###
 
 ### SetupSilentPrinting() ###
-<code>  
+  
 We call this function so that anything that requires a run of the event loop  
 can do so safely. The print dialog runs the event loop but in silent printing  
 that doesn't happen.  
@@ -60,9 +60,9 @@ that doesn't happen.
 Either this or ShowPrintDialog (but not both) MUST be called by the print engine  
 before printing, otherwise printing can fail on some platforms.  
   
-</code>
+
 ### SetUnwriteableMarginInTwips(aEdge) ###
-<code>  
+  
 Sets/Gets the "unwriteable margin" for the page format.  This defines  
 the boundary from which we'll measure the EdgeInTwips and MarginInTwips   
 attributes, to place the headers and content, respectively.  
@@ -71,11 +71,11 @@ Note: Implementations of SetUnwriteableMarginInTwips should handle
 negative margin values by falling back on the system default for  
 that margin.  
   
-</code>
+
 ### GetUnwriteableMarginInTwips(aEdge) ###
 
 ### GetPageRanges(aPages) ###
-<code>  
+  
 Get more accurate print ranges from the superior interval   
 (startPageRange, endPageRange). The aPages array is populated with a   
 list of pairs (start, end), where the endpoints are included. The print   
@@ -84,7 +84,7 @@ ranges (start, end), must not overlap and must be in the
   
 If there are no print ranges the aPages array is cleared.  
   
-</code>
+
 ## Attributes ##
 
 ### printSession ###

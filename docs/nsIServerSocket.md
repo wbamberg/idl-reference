@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIServerSocket #
-<code>  
+  
 nsIServerSocket  
   
 An interface to a server socket that can accept incoming connections.  
   
-</code>
+
 ## Methods ##
 
 ### init(aPort, aLoopbackOnly, aBackLog) ###
-<code> @} */  
-</code><code>  
+ @} */  
+  
 init  
   
 This method initializes a server socket.  
@@ -34,7 +34,7 @@ This method initializes a server socket.
        This parameter may be silently limited by the operating system.  
        Pass -1 to use the default value.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -66,7 +66,7 @@ This method initializes a server socket.
 </table>
 
 ### initSpecialConnection(aPort, aFlags, aBackLog) ###
-<code>  
+  
 initSpecialConnection  
   
 This method initializes a server socket and offers the ability to have  
@@ -82,7 +82,7 @@ that socket not get terminated if Gecko is set offline.
        This parameter may be silently limited by the operating system.  
        Pass -1 to use the default value.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -111,7 +111,7 @@ that socket not get terminated if Gecko is set offline.
 </table>
 
 ### initWithAddress(aAddr, aBackLog) ###
-<code>  
+  
 initWithAddress  
   
 This method initializes a server socket, and binds it to a particular  
@@ -124,7 +124,7 @@ local address (and hence a particular local network interface).
        This parameter may be silently limited by the operating system.  
        Pass -1 to use the default value.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -146,7 +146,7 @@ local address (and hence a particular local network interface).
 </table>
 
 ### initWithFilename(aPath, aPermissions, aBacklog) ###
-<code>  
+  
 initWithFilename  
   
 This method initializes a Unix domain or "local" server socket. Such  
@@ -198,7 +198,7 @@ that the permissions on the containing directory (execute) have
 always applied, so creating sockets in appropriately protected  
 directories should be secure on both old and new systems.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -220,7 +220,7 @@ directories should be secure on both old and new systems.
 </table>
 
 ### close() ###
-<code>  
+  
 close  
   
 This method closes a server socket.  This does not affect already  
@@ -228,9 +228,9 @@ connected client sockets (i.e., the nsISocketTransport instances
 created from this server socket).  This will cause the onStopListening  
 event to asynchronously fire with a status of NS_BINDING_ABORTED.  
   
-</code>
+
 ### asyncListen(aListener) ###
-<code>  
+  
 asyncListen  
   
 This method puts the server socket in the listening state.  It will  
@@ -245,7 +245,7 @@ transport (nsISocketTransport).  See below for more details.
 @param aListener  
        The listener to be notified when client connections are accepted.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -259,7 +259,7 @@ transport (nsISocketTransport).  See below for more details.
 </table>
 
 ### getAddress() ###
-<code>  
+  
 Returns the address to which this server socket is bound.  Since a  
 server socket may be bound to multiple network devices, this address  
 may not necessarily be specific to a single network device.  In the  
@@ -268,7 +268,7 @@ indicate a server socket bound to all network devices.  Therefore,
 this method cannot be used to determine the IP address of the local  
 system.  See nsIDNSService::myHostName if this is what you need.  
   
-</code>
+
 ## Attributes ##
 
 ### port ###

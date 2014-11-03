@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINetUtil #
-<code>  
+  
 nsINetUtil provides various network-related utility methods.  
   
-</code>
+
 ## Methods ##
 
 ### parseContentType(aTypeHeader, aCharset, aHadCharset) ###
-<code>  
+  
 Parse a content-type header and return the content type and  
 charset (if any).  
   
@@ -23,7 +23,7 @@ charset (if any).
 @param [out] aHadCharset whether a charset was explicitly specified.  
 @return the MIME type specified in the header, in lower-case.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ charset (if any).
 </table>
 
 ### protocolHasFlags(aURI, aFlag) ###
-<code>  
+  
 Test whether the given URI's handler has the given protocol flags.  
   
 @param aURI the URI in question  
@@ -70,7 +70,7 @@ Test whether the given URI's handler has the given protocol flags.
 @return whether the protocol handler for aURI has all the flags  
         in aFlags.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -102,7 +102,7 @@ Test whether the given URI's handler has the given protocol flags.
 </table>
 
 ### URIChainHasFlags(aURI, aFlags) ###
-<code>  
+  
 Test whether the protocol handler for this URI or that for any of  
 its inner URIs has the given protocol flags.  This will QI aURI to  
 nsINestedURI and walk the nested URI chain.  
@@ -113,7 +113,7 @@ nsINestedURI and walk the nested URI chain.
 @return whether any of the protocol handlers involved have all the flags  
         in aFlags.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -145,27 +145,27 @@ nsINestedURI and walk the nested URI chain.
 </table>
 
 ### toImmutableURI(aURI) ###
-<code>  
+  
 Take aURI and produce an immutable version of it for the caller.  If aURI  
 is immutable this will be aURI itself; otherwise this will be a clone,  
 marked immutable if possible.  Passing null to this method is allowed; in  
 that case it will return null.  
   
-</code>
+
 ### newSimpleNestedURI(aURI) ###
-<code>  
+  
 Create a simple nested URI using the result of  
 toImmutableURI on the passed-in aURI which may not be null.  
 Note: The return URI will not have had its spec set yet.  
   
-</code>
+
 ### escapeString(aString, aEscapeType) ###
-<code>  
+  
 escape a string with %00-style escaping  
   
-</code>
+
 ### escapeURL(aStr, aFlags) ###
-<code>  
+  
 %XX-Escape invalid chars in a URL segment.   
   
 @param aStr the URL to be escaped  
@@ -174,7 +174,7 @@ escape a string with %00-style escaping
 @return the escaped string (the string itself if escaping did not happen)  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -205,7 +205,7 @@ escape a string with %00-style escaping
 </table>
 
 ### unescapeString(aStr, aFlags) ###
-<code>  
+  
 Expands URL escape sequences  
   
 @param aStr the URL to be unescaped  
@@ -214,7 +214,7 @@ Expands URL escape sequences
               unescaped  
 @return unescaped string  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -247,7 +247,7 @@ Expands URL escape sequences
 </table>
 
 ### extractCharsetFromContentType(aTypeHeader, aCharset, aCharsetStart, aCharsetEnd) ###
-<code>  
+  
 Extract the charset parameter location and value from a content-type  
 header.  
   
@@ -269,7 +269,7 @@ header.
 cases when parseContentType would claim to have a charset, if the type  
 that won out does not have a charset parameter specified.  
   
-</code>
+
 #### Parameters ####
 
 <table>

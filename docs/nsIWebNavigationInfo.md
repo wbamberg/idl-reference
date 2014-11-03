@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIWebNavigationInfo #
-<code>  
+  
 The nsIWebNavigationInfo interface exposes a way to get information  
 on the capabilities of Gecko webnavigation objects.  
   
-</code>
+
 ## Methods ##
 
 ### isTypeSupported(aType, aWebNav) ###
-<code>  
+  
 Query whether aType is supported.  
 @param aType the MIME type in question.  
 @param aWebNav the nsIWebNavigation object for which the request  
@@ -27,7 +27,7 @@ Query whether aType is supported.
 @note This method may rescan plugins to ensure that they're properly  
       registered for the types they support.  
   
-</code>
+
 #### Parameters ####
 
 <table>

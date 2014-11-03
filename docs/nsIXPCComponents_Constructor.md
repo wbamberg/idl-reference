@@ -6,8 +6,7 @@ layout: default
 </div>
 
 # nsIXPCComponents_Constructor #
-<code>  
+  
 interface of Components.Constructor  
 (interesting stuff only reflected into JavaScript)  
   
-</code>

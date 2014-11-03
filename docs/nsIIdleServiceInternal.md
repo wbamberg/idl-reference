@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### resetIdleTimeOut(idleDeltaInMS) ###
-<code>  
+  
 "Resets the idle time to the value specified."  
   
 @param idleDelta the time (in milliseconds) since the last user inter  
                  action  
 /  
-</code>
+
 #### Parameters ####
 
 <table>

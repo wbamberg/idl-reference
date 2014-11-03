@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### seek(whence, offset) ###
-<code>  
+  
  seek  
   
  This method moves the stream offset of the steam implementing this  
@@ -27,7 +27,7 @@ layout: default
   
   @throws NS_BASE_STREAM_CLOSED if called on a closed stream.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -52,7 +52,7 @@ layout: default
 </table>
 
 ### tell() ###
-<code>  
+  
  tell  
   
  This method reports the current offset, in bytes, from the start of the   
@@ -60,16 +60,16 @@ layout: default
   
   @throws NS_BASE_STREAM_CLOSED if called on a closed stream.  
   
-</code>
+
 ### setEOF() ###
-<code>  
+  
  setEOF  
   
  This method truncates the stream at the current offset.  
   
   @throws NS_BASE_STREAM_CLOSED if called on a closed stream.  
   
-</code>
+
 ## Constants ##
 
 ### NS_SEEK_SET ###

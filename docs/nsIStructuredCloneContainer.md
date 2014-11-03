@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIStructuredCloneContainer #
-<code>  
+  
 This interface acts as a container for an object serialized using the  
 structured clone algorithm.  
   
@@ -19,33 +19,33 @@ stores by calling deserializeToVariant.  You can also get a base-64-encoded
 string containing a copy of the container's serialized data, using  
 getDataAsBase64.  
   
-</code>
+
 ## Methods ##
 
 ### initFromJSVal(aData) ###
-<code>  
+  
 Initialize this structured clone container so it contains a clone of the  
 given jsval.  
   
-</code>
+
 ### initFromBase64(aData, aFormatVersion) ###
-<code>  
+  
 Initialize this structured clone container from a base-64-encoded byte  
 stream, stored in aData.  aFormatVersion should be the version of the  
 structured clone algorithm which was used to generate aData.  
   
-</code>
+
 ### deserializeToVariant() ###
-<code>  
+  
 Deserialize the object this container holds, returning it wrapped as  
 an nsIVariant.  
   
-</code>
+
 ### getDataAsBase64() ###
-<code>  
+  
 Get this structured clone container's data as a base-64-encoded string.  
   
-</code>
+
 ## Attributes ##
 
 ### serializedNBytes ###

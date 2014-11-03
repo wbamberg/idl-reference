@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIRequestObserver #
-<code>  
+  
 nsIRequestObserver  
   
-</code>
+
 ## Methods ##
 
 ### onStartRequest(aRequest, aContext) ###
-<code>  
+  
 Called to signify the beginning of an asynchronous request.  
   
 @param aRequest request being observed  
@@ -22,7 +22,7 @@ Called to signify the beginning of an asynchronous request.
 An exception thrown from onStartRequest has the side-effect of  
 causing the request to be canceled.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -42,7 +42,7 @@ causing the request to be canceled.
 </table>
 
 ### onStopRequest(aRequest, aContext, aStatusCode) ###
-<code>  
+  
 Called to signify the end of an asynchronous request.  This  
 call is always preceded by a call to onStartRequest.  
   
@@ -52,7 +52,7 @@ call is always preceded by a call to onStartRequest.
   
 An exception thrown from onStopRequest is generally ignored.  
   
-</code>
+
 #### Parameters ####
 
 <table>

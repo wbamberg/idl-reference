@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIDOMCSSConditionRule #
-<code>  
+  
 Interface in the CSS OM for at-rules that conditionally apply their  
 child rules.  
   
-</code>
+
 ## Attributes ##
 
 ### conditionText ###

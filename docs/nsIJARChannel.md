@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### setAppURI(uri) ###
-<code>  
+  
 Forces the uri to be a app:// uri.  
   
-</code>
+
 ### ensureChildFd() ###
-<code>  
+  
 For child process, set this to make sure that a valid file descriptor of  
 JAR file is always provided when calling NSPRFileDesc().  
 Must be set before Open() or AsyncOpen() to be effective.  
@@ -27,7 +27,7 @@ shared descriptors, the offset is also changed for the other.
 It can be safely used only with operations that take absolute offsets,  
 such as mmap/pread/pwrite.  
   
-</code>
+
 ## Attributes ##
 
 ### isUnsafe ###

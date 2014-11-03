@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### setExpirationTime(expirationTime) ###
-<code>  
+  
 Set the time at which the cache entry should be considered invalid (in  
 seconds since the Epoch).  
   
-</code>
+
 ### forceValidFor(aSecondsToTheFuture) ###
-<code>  
+  
 This method is intended to override the per-spec cache validation  
 decisions for a duration specified in seconds. The current state can  
 be examined with isForcedValid (see below). This value is not persisted,  
@@ -29,7 +29,7 @@ entries grows to take up more space than the cache size allows.
        the number of seconds the default cache validation behavior will be  
        overridden before it returns to normal  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -44,7 +44,7 @@ entries grows to take up more space than the cache size allows.
 </table>
 
 ### openInputStream(offset) ###
-<code>  
+  
 Open blocking input stream to cache data.  Use the stream transport  
 service to asynchronously read this stream on a background thread.  
 The returned stream MAY implement nsISeekableStream.  
@@ -55,7 +55,7 @@ The returned stream MAY implement nsISeekableStream.
   
 @return non-blocking, buffered input stream.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -81,7 +81,7 @@ The returned stream MAY implement nsISeekableStream.
 </table>
 
 ### openOutputStream(offset) ###
-<code>  
+  
 Open non-blocking output stream to cache data.  The returned stream  
 MAY implement nsISeekableStream.  
   
@@ -94,7 +94,7 @@ truncated to the specified offset.
   
 @return blocking, buffered output stream.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -120,23 +120,23 @@ truncated to the specified offset.
 </table>
 
 ### asyncDoom(listener) ###
-<code>  
+  
 Asynchronously doom an entry. Listener will be notified about the status  
 of the operation. Null may be passed if caller doesn't care about the  
 result.  
   
-</code>
+
 ### getMetaDataElement(key) ###
-<code>  
+  
 Methods for accessing meta data.  Meta data is a table of key/value  
 string pairs.  The strings do not have to conform to any particular  
 charset, but they must be null terminated.  
   
-</code>
+
 ### setMetaDataElement(key, value) ###
 
 ### visitMetaData(visitor) ###
-<code>  
+  
 Obtain the list of metadata keys this entry keeps.  
   
 NOTE: The callback is invoked under the CacheFile's lock.  It means  
@@ -144,25 +144,25 @@ there should not be made any calls to the entry from the visitor and
 if the values need to be processed somehow, it's better to cache them  
 and process outside the callback.  
   
-</code>
+
 ### metaDataReady() ###
-<code>  
+  
 Claims that all metadata on this entry are up-to-date and this entry  
 now can be delivered to other waiting consumers.  
   
 We need such method since metadata must be delivered synchronously.  
   
-</code>
+
 ### setValid() ###
-<code>  
+  
 Called by consumer upon 304/206 response from the server.  This marks  
 the entry content as positively revalidated.  
 Consumer uses this method after the consumer has returned ENTRY_NEEDS_REVALIDATION  
 result from onCacheEntryCheck and after successfull revalidation with the server.  
   
-</code>
+
 ### recreate(aMemoryOnly) ###
-<code>  
+  
 Doom this entry and open a new, empty, entry for write.  Consumer has  
 to exchange the entry this method is called on for the newly created.  
 Used on 200 responses to conditional requests.  
@@ -176,7 +176,7 @@ Used on 200 responses to conditional requests.
    - NS_ERROR_NOT_AVAILABLE when the entry cannot be from some reason  
      recreated for write  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -205,12 +205,12 @@ Used on 200 responses to conditional requests.
 </table>
 
 ### close() ###
-<code>************************************************************************  
+************************************************************************  
 The following methods might be added to some nsICacheEntryInternal  
 interface since we want to remove them as soon as the old cache backend is  
 completely removed.  
   
-</code><code>  
+  
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY  
 When the old cache backend is eventually removed, this method  
@@ -219,24 +219,24 @@ can be removed too.
 In the new backend: this method is no-op  
 In the old backend: this method delegates to nsICacheEntryDescriptor.close()  
   
-</code>
+
 ### markValid() ###
-<code>  
+  
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY  
 Marks the entry as valid so that others can use it and get only readonly  
 access when the entry is held by the 1st writer.  
   
-</code>
+
 ### maybeMarkValid() ###
-<code>  
+  
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY  
 Marks the entry as valid when write access is acquired.  
   
-</code>
+
 ### hasWriteAccess(aWriteAllowed) ###
-<code>  
+  
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK  
 @param aWriteAllowed  
@@ -246,7 +246,7 @@ FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK
    true when write access is acquired for this entry,  
    false otherwise  
   
-</code>
+
 #### Parameters ####
 
 <table>

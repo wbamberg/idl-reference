@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISAXLocator #
-<code>  
+  
 Interface for associating a SAX event with a document location.  
   
 Note that the results returned by the object will be valid only  
@@ -14,7 +14,7 @@ during the scope of each callback method: the application will
 receive unpredictable results if it attempts to use the locator at  
 any other time, or after parsing completes.  
   
-</code>
+
 ## Attributes ##
 
 ### columnNumber ###

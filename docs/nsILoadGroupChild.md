@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # nsILoadGroupChild #
-<code>  
+  
 nsILoadGroupChild provides a hierarchy of load groups so that the  
 root load group can be used to conceptually tie a series of loading  
 operations into a logical whole while still leaving them separate  
 for the purposes of cancellation and status events.  
   
-</code>
+
 ## Attributes ##
 
 ### parentLoadGroup ###

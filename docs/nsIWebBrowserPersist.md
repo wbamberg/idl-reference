@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIWebBrowserPersist #
-<code>  
+  
 Interface for persisting DOM documents and URIs to local or remote storage.  
   
-</code>
+
 ## Methods ##
 
 ### saveURI(aURI, aCacheKey, aReferrer, aPostData, aExtraHeaders, aFile, aPrivacyContext) ###
-<code>  
+  
 Save the specified URI to file.  
   
 @param aURI       URI to save to file. Some implementations of this interface  
@@ -44,7 +44,7 @@ Save the specified URI to file.
   
 @throws NS_ERROR_INVALID_ARG One or more arguments was invalid.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -108,13 +108,13 @@ Save the specified URI to file.
 </table>
 
 ### savePrivacyAwareURI(aURI, aCacheKey, aReferrer, aPostData, aExtraHeaders, aFile, aIsPrivate) ###
-<code>  
+  
 @param aIsPrivate Treat the save operation as private (ie. with  
                   regards to networking operations and persistence  
                   of intermediate data, etc.)  
 @see saveURI for all other parameter descriptions  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -131,13 +131,13 @@ Save the specified URI to file.
 </table>
 
 ### saveChannel(aChannel, aFile) ###
-<code>  
+  
 Save a channel to a file. It must not be opened yet.  
 @see saveURI  
   
-</code>
+
 ### saveDocument(aDocument, aFile, aDataPath, aOutputContentType, aEncodingFlags, aWrapColumn) ###
-<code>  
+  
 Save the specified DOM document to file and optionally all linked files  
 (e.g. images, CSS, JS & subframes). Do not call this method until the  
 document has finished loading!  
@@ -165,7 +165,7 @@ document has finished loading!
   
 @throws NS_ERROR_INVALID_ARG One or more arguments was invalid.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -220,12 +220,12 @@ document has finished loading!
 </table>
 
 ### cancelSave() ###
-<code>  
+  
 Cancels the current operation. The caller is responsible for cleaning up  
 partially written files or directories. This has the same effect as calling  
 cancel with an argument of NS_BINDING_ABORTED.  
   
-</code>
+
 ## Attributes ##
 
 ### persistFlags ###

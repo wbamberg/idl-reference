@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIBinaryOutputStream #
-<code>  
+  
 This interface allows writing of primitive data types (integers,  
 floating-point values, booleans, etc.) to a stream in a binary, untagged,  
 fixed-endianness format.  This might be used, for example, to implement  
@@ -17,16 +17,16 @@ as this is traditional network order.
   
 @See nsIBinaryInputStream  
   
-</code>
+
 ## Methods ##
 
 ### setOutputStream(aOutputStream) ###
 
 ### writeBoolean(aBoolean) ###
-<code>  
+  
 Write a boolean as an 8-bit char to the stream.  
   
-</code>
+
 ### write8(aByte) ###
 
 ### write16(a16) ###
@@ -40,30 +40,29 @@ Write a boolean as an 8-bit char to the stream.
 ### writeDouble(aDouble) ###
 
 ### writeStringZ(aString) ###
-<code>  
+  
 Write an 8-bit pascal style string to the stream.  
 32-bit length field, followed by length 8-bit chars.  
   
-</code>
+
 ### writeWStringZ(aString) ###
-<code>  
+  
 Write a 16-bit pascal style string to the stream.  
 32-bit length field, followed by length PRUnichars.  
   
-</code>
+
 ### writeUtf8Z(aString) ###
-<code>  
+  
 Write an 8-bit pascal style string (UTF8-encoded) to the stream.  
 32-bit length field, followed by length 8-bit chars.  
   
-</code>
+
 ### writeBytes(aString, aLength) ###
-<code>  
+  
 Write an opaque byte array to the stream.  
   
-</code>
+
 ### writeByteArray(aBytes, aLength) ###
-<code>  
+  
 Write an opaque byte array to the stream.  
   
-</code>

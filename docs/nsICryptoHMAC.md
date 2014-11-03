@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsICryptoHMAC #
-<code>  
+  
 nsICryptoHMAC  
 This interface provides HMAC signature algorithms.  
   
-</code>
+
 ## Methods ##
 
 ### init(aAlgorithm, aKeyObject) ###
-<code>  
+  
 Initialize the hashing object. This method may be  
 called multiple times with different algorithm types.  
   
@@ -36,7 +36,7 @@ WARNING: This approach is not FIPS compliant.
 NOTE: This method must be called before any other method   
        on this interface is called.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ NOTE: This method must be called before any other method
 </table>
 
 ### update(aData, aLen) ###
-<code>  
+  
 @param aData a buffer to calculate the hash over  
   
 @param aLen the length of the buffer |aData|  
@@ -69,7 +69,7 @@ NOTE: This method must be called before any other method
 @throws NS_ERROR_NOT_INITIALIZED if |init| has not been   
         called.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -89,7 +89,7 @@ NOTE: This method must be called before any other method
 </table>
 
 ### updateFromStream(aStream, aLen) ###
-<code>  
+  
 Calculates and updates a new hash based on a given data stream.  
   
 @param aStream an input stream to read from.  
@@ -105,7 +105,7 @@ Calculates and updates a new hash based on a given data stream.
         data to be calculated into the hash is not available.  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -127,7 +127,7 @@ Calculates and updates a new hash based on a given data stream.
 </table>
 
 ### finish(aASCII) ###
-<code>  
+  
 Completes this HMAC object and produces the actual HMAC diegest data.  
   
 @param aASCII if true then the returned value is a base-64   
@@ -144,7 +144,7 @@ NOTE: This method may be called any time after |init|
       is called.  This call resets the object to its  
       pre-init state.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -172,12 +172,12 @@ NOTE: This method may be called any time after |init|
 </table>
 
 ### reset() ###
-<code>  
+  
 Reinitialize HMAC context to be reused with the same  
 settings (the key and hash algorithm) but on different   
 set of data.  
   
-</code>
+
 ## Constants ##
 
 ### MD2 ###

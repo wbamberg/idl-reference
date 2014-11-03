@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsILoginMetaInfo #
-<code>  
+  
 An object containing metainfo for a login stored by the login manager.  
   
 Code using login manager can generally ignore this interface. When adding  
@@ -15,7 +15,7 @@ properties will be unchanged unless a change is explicitly requested [by
 using modifyLogin() with a nsIPropertyBag]. When deleting a login or  
 comparing logins, these properties are ignored.  
   
-</code>
+
 ## Attributes ##
 
 ### guid ###

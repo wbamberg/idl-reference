@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsINavHistoryQuery #
-<code>  
+  
 This object encapsulates all the query parameters you're likely to need  
 when building up history UI. All parameters are ANDed together.  
   
@@ -15,40 +15,40 @@ so that most queries can be done in only one SQL query. This is important
 because, if the user has their profile on a networked drive, query latency  
 can be non-negligible.  
   
-</code>
+
 ## Methods ##
 
 ### setTransitions(transitions, count) ###
-<code>  
+  
 When the set of transitions is nonempty, results are limited to pages which  
 have at least one visit for each of the transition types.  
 @note: For searching on more than one transition this can be very slow.  
   
 Limit results to the specified list of transition types.  
   
-</code>
+
 ### getTransitions(count, transitions) ###
-<code>  
+  
 Get the transitions set for this query.  
   
-</code>
+
 ### getFolders(count, folders) ###
-<code>  
+  
 Limit results to items that are in all of the given folders.  
   
-</code>
+
 ### setFolders(folders, folderCount) ###
-<code>  
+  
 For the special result type RESULTS_AS_TAG_CONTENTS we can define only  
 one folder that must be a tag folder. This is not recursive so results  
 will be returned from the first level of that folder.  
   
-</code>
+
 ### clone() ###
-<code>  
+  
 Creates a new query item with the same parameters of this one.  
   
-</code>
+
 ## Attributes ##
 
 ### beginTime ###

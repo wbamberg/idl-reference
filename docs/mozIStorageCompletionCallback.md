@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### complete(status, value) ###
-<code>  
+  
 Indicates that the event this callback was passed in for has completed.  
   
 @param status  
@@ -22,7 +22,7 @@ Indicates that the event this callback was passed in for has completed.
   
 @see The calling method for expected values.  
   
-</code>
+
 #### Parameters ####
 
 <table>

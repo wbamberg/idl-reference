@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIFileOutputStream #
-<code>  
+  
 An output stream that lets you stream to a file.  
   
-</code>
+
 ## Methods ##
 
 ### init(file, ioFlags, perm, behaviorFlags) ###
-<code>  
+  
 @param file          file to write to  
 @param ioFlags       file open flags listed in prio.h (see  
                      PR_Open documentation) or -1 to open the  
@@ -24,7 +24,7 @@ An output stream that lets you stream to a file.
 @param behaviorFlags flags specifying various behaviors of the class  
        (currently none supported)  
   
-</code>
+
 #### Parameters ####
 
 <table>

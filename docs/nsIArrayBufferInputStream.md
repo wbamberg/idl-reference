@@ -6,24 +6,24 @@ layout: default
 </div>
 
 # nsIArrayBufferInputStream #
-<code>  
+  
 nsIArrayBufferInputStream  
   
 Provides scriptable methods for initializing a nsIInputStream  
 implementation with an ArrayBuffer.  
   
-</code>
+
 ## Methods ##
 
 ### setData(buffer, byteOffset, byteLen) ###
-<code>  
+  
 SetData - assign an ArrayBuffer to the input stream.  
   
 @param buffer    - stream data  
 @param byteOffset - stream data offset  
 @param byteLen - stream data length  
   
-</code>
+
 #### Parameters ####
 
 <table>

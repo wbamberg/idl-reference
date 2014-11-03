@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIWebContentHandlerRegistrar #
-<code>  
+  
 nsIWebContentHandlerRegistrar  
   
 Applications wishing to use web content handlers need to implement this  
@@ -16,14 +16,14 @@ to the local list.
 The component must have the contract id defined below so that nsNavigator  
 can invoke it.   
   
-</code>
+
 ## Methods ##
 
 ### registerContentHandler(mimeType, uri, title, contentWindow) ###
-<code>  
+  
 See documentation in Navigator.webidl  
 The additional contentWindow param for both methods represents the dom  
 content window from which the method has been called.  
   
-</code>
+
 ### registerProtocolHandler(protocol, uri, title, contentWindow) ###

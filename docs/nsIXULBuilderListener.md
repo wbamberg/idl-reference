@@ -10,11 +10,11 @@ layout: default
 ## Methods ##
 
 ### willRebuild(aBuilder) ###
-<code>  
+  
 Called before a template builder rebuilds its content.  
 @param aBuilder the template builder that rebuilds the content.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -28,11 +28,11 @@ Called before a template builder rebuilds its content.
 </table>
 
 ### didRebuild(aBuilder) ###
-<code>  
+  
 Called after a template builder has rebuilt its content.  
 @param aBuilder the template builder that has rebuilt the content.  
   
-</code>
+
 #### Parameters ####
 
 <table>

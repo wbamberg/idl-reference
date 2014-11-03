@@ -10,8 +10,8 @@ layout: default
 ## Methods ##
 
 ### init(aServiceName, aServiceFlags, aDomain, aUsername, aPassword) ###
-<code> Other flags may be defined in the future */  
-</code><code>  
+ Other flags may be defined in the future */  
+  
 Called to initialize an auth module.  The other methods cannot be called  
 unless this method succeeds.  
   
@@ -28,7 +28,7 @@ unless this method succeeds.
 @param aPassword  
        the user's password  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -68,7 +68,7 @@ unless this method succeeds.
 </table>
 
 ### getNextToken(aInToken, aInTokenLength, aOutToken, aOutTokenLength) ###
-<code>  
+  
 Called to get the next token in a sequence of authentication steps.  
   
 @param aInToken  
@@ -85,7 +85,7 @@ Called to get the next token in a sequence of authentication steps.
        If getNextToken succeeds, then aOutTokenLength contains the  
        length of the buffer (number of bytes) pointed to by aOutToken.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -122,7 +122,7 @@ Called to get the next token in a sequence of authentication steps.
 </table>
 
 ### wrap(aInToken, aInTokenLength, confidential, aOutToken, aOutTokenLength) ###
-<code>   
+   
 Once a security context has been established through calls to GetNextToken()  
 it may be used to protect data exchanged between client and server. Calls  
 to Wrap() are used to protect items of data to be sent to the server.  
@@ -142,7 +142,7 @@ to Wrap() are used to protect items of data to be sent to the server.
 Wrap() may return NS_ERROR_NOT_IMPLEMENTED, if the underlying authentication  
 mechanism does not support security layers.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -181,7 +181,7 @@ mechanism does not support security layers.
 </table>
 
 ### unwrap(aInToken, aInTokenLength, aOutToken, aOutTokenLength) ###
-<code>   
+   
 Unwrap() is used to unpack, decrypt, and verify the checksums on data  
 returned by a server when security layers are in use.  
   
@@ -197,7 +197,7 @@ returned by a server when security layers are in use.
 Unwrap() may return NS_ERROR_NOT_IMPLEMENTED, if the underlying    
 authentication mechanism does not support security layers.  
   
-</code>
+
 #### Parameters ####
 
 <table>

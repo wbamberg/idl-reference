@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsISpeculativeConnectionOverrider #
-<code>  
+  
 This is used to override the default values for various values (documented  
 inline) to determine whether or not to actually make a speculative  
 connection.  
   
-</code>
+
 ## Attributes ##
 
 ### parallelSpeculativeConnectLimit ###

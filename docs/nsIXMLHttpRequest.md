@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIXMLHttpRequest #
-<code>  
+  
 Mozilla's XMLHttpRequest is modelled after Microsoft's IXMLHttpRequest  
 object. The goal has been to make Mozilla's version match Microsoft's  
 version as closely as possible, but there are bound to be some differences.  
@@ -47,24 +47,24 @@ Conclusion: Do not use event listeners on XMLHttpRequest from C++, unless
 you're aware of all the security implications.  And then think twice about  
 it.  
   
-</code>
+
 ## Methods ##
 
 ### abort() ###
-<code>  
+  
 If the request has been sent already, this method will  
 abort the request.  
   
-</code>
+
 ### getAllResponseHeaders() ###
-<code>  
+  
 Returns all of the response headers as a string for HTTP  
 requests.  
   
 @returns A string containing all of the response headers.  
          The empty string if the response has not yet been received.  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -78,7 +78,7 @@ requests.
 </table>
 
 ### getResponseHeader(header) ###
-<code>  
+  
 Returns the text of the header with the specified name for  
 HTTP requests.  
   
@@ -87,7 +87,7 @@ HTTP requests.
          NULL if the response has not yet been received or the  
          header does not exist in the response.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -114,7 +114,7 @@ HTTP requests.
 </table>
 
 ### open(method, url, async, user, password) ###
-<code>  
+  
 Meant to be a script-only method for initializing a request.  
   
 If there is an "active" request (that is, if open() has been called  
@@ -134,7 +134,7 @@ already), this is equivalent to calling abort() and then open().
 @param password (optional) A password for authentication if necessary.  
                 The default value is the empty string  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -180,7 +180,7 @@ already), this is equivalent to calling abort() and then open().
 </table>
 
 ### send(body) ###
-<code>  
+  
 Sends the request. If the request is asynchronous, returns  
 immediately after sending the request. If it is synchronous  
 returns only after the response has been received.  
@@ -205,7 +205,7 @@ After the initial response, all event listeners will be cleared.
             Type header via the setRequestHeader method before  
             calling send.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -232,14 +232,14 @@ After the initial response, all event listeners will be cleared.
 </table>
 
 ### sendAsBinary(body) ###
-<code>  
+  
 A variant of the send() method used to send binary data.  
   
 @param body The request body as a DOM string.  The string data will be  
             converted to a single-byte string by truncation (i.e., the  
             high-order byte of each character will be discarded).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -255,14 +255,14 @@ A variant of the send() method used to send binary data.
 </table>
 
 ### setRequestHeader(header, value) ###
-<code>  
+  
 Sets a HTTP request header for HTTP requests. You must call open  
 before setting the request headers.  
   
 @param header The name of the header to set in the request.  
 @param value The body of the header.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -282,7 +282,7 @@ before setting the request headers.
 </table>
 
 ### overrideMimeType(mimetype) ###
-<code>  
+  
 Override the mime type returned by the server (if any). This may  
 be used, for example, to force a stream to be treated and parsed  
 as text/xml, even if the server does not report it as such. This  
@@ -291,7 +291,7 @@ must be done before the <code>send</code> method is invoked.
 @param mimetype The type used to override that returned by the server  
                 (if any).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -306,7 +306,7 @@ must be done before the <code>send</code> method is invoked.
 </table>
 
 ### init(principal, scriptContext, globalObject, baseURI) ###
-<code>  
+  
 Initialize the object for use from C++ code with the principal, script  
 context, and owner window that should be used.  
   
@@ -321,7 +321,7 @@ context, and owner window that should be used.
 @param baseURI The base URI to use when resolving relative URIs. May be  
                null.  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -10,15 +10,15 @@ layout: default
 ## Methods ##
 
 ### clearData(format) ###
-<code>  
+  
 Remove the data associated with a given format. If format is empty or not  
 specified, the data associated with all formats is removed. If data for  
 the specified format does not exist, or the data transfer contains no  
 data, this method will have no effect.  
   
-</code>
+
 ### setData(format, data) ###
-<code>  
+  
 Set the data for a given format. If data for the format does not exist,  
 it is added at the end, such that the last item in the types list will be  
 the new format. If data for the format already exists, the existing data  
@@ -27,15 +27,15 @@ not changed.
   
 @throws NS_ERROR_NULL_POINTER if the data is null  
   
-</code>
+
 ### getData(format) ###
-<code>  
+  
 Retrieves the data for a given format, or an empty string if data for  
 that format does not exist or the data transfer contains no data.  
   
-</code>
+
 ### setDragImage(image, x, y) ###
-<code>  
+  
 Set the image to be used for dragging if a custom one is desired. Most of  
 the time, this would not be set, as a default image is created from the  
 node that was dragged.  
@@ -54,7 +54,7 @@ width and height.
 @param y the vertical offset  
 @throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -83,14 +83,14 @@ width and height.
 ### addElement(element) ###
 
 ### mozTypesAt(index) ###
-<code>  
+  
 Holds a list of the format types of the data that is stored for an item  
 at the specified index. If the index is not in the range from 0 to  
 itemCount - 1, an empty string list is returned.  
   
-</code>
+
 ### mozClearDataAt(format, index) ###
-<code>  
+  
 Remove the data associated with the given format for an item at the  
 specified index. The index is in the range from zero to itemCount - 1.  
   
@@ -104,7 +104,7 @@ If the format is not found, then this method has no effect.
 @throws NS_ERROR_DOM_INDEX_SIZE_ERR if index is greater or equal than itemCount  
 @throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -122,7 +122,7 @@ If the format is not found, then this method has no effect.
 ### mozSetDataAt(format, data, index) ###
 
 ### mozGetDataAt(format, index) ###
-<code>  
+  
 Retrieve the data associated with the given format for an item at the  
 specified index, or null if it does not exist. The index should be in the  
 range from zero to itemCount - 1.  
@@ -131,7 +131,7 @@ range from zero to itemCount - 1.
 @returns the data of the given format, or null if it doesn't exist.  
 @throws NS_ERROR_DOM_INDEX_SIZE_ERR if index is greater or equal than itemCount  
   
-</code>
+
 #### Parameters ####
 
 <table>

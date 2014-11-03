@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIHttpEventSink #
-<code>  
+  
 nsIHttpEventSink  
   
 Implement this interface to receive control over various HTTP events.  The  
@@ -20,17 +20,17 @@ SYNCHRONOUSLY.
 @deprecated Newly written code should use nsIChannelEventSink instead of this  
 interface.  
   
-</code>
+
 ## Methods ##
 
 ### onRedirect(httpChannel, newChannel) ###
-<code>  
+  
 Called when a redirect occurs due to a HTTP response like 302.  The  
 redirection may be to a non-http channel.  
   
 @return failure cancels redirect  
   
-</code>
+
 #### Returns ####
 
 <table>

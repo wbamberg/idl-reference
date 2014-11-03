@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### getProperty(name) ###
-<code>  
+  
 Get a property value for the given name.  
 @throws NS_ERROR_FAILURE if a property with that name doesn't  
 exist.  
   
-</code>
+
 ## Attributes ##
 
 ### enumerator ###

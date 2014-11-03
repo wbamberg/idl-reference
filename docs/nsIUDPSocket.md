@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIUDPSocket #
-<code>  
+  
 nsIUDPSocket  
   
 An interface to a UDP socket that can accept incoming connections.  
   
-</code>
+
 ## Methods ##
 
 ### init(aPort, aLoopbackOnly, aAddressReuse) ###
-<code>  
+  
 init  
   
 This method initializes a UDP socket.  
@@ -32,7 +32,7 @@ This method initializes a UDP socket.
        If true, the socket is allowed to be bound to an address that is  
        already in use. Default is true.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -63,7 +63,7 @@ This method initializes a UDP socket.
 </table>
 
 ### initWithAddress(aAddr, aAddressReuse) ###
-<code>  
+  
 initWithAddress  
   
 This method initializes a UDP socket, and binds it to a particular  
@@ -75,7 +75,7 @@ local address (and hence a particular local network interface).
        If true, the socket is allowed to be bound to an address that is  
        already in use. Default is true.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -96,7 +96,7 @@ local address (and hence a particular local network interface).
 </table>
 
 ### close() ###
-<code>  
+  
 close  
   
 This method closes a UDP socket.  This does not affect already  
@@ -104,9 +104,9 @@ connected client sockets (i.e., the nsISocketTransport instances
 created from this UDP socket).  This will cause the onStopListening  
 event to asynchronously fire with a status of NS_BINDING_ABORTED.  
   
-</code>
+
 ### asyncListen(aListener) ###
-<code>  
+  
 asyncListen  
   
 This method puts the UDP socket in the listening state.  It will  
@@ -121,7 +121,7 @@ transport (nsISocketTransport).  See below for more details.
 @param aListener  
        The listener to be notified when client connections are accepted.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -135,7 +135,7 @@ transport (nsISocketTransport).  See below for more details.
 </table>
 
 ### getAddress() ###
-<code>  
+  
 Returns the address to which this UDP socket is bound.  Since a  
 UDP socket may be bound to multiple network devices, this address  
 may not necessarily be specific to a single network device.  In the  
@@ -144,9 +144,9 @@ indicate a UDP socket bound to all network devices.  Therefore,
 this method cannot be used to determine the IP address of the local  
 system.  See nsIDNSService::myHostName if this is what you need.  
   
-</code>
+
 ### send(host, port, data, dataLength) ###
-<code>  
+  
 send  
   
 Send out the datagram to specified remote host and port.  
@@ -158,7 +158,7 @@ DNS lookup will be triggered.
 @param dataLength The maximum number of bytes to be written.  
 @return number of bytes written. (0 or dataLength)  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -201,7 +201,7 @@ DNS lookup will be triggered.
 </table>
 
 ### sendWithAddr(addr, data, dataLength) ###
-<code>  
+  
 sendWithAddr  
   
 Send out the datagram to specified remote host and port.  
@@ -211,7 +211,7 @@ Send out the datagram to specified remote host and port.
 @param dataLength The maximum number of bytes to be written.  
 @return number of bytes written. (0 or dataLength)  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -248,7 +248,7 @@ Send out the datagram to specified remote host and port.
 </table>
 
 ### sendWithAddress(addr, data, dataLength) ###
-<code>  
+  
 sendWithAddress  
   
 Send out the datagram to specified remote address and port.  
@@ -258,7 +258,7 @@ Send out the datagram to specified remote address and port.
 @param dataLength The maximum number of bytes to be written.  
 @return number of bytes written. (0 or dataLength)  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -295,7 +295,7 @@ Send out the datagram to specified remote address and port.
 </table>
 
 ### sendBinaryStream(host, port, stream) ###
-<code>  
+  
 sendBinaryStream  
   
 Send out the datagram to specified remote address and port.  
@@ -304,7 +304,7 @@ Send out the datagram to specified remote address and port.
 @param port The remote port.  
 @param stream The input stream to be sent. This must be a buffered stream implementation.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -330,7 +330,7 @@ Send out the datagram to specified remote address and port.
 </table>
 
 ### sendBinaryStreamWithAddress(addr, stream) ###
-<code>  
+  
 sendBinaryStreamWithAddress  
   
 Send out the datagram to specified remote address and port.  
@@ -338,7 +338,7 @@ Send out the datagram to specified remote address and port.
 @param addr The remote host address.  
 @param stream The input stream to be sent. This must be a buffered stream implementation.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -358,7 +358,7 @@ Send out the datagram to specified remote address and port.
 </table>
 
 ### joinMulticast(addr, iface) ###
-<code>  
+  
 joinMulticast  
   
 Join the multicast group specified by |addr|.  You are then able to  
@@ -371,7 +371,7 @@ receive future datagrams addressed to the group.
        this is not specified, the OS may join the group on all interfaces  
        or only the primary interface.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -395,7 +395,7 @@ receive future datagrams addressed to the group.
 ### joinMulticastAddr(addr, iface) ###
 
 ### leaveMulticast(addr, iface) ###
-<code>  
+  
 leaveMulticast  
   
 Leave the multicast group specified by |addr|.  You will no longer  
@@ -408,7 +408,7 @@ receive future datagrams addressed to the group.
        If this is not specified, the OS may leave the group on all  
        interfaces or only the primary interface.  
   
-</code>
+
 #### Parameters ####
 
 <table>

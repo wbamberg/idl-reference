@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIURIClassifier #
-<code>  
+  
 The URI classifier service checks a URI against lists of phishing  
 and malware sites.  
   
-</code>
+
 ## Methods ##
 
 ### classify(aPrincipal, aTrackingProtectionEnabled, aCallback) ###
-<code>  
+  
 Classify a Principal using its URI.  
   
 @param aPrincipal  
@@ -32,7 +32,7 @@ Classify a Principal using its URI.
         <code>true</code> if classification will be performed.  The  
         callback will be called.  
   
-</code>
+
 #### Parameters ####
 
 <table>

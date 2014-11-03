@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsISAXMutableAttributes #
-<code>  
+  
 This interface extends the nsISAXAttributes interface with  
 manipulators so that the list can be modified or reused.  
   
-</code>
+
 ## Methods ##
 
 ### addAttribute(uri, localName, qName, type, value) ###
-<code>  
+  
 Add an attribute to the end of the list.  
   
 For the sake of speed, this method does no checking  
@@ -31,7 +31,7 @@ the responsibility of the application.
 @param type The attribute type as a string.  
 @param value The attribute value.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -73,17 +73,17 @@ the responsibility of the application.
 </table>
 
 ### clear() ###
-<code>  
+  
 Clear the attribute list for reuse.  
   
-</code>
+
 ### removeAttribute(index) ###
-<code>  
+  
 Remove an attribute from the list.  
   
 @param index The index of the attribute (zero-based).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -97,14 +97,14 @@ Remove an attribute from the list.
 </table>
 
 ### setAttributes(attributes) ###
-<code>  
+  
 Set the attributes list. This method will clear any attributes in  
 the list before adding the attributes from the argument.  
   
 @param attributes The attributes object to replace populate the  
                   list with.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -119,7 +119,7 @@ the list before adding the attributes from the argument.
 </table>
 
 ### setAttribute(index, uri, localName, qName, type, value) ###
-<code>  
+  
 Set an attribute in the list.  
   
 For the sake of speed, this method does no checking for name  
@@ -137,7 +137,7 @@ of the application.
 @param type The attribute type as a string.  
 @param value The attribute value.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -185,14 +185,14 @@ of the application.
 </table>
 
 ### setLocalName(index, localName) ###
-<code>  
+  
 Set the local name of a specific attribute.  
   
 @param index The index of the attribute (zero-based).  
 @param localName The attribute's local name, or the empty  
        string for none.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -213,14 +213,14 @@ Set the local name of a specific attribute.
 </table>
 
 ### setQName(index, qName) ###
-<code>  
+  
 Set the qualified name of a specific attribute.  
   
 @param index The index of the attribute (zero-based).  
 @param qName The attribute's qualified name, or the empty  
        string for none.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -241,13 +241,13 @@ Set the qualified name of a specific attribute.
 </table>
 
 ### setType(index, type) ###
-<code>  
+  
 Set the type of a specific attribute.  
   
 @param index The index of the attribute (zero-based).  
 @param type The attribute's type.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -267,14 +267,14 @@ Set the type of a specific attribute.
 </table>
 
 ### setURI(index, uri) ###
-<code>  
+  
 Set the Namespace URI of a specific attribute.  
   
 @param index The index of the attribute (zero-based).  
 @param uri The attribute's Namespace URI, or the empty  
        string for none.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -295,13 +295,13 @@ Set the Namespace URI of a specific attribute.
 </table>
 
 ### setValue(index, value) ###
-<code>  
+  
 Set the value of a specific attribute.  
   
 @param index The index of the attribute (zero-based).  
 @param value The attribute's value.  
   
-</code>
+
 #### Parameters ####
 
 <table>

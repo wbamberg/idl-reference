@@ -10,16 +10,15 @@ layout: default
 ## Methods ##
 
 ### shutdown() ###
-<code>  
+  
 Shutdown the wifi system.  
   
-</code>
+
 ### getWifiScanResults(callback) ###
-<code>  
+  
 Returns the list of currently available networks as well as the list of  
 currently configured networks.  
   
 On success a callback is notified with the list of networks.  
 On failure after 3 scan retry attempts a callback is notified of failure.  
   
-</code>

@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsINativeFileWatcherSuccessCallback #
-<code>  
+  
 The interface for the callback invoked when a file watcher operation  
 successfully completes.  
   
-</code>
+
 ## Methods ##
 
 ### complete(resourcePath) ###
-<code>  
+  
 @param resourcePath  
        The path of the resource for which the operation completes.  
   
-</code>
+
 #### Parameters ####
 
 <table>

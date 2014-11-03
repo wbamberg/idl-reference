@@ -10,70 +10,70 @@ layout: default
 ## Methods ##
 
 ### isSelected(index) ###
-<code>  
+  
 Indicates whether or not the row at the specified index is  
 part of the selection.  
   
-</code>
+
 ### select(index) ###
-<code>  
+  
 Deselect all rows and select the row at the specified index.   
   
-</code>
+
 ### timedSelect(index, delay) ###
-<code>  
+  
 Perform a timed select.  
   
-</code>
+
 ### toggleSelect(index) ###
-<code>  
+  
 Toggle the selection state of the row at the specified index.  
   
-</code>
+
 ### rangedSelect(startIndex, endIndex, augment) ###
-<code>  
+  
 Select the range specified by the indices.  If augment is true,  
 then we add the range to the selection without clearing out anything  
 else.  If augment is false, everything is cleared except for the specified range.  
   
-</code>
+
 ### clearRange(startIndex, endIndex) ###
-<code>  
+  
 Clears the range.  
   
-</code>
+
 ### clearSelection() ###
-<code>  
+  
 Clears the selection.  
   
-</code>
+
 ### invertSelection() ###
-<code>  
+  
 Inverts the selection.  
   
-</code>
+
 ### selectAll() ###
-<code>  
+  
 Selects all rows.  
   
-</code>
+
 ### getRangeCount() ###
-<code>  
+  
 Iterate the selection using these methods.  
   
-</code>
+
 ### getRangeAt(i, min, max) ###
 
 ### invalidateSelection() ###
-<code>  
+  
 Can be used to invalidate the selection.  
   
-</code>
+
 ### adjustSelection(index, count) ###
-<code>  
+  
 Called when the row count changes to adjust selection indices.  
   
-</code>
+
 ## Attributes ##
 
 ### tree ###

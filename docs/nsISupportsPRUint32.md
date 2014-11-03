@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsPRUint32 #
-<code>  
+  
 Scriptable storage for unsigned 32-bit integers  
   
-</code>
+
 ## Methods ##
 
 ### toString() ###

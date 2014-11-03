@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsIEventListenerInfo #
-<code>  
+  
 An instance of this interface describes how an event listener  
 was added to an event target.  
   
-</code>
+
 ## Methods ##
 
 ### toSource() ###
-<code>  
+  
 Tries to serialize event listener to a string.  
 Returns null if serialization isn't possible  
 (for example with C++ listeners).  
   
-</code>
+
 ## Attributes ##
 
 ### type ###

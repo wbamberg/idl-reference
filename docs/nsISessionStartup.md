@@ -6,27 +6,27 @@ layout: default
 </div>
 
 # nsISessionStartup #
-<code>  
+  
 nsISessionStore keeps track of the current browsing state - i.e.  
 tab history, cookies, scroll state, form data, and window features  
 - and allows to restore everything into one window.  
   
-</code>
+
 ## Methods ##
 
 ### doRestore() ###
-<code>  
+  
 Determines whether there is a pending session restore. Should only be  
 called after initialization has completed.  
   
-</code>
+
 ### isAutomaticRestoreEnabled() ###
-<code>  
+  
 Determines whether automatic session restoration is enabled for this  
 launch of the browser. This does not include crash restoration, and will  
 return false if restoration will only be caused by a crash.  
   
-</code>
+
 ## Attributes ##
 
 ### onceInitialized ###

@@ -10,11 +10,11 @@ layout: default
 ## Methods ##
 
 ### getCursorType() ###
-<code>  
+  
 Get current cursor type from this window  
 @return the current value of nsCursor  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -27,14 +27,14 @@ Get current cursor type from this window
 </table>
 
 ### getDocumentMetadata(aName) ###
-<code>  
+  
 Function to get metadata associated with the window's current document  
 @param aName the name of the metadata.  This should be all lowercase.  
 @return the value of the metadata, or the empty string if it's not set  
   
 Will throw a DOM security error if called without chrome privileges.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -59,30 +59,30 @@ Will throw a DOM security error if called without chrome privileges.
 </table>
 
 ### redraw(aCount) ###
-<code>  
+  
 Force an immediate redraw of this window.  The parameter specifies  
 the number of times to redraw, and the return value is the length,  
 in milliseconds, that the redraws took.  If aCount is not specified  
 or is 0, it is taken to be 1.  
   
-</code>
+
 ### setCSSViewport(aWidthPx, aHeightPx) ###
-<code>  
+  
 Set the CSS viewport to be |widthPx| x |heightPx| in units of CSS  
 pixels, regardless of the size of the enclosing widget/view.  
 This will trigger reflow.  
   
 The caller of this method must have chrome privileges.  
   
-</code>
+
 ### getViewportInfo(aDisplayWidth, aDisplayHeight, aDefaultZoom, aAllowZoom, aMinZoom, aMaxZoom, aWidth, aHeight, aAutoSize) ###
-<code>  
+  
 Information retrieved from the <meta name="viewport"> tag.  
 See nsContentUtils::GetViewportInfo for more information.  
   
-</code>
+
 ### setDisplayPortForElement(aXPx, aYPx, aWidthPx, aHeightPx, aElement, aPriority) ###
-<code>  
+  
 For any scrollable element, this allows you to override the  
 visible region and draw more than what is visible, which is  
 useful for asynchronous drawing. The "displayport" will be  
@@ -116,9 +116,9 @@ aPriority is recorded along with the displayport rectangle. If this
 method is called with a lower priority than the current priority, the  
 call is ignored.  
   
-</code>
+
 ### setDisplayPortMarginsForElement(aLeftMargin, aTopMargin, aRightMargin, aBottomMargin, aAlignmentX, aAlignmentY, aElement, aPriority) ###
-<code>  
+  
 An alternate way to represent a displayport rect as a set of margins and a  
 base rect to apply those margins to. A consumer of pixels may ask for as  
 many extra pixels as it would like in each direction. Layout then sets  
@@ -137,11 +137,11 @@ Note that both the margin values and alignment are treated as values in
 LayerPixels. Refer to layout/base/Units.h for a description of this unit.  
 The base rect values are in app units.  
   
-</code>
+
 ### setDisplayPortBaseForElement(aX, aY, aWidth, aHeight, aElement) ###
 
 ### setResolution(aXResolution, aYResolution) ###
-<code>  
+  
 Get/set the resolution at which rescalable web content is drawn.  
 Currently this is only (some) thebes content.  
   
@@ -164,13 +164,13 @@ scale.  For example, to scale a content |window| inside a
   
 The caller of this method must have chrome privileges.  
   
-</code>
+
 ### getResolution(aXResolution, aYResolution) ###
 
 ### getPresShellId(aPresShellId) ###
 
 ### sendMouseEvent(aType, aX, aY, aButton, aClickCount, aModifiers, aIgnoreRootScrollFrame, aPressure, aInputSourceArg, aIsSynthesized) ###
-<code> Synthesize a mouse event. The event types supported are:  
+ Synthesize a mouse event. The event types supported are:  
    mousedown, mouseup, mousemove, mouseover, mouseout, contextmenu,  
    MozMouseHitTest  
   
@@ -209,7 +209,7 @@ window at all.
   
 returns true if the page called prevent default on this event  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -281,7 +281,7 @@ returns true if the page called prevent default on this event
 </table>
 
 ### sendPointerEvent(aType, aX, aY, aButton, aClickCount, aModifiers, aIgnoreRootScrollFrame, aPressure, aInputSourceArg, aPointerId, aWidth, aHeight, aTiltX, aTiltY, aIsPrimary, aIsSynthesized) ###
-<code> Synthesize a pointer event. The event types supported are:  
+ Synthesize a pointer event. The event types supported are:  
    pointerdown, pointerup, pointermove, pointerover, pointerout  
   
 Events are sent in coordinates offset by aX and aY from the window.  
@@ -327,7 +327,7 @@ window at all.
   
 returns true if the page called prevent default on this event  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -437,7 +437,7 @@ returns true if the page called prevent default on this event
 </table>
 
 ### sendTouchEvent(aType, aIdentifiers, aXs, aYs, aRxs, aRys, aRotationAngles, aForces, count, aModifiers, aIgnoreRootScrollFrame) ###
-<code> Synthesize a touch event. The event types supported are:  
+ Synthesize a touch event. The event types supported are:  
    touchstart, touchend, touchmove, and touchcancel  
   
 Events are sent in coordinates offset by aX and aY from the window.  
@@ -463,7 +463,7 @@ window at all.
   
 returns true if the page called prevent default on this touch event  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -532,26 +532,26 @@ returns true if the page called prevent default on this touch event
 </table>
 
 ### sendMouseEventToWindow(aType, aX, aY, aButton, aClickCount, aModifiers, aIgnoreRootScrollFrame, aPressure, aInputSourceArg, aIsSynthesized) ###
-<code> The same as sendMouseEvent but ensures that the event is dispatched to  
+ The same as sendMouseEvent but ensures that the event is dispatched to  
  this DOM window or one of its children.  
   
-</code>
+
 ### sendPointerEventToWindow(aType, aX, aY, aButton, aClickCount, aModifiers, aIgnoreRootScrollFrame, aPressure, aInputSourceArg, aPointerId, aWidth, aHeight, aTiltX, aTiltY, aIsPrimary, aIsSynthesized) ###
-<code> The same as sendPointerEvent but ensures that the event  
+ The same as sendPointerEvent but ensures that the event  
  is dispatched to this DOM window or one of its children.  
   
-</code>
+
 ### sendTouchEventToWindow(aType, aIdentifiers, aXs, aYs, aRxs, aRys, aRotationAngles, aForces, count, aModifiers, aIgnoreRootScrollFrame) ###
-<code> The same as sendTouchEvent but ensures that the event is dispatched to  
+ The same as sendTouchEvent but ensures that the event is dispatched to  
  this DOM window or one of its children.  
   
-</code>
+
 ### sendWheelEvent(aX, aY, aDeltaX, aDeltaY, aDeltaZ, aDeltaMode, aModifiers, aLineOrPageDeltaX, aLineOrPageDeltaY, aOptions) ###
 
 ### sendKeyEvent(aType, aKeyCode, aCharCode, aModifiers, aAdditionalFlags) ###
 
 ### sendNativeKeyEvent(aNativeKeyboardLayout, aNativeKeyCode, aModifierFlags, aCharacters, aUnmodifiedCharacters) ###
-<code>  
+  
 See nsIWidget::SynthesizeNativeKeyEvent  
   
 Cannot be accessed from unprivileged context (not content-accessible)  
@@ -559,18 +559,18 @@ Will throw a DOM security error if called without chrome privileges.
   
 When you use this for tests, use the constants defined in NativeKeyCodes.js  
   
-</code>
+
 ### sendNativeMouseEvent(aScreenX, aScreenY, aNativeMessage, aModifierFlags, aElement) ###
-<code>  
+  
 See nsIWidget::SynthesizeNativeMouseEvent  
   
 Will be called on the widget that contains aElement.  
 Cannot be accessed from unprivileged context (not content-accessible)  
 Will throw a DOM security error if called without chrome privileges.  
   
-</code>
+
 ### sendNativeMouseScrollEvent(aScreenX, aScreenY, aNativeMessage, aDeltaX, aDeltaY, aDeltaZ, aModifierFlags, aAdditionalFlags, aElement) ###
-<code>  
+  
 See nsIWidget::SynthesizeNativeMouseScrollEvent  
   
 Will be called on the widget that contains aElement.  
@@ -583,7 +583,7 @@ NOTE: The synthesized native event may be fired asynchronously.
   On Windows:  WM_MOUSEWHEEL (0x020A), WM_MOUSEHWHEEL(0x020E),  
                WM_VSCROLL (0x0115) or WM_HSCROLL (0x114).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -598,7 +598,7 @@ NOTE: The synthesized native event may be fired asynchronously.
 </table>
 
 ### sendNativeTouchPoint(aPointerId, aTouchState, aScreenX, aScreenY, aPressure, aOrientation) ###
-<code>  
+  
 Create a new or update an existing touch point on the digitizer.  
 To trigger os level gestures, individual touch points should  
 transition through a complete set of touch states which should be  
@@ -617,7 +617,7 @@ throw.
 @param aOrientation 0 -> 359 degree value indicating the  
 orientation of the pointer. Use 90 for normal taps.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -656,7 +656,7 @@ orientation of the pointer. Use 90 for normal taps.
 </table>
 
 ### sendNativeTouchTap(aScreenX, aScreenY, aLongTap) ###
-<code>  
+  
 Simulates native touch based taps on the input digitizer. Events  
 triggered by this call are injected at the os level. Events do not  
 bypass widget level input processing and as such can be used to  
@@ -675,7 +675,7 @@ throw.
 @param aLongTap true if the tap should be long, false for a short  
 tap.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -696,32 +696,32 @@ tap.
 </table>
 
 ### clearNativeTouchSequence() ###
-<code>  
+  
 Cancel any existing touch points or long tap delays. Calling this is safe  
 even if you're sure there aren't any pointers recorded. You should call  
 this when tests shut down to reset the digitizer driver. Not doing so can  
 leave the digitizer in an undetermined state which can screw up subsequent  
 tests and native input.  
   
-</code>
+
 ### activateNativeMenuItemAt(indexString) ###
-<code>  
+  
 See nsIWidget::ActivateNativeMenuItemAt  
   
 Cannot be accessed from unprivileged context (not content-accessible)  
 Will throw a DOM security error if called without chrome privileges.  
   
-</code>
+
 ### forceUpdateNativeMenuAt(indexString) ###
-<code>  
+  
 See nsIWidget::ForceUpdateNativeMenuAt  
   
 Cannot be accessed from unprivileged context (not content-accessible)  
 Will throw a DOM security error if called without chrome privileges.  
   
-</code>
+
 ### focus(aElement) ###
-<code>  
+  
 Focus the element aElement. The element should be in the same document  
 that the window is displaying. Pass null to blur the element, if any,  
 that currently has focus, and focus the document.  
@@ -735,7 +735,7 @@ Do not use this method. Just use element.focus if available or
 nsIFocusManager::SetFocus instead.  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -749,7 +749,7 @@ nsIFocusManager::SetFocus instead.
 </table>
 
 ### garbageCollect(aListener, aExtraForgetSkippableCalls) ###
-<code>  
+  
 Force a garbage collection followed by a cycle collection.  
   
 Will throw a DOM security error if called without chrome privileges in  
@@ -765,7 +765,7 @@ non-debug builds. Available to all callers in debug builds.
                                   nsCycleCollector_forgetSkippable call  
                                   which happens after garbage collection.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -792,7 +792,7 @@ non-debug builds. Available to all callers in debug builds.
 </table>
 
 ### cycleCollect(aListener, aExtraForgetSkippableCalls) ###
-<code>  
+  
 Force a cycle collection without garbage collection.  
   
 Will throw a DOM security error if called without chrome privileges in  
@@ -808,7 +808,7 @@ non-debug builds. Available to all callers in debug builds.
                                   nsCycleCollector_forgetSkippable call  
                                   which happens after garbage collection.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -835,13 +835,13 @@ non-debug builds. Available to all callers in debug builds.
 </table>
 
 ### runNextCollectorTimer() ###
-<code>  
+  
 Trigger whichever GC or CC timer is currently active and waiting to fire.  
 Don't do this too much for initiating heavy actions, like the start of a IGC.  
   
-</code>
+
 ### sendSimpleGestureEvent(aType, aX, aY, aDirection, aDelta, aModifiers, aClickCount) ###
-<code> Synthesize a simple gesture event for a window. The event types  
+ Synthesize a simple gesture event for a window. The event types  
  supported are: MozSwipeGestureStart, MozSwipeGestureUpdate,  
  MozSwipeGestureEnd, MozSwipeGesture, MozMagnifyGestureStart,  
  MozMagnifyGestureUpdate, MozMagnifyGesture, MozRotateGestureStart,  
@@ -860,7 +860,7 @@ without chrome privileges.
 @param aModifiers modifiers pressed, using constants defined in nsIDOMNSEvent  
 @param aClickCount For tap gestures, the number of taps.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -910,7 +910,7 @@ without chrome privileges.
 </table>
 
 ### elementFromPoint(aX, aY, aIgnoreRootScrollFrame, aFlushLayout) ###
-<code>  
+  
 Retrieve the element at point aX, aY in the window's document.  
   
 @param aIgnoreRootScrollFrame whether or not to ignore the root scroll  
@@ -918,7 +918,7 @@ Retrieve the element at point aX, aY in the window's document.
        null for coordinates outside of the viewport.  
 @param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -940,7 +940,7 @@ Retrieve the element at point aX, aY in the window's document.
 </table>
 
 ### nodesFromRect(aX, aY, aTopSize, aRightSize, aBottomSize, aLeftSize, aIgnoreRootScrollFrame, aFlushLayout) ###
-<code>  
+  
 Retrieve all nodes that intersect a rect in the window's document.  
   
 @param aX x reference for the rectangle in CSS pixels  
@@ -954,7 +954,7 @@ Retrieve all nodes that intersect a rect in the window's document.
        null for coordinates outside of the viewport.  
 @param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1012,36 +1012,36 @@ Retrieve all nodes that intersect a rect in the window's document.
 </table>
 
 ### getTranslationNodes(aRoot) ###
-<code>  
+  
 Get a list of nodes that have meaningful textual content to  
 be translated. The implementation of this algorithm is in flux  
 as we experiment and refine which approach works best.  
   
 This method requires chrome privileges.  
   
-</code>
+
 ### compareCanvases(aCanvas1, aCanvas2, aMaxDifference) ###
-<code>  
+  
 Compare the two canvases, returning the number of differing pixels and  
 the maximum difference in a channel.  This will throw an error if  
 the dimensions of the two canvases are different.  
   
 This method requires chrome privileges.  
   
-</code>
+
 ### suppressEventHandling(aSuppress) ###
-<code>  
+  
 Suppresses/unsuppresses user initiated event handling in window's document  
 and subdocuments.  
   
 @throw NS_ERROR_DOM_SECURITY_ERR if called without chrome privileges and  
        NS_ERROR_FAILURE if window doesn't have a document.  
   
-</code>
+
 ### clearMozAfterPaintEvents() ###
 
 ### disableNonTestMouseEvents(aDisable) ###
-<code>  
+  
 Disable or enable non synthetic test mouse events on *all* windows.  
   
 Cannot be accessed from unprivileged context (not content-accessible).  
@@ -1050,7 +1050,7 @@ Will throw a DOM security error if called without chrome privileges.
 @param aDisable  If true, disable all non synthetic test mouse events  
               on all windows.  Otherwise, enable them.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1065,13 +1065,13 @@ Will throw a DOM security error if called without chrome privileges.
 </table>
 
 ### getScrollXY(aFlushLayout, aScrollX, aScrollY) ###
-<code>  
+  
 Returns the scroll position of the window's currently loaded document.  
   
 @param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
 @see nsIDOMWindow::scrollX/Y  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1086,13 +1086,13 @@ Returns the scroll position of the window's currently loaded document.
 </table>
 
 ### getScrollXYFloat(aFlushLayout, aScrollX, aScrollY) ###
-<code>  
+  
 Returns the scroll position of the window's currently loaded document.  
   
 @param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
 @see nsIDOMWindow::scrollX/Y  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1107,12 +1107,12 @@ Returns the scroll position of the window's currently loaded document.
 </table>
 
 ### getScrollbarSize(aFlushLayout, aWidth, aHeight) ###
-<code>  
+  
 Returns the scrollbar width of the window's scroll frame.  
   
 @param aFlushLayout flushes layout if true. Otherwise, no flush occurs.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1126,19 +1126,19 @@ Returns the scrollbar width of the window's scroll frame.
 </table>
 
 ### getBoundsWithoutFlushing(aElement) ###
-<code>  
+  
 Returns the given element's bounds without flushing pending layout changes.  
   
-</code>
+
 ### getRootBounds() ###
-<code>  
+  
 Returns the bounds of the window's currently loaded document. This will  
 generally be (0, 0, pageWidth, pageHeight) but in some cases (e.g. RTL  
 documents) may have a negative left value.  
   
-</code>
+
 ### dispatchDOMEventViaPresShell(aTarget, aEvent, aTrusted) ###
-<code>  
+  
 Dispatches aEvent via the nsIPresShell object of the window's document.  
 The event is dispatched to aTarget, which should be an object  
 which implements nsIContent interface (#element, #text, etc).  
@@ -1150,23 +1150,23 @@ without chrome privileges.
 @note Event handlers won't get aEvent as parameter, but a similar event.  
       Also, aEvent should not be reused.  
   
-</code>
+
 ### dispatchEventToChromeOnly(aTarget, aEvent) ###
-<code>  
+  
 Sets WidgetEvent::mFlags::mOnlyChromeDispatch to true to ensure that  
 the event is propagated only to chrome.  
 Event's .target property will be aTarget.  
 Returns the same value as what EventTarget.dispatchEvent does.  
   
-</code>
+
 ### getClassName(aObject) ###
-<code>  
+  
 Returns the real classname (possibly of the mostly-transparent security  
 wrapper) of aObj.  
   
-</code>
+
 ### sendContentCommandEvent(aType, aTransferable) ###
-<code>  
+  
 Generate a content command event.  
   
 Cannot be accessed from unprivileged context (not content-accessible)  
@@ -1177,7 +1177,7 @@ Will throw a DOM security error if called without chrome privileges.
 @param aTransferable an instance of nsITransferable when aType is  
        "pasteTransferable"  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1199,7 +1199,7 @@ Will throw a DOM security error if called without chrome privileges.
 </table>
 
 ### sendCompositionEvent(aType, aData, aLocale) ###
-<code>  
+  
 Synthesize a composition event to the window.  
   
 Cannot be accessed from unprivileged context (not content-accessible)  
@@ -1212,7 +1212,7 @@ Will throw a DOM security error if called without chrome privileges.
                  selected text which is automatically computed.  
 @param aLocale   The locale property value.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1241,15 +1241,15 @@ Will throw a DOM security error if called without chrome privileges.
 </table>
 
 ### createCompositionStringSynthesizer() ###
-<code>  
+  
 Creating synthesizer of composition string on the window.  
   
 Cannot be accessed from unprivileged context (not content-accessible)  
 Will throw a DOM security error if called without chrome privileges.  
   
-</code>
+
 ### sendQueryContentEvent(aType, aOffset, aLength, aX, aY, aAdditionalFlags) ###
-<code>  
+  
 Synthesize a query content event. Note that the result value returned here  
 is in LayoutDevice pixels rather than CSS pixels.  
   
@@ -1257,7 +1257,7 @@ is in LayoutDevice pixels rather than CSS pixels.
               for the other parameters and the result.  
 @param aAdditionalFlags See the description of QUERY_CONTENT_FLAG_*.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1278,28 +1278,28 @@ is in LayoutDevice pixels rather than CSS pixels.
 </table>
 
 ### remoteFrameFullscreenChanged(aFrameElement, aNewOrigin) ###
-<code>  
+  
 Called when the remote child frame has changed its fullscreen state,  
 when entering fullscreen, and when the origin which is fullscreen changes.  
 aFrameElement is the iframe element which contains the child-process  
 fullscreen document, and aNewOrigin is the origin of the new fullscreen  
 document.  
   
-</code>
+
 ### remoteFrameFullscreenReverted() ###
-<code>  
+  
 Called when the remote frame has popped all fullscreen elements off its  
 stack, so that the operation can complete on the parent side.  
   
-</code>
+
 ### exitFullscreen() ###
-<code>  
+  
 Called when the child frame has fully exit fullscreen, so that the parent  
 process can also fully exit.  
   
-</code>
+
 ### sendSelectionSetEvent(aOffset, aLength, aAdditionalFlags) ###
-<code>  
+  
 Synthesize a selection set event to the window.  
   
 This sets the selection as the specified information.  
@@ -1310,7 +1310,7 @@ This sets the selection as the specified information.
 @param aAdditionalFlags See the description of SELECTION_SET_FLAG_*.  
 @return True, if succeeded.  Otherwise, false.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1348,7 +1348,7 @@ This sets the selection as the specified information.
 </table>
 
 ### selectAtPoint(aX, aY, aSelectBehavior) ###
-<code>  
+  
 Select content at a client point based on a selection behavior if the  
 underlying content is selectable. Selection will accumulate with any  
 existing selection, callers should clear selection prior if needed.  
@@ -1361,7 +1361,7 @@ May fire selection changed events. Calls nsFrame's SelectByTypeAtPoint.
 issues, and NS_ERROR_INVALID_ARG for coordinates that are outside  
 this window.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1395,7 +1395,7 @@ this window.
 </table>
 
 ### getVisitedDependentComputedStyle(aElement, aPseudoElement, aPropertyName) ###
-<code>  
+  
 Perform the equivalent of:  
   window.getComputedStyle(aElement, aPseudoElement).  
     getPropertyValue(aPropertyName)  
@@ -1409,15 +1409,15 @@ This is easier to implement than adding our property restrictions
 to this API, and is sufficient for the present testing  
 requirements (which are essentially testing 'color').  
   
-</code>
+
 ### getParent(obj) ###
-<code>  
+  
 Returns the parent of obj.  
   
 @param obj The JavaScript object whose parent is to be gotten.  
 @return the parent.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -1442,31 +1442,31 @@ Returns the parent of obj.
 </table>
 
 ### enterModalState() ###
-<code>  
+  
 Put the window into a state where scripts are frozen and events  
 suppressed, for use when the window has launched a modal prompt.  
   
-</code>
+
 ### leaveModalState() ###
-<code>  
+  
 Resume normal window state, where scripts can run and events are  
 delivered.  
   
-</code>
+
 ### isInModalState() ###
-<code>  
+  
 Is the window is in a modal state? [See enterModalState()]  
   
-</code>
+
 ### suspendTimeouts() ###
-<code>  
+  
 Suspend/resume timeouts on this window and its descendant windows.  
   
-</code>
+
 ### resumeTimeouts() ###
 
 ### startFrameTimeRecording(startIndex) ###
-<code>  
+  
 Record (and return) frame-intervals for frames which were presented  
   between calling StartFrameTimeRecording and StopFrameTimeRecording.  
   
@@ -1477,33 +1477,33 @@ Record (and return) frame-intervals for frames which were presented
 - Note: the first frame-interval may be longer than expected because last frame  
     might have been presented some time before calling StartFrameTimeRecording.  
   
-</code><code>  
+  
 Returns a handle which represents current recording start position.  
   
-</code>
+
 ### stopFrameTimeRecording(startIndex, frameCount, frameIntervals) ###
-<code>  
+  
 Returns number of recorded frames since startIndex was issued,  
   and allocates+populates 2 arraye with the recorded data.  
 - Allocation is infallible. Should be released even if size is 0.  
   
-</code>
+
 ### beginTabSwitch() ###
-<code>  
+  
 Signals that we're begining to tab switch. This is used by painting code to  
 determine total tab switch time.  
   
-</code>
+
 ### getOuterWindowWithId(aOuterWindowID) ###
-<code>  
+  
 Return the outer window with the given ID, if any.  Can return null.  
 @deprecated Use nsIWindowMediator.getOuterWindowWithId.  See bug 865664.  
   
-</code>
+
 ### RenderDocument(aRect, aFlags, aBackgroundColor, aThebesContext) ###
 
 ### advanceTimeAndRefresh(aMilliseconds) ###
-<code>  
+  
 advanceTimeAndRefresh allows the caller to take over the refresh  
 driver timing for a window.  A call to advanceTimeAndRefresh does  
 three things:  
@@ -1522,128 +1522,128 @@ in the same docshell tree, such as parent frames.
 When callers have completed their use of advanceTimeAndRefresh,  
 they must call restoreNormalRefresh.  
   
-</code>
+
 ### restoreNormalRefresh() ###
-<code>  
+  
 Undoes the effects of advanceTimeAndRefresh.  
   
-</code>
+
 ### setAsyncScrollOffset(aNode, aX, aY) ###
-<code>  
+  
 Set async scroll offset on an element. The next composite will render  
 with that offset if async scrolling is enabled, and then the offset  
 will be removed. Only call this while test-controlled refreshes is enabled.  
   
-</code>
+
 ### computeAnimationDistance(element, property, value1, value2) ###
-<code>  
+  
 Method for testing StyleAnimationValue::ComputeDistance.  
   
 Returns the distance between the two values as reported by  
 StyleAnimationValue::ComputeDistance for the given element and  
 property.  
   
-</code>
+
 ### wrapDOMFile(aFile) ###
-<code>  
+  
 Wrap an nsIFile in an nsIDOMFile  
   
-</code>
+
 ### findElementWithViewId(aId) ###
-<code>  
+  
 Given a view ID from the compositor process, retrieve the element  
 associated with a view. For scrollpanes for documents, the root  
 element of the document is returned.  
   
-</code>
+
 ### getViewId(aElement) ###
-<code>  
+  
 Find the view ID for a given element. This is the reverse of  
 findElementWithViewId().  
   
-</code>
+
 ### leafLayersPartitionWindow() ###
-<code>  
+  
 Checks the layer tree for this window and returns true  
 if all layers have transforms that are translations by integers,  
 no leaf layers overlap, and the union of the leaf layers is exactly  
 the bounds of the window. Always returns true in non-DEBUG builds.  
   
-</code>
+
 ### checkAndClearPaintedState(aElement) ###
-<code>  
+  
 Check if any PaintedLayer painting has been done for this element,  
 clears the painted flags if they have.  
   
-</code>
+
 ### getFileId(aFile) ###
-<code>  
+  
 Get internal id of the stored blob, file or file handle.  
   
-</code>
+
 ### getFilePath(aFile) ###
-<code>  
+  
 Get internal file path of the stored file or file handle.  
   
 TODO: File handle objects are actually not supported at the moment.  
   
-</code>
+
 ### getFileReferences(aDatabaseName, aId, aOptions, aRefCnt, aDBRefCnt, aSliceRefCnt) ###
-<code>  
+  
 Get file ref count info for given database and file id.  
   
   
-</code>
+
 ### isIncrementalGCEnabled() ###
-<code>  
+  
 Return whether incremental GC has been disabled due to a binary add-on.  
   
-</code>
+
 ### startPCCountProfiling() ###
-<code>  
+  
 Begin opcode-level profiling of all JavaScript execution in the window's  
 runtime.  
   
-</code>
+
 ### stopPCCountProfiling() ###
-<code>  
+  
 Stop opcode-level profiling of JavaScript execution in the runtime, and  
 collect all counts for use by getPCCount methods.  
   
-</code>
+
 ### purgePCCounts() ###
-<code>  
+  
 Purge collected PC counters.  
   
-</code>
+
 ### getPCCountScriptCount() ###
-<code>  
+  
 Get the number of scripts with opcode-level profiling information.  
   
-</code>
+
 ### getPCCountScriptSummary(script) ###
-<code>  
+  
 Get a JSON string for a short summary of a script and the PC counts  
 accumulated for it.  
   
-</code>
+
 ### getPCCountScriptContents(script) ###
-<code>  
+  
 Get a JSON string with full information about a profiled script,  
 including the decompilation of the script and placement of decompiled  
 operations within it, and PC counts for each operation.  
   
-</code>
+
 ### setScrollPositionClampingScrollPortSize(aWidth, aHeight) ###
-<code>  
+  
 Set the scrollport size for the purposes of clamping scroll positions for  
 the root scroll frame of this document to be (aWidth,aHeight) in CSS pixels.  
   
 The caller of this method must have chrome privileges.  
   
-</code>
+
 ### setContentDocumentFixedPositionMargins(aTop, aRight, aBottom, aLeft) ###
-<code>  
+  
 Set margins for the layout of fixed position elements in the content  
 document. These are used on mobile, where the viewable area can be  
 temporarily obscured by the browser chrome. In this situation, we're ok  
@@ -1653,19 +1653,19 @@ margins so that it can remain visible.
   
 The caller of this method must have chrome privileges.  
   
-</code>
+
 ### disableDialogs() ###
-<code>  
+  
 These are used to control whether dialogs (alert, prompt, confirm) are  
 allowed.  
   
-</code>
+
 ### enableDialogs() ###
 
 ### areDialogsEnabled() ###
 
 ### loadSheet(sheetURI, type) ###
-<code>  
+  
 Synchronously loads a style sheet from |sheetURI| and adds it to the list  
 of additional style sheets of the document.  
   
@@ -1675,37 +1675,37 @@ on the document owned by this window.
   
 Sheets added via this API take effect immediately on the document.  
   
-</code>
+
 ### addSheet(sheet, type) ###
-<code>  
+  
 Adds a style sheet to the list of additional style sheets of the document.  
   
 Style sheets can be preloaded with nsIStyleSheetService.preloadSheet.  
   
 Sheets added via this API take effect immediately on the document.  
   
-</code>
+
 ### removeSheet(sheetURI, type) ###
-<code>  
+  
 Remove the document style sheet at |sheetURI| from the list of additional   
 style sheets of the document.  The removal takes effect immediately.  
   
-</code>
+
 ### allowScriptsToClose() ###
-<code>  
+  
 After calling the method, the window for which this DOMWindowUtils  
 was created can be closed using scripts.  
   
-</code>
+
 ### isNodeDisabledForEvents(aNode) ###
-<code>  
+  
 In certain cases the event handling of nodes, form controls in practice,  
 may be disabled. Such cases are for example the existence of disabled  
 attribute or -moz-user-input: none/disabled.  
   
-</code>
+
 ### runInStableState(runnable) ###
-<code>  
+  
 Allows running of a "synchronous section", in the form of an nsIRunnable  
 once the event loop has reached a "stable state". We've reached a stable  
 state when the currently executing task/event has finished, see:  
@@ -1717,9 +1717,9 @@ be executed, in the order in which runInStableState() was called.
 XXX - This can wreak havoc if you're not using this for very simple  
 purposes, eg testing or setting a flag.  
   
-</code>
+
 ### runBeforeNextEvent(runnable) ###
-<code>  
+  
 Run the given runnable before the next iteration of the event loop (this  
 includes native events too). If a nested loop is spawned within the current  
 event then the runnable will not be run until that loop has terminated.  
@@ -1727,11 +1727,11 @@ event then the runnable will not be run until that loop has terminated.
 XXX - This can wreak havoc if you're not using this for very simple  
 purposes, eg testing or setting a flag.  
   
-</code>
+
 ### getOMTAStyle(aElement, aProperty) ###
 
 ### requestCompositorProperty(aProperty) ###
-<code>  
+  
 Special function that gets a property syncronously from the last composite  
 that occured.  
   
@@ -1741,36 +1741,36 @@ Supported properties:
   "missed_hwc": Report a bool if hardware composer is supported but was  
                 not used for the last frame.  
   
-</code>
+
 ### setHandlingUserInput(aHandlingInput) ###
-<code>  
+  
 If aHandlingInput is true, this informs the event state manager that  
 we're handling user input. Otherwise, this is a no-op (as by default  
 we're not handling user input).  
 Remember to call destruct() on the return value!  
 See also nsIDOMWindowUtils::isHandlingUserInput.  
   
-</code>
+
 ### getContentAPZTestData() ###
-<code>  
+  
 Get the content- and compositor-side APZ test data instances.  
 The return values are of type APZTestData (see APZTestData.webidl).  
   
-</code>
+
 ### getCompositorAPZTestData() ###
 
 ### xpconnectArgument(aThis) ###
-<code>  
+  
 This method doesn't do anything useful.  It was solely added for the  
 purpose of the test for bug 503926.  
   
-</code>
+
 ### askPermission(aRequest) ###
-<code>  
+  
 Helper for JS components that need to send permission requests with  
 e10s support properly.  
   
-</code>
+
 ## Attributes ##
 
 ### imageAnimationMode ###

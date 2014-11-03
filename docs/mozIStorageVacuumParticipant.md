@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # mozIStorageVacuumParticipant #
-<code>  
+  
 This interface contains the information that the Storage service needs to  
 vacuum a database.  This interface is created as a service through the  
 category manager with the category "vacuum-participant".  
 Please see https://developer.mozilla.org/en/mozIStorageVacuumParticipant for  
 more information.  
   
-</code>
+
 ## Methods ##
 
 ### onBeginVacuum() ###
-<code>  
+  
 Notifies when a vacuum operation begins.  Listeners should avoid using the  
 database till onEndVacuum is received.  
   
@@ -29,7 +29,7 @@ database till onEndVacuum is received.
       "heavy-io-task" notification through the observer service with the  
       data argument being either "vacuum-begin" or "vacuum-end".  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -44,13 +44,13 @@ database till onEndVacuum is received.
 </table>
 
 ### onEndVacuum(aSucceeded) ###
-<code>  
+  
 Notifies when a vacuum operation ends.  
   
 @param aSucceeded  
        reports if the vacuum succeeded or failed.  
   
-</code>
+
 #### Parameters ####
 
 <table>

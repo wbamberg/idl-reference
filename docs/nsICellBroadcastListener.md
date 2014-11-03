@@ -10,7 +10,6 @@ layout: default
 ## Methods ##
 
 ### notifyMessageReceived(aServiceId, aGsmGeographicalScope, aMessageCode, aMessageId, aLanguage, aBody, aMessageClass, aTimestamp, aCdmaServiceCategory, aHasEtwsInfo, aEtwsWarningType, aEtwsEmergencyUserAlert, aEtwsPopup) ###
-<code>  
+  
 Called when a Cell Broadcast message has been received by the network.  
   
-</code>

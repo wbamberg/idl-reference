@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIObserverService #
-<code>  
+  
 nsIObserverService  
   
 Service allows a client listener (nsIObserver) to register and unregister for   
@@ -14,11 +14,11 @@ notifications of specific string referenced topic. Service also provides a
 way to notify registered listeners and a way to enumerate registered client   
 listeners.  
   
-</code>
+
 ## Methods ##
 
 ### addObserver(anObserver, aTopic, ownsWeak) ###
-<code>  
+  
 AddObserver  
   
 Registers a given listener for a notifications regarding the specified  
@@ -32,7 +32,7 @@ topic.
                    a weak reference will be held.  Otherwise an error will be  
                    returned.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -62,7 +62,7 @@ topic.
 </table>
 
 ### removeObserver(anObserver, aTopic) ###
-<code>  
+  
 removeObserver  
   
 Unregisters a given listener from notifications regarding the specified  
@@ -72,7 +72,7 @@ topic.
                     notifications.  
 @param aTopic     : The notification topic or subject.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -93,7 +93,7 @@ topic.
 </table>
 
 ### notifyObservers(aSubject, aTopic, someData) ###
-<code>  
+  
 notifyObservers  
   
 Notifies all registered listeners of the given topic.  
@@ -102,7 +102,7 @@ Notifies all registered listeners of the given topic.
 @param aTopic   : The notification topic or subject.  
 @param someData : Notification specific wide string.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -128,14 +128,14 @@ Notifies all registered listeners of the given topic.
 </table>
 
 ### enumerateObservers(aTopic) ###
-<code>  
+  
 enumerateObservers  
   
 Returns an enumeration of all registered listeners.  
   
 @param aTopic   : The notification topic or subject.  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIContentViewerFile #
-<code>  
+  
 The nsIDocShellFile      
   
-</code>
+
 ## Methods ##
 
 ### print(aSilent, aDebugFile, aPrintSettings) ###

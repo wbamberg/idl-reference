@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### done(aResult) ###
-<code>  
+  
 Callback which is called when a filepicker is shown and a result  
 is returned.  
   
 @param aResult One of returnOK, returnCancel, or returnReplace  
   
-</code>
+
 #### Parameters ####
 
 <table>

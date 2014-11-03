@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # nsIUpdatePatch #
-<code>  
+  
 An interface that describes an object representing a patch file that can  
 be downloaded and applied to a version of this application so that it  
 can be updated.  
   
-</code>
+
 ## Methods ##
 
 ### serialize(updates) ###
-<code>  
+  
 Serializes this patch object into a DOM Element  
 @param   updates  
          The document to serialize into  
 @returns The DOM Element created by the serialization process  
   
-</code>
+
 #### Parameters ####
 
 <table>

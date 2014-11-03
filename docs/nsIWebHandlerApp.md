@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # nsIWebHandlerApp #
-<code>  
+  
 nsIWebHandlerApp is a web-based handler, as speced by the WhatWG HTML5  
 draft.  Currently, only GET-based handlers are supported.  At some point,   
 we probably want to work with WhatWG to spec out and implement POST-based  
 handlers as well.  
   
-</code>
+
 ## Attributes ##
 
 ### uriTemplate ###

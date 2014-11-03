@@ -10,11 +10,11 @@ layout: default
 ## Methods ##
 
 ### reloadPlugins() ###
-<code>  
+  
 Causes the plugins directory to be searched again for new plugin   
 libraries.  
   
-</code>
+
 ### getPluginTags(aPluginCount, aResults) ###
 
 ### clearSiteData(plugin, domain, flags, maxAge) ###
@@ -22,7 +22,7 @@ libraries.
 ### siteHasData(plugin, domain) ###
 
 ### registerPlayPreviewMimeType(mimeType, ignoreCTP, redirectURL) ###
-<code>  
+  
 Registers the play preview plugin mode for specific mime type  
   
 @param mimeType: specifies plugin mime type.  
@@ -31,7 +31,7 @@ whitelisted websites, will not notify about plugin
 presence in the address bar.  
 @param redirectURL: specifies url for the overlay iframe  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -65,7 +65,7 @@ presence in the address bar.
 ### getPermissionStringForType(mimeType) ###
 
 ### getPluginTagForType(mimeType) ###
-<code>  
+  
 Get the nsIPluginTag for this MIME type. This method works with both  
 enabled and disabled/blocklisted plugins, but an enabled plugin will  
 always be returned if available.  
@@ -73,17 +73,17 @@ always be returned if available.
 @throws NS_ERROR_NOT_AVAILABLE if no plugin is available for this MIME  
         type.  
   
-</code>
+
 ### getStateForType(mimeType) ###
-<code>  
+  
 Get the nsIPluginTag state for this MIME type.  
   
-</code>
+
 ### getBlocklistStateForType(aMimeType) ###
-<code>  
+  
 Get the blocklist state for a MIME type.  
   
-</code>
+
 ## Constants ##
 
 ### FLAG_CLEAR_ALL ###

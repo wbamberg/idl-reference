@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getValidEVPolicyOid() ###
-<code>  
+  
 This function uses the same test as attribute  
   isExtendedValidation  
   
@@ -20,7 +20,7 @@ a policy identifier in dotted notation (like 1.2.3.4.5).
 If isExtendedValidation is false, this function will return  
 an empty (length string) value.  
   
-</code>
+
 ## Attributes ##
 
 ### isExtendedValidation ###

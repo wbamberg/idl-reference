@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### onPredictPreconnect(uri) ###
-<code>  
+  
 Callback for when we do a predictive preconnect  
   
 @param uri - The URI that was preconnected to  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -29,12 +29,12 @@ Callback for when we do a predictive preconnect
 </table>
 
 ### onPredictDNS(uri) ###
-<code>  
+  
 Callback for when we do a predictive DNS lookup  
   
 @param uri - The URI that was looked up  
   
-</code>
+
 #### Parameters ####
 
 <table>

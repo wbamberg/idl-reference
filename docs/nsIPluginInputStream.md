@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIPluginInputStream #
-<code>  
+  
 The nsIPluginInputStream interface ...  
   
-</code>
+
 ## Methods ##
 
 ### getLastModified(aResult) ###
-<code>  
+  
  Corresponds to NPStream's lastmodified field.)  
   
-</code>
+
 ### requestRead(aRangeList) ###

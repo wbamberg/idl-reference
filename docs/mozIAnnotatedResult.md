@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # mozIAnnotatedResult #
-<code>  
+  
 Represents a place annotated with a given annotation.  If a place has  
 multiple annotations, it can be represented by multiple  
 mozIAnnotatedResult(s).  
   
-</code>
+
 ## Attributes ##
 
 ### guid ###

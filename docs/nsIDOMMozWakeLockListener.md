@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### callback(aTopic, aState) ###
-<code>  
+  
 The callback will be called when a lock topic changes its lock  
 state.  
   
@@ -27,7 +27,7 @@ Possible states are:
 @param aTopic The resource name related to the wake lock.  
 @param aState The wake lock state  
   
-</code>
+
 #### Parameters ####
 
 <table>

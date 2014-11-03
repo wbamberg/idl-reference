@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsFloat #
-<code>  
+  
 Scriptable storage for floating point numbers  
   
-</code>
+
 ## Methods ##
 
 ### toString() ###

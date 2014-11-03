@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIMessageSender #
-<code>  
+  
 Message "senders" have a single "other side" to which messages are  
 sent.  For example, a child-process message manager will send  
 messages that are only delivered to its one parent-process message  
 manager.  
   
-</code>
+
 ## Methods ##
 
 ### sendAsyncMessage(messageName, obj, objects, principal) ###
-<code>  
+  
 Send |messageName| and |obj| to the "other side" of this message  
 manager.  This invokes listeners who registered for  
 |messageName|.  
@@ -31,4 +31,3 @@ data delivered to listeners.
         example, we will throw NS_ERROR_FAILURE if we try to send a message  
         to a cross-process frame whose process has crashed.  
   
-</code>

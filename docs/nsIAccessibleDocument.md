@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIAccessibleDocument #
-<code>  
+  
 An interface for in-process accessibility clients  
 that wish to retrieve information about a document.  
 When accessibility is turned on in Gecko,  
@@ -16,14 +16,14 @@ You can QueryInterface to nsIAccessibleDocument from the nsIAccessible for
 the root node of a document or you can get one from  
 nsIAccessible::GetDocument().  
   
-</code>
+
 ## Methods ##
 
 ### getChildDocumentAt(index) ###
-<code>  
+  
 Return the child document accessible at the given index.  
   
-</code>
+
 ## Attributes ##
 
 ### URL ###

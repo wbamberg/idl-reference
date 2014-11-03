@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIVoicemailService #
-<code>  
+  
 XPCOM component (in the content process) that provides the voicemail  
 information.  
   
-</code>
+
 ## Methods ##
 
 ### getItemByServiceId(serviceId) ###
@@ -18,10 +18,10 @@ information.
 ### getDefaultItem() ###
 
 ### registerListener(listener) ###
-<code>  
+  
 Called when any one who is interested in receiving unsolicited messages.  
   
-</code>
+
 ### unregisterListener(listener) ###
 
 ## Attributes ##

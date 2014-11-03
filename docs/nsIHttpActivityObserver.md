@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIHttpActivityObserver #
-<code>  
+  
 nsIHttpActivityObserver  
   
 This interface provides a way for http activities to be reported  
 to observers.  
   
-</code>
+
 ## Methods ##
 
 ### observeActivity(aHttpChannel, aActivityType, aActivitySubtype, aTimestamp, aExtraSizeData, aExtraStringData) ###
-<code>  
+  
 observe activity from the http transport  
   
 @param aHttpChannel  
@@ -47,7 +47,7 @@ observe activity from the http transport
        Any extra string data optionally available with  
        this activity  
   
-</code>
+
 #### Parameters ####
 
 <table>

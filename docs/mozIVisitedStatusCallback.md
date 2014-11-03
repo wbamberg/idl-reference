@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### isVisited(aURI, aVisitedStatus) ###
-<code>  
+  
 Notifies whether a certain URI has been visited.  
   
 @param aURI  
@@ -18,7 +18,7 @@ Notifies whether a certain URI has been visited.
 @param aVisitedStatus  
        The visited status of aURI.  
   
-</code>
+
 #### Parameters ####
 
 <table>

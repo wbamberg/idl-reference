@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIControllerCommandTable #
-<code>  
+  
 nsIControllerCommandTable  
   
 An interface via which a controller can maintain a series of commands,  
@@ -17,19 +17,19 @@ nsIInterfaceRequestor, and be able to return an interface to their
 controller command table via getInterface().  
   
   
-</code>
+
 ## Methods ##
 
 ### makeImmutable() ###
-<code>  
+  
 Make this command table immutable, so that commands cannot  
 be registered or unregistered. Some command tables are made  
 mutable after command registration so that they can be   
 used as singletons.  
   
-</code>
+
 ### registerCommand(aCommandName, aCommand) ###
-<code>  
+  
 Register and unregister commands with the command table.  
   
 @param aCommandName  the name of the command under which to register or  
@@ -37,7 +37,7 @@ Register and unregister commands with the command table.
   
 @param aCommand      the handler for this command.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -60,12 +60,12 @@ Register and unregister commands with the command table.
 ### unregisterCommand(aCommandName, aCommand) ###
 
 ### findCommandHandler(aCommandName) ###
-<code>  
+  
 Find the command handler which has been registered to handle the named command.  
   
 @param aCommandName  the name of the command to find the handler for.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -79,13 +79,13 @@ Find the command handler which has been registered to handle the named command.
 </table>
 
 ### isCommandEnabled(aCommandName, aCommandRefCon) ###
-<code>  
+  
 Get whether the named command is enabled.  
   
 @param aCommandName    the name of the command to test  
 @param aCommandRefCon  the command context data  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -105,13 +105,13 @@ Get whether the named command is enabled.
 </table>
 
 ### updateCommandState(aCommandName, aCommandRefCon) ###
-<code>  
+  
 Tell the command to update its state (if it is a state updating command)  
   
 @param aCommandName    the name of the command to update  
 @param aCommandRefCon  the command context data  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -131,13 +131,13 @@ Tell the command to update its state (if it is a state updating command)
 </table>
 
 ### supportsCommand(aCommandName, aCommandRefCon) ###
-<code>  
+  
 Get whether the named command is supported.  
   
 @param aCommandName    the name of the command to test  
 @param aCommandRefCon  the command context data  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -157,13 +157,13 @@ Get whether the named command is supported.
 </table>
 
 ### doCommand(aCommandName, aCommandRefCon) ###
-<code>  
+  
 Execute the named command.  
   
 @param aCommandName    the name of the command to execute  
 @param aCommandRefCon  the command context data  
   
-</code>
+
 #### Parameters ####
 
 <table>

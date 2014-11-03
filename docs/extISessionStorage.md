@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # extISessionStorage #
-<code>  
+  
 Interface representing a simple storage system  
   
-</code>
+
 ## Methods ##
 
 ### has(aName) ###
-<code>  
+  
 Determines if a storage item exists with the given name.  
 @param   aName  
          The name of an item  
 @returns true if an item exists with the given name,  
          false otherwise.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -46,14 +46,14 @@ Determines if a storage item exists with the given name.
 </table>
 
 ### set(aName, aValue) ###
-<code>  
+  
 Sets the value of a storage item with the given name.  
 @param   aName  
          The name of an item  
 @param   aValue  
          The value to assign to the item  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -73,7 +73,7 @@ Sets the value of a storage item with the given name.
 </table>
 
 ### get(aName, aDefaultValue) ###
-<code>  
+  
 Gets the value of a storage item with the given name. Returns a  
 default value if the item does not exist.  
 @param   aName  
@@ -83,7 +83,7 @@ default value if the item does not exist.
 @returns value of the item or the given default value if no item  
          exists with the given name.  
   
-</code>
+
 #### Parameters ####
 
 <table>

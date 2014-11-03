@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getKeyForURI(uri) ###
-<code>  
+  
 Get the lookup string for a given URI.  This normalizes the hostname,  
 url-decodes the string, and strips off the protocol.  
   
@@ -18,7 +18,7 @@ url-decodes the string, and strips off the protocol.
   
 @returns String containing the canonicalized URI.  
   
-</code>
+
 #### Parameters ####
 
 <table>

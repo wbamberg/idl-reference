@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsICryptoHash #
-<code>  
+  
 nsICryptoHash  
 This interface provides crytographic hashing algorithms.  
   
-</code>
+
 ## Methods ##
 
 ### init(aAlgorithm) ###
-<code>  
+  
 Initialize the hashing object. This method may be  
 called multiple times with different algorithm types.  
   
@@ -28,7 +28,7 @@ called multiple times with different algorithm types.
 NOTE: This method or initWithString must be called  
       before any other method on this interface is called.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -44,7 +44,7 @@ NOTE: This method or initWithString must be called
 </table>
 
 ### initWithString(aAlgorithm) ###
-<code>  
+  
 Initialize the hashing object. This method may be  
 called multiple times with different algorithm types.  
   
@@ -56,7 +56,7 @@ called multiple times with different algorithm types.
 NOTE: This method or init must be called before any  
       other method on this interface is called.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -70,7 +70,7 @@ NOTE: This method or init must be called before any
 </table>
 
 ### update(aData, aLen) ###
-<code>  
+  
 @param aData a buffer to calculate the hash over  
   
 @param aLen the length of the buffer |aData|  
@@ -78,7 +78,7 @@ NOTE: This method or init must be called before any
 @throws NS_ERROR_NOT_INITIALIZED if |init| has not been   
         called.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -98,7 +98,7 @@ NOTE: This method or init must be called before any
 </table>
 
 ### updateFromStream(aStream, aLen) ###
-<code>  
+  
 Calculates and updates a new hash based on a given data stream.  
   
 @param aStream an input stream to read from.  
@@ -114,7 +114,7 @@ Calculates and updates a new hash based on a given data stream.
         data to be calculated into the hash is not available.  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -136,7 +136,7 @@ Calculates and updates a new hash based on a given data stream.
 </table>
 
 ### finish(aASCII) ###
-<code>  
+  
 Completes this hash object and produces the actual hash data.  
   
 @param aASCII if true then the returned value is a base-64   
@@ -153,7 +153,7 @@ NOTE: This method may be called any time after |init|
       is called.  This call resets the object to its  
       pre-init state.  
   
-</code>
+
 #### Parameters ####
 
 <table>

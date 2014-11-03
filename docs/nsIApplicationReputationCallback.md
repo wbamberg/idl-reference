@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onComplete(aShouldBlock, aStatus) ###
-<code>  
+  
 Callback for the result of the application reputation query.  
 @param aStatus  
        NS_OK if and only if the query succeeded. If it did, then  
@@ -21,7 +21,7 @@ Callback for the result of the application reputation query.
 @param aShouldBlock  
        Whether or not the download should be blocked.  
   
-</code>
+
 #### Parameters ####
 
 <table>

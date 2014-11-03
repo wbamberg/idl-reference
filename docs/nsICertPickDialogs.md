@@ -6,16 +6,15 @@ layout: default
 </div>
 
 # nsICertPickDialogs #
-<code>  
+  
 nsICertPickDialogs  
 Provides generic UI for choosing a certificate  
   
-</code>
+
 ## Methods ##
 
 ### PickCertificate(ctx, certNickList, certDetailsList, count, selectedIndex, canceled) ###
-<code>  
+  
 PickCertificate  
   General purpose certificate prompter  
   
-</code>

@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsINavHistoryBatchCallback #
-<code>  
+  
 @see runInBatchMode of nsINavHistoryService/nsINavBookmarksService  
   
-</code>
+
 ## Methods ##
 
 ### runBatched(aUserData) ###

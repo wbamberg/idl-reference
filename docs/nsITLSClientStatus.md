@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsITLSClientStatus #
-<code>  
+  
 Security summary for a given TLS client connection being handled by a  
 |nsITLSServerSocket| server.  
   
@@ -17,7 +17,7 @@ The values of these attributes are available once the |onHandshakeDone|
 method of the security observer has been called (see  
 |nsITLSServerSecurityObserver| below).  
   
-</code>
+
 ## Attributes ##
 
 ### peerCert ###

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIUpdate #
-<code>  
+  
 An interface that describes an object representing an available update to  
 the current application - this update may have several available patches  
 from which one must be selected to download and install, for example we  
@@ -16,17 +16,17 @@ file-replace patch. This object also contains information about the update
 that the front end and other application services can use to learn more  
 about what is going on.  
   
-</code>
+
 ## Methods ##
 
 ### getPatchAt(index) ###
-<code>  
+  
 Retrieves a patch.  
 @param   index  
          The index of the patch to retrieve.  
 @returns The nsIUpdatePatch at the specified index.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -51,13 +51,13 @@ Retrieves a patch.
 </table>
 
 ### serialize(updates) ###
-<code>  
+  
 Serializes this update object into a DOM Element  
 @param   updates  
          The document to serialize into  
 @returns The DOM Element created by the serialization process  
   
-</code>
+
 #### Parameters ####
 
 <table>

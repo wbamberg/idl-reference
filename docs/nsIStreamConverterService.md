@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIStreamConverterService #
-<code>  
+  
 The nsIStreamConverterService is a higher level stream converter factory  
 responsible for locating and creating stream converters  
 (nsIStreamConverter).  
@@ -19,18 +19,18 @@ is not possible.
 @author Jud Valeski  
 @see nsIStreamConverter  
   
-</code>
+
 ## Methods ##
 
 ### canConvert(aFromType, aToType) ###
-<code>  
+  
 Tests whether conversion between the two specified types is possible.  
 This is cheaper than calling convert()/asyncConvertData(); it is not  
 necessary to call this function before calling one of those, though.  
   
-</code>
+
 ### convert(aFromStream, aFromType, aToType, aContext) ###
-<code>  
+  
 <b>SYNCHRONOUS VERSION</b>  
 Converts a stream of one type, to a stream of another type.  
   
@@ -47,7 +47,7 @@ Use this method when you have a stream you want to convert.
                      demand rather than buffering the converted data  
                      until it is used.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -95,7 +95,7 @@ Use this method when you have a stream you want to convert.
 </table>
 
 ### asyncConvertData(aFromType, aToType, aListener, aContext) ###
-<code>  
+  
 <b>ASYNCHRONOUS VERSION</b>  
 Retrieves a nsIStreamListener that receives the original/raw data via its  
 nsIStreamListener::OnDataAvailable() callback, then converts and pushes   
@@ -112,7 +112,7 @@ callbacks asynchronously.
 @return              A nsIStreamListener that receives data via its  
                      OnDataAvailable() method.  
   
-</code>
+
 #### Parameters ####
 
 <table>

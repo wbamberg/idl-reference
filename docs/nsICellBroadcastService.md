@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsICellBroadcastService #
-<code>  
+  
 XPCOM component that provides the cell broadcast information.  
   
-</code>
+
 ## Methods ##
 
 ### registerListener(listener) ###
-<code>  
+  
 Called to register receiving cellbroadcast messages.  
   
 'cellbroadcast' permission is required for registration/unregistration.  
   
-</code>
+
 ### unregisterListener(listener) ###
 
 ## Constants ##

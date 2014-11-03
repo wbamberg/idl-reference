@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIChannelEventSink #
-<code>  
+  
 Implement this interface to receive control over various channel events.  
 Channels will try to get this interface from a channel's  
 notificationCallbacks or, if not available there, from the loadGroup's  
@@ -14,11 +14,11 @@ notificationCallbacks.
   
 These methods are called before onStartRequest.  
   
-</code>
+
 ## Methods ##
 
 ### asyncOnChannelRedirect(oldChannel, newChannel, flags, callback) ###
-<code>  
+  
 Called when a redirect occurs. This may happen due to an HTTP 3xx status  
 code. The purpose of this method is to notify the sink that a redirect  
 is about to happen, but also to give the sink the right to veto the  
@@ -60,7 +60,7 @@ callback must be done if this method throws!
 @throw <any> Throwing an exception will cause the redirect to be  
        cancelled  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIScriptChannel #
-<code>  
+  
 An interface representing a channel which will have to execute some sort of  
 program provided via its URI to compute the data it should return.  
   
@@ -22,7 +22,7 @@ question will be restricted in the following ways:
   principal of the environment in which the program is to be executed the  
   execution will be forced to happen in a sandbox.  
   
-</code>
+
 ## Attributes ##
 
 ### executionPolicy ###

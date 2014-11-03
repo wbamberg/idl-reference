@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIFileChannel #
-<code>  
+  
 nsIFileChannel  
   
-</code>
+
 ## Attributes ##
 
 ### file ###

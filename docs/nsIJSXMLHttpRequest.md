@@ -6,7 +6,6 @@ layout: default
 </div>
 
 # nsIJSXMLHttpRequest #
-<code>  
+  
 @deprecated  
   
-</code>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsICookiePermission #
-<code>  
+  
 An interface to test for cookie permissions  
   
-</code>
+
 ## Methods ##
 
 ### setAccess(aURI, aAccess) ###
-<code>  
+  
 setAccess  
   
 this method is called to block cookie access for the given URI.  this  
@@ -25,7 +25,7 @@ the same host name).
 @param aAccess  
        the new cookie access for the URI.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -45,7 +45,7 @@ the same host name).
 </table>
 
 ### canAccess(aURI, aChannel) ###
-<code>  
+  
 canAccess  
   
 this method is called to test whether or not the given URI/channel may  
@@ -60,7 +60,7 @@ access the cookie database, either to set or get cookies.
         ACCESS_DEFAULT, ACCESS_ALLOW, ACCESS_DENY, or  
         ACCESS_ALLOW_FIRST_PARTY_ONLY  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -93,7 +93,7 @@ access the cookie database, either to set or get cookies.
 </table>
 
 ### canSetCookie(aURI, aChannel, aCookie, aIsSession, aExpiry) ###
-<code>  
+  
 canSetCookie  
   
 this method is called to test whether or not the given URI/channel may  
@@ -120,7 +120,7 @@ downgrade a cookie to session-only if it fails to meet certain criteria.
   
 @return true if the cookie can be set.  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIProtectedAuthThread #
-<code>  
+  
 nsIProtectedAuthThread  
  This is used to communicate with the thread login on to   
  a token with CKF_PROTECTED_AUTHENTICATION_PATH set.  
   
-</code>
+
 ## Methods ##
 
 ### login(observer) ###
-<code>  
+  
 login - run the thread  
   A user interface implementing this interface needs to  
   call this method as soon as the message to the user is  
@@ -26,12 +26,12 @@ login - run the thread
   be called on the UI thread with a topic of "login-finished"  
   and null data and subject.  
   
-</code>
+
 ### getTokenName() ###
-<code>  
+  
 Gets token to be logged in name.  
   
-</code>
+
 ## Attributes ##
 
 ### slot ###

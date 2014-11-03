@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIAccessibleStateChangeEvent #
-<code>  
+  
 Fired when a state of an accessible changes.  
   
-</code>
+
 ## Attributes ##
 
 ### state ###

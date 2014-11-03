@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIUploadChannel #
-<code>  
+  
 nsIUploadChannel  
   
 A channel may optionally implement this interface if it supports the  
 notion of uploading a data stream.  The upload stream may only be set  
 prior to the invocation of asyncOpen on the channel.  
   
-</code>
+
 ## Methods ##
 
 ### setUploadStream(aStream, aContentType, aContentLength) ###
-<code>  
+  
 Sets a stream to be uploaded by this channel.  
   
 Most implementations of this interface require that the stream:  
@@ -45,7 +45,7 @@ for the aContentType parameter (see below).
        A value of -1 indicates that the length of the stream should be  
        determined by calling the stream's |available| method.  
   
-</code>
+
 #### Parameters ####
 
 <table>

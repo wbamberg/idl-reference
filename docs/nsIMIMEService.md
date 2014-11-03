@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIMIMEService #
-<code>  
+  
 The MIME service is responsible for mapping file extensions to MIME-types  
 (see RFC 2045). It also provides access to nsIMIMEInfo interfaces and  
 acts as a general convenience wrapper of nsIMIMEInfo interfaces.  
@@ -17,27 +17,27 @@ is illegal and behavior is undefined.
   
 @see nsIMIMEInfo  
   
-</code>
+
 ## Methods ##
 
 ### getFromTypeAndExtension(aMIMEType, aFileExt) ###
-<code>  
+  
 Retrieves an nsIMIMEInfo using both the extension  
 and the type of a file. The type is given preference  
 during the lookup. One of aMIMEType and aFileExt  
 can be an empty string. At least one of aMIMEType and aFileExt  
 must be nonempty.  
   
-</code>
+
 ### getTypeFromExtension(aFileExt) ###
-<code>  
+  
 Retrieves a ACString representation of the MIME type  
 associated with this file extension.  
   
 @param  A file extension (excluding the dot ('.')).  
 @return The MIME type, if any.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -62,7 +62,7 @@ associated with this file extension.
 </table>
 
 ### getTypeFromURI(aURI) ###
-<code>  
+  
 Retrieves a ACString representation of the MIME type  
 associated with this URI. The association is purely  
 file extension to MIME type based. No attempt to determine  
@@ -71,7 +71,7 @@ the type via server headers or byte scanning is made.
 @param  The URI the user wants MIME info on.  
 @return The MIME type, if any.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -98,14 +98,14 @@ the type via server headers or byte scanning is made.
 ### getTypeFromFile(aFile) ###
 
 ### getPrimaryExtension(aMIMEType, aFileExt) ###
-<code>  
+  
 Given a Type/Extension combination, returns the default extension  
 for this type. This may be identical to the passed-in extension.  
   
 @param aMIMEType The Type to get information on. Must not be empty.  
 @param aFileExt  File Extension. Can be empty.  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIProfileMigrator #
-<code>  
+  
 Migrate application settings from an outside source.  
   
 @provider Application (Profile-migration code)  
 @client   Toolkit (Startup code)  
 @obtainable service, contractid("@mozilla.org/toolkit/profile-migrator;1")  
   
-</code>
+
 ## Methods ##
 
 ### migrate(aStartup, aKey) ###
-<code>  
+  
 Migrate data from an outside source, if possible.  Does nothing  
 otherwise.  
   
@@ -36,7 +36,7 @@ set profile prefs or bookmarks, for example), use aStartup.doStartup.
   
 @note The startup code ignores COM exceptions thrown from this method.  
   
-</code>
+
 #### Parameters ####
 
 <table>

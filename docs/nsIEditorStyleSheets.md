@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### replaceStyleSheet(aURL) ###
-<code> Load and apply the style sheet, specified by aURL, to the  
+ Load and apply the style sheet, specified by aURL, to the  
 editor's document, replacing the last style sheet added (if any).  
 This is always asynchronous, and may cause network I/O.  
   
 @param aURL The style sheet to be loaded and applied.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -30,13 +30,13 @@ This is always asynchronous, and may cause network I/O.
 </table>
 
 ### addStyleSheet(aURL) ###
-<code> Add the given style sheet to the editor's document,  
+ Add the given style sheet to the editor's document,  
 on top of any that are already there.  
 This is always asynchronous, and may cause network I/O.  
   
 @param aURL The style sheet to be loaded and applied.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -50,7 +50,7 @@ This is always asynchronous, and may cause network I/O.
 </table>
 
 ### replaceOverrideStyleSheet(aURL) ###
-<code> Load and apply the override style sheet, specified by aURL, to the  
+ Load and apply the override style sheet, specified by aURL, to the  
 editor's document, replacing the last override style sheet added (if any).  
 This is always synchronous, so aURL should be a local file with only  
 local @imports. This action is not undoable. It is not intended for  
@@ -61,7 +61,7 @@ especially replaceStyleSheet.
   
 @param aURL The style sheet to be loaded and applied.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -75,14 +75,14 @@ especially replaceStyleSheet.
 </table>
 
 ### addOverrideStyleSheet(aURL) ###
-<code> Load and apply an override style sheet, specified by aURL, to  
+ Load and apply an override style sheet, specified by aURL, to  
 the editor's document, on top of any that are already there.  
 This is always synchronous, so the same caveats about local files and no  
 non-local @import as replaceOverrideStyleSheet apply here, too.  
   
 @param aURL The style sheet to be loaded and applied.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -96,12 +96,12 @@ non-local @import as replaceOverrideStyleSheet apply here, too.
 </table>
 
 ### removeStyleSheet(aURL) ###
-<code> Remove the given style sheet from the editor's document  
+ Remove the given style sheet from the editor's document  
 This is always synchronous  
   
 @param aURL The style sheet to be removed  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -115,12 +115,12 @@ This is always synchronous
 </table>
 
 ### removeOverrideStyleSheet(aURL) ###
-<code> Remove the given override style sheet from the editor's document  
+ Remove the given override style sheet from the editor's document  
 This is always synchronous  
   
 @param aURL The style sheet to be removed.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -134,13 +134,13 @@ This is always synchronous
 </table>
 
 ### enableStyleSheet(aURL, aEnable) ###
-<code> Enable or disable the given style sheet from the editor's document  
+ Enable or disable the given style sheet from the editor's document  
 This is always synchronous  
   
 @param aURL  The style sheet to be enabled or disabled  
 @param aEnable true to enable, or false to disable the style sheet  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -160,12 +160,12 @@ This is always synchronous
 </table>
 
 ### getStyleSheetForURL(aURL) ###
-<code> Get the CSSStyleSheet associated with the given URL.  
+ Get the CSSStyleSheet associated with the given URL.  
   
 @param aURL         The style sheet's URL  
 @return             the style sheet  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -190,12 +190,12 @@ This is always synchronous
 </table>
 
 ### getURLForStyleSheet(aStyleSheet) ###
-<code> Get the URL associated with the given CSSStyleSheet.  
+ Get the URL associated with the given CSSStyleSheet.  
   
 @param aStyleSheet  The style sheet  
 @return             the style sheet's URL  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # imgIContainer #
-<code>  
+  
 imgIContainer is the interface that represents an image. It allows  
 access to frames as Thebes surfaces. It also allows drawing of images  
 onto Thebes contexts.  
   
 Internally, imgIContainer also manages animation of images.  
   
-</code>
+
 ## Methods ##
 
 ### optimalImageSizeForDest(aDest, aWhichFrame, aFilter, aFlags) ###
-<code>  
+  
 Given a size at which this image will be displayed, and the drawing  
 parameters affecting how it will be drawn, returns the image size which  
 should be used to draw to produce the highest quality result. This is the  
@@ -33,7 +33,7 @@ can change over time due to changes in the internal state of the image.
 @param aFilter The filter to be used if we're scaling the image.  
 @param aFlags Flags of the FLAG_* variety  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -66,12 +66,12 @@ can change over time due to changes in the internal state of the image.
 </table>
 
 ### GetType() ###
-<code>  
+  
 Direct C++ accessor for 'type' attribute, for convenience.  
   
-</code>
+
 ### getFrame(aWhichFrame, aFlags) ###
-<code>  
+  
 Get a surface for the given frame. This may be a platform-native,  
 optimized surface, so you cannot inspect its pixel data. If you  
 need that, use SourceSurface::GetDataSurface.  
@@ -79,7 +79,7 @@ need that, use SourceSurface::GetDataSurface.
 @param aWhichFrame Frame specifier of the FRAME_* variety.  
 @param aFlags Flags of the FLAG_* variety  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -99,13 +99,13 @@ need that, use SourceSurface::GetDataSurface.
 </table>
 
 ### frameIsOpaque(aWhichFrame) ###
-<code>  
+  
 Whether the given frame is opaque; that is, needs the background painted  
 behind it.  
   
 @param aWhichFrame Frame specifier of the FRAME_* variety.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -119,13 +119,13 @@ behind it.
 </table>
 
 ### getImageContainer(aManager) ###
-<code>  
+  
 Attempts to create an ImageContainer (and Image) containing the current  
 frame. Only valid for RASTER type images.  
   
-</code>
+
 ### draw(aContext, aSize, aRegion, aWhichFrame, aFilter, aSVGContext, aFlags) ###
-<code>  
+  
 Draw the requested frame of this image onto the context specified.  
   
 Drawing an image involves scaling it to a certain size (which may be  
@@ -227,7 +227,7 @@ copies of the image, which looks like this:
                    would occupy. Ignored for raster images.  
 @param aFlags Flags of the FLAG_* variety  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -301,7 +301,7 @@ copies of the image, which looks like this:
 ### isDecoded() ###
 
 ### lockImage() ###
-<code>  
+  
 Increments the lock count on the image. An image will not be discarded  
 as long as the lock count is nonzero. Note that it is still possible for  
 the image to be undecoded if decode-on-draw is enabled and the image  
@@ -309,9 +309,9 @@ was never drawn.
   
 Upon instantiation images have a lock count of zero.  
   
-</code>
+
 ### unlockImage() ###
-<code>  
+  
 Decreases the lock count on the image. If the lock count drops to zero,  
 the image is allowed to discard its frame data to save memory.  
   
@@ -319,20 +319,20 @@ Upon instantiation images have a lock count of zero. It is an error to
 call this method without first having made a matching lockImage() call.  
 In other words, the lock count is not allowed to be negative.  
   
-</code>
+
 ### requestDiscard() ###
-<code>  
+  
 If this image is unlocked, discard its decoded data.  If the image is  
 locked or has already been discarded, do nothing.  
   
-</code>
+
 ### requestRefresh(aTime) ###
-<code>  
+  
 Indicates that this imgIContainer has been triggered to update  
 its internal animation state. Likely this should only be called  
 from within nsImageFrame or objects of similar type.  
   
-</code>
+
 ### resetAnimation() ###
 
 ### getFrameIndex(aWhichFrame) ###

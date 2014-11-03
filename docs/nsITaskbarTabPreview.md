@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### move(aNext) ###
-<code>  
+  
 Rearranges the preview relative to another tab preview from the same window  
 @param aNext The preview to the right of this one. A value of null  
              indicates that the preview is the rightmost one.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -30,19 +30,19 @@ Rearranges the preview relative to another tab preview from the same window
 </table>
 
 ### GetHWND() ###
-<code>  
+  
 Used internally to grab the handle to the proxy window.  
   
-</code>
+
 ### EnsureRegistration() ###
-<code>  
+  
 Used internally to ensure that the taskbar knows about this preview. If a  
 preview is not registered, then the API call to set its sibling (via move)  
 will silently fail.  
   
 This method is only invoked when it is safe to make taskbar API calls.  
   
-</code>
+
 ## Attributes ##
 
 ### title ###

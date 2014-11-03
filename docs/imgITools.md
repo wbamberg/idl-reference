@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### decodeImage(aStream, aMimeType) ###
-<code>  
+  
 decodeImage  
 Caller provides an input stream and mimetype. We read from the stream  
 and decompress it (according to the specified mime type) and return  
@@ -21,7 +21,7 @@ the resulting imgIContainer.
 @param aMimeType  
        Type of image in the stream.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -41,7 +41,7 @@ the resulting imgIContainer.
 </table>
 
 ### decodeImageData(aStream, aMimeType, aContainer) ###
-<code>  
+  
 decodeImageData  
 Caller provides an input stream and mimetype. We read from the stream  
 and decompress it (according to the specified mime type) and return  
@@ -59,7 +59,7 @@ new code should use |decodeImage|.
        this parameter. It is an error to provide any initial value but  
        |null|.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -87,7 +87,7 @@ new code should use |decodeImage|.
 </table>
 
 ### encodeImage(aContainer, aMimeType, outputOptions) ###
-<code>  
+  
 encodeImage  
 Caller provides an image container, and the mime type it should be  
 encoded to. We return an input stream for the encoded image data.  
@@ -99,7 +99,7 @@ encoded to. We return an input stream for the encoded image data.
 @param outputOptions  
        Encoder-specific output options.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -125,7 +125,7 @@ encoded to. We return an input stream for the encoded image data.
 </table>
 
 ### encodeScaledImage(aContainer, aMimeType, aWidth, aHeight, outputOptions) ###
-<code>  
+  
 encodeScaledImage  
 Caller provides an image container, and the mime type it should be  
 encoded to. We return an input stream for the encoded image data.  
@@ -141,7 +141,7 @@ The encoded image is scaled to the specified dimensions.
 @param outputOptions  
        Encoder-specific output options.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -175,7 +175,7 @@ The encoded image is scaled to the specified dimensions.
 </table>
 
 ### getImgLoaderForDocument(doc) ###
-<code>  
+  
 getImgLoaderForDocument  
 Retrieve an image loader that reflects the privacy status of the given  
 document.  
@@ -183,7 +183,7 @@ document.
 @param doc  
        A document. Must not be null.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -197,7 +197,7 @@ document.
 </table>
 
 ### getImgCacheForDocument(doc) ###
-<code>  
+  
 getImgLoaderForDocument  
 Retrieve an image cache that reflects the privacy status of the given  
 document.  
@@ -207,7 +207,7 @@ document.
        when there is no way to obtain a relevant document for  
        the current context in which a cache is desired.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -223,7 +223,7 @@ document.
 </table>
 
 ### encodeCroppedImage(aContainer, aMimeType, aOffsetX, aOffsetY, aWidth, aHeight, outputOptions) ###
-<code>  
+  
 encodeCroppedImage  
 Caller provides an image container, and the mime type it should be  
 encoded to. We return an input stream for the encoded image data.  
@@ -243,7 +243,7 @@ The given offset and size must not exceed the image bounds.
 @param outputOptions  
        Encoder-specific output options.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -284,13 +284,13 @@ The given offset and size must not exceed the image bounds.
 </table>
 
 ### createScriptedObserver(aObserver) ###
-<code>  
+  
 Create a wrapper around a scripted notification observer (ordinarily  
 imgINotificationObserver cannot be implemented from scripts).  
   
 @param aObserver The scripted observer to wrap   
   
-</code>
+
 #### Parameters ####
 
 <table>

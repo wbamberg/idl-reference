@@ -10,10 +10,10 @@ layout: default
 ## Methods ##
 
 ### notifySuccess() ###
-<code>  
+  
 notify*Success*() will be called, when request is succeed.  
   
-</code>
+
 ### notifySuccessWithString(result) ###
 
 ### notifySuccessWithBoolean(result) ###
@@ -35,7 +35,6 @@ notify*Success*() will be called, when request is succeed.
 ### notifyGetClirStatusSuccess(n, m) ###
 
 ### notifyError(name, message, serviceCode, additionalInformation) ###
-<code>  
+  
 notifyError() will be called, when request is failed.  
   
-</code>

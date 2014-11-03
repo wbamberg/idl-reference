@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # rdfISerializer #
-<code>  
+  
 Interface used to serialize RDF.  
   
 @status PLASMA  
   
-</code>
+
 ## Methods ##
 
 ### serialize(aDataSource, aOut) ###
-<code>  
+  
 Synchronously serialize the given datasource to the outputstream.  
   
 Implementations are not required to implement any buffering or  
@@ -24,7 +24,7 @@ other stream-based optimizations.
 @param aDataSource The RDF data source to be serialized.  
 @param aOut The output stream to use.  
   
-</code>
+
 #### Parameters ####
 
 <table>

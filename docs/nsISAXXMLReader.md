@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISAXXMLReader #
-<code>  
+  
 Interface for reading an XML document using callbacks.  
   
 nsISAXXMLReader is the interface that an XML parser's SAX2  
@@ -15,11 +15,11 @@ and query features and properties in the parser, to register event
 handlers for document processing, and to initiate a document  
 parse.  
   
-</code>
+
 ## Methods ##
 
 ### setFeature(name, value) ###
-<code>  
+  
 Set the value of a feature flag.  
   
 The feature name is any fully-qualified URI.  It is possible  
@@ -39,7 +39,7 @@ http://xml.org/sax/features/namespace-prefixes to false.
 http://xml.org/sax/features/namespace-prefixes .  All other  
 features will result in a NOT_IMPLEMENTED exception.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -59,7 +59,7 @@ features will result in a NOT_IMPLEMENTED exception.
 </table>
 
 ### getFeature(name) ###
-<code>  
+  
 Look up the value of a feature flag.  
   
 The feature name is any fully-qualified URI.  It is  
@@ -78,7 +78,7 @@ http://xml.org/sax/features/namespace-prefixes feature names.
 http://xml.org/sax/features/namespace-prefixes .  All other  
 features will result in a NOT_IMPLEMENTED exception.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -92,7 +92,7 @@ features will result in a NOT_IMPLEMENTED exception.
 </table>
 
 ### setProperty(name, value) ###
-<code>  
+  
 Set the value of a property. NOT CURRENTLY IMPLEMENTED.  
   
 The property name is any fully-qualified URI.  It is possible  
@@ -110,7 +110,7 @@ extended handlers.
 @param name String flag for a parser feature  
 @param value Turn the feature on/off.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -130,7 +130,7 @@ extended handlers.
 </table>
 
 ### getProperty(name) ###
-<code>  
+  
 Look up the value of a property. NOT CURRENTLY IMPLEMENTED.  
   
 The property name is any fully-qualified URI.  It is  
@@ -149,7 +149,7 @@ using names built on their own URIs.
 @param name The property name, which is a fully-qualified URI.  
 @return The current value of the property.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -174,13 +174,13 @@ using names built on their own URIs.
 </table>
 
 ### parseFromString(str, contentType) ###
-<code>  
+  
   
 @param str The UTF16 string to be parsed  
 @param contentType The content type of the string (see parseFromStream)  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -200,7 +200,7 @@ using names built on their own URIs.
 </table>
 
 ### parseFromStream(stream, charset, contentType) ###
-<code>  
+  
   
 @param stream The byte stream whose contents are parsed  
 @param charset The character set that was used to encode the byte  
@@ -210,7 +210,7 @@ using names built on their own URIs.
                    Must not be NULL.  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -239,7 +239,7 @@ using names built on their own URIs.
 </table>
 
 ### parseAsync(observer) ###
-<code>  
+  
 Begin an asynchronous parse. This method initializes the parser,  
 and must be called before any nsIStreamListener methods. It is  
 then the caller's duty to call nsIStreamListener methods to drive  
@@ -249,7 +249,7 @@ one of the other parse methods.
 @param observer The nsIRequestObserver to notify upon start or stop.  
                 Can be NULL.  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIHttpRequestHandler #
-<code>  
+  
 A representation of a handler for HTTP requests.  The handler is used by  
 calling its .handle method with data for an incoming request; it is the  
 handler's job to use that data as it sees fit to make the desired response.  
@@ -17,11 +17,11 @@ handler's job to use that data as it sees fit to make the desired response.
   method which has a nsIHttpRequestHandler parameter, instead of wrapping  
   it in an otherwise empty object.  
   
-</code>
+
 ## Methods ##
 
 ### handle(request, response) ###
-<code>  
+  
 Processes an HTTP request and initializes the passed-in response to reflect  
 the correct HTTP response.  
   
@@ -44,7 +44,7 @@ are met).
   an initially-empty response which must be modified to reflect the data  
   which should be sent as the response to the request described by metadata  
   
-</code>
+
 #### Parameters ####
 
 <table>

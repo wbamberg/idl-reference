@@ -6,28 +6,28 @@ layout: default
 </div>
 
 # nsILoginInfo #
-<code>  
+  
 An object containing information for a login stored by the  
 password manager.  
   
-</code>
+
 ## Methods ##
 
 ### init(aHostname, aFormSubmitURL, aHttpRealm, aUsername, aPassword, aUsernameField, aPasswordField) ###
-<code>  
+  
 Initialize a newly created nsLoginInfo object.  
   
 The arguments are the fields for the new object.  
   
-</code>
+
 ### equals(aLoginInfo) ###
-<code>  
+  
 Test for strict equality with another nsILoginInfo object.  
   
 @param aLoginInfo  
        The other object to test.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -41,7 +41,7 @@ Test for strict equality with another nsILoginInfo object.
 </table>
 
 ### matches(aLoginInfo, ignorePassword) ###
-<code>  
+  
 Test for loose equivalency with another nsILoginInfo object. The  
 passwordField and usernameField values are ignored, and the password  
 values may be optionally ignored. If one login's formSubmitURL is an  
@@ -53,7 +53,7 @@ blank value indicates the login was stored before bug 360493 was fixed.]
 @param ignorePassword  
        If true, ignore the password when checking for match.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -73,14 +73,14 @@ blank value indicates the login was stored before bug 360493 was fixed.]
 </table>
 
 ### clone() ###
-<code>  
+  
 Create an identical copy of the login, duplicating all of the login's  
 nsILoginInfo and nsILoginMetaInfo properties.  
   
 This allows code to be forwards-compatible, when additional properties  
 are added to nsILoginMetaInfo (or nsILoginInfo) in the future.  
   
-</code>
+
 ## Attributes ##
 
 ### hostname ###

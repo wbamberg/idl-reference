@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIOutputStream #
-<code>  
+  
 nsIOutputStream  
   
 An interface describing a writable stream of data.  An output stream may be  
@@ -20,27 +20,27 @@ avoid locking up the main application thread.  For this reason, it is
 generally the case that a blocking output stream should be implemented using  
 thread- safe AddRef and Release.  
   
-</code>
+
 ## Methods ##
 
 ### close() ###
-<code>   
+   
 Close the stream. Forces the output stream to flush any buffered data.  
   
 @throws NS_BASE_STREAM_WOULD_BLOCK if unable to flush without blocking   
   the calling thread (non-blocking mode only)  
   
-</code>
+
 ### flush() ###
-<code>  
+  
 Flush the stream.  
   
 @throws NS_BASE_STREAM_WOULD_BLOCK if unable to flush without blocking   
   the calling thread (non-blocking mode only)  
   
-</code>
+
 ### write(aBuf, aCount) ###
-<code>  
+  
 Write data into the stream.  
   
 @param aBuf the buffer containing the data to be written  
@@ -52,7 +52,7 @@ Write data into the stream.
   block the calling thread (non-blocking mode only)  
 @throws <other-error> on failure  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -83,7 +83,7 @@ Write data into the stream.
 </table>
 
 ### writeFrom(aFromStream, aCount) ###
-<code>  
+  
 Writes data into the stream from an input stream.  
   
 @param aFromStream the stream containing the data to be written  
@@ -102,7 +102,7 @@ its internal buffer (if any). If this method was provided as an external
 facility, a separate char* buffer would need to be used in order to call  
 the output stream's other Write method.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -133,7 +133,7 @@ the output stream's other Write method.
 </table>
 
 ### writeSegments(aReader, aClosure, aCount) ###
-<code>  
+  
 Low-level write method that has access to the stream's underlying buffer.  
 The reader function may be called multiple times for segmented buffers.  
 WriteSegments is expected to keep calling the reader until either there  
@@ -155,7 +155,7 @@ should not call the reader with zero bytes to provide.
 NOTE: this function may be unimplemented if a stream has no underlying  
 buffer (e.g., socket output stream).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -192,7 +192,7 @@ buffer (e.g., socket output stream).
 </table>
 
 ### isNonBlocking() ###
-<code>  
+  
 @return true if stream is non-blocking  
   
 NOTE: writing to a blocking output stream will block the calling thread  
@@ -202,7 +202,7 @@ NOTE: a non-blocking output stream may implement nsIAsyncOutputStream to
 provide consumers with a way to wait for the stream to accept more data  
 once its write method is unable to accept any data without blocking.  
   
-</code>
+
 #### Returns ####
 
 <table>

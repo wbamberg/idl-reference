@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsICycleCollectorListener #
-<code>  
+  
 Given an instance of this interface, the cycle collector calls the instance's  
 methods to report the objects it visits, the edges between them, and its  
 conclusions about which objects are roots and which are garbage.  
@@ -66,7 +66,7 @@ while the cycle collector is running. To analyze cycle collection data in JS:
   on objects however it pleases: the cycle collector has finished its  
   work, and the JS code is simply consuming recorded data.  
   
-</code>
+
 ## Methods ##
 
 ### allTraces() ###

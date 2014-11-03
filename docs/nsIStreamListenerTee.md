@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIStreamListenerTee #
-<code>  
+  
 As data "flows" into a stream listener tee, it is copied to the output stream  
 and then forwarded to the real listener.  
   
-</code>
+
 ## Methods ##
 
 ### init(listener, sink, requestObserver) ###
-<code>   
+   
 Initalize the tee.  
   
 @param listener  
@@ -30,7 +30,7 @@ Initalize the tee.
    observer are also propagated to the channel, but exceptions from  
    the original listener (listener parameter) are privileged   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -62,14 +62,14 @@ Initalize the tee.
 </table>
 
 ### initAsync(listener, eventTarget, sink, requestObserver) ###
-<code>   
+   
 Initalize the tee like above, but with the extra parameter to make it  
 possible to copy the output asynchronously  
 @param anEventTarget  
    if set, this event-target is used to copy data to the output stream,  
    giving an asynchronous tee  
   
-</code>
+
 #### Parameters ####
 
 <table>

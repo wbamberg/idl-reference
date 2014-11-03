@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # mozIStorageFunction #
-<code>  
+  
 mozIStorageFunction is to be implemented by storage consumers that  
 wish to receive callbacks during the request execution.  
   
@@ -19,11 +19,11 @@ problem-specific functions.
 These functions can be called from triggers, too.  
   
   
-</code>
+
 ## Methods ##
 
 ### onFunctionCall(aFunctionArguments) ###
-<code>  
+  
 onFunctionCall is called when execution of a custom  
 function should occur.  
   
@@ -32,7 +32,7 @@ function should occur.
   
 @returns any value as Variant type.  
   
-</code>
+
 #### Parameters ####
 
 <table>

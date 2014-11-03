@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIStandaloneNativeMenu #
-<code>  
+  
 Platform-independent interface to platform native menu objects.  
   
-</code>
+
 ## Methods ##
 
 ### init(aDOMElement) ###
-<code>  
+  
 Initialize the native menu using given XUL DOM element.  
   
 @param aDOMElement A XUL DOM element of tag type |menu| or |menupopup|.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -32,14 +32,14 @@ Initialize the native menu using given XUL DOM element.
 </table>
 
 ### menuWillOpen() ###
-<code>  
+  
 This method must be called before the menu is opened and displayed to the  
 user. It allows the platform code to update the menu and also determine  
 whether the menu should even be shown.  
   
 @return true if the menu can be shown, false if it should not be shown  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -52,14 +52,14 @@ whether the menu should even be shown.
 </table>
 
 ### activateNativeMenuItemAt(anIndexString) ###
-<code>  
+  
 Activate the native menu item specified by |anIndexString|. This method  
 is intended to be used by the test suite.  
   
 @param anIndexString string containing a list of indices separated by  
        pipe ('|') characters  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -74,14 +74,14 @@ is intended to be used by the test suite.
 </table>
 
 ### forceUpdateNativeMenuAt(anIndexString) ###
-<code>  
+  
 Force an update of the native menu item specified by |anIndexString|. This  
 method is intended to be used by the test suite.  
   
 @param anIndexString string containing a list of indices separated by  
        pipe ('|') characters  
   
-</code>
+
 #### Parameters ####
 
 <table>

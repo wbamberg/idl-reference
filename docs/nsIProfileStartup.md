@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # nsIProfileStartup #
-<code>  
+  
 Helper interface for nsIProfileMigrator.  
   
 @provider Toolkit (Startup code)  
 @client   Application (Profile-migration code)  
 @obtainable nsIProfileMigrator.migrate  
   
-</code>
+
 ## Methods ##
 
 ### doStartup() ###
-<code>  
+  
 Do profile-startup by setting NS_APP_USER_PROFILE_50_DIR in the directory  
 service and notifying the profile-startup observer topics.  
   
-</code>
+
 ## Attributes ##
 
 ### directory ###

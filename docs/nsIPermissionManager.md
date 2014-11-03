@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### add(uri, type, permission, expireType, expireTime) ###
-<code>  
+  
 Add permission information for a given URI and permission type. This  
 operation will cause the type string to be registered if it does not  
 currently exist. If a permission already exists for a given type, it  
@@ -35,7 +35,7 @@ will be modified.
 @param expiretime  an integer representation of when this permission  
                    should be forgotten (milliseconds since Jan 1 1970 0:00:00).   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -86,16 +86,16 @@ will be modified.
 </table>
 
 ### addFromPrincipal(principal, typed, permission, expireType, expireTime) ###
-<code>  
+  
 Add permission information for a given principal.  
 It is internally calling the other add() method using the nsIURI from the  
 principal.  
 Passing a system principal will be a no-op because they will always be  
 granted permissions.  
   
-</code>
+
 ### remove(host, type) ###
-<code>  
+  
 Remove permission information for a given host string and permission type.  
 The host string represents the exact entry in the permission list (such as  
 obtained from the enumerator), not a URI which that permission might apply  
@@ -106,7 +106,7 @@ to.
               The type must have been previously registered using the  
               add() method.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -128,32 +128,32 @@ to.
 </table>
 
 ### removeFromPrincipal(principal, type) ###
-<code>  
+  
 Remove permission information for a given principal.  
 This is internally calling remove() with the host from the principal's URI.  
 Passing system principal will be a no-op because we never add them to the  
 database.  
   
-</code>
+
 ### removeAll() ###
-<code>  
+  
 Clear permission information for all websites.  
   
-</code>
+
 ### removeAllSince(since) ###
-<code>  
+  
 Clear all permission information added since the specified time.  
   
-</code>
+
 ### testPermission(uri, type) ###
-<code>  
+  
 Test whether a website has permission to perform the given action.  
 @param uri     the uri to be tested  
 @param type    a case-sensitive ASCII string, identifying the consumer  
 @param return  see add(), param permission. returns UNKNOWN_ACTION when  
                there is no stored permission for this uri and / or type.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -180,20 +180,20 @@ Test whether a website has permission to perform the given action.
 </table>
 
 ### testPermissionFromPrincipal(principal, type) ###
-<code>  
+  
 Test whether the principal has the permission to perform a given action.  
 System principals will always have permissions granted.  
   
-</code>
+
 ### testPermissionFromWindow(window, type) ###
-<code>  
+  
 Test whether the principal associated with the window's document has the  
 permission to perform a given action.  System principals will always  
 have permissions granted.  
   
-</code>
+
 ### testExactPermission(uri, type) ###
-<code>  
+  
 Test whether a website has permission to perform the given action.  
 This requires an exact hostname match, subdomains are not a match.  
 @param uri     the uri to be tested  
@@ -201,7 +201,7 @@ This requires an exact hostname match, subdomains are not a match.
 @param return  see add(), param permission. returns UNKNOWN_ACTION when  
                there is no stored permission for this uri and / or type.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -228,13 +228,13 @@ This requires an exact hostname match, subdomains are not a match.
 </table>
 
 ### testExactPermissionFromPrincipal(principal, type) ###
-<code>  
+  
 See testExactPermission() above.  
 System principals will always have permissions granted.  
   
-</code>
+
 ### testExactPermanentPermission(principal, type) ###
-<code>  
+  
 Test whether a website has permission to perform the given action  
 ignoring active sessions.  
 System principals will always have permissions granted.  
@@ -244,7 +244,7 @@ System principals will always have permissions granted.
 @param return    see add(), param permission. returns UNKNOWN_ACTION when  
                  there is no stored permission for this uri and / or type.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -271,7 +271,7 @@ System principals will always have permissions granted.
 </table>
 
 ### getPermissionObject(principal, type, exactHost) ###
-<code>  
+  
 Get the permission object associated with the given principal and action.  
 @param principal The principal  
 @param type      A case-sensitive ASCII string identifying the consumer  
@@ -284,7 +284,7 @@ Get the permission object associated with the given principal and action.
       need to know the specific stored details.  
 @note This method will always return null for the system principal.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -327,24 +327,24 @@ Get the permission object associated with the given principal and action.
 </table>
 
 ### addrefAppId(appId) ###
-<code>  
+  
 Increment or decrement our "refcount" of an app id.  
   
 We use this refcount to determine an app's lifetime.  When an app's  
 refcount goes to 0, we clear the permissions given to the app which are  
 set to expire at the end of its session.  
   
-</code>
+
 ### releaseAppId(appId) ###
 
 ### removePermissionsForApp(appId, browserOnly) ###
-<code>  
+  
 Remove all permissions associated with a given app id.  
 @param aAppId       The appId of the app  
 @param aBrowserOnly Whether we should remove permissions associated with  
                     a browser element (true) or all permissions (false).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -365,7 +365,7 @@ Remove all permissions associated with a given app id.
 </table>
 
 ### updateExpireTime(principal, type, exactHost, sessionExpireTime, persistentExpireTime) ###
-<code>  
+  
 If the current permission is set to expire, reset the expiration time. If  
 there is no permission or the current permission does not expire, this  
 method will silently return.  
@@ -379,7 +379,7 @@ method will silently return.
                           Jan 1 1970 0:00:00), if it is currently  
                           EXPIRE_TIME.  
   
-</code>
+
 #### Parameters ####
 
 <table>

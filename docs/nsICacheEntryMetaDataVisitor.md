@@ -6,15 +6,14 @@ layout: default
 </div>
 
 # nsICacheEntryMetaDataVisitor #
-<code>  
+  
 Argument for nsICacheEntry.visitMetaData, provides access to all metadata  
 keys and values stored on the entry.  
   
-</code>
+
 ## Methods ##
 
 ### onMetaDataElement(key, value) ###
-<code>  
+  
 Called over each key / value pair.  
   
-</code>

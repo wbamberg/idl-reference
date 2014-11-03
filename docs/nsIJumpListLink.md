@@ -6,23 +6,23 @@ layout: default
 </div>
 
 # nsIJumpListLink #
-<code>  
+  
 A URI link jump list item.  
   
 Note the application must be the registered protocol  
 handler for the protocol of the link.  
   
-</code>
+
 ## Methods ##
 
 ### compareHash(uri) ###
-<code>  
+  
 Compare this item's hash to another uri.  
   
 Generates a spec hash of the incoming uri and compares  
 it to this item's uri spec hash.  
   
-</code>
+
 ## Attributes ##
 
 ### uri ###

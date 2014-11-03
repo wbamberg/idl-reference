@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onContentPrefSet(aGroup, aName, aValue) ###
-<code>  
+  
 Called when a content pref is set to a different value.  
   
 @param    aGroup      the group to which the pref belongs, or null  
@@ -18,7 +18,7 @@ Called when a content pref is set to a different value.
 @param    aName       the name of the pref that was set  
 @param    aValue      the new value of the pref  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -45,14 +45,14 @@ Called when a content pref is set to a different value.
 </table>
 
 ### onContentPrefRemoved(aGroup, aName) ###
-<code>  
+  
 Called when a content pref is removed.  
   
 @param    aGroup      the group to which the pref belongs, or null  
                       if it's a global pref (applies to all sites)  
 @param    aName       the name of the pref that was removed  
   
-</code>
+
 #### Parameters ####
 
 <table>

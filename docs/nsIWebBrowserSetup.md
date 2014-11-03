@@ -6,25 +6,25 @@ layout: default
 </div>
 
 # nsIWebBrowserSetup #
-<code>  
+  
 The nsIWebBrowserSetup interface lets you set properties on a browser  
 object; you can do so at any time during the life cycle of the browser.  
   
 @note Unless stated otherwise, settings are presumed to be enabled by  
       default.  
   
-</code>
+
 ## Methods ##
 
 ### setProperty(aId, aValue) ###
-<code>  
+  
 Sets an integer or boolean property on the new web browser object.  
 Only PR_TRUE and PR_FALSE are legal boolean values.  
   
 @param aId The identifier of the property to be set.  
 @param aValue The value of the property.  
   
-</code>
+
 #### Parameters ####
 
 <table>

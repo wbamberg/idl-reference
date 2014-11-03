@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsICommandLineRunner #
-<code>  
+  
 Extension of nsICommandLine that allows for initialization of new command lines  
 and running the command line actions by processing the command line handlers.  
   
@@ -15,11 +15,11 @@ and running the command line actions by processing the command line handlers.
                    functionality provided by this interface, talk to Benjamin  
                    Smedberg <benjamin@smedbergs.us>.  
   
-</code>
+
 ## Methods ##
 
 ### init(argc, argv, workingDir, state) ###
-<code>  
+  
 This method assumes a native character set, and is meant to be called  
 with the argc/argv passed to main(). Talk to bsmedberg if you need to  
 create a command line using other data. argv will not be altered in any  
@@ -30,7 +30,7 @@ On Windows, the "native" character set is UTF-8, not the native codepage.
 @param workingDir The working directory for resolving file and URI paths.  
 @param state      The nsICommandLine.state flag.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -50,19 +50,19 @@ On Windows, the "native" character set is UTF-8, not the native codepage.
 </table>
 
 ### setWindowContext(aWindow) ###
-<code>  
+  
 Set the windowContext parameter.  
   
-</code>
+
 ### run() ###
-<code>  
+  
 Process the command-line handlers in the proper order, calling "handle()" on  
 each.  
   
 @throws NS_ERROR_ABORT if any handler throws NS_ERROR_ABORT. All other errors  
         thrown by handlers will be silently ignored.  
   
-</code>
+
 ## Attributes ##
 
 ### helpText ###

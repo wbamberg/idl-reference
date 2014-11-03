@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### initWithCFURL(aCFURL) ###
-<code>  
+  
 initWithCFURL  
   
 Init this object with a CFURLRef  
@@ -21,7 +21,7 @@ NOTE: If the path of the CFURL is /a/b/c, at least a/b must exist beforehand.
 @param   aCFURL         the CoreFoundation URL  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -35,7 +35,7 @@ NOTE: If the path of the CFURL is /a/b/c, at least a/b must exist beforehand.
 </table>
 
 ### initWithFSRef(aFSRef) ###
-<code>  
+  
 initWithFSRef  
   
 Init this object with an FSRef  
@@ -45,7 +45,7 @@ NOTE: Supported only for XP_MACOSX
 @param   aFSRef         the native FSRef  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -59,7 +59,7 @@ NOTE: Supported only for XP_MACOSX
 </table>
 
 ### getCFURL() ###
-<code>  
+  
 getCFURL  
   
 Returns the CFURLRef of the file object. The caller is  
@@ -75,9 +75,9 @@ NOTE: Supported only for XP_MACOSX
 @return  
    
   
-</code>
+
 ### getFSRef() ###
-<code>  
+  
 getFSRef  
   
 Returns the FSRef of the file object.  
@@ -92,9 +92,9 @@ NOTE: Supported only for XP_MACOSX
 @return  
    
   
-</code>
+
 ### getFSSpec() ###
-<code>  
+  
 getFSSpec  
   
 Returns the FSSpec of the file object.  
@@ -107,9 +107,9 @@ the unresolved alias file.
 @return  
    
   
-</code>
+
 ### launchWithDoc(aDocToLoad, aLaunchInBackground) ###
-<code>  
+  
 launchWithDoc  
   
 Launch the application that this file points to with a document.  
@@ -118,7 +118,7 @@ Launch the application that this file points to with a document.
 @param   aLaunchInBackground TRUE if the application should not come to the front.  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -138,7 +138,7 @@ Launch the application that this file points to with a document.
 </table>
 
 ### openDocWithApp(aAppToOpenWith, aLaunchInBackground) ###
-<code>  
+  
 openDocWithApp  
   
 Open the document that this file points to with the given application.  
@@ -149,7 +149,7 @@ Open the document that this file points to with the given application.
 @param   aLaunchInBackground TRUE if the application should not come to the front.  
   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -171,13 +171,13 @@ Open the document that this file points to with the given application.
 </table>
 
 ### isPackage() ###
-<code>  
+  
 isPackage  
   
 returns true if a directory is determined to be a package under Mac OS 9/X  
   
   
-</code>
+
 ## Attributes ##
 
 ### fileSizeWithResFork ###

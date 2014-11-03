@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIRDFXMLSinkObserver #
-<code>  
+  
 An observer that is notified as progress is made on the load  
 of an RDF/XML document in an <code>nsIRDFXMLSink</code>.  
   
-</code>
+
 ## Methods ##
 
 ### onBeginLoad(aSink) ###
-<code>  
+  
 Called when the load begins.  
 @param aSink the RDF/XML sink on which the load is beginning.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -32,11 +32,11 @@ Called when the load begins.
 </table>
 
 ### onInterrupt(aSink) ###
-<code>  
+  
 Called when the load is suspended (e.g., for network quantization).  
 @param aSink the RDF/XML sink that is being interrupted.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -50,11 +50,11 @@ Called when the load is suspended (e.g., for network quantization).
 </table>
 
 ### onResume(aSink) ###
-<code>  
+  
 Called when a suspended load is resuming.  
 @param aSink the RDF/XML sink that is resuming.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -68,11 +68,11 @@ Called when a suspended load is resuming.
 </table>
 
 ### onEndLoad(aSink) ###
-<code>  
+  
 Called when an RDF/XML load completes successfully.  
 @param aSink the RDF/XML sink that has finished loading.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -86,13 +86,13 @@ Called when an RDF/XML load completes successfully.
 </table>
 
 ### onError(aSink, aStatus, aErrorMsg) ###
-<code>  
+  
 Called when an error occurs during the load  
 @param aSink the RDF/XML sink in which the error occurred  
 @param aStatus the networking result code  
 @param aErrorMsg an error message, if applicable  
   
-</code>
+
 #### Parameters ####
 
 <table>

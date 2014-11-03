@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIDOMTCPServerSocket #
-<code>  
+  
 nsIDOMTCPServerSocket  
   
 An interface to a server socket that can accept incoming connections for gaia apps.  
   
-</code>
+
 ## Methods ##
 
 ### close() ###
-<code>  
+  
 Close the server socket.  
   
-</code>
+
 ## Attributes ##
 
 ### localPort ###

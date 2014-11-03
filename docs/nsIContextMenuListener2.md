@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIContextMenuListener2 #
-<code>  
+  
 nsIContextMenuListener2  
   
 This is an extended version of nsIContextMenuListener  
@@ -16,11 +16,11 @@ background images as well as various utilities.
 @see nsIContextMenuListener  
 @see nsIContextMenuInfo  
   
-</code>
+
 ## Methods ##
 
 ### onShowContextMenu(aContextFlags, aUtils) ###
-<code>  
+  
 Called when the browser receives a context menu event (e.g. user is right-mouse  
 clicking somewhere on the document). The combination of flags, along with the  
 attributes of <CODE>aUtils</CODE>, indicate where and what was clicked on.  
@@ -44,7 +44,7 @@ CONTEXT_BACKGROUND_IMAGE       <HTML> with background image
   
 @see nsIContextMenuInfo  
   
-</code>
+
 #### Parameters ####
 
 <table>

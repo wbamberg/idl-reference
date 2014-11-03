@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIAccessibleObjectAttributeChangedEvent #
-<code>  
+  
 Fired when an attribute of an accessible changes.  
   
-</code>
+
 ## Attributes ##
 
 ### changedAttribute ###

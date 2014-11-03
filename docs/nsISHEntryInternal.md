@@ -14,7 +14,7 @@ layout: default
 ### RemoveFromBFCacheSync() ###
 
 ### getSharedState() ###
-<code>  
+  
 Some state, particularly that related to the back/forward cache, is  
 shared between SHEntries which correspond to the same document.  This  
 method gets a pointer to that shared state.  
@@ -22,7 +22,7 @@ method gets a pointer to that shared state.
 This shared state is the SHEntry's BFCacheEntry.  So  
 hasBFCacheEntry(getSharedState()) is guaranteed to return true.  
   
-</code>
+
 ## Attributes ##
 
 ### lastTouched ###

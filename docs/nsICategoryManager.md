@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### getCategoryEntry(aCategory, aEntry) ###
-<code>  
+  
 Get the value for the given category's entry.  
 @param aCategory The name of the category ("protocol")  
 @param aEntry The entry you're looking for ("http")  
 @return The value.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -47,7 +47,7 @@ Get the value for the given category's entry.
 </table>
 
 ### addCategoryEntry(aCategory, aEntry, aValue, aPersist, aReplace) ###
-<code>  
+  
 Add an entry to a category.  
 @param aCategory The name of the category ("protocol")  
 @param aEntry The entry to be added ("http")  
@@ -56,7 +56,7 @@ Add an entry to a category.
 @param aReplace Should we replace an existing entry?  
 @return Previous entry, if any  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -105,13 +105,13 @@ Add an entry to a category.
 </table>
 
 ### deleteCategoryEntry(aCategory, aEntry, aPersist) ###
-<code>  
+  
 Delete an entry from the category.  
 @param aCategory The name of the category ("protocol")  
 @param aEntry The entry to be added ("http")  
 @param aPersist Delete persistent data from registry, if present?  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -137,11 +137,11 @@ Delete an entry from the category.
 </table>
 
 ### deleteCategory(aCategory) ###
-<code>  
+  
 Delete a category and all entries.  
 @param aCategory The category to be deleted.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -155,13 +155,13 @@ Delete a category and all entries.
 </table>
 
 ### enumerateCategory(aCategory) ###
-<code>  
+  
 Enumerate the entries in a category.  
 @param aCategory The category to be enumerated.  
 @return a simple enumerator, each result QIs to  
         nsISupportsCString.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -187,13 +187,13 @@ Enumerate the entries in a category.
 </table>
 
 ### enumerateCategories() ###
-<code>  
+  
 Enumerate all existing categories  
 @param aCategory The category to be enumerated.  
 @return a simple enumerator, each result QIs to  
         nsISupportsCString.  
   
-</code>
+
 #### Parameters ####
 
 <table>

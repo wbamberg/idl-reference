@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIWebNavigation #
-<code>  
+  
 The nsIWebNavigation interface defines an interface for navigating the web.  
 It provides methods and attributes to direct an object to navigate to a new  
 location, stop or restart an in process load, or determine where the object  
 has previously gone.  
   
-</code>
+
 ## Methods ##
 
 ### goBack() ###
-<code>  
+  
 Tells the object to navigate to the previous session history item.  When a  
 page is loaded from session history, all content is loaded from the cache  
 (if available) and page state (such as form values and scroll position) is  
@@ -26,9 +26,9 @@ restored.
        Indicates that the call was unexpected at this time, which implies  
        that canGoBack is false.  
   
-</code>
+
 ### goForward() ###
-<code>  
+  
 Tells the object to navigate to the next session history item.  When a  
 page is loaded from session history, all content is loaded from the cache  
 (if available) and page state (such as form values and scroll position) is  
@@ -38,18 +38,18 @@ restored.
        Indicates that the call was unexpected at this time, which implies  
        that canGoForward is false.  
   
-</code>
+
 ### gotoIndex(index) ###
-<code>  
+  
 Tells the object to navigate to the session history item at a given index.  
   
 @throw NS_ERROR_UNEXPECTED  
        Indicates that the call was unexpected at this time, which implies  
        that session history entry at the given index does not exist.  
   
-</code>
+
 ### loadURI(aURI, aLoadFlags, aReferrer, aPostData, aHeaders) ###
-<code>  
+  
 Loads a given URI.  This will give priority to loading the requested URI  
 in the object implementing	this interface.  If it can't be loaded here  
 however, the URI dispatcher will go through its normal process of content  
@@ -80,7 +80,7 @@ loading.
            ( HEADER "\r\n" )*  
        This parameter is optional and may be null.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -132,7 +132,7 @@ loading.
 </table>
 
 ### loadURIWithBase(aURI, aLoadFlags, aReferrer, aPostData, aHeaders, aBaseURI) ###
-<code>  
+  
 Loads a given URI.  This will give priority to loading the requested URI  
 in the object implementing this interface.  If it can't be loaded here  
 however, the URI dispatcher will go through its normal process of content  
@@ -173,7 +173,7 @@ different to loadURI.
        and cannot be used to resolve aURI.  
        This parameter is optional and may be null.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -234,7 +234,7 @@ different to loadURI.
 </table>
 
 ### reload(aReloadFlags) ###
-<code>  
+  
 Tells the Object to reload the current page.  There may be cases where the  
 user will be asked to confirm the reload (for example, when it is  
 determined that the request is non-idempotent).  
@@ -248,7 +248,7 @@ determined that the request is non-idempotent).
 @throw NS_BINDING_ABORTED  
        Indicating that the user canceled the reload.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -265,13 +265,13 @@ determined that the request is non-idempotent).
 </table>
 
 ### stop(aStopFlags) ###
-<code>  
+  
 Stops a load of a URI.  
   
 @param aStopFlags  
        This parameter is one of the stop flags defined above.  
   
-</code>
+
 #### Parameters ####
 
 <table>

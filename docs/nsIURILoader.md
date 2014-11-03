@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIURILoader #
-<code>  
+  
 The uri dispatcher is responsible for taking uri's, determining  
 the content and routing the opened url to the correct content   
 handler.   
@@ -26,11 +26,11 @@ or it may hand the contents off to a platform specific plugin
 or helper app. Or it may hand the url off to an OS registered   
 application.   
   
-</code>
+
 ## Methods ##
 
 ### registerContentListener(aContentListener) ###
-<code>  
+  
 As applications such as messenger and the browser are instantiated,  
 they register content listener's with the uri dispatcher corresponding  
 to content windows within that application.   
@@ -44,7 +44,7 @@ the content types the registered content listener cares about.
   
 @see the nsIURILoader class description  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ the content types the registered content listener cares about.
 ### unRegisterContentListener(aContentListener) ###
 
 ### openURI(aChannel, aFlags, aWindowContext) ###
-<code>  
+  
 OpenURI requires the following parameters.....  
 @param aChannel  
        The channel that should be opened. This must not be asyncOpen'd yet!  
@@ -78,7 +78,7 @@ OpenURI requires the following parameters.....
        to get at the progress event sink interface.  
        <b>Must not be null!</b>  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -112,7 +112,7 @@ OpenURI requires the following parameters.....
 </table>
 
 ### openChannel(aChannel, aFlags, aWindowContext) ###
-<code>  
+  
 Loads data from a channel. This differs from openURI in that the channel  
 may already be opened, and that it returns a stream listener into which the  
 caller should pump data. The caller is responsible for opening the channel  
@@ -147,7 +147,7 @@ NS_ERROR_WONT_HANDLE_CONTENT.
        to get at the progress event sink interface.  
        <b>Must not be null!</b>  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -181,10 +181,10 @@ NS_ERROR_WONT_HANDLE_CONTENT.
 </table>
 
 ### stop(aLoadCookie) ###
-<code>  
+  
 Stops an in progress load  
   
-</code>
+
 ## Constants ##
 
 ### IS_CONTENT_PREFERRED ###

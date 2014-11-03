@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### CreateCollation(locale) ###
-<code>  
+  
 Create the collation for a given locale.  
   
 Use NULL as the locale parameter to use the user's locale preference  
@@ -21,7 +21,7 @@ from the operating system.
        user preference.  
 @return A collation for the given locale.  
   
-</code>
+
 #### Parameters ####
 
 <table>

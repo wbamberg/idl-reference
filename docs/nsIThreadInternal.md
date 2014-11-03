@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIThreadInternal #
-<code>  
+  
 The XPCOM thread object implements this interface, which allows a consumer  
 to observe dispatch activity on the thread.  
   
-</code>
+
 ## Methods ##
 
 ### addObserver(observer) ###
-<code>  
+  
 Add an observer that will *only* receive onProcessNextEvent,  
 beforeProcessNextEvent. and afterProcessNextEvent callbacks. Always called  
 on the target thread, and the implementation does not have to be  
@@ -22,15 +22,15 @@ threadsafe. Order of callbacks is not guaranteed (i.e.
 afterProcessNextEvent may be called first depending on whether or not the  
 observer is added in a nested loop). Holds a strong ref.  
   
-</code>
+
 ### removeObserver(observer) ###
-<code>  
+  
 Remove an observer added via the addObserver call. Once removed the  
 observer will never be called again by the thread.  
   
-</code>
+
 ### pushEventQueue() ###
-<code>  
+  
 This method causes any events currently enqueued on the thread to be  
 suppressed until PopEventQueue is called, and any event dispatched to this  
 thread's nsIEventTarget will queue as well. Calls to PushEventQueue may be  
@@ -41,16 +41,16 @@ once the event queue is popped. The thread will only ever process pending
 events for the innermost event queue. Must only be called on the target  
 thread.  
   
-</code>
+
 ### popEventQueue(aInnermostTarget) ###
-<code>  
+  
 Revert a call to PushEventQueue. When an event queue is popped, any events  
 remaining in the queue are appended to the elder queue. This also causes  
 the nsIEventTarget returned from PushEventQueue to stop dispatching events.  
 Must only be called on the target thread, and with the innermost event  
 queue.  
   
-</code>
+
 ## Attributes ##
 
 ### observer ###

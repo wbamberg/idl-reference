@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # fuelIBookmark #
-<code>  
+  
 Interface representing a bookmark item.  
   
-</code>
+
 ## Methods ##
 
 ### remove() ###
-<code>  
+  
 Removes the item from the parent folder. Used to  
 delete a bookmark or separator  
   
-</code>
+
 ## Attributes ##
 
 ### id ###

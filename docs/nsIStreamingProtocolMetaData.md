@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIStreamingProtocolMetaData #
-<code>  
+  
 Metadata of the media stream.  
   
-</code>
+
 ## Attributes ##
 
 ### frameType ###

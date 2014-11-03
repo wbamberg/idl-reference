@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIURIFixup #
-<code>  
+  
 Interface implemented by objects capable of fixing up strings into URIs  
   
-</code>
+
 ## Methods ##
 
 ### createExposableURI(aURI) ###
-<code>  
+  
 Converts an internal URI (e.g. a wyciwyg URI) into one which we can  
 expose to the user, for example on the URL bar.  
   
@@ -23,7 +23,7 @@ expose to the user, for example on the URL bar.
 @throws NS_ERROR_UNKNOWN_PROTOCOL when we can't get a protocol handler service  
         for the URI scheme.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -51,7 +51,7 @@ expose to the user, for example on the URL bar.
 </table>
 
 ### createFixupURI(aURIText, aFixupFlags, aPostData) ###
-<code>  
+  
 Converts the specified string into a URI, first attempting  
 to correct any errors in the syntax or other vagaries. Returns  
 a wellformed URI or nullptr if it can't.  
@@ -61,7 +61,7 @@ a wellformed URI or nullptr if it can't.
 @param aPostData   The POST data to submit with the returned  
                    URI (see nsISearchSubmission).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -88,7 +88,7 @@ a wellformed URI or nullptr if it can't.
 </table>
 
 ### getFixupURIInfo(aURIText, aFixupFlags, aPostData) ###
-<code>  
+  
 Same as createFixupURI, but returns information about what it corrected  
 (e.g. whether we could rescue the URI or "just" generated a keyword  
 search URI instead).  
@@ -98,7 +98,7 @@ search URI instead).
 @param aPostData   The POST data to submit with the returned  
                    URI (see nsISearchSubmission).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -125,7 +125,7 @@ search URI instead).
 </table>
 
 ### keywordToURI(aKeyword, aPostData) ###
-<code>  
+  
 Converts the specified keyword string into a URI.  Note that it's the  
 caller's responsibility to check whether keywords are enabled and  
 whether aKeyword is a sensible keyword.  
@@ -137,7 +137,7 @@ whether aKeyword is a sensible keyword.
 @throws NS_ERROR_FAILURE if the resulting URI requires submission of POST  
         data and aPostData is null.  
   
-</code>
+
 #### Parameters ####
 
 <table>

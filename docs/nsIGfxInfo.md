@@ -14,19 +14,19 @@ layout: default
 ### logFailure(failure) ###
 
 ### getFeatureStatus(aFeature) ###
-<code>  
+  
 Ask about a feature, and return the status of that feature  
   
-</code>
+
 ### getFeatureSuggestedDriverVersion(aFeature) ###
 
 ### getWebGLParameter(aParam) ###
-<code>  
+  
 WebGL info; valid params are "full-renderer", "vendor", "renderer", "version",  
 "shading_language_version", "extensions".  These return info from  
 underlying GL impl that's used to implement WebGL.  
   
-</code>
+
 ### GetData() ###
 
 ### getInfo() ###

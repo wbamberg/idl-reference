@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsISHTransaction #
-<code>  
+  
 The nsISHTransaction.  
   
-</code>
+
 ## Methods ##
 
 ### create(aSHEntry, aPrev) ###
-<code>  
+  
 Create a transaction with parent and History Entry   
   
-</code>
+
 ## Attributes ##
 
 ### sHEntry ###

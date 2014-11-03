@@ -6,24 +6,24 @@ layout: default
 </div>
 
 # imgICache #
-<code>  
+  
 imgICache interface  
   
 @author Stuart Parmenter <pavlov@netscape.com>  
 @version 0.1  
 @see imagelib2  
   
-</code>
+
 ## Methods ##
 
 ### clearCache(chrome) ###
-<code>  
+  
 Evict images from the cache.  
   
 @param chrome If TRUE,  evict only chrome images.  
               If FALSE, evict everything except chrome images.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -38,13 +38,13 @@ Evict images from the cache.
 </table>
 
 ### removeEntry(uri) ###
-<code>  
+  
 Evict images from the cache.  
   
 @param uri The URI to remove.  
 @throws NS_ERROR_NOT_AVAILABLE if \a uri was unable to be removed from the cache.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -59,7 +59,7 @@ Evict images from the cache.
 </table>
 
 ### findEntryProperties(uri) ###
-<code>  
+  
 Find Properties  
 Used to get properties such as 'type' and 'content-disposition'  
 'type' is a nsISupportsCString containing the images' mime type such as 'image/png'  
@@ -72,7 +72,7 @@ Hopefully this will be removed with bug 805119
 @param uri The URI to look up.  
 @returns NULL if the URL was not found in the cache  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -97,9 +97,8 @@ Hopefully this will be removed with bug 805119
 </table>
 
 ### respectPrivacyNotifications() ###
-<code>  
+  
 Make this cache instance respect private browsing notifications. This entails clearing  
 the chrome and content caches whenever the last-pb-context-exited notification is  
 observed.  
   
-</code>

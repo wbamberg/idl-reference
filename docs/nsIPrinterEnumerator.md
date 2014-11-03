@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### initPrintSettingsFromPrinter(aPrinterName, aPrintSettings) ###
-<code>  
+  
 Initializes certain settings from the native printer into the PrintSettings  
 These settings include, but are not limited to:  
   Page Orientation  
   Page Size  
   Number of Copies  
   
-</code>
+
 ### displayPropertiesDlg(aPrinter, aPrintSettings) ###
 
 ## Attributes ##

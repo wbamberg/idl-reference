@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # nsISupportsPRBool #
-<code>  
+  
 The rest are truly primitive and are passed by value  
   
-</code><code>  
+  
 Scriptable storage for booleans  
   
-</code>
+
 ## Methods ##
 
 ### toString() ###

@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIAccessibleRole #
-<code>  
+  
 Defines cross platform (Gecko) roles.  
   
-</code>
+
 ## Constants ##
 
 ### ROLE_NOTHING ###

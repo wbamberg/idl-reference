@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIMultiPartChannel #
-<code>  
+  
 An interface to access the the base channel   
 associated with a MultiPartChannel.  
   
-</code>
+
 ## Attributes ##
 
 ### baseChannel ###

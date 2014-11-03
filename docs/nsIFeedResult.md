@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIFeedResult #
-<code>  
+  
 The nsIFeedResult interface provides access to HTTP and parsing  
 metadata for a feed or entry.  
   
-</code>
+
 ## Methods ##
 
 ### registerExtensionPrefix(aNamespace, aPrefix) ###
-<code>  
+  
 Registers a prefix used to access an extension in the feed/entry   
   
-</code>
+
 ## Attributes ##
 
 ### bozo ###

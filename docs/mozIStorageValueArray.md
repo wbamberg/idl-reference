@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # mozIStorageValueArray #
-<code>  
+  
 mozIStorageValueArray wraps an array of SQL values, such as a single database  
 row.  
   
-</code>
+
 ## Methods ##
 
 ### getTypeOfIndex(aIndex) ###
-<code>  
+  
 Returns the type of the value at the given column index;  
 one of VALUE_TYPE_NULL, VALUE_TYPE_INTEGER, VALUE_TYPE_FLOAT,  
 VALUE_TYPE_TEXT, VALUE_TYPE_BLOB.  
   
-</code>
+
 ### getInt32(aIndex) ###
-<code>  
+  
 Obtain a value for the given entry (column) index.  
 Due to SQLite's type conversion rules, any of these are valid  
 for any column regardless of the column's data type.  However,  
@@ -33,7 +33,7 @@ If you ask for a string value for a NULL column, you will get an empty
 string with IsVoid set to distinguish it from an explicitly set empty  
 string.  
   
-</code>
+
 ### getInt64(aIndex) ###
 
 ### getDouble(aIndex) ###
@@ -47,10 +47,10 @@ string.
 ### getIsNull(aIndex) ###
 
 ### getSharedUTF8String(aIndex, aLength, aResult) ###
-<code>  
+  
 Returns a shared string pointer  
   
-</code>
+
 ### getSharedString(aIndex, aLength, aResult) ###
 
 ### getSharedBlob(aIndex, aLength, aResult) ###

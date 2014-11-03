@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # extIExtension #
-<code>  
+  
 Interface representing an extension  
   
-</code>
+
 ## Attributes ##
 
 ### id ###

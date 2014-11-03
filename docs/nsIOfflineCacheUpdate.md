@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIOfflineCacheUpdate #
-<code>  
+  
 An nsIOfflineCacheUpdate is used to update an application's offline  
 resources.  
   
@@ -16,11 +16,11 @@ One update object will be updating at a time.  The active object will
 load its items one by one, sending itemCompleted() to any registered  
 observers.  
   
-</code>
+
 ## Methods ##
 
 ### init(aManifestURI, aDocumentURI, aDocument, aCustomProfileDir, aAppId, aInBrowser) ###
-<code>  
+  
 Initialize the update.  
   
 @param aManifestURI  
@@ -28,7 +28,7 @@ Initialize the update.
 @param aDocumentURI  
        The page that is requesting the update.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -48,7 +48,7 @@ Initialize the update.
 </table>
 
 ### initPartial(aManifestURI, aClientID, aDocumentURI) ###
-<code>  
+  
 Initialize the update for partial processing.   
   
 @param aManifestURI  
@@ -61,7 +61,7 @@ Initialize the update for partial processing.
        The page that is requesting the update. May be null   
        when this information is unknown.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -90,7 +90,7 @@ Initialize the update for partial processing.
 </table>
 
 ### initForUpdateCheck(aManifestURI, aAppID, aInBrowser, aObserver) ###
-<code>  
+  
 Initialize the update to only check whether there is an update  
 to the manifest available (if it has actually changed on the server).  
   
@@ -108,7 +108,7 @@ to the manifest available (if it has actually changed on the server).
        When aTopic == "offline-cache-update-unavailable" then there is no  
        update available (the manifest has not changed on the server).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -145,13 +145,13 @@ to the manifest available (if it has actually changed on the server).
 </table>
 
 ### addDynamicURI(aURI) ###
-<code>  
+  
 Add a dynamic URI to the offline cache as part of the update.  
   
 @param aURI  
        The URI to add.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -165,13 +165,13 @@ Add a dynamic URI to the offline cache as part of the update.
 </table>
 
 ### schedule() ###
-<code>  
+  
 Add the update to the offline update queue.  An offline-cache-update-added  
 event will be sent to the observer service.  
   
-</code>
+
 ### addObserver(aObserver, aHoldWeak) ###
-<code>  
+  
 Observe loads that are added to the update.  
   
 @param aObserver  
@@ -180,7 +180,7 @@ Observe loads that are added to the update.
        TRUE if you want the update to hold a weak reference to the  
        observer, FALSE for a strong reference.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -201,13 +201,13 @@ Observe loads that are added to the update.
 </table>
 
 ### removeObserver(aObserver) ###
-<code>  
+  
 Remove an observer from the update.  
   
 @param aObserver  
        the observer to remove.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -221,12 +221,12 @@ Remove an observer from the update.
 </table>
 
 ### cancel() ###
-<code>  
+  
 Cancel the update when still in progress. This stops all running resource  
 downloads and discards the downloaded cache version. Throws when update  
 has already finished and made the new cache version active.  
   
-</code>
+
 ## Attributes ##
 
 ### status ###

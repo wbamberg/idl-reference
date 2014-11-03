@@ -22,19 +22,19 @@ layout: default
 ### restore() ###
 
 ### notifyDefaultButtonLoaded(defaultButton) ###
-<code>  
+  
 Notify a default button is loaded on a dialog or a wizard.  
 defaultButton is the default button.  
   
-</code>
+
 ### getGroupMessageManager(group) ###
-<code>  
+  
 Returns the message manager identified by the given group name that  
 manages all frame loaders belonging to that group.  
   
-</code>
+
 ### beginWindowMove(mouseDownEvent, panel) ###
-<code>  
+  
 On some operating systems, we must allow the window manager to  
 handle window dragging. This function tells the window manager to  
 start dragging the window. This function will fail unless called  
@@ -45,7 +45,7 @@ The optional panel argument should be set when moving a panel.
 Returns NS_ERROR_NOT_IMPLEMENTED (and thus throws in JS) if the OS  
 doesn't support this.  
   
-</code>
+
 ## Attributes ##
 
 ### windowState ###

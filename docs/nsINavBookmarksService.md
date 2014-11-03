@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsINavBookmarksService #
-<code>  
+  
 The BookmarksService interface provides methods for managing bookmarked  
 history items.  Bookmarks consist of a set of user-customizable  
 folders.  A URI in history can be contained in one or more such folders.  
   
-</code>
+
 ## Methods ##
 
 ### insertBookmark(aParentId, aURI, aIndex, aTitle, aGuid) ###
-<code>  
+  
 Inserts a child bookmark into the given folder.  
   
  @param aParentId  
@@ -36,7 +36,7 @@ Inserts a child bookmark into the given folder.
        aURI will be truncated to URI_LENGTH_MAX.  
  @throws if aGuid is malformed.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -88,12 +88,12 @@ Inserts a child bookmark into the given folder.
 </table>
 
 ### removeItem(aItemId) ###
-<code>  
+  
 Removes a child item. Used to delete a bookmark or separator.  
  @param aItemId  
         The child item to remove  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -107,7 +107,7 @@ Removes a child item. Used to delete a bookmark or separator.
 </table>
 
 ### createFolder(aParentFolder, name, index, aGuid) ###
-<code>  
+  
 Creates a new child folder and inserts it under the given parent.  
  @param aParentFolder  
         The id of the parent folder  
@@ -122,7 +122,7 @@ Creates a new child folder and inserts it under the given parent.
  @return The ID of the newly-inserted folder.  
  @throws if aGuid is malformed.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -169,7 +169,7 @@ Creates a new child folder and inserts it under the given parent.
 </table>
 
 ### getRemoveFolderTransaction(aItemId) ###
-<code>  
+  
 Gets an undo-able transaction for removing a folder from the bookmarks  
 tree.  
  @param aItemId  
@@ -185,7 +185,7 @@ functionality without exposing the ability to recreate folders with
 specific IDs (potentially dangerous if abused by other code!) in the  
 public API.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -211,13 +211,13 @@ public API.
 </table>
 
 ### removeFolderChildren(aItemId) ###
-<code>  
+  
 Convenience function for container services.  Removes  
 all children of the given folder.  
  @param aItemId  
         The id of the folder to remove children from.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -231,7 +231,7 @@ all children of the given folder.
 </table>
 
 ### moveItem(aItemId, aNewParentId, aIndex) ###
-<code>  
+  
 Moves an item to a different container, preserving its contents.  
  @param aItemId  
         The id of the item to move  
@@ -244,7 +244,7 @@ NOTE: When moving down in the same container we take into account the
 removal of the original item. If you want to move from index X to  
 index Y > X you must use moveItem(id, folder, Y + 1)  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -270,7 +270,7 @@ index Y > X you must use moveItem(id, folder, Y + 1)
 </table>
 
 ### insertSeparator(aParentId, aIndex, aGuid) ###
-<code>  
+  
 Inserts a bookmark separator into the given folder at the given index.  
 The separator can be removed using removeChildAt().  
  @param aParentId  
@@ -284,7 +284,7 @@ The separator can be removed using removeChildAt().
  @return The ID of the new separator.  
  @throws if aGuid is malformed.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -325,7 +325,7 @@ The separator can be removed using removeChildAt().
 </table>
 
 ### getIdForItemAt(aParentId, aIndex) ###
-<code>  
+  
 Get the itemId given the containing folder and the index.  
  @param aParentId  
         The id of the diret parent folder of the item  
@@ -334,7 +334,7 @@ Get the itemId given the containing folder and the index.
         Pass DEFAULT_INDEX for the last item.  
  @return The ID of the found item, -1 if the item does not exists.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -366,7 +366,7 @@ Get the itemId given the containing folder and the index.
 </table>
 
 ### setItemTitle(aItemId, aTitle) ###
-<code>  
+  
 Set the title for an item.  
  @param aItemId  
         The id of the item whose title should be updated.  
@@ -375,7 +375,7 @@ Set the title for an item.
   
  @note  aTitle will be truncated to TITLE_LENGTH_MAX.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -395,7 +395,7 @@ Set the title for an item.
 </table>
 
 ### getItemTitle(aItemId) ###
-<code>  
+  
 Get the title for an item.  
   
 If no item title is available it will return a void string (null in JS).  
@@ -404,7 +404,7 @@ If no item title is available it will return a void string (null in JS).
         The id of the item whose title should be retrieved  
  @return The title of the item.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -429,17 +429,17 @@ If no item title is available it will return a void string (null in JS).
 </table>
 
 ### setItemDateAdded(aItemId, aDateAdded) ###
-<code>  
+  
 Set the date added time for an item.  
   
-</code>
+
 ### getItemDateAdded(aItemId) ###
-<code>  
+  
 Get the date added time for an item.  
   
-</code>
+
 ### setItemLastModified(aItemId, aLastModified) ###
-<code>  
+  
 Set the last modified time for an item.  
   
  @note This is the only method that will send an itemChanged notification  
@@ -447,27 +447,27 @@ Set the last modified time for an item.
        any other method that changes an item property, but we will send  
        the corresponding itemChanged notification instead.  
   
-</code>
+
 ### getItemLastModified(aItemId) ###
-<code>  
+  
 Get the last modified time for an item.  
   
  @note When an item is added lastModified is set to the same value as  
        dateAdded.  
   
-</code>
+
 ### getBookmarkURI(aItemId) ###
-<code>  
+  
 Get the URI for a bookmark item.  
   
-</code>
+
 ### getItemIndex(aItemId) ###
-<code>  
+  
 Get the index for an item.  
   
-</code>
+
 ### setItemIndex(aItemId, aNewIndex) ###
-<code>  
+  
 Changes the index for a item. This method does not change the indices of  
 any other items in the same folder, so ensure that the new index does not  
 already exist, or change the index of other items accordingly, otherwise  
@@ -482,7 +482,7 @@ WARNING: This is API is intended for scenarios such as folder sorting,
   
  @throws If aNewIndex is out of bounds.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -502,19 +502,19 @@ WARNING: This is API is intended for scenarios such as folder sorting,
 </table>
 
 ### getItemType(aItemId) ###
-<code>  
+  
 Get an item's type (bookmark, separator, folder).  
 The type is one of the TYPE_* constants defined above.  
   
-</code>
+
 ### isBookmarked(aURI) ###
-<code>  
+  
 Returns true if the given URI is in any bookmark folder. If you want the  
 results to be redirect-aware, use getBookmarkedURIFor()  
   
-</code>
+
 ### getBookmarkedURIFor(aURI) ###
-<code>  
+  
 Used to see if the given URI is bookmarked, or any page that redirected to  
 it is bookmarked. For example, if I bookmark "mozilla.org" by manually  
 typing it in, and follow the bookmark, I will get redirected to  
@@ -527,70 +527,70 @@ If there is no bookmarked page found, it will return NULL.
 @note The function will only return bookmarks in the first 2 levels of  
       redirection (1 -> 2 -> aURI).  
   
-</code>
+
 ### changeBookmarkURI(aItemId, aNewURI) ###
-<code>  
+  
 Change the bookmarked URI for a bookmark.  
 This changes which "place" the bookmark points at,  
 which means all annotations, etc are carried along.  
   
-</code>
+
 ### getFolderIdForItem(aItemId) ###
-<code>  
+  
 Get the parent folder's id for an item.  
   
-</code>
+
 ### getBookmarkIdsForURI(aURI, count, bookmarks) ###
-<code>  
+  
 Returns the list of bookmark ids that contain the given URI.  
   
-</code>
+
 ### setKeywordForBookmark(aItemId, aKeyword) ###
-<code>  
+  
 Associates the given keyword with the given bookmark.  
   
 Use an empty keyword to clear the keyword associated with the URI.  
 In both of these cases, succeeds but does nothing if the URL/keyword is not found.  
   
-</code>
+
 ### getKeywordForURI(aURI) ###
-<code>  
+  
 Retrieves the keyword for the given URI. Will be void string  
 (null in JS) if no such keyword is found.  
   
-</code>
+
 ### getKeywordForBookmark(aItemId) ###
-<code>  
+  
 Retrieves the keyword for the given bookmark. Will be void string  
 (null in JS) if no such keyword is found.  
   
-</code>
+
 ### getURIForKeyword(keyword) ###
-<code>  
+  
 Returns the URI associated with the given keyword. Empty if no such  
 keyword is found.  
   
-</code>
+
 ### addObserver(observer, ownsWeak) ###
-<code>  
+  
 Adds a bookmark observer. If ownsWeak is false, the bookmark service will  
 keep an owning reference to the observer.  If ownsWeak is true, then  
 aObserver must implement nsISupportsWeakReference, and the bookmark  
 service will keep a weak reference to the observer.  
   
-</code>
+
 ### removeObserver(observer) ###
-<code>  
+  
 Removes a bookmark observer.  
   
-</code>
+
 ### getObservers(count, observers) ###
-<code>  
+  
 Gets an array of registered nsINavBookmarkObserver objects.  
   
-</code>
+
 ### runInBatchMode(aCallback, aUserData) ###
-<code>  
+  
 Runs the passed callback inside of a database transaction.  
 Use this when a lot of things are about to change, for example  
 adding or deleting a large number of bookmark items. Calls can  
@@ -602,7 +602,7 @@ nsINavBookmarkObserver.onBeginUpdateBatch/onEndUpdateBatch.
 @param aUserData  
        Opaque parameter passed to nsINavBookmarksBatchCallback  
   
-</code>
+
 #### Parameters ####
 
 <table>

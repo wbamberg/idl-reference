@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISafeOutputStream #
-<code>  
+  
 This interface provides a mechanism to control an output stream  
 that takes care not to overwrite an existing target until it is known  
 that all writes to the destination succeeded.  
@@ -25,11 +25,11 @@ file will be deleted.
   
 Currently, this interface is implemented only for file output streams.  
   
-</code>
+
 ## Methods ##
 
 ### finish() ###
-<code>  
+  
 Call this method to close the stream and cause the original target  
 to be overwritten. Note: if any call to |write| failed to write out  
 all of the data given to it, then calling this method will |close| the  
@@ -37,4 +37,3 @@ stream and return failure. Further, if closing the stream fails, this
 method will return failure. The original target will be overwritten only  
 if all calls to |write| succeeded and the stream was successfully closed.  
   
-</code>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### tagURI(aURI, aTags) ###
-<code>  
+  
 Tags a URL with the given set of tags. Current tags set for the URL  
 persist. Tags in aTags which are already set for the given URL are  
 ignored.  
@@ -22,7 +22,7 @@ ignored.
        array can be either a tag name (non-empty string) or a concrete  
        itemId of a tag container.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -44,7 +44,7 @@ ignored.
 </table>
 
 ### untagURI(aURI, aTags) ###
-<code>  
+  
 Removes tags from a URL. Tags from aTags which are not set for the  
 given URL are ignored.  
   
@@ -55,7 +55,7 @@ given URL are ignored.
        url.  Each element within the array can be either a tag name  
        (non-empty string) or a concrete itemId of a tag container.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -77,14 +77,14 @@ given URL are ignored.
 </table>
 
 ### getURIsForTag(aTag) ###
-<code>  
+  
 Retrieves all URLs tagged with the given tag.  
   
 @param aTag  
        tag name  
 @returns Array of uris tagged with aTag.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -109,14 +109,14 @@ Retrieves all URLs tagged with the given tag.
 </table>
 
 ### getTagsForURI(aURI, length, aTags) ###
-<code>  
+  
 Retrieves all tags set for the given URL.  
   
 @param aURI  
        a URL.  
 @returns array of tags (sorted by name).  
   
-</code>
+
 #### Parameters ####
 
 <table>

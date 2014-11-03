@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsITooltipListener #
-<code>  
+  
 An optional interface for embedding clients wishing to receive  
 notifications for when a tooltip should be displayed or removed.  
 The embedder implements this interface on the web browser chrome  
@@ -15,11 +15,11 @@ for.
   
 @see nsITooltipTextProvider  
   
-</code>
+
 ## Methods ##
 
 ### onShowTooltip(aXCoords, aYCoords, aTipText) ###
-<code>  
+  
 Called when a tooltip should be displayed.  
   
 @param aXCoords The tooltip left edge X coordinate.  
@@ -34,7 +34,7 @@ corner of the browser area.
   
 @return <code>NS_OK</code> if the tooltip was displayed.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -73,8 +73,7 @@ corner of the browser area.
 </table>
 
 ### onHideTooltip() ###
-<code>  
+  
 Called when the tooltip should be hidden, either because the pointer  
 has moved or the tooltip has timed out.  
   
-</code>

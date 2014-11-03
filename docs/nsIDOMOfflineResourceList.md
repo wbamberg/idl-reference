@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### mozHasItem(uri) ###
-<code>  
+  
 Check that an entry exists in the list of dynamically-managed entries.  
   
 @param uri  
        The resource to check.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -30,21 +30,21 @@ Check that an entry exists in the list of dynamically-managed entries.
 </table>
 
 ### mozItem(index) ###
-<code>  
+  
 Get the URI of a dynamically-managed entry.  
 @status DEPRECATED  
         Clients should use the "items" attribute.  
   
-</code>
+
 ### mozAdd(uri) ###
-<code>  
+  
 Add an item to the list of dynamically-managed entries.  The resource  
 will be fetched into the application cache.  
   
 @param uri  
        The resource to add.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -58,7 +58,7 @@ will be fetched into the application cache.
 </table>
 
 ### mozRemove(uri) ###
-<code>  
+  
 Remove an item from the list of dynamically-managed entries.  If this  
 was the last reference to a URI in the application cache, the cache  
 entry will be removed.  
@@ -66,7 +66,7 @@ entry will be removed.
 @param uri  
        The resource to remove.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -80,16 +80,16 @@ entry will be removed.
 </table>
 
 ### update() ###
-<code>  
+  
 Begin the application update process on the associated application cache.  
   
-</code>
+
 ### swapCache() ###
-<code>  
+  
 Swap in the newest version of the application cache, or disassociate  
 from the cache if the cache group is obsolete.  
   
-</code>
+
 ## Attributes ##
 
 ### mozItems ###

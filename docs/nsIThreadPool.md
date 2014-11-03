@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIThreadPool #
-<code>  
+  
 An interface to a thread pool.  A thread pool creates a limited number of  
 anonymous (unnamed) worker threads.  An event dispatched to the thread pool  
 will be run on the next available worker thread.  
   
-</code>
+
 ## Methods ##
 
 ### shutdown() ###
-<code>  
+  
 Shutdown the thread pool.  This method may not be executed from any thread  
 in the thread pool.  Instead, it is meant to be executed from another  
 thread (usually the thread that created this thread pool).  When this  
@@ -24,13 +24,13 @@ and it will no longer be possible to dispatch tasks to the thread pool.
   
 As a side effect, events on the current thread will be processed.  
   
-</code>
+
 ### setName(aName) ###
-<code>  
+  
 Set the label for threads in the pool. All threads will be named  
 "<aName> #<n>", where <n> is a serial number.  
   
-</code>
+
 ## Attributes ##
 
 ### threadLimit ###

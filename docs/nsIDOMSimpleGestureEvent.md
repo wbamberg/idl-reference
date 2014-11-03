@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMSimpleGestureEvent #
-<code>  
+  
 The nsIDOMSimpleGestureEvent interface is the datatype for all  
 Mozilla-specific simple gesture events in the Document Object Model.  
   
@@ -98,7 +98,7 @@ when they are not handled by the application. Consumers should
 use event.preventDefault() to prevent default behavior when  
 consuming events.  
   
-</code>
+
 ## Methods ##
 
 ### initSimpleGestureEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg, relatedTargetArg, allowedDirectionsArg, directionArg, deltaArg, clickCount) ###

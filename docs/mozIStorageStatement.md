@@ -6,29 +6,29 @@ layout: default
 </div>
 
 # mozIStorageStatement #
-<code>  
+  
 A SQL statement that can be used for both synchronous and asynchronous  
 purposes.  
   
-</code>
+
 ## Methods ##
 
 ### clone() ###
-<code>  
+  
 Create a clone of this statement, by initializing a new statement  
 with the same connection and same SQL statement as this one.  It  
 does not preserve statement state; that is, if a statement is  
 being executed when it is cloned, the new statement will not be  
 executing.  
   
-</code>
+
 ### getParameterName(aParamIndex) ###
-<code>  
+  
 Name of nth parameter, if given  
   
-</code>
+
 ### getParameterIndex(aName) ###
-<code>  
+  
 Returns the index of the named parameter.  
   
 @param aName  
@@ -36,7 +36,7 @@ Returns the index of the named parameter.
        include the leading ':'.  
 @return the index of the named parameter.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -62,19 +62,19 @@ Returns the index of the named parameter.
 </table>
 
 ### getColumnName(aColumnIndex) ###
-<code>  
+  
 Name of nth column  
   
-</code>
+
 ### getColumnIndex(aName) ###
-<code>  
+  
 Obtains the index of the column with the specified name.  
   
 @param aName  
        The name of the column.  
 @return The index of the column with the specified name.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -99,7 +99,7 @@ Obtains the index of the column with the specified name.
 </table>
 
 ### getColumnDecltype(aParamIndex) ###
-<code>  
+  
 Obtains the declared column type of a prepared statement.  
   
 @param aParamIndex  
@@ -107,7 +107,7 @@ Obtains the declared column type of a prepared statement.
        interested in.  
 @return the declared index type.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -133,21 +133,21 @@ Obtains the declared column type of a prepared statement.
 </table>
 
 ### reset() ###
-<code>  
+  
 Reset parameters/statement execution  
   
-</code>
+
 ### execute() ###
-<code>  
+  
 Execute the query, ignoring any results.  This is accomplished by  
 calling executeStep() once, and then calling reset().  
   
 Error and last insert info, etc. are available from  
 the mozStorageConnection.  
   
-</code>
+
 ### executeStep() ###
-<code>  
+  
 Execute a query, using any currently-bound parameters.  Reset  
 must be called on the statement after the last call of  
 executeStep.  
@@ -156,7 +156,7 @@ executeStep.
         row data may be accessed using mozIStorageValueArray methods on  
         the statement.  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -171,7 +171,7 @@ executeStep.
 </table>
 
 ### getTypeOfIndex(aIndex) ###
-<code>  
+  
 Indicate the data type of the current result row for the the given column.  
 SQLite will perform type conversion if you ask for a value as a different  
 type than it is stored as.  
@@ -182,7 +182,7 @@ type than it is stored as.
         VALUE_TYPE_NULL, VALUE_TYPE_INTEGER, VALUE_TYPE_FLOAT,  
         VALUE_TYPE_TEXT, VALUE_TYPE_BLOB.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -209,7 +209,7 @@ type than it is stored as.
 </table>
 
 ### getInt32(aIndex) ###
-<code>  
+  
 Retrieve the contents of a column from the current result row as an  
 integer.  
   
@@ -218,7 +218,7 @@ integer.
 @return Column value interpreted as an integer per type conversion rules.  
 @{  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -246,8 +246,8 @@ integer.
 ### getInt64(aIndex) ###
 
 ### getDouble(aIndex) ###
-<code> @} */  
-</code><code>  
+ @} */  
+  
 Retrieve the contents of a column from the current result row as a  
 floating point double.  
   
@@ -255,7 +255,7 @@ floating point double.
        0-based colummn index.  
 @return Column value interpreted as a double per type conversion rules.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -280,7 +280,7 @@ floating point double.
 </table>
 
 ### getUTF8String(aIndex) ###
-<code>  
+  
 Retrieve the contents of a column from the current result row as a  
 string.  
   
@@ -291,7 +291,7 @@ string.
         to distinguish it from an explicitly set empty string.  
 @{  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -321,8 +321,8 @@ string.
 ### getString(aIndex) ###
 
 ### getBlob(aIndex, aDataSize, aData) ###
-<code> @} */  
-</code><code>  
+ @} */  
+  
 Retrieve the contents of a column from the current result row as a  
 blob.  
   
@@ -333,7 +333,7 @@ blob.
 @param[out] aData  
             The contents of the BLOB.  This will be NULL if aDataSize == 0.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -361,14 +361,14 @@ blob.
 </table>
 
 ### getIsNull(aIndex) ###
-<code>  
+  
 Check whether the given column in the current result row is NULL.  
   
 @param aIndex  
        0-based colummn index.  
 @return true if the value for the result column is null.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -393,10 +393,10 @@ Check whether the given column in the current result row is NULL.
 </table>
 
 ### getSharedUTF8String(aIndex, aLength, aResult) ###
-<code>  
+  
 Returns a shared string pointer  
   
-</code>
+
 ### getSharedString(aIndex, aLength, aResult) ###
 
 ### getSharedBlob(aIndex, aLength, aResult) ###

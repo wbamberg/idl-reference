@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onAssert(aDataSource, aSource, aProperty, aTarget) ###
-<code>  
+  
 This method is called whenever a new assertion is made  
 in the data source  
 @param aDataSource the datasource that is issuing  
@@ -19,7 +19,7 @@ in the data source
 @param aProperty the predicate of the assertion  
 @param aTarget the object of the assertion  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -52,7 +52,7 @@ in the data source
 </table>
 
 ### onUnassert(aDataSource, aSource, aProperty, aTarget) ###
-<code>  
+  
 This method is called whenever an assertion is removed  
 from the data source  
 @param aDataSource the datasource that is issuing  
@@ -61,7 +61,7 @@ from the data source
 @param aProperty the predicate of the assertion  
 @param aTarget the object of the assertion  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -94,7 +94,7 @@ from the data source
 </table>
 
 ### onChange(aDataSource, aSource, aProperty, aOldTarget, aNewTarget) ###
-<code>  
+  
 This method is called when the object of an assertion  
 changes from one value to another.  
 @param aDataSource the datasource that is issuing  
@@ -104,7 +104,7 @@ changes from one value to another.
 @param aOldTarget the old object of the assertion  
 @param aNewTarget the new object of the assertion  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -143,7 +143,7 @@ changes from one value to another.
 </table>
 
 ### onMove(aDataSource, aOldSource, aNewSource, aProperty, aTarget) ###
-<code>  
+  
 This method is called when the subject of an assertion  
 changes from one value to another.  
 @param aDataSource the datasource that is issuing  
@@ -153,7 +153,7 @@ changes from one value to another.
 @param aProperty the predicate of the assertion  
 @param aTarget the object of the assertion  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -192,7 +192,7 @@ changes from one value to another.
 </table>
 
 ### onBeginUpdateBatch(aDataSource) ###
-<code>  
+  
 This method is called when a datasource is about to  
 send several notifications at once. The observer can  
 use this as a cue to optimize its behavior. The observer  
@@ -201,7 +201,7 @@ the group of notifications has completed.
 @param aDataSource the datasource that is going to  
   be issuing the notifications.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -216,13 +216,13 @@ the group of notifications has completed.
 </table>
 
 ### onEndUpdateBatch(aDataSource) ###
-<code>  
+  
 This method is called when a datasource has completed  
 issuing a notification group.  
 @param aDataSource the datasource that has finished  
   issuing a group of notifications  
   
-</code>
+
 #### Parameters ####
 
 <table>

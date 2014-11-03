@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### getText(startOffset, endOffset) ###
-<code>  
+  
 String methods may need to return multibyte-encoded strings,  
 since some locales can't be encoded using 16-bit chars.  
 So the methods below might return UTF-16 strings, or they could  
 return "string" values which are UTF-8.  
   
-</code>
+
 ### getTextAfterOffset(offset, boundaryType, startOffset, endOffset) ###
 
 ### getTextAtOffset(offset, boundaryType, startOffset, endOffset) ###
@@ -24,13 +24,13 @@ return "string" values which are UTF-8.
 ### getTextBeforeOffset(offset, boundaryType, startOffset, endOffset) ###
 
 ### getCharacterAtOffset(offset) ###
-<code>  
+  
 It would be better to return an unsigned long here,  
 to allow unicode chars > 16 bits  
   
-</code>
+
 ### getTextAttributes(includeDefAttrs, offset, rangeStartOffset, rangeEndOffset) ###
-<code>  
+  
 Get the accessible start/end offsets around the given offset,  
 return the text attributes for this range of text.  
   
@@ -40,7 +40,7 @@ return the text attributes for this range of text.
 @param  rangeStartOffset  [out] start offset of the range of text  
 @param  rangeEndOffset    [out] end offset of the range of text  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -73,7 +73,7 @@ return the text attributes for this range of text.
 </table>
 
 ### getCharacterExtents(offset, x, y, width, height, coordType) ###
-<code>  
+  
 Returns the bounding box of the specified position.  
   
 The virtual character after the last character of the represented text,  
@@ -97,7 +97,7 @@ not degenerate.
                    or to the parent window (see constants declared in  
                    nsIAccessibleCoordinateType).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -146,7 +146,7 @@ not degenerate.
 ### getRangeExtents(startOffset, endOffset, x, y, width, height, coordType) ###
 
 ### getOffsetAtPoint(x, y, coordType) ###
-<code>  
+  
 Get the text offset at the given point, or return -1  
 if no character exists at that point  
   
@@ -160,7 +160,7 @@ if no character exists at that point
                  the point is invalid or there is no character under  
                  the point.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -204,16 +204,16 @@ if no character exists at that point
 ### getSelectionBounds(selectionNum, startOffset, endOffset) ###
 
 ### setSelectionBounds(selectionNum, startOffset, endOffset) ###
-<code>  
+  
 Set the bounds for the given selection range  
   
-</code>
+
 ### addSelection(startOffset, endOffset) ###
 
 ### removeSelection(selectionNum) ###
 
 ### scrollSubstringTo(startIndex, endIndex, scrollType) ###
-<code>  
+  
 Makes a specific part of string visible on screen.  
   
 @param startIndex  0-based character offset  
@@ -223,7 +223,7 @@ Makes a specific part of string visible on screen.
 @param scrollType  defines how to scroll (see nsIAccessibleScrollType for  
                    available constants)  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -252,7 +252,7 @@ Makes a specific part of string visible on screen.
 </table>
 
 ### scrollSubstringToPoint(startIndex, endIndex, coordinateType, x, y) ###
-<code>  
+  
 Moves the top left of a substring to a specified location.  
   
 @param startIndex      0-based character offset  
@@ -264,7 +264,7 @@ Moves the top left of a substring to a specified location.
 @param x               defines the x coordinate  
 @param y               defines the y coordinate  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -305,15 +305,15 @@ Moves the top left of a substring to a specified location.
 </table>
 
 ### getRangeByChild(child) ###
-<code>  
+  
 Return a range containing the given accessible.  
   
-</code>
+
 ### getRangeAtPoint(x, y) ###
-<code>  
+  
 Return a range containing an accessible at the given point.  
   
-</code>
+
 ## Attributes ##
 
 ### caretOffset ###

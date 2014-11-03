@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISystemWorkerManager #
-<code>  
+  
 Information about networks that is exposed to network manager API consumers.  
   
-</code>
+
 ## Methods ##
 
 ### registerRilWorker(aClientId, aWorker) ###

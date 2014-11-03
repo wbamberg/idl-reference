@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIExternalProtocolService #
-<code>  
+  
 The external protocol service is used for finding and launching  
 web handlers (a la registerProtocolHandler in the HTML5 draft) or   
 platform-specific applications for handling particular protocols.  
@@ -15,11 +15,11 @@ You can ask the external protocol service if it has an external
 handler for a given protocol scheme. And you can ask it to load   
 the url using the default handler.  
   
-</code>
+
 ## Methods ##
 
 ### externalProtocolHandlerExists(aProtocolScheme) ###
-<code>  
+  
 Check whether a handler for a specific protocol exists.  Specifically,  
 this looks to see whether there are any known possible application handlers  
 in either the nsIHandlerService datastore or registered with the OS.  
@@ -30,7 +30,7 @@ in either the nsIHandlerService datastore or registered with the OS.
   
 XXX shouldn't aProtocolScheme be an ACString like nsIURI::scheme?  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -55,7 +55,7 @@ XXX shouldn't aProtocolScheme be an ACString like nsIURI::scheme?
 </table>
 
 ### isExposedProtocol(aProtocolScheme) ###
-<code>  
+  
 Check whether a handler for a specific protocol is "exposed" as a visible  
 feature of the current application.  
   
@@ -66,9 +66,9 @@ application in response to a link click or a X-remote openURL command.
 Instead, it would be deferred to the system's external protocol handler.  
 XXX shouldn't aProtocolScheme be an ACString like nsIURI::scheme?  
   
-</code>
+
 ### getProtocolHandlerInfo(aProtocolScheme) ###
-<code>  
+  
 Retrieve the handler for the given protocol.  If neither the application  
 nor the OS knows about a handler for the protocol, the object this method  
 returns will represent a default handler for unknown content.  
@@ -81,7 +81,7 @@ of the URI syntax, not part of the scheme itself (i.e. pass "mailto" not
   
 @return the handler, if any; otherwise a default handler  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -106,7 +106,7 @@ of the URI syntax, not part of the scheme itself (i.e. pass "mailto" not
 </table>
 
 ### getProtocolHandlerInfoFromOS(aProtocolScheme, aFound) ###
-<code>  
+  
 Given a scheme, looks up the protocol info from the OS.  This should be  
 overridden by each OS's implementation.  
   
@@ -114,7 +114,7 @@ overridden by each OS's implementation.
 @param aFound  Was an OS default handler for this scheme found?  
 @return An nsIHanderInfo for the protocol.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -145,7 +145,7 @@ overridden by each OS's implementation.
 </table>
 
 ### setProtocolHandlerDefaults(aHandlerInfo, aOSHandlerExists) ###
-<code>   
+   
 Set some sane defaults for a protocol handler object.  
   
 @param aHandlerInfo      nsIHandlerInfo object, as returned by   
@@ -155,7 +155,7 @@ Set some sane defaults for a protocol handler object.
                          value of the aFound out param from  
                          getProtocolHandlerInfoFromOS.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -179,14 +179,14 @@ Set some sane defaults for a protocol handler object.
 </table>
 
 ### loadUrl(aURL) ###
-<code>  
+  
 Used to load a url via an external protocol handler (if one exists)  
   
 @param aURL The url to load  
   
 @deprecated Use LoadURI instead (See Bug 389565 for removal)  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -200,7 +200,7 @@ Used to load a url via an external protocol handler (if one exists)
 </table>
 
 ### loadURI(aURI, aWindowContext) ###
-<code>  
+  
 Used to load a URI via an external application. Might prompt the user for  
 permission to load the external application.  
   
@@ -219,7 +219,7 @@ permission to load the external application.
        use web-based protocol handlers, as handoff won't work correctly  
        (bug 394479).    
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -244,7 +244,7 @@ permission to load the external application.
 </table>
 
 ### getApplicationDescription(aScheme) ###
-<code>  
+  
 Gets a human-readable description for the application responsible for  
 handling a specific protocol.  
   
@@ -256,7 +256,7 @@ handling a specific protocol.
        If no protocol helper exists for this scheme, or if it is not  
        possible to get a description for it.  
   
-</code>
+
 #### Parameters ####
 
 <table>

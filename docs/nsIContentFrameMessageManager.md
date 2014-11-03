@@ -10,21 +10,21 @@ layout: default
 ## Methods ##
 
 ### dump(aStr) ###
-<code>  
+  
 Print a string to stdout.  
   
-</code>
+
 ### privateNoteIntentionalCrash() ###
-<code>  
+  
 If leak detection is enabled, print a note to the leak log that this  
 process will intentionally crash.  
   
-</code>
+
 ### atob(aAsciiString) ###
-<code>  
+  
 Ascii base64 data to binary data and vice versa  
   
-</code>
+
 ### btoa(aBase64Data) ###
 
 ## Attributes ##

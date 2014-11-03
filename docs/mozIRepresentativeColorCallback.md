@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onComplete(success, color) ###
-<code>  
+  
 Will be called when color analysis finishes.  
   
 @param success  
@@ -23,7 +23,7 @@ Will be called when color analysis finishes.
        e.g. 0xFF0102 == rgb(255,1,2)  
        If success is false, color is not provided.  
   
-</code>
+
 #### Parameters ####
 
 <table>

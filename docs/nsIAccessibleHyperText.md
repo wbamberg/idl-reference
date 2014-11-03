@@ -6,25 +6,25 @@ layout: default
 </div>
 
 # nsIAccessibleHyperText #
-<code>  
+  
 A cross-platform interface that deals with text which contains hyperlinks.  
 Each link is an embedded object representing exactly 1 character within  
 the hypertext.  
   
 Current implementation assumes every embedded object is a link.  
   
-</code>
+
 ## Methods ##
 
 ### getLinkAt(index) ###
-<code>  
+  
 Return link accessible at the given index.  
   
 @param index  [in] 0-based index of the link that is to be retrieved  
   
 @return       link accessible or null if there is no link at that index  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -49,7 +49,7 @@ Return link accessible at the given index.
 </table>
 
 ### getLinkIndex(link) ###
-<code>  
+  
 Return index of the given link.  
   
 @param link  [in] link accessible the index is requested for  
@@ -57,7 +57,7 @@ Return index of the given link.
 @return      index of the given link or null if there's no link within  
                hypertext accessible  
   
-</code>
+
 #### Parameters ####
 
 <table>

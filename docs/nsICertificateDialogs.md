@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsICertificateDialogs #
-<code>  
+  
 Functions that implement user interface dialogs to manage certificates.  
   
-</code>
+
 ## Methods ##
 
 ### confirmDownloadCACert(ctx, cert, trust) ###
-<code>  
+  
  UI shown when a user is asked to download a new CA cert.  
  Provides user with ability to choose trust settings for the cert.  
  Asks the user to grant permission to import the certificate.  
@@ -25,7 +25,7 @@ Functions that implement user interface dialogs to manage certificates.
   
  @return true if the user allows to import the certificate.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -63,14 +63,14 @@ Functions that implement user interface dialogs to manage certificates.
 </table>
 
 ### notifyCACertExists(ctx) ###
-<code>  
+  
  UI shown when a web site has delivered a CA certificate to  
  be imported, but the certificate is already contained in the  
  user's storage.  
   
  @param ctx A user interface context.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -84,7 +84,7 @@ Functions that implement user interface dialogs to manage certificates.
 </table>
 
 ### setPKCS12FilePassword(ctx, password) ###
-<code>  
+  
  UI shown when a user's personal certificate is going to be  
  exported to a backup file.  
  The implementation of this dialog should make sure   
@@ -98,7 +98,7 @@ Functions that implement user interface dialogs to manage certificates.
   
  @return false if the user requests to cancel.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -129,7 +129,7 @@ Functions that implement user interface dialogs to manage certificates.
 </table>
 
 ### getPKCS12FilePassword(ctx, password) ###
-<code>  
+  
  UI shown when a user is about to restore a personal  
  certificate from a backup file.  
  The user is requested to enter the password  
@@ -140,7 +140,7 @@ Functions that implement user interface dialogs to manage certificates.
   
  @return false if the user requests to cancel.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -171,7 +171,7 @@ Functions that implement user interface dialogs to manage certificates.
 </table>
 
 ### viewCert(ctx, cert) ###
-<code>  
+  
  UI shown when a certificate needs to be shown to the user.  
  The implementation should try to display as many attributes  
  as possible.  
@@ -179,7 +179,7 @@ Functions that implement user interface dialogs to manage certificates.
  @param ctx A user interface context.  
  @param cert The certificate to be shown to the user.  
   
-</code>
+
 #### Parameters ####
 
 <table>

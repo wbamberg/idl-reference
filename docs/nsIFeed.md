@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIFeed #
-<code>  
+  
 An nsIFeed represents a single Atom or RSS feed.  
   
-</code>
+
 ## Attributes ##
 
 ### subtitle ###

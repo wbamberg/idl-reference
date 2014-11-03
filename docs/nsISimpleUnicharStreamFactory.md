@@ -6,20 +6,19 @@ layout: default
 </div>
 
 # nsISimpleUnicharStreamFactory #
-<code>  
+  
 Factory to create objects that implement nsIUnicharInputStream,  
 converting from a unicode string or a UTF-8 stream.  
   
-</code>
+
 ## Methods ##
 
 ### createInstanceFromString(aString) ###
-<code>  
+  
 Create a unicode input stream from a unicode string.  
   
-</code>
+
 ### createInstanceFromUTF8Stream(aStream) ###
-<code>  
+  
 Create a unicode stream from an input stream in UTF8.  
   
-</code>

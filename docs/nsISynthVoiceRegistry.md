@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### addVoice(aService, aUri, aName, aLang, aLocalService) ###
-<code>  
+  
 Register a speech synthesis voice.  
   
 @param aService      the service that provides this voice.  
@@ -19,7 +19,7 @@ Register a speech synthesis voice.
 @param aLang         a BCP 47 language tag.  
 @param aLocalService true if service does not require network.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -57,13 +57,13 @@ Register a speech synthesis voice.
 </table>
 
 ### removeVoice(aService, aUri) ###
-<code>  
+  
 Remove a speech synthesis voice.  
   
 @param aService the service that was used to add the voice.  
 @param aUri     a unique identifier of an existing voice.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -83,13 +83,13 @@ Remove a speech synthesis voice.
 </table>
 
 ### setDefaultVoice(aUri, aIsDefault) ###
-<code>  
+  
 Set a voice as default.  
   
 @param aUri       a unique identifier of an existing voice.  
 @param aIsDefault true if this voice should be toggled as default.  
   
-</code>
+
 #### Parameters ####
 
 <table>

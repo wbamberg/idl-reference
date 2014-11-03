@@ -6,33 +6,33 @@ layout: default
 </div>
 
 # nsIHelperAppLauncher #
-<code>  
+  
 A helper app launcher is a small object created to handle the launching  
 of an external application.  
   
 Note that cancelling the load via the nsICancelable interface will release  
 the reference to the launcher dialog.  
   
-</code>
+
 ## Methods ##
 
 ### saveToDisk(aNewFileLocation, aRememberThisPreference) ###
-<code>  
+  
 Saves the final destination of the file. Does not actually perform the  
 save.  
 NOTE: This will release the reference to the  
 nsIHelperAppLauncherDialog.  
   
-</code>
+
 ### launchWithApplication(aApplication, aRememberThisPreference) ###
-<code>  
+  
 Remembers that aApplication should be used to launch this content. Does  
 not actually launch the application.  
 NOTE: This will release the reference to the nsIHelperAppLauncherDialog.  
 @param aApplication nsIFile corresponding to the location of the application to use.  
 @param aRememberThisPreference TRUE if we should remember this choice.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -52,12 +52,12 @@ NOTE: This will release the reference to the nsIHelperAppLauncherDialog.
 </table>
 
 ### saveDestinationAvailable(aFile) ###
-<code>  
+  
 Callback invoked by nsIHelperAppLauncherDialog::promptForSaveToFileAsync  
 after the user has chosen a file through the File Picker (or dismissed it).  
 @param aFile The file that was chosen by the user (or null if dialog was dismissed).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -71,13 +71,13 @@ after the user has chosen a file through the File Picker (or dismissed it).
 </table>
 
 ### setWebProgressListener(aWebProgressListener) ###
-<code>  
+  
 The following methods are used by the progress dialog to get or set  
 information on the current helper app launcher download.  
 This reference will be released when the download is finished (after the  
 listener receives the STATE_STOP notification).  
   
-</code>
+
 ## Attributes ##
 
 ### MIMEInfo ###

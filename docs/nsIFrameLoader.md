@@ -10,30 +10,30 @@ layout: default
 ## Methods ##
 
 ### loadFrame() ###
-<code>  
+  
 Start loading the frame. This method figures out what to load  
 from the owner content in the frame loader.  
   
-</code>
+
 ### loadURI(aURI) ###
-<code>  
+  
 Loads the specified URI in this frame. Behaves identically to loadFrame,  
 except that this method allows specifying the URI to load.  
   
-</code>
+
 ### destroy() ###
-<code>  
+  
 Destroy the frame loader and everything inside it. This will  
 clear the weak owner content reference.  
   
-</code>
+
 ### updatePositionAndSize(aIFrame) ###
-<code>  
+  
 Updates the position and size of the subdocument loaded by this frameloader.  
   
  @param aIFrame The nsIFrame for the content node that owns this frameloader  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -47,39 +47,39 @@ Updates the position and size of the subdocument loaded by this frameloader.
 </table>
 
 ### activateRemoteFrame() ###
-<code>  
+  
 Activate remote frame.  
 Throws an exception with non-remote frames.  
   
-</code>
+
 ### deactivateRemoteFrame() ###
-<code>  
+  
 Deactivate remote frame.  
 Throws an exception with non-remote frames.  
   
-</code>
+
 ### sendCrossProcessMouseEvent(aType, aX, aY, aButton, aClickCount, aModifiers, aIgnoreRootScrollFrame) ###
-<code>  
+  
 @see nsIDOMWindowUtils sendMouseEvent.  
   
-</code>
+
 ### activateFrameEvent(aType, capture) ###
-<code>  
+  
 Activate event forwarding from client (remote frame) to parent.  
   
-</code>
+
 ### sendCrossProcessKeyEvent(aType, aKeyCode, aCharCode, aModifiers, aPreventDefault) ###
-<code>  
+  
 @see nsIDOMWindowUtils sendKeyEvent.  
   
-</code>
+
 ### requestNotifyAfterRemotePaint() ###
-<code>  
+  
 Request that the next time a remote layer transaction has been  
 received by the Compositor, a MozAfterRemoteFrame event be sent  
 to the window.  
   
-</code>
+
 ## Attributes ##
 
 ### docShell ###

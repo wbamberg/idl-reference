@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIHttpAuthenticator #
-<code>  
+  
 nsIHttpAuthenticator  
   
 Interface designed to allow for pluggable HTTP authentication modules.  
@@ -17,11 +17,11 @@ Implementations are registered under the ContractID:
 where <auth-scheme> is the lower-cased value of the authentication scheme  
 found in the server challenge per the rules of RFC 2617.  
   
-</code>
+
 ## Methods ##
 
 ### challengeReceived(aChannel, aChallenge, aProxyAuth, aSessionState, aContinuationState, aInvalidatesIdentity) ###
-<code>  
+  
 Upon receipt of a server challenge, this function is called to determine  
 whether or not the current user identity has been rejected.  If true,  
 then the user will be prompted by the channel to enter (or revise) their  
@@ -45,7 +45,7 @@ return value will be ignored, and user prompting will be suppressed.
        return value indicating whether or not to prompt the user for a  
        revised identity.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -91,7 +91,7 @@ return value will be ignored, and user prompting will be suppressed.
 </table>
 
 ### generateCredentials(aChannel, aChallenge, aProxyAuth, aDomain, aUser, aPassword, aSessionState, aContinuationState, aFlags) ###
-<code>  
+  
 Called to generate the authentication credentials for a particular  
 server/proxy challenge.  This is the value that will be sent back  
 to the server via an Authorization/Proxy-Authorization header.  
@@ -127,7 +127,7 @@ authenticator sets the REUSABLE_CHALLENGE flag.
 @param aFlags  
        authenticator may return one of the generate flags bellow.  
   
-</code>
+
 #### Parameters ####
 
 <table>

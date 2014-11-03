@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsITimer #
-<code>  
+  
 nsITimer instances must be initialized by calling one of the "init" methods  
 documented below.  You may also re-initialize (using one of the init()  
 methods) an existing instance to avoid the overhead of destroying and  
@@ -19,11 +19,11 @@ and called one of its init functions, any further interactions with the timer
 target thread, or races may occur with bad results like timers firing after  
 they've been canceled, and/or not firing after re-initiatization.  
   
-</code>
+
 ## Methods ##
 
 ### init(aObserver, aDelay, aType) ###
-<code>  
+  
 Initialize a timer that will fire after the said delay.  
 A user must keep a reference to this timer till it is   
 is no longer needed or has been cancelled.  
@@ -39,7 +39,7 @@ is no longer needed or has been cancelled.
 @param aDelay      delay in milliseconds for timer to fire  
 @param aType       timer type per TYPE* consts defined above  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -67,7 +67,7 @@ is no longer needed or has been cancelled.
 </table>
 
 ### initWithFuncCallback(aCallback, aClosure, aDelay, aType) ###
-<code>  
+  
 Initialize a timer to fire after the given millisecond interval.  
 This version takes a function to call and a closure to pass to  
 that function.  
@@ -77,7 +77,7 @@ that function.
 @param aDelay     The millisecond interval  
 @param aType      Timer type per TYPE* consts defined above  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -109,7 +109,7 @@ that function.
 </table>
 
 ### initWithCallback(aCallback, aDelay, aType) ###
-<code>  
+  
 Initialize a timer to fire after the given millisecond interval.  
 This version takes a function to call.  
   
@@ -117,7 +117,7 @@ This version takes a function to call.
 @param aDelay     The millisecond interval  
 @param aType      Timer type per TYPE* consts defined above  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -143,13 +143,13 @@ This version takes a function to call.
 </table>
 
 ### cancel() ###
-<code>  
+  
 Cancel the timer.  This method works on all types, not just on repeating  
 timers -- you might want to cancel a TYPE_ONE_SHOT timer, and even reuse  
 it by re-initializing it (to avoid object destruction and creation costs  
 by conserving one timer instance).  
   
-</code>
+
 ## Attributes ##
 
 ### delay ###

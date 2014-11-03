@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINetworkManager #
-<code>  
+  
 Manage network interfaces.  
   
-</code>
+
 ## Methods ##
 
 ### registerNetworkInterface(network) ###
-<code>  
+  
 Register the given network interface with the network manager.  
   
 Consumers will be notified with the 'network-interface-registered'  
@@ -24,7 +24,7 @@ Throws if there's already an interface registered with the same network id.
 @param network  
        Network interface to register.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -38,7 +38,7 @@ Throws if there's already an interface registered with the same network id.
 </table>
 
 ### updateNetworkInterface(network) ###
-<code>  
+  
 Update the routes and DNSes according the state of the given network.  
   
 Consumers will be notified with the 'network-connection-state-changed'  
@@ -50,7 +50,7 @@ registered.
 @param network  
        Network interface to update.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -64,7 +64,7 @@ registered.
 </table>
 
 ### unregisterNetworkInterface(network) ###
-<code>  
+  
 Unregister the given network interface from the network manager.  
   
 Consumers will be notified with the 'network-interface-unregistered'  
@@ -76,7 +76,7 @@ registered.
 @param network  
        Network interface to unregister.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -90,7 +90,7 @@ registered.
 </table>
 
 ### overrideActive(network) ###
-<code>  
+  
 Override the default behaviour for preferredNetworkType and route  
 all network traffic through the the specified interface.  
   
@@ -101,7 +101,7 @@ the 'network-active-changed' observer notification.
        Network to route all network traffic to. If this is null,  
        a previous override is canceled.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -116,7 +116,7 @@ the 'network-active-changed' observer notification.
 </table>
 
 ### setWifiTethering(enabled, networkInterface, config, callback) ###
-<code>  
+  
 Enable or disable Wifi Tethering  
   
 @param enabled  
@@ -128,7 +128,7 @@ Enable or disable Wifi Tethering
 @param callback  
        Callback function used to report status to WifiManager.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -160,7 +160,7 @@ Enable or disable Wifi Tethering
 </table>
 
 ### addHostRoute(network, host) ###
-<code>  
+  
 Add host route to the specified network into routing table.  
   
 @param network  
@@ -172,7 +172,7 @@ Add host route to the specified network into routing table.
 @return a Promise  
         resolved if added; rejected, otherwise.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -205,7 +205,7 @@ Add host route to the specified network into routing table.
 </table>
 
 ### removeHostRoute(network, host) ###
-<code>  
+  
 Remove host route to the specified network from routing table.  
   
 @param network  
@@ -217,7 +217,7 @@ Remove host route to the specified network from routing table.
 @return a Promise  
         resolved if removed; rejected, otherwise.  
   
-</code>
+
 #### Parameters ####
 
 <table>

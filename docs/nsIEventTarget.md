@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### dispatch(event, flags) ###
-<code>  
+  
 Dispatch an event to this event target.  This function may be called from  
 any thread, and it may be called re-entrantly.  
   
@@ -26,7 +26,7 @@ any thread, and it may be called re-entrantly.
   Indicates that the thread is shutting down and has finished processing  
 events, so this event would never run and has not been dispatched.   
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -47,7 +47,7 @@ events, so this event would never run and has not been dispatched.
 </table>
 
 ### isOnCurrentThread() ###
-<code>  
+  
 Check to see if this event target is associated with the current thread.  
   
 @returns  
@@ -55,7 +55,7 @@ Check to see if this event target is associated with the current thread.
   event target will run on the current thread (i.e., the thread calling  
   this method).  
   
-</code>
+
 #### Returns ####
 
 <table>

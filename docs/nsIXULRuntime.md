@@ -6,31 +6,31 @@ layout: default
 </div>
 
 # nsIXULRuntime #
-<code>  
+  
 Provides information about the XUL runtime.  
 @status UNSTABLE - This interface is not frozen and will probably change in  
                    future releases. If you need this functionality to be  
                    stable/frozen, please contact Benjamin Smedberg.  
   
-</code>
+
 ## Methods ##
 
 ### invalidateCachesOnRestart() ###
-<code>  
+  
 Signal the apprunner to invalidate caches on the next restart.  
 This will cause components to be autoregistered and all  
 fastload data to be re-created.  
   
-</code>
+
 ### ensureContentProcess() ###
-<code>  
+  
 Starts a child process. This method is intented to pre-start a  
 content child process so that when it is actually needed, it is  
 ready to go.  
   
 @throw NS_ERROR_NOT_AVAILABLE if not available.  
   
-</code>
+
 ## Attributes ##
 
 ### inSafeMode ###

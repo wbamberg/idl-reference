@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIXULContextMenuBuilder #
-<code>  
+  
 An interface for initialization of XUL context menu builder  
 and for triggering of menuitem actions with assigned identifiers.  
   
-</code>
+
 ## Methods ##
 
 ### init(aDocumentFragment, aGeneratedItemIdAttrName) ###
-<code>  
+  
 Initialize builder before building.  
   
 @param aDocumentFragment the fragment that will be used to append top  
@@ -23,7 +23,7 @@ Initialize builder before building.
 @param aGeneratedItemIdAttrName the name of the attribute that will be  
        used to mark elements as generated and for menuitem identification  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -45,12 +45,12 @@ Initialize builder before building.
 </table>
 
 ### click(aGeneratedItemId) ###
-<code>  
+  
 Invoke the action of the menuitem with assigned id aGeneratedItemId.  
   
 @param aGeneratedItemId the menuitem id  
   
-</code>
+
 #### Parameters ####
 
 <table>

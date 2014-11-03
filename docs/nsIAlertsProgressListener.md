@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onProgress(name, progress, progressMax, text) ###
-<code>  
+  
 Called to notify the alert service that progress has occurred for the  
 given notification previously displayed with showAlertNotification().  
   
@@ -23,7 +23,7 @@ given notification previously displayed with showAlertNotification().
 @param text         The contents of the alert. If not provided,  
                     the percentage will be displayed.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -59,13 +59,13 @@ given notification previously displayed with showAlertNotification().
 </table>
 
 ### onCancel(name) ###
-<code>  
+  
 Called to cancel and hide the given notification previously displayed  
 with showAlertNotification().  
   
 @param name         The name of the notification.  
   
-</code>
+
 #### Parameters ####
 
 <table>

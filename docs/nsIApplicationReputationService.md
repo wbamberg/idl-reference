@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### queryReputation(aQuery, aCallback) ###
-<code>  
+  
 Start querying the application reputation service.  
   
 @param aQuery  
@@ -28,7 +28,7 @@ Start querying the application reputation service.
          will solicit a valid response, but won't produce any useful  
          information.  
   
-</code>
+
 #### Parameters ####
 
 <table>

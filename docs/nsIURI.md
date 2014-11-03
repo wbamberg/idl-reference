@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIURI #
-<code>  
+  
 URIs are essentially structured names for things -- anything. This interface  
 provides accessors to set and query the most basic components of an URI.  
 Subclasses, including nsIURL, impose greater structure on the URI.  
@@ -39,7 +39,7 @@ convenience.
 [2] http://www.ietf.org/internet-drafts/draft-ietf-idn-idna-06.txt  
 [3] http://www.ietf.org/internet-drafts/draft-masinter-url-i18n-08.txt  
   
-</code><code>  
+  
 nsIURI - interface for an uniform resource identifier w/ i18n support.  
   
 AUTF8String attributes may contain unescaped UTF-8 characters.  
@@ -62,53 +62,53 @@ for sessionstore to work after an upgrade.  If this IID is revved further,
 we will need to add additional checks there for all intermediate IIDs, until  
 nsPrincipal is fixed to serialize its URIs as nsISupports (bug 662693).  
   
-</code>
+
 ## Methods ##
 
 ### equals(other) ###
-<code>********************************************************************  
+********************************************************************  
 An URI supports the following methods:  
   
-</code><code>  
+  
 URI equivalence test (not a strict string comparison).  
   
 eg. http://foo.com:80/ == http://foo.com/  
   
-</code>
+
 ### schemeIs(scheme) ###
-<code>  
+  
 An optimization to do scheme checks without requiring the users of nsIURI  
 to GetScheme, thereby saving extra allocating and freeing. Returns true if  
 the schemes match (case ignored).  
   
-</code>
+
 ### clone() ###
-<code>  
+  
 Clones the current URI.  
   
-</code>
+
 ### resolve(relativePath) ###
-<code>  
+  
 This method resolves a relative string into an absolute URI string,  
 using this URI as the base.   
   
 NOTE: some implementations may have no concept of a relative URI.  
   
-</code>
+
 ### equalsExceptRef(other) ###
-<code>  
+  
 URI equivalence test (not a strict string comparison), ignoring  
 the value of the .ref member.  
   
 eg. http://foo.com/# == http://foo.com/  
     http://foo.com/#aaa == http://foo.com/#bbb  
   
-</code>
+
 ### cloneIgnoringRef() ###
-<code>  
+  
 Clones the current URI, clearing the 'ref' attribute in the clone.  
   
-</code>
+
 ## Attributes ##
 
 ### spec ###

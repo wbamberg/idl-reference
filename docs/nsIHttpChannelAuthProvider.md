@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIHttpChannelAuthProvider #
-<code>  
+  
 nsIHttpChannelAuthProvider  
   
 This interface is intended for providing authentication for http-style  
@@ -21,17 +21,17 @@ with the new credentials that the user has provided. After a successful
 request, checkForSuperfluousAuth MAY be called, and disconnect MUST be  
 called.  
   
-</code>
+
 ## Methods ##
 
 ### init(channel) ###
-<code>  
+  
 Initializes the http authentication support for the channel.  
 Implementations must hold a weak reference of the channel.  
   
-</code>
+
 ### processAuthentication(httpStatus, sslConnectFailed) ###
-<code>  
+  
 Upon receipt of a server challenge, this function is called to determine  
 the credentials to send.  
   
@@ -50,7 +50,7 @@ the credentials to send.
                               nsIHttpAuthenticableChannel's methods or  
                               until disconnect be called.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -93,19 +93,18 @@ the credentials to send.
 </table>
 
 ### addAuthorizationHeaders() ###
-<code>  
+  
 Add credentials from the http auth cache.  
   
-</code>
+
 ### checkForSuperfluousAuth() ###
-<code>  
+  
 Check if an unnecessary(and maybe malicious) url authentication has been  
 provided.  
   
-</code>
+
 ### disconnect(status) ###
-<code>  
+  
 Cancel pending user auth prompts and release the callback and channel  
 weak references.  
   
-</code>

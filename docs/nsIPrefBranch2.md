@@ -6,9 +6,8 @@ layout: default
 </div>
 
 # nsIPrefBranch2 #
-<code>  
+  
 An empty interface to provide backwards compatibility for existing code.  
   
 @see nsIPrefBranch  
   
-</code>

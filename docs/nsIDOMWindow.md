@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMWindow #
-<code>  
+  
 The nsIDOMWindow interface is the primary interface for a DOM  
 window object. It represents a single window object that may  
 contain child windows if the document in the window contains a  
@@ -14,7 +14,7 @@ HTML frameset document or if the document contains iframe elements.
   
 @see <http://www.whatwg.org/html/#window>  
   
-</code>
+
 ## Methods ##
 
 ### close() ###
@@ -36,7 +36,7 @@ HTML frameset document or if the document contains iframe elements.
 ### showModalDialog(aURI, aArgs, aOptions) ###
 
 ### postMessage(message, targetOrigin, transfer) ###
-<code>  
+  
 Implements a safe message-passing system which can cross same-origin  
 boundaries.  
   
@@ -53,53 +53,53 @@ location of the other).
   
 @see <http://www.whatwg.org/html/#dom-window-postmessage>  
   
-</code>
+
 ### atob(aAsciiString) ###
 
 ### btoa(aBase64Data) ###
 
 ### getSelection() ###
-<code>  
+  
 Method for accessing this window's selection object.  
   
-</code>
+
 ### matchMedia(media_query_list) ###
 
 ### scroll(xScroll, yScroll) ###
 
 ### scrollTo(xScroll, yScroll) ###
-<code>  
+  
 Method for scrolling this window to an absolute pixel offset.  
   
-</code>
+
 ### scrollBy(xScrollDif, yScrollDif) ###
-<code>  
+  
 Method for scrolling this window to a pixel offset relative to  
 the current scroll position.  
   
-</code>
+
 ### getComputedStyle(elt, pseudoElt) ###
-<code>  
+  
 @see <http://dev.w3.org/csswg/cssom/#dom-window-getcomputedstyle>  
   
-</code>
+
 ### getDefaultComputedStyle(elt, pseudoElt) ###
 
 ### scrollByLines(numLines) ###
-<code>  
+  
 Method for scrolling this window by a number of lines.  
   
-</code>
+
 ### scrollByPages(numPages) ###
-<code>  
+  
 Method for scrolling this window by a number of pages.  
   
-</code>
+
 ### sizeToContent() ###
-<code>  
+  
 Method for sizing this window to the content in the window.  
   
-</code>
+
 ### back() ###
 
 ### forward() ###
@@ -115,16 +115,16 @@ Method for sizing this window to the content in the window.
 ### resizeBy(widthDif, heightDif) ###
 
 ### open(url, name, options) ###
-<code>  
+  
 Open a new window with this one as the parent.  This method will  
 NOT examine the JS stack for purposes of determining a caller.  
 This window will be used for security checks during the search by  
 name and the default character set on the newly opened window  
 will just be the default character set of this window.  
   
-</code>
+
 ### openDialog(url, name, options, aExtraArgument) ###
-<code>  
+  
 This method works like open except that aExtraArgument gets  
 converted into the array window.arguments in JS, if  
 aExtraArgument is a nsISupportsArray then the individual items in  
@@ -132,25 +132,25 @@ the array are inserted into window.arguments, and primitive
 nsISupports (nsISupportsPrimitives) types are converted to native  
 JS types when possible.  
   
-</code>
+
 ### updateCommands(action, sel, reason) ###
 
 ### find(str, caseSensitive, backwards, wrapAround, wholeWord, searchInFrames, showDialog) ###
 
 ### mozRequestAnimationFrame(aCallback) ###
-<code>  
+  
 Request a refresh of this browser window.  
   
 @see <http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/RequestAnimationFrame/Overview.html>  
   
-</code>
+
 ### requestAnimationFrame(aCallback) ###
 
 ### mozCancelAnimationFrame(aHandle) ###
-<code>  
+  
 Cancel a refresh callback.  
   
-</code>
+
 ### mozCancelRequestAnimationFrame(aHandle) ###
 
 ### cancelAnimationFrame(aHandle) ###

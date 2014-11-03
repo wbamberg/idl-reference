@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIWebProgress #
-<code>  
+  
 The nsIWebProgress interface is used to add or remove nsIWebProgressListener  
 instances to observe the loading of asynchronous requests (usually in the  
 context of a DOM window).  
@@ -23,11 +23,11 @@ nsIWebProgress instance to which it added itself, and it may also receive
 notifications from any nsIWebProgress instances that are children of that  
 nsIWebProgress instance.  
   
-</code>
+
 ## Methods ##
 
 ### addProgressListener(aListener, aNotifyMask) ###
-<code>  
+  
 Registers a listener to receive web progress events.  
   
 @param aListener  
@@ -42,7 +42,7 @@ Registers a listener to receive web progress events.
 @throw NS_ERROR_FAILURE  
        Indicates that aListener was already registered.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -63,7 +63,7 @@ Registers a listener to receive web progress events.
 </table>
 
 ### removeProgressListener(aListener) ###
-<code>  
+  
 Removes a previously registered listener of progress events.  
   
 @param aListener  
@@ -73,7 +73,7 @@ Removes a previously registered listener of progress events.
 @throw NS_ERROR_FAILURE  
        Indicates that aListener was not registered.  
   
-</code>
+
 #### Parameters ####
 
 <table>

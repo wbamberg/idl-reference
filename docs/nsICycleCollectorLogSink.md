@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsICycleCollectorLogSink #
-<code>  
+  
 This interface allows replacing the log-writing backend for an  
 nsICycleCollectorListener.  As this interface is also called while  
 the cycle collector is running, it cannot be implemented in JS.  
   
-</code>
+
 ## Methods ##
 
 ### open(aGCLog, aCCLog) ###

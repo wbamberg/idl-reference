@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsICancelable #
-<code>  
+  
 This interface provides a means to cancel an operation that is in progress.  
   
-</code>
+
 ## Methods ##
 
 ### cancel(aReason) ###
-<code>  
+  
 Call this method to request that this object abort whatever operation it  
 may be performing.  
   
@@ -21,7 +21,7 @@ may be performing.
        Pass a failure code to indicate the reason why this operation is  
        being canceled.  It is an error to pass a success code.  
   
-</code>
+
 #### Parameters ####
 
 <table>

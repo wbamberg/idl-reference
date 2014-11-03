@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### init(aObserver) ###
-<code>  
+  
 Start asynchronous initialization.  
   
 The callback is triggered once initialization is complete, which may be  
@@ -19,7 +19,7 @@ call to this method. The callback is always invoked asynchronously.
   
 @param aObserver An optional object observing the end of initialization.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -33,7 +33,7 @@ call to this method. The callback is always invoked asynchronously.
 </table>
 
 ### addEngine(engineURL, dataType, iconURL, confirm, callback) ###
-<code>  
+  
 Adds a new search engine from the file at the supplied URI, optionally  
 asking the user for confirmation first.  If a confirmation dialog is  
 shown, it will offer the option to begin using the newly added engine  
@@ -65,7 +65,7 @@ right away.
 @throws NS_ERROR_FAILURE if the type is invalid, or if the description  
         file cannot be successfully loaded.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -111,7 +111,7 @@ right away.
 </table>
 
 ### addEngineWithDetails(name, iconURL, alias, description, method, url, extensionID) ###
-<code>  
+  
 Adds a new search engine, without asking the user for confirmation and  
 without starting to use it right away.  
   
@@ -140,7 +140,7 @@ without starting to use it right away.
 @param extensionID [optional]  
        Optional: The correct extensionID if called by an add-on.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -195,14 +195,14 @@ without starting to use it right away.
 </table>
 
 ### restoreDefaultEngines() ###
-<code>  
+  
 Un-hides all engines installed in the directory corresponding to  
 the directory service's NS_APP_SEARCH_DIR key. (i.e. the set of  
 engines returned by getDefaultEngines)  
   
-</code>
+
 ### getEngineByAlias(alias) ###
-<code>  
+  
 Returns an engine with the specified alias.  
   
 @param   alias  
@@ -210,7 +210,7 @@ Returns an engine with the specified alias.
 @returns The corresponding nsISearchEngine object, or null if it doesn't  
          exist.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -236,7 +236,7 @@ Returns an engine with the specified alias.
 </table>
 
 ### getEngineByName(aEngineName) ###
-<code>  
+  
 Returns an engine with the specified name.  
   
 @param   aEngineName  
@@ -244,7 +244,7 @@ Returns an engine with the specified name.
 @returns The corresponding nsISearchEngine object, or null if it doesn't  
          exist.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -270,12 +270,12 @@ Returns an engine with the specified name.
 </table>
 
 ### getEngines(engineCount, engines) ###
-<code>  
+  
 Returns an array of all installed search engines.  
   
 @returns an array of nsISearchEngine objects.  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -288,13 +288,13 @@ Returns an array of all installed search engines.
 </table>
 
 ### getVisibleEngines(engineCount, engines) ###
-<code>  
+  
 Returns an array of all installed search engines whose hidden attribute is  
 false.  
   
 @returns an array of nsISearchEngine objects.  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -307,14 +307,14 @@ false.
 </table>
 
 ### getDefaultEngines(engineCount, engines) ###
-<code>  
+  
 Returns an array of all default search engines. This includes all loaded  
 engines that aren't in the user's profile directory  
 (NS_APP_USER_SEARCH_DIR).  
   
 @returns an array of nsISearchEngine objects.  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -327,7 +327,7 @@ engines that aren't in the user's profile directory
 </table>
 
 ### moveEngine(engine, newIndex) ###
-<code>  
+  
 Moves a visible search engine.  
   
 @param  engine  
@@ -338,7 +338,7 @@ Moves a visible search engine.
 @throws NS_ERROR_FAILURE if newIndex is out of bounds, or if engine is  
         hidden.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -358,7 +358,7 @@ Moves a visible search engine.
 </table>
 
 ### removeEngine(engine) ###
-<code>  
+  
 Removes the search engine. If the search engine is installed in a global  
 location, this will just hide the engine. If the engine is in the user's  
 profile directory, it will be removed from disk.  
@@ -366,7 +366,7 @@ profile directory, it will be removed from disk.
 @param  engine  
         The engine to remove.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -380,7 +380,7 @@ profile directory, it will be removed from disk.
 </table>
 
 ### parseSubmissionURL(url) ###
-<code>  
+  
 Determines if the provided URL represents results from a search engine, and  
 provides details about the match.  
   
@@ -394,7 +394,7 @@ string, but other parameters are ignored.
        String containing the URL to parse, for example  
        "https://www.google.com/search?q=terms".  
   
-</code>
+
 #### Parameters ####
 
 <table>

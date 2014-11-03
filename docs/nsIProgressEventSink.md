@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIProgressEventSink #
-<code>  
+  
 nsIProgressEventSink  
   
 This interface is used to asynchronously convey channel status and progress  
@@ -25,11 +25,11 @@ is canceled (via nsIRequest::cancel).
 NOTE: This interface is actually not specific to channels and may be used  
 with other implementations of nsIRequest.  
   
-</code>
+
 ## Methods ##
 
 ### onProgress(aRequest, aContext, aProgress, aProgressMax) ###
-<code>  
+  
 Called to notify the event sink that progress has occurred for the  
 given request.  
   
@@ -45,7 +45,7 @@ given request.
        numeric value indicating maximum number of bytes that will be  
        transfered (or 0xFFFFFFFFFFFFFFFF if total is unknown).  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -80,7 +80,7 @@ given request.
 </table>
 
 ### onStatus(aRequest, aContext, aStatus, aStatusArg) ###
-<code>  
+  
 Called to notify the event sink with a status message for the given  
 request.  
   
@@ -101,7 +101,7 @@ request.
        of the status code.  for socket status codes, this parameter  
        indicates the host:port associated with the status code.  
   
-</code>
+
 #### Parameters ####
 
 <table>

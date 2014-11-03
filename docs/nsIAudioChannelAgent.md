@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIAudioChannelAgent #
-<code>  
+  
 This interface provides an agent for gecko components to participate  
 in the audio channel service. Gecko components are responsible for  
   1. Indicating what channel type they are using (via the init() member  
@@ -19,11 +19,11 @@ in the audio channel service. Gecko components are responsible for
 The agent will invoke a callback to notify Gecko components of  
   1. Changes to the playable status of this channel.  
   
-</code>
+
 ## Methods ##
 
 ### init(window, channelType, callback) ###
-<code>  
+  
 Initialize the agent with a channel type.  
 Note: This function should only be called once.  
   
@@ -39,7 +39,7 @@ Note: This function should only be called once.
    3. The AudioChannelAgent keeps a strong reference to the callback  
       object.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -70,23 +70,23 @@ Note: This function should only be called once.
 </table>
 
 ### initWithWeakCallback(window, channelType, callback) ###
-<code>  
+  
 This method is just like init(), except the audio channel agent keeps a  
 weak reference to the callback object.  
   
 In order for this to work, |callback| must implement  
 nsISupportsWeakReference.  
   
-</code>
+
 ### initWithVideo(window, channelType, callback, weak) ###
-<code>  
+  
 This method is just like init(), and specify the channel is associated  
 with video.  
   
 @param weak  
    true if weak reference should be hold.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -100,7 +100,7 @@ with video.
 </table>
 
 ### startPlaying() ###
-<code>  
+  
 Notify the agent that we want to start playing.  
 Note: Gecko component SHOULD call this function first then start to  
          play audio stream only when return value is true.  
@@ -114,7 +114,7 @@ Note: Gecko component SHOULD call this function first then start to
    faded state: the agent has registered with audio channel service the  
          component should start playback as well as reducing the volume.  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -132,7 +132,7 @@ Note: Gecko component SHOULD call this function first then start to
 </table>
 
 ### stopPlaying() ###
-<code>  
+  
 Notify the agent we no longer want to play.  
   
 Note : even if startPlaying() returned false, the agent would still be  
@@ -140,14 +140,14 @@ Note : even if startPlaying() returned false, the agent would still be
        So stopPlaying must still eventually be called to unregister the agent with the  
        channel service.  
   
-</code>
+
 ### setVisibilityState(visible) ###
-<code>  
+  
 Notify the agent of the visibility state of the window using this agent.  
 @param visible  
    True if the window associated with the agent is visible.  
   
-</code>
+
 #### Parameters ####
 
 <table>

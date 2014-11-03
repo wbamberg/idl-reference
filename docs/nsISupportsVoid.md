@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsVoid #
-<code>  
+  
 Scriptable storage for generic pointers  
   
-</code>
+
 ## Methods ##
 
 ### toString() ###

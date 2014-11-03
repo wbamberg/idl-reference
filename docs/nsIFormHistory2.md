@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIFormHistory2 #
-<code>  
+  
 The nsIFormHistory object is a service which holds a set of name/value  
 pairs.  The names correspond to form field names, and the values correspond  
 to values the user has submitted.  So, several values may exist for a single  
@@ -18,41 +18,41 @@ autocomplete matches.
   
 @deprecated use FormHistory.jsm instead.  
   
-</code>
+
 ## Methods ##
 
 ### addEntry(name, value) ###
-<code>  
+  
 Adds a name and value pair to the form history.  
   
-</code>
+
 ### removeEntry(name, value) ###
-<code>  
+  
 Removes a name and value pair from the form history.  
   
-</code>
+
 ### removeEntriesForName(name) ###
-<code>  
+  
 Removes all entries that are paired with a name.  
   
-</code>
+
 ### removeAllEntries() ###
-<code>  
+  
 Removes all entries in the entire form history.  
   
-</code>
+
 ### nameExists(name) ###
-<code>  
+  
 Returns true if there is no entry that is paired with a name.  
   
-</code>
+
 ### entryExists(name, value) ###
-<code>  
+  
 Gets whether a name and value pair exists in the form history.  
   
-</code>
+
 ### removeEntriesByTimeframe(aBeginTime, aEndTime) ###
-<code>  
+  
 Removes entries that were created between the specified times.  
   
 @param aBeginTime  
@@ -60,7 +60,7 @@ Removes entries that were created between the specified times.
 @param aEndTime  
        The end of the timeframe, in microseconds  
   
-</code>
+
 #### Parameters ####
 
 <table>

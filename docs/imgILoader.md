@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # imgILoader #
-<code>  
+  
 imgILoader interface  
   
 @author Stuart Parmenter <pavlov@netscape.com>  
 @version 0.3  
 @see imagelib2  
   
-</code>
+
 ## Methods ##
 
 ### loadImageXPCOM(aURI, aInitialDocumentURL, aReferrerURI, aLoadingPrincipal, aLoadGroup, aObserver, aCX, aLoadFlags, cacheKey, aContentPolicyType) ###
-<code>  
+  
 Start the load and decode of an image.  
 @param aURI the URI to load  
 @param aInitialDocumentURI the URI that 'initiated' the load -- used for 3rd party cookie blocking  
@@ -39,7 +39,7 @@ reference cycles.  This means that callers of loadImage should
 make sure to Cancel() the resulting request before the observer  
 goes away.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -110,7 +110,7 @@ goes away.
 </table>
 
 ### loadImageWithChannelXPCOM(aChannel, aObserver, cx, aListener) ###
-<code>  
+  
 Start the load and decode of an image.  
 @param aChannel the channel to load the image from.  This must  
                 already be opened before ths method is called, and there  
@@ -127,7 +127,7 @@ libpr0n does NOT keep a strong ref to the observer; this prevents
 reference cycles.  This means that callers of loadImageWithChannel should  
 make sure to Cancel() the resulting request before the observer goes away.  
   
-</code>
+
 #### Parameters ####
 
 <table>

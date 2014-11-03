@@ -6,23 +6,23 @@ layout: default
 </div>
 
 # nsITypeAheadFind #
-<code>************************** nsTypeAheadFind ******************************/  
-</code>
+************************** nsTypeAheadFind ******************************/  
+
 ## Methods ##
 
 ### init(aDocShell) ###
-<code>************************** Initializer ******************************/  
-</code>
+************************** Initializer ******************************/  
+
 ### find(aSearchString, aLinksOnly) ###
-<code>************************* Core functions ****************************/  
-</code>
+************************* Core functions ****************************/  
+
 ### findAgain(findBackwards, aLinksOnly) ###
 
 ### getFoundRange() ###
 
 ### setDocShell(aDocShell) ###
-<code>************************ Helper functions ***************************/  
-</code>
+************************ Helper functions ***************************/  
+
 ### setSelectionModeAndRepaint(toggle) ###
 
 ### collapseSelection() ###

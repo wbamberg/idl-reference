@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIUrlClassifierHashCompleterCallback #
-<code>  
+  
 This interface is implemented by nsIUrlClassifierHashCompleter clients.  
   
-</code>
+
 ## Methods ##
 
 ### completion(hash, table, chunkId) ###
-<code>  
+  
 A complete hash has been found that matches the partial hash.  
 This method may be called 0-n times for a given  
 nsIUrlClassifierCompleter::complete() call.  
@@ -25,7 +25,7 @@ nsIUrlClassifierCompleter::complete() call.
 @param chunkId  
        The database chunk that this hash belongs to.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -51,7 +51,7 @@ nsIUrlClassifierCompleter::complete() call.
 </table>
 
 ### completionFinished(status) ###
-<code>  
+  
 The completion is complete.  This method is called once per  
 nsIUrlClassifierCompleter::complete() call, after all completion()  
 calls are finished.  
@@ -59,7 +59,7 @@ calls are finished.
 @param status  
        NS_OK if the request completed successfully, or an error code.  
   
-</code>
+
 #### Parameters ####
 
 <table>

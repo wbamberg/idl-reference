@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### encrypt(data, dataLen, result) ###
-<code>  
+  
 Encrypt a buffer - callable only from C++.  
   
 @return The length of the data in the output buffer.  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -28,12 +28,12 @@ Encrypt a buffer - callable only from C++.
 </table>
 
 ### decrypt(data, dataLen, result) ###
-<code>  
+  
 Decrypt a buffer - callable only from C++.  
   
 @return The length of the data in the output buffer.  
   
-</code>
+
 #### Returns ####
 
 <table>
@@ -46,29 +46,28 @@ Decrypt a buffer - callable only from C++.
 </table>
 
 ### encryptString(text) ###
-<code>  
+  
 Encrypt nul-terminated string to BASE64 output.  
   
-</code>
+
 ### decryptString(crypt) ###
-<code>  
+  
 Decrypt BASE64 input to nul-terminated string output.  There is  
 no check for embedded nul values in the decrypted output.  
   
-</code>
+
 ### changePassword() ###
-<code>  
+  
 Prompt the user to change the password on the SDR key.  
   
-</code>
+
 ### logout() ###
-<code>  
+  
 Logout of the security device that protects the SDR key.  
   
-</code>
+
 ### logoutAndTeardown() ###
-<code>  
+  
 Logout of the security device that protects the SDR key and tear  
 down authenticated objects.  
   
-</code>

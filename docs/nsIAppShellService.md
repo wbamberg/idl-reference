@@ -12,13 +12,13 @@ layout: default
 ### createTopLevelWindow(aParent, aUrl, aChromeMask, aInitialWidth, aInitialHeight, aOpeningTab) ###
 
 ### createWindowlessBrowser(aIsChrome) ###
-<code>  
+  
 This is the constructor for creating an invisible DocShell.  
 It is used to simulate DOM windows without an actual physical  
 representation.  
 @param aIsChrome Set true if you want to use it for chrome content.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -36,16 +36,16 @@ representation.
 ### destroyHiddenWindow() ###
 
 ### getHiddenWindowAndJSContext(aHiddenDOMWindow, aJSContext) ###
-<code>  
+  
 Return the (singleton) application hidden window as an nsIDOMWindow,  
 and, the corresponding JavaScript context pointer.  This is useful  
 if you'd like to subsequently call OpenDialog on the hidden window.  
 @aHiddenDOMWindow the hidden window QI'd to type nsIDOMWindow  
 @aJSContext       the corresponding JavaScript context  
   
-</code>
+
 ### registerTopLevelWindow(aWindow) ###
-<code>  
+  
 Add a window to the application's registry of windows.  These windows  
 are generally shown in the Windows taskbar, and the application  
 knows it can't quit until it's out of registered windows.  
@@ -53,7 +53,7 @@ knows it can't quit until it's out of registered windows.
 @note When this method is successful, it fires the global notification  
       "xul-window-registered"  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -69,13 +69,13 @@ knows it can't quit until it's out of registered windows.
 </table>
 
 ### unregisterTopLevelWindow(aWindow) ###
-<code>  
+  
 Remove a window from the application's window registry. Note that  
 this method won't automatically attempt to quit the app when  
 the last window is unregistered. For that, see Quit().  
 @param aWindow you see the pattern  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -89,14 +89,14 @@ the last window is unregistered. For that, see Quit().
 </table>
 
 ### startEventLoopLagTracking() ###
-<code>  
+  
 Start/stop tracking lags in the event loop.  
 If the event loop gets unresponsive, a "event-loop-lag" notification  
 is sent. Note that calling `startEventLoopLagTracking` when tracking  
 is already enabled has no effect.  
 @return true if tracking succeeded.  
   
-</code>
+
 #### Returns ####
 
 <table>

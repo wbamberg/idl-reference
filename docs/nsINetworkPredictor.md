@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsINetworkPredictor #
-<code>  
+  
 nsINetworkPredictor - learn about pages users visit, and allow us to take  
                       predictive actions upon future visits.  
                       NOTE: nsINetworkPredictor should only  
                       be used on the main thread.  
   
-</code>
+
 ## Methods ##
 
 ### predict(targetURI, sourceURI, reason, loadContext, verifier) ###
-<code>  
+  
 Start taking predictive actions  
   
 Calling this will cause the predictor to (possibly) start  
@@ -43,7 +43,7 @@ asked to take actions.
   we're predicting the way we expect to. Not necessary (or desired) for  
   normal operation.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -94,7 +94,7 @@ asked to take actions.
 </table>
 
 ### learn(targetURI, sourceURI, reason, loadContext) ###
-<code>  
+  
 Add to our compendium of knowledge  
   
 This adds to our prediction database to make things (hopefully)  
@@ -116,7 +116,7 @@ smarter next time we predict something.
 @param loadContext - The nsILoadContext for the page load that we are  
   learning about.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -159,19 +159,19 @@ smarter next time we predict something.
 </table>
 
 ### reset() ###
-<code>  
+  
 Clear out all our learned knowledge  
   
 This removes everything from our database so that any predictions begun  
 after this completes will start from a blank slate.  
   
-</code>
+
 ### prepareForDnsTest(timestamp, uri) ###
-<code>  
+  
 @deprecated THIS API IS FOR TESTING ONLY. IF YOU DON'T KNOW WHAT IT DOES,  
 DON'T USE IT  
   
-</code>
+
 ## Constants ##
 
 ### PREDICT_LINK ###

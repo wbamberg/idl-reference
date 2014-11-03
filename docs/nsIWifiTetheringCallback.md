@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### wifiTetheringEnabledChange(error) ###
-<code>  
+  
 Callback function used to report status to WifiManager.  
   
 @param error  
        An error message if the operation wasn't successful,  
        or `null` if it was.  
   
-</code>
+
 #### Parameters ####
 
 <table>

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIProfileLock #
-<code>  
+  
 Hold on to a profile lock. Once you release the last reference to this  
 interface, the profile lock is released.  
   
-</code>
+
 ## Methods ##
 
 ### unlock() ###
-<code>  
+  
 Unlock the profile.  
   
-</code>
+
 ## Attributes ##
 
 ### directory ###

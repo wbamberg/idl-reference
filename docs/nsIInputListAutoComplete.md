@@ -10,7 +10,6 @@ layout: default
 ## Methods ##
 
 ### autoCompleteSearch(aResult, aSearchString, aField) ###
-<code>  
+  
 Generate results for a form input autocomplete menu.  
   
-</code>

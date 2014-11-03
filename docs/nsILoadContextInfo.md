@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # nsILoadContextInfo #
-<code>  
+  
 Helper interface to carry informatin about the load context  
 encapsulating an AppID, IsInBrowser and IsPrivite properties.  
 It shall be used where nsILoadContext cannot be used or is not  
 available.  
   
-</code>
+
 ## Attributes ##
 
 ### isPrivate ###

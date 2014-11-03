@@ -6,26 +6,26 @@ layout: default
 </div>
 
 # nsIFeedTextConstruct #
-<code>  
+  
 nsIFeedTextConstructs represent feed text fields that can contain  
 one of text, HTML, or XHTML. Some extension elements also have "type"  
 parameters, and this interface could be used there as well.  
   
-</code>
+
 ## Methods ##
 
 ### plainText() ###
-<code>  
+  
 Returns the text of the text construct, with all markup stripped   
 and all entities decoded. If the type attribute's value is "text",  
 this function returns the value of the text attribute unchanged.  
   
-</code>
+
 ### createDocumentFragment(element) ###
-<code>  
+  
 Return an nsIDocumentFragment containing the text and markup.  
   
-</code>
+
 ## Attributes ##
 
 ### base ###

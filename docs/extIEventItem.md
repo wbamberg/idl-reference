@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # extIEventItem #
-<code>  
+  
 Interface holds information about an event.  
   
-</code>
+
 ## Methods ##
 
 ### preventDefault() ###
-<code>  
+  
 Cancels the event if it is cancelable.  
   
-</code>
+
 ## Attributes ##
 
 ### type ###

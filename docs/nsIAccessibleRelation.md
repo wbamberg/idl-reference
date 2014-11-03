@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIAccessibleRelation #
-<code>  
+  
 This interface gives access to an accessible's set of relations.  
   
-</code>
+
 ## Methods ##
 
 ### getTarget(index) ###
-<code>  
+  
 Returns one accessible relation target.  
 @param index - 0 based index of relation target.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -31,10 +31,10 @@ Returns one accessible relation target.
 </table>
 
 ### getTargets() ###
-<code>  
+  
 Returns multiple accessible relation targets.  
   
-</code>
+
 ## Attributes ##
 
 ### relationType ###

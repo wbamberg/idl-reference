@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMDocument #
-<code>  
+  
 The nsIDOMDocument interface represents the entire HTML or XML document.  
 Conceptually, it is the root of the document tree, and provides the   
 primary access to the document's data.  
@@ -18,7 +18,7 @@ objects.
 For more information on this interface please see   
 http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html  
   
-</code>
+
 ## Methods ##
 
 ### createElement(tagName) ###
@@ -50,12 +50,12 @@ http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html
 ### adoptNode(source) ###
 
 ### createRange() ###
-<code>  
+  
 Create a range  
   
 @see http://html5.org/specs/dom-range.html#dom-document-createrange  
   
-</code>
+
 ### createNodeIterator(root, whatToShow, filter) ###
 
 ### createTreeWalker(root, whatToShow, filter) ###
@@ -63,20 +63,20 @@ Create a range
 ### createEvent(eventType) ###
 
 ### hasFocus() ###
-<code>  
+  
 @see <http://www.whatwg.org/html/#dom-document-hasfocus>  
   
-</code>
+
 ### getElementsByClassName(classes) ###
-<code>  
+  
 Retrieve elements matching all classes listed in a  
 space-separated string.  
   
 @see <http://www.whatwg.org/html/#dom-document-getelementsbyclassname>  
   
-</code>
+
 ### enableStyleSheetsForSet(name) ###
-<code>  
+  
 Calling this method must change the disabled attribute on each StyleSheet  
 object with a title attribute with a length greater than 0 in the  
 styleSheets attribute, so that all those whose title matches the name  
@@ -93,9 +93,9 @@ preferredStyleSheetSet attributes.
   
 @see <http://dev.w3.org/csswg/cssom/#dom-document-enableStyleSheetsForSet>  
   
-</code>
+
 ### elementFromPoint(x, y) ###
-<code>  
+  
 Returns the element from the caller's document at the given point,  
 relative to the upper-left-most point in the (possibly scrolled)  
 window or frame.  
@@ -114,17 +114,17 @@ before calling this method.
   
 @see <http://dev.w3.org/csswg/cssom-view/#dom-document-elementfrompoint>  
   
-</code>
+
 ### releaseCapture() ###
-<code>  
+  
 Release the current mouse capture if it is on an element within this  
 document.  
   
 @see <https://developer.mozilla.org/en/DOM/document.releaseCapture>  
   
-</code>
+
 ### mozSetImageElement(aImageElementId, aImageElement) ###
-<code>  
+  
 Use the given DOM element as the source image of target |-moz-element()|.  
   
 This function introduces a new special ID (called "image element ID"),  
@@ -153,7 +153,7 @@ unregister the image element ID |aImageElementId|.
   
 @see <https://developer.mozilla.org/en/DOM/document.mozSetImageElement>  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -176,15 +176,15 @@ unregister the image element ID |aImageElementId|.
 </table>
 
 ### mozCancelFullScreen() ###
-<code>  
+  
 Causes the document to leave DOM full-screen mode, if it's in  
 full-screen mode, as per the DOM full-screen api.  
   
 @see <https://wiki.mozilla.org/index.php?title=Gecko:FullScreenAPI>  
   
-</code>
+
 ### caretPositionFromPoint(x, y) ###
-<code>  
+  
 Retrieve the location of the caret position (DOM node and character  
 offset within that node), given a point.  
   
@@ -193,7 +193,7 @@ offset within that node), given a point.
 @param y Vertical point at which to determine the caret position, in  
          page coordinates.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -215,19 +215,19 @@ offset within that node), given a point.
 </table>
 
 ### mozExitPointerLock() ###
-<code>  
+  
 Exit pointer is lock if locked, as per the DOM pointer lock api.  
   
 @see <http://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html>  
   
-</code>
+
 ### querySelector(selectors) ###
-<code>  
+  
 Return nodes that match a given CSS selector.  
   
 @see <http://dev.w3.org/2006/webapi/selectors-api/>  
   
-</code>
+
 ### querySelectorAll(selectors) ###
 
 ## Attributes ##

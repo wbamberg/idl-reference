@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsISecurityWarningDialogs #
-<code>  
+  
 Functions that display warnings for transitions between secure  
 and insecure pages, posts to insecure servers etc.  
   
-</code>
+
 ## Methods ##
 
 ### confirmPostToInsecureFromSecure(ctx) ###
-<code>  
+  
  Inform the user: Although the currently displayed  
  page was loaded using a secure connection, and the UI probably  
  currently indicates a secure page,   
@@ -24,7 +24,7 @@ and insecure pages, posts to insecure servers etc.
   
  @return true if the user confirms to submit.  
   
-</code>
+
 #### Parameters ####
 
 <table>

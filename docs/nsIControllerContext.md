@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### init(aCommandTable) ###
-<code>  
+  
  Init the controller, optionally passing a controller  
  command table.  
   
@@ -19,7 +19,7 @@ layout: default
                       which case the controller will create  
                       a new, empty table.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -36,7 +36,7 @@ layout: default
 </table>
 
 ### setCommandContext(aCommandContext) ###
-<code>   
+   
  Set a context on this controller, which is passed  
  to commands to give them some context when they execute.  
   
@@ -45,7 +45,7 @@ layout: default
                        controller, and so needs to outlive it,  
                        or be nulled out.  
   
-</code>
+
 #### Parameters ####
 
 <table>

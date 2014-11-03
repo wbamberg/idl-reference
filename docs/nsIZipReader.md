@@ -10,56 +10,56 @@ layout: default
 ## Methods ##
 
 ### open(zipFile) ###
-<code>  
+  
 Opens a zip file for reading.  
 It is allowed to open with another file,   
 but it needs to be closed first with close().  
   
-</code>
+
 ### openInner(zipReader, zipEntry) ###
-<code>  
+  
 Opens a zip file inside a zip file for reading.  
   
-</code>
+
 ### close() ###
-<code>  
+  
 Closes a zip reader. Subsequent attempts to extract files or read from  
 its input stream will result in an error.  
   
 Subsequent attempts to access a nsIZipEntry obtained from this zip  
 reader will cause unspecified behavior.  
   
-</code>
+
 ### test(aEntryName) ###
-<code>  
+  
 Tests the integrity of the archive by performing a CRC check   
 on each item expanded into memory.  If an entry is specified  
 the integrity of only that item is tested.  If null (javascript)  
 or EmptyCString() (c++) is passed in the integrity of all items   
 in the archive are tested.    
   
-</code>
+
 ### extract(zipEntry, outFile) ###
-<code>  
+  
 Extracts a zip entry into a local file specified by outFile.  
 The entry must be stored in the zip in either uncompressed or  
 DEFLATE-compressed format for the extraction to be successful.  
 If the entry is a directory, the directory will be extracted  
 non-recursively.  
   
-</code>
+
 ### getEntry(zipEntry) ###
-<code>  
+  
 Returns a nsIZipEntry describing a specified zip entry.  
   
-</code>
+
 ### hasEntry(zipEntry) ###
-<code>  
+  
 Checks whether the zipfile contains an entry specified by entryName.  
   
-</code>
+
 ### findEntries(aPattern) ###
-<code>  
+  
 Returns a string enumerator containing the matching entry names.  
   
 @param aPattern  
@@ -102,7 +102,7 @@ Returns a string enumerator containing the matching entry names.
 @throws NS_ERROR_ILLEGAL_VALUE on many but not all invalid aPattern  
                                values.  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -119,12 +119,12 @@ Returns a string enumerator containing the matching entry names.
 </table>
 
 ### getInputStream(zipEntry) ###
-<code>  
+  
 Returns an input stream containing the contents of the specified zip  
 entry.  
 @param zipEntry the name of the entry to open the stream from  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -138,14 +138,14 @@ entry.
 </table>
 
 ### getInputStreamWithSpec(aJarSpec, zipEntry) ###
-<code>  
+  
 Returns an input stream containing the contents of the specified zip  
 entry. If the entry refers to a directory (ends with '/'), a directory stream   
 is opened, otherwise the contents of the file entry is returned.  
 @param aJarSpec the Spec of the URI for the JAR (only used for directory streams)  
 @param zipEntry the name of the entry to open the stream from  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -165,7 +165,7 @@ is opened, otherwise the contents of the file entry is returned.
 </table>
 
 ### getSigningCert(aEntryName) ###
-<code>  
+  
 Returns an object describing the entity which signed   
 an entry. parseManifest must be called first. If aEntryName is an  
 entry in the jar, getInputStream must be called after parseManifest.  
@@ -173,7 +173,7 @@ If aEntryName is an external file which has meta-information
 stored in the jar, verifyExternalFile (not yet implemented) must   
 be called before getPrincipal.  
   
-</code>
+
 ## Attributes ##
 
 ### file ###

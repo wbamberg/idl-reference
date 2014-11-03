@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIFeedEntry #
-<code>  
+  
 An nsIFeedEntry represents an Atom or RSS entry/item. Summary  
 and/or full-text content may be available, but callers will have to  
 check both.  
   
-</code>
+
 ## Attributes ##
 
 ### summary ###

@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsIWebPageDescriptor #
-<code>  
+  
 The nsIWebPageDescriptor interface allows content being displayed in one  
 window to be loaded into another window without refetching it from the  
 network.  
   
-</code>
+
 ## Methods ##
 
 ### loadPage(aPageDescriptor, aDisplayType) ###
-<code>  
+  
 Tells the object to load the page specified by the page descriptor  
   
 @throws NS_ERROR_FAILURE -   
   
-</code>
+
 ## Attributes ##
 
 ### currentDescriptor ###

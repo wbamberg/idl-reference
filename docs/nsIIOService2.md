@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIIOService2 #
-<code>  
+  
 nsIIOService2 extends nsIIOService  
   
-</code>
+
 ## Methods ##
 
 ### newChannelFromURIWithProxyFlags2(aURI, aProxyURI, aProxyFlags, aLoadingNode, aLoadingPrincipal, aTriggeringPrincipal, aSecurityFlags, aContentPolicyType) ###
-<code>  
+  
 Creates a channel for a given URI.  
   
 @param aURI nsIURI from which to make a channel  
@@ -23,7 +23,7 @@ Creates a channel for a given URI.
        when resolving proxies for this new channel  
 @return reference to the new nsIChannel object  
   
-</code>
+
 #### Parameters ####
 
 <table>
@@ -62,7 +62,7 @@ Creates a channel for a given URI.
 </table>
 
 ### newChannelFromURIWithProxyFlags(aURI, aProxyURI, aProxyFlags) ###
-<code>  
+  
 Creates a channel for a given URI.  
   
 @param aURI nsIURI from which to make a channel  
@@ -72,7 +72,7 @@ Creates a channel for a given URI.
        when resolving proxies for this new channel  
 @return reference to the new nsIChannel object  
   
-</code>
+
 #### Parameters ####
 
 <table>
