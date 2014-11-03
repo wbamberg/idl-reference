@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### load(url) ###
-  
+<code>  
 Load an XML document.  
   
 @param  url URL to an XML document.  
 @return     True if load successfull.  
   
-
+</code>
 #### Parameters ####
 
 <table>

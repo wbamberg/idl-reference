@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIHandlerApp #
-  
+<code>  
 nsIHandlerApp represents an external application that can handle content  
 of some sort (either a MIME type or a protocol).  
   
@@ -14,11 +14,11 @@ FIXME: now that we've made nsIWebHandlerApp inherit from nsIHandlerApp,
 we should also try to make nsIWebContentHandlerInfo inherit from or possibly  
 be replaced by nsIWebHandlerApp (bug 394710).  
   
-
+</code>
 ## Methods ##
 
 ### equals(aHandlerApp) ###
-  
+<code>  
 Whether or not the given handler app is logically equivalent to the  
 invokant (i.e. they represent the same app).  
   
@@ -30,7 +30,7 @@ the same.
   
 @returns true if the two are logically equivalent, false otherwise  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -55,7 +55,7 @@ the same.
 </table>
 
 ### launchWithURI(aURI, aWindowContext) ###
-  
+<code>  
 Launches the application with the specified URI.  
   
 @param aURI  
@@ -73,7 +73,7 @@ Launches the application with the specified URI.
        have a more comprehensive strategy which could include handing  
        off to the system default browser (bug 394479).  
   
-
+</code>
 #### Parameters ####
 
 <table>

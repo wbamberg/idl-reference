@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getContentShellById(ID) ###
-  
+<code>  
 The content shell specified by the supplied id.  
   
 Note that this is a docshell tree item and therefore can not be assured of  
@@ -18,13 +18,13 @@ what object it is.  It could be an editor, a docshell, or a browser object.
 Or down the road any other object that supports being a DocShellTreeItem  
 Query accordingly to determine the capabilities.  
   
-
+</code>
 ### addChildWindow(aChild) ###
-  
+<code>  
 Tell this window that it has picked up a child XUL window  
 @param aChild the child window being added  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -38,11 +38,11 @@ Tell this window that it has picked up a child XUL window
 </table>
 
 ### removeChildWindow(aChild) ###
-  
+<code>  
 Tell this window that it has lost a child XUL window  
 @param aChild the child window being removed  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -56,7 +56,7 @@ Tell this window that it has lost a child XUL window
 </table>
 
 ### center(aRelative, aScreen, aAlert) ###
-  
+<code>  
 Move the window to a centered position.  
 @param aRelative If not null, the window relative to which the window is  
                  moved. See aScreen parameter for details.  
@@ -70,7 +70,7 @@ Move the window to a centered position.
 @param aAlert    PR_TRUE to move the window to an alert position,  
                  generally centered horizontally and 1/3 down from the top.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -104,26 +104,26 @@ Move the window to a centered position.
 </table>
 
 ### showModal() ###
-  
+<code>  
 Shows the window as a modal window. That is, ensures that it is visible  
 and runs a local event loop, exiting only once the window has been closed.  
   
-
+</code>
 ### assumeChromeFlagsAreFrozen() ###
-  
+<code>  
 Begin assuming |chromeFlags| don't change hereafter, and assert  
 if they do change.  The state change is one-way and idempotent.  
   
-
+</code>
 ### createNewWindow(aChromeFlags, aOpeningTab) ###
-  
+<code>  
 Create a new window.  
 @param aChromeFlags see nsIWebBrowserChrome  
 @param aOpeningTab the TabParent that requested this new window be opened.  
                    Can be left null.  
 @return the newly minted window  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -155,13 +155,13 @@ Create a new window.
 </table>
 
 ### applyChromeFlags() ###
-  
+<code>  
 Back-door method to force application of chrome flags at a particular  
 time.  Do NOT call this unless you know what you're doing!  In particular,  
 calling this when this XUL window doesn't yet have a document in its  
 docshell could cause problems.  
   
-
+</code>
 ## Attributes ##
 
 ### docShell ###

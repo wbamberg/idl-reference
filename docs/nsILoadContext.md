@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsILoadContext #
-  
+<code>  
 An nsILoadContext represents the context of a load.  This interface  
 can be queried for various information about where the load is  
 happening.  
   
-
+</code>
 ## Methods ##
 
 ### isAppOfType(appType) ###
-  
+<code>  
 Check whether the load is happening in a particular type of application.  
   
 @param an application type.  For now, the constants to be passed here are  
@@ -24,7 +24,7 @@ Check whether the load is happening in a particular type of application.
 @return whether there is some ancestor of the associatedWindow that is of  
         the given app type.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -51,15 +51,15 @@ Check whether the load is happening in a particular type of application.
 </table>
 
 ### SetPrivateBrowsing(aInPrivateBrowsing) ###
-  
+<code>  
 Set the private browsing state of the load context, meant to be used internally.  
   
-
+</code>
 ### SetRemoteTabs(aUseRemoteTabs) ###
-  
+<code>  
 Set the remote tabs state of the load context, meant to be used internally.  
   
-
+</code>
 ## Attributes ##
 
 ### associatedWindow ###

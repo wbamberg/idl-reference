@@ -10,18 +10,18 @@ layout: default
 ## Methods ##
 
 ### createHiddenWindow() ###
-  
+<code>  
 Create the hidden window.  
   
-
+</code>
 ### destroyHiddenWindow() ###
-  
+<code>  
 Destroys the hidden window. This will have no effect if the hidden window  
 has not yet been created.  
   
-
+</code>
 ### run() ###
-  
+<code>  
 Runs an application event loop: normally the main event pump which  
 defines the lifetime of the application. If there are no windows open  
 and no outstanding calls to enterLastWindowClosingSurvivalArea this  
@@ -41,7 +41,7 @@ method will exit immediately.
             restarted without necessarily using the same profile because  
             quit was called with the eRestartNotSameProfile flag.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -57,23 +57,23 @@ method will exit immediately.
 </table>
 
 ### enterLastWindowClosingSurvivalArea() ###
-  
+<code>  
 There are situations where all application windows will be  
 closed but we don't want to take this as a signal to quit the  
 app. Bracket the code where the last window could close with  
 these.  
   
-
+</code>
 ### exitLastWindowClosingSurvivalArea() ###
 
 ### restartInSafeMode(aQuitMode) ###
-  
+<code>  
 Restart the application in safe mode  
 @param aQuitMode  
        This parameter modifies how the app is shutdown.  
 @see nsIAppStartup::quit  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -88,13 +88,13 @@ Restart the application in safe mode
 </table>
 
 ### trackStartupCrashBegin() ###
-  
+<code>  
 If the last startup crashed then increment a counter.  
 Set a flag so on next startup we can detect whether TrackStartupCrashEnd  
 was called (and therefore the application crashed).  
 @return whether safe mode is necessary  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -107,20 +107,20 @@ was called (and therefore the application crashed).
 </table>
 
 ### trackStartupCrashEnd() ###
-  
+<code>  
 We have succesfully started without crashing. Clear flags that were  
 tracking past crashes.  
   
-
+</code>
 ### quit(aMode) ###
-  
+<code>  
 Exit the event loop, and shut down the app.  
   
 @param aMode  
        This parameter modifies how the app is shutdown, and it is  
        constructed from the constants defined above.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -135,18 +135,18 @@ Exit the event loop, and shut down the app.
 </table>
 
 ### doneStartingUp() ###
-  
+<code>  
 Mark the startup as completed.  
   
 Called at the end of startup by nsAppRunner.  
   
-
+</code>
 ### getStartupInfo() ###
-   
+<code>   
 Returns an object with main, process, firstPaint, sessionRestored properties.  
 Properties may not be available depending on platform or application  
   
-
+</code>
 ## Attributes ##
 
 ### automaticSafeModeNecessary ###

@@ -6,8 +6,9 @@ layout: default
 </div>
 
 # nsILocalFile #
-  
+<code>  
 An empty interface to provide backwards compatibility for existing code.  
   
 @see nsIFile  
   
+</code>

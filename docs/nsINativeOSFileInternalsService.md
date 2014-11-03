@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsINativeOSFileInternalsService #
-  
+<code>  
 A service providing native implementations of some of the features  
 of OS.File.  
   
-
+</code>
 ## Methods ##
 
 ### read(path, options, onSuccess, onError) ###
-  
+<code>  
 Implementation of OS.File.read  
   
 @param path The absolute path to the file to read.  
@@ -28,7 +28,7 @@ Implementation of OS.File.read
 @param onSuccess The success callback.  
 @param onError The error callback.  
   
-
+</code>
 #### Parameters ####
 
 <table>

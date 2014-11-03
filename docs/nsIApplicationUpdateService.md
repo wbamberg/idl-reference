@@ -6,29 +6,29 @@ layout: default
 </div>
 
 # nsIApplicationUpdateService #
-  
+<code>  
 An interface describing a global application service that handles performing  
 background update checks and provides utilities for selecting and  
 downloading update patches.  
   
-
+</code>
 ## Methods ##
 
 ### checkForBackgroundUpdates() ###
-  
+<code>  
 Checks for available updates in the background using the listener provided  
 by the application update service for background checks.  
   
-
+</code>
 ### selectUpdate(updates, updateCount) ###
-  
+<code>  
 Selects the best update to install from a list of available updates.  
 @param   updates  
          An array of updates that are available  
 @param   updateCount  
          The length of the |updates| array  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -48,7 +48,7 @@ Selects the best update to install from a list of available updates.
 </table>
 
 ### addDownloadListener(listener) ###
-  
+<code>  
 Adds a listener that receives progress and state information about the  
 update that is currently being downloaded, e.g. to update a user  
 interface.  
@@ -57,7 +57,7 @@ interface.
          nsIProgressEventSink that is to be notified of state and  
          progress information as the update is downloaded.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -73,13 +73,13 @@ interface.
 </table>
 
 ### removeDownloadListener(listener) ###
-  
+<code>  
 Removes a listener that is receiving progress and state information  
 about the update that is currently being downloaded.  
 @param   listener  
          The listener object to remove.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -93,18 +93,18 @@ about the update that is currently being downloaded.
 </table>
 
 ### downloadUpdate(update, background) ###
+<code>  
   
   
-  
-
+</code>
 ### applyOsUpdate(update) ###
-  
+<code>  
 Apply the OS update which has been downloaded and staged as applied.  
 @param   update   
          The update has been downloaded and staged as applied.  
 @throws  if the update object is not an OS update.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -119,11 +119,11 @@ Apply the OS update which has been downloaded and staged as applied.
 </table>
 
 ### getUpdatesDirectory() ###
-  
+<code>  
 Get the Active Updates directory  
 @returns An nsIFile for the active updates directory.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -136,10 +136,10 @@ Get the Active Updates directory
 </table>
 
 ### pauseDownload() ###
-  
+<code>  
 Pauses the active update download process  
   
-
+</code>
 ## Attributes ##
 
 ### backgroundChecker ###

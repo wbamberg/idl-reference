@@ -10,10 +10,10 @@ layout: default
 ## Methods ##
 
 ### isSelected() ###
-  
+<code>  
 Return a boolean value indicating whether this cell is selected.  
   
-
+</code>
 ## Attributes ##
 
 ### table ###

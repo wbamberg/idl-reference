@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### scriptAvailable(aResult, aElement, aIsInline, aURI, aLineNo) ###
-  
+<code>  
 The script is available for evaluation. For inline scripts, this  
 method will be called synchronously. For externally loaded scripts,  
 this method will be called when the load completes.  
@@ -25,7 +25,7 @@ this method will be called when the load completes.
 @param aLineNo At what line does the script appear (generally 1  
        if it is a loaded script).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -67,7 +67,7 @@ this method will be called when the load completes.
 </table>
 
 ### scriptEvaluated(aResult, aElement, aIsInline) ###
-  
+<code>  
 The script has been evaluated.  
   
 @param aResult A result code representing the success or failure of  
@@ -75,7 +75,7 @@ The script has been evaluated.
 @param aElement The element being processed.  
 @param aIsInline Is this an inline script or externally loaded?  
   
-
+</code>
 #### Parameters ####
 
 <table>

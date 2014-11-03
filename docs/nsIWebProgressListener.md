@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIWebProgressListener #
-  
+<code>  
 The nsIWebProgressListener interface is implemented by clients wishing to  
 listen in on the progress associated with the loading of asynchronous  
 requests in the context of a nsIWebProgress instance as well as any child  
 nsIWebProgress instances.  nsIWebProgress.idl describes the parent-child  
 relationship of nsIWebProgress instances.  
   
-
+</code>
 ## Methods ##
 
 ### onStateChange(aWebProgress, aRequest, aStateFlags, aStatus) ###
-  
+<code>  
 Notification indicating the state has changed for one of the requests  
 associated with aWebProgress.  
   
@@ -39,7 +39,7 @@ associated with aWebProgress.
        In such cases, the request itself should be queried for extended  
        error information (e.g., for HTTP requests see nsIHttpChannel).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -80,7 +80,7 @@ associated with aWebProgress.
 </table>
 
 ### onProgressChange(aWebProgress, aRequest, aCurSelfProgress, aMaxSelfProgress, aCurTotalProgress, aMaxTotalProgress) ###
-  
+<code>  
 Notification that the progress has changed for one of the requests  
 associated with aWebProgress.  Progress totals are reset to zero when all  
 requests in aWebProgress complete (corresponding to onStateChange being  
@@ -107,7 +107,7 @@ NOTE: If the object also implements nsIWebProgressListener2 and the caller
 knows about that interface, this function will not be called. Instead,  
 nsIWebProgressListener2::onProgressChange64 will be called.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -151,7 +151,7 @@ nsIWebProgressListener2::onProgressChange64 will be called.
 </table>
 
 ### onLocationChange(aWebProgress, aRequest, aLocation, aFlags) ###
-  
+<code>  
 Called when the location of the window being watched changes.  This is not  
 when a load is requested, but rather once it is verified that the load is  
 going to occur in the given window.  For instance, a load that starts in a  
@@ -169,7 +169,7 @@ this new page here.
        This is a value which explains the situation or the reason why  
        the location has changed.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -202,7 +202,7 @@ this new page here.
 </table>
 
 ### onStatusChange(aWebProgress, aRequest, aStatus, aMessage) ###
-  
+<code>  
 Notification that the status of a request has changed.  The status message  
 is intended to be displayed to the user (e.g., in the status bar of the  
 browser).  
@@ -219,7 +219,7 @@ browser).
 @param aMessage  
        Localized text corresponding to aStatus.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -254,7 +254,7 @@ browser).
 </table>
 
 ### onSecurityChange(aWebProgress, aRequest, aState) ###
-  
+<code>  
 Notification called for security progress.  This method will be called on  
 security transitions (eg HTTP -> HTTPS, HTTPS -> HTTP, FOO -> HTTPS) and  
 after document load completion.  It might also be called if an error  
@@ -272,7 +272,7 @@ occurs during network loading.
 NOTE: These notifications will only occur if a security package is  
 installed.  
   
-
+</code>
 #### Parameters ####
 
 <table>

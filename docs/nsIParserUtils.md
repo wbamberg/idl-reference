@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIParserUtils #
-  
+<code>  
 Non-Web HTML parser functionality to Firefox extensions and XULRunner apps.   
 Don't use this from within Gecko--use nsContentUtils, nsTreeSanitizer, etc.  
 directly instead.  
   
-
+</code>
 ## Methods ##
 
 ### sanitize(src, flags) ###
-  
+<code>  
 Parses a string into an HTML document, sanitizes the document and   
 returns the result serialized to a string.  
   
@@ -48,7 +48,7 @@ may still be XSS dangerous if loaded into a non-Gecko Web engine!
            required to use the same string for the return value.)  
 @param flags sanitization option flags defined above  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -69,7 +69,7 @@ may still be XSS dangerous if loaded into a non-Gecko Web engine!
 </table>
 
 ### convertToPlainText(src, flags, wrapCol) ###
-  
+<code>  
 Convert HTML to plain text.  
   
 @param src the HTML source to parse (C++ callers are allowed but not  
@@ -77,7 +77,7 @@ Convert HTML to plain text.
 @param flags conversion option flags defined in nsIDocumentEncoder  
 @param wrapCol number of characters per line; 0 for no auto-wrapping  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -104,7 +104,7 @@ Convert HTML to plain text.
 </table>
 
 ### parseFragment(fragment, flags, isXML, baseURI, element) ###
-  
+<code>  
 Parses markup into a sanitized document fragment.  
   
 @param fragment the input markup  
@@ -113,7 +113,7 @@ Parses markup into a sanitized document fragment.
 @param baseURI the base URL for this fragment  
 @param element the context node for the fragment parsing algorithm  
   
-
+</code>
 #### Parameters ####
 
 <table>

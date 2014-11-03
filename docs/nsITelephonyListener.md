@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### callStateChanged(clientId, callIndex, callState, number, numberPresentation, name, namePresentation, isOutgoing, isEmergency, isConference, isSwitchable, isMergeable) ###
-  
+<code>  
 Notified when a telephony call changes state.  
   
 @param clientId  
@@ -42,7 +42,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 @param isMergeable  
        Indicates whether this call be be added into a conference.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -126,7 +126,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 </table>
 
 ### conferenceCallStateChanged(callState) ###
-  
+<code>  
 Called when participants of a conference call have been updated, and the  
 conference call state changes.  
   
@@ -135,7 +135,7 @@ conference call state changes.
        nsITelephonyService::CALL_STATE_HELD,  
        nsITelephonyService::CALL_STATE_CONNECTED.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -151,13 +151,13 @@ conference call state changes.
 </table>
 
 ### enumerateCallStateComplete() ###
-  
+<code>  
 Called when enumeration asked by nsITelephonyService::enumerateCalls  
 is completed.  
   
-
+</code>
 ### enumerateCallState(clientId, callIndex, callState, number, numberPresentation, name, namePresentation, isOutgoing, isEmergency, isConference, isSwitchable, isMergeable) ###
-  
+<code>  
 Called when nsITelephonyService is asked to enumerate the current  
 telephony call state (nsITelephonyService::enumerateCalls). This is  
 called once per call that is currently managed by the RIL.  
@@ -189,7 +189,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 @param isMergeable  
        Indicates whether this call be be added into a conference.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -267,7 +267,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 </table>
 
 ### supplementaryServiceNotification(clientId, callIndex, notification) ###
-  
+<code>  
 Notify when RIL receives supplementary service notification.  
   
 @param clientId  
@@ -277,7 +277,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 @param notification  
        One of the nsITelephonyService::NOTIFICATION_* values.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -303,7 +303,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 </table>
 
 ### notifyError(clientId, callIndex, error) ###
-  
+<code>  
 Called when RIL error occurs.  
   
 @param clientId  
@@ -313,7 +313,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 @param error  
        Error from RIL.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -339,7 +339,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 </table>
 
 ### notifyCdmaCallWaiting(clientId, number, numberPresentation, name, namePresentation) ###
-  
+<code>  
 Called when a waiting call comes in CDMA networks.  
   
 @param clientId  
@@ -355,7 +355,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
        Presentation of the call name.  
        One of the nsITelephonyProvider::CALL_PRESENTATION_* values.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -395,7 +395,7 @@ Indicate the RIL client, 0 ~ (number of client - 1).
 </table>
 
 ### notifyConferenceError(name, message) ###
-  
+<code>  
 Called when RIL error occurs to creating or separating a conference call.  
   
 @param name  
@@ -403,7 +403,7 @@ Called when RIL error occurs to creating or separating a conference call.
 @param message  
        Detailed error message from RIL.  
   
-
+</code>
 #### Parameters ####
 
 <table>

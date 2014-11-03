@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIStandardURL #
-  
+<code>  
 nsIStandardURL defines the interface to an URL with the standard  
 file path format common to protocols like http, ftp, and file.  
 It supports initialization from a relative path and provides  
 some customization on how URLs are normalized.  
   
-
+</code>
 ## Methods ##
 
 ### init(aUrlType, aDefaultPort, aSpec, aOriginCharset, aBaseURI) ###
-  
+<code>  
 Initialize a standard URL.  
   
 @param aUrlType       - one of the URLTYPE_ flags listed above.  
@@ -36,7 +36,7 @@ Initialize a standard URL.
                         otherwise, aSpec will be resolved relative  
                         to aBaseURI.  
   
-
+</code>
 #### Parameters ####
 
 <table>

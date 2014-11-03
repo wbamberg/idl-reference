@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIAsyncShutdownClient #
-  
+<code>  
 A client for a nsIAsyncShutdownBarrier.  
   
-
+</code>
 ## Methods ##
 
 ### addBlocker(aBlocker, aFileName, aLineNumber, aStack) ###
-  
+<code>  
 Add a blocker.  
   
 After a `blocker` has been added with `addBlocker`, if it is not  
@@ -32,7 +32,7 @@ removed, each  by a call to `removeBlocker`.
 @param aStack Information on the stack that lead to this call. Generally  
 empty when called from C++.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -68,14 +68,14 @@ empty when called from C++.
 </table>
 
 ### removeBlocker(aBlocker) ###
-  
+<code>  
 Remove a blocker.  
   
 @param aBlocker A blocker previously added to this client through  
 `addBlocker`. Noop if the blocker has never been added or has been  
 removed already.  
   
-
+</code>
 #### Parameters ####
 
 <table>

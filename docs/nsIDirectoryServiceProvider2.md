@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIDirectoryServiceProvider2 #
-  
+<code>  
 nsIDirectoryServiceProvider2  
   
 An extension of nsIDirectoryServiceProvider which allows  
 multiple files to be returned for the given key.  
   
-
+</code>
 ## Methods ##
 
 ### getFiles(prop) ###
-  
+<code>  
 getFiles  
   
 Directory Service calls this when it gets a request for  
@@ -29,7 +29,7 @@ a prop and the requested type is nsISimpleEnumerator.
 @returnCode         NS_SUCCESS_AGGREGATE_RESULT if this result should be  
                     aggregated with other "lower" providers.  
   
-
+</code>
 #### Parameters ####
 
 <table>

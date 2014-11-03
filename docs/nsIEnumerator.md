@@ -10,19 +10,20 @@ layout: default
 ## Methods ##
 
 ### first() ###
- First will reset the list. will return NS_FAILED if no items  
+<code> First will reset the list. will return NS_FAILED if no items  
   
-
+</code>
 ### next() ###
- Next will advance the list. will return failed if already at end  
+<code> Next will advance the list. will return failed if already at end  
   
-
+</code>
 ### currentItem() ###
- CurrentItem will return the CurrentItem item it will fail if the   
+<code> CurrentItem will return the CurrentItem item it will fail if the   
  list is empty  
   
-
+</code>
 ### isDone() ###
- return if the collection is at the end.  that is the beginning following   
+<code> return if the collection is at the end.  that is the beginning following   
  a call to Prev and it is the end of the list following a call to next  
   
+</code>

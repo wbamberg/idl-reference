@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### newProxiedChannel2(uri, proxyInfo, proxyResolveFlags, proxyURI, aLoadInfo) ###
- Create a new channel with the given proxyInfo  
+<code> Create a new channel with the given proxyInfo  
   
 @param uri the channel uri  
 @param proxyInfo any proxy information that has already been determined,  
@@ -25,7 +25,7 @@ layout: default
        to an http:// channel but make its proxy determination based on  
        a ws:// uri.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -65,7 +65,7 @@ layout: default
 </table>
 
 ### newProxiedChannel(uri, proxyInfo, proxyResolveFlags, proxyURI) ###
- Create a new channel with the given proxyInfo  
+<code> Create a new channel with the given proxyInfo  
   
 @param uri the channel uri  
 @param proxyInfo any proxy information that has already been determined,  
@@ -80,7 +80,7 @@ layout: default
        to an http:// channel but make its proxy determination based on  
        a ws:// uri.  
   
-
+</code>
 #### Parameters ####
 
 <table>

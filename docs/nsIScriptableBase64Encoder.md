@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIScriptableBase64Encoder #
-  
+<code>  
 nsIScriptableBase64Encoder efficiently encodes the contents  
 of a nsIInputStream to a Base64 string.  This avoids the need  
 to read the entire stream into a buffer, and only then do the  
@@ -15,11 +15,11 @@ Base64 encoding.
  If you already have a buffer full of data, you should use  
  btoa instead!  
   
-
+</code>
 ## Methods ##
 
 ### encodeToCString(stream, length) ###
-  
+<code>  
  These methods take an nsIInputStream and return a narrow or wide  
  string with the contents of the nsIInputStream base64 encoded.  
   
@@ -27,5 +27,5 @@ Base64 encoding.
  a non-blocking stream that will return NS_BASE_STREAM_WOULD_BLOCK.  
  If either of these restrictions are violated we will abort.  
   
-
+</code>
 ### encodeToString(stream, length) ###

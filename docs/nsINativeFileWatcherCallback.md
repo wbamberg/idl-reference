@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsINativeFileWatcherCallback #
-  
+<code>  
 The interface for the callback invoked when a change on a watched  
 resource is detected.  
   
-
+</code>
 ## Methods ##
 
 ### changed(resourcePath, flags) ###
-  
+<code>  
 @param resourcePath  
        The path of the changed resource. If there were too many changes,  
        the string "*" is passed.  
 @param flags Reserved for future uses, not currently used.  
   
-
+</code>
 #### Parameters ####
 
 <table>

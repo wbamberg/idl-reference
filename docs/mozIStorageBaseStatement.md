@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # mozIStorageBaseStatement #
-  
+<code>  
 The base interface for both pure asynchronous storage statements   
 (mozIStorageAsyncStatement) and 'classic' storage statements  
 (mozIStorageStatement) that can be used for both synchronous and asynchronous  
 purposes.  
   
-
+</code>
 ## Methods ##
 
 ### finalize() ###
-  
+<code>  
 Finalizes a statement so you can successfully close a database connection.  
 Once a statement has been finalized it can no longer be used for any  
 purpose.  
@@ -33,9 +33,9 @@ thread; you just need to call finalize after your last call to executeAsync
 involving the statement.  However, you do need to use asyncClose instead of  
 close on the connection if any statements have been used asynchronously.  
   
-
+</code>
 ### bindUTF8StringParameter(aParamIndex, aValue) ###
-  
+<code>  
 Bind the given value at the given numeric index.  
   
 @param aParamIndex  
@@ -47,7 +47,7 @@ Bind the given value at the given numeric index.
        Length of aValue in bytes.  
 @{  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -89,8 +89,8 @@ Bind the given value at the given numeric index.
 ### bindAdoptedBlobParameter(aParamIndex, aValue, aValueSize) ###
 
 ### bindParameters(aParameters) ###
-@}*/  
-  
+<code>@}*/  
+</code><code>  
 Binds the array of parameters to the statement.  When executeAsync is  
 called, all the parameters in aParameters are bound and then executed.  
   
@@ -99,7 +99,7 @@ called, all the parameters in aParameters are bound and then executed.
   
 @note This is only works on statements being used asynchronously.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -113,7 +113,7 @@ called, all the parameters in aParameters are bound and then executed.
 </table>
 
 ### newBindingParamsArray() ###
-  
+<code>  
 Creates a new mozIStorageBindingParamsArray that can be used to bind  
 multiple sets of data to a statement with bindParameters.  
   
@@ -122,7 +122,7 @@ multiple sets of data to a statement with bindParameters.
   
 @note This is only useful for statements being used asynchronously.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -136,7 +136,7 @@ multiple sets of data to a statement with bindParameters.
 </table>
 
 ### executeAsync(aCallback) ###
-  
+<code>  
 Execute a query asynchronously using any currently bound parameters.  This  
 statement can be reused immediately, and reset does not need to be called.  
   
@@ -148,7 +148,7 @@ statement can be reused immediately, and reset does not need to be called.
        completion.  
 @return an object that can be used to cancel the statements execution.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -175,7 +175,7 @@ statement can be reused immediately, and reset does not need to be called.
 </table>
 
 ### escapeStringForLIKE(aValue, aEscapeChar) ###
-  
+<code>  
 Escape a string for SQL LIKE search.  
   
 @note Consumers will have to use same escape char when doing statements  
@@ -190,7 +190,7 @@ Escape a string for SQL LIKE search.
         For example, we will convert "foo/bar_baz%20cheese"   
         into "foo//bar/_baz/%20cheese" (if the escape char is '/').  
   
-
+</code>
 #### Parameters ####
 
 <table>

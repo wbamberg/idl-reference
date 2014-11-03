@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIEncodedChannel #
-  
+<code>  
 A channel interface which allows special handling of encoded content  
   
-
+</code>
 ## Methods ##
 
 ### doApplyContentConversions(aNextListener, aNewNextListener, aCtxt) ###
-  
+<code>  
 This function will start converters if they are available.  
 aNewNextListener will be nullptr if no converter is available.  
   
-
+</code>
 ## Attributes ##
 
 ### contentEncodings ###

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### addURI(aURI, aRedirect, aToplevel, aReferrer) ###
-  
+<code>  
 Add a URI to global history  
   
 @param aURI      the URI of the page  
@@ -25,7 +25,7 @@ Add a URI to global history
        these schemes and others, e.g. mailbox: for the main URI and the  
        referrer.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -59,13 +59,13 @@ Add a URI to global history
 </table>
 
 ### isVisited(aURI) ###
-  
+<code>  
 Checks to see whether the given URI is in history.  
   
 @param aURI the uri to the page  
 @return true if a URI has been visited  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -90,14 +90,14 @@ Checks to see whether the given URI is in history.
 </table>
 
 ### setPageTitle(aURI, aTitle) ###
-  
+<code>  
 Set the page title for the given uri. URIs that are not already in  
 global history will not be added.  
   
 @param aURI    the URI for which to set to the title  
 @param aTitle  the page title  
   
-
+</code>
 #### Parameters ####
 
 <table>

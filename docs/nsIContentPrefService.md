@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIContentPrefService #
-  
+<code>  
 @deprecated Please use nsIContentPrefService2 instead.  
   
-
+</code>
 ## Methods ##
 
 ### getPref(aGroup, aName, aPrivacyContext, aCallback) ###
-  
+<code>  
 Get a pref.  
   
 Besides the regular string, integer, boolean, etc. values, this method  
@@ -42,7 +42,7 @@ We have a whitelist of values that can be read in such a way.
 @throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -95,7 +95,7 @@ We have a whitelist of values that can be read in such a way.
 </table>
 
 ### setPref(aGroup, aName, aValue, aPrivacyContext) ###
-  
+<code>  
 Set a pref.  
   
 This method can be called from content processes in electrolysis builds.  
@@ -115,7 +115,7 @@ We have a whitelist of values that can be set in such a way.
 @throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -155,7 +155,7 @@ We have a whitelist of values that can be set in such a way.
 </table>
 
 ### hasPref(aGroup, aName, aContext) ###
-  
+<code>  
 Check whether or not a pref exists.  
   
 @param    aGroup      the group for which to check for the pref, as an nsIURI  
@@ -171,7 +171,7 @@ Check whether or not a pref exists.
 @throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -205,7 +205,7 @@ Check whether or not a pref exists.
 </table>
 
 ### hasCachedPref(aGroup, aName, aContext) ###
-  
+<code>  
 Check whether or not the value of a pref (or its non-existance) is cached.  
   
 @param    aGroup      the group for which to check for the pref, as an nsIURI  
@@ -221,7 +221,7 @@ Check whether or not the value of a pref (or its non-existance) is cached.
 @throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -255,7 +255,7 @@ Check whether or not the value of a pref (or its non-existance) is cached.
 </table>
 
 ### removePref(aGroup, aName, aContext) ###
-  
+<code>  
 Remove a pref.  
   
 @param    aGroup      the group for which to remove the pref, as an nsIURI  
@@ -271,7 +271,7 @@ Remove a pref.
 @throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -305,7 +305,7 @@ Remove a pref.
 </table>
 
 ### removeGroupedPrefs(aContext) ###
-  
+<code>  
 Remove all grouped prefs.  Useful for removing references to the sites  
 the user has visited when the user clears their private data.  
   
@@ -315,7 +315,7 @@ the user has visited when the user clears their private data.
                       in permanent storage), obtained from a relevant  
                       window or channel.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -332,7 +332,7 @@ the user has visited when the user clears their private data.
 </table>
 
 ### removePrefsByName(aName, aContext) ###
-  
+<code>  
 Remove all prefs with the given name.  
   
 @param    aName        the setting name for which to remove prefs  
@@ -343,7 +343,7 @@ Remove all prefs with the given name.
                        window or channel.  
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -367,7 +367,7 @@ Remove all prefs with the given name.
 </table>
 
 ### getPrefs(aGroup, aContext) ###
-  
+<code>  
 Get the prefs that apply to the given site.  
   
 @param    aGroup      the group for which to retrieve prefs, as an nsIURI  
@@ -383,7 +383,7 @@ Get the prefs that apply to the given site.
 @returns  a property bag of prefs  
 @throws   NS_ERROR_ILLEGAL_VALUE if aGroup is not a string, nsIURI, or null  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -421,7 +421,7 @@ Get the prefs that apply to the given site.
 </table>
 
 ### getPrefsByName(aName, aContext) ###
-  
+<code>  
 Get the prefs with the given name.  
   
 @param    aName        the setting name for which to retrieve prefs  
@@ -434,7 +434,7 @@ Get the prefs with the given name.
 @returns  a property bag of prefs  
 @throws   NS_ERROR_ILLEGAL_VALUE if aName is null or an empty string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -469,14 +469,14 @@ Get the prefs with the given name.
 </table>
 
 ### addObserver(aName, aObserver) ###
-  
+<code>  
 Add an observer.  
   
 @param    aName       the setting to observe, or null to add  
                       a generic observer that observes all settings  
 @param    aObserver   the observer to add  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -497,14 +497,14 @@ Add an observer.
 </table>
 
 ### removeObserver(aName, aObserver) ###
-  
+<code>  
 Remove an observer.  
   
 @param    aName       the setting being observed, or null to remove  
                       a generic observer that observes all settings  
 @param    aObserver   the observer to remove  
   
-
+</code>
 #### Parameters ####
 
 <table>

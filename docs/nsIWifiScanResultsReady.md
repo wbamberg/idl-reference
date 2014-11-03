@@ -10,11 +10,12 @@ layout: default
 ## Methods ##
 
 ### onready(count, results) ###
-  
+<code>  
 Callback with list of networks.  
   
-
+</code>
 ### onfailure() ###
-  
+<code>  
 Callback if scanning for networks failed after 3 retry attempts.  
   
+</code>

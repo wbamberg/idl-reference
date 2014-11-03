@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIObserver #
-  
+<code>  
 This interface is implemented by an object that wants  
 to observe an event corresponding to a topic.  
   
-
+</code>
 ## Methods ##
 
 ### observe(aSubject, aTopic, aData) ###
-  
+<code>  
 Observe will be called when there is a notification for the  
 topic |aTopic|.  This assumes that the object implementing  
 this interface has been registered with an observer service  
@@ -31,7 +31,7 @@ notifications in the implemention of observe.
 @param aData    : Notification specific wide string.  
                    subject event.  
   
-
+</code>
 #### Parameters ####
 
 <table>

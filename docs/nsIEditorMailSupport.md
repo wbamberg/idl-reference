@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### pasteAsQuotation(aSelectionType) ###
- Paste the text in the OS clipboard at the cursor position,  
+<code> Paste the text in the OS clipboard at the cursor position,  
 as a quotation (whose representation is dependant on the editor type),  
 replacing the selected text (if any).  
 @param aSelectionType Text or html?  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -29,13 +29,13 @@ replacing the selected text (if any).
 </table>
 
 ### insertAsQuotation(aQuotedText) ###
- Insert a string as quoted text  
+<code> Insert a string as quoted text  
 (whose representation is dependant on the editor type),  
 replacing the selected text (if any).  
 @param aQuotedText  The actual text to be quoted  
 @return             The node which was inserted  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -60,7 +60,7 @@ replacing the selected text (if any).
 </table>
 
 ### insertTextWithQuotations(aStringToInsert) ###
-  
+<code>  
 Inserts a plaintext string at the current location,  
 with special processing for lines beginning with ">",  
 which will be treated as mail quotes and inserted  
@@ -70,7 +70,7 @@ and the insertion takes place at the resulting collapsed selection.
   
 @param aString   the string to be inserted  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -84,13 +84,13 @@ and the insertion takes place at the resulting collapsed selection.
 </table>
 
 ### pasteAsCitedQuotation(aCitation, aSelectionType) ###
- Paste a string as quoted text,  
+<code> Paste a string as quoted text,  
 whose representation is dependant on the editor type,  
 replacing the selected text (if any)  
 @param aCitation    The "mid" URL of the source message  
 @param aSelectionType Text or html?  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -110,7 +110,7 @@ replacing the selected text (if any)
 </table>
 
 ### insertAsCitedQuotation(aQuotedText, aCitation, aInsertHTML) ###
- Insert a string as quoted text  
+<code> Insert a string as quoted text  
 (whose representation is dependant on the editor type),  
 replacing the selected text (if any),  
 including, if possible, a "cite" attribute.  
@@ -119,7 +119,7 @@ including, if possible, a "cite" attribute.
 @param aInsertHTML  Insert as html?  (vs plaintext)  
 @return             The node which was inserted  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -156,11 +156,11 @@ including, if possible, a "cite" attribute.
 </table>
 
 ### rewrap(aRespectNewlines) ###
-  
+<code>  
 Rewrap the selected part of the document, re-quoting if necessary.  
 @param aRespectNewlines  Try to maintain newlines in the original?  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -174,11 +174,12 @@ Rewrap the selected part of the document, re-quoting if necessary.
 </table>
 
 ### stripCites() ###
-  
+<code>  
 Strip any citations in the selected part of the document.  
   
-
+</code>
 ### getEmbeddedObjects() ###
-  
+<code>  
 Get a list of IMG and OBJECT tags in the current document.  
   
+</code>

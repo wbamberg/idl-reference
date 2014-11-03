@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # extIPreference #
-  
+<code>  
 Interface for accessing a single preference. The data is not cached.  
 All reads access the current state of the preference.  
   
-
+</code>
 ## Methods ##
 
 ### reset() ###
-  
+<code>  
 Resets a preference back to its default values.  
   
-
+</code>
 ## Attributes ##
 
 ### name ###

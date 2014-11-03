@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIContentDispatchChooser #
-  
+<code>  
 This is used to ask a user what they would like to do with a given piece of  
 content.  
   
-
+</code>
 ## Methods ##
 
 ### ask(aHandler, aWindowContext, aURI, aReason) ###
-  
+<code>  
 Asks the user what to do with the content.  
   
 @param aHander  
@@ -30,7 +30,7 @@ Asks the user what to do with the content.
 @param aReason  
        The reason why we are asking (see above).  
   
-
+</code>
 #### Parameters ####
 
 <table>

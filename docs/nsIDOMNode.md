@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMNode #
-  
+<code>  
 The nsIDOMNode interface is the primary datatype for the entire   
 Document Object Model.  
 It represents a single node in the document tree.  
@@ -14,7 +14,7 @@ It represents a single node in the document tree.
 For more information on this interface please see   
 http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html  
   
-
+</code>
 ## Methods ##
 
 ### insertBefore(newChild, refChild) ###

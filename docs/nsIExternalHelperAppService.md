@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIExternalHelperAppService #
-  
+<code>  
 The external helper app service is used for finding and launching  
 platform specific external applications for a given mime content type.  
   
-
+</code>
 ## Methods ##
 
 ### doContent(aMimeContentType, aRequest, aContentContext, aForceSave, aWindowContext) ###
-  
+<code>  
 Binds an external helper application to a stream listener. The caller  
 should pump data into the returned stream listener. When the OnStopRequest  
 is issued, the stream listener implementation will launch the helper app  
@@ -31,7 +31,7 @@ with this data.
  in which case dialogs will be parented to aContentContext.  
 @return A nsIStreamListener which the caller should pump the data into.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -85,8 +85,9 @@ with this data.
 </table>
 
 ### applyDecodingForExtension(aExtension, aEncodingType) ###
-  
+<code>  
 Returns true if data from a URL with this extension combination  
 is to be decoded from aEncodingType prior to saving or passing  
 off to helper apps, false otherwise.  
   
+</code>

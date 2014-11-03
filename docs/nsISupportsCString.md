@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsCString #
-  
+<code>  
 Scriptable storage for ASCII strings  
   
-
+</code>
 ## Methods ##
 
 ### toString() ###

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getPublicSuffix(aURI) ###
-  
+<code>  
 Returns the public suffix of a URI. A public suffix is the highest-level domain  
 under which individual domains may be registered; it may therefore contain one  
 or more dots. For example, the public suffix for "www.bbc.co.uk" is "co.uk",  
@@ -34,7 +34,7 @@ In the case of nested URIs, the innermost URI will be used.
         if the host is a numeric IPv4 or IPv6 address (as determined by  
         the success of a call to PR_StringToNetAddr()).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -59,7 +59,7 @@ In the case of nested URIs, the innermost URI will be used.
 </table>
 
 ### getBaseDomain(aURI, aAdditionalParts) ###
-  
+<code>  
 Returns the base domain of a URI; that is, the public suffix with a given  
 number of additional domain name parts. For example, the result of this method  
 for "www.bbc.co.uk", depending on the value of aAdditionalParts parameter, will  
@@ -99,7 +99,7 @@ In the case of nested URIs, the innermost URI will be used.
   
 @see    getPublicSuffix()  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -131,7 +131,7 @@ In the case of nested URIs, the innermost URI will be used.
 </table>
 
 ### getPublicSuffixFromHost(aHost) ###
-  
+<code>  
 NOTE: It is strongly recommended to use getPublicSuffix() above if a suitable  
 nsIURI is available. Only use this method if this is not the case.  
   
@@ -144,7 +144,7 @@ Returns the public suffix of a host string. Otherwise identical to getPublicSuff
   
 @see     getPublicSuffix()  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -161,7 +161,7 @@ Returns the public suffix of a host string. Otherwise identical to getPublicSuff
 </table>
 
 ### getBaseDomainFromHost(aHost, aAdditionalParts) ###
-  
+<code>  
 NOTE: It is strongly recommended to use getBaseDomain() above if a suitable  
 nsIURI is available. Only use this method if this is not the case.  
   
@@ -174,7 +174,7 @@ Returns the base domain of a host string. Otherwise identical to getBaseDomain()
   
 @see     getBaseDomain()  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -191,7 +191,7 @@ Returns the base domain of a host string. Otherwise identical to getBaseDomain()
 </table>
 
 ### getNextSubDomain(aHost) ###
-  
+<code>  
 Returns the parent sub-domain of a host string. If the host is a base  
 domain, it will throw NS_ERROR_INSUFFICIENT_DOMAIN_LEVELS.  
   
@@ -203,7 +203,7 @@ For example: "player.bbc.co.uk" would return "bbc.co.uk" and
                  UTF8 encodings are acceptable as input; normalization will  
                  be performed as specified in getBaseDomain().  
   
-
+</code>
 #### Parameters ####
 
 <table>

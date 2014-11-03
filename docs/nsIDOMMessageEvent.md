@@ -6,23 +6,23 @@ layout: default
 </div>
 
 # nsIDOMMessageEvent #
-  
+<code>  
 The nsIDOMMessageEvent interface is used for server-sent events and for  
 cross-domain messaging.  
   
 For more information on this interface, please see  
 http://www.whatwg.org/specs/web-apps/current-work/#messageevent  
   
-
+</code>
 ## Methods ##
 
 ### initMessageEvent(aType, aCanBubble, aCancelable, aData, aOrigin, aLastEventId, aSource) ###
-  
+<code>  
 Initializes this event with the given data, in a manner analogous to  
 the similarly-named method on the nsIDOMEvent interface, also setting the  
 data, origin, source, and lastEventId attributes of this appropriately.  
   
-
+</code>
 ## Attributes ##
 
 ### data ###

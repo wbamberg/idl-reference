@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsICachingChannel #
-  
+<code>  
 A channel may optionally implement this interface to allow clients  
 to affect its behavior with respect to how it uses the cache service.  
   
@@ -16,7 +16,7 @@ This interface provides:
   3) Support for uniquely identifying cached data in cases when the URL  
      is insufficient (e.g., HTTP form submission).  
   
-
+</code>
 ## Attributes ##
 
 ### cacheToken ###

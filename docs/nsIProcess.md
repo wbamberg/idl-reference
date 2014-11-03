@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### init(executable) ###
-  
+<code>  
 Initialises the process with an executable to be run. Call the run method  
 to run the executable.  
 @param executable The executable to run.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -29,13 +29,13 @@ to run the executable.
 </table>
 
 ### kill() ###
-  
+<code>  
 Kills the running process. After exiting the process will either have  
 been killed or a failure will have been returned.  
   
-
+</code>
 ### run(blocking, args, count) ###
-  
+<code>  
 Executes the file this object was initialized with  
 @param blocking   Whether to wait until the process terminates before  
 returning or not.  
@@ -43,7 +43,7 @@ returning or not.
                   native character set.  
 @param count      The length of the args array.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -71,7 +71,7 @@ returning or not.
 </table>
 
 ### runAsync(args, count, observer, holdWeak) ###
-  
+<code>  
 Executes the file this object was initialized with optionally calling  
 an observer after the process has finished running.  
 @param args       An array of arguments to pass to the process in the  
@@ -83,7 +83,7 @@ an observer after the process has finished running.
                   observer will be notified on the main thread.  
 @param holdWeak   Whether to use a weak reference to hold the observer.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -119,14 +119,14 @@ an observer after the process has finished running.
 </table>
 
 ### runw(blocking, args, count) ###
-  
+<code>  
 Executes the file this object was initialized with  
 @param blocking   Whether to wait until the process terminates before  
 returning or not.  
 @param args       An array of arguments to pass to the process in UTF-16  
 @param count      The length of the args array.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -153,7 +153,7 @@ returning or not.
 </table>
 
 ### runwAsync(args, count, observer, holdWeak) ###
-  
+<code>  
 Executes the file this object was initialized with optionally calling  
 an observer after the process has finished running.  
 @param args       An array of arguments to pass to the process in UTF-16  
@@ -164,7 +164,7 @@ an observer after the process has finished running.
                   observer will be notified on the main thread.  
 @param holdWeak   Whether to use a weak reference to hold the observer.  
   
-
+</code>
 #### Parameters ####
 
 <table>

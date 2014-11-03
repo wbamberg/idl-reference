@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # fuelIBookmarkFolder #
-  
+<code>  
 Interface representing a bookmark folder. Folders  
 can hold bookmarks, separators and other folders.  
   
-
+</code>
 ## Methods ##
 
 ### addBookmark(aTitle, aURI) ###
-  
+<code>  
 Adds a new child bookmark to this folder.  
 @param   aTitle  
          The title of bookmark.  
 @param   aURI  
          The uri of bookmark.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -41,17 +41,17 @@ Adds a new child bookmark to this folder.
 </table>
 
 ### addSeparator() ###
-  
+<code>  
 Adds a new child separator to this folder.  
   
-
+</code>
 ### addFolder(aTitle) ###
-  
+<code>  
 Adds a new child folder to this folder.  
 @param   aTitle  
          The title of folder.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -65,10 +65,10 @@ Adds a new child folder to this folder.
 </table>
 
 ### remove() ###
-  
+<code>  
 Removes the folder from the parent folder.  
   
-
+</code>
 ## Attributes ##
 
 ### id ###

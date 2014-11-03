@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIArray #
-  
+<code>  
 nsIArray  
   
 An indexed collection of elements. Provides basic functionality for  
@@ -30,11 +30,11 @@ nsIMutableArray!
 null is a valid entry in the array, and as such any nsISupports  
 parameters may be null, except where noted.  
   
-
+</code>
 ## Methods ##
 
 ### queryElementAt(index, uuid, result) ###
-  
+<code>  
 queryElementAt()  
   
 Retrieve a specific element of the array, and QueryInterface it  
@@ -51,7 +51,7 @@ this method, but exceptions are thrown in other circumstances
 @throws NS_ERROR_ILLEGAL_VALUE when index > length-1  
   
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -77,7 +77,7 @@ this method, but exceptions are thrown in other circumstances
 </table>
 
 ### indexOf(startIndex, element) ###
-  
+<code>  
 indexOf()  
   
 Get the position of a specific element. Note that since null is  
@@ -92,7 +92,7 @@ is not found.
          element in the array.  
 @throws NS_ERROR_FAILURE if the element was not in the array.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -127,14 +127,14 @@ is not found.
 </table>
 
 ### enumerate() ###
-  
+<code>  
 enumerate the array  
   
 @returns a new enumerator positioned at the start of the array  
 @throws NS_ERROR_FAILURE if the array is empty (to make it easy  
         to detect errors), or NS_ERROR_OUT_OF_MEMORY if out of memory.  
   
-
+</code>
 #### Returns ####
 
 <table>

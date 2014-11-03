@@ -10,19 +10,19 @@ layout: default
 ## Methods ##
 
 ### equals(other) ###
-  
+<code>  
 Returns whether the other principal is equivalent to this principal.  
 Principals are considered equal if they are the same principal, or  
 they have the same origin.  
   
-
+</code>
 ### equalsConsideringDomain(other) ###
-  
+<code>  
 Like equals, but takes document.domain changes into account.  
   
-
+</code>
 ### subsumes(other) ###
-  
+<code>  
 Returns whether the other principal is equal to or weaker than this  
 principal. Principals are equal if they are the same object or they  
 have the same origin.  
@@ -36,15 +36,15 @@ privileged, security context) is not equal to any other principal
 (including other null principals), and therefore does not subsume  
 anything but itself.  
   
-
+</code>
 ### subsumesConsideringDomain(other) ###
-  
+<code>  
 Same as the previous method, subsumes(), but takes document.domain into  
 account.  
   
-
+</code>
 ### checkMayLoad(uri, report, allowIfInheritsPrincipal) ###
-  
+<code>  
 Checks whether this principal is allowed to load the network resource  
 located at the given URI under the same-origin policy. This means that  
 codebase principals are only allowed to load resources from the same  
@@ -70,7 +70,7 @@ NOTE: The 'domain' attribute has no effect on the behaviour of this
                                   loader.  
 @throws NS_ERROR_DOM_BAD_URI if the load is not allowed.  
   
-
+</code>
 #### Parameters ####
 
 <table>

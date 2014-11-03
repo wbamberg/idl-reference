@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIFileURL #
-  
+<code>  
 nsIFileURL provides access to the underlying nsIFile object corresponding to  
 an URL.  The URL scheme need not be file:, since other local protocols may  
 map URLs to files (e.g., resource:).  
   
-
+</code>
 ## Attributes ##
 
 ### file ###

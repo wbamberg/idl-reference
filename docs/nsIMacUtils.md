@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIMacUtils #
-  
+<code>  
 nsIMacUtils: Generic globally-available Mac-specific utilities.  
   
-
+</code>
 ## Attributes ##
 
 ### isUniversalBinary ###

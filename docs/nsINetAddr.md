@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsINetAddr #
-  
+<code>  
 nsINetAddr  
   
 This interface represents a native NetAddr struct in a readonly  
 interface.  
   
-
+</code>
 ## Methods ##
 
 ### getNetAddr() ###
-  
+<code>  
 @return the underlying NetAddr struct.  
   
-
+</code>
 #### Returns ####
 
 <table>

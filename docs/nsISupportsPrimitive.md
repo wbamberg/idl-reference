@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # nsISupportsPrimitive #
-  
+<code>  
 Primitive base interface.  
   
 These first three are pointer types and do data copying  
 using the nsIMemory. Be careful!  
   
-
+</code>
 ## Attributes ##
 
 ### type ###

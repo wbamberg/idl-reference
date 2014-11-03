@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### onDownloadStateChange(aState, aDownload) ###
-  
+<code>  
 Dispatched whenever the state of the download changes.  
   
 @param aState The previous download sate.  
 @param aDownload The download object.  
 @see nsIDownloadManager for download states.  
   
-
+</code>
 #### Parameters ####
 
 <table>

@@ -40,7 +40,7 @@ layout: default
 ### notifyCFStateChanged(clientId, action, reason, number, timeSeconds, serviceClass) ###
 
 ### notifyCdmaInfoRecDisplay(clientId, display) ###
-  
+<code>  
 Notify Display Info from received Cdma-Info-Record.  
 See 3.7.4.1 Display in 3GPP2 C.S0005-F.  
   
@@ -49,7 +49,7 @@ See 3.7.4.1 Display in 3GPP2 C.S0005-F.
 @param display  
 The string to be displayed.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -69,7 +69,7 @@ The string to be displayed.
 </table>
 
 ### notifyCdmaInfoRecCalledPartyNumber(clientId, type, plan, number, pi, si) ###
-  
+<code>  
 Notify Called Party Number from received Cdma-Info-Record.  
 See 3.7.4.2 Called Party Number in 3GPP2 C.S0005-F.  
   
@@ -90,7 +90,7 @@ See 3.7.4.2 Called Party Number in 3GPP2 C.S0005-F.
        The Screening Indicator of the number.  
        See Table 2.7.4.4-2 in 3GPP2 C.S0005-F.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -140,7 +140,7 @@ See 3.7.4.2 Called Party Number in 3GPP2 C.S0005-F.
 </table>
 
 ### notifyCdmaInfoRecCallingPartyNumber(clientId, type, plan, number, pi, si) ###
-  
+<code>  
 Notify Calling Party Number from received Cdma-Info-Record.  
 See 3.7.4.3 Calling Party Number in 3GPP2 C.S0005-F.  
   
@@ -161,7 +161,7 @@ See 3.7.4.3 Calling Party Number in 3GPP2 C.S0005-F.
        The Screening Indicator of the number.  
        See Table 2.7.4.4-2 in 3GPP2 C.S0005-F.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -211,7 +211,7 @@ See 3.7.4.3 Calling Party Number in 3GPP2 C.S0005-F.
 </table>
 
 ### notifyCdmaInfoRecConnectedPartyNumber(clientId, type, plan, number, pi, si) ###
-  
+<code>  
 Notify Connected Party Number from received Cdma-Info-Record.  
 See 3.7.4.4 Connected Party Number in 3GPP2 C.S0005-F.  
   
@@ -232,7 +232,7 @@ See 3.7.4.4 Connected Party Number in 3GPP2 C.S0005-F.
        The Screening Indicator of the number.  
        See Table 2.7.4.4-2 in 3GPP2 C.S0005-F.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -282,7 +282,7 @@ See 3.7.4.4 Connected Party Number in 3GPP2 C.S0005-F.
 </table>
 
 ### notifyCdmaInfoRecSignal(clientId, type, alertPitch, signal) ###
-  
+<code>  
 Notify Signal Info from received Cdma-Info-Record.  
 See 3.7.4.5 Signal in 3GPP2 C.S0005-F.  
   
@@ -298,7 +298,7 @@ See 3.7.4.5 Signal in 3GPP2 C.S0005-F.
        The signal code. (6-bit binary)  
        See Table 3.7.5.5-3, 3.7.5.5-4, 3.7.5.5-5 in 3GPP2 C.S0005-F.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -333,7 +333,7 @@ See 3.7.4.5 Signal in 3GPP2 C.S0005-F.
 </table>
 
 ### notifyCdmaInfoRecRedirectingNumber(clientId, type, plan, number, pi, si, reason) ###
-  
+<code>  
 Notify Redirecting Number from received Cdma-Info-Record.  
 See 3.7.4.11 Redirecting Number in 3GPP2 C.S0005-F.  
   
@@ -357,7 +357,7 @@ See 3.7.4.11 Redirecting Number in 3GPP2 C.S0005-F.
        The redirection reason.  
        See Table 3.7.5.11-1 in 3GPP2 C.S0005-F.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -415,7 +415,7 @@ See 3.7.4.11 Redirecting Number in 3GPP2 C.S0005-F.
 </table>
 
 ### notifyCdmaInfoRecLineControl(clientId, polarityIncluded, toggle, reverse, powerDenial) ###
-  
+<code>  
 Notify Line Control from received Cdma-Info-Record.  
 See 3.7.4.15 Line Control in 3GPP2 C.S0005-F.  
   
@@ -430,7 +430,7 @@ See 3.7.4.15 Line Control in 3GPP2 C.S0005-F.
 @param powerDenial (8-bit)  
        Power denial timeout.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -472,7 +472,7 @@ See 3.7.4.15 Line Control in 3GPP2 C.S0005-F.
 </table>
 
 ### notifyCdmaInfoRecClir(clientId, cause) ###
-  
+<code>  
 Notify CLIR from received Cdma-Info-Record.  
 See 'ANNEX 1 Country-Specific Record Type for Japan' in T53.  
 http://www.arib.or.jp/english/html/overview/doc/T53v6_5_pdf/5_ANNEX_v6_5.pdf  
@@ -483,7 +483,7 @@ http://www.arib.or.jp/english/html/overview/doc/T53v6_5_pdf/5_ANNEX_v6_5.pdf
        Reason code. (8-bit binary)  
        See Table A 1.1-1 in T53.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -504,7 +504,7 @@ http://www.arib.or.jp/english/html/overview/doc/T53v6_5_pdf/5_ANNEX_v6_5.pdf
 </table>
 
 ### notifyCdmaInfoRecAudioControl(clientId, upLink, downLink) ###
-  
+<code>  
 Notify Audio Control from received Cdma-Info-Record.  
   
 Note: No information from ARIB about Audio Control.  
@@ -517,7 +517,7 @@ Note: No information from ARIB about Audio Control.
 @param upLink  
 @param downLink  
   
-
+</code>
 #### Parameters ####
 
 <table>

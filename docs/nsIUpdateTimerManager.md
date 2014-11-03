@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIUpdateTimerManager #
-  
+<code>  
 An interface describing a global application service that allows long  
 duration (e.g. 1-7 or more days, weeks or months) timers to be registered  
 and then fired.  
   
-
+</code>
 ## Methods ##
 
 ### registerTimer(id, callback, interval) ###
-  
+<code>  
 Register an interval with the timer manager. The timer manager  
 periodically checks to see if the interval has expired and if it has  
 calls the specified callback. This is persistent across application  
@@ -48,7 +48,7 @@ the values are as follows
                optional by specifying an empty string for the value.  
   interval   : the default interval in seconds for the timer.  
   
-
+</code>
 #### Parameters ####
 
 <table>

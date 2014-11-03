@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIContentPolicy #
-  
+<code>  
 Interface for content policy mechanism.  Implementations of this  
 interface can be used to control loading of various types of out-of-line  
 content, or processing of certain types of in-line content.  
@@ -14,11 +14,11 @@ content, or processing of certain types of in-line content.
 WARNING: do not block the caller from shouldLoad or shouldProcess (e.g.,  
 by launching a dialog to prompt the user for something).  
   
-
+</code>
 ## Methods ##
 
 ### shouldLoad(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeTypeGuess, aExtra, aRequestPrincipal) ###
-  
+<code>  
 Should the resource at this location be loaded?  
 ShouldLoad will be called before loading the resource at aContentLocation  
 to determine whether to start the load at all.  
@@ -73,7 +73,7 @@ unpredictable behavior, possibly including crashes, content not showing
 up, content showing up doubled, etc.  If you need to do any of the things  
 above, do them off timeout or event.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -151,7 +151,7 @@ above, do them off timeout or event.
 </table>
 
 ### shouldProcess(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeType, aExtra, aRequestPrincipal) ###
-  
+<code>  
 Should the resource be processed?  
 ShouldProcess will be called once all the information passed to it has  
 been determined about the resource, typically after part of the resource  
@@ -186,7 +186,7 @@ has been loaded.
 involved is in an inconsistent state.  See the note on shouldLoad to see  
 what this means for implementors of this method.  
   
-
+</code>
 #### Parameters ####
 
 <table>

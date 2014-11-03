@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIRDFDate #
-  
+<code>  
 A literal node in the graph, whose value is a date  
   
-
+</code>
 ## Attributes ##
 
 ### Value ###

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsICommandLine #
-  
+<code>  
 Represents the command line used to invoke a XUL application. This may be the  
 original command-line of this instance, or a command line remoted from another  
 instance of the application.  
@@ -16,11 +16,11 @@ DEFINITIONS:
 "flags" are switches. In normalized form they are preceded by a single dash.  
 Some flags may take "parameters", e.g. "--url <param>".  
   
-
+</code>
 ## Methods ##
 
 ### getArgument(aIndex) ###
-  
+<code>  
 Get an argument from the array of command-line arguments.  
   
 On windows, flags of the form /flag are normalized to -flag. /flag:param  
@@ -34,7 +34,7 @@ are normalized to the form -flag param.
 @return       The indexth argument.  
 @throws       NS_ERROR_INVALID_ARG if aIndex is out of bounds.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ are normalized to the form -flag param.
 </table>
 
 ### findFlag(aFlag, aCaseSensitive) ###
-  
+<code>  
 Find a command-line flag.  
   
 @param aFlag          The flag name to locate. Do not include the initial  
@@ -69,7 +69,7 @@ Find a command-line flag.
 @param aCaseSensitive Whether to do case-sensitive comparisons.  
 @return               The position of the flag in the command line.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -101,14 +101,14 @@ Find a command-line flag.
 </table>
 
 ### removeArguments(aStart, aEnd) ###
-  
+<code>  
 Remove arguments from the command line. This normally occurs after  
 a handler has processed the arguments.  
   
 @param aStart  Index to begin removing.  
 @param aEnd    Index to end removing, inclusive.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -128,14 +128,14 @@ a handler has processed the arguments.
 </table>
 
 ### handleFlag(aFlag, aCaseSensitive) ###
-  
+<code>  
 A helper method which will find a flag and remove it in one step.  
   
 @param aFlag  The flag name to find and remove.  
 @param aCaseSensitive Whether to do case-sensitive comparisons.  
 @return       Whether the flag was found.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -166,7 +166,7 @@ A helper method which will find a flag and remove it in one step.
 </table>
 
 ### handleFlagWithParam(aFlag, aCaseSensitive) ###
-  
+<code>  
 Find a flag with a parameter and remove both. This is a helper  
 method that combines "findFlag" and "removeArguments" in one step.  
   
@@ -177,7 +177,7 @@ method that combines "findFlag" and "removeArguments" in one step.
 @param aFlag The flag name to find and remove.  
 @param aCaseSensitive Whether to do case-sensitive flag search.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -210,14 +210,14 @@ method that combines "findFlag" and "removeArguments" in one step.
 </table>
 
 ### resolveFile(aArgument) ###
-  
+<code>  
 Resolve a file-path argument into an nsIFile. This method gracefully  
 handles relative or absolute file paths, according to the working  
 directory of this command line.  
   
 @param aArgument  The command-line argument to resolve.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -231,7 +231,7 @@ directory of this command line.
 </table>
 
 ### resolveURI(aArgument) ###
-  
+<code>  
 Resolves a URI argument into a URI. This method has platform-specific  
 logic for converting an absolute URI or a relative file-path into the  
 appropriate URI object; it gracefully handles win32 C:\ paths which would  
@@ -239,7 +239,7 @@ confuse the ioservice if passed directly.
   
 @param aArgument  The command-line argument to resolve.  
   
-
+</code>
 #### Parameters ####
 
 <table>

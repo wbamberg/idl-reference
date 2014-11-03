@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsITransactionListener #
-  
+<code>  
 The nsITransactionListener interface.  
 <P>  
 This interface is implemented by an object that tracks transactions.  
   
-
+</code>
 ## Methods ##
 
 ### willDo(aManager, aTransaction) ###
-  
+<code>  
 Called before a transaction manager calls a transaction's  
 doTransaction() method.  
 @param aManager the transaction manager doing the transaction.  
@@ -25,7 +25,7 @@ its desire to interrupt normal control flow. Listeners should
 return true if they want to interrupt normal control flow, without  
 throwing an error.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -49,7 +49,7 @@ throwing an error.
 </table>
 
 ### didDo(aManager, aTransaction, aDoResult) ###
-  
+<code>  
 Called after a transaction manager calls the doTransaction() method of  
 a transaction.  
 @param aManager the transaction manager that did the transaction.  
@@ -57,7 +57,7 @@ a transaction.
 @param aDoResult the nsresult returned after executing  
 the transaction.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -84,7 +84,7 @@ the transaction.
 </table>
 
 ### willUndo(aManager, aTransaction) ###
-  
+<code>  
 Called before a transaction manager calls the Undo() method of  
 a transaction.  
 @param aManager the transaction manager undoing the transaction.  
@@ -95,7 +95,7 @@ return true if they want to interrupt normal control flow, without
 throwing an error. Note that listeners can also interrupt normal  
 control flow by throwing an nsresult that indicates an error.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -120,14 +120,14 @@ control flow by throwing an nsresult that indicates an error.
 </table>
 
 ### didUndo(aManager, aTransaction, aUndoResult) ###
-  
+<code>  
 Called after a transaction manager calls the Undo() method of  
 a transaction.  
 @param aManager the transaction manager undoing the transaction.  
 @param aTransaction the transaction being undone.  
 @param aUndoResult the nsresult returned after undoing the transaction.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -153,7 +153,7 @@ a transaction.
 </table>
 
 ### willRedo(aManager, aTransaction) ###
-  
+<code>  
 Called before a transaction manager calls the Redo() method of  
 a transaction.  
 @param aManager the transaction manager redoing the transaction.  
@@ -164,7 +164,7 @@ return true if they want to interrupt normal control flow, without
 throwing an error. Note that listeners can also interrupt normal  
 control flow by throwing an nsresult that indicates an error.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -189,14 +189,14 @@ control flow by throwing an nsresult that indicates an error.
 </table>
 
 ### didRedo(aManager, aTransaction, aRedoResult) ###
-  
+<code>  
 Called after a transaction manager calls the Redo() method of  
 a transaction.  
 @param aManager the transaction manager redoing the transaction.  
 @param aTransaction the transaction being redone.  
 @param aRedoResult the nsresult returned after redoing the transaction.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -222,7 +222,7 @@ a transaction.
 </table>
 
 ### willBeginBatch(aManager) ###
-  
+<code>  
 Called before a transaction manager begins a batch.  
 @param aManager the transaction manager beginning a batch.  
 @result boolean value returned by listener which indicates  
@@ -231,7 +231,7 @@ return true if they want to interrupt normal control flow, without
 throwing an error. Note that listeners can also interrupt normal  
 control flow by throwing an nsresult that indicates an error.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -250,12 +250,12 @@ control flow by throwing an nsresult that indicates an error.
 </table>
 
 ### didBeginBatch(aManager, aResult) ###
-  
+<code>  
 Called after a transaction manager begins a batch.  
 @param aManager the transaction manager that began a batch.  
 @param aResult the nsresult returned after beginning a batch.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -275,7 +275,7 @@ Called after a transaction manager begins a batch.
 </table>
 
 ### willEndBatch(aManager) ###
-  
+<code>  
 Called before a transaction manager ends a batch.  
 @param aManager the transaction manager ending a batch.  
 @result boolean value returned by listener which indicates  
@@ -284,7 +284,7 @@ return true if they want to interrupt normal control flow, without
 throwing an error. Note that listeners can also interrupt normal  
 control flow by throwing an nsresult that indicates an error.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -303,12 +303,12 @@ control flow by throwing an nsresult that indicates an error.
 </table>
 
 ### didEndBatch(aManager, aResult) ###
-  
+<code>  
 Called after a transaction manager ends a batch.  
 @param aManager the transaction manager ending a batch.  
 @param aResult the nsresult returned after ending a batch.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -328,7 +328,7 @@ Called after a transaction manager ends a batch.
 </table>
 
 ### willMerge(aManager, aTopTransaction, aTransactionToMerge) ###
-  
+<code>  
 Called before a transaction manager tries to merge  
 a transaction, that was just executed, with the  
 transaction at the top of the undo stack.  
@@ -341,7 +341,7 @@ return true if they want to interrupt normal control flow, without
 throwing an error. Note that listeners can also interrupt normal  
 control flow by throwing an nsresult that indicates an error.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -372,7 +372,7 @@ control flow by throwing an nsresult that indicates an error.
 </table>
 
 ### didMerge(aManager, aTopTransaction, aTransactionToMerge, aDidMerge, aMergeResult) ###
-  
+<code>  
 Called after a transaction manager tries to merge  
 a transaction, that was just executed, with the  
 transaction at the top of the undo stack.  
@@ -384,7 +384,7 @@ transaction at the top of the undo stack.
 @param aInterrupt listeners should set this to PR_TRUE if they  
 want to interrupt normal control flow, without throwing an error.  
   
-
+</code>
 #### Parameters ####
 
 <table>

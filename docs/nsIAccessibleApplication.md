@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIAccessibleApplication #
-  
+<code>  
 This interface is implemented by top level accessible object in hierarchy and  
 provides information about application.  
   
-
+</code>
 ## Attributes ##
 
 ### appName ###

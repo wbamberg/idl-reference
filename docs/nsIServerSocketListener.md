@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIServerSocketListener #
-  
+<code>  
 nsIServerSocketListener  
   
 This interface is notified whenever a server socket accepts a new connection.  
@@ -16,11 +16,11 @@ calling the nsISocketTransport::GetAddress method or by inspecting
 nsISocketTransport::GetHost, which returns a string representation of the  
 client's IP address (NOTE: this may be an IPv4 or IPv6 string literal).  
   
-
+</code>
 ## Methods ##
 
 ### onSocketAccepted(aServ, aTransport) ###
-  
+<code>  
 onSocketAccepted  
   
 This method is called when a client connection is accepted.  
@@ -30,7 +30,7 @@ This method is called when a client connection is accepted.
 @param aTransport  
        The connected socket transport.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -50,7 +50,7 @@ This method is called when a client connection is accepted.
 </table>
 
 ### onStopListening(aServ, aStatus) ###
-  
+<code>  
 onStopListening  
   
 This method is called when the listening socket stops for some reason.  
@@ -63,7 +63,7 @@ The server socket is effectively dead after this notification.
        server socket was manually closed, then this value will be  
        NS_BINDING_ABORTED.  
   
-
+</code>
 #### Parameters ####
 
 <table>

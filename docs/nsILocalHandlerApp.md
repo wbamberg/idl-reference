@@ -6,25 +6,25 @@ layout: default
 </div>
 
 # nsILocalHandlerApp #
-  
+<code>  
 nsILocalHandlerApp is a local OS-level executable  
   
-
+</code>
 ## Methods ##
 
 ### clearParameters() ###
-  
+<code>  
 Clears the current list of command line parameters.  
   
-
+</code>
 ### appendParameter(param) ###
-  
+<code>  
 Appends a command line parameter to the command line  
 parameter list.  
   
 @param param the parameter to add.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -38,7 +38,7 @@ parameter list.
 </table>
 
 ### getParameter(parameterIndex) ###
-  
+<code>  
 Retrieves a specific command line parameter.  
   
 @param param the index of the parameter to return.  
@@ -47,7 +47,7 @@ Retrieves a specific command line parameter.
   
 @throw NS_ERROR_INVALID_ARG if the index is out of range.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -72,7 +72,7 @@ Retrieves a specific command line parameter.
 </table>
 
 ### parameterExists(param) ###
-  
+<code>  
 Checks to see if a parameter exists in the command line  
 parameter list.  
   
@@ -80,7 +80,7 @@ parameter list.
   
 @return TRUE if the parameter exists in the current list.   
   
-
+</code>
 #### Parameters ####
 
 <table>

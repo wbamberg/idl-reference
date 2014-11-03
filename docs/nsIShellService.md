@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### switchTask() ###
-  
+<code>  
 This method displays a UI to switch to (or launch) a different task  
   
-
+</code>
 ### createShortcut(aTitle, aURI, aIconData, aIntent) ###
-  
+<code>  
 This method creates a shortcut on a desktop or homescreen that opens in  
 the our application.  
   
@@ -24,7 +24,7 @@ the our application.
 @param aIconData  a base64-encoded data: URI representation of the shortcut's icon, as accepted by the favicon decoder.  
 @param aIntent    obsolete and ignored, but remains for backward compatibility; pass an empty string  
   
-
+</code>
 #### Parameters ####
 
 <table>

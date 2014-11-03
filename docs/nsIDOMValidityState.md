@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIDOMValidityState #
-  
+<code>  
 The nsIDOMValidityState interface is the interface to a ValidityState  
 object which represents the validity states of an element.  
   
 For more information on this interface please see  
 http://www.whatwg.org/specs/web-apps/current-work/#validitystate  
   
-
+</code>
 ## Attributes ##
 
 ### valueMissing ###

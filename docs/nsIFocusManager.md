@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIFocusManager #
-  
+<code>  
 The focus manager deals with all focus related behaviour. Only one element  
 in the entire application may have the focus at a time; this element  
 receives any keyboard events. While there is only one application-wide  
@@ -34,26 +34,26 @@ drawn around the document.
   
 Blur and focus events do not bubble as per the W3C DOM Events spec.  
   
-
+</code>
 ## Methods ##
 
 ### getLastFocusMethod(window) ###
-  
+<code>  
 Returns the method that was used to focus the element in window. This  
 will either be 0, FLAG_BYMOUSE or FLAG_BYKEY. If window is null, then  
 the current focusedWindow will be used by default. This has the result  
 of retrieving the method that was used to focus the currently focused  
 element.  
   
-
+</code>
 ### setFocus(aElement, aFlags) ###
-  
+<code>  
 Changes the focused element reference within the window containing  
 aElement to aElement.  
   
-
+</code>
 ### moveFocus(aWindow, aStartElement, aType, aFlags) ###
-  
+<code>  
 Move the focus to another element. If aStartElement is specified, then  
 movement is done relative to aStartElement. If aStartElement is null,  
 then movement is done relative to the currently focused element. If no  
@@ -70,17 +70,17 @@ the focus is not changed.
   
 Returns the element that was focused.  
   
-
+</code>
 ### clearFocus(aWindow) ###
-  
+<code>  
 Clears the focused element within aWindow. If the current focusedWindow  
 is a descendant of aWindow, sets the current focusedWindow to aWindow.  
   
 @throws NS_ERROR_INVALID_ARG if aWindow is null  
   
-
+</code>
 ### getFocusedElementForWindow(aWindow, aDeep, aFocusedWindow) ###
-  
+<code>  
 Returns the currently focused element within aWindow. If aWindow is equal  
 to the current value of focusedWindow, then the returned element will be  
 the application-wide focused element (the value of focusedElement). The  
@@ -97,53 +97,53 @@ element is focused.
   
 @throws NS_ERROR_INVALID_ARG if aWindow is null  
   
-
+</code>
 ### moveCaretToFocus(aWindow) ###
-  
+<code>  
 Moves the selection caret within aWindow to the current focus.  
   
-
+</code>
 ### elementIsFocusable(aElement, aFlags) ###
-  
+<code>  
 Check if given element is focusable.  
   
-
+</code>
 ### windowRaised(aWindow) ###
-  
+<code>  
 Called when a window has been raised.  
   
-
+</code>
 ### windowLowered(aWindow) ###
-  
+<code>  
 Called when a window has been lowered.  
   
-
+</code>
 ### windowShown(aWindow, aNeedsFocus) ###
-  
+<code>  
 Called when a new document in a window is shown.  
   
 If aNeedsFocus is true, then focus events are expected to be fired on the  
 window if this window is in the focused window chain.  
   
-
+</code>
 ### windowHidden(aWindow) ###
-  
+<code>  
 Called when a document in a window has been hidden or otherwise can no  
 longer accept focus.  
   
-
+</code>
 ### fireDelayedEvents(aDocument) ###
-  
+<code>  
 Fire any events that have been delayed due to synchronized actions.  
   
-
+</code>
 ### focusPlugin(aPlugin) ###
-  
+<code>  
 Indicate that a plugin wishes to take the focus. This is similar to a  
 normal focus except that the widget focus is not changed. Updating the  
 widget focus state is the responsibility of the caller.  
   
-
+</code>
 ## Attributes ##
 
 ### activeWindow ###

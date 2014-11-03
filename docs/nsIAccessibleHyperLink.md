@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIAccessibleHyperLink #
-  
+<code>  
 A cross-platform interface that supports hyperlink-specific properties and  
 methods.  Anchors, image maps, xul:labels with class="text-link" implement this interface.  
   
-
+</code>
 ## Methods ##
 
 ### getURI(index) ###
-  
+<code>  
 Returns the URI at the given index.  
   
 @note  ARIA hyperlinks do not have an URI to point to, since clicks are  
@@ -25,7 +25,7 @@ links.
   
 @return the nsIURI object containing the specifications for the URI.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -50,14 +50,14 @@ links.
 </table>
 
 ### getAnchor(index) ###
-  
+<code>  
 Returns a reference to the object at the given index.  
   
 @param index  The 0-based index whose object is to be returned.  
   
 @return the nsIAccessible object at the desired index.  
   
-
+</code>
 #### Parameters ####
 
 <table>

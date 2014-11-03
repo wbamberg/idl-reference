@@ -6,31 +6,31 @@ layout: default
 </div>
 
 # nsINavHistoryResultObserver #
-  
+<code>  
 Allows clients to observe what is happening to a result as it updates itself  
 according to history and bookmark system events. Register this observer on a  
 result using nsINavHistoryResult::addObserver.  
   
-
+</code>
 ## Methods ##
 
 ### nodeInserted(aParent, aNode, aNewIndex) ###
-  
+<code>  
 Called when 'aItem' is inserted into 'aParent' at index 'aNewIndex'.  
 The item previously at index (if any) and everything below it will have  
 been shifted down by one. The item may be a container or a leaf.  
   
-
+</code>
 ### nodeRemoved(aParent, aItem, aOldIndex) ###
-  
+<code>  
 Called whan 'aItem' is removed from 'aParent' at 'aOldIndex'. The item  
 may be a container or a leaf. This function will be called after the item  
 has been removed from its parent list, but before anything else (including  
 NULLing out the item's parent) has happened.  
   
-
+</code>
 ### nodeMoved(aNode, aOldParent, aOldIndex, aNewParent, aNewIndex) ###
-  
+<code>  
 Called whan 'aItem' is moved from 'aOldParent' at 'aOldIndex' to  
 aNewParent at aNewIndex. The item may be a container or a leaf.  
   
@@ -39,9 +39,9 @@ within the same container. When an item is moved between containers,
 a new node is created for the item, and the itemRemoved/itemAdded methods  
 are used.  
   
-
+</code>
 ### nodeTitleChanged(aNode, aNewTitle) ###
-  
+<code>  
 Called right after aNode's title has changed.  
   
 @param aNode  
@@ -49,7 +49,7 @@ Called right after aNode's title has changed.
 @param aNewTitle  
        the new title  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -69,7 +69,7 @@ Called right after aNode's title has changed.
 </table>
 
 ### nodeURIChanged(aNode, aNewURI) ###
-  
+<code>  
 Called right after aNode's uri property has changed.  
   
 @param aNode  
@@ -77,7 +77,7 @@ Called right after aNode's uri property has changed.
 @param aNewURI  
        the new uri  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -97,7 +97,7 @@ Called right after aNode's uri property has changed.
 </table>
 
 ### nodeIconChanged(aNode) ###
-  
+<code>  
 Called right after aNode's icon property has changed.  
   
 @param aNode  
@@ -105,7 +105,7 @@ Called right after aNode's icon property has changed.
   
 @note: The new icon is accessible through aNode.icon.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -119,7 +119,7 @@ Called right after aNode's icon property has changed.
 </table>
 
 ### nodeHistoryDetailsChanged(aNode, aNewVisitDate, aNewAccessCount) ###
-  
+<code>  
 Called right after aNode's time property or accessCount property, or both,  
 have changed.  
   
@@ -130,7 +130,7 @@ have changed.
 @param aNewAccessCount  
        the new access-count  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -156,7 +156,7 @@ have changed.
 </table>
 
 ### nodeTagsChanged(aNode) ###
-  
+<code>  
 Called when the tags set on the uri represented by aNode have changed.  
   
 @param aNode  
@@ -164,7 +164,7 @@ Called when the tags set on the uri represented by aNode have changed.
   
 @note: The new tags list is accessible through aNode.tags.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -178,7 +178,7 @@ Called when the tags set on the uri represented by aNode have changed.
 </table>
 
 ### nodeKeywordChanged(aNode, aNewKeyword) ###
-  
+<code>  
 Called right after the aNode's keyword property has changed.  
   
 @param aNode  
@@ -186,7 +186,7 @@ Called right after the aNode's keyword property has changed.
 @param aNewKeyword  
        the new keyword  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -206,7 +206,7 @@ Called right after the aNode's keyword property has changed.
 </table>
 
 ### nodeAnnotationChanged(aNode, aAnnoName) ###
-  
+<code>  
 Called right after an annotation of aNode's has changed (set, altered, or  
 unset).  
   
@@ -215,7 +215,7 @@ unset).
 @param aAnnoName  
        the name of the annotation that changed  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -235,7 +235,7 @@ unset).
 </table>
 
 ### nodeDateAddedChanged(aNode, aNewValue) ###
-  
+<code>  
 Called right after aNode's dateAdded property has changed.  
   
 @param aNode  
@@ -243,7 +243,7 @@ Called right after aNode's dateAdded property has changed.
 @param aNewValue  
        the new value of the dateAdded property  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -263,7 +263,7 @@ Called right after aNode's dateAdded property has changed.
 </table>
 
 ### nodeLastModifiedChanged(aNode, aNewValue) ###
-  
+<code>  
 Called right after aNode's dateModified property has changed.  
   
 @param aNode  
@@ -271,7 +271,7 @@ Called right after aNode's dateModified property has changed.
 @param aNewValue  
        the new value of the dateModified property  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -291,7 +291,7 @@ Called right after aNode's dateModified property has changed.
 </table>
 
 ### containerStateChanged(aContainerNode, aOldState, aNewState) ###
-  
+<code>  
 Called after a container changes state.  
   
 @param aContainerNode  
@@ -301,7 +301,7 @@ Called after a container changes state.
 @param aNewState  
        The state that aContainerNode has transitioned into.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -327,14 +327,14 @@ Called after a container changes state.
 </table>
 
 ### invalidateContainer(aContainerNode) ###
-  
+<code>  
 Called when something significant has happened within the container. The  
 contents of the container should be re-built.  
   
 @param aContainerNode  
        the container node to invalidate  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -348,7 +348,7 @@ contents of the container should be re-built.
 </table>
 
 ### sortingChanged(sortingMode) ###
-  
+<code>  
 This is called to indicate to the UI that the sort has changed to the  
 given mode. For trees, for example, this would update the column headers  
 to reflect the sorting. For many other types of views, this won't be  
@@ -360,7 +360,7 @@ applicable.
 This only is expected to update the sorting UI. invalidateAll() will also  
 get called if the sorting changes to update everything.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -375,7 +375,7 @@ get called if the sorting changes to update everything.
 </table>
 
 ### batching(aToggleMode) ###
-  
+<code>  
 This is called to indicate that a batch operation is about to start or end.  
 The observer could want to disable some events or updates during batches,  
 since multiple operations are packed in a short time.  
@@ -384,7 +384,7 @@ For example treeviews could temporarily suppress select notifications.
 @param aToggleMode  
        true if a batch is starting, false if it's ending.  
   
-
+</code>
 #### Parameters ####
 
 <table>

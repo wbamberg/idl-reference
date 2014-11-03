@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIIOService #
-  
+<code>  
 nsIIOService provides a set of network utility functions.  This interface  
 duplicates many of the nsIProtocolHandler methods in a protocol handler  
 independent way (e.g., NewURI inspects the scheme in order to delegate  
@@ -15,17 +15,17 @@ also provides a set of URL parsing utility functions.  These are provided
 as a convenience to the programmer and in some cases to improve performance  
 by eliminating intermediate data structures and interfaces.  
   
-
+</code>
 ## Methods ##
 
 ### getProtocolHandler(aScheme) ###
-  
+<code>  
 Returns a protocol handler for a given URI scheme.  
   
 @param aScheme the URI scheme  
 @return reference to corresponding nsIProtocolHandler  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -50,13 +50,13 @@ Returns a protocol handler for a given URI scheme.
 </table>
 
 ### getProtocolFlags(aScheme) ###
-  
+<code>  
 Returns the protocol flags for a given scheme.  
   
 @param aScheme the URI scheme  
 @return value of corresponding nsIProtocolHandler::protocolFlags  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -81,7 +81,7 @@ Returns the protocol flags for a given scheme.
 </table>
 
 ### newURI(aSpec, aOriginCharset, aBaseURI) ###
-  
+<code>  
 This method constructs a new URI by determining the scheme of the  
 URI spec, and then delegating the construction of the URI to the  
 protocol handler for that scheme. QueryInterface can be used on  
@@ -89,9 +89,9 @@ the resulting URI object to obtain a more specific type of URI.
   
 @see nsIProtocolHandler::newURI  
   
-
+</code>
 ### newFileURI(aFile) ###
-  
+<code>  
 This method constructs a new URI from a nsIFile.  
   
 @param aFile specifies the file path  
@@ -101,7 +101,7 @@ Note: in the future, for perf reasons we should allow
 callers to specify whether this is a file or directory by  
 splitting this  into newDirURI() and newActualFileURI().  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -126,13 +126,13 @@ splitting this  into newDirURI() and newActualFileURI().
 </table>
 
 ### newChannelFromURI2(aURI, aLoadingNode, aLoadingPrincipal, aTriggeringPrincipal, aSecurityFlags, aContentPolicyType) ###
-  
+<code>  
 Creates a channel for a given URI.  
   
 @param aURI nsIURI from which to make a channel  
 @return reference to the new nsIChannel object  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -157,13 +157,13 @@ Creates a channel for a given URI.
 </table>
 
 ### newChannelFromURI(aURI) ###
-  
+<code>  
 Creates a channel for a given URI.  
   
 @param aURI nsIURI from which to make a channel  
 @return reference to the new nsIChannel object  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -188,17 +188,17 @@ Creates a channel for a given URI.
 </table>
 
 ### newChannel2(aSpec, aOriginCharset, aBaseURI, aLoadingNode, aLoadingPrincipal, aTriggeringPrincipal, aSecurityFlags, aContentPolicyType) ###
-  
+<code>  
 Equivalent to newChannelFromURI(newURI(...))  
   
-
+</code>
 ### newChannel(aSpec, aOriginCharset, aBaseURI) ###
-  
+<code>  
 Equivalent to newChannelFromURI(newURI(...))  
   
-
+</code>
 ### setAppOffline(appId, state) ###
-  
+<code>  
 Set whether network appears to be offline for network connections from  
 a given appID.  
   
@@ -206,23 +206,23 @@ Calling this function may fire the "network:app-offline-status-changed"
 notification, which is also sent to child processes containing this appId.  
 'state' must one of nsIAppOfflineInfo::{ONLINE|OFFLINE|WIFI_ONLY}.  
   
-
+</code>
 ### isAppOffline(appId) ###
-  
+<code>  
 Returns true if given appId is currently not allowed to make network  
 connections. It will return true if the app is in the wifi-only state  
 and we are currently on a 3G connection.  
 The returned value does not depend on the offline state of the browser.  
   
-
+</code>
 ### getAppOfflineState(appId) ###
-  
+<code>  
 Returns the state of the app with the given appId.  
 returns nsIAppOfflineInfo::{ONLINE,OFFLINE,WIFI_ONLY}  
   
-
+</code>
 ### allowPort(aPort, aScheme) ###
-  
+<code>  
 Checks if a port number is banned. This involves consulting a list of  
 unsafe ports, corresponding to network services that may be easily  
 exploitable. If the given port is considered unsafe, then the protocol  
@@ -233,9 +233,9 @@ ensuring reasonable, default protection.
   
 @see nsIProtocolHandler::allowPort  
   
-
+</code>
 ### extractScheme(urlString) ###
-  
+<code>  
 Utility to extract the scheme from a URL string, consistently and  
 according to spec (see RFC 2396).  
   
@@ -248,7 +248,7 @@ is provided purely as an optimization.
   
 @throws NS_ERROR_MALFORMED_URI if URL string is not of the right form.  
   
-
+</code>
 #### Parameters ####
 
 <table>

@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIThreadRetargetableRequest #
-  
+<code>  
 nsIThreadRetargetableRequest  
   
 Should be implemented by requests that support retargeting delivery of  
 data off the main thread.  
   
-
+</code>
 ## Methods ##
 
 ### retargetDeliveryTo(aNewTarget) ###
-  
+<code>  
 Called to retarget delivery of OnDataAvailable to another thread. Should  
 only be called before AsyncOpen for nsIWebsocketChannels, or during  
 OnStartRequest for nsIChannels.  
@@ -30,7 +30,7 @@ normal delivery to the main thread will continue. As such, listeners
 should be ready to deal with OnDataAvailable on either the main thread or  
 the new target thread.  
   
-
+</code>
 #### Parameters ####
 
 <table>

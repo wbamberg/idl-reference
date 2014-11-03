@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIURIFixupInfo #
-  
+<code>  
 Interface indicating what we found/corrected when fixing up a URI  
   
-
+</code>
 ## Attributes ##
 
 ### consumer ###

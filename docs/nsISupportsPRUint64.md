@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsPRUint64 #
-  
+<code>  
 Scriptable storage for 64-bit integers  
   
-
+</code>
 ## Methods ##
 
 ### toString() ###

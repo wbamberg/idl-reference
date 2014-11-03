@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsITCPServerSocketInternal #
-  
+<code>  
 Internal interfaces for use in cross-process server-socket implementation.  
 Needed to account for multiple possible types that can be provided to  
 the socket callbacks as arguments.  
@@ -14,17 +14,17 @@ the socket callbacks as arguments.
 These interfaces are for calling each method from the server socket object  
 on the parent and child side for an IPC protocol implementation.  
   
-
+</code>
 ## Methods ##
 
 ### init(windowVal) ###
-  
+<code>  
 Initialization after creating a TCP server socket object.  
   
 @param windowVal  
        An object to create ArrayBuffer for this window. See Bug 831107.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -38,7 +38,7 @@ Initialization after creating a TCP server socket object.
 </table>
 
 ### listen(localPort, options, backlog) ###
-   
+<code>   
 Listen on a port  
   
 @param localPort   
@@ -56,7 +56,7 @@ Listen on a port
        This parameter may be silently limited by the operating system.  
        Pass -1 to use the default value.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -86,11 +86,12 @@ Listen on a port
 </table>
 
 ### callListenerAccept(socketChild) ###
-  
+<code>  
 Listener for receiving an accepted socket.  
   
-
+</code>
 ### callListenerError(message, filename, lineNumber, columnNumber) ###
-  
+<code>  
 Listener for handling an error caused in chrome process.  
   
+</code>

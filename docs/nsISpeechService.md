@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISpeechService #
-  
+<code>  
 The main interface of a speech synthesis service.  
   
 A service's speak method could be implemented in two ways:  
@@ -19,11 +19,11 @@ A service's speak method could be implemented in two ways:
    audio information is provided at setup(), and audio data is sent with  
    sendAudio(). The utterance is terminated with an empty sendAudio().  
   
-
+</code>
 ## Methods ##
 
 ### speak(aText, aUri, aRate, aPitch, aTask) ###
-  
+<code>  
 Speak the given text using the voice identified byu the given uri. See  
 W3C Speech API spec for information about pitch and rate.  
 https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#utterance-attributes  
@@ -35,7 +35,7 @@ https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#utterance-attribut
 @param aTask  task instance for utterance, used for sending events or audio  
                 data back to browser.  
   
-
+</code>
 #### Parameters ####
 
 <table>

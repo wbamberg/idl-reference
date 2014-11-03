@@ -10,15 +10,15 @@ layout: default
 ## Methods ##
 
 ### setWrapColumn(aWrapColumn) ###
-  
+<code>  
 Similar to the setter for wrapWidth, but just sets the editor  
 internal state without actually changing the content being edited  
 to wrap at that column.  This should only be used by callers who  
 are sure that their content is already set up correctly.  
   
-
+</code>
 ### insertText(aStringToInsert) ###
-  
+<code>  
 Inserts a string at the current location,  
 given by the selection.  
 If the selection is not collapsed, the selection is deleted  
@@ -26,7 +26,7 @@ and the insertion takes place at the resulting collapsed selection.
   
 @param aString   the string to be inserted  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -40,13 +40,13 @@ and the insertion takes place at the resulting collapsed selection.
 </table>
 
 ### insertLineBreak() ###
-  
+<code>  
 Insert a line break into the content model.  
 The interpretation of a break is up to the implementation:  
 it may enter a character, split a node in the tree, etc.  
 This may be more efficient than calling InsertText with a newline.  
   
-
+</code>
 ## Attributes ##
 
 ### textLength ###

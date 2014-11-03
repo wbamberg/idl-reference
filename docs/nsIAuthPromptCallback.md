@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIAuthPromptCallback #
-  
+<code>  
 Interface for callback methods for the asynchronous nsIAuthPrompt2 method.  
 Callers MUST call exactly one method if nsIAuthPrompt2::promptPasswordAsync  
 returns successfully. They MUST NOT call any method on this interface before  
 promptPasswordAsync returns.  
   
-
+</code>
 ## Methods ##
 
 ### onAuthAvailable(aContext, aAuthInfo) ###
-  
+<code>  
 Authentication information is available.  
   
 @param aContext  
@@ -27,7 +27,7 @@ Authentication information is available.
   
 @note  Any exceptions thrown from this method should be ignored.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -48,7 +48,7 @@ Authentication information is available.
 </table>
 
 ### onAuthCancelled(aContext, userCancel) ###
-  
+<code>  
 Notification that the prompt was cancelled.  
   
 @param aContext  
@@ -58,7 +58,7 @@ Notification that the prompt was cancelled.
        the cancel method on the nsICancelable; otherwise,  
        it was cancelled by the user.  
   
-
+</code>
 #### Parameters ####
 
 <table>

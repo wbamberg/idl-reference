@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIXULAppInfo #
-  
+<code>  
 A scriptable interface to the nsXULAppAPI structure. See nsXULAppAPI.h for  
 a detailed description of each attribute.  
   
-
+</code>
 ## Attributes ##
 
 ### vendor ###

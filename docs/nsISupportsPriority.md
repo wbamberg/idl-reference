@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISupportsPriority #
-  
+<code>  
 This interface exposes the general notion of a scheduled object with a  
 integral priority value.  Following UNIX conventions, smaller (and possibly  
 negative) values have higher priority.  
@@ -17,16 +17,16 @@ the side-effects of changing the priority of an object.  In some cases,
 changing the priority of an object may be disallowed (resulting in an  
 exception being thrown) or may simply be ignored.  
   
-
+</code>
 ## Methods ##
 
 ### adjustPriority(delta) ###
-  
+<code>  
 This method adjusts the priority attribute by a given delta.  It helps  
 reduce the amount of coding required to increment or decrement the value  
 of the priority attribute.  
   
-
+</code>
 ## Attributes ##
 
 ### priority ###

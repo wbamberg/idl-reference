@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIJARURI #
-  
+<code>  
 JAR URLs have the following syntax  
   
 jar:<jar-file-uri>!/<jar-entry>  
@@ -15,15 +15,15 @@ EXAMPLE: jar:http://www.big.com/blue.jar!/ocean.html
   
 The nsIURL methods operate on the <jar-entry> part of the spec.  
   
-
+</code>
 ## Methods ##
 
 ### cloneWithJARFile(jarFile) ###
-  
+<code>  
 Create a clone of the JAR URI with a new root URI (the URI for the  
 actual JAR file).  
   
-
+</code>
 ## Attributes ##
 
 ### JARFile ###

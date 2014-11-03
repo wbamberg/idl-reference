@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsIApplicationCacheNamespace #
-  
+<code>  
 Application caches can store a set of namespace entries that affect  
 loads from the application cache.  If a load from the cache fails  
 to match an exact cache entry, namespaces entries will be searched  
 for a substring match, and should be applied appropriately.  
   
-
+</code>
 ## Methods ##
 
 ### init(itemType, namespaceSpec, data) ###
-  
+<code>  
 Initialize the namespace.  
   
-
+</code>
 ## Attributes ##
 
 ### itemType ###

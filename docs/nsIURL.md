@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIURL #
-  
+<code>  
 The nsIURL interface provides convenience methods that further  
 break down the path portion of nsIURI:  
   
@@ -20,11 +20,11 @@ http://host/directory/fileBaseName.fileExtension#ref
                            |  
                        filePath  
   
-
+</code>
 ## Methods ##
 
 ### getCommonBaseSpec(aURIToCompare) ###
-  
+<code>  
 This method takes a uri and compares the two.  The common uri portion  
 is returned as a string.  The minimum common uri portion is the   
 protocol, and any of these if present:  login, password, host and port  
@@ -45,9 +45,9 @@ Examples:
 8) ftp://foo.com/c.htm#i   ftp://foo.com/c.htm       ftp://foo.com/c.htm  
 9) file:///a/b/c.html      file:///d/e/c.html        file:///  
   
-
+</code>
 ### getRelativeSpec(aURIToCompare) ###
-  
+<code>  
 This method tries to create a string which specifies the location of the  
 argument relative to |this|.  If the argument and |this| are equal, the  
 method returns "".  If any of the URIs' scheme, host, userpass, or port  
@@ -61,7 +61,7 @@ Examples:
 4) http://foo.com/         http://foo.com/a.htm#b    a.html#b  
 5) http://foo.com/a/b/     http://foo.com/c          ../../c  
   
-
+</code>
 ## Attributes ##
 
 ### filePath ###

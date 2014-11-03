@@ -6,29 +6,29 @@ layout: default
 </div>
 
 # nsIContentSecurityPolicy #
-  
+<code>  
 nsIContentSecurityPolicy  
 Describes an XPCOM component used to model and enforce CSPs.  Instances of  
 this class may have multiple policies within them, but there should only be  
 one of these per document/principal.  
   
-
+</code>
 ## Methods ##
 
 ### getPolicy(index) ###
-  
+<code>  
 Accessor method for a read-only string version of the policy at a given  
 index.  
   
-
+</code>
 ### removePolicy(index) ###
-  
+<code>  
 Remove a policy associated with this CSP context.  
 @throws NS_ERROR_FAILURE if the index is out of bounds or invalid.  
   
-
+</code>
 ### appendPolicy(policyString, reportOnly) ###
-  
+<code>  
 Parse and install a CSP policy.  
 @param aPolicy  
        String representation of the policy (e.g., header value)  
@@ -36,7 +36,7 @@ Parse and install a CSP policy.
        Should this policy affect content, script and style processing or  
        just send reports if it is violated?  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -57,7 +57,7 @@ Parse and install a CSP policy.
 </table>
 
 ### getAllowsInlineScript(shouldReportViolations) ###
-  
+<code>  
 Whether this policy allows in-page script.  
 @param shouldReportViolations  
     Whether or not the use of inline script should be reported.  
@@ -68,7 +68,7 @@ Whether this policy allows in-page script.
     Whether or not the effects of the inline script should be allowed  
     (block the compilation if false).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -97,7 +97,7 @@ Whether this policy allows in-page script.
 </table>
 
 ### getAllowsEval(shouldReportViolations) ###
-  
+<code>  
 whether this policy allows eval and eval-like functions  
 such as setTimeout("code string", time).  
 @param shouldReportViolations  
@@ -109,7 +109,7 @@ such as setTimeout("code string", time).
     Whether or not the effects of the eval call should be allowed  
     (block the call if false).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -138,7 +138,7 @@ such as setTimeout("code string", time).
 </table>
 
 ### getAllowsInlineStyle(shouldReportViolations) ###
-  
+<code>  
 Whether this policy allows in-page styles.  
 This includes <style> tags with text content and style="" attributes in  
 HTML elements.  
@@ -152,7 +152,7 @@ HTML elements.
     Whether or not the effects of the inline style should be allowed  
     (block the rules if false).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -182,7 +182,7 @@ HTML elements.
 </table>
 
 ### getAllowsNonce(aNonce, aContentType, shouldReportViolation) ###
-  
+<code>  
 Whether this policy accepts the given nonce  
 @param aNonce  
     The nonce string to check against the policy  
@@ -196,7 +196,7 @@ Whether this policy accepts the given nonce
 @return  
     Whether or not this nonce is valid  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -236,7 +236,7 @@ Whether this policy accepts the given nonce
 </table>
 
 ### getAllowsHash(aContent, aContentType, shouldReportViolation) ###
-  
+<code>  
 Whether this policy accepts the given inline resource based on the hash  
 of its content.  
 @param aContent  
@@ -251,7 +251,7 @@ of its content.
 @return  
     Whether or not this inline resource is whitelisted by a hash-source  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -291,7 +291,7 @@ of its content.
 </table>
 
 ### logViolationDetails(violationType, sourceFile, scriptSample, lineNum, nonce, content) ###
-  
+<code>  
 For each violated policy (of type violationType), log policy violation on  
 the Error Console and send a report to report-uris present in the violated  
 policies.  
@@ -314,7 +314,7 @@ policies.
     determine which policies were violated and send the appropriate  
     reports.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -363,7 +363,7 @@ policies.
 </table>
 
 ### setRequestContext(selfURI, referrer, aChannel) ###
-  
+<code>  
 Called after the CSP object is created to fill in appropriate request  
 context and give it a reference to its owning principal for violation  
 report generation.  
@@ -372,9 +372,9 @@ if multiple are available.  Either way, it will attempt to obtain the URI,
 referrer and the principal from whatever is available.  If the channel is  
 available, it'll also store that for processing policy-uri directives.  
   
-
+</code>
 ### permitsAncestry(docShell) ###
-  
+<code>  
 Verifies ancestry as permitted by the policy.  
   
 NOTE: Calls to this may trigger violation reports when queried, so this  
@@ -387,7 +387,7 @@ value should not be cached.
    report-only policies, which will send reports and then return true  
    here when violated).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -414,7 +414,7 @@ value should not be cached.
 </table>
 
 ### permitsBaseURI(aURI) ###
-  
+<code>  
 Whether this policy allows setting the document's base URI to  
 a given value.  
   
@@ -422,7 +422,7 @@ a given value.
    Whether or not the provided URI is allowed to be used as the  
    document's base URI. (block the setting if false).  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -436,7 +436,7 @@ a given value.
 </table>
 
 ### shouldLoad(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeTypeGuess, aExtra) ###
-  
+<code>  
 Delegate method called by the service when sub-elements of the protected  
 document are being loaded.  Given a bit of information about the request,  
 decides whether or not the policy is satisfied.  
@@ -444,7 +444,7 @@ decides whether or not the policy is satisfied.
 Calls to this may trigger violation reports when queried, so  
 this value should not be cached.  
   
-
+</code>
 ## Attributes ##
 
 ### policyCount ###

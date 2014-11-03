@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # mozIThirdPartyUtil #
-  
+<code>  
 Utility functions for determining whether a given URI, channel, or window  
 hierarchy is third party with respect to a known URI.  
   
-
+</code>
 ## Methods ##
 
 ### isThirdPartyURI(aFirstURI, aSecondURI) ###
-  
+<code>  
 isThirdPartyURI  
   
 Determine whether two URIs are third party with respect to each other.  
@@ -34,7 +34,7 @@ respect to "http://images.google.com/", but "http://mail.yahoo.com/" and
 @throws if either URI is null, has a malformed host, or has an empty host  
         and is not a file:// URI.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -47,7 +47,7 @@ respect to "http://images.google.com/", but "http://mail.yahoo.com/" and
 </table>
 
 ### isThirdPartyWindow(aWindow, aURI) ###
-  
+<code>  
 isThirdPartyWindow  
   
 Determine whether the given window hierarchy is third party. This is done  
@@ -85,7 +85,7 @@ a URI of "http://mozilla.com", the result will be true.
   
 @see isThirdPartyURI  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -118,7 +118,7 @@ a URI of "http://mozilla.com", the result will be true.
 </table>
 
 ### isThirdPartyChannel(aChannel, aURI) ###
-  
+<code>  
 isThirdPartyChannel  
   
 Determine whether the given channel and its content window hierarchy is  
@@ -162,7 +162,7 @@ a URI of "http://mozilla.com", the result will be true.
   
 @see isThirdPartyWindow  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -195,7 +195,7 @@ a URI of "http://mozilla.com", the result will be true.
 </table>
 
 ### getBaseDomain(aHostURI) ###
-  
+<code>  
 getBaseDomain  
   
 Get the base domain for aHostURI; e.g. for "www.bbc.co.uk", this would be  
@@ -211,7 +211,7 @@ special cases elided above.
   
 @return the base domain.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -236,16 +236,17 @@ special cases elided above.
 </table>
 
 ### getURIFromWindow(aWindow) ###
-  
+<code>  
 getURIFromWindow  
   
 Returns the URI associated with the script object principal for the  
 window.  
   
-
+</code>
 ### getTopWindowForChannel(aChannel) ###
-  
+<code>  
 getTopWindowForChannel  
   
 Returns the top-level window associated with the given channel.  
   
+</code>

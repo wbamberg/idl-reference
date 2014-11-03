@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIDOMUIEvent #
-  
+<code>  
 The nsIDOMUIEvent interface is the datatype for all UI events in the  
 Document Object Model.  
   
 For more information on this interface please see  
 http://www.w3.org/TR/DOM-Level-2-Events/  
   
-
+</code>
 ## Methods ##
 
 ### initUIEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg) ###

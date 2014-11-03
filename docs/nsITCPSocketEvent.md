@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # nsITCPSocketEvent #
-  
+<code>  
 nsITCPSocketEvent is the event object which is passed as the  
 first argument to all the event handler callbacks. It contains  
 the socket that was associated with the event, the type of event,  
 and the data associated with the event (if any).  
   
-
+</code>
 ## Attributes ##
 
 ### target ###

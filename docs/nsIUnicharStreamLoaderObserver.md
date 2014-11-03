@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onDetermineCharset(aLoader, aContext, aSegment) ###
-  
+<code>  
 Called as soon as at least 512 octets of data have arrived.  
 If the stream receives fewer than 512 octets of data in total,  
 called upon stream completion but before calling OnStreamComplete.  
@@ -22,7 +22,7 @@ Will not be called if the stream receives no data at all.
   
 @return the name of the character set to be used to decode this stream  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -59,7 +59,7 @@ Will not be called if the stream receives no data at all.
 </table>
 
 ### onStreamComplete(aLoader, aContext, aStatus, aBuffer) ###
-  
+<code>  
 Called when the entire stream has been loaded and decoded.  
   
 @param aLoader the unichar stream loader  
@@ -73,7 +73,7 @@ loader's init() method.  If onDetermineCharset fails,
 onStreamComplete will still be called, but aStatus will be an  
 error code.  
   
-
+</code>
 #### Parameters ####
 
 <table>

@@ -6,28 +6,28 @@ layout: default
 </div>
 
 # nsIHttpChannelInternal #
-  
+<code>  
 Dumping ground for http.  This interface will never be frozen.  If you are  
 using any feature exposed by this interface, be aware that this interface  
 will change and you will be broken.  You have been warned.  
   
-
+</code>
 ## Methods ##
 
 ### getRequestVersion(major, minor) ###
-  
+<code>  
 Get the major/minor version numbers for the request  
   
-
+</code>
 ### getResponseVersion(major, minor) ###
-  
+<code>  
 Get the major/minor version numbers for the response  
   
-
+</code>
 ### takeAllSecurityMessages(aMessages) ###
 
 ### setCookie(aCookieHeader) ###
-  
+<code>  
 Helper method to set a cookie with a consumer-provided  
 cookie header, _but_ using the channel's other information  
 (URI's, prompters, date headers etc).  
@@ -35,7 +35,7 @@ cookie header, _but_ using the channel's other information
 @param aCookieHeader  
        The cookie header to be parsed.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -49,17 +49,17 @@ cookie header, _but_ using the channel's other information
 </table>
 
 ### setupFallbackChannel(aFallbackKey) ###
-  
+<code>  
 Setup this channel as an application cache fallback channel.  
   
-
+</code>
 ### setCacheKeysRedirectChain(cacheKeys) ###
-  
+<code>  
 Transfer chain of redirected cache-keys.  
   
-
+</code>
 ### HTTPUpgrade(aProtocolName, aListener) ###
-  
+<code>  
 HTTPUpgrade allows for the use of HTTP to bootstrap another protocol  
 via the RFC 2616 Upgrade request header in conjunction with a 101 level  
 response. The nsIHttpUpgradeListener will have its  
@@ -76,7 +76,7 @@ is delievered.
 @param aListener  
        The callback object used to handle a successful upgrade  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -96,17 +96,17 @@ is delievered.
 </table>
 
 ### addRedirect(aPrincipal) ###
-  
+<code>  
 Add a new nsIPrincipal to the redirect chain. This is the only way to  
 write to nsIRedirectHistory.redirects.  
   
-
+</code>
 ### forceNoIntercept() ###
-  
+<code>  
 Force a channel that has not been AsyncOpen'ed to skip any check for possible  
 interception and proceed immediately to the network/cache.  
   
-
+</code>
 ## Attributes ##
 
 ### documentURI ###

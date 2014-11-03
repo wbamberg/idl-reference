@@ -10,16 +10,16 @@ layout: default
 ## Methods ##
 
 ### removePage(aURI) ###
-  
+<code>  
 Removes a page from global history.  
   
 @note It is preferrable to use this one rather then RemovePages when  
       removing less than 10 pages, since it won't start a full batch  
       operation.  
   
-
+</code>
 ### removePages(aURIs, aLength) ###
-  
+<code>  
 Removes a list of pages from global history.  
   
 @param aURIs  
@@ -29,7 +29,7 @@ Removes a list of pages from global history.
   
 @note the removal happens in a batch.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -49,7 +49,7 @@ Removes a list of pages from global history.
 </table>
 
 ### removePagesFromHost(aHost, aEntireDomain) ###
-  
+<code>  
 Removes all global history information about pages for a given host.  
   
 @param aHost  
@@ -65,7 +65,7 @@ Removes all global history information about pages for a given host.
   
 @note The removal happens in a batch.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -91,7 +91,7 @@ Removes all global history information about pages for a given host.
 </table>
 
 ### removePagesByTimeframe(aBeginTime, aEndTime) ###
-  
+<code>  
 Removes all pages for a given timeframe.  
 Limits are included: aBeginTime <= timeframe <= aEndTime  
   
@@ -102,7 +102,7 @@ Limits are included: aBeginTime <= timeframe <= aEndTime
   
 @note The removal happens in a batch.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -122,7 +122,7 @@ Limits are included: aBeginTime <= timeframe <= aEndTime
 </table>
 
 ### removeVisitsByTimeframe(aBeginTime, aEndTime) ###
-  
+<code>  
 Removes all visits in a given timeframe.  
 Limits are included: aBeginTime <= timeframe <= aEndTime.  
 Any pages that becomes unvisited as a result will also be deleted.  
@@ -134,7 +134,7 @@ Any pages that becomes unvisited as a result will also be deleted.
   
 @note The removal happens in a batch.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -154,7 +154,7 @@ Any pages that becomes unvisited as a result will also be deleted.
 </table>
 
 ### removeAllPages() ###
-  
+<code>  
 Removes all existing pages from global history.  
 Visits are removed synchronously, but pages are expired asynchronously  
 off the main-thread.  
@@ -163,3 +163,4 @@ off the main-thread.
       instead an onClearHistory notification is sent to  
       nsINavHistoryObserver implementers.  
   
+</code>

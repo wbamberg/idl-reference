@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIEmbeddingSiteWindow #
-  
+<code>  
 The nsIEmbeddingSiteWindow is implemented by the embedder to provide  
 Gecko with the means to call up to the host to resize the window,  
 hide or show it and set/get its title.  
   
-
+</code>
 ## Methods ##
 
 ### setDimensions(flags, x, y, cx, cy) ###
-  
+<code>  
 Sets the dimensions for the window; the position & size. The  
 flags to indicate what the caller wants to set and whether the size  
 refers to the inner or outer area. The inner area refers to just  
@@ -39,7 +39,7 @@ surrounding chrome, window frame, title bar, and so on.
 @see DIM_FLAGS_SIZE_OUTER  
 @see DIM_FLAGS_SIZE_INNER  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -92,7 +92,7 @@ surrounding chrome, window frame, title bar, and so on.
 </table>
 
 ### getDimensions(flags, x, y, cx, cy) ###
-  
+<code>  
 Gets the dimensions of the window. The caller may pass  
 <CODE>nullptr</CODE> for any value it is uninterested in receiving.  
   
@@ -107,7 +107,7 @@ Gets the dimensions of the window. The caller may pass
 @see DIM_FLAGS_SIZE_OUTER  
 @see DIM_FLAGS_SIZE_INNER  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -145,15 +145,15 @@ Gets the dimensions of the window. The caller may pass
 </table>
 
 ### setFocus() ###
-  
+<code>  
 Give the window focus.  
   
-
+</code>
 ### blur() ###
-  
+<code>  
 Blur the window. This should unfocus the window and send an onblur event.  
   
-
+</code>
 ## Attributes ##
 
 ### visibility ###

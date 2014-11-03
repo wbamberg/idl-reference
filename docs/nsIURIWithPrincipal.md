@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIURIWithPrincipal #
-  
+<code>  
 nsIURIWithPrincipal is implemented by URIs which are associated with a  
 specific principal.  
   
-
+</code>
 ## Attributes ##
 
 ### principal ###

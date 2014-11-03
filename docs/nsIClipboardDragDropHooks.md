@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIClipboardDragDropHooks #
-  
+<code>  
 Interfaces for overriding the built-in drag, drop, copy, and paste  
 implementations in the content area and editors. Use this to do things  
 such as prevent a drag from starting, adding or removing  
@@ -36,11 +36,11 @@ Notes:
  * AllowDrop will be called MANY times during drag so ensure that it is  
    efficient.   
   
-
+</code>
 ## Methods ##
 
 ### allowStartDrag(event) ###
-  
+<code>  
 Prevents the drag from starting  
   
 @param event DOM event (drag gesture)  
@@ -48,7 +48,7 @@ Prevents the drag from starting
 @return TRUE  drag can proceed  
 @return FALSE drag is cancelled, does not go to OS  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -73,7 +73,7 @@ Prevents the drag from starting
 </table>
 
 ### allowDrop(event, session) ###
-  
+<code>  
 Tells gecko whether a drop is allowed on this content area  
   
 @param event   DOM event (drag over)  
@@ -85,7 +85,7 @@ Tells gecko whether a drop is allowed on this content area
 @return FALSE indicates to OS drop is not allowed. On win32, this  
                will change the cursor to "reject".  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -118,7 +118,7 @@ Tells gecko whether a drop is allowed on this content area
 </table>
 
 ### onCopyOrDrag(aEvent, trans) ###
-  
+<code>  
 Alter the flavors or data presented to the OS  
 Used for drag and copy actions  
 Because this can be called many times, it is highly recommended  
@@ -132,7 +132,7 @@ not negatively impacted.
 @return TRUE  copy/drag can proceed  
 @return FALSE copy/drag is cancelled, does not go to OS  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -164,7 +164,7 @@ not negatively impacted.
 </table>
 
 ### onPasteOrDrop(event, trans) ###
-  
+<code>  
 Provide an alternative action to the built-in behavior when  
 something is dropped on the browser or in an editor  
   
@@ -176,7 +176,7 @@ something is dropped on the browser or in an editor
                behavior  
 @return FALSE action was not overridden, do built-in behavior  
   
-
+</code>
 #### Parameters ####
 
 <table>

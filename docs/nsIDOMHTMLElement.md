@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMHTMLElement #
-  
+<code>  
 The nsIDOMHTMLElement interface is the primary [X]HTML element  
 interface. It represents a single [X]HTML element in the document  
 tree.  
@@ -17,7 +17,7 @@ http://www.w3.org/TR/DOM-Level-2-HTML/
 with changes from the work-in-progress WHATWG HTML specification:  
 http://www.whatwg.org/specs/web-apps/current-work/  
   
-
+</code>
 ## Methods ##
 
 ### click() ###

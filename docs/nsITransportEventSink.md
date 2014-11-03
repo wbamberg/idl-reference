@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onTransportStatus(aTransport, aStatus, aProgress, aProgressMax) ###
-  
+<code>  
 Transport status notification.  
   
 @param aTransport  
@@ -26,7 +26,7 @@ Transport status notification.
        the maximum amount of data that will be read or written.  if  
        unknown, 0xFFFFFFFF will be passed.  
   
-
+</code>
 #### Parameters ####
 
 <table>

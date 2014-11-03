@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIProtocolProxyCallback #
-  
+<code>  
 This interface serves as a closure for nsIProtocolProxyService's  
 asyncResolve method.  
   
-
+</code>
 ## Methods ##
 
 ### onProxyAvailable(aRequest, aURI, aProxyInfo, aStatus) ###
-  
+<code>  
 This method is called when proxy info is available or when an error  
 in the proxy resolution occurs.  
   
@@ -32,7 +32,7 @@ in the proxy resolution occurs.
        could not be satisfied, in which case the value of aStatus  
        indicates the reason for the failure and aProxyInfo will be null.  
   
-
+</code>
 #### Parameters ####
 
 <table>

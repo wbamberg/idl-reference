@@ -10,17 +10,17 @@ layout: default
 ## Methods ##
 
 ### getExtensions(aCallback) ###
-  
+<code>  
 The extensions object for the application. Contains a list  
 of all installed extensions.  
   
-
+</code>
 ### quit() ###
-  
+<code>  
 Quits the application (if nobody objects to quit-application-requested).  
 @returns whether quitting will proceed  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -33,11 +33,11 @@ Quits the application (if nobody objects to quit-application-requested).
 </table>
 
 ### restart() ###
-  
+<code>  
 Restarts the application (if nobody objects to quit-application-requested).  
 @returns whether restarting will proceed  
   
-
+</code>
 #### Returns ####
 
 <table>

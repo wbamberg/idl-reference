@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIPrintSettingsWin #
-  
+<code>  
 Simplified PrintSettings for Windows interface   
   
-
+</code>
 ## Attributes ##
 
 ### deviceName ###

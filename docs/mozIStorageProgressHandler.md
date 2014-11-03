@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # mozIStorageProgressHandler #
-  
+<code>  
 mozIProgressHandler is to be implemented by storage consumers that  
 wish to receive callbacks during the request execution.  
   
-
+</code>
 ## Methods ##
 
 ### onProgress(aConnection) ###
-  
+<code>  
 onProgress is invoked periodically during long running calls.  
   
 @param aConnection    connection, for which progress handler is  
@@ -22,7 +22,7 @@ onProgress is invoked periodically during long running calls.
   
 @return true to abort request, false to continue work.  
   
-
+</code>
 #### Parameters ####
 
 <table>

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIRDFLiteral #
-  
+<code>  
 A literal node in the graph, whose value is a string.  
   
-
+</code>
 ## Methods ##
 
 ### GetValueConst(aConstValue) ###
-  
+<code>  
 An unscriptable version used to avoid a string copy. Meant  
 for use as a performance optimization.  
   
-
+</code>
 ## Attributes ##
 
 ### Value ###

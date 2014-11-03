@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIX509CertDB #
-  
+<code>  
 This represents a service to access and manipulate  
 X.509 certificates stored in a database.  
   
-
+</code>
 ## Methods ##
 
 ### findCertByNickname(aToken, aNickname) ###
-  
+<code>  
  Given a nickname and optionally a token,  
  locate the matching certificate.  
   
@@ -26,7 +26,7 @@ X.509 certificates stored in a database.
   
  @return The matching certificate if found.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -60,7 +60,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### findCertByDBKey(aDBkey, aToken) ###
-  
+<code>  
  Will find a certificate based on its dbkey  
  retrieved by getting the dbKey attribute of  
  the certificate.  
@@ -71,7 +71,7 @@ X.509 certificates stored in a database.
                this function to a token device.  
                Can be null to mean any token.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -94,7 +94,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### findCertNicknames(aToken, aType, count, certNameList) ###
-  
+<code>  
  Obtain a list of certificate nicknames from the database.  
  What the name is depends on type:  
    user, ca, or server cert - the nickname  
@@ -108,7 +108,7 @@ X.509 certificates stored in a database.
  @param count The number of nicknames in the returned array  
  @param certNameList The returned array of certificate nicknames.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -143,7 +143,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### findEmailEncryptionCert(aNickname) ###
-  
+<code>  
  Find user's own email encryption certificate by nickname.  
   
  @param aNickname The nickname to be used as the key  
@@ -151,7 +151,7 @@ X.509 certificates stored in a database.
   
  @return The matching certificate if found.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -177,7 +177,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### findEmailSigningCert(aNickname) ###
-  
+<code>  
  Find user's own email signing certificate by nickname.  
   
  @param aNickname The nickname to be used as the key  
@@ -185,7 +185,7 @@ X.509 certificates stored in a database.
   
  @return The matching certificate if found.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -211,7 +211,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### findCertByEmailAddress(aToken, aEmailAddress) ###
-  
+<code>  
  Find a certificate by email address.  
   
  @param aToken Optionally limits the scope of  
@@ -222,7 +222,7 @@ X.509 certificates stored in a database.
   
  @return The matching certificate if found.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -256,7 +256,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### importCertificates(data, length, type, ctx) ###
-  
+<code>  
  Use this to import a stream sent down as a mime type into  
  the certificate database on the default token.  
  The stream may consist of one or more certificates.  
@@ -266,7 +266,7 @@ X.509 certificates stored in a database.
  @param type The type of the certificate, see constants in nsIX509Cert  
  @param ctx A UI context.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -298,14 +298,14 @@ X.509 certificates stored in a database.
 </table>
 
 ### importEmailCertificate(data, length, ctx) ###
-  
+<code>  
  Import another person's email certificate into the database.  
   
  @param data The raw data to be imported  
  @param length The length of the data to be imported  
  @param ctx A UI context.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -331,14 +331,14 @@ X.509 certificates stored in a database.
 </table>
 
 ### importServerCertificate(data, length, ctx) ###
-  
+<code>  
  Import a server machine's certificate into the database.  
   
  @param data The raw data to be imported  
  @param length The length of the data to be imported  
  @param ctx A UI context.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -364,7 +364,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### importUserCertificate(data, length, ctx) ###
-  
+<code>  
  Import a personal certificate into the database, assuming  
  the database already contains the private key for this certificate.  
   
@@ -372,7 +372,7 @@ X.509 certificates stored in a database.
  @param length The length of the data to be imported  
  @param ctx A UI context.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -398,12 +398,12 @@ X.509 certificates stored in a database.
 </table>
 
 ### deleteCertificate(aCert) ###
-  
+<code>  
  Delete a certificate stored in the database.  
   
  @param aCert Delete this certificate.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -417,7 +417,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### setCertTrust(cert, type, trust) ###
-  
+<code>  
  Modify the trust that is stored and associated to a certificate within  
  a database. Separate trust is stored for  
  One call manipulates the trust for one trust type only.  
@@ -428,7 +428,7 @@ X.509 certificates stored in a database.
  @param trust A bitmask. The new trust for the possible usages.  
               See the trust constants defined within this interface.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -455,13 +455,13 @@ X.509 certificates stored in a database.
 </table>
 
 ### setCertTrustFromString(cert, trustString) ###
-  
+<code>  
 @param cert        The certificate for which to modify trust.  
 @param trustString decoded by CERT_DecodeTrustString. 3 comma separated  
                    characters, indicating SSL, Email, and Obj signing  
                    trust.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -483,7 +483,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### isCertTrusted(cert, certType, trustType) ###
-  
+<code>  
  Query whether a certificate is trusted for a particular use.  
   
  @param cert Obtain the stored trust of this certificate.  
@@ -493,7 +493,7 @@ X.509 certificates stored in a database.
   
  @return Returns true if the certificate is trusted for the given use.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -531,7 +531,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### importCertsFromFile(aToken, aFile, aType) ###
-  
+<code>  
  Import certificate(s) from file  
   
  @param aToken Optionally limits the scope of  
@@ -542,7 +542,7 @@ X.509 certificates stored in a database.
  @param aType Describes the type of certificate that is going to  
               be imported. See type constants in nsIX509Cert.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -572,7 +572,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### importPKCS12File(aToken, aFile) ###
-  
+<code>  
  Import a PKCS#12 file containing cert(s) and key(s) into the database.  
   
  @param aToken Optionally limits the scope of  
@@ -581,7 +581,7 @@ X.509 certificates stored in a database.
  @param aFile Identifies a file that contains the data  
               to be imported.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -604,7 +604,7 @@ X.509 certificates stored in a database.
 </table>
 
 ### exportPKCS12File(aToken, aFile, count, aCerts) ###
-  
+<code>  
  Export a set of certs and keys from the database to a PKCS#12 file.  
   
  @param aToken Optionally limits the scope of  
@@ -615,7 +615,7 @@ X.509 certificates stored in a database.
  @param count The number of certificates to be exported.  
  @param aCerts The array of all certificates to be exported.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -656,7 +656,7 @@ X.509 certificates stored in a database.
 ### openSignedAppFileAsync(trustedRoot, aJarFile, callback) ###
 
 ### verifySignedManifestAsync(trustedRoot, aManifestStream, aSignatureStream, callback) ###
-  
+<code>  
 Given streams containing a signature and a manifest file, verifies  
 that the signature is valid for the manifest. The signature must  
 come from a certificate that is trusted for code signing and that  
@@ -667,11 +667,11 @@ was issued by the given trusted root.
   
  On failure, an error code is returned.  
   
-
+</code>
 ### addCert(certDER, aTrust, aName) ###
 
 ### verifyCertNow(aCert, aUsage, aFlags, verifiedChain, aHasEVPolicy) ###
- Warning: This interface is inteded to use only for testing only as:  
+<code> Warning: This interface is inteded to use only for testing only as:  
    1. It can create IO on the main thread.  
    2. It is in constant change, so in/out can change at any release.  
   
@@ -688,7 +688,7 @@ was issued by the given trusted root.
  @return 0 if success or the value or the error code for the verification  
          failure  
   
-
+</code>
 #### Parameters ####
 
 <table>

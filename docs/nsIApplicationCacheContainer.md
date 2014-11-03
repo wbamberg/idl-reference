@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIApplicationCacheContainer #
-  
+<code>  
 Interface used by objects that can be associated with an  
 application cache.  
   
-
+</code>
 ## Attributes ##
 
 ### applicationCache ###

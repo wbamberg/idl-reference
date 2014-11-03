@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIUDPMessage #
-  
+<code>  
 nsIUDPMessage  
   
 This interface is used to encapsulate an incomming UDP message  
   
-
+</code>
 ## Methods ##
 
 ### getDataAsTArray() ###

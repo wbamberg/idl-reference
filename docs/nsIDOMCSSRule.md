@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIDOMCSSRule #
-  
+<code>  
 The nsIDOMCSSRule interface is a datatype for a CSS style rule in  
 the Document Object Model.  
   
 For more information on this interface please see  
 http://www.w3.org/TR/DOM-Level-2-Style  
   
-
+</code>
 ## Methods ##
 
 ### getCSSRule() ###

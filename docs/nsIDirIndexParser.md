@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIDirIndexParser #
-  
+<code>  
 A parser for application/http-index-format  
   
-
+</code>
 ## Attributes ##
 
 ### listener ###

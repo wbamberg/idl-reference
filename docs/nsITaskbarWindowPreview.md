@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getButton(index) ###
-  
+<code>  
 Gets the nth button for the preview image. By default, all of the buttons  
 are invisible.  
   
@@ -19,7 +19,7 @@ are invisible.
 @param index The index into the button array. Must be >= 0 and <  
              MAX_TOOLBAR_BUTTONS.  
   
-
+</code>
 #### Parameters ####
 
 <table>

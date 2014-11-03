@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIConsoleMessage #
-  
+<code>  
 This is intended as a base interface; implementations may want to  
 provide an object that can be qi'ed to provide more specific  
 message information.  
   
-
+</code>
 ## Methods ##
 
 ### toString() ###

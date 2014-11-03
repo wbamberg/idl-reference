@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIWebBrowserPrint #
-  
+<code>  
 nsIWebBrowserPrint corresponds to the main interface  
 for printing an embedded Gecko web browser window/document  
   
-
+</code>
 ## Methods ##
 
 ### print(aThePrintSettings, aWPListener) ###
-  
+<code>  
 Print the specified DOM window  
   
 @param aThePrintSettings - Printer Settings for the print job, if aThePrintSettings is null  
@@ -22,7 +22,7 @@ Print the specified DOM window
 @param aWPListener - is updated during the print  
 @return void  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -54,7 +54,7 @@ Print the specified DOM window
 </table>
 
 ### printPreview(aThePrintSettings, aChildDOMWin, aWPListener) ###
-  
+<code>  
 Print Preview the specified DOM window  
   
 @param aThePrintSettings - Printer Settings for the print preview, if aThePrintSettings is null  
@@ -63,7 +63,7 @@ Print Preview the specified DOM window
 @param aWPListener - is updated during the printpreview  
 @return void  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -101,14 +101,14 @@ Print Preview the specified DOM window
 </table>
 
 ### printPreviewNavigate(aNavType, aPageNum) ###
-  
+<code>  
 Print Preview - Navigates within the window  
   
 @param aNavType - navigation enum  
 @param aPageNum - page num to navigate to when aNavType = ePrintPreviewGoToPageNum  
 @return void  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -139,11 +139,11 @@ Print Preview - Navigates within the window
 </table>
 
 ### cancel() ###
-  
+<code>  
 Cancels the current print   
 @return void  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -156,7 +156,7 @@ Cancels the current print
 </table>
 
 ### enumerateDocumentNames(aCount, aResult) ###
-  
+<code>  
 Returns an array of the names of all documents names (Title or URL)  
 and sub-documents. This will return a single item if the attr "isFramesetDocument" is false  
 and may return any number of items is "isFramesetDocument" is true  
@@ -165,7 +165,7 @@ and may return any number of items is "isFramesetDocument" is true
 @param  aResult - returns array of names  
 @return void  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -196,11 +196,11 @@ and may return any number of items is "isFramesetDocument" is true
 </table>
 
 ### exitPrintPreview() ###
-  
+<code>  
 This exists PrintPreview mode and returns browser window to galley mode  
 @return void  
   
-
+</code>
 #### Returns ####
 
 <table>

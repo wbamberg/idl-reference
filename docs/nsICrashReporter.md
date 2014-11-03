@@ -6,23 +6,23 @@ layout: default
 </div>
 
 # nsICrashReporter #
-  
+<code>  
 Provides access to crash reporting functionality.  
   
 @status UNSTABLE - This interface is not frozen and will probably change in  
                    future releases.  
   
-
+</code>
 ## Methods ##
 
 ### setEnabled(enabled) ###
-  
+<code>  
 Enable or disable crash reporting at runtime. Not available to script  
 because the JS engine relies on proper exception handler chaining.  
   
-
+</code>
 ### annotateCrashReport(key, data) ###
-  
+<code>  
 Add some extra data to be submitted with a crash report.  
   
 @param key  
@@ -35,7 +35,7 @@ Add some extra data to be submitted with a crash report.
                             Invalid characters for key are '=' and  
                             '\n'.  Invalid character for data is '\0'.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -55,7 +55,7 @@ Add some extra data to be submitted with a crash report.
 </table>
 
 ### appendAppNotesToCrashReport(data) ###
-  
+<code>  
 Append some data to the "Notes" field, to be submitted with a crash report.  
 Unlike annotateCrashReport, this method will append to existing data.  
   
@@ -66,7 +66,7 @@ Unlike annotateCrashReport, this method will append to existing data.
 @throw NS_ERROR_INVALID_ARG if data contains invalid characters.  
                             The only invalid character is '\0'.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -80,7 +80,7 @@ Unlike annotateCrashReport, this method will append to existing data.
 </table>
 
 ### registerAppMemory(ptr, size) ###
-  
+<code>  
 Register a given memory range to be included in the crash report.  
   
 @param ptr  
@@ -91,7 +91,7 @@ Register a given memory range to be included in the crash report.
 @throw NS_ERROR_NOT_INITIALIZED if crash reporting not initialized  
 @throw NS_ERROR_NOT_IMPLEMENTED if unavailable on the current OS  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -111,14 +111,14 @@ Register a given memory range to be included in the crash report.
 </table>
 
 ### writeMinidumpForException(aExceptionInfo) ###
-  
+<code>  
 Write a minidump immediately, with the user-supplied exception  
 information. This is implemented on Windows only, because  
 SEH (structured exception handling) exists on Windows only.  
   
 @param aExceptionInfo  EXCEPTION_INFO* provided by Window's SEH  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -132,12 +132,12 @@ SEH (structured exception handling) exists on Windows only.
 </table>
 
 ### appendObjCExceptionInfoToAppNotes(aException) ###
-  
+<code>  
 Append note containing an Obj-C exception's info.  
   
 @param aException  NSException object to append note for  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -151,21 +151,21 @@ Append note containing an Obj-C exception's info.
 </table>
 
 ### UpdateCrashEventsDir() ###
-  
+<code>  
 Cause the crash reporter to re-evaluate where crash events should go.  
   
 This should be called during application startup and whenever profiles  
 change.  
   
-
+</code>
 ### saveMemoryReport() ###
-  
+<code>  
 Save an anonymized memory report file for inclusion in a future crash  
 report in this session.  
   
 @throws NS_ERROR_NOT_INITIALIZED if crash reporting is disabled.  
   
-
+</code>
 ## Attributes ##
 
 ### enabled ###

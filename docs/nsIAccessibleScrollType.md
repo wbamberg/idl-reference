@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIAccessibleScrollType #
-  
+<code>  
 These constants control the scrolling of an object or substring into a  
 window. Note, keep them synchronized with IA2ScrollType.  
   
-
+</code>
 ## Constants ##
 
 ### SCROLL_TYPE_TOP_LEFT ###

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIRequest #
-  
+<code>  
 nsIRequest  
   
-
+</code>
 ## Methods ##
 
 ### isPending() ###
-  
+<code>  
 Indicates whether the request is pending. nsIRequest::isPending is  
 true when there is an outstanding asynchronous event that will make  
 the request no longer be pending.  Requests do not necessarily start  
@@ -28,7 +28,7 @@ Requests can become pending multiple times during their lifetime.
   OnStopRequest has fired).  
 @note Suspended requests are still considered pending.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -43,7 +43,7 @@ Requests can become pending multiple times during their lifetime.
 </table>
 
 ### cancel(aStatus) ###
-  
+<code>  
 Cancels the current request.  This will close any open input or  
 output streams and terminate any async requests.  Users should   
 normally pass NS_BINDING_ABORTED, although other errors may also  
@@ -64,7 +64,7 @@ failure code; however, some implementations may allow aStatus to
 be a success code such as NS_OK.  In general, aStatus should be  
 a failure code.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -78,7 +78,7 @@ a failure code.
 </table>
 
 ### suspend() ###
-  
+<code>  
 Suspends the current request.  This may have the effect of closing  
 any underlying transport (in order to free up resources), although  
 any open streams remain logically opened and will continue delivering  
@@ -92,14 +92,14 @@ may continue to deliver events already posted to an event queue. In
 general, callers should be capable of handling events even after   
 suspending a request.  
   
-
+</code>
 ### resume() ###
-  
+<code>  
 Resumes the current request.  This may have the effect of re-opening  
 any underlying transport and will resume the delivery of data to   
 any open streams.  
   
-
+</code>
 ## Attributes ##
 
 ### name ###

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsINavHistoryContainerResultNode #
-  
+<code>  
 Base class for container results. This includes all types of groupings.  
 Bookmark folders and places queries will be QueryResultNodes which extends  
 these items.  
   
-
+</code>
 ## Methods ##
 
 ### getChild(aIndex) ###
 
 ### getChildIndex(aNode) ###
-  
+<code>  
 Get the index of a direct child in this container.  
   
 @param aNode  
@@ -28,7 +28,7 @@ Get the index of a direct child in this container.
 @throws NS_ERROR_INVALID_ARG if aNode isn't a direct child of this  
 container.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -56,7 +56,7 @@ container.
 </table>
 
 ### findNodeByDetails(aURIString, aTime, aItemId, aRecursive) ###
-  
+<code>  
 Look for a node in the container by some of its details.  Does not search  
 closed containers.  
   
@@ -73,7 +73,7 @@ closed containers.
 @return a result node that matches the given details if any, null  
         otherwise.  
   
-
+</code>
 #### Parameters ####
 
 <table>

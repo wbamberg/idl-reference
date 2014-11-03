@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### initListBuild(removedItems) ###
-  
+<code>  
 Initializes a jump list build and returns a list of items the user removed  
 since the last time a jump list was committed. Removed items can become state  
 after initListBuild is called, lists should be built in single-shot fasion.  
@@ -20,7 +20,7 @@ after initListBuild is called, lists should be built in single-shot fasion.
   
 @returns true if the operation completed successfully.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -45,7 +45,7 @@ after initListBuild is called, lists should be built in single-shot fasion.
 </table>
 
 ### addListToBuild(aCatType, items, catName) ###
-  
+<code>  
 Adds a list and if required, a set of items for the list.  
   
 @param aCatType  
@@ -63,7 +63,7 @@ a particular category or item type.
 since the last commit.  
 @throw NS_ERROR_UNEXPECTED on internal errors.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -100,17 +100,17 @@ since the last commit.
 </table>
 
 ### abortListBuild() ###
-  
+<code>  
 Aborts and clears the current jump list build.  
   
-
+</code>
 ### commitListBuild() ###
-  
+<code>  
 Commits the current jump list build to the Taskbar.  
   
 @returns true if the operation completed successfully.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -123,7 +123,7 @@ Commits the current jump list build to the Taskbar.
 </table>
 
 ### deleteActiveList() ###
-  
+<code>  
 Deletes any currently applied taskbar jump list for this application.  
 Common uses would be the enabling of a privacy mode and uninstallation.  
   
@@ -131,7 +131,7 @@ Common uses would be the enabling of a privacy mode and uninstallation.
   
 @throw NS_ERROR_UNEXPECTED on internal errors.  
   
-
+</code>
 #### Returns ####
 
 <table>

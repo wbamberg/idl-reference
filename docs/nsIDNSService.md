@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIDNSService #
-  
+<code>  
 nsIDNSService  
   
-
+</code>
 ## Methods ##
 
 ### asyncResolve(aHostName, aFlags, aListener, aListenerTarget) ###
-  
+<code>  
 kicks off an asynchronous host lookup.  
   
 @param aHostName  
@@ -31,7 +31,7 @@ kicks off an asynchronous host lookup.
   
 @return An object that can be used to cancel the host lookup.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -78,7 +78,7 @@ kicks off an asynchronous host lookup.
 </table>
 
 ### cancelAsyncResolve(aHostName, aFlags, aListener, aReason) ###
-  
+<code>  
 Attempts to cancel a previously requested async DNS lookup  
   
 @param aHostName  
@@ -93,7 +93,7 @@ Attempts to cancel a previously requested async DNS lookup
   
 @return An object that can be used to cancel the host lookup.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -137,7 +137,7 @@ Attempts to cancel a previously requested async DNS lookup
 </table>
 
 ### resolve(aHostName, aFlags) ###
-  
+<code>  
 called to synchronously resolve a hostname.  warning this method may  
 block the calling thread for a long period of time.  it is extremely  
 unwise to call this function on the UI thread of an application.  
@@ -150,7 +150,7 @@ unwise to call this function on the UI thread of an application.
 @return DNS record corresponding to the given hostname.  
 @throws NS_ERROR_UNKNOWN_HOST if host could not be resolved.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -182,12 +182,12 @@ unwise to call this function on the UI thread of an application.
 </table>
 
 ### getDNSCacheEntries(args) ###
-  
+<code>  
 The method takes a pointer to an nsTArray  
 and fills it with cache entry data  
 Called by the networking dashboard  
   
-
+</code>
 ## Attributes ##
 
 ### myHostName ###

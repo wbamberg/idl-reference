@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIDOMSerializer #
-  
+<code>  
 The nsIDOMSerializer interface is really a placeholder till the W3C  
 DOM Working Group defines a mechanism for serializing DOM nodes.  
 An instance of this interface can be used to serialize a DOM document  
 or any DOM subtree.  
   
-
+</code>
 ## Methods ##
 
 ### serializeToString(root) ###
-  
+<code>  
 The subtree rooted by the specified element is serialized to  
 a string.  
   
@@ -24,7 +24,7 @@ a string.
             be any node, including a Document.  
 @returns The serialized subtree in the form of a Unicode string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -50,7 +50,7 @@ a string.
 </table>
 
 ### serializeToStream(root, stream, charset) ###
-  
+<code>  
 The subtree rooted by the specified element is serialized to  
 a byte stream using the character set specified.  
 @param root The root of the subtree to be serialized. This could  
@@ -60,7 +60,7 @@ a byte stream using the character set specified.
                to a byte stream.  If this string is empty and root is  
                a document, the document's character set will be used.  
   
-
+</code>
 #### Parameters ####
 
 <table>

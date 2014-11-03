@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### createTransport(aSocketTypes, aTypeCount, aHost, aPort, aProxyInfo) ###
-  
+<code>  
 Creates a transport for a specified host and port.  
   
 @param aSocketTypes  
@@ -32,7 +32,7 @@ Creates a transport for a specified host and port.
   
 NOTE: this function can be called from any thread  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -73,7 +73,7 @@ NOTE: this function can be called from any thread
 </table>
 
 ### createUnixDomainTransport(aPath) ###
-  
+<code>  
 Create a transport built on a Unix domain socket, connecting to the  
 given filename.  
   
@@ -105,7 +105,7 @@ connections", and this is what Linux returns.)
        The file name of the Unix domain socket to which we should  
        connect.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -120,7 +120,7 @@ connections", and this is what Linux returns.)
 </table>
 
 ### attachSocket(aFd, aHandler) ###
-  
+<code>  
 Adds a new socket to the list of controlled sockets.  
   
 This will fail with the error code NS_ERROR_NOT_AVAILABLE if the maximum  
@@ -136,7 +136,7 @@ In this case, the notifyWhenCanAttachSocket method should be used.
 NOTE: this function may only be called from an event dispatch on the  
       socket thread.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -157,7 +157,7 @@ NOTE: this function may only be called from an event dispatch on the
 </table>
 
 ### notifyWhenCanAttachSocket(aEvent) ###
-  
+<code>  
 if the number of sockets reaches the limit, then consumers can be  
 notified when the number of sockets becomes less than the limit.  the  
 notification is asynchronous, delivered via the given nsIRunnable  
@@ -170,7 +170,7 @@ instance on the socket transport thread.
 NOTE: this function may only be called from an event dispatch on the  
       socket thread.  
   
-
+</code>
 #### Parameters ####
 
 <table>

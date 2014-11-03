@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIThreadRetargetableStreamListener #
-  
+<code>  
 nsIThreadRetargetableStreamListener  
   
 To be used by classes which implement nsIStreamListener and whose  
 OnDataAvailable callback may be retargeted for delivery off the main thread.  
   
-
+</code>
 ## Methods ##
 
 ### checkListenerChain() ###
-  
+<code>  
 Checks this listener and any next listeners it may have to verify that  
 they can receive OnDataAvailable off the main thread. It is the  
 responsibility of the implementing class to decide on the criteria to  
@@ -29,3 +29,4 @@ support retargeted delivery, i.e. if the next listener does not implement
 nsIThreadRetargetableStreamListener, or a call to its checkListenerChain()  
 fails.  
   
+</code>

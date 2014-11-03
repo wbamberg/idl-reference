@@ -6,25 +6,25 @@ layout: default
 </div>
 
 # nsIAccessibleTextRange #
-  
+<code>  
 A range representing a piece of text in the document.  
   
-
+</code>
 ## Methods ##
 
 ### compare(aOtherRange) ###
-  
+<code>  
 Return true if this range has the same end points of the given range.  
   
-
+</code>
 ### compareEndPoints(aEndPoint, aOtherRange, aOtherRangeEndPoint) ###
-  
+<code>  
 Compare this and given ranges end points.  
   
 @return -1/0/1 if this range end point is before/equal/after the given  
          range end point.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -38,43 +38,43 @@ Compare this and given ranges end points.
 </table>
 
 ### move(aUnit, aCount) ###
-  
+<code>  
  Move the boundary(ies) by the given number of the unit.  
   
-
+</code>
 ### moveStart(aUnit, aCount) ###
 
 ### moveEnd(aUnit, aCount) ###
 
 ### normalize(aUnit) ###
-  
+<code>  
 Normalize the range to the closest unit of the given type.  
   
-
+</code>
 ### findText(aText, aIsBackward, aIsIgnoreCase) ###
-  
+<code>  
 Return range enclosing the found text.  
   
-
+</code>
 ### findAttr(aAttr, aValue, aIsBackward) ###
-  
+<code>  
 Return range enslosing the text having requested attribute.  
   
-
+</code>
 ### addToSelection() ###
-  
+<code>  
 Add/remove the text range from selection.  
   
-
+</code>
 ### removeFromSelection() ###
 
 ### select() ###
 
 ### scrollIntoView(aHow) ###
-  
+<code>  
 Scroll the range into view.  
   
-
+</code>
 ## Attributes ##
 
 ### startContainer ###

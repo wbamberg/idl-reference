@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIDownloadHistory #
-  
+<code>  
 This interface can be used to add a download to history.  There is a separate  
 interface specifically for downloads in case embedders choose to track  
 downloads differently from other types of history.  
   
-
+</code>
 ## Methods ##
 
 ### addDownload(aSource, aReferrer, aStartTime, aDestination) ###
-  
+<code>  
 Adds a download to history.  This will also notify observers that the  
 URI aSource is visited with the topic NS_LINK_VISITED_EVENT_TOPIC if  
 aSource has not yet been visited.  
@@ -41,7 +41,7 @@ aSource has not yet been visited.
       history implementation's notifications system (e.g. nsINavHistoryObserver  
       for toolkit's implementation of this interface).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -85,7 +85,7 @@ aSource has not yet been visited.
 </table>
 
 ### removeAllDownloads() ###
-  
+<code>  
 Remove all downloads from history.  
   
 @note This removal is not guaranteed to be synchronous, since it delegates  
@@ -94,3 +94,4 @@ Remove all downloads from history.
       history implementation's notifications system (e.g. nsINavHistoryObserver  
       for toolkit's implementation of this interface).  
   
+</code>

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # mozIStorageAsyncConnection #
-  
+<code>  
 mozIStorageAsyncConnection represents an asynchronous database  
 connection attached to a specific file or to an in-memory data  
 storage.  It is the primary interface for interacting with a  
 database from the main thread, including creating prepared  
 statements, executing SQL, and examining database errors.  
   
-
+</code>
 ## Methods ##
 
 ### asyncClose(aCallback) ###
-  
+<code>  
 Close this database connection, allowing all pending statements  
 to complete first.  
   
@@ -30,7 +30,7 @@ to complete first.
 @throws NS_ERROR_NOT_SAME_THREAD  
         If is called on a thread other than the one that opened it.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -48,7 +48,7 @@ to complete first.
 </table>
 
 ### asyncClone(aReadOnly, aCallback) ###
-  
+<code>  
 Clone a database and make the clone read only if needed.  
   
 @param aReadOnly  
@@ -82,7 +82,7 @@ Clone a database and make the clone read only if needed.
        - synchronous  
        - wal_autocheckpoint  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -106,7 +106,7 @@ Clone a database and make the clone read only if needed.
 </table>
 
 ### createAsyncStatement(aSQLStatement) ###
-  
+<code>  
 Create an asynchronous statement for the given SQL. An  
 asynchronous statement can only be used to dispatch asynchronous  
 requests to the asynchronous execution thread and cannot be used  
@@ -121,7 +121,7 @@ $var to indicate named arguments.
 @return a new mozIStorageAsyncStatement  
 @note The statement is created lazily on first execution.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -147,7 +147,7 @@ $var to indicate named arguments.
 </table>
 
 ### executeAsync(aStatements, aNumStatements, aCallback) ###
-  
+<code>  
 Execute an array of statements created with this connection using  
 any currently bound parameters. When the array contains multiple  
 statements, the execution is wrapped in a single  
@@ -167,7 +167,7 @@ reset does not need to be called.
 @note If you have any custom defined functions, they must be  
        re-entrant since they can be called on multiple threads.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -207,7 +207,7 @@ reset does not need to be called.
 </table>
 
 ### executeSimpleSQLAsync(aSQLStatement, aCallback) ###
-  
+<code>  
 Execute asynchronously an SQL expression, expecting no arguments.  
   
 @param aSQLStatement  
@@ -217,7 +217,7 @@ Execute asynchronously an SQL expression, expecting no arguments.
        completion.  
 @return an object that can be used to cancel the statement execution.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -250,7 +250,7 @@ Execute asynchronously an SQL expression, expecting no arguments.
 </table>
 
 ### createFunction(aFunctionName, aNumArguments, aFunction) ###
-  
+<code>  
 Create a new SQL function.  If you use your connection on multiple threads,  
 your function needs to be threadsafe, or it should only be called on one  
 thread.  
@@ -264,7 +264,7 @@ thread.
        The instance of mozIStorageFunction, which implements the function  
        in question.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -292,7 +292,7 @@ thread.
 </table>
 
 ### createAggregateFunction(aFunctionName, aNumArguments, aFunction) ###
-  
+<code>  
 Create a new SQL aggregate function.  If you use your connection on  
 multiple threads, your function needs to be threadsafe, or it should only  
 be called on one thread.  
@@ -306,7 +306,7 @@ be called on one thread.
        The instance of mozIStorageAggreagteFunction, which implements the  
        function in question.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -334,13 +334,13 @@ be called on one thread.
 </table>
 
 ### removeFunction(aFunctionName) ###
-  
+<code>  
 Delete custom SQL function (simple or aggregate one).  
   
 @param aFunctionName  
        The name of function to remove.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -354,7 +354,7 @@ Delete custom SQL function (simple or aggregate one).
 </table>
 
 ### setProgressHandler(aGranularity, aHandler) ###
-  
+<code>  
 Sets a progress handler. Only one handler can be registered at a time.  
 If you need more than one, you need to chain them yourself.  This progress  
 handler should be threadsafe if you use this connection object on more than  
@@ -367,7 +367,7 @@ one thread.
        The instance of mozIStorageProgressHandler.  
 @return previous registered handler.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -399,12 +399,12 @@ one thread.
 </table>
 
 ### removeProgressHandler() ###
-  
+<code>  
 Remove a progress handler.  
   
 @return previous registered handler.  
   
-
+</code>
 #### Returns ####
 
 <table>

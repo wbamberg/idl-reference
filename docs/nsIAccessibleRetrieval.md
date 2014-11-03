@@ -6,28 +6,28 @@ layout: default
 </div>
 
 # nsIAccessibleRetrieval #
-  
+<code>  
 An interface for in-process accessibility clients wishing to get an  
 nsIAccessible for a given DOM node.  More documentation at:  
   http://www.mozilla.org/projects/ui/accessibility  
   
-
+</code>
 ## Methods ##
 
 ### getApplicationAccessible() ###
-  
+<code>  
 Return application accessible.  
   
-
+</code>
 ### getAccessibleFor(aNode) ###
-  
+<code>  
 Return an nsIAccessible for a DOM node in pres shell 0.  
 Create a new accessible of the appropriate type if necessary,  
 or use one from the accessibility cache if it already exists.  
 @param aNode The DOM node to get an accessible for.  
 @return The nsIAccessible for the given DOM node.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -52,12 +52,12 @@ or use one from the accessibility cache if it already exists.
 </table>
 
 ### getStringRole(aRole) ###
-  
+<code>  
 Returns accessible role as a string.  
   
 @param aRole - the accessible role constants.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -71,13 +71,13 @@ Returns accessible role as a string.
 </table>
 
 ### getStringStates(aStates, aExtraStates) ###
-  
+<code>  
 Returns list which contains accessible states as a strings.  
   
 @param aStates - accessible states.  
 @param aExtraStates - accessible extra states.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -97,13 +97,13 @@ Returns list which contains accessible states as a strings.
 </table>
 
 ### getStringEventType(aEventType) ###
-  
+<code>  
 Get the type of accessible event as a string.  
   
 @param aEventType - the accessible event type constant  
 @return - accessible event type presented as human readable string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -128,13 +128,13 @@ Get the type of accessible event as a string.
 </table>
 
 ### getStringRelationType(aRelationType) ###
-  
+<code>  
 Get the type of accessible relation as a string.  
   
 @param aRelationType - the accessible relation type constant  
 @return - accessible relation type presented as human readable string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -159,7 +159,7 @@ Get the type of accessible relation as a string.
 </table>
 
 ### getAccessibleFromCache(aNode) ###
-  
+<code>  
 Return an accessible for the given DOM node from the cache.  
 @note  the method is intended for testing purposes  
   
@@ -167,7 +167,7 @@ Return an accessible for the given DOM node from the cache.
   
 @return       cached accessible for the given DOM node if any  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -192,13 +192,13 @@ Return an accessible for the given DOM node from the cache.
 </table>
 
 ### createAccessiblePivot(aRoot) ###
-  
+<code>  
 Create a new pivot for tracking a position and traversing a subtree.  
   
 @param aRoot [in] the accessible root for the pivot  
 @return a new pivot  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -223,7 +223,7 @@ Create a new pivot for tracking a position and traversing a subtree.
 </table>
 
 ### setLogging(aModules) ###
-  
+<code>  
 Enable logging for the given modules, all other modules aren't logged.  
   
 @param aModules [in] list of modules, format is comma separated list  
@@ -231,7 +231,7 @@ Enable logging for the given modules, all other modules aren't logged.
 @note Works on debug build only.  
 @see Logging.cpp for list of possible values.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -248,6 +248,7 @@ Enable logging for the given modules, all other modules aren't logged.
 </table>
 
 ### isLogged(aModule) ###
-  
+<code>  
 Return true if the given module is logged.  
   
+</code>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIProtocolHandler #
-  
+<code>  
 nsIProtocolHandler  
   
-
+</code>
 ## Methods ##
 
 ### newURI(aSpec, aOriginCharset, aBaseURI) ###
-  
+<code>  
 Makes a URI object that is suitable for loading by this protocol,  
 where the URI string is given as an UTF-8 string.  The caller may  
 provide the charset from which the URI string originated, so that  
@@ -38,7 +38,7 @@ server.)
                         If the protocol has no concept of relative   
                         URI aBaseURI will simply be ignored.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -75,18 +75,18 @@ server.)
 </table>
 
 ### newChannel2(aURI, aLoadinfo) ###
-  
+<code>  
 Constructs a new channel from the given URI for this protocol handler and  
 sets the loadInfo for the constructed channel.  
   
-
+</code>
 ### newChannel(aURI) ###
-  
+<code>  
 Constructs a new channel from the given URI for this protocol handler.  
   
-
+</code>
 ### allowPort(port, scheme) ###
-  
+<code>  
 Allows a protocol to override blacklisted ports.  
   
 This method will be called when there is an attempt to connect to a port   
@@ -95,7 +95,7 @@ Transfer) is banned.  When a URI containing this "known-to-do-bad-things"
 port number is encountered, this function will be called to ask if the   
 protocol handler wants to override the ban.    
   
-
+</code>
 ## Attributes ##
 
 ### scheme ###

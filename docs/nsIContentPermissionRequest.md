@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIContentPermissionRequest #
-  
+<code>  
 Interface allows access to a content to request  
 permission to perform a privileged operation such as  
 geolocation.  
   
-
+</code>
 ## Methods ##
 
 ### cancel() ###
-  
+<code>  
 allow or cancel the request  
   
-
+</code>
 ### allow(choices) ###
 
 ## Attributes ##

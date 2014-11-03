@@ -10,10 +10,10 @@ layout: default
 ## Methods ##
 
 ### initCommandEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, sourceEvent) ###
-  
+<code>  
 Creates a new command event with the given attributes.  
   
-
+</code>
 ## Attributes ##
 
 ### ctrlKey ###

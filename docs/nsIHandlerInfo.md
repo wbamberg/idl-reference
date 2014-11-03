@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIHandlerInfo #
-  
+<code>  
 nsIHandlerInfo gives access to the information about how a given protocol  
 scheme or MIME-type is handled.  
   
-
+</code>
 ## Methods ##
 
 ### launchWithURI(aURI, aWindowContext) ###
-  
+<code>  
 Launches the application with the specified URI, in a way that  
 depends on the value of preferredAction. preferredAction must be  
 useHelperApp or useSystemDefault.  
@@ -36,7 +36,7 @@ extension, though the invoked file: handler is free to do so.
 @throw NS_ERROR_INVALID_ARG if preferredAction is not valid for this  
 call. Other exceptions may be thrown.  
   
-
+</code>
 #### Parameters ####
 
 <table>

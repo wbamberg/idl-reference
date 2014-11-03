@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # nsITaskbarPreview #
-  
+<code>  
 nsITaskbarPreview  
   
 Common interface for both window and tab taskbar previews. This interface  
 cannot be instantiated directly.  
   
   
-
+</code>
 ## Methods ##
 
 ### invalidate() ###
-  
+<code>  
 Invalidates the taskbar's cached image of this preview, forcing a redraw  
 if necessary  
   
-
+</code>
 ## Attributes ##
 
 ### controller ###

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### reload(aForceUpdate) ###
-  
+<code>  
 Reload livemark contents if they are expired or if forced to do so.  
   
 @param [optional]aForceUpdate  
@@ -20,7 +20,7 @@ Reload livemark contents if they are expired or if forced to do so.
       result observer to be notified of updated contents through  
       registerForUpdates.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -34,7 +34,7 @@ Reload livemark contents if they are expired or if forced to do so.
 </table>
 
 ### getNodesForContainer(aContainerNode) ###
-  
+<code>  
 Returns an array of nsINavHistoryResultNode objects, representing children  
 of this livemark.  The nodes will have aContainerNode as parent.  
   
@@ -42,7 +42,7 @@ of this livemark.  The nodes will have aContainerNode as parent.
        Object implementing nsINavHistoryContainerResultNode, to be used as  
        parent of the livemark nodes.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -57,7 +57,7 @@ of this livemark.  The nodes will have aContainerNode as parent.
 </table>
 
 ### registerForUpdates(aContainerNode, aResultObserver) ###
-  
+<code>  
 Registers a container node for updates on this livemark.  
 When the livemark contents change, an invalidateContainer(aContainerNode)  
 request is sent to aResultObserver.  
@@ -69,7 +69,7 @@ request is sent to aResultObserver.
        The nsINavHistoryResultObserver that should be notified of changes  
        to the livemark contents.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -91,7 +91,7 @@ request is sent to aResultObserver.
 </table>
 
 ### unregisterForUpdates(aContainerNode) ###
-  
+<code>  
 Unregisters a previously registered container node.  
   
 @param aContainerNode  
@@ -102,7 +102,7 @@ Unregisters a previously registered container node.
       to free up the associated resources.  A good time to do so is when  
       the container gets closed.  
   
-
+</code>
 #### Parameters ####
 
 <table>

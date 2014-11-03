@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### registeredHistograms(count, histograms) ###
-  
+<code>  
 Returns an array whose values are the names of histograms defined  
 in Histograms.json.  
   
-
+</code>
 ### newHistogram(name, expiration, min, max, bucket_count, histogram_type) ###
-   
+<code>   
 Create and return a histogram.  Parameters:  
   
 @param name Unique histogram name  
@@ -30,7 +30,7 @@ The returned object has the following functions:
   snapshot() - Returns a snapshot of the histogram with the same data fields as in histogramSnapshots()  
   clear() - Zeros out the histogram's buckets and sum  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -78,7 +78,7 @@ The returned object has the following functions:
 </table>
 
 ### histogramFrom(name, existing_name) ###
-  
+<code>  
 Create a histogram using the current state of an existing histogram.  The  
 existing histogram must be registered in TelemetryHistograms.h.  
   
@@ -86,7 +86,7 @@ existing histogram must be registered in TelemetryHistograms.h.
 @param existing_name Existing histogram name  
 The returned object has the same functions as a histogram returned from newHistogram.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -107,12 +107,12 @@ The returned object has the same functions as a histogram returned from newHisto
 </table>
 
 ### getHistogramById(id) ###
-  
+<code>  
 Same as newHistogram above, but for histograms registered in TelemetryHistograms.h.  
   
 @param id - unique identifier from TelemetryHistograms.h  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -126,8 +126,8 @@ Same as newHistogram above, but for histograms registered in TelemetryHistograms
 </table>
 
 ### registerAddonHistogram(addon_id, name, min, max, bucket_count, histogram_type) ###
- Addon telemetry hooks */  
-  
+<code> Addon telemetry hooks */  
+</code><code>  
 Register a histogram for an addon.  Throws an error if the  
 histogram name has been registered previously.  
   
@@ -139,7 +139,7 @@ histogram name has been registered previously.
 @param histogram_type - HISTOGRAM_EXPONENTIAL, HISTOGRAM_LINEAR,  
        HISTOGRAM_BOOLEAN or HISTOGRAM_COUNT  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -184,7 +184,7 @@ histogram name has been registered previously.
 </table>
 
 ### getAddonHistogram(addon_id, name) ###
-  
+<code>  
 Return a histogram previously registered via  
 registerAddonHistogram.  Throws an error if the id/name combo has  
 not been registered via registerAddonHistogram.  
@@ -195,7 +195,7 @@ not been registered via registerAddonHistogram.
 The returned object has the same functions as a histogram returned  
 from newHistogram.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -215,12 +215,12 @@ from newHistogram.
 </table>
 
 ### unregisterAddonHistograms(addon_id) ###
-  
+<code>  
 Delete all histograms associated with the given addon id.  
   
 @param addon_id - Unique ID of the addon  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -234,19 +234,19 @@ Delete all histograms associated with the given addon id.
 </table>
 
 ### asyncFetchTelemetryData(aCallback) ###
-  
+<code>  
 Read data from the previous run. After the callback is called, the last  
 shutdown time is available in lastShutdownDuration and any late  
 writes in lateWrites.  
   
-
+</code>
 ### msSinceProcessStart() ###
-  
+<code>  
 Return the number of seconds since process start using monotonic  
 timestamps (unaffected by system clock changes).  
 @throws NS_ERROR_NOT_AVAILABLE if TimeStamp doesn't have the data.  
   
-
+</code>
 ## Attributes ##
 
 ### histogramSnapshots ###

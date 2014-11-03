@@ -10,7 +10,8 @@ layout: default
 ## Methods ##
 
 ### randomUpdate(entropy, bufLen) ###
-  
+<code>  
 Add the following bytes to the pool of data to be used  
 in gathering entropy.  
   
+</code>

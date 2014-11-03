@@ -38,11 +38,11 @@ layout: default
 ### getSelection() ###
 
 ### captureEvents() ###
-  
+<code>  
 @deprecated These are old Netscape 4 methods. Do not use,  
             the implementation is no-op.  
   
-
+</code>
 ### releaseEvents() ###
 
 ## Attributes ##

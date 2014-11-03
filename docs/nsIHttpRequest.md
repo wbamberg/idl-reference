@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIHttpRequest #
-  
+<code>  
 A representation of the data included in an HTTP request.  
   
-
+</code>
 ## Methods ##
 
 ### getHeader(fieldName) ###
-  
+<code>  
 Returns the value for the header in this request specified by fieldName.  
   
 @param fieldName  
@@ -31,7 +31,7 @@ Returns the value for the header in this request specified by fieldName.
 @throws NS_ERROR_NOT_AVAILABLE  
   if the given header does not exist in this  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ Returns the value for the header in this request specified by fieldName.
 </table>
 
 ### hasHeader(fieldName) ###
-  
+<code>  
 Returns true if a header with the given field name exists in this, false  
 otherwise.  
   
@@ -72,7 +72,7 @@ otherwise.
 @throws NS_ERROR_INVALID_ARG  
   if fieldName does not constitute a valid header field name  
   
-
+</code>
 #### Parameters ####
 
 <table>

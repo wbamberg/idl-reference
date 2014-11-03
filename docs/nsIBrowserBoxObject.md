@@ -6,6 +6,7 @@ layout: default
 </div>
 
 # nsIBrowserBoxObject #
-  
+<code>  
 @deprecated Please consider using ContainerBoxObject.  
   
+</code>

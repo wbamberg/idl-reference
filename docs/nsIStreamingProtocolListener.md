@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIStreamingProtocolListener #
-  
+<code>  
 nsIStreamingProtocolListener  
   
-
+</code>
 ## Methods ##
 
 ### onMediaDataAvailable(index, data, length, offset, meta) ###
-  
+<code>  
 Called when the data may be read without blocking the calling thread.  
 @param index The track number of the media stream.  
 @param data Raw data of the media stream on given track number.  
@@ -22,7 +22,7 @@ Called when the data may be read without blocking the calling thread.
               presentation in bytes.  
 @param meta The meta data of the frame.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -61,12 +61,12 @@ Called when the data may be read without blocking the calling thread.
 </table>
 
 ### onConnected(index, meta) ###
-  
+<code>  
 Called when the meta data for a given session is available.  
 @param index The track number of the media stream.  
 @param meta The meta data of the media stream.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -86,12 +86,12 @@ Called when the meta data for a given session is available.
 </table>
 
 ### onDisconnected(index, reason) ###
-  
+<code>  
 Called when the Rtsp session is closed.  
 @param index Track number of the media stream.  
 @param reason The reason of disconnection.  
   
-
+</code>
 #### Parameters ####
 
 <table>

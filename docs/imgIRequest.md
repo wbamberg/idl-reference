@@ -6,26 +6,26 @@ layout: default
 </div>
 
 # imgIRequest #
-  
+<code>  
 imgIRequest interface  
   
 @author Stuart Parmenter <stuart@mozilla.com>  
 @version 0.1  
 @see imagelib2  
   
-
+</code>
 ## Methods ##
 
 ### clone(aObserver) ###
-  
+<code>  
 Clone this request; the returned request will have aObserver as the  
 observer.  aObserver will be notified synchronously (before the clone()  
 call returns) with all the notifications that have already been dispatched  
 for this image load.  
   
-
+</code>
 ### cancelAndForgetObserver(aStatus) ###
-  
+<code>  
 Cancels this request as in nsIRequest::Cancel(); further, also nulls out  
 decoderObserver so it gets no further notifications from us.  
   
@@ -34,9 +34,9 @@ that cancel() is asynchronous, which means that some time after you call
 it, the listener/observer will get an OnStopRequest(). This means that, if  
 you're the observer, you can't call cancel() from your destructor.  
   
-
+</code>
 ### requestDecode() ###
-  
+<code>  
 Requests a decode for the image.  
   
 imgIContainer has a requestDecode() method, but callers may want to request  
@@ -45,11 +45,11 @@ requestDecode() on the imgIRequest simply forwards along the request if the
 container already exists, or calls it once it gets OnStartContainer if the  
 container does not yet exist.  
   
-
+</code>
 ### startDecoding() ###
 
 ### lockImage() ###
-  
+<code>  
 Locks an image. If the image does not exist yet, locks it once it becomes  
 available. The lock persists for the lifetime of the imgIRequest (until  
 unlockImage is called) even if the underlying image changes.  
@@ -59,41 +59,41 @@ will be called for you automatically.
   
 @see imgIContainer::lockImage for documentation of the underlying call.  
   
-
+</code>
 ### unlockImage() ###
-  
+<code>  
 Unlocks an image.  
   
 @see imgIContainer::unlockImage for documentation of the underlying call.  
   
-
+</code>
 ### requestDiscard() ###
-  
+<code>  
 If this image is unlocked, discard the image's decoded data.  If the image  
 is locked or is already discarded, do nothing.  
   
-
+</code>
 ### getStaticRequest() ###
-  
+<code>  
 If this request is for an animated image, the method creates a new  
 request which contains the current frame of the image.  
 Otherwise returns the same request.  
   
-
+</code>
 ### incrementAnimationConsumers() ###
-  
+<code>  
 Requests that the image animate (if it has an animation).  
   
 @see Image::IncrementAnimationConsumers for documentation of the underlying call.  
   
-
+</code>
 ### decrementAnimationConsumers() ###
-  
+<code>  
 Tell the image it can forget about a request that the image animate.  
   
 @see Image::DecrementAnimationConsumers for documentation of the underlying call.  
   
-
+</code>
 ## Attributes ##
 
 ### image ###

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISAXDTDHandler #
-  
+<code>  
 Receive notification of basic DTD-related events.  
   
 If a SAX application needs information about notations and  
@@ -26,11 +26,11 @@ document handler's startDocument event, and before the first
 startElement event. (If the LexicalHandler is used, these events  
 must also be reported before the endDTD event.)  
   
-
+</code>
 ## Methods ##
 
 ### notationDecl(name, publicId, systemId) ###
-  
+<code>  
 Receive notification of a notation declaration event.  
   
 It is up to the application to record the notation for later  
@@ -52,7 +52,7 @@ reported before any unparsed entities that use it.
 @param systemId The notation's system identifier, or null if none was  
                  given.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -80,7 +80,7 @@ reported before any unparsed entities that use it.
 </table>
 
 ### unparsedEntityDecl(name, publicId, systemId, notationName) ###
-  
+<code>  
 Receive notification of an unparsed entity declaration event.  
   
 Note that the notation name corresponds to a notation reported  
@@ -98,7 +98,7 @@ fully before passing it to the application.
                  given.  
 @param notationName The name of the associated notation.  
   
-
+</code>
 #### Parameters ####
 
 <table>

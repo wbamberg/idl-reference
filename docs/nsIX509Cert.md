@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsIX509Cert #
-  
+<code>  
 This represents a X.509 certificate.  
   
-
+</code>
 ## Methods ##
 
 ### getEmailAddresses(length, addresses) ###
-  
+<code>  
  Obtain a list of all email addresses  
  contained in the certificate.  
   
  @param length The number of strings in the returned array.  
  @return An array of email addresses.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -45,7 +45,7 @@ This represents a X.509 certificate.
 </table>
 
 ### containsEmailAddress(aEmailAddress) ###
-  
+<code>  
  Check whether a given address is contained in the certificate.  
  The comparison will convert the email address to lowercase.  
  The behaviour for non ASCII characters is undefined.  
@@ -54,7 +54,7 @@ This represents a X.509 certificate.
   
  @return True if the address is contained in the certificate.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -79,14 +79,14 @@ This represents a X.509 certificate.
 </table>
 
 ### getChain() ###
-  
+<code>  
  Obtain a list of certificates that contains this certificate  
  and the issuing certificates of all involved issuers,  
  up to the root issuer.  
   
  @return The chain of certifficates including the issuers.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -99,7 +99,7 @@ This represents a X.509 certificate.
 </table>
 
 ### getUsagesArray(localOnly, verified, count, usages) ###
-  
+<code>  
  Obtain an array of human readable strings describing  
  the certificate's certified usages.  
   
@@ -109,7 +109,7 @@ This represents a X.509 certificate.
  @param count The number of human readable usages returned.  
  @param usages The array of human readable usages.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -142,15 +142,15 @@ This represents a X.509 certificate.
 </table>
 
 ### requestUsagesArrayAsync(cvl) ###
-  
+<code>  
  Async version of nsIX509Cert::getUsagesArray()  
   
  Will not block, will request results asynchronously,  
  availability of results will be notified on the main thread.  
   
-
+</code>
 ### getUsagesString(localOnly, verified, usages) ###
-  
+<code>  
  Obtain a single comma separated human readable string describing  
  the certificate's certified usages.  
   
@@ -159,7 +159,7 @@ This represents a X.509 certificate.
  @param verified The certificate verification result, see constants.  
  @param purposes The string listing the usages.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -186,14 +186,14 @@ This represents a X.509 certificate.
 </table>
 
 ### getRawDER(length, data) ###
-  
+<code>  
  Obtain a raw binary encoding of this certificate  
  in DER format.  
   
  @param length The number of bytes in the binary encoding.  
  @param data The bytes representing the DER encoded certificate.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -213,13 +213,13 @@ This represents a X.509 certificate.
 </table>
 
 ### equals(other) ###
-  
+<code>  
  Test whether two certificate instances represent the  
  same certificate.  
   
  @return Whether the certificates are equal  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -232,7 +232,7 @@ This represents a X.509 certificate.
 </table>
 
 ### exportAsCMS(chainMode, length, data) ###
-  
+<code>  
  Obtain the certificate wrapped in a PKCS#7 SignedData structure,  
  with or without the certificate chain  
   
@@ -241,7 +241,7 @@ see CMS_CHAIN_MODE constants.
  @param length The number of bytes of the PKCS#7 data.  
  @param data The bytes representing the PKCS#7 wrapped certificate.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -268,12 +268,12 @@ see CMS_CHAIN_MODE constants.
 </table>
 
 ### getCert() ###
-  
+<code>  
 Retrieves the NSS certificate object wrapped by this interface  
   
-
+</code>
 ### getAllTokenNames(length, tokenNames) ###
-  
+<code>  
 Human readable names identifying all hardware or  
 software tokens the certificate is stored on.  
   
@@ -282,7 +282,7 @@ software tokens the certificate is stored on.
         the certificate is stored on (may be empty).  
         On failure the function throws/returns an error.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -309,11 +309,11 @@ software tokens the certificate is stored on.
 </table>
 
 ### markForPermDeletion() ###
-  
+<code>  
 Either delete the certificate from all cert databases,  
 or mark it as untrusted.  
   
-
+</code>
 ## Attributes ##
 
 ### nickname ###

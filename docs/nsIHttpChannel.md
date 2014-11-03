@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIHttpChannel #
-  
+<code>  
 nsIHttpChannel  
   
 This interface allows for the modification of HTTP request parameters and  
 the inspection of the resulting HTTP response status and headers when they  
 become available.  
   
-
+</code>
 ## Methods ##
 
 ### getRequestHeader(aHeader) ###
-  
+<code>  
 Get the value of a particular request header.  
   
 @param aHeader  
@@ -27,7 +27,7 @@ Get the value of a particular request header.
 @return the value of the request header.  
 @throws NS_ERROR_NOT_AVAILABLE if the header is not set.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -54,7 +54,7 @@ Get the value of a particular request header.
 </table>
 
 ### setRequestHeader(aHeader, aValue, aMerge) ###
-  
+<code>  
 Set the value of a particular request header.  
   
 This method allows, for example, the cookies module to add "Cookie"  
@@ -81,7 +81,7 @@ If aValue is empty and aMerge is false, the header will be cleared.
 @throws NS_ERROR_IN_PROGRESS if called after the channel has been  
         opened.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -114,14 +114,14 @@ If aValue is empty and aMerge is false, the header will be cleared.
 </table>
 
 ### visitRequestHeaders(aVisitor) ###
-  
+<code>  
 Call this method to visit all request headers.  Calling setRequestHeader  
 while visiting request headers has undefined behavior.  Don't do it!  
   
 @param aVisitor  
        the header visitor instance.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -135,7 +135,7 @@ while visiting request headers has undefined behavior.  Don't do it!
 </table>
 
 ### getResponseHeader(header) ###
-  
+<code>  
 Get the value of a particular response header.  
   
 @param aHeader  
@@ -148,7 +148,7 @@ Get the value of a particular response header.
         has been received (before onStartRequest) or if the header is  
         not set in the response.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -174,7 +174,7 @@ Get the value of a particular response header.
 </table>
 
 ### setResponseHeader(header, value, merge) ###
-  
+<code>  
 Set the value of a particular response header.  
   
 This method allows, for example, the HTML content sink to inform the HTTP  
@@ -201,7 +201,7 @@ If aValue is empty and aMerge is false, the header will be cleared.
 @throws NS_ERROR_ILLEGAL_VALUE if changing the value of this response  
         header is not allowed.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -234,7 +234,7 @@ If aValue is empty and aMerge is false, the header will be cleared.
 </table>
 
 ### visitResponseHeaders(aVisitor) ###
-  
+<code>  
 Call this method to visit all response headers.  Calling  
 setResponseHeader while visiting response headers has undefined  
 behavior.  Don't do it!  
@@ -245,7 +245,7 @@ behavior.  Don't do it!
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -259,16 +259,16 @@ behavior.  Don't do it!
 </table>
 
 ### isNoStoreResponse() ###
-  
+<code>  
 Returns true if the server sent a "Cache-Control: no-store" response  
 header.  
   
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  
   
-
+</code>
 ### isNoCacheResponse() ###
-  
+<code>  
 Returns true if the server sent the equivalent of a "Cache-control:  
 no-cache" response header.  Equivalent response headers include:  
 "Pragma: no-cache", "Expires: 0", and "Expires" with a date value  
@@ -277,9 +277,9 @@ in the past relative to the value of the "Date" header.
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  
   
-
+</code>
 ### redirectTo(aNewURI) ###
-  
+<code>  
 Instructs the channel to immediately redirect to a new destination.  
 Can only be called on channels not yet opened.  
   
@@ -289,7 +289,7 @@ caller to call it wins.
 @throws NS_ERROR_ALREADY_OPENED if called after the channel  
         has been opened.  
   
-
+</code>
 ## Attributes ##
 
 ### requestMethod ###

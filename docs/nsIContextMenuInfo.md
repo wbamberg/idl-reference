@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIContextMenuInfo #
-  
+<code>  
 nsIContextMenuInfo  
   
 A helper object for implementors of nsIContextMenuListener2.  
   
-
+</code>
 ## Attributes ##
 
 ### mouseEvent ###

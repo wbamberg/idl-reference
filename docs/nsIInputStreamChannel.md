@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsIInputStreamChannel #
-  
+<code>  
 nsIInputStreamChannel  
   
 This interface provides methods to initialize an input stream channel.  
 The input stream channel serves as a data pump for an input stream.  
   
-
+</code>
 ## Methods ##
 
 ### setURI(aURI) ###
-  
+<code>  
 Sets the URI for this channel.  This must be called before the  
 channel is opened, and it may only be called once.  
   
-
+</code>
 ## Attributes ##
 
 ### contentStream ###

@@ -24,7 +24,7 @@ layout: default
 ### close(window, sessionToken) ###
 
 ### sendFile(window, blob, sessionToken) ###
-  
+<code>  
 Initiate Send file operation  
   
 @param window  
@@ -41,7 +41,7 @@ Initiate Send file operation
 Returns DOMRequest, if initiation of send file operation is successful  
 then 'onsuccess' is called else 'onerror'  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -69,12 +69,12 @@ then 'onsuccess' is called else 'onerror'
 </table>
 
 ### registerEventTarget(target) ###
-  
+<code>  
 Register the event target.  
   
 @param target  An instance of the nsINfcDOMEventTarget.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -88,7 +88,7 @@ Register the event target.
 </table>
 
 ### registerTargetForPeerReady(window, appId) ###
-  
+<code>  
 Register the given application id with Chrome process  
   
 @param window  
@@ -97,7 +97,7 @@ Register the given application id with Chrome process
 @param appId  
        Application ID to be registered  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -117,7 +117,7 @@ Register the given application id with Chrome process
 </table>
 
 ### unregisterTargetForPeerReady(window, appId) ###
-  
+<code>  
 Unregister the given application id with Chrome process  
   
 @param window  
@@ -126,7 +126,7 @@ Unregister the given application id with Chrome process
 @param appId  
        Application ID to be registered  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -146,7 +146,7 @@ Unregister the given application id with Chrome process
 </table>
 
 ### checkP2PRegistration(window, appId) ###
-  
+<code>  
 Checks if the given application's id is a registered peer target (with the Chrome process)  
   
 @param window  
@@ -157,7 +157,7 @@ Checks if the given application's id is a registered peer target (with the Chrom
   
 Returns DOMRequest, if appId is registered then 'onsuccess' is called else 'onerror'  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -177,7 +177,7 @@ Returns DOMRequest, if appId is registered then 'onsuccess' is called else 'oner
 </table>
 
 ### notifyUserAcceptedP2P(window, appId) ###
-  
+<code>  
 Notify the Chrome process that user has accepted to share nfc message on P2P UI  
   
 @param window  
@@ -186,7 +186,7 @@ Notify the Chrome process that user has accepted to share nfc message on P2P UI
 @param appId  
        Application ID that is capable of handling NFC_EVENT_PEER_READY event  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -206,7 +206,7 @@ Notify the Chrome process that user has accepted to share nfc message on P2P UI
 </table>
 
 ### notifySendFileStatus(window, status, requestId) ###
-  
+<code>  
 Notify the status of sendFile operation to Chrome process  
   
 @param window  
@@ -218,7 +218,7 @@ Notify the status of sendFile operation to Chrome process
 @param requestId  
        Request ID of SendFile DOM Request  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -244,20 +244,20 @@ Notify the status of sendFile operation to Chrome process
 </table>
 
 ### startPoll(window) ###
-  
+<code>  
 Power on the NFC hardware and start polling for NFC tags or devices.  
   
-
+</code>
 ### stopPoll(window) ###
-  
+<code>  
 Stop polling for NFC tags or devices. i.e. enter low power mode.  
   
-
+</code>
 ### powerOff(window) ###
-  
+<code>  
 Power off the NFC hardware.  
   
-
+</code>
 ## Constants ##
 
 ### NFC_EVENT_PEER_READY ###

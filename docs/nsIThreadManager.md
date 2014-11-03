@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIThreadManager #
-  
+<code>  
 An interface for creating and locating nsIThread instances.  
   
-
+</code>
 ## Methods ##
 
 ### newThread(creationFlags, stackSize) ###
-  
+<code>  
 Create a new thread (a global, user PRThread).  
   
 @param creationFlags  
@@ -24,7 +24,7 @@ Create a new thread (a global, user PRThread).
 @returns  
   The newly created nsIThread object.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -55,7 +55,7 @@ Create a new thread (a global, user PRThread).
 </table>
 
 ### getThreadFromPRThread(prthread) ###
-  
+<code>  
 Get the nsIThread object (if any) corresponding to the given PRThread.  
 This method returns null if there is no corresponding nsIThread.  
   
@@ -66,7 +66,7 @@ This method returns null if there is no corresponding nsIThread.
   The nsIThread object corresponding to the given PRThread or null if no  
   such nsIThread exists.  
   
-
+</code>
 #### Parameters ####
 
 <table>

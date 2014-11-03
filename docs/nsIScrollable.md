@@ -6,29 +6,29 @@ layout: default
 </div>
 
 # nsIScrollable #
-  
+<code>  
 The nsIScrollable is an interface that can be implemented by a control that  
 supports scrolling.  This is a generic interface without concern for the   
 type of content that may be inside.  
   
-
+</code>
 ## Methods ##
 
 ### getDefaultScrollbarPreferences(scrollOrientation) ###
-  
+<code>  
 Get or set the default scrollbar state for all documents in  
 this shell.  
   
-
+</code>
 ### setDefaultScrollbarPreferences(scrollOrientation, scrollbarPref) ###
 
 ### getScrollbarVisibility(verticalVisible, horizontalVisible) ###
-  
+<code>  
 Get information about whether the vertical and horizontal scrollbars are  
 currently visible.  If you are only interested in one of the visibility  
 settings pass nullptr in for the one you aren't interested in.  
   
-
+</code>
 ## Constants ##
 
 ### ScrollOrientation_X ###

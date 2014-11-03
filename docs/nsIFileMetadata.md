@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIFileMetadata #
-  
+<code>  
 An interface that allows you to get some metadata like file size and  
 file last modified time.  
   
-
+</code>
 ## Attributes ##
 
 ### size ###

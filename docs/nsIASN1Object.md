@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIASN1Object #
-  
+<code>  
 This represents an ASN.1 object,  
 where ASN.1 is "Abstract Syntax Notation number One".  
   
@@ -16,7 +16,7 @@ when working with visual reprenstation of ASN.1 objects
 in a human user interface, like in a tree widget  
 where open/close state of nodes must be remembered.  
   
-
+</code>
 ## Attributes ##
 
 ### type ###

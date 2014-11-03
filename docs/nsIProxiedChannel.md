@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # nsIProxiedChannel #
-  
+<code>  
 An interface for accessing the proxy info that a channel was  
 constructed with.  
   
 @see nsIProxiedProtocolHandler  
   
-
+</code>
 ## Attributes ##
 
 ### proxyInfo ###

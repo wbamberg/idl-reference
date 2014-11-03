@@ -14,29 +14,29 @@ layout: default
 ### isBuiltinClass() ###
 
 ### getMethodInfo(index, info) ###
-  
+<code>  
 These include methods and constants for parent (and all ancestors).  
   
 These do *not* make copies ***explicit bending of XPCOM rules***.  
   
-
+</code>
 ### getMethodInfoForName(methodName, index, info) ###
 
 ### getConstant(index, constant, name) ###
 
 ### getInfoForParam(methodIndex, param) ###
-  
+<code>  
 Get the interface information or iid associated with a param of some  
 method in this interface.  
   
-
+</code>
 ### getIIDForParam(methodIndex, param) ###
 
 ### getTypeForParam(methodIndex, param, dimension) ###
-  
+<code>  
 These do *not* make copies ***explicit bending of XPCOM rules***.  
   
-
+</code>
 ### getSizeIsArgNumberForParam(methodIndex, param, dimension) ###
 
 ### getInterfaceIsArgNumberForParam(methodIndex, param) ###

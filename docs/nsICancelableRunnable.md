@@ -6,18 +6,19 @@ layout: default
 </div>
 
 # nsICancelableRunnable #
-  
+<code>  
 Represents a task which can be dispatched to a thread for execution and  
 which can be cancelled if necessary.  
   
-
+</code>
 ## Methods ##
 
 ### cancel() ###
-  
+<code>  
 Cancels a pending task.  If the task has already been executed this will  
 be a no-op.  Calling this method twice is considered an error.  
   
 @throws NS_ERROR_UNEXPECTED  
   Indicates that the runnable has already been canceled.  
   
+</code>

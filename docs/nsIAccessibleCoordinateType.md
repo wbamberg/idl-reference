@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIAccessibleCoordinateType #
-  
+<code>  
 These constants define which coordinate system a point is located in.  
   
-
+</code>
 ## Constants ##
 
 ### COORDTYPE_SCREEN_RELATIVE ###

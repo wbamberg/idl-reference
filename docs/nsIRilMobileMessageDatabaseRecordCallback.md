@@ -10,7 +10,8 @@ layout: default
 ## Methods ##
 
 ### notify(aRv, aMessageRecord, aDomMessage) ###
-  
+<code>  
 |aMessageRecord| Object: the mobile-message database record  
 |aDomMessage|: the nsIDOMMoz{Mms,Sms}Message. Noted, this value might be null.  
   
+</code>

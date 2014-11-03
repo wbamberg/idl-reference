@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIAsyncShutdownBlocker #
-  
+<code>  
 A blocker installed by a client to be informed during some stage of  
 shutdown and block shutdown asynchronously until some condition is  
 complete.  
@@ -14,16 +14,16 @@ complete.
 If you wish to use AsyncShutdown, you will need to implement this  
 interface (and only this interface).  
   
-
+</code>
 ## Methods ##
 
 ### blockShutdown(aBarrierClient) ###
-  
+<code>  
 Inform the blocker that the stage of shutdown has started.  
 Shutdown will NOT proceed until `aBarrierClient.removeBlocker(this)`  
 has been called.  
   
-
+</code>
 ## Attributes ##
 
 ### name ###

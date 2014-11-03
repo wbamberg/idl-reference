@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### show(aWindowContext, aDownload, aReason, aUsePrivateUI) ###
-  
+<code>  
 Shows the Download Manager's UI to the user.  
   
 @param [optional] aWindowContext  
@@ -25,7 +25,7 @@ Shows the Download Manager's UI to the user.
        Pass true as this argument to hint to the implementation that it  
        should only display private downloads in the UI, if possible.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -64,12 +64,12 @@ Shows the Download Manager's UI to the user.
 </table>
 
 ### getAttention() ###
-  
+<code>  
 Brings attention to the UI if it is already visible  
   
 @throws NS_ERROR_UNEXPECTED if the UI is not visible.  
   
-
+</code>
 ## Attributes ##
 
 ### visible ###

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # mozIStorageService #
-  
+<code>  
 The mozIStorageService interface is intended to be implemented by  
 a service that can create storage connections (mozIStorageConnection)  
 to either a well-known profile database or to a specific database file.  
@@ -16,11 +16,11 @@ This is the only way to open a database connection.
 @note The first reference to mozIStorageService must be made on the main  
 thread.  
   
-
+</code>
 ## Methods ##
 
 ### openAsyncDatabase(aDatabaseStore, aOptions, aCallback) ###
-  
+<code>  
 Open an asynchronous connection to a database.  
   
 This method MUST be called from the main thread. The connection object  
@@ -65,7 +65,7 @@ string may be:
 @throws NS_ERROR_NOT_SAME_THREAD if called from a thread other than the  
         main thread.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -106,7 +106,7 @@ string may be:
 </table>
 
 ### openSpecialDatabase(aStorageKey) ###
-  
+<code>  
 Get a connection to a named special database storage.  
   
 @param aStorageKey a string key identifying the type of storage  
@@ -121,7 +121,7 @@ storage database.
   
 @throws NS_ERROR_INVALID_ARG if aStorageKey is invalid.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -148,7 +148,7 @@ storage database.
 </table>
 
 ### openDatabase(aDatabaseFile) ###
-  
+<code>  
 Open a connection to the specified file.  
   
 Consumers should check mozIStorageConnection::connectionReady to ensure  
@@ -178,7 +178,7 @@ use it only from the thread you created it from.
 @throws NS_ERROR_FILE_CORRUPTED  
         If the database file is corrupted.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -203,7 +203,7 @@ use it only from the thread you created it from.
 </table>
 
 ### openUnsharedDatabase(aDatabaseFile) ###
-  
+<code>  
 Open a connection to the specified file that doesn't share a sqlite cache.  
   
 Without a shared-cache, each connection uses its own pages cache, which  
@@ -234,7 +234,7 @@ use it only from the thread you created it from.
 @throws NS_ERROR_FILE_CORRUPTED  
         If the database file is corrupted.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -259,7 +259,7 @@ use it only from the thread you created it from.
 </table>
 
 ### openDatabaseWithFileURL(aFileURL) ###
-  
+<code>  
 See openDatabase(). Exactly the same only initialized with a file URL.  
 Custom parameters can be passed to SQLite and VFS implementations through  
 the query part of the URL.  
@@ -267,7 +267,7 @@ the query part of the URL.
 @param aURL  
        A nsIFileURL that represents the database that is to be opened.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -281,7 +281,7 @@ the query part of the URL.
 </table>
 
 ### backupDatabaseFile(aDBFile, aBackupFileName, aBackupParentDirectory) ###
-  
+<code>  
 Copies the specified database file to the specified parent directory with  
 the specified file name.  If the parent directory is not specified, it  
 places the backup in the same directory as the current file.  This function  
@@ -295,7 +295,7 @@ ensures that the file being created is unique.
        The directory you'd like the backup file to be placed.  
 @return The nsIFile representing the backup file.  
   
-
+</code>
 #### Parameters ####
 
 <table>

@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # ScheduledGCCallback #
-  
+<code>  
 interface for callback to be passed to Cu.schedulePreciseGC  
   
-
+</code>
 ## Methods ##
 
 ### callback() ###

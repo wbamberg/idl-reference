@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsIAsyncShutdownBarrier #
-  
+<code>  
 A stage of shutdown that supports blocker registration.  
   
-
+</code>
 ## Methods ##
 
 ### wait(aOnReady) ###
-  
+<code>  
 Wait for all blockers to complete.  
   
 Method `aOnReady` will be called once all blockers have finished.  
 The callback always receives NS_OK.  
   
-
+</code>
 ## Attributes ##
 
 ### client ###

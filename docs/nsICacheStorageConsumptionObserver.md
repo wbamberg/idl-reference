@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onNetworkCacheDiskConsumption(aDiskSize) ###
-  
+<code>  
 Callback invoked to answer asyncGetDiskConsumption call. Always triggered  
 on the main thread.  
 NOTE: implementers must also implement nsISupportsWeakReference.  
@@ -18,7 +18,7 @@ NOTE: implementers must also implement nsISupportsWeakReference.
 @param aDiskSize  
    The disk consumption in bytes.  
   
-
+</code>
 #### Parameters ####
 
 <table>

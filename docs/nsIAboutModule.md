@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### newChannel(aURI, aLoadInfo) ###
-  
+<code>  
 Constructs a new channel for the about protocol module.   
   
 @param aURI the uri of the new channel  
 @param aLoadInfo the loadinfo of the new channel  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -36,19 +36,19 @@ Constructs a new channel for the about protocol module.
 </table>
 
 ### getURIFlags(aURI) ###
-  
+<code>  
 A method to get the flags that apply to a given about: URI.  The URI  
 passed in is guaranteed to be one of the URIs that this module  
 registered to deal with.  
   
-
+</code>
 ### getIndexedDBOriginPostfix(aURI) ###
-  
+<code>  
 Returns the Indexed DB origin's postfix used for the given about: URI.  
 If the postfix returned is null then the URI's path (e.g. "home" for  
 about:home) will be used to construct the origin.  
   
-
+</code>
 ## Constants ##
 
 ### URI_SAFE_FOR_UNTRUSTED_CONTENT ###

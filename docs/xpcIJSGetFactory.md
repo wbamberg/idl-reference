@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # xpcIJSGetFactory #
-  
+<code>  
 Every JS module exports a single NSGetFactory symbol which is converted into this  
 functional interface type.  
   
-
+</code>
 ## Methods ##
 
 ### get(aCID) ###

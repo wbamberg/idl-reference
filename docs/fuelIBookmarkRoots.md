@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # fuelIBookmarkRoots #
-  
+<code>  
 Interface representing a container for bookmark roots. Roots  
 are the top level parents for the various types of bookmarks in the system.  
   
-
+</code>
 ## Attributes ##
 
 ### menu ###

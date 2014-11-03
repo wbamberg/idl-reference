@@ -16,7 +16,7 @@ layout: default
 ### loadComplete(aStatus) ###
 
 ### permitUnload(aCallerClosesWindow) ###
-  
+<code>  
 Checks if the document wants to prevent unloading by firing beforeunload on  
 the document, and if it does, prompts the user. The result is returned.  
   
@@ -24,7 +24,7 @@ the document, and if it does, prompts the user. The result is returned.
        window. If the method returns true, all subsequent calls will be  
        ignored.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -40,14 +40,14 @@ the document, and if it does, prompts the user. The result is returned.
 </table>
 
 ### permitUnloadInternal(aCallerClosesWindow, aShouldPrompt) ###
-  
+<code>  
 As above, but this passes around the aShouldPrompt argument to keep  
 track of whether the user has responded to a prompt.  
 Used internally by the scriptable version to ensure we only prompt once.  
   
-
+</code>
 ### resetCloseWindow() ###
-  
+<code>  
 Works in tandem with permitUnload, if the caller decides not to close the  
 window it indicated it will, it is the caller's responsibility to reset  
 that with this method.  
@@ -56,11 +56,11 @@ that with this method.
  caller has indicated that it will close the window. If that is not the case  
  the behavior of this method is undefined.  
   
-
+</code>
 ### pageHide(isUnload) ###
 
 ### close(historyEntry) ###
-  
+<code>  
 All users of a content viewer are responsible for calling both  
 close() and destroy(), in that order.   
   
@@ -81,16 +81,16 @@ actions will happen when destroy() is called (*):
      it will never be saved in session history.  
   
   
-
+</code>
 ### destroy() ###
 
 ### stop() ###
 
 ### getDocument() ###
-  
+<code>  
 Returns DOMDocument as nsIDocument and without addrefing.  
   
-
+</code>
 ### getBounds(aBounds) ###
 
 ### setBounds(aBounds) ###
@@ -104,7 +104,7 @@ Returns DOMDocument as nsIDocument and without addrefing.
 ### requestWindowClose() ###
 
 ### open(aState, aSHEntry) ###
-  
+<code>  
 Attach the content viewer to its DOM window and docshell.  
 @param aState A state object that might be useful in attaching the DOM  
               window.  
@@ -112,7 +112,7 @@ Attach the content viewer to its DOM window and docshell.
                 The entry must have the docshells for all of the child  
                 documents stored in its child shell list.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -135,54 +135,54 @@ Attach the content viewer to its DOM window and docshell.
 </table>
 
 ### clearHistoryEntry() ###
-  
+<code>  
 Clears the current history entry.  This is used if we need to clear out  
 the saved presentation state.  
   
-
+</code>
 ### setPageMode(aPageMode, aPrintSettings) ###
-  
+<code>  
 Change the layout to view the document with page layout (like print preview), but  
 dynamic and editable (like Galley layout).  
   
-
+</code>
 ### setDocumentInternal(aDocument, aForceReuseInnerWindow) ###
 
 ### findContainerView() ###
-  
+<code>  
 Find the view to use as the container view for MakeWindow. Returns  
 null if this will be the root of a view manager hierarchy. In that  
 case, if mParentWidget is null then this document should not even  
 be displayed.  
   
-
+</code>
 ### setNavigationTiming(aTiming) ###
-  
+<code>  
 Set collector for navigation timing data (load, unload events).  
   
-
+</code>
 ### scrollToNode(node) ###
 
 ### getContentSize(width, height) ###
-  
+<code>  
 Requests the size of the content to the container.  
   
-
+</code>
 ### appendSubtree(array) ###
-  
+<code>  
 Append |this| and all of its descendants to the given array,  
 in depth-first pre-order traversal.  
   
-
+</code>
 ### changeMaxLineBoxWidth(maxLineBoxWidth) ###
-  
+<code>  
 Set the maximum line width for the document.  
 NOTE: This will generate a reflow!  
   
 @param maxLineWidth The maximum width of any line boxes on the page,  
        in CSS pixels.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -197,17 +197,17 @@ NOTE: This will generate a reflow!
 </table>
 
 ### pausePainting() ###
-  
+<code>  
 Instruct the refresh driver to discontinue painting until further  
 notice.  
   
-
+</code>
 ### resumePainting() ###
-  
+<code>  
 Instruct the refresh driver to resume painting after a previous call to  
 pausePainting().  
   
-
+</code>
 ### emulateMedium(aMediaType) ###
 
 ### stopEmulatingMedium() ###

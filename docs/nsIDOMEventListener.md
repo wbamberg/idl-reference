@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIDOMEventListener #
-  
+<code>  
 The nsIDOMEventListener interface is a callback interface for  
 listening to events in the Document Object Model.  
   
 For more information on this interface please see   
 http://www.w3.org/TR/DOM-Level-2-Events/  
   
-
+</code>
 ## Methods ##
 
 ### handleEvent(event) ###
-  
+<code>  
 This method is called whenever an event occurs of the type for which   
 the EventListener interface was registered.  
   
@@ -26,7 +26,7 @@ the EventListener interface was registered.
              preventDefault methods which are used in determining the   
              event's flow and default action.  
   
-
+</code>
 #### Parameters ####
 
 <table>

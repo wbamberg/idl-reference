@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### absolutePositionSelection(aEnabled) ###
-  
+<code>  
 extracts the selection from the normal flow of the document and  
 positions it.  
 @param aEnabled [IN] true to absolutely position the selection,  
                      false to put it back in the normal flow  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -31,11 +31,11 @@ positions it.
 </table>
 
 ### relativeChangeZIndex(aChange) ###
-  
+<code>  
 adds aChange to the z-index of the currently positioned element.  
 @param aChange [IN] relative change to apply to current z-index  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -49,14 +49,14 @@ adds aChange to the z-index of the currently positioned element.
 </table>
 
 ### absolutelyPositionElement(aElement, aEnabled) ###
-  
+<code>  
 extracts an element from the normal flow of the document and  
 positions it, and puts it back in the normal flow.  
 @param aElement [IN] the element  
 @param aEnabled [IN] true to absolutely position the element,  
                      false to put it back in the normal flow  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -77,14 +77,14 @@ positions it, and puts it back in the normal flow.
 </table>
 
 ### setElementPosition(aElement, aX, aY) ###
-  
+<code>  
 sets the position of an element; warning it does NOT check if the  
 element is already positioned or not and that's on purpose.  
 @param aElement [IN] the element  
 @param aX       [IN] the x position in pixels.  
 @param aY       [IN] the y position in pixels.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -110,12 +110,12 @@ element is already positioned or not and that's on purpose.
 </table>
 
 ### getElementZIndex(aElement) ###
-  
+<code>  
 returns the absolute z-index of a positioned element. Never returns 'auto'.  
 @return         the z-index of the element  
 @param aElement [IN] the element.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -140,12 +140,12 @@ returns the absolute z-index of a positioned element. Never returns 'auto'.
 </table>
 
 ### setElementZIndex(aElement, aZorder) ###
-  
+<code>  
 sets the z-index of an element.  
 @param aElement [IN] the element  
 @param aZorder  [IN] the z-index  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -165,14 +165,14 @@ sets the z-index of an element.
 </table>
 
 ### relativeChangeElementZIndex(aElement, aChange) ###
-  
+<code>  
 adds aChange to the z-index of an arbitrary element.  
 @return         the new z-index of the element  
 @param aElement [IN] the element  
 @param aChange  [IN] relative change to apply to current z-index of  
                      the element  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -204,14 +204,14 @@ adds aChange to the z-index of an arbitrary element.
 </table>
 
 ### showGrabberOnElement(aElement) ###
-  
+<code>  
 shows a grabber attached to an arbitrary element. The grabber is an image  
 positioned on the left hand side of the top border of the element. Dragging  
 and dropping it allows to change the element's absolute position in the  
 document. See chrome://editor/content/images/grabber.gif  
 @param aElement [IN] the element  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -225,16 +225,16 @@ document. See chrome://editor/content/images/grabber.gif
 </table>
 
 ### hideGrabber() ###
-  
+<code>  
 hide the grabber if it shown.  
   
-
+</code>
 ### refreshGrabber() ###
-  
+<code>  
 refreshes the grabber if it shown, possibly updating its position or  
 even hiding it.  
   
-
+</code>
 ## Attributes ##
 
 ### selectionContainerAbsolutelyPositioned ###

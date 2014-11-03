@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### init(aDataSource) ###
-  
+<code>  
 Initialize the serializer with the specified datasource.  
 @param aDataSource the datasource from which data will be  
   serialized  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -30,12 +30,12 @@ Initialize the serializer with the specified datasource.
 </table>
 
 ### addNameSpace(aPrefix, aURI) ###
-  
+<code>  
 Add the specified namespace to the serializer.  
 @param aPrefix the attribute namespace prefix  
 @param aURI the namespace URI  
   
-
+</code>
 #### Parameters ####
 
 <table>

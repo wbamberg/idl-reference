@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsInterfacePointer #
-  
+<code>  
 Scriptable storage for other XPCOM objects  
   
-
+</code>
 ## Methods ##
 
 ### toString() ###

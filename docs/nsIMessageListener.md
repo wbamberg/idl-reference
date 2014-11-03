@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIMessageListener #
-  
+<code>  
 Message managers provide a way for chrome-privileged JS code to  
 communicate with each other, even across process boundaries.  
   
@@ -163,11 +163,11 @@ is common
    }  
  };  
   
-
+</code>
 ## Methods ##
 
 ### receiveMessage() ###
-  
+<code>  
 This is for JS only.  
 receiveMessage is called with one parameter, which has the following  
 properties:  
@@ -194,3 +194,4 @@ When there are multiple listeners to sync messages, each
 listener's return value is sent back as an array.  |undefined|  
 return values show up as undefined values in the array.  
   
+</code>

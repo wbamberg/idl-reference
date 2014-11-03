@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIHttpServerIdentity #
-  
+<code>  
 Represents a set of names for a server, one of which is the primary name for  
 the server and the rest of which are secondary.  By default every server will  
 contain ("http", "localhost", port) and ("http", "127.0.0.1", port) as names,  
@@ -14,20 +14,20 @@ where port is what was provided to the corresponding server when started;
 however, except for their being removed when the corresponding server stops  
 they have no special importance.  
   
-
+</code>
 ## Methods ##
 
 ### add(scheme, host, port) ###
-  
+<code>  
 Adds a location at which this server may be accessed.  
   
 @throws NS_ERROR_ILLEGAL_VALUE  
   if scheme or host do not match the scheme or host productions imported  
   into RFC 2616 from RFC 2396, or if port is not a valid port number  
   
-
+</code>
 ### remove(scheme, host, port) ###
-  
+<code>  
 Removes this name from the list of names by which the corresponding server  
 is known.  If name is also the primary name for the server, the primary  
 name reverts to 'http://127.0.0.1' with the associated server's port.  
@@ -38,7 +38,7 @@ name reverts to 'http://127.0.0.1' with the associated server's port.
 @returns  
   true if the given name was a name for this server, false otherwise  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -51,16 +51,16 @@ name reverts to 'http://127.0.0.1' with the associated server's port.
 </table>
 
 ### has(scheme, host, port) ###
-  
+<code>  
 Returns true if the given name is in this, false otherwise.  
   
 @throws NS_ERROR_ILLEGAL_VALUE  
   if scheme or host do not match the scheme or host productions imported  
   into RFC 2616 from RFC 2396, or if port is not a valid port number  
   
-
+</code>
 ### getScheme(host, port) ###
-  
+<code>  
 Returns the scheme for the name with the given host and port, if one is  
 present; otherwise returns the empty string.  
   
@@ -68,9 +68,9 @@ present; otherwise returns the empty string.
   if host does not match the host production imported into RFC 2616 from  
   RFC 2396, or if port is not a valid port number  
   
-
+</code>
 ### setPrimary(scheme, host, port) ###
-  
+<code>  
 Designates the given name as the primary name in this and adds it to this  
 if it is not already present.  
   
@@ -78,7 +78,7 @@ if it is not already present.
   if scheme or host do not match the scheme or host productions imported  
   into RFC 2616 from RFC 2396, or if port is not a valid port number  
   
-
+</code>
 ## Attributes ##
 
 ### primaryScheme ###

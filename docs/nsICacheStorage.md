@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsICacheStorage #
-  
+<code>  
 Representation of a cache storage. There can be just-in-mem,  
 in-mem+on-disk, in-mem+on-disk+app-cache or just a specific  
 app-cache storage.  
   
-
+</code>
 ## Methods ##
 
 ### asyncOpenURI(aURI, aIdExtension, aFlags, aCallback) ###
-  
+<code>  
 Asynchronously opens a cache entry for the specified URI.  
 Result is fetched asynchronously via the callback.  
   
@@ -38,7 +38,7 @@ Result is fetched asynchronously via the callback.
    The consumer that receives the result.  
    IMPORTANT: The callback may be called sooner the method returns.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -80,7 +80,7 @@ Result is fetched asynchronously via the callback.
 </table>
 
 ### openTruncate(aURI, aIdExtension) ###
-  
+<code>  
 Immediately opens a new and empty cache entry in the storage, any existing  
 entries are immediately doomed.  This is similar to the recreate() method  
 on nsICacheEntry.  
@@ -92,7 +92,7 @@ the new entry via a callback.
 @param aURI @see asyncOpenURI  
 @param aIdExtension @see asyncOpenURI  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -112,31 +112,31 @@ the new entry via a callback.
 </table>
 
 ### exists(aURI, aIdExtension) ###
-  
+<code>  
 Synchronously check on existance of an entry.  In case of disk entries  
 this uses information from the cache index.  When the index data are not  
 up to date or index is still building, NS_ERROR_NOT_AVAILABLE is thrown.  
 The same error may throw any storage implementation that cannot determine  
 entry state without blocking the caller.  
   
-
+</code>
 ### asyncDoomURI(aURI, aIdExtension, aCallback) ###
-  
+<code>  
 Asynchronously removes an entry belonging to the URI from the cache.  
   
-
+</code>
 ### asyncEvictStorage(aCallback) ###
-  
+<code>  
 Asynchronously removes all cached entries under this storage.  
 NOTE: Disk storage also evicts memory storage.  
   
-
+</code>
 ### asyncVisitStorage(aVisitor, aVisitEntries) ###
-  
+<code>  
 Visits the storage and its entries.  
 NOTE: Disk storage also visits memory storage.  
   
-
+</code>
 ## Constants ##
 
 ### OPEN_NORMALLY ###

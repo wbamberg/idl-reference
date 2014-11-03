@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIRemoteService #
-  
+<code>  
 Start and stop the remote service (xremote/phremote), and register  
 windows with the service for backwards compatibility with old xremote  
 clients.  
@@ -16,11 +16,11 @@ clients.
               functionality, contact Benjamin Smedberg about the possibility  
               of freezing the functionality you need.  
   
-
+</code>
 ## Methods ##
 
 ### startup(appName, profileName) ###
-  
+<code>  
 Start the remote service. This should not be done until app startup  
 appears to have been successful.  
   
@@ -29,7 +29,7 @@ appears to have been successful.
 @param profileName (May be null) Sets a window property identifying the  
                    profile name.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -51,13 +51,14 @@ appears to have been successful.
 </table>
 
 ### registerWindow(aWindow) ###
-  
+<code>  
 Register a XUL window with the xremote service. The window will be  
 configured to accept incoming remote requests. If this method is called  
 before startup(), the registration will happen once startup() is called.  
   
-
+</code>
 ### shutdown() ###
-  
+<code>  
 Stop the remote service from accepting additional requests.  
   
+</code>

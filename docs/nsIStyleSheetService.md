@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### loadAndRegisterSheet(sheetURI, type) ###
-  
+<code>  
 Synchronously loads a style sheet from |sheetURI| and adds it to the list  
 of user or agent style sheets.  
   
@@ -27,26 +27,26 @@ this API is undefined.
 Sheets added via this API take effect on all documents, including  
 already-loaded ones, immediately.  
   
-
+</code>
 ### sheetRegistered(sheetURI, type) ###
-  
+<code>  
 Returns true if a style sheet at |sheetURI| has previously been  
 added to the list of style sheets specified by |type|.  
   
-
+</code>
 ### preloadSheet(sheetURI, type) ###
-  
+<code>  
 Synchronously loads a style sheet from |sheetURI| and returns the  
 new style sheet object. Can be used with nsIDOMWindowUtils.addSheet.  
   
-
+</code>
 ### unregisterSheet(sheetURI, type) ###
-  
+<code>  
 Remove the style sheet at |sheetURI| from the list of style sheets  
 specified by |type|.  The removal takes effect immediately, even for  
 already-loaded documents.  
   
-
+</code>
 ## Constants ##
 
 ### AGENT_SHEET ###

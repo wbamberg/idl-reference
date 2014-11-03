@@ -10,39 +10,39 @@ layout: default
 ## Methods ##
 
 ### getFirstColumn() ###
-  
+<code>  
 Get the first/last column.  
   
-
+</code>
 ### getLastColumn() ###
 
 ### getPrimaryColumn() ###
-  
+<code>  
 Attribute based column getters.  
   
-
+</code>
 ### getSortedColumn() ###
 
 ### getKeyColumn() ###
 
 ### getColumnFor(element) ###
-  
+<code>  
 Get the column for the given element.  
   
-
+</code>
 ### getNamedColumn(id) ###
-  
+<code>  
 Parametric column getters.  
   
-
+</code>
 ### getColumnAt(index) ###
 
 ### invalidateColumns() ###
-  
+<code>  
 This method is called whenever a treecol is added or removed and  
 the column cache needs to be rebuilt.  
   
-
+</code>
 ### restoreNaturalOrder() ###
 
 ## Attributes ##

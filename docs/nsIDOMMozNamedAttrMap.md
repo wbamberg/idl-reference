@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIDOMMozNamedAttrMap #
-  
+<code>  
 This is a temporary, non-standard interface, to ease the transition to a  
 world where Attr no longer inherits from Node.  
   
-
+</code>
 ## Methods ##
 
 ### getNamedItem(name) ###

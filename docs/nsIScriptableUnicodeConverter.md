@@ -6,52 +6,52 @@ layout: default
 </div>
 
 # nsIScriptableUnicodeConverter #
-  
+<code>  
 This interface is a unicode encoder for use by scripts  
   
 @created         8/Jun/2000  
 @author          Makoto Kato [m_kato@ga2.so-net.ne.jp]  
   
-
+</code>
 ## Methods ##
 
 ### ConvertFromUnicode(aSrc) ###
-  
+<code>  
 Converts the data from Unicode to one Charset.  
 Returns the converted string. After converting, Finish should be called  
 and its return value appended to this return value.  
   
-
+</code>
 ### Finish() ###
-  
+<code>  
 Returns the terminator string.  
 Should be called after ConvertFromUnicode() and appended to that  
 function's return value.  
   
-
+</code>
 ### ConvertToUnicode(aSrc) ###
-  
+<code>  
 Converts the data from one Charset to Unicode.  
   
-
+</code>
 ### convertFromByteArray(aData, aCount) ###
-  
+<code>  
 Converts an array of bytes to a unicode string.  
   
-
+</code>
 ### convertToByteArray(aString, aLen, aData) ###
-  
+<code>  
 Convert a unicode string to an array of bytes. Finish does not need to be  
 called.  
   
-
+</code>
 ### convertToInputStream(aString) ###
-  
+<code>  
 Converts a unicode string to an input stream. The bytes in the stream are  
 encoded according to the charset attribute.  
 The returned stream will be nonblocking.  
   
-
+</code>
 ## Attributes ##
 
 ### charset ###

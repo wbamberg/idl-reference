@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIMutable #
-  
+<code>  
 nsIMutable defines an interface to be implemented by objects which  
 can be made immutable.  
   
-
+</code>
 ## Attributes ##
 
 ### mutable ###

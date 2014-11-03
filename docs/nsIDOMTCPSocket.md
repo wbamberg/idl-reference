@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### open(host, port, options) ###
-  
+<code>  
 Create and return a socket object which will attempt to connect to  
 the given host and port.  
   
@@ -27,7 +27,7 @@ the given host and port.
   
 @return The new TCPSocket instance.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -65,7 +65,7 @@ the given host and port.
 </table>
 
 ### listen(localPort, options, backlog) ###
-  
+<code>  
 Listen on a port  
   
 @param localPort The port of the server socket. Pass -1 to indicate no preference,  
@@ -82,7 +82,7 @@ Listen on a port
   
 @return The new TCPServerSocket instance.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -123,28 +123,28 @@ Listen on a port
 </table>
 
 ### upgradeToSecure() ###
-  
+<code>  
 Enable secure on channel.  
   
-
+</code>
 ### suspend() ###
-  
+<code>  
 Pause reading incoming data and invocations of the ondata handler until  
 resume is called.  
   
-
+</code>
 ### resume() ###
-  
+<code>  
 Resume reading incoming data and invoking ondata as usual.  
   
-
+</code>
 ### close() ###
-  
+<code>  
 Close the socket.  
   
-
+</code>
 ### send(data, byteOffset, byteLength) ###
-  
+<code>  
 Write data to the socket.  
   
 @param data The data to write to the socket. If  
@@ -169,7 +169,7 @@ Write data to the socket.
         handler has been called before buffering more data by more  
         calls to send.  
   
-
+</code>
 #### Parameters ####
 
 <table>

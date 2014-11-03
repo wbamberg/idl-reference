@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIRandomGenerator #
-  
+<code>  
 Interface used to generate random data.  
   
 @threadsafe  
   
-
+</code>
 ## Methods ##
 
 ### generateRandomBytes(aLength, aBuffer) ###
-  
+<code>  
 Generates the specified amount of random bytes.  
   
 @param aLength  
@@ -23,7 +23,7 @@ Generates the specified amount of random bytes.
 @param aBuffer  
        A buffer that contains random bytes of size aLength.  
   
-
+</code>
 #### Parameters ####
 
 <table>

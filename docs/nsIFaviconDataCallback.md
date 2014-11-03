@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onComplete(aFaviconURI, aDataLen, aData, aMimeType) ###
-  
+<code>  
 Called when the required favicon's information is available.  
   
 It's up to the invoking method to state if the callback is always invoked,  
@@ -39,7 +39,7 @@ information like mime-type or data itself.
       recommended that you call the getFaviconLinkForIcon method to convert  
       the "favicon URI" into a "favicon link URI".  
   
-
+</code>
 #### Parameters ####
 
 <table>

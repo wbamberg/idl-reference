@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIIdentityKeyPair #
-  
+<code>  
 This interface provides a keypair and signing interface for Identity functionality  
   
-
+</code>
 ## Methods ##
 
 ### sign(aText, callback) ###

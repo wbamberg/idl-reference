@@ -14,7 +14,7 @@ layout: default
 ### UnEscapeAndConvert(charset, text) ###
 
 ### unEscapeURIForUI(aCharset, aURIFragment) ###
-  
+<code>  
 Unescapes the given URI fragment (for UI purpose only)  
 Note:   
 <ul>  
@@ -29,7 +29,7 @@ Note:
 @param aURIFragment the URI (or URI fragment) to unescape  
 @return Unescaped aURIFragment  converted to unicode  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -60,7 +60,7 @@ Note:
 </table>
 
 ### unEscapeNonAsciiURI(aCharset, aURIFragment) ###
-  
+<code>  
 Unescapes only non ASCII characters in the given URI fragment   
 note: this method assumes the URI as UTF-8 and fallbacks to the given   
 charset if the charset is an ASCII superset   
@@ -71,7 +71,7 @@ charset if the charset is an ASCII superset
 @throws NS_ERROR_UCONV_NOCONV when there is no decoder for aCharset  
         or error code of nsIUnicodeDecoder in case of conversion failure  
   
-
+</code>
 #### Parameters ####
 
 <table>

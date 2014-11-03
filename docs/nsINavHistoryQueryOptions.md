@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsINavHistoryQueryOptions #
-  
+<code>  
 This object represents the global options for executing a query.  
   
-
+</code>
 ## Methods ##
 
 ### clone() ###
-  
+<code>  
 Creates a new options item with the same parameters of this one.  
   
-
+</code>
 ## Attributes ##
 
 ### sortingMode ###

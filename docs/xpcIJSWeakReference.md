@@ -10,9 +10,10 @@ layout: default
 ## Methods ##
 
 ### get() ###
-  
+<code>  
 To be called from JS only.  
   
 Returns the referenced JS object or null if the JS object has  
 been garbage collected.  
   
+</code>

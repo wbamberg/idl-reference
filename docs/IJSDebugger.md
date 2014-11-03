@@ -6,15 +6,16 @@ layout: default
 </div>
 
 # IJSDebugger #
-  
+<code>  
 Do not use this interface. Instead, write:  
     Components.utils.import("resource://gre/modules/jsdebugger.jsm");  
     addDebuggerToGlobal(global);  
   
-
+</code>
 ## Methods ##
 
 ### addClass(global) ###
-  
+<code>  
 Define the global Debugger constructor on a given global.  
   
+</code>

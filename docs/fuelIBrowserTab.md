@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # fuelIBrowserTab #
-  
+<code>  
 Interface representing a browser tab.  
   
-
+</code>
 ## Methods ##
 
 ### load(aURI) ###
-  
+<code>  
 Load a new URI into this browser tab.  
 @param   aURI  
          The uri to load into the browser tab  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -32,23 +32,23 @@ Load a new URI into this browser tab.
 </table>
 
 ### focus() ###
-  
+<code>  
 Give focus to this browser tab, and bring it to the front.  
   
-
+</code>
 ### close() ###
-  
+<code>  
 Close the browser tab. This may not actually close the tab  
 as script may abort the close operation.  
   
-
+</code>
 ### moveBefore(aBefore) ###
-  
+<code>  
 Moves this browser tab before another browser tab within the window.  
 @param   aBefore  
          The tab before which the target tab will be moved  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -62,10 +62,10 @@ Moves this browser tab before another browser tab within the window.
 </table>
 
 ### moveToEnd() ###
-  
+<code>  
 Move this browser tab to the last tab within the window.  
   
-
+</code>
 ## Attributes ##
 
 ### uri ###

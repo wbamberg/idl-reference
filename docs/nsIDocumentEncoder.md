@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### init(aDocument, aMimeType, aFlags) ###
-  
+<code>  
 Initialize with a pointer to the document and the mime type.  
 @param aDocument Document to encode.  
 @param aMimeType MimeType to use. May also be set by SetMimeType.  
 @param aFlags Flags to use while encoding. May also be set by SetFlags.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -44,13 +44,13 @@ Initialize with a pointer to the document and the mime type.
 ### nativeInit(aDocument, aMimeType, aFlags) ###
 
 ### setSelection(aSelection) ###
-  
+<code>  
  If the selection is set to a non-null value, then the  
  selection is used for encoding, otherwise the entire  
  document is encoded.  
 @param aSelection The selection to encode.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -64,13 +64,13 @@ Initialize with a pointer to the document and the mime type.
 </table>
 
 ### setRange(aRange) ###
-  
+<code>  
  If the range is set to a non-null value, then the  
  range is used for encoding, otherwise the entire  
  document or selection is encoded.  
 @param aRange The range to encode.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -84,13 +84,13 @@ Initialize with a pointer to the document and the mime type.
 </table>
 
 ### setNode(aNode) ###
-  
+<code>  
  If the node is set to a non-null value, then the  
  node is used for encoding, otherwise the entire  
  document or range or selection is encoded.  
 @param aNode The node to encode.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -106,13 +106,13 @@ Initialize with a pointer to the document and the mime type.
 ### setNativeNode(aNode) ###
 
 ### setContainerNode(aContainer) ###
-  
+<code>  
  If the container is set to a non-null value, then its  
  child nodes are used for encoding, otherwise the entire  
  document or range or selection or node is encoded.  
  @param aContainer The node which child nodes will be encoded.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -128,7 +128,7 @@ Initialize with a pointer to the document and the mime type.
 ### setNativeContainerNode(aContainer) ###
 
 ### setCharset(aCharset) ###
-  
+<code>  
  Documents typically have an intrinsic character set,  
  but if no intrinsic value is found, the platform character set  
  is used. This function overrides both the intrinisc and platform  
@@ -138,7 +138,7 @@ Initialize with a pointer to the document and the mime type.
   
  Possible result codes: NS_ERROR_NO_CHARSET_CONVERTER  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -153,11 +153,11 @@ Initialize with a pointer to the document and the mime type.
 </table>
 
 ### setWrapColumn(aWrapColumn) ###
-  
+<code>  
  Set a wrap column.  This may have no effect in some types of encoders.  
 @param aWrapColumn Column to which to wrap.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -171,14 +171,14 @@ Initialize with a pointer to the document and the mime type.
 </table>
 
 ### encodeToStream(aStream) ###
-  
+<code>  
  Encode the document and send the result to the nsIOutputStream.  
   
  Possible result codes are the stream errors which might have  
  been encountered.  
 @param aStream Stream into which to encode.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -192,12 +192,12 @@ Initialize with a pointer to the document and the mime type.
 </table>
 
 ### encodeToString() ###
-  
+<code>  
 Encode the document into a string.  
   
 @return The document encoded into a string.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -210,7 +210,7 @@ Encode the document into a string.
 </table>
 
 ### encodeToStringWithContext(aContextString, aInfoString) ###
-  
+<code>  
 Encode the document into a string. Stores the extra context information  
 into the two arguments.  
 @param [OUT] aContextString The string where the parent hierarchy  
@@ -220,7 +220,7 @@ into the two arguments.
 @return The document encoded as a string.  
   
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -253,7 +253,7 @@ into the two arguments.
 </table>
 
 ### encodeToStringWithMaxLength(aMaxLength) ###
-  
+<code>  
 Encode the document into a string of limited size.  
 @param aMaxLength After aMaxLength characters, the encoder will stop  
                   encoding new data.  
@@ -266,7 +266,7 @@ Encode the document into a string of limited size.
   
 @return The document encoded into a string.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -298,11 +298,11 @@ Encode the document into a string of limited size.
 </table>
 
 ### setNodeFixup(aFixup) ###
-  
+<code>  
 Set the fixup object associated with node persistence.  
 @param aFixup The fixup object.  
   
-
+</code>
 #### Parameters ####
 
 <table>

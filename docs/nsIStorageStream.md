@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIStorageStream #
-  
+<code>  
 The nsIStorageStream interface maintains an internal data buffer that can be  
 filled using a single output stream.  One or more independent input streams  
 can be created to read the data from the buffer non-destructively.  
   
-
+</code>
 ## Methods ##
 
 ### init(segmentSize, maxSize) ###
-  
+<code>  
   
 Initialize the stream, setting up the amount of space that will be  
 allocated for the stream's backing-store.  
@@ -26,7 +26,7 @@ allocated for the stream's backing-store.
        Maximum total size of this stream. length will always be less  
        than or equal to this value. Passing UINT32_MAX is safe.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -47,21 +47,21 @@ allocated for the stream's backing-store.
 </table>
 
 ### getOutputStream(startPosition) ###
-  
+<code>  
 Get a reference to the one and only output stream for this instance.  
 The zero-based startPosition argument is used is used to set the initial  
 write cursor position.  The startPosition cannot be set larger than the  
 current buffer length.  Calling this method has the side-effect of  
 truncating the internal buffer to startPosition bytes.  
   
-
+</code>
 ### newInputStream(startPosition) ###
-  
+<code>  
 Create a new input stream to read data (written by the singleton output  
 stream) from the internal buffer.  Multiple, independent input streams  
 can be created.  
   
-
+</code>
 ## Attributes ##
 
 ### length ###

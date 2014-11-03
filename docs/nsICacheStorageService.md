@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsICacheStorageService #
-  
+<code>  
 Provides access to particual cache storages of the network URI cache.  
   
-
+</code>
 ## Methods ##
 
 ### memoryCacheStorage(aLoadContextInfo) ###
-  
+<code>  
 Get storage where entries will only remain in memory, never written  
 to the disk.  
   
@@ -26,7 +26,7 @@ OPEN_READONLY open flag has no effect on this behavior.
    Information about the loading context, this focuses the storage JAR and  
    respects separate storage for private browsing.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -41,7 +41,7 @@ OPEN_READONLY open flag has no effect on this behavior.
 </table>
 
 ### diskCacheStorage(aLoadContextInfo, aLookupAppCache) ###
-  
+<code>  
 Get storage where entries will be written to disk when not forbidden by  
 response headers.  
   
@@ -49,7 +49,7 @@ response headers.
    When set true (for top level document loading channels) app cache will  
    be first to check on to find entries in.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -64,7 +64,7 @@ response headers.
 </table>
 
 ### appCacheStorage(aLoadContextInfo, aApplicationCache) ###
-  
+<code>  
 Get storage for a specified application cache obtained using some different  
 mechanism.  
   
@@ -74,7 +74,7 @@ mechanism.
    Optional reference to an existing appcache.  When left null, this will  
    work with offline cache as a whole.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -95,18 +95,18 @@ mechanism.
 </table>
 
 ### clear() ###
-  
+<code>  
 Evict the whole cache.  
   
-
+</code>
 ### purgeFromMemory(aWhat) ###
-  
+<code>  
 Purges data we keep warmed in memory.  Use for tests and for  
 saving memory.  
   
-
+</code>
 ### asyncGetDiskConsumption(aObserver) ###
-  
+<code>  
 Asynchronously determine how many bytes of the disk space the cache takes.  
 @see nsICacheStorageConsumptionObserver  
 @param aObserver  
@@ -114,7 +114,7 @@ Asynchronously determine how many bytes of the disk space the cache takes.
    nsICacheStorageConsumptionObserver.  
    NOTE: the observer MUST implement nsISupportsWeakReference.  
   
-
+</code>
 #### Parameters ####
 
 <table>

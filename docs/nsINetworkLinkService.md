@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsINetworkLinkService #
-  
+<code>  
 Network link status monitoring service.  
   
-
+</code>
 ## Attributes ##
 
 ### isLinkUp ###

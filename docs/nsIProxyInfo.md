@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIProxyInfo #
-  
+<code>  
 This interface identifies a proxy server.  
   
-
+</code>
 ## Attributes ##
 
 ### host ###

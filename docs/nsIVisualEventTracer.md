@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIVisualEventTracer #
-  
+<code>  
 Interface to control the visual event tracer feature.  The result  
 is a log of various events that are monitored by a custom code  
 instrumentation around the mozilla code base.  
   
-
+</code>
 ## Methods ##
 
 ### start(minBacklogSeconds) ###
-  
+<code>  
 Start the logging now.  No affect if already started.  
 Current backlog is deleted by this call otherwise.  
   
@@ -23,7 +23,7 @@ Current backlog is deleted by this call otherwise.
    Manimum time to keep the backlog.  Entries of the log are discarded  
    when their age is more then value of this argument.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -38,12 +38,12 @@ Current backlog is deleted by this call otherwise.
 </table>
 
 ### stop() ###
-  
+<code>  
 Stop the logging now.  Backlog is kept in memory.  
   
-
+</code>
 ### snapshot() ###
-  
+<code>  
 Obtain the log.  This can be called whenever you want.  
   
 @return  
@@ -52,7 +52,7 @@ Obtain the log.  This can be called whenever you want.
    the log using the object.  Calling stop() on the tracer  
    doesn't delete this log.  
   
-
+</code>
 #### Returns ####
 
 <table>

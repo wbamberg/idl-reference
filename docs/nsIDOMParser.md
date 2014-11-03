@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMParser #
-  
+<code>  
 The nsIDOMParser interface is a non-SAX interface that can be used  
 to parse a string or byte stream containing XML or HTML content  
 to a DOM document. Parsing is always synchronous - a document is always  
@@ -14,11 +14,11 @@ returned from the parsing methods. This is as opposed to loading and
 parsing with the XMLHttpRequest interface, which can be used for  
 asynchronous (callback-based) loading.  
   
-
+</code>
 ## Methods ##
 
 ### parseFromString(str, contentType) ###
-  
+<code>  
 The string passed in is parsed into a DOM document.  
   
 @param str The UTF16 string to be parsed  
@@ -26,7 +26,7 @@ The string passed in is parsed into a DOM document.
 @returns The DOM document created as a result of parsing the   
          string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -58,7 +58,7 @@ The string passed in is parsed into a DOM document.
 </table>
 
 ### parseFromBuffer(buf, bufLen, contentType) ###
-  
+<code>  
 The buffer is parsed into a DOM document.  
 The charset is determined from the xml entity decl.  
   
@@ -68,7 +68,7 @@ The charset is determined from the xml entity decl.
 @returns The DOM document created as a result of parsing the   
          string  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -106,7 +106,7 @@ The charset is determined from the xml entity decl.
 </table>
 
 ### parseFromStream(stream, charset, contentLength, contentType) ###
-  
+<code>  
 The byte stream passed in is parsed into a DOM document.  
   
 Not accessible from web content.  
@@ -121,7 +121,7 @@ Not accessible from web content.
 @returns The DOM document created as a result of parsing the   
          stream  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -168,7 +168,7 @@ Not accessible from web content.
 </table>
 
 ### init(principal, documentURI, baseURI, scriptObject) ###
-  
+<code>  
 Initialize the principal and document and base URIs that the parser should  
 use for documents it creates.  If this is not called, then a null  
 principal and its URI will be used.  When creating a DOMParser via the JS  
@@ -189,7 +189,7 @@ fail.
 @param scriptObject The object from which the context for event handling  
                     can be got.  
   
-
+</code>
 #### Parameters ####
 
 <table>

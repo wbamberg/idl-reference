@@ -6,7 +6,8 @@ layout: default
 </div>
 
 # nsIXPCComponents_ID #
-  
+<code>  
 interface of Components.ID  
 (interesting stuff only reflected into JavaScript)  
   
+</code>

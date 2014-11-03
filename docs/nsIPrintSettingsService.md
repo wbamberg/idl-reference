@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### initPrintSettingsFromPrinter(aPrinterName, aPrintSettings) ###
-  
+<code>  
 Initializes certain settings from the native printer into the PrintSettings  
 if aPrinterName is null then it uses the default printer name if it can  
 These settings include, but are not limited to:  
@@ -18,9 +18,9 @@ These settings include, but are not limited to:
   Page Size  
   Number of Copies  
   
-
+</code>
 ### initPrintSettingsFromPrefs(aPrintSettings, aUsePrinterNamePrefix, aFlags) ###
-  
+<code>  
 Reads PrintSettings values from Prefs,  
 the values to be read are indicated by the "flags" arg.  
   
@@ -41,9 +41,9 @@ Items not read:
   printerName  
   
   
-
+</code>
 ### savePrintSettingsToPrefs(aPrintSettings, aUsePrinterNamePrefix, aFlags) ###
-  
+<code>  
 Writes PrintSettings values to Prefs,   
 the values to be written are indicated by the "flags" arg.  
   
@@ -61,7 +61,7 @@ Items not written:
   printFrameType, printSilent, shrinkToFit, numCopies  
   
   
-
+</code>
 ## Attributes ##
 
 ### globalPrintSettings ###

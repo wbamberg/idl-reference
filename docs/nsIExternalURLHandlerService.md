@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIExternalURLHandlerService #
-  
+<code>  
 The external URL handler service is used for finding  
 platform-specific applications for handling particular URLs.  
   
-
+</code>
 ## Methods ##
 
 ### getURLHandlerInfoFromOS(aURL, aFound) ###
-  
+<code>  
 Given a URL, looks up the handler info from the OS. This should be  
 overridden by each OS's implementation.  
   
@@ -22,7 +22,7 @@ overridden by each OS's implementation.
 @param aFound  Was an OS default handler for this URL found?  
 @return  An nsIHanderInfo for the protocol.  
   
-
+</code>
 #### Parameters ####
 
 <table>

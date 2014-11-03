@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### loadURI(uri, loadInfo, aLoadFlags, firstParty) ###
-  
+<code>  
 Loads a given URI.  This will give priority to loading the requested URI  
 in the object implementing	this interface.  If it can't be loaded here  
 however, the URL dispatcher will go through its normal process of content  
@@ -29,7 +29,7 @@ loading.
                     non-null loadInfo.  And even some of those might not  
                     be allowed.  Use at your own risk.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -64,7 +64,7 @@ loading.
 </table>
 
 ### loadStream(aStream, aURI, aContentType, aContentCharset, aLoadInfo) ###
-  
+<code>  
 Loads a given stream. This will give priority to loading the requested  
 stream in the object implementing this interface. If it can't be loaded  
 here however, the URL dispatched will go through its normal process of  
@@ -83,7 +83,7 @@ content loading.
                          you have this object you can set the needed   
                          properties on it and then pass it to loadStream.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -128,7 +128,7 @@ content loading.
 </table>
 
 ### internalLoad(aURI, aReferrer, aOwner, aFlags, aWindowTarget, aTypeHint, aFileName, aPostDataStream, aHeadersStream, aLoadFlags, aSHEntry, firstParty, aSrcdoc, aSourceDocShell, aBaseURI, aDocShell, aRequest) ###
-  
+<code>  
 Loads the given URI.  This method is identical to loadURI(...) except  
 that its parameter list is broken out instead of being packaged inside  
 of an nsIDocShellLoadInfo object...  
@@ -158,7 +158,7 @@ the given filename.
                          srcdoc loads as it cannot otherwise be inferred  
                          in certain situations such as view-source.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -265,32 +265,32 @@ the given filename.
 </table>
 
 ### addState(aData, aTitle, aURL, aReplace) ###
-  
+<code>  
 Do either a history.pushState() or history.replaceState() operation,  
 depending on the value of aReplace.  
   
-
+</code>
 ### createLoadInfo(loadInfo) ###
-  
+<code>  
 Creates a DocShellLoadInfo object that you can manipulate and then pass  
 to loadURI.  
   
-
+</code>
 ### prepareForNewContentModel() ###
-  
+<code>  
 Reset state to a new content model within the current document and the document  
 viewer.  Called by the document before initiating an out of band document.write().  
   
-
+</code>
 ### setCurrentURI(aURI) ###
-  
+<code>  
 For editors and suchlike who wish to change the URI associated with the  
 document. Note if you want to get the current URI, use the read-only  
 property on nsIWebNavigation.  
   
-
+</code>
 ### firePageHideNotification(isUnload) ###
-  
+<code>  
 Notify the associated content viewer and all child docshells that they are  
 about to be hidden.  If |isUnload| is true, then the document is being  
 unloaded as well.  
@@ -298,7 +298,7 @@ unloaded as well.
 @param isUnload if true, fire the unload event in addition to the pagehide  
                 event.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -313,10 +313,10 @@ unloaded as well.
 </table>
 
 ### GetPresShell() ###
-  
+<code>  
 Presentation shell for the currently loaded document.  This may be null.  
   
-
+</code>
 ### getDocShellEnumerator(aItemType, aDirection) ###
 
 ### tabToTreeOwner(forward, tookFocus) ###
@@ -324,22 +324,22 @@ Presentation shell for the currently loaded document.  This may be null.
 ### isBeingDestroyed() ###
 
 ### suspendRefreshURIs() ###
-  
+<code>  
 Cancel the XPCOM timers for each meta-refresh URI in this docshell,  
 and this docshell's children, recursively. The meta-refresh timers can be  
 restarted using resumeRefreshURIs().  If the timers are already suspended,  
 this has no effect.  
   
-
+</code>
 ### resumeRefreshURIs() ###
-  
+<code>  
 Restart the XPCOM timers for each meta-refresh URI in this docshell,  
 and this docshell's children, recursively.  If the timers are already  
 running, this has no effect.  
   
-
+</code>
 ### beginRestore(viewer, top) ###
-  
+<code>  
 Begin firing WebProgressListener notifications for restoring a page  
 presentation. |viewer| is the content viewer whose document we are  
 starting to load.  If null, it defaults to the docshell's current content  
@@ -348,16 +348,16 @@ docshell that is being restored; it will be set to false when this method
 is called for child docshells.  This method will post an event to  
 complete the simulated load after returning to the event loop.  
   
-
+</code>
 ### finishRestore() ###
-  
+<code>  
 Finish firing WebProgressListener notifications and DOM events for  
 restoring a page presentation.  This should only be called via  
 beginRestore().  
   
-
+</code>
 ### displayLoadError(aError, aURI, aURL, aFailedChannel) ###
-  
+<code>  
 Display a load error in a frame while keeping that frame's currentURI  
 pointing correctly to the page where the error ocurred, rather than to  
 the error document page. You must provide either the aURI or aURL parameter.  
@@ -367,7 +367,7 @@ the error document page. You must provide either the aURI or aURL parameter.
 @param  aURL           wstring of the page where the error happened  
 @param  aFailedChannel The channel related to this error  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -399,13 +399,13 @@ the error document page. You must provide either the aURI or aURL parameter.
 </table>
 
 ### historyPurged(numEntries) ###
-  
+<code>  
 Notification that entries have been removed from the beginning of a  
 nsSHistory which has this as its rootDocShell.  
   
 @param numEntries - The number of entries removed  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -423,23 +423,23 @@ nsSHistory which has this as its rootDocShell.
 ### addSessionStorage(principal, storage) ###
 
 ### setChildOffset(offset) ###
-  
+<code>  
 Set the offset of this child in its container.  
   
-
+</code>
 ### DetachEditorFromWindow() ###
-  
+<code>  
 Disconnects this docshell's editor from its window, and stores the  
 editor data in the open document's session history entry.  This  
 should be called only during page transitions.  
   
-
+</code>
 ### createAboutBlankContentViewer(aPrincipal) ###
-  
+<code>  
 Create a new about:blank document and content viewer.  
 @param aPrincipal the principal to use for the new document.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -453,51 +453,51 @@ Create a new about:blank document and content viewer.
 </table>
 
 ### gatherCharsetMenuTelemetry() ###
-  
+<code>  
 Called when the user chose an encoding override from the character  
 encoding menu. Separate from the setter for the charset property to avoid  
 extensions adding noise to the data.  
   
-
+</code>
 ### setParentCharset(parentCharset, parentCharsetSource, parentCharsetPrincipal) ###
-  
+<code>  
 In a child docshell, this is the charset of the parent docshell  
   
-
+</code>
 ### getParentCharset(parentCharset, parentCharsetSource, parentCharsetPrincipal) ###
 
 ### now() ###
-  
+<code>  
 Return a DOMHighResTimeStamp representing the number of  
 milliseconds from an arbitrary point in time.  The reference  
 point is shared by all DocShells and is also used by timestamps  
 on markers.  
   
-
+</code>
 ### popProfileTimelineMarkers() ###
-  
+<code>  
 Returns and flushes the profile timeline markers gathered by the docShell  
   
-
+</code>
 ### addWeakPrivacyTransitionObserver(obs) ###
-  
+<code>  
 Add an observer to the list of parties to be notified when this docshell's  
 private browsing status is changed. |obs| must support weak references.  
   
-
+</code>
 ### addWeakReflowObserver(obs) ###
-  
+<code>  
 Add an observer to the list of parties to be notified when reflows are  
 occurring. |obs| must support weak references.  
   
-
+</code>
 ### removeWeakReflowObserver(obs) ###
-  
+<code>  
 Remove an observer from the list of parties to be notified about reflows.  
   
-
+</code>
 ### notifyReflowObservers(interruptible, start, end) ###
-  
+<code>  
 Notify all attached observers that a reflow has just occurred.  
   
 @param interruptible if true, the reflow was interruptible.  
@@ -506,7 +506,7 @@ Notify all attached observers that a reflow has just occurred.
 @param end           timestamp when reflow ended, in milliseconds since  
                      navigationStart (accurate to 1/1000 of a ms)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -534,25 +534,25 @@ Notify all attached observers that a reflow has just occurred.
 </table>
 
 ### addWeakScrollObserver(obs) ###
-  
+<code>  
 Add an observer to the list of parties to be notified when scroll position  
 of some elements is changed.  
   
-
+</code>
 ### removeWeakScrollObserver(obs) ###
-  
+<code>  
 Add an observer to the list of parties to be notified when scroll position  
 of some elements is changed.  
   
-
+</code>
 ### notifyScrollObservers() ###
-  
+<code>  
 Notify all attached observers that the scroll position of some element  
 has changed.  
   
-
+</code>
 ### setIsApp(ownAppId) ###
-  
+<code>  
 Indicate that this docshell corresponds to an app with the given app id.  
   
 You may pass NO_APP_ID or UNKNOWN_APP_ID for containingAppId.  If you  
@@ -567,9 +567,9 @@ docshell's app id, so tread lightly.
 If you call this method after calling setIsBrowserInsideApp, this  
 docshell will forget the fact that it was a browser.  
   
-
+</code>
 ### setIsBrowserInsideApp(containingAppId) ###
-  
+<code>  
 Indicate that this docshell corresponds to a browser inside an app with  
 the given ID.  As with setIsApp, you may pass NO_APP_ID or  
 UNKNOWN_APP_ID.  
@@ -577,47 +577,47 @@ UNKNOWN_APP_ID.
 As with setIsApp, you may call this more than once, but it's kind of a  
 hack, so be careful.  
   
-
+</code>
 ### getSameTypeParentIgnoreBrowserAndAppBoundaries() ###
-  
+<code>  
 Like nsIDocShellTreeItem::GetSameTypeParent, except this ignores <iframe  
 mozbrowser> and <iframe mozapp> boundaries.  
   
-
+</code>
 ### isSandboxedFrom(aTargetDocShell) ###
-  
+<code>  
 Returns true if we are sandboxed from aTargetDocShell.  
 aTargetDocShell - the browsing context we are attempting to navigate.  
   
-
+</code>
 ### GetAllowMixedContentAndConnectionData(rootHasSecureConnection, allowMixedContent, isRootDocShell) ###
-  
+<code>  
 Checks whether the channel associated with the root docShell is equal to  
 mMixedContentChannel. If they are the same, allowMixedContent is set to true.  
 Checks if the root document has a secure connection. If it is, sets   
 rootHasSecureConnection to true. If the docShell is the root doc shell,   
 isRootDocShell is set to true.   
   
-
+</code>
 ### pluginsAllowedInCurrentDoc() ###
-  
+<code>  
 Are plugins allowed in the current document loaded in this docshell ?  
 (if there is one). This depends on whether plugins are allowed by this  
 docshell itself or if the document is sandboxed and hence plugins should  
 not be allowed.  
   
-
+</code>
 ### setFullscreenAllowed(allowed) ###
 
 ### makeEditable(inWaitForUriLoad) ###
-  
+<code>  
 Make this docShell editable, setting a flag that causes  
 an editor to get created, either immediately, or after  
 a url has been loaded.  
      @param  inWaitForUriLoad    true to wait for a URI before  
                                  creating the editor.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -632,67 +632,67 @@ a url has been loaded.
 </table>
 
 ### getChildSHEntry(aChildOffset) ###
-  
+<code>  
 Get the SHEntry associated with a child docshell  
   
-
+</code>
 ### addChildSHEntry(aCloneReference, aHistoryEntry, aChildOffset, aLoadType, aCloneChilden) ###
-  
+<code>  
 Add a Child SHEntry for a frameset page, given the child's loadtype.  
 If aCloneChildren is true, then aCloneReference's children will be  
 cloned onto aHistoryEntry.  
   
-
+</code>
 ### removeFromSessionHistory() ###
-  
+<code>  
 Removes nsISHEntry objects related to this docshell from session history.  
 Use this only with subdocuments, like iframes.  
   
-
+</code>
 ### getCurrentSHEntry(aEntry) ###
-  
+<code>  
 Returns false for mLSHE, true for mOSHE  
   
-
+</code>
 ### isCommandEnabled(command) ###
-  
+<code>  
 Cherry picked parts of nsIController.  
 They are here, because we want to call these functions  
 from JS.  
   
-
+</code>
 ### doCommand(command) ###
 
 ### IsInvisible() ###
-  
+<code>  
 Invisible DocShell are dummy construct to simulate DOM windows  
 without any actual visual representation. They have to be marked  
 at construction time, to avoid any painting activity.  
   
-
+</code>
 ### SetInvisible(aIsInvisibleDochsell) ###
 
 ### GetScriptGlobalObject() ###
-  
+<code>  
 Get the script global for the document in this docshell.  
   
-
+</code>
 ### setOpener(aOpener) ###
-  
+<code>  
 Regarding setOpener / getOpener - We can't use XPIDL's "attribute"  
 for notxpcom, so we're relegated to using explicit gets / sets. This  
 should be fine, considering that these methods should only ever be  
 called from native code.  
   
-
+</code>
 ### getOpener() ###
 
 ### setOpenedRemote(aOpenedRemote) ###
-  
+<code>  
 See the documentation for setOpener and getOpener about why we  
 don't use attribute here instead.  
   
-
+</code>
 ### getOpenedRemote() ###
 
 ### getURLSearchParams() ###

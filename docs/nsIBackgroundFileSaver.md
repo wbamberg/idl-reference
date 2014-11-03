@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIBackgroundFileSaver #
-  
+<code>  
 Allows saving data to a file, while handling all the input/output on a  
 background thread, including the initial file name assignment and any  
 subsequent renaming of the target file.  
@@ -35,29 +35,29 @@ Finish method must be called to complete the operation.
          public methods of the interface may only be called from the main  
          thread.  
   
-
+</code>
 ## Methods ##
 
 ### enableSignatureInfo() ###
-  
+<code>  
 Instructs the component to compute the signatureInfo of the target file,  
 and make it available in the signatureInfo property.  
   
 @remarks This must be set on the main thread before the first call to  
          setTarget.  
   
-
+</code>
 ### enableSha256() ###
-  
+<code>  
 Instructs the component to compute the SHA-256 hash of the target file, and  
 make it available in the sha256Hash property.  
   
 @remarks This must be set on the main thread before the first call to  
          setTarget.  
   
-
+</code>
 ### enableAppend() ###
-  
+<code>  
 Instructs the component to append data to the initial target file, that  
 will be specified by the first call to the setTarget method, instead of  
 overwriting the file.  
@@ -67,9 +67,9 @@ If the initial target file does not exist, this method has no effect.
 @remarks This must be set on the main thread before the first call to  
          setTarget.  
   
-
+</code>
 ### setTarget(aTarget, aKeepPartial) ###
-  
+<code>  
 Sets the name of the output file to be written.  The target can be changed  
 after data has already been fed, in which case the existing file will be  
 moved to the new destination.  
@@ -92,7 +92,7 @@ fails.  Failure is notified asynchronously through the observer.
        rather than deleted, if the operation fails or is canceled.  This is  
        generally set for downloads that use temporary ".part" files.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -114,7 +114,7 @@ fails.  Failure is notified asynchronously through the observer.
 </table>
 
 ### finish(aStatus) ###
-  
+<code>  
 Terminates access to the output file, then notifies the observer with the  
 specified status code.  A failure code will force the operation to be  
 canceled, in which case the output file will be deleted if requested.  
@@ -133,7 +133,7 @@ renamed even if all the data has been fed.
        fails meanwhile for other reasons, or the observer has been already  
        notified of completion, this status code is ignored.  
   
-
+</code>
 #### Parameters ####
 
 <table>

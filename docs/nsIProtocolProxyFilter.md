@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIProtocolProxyFilter #
-  
+<code>  
 This interface is used to apply filters to the proxies selected for a given  
 URI.  Use nsIProtocolProxyService::registerFilter to hook up instances of  
 this interface.  
   
-
+</code>
 ## Methods ##
 
 ### applyFilter(aProxyService, aURI, aProxy) ###
-  
+<code>  
 This method is called to apply proxy filter rules for the given URI  
 and proxy object (or list of proxy objects).  
   
@@ -34,7 +34,7 @@ and proxy object (or list of proxy objects).
         connection should be used.  Use aProxyService.newProxyInfo to  
         construct nsIProxyInfo objects.  
   
-
+</code>
 #### Parameters ####
 
 <table>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsITransport #
-  
+<code>  
 nsITransport  
   
 This interface provides a common way of accessing i/o streams connected  
@@ -21,11 +21,11 @@ receives transport-specific events as the transfer is occuring.  For a
 socket transport, these events can include status about the connection.  
 See nsISocketTransport for more info about socket transport specifics.  
   
-
+</code>
 ## Methods ##
 
 ### openInputStream(aFlags, aSegmentSize, aSegmentCount) ###
-  
+<code>  
 Open an input stream on this transport.  
   
 Flags have the following meaning:  
@@ -56,7 +56,7 @@ OPEN_UNBUFFERED
        if OPEN_UNBUFFERED is not set, then this parameter specifies the  
        maximum number of buffer segments (pass 0 to use default value).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -84,7 +84,7 @@ OPEN_UNBUFFERED
 </table>
 
 ### openOutputStream(aFlags, aSegmentSize, aSegmentCount) ###
-  
+<code>  
 Open an output stream on this transport.  
   
 Flags have the following meaning:  
@@ -115,7 +115,7 @@ OPEN_UNBUFFERED
        if OPEN_UNBUFFERED is not set, then this parameter specifies the  
        maximum number of buffer segments (pass 0 to use default value).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -143,13 +143,13 @@ OPEN_UNBUFFERED
 </table>
 
 ### close(aReason) ###
-  
+<code>  
 Close the transport and any open streams.  
   
 @param aReason  
        the reason for closing the stream.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -163,7 +163,7 @@ Close the transport and any open streams.
 </table>
 
 ### setEventSink(aSink, aEventTarget) ###
-  
+<code>  
 Set the transport event sink.  
   
 @param aSink  
@@ -173,7 +173,7 @@ Set the transport event sink.
        be delivered.  if NULL, then the notifications may occur on  
        any thread.  
   
-
+</code>
 #### Parameters ####
 
 <table>

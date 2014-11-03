@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # amIAddonManager #
-  
+<code>  
 A service to make some AddonManager functionality available to C++ callers.  
 Javascript callers should still use AddonManager.jsm directly.  
   
-
+</code>
 ## Methods ##
 
 ### mapURIToAddonID(aURI, aID) ###
-  
+<code>  
 Synchronously map a URI to the corresponding Addon ID.  
   
 Mappable URIs are limited to in-application resources belonging to the  
@@ -26,7 +26,7 @@ but do not include URIs from meta data, such as the add-on homepage.
 @return  
         true if the URI has been mapped successfully to an Addon ID  
   
-
+</code>
 #### Parameters ####
 
 <table>

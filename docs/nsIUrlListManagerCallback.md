@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIUrlListManagerCallback #
-  
+<code>  
 Interface for a class that manages updates of the url classifier database.  
   
-
+</code>
 ## Methods ##
 
 ### handleEvent(value) ###

@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # mozIPlacesAutoComplete #
-  
+<code>  
 This interface provides some constants used by the Places AutoComplete  
 search provider as well as methods to track opened pages for AutoComplete  
 purposes.  
   
-
+</code>
 ## Methods ##
 
 ### registerOpenPage(aURI) ###
-  
+<code>  
 Mark a page as being currently open.  
   
 @note Pages will not be automatically unregistered when Private Browsing  
@@ -25,7 +25,7 @@ Mark a page as being currently open.
 @param aURI  
        The URI to register as an open page.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -39,7 +39,7 @@ Mark a page as being currently open.
 </table>
 
 ### unregisterOpenPage(aURI) ###
-  
+<code>  
 Mark a page as no longer being open (either by closing the window or tab,  
 or by navigating away from that page).  
   
@@ -50,7 +50,7 @@ or by navigating away from that page).
 @param aURI  
        The URI to unregister as an open page.  
   
-
+</code>
 #### Parameters ####
 
 <table>

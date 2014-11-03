@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### handleContent(aContentType, aWindowContext, aRequest) ###
-  
+<code>  
 Tells the content handler to take over handling the content. If this  
 function succeeds, the URI Loader will leave this request alone, ignoring  
 progress notifications. Failure of this method will cause the request to be  
@@ -29,7 +29,7 @@ below).
        want to handle this content. A different way for handling this  
        content should be tried.  
   
-
+</code>
 #### Parameters ####
 
 <table>

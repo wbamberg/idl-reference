@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIAccessibleTextChangeEvent #
-  
+<code>  
 Fired when an accessible's text changes.  
   
-
+</code>
 ## Attributes ##
 
 ### start ###

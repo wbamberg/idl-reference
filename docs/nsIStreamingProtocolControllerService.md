@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIStreamingProtocolControllerService #
-  
+<code>  
 Media stream controller Service API.  
   
-
+</code>
 ## Methods ##
 
 ### create(channel) ###

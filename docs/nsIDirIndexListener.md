@@ -6,23 +6,23 @@ layout: default
 </div>
 
 # nsIDirIndexListener #
-  
+<code>  
 This interface is used to receive contents of directory index listings  
 from a protocol. They can then be transformed into an output format  
 (such as rdf, html, etc)  
   
-
+</code>
 ## Methods ##
 
 ### onIndexAvailable(aRequest, aCtxt, aIndex) ###
-  
+<code>  
 Called for each directory entry  
   
 @param request - the request  
 @param ctxt - opaque parameter  
 @param index - new index to add  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -48,14 +48,14 @@ Called for each directory entry
 </table>
 
 ### onInformationAvailable(aRequest, aCtxt, aInfo) ###
-  
+<code>  
 Called for each information line  
   
 @param request - the request  
 @param ctxt - opaque parameter  
 @param info - new info to add  
   
-
+</code>
 #### Parameters ####
 
 <table>

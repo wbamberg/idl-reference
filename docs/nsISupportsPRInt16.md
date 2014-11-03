@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsPRInt16 #
-  
+<code>  
 Scriptable storage for 16-bit integers  
   
-
+</code>
 ## Methods ##
 
 ### toString() ###

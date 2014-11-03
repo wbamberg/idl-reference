@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIAccessibleHideEvent #
-  
+<code>  
 Fired when a accessible and its subtree are removed from the tree.  
   
-
+</code>
 ## Attributes ##
 
 ### targetParent ###

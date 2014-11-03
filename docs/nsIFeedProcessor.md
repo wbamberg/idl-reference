@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsIFeedProcessor #
-  
+<code>  
 An nsIFeedProcessor parses feeds, triggering callbacks based on  
 their contents.  
   
-
+</code>
 ## Methods ##
 
 ### parseFromStream(stream, uri) ###
-  
+<code>  
 Parse a feed from an nsIInputStream.  
   
 @param stream The input stream.  
 @param uri The base URI.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -40,13 +40,13 @@ Parse a feed from an nsIInputStream.
 </table>
 
 ### parseFromString(str, uri) ###
-  
+<code>  
 Parse a feed from a string.  
   
 @param str The string to parse.  
 @param uri The base URI.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -66,7 +66,7 @@ Parse a feed from a string.
 </table>
 
 ### parseAsync(requestObserver, uri) ###
-  
+<code>  
 Parse a feed asynchronously. The caller must then call the  
 nsIFeedProcessor's nsIStreamListener methods to drive the  
 parse. Do not call the other parse methods during an asynchronous  
@@ -76,7 +76,7 @@ parse.
                        argument can be null.  
 @param uri The base URI.  
   
-
+</code>
 #### Parameters ####
 
 <table>

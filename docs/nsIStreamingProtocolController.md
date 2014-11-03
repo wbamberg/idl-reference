@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIStreamingProtocolController #
-  
+<code>  
 Media stream controller API: control and retrieve meta data from media stream.  
   
-
+</code>
 ## Methods ##
 
 ### init(aUri) ###
-  
+<code>  
 Preprare the URI before we can start the connection.  
 @param aUri The URI of the media stream.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -31,7 +31,7 @@ Preprare the URI before we can start the connection.
 </table>
 
 ### asyncOpen(aListener) ###
-  
+<code>  
 Asynchronously open this controller.  Data is fed to the specified  
 media stream listener as it becomes available. If asyncOpen returns  
 successfully, the controller is responsible for keeping itself alive  
@@ -39,7 +39,7 @@ until it has called onStopRequest on aListener.
   
 @param aListener The nsIStreamingProtocolListener implementation  
   
-
+</code>
 #### Parameters ####
 
 <table>

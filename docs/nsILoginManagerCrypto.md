@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### encrypt(plainText) ###
-  
+<code>  
 encrypt  
   
 @param plainText  
@@ -24,7 +24,7 @@ purpose encryption/decryption.
   
 Can throw if the user cancels entry of their master password.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -38,7 +38,7 @@ Can throw if the user cancels entry of their master password.
 </table>
 
 ### decrypt(cipherText) ###
-  
+<code>  
 decrypt  
   
 @param cipherText  
@@ -50,7 +50,7 @@ Can throw if the user cancels entry of their master password, or if the
 cipherText value can not be successfully decrypted (eg, if it was  
 encrypted with some other key).  
   
-
+</code>
 #### Parameters ####
 
 <table>

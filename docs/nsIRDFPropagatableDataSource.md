@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIRDFPropagatableDataSource #
-  
+<code>  
 An nsIRDFPropagatableDataSource provides an ability to suppress  
 synchronization notifications.  
   
-
+</code>
 ## Attributes ##
 
 ### propagateChanges ###

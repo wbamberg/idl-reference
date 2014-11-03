@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISAXContentHandler #
-  
+<code>  
 Receive notification of the logical content of a document.  
   
 This is the main interface that most SAX applications implement: if  
@@ -22,19 +22,19 @@ example, all of an element's content (character data, processing
 instructions, and/or subelements) will appear, in order, between  
 the startElement event and the corresponding endElement event.  
   
-
+</code>
 ## Methods ##
 
 ### startDocument() ###
-  
+<code>  
 Receive notification of the beginning of a document.  
   
 The SAX parser will invoke this method only once, before any  
 other event callbacks.  
   
-
+</code>
 ### endDocument() ###
-  
+<code>  
 Receive notification of the end of a document.  
   
 There is an apparent contradiction between the documentation for  
@@ -49,9 +49,9 @@ the last method invoked during the parse.  The parser shall not
 invoke this method until it has either abandoned parsing (because  
 of an unrecoverable error) or reached the end of input.  
   
-
+</code>
 ### startElement(uri, localName, qName, attributes) ###
-  
+<code>  
 Receive notification of the beginning of an element.  
   
 The Parser will invoke this method at the beginning of every  
@@ -100,7 +100,7 @@ optional).
        SAXAttributes object.  The value of this object after  
        startElement returns is undefined  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -140,7 +140,7 @@ optional).
 </table>
 
 ### endElement(uri, localName, qName) ###
-  
+<code>  
 Receive notification of the end of an element.  
   
 The SAX parser will invoke this method at the end of every  
@@ -159,7 +159,7 @@ For information on the names, see startElement.
 @param qName the qualified XML name (with prefix), or the  
        empty string if qualified names are not available  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -190,7 +190,7 @@ For information on the names, see startElement.
 </table>
 
 ### characters(value) ###
-  
+<code>  
 Receive notification of character data.  
   
 The Parser will call this method to report each chunk of  
@@ -206,7 +206,7 @@ content using the ignorableWhitespace method rather than this one
   
 @param value the characters from the XML document  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -220,7 +220,7 @@ content using the ignorableWhitespace method rather than this one
 </table>
 
 ### processingInstruction(target, data) ###
-  
+<code>  
 Receive notification of a processing instruction.  
   
 The Parser will invoke this method once for each processing  
@@ -236,7 +236,7 @@ this method.
        none was supplied.  The data does not include any  
        whitespace separating it from the target  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -258,7 +258,7 @@ this method.
 </table>
 
 ### ignorableWhitespace(whitespace) ###
-  
+<code>  
 Receive notification of ignorable whitespace in element content.  
   
 Validating Parsers must use this method to report each chunk of  
@@ -274,7 +274,7 @@ external entity, so that the Locator provides useful information.
   
 @param whitespace the characters from the XML document  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -288,7 +288,7 @@ external entity, so that the Locator provides useful information.
 </table>
 
 ### startPrefixMapping(prefix, uri) ###
-  
+<code>  
 Begin the scope of a prefix-URI Namespace mapping.  
   
 The information from this event is not necessary for normal  
@@ -318,7 +318,7 @@ There should never be start/endPrefixMapping events for the
               which has no prefix.  
 @param uri The Namespace URI the prefix is mapped to.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -340,7 +340,7 @@ There should never be start/endPrefixMapping events for the
 </table>
 
 ### endPrefixMapping(prefix) ###
-  
+<code>  
 End the scope of a prefix-URI mapping.  
   
 See startPrefixMapping for details.  These events will always  
@@ -350,7 +350,7 @@ the order of endPrefixMapping events is not otherwise guaranteed.
 @param prefix The prefix that was being mapped. This is the empty  
               string when a default mapping scope ends.  
   
-
+</code>
 #### Parameters ####
 
 <table>

@@ -10,15 +10,15 @@ layout: default
 ## Methods ##
 
 ### setString(aSection, aKey, aValue) ###
-  
+<code>  
 Set the value of a string for a particular section and key.  
   
-
+</code>
 ### writeFile(aINIFile, aFlags) ###
-  
+<code>  
 Write to the INI file.  
   
-
+</code>
 ## Constants ##
 
 ### WRITE_UTF16 ###

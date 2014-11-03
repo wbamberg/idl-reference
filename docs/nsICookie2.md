@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsICookie2 #
-   
+<code>   
 Main cookie object interface for use by consumers:  
 extends nsICookie, a frozen interface for external  
 access of cookie objects  
   
-
+</code>
 ## Attributes ##
 
 ### rawHost ###

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsINavHistoryResultTreeViewer #
-  
+<code>  
 TODO: Bug 517719.  
   
 A predefined view adaptor for interfacing results with an nsITree. This  
@@ -17,15 +17,15 @@ reference to it and re-initialize it when the tree changes. If you use this
 object, attach it to a result, never attach it to a tree, and forget about  
 it, it will leak!  
   
-
+</code>
 ## Methods ##
 
 ### nodeForTreeIndex(aIndex) ###
-  
+<code>  
 This allows you to get at the real node for a given row index. This is  
 only valid when a tree is attached.  
   
-
+</code>
 ### treeIndexForNode(aNode) ###
 
 ## Constants ##

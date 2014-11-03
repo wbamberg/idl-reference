@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getSubmission(data, responseType, purpose) ###
-  
+<code>  
 Gets a nsISearchSubmission object that contains information about what to  
 send to the search engine, including the URI and postData, if applicable.  
   
@@ -31,7 +31,7 @@ send to the search engine, including the URI and postData, if applicable.
          to send to the search engine.  If no submission can be  
          obtained for the given responseType, returns null.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -76,7 +76,7 @@ send to the search engine, including the URI and postData, if applicable.
 </table>
 
 ### addParam(name, value, responseType) ###
-  
+<code>  
 Adds a parameter to the search engine's submission data. This should only  
 be called on engines created via addEngineWithDetails.  
   
@@ -97,7 +97,7 @@ be called on engines created via addEngineWithDetails.
 @throws NS_ERROR_FAILURE if the search engine is read-only.  
 @throws NS_ERROR_INVALID_ARG if name or value are null.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -128,7 +128,7 @@ be called on engines created via addEngineWithDetails.
 </table>
 
 ### supportsResponseType(responseType) ###
-  
+<code>  
 Determines whether the engine can return responses in the given  
 MIME type.  Returns true if the engine spec has a URL with the  
 given responseType, false otherwise.  
@@ -136,7 +136,7 @@ given responseType, false otherwise.
 @param responseType  
        The MIME type to check for  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -150,7 +150,7 @@ given responseType, false otherwise.
 </table>
 
 ### getIconURLBySize(width, height) ###
-  
+<code>  
 Returns a string with the URL to an engine's icon matching both width and  
 height. Returns null if icon with specified dimensions is not found.  
   
@@ -159,7 +159,7 @@ height. Returns null if icon with specified dimensions is not found.
 @param height  
        Height of the requested icon.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -179,15 +179,15 @@ height. Returns null if icon with specified dimensions is not found.
 </table>
 
 ### getIcons() ###
-  
+<code>  
 Gets an array of all available icons. Each entry is an object with  
 width, height and url properties. width and height are numeric and  
 represent the icon's dimensions. url is a string with the URL for  
 the icon.  
   
-
+</code>
 ### speculativeConnect(options) ###
-  
+<code>  
 Opens a speculative connection to the engine's search URI  
 (and suggest URI, if different) to reduce request latency  
   
@@ -198,7 +198,7 @@ Opens a speculative connection to the engine's search URI
 @throws NS_ERROR_INVALID_ARG if options is omitted or lacks required  
         elemeents  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -213,7 +213,7 @@ Opens a speculative connection to the engine's search URI
 </table>
 
 ### getResultDomain(responseType) ###
-  
+<code>  
 Gets a string representing the hostname from which search results for a  
 given responseType are returned, minus the leading "www." (if present).  
 This can be specified as an url attribute in the engine description file,  
@@ -224,7 +224,7 @@ but will default to host from the <Url>'s template otherwise.
   
 @return the resultDomain for the given responseType.  
   
-
+</code>
 #### Parameters ####
 
 <table>

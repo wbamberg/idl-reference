@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISAXErrorHandler #
-  
+<code>  
 Basic interface for SAX error handlers.  
   
 If a SAX application needs to implement customized error  
@@ -20,11 +20,11 @@ errors, an ErrorHandler that does something with error() calls must
 be registered.  
   
   
-
+</code>
 ## Methods ##
 
 ### error(locator, error) ###
-  
+<code>  
 Receive notification of a recoverable error.  
   
 This corresponds to the definition of "error" in section 1.2  
@@ -46,7 +46,7 @@ well.
 @param locator The locator object for the error (may be null).  
 @param error The error message.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -66,7 +66,7 @@ well.
 </table>
 
 ### fatalError(locator, error) ###
-  
+<code>  
 Receive notification of a non-recoverable error.  
   
 There is an apparent contradiction between the documentation  
@@ -90,7 +90,7 @@ other events once this method has been invoked.
 @param locator The locator object for the error (may be null).  
 @param error The error message.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -110,7 +110,7 @@ other events once this method has been invoked.
 </table>
 
 ### ignorableWarning(locator, error) ###
-  
+<code>  
 Receive notification of a warning.  
   
 SAX parsers will use this method to report conditions that are  
@@ -127,7 +127,7 @@ as well.
 @param locator The locator object for the warning (may be null).  
 @param error The warning message.  
   
-
+</code>
 #### Parameters ####
 
 <table>

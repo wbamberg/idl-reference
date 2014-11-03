@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIClipboardHelper #
-  
+<code>  
 helper service for common uses of nsIClipboard.  
   
-
+</code>
 ## Methods ##
 
 ### copyStringToClipboard(aString, aClipboardID, aDoc) ###
-  
+<code>  
 copy string to given clipboard  
   
 @param aString, the string to copy to the clipboard  
@@ -21,7 +21,7 @@ copy string to given clipboard
 @param aClipboardID, the ID of the clipboard to copy to  
        (eg. kSelectionClipboard -- see nsIClipboard.idl)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -48,13 +48,13 @@ copy string to given clipboard
 </table>
 
 ### copyString(aString, aDoc) ###
-  
+<code>  
 copy string to (default) clipboard  
   
 @param aString, the string to copy to the clipboard  
 @param aDoc, the source document for the string, if available  
   
-
+</code>
 #### Parameters ####
 
 <table>

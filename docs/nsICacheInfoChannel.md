@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### isFromCache() ###
-  
+<code>  
 TRUE if this channel's data is being loaded from the cache.  This value  
 is undefined before the channel fires its OnStartRequest notification  
 and after the channel fires its OnStopRequest notification.  
   
-
+</code>
 ## Attributes ##
 
 ### cacheTokenExpirationTime ###

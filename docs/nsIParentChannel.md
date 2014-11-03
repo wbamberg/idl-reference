@@ -6,18 +6,19 @@ layout: default
 </div>
 
 # nsIParentChannel #
-  
+<code>  
 Implemented by chrome side of IPC protocols.  
   
-
+</code>
 ## Methods ##
 
 ### setParentListener(listener) ###
-  
+<code>  
 Called to set the HttpChannelParentListener object (optional).  
   
-
+</code>
 ### delete() ###
-  
+<code>  
 Called to invoke deletion of the IPC protocol.  
   
+</code>

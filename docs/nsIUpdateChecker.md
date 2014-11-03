@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIUpdateChecker #
-  
+<code>  
 An interface describing an object that knows how to check for updates.  
   
-
+</code>
 ## Methods ##
 
 ### checkForUpdates(listener, force) ###
-  
+<code>  
 Checks for available updates, notifying a listener of the results.  
 @param   listener  
          An object implementing nsIUpdateCheckListener which is notified  
@@ -26,7 +26,7 @@ Checks for available updates, notifying a listener of the results.
          force will not work if the system administrator has locked  
          the app.update.enabled preference.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -52,12 +52,12 @@ Checks for available updates, notifying a listener of the results.
 </table>
 
 ### stopChecking(duration) ###
-  
+<code>  
 Ends any pending update check.  
 @param   duration  
          A value representing the set of checks to stop doing.  
   
-
+</code>
 #### Parameters ####
 
 <table>

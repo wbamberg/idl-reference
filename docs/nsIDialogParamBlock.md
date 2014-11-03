@@ -6,29 +6,29 @@ layout: default
 </div>
 
 # nsIDialogParamBlock #
-  
+<code>  
 An interface to pass strings, integers and nsISupports to a dialog  
   
-
+</code>
 ## Methods ##
 
 ### GetInt(inIndex) ###
- Get or set an integer to pass.  
+<code> Get or set an integer to pass.  
 Index must be in the range 0..7  
   
-
+</code>
 ### SetInt(inIndex, inInt) ###
 
 ### SetNumberStrings(inNumStrings) ###
- Set the maximum number of strings to pass. Default is 16.  
+<code> Set the maximum number of strings to pass. Default is 16.  
 Use before setting any string (If you want to change it from the default).  
   
-
+</code>
 ### GetString(inIndex) ###
- Get or set an string to pass.  
+<code> Get or set an string to pass.  
 Index starts at 0  
   
-
+</code>
 ### SetString(inIndex, inString) ###
 
 ## Attributes ##

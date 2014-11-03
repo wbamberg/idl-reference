@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsITooltipTextProvider #
-  
+<code>  
 An interface implemented by a tooltip text provider service. This  
 service is called to discover what tooltip text is associated  
 with the node that the pointer is positioned over.  
@@ -25,11 +25,11 @@ defined in NS_TOOLTIPTEXTPROVIDER_CONTRACTID.
 @see nsIComponentManager  
 @see nsIDOMNode  
   
-
+</code>
 ## Methods ##
 
 ### getNodeText(aNode, aText) ###
-  
+<code>  
 Called to obtain the tooltip text for a node.  
   
 @arg aNode The node to obtain the text from.  
@@ -39,7 +39,7 @@ Called to obtain the tooltip text for a node.
         with the node and was returned in the aText argument;  
         <CODE>PR_FALSE</CODE> otherwise.  
   
-
+</code>
 #### Returns ####
 
 <table>

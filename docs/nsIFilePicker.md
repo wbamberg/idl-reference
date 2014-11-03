@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### init(parent, title, mode) ###
-  
+<code>  
 Initialize the file picker widget.  The file picker is not valid until this  
 method is called.  
   
@@ -20,7 +20,7 @@ method is called.
 @param      mode     load, save, or get folder  
   
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -47,13 +47,13 @@ method is called.
 </table>
 
 ### appendFilters(filterMask) ###
-  
+<code>  
 Append to the  filter list with things from the predefined list  
   
 @param      filters  mask of filters i.e. (filterAll | filterHTML)  
   
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -67,14 +67,14 @@ Append to the  filter list with things from the predefined list
 </table>
 
 ### appendFilter(title, filter) ###
-  
+<code>  
 Add a filter  
   
 @param      title    name of the filter  
 @param      filter   extensions to filter -- semicolon and space separated  
   
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -94,13 +94,13 @@ Add a filter
 </table>
 
 ### show() ###
-  
+<code>  
 Show File Dialog. The dialog is displayed modally.  
   
 @return returnOK if the user selects OK, returnCancel if the user selects cancel  
   
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -113,11 +113,11 @@ Show File Dialog. The dialog is displayed modally.
 </table>
 
 ### open(aFilePickerShownCallback) ###
-  
+<code>  
 Opens the file dialog asynchrounously.  
 The passed in object's done method will be called upon completion.  
   
-
+</code>
 ## Attributes ##
 
 ### defaultString ###

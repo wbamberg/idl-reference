@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIInputStreamTee #
-  
+<code>  
 A nsIInputStreamTee is a wrapper for an input stream, that when read  
 reads the specified amount of data from its |source| and copies that  
 data to its |sink|.  |sink| must be a blocking output stream.  
   
-
+</code>
 ## Attributes ##
 
 ### source ###

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### addDownload(aDownloadType, aSource, aTarget, aDisplayName, aMIMEInfo, aStartTime, aTempFile, aCancelable, aIsPrivate) ###
-  
+<code>  
 Creates an nsIDownload and adds it to be managed by the download manager.  
   
 @param aSource The source URI of the transfer. Must not be null.  
@@ -50,7 +50,7 @@ Creates an nsIDownload and adds it to be managed by the download manager.
       as the aCancelable object, call this method, set the progressListener  
       as the returned download object, then call saveURI.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -131,7 +131,7 @@ Creates an nsIDownload and adds it to be managed by the download manager.
 </table>
 
 ### getDownload(aID) ###
-  
+<code>  
 Retrieves a download managed by the download manager.  This can be one that  
 is in progress, or one that has completed in the past and is stored in the  
 database.  
@@ -140,7 +140,7 @@ database.
 @return The download with the specified ID.  
 @throws NS_ERROR_NOT_AVAILABLE if the download is not in the database.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -166,7 +166,7 @@ database.
 </table>
 
 ### getDownloadByGUID(aGUID, aCallback) ###
-  
+<code>  
 Retrieves a download managed by the download manager.  This can be one that  
 is in progress, or one that has completed in the past and is stored in the  
 database.  The result of this method is returned via an asynchronous callback,  
@@ -176,7 +176,7 @@ with the provided GUID.
 @param aGUID The unique GUID of the download.  
 @param aCallback The callback to invoke with the result of the search.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -196,7 +196,7 @@ with the provided GUID.
 </table>
 
 ### cancelDownload(aID) ###
-  
+<code>  
 Cancels the download with the specified ID if it's currently in-progress.  
 This calls cancel(NS_BINDING_ABORTED) on the nsICancelable provided by the  
 download.  
@@ -204,7 +204,7 @@ download.
 @param aID The unique ID of the download.  
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -219,7 +219,7 @@ download.
 </table>
 
 ### removeDownload(aID) ###
-  
+<code>  
 Removes the download with the specified id if it's not currently  
 in-progress.  Whereas cancelDownload simply cancels the transfer, but  
 retains information about it, removeDownload removes all knowledge of it.  
@@ -236,7 +236,7 @@ the guid notification should be relied upon instead.
 @param aID The unique ID of the download.  
 @throws NS_ERROR_FAILURE if the download is active.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -251,7 +251,7 @@ the guid notification should be relied upon instead.
 </table>
 
 ### removeDownloadsByTimeframe(aBeginTime, aEndTime) ###
-  
+<code>  
 Removes all inactive downloads that were started inclusively within the  
 specified time frame.  
   
@@ -260,7 +260,7 @@ specified time frame.
 @param aEndTime  
        The end time to remove downloads by in microseconds.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -280,13 +280,13 @@ specified time frame.
 </table>
 
 ### pauseDownload(aID) ###
-  
+<code>  
 Pause the specified download.  
   
 @param aID The unique ID of the download.  
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -301,13 +301,13 @@ Pause the specified download.
 </table>
 
 ### resumeDownload(aID) ###
-  
+<code>  
 Resume the specified download.  
   
 @param aID The unique ID of the download.  
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -322,7 +322,7 @@ Resume the specified download.
 </table>
 
 ### retryDownload(aID) ###
-  
+<code>  
 Retries a failed download.  
   
 @param aID The unique ID of the download.  
@@ -331,7 +331,7 @@ Retries a failed download.
           nsIDownloadManager::DOWNLOAD_CANCELED  
           nsIDownloadManager::DOWNLOAD_FAILED  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -349,7 +349,7 @@ Retries a failed download.
 </table>
 
 ### cleanUp() ###
-   
+<code>   
 Removes completed, failed, and canceled downloads from the list.  
 In global private browsing mode, this operates on the relevant  
 private or public downloads. In per-window mode, it only operates  
@@ -359,9 +359,9 @@ Also notifies observers of the "download-manager-remove-download-gui"
 and "download-manager-remove-download" topics with a null subject to  
 allow any DM consumers to react to the removals.  
   
-
+</code>
 ### cleanUpPrivate() ###
-   
+<code>   
 Removes completed, failed, and canceled downloads from the list  
 of private downloads.  
   
@@ -369,27 +369,27 @@ Also notifies observers of the "download-manager-remove-download-gui"
 and "download-manager-remove-download" topics with a null subject to  
 allow any DM consumers to react to the removals.  
   
-
+</code>
 ### addListener(aListener) ###
-  
+<code>  
 Adds a listener to the download manager. It is expected that this  
 listener will only access downloads via their deprecated integer id attribute,  
 and when global private browsing compatibility mode is disabled, this listener  
 will receive no notifications for downloads marked private.  
   
-
+</code>
 ### addPrivacyAwareListener(aListener) ###
-  
+<code>  
 Adds a listener to the download manager. This listener must be able to  
 understand and use the guid attribute of downloads for all interactions  
 with the download manager.  
   
-
+</code>
 ### removeListener(aListener) ###
-  
+<code>  
 Removes a listener from the download manager.  
   
-
+</code>
 ## Attributes ##
 
 ### DBConnection ###

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIBrowserDOMWindow #
-  
+<code>  
 The C++ source has access to the browser script source through  
 nsIBrowserDOMWindow. It is intended to be attached to the chrome DOMWindow  
 of a toplevel browser window (a XUL window). A DOMWindow that does not  
 happen to be a browser chrome window will simply have no access to any such  
 interface.  
   
-
+</code>
 ## Methods ##
 
 ### openURI(aURI, aOpener, aWhere, aContext) ###
-  
+<code>  
 Load a URI  
   
 @param aURI the URI to open. null is allowed.  If null is passed in, no  
@@ -29,7 +29,7 @@ Load a URI
                 is used only when aWhere == OPEN_DEFAULTWINDOW.  
 @return the window into which the URI was opened.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -75,19 +75,19 @@ Load a URI
 </table>
 
 ### openURIInFrame(aURI, aOpener, aWhere, aContext) ###
-  
+<code>  
 As above, but return the nsIFrameLoaderOwner for the new window.  
 // XXXbz is this the right API? Do we really need the opener here?  
 // See bug 537428  
   
-
+</code>
 ### isTabContentWindow(aWindow) ###
-  
+<code>  
 @param  aWindow the window to test.  
 @return whether the window is the main content window for any  
         currently open tab in this toplevel browser window.  
   
-
+</code>
 #### Parameters ####
 
 <table>

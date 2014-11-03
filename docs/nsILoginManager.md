@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### addLogin(aLogin) ###
-  
+<code>  
 Store a new login in the login manager.  
   
 @param aLogin  
@@ -20,7 +20,7 @@ Default values for the login's nsILoginMetaInfo properties will be
 created. However, if the caller specifies non-default values, they will  
 be used instead.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -34,7 +34,7 @@ be used instead.
 </table>
 
 ### removeLogin(aLogin) ###
-  
+<code>  
 Remove a login from the login manager.  
   
 @param aLogin  
@@ -43,7 +43,7 @@ Remove a login from the login manager.
 The specified login must exactly match a stored login. However, the  
 values of any nsILoginMetaInfo properties are ignored.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -57,7 +57,7 @@ values of any nsILoginMetaInfo properties are ignored.
 </table>
 
 ### modifyLogin(oldLogin, newLoginData) ###
-  
+<code>  
 Modify an existing login in the login manager.  
   
 @param oldLogin  
@@ -76,7 +76,7 @@ changed in this manner.
 If the propertybag contains an item named "timesUsedIncrement", the  
 login's timesUsed property will be incremented by the item's value.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -96,7 +96,7 @@ login's timesUsed property will be incremented by the item's value.
 </table>
 
 ### removeAllLogins() ###
-  
+<code>  
 Remove all logins known to login manager.  
   
 The browser sanitization feature allows the user to clear any stored  
@@ -104,9 +104,9 @@ passwords. This interface allows that to be done without getting each
 login first (which might require knowing the master password).  
   
   
-
+</code>
 ### getAllLogins(count, logins) ###
-  
+<code>  
 Fetch all logins in the login manager. An array is always returned;  
 if there are no logins the array is empty.  
   
@@ -120,7 +120,7 @@ NOTE: This can be called from JS as:
       var logins = pwmgr.getAllLogins();  
       (|logins| is an array).  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -141,7 +141,7 @@ NOTE: This can be called from JS as:
 </table>
 
 ### getAllDisabledHosts(count, hostnames) ###
-  
+<code>  
 Obtain a list of all hosts for which password saving is disabled.  
   
 @param count  
@@ -154,7 +154,7 @@ Obtain a list of all hosts for which password saving is disabled.
 NOTE: This can be called from JS as:  
       var logins = pwmgr.getDisabledAllLogins();  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -176,14 +176,14 @@ NOTE: This can be called from JS as:
 </table>
 
 ### getLoginSavingEnabled(aHost) ###
-  
+<code>  
 Check to see if saving logins has been disabled for a host.  
   
 @param aHost  
        The hostname to check. This argument should be in the origin  
        URL format, without a pathname. For example: "http://foo.com".  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -198,7 +198,7 @@ Check to see if saving logins has been disabled for a host.
 </table>
 
 ### setLoginSavingEnabled(aHost, isEnabled) ###
-  
+<code>  
 Disable (or enable) storing logins for the specified host. When  
 disabled, the login manager will not prompt to store logins for  
 that host. Existing logins are not affected.  
@@ -210,7 +210,7 @@ that host. Existing logins are not affected.
        Specify if saving logins should be enabled (true) or  
        disabled (false)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -232,7 +232,7 @@ that host. Existing logins are not affected.
 </table>
 
 ### findLogins(count, aHostname, aActionURL, aHttpRealm, logins) ###
-  
+<code>  
 Search for logins matching the specified criteria. Called when looking  
 for logins that might be applicable to a form or authentication request.  
   
@@ -262,7 +262,7 @@ NOTE: This can be called from JS as:
       var logins = pwmgr.findLogins({}, hostname, ...);  
   
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -311,7 +311,7 @@ NOTE: This can be called from JS as:
 </table>
 
 ### countLogins(aHostname, aActionURL, aHttpRealm) ###
-  
+<code>  
 Search for logins matching the specified criteria, as with  
 findLogins(). This interface only returns the number of matching  
 logins (and not the logins themselves), which allows a caller to  
@@ -331,7 +331,7 @@ password to decrypt the logins.
        any realm, specify an empty string. To not match logins for any  
        realm, specify null.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -363,16 +363,16 @@ password to decrypt the logins.
 </table>
 
 ### autoCompleteSearchAsync(aSearchString, aPreviousResult, aElement, aListener) ###
-  
+<code>  
 Generate results for a userfield autocomplete menu.  
   
 NOTE: This interface is provided for use only by the FormFillController,  
       which calls it directly. This isn't really ideal, it should  
       probably be callback registered through the FFC.  
   
-
+</code>
 ### fillForm(aForm) ###
-  
+<code>  
 Fill a form with login information if we have it. This method will fill  
 aForm regardless of the signon.autofillForms preference.  
   
@@ -380,7 +380,7 @@ aForm regardless of the signon.autofillForms preference.
        The form to fill  
 @return Promise that is resolved with whether or not the form was filled.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -405,7 +405,7 @@ aForm regardless of the signon.autofillForms preference.
 </table>
 
 ### searchLogins(count, matchData, logins) ###
-  
+<code>  
 Search for logins in the login manager. An array is always returned;  
 if there are no logins the array is empty.  
   
@@ -424,7 +424,7 @@ NOTE: This can be called from JS as:
       var logins = pwmgr.searchLogins({}, matchData);  
       (|logins| is an array).  
   
-
+</code>
 #### Parameters ####
 
 <table>

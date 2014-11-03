@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsITLSServerConnectionInfo #
-  
+<code>  
 Connection info for a given TLS client connection being handled by a  
 |nsITLSServerSocket| server.  This object is thread-safe.  
   
@@ -16,17 +16,17 @@ accessed via |transport.securityInfo|.
 This interface is available by the time the |onSocketAttached| is called,  
 which is the first time the TLS server consumer is notified of a new client.  
   
-
+</code>
 ## Methods ##
 
 ### setSecurityObserver(observer) ###
-  
+<code>  
 setSecurityObserver  
   
 Set the security observer to be notified when the TLS handshake has  
 completed.  
   
-
+</code>
 ## Attributes ##
 
 ### serverSocket ###

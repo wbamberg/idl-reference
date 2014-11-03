@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsIRDFRemoteDataSource #
-  
+<code>  
 A datasource that may load asynchronously  
   
-
+</code>
 ## Methods ##
 
 ### Init(aURI) ###
-  
+<code>  
 Specify the URI for the data source: this is the prefix  
 that will be used to register the data source in the  
 data source registry.  
 @param aURI the URI to load  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -33,14 +33,14 @@ data source registry.
 </table>
 
 ### Refresh(aBlocking) ###
-  
+<code>  
 Refresh the remote datasource, re-loading its contents  
 from the URI.  
   
 @param aBlocking If <code>true</code>, the call will block  
 until the datasource has completely reloaded.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -55,11 +55,11 @@ until the datasource has completely reloaded.
 </table>
 
 ### Flush() ###
-  
+<code>  
 Request that a data source write its contents out to   
 permanent storage, if applicable.  
   
-
+</code>
 ### FlushTo(aURI) ###
 
 ## Attributes ##

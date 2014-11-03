@@ -6,13 +6,14 @@ layout: default
 </div>
 
 # nsIAsyncShutdownCompletionCallback #
-  
+<code>  
 Callback invoked once all blockers of a barrier have been removed.  
   
-
+</code>
 ## Methods ##
 
 ### done() ###
-  
+<code>  
 The operation has been completed.  
   
+</code>

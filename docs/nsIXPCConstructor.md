@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIXPCConstructor #
-  
+<code>  
 interface of object returned by Components.Constructor  
 (additional interesting stuff only reflected into JavaScript)  
   
-
+</code>
 ## Attributes ##
 
 ### classID ###

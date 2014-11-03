@@ -22,7 +22,7 @@ layout: default
 ### getBoxObjectFor(elt) ###
 
 ### loadOverlay(url, aObserver) ###
-  
+<code>  
 Loads a XUL overlay and merges it with the current document, notifying an  
 observer when the merge is complete.   
 @param   url  
@@ -39,7 +39,7 @@ NOTICE:  In the 2.0 timeframe this API will change such that the
          API's behavior _not_ to change because it will!  
          - Ben Goodger (8/23/2005)  
   
-
+</code>
 #### Parameters ####
 
 <table>

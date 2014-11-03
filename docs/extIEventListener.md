@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # extIEventListener #
-  
+<code>  
 Interface used as a callback for listening to events.  
   
-
+</code>
 ## Methods ##
 
 ### handleEvent(aEvent) ###
-  
+<code>  
 This method is called whenever an event occurs of the type for which   
 the extIEventListener interface was registered.  
   
 @param   aEvent  
          The extIEventItem associated with the event.  
   
-
+</code>
 #### Parameters ####
 
 <table>

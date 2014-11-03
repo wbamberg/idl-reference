@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIHashable #
-  
+<code>  
 Represents an object that can be stored in a hashtable.  
   
-
+</code>
 ## Methods ##
 
 ### equals(aOther) ###
-  
+<code>  
 Is this object the equivalent of the other object?  
   
-
+</code>
 ## Attributes ##
 
 ### hashCode ###

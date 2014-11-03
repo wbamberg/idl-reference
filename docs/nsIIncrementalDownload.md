@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIIncrementalDownload #
-  
+<code>  
 An incremental download object attempts to fetch a file piecemeal over time  
 in an effort to minimize network bandwidth usage.  
   
 Canceling a background download does not cause the file on disk to be  
 deleted.  
   
-
+</code>
 ## Methods ##
 
 ### init(uri, destination, chunkSize, intervalInSeconds) ###
-  
+<code>  
 Initialize the incremental download object.  If the destination file  
 already exists, then only the remaining portion of the file will be  
 fetched.  
@@ -47,7 +47,7 @@ accidentally running "blah.exe" before it is a complete file.
        negative to use the default interval, or 0 to fetch the remaining  
        part of the file in one chunk.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -82,7 +82,7 @@ accidentally running "blah.exe" before it is a complete file.
 </table>
 
 ### start(observer, ctxt) ###
-  
+<code>  
 Start the incremental download.  
   
 @param observer  
@@ -98,7 +98,7 @@ Start the incremental download.
 @param ctxt  
        User defined object forwarded to the observer's methods.  
   
-
+</code>
 #### Parameters ####
 
 <table>

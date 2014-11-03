@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsITCPServerSocketChild #
-  
+<code>  
 Interface to allow the content process server socket to reach the IPC bridge.  
 It is used in the server socket implementation on the child side.  
   
-
+</code>
 ## Methods ##
 
 ### listen(serverSocket, port, backlog, binaryType) ###
-  
+<code>  
 Tell the chrome process to listen on the port with the given parameters.  
   
 @param serverSocket  
@@ -27,7 +27,7 @@ Tell the chrome process to listen on the port with the given parameters.
 @param binaryType  
        "arraybuffer" to use UInt8 array instances or "string" to use String.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -60,6 +60,7 @@ Tell the chrome process to listen on the port with the given parameters.
 </table>
 
 ### close() ###
-  
+<code>  
 Tell the chrome process to close the server socket.  
   
+</code>

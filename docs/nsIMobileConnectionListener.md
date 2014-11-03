@@ -10,17 +10,17 @@ layout: default
 ## Methods ##
 
 ### notifyVoiceChanged() ###
-  
+<code>  
 Notify when voice info is changed.  
   
-
+</code>
 ### notifyDataChanged() ###
-  
+<code>  
 Notify when data info is changed.  
   
-
+</code>
 ### notifyUssdReceived(message, sessionEnded) ###
-  
+<code>  
 Notify when ussd is received.  
   
 @param message  
@@ -28,7 +28,7 @@ Notify when ussd is received.
 @param sessionEnded  
        Indicates whether the session is ended.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -48,13 +48,13 @@ Notify when ussd is received.
 </table>
 
 ### notifyDataError(message) ###
-  
+<code>  
 Notify when data call is failed to establish.  
   
 @param message  
        Error message from RIL.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -68,7 +68,7 @@ Notify when data call is failed to establish.
 </table>
 
 ### notifyCFStateChanged(action, reason, number, timeSeconds, serviceClass) ###
-  
+<code>  
 Notify when call forwarding state is changed.  
   
 @param action  
@@ -82,7 +82,7 @@ Notify when call forwarding state is changed.
 @param serviceClass  
        One of the nsIMobileConnection.ICC_SERVICE_CLASS_* values.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -120,7 +120,7 @@ Notify when call forwarding state is changed.
 </table>
 
 ### notifyEmergencyCbModeChanged(active, timeoutMs) ###
-  
+<code>  
 Notify when emergency callback mode is changed.  
   
 @param active  
@@ -128,7 +128,7 @@ Notify when emergency callback mode is changed.
 @param timeoutMs  
        The timeout in millisecond for emergency callback mode.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -148,7 +148,7 @@ Notify when emergency callback mode is changed.
 </table>
 
 ### notifyOtaStatusChanged(status) ###
-  
+<code>  
 Notify when ota status is changed.  
   
 @param status  
@@ -157,7 +157,7 @@ Notify when ota status is changed.
        'imsi_downloaded', 'prl_downloaded', 'committed', 'otapa_started',  
        'otapa_stopped', 'otapa_aborted'.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -174,23 +174,23 @@ Notify when ota status is changed.
 </table>
 
 ### notifyIccChanged() ###
-  
+<code>  
 Notify when icc id is changed.  
   
-
+</code>
 ### notifyRadioStateChanged() ###
-  
+<code>  
 Notify when radio state is changed.  
   
-
+</code>
 ### notifyClirModeChanged(mode) ###
-  
+<code>  
 Notify when clir mode is changed.  
   
 @param mode  
        One of the nsIMobileConnection.CLIR_* values.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -204,16 +204,17 @@ Notify when clir mode is changed.
 </table>
 
 ### notifyLastKnownNetworkChanged() ###
-  
+<code>  
 Notify when last known network is changed.  
   
-
+</code>
 ### notifyLastKnownHomeNetworkChanged() ###
-  
+<code>  
 Notify when last known home network is changed.  
   
-
+</code>
 ### notifyNetworkSelectionModeChanged() ###
-  
+<code>  
 Notify when network selection mode is changed.  
   
+</code>

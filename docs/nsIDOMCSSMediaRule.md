@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIDOMCSSMediaRule #
-  
+<code>  
 Interface for @media rules in the CSS OM.  
   
-
+</code>
 ## Attributes ##
 
 ### media ###

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIScriptableDateFormat #
-  
+<code>  
 Format date and time in a human readable format.  
   
-
+</code>
 ## Methods ##
 
 ### FormatDateTime(locale, dateFormatSelector, timeFormatSelector, year, month, day, hour, minute, second) ###
-  
+<code>  
 Format the given date and time in a human readable format.  
   
 The underlying operating system is used to format the date and time.  
@@ -47,7 +47,7 @@ you depend on any specific format or language.
 @return The date and time formatted as human readable text according to  
         user preferences or the given locale.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -96,19 +96,19 @@ you depend on any specific format or language.
 </table>
 
 ### FormatDate(locale, dateFormatSelector, year, month, day) ###
-  
+<code>  
 Format the given date in a human readable format.  
   
 See FormatDateTime for details.  
   
-
+</code>
 ### FormatTime(locale, timeFormatSelector, hour, minute, second) ###
-  
+<code>  
 Format the given time in a human readable format.  
   
 See FormatDateTime for details.  
   
-
+</code>
 ## Constants ##
 
 ### dateFormatNone ###

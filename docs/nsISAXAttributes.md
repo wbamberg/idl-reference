@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISAXAttributes #
-  
+<code>  
 Interface for a list of XML attributes.  
   
 This interface allows access to a list of attributes in  
@@ -24,11 +24,11 @@ is set to true (it is false by default).
   
 The order of attributes in the list is unspecified.  
   
-
+</code>
 ## Methods ##
 
 ### getIndexFromName(uri, localName) ###
-  
+<code>  
 Look up the index of an attribute by Namespace name.  
 @param uri The Namespace URI, or the empty string  
            if the name has no Namespace URI.  
@@ -36,7 +36,7 @@ Look up the index of an attribute by Namespace name.
 @return The index of the attribute, or -1  
         if it does not appear in the list.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -69,13 +69,13 @@ Look up the index of an attribute by Namespace name.
 </table>
 
 ### getIndexFromQName(qName) ###
-  
+<code>  
 Look up the index of an attribute by XML qualified name.  
 @param qName The qualified name.  
 @return The index of the attribute, or -1  
         if it does not appear in the list.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -101,12 +101,12 @@ Look up the index of an attribute by XML qualified name.
 </table>
 
 ### getLocalName(index) ###
-  
+<code>  
 Look up an attribute's local name by index.  
 @param index The attribute index (zero-based).  
 @return The local name, or null if the index is out of range.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -131,13 +131,13 @@ Look up an attribute's local name by index.
 </table>
 
 ### getQName(index) ###
-  
+<code>  
 Look up an attribute's XML qualified name by index.  
 @param index The attribute index (zero-based).  
 @return The XML qualified name, or the empty string if none is  
         available, or null if the index is out of range.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -163,7 +163,7 @@ Look up an attribute's XML qualified name by index.
 </table>
 
 ### getType(index) ###
-  
+<code>  
 Look up an attribute's type by index. The attribute type is one  
 of the strings "CDATA", "ID", "IDREF", "IDREFS", "NMTOKEN",  
 "NMTOKENS", "ENTITY", "ENTITIES", or "NOTATION" (always in upper  
@@ -178,7 +178,7 @@ notation, the parser will report the type as "NMTOKEN".
 @return The attribute's type as a string, or null if the index is  
         out of range.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -204,7 +204,7 @@ notation, the parser will report the type as "NMTOKEN".
 </table>
 
 ### getTypeFromName(uri, localName) ###
-  
+<code>  
 Look up an attribute's type by Namespace name.  
 @param uri The Namespace URI, or the empty string  
             if the name has no Namespace URI.  
@@ -212,7 +212,7 @@ Look up an attribute's type by Namespace name.
 @return The attribute type as a string, or null if the attribute  
         is not in the list.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -245,13 +245,13 @@ Look up an attribute's type by Namespace name.
 </table>
 
 ### getTypeFromQName(qName) ###
-  
+<code>  
 Look up an attribute's type by XML qualified name.  
 @param qName The qualified name.  
 @return The attribute type as a string, or null if the attribute  
         is not in the list.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -277,13 +277,13 @@ Look up an attribute's type by XML qualified name.
 </table>
 
 ### getURI(index) ###
-  
+<code>  
 Look up an attribute's Namespace URI by index.  
 @param index The attribute index (zero-based).  
 @return The Namespace URI, or the empty string if none is available,  
         or null if the index is out of range.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -309,7 +309,7 @@ Look up an attribute's Namespace URI by index.
 </table>
 
 ### getValue(index) ###
-  
+<code>  
 Look up an attribute's value by index.  If the attribute value is  
 a list of tokens (IDREFS, ENTITIES, or NMTOKENS), the tokens will  
 be concatenated into a single string with each token separated by  
@@ -319,7 +319,7 @@ a single space.
 @return The attribute's value as a string, or null if the index is  
         out of range.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -345,7 +345,7 @@ a single space.
 </table>
 
 ### getValueFromName(uri, localName) ###
-  
+<code>  
 Look up an attribute's value by Namespace name.  If the attribute  
 value is a list of tokens (IDREFS, ENTITIES, or NMTOKENS), the  
 tokens will be concatenated into a single string with each token  
@@ -357,7 +357,7 @@ separated by a single space.
 @return The attribute's value as a string, or null if the attribute is  
         not in the list.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -390,7 +390,7 @@ separated by a single space.
 </table>
 
 ### getValueFromQName(qName) ###
-  
+<code>  
 Look up an attribute's value by XML qualified (prefixed) name.  
 If the attribute value is a list of tokens (IDREFS, ENTITIES, or  
 NMTOKENS), the tokens will be concatenated into a single string  
@@ -400,7 +400,7 @@ with each token separated by a single space.
 @return The attribute's value as a string, or null if the attribute is  
         not in the list.  
   
-
+</code>
 #### Parameters ####
 
 <table>

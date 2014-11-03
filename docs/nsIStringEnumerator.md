@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIStringEnumerator #
-  
+<code>  
 Used to enumerate over an ordered list of strings.  
   
-
+</code>
 ## Methods ##
 
 ### hasMore() ###

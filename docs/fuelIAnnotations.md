@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # fuelIAnnotations #
-  
+<code>  
 Interface representing a collection of annotations associated  
 with a bookmark or bookmark folder.  
   
-
+</code>
 ## Methods ##
 
 ### has(aName) ###
-  
+<code>  
 Determines if an annotation exists with the given name.  
 @param   aName  
          The name of the annotation  
 @returns true if an annotation exists with the given name,  
          false otherwise.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -47,14 +47,14 @@ Determines if an annotation exists with the given name.
 </table>
 
 ### get(aName) ###
-  
+<code>  
 Gets the value of an annotation with the given name.  
 @param   aName  
          The name of the annotation  
 @returns A variant containing the value of the annotation. Supports  
          string, boolean and number.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -80,7 +80,7 @@ Gets the value of an annotation with the given name.
 </table>
 
 ### set(aName, aValue, aExpiration) ###
-  
+<code>  
 Sets the value of an annotation with the given name.  
 @param   aName  
          The name of the annotation  
@@ -91,7 +91,7 @@ Sets the value of an annotation with the given name.
          The expiration policy for the annotation.  
          See nsIAnnotationService.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -119,12 +119,12 @@ Sets the value of an annotation with the given name.
 </table>
 
 ### remove(aName) ###
-  
+<code>  
 Removes the named annotation from the owner item.  
 @param   aName  
          The name of annotation.  
   
-
+</code>
 #### Parameters ####
 
 <table>

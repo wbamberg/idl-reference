@@ -6,57 +6,57 @@ layout: default
 </div>
 
 # nsIObjectLoadingContent #
-  
+<code>  
 This interface represents a content node that loads objects.  
   
 Please make sure to update the MozObjectLoadingContent WebIDL  
 interface to mirror this interface when changing it.  
   
-
+</code>
 ## Methods ##
 
 ### getContentTypeForMIMEType(aMimeType) ###
-  
+<code>  
 Gets the content type that corresponds to the give MIME type.  See the  
 constants above for the list of possible values.  If nothing else fits,  
 TYPE_NULL will be returned.  
   
-
+</code>
 ### hasNewFrame(aFrame) ###
-  
+<code>  
 Tells the content about an associated object frame.  
 This can be called multiple times for different frames.  
   
 This is noscript because this is an internal method that will go away, and  
 because nsIObjectFrame is unscriptable.  
   
-
+</code>
 ### getPrintFrame() ###
-  
+<code>  
 If this object is in going to be printed, this method  
 returns the nsIObjectFrame object which should be used when  
 printing the plugin. The returned nsIFrame is in the original document,  
 not in the static clone.  
   
-
+</code>
 ### pluginDestroyed() ###
 
 ### pluginCrashed(pluginTag, pluginDumpID, browserDumpID, submittedCrashReport) ###
 
 ### playPlugin() ###
-  
+<code>  
 This method will play a plugin that has been stopped by the  
 click-to-play plugins or play-preview features.  
   
-
+</code>
 ### reload(aClearActivation) ###
-  
+<code>  
 Forces a re-evaluation and reload of the tag, optionally invalidating its  
 click-to-play state.  This can be used when the MIME type that provides a  
 type has changed, for instance, to force the tag to re-evalulate the  
 handler to use.  
   
-
+</code>
 ### stopPluginInstance() ###
 
 ### syncStartPluginInstance() ###
@@ -64,7 +64,7 @@ handler to use.
 ### asyncStartPluginInstance() ###
 
 ### initializeFromChannel(request) ###
-  
+<code>  
 Puts the tag in the "waiting on a channel" state and adopts this  
 channel. This does not override the normal logic of examining attributes  
 and the channel type, so the load may cancel this channel if it decides not  
@@ -75,12 +75,12 @@ This assumes:
  - This channel has not yet hit OnStartRequest  
  - The caller will continue to pass channel events to us as a listener  
   
-
+</code>
 ### cancelPlayPreview() ###
-  
+<code>  
 This method will disable the play-preview plugin state.  
   
-
+</code>
 ## Attributes ##
 
 ### actualType ###

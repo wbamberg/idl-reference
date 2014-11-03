@@ -6,24 +6,24 @@ layout: default
 </div>
 
 # nsIWindowsRegKey #
-  
+<code>  
 This interface is designed to provide scriptable access to the Windows  
 registry system ("With Great Power Comes Great Responsibility").  The  
 interface represents a single key in the registry.  
   
 This interface is highly Win32 specific.  
   
-
+</code>
 ## Methods ##
 
 ### close() ###
-  
+<code>  
 This method closes the key.  If the key is already closed, then this  
 method does nothing.  
   
-
+</code>
 ### open(rootKey, relPath, mode) ###
-  
+<code>  
 This method opens an existing key.  This method fails if the key  
 does not exist.  
   
@@ -39,7 +39,7 @@ Windows, that usage should probably be avoided in favor of openChild.
        Access mode, which is a bit-wise OR of the ACCESS_ values defined  
        above.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -66,7 +66,7 @@ Windows, that usage should probably be avoided in favor of openChild.
 </table>
 
 ### create(rootKey, relPath, mode) ###
-  
+<code>  
 This method opens an existing key or creates a new key.  
   
 NOTE: On 32-bit Windows, it is valid to pass any HKEY as the rootKey  
@@ -81,7 +81,7 @@ Windows, that usage should probably be avoided in favor of createChild.
        Access mode, which is a bit-wise OR of the ACCESS_ values defined  
        above.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -108,13 +108,13 @@ Windows, that usage should probably be avoided in favor of createChild.
 </table>
 
 ### openChild(relPath, mode) ###
-  
+<code>  
 This method opens a subkey relative to this key.  This method fails if the  
 key does not exist.  
   
 @return nsIWindowsRegKey for the newly opened subkey.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -127,12 +127,12 @@ key does not exist.
 </table>
 
 ### createChild(relPath, mode) ###
-  
+<code>  
 This method opens or creates a subkey relative to this key.  
   
 @return nsIWindowsRegKey for the newly opened or created subkey.  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -145,13 +145,13 @@ This method opens or creates a subkey relative to this key.
 </table>
 
 ### getChildName(index) ###
-  
+<code>  
 This method returns the name of the n'th child key.  
   
 @param index  
        The index of the requested child key.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -165,13 +165,13 @@ This method returns the name of the n'th child key.
 </table>
 
 ### hasChild(name) ###
-  
+<code>  
 This method checks to see if the key has a child by the given name.  
   
 @param name  
        The name of the requested child key.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -185,13 +185,13 @@ This method checks to see if the key has a child by the given name.
 </table>
 
 ### getValueName(index) ###
-  
+<code>  
 This method returns the name of the n'th value under this key.  
   
 @param index  
        The index of the requested value.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -205,13 +205,13 @@ This method returns the name of the n'th value under this key.
 </table>
 
 ### hasValue(name) ###
-  
+<code>  
 This method checks to see if the key has a value by the given name.  
   
 @param name  
        The name of the requested value.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -225,14 +225,14 @@ This method checks to see if the key has a value by the given name.
 </table>
 
 ### removeChild(relPath) ###
-  
+<code>  
 This method removes a child key and all of its values.  This method will  
 fail if the key has any children of its own.   
   
 @param relPath  
        The relative path from this key to the key to be removed.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -246,13 +246,13 @@ fail if the key has any children of its own.
 </table>
 
 ### removeValue(name) ###
-  
+<code>  
 This method removes the value with the given name.  
   
 @param name  
        The name of the value to be removed.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -266,14 +266,14 @@ This method removes the value with the given name.
 </table>
 
 ### getValueType(name) ###
-  
+<code>  
 This method returns the type of the value with the given name.  The return  
 value is one of the "TYPE_" constants defined above.  
   
 @param name  
        The name of the value to query.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -287,7 +287,7 @@ value is one of the "TYPE_" constants defined above.
 </table>
 
 ### readStringValue(name) ###
-  
+<code>  
 This method reads the string contents of the named value as a Unicode  
 string.  
   
@@ -295,7 +295,7 @@ string.
        The name of the value to query.  This parameter can be the empty  
        string to request the key's default value.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -310,13 +310,13 @@ string.
 </table>
 
 ### readIntValue(name) ###
-  
+<code>  
 This method reads the integer contents of the named value.  
   
 @param name  
        The name of the value to query.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -330,13 +330,13 @@ This method reads the integer contents of the named value.
 </table>
 
 ### readInt64Value(name) ###
-  
+<code>  
 This method reads the 64-bit integer contents of the named value.  
   
 @param name  
        The name of the value to query.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -350,7 +350,7 @@ This method reads the 64-bit integer contents of the named value.
 </table>
 
 ### readBinaryValue(name) ###
-  
+<code>  
 This method reads the binary contents of the named value under this key.  
   
 JavaScript callers should take care with the result of this method since  
@@ -360,7 +360,7 @@ treated as an ISO-Latin-1 character string, which it is not).
 @param name  
        The name of the value to query.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -374,7 +374,7 @@ treated as an ISO-Latin-1 character string, which it is not).
 </table>
 
 ### writeStringValue(name, data) ###
-  
+<code>  
 This method writes the unicode string contents of the named value.  The  
 value will be created if it does not already exist.  
   
@@ -384,7 +384,7 @@ value will be created if it does not already exist.
 @param data  
        The data for the value to modify.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -405,7 +405,7 @@ value will be created if it does not already exist.
 </table>
 
 ### writeIntValue(name, data) ###
-  
+<code>  
 This method writes the integer contents of the named value.  The value  
 will be created if it does not already exist.  
   
@@ -414,7 +414,7 @@ will be created if it does not already exist.
 @param data  
        The data for the value to modify.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -434,7 +434,7 @@ will be created if it does not already exist.
 </table>
 
 ### writeInt64Value(name, data) ###
-  
+<code>  
 This method writes the 64-bit integer contents of the named value.  The  
 value will be created if it does not already exist.  
   
@@ -443,7 +443,7 @@ value will be created if it does not already exist.
 @param data  
        The data for the value to modify.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -463,7 +463,7 @@ value will be created if it does not already exist.
 </table>
 
 ### writeBinaryValue(name, data) ###
-  
+<code>  
 This method writes the binary contents of the named value.  The value will  
 be created if it does not already exist.  
   
@@ -479,7 +479,7 @@ occur.
 @param data  
        The data for the value to modify.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -499,7 +499,7 @@ occur.
 </table>
 
 ### startWatching(recurse) ###
-  
+<code>  
 This method starts watching the key to see if any of its values have  
 changed.  The key must have been opened with mode including ACCESS_NOTIFY.  
 If recurse is true, then this key and any of its descendant keys are  
@@ -508,7 +508,7 @@ watched.  Otherwise, only this key is watched.
 @param recurse  
        Indicates whether or not to also watch child keys.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -522,23 +522,23 @@ watched.  Otherwise, only this key is watched.
 </table>
 
 ### stopWatching() ###
-  
+<code>  
 This method stops any watching of the key initiated by a call to  
 startWatching.  This method does nothing if the key is not being watched.  
   
-
+</code>
 ### isWatching() ###
-  
+<code>  
 This method returns true if the key is being watched for changes (i.e.,  
 if startWatching() was called).  
   
-
+</code>
 ### hasChanged() ###
-  
+<code>  
 This method returns true if the key has changed and false otherwise.  
 This method will always return false if startWatching was not called.  
   
-
+</code>
 ## Attributes ##
 
 ### key ###

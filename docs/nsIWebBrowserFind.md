@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIWebBrowserFind #
-  
+<code>  
 nsIWebBrowserFind  
   
 Searches for text in a web browser.  
@@ -19,11 +19,11 @@ does not by default search subframes or iframes. To change this
 behaviour, and to explicitly set the frame to search,   
 QueryInterface to nsIWebBrowserFindInFrames.  
   
-
+</code>
 ## Methods ##
 
 ### findNext() ###
-  
+<code>  
 findNext  
   
 Finds, highlights, and scrolls into view the next occurrence of the  
@@ -32,7 +32,7 @@ search string is empty.
   
 @return  Whether an occurrence was found  
   
-
+</code>
 #### Returns ####
 
 <table>

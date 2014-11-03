@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### explicitSetUploadStream(aStream, aContentType, aContentLength, aMethod, aStreamHasHeaders) ###
-  
+<code>  
 Sets a stream to be uploaded by this channel with the specified  
 Content-Type and Content-Length header values.  
   
@@ -33,7 +33,7 @@ Most implementations of this interface require that the stream:
 @param aStreamHasHeaders  
        True if the stream already contains headers for the HTTP request.  
   
-
+</code>
 #### Parameters ####
 
 <table>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### itemIsBatch(aIndex) ###
-  
+<code>  
 itemIsBatch() returns true if the item at aIndex is a batch. Note that  
 currently there is no requirement for a TransactionManager implementation  
 to associate a toplevel nsITransaction with a batch so it is possible for  
@@ -19,7 +19,7 @@ can still access the transactions contained in the batch with a call to
 getChildListForItem().  
 @param aIndex The index of the item in the list.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -33,14 +33,14 @@ getChildListForItem().
 </table>
 
 ### getItem(aIndex) ###
-  
+<code>  
 getItem() returns the transaction at the given index in the list. Note that  
 a null can be returned here if the item is a batch. The transaction  
 returned is AddRef'd so it is up to the caller to Release the transaction  
 when it is done.  
 @param aIndex The index of the item in the list.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -54,18 +54,18 @@ when it is done.
 </table>
 
 ### getData(aIndex, aLength, aData) ###
-  
+<code>  
 getData() returns the data (of type nsISupports array) associated with  
 the transaction list.  
   
-
+</code>
 ### getNumChildrenForItem(aIndex) ###
-  
+<code>  
 getNumChildrenForItem() returns the number of child (auto-aggreated)  
 transactions the item at aIndex has.  
 @param aIndex The index of the item in the list.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -79,14 +79,14 @@ transactions the item at aIndex has.
 </table>
 
 ### getChildListForItem(aIndex) ###
-  
+<code>  
 getChildListForItem() returns the list of children associated with the  
 item at aIndex. Implementations may return null if there are no children,  
 or an empty list. The list returned is AddRef'd so it is up to the caller  
 to Release the transaction when it is done.  
 @param aIndex The index of the item in the list.  
   
-
+</code>
 #### Parameters ####
 
 <table>

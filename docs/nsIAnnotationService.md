@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### setPageAnnotation(aURI, aName, aValue, aFlags, aExpiration) ###
-  
+<code>  
 Sets an annotation, overwriting any previous annotation with the same  
 URL/name. IT IS YOUR JOB TO NAMESPACE YOUR ANNOTATION NAMES.  
 Use the form "namespace/value", so your name would be like  
@@ -43,48 +43,48 @@ Only C++ consumers may use the type-specific methods.
   
 @throws NS_ERROR_ILLEGAL_VALUE if the page or the bookmark doesn't exist.  
   
-
+</code>
 ### setItemAnnotation(aItemId, aName, aValue, aFlags, aExpiration) ###
 
 ### setPageAnnotationString(aURI, aName, aValue, aFlags, aExpiration) ###
-  
+<code>  
 @throws NS_ERROR_ILLEGAL_VALUE if the page or the bookmark doesn't exist.  
   
-
+</code>
 ### setItemAnnotationString(aItemId, aName, aValue, aFlags, aExpiration) ###
 
 ### setPageAnnotationInt32(aURI, aName, aValue, aFlags, aExpiration) ###
-  
+<code>  
 Sets an annotation just like setAnnotationString, but takes an Int32 as  
 input.  
   
 @throws NS_ERROR_ILLEGAL_VALUE if the page or the bookmark doesn't exist.  
   
-
+</code>
 ### setItemAnnotationInt32(aItemId, aName, aValue, aFlags, aExpiration) ###
 
 ### setPageAnnotationInt64(aURI, aName, aValue, aFlags, aExpiration) ###
-  
+<code>  
 Sets an annotation just like setAnnotationString, but takes an Int64 as  
 input.  
   
 @throws NS_ERROR_ILLEGAL_VALUE if the page or the bookmark doesn't exist.  
   
-
+</code>
 ### setItemAnnotationInt64(aItemId, aName, aValue, aFlags, aExpiration) ###
 
 ### setPageAnnotationDouble(aURI, aName, aValue, aFlags, aExpiration) ###
-  
+<code>  
 Sets an annotation just like setAnnotationString, but takes a double as  
 input.  
   
 @throws NS_ERROR_ILLEGAL_VALUE if the page or the bookmark doesn't exist.  
   
-
+</code>
 ### setItemAnnotationDouble(aItemId, aName, aValue, aFlags, aExpiration) ###
 
 ### getPageAnnotation(aURI, aName) ###
-  
+<code>  
 Retrieves the value of a given annotation. Throws an error if the  
 annotation does not exist. C++ consumers may use the type-specific  
 methods.  
@@ -92,39 +92,39 @@ methods.
 The type-specific methods throw if the given annotation is set in  
 a different type.  
   
-
+</code>
 ### getItemAnnotation(aItemId, aName) ###
 
 ### getPageAnnotationString(aURI, aName) ###
-  
+<code>  
 @see getPageAnnotation  
   
-
+</code>
 ### getItemAnnotationString(aItemId, aName) ###
 
 ### getPageAnnotationInt32(aURI, aName) ###
-  
+<code>  
 @see getPageAnnotation  
   
-
+</code>
 ### getItemAnnotationInt32(aItemId, aName) ###
 
 ### getPageAnnotationInt64(aURI, aName) ###
-  
+<code>  
 @see getPageAnnotation  
   
-
+</code>
 ### getItemAnnotationInt64(aItemId, aName) ###
 
 ### getPageAnnotationDouble(aURI, aName) ###
-  
+<code>  
 @see getPageAnnotation  
   
-
+</code>
 ### getItemAnnotationDouble(aItemId, aName) ###
 
 ### getPageAnnotationInfo(aURI, aName, aFlags, aExpiration, aType) ###
-  
+<code>  
 Retrieves info about an existing annotation.  
   
 aType will be one of TYPE_* constansts above  
@@ -134,11 +134,11 @@ example JS:
   annotator.getAnnotationInfo(myURI, "foo", flags, exp, type);  
   // now you can use 'exp.value' and 'flags.value'  
   
-
+</code>
 ### getItemAnnotationInfo(aItemId, aName, aFlags, aExpiration, aType) ###
 
 ### getPageAnnotationType(aURI, aName) ###
-  
+<code>  
 Retrieves the type of an existing annotation  
 Use getAnnotationInfo if you need this along with the mime-type etc.  
   
@@ -149,7 +149,7 @@ Use getAnnotationInfo if you need this along with the mime-type etc.
 @return one of the TYPE_* constants above  
 @throws if the annotation is not set  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -183,21 +183,21 @@ Use getAnnotationInfo if you need this along with the mime-type etc.
 ### getItemAnnotationType(aItemId, aName) ###
 
 ### getPagesWithAnnotation(name, resultCount, results) ###
-  
+<code>  
 Returns a list of all URIs having a given annotation.  
   
-
+</code>
 ### getItemsWithAnnotation(name, resultCount, results) ###
 
 ### getAnnotationsWithName(name, count, results) ###
-  
+<code>  
 Returns a list of mozIAnnotation(s), having a given annotation name.  
   
 @param name  
        The annotation to search for.  
 @return list of mozIAnnotation objects.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -222,41 +222,41 @@ Returns a list of mozIAnnotation(s), having a given annotation name.
 </table>
 
 ### getPageAnnotationNames(aURI, count, result) ###
-  
+<code>  
 Get the names of all annotations for this URI.  
   
 example JS:  
   var annotations = annotator.getPageAnnotations(myURI, {});  
   
-
+</code>
 ### getItemAnnotationNames(aItemId, count, result) ###
 
 ### pageHasAnnotation(aURI, aName) ###
-  
+<code>  
 Test for annotation existence.  
   
-
+</code>
 ### itemHasAnnotation(aItemId, aName) ###
 
 ### removePageAnnotation(aURI, aName) ###
-  
+<code>  
 Removes a specific annotation. Succeeds even if the annotation is  
 not found.  
   
-
+</code>
 ### removeItemAnnotation(aItemId, aName) ###
 
 ### removePageAnnotations(aURI) ###
-  
+<code>  
 Removes all annotations for the given page/item.  
 We may want some other similar functions to get annotations with given  
 flags (once we have flags defined).  
   
-
+</code>
 ### removeItemAnnotations(aItemId) ###
 
 ### copyPageAnnotations(aSourceURI, aDestURI, aOverwriteDest) ###
-  
+<code>  
 Copies all annotations from the source to the destination URI/item. If  
 the destination already has an annotation with the same name as one on  
 the source, it will be overwritten if aOverwriteDest is set. Otherwise,  
@@ -265,20 +265,20 @@ the original annotation will be preferred.
 All the source annotations will stay as-is. If you don't want them  
 any more, use removePageAnnotations on that URI.  
   
-
+</code>
 ### copyItemAnnotations(aSourceItemId, aDestItemId, aOverwriteDest) ###
 
 ### addObserver(aObserver) ###
-  
+<code>  
 Adds an annotation observer. The annotation service will keep an owning  
 reference to the observer object.  
   
-
+</code>
 ### removeObserver(aObserver) ###
-  
+<code>  
 Removes an annotaton observer previously registered by addObserver.  
   
-
+</code>
 ## Constants ##
 
 ### EXPIRE_SESSION ###

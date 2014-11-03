@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsIContentPrefCallback2 #
-  
+<code>  
 The callback used by the above methods.  
   
-
+</code>
 ## Methods ##
 
 ### handleResult(pref) ###
-  
+<code>  
 For the retrieval methods, this is called once for each retrieved  
 preference.  It is not called for other methods.  
   
 @param pref  The retrieved preference.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -33,13 +33,13 @@ preference.  It is not called for other methods.
 </table>
 
 ### handleError(error) ###
-  
+<code>  
 Called when an error occurs.  This may be called multiple times before  
 handleCompletion is called.  
   
 @param error  A number in Components.results describing the error.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -53,7 +53,7 @@ handleCompletion is called.
 </table>
 
 ### handleCompletion(reason) ###
-  
+<code>  
 Called when the method finishes.  This will be called exactly once for  
 each method invocation, and afterward no other callback methods will be  
 called.  
@@ -61,7 +61,7 @@ called.
 @param reason  One of the COMPLETE_* values indicating the manner in which  
                the method completed.  
   
-
+</code>
 #### Parameters ####
 
 <table>

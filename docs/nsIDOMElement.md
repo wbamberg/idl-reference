@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIDOMElement #
-  
+<code>  
 The nsIDOMElement interface represents an element in an HTML or   
 XML document.   
   
 For more information on this interface please see   
 http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#interface-element  
   
-
+</code>
 ## Methods ##
 
 ### getAttribute(name) ###
@@ -49,15 +49,15 @@ http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#interface-element
 ### getElementsByTagNameNS(namespaceURI, localName) ###
 
 ### getElementsByClassName(classes) ###
-  
+<code>  
 Retrieve elements matching all classes listed in a  
 space-separated string.  
   
-
+</code>
 ### remove() ###
 
 ### getClientRects() ###
-  
+<code>  
 Retrieve a list of rectangles, one for each CSS border-box associated with  
 the element. The coordinates are in CSS pixels, and relative to  
 the top-left of the document's viewport, unless the document  
@@ -73,25 +73,25 @@ Note: some elements have no CSS boxes (including display:none elements,
 HTML AREA elements, and SVG elements that do not render). Those return  
 an empty list.  
   
-
+</code>
 ### getBoundingClientRect() ###
-  
+<code>  
 Returns the union of all rectangles in the getClientRects() list. Empty  
 rectangles are ignored, except that if all rectangles are empty,  
 we return an empty rectangle positioned at the top-left of the first  
 rectangle in getClientRects().  
   
-
+</code>
 ### mozMatchesSelector(selector) ###
-  
+<code>  
 Returns whether this element would be selected by the given selector  
 string.  
   
 See <http://dev.w3.org/2006/webapi/selectors-api2/#matchesselector>  
   
-
+</code>
 ### setCapture(retargetToElement) ###
-  
+<code>  
 Set this during a mousedown event to grab and retarget all mouse events  
 to this element until the mouse button is released or releaseCapture is  
 called. If retargetToElement is true, then all events are targetted at  
@@ -99,36 +99,36 @@ this element. If false, events can also fire at descendants of this
 element.  
   
   
-
+</code>
 ### releaseCapture() ###
-  
+<code>  
 If this element has captured the mouse, release the capture. If another  
 element has captured the mouse, this method has no effect.  
   
-
+</code>
 ### mozRequestFullScreen() ###
-  
+<code>  
 Requests that this element be made the full-screen element, as per the DOM  
 full-screen api.  
   
 @see <https://wiki.mozilla.org/index.php?title=Gecko:FullScreenAPI>  
   
-
+</code>
 ### mozRequestPointerLock() ###
-  
+<code>  
 Requests that this element be made the pointer-locked element, as per the DOM  
 pointer lock api.  
   
 @see <http://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html>  
   
-
+</code>
 ### querySelector(selectors) ###
-  
+<code>  
 Return nodes that match a given CSS selector.  
   
 @see <http://dev.w3.org/2006/webapi/selectors-api/>  
   
-
+</code>
 ### querySelectorAll(selectors) ###
 
 ## Attributes ##

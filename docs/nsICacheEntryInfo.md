@@ -10,10 +10,10 @@ layout: default
 ## Methods ##
 
 ### isStreamBased() ###
-  
+<code>  
 Find out whether or not the cache entry is stream based.  
   
-
+</code>
 ## Attributes ##
 
 ### clientID ###

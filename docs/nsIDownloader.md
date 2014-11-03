@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDownloader #
-  
+<code>  
 nsIDownloader  
   
 A downloader is a special implementation of a nsIStreamListener that will  
@@ -15,11 +15,11 @@ disk cache as an optimization to avoid an extra copy of the data on disk.
 The resulting file is valid from the time the downloader completes until  
 the last reference to the downloader is released.  
   
-
+</code>
 ## Methods ##
 
 ### init(observer, downloadLocation) ###
-  
+<code>  
 Initialize this downloader  
   
 @param observer  
@@ -33,7 +33,7 @@ Initialize this downloader
        not be deleted, and it will be the callers responsibility  
        to keep track of the file, etc.  
   
-
+</code>
 #### Parameters ####
 
 <table>

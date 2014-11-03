@@ -10,24 +10,24 @@ layout: default
 ## Methods ##
 
 ### setDisplaySelection(toggle) ###
-  
+<code>  
 SetDisplaySelection will set the display mode for the selection. OFF,ON,DISABLED  
   
-
+</code>
 ### getDisplaySelection() ###
-  
+<code>  
 GetDisplaySelection will get the display mode for the selection. OFF,ON,DISABLED  
   
-
+</code>
 ### getSelection(type) ###
-  
+<code>  
 GetSelection will return the selection that the presentation  
  shell may implement.  
   
 @param aType will hold the type of selection //SelectionType  
 @param _return will hold the return value  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -47,7 +47,7 @@ GetSelection will return the selection that the presentation
 </table>
 
 ### scrollSelectionIntoView(type, region, flags) ###
-  
+<code>  
 ScrollSelectionIntoView scrolls a region of the selection,  
 so that it is visible in the scrolled view.  
   
@@ -65,7 +65,7 @@ as hidden.
 Note that if isSynchronous is true, then this might flush the pending  
 reflow. It's dangerous for some objects. See bug 418470 comment 12.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -98,12 +98,12 @@ as hidden.
 </table>
 
 ### repaintSelection(type) ###
-  
+<code>  
 RepaintSelection repaints the selection specified by aType.  
   
 @param aType specifies the selection to repaint.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -117,14 +117,14 @@ RepaintSelection repaints the selection specified by aType.
 </table>
 
 ### setCaretEnabled(enabled) ###
-  
+<code>  
 Set the caret as enabled or disabled. An enabled caret will  
 draw or blink when made visible. A disabled caret will never show up.  
 Can be called any time.  
 @param aEnable PR_TRUE to enable caret.  PR_FALSE to disable.  
 @return always NS_OK  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -149,13 +149,13 @@ Can be called any time.
 </table>
 
 ### setCaretReadOnly(readOnly) ###
-  
+<code>  
 Set the caret readonly or not. An readonly caret will  
 draw but not blink when made visible.   
 @param aReadOnly PR_TRUE to enable caret.  PR_FALSE to disable.  
 @return always NS_OK  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -180,13 +180,13 @@ draw but not blink when made visible.
 </table>
 
 ### getCaretEnabled() ###
-  
+<code>  
 Gets the current state of the caret.  
 @param aEnabled  [OUT] set to the current caret state, as set by SetCaretEnabled  
 @return   if aOutEnabled==null, returns NS_ERROR_INVALID_ARG  
           else NS_OK  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -212,13 +212,13 @@ Gets the current state of the caret.
 </table>
 
 ### setCaretVisibilityDuringSelection(visibility) ###
-  
+<code>  
 Show the caret even in selections. By default the caret is hidden unless the  
 selection is collapsed. Use this function to show the caret even in selections.  
 @param aVisibility PR_TRUE to show the caret in selections.  PR_FALSE to hide.  
 @return always NS_OK  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -243,14 +243,14 @@ selection is collapsed. Use this function to show the caret even in selections.
 </table>
 
 ### characterMove(forward, extend) ###
- CharacterMove will move the selection one character forward/backward in the document.  
+<code> CharacterMove will move the selection one character forward/backward in the document.  
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
  @param aForward forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -270,29 +270,29 @@ selection is collapsed. Use this function to show the caret even in selections.
 </table>
 
 ### characterExtendForDelete() ###
-  
+<code>  
 CharacterExtendForDelete will extend the selection one character cell  
 forward in the document.  
 this method is used internally for handling del key.  
   
-
+</code>
 ### characterExtendForBackspace() ###
-  
+<code>  
 CharacterExtendForBackspace will extend the selection one character cell  
 backward in the document.  
 this method is used internally for handling backspace key only when we're  
 after UTF-16 surrogates.  
   
-
+</code>
 ### wordMove(forward, extend) ###
- WordMove will move the selection one word forward/backward in the document.  
+<code> WordMove will move the selection one word forward/backward in the document.  
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
  @param aForward forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -312,11 +312,11 @@ after UTF-16 surrogates.
 </table>
 
 ### wordExtendForDelete(forward) ###
- wordExtendForDelete will extend the selection one word forward/backward in the document.  
+<code> wordExtendForDelete will extend the selection one word forward/backward in the document.  
  this method is used internally for handling ctrl[option]-backspace and ctrl[option]-del.  
  @param aForward forward or backward if PR_FALSE  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -330,14 +330,14 @@ after UTF-16 surrogates.
 </table>
 
 ### lineMove(forward, extend) ###
- LineMove will move the selection one line forward/backward in the document.  
+<code> LineMove will move the selection one line forward/backward in the document.  
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
  @param aForward forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -357,7 +357,7 @@ after UTF-16 surrogates.
 </table>
 
 ### intraLineMove(forward, extend) ###
- IntraLineMove will move the selection to the front of the line or end of the line  
+<code> IntraLineMove will move the selection to the front of the line or end of the line  
  in the document.  
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
@@ -365,7 +365,7 @@ after UTF-16 surrogates.
  @param aForward forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -385,14 +385,14 @@ after UTF-16 surrogates.
 </table>
 
 ### pageMove(forward, extend) ###
- PageMove will move the selection one page forward/backward in the document.  
+<code> PageMove will move the selection one page forward/backward in the document.  
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
  @param aForward forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -412,10 +412,10 @@ after UTF-16 surrogates.
 </table>
 
 ### completeScroll(forward) ###
- CompleteScroll will move page view to the top or bottom of the document  
+<code> CompleteScroll will move page view to the top or bottom of the document  
  @param aForward forward or backward if PR_FALSE  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -429,14 +429,14 @@ after UTF-16 surrogates.
 </table>
 
 ### completeMove(forward, extend) ###
- CompleteMove will move page view to the top or bottom of the document  
+<code> CompleteMove will move page view to the top or bottom of the document  
  this will also have the effect of collapsing the selection if the aExtend = PR_FALSE  
  the "point" of selection that is extended is considered the "focus" point.   
  or the last point adjusted by the selection.  
  @param aForward forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -456,10 +456,10 @@ after UTF-16 surrogates.
 </table>
 
 ### scrollPage(forward) ###
- ScrollPage will scroll the page without affecting the selection.  
+<code> ScrollPage will scroll the page without affecting the selection.  
  @param aForward scroll forward or backwards in selection  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -473,10 +473,10 @@ after UTF-16 surrogates.
 </table>
 
 ### scrollLine(forward) ###
- ScrollLine will scroll line up or down dependent on the boolean  
+<code> ScrollLine will scroll line up or down dependent on the boolean  
  @param aForward scroll forward or backwards in selection  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -490,10 +490,10 @@ after UTF-16 surrogates.
 </table>
 
 ### scrollCharacter(right) ###
- ScrollCharacter will scroll right or left dependent on the boolean  
+<code> ScrollCharacter will scroll right or left dependent on the boolean  
  @param aRight if true will scroll right. if not will scroll left.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -507,18 +507,18 @@ after UTF-16 surrogates.
 </table>
 
 ### selectAll() ###
- SelectAll will select the whole page  
+<code> SelectAll will select the whole page  
   
-
+</code>
 ### checkVisibility(node, startOffset, endOffset) ###
- CheckVisibility will return true if textnode and offsets are actually rendered   
+<code> CheckVisibility will return true if textnode and offsets are actually rendered   
  in the current precontext.  
  @param aNode textNode to test  
  @param aStartOffset  offset in dom to first char of textnode to test  
  @param aEndOffset    offset in dom to last char of textnode to test  
  @param aReturnBool   boolean returned TRUE if visible FALSE if not  
   
-
+</code>
 #### Parameters ####
 
 <table>

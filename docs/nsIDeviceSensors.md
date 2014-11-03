@@ -10,10 +10,10 @@ layout: default
 ## Methods ##
 
 ### hasWindowListener(aType, aWindow) ###
-  
+<code>  
 Returns true if the given window has any listeners of the given type  
   
-
+</code>
 ### addWindowListener(aType, aWindow) ###
 
 ### removeWindowListener(aType, aWindow) ###

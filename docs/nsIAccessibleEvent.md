@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIAccessibleEvent #
-  
+<code>  
 An interface for accessibility events listened to  
 by in-process accessibility clients, which can be used  
 to find out how to get accessibility and DOM interfaces for  
@@ -18,7 +18,7 @@ using code something like this:
   if (NS_SUCCEEDED(rv))   
     rv = observerService->AddObserver(this, "accessible-event", PR_TRUE);  
   
-
+</code>
 ## Attributes ##
 
 ### eventType ###

@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIPrivateBrowsingChannel #
-  
+<code>  
 This interface is implemented by channels which support overriding the  
 privacy state of the channel.  
   
 This interface must be used only from the XPCOM main thread.  
   
-
+</code>
 ## Methods ##
 
 ### setPrivate(aPrivate) ###
-  
+<code>  
 Determine whether the channel is tied to a private browsing window.  
   
 This value can be set only before the channel is opened.  Setting it  
@@ -37,7 +37,7 @@ or notificationCallbacks are set after setPrivate has been called.
   
 @param aPrivate whether the channel should be opened in private mode.  
   
-
+</code>
 #### Parameters ####
 
 <table>

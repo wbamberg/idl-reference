@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIJSInspector #
-  
+<code>  
 Utilities for running nested event loops, asking them to return, and  
 keeping track of which ones are still running.  
   
-
+</code>
 ## Methods ##
 
 ### enterNestedEventLoop(requestor) ###
-  
+<code>  
 Process the current thread's event queue, calling event handlers until  
 a call to exitNestedEventLoop, below, asks us to return.  
   
@@ -41,7 +41,7 @@ finished processing the current event.
                    necessary running; exitNestedEventLoop can ask any  
                    number of enterNestedEventLoop calls to return.)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -68,7 +68,7 @@ finished processing the current event.
 </table>
 
 ### exitNestedEventLoop() ###
-  
+<code>  
 Stop the youngest running enterNestedEventLoop call, asking it to return  
 once it has finished processing the current event.  
   
@@ -87,7 +87,7 @@ another running loop.
   
 @throws NS_ERROR_FAILURE if there are no running enterNestedEventLoop calls.  
   
-
+</code>
 #### Returns ####
 
 <table>

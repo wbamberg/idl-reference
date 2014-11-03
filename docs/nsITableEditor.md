@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### insertTableCell(aNumber, aAfter) ###
- Insert table methods  
+<code> Insert table methods  
 Insert relative to the selected cell or the   
  cell enclosing the selection anchor  
 The selection is collapsed and is left in the new cell  
@@ -20,7 +20,7 @@ The selection is collapsed and is left in the new cell
 @param aAfter     If TRUE, insert after the current cell,  
                     else insert before current cell  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -45,7 +45,7 @@ The selection is collapsed and is left in the new cell
 ### insertTableRow(aNumber, aAfter) ###
 
 ### deleteTable() ###
- Delete table methods  
+<code> Delete table methods  
 Delete starting at the selected cell or the   
  cell (or table) enclosing the selection anchor  
 The selection is collapsed and is left in the   
@@ -55,7 +55,7 @@ The selection is collapsed and is left in the
   
 @param aNumber    Number of items to insert/delete  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -69,13 +69,13 @@ The selection is collapsed and is left in the
 </table>
 
 ### deleteTableCellContents() ###
- Delete just the cell contents  
+<code> Delete just the cell contents  
 This is what should happen when Delete key is used  
   for selected cells, to minimize upsetting the table layout  
   
-
+</code>
 ### deleteTableCell(aNumber) ###
- Delete cell elements as well as contents  
+<code> Delete cell elements as well as contents  
 @param aNumber   Number of contiguous cells, rows, or columns  
   
 When there are more than 1 selected cells, aNumber is ignored.  
@@ -84,7 +84,7 @@ For Delete Rows or Columns, the complete columns or rows are
  user simply selects a cell in each, and they don't  
  have to be contiguous.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -102,13 +102,13 @@ For Delete Rows or Columns, the complete columns or rows are
 ### deleteTableRow(aNumber) ###
 
 ### selectTableCell() ###
- Table Selection methods  
+<code> Table Selection methods  
 Selecting a row or column actually  
 selects all cells (not TR in the case of rows)  
   
-
+</code>
 ### selectBlockOfCells(aStartCell, aEndCell) ###
- Select a rectangular block of cells:  
+<code> Select a rectangular block of cells:  
  all cells falling within the row/column index of aStartCell  
  to through the row/column index of the aEndCell  
  aStartCell can be any location relative to aEndCell,  
@@ -116,7 +116,7 @@ selects all cells (not TR in the case of rows)
  @param aStartCell  starting cell in block  
  @param aEndCell    ending cell in block  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -144,7 +144,7 @@ selects all cells (not TR in the case of rows)
 ### selectAllTableCells() ###
 
 ### switchTableCellHeaderType(aSourceCell) ###
- Create a new TD or TH element, the opposite type of the supplied aSourceCell  
+<code> Create a new TD or TH element, the opposite type of the supplied aSourceCell  
   1. Copy all attributes from aSourceCell to the new cell  
   2. Move all contents of aSourceCell to the new cell  
   3. Replace aSourceCell in the table with the new cell  
@@ -152,7 +152,7 @@ selects all cells (not TR in the case of rows)
  @param aSourceCell   The cell to be replaced  
  @return              The new cell that replaces aSourceCell  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -177,7 +177,7 @@ selects all cells (not TR in the case of rows)
 </table>
 
 ### joinTableCells(aMergeNonContiguousContents) ###
- Merges contents of all selected cells  
+<code> Merges contents of all selected cells  
 for selected cells that are adjacent,  
 this will result in a larger cell with appropriate   
 rowspan and colspan, and original cells are deleted  
@@ -197,7 +197,7 @@ If there are no selected cells,
   that cell and the one to the right   
   are merged  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -215,15 +215,15 @@ If there are no selected cells,
 </table>
 
 ### splitTableCell() ###
- Split a cell that has rowspan and/or colspan > 0  
+<code> Split a cell that has rowspan and/or colspan > 0  
   into cells such that all new cells have   
   rowspan = 1 and colspan = 1  
  All of the contents are not touched --  
   they will appear to be in the upper-left cell   
   
-
+</code>
 ### normalizeTable(aTable) ###
- Scan through all rows and add cells as needed so   
+<code> Scan through all rows and add cells as needed so   
   all locations in the cellmap are occupied.  
   Used after inserting single cells or pasting  
   a collection of cells that extend past the  
@@ -233,22 +233,22 @@ This doesn't doesn't change the selection,
   thus it can be used to fixup all tables  
   in a page independent of the selection  
   
-
+</code>
 ### getCellIndexes(aCell, aRowIndex, aColIndex) ###
- Get the row an column index from the layout's cellmap  
+<code> Get the row an column index from the layout's cellmap  
 If aCell is null, it will try to find enclosing table of selection anchor  
   
   
-
+</code>
 ### getTableSize(aTable, aRowCount, aColCount) ###
- Get the number of rows and columns in a table from the layout's cellmap  
+<code> Get the number of rows and columns in a table from the layout's cellmap  
 If aTable is null, it will try to find enclosing table of selection ancho  
 Note that all rows in table will not have this many because of   
 ROWSPAN effects or if table is not "rectangular" (has short rows)  
   
-
+</code>
 ### getCellAt(aTable, aRowIndex, aColIndex) ###
- Get a cell element at cellmap grid coordinates  
+<code> Get a cell element at cellmap grid coordinates  
 A cell that spans across multiple cellmap locations will  
   be returned multiple times, once for each location it occupies  
   
@@ -262,7 +262,7 @@ A cell that spans across multiple cellmap locations will
   by iterating through the appropriate indexes  
   until the returned aCell is null  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -282,7 +282,7 @@ A cell that spans across multiple cellmap locations will
 </table>
 
 ### getCellDataAt(aTable, aRowIndex, aColIndex, aCell, aStartRowIndex, aStartColIndex, aRowSpan, aColSpan, aActualRowSpan, aActualColSpan, aIsSelected) ###
- Get a cell at cellmap grid coordinates and associated data  
+<code> Get a cell at cellmap grid coordinates and associated data  
 A cell that spans across multiple cellmap locations will  
   be returned multiple times, once for each location it occupies  
 Examine the returned aStartRowIndex and aStartColIndex to see   
@@ -307,7 +307,7 @@ returns values:
 (in C++ returns: NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
  passes NS_SUCCEEDED macro)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -380,14 +380,14 @@ returns values:
 </table>
 
 ### getFirstRow(aTableElement) ###
- Get the first row element in a table  
+<code> Get the first row element in a table  
   
 @return            The row at the requested index  
                    Returns null if there are no rows in table  
 (in C++ returns: NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
  passes NS_SUCCEEDED macro)  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -403,7 +403,7 @@ returns values:
 </table>
 
 ### getNextRow(aTableElement) ###
- Get the next row element starting the search from aTableElement  
+<code> Get the next row element starting the search from aTableElement  
   
 @param aTableElement Any TR or child-of-TR element in the document  
   
@@ -413,7 +413,7 @@ returns values:
 (in C++ returns: NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
  passes NS_SUCCEEDED macro)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -442,12 +442,12 @@ returns values:
 </table>
 
 ### setSelectionAfterTableEdit(aTable, aRow, aCol, aDirection, aSelected) ###
- Preferred direction to search for neighboring cell  
+<code> Preferred direction to search for neighboring cell  
 when trying to locate a cell to place caret in after  
 a table editing action.   
 Used for aDirection param in SetSelectionAfterTableEdit  
   
- Reset a selected cell or collapsed selection (the caret) after table editing  
+</code><code> Reset a selected cell or collapsed selection (the caret) after table editing  
   
 @param aTable      A table in the document  
 @param aRow        The row ...  
@@ -464,7 +464,7 @@ Used for aDirection param in SetSelectionAfterTableEdit
                     and can use the nsSetSelectionAfterTableEdit stack-based   
                     object to insure we reset the caret in a table-editing method.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -511,7 +511,7 @@ Used for aDirection param in SetSelectionAfterTableEdit
 </table>
 
 ### getSelectedOrParentTableElement(aTagName, aCount) ###
- Examine the current selection and find  
+<code> Examine the current selection and find  
   a selected TABLE, TD or TH, or TR element.  
   or return the parent TD or TH if selection is inside a table cell  
   Returns null if no table element is found.  
@@ -525,7 +525,7 @@ Used for aDirection param in SetSelectionAfterTableEdit
 @return                 The table element (table, row, or first selected cell)  
   
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -560,7 +560,7 @@ Used for aDirection param in SetSelectionAfterTableEdit
 </table>
 
 ### getSelectedCellsType(aElement) ###
- Generally used after GetSelectedOrParentTableElement  
+<code> Generally used after GetSelectedOrParentTableElement  
   to test if selected cells are complete rows or columns  
   
 @param aElement           Any table or cell element or any element  
@@ -580,7 +580,7 @@ Used for aDirection param in SetSelectionAfterTableEdit
     TABLESELECTION_COLUMN    All cells are in 1 or more columns  
                              and in each column, all cells are selected  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -617,7 +617,7 @@ Used for aDirection param in SetSelectionAfterTableEdit
 </table>
 
 ### getFirstSelectedCell(aRange) ###
- Get first selected element from first selection range.  
+<code> Get first selected element from first selection range.  
   (If multiple cells were selected this is the first in the order they were selected)  
 Assumes cell-selection model where each cell  
 is in a separate range (selection parent node is table row)  
@@ -629,7 +629,7 @@ Returns the DOM cell element
   (in C++: returns NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
    passes NS_SUCCEEDED macro)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -654,7 +654,7 @@ Returns the DOM cell element
 </table>
 
 ### getFirstSelectedCellInTable(aRowIndex, aColIndex) ###
- Get first selected element in the table  
+<code> Get first selected element in the table  
   This is the upper-left-most selected cell in table,  
   ignoring the order that the user selected them (order in the selection ranges)  
 Assumes cell-selection model where each cell  
@@ -668,7 +668,7 @@ Returns the DOM cell element
   (in C++: returns NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
    passes NS_SUCCEEDED macro)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -695,7 +695,7 @@ Returns the DOM cell element
 </table>
 
 ### getNextSelectedCell(aRange) ###
- Get next selected cell element from first selection range.  
+<code> Get next selected cell element from first selection range.  
 Assumes cell-selection model where each cell  
 is in a separate range (selection parent node is table row)  
 Always call GetFirstSelectedCell() to initialize stored index of "next" cell  
@@ -708,7 +708,7 @@ Returns the DOM cell element
   (in C++: returns NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
    passes NS_SUCCEEDED macro)  
   
-
+</code>
 #### Parameters ####
 
 <table>

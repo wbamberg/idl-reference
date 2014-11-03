@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### addDefaultProperty(aProperty, aAttribute, aValue) ###
-  
+<code>  
 AddDefaultProperty() registers a default style property with the editor  
   
 @param aProperty   the property to set by default  
@@ -21,7 +21,7 @@ AddDefaultProperty() registers a default style property with the editor
                    Example: aProperty="font", aAttribute="color",  
                             aValue="0x00FFFF"  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -51,7 +51,7 @@ AddDefaultProperty() registers a default style property with the editor
 </table>
 
 ### removeDefaultProperty(aProperty, aAttribute, aValue) ###
-  
+<code>  
 RemoveDefaultProperty() unregisters a default style property with the editor  
   
 @param aProperty   the property to remove from defaults  
@@ -62,7 +62,7 @@ RemoveDefaultProperty() unregisters a default style property with the editor
                    Example: aProperty="font", aAttribute="color",  
                             aValue="0x00FFFF"  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -92,13 +92,13 @@ RemoveDefaultProperty() unregisters a default style property with the editor
 </table>
 
 ### removeAllDefaultProperties() ###
-  
+<code>  
 RemoveAllDefaultProperties() unregisters all default style properties with the editor  
   
   
-
+</code>
 ### setInlineProperty(aProperty, aAttribute, aValue) ###
-  
+<code>  
 SetInlineProperty() sets the aggregate properties on the current selection  
   
 @param aProperty   the property to set on the selection   
@@ -110,7 +110,7 @@ SetInlineProperty() sets the aggregate properties on the current selection
                    Example: aProperty="font", aAttribute="color",  
                             aValue="0x00FFFF"  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -141,7 +141,7 @@ SetInlineProperty() sets the aggregate properties on the current selection
 </table>
 
 ### getInlineProperty(aProperty, aAttribute, aValue, aFirst, aAny, aAll) ###
-  
+<code>  
 getInlineProperty() gets aggregate properties of the current selection.  
 All object in the current selection are scanned and their attributes are  
 represented in a list of Property object.  
@@ -161,7 +161,7 @@ represented in a list of Property object.
 @param aAll        [OUT] PR_TRUE if all of the text nodes in the  
                          selection have the property  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -215,13 +215,13 @@ represented in a list of Property object.
 ### getInlinePropertyWithAttrValue(aProperty, aAttribute, aValue, aFirst, aAny, aAll) ###
 
 ### removeAllInlineProperties() ###
-  
+<code>  
 removeAllInlineProperties() deletes all the inline properties from all   
 text in the current selection.  
   
-
+</code>
 ### removeInlineProperty(aProperty, aAttribute) ###
-  
+<code>  
 removeInlineProperty() deletes the properties from all text in the current  
 selection.  If aProperty is not set on the selection, nothing is done.  
   
@@ -238,7 +238,7 @@ selection.  If aProperty is not set on the selection, nothing is done.
                    It indicates that all content-based text properties  
                    are to be removed from the selection.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -268,27 +268,27 @@ selection.  If aProperty is not set on the selection, nothing is done.
 </table>
 
 ### increaseFontSize() ###
-  
+<code>  
  Increase font size for text in selection by 1 HTML unit  
  All existing text is scanned for existing <FONT SIZE> attributes  
  so they will be incremented instead of inserting new <FONT> tag  
   
-
+</code>
 ### decreaseFontSize() ###
-  
+<code>  
  Decrease font size for text in selection by 1 HTML unit  
  All existing text is scanned for existing <FONT SIZE> attributes  
  so they will be decreased instead of inserting new <FONT> tag  
   
-
+</code>
 ### nodeIsBlock(node) ###
-  
+<code>  
 Tests if a node is a BLOCK element according the the HTML 4.0 DTD.  
   This does NOT consider CSS effect on display type  
   
 @param aNode      the node to test  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -302,12 +302,12 @@ Tests if a node is a BLOCK element according the the HTML 4.0 DTD.
 </table>
 
 ### insertHTML(aInputString) ###
-  
+<code>  
 Insert some HTML source at the current location  
   
 @param aInputString   the string to be inserted  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -321,19 +321,19 @@ Insert some HTML source at the current location
 </table>
 
 ### pasteNoFormatting(aSelectionType) ###
-   
+<code>   
 Paste the text in the OS clipboard at the cursor position, replacing  
 the selected text (if any), but strip out any HTML styles and formatting  
   
-
+</code>
 ### rebuildDocumentFromSource(aSourceString) ###
-   
+<code>   
  Rebuild the entire document from source HTML  
  Needed to be able to edit HEAD and other outside-of-BODY content  
   
  @param aSourceString   HTML source string of the entire new document  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -347,7 +347,7 @@ the selected text (if any), but strip out any HTML styles and formatting
 </table>
 
 ### insertHTMLWithContext(aInputString, aContextStr, aInfoStr, aFlavor, aSourceDoc, aDestinationNode, aDestinationOffset, aDeleteSelection) ###
-  
+<code>  
 Insert some HTML source, interpreting  
 the string argument according to the given context.  
   
@@ -361,7 +361,7 @@ the string argument according to the given context.
 @param aDeleteSelection    used with aDestNode during drag&drop   
 @param aCollapseSelection  used with aDestNode during drag&drop  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -423,7 +423,7 @@ the string argument according to the given context.
 </table>
 
 ### insertElementAtSelection(aElement, aDeleteSelection) ###
-   
+<code>   
 Insert an element, which may have child nodes, at the selection  
 Used primarily to insert a new element for various insert element dialogs,  
   but it enforces the HTML 4.0 DTD "CanContain" rules, so it should  
@@ -435,7 +435,7 @@ Used primarily to insert a new element for various insert element dialogs,
     after the end of the selection for all element except  
     Named Anchors, which insert before the selection  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -458,26 +458,26 @@ Used primarily to insert a new element for various insert element dialogs,
 </table>
 
 ### setDocumentTitle(aTitle) ###
-   
+<code>   
   Set the documents title.  
   
-
+</code>
 ### updateBaseURL() ###
-   
+<code>   
   Set the BaseURL for the document to the current URL  
     but only if the page doesn't have a <base> tag  
   This should be done after the document URL has changed,  
     such as after saving a file  
   This is used as base for relativizing link and image urls  
   
-
+</code>
 ### selectElement(aElement) ###
-   
+<code>   
 Set the selection at the suppled element  
   
 @param aElement   An element in the document  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -491,7 +491,7 @@ Set the selection at the suppled element
 </table>
 
 ### setCaretAfterElement(aElement) ###
-   
+<code>   
 Create a collapsed selection just after aElement  
   
 XXX could we parameterize SelectElement(before/select/after>?  
@@ -503,7 +503,7 @@ The selection is set to parent-of-aElement with an
   
 @param aElement  An element in the document  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -517,11 +517,11 @@ The selection is set to parent-of-aElement with an
 </table>
 
 ### setParagraphFormat(aParagraphFormat) ###
-  
+<code>  
 SetParagraphFormat       Insert a block paragraph tag around selection  
 @param aParagraphFormat  "p", "h1" to "h6", "address", "pre", or "blockquote"  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -535,13 +535,13 @@ SetParagraphFormat       Insert a block paragraph tag around selection
 </table>
 
 ### getParagraphState(aMixed) ###
-  
+<code>  
 getParagraphState returns what block tag paragraph format is in  
 the selection.  
 @param aMixed     True if there is more than one format  
 @return           Name of block tag. "" is returned for none.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -566,13 +566,13 @@ the selection.
 </table>
 
 ### getFontFaceState(aMixed) ###
-   
+<code>   
 getFontFaceState returns what font face is in the selection.  
 @param aMixed    True if there is more than one font face  
 @return          Name of face.  Note: "tt" is returned for  
                  tt tag.  "" is returned for none.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -598,12 +598,12 @@ getFontFaceState returns what font face is in the selection.
 </table>
 
 ### getFontColorState(aMixed) ###
-   
+<code>   
 getFontColorState returns what font face is in the selection.  
 @param aMixed     True if there is more than one font color  
 @return           Color string. "" is returned for none.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -628,12 +628,12 @@ getFontColorState returns what font face is in the selection.
 </table>
 
 ### getBackgroundColorState(aMixed) ###
-   
+<code>   
 getFontColorState returns what font face is in the selection.  
 @param aMixed     True if there is more than one font color  
 @return           Color string. "" is returned for none.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -658,12 +658,12 @@ getFontColorState returns what font face is in the selection.
 </table>
 
 ### getHighlightColorState(aMixed) ###
-   
+<code>   
 getHighlightColorState returns what the highlight color of the selection.  
 @param aMixed     True if there is more than one font color  
 @return           Color string. "" is returned for none.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -688,7 +688,7 @@ getHighlightColorState returns what the highlight color of the selection.
 </table>
 
 ### getListState(aMixed, aOL, aUL, aDL) ###
-   
+<code>   
 getListState returns what list type is in the selection.  
 @param aMixed    True if there is more than one type of list, or  
                  if there is some list and non-list  
@@ -697,7 +697,7 @@ getListState returns what list type is in the selection.
 @param aUL       true if an "ul" list is selected.  
 @param aDL       true if a "dl" list is selected.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -731,7 +731,7 @@ getListState returns what list type is in the selection.
 </table>
 
 ### getListItemState(aMixed, aLI, aDT, aDD) ###
-   
+<code>   
 getListItemState returns what list item type is in the selection.  
 @param aMixed    True if there is more than one type of list item, or  
                  if there is some list and non-list  
@@ -739,7 +739,7 @@ getListItemState returns what list item type is in the selection.
 @param aDT       true if "dt" list items are selected.  
 @param aDD       true if "dd" list items are selected.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -772,14 +772,14 @@ getListItemState returns what list item type is in the selection.
 </table>
 
 ### getAlignment(aMixed, aAlign) ###
-   
+<code>   
 getAlignment     returns what alignment is in the selection.  
 @param aMixed    True if there is more than one type of list item, or  
                  if there is some list and non-list  
 @param aAlign    enum value for first encountered alignment  
                  (left/center/right)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -801,37 +801,37 @@ getAlignment     returns what alignment is in the selection.
 </table>
 
 ### getIndentState(aCanIndent, aCanOutdent) ###
-  
+<code>  
 Document me!  
   
   
-
+</code>
 ### makeOrChangeList(aListType, entireList, aBulletType) ###
-  
+<code>  
 Document me!  
   
   
-
+</code>
 ### removeList(aListType) ###
-  
+<code>  
 Document me!  
   
   
-
+</code>
 ### indent(aIndent) ###
-  
+<code>  
 Document me!  
   
   
-
+</code>
 ### align(aAlign) ###
-  
+<code>  
 Document me!  
   
   
-
+</code>
 ### getElementOrParentByTagName(aTagName, aNode) ###
-   
+<code>   
 Return the input node or a parent matching the given aTagName,  
   starting the search at the supplied node.  
 An example of use is for testing if a node is in a table cell  
@@ -851,7 +851,7 @@ An example of use is for testing if a node is in a table cell
 @return         NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
                 (passes NS_SUCCEEDED macro)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -891,7 +891,7 @@ An example of use is for testing if a node is in a table cell
 </table>
 
 ### getSelectedElement(aTagName) ###
-   
+<code>   
 Return an element only if it is the only node selected,  
    such as an image, horizontal rule, etc.  
 The exception is a link, which is more like a text attribute:  
@@ -910,7 +910,7 @@ The exception is a link, which is more like a text attribute:
 @return          NS_EDITOR_ELEMENT_NOT_FOUND if an element is not found  
                  (passes NS_SUCCEEDED macro)  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -942,17 +942,17 @@ The exception is a link, which is more like a text attribute:
 </table>
 
 ### getHeadContentsAsHTML() ###
-   
+<code>   
 Output the contents of the <HEAD> section as text/HTML format  
   
-
+</code>
 ### replaceHeadContentsWithHTML(aSourceToInsert) ###
-   
+<code>   
 Replace all children of <HEAD> with string of HTML source  
   
-
+</code>
 ### createElementWithDefaults(aTagName) ###
-   
+<code>   
 Return a new element with default attribute values  
   
 This does not rely on the selection, and is not sensitive to context.  
@@ -969,7 +969,7 @@ Used primarily to supply new element for various insert element dialogs
      (an "A" tag with the "name" attribute set)  
 @return          The new element created.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -999,12 +999,12 @@ Used primarily to supply new element for various insert element dialogs
 </table>
 
 ### insertLinkAroundSelection(aAnchorElement) ###
-   
+<code>   
 Insert an link element as the parent of the current selection  
   
 @param aElement   An "A" element with a non-empty "href" attribute  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -1018,12 +1018,12 @@ Insert an link element as the parent of the current selection
 </table>
 
 ### setBackgroundColor(aColor) ###
-   
+<code>   
 Set the value of the "bgcolor" attribute on the document's <body> element  
   
 @param aColor  The HTML color string, such as "#ffccff" or "yellow"  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -1037,7 +1037,7 @@ Set the value of the "bgcolor" attribute on the document's <body> element
 </table>
 
 ### setBodyAttribute(aAttr, aValue) ###
-   
+<code>   
 Set an attribute on the document's <body> element  
    such as text, link, background colors  
   
@@ -1046,7 +1046,7 @@ Set an attribute on the document's <body> element
 @param aAttr   The attribute to be set  
 @param aValue  The value of the attribute  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -1066,14 +1066,14 @@ Set an attribute on the document's <body> element
 </table>
 
 ### getLinkedObjects() ###
-  
+<code>  
 Find all the nodes in the document which contain references  
 to outside URIs (e.g. a href, img src, script src, etc.)  
 The objects in the array will be type nsIURIRefObject.  
   
 @return aNodeList    the linked nodes found  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -1086,11 +1086,11 @@ The objects in the array will be type nsIURIRefObject.
 </table>
 
 ### addInsertionListener(inFilter) ###
-  
+<code>  
 Add listener for insertion override  
 @param inFilter  function which callers want called during insertion  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -1104,11 +1104,11 @@ Add listener for insertion override
 </table>
 
 ### removeInsertionListener(inFilter) ###
-  
+<code>  
 Remove listener for insertion override  
 @param inFilter  function which callers do not want called during insertion  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -1122,7 +1122,7 @@ Remove listener for insertion override
 </table>
 
 ### createAnonymousElement(aTag, aParentNode, aAnonClass, aIsCreatedHidden) ###
-  
+<code>  
 Returns an anonymous nsDOMElement of type aTag,  
 child of aParentNode. If aIsCreatedHidden is true, the class  
 "hidden" is added to the created element. If aAnonClass is not  
@@ -1137,7 +1137,7 @@ the empty string, it becomes the value of the attribute "_moz_anonclass"
                              is to be added to the created anonymous  
                              element  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -1184,11 +1184,11 @@ the empty string, it becomes the value of the attribute "_moz_anonclass"
 </table>
 
 ### getSelectionContainer() ###
-  
+<code>  
 returns the deepest container of the selection  
 @return a DOM Element  
   
-
+</code>
 #### Returns ####
 
 <table>
@@ -1201,12 +1201,12 @@ returns the deepest container of the selection
 </table>
 
 ### checkSelectionStateForAnonymousButtons(aSelection) ###
-  
+<code>  
 Checks if the anonymous nodes created by the HTML editor have to be  
 refreshed or hidden depending on a possible new state of the selection  
 @param aSelection [IN] a selection  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -1222,16 +1222,16 @@ refreshed or hidden depending on a possible new state of the selection
 ### isAnonymousElement(aElement) ###
 
 ### breakIsVisible(aNode) ###
-  
+<code>  
 Checks whether a BR node is visible to the user.  
   
-
+</code>
 ### GetActiveEditingHost() ###
-  
+<code>  
 Get an active editor's editing host in DOM window.  If this editor isn't  
 active in the DOM window, this returns NULL.  
   
-
+</code>
 ## Attributes ##
 
 ### isCSSEnabled ###

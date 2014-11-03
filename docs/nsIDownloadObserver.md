@@ -10,6 +10,7 @@ layout: default
 ## Methods ##
 
 ### onDownloadComplete(downloader, request, ctxt, status, result) ###
-  
+<code>  
 Called to signal a download that has completed.  
   
+</code>

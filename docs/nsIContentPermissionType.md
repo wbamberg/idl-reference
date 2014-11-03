@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIContentPermissionType #
-  
+<code>  
  Interface provides the request type and its access.  
   
-
+</code>
 ## Attributes ##
 
 ### type ###

@@ -6,26 +6,27 @@ layout: default
 </div>
 
 # nsIIOUtil #
-  
+<code>  
 nsIIOUtil provdes various xpcom/io-related utility methods.  
   
-
+</code>
 ## Methods ##
 
 ### inputStreamIsBuffered(aStream) ###
-  
+<code>  
 Test whether an input stream is buffered.  See nsStreamUtils.h  
 documentation for NS_InputStreamIsBuffered for the definition of  
 "buffered" used here and for edge-case behavior.  
   
 @throws NS_ERROR_INVALID_POINTER if null is passed in.  
   
-
+</code>
 ### outputStreamIsBuffered(aStream) ###
-  
+<code>  
 Test whether an output stream is buffered.  See nsStreamUtils.h  
 documentation for NS_OutputStreamIsBuffered for the definition of  
 "buffered" used here and for edge-case behavior.  
   
 @throws NS_ERROR_INVALID_POINTER if null is passed in.  
   
+</code>

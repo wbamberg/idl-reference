@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsILoadGroup #
-  
+<code>  
 A load group maintains a collection of nsIRequest objects.   
   
-
+</code>
 ## Methods ##
 
 ### addRequest(aRequest, aContext) ###
-  
+<code>  
 Adds a new request to the group.  This will cause the default load  
 flags to be applied to the request.  If this is a foreground  
 request then the groupObserver's onStartRequest will be called.  
@@ -22,16 +22,16 @@ If the request is the default load request or if the default load
 request is null, then the load group will inherit its load flags from  
 the request.  
   
-
+</code>
 ### removeRequest(aRequest, aContext, aStatus) ###
-  
+<code>  
 Removes a request from the group.  If this is a foreground request  
 then the groupObserver's onStopRequest will be called.  
   
 By the time this call ends, aRequest will have been removed from the  
 loadgroup, even if this function throws an exception.  
   
-
+</code>
 ## Attributes ##
 
 ### groupObserver ###

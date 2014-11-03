@@ -10,6 +10,7 @@ layout: default
 ## Methods ##
 
 ### notify(aRv, aDomMessage) ###
-  
+<code>  
 |aDomMessage|: the nsIDOMMoz{Mms,Sms}Message  
   
+</code>

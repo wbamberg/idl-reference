@@ -6,23 +6,23 @@ layout: default
 </div>
 
 # nsILoadInfo #
-  
+<code>  
 An nsILoadOwner represents per-load information about who started the load.  
   
-
+</code>
 ## Methods ##
 
 ### binaryLoadingPrincipal() ###
-  
+<code>  
 A C++-friendly version of loadingPrincipal.  
   
-
+</code>
 ### binaryLoadingNode() ###
-  
+<code>  
 A C++-friendly version of loadingDocument (loadingNode).  
 This is the node most proximally responsible for the load.  
   
-
+</code>
 ## Attributes ##
 
 ### loadingPrincipal ###

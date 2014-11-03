@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### prefetchURI(aURI, aReferrerURI, aSource, aExplicit) ###
-  
+<code>  
 Enqueue a request to prefetch the specified URI.  
   
 @param aURI the URI of the document to prefetch  
@@ -19,7 +19,7 @@ Enqueue a request to prefetch the specified URI.
        fetch, or null if the prefetch was not requested by a DOM node.  
 @param aExplicit the link element has an explicit prefetch link type  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -52,6 +52,7 @@ Enqueue a request to prefetch the specified URI.
 </table>
 
 ### enumerateQueue() ###
-  
+<code>  
 Enumerate the items in the prefetch queue.  
   
+</code>

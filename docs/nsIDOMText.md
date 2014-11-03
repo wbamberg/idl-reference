@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIDOMText #
-  
+<code>  
 The nsIDOMText interface inherits from nsIDOMCharacterData and represents   
 the textual content (termed character data in XML) of an Element or Attr.  
   
 For more information on this interface please see   
 http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html  
   
-
+</code>
 ## Methods ##
 
 ### splitText(offset) ###

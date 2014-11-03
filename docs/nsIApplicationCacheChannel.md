@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIApplicationCacheChannel #
-  
+<code>  
 Interface implemented by channels that support application caches.  
   
-
+</code>
 ## Methods ##
 
 ### markOfflineCacheEntryAsForeign() ###
-  
+<code>  
 A shortcut method to mark the cache item of this channel as 'foreign'.  
 See the 'cache selection algorithm' and CACHE_SELECTION_RELOAD  
 action handling in nsContentSink.  
   
-
+</code>
 ## Attributes ##
 
 ### loadedFromApplicationCache ###

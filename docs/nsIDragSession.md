@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### getData(aTransferable, aItemIndex) ###
-  
+<code>  
 Get data from a Drag&Drop. Can be called while the drag is in process  
 or after the drop has completed.    
   
 @param  aTransferable the transferable for the data to be put into  
 @param  aItemIndex which of multiple drag items, zero-based  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -37,10 +37,10 @@ or after the drop has completed.
 </table>
 
 ### isDataFlavorSupported(aDataFlavor) ###
-  
+<code>  
 Check to set if any of the native data on the clipboard matches this data flavor  
   
-
+</code>
 ## Attributes ##
 
 ### canDrop ###

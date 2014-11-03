@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINavHistoryResult #
-  
+<code>  
 The result of a history/bookmark query.  
   
-
+</code>
 ## Methods ##
 
 ### addObserver(aObserver, aOwnsWeak) ###
-  
+<code>  
 Adds an observer for changes done in the result.  
   
 @param aObserver  
@@ -26,7 +26,7 @@ Adds an observer for changes done in the result.
   
 @see nsINavHistoryResultObserver  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -49,13 +49,13 @@ Adds an observer for changes done in the result.
 </table>
 
 ### removeObserver(aObserver) ###
-  
+<code>  
 Removes an observer that was added by addObserver.  
   
 @param aObserver  
        a result observer that was added by addObserver.  
   
-
+</code>
 #### Parameters ####
 
 <table>

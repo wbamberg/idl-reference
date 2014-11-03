@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIRDFBlob #
-  
+<code>  
 A literal node in the graph, whose value is arbitrary  
 binary data.  
   
-
+</code>
 ## Attributes ##
 
 ### value ###

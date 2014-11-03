@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIPermission #
-  
+<code>  
 This interface defines a "permission" object,  
 used to specify allowed/blocked objects from  
 user-specified sites (cookies, images etc).  
   
-
+</code>
 ## Attributes ##
 
 ### host ###

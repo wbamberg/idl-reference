@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIX509CertValidity #
-  
+<code>  
 Information on the validity period of a X.509 certificate.  
   
-
+</code>
 ## Attributes ##
 
 ### notBefore ###

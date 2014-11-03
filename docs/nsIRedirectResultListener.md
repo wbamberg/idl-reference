@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onRedirectResult(proceeding) ###
-  
+<code>  
  When an HTTP redirect has been processed (either successfully or not)  
  nsIHttpChannel will call this function if its callbacks implement this  
  interface.  
@@ -19,7 +19,7 @@ layout: default
         Indicated whether the redirect will be proceeding, or not (i.e.  
         has been canceled, or failed).  
   
-
+</code>
 #### Parameters ####
 
 <table>

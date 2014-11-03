@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIEditActionListener #
-  
+<code>  
 A generic editor action listener interface.   
 <P>  
 nsIEditActionListener is the interface used by applications wishing to be notified  
@@ -16,11 +16,11 @@ Note:  this is the wrong class to implement if you are interested in generic
 change notifications.  For generic notifications, you should implement  
 nsIDocumentObserver.  
   
-
+</code>
 ## Methods ##
 
 ### WillCreateNode(aTag, aParent, aPosition) ###
-   
+<code>   
 Called before the editor creates a node.  
 @param aTag      The tag name of the DOM Node to create.  
 @param aParent   The node to insert the new object into  
@@ -28,7 +28,7 @@ Called before the editor creates a node.
                  0=first child, 1=second child, etc.  
                  any number > number of current children = last child  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -56,7 +56,7 @@ Called before the editor creates a node.
 </table>
 
 ### DidCreateNode(aTag, aNode, aParent, aPosition, aResult) ###
-   
+<code>   
 Called after the editor creates a node.  
 @param aTag      The tag name of the DOM Node to create.  
 @param aNode     The DOM Node that was created.  
@@ -66,7 +66,7 @@ Called after the editor creates a node.
                  any number > number of current children = last child  
 @param aResult   The result of the create node operation.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -106,7 +106,7 @@ Called after the editor creates a node.
 </table>
 
 ### WillInsertNode(aNode, aParent, aPosition) ###
-   
+<code>   
 Called before the editor inserts a node.  
 @param aNode     The DOM Node to insert.  
 @param aParent   The node to insert the new object into  
@@ -114,7 +114,7 @@ Called before the editor inserts a node.
                  0=first child, 1=second child, etc.  
                  any number > number of current children = last child  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -142,7 +142,7 @@ Called before the editor inserts a node.
 </table>
 
 ### DidInsertNode(aNode, aParent, aPosition, aResult) ###
-   
+<code>   
 Called after the editor inserts a node.  
 @param aNode     The DOM Node to insert.  
 @param aParent   The node to insert the new object into  
@@ -151,7 +151,7 @@ Called after the editor inserts a node.
                  any number > number of current children = last child  
 @param aResult   The result of the insert node operation.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -185,11 +185,11 @@ Called after the editor inserts a node.
 </table>
 
 ### WillDeleteNode(aChild) ###
-   
+<code>   
 Called before the editor deletes a node.  
 @param aChild    The node to delete  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -203,12 +203,12 @@ Called before the editor deletes a node.
 </table>
 
 ### DidDeleteNode(aChild, aResult) ###
-   
+<code>   
 Called after the editor deletes a node.  
 @param aChild    The node to delete  
 @param aResult   The result of the delete node operation.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -228,13 +228,13 @@ Called after the editor deletes a node.
 </table>
 
 ### WillSplitNode(aExistingRightNode, aOffset) ###
-   
+<code>   
 Called before the editor splits a node.  
 @param aExistingRightNode   the node to split.  It will become the new node's next sibling.  
 @param aOffset              the offset of aExistingRightNode's content|children to do the split at  
 @param aNewLeftNode         [OUT] the new node resulting from the split, becomes aExistingRightNode's previous sibling.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -260,13 +260,13 @@ Called before the editor splits a node.
 </table>
 
 ### DidSplitNode(aExistingRightNode, aOffset, aNewLeftNode, aResult) ###
-   
+<code>   
 Called after the editor splits a node.  
 @param aExistingRightNode   the node to split.  It will become the new node's next sibling.  
 @param aOffset              the offset of aExistingRightNode's content|children to do the split at  
 @param aNewLeftNode         [OUT] the new node resulting from the split, becomes aExistingRightNode's previous sibling.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -292,7 +292,7 @@ Called after the editor splits a node.
 </table>
 
 ### WillJoinNodes(aLeftNode, aRightNode, aParent) ###
-   
+<code>   
 Called before the editor joins 2 nodes.  
 @param aLeftNode   This node will be merged into the right node  
 @param aRightNode  The node that will be merged into.  
@@ -300,7 +300,7 @@ Called before the editor joins 2 nodes.
                    the same type.  
 @param aParent     The parent of aRightNode  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -328,7 +328,7 @@ Called before the editor joins 2 nodes.
 </table>
 
 ### DidJoinNodes(aLeftNode, aRightNode, aParent, aResult) ###
-   
+<code>   
 Called after the editor joins 2 nodes.  
 @param aLeftNode   This node will be merged into the right node  
 @param aRightNode  The node that will be merged into.  
@@ -337,7 +337,7 @@ Called after the editor joins 2 nodes.
 @param aParent     The parent of aRightNode  
 @param aResult     The result of the join operation.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -371,13 +371,13 @@ Called after the editor joins 2 nodes.
 </table>
 
 ### WillInsertText(aTextNode, aOffset, aString) ###
-   
+<code>   
 Called before the editor inserts text.  
 @param aTextNode   This node getting inserted text  
 @param aOffset     The offset in aTextNode to insert at.  
 @param aString     The string that gets inserted.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -403,14 +403,14 @@ Called before the editor inserts text.
 </table>
 
 ### DidInsertText(aTextNode, aOffset, aString, aResult) ###
-   
+<code>   
 Called after the editor inserts text.  
 @param aTextNode   This node getting inserted text  
 @param aOffset     The offset in aTextNode to insert at.  
 @param aString     The string that gets inserted.  
 @param aResult     The result of the insert text operation.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -442,13 +442,13 @@ Called after the editor inserts text.
 </table>
 
 ### WillDeleteText(aTextNode, aOffset, aLength) ###
-   
+<code>   
 Called before the editor deletes text.  
 @param aTextNode   This node getting text deleted  
 @param aOffset     The offset in aTextNode to delete at.  
 @param aLength     The amount of text to delete.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -474,14 +474,14 @@ Called before the editor deletes text.
 </table>
 
 ### DidDeleteText(aTextNode, aOffset, aLength, aResult) ###
-   
+<code>   
 Called before the editor deletes text.  
 @param aTextNode   This node getting text deleted  
 @param aOffset     The offset in aTextNode to delete at.  
 @param aLength     The amount of text to delete.  
 @param aResult     The result of the delete text operation.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -513,11 +513,11 @@ Called before the editor deletes text.
 </table>
 
 ### WillDeleteSelection(aSelection) ###
-   
+<code>   
 Called before the editor deletes the selection.  
 @param aSelection   The selection to be deleted  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -531,11 +531,11 @@ Called before the editor deletes the selection.
 </table>
 
 ### DidDeleteSelection(aSelection) ###
-   
+<code>   
 Called after the editor deletes the selection.  
 @param aSelection   The selection, after deletion  
   
-
+</code>
 #### Parameters ####
 
 <table>

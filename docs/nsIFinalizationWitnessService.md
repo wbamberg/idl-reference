@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### make(aTopic, aString) ###
-  
+<code>  
 Create a new Finalization Witness.  
   
 A finalization witness is an object whose sole role is to  
@@ -23,7 +23,7 @@ broadcast.
 @param aString The string that the witness will broadcast.  
 @return An object with a single method |forget()|.  
   
-
+</code>
 #### Parameters ####
 
 <table>

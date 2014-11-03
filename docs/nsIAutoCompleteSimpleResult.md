@@ -6,47 +6,47 @@ layout: default
 </div>
 
 # nsIAutoCompleteSimpleResult #
-  
+<code>  
 This class implements nsIAutoCompleteResult and provides simple methods  
 for setting the value and result items. It can be used whenever some basic  
 auto complete results are needed that can be pre-generated and filled into  
 an array.  
   
-
+</code>
 ## Methods ##
 
 ### setSearchString(aSearchString) ###
-  
+<code>  
 A writer for the readonly attribute 'searchString' which should contain  
 the string that the user typed.  
   
-
+</code>
 ### setErrorDescription(aErrorDescription) ###
-  
+<code>  
 A writer for the readonly attribute 'errorDescription'.  
   
-
+</code>
 ### setDefaultIndex(aDefaultIndex) ###
-  
+<code>  
 A writer for the readonly attribute 'defaultIndex' which should contain  
 the index of the list that will be selected by default (normally 0).  
   
-
+</code>
 ### setSearchResult(aSearchResult) ###
-  
+<code>  
 A writer for the readonly attribute 'searchResult' which should contain  
 one of the constants nsIAutoCompleteResult.RESULT_* indicating the success  
 of the search.  
   
-
+</code>
 ### setTypeAheadResult(aHidden) ###
-  
+<code>  
 A writer for the readonly attribute 'typeAheadResult', typically set  
 because a result is only intended for type-ahead completion.  
   
-
+</code>
 ### appendMatch(aValue, aComment, aImage, aStyle, aFinalCompleteValue) ###
-  
+<code>  
 Appends a match consisting of the given value, comment, image, style and  
 the value to use for defaultIndex completion.  
 @param aValue  
@@ -61,7 +61,7 @@ the value to use for defaultIndex completion.
        Value used when the user confirms selecting this match. If not  
        provided, aValue will be used.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -100,6 +100,7 @@ the value to use for defaultIndex completion.
 </table>
 
 ### setListener(aListener) ###
-  
+<code>  
 Sets a listener for changes in the result.  
   
+</code>

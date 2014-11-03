@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMHTMLMediaElement #
-  
+<code>  
 The nsIDOMHTMLMediaElement interface is an interface to be implemented by the HTML  
 <audio> and <video> elements.  
   
@@ -15,7 +15,7 @@ http://www.whatwg.org/specs/web-apps/current-work/#htmlmediaelement
   
 @status UNDER_DEVELOPMENT  
   
-
+</code>
 ## Methods ##
 
 ### load() ###

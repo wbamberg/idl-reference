@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIMozIconURI #
-  
+<code>  
 nsIIconURI  
   
 This interface derives from nsIURI, to provide additional information  
@@ -39,7 +39,7 @@ Legal parameter value pairs are listed below:
   Values:      <mime-type>  
   Description: The mime type we want an icon for. This is ignored by stock images.  
   
-
+</code>
 ## Attributes ##
 
 ### iconURL ###

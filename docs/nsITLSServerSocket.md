@@ -10,25 +10,25 @@ layout: default
 ## Methods ##
 
 ### setSessionCache(aSessionCache) ###
-  
+<code>  
 setSessionCache  
   
 Whether the server should use a session cache.  Defaults to true.  This  
 should be set before calling |asyncListen| if you wish to change the  
 default.  
   
-
+</code>
 ### setSessionTickets(aSessionTickets) ###
-  
+<code>  
 setSessionTickets  
   
 Whether the server should support session tickets.  Defaults to true.  This  
 should be set before calling |asyncListen| if you wish to change the  
 default.  
   
-
+</code>
 ### setRequestClientCertificate(aRequestClientCert) ###
-  
+<code>  
 setRequestClientCertificate  
   
 Whether the server should request and/or require a client auth certificate  
@@ -36,7 +36,7 @@ from the client.  Defaults to REQUEST_NEVER.  See the possible options
 above.  This should be set before calling |asyncListen| if you wish to  
 change the default.  
   
-
+</code>
 ## Attributes ##
 
 ### serverCert ###

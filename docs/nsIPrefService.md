@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIPrefService #
-  
+<code>  
 The nsIPrefService interface is the main entry point into the back end  
 preferences management library. The preference service is directly  
 responsible for the management of the preferences files and also facilitates  
@@ -15,11 +15,11 @@ of the preferences themselves.
   
 @see nsIPrefBranch  
   
-
+</code>
 ## Methods ##
 
 ### readUserPrefs(aFile) ###
-  
+<code>  
 Called to read in the preferences specified in a user preference file.  
   
 @param aFile The file to be read.  
@@ -33,7 +33,7 @@ file(s) [prefs.js, user.js] will be read and processed.
 @see savePrefFile  
 @see nsIFile  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -47,20 +47,20 @@ file(s) [prefs.js, user.js] will be read and processed.
 </table>
 
 ### resetPrefs() ###
-  
+<code>  
 Called to completely flush and re-initialize the preferences system.  
   
 @throws Error The preference service failed to restart correctly.  
   
-
+</code>
 ### resetUserPrefs() ###
-  
+<code>  
 Called to reset all preferences with user set values back to the  
 application default values.  
   
-
+</code>
 ### savePrefFile(aFile) ###
-  
+<code>  
 Called to write current preferences state to a file.  
   
 @param aFile The file to be written.  
@@ -74,7 +74,7 @@ written out to the current preferences file (usually prefs.js.)
 @see readUserPrefs  
 @see nsIFile  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -88,7 +88,7 @@ written out to the current preferences file (usually prefs.js.)
 </table>
 
 ### getBranch(aPrefRoot) ###
-  
+<code>  
 Call to get a Preferences "Branch" which accesses user preference data.  
 Using a Set method on this object will always create or set a user  
 preference value. When using a Get method a user set value will be  
@@ -106,7 +106,7 @@ returned if one exists, otherwise a default value will be returned.
   
 @see getDefaultBranch  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -137,7 +137,7 @@ returned if one exists, otherwise a default value will be returned.
 </table>
 
 ### getDefaultBranch(aPrefRoot) ###
-  
+<code>  
 Call to get a Preferences "Branch" which accesses only the default   
 preference data. Using a Set method on this object will always create or  
 set a default preference value. When using a Get method a default value  
@@ -160,7 +160,7 @@ make sense when applied to user set preferences.
   
 @see getBranch  
   
-
+</code>
 #### Parameters ####
 
 <table>

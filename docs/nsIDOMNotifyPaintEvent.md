@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIDOMNotifyPaintEvent #
-  
+<code>  
 The nsIDOMNotifyPaintEvent interface is used for the MozDOMAfterPaint  
 event, which fires at a window when painting has happened in  
 that window.  
   
-
+</code>
 ## Attributes ##
 
 ### clientRects ###

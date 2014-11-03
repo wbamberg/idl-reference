@@ -6,23 +6,24 @@ layout: default
 </div>
 
 # nsIMacWebAppUtils #
-  
+<code>  
 Allow MozApps API to locate and manipulate natively installed apps  
   
-
+</code>
 ## Methods ##
 
 ### pathForAppWithIdentifier(bundleIdentifier) ###
-  
+<code>  
 Find the path for an app with the given signature.  
   
-
+</code>
 ### launchAppWithIdentifier(bundleIdentifier) ###
-  
+<code>  
 Launch the app with the given identifier, if it exists.  
   
-
+</code>
 ### trashApp(path, callback) ###
-  
+<code>  
 Move the app from the given directory to the Trash.  
   
+</code>

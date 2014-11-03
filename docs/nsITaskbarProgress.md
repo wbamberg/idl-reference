@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsITaskbarProgress #
-  
+<code>  
 Starting in Windows 7, applications can display a progress notification in  
 the taskbar. This class wraps around the native functionality to do this.  
   
-
+</code>
 ## Methods ##
 
 ### setProgressState(state, currentValue, maxValue) ###
-  
+<code>  
 Sets the taskbar progress state and value for this window. The currentValue  
 and maxValue parameters are optional and should be supplied when |state|  
 is one of STATE_NORMAL, STATE_ERROR or STATE_PAUSED.  
@@ -23,7 +23,7 @@ is one of STATE_NORMAL, STATE_ERROR or STATE_PAUSED.
         STATE_INDETERMINATE, and either currentValue or maxValue is not 0.  
 @throws NS_ERROR_ILLEGAL_VALUE if currentValue is greater than maxValue.  
   
-
+</code>
 ## Constants ##
 
 ### STATE_NO_PROGRESS ###

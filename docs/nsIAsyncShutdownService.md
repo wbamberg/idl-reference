@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIAsyncShutdownService #
-  
+<code>  
 A service that allows registering shutdown-time dependencies.  
   
-
+</code>
 ## Methods ##
 
 ### makeBarrier(aName) ###
-  
+<code>  
 Create a new barrier.  
   
 By convention, the name should respect the following format:  
@@ -23,7 +23,7 @@ e.g.
   
 This attribute is uploaded as part of crash reports.  
   
-
+</code>
 ## Attributes ##
 
 ### profileBeforeChange ###

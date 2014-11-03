@@ -10,10 +10,10 @@ layout: default
 ## Methods ##
 
 ### FindInterfaceWithMember(nameID) ###
-  
+<code>  
 These are here as an aid to nsIXPCScriptable implementors  
   
-
+</code>
 ### FindInterfaceWithName(nameID) ###
 
 ### HasNativeMember(name) ###

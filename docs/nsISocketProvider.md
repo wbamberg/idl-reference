@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsISocketProvider #
-  
+<code>  
 nsISocketProvider  
   
-
+</code>
 ## Methods ##
 
 ### newSocket(aFamily, aHost, aPort, aProxyHost, aProxyPort, aFlags, aFileDesc, aSecurityInfo) ###
-  
+<code>  
 newSocket  
   
 @param aFamily  
@@ -34,7 +34,7 @@ newSocket
        Any security info that should be associated with aFileDesc.  This  
        object typically implements nsITransportSecurityInfo.  
   
-
+</code>
 #### Parameters ####
 
 <table>
@@ -91,7 +91,7 @@ newSocket
 </table>
 
 ### addToSocket(aFamily, aHost, aPort, aProxyHost, aProxyPort, aFlags, aFileDesc, aSecurityInfo) ###
-  
+<code>  
 addToSocket  
   
 This function is called to allow the socket provider to layer a  
@@ -101,7 +101,7 @@ proxy.
 Parameters are the same as newSocket with the exception of aFileDesc,  
 which is an in-param instead.  
   
-
+</code>
 ## Constants ##
 
 ### PROXY_RESOLVES_HOST ###

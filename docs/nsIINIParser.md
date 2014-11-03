@@ -10,16 +10,17 @@ layout: default
 ## Methods ##
 
 ### getSections() ###
-  
+<code>  
 Enumerates the [section]s available in the INI file.  
   
-
+</code>
 ### getKeys(aSection) ###
-  
+<code>  
 Enumerates the keys available within a section.  
   
-
+</code>
 ### getString(aSection, aKey) ###
-  
+<code>  
 Get the value of a string for a particular section and key.  
   
+</code>
