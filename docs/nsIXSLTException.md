@@ -10,12 +10,11 @@ layout: default
 ## Attributes ##
 
 ### styleNode ###
-<pre>  
+  
 The node in the stylesheet that triggered the exception.  
   
-</pre>
+
 ### sourceNode ###
-<pre>  
+  
 The context node, may be null  
   
-</pre>

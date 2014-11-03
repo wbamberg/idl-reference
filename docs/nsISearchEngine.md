@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getSubmission(data, responseType, purpose) ###
-<pre>  
+  
 Gets a nsISearchSubmission object that contains information about what to  
 send to the search engine, including the URI and postData, if applicable.  
   
@@ -31,7 +31,7 @@ send to the search engine, including the URI and postData, if applicable.
          to send to the search engine.  If no submission can be  
          obtained for the given responseType, returns null.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -76,7 +76,7 @@ send to the search engine, including the URI and postData, if applicable.
 </table>
 
 ### addParam(name, value, responseType) ###
-<pre>  
+  
 Adds a parameter to the search engine's submission data. This should only  
 be called on engines created via addEngineWithDetails.  
   
@@ -97,7 +97,7 @@ be called on engines created via addEngineWithDetails.
 @throws NS_ERROR_FAILURE if the search engine is read-only.  
 @throws NS_ERROR_INVALID_ARG if name or value are null.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -128,7 +128,7 @@ be called on engines created via addEngineWithDetails.
 </table>
 
 ### supportsResponseType(responseType) ###
-<pre>  
+  
 Determines whether the engine can return responses in the given  
 MIME type.  Returns true if the engine spec has a URL with the  
 given responseType, false otherwise.  
@@ -136,7 +136,7 @@ given responseType, false otherwise.
 @param responseType  
        The MIME type to check for  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -150,7 +150,7 @@ given responseType, false otherwise.
 </table>
 
 ### getIconURLBySize(width, height) ###
-<pre>  
+  
 Returns a string with the URL to an engine's icon matching both width and  
 height. Returns null if icon with specified dimensions is not found.  
   
@@ -159,7 +159,7 @@ height. Returns null if icon with specified dimensions is not found.
 @param height  
        Height of the requested icon.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -179,15 +179,15 @@ height. Returns null if icon with specified dimensions is not found.
 </table>
 
 ### getIcons() ###
-<pre>  
+  
 Gets an array of all available icons. Each entry is an object with  
 width, height and url properties. width and height are numeric and  
 represent the icon's dimensions. url is a string with the URL for  
 the icon.  
   
-</pre>
+
 ### speculativeConnect(options) ###
-<pre>  
+  
 Opens a speculative connection to the engine's search URI  
 (and suggest URI, if different) to reduce request latency  
   
@@ -198,7 +198,7 @@ Opens a speculative connection to the engine's search URI
 @throws NS_ERROR_INVALID_ARG if options is omitted or lacks required  
         elemeents  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -213,7 +213,7 @@ Opens a speculative connection to the engine's search URI
 </table>
 
 ### getResultDomain(responseType) ###
-<pre>  
+  
 Gets a string representing the hostname from which search results for a  
 given responseType are returned, minus the leading "www." (if present).  
 This can be specified as an url attribute in the engine description file,  
@@ -224,7 +224,7 @@ but will default to host from the <Url>'s template otherwise.
   
 @return the resultDomain for the given responseType.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -252,61 +252,61 @@ but will default to host from the <Url>'s template otherwise.
 ## Attributes ##
 
 ### alias ###
-<pre>  
+  
 An optional shortcut alias for the engine.  
 When non-null, this is a unique identifier.  
   
-</pre>
+
 ### description ###
-<pre>  
+  
 A text description describing the engine.  
   
-</pre>
+
 ### hidden ###
-<pre>  
+  
 Whether the engine should be hidden from the user.  
   
-</pre>
+
 ### iconURI ###
-<pre>  
+  
 A nsIURI corresponding to the engine's icon, stored locally. May be null.  
   
-</pre>
+
 ### name ###
-<pre>  
+  
 The display name of the search engine. This is a unique identifier.  
   
-</pre>
+
 ### searchForm ###
-<pre>  
+  
 A URL string pointing to the engine's search form.  
   
-</pre>
+
 ### type ###
-<pre>  
+  
 The search engine type.  
   
-</pre>
+
 ### identifier ###
-<pre>  
+  
 An optional unique identifier for this search engine within the context of  
 the distribution, as provided by the distributing entity.  
   
-</pre>
+
 ## Constants ##
 
 ### TYPE_MOZSEARCH ###
-<pre>  
+  
 Supported search engine types.  
   
-</pre>
+
 ### TYPE_SHERLOCK ###
 
 ### TYPE_OPENSEARCH ###
 
 ### DATA_XML ###
-<pre>  
+  
 Supported search engine data types.  
   
-</pre>
+
 ### DATA_TEXT ###

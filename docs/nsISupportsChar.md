@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsISupportsChar #
-<pre>  
+  
 Scriptable storage for single character values  
 (often used to store an ASCII character)  
   
-</pre>
+
 ## Methods ##
 
 ### toString() ###

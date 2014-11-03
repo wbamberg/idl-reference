@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsICacheService #
-<pre>  
+  
 @deprecated  
   
 IMPORTANT NOTE: THIS INTERFACE IS NO LONGER SUPPORTED AND PLANNED TO BE  
 REMOVED SOON. WE STRONGLY ENCORAGE TO MIGRATE THE EXISTING CODE AND FOR  
 THE NEW CODE USE ONLY THE NEW HTTP CACHE API IN netwerk/cache2/.  
   
-</pre>
+
 ## Methods ##
 
 ### createSession(clientID, storagePolicy, streamBased) ###
-<pre>  
+  
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.  
   
 Create a cache session  
@@ -39,7 +39,7 @@ equivalent.
   based cache entry can only have a storage policy of STORE_IN_MEMORY.  
 @return new cache session.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -82,14 +82,14 @@ equivalent.
 </table>
 
 ### visitEntries(visitor) ###
-<pre>  
+  
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.  
   
 Visit entries stored in the cache.  Used to implement about:cache.  
   
-</pre>
+
 ### evictEntries(storagePolicy) ###
-<pre>  
+  
 @throws NS_ERROR_NOT_IMPLEMENTED when the cache v2 is prefered to use.  
   
 Evicts all entries in all devices implied by the storage policy.  
@@ -97,11 +97,10 @@ Evicts all entries in all devices implied by the storage policy.
 @note This function may evict some items but will throw if it fails to evict  
       everything.  
   
-</pre>
+
 ## Attributes ##
 
 ### cacheIOTarget ###
-<pre>  
+  
 Event target which is used for I/O operations  
   
-</pre>

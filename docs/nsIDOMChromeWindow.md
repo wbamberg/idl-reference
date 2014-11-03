@@ -22,19 +22,19 @@ layout: default
 ### restore() ###
 
 ### notifyDefaultButtonLoaded(defaultButton) ###
-<pre>  
+  
 Notify a default button is loaded on a dialog or a wizard.  
 defaultButton is the default button.  
   
-</pre>
+
 ### getGroupMessageManager(group) ###
-<pre>  
+  
 Returns the message manager identified by the given group name that  
 manages all frame loaders belonging to that group.  
   
-</pre>
+
 ### beginWindowMove(mouseDownEvent, panel) ###
-<pre>  
+  
 On some operating systems, we must allow the window manager to  
 handle window dragging. This function tells the window manager to  
 start dragging the window. This function will fail unless called  
@@ -45,18 +45,18 @@ The optional panel argument should be set when moving a panel.
 Returns NS_ERROR_NOT_IMPLEMENTED (and thus throws in JS) if the OS  
 doesn't support this.  
   
-</pre>
+
 ## Attributes ##
 
 ### windowState ###
 
 ### browserDOMWindow ###
-<pre>  
+  
 browserDOMWindow provides access to yet another layer of  
 utility functions implemented by chrome script. It will be null  
 for DOMWindows not corresponding to browsers.  
   
-</pre>
+
 ### messageManager ###
 
 ## Constants ##

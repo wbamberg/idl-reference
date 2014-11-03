@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### init(parent, title, mode) ###
-<pre>  
+  
 Initialize the file picker widget.  The file picker is not valid until this  
 method is called.  
   
@@ -20,7 +20,7 @@ method is called.
 @param      mode     load, save, or get folder  
   
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -47,13 +47,13 @@ method is called.
 </table>
 
 ### appendFilters(filterMask) ###
-<pre>  
+  
 Append to the  filter list with things from the predefined list  
   
 @param      filters  mask of filters i.e. (filterAll | filterHTML)  
   
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -67,14 +67,14 @@ Append to the  filter list with things from the predefined list
 </table>
 
 ### appendFilter(title, filter) ###
-<pre>  
+  
 Add a filter  
   
 @param      title    name of the filter  
 @param      filter   extensions to filter -- semicolon and space separated  
   
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -94,13 +94,13 @@ Add a filter
 </table>
 
 ### show() ###
-<pre>  
+  
 Show File Dialog. The dialog is displayed modally.  
   
 @return returnOK if the user selects OK, returnCancel if the user selects cancel  
   
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -113,94 +113,94 @@ Show File Dialog. The dialog is displayed modally.
 </table>
 
 ### open(aFilePickerShownCallback) ###
-<pre>  
+  
 Opens the file dialog asynchrounously.  
 The passed in object's done method will be called upon completion.  
   
-</pre>
+
 ## Attributes ##
 
 ### defaultString ###
-<pre>  
+  
 The filename that should be suggested to the user as a default. This should  
 include the extension.  
   
 @throws NS_ERROR_FAILURE on attempts to get  
   
-</pre>
+
 ### defaultExtension ###
-<pre>  
+  
 The extension that should be associated with files of the type we  
 want to work with.  On some platforms, this extension will be  
 automatically appended to filenames the user enters, if needed.    
   
-</pre>
+
 ### filterIndex ###
-<pre>  
+  
 The filter which is currently selected in the File Picker dialog  
   
 @return Returns the index (0 based) of the selected filter in the filter list.   
   
-</pre>
+
 ### displayDirectory ###
-<pre>  
+  
 Set the directory that the file open/save dialog initially displays  
   
 @param      displayDirectory  the name of the directory  
   
   
-</pre>
+
 ### file ###
-<pre>  
+  
 Get the nsIFile for the file or directory.  
   
 @return Returns the file currently selected  
   
-</pre>
+
 ### fileURL ###
-<pre>  
+  
 Get the nsIURI for the file or directory.  
   
 @return Returns the file currently selected  
   
-</pre>
+
 ### files ###
-<pre>  
+  
 Get the enumerator for the selected files  
 only works in the modeOpenMultiple mode  
   
 @return Returns the files currently selected  
   
-</pre>
+
 ### domfile ###
-<pre>  
+  
 Get the nsIDOMFile for the file.  
   
 @return Returns the file currently selected as File  
   
-</pre>
+
 ### domfiles ###
-<pre>  
+  
 Get the enumerator for the selected files  
 only works in the modeOpenMultiple mode  
   
 @return Returns the files currently selected as Files  
   
-</pre>
+
 ### addToRecentDocs ###
-<pre>  
+  
 Controls whether the chosen file(s) should be added to the system's recent  
 documents list. This attribute will be ignored if the system has no "Recent  
 Docs" concept, or if the application is in private browsing mode (in which  
 case the file will not be added). Defaults to true.  
   
-</pre>
+
 ### mode ###
-<pre>  
+  
 The picker's mode, as set by the 'mode' argument passed to init()  
 (one of the modeOpen et. al. constants specified above).  
   
-</pre>
+
 ## Constants ##
 
 ### modeOpen ###

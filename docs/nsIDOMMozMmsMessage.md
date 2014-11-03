@@ -10,26 +10,26 @@ layout: default
 ## Attributes ##
 
 ### type ###
-<pre>  
+  
 |type| is always "mms".  
   
-</pre>
+
 ### id ###
 
 ### threadId ###
 
 ### iccId ###
-<pre>  
+  
 Integrated Circuit Card Identifier.  
   
 Will be null if ICC is not available.  
   
-</pre>
+
 ### delivery ###
-<pre>  
+  
 Should be "not-downloaded", "received", "sending", "sent" or "error".  
   
-</pre>
+
 ### deliveryInfo ###
 
 ### sender ###

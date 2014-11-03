@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # mozIStorageVacuumParticipant #
-<pre>  
+  
 This interface contains the information that the Storage service needs to  
 vacuum a database.  This interface is created as a service through the  
 category manager with the category "vacuum-participant".  
 Please see https://developer.mozilla.org/en/mozIStorageVacuumParticipant for  
 more information.  
   
-</pre>
+
 ## Methods ##
 
 ### onBeginVacuum() ###
-<pre>  
+  
 Notifies when a vacuum operation begins.  Listeners should avoid using the  
 database till onEndVacuum is received.  
   
@@ -29,7 +29,7 @@ database till onEndVacuum is received.
       "heavy-io-task" notification through the observer service with the  
       data argument being either "vacuum-begin" or "vacuum-end".  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -44,13 +44,13 @@ database till onEndVacuum is received.
 </table>
 
 ### onEndVacuum(aSucceeded) ###
-<pre>  
+  
 Notifies when a vacuum operation ends.  
   
 @param aSucceeded  
        reports if the vacuum succeeded or failed.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -66,7 +66,7 @@ Notifies when a vacuum operation ends.
 ## Attributes ##
 
 ### expectedDatabasePageSize ###
-<pre>  
+  
 The expected page size in bytes for the database.  The vacuum manager will  
 try to correct the page size during idle based on this value.  
   
@@ -75,9 +75,8 @@ try to correct the page size during idle based on this value.
 @note Valid page size values are powers of 2 between 512 and 65536.  
       The suggested value is mozIStorageConnection::defaultPageSize.  
   
-</pre>
+
 ### databaseConnection ###
-<pre>  
+  
 Connection to the database file to be vacuumed.  
   
-</pre>

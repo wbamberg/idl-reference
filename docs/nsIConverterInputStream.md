@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIConverterInputStream #
-<pre>  
+  
 A unichar input stream that wraps an input stream.  
 This allows reading unicode strings from a stream, automatically converting  
 the bytes from a selected character encoding.  
   
-</pre>
+
 ## Methods ##
 
 ### init(aStream, aCharset, aBufferSize, aReplacementChar) ###
-<pre>  
+  
 Initialize this stream.  
 @param aStream   
        The underlying stream to read from.  
@@ -30,7 +30,7 @@ Initialize this stream.
        A value of 0x0000 will cause an exception to be thrown if unknown  
        byte sequences are encountered in the stream.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -68,7 +68,6 @@ Initialize this stream.
 ## Constants ##
 
 ### DEFAULT_REPLACEMENT_CHARACTER ###
-<pre>  
+  
 Default replacement char value, U+FFFD REPLACEMENT CHARACTER.  
   
-</pre>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIStreamConverter #
-<pre>  
+  
 nsIStreamConverter provides an interface to implement when you have code  
 that converts data from one type to another.  
   
@@ -48,11 +48,11 @@ file):
 @author Jud Valeski  
 @see nsIStreamConverterService  
   
-</pre>
+
 ## Methods ##
 
 ### convert(aFromStream, aFromType, aToType, aCtxt) ###
-<pre>  
+  
 <b>SYNCRONOUS VERSION</b>  
 Converts a stream of one type, to a stream of another type.  
   
@@ -68,7 +68,7 @@ Use this method when you have a stream you want to convert.
                      implementation will converter data on demand rather than  
                      buffering the converted data until it is used.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -115,7 +115,7 @@ Use this method when you have a stream you want to convert.
 </table>
 
 ### asyncConvertData(aFromType, aToType, aListener, aCtxt) ###
-<pre>  
+  
 <b>ASYNCRONOUS VERSION</b>  
 Converts data arriving via the converter's nsIStreamListener::OnDataAvailable()   
 method from one type to another, pushing the converted data out to the caller   
@@ -130,7 +130,7 @@ asynchronously.
 @param aCtxt         Either an opaque context, or a converter specific context  
                      (implementation specific).  
   
-</pre>
+
 #### Parameters ####
 
 <table>

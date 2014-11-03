@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIHelperAppLauncherDialog #
-<pre>  
+  
 This interface is used to display a confirmation dialog before  
 launching a "helper app" to handle content not handled by  
 Mozilla.  
@@ -19,11 +19,11 @@ The dialog is shown non-modally.  The implementation of the dialog
 will access methods of the nsIHelperAppLauncher passed in to show()  
 in order to cause a "save to disk" or "open using" action.  
   
-</pre>
+
 ## Methods ##
 
 ### show(aLauncher, aWindowContext, aReason) ###
-<pre>  
+  
 Show confirmation dialog for launching application (or "save to  
 disk") for content specified by aLauncher.  
   
@@ -36,7 +36,7 @@ disk") for content specified by aLauncher.
        shown. Implementors should treat unknown reasons like  
        REASON_CANTHANDLE.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -64,7 +64,7 @@ disk") for content specified by aLauncher.
 </table>
 
 ### promptForSaveToFile(aLauncher, aWindowContext, aDefaultFileName, aSuggestedFileExtension, aForcePrompt) ###
-<pre>  
+  
 Invoke a save-to-file dialog instead of the full fledged helper app dialog.  
 Returns the a nsIFile for the file name/location selected.  
   
@@ -84,7 +84,7 @@ Returns the a nsIFile for the file name/location selected.
 @throws NS_ERROR_NOT_AVAILABLE if the async version of this function  
                                should be used.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -124,7 +124,7 @@ Returns the a nsIFile for the file name/location selected.
 </table>
 
 ### promptForSaveToFileAsync(aLauncher, aWindowContext, aDefaultFileName, aSuggestedFileExtension, aForcePrompt) ###
-<pre>  
+  
 Async invoke a save-to-file dialog instead of the full fledged helper app  
 dialog. When the file is chosen (or the dialog is closed), the callback  
 in aLauncher (aLauncher.saveDestinationAvailable) is called with the  
@@ -143,7 +143,7 @@ selected file.
        name/location, otherwise perferences may control if the user is  
        prompted.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -185,19 +185,18 @@ selected file.
 ## Constants ##
 
 ### REASON_CANTHANDLE ###
-<pre>  
+  
 This request is passed to the helper app dialog because Gecko can not  
 handle content of this type.  
   
-</pre>
+
 ### REASON_SERVERREQUEST ###
-<pre>  
+  
 The server requested external handling.  
   
-</pre>
+
 ### REASON_TYPESNIFFED ###
-<pre>  
+  
 Gecko detected that the type sent by the server (e.g. text/plain) does  
 not match the actual type.  
   
-</pre>

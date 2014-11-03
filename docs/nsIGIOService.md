@@ -10,8 +10,8 @@ layout: default
 ## Methods ##
 
 ### getMimeTypeFromExtension(extension) ###
-<pre>MIME registry methods ***/  
-</pre>
+MIME registry methods ***/  
+
 ### getAppForURIScheme(aURIScheme) ###
 
 ### getAppForMimeType(mimeType) ###
@@ -21,8 +21,8 @@ layout: default
 ### getDescriptionForMimeType(mimeType) ###
 
 ### showURI(uri) ###
-<pre>Misc. methods ***/  
-</pre>
+Misc. methods ***/  
+
 ### showURIForInput(uri) ###
 
 ### orgFreedesktopFileManager1ShowItems(path) ###

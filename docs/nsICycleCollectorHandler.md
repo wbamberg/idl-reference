@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsICycleCollectorHandler #
-<pre>  
+  
 Interfaces for observing the cycle collector's work, both from C++ and  
 from JavaScript.  
   
@@ -24,7 +24,7 @@ nsICycleCollectorListener that logs the cycle collector's mumblings and then
 replays them later to an nsICycleCollectorHandler --- which *can* be  
 implemented in JS.  
   
-</pre><pre>  
+  
 The interface JS code should implement to receive annotations logged by an  
 @mozilla.org/cycle-collector-logger;1 instance. Pass an instance of this to  
 the logger's 'processNext' method.  
@@ -32,7 +32,7 @@ the logger's 'processNext' method.
 The methods are a subset of those in nsICycleCollectorListener; see the  
 descriptions there.  
   
-</pre>
+
 ## Methods ##
 
 ### noteRefCountedObject(aAddress, aRefCount, aObjectDescription) ###

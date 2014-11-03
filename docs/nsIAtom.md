@@ -10,22 +10,21 @@ layout: default
 ## Methods ##
 
 ### toString() ###
-<pre>  
+  
 Get the Unicode or UTF8 value for the string  
   
-</pre>
+
 ### toUTF8String() ###
 
 ### equals(aString) ###
-<pre>  
+  
 Compare the atom to a specific string value  
 Note that this will NEVER return/throw an error condition.  
   
-</pre>
+
 ### equalsUTF8(aString) ###
 
 ### isStaticAtom() ###
-<pre>  
+  
 Returns true if the atom is static and false otherwise.  
   
-</pre>

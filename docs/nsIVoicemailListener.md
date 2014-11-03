@@ -10,13 +10,12 @@ layout: default
 ## Methods ##
 
 ### notifyStatusChanged(provider) ###
-<pre>  
+  
 Called when a voicemail status (hasMessages, messageCount, returnNumber,  
 returnMessage) changed.  
   
-</pre>
+
 ### notifyInfoChanged(provider) ###
-<pre>  
+  
 Called when a voicemail info (number, displayName) changed.  
   
-</pre>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINetUtil #
-<pre>  
+  
 nsINetUtil provides various network-related utility methods.  
   
-</pre>
+
 ## Methods ##
 
 ### parseContentType(aTypeHeader, aCharset, aHadCharset) ###
-<pre>  
+  
 Parse a content-type header and return the content type and  
 charset (if any).  
   
@@ -23,7 +23,7 @@ charset (if any).
 @param [out] aHadCharset whether a charset was explicitly specified.  
 @return the MIME type specified in the header, in lower-case.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ charset (if any).
 </table>
 
 ### protocolHasFlags(aURI, aFlag) ###
-<pre>  
+  
 Test whether the given URI's handler has the given protocol flags.  
   
 @param aURI the URI in question  
@@ -70,7 +70,7 @@ Test whether the given URI's handler has the given protocol flags.
 @return whether the protocol handler for aURI has all the flags  
         in aFlags.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -102,7 +102,7 @@ Test whether the given URI's handler has the given protocol flags.
 </table>
 
 ### URIChainHasFlags(aURI, aFlags) ###
-<pre>  
+  
 Test whether the protocol handler for this URI or that for any of  
 its inner URIs has the given protocol flags.  This will QI aURI to  
 nsINestedURI and walk the nested URI chain.  
@@ -113,7 +113,7 @@ nsINestedURI and walk the nested URI chain.
 @return whether any of the protocol handlers involved have all the flags  
         in aFlags.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -145,27 +145,27 @@ nsINestedURI and walk the nested URI chain.
 </table>
 
 ### toImmutableURI(aURI) ###
-<pre>  
+  
 Take aURI and produce an immutable version of it for the caller.  If aURI  
 is immutable this will be aURI itself; otherwise this will be a clone,  
 marked immutable if possible.  Passing null to this method is allowed; in  
 that case it will return null.  
   
-</pre>
+
 ### newSimpleNestedURI(aURI) ###
-<pre>  
+  
 Create a simple nested URI using the result of  
 toImmutableURI on the passed-in aURI which may not be null.  
 Note: The return URI will not have had its spec set yet.  
   
-</pre>
+
 ### escapeString(aString, aEscapeType) ###
-<pre>  
+  
 escape a string with %00-style escaping  
   
-</pre>
+
 ### escapeURL(aStr, aFlags) ###
-<pre>  
+  
 %XX-Escape invalid chars in a URL segment.   
   
 @param aStr the URL to be escaped  
@@ -174,7 +174,7 @@ escape a string with %00-style escaping
 @return the escaped string (the string itself if escaping did not happen)  
   
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -205,7 +205,7 @@ escape a string with %00-style escaping
 </table>
 
 ### unescapeString(aStr, aFlags) ###
-<pre>  
+  
 Expands URL escape sequences  
   
 @param aStr the URL to be unescaped  
@@ -214,7 +214,7 @@ Expands URL escape sequences
               unescaped  
 @return unescaped string  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -247,7 +247,7 @@ Expands URL escape sequences
 </table>
 
 ### extractCharsetFromContentType(aTypeHeader, aCharset, aCharsetStart, aCharsetEnd) ###
-<pre>  
+  
 Extract the charset parameter location and value from a content-type  
 header.  
   
@@ -269,7 +269,7 @@ header.
 cases when parseContentType would claim to have a charset, if the type  
 that won out does not have a charset parameter specified.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -325,70 +325,69 @@ that won out does not have a charset parameter specified.
 ## Constants ##
 
 ### ESCAPE_ALL ###
-<pre> Escape every character with its %XX-escaped equivalent */  
-</pre>
+ Escape every character with its %XX-escaped equivalent */  
+
 ### ESCAPE_XALPHAS ###
-<pre> Leave alphanumeric characters intact and %XX-escape all others */  
-</pre>
+ Leave alphanumeric characters intact and %XX-escape all others */  
+
 ### ESCAPE_XPALPHAS ###
-<pre> Leave alphanumeric characters intact, convert spaces to '+',  
+ Leave alphanumeric characters intact, convert spaces to '+',  
 %XX-escape all others */  
-</pre>
+
 ### ESCAPE_URL_PATH ###
-<pre> Leave alphanumeric characters and forward slashes intact,  
+ Leave alphanumeric characters and forward slashes intact,  
 %XX-escape all others */  
-</pre>
+
 ### ESCAPE_URL_SCHEME ###
-<pre> %XX-escape URL scheme */  
-</pre>
+ %XX-escape URL scheme */  
+
 ### ESCAPE_URL_USERNAME ###
-<pre> %XX-escape username in the URL */  
-</pre>
+ %XX-escape username in the URL */  
+
 ### ESCAPE_URL_PASSWORD ###
-<pre> %XX-escape password in the URL */  
-</pre>
+ %XX-escape password in the URL */  
+
 ### ESCAPE_URL_HOST ###
-<pre> %XX-escape URL host */  
-</pre>
+ %XX-escape URL host */  
+
 ### ESCAPE_URL_DIRECTORY ###
-<pre> %XX-escape URL directory */  
-</pre>
+ %XX-escape URL directory */  
+
 ### ESCAPE_URL_FILE_BASENAME ###
-<pre> %XX-escape file basename in the URL */  
-</pre>
+ %XX-escape file basename in the URL */  
+
 ### ESCAPE_URL_FILE_EXTENSION ###
-<pre> %XX-escape file extension in the URL */  
-</pre>
+ %XX-escape file extension in the URL */  
+
 ### ESCAPE_URL_PARAM ###
-<pre> %XX-escape URL parameters */  
-</pre>
+ %XX-escape URL parameters */  
+
 ### ESCAPE_URL_QUERY ###
-<pre> %XX-escape URL query */  
-</pre>
+ %XX-escape URL query */  
+
 ### ESCAPE_URL_REF ###
-<pre> %XX-escape URL ref */  
-</pre>
+ %XX-escape URL ref */  
+
 ### ESCAPE_URL_FILEPATH ###
-<pre> %XX-escape URL path - same as escaping directory, basename and extension */  
-</pre>
+ %XX-escape URL path - same as escaping directory, basename and extension */  
+
 ### ESCAPE_URL_MINIMAL ###
-<pre> %XX-escape scheme, username, password, host, path, params, query and ref */  
-</pre>
+ %XX-escape scheme, username, password, host, path, params, query and ref */  
+
 ### ESCAPE_URL_FORCED ###
-<pre> Force %XX-escaping of already escaped sequences */  
-</pre>
+ Force %XX-escaping of already escaped sequences */  
+
 ### ESCAPE_URL_ONLY_ASCII ###
-<pre> Skip non-ascii octets, %XX-escape all others */  
-</pre>
+ Skip non-ascii octets, %XX-escape all others */  
+
 ### ESCAPE_URL_ONLY_NONASCII ###
-<pre>   
+   
 Skip graphic octets (0x20-0x7E) when escaping  
 Skips all ASCII octets (0x00-0x7F) when unescaping   
   
-</pre>
+
 ### ESCAPE_URL_COLON ###
-<pre> Force %XX-escape of colon */  
-</pre>
+ Force %XX-escape of colon */  
+
 ### ESCAPE_URL_SKIP_CONTROL ###
-<pre> Skip C0 and DEL from unescaping */  
-</pre>
+ Skip C0 and DEL from unescaping */  

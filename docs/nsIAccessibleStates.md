@@ -10,10 +10,10 @@ layout: default
 ## Constants ##
 
 ### STATE_UNAVAILABLE ###
-<pre>  
+  
 MSAA State flags - used for bitfield. More than 1 allowed.  
   
-</pre>
+
 ### STATE_SELECTED ###
 
 ### STATE_FOCUSED ###
@@ -83,11 +83,11 @@ MSAA State flags - used for bitfield. More than 1 allowed.
 ### STATE_CHECKABLE ###
 
 ### EXT_STATE_SUPPORTS_AUTOCOMPLETION ###
-<pre>  
+  
 Extended state flags (for now non-MSAA, for Java and Gnome/ATK support)  
 "Extended state flags" has separate value space from "MSAA State flags".  
   
-</pre>
+
 ### EXT_STATE_DEFUNCT ###
 
 ### EXT_STATE_SELECTABLE_TEXT ###

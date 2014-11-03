@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIJumpListItem #
-<pre>  
+  
 Implements Win7 Taskbar jump list item interfaces.  
   
 Note to consumers: it's reasonable to expect we'll need support for other types  
@@ -15,11 +15,11 @@ create the specific interface here, add an implementation class to WinJumpListIt
 and add support to addListBuild & removed items processing.  
   
   
-</pre>
+
 ## Methods ##
 
 ### equals(item) ###
-<pre>  
+  
 Compare this item to another.  
   
 Compares the type and other properties specific to this item's  
@@ -29,14 +29,14 @@ separator: type
 link: type, uri, title  
 shortcut: type, handler app  
   
-</pre>
+
 ## Attributes ##
 
 ### type ###
-<pre>  
+  
 Retrieves the jump list item type.  
   
-</pre>
+
 ## Constants ##
 
 ### JUMPLIST_ITEM_EMPTY ###

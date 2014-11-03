@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### isAddonBlocklisted(addon, appVersion, toolkitVersion) ###
-<pre>  
+  
 Determine if an item is blocklisted  
 @param   addon  
          The addon item to be checked.  
@@ -25,7 +25,7 @@ Determine if an item is blocklisted
 @returns true if the item is compatible with this version of the  
          application or this version of the toolkit, false, otherwise.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -67,7 +67,7 @@ Determine if an item is blocklisted
 </table>
 
 ### getAddonBlocklistState(addon, appVersion, toolkitVersion) ###
-<pre>  
+  
 Determine the blocklist state of an add-on  
 @param   id  
          The addon item to be checked.  
@@ -81,7 +81,7 @@ Determine the blocklist state of an add-on
          is used.  
 @returns The STATE constant.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -122,7 +122,7 @@ Determine the blocklist state of an add-on
 </table>
 
 ### getPluginBlocklistState(plugin, appVersion, toolkitVersion) ###
-<pre>  
+  
 Determine the blocklist state of a plugin  
 @param   plugin  
          The plugin to get the state for  
@@ -136,7 +136,7 @@ Determine the blocklist state of a plugin
          is used.  
 @returns The STATE constant.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -177,13 +177,13 @@ Determine the blocklist state of a plugin
 </table>
 
 ### getAddonBlocklistURL(addon, appVersion, toolkitVersion) ###
-<pre>  
+  
 Determine the blocklist web page of an add-on.  
 @param   addon  
          The addon item whose url is required.  
 @returns The URL of the description page.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -208,13 +208,13 @@ Determine the blocklist web page of an add-on.
 </table>
 
 ### getPluginBlocklistURL(plugin) ###
-<pre>  
+  
 Determine the blocklist web page of a plugin.  
 @param   plugin  
          The blocked plugin that we are determining the web page for.  
 @returns The URL of the description page.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -239,14 +239,14 @@ Determine the blocklist web page of a plugin.
 </table>
 
 ### getPluginInfoURL(plugin) ###
-<pre>  
+  
 Determine the blocklist infoURL of a plugin.  
 @param   plugin  
          The blocked plugin that we are determining the infoURL for.  
 @returns The preferred URL to present the user, or |null| if  
          it is not available.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

@@ -10,22 +10,22 @@ layout: default
 ## Attributes ##
 
 ### type ###
-<pre>  
+  
 Network type. One of the CELL_INFO_TYPE_* constants.  
   
-</pre>
+
 ### registered ###
 
 ### timestampType ###
-<pre>  
+  
 Time stamp type. One of the TIMESTAMP_TYPE_* constants.  
   
-</pre>
+
 ### timestamp ###
-<pre>  
+  
 Time in nanoseconds since boot.  
   
-</pre>
+
 ## Constants ##
 
 ### CELL_INFO_TYPE_GSM ###

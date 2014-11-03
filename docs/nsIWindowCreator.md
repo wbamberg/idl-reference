@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### createChromeWindow(parent, chromeFlags) ###
-<pre> Create a new window. Gecko will/may call this method, if made  
+ Create a new window. Gecko will/may call this method, if made  
 available to it, to create new windows.  
 @param parent parent window, if any. null if not. the newly created  
 window should be made a child/dependent window of  
@@ -19,7 +19,7 @@ to the underlying OS).
 @param chromeFlags chrome features from nsIWebBrowserChrome  
 @return the new window  
   
-</pre>
+
 #### Parameters ####
 
 <table>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### addCrash(processType, crashType, id) ###
-<pre>  
+  
 Records the occurrence of a crash.  
   
 @param processType  
@@ -20,7 +20,7 @@ Records the occurrence of a crash.
 @param id  
        Crash ID. Likely a UUID.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

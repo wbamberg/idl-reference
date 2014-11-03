@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### getData(key) ###
-<pre>  
+  
 Return the data associated with the given key.  
   
 @param  key  the key  
 @return      the data associated with the key  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -41,7 +41,7 @@ Return the data associated with the given key.
 </table>
 
 ### setData(key, data) ###
-<pre>  
+  
 Set the data for the given key.  
   
 @param  key   the data key  
@@ -49,7 +49,7 @@ Set the data for the given key.
 @throws       NS_ERROR_UNEXPECTED if the method is called during event  
               dispatch  
   
-</pre>
+
 #### Parameters ####
 
 <table>

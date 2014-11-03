@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDebug #
-<pre>  
+  
   For use by consumers in scripted languages (JavaScript, Java, Python,  
   Perl, ...).  
   
@@ -15,11 +15,11 @@ layout: default
   glue instead.  
   
   
-</pre>
+
 ## Methods ##
 
 ### assertion(aStr, aExpr, aFile, aLine) ###
-<pre>  
+  
 Show an assertion and trigger nsIDebug.break().  
   
 @param aStr assertion message  
@@ -28,7 +28,7 @@ Show an assertion and trigger nsIDebug.break().
 @param aLine line number of assertion  
   
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -60,14 +60,14 @@ Show an assertion and trigger nsIDebug.break().
 </table>
 
 ### warning(aStr, aFile, aLine) ###
-<pre>  
+  
 Show a warning.  
   
 @param aStr warning message  
 @param aFile file containing assertion  
 @param aLine line number of assertion  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -93,13 +93,13 @@ Show a warning.
 </table>
 
 ### break(aFile, aLine) ###
-<pre>  
+  
 Request to break into a debugger.  
   
 @param aFile file containing break request  
 @param aLine line number of break request  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -119,13 +119,13 @@ Request to break into a debugger.
 </table>
 
 ### abort(aFile, aLine) ###
-<pre>  
+  
 Request the process to trigger a fatal abort.  
   
 @param aFile file containing abort request  
 @param aLine line number of abort request  
   
-</pre>
+
 #### Parameters ####
 
 <table>

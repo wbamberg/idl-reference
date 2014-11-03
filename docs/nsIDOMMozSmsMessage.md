@@ -10,28 +10,28 @@ layout: default
 ## Attributes ##
 
 ### type ###
-<pre>  
+  
 |type| is always "sms".  
   
-</pre>
+
 ### id ###
 
 ### threadId ###
 
 ### iccId ###
-<pre>  
+  
 Integrated Circuit Card Identifier.  
   
 Will be null if ICC is not available.  
   
-</pre>
+
 ### delivery ###
-<pre>  
+  
 Should be "received", "sending", "sent" or "error".  
   
-</pre>
+
 ### deliveryStatus ###
-<pre>  
+  
 Possible delivery status values for above delivery states are:  
   
 "received": "success"  
@@ -41,7 +41,7 @@ Possible delivery status values for above delivery states are:
             if the message was sent without status report requisition.  
 "error"   : "error"  
   
-</pre>
+
 ### sender ###
 
 ### receiver ###
@@ -49,10 +49,10 @@ Possible delivery status values for above delivery states are:
 ### body ###
 
 ### messageClass ###
-<pre>  
+  
 Should be "normal", "class-0", "class-1", "class-2" or "class-3".  
   
-</pre>
+
 ### timestamp ###
 
 ### sentTimestamp ###

@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIXPCComponents_Utils #
-<pre>  
+  
 interface of Components.utils  
   
-</pre>
+
 ## Methods ##
 
 ### reportError(error) ###
@@ -25,7 +25,7 @@ interface of Components.utils
 ### import(aResourceURI, targetObj) ###
 
 ### isModuleLoaded(aResourceURI) ###
-<pre>  
+  
 Returns true if the js file located at 'registryLocation' location has  
 been loaded previously via the import method above. Returns false  
 otherwise.  
@@ -35,7 +35,7 @@ otherwise.
 @returns boolean, true if the js file has been loaded via import. false  
          otherwise  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -88,7 +88,7 @@ otherwise.
 ### unlinkGhostWindows() ###
 
 ### nondeterministicGetWeakMapKeys(aMap) ###
-<pre>  
+  
 Return the keys in a weak map.  This operation is  
 non-deterministic because it is affected by the scheduling of the  
 garbage collector and the cycle collector.  
@@ -100,7 +100,7 @@ the GC and CC with weak maps.
 @returns If aMap is a weak map object, return the keys of the weak  
 map as an array.  Otherwise, return undefined.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -138,19 +138,19 @@ map as an array.  Otherwise, return undefined.
 ### makeObjectPropsNormal(vobj) ###
 
 ### isDeadWrapper(obj) ###
-<pre>  
+  
 Determines whether this object is backed by a DeadObjectProxy.  
   
 Dead-wrapper objects hold no other objects alive (they have no outgoing  
 reference edges) and will throw if you touch them (e.g. by  
 reading/writing a property).  
   
-</pre>
+
 ### isCrossProcessWrapper(obj) ###
-<pre>  
+  
 Determines whether this object is a cross-process wrapper.  
   
-</pre>
+
 ### recomputeWrappers(vobj) ###
 
 ### setWantXrays(vscope) ###
@@ -174,37 +174,37 @@ Determines whether this object is a cross-process wrapper.
 ### unblockScriptForGlobal(global) ###
 
 ### isXrayWrapper(obj) ###
-<pre>  
+  
 Check whether the given object is an XrayWrapper.  
   
-</pre>
+
 ### waiveXrays(aVal) ###
-<pre>  
+  
 Waive Xray on a given value. Identity op for primitives.  
   
-</pre>
+
 ### unwaiveXrays(aVal) ###
-<pre>  
+  
 Strip off Xray waivers on a given value. Identity op for primitives.  
   
-</pre>
+
 ### getClassName(aObj, aUnwrap) ###
-<pre>  
+  
 Gets the name of the JSClass of the object.  
   
 if |aUnwrap| is true, all wrappers are unwrapped first. Unless you're  
 specifically trying to detect whether the object is a proxy, this is  
 probably what you want.  
   
-</pre>
+
 ### getDOMClassInfo(aClassName) ###
-<pre>  
+  
 Get a DOM classinfo for the given classname.  Only some class  
 names are supported.  
   
-</pre>
+
 ### getIncumbentGlobal(callback) ###
-<pre>  
+  
 Gets the incument global for the execution of this function. For internal  
 and testing use only.  
   
@@ -212,9 +212,9 @@ If |callback| is passed, it is invoked with the incumbent global as its
 sole argument. This allows the incumbent global to be measured in callback  
 environments with no scripted frames on the stack.  
   
-</pre>
+
 ### generateXPCWrappedJS(obj, scope) ###
-<pre>  
+  
 Forces the generation of an XPCWrappedJS for a given object. For internal  
 and testing use only. This is only useful to set up wrapper map conditions  
 for a testcase. The return value is not an XPCWrappedJS itself, but an  
@@ -222,9 +222,9 @@ opaque nsISupports holder that keeps the underlying XPCWrappedJS alive.
   
 if |scope| is passed, the XPCWrappedJS is generated in the scope of that object.  
   
-</pre>
+
 ### getWatchdogTimestamp(aCategory) ###
-<pre>  
+  
 Retrieve the last time, in microseconds since epoch, that a given  
 watchdog-related event occured.  
   
@@ -234,7 +234,7 @@ Valid categories:
   "WatchdogHibernateStart"  - Watchdog begins hibernating  
   "WatchdogHibernateStop"   - Watchdog stops hibernating  
   
-</pre>
+
 ### getJSEngineTelemetryValue() ###
 
 ### cloneInto(value, scope, options) ###

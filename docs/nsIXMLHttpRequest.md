@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIXMLHttpRequest #
-<pre>  
+  
 Mozilla's XMLHttpRequest is modelled after Microsoft's IXMLHttpRequest  
 object. The goal has been to make Mozilla's version match Microsoft's  
 version as closely as possible, but there are bound to be some differences.  
@@ -47,24 +47,24 @@ Conclusion: Do not use event listeners on XMLHttpRequest from C++, unless
 you're aware of all the security implications.  And then think twice about  
 it.  
   
-</pre>
+
 ## Methods ##
 
 ### abort() ###
-<pre>  
+  
 If the request has been sent already, this method will  
 abort the request.  
   
-</pre>
+
 ### getAllResponseHeaders() ###
-<pre>  
+  
 Returns all of the response headers as a string for HTTP  
 requests.  
   
 @returns A string containing all of the response headers.  
          The empty string if the response has not yet been received.  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -78,7 +78,7 @@ requests.
 </table>
 
 ### getResponseHeader(header) ###
-<pre>  
+  
 Returns the text of the header with the specified name for  
 HTTP requests.  
   
@@ -87,7 +87,7 @@ HTTP requests.
          NULL if the response has not yet been received or the  
          header does not exist in the response.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -114,7 +114,7 @@ HTTP requests.
 </table>
 
 ### open(method, url, async, user, password) ###
-<pre>  
+  
 Meant to be a script-only method for initializing a request.  
   
 If there is an "active" request (that is, if open() has been called  
@@ -134,7 +134,7 @@ already), this is equivalent to calling abort() and then open().
 @param password (optional) A password for authentication if necessary.  
                 The default value is the empty string  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -180,7 +180,7 @@ already), this is equivalent to calling abort() and then open().
 </table>
 
 ### send(body) ###
-<pre>  
+  
 Sends the request. If the request is asynchronous, returns  
 immediately after sending the request. If it is synchronous  
 returns only after the response has been received.  
@@ -205,7 +205,7 @@ After the initial response, all event listeners will be cleared.
             Type header via the setRequestHeader method before  
             calling send.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -232,14 +232,14 @@ After the initial response, all event listeners will be cleared.
 </table>
 
 ### sendAsBinary(body) ###
-<pre>  
+  
 A variant of the send() method used to send binary data.  
   
 @param body The request body as a DOM string.  The string data will be  
             converted to a single-byte string by truncation (i.e., the  
             high-order byte of each character will be discarded).  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -255,14 +255,14 @@ A variant of the send() method used to send binary data.
 </table>
 
 ### setRequestHeader(header, value) ###
-<pre>  
+  
 Sets a HTTP request header for HTTP requests. You must call open  
 before setting the request headers.  
   
 @param header The name of the header to set in the request.  
 @param value The body of the header.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -282,7 +282,7 @@ before setting the request headers.
 </table>
 
 ### overrideMimeType(mimetype) ###
-<pre>  
+  
 Override the mime type returned by the server (if any). This may  
 be used, for example, to force a stream to be treated and parsed  
 as text/xml, even if the server does not report it as such. This  
@@ -291,7 +291,7 @@ must be done before the <code>send</code> method is invoked.
 @param mimetype The type used to override that returned by the server  
                 (if any).  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -306,7 +306,7 @@ must be done before the <code>send</code> method is invoked.
 </table>
 
 ### init(principal, scriptContext, globalObject, baseURI) ###
-<pre>  
+  
 Initialize the object for use from C++ code with the principal, script  
 context, and owner window that should be used.  
   
@@ -321,7 +321,7 @@ context, and owner window that should be used.
 @param baseURI The base URI to use when resolving relative URIs. May be  
                null.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -361,7 +361,7 @@ context, and owner window that should be used.
 ## Attributes ##
 
 ### channel ###
-<pre>  
+  
 The request uses a channel in order to perform the  
 request.  This attribute represents the channel used  
 for the request.  NULL if the channel has not yet been  
@@ -369,68 +369,68 @@ created.
   
 Mozilla only. Requires elevated privileges to access.  
   
-</pre>
+
 ### responseXML ###
-<pre>  
+  
 The response to the request is parsed as if it were a  
 text/xml stream. This attributes represents the response as  
 a DOM Document object. NULL if the request is unsuccessful or  
 has not yet been sent.  
   
-</pre>
+
 ### responseText ###
-<pre>  
+  
 The response to the request as text.  
 NULL if the request is unsuccessful or  
 has not yet been sent.  
   
-</pre>
+
 ### responseType ###
-<pre>  
+  
 Determine a response format which response attribute returns.  
 empty string (initial value) or "text": as text.  
 "arraybuffer": as a typed array ArrayBuffer.  
 "blob": as a File API Blob.  
 "document": as a DOM Document object.  
   
-</pre>
+
 ### response ###
-<pre>  
+  
 The response to the request as a specified format by responseType.  
 NULL if the request is unsuccessful or  
 has not yet been sent.  
   
-</pre>
+
 ### status ###
-<pre>  
+  
 The status of the response to the request for HTTP requests.  
   
-</pre>
+
 ### statusText ###
-<pre>  
+  
 The string representing the status of the response for  
 HTTP requests.  
   
-</pre>
+
 ### timeout ###
-<pre>  
+  
 The amount of milliseconds a request can take before being terminated.  
 Initially zero. Zero means there is no timeout.  
   
-</pre>
+
 ### readyState ###
 
 ### mozBackgroundRequest ###
-<pre>  
+  
 Set to true if this is a background service request. This will  
 prevent a load group being associated with the request, and  
 suppress any security dialogs from being shown * to the user.  
 In the cases where one of those dialogs would be shown, the request  
 will simply fail instead.  
   
-</pre>
+
 ### withCredentials ###
-<pre>  
+  
 When set to true attempts to make cross-site Access-Control requests  
 with credentials such as cookies and authorization headers.  
   
@@ -438,14 +438,14 @@ Never affects same-site requests.
   
 Defaults to false.  
   
-</pre>
+
 ### upload ###
-<pre>  
+  
 Upload process can be tracked by adding event listener to |upload|.  
   
-</pre>
+
 ### onreadystatechange ###
-<pre>  
+  
 Meant to be a script-only mechanism for setting a callback function.  
 The attribute is expected to be JavaScript function object. When the  
 readyState changes, the callback function will be called.  
@@ -456,22 +456,22 @@ After the initial response, all event listeners will be cleared.
   
 Call open() before setting an onreadystatechange listener.  
   
-</pre>
+
 ### mozAnon ###
-<pre>  
+  
 If true, the request will be sent without cookie and authentication  
 headers.  
   
-</pre>
+
 ### mozSystem ###
-<pre>  
+  
 If true, the same origin policy will not be enforced on the request.  
   
-</pre>
+
 ## Constants ##
 
 ### UNSENT ###
-<pre>  
+  
 The state of the request.  
   
 Possible values:  
@@ -482,7 +482,7 @@ Possible values:
   3 LOADING  Downloading, responseText holds the partial data.  
   4 DONE     Finished with all operations.  
   
-</pre>
+
 ### OPENED ###
 
 ### HEADERS_RECEIVED ###

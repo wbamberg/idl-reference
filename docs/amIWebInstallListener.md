@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # amIWebInstallListener #
-<pre>  
+  
 The registered amIWebInstallListener is used to notify about new installs  
 triggered by websites. The default implementation displays a confirmation  
 dialog when add-ons are ready to install and uses the observer service to  
 notify when installations are blocked.  
   
-</pre>
+
 ## Methods ##
 
 ### onWebInstallDisabled(aOriginator, aUri, aInstalls, aCount) ###
-<pre>  
+  
 Called when installation by websites is currently disabled.  
   
 @param  aOriginator  
@@ -28,7 +28,7 @@ Called when installation by websites is currently disabled.
 @param  aCount  
         The number of AddonInstalls  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -60,7 +60,7 @@ Called when installation by websites is currently disabled.
 </table>
 
 ### onWebInstallBlocked(aOriginator, aUri, aInstalls, aCount) ###
-<pre>  
+  
 Called when the website is not allowed to directly prompt the user to  
 install add-ons.  
   
@@ -74,7 +74,7 @@ install add-ons.
         The number of AddonInstalls  
 @return true if the caller should start the installs  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -117,7 +117,7 @@ install add-ons.
 </table>
 
 ### onWebInstallRequested(aOriginator, aUri, aInstalls, aCount) ###
-<pre>  
+  
 Called when a website wants to ask the user to install add-ons.  
   
 @param  aWindow  
@@ -130,7 +130,7 @@ Called when a website wants to ask the user to install add-ons.
         The number of AddonInstalls  
 @return true if the caller should start the installs  
   
-</pre>
+
 #### Parameters ####
 
 <table>

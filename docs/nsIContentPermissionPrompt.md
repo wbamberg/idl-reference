@@ -6,16 +6,15 @@ layout: default
 </div>
 
 # nsIContentPermissionPrompt #
-<pre>  
+  
 Interface provides a way for the application to handle  
 the UI prompts associated with geo position.  
   
-</pre>
+
 ## Methods ##
 
 ### prompt(request) ###
-<pre>  
+  
 Called when a request has been made to access  
 privileged content apis  
   
-</pre>

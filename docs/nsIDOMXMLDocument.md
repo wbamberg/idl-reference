@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### load(url) ###
-<pre>  
+  
 Load an XML document.  
   
 @param  url URL to an XML document.  
 @return     True if load successfull.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -43,8 +43,7 @@ Load an XML document.
 ## Attributes ##
 
 ### async ###
-<pre>  
+  
 Whether to load synchronously or asynchronously.  
 The default is async==true.  
   
-</pre>

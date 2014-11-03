@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIWebBrowserPersist #
-<pre>  
+  
 Interface for persisting DOM documents and URIs to local or remote storage.  
   
-</pre>
+
 ## Methods ##
 
 ### saveURI(aURI, aCacheKey, aReferrer, aPostData, aExtraHeaders, aFile, aPrivacyContext) ###
-<pre>  
+  
 Save the specified URI to file.  
   
 @param aURI       URI to save to file. Some implementations of this interface  
@@ -44,7 +44,7 @@ Save the specified URI to file.
   
 @throws NS_ERROR_INVALID_ARG One or more arguments was invalid.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -108,13 +108,13 @@ Save the specified URI to file.
 </table>
 
 ### savePrivacyAwareURI(aURI, aCacheKey, aReferrer, aPostData, aExtraHeaders, aFile, aIsPrivate) ###
-<pre>  
+  
 @param aIsPrivate Treat the save operation as private (ie. with  
                   regards to networking operations and persistence  
                   of intermediate data, etc.)  
 @see saveURI for all other parameter descriptions  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -131,13 +131,13 @@ Save the specified URI to file.
 </table>
 
 ### saveChannel(aChannel, aFile) ###
-<pre>  
+  
 Save a channel to a file. It must not be opened yet.  
 @see saveURI  
   
-</pre>
+
 ### saveDocument(aDocument, aFile, aDataPath, aOutputContentType, aEncodingFlags, aWrapColumn) ###
-<pre>  
+  
 Save the specified DOM document to file and optionally all linked files  
 (e.g. images, CSS, JS & subframes). Do not call this method until the  
 document has finished loading!  
@@ -165,7 +165,7 @@ document has finished loading!
   
 @throws NS_ERROR_INVALID_ARG One or more arguments was invalid.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -220,37 +220,37 @@ document has finished loading!
 </table>
 
 ### cancelSave() ###
-<pre>  
+  
 Cancels the current operation. The caller is responsible for cleaning up  
 partially written files or directories. This has the same effect as calling  
 cancel with an argument of NS_BINDING_ABORTED.  
   
-</pre>
+
 ## Attributes ##
 
 ### persistFlags ###
-<pre>  
+  
 Flags governing how data is fetched and saved from the network.   
 It is best to set this value explicitly unless you are prepared  
 to accept the default values.  
   
-</pre>
+
 ### currentState ###
-<pre>  
+  
 Current state of the persister object.  
   
-</pre>
+
 ### result ###
-<pre>  
+  
 Value indicating the success or failure of the persist  
 operation.  
   
 @throws NS_BINDING_ABORTED Operation cancelled.  
 @throws NS_ERROR_FAILURE Non-specific failure.  
   
-</pre>
+
 ### progressListener ###
-<pre>  
+  
 Callback listener for progress notifications. The object that the  
 embbedder supplies may also implement nsIInterfaceRequestor and be  
 prepared to return nsIAuthPrompt or other interfaces that may be required  
@@ -259,166 +259,165 @@ to download data.
 @see nsIAuthPrompt  
 @see nsIInterfaceRequestor  
   
-</pre>
+
 ## Constants ##
 
 ### PERSIST_FLAGS_NONE ###
-<pre> No special persistence behaviour. */  
-</pre>
+ No special persistence behaviour. */  
+
 ### PERSIST_FLAGS_FROM_CACHE ###
-<pre> Use cached data if present (skipping validation), else load from network */  
-</pre>
+ Use cached data if present (skipping validation), else load from network */  
+
 ### PERSIST_FLAGS_BYPASS_CACHE ###
-<pre> Bypass the cached data. */  
-</pre>
+ Bypass the cached data. */  
+
 ### PERSIST_FLAGS_IGNORE_REDIRECTED_DATA ###
-<pre> Ignore any redirected data (usually adverts). */  
-</pre>
+ Ignore any redirected data (usually adverts). */  
+
 ### PERSIST_FLAGS_IGNORE_IFRAMES ###
-<pre> Ignore IFRAME content (usually adverts). */  
-</pre>
+ Ignore IFRAME content (usually adverts). */  
+
 ### PERSIST_FLAGS_NO_CONVERSION ###
-<pre> Do not run the incoming data through a content converter e.g. to decompress it */  
-</pre>
+ Do not run the incoming data through a content converter e.g. to decompress it */  
+
 ### PERSIST_FLAGS_REPLACE_EXISTING_FILES ###
-<pre> Replace existing files on the disk (use with due diligence!) */  
-</pre>
+ Replace existing files on the disk (use with due diligence!) */  
+
 ### PERSIST_FLAGS_NO_BASE_TAG_MODIFICATIONS ###
-<pre> Don't modify or add base tags */  
-</pre>
+ Don't modify or add base tags */  
+
 ### PERSIST_FLAGS_FIXUP_ORIGINAL_DOM ###
-<pre> Make changes to original dom rather than cloning nodes */  
-</pre>
+ Make changes to original dom rather than cloning nodes */  
+
 ### PERSIST_FLAGS_FIXUP_LINKS_TO_DESTINATION ###
-<pre> Fix links relative to destination location (not origin) */  
-</pre>
+ Fix links relative to destination location (not origin) */  
+
 ### PERSIST_FLAGS_DONT_FIXUP_LINKS ###
-<pre> Don't make any adjustments to links */  
-</pre>
+ Don't make any adjustments to links */  
+
 ### PERSIST_FLAGS_SERIALIZE_OUTPUT ###
-<pre> Force serialization of output (one file at a time; not concurrent) */  
-</pre>
+ Force serialization of output (one file at a time; not concurrent) */  
+
 ### PERSIST_FLAGS_DONT_CHANGE_FILENAMES ###
-<pre> Don't make any adjustments to filenames */  
-</pre>
+ Don't make any adjustments to filenames */  
+
 ### PERSIST_FLAGS_FAIL_ON_BROKEN_LINKS ###
-<pre> Fail on broken inline links */  
-</pre>
+ Fail on broken inline links */  
+
 ### PERSIST_FLAGS_CLEANUP_ON_FAILURE ###
-<pre>  
+  
 Automatically cleanup after a failed or cancelled operation, deleting all  
 created files and directories. This flag does nothing for failed upload  
 operations to remote servers.  
   
-</pre>
+
 ### PERSIST_FLAGS_AUTODETECT_APPLY_CONVERSION ###
-<pre>  
+  
 Let the WebBrowserPersist decide whether the incoming data is encoded  
 and whether it needs to go through a content converter e.g. to  
 decompress it.  
   
-</pre>
+
 ### PERSIST_FLAGS_APPEND_TO_FILE ###
-<pre>  
+  
 Append the downloaded data to the target file.  
 This can only be used when persisting to a local file.  
   
-</pre>
+
 ### PERSIST_FLAGS_FORCE_ALLOW_COOKIES ###
-<pre>  
+  
 Force relevant cookies to be sent with this load even if normally they  
 wouldn't be.  
   
-</pre>
+
 ### PERSIST_STATE_READY ###
-<pre> Persister is ready to save data */  
-</pre>
+ Persister is ready to save data */  
+
 ### PERSIST_STATE_SAVING ###
-<pre> Persister is saving data */  
-</pre>
+ Persister is saving data */  
+
 ### PERSIST_STATE_FINISHED ###
-<pre> Persister has finished saving data */  
-</pre>
+ Persister has finished saving data */  
+
 ### ENCODE_FLAGS_SELECTION_ONLY ###
-<pre> Output only the current selection as opposed to the whole document. */  
-</pre>
+ Output only the current selection as opposed to the whole document. */  
+
 ### ENCODE_FLAGS_FORMATTED ###
-<pre>  
+  
 For plaintext output. Convert html to plaintext that looks like the html.  
 Implies wrap (except inside &lt;pre&gt;), since html wraps.  
 HTML output: always do prettyprinting, ignoring existing formatting.  
   
-</pre>
+
 ### ENCODE_FLAGS_RAW ###
-<pre>  
+  
 Output without formatting or wrapping the content. This flag  
 may be used to preserve the original formatting as much as possible.  
   
-</pre>
+
 ### ENCODE_FLAGS_BODY_ONLY ###
-<pre> Output only the body section, no HTML tags. */  
-</pre>
+ Output only the body section, no HTML tags. */  
+
 ### ENCODE_FLAGS_PREFORMATTED ###
-<pre> Wrap even if when not doing formatted output (e.g. for text fields). */  
-</pre>
+ Wrap even if when not doing formatted output (e.g. for text fields). */  
+
 ### ENCODE_FLAGS_WRAP ###
-<pre> Wrap documents at the specified column. */  
-</pre>
+ Wrap documents at the specified column. */  
+
 ### ENCODE_FLAGS_FORMAT_FLOWED ###
-<pre>  
+  
 For plaintext output. Output for format flowed (RFC 2646). This is used  
 when converting to text for mail sending. This differs just slightly  
 but in an important way from normal formatted, and that is that  
 lines are space stuffed. This can't (correctly) be done later.  
   
-</pre>
+
 ### ENCODE_FLAGS_ABSOLUTE_LINKS ###
-<pre> Convert links to absolute links where possible. */  
-</pre>
+ Convert links to absolute links where possible. */  
+
 ### ENCODE_FLAGS_ENCODE_W3C_ENTITIES ###
-<pre>   
+   
 Attempt to encode entities standardized at W3C (HTML, MathML, etc).  
 This is a catch-all flag for documents with mixed contents. Beware of  
 interoperability issues. See below for other flags which might likely  
 do what you want.  
   
-</pre>
+
 ### ENCODE_FLAGS_CR_LINEBREAKS ###
-<pre>  
+  
 Output with carriage return line breaks. May also be combined with  
 ENCODE_FLAGS_LF_LINEBREAKS and if neither is specified, the platform  
 default format is used.  
   
-</pre>
+
 ### ENCODE_FLAGS_LF_LINEBREAKS ###
-<pre>  
+  
 Output with linefeed line breaks. May also be combined with  
 ENCODE_FLAGS_CR_LINEBREAKS and if neither is specified, the platform  
 default format is used.  
   
-</pre>
+
 ### ENCODE_FLAGS_NOSCRIPT_CONTENT ###
-<pre> For plaintext output. Output the content of noscript elements. */  
-</pre>
+ For plaintext output. Output the content of noscript elements. */  
+
 ### ENCODE_FLAGS_NOFRAMES_CONTENT ###
-<pre> For plaintext output. Output the content of noframes elements. */  
-</pre>
+ For plaintext output. Output the content of noframes elements. */  
+
 ### ENCODE_FLAGS_ENCODE_BASIC_ENTITIES ###
-<pre>  
+  
 Encode basic entities, e.g. output &nbsp; instead of character code 0xa0.   
 The basic set is just &nbsp; &amp; &lt; &gt; &quot; for interoperability  
 with older products that don't support &alpha; and friends.  
   
-</pre>
+
 ### ENCODE_FLAGS_ENCODE_LATIN1_ENTITIES ###
-<pre>  
+  
 Encode Latin1 entities. This includes the basic set and  
 accented letters between 128 and 255.  
   
-</pre>
+
 ### ENCODE_FLAGS_ENCODE_HTML_ENTITIES ###
-<pre>  
+  
 Encode HTML4 entities. This includes the basic set, accented  
 letters, greek letters and certain special markup symbols.  
   
-</pre>

@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### init(aDocument, aMimeType, aFlags) ###
-<pre>  
+  
 Initialize with a pointer to the document and the mime type.  
 @param aDocument Document to encode.  
 @param aMimeType MimeType to use. May also be set by SetMimeType.  
 @param aFlags Flags to use while encoding. May also be set by SetFlags.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -44,13 +44,13 @@ Initialize with a pointer to the document and the mime type.
 ### nativeInit(aDocument, aMimeType, aFlags) ###
 
 ### setSelection(aSelection) ###
-<pre>  
+  
  If the selection is set to a non-null value, then the  
  selection is used for encoding, otherwise the entire  
  document is encoded.  
 @param aSelection The selection to encode.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -64,13 +64,13 @@ Initialize with a pointer to the document and the mime type.
 </table>
 
 ### setRange(aRange) ###
-<pre>  
+  
  If the range is set to a non-null value, then the  
  range is used for encoding, otherwise the entire  
  document or selection is encoded.  
 @param aRange The range to encode.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -84,13 +84,13 @@ Initialize with a pointer to the document and the mime type.
 </table>
 
 ### setNode(aNode) ###
-<pre>  
+  
  If the node is set to a non-null value, then the  
  node is used for encoding, otherwise the entire  
  document or range or selection is encoded.  
 @param aNode The node to encode.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -106,13 +106,13 @@ Initialize with a pointer to the document and the mime type.
 ### setNativeNode(aNode) ###
 
 ### setContainerNode(aContainer) ###
-<pre>  
+  
  If the container is set to a non-null value, then its  
  child nodes are used for encoding, otherwise the entire  
  document or range or selection or node is encoded.  
  @param aContainer The node which child nodes will be encoded.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -128,7 +128,7 @@ Initialize with a pointer to the document and the mime type.
 ### setNativeContainerNode(aContainer) ###
 
 ### setCharset(aCharset) ###
-<pre>  
+  
  Documents typically have an intrinsic character set,  
  but if no intrinsic value is found, the platform character set  
  is used. This function overrides both the intrinisc and platform  
@@ -138,7 +138,7 @@ Initialize with a pointer to the document and the mime type.
   
  Possible result codes: NS_ERROR_NO_CHARSET_CONVERTER  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -153,11 +153,11 @@ Initialize with a pointer to the document and the mime type.
 </table>
 
 ### setWrapColumn(aWrapColumn) ###
-<pre>  
+  
  Set a wrap column.  This may have no effect in some types of encoders.  
 @param aWrapColumn Column to which to wrap.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -171,14 +171,14 @@ Initialize with a pointer to the document and the mime type.
 </table>
 
 ### encodeToStream(aStream) ###
-<pre>  
+  
  Encode the document and send the result to the nsIOutputStream.  
   
  Possible result codes are the stream errors which might have  
  been encountered.  
 @param aStream Stream into which to encode.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -192,12 +192,12 @@ Initialize with a pointer to the document and the mime type.
 </table>
 
 ### encodeToString() ###
-<pre>  
+  
 Encode the document into a string.  
   
 @return The document encoded into a string.  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -210,7 +210,7 @@ Encode the document into a string.
 </table>
 
 ### encodeToStringWithContext(aContextString, aInfoString) ###
-<pre>  
+  
 Encode the document into a string. Stores the extra context information  
 into the two arguments.  
 @param [OUT] aContextString The string where the parent hierarchy  
@@ -220,7 +220,7 @@ into the two arguments.
 @return The document encoded as a string.  
   
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -253,7 +253,7 @@ into the two arguments.
 </table>
 
 ### encodeToStringWithMaxLength(aMaxLength) ###
-<pre>  
+  
 Encode the document into a string of limited size.  
 @param aMaxLength After aMaxLength characters, the encoder will stop  
                   encoding new data.  
@@ -266,7 +266,7 @@ Encode the document into a string of limited size.
   
 @return The document encoded into a string.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -298,11 +298,11 @@ Encode the document into a string of limited size.
 </table>
 
 ### setNodeFixup(aFixup) ###
-<pre>  
+  
 Set the fixup object associated with node persistence.  
 @param aFixup The fixup object.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -318,53 +318,53 @@ Set the fixup object associated with node persistence.
 ## Attributes ##
 
 ### mimeType ###
-<pre>  
+  
  The mime type preferred by the encoder.  This piece of api was  
  added because the copy encoder may need to switch mime types on you  
  if you ask it to copy html that really represents plaintext content.  
  Call this AFTER Init() and SetSelection() have both been called.  
   
-</pre>
+
 ## Constants ##
 
 ### OutputSelectionOnly ###
-<pre>   
+   
 Output only the selection (as opposed to the whole document).  
   
-</pre>
+
 ### OutputFormatted ###
-<pre> Plaintext output: Convert html to plaintext that looks like the html.  
+ Plaintext output: Convert html to plaintext that looks like the html.  
 Implies wrap (except inside <pre>), since html wraps.  
 HTML, XHTML and XML output: do prettyprinting, ignoring existing formatting.  
 XML output : it doesn't implicitly wrap  
   
-</pre>
+
 ### OutputRaw ###
-<pre> Don't do prettyprinting. Don't do any wrapping that's not in the existing  
+ Don't do prettyprinting. Don't do any wrapping that's not in the existing  
 HTML/XML source. This option overrides OutputFormatted if both are set.  
 HTML/XHTML output: If neither are set, there won't be prettyprinting too, but  
 long lines will be wrapped.  
 Supported also in XML and Plaintext output.  
 @note This option does not affect entity conversion.  
   
-</pre>
+
 ### OutputBodyOnly ###
-<pre>   
+   
 Do not print html head tags.  
 XHTML/HTML output only.  
   
-</pre>
+
 ### OutputPreformatted ###
-<pre>  
+  
 Output as though the content is preformatted  
 (e.g. maybe it's wrapped in a PRE or PRE_WRAP style tag)  
 Plaintext output only.  
 XXXbz How does this interact with  
 OutputFormatted/OutputRaw/OutputPreformatted/OutputFormatFlowed?  
   
-</pre>
+
 ### OutputWrap ###
-<pre>  
+  
 Wrap even if we're not doing formatted output (e.g. for text fields).  
 Supported in XML, XHTML, HTML and Plaintext output.  
 Set implicitly in HTML/XHTML output when no OutputRaw.  
@@ -373,9 +373,9 @@ XXXLJ: set implicitly in HTML/XHTML output, to keep compatible behaviors
        for old callers of this interface  
 XXXbz How does this interact with OutputFormatFlowed?  
   
-</pre>
+
 ### OutputFormatFlowed ###
-<pre>  
+  
 Output for format flowed (RFC 2646). This is used when converting  
 to text for mail sending. This differs just slightly  
 but in an important way from normal formatted, and that is that  
@@ -384,131 +384,130 @@ PlainText output only.
 XXXbz How does this interact with  
 OutputFormatted/OutputRaw/OutputPreformatted/OutputWrap?  
   
-</pre>
+
 ### OutputAbsoluteLinks ###
-<pre>  
+  
 Convert links, image src, and script src to absolute URLs when possible.  
 XHTML/HTML output only.  
   
-</pre>
+
 ### OutputEncodeW3CEntities ###
-<pre>  
+  
 Attempt to encode entities standardized at W3C (HTML, MathML, etc).  
 This is a catch-all flag for documents with mixed contents. Beware of  
 interoperability issues. See below for other flags which might likely  
 do what you want.  
 HTML output only.  
   
-</pre>
+
 ### OutputCRLineBreak ###
-<pre>   
+   
 LineBreak processing: if this flag is set than CR line breaks will  
 be written. If neither this nor OutputLFLineBreak is set, then we  
 will use platform line breaks. The combination of the two flags will  
 cause CRLF line breaks to be written.  
   
-</pre>
+
 ### OutputLFLineBreak ###
-<pre>   
+   
 LineBreak processing: if this flag is set than LF line breaks will  
 be written. If neither this nor OutputCRLineBreak is set, then we  
 will use platform line breaks. The combination of the two flags will  
 cause CRLF line breaks to be written.  
   
-</pre>
+
 ### OutputNoScriptContent ###
-<pre>  
+  
 Output the content of noscript elements (only for serializing  
 to plaintext).  
   
-</pre>
+
 ### OutputNoFramesContent ###
-<pre>  
+  
 Output the content of noframes elements (only for serializing  
 to plaintext). (Used only internally in the plain text serializer;  
 ignored if passed by the caller.)  
   
-</pre>
+
 ### OutputNoFormattingInPre ###
-<pre>  
+  
 Don't allow any formatting nodes (e.g. <br>, <b>) inside a <pre>.  
 This is used primarily by mail. XHTML/HTML output only.  
   
-</pre>
+
 ### OutputEncodeBasicEntities ###
-<pre>  
+  
 Encode entities when outputting to a string.  
 E.g. If set, we'll output &nbsp; if clear, we'll output 0xa0.  
 The basic set is just &nbsp; &amp; &lt; &gt; &quot; for interoperability  
 with older products that don't support &alpha; and friends.  
 HTML output only.  
   
-</pre>
+
 ### OutputEncodeLatin1Entities ###
-<pre>  
+  
 Encode entities when outputting to a string.  
 The Latin1 entity set additionally includes 8bit accented letters  
 between 128 and 255.  
 HTML output only.  
   
-</pre>
+
 ### OutputEncodeHTMLEntities ###
-<pre>  
+  
 Encode entities when outputting to a string.  
 The HTML entity set additionally includes accented letters, greek  
 letters, and other special markup symbols as defined in HTML4.  
 HTML output only.  
   
-</pre>
+
 ### OutputPersistNBSP ###
-<pre>  
+  
 Normally &nbsp; is replaced with a space character when  
 encoding data as plain text, set this flag if that's  
 not desired.  
 Plaintext output only.  
   
-</pre>
+
 ### OutputDontRewriteEncodingDeclaration ###
-<pre>  
+  
 Normally when serializing the whole document using the HTML or   
 XHTML serializer, the encoding declaration is rewritten to match.  
 This flag suppresses that behavior.  
   
-</pre>
+
 ### SkipInvisibleContent ###
-<pre>  
+  
 When using the HTML or XHTML serializer, skip elements that are not  
 visible when this flag is set.  Elements are not visible when they  
 have CSS style display:none or visibility:collapse, for example.  
   
-</pre>
+
 ### OutputFormatDelSp ###
-<pre>  
+  
 Output for delsp=yes (RFC 3676). This is used with OutputFormatFlowed  
 when converting to text for mail sending.  
 PlainText output only.  
   
-</pre>
+
 ### OutputDropInvisibleBreak ###
-<pre>  
+  
 Drop <br> elements considered "invisible" by the editor. OutputPreformatted  
 implies this flag.  
   
-</pre>
+
 ### OutputIgnoreMozDirty ###
-<pre>  
+  
 Don't check for _moz_dirty attributes when deciding whether to  
 pretty-print if this flag is set (bug 599983).  
   
-</pre>
+
 ### OutputNonTextContentAsPlaceholder ###
-<pre>  
+  
 Output the content of non-text elements as the placehodler character  
 U+FFFC (OBJECT REPLACEMENT CHARACTER, only for serializing to plaintext).  
   
-</pre>
+
 ### OutputDontRemoveLineEndingSpaces ###
-<pre>  
+  
 Don't Strip ending spaces from a line (only for serializing to plaintext).  
   
-</pre>

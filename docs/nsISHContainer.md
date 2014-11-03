@@ -6,34 +6,33 @@ layout: default
 </div>
 
 # nsISHContainer #
-<pre>  
+  
 The nsISHEntryContainer. The interface to access child entries  
 of an nsISHEntry.  
   
   
-</pre>
+
 ## Methods ##
 
 ### AddChild(child, offset) ###
-<pre>  
+  
 Add a new child SHEntry.  If offset is -1 adds to the end of the list.  
   
-</pre>
+
 ### RemoveChild(child) ###
-<pre>  
+  
 Removes a child SHEntry  
   
-</pre>
+
 ### GetChildAt(index) ###
-<pre>  
+  
 Get child at an index  
   
-</pre>
+
 ## Attributes ##
 
 ### childCount ###
-<pre>  
+  
 The current number of nsISHEntries which are immediate children of the   
 current SHEntry  
   
-</pre>

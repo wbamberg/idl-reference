@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### findRepresentativeColor(imageURI, callback) ###
-<pre>  
+  
 Given an image URI, find the most representative color for that image  
 based on the frequency of each color.  Preference is given to colors that  
 are more interesting.  Avoids the background color if it can be  
@@ -29,7 +29,7 @@ will fail before analyzing it for performance reasons.
        Function to call when the representative color is found or an  
        error occurs.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

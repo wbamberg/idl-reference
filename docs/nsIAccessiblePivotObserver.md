@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIAccessiblePivotObserver #
-<pre>  
+  
 An observer interface for pivot changes.  
   
-</pre>
+
 ## Methods ##
 
 ### onPivotChanged(aPivot, aOldAccessible, aOldStart, aOldEnd, aReason, aIsFromUserInput) ###
-<pre>  
+  
 Called when the pivot changes.  
   
 @param aPivot           [in] the pivot that has changed.  
@@ -25,7 +25,7 @@ Called when the pivot changes.
 @param aIsFromUserInput [in] the pivot changed because of direct user input  
                           (default is true).  
   
-</pre>
+
 #### Parameters ####
 
 <table>

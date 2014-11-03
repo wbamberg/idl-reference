@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsDouble #
-<pre>  
+  
 Scriptable storage for doubles  
   
-</pre>
+
 ## Methods ##
 
 ### toString() ###

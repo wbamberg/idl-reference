@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIImageLoadingContent #
-<pre>  
+  
 This interface represents a content node that loads images.  The interface  
 exists to allow getting information on the images that the content node  
 loads and to allow registration of observers for the image loads.  
@@ -30,11 +30,11 @@ sufficient, when combined with the imageBlockingStatus information.)
 Please make sure to update the MozImageLoadingContent WebIDL  
 interface to mirror this interface when changing it.  
   
-</pre>
+
 ## Methods ##
 
 ### addObserver(aObserver) ###
-<pre>  
+  
 Used to register an image decoder observer.  Typically, this will  
 be a proxy for a frame that wants to paint the image.  
 Notifications from ongoing image loads will be passed to all  
@@ -45,7 +45,7 @@ current and pending, will be passed through.
   
 @throws NS_ERROR_OUT_OF_MEMORY  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -59,12 +59,12 @@ current and pending, will be passed through.
 </table>
 
 ### removeObserver(aObserver) ###
-<pre>  
+  
 Used to unregister an image decoder observer.  
   
 @param aObserver the observer to unregister  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -78,7 +78,7 @@ Used to unregister an image decoder observer.
 </table>
 
 ### getRequest(aRequestType) ###
-<pre>  
+  
 Accessor to get the image requests  
   
 @param aRequestType a value saying which request is wanted  
@@ -89,7 +89,7 @@ is thrown)
 @throws NS_ERROR_UNEXPECTED if the request type requested is not  
 known  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -115,19 +115,19 @@ is thrown)
 </table>
 
 ### frameCreated(aFrame) ###
-<pre>  
+  
 Used to notify the image loading content node that a frame has been  
 created.  
   
-</pre>
+
 ### frameDestroyed(aFrame) ###
-<pre>  
+  
 Used to notify the image loading content node that a frame has been  
 destroyed.  
   
-</pre>
+
 ### getRequestType(aRequest) ###
-<pre>  
+  
 Used to find out what type of request one is dealing with (eg  
 which request got passed through to the imgINotificationObserver  
 interface of an observer)  
@@ -138,7 +138,7 @@ interface of an observer)
   
 @throws NS_ERROR_UNEXPECTED if aRequest is not known  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -163,7 +163,7 @@ interface of an observer)
 </table>
 
 ### loadImageWithChannel(aChannel) ###
-<pre>  
+  
 loadImageWithChannel allows data from an existing channel to be  
 used as the image data for this content node.  
   
@@ -175,7 +175,7 @@ used as the image data for this content node.
   
 @throws NS_ERROR_NULL_POINTER if aChannel is null  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -200,13 +200,13 @@ used as the image data for this content node.
 </table>
 
 ### forceReload(aNotify) ###
-<pre>  
+  
 forceReload forces reloading of the image pointed to by currentURI  
   
 @param aNotify [optional] request should notify, defaults to true  
 @throws NS_ERROR_NOT_AVAILABLE if there is no current URI to reload  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -221,18 +221,18 @@ forceReload forces reloading of the image pointed to by currentURI
 </table>
 
 ### forceImageState(aForce, aState) ###
-<pre>  
+  
 Enables/disables image state forcing. When |aForce| is PR_TRUE, we force  
 nsImageLoadingContent::ImageState() to return |aState|. Call again with |aForce|  
 as PR_FALSE to revert ImageState() to its original behaviour.  
   
-</pre>
+
 ### IncrementVisibleCount() ###
-<pre>  
+  
 A visible count is stored, if it is non-zero then this image is considered  
 visible. These methods increment, decrement, or return the visible coount.  
   
-</pre>
+
 ### DecrementVisibleCount() ###
 
 ### GetVisibleCount() ###
@@ -240,39 +240,39 @@ visible. These methods increment, decrement, or return the visible coount.
 ## Attributes ##
 
 ### loadingEnabled ###
-<pre>  
+  
 loadingEnabled is used to enable and disable loading in  
 situations where loading images is unwanted.  Note that enabling  
 loading will *not* automatically trigger an image load.  
   
-</pre>
+
 ### imageBlockingStatus ###
-<pre>  
+  
 Returns the image blocking status (@see nsIContentPolicy).  This  
 will always be an nsIContentPolicy REJECT_* status for cases when  
 the image was blocked.  This status always refers to the  
 CURRENT_REQUEST load.  
   
-</pre>
+
 ### currentURI ###
-<pre>  
+  
 Gets the URI of the current request, if available.  
 Otherwise, returns the last URI that this content tried to load, or  
 null if there haven't been any such attempts.  
   
-</pre>
+
 ### naturalWidth ###
-<pre>  
+  
 The intrinsic size and width of this content. May differ from actual image  
 size due to things like responsive image density.  
   
-</pre>
+
 ### naturalHeight ###
 
 ## Constants ##
 
 ### UNKNOWN_REQUEST ###
-<pre>  
+  
 Request types.  Image loading content nodes attempt to do atomic  
 image changes when the image url is changed.  This means that  
 when the url changes the new image load will start, but the old  
@@ -280,7 +280,7 @@ image will remain the "current" request until the new image is
 fully loaded.  At that point, the old "current" request will be  
 discarded and the "pending" request will become "current".  
   
-</pre>
+
 ### CURRENT_REQUEST ###
 
 ### PENDING_REQUEST ###

@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsINativeOSFileSuccessCallback #
-<pre>  
+  
 A callback invoked in case of success.  
   
-</pre>
+
 ## Methods ##
 
 ### complete(result) ###

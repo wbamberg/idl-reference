@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsITransport #
-<pre>  
+  
 nsITransport  
   
 This interface provides a common way of accessing i/o streams connected  
@@ -21,11 +21,11 @@ receives transport-specific events as the transfer is occuring.  For a
 socket transport, these events can include status about the connection.  
 See nsISocketTransport for more info about socket transport specifics.  
   
-</pre>
+
 ## Methods ##
 
 ### openInputStream(aFlags, aSegmentSize, aSegmentCount) ###
-<pre>  
+  
 Open an input stream on this transport.  
   
 Flags have the following meaning:  
@@ -56,7 +56,7 @@ OPEN_UNBUFFERED
        if OPEN_UNBUFFERED is not set, then this parameter specifies the  
        maximum number of buffer segments (pass 0 to use default value).  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -84,7 +84,7 @@ OPEN_UNBUFFERED
 </table>
 
 ### openOutputStream(aFlags, aSegmentSize, aSegmentCount) ###
-<pre>  
+  
 Open an output stream on this transport.  
   
 Flags have the following meaning:  
@@ -115,7 +115,7 @@ OPEN_UNBUFFERED
        if OPEN_UNBUFFERED is not set, then this parameter specifies the  
        maximum number of buffer segments (pass 0 to use default value).  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -143,13 +143,13 @@ OPEN_UNBUFFERED
 </table>
 
 ### close(aReason) ###
-<pre>  
+  
 Close the transport and any open streams.  
   
 @param aReason  
        the reason for closing the stream.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -163,7 +163,7 @@ Close the transport and any open streams.
 </table>
 
 ### setEventSink(aSink, aEventTarget) ###
-<pre>  
+  
 Set the transport event sink.  
   
 @param aSink  
@@ -173,7 +173,7 @@ Set the transport event sink.
        be delivered.  if NULL, then the notifications may occur on  
        any thread.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -197,14 +197,14 @@ Set the transport event sink.
 ## Constants ##
 
 ### OPEN_BLOCKING ###
-<pre>  
+  
 Open flags.  
   
-</pre>
+
 ### OPEN_UNBUFFERED ###
 
 ### STATUS_READING ###
-<pre>  
+  
 Generic nsITransportEventSink status codes.  nsITransport  
 implementations may override these status codes with their own more  
 specific status codes (e.g., see nsISocketTransport).  
@@ -213,5 +213,5 @@ In C++, these constants have a type of uint32_t, so C++ callers must use
 the NS_NET_STATUS_* constants defined below, which have a type of  
 nsresult.  
   
-</pre>
+
 ### STATUS_WRITING ###

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMHTMLAnchorElement #
-<pre>  
+  
 The nsIDOMHTMLAnchorElement interface is the interface to a [X]HTML  
 a element.  
   
@@ -16,7 +16,7 @@ http://www.w3.org/TR/DOM-Level-2-HTML/
 with changes from the work-in-progress WHATWG HTML specification:  
 http://www.whatwg.org/specs/web-apps/current-work/  
   
-</pre>
+
 ## Methods ##
 
 ### toString() ###
@@ -38,10 +38,10 @@ http://www.whatwg.org/specs/web-apps/current-work/
 ### type ###
 
 ### text ###
-<pre>  
+  
 An alias for the textContent attribute.  
   
-</pre>
+
 ### protocol ###
 
 ### host ###

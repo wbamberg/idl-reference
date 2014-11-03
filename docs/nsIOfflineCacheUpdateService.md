@@ -12,28 +12,28 @@ layout: default
 ### getUpdate(index) ###
 
 ### scheduleUpdate(aManifestURI, aDocumentURI, aWindow) ###
-<pre>  
+  
 Schedule a cache update for a given offline manifest.  If an  
 existing update is scheduled or running, that update will be returned.  
 Otherwise a new update will be scheduled.  
   
-</pre>
+
 ### scheduleAppUpdate(aManifestURI, aDocumentURI, aAppID, aInBrowser, aProfileDir) ###
-<pre>  
+  
 Schedule a cache update for a given offline manifest using app cache  
 bound to the given appID+inBrowser flag.  If an existing update is  
 scheduled or running, that update will be returned. Otherwise a new  
 update will be scheduled.  
   
-</pre>
+
 ### scheduleOnDocumentStop(aManifestURI, aDocumentURI, aDocument) ###
-<pre>  
+  
 Schedule a cache update for a manifest when the document finishes  
 loading.  
   
-</pre>
+
 ### checkForUpdate(aManifestURI, aAppID, aInBrowser, aObserver) ###
-<pre>  
+  
 Schedule a check to see if an update is available.  
   
 This will not update or make any changes to the appcache.  
@@ -44,9 +44,9 @@ update is available.
 For arguments see nsIOfflineCacheUpdate.initForUpdateCheck() method  
 description.  
   
-</pre>
+
 ### offlineAppAllowed(aPrincipal, aPrefBranch) ###
-<pre>  
+  
 Checks whether a principal should have access to the offline  
 cache.  
 @param aPrincipal  
@@ -56,7 +56,7 @@ cache.
        offline-apps.allow_by_default pref.  If not specified,  
        the pref service will be used.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -78,7 +78,7 @@ cache.
 </table>
 
 ### offlineAppAllowedForURI(aURI, aPrefBranch) ###
-<pre>  
+  
 Checks whether a document at the given URI should have access  
 to the offline cache.  
 @param aURI  
@@ -88,7 +88,7 @@ to the offline cache.
        offline-apps.allow_by_default pref.  If not specified,  
        the pref service will be used.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -110,30 +110,29 @@ to the offline cache.
 </table>
 
 ### allowOfflineApp(aWindow, aPrincipal) ###
-<pre>  
+  
 Sets the "offline-app" permission for the principal.  
 In the single process model calls directly on permission manager.  
 In the multi process model dispatches to the parent process.  
   
-</pre>
+
 ## Attributes ##
 
 ### numUpdates ###
-<pre>  
+  
 Access to the list of cache updates that have been scheduled.  
   
-</pre>
+
 ## Constants ##
 
 ### ALLOW_NO_WARN ###
-<pre>  
+  
 Constants for the offline-app permission.  
   
 XXX: This isn't a great place for this, but it's really the only  
 private offline-app-related interface  
   
-</pre><pre>  
+  
 Allow the domain to use offline APIs, and don't warn about excessive  
 usage.  
   
-</pre>

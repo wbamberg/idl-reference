@@ -10,12 +10,11 @@ layout: default
 ## Attributes ##
 
 ### rowOrColIndex ###
-<pre>  
+  
 Return the row or column index.  
   
-</pre>
+
 ### RowsOrColsCount ###
-<pre>  
+  
 Return the number of rows or cols  
   
-</pre>

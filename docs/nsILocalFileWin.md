@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getVersionInfoField(aField) ###
-<pre>  
+  
 getVersionInfoValue  
   
 Retrieve a metadata field from the file's VERSIONINFO block.  
@@ -19,7 +19,7 @@ Throws NS_ERROR_FAILURE if no value is found, or the value is empty.
 @param   aField         The field to look up.  
   
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -33,7 +33,7 @@ Throws NS_ERROR_FAILURE if no value is found, or the value is empty.
 </table>
 
 ### setShortcut(targetFile, workingDir, args, description, iconFile, iconIndex) ###
-<pre>  
+  
 setShortcut  
   
 Creates the specified shortcut, or updates it if it already exists.  
@@ -58,7 +58,7 @@ shortcut
 iconFile.  If iconFile contains only one icon, this  
 value should be 0.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -105,15 +105,15 @@ value should be 0.
 </table>
 
 ### openNSPRFileDescShareDelete(flags, mode) ###
-<pre>  
+  
 Identical to nsIFile::openNSPRFileDesc except it also uses the  
 FILE_SHARE_DELETE flag.  
   
-</pre>
+
 ## Attributes ##
 
 ### canonicalPath ###
-<pre>  
+  
 The canonical path of the file, which avoids short/long  
 pathname inconsistencies. The nsIFile persistent  
 descriptor is not guaranteed to be canonicalized (it may  
@@ -122,11 +122,11 @@ the canonical path will vary with the underlying file system:
 it will typically be the short pathname on filesystems that  
 support both short and long path forms.  
   
-</pre>
+
 ### nativeCanonicalPath ###
 
 ### fileAttributesWin ###
-<pre>  
+  
 fileAttributesWin  
   
 Set or get windows specific file attributes.  
@@ -134,14 +134,14 @@ Set or get windows specific file attributes.
 Throws NS_ERROR_FILE_INVALID_PATH for an invalid file.  
 Throws NS_ERROR_FAILURE if the set or get fails.  
   
-</pre>
+
 ## Constants ##
 
 ### WFA_SEARCH_INDEXED ###
-<pre>  
+  
 Windows specific file attributes.  
   
-</pre>
+
 ### WFA_READONLY ###
 
 ### WFA_READWRITE ###

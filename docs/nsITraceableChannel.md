@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsITraceableChannel #
-<pre>  
+  
 A channel implementing this interface allows one to intercept its data by  
 inserting intermediate stream listeners.  
   
-</pre>
+
 ## Methods ##
 
 ### setNewListener(aListener) ###

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIExtendedExpatSink #
-<pre>  
+  
 This interface provides notification of syntax-level events.  
   
-</pre>
+
 ## Methods ##
 
 ### handleStartDTD(aDoctypeName, aSysid, aPubid) ###
-<pre>  
+  
 Called at the beginning of the DTD, before any entity or notation  
 events.  
 @param aDoctypeName The document type name.  
@@ -22,7 +22,7 @@ events.
 @param aPubid The declared public identifier for the external DTD subset,  
               or null if none was declared.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -50,7 +50,7 @@ events.
 </table>
 
 ### handleStartNamespaceDecl(aPrefix, aUri) ###
-<pre>  
+  
 Called when a prefix mapping starts to be in-scope, before any  
 startElement events.  
 @param aPrefix The Namespace prefix being declared. An empty string  
@@ -58,7 +58,7 @@ startElement events.
                no prefix.  
 @param aUri The Namespace URI the prefix is mapped to.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -80,13 +80,13 @@ startElement events.
 </table>
 
 ### handleEndNamespaceDecl(aPrefix) ###
-<pre>  
+  
 Called when a prefix mapping is no longer in-scope, after any  
 endElement events.  
 @param aPrefix The prefix that was being mapped. This is the empty string  
                when a default mapping scope ends.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -101,7 +101,7 @@ endElement events.
 </table>
 
 ### handleNotationDecl(aNotationName, aSysid, aPubid) ###
-<pre>  
+  
 This is called for a declaration of notation.  The base argument is  
 whatever was set by XML_SetBase. aNotationName will never be  
 null. The other arguments can be.  
@@ -109,7 +109,7 @@ null. The other arguments can be.
 @param aSysId The notation's system identifier, or null if none was given.  
 @param aPubId The notation's pubilc identifier, or null if none was given.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -135,7 +135,7 @@ null. The other arguments can be.
 </table>
 
 ### handleUnparsedEntityDecl(aName, aSysid, aPubid, aNotationName) ###
-<pre>  
+  
 This is called for a declaration of an unparsed (NDATA) entity.  
 aName, aSysid and aNotationName arguments will never be  
 null. The other arguments may be.  
@@ -144,7 +144,7 @@ null. The other arguments may be.
 @param aPubId The notation's pubilc identifier, or null if none was given.  
 @param aNotationName The name of the associated notation.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

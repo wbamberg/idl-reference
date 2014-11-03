@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIBackgroundFileSaver #
-<pre>  
+  
 Allows saving data to a file, while handling all the input/output on a  
 background thread, including the initial file name assignment and any  
 subsequent renaming of the target file.  
@@ -35,29 +35,29 @@ Finish method must be called to complete the operation.
          public methods of the interface may only be called from the main  
          thread.  
   
-</pre>
+
 ## Methods ##
 
 ### enableSignatureInfo() ###
-<pre>  
+  
 Instructs the component to compute the signatureInfo of the target file,  
 and make it available in the signatureInfo property.  
   
 @remarks This must be set on the main thread before the first call to  
          setTarget.  
   
-</pre>
+
 ### enableSha256() ###
-<pre>  
+  
 Instructs the component to compute the SHA-256 hash of the target file, and  
 make it available in the sha256Hash property.  
   
 @remarks This must be set on the main thread before the first call to  
          setTarget.  
   
-</pre>
+
 ### enableAppend() ###
-<pre>  
+  
 Instructs the component to append data to the initial target file, that  
 will be specified by the first call to the setTarget method, instead of  
 overwriting the file.  
@@ -67,9 +67,9 @@ If the initial target file does not exist, this method has no effect.
 @remarks This must be set on the main thread before the first call to  
          setTarget.  
   
-</pre>
+
 ### setTarget(aTarget, aKeepPartial) ###
-<pre>  
+  
 Sets the name of the output file to be written.  The target can be changed  
 after data has already been fed, in which case the existing file will be  
 moved to the new destination.  
@@ -92,7 +92,7 @@ fails.  Failure is notified asynchronously through the observer.
        rather than deleted, if the operation fails or is canceled.  This is  
        generally set for downloads that use temporary ".part" files.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -114,7 +114,7 @@ fails.  Failure is notified asynchronously through the observer.
 </table>
 
 ### finish(aStatus) ###
-<pre>  
+  
 Terminates access to the output file, then notifies the observer with the  
 specified status code.  A failure code will force the operation to be  
 canceled, in which case the output file will be deleted if requested.  
@@ -133,7 +133,7 @@ renamed even if all the data has been fed.
        fails meanwhile for other reasons, or the observer has been already  
        notified of completion, this status code is ignored.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -152,7 +152,7 @@ renamed even if all the data has been fed.
 ## Attributes ##
 
 ### observer ###
-<pre>  
+  
 This observer receives notifications when the target file name changes and  
 when the operation completes, successfully or not.  
   
@@ -160,9 +160,9 @@ when the operation completes, successfully or not.
          are dispatched to the thread that created the object that  
          implements nsIBackgroundFileSaver.  
   
-</pre>
+
 ### signatureInfo ###
-<pre>  
+  
 An nsIArray of nsIX509CertList, representing a chain of X.509 signatures on  
 the downloaded file. Each list may belong to a different signer and contain  
 certificates all the way up to the root.  
@@ -172,9 +172,9 @@ certificates all the way up to the root.
         called to notify success, or enableSignatureInfo has not been  
         called.  
   
-</pre>
+
 ### sha256Hash ###
-<pre>  
+  
 The SHA-256 hash, in raw bytes, associated with the data that was saved.  
   
 In case the enableAppend method has been called, the hash computation  
@@ -184,4 +184,3 @@ includes the contents of the existing file, if any.
         In case the enableSha256 method has not been called, or before the  
         onSaveComplete method has been called to notify success.  
   
-</pre>

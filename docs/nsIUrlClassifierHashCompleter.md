@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIUrlClassifierHashCompleter #
-<pre>  
+  
 Clients updating the url-classifier database have the option of sending  
 partial (32-bit) hashes of URL fragments to be blacklisted.  If the  
 url-classifier encounters one of these truncated hashes, it will ask an  
@@ -15,11 +15,11 @@ hash, along with some associated metadata.
 This is only ever used for testing and should absolutely be deleted (I  
 think).  
   
-</pre>
+
 ## Methods ##
 
 ### complete(partialHash, gethashUrl, callback) ###
-<pre>  
+  
 Request a completed hash from the given gethash url.  
   
 @param partialHash  
@@ -29,7 +29,7 @@ Request a completed hash from the given gethash url.
 @param callback  
        An nsIUrlClassifierCompleterCallback instance.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIStandaloneNativeMenu #
-<pre>  
+  
 Platform-independent interface to platform native menu objects.  
   
-</pre>
+
 ## Methods ##
 
 ### init(aDOMElement) ###
-<pre>  
+  
 Initialize the native menu using given XUL DOM element.  
   
 @param aDOMElement A XUL DOM element of tag type |menu| or |menupopup|.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -32,14 +32,14 @@ Initialize the native menu using given XUL DOM element.
 </table>
 
 ### menuWillOpen() ###
-<pre>  
+  
 This method must be called before the menu is opened and displayed to the  
 user. It allows the platform code to update the menu and also determine  
 whether the menu should even be shown.  
   
 @return true if the menu can be shown, false if it should not be shown  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -52,14 +52,14 @@ whether the menu should even be shown.
 </table>
 
 ### activateNativeMenuItemAt(anIndexString) ###
-<pre>  
+  
 Activate the native menu item specified by |anIndexString|. This method  
 is intended to be used by the test suite.  
   
 @param anIndexString string containing a list of indices separated by  
        pipe ('|') characters  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -74,14 +74,14 @@ is intended to be used by the test suite.
 </table>
 
 ### forceUpdateNativeMenuAt(anIndexString) ###
-<pre>  
+  
 Force an update of the native menu item specified by |anIndexString|. This  
 method is intended to be used by the test suite.  
   
 @param anIndexString string containing a list of indices separated by  
        pipe ('|') characters  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -98,9 +98,8 @@ method is intended to be used by the test suite.
 ## Attributes ##
 
 ### nativeMenu ###
-<pre>  
+  
 The native object representing the XUL menu that was passed to Init(). On  
 Mac OS X, this will be a NSMenu pointer, which will be retained and  
 autoreleased when the attribute is retrieved.  
   
-</pre>

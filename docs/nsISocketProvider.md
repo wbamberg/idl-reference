@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsISocketProvider #
-<pre>  
+  
 nsISocketProvider  
   
-</pre>
+
 ## Methods ##
 
 ### newSocket(aFamily, aHost, aPort, aProxyHost, aProxyPort, aFlags, aFileDesc, aSecurityInfo) ###
-<pre>  
+  
 newSocket  
   
 @param aFamily  
@@ -34,7 +34,7 @@ newSocket
        Any security info that should be associated with aFileDesc.  This  
        object typically implements nsITransportSecurityInfo.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -91,7 +91,7 @@ newSocket
 </table>
 
 ### addToSocket(aFamily, aHost, aPort, aProxyHost, aProxyPort, aFlags, aFileDesc, aSecurityInfo) ###
-<pre>  
+  
 addToSocket  
   
 This function is called to allow the socket provider to layer a  
@@ -101,11 +101,11 @@ proxy.
 Parameters are the same as newSocket with the exception of aFileDesc,  
 which is an in-param instead.  
   
-</pre>
+
 ## Constants ##
 
 ### PROXY_RESOLVES_HOST ###
-<pre>  
+  
 PROXY_RESOLVES_HOST  
   
 This flag is set if the proxy is to perform hostname resolution instead  
@@ -113,17 +113,17 @@ of the client.  When set, the hostname parameter passed when in this
 interface will be used instead of the address structure passed for a  
 later connect et al. request.  
   
-</pre>
+
 ### ANONYMOUS_CONNECT ###
-<pre>  
+  
 When setting this flag, the socket will not apply any  
 credentials when establishing a connection. For example,  
 an SSL connection would not send any client-certificates  
 if this flag is set.  
   
-</pre>
+
 ### NO_PERMANENT_STORAGE ###
-<pre>  
+  
 If set, indicates that the connection was initiated from a source  
 defined as being private in the sense of Private Browsing. Generally,  
 there should be no state shared between connections that are private  
@@ -131,4 +131,3 @@ and those that are not; it is OK for multiple private connections
 to share state with each other, and it is OK for multiple non-private  
 connections to share state with each other.  
   
-</pre>

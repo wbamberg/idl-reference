@@ -10,7 +10,6 @@ layout: default
 ## Methods ##
 
 ### print() ###
-<pre>  
+  
 Causes the plugin to print in full-page mode  
   
-</pre>

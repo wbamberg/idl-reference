@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # amIWebInstallInfo #
-<pre>  
+  
 amIWebInstallInfo is used by the default implementation of  
 amIWebInstallListener to communicate with the running application and allow  
 it to warn the user about blocked installs and start the installs running.  
   
-</pre>
+
 ## Methods ##
 
 ### install() ###
-<pre>  
+  
 Starts all installs.  
   
-</pre>
+
 ## Attributes ##
 
 ### originator ###

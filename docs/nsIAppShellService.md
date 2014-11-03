@@ -12,13 +12,13 @@ layout: default
 ### createTopLevelWindow(aParent, aUrl, aChromeMask, aInitialWidth, aInitialHeight, aOpeningTab) ###
 
 ### createWindowlessBrowser(aIsChrome) ###
-<pre>  
+  
 This is the constructor for creating an invisible DocShell.  
 It is used to simulate DOM windows without an actual physical  
 representation.  
 @param aIsChrome Set true if you want to use it for chrome content.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -36,16 +36,16 @@ representation.
 ### destroyHiddenWindow() ###
 
 ### getHiddenWindowAndJSContext(aHiddenDOMWindow, aJSContext) ###
-<pre>  
+  
 Return the (singleton) application hidden window as an nsIDOMWindow,  
 and, the corresponding JavaScript context pointer.  This is useful  
 if you'd like to subsequently call OpenDialog on the hidden window.  
 @aHiddenDOMWindow the hidden window QI'd to type nsIDOMWindow  
 @aJSContext       the corresponding JavaScript context  
   
-</pre>
+
 ### registerTopLevelWindow(aWindow) ###
-<pre>  
+  
 Add a window to the application's registry of windows.  These windows  
 are generally shown in the Windows taskbar, and the application  
 knows it can't quit until it's out of registered windows.  
@@ -53,7 +53,7 @@ knows it can't quit until it's out of registered windows.
 @note When this method is successful, it fires the global notification  
       "xul-window-registered"  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -69,13 +69,13 @@ knows it can't quit until it's out of registered windows.
 </table>
 
 ### unregisterTopLevelWindow(aWindow) ###
-<pre>  
+  
 Remove a window from the application's window registry. Note that  
 this method won't automatically attempt to quit the app when  
 the last window is unregistered. For that, see Quit().  
 @param aWindow you see the pattern  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -89,14 +89,14 @@ the last window is unregistered. For that, see Quit().
 </table>
 
 ### startEventLoopLagTracking() ###
-<pre>  
+  
 Start/stop tracking lags in the event loop.  
 If the event loop gets unresponsive, a "event-loop-lag" notification  
 is sent. Note that calling `startEventLoopLagTracking` when tracking  
 is already enabled has no effect.  
 @return true if tracking succeeded.  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -113,55 +113,55 @@ is already enabled has no effect.
 ## Attributes ##
 
 ### hiddenWindow ###
-<pre>  
+  
 Return the (singleton) application hidden window, automatically created  
 and maintained by this AppShellService.  
 @param aResult the hidden window.  Do not unhide hidden window.  
                Do not taunt hidden window.  
   
-</pre>
+
 ### hiddenDOMWindow ###
-<pre>  
+  
 Return the (singleton) application hidden window, automatically created  
 and maintained by this AppShellService.  
 @param aResult the hidden window.  Do not unhide hidden window.  
                Do not taunt hidden window.  
   
-</pre>
+
 ### hiddenPrivateWindow ###
-<pre>  
+  
 Return the (singleton) application hidden private window, automatically  
 created and maintained by this AppShellService.  This window is created  
 in private browsing mode.  
 @param aResult the hidden private window.  Do not unhide hidden window.  
                Do not taunt hidden window.  
   
-</pre>
+
 ### hiddenPrivateDOMWindow ###
-<pre>  
+  
 Return the (singleton) application hidden private window, automatically  
 created and maintained by this AppShellService.  This window is created  
 in private browsing mode.  
 @param aResult the hidden private window.  Do not unhide hidden window.  
                Do not taunt hidden window.  
   
-</pre>
+
 ### applicationProvidedHiddenWindow ###
-<pre>  
+  
 Return true if the application hidden window was provided by the  
 application. If it wasn't, the default hidden window was used. This will  
 usually be false on all non-mac platforms.  
   
-</pre>
+
 ### hasHiddenPrivateWindow ###
-<pre>  
+  
 Whether the hidden private window has been lazily created.  
   
-</pre>
+
 ## Constants ##
 
 ### SIZE_TO_CONTENT ###
-<pre>  
+  
 Create a window, which will be initially invisible.  
 @param aParent the parent window.  Can be null.  
 @param aUrl the contents of the new window.  
@@ -179,4 +179,3 @@ Create a window, which will be initially invisible.
 @param aOpeningTab The TabParent that requested that this window be opened.  
                    Can be left null.  
   
-</pre>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIThreadManager #
-<pre>  
+  
 An interface for creating and locating nsIThread instances.  
   
-</pre>
+
 ## Methods ##
 
 ### newThread(creationFlags, stackSize) ###
-<pre>  
+  
 Create a new thread (a global, user PRThread).  
   
 @param creationFlags  
@@ -24,7 +24,7 @@ Create a new thread (a global, user PRThread).
 @returns  
   The newly created nsIThread object.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -55,7 +55,7 @@ Create a new thread (a global, user PRThread).
 </table>
 
 ### getThreadFromPRThread(prthread) ###
-<pre>  
+  
 Get the nsIThread object (if any) corresponding to the given PRThread.  
 This method returns null if there is no corresponding nsIThread.  
   
@@ -66,7 +66,7 @@ This method returns null if there is no corresponding nsIThread.
   The nsIThread object corresponding to the given PRThread or null if no  
   such nsIThread exists.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -94,28 +94,27 @@ This method returns null if there is no corresponding nsIThread.
 ## Attributes ##
 
 ### mainThread ###
-<pre>  
+  
 Get the main thread.  
   
-</pre>
+
 ### currentThread ###
-<pre>  
+  
 Get the current thread.  If the calling thread does not already have a  
 nsIThread associated with it, then a new nsIThread will be created and  
 associated with the current PRThread.  
   
-</pre>
+
 ### isMainThread ###
-<pre>  
+  
 This attribute is true if the calling thread is the main thread of the  
 application process.  
   
-</pre>
+
 ## Constants ##
 
 ### DEFAULT_STACK_SIZE ###
-<pre>  
+  
 Default number of bytes reserved for a thread's stack, if no stack size  
 is specified in newThread(). 0 means use platform default.  
   
-</pre>

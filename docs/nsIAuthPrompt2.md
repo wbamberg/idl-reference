@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIAuthPrompt2 #
-<pre>  
+  
 An interface allowing to prompt for a username and password. This interface  
 is usually acquired using getInterface on notification callbacks or similar.  
 It can be used to prompt users for authentication information, either  
 synchronously or asynchronously.  
   
-</pre>
+
 ## Methods ##
 
 ### promptAuth(aChannel, level, authInfo) ###
-<pre>  
+  
 Requests a username and a password. Implementations will commonly show a  
 dialog with a username and password field, depending on flags also a  
 domain field.  
@@ -41,7 +41,7 @@ domain field.
 @note   Exceptions thrown from this function will be treated like a  
         return value of false.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -70,7 +70,7 @@ domain field.
 </table>
 
 ### asyncPromptAuth(aChannel, aCallback, aContext, level, authInfo) ###
-<pre>  
+  
 Asynchronously prompt the user for a username and password.  
 This has largely the same semantics as promptUsernameAndPassword(),  
 but must return immediately after calling and return the entered  
@@ -101,23 +101,22 @@ This implementation may:
     prevent multiple dialogs shown to the user because consumer may fall  
     back to synchronous prompt on synchronous failure of this method.  
   
-</pre>
+
 ## Constants ##
 
 ### LEVEL_NONE ###
-<pre> @name Security Levels */  
-</pre><pre>  
+ @name Security Levels */  
+  
 The password will be sent unencrypted. No security provided.  
   
-</pre>
+
 ### LEVEL_PW_ENCRYPTED ###
-<pre>  
+  
 Password will be sent encrypted, but the connection is otherwise  
 insecure.  
   
-</pre>
+
 ### LEVEL_SECURE ###
-<pre>  
+  
 The connection, both for password and data, is secure.  
   
-</pre>

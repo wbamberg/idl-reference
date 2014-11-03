@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIKeygenThread #
-<pre>  
+  
 nsIKeygenThread  
  This is used to communicate with the thread generating a key pair,  
  to be used by the dialog displaying status information.  
   
-</pre>
+
 ## Methods ##
 
 ### startKeyGeneration(observer) ###
-<pre>  
+  
 startKeyGeneration - run the thread  
   A user interface using this interface needs to  
   call this method as soon as the status information  
@@ -28,12 +28,11 @@ startKeyGeneration - run the thread
   be called with a topic of "keygen-finished" and null data  
   and subject.  
   
-</pre>
+
 ### userCanceled(threadAlreadyClosedDialog) ###
-<pre>  
+  
 userCanceled - notify the thread  
   If the user canceled, the thread is no longer allowed to  
   close the dialog. However, if the thread already closed  
   it, we are not allowed to close it.  
   
-</pre>

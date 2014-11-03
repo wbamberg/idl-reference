@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsILayoutDebuggingTools #
-<pre>  
+  
 A series of hooks into non-IDL-ized layout code to allow all the  
 layout debugging functions to be used from chrome.  
   
-</pre>
+
 ## Methods ##
 
 ### init(win) ###

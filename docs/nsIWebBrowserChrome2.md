@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIWebBrowserChrome2 #
-<pre>  
+  
 nsIWebBrowserChrome2 is an extension to nsIWebBrowserChrome.  
   
-</pre>
+
 ## Methods ##
 
 ### setStatusWithContext(statusType, statusText, statusContext) ###
-<pre>  
+  
 Called when the status text in the chrome needs to be updated.  This  
 method may be called instead of nsIWebBrowserChrome::SetStatus.  An  
 implementor of this method, should still implement SetStatus.  
@@ -28,7 +28,7 @@ implementor of this method, should still implement SetStatus.
        node corresponding to the source of the link.  This value can  
        be null if there is no context.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

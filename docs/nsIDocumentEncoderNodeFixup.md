@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### fixupNode(aNode, aSerializeCloneKids) ###
-<pre>  
+  
 Create a fixed up version of a node. This method is called before  
 each node in a document is about to be persisted. The implementor  
 may return a new node with fixed up attributes or null. If null is  
@@ -21,7 +21,7 @@ apply recursive serialization to the children of the fixed up node
 instead of the children of the original node.  
 @return The resulting fixed up node.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

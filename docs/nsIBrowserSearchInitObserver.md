@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIBrowserSearchInitObserver #
-<pre>  
+  
 Callback for asynchronous initialization of nsIBrowserSearchService  
   
-</pre>
+
 ## Methods ##
 
 ### onInitComplete(aStatus) ###
-<pre>  
+  
 Called once initialization of the browser search service is complete.  
   
 @param aStatus The status of that service.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIIncrementalDownload #
-<pre>  
+  
 An incremental download object attempts to fetch a file piecemeal over time  
 in an effort to minimize network bandwidth usage.  
   
 Canceling a background download does not cause the file on disk to be  
 deleted.  
   
-</pre>
+
 ## Methods ##
 
 ### init(uri, destination, chunkSize, intervalInSeconds) ###
-<pre>  
+  
 Initialize the incremental download object.  If the destination file  
 already exists, then only the remaining portion of the file will be  
 fetched.  
@@ -47,7 +47,7 @@ accidentally running "blah.exe" before it is a complete file.
        negative to use the default interval, or 0 to fetch the remaining  
        part of the file in one chunk.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -82,7 +82,7 @@ accidentally running "blah.exe" before it is a complete file.
 </table>
 
 ### start(observer, ctxt) ###
-<pre>  
+  
 Start the incremental download.  
   
 @param observer  
@@ -98,7 +98,7 @@ Start the incremental download.
 @param ctxt  
        User defined object forwarded to the observer's methods.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -128,37 +128,36 @@ Start the incremental download.
 ## Attributes ##
 
 ### URI ###
-<pre>  
+  
 The URI being fetched.  
   
-</pre>
+
 ### finalURI ###
-<pre>  
+  
 The URI being fetched after any redirects have been followed.  This  
 attribute is set just prior to calling OnStartRequest on the observer  
 passed to the start method.  
   
-</pre>
+
 ### destination ###
-<pre>  
+  
 The file where the download is being written.  
   
-</pre>
+
 ### totalSize ###
-<pre>  
+  
 The total number of bytes for the requested file.  This attribute is set  
 just prior to calling OnStartRequest on the observer passed to the start  
 method.  
   
 This attribute has a value of -1 if the total size is unknown.  
   
-</pre>
+
 ### currentSize ###
-<pre>  
+  
 The current number of bytes downloaded so far.  This attribute is set just  
 prior to calling OnStartRequest on the observer passed to the start  
 method.  
   
 This attribute has a value of -1 if the current size is unknown.  
   
-</pre>

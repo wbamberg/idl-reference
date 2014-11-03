@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### disallowCreateFrameLoader() ###
-<pre>  
+  
 Normally, a frame tries to create its frame loader when its src is  
 modified, or its contentWindow is accessed.  
   
@@ -23,30 +23,30 @@ disallowCreateFrameLoader twice without first calling allowFrameLoader.
   
 It's also an error to call either method if we already have a frame loader.  
   
-</pre>
+
 ### allowCreateFrameLoader() ###
 
 ### createRemoteFrameLoader(aTabParent) ###
-<pre>  
+  
 Create a remote (i.e., out-of-process) frame loader attached to the given  
 tab parent.  
   
 It is an error to call this method if we already have a frame loader.  
   
-</pre>
+
 ## Attributes ##
 
 ### reallyIsBrowserOrApp ###
-<pre>  
+  
 Gets whether this frame really is a browser or app frame.  
   
 In order to really be a browser frame, this frame's  
 nsIDOMMozBrowserFrame::mozbrowser attribute must be true, and the frame  
 may have to pass various security checks.  
   
-</pre>
+
 ### reallyIsApp ###
-<pre>  
+  
 Gets whether this frame really is an app frame.  
   
 In order to really be an app frame, this frame must really be a browser  
@@ -56,9 +56,9 @@ and only one of the following conditions:
 2. the frame's mozwidget attribute must point to the manifest of a valid  
 app, and the src should be in the |widgetPages| specified by the manifest.  
   
-</pre>
+
 ### reallyIsWidget ###
-<pre>  
+  
 Gets whether this frame really is a widget frame.  
   
 In order to really be a frame, this frame must really be a browser  
@@ -66,9 +66,9 @@ frame (this requirement will go away eventually), the frame's mozwidget
 attribute must point to the manifest of a valid app, and the src should  
 be in the |widgetPages| specified by the manifest.  
   
-</pre>
+
 ### isExpectingSystemMessage ###
-<pre>  
+  
 This corresponds to the expecting-system-message attribute, which tells us  
 whether we should expect that this frame will receive a system message once  
 it starts up.  
@@ -76,13 +76,12 @@ it starts up.
 It's the embedder's job to set this attribute on a frame.  Its presence  
 might cause us to increase the priority of the frame's process.  
   
-</pre>
+
 ### appManifestURL ###
-<pre>  
+  
 Gets this frame's app manifest URL or widget manifest URL, if the frame  
 really is an app frame.  
 Otherwise, returns the empty string.  
   
 This method is guaranteed not to fail.  
   
-</pre>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISample #
-<pre>  
+  
 The uuid is a unique number identifying the interface normally  
 called IID. It can be generated as follows:  
   
@@ -18,7 +18,7 @@ All platform: Using irc, connect to irc.mozilla.org and type in
 			/msg mozbot uuid  
   
   
-</pre>
+
 ## Methods ##
 
 ### writeValue(aPrefix) ###

@@ -6,24 +6,23 @@ layout: default
 </div>
 
 # nsIAccessibleHideEvent #
-<pre>  
+  
 Fired when a accessible and its subtree are removed from the tree.  
   
-</pre>
+
 ## Attributes ##
 
 ### targetParent ###
-<pre>  
+  
 Return an accessible that was a parent of the target.  
   
-</pre>
+
 ### targetNextSibling ###
-<pre>  
+  
 Return an accessible that was a next sibling of the target  
   
-</pre>
+
 ### targetPrevSibling ###
-<pre>  
+  
 Return an accessible that was a parent of the target  
   
-</pre>

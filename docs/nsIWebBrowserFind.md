@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIWebBrowserFind #
-<pre>  
+  
 nsIWebBrowserFind  
   
 Searches for text in a web browser.  
@@ -19,11 +19,11 @@ does not by default search subframes or iframes. To change this
 behaviour, and to explicitly set the frame to search,   
 QueryInterface to nsIWebBrowserFindInFrames.  
   
-</pre>
+
 ## Methods ##
 
 ### findNext() ###
-<pre>  
+  
 findNext  
   
 Finds, highlights, and scrolls into view the next occurrence of the  
@@ -32,7 +32,7 @@ search string is empty.
   
 @return  Whether an occurrence was found  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -47,22 +47,22 @@ search string is empty.
 ## Attributes ##
 
 ### searchString ###
-<pre>  
+  
 searchString  
   
 The string to search for. This must be non-empty to search.  
   
-</pre>
+
 ### findBackwards ###
-<pre>  
+  
 findBackwards  
   
 Whether to find backwards (towards the beginning of the document).  
 Default is false (search forward).  
   
-</pre>
+
 ### wrapFind ###
-<pre>  
+  
 wrapFind  
   
 Whether the search wraps around to the start (or end) of the document  
@@ -70,23 +70,23 @@ if no match was found between the current position and the end (or
 beginning). Works correctly when searching backwards. Default is  
 false.  
   
-</pre>
+
 ### entireWord ###
-<pre>  
+  
 entireWord  
   
 Whether to match entire words only. Default is false.  
   
-</pre>
+
 ### matchCase ###
-<pre>  
+  
 matchCase  
   
 Whether to match case (case sensitive) when searching. Default is false.  
   
-</pre>
+
 ### searchFrames ###
-<pre>  
+  
 searchFrames  
   
 Whether to search through all frames in the content area. Default is true.  
@@ -96,4 +96,3 @@ parent frames explicitly using nsIWebBrowserFindInFrames, but if one,
 but not both, of searchSubframes and searchParentFrames are set, this  
 returns false.  
   
-</pre>

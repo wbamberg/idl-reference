@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINavBookmarkObserver #
-<pre>  
+  
 Observer for bookmarks changes.  
   
-</pre>
+
 ## Methods ##
 
 ### onBeginUpdateBatch() ###
-<pre>  
+  
 Notifies that a batch transaction has started.  
 Other notifications will be sent during the batch, but the observer is  
 guaranteed that onEndUpdateBatch() will be called at its completion.  
@@ -21,14 +21,14 @@ During a batch the observer should do its best to reduce the work done to
 handle notifications, since multiple changes are going to happen in a short  
 timeframe.  
   
-</pre>
+
 ### onEndUpdateBatch() ###
-<pre>  
+  
 Notifies that a batch transaction has ended.  
   
-</pre>
+
 ### onItemAdded(aItemId, aParentId, aIndex, aItemType, aURI, aTitle, aDateAdded, aGuid, aParentGuid) ###
-<pre>  
+  
 Notifies that an item (any type) was added.  Called after the actual  
 addition took place.  
 When a new item is created, all the items following it in the same folder  
@@ -54,7 +54,7 @@ be sent.
 @param aParentGuid  
        The unique ID associated with the item's parent.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -116,7 +116,7 @@ be sent.
 </table>
 
 ### onItemRemoved(aItemId, aParentId, aIndex, aItemType, aURI, aGuid, aParentGuid) ###
-<pre>  
+  
 Notifies that an item was removed.  Called after the actual remove took  
 place.  
 When an item is removed, all the items following it in the same folder  
@@ -138,7 +138,7 @@ be sent.
 @param aParentGuid  
        The unique ID associated with the item's parent.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -188,7 +188,7 @@ be sent.
 </table>
 
 ### onItemChanged(aItemId, aProperty, aIsAnnotationProperty, aNewValue, aLastModified, aItemType, aParentId, aGuid, aParentGuid) ###
-<pre>  
+  
 Notifies that an item's information has changed.  This will be called  
 whenever any attributes like "title" are changed.  
   
@@ -226,7 +226,7 @@ whenever any attributes like "title" are changed.
       dateAdded     | PRTime (as string) when the item was first added.  
       lastModified  | PRTime (as string) when the item was last modified.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -292,7 +292,7 @@ whenever any attributes like "title" are changed.
 </table>
 
 ### onItemVisited(aItemId, aVisitId, aTime, aTransitionType, aURI, aParentId, aGuid, aParentGuid) ###
-<pre>  
+  
 Notifies that the item was visited.  Can be invoked only for TYPE_BOOKMARK  
 items.  
   
@@ -322,7 +322,7 @@ items.
       means that the visit the observer is told about may not be the most  
       recent visit for that page.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -379,7 +379,7 @@ items.
 </table>
 
 ### onItemMoved(aItemId, aOldParentId, aOldIndex, aNewParentId, aNewIndex, aItemType, aGuid, aOldParentGuid, aNewParentGuid) ###
-<pre>  
+  
 Notifies that an item has been moved.  
   
 @param aItemId  
@@ -401,7 +401,7 @@ Notifies that an item has been moved.
 @param aNewParentGuid  
        The unique ID associated with the new item's parent.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

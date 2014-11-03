@@ -12,33 +12,32 @@ layout: default
 ### logMessage(message) ###
 
 ### logStringMessage(message) ###
-<pre>  
+  
 Convenience method for logging simple messages.  
   
-</pre>
+
 ### getMessageArray(count, messages) ###
-<pre>  
+  
 Get an array of all the messages logged so far.  If no messages  
 are logged, this function will return a count of 0, but still  
 will allocate one word for messages, so as to show up as a  
 0-length array when called from script.  
   
-</pre>
+
 ### registerListener(listener) ###
-<pre>  
+  
 To guard against stack overflows from listeners that could log  
 messages (it's easy to do this inadvertently from listeners  
 implemented in JavaScript), we don't call any listeners when  
 another error is already being logged.  
   
-</pre>
+
 ### unregisterListener(listener) ###
-<pre>  
+  
 Each registered listener should also be unregistered.  
   
-</pre>
+
 ### reset() ###
-<pre>  
+  
 Clear the message buffer (e.g. for privacy reasons).  
   
-</pre>

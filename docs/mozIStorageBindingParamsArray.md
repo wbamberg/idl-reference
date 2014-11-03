@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### newBindingParams() ###
-<pre>  
+  
 Creates a new mozIStorageBindingParams object that can be added to this  
 array.  
   
 @return a mozIStorageBindingParams object that can be used to specify  
         parameters that need to be bound.  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -31,13 +31,13 @@ array.
 </table>
 
 ### addParams(aParameters) ###
-<pre>  
+  
 Adds the parameters to the end of this array.  
   
 @param aParameters  
        The parameters to add to this array.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -53,7 +53,6 @@ Adds the parameters to the end of this array.
 ## Attributes ##
 
 ### length ###
-<pre>  
+  
 The number of mozIStorageBindingParams this object contains.  
   
-</pre>

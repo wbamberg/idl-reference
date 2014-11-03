@@ -10,10 +10,10 @@ layout: default
 ## Attributes ##
 
 ### cardState ###
-<pre>  
+  
 One of the nsIIccProvider.CARD_STATE_* values.  
   
-</pre>
+
 ### imsi ###
 
 ### iccInfo ###

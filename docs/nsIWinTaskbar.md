@@ -10,49 +10,49 @@ layout: default
 ## Methods ##
 
 ### createTaskbarTabPreview(shell, controller) ###
-<pre>  
+  
 Taskbar window and tab preview management  
   
-</pre><pre>  
+  
 Creates a taskbar preview. The docshell should be a toplevel docshell and  
 is used to find the toplevel window. See the documentation for  
 nsITaskbarTabPreview for more information.  
   
-</pre>
+
 ### getTaskbarWindowPreview(shell) ###
-<pre>  
+  
 Gets the taskbar preview for a window. The docshell is used to find the  
 toplevel window. See the documentation for nsITaskbarTabPreview for more  
 information.  
   
 Note: to implement custom drawing or buttons, a controller is required.  
   
-</pre>
+
 ### getTaskbarProgress(shell) ###
-<pre>  
+  
 Taskbar icon progress indicator  
   
-</pre><pre>  
+  
 Gets the taskbar progress for a window. The docshell is used to find the  
 toplevel window. See the documentation for nsITaskbarProgress for more  
 information.  
   
-</pre>
+
 ### getOverlayIconController(shell) ###
-<pre>  
+  
 Taskbar icon overlay  
   
-</pre><pre>  
+  
 Gets the taskbar icon overlay controller for a window. The docshell is used  
 to find the toplevel window. See the documentation in  
 nsITaskbarOverlayIconController for more details.  
   
-</pre>
+
 ### createJumpListBuilder() ###
-<pre>  
+  
 Taskbar and start menu jump list management  
   
-</pre><pre>  
+  
 Retrieve a taskbar jump list builder  
   
 Fails if a jump list build operation has already been initiated, developers  
@@ -62,12 +62,12 @@ within an application.
 @throw NS_ERROR_ALREADY_INITIALIZED if an nsIJumpListBuilder instance is  
 currently building a list.  
   
-</pre>
+
 ### setGroupIdForWindow(aParent, aIdentifier) ###
-<pre>  
+  
 Application window taskbar group settings  
   
-</pre><pre>  
+  
 Set the grouping id for a window.  
   
 The runtime sets a default, global grouping id for all windows on startup.  
@@ -87,9 +87,9 @@ associated with a widget.
 @throw NS_ERROR_FAILURE if the property on the window could not be set.  
 @throw NS_ERROR_UNEXPECTED for general failures.  
   
-</pre>
+
 ### prepareFullScreen(aWindow, aFullScreen) ###
-<pre>  
+  
 Notify the taskbar that a window is about to enter full screen mode.  
   
 A Windows autohide taskbar will not behave correctly in all cases if  
@@ -99,9 +99,9 @@ it is not notified when full screen operations start and end.
 @throw NS_ERROR_UNEXPECTED for general failures.  
 @throw NS_ERROR_NOT_AVAILABLE if the taskbar cannot be obtained.  
   
-</pre>
+
 ### prepareFullScreenHWND(aWindow, aFullScreen) ###
-<pre>  
+  
 Notify the taskbar that a window identified by its HWND is about to enter  
 full screen mode.  
   
@@ -112,20 +112,19 @@ it is not notified when full screen operations start and end.
 @throw NS_ERROR_UNEXPECTED for general failures.  
 @throw NS_ERROR_NOT_AVAILABLE if the taskbar cannot be obtained.  
   
-</pre>
+
 ## Attributes ##
 
 ### available ###
-<pre>  
+  
 Returns true if the operating system supports Win7+ taskbar features.  
 This property acts as a replacement for in-place os version checking.  
   
-</pre>
+
 ### defaultGroupId ###
-<pre>  
+  
 Returns the default application user model identity the application  
 registers with the system. This id is used by the taskbar in grouping  
 windows and in associating pinned shortcuts with running instances and  
 jump lists.  
   
-</pre>

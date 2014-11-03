@@ -6,7 +6,6 @@ layout: default
 </div>
 
 # nsIXPCComponents_utils_Sandbox #
-<pre>  
+  
 interface of object returned by Components.utils.Sandbox.  
   
-</pre>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIXULTemplateQueryProcessor #
-<pre>  
+  
 A query processor takes a template query and generates results for it given  
 a datasource and a reference point. There is a one-to-one relationship  
 between a template builder and a query processor. The template builder  
@@ -68,11 +68,11 @@ Currently, the datasource supplied to the methods will always be an
 nsIRDFDataSource or a DOM node, and will always be the same one in between  
 calls to initializeForBuilding and done.  
   
-</pre>
+
 ## Methods ##
 
 ### getDatasource(aDataSources, aRootNode, aIsTrusted, aBuilder, aShouldDelayBuilding) ###
-<pre>  
+  
 Retrieve the datasource to use for the query processor. The list of  
 datasources in a template is specified using the datasources attribute as  
 a space separated list of URIs. This list is processed by the builder and  
@@ -101,7 +101,7 @@ the data is available.
                                   build the content or not  
 @returns a datasource object  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -151,7 +151,7 @@ the data is available.
 </table>
 
 ### initializeForBuilding(aDatasource, aBuilder, aRootNode) ###
-<pre>  
+  
 Initialize for query generation. This will be called before the rules are  
 processed and whenever the template is rebuilt. This method must be  
 called once before any of the other query processor methods except for  
@@ -164,7 +164,7 @@ translateRef.
 @throws NS_ERROR_INVALID_ARG if the datasource is not supported or  
         NS_ERROR_UNEXPECTED if generateResults has already been called.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -190,15 +190,15 @@ translateRef.
 </table>
 
 ### done() ###
-<pre>  
+  
 Called when the template builder is being destroyed so that the query  
 processor can clean up any state. The query processor should remove as  
 much state as possible, such as results or references to the builder.  
 This method will also be called when the template is going to be rebuilt.  
   
-</pre>
+
 ### compileQuery(aBuilder, aQuery, aRefVariable, aMemberVariable) ###
-<pre>  
+  
 Compile a query from a node. The result of this function will later be  
 passed to generateResults for result generation. If null is returned,  
 the query will be ignored.  
@@ -223,7 +223,7 @@ indicate what variable is expected to contain the results.
   
 @returns a compiled query object  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -266,7 +266,7 @@ indicate what variable is expected to contain the results.
 </table>
 
 ### generateResults(aDatasource, aRef, aQuery) ###
-<pre>  
+  
 Generate the results of a query and return them in an enumerator. The  
 enumerator must contain nsIXULTemplateResult objects. If there are no  
 results, an empty enumerator must be returned.  
@@ -287,7 +287,7 @@ typically with different values for aRef.
   
 @throws NS_ERROR_INVALID_ARG if aQuery is invalid  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -324,7 +324,7 @@ typically with different values for aRef.
 </table>
 
 ### addBinding(aRuleNode, aVar, aRef, aExpr) ###
-<pre>  
+  
 Add a variable binding for a particular rule. A binding allows an  
 additional variable to be set for a result, outside of those defined  
 within the query. These bindings are always optional, in that they will  
@@ -354,7 +354,7 @@ the syntax '+2' to mean add two to the reference.
 @param aRef variable that holds reference value  
 @param aExpr expression used to compute the value to assign  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -386,7 +386,7 @@ the syntax '+2' to mean add two to the reference.
 </table>
 
 ### translateRef(aDatasource, aRefString) ###
-<pre>  
+  
 Translate a ref attribute string into a result. This is used as the  
 reference point by the template builder when generating the first level  
 of content. For recursive generation, the result from the parent  
@@ -403,7 +403,7 @@ translate the reference.
   
 @return the translated ref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -434,7 +434,7 @@ translate the reference.
 </table>
 
 ### compareResults(aLeft, aRight, aVar, aSortHints) ###
-<pre>  
+  
 Compare two results to determine their order, used when sorting results.  
 This method should return -1 when the left result is less than the right,  
 0 if both are equivalent, and 1 if the left is greater than the right.  
@@ -456,7 +456,7 @@ query processor.
   
 @param returns -1 if less, 0 if equal, or 1 if greater  
   
-</pre>
+
 #### Parameters ####
 
 <table>

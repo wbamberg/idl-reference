@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIDOMMouseEvent #
-<pre>  
+  
 The nsIDOMMouseEvent interface is the datatype for all mouse events  
 in the Document Object Model.  
   
 For more information on this interface please see  
 http://www.w3.org/TR/DOM-Level-2-Events/  
   
-</pre>
+
 ## Methods ##
 
 ### initMouseEvent(typeArg, canBubbleArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg, relatedTargetArg) ###

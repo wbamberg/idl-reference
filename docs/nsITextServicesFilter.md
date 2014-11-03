@@ -10,11 +10,11 @@ layout: default
 ## Methods ##
 
 ### skip(aNode) ###
-<pre>  
+  
 Indicates whether the content node should be skipped by the iterator  
  @param aNode - node to skip  
   
-</pre>
+
 #### Parameters ####
 
 <table>

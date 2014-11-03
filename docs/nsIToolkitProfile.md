@@ -6,23 +6,23 @@ layout: default
 </div>
 
 # nsIToolkitProfile #
-<pre>  
+  
 A interface representing a profile.  
 @note THIS INTERFACE SHOULD BE IMPLEMENTED BY THE TOOLKIT CODE ONLY! DON'T  
       EVEN THINK ABOUT IMPLEMENTING THIS IN JAVASCRIPT!  
   
-</pre>
+
 ## Methods ##
 
 ### remove(removeFiles) ###
-<pre>  
+  
 Removes the profile from the registry of profiles.  
   
 @param removeFiles  
        Indicates whether or not the profile directory should be  
        removed in addition.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -37,7 +37,7 @@ Removes the profile from the registry of profiles.
 </table>
 
 ### lock(aUnlocker) ###
-<pre>  
+  
 Lock this profile using platform-specific locking methods.  
   
 @param lockFile If locking fails, this may return a lockFile object  
@@ -48,7 +48,7 @@ Lock this profile using platform-specific locking methods.
         it.  
 @throws NS_ERROR_FILE_ACCESS_DENIED if the profile was already locked.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -80,18 +80,17 @@ Lock this profile using platform-specific locking methods.
 ## Attributes ##
 
 ### rootDir ###
-<pre>  
+  
 The location of the profile directory.  
   
-</pre>
+
 ### localDir ###
-<pre>  
+  
 The location of the profile local directory, which may be the same as  
 the root directory.  See nsIProfileLock::localDirectory.  
   
-</pre>
+
 ### name ###
-<pre>  
+  
 The name of the profile.  
   
-</pre>

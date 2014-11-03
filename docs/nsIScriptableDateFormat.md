@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIScriptableDateFormat #
-<pre>  
+  
 Format date and time in a human readable format.  
   
-</pre>
+
 ## Methods ##
 
 ### FormatDateTime(locale, dateFormatSelector, timeFormatSelector, year, month, day, hour, minute, second) ###
-<pre>  
+  
 Format the given date and time in a human readable format.  
   
 The underlying operating system is used to format the date and time.  
@@ -47,7 +47,7 @@ you depend on any specific format or language.
 @return The date and time formatted as human readable text according to  
         user preferences or the given locale.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -96,28 +96,28 @@ you depend on any specific format or language.
 </table>
 
 ### FormatDate(locale, dateFormatSelector, year, month, day) ###
-<pre>  
+  
 Format the given date in a human readable format.  
   
 See FormatDateTime for details.  
   
-</pre>
+
 ### FormatTime(locale, timeFormatSelector, hour, minute, second) ###
-<pre>  
+  
 Format the given time in a human readable format.  
   
 See FormatDateTime for details.  
   
-</pre>
+
 ## Constants ##
 
 ### dateFormatNone ###
-<pre>  
+  
 Do not include the date in the format string.  
   
-</pre>
+
 ### dateFormatLong ###
-<pre>  
+  
 Provide the long date format.  
   
 NOTE:  
@@ -132,46 +132,45 @@ same output, and since we are aiming at human readers, it does not make
 sense to achieve exact same result. We will do just enough as the  
 platform allow us to do.   
   
-</pre>
+
 ### dateFormatShort ###
-<pre>  
+  
 Provide the short date format. See also dateFormatLong.  
   
-</pre>
+
 ### dateFormatYearMonth ###
-<pre>  
+  
 Format using only the year and month.  
   
-</pre>
+
 ### dateFormatWeekday ###
-<pre>  
+  
 Provide the Week day (e.g. Mo, Mon, Monday or similar).  
   
-</pre>
+
 ### timeFormatNone ###
-<pre>  
+  
 Don't include the time in the format string.  
   
-</pre>
+
 ### timeFormatSeconds ###
-<pre>  
+  
 Provide the time format with seconds.  
   
-</pre>
+
 ### timeFormatNoSeconds ###
-<pre>  
+  
 Provide the time format without seconds.  
   
-</pre>
+
 ### timeFormatSecondsForce24Hour ###
-<pre>  
+  
 Provide the time format with seconds, and force the time format to use  
 24-hour clock, regardless of the locale conventions.  
   
-</pre>
+
 ### timeFormatNoSecondsForce24Hour ###
-<pre>  
+  
 Provide the time format without seconds, and force the time format to use  
 24-hour clock, regardless of the locale conventions.  
   
-</pre>

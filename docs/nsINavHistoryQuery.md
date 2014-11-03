@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsINavHistoryQuery #
-<pre>  
+  
 This object encapsulates all the query parameters you're likely to need  
 when building up history UI. All parameters are ANDed together.  
   
@@ -15,40 +15,40 @@ so that most queries can be done in only one SQL query. This is important
 because, if the user has their profile on a networked drive, query latency  
 can be non-negligible.  
   
-</pre>
+
 ## Methods ##
 
 ### setTransitions(transitions, count) ###
-<pre>  
+  
 When the set of transitions is nonempty, results are limited to pages which  
 have at least one visit for each of the transition types.  
 @note: For searching on more than one transition this can be very slow.  
   
 Limit results to the specified list of transition types.  
   
-</pre>
+
 ### getTransitions(count, transitions) ###
-<pre>  
+  
 Get the transitions set for this query.  
   
-</pre>
+
 ### getFolders(count, folders) ###
-<pre>  
+  
 Limit results to items that are in all of the given folders.  
   
-</pre>
+
 ### setFolders(folders, folderCount) ###
-<pre>  
+  
 For the special result type RESULTS_AS_TAG_CONTENTS we can define only  
 one folder that must be a tag folder. This is not recursive so results  
 will be returned from the first level of that folder.  
   
-</pre>
+
 ### clone() ###
-<pre>  
+  
 Creates a new query item with the same parameters of this one.  
   
-</pre>
+
 ## Attributes ##
 
 ### beginTime ###
@@ -68,40 +68,40 @@ Creates a new query item with the same parameters of this one.
 ### absoluteEndTime ###
 
 ### searchTerms ###
-<pre>  
+  
 Text search terms.  
   
-</pre>
+
 ### hasSearchTerms ###
 
 ### minVisits ###
-<pre>  
+  
 Set lower or upper limits for how many times an item has been  
 visited.  The default is -1, and in that case all items are  
 matched regardless of their visit count.  
   
-</pre>
+
 ### maxVisits ###
 
 ### transitionCount ###
-<pre>  
+  
 Get the count of the set query transitions.  
   
-</pre>
+
 ### onlyBookmarked ###
-<pre>  
+  
 When set, returns only bookmarked items, when unset, returns anything. Setting this  
 is equivalent to listing all bookmark folders in the 'folders' parameter.  
   
-</pre>
+
 ### domainIsHost ###
-<pre>  
+  
 This controls the meaning of 'domain', and whether it is an exact match  
 'domainIsHost' = true, or hierarchical (= false).  
   
-</pre>
+
 ### domain ###
-<pre>  
+  
 This is the host or domain name (controlled by domainIsHost). When  
 domainIsHost, domain only does exact matching on host names. Otherwise,  
 it will return anything whose host name ends in 'domain'.  
@@ -111,27 +111,27 @@ is a real query and will match any URI that has no host name (local files
 and such). Set this to NULL (in C++ use SetIsVoid) if you don't want  
 domain matching.  
   
-</pre>
+
 ### hasDomain ###
 
 ### uriIsPrefix ###
-<pre>  
+  
 Controls the interpretation of 'uri'. When unset (default), the URI will  
 request an exact match of the specified URI. When set, any history entry  
 beginning in 'uri' will match. For example "http://bar.com/foo" will match  
 "http://bar.com/foo" as well as "http://bar.com/foo/baz.gif".  
   
-</pre>
+
 ### uri ###
-<pre>  
+  
 This is a URI to match, to, for example, find out every time you visited  
 a given URI. Use uriIsPrefix to control whether this is an exact match.  
   
-</pre>
+
 ### hasUri ###
 
 ### annotationIsNot ###
-<pre>  
+  
 Test for existence or non-existence of a given annotation. We don't  
 currently support >1 annotation name per query. If 'annotationIsNot' is  
 true, we test for the non-existence of the specified annotation.  
@@ -144,13 +144,13 @@ returned as well as anything else that may have been tagged with an
 annotation. This will only work for RESULTS_AS_URI since there will be  
 no visits for these items.  
   
-</pre>
+
 ### annotation ###
 
 ### hasAnnotation ###
 
 ### tags ###
-<pre>  
+  
 Limit results to items that are tagged with all of the given tags.  This  
 attribute must be set to an array of strings.  When called as a getter it  
 will return an array of strings sorted ascending in lexicographical order.  
@@ -160,20 +160,20 @@ when setting the attribute, but the getter returns only unique tags.
 To search for items that are tagged with any given tags rather than all,  
 multiple queries may be passed to nsINavHistoryService.executeQueries().  
   
-</pre>
+
 ### tagsAreNot ###
-<pre>  
+  
 If 'tagsAreNot' is true, the results are instead limited to items that  
 are not tagged with any of the given tags.  This attribute is used in  
 conjunction with the 'tags' attribute.  
   
-</pre>
+
 ### folderCount ###
 
 ## Constants ##
 
 ### TIME_RELATIVE_EPOCH ###
-<pre>  
+  
 Time range for results (INCLUSIVE). The *TimeReference is one of the  
 constants TIME_RELATIVE_* which indicates how to interpret the  
 corresponding time value.  
@@ -197,7 +197,7 @@ time is considered.
 You can read absolute*Time to get the time value that the currently loaded  
 reference points + offset resolve to.  
   
-</pre>
+
 ### TIME_RELATIVE_TODAY ###
 
 ### TIME_RELATIVE_NOW ###

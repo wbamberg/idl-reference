@@ -6,24 +6,24 @@ layout: default
 </div>
 
 # nsIProxyInfo #
-<pre>  
+  
 This interface identifies a proxy server.  
   
-</pre>
+
 ## Attributes ##
 
 ### host ###
-<pre>  
+  
 This attribute specifies the hostname of the proxy server.  
   
-</pre>
+
 ### port ###
-<pre>  
+  
 This attribute specifies the port number of the proxy server.  
   
-</pre>
+
 ### type ###
-<pre>  
+  
 This attribute specifies the type of the proxy server as an ASCII string.  
   
 Some special values for this attribute include (but are not limited to)  
@@ -37,44 +37,43 @@ the following:
   
 A future version of this interface may define additional types.  
   
-</pre>
+
 ### flags ###
-<pre>  
+  
 This attribute specifies flags that modify the proxy type.  The value of  
 this attribute is the bit-wise combination of the Proxy Flags defined  
 below.  Any undefined bits are reserved for future use.  
   
-</pre>
+
 ### resolveFlags ###
-<pre>  
+  
 This attribute specifies flags that were used by nsIProxyProtocolService when  
 creating this ProxyInfo element.   
   
-</pre>
+
 ### failoverTimeout ###
-<pre>  
+  
 This attribute specifies the failover timeout in seconds for this proxy.  
 If a nsIProxyInfo is reported as failed via nsIProtocolProxyService::  
 getFailoverForProxy, then the failed proxy will not be used again for this  
 many seconds.  
   
-</pre>
+
 ### failoverProxy ###
-<pre>  
+  
 This attribute specifies the proxy to failover to when this proxy fails.  
   
-</pre>
+
 ## Constants ##
 
 ### TRANSPARENT_PROXY_RESOLVES_HOST ###
-<pre>************************************************************************  
+************************************************************************  
 The following "Proxy Flags" may be bit-wise combined to construct the  
 flags attribute defined on this interface.  All unspecified bits are  
 reserved for future use.  
   
-</pre><pre>  
+  
 This flag is set if the proxy is to perform name resolution itself.  If  
 this is the case, the hostname is used in some fashion, and we shouldn't  
 do any form of DNS lookup ourselves.  
   
-</pre>

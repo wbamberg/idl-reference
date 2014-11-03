@@ -10,15 +10,14 @@ layout: default
 ## Methods ##
 
 ### writeToProfilingFile() ###
-<pre>  
+  
 Write the JSON string returned by JSONString to the log defined by  
 the environment variable MOZ_PROFILING_FILE.  
   
-</pre>
+
 ## Attributes ##
 
 ### JSONString ###
-<pre>  
+  
 JSON string of the log.  Use JSON.parse to get it as an object.  
   
-</pre>

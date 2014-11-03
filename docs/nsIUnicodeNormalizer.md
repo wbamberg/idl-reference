@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### NormalizeUnicodeNFD(aSrc, aDest) ###
-<pre>  
+  
 Normalize Unicode (NFD, NFC, NFKD, NFKC).  
   
 NFD: Canonical Decomposition  
@@ -23,7 +23,7 @@ Reference: Unicode Standard, TR15, Unicode Normalization Forms
 @param aDest        [OUT] A pointer to an output buffer provided by a callee.  
 @return             NS_OK for success,   
   
-</pre>
+
 #### Parameters ####
 
 <table>

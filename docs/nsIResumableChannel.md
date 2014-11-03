@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### resumeAt(startPos, entityID) ###
-<pre>  
+  
 Prepare this channel for resuming. The request will not start until  
 asyncOpen or open is called. Calling resumeAt after open or asyncOpen  
 has been called has undefined behaviour.  
@@ -29,7 +29,7 @@ Similarly, the status of this channel during OnStartRequest may be
 In both of these cases, no OnDataAvailable will be called, and  
  OnStopRequest will immediately follow with the same status code.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -52,8 +52,7 @@ In both of these cases, no OnDataAvailable will be called, and
 ## Attributes ##
 
 ### entityID ###
-<pre>  
+  
 The entity id for this URI. Available after OnStartRequest.  
 @throw NS_ERROR_NOT_RESUMABLE if this load is not resumable.  
   
-</pre>

@@ -12,7 +12,7 @@ layout: default
 ### killChild() ###
 
 ### assertPermission(aPermission) ###
-<pre>  
+  
 Return true if the "remote" process has |aPermission|.  This is  
 intended to be used by JS implementations of cross-process DOM  
 APIs, like so  
@@ -31,9 +31,9 @@ though it doesn't hurt anything either.
 Note: If the remote content process does *not* have |aPermission|,  
 it will be killed as a precaution.  
   
-</pre>
+
 ### assertContainApp(aManifestURL) ###
-<pre>  
+  
 Return true if the "remote" process has |aManifestURL|.  This is  
 intended to be used by JS implementations of cross-process DOM  
 APIs, like so  
@@ -52,11 +52,11 @@ though it doesn't hurt anything either.
 Note: If the remote content process does *not* contain |aManifestURL|,  
 it will be killed as a precaution.  
   
-</pre>
+
 ### assertAppHasPermission(aPermission) ###
 
 ### assertAppHasStatus(aStatus) ###
-<pre>  
+  
 Return true if the "remote" process' principal has an appStatus equal to  
 |aStatus|.  
   
@@ -68,4 +68,3 @@ though it doesn't hurt anything either.
 Note: If the remote content process does *not* has the |aStatus|,  
 it will be killed as a precaution.  
   
-</pre>

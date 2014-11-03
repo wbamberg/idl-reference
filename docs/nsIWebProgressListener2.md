@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIWebProgressListener2 #
-<pre>  
+  
 An extended version of nsIWebProgressListener.  
   
-</pre>
+
 ## Methods ##
 
 ### onProgressChange64(aWebProgress, aRequest, aCurSelfProgress, aMaxSelfProgress, aCurTotalProgress, aMaxTotalProgress) ###
-<pre>  
+  
 Notification that the progress has changed for one of the requests  
 associated with aWebProgress.  Progress totals are reset to zero when all  
 requests in aWebProgress complete (corresponding to onStateChange being  
@@ -40,7 +40,7 @@ NOTE: If any progress value is unknown, then its value is replaced with -1.
   
 @see nsIWebProgressListener2::onProgressChange64  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -84,7 +84,7 @@ NOTE: If any progress value is unknown, then its value is replaced with -1.
 </table>
 
 ### onRefreshAttempted(aWebProgress, aRefreshURI, aMillis, aSameURI) ###
-<pre>  
+  
 Notification that a refresh or redirect has been requested in aWebProgress  
 For example, via a <meta http-equiv="refresh"> or an HTTP Refresh: header  
   
@@ -103,7 +103,7 @@ For example, via a <meta http-equiv="refresh"> or an HTTP Refresh: header
 @return True if the refresh may proceed.  
         False if the refresh should be aborted.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

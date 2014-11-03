@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getUsagesArrayResult(verified, count, usages) ###
-<pre>  
+  
  This interface reflects a container of  
  verification results. Call will not block.  
   
@@ -31,7 +31,7 @@ layout: default
  @param count The number of human readable usages returned.  
  @param usages The array of human readable usages.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

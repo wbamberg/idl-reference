@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMHTMLAreaElement #
-<pre>  
+  
 The nsIDOMHTMLAreaElement interface is the interface to a [X]HTML  
 area element.  
   
@@ -16,7 +16,7 @@ http://www.w3.org/TR/DOM-Level-2-HTML/
 with changes from the work-in-progress WHATWG HTML specification:  
 http://www.whatwg.org/specs/web-apps/current-work/  
   
-</pre>
+
 ## Methods ##
 
 ### toString() ###

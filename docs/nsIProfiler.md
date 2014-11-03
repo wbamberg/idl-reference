@@ -30,7 +30,7 @@ layout: default
 ### GetFeatures(aCount, aFeatures) ###
 
 ### getSharedLibraryInformation() ###
-<pre>  
+  
 Returns a JSON string of an array of shared library objects.  
 Every object has three properties: start, end, and name.  
 start and end are integers describing the address range that the library  
@@ -40,4 +40,3 @@ On Windows profiling builds, the shared library objects will have
 additional pdbSignature and pdbAge properties for uniquely identifying  
 shared library versions for stack symbolication.  
   
-</pre>

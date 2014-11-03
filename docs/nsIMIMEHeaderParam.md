@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getParameter(aHeaderVal, aParamName, aFallbackCharset, aTryLocaleCharset, aLang) ###
-<pre>   
+   
 Given the value of a single header field  (such as  
 Content-Disposition and Content-Type) and the name of a parameter  
 (e.g. filename, name, charset), returns the value of the parameter.  
@@ -57,7 +57,7 @@ code.
                           nsMemory::Free it.  
 @return the value of <code>aParamName</code> in Unichar(UTF-16).  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -115,13 +115,13 @@ code.
 </table>
 
 ### getParameterHTTP(aHeaderVal, aParamName, aFallbackCharset, aTryLocaleCharset, aLang) ###
-<pre>  
+  
 Like getParameter, but disabling encodings and workarounds specific to  
 MIME (as opposed to HTTP).  
   
-</pre>
+
 ### decodeRFC5987Param(aParamVal, aLang) ###
-<pre>   
+   
 Given the value of a header field parameter using the encoding  
 defined in RFC 5987, decode the value into a Unicode string, and extract  
 the optional language parameter.  
@@ -141,7 +141,7 @@ should use this function.
                           empty).  
 @return the decoded parameter value.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -173,7 +173,7 @@ should use this function.
 </table>
 
 ### getParameterInternal(aHeaderVal, aParamName, aCharset, aLang) ###
-<pre>   
+   
 Given the value of a single header field  (such as  
 Content-Disposition and Content-Type) and the name of a parameter  
 (e.g. filename, name, charset), returns the value of the parameter   
@@ -201,7 +201,7 @@ Otherwise, this method would have been made static.
 @return             the value of <code>aParamName</code> after  
                     RFC 2231 decoding but without charset conversion.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -251,7 +251,7 @@ Otherwise, this method would have been made static.
 </table>
 
 ### decodeRFC2047Header(aHeaderVal, aDefaultCharset, aOverrideCharset, aEatContinuation) ###
-<pre>   
+   
 Given a header value, decodes RFC 2047-style encoding and  
 returns the decoded header value in UTF-8 if either it's  
 RFC-2047-encoded or aDefaultCharset is given. Otherwise,  
@@ -274,7 +274,7 @@ char * Mime_DecodeMimeHeader(char *header_val, const char *charset,
 @param aEatContinuation When set, removes CR/LF  
 @return                 decoded header value  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -320,7 +320,7 @@ char * Mime_DecodeMimeHeader(char *header_val, const char *charset,
 </table>
 
 ### decodeParameter(aParamValue, aCharset, aDefaultCharset, aOverrideCharset) ###
-<pre>   
+   
 Given a header parameter, decodes RFC 2047 style encoding (if it's   
 not obtained from RFC 2231 encoding),  converts it to  
 UTF-8 and returns the result in UTF-8 if an attempt to extract   
@@ -349,7 +349,7 @@ char * mime_decode_filename(char *name, const char *charset,
                         <code>aDefaultCharset</code>  
 @return                 decoded parameter   
   
-</pre>
+
 #### Parameters ####
 
 <table>

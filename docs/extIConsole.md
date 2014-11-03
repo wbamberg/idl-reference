@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # extIConsole #
-<pre>  
+  
 Interface that gives simplified access to the console  
   
-</pre>
+
 ## Methods ##
 
 ### log(aMsg) ###
-<pre>  
+  
 Sends a given string to the console.  
 @param   aMsg  
          The text to send to the console  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -32,8 +32,7 @@ Sends a given string to the console.
 </table>
 
 ### open() ###
-<pre>  
+  
 Opens the error console window. The console window  
 is focused if already open.  
   
-</pre>

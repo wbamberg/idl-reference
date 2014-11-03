@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIAccessiblePivot #
-<pre>  
+  
 The pivot interface encapsulates a reference to a single place in an accessible  
 subtree. The pivot is a point or a range in the accessible tree. This interface  
 provides traversal methods to move the pivot to next/prev state that complies   
 to a given rule.  
   
-</pre>
+
 ## Methods ##
 
 ### setTextRange(aTextAccessible, aStartOffset, aEndOffset, aIsFromUserInput) ###
-<pre>  
+  
 Set the pivot's text range in a text accessible.  
   
 @param aTextAccessible  [in] the text accessible that contains the desired  
@@ -28,7 +28,7 @@ Set the pivot's text range in a text accessible.
 @throws NS_ERROR_INVALID_ARG when the offset exceeds the accessible's  
   character count.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -64,7 +64,7 @@ Set the pivot's text range in a text accessible.
 </table>
 
 ### moveNext(aRule, aAnchor, aIncludeStart, aIsFromUserInput) ###
-<pre>  
+  
 Move pivot to next object, from current position or given anchor,  
 complying to given traversal rule.  
   
@@ -76,7 +76,7 @@ complying to given traversal rule.
                           (default is true).  
 @return true on success, false if there are no new nodes to traverse to.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -121,7 +121,7 @@ complying to given traversal rule.
 </table>
 
 ### movePrevious(aRule, aAnchor, aIncludeStart, aIsFromUserInput) ###
-<pre>  
+  
 Move pivot to previous object, from current position or given anchor,  
 complying to given traversal rule.  
   
@@ -133,7 +133,7 @@ complying to given traversal rule.
                           (default is true).  
 @return true on success, false if there are no new nodes to traverse to.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -178,7 +178,7 @@ complying to given traversal rule.
 </table>
 
 ### moveFirst(aRule, aIsFromUserInput) ###
-<pre>  
+  
 Move pivot to first object in subtree complying to given traversal rule.  
   
 @param aRule            [in] traversal rule to use.  
@@ -186,7 +186,7 @@ Move pivot to first object in subtree complying to given traversal rule.
                           (default is true).  
 @return true on success, false if there are no new nodes to traverse to.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -218,14 +218,14 @@ Move pivot to first object in subtree complying to given traversal rule.
 </table>
 
 ### moveLast(aRule, aIsFromUserInput) ###
-<pre>  
+  
 Move pivot to last object in subtree complying to given traversal rule.  
   
 @param aRule            [in] traversal rule to use.  
 @param aIsFromUserInput [in] the pivot changed because of direct user input  
                           (default is true).  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -246,7 +246,7 @@ Move pivot to last object in subtree complying to given traversal rule.
 </table>
 
 ### moveNextByText(aBoundary, aIsFromUserInput) ###
-<pre>  
+  
 Move pivot to next text range.  
   
 @param aBoundary        [in] type of boundary for next text range,  
@@ -255,7 +255,7 @@ Move pivot to next text range.
                           (default is true).  
 @return true on success, false if there are is no more text.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -288,7 +288,7 @@ Move pivot to next text range.
 </table>
 
 ### movePreviousByText(aBoundary, aIsFromUserInput) ###
-<pre>  
+  
 Move pivot to previous text range.  
   
 @param aBoundary        [in] type of boundary for next text range,  
@@ -297,7 +297,7 @@ Move pivot to previous text range.
                           (default is true).  
 @return true on success, false if there are is no more text.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -330,7 +330,7 @@ Move pivot to previous text range.
 </table>
 
 ### moveToPoint(aRule, aX, aY, aIgnoreNoMatch, aIsFromUserInput) ###
-<pre>  
+  
 Move pivot to given coordinate in screen pixels.  
   
 @param aRule            [in]  raversal rule to use.  
@@ -342,7 +342,7 @@ Move pivot to given coordinate in screen pixels.
                           (default is true).  
 @return true on success, false if the pivot has not been moved.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -393,12 +393,12 @@ Move pivot to given coordinate in screen pixels.
 </table>
 
 ### addObserver(aObserver) ###
-<pre>  
+  
 Add an observer for pivot changes.  
   
 @param aObserver [in] the observer object to be notified of pivot changes.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -412,12 +412,12 @@ Add an observer for pivot changes.
 </table>
 
 ### removeObserver(aObserver) ###
-<pre>  
+  
 Remove an observer for pivot changes.  
   
 @param aObserver [in] the observer object to remove from being notified.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -433,30 +433,30 @@ Remove an observer for pivot changes.
 ## Attributes ##
 
 ### position ###
-<pre>  
+  
 The accessible the pivot is currently pointed at.  
   
-</pre>
+
 ### root ###
-<pre>  
+  
 The root of the subtree in which the pivot traverses.  
   
-</pre>
+
 ### modalRoot ###
-<pre>  
+  
 The temporary modal root to which traversal is limited to.  
   
-</pre>
+
 ### startOffset ###
-<pre>  
+  
 The start offset of the text range the pivot points at, otherwise -1.  
   
-</pre>
+
 ### endOffset ###
-<pre>  
+  
 The end offset of the text range the pivot points at, otherwise -1.  
   
-</pre>
+
 ## Constants ##
 
 ### CHAR_BOUNDARY ###

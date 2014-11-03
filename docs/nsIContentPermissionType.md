@@ -6,26 +6,25 @@ layout: default
 </div>
 
 # nsIContentPermissionType #
-<pre>  
+  
  Interface provides the request type and its access.  
   
-</pre>
+
 ## Attributes ##
 
 ### type ###
-<pre>  
+  
  The type of the permission request, such as  
  "geolocation".  
   
-</pre>
+
 ### access ###
-<pre>  
+  
  The access of the permission request, such as  
  "read".  
   
-</pre>
+
 ### options ###
-<pre>  
+  
 The array of available options.  
   
-</pre>

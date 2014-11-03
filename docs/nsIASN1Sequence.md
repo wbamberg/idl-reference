@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIASN1Sequence #
-<pre>  
+  
 This represents a sequence of ASN.1 objects,  
 where ASN.1 is "Abstract Syntax Notation number One".  
   
@@ -29,25 +29,24 @@ when working with visual reprenstation of ASN.1 objects
 in a human user interface, like in a tree widget  
 where open/close state of nodes must be remembered.  
   
-</pre>
+
 ## Attributes ##
 
 ### ASN1Objects ###
-<pre>  
+  
  The array of objects stored in the sequence.  
   
-</pre>
+
 ### isValidContainer ###
-<pre>  
+  
  Whether the node at this position in the ASN.1 data structure  
  sequence contains sub elements understood by the  
  application.  
   
-</pre>
+
 ### isExpanded ###
-<pre>  
+  
  Whether the contained objects should be shown or hidden.  
  A UI implementation can use this flag to store the current  
  expansion state when shown in a tree widget.  
   
-</pre>

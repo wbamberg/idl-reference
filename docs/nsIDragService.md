@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### invokeDragSession(aDOMNode, aTransferables, aRegion, aActionType) ###
-<pre>  
+  
 Starts a modal drag session with an array of transaferables   
   
 @param  aTransferables - an array of transferables to be dragged  
@@ -18,7 +18,7 @@ Starts a modal drag session with an array of transaferables
            in window coordinates.  
 @param  aActionType - specified which of copy/move/link are allowed  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -45,7 +45,7 @@ Starts a modal drag session with an array of transaferables
 </table>
 
 ### invokeDragSessionWithImage(aDOMNode, aTransferableArray, aRegion, aActionType, aImage, aImageX, aImageY, aDragEvent, aDataTransfer) ###
-<pre>  
+  
 Starts a modal drag session using an image. The first four arguments are  
 the same as invokeDragSession.  
   
@@ -70,45 +70,45 @@ displayed. The document selection is hidden while drawing.
 The aDragEvent must be supplied as the current screen coordinates of the  
 event are needed to calculate the image location.  
   
-</pre>
+
 ### invokeDragSessionWithSelection(aSelection, aTransferableArray, aActionType, aDragEvent, aDataTransfer) ###
-<pre>  
+  
 Start a modal drag session using the selection as the drag image.  
 The aDragEvent must be supplied as the current screen coordinates of the  
 event are needed to calculate the image location.  
   
-</pre>
+
 ### getCurrentSession() ###
-<pre>  
+  
 Returns the current Drag Session    
   
-</pre>
+
 ### startDragSession() ###
-<pre>  
+  
 Tells the Drag Service to start a drag session. This is called when  
 an external drag occurs  
   
-</pre>
+
 ### endDragSession(aDoneDrag) ###
-<pre>  
+  
 Tells the Drag Service to end a drag session. This is called when  
 an external drag occurs  
   
 If aDoneDrag is true, the drag has finished, otherwise the drag has  
 just left the window.  
   
-</pre>
+
 ### fireDragEventAtSource(aMsg) ###
-<pre>  
+  
 Fire a drag event at the source of the drag  
   
-</pre>
+
 ### suppress() ###
-<pre>  
+  
 Increase/decrease dragging suppress level by one.  
 If level is greater than one, dragging is disabled.  
   
-</pre>
+
 ### unsuppress() ###
 
 ### dragMoved(aX, aY) ###

@@ -18,13 +18,13 @@ layout: default
 ### getRawCertList() ###
 
 ### equals(other) ###
-<pre>  
+  
 Test whether two certificate list instances represent the same  
 certificate list.  
   
 @return Whether the certificate lists are equal  
   
-</pre>
+
 #### Returns ####
 
 <table>

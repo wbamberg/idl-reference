@@ -10,7 +10,7 @@ layout: default
 ## Attributes ##
 
 ### mozbrowser ###
-<pre>  
+  
 <iframe> element may have the mozbrowser attribute.  
   
 The mozbrowser attribute has no effect unless the <iframe> element is  
@@ -23,4 +23,3 @@ This will be documented eventually, but for more information at the moment,
 see dom/browser-element/BrowserElement{Child,Parent}.js.  
   
   
-</pre>

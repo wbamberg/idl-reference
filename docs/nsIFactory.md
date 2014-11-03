@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIFactory #
-<pre>  
+  
 A class factory allows the creation of nsISupports derived  
 components without specifying a concrete base class.    
   
-</pre>
+
 ## Methods ##
 
 ### createInstance(aOuter, iid, result) ###
-<pre>  
+  
 Creates an instance of a component.  
   
 @param aOuter Pointer to a component that wishes to be aggregated  
@@ -28,7 +28,7 @@ Creates an instance of a component.
                                   component is not aggregatable.  
         NS_ERROR* - Method failure.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ Creates an instance of a component.
 </table>
 
 ### lockFactory(lock) ###
-<pre>  
+  
 LockFactory provides the client a way to keep the component  
 in memory until it is finished with it. The client can call  
 LockFactory(PR_TRUE) to lock the factory and LockFactory(PR_FALSE)  
@@ -70,7 +70,7 @@ to release the factory.
 @param lock - Must be PR_TRUE or PR_FALSE  
 @throws NS_ERROR* - Method failure.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

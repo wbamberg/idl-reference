@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # imgIEncoder #
-<pre>  
+  
 imgIEncoder interface  
   
-</pre>
+
 ## Methods ##
 
 ### initFromData(data, length, width, height, stride, inputFormat, outputOptions) ###

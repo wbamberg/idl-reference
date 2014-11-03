@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIWebNavigation #
-<pre>  
+  
 The nsIWebNavigation interface defines an interface for navigating the web.  
 It provides methods and attributes to direct an object to navigate to a new  
 location, stop or restart an in process load, or determine where the object  
 has previously gone.  
   
-</pre>
+
 ## Methods ##
 
 ### goBack() ###
-<pre>  
+  
 Tells the object to navigate to the previous session history item.  When a  
 page is loaded from session history, all content is loaded from the cache  
 (if available) and page state (such as form values and scroll position) is  
@@ -26,9 +26,9 @@ restored.
        Indicates that the call was unexpected at this time, which implies  
        that canGoBack is false.  
   
-</pre>
+
 ### goForward() ###
-<pre>  
+  
 Tells the object to navigate to the next session history item.  When a  
 page is loaded from session history, all content is loaded from the cache  
 (if available) and page state (such as form values and scroll position) is  
@@ -38,18 +38,18 @@ restored.
        Indicates that the call was unexpected at this time, which implies  
        that canGoForward is false.  
   
-</pre>
+
 ### gotoIndex(index) ###
-<pre>  
+  
 Tells the object to navigate to the session history item at a given index.  
   
 @throw NS_ERROR_UNEXPECTED  
        Indicates that the call was unexpected at this time, which implies  
        that session history entry at the given index does not exist.  
   
-</pre>
+
 ### loadURI(aURI, aLoadFlags, aReferrer, aPostData, aHeaders) ###
-<pre>  
+  
 Loads a given URI.  This will give priority to loading the requested URI  
 in the object implementing	this interface.  If it can't be loaded here  
 however, the URI dispatcher will go through its normal process of content  
@@ -80,7 +80,7 @@ loading.
            ( HEADER "\r\n" )*  
        This parameter is optional and may be null.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -132,7 +132,7 @@ loading.
 </table>
 
 ### loadURIWithBase(aURI, aLoadFlags, aReferrer, aPostData, aHeaders, aBaseURI) ###
-<pre>  
+  
 Loads a given URI.  This will give priority to loading the requested URI  
 in the object implementing this interface.  If it can't be loaded here  
 however, the URI dispatcher will go through its normal process of content  
@@ -173,7 +173,7 @@ different to loadURI.
        and cannot be used to resolve aURI.  
        This parameter is optional and may be null.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -234,7 +234,7 @@ different to loadURI.
 </table>
 
 ### reload(aReloadFlags) ###
-<pre>  
+  
 Tells the Object to reload the current page.  There may be cases where the  
 user will be asked to confirm the reload (for example, when it is  
 determined that the request is non-idempotent).  
@@ -248,7 +248,7 @@ determined that the request is non-idempotent).
 @throw NS_BINDING_ABORTED  
        Indicating that the user canceled the reload.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -265,13 +265,13 @@ determined that the request is non-idempotent).
 </table>
 
 ### stop(aStopFlags) ###
-<pre>  
+  
 Stops a load of a URI.  
   
 @param aStopFlags  
        This parameter is one of the stop flags defined above.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -287,189 +287,188 @@ Stops a load of a URI.
 ## Attributes ##
 
 ### canGoBack ###
-<pre>  
+  
 Indicates if the object can go back.  If true this indicates that  
 there is back session history available for navigation.  
   
-</pre>
+
 ### canGoForward ###
-<pre>  
+  
 Indicates if the object can go forward.  If true this indicates that  
 there is forward session history available for navigation  
   
-</pre>
+
 ### document ###
-<pre>  
+  
 Retrieves the current DOM document for the frame, or lazily creates a  
 blank document if there is none.  This attribute never returns null except  
 for unexpected error situations.  
   
-</pre>
+
 ### currentURI ###
-<pre>  
+  
 The currently loaded URI or null.  
   
-</pre>
+
 ### referringURI ###
-<pre>  
+  
 The referring URI for the currently loaded URI or null.  
   
-</pre>
+
 ### sessionHistory ###
-<pre>  
+  
 The session history object used by this web navigation instance.  
   
-</pre>
+
 ## Constants ##
 
 ### LOAD_FLAGS_MASK ###
-<pre>************************************************************************  
+************************************************************************  
 The following flags may be bitwise combined to form the load flags  
 parameter passed to either the loadURI or reload method.  Some of these  
 flags are only applicable to loadURI.  
   
-</pre><pre>  
+  
 This flags defines the range of bits that may be specified.  Flags  
 outside this range may be used, but may not be passed to Reload().  
   
-</pre>
+
 ### LOAD_FLAGS_NONE ###
-<pre>  
+  
 This is the default value for the load flags parameter.  
   
-</pre>
+
 ### LOAD_FLAGS_IS_REFRESH ###
-<pre>  
+  
 Flags 0x1, 0x2, 0x4, 0x8 are reserved for internal use by  
 nsIWebNavigation implementations for now.  
   
-</pre><pre>  
+  
 This flag specifies that the load should have the semantics of an HTML  
 Meta-refresh tag (i.e., that the cache should be bypassed).  This flag  
 is only applicable to loadURI.  
 XXX the meaning of this flag is poorly defined.  
 XXX no one uses this, so we should probably deprecate and remove it.  
   
-</pre>
+
 ### LOAD_FLAGS_IS_LINK ###
-<pre>  
+  
 This flag specifies that the load should have the semantics of a link  
 click.  This flag is only applicable to loadURI.  
 XXX the meaning of this flag is poorly defined.  
   
-</pre>
+
 ### LOAD_FLAGS_BYPASS_HISTORY ###
-<pre>  
+  
 This flag specifies that history should not be updated.  This flag is only  
 applicable to loadURI.  
   
-</pre>
+
 ### LOAD_FLAGS_REPLACE_HISTORY ###
-<pre>  
+  
 This flag specifies that any existing history entry should be replaced.  
 This flag is only applicable to loadURI.  
   
-</pre>
+
 ### LOAD_FLAGS_BYPASS_CACHE ###
-<pre>  
+  
 This flag specifies that the local web cache should be bypassed, but an  
 intermediate proxy cache could still be used to satisfy the load.  
   
-</pre>
+
 ### LOAD_FLAGS_BYPASS_PROXY ###
-<pre>  
+  
 This flag specifies that any intermediate proxy caches should be bypassed  
 (i.e., that the content should be loaded from the origin server).  
   
-</pre>
+
 ### LOAD_FLAGS_CHARSET_CHANGE ###
-<pre>  
+  
 This flag specifies that a reload was triggered as a result of detecting  
 an incorrect character encoding while parsing a previously loaded  
 document.  
   
-</pre>
+
 ### LOAD_FLAGS_STOP_CONTENT ###
-<pre>  
+  
 If this flag is set, Stop() will be called before the load starts  
 and will stop both content and network activity (the default is to  
 only stop network activity).  Effectively, this passes the  
 STOP_CONTENT flag to Stop(), in addition to the STOP_NETWORK flag.  
   
-</pre>
+
 ### LOAD_FLAGS_FROM_EXTERNAL ###
-<pre>  
+  
 A hint this load was prompted by an external program: take care!  
   
-</pre>
+
 ### LOAD_FLAGS_ALLOW_MIXED_CONTENT ###
-<pre>  
+  
 This flag is set when a user explicitly disables the Mixed Content  
 Blocker, and allows Mixed Content to load on an https page.  
   
-</pre>
+
 ### LOAD_FLAGS_FIRST_LOAD ###
-<pre>  
+  
 This flag specifies that this is the first load in this object.  
 Set with care, since setting incorrectly can cause us to assume that  
 nothing was actually loaded in this object if the load ends up being   
 handled by an external application.  This flag must not be passed to  
 Reload.  
   
-</pre>
+
 ### LOAD_FLAGS_ALLOW_POPUPS ###
-<pre>  
+  
 This flag specifies that the load should not be subject to popup  
 blocking checks.  This flag must not be passed to Reload.  
   
-</pre>
+
 ### LOAD_FLAGS_BYPASS_CLASSIFIER ###
-<pre>  
+  
 This flag specifies that the URI classifier should not be checked for  
 this load.  This flag must not be passed to Reload.  
   
-</pre>
+
 ### LOAD_FLAGS_FORCE_ALLOW_COOKIES ###
-<pre>  
+  
 Force relevant cookies to be sent with this load even if normally they  
 wouldn't be.  
   
-</pre>
+
 ### LOAD_FLAGS_DISALLOW_INHERIT_OWNER ###
-<pre>  
+  
 Prevent the owner principal from being inherited for this load.  
   
-</pre>
+
 ### LOAD_FLAGS_ALLOW_THIRD_PARTY_FIXUP ###
-<pre>  
+  
 This flag specifies that the URI may be submitted to a third-party  
 server for correction. This should only be applied to non-sensitive  
 URIs entered by users.  This flag must not be passed to Reload.  
   
-</pre>
+
 ### LOAD_FLAGS_FIXUP_SCHEME_TYPOS ###
-<pre>  
+  
 This flag specifies that common scheme typos should be corrected.  
   
-</pre>
+
 ### STOP_NETWORK ###
-<pre>************************************************************************  
+************************************************************************  
 The following flags may be passed as the stop flags parameter to the stop  
 method defined on this interface.  
   
-</pre><pre>  
+  
 This flag specifies that all network activity should be stopped.  This  
 includes both active network loads and pending META-refreshes.  
   
-</pre>
+
 ### STOP_CONTENT ###
-<pre>  
+  
 This flag specifies that all content activity should be stopped.  This  
 includes animated images, plugins and pending Javascript timeouts.  
   
-</pre>
+
 ### STOP_ALL ###
-<pre>  
+  
 This flag specifies that all activity should be stopped.  
   
-</pre>

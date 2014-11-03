@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIAsyncShutdownService #
-<pre>  
+  
 A service that allows registering shutdown-time dependencies.  
   
-</pre>
+
 ## Methods ##
 
 ### makeBarrier(aName) ###
-<pre>  
+  
 Create a new barrier.  
   
 By convention, the name should respect the following format:  
@@ -23,31 +23,30 @@ e.g.
   
 This attribute is uploaded as part of crash reports.  
   
-</pre>
+
 ## Attributes ##
 
 ### profileBeforeChange ###
-<pre>  
+  
 Barrier for notification profile-before-change.  
   
-</pre>
+
 ### profileChangeTeardown ###
-<pre>  
+  
 Barrier for notification profile-change-teardown.  
   
-</pre>
+
 ### sendTelemetry ###
-<pre>  
+  
 Barrier for notification profile-before-change2.  
   
-</pre>
+
 ### webWorkersShutdown ###
-<pre>  
+  
 Barrier for notification web-workers-shutdown.  
   
-</pre>
+
 ### xpcomThreadsShutdown ###
-<pre>  
+  
 Barrier for notification xpcom-threads-shutdown.  
   
-</pre>

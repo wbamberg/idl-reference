@@ -10,8 +10,7 @@ layout: default
 ## Attributes ##
 
 ### msisdn ###
-<pre>  
+  
 Mobile Station ISDN Number (MSISDN) of the subscriber, aka  
 his phone number.  
   
-</pre>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINetworkInterface #
-<pre>  
+  
 Information about networks that is exposed to network manager API consumers.  
   
-</pre>
+
 ## Methods ##
 
 ### getAddresses(ips, prefixLengths, count) ###
-<pre>  
+  
 Get the list of ip addresses and prefix lengths, ip address could be IPv4  
 or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.  
   
@@ -24,7 +24,7 @@ or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.
   
 @returns the length of the lists.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -55,7 +55,7 @@ or IPv6, typically 1 IPv4 or 1 IPv6 or one of each.
 </table>
 
 ### getGateways(count, gateways) ###
-<pre>  
+  
 Get the list of gateways, could be IPv4 or IPv6, typically 1 IPv4 or 1  
 IPv6 or one of each.  
   
@@ -64,7 +64,7 @@ IPv6 or one of each.
   
 @returns the list of gateways.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -89,7 +89,7 @@ IPv6 or one of each.
 </table>
 
 ### getDnses(count, dnses) ###
-<pre>  
+  
 Get the list of dnses, could be IPv4 or IPv6.  
   
 @param count  
@@ -97,7 +97,7 @@ Get the list of dnses, could be IPv4 or IPv6.
   
 @returns the list of dnses.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -124,28 +124,28 @@ Get the list of dnses, could be IPv4 or IPv6.
 ## Attributes ##
 
 ### state ###
-<pre>  
+  
 Current network state, one of the NETWORK_STATE_* constants.  
   
 When this changes, network interface implementations notify with  
 updateNetworkInterface() API.  
   
-</pre>
+
 ### type ###
-<pre>  
+  
 Network type. One of the NETWORK_TYPE_* constants.  
   
-</pre>
+
 ### name ###
-<pre>  
+  
 Name of the network interface. This identifier is unique.  
   
-</pre>
+
 ### httpProxyHost ###
-<pre>  
+  
 The host name of the http proxy server.  
   
-</pre>
+
 ### httpProxyPort ###
 
 ## Constants ##

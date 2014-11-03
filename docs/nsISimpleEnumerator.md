@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISimpleEnumerator #
-<pre>  
+  
 Used to enumerate over elements defined by its implementor.  
 Although hasMoreElements() can be called independently of getNext(),  
 getNext() must be pre-ceeded by a call to hasMoreElements(). There is  
@@ -14,11 +14,11 @@ no way to "reset" an enumerator, once you obtain one.
   
 @version 1.0  
   
-</pre>
+
 ## Methods ##
 
 ### hasMoreElements() ###
-<pre>  
+  
 Called to determine whether or not the enumerator has  
 any elements that can be returned via getNext(). This method  
 is generally used to determine whether or not to initiate or  
@@ -30,7 +30,7 @@ internal state of enumerator.
 @return true if there are remaining elements in the enumerator.  
         false if there are no more elements in the enumerator.  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -44,7 +44,7 @@ internal state of enumerator.
 </table>
 
 ### getNext() ###
-<pre>  
+  
 Called to retrieve the next element in the enumerator. The "next"  
 element is the first element upon the first call. Must be  
 pre-ceeded by a call to hasMoreElements() which returns PR_TRUE.  
@@ -56,7 +56,7 @@ the elements in the enumerator.
                          to enumerate.  
 @return the next element in the enumeration.  
   
-</pre>
+
 #### Returns ####
 
 <table>

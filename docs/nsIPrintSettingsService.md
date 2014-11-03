@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### initPrintSettingsFromPrinter(aPrinterName, aPrintSettings) ###
-<pre>  
+  
 Initializes certain settings from the native printer into the PrintSettings  
 if aPrinterName is null then it uses the default printer name if it can  
 These settings include, but are not limited to:  
@@ -18,9 +18,9 @@ These settings include, but are not limited to:
   Page Size  
   Number of Copies  
   
-</pre>
+
 ### initPrintSettingsFromPrefs(aPrintSettings, aUsePrinterNamePrefix, aFlags) ###
-<pre>  
+  
 Reads PrintSettings values from Prefs,  
 the values to be read are indicated by the "flags" arg.  
   
@@ -41,9 +41,9 @@ Items not read:
   printerName  
   
   
-</pre>
+
 ### savePrintSettingsToPrefs(aPrintSettings, aUsePrinterNamePrefix, aFlags) ###
-<pre>  
+  
 Writes PrintSettings values to Prefs,   
 the values to be written are indicated by the "flags" arg.  
   
@@ -61,11 +61,11 @@ Items not written:
   printFrameType, printSilent, shrinkToFit, numCopies  
   
   
-</pre>
+
 ## Attributes ##
 
 ### globalPrintSettings ###
-<pre>  
+  
 Returns a "global" PrintSettings object   
 Creates a new the first time, if one doesn't exist.  
   
@@ -73,9 +73,9 @@ Then returns the same object each time after that.
   
 Initializes the globalPrintSettings from the default printer  
   
-</pre>
+
 ### newPrintSettings ###
-<pre>  
+  
 Returns a new, unique PrintSettings object each time.  
   
 For example, if each browser was to have its own unique  
@@ -88,9 +88,8 @@ then it should use "globalPrintSettings"
 Initializes the newPrintSettings from the default printer  
   
   
-</pre>
+
 ### defaultPrinterName ###
-<pre>  
+  
 The name of the last printer used, or else the system default printer.  
   
-</pre>

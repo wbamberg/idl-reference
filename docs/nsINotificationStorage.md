@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINotificationStorage #
-<pre>  
+  
 Interface for notification persistence layer.  
   
-</pre>
+
 ## Methods ##
 
 ### put(origin, id, title, dir, lang, body, tag, icon, alertName, data, behavior) ###
-<pre>  
+  
 Add/replace a notification to the persistence layer.  
   
 @param origin: the origin/app of this notification  
@@ -30,7 +30,7 @@ Add/replace a notification to the persistence layer.
                   it. Built from origin and tag or id depending  
                   whether there is a tag defined.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -91,7 +91,7 @@ Add/replace a notification to the persistence layer.
 </table>
 
 ### get(origin, tag, aCallback) ###
-<pre>  
+  
 Retrieve a list of notifications.  
   
 @param origin: the origin/app for which to fetch notifications from  
@@ -99,7 +99,7 @@ Retrieve a list of notifications.
 @param callback: nsINotificationStorageCallback, used for  
                  returning notifications objects  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -126,13 +126,13 @@ Retrieve a list of notifications.
 </table>
 
 ### delete(origin, id) ###
-<pre>  
+  
 Remove a notification from storage.  
   
 @param origin: the origin/app to delete the notification from  
 @param id: the uuid for the notification to delete  
   
-</pre>
+
 #### Parameters ####
 
 <table>

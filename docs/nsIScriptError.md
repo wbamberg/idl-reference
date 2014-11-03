@@ -16,13 +16,13 @@ layout: default
 ## Attributes ##
 
 ### errorMessage ###
-<pre>  
+  
 The error message without any context/line number information.  
   
 @note nsIConsoleMessage.message will return the error formatted  
       with file/line information.  
   
-</pre>
+
 ### sourceName ###
 
 ### sourceLine ###
@@ -34,13 +34,13 @@ The error message without any context/line number information.
 ### flags ###
 
 ### category ###
-<pre>  
+  
 Categories I know about -  
 XUL javascript  
 content javascript (both of these from nsDocShell, currently)  
 system javascript (errors in JS components and other system JS)  
   
-</pre>
+
 ### outerWindowID ###
 
 ### innerWindowID ###
@@ -50,14 +50,13 @@ system javascript (errors in JS components and other system JS)
 ## Constants ##
 
 ### errorFlag ###
-<pre> pseudo-flag for default case */  
-</pre>
+ pseudo-flag for default case */  
+
 ### warningFlag ###
-<pre> message is warning */  
-</pre>
+ message is warning */  
+
 ### exceptionFlag ###
-<pre> exception was thrown for this case - exception-aware hosts can ignore */  
-</pre>
+ exception was thrown for this case - exception-aware hosts can ignore */  
+
 ### strictFlag ###
-<pre> error or warning is due to strict option */  
-</pre>
+ error or warning is due to strict option */  

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsICommandLineHandler #
-<pre>  
+  
 Handles arguments on the command line of an XUL application.  
   
 Each handler is registered in the category "command-line-handler".  
@@ -27,11 +27,11 @@ command-line-handler y-final        @mozilla.org/browser/clh-final;1
       or provide a generic solution of some sort? Don't freeze this interface  
       without thinking about this!  
   
-</pre>
+
 ## Methods ##
 
 ### handle(aCommandLine) ###
-<pre>  
+  
 Process a command line. If this handler finds arguments that it  
 understands, it should perform the appropriate actions (such as opening  
 a window), and remove the arguments from the command-line array.  
@@ -40,15 +40,14 @@ a window), and remove the arguments from the command-line array.
        (if this is STATE_INITIAL_LAUNCH, quits the app).  
        All other exceptions are silently ignored.  
   
-</pre>
+
 ## Attributes ##
 
 ### helpInfo ###
-<pre>  
+  
 When the app is launched with the --help argument, this attribute  
 is retrieved and displayed to the user (on stdout). The text should  
 have embedded newlines which wrap at 76 columns, and should include  
 a newline at the end. By convention, the right column which contains flag  
 descriptions begins at the 24th character.  
   
-</pre>

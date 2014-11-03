@@ -10,10 +10,10 @@ layout: default
 ## Methods ##
 
 ### notify(timer) ###
-<pre>  
+  
 @param aTimer the timer which has expired  
   
-</pre>
+
 #### Parameters ####
 
 <table>

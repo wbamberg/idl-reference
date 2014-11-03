@@ -6,30 +6,30 @@ layout: default
 </div>
 
 # nsINavHistoryObserver #
-<pre>  
+  
 Similar to nsIRDFObserver for history. Note that we don't pass the data  
 source since that is always the global history.  
   
 DANGER! If you are in the middle of a batch transaction, there may be a  
 database transaction active. You can still access the DB, but be careful.  
   
-</pre>
+
 ## Methods ##
 
 ### onBeginUpdateBatch() ###
-<pre>  
+  
 Notifies you that a bunch of things are about to change, don't do any  
 heavy-duty processing until onEndUpdateBatch is called.  
   
-</pre>
+
 ### onEndUpdateBatch() ###
-<pre>  
+  
 Notifies you that we are done doing a bunch of things and you should go  
 ahead and update UI, etc.  
   
-</pre>
+
 ### onVisit(aURI, aVisitID, aTime, aSessionID, aReferringID, aTransitionType, aGUID, aHidden) ###
-<pre>  
+  
 Called when a resource is visited. This is called the first time a  
 resource (page, image, etc.) is seen as well as every subsequent time.  
   
@@ -46,7 +46,7 @@ includeHidden is set). Many observers can ignore _EMBED notifications
 @param aGUID           The unique ID associated with the page.  
 @param aHidden         Whether the visited page is marked as hidden.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -96,7 +96,7 @@ includeHidden is set). Many observers can ignore _EMBED notifications
 </table>
 
 ### onTitleChanged(aURI, aPageTitle, aGUID) ###
-<pre>  
+  
 Called whenever either the "real" title or the custom title of the page  
 changed. BOTH TITLES ARE ALWAYS INCLUDED in this notification, even though  
 only one will change at a time. Often, consumers will want to display the  
@@ -116,7 +116,7 @@ empty string in either case).
 @param aGUID  
        The unique ID associated with the page.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -142,7 +142,7 @@ empty string in either case).
 </table>
 
 ### onFrecencyChanged(aURI, aNewFrecency, aGUID, aHidden, aVisitDate) ###
-<pre>  
+  
 Called when an individual page's frecency has changed.  
   
 This is not called for pages whose frecencies change as the result of some  
@@ -160,7 +160,7 @@ once.  Use onManyFrecenciesChanged to detect such changes.
 @param aVisitDate  
        The page's last visit date.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -198,14 +198,14 @@ once.  Use onManyFrecenciesChanged to detect such changes.
 </table>
 
 ### onManyFrecenciesChanged() ###
-<pre>  
+  
 Called when the frecencies of many pages have changed at once.  
   
 onFrecencyChanged is not called for each of those pages.  
   
-</pre>
+
 ### onDeleteURI(aURI, aGUID, aReason) ###
-<pre>  
+  
 This page and all of its visits are being deleted. Note: the page may not  
 necessarily have actually existed for this function to be called.  
   
@@ -222,7 +222,7 @@ way around this.
 @param aReason  
        Indicates the reason for the removal.  see REASON_* constants.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -248,12 +248,12 @@ way around this.
 </table>
 
 ### onClearHistory() ###
-<pre>  
+  
 Notification that all of history is being deleted.  
   
-</pre>
+
 ### onPageChanged(aURI, aChangedAttribute, aNewValue, aGUID) ###
-<pre>  
+  
 An attribute of this page changed.  
   
 @param aURI  
@@ -265,7 +265,7 @@ An attribute of this page changed.
 @param aGUID  
        The unique ID associated with the page.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -297,7 +297,7 @@ An attribute of this page changed.
 </table>
 
 ### onDeleteVisits(aURI, aVisitTime, aGUID, aReason, aTransitionType) ###
-<pre>  
+  
 Called when some visits of an history entry are expired.  
   
 @param aURI  
@@ -318,7 +318,7 @@ Called when some visits of an history entry are expired.
        If it's a valid TRANSITION_* value, all visits of the specified type  
        have been removed.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -360,18 +360,17 @@ Called when some visits of an history entry are expired.
 ## Constants ##
 
 ### REASON_DELETED ###
-<pre>  
+  
 Removed by the user.  
   
-</pre>
+
 ### REASON_EXPIRED ###
-<pre>  
+  
 Removed by automatic expiration.  
   
-</pre>
+
 ### ATTRIBUTE_FAVICON ###
-<pre>  
+  
 onPageChanged attribute indicating that favicon has been updated.  
 aNewValue parameter will be set to the new favicon URI string.  
   
-</pre>

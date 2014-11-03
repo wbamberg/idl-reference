@@ -12,27 +12,27 @@ layout: default
 ### play(aURL) ###
 
 ### playSystemSound(soundAlias) ###
-<pre>  
+  
 for playing system sounds  
   
 NS_SYSSOUND_* params are obsolete. The new events will not be supported by  
 this method.  You should use playEventSound method instaed.  
   
-</pre>
+
 ### beep() ###
 
 ### init() ###
-<pre>  
+  
 Not strictly necessary, but avoids delay before first sound.  
 The various methods on nsISound call Init() if they need to.  
   
-</pre>
+
 ### playEventSound(aEventId) ###
 
 ## Constants ##
 
 ### EVENT_NEW_MAIL_RECEIVED ###
-<pre>  
+  
 In some situations, playEventSound will be called.  Then, each  
 implementations will play a system sound for the event if it's necessary.  
   
@@ -40,7 +40,7 @@ NOTE: Don't change these values because they are used in
 nsPIPromptService.idl. So, if they are changed, that makes big impact for  
 the embedders.  
   
-</pre>
+
 ### EVENT_ALERT_DIALOG_OPEN ###
 
 ### EVENT_CONFIRM_DIALOG_OPEN ###

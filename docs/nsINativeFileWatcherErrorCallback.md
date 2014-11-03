@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsINativeFileWatcherErrorCallback #
-<pre>  
+  
 The interface for the callback invoked when there is an error.  
   
-</pre>
+
 ## Methods ##
 
 ### complete(xpcomError, osError) ###
-<pre>  
+  
 @param xpcomError The XPCOM error code.  
 @param osError The native OS error (errno under Unix, GetLastError under Windows).  
   
-</pre>
+
 #### Parameters ####
 
 <table>

@@ -6,8 +6,7 @@ layout: default
 </div>
 
 # nsIDOMWindowInternal #
-<pre>  
+  
 Empty interface for compatibility with older versions.  
 @deprecated Use nsIDOMWindow instead  
   
-</pre>

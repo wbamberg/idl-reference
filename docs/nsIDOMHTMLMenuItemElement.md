@@ -6,11 +6,11 @@ layout: default
 </div>
 
 # nsIDOMHTMLMenuItemElement #
-<pre>  
+  
 The nsIDOMHTMLMenuItemElement interface is the interface to a HTML  
 <menuitem> element.  
   
-</pre>
+
 ## Attributes ##
 
 ### type ###

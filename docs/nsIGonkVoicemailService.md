@@ -10,12 +10,11 @@ layout: default
 ## Methods ##
 
 ### notifyStatusChanged(serviceId, hasMessages, messageCount, returnNumber, returnMessage) ###
-<pre>  
+  
 Called when a voicemail notification has been received by the network.  
   
-</pre>
+
 ### notifyInfoChanged(serviceId, number, displayName) ###
-<pre>  
+  
 Called when other voicemail attributes changed.  
   
-</pre>

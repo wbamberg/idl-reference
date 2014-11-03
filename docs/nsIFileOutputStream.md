@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIFileOutputStream #
-<pre>  
+  
 An output stream that lets you stream to a file.  
   
-</pre>
+
 ## Methods ##
 
 ### init(file, ioFlags, perm, behaviorFlags) ###
-<pre>  
+  
 @param file          file to write to  
 @param ioFlags       file open flags listed in prio.h (see  
                      PR_Open documentation) or -1 to open the  
@@ -24,7 +24,7 @@ An output stream that lets you stream to a file.
 @param behaviorFlags flags specifying various behaviors of the class  
        (currently none supported)  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -63,7 +63,7 @@ An output stream that lets you stream to a file.
 ## Constants ##
 
 ### DEFER_OPEN ###
-<pre>  
+  
 See the same constant in nsIFileInputStream. The deferred open will  
 be performed when one of the following is called:  
   - Seek  
@@ -78,4 +78,3 @@ be performed when one of the following is called:
       first write, and if the file is to be created, then it will not  
       appear on the disk until the first write.  
   
-</pre>

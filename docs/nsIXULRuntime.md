@@ -6,53 +6,53 @@ layout: default
 </div>
 
 # nsIXULRuntime #
-<pre>  
+  
 Provides information about the XUL runtime.  
 @status UNSTABLE - This interface is not frozen and will probably change in  
                    future releases. If you need this functionality to be  
                    stable/frozen, please contact Benjamin Smedberg.  
   
-</pre>
+
 ## Methods ##
 
 ### invalidateCachesOnRestart() ###
-<pre>  
+  
 Signal the apprunner to invalidate caches on the next restart.  
 This will cause components to be autoregistered and all  
 fastload data to be re-created.  
   
-</pre>
+
 ### ensureContentProcess() ###
-<pre>  
+  
 Starts a child process. This method is intented to pre-start a  
 content child process so that when it is actually needed, it is  
 ready to go.  
   
 @throw NS_ERROR_NOT_AVAILABLE if not available.  
   
-</pre>
+
 ## Attributes ##
 
 ### inSafeMode ###
-<pre>  
+  
 Whether the application was launched in safe mode.  
   
-</pre>
+
 ### logConsoleErrors ###
-<pre>  
+  
 Whether to write console errors to a log file. If a component  
 encounters startup errors that might prevent the app from showing  
 proper UI, it should set this flag to "true".  
   
-</pre>
+
 ### OS ###
-<pre>  
+  
 A string tag identifying the current operating system. This is taken  
 from the OS_TARGET configure variable. It will always be available.  
   
-</pre>
+
 ### XPCOMABI ###
-<pre>  
+  
 A string tag identifying the binary ABI of the current processor and  
 compiler vtable. This is taken from the TARGET_XPCOM_ABI configure  
 variable. It may not be available on all platforms, especially  
@@ -66,86 +66,86 @@ This value should almost always be used in combination with "OS".
   
 @throw NS_ERROR_NOT_AVAILABLE if not available.  
   
-</pre>
+
 ### widgetToolkit ###
-<pre>  
+  
 A string tag identifying the target widget toolkit in use.  
 This is taken from the MOZ_WIDGET_TOOLKIT configure variable.  
   
-</pre>
+
 ### processType ###
-<pre>  
+  
 The type of the caller's process.  Returns one of the values above.  
   
-</pre>
+
 ### processID ###
-<pre>  
+  
 The system process ID of the caller's process.  
   
-</pre>
+
 ### browserTabsRemoteAutostart ###
-<pre>  
+  
 If true, browser tabs may be opened by default in a different process  
 from the main browser UI.  
   
-</pre>
+
 ### accessibilityEnabled ###
-<pre>  
+  
 If true, the accessibility service is running.  
   
-</pre>
+
 ### keyboardMayHaveIME ###
-<pre>  
+  
 This returns a very rough approximation of whether IME is likely  
 to be used for the browser session. DO NOT USE! This is temporary  
 and will be removed.  
   
-</pre>
+
 ### replacedLockTime ###
-<pre>  
+  
 Modification time of the profile lock before the profile was locked on  
 this startup. Used to know the last time the profile was used and not  
 closed cleanly. This is set to 0 if there was no existing profile lock.  
   
-</pre>
+
 ### lastRunCrashID ###
-<pre>  
+  
 Local ID of the minidump generated when the process crashed  
 on the previous run. Can be passed directly to CrashSubmit.submit.  
   
-</pre>
+
 ### isReleaseBuild ###
-<pre>  
+  
 True if this is a RELEASE_BUILD.  
   
-</pre>
+
 ### isOfficialBranding ###
-<pre>  
+  
 True if this build uses official branding (MOZ_OFFICIAL_BRANDING).  
   
-</pre>
+
 ### defaultUpdateChannel ###
-<pre>  
+  
 The default update channel (MOZ_UPDATE_CHANNEL).  
   
-</pre>
+
 ### distributionID ###
-<pre>  
+  
 The distribution ID for this build (MOZ_DISTRIBUTION_ID).  
   
-</pre>
+
 ### isOfficial ###
-<pre>  
+  
 True if this is an official build (MOZILLA_OFFICIAL).  
   
-</pre>
+
 ## Constants ##
 
 ### PROCESS_TYPE_DEFAULT ###
-<pre>  
+  
 The legal values of processType.  
   
-</pre>
+
 ### PROCESS_TYPE_PLUGIN ###
 
 ### PROCESS_TYPE_CONTENT ###

@@ -10,12 +10,11 @@ layout: default
 ## Methods ##
 
 ### getItemAtIndex(index) ###
-<pre>  
+  
 Retrieve the content item associated with the specified index.  
   
-</pre>
+
 ### getIndexOfItem(item) ###
-<pre>  
+  
 Retrieve the index associated with the specified content item.  
   
-</pre>

@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### isAllowed(aAction, aUri) ###
-<pre>  
+  
 Check if the user can do the prescibed action for this uri.  
   
 @param aAction             Action being performed  
 @param aUri                The uri requesting this action  
 @param aWindow             The window generating this event.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -43,7 +43,7 @@ Check if the user can do the prescibed action for this uri.
 </table>
 
 ### requestURIOverride(aTarget, aWindowContext) ###
-<pre>  
+  
 Request that blocked URI(s) be allowed through parental  
 control filters. Returns true if the URI was successfully  
 overriden. Note, may block while native UI is shown.  
@@ -53,7 +53,7 @@ overriden. Note, may block while native UI is shown.
                            should be the root URI of the site.  
 @param window              Window that generates the event.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -77,7 +77,7 @@ overriden. Note, may block while native UI is shown.
 ### requestURIOverrides(aTargets, aWindowContext) ###
 
 ### log(aEntryType, aFlag, aSource, aTarget) ###
-<pre>  
+  
 Log an application specific parental controls  
 event.  
   
@@ -88,7 +88,7 @@ event.
 @param aTarget          The location the content was saved to if  
                         no blocking occurred.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -124,31 +124,31 @@ event.
 ## Attributes ##
 
 ### parentalControlsEnabled ###
-<pre>  
+  
 @returns true if the current user account has parental controls  
 restrictions enabled.  
   
-</pre>
+
 ### blockFileDownloadsEnabled ###
-<pre>  
+  
 @returns true if the current user account parental controls  
 restrictions include the blocking of all file downloads.  
   
-</pre>
+
 ### loggingEnabled ###
-<pre>  
+  
 @returns true if the current user account has parental controls  
 logging enabled. If true, applications should log relevent events  
 using 'log'.  
   
-</pre>
+
 ## Constants ##
 
 ### DOWNLOAD ###
-<pre>  
+  
 Action types that can be blocked for users.  
   
-</pre>
+
 ### INSTALL_EXTENSION ###
 
 ### INSTALL_APP ###
@@ -170,10 +170,10 @@ Action types that can be blocked for users.
 ### IMPORT_SETTINGS ###
 
 ### ePCLog_URIVisit ###
-<pre>  
+  
 Log entry types. Additional types can be defined and implemented  
 as needed. Other possible event types might include email events,  
 media related events, and IM events.   
   
-</pre>
+
 ### ePCLog_FileDownload ###

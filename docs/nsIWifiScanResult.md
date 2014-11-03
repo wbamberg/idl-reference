@@ -16,10 +16,10 @@ layout: default
 ### capabilities ###
 
 ### signalStrength ###
-<pre>  
+  
 Strength of the signal to network.  
   
-</pre>
+
 ### relSignalStrength ###
 
 ### connected ###

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIThreadObserver #
-<pre>  
+  
 This interface provides the observer with hooks to implement a layered  
 event queue.  For example, it is possible to overlay processing events  
 for a GUI toolkit on top of the events for a thread:  
@@ -35,18 +35,18 @@ NOTE: Will be split into two interfaces soon: one for onProcessNextEvent and
       afterProcessNextEvent, then another that inherits the first and adds  
       onDispatchedEvent.  
   
-</pre>
+
 ## Methods ##
 
 ### onDispatchedEvent(thread) ###
-<pre>  
+  
 This method is called after an event has been dispatched to the thread.  
 This method may be called from any thread.   
   
 @param thread  
   The thread where the event is being dispatched.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -60,7 +60,7 @@ This method may be called from any thread.
 </table>
 
 ### onProcessNextEvent(thread, mayWait, recursionDepth) ###
-<pre>  
+  
 This method is called when nsIThread::ProcessNextEvent is called.  It does  
 not guarantee that an event is actually going to be processed.  This method  
 is only called on the target thread.  
@@ -74,7 +74,7 @@ is only called on the target thread.
   Indicates the number of calls to ProcessNextEvent on the call stack in  
   addition to the current call.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -102,7 +102,7 @@ is only called on the target thread.
 </table>
 
 ### afterProcessNextEvent(thread, recursionDepth, eventWasProcessed) ###
-<pre>  
+  
 This method is called (from nsIThread::ProcessNextEvent) after an event  
 is processed.  It does not guarantee that an event was actually processed  
 (depends on the value of |eventWasProcessed|.  This method is only called  
@@ -117,7 +117,7 @@ on the target thread.
   Indicates whether an event was actually processed. May be false if the  
   |mayWait| flag was false when calling nsIThread::ProcessNextEvent().  
   
-</pre>
+
 #### Parameters ####
 
 <table>

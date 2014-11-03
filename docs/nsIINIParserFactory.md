@@ -10,7 +10,6 @@ layout: default
 ## Methods ##
 
 ### createINIParser(aINIFile) ###
-<pre>  
+  
 Create an iniparser instance from a local file.  
   
-</pre>

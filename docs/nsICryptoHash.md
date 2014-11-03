@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsICryptoHash #
-<pre>  
+  
 nsICryptoHash  
 This interface provides crytographic hashing algorithms.  
   
-</pre>
+
 ## Methods ##
 
 ### init(aAlgorithm) ###
-<pre>  
+  
 Initialize the hashing object. This method may be  
 called multiple times with different algorithm types.  
   
@@ -28,7 +28,7 @@ called multiple times with different algorithm types.
 NOTE: This method or initWithString must be called  
       before any other method on this interface is called.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -44,7 +44,7 @@ NOTE: This method or initWithString must be called
 </table>
 
 ### initWithString(aAlgorithm) ###
-<pre>  
+  
 Initialize the hashing object. This method may be  
 called multiple times with different algorithm types.  
   
@@ -56,7 +56,7 @@ called multiple times with different algorithm types.
 NOTE: This method or init must be called before any  
       other method on this interface is called.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -70,7 +70,7 @@ NOTE: This method or init must be called before any
 </table>
 
 ### update(aData, aLen) ###
-<pre>  
+  
 @param aData a buffer to calculate the hash over  
   
 @param aLen the length of the buffer |aData|  
@@ -78,7 +78,7 @@ NOTE: This method or init must be called before any
 @throws NS_ERROR_NOT_INITIALIZED if |init| has not been   
         called.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -98,7 +98,7 @@ NOTE: This method or init must be called before any
 </table>
 
 ### updateFromStream(aStream, aLen) ###
-<pre>  
+  
 Calculates and updates a new hash based on a given data stream.  
   
 @param aStream an input stream to read from.  
@@ -114,7 +114,7 @@ Calculates and updates a new hash based on a given data stream.
         data to be calculated into the hash is not available.  
   
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -136,7 +136,7 @@ Calculates and updates a new hash based on a given data stream.
 </table>
 
 ### finish(aASCII) ###
-<pre>  
+  
 Completes this hash object and produces the actual hash data.  
   
 @param aASCII if true then the returned value is a base-64   
@@ -153,7 +153,7 @@ NOTE: This method may be called any time after |init|
       is called.  This call resets the object to its  
       pre-init state.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -183,13 +183,13 @@ NOTE: This method may be called any time after |init|
 ## Constants ##
 
 ### MD2 ###
-<pre>  
+  
 Hashing Algorithms.  These values are to be used by the  
 |init| method to indicate which hashing function to  
 use.  These values map directly onto the values defined  
 in mozilla/security/nss/lib/cryptohi/hasht.h.  
   
-</pre>
+
 ### MD5 ###
 
 ### SHA1 ###

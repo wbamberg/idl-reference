@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### addDownload(aDownloadType, aSource, aTarget, aDisplayName, aMIMEInfo, aStartTime, aTempFile, aCancelable, aIsPrivate) ###
-<pre>  
+  
 Creates an nsIDownload and adds it to be managed by the download manager.  
   
 @param aSource The source URI of the transfer. Must not be null.  
@@ -50,7 +50,7 @@ Creates an nsIDownload and adds it to be managed by the download manager.
       as the aCancelable object, call this method, set the progressListener  
       as the returned download object, then call saveURI.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -131,7 +131,7 @@ Creates an nsIDownload and adds it to be managed by the download manager.
 </table>
 
 ### getDownload(aID) ###
-<pre>  
+  
 Retrieves a download managed by the download manager.  This can be one that  
 is in progress, or one that has completed in the past and is stored in the  
 database.  
@@ -140,7 +140,7 @@ database.
 @return The download with the specified ID.  
 @throws NS_ERROR_NOT_AVAILABLE if the download is not in the database.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -166,7 +166,7 @@ database.
 </table>
 
 ### getDownloadByGUID(aGUID, aCallback) ###
-<pre>  
+  
 Retrieves a download managed by the download manager.  This can be one that  
 is in progress, or one that has completed in the past and is stored in the  
 database.  The result of this method is returned via an asynchronous callback,  
@@ -176,7 +176,7 @@ with the provided GUID.
 @param aGUID The unique GUID of the download.  
 @param aCallback The callback to invoke with the result of the search.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -196,7 +196,7 @@ with the provided GUID.
 </table>
 
 ### cancelDownload(aID) ###
-<pre>  
+  
 Cancels the download with the specified ID if it's currently in-progress.  
 This calls cancel(NS_BINDING_ABORTED) on the nsICancelable provided by the  
 download.  
@@ -204,7 +204,7 @@ download.
 @param aID The unique ID of the download.  
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -219,7 +219,7 @@ download.
 </table>
 
 ### removeDownload(aID) ###
-<pre>  
+  
 Removes the download with the specified id if it's not currently  
 in-progress.  Whereas cancelDownload simply cancels the transfer, but  
 retains information about it, removeDownload removes all knowledge of it.  
@@ -236,7 +236,7 @@ the guid notification should be relied upon instead.
 @param aID The unique ID of the download.  
 @throws NS_ERROR_FAILURE if the download is active.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -251,7 +251,7 @@ the guid notification should be relied upon instead.
 </table>
 
 ### removeDownloadsByTimeframe(aBeginTime, aEndTime) ###
-<pre>  
+  
 Removes all inactive downloads that were started inclusively within the  
 specified time frame.  
   
@@ -260,7 +260,7 @@ specified time frame.
 @param aEndTime  
        The end time to remove downloads by in microseconds.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -280,13 +280,13 @@ specified time frame.
 </table>
 
 ### pauseDownload(aID) ###
-<pre>  
+  
 Pause the specified download.  
   
 @param aID The unique ID of the download.  
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -301,13 +301,13 @@ Pause the specified download.
 </table>
 
 ### resumeDownload(aID) ###
-<pre>  
+  
 Resume the specified download.  
   
 @param aID The unique ID of the download.  
 @throws NS_ERROR_FAILURE if the download is not in-progress.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -322,7 +322,7 @@ Resume the specified download.
 </table>
 
 ### retryDownload(aID) ###
-<pre>  
+  
 Retries a failed download.  
   
 @param aID The unique ID of the download.  
@@ -331,7 +331,7 @@ Retries a failed download.
           nsIDownloadManager::DOWNLOAD_CANCELED  
           nsIDownloadManager::DOWNLOAD_FAILED  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -349,7 +349,7 @@ Retries a failed download.
 </table>
 
 ### cleanUp() ###
-<pre>   
+   
 Removes completed, failed, and canceled downloads from the list.  
 In global private browsing mode, this operates on the relevant  
 private or public downloads. In per-window mode, it only operates  
@@ -359,9 +359,9 @@ Also notifies observers of the "download-manager-remove-download-gui"
 and "download-manager-remove-download" topics with a null subject to  
 allow any DM consumers to react to the removals.  
   
-</pre>
+
 ### cleanUpPrivate() ###
-<pre>   
+   
 Removes completed, failed, and canceled downloads from the list  
 of private downloads.  
   
@@ -369,86 +369,86 @@ Also notifies observers of the "download-manager-remove-download-gui"
 and "download-manager-remove-download" topics with a null subject to  
 allow any DM consumers to react to the removals.  
   
-</pre>
+
 ### addListener(aListener) ###
-<pre>  
+  
 Adds a listener to the download manager. It is expected that this  
 listener will only access downloads via their deprecated integer id attribute,  
 and when global private browsing compatibility mode is disabled, this listener  
 will receive no notifications for downloads marked private.  
   
-</pre>
+
 ### addPrivacyAwareListener(aListener) ###
-<pre>  
+  
 Adds a listener to the download manager. This listener must be able to  
 understand and use the guid attribute of downloads for all interactions  
 with the download manager.  
   
-</pre>
+
 ### removeListener(aListener) ###
-<pre>  
+  
 Removes a listener from the download manager.  
   
-</pre>
+
 ## Attributes ##
 
 ### DBConnection ###
-<pre>  
+  
 The database connection to the downloads database.  
   
-</pre>
+
 ### privateDBConnection ###
 
 ### canCleanUp ###
-<pre>   
+   
 Whether or not there are downloads that can be cleaned up (removed)  
 i.e. downloads that have completed, have failed or have been canceled.  
 In global private browsing mode, this reports the status of the relevant  
 private or public downloads. In per-window mode, it only reports for  
 public ones.  
   
-</pre>
+
 ### canCleanUpPrivate ###
-<pre>   
+   
 Whether or not there are private downloads that can be cleaned up (removed)  
 i.e. downloads that have completed, have failed or have been canceled.  
   
-</pre>
+
 ### activeDownloadCount ###
-<pre>   
+   
 The number of files currently being downloaded.  
   
 In global private browsing mode, this reports the status of the relevant  
 private or public downloads. In per-window mode, it only reports public  
 ones.  
   
-</pre>
+
 ### activePrivateDownloadCount ###
-<pre>   
+   
 The number of private files currently being downloaded.  
   
-</pre>
+
 ### activeDownloads ###
-<pre>  
+  
 An enumeration of active nsIDownloads  
   
 In global private browsing mode, this reports the status of the relevant  
 private or public downloads. In per-window mode, it only reports public  
 ones.  
   
-</pre>
+
 ### activePrivateDownloads ###
-<pre>  
+  
 An enumeration of active private nsIDownloads  
   
-</pre>
+
 ### defaultDownloadsDirectory ###
-<pre>  
+  
 Returns the platform default downloads directory.  
   
-</pre>
+
 ### userDownloadsDirectory ###
-<pre>  
+  
 Returns the user configured downloads directory.   
 The path is dependent on two user configurable prefs  
 set in preferences:  
@@ -468,69 +468,68 @@ browser.download.dir -
   where downloaded files are saved. The use of which is  
   enabled when folderList equals 2.   
   
-</pre>
+
 ## Constants ##
 
 ### DOWNLOAD_TYPE_DOWNLOAD ###
-<pre>  
+  
 Download type for generic file download.  
   
-</pre>
+
 ### DOWNLOAD_NOTSTARTED ###
-<pre>  
+  
 Download state for uninitialized download object.  
   
-</pre>
+
 ### DOWNLOAD_DOWNLOADING ###
-<pre>  
+  
 Download is currently transferring data.  
   
-</pre>
+
 ### DOWNLOAD_FINISHED ###
-<pre>  
+  
 Download completed including any processing of the target  
 file.  (completed)  
   
-</pre>
+
 ### DOWNLOAD_FAILED ###
-<pre>  
+  
 Transfer failed due to error. (completed)  
   
-</pre>
+
 ### DOWNLOAD_CANCELED ###
-<pre>  
+  
 Download was canceled by the user. (completed)  
   
-</pre>
+
 ### DOWNLOAD_PAUSED ###
-<pre>  
+  
 Transfer was paused by the user.  
   
-</pre>
+
 ### DOWNLOAD_QUEUED ###
-<pre>  
+  
 Download is active but data has not yet been received.  
   
-</pre>
+
 ### DOWNLOAD_BLOCKED_PARENTAL ###
-<pre>  
+  
 Transfer request was blocked by parental controls proxies. (completed)  
   
-</pre>
+
 ### DOWNLOAD_SCANNING ###
-<pre>  
+  
 Transferred download is being scanned by virus scanners.  
   
-</pre>
+
 ### DOWNLOAD_DIRTY ###
-<pre>  
+  
 A virus was detected in the download. The target will most likely  
 no longer exist. (completed)  
   
-</pre>
+
 ### DOWNLOAD_BLOCKED_POLICY ###
-<pre>  
+  
 Win specific: Request was blocked by zone policy settings.  
 (see bug #416683) (completed)  
   
-</pre>

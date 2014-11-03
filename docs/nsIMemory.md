@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIMemory #
-<pre>  
+  
   
 nsIMemory: interface to allocate and deallocate memory. Also provides  
 for notifications in low-memory situations.  
@@ -47,11 +47,11 @@ This will be passed as the extra data when the pressure
 observer has been asked to flush because a malloc() or   
 realloc() has failed.  
   
-</pre>
+
 ## Methods ##
 
 ### alloc(size) ###
-<pre>  
+  
 Allocates a block of memory of a particular size. If the memory   
 cannot be allocated (because of an out-of-memory condition), the  
 process aborts.  
@@ -59,7 +59,7 @@ process aborts.
 @param size - the size of the block to allocate  
 @result the block of memory  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -74,7 +74,7 @@ process aborts.
 </table>
 
 ### realloc(ptr, newSize) ###
-<pre>  
+  
 Reallocates a block of memory to a new size.  
   
 @param ptr - the block of memory to reallocate  
@@ -87,7 +87,7 @@ min(s, size) bytes of ptr's block are copied to the new block.
 If the allocation succeeds, ptr is freed and a pointer to the   
 new block returned.  If the allocation fails, the process aborts.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -108,13 +108,13 @@ new block returned.  If the allocation fails, the process aborts.
 </table>
 
 ### free(ptr) ###
-<pre>  
+  
 Frees a block of memory. Null is a permissible value, in which case  
 nothing happens.   
   
 @param ptr - the block of memory to free  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -128,7 +128,7 @@ nothing happens.
 </table>
 
 ### heapMinimize(immediate) ###
-<pre>  
+  
 Attempts to shrink the heap.  
 @param immediate - if true, heap minimization will occur  
   immediately if the call was made on the main thread. If  
@@ -137,7 +137,7 @@ Attempts to shrink the heap.
 @throws NS_ERROR_FAILURE if 'immediate' is set an the call  
   was not on the application's main thread.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -156,19 +156,18 @@ Attempts to shrink the heap.
 </table>
 
 ### isLowMemory() ###
-<pre>  
+  
 This predicate can be used to determine if we're in a low-memory  
 situation (what constitutes low-memory is platform dependent). This  
 can be used to trigger the memory pressure observers.  
   
 DEPRECATED - Always returns false.  See bug 592308.  
   
-</pre>
+
 ### isLowMemoryPlatform() ###
-<pre>  
+  
 This predicate can be used to determine if the platform is a "low-memory"  
 platform. Callers may use this to dynamically tune their behaviour  
 to favour reduced memory usage at the expense of performance. The value  
 returned by this function will not change over the lifetime of the process.  
   
-</pre>

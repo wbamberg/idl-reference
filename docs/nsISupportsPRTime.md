@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsPRTime #
-<pre>  
+  
 Scriptable storage for NSPR date/time values  
   
-</pre>
+
 ## Methods ##
 
 ### toString() ###

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getCellAt(rowIndex, columnIndex) ###
-<pre>  
+  
 Return the accessible object at the specified row and column in the table.  
 If both row and column index are valid then the corresponding accessible  
 object is returned that represents the requested cell regardless of whether  
@@ -19,7 +19,7 @@ the cell is currently visible (on the screen).
 @param  rowIndex     [in] the row index to retrieve the cell at  
 @param  columnIndex  [in] the column index to retrieve the cell at  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -39,14 +39,14 @@ the cell is currently visible (on the screen).
 </table>
 
 ### getCellIndexAt(rowIndex, columnIndex) ###
-<pre>  
+  
 Translate the given row and column indices into the corresponding cell  
 index.  
   
 @param  rowIndex    [in] the row index to return cell index at  
 @param  columnIndex [in] the column index to return cell index at  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -66,12 +66,12 @@ index.
 </table>
 
 ### getColumnIndexAt(cellIndex) ###
-<pre>  
+  
 Translate the given cell index into the corresponding column index.  
   
 @param  cellIndex  [in] index of the table cell to return column index for  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -85,12 +85,12 @@ Translate the given cell index into the corresponding column index.
 </table>
 
 ### getRowIndexAt(cellIndex) ###
-<pre>  
+  
 Translate the given cell index into the corresponding row index.  
   
 @param cellIndex  [in] index of the table cell to return row index for  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -104,7 +104,7 @@ Translate the given cell index into the corresponding row index.
 </table>
 
 ### getRowAndColumnIndicesAt(cellIndex, rowIndex, columnIndex) ###
-<pre>  
+  
 Translate the given cell index into the corresponding row and column  
 indices.  
   
@@ -112,7 +112,7 @@ indices.
 @param rowIndex     [out] row index at the given cell index  
 @param columnIndex  [out] column index at the given cell index  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -138,7 +138,7 @@ indices.
 </table>
 
 ### getColumnExtentAt(row, column) ###
-<pre>  
+  
 Return the number of columns occupied by the accessible cell at  
 the specified row and column in the table. The result differs from 1 if  
 the specified cell spans multiple columns.  
@@ -147,7 +147,7 @@ the specified cell spans multiple columns.
 @param  column  [in] column index of the cell to return the column extent  
                  for  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -168,7 +168,7 @@ the specified cell spans multiple columns.
 </table>
 
 ### getRowExtentAt(row, column) ###
-<pre>  
+  
 Return the number of rows occupied by the accessible cell at the specified  
 row and column in the table. The result differs from 1 if the specified  
 cell spans multiple rows.  
@@ -177,7 +177,7 @@ cell spans multiple rows.
 @param  column  [in] column index of the cell to return the column extent  
                  for  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -198,12 +198,12 @@ cell spans multiple rows.
 </table>
 
 ### getColumnDescription(columnIndex) ###
-<pre>  
+  
 Return the description text of the specified column in the table.  
   
 @param  columnIndex  [in] the column index to retrieve description for  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -217,12 +217,12 @@ Return the description text of the specified column in the table.
 </table>
 
 ### getRowDescription(rowIndex) ###
-<pre>  
+  
 Return the description text of the specified row in the table.  
   
 @param  rowIndex  [in] the row index to retrieve description for  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -236,13 +236,13 @@ Return the description text of the specified row in the table.
 </table>
 
 ### isColumnSelected(columnIndex) ###
-<pre>  
+  
 Return a boolean value indicating whether the specified column is  
 selected, i.e. all cells within the column are selected.  
   
 @param  columnIndex  [in] the column index to determine if it's selected  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -256,13 +256,13 @@ selected, i.e. all cells within the column are selected.
 </table>
 
 ### isRowSelected(rowIndex) ###
-<pre>  
+  
 Return a boolean value indicating whether the specified row is selected,  
 i.e. all cells within the row are selected.  
   
 @param  rowIndex  [in] the row index to determine whether it's selected  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -276,13 +276,13 @@ i.e. all cells within the row are selected.
 </table>
 
 ### isCellSelected(rowIndex, columnIndex) ###
-<pre>  
+  
 Return a boolean value indicating whether the specified cell is selected.  
   
 @param  rowIndex     [in] the row index of the cell  
 @param  columnIndex  [in] the column index of the cell  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -302,13 +302,13 @@ Return a boolean value indicating whether the specified cell is selected.
 </table>
 
 ### getSelectedCellIndices(cellsArraySize, cellsArray) ###
-<pre>  
+  
 Return an array of cell indices currently selected.  
   
 @param  cellsArraySize  [in] length of array  
 @param  cellsArray      [in] array of indexes of selected cells  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -328,13 +328,13 @@ Return an array of cell indices currently selected.
 </table>
 
 ### getSelectedColumnIndices(columnsArraySize, columnsArray) ###
-<pre>  
+  
 Return an array of column indices currently selected.  
   
 @param  columnsArraySize  [in] length of array  
 @param  columnsArray      [in] array of indices of selected columns  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -354,13 +354,13 @@ Return an array of column indices currently selected.
 </table>
 
 ### getSelectedRowIndices(rowsArraySize, rowsArray) ###
-<pre>  
+  
 Return an array of row indices currently selected.  
   
 @param  rowsArraySize  [in] Length of array  
 @param  rowsArray      [in] array of indices of selected rows  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -380,12 +380,12 @@ Return an array of row indices currently selected.
 </table>
 
 ### selectRow(rowIndex) ###
-<pre>  
+  
 Select a row and unselects all previously selected rows.  
   
 @param  rowIndex  [in] the row index to select  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -399,12 +399,12 @@ Select a row and unselects all previously selected rows.
 </table>
 
 ### selectColumn(columnIndex) ###
-<pre>  
+  
 Select a column and unselects all previously selected columns.  
   
 @param  columnIndex  [in] the column index to select  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -418,12 +418,12 @@ Select a column and unselects all previously selected columns.
 </table>
 
 ### unselectRow(rowIndex) ###
-<pre>  
+  
 Unselect the given row, leaving other selected rows selected (if any).  
   
 @param  rowIndex  [in] the row index to select  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -437,12 +437,12 @@ Unselect the given row, leaving other selected rows selected (if any).
 </table>
 
 ### unselectColumn(columnIndex) ###
-<pre>  
+  
 Unselect the given column, leaving other selected columns selected (if any).  
   
 @param  columnIndex  [in] the column index to select  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -456,51 +456,50 @@ Unselect the given column, leaving other selected columns selected (if any).
 </table>
 
 ### isProbablyForLayout() ###
-<pre>  
+  
 Use heuristics to determine if table is most likely used for layout.  
   
-</pre>
+
 ## Attributes ##
 
 ### caption ###
-<pre>  
+  
 Return the caption accessible for the table. For example, html:caption  
 element of html:table element.  
   
-</pre>
+
 ### summary ###
-<pre>  
+  
 Return summary description for the table. For example, @summary attribute  
 on html:table element.  
   
-</pre>
+
 ### columnCount ###
-<pre>  
+  
 Return columns count in the table.  
   
-</pre>
+
 ### rowCount ###
-<pre>  
+  
 Return rows count in the table.  
   
-</pre>
+
 ### selectedCellCount ###
-<pre>  
+  
 Return the total number of selected cells.  
   
-</pre>
+
 ### selectedColumnCount ###
-<pre>  
+  
 Return the total number of selected columns.  
   
-</pre>
+
 ### selectedRowCount ###
-<pre>  
+  
 Return the total number of selected rows.  
   
-</pre>
+
 ### selectedCells ###
-<pre>  
+  
 Return an array of selected cells.  
   
-</pre>

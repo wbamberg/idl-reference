@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### loadURI(uri, loadInfo, aLoadFlags, firstParty) ###
-<pre>  
+  
 Loads a given URI.  This will give priority to loading the requested URI  
 in the object implementing	this interface.  If it can't be loaded here  
 however, the URL dispatcher will go through its normal process of content  
@@ -29,7 +29,7 @@ loading.
                     non-null loadInfo.  And even some of those might not  
                     be allowed.  Use at your own risk.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -64,7 +64,7 @@ loading.
 </table>
 
 ### loadStream(aStream, aURI, aContentType, aContentCharset, aLoadInfo) ###
-<pre>  
+  
 Loads a given stream. This will give priority to loading the requested  
 stream in the object implementing this interface. If it can't be loaded  
 here however, the URL dispatched will go through its normal process of  
@@ -83,7 +83,7 @@ content loading.
                          you have this object you can set the needed   
                          properties on it and then pass it to loadStream.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -128,7 +128,7 @@ content loading.
 </table>
 
 ### internalLoad(aURI, aReferrer, aOwner, aFlags, aWindowTarget, aTypeHint, aFileName, aPostDataStream, aHeadersStream, aLoadFlags, aSHEntry, firstParty, aSrcdoc, aSourceDocShell, aBaseURI, aDocShell, aRequest) ###
-<pre>  
+  
 Loads the given URI.  This method is identical to loadURI(...) except  
 that its parameter list is broken out instead of being packaged inside  
 of an nsIDocShellLoadInfo object...  
@@ -158,7 +158,7 @@ the given filename.
                          srcdoc loads as it cannot otherwise be inferred  
                          in certain situations such as view-source.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -265,32 +265,32 @@ the given filename.
 </table>
 
 ### addState(aData, aTitle, aURL, aReplace) ###
-<pre>  
+  
 Do either a history.pushState() or history.replaceState() operation,  
 depending on the value of aReplace.  
   
-</pre>
+
 ### createLoadInfo(loadInfo) ###
-<pre>  
+  
 Creates a DocShellLoadInfo object that you can manipulate and then pass  
 to loadURI.  
   
-</pre>
+
 ### prepareForNewContentModel() ###
-<pre>  
+  
 Reset state to a new content model within the current document and the document  
 viewer.  Called by the document before initiating an out of band document.write().  
   
-</pre>
+
 ### setCurrentURI(aURI) ###
-<pre>  
+  
 For editors and suchlike who wish to change the URI associated with the  
 document. Note if you want to get the current URI, use the read-only  
 property on nsIWebNavigation.  
   
-</pre>
+
 ### firePageHideNotification(isUnload) ###
-<pre>  
+  
 Notify the associated content viewer and all child docshells that they are  
 about to be hidden.  If |isUnload| is true, then the document is being  
 unloaded as well.  
@@ -298,7 +298,7 @@ unloaded as well.
 @param isUnload if true, fire the unload event in addition to the pagehide  
                 event.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -313,10 +313,10 @@ unloaded as well.
 </table>
 
 ### GetPresShell() ###
-<pre>  
+  
 Presentation shell for the currently loaded document.  This may be null.  
   
-</pre>
+
 ### getDocShellEnumerator(aItemType, aDirection) ###
 
 ### tabToTreeOwner(forward, tookFocus) ###
@@ -324,22 +324,22 @@ Presentation shell for the currently loaded document.  This may be null.
 ### isBeingDestroyed() ###
 
 ### suspendRefreshURIs() ###
-<pre>  
+  
 Cancel the XPCOM timers for each meta-refresh URI in this docshell,  
 and this docshell's children, recursively. The meta-refresh timers can be  
 restarted using resumeRefreshURIs().  If the timers are already suspended,  
 this has no effect.  
   
-</pre>
+
 ### resumeRefreshURIs() ###
-<pre>  
+  
 Restart the XPCOM timers for each meta-refresh URI in this docshell,  
 and this docshell's children, recursively.  If the timers are already  
 running, this has no effect.  
   
-</pre>
+
 ### beginRestore(viewer, top) ###
-<pre>  
+  
 Begin firing WebProgressListener notifications for restoring a page  
 presentation. |viewer| is the content viewer whose document we are  
 starting to load.  If null, it defaults to the docshell's current content  
@@ -348,16 +348,16 @@ docshell that is being restored; it will be set to false when this method
 is called for child docshells.  This method will post an event to  
 complete the simulated load after returning to the event loop.  
   
-</pre>
+
 ### finishRestore() ###
-<pre>  
+  
 Finish firing WebProgressListener notifications and DOM events for  
 restoring a page presentation.  This should only be called via  
 beginRestore().  
   
-</pre>
+
 ### displayLoadError(aError, aURI, aURL, aFailedChannel) ###
-<pre>  
+  
 Display a load error in a frame while keeping that frame's currentURI  
 pointing correctly to the page where the error ocurred, rather than to  
 the error document page. You must provide either the aURI or aURL parameter.  
@@ -367,7 +367,7 @@ the error document page. You must provide either the aURI or aURL parameter.
 @param  aURL           wstring of the page where the error happened  
 @param  aFailedChannel The channel related to this error  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -399,13 +399,13 @@ the error document page. You must provide either the aURI or aURL parameter.
 </table>
 
 ### historyPurged(numEntries) ###
-<pre>  
+  
 Notification that entries have been removed from the beginning of a  
 nsSHistory which has this as its rootDocShell.  
   
 @param numEntries - The number of entries removed  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -423,23 +423,23 @@ nsSHistory which has this as its rootDocShell.
 ### addSessionStorage(principal, storage) ###
 
 ### setChildOffset(offset) ###
-<pre>  
+  
 Set the offset of this child in its container.  
   
-</pre>
+
 ### DetachEditorFromWindow() ###
-<pre>  
+  
 Disconnects this docshell's editor from its window, and stores the  
 editor data in the open document's session history entry.  This  
 should be called only during page transitions.  
   
-</pre>
+
 ### createAboutBlankContentViewer(aPrincipal) ###
-<pre>  
+  
 Create a new about:blank document and content viewer.  
 @param aPrincipal the principal to use for the new document.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -453,51 +453,51 @@ Create a new about:blank document and content viewer.
 </table>
 
 ### gatherCharsetMenuTelemetry() ###
-<pre>  
+  
 Called when the user chose an encoding override from the character  
 encoding menu. Separate from the setter for the charset property to avoid  
 extensions adding noise to the data.  
   
-</pre>
+
 ### setParentCharset(parentCharset, parentCharsetSource, parentCharsetPrincipal) ###
-<pre>  
+  
 In a child docshell, this is the charset of the parent docshell  
   
-</pre>
+
 ### getParentCharset(parentCharset, parentCharsetSource, parentCharsetPrincipal) ###
 
 ### now() ###
-<pre>  
+  
 Return a DOMHighResTimeStamp representing the number of  
 milliseconds from an arbitrary point in time.  The reference  
 point is shared by all DocShells and is also used by timestamps  
 on markers.  
   
-</pre>
+
 ### popProfileTimelineMarkers() ###
-<pre>  
+  
 Returns and flushes the profile timeline markers gathered by the docShell  
   
-</pre>
+
 ### addWeakPrivacyTransitionObserver(obs) ###
-<pre>  
+  
 Add an observer to the list of parties to be notified when this docshell's  
 private browsing status is changed. |obs| must support weak references.  
   
-</pre>
+
 ### addWeakReflowObserver(obs) ###
-<pre>  
+  
 Add an observer to the list of parties to be notified when reflows are  
 occurring. |obs| must support weak references.  
   
-</pre>
+
 ### removeWeakReflowObserver(obs) ###
-<pre>  
+  
 Remove an observer from the list of parties to be notified about reflows.  
   
-</pre>
+
 ### notifyReflowObservers(interruptible, start, end) ###
-<pre>  
+  
 Notify all attached observers that a reflow has just occurred.  
   
 @param interruptible if true, the reflow was interruptible.  
@@ -506,7 +506,7 @@ Notify all attached observers that a reflow has just occurred.
 @param end           timestamp when reflow ended, in milliseconds since  
                      navigationStart (accurate to 1/1000 of a ms)  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -534,25 +534,25 @@ Notify all attached observers that a reflow has just occurred.
 </table>
 
 ### addWeakScrollObserver(obs) ###
-<pre>  
+  
 Add an observer to the list of parties to be notified when scroll position  
 of some elements is changed.  
   
-</pre>
+
 ### removeWeakScrollObserver(obs) ###
-<pre>  
+  
 Add an observer to the list of parties to be notified when scroll position  
 of some elements is changed.  
   
-</pre>
+
 ### notifyScrollObservers() ###
-<pre>  
+  
 Notify all attached observers that the scroll position of some element  
 has changed.  
   
-</pre>
+
 ### setIsApp(ownAppId) ###
-<pre>  
+  
 Indicate that this docshell corresponds to an app with the given app id.  
   
 You may pass NO_APP_ID or UNKNOWN_APP_ID for containingAppId.  If you  
@@ -567,9 +567,9 @@ docshell's app id, so tread lightly.
 If you call this method after calling setIsBrowserInsideApp, this  
 docshell will forget the fact that it was a browser.  
   
-</pre>
+
 ### setIsBrowserInsideApp(containingAppId) ###
-<pre>  
+  
 Indicate that this docshell corresponds to a browser inside an app with  
 the given ID.  As with setIsApp, you may pass NO_APP_ID or  
 UNKNOWN_APP_ID.  
@@ -577,47 +577,47 @@ UNKNOWN_APP_ID.
 As with setIsApp, you may call this more than once, but it's kind of a  
 hack, so be careful.  
   
-</pre>
+
 ### getSameTypeParentIgnoreBrowserAndAppBoundaries() ###
-<pre>  
+  
 Like nsIDocShellTreeItem::GetSameTypeParent, except this ignores <iframe  
 mozbrowser> and <iframe mozapp> boundaries.  
   
-</pre>
+
 ### isSandboxedFrom(aTargetDocShell) ###
-<pre>  
+  
 Returns true if we are sandboxed from aTargetDocShell.  
 aTargetDocShell - the browsing context we are attempting to navigate.  
   
-</pre>
+
 ### GetAllowMixedContentAndConnectionData(rootHasSecureConnection, allowMixedContent, isRootDocShell) ###
-<pre>  
+  
 Checks whether the channel associated with the root docShell is equal to  
 mMixedContentChannel. If they are the same, allowMixedContent is set to true.  
 Checks if the root document has a secure connection. If it is, sets   
 rootHasSecureConnection to true. If the docShell is the root doc shell,   
 isRootDocShell is set to true.   
   
-</pre>
+
 ### pluginsAllowedInCurrentDoc() ###
-<pre>  
+  
 Are plugins allowed in the current document loaded in this docshell ?  
 (if there is one). This depends on whether plugins are allowed by this  
 docshell itself or if the document is sandboxed and hence plugins should  
 not be allowed.  
   
-</pre>
+
 ### setFullscreenAllowed(allowed) ###
 
 ### makeEditable(inWaitForUriLoad) ###
-<pre>  
+  
 Make this docShell editable, setting a flag that causes  
 an editor to get created, either immediately, or after  
 a url has been loaded.  
      @param  inWaitForUriLoad    true to wait for a URI before  
                                  creating the editor.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -632,67 +632,67 @@ a url has been loaded.
 </table>
 
 ### getChildSHEntry(aChildOffset) ###
-<pre>  
+  
 Get the SHEntry associated with a child docshell  
   
-</pre>
+
 ### addChildSHEntry(aCloneReference, aHistoryEntry, aChildOffset, aLoadType, aCloneChilden) ###
-<pre>  
+  
 Add a Child SHEntry for a frameset page, given the child's loadtype.  
 If aCloneChildren is true, then aCloneReference's children will be  
 cloned onto aHistoryEntry.  
   
-</pre>
+
 ### removeFromSessionHistory() ###
-<pre>  
+  
 Removes nsISHEntry objects related to this docshell from session history.  
 Use this only with subdocuments, like iframes.  
   
-</pre>
+
 ### getCurrentSHEntry(aEntry) ###
-<pre>  
+  
 Returns false for mLSHE, true for mOSHE  
   
-</pre>
+
 ### isCommandEnabled(command) ###
-<pre>  
+  
 Cherry picked parts of nsIController.  
 They are here, because we want to call these functions  
 from JS.  
   
-</pre>
+
 ### doCommand(command) ###
 
 ### IsInvisible() ###
-<pre>  
+  
 Invisible DocShell are dummy construct to simulate DOM windows  
 without any actual visual representation. They have to be marked  
 at construction time, to avoid any painting activity.  
   
-</pre>
+
 ### SetInvisible(aIsInvisibleDochsell) ###
 
 ### GetScriptGlobalObject() ###
-<pre>  
+  
 Get the script global for the document in this docshell.  
   
-</pre>
+
 ### setOpener(aOpener) ###
-<pre>  
+  
 Regarding setOpener / getOpener - We can't use XPIDL's "attribute"  
 for notxpcom, so we're relegated to using explicit gets / sets. This  
 should be fine, considering that these methods should only ever be  
 called from native code.  
   
-</pre>
+
 ### getOpener() ###
 
 ### setOpenedRemote(aOpenedRemote) ###
-<pre>  
+  
 See the documentation for setOpener and getOpener about why we  
 don't use attribute here instead.  
   
-</pre>
+
 ### getOpenedRemote() ###
 
 ### getURLSearchParams() ###
@@ -700,88 +700,88 @@ don't use attribute here instead.
 ## Attributes ##
 
 ### presContext ###
-<pre>  
+  
 Presentation context for the currently loaded document.  This may be null.  
   
-</pre>
+
 ### eldestPresShell ###
-<pre>  
+  
 Presentation shell for the oldest document, if this docshell is  
 currently transitioning between documents.  
   
-</pre>
+
 ### contentViewer ###
-<pre>  
+  
 Content Viewer that is currently loaded for this DocShell.  This may  
 change as the underlying content changes.  
   
-</pre>
+
 ### chromeEventHandler ###
-<pre>  
+  
 This attribute allows chrome to tie in to handle DOM events that may  
 be of interest to chrome.  
   
-</pre>
+
 ### allowPlugins ###
-<pre>  
+  
 Whether to allow plugin execution  
   
-</pre>
+
 ### allowJavascript ###
-<pre>  
+  
 Whether to allow Javascript execution  
   
-</pre>
+
 ### allowMetaRedirects ###
-<pre>  
+  
 Attribute stating if refresh based redirects can be allowed  
   
-</pre>
+
 ### allowSubframes ###
-<pre>  
+  
 Attribute stating if it should allow subframes (framesets/iframes) or not  
   
-</pre>
+
 ### allowImages ###
-<pre>  
+  
 Attribute stating whether or not images should be loaded.  
   
-</pre>
+
 ### allowMedia ###
-<pre>  
+  
 Attribute stating whether or not media (audio/video) should be loaded.  
   
-</pre>
+
 ### allowDNSPrefetch ###
-<pre>  
+  
 Attribute that determines whether DNS prefetch is allowed for this subtree  
 of the docshell tree.  Defaults to true.  Setting this will make it take  
 effect starting with the next document loaded in the docshell.  
   
-</pre>
+
 ### allowWindowControl ###
-<pre>  
+  
 Attribute that determines whether window control (move/resize) is allowed.  
   
-</pre>
+
 ### allowContentRetargeting ###
-<pre>  
+  
 True if the docshell allows its content to be handled by a content listener  
 other than the docshell itself, including the external helper app service,  
 and false otherwise.  Defaults to true.  
   
-</pre>
+
 ### appType ###
 
 ### allowAuth ###
-<pre>  
+  
 certain dochshells (like the message pane)  
 should not throw up auth dialogs  
 because it can act as a password trojan  
   
-</pre>
+
 ### zoom ###
-<pre>  
+  
 Set/Get the document scale factor.  When setting this attribute, a  
 NS_ERROR_NOT_IMPLEMENTED error may be returned by implementations  
 not supporting zoom.  Implementations not supporting zoom should return  
@@ -789,7 +789,7 @@ not supporting zoom.  Implementations not supporting zoom should return
 of zoom.  This means 100% of normal scaling or in other words normal size  
 no zoom.   
   
-</pre>
+
 ### marginWidth ###
 
 ### marginHeight ###
@@ -807,52 +807,52 @@ no zoom.
 ### shouldSaveLayoutState ###
 
 ### securityUI ###
-<pre>  
+  
 The SecureBrowserUI object for this docshell.  This is set by XUL  
 <browser> or nsWebBrowser for their root docshell.  
   
-</pre>
+
 ### restoringDocument ###
 
 ### useErrorPages ###
 
 ### failedChannel ###
-<pre>  
+  
 The channel that failed to load and resulted in an error page.  
 May be null. Relevant only to error pages.  
   
-</pre>
+
 ### previousTransIndex ###
-<pre>  
+  
 Keeps track of the previous SHTransaction index and the current  
 SHTransaction index at the time that the doc shell begins to load.  
 Used for ContentViewer eviction.  
   
-</pre>
+
 ### loadedTransIndex ###
 
 ### currentDocumentChannel ###
-<pre>  
+  
 Gets the channel for the currently loaded document, if any.   
 For a new document load, this will be the channel of the previous document  
 until after OnLocationChange fires.  
   
-</pre>
+
 ### isInUnload ###
-<pre>  
+  
 Find out whether the docshell is currently in the middle of a page  
 transition. This is set just before the pagehide/unload events fire.  
   
-</pre>
+
 ### channelIsUnsafe ###
-<pre>  
+  
 Find out if the currently loaded document came from a suspicious channel  
 (such as a JAR channel where the server-returned content type isn't a  
 known JAR type).  
   
-</pre>
+
 ### hasMixedActiveContentLoaded ###
-<pre>  
+  
 This attribute determines whether Mixed Active Content is loaded on the  
 document. When it is true, mixed active content was not blocked and has  
 loaded (or is about to load) on the page. When it is false, mixed active content  
@@ -862,9 +862,9 @@ This boolean is set to true in nsMixedContentBlocker if Mixed Active Content
 is allowed (either explicitly on the page by the user or when the about:config  
 setting security.mixed_content.block_active_content is set to false).  
   
-</pre>
+
 ### hasMixedActiveContentBlocked ###
-<pre>  
+  
 This attribute determines whether a document has Mixed Active Content  
 that has been blocked from loading. When it is true, there is definitely  
 mixed active content on a page that has been blocked by  
@@ -874,111 +874,111 @@ about:config setting security.mixed_content.block_active_content is set
 false, this boolean will be false, since blocking active content has been  
 disabled.  
   
-</pre>
+
 ### hasMixedDisplayContentLoaded ###
-<pre>  
+  
 This attribute determines whether Mixed Display Content is loaded on the  
 document. When it is true, mixed display content was not blocked and has  
 loaded (or is about to load) on the page. Similar behavior to  
 hasMixedActiveContentLoaded.  
   
-</pre>
+
 ### hasMixedDisplayContentBlocked ###
-<pre>  
+  
 This attribute determines whether a document has Mixed Display Content  
 that has been blocked from loading. Similar behavior to  
 hasMixedActiveContentBlocked.  
   
-</pre>
+
 ### hasTrackingContentBlocked ###
-<pre>  
+  
 This attribute determines whether a document has Tracking Content  
 that has been blocked from loading.  
   
-</pre>
+
 ### hasTrackingContentLoaded ###
-<pre>  
+  
 This attribute determines whether Tracking Content is loaded on the  
 document. When it is true, tracking content was not blocked and has  
 loaded (or is about to load) on the page.  
   
-</pre>
+
 ### isOffScreenBrowser ###
-<pre>  
+  
 If true, this browser is not visible in the traditional sense, but  
 is actively being rendered to the screen (ex. painted on a canvas)  
 and should be treated accordingly.  
 /  
-</pre>
+
 ### printPreview ###
-<pre>  
+  
 If the current content viewer isn't initialized for print preview,  
 it is replaced with one which is and to which an about:blank document  
 is loaded.  
   
-</pre>
+
 ### canExecuteScripts ###
-<pre>  
+  
 Whether this docshell can execute scripts based on its hierarchy.  
 The rule of thumb here is that we disable js if this docshell or any  
 of its parents disallow scripting.  
   
-</pre>
+
 ### isActive ###
-<pre>  
+  
 Sets whether a docshell is active. An active docshell is one that is  
 visible, and thus is not a good candidate for certain optimizations  
 like image frame discarding. Docshells are active unless told otherwise.  
   
-</pre>
+
 ### historyID ###
-<pre>  
+  
 The ID of the docshell in the session history.  
   
-</pre>
+
 ### isAppTab ###
-<pre>  
+  
 Sets whether a docshell is an app tab. An app tab docshell may behave  
 differently than a non-app tab docshell in some cases, such as when  
 handling link clicks. Docshells are not app tabs unless told otherwise.  
   
-</pre>
+
 ### charset ###
-<pre>  
+  
 Upon getting, returns the canonical encoding label of the document  
 currently loaded into this docshell.  
   
 Upon setting, sets forcedCharset for compatibility with legacy callers.  
   
-</pre>
+
 ### forcedCharset ###
-<pre>  
+  
 The charset forced by the user.  
   
-</pre>
+
 ### recordProfileTimelineMarkers ###
-<pre>  
+  
 Whether the docShell records profile timeline markers at the moment  
   
-</pre>
+
 ### isBrowserElement ###
-<pre>  
+  
 Returns true if this docshell corresponds to an <iframe mozbrowser>.  
 (<iframe mozapp mozbrowser> is not considered a browser.)  
   
-</pre>
+
 ### isApp ###
-<pre>  
+  
 Returns true iff the docshell corresponds to an <iframe mozapp>.  
   
-</pre>
+
 ### isBrowserOrApp ###
-<pre>  
+  
 Returns isBrowserElement || isApp.  
   
-</pre>
+
 ### isInBrowserElement ###
-<pre>  
+  
 Returns true if this docshell corresponds to an <iframe mozbrowser> or if  
 the docshell is contained in an <iframe mozbrowser>.  (<iframe mozapp  
 mozbrowser> does not count as a browser.)  
@@ -988,9 +988,9 @@ this process until we hit an <iframe mozapp> or <iframe mozbrowser> (or
 until the hierarchy ends).  Return true iff the docshell we stopped on has  
 isBrowserElement == true.  
   
-</pre>
+
 ### isInBrowserOrApp ###
-<pre>  
+  
 Returns true if this docshell corresponds to an <iframe mozbrowser> or  
 <iframe mozap>, or if this docshell is contained in an <iframe mozbrowser>  
 or <iframe mozapp>.  
@@ -999,9 +999,9 @@ To compute this value, we walk up the docshell hierarchy.  If we encounter
 a docshell with isBrowserElement or isApp before we hit the end of the  
 hierarchy, we return true.  Otherwise, we return false.  
   
-</pre>
+
 ### appId ###
-<pre>  
+  
 Returns the id of the app associated with this docshell.  If this docshell  
 is an <iframe mozbrowser> inside an <iframe mozapp>, we return the app's  
 appId.  
@@ -1017,22 +1017,22 @@ return NO_APP_ID.  We never return UNKNOWN_APP_ID.
 Notice that a docshell may have an associated app even if it returns true  
 for isBrowserElement!  
   
-</pre>
+
 ### appManifestURL ###
-<pre>  
+  
 Return the manifest URL of the app associated with this docshell.  
   
 If there is no associated app in our hierarchy, we return empty string.  
   
-</pre>
+
 ### asyncPanZoomEnabled ###
-<pre>   
+   
 True iff asynchronous panning and zooming is enabled for this  
 docshell.  
   
-</pre>
+
 ### sandboxFlags ###
-<pre>  
+  
 The sandbox flags on the docshell. These reflect the value of the sandbox  
 attribute of the associated IFRAME or CSP-protectable content, if  
 existent. See the HTML5 spec for more details.  
@@ -1044,16 +1044,16 @@ The sandbox flags of a document depend on the sandbox flags on its
 docshell and of its parent document, if any.  
 See nsSandboxFlags.h for the possible flags.  
   
-</pre>
+
 ### onePermittedSandboxedNavigator ###
-<pre>  
+  
 When a new browsing context is opened by a sandboxed document, it needs to  
 keep track of the browsing context that opened it, so that it can be  
 navigated by it.  This is the "one permitted sandboxed navigator".  
   
-</pre>
+
 ### mixedContentChannel ###
-<pre>  
+  
 This member variable determines whether a document has Mixed Active Content that  
 was initially blocked from loading, but the user has choosen to override the  
 block and allow the content to load. mMixedContentChannel is set to the document's  
@@ -1070,9 +1070,9 @@ security.mixed_content.block_active_content is set to false, this boolean
 will be false, mMixedContentChannel will remain null since blocking active content has  
 been disabled and hence mMixedContentChannel will never be set.  
   
-</pre>
+
 ### fullscreenAllowed ###
-<pre>  
+  
 Attribute that determines whether fullscreen is allowed to be entered for  
 this subtree of the docshell tree. This is true when all iframes containing  
 this docshell have their "allowfullscreen" attribute set to "true".  
@@ -1082,15 +1082,15 @@ to propagate the value of the cross process parent's iframe's
 fullscreenAllowed on docshells which aren't content boundaries throws an  
 exception.  
   
-</pre>
+
 ### affectPrivateSessionLifetime ###
 
 ### mayEnableCharacterEncodingMenu ###
-<pre>  
+  
 Indicates whether the UI may enable the character encoding menu. The UI  
 must disable the menu when this property is false.  
   
-</pre>
+
 ### editor ###
 
 ### editable ###
@@ -1098,17 +1098,17 @@ must disable the menu when this property is false.
 ### hasEditingSession ###
 
 ### useGlobalHistory ###
-<pre>  
+  
 Whether this docshell should save entries in global history.  
   
-</pre>
+
 ### createdDynamically ###
-<pre>  
+  
 Set when an iframe/frame is added dynamically.  
   
-</pre>
+
 ### deviceSizeIsPageSize ###
-<pre>  
+  
 If deviceSizeIsPageSize is set to true, device-width/height media queries  
 will be calculated from the page size, not the device size.  
   
@@ -1118,13 +1118,13 @@ Default is False.
 Default value can be overriden with  
 docshell.device_size_is_page_size pref.  
   
-</pre>
+
 ### hasLoadedNonBlankURI ###
-<pre>  
+  
 This attribute determines whether a document which is not about:blank has  
 already be loaded by this docShell.  
   
-</pre>
+
 ## Constants ##
 
 ### INTERNAL_LOAD_FLAGS_NONE ###
@@ -1146,7 +1146,7 @@ already be loaded by this docShell.
 ### INTERNAL_LOAD_FLAGS_NO_OPENER ###
 
 ### ENUMERATE_FORWARDS ###
-<pre>  
+  
 Get an enumerator over this docShell and its children.  
   
 @param aItemType  - Only include docShells of this type, or if typeAll,  
@@ -1154,23 +1154,23 @@ Get an enumerator over this docShell and its children.
                     Uses types from nsIDocShellTreeItem.  
 @param aDirection - Whether to enumerate forwards or backwards.  
   
-</pre>
+
 ### ENUMERATE_BACKWARDS ###
 
 ### APP_TYPE_UNKNOWN ###
-<pre>  
+  
 The type of application that created this window  
   
-</pre>
+
 ### APP_TYPE_MAIL ###
 
 ### APP_TYPE_EDITOR ###
 
 ### BUSY_FLAGS_NONE ###
-<pre>  
+  
 Current busy state for DocShell  
   
-</pre>
+
 ### BUSY_FLAGS_BUSY ###
 
 ### BUSY_FLAGS_BEFORE_PAGE_LOAD ###
@@ -1178,10 +1178,10 @@ Current busy state for DocShell
 ### BUSY_FLAGS_PAGE_LOADING ###
 
 ### LOAD_CMD_NORMAL ###
-<pre>  
+  
 Load commands for the document   
   
-</pre>
+
 ### LOAD_CMD_RELOAD ###
 
 ### LOAD_CMD_HISTORY ###

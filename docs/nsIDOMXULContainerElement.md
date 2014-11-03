@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### appendItem(aLabel, aValue) ###
-<pre>  
+  
 Creates an item for the given label and value and appends it to the  
 container.  
   
 @param aLabel - the label for the new item  
 @param aValue - the value of the new item  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -37,7 +37,7 @@ container.
 </table>
 
 ### insertItemAt(aIndex, aLabel, aValue) ###
-<pre>  
+  
 Creates an item for the given label and value and inserts it into the  
 container at the specified position.  
   
@@ -45,7 +45,7 @@ container at the specified position.
 @param aLabel - the label for the new item  
 @param aValue - the value of the new item  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -71,12 +71,12 @@ container at the specified position.
 </table>
 
 ### removeItemAt(aIndex) ###
-<pre>  
+  
 Removes an item from the container.  
   
 @param aIndex - index of the item to remove  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -90,12 +90,12 @@ Removes an item from the container.
 </table>
 
 ### getIndexOfItem(aItem) ###
-<pre>  
+  
 Returns the index of an item or -1 if the item is not in the container.  
   
 @param aItem - the item to determine the index of  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -109,13 +109,13 @@ Returns the index of an item or -1 if the item is not in the container.
 </table>
 
 ### getItemAtIndex(aIndex) ###
-<pre>  
+  
 Returns the item at a given index or null if the item is not is the  
 container.  
   
 @param aIndex - the index of the item to return  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -131,7 +131,6 @@ container.
 ## Attributes ##
 
 ### itemCount ###
-<pre>  
+  
 Returns a count of items in the container.  
   
-</pre>

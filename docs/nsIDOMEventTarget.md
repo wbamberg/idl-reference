@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### addEventListener(type, listener, useCapture, wantsUntrusted) ###
-<pre>  
+  
 This method allows the registration of event listeners on the event target.  
 If an EventListener is added to an EventTarget while it is processing an  
 event, it will not be triggered by the current actions but may be   
@@ -39,7 +39,7 @@ removeEventListener method.
                         listener will receive events whether or not  
                         they're trusted  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -83,7 +83,7 @@ removeEventListener method.
 </table>
 
 ### addSystemEventListener(type, listener, aUseCapture, aWantsUntrusted) ###
-<pre>  
+  
 addSystemEventListener() adds an event listener of aType to the system  
 group.  Typically, core code should use system group for listening to  
 content (i.e., non-chrome) element's events.  If core code uses  
@@ -99,7 +99,7 @@ stopPropagation() of the event.
                         Otherwise, FALSE.  
 @return                 NS_OK if succeed.  Otherwise, NS_ERROR_*.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -144,7 +144,7 @@ stopPropagation() of the event.
 </table>
 
 ### removeEventListener(type, listener, useCapture) ###
-<pre>  
+  
 This method allows the removal of event listeners from the event   
 target. If an EventListener is removed from an EventTarget while it   
 is processing an event, it will not be triggered by the current actions.   
@@ -164,7 +164,7 @@ currently registered EventListener on the EventTarget has no effect.
                     not affect a non-capturing version of the same   
                     listener, and vice versa.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -198,13 +198,13 @@ currently registered EventListener on the EventTarget has no effect.
 </table>
 
 ### removeSystemEventListener(type, listener, aUseCapture) ###
-<pre>  
+  
 removeSystemEventListener() should be used if you have used  
 addSystemEventListener().  
   
-</pre>
+
 ### dispatchEvent(evt) ###
-<pre>  
+  
 This method allows the dispatch of events into the implementations   
 event model. Events dispatched in this manner will have the same   
 capturing and bubbling behavior as events dispatched directly by the   
@@ -222,7 +222,7 @@ dispatchEvent is called.
              type as null or an empty string will also trigger this   
              exception.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -255,23 +255,23 @@ dispatchEvent is called.
 </table>
 
 ### GetTargetForDOMEvent() ###
-<pre>  
+  
 Returns the nsIDOMEventTarget object which should be used as the target  
 of DOMEvents.  
 Usually |this| is returned, but for example global object returns  
 the outer object.  
   
-</pre>
+
 ### GetTargetForEventTargetChain() ###
-<pre>  
+  
 Returns the nsIDOMEventTarget object which should be used as the target  
 of the event and when constructing event target chain.  
 Usually |this| is returned, but for example global object returns  
 the inner object.  
   
-</pre>
+
 ### PreHandleEvent(aVisitor) ###
-<pre>  
+  
 Called before the capture phase of the event flow.  
 This is used to create the event target chain and implementations  
 should set the necessary members of EventChainPreVisitor.  
@@ -286,7 +286,7 @@ the latter one is the possible parent object for the event target chain.
   
 @note Only EventDispatcher should call this method.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -301,13 +301,13 @@ the latter one is the possible parent object for the event target chain.
 </table>
 
 ### WillHandleEvent(aVisitor) ###
-<pre>  
+  
 If EventChainPreVisitor.mWantsWillHandleEvent is set PR_TRUE,  
 called just before possible event handlers on this object will be called.  
   
-</pre>
+
 ### PostHandleEvent(aVisitor) ###
-<pre>  
+  
 Called after the bubble phase of the system event group.  
 The default handling of the event should happen here.  
 @param aVisitor the visitor object which is used during post handling.  
@@ -315,7 +315,7 @@ The default handling of the event should happen here.
 @see EventDispatcher.h for documentation about aVisitor.  
 @note Only EventDispatcher should call this method.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -329,7 +329,7 @@ The default handling of the event should happen here.
 </table>
 
 ### DispatchDOMEvent(aEvent, aDOMEvent, aPresContext, aEventStatus) ###
-<pre>  
+  
 Dispatch an event.  
 @param aEvent the event that is being dispatched.  
 @param aDOMEvent the event that is being dispatched, use if you want to  
@@ -346,7 +346,7 @@ for dispatching, otherwise aEvent is used.
 @deprecated This method is here just until all the callers outside Gecko  
             have been converted to use nsIDOMEventTarget::dispatchEvent.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -379,15 +379,14 @@ for dispatching, otherwise aEvent is used.
 </table>
 
 ### GetContextForEventHandlers(aRv) ###
-<pre>  
+  
 Get the script context in which the event handlers should be run.  
 May return null.  
 @note Caller *must* check the value of aRv.  
   
-</pre>
+
 ### GetJSContextForEventHandlers() ###
-<pre>  
+  
 If the method above returns null, but a success code, this method  
 is called.  
   
-</pre>

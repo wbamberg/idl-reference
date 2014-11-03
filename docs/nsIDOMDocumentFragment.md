@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMDocumentFragment #
-<pre>  
+  
 DocumentFragment is a "lightweight" or "minimal" Document object.  
 nsIDOMDocumentFragment is used in situations where the Document  
 interface can potentially be a heavyweight interface.  
@@ -14,14 +14,14 @@ interface can potentially be a heavyweight interface.
 For more information on this interface please see   
 http://www.w3.org/TR/DOM-Level-2-Core/  
   
-</pre>
+
 ## Methods ##
 
 ### querySelector(selectors) ###
-<pre>  
+  
 Return nodes that match a given CSS selector.  
   
 @see <http://dev.w3.org/2006/webapi/selectors-api/>  
   
-</pre>
+
 ### querySelectorAll(selectors) ###

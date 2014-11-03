@@ -10,7 +10,6 @@ layout: default
 ## Attributes ##
 
 ### parentContainer ###
-<pre>  
+  
 Returns the parent container if any.  
   
-</pre>

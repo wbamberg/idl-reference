@@ -10,26 +10,26 @@ layout: default
 ## Methods ##
 
 ### doTransaction() ###
-<pre>  
+  
 Executes the transaction.  
   
-</pre>
+
 ### undoTransaction() ###
-<pre>  
+  
 Restores the state to what it was before the transaction was executed.  
   
-</pre>
+
 ### redoTransaction() ###
-<pre>  
+  
 Executes the transaction again. Can only be called on a transaction that  
 was previously undone.  
 <P>  
 In most cases, the redoTransaction() method will actually call the  
 doTransaction() method to execute the transaction again.  
   
-</pre>
+
 ### merge(aTransaction) ###
-<pre>  
+  
 Attempts to merge a transaction into "this" transaction. Both transactions  
 must be in their undo state, doTransaction() methods already called. The  
 transaction manager calls this method to coalesce a new transaction with  
@@ -41,7 +41,7 @@ the transaction manager will Release() the new transacton instead of
 pushing it on the undo stack.  
 @param aTransaction the previously executed transaction to merge.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -57,7 +57,7 @@ pushing it on the undo stack.
 ## Attributes ##
 
 ### isTransient ###
-<pre>  
+  
 The transaction's transient state. This attribute is checked by  
 the transaction manager after the transaction's Execute() method is called.  
 If the transient state is false, a reference to the transaction is  
@@ -68,4 +68,3 @@ doTransaction() method is called, no references to the transaction are
 maintained. Transient transactions cannot be undone or redone by the  
 transaction manager.  
   
-</pre>

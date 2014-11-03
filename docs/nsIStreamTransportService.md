@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIStreamTransportService #
-<pre>  
+  
 This service read/writes a stream on a background thread.  
   
 Use this service to transform any blocking stream (e.g., file stream)  
 into a fully asynchronous stream that can be read/written without   
 blocking the main thread.  
   
-</pre>
+
 ## Methods ##
 
 ### createInputTransport(aStream, aStartOffset, aReadLimit, aCloseWhenDone) ###
-<pre>  
+  
 CreateInputTransport  
   
 @param aStream  
@@ -36,7 +36,7 @@ CreateInputTransport
   
 @return nsITransport instance.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -84,7 +84,7 @@ CreateInputTransport
 </table>
 
 ### createOutputTransport(aStream, aStartOffset, aWriteLimit, aCloseWhenDone) ###
-<pre>  
+  
 CreateOutputTransport  
   
 @param aStream  
@@ -103,7 +103,7 @@ CreateOutputTransport
   
 @return nsITransport instance.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsICacheStorageService #
-<pre>  
+  
 Provides access to particual cache storages of the network URI cache.  
   
-</pre>
+
 ## Methods ##
 
 ### memoryCacheStorage(aLoadContextInfo) ###
-<pre>  
+  
 Get storage where entries will only remain in memory, never written  
 to the disk.  
   
@@ -26,7 +26,7 @@ OPEN_READONLY open flag has no effect on this behavior.
    Information about the loading context, this focuses the storage JAR and  
    respects separate storage for private browsing.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -41,7 +41,7 @@ OPEN_READONLY open flag has no effect on this behavior.
 </table>
 
 ### diskCacheStorage(aLoadContextInfo, aLookupAppCache) ###
-<pre>  
+  
 Get storage where entries will be written to disk when not forbidden by  
 response headers.  
   
@@ -49,7 +49,7 @@ response headers.
    When set true (for top level document loading channels) app cache will  
    be first to check on to find entries in.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -64,7 +64,7 @@ response headers.
 </table>
 
 ### appCacheStorage(aLoadContextInfo, aApplicationCache) ###
-<pre>  
+  
 Get storage for a specified application cache obtained using some different  
 mechanism.  
   
@@ -74,7 +74,7 @@ mechanism.
    Optional reference to an existing appcache.  When left null, this will  
    work with offline cache as a whole.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -95,18 +95,18 @@ mechanism.
 </table>
 
 ### clear() ###
-<pre>  
+  
 Evict the whole cache.  
   
-</pre>
+
 ### purgeFromMemory(aWhat) ###
-<pre>  
+  
 Purges data we keep warmed in memory.  Use for tests and for  
 saving memory.  
   
-</pre>
+
 ### asyncGetDiskConsumption(aObserver) ###
-<pre>  
+  
 Asynchronously determine how many bytes of the disk space the cache takes.  
 @see nsICacheStorageConsumptionObserver  
 @param aObserver  
@@ -114,7 +114,7 @@ Asynchronously determine how many bytes of the disk space the cache takes.
    nsICacheStorageConsumptionObserver.  
    NOTE: the observer MUST implement nsISupportsWeakReference.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -132,27 +132,26 @@ Asynchronously determine how many bytes of the disk space the cache takes.
 ## Attributes ##
 
 ### ioTarget ###
-<pre>  
+  
 I/O thread target to use for any operations on disk  
   
-</pre>
+
 ## Constants ##
 
 ### PURGE_DISK_DATA_ONLY ###
-<pre>  
+  
 Purge only data of disk backed entries.  Metadata are left for  
 performance purposes.  
   
-</pre>
+
 ### PURGE_DISK_ALL ###
-<pre>  
+  
 Purge whole disk backed entries from memory.  Disk files will  
 be left unattended.  
   
-</pre>
+
 ### PURGE_EVERYTHING ###
-<pre>  
+  
 Purge all entries we keep in memory, including memory-storage  
 entries.  This may be dangerous to use.  
   
-</pre>

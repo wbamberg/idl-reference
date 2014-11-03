@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### getProfileByName(aName) ###
-<pre>  
+  
 Get a profile by name. This is mainly for use by the -P  
 commandline flag.  
   
 @param aName The profile name to find.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -30,13 +30,13 @@ commandline flag.
 </table>
 
 ### lockProfilePath(aDirectory, aTempDirectory) ###
-<pre>  
+  
 Lock an arbitrary path as a profile. If the path does not exist, it  
 will be created and the defaults copied from the application directory.  
   
-</pre>
+
 ### createProfile(aRootDir, aName) ###
-<pre>  
+  
 Create a new profile.  
   
 The profile temporary directory will be chosen based on where the  
@@ -48,7 +48,7 @@ profile directory is located.
 @param aName  
        The profile name.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -69,7 +69,7 @@ profile directory is located.
 </table>
 
 ### createDefaultProfileForApp(aProfileName, aAppName, aVendorName, aProfileDefaultsDir) ###
-<pre>  
+  
 Create the default profile for an application.  
   
 The profile will be typically in  
@@ -93,7 +93,7 @@ new profile directory.
         The location where the profile defaults are.  
 @return The created profile.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -136,10 +136,10 @@ new profile directory.
 </table>
 
 ### flush() ###
-<pre>  
+  
 Flush the profiles list file.  
   
-</pre>
+
 ## Attributes ##
 
 ### startWithLastProfile ###
@@ -149,13 +149,13 @@ Flush the profiles list file.
 ### profiles ###
 
 ### selectedProfile ###
-<pre>  
+  
 The currently selected profile (the one used or about to be used by the  
 browser).  
   
-</pre>
+
 ### defaultProfile ###
-<pre>  
+  
 The default profile (the one used or about to be used by the  
 browser if no other profile is specified at runtime). This is the profile  
 marked with Default=1 in profiles.ini and is usually the same as  
@@ -167,10 +167,9 @@ empty file named "ignore-dev-edition-profile" is present next to
 profiles.ini. In that case Developer Edition behaves the same as any  
 other build of Firefox.  
   
-</pre>
+
 ### profileCount ###
-<pre>  
+  
 Returns the number of profiles.  
 @return 0, 1, or 2. More than 2 profiles will always return 2.  
   
-</pre>

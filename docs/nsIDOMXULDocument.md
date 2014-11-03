@@ -22,7 +22,7 @@ layout: default
 ### getBoxObjectFor(elt) ###
 
 ### loadOverlay(url, aObserver) ###
-<pre>  
+  
 Loads a XUL overlay and merges it with the current document, notifying an  
 observer when the merge is complete.   
 @param   url  
@@ -39,7 +39,7 @@ NOTICE:  In the 2.0 timeframe this API will change such that the
          API's behavior _not_ to change because it will!  
          - Ben Goodger (8/23/2005)  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -66,13 +66,13 @@ NOTICE:  In the 2.0 timeframe this API will change such that the
 ### popupNode ###
 
 ### popupRangeParent ###
-<pre>  
+  
 These attributes correspond to trustedGetPopupNode().rangeOffset and  
 rangeParent. They will help you find where in the DOM the popup is  
 happening. Can be accessed from chrome only, and only during a popup  
 event. Accessing any other time will be an error.  
   
-</pre>
+
 ### popupRangeOffset ###
 
 ### tooltipNode ###

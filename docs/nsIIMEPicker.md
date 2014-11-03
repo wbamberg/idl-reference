@@ -10,7 +10,6 @@ layout: default
 ## Methods ##
 
 ### show() ###
-<pre>  
+  
 Show IME Picker dialog.  
   
-</pre>

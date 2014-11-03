@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIMessageLoop #
-<pre>  
+  
 This service allows access to the current thread's Chromium MessageLoop  
 instance, with some extra sugar added.  If you're calling from C++, it may  
 or may not make sense for you to use this interface.  If you're calling from  
@@ -17,11 +17,11 @@ from adding other methods.
   
 nsIMessageLoop's contractid is "@mozilla.org/message-loop;1".  
   
-</pre>
+
 ## Methods ##
 
 ### postIdleTask(task, ensureRunsAfterMS) ###
-<pre>  
+  
 Posts a task to be run when this thread's message loop is idle, or after  
 ensureRunsAfterMS milliseconds have elapsed.  (That is, the task is  
 guaranteed to run /eventually/.)  
@@ -32,4 +32,3 @@ specifying long timeouts and tasks which hold references to windows or
 other large objects, because you can leak memory in a difficult-to-detect  
 way!  
   
-</pre>

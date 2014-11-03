@@ -6,26 +6,25 @@ layout: default
 </div>
 
 # nsISpeechTaskCallback #
-<pre>  
+  
 A callback is implemented by the service. For direct audio services, it is  
 required to implement these, although it could be helpful to use the  
 cancel method for shutting down the speech resources.  
   
-</pre>
+
 ## Methods ##
 
 ### onPause() ###
-<pre>  
+  
 The user or application has paused the speech.  
   
-</pre>
+
 ### onResume() ###
-<pre>  
+  
 The user or application has resumed the speech.  
   
-</pre>
+
 ### onCancel() ###
-<pre>  
+  
 The user or application has canceled the speech.  
   
-</pre>

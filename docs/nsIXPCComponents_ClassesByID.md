@@ -6,8 +6,7 @@ layout: default
 </div>
 
 # nsIXPCComponents_ClassesByID #
-<pre>  
+  
 interface of Components.classesByID  
 (interesting stuff only reflected into JavaScript)  
   
-</pre>

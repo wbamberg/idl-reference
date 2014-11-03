@@ -6,8 +6,7 @@ layout: default
 </div>
 
 # nsIXPCComponents_Exception #
-<pre>  
+  
 interface of Components.Exception  
 (interesting stuff only reflected into JavaScript)  
   
-</pre>

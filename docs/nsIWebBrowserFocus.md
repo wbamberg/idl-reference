@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIWebBrowserFocus #
-<pre>  
+  
 nsIWebBrowserFocus  
 Interface that embedders use for controlling and interacting  
 with the browser focus management. The embedded browser can be focused by  
@@ -15,11 +15,11 @@ the embedding application's top level window is disabled, deactivate() must
 be called, and activate() called again when the top level window is  
 reactivated for the browser's focus memory to work correctly.  
   
-</pre>
+
 ## Methods ##
 
 ### activate() ###
-<pre>  
+  
 MANDATORY  
 activate() is a mandatory call that must be made to the browser  
 when the embedding application's window is activated *and* the   
@@ -31,9 +31,9 @@ without affecting the currently focused element within the browser.
 If you fail to make this call, mozilla focus memory will not work  
 correctly.  
   
-</pre>
+
 ### deactivate() ###
-<pre>  
+  
 MANDATORY  
 deactivate() is a mandatory call that must be made to the browser  
 when the embedding application's window is deactivated *and* the  
@@ -45,30 +45,29 @@ to the embedding chrome.
 If you fail to make this call, mozilla focus memory will not work  
 correctly.  
   
-</pre>
+
 ### setFocusAtFirstElement() ###
-<pre>  
+  
 Give the first element focus within mozilla  
 (i.e. TAB was pressed and focus should enter mozilla)  
   
-</pre>
+
 ### setFocusAtLastElement() ###
-<pre>  
+  
 Give the last element focus within mozilla  
 (i.e. SHIFT-TAB was pressed and focus should enter mozilla)  
   
-</pre>
+
 ## Attributes ##
 
 ### focusedWindow ###
-<pre>  
+  
 The currently focused nsDOMWindow when the browser is active,  
 or the last focused nsDOMWindow when the browser is inactive.  
   
-</pre>
+
 ### focusedElement ###
-<pre>  
+  
 The currently focused nsDOMElement when the browser is active,  
 or the last focused nsDOMElement when the browser is inactive.  
   
-</pre>

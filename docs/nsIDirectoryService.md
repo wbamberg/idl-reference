@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # nsIDirectoryService #
-<pre>  
+  
 nsIDirectoryService  
   
-</pre>
+
 ## Methods ##
 
 ### init() ###
-<pre>  
+  
 init  
   
 Must be called. Used internally by XPCOM initialization.  
   
   
-</pre>
+
 ### registerProvider(prov) ###
-<pre>  
+  
 registerProvider  
   
 Register a provider with the service.  
@@ -31,7 +31,7 @@ Register a provider with the service.
                        the service is released.  
   
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -47,7 +47,7 @@ Register a provider with the service.
 </table>
 
 ### unregisterProvider(prov) ###
-<pre>  
+  
 unregisterProvider  
   
 Unregister a provider with the service.  
@@ -55,7 +55,7 @@ Unregister a provider with the service.
 @param prov              
   
   
-</pre>
+
 #### Parameters ####
 
 <table>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIPrintSession #
-<pre>  
+  
 nsIPrintSession  
   
 Stores data pertaining only to a single print job. This  
@@ -24,4 +24,3 @@ will end the session.
   
 @status  
   
-</pre>

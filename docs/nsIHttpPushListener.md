@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIHttpPushListener #
-<pre>  
+  
 nsIHttpPushListener  
   
 Used for triggering when a HTTP/2 push is received.  
   
   
-</pre>
+
 ## Methods ##
 
 ### onPush(associatedChannel, pushChannel) ###
-<pre>  
+  
 When provided as a notificationCallback to an httpChannel, this.onPush()  
 will be invoked when there is a >= Http2 push to that  
 channel. The push may be in progress.  
@@ -33,7 +33,7 @@ The new channel can be canceled after the AsyncOpen if it is not wanted.
 @param pushChannel  
        a channel to the resource which is being pushed  
   
-</pre>
+
 #### Parameters ####
 
 <table>

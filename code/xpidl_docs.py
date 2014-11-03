@@ -22,10 +22,8 @@ class Attribute(object):
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
             processed = stripComments(doccomment)
-            output.write("<pre>")
             for line in processed:
                 output.write(line)
-            output.write("</pre>")
 
 class Param(object):
     def __init__(self, name, doc):
@@ -94,10 +92,8 @@ class Method(object):
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
             processed = stripComments(doccomment)
-            output.write("<pre>")
             for line in processed:
                 output.write(line)
-            output.write("</pre>")
 
 class Constant(object):
     def __init__(self, spec):
@@ -111,10 +107,8 @@ class Constant(object):
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
             processed = stripComments(doccomment)
-            output.write("<pre>")
             for line in processed:
                 output.write(line)
-            output.write("</pre>")
 
 class Interface(object):
     def __init__(self, filename, spec):
@@ -142,10 +136,8 @@ class Interface(object):
     def writeDoccomments(self, output):
         for doccomment in self.doccomments:
             processed = stripComments(doccomment)
-            output.write("<pre>")
             for line in processed:
                 output.write(line)
-            output.write("</pre>")
 
     def writeMembers(self, kind, members, output):
         if len(members) > 0:

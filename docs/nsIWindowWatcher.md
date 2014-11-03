@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIWindowWatcher #
-<pre>  
+  
 nsIWindowWatcher is the keeper of Gecko/DOM Windows. It maintains  
 a list of open top-level windows, and allows some operations on them.  
   
@@ -26,11 +26,11 @@ about that requirement.
   This component must be initialized at application startup by calling  
 setWindowCreator.  
   
-</pre>
+
 ## Methods ##
 
 ### openWindow(aParent, aUrl, aName, aFeatures, aArguments) ###
-<pre> Create a new window. It will automatically be added to our list  
+ Create a new window. It will automatically be added to our list  
 (via addWindow()).  
 @param aParent parent window, if any. Null if no parent.  If it is  
 impossible to get to an nsIWebBrowserChrome from aParent, this  
@@ -56,7 +56,7 @@ however.
 @note This method may dispatch a "toplevel-window-ready" notification  
 via nsIObserverService if the window did not already exist.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -113,7 +113,7 @@ can be null.
 </table>
 
 ### registerNotification(aObserver) ###
-<pre> Clients of this service can register themselves to be notified  
+ Clients of this service can register themselves to be notified  
 when a window is opened or closed (added to or removed from this  
 service). This method adds an aObserver to the list of objects  
 to be notified.  
@@ -127,7 +127,7 @@ which can be QIed to an nsIDOMWindow.
 aTopic   a wstring, either "domwindowopened" or "domwindowclosed".  
 someData not used.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -143,13 +143,13 @@ called with the following parameters:
 </table>
 
 ### unregisterNotification(aObserver) ###
-<pre> Clients of this service can register themselves to be notified  
+ Clients of this service can register themselves to be notified  
 when a window is opened or closed (added to or removed from this  
 service). This method removes an aObserver from the list of objects  
 to be notified.  
 @param aObserver the observer to be removed.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -163,12 +163,12 @@ to be notified.
 </table>
 
 ### getWindowEnumerator() ###
-<pre> Get an iterator for currently open windows in the order they were opened,  
+ Get an iterator for currently open windows in the order they were opened,  
 guaranteeing that each will be visited exactly once.  
 @return an enumerator which will itself return nsISupports objects which  
 can be QIed to an nsIDOMWindow  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -182,11 +182,11 @@ can be QIed to an nsIDOMWindow
 </table>
 
 ### getNewPrompter(aParent) ###
-<pre> Return a newly created nsIPrompt implementation.  
+ Return a newly created nsIPrompt implementation.  
 @param aParent the parent window used for posing alerts. can be null.  
 @return a new nsIPrompt object  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -211,11 +211,11 @@ can be QIed to an nsIDOMWindow
 </table>
 
 ### getNewAuthPrompter(aParent) ###
-<pre> Return a newly created nsIAuthPrompt implementation.  
+ Return a newly created nsIAuthPrompt implementation.  
 @param aParent the parent window used for posing alerts. can be null.  
 @return a new nsIAuthPrompt object  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -240,12 +240,12 @@ can be QIed to an nsIDOMWindow
 </table>
 
 ### setWindowCreator(creator) ###
-<pre> Set the window creator callback. It must be filled in by the app.  
+ Set the window creator callback. It must be filled in by the app.  
 openWindow will use it to create new windows.  
 @param creator the callback. if null, the callback will be cleared  
 and window creation capabilities lost.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -260,11 +260,11 @@ and window creation capabilities lost.
 </table>
 
 ### hasWindowCreator() ###
-<pre> Returns true if a window creator callback has been set, false otherwise.  
+ Returns true if a window creator callback has been set, false otherwise.  
   
-</pre>
+
 ### getChromeForWindow(aWindow) ###
-<pre> Retrieve the chrome window mapped to the given DOM window. Window  
+ Retrieve the chrome window mapped to the given DOM window. Window  
 Watcher keeps a list of all top-level DOM windows currently open,  
 along with their corresponding chrome interfaces. Since DOM Windows  
 lack a (public) means of retrieving their corresponding chrome,  
@@ -272,7 +272,7 @@ this method will do that.
 @param aWindow the DOM window whose chrome window the caller needs  
 @return the corresponding chrome window  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -297,7 +297,7 @@ this method will do that.
 </table>
 
 ### getWindowByName(aTargetName, aCurrentWindow) ###
-<pre>  
+  
 Retrieve an existing window (or frame).  
 @param aTargetName the window name  
 @param aCurrentWindow a starting point in the window hierarchy to  
@@ -308,7 +308,7 @@ Note: This method will search all open windows for any window or
 frame with the given window name. Make sure you understand the  
 security implications of this before using this method!  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -332,11 +332,10 @@ will be searched.
 ## Attributes ##
 
 ### activeWindow ###
-<pre> The Watcher serves as a global storage facility for the current active  
+ The Watcher serves as a global storage facility for the current active  
 (frontmost non-floating-palette-type) window, storing and returning  
 it on demand. Users must keep this attribute current, including after  
 the topmost window is closed. This attribute obviously can return null  
 if no windows are open, but should otherwise always return a valid  
 window.  
   
-</pre>

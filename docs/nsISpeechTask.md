@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsISpeechTask #
-<pre>  
+  
 A task is associated with a single utterance. It is provided by the browser  
 to the service in the speak() method.  
   
-</pre>
+
 ## Methods ##
 
 ### setup(aCallback, aChannels, aRate) ###
-<pre>  
+  
 Prepare browser for speech.  
   
 @param aCallback callback object for mid-speech operations.  
@@ -22,7 +22,7 @@ Prepare browser for speech.
                    in direct audio services  
 @param aRate     audio rate. Only required in direct audio services  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -49,14 +49,14 @@ Prepare browser for speech.
 </table>
 
 ### sendAudio(aData, aLandmarks) ###
-<pre>  
+  
 Send audio data to browser.  
   
 @param aData     an Int16Array with PCM-16 audio data.  
 @param aLandmarks an array of sample offset and landmark pairs.  
                     Used for emiting boundary and mark events.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -79,18 +79,18 @@ Send audio data to browser.
 ### sendAudioNative(aData, aDataLen) ###
 
 ### dispatchStart() ###
-<pre>  
+  
 Dispatch start event.  
   
-</pre>
+
 ### dispatchEnd(aElapsedTime, aCharIndex) ###
-<pre>  
+  
 Dispatch end event.  
   
 @param aElapsedTime time in seconds since speech has started.  
 @param aCharIndex   offset of spoken characters.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -110,13 +110,13 @@ Dispatch end event.
 </table>
 
 ### dispatchPause(aElapsedTime, aCharIndex) ###
-<pre>  
+  
 Dispatch pause event. Should not be called directly by service.  
   
 @param aElapsedTime time in seconds since speech has started.  
 @param aCharIndex   offset of spoken characters.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -136,13 +136,13 @@ Dispatch pause event. Should not be called directly by service.
 </table>
 
 ### dispatchResume(aElapsedTime, aCharIndex) ###
-<pre>  
+  
 Dispatch resume event. Should not be called directly by service.  
   
 @param aElapsedTime time in seconds since speech has started.  
 @param aCharIndex   offset of spoken characters.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -162,13 +162,13 @@ Dispatch resume event. Should not be called directly by service.
 </table>
 
 ### dispatchError(aElapsedTime, aCharIndex) ###
-<pre>  
+  
 Dispatch error event.  
   
 @param aElapsedTime time in seconds since speech has started.  
 @param aCharIndex   offset of spoken characters.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -188,14 +188,14 @@ Dispatch error event.
 </table>
 
 ### dispatchBoundary(aName, aElapsedTime, aCharIndex) ###
-<pre>  
+  
 Dispatch boundary event.  
   
 @param aName        name of boundary, 'word' or 'sentence'  
 @param aElapsedTime time in seconds since speech has started.  
 @param aCharIndex   offset of spoken characters.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -221,14 +221,14 @@ Dispatch boundary event.
 </table>
 
 ### dispatchMark(aName, aElapsedTime, aCharIndex) ###
-<pre>  
+  
 Dispatch mark event.  
   
 @param aName        mark identifier.  
 @param aElapsedTime time in seconds since speech has started.  
 @param aCharIndex   offset of spoken characters.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

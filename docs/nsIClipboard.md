@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### setData(aTransferable, anOwner, aWhichClipboard) ###
-<pre>  
+  
 Given a transferable, set the data on the native clipboard  
   
 @param  aTransferable The transferable  
@@ -18,7 +18,7 @@ Given a transferable, set the data on the native clipboard
 @param  aWhichClipboard Specifies the clipboard to which this operation applies.  
 @result NS_Ok if no errors  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -45,14 +45,14 @@ Given a transferable, set the data on the native clipboard
 </table>
 
 ### getData(aTransferable, aWhichClipboard) ###
-<pre>  
+  
 Given a transferable, get the clipboard data.  
   
 @param  aTransferable The transferable  
 @param  aWhichClipboard Specifies the clipboard to which this operation applies.  
 @result NS_Ok if no errors  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -73,14 +73,14 @@ Given a transferable, get the clipboard data.
 </table>
 
 ### emptyClipboard(aWhichClipboard) ###
-<pre>  
+  
 This empties the clipboard and notifies the clipboard owner.  
 This empties the "logical" clipboard. It does not clear the native clipboard.  
   
 @param  aWhichClipboard Specifies the clipboard to which this operation applies.  
 @result NS_OK if successful.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -95,7 +95,7 @@ This empties the "logical" clipboard. It does not clear the native clipboard.
 </table>
 
 ### hasDataMatchingFlavors(aFlavorList, aLength, aWhichClipboard) ###
-<pre>  
+  
 This provides a way to give correct UI feedback about, for instance, a paste   
 should be allowed. It does _NOT_ actually retreive the data and should be a very  
 inexpensive call. All it does is check if there is data on the clipboard matching  
@@ -107,7 +107,7 @@ any of the flavors in the given list.
 @outResult - if data is present matching one of   
 @result NS_OK if successful.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -135,22 +135,22 @@ any of the flavors in the given list.
 </table>
 
 ### supportsSelectionClipboard() ###
-<pre>  
+  
 Allows clients to determine if the implementation supports the concept of a   
 separate clipboard for selection.  
   
 @outResult - true if   
 @result NS_OK if successful.  
   
-</pre>
+
 ### supportsFindClipboard() ###
-<pre>  
+  
 Allows clients to determine if the implementation supports the concept of a  
 separate clipboard for find search strings.  
   
 @result NS_OK if successful.  
   
-</pre>
+
 ## Constants ##
 
 ### kSelectionClipboard ###

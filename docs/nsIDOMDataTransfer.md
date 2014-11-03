@@ -10,15 +10,15 @@ layout: default
 ## Methods ##
 
 ### clearData(format) ###
-<pre>  
+  
 Remove the data associated with a given format. If format is empty or not  
 specified, the data associated with all formats is removed. If data for  
 the specified format does not exist, or the data transfer contains no  
 data, this method will have no effect.  
   
-</pre>
+
 ### setData(format, data) ###
-<pre>  
+  
 Set the data for a given format. If data for the format does not exist,  
 it is added at the end, such that the last item in the types list will be  
 the new format. If data for the format already exists, the existing data  
@@ -27,15 +27,15 @@ not changed.
   
 @throws NS_ERROR_NULL_POINTER if the data is null  
   
-</pre>
+
 ### getData(format) ###
-<pre>  
+  
 Retrieves the data for a given format, or an empty string if data for  
 that format does not exist or the data transfer contains no data.  
   
-</pre>
+
 ### setDragImage(image, x, y) ###
-<pre>  
+  
 Set the image to be used for dragging if a custom one is desired. Most of  
 the time, this would not be set, as a default image is created from the  
 node that was dragged.  
@@ -54,7 +54,7 @@ width and height.
 @param y the vertical offset  
 @throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -83,14 +83,14 @@ width and height.
 ### addElement(element) ###
 
 ### mozTypesAt(index) ###
-<pre>  
+  
 Holds a list of the format types of the data that is stored for an item  
 at the specified index. If the index is not in the range from 0 to  
 itemCount - 1, an empty string list is returned.  
   
-</pre>
+
 ### mozClearDataAt(format, index) ###
-<pre>  
+  
 Remove the data associated with the given format for an item at the  
 specified index. The index is in the range from zero to itemCount - 1.  
   
@@ -104,7 +104,7 @@ If the format is not found, then this method has no effect.
 @throws NS_ERROR_DOM_INDEX_SIZE_ERR if index is greater or equal than itemCount  
 @throws NO_MODIFICATION_ALLOWED_ERR if the item cannot be modified  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -122,7 +122,7 @@ If the format is not found, then this method has no effect.
 ### mozSetDataAt(format, data, index) ###
 
 ### mozGetDataAt(format, index) ###
-<pre>  
+  
 Retrieve the data associated with the given format for an item at the  
 specified index, or null if it does not exist. The index should be in the  
 range from zero to itemCount - 1.  
@@ -131,7 +131,7 @@ range from zero to itemCount - 1.
 @returns the data of the given format, or null if it doesn't exist.  
 @throws NS_ERROR_DOM_INDEX_SIZE_ERR if index is greater or equal than itemCount  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -159,7 +159,7 @@ range from zero to itemCount - 1.
 ## Attributes ##
 
 ### dropEffect ###
-<pre>  
+  
 The actual effect that will be used, and should always be one of the  
 possible values of effectAllowed.  
   
@@ -186,30 +186,30 @@ Possible values:
   
 Assigning any other value has no effect and retains the old value.  
   
-</pre>
+
 ### effectAllowed ###
 
 ### files ###
-<pre>  
+  
 Holds a list of all the local files available on this data transfer.  
 A dataTransfer containing no files will return an empty list, and an  
 invalid index access on the resulting file list will return null.   
   
-</pre>
+
 ### types ###
-<pre>  
+  
 Holds a list of the format types of the data that is stored for the first  
 item, in the same order the data was added. An empty list will be  
 returned if no data was added.  
   
-</pre>
+
 ### mozItemCount ###
-<pre>  
+  
 The number of items being dragged.  
   
-</pre>
+
 ### mozCursor ###
-<pre>  
+  
 Sets the drag cursor state. Primarily used to control the cursor during  
 tab drags, but could be expanded to other uses. XXX Currently implemented  
 on Win32 only.  
@@ -221,21 +221,21 @@ Possible values:
 Values other than 'default' are indentical to setting mozCursor to  
 'auto'.  
   
-</pre>
+
 ### mozUserCancelled ###
-<pre>  
+  
 Will be true when the user has cancelled the drag (typically by pressing  
 Escape) and when the drag has been cancelled unexpectedly.  This will be  
 false otherwise, including when the drop has been rejected by its target.  
 This property is only relevant for the dragend event.  
   
-</pre>
+
 ### mozSourceNode ###
-<pre>  
+  
 The node that the mouse was pressed over to begin the drag. For external  
 drags, or if the caller cannot access this node, this will be null.  
   
-</pre>
+
 ### dropEffectInt ###
 
 ### effectAllowedInt ###

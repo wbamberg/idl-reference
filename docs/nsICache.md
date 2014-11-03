@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsICache #
-<pre>  
+  
 nsICache is a namespace for various cache constants.  It does not represent  
 an actual object.  
   
-</pre>
+
 ## Constants ##
 
 ### ACCESS_NONE ###
-<pre>  
+  
 Access Modes  
   
   
@@ -84,7 +84,7 @@ entry will be 'doomed', and you will be given a descriptor (with WRITE
 access only) to a new cache entry.  
   
   
-</pre>
+
 ### ACCESS_READ ###
 
 ### ACCESS_WRITE ###
@@ -92,7 +92,7 @@ access only) to a new cache entry.
 ### ACCESS_READ_WRITE ###
 
 ### STORE_ANYWHERE ###
-<pre>  
+  
 Storage Policy  
   
 The storage policy of a cache entry determines the device(s) to which  
@@ -109,7 +109,7 @@ STORE_ON_DISK         - Requires the cache entry to reside in persistent
 STORE_OFFLINE         - Requires the cache entry to reside in persistent,  
                         reliable storage for offline use.  
   
-</pre>
+
 ### STORE_IN_MEMORY ###
 
 ### STORE_ON_DISK ###
@@ -117,16 +117,16 @@ STORE_OFFLINE         - Requires the cache entry to reside in persistent,
 ### STORE_OFFLINE ###
 
 ### NOT_STREAM_BASED ###
-<pre>  
+  
 All entries for a cache session are stored as streams of data or  
 as objects.  These constant my be used to specify the type of entries  
 when calling nsICacheService::CreateSession().  
   
-</pre>
+
 ### STREAM_BASED ###
 
 ### NON_BLOCKING ###
-<pre>  
+  
 The synchronous OpenCacheEntry() may be blocking or non-blocking.  If a cache entry is  
 waiting to be validated by another cache descriptor (so no new cache descriptors for that  
 key can be created, OpenCacheEntry() will return NS_ERROR_CACHE_WAIT_FOR_VALIDATION in  
@@ -135,11 +135,10 @@ been validated or doomed.  If the cache entry is validated, then a descriptor fo
 entry will be created and returned.  If the cache entry was doomed, then a descriptor  
 will be created for a new cache entry for the key.   
   
-</pre>
+
 ### BLOCKING ###
 
 ### NO_EXPIRATION_TIME ###
-<pre>  
+  
 Constant meaning no expiration time.  
   
-</pre>

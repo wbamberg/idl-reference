@@ -6,8 +6,8 @@ layout: default
 </div>
 
 # nsIXPCFunctionThisTranslator #
-<pre>***********************************************************************/  
-</pre>
+***********************************************************************/  
+
 ## Methods ##
 
 ### TranslateThis(aInitialThis) ###

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### open(host, port, options) ###
-<pre>  
+  
 Create and return a socket object which will attempt to connect to  
 the given host and port.  
   
@@ -27,7 +27,7 @@ the given host and port.
   
 @return The new TCPSocket instance.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -65,7 +65,7 @@ the given host and port.
 </table>
 
 ### listen(localPort, options, backlog) ###
-<pre>  
+  
 Listen on a port  
   
 @param localPort The port of the server socket. Pass -1 to indicate no preference,  
@@ -82,7 +82,7 @@ Listen on a port
   
 @return The new TCPServerSocket instance.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -123,28 +123,28 @@ Listen on a port
 </table>
 
 ### upgradeToSecure() ###
-<pre>  
+  
 Enable secure on channel.  
   
-</pre>
+
 ### suspend() ###
-<pre>  
+  
 Pause reading incoming data and invocations of the ondata handler until  
 resume is called.  
   
-</pre>
+
 ### resume() ###
-<pre>  
+  
 Resume reading incoming data and invoking ondata as usual.  
   
-</pre>
+
 ### close() ###
-<pre>  
+  
 Close the socket.  
   
-</pre>
+
 ### send(data, byteOffset, byteLength) ###
-<pre>  
+  
 Write data to the socket.  
   
 @param data The data to write to the socket. If  
@@ -169,7 +169,7 @@ Write data to the socket.
         handler has been called before buffering more data by more  
         calls to send.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -224,49 +224,49 @@ Write data to the socket.
 ## Attributes ##
 
 ### host ###
-<pre>  
+  
 The host of this socket object.  
   
-</pre>
+
 ### port ###
-<pre>  
+  
 The port of this socket object.  
   
-</pre>
+
 ### ssl ###
-<pre>  
+  
 True if this socket object is an SSL socket.  
   
-</pre>
+
 ### bufferedAmount ###
-<pre>  
+  
 The number of bytes which have previously been buffered by calls to  
 send on this socket.  
   
-</pre>
+
 ### readyState ###
-<pre>  
+  
 The readyState attribute indicates which state the socket is currently  
 in. The state will be either "connecting", "open", "closing", or "closed".  
   
-</pre>
+
 ### binaryType ###
-<pre>  
+  
 The binaryType attribute indicates which mode this socket uses for  
 sending and receiving data. If the binaryType: "arraybuffer" option  
 was passed to the open method that created this socket, binaryType  
 will be "arraybuffer". Otherwise, it will be "string".  
   
-</pre>
+
 ### onopen ###
-<pre>  
+  
 The onopen event handler is called when the connection to the server  
 has been established. If the connection is refused, onerror will be  
 called, instead.  
   
-</pre>
+
 ### ondrain ###
-<pre>  
+  
 After send has buffered more than 64k of data, it returns false to  
 indicate that the client should pause before sending more data, to  
 avoid accumulating large buffers. This is only advisory, and the client  
@@ -275,9 +275,9 @@ the size of buffers is important (especially for a streaming application)
 ondrain will be called once the previously-buffered data has been written  
 to the network, at which point the client can resume calling send again.  
   
-</pre>
+
 ### ondata ###
-<pre>  
+  
 The ondata handler will be called repeatedly and asynchronously after  
 onopen has been called, every time some data was available from the server  
 and was read. If binaryType: "arraybuffer" was passed to open, the data  
@@ -288,9 +288,9 @@ At any time, the client may choose to pause reading and receiving ondata
 callbacks, by calling the socket's suspend() method. Further invocations  
 of ondata will be paused until resume() is called.  
   
-</pre>
+
 ### onerror ###
-<pre>  
+  
 The onerror handler will be called when there is an error. The data  
 attribute of the event passed to the onerror handler will have a  
 description of the kind of error.  
@@ -299,9 +299,9 @@ If onerror is called before onopen, the error was connection refused,
 and onclose will not be called. If onerror is called after onopen,  
 the connection was lost, and onclose will be called after onerror.  
   
-</pre>
+
 ### onclose ###
-<pre>  
+  
 The onclose handler is called once the underlying network socket  
 has been closed, either by the server, or by the client calling  
 close.  
@@ -309,4 +309,3 @@ close.
 If onerror was not called before onclose, then either side cleanly  
 closed the connection.  
   
-</pre>

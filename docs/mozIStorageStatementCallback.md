@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### handleResult(aResultSet) ###
-<pre>  
+  
 Called when some result is obtained from the database.  This function can  
 be called more than once with a different storageIResultSet each time for  
 any given asynchronous statement.  
@@ -18,7 +18,7 @@ any given asynchronous statement.
 @param aResultSet  
        The result set containing the data from the database.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -32,7 +32,7 @@ any given asynchronous statement.
 </table>
 
 ### handleError(aError) ###
-<pre>  
+  
 Called when some error occurs while executing the statement.  This function  
 may be called more than once with a different storageIError each time for  
 any given asynchronous statement.  
@@ -40,7 +40,7 @@ any given asynchronous statement.
 @param aError  
        An object containing information about the error.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -58,7 +58,7 @@ any given asynchronous statement.
 ## Constants ##
 
 ### REASON_FINISHED ###
-<pre>  
+  
 Called when the statement has finished executing.  This function will only  
 be called once for any given asynchronous statement.  
   
@@ -67,7 +67,7 @@ be called once for any given asynchronous statement.
        finished (REASON_FINISHED), was canceled (REASON_CANCELED), or  
        a fatal error occurred (REASON_ERROR).  
   
-</pre>
+
 ### REASON_CANCELED ###
 
 ### REASON_ERROR ###

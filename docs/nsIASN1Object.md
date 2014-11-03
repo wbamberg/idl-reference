@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIASN1Object #
-<pre>  
+  
 This represents an ASN.1 object,  
 where ASN.1 is "Abstract Syntax Notation number One".  
   
@@ -16,36 +16,36 @@ when working with visual reprenstation of ASN.1 objects
 in a human user interface, like in a tree widget  
 where open/close state of nodes must be remembered.  
   
-</pre>
+
 ## Attributes ##
 
 ### type ###
-<pre>  
+  
  "type" will be equal to one of the defined object identifiers.  
   
-</pre>
+
 ### tag ###
-<pre>  
+  
  This contains a tag as explained in ASN.1 standards documents.  
   
-</pre>
+
 ### displayName ###
-<pre>  
+  
  "displayName" contains a human readable explanatory label.  
   
-</pre>
+
 ### displayValue ###
-<pre>  
+  
  "displayValue" contains the human readable value.  
   
-</pre>
+
 ## Constants ##
 
 ### ASN1_END_CONTENTS ###
-<pre>  
+  
  Identifiers for the possible types of object.  
   
-</pre>
+
 ### ASN1_BOOLEAN ###
 
 ### ASN1_INTEGER ###

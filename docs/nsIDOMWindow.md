@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMWindow #
-<pre>  
+  
 The nsIDOMWindow interface is the primary interface for a DOM  
 window object. It represents a single window object that may  
 contain child windows if the document in the window contains a  
@@ -14,7 +14,7 @@ HTML frameset document or if the document contains iframe elements.
   
 @see <http://www.whatwg.org/html/#window>  
   
-</pre>
+
 ## Methods ##
 
 ### close() ###
@@ -36,7 +36,7 @@ HTML frameset document or if the document contains iframe elements.
 ### showModalDialog(aURI, aArgs, aOptions) ###
 
 ### postMessage(message, targetOrigin, transfer) ###
-<pre>  
+  
 Implements a safe message-passing system which can cross same-origin  
 boundaries.  
   
@@ -53,53 +53,53 @@ location of the other).
   
 @see <http://www.whatwg.org/html/#dom-window-postmessage>  
   
-</pre>
+
 ### atob(aAsciiString) ###
 
 ### btoa(aBase64Data) ###
 
 ### getSelection() ###
-<pre>  
+  
 Method for accessing this window's selection object.  
   
-</pre>
+
 ### matchMedia(media_query_list) ###
 
 ### scroll(xScroll, yScroll) ###
 
 ### scrollTo(xScroll, yScroll) ###
-<pre>  
+  
 Method for scrolling this window to an absolute pixel offset.  
   
-</pre>
+
 ### scrollBy(xScrollDif, yScrollDif) ###
-<pre>  
+  
 Method for scrolling this window to a pixel offset relative to  
 the current scroll position.  
   
-</pre>
+
 ### getComputedStyle(elt, pseudoElt) ###
-<pre>  
+  
 @see <http://dev.w3.org/csswg/cssom/#dom-window-getcomputedstyle>  
   
-</pre>
+
 ### getDefaultComputedStyle(elt, pseudoElt) ###
 
 ### scrollByLines(numLines) ###
-<pre>  
+  
 Method for scrolling this window by a number of lines.  
   
-</pre>
+
 ### scrollByPages(numPages) ###
-<pre>  
+  
 Method for scrolling this window by a number of pages.  
   
-</pre>
+
 ### sizeToContent() ###
-<pre>  
+  
 Method for sizing this window to the content in the window.  
   
-</pre>
+
 ### back() ###
 
 ### forward() ###
@@ -115,16 +115,16 @@ Method for sizing this window to the content in the window.
 ### resizeBy(widthDif, heightDif) ###
 
 ### open(url, name, options) ###
-<pre>  
+  
 Open a new window with this one as the parent.  This method will  
 NOT examine the JS stack for purposes of determining a caller.  
 This window will be used for security checks during the search by  
 name and the default character set on the newly opened window  
 will just be the default character set of this window.  
   
-</pre>
+
 ### openDialog(url, name, options, aExtraArgument) ###
-<pre>  
+  
 This method works like open except that aExtraArgument gets  
 converted into the array window.arguments in JS, if  
 aExtraArgument is a nsISupportsArray then the individual items in  
@@ -132,25 +132,25 @@ the array are inserted into window.arguments, and primitive
 nsISupports (nsISupportsPrimitives) types are converted to native  
 JS types when possible.  
   
-</pre>
+
 ### updateCommands(action, sel, reason) ###
 
 ### find(str, caseSensitive, backwards, wrapAround, wholeWord, searchInFrames, showDialog) ###
 
 ### mozRequestAnimationFrame(aCallback) ###
-<pre>  
+  
 Request a refresh of this browser window.  
   
 @see <http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/RequestAnimationFrame/Overview.html>  
   
-</pre>
+
 ### requestAnimationFrame(aCallback) ###
 
 ### mozCancelAnimationFrame(aHandle) ###
-<pre>  
+  
 Cancel a refresh callback.  
   
-</pre>
+
 ### mozCancelRequestAnimationFrame(aHandle) ###
 
 ### cancelAnimationFrame(aHandle) ###
@@ -162,17 +162,17 @@ Cancel a refresh callback.
 ### self ###
 
 ### document ###
-<pre>  
+  
 Accessor for the document in this window.  
   
-</pre>
+
 ### name ###
-<pre>  
+  
 Set/Get the name of this window.  
   
 This attribute is "replaceable" in JavaScript  
   
-</pre>
+
 ### location ###
 
 ### history ###
@@ -184,13 +184,13 @@ This attribute is "replaceable" in JavaScript
 ### personalbar ###
 
 ### scrollbars ###
-<pre>  
+  
 Accessor for the object that controls whether or not scrollbars  
 are shown in this window.  
   
 This attribute is "replaceable" in JavaScript  
   
-</pre>
+
 ### statusbar ###
 
 ### toolbar ###
@@ -200,7 +200,7 @@ This attribute is "replaceable" in JavaScript
 ### length ###
 
 ### top ###
-<pre>  
+  
 |top| gets the root of the window hierarchy.  
   
 This function does not cross chrome-content boundaries, so if this  
@@ -214,14 +214,14 @@ ignores <iframe mozbrowser> boundaries.
   
 This property is "replaceable" in JavaScript.  
   
-</pre>
+
 ### realTop ###
-<pre>  
+  
 You shouldn't need to call this function directly; call GetTop instead.  
   
-</pre>
+
 ### parent ###
-<pre>  
+  
 |parent| gets this window's parent window.  If this window has no parent,  
 we return the window itself.  
   
@@ -233,18 +233,18 @@ When script reads the property (or when C++ calls ScriptableTop), this
 property does not cross <iframe mozbrowser> boundaries.  In contrast, when  
 C++ calls GetParent, we ignore the mozbrowser attribute.  
   
-</pre>
+
 ### realParent ###
-<pre>  
+  
 You shouldn't need to read this property directly; call GetParent instead.  
   
-</pre>
+
 ### opener ###
 
 ### openerWindow ###
 
 ### frameElement ###
-<pre>  
+  
 |frameElement| gets this window's <iframe> or <frame> element, if it has  
 one.  
   
@@ -253,32 +253,32 @@ ScriptableFrameElement), we return |null| if the window is inside an
 <iframe mozbrowser>.  In contrast, when C++ calls GetFrameElement, we  
 ignore the mozbrowser attribute.  
   
-</pre>
+
 ### realFrameElement ###
-<pre>  
+  
 You shouldn't need to read this property directly; call GetFrameElement  
 instead.  
   
-</pre>
+
 ### navigator ###
 
 ### applicationCache ###
-<pre>  
+  
 Get the application cache object for this window.  
   
-</pre>
+
 ### sessionStorage ###
-<pre>  
+  
 Session storage for the current browsing context.  
 This attribute is a DOMStorage  
   
-</pre>
+
 ### localStorage ###
-<pre>  
+  
 Local storage for the current browsing context.  
 This attribute is a DOMStorage  
   
-</pre>
+
 ### indexedDB ###
 
 ### mozIndexedDB ###
@@ -290,23 +290,23 @@ This attribute is a DOMStorage
 ### innerHeight ###
 
 ### scrollX ###
-<pre>  
+  
 Accessor for the current x scroll position in this window in  
 pixels.  
   
 This attribute is "replaceable" in JavaScript  
   
-</pre>
+
 ### pageXOffset ###
 
 ### scrollY ###
-<pre>  
+  
 Accessor for the current y scroll position in this window in  
 pixels.  
   
 This attribute is "replaceable" in JavaScript  
   
-</pre>
+
 ### pageYOffset ###
 
 ### screenX ###
@@ -318,19 +318,19 @@ This attribute is "replaceable" in JavaScript
 ### outerHeight ###
 
 ### windowRoot ###
-<pre>  
+  
 Get the window root for this window. This is useful for hooking  
 up event listeners to this window and every other window nested  
 in the window root.  
   
-</pre>
+
 ### frames ###
-<pre>  
+  
 Accessor for the child windows in this window.  
   
-</pre>
+
 ### textZoom ###
-<pre>  
+  
 Set/Get the document scale factor as a multiplier on the default  
 size. When setting this attribute, a NS_ERROR_NOT_IMPLEMENTED  
 error may be returned by implementations not supporting  
@@ -338,7 +338,7 @@ zoom. Implementations not supporting zoom should return 1.0 all
 the time for the Get operation. 1.0 is equals normal size,  
 i.e. no zoom.  
   
-</pre>
+
 ### content ###
 
 ### prompter ###
@@ -362,18 +362,17 @@ i.e. no zoom.
 ### fullScreen ###
 
 ### mozPaintCount ###
-<pre>  
+  
 Returns the number of times this document for this window has  
 been painted to the screen.  
   
-</pre>
+
 ### mozAnimationStartTime ###
-<pre>  
+  
 The current animation start time in milliseconds since the epoch.  
   
-</pre>
+
 ### console ###
-<pre>  
+  
 Console API  
   
-</pre>

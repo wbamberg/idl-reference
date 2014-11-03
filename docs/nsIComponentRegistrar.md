@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### autoRegister(aSpec) ###
-<pre>  
+  
 autoRegister  
   
 Register a .manifest file, or an entire directory containing  
@@ -19,17 +19,17 @@ these files. Registration lasts for this run only, and is not cached.
 @note Formerly this method would register component files directly. This  
       is no longer supported.  
   
-</pre>
+
 ### autoUnregister(aSpec) ###
-<pre>  
+  
 autoUnregister  
 @status OBSOLETE: This method is no longer implemented, but preserved  
                   in this interface for binary compatibility with  
                   Mozilla 1.9.2.  
   
-</pre>
+
 ### registerFactory(aClass, aClassName, aContractID, aFactory) ###
-<pre>  
+  
 registerFactory  
   
 Register a factory with a given ContractID, CID and Class Name.  
@@ -42,7 +42,7 @@ Register a factory with a given ContractID, CID and Class Name.
                      If aFactory is null, the contract will be associated  
                      with a previously registered CID.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -77,7 +77,7 @@ Register a factory with a given ContractID, CID and Class Name.
 </table>
 
 ### unregisterFactory(aClass, aFactory) ###
-<pre>  
+  
 unregisterFactory  
   
 Unregister a factory associated with CID aClass.  
@@ -88,7 +88,7 @@ Unregister a factory associated with CID aClass.
   
 @throws NS_ERROR* Method failure.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -109,23 +109,23 @@ Unregister a factory associated with CID aClass.
 </table>
 
 ### registerFactoryLocation(aClass, aClassName, aContractID, aFile, aLoaderStr, aType) ###
-<pre>  
+  
 registerFactoryLocation  
 @status OBSOLETE: This method is no longer implemented, but preserved  
                   in this interface for binary compatibility with  
                   Mozilla 1.9.2.  
   
-</pre>
+
 ### unregisterFactoryLocation(aClass, aFile) ###
-<pre>  
+  
 unregisterFactoryLocation  
 @status OBSOLETE: This method is no longer implemented, but preserved  
                   in this interface for binary compatibility with  
                   Mozilla 1.9.2.  
   
-</pre>
+
 ### isCIDRegistered(aClass) ###
-<pre>  
+  
 isCIDRegistered  
   
 Returns true if a factory is registered for the CID.  
@@ -134,7 +134,7 @@ Returns true if a factory is registered for the CID.
 @return       : true if a factory is registered for CID   
                 false otherwise.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -160,7 +160,7 @@ Returns true if a factory is registered for the CID.
 </table>
 
 ### isContractIDRegistered(aContractID) ###
-<pre>  
+  
 isContractIDRegistered  
   
 Returns true if a factory is registered for the contract id.  
@@ -169,7 +169,7 @@ Returns true if a factory is registered for the contract id.
 @return       : true if a factory is registered for contract id   
                 false otherwise.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -195,7 +195,7 @@ Returns true if a factory is registered for the contract id.
 </table>
 
 ### enumerateCIDs() ###
-<pre>  
+  
 enumerateCIDs  
   
 Enumerate the list of all registered CIDs.  
@@ -204,7 +204,7 @@ Enumerate the list of all registered CIDs.
           for the nsISupportsID interface.  From the nsISupportsID, you   
           can obtain the actual CID.  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -219,7 +219,7 @@ Enumerate the list of all registered CIDs.
 </table>
 
 ### enumerateContractIDs() ###
-<pre>  
+  
 enumerateContractIDs  
   
 Enumerate the list of all registered ContractIDs.  
@@ -229,7 +229,7 @@ Enumerate the list of all registered ContractIDs.
           nsISupportsCString interface, you can obtain the actual   
           Contract ID string.  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -245,22 +245,22 @@ Enumerate the list of all registered ContractIDs.
 </table>
 
 ### CIDToContractID(aClass) ###
-<pre>  
+  
 CIDToContractID  
 @status OBSOLETE: This method is no longer implemented, but preserved  
                   in this interface for binary compatibility with  
                   Mozilla 1.9.2.  
   
-</pre>
+
 ### contractIDToCID(aContractID) ###
-<pre>  
+  
 contractIDToCID  
   
 Returns the CID for a given Contract ID, if one exists and is registered.  
   
 @return : Contract ID.  
   
-</pre>
+
 #### Returns ####
 
 <table>

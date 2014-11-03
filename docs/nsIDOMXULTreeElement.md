@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIDOMXULTreeElement #
-<pre>  
+  
 @status UNDER_DEVELOPMENT  
   
-</pre>
+
 ## Attributes ##
 
 ### columns ###

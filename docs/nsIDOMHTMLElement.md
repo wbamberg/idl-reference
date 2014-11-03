@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMHTMLElement #
-<pre>  
+  
 The nsIDOMHTMLElement interface is the primary [X]HTML element  
 interface. It represents a single [X]HTML element in the document  
 tree.  
@@ -17,7 +17,7 @@ http://www.w3.org/TR/DOM-Level-2-HTML/
 with changes from the work-in-progress WHATWG HTML specification:  
 http://www.whatwg.org/specs/web-apps/current-work/  
   
-</pre>
+
 ## Methods ##
 
 ### click() ###
@@ -55,12 +55,12 @@ http://www.whatwg.org/specs/web-apps/current-work/
 ### itemRef ###
 
 ### hidden ###
-<pre>  
+  
 Indicates that the element is not yet, or is no longer, relevant.  
   
 See <http://www.whatwg.org/html5/#the-hidden-attribute>.  
   
-</pre>
+
 ### tabIndex ###
 
 ### accessKey ###

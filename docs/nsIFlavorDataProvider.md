@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getFlavorData(aTransferable, aFlavor, aData, aDataLen) ###
-<pre>  
+  
 Retrieve the data from this data provider.  
   
 @param  aTransferable (in parameter) the transferable we're being called for.  
@@ -18,7 +18,7 @@ Retrieve the data from this data provider.
 @param  aData the data. Some variant of class in nsISupportsPrimitives.idl  
 @param  aDataLen the length of the data  
   
-</pre>
+
 #### Parameters ####
 
 <table>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### init(aSource, aTarget, aDisplayName, aMIMEInfo, startTime, aTempFile, aCancelable, aIsPrivate) ###
-<pre>  
+  
 Initializes the transfer with certain properties.  This function must  
 be called prior to accessing any properties on this interface.  
   
@@ -46,7 +46,7 @@ be called prior to accessing any properties on this interface.
                   If true, indicates that the transfer was initiated from  
                   a source that desires privacy.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

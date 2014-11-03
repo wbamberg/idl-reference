@@ -10,12 +10,12 @@ layout: default
 ## Attributes ##
 
 ### searchType ###
-<pre>  
+  
 Identifies the search behavior.  
 Should be one of the SEARCH_TYPE_* constants above.  
 Defaults to SEARCH_TYPE_DELAYED.  
   
-</pre>
+
 ## Constants ##
 
 ### SEARCH_TYPE_DELAYED ###

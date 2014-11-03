@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIContentPolicy #
-<pre>  
+  
 Interface for content policy mechanism.  Implementations of this  
 interface can be used to control loading of various types of out-of-line  
 content, or processing of certain types of in-line content.  
@@ -14,11 +14,11 @@ content, or processing of certain types of in-line content.
 WARNING: do not block the caller from shouldLoad or shouldProcess (e.g.,  
 by launching a dialog to prompt the user for something).  
   
-</pre>
+
 ## Methods ##
 
 ### shouldLoad(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeTypeGuess, aExtra, aRequestPrincipal) ###
-<pre>  
+  
 Should the resource at this location be loaded?  
 ShouldLoad will be called before loading the resource at aContentLocation  
 to determine whether to start the load at all.  
@@ -73,7 +73,7 @@ unpredictable behavior, possibly including crashes, content not showing
 up, content showing up doubled, etc.  If you need to do any of the things  
 above, do them off timeout or event.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -151,7 +151,7 @@ above, do them off timeout or event.
 </table>
 
 ### shouldProcess(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeType, aExtra, aRequestPrincipal) ###
-<pre>  
+  
 Should the resource be processed?  
 ShouldProcess will be called once all the information passed to it has  
 been determined about the resource, typically after part of the resource  
@@ -186,7 +186,7 @@ has been loaded.
 involved is in an inconsistent state.  See the note on shouldLoad to see  
 what this means for implementors of this method.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -254,12 +254,12 @@ what this means for implementors of this method.
 ## Constants ##
 
 ### TYPE_INVALID ###
-<pre>  
+  
 Indicates a unset or bogus policy type.  
   
-</pre>
+
 ### TYPE_OTHER ###
-<pre>  
+  
 Gecko/Firefox developers: Do not use TYPE_OTHER under any circumstances.  
   
 Extension developers: Whenever it is reasonable, use one of the existing  
@@ -279,41 +279,41 @@ Implementations of nsIContentPolicy should treat this the same way they
 treat unknown types, because existing users of TYPE_OTHER may be converted  
 to use new content types.  
   
-</pre>
+
 ### TYPE_SCRIPT ###
-<pre>  
+  
 Indicates an executable script (such as JavaScript).  
   
-</pre>
+
 ### TYPE_IMAGE ###
-<pre>  
+  
 Indicates an image (e.g., IMG elements).  
   
-</pre>
+
 ### TYPE_STYLESHEET ###
-<pre>  
+  
 Indicates a stylesheet (e.g., STYLE elements).  
   
-</pre>
+
 ### TYPE_OBJECT ###
-<pre>  
+  
 Indicates a generic object (plugin-handled content typically falls under  
 this category).  
   
-</pre>
+
 ### TYPE_DOCUMENT ###
-<pre>  
+  
 Indicates a document at the top-level (i.e., in a browser).  
   
-</pre>
+
 ### TYPE_SUBDOCUMENT ###
-<pre>  
+  
 Indicates a document contained within another document (e.g., IFRAMEs,  
 FRAMES, and OBJECTs).  
   
-</pre>
+
 ### TYPE_REFRESH ###
-<pre>  
+  
 Indicates a timed refresh.  
   
 shouldLoad will never get this, because it does not represent content  
@@ -323,93 +323,93 @@ shouldLoad as expected).
 shouldProcess will get this for, e.g., META Refresh elements and HTTP  
 Refresh headers.  
   
-</pre>
+
 ### TYPE_XBL ###
-<pre>  
+  
 Indicates an XBL binding request, triggered either by -moz-binding CSS  
 property.  
   
-</pre>
+
 ### TYPE_PING ###
-<pre>  
+  
 Indicates a ping triggered by a click on <A PING="..."> element.  
   
-</pre>
+
 ### TYPE_XMLHTTPREQUEST ###
-<pre>  
+  
 Indicates an XMLHttpRequest. Also used for document.load and for EventSource.  
   
-</pre>
+
 ### TYPE_DATAREQUEST ###
 
 ### TYPE_OBJECT_SUBREQUEST ###
-<pre>  
+  
 Indicates a request by a plugin.  
   
-</pre>
+
 ### TYPE_DTD ###
-<pre>  
+  
 Indicates a DTD loaded by an XML document.  
   
-</pre>
+
 ### TYPE_FONT ###
-<pre>  
+  
 Indicates a font loaded via @font-face rule.  
   
-</pre>
+
 ### TYPE_MEDIA ###
-<pre>  
+  
 Indicates a video or audio load.  
   
-</pre>
+
 ### TYPE_WEBSOCKET ###
-<pre>  
+  
 Indicates a WebSocket load.  
   
-</pre>
+
 ### TYPE_CSP_REPORT ###
-<pre>  
+  
 Indicates a Content Security Policy report.  
   
-</pre>
+
 ### TYPE_XSLT ###
-<pre>  
+  
 Indicates a style sheet transformation.  
   
-</pre>
+
 ### TYPE_BEACON ###
-<pre>  
+  
 Indicates a beacon post.  
   
-</pre>
+
 ### TYPE_FETCH ###
-<pre>  
+  
 Indicates a load initiated by the fetch() function from the Fetch  
 specification.  
   
-</pre>
+
 ### TYPE_IMAGESET ###
-<pre>  
+  
 Indicates a <img srcset> or <picture> request.  
   
-</pre>
+
 ### REJECT_REQUEST ###
-<pre>  
+  
 Returned from shouldLoad or shouldProcess if the load or process request  
 is rejected based on details of the request.  
   
-</pre>
+
 ### REJECT_TYPE ###
-<pre>  
+  
 Returned from shouldLoad or shouldProcess if the load/process is rejected  
 based solely on its type (of the above flags).  
   
 NOTE that it is not meant to stop future requests for this type--only the  
 current request.  
   
-</pre>
+
 ### REJECT_SERVER ###
-<pre>  
+  
 Returned from shouldLoad or shouldProcess if the load/process is rejected  
 based on the server it is hosted on or requested from (aContentLocation or  
 aRequestOrigin), e.g., if you block an IMAGE because it is served from  
@@ -419,19 +419,18 @@ server/domain).
 NOTE that it is not meant to stop future requests for this server--only the  
 current request.  
   
-</pre>
+
 ### REJECT_OTHER ###
-<pre>  
+  
 Returned from shouldLoad or shouldProcess if the load/process is rejected  
 based on some other criteria. Mozilla callers will handle this like  
 REJECT_REQUEST; third-party implementors may, for example, use this to  
 direct their own callers to consult the extra parameter for additional  
 details.  
   
-</pre>
+
 ### ACCEPT ###
-<pre>  
+  
 Returned from shouldLoad or shouldProcess if the load or process request  
 is not rejected.  
   
-</pre>

@@ -10,7 +10,6 @@ layout: default
 ## Methods ##
 
 ### notify(aRv, aCompleteMessage) ###
-<pre>  
+  
 |aCompleteMessage|: jsval: the completely concatenated message. Noted, this value might be null.  
   
-</pre>

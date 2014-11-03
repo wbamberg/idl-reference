@@ -6,37 +6,36 @@ layout: default
 </div>
 
 # nsIDOMTCPServerSocket #
-<pre>  
+  
 nsIDOMTCPServerSocket  
   
 An interface to a server socket that can accept incoming connections for gaia apps.  
   
-</pre>
+
 ## Methods ##
 
 ### close() ###
-<pre>  
+  
 Close the server socket.  
   
-</pre>
+
 ## Attributes ##
 
 ### localPort ###
-<pre>  
+  
 The port of this server socket object.  
   
-</pre>
+
 ### onconnect ###
-<pre>  
+  
 The onconnect event handler is called when a client connection is accepted.  
 The data attribute of the event passed to the onconnect handler will be a TCPSocket  
 instance, which is used for communication between client and server.   
   
-</pre>
+
 ### onerror ###
-<pre>  
+  
 The onerror handler will be called when the listen of a server socket is aborted.  
 The data attribute of the event passed to the onerror handler will have a  
 description of the kind of error.  
   
-</pre>

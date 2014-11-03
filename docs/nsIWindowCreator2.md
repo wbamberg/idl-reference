@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### createChromeWindow2(parent, chromeFlags, contextFlags, uri, aOpeningTab, cancel) ###
-<pre> Create a new window. Gecko will/may call this method, if made  
+ Create a new window. Gecko will/may call this method, if made  
 available to it, to create new windows.  
 @param parent Parent window, if any. Null if not. The newly created  
 window should be made a child/dependent window of  
@@ -31,7 +31,7 @@ be created at all. The caller should not default
 to any possible backup scheme for creating the window.  
 @return the new window. Will be null if canceled or an error occurred.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -99,7 +99,6 @@ to any possible backup scheme for creating the window.
 ## Constants ##
 
 ### PARENT_IS_LOADING_OR_RUNNING_TIMEOUT ###
-<pre>  
+  
 Definitions for contextFlags  
   
-</pre>

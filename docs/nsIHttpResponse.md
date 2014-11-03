@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIHttpResponse #
-<pre>  
+  
 Represents an HTTP response, as described in RFC 2616, section 6.  
   
-</pre>
+
 ## Methods ##
 
 ### setStatusLine(httpVersion, statusCode, description) ###
-<pre>  
+  
 Sets the status line for this.  If this method is never called on this, the  
 status line defaults to "HTTP/", followed by the server's default HTTP  
 version (e.g. "1.1"), followed by " 200 OK".  
@@ -34,7 +34,7 @@ version (e.g. "1.1"), followed by " 200 OK".
   written to this response's body, or if seizePower() has been called on  
   this  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -69,7 +69,7 @@ version (e.g. "1.1"), followed by " 200 OK".
 </table>
 
 ### setHeader(name, value, merge) ###
-<pre>  
+  
 Sets the specified header in this.  
   
 @param name  
@@ -92,7 +92,7 @@ Sets the specified header in this.
   written to this response's body, or if seizePower() has been called on  
   this  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -131,7 +131,7 @@ Sets the specified header in this.
 </table>
 
 ### write(data) ###
-<pre>  
+  
 Writes a string to the response's output stream.  This method is merely a  
 convenient shorthand for writing the same data to bodyOutputStream  
 directly.  
@@ -141,9 +141,9 @@ directly.
 @throws NS_ERROR_NOT_AVAILABLE  
   if called after this response has been fully constructed  
   
-</pre>
+
 ### processAsync() ###
-<pre>  
+  
 Signals that this response is being constructed asynchronously.  Requests  
 are typically completely constructed during nsIHttpRequestHandler.handle;  
 however, responses which require significant resources (time, memory,  
@@ -160,9 +160,9 @@ finish() is called.
 @throws NS_ERROR_NOT_AVAILABLE  
   if seizePower() has been called on this  
   
-</pre>
+
 ### seizePower() ###
-<pre>  
+  
 Seizes complete control of this response (and its connection) from the  
 server, allowing raw and unfettered access to data being sent in the HTTP  
 response.  Once this method has been called the only property which may be  
@@ -183,9 +183,9 @@ is not enough to simply call close() on bodyOutputStream.
 @throws NS_ERROR_UNEXPECTED  
   if finish() has been called on this  
   
-</pre>
+
 ### finish() ###
-<pre>  
+  
 Signals that construction of this response is complete and that it may be  
 sent over the network to the client, or if seizePower() has been called  
 signals that all data has been written and that the underlying connection  
@@ -195,11 +195,11 @@ seizePower() has been called.  This method is idempotent.
 @throws NS_ERROR_UNEXPECTED  
   if processAsync() or seizePower() has not already been properly called  
   
-</pre>
+
 ## Attributes ##
 
 ### bodyOutputStream ###
-<pre>  
+  
 A stream to which data appearing in the body of this response (or in the  
 totality of the response if seizePower() is called) should be written.  
 After this response has been designated as being processed asynchronously,  
@@ -214,4 +214,3 @@ prepared for delays at any time.
 @throws NS_ERROR_NOT_AVAILABLE  
   if accessed after this response is fully constructed  
   
-</pre>

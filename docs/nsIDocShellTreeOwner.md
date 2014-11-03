@@ -12,7 +12,7 @@ layout: default
 ### findItemWithName(name, aRequestor, aOriginalRequestor) ###
 
 ### contentShellAdded(aContentShell, aPrimary, aTargetable, aID) ###
-<pre>  
+  
 Called when a content shell is added to the docshell tree.  This is  
 _only_ called for "root" content shells (that is, ones whose parent is a  
 chrome shell).  
@@ -24,7 +24,7 @@ chrome shell).
 @param aID the "id" of the shell.  What this actually means is  
 		undefined. Don't rely on this for anything.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -58,7 +58,7 @@ chrome shell).
 </table>
 
 ### contentShellRemoved(aContentShell) ###
-<pre>  
+  
 Called when a content shell is removed from the docshell tree.  This is  
 _only_ called for "root" content shells (that is, ones whose parent is a  
 chrome shell).  Note that if aContentShell was never added,  
@@ -66,7 +66,7 @@ contentShellRemoved should just do nothing.
   
 @param aContentShell the shell being removed.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

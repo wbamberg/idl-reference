@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsILoginMetaInfo #
-<pre>  
+  
 An object containing metainfo for a login stored by the login manager.  
   
 Code using login manager can generally ignore this interface. When adding  
@@ -15,11 +15,11 @@ properties will be unchanged unless a change is explicitly requested [by
 using modifyLogin() with a nsIPropertyBag]. When deleting a login or  
 comparing logins, these properties are ignored.  
   
-</pre>
+
 ## Attributes ##
 
 ### guid ###
-<pre>  
+  
 The GUID to uniquely identify the login. This can be any arbitrary  
 string, but a format as created by nsIUUIDGenerator is recommended.  
 For example, "{d4e1a1f6-5ea0-40ee-bff5-da57982f21cf}"  
@@ -28,27 +28,26 @@ addLogin will generate a random value unless a value is provided.
   
 addLogin and modifyLogin will throw if the GUID already exists.  
   
-</pre>
+
 ### timeCreated ###
-<pre>  
+  
 The time, in Unix Epoch milliseconds, when the login was first created.  
   
-</pre>
+
 ### timeLastUsed ###
-<pre>  
+  
 The time, in Unix Epoch milliseconds, when the login was last submitted  
 in a form or used to begin an HTTP auth session.  
   
-</pre>
+
 ### timePasswordChanged ###
-<pre>  
+  
 The time, in Unix Epoch milliseconds, when the login's password was  
 last modified.  
   
-</pre>
+
 ### timesUsed ###
-<pre>  
+  
 The number of times the login was submitted in a form or used to begin  
 an HTTP auth session.  
   
-</pre>

@@ -10,28 +10,28 @@ layout: default
 ## Methods ##
 
 ### getPageTitle(aURI) ###
-<pre>  
+  
 Gets the original title of the page.  
 @deprecated use mozIAsyncHistory.getPlacesInfo instead.  
   
-</pre>
+
 ### markPageAsFollowedBookmark(aURI) ###
-<pre>  
+  
 This is just like markPageAsTyped (in nsIBrowserHistory, also implemented  
 by the history service), but for bookmarks. It declares that the given URI  
 is being opened as a result of following a bookmark. If this URI is loaded  
 soon after this message has been received, that transition will be marked  
 as following a bookmark.  
   
-</pre>
+
 ### markPageAsTyped(aURI) ###
-<pre>  
+  
 Designates the url as having been explicitly typed in by the user.  
   
 @param aURI  
        URI of the page to be marked.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -45,14 +45,14 @@ Designates the url as having been explicitly typed in by the user.
 </table>
 
 ### markPageAsFollowedLink(aURI) ###
-<pre>  
+  
 Designates the url as coming from a link explicitly followed by  
 the user (for example by clicking on it).  
   
 @param aURI  
        URI of the page to be marked.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -66,67 +66,67 @@ the user (for example by clicking on it).
 </table>
 
 ### canAddURI(aURI) ###
-<pre>  
+  
 Returns true if this URI would be added to the history. You don't have to  
 worry about calling this, adding a visit will always check before  
 actually adding the page. This function is public because some components  
 may want to check if this page would go in the history (i.e. for  
 annotations).  
   
-</pre>
+
 ### getNewQuery() ###
-<pre>  
+  
 This returns a new query object that you can pass to executeQuer[y/ies].  
 It will be initialized to all empty (so using it will give you all history).  
   
-</pre>
+
 ### getNewQueryOptions() ###
-<pre>  
+  
 This returns a new options object that you can pass to executeQuer[y/ies]  
 after setting the desired options.  
   
-</pre>
+
 ### executeQuery(aQuery, options) ###
-<pre>  
+  
 Executes a single query.  
   
-</pre>
+
 ### executeQueries(aQueries, aQueryCount, options) ###
-<pre>  
+  
 Executes an array of queries. All of the query objects are ORed  
 together. Within a query, all the terms are ANDed together as in  
 executeQuery. See executeQuery()  
   
-</pre>
+
 ### queryStringToQueries(aQueryString, aQueries, aResultCount, options) ###
-<pre>  
+  
 Converts a query URI-like string to an array of actual query objects for  
 use to executeQueries(). The output query array may be empty if there is  
 no information. However, there will always be an options structure returned  
 (if nothing is defined, it will just have the default values).  
   
-</pre>
+
 ### queriesToQueryString(aQueries, aQueryCount, options) ###
-<pre>  
+  
 Converts a query into an equivalent string that can be persisted. Inverse  
 of queryStringToQueries()  
   
-</pre>
+
 ### addObserver(observer, ownsWeak) ###
-<pre>  
+  
 Adds a history observer. If ownsWeak is false, the history service will  
 keep an owning reference to the observer.  If ownsWeak is true, then  
 aObserver must implement nsISupportsWeakReference, and the history service  
 will keep a weak reference to the observer.  
   
-</pre>
+
 ### removeObserver(observer) ###
-<pre>  
+  
 Removes a history observer.  
   
-</pre>
+
 ### runInBatchMode(aCallback, aClosure) ###
-<pre>  
+  
 Runs the passed callback in batch mode. Use this when a lot of things  
 are about to change. Calls can be nested, observers will only be  
 notified when all batches begin/end.  
@@ -136,7 +136,7 @@ notified when all batches begin/end.
 @param aUserData  
        Opaque parameter passed to nsINavBookmarksBatchCallback  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -156,35 +156,35 @@ notified when all batches begin/end.
 </table>
 
 ### clearEmbedVisits() ###
-<pre>  
+  
 Clear all TRANSITION_EMBED visits.  
   
-</pre>
+
 ## Attributes ##
 
 ### databaseStatus ###
-<pre>  
+  
 Returns the current database status  
   
-</pre>
+
 ### hasHistoryEntries ###
-<pre>  
+  
 True if there is any history. This can be used in UI to determine whether  
 the "clear history" button should be enabled or not. This is much better  
 than using BrowserHistory.count since that can be very slow if there is  
 a lot of history (it must enumerate each item). This is pretty fast.  
   
-</pre>
+
 ### historyDisabled ###
-<pre>   
+   
 True if history is disabled. currently,   
 history is disabled if the places.history.enabled pref is false.  
   
-</pre>
+
 ## Constants ##
 
 ### TRANSITION_LINK ###
-<pre>  
+  
 System Notifications:  
   
 places-init-complete - Sent once the History service is completely  
@@ -193,71 +193,70 @@ places-database-locked - Sent if initialization of the History service
                          failed due to the inability to open the places.sqlite  
                          for access reasons.  
   
-</pre><pre>  
+  
 This transition type means the user followed a link and got a new toplevel  
 window.  
   
-</pre>
+
 ### TRANSITION_TYPED ###
-<pre>  
+  
 This transition type means that the user typed the page's URL in the  
 URL bar or selected it from URL bar autocomplete results, clicked on  
 it from a history query (from the History sidebar, History menu,   
 or history query in the personal toolbar or Places organizer.  
   
-</pre>
+
 ### TRANSITION_BOOKMARK ###
-<pre>  
+  
 This transition is set when the user followed a bookmark to get to the  
 page.  
   
-</pre>
+
 ### TRANSITION_EMBED ###
-<pre>  
+  
 This transition type is set when some inner content is loaded. This is  
 true of all images on a page, and the contents of the iframe. It is also  
 true of any content in a frame if the user did not explicitly follow  
 a link to get there.  
   
-</pre>
+
 ### TRANSITION_REDIRECT_PERMANENT ###
-<pre>  
+  
 Set when the transition was a permanent redirect.  
   
-</pre>
+
 ### TRANSITION_REDIRECT_TEMPORARY ###
-<pre>  
+  
 Set when the transition was a temporary redirect.  
   
-</pre>
+
 ### TRANSITION_DOWNLOAD ###
-<pre>  
+  
 Set when the transition is a download.  
   
-</pre>
+
 ### TRANSITION_FRAMED_LINK ###
-<pre>  
+  
 This transition type means the user followed a link and got a visit in  
 a frame.  
   
-</pre>
+
 ### DATABASE_STATUS_OK ###
-<pre>  
+  
 Set when database is coherent  
   
-</pre>
+
 ### DATABASE_STATUS_CREATE ###
-<pre>  
+  
 Set when database did not exist and we created a new one  
   
-</pre>
+
 ### DATABASE_STATUS_CORRUPT ###
-<pre>  
+  
 Set when database was corrupt and we replaced it  
   
-</pre>
+
 ### DATABASE_STATUS_UPGRADED ###
-<pre>  
+  
 Set when database schema has been upgraded  
   
-</pre>

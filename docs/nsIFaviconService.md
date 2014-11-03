@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getFaviconLinkForIcon(aFaviconURI) ###
-<pre>  
+  
 For a given icon URI, this will return a URI that will result in the image.  
 In most cases, this is an annotation URI.  For chrome URIs, this will do  
 nothing but returning the input URI.  
@@ -32,7 +32,7 @@ For invalid chrome URIs, you'll get a broken image.
         be a chrome URI of the default icon. For chrome URIs, the  
         output will be the same as the input.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -64,16 +64,16 @@ For invalid chrome URIs, you'll get a broken image.
 </table>
 
 ### expireAllFavicons() ###
-<pre>  
+  
 Expire all known favicons from the database.  
   
 @note This is an async method.  
       On successful completion a "places-favicons-expired" notification is  
       dispatched through observer's service.  
   
-</pre>
+
 ### addFailedFavicon(aFaviconURI) ###
-<pre>  
+  
 Adds a given favicon's URI to the failed favicon cache.  
   
 The lifespan of the favicon cache is up to the caching system.  This cache  
@@ -83,7 +83,7 @@ fetching an icon.
 @param aFaviconURI  
        The URI of an icon in the favicon service.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -97,14 +97,14 @@ fetching an icon.
 </table>
 
 ### removeFailedFavicon(aFaviconURI) ###
-<pre>  
+  
 Removes the given favicon from the failed favicon cache.  If the icon is  
 not in the cache, it will silently succeed.  
   
 @param aFaviconURI  
        The URI of an icon in the favicon service.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -118,7 +118,7 @@ not in the cache, it will silently succeed.
 </table>
 
 ### isFailedFavicon(aFaviconURI) ###
-<pre>  
+  
 Checks to see if a favicon is in the failed favicon cache.  
 A positive return value means the icon is in the failed cache and you  
 probably shouldn't try to load it.  A false return value means that it's  
@@ -129,7 +129,7 @@ page on a site that doesn't have a favicon.
 @param aFaviconURI  
        The URI of an icon in the favicon service.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -145,10 +145,10 @@ page on a site that doesn't have a favicon.
 ## Attributes ##
 
 ### defaultFavicon ###
-<pre>  
+  
 The default favicon URI  
   
-</pre>
+
 ## Constants ##
 
 ### FAVICON_LOAD_PRIVATE ###

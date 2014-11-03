@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIAsyncShutdownClient #
-<pre>  
+  
 A client for a nsIAsyncShutdownBarrier.  
   
-</pre>
+
 ## Methods ##
 
 ### addBlocker(aBlocker, aFileName, aLineNumber, aStack) ###
-<pre>  
+  
 Add a blocker.  
   
 After a `blocker` has been added with `addBlocker`, if it is not  
@@ -32,7 +32,7 @@ removed, each  by a call to `removeBlocker`.
 @param aStack Information on the stack that lead to this call. Generally  
 empty when called from C++.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -68,14 +68,14 @@ empty when called from C++.
 </table>
 
 ### removeBlocker(aBlocker) ###
-<pre>  
+  
 Remove a blocker.  
   
 @param aBlocker A blocker previously added to this client through  
 `addBlocker`. Noop if the blocker has never been added or has been  
 removed already.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -93,12 +93,12 @@ removed already.
 ## Attributes ##
 
 ### name ###
-<pre>  
+  
 The name of the barrier.  
   
-</pre>
+
 ### jsclient ###
-<pre>  
+  
 The JS implementation of the client.  
   
 It is strongly recommended that JS clients of this API use  
@@ -106,4 +106,3 @@ It is strongly recommended that JS clients of this API use
 AsyncShutdown.jsm for more information on the JS version of  
 this API.  
   
-</pre>

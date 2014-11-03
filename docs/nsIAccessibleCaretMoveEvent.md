@@ -6,14 +6,13 @@ layout: default
 </div>
 
 # nsIAccessibleCaretMoveEvent #
-<pre>  
+  
 Fired when the caret changes position in text.  
   
-</pre>
+
 ## Attributes ##
 
 ### caretOffset ###
-<pre>  
+  
 Return caret offset.  
   
-</pre>

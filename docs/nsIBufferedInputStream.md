@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIBufferedInputStream #
-<pre>  
+  
 An input stream that reads ahead and keeps a buffer coming from another input  
 stream so that fewer accesses to the underlying stream are necessary.  
   
-</pre>
+
 ## Methods ##
 
 ### init(fillFromStream, bufferSize) ###
-<pre>  
+  
 @param fillFromStream - add buffering to this stream  
 @param bufferSize     - specifies the maximum buffer size  
   
-</pre>
+
 #### Parameters ####
 
 <table>

@@ -6,27 +6,27 @@ layout: default
 </div>
 
 # nsILoadInfo #
-<pre>  
+  
 An nsILoadOwner represents per-load information about who started the load.  
   
-</pre>
+
 ## Methods ##
 
 ### binaryLoadingPrincipal() ###
-<pre>  
+  
 A C++-friendly version of loadingPrincipal.  
   
-</pre>
+
 ### binaryLoadingNode() ###
-<pre>  
+  
 A C++-friendly version of loadingDocument (loadingNode).  
 This is the node most proximally responsible for the load.  
   
-</pre>
+
 ## Attributes ##
 
 ### loadingPrincipal ###
-<pre>  
+  
 The loadingPrincipal is the principal that is responsible for the load.  
 It is *NOT* the principal tied to the resource/URI that this  
 channel is loading, it's the principal of the resource's  
@@ -36,9 +36,9 @@ who's origin is http://a.com, the loadingPrincipal is http://a.com.
   
 The loadingPrincipal will never be null.  
   
-</pre>
+
 ### loadingDocument ###
-<pre>  
+  
 The loadingDocument of the channel.  
   
 The loadingDocument of a channel is the document that requested the  
@@ -59,42 +59,42 @@ with the http://c.com network request is the iframe with origin http://b.com.
   
 Warning: The loadingDocument can be null!  
   
-</pre>
+
 ### securityFlags ###
-<pre>  
+  
 The securityFlags of that channel.  
   
-</pre>
+
 ### forceInheritPrincipal ###
-<pre>  
+  
 If forceInheritPrincipal is true, the data coming from the channel should  
 use loadingPrincipal for its principal, even when the data is loaded over  
 http:// or another protocol that would normally use a URI-based principal.  
 This attribute will never be true when loadingSandboxed is true.  
   
-</pre>
+
 ### loadingSandboxed ###
-<pre>  
+  
 If loadingSandboxed is true, the data coming from the channel is  
 being loaded sandboxed, so it should have a nonce origin and  
 hence should use a NullPrincipal.  
   
-</pre>
+
 ### contentPolicyType ###
-<pre>  
+  
 The contentPolicyType of the channel, used for security checks  
 like Mixed Content Blocking and Content Security Policy.  
   
-</pre>
+
 ## Constants ##
 
 ### SEC_NORMAL ###
-<pre>  
+  
 No special security flags:  
   
-</pre>
+
 ### SEC_FORCE_INHERIT_PRINCIPAL ###
-<pre>  
+  
 Force inheriting of the Principal. The resulting resource will use the  
 principal of the document which is doing the load. Setting this flag  
 will cause GetChannelResultPrincipal to return the same principal as  
@@ -109,9 +109,9 @@ will return a principal from "http://a.com/".
   
 This flag can not be used together with SEC_SANDBOXED.  
   
-</pre>
+
 ### SEC_SANDBOXED ###
-<pre>  
+  
 Sandbox the load. The resulting resource will use a freshly created  
 null principal. So GetChannelResultPrincipal will always return a  
 null principal whenever this flag is set.  
@@ -121,4 +121,3 @@ channel is loading.
   
 This flag can not be used together with SEC_FORCE_INHERIT_PRINCIPAL.  
   
-</pre>

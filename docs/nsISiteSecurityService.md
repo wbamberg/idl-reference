@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### processHeader(aType, aSourceURI, aHeader, aSSLStatus, aFlags, aMaxAge, aIncludeSubdomains) ###
-<pre>  
+  
 Parses a given HTTP header and records the results internally.  
 Currently two header types are supported: HSTS (aka STS) and HPKP  
 The format of the HSTS header is defined by the HSTS specification:  
@@ -35,7 +35,7 @@ in future HTTPS connections.
         NS_SUCCESS_LOSS_OF_INSIGNIFICANT_DATA  
                          if there are unrecognized tokens in the header.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -100,13 +100,13 @@ in future HTTPS connections.
 </table>
 
 ### unsafeProcessHeader(aType, aSourceURI, aHeader, aFlags, aMaxAge, aIncludeSubdomains) ###
-<pre>  
+  
 Same as processHeader but without checking for the security properties  
 of the connection. Use ONLY for testing.  
   
-</pre>
+
 ### removeState(aType, aURI, aFlags) ###
-<pre>  
+  
 Given a header type, removes state relating to that header of a host,  
 including the includeSubdomains state that would affect subdomains.  
 This essentially removes the state for the domain tree rooted at this  
@@ -116,7 +116,7 @@ host.
 @param aFlags  options for this request as defined in nsISocketProvider:  
                  NO_PERMANENT_STORAGE  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -143,7 +143,7 @@ host.
 </table>
 
 ### isSecureHost(aType, aHost, aFlags) ###
-<pre>  
+  
 See isSecureURI  
   
 @param aType the type of security state in question.  
@@ -151,7 +151,7 @@ See isSecureURI
 @param aFlags  options for this request as defined in nsISocketProvider:  
                  NO_PERMANENT_STORAGE  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -178,13 +178,13 @@ See isSecureURI
 </table>
 
 ### shouldIgnoreHeaders(aSecurityInfo) ###
-<pre>  
+  
 Checks if the given security info is for a host with a broken  
 transport layer (certificate errors like invalid CN).  
   
-</pre>
+
 ### isSecureURI(aType, aURI, aFlags) ###
-<pre>  
+  
 Checks whether or not the URI's hostname has a given security state set.  
 For example, for HSTS:  
 The URI is an HSTS URI if either the host has the HSTS state set, or one  
@@ -198,7 +198,7 @@ such as path and port.
 @param aFlags  options for this request as defined in nsISocketProvider:  
                  NO_PERMANENT_STORAGE  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -225,12 +225,12 @@ such as path and port.
 </table>
 
 ### clearAll() ###
-<pre>  
+  
 Removes all security state by resetting to factory-original settings.  
   
-</pre>
+
 ### getKeyPinsForHostname(aHostname, evalTime, aPinArray, aIncludeSubdomains) ###
-<pre>  
+  
 Returns an array of sha256-hashed key pins for the given domain, if any.  
 If these pins also apply to subdomains of the given domain,  
 aIncludeSubdomains will be true. Pins returned are only for non-built-in  
@@ -243,7 +243,7 @@ mozilla::pkix::Time which uses internally seconds since 0 AD.
 @param aIncludeSubdomains true if the pins apply to subdomains of the  
        given domain  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -277,7 +277,7 @@ mozilla::pkix::Time which uses internally seconds since 0 AD.
 </table>
 
 ### setKeyPins(aHost, aIncludeSubdomains, aMaxAge, aPinCount, aSha256Pins) ###
-<pre>  
+  
 Set public-key pins for a host. The resulting pins will be permanent  
 and visible from private and non-private contexts. These pins replace  
 any already set by this mechanism or those built-in to Gecko.  
@@ -288,7 +288,7 @@ any already set by this mechanism or those built-in to Gecko.
 @param aPinCount number of keys being pinnned  
 @param aSha256Pins array of hashed key fingerprints (SHA-256, base64)  
   
-</pre>
+
 #### Parameters ####
 
 <table>

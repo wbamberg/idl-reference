@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsIInputStreamCallback #
-<pre>  
+  
 This is a companion interface for nsIAsyncInputStream::asyncWait.  
   
-</pre>
+
 ## Methods ##
 
 ### onInputStreamReady(aStream) ###
-<pre>  
+  
 Called to indicate that the stream is either readable or closed.  
   
 @param aStream  
        The stream whose asyncWait method was called.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

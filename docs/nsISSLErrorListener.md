@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsISSLErrorListener #
-<pre>  
+  
 A mechanism to report a broken SSL connection. The recipient should NOT block.  
   
-</pre>
+
 ## Methods ##
 
 ### notifySSLError(socketInfo, error, targetSite) ###
-<pre>  
+  
  @param socketInfo A network communication context that can be used to obtain more information  
                    about the active connection.  
  @param error The code associated with the error.  
@@ -22,7 +22,7 @@ A mechanism to report a broken SSL connection. The recipient should NOT block.
  @return The consumer shall return true if it wants to suppress the error message  
          related to the error (the connection will still get canceled).  
   
-</pre>
+
 #### Parameters ####
 
 <table>

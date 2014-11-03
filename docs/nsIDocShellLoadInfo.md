@@ -10,66 +10,66 @@ layout: default
 ## Attributes ##
 
 ### referrer ###
-<pre> This is the referrer for the load. */  
-</pre>
+ This is the referrer for the load. */  
+
 ### owner ###
-<pre> The owner of the load, that is, the entity responsible for   
+ The owner of the load, that is, the entity responsible for   
  causing the load to occur. This should be a nsIPrincipal typically.  
   
-</pre>
+
 ### inheritOwner ###
-<pre> If this attribute is true and no owner is specified, copy  
+ If this attribute is true and no owner is specified, copy  
  the owner from the referring document.  
   
-</pre>
+
 ### ownerIsExplicit ###
-<pre> If this attribute is true only ever use the owner specify by  
+ If this attribute is true only ever use the owner specify by  
  the owner and inheritOwner attributes.  
  If there are security reasons for why this is unsafe, such  
  as trying to use a systemprincipal owner for a content docshell  
  the load fails.  
   
-</pre>
+
 ### loadType ###
-<pre> Contains a load type as specified by the load* constants */  
-</pre>
+ Contains a load type as specified by the load* constants */  
+
 ### SHEntry ###
-<pre> SHEntry for this page */  
-</pre>
+ SHEntry for this page */  
+
 ### target ###
-<pre> Target for load, like _content, _blank etc. */  
-</pre>
+ Target for load, like _content, _blank etc. */  
+
 ### postDataStream ###
-<pre> Post data */  
-</pre>
+ Post data */  
+
 ### headersStream ###
-<pre> Additional headers */  
-</pre>
+ Additional headers */  
+
 ### sendReferrer ###
-<pre> True if the referrer should be sent, false if it shouldn't be  
+ True if the referrer should be sent, false if it shouldn't be  
  sent, even if it's available. This attribute defaults to true.  
   
-</pre>
+
 ### isSrcdocLoad ###
-<pre> True if the docshell has been created to load an iframe where the  
+ True if the docshell has been created to load an iframe where the  
 srcdoc attribute has been set.  Set when srcdocData is specified.  
   
-</pre>
+
 ### srcdocData ###
-<pre> When set, the load will be interpreted as a srcdoc load, where contents  
+ When set, the load will be interpreted as a srcdoc load, where contents  
 of this string will be loaded instead of the URI.  Setting srcdocData  
 sets isSrcdocLoad to true  
   
-</pre>
+
 ### sourceDocShell ###
-<pre> When set, this is the Source Browsing Context for the navigation. */  
-</pre>
+ When set, this is the Source Browsing Context for the navigation. */  
+
 ### baseURI ###
-<pre>  
+  
 Used for srcdoc loads to give view-source knowledge of the load's base  
 URI as this information isn't embedded in the load's URI.  
   
-</pre>
+
 ## Constants ##
 
 ### loadNormal ###

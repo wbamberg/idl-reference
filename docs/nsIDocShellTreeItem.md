@@ -6,23 +6,23 @@ layout: default
 </div>
 
 # nsIDocShellTreeItem #
-<pre>  
+  
 The nsIDocShellTreeItem supplies the methods that are required of any item  
 that wishes to be able to live within the docshell tree either as a middle  
 node or a leaf.   
   
-</pre>
+
 ## Methods ##
 
 ### nameEquals(name) ###
-<pre>  
+  
 Compares the provided name against the item's name and  
 returns the appropriate result.  
   
 @return <CODE>PR_TRUE</CODE> if names match;  
         <CODE>PR_FALSE</CODE> otherwise.  
   
-</pre>
+
 #### Returns ####
 
 <table>
@@ -46,12 +46,12 @@ returns the appropriate result.
 ### removeChild(child) ###
 
 ### getChildAt(index) ###
-<pre>  
+  
 Return the child at the index requested.  This is 0-based.  
   
 @throws NS_ERROR_UNEXPECTED if the index is out of range  
   
-</pre>
+
 ### findChildWithName(aName, aRecurse, aSameType, aRequestor, aOriginalRequestor) ###
 
 ### getDocument() ###

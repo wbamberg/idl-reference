@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsINavHistoryResultTreeViewer #
-<pre>  
+  
 TODO: Bug 517719.  
   
 A predefined view adaptor for interfacing results with an nsITree. This  
@@ -17,21 +17,21 @@ reference to it and re-initialize it when the tree changes. If you use this
 object, attach it to a result, never attach it to a tree, and forget about  
 it, it will leak!  
   
-</pre>
+
 ## Methods ##
 
 ### nodeForTreeIndex(aIndex) ###
-<pre>  
+  
 This allows you to get at the real node for a given row index. This is  
 only valid when a tree is attached.  
   
-</pre>
+
 ### treeIndexForNode(aNode) ###
 
 ## Constants ##
 
 ### INDEX_INVISIBLE ###
-<pre>  
+  
 Reverse of nodeForFlatIndex, returns the row index for a given result node.  
 Returns INDEX_INVISIBLE if the item is not visible (for example, its  
 parent is collapsed). This is only valid when a tree is attached. The  
@@ -43,4 +43,3 @@ Note: This sounds sort of obvious, but it got me: aNode must be a node
       function will always return the index of that node in the tree that  
       is attached to that result.  
   
-</pre>

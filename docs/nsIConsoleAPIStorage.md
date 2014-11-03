@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getEvents(aId) ###
-<pre>  
+  
 Get the events array by inner window ID or all events from all windows.  
   
 @param string [aId]  
@@ -21,7 +21,7 @@ Get the events array by inner window ID or all events from all windows.
          given this function returns all of the cached events, from any  
          window.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -51,7 +51,7 @@ Get the events array by inner window ID or all events from all windows.
 </table>
 
 ### recordEvent(aId, aEvent) ###
-<pre>  
+  
 Record an event associated with the given window ID.  
   
 @param string aId  
@@ -60,7 +60,7 @@ Record an event associated with the given window ID.
 @param object aEvent  
        A JavaScript object you want to store.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -83,7 +83,7 @@ Record an event associated with the given window ID.
 </table>
 
 ### clearEvents(aId) ###
-<pre>  
+  
 Clear storage data for the given window.  
   
 @param string [aId]  
@@ -91,7 +91,7 @@ Clear storage data for the given window.
        messages. If this is not specified all of the cached messages are  
        cleared, from all window objects.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

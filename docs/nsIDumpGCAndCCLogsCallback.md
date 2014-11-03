@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIDumpGCAndCCLogsCallback #
-<pre>  
+  
 Callback interface for |dumpGCAndCCLogsToFile|, below.  Note that  
 these method calls can occur before |dumpGCAndCCLogsToFile|  
 returns.  
   
-</pre>
+
 ## Methods ##
 
 ### onDump(aGCLog, aCCLog, aIsParent) ###
-<pre>  
+  
 Called whenever a process has successfully finished dumping its GC/CC logs.  
 Incomplete dumps (e.g., if the child crashes or is killed due to memory  
 exhaustion) are not reported.  
@@ -27,7 +27,7 @@ exhaustion) are not reported.
 @param aIsParent indicates whether this log file pair is from the  
 parent process.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -54,7 +54,6 @@ parent process.
 </table>
 
 ### onFinish() ###
-<pre>  
+  
 Called when GC/CC logging has finished, after all calls to |onDump|.  
   
-</pre>

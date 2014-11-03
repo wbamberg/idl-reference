@@ -6,44 +6,44 @@ layout: default
 </div>
 
 # nsIWebBrowserFindInFrames #
-<pre>  
+  
 nsIWebBrowserFindInFrames  
   
 Controls how find behaves when multiple frames or iframes are present.  
   
 Get by doing a QueryInterface from nsIWebBrowserFind.  
   
-</pre>
+
 ## Attributes ##
 
 ### currentSearchFrame ###
-<pre>  
+  
 currentSearchFrame  
   
 Frame at which to start the search. Once the search is done, this will  
 be set to be the last frame searched, whether or not a result was found.  
 Has to be equal to or contained within the rootSearchFrame.  
   
-</pre>
+
 ### rootSearchFrame ###
-<pre>  
+  
 rootSearchFrame  
   
 Frame within which to confine the search (normally the content area frame).  
 Set this to only search a subtree of the frame hierarchy.  
   
-</pre>
+
 ### searchSubframes ###
-<pre>  
+  
 searchSubframes  
   
 Whether to recurse down into subframes while searching. Default is true.  
   
 Setting nsIWebBrowserfind.searchFrames to true sets this to true.  
   
-</pre>
+
 ### searchParentFrames ###
-<pre>  
+  
 searchParentFrames  
   
 Whether to allow the search to propagate out of the currentSearchFrame into its  
@@ -52,4 +52,3 @@ is true.
   
 Setting nsIWebBrowserfind.searchFrames to true sets this to true.  
   
-</pre>

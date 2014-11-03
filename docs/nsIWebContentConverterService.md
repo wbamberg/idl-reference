@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### setAutoHandler(contentType, handler) ###
-<pre>  
+  
 Specifies the handler to be used to automatically handle all links of a  
 certain content type from now on.   
 @param   contentType  
@@ -21,7 +21,7 @@ certain content type from now on.
 @throws  NS_ERROR_NOT_AVAILABLE if the service refered to by |handler| is   
          not already registered.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -44,7 +44,7 @@ certain content type from now on.
 </table>
 
 ### getAutoHandler(contentType) ###
-<pre>  
+  
 Gets the auto handler specified for a particular content type  
 @param   contentType  
          The content type to look up an auto handler for.  
@@ -53,7 +53,7 @@ Gets the auto handler specified for a particular content type
          handler. (Handlers may be registered, just none of them specified  
          as "automatic").  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -81,7 +81,7 @@ Gets the auto handler specified for a particular content type
 </table>
 
 ### getWebContentHandlerByURI(contentType, uri) ###
-<pre>  
+  
 Gets a web handler for the specified service URI  
 @param   contentType  
          The content type of the service being located  
@@ -89,7 +89,7 @@ Gets a web handler for the specified service URI
          The service URI of the handler to locate.  
 @returns A web service handler that uses the specified uri.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -120,13 +120,13 @@ Gets a web handler for the specified service URI
 </table>
 
 ### loadPreferredHandler(request) ###
-<pre>  
+  
 Loads the preferred handler when content of a registered type is about  
 to be loaded.  
 @param   request  
          The nsIRequest for the load of the content  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -140,14 +140,14 @@ to be loaded.
 </table>
 
 ### removeProtocolHandler(protocol, uri) ###
-<pre>  
+  
 Removes a registered protocol handler  
 @param   protocol  
          The protocol scheme to remove a service handler for  
 @param   uri  
          The uri of the service handler to remove  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -167,14 +167,14 @@ Removes a registered protocol handler
 </table>
 
 ### removeContentHandler(contentType, uri) ###
-<pre>  
+  
 Removes a registered content handler  
 @param   contentType  
          The content type to remove a service handler for  
 @param   uri  
          The uri of the service handler to remove  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -194,13 +194,13 @@ Removes a registered content handler
 </table>
 
 ### getContentHandlers(contentType, count, handlers) ###
-<pre>  
+  
 Gets the list of content handlers for a particular type.  
 @param   contentType  
          The content type to get handlers for  
 @returns An array of nsIWebContentHandlerInfo objects  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -225,13 +225,13 @@ Gets the list of content handlers for a particular type.
 </table>
 
 ### resetHandlersForType(contentType) ###
-<pre>  
+  
 Resets the list of available content handlers to the default set from  
 the distribution.  
 @param   contentType  
          The content type to reset handlers for  
   
-</pre>
+
 #### Parameters ####
 
 <table>

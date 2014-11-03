@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIStreamLoader #
-<pre>  
+  
 Asynchronously loads a channel into a memory buffer.  
   
 To use this interface, first call init() with a nsIStreamLoaderObserver  
@@ -17,17 +17,17 @@ callback.
   
 XXX define behaviour for sizes >4 GB  
   
-</pre>
+
 ## Methods ##
 
 ### init(aObserver) ###
-<pre>  
+  
 Initialize this stream loader, and start loading the data.  
   
 @param aObserver  
        An observer that will be notified when the data is complete.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -43,13 +43,12 @@ Initialize this stream loader, and start loading the data.
 ## Attributes ##
 
 ### numBytesRead ###
-<pre>  
+  
 Gets the number of bytes read so far.  
   
-</pre>
+
 ### request ###
-<pre>  
+  
 Gets the request that loaded this file.  
 null after the request has finished loading.  
   
-</pre>

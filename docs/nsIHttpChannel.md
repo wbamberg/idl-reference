@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIHttpChannel #
-<pre>  
+  
 nsIHttpChannel  
   
 This interface allows for the modification of HTTP request parameters and  
 the inspection of the resulting HTTP response status and headers when they  
 become available.  
   
-</pre>
+
 ## Methods ##
 
 ### getRequestHeader(aHeader) ###
-<pre>  
+  
 Get the value of a particular request header.  
   
 @param aHeader  
@@ -27,7 +27,7 @@ Get the value of a particular request header.
 @return the value of the request header.  
 @throws NS_ERROR_NOT_AVAILABLE if the header is not set.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -54,7 +54,7 @@ Get the value of a particular request header.
 </table>
 
 ### setRequestHeader(aHeader, aValue, aMerge) ###
-<pre>  
+  
 Set the value of a particular request header.  
   
 This method allows, for example, the cookies module to add "Cookie"  
@@ -81,7 +81,7 @@ If aValue is empty and aMerge is false, the header will be cleared.
 @throws NS_ERROR_IN_PROGRESS if called after the channel has been  
         opened.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -114,14 +114,14 @@ If aValue is empty and aMerge is false, the header will be cleared.
 </table>
 
 ### visitRequestHeaders(aVisitor) ###
-<pre>  
+  
 Call this method to visit all request headers.  Calling setRequestHeader  
 while visiting request headers has undefined behavior.  Don't do it!  
   
 @param aVisitor  
        the header visitor instance.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -135,7 +135,7 @@ while visiting request headers has undefined behavior.  Don't do it!
 </table>
 
 ### getResponseHeader(header) ###
-<pre>  
+  
 Get the value of a particular response header.  
   
 @param aHeader  
@@ -148,7 +148,7 @@ Get the value of a particular response header.
         has been received (before onStartRequest) or if the header is  
         not set in the response.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -174,7 +174,7 @@ Get the value of a particular response header.
 </table>
 
 ### setResponseHeader(header, value, merge) ###
-<pre>  
+  
 Set the value of a particular response header.  
   
 This method allows, for example, the HTML content sink to inform the HTTP  
@@ -201,7 +201,7 @@ If aValue is empty and aMerge is false, the header will be cleared.
 @throws NS_ERROR_ILLEGAL_VALUE if changing the value of this response  
         header is not allowed.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -234,7 +234,7 @@ If aValue is empty and aMerge is false, the header will be cleared.
 </table>
 
 ### visitResponseHeaders(aVisitor) ###
-<pre>  
+  
 Call this method to visit all response headers.  Calling  
 setResponseHeader while visiting response headers has undefined  
 behavior.  Don't do it!  
@@ -245,7 +245,7 @@ behavior.  Don't do it!
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -259,16 +259,16 @@ behavior.  Don't do it!
 </table>
 
 ### isNoStoreResponse() ###
-<pre>  
+  
 Returns true if the server sent a "Cache-Control: no-store" response  
 header.  
   
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  
   
-</pre>
+
 ### isNoCacheResponse() ###
-<pre>  
+  
 Returns true if the server sent the equivalent of a "Cache-control:  
 no-cache" response header.  Equivalent response headers include:  
 "Pragma: no-cache", "Expires: 0", and "Expires" with a date value  
@@ -277,9 +277,9 @@ in the past relative to the value of the "Date" header.
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  
   
-</pre>
+
 ### redirectTo(aNewURI) ###
-<pre>  
+  
 Instructs the channel to immediately redirect to a new destination.  
 Can only be called on channels not yet opened.  
   
@@ -289,16 +289,16 @@ caller to call it wins.
 @throws NS_ERROR_ALREADY_OPENED if called after the channel  
         has been opened.  
   
-</pre>
+
 ## Attributes ##
 
 ### requestMethod ###
-<pre>**********************************************************************  
+**********************************************************************  
 REQUEST CONFIGURATION  
   
 Modifying request parameters after asyncOpen has been called is an error.  
   
-</pre><pre>  
+  
 Set/get the HTTP request method (default is "GET").  Both setter and  
 getter are case sensitive.  
   
@@ -311,9 +311,9 @@ for nsIUploadChannel has further details.
   
 @throws NS_ERROR_IN_PROGRESS if set after the channel has been opened.  
   
-</pre>
+
 ### referrer ###
-<pre>  
+  
 Get/set the HTTP referrer URI.  This is the address (URI) of the  
 resource from which this channel's URI was obtained (see RFC2616 section  
 14.36).  
@@ -328,9 +328,9 @@ URI is rejected.
   
 @throws NS_ERROR_IN_PROGRESS if set after the channel has been opened.  
   
-</pre>
+
 ### allowPipelining ###
-<pre>  
+  
 This attribute is a hint to the channel to indicate whether or not  
 the underlying HTTP transaction should be allowed to be pipelined  
 with other transactions.  This should be set to FALSE, for example,  
@@ -344,9 +344,9 @@ This attribute may only be set before the channel is opened.
   
 @throws NS_ERROR_FAILURE if set after the channel has been opened.  
   
-</pre>
+
 ### allowSTS ###
-<pre>  
+  
 This attribute of the channel indicates whether or not  
 the underlying HTTP transaction should be honor stored Strict Transport  
 Security directives for its principal. It defaults to true. Using  
@@ -358,9 +358,9 @@ This attribute may only be set before the channel is opened.
 @throws NS_ERROR_IN_PROGRESS or NS_ERROR_ALREADY_OPENED  
         if called after the channel has been opened.  
   
-</pre>
+
 ### redirectionLimit ###
-<pre>  
+  
 This attribute specifies the number of redirects this channel is allowed  
 to make.  If zero, the channel will fail to redirect and will generate  
 a NS_ERROR_REDIRECT_LOOP failure status.  
@@ -372,22 +372,22 @@ redirected channel's |redirectionLimit| attribute.  The initial value
 for this attribute may be a configurable preference (depending on the  
 implementation).  
   
-</pre>
+
 ### responseStatus ###
-<pre>**********************************************************************  
+**********************************************************************  
 RESPONSE INFO  
   
 Accessing response info before the onStartRequest event is an error.  
   
-</pre><pre>  
+  
 Get the HTTP response code (e.g., 200).  
   
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  
   
-</pre>
+
 ### responseStatusText ###
-<pre>  
+  
 Get the HTTP response status text (e.g., "OK").  
   
 NOTE: This returns the raw (possibly 8-bit) text from the server.  There  
@@ -397,9 +397,9 @@ have been warned!
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  
   
-</pre>
+
 ### requestSucceeded ###
-<pre>  
+  
 Returns true if the HTTP response code indicates success.  The value of  
 nsIRequest::status will be NS_OK even when processing a 404 response  
 because a 404 response may include a message body that (in some cases)  
@@ -412,4 +412,3 @@ valid response codes, if that is required by your application.
 @throws NS_ERROR_NOT_AVAILABLE if called before the response  
         has been received (before onStartRequest).  
   
-</pre>

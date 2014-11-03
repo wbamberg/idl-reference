@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsString #
-<pre>  
+  
 Scriptable storage for Unicode strings  
   
-</pre>
+
 ## Methods ##
 
 ### toString() ###

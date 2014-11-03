@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIDirectoryServiceProvider #
-<pre>  
+  
 nsIDirectoryServiceProvider  
   
 Used by Directory Service to get file locations.  
   
-</pre>
+
 ## Methods ##
 
 ### getFile(prop, persistent) ###
-<pre>  
+  
 getFile  
   
 Directory Service calls this when it gets the first request for  
@@ -31,7 +31,7 @@ a prop or on every request if the prop is not persistent.
 @return             The file represented by the property.  
   
   
-</pre>
+
 #### Parameters ####
 
 <table>

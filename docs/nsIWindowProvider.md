@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIWindowProvider #
-<pre>  
+  
 The nsIWindowProvider interface exists so that the window watcher's default  
 behavior of opening a new window can be easly modified.  When the window  
 watcher needs to open a new window, it will first check with the  
@@ -14,11 +14,11 @@ nsIWindowProvider it gets from the parent window.  If there is no provider
 or the provider does not provide a window, the window watcher will proceed  
 to actually open a new window.  
   
-</pre>
+
 ## Methods ##
 
 ### provideWindow(aParent, aChromeFlags, aCalledFromJS, aPositionSpecified, aSizeSpecified, aURI, aName, aFeatures, aWindowIsNew) ###
-<pre>  
+  
 A method to request that this provider provide a window.  The window  
 returned need not to have the right name or parent set on it; setting  
 those is the caller's responsibility.  The provider can always return null  
@@ -81,7 +81,7 @@ to have the caller create a brand-new window.
 @see nsIWindowWatcher for more information on aFeatures.  
 @see nsIWebBrowserChrome for more information on aChromeFlags.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

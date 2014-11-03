@@ -10,8 +10,7 @@ layout: default
 ## Methods ##
 
 ### notify(verifiedCert, result) ###
-<pre>  
+  
  Notify that results are ready, that have been requested  
  using nsIX509Cert::requestUsagesArrayAsync()  
   
-</pre>

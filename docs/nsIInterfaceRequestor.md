@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIInterfaceRequestor #
-<pre>  
+  
 The nsIInterfaceRequestor interface defines a generic interface for   
 requesting interfaces that a given object might provide access to.  
 This is very similar to QueryInterface found in nsISupports.    
@@ -17,11 +17,11 @@ you QI() on to get to interface B, you must be able to QI on B to get back
 to A.  This interface however allows you to obtain an interface C from A   
 that may or most likely will not have the ability to get back to A.   
   
-</pre>
+
 ## Methods ##
 
 ### getInterface(uuid, result) ###
-<pre>  
+  
 Retrieves the specified interface pointer.  
   
 @param uuid The IID of the interface being requested.  
@@ -30,7 +30,7 @@ Retrieves the specified interface pointer.
 @throws NS_NOINTERFACE - interface not accessible.  
 @throws NS_ERROR* - method failure.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsIBufferedOutputStream #
-<pre>  
+  
 An output stream that stores up data to write out to another output stream  
 and does the entire write only when the buffer is full, so that fewer writes  
 to the underlying output stream are necessary.  
   
-</pre>
+
 ## Methods ##
 
 ### init(sinkToStream, bufferSize) ###
-<pre>  
+  
 @param sinkToStream - add buffering to this stream  
 @param bufferSize   - specifies the maximum buffer size  
   
-</pre>
+
 #### Parameters ####
 
 <table>

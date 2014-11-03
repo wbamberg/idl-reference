@@ -6,15 +6,14 @@ layout: default
 </div>
 
 # nsIXBLAccessible #
-<pre>  
+  
 XBL controls can implement this interface to provide own implementation of  
 accessible properties.  
   
-</pre>
+
 ## Attributes ##
 
 ### accessibleName ###
-<pre>  
+  
 Return accessible name.  
   
-</pre>

@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsICacheStorage #
-<pre>  
+  
 Representation of a cache storage. There can be just-in-mem,  
 in-mem+on-disk, in-mem+on-disk+app-cache or just a specific  
 app-cache storage.  
   
-</pre>
+
 ## Methods ##
 
 ### asyncOpenURI(aURI, aIdExtension, aFlags, aCallback) ###
-<pre>  
+  
 Asynchronously opens a cache entry for the specified URI.  
 Result is fetched asynchronously via the callback.  
   
@@ -38,7 +38,7 @@ Result is fetched asynchronously via the callback.
    The consumer that receives the result.  
    IMPORTANT: The callback may be called sooner the method returns.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -80,7 +80,7 @@ Result is fetched asynchronously via the callback.
 </table>
 
 ### openTruncate(aURI, aIdExtension) ###
-<pre>  
+  
 Immediately opens a new and empty cache entry in the storage, any existing  
 entries are immediately doomed.  This is similar to the recreate() method  
 on nsICacheEntry.  
@@ -92,7 +92,7 @@ the new entry via a callback.
 @param aURI @see asyncOpenURI  
 @param aIdExtension @see asyncOpenURI  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -112,68 +112,67 @@ the new entry via a callback.
 </table>
 
 ### exists(aURI, aIdExtension) ###
-<pre>  
+  
 Synchronously check on existance of an entry.  In case of disk entries  
 this uses information from the cache index.  When the index data are not  
 up to date or index is still building, NS_ERROR_NOT_AVAILABLE is thrown.  
 The same error may throw any storage implementation that cannot determine  
 entry state without blocking the caller.  
   
-</pre>
+
 ### asyncDoomURI(aURI, aIdExtension, aCallback) ###
-<pre>  
+  
 Asynchronously removes an entry belonging to the URI from the cache.  
   
-</pre>
+
 ### asyncEvictStorage(aCallback) ###
-<pre>  
+  
 Asynchronously removes all cached entries under this storage.  
 NOTE: Disk storage also evicts memory storage.  
   
-</pre>
+
 ### asyncVisitStorage(aVisitor, aVisitEntries) ###
-<pre>  
+  
 Visits the storage and its entries.  
 NOTE: Disk storage also visits memory storage.  
   
-</pre>
+
 ## Constants ##
 
 ### OPEN_NORMALLY ###
-<pre>  
+  
 Placeholder for specifying "no special flags" during open.  
   
-</pre>
+
 ### OPEN_TRUNCATE ###
-<pre>  
+  
 Rewrite any existing data when opening a URL.  
   
-</pre>
+
 ### OPEN_READONLY ###
-<pre>  
+  
 Only open an existing entry.  Don't create a new one.  
   
-</pre>
+
 ### OPEN_PRIORITY ###
-<pre>  
+  
 Use for first-paint blocking loads.  
   
-</pre>
+
 ### OPEN_BYPASS_IF_BUSY ###
-<pre>  
+  
 Bypass the cache load when write is still in progress.  
   
-</pre>
+
 ### CHECK_MULTITHREADED ###
-<pre>  
+  
 Perform the cache entry check (onCacheEntryCheck invocation) on any thread   
 for optimal perfomance optimization.  If this flag is not specified it is  
 ensured that onCacheEntryCheck is called on the same thread as respective   
 asyncOpen has been called.  
   
-</pre>
+
 ### OPEN_SECRETLY ###
-<pre>  
+  
 Don't automatically update any 'last used' metadata of the entry.  
   
-</pre>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### showAlertNotification(imageUrl, title, text, textClickable, cookie, alertListener, name, dir, lang, data, principal) ###
-<pre>  
+  
 Displays a sliding notification window.  
   
 @param imageUrl       A URL identifying the image to put in the alert.  
@@ -50,7 +50,7 @@ method:
       In that case, if an alert listener is passed in it will receive the  
       "alertfinished" notification immediately.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -126,14 +126,14 @@ method:
 </table>
 
 ### closeAlert(name, principal) ###
-<pre>  
+  
 Close alerts created by the service.  
   
 @param name           The name of the notification to close. If no name  
                       is provided then only a notification created with  
                       no name (if any) will be closed.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

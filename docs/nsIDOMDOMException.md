@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMDOMException #
-<pre>  
+  
 In general, DOM methods return specific error values in ordinary  
 processing situations, such as out-of-bound errors.  
 However, DOM operations can raise exceptions in "exceptional"  
@@ -17,7 +17,7 @@ implementation has become unstable)
 For more information on this interface please see  
 http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#domexception  
   
-</pre>
+
 ## Attributes ##
 
 ### code ###

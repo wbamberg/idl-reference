@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onTargetChange(aSaver, aTarget) ###
-<pre>  
+  
 Called when the name of the output file has been determined.  This function  
 may be called more than once if the target file is renamed while saving.  
   
@@ -19,7 +19,7 @@ may be called more than once if the target file is renamed while saving.
 @param aTarget  
        Name of the file that is being written.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -39,7 +39,7 @@ may be called more than once if the target file is renamed while saving.
 </table>
 
 ### onSaveComplete(aSaver, aStatus) ###
-<pre>  
+  
 Called when the operation completed, and the target file has been closed.  
 If the operation succeeded, the target file is ready to be used, otherwise  
 it might have been already deleted.  
@@ -50,7 +50,7 @@ it might have been already deleted.
        Result code that determines whether the operation succeeded or  
        failed, as well as the failure reason.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

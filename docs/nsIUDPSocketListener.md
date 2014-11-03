@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIUDPSocketListener #
-<pre>  
+  
 nsIUDPSocketListener  
   
 This interface is notified whenever a UDP socket accepts a new connection.  
@@ -16,11 +16,11 @@ calling the nsISocketTransport::GetAddress method or by inspecting
 nsISocketTransport::GetHost, which returns a string representation of the  
 client's IP address (NOTE: this may be an IPv4 or IPv6 string literal).  
   
-</pre>
+
 ## Methods ##
 
 ### onPacketReceived(aSocket, aMessage) ###
-<pre>  
+  
 onPacketReceived  
   
 This method is called when a client sends an UDP packet.  
@@ -30,7 +30,7 @@ This method is called when a client sends an UDP packet.
 @param aMessage  
        The message.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -50,7 +50,7 @@ This method is called when a client sends an UDP packet.
 </table>
 
 ### onStopListening(aSocket, aStatus) ###
-<pre>  
+  
 onStopListening  
   
 This method is called when the listening socket stops for some reason.  
@@ -63,7 +63,7 @@ The UDP socket is effectively dead after this notification.
        UDP socket was manually closed, then this value will be  
        NS_BINDING_ABORTED.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

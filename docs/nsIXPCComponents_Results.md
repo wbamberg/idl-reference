@@ -6,8 +6,7 @@ layout: default
 </div>
 
 # nsIXPCComponents_Results #
-<pre>  
+  
 interface of Components.results  
 (interesting stuff only reflected into JavaScript)  
   
-</pre>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIMozIconURI #
-<pre>  
+  
 nsIIconURI  
   
 This interface derives from nsIURI, to provide additional information  
@@ -39,55 +39,54 @@ Legal parameter value pairs are listed below:
   Values:      <mime-type>  
   Description: The mime type we want an icon for. This is ignored by stock images.  
   
-</pre>
+
 ## Attributes ##
 
 ### iconURL ###
-<pre>  
+  
 iconFile  
   
 the file URL contained within this moz-icon url, or null.  
   
-</pre>
+
 ### imageSize ###
-<pre>  
+  
 imageSize  
   
 The image area in square pixels, defaulting to 16 if unspecified.  
   
-</pre>
+
 ### stockIcon ###
-<pre>  
+  
 stockIcon  
   
 The stock icon name requested from the OS.  
   
-</pre>
+
 ### iconSize ###
-<pre>  
+  
 iconSize  
   
 The stock icon size requested from the OS.  
   
-</pre>
+
 ### iconState ###
-<pre>  
+  
 iconState  
   
 The stock icon state requested from the OS.  
   
-</pre>
+
 ### contentType ###
-<pre>  
+  
 contentType  
   
 A valid mime type, or the empty string.  
   
-</pre>
+
 ### fileExtension ###
-<pre>  
+  
 fileExtension  
   
 The file extension of the file which we are looking up.  
   
-</pre>

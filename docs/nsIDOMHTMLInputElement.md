@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMHTMLInputElement #
-<pre>  
+  
 The nsIDOMHTMLInputElement interface is the interface to a [X]HTML  
 input element.  
   
@@ -16,7 +16,7 @@ http://www.w3.org/TR/DOM-Level-2-HTML/
 with changes from the work-in-progress WHATWG HTML specification:  
 http://www.whatwg.org/specs/web-apps/current-work/  
   
-</pre>
+
 ## Methods ##
 
 ### stepDown(n) ###
@@ -36,11 +36,11 @@ http://www.whatwg.org/specs/web-apps/current-work/
 ### mozSetFileNameArray(aFileNames, aLength) ###
 
 ### mozIsTextField(aExcludePassword) ###
-<pre>  
+  
 This non-standard method prevents to check types manually to know if the  
 element is a text field.  
   
-</pre>
+
 ## Attributes ##
 
 ### accept ###

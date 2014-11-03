@@ -6,27 +6,26 @@ layout: default
 </div>
 
 # nsIMacUtils #
-<pre>  
+  
 nsIMacUtils: Generic globally-available Mac-specific utilities.  
   
-</pre>
+
 ## Attributes ##
 
 ### isUniversalBinary ###
-<pre>  
+  
 True when the main executable is a fat file supporting at least  
 ppc and x86 (universal binary).  
   
-</pre>
+
 ### architecturesInBinary ###
-<pre>  
+  
 Returns a string containing a list of architectures delimited  
 by "-". Architecture sets are always in the same order:  
 ppc > i386 > ppc64 > x86_64 > (future additions)  
   
-</pre>
+
 ### isTranslated ###
-<pre>  
+  
 True when running under binary translation (Rosetta).  
   
-</pre>

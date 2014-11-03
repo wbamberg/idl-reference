@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsPRUint8 #
-<pre>  
+  
 Scriptable storage for 8-bit integers  
   
-</pre>
+
 ## Methods ##
 
 ### toString() ###

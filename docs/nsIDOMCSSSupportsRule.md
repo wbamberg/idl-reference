@@ -6,7 +6,6 @@ layout: default
 </div>
 
 # nsIDOMCSSSupportsRule #
-<pre>  
+  
 Interface for @supports rules in the CSS OM.  
   
-</pre>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### dhcpRequestResult(success, dhcpInfo) ###
-<pre>  
+  
 Callback function used to report the result of DHCP client request.  
   
 @param success  
@@ -33,7 +33,7 @@ Callback function used to report the result of DHCP client request.
          - dns2:        long  
          - server:      long  
   
-</pre>
+
 #### Parameters ####
 
 <table>

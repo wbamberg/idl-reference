@@ -38,11 +38,11 @@ layout: default
 ### getSelection() ###
 
 ### captureEvents() ###
-<pre>  
+  
 @deprecated These are old Netscape 4 methods. Do not use,  
             the implementation is no-op.  
   
-</pre>
+
 ### releaseEvents() ###
 
 ## Attributes ##
@@ -68,10 +68,10 @@ layout: default
 ### scripts ###
 
 ### designMode ###
-<pre>  
+  
 Midas additions  
   
-</pre>
+
 ### fgColor ###
 
 ### bgColor ###

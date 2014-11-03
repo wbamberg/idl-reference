@@ -6,25 +6,24 @@ layout: default
 </div>
 
 # nsIAccessibleStateChangeEvent #
-<pre>  
+  
 Fired when a state of an accessible changes.  
   
-</pre>
+
 ## Attributes ##
 
 ### state ###
-<pre>  
+  
 Returns the state of accessible (see constants declared  
 in nsIAccessibleStates).  
   
-</pre>
+
 ### isExtraState ###
-<pre>  
+  
 Returns true if the state is extra state.  
   
-</pre>
+
 ### isEnabled ###
-<pre>  
+  
 Returns true if the state is turned on.  
   
-</pre>

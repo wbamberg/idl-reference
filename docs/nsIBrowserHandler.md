@@ -10,11 +10,11 @@ layout: default
 ## Methods ##
 
 ### getFeatures(aCmdLine) ###
-<pre>  
+  
 Extract the width and height specified on the command line, if present.  
 @return A feature string with a prepended comma, e.g. ",width=500,height=400"  
   
-</pre>
+
 #### Returns ####
 
 <table>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onCacheEntryCheck(aEntry, aApplicationCache) ###
-<pre>  
+  
 Callback to perform any validity checks before the entry should be used.  
 Called before onCacheEntryAvailable callback, depending on the result it  
 may be called more then one time.  
@@ -31,7 +31,7 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
 @return  
    State of the entry, see the constants just above.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -63,7 +63,7 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
 </table>
 
 ### onCacheEntryAvailable(aEntry, aNew, aApplicationCache, aResult) ###
-<pre>  
+  
 Callback giving actual result of asyncOpenURI.  It may give consumer the cache   
 entry or a failure result when it's not possible to open it from some reason.  
 This callback is ensured to be called on the same thread on which asyncOpenURI  
@@ -92,7 +92,7 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
    - there is not enough disk space to create new entries  
    - cache entry was not found in a given application cache  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -137,7 +137,7 @@ This callback may be invoked sooner then respective asyncOpenURI call exits.
 ## Constants ##
 
 ### ENTRY_WANTED ###
-<pre>  
+  
 State of the entry determined by onCacheEntryCheck.  
   
 ENTRY_WANTED - the consumer is interested in the entry, we will pass it.  
@@ -153,7 +153,7 @@ ENTRY_NEEDS_REVALIDATION - entry needs to be revalidated first with origin serve
    this check has been made for.  
 ENTRY_NOT_WANTED - the consumer is not interested in the entry, we will not pass it.  
   
-</pre>
+
 ### RECHECK_AFTER_WRITE_FINISHED ###
 
 ### ENTRY_NEEDS_REVALIDATION ###

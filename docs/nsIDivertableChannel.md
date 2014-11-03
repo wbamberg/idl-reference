@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIDivertableChannel #
-<pre>  
+  
 A channel implementing this interface allows diverting from an  
 nsIStreamListener in the child process to one in the parent.  
   
-</pre>
+
 ## Methods ##
 
 ### divertToParent() ###
-<pre>  
+  
 CHILD ONLY.  
 Called by Necko client in child process during OnStartRequest to divert  
 nsIStreamListener and nsIRequest callbacks to the parent process.  
@@ -45,7 +45,7 @@ The process should look like the following:
 @throws exception if the channel was canceled early. Throws status code of  
         canceled channel.  
   
-</pre>
+
 #### Returns ####
 
 <table>

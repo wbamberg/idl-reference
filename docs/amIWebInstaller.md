@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # amIWebInstaller #
-<pre>  
+  
 This interface is used to allow webpages to start installing add-ons.  
   
-</pre>
+
 ## Methods ##
 
 ### isInstallEnabled(aMimetype, aReferer) ###
-<pre>  
+  
 Checks if installation is enabled for a webpage.  
   
 @param  aMimetype  
@@ -22,7 +22,7 @@ Checks if installation is enabled for a webpage.
         The URL of the webpage trying to install an add-on  
 @return true if installation is enabled  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -53,7 +53,7 @@ Checks if installation is enabled for a webpage.
 </table>
 
 ### installAddonsFromWebpage(aMimetype, aOriginator, aReferer, aUris, aHashes, aNames, aIcons, aCallback, aInstallCount) ###
-<pre>  
+  
 Installs an array of add-ons at the request of a webpage  
   
 @param  aMimetype  
@@ -78,7 +78,7 @@ Installs an array of add-ons at the request of a webpage
         An optional argument including the number of add-ons to install  
 @return true if the installation was successfully started  
   
-</pre>
+
 #### Parameters ####
 
 <table>

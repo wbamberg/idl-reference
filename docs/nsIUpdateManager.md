@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsIUpdateManager #
-<pre>  
+  
 An interface describing a global application service that maintains a list  
 of updates previously performed as well as the current active update.  
   
-</pre>
+
 ## Methods ##
 
 ### getUpdateAt(index) ###
-<pre>  
+  
 Gets the update at the specified index  
 @param   index  
          The index within the updates array  
 @returns The nsIUpdate object at the specified index  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -45,24 +45,23 @@ Gets the update at the specified index
 </table>
 
 ### saveUpdates() ###
-<pre>  
+  
 Saves all updates to disk.  
   
-</pre>
+
 ### refreshUpdateStatus(update) ###
-<pre>  
+  
 Refresh the update status based on the information in update.status.  
   
-</pre>
+
 ## Attributes ##
 
 ### updateCount ###
-<pre>  
+  
 Gets the total number of updates in the history list.  
   
-</pre>
+
 ### activeUpdate ###
-<pre>  
+  
 The active (current) update. The active update is not in the history list.  
   
-</pre>

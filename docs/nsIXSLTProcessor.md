@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### importStylesheet(style) ###
-<pre>  
+  
 Import the stylesheet into this XSLTProcessor for transformations.  
   
 @param style The root-node of a XSLT stylesheet. This can be either  
@@ -23,7 +23,7 @@ Import the stylesheet into this XSLTProcessor for transformations.
   
 @exception nsIXSLTException  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -43,7 +43,7 @@ Import the stylesheet into this XSLTProcessor for transformations.
 </table>
 
 ### transformToFragment(source, output) ###
-<pre>  
+  
 Transforms the node source applying the stylesheet given by  
 the importStylesheet() function. The owner document of the output node  
 owns the returned document fragment.  
@@ -54,7 +54,7 @@ owns the returned document fragment.
   
 @exception nsIXSLTException  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -85,7 +85,7 @@ owns the returned document fragment.
 </table>
 
 ### transformToDocument(source) ###
-<pre>  
+  
 Transforms the node source applying the stylesheet given by the  
 importStylesheet() function.  
   
@@ -94,7 +94,7 @@ importStylesheet() function.
   
 @exception nsIXSLTException  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -119,7 +119,7 @@ importStylesheet() function.
 </table>
 
 ### setParameter(namespaceURI, localName, value) ###
-<pre>  
+  
 Sets a parameter to be used in subsequent transformations with this  
 nsIXSLTProcessor. If the parameter doesn't exist in the stylesheet the  
 parameter will be ignored.  
@@ -131,7 +131,7 @@ parameter will be ignored.
 @exception NS_ERROR_ILLEGAL_VALUE The datatype of value is  
                                   not supported  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -157,7 +157,7 @@ parameter will be ignored.
 </table>
 
 ### getParameter(namespaceURI, localName) ###
-<pre>  
+  
 Gets a parameter if previously set by setParameter. Returns null  
 otherwise.  
   
@@ -165,7 +165,7 @@ otherwise.
 @param localName    The local name of the XSLT parameter  
 @return nsIVariant  The value of the XSLT parameter  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -196,14 +196,14 @@ otherwise.
 </table>
 
 ### removeParameter(namespaceURI, localName) ###
-<pre>  
+  
 Removes a parameter, if set. This will make the processor use the  
 default-value for the parameter as specified in the stylesheet.  
   
 @param namespaceURI The namespaceURI of the XSLT parameter  
 @param localName    The local name of the XSLT parameter  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -223,14 +223,13 @@ default-value for the parameter as specified in the stylesheet.
 </table>
 
 ### clearParameters() ###
-<pre>  
+  
 Removes all set parameters from this nsIXSLTProcessor. This will make  
 the processor use the default-value for all parameters as specified in  
 the stylesheet.  
   
-</pre>
+
 ### reset() ###
-<pre>  
+  
 Remove all parameters and stylesheets from this nsIXSLTProcessor.  
   
-</pre>

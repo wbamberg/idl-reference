@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### encrypt(plainText) ###
-<pre>  
+  
 encrypt  
   
 @param plainText  
@@ -24,7 +24,7 @@ purpose encryption/decryption.
   
 Can throw if the user cancels entry of their master password.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -38,7 +38,7 @@ Can throw if the user cancels entry of their master password.
 </table>
 
 ### decrypt(cipherText) ###
-<pre>  
+  
 decrypt  
   
 @param cipherText  
@@ -50,7 +50,7 @@ Can throw if the user cancels entry of their master password, or if the
 cipherText value can not be successfully decrypted (eg, if it was  
 encrypted with some other key).  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -66,28 +66,28 @@ encrypted with some other key).
 ## Attributes ##
 
 ### uiBusy ###
-<pre>  
+  
 uiBusy  
   
 True when a master password prompt is being displayed.  
   
-</pre>
+
 ### isLoggedIn ###
-<pre>  
+  
 isLoggedIn  
   
 Current login state of the token used for encryption. If the user is  
 not logged in, performing a crypto operation will result in a master  
 password prompt.  
   
-</pre>
+
 ### defaultEncType ###
-<pre>  
+  
 defaultEncType  
   
 Default encryption type used by an implementation of this interface.  
   
-</pre>
+
 ## Constants ##
 
 ### ENCTYPE_BASE64 ###

@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### handleResult(result) ###
-<pre>  
+  
 Called with the result of the removeCert operation above.  
   
 @param result Result code from the operation  
   
-</pre>
+
 #### Parameters ####
 
 <table>

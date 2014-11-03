@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIAsyncShutdownBlocker #
-<pre>  
+  
 A blocker installed by a client to be informed during some stage of  
 shutdown and block shutdown asynchronously until some condition is  
 complete.  
@@ -14,20 +14,20 @@ complete.
 If you wish to use AsyncShutdown, you will need to implement this  
 interface (and only this interface).  
   
-</pre>
+
 ## Methods ##
 
 ### blockShutdown(aBarrierClient) ###
-<pre>  
+  
 Inform the blocker that the stage of shutdown has started.  
 Shutdown will NOT proceed until `aBarrierClient.removeBlocker(this)`  
 has been called.  
   
-</pre>
+
 ## Attributes ##
 
 ### name ###
-<pre>  
+  
 The *unique* name of the blocker.  
   
 By convention, it should respect the following format:  
@@ -37,9 +37,9 @@ e.g.
   
 This attribute is uploaded as part of crash reports.  
   
-</pre>
+
 ### state ###
-<pre>  
+  
 The current state of the blocker.  
   
 In case of crash, this is converted to JSON and attached to  
@@ -51,4 +51,3 @@ For this purpose, use
 - nsIVariant to represent field values (which may hold nsIPropertyBag  
 themselves).  
   
-</pre>

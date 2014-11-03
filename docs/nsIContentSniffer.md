@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIContentSniffer #
-<pre>  
+  
 Content sniffer interface. Components implementing this interface can  
 determine a MIME type from a chunk of bytes.  
   
-</pre>
+
 ## Methods ##
 
 ### getMIMETypeFromContent(aRequest, aData, aLength) ###
-<pre>  
+  
 Given a chunk of data, determines a MIME type. Information from the given  
 request may be used in order to make a better decision.  
   
@@ -30,7 +30,7 @@ request may be used in order to make a better decision.
 they should not attempt to set the content type property that subclasses of  
 nsIRequest might offer.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

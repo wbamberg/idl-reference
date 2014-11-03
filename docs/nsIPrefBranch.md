@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIPrefBranch #
-<pre>  
+  
 The nsIPrefBranch interface is used to manipulate the preferences data. This  
 object may be obtained from the preferences service (nsIPrefService) and  
 used to get and set default and/or user preferences across the application.  
@@ -21,11 +21,11 @@ and "browser.startup.homepage_override" can be accessed by simply passing
   
 @see nsIPrefService  
   
-</pre>
+
 ## Methods ##
 
 ### getPrefType(aPrefName) ###
-<pre>  
+  
 Called to determine the type of a specific preference.  
   
 @param aPrefName The preference to get the type of.  
@@ -33,7 +33,7 @@ Called to determine the type of a specific preference.
 @return long     A value representing the type of the preference. This  
                  value will be PREF_STRING, PREF_INT, or PREF_BOOL.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -59,7 +59,7 @@ Called to determine the type of a specific preference.
 </table>
 
 ### getBoolPref(aPrefName) ###
-<pre>  
+  
 Called to get the state of an individual boolean preference.  
   
 @param aPrefName The boolean preference to get the state of.  
@@ -68,7 +68,7 @@ Called to get the state of an individual boolean preference.
   
 @see setBoolPref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -93,7 +93,7 @@ Called to get the state of an individual boolean preference.
 </table>
 
 ### setBoolPref(aPrefName, aValue) ###
-<pre>  
+  
 Called to set the state of an individual boolean preference.  
   
 @param aPrefName The boolean preference to set the state of.  
@@ -104,7 +104,7 @@ value of a type other than boolean.
   
 @see getBoolPref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -124,7 +124,7 @@ value of a type other than boolean.
 </table>
 
 ### getFloatPref(aPrefName) ###
-<pre>  
+  
 Called to get the state of an individual floating-point preference.  
 "Floating point" preferences are really string preferences that  
 are converted to floating point numbers.  
@@ -135,7 +135,7 @@ are converted to floating point numbers.
   
 @see setCharPref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -160,7 +160,7 @@ are converted to floating point numbers.
 </table>
 
 ### getCharPref(aPrefName) ###
-<pre>  
+  
 Called to get the state of an individual string preference.  
   
 @param aPrefName The string preference to retrieve.  
@@ -169,7 +169,7 @@ Called to get the state of an individual string preference.
   
 @see setCharPref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -194,7 +194,7 @@ Called to get the state of an individual string preference.
 </table>
 
 ### setCharPref(aPrefName, aValue) ###
-<pre>  
+  
 Called to set the state of an individual string preference.  
   
 @param aPrefName The string preference to set.  
@@ -205,7 +205,7 @@ value of a type other than string.
   
 @see getCharPref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -225,7 +225,7 @@ value of a type other than string.
 </table>
 
 ### getIntPref(aPrefName) ###
-<pre>  
+  
 Called to get the state of an individual integer preference.  
   
 @param aPrefName The integer preference to get the value of.  
@@ -234,7 +234,7 @@ Called to get the state of an individual integer preference.
   
 @see setIntPref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -259,7 +259,7 @@ Called to get the state of an individual integer preference.
 </table>
 
 ### setIntPref(aPrefName, aValue) ###
-<pre>  
+  
 Called to set the state of an individual integer preference.  
   
 @param aPrefName The integer preference to set the value of.  
@@ -270,7 +270,7 @@ value of a type other than integer.
   
 @see getIntPref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -290,7 +290,7 @@ value of a type other than integer.
 </table>
 
 ### getComplexValue(aPrefName, aType, aValue) ###
-<pre>  
+  
 Called to get the state of an individual complex preference. A complex  
 preference is a preference which represents an XPCOM object that can not  
 be easily represented using a standard boolean, integer or string value.  
@@ -308,7 +308,7 @@ be easily represented using a standard boolean, integer or string value.
   
 @see setComplexValue  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -339,7 +339,7 @@ be easily represented using a standard boolean, integer or string value.
 </table>
 
 ### setComplexValue(aPrefName, aType, aValue) ###
-<pre>  
+  
 Called to set the state of an individual complex preference. A complex  
 preference is a preference which represents an XPCOM object that can not  
 be easily represented using a standard boolean, integer or string value.  
@@ -357,7 +357,7 @@ be easily represented using a standard boolean, integer or string value.
   
 @see getComplexValue  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -388,7 +388,7 @@ be easily represented using a standard boolean, integer or string value.
 </table>
 
 ### clearUserPref(aPrefName) ###
-<pre>  
+  
 Called to clear a user set value from a specific preference. This will, in  
 effect, reset the value to the default value. If no default value exists  
 the preference will cease to exist.  
@@ -398,7 +398,7 @@ the preference will cease to exist.
 @note  
 This method does nothing if this object is a default branch.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -412,7 +412,7 @@ This method does nothing if this object is a default branch.
 </table>
 
 ### lockPref(aPrefName) ###
-<pre>  
+  
 Called to lock a specific preference. Locking a preference will cause the  
 preference service to always return the default value regardless of  
 whether there is a user set value or not.  
@@ -427,7 +427,7 @@ effect, always operates on the default branch.
   
 @see unlockPref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -441,7 +441,7 @@ effect, always operates on the default branch.
 </table>
 
 ### prefHasUserValue(aPrefName) ###
-<pre>  
+  
 Called to check if a specific preference has a user value associated to  
 it.  
   
@@ -461,7 +461,7 @@ the preference will not be saved to a file by nsIPrefService.savePrefFile.
 @return boolean  true  The preference has a user set value.  
                  false The preference only has a default value.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -487,7 +487,7 @@ the preference will not be saved to a file by nsIPrefService.savePrefFile.
 </table>
 
 ### prefIsLocked(aPrefName) ###
-<pre>  
+  
 Called to check if a specific preference is locked. If a preference is  
 locked calling its Get method will always return the default value.  
   
@@ -503,7 +503,7 @@ effect, always operates on the default branch.
 @see lockPref  
 @see unlockPref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -529,7 +529,7 @@ effect, always operates on the default branch.
 </table>
 
 ### unlockPref(aPrefName) ###
-<pre>  
+  
 Called to unlock a specific preference. Unlocking a previously locked   
 preference allows the preference service to once again return the user set  
 value of the preference.  
@@ -544,7 +544,7 @@ effect, always operates on the default branch.
   
 @see lockPref  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -558,7 +558,7 @@ effect, always operates on the default branch.
 </table>
 
 ### deleteBranch(aStartingAt) ###
-<pre>  
+  
 Called to remove all of the preferences referenced by this branch.  
   
 @param aStartingAt The point on the branch at which to start the deleting  
@@ -571,7 +571,7 @@ effect, always operates on both.
   
 @throws Error The preference(s) do not exist or an error occurred.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -587,7 +587,7 @@ effect, always operates on both.
 </table>
 
 ### getChildList(aStartingAt, aCount, aChildArray) ###
-<pre>  
+  
 Returns an array of strings representing the child preferences of the  
 root of this branch.  
   
@@ -603,7 +603,7 @@ effect, always operates on both.
   
 @throws Error The preference(s) do not exist or an error occurred.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -631,7 +631,7 @@ effect, always operates on both.
 </table>
 
 ### resetBranch(aStartingAt) ###
-<pre>  
+  
 Called to reset all of the preferences referenced by this branch to their  
 default values.  
   
@@ -645,7 +645,7 @@ effect, always operates on the user branch.
   
 @throws Error The preference(s) do not exist or an error occurred.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -661,7 +661,7 @@ effect, always operates on the user branch.
 </table>
 
 ### addObserver(aDomain, aObserver, aHoldWeak) ###
-<pre>  
+  
 Add a preference change observer. On preference changes, the following  
 arguments will be passed to the nsIObserver.observe() method:  
   aSubject - The nsIPrefBranch object (this)  
@@ -721,7 +721,7 @@ please use an nsITimer.
 @see nsIObserver  
 @see removeObserver  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -754,7 +754,7 @@ please use an nsITimer.
 </table>
 
 ### removeObserver(aDomain, aObserver) ###
-<pre>  
+  
 Remove a preference change observer.  
   
 @param aDomain   The preference which is being observed for changes.  
@@ -768,7 +768,7 @@ otherwise, the observer will not be removed.
 @see nsIObserver  
 @see addObserver  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -790,20 +790,20 @@ otherwise, the observer will not be removed.
 ## Attributes ##
 
 ### root ###
-<pre>  
+  
 Called to get the root on which this branch is based, such as  
 "browser.startup."  
   
-</pre>
+
 ## Constants ##
 
 ### PREF_INVALID ###
-<pre>  
+  
 Values describing the basic preference types.  
   
 @see getPrefType  
   
-</pre>
+
 ### PREF_STRING ###
 
 ### PREF_INT ###

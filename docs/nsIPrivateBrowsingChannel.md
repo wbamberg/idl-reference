@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIPrivateBrowsingChannel #
-<pre>  
+  
 This interface is implemented by channels which support overriding the  
 privacy state of the channel.  
   
 This interface must be used only from the XPCOM main thread.  
   
-</pre>
+
 ## Methods ##
 
 ### setPrivate(aPrivate) ###
-<pre>  
+  
 Determine whether the channel is tied to a private browsing window.  
   
 This value can be set only before the channel is opened.  Setting it  
@@ -37,7 +37,7 @@ or notificationCallbacks are set after setPrivate has been called.
   
 @param aPrivate whether the channel should be opened in private mode.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -55,11 +55,10 @@ or notificationCallbacks are set after setPrivate has been called.
 ## Attributes ##
 
 ### isChannelPrivate ###
-<pre>  
+  
 States whether the channel is in private browsing mode. This may either  
 happen because the channel is opened from a private mode context or  
 when the mode is explicitly set with ::setPrivate().  
   
 This attribute is equivalent to NS_UsePrivateBrowsing(), but scriptable.  
   
-</pre>

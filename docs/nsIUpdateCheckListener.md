@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIUpdateCheckListener #
-<pre>  
+  
 An interface describing an object that listens to the progress of an update  
 check operation. This object is notified as the check continues, finishes  
 and if it has an error.  
   
-</pre>
+
 ## Methods ##
 
 ### onCheckComplete(request, updates, updateCount) ###
-<pre>  
+  
 The update check was completed.  
 @param   request  
          The nsIXMLHttpRequest handling the update check.  
@@ -24,7 +24,7 @@ The update check was completed.
 @param   updateCount  
          The size of the |updates| array.  
   
-</pre>
+
 #### Parameters ####
 
 <table>
@@ -50,7 +50,7 @@ The update check was completed.
 </table>
 
 ### onError(request, update) ###
-<pre>  
+  
 An error occurred while loading the remote update service file.  
 @param   request  
          The nsIXMLHttpRequest handling the update check.  
@@ -58,7 +58,7 @@ An error occurred while loading the remote update service file.
          A nsIUpdate object that contains details about the  
          error in its |statusText| property.  
   
-</pre>
+
 #### Parameters ####
 
 <table>

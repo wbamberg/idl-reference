@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsICookieService #
-<pre>  
+  
 nsICookieService  
   
 Provides methods for setting and getting cookies in the context of a  
@@ -68,7 +68,7 @@ subject:  an nsIURI interface pointer representing the URI that attempted
           to set the cookie.  
 data   :  the referrer, or "?" if unknown  
   
-</pre>
+
 ## Methods ##
 
 ### getCookieString(aURI, aChannel) ###
