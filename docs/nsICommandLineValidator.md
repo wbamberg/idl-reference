@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsICommandLineValidator #
-  
+<pre>  
 Validates arguments on the command line of an XUL application.  
   
 Each validator is registered in the category "command-line-validator".  
@@ -23,14 +23,15 @@ command-line-validator m-edit         @mozilla.org/composer/clh;1
 command-line-validator m-irc          @mozilla.org/chatzilla/clh;1  
   
   
-
+</pre>
 ## Methods ##
 
 ### validate(aCommandLine) ###
-  
+<pre>  
 Process the command-line validators in the proper order, calling  
 "validate()" on each.  
   
 @throws NS_ERROR_ABORT if any validator throws NS_ERROR_ABORT. All other  
         errors thrown by validators will be silently ignored.  
   
+</pre>

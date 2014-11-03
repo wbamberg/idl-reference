@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # nsIDOMStorageManager #
-  
+<pre>  
 General purpose interface that has two implementations, for localStorage  
 resp. sessionStorage with "@mozilla.org/dom/localStorage-manager;1" resp.  
 "@mozilla.org/dom/sessionStorage-manager;1" contract IDs.  
   
-
+</pre>
 ## Methods ##
 
 ### precacheStorage(aPrincipal) ###
-  
+<pre>  
 This starts async preloading of a storage cache for scope  
 defined by the principal.  
   
-
+</pre>
 ### createStorage(aWindow, aPrincipal, aDocumentURI, aPrivate) ###
-  
+<pre>  
 Returns instance of DOM storage object for given principal.  
 A new object is always returned and it is ensured there is  
 a storage for the scope created.  
@@ -35,7 +35,7 @@ a storage for the scope created.
 @param aPrivate  
    Whether the demanding document is running in Private Browsing mode or not.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -67,7 +67,7 @@ a storage for the scope created.
 </table>
 
 ### getStorage(aWindow, aPrincipal, aPrivate) ###
-  
+<pre>  
 Returns instance of DOM storage object for given principal.  
 If there is no storage managed for the scope, then null is returned and  
 no object is created.  Otherwise, an object (new) for the existing storage  
@@ -80,7 +80,7 @@ scope is returned.
 @param aPrivate  
    Whether the demanding document is running in Private Browsing mode or not.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -106,7 +106,7 @@ scope is returned.
 </table>
 
 ### cloneStorage(aStorageToCloneFrom) ###
-  
+<pre>  
 Clones given storage into this storage manager.  
   
 @param aStorageToCloneFrom  
@@ -115,7 +115,7 @@ Clones given storage into this storage manager.
    the moment this method was called.  Modification to this new object will  
    not affect the original storage content we cloned from and vice versa.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -132,7 +132,7 @@ Clones given storage into this storage manager.
 </table>
 
 ### checkStorage(aPrincipal, aStorage) ###
-  
+<pre>  
 Returns true if the storage belongs to the given principal and is managed  
 (i.e. has been created and is cached) by this storage manager.  
   
@@ -146,7 +146,7 @@ Returns true if the storage belongs to the given principal and is managed
         by this storage manager.  
    false otherwise  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -166,7 +166,7 @@ Returns true if the storage belongs to the given principal and is managed
 </table>
 
 ### getLocalStorageForPrincipal(aPrincipal, aDocumentURI, aPrivate) ###
-  
+<pre>  
 @deprecated  
   
 Returns instance of localStorage object for aURI's origin.  
@@ -179,3 +179,4 @@ interface.
 Extension developers are strongly encouraged to use getStorage  
 or createStorage method instead.  
   
+</pre>

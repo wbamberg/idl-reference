@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### tagURI(aURI, aTags) ###
-  
+<pre>  
 Tags a URL with the given set of tags. Current tags set for the URL  
 persist. Tags in aTags which are already set for the given URL are  
 ignored.  
@@ -22,7 +22,7 @@ ignored.
        array can be either a tag name (non-empty string) or a concrete  
        itemId of a tag container.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -44,7 +44,7 @@ ignored.
 </table>
 
 ### untagURI(aURI, aTags) ###
-  
+<pre>  
 Removes tags from a URL. Tags from aTags which are not set for the  
 given URL are ignored.  
   
@@ -55,7 +55,7 @@ given URL are ignored.
        url.  Each element within the array can be either a tag name  
        (non-empty string) or a concrete itemId of a tag container.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -77,14 +77,14 @@ given URL are ignored.
 </table>
 
 ### getURIsForTag(aTag) ###
-  
+<pre>  
 Retrieves all URLs tagged with the given tag.  
   
 @param aTag  
        tag name  
 @returns Array of uris tagged with aTag.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -109,14 +109,14 @@ Retrieves all URLs tagged with the given tag.
 </table>
 
 ### getTagsForURI(aURI, length, aTags) ###
-  
+<pre>  
 Retrieves all tags set for the given URL.  
   
 @param aURI  
        a URL.  
 @returns array of tags (sorted by name).  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -143,21 +143,22 @@ Retrieves all tags set for the given URL.
 ## Attributes ##
 
 ### allTags ###
-  
+<pre>  
 Retrieves all tags used to tag URIs in the data-base (sorted by name).  
   
-
+</pre>
 ### hasTags ###
-  
+<pre>  
 Whether any tags exist.  
   
 @note This is faster than allTags.length, since doesn't need to sort tags.  
   
-
+</pre>
 ## Constants ##
 
 ### MAX_TAG_LENGTH ###
-  
+<pre>  
 Defines the maximal length of a tag. Related to the bug 407821   
 (https://bugzilla.mozilla.org/show_bug.cgi?id=407821)   
   
+</pre>

@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsISecretDecoderRingConfig #
-  
+<pre>  
 Configuration interface for the Secret Decoder Ring  
  - this interface allows setting the window that will be  
    used as parent for dialog windows (such as password prompts)  
   
-
+</pre>
 ## Methods ##
 
 ### setWindow(w) ###

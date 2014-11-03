@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # nsIDOMRange #
-  
+<pre>  
 The nsIDOMRange interface is an interface to a DOM range object.  
   
 For more information on this interface please see  
 http://www.w3.org/TR/DOM-Level-2-Traversal-Range/  
   
-
+</pre>
 ## Methods ##
 
 ### setStart(refNode, offset) ###
@@ -58,10 +58,10 @@ http://www.w3.org/TR/DOM-Level-2-Traversal-Range/
 ### comparePoint(parent, offset) ###
 
 ### intersectsNode(node) ###
-  
+<pre>  
 Returns whether the range intersects node.  
   
-
+</pre>
 ### getClientRects() ###
 
 ### getBoundingClientRect() ###

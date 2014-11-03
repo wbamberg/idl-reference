@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### handleResult(aStatus, aDownload) ###
-  
+<pre>  
 Process an asynchronous result from getDownloadByGUID.  
   
 @param aStatus The result code of the operation:  
@@ -18,7 +18,7 @@ Process an asynchronous result from getDownloadByGUID.
        * NS_ERROR_NOT_AVAILABLE: no such item was found.  
        * Other error values are possible, but less well-defined.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

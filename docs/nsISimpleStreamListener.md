@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # nsISimpleStreamListener #
-  
+<pre>  
 A simple stream listener can be used with AsyncRead to supply data to  
 a output stream.  
   
-
+</pre>
 ## Methods ##
 
 ### init(aSink, aObserver) ###
-  
+<pre>  
 Initialize the simple stream listener.  
   
 @param aSink data will be read from the channel to this output stream.  
              Must implement writeFrom.  
 @param aObserver optional stream observer (can be NULL)  
   
-
+</pre>
 #### Parameters ####
 
 <table>

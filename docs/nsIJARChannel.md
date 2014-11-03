@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### setAppURI(uri) ###
-  
+<pre>  
 Forces the uri to be a app:// uri.  
   
-
+</pre>
 ### ensureChildFd() ###
-  
+<pre>  
 For child process, set this to make sure that a valid file descriptor of  
 JAR file is always provided when calling NSPRFileDesc().  
 Must be set before Open() or AsyncOpen() to be effective.  
@@ -27,24 +27,25 @@ shared descriptors, the offset is also changed for the other.
 It can be safely used only with operations that take absolute offsets,  
 such as mmap/pread/pwrite.  
   
-
+</pre>
 ## Attributes ##
 
 ### isUnsafe ###
-  
+<pre>  
 Returns TRUE if the JAR file is not safe (if the content type reported  
 by the server for a remote JAR is not of an expected type).  Scripting,  
 redirects, and plugins should be disabled when loading from this  
 channel.  
   
-
+</pre>
 ### jarFile ###
-  
+<pre>  
 Returns the JAR file.  
   
-
+</pre>
 ### zipEntry ###
-  
+<pre>  
 Returns the zip entry if the file is synchronously accessible.  
 This will work even without opening the channel.  
   
+</pre>

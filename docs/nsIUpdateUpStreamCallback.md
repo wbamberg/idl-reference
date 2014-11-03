@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### updateUpStreamResult(success, externalIfname) ###
-  
+<pre>  
 Callback function used to report the result of updating upstream.  
   
 @param success  
@@ -18,7 +18,7 @@ Callback function used to report the result of updating upstream.
 @param externalIfname  
        The external interface name.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

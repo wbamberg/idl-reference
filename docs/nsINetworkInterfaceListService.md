@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### getDataInterfaceList(condition) ###
-  
+<pre>  
 Obtain a list of network interfaces that satisfy the specified condition.  
 @param condition flags that specify the interfaces to be returned. This  
        can be OR combination of LIST_* flags, or zero to make all available  
        interfaces returned.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

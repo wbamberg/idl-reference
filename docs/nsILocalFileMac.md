@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### initWithCFURL(aCFURL) ###
-  
+<pre>  
 initWithCFURL  
   
 Init this object with a CFURLRef  
@@ -21,7 +21,7 @@ NOTE: If the path of the CFURL is /a/b/c, at least a/b must exist beforehand.
 @param   aCFURL         the CoreFoundation URL  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -35,7 +35,7 @@ NOTE: If the path of the CFURL is /a/b/c, at least a/b must exist beforehand.
 </table>
 
 ### initWithFSRef(aFSRef) ###
-  
+<pre>  
 initWithFSRef  
   
 Init this object with an FSRef  
@@ -45,7 +45,7 @@ NOTE: Supported only for XP_MACOSX
 @param   aFSRef         the native FSRef  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -59,7 +59,7 @@ NOTE: Supported only for XP_MACOSX
 </table>
 
 ### getCFURL() ###
-  
+<pre>  
 getCFURL  
   
 Returns the CFURLRef of the file object. The caller is  
@@ -75,9 +75,9 @@ NOTE: Supported only for XP_MACOSX
 @return  
    
   
-
+</pre>
 ### getFSRef() ###
-  
+<pre>  
 getFSRef  
   
 Returns the FSRef of the file object.  
@@ -92,9 +92,9 @@ NOTE: Supported only for XP_MACOSX
 @return  
    
   
-
+</pre>
 ### getFSSpec() ###
-  
+<pre>  
 getFSSpec  
   
 Returns the FSSpec of the file object.  
@@ -107,9 +107,9 @@ the unresolved alias file.
 @return  
    
   
-
+</pre>
 ### launchWithDoc(aDocToLoad, aLaunchInBackground) ###
-  
+<pre>  
 launchWithDoc  
   
 Launch the application that this file points to with a document.  
@@ -118,7 +118,7 @@ Launch the application that this file points to with a document.
 @param   aLaunchInBackground TRUE if the application should not come to the front.  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -138,7 +138,7 @@ Launch the application that this file points to with a document.
 </table>
 
 ### openDocWithApp(aAppToOpenWith, aLaunchInBackground) ###
-  
+<pre>  
 openDocWithApp  
   
 Open the document that this file points to with the given application.  
@@ -149,7 +149,7 @@ Open the document that this file points to with the given application.
 @param   aLaunchInBackground TRUE if the application should not come to the front.  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -171,17 +171,17 @@ Open the document that this file points to with the given application.
 </table>
 
 ### isPackage() ###
-  
+<pre>  
 isPackage  
   
 returns true if a directory is determined to be a package under Mac OS 9/X  
   
   
-
+</pre>
 ## Attributes ##
 
 ### fileSizeWithResFork ###
-  
+<pre>  
 fileSizeWithResFork  
   
 Returns the combined size of both the data fork and the resource  
@@ -189,37 +189,38 @@ fork (if present) rather than just the size of the data fork
 as returned by GetFileSize()  
   
   
-
+</pre>
 ### fileType ###
-  
+<pre>  
 fileType, creator  
   
 File type and creator attributes  
   
   
-
+</pre>
 ### fileCreator ###
 
 ### bundleDisplayName ###
-  
+<pre>  
 bundleDisplayName  
   
 returns the display name of the application bundle (usually the human   
 readable name of the application)  
   
-
+</pre>
 ### bundleIdentifier ###
-  
+<pre>  
 bundleIdentifier  
   
 returns the identifier of the bundle  
   
-
+</pre>
 ### bundleContentsLastModifiedTime ###
-  
+<pre>  
 Last modified time of a bundle's contents (as opposed to its package  
 directory).  Our convention is to make the bundle's Info.plist file  
 stand in for the rest of its contents -- since this file contains the  
 bundle's version information and other identifiers.  For non-bundles  
 this is the same as lastModifiedTime.  
   
+</pre>

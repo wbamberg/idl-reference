@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # nsIUpdatePatch #
-  
+<pre>  
 An interface that describes an object representing a patch file that can  
 be downloaded and applied to a version of this application so that it  
 can be updated.  
   
-
+</pre>
 ## Methods ##
 
 ### serialize(updates) ###
-  
+<pre>  
 Serializes this patch object into a DOM Element  
 @param   updates  
          The document to serialize into  
 @returns The DOM Element created by the serialization process  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -48,47 +48,48 @@ Serializes this patch object into a DOM Element
 ## Attributes ##
 
 ### type ###
-  
+<pre>  
 The type of this patch:  
 "partial"      A binary difference between two application versions  
 "complete"     A complete patch containing all of the replacement files  
                to update to the new version  
   
-
+</pre>
 ### URL ###
-  
+<pre>  
 The URL this patch was being downloaded from  
   
-
+</pre>
 ### finalURL ###
-  
+<pre>  
 The final URL this patch was being downloaded from  
   
-
+</pre>
 ### hashFunction ###
-  
+<pre>  
 The hash function to use when determining this file's integrity  
   
-
+</pre>
 ### hashValue ###
-  
+<pre>  
 The value of the hash function named above that should be computed if  
 this file is not corrupt.  
   
-
+</pre>
 ### size ###
-  
+<pre>  
 The size of this file, in bytes.  
   
-
+</pre>
 ### state ###
-  
+<pre>  
 The state of this patch  
   
-
+</pre>
 ### selected ###
-  
+<pre>  
 true if this patch is currently selected as the patch to be downloaded and  
 installed for this update transaction, false if another patch from this  
 update has been selected.  
   
+</pre>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getButton(index) ###
-  
+<pre>  
 Gets the nth button for the preview image. By default, all of the buttons  
 are invisible.  
   
@@ -19,7 +19,7 @@ are invisible.
 @param index The index into the button array. Must be >= 0 and <  
              MAX_TOOLBAR_BUTTONS.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -36,15 +36,16 @@ are invisible.
 ## Attributes ##
 
 ### enableCustomDrawing ###
-  
+<pre>  
 Enables/disables custom drawing of thumbnails and previews  
   
 Default value: false  
   
-
+</pre>
 ## Constants ##
 
 ### NUM_TOOLBAR_BUTTONS ###
-  
+<pre>  
 Max 7 buttons per preview per the Windows Taskbar API  
   
+</pre>

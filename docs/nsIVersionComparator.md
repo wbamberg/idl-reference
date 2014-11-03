@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIVersionComparator #
-  
+<pre>  
 Version strings are dot-separated sequences of version-parts.  
   
 A version-part consists of up to four parts, all of which are optional:  
@@ -34,11 +34,11 @@ For additional backwards compatibility, if "string-b" is "+" then
 Although not required by this interface, it is recommended that  
 numbers remain within the limits of a signed char, i.e. -127 to 128.  
   
-
+</pre>
 ## Methods ##
 
 ### compare(A, B) ###
-  
+<pre>  
 Compare two version strings  
 @param   A   The first version  
 @param   B   The second version  
@@ -46,7 +46,7 @@ Compare two version strings
          = 0 if A == B  
          > 0 if A > B  
   
-
+</pre>
 #### Parameters ####
 
 <table>

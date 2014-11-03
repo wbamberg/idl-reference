@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMDocument #
-  
+<pre>  
 The nsIDOMDocument interface represents the entire HTML or XML document.  
 Conceptually, it is the root of the document tree, and provides the   
 primary access to the document's data.  
@@ -18,7 +18,7 @@ objects.
 For more information on this interface please see   
 http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html  
   
-
+</pre>
 ## Methods ##
 
 ### createElement(tagName) ###
@@ -50,12 +50,12 @@ http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html
 ### adoptNode(source) ###
 
 ### createRange() ###
-  
+<pre>  
 Create a range  
   
 @see http://html5.org/specs/dom-range.html#dom-document-createrange  
   
-
+</pre>
 ### createNodeIterator(root, whatToShow, filter) ###
 
 ### createTreeWalker(root, whatToShow, filter) ###
@@ -63,20 +63,20 @@ Create a range
 ### createEvent(eventType) ###
 
 ### hasFocus() ###
-  
+<pre>  
 @see <http://www.whatwg.org/html/#dom-document-hasfocus>  
   
-
+</pre>
 ### getElementsByClassName(classes) ###
-  
+<pre>  
 Retrieve elements matching all classes listed in a  
 space-separated string.  
   
 @see <http://www.whatwg.org/html/#dom-document-getelementsbyclassname>  
   
-
+</pre>
 ### enableStyleSheetsForSet(name) ###
-  
+<pre>  
 Calling this method must change the disabled attribute on each StyleSheet  
 object with a title attribute with a length greater than 0 in the  
 styleSheets attribute, so that all those whose title matches the name  
@@ -93,9 +93,9 @@ preferredStyleSheetSet attributes.
   
 @see <http://dev.w3.org/csswg/cssom/#dom-document-enableStyleSheetsForSet>  
   
-
+</pre>
 ### elementFromPoint(x, y) ###
-  
+<pre>  
 Returns the element from the caller's document at the given point,  
 relative to the upper-left-most point in the (possibly scrolled)  
 window or frame.  
@@ -114,17 +114,17 @@ before calling this method.
   
 @see <http://dev.w3.org/csswg/cssom-view/#dom-document-elementfrompoint>  
   
-
+</pre>
 ### releaseCapture() ###
-  
+<pre>  
 Release the current mouse capture if it is on an element within this  
 document.  
   
 @see <https://developer.mozilla.org/en/DOM/document.releaseCapture>  
   
-
+</pre>
 ### mozSetImageElement(aImageElementId, aImageElement) ###
-  
+<pre>  
 Use the given DOM element as the source image of target |-moz-element()|.  
   
 This function introduces a new special ID (called "image element ID"),  
@@ -153,7 +153,7 @@ unregister the image element ID |aImageElementId|.
   
 @see <https://developer.mozilla.org/en/DOM/document.mozSetImageElement>  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -176,15 +176,15 @@ unregister the image element ID |aImageElementId|.
 </table>
 
 ### mozCancelFullScreen() ###
-  
+<pre>  
 Causes the document to leave DOM full-screen mode, if it's in  
 full-screen mode, as per the DOM full-screen api.  
   
 @see <https://wiki.mozilla.org/index.php?title=Gecko:FullScreenAPI>  
   
-
+</pre>
 ### caretPositionFromPoint(x, y) ###
-  
+<pre>  
 Retrieve the location of the caret position (DOM node and character  
 offset within that node), given a point.  
   
@@ -193,7 +193,7 @@ offset within that node), given a point.
 @param y Vertical point at which to determine the caret position, in  
          page coordinates.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -215,19 +215,19 @@ offset within that node), given a point.
 </table>
 
 ### mozExitPointerLock() ###
-  
+<pre>  
 Exit pointer is lock if locked, as per the DOM pointer lock api.  
   
 @see <http://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html>  
   
-
+</pre>
 ### querySelector(selectors) ###
-  
+<pre>  
 Return nodes that match a given CSS selector.  
   
 @see <http://dev.w3.org/2006/webapi/selectors-api/>  
   
-
+</pre>
 ### querySelectorAll(selectors) ###
 
 ## Attributes ##
@@ -245,59 +245,59 @@ Return nodes that match a given CSS selector.
 ### URL ###
 
 ### defaultView ###
-  
+<pre>  
 The window associated with this document.  
   
 @see <http://www.whatwg.org/html/#dom-document-defaultview>  
   
-
+</pre>
 ### characterSet ###
-  
+<pre>  
 @see <http://www.whatwg.org/html/#dom-document-characterset>  
   
-
+</pre>
 ### dir ###
-  
+<pre>  
 @see <http://www.whatwg.org/html/#dom-document-dir>  
   
-
+</pre>
 ### location ###
-  
+<pre>  
 @see <http://www.whatwg.org/html/#dom-document-location>  
   
-
+</pre>
 ### title ###
-  
+<pre>  
 @see <http://www.whatwg.org/html/#document.title>  
   
-
+</pre>
 ### readyState ###
-  
+<pre>  
 @see <http://www.whatwg.org/html/#dom-document-readystate>  
   
-
+</pre>
 ### lastModified ###
-  
+<pre>  
 @see <http://www.whatwg.org/html/#dom-document-lastmodified>  
   
-
+</pre>
 ### referrer ###
-  
+<pre>  
 @see <http://www.whatwg.org/html/#dom-document-referrer>  
   
-
+</pre>
 ### activeElement ###
-  
+<pre>  
 @see <http://www.whatwg.org/html/#dom-document-activeelement>  
   
-
+</pre>
 ### styleSheets ###
-  
+<pre>  
 @see <http://dev.w3.org/csswg/cssom/#dom-document-stylesheets>  
   
-
+</pre>
 ### preferredStyleSheetSet ###
-  
+<pre>  
 This attribute must return the preferred style sheet set as set by the  
 author. It is determined from the order of style sheet declarations and  
 the Default-Style HTTP headers, as eventually defined elsewhere in the Web  
@@ -308,9 +308,9 @@ is specified or implied. This attribute must never return null.
   
 @see <http://dev.w3.org/csswg/cssom/#dom-document-preferredStyleSheetSet>  
   
-
+</pre>
 ### selectedStyleSheetSet ###
-  
+<pre>  
 This attribute indicates which style sheet set is in use. This attribute  
 is live; changing the disabled attribute on style sheets directly will  
 change the value of this attribute.  
@@ -339,11 +339,11 @@ default view.
   
 @see <http://dev.w3.org/csswg/cssom/#dom-document-selectedStyleSheetSet>  
   
-
+</pre>
 ### lastStyleSheetSet ###
 
 ### styleSheetSets ###
-  
+<pre>  
 This must return the live list of the currently available style sheet  
 sets. This list is constructed by enumerating all the style sheets for  
 this document available to the implementation, in the order they are  
@@ -354,63 +354,63 @@ list.
   
 @see <http://dev.w3.org/csswg/cssom/#dom-document-styleSheetSets>  
   
-
+</pre>
 ### contentType ###
-  
+<pre>  
 @see <https://developer.mozilla.org/en/DOM/document.contentType>  
   
-
+</pre>
 ### mozSyntheticDocument ###
-  
+<pre>  
 True if this document is synthetic : stand alone image, video, audio file,  
 etc.  
   
-
+</pre>
 ### currentScript ###
-  
+<pre>  
 Returns the script element whose script is currently being processed.  
   
 @see <https://developer.mozilla.org/en/DOM/document.currentScript>  
   
-
+</pre>
 ### mozFullScreenElement ###
-  
+<pre>  
 Element which is currently the full-screen element as per the DOM  
 full-screen api.  
   
 @see <https://wiki.mozilla.org/index.php?title=Gecko:FullScreenAPI>  
   
-
+</pre>
 ### mozFullScreen ###
-  
+<pre>  
 Denotes whether this document is in DOM full-screen mode, as per the DOM  
 full-screen api.  
   
 @see <https://wiki.mozilla.org/index.php?title=Gecko:FullScreenAPI>  
   
-
+</pre>
 ### mozFullScreenEnabled ###
-  
+<pre>  
 Denotes whether the full-screen-api.enabled is true, no windowed  
 plugins are present, and all ancestor documents have the  
 allowfullscreen attribute set.  
   
 @see <https://wiki.mozilla.org/index.php?title=Gecko:FullScreenAPI>  
   
-
+</pre>
 ### mozPointerLockElement ###
-  
+<pre>  
 The element to which the mouse pointer is locked, if any, as per the  
 DOM pointer lock api.  
   
 @see <http://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html>  
   
-
+</pre>
 ### hidden ###
-  
+<pre>  
 Visibility API implementation.  
   
-
+</pre>
 ### mozHidden ###
 
 ### visibilityState ###
@@ -418,7 +418,8 @@ Visibility API implementation.
 ### mozVisibilityState ###
 
 ### compatMode ###
-  
+<pre>  
 Returns "BackCompat" if we're in quirks mode or "CSS1Compat" if we're in  
 strict mode.  (XML documents are always in strict mode.)  
   
+</pre>

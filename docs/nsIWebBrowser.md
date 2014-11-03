@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIWebBrowser #
-  
+<pre>  
 The nsIWebBrowser interface is implemented by web browser objects.  
 Embedders use this interface during initialisation to associate  
 the new web browser instance with the embedders chrome and  
 to register any listeners. The interface may also be used at runtime  
 to obtain the content DOM window and from that the rest of the DOM.  
   
-
+</pre>
 ## Methods ##
 
 ### addWebBrowserListener(aListener, aIID) ###
-  
+<pre>  
 Registers a listener of the type specified by the iid to receive  
 callbacks. The browser stores a weak reference to the listener  
 to avoid any circular dependencies.  
@@ -46,7 +46,7 @@ the IID is that of the interface.
         invalid or the object did not implement the interface  
         specified by the IID.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -81,7 +81,7 @@ the IID is that of the interface.
 </table>
 
 ### removeWebBrowserListener(aListener, aIID) ###
-  
+<pre>  
 Removes a previously registered listener.  
   
 @param aListener The listener to be removed.  
@@ -95,7 +95,7 @@ Removes a previously registered listener.
 @see addWebBrowserListener  
 @see nsIWeakReference  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -131,7 +131,7 @@ Removes a previously registered listener.
 ## Attributes ##
 
 ### containerWindow ###
-  
+<pre>  
 The chrome object associated with the browser instance. The embedder  
 must create one chrome object for <I>each</I> browser object  
 that is instantiated. The embedder must associate the two by setting  
@@ -168,9 +168,9 @@ object. If the implementation does this, it must also implement
 @see nsIWeakReference  
 @see nsIWebProgressListener  
   
-
+</pre>
 ### parentURIContentListener ###
-  
+<pre>  
 URI content listener parent. The embedder may set this property to  
 their own implementation if they intend to override or prevent  
 how certain kinds of content are loaded.  
@@ -185,17 +185,17 @@ how certain kinds of content are loaded.
   
 @see nsIURIContentListener  
   
-
+</pre>
 ### contentDOMWindow ###
-  
+<pre>  
 The top-level DOM window. The embedder may walk the entire  
 DOM starting from this value.  
   
 @see nsIDOMWindow  
   
-
+</pre>
 ### isActive ###
-  
+<pre>  
 Whether this web browser is active. Active means that it's visible  
 enough that we want to avoid certain optimizations like discarding  
 decoded image data and throttling the refresh driver. In Firefox,  
@@ -204,3 +204,4 @@ this corresponds to the visible tab.
 Defaults to true. For optimal performance, set it to false when  
 appropriate.  
   
+</pre>

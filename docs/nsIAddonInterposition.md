@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIAddonInterposition #
-  
+<pre>  
 This interface allows Firefox to expose different implementations of its own  
 classes to add-ons. Once an interposition is created, it must be assigned to  
 an add-on using Cu.setAddonInterposition (JS) or xpc::SetAddonInterposition  
@@ -20,11 +20,11 @@ interpose method. If the interposition wants to replace the given
 property, it should return a replacement property descriptor for it. If not,  
 it should return null.  
   
-
+</pre>
 ## Methods ##
 
 ### interpose(addonId, target, iface, prop) ###
-  
+<pre>  
 Returns a replacement property descriptor for a browser object.  
   
 @param addonId The ID of the add-on accessing the property.  
@@ -36,7 +36,7 @@ Returns a replacement property descriptor for a browser object.
 @param prop The name of the property being accessed.  
 @return A property descriptor or null.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

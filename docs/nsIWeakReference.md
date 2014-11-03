@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIWeakReference #
-  
+<pre>  
 An instance of |nsIWeakReference| is a proxy object that cooperates with  
 its referent to give clients a non-owning, non-dangling reference.  Clients  
 own the proxy, and should generally manage it with an |nsCOMPtr| (see the  
@@ -20,13 +20,14 @@ can get useful access to the referent, while it still exists.
 @see nsWeakReference  
 @see nsWeakPtr  
   
-
+</pre>
 ## Methods ##
 
 ### QueryReferent(uuid, result) ###
-  
+<pre>  
 |QueryReferent| queries the referent, if it exists, and like |QueryInterface|, produces  
 an owning reference to the desired interface.  It is designed to look and act exactly  
 like (a proxied) |QueryInterface|.  Don't hold on to the produced interface permanently;  
 that would defeat the purpose of using a non-owning |nsIWeakReference| in the first place.  
   
+</pre>

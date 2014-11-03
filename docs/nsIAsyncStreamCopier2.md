@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### init(aSource, aSink, aTarget, aChunkSize, aCloseSource, aCloseSink) ###
-  
+<pre>  
 Initialize the stream copier.  
   
 If neither the source nor the sink are buffered, buffering will  
@@ -36,7 +36,7 @@ be automatically added to the sink.
        true if aSink should be closed after copying (this is generally  
        the desired behavior).  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -86,7 +86,7 @@ be automatically added to the sink.
 </table>
 
 ### asyncCopy(aObserver, aObserverContext) ###
-  
+<pre>  
 asyncCopy triggers the start of the copy.  The observer will be notified  
 when the copy completes.  
   
@@ -95,7 +95,7 @@ when the copy completes.
 @param aObserverContext  
        passed to observer methods.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

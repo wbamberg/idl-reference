@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onCompletion(aStatus, aLivemark) ###
-  
+<pre>  
 Invoked when a livemark is added, removed or retrieved.  
   
 @param aStatus  
@@ -19,7 +19,7 @@ Invoked when a livemark is added, removed or retrieved.
 @param aLivemark  
        A mozILivemark object representing the livemark, or null on removal.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

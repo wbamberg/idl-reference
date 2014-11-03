@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### saveReceivedMessage(aMessage, aCallback) ###
-  
+<pre>  
 |aMessage| Object: should contain the following properties for internal use:  
   - |type| DOMString: "sms" or "mms"  
   - |timestamp| Number: the timestamp of received message  
@@ -29,9 +29,9 @@ layout: default
     - |receivers| DOMString Array: the phone numbers of receivers  
     - |phoneNumber| DOMString: [optional] my own phone number.  
   
-
+</pre>
 ### saveSendingMessage(aMessage, aCallback) ###
-  
+<pre>  
 |aMessage| Object: should contain the following properties for internal use:  
   - |type| DOMString: "sms" or "mms"  
   - |sender| DOMString: the phone number of sender  
@@ -45,9 +45,9 @@ layout: default
   - If |type| == "mms", we also need:  
     - |receivers| DOMString Array: the phone numbers of receivers  
   
-
+</pre>
 ### setMessageDeliveryByMessageId(aMessageId, aReceiver, aDelivery, aDeliveryStatus, aEnvelopeId, aCallback) ###
-  
+<pre>  
 |aMessageId| Number: the message's DB record ID.  
 |aReceiver| DOMString: the phone number of receiver (for MMS; can be null).  
 |aDelivery| DOMString: the new delivery value to update (can be null).  
@@ -55,44 +55,44 @@ layout: default
 |aEnvelopeId| DOMString: the "message-id" specified in the MMS PDU headers.  
 |aCallback| nsIRilMobileMessageDatabaseCallback: an optional callback.  
   
-
+</pre>
 ### setMessageDeliveryStatusByEnvelopeId(aEnvelopeId, aReceiver, aDeliveryStatus, aCallback) ###
-  
+<pre>  
 |aEnvelopeId| DOMString: the "message-id" specified in the MMS PDU headers.  
 |aReceiver| DOMString: the phone number of receiver (for MMS; can be null).  
 |aDeliveryStatus| DOMString: the new delivery status to be updated (can be null).  
 |aCallback| nsIRilMobileMessageDatabaseCallback: an optional callback.  
   
-
+</pre>
 ### setMessageReadStatusByEnvelopeId(aEnvelopeId, aReceiver, aReadStatus, aCallback) ###
-  
+<pre>  
 |aEnvelopeId| DOMString: the "message-id" specified in the MMS PDU headers.  
 |aReceiver| DOMString: the phone number of receiver (for MMS; can be null).  
 |aReadStatus| DOMString: the new read status to be updated.  
 |aCallback| nsIRilMobileMessageDatabaseCallback: an optional callback.  
   
-
+</pre>
 ### getMessageRecordById(aMessageId, aCallback) ###
-  
+<pre>  
 |aMessageId| Number: the message's DB record ID.  
 |aCallback| nsIRilMobileMessageDatabaseRecordCallback: a callback which  
   takes result flag, message record and domMessage as parameters.  
   
-
+</pre>
 ### getMessageRecordByTransactionId(aTransactionId, aCallback) ###
-  
+<pre>  
 |aTransactionId| DOMString: the transaction ID of MMS PDU.  
 |aCallback| nsIRilMobileMessageDatabaseRecordCallback: a callback which  
   takes result flag and message record as parameters.  
   
-
+</pre>
 ### translateCrErrorToMessageCallbackError(aCrError) ###
-  
+<pre>  
 |aCrError| nsresult: the NS_ERROR defined in Components.results.  
   
 @returns the error code defined in nsIMobileMessageCallback  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -105,8 +105,9 @@ layout: default
 </table>
 
 ### saveSmsSegment(aSmsSegment, aCallback) ###
-  
+<pre>  
 |aSmsSegment| jsval: Decoded Single SMS PDU.  
 |aCallback| nsIRilMobileMessageDatabaseConcatenationCallback: a callback which  
   takes result flag, and complete mesage as parameters.  
   
+</pre>

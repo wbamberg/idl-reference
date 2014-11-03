@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIWebVTTListener #
-  
+<pre>  
 Listener for a JS WebVTT parser (vtt.js).  
   
-
+</pre>
 ## Methods ##
 
 ### onCue(cue) ###
-  
+<pre>  
 Is called when the WebVTTParser successfully parses a WebVTT cue.  
   
 @param cue An object representing the data of a parsed WebVTT cue.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -32,13 +32,13 @@ Is called when the WebVTTParser successfully parses a WebVTT cue.
 </table>
 
 ### onRegion(region) ###
-  
+<pre>  
 Is called when the WebVTT parser successfully parses a WebVTT region.  
   
 @param region An object representing the data of a parsed  
               WebVTT region.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -53,12 +53,12 @@ Is called when the WebVTT parser successfully parses a WebVTT region.
 </table>
 
 ### onParsingError(errorCode) ###
-  
+<pre>  
 Is called when the WebVTT parser encounters a parsing error.  
   
 @param error The error code of the ParserError the occured.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

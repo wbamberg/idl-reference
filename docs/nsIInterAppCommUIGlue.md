@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIInterAppCommUIGlue #
-  
+<pre>  
 To be implemented by @mozilla.org/dom/apps/inter-app-comm-ui-glue;1  
   
-
+</pre>
 ## Methods ##
 
 ### selectApps(callerID, pubAppManifestURL, keyword, appsToSelect) ###
-  
+<pre>  
 This method is to notify the prompt to let the user select some of the  
 IAC-eligible apps.  
   
@@ -25,7 +25,7 @@ IAC-eligible apps.
   
 Returns a promise.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # nsILocaleService #
-  
+<pre>  
 The Locale service interface. This is a singleton object, and should be  
 obtained from the <tt>nsServiceManager</tt>.  
   
-
+</pre>
 ## Methods ##
 
 ### newLocale(aLocale) ###
-  
+<pre>  
 Create a new nsILocale from a locale string.  
   
 @param aLocale  
        A locale code as described in nsILocale.  
 @return A nsILocale representing the given locale.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -46,12 +46,12 @@ Create a new nsILocale from a locale string.
 </table>
 
 ### getSystemLocale() ###
-  
+<pre>  
 Get the user preference for locale from the operating system.  
   
 @return User's OS setting for preferred locale.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -64,7 +64,7 @@ Get the user preference for locale from the operating system.
 </table>
 
 ### getApplicationLocale() ###
-  
+<pre>  
 Get the user preference for locale from the operating system.  
   
 NOTE: This has nothing to do with the locale used for localization of  
@@ -73,7 +73,7 @@ similar to getSystemLocale.
   
 @return User's OS setting for preferred locale.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -86,7 +86,7 @@ similar to getSystemLocale.
 </table>
 
 ### getLocaleFromAcceptLanguage(acceptLanguage) ###
-  
+<pre>  
 Get the most preferred locale from a list of locale preferences.  
   
 @param acceptLanguage  
@@ -95,7 +95,7 @@ Get the most preferred locale from a list of locale preferences.
 @return The most preferred locale according to the acceptLanguage  
         parameter.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -122,7 +122,7 @@ Get the most preferred locale from a list of locale preferences.
 </table>
 
 ### getLocaleComponentForUserAgent() ###
-  
+<pre>  
 Get the user preference for locale from the operating system.  
   
 NOTE: This has nothing to do with any HTTP User-Agent. This method  
@@ -131,7 +131,7 @@ returns the same as getSystemLocale, but as a string.
 @return User's OS setting for preferred locale in the format described  
         in nsILocale.  
   
-
+</pre>
 #### Returns ####
 
 <table>

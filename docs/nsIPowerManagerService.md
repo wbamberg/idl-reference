@@ -6,27 +6,27 @@ layout: default
 </div>
 
 # nsIPowerManagerService #
-  
+<pre>  
 For use with non-content code.  
   
-
+</pre>
 ## Methods ##
 
 ### powerOff() ###
-  
+<pre>  
 This API will power off the machine.  
   
-
+</pre>
 ### reboot() ###
-  
+<pre>  
 This API will completely shut down and boot the machine.  
   
-
+</pre>
 ### restart() ###
-  
+<pre>  
 This API will restart the Gecko processes without powering off the machine.  
   
-
+</pre>
 ### addWakeLockListener(aListener) ###
 
 ### removeWakeLockListener(aListener) ###
@@ -34,8 +34,9 @@ This API will restart the Gecko processes without powering off the machine.
 ### getWakeLockState(aTopic) ###
 
 ### newWakeLock(aTopic, aWindow) ###
-  
+<pre>  
 Return a wake lock (MozWakeLock) object of aTopic associated with aWindow.  
 A wake lock without associated window, e.g. used in chrome, is  
 always considered invisible.  
   
+</pre>

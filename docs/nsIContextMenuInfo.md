@@ -6,33 +6,33 @@ layout: default
 </div>
 
 # nsIContextMenuInfo #
-  
+<pre>  
 nsIContextMenuInfo  
   
 A helper object for implementors of nsIContextMenuListener2.  
   
-
+</pre>
 ## Attributes ##
 
 ### mouseEvent ###
-  
+<pre>  
 The DOM context menu event.  
   
-
+</pre>
 ### targetNode ###
-  
+<pre>  
 The DOM node most relevant to the context.  
   
-
+</pre>
 ### associatedLink ###
-  
+<pre>  
 Given the <CODE>CONTEXT_LINK</CODE> flag, <CODE>targetNode</CODE> may not  
 nescesarily be a link. This returns the anchor from <CODE>targetNode</CODE>  
 if it has one or that of its nearest ancestor if it does not.  
   
-
+</pre>
 ### imageContainer ###
-  
+<pre>  
 Given the <CODE>CONTEXT_IMAGE</CODE> flag, these methods can be  
 used in order to get the image for viewing, saving, or for the clipboard.  
   
@@ -40,11 +40,11 @@ used in order to get the image for viewing, saving, or for the clipboard.
 image was found, or NS_ERROR_NULL_POINTER if an internal error occurs where we think there   
 is an image, but for some reason it cannot be returned.  
   
-
+</pre>
 ### imageSrc ###
 
 ### backgroundImageContainer ###
-  
+<pre>  
 Given the <CODE>CONTEXT_BACKGROUND_IMAGE</CODE> flag, these methods can be  
 used in order to get the image for viewing, saving, or for the clipboard.  
   
@@ -52,5 +52,5 @@ used in order to get the image for viewing, saving, or for the clipboard.
 image was found, or NS_ERROR_NULL_POINTER if an internal error occurs where we think there is a   
 background image, but for some reason it cannot be returned.  
   
-
+</pre>
 ### backgroundImageSrc ###

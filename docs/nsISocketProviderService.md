@@ -6,13 +6,13 @@ layout: default
 </div>
 
 # nsISocketProviderService #
-  
+<pre>  
 nsISocketProviderService  
   
 Provides a mapping between a socket type and its associated socket provider  
 instance.  One could also use the service manager directly.  
   
-
+</pre>
 ## Methods ##
 
 ### getSocketProvider(socketType) ###

@@ -10,11 +10,11 @@ layout: default
 ## Methods ##
 
 ### showInlineTableEditingUI(aCell) ###
-  
+<pre>  
 Shows inline table editing UI around a table cell  
 @param aCell [IN] a DOM Element being a table cell, td or th  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -28,17 +28,17 @@ Shows inline table editing UI around a table cell
 </table>
 
 ### hideInlineTableEditingUI() ###
-  
+<pre>  
 Hide all inline table editing UI  
   
-
+</pre>
 ### doInlineTableEditingAction(aUIAnonymousElement) ###
-  
+<pre>  
 Modifies the table containing the selection according to the  
 activation of an inline table editing UI element  
 @param aUIAnonymousElement [IN] the inline table editing UI element  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -52,16 +52,17 @@ activation of an inline table editing UI element
 </table>
 
 ### refreshInlineTableEditingUI() ###
-  
+<pre>  
 Refresh already visible inline table editing UI  
   
-
+</pre>
 ## Attributes ##
 
 ### inlineTableEditingEnabled ###
-  
+<pre>  
 boolean indicating if inline table editing is enabled in the editor.  
 When inline table editing is enabled, and when the selection is  
 contained in a table cell, special buttons allowing to add/remove  
 a line/column are available on the cell's border.  
   
+</pre>

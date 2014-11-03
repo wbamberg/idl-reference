@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINetworkManager #
-  
+<pre>  
 Manage network interfaces.  
   
-
+</pre>
 ## Methods ##
 
 ### registerNetworkInterface(network) ###
-  
+<pre>  
 Register the given network interface with the network manager.  
   
 Consumers will be notified with the 'network-interface-registered'  
@@ -24,7 +24,7 @@ Throws if there's already an interface registered with the same network id.
 @param network  
        Network interface to register.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -38,7 +38,7 @@ Throws if there's already an interface registered with the same network id.
 </table>
 
 ### updateNetworkInterface(network) ###
-  
+<pre>  
 Update the routes and DNSes according the state of the given network.  
   
 Consumers will be notified with the 'network-connection-state-changed'  
@@ -50,7 +50,7 @@ registered.
 @param network  
        Network interface to update.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -64,7 +64,7 @@ registered.
 </table>
 
 ### unregisterNetworkInterface(network) ###
-  
+<pre>  
 Unregister the given network interface from the network manager.  
   
 Consumers will be notified with the 'network-interface-unregistered'  
@@ -76,7 +76,7 @@ registered.
 @param network  
        Network interface to unregister.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -90,7 +90,7 @@ registered.
 </table>
 
 ### overrideActive(network) ###
-  
+<pre>  
 Override the default behaviour for preferredNetworkType and route  
 all network traffic through the the specified interface.  
   
@@ -101,7 +101,7 @@ the 'network-active-changed' observer notification.
        Network to route all network traffic to. If this is null,  
        a previous override is canceled.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -116,7 +116,7 @@ the 'network-active-changed' observer notification.
 </table>
 
 ### setWifiTethering(enabled, networkInterface, config, callback) ###
-  
+<pre>  
 Enable or disable Wifi Tethering  
   
 @param enabled  
@@ -128,7 +128,7 @@ Enable or disable Wifi Tethering
 @param callback  
        Callback function used to report status to WifiManager.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -160,7 +160,7 @@ Enable or disable Wifi Tethering
 </table>
 
 ### addHostRoute(network, host) ###
-  
+<pre>  
 Add host route to the specified network into routing table.  
   
 @param network  
@@ -172,7 +172,7 @@ Add host route to the specified network into routing table.
 @return a Promise  
         resolved if added; rejected, otherwise.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -205,7 +205,7 @@ Add host route to the specified network into routing table.
 </table>
 
 ### removeHostRoute(network, host) ###
-  
+<pre>  
 Remove host route to the specified network from routing table.  
   
 @param network  
@@ -217,7 +217,7 @@ Remove host route to the specified network from routing table.
 @return a Promise  
         resolved if removed; rejected, otherwise.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -252,15 +252,15 @@ Remove host route to the specified network from routing table.
 ## Attributes ##
 
 ### networkInterfaces ###
-  
+<pre>  
 Object containing all known network connections, keyed by their  
 network id. Network id is composed of a sub-id + '-' + network  
 type. For mobile network types, sub-id is 'ril' + service id; for  
 non-mobile network types, sub-id is always 'device'.  
   
-
+</pre>
 ### preferredNetworkType ###
-  
+<pre>  
 The preferred network type. One of the  
 nsINetworkInterface::NETWORK_TYPE_* constants.  
   
@@ -268,11 +268,12 @@ This attribute is used for setting default route to favor
 interfaces with given type.  This can be overriden by calling  
 overrideDefaultRoute().  
   
-
+</pre>
 ### active ###
-  
+<pre>  
 The network interface handling all data traffic.  
   
 When this changes, the 'network-active-changed' observer  
 notification is dispatched.  
   
+</pre>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onRedirectVerifyCallback(result) ###
-  
+<pre>  
 Complement to nsIChannelEventSink asynchronous callback. The result of  
 the redirect decision is passed through this callback.  
   
@@ -18,7 +18,7 @@ the redirect decision is passed through this callback.
    Result of the redirect veto decision. If FAILED the redirect has been  
    vetoed. If SUCCEEDED the redirect has been allowed by all consumers.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

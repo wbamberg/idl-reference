@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIExpandedPrincipal #
-  
+<pre>  
 If nsSystemPrincipal is too risky to use, but we want a principal to access  
 more than one origin, nsExpandedPrincipals letting us define an array of  
 principals it subsumes. So script with an nsExpandedPrincipals will gain  
@@ -17,12 +17,13 @@ It is added for jetpack content-scripts to let them interact with the
 content and a well defined set of other domains, without the risk of  
 leaking out a system principal to the content. See: Bug 734891  
   
-
+</pre>
 ## Attributes ##
 
 ### whiteList ###
-  
+<pre>  
 An array of principals that the expanded principal subsumes.  
 Note: this list is not reference counted, it is shared, so  
 should not be changed and should only be used ephemerally.  
   
+</pre>

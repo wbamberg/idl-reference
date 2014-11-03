@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### round1(aSignerID, aGX1, aGV1, aR1, aGX2, aGV2, aR2) ###
-  
+<pre>  
 Perform first round of the JPAKE exchange.  
   
 @param aSignerID  
@@ -30,7 +30,7 @@ Perform first round of the JPAKE exchange.
 @param aR2  
        Schnorr signature value r2 = v2 - x2 * h, in hex representation.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -82,7 +82,7 @@ Perform first round of the JPAKE exchange.
 </table>
 
 ### round2(aPeerID, aPIN, aGX3, aGV3, aR3, aGX4, aGV4, aR4, aA, aGVA, aRA) ###
-  
+<pre>  
 Perform second round of the JPAKE exchange.  
   
 @param aPeerID  
@@ -111,7 +111,7 @@ Perform second round of the JPAKE exchange.
 @param aRA  
        Schnorr signature value ra = va - xa * h, in hex representation.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -188,7 +188,7 @@ Perform second round of the JPAKE exchange.
 </table>
 
 ### final(aB, aGVB, aRB, aHkdfInfo, aAES256Key, aHMAC256Key) ###
-  
+<pre>  
 Perform the final step of the JPAKE exchange. This will compute  
 the key and expand the key to two keys, an AES256 encryption key  
 and a 256 bit HMAC key. It returns a key confirmation value  
@@ -206,7 +206,7 @@ and a 256 bit HMAC key. It returns a key confirmation value
 @param aHMAC256Key  
        The 256 bit HMAC key, in base64 representation.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

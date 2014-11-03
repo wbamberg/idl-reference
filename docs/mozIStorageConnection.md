@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # mozIStorageConnection #
-  
+<pre>  
 mozIStorageConnection represents a database connection attached to  
 a specific file or to the in-memory data storage.  It is the  
 primary interface for interacting with a database, including  
@@ -17,11 +17,11 @@ errors.
   
 @threadsafe  
   
-
+</pre>
 ## Methods ##
 
 ### close() ###
-  
+<pre>  
 Closes a database connection.  Callers must finalize all statements created  
 for this connection prior to calling this method.  It is illegal to use  
 call this method if any asynchronous statements have been executed on this  
@@ -32,9 +32,9 @@ connection.
 @throws NS_ERROR_UNEXPECTED  
         If is called on a thread other than the one that opened it.  
   
-
+</pre>
 ### clone(aReadOnly) ###
-  
+<pre>  
 Clones a database connection and makes the clone read only if needed.  
   
 @param aReadOnly  
@@ -61,7 +61,7 @@ Clones a database connection and makes the clone read only if needed.
        - wal_autocheckpoint  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -87,7 +87,7 @@ Clones a database connection and makes the clone read only if needed.
 </table>
 
 ### createStatement(aSQLStatement) ###
-  
+<pre>  
 Create a mozIStorageStatement for the given SQL expression.  The  
 expression may use ? to indicate sequential numbered arguments,  
 ?1, ?2 etc. to indicate specific numbered arguments or :name and   
@@ -97,7 +97,7 @@ $var to indicate named arguments.
        The SQL statement to execute.  
 @return a new mozIStorageStatement  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -122,12 +122,12 @@ $var to indicate named arguments.
 </table>
 
 ### executeSimpleSQL(aSQLStatement) ###
-  
+<pre>  
 Execute a SQL expression, expecting no arguments.  
   
 @param aSQLStatement  The SQL statement to execute  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -141,14 +141,14 @@ Execute a SQL expression, expecting no arguments.
 </table>
 
 ### tableExists(aTableName) ###
-  
+<pre>  
 Check if the given table exists.  
   
 @param aTableName  
        The table to check  
 @return TRUE if table exists, FALSE otherwise.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -173,13 +173,13 @@ Check if the given table exists.
 </table>
 
 ### indexExists(aIndexName) ###
-  
+<pre>  
 Check if the given index exists.  
   
 @param aIndexName   The index to check  
 @return TRUE if the index exists, FALSE otherwise.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -204,29 +204,29 @@ Check if the given index exists.
 </table>
 
 ### beginTransaction() ###
-  
+<pre>  
 Begin a new transaction.  sqlite default transactions are deferred.  
 If a transaction is active, throws an error.  
   
-
+</pre>
 ### beginTransactionAs(transactionType) ###
 
 ### commitTransaction() ###
-  
+<pre>  
 Commits the current transaction.  If no transaction is active,  
 @throws NS_ERROR_UNEXPECTED.  
 @throws NS_ERROR_NOT_INITIALIZED.  
   
-
+</pre>
 ### rollbackTransaction() ###
-  
+<pre>  
 Rolls back the current transaction.  If no transaction is active,  
 @throws NS_ERROR_UNEXPECTED.  
 @throws NS_ERROR_NOT_INITIALIZED.  
   
-
+</pre>
 ### createTable(aTableName, aTableSchema) ###
-  
+<pre>  
 Create the table with the given name and schema.  
   
 If the table already exists, NS_ERROR_FAILURE is thrown.  
@@ -244,7 +244,7 @@ the same as what is specified, but that doesn't happen currently.)
         If the table already exists or could not be created for any other  
         reason.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -266,7 +266,7 @@ the same as what is specified, but that doesn't happen currently.)
 </table>
 
 ### setGrowthIncrement(aIncrement, aDatabaseName) ###
-  
+<pre>  
 Controls SQLITE_FCNTL_CHUNK_SIZE setting in sqlite. This helps avoid fragmentation  
 by growing/shrinking the database file in SQLITE_FCNTL_CHUNK_SIZE increments. To  
 conserve memory on systems short on storage space, this function will have no effect  
@@ -280,7 +280,7 @@ on mobile devices or if less than 500MiB of space is left available.
 @throws NS_ERROR_FILE_TOO_BIG  
         If the system is short on storage space.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -303,7 +303,7 @@ on mobile devices or if less than 500MiB of space is left available.
 </table>
 
 ### enableModule(aModuleName) ###
-  
+<pre>  
 Enable a predefined virtual table implementation.  
   
 @param aModuleName  
@@ -312,7 +312,7 @@ Enable a predefined virtual table implementation.
 @throws NS_ERROR_FAILURE  
         For unknown module names.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -328,58 +328,58 @@ Enable a predefined virtual table implementation.
 ## Attributes ##
 
 ### defaultPageSize ###
-  
+<pre>  
 The default size for SQLite database pages used by mozStorage for new  
 databases.  
   
-
+</pre>
 ### connectionReady ###
-  
+<pre>  
 Indicates if the connection is open and ready to use.  This will be false  
 if the connection failed to open, or it has been closed.  
   
-
+</pre>
 ### lastInsertRowID ###
-  
+<pre>  
 lastInsertRowID returns the row ID from the last INSERT  
 operation.  
   
-
+</pre>
 ### affectedRows ###
-  
+<pre>  
 affectedRows returns the number of database rows that were changed or  
 inserted or deleted by last operation.  
   
-
+</pre>
 ### lastError ###
-  
+<pre>  
 The last error SQLite error code.  
   
-
+</pre>
 ### lastErrorString ###
-  
+<pre>  
 The last SQLite error as a string (in english, straight from the  
 sqlite library).  
   
-
+</pre>
 ### schemaVersion ###
-  
+<pre>  
 The schema version of the database.  This should not be used until the   
 database is ready.  The schema will be reported as zero if it is not set.  
   
-
+</pre>
 ### transactionInProgress ###
-  
+<pre>  
 Returns true if a transaction is active on this connection.  
   
-
+</pre>
 ## Constants ##
 
 ### TRANSACTION_DEFERRED ###
-  
+<pre>  
 Begins a new transaction with the given type.  
   
-
+</pre>
 ### TRANSACTION_IMMEDIATE ###
 
 ### TRANSACTION_EXCLUSIVE ###

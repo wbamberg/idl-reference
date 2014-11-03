@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### getMimeTypeFromExtension(extension) ###
-MIME registry methods ***/  
-
+<pre>MIME registry methods ***/  
+</pre>
 ### getAppForMimeType(mimeType) ###
 
 ### getDescriptionForMimeType(mimeType) ###
 
 ### showURI(uri) ###
-Misc. methods ***/  
-
+<pre>Misc. methods ***/  
+</pre>
 ### showURIForInput(uri) ###

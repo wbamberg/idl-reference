@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIHttpAuthenticator #
-  
+<pre>  
 nsIHttpAuthenticator  
   
 Interface designed to allow for pluggable HTTP authentication modules.  
@@ -17,11 +17,11 @@ Implementations are registered under the ContractID:
 where <auth-scheme> is the lower-cased value of the authentication scheme  
 found in the server challenge per the rules of RFC 2617.  
   
-
+</pre>
 ## Methods ##
 
 ### challengeReceived(aChannel, aChallenge, aProxyAuth, aSessionState, aContinuationState, aInvalidatesIdentity) ###
-  
+<pre>  
 Upon receipt of a server challenge, this function is called to determine  
 whether or not the current user identity has been rejected.  If true,  
 then the user will be prompted by the channel to enter (or revise) their  
@@ -45,7 +45,7 @@ return value will be ignored, and user prompting will be suppressed.
        return value indicating whether or not to prompt the user for a  
        revised identity.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -91,7 +91,7 @@ return value will be ignored, and user prompting will be suppressed.
 </table>
 
 ### generateCredentials(aChannel, aChallenge, aProxyAuth, aDomain, aUser, aPassword, aSessionState, aContinuationState, aFlags) ###
-  
+<pre>  
 Called to generate the authentication credentials for a particular  
 server/proxy challenge.  This is the value that will be sent back  
 to the server via an Authorization/Proxy-Authorization header.  
@@ -127,7 +127,7 @@ authenticator sets the REUSABLE_CHALLENGE flag.
 @param aFlags  
        authenticator may return one of the generate flags bellow.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -200,70 +200,71 @@ authenticator sets the REUSABLE_CHALLENGE flag.
 ## Attributes ##
 
 ### authFlags ###
-  
+<pre>  
 Flags defining various properties of the authenticator.  
   
-
+</pre>
 ## Constants ##
 
 ### USING_INTERNAL_IDENTITY ###
-  
+<pre>  
 Generate flags  
   
-  
+</pre><pre>  
 Indicates that the authenticator has used an out-of-band or internal  
 source of identity and tells the consumer that it must not cache  
 the returned identity because it might not be valid and would overwrite  
 the cached identity.  See bug 542318 comment 32.  
   
-
+</pre>
 ### REQUEST_BASED ###
-  
+<pre>  
 A request based authentication scheme only authenticates an individual  
 request (or a set of requests under the same authentication domain as  
 defined by RFC 2617).  BASIC and DIGEST are request based authentication  
 schemes.  
   
-
+</pre>
 ### CONNECTION_BASED ###
-  
+<pre>  
 A connection based authentication scheme authenticates an individual  
 connection.  Multiple requests may be issued over the connection without  
 repeating the authentication steps.  Connection based authentication  
 schemes can associate state with the connection being authenticated via  
 the aContinuationState parameter (see generateCredentials).  
   
-
+</pre>
 ### REUSABLE_CREDENTIALS ###
-  
+<pre>  
 The credentials returned from generateCredentials may be reused with any  
 other URLs within "the protection space" as defined by RFC 2617 section  
 1.2.  If this flag is not set, then generateCredentials must be called  
 for each request within the protection space.  REUSABLE_CREDENTIALS  
 implies REUSABLE_CHALLENGE.  
   
-
+</pre>
 ### REUSABLE_CHALLENGE ###
-  
+<pre>  
 A challenge may be reused to later generate credentials in anticipation  
 of a duplicate server challenge for URLs within "the protection space"  
 as defined by RFC 2617 section 1.2.  
   
-
+</pre>
 ### IDENTITY_IGNORED ###
-  
+<pre>  
 This flag indicates that the identity of the user is not required by  
 this authentication scheme.  
   
-
+</pre>
 ### IDENTITY_INCLUDES_DOMAIN ###
-  
+<pre>  
 This flag indicates that the identity of the user includes a domain  
 attribute that the user must supply.  
   
-
+</pre>
 ### IDENTITY_ENCRYPTED ###
-  
+<pre>  
 This flag indicates that the identity will be sent encrypted. It does  
 not make sense to combine this flag with IDENTITY_IGNORED.  
   
+</pre>

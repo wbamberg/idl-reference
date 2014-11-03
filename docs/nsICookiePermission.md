@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsICookiePermission #
-  
+<pre>  
 An interface to test for cookie permissions  
   
-
+</pre>
 ## Methods ##
 
 ### setAccess(aURI, aAccess) ###
-  
+<pre>  
 setAccess  
   
 this method is called to block cookie access for the given URI.  this  
@@ -25,7 +25,7 @@ the same host name).
 @param aAccess  
        the new cookie access for the URI.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -45,7 +45,7 @@ the same host name).
 </table>
 
 ### canAccess(aURI, aChannel) ###
-  
+<pre>  
 canAccess  
   
 this method is called to test whether or not the given URI/channel may  
@@ -60,7 +60,7 @@ access the cookie database, either to set or get cookies.
         ACCESS_DEFAULT, ACCESS_ALLOW, ACCESS_DENY, or  
         ACCESS_ALLOW_FIRST_PARTY_ONLY  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -93,7 +93,7 @@ access the cookie database, either to set or get cookies.
 </table>
 
 ### canSetCookie(aURI, aChannel, aCookie, aIsSession, aExpiry) ###
-  
+<pre>  
 canSetCookie  
   
 this method is called to test whether or not the given URI/channel may  
@@ -120,7 +120,7 @@ downgrade a cookie to session-only if it fails to meet certain criteria.
   
 @return true if the cookie can be set.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -175,22 +175,22 @@ downgrade a cookie to session-only if it fails to meet certain criteria.
 ## Constants ##
 
 ### ACCESS_DEFAULT ###
-  
+<pre>  
 nsCookieAccess values  
   
-
+</pre>
 ### ACCESS_ALLOW ###
 
 ### ACCESS_DENY ###
 
 ### ACCESS_SESSION ###
-  
+<pre>  
 additional values for nsCookieAccess which may not match  
 nsIPermissionManager. Keep 3-7 available to allow nsIPermissionManager to  
 add values without colliding. ACCESS_SESSION is not directly returned by  
 any methods on this interface.  
   
-
+</pre>
 ### ACCESS_ALLOW_FIRST_PARTY_ONLY ###
 
 ### ACCESS_LIMIT_THIRD_PARTY ###

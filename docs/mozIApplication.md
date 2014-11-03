@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # mozIApplication #
-  
+<pre>  
 We expose Gecko-internal helpers related to "web apps" through this  
 sub-interface.  
   
-
+</pre>
 ## Methods ##
 
 ### hasPermission(permission) ###
 
 ### hasWidgetPage(pageURL) ###
-  
+<pre>  
  Return true if this app can be a widget and  
  its |widgetPages| contains |page|  
   
-
+</pre>
 ## Attributes ##
 
 ### appStatus ###

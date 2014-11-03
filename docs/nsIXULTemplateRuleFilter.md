@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIXULTemplateRuleFilter #
-  
+<pre>  
 A rule filter may be used to add additional filtering of results to a rule.  
 The filter is used to further reject results from matching the template's  
 rules, beyond what the template syntax can do itself, thus allowing for  
@@ -16,11 +16,11 @@ syntax within the template.
 Only one filter may apply to each rule within the template and may be  
 assigned using the template builder's addRuleFilter method.  
   
-
+</pre>
 ## Methods ##
 
 ### match(aRef, aRule) ###
-  
+<pre>  
 Evaluate a result and return true if the result is accepted by this  
 filter, or false if it is rejected. Accepted results will have output  
 generated for them for the rule. Rejected results will not, but they  
@@ -31,7 +31,7 @@ may still match another rule.
   
 @return true if the rule matches  
   
-
+</pre>
 #### Parameters ####
 
 <table>

@@ -10,12 +10,13 @@ layout: default
 ## Methods ##
 
 ### getStringFromName(url, key) ###
-  
+<pre>  
 get the override value for a particular key in a particular  
 string bundle  
   
-
+</pre>
 ### enumerateKeysInBundle(url) ###
-  
+<pre>  
 get all override keys for a given string bundle  
   
+</pre>

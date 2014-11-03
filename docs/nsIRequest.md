@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIRequest #
-  
+<pre>  
 nsIRequest  
   
-
+</pre>
 ## Methods ##
 
 ### isPending() ###
-  
+<pre>  
 Indicates whether the request is pending. nsIRequest::isPending is  
 true when there is an outstanding asynchronous event that will make  
 the request no longer be pending.  Requests do not necessarily start  
@@ -28,7 +28,7 @@ Requests can become pending multiple times during their lifetime.
   OnStopRequest has fired).  
 @note Suspended requests are still considered pending.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -43,7 +43,7 @@ Requests can become pending multiple times during their lifetime.
 </table>
 
 ### cancel(aStatus) ###
-  
+<pre>  
 Cancels the current request.  This will close any open input or  
 output streams and terminate any async requests.  Users should   
 normally pass NS_BINDING_ABORTED, although other errors may also  
@@ -64,7 +64,7 @@ failure code; however, some implementations may allow aStatus to
 be a success code such as NS_OK.  In general, aStatus should be  
 a failure code.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -78,7 +78,7 @@ a failure code.
 </table>
 
 ### suspend() ###
-  
+<pre>  
 Suspends the current request.  This may have the effect of closing  
 any underlying transport (in order to free up resources), although  
 any open streams remain logically opened and will continue delivering  
@@ -92,99 +92,99 @@ may continue to deliver events already posted to an event queue. In
 general, callers should be capable of handling events even after   
 suspending a request.  
   
-
+</pre>
 ### resume() ###
-  
+<pre>  
 Resumes the current request.  This may have the effect of re-opening  
 any underlying transport and will resume the delivery of data to   
 any open streams.  
   
-
+</pre>
 ## Attributes ##
 
 ### name ###
-  
+<pre>  
 The name of the request.  Often this is the URI of the request.  
   
-
+</pre>
 ### status ###
-  
+<pre>  
 The error status associated with the request.  
   
-
+</pre>
 ### loadGroup ###
-  
+<pre>  
 The load group of this request.  While pending, the request is a   
 member of the load group.  It is the responsibility of the request  
 to implement this policy.  
   
-
+</pre>
 ### loadFlags ###
-  
+<pre>  
 The load flags of this request.  Bits 0-15 are reserved.  
   
 When added to a load group, this request's load flags are merged with  
 the load flags of the load group.  
   
-
+</pre>
 ## Constants ##
 
 ### LOAD_REQUESTMASK ###
-  
+<pre>  
 Mask defining the bits reserved for nsIRequest LoadFlags  
   
-
+</pre>
 ### LOAD_NORMAL ###
-**********************************************************************  
+<pre>**********************************************************************  
 Listed below are the various load flags which may be or'd together.  
   
-  
+</pre><pre>  
 No special load flags:  
   
-
+</pre>
 ### LOAD_BACKGROUND ###
-  
+<pre>  
 Do not deliver status notifications to the nsIProgressEventSink and  
 do not block the loadgroup from completing (should this load belong to one).  
 Note: Progress notifications will still be delivered.  
   
-
+</pre>
 ### INHIBIT_PIPELINE ###
-**********************************************************************  
+<pre>**********************************************************************  
 The following flags control the flow of data into the cache.  
   
-  
+</pre><pre>  
  This flag prevents loading of the request with an HTTP pipeline.  
  Generally this is because the resource is expected to take a  
  while to load and may cause head of line blocking problems.  
   
-
+</pre>
 ### INHIBIT_CACHING ###
-  
+<pre>  
 This flag prevents caching of any kind.  It does not, however, prevent  
 cached content from being used to satisfy this request.  
   
-
+</pre>
 ### INHIBIT_PERSISTENT_CACHING ###
-  
+<pre>  
 This flag prevents caching on disk (or other persistent media), which  
 may be needed to preserve privacy.  For HTTPS, this flag is set auto-  
 matically.  
   
-
+</pre>
 ### LOAD_BYPASS_CACHE ###
-**********************************************************************  
+<pre>**********************************************************************  
 The following flags control what happens when the cache contains data  
 that could perhaps satisfy this request.  They are listed in descending  
 order of precidence.  
   
-  
+</pre><pre>  
 Force an end-to-end download of content data from the origin server.  
 This flag is used for a shift-reload.  
   
-
+</pre>
 ### LOAD_FROM_CACHE ###
-  
+<pre>  
 Attempt to force a load from the cache, bypassing ALL validation logic  
 (note: this is stronger than VALIDATE_NEVER, which still validates for  
 certain conditions).  
@@ -197,9 +197,9 @@ This flag is used when browsing via history.  It is not recommended for
 normal browsing as it may likely violate reasonable assumptions made by  
 the server and confuse users.  
   
-
+</pre>
 ### VALIDATE_ALWAYS ###
-  
+<pre>  
 The following flags control the frequency of cached content validation  
 when neither LOAD_BYPASS_CACHE or LOAD_FROM_CACHE are set.  By default,  
 cached content is automatically validated if necessary before reuse.  
@@ -223,20 +223,21 @@ NOTE TO IMPLEMENTORS:
   be taken from a cache.  Breaking this requirement could result in   
   incorrect and potentially undesirable side-effects.  
   
-
+</pre>
 ### VALIDATE_NEVER ###
 
 ### VALIDATE_ONCE_PER_SESSION ###
 
 ### LOAD_ANONYMOUS ###
-  
+<pre>  
 When set, this flag indicates that no user-specific data should be added  
 to the request when opened. This means that things like authorization  
 tokens or cookie headers should not be added.  
   
-
+</pre>
 ### LOAD_FRESH_CONNECTION ###
-  
+<pre>  
 When set, this flag indicates that caches of network connections,  
 particularly HTTP persistent connections, should not be used.  
   
+</pre>

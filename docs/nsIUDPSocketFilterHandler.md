@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIUDPSocketFilterHandler #
-  
+<pre>  
 Factory of a specified filter.  
   
-
+</pre>
 ## Methods ##
 
 ### newFilter() ###

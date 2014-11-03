@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIDNSListener #
-  
+<pre>  
 nsIDNSListener  
   
-
+</pre>
 ## Methods ##
 
 ### onLookupComplete(aRequest, aRecord, aStatus) ###
-  
+<pre>  
 called when an asynchronous host lookup completes.  
   
 @param aRequest  
@@ -24,7 +24,7 @@ called when an asynchronous host lookup completes.
 @param aStatus  
        if the lookup failed, this parameter gives the reason.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

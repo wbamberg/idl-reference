@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsITelephonyCallback #
-  
+<pre>  
 A callback interface for handling asynchronous response.  
   
-
+</pre>
 ## Methods ##
 
 ### notifySuccess() ###

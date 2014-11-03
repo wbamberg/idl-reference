@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsIEnvironment #
-  
+<pre>  
 Scriptable access to the current process environment.  
   
   
-
+</pre>
 ## Methods ##
 
 ### set(aName, aValue) ###
-  
+<pre>  
 Set the value of an environment variable.  
   
 @param aName   the variable name to set.  
 @param aValue  the value to set.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -40,7 +40,7 @@ Set the value of an environment variable.
 </table>
 
 ### get(aName) ###
-  
+<pre>  
 Get the value of an environment variable.  
   
 @param aName   the variable name to retrieve.  
@@ -50,7 +50,7 @@ Get the value of an environment variable.
                |exists()| to probe whether the env variable exists  
                or not.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -79,7 +79,7 @@ Get the value of an environment variable.
 </table>
 
 ### exists(aName) ###
-  
+<pre>  
 Check the existence of an environment variable.  
 This method checks whether an environment variable is present in  
 the environment or not.  
@@ -97,7 +97,7 @@ or not.
                PR_TRUE. If the variable was not defined in the  
                environment PR_FALSE will be returned.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

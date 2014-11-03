@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIEmbeddingSiteWindow #
-  
+<pre>  
 The nsIEmbeddingSiteWindow is implemented by the embedder to provide  
 Gecko with the means to call up to the host to resize the window,  
 hide or show it and set/get its title.  
   
-
+</pre>
 ## Methods ##
 
 ### setDimensions(flags, x, y, cx, cy) ###
-  
+<pre>  
 Sets the dimensions for the window; the position & size. The  
 flags to indicate what the caller wants to set and whether the size  
 refers to the inner or outer area. The inner area refers to just  
@@ -39,7 +39,7 @@ surrounding chrome, window frame, title bar, and so on.
 @see DIM_FLAGS_SIZE_OUTER  
 @see DIM_FLAGS_SIZE_INNER  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -92,7 +92,7 @@ surrounding chrome, window frame, title bar, and so on.
 </table>
 
 ### getDimensions(flags, x, y, cx, cy) ###
-  
+<pre>  
 Gets the dimensions of the window. The caller may pass  
 <CODE>nullptr</CODE> for any value it is uninterested in receiving.  
   
@@ -107,7 +107,7 @@ Gets the dimensions of the window. The caller may pass
 @see DIM_FLAGS_SIZE_OUTER  
 @see DIM_FLAGS_SIZE_INNER  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -145,29 +145,29 @@ Gets the dimensions of the window. The caller may pass
 </table>
 
 ### setFocus() ###
-  
+<pre>  
 Give the window focus.  
   
-
+</pre>
 ### blur() ###
-  
+<pre>  
 Blur the window. This should unfocus the window and send an onblur event.  
   
-
+</pre>
 ## Attributes ##
 
 ### visibility ###
-  
+<pre>  
 Visibility of the window.  
   
-
+</pre>
 ### title ###
-  
+<pre>  
 Title of the window.  
   
-
+</pre>
 ### siteWindow ###
-  
+<pre>  
 Native window for the site's window. The implementor should copy the  
 native window object into the address supplied by the caller. The  
 type of the native window that the address refers to is  platform  
@@ -179,20 +179,20 @@ and OS specific as follows:
   <li>On GTK this is a <CODE>GtkWidget*</CODE>.</li>  
 </ul>  
   
-
+</pre>
 ## Constants ##
 
 ### DIM_FLAGS_POSITION ###
-  
+<pre>  
 Flag indicates that position of the top left corner of the outer area  
 is required/specified.  
   
 @see setDimensions  
 @see getDimensions  
   
-
+</pre>
 ### DIM_FLAGS_SIZE_INNER ###
-  
+<pre>  
 Flag indicates that the size of the inner area is required/specified.  
   
 @note The inner and outer flags are mutually exclusive and it is  
@@ -202,12 +202,13 @@ Flag indicates that the size of the inner area is required/specified.
 @see getDimensions  
 @see DIM_FLAGS_SIZE_OUTER  
   
-
+</pre>
 ### DIM_FLAGS_SIZE_OUTER ###
-  
+<pre>  
 Flag indicates that the size of the outer area is required/specified.  
   
 @see setDimensions  
 @see getDimensions  
 @see DIM_FLAGS_SIZE_INNER  
   
+</pre>

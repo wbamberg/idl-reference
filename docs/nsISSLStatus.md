@@ -26,11 +26,11 @@ layout: default
 ### isUntrusted ###
 
 ### isExtendedValidation ###
-  
+<pre>  
 True only if (and after) serverCert was successfully validated as  
 Extended Validation (EV).  
   
-
+</pre>
 ## Constants ##
 
 ### SSL_VERSION_3 ###

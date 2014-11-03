@@ -6,20 +6,21 @@ layout: default
 </div>
 
 # nsIURIWithPrincipal #
-  
+<pre>  
 nsIURIWithPrincipal is implemented by URIs which are associated with a  
 specific principal.  
   
-
+</pre>
 ## Attributes ##
 
 ### principal ###
-  
+<pre>  
 The principal associated with the resource returned when loading this  
 uri.  
   
-
+</pre>
 ### principalUri ###
-  
+<pre>  
 The uri for the principal.  
   
+</pre>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIPromptService #
-  
+<pre>  
 This is the interface to the embeddable prompt service; the service that  
 implements nsIPrompt.  Its interface is designed to be just nsIPrompt, each  
 method modified to take a parent window parameter.  
@@ -36,11 +36,11 @@ not refer to the button types by name.  For example, it is inadvisable to
 tell the user to "Press OK to proceed."  Instead, such a prompt might be  
 rewritten to ask the user: "Would you like to proceed?"  
   
-
+</pre>
 ## Methods ##
 
 ### alert(aParent, aDialogTitle, aText) ###
-  
+<pre>  
 Puts up an alert dialog with an OK button.  
   
 @param aParent  
@@ -50,7 +50,7 @@ Puts up an alert dialog with an OK button.
 @param aText  
        Text to appear in the body of the dialog.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -76,7 +76,7 @@ Puts up an alert dialog with an OK button.
 </table>
 
 ### alertCheck(aParent, aDialogTitle, aText, aCheckMsg, aCheckState) ###
-  
+<pre>  
 Puts up an alert dialog with an OK button and a labeled checkbox.  
   
 @param aParent  
@@ -91,7 +91,7 @@ Puts up an alert dialog with an OK button and a labeled checkbox.
        Contains the initial checked state of the checkbox when this method  
        is called and the final checked state after this method returns.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -130,7 +130,7 @@ Puts up an alert dialog with an OK button and a labeled checkbox.
 </table>
 
 ### confirm(aParent, aDialogTitle, aText) ###
-  
+<pre>  
 Puts up a dialog with OK and Cancel buttons.  
   
 @param aParent  
@@ -142,7 +142,7 @@ Puts up a dialog with OK and Cancel buttons.
   
 @return true for OK, false for Cancel  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -179,7 +179,7 @@ Puts up a dialog with OK and Cancel buttons.
 </table>
 
 ### confirmCheck(aParent, aDialogTitle, aText, aCheckMsg, aCheckState) ###
-  
+<pre>  
 Puts up a dialog with OK and Cancel buttons and a labeled checkbox.  
   
 @param aParent  
@@ -196,7 +196,7 @@ Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
   
 @return true for OK, false for Cancel  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -246,7 +246,7 @@ Puts up a dialog with OK and Cancel buttons and a labeled checkbox.
 </table>
 
 ### confirmEx(aParent, aDialogTitle, aText, aButtonFlags, aButton0Title, aButton1Title, aButton2Title, aCheckMsg, aCheckState) ###
-  
+<pre>  
 Puts up a dialog with up to 3 buttons and an optional, labeled checkbox.  
   
 @param aParent  
@@ -289,7 +289,7 @@ In general, aButtonFlags is constructed per the following example:
   
 where "AAA" and "BBB" correspond to one of the button titles.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -363,7 +363,7 @@ where "AAA" and "BBB" correspond to one of the button titles.
 </table>
 
 ### prompt(aParent, aDialogTitle, aText, aValue, aCheckMsg, aCheckState) ###
-  
+<pre>  
 Puts up a dialog with an edit field and an optional, labeled checkbox.  
   
 @param aParent  
@@ -385,7 +385,7 @@ Puts up a dialog with an edit field and an optional, labeled checkbox.
   
 @return true for OK, false for Cancel.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -444,7 +444,7 @@ Puts up a dialog with an edit field and an optional, labeled checkbox.
 </table>
 
 ### promptUsernameAndPassword(aParent, aDialogTitle, aText, aUsername, aPassword, aCheckMsg, aCheckState) ###
-  
+<pre>  
 Puts up a dialog with an edit field, a password field, and an optional,  
 labeled checkbox.  
   
@@ -472,7 +472,7 @@ labeled checkbox.
   
 @return true for OK, false for Cancel.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -540,7 +540,7 @@ labeled checkbox.
 </table>
 
 ### promptPassword(aParent, aDialogTitle, aText, aPassword, aCheckMsg, aCheckState) ###
-  
+<pre>  
 Puts up a dialog with a password field and an optional, labeled checkbox.  
   
 @param aParent  
@@ -562,7 +562,7 @@ Puts up a dialog with a password field and an optional, labeled checkbox.
   
 @return true for OK, false for Cancel.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -621,7 +621,7 @@ Puts up a dialog with a password field and an optional, labeled checkbox.
 </table>
 
 ### select(aParent, aDialogTitle, aText, aCount, aSelectList, aOutSelection) ###
-  
+<pre>  
 Puts up a dialog box which has a list box of strings from which the user  
 may make a single selection.  
   
@@ -641,7 +641,7 @@ may make a single selection.
   
 @return true for OK, false for Cancel.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -699,26 +699,26 @@ may make a single selection.
 ## Constants ##
 
 ### BUTTON_POS_0 ###
-  
+<pre>  
 Button Flags  
   
 The following flags are combined to form the aButtonFlags parameter passed  
 to confirmEx.  See confirmEx for more information on how the flags may be  
 combined.  
   
-  
+</pre><pre>  
 Button Position Flags  
   
-
+</pre>
 ### BUTTON_POS_1 ###
 
 ### BUTTON_POS_2 ###
 
 ### BUTTON_TITLE_OK ###
-  
+<pre>  
 Button Title Flags (used to set the labels of buttons in the prompt)  
   
-
+</pre>
 ### BUTTON_TITLE_CANCEL ###
 
 ### BUTTON_TITLE_YES ###
@@ -734,29 +734,30 @@ Button Title Flags (used to set the labels of buttons in the prompt)
 ### BUTTON_TITLE_IS_STRING ###
 
 ### BUTTON_POS_0_DEFAULT ###
-  
+<pre>  
 Button Default Flags (used to select which button is the default one)  
   
-
+</pre>
 ### BUTTON_POS_1_DEFAULT ###
 
 ### BUTTON_POS_2_DEFAULT ###
 
 ### BUTTON_DELAY_ENABLE ###
-  
+<pre>  
 Causes the buttons to be initially disabled.  They are enabled after a  
 timeout expires.  The implementation may interpret this loosely as the  
 intent is to ensure that the user does not click through a security dialog  
 too quickly.  Strictly speaking, the implementation could choose to ignore  
 this flag.  
   
-
+</pre>
 ### STD_OK_CANCEL_BUTTONS ###
-  
+<pre>  
 Selects the standard set of OK/Cancel buttons.  
   
-
+</pre>
 ### STD_YES_NO_BUTTONS ###
-  
+<pre>  
 Selects the standard set of Yes/No buttons.  
   
+</pre>

@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### group(aURI) ###
-  
+<pre>  
 Determine the group to which the URI belongs.  
   
 @param    aURI       the URI to group  
   
 @returns  the group to which the URI belongs  
   
-
+</pre>
 #### Parameters ####
 
 <table>

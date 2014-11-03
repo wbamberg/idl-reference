@@ -22,24 +22,24 @@ layout: default
 ## Attributes ##
 
 ### microphoneMuted ###
-  
+<pre>  
 Microphone muted?  
   
-
+</pre>
 ### fmRadioAudioEnabled ###
-  
+<pre>  
 Are we playing audio from the FM radio?  
   
-
+</pre>
 ### phoneState ###
 
 ## Constants ##
 
 ### PHONE_STATE_INVALID ###
-  
+<pre>  
 Set the phone's audio mode.  
   
-
+</pre>
 ### PHONE_STATE_CURRENT ###
 
 ### PHONE_STATE_NORMAL ###
@@ -51,11 +51,11 @@ Set the phone's audio mode.
 ### PHONE_STATE_IN_COMMUNICATION ###
 
 ### FORCE_NONE ###
-  
+<pre>  
 Configure a particular device ("force") to be used for one of the uses  
 (communication, media playback, etc.)  
   
-
+</pre>
 ### FORCE_SPEAKER ###
 
 ### FORCE_HEADPHONES ###

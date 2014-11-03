@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # extIExtensionsCallback #
-  
+<pre>  
 Interface representing a callback that receives an array of extIExtensions  
   
-
+</pre>
 ## Methods ##
 
 ### callback(extensions) ###

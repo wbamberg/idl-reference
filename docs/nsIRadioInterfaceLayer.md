@@ -12,12 +12,12 @@ layout: default
 ### getRadioInterface(clientId) ###
 
 ### getClientIdForEmergencyCall() ###
-  
+<pre>  
 Select a proper client for dialing emergency call.  
   
 @return clientId or -1 if none of the clients are avaialble.  
   
-
+</pre>
 #### Returns ####
 
 <table>

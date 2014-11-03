@@ -10,11 +10,12 @@ layout: default
 ## Attributes ##
 
 ### name ###
-  
+<pre>  
 Get the name of the property.  
   
-
+</pre>
 ### value ###
-  
+<pre>  
 Get the value of the property.  
   
+</pre>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIWebVTTParserWrapper #
-  
+<pre>  
 Interface for a wrapper of a JS WebVTT parser (vtt.js).  
   
-
+</pre>
 ## Methods ##
 
 ### loadParser(window) ###
-  
+<pre>  
 Loads the JS WebVTTParser and sets it to use the passed window to create  
 VTTRegions and VTTCues. This function must be called before calling  
 parse, flush, or watch.  
@@ -22,7 +22,7 @@ parse, flush, or watch.
               VTTRegions.  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -37,7 +37,7 @@ parse, flush, or watch.
 </table>
 
 ### parse(data) ###
-  
+<pre>  
 Attempts to parse the stream's data as WebVTT format. When it successfully  
 parses a WebVTT region or WebVTT cue it will create a VTTRegion or VTTCue  
 object and pass it back to the callee through its callbacks.  
@@ -45,7 +45,7 @@ object and pass it back to the callee through its callbacks.
 @param data   The buffer that contains the WebVTT data received by the  
               Necko consumer so far.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -60,20 +60,20 @@ object and pass it back to the callee through its callbacks.
 </table>
 
 ### flush() ###
-  
+<pre>  
 Flush indicates that no more data is expected from the stream. As such the  
 parser should try to parse any kind of partial data it has.  
   
-
+</pre>
 ### watch(callback) ###
-  
+<pre>  
 Set this parser object to use an nsIWebVTTListener object for its onCue  
 and onRegion callbacks.  
   
 @param callback The nsIWebVTTListener object that exposes onCue and  
                 onRegion callbacks for the parser.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -88,7 +88,7 @@ and onRegion callbacks.
 </table>
 
 ### convertCueToDOMTree(window, cue) ###
-  
+<pre>  
 Convert the text content of a WebVTT cue to a document fragment so that  
 we can display it on the page.  
   
@@ -97,7 +97,7 @@ we can display it on the page.
 @param cue    The cue whose content will be converted to a document  
               fragment.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -119,7 +119,7 @@ we can display it on the page.
 </table>
 
 ### processCues(window, cues, overlay) ###
-  
+<pre>  
 Compute the display state of the VTTCues in cues along with any VTTRegions  
 that they might be in. First, it computes the positioning and styling of  
 the cues and regions passed and converts them into a DOM tree rooted at  
@@ -133,7 +133,7 @@ computed divs to the VTTCues display state property for use later.
                computed.  
 @param overlay The HTMLElement that the cues will be displayed within.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

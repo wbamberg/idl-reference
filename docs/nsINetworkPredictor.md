@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsINetworkPredictor #
-  
+<pre>  
 nsINetworkPredictor - learn about pages users visit, and allow us to take  
                       predictive actions upon future visits.  
                       NOTE: nsINetworkPredictor should only  
                       be used on the main thread.  
   
-
+</pre>
 ## Methods ##
 
 ### predict(targetURI, sourceURI, reason, loadContext, verifier) ###
-  
+<pre>  
 Start taking predictive actions  
   
 Calling this will cause the predictor to (possibly) start  
@@ -43,7 +43,7 @@ asked to take actions.
   we're predicting the way we expect to. Not necessary (or desired) for  
   normal operation.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -94,7 +94,7 @@ asked to take actions.
 </table>
 
 ### learn(targetURI, sourceURI, reason, loadContext) ###
-  
+<pre>  
 Add to our compendium of knowledge  
   
 This adds to our prediction database to make things (hopefully)  
@@ -116,7 +116,7 @@ smarter next time we predict something.
 @param loadContext - The nsILoadContext for the page load that we are  
   learning about.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -159,23 +159,23 @@ smarter next time we predict something.
 </table>
 
 ### reset() ###
-  
+<pre>  
 Clear out all our learned knowledge  
   
 This removes everything from our database so that any predictions begun  
 after this completes will start from a blank slate.  
   
-
+</pre>
 ### prepareForDnsTest(timestamp, uri) ###
-  
+<pre>  
 @deprecated THIS API IS FOR TESTING ONLY. IF YOU DON'T KNOW WHAT IT DOES,  
 DON'T USE IT  
   
-
+</pre>
 ## Constants ##
 
 ### PREDICT_LINK ###
-  
+<pre>  
 Prediction reasons  
   
 PREDICT_LINK - we are being asked to take predictive action because  
@@ -187,7 +187,7 @@ the user has initiated a pageload.
 PREDICT_STARTUP - we are being asked to take predictive action  
 because the browser is starting up.  
   
-
+</pre>
 ### PREDICT_LOAD ###
 
 ### PREDICT_STARTUP ###

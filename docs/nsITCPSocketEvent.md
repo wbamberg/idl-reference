@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # nsITCPSocketEvent #
-  
+<pre>  
 nsITCPSocketEvent is the event object which is passed as the  
 first argument to all the event handler callbacks. It contains  
 the socket that was associated with the event, the type of event,  
 and the data associated with the event (if any).  
   
-
+</pre>
 ## Attributes ##
 
 ### target ###
-  
+<pre>  
 The socket object which produced this event.  
   
-
+</pre>
 ### type ###
-  
+<pre>  
 The type of this event. One of:  
   
 open  
@@ -30,9 +30,9 @@ data
 drain  
 close  
   
-
+</pre>
 ### data ###
-  
+<pre>  
 The data related to this event, if any. In the ondata callback,  
 data will be the bytes read from the network; if the binaryType  
 of the socket was "arraybuffer", this value will be of type ArrayBuffer;  
@@ -43,3 +43,4 @@ of the error.
   
 In the other callbacks, data will be an empty string.  
   
+</pre>

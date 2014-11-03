@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # fuelIWindow #
-  
+<pre>  
 Interface representing a browser window.  
   
-
+</pre>
 ## Methods ##
 
 ### open(aURI) ###
-  
+<pre>  
 Open a new browser tab, pointing to the specified URI.  
 @param   aURI  
          The uri to open the browser tab to  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -34,17 +34,18 @@ Open a new browser tab, pointing to the specified URI.
 ## Attributes ##
 
 ### tabs ###
-  
+<pre>  
 A collection of browser tabs within the browser window.  
   
-
+</pre>
 ### activeTab ###
-  
+<pre>  
 The currently-active tab within the browser window.  
   
-
+</pre>
 ### events ###
-  
+<pre>  
 The events object for the browser window.  
 supports: "TabOpen", "TabClose", "TabMove", "TabSelect"  
   
+</pre>

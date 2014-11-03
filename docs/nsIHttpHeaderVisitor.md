@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIHttpHeaderVisitor #
-  
+<pre>  
 Implement this interface to visit http headers.  
   
-
+</pre>
 ## Methods ##
 
 ### visitHeader(aHeader, aValue) ###
-  
+<pre>  
 Called by the nsIHttpChannel implementation when visiting request and  
 response headers.  
   
@@ -24,7 +24,7 @@ response headers.
   
 @throw any exception to terminate enumeration  
   
-
+</pre>
 #### Parameters ####
 
 <table>

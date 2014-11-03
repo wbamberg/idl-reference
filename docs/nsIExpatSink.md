@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIExpatSink #
-  
+<pre>  
 This interface should be implemented by any content sink that wants  
 to get output from expat and do something with it; in other words,  
 by any sink that handles some sort of XML dialect.  
   
-
+</pre>
 ## Methods ##
 
 ### HandleStartElement(aName, aAtts, aAttsCount, aLineNumber) ###
-  
+<pre>  
 Called to handle the opening tag of an element.  
 @param aName the fully qualified tagname of the element  
 @param aAtts the array of attribute names and values.  There are  
@@ -29,7 +29,7 @@ Called to handle the opening tag of an element.
 @param aAttsCount the number of elements in aAtts.  
 @param aLineNumber the line number of the start tag in the data stream.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -68,11 +68,11 @@ Called to handle the opening tag of an element.
 </table>
 
 ### HandleEndElement(aName) ###
-  
+<pre>  
 Called to handle the closing tag of an element.  
 @param aName the fully qualified tagname of the element  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -86,12 +86,12 @@ Called to handle the closing tag of an element.
 </table>
 
 ### HandleComment(aCommentText) ###
-  
+<pre>  
 Called to handle a comment  
 @param aCommentText the text of the comment (not including the  
        "<!--" and "-->")  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -106,12 +106,12 @@ Called to handle a comment
 </table>
 
 ### HandleCDataSection(aData, aLength) ###
-  
+<pre>  
 Called to handle a CDATA section  
 @param aData the text in the CDATA section.  This is null-terminated.  
 @param aLength the length of the aData string  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -131,18 +131,18 @@ Called to handle a CDATA section
 </table>
 
 ### HandleDoctypeDecl(aSubset, aName, aSystemId, aPublicId, aCatalogData) ###
-  
+<pre>  
 Called to handle the doctype declaration  
   
-
+</pre>
 ### HandleCharacterData(aData, aLength) ###
-  
+<pre>  
 Called to handle character data.  Note that this does NOT get  
 called for the contents of CDATA sections.  
 @param aData the data to handle.  aData is NOT NULL-TERMINATED.  
 @param aLength the length of the aData string  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -162,12 +162,12 @@ called for the contents of CDATA sections.
 </table>
 
 ### HandleProcessingInstruction(aTarget, aData) ###
-  
+<pre>  
 Called to handle a processing instruction  
 @param aTarget the PI target (e.g. xml-stylesheet)  
 @param aData all the rest of the data in the PI  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -187,7 +187,7 @@ Called to handle a processing instruction
 </table>
 
 ### HandleXMLDeclaration(aVersion, aEncoding, aStandalone) ###
-  
+<pre>  
 Handle the XML Declaration.  
   
 @param aVersion    The version string, can be null if not specified.  
@@ -196,7 +196,7 @@ Handle the XML Declaration.
                    standalone parameter in the declaration, that it was  
                    given as no, or that it was given as yes.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -224,7 +224,7 @@ Handle the XML Declaration.
 </table>
 
 ### ReportError(aErrorText, aSourceText, aError) ###
-  
+<pre>  
 Ask the content sink if the expat driver should log an error to the console.  
   
 @param aErrorText  Error message to pass to content sink.  
@@ -233,7 +233,7 @@ Ask the content sink if the expat driver should log an error to the console.
   
 @retval True if the expat driver should report the error.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

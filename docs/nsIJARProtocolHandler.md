@@ -10,6 +10,7 @@ layout: default
 ## Attributes ##
 
 ### JARCache ###
-  
+<pre>  
 JARCache contains the collection of open jar files.  
   
+</pre>

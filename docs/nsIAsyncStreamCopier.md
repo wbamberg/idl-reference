@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### init(aSource, aSink, aTarget, aSourceBuffered, aSinkBuffered, aChunkSize, aCloseSource, aCloseSink) ###
-  
+<pre>  
 Initialize the stream copier.  
   
 @param aSource  
@@ -38,7 +38,7 @@ NOTE: at least one of the streams must be buffered. If you do not know
 whether your streams are buffered, you should use nsIAsyncStreamCopier2  
 instead.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -98,7 +98,7 @@ instead.
 </table>
 
 ### asyncCopy(aObserver, aObserverContext) ###
-  
+<pre>  
 asyncCopy triggers the start of the copy.  The observer will be notified  
 when the copy completes.  
   
@@ -107,7 +107,7 @@ when the copy completes.
 @param aObserverContext  
        passed to observer methods.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

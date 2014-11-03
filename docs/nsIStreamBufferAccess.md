@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIStreamBufferAccess #
-  
+<pre>  
 An interface for access to a buffering stream implementation's underlying  
 memory buffer.  
   
@@ -15,11 +15,11 @@ ensure that all buffers are aligned on the most restrictive type size for
 the current architecture (e.g., sizeof(double) for RISCy CPUs).  malloc(3)  
 satisfies this requirement.  
   
-
+</pre>
 ## Methods ##
 
 ### getBuffer(aLength, aAlignMask) ###
-  
+<pre>  
 Get access to a contiguous, aligned run of bytes in the stream's buffer.  
 Exactly one successful getBuffer call must occur before a putBuffer call  
 taking the non-null pointer returned by the successful getBuffer.  
@@ -46,7 +46,7 @@ accesses before the fill or flush point is reached.
    buffer has no room for aLength bytes starting at the next address A  
    after the current position that satisfies (A & aAlignMask) == 0.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -84,7 +84,7 @@ accesses before the fill or flush point is reached.
 </table>
 
 ### putBuffer(aBuffer, aLength) ###
-  
+<pre>  
 Relinquish access to the stream's buffer, filling if at end of an input  
 buffer, flushing if completing an output buffer.  After a getBuffer call  
 that returns non-null, putBuffer must be called.  
@@ -97,7 +97,7 @@ that returns non-null, putBuffer must be called.
    The same count of contiguous bytes passed to the getBuffer call that  
    returned aBuffer.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -119,17 +119,18 @@ that returns non-null, putBuffer must be called.
 </table>
 
 ### disableBuffering() ###
-  
+<pre>  
 Disable and enable buffering on the stream implementing this interface.  
 DisableBuffering flushes an output stream's buffer, and invalidates an  
 input stream's buffer.  
   
-
+</pre>
 ### enableBuffering() ###
 
 ## Attributes ##
 
 ### unbufferedStream ###
-  
+<pre>  
 The underlying, unbuffered input or output stream.  
   
+</pre>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getSamples(network, start, end, options) ###
-  
+<pre>  
 Find samples between two dates start and end, both included.  
   
 If options is provided, per-app or per-system service usage will be  
@@ -18,9 +18,9 @@ retrieved; otherwise the target will be overall system usage.
   
 If success, the request result will be an nsIDOMMozNetworkStats object.  
   
-
+</pre>
 ### addAlarm(network, threshold, options) ###
-  
+<pre>  
 Install an alarm on a network. The network must be in the return of  
 getAvailableNetworks() otherwise an "InvalidNetwork" exception will  
 be raised.  
@@ -31,9 +31,9 @@ system message is sent to the application, where the optional parameter
   
 If success, the |result| field of the DOMRequest keeps the alarm Id.  
   
-
+</pre>
 ### getAllAlarms(network) ###
-  
+<pre>  
 Obtain all alarms for those networks returned by getAvailableNetworks().  
 If a network is provided, only retrieves the alarms for that network.  
 The network must be one of those returned by getAvailebleNetworks() or an  
@@ -45,51 +45,51 @@ Each alarm object has the same fields as that in the system message:
  - threshold  
  - data  
   
-
+</pre>
 ### removeAlarms(alarmId) ###
-  
+<pre>  
 Remove all network alarms. If an |alarmId| is provided, then only that  
 alarm is removed.  
   
-
+</pre>
 ### clearStats(network) ###
-  
+<pre>  
 Remove all stats related with the provided network from DB.  
   
-
+</pre>
 ### clearAllStats() ###
-  
+<pre>  
 Remove all stats in the database.  
   
-
+</pre>
 ### getAvailableNetworks() ###
-  
+<pre>  
 Return available networks that used to be saved in the database.  
   
-
+</pre>
 ### getAvailableServiceTypes() ###
-  
+<pre>  
 Return available service types that used to be saved in the database.  
   
-
+</pre>
 ## Attributes ##
 
 ### sampleRate ###
-  
+<pre>  
 Minimum time in milliseconds between samples stored in the database.  
   
-
+</pre>
 ### maxStorageAge ###
-  
+<pre>  
 Time in milliseconds recorded by the API until present time. All samples  
 older than maxStorageAge from now are deleted.  
   
-
+</pre>
 ## Constants ##
 
 ### WIFI ###
-  
+<pre>  
 Constants for known interface types.  
   
-
+</pre>
 ### MOBILE ###

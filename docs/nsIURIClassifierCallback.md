@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIURIClassifierCallback #
-  
+<pre>  
 Callback function for nsIURIClassifier lookups.  
   
-
+</pre>
 ## Methods ##
 
 ### onClassifyComplete(aErrorCode) ###
-  
+<pre>  
 Called by the URI classifier service when it is done checking a URI.  
   
 Clients are responsible for associating callback objects with classify()  
@@ -23,7 +23,7 @@ calls.
        The error code with which the channel should be cancelled, or  
        NS_OK if the load should continue normally.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

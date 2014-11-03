@@ -12,40 +12,40 @@ layout: default
 ### dump(str) ###
 
 ### setTimeout() ###
-  
+<pre>  
 These methods take typeless arguments and optional arguments, the  
 first argument is either a function or a string, the second  
 argument must be a number (ms) and the rest of the arguments (2  
 ... n) are passed to the callback function  
   
-
+</pre>
 ### setInterval() ###
 
 ### clearTimeout(handle) ###
-  
+<pre>  
 These methods take one optional argument that's the timer ID to  
 clear. Often in existing code these methods are passed undefined,  
 which is a nop so we need to support that as well.  
   
-
+</pre>
 ### clearInterval(handle) ###
 
 ### setResizable(resizable) ###
-  
+<pre>  
 This method is here for backwards compatibility with 4.x only,  
 its implementation is a no-op  
   
-
+</pre>
 ### captureEvents() ###
-  
+<pre>  
 @deprecated These are old Netscape 4 methods. Do not use,  
             the implementation is no-op.  
   
-
+</pre>
 ### releaseEvents() ###
 
 ### open(url, name, options) ###
-  
+<pre>  
 This is the scriptable version of nsIDOMWindow::open()  
 that takes 3 optional arguments. Its binary name is OpenJS to  
 avoid colliding with nsIDOMWindow::open(), which has the  
@@ -55,19 +55,19 @@ not.
   
 IOW, DO NOT CALL THIS FROM C++  
   
-
+</pre>
 ### openDialog(url, name, options) ###
-  
+<pre>  
 This is the scriptable version of  
 nsIDOMWindow::openDialog() that takes 3 optional  
 arguments, plus any additional arguments are passed on as  
 arguments on the dialog's window object (window.arguments).  
   
-
+</pre>
 ## Attributes ##
 
 ### frames ###
-  
+<pre>  
 window.frames in Netscape 4.x and IE is just a reference to the  
 window itself (i.e. window.frames === window), but this doesn't  
 make sense from a generic API point of view so that's why this is  
@@ -75,5 +75,5 @@ JS specific.
   
 This property is "replaceable" in JavaScript.  
   
-
+</pre>
 ### content ###

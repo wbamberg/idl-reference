@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMHTMLTextAreaElement #
-  
+<pre>  
 The nsIDOMHTMLTextAreaElement interface is the interface to a  
 [X]HTML textarea element.  
   
@@ -16,7 +16,7 @@ http://www.w3.org/TR/DOM-Level-2-HTML/
 with changes from the work-in-progress WHATWG HTML specification:  
 http://www.whatwg.org/specs/web-apps/current-work/  
   
-
+</pre>
 ## Methods ##
 
 ### checkValidity() ###
@@ -50,11 +50,11 @@ http://www.whatwg.org/specs/web-apps/current-work/
 ### rows ###
 
 ### wrap ###
-  
+<pre>  
 Reflects the wrap content attribute. Possible values are "soft", "hard" and  
 "off". "soft" is the default.  
   
-
+</pre>
 ### type ###
 
 ### defaultValue ###

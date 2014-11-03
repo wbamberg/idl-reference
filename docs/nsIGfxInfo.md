@@ -14,19 +14,19 @@ layout: default
 ### logFailure(failure) ###
 
 ### getFeatureStatus(aFeature) ###
-  
+<pre>  
 Ask about a feature, and return the status of that feature  
   
-
+</pre>
 ### getFeatureSuggestedDriverVersion(aFeature) ###
 
 ### getWebGLParameter(aParam) ###
-  
+<pre>  
 WebGL info; valid params are "full-renderer", "vendor", "renderer", "version",  
 "shading_language_version", "extensions".  These return info from  
 underlying GL impl that's used to implement WebGL.  
   
-
+</pre>
 ### GetData() ###
 
 ### getInfo() ###
@@ -42,10 +42,10 @@ underlying GL impl that's used to implement WebGL.
 ### cleartypeParameters ###
 
 ### adapterDescription ###
-  
+<pre>  
 The name of the display adapter.  
   
-
+</pre>
 ### adapterDescription2 ###
 
 ### adapterDriver ###
@@ -65,10 +65,10 @@ The name of the display adapter.
 ### adapterSubsysID2 ###
 
 ### adapterRAM ###
-  
+<pre>  
 The amount of RAM in MB in the display adapter.  
   
-
+</pre>
 ### adapterRAM2 ###
 
 ### adapterDriverVersion ###

@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIUrlClassifierLookupCallback #
-  
+<pre>  
 This is an internal helper interface for communication between the  
 main thread and the dbservice worker thread.  It is called for each  
 lookup to provide a set of possible results, which the main thread  
 may need to expand using an nsIUrlClassifierCompleter.  
   
-
+</pre>
 ## Methods ##
 
 ### lookupComplete(results) ###
-  
+<pre>  
 The lookup process is complete.  
   
 @param results  
@@ -25,7 +25,7 @@ The lookup process is complete.
        with possible matches.  The callee is responsible for freeing  
        this array.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

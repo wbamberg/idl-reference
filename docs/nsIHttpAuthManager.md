@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIHttpAuthManager #
-  
+<pre>  
 nsIHttpAuthManager  
   
 This service provides access to cached HTTP authentication  
@@ -20,11 +20,11 @@ higher) to avoid duplicate authentication prompts when the
 Java client fetches content from a HTTP site that the user  
 has already logged into.  
   
-
+</pre>
 ## Methods ##
 
 ### getAuthIdentity(aScheme, aHost, aPort, aAuthType, aRealm, aPath, aUserDomain, aUserName, aUserPassword, aIsPrivate, aPrincipal) ###
-  
+<pre>  
 Lookup auth identity.  
   
 @param aScheme  
@@ -54,7 +54,7 @@ Lookup auth identity.
        the principal from which to derive information about which  
        app/mozbrowser is in use for this request  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -132,7 +132,7 @@ Lookup auth identity.
 </table>
 
 ### setAuthIdentity(aScheme, aHost, aPort, aAuthType, aRealm, aPath, aUserDomain, aUserName, aUserPassword, aIsPrivate, aPrincipal) ###
-  
+<pre>  
 Store auth identity.  
   
 @param aScheme  
@@ -162,7 +162,7 @@ Store auth identity.
        the principal from which to derive information about which  
        app/mozbrowser is in use for this request  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -240,6 +240,7 @@ Store auth identity.
 </table>
 
 ### clearAll() ###
-  
+<pre>  
 Clear all auth cache.  
   
+</pre>

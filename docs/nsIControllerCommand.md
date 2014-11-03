@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIControllerCommand #
-  
+<pre>  
 nsIControllerCommand  
   
 A generic command interface. You can register an nsIControllerCommand  
 with the nsIControllerCommandTable.  
   
-
+</pre>
 ## Methods ##
 
 ### isCommandEnabled(aCommandName, aCommandContext) ###
-  
+<pre>  
 Returns true if the command is currently enabled. An nsIControllerCommand  
 can implement more than one commands; say, a group of related commands  
 (e.g. delete left/delete right). Because of this, the command name is  
@@ -28,7 +28,7 @@ passed to each method.
                  allowing the command to get some context information.  
                  The contents of this cookie are implementation-defined.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -53,7 +53,7 @@ passed to each method.
 ### getCommandStateParams(aCommandName, aParams, aCommandContext) ###
 
 ### doCommand(aCommandName, aCommandContext) ###
-  
+<pre>  
 Execute the name command.  
   
 @param aCommandName  the name of the command to execute.  
@@ -62,7 +62,7 @@ Execute the name command.
                  allowing the command to get some context information.  
                  The contents of this cookie are implementation-defined.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

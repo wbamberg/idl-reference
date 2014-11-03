@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### convertStringToUTF8(aString, aCharset, aSkipCheck, aAllowSubstitution) ###
-  
+<pre>  
 Ensure that |aString| is encoded in UTF-8.  If not,   
 convert to UTF-8 assuming it's encoded in |aCharset|  
 and return the converted string in UTF-8.  
@@ -32,7 +32,7 @@ and return the converted string in UTF-8.
 @throws NS_ERROR_UCONV_NOCONV when there is no decoder for aCharset  
         or error code of nsIUnicodeDecoder in case of conversion failure  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -86,7 +86,7 @@ and return the converted string in UTF-8.
 </table>
 
 ### convertURISpecToUTF8(aSpec, aCharset) ###
-  
+<pre>  
 Ensure that |aSpec| (after URL-unescaping it) is encoded in UTF-8.    
 If not,  convert it to UTF-8, assuming it's encoded in |aCharset|,    
 and return the result.  
@@ -106,7 +106,7 @@ going around in Mozilla code would break this assumption.
 @throws NS_ERROR_UCONV_NOCONV when there is no decoder for aCharset  
         or error code of nsIUnicodeDecoder in case of conversion failure  
   
-
+</pre>
 #### Parameters ####
 
 <table>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIAsyncOutputStream #
-  
+<pre>  
 If an output stream is non-blocking, it may return NS_BASE_STREAM_WOULD_BLOCK  
 when written to.  The caller must then wait for the stream to become  
 writable.  If the stream implements nsIAsyncOutputStream, then the caller can  
@@ -18,11 +18,11 @@ is not necessary that nsIOutputStream::isNonBlocking return true.  Nor is it
 necessary that a non-blocking nsIOutputStream implementation also implement  
 nsIAsyncOutputStream.  
   
-
+</pre>
 ## Methods ##
 
 ### closeWithStatus(reason) ###
-  
+<pre>  
 This method closes the stream and sets its internal status.  If the   
 stream is already closed, then this method is ignored.  Once the stream  
 is closed, the stream's status cannot be changed.  Any successful status  
@@ -40,7 +40,7 @@ greatly simplifies working with pipes in some cases.
        The error that will be reported if this stream is accessed after  
        it has been closed.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -55,7 +55,7 @@ greatly simplifies working with pipes in some cases.
 </table>
 
 ### asyncWait(aCallback, aFlags, aRequestedCount, aEventTarget) ###
-  
+<pre>  
 Asynchronously wait for the stream to be writable or closed.  The  
 notification is one-shot, meaning that each asyncWait call will result  
 in exactly one notification callback.  After the OnOutputStreamReady event  
@@ -86,7 +86,7 @@ event will be dispatched when the stream becomes writable or closed.
        specify that the notification be delivered to a specific event  
        target.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -127,10 +127,11 @@ event will be dispatched when the stream becomes writable or closed.
 ## Constants ##
 
 ### WAIT_CLOSURE_ONLY ###
-  
+<pre>  
 If passed to asyncWait, this flag overrides the default behavior,  
 causing the OnOutputStreamReady notification to be suppressed until the  
 stream becomes closed (either as a result of closeWithStatus/close being  
 called on the stream or possibly due to some error in the underlying  
 stream).  
   
+</pre>

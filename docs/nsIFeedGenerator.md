@@ -6,23 +6,24 @@ layout: default
 </div>
 
 # nsIFeedGenerator #
-  
+<pre>  
  An nsIFeedGenerator represents the software used to create a feed.  
   
-
+</pre>
 ## Attributes ##
 
 ### agent ###
-  
+<pre>  
 The name of the software.  
   
-
+</pre>
 ### version ###
-  
+<pre>  
 The version of the software.  
   
-
+</pre>
 ### uri ###
-  
+<pre>  
 A URI associated with the software.  
   
+</pre>

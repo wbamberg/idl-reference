@@ -14,7 +14,7 @@ layout: default
 ### shutdown() ###
 
 ### importCert(id, certBlob, certPassword, certNickname) ###
-  
+<pre>  
 Import a certificate file.  
   
 @param id  
@@ -26,7 +26,7 @@ Import a certificate file.
 @param certNickname  
        User assigned nickname for imported certificate.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -58,7 +58,7 @@ Import a certificate file.
 </table>
 
 ### deleteCert(id, certNickname) ###
-  
+<pre>  
 Delete an imported certificate file  
   
 @param id  
@@ -66,7 +66,7 @@ Delete an imported certificate file
 @param certNickname  
        Certificate nickname to delete.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

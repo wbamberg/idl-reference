@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISAXLocator #
-  
+<pre>  
 Interface for associating a SAX event with a document location.  
   
 Note that the results returned by the object will be valid only  
@@ -14,11 +14,11 @@ during the scope of each callback method: the application will
 receive unpredictable results if it attempts to use the locator at  
 any other time, or after parsing completes.  
   
-
+</pre>
 ## Attributes ##
 
 ### columnNumber ###
-  
+<pre>  
 Return the column number where the current document event ends.  
   
 Warning: The return value from the method is intended only as an  
@@ -39,9 +39,9 @@ event.  The first column in each line is column 1.
   
 @return The column number, or -1 if none is available.  
   
-
+</pre>
 ### lineNumber ###
-  
+<pre>  
 Return the line number where the current document event ends.  
 Lines are delimited by line ends, which are defined in the XML  
 specification.  
@@ -63,9 +63,9 @@ event.  The first line is line 1.
   
 @return The line number, or -1 if none is available.  
   
-
+</pre>
 ### publicId ###
-  
+<pre>  
 Return the public identifier for the current document event.  
   
 The return value is the public identifier of the document entity  
@@ -75,9 +75,9 @@ the event appears.
 @return A string containing the public identifier, or  
         null if none is available.  
   
-
+</pre>
 ### systemId ###
-  
+<pre>  
 Return the system identifier for the current document event.  
   
 The return value is the system identifier of the document entity  
@@ -87,3 +87,4 @@ the event appears.
 @return A string containing the system identifier, or null  
         if none is available.  
   
+</pre>

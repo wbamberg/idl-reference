@@ -28,15 +28,15 @@ layout: default
 ### name ###
 
 ### blocklisted ###
-  
+<pre>  
 true only if this plugin is "hardblocked" and cannot be enabled.  
   
-
+</pre>
 ### isEnabledStateLocked ###
-  
+<pre>  
 true if the state is non-default and locked, false otherwise.  
   
-
+</pre>
 ### disabled ###
 
 ### clicktoplay ###

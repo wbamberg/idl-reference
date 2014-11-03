@@ -6,19 +6,19 @@ layout: default
 </div>
 
 # nsIRDFCompositeDataSource #
-  
+<pre>  
 An nsIRDFCompositeDataSource composes individual data sources, providing  
 the illusion of a single, coherent RDF graph.  
   
-
+</pre>
 ## Methods ##
 
 ### AddDataSource(aDataSource) ###
-  
+<pre>  
 Add a datasource the the composite data source.  
 @param aDataSource the datasource to add to composite  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -32,11 +32,11 @@ Add a datasource the the composite data source.
 </table>
 
 ### RemoveDataSource(aDataSource) ###
-  
+<pre>  
 Remove a datasource from the composite data source.  
 @param aDataSource the datasource to remove from the composite  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -50,12 +50,12 @@ Remove a datasource from the composite data source.
 </table>
 
 ### GetDataSources() ###
-  
+<pre>  
 Retrieve the datasources in the composite data source.  
 @return an nsISimpleEnumerator that will enumerate each  
 of the datasources in the composite  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -71,7 +71,7 @@ of the datasources in the composite
 ## Attributes ##
 
 ### allowNegativeAssertions ###
-  
+<pre>  
   
 Set this value to <code>true</code> if the composite datasource  
 may contains at least one datasource that has <em>negative</em>  
@@ -83,9 +83,9 @@ composite datasource to perform some query optimizations.
   
 By default, this value is <code>true</true>.  
   
-
+</pre>
 ### coalesceDuplicateArcs ###
-  
+<pre>  
 Set to <code>true</code> if the composite datasource should  
 take care to coalesce duplicate arcs when returning values from  
 queries. (This is the default.)  
@@ -96,3 +96,4 @@ datasource to more efficiently answer queries.
   
 By default, this value is <code>true</code>.  
   
+</pre>

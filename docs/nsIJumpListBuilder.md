@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### initListBuild(removedItems) ###
-  
+<pre>  
 Initializes a jump list build and returns a list of items the user removed  
 since the last time a jump list was committed. Removed items can become state  
 after initListBuild is called, lists should be built in single-shot fasion.  
@@ -20,7 +20,7 @@ after initListBuild is called, lists should be built in single-shot fasion.
   
 @returns true if the operation completed successfully.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -45,7 +45,7 @@ after initListBuild is called, lists should be built in single-shot fasion.
 </table>
 
 ### addListToBuild(aCatType, items, catName) ###
-  
+<pre>  
 Adds a list and if required, a set of items for the list.  
   
 @param aCatType  
@@ -63,7 +63,7 @@ a particular category or item type.
 since the last commit.  
 @throw NS_ERROR_UNEXPECTED on internal errors.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -100,17 +100,17 @@ since the last commit.
 </table>
 
 ### abortListBuild() ###
-  
+<pre>  
 Aborts and clears the current jump list build.  
   
-
+</pre>
 ### commitListBuild() ###
-  
+<pre>  
 Commits the current jump list build to the Taskbar.  
   
 @returns true if the operation completed successfully.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -123,7 +123,7 @@ Commits the current jump list build to the Taskbar.
 </table>
 
 ### deleteActiveList() ###
-  
+<pre>  
 Deletes any currently applied taskbar jump list for this application.  
 Common uses would be the enabling of a privacy mode and uninstallation.  
   
@@ -131,7 +131,7 @@ Common uses would be the enabling of a privacy mode and uninstallation.
   
 @throw NS_ERROR_UNEXPECTED on internal errors.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -146,31 +146,31 @@ Common uses would be the enabling of a privacy mode and uninstallation.
 ## Attributes ##
 
 ### available ###
-  
+<pre>  
 Indicates whether jump list taskbar features are supported by the current  
 host.  
   
-
+</pre>
 ### isListCommitted ###
-  
+<pre>  
 JumpList management  
   
 @throw NS_ERROR_NOT_AVAILABLE on all calls if taskbar functionality  
 is not supported by the operating system.  
   
-  
+</pre><pre>  
 Indicates if a commit has already occurred in this session.  
   
-
+</pre>
 ### maxListItems ###
-  
+<pre>  
 The maximum number of jump list items the current desktop can support.  
   
-
+</pre>
 ## Constants ##
 
 ### JUMPLIST_CATEGORY_TASKS ###
-  
+<pre>  
 JumpLists  
   
 Jump lists are built and then applied. Modifying an applied jump list is not  
@@ -196,10 +196,10 @@ Each list is made up of an array of nsIJumpListItem representing items
 such as shortcuts, links, and separators. See nsIJumpListItem for information  
 on adding additional jump list types.  
   
-  
+</pre><pre>  
 List Types  
   
-  
+</pre><pre>  
 Task List  
   
 Tasks are common actions performed by users within the application. A task  
@@ -209,9 +209,9 @@ change often, if at all - similar to an application menu.
   
 Tasks are given the highest priority of all lists when space is limited.  
   
-
+</pre>
 ### JUMPLIST_CATEGORY_RECENT ###
-  
+<pre>  
 Recent or Frequent list  
   
 Recent and frequent lists are based on Window's recent document lists. The  
@@ -219,13 +219,14 @@ lists are generated automatically by Windows. Applications that use recent
 or frequent lists should keep document use tracking up to date by calling  
 the SHAddToRecentDocs shell api.  
   
-
+</pre>
 ### JUMPLIST_CATEGORY_FREQUENT ###
 
 ### JUMPLIST_CATEGORY_CUSTOMLIST ###
-  
+<pre>  
 Custom Lists  
   
 Custom lists can be made up of tasks, links, and separators. The title of  
 of the list is passed through the optional string parameter of addBuildList.  
   
+</pre>

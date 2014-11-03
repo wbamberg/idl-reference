@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINetworkLinkService #
-  
+<pre>  
 Network link status monitoring service.  
   
-
+</pre>
 ## Attributes ##
 
 ### isLinkUp ###
-  
+<pre>  
 This is set to true when the system is believed to have a usable  
 network connection.  
   
@@ -24,17 +24,17 @@ is another usable interface already configured).
 If the link status is not currently known, we generally assume that  
 it is up.  
   
-
+</pre>
 ### linkStatusKnown ###
-  
+<pre>  
 This is set to true when we believe that isLinkUp is accurate.  
   
-
+</pre>
 ### linkType ###
-  
+<pre>  
 The type of network connection.  
   
-
+</pre>
 ## Constants ##
 
 ### LINK_TYPE_UNKNOWN ###

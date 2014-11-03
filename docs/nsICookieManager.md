@@ -6,20 +6,20 @@ layout: default
 </div>
 
 # nsICookieManager #
-   
+<pre>   
 An optional interface for accessing or removing the cookies  
 that are in the cookie list  
   
-
+</pre>
 ## Methods ##
 
 ### removeAll() ###
-  
+<pre>  
 Called to remove all cookies from the cookie list  
   
-
+</pre>
 ### remove(aHost, aName, aPath, aBlocked) ###
-  
+<pre>  
 Called to remove an individual cookie from the cookie list, specified  
 by host, name, and path. If the cookie cannot be found, no exception  
 is thrown. Typically, the arguments to this method will be obtained  
@@ -34,7 +34,7 @@ directly from the desired nsICookie object.
 @param aBlocked Indicates if cookies from this host should be permanently blocked  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -71,7 +71,8 @@ directly from the desired nsICookie object.
 ## Attributes ##
 
 ### enumerator ###
-  
+<pre>  
 Called to enumerate through each cookie in the cookie list.  
 The objects enumerated over are of type nsICookie  
   
+</pre>

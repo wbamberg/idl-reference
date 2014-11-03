@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIBrowserDOMWindow #
-  
+<pre>  
 The C++ source has access to the browser script source through  
 nsIBrowserDOMWindow. It is intended to be attached to the chrome DOMWindow  
 of a toplevel browser window (a XUL window). A DOMWindow that does not  
 happen to be a browser chrome window will simply have no access to any such  
 interface.  
   
-
+</pre>
 ## Methods ##
 
 ### openURI(aURI, aOpener, aWhere, aContext) ###
-  
+<pre>  
 Load a URI  
   
 @param aURI the URI to open. null is allowed.  If null is passed in, no  
@@ -29,7 +29,7 @@ Load a URI
                 is used only when aWhere == OPEN_DEFAULTWINDOW.  
 @return the window into which the URI was opened.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -75,19 +75,19 @@ Load a URI
 </table>
 
 ### openURIInFrame(aURI, aOpener, aWhere, aContext) ###
-  
+<pre>  
 As above, but return the nsIFrameLoaderOwner for the new window.  
 // XXXbz is this the right API? Do we really need the opener here?  
 // See bug 537428  
   
-
+</pre>
 ### isTabContentWindow(aWindow) ###
-  
+<pre>  
 @param  aWindow the window to test.  
 @return whether the window is the main content window for any  
         currently open tab in this toplevel browser window.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -115,49 +115,50 @@ As above, but return the nsIFrameLoaderOwner for the new window.
 ## Constants ##
 
 ### OPEN_DEFAULTWINDOW ###
-  
+<pre>  
 Values for openURI's aWhere parameter.  
   
-  
+</pre><pre>  
 Do whatever the default is based on application state, user preferences,  
 and the value of the aContext parameter to openURI.  
   
-
+</pre>
 ### OPEN_CURRENTWINDOW ###
-  
+<pre>  
 Open in the "current window".  If aOpener is provided, this should be the  
 top window in aOpener's window hierarchy, but exact behavior is  
 application-dependent.  If aOpener is not provided, it's up to the  
 application to decide what constitutes a "current window".  
   
-
+</pre>
 ### OPEN_NEWWINDOW ###
-  
+<pre>  
 Open in a new window.  
   
-
+</pre>
 ### OPEN_NEWTAB ###
-  
+<pre>  
 Open in a new content tab in the toplevel browser window corresponding to  
 this nsIBrowserDOMWindow.  
   
-
+</pre>
 ### OPEN_SWITCHTAB ###
-  
+<pre>  
 Open in an existing content tab based on the URI. If a match can't be  
 found, revert to OPEN_NEWTAB behavior.  
   
-
+</pre>
 ### OPEN_EXTERNAL ###
-  
+<pre>  
 Values for openURI's aContext parameter.  These affect the behavior of  
 OPEN_DEFAULTWINDOW.  
   
-  
+</pre><pre>  
 external link (load request from another application, xremote, etc).  
   
-
+</pre>
 ### OPEN_NEW ###
-  
+<pre>  
 internal open new window  
   
+</pre>

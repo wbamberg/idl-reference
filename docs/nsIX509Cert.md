@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsIX509Cert #
-  
+<pre>  
 This represents a X.509 certificate.  
   
-
+</pre>
 ## Methods ##
 
 ### getEmailAddresses(length, addresses) ###
-  
+<pre>  
  Obtain a list of all email addresses  
  contained in the certificate.  
   
  @param length The number of strings in the returned array.  
  @return An array of email addresses.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -45,7 +45,7 @@ This represents a X.509 certificate.
 </table>
 
 ### containsEmailAddress(aEmailAddress) ###
-  
+<pre>  
  Check whether a given address is contained in the certificate.  
  The comparison will convert the email address to lowercase.  
  The behaviour for non ASCII characters is undefined.  
@@ -54,7 +54,7 @@ This represents a X.509 certificate.
   
  @return True if the address is contained in the certificate.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -79,14 +79,14 @@ This represents a X.509 certificate.
 </table>
 
 ### getChain() ###
-  
+<pre>  
  Obtain a list of certificates that contains this certificate  
  and the issuing certificates of all involved issuers,  
  up to the root issuer.  
   
  @return The chain of certifficates including the issuers.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -99,7 +99,7 @@ This represents a X.509 certificate.
 </table>
 
 ### getUsagesArray(localOnly, verified, count, usages) ###
-  
+<pre>  
  Obtain an array of human readable strings describing  
  the certificate's certified usages.  
   
@@ -109,7 +109,7 @@ This represents a X.509 certificate.
  @param count The number of human readable usages returned.  
  @param usages The array of human readable usages.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -142,15 +142,15 @@ This represents a X.509 certificate.
 </table>
 
 ### requestUsagesArrayAsync(cvl) ###
-  
+<pre>  
  Async version of nsIX509Cert::getUsagesArray()  
   
  Will not block, will request results asynchronously,  
  availability of results will be notified on the main thread.  
   
-
+</pre>
 ### getUsagesString(localOnly, verified, usages) ###
-  
+<pre>  
  Obtain a single comma separated human readable string describing  
  the certificate's certified usages.  
   
@@ -159,7 +159,7 @@ This represents a X.509 certificate.
  @param verified The certificate verification result, see constants.  
  @param purposes The string listing the usages.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -186,14 +186,14 @@ This represents a X.509 certificate.
 </table>
 
 ### getRawDER(length, data) ###
-  
+<pre>  
  Obtain a raw binary encoding of this certificate  
  in DER format.  
   
  @param length The number of bytes in the binary encoding.  
  @param data The bytes representing the DER encoded certificate.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -213,13 +213,13 @@ This represents a X.509 certificate.
 </table>
 
 ### equals(other) ###
-  
+<pre>  
  Test whether two certificate instances represent the  
  same certificate.  
   
  @return Whether the certificates are equal  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -232,7 +232,7 @@ This represents a X.509 certificate.
 </table>
 
 ### exportAsCMS(chainMode, length, data) ###
-  
+<pre>  
  Obtain the certificate wrapped in a PKCS#7 SignedData structure,  
  with or without the certificate chain  
   
@@ -241,7 +241,7 @@ see CMS_CHAIN_MODE constants.
  @param length The number of bytes of the PKCS#7 data.  
  @param data The bytes representing the PKCS#7 wrapped certificate.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -268,12 +268,12 @@ see CMS_CHAIN_MODE constants.
 </table>
 
 ### getCert() ###
-  
+<pre>  
 Retrieves the NSS certificate object wrapped by this interface  
   
-
+</pre>
 ### getAllTokenNames(length, tokenNames) ###
-  
+<pre>  
 Human readable names identifying all hardware or  
 software tokens the certificate is stored on.  
   
@@ -282,7 +282,7 @@ software tokens the certificate is stored on.
         the certificate is stored on (may be empty).  
         On failure the function throws/returns an error.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -309,137 +309,137 @@ software tokens the certificate is stored on.
 </table>
 
 ### markForPermDeletion() ###
-  
+<pre>  
 Either delete the certificate from all cert databases,  
 or mark it as untrusted.  
   
-
+</pre>
 ## Attributes ##
 
 ### nickname ###
-  
+<pre>  
  A nickname for the certificate.  
   
-
+</pre>
 ### emailAddress ###
-  
+<pre>  
  The primary email address of the certificate, if present.  
   
-
+</pre>
 ### subjectName ###
-  
+<pre>  
  The subject owning the certificate.  
   
-
+</pre>
 ### commonName ###
-  
+<pre>  
  The subject's common name.  
   
-
+</pre>
 ### organization ###
-  
+<pre>  
  The subject's organization.  
   
-
+</pre>
 ### organizationalUnit ###
-  
+<pre>  
  The subject's organizational unit.  
   
-
+</pre>
 ### sha256Fingerprint ###
-  
+<pre>  
  The fingerprint of the certificate's DER encoding,  
  calculated using the SHA-256 algorithm.  
   
-
+</pre>
 ### sha1Fingerprint ###
-  
+<pre>  
  The fingerprint of the certificate's DER encoding,  
  calculated using the SHA1 algorithm.  
   
-
+</pre>
 ### tokenName ###
-  
+<pre>  
  A human readable name identifying the hardware or  
  software token the certificate is stored on.  
   
-
+</pre>
 ### issuerName ###
-  
+<pre>  
  The subject identifying the issuer certificate.  
   
-
+</pre>
 ### serialNumber ###
-  
+<pre>  
  The serial number the issuer assigned to this certificate.  
   
-
+</pre>
 ### issuerCommonName ###
-  
+<pre>  
  The issuer subject's common name.  
   
-
+</pre>
 ### issuerOrganization ###
-  
+<pre>  
  The issuer subject's organization.  
   
-
+</pre>
 ### issuerOrganizationUnit ###
-  
+<pre>  
  The issuer subject's organizational unit.  
   
-
+</pre>
 ### issuer ###
-  
+<pre>  
  The certificate used by the issuer to sign this certificate.  
   
-
+</pre>
 ### validity ###
-  
+<pre>  
  This certificate's validity period.  
   
-
+</pre>
 ### dbKey ###
-  
+<pre>  
  A unique identifier of this certificate within the local storage.  
   
-
+</pre>
 ### windowTitle ###
-  
+<pre>  
  A human readable identifier to label this certificate.  
   
-
+</pre>
 ### certType ###
-  
+<pre>  
 Type of this certificate  
   
-
+</pre>
 ### isSelfSigned ###
-  
+<pre>  
  True if the certificate is self-signed. CA issued  
  certificates are always self-signed.  
   
-
+</pre>
 ### ASN1Structure ###
-  
+<pre>  
  This is the attribute which describes the ASN1 layout  
  of the certificate.  This can be used when doing a  
  "pretty print" of the certificate's ASN1 structure.  
   
-
+</pre>
 ### sha256SubjectPublicKeyInfoDigest ###
-  
+<pre>  
 The base64 encoding of the DER encoded public key info using the specified  
 digest.  
   
-
+</pre>
 ## Constants ##
 
 ### UNKNOWN_CERT ###
-  
+<pre>  
  Constants to classify the type of a certificate.  
   
-
+</pre>
 ### CA_CERT ###
 
 ### USER_CERT ###
@@ -451,10 +451,10 @@ digest.
 ### ANY_CERT ###
 
 ### VERIFIED_OK ###
-  
+<pre>  
  Constants for certificate verification results.  
   
-
+</pre>
 ### NOT_VERIFIED_UNKNOWN ###
 
 ### CERT_REVOKED ###
@@ -474,12 +474,12 @@ digest.
 ### SIGNATURE_ALGORITHM_DISABLED ###
 
 ### CERT_USAGE_SSLClient ###
-  
+<pre>  
  Constants that describe the certified usages of a certificate.  
   
  Deprecated and unused  
   
-
+</pre>
 ### CERT_USAGE_SSLServer ###
 
 ### CERT_USAGE_SSLServerWithStepUp ###
@@ -503,10 +503,10 @@ digest.
 ### CERT_USAGE_AnyCA ###
 
 ### CMS_CHAIN_MODE_CertOnly ###
-  
+<pre>  
  Constants for specifying the chain mode when exporting a certificate  
   
-
+</pre>
 ### CMS_CHAIN_MODE_CertChain ###
 
 ### CMS_CHAIN_MODE_CertChainWithRoot ###

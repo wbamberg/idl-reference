@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### getGethashUrl(tableName) ###
-  
+<pre>  
 Get the gethash url for this table  
   
-
+</pre>
 ### registerTable(tableName, updateUrl, gethashUrl) ###
-  
+<pre>  
 Add a table to the list of tables we are managing. The name is a  
 string of the format provider_name-semantic_type-table_type.  For  
 @param tableName A string of the format  
@@ -24,7 +24,7 @@ string of the format provider_name-semantic_type-table_type.  For
 @param updateUrl The URL from which to fetch updates.  
 @param gethashUrl The URL from which to fetch hash completions.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -52,24 +52,25 @@ string of the format provider_name-semantic_type-table_type.  For
 </table>
 
 ### enableUpdate(tableName) ###
-  
+<pre>  
 Turn on update checking for a table. I.e., during the next server  
 check, download updates for this table.  
   
-
+</pre>
 ### disableUpdate(tableName) ###
-  
+<pre>  
 Turn off update checking for a table.  
   
-
+</pre>
 ### maybeToggleUpdateChecking() ###
-  
+<pre>  
 Toggle update checking, if necessary.  
   
-
+</pre>
 ### safeLookup(key, cb) ###
-  
+<pre>  
 Lookup a key.  Should not raise exceptions.  Calls the callback  
 function with a comma-separated list of tables to which the key  
 belongs.  
   
+</pre>

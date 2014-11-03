@@ -10,9 +10,10 @@ layout: default
 ## Methods ##
 
 ### last() ###
- Last will reset the list to the end. will return NS_FAILED if no items  
+<pre> Last will reset the list to the end. will return NS_FAILED if no items  
   
-
+</pre>
 ### prev() ###
- Prev will decrement the list. will return failed if already at beginning  
+<pre> Prev will decrement the list. will return failed if already at beginning  
   
+</pre>

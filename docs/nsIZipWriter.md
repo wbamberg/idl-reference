@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIZipWriter #
-  
+<pre>  
 nsIZipWriter  
   
 An interface for a zip archiver that can be used from script.  
@@ -32,11 +32,11 @@ It is not generally necessary to add directory entries in order to add file
 entries within them, however it is possible that some zip programs may  
 experience problems what that.  
   
-
+</pre>
 ## Methods ##
 
 ### open(aFile, aIoFlags) ###
-  
+<pre>  
 Opens a zip file.  
   
 @param aFile the zip file to open  
@@ -50,7 +50,7 @@ Opens a zip file.
 @throws <other-error> on failure to open zip file (most likely corrupt  
  or unsupported form)  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -70,13 +70,13 @@ Opens a zip file.
 </table>
 
 ### getEntry(aZipEntry) ###
-  
+<pre>  
 Returns a nsIZipEntry describing a specified zip entry or null if there  
 is no such entry in the zip file  
   
 @param aZipEntry the path of the entry  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -90,12 +90,12 @@ is no such entry in the zip file
 </table>
 
 ### hasEntry(aZipEntry) ###
-  
+<pre>  
 Checks whether the zipfile contains an entry specified by zipEntry.  
   
 @param aZipEntry the path of the entry  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -109,7 +109,7 @@ Checks whether the zipfile contains an entry specified by zipEntry.
 </table>
 
 ### addEntryDirectory(aZipEntry, aModTime, aQueue) ###
-  
+<pre>  
 Adds a new directory entry to the zip file. If aZipEntry does not end with  
 "/" then it will be added.  
   
@@ -123,7 +123,7 @@ Adds a new directory entry to the zip file. If aZipEntry does not end with
  file  
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -150,7 +150,7 @@ Adds a new directory entry to the zip file. If aZipEntry does not end with
 </table>
 
 ### addEntryFile(aZipEntry, aCompression, aFile, aQueue) ###
-  
+<pre>  
 Adds a new file or directory to the zip file. If the specified file is  
 a directory then this will be equivalent to a call to  
 addEntryDirectory(aZipEntry, aFile.lastModifiedTime, aQueue)  
@@ -166,7 +166,7 @@ addEntryDirectory(aZipEntry, aFile.lastModifiedTime, aQueue)
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress  
 @throws NS_ERROR_FILE_NOT_FOUND if file does not exist  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -199,7 +199,7 @@ addEntryDirectory(aZipEntry, aFile.lastModifiedTime, aQueue)
 </table>
 
 ### addEntryChannel(aZipEntry, aModTime, aCompression, aChannel, aQueue) ###
-  
+<pre>  
 Adds data from a channel to the zip file. If the operation is performed  
 on the queue then the channel will be opened asynchronously, otherwise  
 the channel must support being opened synchronously.  
@@ -215,7 +215,7 @@ the channel must support being opened synchronously.
 @throws NS_ERROR_FILE_ALREADY_EXISTS if the path already exists in the zip  
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -254,7 +254,7 @@ the channel must support being opened synchronously.
 </table>
 
 ### addEntryStream(aZipEntry, aModTime, aCompression, aStream, aQueue) ###
-  
+<pre>  
 Adds data from an input stream to the zip file.  
   
 @param aZipEntry the path of the file entry  
@@ -268,7 +268,7 @@ Adds data from an input stream to the zip file.
 @throws NS_ERROR_FILE_ALREADY_EXISTS if the path already exists in the zip  
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -307,7 +307,7 @@ Adds data from an input stream to the zip file.
 </table>
 
 ### removeEntry(aZipEntry, aQueue) ###
-  
+<pre>  
 Removes an existing entry from the zip file.  
   
 @param aZipEntry the path of the entry to be removed  
@@ -319,7 +319,7 @@ Removes an existing entry from the zip file.
 @throws NS_ERROR_FILE_NOT_FOUND if no entry with the given path exists  
 @throws <other-error> on failure to update the zip file  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -340,7 +340,7 @@ Removes an existing entry from the zip file.
 </table>
 
 ### processQueue(aObserver, aContext) ###
-  
+<pre>  
 Processes all queued items until complete or some error occurs. The  
 observer will be notified when the first operation starts and when the  
 last operation completes. Any failures will be passed to the observer.  
@@ -352,18 +352,18 @@ continue.
 @throws NS_ERROR_NOT_INITIALIZED if no zip file has been opened  
 @throws NS_ERROR_IN_PROGRESS if the queue is already in progress  
   
-
+</pre>
 ### close() ###
-  
+<pre>  
 Closes the zip file.  
   
 @throws NS_ERROR_NOT_INITIALIZED if no zip file has been opened  
 @throws NS_ERROR_IN_PROGRESS if another operation is currently in progress  
 @throws <other-error> on failure to complete the zip file  
   
-
+</pre>
 ### alignStoredFiles(aAlignSize) ###
-  
+<pre>  
 Make all stored(uncompressed) files align to given alignment size.  
   
 @param aAlignSize is the alignment size, valid values from 2 to 32768, and  
@@ -372,7 +372,7 @@ must be power of 2.
 @throws NS_ERROR_INVALID_ARG if aAlignSize is invalid  
 @throws <other-error> on failure to update the zip file  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -389,29 +389,29 @@ must be power of 2.
 ## Attributes ##
 
 ### comment ###
-  
+<pre>  
 Gets or sets the comment associated with the open zip file.  
   
 @throws NS_ERROR_NOT_INITIALIZED if no zip file has been opened  
   
-
+</pre>
 ### inQueue ###
-  
+<pre>  
 Indicates that operations on the background queue are being performed.  
   
-
+</pre>
 ### file ###
-  
+<pre>  
 The file that the zipwriter is writing to.  
   
-
+</pre>
 ## Constants ##
 
 ### COMPRESSION_NONE ###
-  
+<pre>  
 Some predefined compression levels  
   
-
+</pre>
 ### COMPRESSION_FASTEST ###
 
 ### COMPRESSION_DEFAULT ###

@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIApplicationReputationQuery #
-  
+<pre>  
 A single-use, write-once interface for recording the metadata of the  
 downloaded file. nsIApplicationReputationService.Start() may only be called  
 once with a single query.  
   
-
+</pre>
 ## Attributes ##
 
 ### sourceURI ###

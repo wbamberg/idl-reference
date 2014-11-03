@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIURL #
-  
+<pre>  
 The nsIURL interface provides convenience methods that further  
 break down the path portion of nsIURI:  
   
@@ -20,11 +20,11 @@ http://host/directory/fileBaseName.fileExtension#ref
                            |  
                        filePath  
   
-
+</pre>
 ## Methods ##
 
 ### getCommonBaseSpec(aURIToCompare) ###
-  
+<pre>  
 This method takes a uri and compares the two.  The common uri portion  
 is returned as a string.  The minimum common uri portion is the   
 protocol, and any of these if present:  login, password, host and port  
@@ -45,9 +45,9 @@ Examples:
 8) ftp://foo.com/c.htm#i   ftp://foo.com/c.htm       ftp://foo.com/c.htm  
 9) file:///a/b/c.html      file:///d/e/c.html        file:///  
   
-
+</pre>
 ### getRelativeSpec(aURIToCompare) ###
-  
+<pre>  
 This method tries to create a string which specifies the location of the  
 argument relative to |this|.  If the argument and |this| are equal, the  
 method returns "".  If any of the URIs' scheme, host, userpass, or port  
@@ -61,34 +61,34 @@ Examples:
 4) http://foo.com/         http://foo.com/a.htm#b    a.html#b  
 5) http://foo.com/a/b/     http://foo.com/c          ../../c  
   
-
+</pre>
 ## Attributes ##
 
 ### filePath ###
-*********************************************************************  
+<pre>*********************************************************************  
 The URL path is broken down into the following principal components:  
   
-  
+</pre><pre>  
 Returns a path including the directory and file portions of a  
 URL.  For example, the filePath of "http://host/foo/bar.html#baz"  
 is "/foo/bar.html".  
   
 Some characters may be escaped.  
   
-
+</pre>
 ### query ###
-  
+<pre>  
 Returns the query portion (the part after the "?") of the URL.  
 If there isn't one, an empty string is returned.  
   
 Some characters may be escaped.  
   
-
+</pre>
 ### directory ###
-*********************************************************************  
+<pre>*********************************************************************  
 The URL filepath is broken down into the following sub-components:  
   
-  
+</pre><pre>  
 Returns the directory portion of a URL.  If the URL denotes a path to a  
 directory and not a file, e.g. http://host/foo/bar/, then the Directory  
 attribute accesses the complete /foo/bar/ portion, and the FileName is  
@@ -100,9 +100,9 @@ portion for sure.
   
 Some characters may be escaped.  
   
-
+</pre>
 ### fileName ###
-  
+<pre>  
 Returns the file name portion of a URL.  If the URL denotes a path to a  
 directory and not a file, e.g. http://host/foo/bar/, then the Directory  
 attribute accesses the complete /foo/bar/ portion, and the FileName is  
@@ -111,21 +111,22 @@ last trailing slash. And hence don't rely on this to be a definite file.
   
 Some characters may be escaped.  
   
-
+</pre>
 ### fileBaseName ###
-*********************************************************************  
+<pre>*********************************************************************  
 The URL filename is broken down even further:  
   
-  
+</pre><pre>  
 Returns the file basename portion of a filename in a url.  
   
 Some characters may be escaped.  
   
-
+</pre>
 ### fileExtension ###
-  
+<pre>  
 Returns the file extension portion of a filename in a url.  If a file  
 extension does not exist, the empty string is returned.  
   
 Some characters may be escaped.  
   
+</pre>

@@ -6,13 +6,14 @@ layout: default
 </div>
 
 # nsIRDFInt #
-  
+<pre>  
 A literal node in the graph, whose value is an integer  
   
-
+</pre>
 ## Attributes ##
 
 ### Value ###
-  
+<pre>  
 The integer value of the literal  
   
+</pre>

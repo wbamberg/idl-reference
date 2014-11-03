@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIUDPMessage #
-  
+<pre>  
 nsIUDPMessage  
   
 This interface is used to encapsulate an incomming UDP message  
   
-
+</pre>
 ## Methods ##
 
 ### getDataAsTArray() ###
@@ -19,21 +19,22 @@ This interface is used to encapsulate an incomming UDP message
 ## Attributes ##
 
 ### fromAddr ###
-  
+<pre>  
 Address of the source of the message  
   
-
+</pre>
 ### data ###
-  
+<pre>  
 Data of the message  
   
-
+</pre>
 ### outputStream ###
-  
+<pre>  
 Stream to send a response  
   
-
+</pre>
 ### rawData ###
-  
+<pre>  
 Raw Data of the message  
   
+</pre>

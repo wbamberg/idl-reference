@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIXULSortService #
-  
+<pre>  
 A service used to sort the contents of a XUL widget.  
   
-
+</pre>
 ## Methods ##
 
 ### sort(aNode, aSortKey, aSortHints) ###
-  
+<pre>  
 Sort the contents of the widget containing <code>aNode</code>  
 using <code>aSortKey</code> as the comparison key, and  
 <code>aSortDirection</code> as the direction.  
@@ -28,7 +28,7 @@ using <code>aSortKey</code> as the comparison key, and
   integer: treat values as integers, non-integers are compared as strings  
   twostate: don't allow the natural (unordered state)  
   
-
+</pre>
 #### Parameters ####
 
 <table>

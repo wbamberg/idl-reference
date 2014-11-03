@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIContextMenuListener2 #
-  
+<pre>  
 nsIContextMenuListener2  
   
 This is an extended version of nsIContextMenuListener  
@@ -16,11 +16,11 @@ background images as well as various utilities.
 @see nsIContextMenuListener  
 @see nsIContextMenuInfo  
   
-
+</pre>
 ## Methods ##
 
 ### onShowContextMenu(aContextFlags, aUtils) ###
-  
+<pre>  
 Called when the browser receives a context menu event (e.g. user is right-mouse  
 clicking somewhere on the document). The combination of flags, along with the  
 attributes of <CODE>aUtils</CODE>, indicate where and what was clicked on.  
@@ -44,7 +44,7 @@ CONTEXT_BACKGROUND_IMAGE       <HTML> with background image
   
 @see nsIContextMenuInfo  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -66,22 +66,23 @@ CONTEXT_BACKGROUND_IMAGE       <HTML> with background image
 ## Constants ##
 
 ### CONTEXT_NONE ###
- Flag. No context. */  
-
+<pre> Flag. No context. */  
+</pre>
 ### CONTEXT_LINK ###
- Flag. Context is a link element. */  
-
+<pre> Flag. Context is a link element. */  
+</pre>
 ### CONTEXT_IMAGE ###
- Flag. Context is an image element. */  
-
+<pre> Flag. Context is an image element. */  
+</pre>
 ### CONTEXT_DOCUMENT ###
- Flag. Context is the whole document. */  
-
+<pre> Flag. Context is the whole document. */  
+</pre>
 ### CONTEXT_TEXT ###
- Flag. Context is a text area element. */  
-
+<pre> Flag. Context is a text area element. */  
+</pre>
 ### CONTEXT_INPUT ###
- Flag. Context is an input element. */  
-
+<pre> Flag. Context is an input element. */  
+</pre>
 ### CONTEXT_BACKGROUND_IMAGE ###
- Flag. Context is a background image. */  
+<pre> Flag. Context is a background image. */  
+</pre>

@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIRemoteOpenFileListener #
-  
+<pre>  
 nsIRemoteOpenFileListener: passed to RemoteOpenFileChild::AsyncRemoteFileOpen.  
   
 Interface for notifying when the file has been opened and is available in  
 child.  
   
-
+</pre>
 ## Methods ##
 
 ### onRemoteFileOpenComplete(aOpenStatus) ###
-  
+<pre>  
 Called when result of opening RemoteOpenFileChild:AsyncRemoteFileOpen()  
 is available in child.  
   
@@ -26,7 +26,7 @@ passes the same flags as were passed to
 RemoteOpenFileChild::AsyncRemoteFileOpen is guaranteed to succeed.  If  
 !NS_OK or if different flags were passed, the call will fail.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

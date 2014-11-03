@@ -10,12 +10,12 @@ layout: default
 ## Methods ##
 
 ### testPermission(principal) ###
-  
+<pre>  
 Test whether a website has permission to show a popup window.  
 @param   principal is the principal to be tested  
 @return  one of the enumerated permission actions defined above  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -42,10 +42,10 @@ Test whether a website has permission to show a popup window.
 ## Constants ##
 
 ### ALLOW_POPUP ###
-  
+<pre>  
 These values are returned by the testPermission method  
   
-
+</pre>
 ### DENY_POPUP ###
 
 ### ALLOW_POPUP_WITH_PREJUDICE ###

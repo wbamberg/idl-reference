@@ -6,21 +6,21 @@ layout: default
 </div>
 
 # nsIWebBrowserChrome #
-  
+<pre>  
 nsIWebBrowserChrome corresponds to the top-level, outermost window  
 containing an embedded Gecko web browser.  
   
-
+</pre>
 ## Methods ##
 
 ### setStatus(statusType, status) ###
-  
+<pre>  
 Called when the status text in the chrome needs to be updated.  
 @param statusType indicates what is setting the text  
 @param status status string. null is an acceptable value meaning  
               no status.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -41,19 +41,19 @@ Called when the status text in the chrome needs to be updated.
 </table>
 
 ### destroyBrowserWindow() ###
-  
+<pre>  
 Asks the implementer to destroy the window associated with this  
 WebBrowser object.  
   
-
+</pre>
 ### sizeBrowserTo(aCX, aCY) ###
-  
+<pre>  
 Tells the chrome to size itself such that the browser will be the   
 specified size.  
 @param aCX new width of the browser  
 @param aCY new height of the browser  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -73,12 +73,12 @@ specified size.
 </table>
 
 ### showAsModal() ###
-  
+<pre>  
 Shows the window as a modal window.  
 @return (the function error code) the status value specified by  
         in exitModalEventLoop.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -92,11 +92,11 @@ Shows the window as a modal window.
 </table>
 
 ### isWindowModal() ###
-  
+<pre>  
 Is the window modal (that is, currently executing a modal loop)?  
 @return true if it's a modal window  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -109,12 +109,12 @@ Is the window modal (that is, currently executing a modal loop)?
 </table>
 
 ### exitModalEventLoop(aStatus) ###
-  
+<pre>  
 Exit a modal event loop if we're in one. The implementation  
 should also exit out of the loop if the window is destroyed.  
 @param aStatus - the result code to return from showAsModal  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -130,7 +130,7 @@ should also exit out of the loop if the window is destroyed.
 ## Attributes ##
 
 ### webBrowser ###
-  
+<pre>  
 The currently loaded WebBrowser.  The browser chrome may be  
 told to set the WebBrowser object to a new object by setting this  
 attribute.  In this case the implementer is responsible for taking the   
@@ -138,14 +138,14 @@ new WebBrowser object and doing any necessary initialization or setup
 as if it had created the WebBrowser itself.  This includes positioning  
 setting up listeners etc.  
   
-
+</pre>
 ### chromeFlags ###
-  
+<pre>  
 The chrome flags for this browser chrome. The implementation should  
 reflect the value of this attribute by hiding or showing its chrome  
 appropriately.  
   
-
+</pre>
 ## Constants ##
 
 ### STATUS_SCRIPT ###
@@ -153,10 +153,10 @@ appropriately.
 ### STATUS_LINK ###
 
 ### CHROME_DEFAULT ###
-  
+<pre>  
 Definitions for the chrome flags  
   
-
+</pre>
 ### CHROME_WINDOW_BORDERS ###
 
 ### CHROME_WINDOW_CLOSE ###

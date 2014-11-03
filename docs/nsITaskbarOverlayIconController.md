@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsITaskbarOverlayIconController #
-  
+<pre>  
 Starting in Windows 7, applications can display an overlay on the icon in  
 the taskbar. This class wraps around the native functionality to do this.  
   
-
+</pre>
 ## Methods ##
 
 ### setOverlayIcon(statusIcon, statusDescription) ###
-  
+<pre>  
 Sets the overlay icon and its corresponding alt text.  
   
 @param statusIcon The handle to the overlay icon. The icon will be scaled  
@@ -33,7 +33,7 @@ Sets the overlay icon and its corresponding alt text.
   and if a previous overlay set for a different window in the group is  
   still available, then that previous overlay is displayed.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

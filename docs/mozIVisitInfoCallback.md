@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # mozIVisitInfoCallback #
-  
+<pre>  
 Shared Callback interface for mozIAsyncHistory methods. The semantics  
 for each method are detailed in mozIAsyncHistory.  
   
-
+</pre>
 ## Methods ##
 
 ### handleError(aResultCode, aPlaceInfo) ###
-  
+<pre>  
 Called when the given place could not be processed.  
   
 @param aResultCode  
@@ -22,7 +22,7 @@ Called when the given place could not be processed.
 @param aPlaceInfo  
        The information that was given to the caller for the place.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -42,13 +42,13 @@ Called when the given place could not be processed.
 </table>
 
 ### handleResult(aPlaceInfo) ###
-  
+<pre>  
 Called for each place processed successfully.  
   
 @param aPlaceInfo  
        The current info stored for the place.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -62,6 +62,7 @@ Called for each place processed successfully.
 </table>
 
 ### handleCompletion() ###
-  
+<pre>  
 Called when all records were processed.  
   
+</pre>

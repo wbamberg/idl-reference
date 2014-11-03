@@ -6,29 +6,29 @@ layout: default
 </div>
 
 # nsIApplicationUpdateService #
-  
+<pre>  
 An interface describing a global application service that handles performing  
 background update checks and provides utilities for selecting and  
 downloading update patches.  
   
-
+</pre>
 ## Methods ##
 
 ### checkForBackgroundUpdates() ###
-  
+<pre>  
 Checks for available updates in the background using the listener provided  
 by the application update service for background checks.  
   
-
+</pre>
 ### selectUpdate(updates, updateCount) ###
-  
+<pre>  
 Selects the best update to install from a list of available updates.  
 @param   updates  
          An array of updates that are available  
 @param   updateCount  
          The length of the |updates| array  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -48,7 +48,7 @@ Selects the best update to install from a list of available updates.
 </table>
 
 ### addDownloadListener(listener) ###
-  
+<pre>  
 Adds a listener that receives progress and state information about the  
 update that is currently being downloaded, e.g. to update a user  
 interface.  
@@ -57,7 +57,7 @@ interface.
          nsIProgressEventSink that is to be notified of state and  
          progress information as the update is downloaded.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -73,13 +73,13 @@ interface.
 </table>
 
 ### removeDownloadListener(listener) ###
-  
+<pre>  
 Removes a listener that is receiving progress and state information  
 about the update that is currently being downloaded.  
 @param   listener  
          The listener object to remove.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -93,18 +93,18 @@ about the update that is currently being downloaded.
 </table>
 
 ### downloadUpdate(update, background) ###
+<pre>  
   
   
-  
-
+</pre>
 ### applyOsUpdate(update) ###
-  
+<pre>  
 Apply the OS update which has been downloaded and staged as applied.  
 @param   update   
          The update has been downloaded and staged as applied.  
 @throws  if the update object is not an OS update.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -119,11 +119,11 @@ Apply the OS update which has been downloaded and staged as applied.
 </table>
 
 ### getUpdatesDirectory() ###
-  
+<pre>  
 Get the Active Updates directory  
 @returns An nsIFile for the active updates directory.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -136,48 +136,49 @@ Get the Active Updates directory
 </table>
 
 ### pauseDownload() ###
-  
+<pre>  
 Pauses the active update download process  
   
-
+</pre>
 ## Attributes ##
 
 ### backgroundChecker ###
-  
+<pre>  
 The Update Checker used for background update checking.  
   
-
+</pre>
 ### isDownloading ###
-  
+<pre>  
 Whether or not there is an download happening at the moment.  
   
-
+</pre>
 ### canCheckForUpdates ###
-  
+<pre>  
 Whether or not the Update Service can check for updates. This is a function  
 of whether or not application update is disabled by the application and the  
 platform the application is running on.  
   
-
+</pre>
 ### canApplyUpdates ###
-  
+<pre>  
 Whether or not the Update Service can download and install updates.  
 On Windows, this is a function of whether or not the maintenance service  
 is installed and enabled. On other systems, and as a fallback on Windows,  
 this depends on whether the current user has write access to the install  
 directory.  
   
-
+</pre>
 ### isOtherInstanceHandlingUpdates ###
-  
+<pre>  
 Whether or not a different instance is handling updates of this  
 installation.  This currently only ever returns true on Windows  
 when 2 instances of an application are open or when both the Metro  
 and Desktop browsers are open.  Only one of the instances will actually  
 handle updates for the installation.  
   
-
+</pre>
 ### canStageUpdates ###
-  
+<pre>  
 Whether the Update Service is able to stage updates.  
   
+</pre>

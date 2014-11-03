@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### downloadDone(aSource, aTarget, aContentType, aIsPrivate) ###
-  
+<pre>  
 Perform platform specific operations when a download is done.  
   
   Windows:  
@@ -34,7 +34,7 @@ Perform platform specific operations when a download is done.
        True for private downloads  
 @return none  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -77,7 +77,7 @@ Perform platform specific operations when a download is done.
 </table>
 
 ### mapUrlToZone(aURL) ###
-  
+<pre>  
 Proxy for IInternetSecurityManager::MapUrlToZone().  
   
   Windows only.  
@@ -86,7 +86,7 @@ Proxy for IInternetSecurityManager::MapUrlToZone().
        URI of the download  
 @return Security Zone corresponding to aURL.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -113,10 +113,10 @@ Proxy for IInternetSecurityManager::MapUrlToZone().
 ## Constants ##
 
 ### ZONE_MY_COMPUTER ###
-  
+<pre>  
 Security Zone constants. Used by mapUrlToZone().  
   
-
+</pre>
 ### ZONE_INTRANET ###
 
 ### ZONE_TRUSTED ###

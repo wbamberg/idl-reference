@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIGeneratingKeypairInfoDialogs #
-  
+<pre>  
 nsIGeneratingKeypairInfoDialogs  
  This is the interface for giving feedback to the user  
  while generating a key pair.  
   
-
+</pre>
 ## Methods ##
 
 ### displayGeneratingKeypairInfo(ctx, runnable) ###

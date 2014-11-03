@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMEvent #
-  
+<pre>  
 The nsIDOMEvent interface is the primary datatype for all events in  
 the Document Object Model.  
   
@@ -14,11 +14,11 @@ For more information on this interface please see
 http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html and  
 http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html  
   
-
+</pre>
 ## Methods ##
 
 ### stopPropagation() ###
-  
+<pre>  
 The stopPropagation method is used prevent further propagation of an   
 event during event flow. If this method is called by any   
 EventListener the event will cease propagating through the tree. The   
@@ -26,9 +26,9 @@ event will complete dispatch to all listeners on the current
 EventTarget before event flow stops. This method may be used during   
 any stage of event flow.  
   
-
+</pre>
 ### preventDefault() ###
-  
+<pre>  
 If an event is cancelable, the preventDefault method is used to   
 signify that the event is to be canceled, meaning any default action   
 normally taken by the implementation as a result of the event will   
@@ -40,9 +40,9 @@ called it will remain in effect throughout the remainder of the
 event's propagation. This method may be used during any stage of   
 event flow.  
   
-
+</pre>
 ### initEvent(eventTypeArg, canBubbleArg, cancelableArg) ###
-  
+<pre>  
 The initEvent method is used to initialize the value of an Event   
 created through the DocumentEvent interface. This method may only be   
 called before the Event has been dispatched via the dispatchEvent   
@@ -68,7 +68,7 @@ attributes are left unchanged.
 @param   cancelableArg Specifies whether or not the event's default   
                        action can be prevented.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -106,17 +106,17 @@ attributes are left unchanged.
 </table>
 
 ### stopImmediatePropagation() ###
-  
+<pre>  
 Prevents other event listeners from being triggered and,  
 unlike Event.stopPropagation() its effect is immediate.  
   
-
+</pre>
 ### getPreventDefault() ###
-  
+<pre>  
 @deprecated Use nsIDOMEvent::defaultPrevented.  
 To be removed in bug 691151.  
   
-
+</pre>
 ### duplicatePrivateData() ###
 
 ### setTarget(aTarget) ###
@@ -138,45 +138,45 @@ To be removed in bug 691151.
 ## Attributes ##
 
 ### type ###
-  
+<pre>  
 The name of the event (case-insensitive). The name must be an XML   
 name.  
   
-
+</pre>
 ### target ###
-  
+<pre>  
 Used to indicate the EventTarget to which the event was originally   
 dispatched.  
   
-
+</pre>
 ### currentTarget ###
-  
+<pre>  
 Used to indicate the EventTarget whose EventListeners are currently   
 being processed. This is particularly useful during capturing and   
 bubbling.  
   
-
+</pre>
 ### eventPhase ###
-  
+<pre>  
 Used to indicate which phase of event flow is currently being   
 evaluated.  
   
-
+</pre>
 ### bubbles ###
-  
+<pre>  
 Used to indicate whether or not an event is a bubbling event. If the   
 event can bubble the value is true, else the value is false.  
   
-
+</pre>
 ### cancelable ###
-  
+<pre>  
 Used to indicate whether or not an event can have its default action   
 prevented. If the default action can be prevented the value is true,   
 else the value is false.  
   
-
+</pre>
 ### timeStamp ###
-  
+<pre>  
 Used to specify the time (in milliseconds relative to the epoch) at   
 which the event was created. Due to the fact that some systems may   
 not provide this information the value of timeStamp may be not   
@@ -184,17 +184,17 @@ available for all events. When not available, a value of 0 will be
 returned. Examples of epoch time are the time of the system start or   
 0:0:0 UTC 1st January 1970.  
   
-
+</pre>
 ### defaultPrevented ###
-  
+<pre>  
 Used to indicate whether preventDefault() has been called for this event.  
   
-
+</pre>
 ### originalTarget ###
- The original target of the event, before any retargetings. */  
-
+<pre> The original target of the event, before any retargetings. */  
+</pre>
 ### explicitOriginalTarget ###
-  
+<pre>  
 The explicit original target of the event.  If the event was retargeted  
 for some reason other than an anonymous boundary crossing, this will be set  
 to the target before the retargeting occurs.  For example, mouse events  
@@ -204,31 +204,31 @@ are retargeted to their parent node when they happen over text nodes (bug
 .explicitOriginalTarget differs from .originalTarget in that it will never  
 contain anonymous content.  
   
-
+</pre>
 ### isTrusted ###
 
 ## Constants ##
 
 ### NONE ###
-  
+<pre>  
 The event isn't being dispatched.  
   
-
+</pre>
 ### CAPTURING_PHASE ###
-  
+<pre>  
 The current event phase is the capturing phase.  
   
-
+</pre>
 ### AT_TARGET ###
-  
+<pre>  
 The event is currently being evaluated at the target EventTarget.  
   
-
+</pre>
 ### BUBBLING_PHASE ###
-  
+<pre>  
 The current event phase is the bubbling phase.  
   
-
+</pre>
 ### ALT_MASK ###
 
 ### CONTROL_MASK ###

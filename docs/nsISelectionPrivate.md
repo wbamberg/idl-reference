@@ -20,36 +20,36 @@ layout: default
 ### removeSelectionListener(listenerToRemove) ###
 
 ### getTableSelectionType(range) ###
- Test if supplied range points to a single table element:  
+<pre> Test if supplied range points to a single table element:  
    Result is one of above constants. "None" means  
    a table element isn't selected.  
   
-
+</pre>
 ### getCachedFrameOffset(aFrame, inOffset, aPoint) ###
 
 ### setTextRangeStyle(range, textRangeStyle) ###
-  
+<pre>  
 Set the painting style for the range. The range must be a range in  
 the selection. The textRangeStyle will be used by text frame  
 when it is painting the selection.  
   
-
+</pre>
 ### getSelectionDirection() ###
-  
+<pre>  
 Get the direction of the selection.  
   
-
+</pre>
 ### setSelectionDirection(aDirection) ###
 
 ### GetRangesForInterval(beginNode, beginOffset, endNode, endOffset, allowAdjacent, resultCount, results) ###
-  
+<pre>  
 Return array of ranges intersecting with the given DOM interval.  
   
-
+</pre>
 ### GetRangesForIntervalArray(beginNode, beginOffset, endNode, endOffset, allowAdjacent, results) ###
 
 ### scrollIntoView(aRegion, aIsSynchronous, aVPercent, aHPercent) ###
-  
+<pre>  
 Scrolls a region of the selection, so that it is visible in  
 the scrolled view.  
   
@@ -62,7 +62,7 @@ the scrolled view.
 @param aVPercent - how to align the frame vertically.  
 @param aHPercent - how to align the frame horizontally.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -98,7 +98,7 @@ the scrolled view.
 </table>
 
 ### scrollIntoViewInternal(aRegion, aIsSynchronous, aVertical, aHorizontal) ###
-  
+<pre>  
 Scrolls a region of the selection, so that it is visible in  
 the scrolled view.  
   
@@ -113,7 +113,7 @@ the scrolled view.
 @param aHorizontal - how to align the frame horizontally and when.  
                    See nsIPresShell.h:ScrollAxis for details.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -151,12 +151,12 @@ the scrolled view.
 </table>
 
 ### selectionLanguageChange(langRTL) ###
-  
+<pre>  
 Modifies the cursor Bidi level after a change in keyboard direction  
 @param langRTL is PR_TRUE if the new language is right-to-left or  
                PR_FALSE if the new language is left-to-right.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -179,11 +179,11 @@ Modifies the cursor Bidi level after a change in keyboard direction
 ### canCacheFrameOffset ###
 
 ### type ###
-  
+<pre>  
 Returns the type of the selection (see nsISelectionController for  
 available constants).  
   
-
+</pre>
 ## Constants ##
 
 ### ENDOFPRECEDINGLINE ###

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### onStreamComplete(loader, ctxt, status, resultLength, result) ###
-  
+<pre>  
 Called when the entire stream has been loaded.  
   
 @param loader the stream loader that loaded the stream.  
@@ -30,7 +30,7 @@ in place of NS_OK as its success code. The loader will then
 onStreamComplete() returns; observer must call moz_free()  
 when the data is no longer required.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

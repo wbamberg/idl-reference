@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### scanTXT(text, whattodo) ###
-  
+<pre>  
 @param text: plain text to scan. May be a line, paragraph (recommended)  
 or just a substring.<p>  
 Must be non-escaped, pure unicode.<p>  
@@ -20,7 +20,7 @@ Scan(a + b, o)
 @result      "<", ">" and "&" are escaped and HTML tags are inserted where  
 appropriate.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -46,7 +46,7 @@ appropriate.
 </table>
 
 ### scanHTML(text, whattodo) ###
-  
+<pre>  
 Adds additional formatting to user edited text, that the user was too lazy  
 or "unknowledged" (DELETEME: is that a word?) to make.  
 <p>  
@@ -63,7 +63,7 @@ Scan(a + b, o)
 @param whattodo: Bitfield describing the modes of operation  
 @result      Additional HTML tags are inserted where appropriate.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -89,7 +89,7 @@ Scan(a + b, o)
 </table>
 
 ### citeLevelTXT(line, logLineStart) ###
-  
+<pre>  
 @param line: line in original msg, possibly starting starting with  
 txt quote tags like ">"  
 @param logLineStart: pos in line, where the real content (logical line)  
@@ -99,7 +99,7 @@ Initial value must be 0, unless line is not real line.
 @return      Cite Level, i.e. number of txt quote tags found, i.e. number of  
 nested quotes.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -135,7 +135,7 @@ nested quotes.
 </table>
 
 ### findURLInPlaintext(text, aLength, aPos, aStartPos, aEndPos) ###
-   
+<pre>   
 @param a wide string to scan for the presence of a URL.  
 @param aLength --> the length of the buffer to be scanned  
 @param aPos --> the position in the buffer to start scanning for a url  
@@ -143,7 +143,7 @@ nested quotes.
 aStartPos --> index into the start of a url (-1 if no url found)  
 aEndPos --> index of the last character in the url (-1 if no url found)  
   
-
+</pre>
 #### Parameters ####
 
 <table>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIURI #
-  
+<pre>  
 URIs are essentially structured names for things -- anything. This interface  
 provides accessors to set and query the most basic components of an URI.  
 Subclasses, including nsIURL, impose greater structure on the URI.  
@@ -39,7 +39,7 @@ convenience.
 [2] http://www.ietf.org/internet-drafts/draft-ietf-idn-idna-06.txt  
 [3] http://www.ietf.org/internet-drafts/draft-masinter-url-i18n-08.txt  
   
-  
+</pre><pre>  
 nsIURI - interface for an uniform resource identifier w/ i18n support.  
   
 AUTF8String attributes may contain unescaped UTF-8 characters.  
@@ -62,60 +62,60 @@ for sessionstore to work after an upgrade.  If this IID is revved further,
 we will need to add additional checks there for all intermediate IIDs, until  
 nsPrincipal is fixed to serialize its URIs as nsISupports (bug 662693).  
   
-
+</pre>
 ## Methods ##
 
 ### equals(other) ###
-********************************************************************  
+<pre>********************************************************************  
 An URI supports the following methods:  
   
-  
+</pre><pre>  
 URI equivalence test (not a strict string comparison).  
   
 eg. http://foo.com:80/ == http://foo.com/  
   
-
+</pre>
 ### schemeIs(scheme) ###
-  
+<pre>  
 An optimization to do scheme checks without requiring the users of nsIURI  
 to GetScheme, thereby saving extra allocating and freeing. Returns true if  
 the schemes match (case ignored).  
   
-
+</pre>
 ### clone() ###
-  
+<pre>  
 Clones the current URI.  
   
-
+</pre>
 ### resolve(relativePath) ###
-  
+<pre>  
 This method resolves a relative string into an absolute URI string,  
 using this URI as the base.   
   
 NOTE: some implementations may have no concept of a relative URI.  
   
-
+</pre>
 ### equalsExceptRef(other) ###
-  
+<pre>  
 URI equivalence test (not a strict string comparison), ignoring  
 the value of the .ref member.  
   
 eg. http://foo.com/# == http://foo.com/  
     http://foo.com/#aaa == http://foo.com/#bbb  
   
-
+</pre>
 ### cloneIgnoringRef() ###
-  
+<pre>  
 Clones the current URI, clearing the 'ref' attribute in the clone.  
   
-
+</pre>
 ## Attributes ##
 
 ### spec ###
-********************************************************************  
+<pre>********************************************************************  
 The URI is broken down into the following principal components:  
   
-  
+</pre><pre>  
 Returns a string representation of the URI. Setting the spec causes  
 the new spec to be parsed per the rules for the scheme the URI  
 currently has.  In particular, setting the spec to a URI string with a  
@@ -127,89 +127,89 @@ information on setting the spec attribute is undefined.
   
 Some characters may be escaped.  
   
-
+</pre>
 ### prePath ###
-  
+<pre>  
 The prePath (eg. scheme://user:password@host:port) returns the string  
 before the path.  This is useful for authentication or managing sessions.  
   
 Some characters may be escaped.  
   
-
+</pre>
 ### scheme ###
-  
+<pre>  
 The Scheme is the protocol to which this URI refers.  The scheme is  
 restricted to the US-ASCII charset per RFC2396.  Setting this is  
 highly discouraged outside of a protocol handler implementation, since  
 that will generally lead to incorrect results.  
   
-
+</pre>
 ### userPass ###
-  
+<pre>  
 The username:password (or username only if value doesn't contain a ':')  
   
 Some characters may be escaped.  
   
-
+</pre>
 ### username ###
-  
+<pre>  
 The optional username and password, assuming the preHost consists of  
 username:password.  
   
 Some characters may be escaped.  
   
-
+</pre>
 ### password ###
 
 ### hostPort ###
-  
+<pre>  
 The host:port (or simply the host, if port == -1).  
   
 Characters are NOT escaped.  
   
-
+</pre>
 ### host ###
-  
+<pre>  
 The host is the internet domain name to which this URI refers.  It could  
 be an IPv4 (or IPv6) address literal.  If supported, it could be a  
 non-ASCII internationalized domain name.  
   
 Characters are NOT escaped.  
   
-
+</pre>
 ### port ###
-  
+<pre>  
 A port value of -1 corresponds to the protocol's default port (eg. -1  
 implies port 80 for http URIs).  
   
-
+</pre>
 ### path ###
-  
+<pre>  
 The path, typically including at least a leading '/' (but may also be  
 empty, depending on the protocol).  
   
 Some characters may be escaped.  
   
-
+</pre>
 ### asciiSpec ###
-********************************************************************  
+<pre>********************************************************************  
 Additional attributes:  
   
-  
+</pre><pre>  
 The URI spec with an ASCII compatible encoding.  Host portion follows  
 the IDNA draft spec.  Other parts are URL-escaped per the rules of  
 RFC2396.  The result is strictly ASCII.  
   
-
+</pre>
 ### asciiHost ###
-  
+<pre>  
 The URI host with an ASCII compatible encoding.  Follows the IDNA  
 draft spec for converting internationalized domain names (UTF-8) to  
 ASCII for compatibility with existing internet infrasture.  
   
-
+</pre>
 ### originCharset ###
-  
+<pre>  
 The charset of the document from which this URI originated.  An empty  
 value implies UTF-8.  
   
@@ -218,24 +218,25 @@ If this value is something other than UTF-8 then the URI components
 Otherwise, the URI components may contain unescaped multibyte UTF-8  
 characters.  
   
-
+</pre>
 ### ref ###
-********************************************************************  
+<pre>********************************************************************  
 Additional attribute & methods added for .ref support:  
   
-  
+</pre><pre>  
 Returns the reference portion (the part after the "#") of the URI.  
 If there isn't one, an empty string is returned.  
   
 Some characters may be escaped.  
   
-
+</pre>
 ### specIgnoringRef ###
-  
+<pre>  
 returns a string for the current URI with the ref element cleared.  
   
-
+</pre>
 ### hasRef ###
-  
+<pre>  
 Returns if there is a reference portion (the part after the "#") of the URI.  
   
+</pre>

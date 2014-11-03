@@ -6,23 +6,23 @@ layout: default
 </div>
 
 # nsIUrlClassifierDBService #
-  
+<pre>  
 This is a proxy class that is instantiated and called from the JS thread.  
 It provides async methods for querying and updating the database.  As the  
 methods complete, they call the callback function.  
   
-
+</pre>
 ## Methods ##
 
 ### lookup(principal, tables, c) ###
-  
+<pre>  
 Looks up a URI in the specified tables.  
   
 @param principal: The principal containing the URI to search.  
 @param c: The callback will be called with a comma-separated list  
        of tables to which the key belongs.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -43,7 +43,7 @@ Looks up a URI in the specified tables.
 </table>
 
 ### getTables(c) ###
-  
+<pre>  
 Lists the tables along with which chunks are available in each table.  
 This list is in the format of the request body:  
   tablename;chunkdata\n  
@@ -53,23 +53,23 @@ For example:
   goog-phish-regexp;a:10,14,30-40s:56,67  
   goog-white-regexp;a:1-3,5  
   
-
+</pre>
 ### setHashCompleter(tableName, completer) ###
-  
+<pre>  
 Set the nsIUrlClassifierCompleter object for a given table.  This  
 object will be used to request complete versions of partial  
 hashes.  
   
-
+</pre>
 ### beginUpdate(updater, tables) ###
-  
+<pre>  
 Begin an update process.  Will throw NS_ERROR_NOT_AVAILABLE if there  
 is already an update in progress.  
   
 @param updater The update observer tied to this update.  
 @param tables A comma-separated list of tables included in this update.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -89,14 +89,14 @@ is already an update in progress.
 </table>
 
 ### beginStream(table) ###
-  
+<pre>  
 Begin a stream update.  This should be called once per url being  
 fetched.  
   
 @param table The table the contents of this stream will be associated  
              with, or empty for the initial stream.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -111,39 +111,40 @@ fetched.
 </table>
 
 ### updateStream(updateChunk) ###
-  
+<pre>  
 Update the table incrementally.  
   
-
+</pre>
 ### finishStream() ###
-  
+<pre>  
 Finish an individual stream update.  Must be called for every  
 beginStream() call, before the next beginStream() or finishUpdate().  
   
 The update observer's streamFinished will be called once the  
 stream has been processed.  
   
-
+</pre>
 ### finishUpdate() ###
-  
+<pre>  
 Finish an incremental update.  This will attempt to commit any  
 pending changes and resets the update interface.  
   
 The update observer's updateSucceeded or updateError methods  
 will be called when the update has been processed.  
   
-
+</pre>
 ### cancelUpdate() ###
-  
+<pre>  
 Cancel an incremental update.  This rolls back any pending changes.  
 and resets the update interface.  
   
 The update observer's updateError method will be called when the  
 update has been rolled back.  
   
-
+</pre>
 ### resetDatabase() ###
-  
+<pre>  
 Reset the url-classifier database.  This call will delete the existing  
 database, emptying all tables.  Mostly intended for use in unit tests.  
   
+</pre>

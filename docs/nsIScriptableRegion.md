@@ -12,14 +12,14 @@ layout: default
 ### init() ###
 
 ### setToRegion(aRegion) ###
-  
+<pre>  
 copy operator equivalent that takes another region  
   
 @param      region to copy  
 @return     void  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -44,7 +44,7 @@ copy operator equivalent that takes another region
 </table>
 
 ### setToRect(aX, aY, aWidth, aHeight) ###
-  
+<pre>  
 copy operator equivalent that takes a rect  
   
 @param      aX xoffset of rect to set region to  
@@ -54,7 +54,7 @@ copy operator equivalent that takes a rect
 @return     void  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -97,14 +97,14 @@ copy operator equivalent that takes a rect
 </table>
 
 ### intersectRegion(aRegion) ###
-  
+<pre>  
 destructively intersect another region with this one  
   
 @param      region to intersect  
 @return     void  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -129,7 +129,7 @@ destructively intersect another region with this one
 </table>
 
 ### intersectRect(aX, aY, aWidth, aHeight) ###
-  
+<pre>  
 destructively intersect a rect with this region  
   
 @param      aX xoffset of rect to intersect with region  
@@ -139,7 +139,7 @@ destructively intersect a rect with this region
 @return     void  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -182,14 +182,14 @@ destructively intersect a rect with this region
 </table>
 
 ### unionRegion(aRegion) ###
-  
+<pre>  
 destructively union another region with this one  
   
 @param      region to union  
 @return     void  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -214,7 +214,7 @@ destructively union another region with this one
 </table>
 
 ### unionRect(aX, aY, aWidth, aHeight) ###
-  
+<pre>  
 destructively union a rect with this region  
   
 @param      aX xoffset of rect to union with region  
@@ -224,7 +224,7 @@ destructively union a rect with this region
 @return     void  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -267,14 +267,14 @@ destructively union a rect with this region
 </table>
 
 ### subtractRegion(aRegion) ###
-  
+<pre>  
 destructively subtract another region with this one  
   
 @param      region to subtract  
 @return     void  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -299,7 +299,7 @@ destructively subtract another region with this one
 </table>
 
 ### subtractRect(aX, aY, aWidth, aHeight) ###
-  
+<pre>  
 destructively subtract a rect from this region  
   
 @param      aX xoffset of rect to subtract with region  
@@ -309,7 +309,7 @@ destructively subtract a rect from this region
 @return     void  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -352,14 +352,14 @@ destructively subtract a rect from this region
 </table>
 
 ### isEmpty() ###
-  
+<pre>  
 is this region empty? i.e. does it contain any pixels  
   
 @param      none  
 @return     returns whether the region is empty  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -383,7 +383,7 @@ is this region empty? i.e. does it contain any pixels
 </table>
 
 ### isEqualRegion(aRegion) ###
-  
+<pre>  
 == operator equivalent i.e. do the regions contain exactly  
 the same pixels  
   
@@ -391,7 +391,7 @@ the same pixels
 @return     whether the regions are identical  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -416,7 +416,7 @@ the same pixels
 </table>
 
 ### getBoundingBox(aX, aY, aWidth, aHeight) ###
-  
+<pre>  
 returns the bounding box of the region i.e. the smallest  
 rectangle that completely contains the region.          
   
@@ -427,7 +427,7 @@ rectangle that completely contains the region.
 @return     void  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -470,7 +470,7 @@ rectangle that completely contains the region.
 </table>
 
 ### offset(aXOffset, aYOffset) ###
-  
+<pre>  
 offsets the region in x and y  
   
 @param  xoffset  pixel offset in x  
@@ -478,7 +478,7 @@ offsets the region in x and y
 @return          void  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -509,12 +509,12 @@ offsets the region in x and y
 </table>
 
 ### getRects() ###
-  
+<pre>  
 @return null if there are no rects,  
 @return flat array of rects,ie [x1,y1,width1,height1,x2...].  
 The result will contain bogus data if values don't fit in 31 bit  
 /  
-
+</pre>
 #### Returns ####
 
 <table>
@@ -529,14 +529,14 @@ The result will contain bogus data if values don't fit in 31 bit
 </table>
 
 ### containsRect(aX, aY, aWidth, aHeight) ###
-  
+<pre>  
 does the region intersect the rectangle?  
   
 @param      rect to check for containment  
 @return     true if the region intersects the rect  
   
 /  
-
+</pre>
 #### Parameters ####
 
 <table>

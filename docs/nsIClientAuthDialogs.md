@@ -6,15 +6,16 @@ layout: default
 </div>
 
 # nsIClientAuthDialogs #
-  
+<pre>  
 nsIClientAuthDialog  
 Provides UI for SSL client-auth dialogs.  
   
-
+</pre>
 ## Methods ##
 
 ### ChooseCertificate(ctx, cn, organization, issuer, certNickList, certDetailsList, count, selectedIndex, canceled) ###
-  
+<pre>  
 display  
   UI shown when a user is asked to do SSL client auth.  
   
+</pre>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIDOMHTMLSourceElement #
-  
+<pre>  
 The nsIDOMHTMLSourceElement interface is the interface to a HTML  
 <source> element.  
   
@@ -15,7 +15,7 @@ http://www.whatwg.org/specs/web-apps/current-work/#source
   
 @status UNDER_DEVELOPMENT  
   
-
+</pre>
 ## Attributes ##
 
 ### src ###

@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIContentDispatchChooser #
-  
+<pre>  
 This is used to ask a user what they would like to do with a given piece of  
 content.  
   
-
+</pre>
 ## Methods ##
 
 ### ask(aHandler, aWindowContext, aURI, aReason) ###
-  
+<pre>  
 Asks the user what to do with the content.  
   
 @param aHander  
@@ -30,7 +30,7 @@ Asks the user what to do with the content.
 @param aReason  
        The reason why we are asking (see above).  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -68,7 +68,8 @@ Asks the user what to do with the content.
 ## Constants ##
 
 ### REASON_CANNOT_HANDLE ###
-  
+<pre>  
 This request is passed to the helper app dialog because Gecko can not  
 handle content of this type.  
   
+</pre>

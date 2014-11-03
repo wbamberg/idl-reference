@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIHttpUpgradeListener #
-  
+<pre>  
 The callback interface for nsIHttpChannelInternal::HTTPUpgrade()  
   
-
+</pre>
 ## Methods ##
 
 ### onTransportAvailable(aTransport, aSocketIn, aSocketOut) ###

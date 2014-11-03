@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # amIWebInstallPrompt #
-  
+<pre>  
 amIWebInstallPrompt is used, if available, by the default implementation of   
 amIWebInstallInfo to display a confirmation UI to the user before running  
 installs.  
   
-
+</pre>
 ## Methods ##
 
 ### confirm(aWindow, aUri, aInstalls, aCount) ###
-  
+<pre>  
 Get a confirmation that the user wants to start the installs.  
   
 @param  aWindow  
@@ -27,7 +27,7 @@ Get a confirmation that the user wants to start the installs.
 @param  aCount  
         The number of AddonInstalls  
   
-
+</pre>
 #### Parameters ####
 
 <table>

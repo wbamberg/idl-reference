@@ -6,13 +6,14 @@ layout: default
 </div>
 
 # nsIRunnable #
-  
+<pre>  
 Represents a task which can be dispatched to a thread for execution.  
   
-
+</pre>
 ## Methods ##
 
 ### run() ###
-  
+<pre>  
 The function implementing the task to be run.  
   
+</pre>

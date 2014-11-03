@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsID #
-  
+<pre>  
 Scriptable storage for nsID structures  
   
-
+</pre>
 ## Methods ##
 
 ### toString() ###

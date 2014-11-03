@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIServiceManager #
-  
+<pre>  
 The nsIServiceManager manager interface provides a means to obtain  
 global services in an application. The service manager depends on the   
 repository to find and instantiate factories to obtain services.  
@@ -19,11 +19,11 @@ finished they can NS_RELEASE() the service as usual.
 A user of a service may keep references to particular services indefinitely  
 and only must call Release when it shuts down.  
   
-
+</pre>
 ## Methods ##
 
 ### getService(aClass, aIID, result) ###
-  
+<pre>  
 getServiceByContractID  
   
 Returns the instance that implements aClass or aContractID and the  
@@ -34,7 +34,7 @@ interface aIID.  This may result in the instance being created.
 @param aIID : IID of interface requested  
 @param result : resulting service   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -63,7 +63,7 @@ interface aIID.  This may result in the instance being created.
 ### getServiceByContractID(aContractID, aIID, result) ###
 
 ### isServiceInstantiated(aClass, aIID) ###
-  
+<pre>  
 isServiceInstantiated  
   
 isServiceInstantiated will return a true if the service has already  
@@ -76,7 +76,7 @@ been created, or throw otherwise
         instantiated  
 @throws NS_NOINTERFACE if the IID given isn't supported by the object  
   
-
+</pre>
 #### Parameters ####
 
 <table>

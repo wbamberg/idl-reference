@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIWebBrowserStream #
-  
+<pre>  
 This interface provides a way to stream data to the web browser. This allows  
 loading of data from sources which can not be accessed using URIs and  
 nsIWebNavigation.  
   
-
+</pre>
 ## Methods ##
 
 ### openStream(aBaseURI, aContentType) ###
-  
+<pre>  
 Prepare to load a stream of data. When this function returns successfully,  
 it must be paired by a call to closeStream.  
   
@@ -33,7 +33,7 @@ it must be paired by a call to closeStream.
 @throw NS_ERROR_IN_PROGRESS  
        openStream was called twice without an intermediate closeStream.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -57,14 +57,14 @@ it must be paired by a call to closeStream.
 </table>
 
 ### appendToStream(aData, aLen) ###
-  
+<pre>  
 Append data to this stream.  
 @param aData The data to append  
 @param aLen  Length of the data to append.  
   
 @note To append more than 4 GB of data, call this method multiple times.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -84,10 +84,11 @@ Append data to this stream.
 </table>
 
 ### closeStream() ###
-  
+<pre>  
 Notifies the browser that all the data has been appended. This may notify  
 the user that the browser is "done loading" in some form.  
   
 @throw NS_ERROR_UNEXPECTED  
        This method was called without a preceding openStream.  
   
+</pre>

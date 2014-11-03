@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIWebBrowserChrome3 #
-  
+<pre>  
 nsIWebBrowserChrome3 is an extension to nsIWebBrowserChrome2.  
   
-
+</pre>
 ## Methods ##
 
 ### onBeforeLinkTraversal(originalTarget, linkURI, linkNode, isAppTab) ###
-  
+<pre>  
 Determines the appropriate target for a link.  
   
 @param originalTarget  
@@ -27,7 +27,7 @@ Determines the appropriate target for a link.
 @returns A new link target, if appropriate.  
          Otherwise returns originalTarget.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -71,7 +71,7 @@ Determines the appropriate target for a link.
 </table>
 
 ### shouldLoadURI(aDocShell, aURI, aReferrer) ###
-  
+<pre>  
 Determines whether a load should continue.  
   
 @param aDocShell  
@@ -81,7 +81,7 @@ Determines whether a load should continue.
 @param aReferrer  
        The referrer of the load.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### startFlow(manifestURL, iccInfo) ###
-  
+<pre>  
 Request the creation of a Mobile ID UI flow.  
   
 The permission prompt starts the verification flow asking the user  
@@ -29,9 +29,9 @@ Returns a Promise. An instance of nsIMobileIdentityUIGluePromptResult will
 be returned as result of the Promise or a single string containing an error  
 in case of rejection.  
   
-
+</pre>
 ### verificationCodePrompt(retries, timeout, timeLeft) ###
-  
+<pre>  
 Will prompt the user to enter a code used to verify a phone number.  
 This will only be called if an external phone number is selected in  
 startFlow().  
@@ -48,31 +48,32 @@ Returns a Promise. The value of the resolved promise will be the
 verification code introduced through the UI or an error in case of  
 rejection of the promise.  
   
-
+</pre>
 ### verify() ###
-  
+<pre>  
 Notify the UI about the start of the verification process.  
   
-
+</pre>
 ### error(error) ###
-  
+<pre>  
 Notify the UI about an error in the verification process.  
   
-
+</pre>
 ### verified(verifiedPhoneNumber) ###
-  
+<pre>  
 Notify the UI about the succesful phone number verification.  
   
-
+</pre>
 ## Attributes ##
 
 ### oncancel ###
-  
+<pre>  
 Callback to be called when the user cancels the verification flow via UI.  
   
-
+</pre>
 ### onresendcode ###
-  
+<pre>  
 Callback to be called when the user requests a resend of a verification  
 code.  
   
+</pre>

@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### notifyOfInsertion(mimeType, contentSourceURL, sourceDocument, willDeleteSelection, docFragment, contentStartNode, contentStartOffset, contentEndNode, contentEndOffset, insertionPointNode, insertionPointOffset, continueWithInsertion) ###
-  
+<pre>  
 This notification occurs in an editor during these events:  
    * open of document (once rendered in window but before editable)  
    * paste from clipboard  
@@ -67,7 +67,7 @@ source document.
 @param insertionPointOffset   offset within node where insertion occurs  
 @param continueWithInsertion  flag to cancel insertion (if desired)  
   
-
+</pre>
 #### Parameters ####
 
 <table>

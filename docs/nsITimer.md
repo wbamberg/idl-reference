@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsITimer #
-  
+<pre>  
 nsITimer instances must be initialized by calling one of the "init" methods  
 documented below.  You may also re-initialize (using one of the init()  
 methods) an existing instance to avoid the overhead of destroying and  
@@ -19,11 +19,11 @@ and called one of its init functions, any further interactions with the timer
 target thread, or races may occur with bad results like timers firing after  
 they've been canceled, and/or not firing after re-initiatization.  
   
-
+</pre>
 ## Methods ##
 
 ### init(aObserver, aDelay, aType) ###
-  
+<pre>  
 Initialize a timer that will fire after the said delay.  
 A user must keep a reference to this timer till it is   
 is no longer needed or has been cancelled.  
@@ -39,7 +39,7 @@ is no longer needed or has been cancelled.
 @param aDelay      delay in milliseconds for timer to fire  
 @param aType       timer type per TYPE* consts defined above  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -67,7 +67,7 @@ is no longer needed or has been cancelled.
 </table>
 
 ### initWithFuncCallback(aCallback, aClosure, aDelay, aType) ###
-  
+<pre>  
 Initialize a timer to fire after the given millisecond interval.  
 This version takes a function to call and a closure to pass to  
 that function.  
@@ -77,7 +77,7 @@ that function.
 @param aDelay     The millisecond interval  
 @param aType      Timer type per TYPE* consts defined above  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -109,7 +109,7 @@ that function.
 </table>
 
 ### initWithCallback(aCallback, aDelay, aType) ###
-  
+<pre>  
 Initialize a timer to fire after the given millisecond interval.  
 This version takes a function to call.  
   
@@ -117,7 +117,7 @@ This version takes a function to call.
 @param aDelay     The millisecond interval  
 @param aType      Timer type per TYPE* consts defined above  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -143,56 +143,56 @@ This version takes a function to call.
 </table>
 
 ### cancel() ###
-  
+<pre>  
 Cancel the timer.  This method works on all types, not just on repeating  
 timers -- you might want to cancel a TYPE_ONE_SHOT timer, and even reuse  
 it by re-initializing it (to avoid object destruction and creation costs  
 by conserving one timer instance).  
   
-
+</pre>
 ## Attributes ##
 
 ### delay ###
-  
+<pre>  
 The millisecond delay of the timeout.  
   
 NOTE: Re-setting the delay on a one-shot timer that has already fired  
 doesn't restart the timer. Call one of the init() methods to restart  
 a one-shot timer.  
   
-
+</pre>
 ### type ###
-  
+<pre>  
 The timer type - one of the above TYPE_* constants.  
   
-
+</pre>
 ### closure ###
-  
+<pre>  
 The opaque pointer pass to initWithFuncCallback.  
   
-
+</pre>
 ### callback ###
-  
+<pre>  
 The nsITimerCallback object passed to initWithCallback.  
   
-
+</pre>
 ### target ###
-  
+<pre>  
 The nsIEventTarget where the callback will be dispatched. Note that this  
 target may only be set before the call to one of the init methods above.  
   
 By default the target is the thread that created the timer.  
   
-
+</pre>
 ## Constants ##
 
 ### TYPE_ONE_SHOT ###
-  
+<pre>  
 Type of a timer that fires once only.  
   
-
+</pre>
 ### TYPE_REPEATING_SLACK ###
-  
+<pre>  
 After firing, a TYPE_REPEATING_SLACK timer is stopped and not restarted  
 until its callback completes.  Specified timer period will be at least  
 the time between when processing for last firing the callback completes  
@@ -200,9 +200,9 @@ and when the next firing occurs.
   
 This is the preferable repeating type for most situations.  
   
-
+</pre>
 ### TYPE_REPEATING_PRECISE ###
-  
+<pre>  
 An TYPE_REPEATING_PRECISE repeating timer aims to have constant period  
 between firings.  The processing time for each timer callback should not  
 influence the timer period.  However, if the processing for the last  
@@ -221,9 +221,9 @@ will post all the events that it "missed" while it wasn't running.  Use
 this timer type with extreme caution.  Chances are, this is not what you  
 want.  
   
-
+</pre>
 ### TYPE_REPEATING_PRECISE_CAN_SKIP ###
-  
+<pre>  
 A TYPE_REPEATING_PRECISE_CAN_SKIP repeating timer aims to have constant  
 period between firings.  The processing time for each timer callback  
 should not influence the timer period.  However this timer type  
@@ -233,3 +233,4 @@ takes a long time, then the next callback will be scheduled immediately
 afterward, but only once, unlike TYPE_REPEATING_PRECISE.  If you want a  
 non-slack timer, you probably want this one.  
   
+</pre>

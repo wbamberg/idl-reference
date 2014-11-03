@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIWebSocketListener #
-  
+<pre>  
 nsIWebSocketListener: passed to nsIWebSocketChannel::AsyncOpen. Receives  
 websocket traffic events as they arrive.  
   
-
+</pre>
 ## Methods ##
 
 ### onStart(aContext) ###
-  
+<pre>  
 Called to signify the establishment of the message stream.  
   
 Unlike most other networking channels (which use nsIRequestObserver  
@@ -25,7 +25,7 @@ OnStart will be called before any other calls to this API.
   
 @param aContext user defined context  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -39,7 +39,7 @@ OnStart will be called before any other calls to this API.
 </table>
 
 ### onStop(aContext, aStatusCode) ###
-  
+<pre>  
 Called to signify the completion of the message stream.  
 OnStop is the final notification the listener will receive and it  
 completes the WebSocket connection: after it returns the  
@@ -51,7 +51,7 @@ nsIWebSocketChannel::Close() has not been called.
 @param aContext user defined context  
 @param aStatusCode reason for stopping (NS_OK if completed successfully)  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -71,13 +71,13 @@ nsIWebSocketChannel::Close() has not been called.
 </table>
 
 ### onMessageAvailable(aContext, aMsg) ###
-  
+<pre>  
 Called to deliver text message.  
   
 @param aContext user defined context  
 @param aMsg the message data  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -97,13 +97,13 @@ Called to deliver text message.
 </table>
 
 ### onBinaryMessageAvailable(aContext, aMsg) ###
-  
+<pre>  
 Called to deliver binary message.  
   
 @param aContext user defined context  
 @param aMsg the message data  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -123,13 +123,13 @@ Called to deliver binary message.
 </table>
 
 ### onAcknowledge(aContext, aSize) ###
-  
+<pre>  
 Called to acknowledge message sent via sendMsg() or sendBinaryMsg.  
   
 @param aContext user defined context  
 @param aSize number of bytes placed in OS send buffer  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -149,7 +149,7 @@ Called to acknowledge message sent via sendMsg() or sendBinaryMsg.
 </table>
 
 ### onServerClose(aContext, aCode, aReason) ###
-  
+<pre>  
 Called to inform receipt of WebSocket Close message from server.  
 In the case of errors onStop() can be called without ever  
 receiving server close.  
@@ -164,7 +164,7 @@ be sent through the nsIWebSocketChannel connection.
 @param aReason the websocket closing handshake close reason  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>

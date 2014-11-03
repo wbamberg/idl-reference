@@ -12,7 +12,7 @@ layout: default
 ### GetFrameLoader() ###
 
 ### swapFrameLoaders(aOtherOwner) ###
-  
+<pre>  
 Swap frame loaders with the given nsIFrameLoaderOwner.  This may  
 only be posible in a very limited range of circumstances, or  
 never, depending on the object implementing this interface.  
@@ -22,10 +22,11 @@ never, depending on the object implementing this interface.
 @throws NS_ERROR_DOM_SECURITY_ERR if the swap is not allowed on  
   security grounds.  
   
-
+</pre>
 ## Attributes ##
 
 ### frameLoader ###
-  
+<pre>  
 The frame loader owned by this nsIFrameLoaderOwner  
   
+</pre>

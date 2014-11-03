@@ -6,28 +6,28 @@ layout: default
 </div>
 
 # nsIHttpChannelInternal #
-  
+<pre>  
 Dumping ground for http.  This interface will never be frozen.  If you are  
 using any feature exposed by this interface, be aware that this interface  
 will change and you will be broken.  You have been warned.  
   
-
+</pre>
 ## Methods ##
 
 ### getRequestVersion(major, minor) ###
-  
+<pre>  
 Get the major/minor version numbers for the request  
   
-
+</pre>
 ### getResponseVersion(major, minor) ###
-  
+<pre>  
 Get the major/minor version numbers for the response  
   
-
+</pre>
 ### takeAllSecurityMessages(aMessages) ###
 
 ### setCookie(aCookieHeader) ###
-  
+<pre>  
 Helper method to set a cookie with a consumer-provided  
 cookie header, _but_ using the channel's other information  
 (URI's, prompters, date headers etc).  
@@ -35,7 +35,7 @@ cookie header, _but_ using the channel's other information
 @param aCookieHeader  
        The cookie header to be parsed.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -49,17 +49,17 @@ cookie header, _but_ using the channel's other information
 </table>
 
 ### setupFallbackChannel(aFallbackKey) ###
-  
+<pre>  
 Setup this channel as an application cache fallback channel.  
   
-
+</pre>
 ### setCacheKeysRedirectChain(cacheKeys) ###
-  
+<pre>  
 Transfer chain of redirected cache-keys.  
   
-
+</pre>
 ### HTTPUpgrade(aProtocolName, aListener) ###
-  
+<pre>  
 HTTPUpgrade allows for the use of HTTP to bootstrap another protocol  
 via the RFC 2616 Upgrade request header in conjunction with a 101 level  
 response. The nsIHttpUpgradeListener will have its  
@@ -76,7 +76,7 @@ is delievered.
 @param aListener  
        The callback object used to handle a successful upgrade  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -96,43 +96,43 @@ is delievered.
 </table>
 
 ### addRedirect(aPrincipal) ###
-  
+<pre>  
 Add a new nsIPrincipal to the redirect chain. This is the only way to  
 write to nsIRedirectHistory.redirects.  
   
-
+</pre>
 ### forceNoIntercept() ###
-  
+<pre>  
 Force a channel that has not been AsyncOpen'ed to skip any check for possible  
 interception and proceed immediately to the network/cache.  
   
-
+</pre>
 ## Attributes ##
 
 ### documentURI ###
-  
+<pre>  
 An http channel can own a reference to the document URI  
   
-
+</pre>
 ### forceAllowThirdPartyCookie ###
-  
+<pre>  
 Force relevant cookies to be sent with this load even if normally they  
 wouldn't be.  
   
-
+</pre>
 ### canceled ###
-  
+<pre>  
 True iff the channel has been canceled.  
   
-
+</pre>
 ### channelIsForDownload ###
-  
+<pre>  
 External handlers may set this to true to notify the channel  
 that it is open on behalf of a download.  
   
-
+</pre>
 ### localAddress ###
-  
+<pre>  
 The local IP address to which this channel is bound, in the  
 format produced by PR_NetAddrToString. May be IPv4 or IPv6.  
 Note: in the presence of NAT, this may not be the same as the  
@@ -142,18 +142,18 @@ May throw NS_ERROR_NOT_AVAILABLE if accessed when the channel's
 endpoints are not yet determined, or in any case when  
 nsIHttpActivityObserver.isActive is false. See bugs 534698 and 526207.  
   
-
+</pre>
 ### localPort ###
-  
+<pre>  
 The local port number to which this channel is bound.  
   
 May throw NS_ERROR_NOT_AVAILABLE if accessed when the channel's  
 endpoints are not yet determined, or in any case when  
 nsIHttpActivityObserver.isActive is false. See bugs 534698 and 526207.  
   
-
+</pre>
 ### remoteAddress ###
-  
+<pre>  
 The IP address of the remote host that this channel is  
 connected to, in the format produced by PR_NetAddrToString.  
   
@@ -161,49 +161,49 @@ May throw NS_ERROR_NOT_AVAILABLE if accessed when the channel's
 endpoints are not yet determined, or in any case when  
 nsIHttpActivityObserver.isActive is false. See bugs 534698 and 526207.  
   
-
+</pre>
 ### remotePort ###
-  
+<pre>  
 The remote port number that this channel is connected to.  
   
 May throw NS_ERROR_NOT_AVAILABLE if accessed when the channel's  
 endpoints are not yet determined, or in any case when  
 nsIHttpActivityObserver.isActive is false. See bugs 534698 and 526207.  
   
-
+</pre>
 ### allowSpdy ###
-  
+<pre>  
 Enable/Disable Spdy negotiation on per channel basis.  
 The network.http.spdy.enabled preference is still a pre-requisite  
 for starting spdy.  
   
-
+</pre>
 ### loadAsBlocking ###
-  
+<pre>  
 Set (e.g., by the docshell) to indicate whether or not the channel  
 corresponds to content that should be given a degree of network exclusivity  
 with respect to other members of its load group.  
 Examples are js from the HTML head and css which are latency  
 sensitive and should not compete with images for bandwidth. Default false.  
   
-
+</pre>
 ### loadUnblocked ###
-  
+<pre>  
 If set, this channel will load in parallel with the rest of the load  
 group even if a blocking subset of the group would normally be given  
 exclusivity. Default false.  
   
-
+</pre>
 ### responseTimeoutEnabled ###
-  
+<pre>  
 This attribute en/disables the timeout for the first byte of an HTTP  
 response. Enabled by default.  
   
-
+</pre>
 ### apiRedirectToURI ###
-  
+<pre>  
 Get value of the URI passed to nsIHttpChannel.redirectTo() if any.  
 May return null when redirectTo() has not been called.  
   
-
+</pre>
 ### lastModifiedTime ###

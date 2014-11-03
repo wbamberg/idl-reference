@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### showPrintDialog(webBrowserPrint, printSettings) ###
-  
+<pre>  
  This service enables embedders to implement their own Print and Progress Dialogs.  
  Each platform has a "base" or "basckstop" implementation of the service. The   
  service is automatically registered at start up.  
@@ -82,14 +82,14 @@ layout: default
         showPrinterProperties - displays a XUL dialog  
   
   
-  
+</pre><pre>  
  Show the Print Dialog   
   
  @param webBrowserPrint - represents the document to be printed  
  @param printSettings - PrintSettings for print "job"  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -109,7 +109,7 @@ layout: default
 </table>
 
 ### showProgress(webBrowserPrint, printSettings, openDialogObserver, isForPrinting, webProgressListener, printProgressParams, notifyOnOpen) ###
-  
+<pre>  
  Shows the print progress dialog  
   
  @param webBrowserPrint - represents the document to be printed  
@@ -123,7 +123,7 @@ layout: default
                        (usually the caller) shouldn't wait  
                        For Print Preview Progress there is intermediate progress  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -176,7 +176,7 @@ layout: default
 </table>
 
 ### showPageSetup(printSettings, aObs) ###
-  
+<pre>  
  Shows the print progress dialog  
   
  @param printSettings - PrintSettings for page setup (required)  
@@ -184,7 +184,7 @@ layout: default
                object has changed while the dialog is being shown.   
                For example, some platforms may implement an "Apply" button (not required)  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -206,7 +206,7 @@ layout: default
 </table>
 
 ### showPrinterProperties(printerName, printSettings) ###
-  
+<pre>  
  Sometimes platforms need to bring up a special properties dialog for showing  
  print specific properties. Although the PrintSettings has a place to set the   
  printer name, here is is an argument to be clear as to what printer is being  
@@ -215,7 +215,7 @@ layout: default
  @param printerName - name of printer (required)  
  @param printSettings - PrintSettings for page setup (required)  
   
-
+</pre>
 #### Parameters ####
 
 <table>

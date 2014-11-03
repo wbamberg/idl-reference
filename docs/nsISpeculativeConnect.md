@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### speculativeConnect(aURI, aCallbacks) ###
-  
+<pre>  
 Called as a hint to indicate a new transaction for the URI is likely coming  
 soon. The implementer may use this information to start a TCP  
 and/or SSL level handshake for that resource immediately so that it is  
@@ -24,7 +24,7 @@ to actually open the new channel.
        such as nsIBadCertListener. May be null.  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>

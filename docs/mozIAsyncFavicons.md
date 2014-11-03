@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### setAndFetchFaviconForPage(aPageURI, aFaviconURI, aForceReload, aFaviconLoadType, aCallback) ###
-  
+<pre>  
 Declares that a given page uses a favicon with the given URI and   
 attempts to fetch and save the icon data by loading the favicon URI  
 through an async network request.  
@@ -50,7 +50,7 @@ when history is disabled.
   
 @see nsIFaviconDataCallback in nsIFaviconService.idl.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -93,7 +93,7 @@ when history is disabled.
 </table>
 
 ### replaceFaviconData(aFaviconURI, aData, aDataLen, aMimeType, aExpiration) ###
-  
+<pre>  
 Sets the data for a given favicon URI either by replacing existing data in  
 the database or taking the place of otherwise fetched icon data when  
 calling setAndFetchFaviconForPage later.  
@@ -133,7 +133,7 @@ size it won't be saved.
 @throws NS_ERROR_FAILURE  
         Thrown if the favicon is overbloated and won't be saved to the db.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -176,7 +176,7 @@ size it won't be saved.
 </table>
 
 ### replaceFaviconDataFromDataURL(aFaviconURI, aDataURL, aExpiration) ###
-  
+<pre>  
 Same as replaceFaviconData but the data is provided by a string  
 containing a data URL.  
   
@@ -193,7 +193,7 @@ containing a data URL.
 @throws NS_ERROR_FAILURE  
         Thrown if the favicon is overbloated and won't be saved to the db.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -223,7 +223,7 @@ containing a data URL.
 </table>
 
 ### getFaviconURLForPage(aPageURI, aCallback) ###
-  
+<pre>  
 Retrieves the favicon URI associated to the given page, if any.  
   
 @param aPageURI  
@@ -239,7 +239,7 @@ Retrieves the favicon URI associated to the given page, if any.
   
 @see nsIFaviconDataCallback in nsIFaviconService.idl.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -261,7 +261,7 @@ Retrieves the favicon URI associated to the given page, if any.
 </table>
 
 ### getFaviconDataForPage(aPageURI, aCallback) ###
-  
+<pre>  
 Retrieves the favicon URI and data associated to the given page, if any.  
   
 @param aPageURI  
@@ -277,7 +277,7 @@ Retrieves the favicon URI and data associated to the given page, if any.
   
 @see nsIFaviconDataCallback in nsIFaviconService.idl.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

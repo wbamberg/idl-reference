@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### getAuthPrompt(aPromptReason, iid, result) ###
-  
+<pre>  
 Request a prompt interface for the given prompt reason;  
 @throws NS_ERROR_NOT_AVAILABLE if no prompt is allowed or  
 available for the given reason.  
@@ -21,7 +21,7 @@ available for the given reason.
                        NS_GET_IID(nsIAuthPrompt2).  
 @returns an nsIAuthPrompt2 interface, or throws NS_ERROR_NOT_AVAILABLE  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -56,11 +56,12 @@ available for the given reason.
 ## Constants ##
 
 ### PROMPT_NORMAL ###
-  
+<pre>  
 Normal (non-proxy) prompt request.  
   
-
+</pre>
 ### PROMPT_PROXY ###
-  
+<pre>  
 Proxy auth request.  
   
+</pre>

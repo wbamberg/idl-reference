@@ -6,12 +6,12 @@ layout: default
 </div>
 
 # nsIBaseWindow #
-  
+<pre>  
 The nsIBaseWindow describes a generic window and basic operations that   
 can be performed on it.  This is not to be a complete windowing interface  
 but rather a common set that nearly all windowed objects support.      
   
-
+</pre>
 ## Methods ##
 
 ### initWindow(parentNativeWindow, parentWidget, x, y, cx, cy) ###
@@ -33,12 +33,12 @@ but rather a common set that nearly all windowed objects support.
 ### getPositionAndSize(x, y, cx, cy) ###
 
 ### repaint(force) ###
-   
+<pre>   
 Tell the window to repaint itself  
 @param aForce - if true, repaint immediately  
                 if false, the window may defer repainting as it sees fit.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -53,10 +53,10 @@ Tell the window to repaint itself
 </table>
 
 ### setFocus() ###
-  
+<pre>  
 Give the window focus.  
   
-
+</pre>
 ## Attributes ##
 
 ### parentWidget ###

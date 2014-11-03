@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINavHistoryResult #
-  
+<pre>  
 The result of a history/bookmark query.  
   
-
+</pre>
 ## Methods ##
 
 ### addObserver(aObserver, aOwnsWeak) ###
-  
+<pre>  
 Adds an observer for changes done in the result.  
   
 @param aObserver  
@@ -26,7 +26,7 @@ Adds an observer for changes done in the result.
   
 @see nsINavHistoryResultObserver  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -49,13 +49,13 @@ Adds an observer for changes done in the result.
 </table>
 
 ### removeObserver(aObserver) ###
-  
+<pre>  
 Removes an observer that was added by addObserver.  
   
 @param aObserver  
        a result observer that was added by addObserver.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -71,21 +71,21 @@ Removes an observer that was added by addObserver.
 ## Attributes ##
 
 ### sortingMode ###
-  
+<pre>  
 Sorts all nodes recursively by the given parameter, one of  
 nsINavHistoryQueryOptions.SORT_BY_*  This will update the corresponding  
 options for this result, so that re-using the current options/queries will  
 always give you the current view.  
   
-
+</pre>
 ### sortingAnnotation ###
-  
+<pre>  
 The annotation to use in SORT_BY_ANNOTATION_* sorting modes, set this  
 before setting the sortingMode attribute.  
   
-
+</pre>
 ### suppressNotifications ###
-  
+<pre>  
 Whether or not notifications on result changes are suppressed.  
 Initially set to false.  
   
@@ -93,9 +93,9 @@ Use this to avoid flickering and to improve performance when you
 do temporary changes to the result structure (e.g. when searching for a  
 node recursively).  
   
-
+</pre>
 ### root ###
-  
+<pre>  
 This is the root of the results. Remember that you need to open all  
 containers for their contents to be valid.  
   
@@ -106,3 +106,4 @@ additional work.  When you close the root node the result will stop
 observing changes, so it is good practice to close the root node when you  
 are done with a result, since that will avoid unwanted performance hits.  
   
+</pre>

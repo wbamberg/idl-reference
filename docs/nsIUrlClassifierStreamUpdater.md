@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIUrlClassifierStreamUpdater #
-  
+<pre>  
 This is a class to manage large table updates from the server.  Rather than  
 downloading the whole update and then updating the sqlite database, we  
 update tables as the data is streaming in.  
   
-
+</pre>
 ## Methods ##
 
 ### downloadUpdates(aRequestTables, aRequestBody, aUpdateUrl, aSuccessCallback, aUpdateErrorCallback, aDownloadErrorCallback) ###
-  
+<pre>  
 Try to download updates from updateUrl. If an update is already in  
 progress, queues the requested update. This is used in nsIUrlListManager  
 as well as in testing.  
@@ -28,7 +28,7 @@ as well as in testing.
 @param aDownloadErrorCallback Called if we get an http error or a  
        connection refused error.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

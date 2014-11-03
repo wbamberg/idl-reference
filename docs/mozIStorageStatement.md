@@ -6,29 +6,29 @@ layout: default
 </div>
 
 # mozIStorageStatement #
-  
+<pre>  
 A SQL statement that can be used for both synchronous and asynchronous  
 purposes.  
   
-
+</pre>
 ## Methods ##
 
 ### clone() ###
-  
+<pre>  
 Create a clone of this statement, by initializing a new statement  
 with the same connection and same SQL statement as this one.  It  
 does not preserve statement state; that is, if a statement is  
 being executed when it is cloned, the new statement will not be  
 executing.  
   
-
+</pre>
 ### getParameterName(aParamIndex) ###
-  
+<pre>  
 Name of nth parameter, if given  
   
-
+</pre>
 ### getParameterIndex(aName) ###
-  
+<pre>  
 Returns the index of the named parameter.  
   
 @param aName  
@@ -36,7 +36,7 @@ Returns the index of the named parameter.
        include the leading ':'.  
 @return the index of the named parameter.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -62,19 +62,19 @@ Returns the index of the named parameter.
 </table>
 
 ### getColumnName(aColumnIndex) ###
-  
+<pre>  
 Name of nth column  
   
-
+</pre>
 ### getColumnIndex(aName) ###
-  
+<pre>  
 Obtains the index of the column with the specified name.  
   
 @param aName  
        The name of the column.  
 @return The index of the column with the specified name.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -99,7 +99,7 @@ Obtains the index of the column with the specified name.
 </table>
 
 ### getColumnDecltype(aParamIndex) ###
-  
+<pre>  
 Obtains the declared column type of a prepared statement.  
   
 @param aParamIndex  
@@ -107,7 +107,7 @@ Obtains the declared column type of a prepared statement.
        interested in.  
 @return the declared index type.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -133,21 +133,21 @@ Obtains the declared column type of a prepared statement.
 </table>
 
 ### reset() ###
-  
+<pre>  
 Reset parameters/statement execution  
   
-
+</pre>
 ### execute() ###
-  
+<pre>  
 Execute the query, ignoring any results.  This is accomplished by  
 calling executeStep() once, and then calling reset().  
   
 Error and last insert info, etc. are available from  
 the mozStorageConnection.  
   
-
+</pre>
 ### executeStep() ###
-  
+<pre>  
 Execute a query, using any currently-bound parameters.  Reset  
 must be called on the statement after the last call of  
 executeStep.  
@@ -156,7 +156,7 @@ executeStep.
         row data may be accessed using mozIStorageValueArray methods on  
         the statement.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -171,7 +171,7 @@ executeStep.
 </table>
 
 ### getTypeOfIndex(aIndex) ###
-  
+<pre>  
 Indicate the data type of the current result row for the the given column.  
 SQLite will perform type conversion if you ask for a value as a different  
 type than it is stored as.  
@@ -182,7 +182,7 @@ type than it is stored as.
         VALUE_TYPE_NULL, VALUE_TYPE_INTEGER, VALUE_TYPE_FLOAT,  
         VALUE_TYPE_TEXT, VALUE_TYPE_BLOB.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -209,7 +209,7 @@ type than it is stored as.
 </table>
 
 ### getInt32(aIndex) ###
-  
+<pre>  
 Retrieve the contents of a column from the current result row as an  
 integer.  
   
@@ -218,7 +218,7 @@ integer.
 @return Column value interpreted as an integer per type conversion rules.  
 @{  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -246,8 +246,8 @@ integer.
 ### getInt64(aIndex) ###
 
 ### getDouble(aIndex) ###
- @} */  
-  
+<pre> @} */  
+</pre><pre>  
 Retrieve the contents of a column from the current result row as a  
 floating point double.  
   
@@ -255,7 +255,7 @@ floating point double.
        0-based colummn index.  
 @return Column value interpreted as a double per type conversion rules.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -280,7 +280,7 @@ floating point double.
 </table>
 
 ### getUTF8String(aIndex) ###
-  
+<pre>  
 Retrieve the contents of a column from the current result row as a  
 string.  
   
@@ -291,7 +291,7 @@ string.
         to distinguish it from an explicitly set empty string.  
 @{  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -321,8 +321,8 @@ string.
 ### getString(aIndex) ###
 
 ### getBlob(aIndex, aDataSize, aData) ###
- @} */  
-  
+<pre> @} */  
+</pre><pre>  
 Retrieve the contents of a column from the current result row as a  
 blob.  
   
@@ -333,7 +333,7 @@ blob.
 @param[out] aData  
             The contents of the BLOB.  This will be NULL if aDataSize == 0.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -361,14 +361,14 @@ blob.
 </table>
 
 ### getIsNull(aIndex) ###
-  
+<pre>  
 Check whether the given column in the current result row is NULL.  
   
 @param aIndex  
        0-based colummn index.  
 @return true if the value for the result column is null.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -393,10 +393,10 @@ Check whether the given column in the current result row is NULL.
 </table>
 
 ### getSharedUTF8String(aIndex, aLength, aResult) ###
-  
+<pre>  
 Returns a shared string pointer  
   
-
+</pre>
 ### getSharedString(aIndex, aLength, aResult) ###
 
 ### getSharedBlob(aIndex, aLength, aResult) ###
@@ -406,20 +406,20 @@ Returns a shared string pointer
 ### parameterCount ###
 
 ### columnCount ###
-  
+<pre>  
 Number of columns returned  
   
-
+</pre>
 ### numEntries ###
-  
+<pre>  
 The number of entries in the array (each corresponding to a column in the  
 database row)  
   
-
+</pre>
 ## Constants ##
 
 ### VALUE_TYPE_NULL ###
-  
+<pre>  
 Execute a query, using any currently-bound parameters.  Reset is called  
 when no more data is returned.  This method is only available to JavaScript  
 consumers.  
@@ -430,24 +430,24 @@ consumers.
   
 [deprecated] boolean step();  
   
-  
+</pre><pre>  
 Obtains the current list of named parameters, which are settable.  This  
 property is only available to JavaScript consumers.  
   
 readonly attribute mozIStorageStatementParams params;  
   
-  
+</pre><pre>  
 Obtains the current row, with access to all the data members by name.  This  
 property is only available to JavaScript consumers.  
   
 readonly attribute mozIStorageStatementRow row;  
   
-  
+</pre><pre>  
 These type values are returned by getTypeOfIndex  
 to indicate what type of value is present at  
 a given column.  
   
-
+</pre>
 ### VALUE_TYPE_INTEGER ###
 
 ### VALUE_TYPE_FLOAT ###

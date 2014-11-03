@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsISupportsPRInt32 #
-  
+<pre>  
 Scriptable storage for 32-bit integers  
   
-
+</pre>
 ## Methods ##
 
 ### toString() ###

@@ -10,14 +10,14 @@ layout: default
 ## Methods ##
 
 ### EnumerateAllFonts(aCount, aResult) ###
-  
+<pre>  
 Return a sorted array of the names of all installed fonts.  
   
 @param  aCount     returns number of names returned  
 @param  aResult    returns array of names  
 @return void  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -48,7 +48,7 @@ Return a sorted array of the names of all installed fonts.
 </table>
 
 ### EnumerateFonts(aLangGroup, aGeneric, aCount, aResult) ###
-  
+<pre>  
 Return a sorted array of names of fonts that support the given language  
 group and are suitable for use as the given CSS generic font.  
   
@@ -58,7 +58,7 @@ group and are suitable for use as the given CSS generic font.
 @param  aResult    returns array of names  
 @return void  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -101,11 +101,11 @@ group and are suitable for use as the given CSS generic font.
 </table>
 
 ### HaveFontFor(aLangGroup, aResult) ###
-  
+<pre>  
 @param  aLangGroup language group  
 @return bool do we have a font for this language group  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -130,12 +130,12 @@ group and are suitable for use as the given CSS generic font.
 </table>
 
 ### getDefaultFont(aLangGroup, aGeneric) ###
-  
+<pre>  
 @param  aLangGroup language group  
 @param  aGeneric CSS generic font  
 @return suggested default font for this language group and generic family  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -166,19 +166,19 @@ group and are suitable for use as the given CSS generic font.
 </table>
 
 ### updateFontList() ###
-  
+<pre>  
 update the global font list  
 return true if font list is changed  
   
-
+</pre>
 ### getStandardFamilyName(aName) ###
-  
+<pre>  
 get the standard family name on the system from given family  
 @param  aName family name which may be alias  
 @return the standard family name on the system, if given name does not  
         exist, returns empty string  
   
-
+</pre>
 #### Parameters ####
 
 <table>

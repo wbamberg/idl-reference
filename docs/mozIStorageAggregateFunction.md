@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # mozIStorageAggregateFunction #
-  
+<pre>  
 mozIStorageAggregateFunction represents aggregate SQL function.  
 Common examples of aggregate functions are SUM() and COUNT().  
   
@@ -14,17 +14,17 @@ An aggregate function calculates one result for a given set of data, where
 a set of data is a group of tuples. There can be one group  
 per request or many of them, if GROUP BY clause is used or not.  
   
-
+</pre>
 ## Methods ##
 
 ### onStep(aFunctionArguments) ###
-  
+<pre>  
 onStep is called when next value should be passed to  
 a custom function.  
   
 @param aFunctionArguments    The arguments passed in to the function  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -38,13 +38,13 @@ a custom function.
 </table>
 
 ### onFinal() ###
-  
+<pre>  
 Called when all tuples in a group have been processed and the engine  
 needs the aggregate function's value.  
   
 @returns aggregate result as Variant.  
   
-
+</pre>
 #### Returns ####
 
 <table>

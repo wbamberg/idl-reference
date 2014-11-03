@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### addLivemark(aLivemarkInfo, aCallback) ###
-  
+<pre>  
 Creates a new livemark  
   
 @param aLivemarkInfo  
@@ -26,7 +26,7 @@ Creates a new livemark
             compatibility reasons, when a callback is provided this method  
             won't return a promise.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -65,7 +65,7 @@ Creates a new livemark
 </table>
 
 ### removeLivemark(aLivemarkInfo, aCallback) ###
-  
+<pre>  
 Removes an existing livemark.  
   
 @param aLivemarkInfo  
@@ -81,7 +81,7 @@ Removes an existing livemark.
             compatibility reasons, when a callback is provided this method  
             won't return a promise.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -119,7 +119,7 @@ Removes an existing livemark.
 </table>
 
 ### getLivemark(aLivemarkInfo, aCallback) ###
-  
+<pre>  
 Gets an existing livemark.  
   
 @param aLivemarkInfo  
@@ -136,7 +136,7 @@ Gets an existing livemark.
             compatibility reasons, when a callback is provided this method  
             won't return a promise.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -175,7 +175,7 @@ Gets an existing livemark.
 </table>
 
 ### reloadLivemarks(aForceUpdate) ###
-  
+<pre>  
 Reloads all livemarks if they are expired or if forced to do so.  
   
 @param [optional]aForceUpdate  
@@ -184,7 +184,7 @@ Reloads all livemarks if they are expired or if forced to do so.
 @note The update process is asynchronous, observers registered through  
       registerForUpdates will be notified of updated contents.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

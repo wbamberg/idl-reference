@@ -6,28 +6,28 @@ layout: default
 </div>
 
 # nsILoginInfo #
-  
+<pre>  
 An object containing information for a login stored by the  
 password manager.  
   
-
+</pre>
 ## Methods ##
 
 ### init(aHostname, aFormSubmitURL, aHttpRealm, aUsername, aPassword, aUsernameField, aPasswordField) ###
-  
+<pre>  
 Initialize a newly created nsLoginInfo object.  
   
 The arguments are the fields for the new object.  
   
-
+</pre>
 ### equals(aLoginInfo) ###
-  
+<pre>  
 Test for strict equality with another nsILoginInfo object.  
   
 @param aLoginInfo  
        The other object to test.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -41,7 +41,7 @@ Test for strict equality with another nsILoginInfo object.
 </table>
 
 ### matches(aLoginInfo, ignorePassword) ###
-  
+<pre>  
 Test for loose equivalency with another nsILoginInfo object. The  
 passwordField and usernameField values are ignored, and the password  
 values may be optionally ignored. If one login's formSubmitURL is an  
@@ -53,7 +53,7 @@ blank value indicates the login was stored before bug 360493 was fixed.]
 @param ignorePassword  
        If true, ignore the password when checking for match.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -73,26 +73,26 @@ blank value indicates the login was stored before bug 360493 was fixed.]
 </table>
 
 ### clone() ###
-  
+<pre>  
 Create an identical copy of the login, duplicating all of the login's  
 nsILoginInfo and nsILoginMetaInfo properties.  
   
 This allows code to be forwards-compatible, when additional properties  
 are added to nsILoginMetaInfo (or nsILoginInfo) in the future.  
   
-
+</pre>
 ## Attributes ##
 
 ### hostname ###
-  
+<pre>  
 The hostname the login applies to.  
   
 The hostname should be formatted as an URL. For example,  
 "https://site.com", "http://site.com:1234", "ftp://ftp.site.com".  
   
-
+</pre>
 ### formSubmitURL ###
-  
+<pre>  
 The URL a form-based login was submitted to.  
   
 For logins obtained from HTML forms, this field is the |action|  
@@ -103,9 +103,9 @@ default to submitting to their origin URL, so we store that.]
 For logins obtained from a HTTP or FTP protocol authentication,  
 this field is NULL.  
   
-
+</pre>
 ### httpRealm ###
-  
+<pre>  
 The HTTP Realm a login was requested for.  
   
 When an HTTP server sends a 401 result, the WWW-Authenticate  
@@ -115,29 +115,30 @@ hostname is used instead.
   
 For logins obtained from HTML forms, this field is NULL.  
   
-
+</pre>
 ### username ###
-  
+<pre>  
 The username for the login.  
   
-
+</pre>
 ### usernameField ###
-  
+<pre>  
 The |name| attribute for the username input field.  
   
 For logins obtained from a HTTP or FTP protocol authentication,  
 this field is an empty string.  
   
-
+</pre>
 ### password ###
-  
+<pre>  
 The password for the login.  
   
-
+</pre>
 ### passwordField ###
-  
+<pre>  
 The |name| attribute for the password input field.  
   
 For logins obtained from a HTTP or FTP protocol authentication,  
 this field is an empty string.  
   
+</pre>

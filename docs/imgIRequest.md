@@ -6,26 +6,26 @@ layout: default
 </div>
 
 # imgIRequest #
-  
+<pre>  
 imgIRequest interface  
   
 @author Stuart Parmenter <stuart@mozilla.com>  
 @version 0.1  
 @see imagelib2  
   
-
+</pre>
 ## Methods ##
 
 ### clone(aObserver) ###
-  
+<pre>  
 Clone this request; the returned request will have aObserver as the  
 observer.  aObserver will be notified synchronously (before the clone()  
 call returns) with all the notifications that have already been dispatched  
 for this image load.  
   
-
+</pre>
 ### cancelAndForgetObserver(aStatus) ###
-  
+<pre>  
 Cancels this request as in nsIRequest::Cancel(); further, also nulls out  
 decoderObserver so it gets no further notifications from us.  
   
@@ -34,9 +34,9 @@ that cancel() is asynchronous, which means that some time after you call
 it, the listener/observer will get an OnStopRequest(). This means that, if  
 you're the observer, you can't call cancel() from your destructor.  
   
-
+</pre>
 ### requestDecode() ###
-  
+<pre>  
 Requests a decode for the image.  
   
 imgIContainer has a requestDecode() method, but callers may want to request  
@@ -45,11 +45,11 @@ requestDecode() on the imgIRequest simply forwards along the request if the
 container already exists, or calls it once it gets OnStartContainer if the  
 container does not yet exist.  
   
-
+</pre>
 ### startDecoding() ###
 
 ### lockImage() ###
-  
+<pre>  
 Locks an image. If the image does not exist yet, locks it once it becomes  
 available. The lock persists for the lifetime of the imgIRequest (until  
 unlockImage is called) even if the underlying image changes.  
@@ -59,87 +59,87 @@ will be called for you automatically.
   
 @see imgIContainer::lockImage for documentation of the underlying call.  
   
-
+</pre>
 ### unlockImage() ###
-  
+<pre>  
 Unlocks an image.  
   
 @see imgIContainer::unlockImage for documentation of the underlying call.  
   
-
+</pre>
 ### requestDiscard() ###
-  
+<pre>  
 If this image is unlocked, discard the image's decoded data.  If the image  
 is locked or is already discarded, do nothing.  
   
-
+</pre>
 ### getStaticRequest() ###
-  
+<pre>  
 If this request is for an animated image, the method creates a new  
 request which contains the current frame of the image.  
 Otherwise returns the same request.  
   
-
+</pre>
 ### incrementAnimationConsumers() ###
-  
+<pre>  
 Requests that the image animate (if it has an animation).  
   
 @see Image::IncrementAnimationConsumers for documentation of the underlying call.  
   
-
+</pre>
 ### decrementAnimationConsumers() ###
-  
+<pre>  
 Tell the image it can forget about a request that the image animate.  
   
 @see Image::DecrementAnimationConsumers for documentation of the underlying call.  
   
-
+</pre>
 ## Attributes ##
 
 ### image ###
-  
+<pre>  
 the image container...  
 @return the image object associated with the request.  
 @attention NEED DOCS  
   
-
+</pre>
 ### imageStatus ###
-  
+<pre>  
 Status flags of the STATUS_* variety.  
   
-
+</pre>
 ### imageErrorCode ###
 
 ### URI ###
-  
+<pre>  
 The URI the image load was started with.  Note that this might not be the  
 actual URI for the image (e.g. if HTTP redirects happened during the  
 load).  
   
-
+</pre>
 ### notificationObserver ###
 
 ### mimeType ###
 
 ### imagePrincipal ###
-  
+<pre>  
 The principal gotten from the channel the image was loaded from.  
   
-
+</pre>
 ### multipart ###
-  
+<pre>  
 Whether the request is multipart (ie, multipart/x-mixed-replace)  
   
-
+</pre>
 ### CORSMode ###
-  
+<pre>  
 The CORS mode that this image was loaded with.   
   
-
+</pre>
 ## Constants ##
 
 ### STATUS_NONE ###
-  
+<pre>  
 Bits set in the return value from imageStatus  
 @name statusflags  
   
@@ -173,7 +173,7 @@ completely decoded.
   
 STATUS_DECODE_COMPLETE: The whole image has been decoded.  
   
-
+</pre>
 ### STATUS_SIZE_AVAILABLE ###
 
 ### STATUS_LOAD_PARTIAL ###
@@ -189,7 +189,7 @@ STATUS_DECODE_COMPLETE: The whole image has been decoded.
 ### STATUS_DECODE_COMPLETE ###
 
 ### CORS_NONE ###
-  
+<pre>  
 CORS modes images can be loaded with.  
   
 By default, all images are loaded with CORS_NONE and cannot be used  
@@ -199,7 +199,7 @@ If an HTML img element has the crossorigin attribute set, the imgIRequest
 will be validated for cross-origin usage with CORS, and, if successful,  
 will have its CORS mode set to the relevant type.  
   
-
+</pre>
 ### CORS_ANONYMOUS ###
 
 ### CORS_USE_CREDENTIALS ###

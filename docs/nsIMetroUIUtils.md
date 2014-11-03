@@ -10,26 +10,27 @@ layout: default
 ## Attributes ##
 
 ### currentPageURI ###
-  
+<pre>  
 Obtains the current page URI  
   
-
+</pre>
 ### currentPageTitle ###
-  
+<pre>  
 Obtains the current page title  
   
-
+</pre>
 ### hasSelectedContent ###
-  
+<pre>  
 Determines if the browser has selected content  
   
-
+</pre>
 ### shareText ###
-  
+<pre>  
 Determines the text that should be shared  
   
-
+</pre>
 ### shareHTML ###
-  
+<pre>  
 Determines the HTML that should be shared  
   
+</pre>

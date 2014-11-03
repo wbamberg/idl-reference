@@ -10,11 +10,11 @@ layout: default
 ## Methods ##
 
 ### isNSSErrorCode(aNSPRCode) ###
-  
+<pre>  
  @param aNSPRCode An error code obtained using PR_GetError()  
  @return True if it is error code defined by the NSS library  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -39,12 +39,12 @@ layout: default
 </table>
 
 ### getXPCOMFromNSSError(aNSPRCode) ###
-  
+<pre>  
  Function will fail if aNSPRCode is not an NSS error code.  
  @param aNSPRCode An error code obtained using PR_GetError()  
  @return The result of the conversion, an XPCOM error code  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -69,12 +69,12 @@ layout: default
 </table>
 
 ### getErrorMessage(aXPCOMErrorCode) ###
-  
+<pre>  
  Function will fail if aXPCOMErrorCode is not an NSS error code.  
  @param aXPCOMErrorCode An error code obtain using getXPCOMFromNSSError  
  return A localized human readable error explanation.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -89,12 +89,12 @@ layout: default
 </table>
 
 ### getErrorClass(aXPCOMErrorCode) ###
-  
+<pre>  
  Function will fail if aXPCOMErrorCode is not an NSS error code.  
  @param aXPCOMErrorCode An error code obtain using getXPCOMFromNSSError  
  return the   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -115,14 +115,14 @@ layout: default
 ### ERROR_CLASS_BAD_CERT ###
 
 ### NSS_SEC_ERROR_BASE ###
-  
+<pre>  
  The following values define the range of NSPR error codes used by NSS.  
  NSS remains the authorative source for these numbers, as a result,  
  the values might change in the future.  
  The security module will perform a runtime check and assertion  
  to ensure the values are in synch with NSS.  
   
-
+</pre>
 ### NSS_SEC_ERROR_LIMIT ###
 
 ### NSS_SSL_ERROR_BASE ###
@@ -130,7 +130,7 @@ layout: default
 ### NSS_SSL_ERROR_LIMIT ###
 
 ### MOZILLA_PKIX_ERROR_BASE ###
-  
+<pre>  
 The error codes within each module must fit in 16 bits. We want these  
 errors to fit in the same module as the NSS errors but not overlap with  
 any of them. Converting an NSS SEC, NSS SSL, or mozilla::pkix error to  
@@ -142,5 +142,5 @@ in 16 bits when negated.
   
 Keep these in sync with pkixnss.h.  
   
-
+</pre>
 ### MOZILLA_PKIX_ERROR_LIMIT ###

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIPrintSettingsWin #
-  
+<pre>  
 Simplified PrintSettings for Windows interface   
   
-
+</pre>
 ## Attributes ##
 
 ### deviceName ###
-  
+<pre>  
 Data Members  
   
 Each of these data members make a copy   
@@ -26,7 +26,7 @@ gotten via the PrintDLG call ro can be obtained
 via the "m_pd" data member of the CPrintDialog  
 in MFC.  
   
-
+</pre>
 ### driverName ###
 
 ### devMode ###

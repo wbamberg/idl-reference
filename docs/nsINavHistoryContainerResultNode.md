@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsINavHistoryContainerResultNode #
-  
+<pre>  
 Base class for container results. This includes all types of groupings.  
 Bookmark folders and places queries will be QueryResultNodes which extends  
 these items.  
   
-
+</pre>
 ## Methods ##
 
 ### getChild(aIndex) ###
 
 ### getChildIndex(aNode) ###
-  
+<pre>  
 Get the index of a direct child in this container.  
   
 @param aNode  
@@ -28,7 +28,7 @@ Get the index of a direct child in this container.
 @throws NS_ERROR_INVALID_ARG if aNode isn't a direct child of this  
 container.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -56,7 +56,7 @@ container.
 </table>
 
 ### findNodeByDetails(aURIString, aTime, aItemId, aRecursive) ###
-  
+<pre>  
 Look for a node in the container by some of its details.  Does not search  
 closed containers.  
   
@@ -73,7 +73,7 @@ closed containers.
 @return a result node that matches the given details if any, null  
         otherwise.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -119,7 +119,7 @@ closed containers.
 ## Attributes ##
 
 ### containerOpen ###
-  
+<pre>  
 Set this to allow descent into the container. When closed, attempting  
 to call getChildren or childCount will result in an error. You should  
 set this to false when you are done reading.  
@@ -129,16 +129,16 @@ been precomputed. For queries and bookmark folders, being open means they
 will keep themselves up-to-date by listening for updates and re-querying  
 as needed.  
   
-
+</pre>
 ### state ###
-  
+<pre>  
 Indicates whether the container is closed, loading, or opened.  Loading  
 implies that the container has been opened asynchronously and has not yet  
 fully opened.  
   
-
+</pre>
 ### hasChildren ###
-  
+<pre>  
 This indicates whether this node "may" have children, and can be used  
 when the container is open or closed. When the container is closed, it  
 will give you an exact answer if the node can easily be populated (for  
@@ -147,16 +147,16 @@ it will return true. When the container is open, it will always be
 accurate. It is intended to be used to see if we should draw the "+" next  
 to a tree item.  
   
-
+</pre>
 ### childCount ###
-  
+<pre>  
 This gives you the children of the nodes. It is preferrable to use this  
 interface over the array one, since it avoids creating an nsIArray object  
 and the interface is already the correct type.  
   
 @throws NS_ERROR_NOT_AVAILABLE if containerOpen is false.  
   
-
+</pre>
 ## Constants ##
 
 ### STATE_CLOSED ###

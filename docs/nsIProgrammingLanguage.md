@@ -6,17 +6,17 @@ layout: default
 </div>
 
 # nsIProgrammingLanguage #
-  
+<pre>  
 Enumeration of Programming Languages  
   
-
+</pre>
 ## Constants ##
 
 ### UNKNOWN ###
-  
+<pre>  
 Identifiers for programming languages.  
   
-
+</pre>
 ### CPLUSPLUS ###
 
 ### JAVASCRIPT ###

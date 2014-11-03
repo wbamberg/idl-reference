@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIDataSignatureVerifier #
-  
+<pre>  
 An interface for verifying that a given string of data was signed by the  
 private key matching the given public key.  
   
-
+</pre>
 ## Methods ##
 
 ### verifyData(aData, aSignature, aPublicKey) ###
-  
+<pre>  
 Verifies that the data matches the data that was used to generate the  
 signature.  
   
@@ -24,7 +24,7 @@ signature.
                   then base64 encoded.  
 @returns true if the signature matches the data, false if not.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

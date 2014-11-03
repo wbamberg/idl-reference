@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### canDropLink(aEvent, aAllowSameDocument) ###
-  
+<pre>  
 Determines if a link being dragged can be dropped and returns true if so.  
 aEvent should be a dragenter or dragover event.  
   
@@ -19,9 +19,9 @@ of the source of the drag is different from the destination. This check
 includes any parent, sibling and child frames in the same content tree.  
 If true, the source is not checked.  
   
-
+</pre>
 ### dropLink(aEvent, aName, aDisallowInherit) ###
-  
+<pre>  
 Given a drop event aEvent, determines the link being dragged and returns  
 it. If a uri is returned the caller can, for instance, load it. If null  
 is returned, there is no valid link to be dropped.  
@@ -38,3 +38,4 @@ will occur if any of the following conditions are true:
 aName is filled in with the link title if it exists, or an empty string  
 otherwise.  
   
+</pre>

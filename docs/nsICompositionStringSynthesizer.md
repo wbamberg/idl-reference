@@ -6,32 +6,32 @@ layout: default
 </div>
 
 # nsICompositionStringSynthesizer #
-  
+<pre>  
 Stores composition clauses information and caret information for synthesizing  
 composition string.  
   
-
+</pre>
 ## Methods ##
 
 ### setString(aString) ###
-  
+<pre>  
 Set composition string or committed string.  
   
-
+</pre>
 ### appendClause(aLength, aAttribute) ###
-  
+<pre>  
 Append a clause.  
   
 TODO: Should be able to specify custom clause style.  
   
-
+</pre>
 ### setCaret(aOffset, aLength) ###
-  
+<pre>  
 Set caret information.  
   
-
+</pre>
 ### dispatchEvent() ###
-  
+<pre>  
 Synthesize composition string with given information by dispatching  
 a proper event.  
   
@@ -42,7 +42,7 @@ error.
 After dispatching event, this clears all the information about the  
 composition string. So, you can reuse this instance.  
   
-
+</pre>
 ## Constants ##
 
 ### ATTR_RAWINPUT ###

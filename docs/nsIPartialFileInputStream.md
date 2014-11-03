@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIPartialFileInputStream #
-  
+<pre>  
 An input stream that allows you to read from a slice of a file.  
   
-
+</pre>
 ## Methods ##
 
 ### init(file, start, length, ioFlags, perm, behaviorFlags) ###
-  
+<pre>  
 Initialize with a file and new start/end positions. Both start and  
 start+length must be smaller than the size of the file. Not doing so  
 will lead to undefined behavior.  
@@ -33,7 +33,7 @@ can be used.
 @param behaviorFlags flags specifying various behaviors of the class  
        (see enumerations in nsIFileInputStream)  
   
-
+</pre>
 #### Parameters ####
 
 <table>

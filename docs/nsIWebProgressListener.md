@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIWebProgressListener #
-  
+<pre>  
 The nsIWebProgressListener interface is implemented by clients wishing to  
 listen in on the progress associated with the loading of asynchronous  
 requests in the context of a nsIWebProgress instance as well as any child  
 nsIWebProgress instances.  nsIWebProgress.idl describes the parent-child  
 relationship of nsIWebProgress instances.  
   
-
+</pre>
 ## Methods ##
 
 ### onStateChange(aWebProgress, aRequest, aStateFlags, aStatus) ###
-  
+<pre>  
 Notification indicating the state has changed for one of the requests  
 associated with aWebProgress.  
   
@@ -39,7 +39,7 @@ associated with aWebProgress.
        In such cases, the request itself should be queried for extended  
        error information (e.g., for HTTP requests see nsIHttpChannel).  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -80,7 +80,7 @@ associated with aWebProgress.
 </table>
 
 ### onProgressChange(aWebProgress, aRequest, aCurSelfProgress, aMaxSelfProgress, aCurTotalProgress, aMaxTotalProgress) ###
-  
+<pre>  
 Notification that the progress has changed for one of the requests  
 associated with aWebProgress.  Progress totals are reset to zero when all  
 requests in aWebProgress complete (corresponding to onStateChange being  
@@ -107,7 +107,7 @@ NOTE: If the object also implements nsIWebProgressListener2 and the caller
 knows about that interface, this function will not be called. Instead,  
 nsIWebProgressListener2::onProgressChange64 will be called.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -151,7 +151,7 @@ nsIWebProgressListener2::onProgressChange64 will be called.
 </table>
 
 ### onLocationChange(aWebProgress, aRequest, aLocation, aFlags) ###
-  
+<pre>  
 Called when the location of the window being watched changes.  This is not  
 when a load is requested, but rather once it is verified that the load is  
 going to occur in the given window.  For instance, a load that starts in a  
@@ -169,7 +169,7 @@ this new page here.
        This is a value which explains the situation or the reason why  
        the location has changed.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -202,7 +202,7 @@ this new page here.
 </table>
 
 ### onStatusChange(aWebProgress, aRequest, aStatus, aMessage) ###
-  
+<pre>  
 Notification that the status of a request has changed.  The status message  
 is intended to be displayed to the user (e.g., in the status bar of the  
 browser).  
@@ -219,7 +219,7 @@ browser).
 @param aMessage  
        Localized text corresponding to aStatus.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -254,7 +254,7 @@ browser).
 </table>
 
 ### onSecurityChange(aWebProgress, aRequest, aState) ###
-  
+<pre>  
 Notification called for security progress.  This method will be called on  
 security transitions (eg HTTP -> HTTPS, HTTPS -> HTTP, FOO -> HTTPS) and  
 after document load completion.  It might also be called if an error  
@@ -272,7 +272,7 @@ occurs during network loading.
 NOTE: These notifications will only occur if a security package is  
 installed.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -302,7 +302,7 @@ installed.
 ## Constants ##
 
 ### STATE_START ###
-  
+<pre>  
 State Transition Flags  
   
 These flags indicate the various states that requests may transition  
@@ -338,7 +338,7 @@ STATE_STOP
   This flag indicates the completion of a request.  The aStatus parameter  
   to onStateChange indicates the final status of the request.  
   
-
+</pre>
 ### STATE_REDIRECTING ###
 
 ### STATE_TRANSFERRING ###
@@ -348,7 +348,7 @@ STATE_STOP
 ### STATE_STOP ###
 
 ### STATE_IS_REQUEST ###
-  
+<pre>  
 State Type Flags  
   
 These flags further describe the entity for which the state transition is  
@@ -408,7 +408,7 @@ STATE_IS_WINDOW
   flag may be set).  This second STATE_STOP event may be useful as a way  
   to partition the work that occurs when a document request completes.  
   
-
+</pre>
 ### STATE_IS_DOCUMENT ###
 
 ### STATE_IS_NETWORK ###
@@ -416,7 +416,7 @@ STATE_IS_WINDOW
 ### STATE_IS_WINDOW ###
 
 ### STATE_RESTORING ###
-  
+<pre>  
 State Modifier Flags  
   
 These flags further describe the transition which is occuring.  These  
@@ -430,9 +430,9 @@ STATE_RESTORING
   request, and any modifications made to the document or presentation  
   when it was originally loaded will still be present.  
   
-
+</pre>
 ### STATE_IS_INSECURE ###
-  
+<pre>  
 State Security Flags  
   
 These flags describe the security state reported by a call to the  
@@ -452,13 +452,13 @@ STATE_IS_SECURE
   received over a secure channel.  The degree of security is expressed by  
   STATE_SECURE_HIGH, STATE_SECURE_MED, or STATE_SECURE_LOW.  
   
-
+</pre>
 ### STATE_IS_BROKEN ###
 
 ### STATE_IS_SECURE ###
 
 ### STATE_BLOCKED_MIXED_ACTIVE_CONTENT ###
-  
+<pre>  
 Mixed active content flags  
   
 May be set in addition to the State Security Flags, to indicate that  
@@ -470,11 +470,11 @@ STATE_BLOCKED_MIXED_ACTIVE_CONTENT
 STATE_LOADED_MIXED_ACTIVE_CONTENT  
   Mixed active content has been loaded. State should be STATE_IS_BROKEN.  
   
-
+</pre>
 ### STATE_LOADED_MIXED_ACTIVE_CONTENT ###
 
 ### STATE_BLOCKED_MIXED_DISPLAY_CONTENT ###
-  
+<pre>  
 Mixed display content flags  
   
 May be set in addition to the State Security Flags, to indicate that  
@@ -486,11 +486,11 @@ STATE_BLOCKED_MIXED_DISPLAY_CONTENT
 STATE_LOADED_MIXED_DISPLAY_CONTENT  
   Mixed display content has been loaded. State should be STATE_IS_BROKEN.  
   
-
+</pre>
 ### STATE_LOADED_MIXED_DISPLAY_CONTENT ###
 
 ### STATE_BLOCKED_TRACKING_CONTENT ###
-  
+<pre>  
 Tracking content flags  
   
 May be set in addition to the State security Flags, to indicate that  
@@ -502,11 +502,11 @@ STATE_BLOCKED_TRACKING_CONTENT
 STATE_LOADED_TRACKING_CONTENT  
   Tracking content has been loaded.  
   
-
+</pre>
 ### STATE_LOADED_TRACKING_CONTENT ###
 
 ### STATE_SECURE_HIGH ###
-  
+<pre>  
 Security Strength Flags  
   
 These flags describe the security strength and accompany STATE_IS_SECURE  
@@ -527,13 +527,13 @@ STATE_SECURE_MED
 STATE_SECURE_LOW  
   This flag indicates a low degree of security.  
   
-
+</pre>
 ### STATE_SECURE_MED ###
 
 ### STATE_SECURE_LOW ###
 
 ### STATE_IDENTITY_EV_TOPLEVEL ###
-  
+<pre>  
 State bits for EV == Extended Validation == High Assurance  
   
 These flags describe the level of identity verification  
@@ -543,9 +543,9 @@ STATE_IDENTITY_EV_TOPLEVEL
   The topmost document uses an EV cert.  
   NOTE: Available since Gecko 1.9  
   
-
+</pre>
 ### LOCATION_CHANGE_SAME_DOCUMENT ###
-  
+<pre>  
 Flags for onLocationChange  
   
 LOCATION_CHANGE_SAME_DOCUMENT  
@@ -567,5 +567,5 @@ LOCATION_CHANGE_ERROR_PAGE
   |aWebProgress| does NOT set this flag when it did not try to load a new  
   document. In this case, it should set LOCATION_CHANGE_SAME_DOCUMENT.  
   
-
+</pre>
 ### LOCATION_CHANGE_ERROR_PAGE ###

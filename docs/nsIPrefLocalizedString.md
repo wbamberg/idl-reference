@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIPrefLocalizedString #
-  
+<pre>  
 The nsIPrefLocalizedString interface is simply a wrapper interface for  
 nsISupportsString so the preferences service can have a unique identifier  
 to distinguish between requests for normal wide strings (nsISupportsString)  
@@ -16,16 +16,16 @@ files.
 @see nsIPrefBranch  
 @see nsISupportsString  
   
-
+</pre>
 ## Methods ##
 
 ### toString() ###
-  
+<pre>  
 Used to retrieve the contents of this object into a wide string.  
   
 @return wstring The string containing the data stored within this object.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -38,7 +38,7 @@ Used to retrieve the contents of this object into a wide string.
 </table>
 
 ### setDataWithLength(length, data) ###
-  
+<pre>  
 Used to set the contents of this object.  
   
 @param length The length of the string. This value should not include  
@@ -50,7 +50,7 @@ Used to set the contents of this object.
 @note  
 This makes a copy of the string argument passed in.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -75,8 +75,9 @@ This makes a copy of the string argument passed in.
 ## Attributes ##
 
 ### data ###
-  
+<pre>  
 Provides access to string data stored in this property.  
   
 @throws Error An error occurred.  
   
+</pre>

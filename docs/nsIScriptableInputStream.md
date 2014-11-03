@@ -6,25 +6,25 @@ layout: default
 </div>
 
 # nsIScriptableInputStream #
-  
+<pre>  
 nsIScriptableInputStream provides scriptable access to an nsIInputStream  
 instance.  
   
-
+</pre>
 ## Methods ##
 
 ### close() ###
-   
+<pre>   
 Closes the stream.   
   
-
+</pre>
 ### init(aInputStream) ###
-  
+<pre>  
 Wrap the given nsIInputStream with this nsIScriptableInputStream.   
   
 @param aInputStream parameter providing the stream to wrap   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -38,14 +38,14 @@ Wrap the given nsIInputStream with this nsIScriptableInputStream.
 </table>
 
 ### available() ###
-  
+<pre>  
 Return the number of bytes currently available in the stream   
   
 @return the number of bytes   
   
 @throws NS_BASE_STREAM_CLOSED if called after the stream has been closed  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -58,7 +58,7 @@ Return the number of bytes currently available in the stream
 </table>
 
 ### read(aCount) ###
-  
+<pre>  
 Read data from the stream.  
   
 WARNING: If the data contains a null byte, then this method will return  
@@ -71,7 +71,7 @@ a truncated string.
 @throws NS_BASE_STREAM_CLOSED if called after the stream has been closed  
 @throws NS_ERROR_NOT_INITIALIZED if init was not called  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -96,7 +96,7 @@ a truncated string.
 </table>
 
 ### readBytes(aCount) ###
-  
+<pre>  
 Read data from the stream, including NULL bytes.  
   
 @param aCount the maximum number of bytes to read.  
@@ -109,7 +109,7 @@ Read data from the stream, including NULL bytes.
 @throws NS_ERROR_FAILURE if there are not enough bytes available to read  
         aCount amount of data.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

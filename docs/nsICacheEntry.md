@@ -10,13 +10,13 @@ layout: default
 ## Methods ##
 
 ### setExpirationTime(expirationTime) ###
-  
+<pre>  
 Set the time at which the cache entry should be considered invalid (in  
 seconds since the Epoch).  
   
-
+</pre>
 ### forceValidFor(aSecondsToTheFuture) ###
-  
+<pre>  
 This method is intended to override the per-spec cache validation  
 decisions for a duration specified in seconds. The current state can  
 be examined with isForcedValid (see below). This value is not persisted,  
@@ -29,7 +29,7 @@ entries grows to take up more space than the cache size allows.
        the number of seconds the default cache validation behavior will be  
        overridden before it returns to normal  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -44,7 +44,7 @@ entries grows to take up more space than the cache size allows.
 </table>
 
 ### openInputStream(offset) ###
-  
+<pre>  
 Open blocking input stream to cache data.  Use the stream transport  
 service to asynchronously read this stream on a background thread.  
 The returned stream MAY implement nsISeekableStream.  
@@ -55,7 +55,7 @@ The returned stream MAY implement nsISeekableStream.
   
 @return non-blocking, buffered input stream.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -81,7 +81,7 @@ The returned stream MAY implement nsISeekableStream.
 </table>
 
 ### openOutputStream(offset) ###
-  
+<pre>  
 Open non-blocking output stream to cache data.  The returned stream  
 MAY implement nsISeekableStream.  
   
@@ -94,7 +94,7 @@ truncated to the specified offset.
   
 @return blocking, buffered output stream.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -120,23 +120,23 @@ truncated to the specified offset.
 </table>
 
 ### asyncDoom(listener) ###
-  
+<pre>  
 Asynchronously doom an entry. Listener will be notified about the status  
 of the operation. Null may be passed if caller doesn't care about the  
 result.  
   
-
+</pre>
 ### getMetaDataElement(key) ###
-  
+<pre>  
 Methods for accessing meta data.  Meta data is a table of key/value  
 string pairs.  The strings do not have to conform to any particular  
 charset, but they must be null terminated.  
   
-
+</pre>
 ### setMetaDataElement(key, value) ###
 
 ### visitMetaData(visitor) ###
-  
+<pre>  
 Obtain the list of metadata keys this entry keeps.  
   
 NOTE: The callback is invoked under the CacheFile's lock.  It means  
@@ -144,25 +144,25 @@ there should not be made any calls to the entry from the visitor and
 if the values need to be processed somehow, it's better to cache them  
 and process outside the callback.  
   
-
+</pre>
 ### metaDataReady() ###
-  
+<pre>  
 Claims that all metadata on this entry are up-to-date and this entry  
 now can be delivered to other waiting consumers.  
   
 We need such method since metadata must be delivered synchronously.  
   
-
+</pre>
 ### setValid() ###
-  
+<pre>  
 Called by consumer upon 304/206 response from the server.  This marks  
 the entry content as positively revalidated.  
 Consumer uses this method after the consumer has returned ENTRY_NEEDS_REVALIDATION  
 result from onCacheEntryCheck and after successfull revalidation with the server.  
   
-
+</pre>
 ### recreate(aMemoryOnly) ###
-  
+<pre>  
 Doom this entry and open a new, empty, entry for write.  Consumer has  
 to exchange the entry this method is called on for the newly created.  
 Used on 200 responses to conditional requests.  
@@ -176,7 +176,7 @@ Used on 200 responses to conditional requests.
    - NS_ERROR_NOT_AVAILABLE when the entry cannot be from some reason  
      recreated for write  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -205,12 +205,12 @@ Used on 200 responses to conditional requests.
 </table>
 
 ### close() ###
-************************************************************************  
+<pre>************************************************************************  
 The following methods might be added to some nsICacheEntryInternal  
 interface since we want to remove them as soon as the old cache backend is  
 completely removed.  
   
-  
+</pre><pre>  
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY  
 When the old cache backend is eventually removed, this method  
@@ -219,24 +219,24 @@ can be removed too.
 In the new backend: this method is no-op  
 In the old backend: this method delegates to nsICacheEntryDescriptor.close()  
   
-
+</pre>
 ### markValid() ###
-  
+<pre>  
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY  
 Marks the entry as valid so that others can use it and get only readonly  
 access when the entry is held by the 1st writer.  
   
-
+</pre>
 ### maybeMarkValid() ###
-  
+<pre>  
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY  
 Marks the entry as valid when write access is acquired.  
   
-
+</pre>
 ### hasWriteAccess(aWriteAllowed) ###
-  
+<pre>  
 @deprecated  
 FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK  
 @param aWriteAllowed  
@@ -246,7 +246,7 @@ FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK
    true when write access is acquired for this entry,  
    false otherwise  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -275,73 +275,74 @@ FOR BACKWARD COMPATIBILITY ONLY / KINDA HACK
 ## Attributes ##
 
 ### key ###
-  
+<pre>  
 Get the key identifying the cache entry.  
   
-
+</pre>
 ### persistent ###
-  
+<pre>  
 Whether the entry is memory/only or persisted to disk.  
 Note: private browsing entries are reported as persistent for consistency  
 while are not actually persisted to disk.  
   
-
+</pre>
 ### fetchCount ###
-  
+<pre>  
 Get the number of times the cache entry has been opened.  
   
-
+</pre>
 ### lastFetched ###
-  
+<pre>  
 Get the last time the cache entry was opened (in seconds since the Epoch).  
   
-
+</pre>
 ### lastModified ###
-  
+<pre>  
 Get the last time the cache entry was modified (in seconds since the Epoch).  
   
-
+</pre>
 ### expirationTime ###
-  
+<pre>  
 Get the expiration time of the cache entry (in seconds since the Epoch).  
   
-
+</pre>
 ### isForcedValid ###
-  
+<pre>  
 The state variable for whether this entry is currently forced valid.  
 Defaults to false for normal cache validation behavior, and will return  
 true if the number of seconds set by forceValidFor() has yet to be reached.  
   
-
+</pre>
 ### predictedDataSize ###
-  
+<pre>  
 Stores the Content-Length specified in the HTTP header for this  
 entry. Checked before we write to the cache entry, to prevent ever  
 taking up space in the cache for an entry that we know up front  
 is going to have to be evicted anyway. See bug 588507.  
   
-
+</pre>
 ### securityInfo ###
-  
+<pre>  
 Get/set security info on the cache entry for this descriptor.  
   
-
+</pre>
 ### storageDataSize ###
-  
+<pre>  
 Get the size of the cache entry data, as stored. This may differ  
 from the entry's dataSize, if the entry is compressed.  
   
-
+</pre>
 ### dataSize ###
-  
+<pre>  
 Returns the length of data this entry holds.  
 @throws  
    NS_ERROR_IN_PROGRESS when the write is still in progress.  
   
-
+</pre>
 ## Constants ##
 
 ### NO_EXPIRATION_TIME ###
-  
+<pre>  
 Placeholder for the initial value of expiration time.  
   
+</pre>

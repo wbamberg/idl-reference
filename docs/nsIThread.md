@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIThread #
-  
+<pre>  
 This interface provides a high-level abstraction for an operating system  
 thread.  
   
@@ -15,11 +15,11 @@ can receive nsIRunnable objects (events) to be processed on the thread.
   
 See nsIThreadManager for the API used to create and locate threads.  
   
-
+</pre>
 ## Methods ##
 
 ### shutdown() ###
-  
+<pre>  
 Shutdown the thread.  This method prevents further dispatch of events to  
 the thread, and it causes any pending events to run to completion before  
 the thread joins (see PR_JoinThread) with the current thread.  During this  
@@ -37,9 +37,9 @@ events to the thread.
   nsIThreadManager::NewThread, or if this method was called more than once  
   on the thread object.  
   
-
+</pre>
 ### hasPendingEvents() ###
-  
+<pre>  
 This method may be called to determine if there are any events ready to be  
 processed.  It may only be called when this thread is the current thread.  
   
@@ -55,7 +55,7 @@ means that there were no pending events when this method was called.
   Indicates that this method was erroneously called when this thread was  
   not the current thread.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -69,7 +69,7 @@ means that there were no pending events when this method was called.
 </table>
 
 ### processNextEvent(mayWait) ###
-  
+<pre>  
 Process the next event.  If there are no pending events, then this method  
 may wait -- depending on the value of the mayWait parameter -- until an  
 event is dispatched to this thread.  This method is re-entrant but may  
@@ -86,7 +86,7 @@ only be called if this thread is the current thread.
   Indicates that this method was erroneously called when this thread was  
   not the current thread.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -114,7 +114,8 @@ only be called if this thread is the current thread.
 ## Attributes ##
 
 ### PRThread ###
-  
+<pre>  
 @returns  
   The NSPR thread object corresponding to this nsIThread.  
   
+</pre>

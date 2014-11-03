@@ -10,12 +10,13 @@ layout: default
 ## Attributes ##
 
 ### postData ###
-  
+<pre>  
 The POST data associated with a search submission, wrapped in a MIME  
 input stream. May be null.  
   
-
+</pre>
 ### uri ###
-  
+<pre>  
 The URI to submit a search to.  
   
+</pre>

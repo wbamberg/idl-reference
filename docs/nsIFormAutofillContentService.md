@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIFormAutofillContentService #
-  
+<pre>  
 Defines a service used by DOM content to request Form Autofill, in particular  
 when the requestAutocomplete method of Form objects is invoked.  
   
@@ -19,11 +19,11 @@ for the chrome process.
          communicate with a parent-side message manager living in the chrome  
          process, where most of the processing is located.  
   
-
+</pre>
 ## Methods ##
 
 ### requestAutocomplete(aForm, aWindow) ###
-  
+<pre>  
 Invoked by the requestAutocomplete method of the DOM Form object.  
   
 The application is expected to display a user interface asking for the  
@@ -41,7 +41,7 @@ an AutocompleteErrorEvent being fired on the form.
        for elements that are not in a document, and is used to generate the  
        DOM events resulting from the operation.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

@@ -6,6 +6,7 @@ layout: default
 </div>
 
 # nsIDOMCSSMozDocumentRule #
-  
+<pre>  
 Interface for @-moz-document rules in the CSS OM.  
   
+</pre>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsISiteSpecificUserAgent #
-  
+<pre>  
 nsISiteSpecificUserAgent provides you with site/window-specific User Agent strings.  
   
-
+</pre>
 ## Methods ##
 
 ### getUserAgentForURIAndWindow(aURI, aWindow) ###
-  
+<pre>  
 Get the User Agent string for a given URI.  
   
 @param aURI is the URI of the page the UA string is used for.  
@@ -23,7 +23,7 @@ Get the User Agent string for a given URI.
 @returns the User Agent string for the given URI. If no override applies,  
 the default User Agent string is used.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIJumpListShortcut #
-  
+<pre>  
 A generic application shortcut with command line support.  
   
-
+</pre>
 ## Attributes ##
 
 ### app ###
-  
+<pre>  
 Set or get the handler app for this shortcut item.  
   
 The handler app may also be used along with iconIndex to generate an icon  
@@ -24,9 +24,9 @@ not be found on  the system.
   
 @see faviconPageUri  
   
-
+</pre>
 ### iconIndex ###
-  
+<pre>  
 Set or get the icon displayed with the jump list item.  
   
 Indicates the resource index of the icon contained within the handler  
@@ -34,9 +34,9 @@ executable which may be used as the jump list icon.
   
 @see faviconPageUri  
   
-
+</pre>
 ### faviconPageUri ###
-  
+<pre>  
 Set or get the URI of a page whose favicon may be used as the icon.  
   
 When a jump list build occurs, the favicon to be used for the item is  
@@ -46,3 +46,4 @@ associated with the faviconPageUri.
 - If faviconPageUri is null, or if retrieving the favicon fails, fall  
 back to using the handler executable and iconIndex.    
   
+</pre>

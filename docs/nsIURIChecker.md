@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIURIChecker #
-  
+<pre>  
 nsIURIChecker  
   
 The URI checker is a component that can be used to verify the existence  
@@ -14,11 +14,11 @@ of a resource at the location specified by a given URI.  It will use
 protocol specific methods to verify the URI (e.g., use of HEAD request  
 for HTTP URIs).  
   
-
+</pre>
 ## Methods ##
 
 ### init(aURI) ###
-  
+<pre>  
 Initializes the URI checker.  After this method is called, it is valid  
 to further configure the URI checker by calling its nsIRequest methods.  
 This method creates the channel that will be used to verify the URI.  
@@ -27,7 +27,7 @@ In the case of the HTTP protocol, only a HEAD request will be issued.
 @param aURI  
        The URI to be checked.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -41,7 +41,7 @@ In the case of the HTTP protocol, only a HEAD request will be issued.
 </table>
 
 ### asyncCheck(aObserver, aContext) ###
-  
+<pre>  
 Begin asynchronous checking URI for validity.  Notification will be  
 asynchronous through the nsIRequestObserver callback interface.  When  
 OnStartRequest is fired, the baseChannel attribute will have been  
@@ -63,7 +63,7 @@ Our interpretations of the nsIRequestObserver status codes:
        A closure that will be passed back to the nsIRequestObserver  
        methods.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -90,6 +90,7 @@ Our interpretations of the nsIRequestObserver status codes:
 ## Attributes ##
 
 ### baseChannel ###
-  
+<pre>  
 Returns the base channel that will be used to verify the URI.  
   
+</pre>

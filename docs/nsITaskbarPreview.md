@@ -6,26 +6,26 @@ layout: default
 </div>
 
 # nsITaskbarPreview #
-  
+<pre>  
 nsITaskbarPreview  
   
 Common interface for both window and tab taskbar previews. This interface  
 cannot be instantiated directly.  
   
   
-
+</pre>
 ## Methods ##
 
 ### invalidate() ###
-  
+<pre>  
 Invalidates the taskbar's cached image of this preview, forcing a redraw  
 if necessary  
   
-
+</pre>
 ## Attributes ##
 
 ### controller ###
-  
+<pre>  
 The controller for this preview. A controller is required to provide  
 the behavior and appearance of the taskbar previews. It is responsible for  
 determining the size and contents of the preview, which buttons are  
@@ -39,16 +39,16 @@ The controller is not allowed to be null.
   
 @see nsITaskbarPreviewController  
   
-
+</pre>
 ### tooltip ###
-  
+<pre>  
 The tooltip displayed above the preview when the user hovers over it  
   
 Default: an empty string  
   
-
+</pre>
 ### visible ###
-  
+<pre>  
 Whether or not the preview is visible.  
   
 Changing this option is expensive for tab previews since toggling this  
@@ -59,9 +59,10 @@ For window previews, this operation is very cheap.
   
 Default: false  
   
-
+</pre>
 ### active ###
-  
+<pre>  
 Gets/sets whether or not the preview is marked active (selected) in the  
 taskbar.  
   
+</pre>

@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIXULStore #
-  
+<pre>  
 The XUL store is used to store information related to a XUL document/application.  
 Typically it is used to store the persisted state for the document, such as  
 window location, toolbars that are open and nodes that are open and closed in a tree.  
   
 The data is serialized to [profile directory]/xulstore.json  
   
-
+</pre>
 ## Methods ##
 
 ### setValue(doc, id, attr, value) ###
-  
+<pre>  
 Sets a value in the store.  
   
 @param doc - document URI  
@@ -25,7 +25,7 @@ Sets a value in the store.
 @param attr - attribute to store  
 @param value - value of the attribute  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -57,14 +57,14 @@ Sets a value in the store.
 </table>
 
 ### hasValue(doc, id, attr) ###
-  
+<pre>  
 Returns true if the store contains a value for attr.  
   
 @param doc - URI of the document  
 @param id - identifier of the node  
 @param attr - attribute  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -90,7 +90,7 @@ Returns true if the store contains a value for attr.
 </table>
 
 ### getValue(doc, id, attr) ###
-  
+<pre>  
 Retrieves a value in the store, or an empty string if it does not exist.  
   
 @param doc - document URI  
@@ -99,7 +99,7 @@ Retrieves a value in the store, or an empty string if it does not exist.
   
 @returns the value of the attribute  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -136,14 +136,14 @@ Retrieves a value in the store, or an empty string if it does not exist.
 </table>
 
 ### removeValue(doc, id, attr) ###
-  
+<pre>  
 Removes a value in the store.  
   
 @param doc - document URI  
 @param id - identifier of the node  
 @param attr - attribute to remove  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -169,13 +169,13 @@ Removes a value in the store.
 </table>
 
 ### getIDsEnumerator(doc) ###
-  
+<pre>  
 Iterates over all of the ids associated with a given document uri that  
 have stored data.  
   
 @param doc - document URI  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -189,14 +189,14 @@ have stored data.
 </table>
 
 ### getAttributeEnumerator(doc, id) ###
-  
+<pre>  
 Iterates over all of the attributes associated with a given document uri  
 and id that have stored data.  
   
 @param doc - document URI  
 @param id - identifier of the node  
   
-
+</pre>
 #### Parameters ####
 
 <table>

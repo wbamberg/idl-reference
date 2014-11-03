@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### addWindow(aWindow, aChrome) ###
- A window has been created. Add it to our list.  
+<pre> A window has been created. Add it to our list.  
 @param aWindow the window to add  
 @param aChrome the corresponding chrome window. The DOM window  
 and chrome will be mapped together, and the corresponding  
@@ -18,7 +18,7 @@ chrome can be retrieved using the (not private)
 method getChromeForWindow. If null, any extant mapping  
 will be cleared.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -42,10 +42,10 @@ will be cleared.
 </table>
 
 ### removeWindow(aWindow) ###
- A window has been closed. Remove it from our list.  
+<pre> A window has been closed. Remove it from our list.  
 @param aWindow the window to remove  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -59,7 +59,7 @@ will be cleared.
 </table>
 
 ### openWindow2(aParent, aUrl, aName, aFeatures, aCalledFromScript, aDialog, aNavigate, aOpeningTab, aArgs) ###
- Like the public interface's open(), but can handle openDialog-style  
+<pre> Like the public interface's open(), but can handle openDialog-style  
 arguments and calls which shouldn't result in us navigating the window.  
   
 @param aParent parent window, if any. Null if no parent.  If it is  
@@ -89,7 +89,7 @@ window to the default charset of the document in the calling window
 (which is determined based on the JS stack and the value of  
 aParent).  This is not guaranteed, however.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -170,7 +170,7 @@ be nullptr if this window is not being opened from a tab.
 </table>
 
 ### findItemWithName(aName, aRequestor, aOriginalRequestor) ###
-  
+<pre>  
 Find a named docshell tree item amongst all windows registered  
 with the window watcher.  This may be a subframe in some window,  
 for example.  
@@ -189,7 +189,7 @@ for example.
 @see findItemWithName methods on nsIDocShellTreeItem and  
      nsIDocShellTreeOwner  
   
-
+</pre>
 #### Parameters ####
 
 <table>

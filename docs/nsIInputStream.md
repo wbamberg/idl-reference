@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIInputStream #
-  
+<pre>  
 nsIInputStream  
   
 An interface describing a readable stream of data.  An input stream may be  
@@ -20,18 +20,18 @@ locking up the main application thread.  For this reason, it is generally
 the case that a blocking input stream should be implemented using thread-  
 safe AddRef and Release.  
   
-
+</pre>
 ## Methods ##
 
 ### close() ###
-   
+<pre>   
 Close the stream.  This method causes subsequent calls to Read and  
 ReadSegments to return 0 bytes read to indicate end-of-file.  Any  
 subsequent calls to Available should throw NS_BASE_STREAM_CLOSED.  
   
-
+</pre>
 ### available() ###
-  
+<pre>  
 Determine number of bytes available in the stream.  A non-blocking  
 stream that does not yet have any data to read should return 0 bytes  
 from this method (i.e., it must not throw the NS_BASE_STREAM_WOULD_BLOCK  
@@ -51,7 +51,7 @@ implementations automatically close when eof is reached; some do not).
 @throws <other-error> if the stream is closed due to some error  
   condition  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -64,7 +64,7 @@ implementations automatically close when eof is reached; some do not).
 </table>
 
 ### read(aBuf, aCount) ###
-   
+<pre>   
 Read data from the stream.  
   
 @param aBuf the buffer into which the data is to be read  
@@ -79,7 +79,7 @@ Read data from the stream.
   
 NOTE: this method should not throw NS_BASE_STREAM_CLOSED.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -110,7 +110,7 @@ NOTE: this method should not throw NS_BASE_STREAM_CLOSED.
 </table>
 
 ### readSegments(aWriter, aClosure, aCount) ###
-  
+<pre>  
 Low-level read method that provides access to the stream's underlying  
 buffer.  The writer function may be called multiple times for segmented  
 buffers.  ReadSegments is expected to keep calling the writer until  
@@ -134,7 +134,7 @@ buffer (e.g., socket input stream).
   
 NOTE: this method should not throw NS_BASE_STREAM_CLOSED.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -171,7 +171,7 @@ NOTE: this method should not throw NS_BASE_STREAM_CLOSED.
 </table>
 
 ### isNonBlocking() ###
-  
+<pre>  
 @return true if stream is non-blocking  
   
 NOTE: reading from a blocking input stream will block the calling thread  
@@ -181,7 +181,7 @@ NOTE: a non-blocking input stream may implement nsIAsyncInputStream to
 provide consumers with a way to wait for the stream to have more data  
 once its read method is unable to return any data without blocking.  
   
-
+</pre>
 #### Returns ####
 
 <table>

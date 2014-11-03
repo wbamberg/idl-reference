@@ -10,17 +10,17 @@ layout: default
 ## Methods ##
 
 ### notifyMessageSent(message) ###
-  
+<pre>  
 |message| can be nsIDOMMoz{Mms,Sms}Message.  
   
-
+</pre>
 ### notifySendMessageFailed(error, message) ###
 
 ### notifyMessageGot(message) ###
-  
+<pre>  
 |message| can be nsIDOMMoz{Mms,Sms}Message.  
   
-
+</pre>
 ### notifyGetMessageFailed(error) ###
 
 ### notifyMessageDeleted(deleted, count) ###
@@ -36,21 +36,21 @@ layout: default
 ### notifyGetSegmentInfoForTextFailed(error) ###
 
 ### notifyGetSmscAddress(aSmscAddress) ###
-  
+<pre>  
  SMSC Address get/set result  
   
-
+</pre>
 ### notifyGetSmscAddressFailed(error) ###
 
 ## Constants ##
 
 ### SUCCESS_NO_ERROR ###
-  
+<pre>  
 All SMS related errors.  
 Make sure to keep this list in sync with the list in:  
 embedding/android/GeckoSmsManager.java  
   
-
+</pre>
 ### NO_SIGNAL_ERROR ###
 
 ### NOT_FOUND_ERROR ###

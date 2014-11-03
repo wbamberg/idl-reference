@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIMutableArray #
-  
+<pre>  
 nsIMutableArray  
 A separate set of methods that will act on the array. Consumers of  
 nsIArray should not QueryInterface to nsIMutableArray unless they  
@@ -21,11 +21,11 @@ is guaranteed that queryElementAt() will never return a null value.
 Any of these methods may throw NS_ERROR_OUT_OF_MEMORY when the  
 array must grow to complete the call, but the allocation fails.  
   
-
+</pre>
 ## Methods ##
 
 ### appendElement(element, weak) ###
-  
+<pre>  
 appendElement()  
   
 Append an element at the end of the array.  
@@ -37,7 +37,7 @@ Append an element at the end of the array.
                          but the element does not support  
                          nsIWeakReference.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ Append an element at the end of the array.
 </table>
 
 ### removeElementAt(index) ###
-  
+<pre>  
 removeElementAt()  
   
 Remove an element at a specific position, moving all elements  
@@ -72,7 +72,7 @@ first, then call removeElementAt().
 @param index the position of the item  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -86,7 +86,7 @@ first, then call removeElementAt().
 </table>
 
 ### insertElementAt(element, index, weak) ###
-  
+<pre>  
 insertElementAt()  
   
 Insert an element at the given position, moving the element   
@@ -107,7 +107,7 @@ position, up by one.
                          but the element does not support  
                          nsIWeakReference.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -134,7 +134,7 @@ position, up by one.
 </table>
 
 ### replaceElementAt(element, index, weak) ###
-  
+<pre>  
 replaceElementAt()  
   
 Replace the element at the given position.  
@@ -157,7 +157,7 @@ Replace the element at the given position.
                          but the element does not support  
                          nsIWeakReference.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -192,8 +192,9 @@ Replace the element at the given position.
 </table>
 
 ### clear() ###
-  
+<pre>  
 clear()  
   
 clear the entire array, releasing all stored objects  
   
+</pre>

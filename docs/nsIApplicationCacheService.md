@@ -6,32 +6,32 @@ layout: default
 </div>
 
 # nsIApplicationCacheService #
-  
+<pre>  
 The application cache service manages the set of application cache  
 groups.  
   
-
+</pre>
 ## Methods ##
 
 ### buildGroupID(aManifestURL, aLoadContextInfo) ###
-  
+<pre>  
 Create group string identifying cache group according the manifest  
 URL and the given load context.  
   
-
+</pre>
 ### buildGroupIDForApp(aManifestURL, aAppID, aInBrowser) ###
-  
+<pre>  
 Same as buildGroupID method, just doesn't require load context.  
   
-
+</pre>
 ### createApplicationCache(group) ###
-  
+<pre>  
 Create a new, empty application cache for the given cache  
 group.  
   
-
+</pre>
 ### createCustomApplicationCache(group, profileDir, quota) ###
-  
+<pre>  
 Create a new, empty application cache for the given cache  
 group residing in a custom directory with a custom quota.  
   
@@ -43,7 +43,7 @@ group residing in a custom directory with a custom quota.
 @param quota  
    Optional override of the default quota.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -70,22 +70,22 @@ group residing in a custom directory with a custom quota.
 </table>
 
 ### getApplicationCache(clientID) ###
-  
+<pre>  
 Get an application cache object for the given client ID.  
   
-
+</pre>
 ### getActiveCache(group) ###
-  
+<pre>  
 Get the currently active cache object for a cache group.  
   
-
+</pre>
 ### deactivateGroup(group) ###
-  
+<pre>  
 Deactivate the currently-active cache object for a cache group.  
   
-
+</pre>
 ### discardByAppId(appID, discardOnlyBrowserEntries) ###
-  
+<pre>  
 Deletes some or all of an application's cache entries.    
   
 @param appId  
@@ -97,7 +97,7 @@ Deletes some or all of an application's cache entries.
    data/history.).  If false, *all* entries for the given appId are  
    deleted (this is used for application uninstallation).  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -120,12 +120,12 @@ Deletes some or all of an application's cache entries.
 </table>
 
 ### chooseApplicationCache(key, aLoadContextInfo) ###
-  
+<pre>  
 Try to find the best application cache to serve a resource.  
   
-
+</pre>
 ### cacheOpportunistically(cache, key) ###
-  
+<pre>  
 Flags the key as being opportunistically cached.  
   
 This method should also propagate the entry to other  
@@ -137,7 +137,7 @@ this is not currently implemented.
 @param key  
        The cache entry key.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -157,12 +157,13 @@ this is not currently implemented.
 </table>
 
 ### getGroups(count, groupIDs) ###
-  
+<pre>  
 Get the list of application cache groups.  
   
-
+</pre>
 ### getGroupsTimeOrdered(count, groupIDs) ###
-  
+<pre>  
 Get the list of application cache groups in the order of  
 activating time.  
   
+</pre>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIWritableVariant #
-  
+<pre>  
 An object that implements nsIVariant may or may NOT also implement this  
 nsIWritableVariant.  
   
@@ -15,7 +15,7 @@ methods can be expected to fail. Setting the 'writable' attribute may or
 may not succeed.  
   
   
-
+</pre>
 ## Methods ##
 
 ### setAsInt8(aValue) ###

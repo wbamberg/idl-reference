@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIFile #
-  
+<pre>  
 An nsIFile is an abstract representation of a filename. It manages  
 filename encoding issues, pathname component separators ('/' vs. '\\'  
 vs. ':') and weird stuff like differing volumes with identical names, as  
@@ -31,11 +31,11 @@ A string containing characters encoded in the native charset cannot
 be safely passed to javascript via xpconnect.  Therefore, the "native  
 methods" are not scriptable.  
   
-
+</pre>
 ## Methods ##
 
 ### append(node) ###
-  
+<pre>  
  append[Native]  
   
  This function is used for constructing a descendent of the  
@@ -46,7 +46,7 @@ methods" are not scriptable.
       For the |appendNative| method, the node must be in the native  
       filesystem charset.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -64,12 +64,12 @@ methods" are not scriptable.
 ### appendNative(node) ###
 
 ### normalize() ###
-  
+<pre>  
  Normalize the pathName (e.g. removing .. and . components on Unix).  
   
-
+</pre>
 ### create(type, permissions) ###
-  
+<pre>  
  create  
   
  This function will create a new file or directory in the  
@@ -89,7 +89,7 @@ methods" are not scriptable.
       be ignored on systems that do not need to do  
       permissions.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -115,7 +115,7 @@ methods" are not scriptable.
 </table>
 
 ### copyTo(newParentDir, newName) ###
-  
+<pre>  
  copyTo[Native]  
   
  This will copy this file to the specified newParentDir.  
@@ -142,7 +142,7 @@ methods" are not scriptable.
       the file to be copied. This param may be empty, in  
       which case the current leaf name will be used.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -172,7 +172,7 @@ methods" are not scriptable.
 ### CopyToNative(newParentDir, newName) ###
 
 ### copyToFollowingLinks(newParentDir, newName) ###
-  
+<pre>  
  copyToFollowingLinks[Native]  
   
  This function is identical to copyTo with the exception that,  
@@ -181,11 +181,11 @@ methods" are not scriptable.
  the |CopyToFollowingLinks| method, the newName must be in the   
  native filesystem charset.  
   
-
+</pre>
 ### copyToFollowingLinksNative(newParentDir, newName) ###
 
 ### moveTo(newParentDir, newName) ###
-  
+<pre>  
  moveTo[Native]  
   
  A method to move this file or directory to newParentDir.  
@@ -217,7 +217,7 @@ methods" are not scriptable.
       the file to be moved. This param may be empty, in  
       which case the current leaf name will be used.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -247,7 +247,7 @@ methods" are not scriptable.
 ### moveToNative(newParentDir, newName) ###
 
 ### renameTo(newParentDir, newName) ###
-  
+<pre>  
  renameTo  
   
  This method is identical to moveTo except that if this file or directory  
@@ -255,15 +255,15 @@ methods" are not scriptable.
  (NS_ERROR_FILE_ACCESS_DENIED).  
  This object will still point to the old location after renaming.  
   
-
+</pre>
 ### remove(recursive) ###
-  
+<pre>  
  This will try to delete this file.  The 'recursive' flag  
  must be PR_TRUE to delete directories which are not empty.  
   
  This will not resolve any symlinks.  
   
-
+</pre>
 ### exists() ###
 
 ### isWritable() ###
@@ -281,12 +281,12 @@ methods" are not scriptable.
 ### isSymlink() ###
 
 ### isSpecial() ###
-  
+<pre>  
 Not a regular file, not a directory, not a symlink.  
   
-
+</pre>
 ### createUnique(type, permissions) ###
-  
+<pre>  
  createUnique  
    
  This function will create a new file or directory in the  
@@ -311,7 +311,7 @@ Not a regular file, not a directory, not a symlink.
       be ignored on systems that do not need to do  
       permissions.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -337,7 +337,7 @@ Not a regular file, not a directory, not a symlink.
 </table>
 
 ### clone() ###
-  
+<pre>  
 clone()  
   
 This function will allocate and initialize a nsIFile object to the  
@@ -348,7 +348,7 @@ exact location of the |this| nsIFile.
          with.  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -363,18 +363,18 @@ exact location of the |this| nsIFile.
 </table>
 
 ### equals(inFile) ###
-  
+<pre>  
  Will determine if the inFile equals this.  
   
-
+</pre>
 ### contains(inFile) ###
-  
+<pre>  
  Will determine if inFile is a descendant of this file.  
  This routine looks in subdirectories too.  
   
-
+</pre>
 ### initWithPath(filePath) ###
-  
+<pre>  
  initWith[Native]Path  
   
  This function will initialize the nsIFile object.  Any  
@@ -387,7 +387,7 @@ exact location of the |this| nsIFile.
       initWithNativePath, the filePath must be in the native  
       filesystem charset.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -407,7 +407,7 @@ exact location of the |this| nsIFile.
 ### initWithNativePath(filePath) ###
 
 ### initWithFile(aFile) ###
-  
+<pre>  
  initWithFile  
   
  Initialize this object with another file  
@@ -415,7 +415,7 @@ exact location of the |this| nsIFile.
   @param aFile  
       the file this becomes equivalent to  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -429,7 +429,7 @@ exact location of the |this| nsIFile.
 </table>
 
 ### openNSPRFileDesc(flags, mode) ###
-  
+<pre>  
 Return the result of PR_Open on the file.  The caller is  
 responsible for calling PR_Close on the result.  
   
@@ -440,7 +440,7 @@ readahead. DELETE_ON_CLOSE is unreliable on Windows and is deprecated.
 Instead use NS_OpenAnonymousTemporaryFile() to create a temporary  
 file which will be deleted upon close.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -459,19 +459,19 @@ file which will be deleted upon close.
 </table>
 
 ### openANSIFileDesc(mode) ###
-  
+<pre>  
 Return the result of fopen on the file.  The caller is  
 responsible for calling fclose on the result.  
   
-
+</pre>
 ### load() ###
-  
+<pre>  
 Return the result of PR_LoadLibrary on the file.  The caller is  
 responsible for calling PR_UnloadLibrary on the result.  
   
-
+</pre>
 ### appendRelativePath(relativeFilePath) ###
-  
+<pre>  
  appendRelative[Native]Path  
   
  Append a relative path to the current path of the nsIFile object.  
@@ -482,7 +482,7 @@ responsible for calling PR_UnloadLibrary on the result.
       For the |appendRelativeNativePath| method, the relativeFilePath   
       must be in the native filesystem charset.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -501,7 +501,7 @@ responsible for calling PR_UnloadLibrary on the result.
 ### appendRelativeNativePath(relativeFilePath) ###
 
 ### reveal() ###
-   
+<pre>   
  reveal  
   
  Ask the operating system to open the folder which contains  
@@ -509,9 +509,9 @@ responsible for calling PR_UnloadLibrary on the result.
  support the ability to open a folder and is run async on Windows.    
  This routine must be called on the main.   
   
-
+</pre>
 ### launch() ###
-   
+<pre>   
  launch  
   
  Ask the operating system to attempt to open the file.   
@@ -520,9 +520,9 @@ responsible for calling PR_UnloadLibrary on the result.
  and is run async on Windows.  This routine must be called on the   
  main thread.   
   
-
+</pre>
 ### getRelativeDescriptor(fromFile) ###
-  
+<pre>  
  getRelativeDescriptor  
   
  Returns a relative file path in an opaque, XP format. It is therefore  
@@ -535,7 +535,7 @@ responsible for calling PR_UnloadLibrary on the result.
       the file from which the descriptor is relative.  
       There is no defined result if this param is null.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -550,7 +550,7 @@ responsible for calling PR_UnloadLibrary on the result.
 </table>
 
 ### setRelativeDescriptor(fromFile, relativeDesc) ###
-  
+<pre>  
  setRelativeDescriptor  
   
  Initializes the file to the location relative to fromFile using  
@@ -561,7 +561,7 @@ responsible for calling PR_UnloadLibrary on the result.
   @param relative  
       the relative descriptor obtained from getRelativeDescriptor  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -583,42 +583,42 @@ responsible for calling PR_UnloadLibrary on the result.
 ## Attributes ##
 
 ### leafName ###
-  
+<pre>  
  Accessor to the leaf name of the file itself.        
  For the |nativeLeafName| method, the nativeLeafName must   
  be in the native filesystem charset.  
   
-
+</pre>
 ### nativeLeafName ###
 
 ### permissions ###
-  
+<pre>  
  Attributes of nsIFile.  
   
-
+</pre>
 ### permissionsOfLink ###
 
 ### lastModifiedTime ###
-  
+<pre>  
  File Times are to be in milliseconds from  
  midnight (00:00:00), January 1, 1970 Greenwich Mean  
  Time (GMT).  
   
-
+</pre>
 ### lastModifiedTimeOfLink ###
 
 ### fileSize ###
-  
+<pre>  
  WARNING!  On the Mac, getting/setting the file size with nsIFile  
  only deals with the size of the data fork.  If you need to  
  know the size of the combined data and resource forks use the  
  GetFileSizeWithResFork() method defined on nsILocalFileMac.  
   
-
+</pre>
 ### fileSizeOfLink ###
 
 ### target ###
-  
+<pre>  
  target & path  
   
  Accessor to the string path.  The native version of these  
@@ -643,7 +643,7 @@ responsible for calling PR_UnloadLibrary on the result.
  native filesystem charset.  
   
   
-
+</pre>
 ### nativeTarget ###
 
 ### path ###
@@ -651,21 +651,21 @@ responsible for calling PR_UnloadLibrary on the result.
 ### nativePath ###
 
 ### parent ###
-  
+<pre>  
  Parent will be null when this is at the top of the volume.  
   
-
+</pre>
 ### directoryEntries ###
-  
+<pre>  
  Returns an enumeration of the elements in a directory. Each  
  element in the enumeration is an nsIFile.  
   
   @throws NS_ERROR_FILE_NOT_DIRECTORY if the current nsIFile does  
           not specify a directory.  
   
-
+</pre>
 ### followLinks ###
-  
+<pre>  
  followLinks  
   
  This attribute will determine if the nsLocalFile will auto  
@@ -673,39 +673,40 @@ responsible for calling PR_UnloadLibrary on the result.
  on all non unix systems.  On unix, this attribute is effectively  
  a noop.    
   
-
+</pre>
 ### diskSpaceAvailable ###
 
 ### persistentDescriptor ###
-  
+<pre>  
  Accessor to a null terminated string which will specify  
  the file in a persistent manner for disk storage.  
   
  The character set of this attribute is undefined.  DO NOT TRY TO  
  INTERPRET IT AS HUMAN READABLE TEXT!  
   
-
+</pre>
 ## Constants ##
 
 ### NORMAL_FILE_TYPE ###
-  
+<pre>  
  Create Types  
   
  NORMAL_FILE_TYPE - A normal file.  
  DIRECTORY_TYPE   - A directory/folder.  
   
-
+</pre>
 ### DIRECTORY_TYPE ###
 
 ### OS_READAHEAD ###
-  
+<pre>  
 Flag for openNSPRFileDesc(), to hint to the OS that the file will be  
 read sequentially with agressive readahead.  
   
-
+</pre>
 ### DELETE_ON_CLOSE ###
-  
+<pre>  
 Flag for openNSPRFileDesc(). Deprecated and unreliable!  
 Instead use NS_OpenAnonymousTemporaryFile() to create a temporary  
 file which will be deleted upon close!  
   
+</pre>

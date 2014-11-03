@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # extIEvents #
-  
+<pre>  
 Interface for supporting custom events.  
   
-
+</pre>
 ## Methods ##
 
 ### addListener(aEvent, aListener) ###
-  
+<pre>  
 Adds an event listener to the list. If multiple identical event listeners  
 are registered on the same event target with the same parameters the  
 duplicate instances are discarded. They do not cause the EventListener  
@@ -25,7 +25,7 @@ removed with the removeListener method.
 @param   aListener  
          The reference to a listener  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -45,7 +45,7 @@ removed with the removeListener method.
 </table>
 
 ### removeListener(aEvent, aListener) ###
-  
+<pre>  
 Removes an event listener from the list. Calling remove  
 with arguments which do not identify any currently registered  
 event listener has no effect.  
@@ -54,7 +54,7 @@ event listener has no effect.
 @param   aListener  
          The reference to a listener  
   
-
+</pre>
 #### Parameters ####
 
 <table>

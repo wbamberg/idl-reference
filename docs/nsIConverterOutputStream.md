@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIConverterOutputStream #
-  
+<pre>  
 This interface allows writing strings to a stream, doing automatic  
 character encoding conversion.  
   
-
+</pre>
 ## Methods ##
 
 ### init(aOutStream, aCharset, aBufferSize, aReplacementCharacter) ###
-  
+<pre>  
 Initialize this stream. Must be called before any other method on this  
 interface, or you will crash. The output stream passed to this method  
 must not be null, or you will crash.  
@@ -38,7 +38,7 @@ must not be null, or you will crash.
        A value of 0x0000 will cause an exception to be thrown upon  
        attempts to write unsupported characters.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

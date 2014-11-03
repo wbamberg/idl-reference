@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIUnicharInputStream #
-  
+<pre>  
 Abstract unicode character input stream  
 @see nsIInputStream  
   
-
+</pre>
 ## Methods ##
 
 ### read(aBuf, aCount) ###
-  
+<pre>  
 Reads into a caller-provided character array.  
   
 @return The number of characters that were successfully read. May be less  
@@ -23,7 +23,7 @@ Reads into a caller-provided character array.
   
 @note To read more than 2^32 characters, call this method multiple times.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -38,7 +38,7 @@ Reads into a caller-provided character array.
 </table>
 
 ### readSegments(aWriter, aClosure, aCount) ###
-  
+<pre>  
 Low-level read method that has access to the stream's underlying buffer.  
 The writer function may be called multiple times for segmented buffers.  
 ReadSegments is expected to keep calling the writer until either there is  
@@ -59,7 +59,7 @@ not call the writer with zero characters to consume.
 NOTE: this function may be unimplemented if a stream has no underlying  
 buffer  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -96,12 +96,12 @@ buffer
 </table>
 
 ### readString(aCount, aString) ###
-  
+<pre>  
 Read into a string object.  
 @param aCount The number of characters that should be read  
 @return The number of characters that were read.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -126,7 +126,8 @@ Read into a string object.
 </table>
 
 ### close() ###
-  
+<pre>  
 Close the stream and free associated resources. This also closes the  
 underlying stream, if any.  
   
+</pre>

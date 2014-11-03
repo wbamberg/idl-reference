@@ -6,8 +6,8 @@ layout: default
 </div>
 
 # nsIXPCWrappedJSObjectGetter #
-***********************************************************************/  
-  
+<pre>***********************************************************************/  
+</pre><pre>  
 This is a sort of a placeholder interface. It is not intended to be  
 implemented. It exists to give the nsIXPCSecurityManager an iid on  
 which to gate a specific activity in XPConnect.  
@@ -77,7 +77,7 @@ b) One might ask why 'foo' should not just implement an interface through
  do special processing on 'nsIXPCSecurityManager::CanGetProperty' when  
  the interface id is that of nsIXPCWrappedJSObjectGetter.  
   
-
+</pre>
 ## Attributes ##
 
 ### neverCalled ###

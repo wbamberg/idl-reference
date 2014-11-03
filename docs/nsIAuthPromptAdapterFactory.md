@@ -6,15 +6,16 @@ layout: default
 </div>
 
 # nsIAuthPromptAdapterFactory #
-  
+<pre>  
 An interface for wrapping nsIAuthPrompt interfaces to make  
 them usable via an nsIAuthPrompt2 interface.  
   
-
+</pre>
 ## Methods ##
 
 ### createAdapter(aPrompt) ###
-  
+<pre>  
 Wrap an object implementing nsIAuthPrompt so that it's usable via  
 nsIAuthPrompt2.  
   
+</pre>

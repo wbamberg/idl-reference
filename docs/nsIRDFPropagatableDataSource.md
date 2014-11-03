@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsIRDFPropagatableDataSource #
-  
+<pre>  
 An nsIRDFPropagatableDataSource provides an ability to suppress  
 synchronization notifications.  
   
-
+</pre>
 ## Attributes ##
 
 ### propagateChanges ###
-  
+<pre>  
 Set this value to <code>true</code> to enable synchronization  
 notifications.  
   
@@ -23,3 +23,4 @@ notifications.
   
 By default, this value is <code>true</code>.  
   
+</pre>

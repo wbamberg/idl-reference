@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIIOService2 #
-  
+<pre>  
 nsIIOService2 extends nsIIOService  
   
-
+</pre>
 ## Methods ##
 
 ### newChannelFromURIWithProxyFlags2(aURI, aProxyURI, aProxyFlags, aLoadingNode, aLoadingPrincipal, aTriggeringPrincipal, aSecurityFlags, aContentPolicyType) ###
-  
+<pre>  
 Creates a channel for a given URI.  
   
 @param aURI nsIURI from which to make a channel  
@@ -23,7 +23,7 @@ Creates a channel for a given URI.
        when resolving proxies for this new channel  
 @return reference to the new nsIChannel object  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -62,7 +62,7 @@ Creates a channel for a given URI.
 </table>
 
 ### newChannelFromURIWithProxyFlags(aURI, aProxyURI, aProxyFlags) ###
-  
+<pre>  
 Creates a channel for a given URI.  
   
 @param aURI nsIURI from which to make a channel  
@@ -72,7 +72,7 @@ Creates a channel for a given URI.
        when resolving proxies for this new channel  
 @return reference to the new nsIChannel object  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -113,7 +113,7 @@ Creates a channel for a given URI.
 ## Attributes ##
 
 ### manageOfflineStatus ###
-  
+<pre>  
 While this is set, IOService will monitor an nsINetworkLinkService  
 (if available) and set its offline status to "true" whenever  
 isLinkUp is false.  
@@ -125,3 +125,4 @@ that this means during application startup, IOService may be offline
 if there is no link, until application code runs and can turn off  
 this management.  
   
+</pre>

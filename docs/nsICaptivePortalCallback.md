@@ -10,11 +10,12 @@ layout: default
 ## Methods ##
 
 ### prepare() ###
-  
+<pre>  
 Preparation for network interface before captive portal detection started.  
   
-
+</pre>
 ### complete(success) ###
-  
+<pre>  
 Invoke callbacks after captive portal detection finished.  
   
+</pre>

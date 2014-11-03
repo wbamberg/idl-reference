@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsINativeFileWatcherService #
-  
+<pre>  
 A service providing native implementations of path changes notification.  
   
-
+</pre>
 ## Methods ##
 
 ### addPath(pathToWatch, onChange, onError, onSuccess) ###
-  
+<pre>  
 Watches the passed path for changes. If it's a directory, every file  
 it contains is watched. Recursively watches subdirectories. If the  
 resource is already being watched, does nothing. If the passed path  
@@ -29,7 +29,7 @@ is a file, the behaviour is not specified.
        The optional callback invoked when the file watcher starts  
        watching the resource for changes.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -63,7 +63,7 @@ is a file, the behaviour is not specified.
 </table>
 
 ### removePath(pathToUnwatch, onChange, onError, onSuccess) ###
-  
+<pre>  
 Removes the provided path from the watched resources. If the path  
 was not being watched or the callbacks were not registered, silently  
 ignores the request.  
@@ -83,7 +83,7 @@ some error callbacks associated).
        The optional callback invoked when the file watcher stops  
        watching the resource for changes.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

@@ -10,38 +10,39 @@ layout: default
 ## Methods ##
 
 ### load(input) ###
-  
+<pre>  
 load a set of name/value pairs from the input stream  
 names and values should be in UTF8  
   
-
+</pre>
 ### save(output, header) ###
-  
+<pre>  
 output the values to the stream - results will be in UTF8  
   
-
+</pre>
 ### subclass(superclass) ###
-  
+<pre>  
 call subclass() to make future calls to load() set the properties  
 in this "superclass" instead  
   
-
+</pre>
 ### enumerate() ###
-  
+<pre>  
 get an enumeration of nsIPropertyElement objects,  
 which are read-only (i.e. setting properties on the element will  
 not make changes back into the source nsIPersistentProperties  
   
-
+</pre>
 ### getStringProperty(key) ###
-  
+<pre>  
 shortcut to nsIProperty's get() which retrieves a string value  
 directly (and thus faster)  
   
-
+</pre>
 ### setStringProperty(key, value) ###
-  
+<pre>  
 shortcut to nsIProperty's set() which sets a string value  
 directly (and thus faster). If the given property already exists,  
 then the old value will be returned  
   
+</pre>

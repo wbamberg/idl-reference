@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### init(parent, title, initialColor) ###
-  
+<pre>  
 Initialize the color picker widget. The color picker will not be shown until  
 open() is called.  
 If the backend doesn't support setting a title to the native color picker  
@@ -27,7 +27,7 @@ also assert.
                          parameter has to follow the format specified on top  
                          of this file.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -56,7 +56,8 @@ also assert.
 </table>
 
 ### open(aColorPickerShownCallback) ###
-  
+<pre>  
 Opens the color dialog asynchrounously.  
 The results are provided via the callback object.  
   
+</pre>

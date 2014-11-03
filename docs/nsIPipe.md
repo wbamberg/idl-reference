@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIPipe #
-  
+<pre>  
 nsIPipe represents an in-process buffer that can be read using nsIInputStream  
 and written using nsIOutputStream.  The reader and writer of a pipe do not  
 have to be on the same thread.  As a result, the pipe is an ideal mechanism  
@@ -34,11 +34,11 @@ cases nsIPipe is not actually used.  It is usually enough to just get
 references to the pipe's input and output end.  In which case, the pipe is  
 automatically closed when the respective pipe ends are released.  
   
-
+</pre>
 ## Methods ##
 
 ### init(nonBlockingInput, nonBlockingOutput, segmentSize, segmentCount) ###
-  
+<pre>  
 initialize this pipe  
   
 @param nonBlockingInput  
@@ -54,7 +54,7 @@ initialize this pipe
        should always be used with caution.  The default value for this  
        parameter is a finite value.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -92,11 +92,12 @@ initialize this pipe
 ## Attributes ##
 
 ### inputStream ###
-  
+<pre>  
 The pipe's input end, which also implements nsISearchableInputStream.  
   
-
+</pre>
 ### outputStream ###
-  
+<pre>  
 The pipe's output end.  
   
+</pre>

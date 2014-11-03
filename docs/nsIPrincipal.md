@@ -10,19 +10,19 @@ layout: default
 ## Methods ##
 
 ### equals(other) ###
-  
+<pre>  
 Returns whether the other principal is equivalent to this principal.  
 Principals are considered equal if they are the same principal, or  
 they have the same origin.  
   
-
+</pre>
 ### equalsConsideringDomain(other) ###
-  
+<pre>  
 Like equals, but takes document.domain changes into account.  
   
-
+</pre>
 ### subsumes(other) ###
-  
+<pre>  
 Returns whether the other principal is equal to or weaker than this  
 principal. Principals are equal if they are the same object or they  
 have the same origin.  
@@ -36,15 +36,15 @@ privileged, security context) is not equal to any other principal
 (including other null principals), and therefore does not subsume  
 anything but itself.  
   
-
+</pre>
 ### subsumesConsideringDomain(other) ###
-  
+<pre>  
 Same as the previous method, subsumes(), but takes document.domain into  
 account.  
   
-
+</pre>
 ### checkMayLoad(uri, report, allowIfInheritsPrincipal) ###
-  
+<pre>  
 Checks whether this principal is allowed to load the network resource  
 located at the given URI under the same-origin policy. This means that  
 codebase principals are only allowed to load resources from the same  
@@ -70,7 +70,7 @@ NOTE: The 'domain' attribute has no effect on the behaviour of this
                                   loader.  
 @throws NS_ERROR_DOM_BAD_URI if the load is not allowed.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -102,36 +102,36 @@ NOTE: The 'domain' attribute has no effect on the behaviour of this
 ## Attributes ##
 
 ### hashValue ###
-  
+<pre>  
 Returns a hash value for the principal.  
   
-
+</pre>
 ### URI ###
-  
+<pre>  
 The codebase URI to which this principal pertains.  This is  
 generally the document URI.  
   
-
+</pre>
 ### domain ###
-  
+<pre>  
 The domain URI to which this principal pertains.  
 This is congruent with HTMLDocument.domain, and may be null.  
 Setting this has no effect on the URI.  
   
-
+</pre>
 ### origin ###
-  
+<pre>  
 The origin of this principal's codebase URI.  
 An origin is defined as: scheme + host + port.  
   
-
+</pre>
 ### csp ###
-  
+<pre>  
 A Content Security Policy associated with this principal.  
   
-
+</pre>
 ### jarPrefix ###
-  
+<pre>  
 Returns the jar prefix of the principal.  
 The jar prefix is a string that can be used to isolate data or  
 permissions between different principals while taking into account  
@@ -144,16 +144,16 @@ The jarPrefix is intended to be an opaque identifier. It is currently
 "human-readable" but no callers should assume it will stay as is and  
 it might be crypto-hashed at some point.  
   
-
+</pre>
 ### baseDomain ###
-  
+<pre>  
 The base domain of the codebase URI to which this principal pertains  
 (generally the document URI), handling null principals and  
 non-hierarchical schemes correctly.  
   
-
+</pre>
 ### appStatus ###
-  
+<pre>  
 Gets the principal's app status, which indicates whether the principal  
 corresponds to "app code", and if it does, how privileged that code is.  
 This method returns one of the APP_STATUS constants above.  
@@ -173,9 +173,9 @@ If you're doing a check to determine "does this principal correspond to
 app code?", you must check appStatus; checking appId != NO_APP_ID is not  
 sufficient.  
   
-
+</pre>
 ### appId ###
-  
+<pre>  
 Gets the id of the app this principal is inside.  If this principal is  
 not inside an app, returns nsIScriptSecurityManager::NO_APP_ID.  
   
@@ -194,26 +194,26 @@ origin as the app.
 If you're doing a security check based on appId, you must check  
 appStatus as well.  
   
-
+</pre>
 ### isInBrowserElement ###
-  
+<pre>  
 Returns true iff the principal is inside a browser element.  (<iframe  
 mozbrowser mozapp> does not count as a browser element.)  
   
-
+</pre>
 ### unknownAppId ###
-  
+<pre>  
 Returns true if this principal has an unknown appId. This shouldn't  
 generally be used. We only expose it due to not providing the correct  
 appId everywhere where we construct principals.  
   
-
+</pre>
 ### isNullPrincipal ###
-  
+<pre>  
 Returns true iff this principal is a null principal (corresponding to an  
 unknown, hence assumed minimally privileged, security context).  
   
-
+</pre>
 ## Constants ##
 
 ### APP_STATUS_NOT_INSTALLED ###

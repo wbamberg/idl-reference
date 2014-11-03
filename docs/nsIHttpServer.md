@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIHttpServer #
-  
+<pre>  
 An interface which represents an HTTP server.  
   
-
+</pre>
 ## Methods ##
 
 ### start(port) ###
-  
+<pre>  
 Starts up this server, listening upon the given port.  
   
 @param port  
@@ -30,7 +30,7 @@ Starts up this server, listening upon the given port.
   called on this but before the provided callback function has been  
   called.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -55,7 +55,7 @@ Starts up this server, listening upon the given port.
 </table>
 
 ### stop(callback) ###
-  
+<pre>  
 Shuts down this server if it is running (including the period of time after  
 stop() has been called but before the provided callback has been called).  
   
@@ -67,7 +67,7 @@ stop() has been called but before the provided callback has been called).
 @throws NS_ERROR_UNEXPECTED  
   if this server is not running  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -86,7 +86,7 @@ stop() has been called but before the provided callback has been called).
 </table>
 
 ### registerFile(path, file) ###
-  
+<pre>  
 Associates the local file represented by the string file with all requests  
 which match request.  
   
@@ -97,7 +97,7 @@ which match request.
   the file to serve for the given path, or null to remove any mapping that  
   might exist; this file must exist for the lifetime of the server  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -119,7 +119,7 @@ which match request.
 </table>
 
 ### registerPathHandler(path, handler) ###
-  
+<pre>  
 Registers a custom path handler.  
   
 @param path  
@@ -135,7 +135,7 @@ Registers a custom path handler.
 @throws NS_ERROR_INVALID_ARG  
   if path does not begin with a "/"  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -163,7 +163,7 @@ Registers a custom path handler.
 </table>
 
 ### registerPrefixHandler(prefix, handler) ###
-  
+<pre>  
 Registers a custom prefix handler.  
   
 @param prefix  
@@ -179,7 +179,7 @@ Registers a custom prefix handler.
 @throws NS_ERROR_INVALID_ARG  
   if path does not begin with a "/" or does not end with a "/"  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -207,7 +207,7 @@ Registers a custom prefix handler.
 </table>
 
 ### registerErrorHandler(code, handler) ###
-  
+<pre>  
 Registers a custom error page handler.  
   
 @param code  
@@ -224,7 +224,7 @@ Registers a custom error page handler.
 @note  
   If the error handler handles HTTP 500 and throws, behavior is undefined.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -253,7 +253,7 @@ Registers a custom error page handler.
 </table>
 
 ### registerDirectory(path, dir) ###
-  
+<pre>  
 Maps all requests to paths beneath path to the corresponding file beneath  
 dir.  
   
@@ -270,7 +270,7 @@ dir.
   if dir is non-null and does not exist or is not a directory, or if path  
   does not begin with and end with a forward slash  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -298,7 +298,7 @@ dir.
 </table>
 
 ### registerContentType(extension, type) ###
-  
+<pre>  
 Associates files with the given extension with the given Content-Type when  
 served by this server, in the absence of any file-specific information  
 about the desired Content-Type.  If type is empty, removes any extant  
@@ -317,9 +317,9 @@ mapping, if one is present.
   Implementations MAY treat type as a trusted argument; users who fail to  
   generate this string from trusted data risk security vulnerabilities.  
   
-
+</pre>
 ### setIndexHandler(handler) ###
-  
+<pre>  
 Sets the handler used to display the contents of a directory if  
 the directory contains no index page.  
   
@@ -332,7 +332,7 @@ the directory contains no index page.
   directory is available from the metadata object passed to the  
   handler, under the key "directory".  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -352,44 +352,45 @@ the directory contains no index page.
 </table>
 
 ### getState(path, key) ###
-  
+<pre>  
 Retrieves the string associated with the given key in this, for the given  
 path's saved state.  All keys are initially associated with the empty  
 string.  
   
-
+</pre>
 ### setState(path, key, value) ###
-  
+<pre>  
 Sets the string associated with the given key in this, for the given path's  
 saved state.  
   
-
+</pre>
 ### getSharedState(key) ###
-  
+<pre>  
 Retrieves the string associated with the given key in this, in  
 entire-server saved state.  All keys are initially associated with the  
 empty string.  
   
-
+</pre>
 ### setSharedState(key, value) ###
-  
+<pre>  
 Sets the string associated with the given key in this, in entire-server  
 saved state.  
   
-
+</pre>
 ### getObjectState(key) ###
-  
+<pre>  
 Retrieves the object associated with the given key in this in  
 object-valued saved state.  All keys are initially associated with null.  
   
-
+</pre>
 ### setObjectState(key, value) ###
-  
+<pre>  
 Sets the object associated with the given key in this in object-valued  
 saved state.  The value may be null.  
   
-
+</pre>
 ## Attributes ##
 
 ### identity ###
- Represents the locations at which this server is reachable. */  
+<pre> Represents the locations at which this server is reachable. */  
+</pre>

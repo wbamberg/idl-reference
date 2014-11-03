@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIXULTemplateResult #
-  
+<pre>  
 A single result generated from a template query. Each result is identified  
 by an id, which must be unique within the set of results produced from a  
 query. The result may optionally be identified by an RDF resource.  
@@ -21,11 +21,11 @@ Each result also contains a set of variable bindings. The value for a
 particular variable may be retrieved using the getBindingFor and  
 getBindingObjectFor methods.  
   
-
+</pre>
 ## Methods ##
 
 ### getBindingFor(aVar) ###
-  
+<pre>  
 Get the string representation of the value of a variable for this  
 result. This string will be used in the action body from a template as  
 the replacement text. For instance, if the text ?name appears in an  
@@ -37,7 +37,7 @@ name, thus aVar should be ?name and not simply name.
   
 @return the value for the variable or a null string if it has no value  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -62,7 +62,7 @@ name, thus aVar should be ?name and not simply name.
 </table>
 
 ### getBindingObjectFor(aVar) ###
-  
+<pre>  
 Get an object value for a variable such as ?name for this result.   
   
 This method may return null for a variable, even if getBindingFor returns  
@@ -73,7 +73,7 @@ convenience when sorting results.
   
 @return the value for the variable or null if it has no value  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -98,7 +98,7 @@ convenience when sorting results.
 </table>
 
 ### ruleMatched(aQuery, aRuleNode) ###
-  
+<pre>  
 Indicate that a particular rule of a query has matched and that output  
 will be generated for it. Both the query as compiled by the query  
 processor's compileQuery method and the XUL <rule> element are supplied.  
@@ -109,7 +109,7 @@ the <query> element that was used to compile the query.
 @param aQuery the query that matched  
 @param aRuleNode the rule node that matched  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -129,25 +129,25 @@ the <query> element that was used to compile the query.
 </table>
 
 ### hasBeenRemoved() ###
-  
+<pre>  
 Indicate that the output for a result has beeen removed and that the  
 result is no longer being used by the builder.  
   
-
+</pre>
 ## Attributes ##
 
 ### isContainer ###
-  
+<pre>  
 True if the result represents a container.  
   
-
+</pre>
 ### isEmpty ###
-  
+<pre>  
 True if the result represents an empty container.  
   
-
+</pre>
 ### mayProcessChildren ###
-  
+<pre>  
 True if the template builder may use this result as the reference point  
 for additional recursive processing of the template. The template builder  
 will reprocess the template using this result as the reference point and  
@@ -156,23 +156,24 @@ output generated for this result. If false, child content is not
 processed. This property identifies only the default handling and may be  
 overriden by syntax used in the template.  
   
-
+</pre>
 ### id ###
-  
+<pre>  
 ID of the result. The DOM element created for this result, if any, will  
 have its id attribute set to this value. The id must be unique for a  
 query.  
   
-
+</pre>
 ### resource ###
-  
+<pre>  
 Resource for the result, which may be null. If set, the resource uri  
 must be the same as the ID property.  
   
-
+</pre>
 ### type ###
-  
+<pre>  
 The type of the object. The predefined value 'separator' may be used  
 for separators. Other values may be used for application specific  
 purposes.  
   
+</pre>

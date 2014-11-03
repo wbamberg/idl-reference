@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsPIPlacesDatabase #
-  
+<pre>  
 This is a private interface used by Places components to get access to the  
 database.  If outside consumers wish to use this, they should only read from  
 the database so they do not break any internal invariants.  
   
-
+</pre>
 ## Methods ##
 
 ### asyncExecuteLegacyQueries(aQueries, aQueryCount, aOptions, aCallback) ###
-  
+<pre>  
 Asynchronously executes the statement created from queries.  
   
 @see nsINavHistoryService::executeQueries  
@@ -27,10 +27,11 @@ Asynchronously executes the statement created from queries.
       are absolutely sure that the returned results are fine for  
       your use-case.  
   
-
+</pre>
 ## Attributes ##
 
 ### DBConnection ###
-  
+<pre>  
 The database connection used by Places.  
   
+</pre>

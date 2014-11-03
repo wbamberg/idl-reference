@@ -6,18 +6,18 @@ layout: default
 </div>
 
 # nsIURIContentListener #
-  
+<pre>  
 nsIURIContentListener is an interface used by components which  
 want to know (and have a chance to handle) a particular content type.  
 Typical usage scenarios will include running applications which register  
 a nsIURIContentListener for each of its content windows with the uri  
 dispatcher service.   
   
-
+</pre>
 ## Methods ##
 
 ### onStartURIOpen(aURI) ###
-  
+<pre>  
 Gives the original content listener first crack at stopping a load before  
 it happens.  
   
@@ -26,7 +26,7 @@ it happens.
 @return       <code>false</code> if the load can continue;  
               <code>true</code> if the open should be aborted.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -52,7 +52,7 @@ it happens.
 </table>
 
 ### doContent(aContentType, aIsContentPreferred, aRequest, aContentHandler) ###
-  
+<pre>  
 Notifies the content listener to hook up an nsIStreamListener capable of  
 consuming the data stream.  
   
@@ -74,7 +74,7 @@ consuming the data stream.
                             continue handling the load and call the  
                             returned streamlistener's methods.   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -128,7 +128,7 @@ consuming the data stream.
 </table>
 
 ### isPreferred(aContentType, aDesiredContentType) ###
-  
+<pre>  
 When given a uri to dispatch, if the URI is specified as 'preferred   
 content' then the uri loader tries to find a preferred content handler  
 for the content type. The thought is that many content listeners may  
@@ -152,7 +152,7 @@ between isPreferred and canHandleContent.
                             content handler for aContentType;  
                             <code>false<code> otherwise.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -191,7 +191,7 @@ between isPreferred and canHandleContent.
 </table>
 
 ### canHandleContent(aContentType, aIsContentPreferred, aDesiredContentType) ###
-  
+<pre>  
 When given a uri to dispatch, if the URI is not specified as 'preferred  
 content' then the uri loader calls canHandleContent to see if the content  
 listener is capable of handling the content.  
@@ -216,7 +216,7 @@ shells. The isPreferred decision is a decision made by a top level
 application content listener that sits at the top of the docshell  
 hierarchy.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -263,13 +263,13 @@ hierarchy.
 ## Attributes ##
 
 ### loadCookie ###
-  
+<pre>  
 The load context associated with a particular content listener.  
 The URI Loader stores and accesses this value as needed.  
   
-
+</pre>
 ### parentContentListener ###
-  
+<pre>  
 The parent content listener if this particular listener is part of a chain  
 of content listeners (i.e. a docshell!)  
   
@@ -281,3 +281,4 @@ of content listeners (i.e. a docshell!)
       responsible for explicitly setting this value back to null if the  
       parent content listener is destroyed.  
   
+</pre>

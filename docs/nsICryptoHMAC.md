@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsICryptoHMAC #
-  
+<pre>  
 nsICryptoHMAC  
 This interface provides HMAC signature algorithms.  
   
-
+</pre>
 ## Methods ##
 
 ### init(aAlgorithm, aKeyObject) ###
-  
+<pre>  
 Initialize the hashing object. This method may be  
 called multiple times with different algorithm types.  
   
@@ -36,7 +36,7 @@ WARNING: This approach is not FIPS compliant.
 NOTE: This method must be called before any other method   
        on this interface is called.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ NOTE: This method must be called before any other method
 </table>
 
 ### update(aData, aLen) ###
-  
+<pre>  
 @param aData a buffer to calculate the hash over  
   
 @param aLen the length of the buffer |aData|  
@@ -69,7 +69,7 @@ NOTE: This method must be called before any other method
 @throws NS_ERROR_NOT_INITIALIZED if |init| has not been   
         called.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -89,7 +89,7 @@ NOTE: This method must be called before any other method
 </table>
 
 ### updateFromStream(aStream, aLen) ###
-  
+<pre>  
 Calculates and updates a new hash based on a given data stream.  
   
 @param aStream an input stream to read from.  
@@ -105,7 +105,7 @@ Calculates and updates a new hash based on a given data stream.
         data to be calculated into the hash is not available.  
   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -127,7 +127,7 @@ Calculates and updates a new hash based on a given data stream.
 </table>
 
 ### finish(aASCII) ###
-  
+<pre>  
 Completes this HMAC object and produces the actual HMAC diegest data.  
   
 @param aASCII if true then the returned value is a base-64   
@@ -144,7 +144,7 @@ NOTE: This method may be called any time after |init|
       is called.  This call resets the object to its  
       pre-init state.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -172,23 +172,23 @@ NOTE: This method may be called any time after |init|
 </table>
 
 ### reset() ###
-  
+<pre>  
 Reinitialize HMAC context to be reused with the same  
 settings (the key and hash algorithm) but on different   
 set of data.  
   
-
+</pre>
 ## Constants ##
 
 ### MD2 ###
-  
+<pre>  
 Hashing Algorithms.  These values are to be used by the  
 |init| method to indicate which hashing function to  
 use.  These values map onto the values defined in  
 mozilla/security/nss/lib/softoken/pkcs11t.h and are   
 switched to CKM_*_HMAC constant.  
   
-
+</pre>
 ### MD5 ###
 
 ### SHA1 ###

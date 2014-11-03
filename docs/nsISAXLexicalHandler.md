@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsISAXLexicalHandler #
-  
+<pre>  
 SAX2 extension handler for lexical events.  
   
 This is an extension handler for SAX2 to provide lexical  
@@ -18,11 +18,11 @@ not just to the document element, and all lexical handler events
 must appear between the content handler's startDocument and  
 endDocument events.  
   
-
+</pre>
 ## Methods ##
 
 ### comment(chars) ###
-  
+<pre>  
 Report an XML comment anywhere in the document.  
   
 This callback will be used for comments inside or outside the  
@@ -32,7 +32,7 @@ start/endDTD and start/endEntity events (if used).
   
 @param chars The characters in the comment.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -46,7 +46,7 @@ start/endDTD and start/endEntity events (if used).
 </table>
 
 ### startDTD(name, publicId, systemId) ###
-  
+<pre>  
 Report the start of DTD declarations, if any.  
   
 This method is intended to report the beginning of the  
@@ -75,7 +75,7 @@ startElement event.
        (Note that this is not resolved against the document  
        base URI.)  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -105,30 +105,30 @@ startElement event.
 </table>
 
 ### endDTD() ###
-  
+<pre>  
 Report the end of DTD declarations.  
   
 This method is intended to report the end of the  
 DOCTYPE declaration; if the document has no DOCTYPE declaration,  
 this method will not be invoked.  
   
-
+</pre>
 ### startCDATA() ###
-  
+<pre>  
 Report the start of a CDATA section.  
   
 The contents of the CDATA section will be reported through the  
 regular characters event; this event is intended only to report  
 the boundary.  
   
-
+</pre>
 ### endCDATA() ###
-  
+<pre>  
 Report the end of a CDATA section.  
   
-
+</pre>
 ### startEntity(name) ###
-  
+<pre>  
 Report the beginning of some internal and external XML entities.  
   
 Because of the streaming event model that SAX uses, some  
@@ -149,7 +149,7 @@ All start/endEntity events must be properly nested.
             entity, the name will begin with '%', and if it is the  
             external DTD subset, it will be "[dtd]".  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -165,12 +165,12 @@ All start/endEntity events must be properly nested.
 </table>
 
 ### endEntity(name) ###
-  
+<pre>  
 Report the end of an entity.  
   
 @param name The name of the entity that is ending.  
   
-
+</pre>
 #### Parameters ####
 
 <table>

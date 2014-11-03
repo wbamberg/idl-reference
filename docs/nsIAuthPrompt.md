@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### prompt(dialogTitle, text, passwordRealm, savePassword, defaultText, result) ###
-  
+<pre>  
 Puts up a text input dialog with OK and Cancel buttons.  
 Note: prompt uses separate args for the "in" and "out" values of the  
       input field, whereas the other functions use a single inout arg.  
@@ -24,7 +24,7 @@ Note: prompt uses separate args for the "in" and "out" values of the
                       selected.  
 @return true for OK, false for Cancel  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -81,7 +81,7 @@ Note: prompt uses separate args for the "in" and "out" values of the
 </table>
 
 ### promptUsernameAndPassword(dialogTitle, text, passwordRealm, savePassword, user, pwd) ###
-  
+<pre>  
 Puts up a username/password dialog with OK and Cancel buttons.  
 Puts up a password dialog with OK and Cancel buttons.  
 @param  dialogText    The title for the dialog.  
@@ -94,7 +94,7 @@ Puts up a password dialog with OK and Cancel buttons.
                       selected.  
 @return true for OK, false for Cancel  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -151,7 +151,7 @@ Puts up a password dialog with OK and Cancel buttons.
 </table>
 
 ### promptPassword(dialogTitle, text, passwordRealm, savePassword, pwd) ###
-  
+<pre>  
 Puts up a password dialog with OK and Cancel buttons.  
 @param  dialogText    The title for the dialog.  
 @param  text          The text to display in the dialog.  
@@ -168,7 +168,7 @@ Puts up a password dialog with OK and Cancel buttons.
                       selected.  
 @return true for OK, false for Cancel  
   
-
+</pre>
 #### Parameters ####
 
 <table>

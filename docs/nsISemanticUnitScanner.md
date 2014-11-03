@@ -6,15 +6,15 @@ layout: default
 </div>
 
 # nsISemanticUnitScanner #
-  
+<pre>  
 Provides a language independent way to break UNICODE  
 text into meaningful semantic units (e.g. words).  
   
-
+</pre>
 ## Methods ##
 
 ### start(characterSet) ###
-  
+<pre>  
 start()  
   
 Starts up the semantic unit scanner with an optional  
@@ -24,7 +24,7 @@ used to determine the language(s) of the processed text.
 @param characterSet the character set the text was originally  
                     encoded in (can be NULL)  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -39,7 +39,7 @@ used to determine the language(s) of the processed text.
 </table>
 
 ### next(text, length, pos, isLastBuffer, begin, end) ###
-  
+<pre>  
 next()  
 Get the begin / end offset of the next unit in the current text  
   
@@ -51,7 +51,7 @@ Get the begin / end offset of the next unit in the current text
 @param begin the end offset of the next unit   
 @return has more unit in the current text  
   
-
+</pre>
 #### Parameters ####
 
 <table>

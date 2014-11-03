@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIUrlClassifierUpdateObserver #
-  
+<pre>  
 The nsIUrlClassifierUpdateObserver interface is implemented by  
 clients streaming updates to the url-classifier (usually  
 nsUrlClassifierStreamUpdater.  
   
-
+</pre>
 ## Methods ##
 
 ### updateUrlRequested(url, table) ###
-  
+<pre>  
 The update requested a new URL whose contents should be downloaded  
 and sent to the classifier as a new stream.  
   
@@ -23,7 +23,7 @@ and sent to the classifier as a new stream.
 @param table The table name that this URL's contents will be associated  
              with.  This should be passed back to beginStream().  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -44,14 +44,14 @@ and sent to the classifier as a new stream.
 </table>
 
 ### streamFinished(status, delay) ###
-  
+<pre>  
 A stream update has completed.  
   
 @param status The state of the update process.  
 @param delay The amount of time the updater should wait to fetch the  
              next URL in ms.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -74,13 +74,13 @@ A stream update has completed.
 ### updateError(error) ###
 
 ### updateSuccess(requestedTimeout) ###
-  
+<pre>  
 The update has completed successfully.  
   
 @param requestedTimeout The number of seconds that the caller should  
                         wait before trying to update again.  
 /  
-
+</pre>
 #### Parameters ####
 
 <table>

@@ -6,7 +6,7 @@ layout: default
 </div>
 
 # nsIScriptChannel #
-  
+<pre>  
 An interface representing a channel which will have to execute some sort of  
 program provided via its URI to compute the data it should return.  
   
@@ -22,20 +22,20 @@ question will be restricted in the following ways:
   principal of the environment in which the program is to be executed the  
   execution will be forced to happen in a sandbox.  
   
-
+</pre>
 ## Attributes ##
 
 ### executionPolicy ###
-  
+<pre>  
 Whether and how the program represented by this channel is to be executed.  
 The default value if this property has never been set on this channel MUST  
 be either EXECUTE_IN_SANDBOX or NO_EXECUTION.  
   
 @throws NS_ERROR_INVALID_ARG when set to an unrecognized value.  
   
-
+</pre>
 ### executeAsync ###
-  
+<pre>  
 Control whether the program should be executed synchronosly when  
 the channel's AsyncOpen method is called or whether it should be  
 executed asynchronously.  In both cases, any data that the  
@@ -47,22 +47,23 @@ The default value of this property is TRUE.
 Setting this property after asyncOpen has been called on the  
 channel has no effect.  
   
-
+</pre>
 ## Constants ##
 
 ### NO_EXECUTION ###
-  
+<pre>  
 Possible ways of executing the program.  
   
-  
+</pre><pre>  
 Don't execute at all.  
   
-
+</pre>
 ### EXECUTE_NORMAL ###
-  
+<pre>  
 There used to be an EXECUTE_IN_SANDBOX = 1 value.  It has been removed, but  
 we're not changing the value of EXECUTE_NORMAL to avoid breaking compat.  
   
-  
+</pre><pre>  
 Execute against the target environment if the principals allow it.  
   
+</pre>

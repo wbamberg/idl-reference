@@ -6,14 +6,14 @@ layout: default
 </div>
 
 # nsIFileInputStream #
-  
+<pre>  
 An input stream that allows you to read from a file.  
   
-
+</pre>
 ## Methods ##
 
 ### init(file, ioFlags, perm, behaviorFlags) ###
-  
+<pre>  
 @param file          file to read from  
 @param ioFlags       file open flags listed in prio.h (see  
                      PR_Open documentation) or -1 to open the  
@@ -23,7 +23,7 @@ An input stream that allows you to read from a file.
 @param behaviorFlags flags specifying various behaviors of the class  
        (see enumerations in the class)  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ An input stream that allows you to read from a file.
 ## Constants ##
 
 ### DELETE_ON_CLOSE ###
-  
+<pre>  
 If this is set, the file will be deleted by the time the stream is  
 closed.  It may be removed before the stream is closed if it is possible  
 to delete it and still read from it.  
@@ -69,24 +69,24 @@ to delete it and still read from it.
 If OPEN_ON_READ is defined, and the file was recreated after the first  
 delete, the file will be deleted again when it is closed again.  
   
-
+</pre>
 ### CLOSE_ON_EOF ###
-  
+<pre>  
 If this is set, the file will close automatically when the end of the  
 file is reached.  
   
-
+</pre>
 ### REOPEN_ON_REWIND ###
-  
+<pre>  
 If this is set, the file will be reopened whenever we reach the start of  
 the file, either by doing a Seek(0, NS_SEEK_CUR), or by doing a relative  
 seek that happen to reach the beginning of the file. If the file is  
 already open and the seek occurs, it will happen naturally.  (The file  
 will only be reopened if it is closed for some reason.)  
   
-
+</pre>
 ### DEFER_OPEN ###
-  
+<pre>  
 If this is set, the file will be opened (i.e., a call to  
 PR_Open done) only when we do an actual operation on the stream,  
 or more specifically, when one of the following is called:  
@@ -107,11 +107,12 @@ happens there as well.
       first read.  Also, the file is not locked when Init is called,  
       so it might be deleted before we try to read from it.  
   
-
+</pre>
 ### SHARE_DELETE ###
-  
+<pre>  
 This flag has no effect and is totally ignored on any platform except  
 Windows since this is the default behavior on POSIX systems. On Windows  
 if this flag is set then the stream is opened in a special mode that  
 allows the OS to delete the file from disk just like POSIX.  
   
+</pre>

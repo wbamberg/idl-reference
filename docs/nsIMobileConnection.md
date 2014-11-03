@@ -10,21 +10,21 @@ layout: default
 ## Methods ##
 
 ### registerListener(listener) ###
-  
+<pre>  
 Called when any one who is interested in receiving unsolicited messages  
 from this nsIMobileConnection instance.  
   
-
+</pre>
 ### unregisterListener(listener) ###
 
 ### getSupportedNetworkTypes(types, length) ###
-  
+<pre>  
 The network types supported by this radio.  
   
 @return an array of DOMString  
         Possible values: 'gsm', 'wcdma', 'cdma', 'evdo', 'lte'.  
   
-
+</pre>
 #### Returns ####
 
 <table>
@@ -38,7 +38,7 @@ The network types supported by this radio.
 </table>
 
 ### getNetworks(requestCallback) ###
-  
+<pre>  
 Search for available networks.  
   
 @param requestCallback  
@@ -51,7 +51,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -65,7 +65,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### selectNetwork(network, requestCallback) ###
-  
+<pre>  
 Manually selects the passed in network, overriding the radio's current  
 selection.  
   
@@ -80,7 +80,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -100,7 +100,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### selectNetworkAutomatically(requestCallback) ###
-  
+<pre>  
 Tell the radio to automatically select a network.  
   
 @param requestCallback  
@@ -112,7 +112,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -126,7 +126,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### setPreferredNetworkType(type, requestCallback) ###
-  
+<pre>  
 Set preferred network type.  
   
 @param type  
@@ -144,7 +144,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'InvalidParameter',  
 'IllegalSIMorME', or 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -168,7 +168,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### getPreferredNetworkType(requestCallback) ###
-  
+<pre>  
 Query current preferred network type.  
   
 @param requestCallback  
@@ -184,7 +184,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -198,7 +198,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### setRoamingPreference(mode, requestCallback) ###
-  
+<pre>  
 Set roaming preference.  
   
 @param mode  
@@ -213,7 +213,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', InvalidParameter',  
 'IllegalSIMorME', or 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -234,7 +234,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### getRoamingPreference(requestCallback) ###
-  
+<pre>  
 Query current roaming preference.  
   
 @param requestCallback  
@@ -248,7 +248,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -262,7 +262,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### setVoicePrivacyMode(enabled, requestCallback) ###
-  
+<pre>  
 Set voice privacy preference.  
   
 @param enabled  
@@ -278,7 +278,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -300,7 +300,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### getVoicePrivacyMode(requestCallback) ###
-  
+<pre>  
 Query current voice privacy mode.  
   
 @param requestCallback  
@@ -313,7 +313,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -327,7 +327,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### sendMMI(mmi, requestCallback) ###
-  
+<pre>  
 Send a MMI message.  
   
 @param mmi  
@@ -341,7 +341,7 @@ result will contain the information about the mmi operation.
   
 Otherwise, the notifyError() will be called.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -362,7 +362,7 @@ Otherwise, the notifyError() will be called.
 </table>
 
 ### cancelMMI(requestCallback) ###
-  
+<pre>  
 Cancel the current MMI request if one exists.  
   
 @param requestCallback  
@@ -373,7 +373,7 @@ result will contain the information about the mmi operation.
   
 Otherwise, the notifyError() will be called.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -387,7 +387,7 @@ Otherwise, the notifyError() will be called.
 </table>
 
 ### getCallForwarding(reason, requestCallback) ###
-  
+<pre>  
 Queries current call forwarding options.  
   
 @param reason  
@@ -404,7 +404,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'InvalidParameter',  
 'IllegalSIMorME', or 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -425,7 +425,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### setCallForwarding(action, reason, number, timeSeconds, serviceClass, requestCallback) ###
-  
+<pre>  
 Configures call forwarding options.  
   
 @param action  
@@ -448,7 +448,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'InvalidParameter',  
 'IllegalSIMorME', or 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -493,7 +493,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### getCallBarring(program, password, serviceClass, requestCallback) ###
-  
+<pre>  
 Queries current call barring status.  
   
 @param program  
@@ -513,7 +513,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'InvalidParameter',  
 'IllegalSIMorME', or 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -545,7 +545,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### setCallBarring(program, enabled, password, serviceClass, requestCallback) ###
-  
+<pre>  
 Configures call barring option.  
   
 @param program  
@@ -565,7 +565,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'InvalidParameter',  
 'IllegalSIMorME', or 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -603,7 +603,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### changeCallBarringPassword(pin, newPin, requestCallback) ###
-  
+<pre>  
 Change call barring facility password.  
   
 @param pin  
@@ -619,7 +619,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'InvalidParameter',  
 'IllegalSIMorME', or 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -645,7 +645,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### setCallWaiting(enabled, requestCallback) ###
-  
+<pre>  
 Configures call waiting options.  
   
 @param enabled  
@@ -659,7 +659,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -679,7 +679,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### getCallWaiting(requestCallback) ###
-  
+<pre>  
 Queries current call waiting options.  
   
 @param requestCallback  
@@ -692,7 +692,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -706,7 +706,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### setCallingLineIdRestriction(clirMode, requestCallback) ###
-  
+<pre>  
 Enables or disables the presentation of the calling line identity (CLI) to  
 the called party when originating a call.  
   
@@ -721,7 +721,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'InvalidParameter',  
 'IllegalSIMorME', or 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -741,7 +741,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### getCallingLineIdRestriction(requestCallback) ###
-  
+<pre>  
 Queries current CLIR status.  
   
 @param requestCallback  
@@ -755,7 +755,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -769,7 +769,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### exitEmergencyCbMode(requestCallback) ###
-  
+<pre>  
 Exit emergency callback mode.  
   
 @param requestCallback  
@@ -781,7 +781,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 'RadioNotAvailable', 'RequestNotSupported', 'IllegalSIMorME', or  
 'GenericFailure'.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -795,7 +795,7 @@ Otherwise, the notifyError() will be called, and the error will be either
 </table>
 
 ### setRadioEnabled(enabled, requestCallback) ###
-  
+<pre>  
 Set radio enabled/disabled.  
   
 @param enabled  
@@ -813,7 +813,7 @@ Note: Request is not available when radioState is null, 'enabling', or
 'disabling'. Calling the function in above conditions will receive  
 'InvalidStateError' error.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -833,14 +833,14 @@ Note: Request is not available when radioState is null, 'enabling', or
 </table>
 
 ### getNeighboringCellIds(callback) ###
-  
+<pre>  
 Request neighboring cell ids in GSM/UMTS network.  
   
 @param callback  
        Called when request is finished. See nsINeighboringCellIdsCallback  
        for details.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -855,7 +855,7 @@ Request neighboring cell ids in GSM/UMTS network.
 </table>
 
 ### getCellInfoList(callback) ###
-  
+<pre>  
 Request all of the current cell information known to the radio, including  
 neighboring cells.  
   
@@ -863,7 +863,7 @@ neighboring cells.
        Called when request is finished. See nsICellInfoListCallback  
        for details.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -882,44 +882,44 @@ neighboring cells.
 ### serviceId ###
 
 ### lastKnownNetwork ###
-  
+<pre>  
 String of format '<mcc>-<mnc>'. When changed, listener method  
 'notifyLastKnownNetworkChanged' is called.  
   
-
+</pre>
 ### lastKnownHomeNetwork ###
-  
+<pre>  
 String of format '<mcc>-<mnc>[-<spn>]'. When changed, listener method  
 'notifyLastKnownHomeNetworkChanged' is called.  
   
-
+</pre>
 ### voice ###
-  
+<pre>  
 Connection information about the voice.  
   
-
+</pre>
 ### data ###
-  
+<pre>  
 Connection information about the data.  
   
-
+</pre>
 ### iccId ###
-  
+<pre>  
 The integrated circuit card identifier of the SIM.  
   
-
+</pre>
 ### networkSelectionMode ###
-  
+<pre>  
 The selection mode of the voice and data networks. One of the  
 nsIMobileConnection.NETWORK_SELECTION_MODE_* values.  
   
-
+</pre>
 ### radioState ###
-  
+<pre>  
 Current radio state. One of the nsIMobileConnection.MOBILE_RADIO_STATE_*  
 values.  
   
-
+</pre>
 ## Constants ##
 
 ### ICC_SERVICE_CLASS_NONE ###
@@ -943,12 +943,12 @@ values.
 ### ICC_SERVICE_CLASS_MAX ###
 
 ### CALL_FORWARD_ACTION_UNKNOWN ###
-  
+<pre>  
 Call forwarding action.  
   
 @see 3GPP TS 27.007 7.11 "mode".  
   
-
+</pre>
 ### CALL_FORWARD_ACTION_DISABLE ###
 
 ### CALL_FORWARD_ACTION_ENABLE ###
@@ -960,12 +960,12 @@ Call forwarding action.
 ### CALL_FORWARD_ACTION_ERASURE ###
 
 ### CALL_FORWARD_REASON_UNKNOWN ###
-  
+<pre>  
 Call forwarding reason.  
   
 @see 3GPP TS 27.007 7.11 "reason".  
   
-
+</pre>
 ### CALL_FORWARD_REASON_UNCONDITIONAL ###
 
 ### CALL_FORWARD_REASON_MOBILE_BUSY ###
@@ -979,10 +979,10 @@ Call forwarding reason.
 ### CALL_FORWARD_REASON_ALL_CONDITIONAL_CALL_FORWARDING ###
 
 ### CALL_BARRING_PROGRAM_UNKNOWN ###
-  
+<pre>  
 Call barring program.  
   
-
+</pre>
 ### CALL_BARRING_PROGRAM_ALL_OUTGOING ###
 
 ### CALL_BARRING_PROGRAM_OUTGOING_INTERNATIONAL ###
@@ -994,30 +994,30 @@ Call barring program.
 ### CALL_BARRING_PROGRAM_INCOMING_ROAMING ###
 
 ### CLIR_DEFAULT ###
-  
+<pre>  
 Calling line identification restriction constants.  
   
 @see 3GPP TS 27.007 7.7 Defined values.  
   
-
+</pre>
 ### CLIR_INVOCATION ###
 
 ### CLIR_SUPPRESSION ###
 
 ### NETWORK_SELECTION_MODE_UNKNOWN ###
-  
+<pre>  
 Network selection mode.  
   
-
+</pre>
 ### NETWORK_SELECTION_MODE_AUTOMATIC ###
 
 ### NETWORK_SELECTION_MODE_MANUAL ###
 
 ### MOBILE_RADIO_STATE_UNKNOWN ###
-  
+<pre>  
 Mobile Radio State.  
   
-
+</pre>
 ### MOBILE_RADIO_STATE_ENABLING ###
 
 ### MOBILE_RADIO_STATE_ENABLED ###

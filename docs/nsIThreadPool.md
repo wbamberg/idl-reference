@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsIThreadPool #
-  
+<pre>  
 An interface to a thread pool.  A thread pool creates a limited number of  
 anonymous (unnamed) worker threads.  An event dispatched to the thread pool  
 will be run on the next available worker thread.  
   
-
+</pre>
 ## Methods ##
 
 ### shutdown() ###
-  
+<pre>  
 Shutdown the thread pool.  This method may not be executed from any thread  
 in the thread pool.  Instead, it is meant to be executed from another  
 thread (usually the thread that created this thread pool).  When this  
@@ -24,39 +24,39 @@ and it will no longer be possible to dispatch tasks to the thread pool.
   
 As a side effect, events on the current thread will be processed.  
   
-
+</pre>
 ### setName(aName) ###
-  
+<pre>  
 Set the label for threads in the pool. All threads will be named  
 "<aName> #<n>", where <n> is a serial number.  
   
-
+</pre>
 ## Attributes ##
 
 ### threadLimit ###
-  
+<pre>  
 Get/set the maximum number of threads allowed at one time in this pool.  
   
-
+</pre>
 ### idleThreadLimit ###
-  
+<pre>  
 Get/set the maximum number of idle threads kept alive.  
   
-
+</pre>
 ### idleThreadTimeout ###
-  
+<pre>  
 Get/set the amount of time in milliseconds before an idle thread is  
 destroyed.  
   
-
+</pre>
 ### threadStackSize ###
-  
+<pre>  
 Get/set the number of bytes reserved for the stack of all threads in  
 the pool. By default this is nsIThreadManager::DEFAULT_STACK_SIZE.  
   
-
+</pre>
 ### listener ###
-  
+<pre>  
 An optional listener that will be notified when a thread is created or  
 destroyed in the course of the thread pool's operation.  
   
@@ -71,3 +71,4 @@ shutdown() method is called. Threads created after the listener is set will
 also take ownership of the listener so that the listener will be kept alive  
 long enough to receive the guaranteed onThreadShuttingDown() notification.  
   
+</pre>

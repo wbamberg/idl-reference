@@ -6,10 +6,10 @@ layout: default
 </div>
 
 # nsIFTPChannel #
-  
+<pre>  
 This interface may be used to determine if a channel is a FTP channel.  
   
-
+</pre>
 ## Attributes ##
 
 ### lastModifiedTime ###

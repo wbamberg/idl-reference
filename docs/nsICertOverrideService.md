@@ -6,16 +6,16 @@ layout: default
 </div>
 
 # nsICertOverrideService #
-  
+<pre>  
 This represents the global list of triples  
   {host:port, cert-fingerprint, allowed-overrides}   
 that the user wants to accept without further warnings.   
   
-
+</pre>
 ## Methods ##
 
 ### rememberValidityOverride(aHostName, aPort, aCert, aOverrideBits, aTemporary) ###
-  
+<pre>  
  The given cert should always be accepted for the given hostname:port,  
  regardless of errors verifying the cert.  
  Host:Port is a primary key, only one entry per host:port can exist.  
@@ -28,7 +28,7 @@ that the user wants to accept without further warnings.
  @param aCert The cert that should always be accepted  
  @param aOverrideBits The errors we want to be overriden  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -61,7 +61,7 @@ that the user wants to accept without further warnings.
 </table>
 
 ### hasMatchingOverride(aHostName, aPort, aCert, aOverrideBits, aIsTemporary) ###
-  
+<pre>  
  The given cert should always be accepted for the given hostname:port,  
  regardless of errors verifying the cert.  
  Host:Port is a primary key, only one entry per host:port can exist.  
@@ -76,7 +76,7 @@ that the user wants to accept without further warnings.
  @return whether an override entry for aHostNameWithPort is currently on file  
          that matches the given certificate  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -121,7 +121,7 @@ that the user wants to accept without further warnings.
 </table>
 
 ### getValidityOverride(aHostName, aPort, aHashAlg, aFingerprint, aOverrideBits, aIsTemporary) ###
-  
+<pre>  
  Retrieve the stored override for the given hostname:port.  
   
  @param aHostName The host (punycode) whose entry should be tested  
@@ -134,7 +134,7 @@ that the user wants to accept without further warnings.
  @return whether a matching override entry for aHostNameWithPort   
          and aFingerprint is currently on file  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -186,7 +186,7 @@ that the user wants to accept without further warnings.
 </table>
 
 ### clearValidityOverride(aHostName, aPort) ###
-  
+<pre>  
  Remove a override for the given hostname:port.  
   
  @param aHostName The host (punycode) whose entry should be cleared.  
@@ -195,7 +195,7 @@ that the user wants to accept without further warnings.
               If it is 0 and aHostName is "all:temporary-certificates",  
               then all temporary certificates should be cleared.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -218,13 +218,13 @@ that the user wants to accept without further warnings.
 </table>
 
 ### getAllOverrideHostsWithPorts(aCount, aHostsWithPortsArray) ###
-  
+<pre>  
  Obtain the full list of hostname:port for which overrides are known.  
   
  @param aCount The number of host:port entries returned  
  @param aHostsWithPortsArray The array of host:port entries returned  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -244,14 +244,14 @@ that the user wants to accept without further warnings.
 </table>
 
 ### isCertUsedForOverrides(aCert, aCheckTemporaries, aCheckPermanents) ###
-  
+<pre>  
  Is the given cert used in rules?  
   
  @param aCert The cert we're looking for  
  @return how many override entries are currently on file  
          for the given certificate  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -279,16 +279,17 @@ that the user wants to accept without further warnings.
 ## Constants ##
 
 ### ERROR_UNTRUSTED ###
-  
+<pre>  
  Override Untrusted  
   
-
+</pre>
 ### ERROR_MISMATCH ###
-  
+<pre>  
  Override hostname Mismatch  
   
-
+</pre>
 ### ERROR_TIME ###
-  
+<pre>  
  Override Time error  
   
+</pre>

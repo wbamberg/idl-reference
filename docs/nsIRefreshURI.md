@@ -10,7 +10,7 @@ layout: default
 ## Methods ##
 
 ### refreshURI(aURI, aMillis, aRepeat, aMetaRefresh) ###
-  
+<pre>  
 Load a uri after waiting for aMillis milliseconds. If the docshell  
 is busy loading a page currently, the refresh request will be  
 queued and executed when the current load finishes.   
@@ -21,7 +21,7 @@ queued and executed when the current load finishes.
                repeatedly refreshed every aMillis milliseconds.  
 @param aMetaRefresh Flag to indicate if this is a Meta refresh.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -54,7 +54,7 @@ queued and executed when the current load finishes.
 </table>
 
 ### forceRefreshURI(aURI, aMillis, aMetaRefresh) ###
-  
+<pre>  
 Loads a URI immediately as if it were a refresh.  
   
 @param aURI The URI to refresh.  
@@ -62,7 +62,7 @@ Loads a URI immediately as if it were a refresh.
                be delayed if it were not being forced.  
 @param aMetaRefresh Flag to indicate if this is a meta refresh.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -89,7 +89,7 @@ Loads a URI immediately as if it were a refresh.
 </table>
 
 ### setupRefreshURI(aChannel) ###
-  
+<pre>  
 Checks the passed in channel to see if there is a refresh header,   
 if there is, will setup a timer to refresh the uri found  
 in the header. If docshell is busy loading a page currently, the  
@@ -101,7 +101,7 @@ header was found and successfully setup.
   
 @param aChannel The channel to be parsed.   
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -115,7 +115,7 @@ header was found and successfully setup.
 </table>
 
 ### setupRefreshURIFromHeader(aBaseURI, principal, aHeader) ###
-  
+<pre>  
 Parses the passed in header string and sets up a refreshURI if  
 a "refresh" header is found. If docshell is busy loading a page   
 currently, the request will be queued and executed when   
@@ -125,7 +125,7 @@ the current page finishes loading.
 @param principal the associated principal  
 @param aHeader  The meta refresh header string.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -151,13 +151,14 @@ the current page finishes loading.
 </table>
 
 ### cancelRefreshURITimers() ###
-  
+<pre>  
 Cancels all timer loads.  
   
-
+</pre>
 ## Attributes ##
 
 ### refreshPending ###
-  
+<pre>  
 True when there are pending refreshes, false otherwise.  
   
+</pre>

@@ -6,22 +6,22 @@ layout: default
 </div>
 
 # nsITCPServerSocketParent #
-   
+<pre>   
 Interface required to allow the TCP server-socket object in the parent process  
 to talk to the parent IPC actor.  
 It is used in the server socket implementation on the parent side.  
   
-
+</pre>
 ## Methods ##
 
 ### sendCallbackAccept(socket) ###
-  
+<pre>  
 Trigger a callback in the content process when the socket accepts any request.  
   
 @param socket  
        The socket generated in accepting any open request on the parent side.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
@@ -35,7 +35,7 @@ Trigger a callback in the content process when the socket accepts any request.
 </table>
 
 ### sendCallbackError(message, filename, lineNumber, columnNumber) ###
-  
+<pre>  
 Trigger a callback in the content process when an error occurs.  
   
 @param message  
@@ -47,7 +47,7 @@ Trigger a callback in the content process when an error occurs.
 @param columnNumber  
        The column number in which the error occured.  
   
-
+</pre>
 #### Parameters ####
 
 <table>
