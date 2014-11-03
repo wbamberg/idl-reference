@@ -52,9 +52,8 @@ methods" are not scriptable.
 <table>
 
 <tr>
-<td>am</td>
-<td>node  
-      A string which is intended to be a child node of the nsIFile.  
+<td>node</td>
+<td>      A string which is intended to be a child node of the nsIFile.  
       For the |appendNative| method, the node must be in the native  
       filesystem charset.  
 </td>
@@ -96,9 +95,8 @@ methods" are not scriptable.
 <table>
 
 <tr>
-<td>am</td>
-<td>type  
-      This specifies the type of file system object  
+<td>type</td>
+<td>      This specifies the type of file system object  
       to be made.  The only two types at this time  
       are file and directory which are defined above.  
       If the type is unrecongnized, we will return an  
@@ -107,9 +105,8 @@ methods" are not scriptable.
 </tr>
 
 <tr>
-<td>am</td>
-<td>permissions  
-      The unix style octal permissions.  This may  
+<td>permissions</td>
+<td>      The unix style octal permissions.  This may  
       be ignored on systems that do not need to do  
       permissions.  
 </td>
@@ -151,9 +148,8 @@ methods" are not scriptable.
 <table>
 
 <tr>
-<td>am</td>
-<td>newParentDir  
-      This param is the destination directory. If the  
+<td>newParentDir</td>
+<td>      This param is the destination directory. If the  
       newParentDir is null, copyTo() will use the parent  
       directory of this file. If the newParentDir is not  
       empty and is not a directory, an error will be  
@@ -164,9 +160,8 @@ methods" are not scriptable.
 </tr>
 
 <tr>
-<td>am</td>
-<td>newName  
-      This param allows you to specify a new name for  
+<td>newName</td>
+<td>      This param allows you to specify a new name for  
       the file to be copied. This param may be empty, in  
       which case the current leaf name will be used.  
 </td>
@@ -228,9 +223,8 @@ methods" are not scriptable.
 <table>
 
 <tr>
-<td>am</td>
-<td>newParentDir  
-      This param is the destination directory. If the  
+<td>newParentDir</td>
+<td>      This param is the destination directory. If the  
       newParentDir is empty, moveTo() will rename the file  
       within its current directory. If the newParentDir is  
       not empty and does not name a directory, an error will  
@@ -241,9 +235,8 @@ methods" are not scriptable.
 </tr>
 
 <tr>
-<td>am</td>
-<td>newName  
-      This param allows you to specify a new name for  
+<td>newName</td>
+<td>      This param allows you to specify a new name for  
       the file to be moved. This param may be empty, in  
       which case the current leaf name will be used.  
 </td>
@@ -324,9 +317,8 @@ Not a regular file, not a directory, not a symlink.
 <table>
 
 <tr>
-<td>am</td>
-<td>type  
-      This specifies the type of file system object  
+<td>type</td>
+<td>      This specifies the type of file system object  
       to be made.  The only two types at this time  
       are file and directory which are defined above.  
       If the type is unrecongnized, we will return an  
@@ -335,9 +327,8 @@ Not a regular file, not a directory, not a symlink.
 </tr>
 
 <tr>
-<td>am</td>
-<td>permissions  
-      The unix style octal permissions.  This may  
+<td>permissions</td>
+<td>      The unix style octal permissions.  This may  
       be ignored on systems that do not need to do  
       permissions.  
 </td>
@@ -363,9 +354,8 @@ exact location of the |this| nsIFile.
 <table>
 
 <tr>
-<td>am</td>
-<td>file  
-         A nsIFile which this object will be initialize  
+<td>file</td>
+<td>         A nsIFile which this object will be initialize  
          with.  
 </td>
 </tr>
@@ -403,9 +393,8 @@ exact location of the |this| nsIFile.
 <table>
 
 <tr>
-<td>am</td>
-<td>filePath         
-      A string which specifies a full file path to a   
+<td>filePath</td>
+<td>      A string which specifies a full file path to a   
       location.  Relative paths will be treated as an  
       error (NS_ERROR_FILE_UNRECOGNIZED_PATH).  For   
       initWithNativePath, the filePath must be in the native  
@@ -432,9 +421,8 @@ exact location of the |this| nsIFile.
 <table>
 
 <tr>
-<td>am</td>
-<td>aFile  
-      the file this becomes equivalent to  
+<td>aFile</td>
+<td>      the file this becomes equivalent to  
 </td>
 </tr>
 
@@ -500,9 +488,8 @@ responsible for calling PR_UnloadLibrary on the result.
 <table>
 
 <tr>
-<td>am</td>
-<td>relativeFilePath  
-      relativeFilePath is a native relative path. For security reasons,  
+<td>relativeFilePath</td>
+<td>      relativeFilePath is a native relative path. For security reasons,  
       this cannot contain .. or cannot start with a directory separator.  
       For the |appendRelativeNativePath| method, the relativeFilePath   
       must be in the native filesystem charset.  
@@ -554,9 +541,8 @@ responsible for calling PR_UnloadLibrary on the result.
 <table>
 
 <tr>
-<td>am</td>
-<td>fromFile  
-      the file from which the descriptor is relative.  
+<td>fromFile</td>
+<td>      the file from which the descriptor is relative.  
       There is no defined result if this param is null.  
 </td>
 </tr>
@@ -581,9 +567,8 @@ responsible for calling PR_UnloadLibrary on the result.
 <table>
 
 <tr>
-<td>am</td>
-<td>fromFile  
-      the file to which the descriptor is relative  
+<td>fromFile</td>
+<td>      the file to which the descriptor is relative  
   @param relative  
       the relative descriptor obtained from getRelativeDescriptor  
 </td>

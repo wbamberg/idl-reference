@@ -34,8 +34,8 @@ that the user wants to accept without further warnings.
 <table>
 
 <tr>
-<td>m</td>
-<td>aHostName The host (punycode) this mapping belongs to  
+<td>aHostName</td>
+<td>The host (punycode) this mapping belongs to  
  @param aPort The port this mapping belongs to, if it is -1 then it   
          is internaly treated as 443  
  @param aCert The cert that should always be accepted  
@@ -67,8 +67,8 @@ that the user wants to accept without further warnings.
 <table>
 
 <tr>
-<td>m</td>
-<td>aHostName The host (punycode) this mapping belongs to  
+<td>aHostName</td>
+<td>The host (punycode) this mapping belongs to  
  @param aPort The port this mapping belongs to, if it is -1 then it   
          is internaly treated as 443  
  @param aCert The cert that should always be accepted  
@@ -100,8 +100,8 @@ that the user wants to accept without further warnings.
 <table>
 
 <tr>
-<td>m</td>
-<td>aHostName The host (punycode) whose entry should be tested  
+<td>aHostName</td>
+<td>The host (punycode) whose entry should be tested  
  @param aPort The port whose entry should be tested, if it is -1 then it   
          is internaly treated as 443  
  @param aHashAlg On return value True, the fingerprint hash algorithm  
@@ -131,8 +131,8 @@ that the user wants to accept without further warnings.
 <table>
 
 <tr>
-<td>m</td>
-<td>aHostName The host (punycode) whose entry should be cleared.  
+<td>aHostName</td>
+<td>The host (punycode) whose entry should be cleared.  
  @param aPort The port whose entry should be cleared.  
               If it is -1, then it is internaly treated as 443.  
               If it is 0 and aHostName is "all:temporary-certificates",  
@@ -155,8 +155,8 @@ that the user wants to accept without further warnings.
 <table>
 
 <tr>
-<td>m</td>
-<td>aCount The number of host:port entries returned  
+<td>aCount</td>
+<td>The number of host:port entries returned  
  @param aHostsWithPortsArray The array of host:port entries returned  
 </td>
 </tr>
@@ -177,8 +177,8 @@ that the user wants to accept without further warnings.
 <table>
 
 <tr>
-<td>m</td>
-<td>aCert The cert we're looking for  
+<td>aCert</td>
+<td>The cert we're looking for  
  @return how many override entries are currently on file  
          for the given certificate  
 </td>

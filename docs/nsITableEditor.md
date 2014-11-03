@@ -122,8 +122,8 @@ selects all cells (not TR in the case of rows)
 <table>
 
 <tr>
-<td>m</td>
-<td>aStartCell  starting cell in block  
+<td>aStartCell</td>
+<td>starting cell in block  
  @param aEndCell    ending cell in block  
 </td>
 </tr>
@@ -153,8 +153,8 @@ selects all cells (not TR in the case of rows)
 <table>
 
 <tr>
-<td>m</td>
-<td>aSourceCell   The cell to be replaced  
+<td>aSourceCell</td>
+<td>The cell to be replaced  
  @return              The new cell that replaces aSourceCell  
 </td>
 </tr>
@@ -298,8 +298,8 @@ returns values:
 <table>
 
 <tr>
-<td>m</td>
-<td>aTable                   A table in the document  
+<td>aTable</td>
+<td>A table in the document  
  @param aRowIndex, aColIndex     The 0-based cellmap indexes  
 returns values:  
  @param aCell                    The cell at this cellmap location  

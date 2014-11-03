@@ -95,8 +95,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>webBrowserPrint - represents the document to be printed  
+<td>webBrowserPrint</td>
+<td>- represents the document to be printed  
  @param printSettings - PrintSettings for print "job"  
 </td>
 </tr>
@@ -124,8 +124,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>webBrowserPrint - represents the document to be printed  
+<td>webBrowserPrint</td>
+<td>- represents the document to be printed  
  @param printSettings - PrintSettings for print "job"  
  @param openDialogObserver - an observer that will be notifed when the dialog is opened  
  @param isForPrinting - true - for printing, false for print preview  
@@ -155,8 +155,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>printSettings - PrintSettings for page setup (required)  
+<td>printSettings</td>
+<td>- PrintSettings for page setup (required)  
  @param aObs - An observer to know if the contents of the Print Settings   
                object has changed while the dialog is being shown.   
                For example, some platforms may implement an "Apply" button (not required)  
@@ -181,8 +181,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>printerName - name of printer (required)  
+<td>printerName</td>
+<td>- name of printer (required)  
  @param printSettings - PrintSettings for page setup (required)  
 </td>
 </tr>

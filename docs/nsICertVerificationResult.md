@@ -37,8 +37,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>cert The certificate that was verified.  
+<td>cert</td>
+<td>The certificate that was verified.  
  @param verified The certificate verification result,  
         see constants in nsIX509Cert.  
  @param count The number of human readable usages returned.  

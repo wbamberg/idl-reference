@@ -20,8 +20,8 @@ Indicates whether the content node should be skipped by the iterator
 <table>
 
 <tr>
-<td>m</td>
-<td>aNode - node to skip  
+<td>aNode</td>
+<td>- node to skip  
 </td>
 </tr>
 

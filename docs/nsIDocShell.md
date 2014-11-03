@@ -623,8 +623,8 @@ a url has been loaded.
 <table>
 
 <tr>
-<td>param</td>
-<td>inWaitForUriLoad    true to wait for a URI before  
+<td>inWaitForUriLoad</td>
+<td>true to wait for a URI before  
                                  creating the editor.  
 </td>
 </tr>

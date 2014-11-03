@@ -20,8 +20,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>aNSPRCode An error code obtained using PR_GetError()  
+<td>aNSPRCode</td>
+<td>An error code obtained using PR_GetError()  
  @return True if it is error code defined by the NSS library  
 </td>
 </tr>
@@ -40,8 +40,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>aNSPRCode An error code obtained using PR_GetError()  
+<td>aNSPRCode</td>
+<td>An error code obtained using PR_GetError()  
  @return The result of the conversion, an XPCOM error code  
 </td>
 </tr>
@@ -60,8 +60,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>aXPCOMErrorCode An error code obtain using getXPCOMFromNSSError  
+<td>aXPCOMErrorCode</td>
+<td>An error code obtain using getXPCOMFromNSSError  
  return A localized human readable error explanation.  
 </td>
 </tr>
@@ -80,8 +80,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>aXPCOMErrorCode An error code obtain using getXPCOMFromNSSError  
+<td>aXPCOMErrorCode</td>
+<td>An error code obtain using getXPCOMFromNSSError  
  return the   
 </td>
 </tr>

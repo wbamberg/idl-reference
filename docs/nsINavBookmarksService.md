@@ -42,9 +42,8 @@ Inserts a child bookmark into the given folder.
 <table>
 
 <tr>
-<td>m</td>
-<td>aParentId  
-        The id of the parent folder  
+<td>aParentId</td>
+<td>        The id of the parent folder  
  @param aURI  
         The URI to insert  
  @param aIndex  
@@ -73,9 +72,8 @@ Removes a child item. Used to delete a bookmark or separator.
 <table>
 
 <tr>
-<td>m</td>
-<td>aItemId  
-        The child item to remove  
+<td>aItemId</td>
+<td>        The child item to remove  
 </td>
 </tr>
 
@@ -103,9 +101,8 @@ Creates a new child folder and inserts it under the given parent.
 <table>
 
 <tr>
-<td>m</td>
-<td>aParentFolder  
-        The id of the parent folder  
+<td>aParentFolder</td>
+<td>        The id of the parent folder  
  @param aName  
         The name of the new folder  
  @param aIndex  
@@ -144,9 +141,8 @@ public API.
 <table>
 
 <tr>
-<td>m</td>
-<td>aItemId  
-        The id of the folder to remove.  
+<td>aItemId</td>
+<td>        The id of the folder to remove.  
  @return An object implementing nsITransaction that can be used to undo  
          or redo the action.  
 </td>
@@ -167,9 +163,8 @@ all children of the given folder.
 <table>
 
 <tr>
-<td>m</td>
-<td>aItemId  
-        The id of the folder to remove children from.  
+<td>aItemId</td>
+<td>        The id of the folder to remove children from.  
 </td>
 </tr>
 
@@ -195,9 +190,8 @@ index Y > X you must use moveItem(id, folder, Y + 1)
 <table>
 
 <tr>
-<td>m</td>
-<td>aItemId  
-        The id of the item to move  
+<td>aItemId</td>
+<td>        The id of the item to move  
  @param aNewParentId  
         The id of the new parent  
  @param aIndex  
@@ -228,9 +222,8 @@ The separator can be removed using removeChildAt().
 <table>
 
 <tr>
-<td>m</td>
-<td>aParentId  
-        The id of the parent folder  
+<td>aParentId</td>
+<td>        The id of the parent folder  
  @param aIndex  
         The separator's index under folder, or DEFAULT_INDEX to append  
  @param [optional] aGuid  
@@ -260,9 +253,8 @@ Get the itemId given the containing folder and the index.
 <table>
 
 <tr>
-<td>m</td>
-<td>aParentId  
-        The id of the diret parent folder of the item  
+<td>aParentId</td>
+<td>        The id of the diret parent folder of the item  
  @param aIndex  
         The index of the item within the parent folder.  
         Pass DEFAULT_INDEX for the last item.  
@@ -288,9 +280,8 @@ Set the title for an item.
 <table>
 
 <tr>
-<td>m</td>
-<td>aItemId  
-        The id of the item whose title should be updated.  
+<td>aItemId</td>
+<td>        The id of the item whose title should be updated.  
  @param aTitle  
         The new title for the bookmark.  
 </td>
@@ -314,9 +305,8 @@ If no item title is available it will return a void string (null in JS).
 <table>
 
 <tr>
-<td>m</td>
-<td>aItemId  
-        The id of the item whose title should be retrieved  
+<td>aItemId</td>
+<td>        The id of the item whose title should be retrieved  
  @return The title of the item.  
 </td>
 </tr>
@@ -383,8 +373,8 @@ WARNING: This is API is intended for scenarios such as folder sorting,
 <table>
 
 <tr>
-<td>m</td>
-<td>aItemId    The id of the item to modify  
+<td>aItemId</td>
+<td>The id of the item to modify  
  @param aNewIndex  The new index  
 </td>
 </tr>

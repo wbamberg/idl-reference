@@ -26,8 +26,8 @@ This represents a X.509 certificate.
 <table>
 
 <tr>
-<td>m</td>
-<td>length The number of strings in the returned array.  
+<td>length</td>
+<td>The number of strings in the returned array.  
  @return An array of email addresses.  
 </td>
 </tr>
@@ -50,8 +50,8 @@ This represents a X.509 certificate.
 <table>
 
 <tr>
-<td>m</td>
-<td>aEmailAddress The address to search for.  
+<td>aEmailAddress</td>
+<td>The address to search for.  
 </td>
 </tr>
 
@@ -105,8 +105,8 @@ This represents a X.509 certificate.
 <table>
 
 <tr>
-<td>m</td>
-<td>localOnly Do not hit the network, even if revocation information  
+<td>localOnly</td>
+<td>Do not hit the network, even if revocation information  
                   downloading is currently activated.  
  @param verified The certificate verification result, see constants.  
  @param count The number of human readable usages returned.  
@@ -140,8 +140,8 @@ This represents a X.509 certificate.
 <table>
 
 <tr>
-<td>m</td>
-<td>localOnly Do not hit the network, even if revocation information  
+<td>localOnly</td>
+<td>Do not hit the network, even if revocation information  
                   downloading is currently activated.  
  @param verified The certificate verification result, see constants.  
  @param purposes The string listing the usages.  
@@ -164,8 +164,8 @@ This represents a X.509 certificate.
 <table>
 
 <tr>
-<td>m</td>
-<td>length The number of bytes in the binary encoding.  
+<td>length</td>
+<td>The number of bytes in the binary encoding.  
  @param data The bytes representing the DER encoded certificate.  
 </td>
 </tr>
@@ -207,8 +207,8 @@ see CMS_CHAIN_MODE constants.
 <table>
 
 <tr>
-<td>m</td>
-<td>chainMode Whether to include the chain (with or without the root),  
+<td>chainMode</td>
+<td>Whether to include the chain (with or without the root),  
 see CMS_CHAIN_MODE constants.  
  @param length The number of bytes of the PKCS#7 data.  
  @param data The bytes representing the PKCS#7 wrapped certificate.  

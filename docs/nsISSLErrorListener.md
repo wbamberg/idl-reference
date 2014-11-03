@@ -28,8 +28,8 @@ A mechanism to report a broken SSL connection. The recipient should NOT block.
 <table>
 
 <tr>
-<td>m</td>
-<td>socketInfo A network communication context that can be used to obtain more information  
+<td>socketInfo</td>
+<td>A network communication context that can be used to obtain more information  
                    about the active connection.  
  @param error The code associated with the error.  
  @param targetSite The Site name that was used to open the current connection.  

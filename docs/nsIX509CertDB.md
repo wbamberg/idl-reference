@@ -32,8 +32,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>aToken Optionally limits the scope of  
+<td>aToken</td>
+<td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
  @param aNickname The nickname to be used as the key  
@@ -72,8 +72,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>aDBkey Database internal key, as obtained using  
+<td>aDBkey</td>
+<td>Database internal key, as obtained using  
                attribute dbkey in nsIX509Cert.  
  @param aToken Optionally limits the scope of  
                this function to a token device.  
@@ -104,8 +104,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>aToken Optionally limits the scope of  
+<td>aToken</td>
+<td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
  @param aType Type of certificate to obtain  
@@ -132,8 +132,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>aNickname The nickname to be used as the key  
+<td>aNickname</td>
+<td>The nickname to be used as the key  
                   to find the certificate.  
 </td>
 </tr>
@@ -166,8 +166,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>aNickname The nickname to be used as the key  
+<td>aNickname</td>
+<td>The nickname to be used as the key  
                   to find the certificate.  
 </td>
 </tr>
@@ -203,8 +203,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>aToken Optionally limits the scope of  
+<td>aToken</td>
+<td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
  @param aEmailAddress The email address to be used as the key  
@@ -242,8 +242,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>data The raw data to be imported  
+<td>data</td>
+<td>The raw data to be imported  
  @param length The length of the data to be imported  
  @param type The type of the certificate, see constants in nsIX509Cert  
  @param ctx A UI context.  
@@ -266,8 +266,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>data The raw data to be imported  
+<td>data</td>
+<td>The raw data to be imported  
  @param length The length of the data to be imported  
  @param ctx A UI context.  
 </td>
@@ -289,8 +289,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>data The raw data to be imported  
+<td>data</td>
+<td>The raw data to be imported  
  @param length The length of the data to be imported  
  @param ctx A UI context.  
 </td>
@@ -313,8 +313,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>data The raw data to be imported  
+<td>data</td>
+<td>The raw data to be imported  
  @param length The length of the data to be imported  
  @param ctx A UI context.  
 </td>
@@ -334,8 +334,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>aCert Delete this certificate.  
+<td>aCert</td>
+<td>Delete this certificate.  
 </td>
 </tr>
 
@@ -359,8 +359,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>cert Change the stored trust of this certificate.  
+<td>cert</td>
+<td>Change the stored trust of this certificate.  
  @param type The type of the certificate. See nsIX509Cert.  
  @param trust A bitmask. The new trust for the possible usages.  
               See the trust constants defined within this interface.  
@@ -414,8 +414,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>cert Obtain the stored trust of this certificate.  
+<td>cert</td>
+<td>Obtain the stored trust of this certificate.  
  @param certType The type of the certificate. See nsIX509Cert.  
  @param trustType A single bit from the usages constants defined  
                   within this interface.  
@@ -453,8 +453,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>aToken Optionally limits the scope of  
+<td>aToken</td>
+<td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
  @param aFile Identifies a file that contains the certificate  
@@ -482,8 +482,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>aToken Optionally limits the scope of  
+<td>aToken</td>
+<td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
  @param aFile Identifies a file that contains the data  
@@ -511,8 +511,8 @@ X.509 certificates stored in a database.
 <table>
 
 <tr>
-<td>m</td>
-<td>aToken Optionally limits the scope of  
+<td>aToken</td>
+<td>Optionally limits the scope of  
                this function to a token device.  
                Can be null to mean any token.  
  @param aFile Identifies a file that will be filled with the data  
@@ -569,8 +569,8 @@ was issued by the given trusted root.
 <table>
 
 <tr>
-<td>m</td>
-<td>aCert Obtain the stored trust of this certificate  
+<td>aCert</td>
+<td>Obtain the stored trust of this certificate  
  @param aUsage a integer representing the usage from NSS  
  @param aFlags flags as described above  
  @param verifedChain chain of verification up to the root if success  

@@ -39,8 +39,8 @@ Updates the position and size of the subdocument loaded by this frameloader.
 <table>
 
 <tr>
-<td>m</td>
-<td>aIFrame The nsIFrame for the content node that owns this frameloader  
+<td>aIFrame</td>
+<td>The nsIFrame for the content node that owns this frameloader  
 </td>
 </tr>
 

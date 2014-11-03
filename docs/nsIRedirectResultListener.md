@@ -25,9 +25,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>proceeding  
-        Indicated whether the redirect will be proceeding, or not (i.e.  
+<td>proceeding</td>
+<td>        Indicated whether the redirect will be proceeding, or not (i.e.  
         has been canceled, or failed).  
 </td>
 </tr>

@@ -24,7 +24,7 @@ def blockIsFinished(line):
     return lineIsEmpty(line) or line.startswith("@param") or line.startswith("@return")
 
 def createParamDoc(line, lines):
-    line = line[len("@param"):].lstrip()
+    line = line.lstrip()[len("@param"):].lstrip()
     name = getNextWordFromLine(line)
     doc = line[len(name):].lstrip()
     for line in lines:
@@ -39,7 +39,7 @@ def createParamDoc(line, lines):
     return ParamDoc(name, doc)
 
 def createReturnDoc(line, lines):
-    doc = line[len("@return "):].lstrip()
+    doc = line.lstrip()[len("@return "):].lstrip()
     for line in lines:
         if blockIsFinished(line):
             try:

@@ -256,8 +256,8 @@ selection is collapsed. Use this function to show the caret even in selections.
 <table>
 
 <tr>
-<td>m</td>
-<td>aForward forward or backward if PR_FALSE  
+<td>aForward</td>
+<td>forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
 </td>
 </tr>
@@ -293,8 +293,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aForward forward or backward if PR_FALSE  
+<td>aForward</td>
+<td>forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
 </td>
 </tr>
@@ -312,8 +312,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aForward forward or backward if PR_FALSE  
+<td>aForward</td>
+<td>forward or backward if PR_FALSE  
 </td>
 </tr>
 
@@ -333,8 +333,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aForward forward or backward if PR_FALSE  
+<td>aForward</td>
+<td>forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
 </td>
 </tr>
@@ -356,8 +356,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aForward forward or backward if PR_FALSE  
+<td>aForward</td>
+<td>forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
 </td>
 </tr>
@@ -378,8 +378,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aForward forward or backward if PR_FALSE  
+<td>aForward</td>
+<td>forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
 </td>
 </tr>
@@ -396,8 +396,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aForward forward or backward if PR_FALSE  
+<td>aForward</td>
+<td>forward or backward if PR_FALSE  
 </td>
 </tr>
 
@@ -417,8 +417,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aForward forward or backward if PR_FALSE  
+<td>aForward</td>
+<td>forward or backward if PR_FALSE  
  @param aExtend  should it collapse the selection of extend it?  
 </td>
 </tr>
@@ -435,8 +435,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aForward scroll forward or backwards in selection  
+<td>aForward</td>
+<td>scroll forward or backwards in selection  
 </td>
 </tr>
 
@@ -452,8 +452,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aForward scroll forward or backwards in selection  
+<td>aForward</td>
+<td>scroll forward or backwards in selection  
 </td>
 </tr>
 
@@ -469,8 +469,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aRight if true will scroll right. if not will scroll left.  
+<td>aRight</td>
+<td>if true will scroll right. if not will scroll left.  
 </td>
 </tr>
 
@@ -494,8 +494,8 @@ after UTF-16 surrogates.
 <table>
 
 <tr>
-<td>m</td>
-<td>aNode textNode to test  
+<td>aNode</td>
+<td>textNode to test  
  @param aStartOffset  offset in dom to first char of textnode to test  
  @param aEndOffset    offset in dom to last char of textnode to test  
  @param aReturnBool   boolean returned TRUE if visible FALSE if not  

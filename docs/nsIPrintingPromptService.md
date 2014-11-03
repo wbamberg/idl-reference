@@ -96,8 +96,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>parent - a DOM windows the dialog will be parented to (required)  
+<td>parent</td>
+<td>- a DOM windows the dialog will be parented to (required)  
  @param webBrowserPrint - represents the document to be printed (required)  
  @param printSettings - PrintSettings for print "job" (required)  
 </td>
@@ -127,8 +127,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>parent - a DOM windows the dialog will be parented to  
+<td>parent</td>
+<td>- a DOM windows the dialog will be parented to  
  @param webBrowserPrint - represents the document to be printed  
  @param printSettings - PrintSettings for print "job"  
  @param openDialogObserver - an observer that will be notifed when the dialog is opened  
@@ -160,8 +160,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>parent - a DOM windows the dialog will be parented to (required)  
+<td>parent</td>
+<td>- a DOM windows the dialog will be parented to (required)  
  @param printSettings - PrintSettings for page setup (required)  
  @param aObs - An observer to know if the contents of the Print Settings   
                object has changed while the dialog is being shown.   
@@ -188,8 +188,8 @@ layout: default
 <table>
 
 <tr>
-<td>m</td>
-<td>parent - a DOM windows the dialog will be parented to (required)  
+<td>parent</td>
+<td>- a DOM windows the dialog will be parented to (required)  
  @param printerName - name of printer (required)  
  @param printSettings - PrintSettings for page setup (required)  
 </td>

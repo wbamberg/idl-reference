@@ -339,8 +339,8 @@ the selected text (if any), but strip out any HTML styles and formatting
 <table>
 
 <tr>
-<td>m</td>
-<td>aSourceString   HTML source string of the entire new document  
+<td>aSourceString</td>
+<td>HTML source string of the entire new document  
 </td>
 </tr>
 

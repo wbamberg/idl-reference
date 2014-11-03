@@ -30,8 +30,8 @@ and insecure pages, posts to insecure servers etc.
 <table>
 
 <tr>
-<td>m</td>
-<td>ctx A user interface context.  
+<td>ctx</td>
+<td>A user interface context.  
 </td>
 </tr>
 

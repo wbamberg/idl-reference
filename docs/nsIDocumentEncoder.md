@@ -118,8 +118,8 @@ Initialize with a pointer to the document and the mime type.
 <table>
 
 <tr>
-<td>m</td>
-<td>aContainer The node which child nodes will be encoded.  
+<td>aContainer</td>
+<td>The node which child nodes will be encoded.  
 </td>
 </tr>
 
@@ -144,8 +144,8 @@ Initialize with a pointer to the document and the mime type.
 <table>
 
 <tr>
-<td>m</td>
-<td>aCharset Overrides the both the intrinsic or platform  
+<td>aCharset</td>
+<td>Overrides the both the intrinsic or platform  
  character set when encoding the document.  
 </td>
 </tr>
